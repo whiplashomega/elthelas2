@@ -1,0 +1,42 @@
+{
+  "id": "championsofcora",
+  "title": "Champions of Cora",
+  "description": "The Champions of Cora are an unofficial offshoot of the [Church of Cora](/ref/gods/cora). They are a group of adventurers who travel the world, either individually or in small groups, finding hopeless situations to turn around for the cause of good. The champions were a largely unknown organization until the [Neran Cataclysm](/history/nerimcataclysm), when the Champions were the first, and most successful, respondants to the crisis. They successfully organized the evacuation of thousands of survivors, while delaying the advance of the undead hordes. Their intervention enabled the nations of the world to mount an organized response, and it was rumored that it was in fact a Champion of Cora who fought the once Emperor of [Nerim](/geo/nations/nerim), turned Lich King, in single combat. Defeating him before succumbing to his wounds.\n\nChampions of Cora are almost always welcomed in any good aligned community in which they arrive, although governments often resent their interventions.",
+  "nations": [
+    "dormania",
+    "gerasalim",
+    "curinor",
+    "seran",
+    "shendarel",
+    "eldoran",
+    "demalthor",
+    "terron",
+    "staelia",
+    "malinval"
+  ],
+  "cities": [
+    "malidal",
+    "eastguard",
+    "strovenguard",
+    "highhammer",
+    "granitebluff",
+    "kimly",
+    "swava",
+    "estapor",
+    "loridesa",
+    "aridhem",
+    "tenecha",
+    "pelgan",
+    "instar",
+    "kelas",
+    "gulutheim"
+  ],
+  "tenets": [
+    "Defend the weak at all costs",
+    "No cause is without hope",
+    "Evil must be destroyed",
+    "Never choose the lesser evil"
+  ],
+  "level1": "**Hope springs eternal.** Whenever you are reduced to 0 hit points you can roll a d10 + your level and heal by that many hit points.  After you use this feature you cannot use it again until after a short or long rest.",
+  "level10": "**First Strike of the Faithful.** You have advantage on itiative checks."
+}

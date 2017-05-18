@@ -1,0 +1,29 @@
+/* line 2, ../sass/resumeprint.scss */
+body {
+  background-color: white;
+}
+
+/* line 5, ../sass/resumeprint.scss */
+#nameaddress {
+  border-color: white;
+  background-color: white;
+  color: black;
+}
+
+/* line 11, ../sass/resumeprint.scss */
+td, .firstcol {
+  border-color: white;
+  border-style: solid;
+  color: black;
+}
+
+/* line 17, ../sass/resumeprint.scss */
+.projects aside, .projects article, #personalProjects {
+  box-shadow: 0px 0px 0px white;
+  background-color: white;
+  color: black;
+}
+/* line 21, ../sass/resumeprint.scss */
+.projects aside a, .projects article a, #personalProjects a {
+  color: black;
+}

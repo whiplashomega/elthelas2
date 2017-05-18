@@ -1,0 +1,38 @@
+{
+  "id": "goblins",
+  "name": "Goblins",
+  "description": "Goblins are small gangly humanoids between 3-3 1/2 feet of height, they have skin ranging in color from an olive brown to a verdant green, smashed upturned noses, and large ears similar to those of elves. Their limbs, particularly their arms, are long compared to their torso, and they often grow large amounts of body hair. Most Goblins in the world are tribal, cruel, and generally bullies wherever they can be. Nevertheless most goblins live their lives as slaves to orcs and hobgoblins. Goblins are unusually strong for their size, having about the strength of the average adult human in a body less than half that size. Their small size and gangly form makes them very nimble as well, nevertheless they are typically considered ugly and have a perpetually sour disposition.",
+  "traits": [
+    "Ability Score Increase: Your dexterity increases by 2 and your constitution score increases by 1.",
+    "Size: Goblins are between 3 and 4 feet tall and weight between 70 and 90 lbs. Your size is Small.",
+    "Speed: Your base walking speed is 30 feet.",
+    "Powerful Build: You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.",
+    "Darkvision: You can see in dim light for 60 feet in front of you as if it were bright light, and in darkness as if it were dim light. You cannot see color in darkness, only shades of gray.",
+    "Nimble Escape: The goblin can take the Disengage or Hide action as a bonus action on each of its turns.",
+    "Fury of the Small: When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature.  The extra damage equals your level.  Once you use this trait, you can't use it again until you finish a short or long rest."
+  ],
+  "agepoints": {
+    "puberty": 8,
+    "sexualmaturity": 10,
+    "mentalmaturity": 15,
+    "middleage": 25,
+    "oldage": 35,
+    "averagelifespan": 50,
+    "maxage": 65
+  },
+  "subraces": [
+    {
+      "id": "default",
+      "name": "Goblins",
+      "image": "/images/races/goblin.jpg",
+      "description": "",
+      "traits": [],
+      "averageheight": 44,
+      "baseheight": 39,
+      "heightroll": "2d4",
+      "averageweight": 70,
+      "baseweight": 55,
+      "weightroll": "1d6"
+    }
+  ]
+}

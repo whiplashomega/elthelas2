@@ -1,0 +1,76 @@
+{
+  "id": "halflings",
+  "name": "Halflings",
+  "description": "\n\nHalflings are small, gentle folk, who look almost like half-scale models of humans (except for their large hairy feet.) They are found almost everywhere and among every people, although their numbers dwindle as you grow closer to major war zones. They live in the cities, as well as building villages of their own in more remote locations, and try to profit however they can. They enjoy good food and good humor, and few halflings seek adventure. There are two different varieties of halflings in the world, as well the 'tallfellows', descendents of halflings who have interbred with humans or elves. The Lightfoot halflings predominate in Elathia, while the Strongheart Halflings are more common in Atyrea.\n\n",
+  "traits": [
+        "Lucky: When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.",
+        "Brave: You have advantage on saving throws against being frightened."
+  ],
+  "agepoints": {
+    "puberty": 13,
+    "sexualmaturity": 16,
+    "mentalmaturity": 25,
+    "middleage": 45,
+    "oldage": 60,
+    "averagelifespan": 80,
+    "maxage": 100
+  },
+  "subraces": [
+    {
+      "id": "lightfoothalfling",
+      "name": "Lightfoot Halflings",
+      "image": "/images/races/lightfoothalfling.jpg",
+      "description": "Lightfoot halflings tend to be happy-go-lucky sorts. They are most prevalent on the eastern continent of Elathia, where they live among the humans, elves, and dwarves primarily, with some small communities in orcish cities of the south. Lightfoot halflings are more slight of build compared to their cousins the Strongheart halflings.",
+      "traits": [
+        "Ability Score Increase: your dexterity score increases by 2 and your charisma score increases by 1.",
+        "Size: Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small.",        
+        "Speed: Your base walking speed is 25 feet.",
+        "Halfling Nimbleness: You can move through the space of any creature of a size larger than yours.",
+        "Naturally Stealthy: You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you."
+      ],
+      "averageheight": 36,
+      "baseheight": 31,
+      "heightroll": "2d4",
+      "averageweight": 40,
+      "baseweight": 35,
+      "weightroll": "1"
+    },
+    {
+      "id": "stronghearthalfling",
+      "name": "Strongheart Halflings",
+      "image": "/images/races/stronghearthalfling.jpg",
+      "description": "Strongheart halflings are somewhat more serious of nature than their lightfoot cousins. They live primarily in the western continent of Atyrea. Strongheart halflings lack the unusual luck of their eastern brethren, but are more adept in combat and war.",
+      "traits": [
+        "Ability Score Increase: your dexterity score increases by 2 and your constitution score increases by 1.",
+        "Size: Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small.",
+        "Speed: Your base walking speed is 25 feet.",
+        "Halfling Nimbleness: You can move through the space of any creature of a size larger than yours.",
+        "Stout Resilience: You have advantage on saving throws against poison, and you have resistance against poison damage."
+      ],
+      "averageheight": 36,
+      "baseheight": 31,
+      "heightroll": "2d4",
+      "averageweight": 50,
+      "baseweight": 35,
+      "weightroll": "1d6"
+    },
+    {
+      "id": "tallfellowhalfling",
+      "name": "Tallfellow Halfling",
+      "image": "/images/races/tallfellowhalfling.jpg",
+      "description": "\n\nTallfellow halflings are the descendents of halflings and humans or halflings and elves. Considerably taller than your typical halfling (averaging between 4 1/2 and 5 feet) they are still considerably shorter than humans and most elves. Nevertheless they are able to wield human sized weapons, and ride full size mounts. They also make bigger targets.\n\n      Tallfellow halflings are rare, but are more common in more cosmopolitan cities. In more rural halfling communities they are often outcast as half-breeds, while in human and elven communities they are looked down on for their small stature.\n\n",
+      "traits": [
+        "Ability Score Increase: your strength score increases by 1 your dexterity score increases by 2 and your charisma score increases by 1.",
+        "Size: Tallfellow Halflings average about 4.5 feet tall and weigh about 80 pounds. Your size is Medium.",
+        "Speed: Your base walking speed is 30 feet.",
+        ""
+      ],
+      "averageheight": 55,
+      "baseheight": 48,
+      "heightroll": "2d6",
+      "averageweight": 90,
+      "baseweight": 70,
+      "weightroll": "1d4"
+    }
+  ]
+}

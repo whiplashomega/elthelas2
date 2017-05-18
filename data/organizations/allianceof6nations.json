@@ -1,0 +1,30 @@
+{
+  "id": "allianceof6nations",
+  "title": "Alliance of 6 Nations",
+  "description": "The Alliance of 6 Nations is a recent strategic alliance of the nations on the [Elathian](/geo/continents/elathia) continent who oppose the expansionistic tendencies of the [Malinval](/geo/nations/malinval) Orcs, as well as the worship of [Nera](/ref/gods/nera), [Mat'raktha](/ref/gods/matraktha), and [Malik](/ref/gods/malik). Made up of [Curinor](/geo/nations/curinor), [Eldoran](/geo/nations/eldoran), [Demal Thor](/geo/nations/demalthor), [Kandor](/geo/nations/kandor), [Gerasalim](/geo/nations/gerasalim), and [Dormania](/geo/nations/dormania), the alliance was impossible until recently because of recurring wars between the elves and dwarves over the [Mithril Hills](/geo/features/mithrilhills). The crowning achievement of the Alliance has been the construction, maintenance, and manning of the [Fortress of Light](/geo/landmarks/fortressoflight) and other border forts along the [Blighted Gap](/geo/features/blightedgap).",
+  "nations": [
+    "eldoran",
+    "dormania",
+    "gerasalim",
+    "curinor",
+    "kandor",
+    "demalthor"
+  ],
+  "cities": [
+    "desadorel",
+    "strovenguard",
+    "kaland",
+    "curinkeep",
+    "aridhem",
+    "loridesa",
+    "eastguard",
+    "highhammer",
+    "estapor",
+    "storval",
+    "sofala",
+    "malidal"
+  ],
+  "tenets": [],
+  "level1": "",
+  "level10": ""
+}

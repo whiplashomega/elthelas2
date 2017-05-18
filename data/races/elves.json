@@ -1,0 +1,95 @@
+{
+  "id": "elves",
+  "name": "Elves",
+  "description": "\n\nThe elves were the first race to recover after the climactic God's War. The Gods and Sorceron did not see the mostly feral elves of the ancient world as reliable soldiers and Sylvan, their patron Goddess went to considerable effort to protect her people from harm. However once the war was over, with the other races having highly reduced and scattered populations, the elves finally got around to building cities and expanding. They formed the nation of Eldoran, which remains probably the most powerful nation on the planet besides Malinval. However, the high elves have often proven arrogant, and their internal conflicts with the moon elves finally resulted in civil war. The Moon Elves successfully asserted their independence and formed the nation of Demal Thor.\n\nThe Elves are split into 4 distinct subraces, the city dwelling high elves, the rural wood elves, the nomadic moon elves, and the still feral wild elves.\n\n",
+  "traits": [
+    "Size: Elves range from under 5 to over 6 feet tall and have slender builds. Your size is medium.",
+    "Keen Senses: You have proficiency in the perception skill.",
+    "Fey Ancestry: You have advantage on saving throws against being charmed, and magic can't put you to sleep.",
+    "Trance: Elves don't need to sleep. Instead they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is 'trance') While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
+    "Elf Weapon Training: You have proficiency with the longsword, shortsword, shortbow, and longbow."
+  ],
+  "agepoints": {
+    "puberty": 18,
+    "sexualmaturity": 22,
+    "mentalmaturity": 35,
+    "middleage": 60,
+    "oldage": 80,
+    "averagelifespan": 110,
+    "maxage": 140
+  },
+  "subraces": [
+    {
+      "id": "highelves",
+      "name": "High Elves",
+      "image": "/images/races/highelf.jpg",
+      "description": "\n\nThe High Elves make up the majority of the ruling and merchant class of elves in Eldoran, and are the primary residents in the cities. They are relatively few compared to the Wood Elves who live throughout the countryside, but because most elven merchants are high elves, they tend to be considered the most stereotypical. High Elves are somewhat weaker, but better educated then Wood Elves.\n\n",
+      "traits": [
+        "Ability Score Increase: Your dexterity score increases by 2 and your intelligence score increases by 1.",
+        "Speed: Your base walking speed is 30 feet.",
+        "Darkvision: Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in the darkness, only shades of gray.",
+        "Cantrip: You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it.",
+        "Extra Language: You can speak, read, and write one extra language of your choice."
+      ],
+      "averageheight": 65,
+      "baseheight": 54,
+      "heightroll": "2d10",
+      "averageweight": 120,
+      "baseweight": 90,
+      "weightroll": "1d4"
+    },
+    {
+      "id": "moonelves",
+      "name": "Moon Elves",
+      "image": "/images/races/moonelf.jpg",
+      "description": "The Moon Elves of Demal Thor are a hardier breed of elves than the High Elves or Wood Elves, but they are gruff loners who generally appear standoffish to those outside of their clan. They live in nomadic clans of between 2 and 3 hundred individuals that wander the plains following the herds.",
+      "traits": [
+        "Ability Score Increase: Your dexterity score increases by 2 and your constitution score increases by 1.",
+        "Speed: Your base walking speed is 35 feet.",
+        "Nomad: You have proficiency with the survival skill, and add double your proficiency bonus to Wisdom(survival) checks."
+      ],
+      "averageheight": 65,
+      "baseheight": 54,
+      "heightroll": "2d10",
+      "averageweight": 140,
+      "baseweight": 100,
+      "weightroll": "1d6"
+    },
+    {
+      "id": "wildelves",
+      "name": "Wild Elves",
+      "image": "/images/races/wildelf.jpg",
+      "description": "The Wild Elves are as rare as they are reclusive, living in small groups in the deepest jungles of Eldoran and Gnarra. They generally lack education, and are often considered feral and uncivilized by other elves.",
+      "traits": [
+        "Ability Score Increase: Your dexterity score increases by 2 and your Charisma score increases by 1.",
+        "Speed: Your base walking speed is 35 feet.",
+        "Darkvision: Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in the darkness, only shades of gray.",
+        "Cantrip: You know one cantrip of your choice from the wizard spell list. Charisma is your spellcasting ability for it."
+      ],
+      "averageheight": 62,
+      "baseheight": 53,
+      "heightroll": "2d8",
+      "averageweight": 115,
+      "baseweight": 90,
+      "weightroll": "1d4"
+    },
+    {
+      "id": "woodelves",
+      "name": "Wood Elves",
+      "image": "/images/races/woodelf.jpg",
+      "description": "The Wood Elves of Eldoran are only slightly removed from their feral roots. The Wood Elves are relatively unfamiliar with the learning and education present in much of modern civilization, but they are naturally strong, spending their lives as farmers, woodsmen, and craftsmen.",
+      "traits": [
+        "Ability Score Increase: Your dexterity score increases by 2 and your wisdom score increases by 1.",
+        "Speed: Your base walking speed is 35 feet.",
+        "Darkvision: Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in the darkness, only shades of gray.",
+        "Mask of the Wild: You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+      ],
+      "averageheight": 65,
+      "baseheight": 54,
+      "heightroll": "2d10",
+      "averageweight": 130,
+      "baseweight": 100,
+      "weightroll": "1d4"
+    }
+  ]
+}

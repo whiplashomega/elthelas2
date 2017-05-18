@@ -1,0 +1,188 @@
+/* line 1, ../sass/resume.scss */
+body {
+  background-color: #eeeeee;
+}
+
+/* line 5, ../sass/resume.scss */
+#container {
+  width: 960px;
+}
+
+/* line 9, ../sass/resume.scss */
+#nameaddress {
+  font-family: 'Oregano' serif;
+  border: 4px solid #dddd99;
+  background: #ffffaa;
+  display: block;
+  float: left;
+  width: 160px;
+  padding: 8px;
+}
+
+/* line 19, ../sass/resume.scss */
+#summary {
+  font-family: 'Lusitana' sans-serif;
+  width: 700px;
+  margin: 0px 10px 10px 20px;
+  float: left;
+  clear: none;
+}
+
+/* line 27, ../sass/resume.scss */
+#summary h2 {
+  font-family: 'Oregano' serif;
+}
+
+/* line 31, ../sass/resume.scss */
+#summary p {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+/* line 36, ../sass/resume.scss */
+table, td {
+  border: 0px;
+}
+
+/* line 40, ../sass/resume.scss */
+table {
+  float: left;
+  clear: left;
+  width: 930px;
+  font-family: 'Lusitana' sans-serif;
+}
+
+/* line 47, ../sass/resume.scss */
+td {
+  padding: 5px;
+  color: black;
+  border: 4px outset #ffffaa;
+  background: #ffffaa;
+}
+
+/* line 55, ../sass/resume.scss */
+tr {
+  border: 5px outset #006633;
+}
+
+/* line 59, ../sass/resume.scss */
+.firstcol {
+  width: 190px;
+  background: #003366;
+  color: white;
+  border: 5px outset #003366;
+}
+
+/* line 65, ../sass/resume.scss */
+caption {
+  font-size: 1.5em;
+}
+
+/* line 69, ../sass/resume.scss */
+.sectionhead {
+  font-family: 'Oregano' serif;
+  text-align: left;
+  margin-left: 200px;
+  clear: both;
+}
+
+/* line 76, ../sass/resume.scss */
+h2, h4 {
+  padding: 10px 0px 10px 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* line 82, ../sass/resume.scss */
+h2 {
+  font-weight: normal;
+  font-size: 1.5em;
+}
+
+/* line 87, ../sass/resume.scss */
+h4 {
+  font-size: 1em;
+}
+
+/* line 90, ../sass/resume.scss */
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-size: 0.9em;
+}
+
+/* line 96, ../sass/resume.scss */
+.projects {
+  clear: both;
+}
+
+/* line 99, ../sass/resume.scss */
+.projects .date {
+  font-family: 'Oregano' serif;
+  width: 425px;
+  float: left;
+  margin-left: 200px;
+  font-size: 1.05em;
+  margin-top: 10px;
+}
+
+/* line 107, ../sass/resume.scss */
+.projects aside {
+  float: left;
+  font-family: 'Oregano' serif;
+  background: #003366;
+  color: white;
+  padding: 5px;
+  box-shadow: 5px 5px 5px gray;
+  width: 200px;
+  margin: 0px 10px 10px 0px;
+  clear: left;
+}
+
+/* line 119, ../sass/resume.scss */
+.projects article {
+  font-family: 'Lusitana' sans-serif;
+  float: left;
+  display: block;
+  width: 700px;
+  background: white;
+  box-shadow: 5px 5px 5px gray;
+  padding: 5px 5px 10px;
+  margin-bottom: 10px;
+}
+
+/* line 130, ../sass/resume.scss */
+#employment p {
+  height: auto;
+  clear: both;
+}
+
+/* line 134, ../sass/resume.scss */
+#personalProjects {
+  padding: 5px;
+  float: left;
+  clear: both;
+  width: 920px;
+  color: white;
+  font-family: 'Oregano' serif;
+  background: #003366;
+  box-shadow: 5px 5px 5px gray;
+}
+
+/* line 144, ../sass/resume.scss */
+footer {
+  clear: both;
+  height: 20px;
+}
+
+/* line 149, ../sass/resume.scss */
+a {
+  color: darkgreen;
+  text-decoration: none;
+}
+
+/* line 154, ../sass/resume.scss */
+#personalProjects a {
+  color: lightgreen;
+}

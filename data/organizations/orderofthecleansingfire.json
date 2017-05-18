@@ -1,0 +1,18 @@
+{
+  "id": "orderofthecleansingfire",
+  "title": "Order of the Cleansing Fire",
+  "description": "The Order of the Cleansing Fire is an offshoot of the Church of Molton.  They preach change through violent means.  They believe that an enforced material equality, where everyone has nothing to begin with, will with time reveal the truth of how a people should be governed, and that this must happen periodically in order to avoid corruption across generations.\n\nNeedless to say they are not well liked by ruling classes anywhere, although they often gain adherents among the destitute who shelter them from the eyes of the powerful.  Members of the Order are easily identified by the brand they where prominantly on their bodies in the shape of a flame.",
+  "nations": [
+  
+  ],
+  "cities": [
+  
+  ],
+  "tenets": [
+    "I have a marking brand on my body that must never be hidden by clothing.",
+    "My actions must never enforce the class divisions of a people.  The rich are not rich by right but through oppression and must be brought low.",
+    "The destruction of the ruling class is good and right."
+  ],
+  "level1": "**Fire from nothing.** You learn the create bonfire cantrip and can cast it at will.  Charisma is your spellcasting ability for this spell",
+  "level10": "**Master of Flame.** You are immune to fire damage."
+}

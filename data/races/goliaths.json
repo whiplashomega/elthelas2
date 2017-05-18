@@ -1,0 +1,38 @@
+{
+  "id": "goliaths",
+  "name": "Goliaths",
+  "description": "Goliaths are a tall, gangly, rocky skinned and tribal people. They love sport and competition, and are exceptionally strong and hardy. Their incredible height, strength, and large limbs allow them to wield weapons and perform feats of strength much better than most creatures of a relatively similar size. The Goliaths of Elthelas live in wandering tribes in high mountainous areas. They have never formed any centralized nation, and there have never been enough of them for any existing nation to try to force them under the national banner. The largest concentrations of Goliath tribes live in Stagenheim and Curinor, and they trade regularly with the local gnomes and dwarves respectively.",
+  "traits": [
+    "Ability Score Increase: Your strength increases by 2 and your constitution increases by 1.",
+    "Size: Goliaths are between 7 and 8 feet tall and weigh between 280 and 340 pounds. Your size is Medium.",
+    "Speed: Your base walking speed is 30 feet.",
+    "Natural Athlete: You have proficiency in the athletics skill.",
+    "Stone's Endurance: You can focus yourself to occasionally shrug off injury. When you take damage, you can use your reaction to roll a d12. Add your Constitution modifier to the number rolled, and reduce the damage by that total. After you use this trait, you can’t use it again until you finish a short or long rest.",
+    "Powerful Build: You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.",
+    "Mountain Born: You’re acclimated to high altitude, including elevations above 20,000 feet. You’re also naturally adapted to cold climates, as described in chapter 5 of the Dungeon Master’s Guide."
+  ],
+  "agepoints": {
+    "puberty": 12,
+    "sexualmaturity": 15,
+    "mentalmaturity": 25,
+    "middleage": 40,
+    "oldage": 55,
+    "averagelifespan": 75,
+    "maxage": 95
+  },
+  "subraces": [
+    {
+      "id": "default",
+      "name": "",
+      "image": "/images/races/goliath.jpg",
+      "description": "",
+      "traits": [],
+      "averageheight": 87,
+      "baseheight": 76,
+      "heightroll": "2d10",
+      "averageweight": 330,
+      "baseweight": 250,
+      "weightroll": "2d6"
+    }
+  ]
+}

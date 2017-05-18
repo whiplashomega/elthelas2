@@ -1,0 +1,42 @@
+{
+  "id": "bugbears",
+  "name": "Bugbears",
+  "description": "\n\nBugbears are born for battle and mayhem. Surviving by raiding and hunting, they bully the weak and despise being bossed around, but their love of carnage means they will fight for powerful masters if bloodshed and treasure are assured.\n\nBugbears are often found in the company of their cousins, hobgoblins and goblins. Bugbears usually enslave goblins they encounter, and they bully hobgoblins into giving them gold and food in return for serving as scouts and shock troops. Even when paid, bugbears are at best unreliable allies, yet goblins and hobgoblins understand that no matter how much bugbears might drain a tribe of resources, these creatures are a potent force.\n\nBugbears are typically found in the hills and wild places of the world where society is limited. Most worship Malik, God of chaos, war, and destruction, although a few have been known to worship Tiamat or Trolka, particularly in places where a show of faith to one of those Gods may be expedient to their survival (such as in Dragonhome and Gorgro).\n\nDespite their intimidating builds, bugbears move with surprising stealth. They are fond of setting ambushes and flee when outmatched. They are dependable mercenaries as long as they are supplied food, drink, and treasure, but a bugbear forgets any bond when its life is on the line. A wounded member of a bugbear band might be left behind to help the rest of the band escape. Afterward, that bugbear might help pursuers track down its former companions if doing so saves its life.\n\n",
+  "traits": [
+    "Ability Score Increase: Your strength score increases by 2 and your dexterity score increases by 1.",
+    "Size: Bugbears range from 6 1/2 to 7 1/2 feet tall, your size is medium.",
+    "Speed: Your base walking speed is 30 ft",
+    "Brute: A melee weapon deals one extra die of its damage when the bugbear hits with it.",
+    "Surprise Attack: If the bugbear surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 (2d6) damage from the attack.",
+    "Stealthy: Bugbears are always proficient in dexterity (stealth)",
+    "Darkvision 60 ft.",
+    "Long Limbed: When you make a melee attack on your turn, your reach for it is 5 feet greater than normal.",
+    "Powerful Build: You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+  ],
+  "agepoints": {
+    "puberty": 8,
+    "sexualmaturity": 10,
+    "mentalmaturity": 15,
+    "middleage": 25,
+    "oldage": 35,
+    "averagelifespan": 50,
+    "maxage": 65
+  },
+  "subraces": [
+    {
+      "id": "default",
+      "name": "",
+      "image": "/images/races/bugbear.jpg",
+      "description": "",
+      "traits": [
+      
+      ],
+      "averageheight": 85,
+      "baseheight": 72,
+      "heightroll": "2d12",
+      "averageweight": 290,
+      "baseweight": 200,
+      "weightroll": "2d6"
+    }  
+  ]
+}

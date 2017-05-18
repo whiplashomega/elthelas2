@@ -1,0 +1,100 @@
+  {
+    "id": "dwarves",
+    "name": "Dwarves",
+    "description": "\n\nThe Dwarves suffered a difficult split at the end of God's War, one large group of them found themselves abandoned on a chain of islands, while the biggest group was in the center of the large easter continent, Elathia, and under constant attack by orcs and trolls. Since then those trapped on the islands have become the most adept sailors in the world, finding safety and wealth on the sea. The others have found homes in both mountains and plains, and have formed a caste-based republic.\n\nThis has split the dwarves into 4 distinct sub-races, that although they are capable of interbreeding, rarely do.",
+    "traits": [
+      "Size: Dwarves stand between 4 and 5 feet tall and average about 150 lbs. Your size is medium.",
+      "Dwarven Resilience: You have advantage on saving throws against poison, and you have resistance against poison damage.",
+      "Dwarven Combat Training: You have proficiency with the battleaxe, handaxe, throwing hammer, and warhammer."
+    ],
+    "agepoints": {
+      "puberty": 15,
+      "sexualmaturity": 19,
+      "mentalmaturity": 30,
+      "middleage": 50,
+      "oldage": 70,
+      "averagelifespan": 95,
+      "maxage": 120
+    },
+    "subraces": [
+      {
+        "id": "deepdwarves",
+        "name": "Deep Dwarves",
+        "image": "/images/races/dwarf.jpg",
+        "description": "The Deep Dwarves are the ruling caste of dwarven society in Curinor. They rarely (if ever in their lives) see the sun, preferring to stay in the deepest parts of the dwarven holds. They travel between holds via underground roads or by palanquin, and almost never associate with plains dwarves, let alone non-dwarves. Deep Dwarves have exceedingly pale, almost colorless skin.",
+        "traits": [
+          "Ability Score Increase: Your Constitution score increases by 1 and your wisdom score increases by 2.",
+          "Speed: Your base walking speed is 25 feet. Your speed is not reduced by wearing heavy armor.",
+          "Darkvision: Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 90 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+          "Tool Proficiency: You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools.",
+          "Stonecunning: Whenever you make an intelligence (history) check related to the origin of stonework, you are considered proficient in the history skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.",
+          "Noble Blood: You gain proficiency in one skill of your choice choosing from persuasion, performance, intimidation, or deception."
+        ],
+      "averageheight": 47,
+      "baseheight": 42,
+      "heightroll": "2d4",
+      "averageweight": 135,
+      "baseweight": 100,
+      "weightroll": "2d6"
+      },
+      {
+        "id": "hilldwarves",
+        "name": "Hill Dwarves",
+        "image": false,
+        "description": "The Hill Dwarves of Curinor are the middle glue of society. Most dwarven craftsmen and warriors are hill dwarves, and they do most of the work in the lucrative mines and smithies of Curinor (although the deep dwarves still see most of the profits). Hill Dwarves are hardy folk, but are ill-accustomed to dealing with non-dwarves. Their skin is fair, but not pale, typically with rose colored undertones.",
+        "traits": [
+          "Ability Score Increase: Your Constitution score increases by 2 and your wisdom score increases by 1.",
+          "Speed: Your base walking speed is 25 feet. Your speed is not reduced by wearing heavy armor.",
+          "Darkvision: Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+          "Tool Proficiency: You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools.",
+          "Stonecunning: Whenever you make an intelligence (history) check related to the origin of stonework, you are considered proficient in the history skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.",
+          "Dwarven Toughness: Your hit point maximum increases by 1 per character level."
+        ],
+      "averageheight": 49,
+      "baseheight": 44,
+      "heightroll": "2d4",
+      "averageweight": 150,
+      "baseweight": 115,
+      "weightroll": "2d6"
+      },
+      {
+        "id": "morrinddwarves",
+        "name": "Morrind Dwarves",
+        "description": "The Morrind Dwarves were separated from the other dwarves in the God's War, and marooned on a distant island chain. They built a city in which they could remember their mountain home (called Morrind) and learned to build ocean worthy ships. They took to the sea, trading with whomever they could find in order to supply themselves with whatever they needed. By the time they found the other dwarves, they discovered that they were more comfortable at sea then on land, and unwelcome in the caste-system devised by their kin. Morrind dwarves tend to be less hardy but more dextrous compared to their kin, and are very adept at shipboard movement.",
+        "image": false,
+        "traits": [
+          "Ability Score Increase: Your Constitution score increases by 2 and your Charisma score increases by 1.",
+          "Speed: Your base walking speed is 30 feet. Your speed is not reduced by wearing heavy armor.",
+          "Tool Proficiency: You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or carpenter's tools.",
+          "Seacunning: Whenever you make an intelligence (nature) check related to the sea, you are considered proficient in the history skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.",
+          "Natural Sailor: You are considered proficient and may add double your proficiency bonus to any acrobatics check on board a ship, a survival check made to navigate a sea, or an athletics check made to swim, you also gain proficiency with water based vehicles."
+        ],
+      "averageheight": 55,
+      "baseheight": 48,
+      "heightroll": "2d6",
+      "averageweight": 175,
+      "baseweight": 125,
+      "weightroll": "2d6"
+      },
+      {
+        "id": "plainsdwarves",
+        "name": "Plains Dwarves",
+        "image": false,
+        "description": "Plains Dwarves are the lowest of the low among the dwarves of Curinor. Living primarily on the surface, they are often shunned by other dwarves, however they are more accustomed to interacting with other races, as well as hard manual labor. Nevertheless, they are typically poor and ill-educated. Their life on the open plain has endowed them with a dark tan tone to their skin (particularly compared to the pale deep dwarves).",
+        "traits": [
+          "Ability Score Increase: Your Constitution score increases by 2 and your Strength score increases by 2.",
+          "Speed: Your base walking speed is 25 feet. Your speed is not reduced by wearing heavy armor.",
+          "Darkvision: Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+          "Tool Proficiency: You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools.",
+          "Stonecunning: Whenever you make an intelligence (history) check related to the origin of stonework, you are considered proficient in the history skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.",
+          "Dwarven Armor Training: You have proficiency with light and medium armor."
+        ],
+      "averageheight": 53,
+      "baseheight": 48,
+      "heightroll": "2d4",
+      "averageweight": 165,
+      "baseweight": 130,
+      "weightroll": "2d6"
+      }
+    ]
+  }

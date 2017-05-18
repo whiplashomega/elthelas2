@@ -1,0 +1,16 @@
+      {
+        "id": "trolka",
+        "name": "Trolka",
+        "holysymbol": "A white haired green skinned grinning troll's face",
+        "alignment": "Neutral Evil",
+        "domains": "Destruction, Evil, Gluttony, Hunger, Pestilence",
+        "domains5": "Death, War",
+        "interfaithblessing": "+2 on damage rolls",
+        "worshippers": "Trolka the ever hungry is the God of giants and trolls, and almost all trolls and most giants worship them.",
+        "allowedalignments": "Lawful Evil, Neutral Evil, Chaotic Evil",
+        "weapon": "Greatclub or Claw",
+        "appearance": "Trolka appears as a massive and incredibly ugly troll with tusks and claws made of steel.  His skin is a ruddy-green color.",
+        "dogma": "Trolka encourages his subjects to multiply and consume the world. He teaches the holy nature of disease as a consuming force.",
+        "clergy": "Trolka's clergy are usually massively fat trolls and giants.",
+        "home": "Carceri"
+      }

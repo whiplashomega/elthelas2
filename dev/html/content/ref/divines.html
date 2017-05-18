@@ -1,0 +1,13 @@
+<div class="col-sm-10">
+  <h2>Divines</h2>
+  <select data-ng-model="divineFilter" data-ng-options="item as item for item in types" class="form-control">
+    <option value="" selected>Filter By Type</option>
+  </select>
+  <div data-ng-repeat="divine in divines | filter: filterDivines">
+    <h3>{{divine.name}}</h3>
+    <h4>Alignment: {{divine.alignment}}</h4>
+    <h4>Type: {{divine.type}}</h4>
+    <h4>Planar Home: {{divine.home}}</h4>
+    <div marked="divine.description"></div>
+  </div>
+</div>

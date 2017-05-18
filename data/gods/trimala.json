@@ -1,0 +1,16 @@
+      {
+        "id": "trimala",
+        "name": "Trimala",
+        "holysymbol": "A Waterfall cascading over a cliff",
+        "alignment": "Neutral",
+        "domains": "Cold, Darkness, Moon, Ocean, Scalykind, Storm, Water",
+        "domains5": "Tempest, Water",
+        "interfaithblessing": "roll 1d8 on table (see complete champion) 6 is player choice.",
+        "worshippers": "Those who live off of the sea or rivers tend to pay tribute to Trimala, as well as lizardmen and other amphibious, reptilian, and fish creatures.",
+        "allowedalignments": "Neutral Good, Lawful Neutral, Neutral, Neutral Evil",
+        "weapon": "Trident",
+        "appearance": "Trimala appears in the shape of a woman, but entirely composed of water.  She can appear in any size, and often has sea creatures swimming around inside her form.",
+        "dogma": "Trimala is the goddess of water in all forms and places, from the icy glaciers to the oceans and rivers. She is also the patron goddess of creatures that depend on water, and the Lady of the Moon and Tides. She teaches respect for the sea and its creatures and that all are subject to forces greater than oneself.",
+        "clergy": "Trimala's clergy intercede with her to seek her mercy on behalf of ship captains and crewmen before making journeys by sea, and on behalf of those who live near coasts to preserve them from the forces of the ocean. Inland they are often called upon in times of drought to pray for rain.",
+        "home": "Plane of Water"
+      }

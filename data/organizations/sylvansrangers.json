@@ -1,0 +1,34 @@
+{
+  "id": "sylvansrangers",
+  "title": "Sylvan's Rangers",
+  "description": "Reknowned explorers and adventurers, Sylvan's Rangers are a loose organization dedicated to exploring unknown haunts.  They sponsor outfitters in cities close to remote locations that act as the gatekeepers to the organization.  These outfitters compile maps and information brought in by the rangers, creating guide books and outfitting kits.",
+  "nations": [
+    "eldoran",
+    "demalthor",
+    "gerasalim",
+    "morrindim",
+    "deradragorim",
+    "staelia",
+    "zelfir"
+  ],
+  "cities": [
+    "lastwatch",
+    "mandon",
+    "seldan",
+    "dima",
+    "storval",
+    "estapor",
+    "aridhem",
+    "eastguard",
+    "portsmith",
+    "pelgan",
+    "morrind"
+  ],
+  "tenets": [
+    "To stay in one place is to fail to grow, I must always be finding new places",
+    "The frontiers are dangerous and I must always strive to make them safer for others",
+    "I must attempt to preserve natural beauty where I find it"
+  ],
+  "level1": "**Favored Terrain.** You gain a favored terrain.  See the ranger feature in the PHB, if you already have a favored terrain you may pick an additional one.",
+  "level10": "**Master Hunter.** Add the spell hunter's mark to your spells known or spellbook.  If you do not the ability to cast spells, you gain the ability to cast hunter's mark 1/day as a first level spell.  The duration changes from 'Concentration up to 1 hour' to '1 hour'."
+}

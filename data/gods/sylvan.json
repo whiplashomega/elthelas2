@@ -1,0 +1,16 @@
+      {
+        "id": "sylvan",
+        "name": "Sylvan",
+        "holysymbol": "an oak tree in midsummer",
+        "alignment": "chaotic good",
+        "domains": "chaos, good, air, elf, plant, animal",
+        "domains5": "Air, Nature, Trickery",
+        "interfaithblessing": "+1 on attack rolls and skill checks",
+        "worshippers": "elves, rangers, and woodsmen",
+        "allowedalignments": "neutral good, chaotic good, chaotic neutral",
+        "weapon": "longbow, longsword",
+        "appearance": "Sylvan appears as a tall elf, silver haired and blue eyed.  Sylvan does not have a set gender, and often appears as a man, a woman, or even a hermaphrodite.",
+        "dogma": "Sylvan is worshipped in the planting of trees, frolicking in the wind, and the caring of animals.  Sylvan differs from Gaian, however, in that its dogma focuses on the preservation of nature for the use of mortals and creatures, rather than as a foil to them.\n\nSylvan is also the God of exploration, discovery, granting her favor to those who explore distant shores and unseen wonders.  Some sects also play on her more chaotic nature, recognizing that deceit and trickery are sometimes necessary for the greater good.",
+        "clergy": "Clergy of Sylvan are well regarded in elven society, although they are rare elsewhere.  Their ceremonial dress is robes made of pure spider silk that cling to the skin, and crowns of laurels or leaves.  Their work typically involves the nurturing of the great trees, huge and ancient, in whose branches many elven settlements are built.  A work they take very seriously. Sects outside of elven society usually focus on one of her other aspects, preaching of the fickle nature of existence and the need to help others while we can.",
+        "home": "Arborea"
+      }

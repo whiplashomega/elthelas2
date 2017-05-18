@@ -1,0 +1,194 @@
+{
+  "id": "dragonborn",
+  "name": "Dragonborn",
+  "description": "\n\nAfter the people of Dera were rescued by the Dragon God Bahamut, many dragons came to live among the people of Dera'Dragorim, and it became a matter of honor to bear the child of a dragon. While half-dragon children were rarely viable, those that were born proved to be incredibly fertile, and it was considered almost as great an honor to bear the child of a half-dragon as a dragon. This led to a large population of people with a quarter or less of dragon blood, called Dragonborn or Spellscales. Dragonborn are more draconic in appearance than their Spellscale cousins, are larger, and considerably stronger. They have scaly hides, draconic like faces, and often have clawed hands and feet or even wings. Outside of Dera'Dragorim and more urban settings, they are often seen as monsters.\n\n",
+  "traits": [
+    "Ability Score Increase: Your strength score increases by 2, and your Charisma scores increases by 1.",
+    "Size: Dragonborn are taller and heavier than humans, standing well over 6 feet tall and averaging almost 250 pounds. Your size is medium.",
+    "Speed: Your base walking speed is 30 feet.",
+    "Draconic Ancestry: You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.",
+    "Breath Weapon: You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of an exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon you cannot use it again until after you complete a short or long rest.",
+    "Damage Resistence: You have resistence to the damage type associated with your draconic ancestry."
+  ],  
+  "agepoints": {
+    "puberty": 19,
+    "sexualmaturity": 24,
+    "mentalmaturity": 40,
+    "middleage": 65,
+    "oldage": 90,
+    "averagelifespan": 120,
+    "maxage": 150
+  },
+  "subraces": [
+    {
+      "id": "black",
+      "name": "Black Dragonborn",
+      "description": "",
+      "image": "/images/races/dragonborn.jpg",
+      "traits": [
+        "Damage Type: Acid",
+        "Breath Weapon Area of Effect: 5 by 30ft line",
+        "Breath Weapon Save: Dexterity"
+      ],
+      "averageheight": 75,
+      "baseheight": 66,
+      "heightroll": "2d8",
+      "averageweight": 240,
+      "baseweight": 175,
+      "weightroll": "2d6"
+    },
+    {
+      "id": "copper",
+      "name": "Copper Dragonborn",
+      "description": "",
+      "image": false,
+      "traits": [
+        "Damage Type: Acid",
+        "Breath Weapon Area of Effect: 5 by 30ft line",
+        "Breath Weapon Save: Dexterity"
+      ],
+      "averageheight": 75,
+      "baseheight": 66,
+      "heightroll": "2d8",
+      "averageweight": 240,
+      "baseweight": 175,
+      "weightroll": "2d6"
+    },
+    {
+      "id": "blue",
+      "name": "Blue Dragonborn",
+      "description": "",
+      "image": false,
+      "traits": [
+        "Damage Type: Lightning",
+        "Breath Weapon Area of Effect: 5 by 30ft line",
+        "Breath Weapon Save: Dexterity"
+      ],
+      "averageheight": 75,
+      "baseheight": 66,
+      "heightroll": "2d8",
+      "averageweight": 240,
+      "baseweight": 175,
+      "weightroll": "2d6"
+    },
+    {
+      "id": "bronze",
+      "name": "Bronze Dragonborn",
+      "description": "",
+      "image": false,
+      "traits": [
+        "Damage Type: Lightning",
+        "Breath Weapon Area of Effect: 5 by 30ft line",
+        "Breath Weapon Save: Dexterity"
+      ],
+      "averageheight": 75,
+      "baseheight": 66,
+      "heightroll": "2d8",
+      "averageweight": 240,
+      "baseweight": 175,
+      "weightroll": "2d6"
+    },
+    {
+      "id": "brass",
+      "name": "Brass Dragonborn",
+      "description": "",
+      "image": false,
+      "traits": [
+        "Damage Type: Fire",
+        "Breath Weapon Area of Effect: 5 by 30ft line",
+        "Breath Weapon Save: Dexterity"
+      ],
+      "averageheight": 75,
+      "baseheight": 66,
+      "heightroll": "2d8",
+      "averageweight": 240,
+      "baseweight": 175,
+      "weightroll": "2d6"
+    },
+    {
+      "id": "gold",
+      "name": "Gold Dragonborn",
+      "description": "",
+      "image": false,
+      "traits": [
+        "Damage Type: Fire",
+        "Breath Weapon Area of Effect: 15 ft. cone",
+        "Breath Weapon Save: Dexterity"
+      ],
+      "averageheight": 75,
+      "baseheight": 66,
+      "heightroll": "2d8",
+      "averageweight": 240,
+      "baseweight": 175,
+      "weightroll": "2d6"
+    },
+    {
+      "id": "red",
+      "name": "Red Dragonborn",
+      "description": "",
+      "image": false,
+      "traits": [
+        "Damage Type: Fire",
+        "Breath Weapon Area of Effect: 15 ft. cone",
+        "Breath Weapon Save: Dexterity"
+      ],
+      "averageheight": 75,
+      "baseheight": 66,
+      "heightroll": "2d8",
+      "averageweight": 240,
+      "baseweight": 175,
+      "weightroll": "2d6"
+    },
+    {
+      "id": "green",
+      "name": "Green Dragonborn",
+      "description": "",
+      "image": false,
+      "traits": [
+        "Damage Type: Poison",
+        "Breath Weapon Area of Effect: 15 ft. cone",
+        "Breath Weapon Save: Constitution"
+      ],
+      "averageheight": 75,
+      "baseheight": 66,
+      "heightroll": "2d8",
+      "averageweight": 240,
+      "baseweight": 175,
+      "weightroll": "2d6"
+    },
+    {
+      "id": "silver",
+      "name": "Silver Dragonborn",
+      "description": "",
+      "image": false,
+      "traits": [
+        "Damage Type: Cold",
+        "Breath Weapon Area of Effect: 15 ft. cone",
+        "Breath Weapon Save: Constitution"
+      ],
+      "averageheight": 75,
+      "baseheight": 66,
+      "heightroll": "2d8",
+      "averageweight": 240,
+      "baseweight": 175,
+      "weightroll": "2d6"
+    },
+    {
+      "id": "white",
+      "name": "White Dragonborn",
+      "description": "",
+      "image": false,
+      "traits": [
+        "Damage Type: Cold",
+        "Breath Weapon Area of Effect: 15 ft. cone",
+        "Breath Weapon Save: Constitution"
+      ],
+      "averageheight": 75,
+      "baseheight": 66,
+      "heightroll": "2d8",
+      "averageweight": 240,
+      "baseweight": 175,
+      "weightroll": "2d6"
+    }
+  ]
+}

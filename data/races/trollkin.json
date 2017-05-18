@@ -1,0 +1,38 @@
+{
+  "id": "trollkin",
+  "name": "Trollkin",
+  "description": "\n\nOft described by those who meet them as 'damn ugly, but damn efficient killers', trollkin are gangly, thick chested humanoids with disgustingly angular faces, long pointed noses, and grey-green to brown skin. Strong and hardy, they are somewhat larger than an orc, and have clawed hands.\n\nThe trollkin were originally created during the dawning years of the world as a magical experiment in interracial breeding. The end result was something akin to a fast maturing, highly stunted troll, and was cast out by its Sorceron creators as a failure and released into the wild. Yet the trollkin's improved intellect in comparison to their troll progenitors, ability to breed quickly, and fit into other societies (with a bit of care and luck), enabled the Trollkin to thrive where trolls were hunted and killed. During the God's War, the trollkin were conscripted as foot soldiers into the armies of every side, and by the end of the war, only a few hundred remained alive. Nevertheless, these few hundred managed to find a land of their own on a large island that they named Degak'Ta, and from there they have spread out to various lands once again.\n\nThe trollkin, unlike every other major race on Elthelas, are naturally antitheistic. They generally feel the Gods betrayed their people in the God's War, using them as pawns, sending them to their deaths, and in the end, providing no reward. Politically, they tend to discount charisma as useless, rewarding strength and cunning. In their homeland of Degak'Ta they are ruled by the military, lead by the Grand Marshal, who gains office through contests of strength and tactics. In foreign affairs they are generally aloof, not taking sides in conflicts as a people, and instead hire out individually or in small groups as mercenaries to either or any side, and they are highly valued as such.\n\n",
+  "traits": [
+    "Ability Score Increase: Your Strength score increases by 1 and your Constitution Score increases by 2.",
+    "Size: Trollkin range from 7 feet to 8.5 feet tall, and typically weigh between 250 and 350 lbs. Your size is medium.",
+    "Speed: Your base walking speed is 30 ft.",
+    "Hard to Kill: You have advantage on death saves.",
+    "Face of a Troll: Trollkin have disadvantage on any charisma check except intimidation checks made to influence an NPC who is not a Trollkin or Troll.",
+    "Clawed Hands: Your unarmed strikes naturally do 1d4 slashing damage and you are automatically proficient with them.",
+    "Brute: A melee weapon deals one extra die of its damage when the trollkin hits with it."
+  ],
+  "agepoints": {
+    "puberty": 21,
+    "sexualmaturity": 26,
+    "mentalmaturity": 45,
+    "middleage": 70,
+    "oldage": 95,
+    "averagelifespan": 130,
+    "maxage": 165
+  },
+  "subraces": [
+    {
+      "id": "default",
+      "name": "",
+      "image": "/images/races/trollkin.png",
+      "description": "",
+      "traits": [ ],
+      "averageheight": 84,
+      "baseheight": 73,
+      "heightroll": "2d10",
+      "averageweight": 275,
+      "baseweight": 220,
+      "weightroll": "2d4"
+    }  
+  ]
+}

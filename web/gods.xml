@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE gods [
+  <!ELEMENT gods (god+)>
+  <!ELEMENT god (name, holysymbol, alignment, domains, domains5, interfaithblessing, worshippers, allowedalignments, weapon, appearance, dogma, clergy, home)>
+  <!ATTLIST god id ID #REQUIRED>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT holysymbol (#PCDATA)>
+  <!ELEMENT alignment (#PCDATA)>
+  <!ELEMENT domains (#PCDATA)>
+  <!ELEMENT domains5 (#PCDATA)>
+  <!ELEMENT interfaithblessing (#PCDATA)>
+  <!ELEMENT worshippers (#PCDATA)>
+  <!ELEMENT allowedalignments (#PCDATA)>
+  <!ELEMENT weapon (#PCDATA)>
+  <!ELEMENT appearance (#PCDATA)>
+  <!ELEMENT dogma (#PCDATA)>
+  <!ELEMENT clergy (#PCDATA)>
+  <!ELEMENT home (#PCDATA)>
+]>
+
+<gods>
+  <god id="alohim">
+    <name>Alohim</name>
+    <holysymbol>A Yellow Rising Sun on a White Background</holysymbol>
+    <alignment>Lawful Good</alignment>
+    <domains>Courage, Domination, Glory, Good, Inquisition, Law, Nobility, Pride, Purification, Sun</domains>
+    <domains5>Light, War</domains5>
+    <interfaithblessing>2 to AC</interfaithblessing>
+    <worshippers>Alohim is worshiped mostly by nobles, particularly those who believe in a divine right to rule, and the nobility of strength.</worshippers>
+    <allowedalignments>Lawful Good, Neutral Good, Lawful Neutral</allowedalignments>
+    <weapon>Lance</weapon>
+    <appearance>Alohim has shoulder length golden brown hair, often tied back and golden brown eyes.  He either dresses in rich noble clothing with plenty of gold trim and purple or golden armor and well-made boots of leather.  He has a long face with large features.</appearance>
+    <dogma>Alohim teaches that the nobility have a divine right to their position, and a divine duty to protect their subjects and root out evil. Cowardice in the face of one's enemies is anathema. Followers of Alohim are to keep themselves pure, avoiding evil acts of all kinds.</dogma>
+    <clergy>The Clergy of Alohim tend to be wealthy, as they receive large donations from the nobility whom they support. They tend to support good order in a country through the strict separation of nobility and serf.</clergy>
+    <home>Alohim's palace lies at the peak of Mount Celestia</home>
+  </god>
+  <god id="amathera">
+    <name>Amathera</name>
+    <holysymbol>A sheaf of grain over a kite shield</holysymbol>
+    <alignment>Neutral Good</alignment>
+    <domains>Community, Family, Good, Healing, Knowledge, Liberation, Protection</domains>
+    <domains5>Arcana, Knowledge, Life</domains5>
+    <interfaithblessing>+2 to AC</interfaithblessing>
+    <worshippers>The poor, the weak, and those in need of protection from greater foes all pray to Amathera. The nation of Zelfir worships Amathera exclusively, as she aided them in their liberation from the Sorceron now imprisoned in the Sorcerer's Prison.</worshippers>
+    <allowedalignments>Lawful Good, Neutral Good, Chaotic Good, Neutral</allowedalignments>
+    <weapon>Spear, Shield(shield bash)</weapon>
+    <appearance>Amathera appears as a tall, slender, well muscled woman with dark hair and brown eyes.  Typically dressed in simple white clothing carrying a large shield.</appearance>
+    <dogma>Amathera preaches that all people of means should give of what they have to the poor. Those who worship her tend to practice charity and her temples also serve as poor houses and houses of learning. Amathera favors the creation of trade schools and universities that are cheap to attend or free to all. She bans the usage of compulsion magic by her followers. Each year on the shortest day of the year Amathera's priests hold the feast of the lowly where the poorest in the community are honored guests and all must bring offerings of their best to grace them.</dogma>
+    <clergy>The clergy of Amathera receive little to no recognition (at least outside of Zelfir) and live as humbly as those they administer to, usually having cells within the poor houses they operate. They must be blessed with robust health by Amathera for they often work in the dirtiest and most dangerous areas, yet they rarely suffer from disease or attack. Indeed, only the most wretchedly depraved would attack a cleric of Amathera while he was undertaking his duty, for all are welcome to the protection of the Goddess.</clergy>
+    <home>Amathera resides with her worshippers in the plains of Elysium</home>
+  </god>
+  <god id="bahamut">
+    <name>Bahamut</name>
+    <holysymbol>A platinum dragon on a blue background</holysymbol>
+    <alignment>Lawful Good</alignment>
+    <domains>Air, Courage, Dragon, Glory, Good, Magic, Nobility, Protection, Storm</domains>
+    <domains5>Fire, Tempest</domains5>
+    <interfaithblessing>+1 to attack rolls and saves</interfaithblessing>
+    <worshippers>Bahamut is worshiped by the people of Dera'Dragorim for his rescue of their people as well as those who admire the strength, power, and goodness of metallic dragons, as well as good dragons themselves.</worshippers>
+    <allowedalignments>Lawful Good, Neutral Good</allowedalignments>
+    <weapon>Heavy Pick or Bite</weapon>
+    <appearance>Bahamut appears as a colossal dragon with scales of silver, gold, copper and bronze that reflect the light in prismatic colors.</appearance>
+    <dogma>Bahamut teaches that one should show courage in the face of evil and protect the weak whenever possible. He favors those who revere him with holy rites to become Dragonborn. In Dera'Dragorim, the priests of Bahamut are responsible for watching over the clutches of dragon eggs until they hatch. When the first crack appears a celebration begins, and the mother is magically summoned so that imprinting can occur. Another such celebration occurs whenever someone undertakes the ritual of dragonbirth.</dogma>
+    <clergy>The priests of Bahamut are usually second or third sons of noble houses (at least those that are not dragons themselves). Their inheritance, such as it is, is usually donated to the church. In return they serve the dragons that serve as the protectors of Dera'Dragorim, and communicate to them the needs of the people.</clergy>
+    <home>Dragon Home</home>
+  </god>
+  <god id="cora">
+    <name>Cora</name>
+    <holysymbol>A Flaming Banner</holysymbol>
+    <alignment>Chaotic Good</alignment>
+    <domains>Competition, Courage, Destruction, Glory, Liberation, Retribution, Strength, War</domains>
+    <domains5>Life, War</domains5>
+    <interfaithblessing>+1 to attack rolls and AC</interfaithblessing>
+    <worshippers>Cora is entreated by those who fear their cause is lost, but choose to persist regardless, soldiers of a Good persuasion, and a large part of the populations of Seran, Terron, and Shendarel, as Cora protected and aided them during the Nerim Cataclysm.</worshippers>
+    <allowedalignments>Neutral Good, Chaotic Good</allowedalignments>
+    <weapon>Great Sword</weapon>
+    <appearance>Cora appears as a valkyrie-like blue eyed woman in shining full plate and wielding a great sword, with shoulder length hair typically tied back.</appearance>
+    <dogma>Cora is the defender of lost causes, the warrior of justice, the crusader. She honors those who seek to do right regardless of law or chance of success.</dogma>
+    <clergy>The Clergy of Cora travel the land seeking causes to aid for every cause turned from lost to success is an honor to their God.</clergy>
+    <home>Ysgard</home>
+  </god>
+  <god id="dorman">
+    <name>Dorman</name>
+    <holysymbol>A white sword on a red background</holysymbol>
+    <alignment>Lawful Neutral</alignment>
+    <domains>Competition, Courage, Domination, Glory, Inquisition, Law, Nobility, Strength, Tyranny, War</domains>
+    <domains5>Light, War</domains5>
+    <interfaithblessing>+2 to Damage Rolls</interfaithblessing>
+    <worshippers>The worshipers of Dorman are typically those who wish to overcome their enemies, whether in noble battle or through manipulation of the law. Dorman is highly revered among the noble houses of Dormania, where his very existence proves to them their divine right to rule, as well as among generals and officers in various armies around the world.</worshippers>
+    <allowedalignments>Lawful Good, Lawful Neutral, Lawful Evil, Neutral</allowedalignments>
+    <weapon>Long Sword</weapon>
+    <appearance>Dorman appears as an older muscular man in armor, with a sword at his waist and a shield strapped to his back or arm.  His hair is dark with streaks of gray, and his eyes are blue.  He is built wide rather than tall, with a thick bull-like neck.</appearance>
+    <dogma>Dorman teaches of the law of trial by combat, for the victor writes the law and the law decides the victor. Justice is the acquisition of their due by the strong, and mercy has no place in his teachings. Nevertheless the lower classes should be kept up, for the sake of further enriching their betters if nothing else.</dogma>
+    <clergy>The clergy of Dorman are often retired military officers and usually command a large force of citizen militia. They often ride out to war with the armies not as chaplains but as fellow warriors, committing themselves to where the battle is hottest to bring victory and conquest for their king and God.</clergy>
+    <home>Kingdom of Celestia</home>
+  </god>
+  <god id="dorun">
+    <name>Dorun</name>
+    <holysymbol>A black pick and hammer crossed over a silver background</holysymbol>
+    <alignment>Lawful Neutral</alignment>
+    <domains>Cavern, Craft, Darkness, Dwarf, Earth, Fate, Metal, Rune</domains>
+    <domains5>Craft, Earth</domains5>
+    <interfaithblessing>+2 to AC</interfaithblessing>
+    <worshippers>There is not a dwarf in the world who does not feel the call of the church of Dorun, whether they actively worship him or not, deep places resonate in their bones and the deep places resonate with the sound of His voice. Occasionally gnomes from Stagenheim who live deep within their caves will also take up the worship of Dorun, but for them it does not resonate quite so strongly.</worshippers>
+    <allowedalignments>Neutral Good, Lawful Neutral, Neutral, Chaotic Neutral, Neutral Evil</allowedalignments>
+    <weapon>War hammer</weapon>
+    <appearance>Dorun appears as a middle-aged but still powerful looking dwarf, bald but with a long graying red braided beard.  He wears robes of black and gold studded with gemstones.</appearance>
+    <dogma>Dorun takes great pleasure in song, especially those that resonate throughout his caverns and caves. Even bar songs in the depths of the Dwarven holds contain complicated harmony and counterpoint that is only enhanced when heard from 20 or 30 miles away as it echoes through chamber after chamber. Hymns are even more complicated. He further encourages his followers to delve deeply into the earth in search of rare metals and new places to call home. Magic runes were a gift of Dorun to dwarven bards and wizards who were great composers. The deep resonant tones of the dwarven voice are most suited to His worship, but higher tones and instruments are not turned away.</dogma>
+    <clergy>The clergy of Dorun are often great singers or composers. They often dedicate new holds and caverns with their first songs personally. They also enforce the caste system of dwarven society, refusing to dedicate caverns that are to be the home of any who have lived on the surface, for to be separated from the song of Dorun is to be separated from God.</clergy>
+    <home>Plane of Earth</home>
+  </god>
+  <god id="gaian">
+    <name>Gaian</name>
+    <holysymbol>An oak tree on a white background</holysymbol>
+    <alignment>Neutral</alignment>
+    <domains>Animal, Balance, Charm, Creation, Earth, Healing, Lust, Moon, Pestilence, Plant, Renewal</domains>
+    <domains5>Life, Nature</domains5>
+    <interfaithblessing>+1 to attack rolls and AC</interfaithblessing>
+    <worshippers>Fey, elves, druids, barbarians, and other beings closely tied to nature worship Gaian.</worshippers>
+    <allowedalignments>Neutral Good, Lawful Neutral, Neutral, Chaotic Neutral, Neutral Evil</allowedalignments>
+    <weapon>Quarterstaff</weapon>
+    <appearance>Gaian appears as an elf, but with skin like the bark of a tree with leaves and shoots sprouting from all over her body, such that she is clothed in vines.  Her eyes are black as the night sky.</appearance>
+    <dogma>Gaian teaches balance with nature, and that sentient races should be part of nature rather than dominating it. The worship of the goddess of nature lends itself to a hunter gathering life more than a sedentary or agrarian lifestyle. Gaian's worshiper's festivals fall on the solstices and equinoxes to signify the change of seasons.</dogma>
+    <clergy>Gaian has few priests, rather the druids serve as her clergy, administering to and protecting nature itself rather than men.</clergy>
+    <home>Elthelas, the Material Plane</home>
+  </god>
+  <god id="malik">
+    <name>Malik</name>
+    <holysymbol>8 arrows pointing outward from a single source</holysymbol>
+    <alignment>Chaotic Evil</alignment>
+    <domains>Chaos, Destruction, Envy, Evil, Lust, Madness, Slime, Trickery, War</domains>
+    <domains5>Trickery, War</domains5>
+    <interfaithblessing>+1 to attack rolls and damage rolls</interfaithblessing>
+    <worshippers>Malik is worshiped by those who seek chaos and anything that causes it, as well as those with few morals and a penchant for battle. He has many worshipers among the orcs and hobgoblins, and there is an underground cult of Malik among the trollkin as well.</worshippers>
+    <allowedalignments>Chaotic Neutral, Chaotic Evil</allowedalignments>
+    <weapon>Halberd</weapon>
+    <appearance>Malik's true appearance is unknown, as he is liable to appear in just about any form conceivable, like a 12 headed purple elephant with snake necks and green polka dots or a spider with swords for legs and a human head.</appearance>
+    <dogma>Malik teaches that chaos is the ultimate expression of life. Madness is a sign of blessing, and envy, lust, trickery, and war are blessed as ways of creating chaos.</dogma>
+    <clergy>Malik's clergy rarely establish temples, rather they go out seeking to create chaos, often joining with armies. Military units that worship Malik tend to be disorganized irregulars that strike out at their enemies in unpredictable ways, and are granted powerful blessings and great strength in return.</clergy>
+    <home>Pandemonium</home>
+  </god>
+  <god id="maris">
+    <name>Maris</name>
+    <holysymbol>A ship at full sail</holysymbol>
+    <alignment>Neutral</alignment>
+    <domains>Competition, Greed, Luck, Mysticism, Oracle, Pact, Trade, Travel, Wealth</domains>
+    <domains5>Arcana, Trade</domains5>
+    <interfaithblessing>+2 to AC</interfaithblessing>
+    <worshippers>Merchants of all kinds worship Maris. Wherever you find coin exchanging hands there you will find his worshipers. He is also often worshiped by those undertaking long journeys or seeking knowledge of the future.</worshippers>
+    <allowedalignments>Neutral Good, Lawful Neutral, Neutral, Chaotic Neutral, Neutral Evil</allowedalignments>
+    <weapon>Short sword</weapon>
+    <appearance>Maris appears as a blind man with dark hair and a silken blindfold over his eyes.  He typically dresses in purple robes with gold scroll-work down the front and back.  He carries a golden scale around his neck and a silver rod with a crystal ball on top.</appearance>
+    <dogma>Maris favors fair trade of all kinds, although he certainly doesn't frown on his followers getting better than fair prices. He is the great speculator God, and his worshipers will often come to him to find how prices will change over time. Maris festivals coincide with the opening and closing of the summer markets.</dogma>
+    <clergy>Maris clergy typically possess a great deal of wealth, obtained through their own speculations, and the donations they require of their wealthy followers. They are often merchants in their own right as well as priests, trading in bulk goods, land, or other ventures that don't require a monopoly on their time.</clergy>
+    <home>Astral Plane</home>
+  </god>
+  <god id="matraktha">
+    <name>Mat'raktha</name>
+    <holysymbol>A downward pointing spike</holysymbol>
+    <alignment>Lawful Evil</alignment>
+    <domains>Death, Domination, Evil, Fate, Hatred, Law, Orc, Pride, Suffering</domains>
+    <domains5>Death</domains5>
+    <interfaithblessing>+2 to attack rolls</interfaithblessing>
+    <worshippers>Mat'raktha is worshipped by evil people throughout the world, if in secret in most places.  He is the patron of Orcs and the orcish tribes of Malinval and Olda mostly worship him.</worshippers>
+    <allowedalignments>Lawful Evil, Neutral Evil</allowedalignments>
+    <weapon>Greataxe</weapon>
+    <appearance>Mat'raktha appears as an orc with very light olive green skin.  He has somewhat rough dark blonde hair precisely styled in neat dreads pulled back with a leather thong.  He is large and very muscled with sharp features and dark brown almost black eyes.  He is extremely well dressed, not necessarily expensive clothing but well-made, everything perfectly clean and neat.  Shoes and armor are always polished and there is never anything like worn cuffs or hanging threads.  Tusks are also always well-filed and polished.</appearance>
+    <dogma>Mat'raktha promotes the domination of ones enemies through force.  His pride and hatred are what started the god War, and those who worship him are typically of the belief that the terms of the peace imposed at the end of the god War stripped Mat'raktha of what was rightfully his, domination over all the other god as King.</dogma>
+    <clergy>Where his worship is allowed Mat'raktha's clerics extract tribute from his worshippers in return for blessings against their enemies.  Internal politicking among the clergy is common and those who rise high are either highly skilled, or quickly dead.</clergy>
+    <home>Acheron</home>
+  </god>
+  <god id="molton">
+    <name>Molton</name>
+    <holysymbol>flames</holysymbol>
+    <alignment>Chaotic Neutral</alignment>
+    <domains>Chaos, Destruction, Fire, Hunger, Lust, Purification, Renewal, Wrath</domains>
+    <domains5>Fire, Light</domains5>
+    <interfaithblessing>+2 to damage rolls</interfaithblessing>
+    <worshippers>Molton has few worshippers, he offers little to mortal men. Those related to the plane of fire, such as fire mephlings, mephits, elementals, and genasi. He also finds some devotees among sorcerers and wizards who admire the power of fire.</worshippers>
+    <allowedalignments>Chaotic Good, Neutral, Chaotic Neutral, Chaotic Evil</allowedalignments>
+    <weapon>long sword or heavy crossbow</weapon>
+    <appearance>Molton's teachings declare the purification power of fire. Fire hungers for fuel and burns with lustful glee (Molton is known for his many torrid affairs with mortal women). the area is renewed in the aftermath of the wrathful blaze. Yet destruction can come to anyone, and all must be prepared to accept it.</appearance>
+    <dogma>Molton appears as a muscular and beautiful red haired man clothed completely in flames with bright blue eyes like blue fire.</dogma>
+    <clergy>Molton's temples tend to be in remote locations near volcanoes and other places where the power of fire is apparent. For example, the elves have built a shrine to Molton at the top of the Glass Cliff. His priests keep great fires burning in the temples at all times, where clothing is shed in the warmth of the blaze and inhibitions lowered. Women who have had trouble conceiving often come to the temples of Molton to receive his blessing. Each year at midsummer the priests of Molton hold the rite of purification, in which the devout walk through fire. After doing so evil deeds are considered washed away.</clergy>
+    <home>Plane of Fire</home>
+  </god>
+  <god id="nera">
+    <name>Nera</name>
+    <holysymbol>A disc half white and half black</holysymbol>
+    <alignment>Neutral Good and Neutral Evil</alignment>
+    <domains>Balance, Creation, Death, Good, Moon, Planning, Renewal, Time OR Balance, Death, Deathbound, Evil, Moon, Time, Undeath</domains>
+    <domains5>Death, Life</domains5>
+    <interfaithblessing>Good Aspect: +1 to attack rolls and skill checks Evil Aspect: +2 to attack rolls</interfaithblessing>
+    <worshippers>Nera's worshippers are rare and hunted in most countries in the modern era, as the common belief is that she is the God of Necromancers. She is worshipped as the one true great God in the country of Arad.</worshippers>
+    <allowedalignments>Lawful Good, Neutral Good, Chaotic Good, Neutral, Lawful Evil, Neutral Evil, Chaotic Evil</allowedalignments>
+    <weapon>Flail</weapon>
+    <appearance>The mother of the god has a very curvy healthy figure.  Pale, glowing skin, blue-black long wavy hair, dresses in long white flowing clothing with bare feet.  She has a round face with a wide generous mouth large silver-grey eyes with a straight nose.</appearance>
+    <dogma>Nera's good aspect teaches of the immortality of the soul, and that one should act wisely in this life in order that you may continue to aid your progenitors beyond death. One does this by being kind, nurturing, and giving of oneself. Those sainted people who do this well may return as deathless from time to time to aid those they care about or causes they consider important. Her devout followers are granted exceptionally long lives.</dogma>
+    <clergy>&lt;br/&gt;Nera's evil aspect teaches of the power of undeath and the quest for immortality through undeath. Those who displease the Goddess may find themselves facing the ultimate death, in which the soul itself dies and their is no rebirth.&lt;br/&gt;It is rumored that only Nera can impose death upon a God.</clergy>
+    <home>The Confluence</home>
+  </god>
+  <god id="sara">
+    <name>Sara</name>
+    <holysymbol>a cornucopia</holysymbol>
+    <alignment>neutral good</alignment>
+    <domains>balance, community, earth, good, halfling, plant, renewal</domains>
+    <domains5>Life, Nature</domains5>
+    <interfaithblessing>+1 on attack rolls and skill checks</interfaithblessing>
+    <worshippers>farmers and agrarian communities</worshippers>
+    <allowedalignments>neutral, neutral good, chaotic good, lawful good</allowedalignments>
+    <weapon>Sickle or sling</weapon>
+    <appearance>Sara appears as a halfling with short golden brown curly hair.  She wears simple brown dresses and garb with green embroidered runes a straw hat and a basket on her arm filled with the fruits of the harvest.</appearance>
+    <dogma>Any person who nurtures a plants growth is considered to be worshiping Sara. In the spring and in the fall the priests of Sara perform rituals to garner Sara's blessings on the planting and harvest in which the entire community usually participates. These rituals tend to be holidays for the entire community. Sara's blessings are usually subtle, such as more grain in the granary than was growing in the field, or plants that produce past the frost or more fruit than is typical. She rewards her most devout with an unusual knowledge of plants and how to achieve the best harvest possible.</dogma>
+    <clergy>Clergy of Sara are typically humble men and women who live in small communities or wander from community to community spreading both the worship of Sara and planting fruit trees or other producing plants along the way from which everyone can benefit. Their dress is typically crude, often simple linen, cotton, or flaxen robes, but they never go hungry.</clergy>
+    <home>Villam Aestas, Plains of Elysium</home>
+  </god>
+  <god id="sylvan">
+    <name>Sylvan</name>
+    <holysymbol>an oak tree in midsummer</holysymbol>
+    <alignment>chaotic good</alignment>
+    <domains>chaos, good, air, elf, plant, animal</domains>
+    <domains5>Air, Nature</domains5>
+    <interfaithblessing>+1 on attack rolls and skill checks</interfaithblessing>
+    <worshippers>elves, rangers, and woodsmen</worshippers>
+    <allowedalignments>neutral good, chaotic good, chaotic neutral</allowedalignments>
+    <weapon>longbow, longsword</weapon>
+    <appearance>Sylvan appears as a tall elf, silver haired and blue eyed.  Sylvan does not have a set gender, and often appears as a man, a woman, or even a hermaphrodite.</appearance>
+    <dogma>Sylvan is worshipped in the planting of trees, frolicking in the wind, and the caring of animals.  Sylvan differs from Gaian, however, in that its dogma focuses on the preservation of nature for the use of mortals and creatures, rather than as a foil to them.</dogma>
+    <clergy>Clergy of Sylvan are well regarded in elven society, although they are rare elsewhere.  Their ceremonial dress is robes made of pure spider silk that cling to the skin, and crowns of laurels or leaves.  Their work typically involves the nurturing of the great trees, huge and ancient, in whose branches many elven settlements are built.  A work they take very seriously.</clergy>
+    <home>Arborea</home>
+  </god>
+  <god id="tiamat">
+    <name>Tiamat</name>
+    <holysymbol>Five-headed dragon</holysymbol>
+    <alignment>Lawful evil</alignment>
+    <domains>Destruction, Dragon, Evil, Greed, Hatred, Law, Scalykind, Trickery, Tyranny</domains>
+    <domains5>Trickery</domains5>
+    <interfaithblessing>+1 on attack rolls and damage rolls</interfaithblessing>
+    <worshippers>Tiamat is worshiped by evil dragons and those that serve and admire them.</worshippers>
+    <allowedalignments>Lawful Evil, Neutral Evil</allowedalignments>
+    <weapon>War Pick or Bite</weapon>
+    <appearance>Tiamat is a 5-headed dragon with one head each of a red dragon, black dragon, blue dragon, white dragon, and green dragon.</appearance>
+    <dogma>As the God of Evil Dragons Tiamat stands in opposition to Bahamut in all things. She concerns herself with spreading evil through conquest, destruction, and plots. She seeks to extend the powers of evil dragons throughout the land.</dogma>
+    <clergy>Tiamat has few clerics, but those she has seek to extend the power of evil dragons.</clergy>
+    <home>Dragon Home</home>
+  </god>
+  <god id="tock">
+    <name>Tock</name>
+    <holysymbol>Two interlocking gears</holysymbol>
+    <alignment>Lawful Neutral</alignment>
+    <domains>Craft, Creation, Force, Knowledge, Law, Mentalism, Mind, Time</domains>
+    <domains5>Arcana, Craft, Knowledge</domains5>
+    <interfaithblessing>+1 on attack rolls and skill checks</interfaithblessing>
+    <worshippers>Tock is worshiped by craftsman and inventors, particularly among the gnomes of Stagenheim, whom he has blessed with great knowledge and skill with crafts.</worshippers>
+    <allowedalignments>Lawful Good, Lawful Neutral, Lawful Evil</allowedalignments>
+    <weapon>Light Hammer, Warhammer</weapon>
+    <appearance>Tock has the appearance of a living machine in the shape of a halfling or gnome.  He is studded with exposed gears and wires, and wears only a monacle.  He is typically seen carrying one or more thick tomes and is often writing furiously in one or more of them.</appearance>
+    <dogma>Tock teaches that one should enrich oneself by taking advantage of the laws and forces of the universe to create new and interesting things. One should seek knowledge and the strengthening of ones mind in order to aid one in this effort. He is also the God of Clocks and Clockwork, and makes sure that time moves forward in its regular course.</dogma>
+    <clergy>The clergy of Tock are usually great craftsman in their own right, and his temple provides a bounty for particularly interesting ideas so that their inventors can build and test them.</clergy>
+    <home>Mechanus</home>
+  </god>
+  <god id="trimala">
+    <name>Trimala</name>
+    <holysymbol>A Waterfall cascading over a cliff</holysymbol>
+    <alignment>Neutral</alignment>
+    <domains>Cold, Darkness, Moon, Ocean, Scalykind, Storm, Water</domains>
+    <domains5>Tempest, Water</domains5>
+    <interfaithblessing>roll 1d8 on table (see complete champion) 6 is player choice.</interfaithblessing>
+    <worshippers>Those who live off of the sea or rivers tend to pay tribute to Trimala, as well as lizardmen and other amphibious, reptilian, and fish creatures.</worshippers>
+    <allowedalignments>Neutral Good, Lawful Neutral, Neutral, Neutral Evil</allowedalignments>
+    <weapon>Trident</weapon>
+    <appearance>Trimala appears in the shape of a woman, but entirely composed of water.  She can appear in any size, and often has sea creatures swimming around inside her form.</appearance>
+    <dogma>Trimala is the goddess of water in all forms and places, from the icy glaciers to the oceans and rivers. She is also the patron goddess of creatures that depend on water, and the Lady of the Moon and Tides. She teaches respect for the sea and its creatures and that all are subject to forces greater than oneself.</dogma>
+    <clergy>Trimala's clergy intercede with her to seek her mercy on behalf of ship captains and crewmen before making journeys by sea, and on behalf of those who live near coasts to preserve them from the forces of the ocean. Inland they are often called upon in times of drought to pray for rain.</clergy>
+    <home>Plane of Water</home>
+  </god>
+  <god id="trolka">
+    <name>Trolka</name>
+    <holysymbol>A white haired green skinned grinning troll's face</holysymbol>
+    <alignment>Neutral Evil</alignment>
+    <domains>Destruction, Evil, Gluttony, Hunger, Pestilence</domains>
+    <domains5>Death, War</domains5>
+    <interfaithblessing>+2 on damage rolls</interfaithblessing>
+    <worshippers>Trolka the ever hungry is the God of giants and trolls, and almost all trolls and most giants worship them.</worshippers>
+    <allowedalignments>Lawful Evil, Neutral Evil, Chaotic Evil</allowedalignments>
+    <weapon>Greatclub or Claw</weapon>
+    <appearance>Trolka appears as a massive and incredibly ugly troll with tusks and claws made of steel.  His skin is a ruddy-green color.</appearance>
+    <dogma>Trolka encourages his subjects to multiply and consume the world. He teaches the holy nature of disease as a consuming force.</dogma>
+    <clergy>Trolka's clergy are usually massively fat trolls and giants.</clergy>
+    <home>Carceri</home>
+  </god>
+  <god id="arengesus">
+    <name>Arengesus</name>
+    <holysymbol>A pair of dice</holysymbol>
+    <alignment>Chaotic Neutral</alignment>
+    <domains>Chance, Trickery</domains>
+    <domains5>Trickery</domains5>
+    <interfaithblessing>Roll on the table</interfaithblessing>
+    <worshippers>Gamblers and the desperate</worshippers>
+    <allowedalignments>Chaotic Good, Chaotic Neutral, Chaotic Evil</allowedalignments>
+    <weapon>Flail</weapon>
+    <appearance>Arengesus appearance is always random when he appears to his followers.  One day he could appear as a small child, and the next day as a talking sandwich.  His true form, if one exists, is known only to his most loyal followers.</appearance>
+    <dogma>Your life is more fulfilling and entertaining when you throw off the boundaries of the normal schema of the world and behave in a manner that is random and unpredictable.</dogma>
+    <clergy>He has none as he is not largely worshipped, which is not to say that he couldn't, just that he doesn't.</clergy>
+    <home>Limbo</home>
+  </god>
+</gods>
