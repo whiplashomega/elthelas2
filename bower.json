@@ -1,0 +1,40 @@
+{
+  "name": "elthelas",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Joseph Harrison <whiplashomega@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/whiplashomega/elthelas",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.3",
+    "bootstrap": "^3.3.7",
+    "droll": "thebinarypenguin/droll#^0.2.0",
+    "datatables": "^1.10.13",
+    "angular-marked": "^1.2.2",
+    "jasmine-core": "jasmine#^2.5.2",
+    "angular-mocks": "^1.6.3",
+    "jasmine-jquery": "^2.1.1",
+    "angular-ui-router": "^0.4.2",
+    "Leaflet.label": "^0.2.1",
+    "angular-sanitize": "^1.6.3",
+    "angular-ui-bootstrap": "^2.5.0",
+    "angular-cookies": "^1.6.3"
+  },
+  "devDependencies": {
+    "jasmine-core": "jasmine#^2.5.2",
+    "angular-ui-bootstrap": "^2.5.0"
+  },
+  "resolutions": {
+    "angular": "^1.6.3"
+  }
+}

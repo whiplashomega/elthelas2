@@ -1,0 +1,15 @@
+/bin/*
+/web/bundles/
+/app/bootstrap.php.cache
+/app/cache/*
+/var/cache/*
+/app/config/parameters.yml
+/var/logs/*
+!app/cache/.gitkeep
+!app/logs/.gitkeep
+/app/phpunit.xml
+/build/
+/vendor/
+/composer.phar
+*.sass-cache/
+*.scssc
