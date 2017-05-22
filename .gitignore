@@ -13,3 +13,6 @@
 /composer.phar
 *.sass-cache/
 *.scssc
+/node_modules/
+/bower_components/
+/mongodata/
