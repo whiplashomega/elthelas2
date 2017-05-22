@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-    minifycss = require('gulp-minify-css'),
+    minifycss = require('gulp-clean-css'),
     jshint = require('gulp-jshint'),
     stylish = require('jshint-stylish'),
     uglify = require('gulp-uglify'),
@@ -11,12 +11,13 @@ var gulp = require('gulp'),
     cache = require('gulp-cache'),
     changed = require('gulp-changed'),
     rev = require('gulp-rev'),
-    browserSync = require('browser-sync'),
     del = require('del'),
     ngannotate = require('gulp-ng-annotate'),
     sass = require('gulp-sass'),
     fs = require('fs'),
-    Server = require('karma').Server;
+    Server = require('karma').Server,
+    jasmine = require('gulp-jasmine'),
+    reporters = require('jasmine-reporters');
 
 //precompile
 gulp.task('jshint', function() {
@@ -173,9 +174,21 @@ gulp.task('copyjson', ['spellsjson', 'historyjson', 'jsoncompile'], function() {
 
 gulp.task('unittest', ['jshint'], function(done) {
   new Server({
-    configFile: __dirname + '/karma.conf.js',
+    configFile: __dirname + "/karma.conf.js",
     singleRun: true
   }, done).start();
+});
+
+gulp.task('integrationtest', ['unittest'], function() {
+  var server = require('./server.conf');
+  server.start();
+  gulp.src('tests/js/integration/test.spec.js').pipe(jasmine(
+    {
+      reporter: new reporters.TerminalReporter(),
+      jasmineDone: function() {
+        server.stop();
+      }
+    }));
 });
 
 gulp.task('conttest', ['jshint'], function(done) {
@@ -184,7 +197,7 @@ gulp.task('conttest', ['jshint'], function(done) {
   }, done).start();
 });
 //post-compile
-gulp.task('default', ['unittest', 'sass', 'spellsjson', 'jsoncompile', 'copylibraries'], function() {});
+gulp.task('default', ['integrationtest', 'sass', 'spellsjson', 'jsoncompile', 'copylibraries'], function() {});
 
 gulp.task('prod', ['copyimages', 'usemin', 'copyjson'], function() {});
 

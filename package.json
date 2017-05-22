@@ -2,24 +2,29 @@
   "name": "elthelas",
   "private": true,
   "dependencies": {
-    "angular-ui-bootstrap": "^2.5.0",
-    "bower": "^1.8.0",
-    "gulp": "^3.9.1",
-    "karma-es6-shim": "^1.0.0",
-    "yo": "^1.8.5"
+    "express": "^4.5.1",
+    "mongoose": "^3.8.0",
+    "body-parser": "^1.4.2",
+    "method-override": "^2.0.2"
   },
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install"
   },
   "devDependencies": {
+    "angular-mocks-node": "^1.3.2",
+    "angular-node": "^1.3.2",
+    "angular-ui-bootstrap": "^2.5.0",
     "babel-polyfill": "^6.23.0",
+    "bower": "^1.8.0",
     "del": "^2.2.2",
+    "gulp": "^3.9.1",
     "gulp-cache": "^0.4.6",
     "gulp-changed": "^2.0.0",
+    "gulp-clean-css": "^3.3",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^3.1.1",
+    "gulp-jasmine": "^2.4.2",
     "gulp-jshint": "^2.0.4",
-    "gulp-minify-css": "^1.2.4",
     "gulp-ng-annotate": "^2.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-rev": "^7.1.2",
@@ -28,11 +33,29 @@
     "gulp-usemin": "^0.3.28",
     "jasmine": "^2.6.0",
     "jasmine-core": "^2.6.0",
+    "jasmine-reporters": "^2.2.1",
     "jshint": "^2.9.4",
     "jshint-stylish": "^2.2.1",
     "karma": "^1.6.0",
     "karma-es5-shim": "0.0.4",
     "karma-jasmine": "^1.1.0",
-    "phantomjs": "^2.1.7"
-  }
+    "karma-phantomjs-launcher": "^1.0.4",
+    "phantomjs-prebuilt": "^2.1.14"
+  },
+  "description": "My Elthelas Campaign Setting website rebuilt on the MEAN stack.  This is my personal side-project for learning new concepts and ideas, and so has taken various forms over its life.  In an effort to save hard-drive space I have rebased from this repo: https://github.com/whiplashomega/elthelas which hosts my older Symfony based version of the site, as well as an earlier version of this code from when I was still planning to use Symfony as the API backend for this code.  Symfony proved to be frustrating to work with from a headless standpoint, particularly in implementing user login and handling server routing.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whiplashomega/elthelas2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whiplashomega/elthelas2/issues"
+  },
+  "homepage": "https://github.com/whiplashomega/elthelas2#readme"
 }

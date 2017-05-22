@@ -33,7 +33,8 @@
         row.push(race.agepoints.maxage);
       } catch(e) {
         row = [];
-        console.log(e.message);
+        //console.log(e.message);
+        //console.log(race);
         if(race.name === undefined || race.name === null) {
           row.push("Error");
         } else {
@@ -82,7 +83,7 @@
         row.push("Height Roll * " + thissub.weightroll);        
       }
       catch(e) {
-        console.log(e.message);
+        //console.log(e.message);
         row = ["Error", 1, 1, 1, 1, 1, 1];
       }
 

@@ -11,6 +11,7 @@
   "noarg": true,
   "node": true,
   "nonbsp": true,
+  "esversion": 6,
   //"quotmark": "single",
   "undef": true,
   "unused": "vars",

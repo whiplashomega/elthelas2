@@ -15,15 +15,14 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'node_modules/babel-polyfill/dist/polyfill.js',
       'dev/libraries/angular.js',
       'dev/libraries/jquery.js',
       'dev/libraries/marked.js',
       'dev/libraries/angular-cookies.min.js',
       'dev/libraries/angular-ui-router.js',
       'dev/libraries/ui-bootstrap-tpls.js',
-      'bower_components/angular-mocks/angular-mocks.js',
       'dev/libraries/**/*.js',
+      'bower_components/angular-mocks/angular-mocks.js',
       'dev/js/**/*.js',
       'tests/js/unit/**/*.js'
     ],
