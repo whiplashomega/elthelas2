@@ -1,4 +1,4 @@
-var Nerd = require('./models/nerd');
+//var Nerd = require('./models/nerd');
 
     module.exports = function(app, staticDir) {
 
