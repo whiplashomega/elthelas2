@@ -1,0 +1,1058 @@
+<div class="col-sm-10">
+    <div data-ng-app="dmTools" class="container-fluid">
+      <div>
+        <h3>Quick Reference Manual</h3>
+        <p>
+          The quick reference manual provides a rules reference for things that would normally be found in tables and lists in the PHB.  This reference provides an online searchable
+          interface for these items.  The weapons, armor, labor and services, animals, and trade goods tabs use values for costs and prices that attempt to put together a more
+          coherent economy for D&D, where laborers can afford to do things like eat.
+        </p>
+        <uib-tabset id="refdiv">
+          <uib-tab index='0' heading="Spells">
+            <h3>Spells</h3>
+            <table id="spelltable" class="table table-striped"></table>
+          </uib-tab>
+          <uib-tab index="1" heading="Conditions">
+            <h3>Conditions</h3>
+            <h4>Blinded</h4>
+            <ul>
+              <li>You can’t see and automatically fail any ability check requiring sight.</li>
+              <li>Attack rolls against you have advantage and your attack rolls have disadvantage.</li>
+            </ul>
+            <h4>Charmed</h4>
+            <ul>
+              <li>You can’t attack the charmer or target the charmer with harmful abilities or magical effects.</li>
+              <li>The charmer has advantage on any ability check to socially interact with you.</li>
+            </ul>
+            <h4>Deafened</h4>
+            <ul>
+              <li>You can’t hear and automatically fail any ability check requiring hearing.</li>
+            </ul>
+            <h4>Cover</h4>
+            <ul>
+              <li>Creature with Half Cover gets +2 to AC and Dex Saves.</li>
+              <li>3/4 Cover gets +5 to AC and dex saves.</li>
+              <li>Full cover cannot be targetted.</li>
+            </ul>
+            <h4>Frightened</h4>
+            <ul>
+              <li>You have disadvantage on ability checks and attack rolls while the source of your fear is within line of sight.</li>
+              <li>You cannot willingly move closer to the source of your fear.</li>
+            </ul>
+            <h4>Grappled</h4>
+            <ul>
+              <li>Your speed becomes 0 and you cannot benefit from any bonus to your speed.</li>
+              <li>
+                This condition ends if the grappler is incapacitated or if an effect removes you from the reach of the grappler or grappling
+                effect.
+              </li>
+            </ul>
+            <h4>Incapacitated</h4>
+            <ul>
+              <li>You cannot take actions or reactions.</li>
+            </ul>
+            <h4>Invisible</h4>
+            <ul>
+              <li>
+                You are impossible to see without the aid of magic or a special sense. For the purpose of hiding, you are heavily obscured. Your
+                location can be detected by any noise you make or any tracks you leave.
+              </li>
+              <li>
+                Attack rolls against you have disadvantage and your attack rolls have advantage.
+              </li>
+            </ul>
+            <h4>Obscured/Concealed</h4>
+            <ul>
+              <li>Lightly obscured includes dim light, patchy fog, moderate foliage, disadvantage on wisdom(perception) checks that rely on sight.</li>
+              <li>Heavily obscured areas--such as darkness, opaque fog or dense foliage--blocks  vision entirely, a creature in the area effectively is blind.</li>
+            </ul>
+            <h4>Paralyzed</h4>
+            <ul>
+              <li>You are incapacitated and cannot move or speak.</li>
+              <li>You automatically fail Strength and Dexterity saving throws.</li>
+              <li>Attack rolls against you have advantage.</li>
+              <li>Any attack that hits you is a critical hit if your attacker is within 5 feet of you.</li>
+            </ul>
+            <h4>Petrified</h4>
+            <ul>
+              <li>
+                You are transformed, along with any nonmagical object you are wearing or carrying, into a solid inanimate substance. Your weight
+                increases by a factor of ten and you cease aging.
+              </li>
+              <li>You are incapacitated, cannot move or speak, and are unaware of your surroundings.</li>
+              <li>Attack rolls against you have advantage.</li>
+              <li>You automatically fail Strength and Dexterity saving throws.</li>
+              <li>You are immune to poison and disease, though a poison or disease already in your system is suspended, not neutralized.</li>
+            </ul>
+            <h4>Poisoned</h4>
+            <ul>
+              <li>You have disadvantage on attack rolls and ability checks.</li>
+            </ul>
+            <h4>Prone</h4>
+            <ul>
+              <li>Your only movement option is to crawl, unless you stand up and thereby end this condition.</li>
+              <li>You have disadvantage on attack rolls.</li>
+              <li>
+                Attack rolls against you have advantage if your attacker is within 5 feet of you; otherwise, attack rolls against you have
+                disadvantage.
+              </li>
+            </ul>
+            <h4>Restrained</h4>
+            <ul>
+              <li>Your speed becomes 0 and you cannot benefit from any bonus to your speed.</li>
+              <li>Attack rolls against you have advantage, and your attack rolls have disadvantage.</li>
+              <li>You have disadvantage on Dexterity saving throws.</li>
+            </ul>
+            <h4>Stunned</h4>
+            <ul>
+              <li>You are incapacitated, cannot move, and can only speak falteringly.</li>
+              <li>You automatically fail Strength and Dexterity saving throws.</li>
+              <li>Attack rolls against you have advantage.</li>
+            </ul>
+            <h4>Unconscious</h4>
+            <ul>
+              <li>You are incapacitated, cannot move or speak, and are unaware of your surroundings.</li>
+              <li>You drop whatever you were holding and fall prone.</li>
+              <li>You automatically fail Strength and Dexterity saving throws.</li>
+              <li>Attack rolls against you have advantage.</li>
+              <li>Any attack that hits you is a critical hit if your attacker is within 5 feet of you.</li>
+            </ul>
+          </uib-tab>
+          <uib-tab index="2" heading="Injuries">
+            <h3>Injuries</h3>
+            <table class="table">
+              <tr><th>d20</th><th>Injury</th></tr>
+              <tr>
+                <td>1</td>
+                <td>
+                  Lose an Eye. You have disadvantage on Wisdom
+                  (Perception) checks that rely on sight and on
+                  ranged attack rolls. Magic such as the regenerate
+                  spell can restore the lost eye. If you have no eyes
+                  left after sustaining this injury, you're blinded.
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>
+                  Lose an Arm or a Hand. You can no longer hold
+                  anything with two hands, and you can hold only a
+                  single object at a time. Magic such as the regenerate
+                  spell can restore the lost appendage.
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>
+                  Lose a Foot or Leg. Your speed on foot is halved,
+                  and you must use a cane or crutch to move unless
+                  you have a peg leg or other prosthesis. You fall
+                  prone after using the Dash action. You have
+                  disadvantage on Dexterity checks made to balance.
+                  Magic such as the regenerate spell can restore the
+                  lost appendage.
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>
+                  Limp. Your speed on foot is reduced by 5 feet. You
+                  must make a DC 10 Dexterity saving throw after
+                  using the Dash action. If you fail the save, you fall
+                  prone. Magical healing of 3rd level or higher removes the limp.
+                </td>
+              </tr>
+              <tr>
+                <td>5-6</td>
+                <td>
+                  Internal Injury. Whenever you attempt an action
+                  in combat, you must make a DC 15 Constitution
+                  saving throw. On a failed save, you lose your action
+                  and can't use reactions until the start of your next
+                  turn. The injury heals if you receive magical healing of 3rd level or higher,
+                  or if you spend ten days doing nothing but resting.
+                </td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>
+                  Brain Damage. Your intelligence score is permanently reduced by 1 and you have
+                  disadvantage on intelligence saving throws.  Magic such as the regenerate
+                  spell can restore the damaged brain tissue.
+                </td>
+              </tr>
+              <tr>
+                <td>8-9</td>
+                <td>
+                  Broken Ribs. This has the same effect as Internal
+                  Injury above, except that the save DC is 10.
+                </td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>
+                  Crushed vocal chords.  You have disadvantage on all charisma checks that involve speaking
+                  or singing.  Magical healing of 3rd level or higher can heal the damage.
+                </td>
+              </tr>
+              <tr>
+                <td>11-12</td>
+                <td>
+                  Horrible Scar. You are disfigured to the extent that
+                  the wound can't be easily concealed . You have
+                  disadvantage on Charisma (Persuasion) checks
+                  and advantage on Charisma (Intimidation) checks.
+                  Magical healing of 6th level or higher, such as heal
+                  and regenerate, removes the scar.
+                </td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>
+                  Blood Infection.  Your wound became infected and later turned into a chronic blood infection.  You
+                  appear ill to all those around you, and can become delirious at moments of stress.  You are effectively
+                  poisoned, and have disadvantage on all attack rolls and ability checks.  Additionally, your constitution score
+                  is permanently reduced by 1 each day that the infection continues.  If it reaches 0, you die. The infection can be
+                  cured with a remove disease effect from a paladin's lay-on-hands ability, or with magical healing of 3rd level or higher.
+                </td>
+              </tr>
+              <tr>
+                <td>14-16</td>
+                <td>
+                  Festering Wound. Your hit point maximum is
+                  reduced by 1 every 24 hours the wound persists.
+                  If your hit point maximum drops to 0, you die.
+                  The wound heals if you receive magical healing of 3rd level or higher.
+                  Alternatively, someone can tend to the wound and
+                  make a DC 15 Wisdom (Medicine) check once every
+                  24 hours. After ten successes, the wound heals.
+                </td>
+              </tr>
+              <tr>
+                <td>17-20</td>
+                <td>
+                  Minor Scar. The scar doesn't have any adverse
+                  effect. Magical healing of 6th level or higher, such
+                  as heal and regenerate, removes the scar.
+                </td>
+              </tr>
+            </table>
+          </uib-tab>
+          <uib-tab index="3" heading="Actions">
+            <h3>Actions</h3>
+            <h4>Movement</h4>
+            <table class="table table-striped datatable">
+              <thead>
+                <tr>
+                  <th>Item</th><th>Rule</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Difficult Terrain</td>
+                  <td>Costs 1 extra foot of movement per foot moved(stacks with other modifiers). Low furniture, rubble, undergrowth, steep stairs, snow, shallow bogs, and other creatures spaces are difficult terrain</td>
+                </tr>
+                <tr>
+                  <td>Standing Up</td>
+                  <td>Costs an amount of movement equal to half your speed (rounded down).  Cannot stand if speed is 0.</td>
+                </tr>
+                <tr>
+                  <td>Crawling</td>
+                  <td>Costs 1 extra foot of movement per foot moved(stacks with other modifiers).</td>
+                </tr>
+                <tr>
+                  <td>Moving through another creature's space</td>
+                  <td>Can always move through friendly creatures space.  Hostile creatures only if 2 sizes larger.  Cannot end movement in another creatures space. Always difficult terrain.</td>
+                </tr>
+                <tr>
+                  <td>Flying</td>
+                  <td>No minimum distance moved.  Without hover you fall if you are knocked prone or have your speed reduced to 0.</td>
+                </tr>
+                <tr>
+                  <td>Squeezing</td>
+                  <td>Must be large enough for creature 1 size smaller.  Must spend 1 extra foot of movement for every foot (stacks with other modifiers).</td>
+                </tr>
+                <tr>
+                  <td>Climbing & Swimming</td>
+                  <td>Must spend 1 extra foot of movement for every foot moved (stacks with other modifiers), unless you have a specific speed for climbing or swimming.</td>
+                </tr>
+                <tr>
+                  <td>Alternating between types of movement.</td>
+                  <td>Subtract the total distance you have moved from whatever speed you are currently using to determine how far you can continue moving.</td>
+                </tr>
+                <tr>
+                  <td>Running Jump</td>
+                  <td>Horizontal feet equal to strength score, Vertical feet equal to 3 + strength modifier. Minimum 10 ft. on foot before jump.</td>
+                </tr>
+                <tr>
+                  <td>Standing Jump</td>
+                  <td>Horizontal feet equal to strength score/2 Vertical feet equal to (3 + strength modifier)/2</td>
+                </tr>
+                <tr>
+                  <td>Vertical Reach</td>
+                  <td>Equal to 1 1/2 * height + vertical jumping distance.</td>
+                </tr>
+                <tr>
+                  <td>Moving Stealthily</td>
+                  <td>Requires moving at half speed.  Make a dexterity (stealth) check opposed by wisdom (perception) or passive perception of observers.</td>
+                </tr>
+                <tr>
+                  <td>Mounting and Dismounting</td>
+                  <td>Once during your move, you can mount a creature that is within 5 feet o f you or dismount. Doing so costs an amount o f movement equal to half your speed.</td>
+                </tr>
+                <tr>
+                  <td>Falling off your mount</td>
+                  <td>if your mount is moved against it's will or you are knocked prone, you must succeed on a DC 10 Dexterity saving throw or fall off the mount, landing prone in a 
+                  space within 5 feet of it.  If your mount is knocked prone you may use your reaction to land on your feet next to it, otherwise you are knocked prone.</td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Actions in Combat</h4>
+            <table class="table table-striped datatable">
+              <thead>
+                <tr>
+                  <th>Action</th>
+                  <th>Rule</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Attack</td>
+                  <td>Make one melee or ranged weapon attack.</td>
+                </tr>
+                <tr>
+                  <td>Cast a Spell</td>
+                  <td>Most spells cost 1 action to cast.  Spell description may specify otherwise.</td>
+                </tr>
+                <tr>
+                  <td>Dash</td>
+                  <td>Gain extra movement for the turn equal to your speed.</td>
+                </tr>
+                <tr>
+                  <td>Disengage</td>
+                  <td>Movement doesn't provoke opportunity attacks for the rest of the turn.</td>
+                </tr>
+                <tr>
+                  <td>Dodge</td>
+                  <td>Attack rolls against you have disadvantage.</td>
+                </tr>
+                <tr>
+                  <td>Help</td>
+                  <td>Give advantage on the next ability check or attack roll you are helping with before the start of your next turn.</td>
+                </tr>
+                <tr>
+                  <td>Hide</td>
+                  <td>Make a dexterity (stealth) check to attempt to hide.  Cannot hide from creature that can see you.</td>
+                </tr>
+                <tr>
+                  <td>Ready</td>
+                  <td>Choose circumstance to trigger action and action to use.  Can choose at circumstance happening what you do.</td>
+                </tr>
+                <tr>
+                  <td>Search</td>
+                  <td>Try to find something using Wisdom (Perception) or Intelligence (Investigation)</td>
+                </tr>
+                <tr>
+                  <td>Use an Object</td>
+                  <td>
+                    Most objects can be interacted with as part of another action(such as drawing a sword or spell component).  
+                    Interact with one normal object for free each turn.  Certain objects require an action to use, or you can interact with a
+                    second object on your turn as an action.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Attacks</h4>
+            <table class="table table-striped datatable">
+              <thead>
+                <tr><th>Attack</th><th>Rule</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Critical Hit</td>
+                  <td>when the d20 roll is a 20 attack hits regardless of modifiers or targets AC. Double all damage dice.</td>
+                </tr>
+                <tr>
+                  <td>Critical Miss</td>
+                  <td>when the d20 roll is a 1 the attack misses regardless of modifiers or targets AC.</td>
+                </tr>
+                <tr>
+                  <td>Unseen Combatants</td>
+                  <td>Disadvantage on attack rolls against, advantage on attack rolls for.  If guessing wrong location automatic miss. Give away location when make an attack (hit or miss)</td>
+                </tr>
+                <tr>
+                  <td>Ranged Attack</td>
+                  <td>Uses DEX for attack roll and damage, thrown weapon can use strength at option. Disadvantage when enemy within 5 ft.</td>
+                </tr>
+                <tr>
+                  <td>Unarmed Fighting</td>
+                  <td>
+                    Unarmed strikes are not weapons in the normal sense, and attacking with them does not count as a weapon attack but can be done instead of attacking with a weapon.  
+                    However you are always proficient in unarmed strikes.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Opportunity Attack</td>
+                  <td>Uses reaction.  Make 1 weapon attack when a hostile creature you can see moves out of your reach.</td>
+                </tr>
+                <tr>
+                  <td>Two-weapon fighting</td>
+                  <td>
+                    When you attack with a light melee weapon held in one hand you can use a bonus action to attack with a different light melee weapon in the other hand.
+                    Do not add your ability modifier to the damage of the second attack.s
+                  </td>
+                </tr>
+                <tr>
+                  <td>Grapple</td>
+                  <td>
+                    Replaces 1 attack.  Use strength(athletics), opposed by strength(athletics) or dexterity(acrobatics).  Target gets grappled condition(speed 0).  
+                    Can move grappled creature with you but speed is halved.  Target must be no more than 1 size larger than you.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Shove</td>
+                  <td>
+                    Replaces 1 attack. Similar rules to grapple.  Target is knocked prone or pushed back 5 ft. on a success.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </uib-tab>
+          <uib-tab index='4' heading="Trade Goods">
+            <h3>Trade Goods</h3>
+            <table class="table table-striped datatable">
+              <thead>
+                <tr>
+                  <th>Name</th><th>Type</th><th>Weight</th><th>Unit of Sale</th><th>Price per Unit</th><th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Wheat</td><td>Foodstuff</td><td>60 lbs</td><td>1 bushel</td><td>5 sp</td><td>Unmilled wheat, usually only bought by millers who then make and sell flour</td>
+                </tr>
+                <tr>
+                  <td>Flour</td><td>Foodstuff</td><td>10 lb</td><td>sack</td><td>1.8 sp</td><td>milled flour, 8 days of food</td>
+                </tr>
+                <tr>
+                  <td>Bread</td><td>Foodstuff</td><td>1 lb</td><td>loaf</td><td>2 cp</td><td>cooked bread 0.5 days of food</td>
+                </tr>
+                <tr>
+                  <td>Biscuits</td><td>Foodstuff</td><td>1 lb</td><td>dozen</td><td>3 cp</td><td>soft biscuits 0.8 days of food</td>
+                </tr>
+                <tr>
+                  <td>Hardtack</td><td>Foodstuff</td><td>1 lb</td><td>dozen</td><td>2 cp</td><td>hard unappetizing biscuits, 1 day of food</td>
+                </tr>
+                <tr>
+                  <td>Salt</td><td>Foodstuff</td><td>1 lb</td><td>lb</td><td>5 cp</td><td>delicious salt, can be used to preserve meats or flavor food</td>
+                </tr>
+                <tr>
+                  <td>Ginger</td><td>Foodstuff</td><td>1 lb</td><td>lb</td><td>2 sp</td><td>usually sold as whole ginger root, 0.2 days of food</td>
+                </tr>
+                <tr>
+                  <td>Cinnamon</td><td>Foodstuff</td><td>1 lb</td><td>lb</td><td>7 sp</td><td>the bark of the cinnamon tree, sold as rolled sheets, 0.5 days of food</td>
+                </tr>
+                <tr>
+                  <td>Pepper</td><td>Foodstuff</td><td>1 lb</td><td>lb</td><td>7 sp</td><td>The black variety, used to disguise the taste of spoiled meat, 0.5 days of food</td>
+                </tr>
+                <tr>
+                  <td>Cloves</td><td>Foodstuff</td><td>1 lb</td><td>lb</td><td>2.5 gp</td><td>A rare spice made from the flower buds of the clove tree, 0.6 days of food</td>
+                </tr>
+                <tr>
+                  <td>Vegetables</td><td>Foodstuff</td><td>1 lb</td><td>lb</td><td>2 cp</td><td>Carrots, tomatoes, cucumbers, etc, 0.1 days of food</td>
+                </tr>
+                <tr>
+                  <td>Milk</td><td>Foodstuff</td><td>8.5 lb</td><td>gallon</td><td>3 cp</td><td>Delicious cow(or goat, or other mammal) juice, 1.2 days of food</td>
+                </tr>
+                <tr>
+                  <td>Cheese</td><td>Foodstuff</td><td>22 lb</td><td>wheel</td><td>5 sp</td><td>A large wheel of cheese, 20 days of food</td>
+                </tr>
+                <tr>
+                  <td>Straw</td><td>Foodstuff</td><td>36 lb</td><td>truss</td><td>1 cp</td><td>a decent basic feed for cows, horses, and other grazing herbivores, 3 days of animal feed</td>
+                </tr>
+                <tr>
+                  <td>Corn</td><td>Foodstuff</td><td>60 lb</td><td>bushel</td><td>4 sp</td><td>Sweet or flour corn suitable for eating, full ears. Can also be ground into flour.  14 days of food</td>
+                </tr>
+                <tr>
+                  <td>Fresh Fruit</td><td>Foodstuff</td><td>1 lb</td><td>lb</td><td>3 cp</td><td>Fruit, from apples to berries. 0.1 days of food</td>
+                </tr>
+                <tr>
+                  <td>Eggs</td><td>Foodstuff</td><td>1.5 lb</td><td>dozen</td><td>2 sp</td><td>Fruit, from apples to berries. 0.5 days of food</td>
+                </tr>
+                <tr>
+                  <td>Meat, dried or salted</td><td>Foodstuff</td><td>1 lb</td><td>lb</td><td>2 sp</td><td>Meat is typically dried or salted to preserve it. 0.6 days of food</td>
+                </tr>
+                <tr>
+                  <td>Meat, fresh</td><td>Foodstuff</td><td>1 lb</td><td>lb</td><td>1 sp</td><td>Fresh meat, delicious but spoils easily, 0.5 days of food</td>
+                </tr>
+                <tr>
+                  <td>Peasant's diet (daily)</td><td>Foodstuff</td><td>3 lbs</td><td>one days worth of food</td><td>3 cp</td><td>A days worth of simple wheat or corn bread, vegetables, and milk</td>
+                </tr>
+                <tr>
+                  <td>Balanced diet (daily)</td><td>Foodstuff</td><td>3 lbs</td><td>one days worth of food</td><td>1.7 sp</td><td>includes some preserved meat, vegetables, fruits, cheese, and bread, but little or no spices.</td>
+                </tr>
+                <tr>
+                  <td>Rich diet (daily)</td><td>Foodstuff</td><td>4 lbs</td><td>one days worth of food</td><td>6 sp</td><td>includes fresh meat, vegetables, fruits, cheese, milk, bread, and spices in enough quantity to put on weight over time.</td>
+                </tr>
+                <tr>
+                  <td>Survival Rations (daily)</td><td>Foodstuff</td><td>1 lb</td><td>one days worth of food</td><td>5 cp</td><td>Hardtack and a little jerky for protein.</td>
+                </tr>
+                <tr>
+                  <td>Good Rations (daily)</td><td>Foodstuff</td><td>1.5 lb</td><td>one days worth of food</td><td>1.2 sp</td><td>preserved meat, biscuits, and cheese.</td>
+                </tr>
+                <tr>
+                  <td>Canvas</td><td>Raw Material</td><td>0.5 lb</td><td>square yard</td><td>3 sp</td><td>heavy cotton canvas, good for tents or ships sails.</td>
+                </tr>
+                <tr>
+                  <td>Linen</td><td>Raw Material</td><td>0.2 lb</td><td>square yard</td><td>9 sp</td><td>fine linen, used to make comfortable warm weather clothing.</td>
+                </tr>
+                <tr>
+                  <td>Silk</td><td>Raw Material</td><td>0.2 lb</td><td>square yard</td><td>6 gp</td><td>fine silks, used for the finest clothing.</td>
+                </tr>
+                <tr>
+                  <td>Cotton</td><td>Raw Material</td><td>500 lb</td><td>bale</td><td>40 gp</td><td>raw cotton, used to produce cotton cloth.</td>
+                </tr>
+                <tr>
+                  <td>Flax</td><td>Raw Material</td><td>500 lb</td><td>bale</td><td>120 gp</td><td>raw flax, used to produce linen cloth.</td>
+                </tr>
+                <tr>
+                  <td>Wool</td><td>Raw Material</td><td>500 lb</td><td>bale</td><td>40 gp</td><td>raw wool, used to produce wool cloth.</td>
+                </tr>
+                <tr>
+                  <td>Cotton Cloth</td><td>Raw Material</td><td>0.3 lb</td><td>square yard</td><td>2 sp</td><td>medium weight cotton cloth, suitable for making clothing.</td>
+                </tr>
+                <tr>
+                  <td>Wool Cloth</td><td>Raw Material</td><td>0.4 lb</td><td>square yard</td><td>3 sp</td><td>thick wool cloth, suitable for making cold weather clothing.</td>
+                </tr>
+                <tr>
+                  <td>Softwood lumber, milled</td><td>Raw Material</td><td>2 lb</td><td>inches thick x square feet</td><td>2 cp</td><td>milled boards of spruce, pine, maple, or other softwoods. Used for the planks of a ship or as a cheap construction material for buildings.</td>
+                </tr>
+                <tr>
+                  <td>Softwood lumber, raw logs</td><td>Raw Material</td><td>1 2/3 lb</td><td>radius(feet)^2*length(inches)</td><td>radius(feet)^2*length(inches)*2 cp or 6 gp for a 10 ft. long 12" diameter log</td><td>raw logs of softwood trees.</td>
+                </tr>
+                <tr>
+                  <td>Hardwood lumber, milled</td><td>Raw Material</td><td>3.75 lb</td><td>inches thick x square feet</td><td>1 sp</td><td>milled boards of oak, walnut, cherry, or other hardwoods.  Used primarily for furniture.</td>
+                </tr>
+                <tr>
+                  <td>Hardwood lumber, raw logs</td><td>Raw Material</td><td>3 lb</td><td>radius(feet)^2*length(inches)</td><td>radius(feet)^2*length(inches)*2 sp or 6 gp for a 10 ft. long 12" diameter log</td><td>raw logs of hardwood trees.</td>
+                </tr>
+                <tr>
+                  <td>Ironwood lumber, milled</td><td>Raw Material</td><td>6 lb</td><td>inches thick x square feet</td><td>4 gp</td><td>milled boards of oak, walnut, cherry, or other hardwoods.  Used primarily for furniture.</td>
+                </tr>
+                <tr>
+                  <td>Ironwood lumber, raw logs</td><td>Raw Material</td><td>4.8 lb</td><td>radius(feet)^2*length(inches)</td><td>radius(feet)^2*length(inches)*40 sp or 120 gp for a 10 ft. long 12" diameter log</td><td>raw logs of hardwood trees.</td>
+                </tr>
+                <tr>
+                  <td>Hides</td><td>Raw Material</td><td>20 lb</td><td>1 finished hide</td><td>10 gp</td><td>A cowhide that has been dried and de-fleshed.</td>
+                </tr>
+                <tr>
+                  <td>Leather</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>2 gp</td><td>Leather ready for use in clothing or armor.</td>
+                </tr>
+                <tr>
+                  <td>Dragon Hide</td><td>Raw Material</td><td>150 lb</td><td>1 finished hide</td><td>3000 gp</td><td>A finished dragonhide that has been dried, descaled and de-fleshed.</td>
+                </tr>
+                <tr>
+                  <td>Dragon Leather</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>40 gp</td><td>Dragon leather ready for use in clothing or armor.</td>
+                </tr>
+                <tr>
+                  <td>Dragon Scales</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>30 gp</td><td>Dragon scales ready for use in clothing or armor.</td>
+                </tr>
+                <tr>
+                  <td>Hemp</td><td>Raw Material</td><td>500 lb</td><td>bale</td><td>10 gp</td><td>Hemp used for making rope.</td>
+                </tr>
+                <tr>
+                  <td>Cut Stone</td><td>Raw Material</td><td>2000 lb</td><td>ton</td><td>1 gp</td><td>Rough cut stone suitable for construction.</td>
+                </tr>
+                <tr>
+                  <td>Brick</td><td>Raw Material</td><td>2000 lb</td><td>ton</td><td>17 gp</td><td>Molded clay brick suitable for construction.</td>
+                </tr>
+                <tr>
+                  <td>Marble</td><td>Raw Material</td><td>2000 lb</td><td>ton</td><td>135 gp</td><td>cut marble suitable for construction.</td>
+                </tr>
+                <tr>
+                  <td>Concrete</td><td>Raw Material</td><td>2000 lb</td><td>ton</td><td>13 gp</td><td>unmixed concrete.</td>
+                </tr>
+                <tr>
+                  <td>Copper</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>3 sp</td><td>Smelted Copper.</td>
+                </tr>
+                <tr>
+                  <td>Silver</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>35 gp</td><td>Smelted Silver.</td>
+                </tr>
+                <tr>
+                  <td>Gold</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>1000 gp</td><td>Smelted Gold.</td>
+                </tr>
+                <tr>
+                  <td>Platinum</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>2000 gp</td><td>Smelted Platinum.</td>
+                </tr>
+                <tr>
+                  <td>Arcanum Crystal</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>100 gp</td><td>Unaligned Arcanum Crystal.</td>
+                </tr>
+                <tr>
+                  <td>Bronze</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>6 sp</td><td>Smelted bronze.</td>
+                </tr>
+                <tr>
+                  <td>Tin</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>2 sp</td><td>Smelted tin.</td>
+                </tr>
+                <tr>
+                  <td>Zinc</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>2 sp</td><td>Smelted zinc.</td>
+                </tr>
+                <tr>
+                  <td>Iron</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>1 sp</td><td>Smelted iron.</td>
+                </tr>
+                <tr>
+                  <td>Steel</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>2 sp</td><td>Smelted steel.</td>
+                </tr>
+                <tr>
+                  <td>Brass</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>6 sp</td><td>Smelted brass.</td>
+                </tr>
+                <tr>
+                  <td>Nickel</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>3 gp</td><td>Smelted nickel.</td>
+                </tr>
+                <tr>
+                  <td>Red Parakas Steel</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>5 gp</td><td>Smelted Parakas Steel.</td>
+                </tr>
+                <tr>
+                  <td>Adamantium</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>10 gp</td><td>Smelted Adamantium.</td>
+                </tr>
+                <tr>
+                  <td>Mithril</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>15 gp</td><td>Smelted Mithril.</td>
+                </tr>
+                <tr>
+                  <td>Aluminum</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>1 gp</td><td>Smelted Aluminum.</td>
+                </tr>
+                <tr>
+                  <td>Coal</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>5 cp</td><td>Raw Coal.</td>
+                </tr>
+              </tbody>
+            </table>
+          </uib-tab>
+          <uib-tab index='5' heading="Animals">
+            <h3>Animals</h3>
+            <table class="table table-striped datatable">
+              <thead>
+                <tr>
+                  <th>Animal</th><th>Type</th><th>Cost per Head</th><th>Size</th><th>Speed</th><th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Camel</td><td>Mount</td><td>110 gp</td><td>Large</td><td>50 ft.</td><td>A camel trained for riding.</td>
+                </tr>
+                <tr>
+                  <td>Donkey</td><td>Livestock</td><td>15 gp</td><td>Medium</td><td>35 ft.</td><td>A donkey trained for carrying goods.</td>
+                </tr>
+                <tr>
+                  <td>Mule</td><td>Livestock</td><td>25 gp</td><td>Medium</td><td>40 ft.</td><td>A mule trained for carrying goods.</td>
+                </tr>
+                <tr>
+                  <td>Draft Horse</td><td>Livestock</td><td>60 gp</td><td>Large</td><td>40 ft.</td><td>A large horse trained for carrying goods or pulling a load.</td>
+                </tr>
+                <tr>
+                  <td>Riding Horse</td><td>Mount</td><td>100 gp</td><td>Large</td><td>60 ft.</td><td>A horse trained for riding.</td>
+                </tr>
+                <tr>
+                  <td>Riding Dog(Mastiff)</td><td>Mount</td><td>25 gp</td><td>Medium</td><td>40 ft.</td><td>A large dog trained for riding by small or smaller creatures.</td>
+                </tr>
+                <tr>
+                  <td>Herding/Work Dog</td><td>Livestock</td><td>15 gp</td><td>Small</td><td>35 ft.</td><td>A dog trained for work such as herding or tracking.</td>
+                </tr>
+                <tr>
+                  <td>Pony</td><td>Mount</td><td>40 gp</td><td>Small</td><td>40 ft.</td><td>A pony trained for riding.</td>
+                </tr>
+                <tr>
+                  <td>War horse</td><td>Mount</td><td>200 gp</td><td>Large</td><td>60 ft.</td><td>A large horse trained for riding and fighting in battle.</td>
+                </tr>
+                <tr>
+                  <td>War camel</td><td>Mount</td><td>220 gp</td><td>Large</td><td>50 ft.</td><td>A camel trained for riding and fighting in battle.</td>
+                </tr>
+                <tr>
+                  <td>Milk Cow</td><td>Livestock</td><td>200 gp</td><td>Large</td><td>30 ft.</td><td>A cow ready to give milk.</td>
+                </tr>
+                <tr>
+                  <td>Ox/Bull</td><td>Livestock</td><td>40 gp</td><td>Large</td><td>30 ft.</td><td>An ox or bull trained to haul or pull.</td>
+                </tr>
+                <tr>
+                  <td>Pig</td><td>Livestock</td><td>9 gp</td><td>Medium</td><td>20 ft.</td><td>A pig sow, to be raised for meat.</td>
+                </tr>
+                <tr>
+                  <td>Sheep</td><td>Livestock</td><td>30 gp</td><td>Medium</td><td>30 ft.</td><td>A sheep that can be raised for wool.</td>
+                </tr>
+                <tr>
+                  <td>Goat</td><td>Livestock</td><td>50 gp</td><td>Medium</td><td>40 ft.</td><td>A goat that can be used for milk or meat.</td>
+                </tr>
+                <tr>
+                  <td>Elephant</td><td>Livestock</td><td>2250 gp</td><td>Huge</td><td>40 ft.</td><td>A young elephant.</td>
+                </tr>
+                <tr>
+                  <td>Chicken</td><td>Livestock</td><td>2 gp</td><td>Tiny</td><td>20 ft.</td><td>An egg laying chicken.</td>
+                </tr>
+                <tr>
+                  <td>Goose</td><td>Livestock</td><td>4 gp</td><td>Small</td><td>25 ft. fly 50 ft.</td><td>An egg laying goose.</td>
+                </tr>
+                <tr>
+                  <td>Cat</td><td>Livestock</td><td>10 gp</td><td>Tiny</td><td>40 ft., climb 30 ft.</td><td>A mousing cat.</td>
+                </tr>
+                <tr>
+                  <td>Other Beast</td><td>Livestock</td><td>ROUNDUP((CR * 0.75)^2) * 250 gp</td><td>Varies</td><td>Varies</td><td>A captured wild beasts cost is based on the difficulty in capturing it.</td>
+                </tr>
+              </tbody>
+            </table>
+          </uib-tab>
+          <uib-tab index="6" heading="Labor">
+            <h3>Labor</h3>
+            <p>
+              Prices listed are per person per day.
+            </p>
+            <table class="table table-striped datatable">
+              <thead>
+                <tr>
+                  <th>Worker</th><th>Class Level</th><th>In Vicinity of Home</th><th>Adventuring</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Guard/Mercenary</td><td>Level 1 Fighter</td><td>2 gp</td><td>4 gp</td>
+                </tr>
+                <tr>
+                  <td>Unskilled Laborer</td><td>Level 1 Commoner</td><td>5 sp (plus materials)</td><td>1 gp (plus materials)</td>
+                </tr>
+                <tr>
+                  <td>Artisan</td><td>Level 5 Commoner</td><td>3 gp (plus materials)</td><td>6 gp (plus materials)</td>
+                </tr>
+                <tr>
+                  <td>Master Craftsman</td><td>Level 10 Commoner</td><td>5 gp (plus materials)</td><td>10 gp (plus materials)</td>
+                </tr>
+                <tr>
+                  <td>Level 1 NPC</td><td>Any PC Class Level 1</td><td>2 gp</td><td>4 gp</td>
+                </tr>
+                <tr>
+                  <td>Level 2 NPC</td><td>Any PC Class Level 2</td><td>10 gp</td><td>20 gp</td>
+                </tr>
+                <tr>
+                  <td>Level 3 NPC</td><td>Any PC Class Level 3</td><td>20 gp</td><td>40 gp</td>
+                </tr>
+                <tr>
+                  <td>Level 4 NPC</td><td>Any PC Class Level 4</td><td>40 gp</td><td>80 gp</td>
+                </tr>
+                <tr>
+                  <td>Level 5 NPC</td><td>Any PC Class Level 5</td><td>60 gp</td><td>120 gp</td>
+                </tr>
+                <tr>
+                  <td>Level 6 NPC</td><td>Any PC Class Level 6</td><td>90 gp</td><td>180 gp</td>
+                </tr>
+                <tr>
+                  <td>Level 7 NPC</td><td>Any PC Class Level 7</td><td>120 gp</td><td>240 gp</td>
+                </tr>
+                <tr>
+                  <td>Level 8 NPC</td><td>Any PC Class Level 8</td><td>160 gp</td><td>320 gp</td>
+                </tr>
+                <tr>
+                  <td>Level 9 NPC</td><td>Any PC Class Level 9</td><td>200 gp</td><td>400 gp</td>
+                </tr>
+                <tr>
+                  <td>Level 10 NPC</td><td>Any PC Class Level 10</td><td>250 gp</td><td>500 gp</td>
+                </tr>
+                <tr>
+                  <td>Level 11 NPC</td><td>Any PC Class Level 11</td><td>300 gp</td><td>600 gp</td>
+                </tr>
+                <tr>
+                  <td>Level 12 NPC</td><td>Any PC Class Level 12</td><td>360 gp</td><td>720 gp</td>
+                </tr>
+                <tr>
+                  <td>Level 13 NPC</td><td>Any PC Class Level 13</td><td>420 gp</td><td>840 gp</td>
+                </tr>
+                <tr>
+                  <td>Level 14 NPC</td><td>Any PC Class Level 14</td><td>490 gp</td><td>980 gp</td>
+                </tr>
+                <tr>
+                  <td>Level 15 NPC</td><td>Any PC Class Level 15</td><td>560 gp</td><td>1120 gp</td>
+                </tr>
+                <tr>
+                  <td>Level 16 NPC</td><td>Any PC Class Level 16</td><td>640 gp</td><td>1280 gp</td>
+                </tr>
+                <tr>
+                  <td>Level 17 NPC</td><td>Any PC Class Level 17</td><td>720 gp</td><td>1440 gp</td>
+                </tr>
+                <tr>
+                  <td>Level 18 NPC</td><td>Any PC Class Level 18</td><td>810 gp</td><td>1620 gp</td>
+                </tr>
+                <tr>
+                  <td>Level 19 NPC</td><td>Any PC Class Level 19</td><td>900 gp</td><td>1800 gp</td>
+                </tr>
+                <tr>
+                  <td>Level 20 NPC</td><td>Any PC Class Level 20</td><td>1000 gp</td><td>2000 gp</td>
+                </tr>
+              </tbody>
+            </table>
+          </uib-tab>
+          <uib-tab index="7" heading="Armor">
+            <h3>Armor</h3>
+            <table class="table table-striped datatable">
+              <thead>
+                <tr>
+                  <th>Armor</th><th>Type</th><th>Material</th><th>AC</th><th>Strength</th><th>Stealth</th><th>Weight</th><th>Resistance</th><th>Material Cost</th><th>Time Cost</th><th>Cost</th><th>Suggested Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Padded</td><td>Light</td><td>Cloth</td><td>11 + dex mod</td><td>-</td><td>disadvantage</td><td>8 lb</td><td>-</td><td>1.6 gp</td><td>1 workday</td><td>6.6 gp</td><td>8 gp</td>
+                </tr>
+                <tr>
+                  <td>Leather</td><td>Light</td><td>Leather</td><td>11 + dex mod</td><td>-</td><td>-</td><td>10 lb</td><td>-</td><td>20 gp</td><td>3 workdays</td><td>35 gp</td><td>39 gp</td>
+                </tr>
+                <tr>
+                  <td>Leather</td><td>Light</td><td>Dragon Leather</td><td>11 + dex mod</td><td>-</td><td>-</td><td>10 lb</td><td>dragon's breath weapon element</td><td>400 gp</td><td>4 workdays</td><td>420 gp</td><td>578 gp</td>
+                </tr>
+                <tr>
+                  <td>Studded Leather</td><td>Light</td><td>Leather</td><td>12 + dex mod</td><td>-</td><td>-</td><td>13 lb</td><td>-</td><td>26 gp</td><td>7 workdays</td><td>61 gp</td><td>74 gp</td>
+                </tr>
+                <tr>
+                  <td>Studded Leather</td><td>Light</td><td>Dragon Leather</td><td>12 + dex mod</td><td>-</td><td>-</td><td>13 lb</td><td>dragon's breath weapon element</td><td>520 gp</td><td>10 workdays</td><td>570 gp</td><td>855 gp</td>
+                </tr>
+                <tr>
+                  <td>Hide</td><td>Medium</td><td>Hides</td><td>12 + dex (max 2)</td><td>-</td><td>-</td><td>12 lb</td><td>-</td><td>6 gp</td><td>3 workdays</td><td>21 gp</td><td>26 gp</td>
+                </tr>
+                <tr>
+                  <td>Hide</td><td>Medium</td><td>Dragon Hides</td><td>12 + dex (max 2)</td><td>-</td><td>-</td><td>12 lb</td><td>dragon's breath weapon element</td><td>240 gp</td><td>4 workdays</td><td>260 gp</td><td>390 gp</td>
+                </tr>
+                <tr>
+                  <td>Chain Shirt</td><td>Medium</td><td>Steel</td><td>13 + dex (max 2)</td><td>-</td><td>-</td><td>20 lb</td><td>-</td><td>4 gp</td><td>20 workdays</td><td>104 gp</td><td>136 gp</td>
+                </tr>
+                <tr>
+                  <td>Chain Shirt</td><td>Light</td><td>Mithril</td><td>13 + dex</td><td>-</td><td>-</td><td>10 lb</td><td>-</td><td>150 gp</td><td>30 workdays</td><td>300 gp</td><td>390 gp</td>
+                </tr>
+                <tr>
+                  <td>Chain Shirt</td><td>Medium</td><td>Adamantine</td><td>13 + dex (max 2)</td><td>-</td><td>-</td><td>20 lb</td><td>non-magical slashing &amp; piercing</td><td>200 gp</td><td>30 workdays</td><td>350 gp</td><td>569 gp</td>
+                </tr>
+                <tr>
+                  <td>Chain Shirt</td><td>Medium</td><td>Parakas Steel</td><td>13 + dex (max 2)</td><td>-</td><td>-</td><td>20 lb</td><td>non-magical piercing</td><td>100 gp</td><td>20 workdays</td><td>200 gp</td><td>325 gp</td>
+                </tr>
+                <tr>
+                  <td>Scale Mail</td><td>Medium</td><td>Steel</td><td>14 + dex (max 2)</td><td>-</td><td>disadvantage</td><td>45 lb</td><td>-</td><td>27 gp</td><td>30 workdays</td><td>177 gp</td><td>248 gp</td>
+                </tr>
+                <tr>
+                  <td>Scale Mail</td><td>Medium</td><td>Mithril</td><td>14 + dex (max 2)</td><td>-</td><td>-</td><td>27.5 lb</td><td>-</td><td>282.5 gp</td><td>45 workdays</td><td>507.5 gp</td><td>711 gp</td>
+                </tr>
+                <tr>
+                  <td>Scale Mail</td><td>Medium</td><td>Adamantine</td><td>14 + dex (max 2)</td><td>-</td><td>disadvantage</td><td>45 lb</td><td>non-magical slashing &amp; piercing</td><td>370 gp</td><td>45 workdays</td><td>595 gp</td><td>1042 gp</td>
+                </tr>
+                <tr>
+                  <td>Scale Mail</td><td>Medium</td><td>Parakas Steel</td><td>14 + dex (max 2)</td><td>-</td><td>disadvantage</td><td>45 lb</td><td>non-magical piercing</td><td>195 gp</td><td>30 workdays</td><td>345 gp</td><td>604 gp</td>
+                </tr>
+                <tr>
+                  <td>Scale Mail</td><td>Medium</td><td>Dragon Scale</td><td>14 + dex (max 2)</td><td>-</td><td>disadvantage</td><td>45 lb</td><td>dragon's breath weapon element</td><td>1070 gp</td><td>45 workdays</td><td>1295 gp</td><td>2267 gp</td>
+                </tr>
+                <tr>
+                  <td>Breastplate</td><td>Medium</td><td>Steel</td><td>14 + dex (max 2)</td><td>-</td><td>-</td><td>20 lb</td><td>-</td><td>22 gp</td><td>40 workdays</td><td>222 gp</td><td>311 gp</td>
+                </tr>
+                <tr>
+                  <td>Breastplate</td><td>Light</td><td>Mithril</td><td>14 + dex</td><td>-</td><td>-</td><td>15 lb</td><td>-</td><td>95 gp</td><td>60 workdays</td><td>395 gp</td><td>553 gp</td>
+                </tr>
+                <tr>
+                  <td>Breastplate</td><td>Medium</td><td>Adamantine</td><td>14 + dex (max 2)</td><td>-</td><td>-</td><td>20 lb</td><td>non-magical slashing &amp; piercing</td><td>120 gp</td><td>60 workdays</td><td>420 gp</td><td>735 gp</td>
+                </tr>
+                <tr>
+                  <td>Breastplate</td><td>Medium</td><td>Parakas Steel</td><td>14 + dex (max 2)</td><td>-</td><td>-</td><td>20 lb</td><td>non-magical piercing</td><td>70 gp</td><td>40 workdays</td><td>270 gp</td><td>473 gp</td>
+                </tr>
+                <tr>
+                  <td>Breastplate</td><td>Medium</td><td>Dragon Scale</td><td>14 + dex (max 2)</td><td>-</td><td>-</td><td>20 lb</td><td>dragon's breath weapon element</td><td>320 gp</td><td>60 workdays</td><td>620 gp</td><td>1085 gp</td>
+                </tr>
+                <tr>
+                  <td>Half-Plate</td><td>Medium</td><td>Steel</td><td>15 + dex (max 2)</td><td>-</td><td>disadvantage</td><td>40 lb</td><td>-</td><td>26 gp</td><td>120 workdays</td><td>626 gp</td><td>939 gp</td>
+                </tr>
+                <tr>
+                  <td>Half-Plate</td><td>Medium</td><td>Mithril</td><td>15 + dex (max 2)</td><td>-</td><td>-</td><td>25 lb</td><td>-</td><td>245 gp</td><td>180 workdays</td><td>1145 gp</td><td>1718 gp</td>
+                </tr>
+                <tr>
+                  <td>Half-Plate</td><td>Medium</td><td>Adamantine</td><td>15 + dex (max 2)</td><td>-</td><td>disadvantage</td><td>40 lb</td><td>non-magical slashing &amp; piercing</td><td>320 gp</td><td>180 workdays</td><td>1220 gp</td><td>2288 gp</td>
+                </tr>
+                <tr>
+                  <td>Half-Plate</td><td>Medium</td><td>Parakas Steel</td><td>15 + dex (max 2)</td><td>-</td><td>disadvantage</td><td>40 lb</td><td>non-magical piercing</td><td>170 gp</td><td>120 workdays</td><td>770 gp</td><td>1444 gp</td>
+                </tr>
+                <tr>
+                  <td>Half-Plate</td><td>Medium</td><td>Dragon Scale</td><td>15 + dex (max 2)</td><td>-</td><td>disadvantage</td><td>40 lb</td><td>dragon's breath weapon element</td><td>920 gp</td><td>180 workdays</td><td>1820 gp</td><td>3413 gp</td>
+                </tr>
+                <tr>
+                  <td>Ring Mail</td><td>Heavy</td><td>Steel</td><td>14</td><td>-</td><td>disadvantage</td><td>40 lb</td><td>-</td><td>26 gp</td><td>20 workdays</td><td>126 gp</td><td>177 gp</td>
+                </tr>
+                <tr>
+                  <td>Ring Mail</td><td>Medium</td><td>Mithril</td><td>14 + dex (max 2)</td><td>-</td><td>-</td><td>25 lb</td><td>-</td><td>245 gp</td><td>30 workdays</td><td>395 gp</td><td>553 gp</td>
+                </tr>
+                <tr>
+                  <td>Ring Mail</td><td>Heavy</td><td>Adamantine</td><td>14</td><td>-</td><td>disadvantage</td><td>40 lb</td><td>non-magical slashing, piercing</td><td>320 gp</td><td>30 workdays</td><td>470 gp</td><td>823 gp</td>
+                </tr>
+                <tr>
+                  <td>Ring Mail</td><td>Heavy</td><td>Parakas Steel</td><td>14</td><td>-</td><td>disadvantage</td><td>40 lb</td><td>non-magical piercing</td><td>170 gp</td><td>20 workdays</td><td>270 gp</td><td>473 gp</td>
+                </tr>
+                <tr>
+                  <td>Chain Mail</td><td>Heavy</td><td>Steel</td><td>16</td><td>13</td><td>disadvantage</td><td>55 lb</td><td>-</td><td>11 gp</td><td>50 workdays</td><td>261 gp</td><td>418 gp</td>
+                </tr>
+                <tr>
+                  <td>Chain Mail</td><td>Medium</td><td>Mithril</td><td>16 + dex (max 2)</td><td>11</td><td>disadvantage</td><td>31.5 lb</td><td>-</td><td>353.5 gp</td><td>75 workdays</td><td>728.5 gp</td><td>1166 gp</td>
+                </tr>
+                <tr>
+                  <td>Chain Mail</td><td>Heavy</td><td>Adamantine</td><td>16</td><td>13</td><td>disadvantage</td><td>55 lb</td><td>non-magical slashing, piercing</td><td>471 gp</td><td>75 workdays</td><td>846 gp</td><td>1692 gp</td>
+                </tr>
+                <tr>
+                  <td>Chain Mail</td><td>Heavy</td><td>Parakas Steel</td><td>16</td><td>13</td><td>disadvantage</td><td>55 lb</td><td>non-magical piercing</td><td>236 gp</td><td>50 workdays</td><td>486 gp</td><td>972 gp</td>
+                </tr>
+                <tr>
+                  <td>Splint</td><td>Heavy</td><td>Steel</td><td>17</td><td>15</td><td>disadvantage</td><td>60 lb</td><td>-</td><td>30 gp</td><td>50 workdays</td><td>280 gp</td><td>476 gp</td>
+                </tr>
+                <tr>
+                  <td>Splint</td><td>Medium</td><td>Mithril</td><td>17 + dex (max 2)</td><td>13</td><td>disadvantage</td><td>35 lb</td><td>-</td><td>395 gp</td><td>75 workdays</td><td>770 gp</td><td>1309 gp</td>
+                </tr>
+                <tr>
+                  <td>Splint</td><td>Heavy</td><td>Adamantine</td><td>17</td><td>15</td><td>disadvantage</td><td>60 lb</td><td>non-magical slashing, piercing</td><td>520 gp</td><td>75 workdays</td><td>895 gp</td><td>1902 gp</td>
+                </tr>
+                <tr>
+                  <td>Splint</td><td>Heavy</td><td>Parakas Steel</td><td>17</td><td>15</td><td>disadvantage</td><td>60 lb</td><td>non-magical piercing</td><td>270 gp</td><td>50 workdays</td><td>520 gp</td><td>1105 gp</td>
+                </tr>
+                <tr>
+                  <td>Plate</td><td>Heavy</td><td>Steel</td><td>18</td><td>15</td><td>disadvantage</td><td>65 lb</td><td>-</td><td>31 gp</td><td>200 workdays</td><td>1031 gp</td><td>1856 gp</td>
+                </tr>
+                <tr>
+                  <td>Plate</td><td>Medium</td><td>Mithril</td><td>18 + dex (max 2)</td><td>13</td><td>disadvantage</td><td>37.5 lb</td><td>-</td><td>432.5 gp</td><td>300 workdays</td><td>1932.5 gp</td><td>3479 gp</td>
+                </tr>
+                <tr>
+                  <td>Plate</td><td>Heavy</td><td>Adamantine</td><td>18</td><td>15</td><td>disadvantage</td><td>65 lb</td><td>non-magical slashing, piercing</td><td>570 gp</td><td>300 workdays</td><td>2070 gp</td><td>4658 gp</td>
+                </tr>
+                <tr>
+                  <td>Plate</td><td>Heavy</td><td>Parakas Steel</td><td>18</td><td>15</td><td>disadvantage</td><td>65 lb</td><td>non-magical piercing</td><td>295 gp</td><td>200 workdays</td><td>1295 gp</td><td>2914 gp</td>
+                </tr>
+                <tr>
+                  <td>Plate</td><td>Heavy</td><td>Dragon Scale</td><td>18</td><td>15</td><td>disadvantage</td><td>65 lb</td><td>dragon's breath weapon element</td><td>1120 gp</td><td>300 workdays</td><td>2620 gp</td><td>5895 gp</td>
+                </tr>
+              </tbody>
+            </table>
+          </uib-tab>
+          <uib-tab index="8" heading="Weapons">
+            <h3>Weapons</h3>
+            <table class="table table-striped datatable">
+              <thead>
+                <tr>
+                  <th>Name</th><th>Type</th><th>Material</th><th>Damage</th><th>Weight</th><th>Properties</th><th>Material Cost</th><th>Time Requirement</th><th>Cost</th><th>Suggested Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Club</td><td>Simple</td><td>Unworked Wood</td><td>1d4 bludgeoning</td><td>2 lb</td><td>light</td><td>0.2 gp</td><td>0 workdays</td><td>0.2 gp</td><td>0.3 gp</td>
+                </tr>
+                <tr>
+                  <td>Dagger</td><td>Simple</td><td>wood, steel</td><td>1d4 piercing</td><td>1 lb</td><td>Finesse, light, thrown (range 20/60)</td><td>0.2 gp</td><td>1 workday</td><td>5.2 gp</td><td>6.5 gp</td>
+                </tr>
+                <tr>
+                  <td>Greatclub</td><td>Simple</td><td>Unworked Wood</td><td>1d8 bludgeoning</td><td>10 lb</td><td>Two-handed</td><td>1 gp</td><td>0 workdays</td><td>1 gp</td><td>1.5 gp</td>
+                </tr>
+                <tr>
+                  <td>Handaxe</td><td>Simple</td><td>wood, steel</td><td>1d6 slashing</td><td>2 lb</td><td>light, thrown (range 20/60)</td><td>0.6 gp</td><td>1 workday</td><td>5.6 gp</td><td>7.6 gp</td>
+                </tr>
+                <tr>
+                  <td>Javelin</td><td>Simple</td><td>wood, steel</td><td>1d6 piercing</td><td>2 lb</td><td>light, thrown (range 30/120)</td><td>0.6 gp</td><td>1 workday</td><td>5.6 gp</td><td>7.6 gp</td>
+                </tr>
+                <tr>
+                  <td>Light Hammer</td><td>Simple</td><td>steel</td><td>1d4 bludgeoning</td><td>2 lb</td><td>light, thrown (range 20/60)</td><td>0.4 gp</td><td>1 workday</td><td>5.4 gp</td><td>6.8 gp</td>
+                </tr>
+                <tr>
+                  <td>Mace</td><td>Simple</td><td>steel</td><td>1d6 bludgeoning</td><td>4 lb</td><td>-</td><td>0.8 gp</td><td>1 workday</td><td>5.8 gp</td><td>7.9 gp</td>
+                </tr>
+                <tr>
+                  <td>Quarterstaff</td><td>Simple</td><td>wood</td><td>1d6/1d8 bludgeoning</td><td>4 lb</td><td>versatile</td><td>0.4 gp</td><td>0.25 workdays</td><td>1.65 gp</td><td>2.4 gp</td>
+                </tr>
+                <tr>
+                  <td>Sickle</td><td>Simple</td><td>steel</td><td>1d4 slashing</td><td>2 lb</td><td>light</td><td>0.4 gp</td><td>1 workday</td><td>5.4 gp</td><td>6.8 gp</td>
+                </tr>
+                <tr>
+                  <td>Spear</td><td>Simple</td><td>wood, steel</td><td>1d6/1d8 piercing</td><td>3 lb</td><td>Thrown (range 20/60), versatile</td><td>0.6 gp</td><td>1 workday</td><td>5.6 gp</td><td>7.9 gp</td>
+                </tr>
+                <tr>
+                  <td>Crossbow, light</td><td>Simple</td><td>wood, steel</td><td>1d8 piercing</td><td>5 lb</td><td>ranged, Ammunition (range 80/320), loading, two-handed</td><td>1 gp</td><td>4 workdays</td><td>21 gp</td><td>30.5 gp</td>
+                </tr>
+                <tr>
+                  <td>Dart</td><td>Simple</td><td>wood, steel</td><td>1d4 piercing</td><td>0.25 lb</td><td>ranged, Finesse, thrown (range 20/60)</td><td>0.05 gp</td><td>0.05 workdays</td><td>0.3 gp</td><td>0.4 gp</td>
+                </tr>
+                <tr>
+                  <td>Shortbow</td><td>Simple</td><td>wood</td><td>1d6 piercing</td><td>2 lb</td><td>ranged, Ammunition (range 80/320), two-handed</td><td>0.4 gp</td><td>2 workdays</td><td>10.4 gp</td><td>14.1 gp</td>
+                </tr>
+                <tr>
+                  <td>Sling</td><td>Simple</td><td>leather</td><td>1d4 bludgeoning</td><td>-</td><td>ranged, Ammunition (range 30/120)</td><td>0.05 gp</td><td>0.05 workdays</td><td>0.3 gp</td><td>0.4 gp</td>
+                </tr>
+                <tr>
+                  <td>Battleaxe</td><td>Martial</td><td>wood, steel</td><td>1d8/1d10 slashing</td><td>4 lb</td><td>versatile</td><td>0.7 gp</td><td>5 workdays</td><td>25.7 gp</td><td>38.6 gp</td>
+                </tr>
+                <tr>
+                  <td>Flail</td><td>Martial</td><td>steel</td><td>1d8 bludgeoning</td><td>2 lb</td><td>-</td><td>0.4 gp</td><td>4 workdays</td><td>20.4 gp</td><td>29.6 gp</td>
+                </tr>
+                <tr>
+                  <td>Glaive</td><td>Martial</td><td>wood, steel</td><td>1d10 slashing</td><td>6 lb</td><td>heavy, reach, two-handed</td><td>0.9 gp</td><td>4 workdays</td><td>20.9 gp</td><td>32.4 gp</td>
+                </tr>
+                <tr>
+                  <td>Greataxe</td><td>Martial</td><td>wood, steel</td><td>1d12 slashing</td><td>7 lb</td><td>heavy, two-handed</td><td>1.2 gp</td><td>7 workdays</td><td>36.2 gp</td><td>59.8 gp</td>
+                </tr>
+                <tr>
+                  <td>Greatsword</td><td>Martial</td><td>steel</td><td>2d6 slashing</td><td>6 lb</td><td>heavy, two-handed</td><td>1.2 gp</td><td>14 workdays</td><td>71.2 gp</td><td>121.1 gp</td>
+                </tr>
+                <tr>
+                  <td>Halberd</td><td>Martial</td><td>wood, steel</td><td>1d10 slashing</td><td>6 lb</td><td>heavy, reach, two-handed</td><td>0.9 gp</td><td>4 workdays</td><td>20.9 gp</td><td>32.4 gp</td>
+                </tr>
+                <tr>
+                  <td>Lance</td><td>Martial</td><td>wood, steel</td><td>1d12 piercing</td><td>6 lb</td><td>reach, special</td><td>0.9 gp</td><td>4 workdays</td><td>20.9 gp</td><td>34.5 gp</td>
+                </tr>
+                <tr>
+                  <td>Longsword</td><td>Martial</td><td>steel</td><td>1d8/1d10 slashing</td><td>3 lb</td><td>versatile</td><td>0.6 gp</td><td>7 workdays</td><td>35.6 gp</td><td>53.4 gp</td>
+                </tr>
+                <tr>
+                  <td>Maul</td><td>Martial</td><td>wood, steel</td><td>2d6 bludgeoning</td><td>10 lb</td><td>heavy, two-handed</td><td>1.5 gp</td><td>1 workday</td><td>6.5 gp</td><td>11.1 gp</td>
+                </tr>
+                <tr>
+                  <td>Morningstar</td><td>Martial</td><td>steel</td><td>1d8 bludgeoning</td><td>4 lb</td><td>-</td><td>0.8 gp</td><td>2 workdays</td><td>10.8 gp</td><td>15.7 gp</td>
+                </tr>
+                <tr>
+                  <td>Pike</td><td>Martial</td><td>wood, steel</td><td>1d10 piercing</td><td>18 lb</td><td>heavy, reach, two-handed</td><td>0.8 gp</td><td>2 workdays</td><td>10.8 gp</td><td>15.7 gp</td>
+                </tr>
+                <tr>
+                  <td>Rapier</td><td>Martial</td><td>steel</td><td>1d8 piercing</td><td>2 lb</td><td>finesse</td><td>0.4 gp</td><td>14 workdays</td><td>70.4 gp</td><td>102.1 gp</td>
+                </tr>
+                <tr>
+                  <td>Scimitar</td><td>Martial</td><td>steel</td><td>1d6 slashing</td><td>3 lb</td><td>finesse, light</td><td>0.6 gp</td><td>7 workdays</td><td>35.6 gp</td><td>48.1 gp</td>
+                </tr>
+                <tr>
+                  <td>Shortsword</td><td>Martial</td><td>steel</td><td>1d6 piercing</td><td>2 lb</td><td>finesse, light</td><td>0.4 gp</td><td>4 workdays</td><td>20.4 gp</td><td>27.6 gp</td>
+                </tr>
+                <tr>
+                  <td>Trident</td><td>Martial</td><td>wood, steel</td><td>1d6/1d8 piercing</td><td>4 lb</td><td>Thrown (range 20/60), versatile</td><td>0.8 gp</td><td>2 workdays</td><td>10.8 gp</td><td>15.2 gp</td>
+                </tr>
+                <tr>
+                  <td>War pick</td><td>Martial</td><td>wood, steel</td><td>1d8 piercing</td><td>2 lb</td><td>-</td><td>0.3 gp</td><td>2 workdays</td><td>10.3 gp</td><td>15 gp</td>
+                </tr>
+                <tr>
+                  <td>Warhammer</td><td>Martial</td><td>steel</td><td>1d8/1d10 bludgeoning</td><td>2 lb</td><td>versatile</td><td>0.4 gp</td><td>2 workdays</td><td>10.4 gp</td><td>15.6 gp</td>
+                </tr>
+                <tr>
+                  <td>Whip</td><td>Martial</td><td>leather</td><td>1d4 slashing</td><td>3 lb</td><td>ranged, finesse, reach</td><td>12 gp</td><td>1 workdays</td><td>17 gp</td><td>21.3 gp</td>
+                </tr>
+                <tr>
+                  <td>Blowgun</td><td>Martial</td><td>carved wood</td><td>1 piercing</td><td>1 lb</td><td>ranged, Ammunition (range 25/100), loading</td><td>0.5 gp</td><td>1 workdays</td><td>5.5 gp</td><td>6.1 gp</td>
+                </tr>
+                <tr>
+                  <td>Crossbow, hand</td><td>Martial</td><td>wood, steel</td><td>1d6 piercing</td><td>3 lb</td><td>ranged, Ammunition (range 30/120), loading, light</td><td>0.6 gp</td><td>4 workdays</td><td>20.6 gp</td><td>27.9 gp</td>
+                </tr>
+                <tr>
+                  <td>Crossbow, heavy</td><td>Martial</td><td>wood, steel</td><td>1d10 piercing</td><td>18 lb</td><td>ranged, Ammunition (range 100/400), loading, heavy, two-handed</td><td>3.6 gp</td><td>8 workdays</td><td>43.6 gp</td><td>67.6 gp</td>
+                </tr>
+                <tr>
+                  <td>Longbow</td><td>Martial</td><td>wood</td><td>1d8 piercing</td><td>2 lb</td><td>ranged, Ammunition (range 150/600), heavy, two-handed</td><td>0.4 gp</td><td>3 workdays</td><td>15.4 gp</td><td>22.4 gp</td>
+                </tr>
+                <tr>
+                  <td>Net</td><td>Martial</td><td>hemp</td><td>0</td><td>3 lb</td><td>ranged, special, thrown (range 5/15)</td><td>0.1 gp</td><td>2 workdays</td><td>10.1 gp</td><td>10.1 gp</td>
+                </tr>
+              </tbody>
+            </table>
+          </uib-tab>
+          <uib-tab index="9" heading="Magic Items">
+            
+          </uib-tab>
+        </uib-tabset>
+        <!--Conditions, Injuries, Spells, Actions, Cover-->
+      </div>
+    </div>
+</div>

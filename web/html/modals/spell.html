@@ -1,0 +1,12 @@
+<div class="modal-header">
+    <h2>{{spell.title}} <button class="close" type="button" data-ng-click="cancel()">&times;</button></h2>
+</div>
+<div class="modal-body">
+  <h4><strong>{{spell.school}} <span ng-if="spell.level !== 'cantrip'">Level</span> {{spell.level}}</strong><span data-ng-if="spell.ritual">Ritual</span></h4>
+  <p><strong>Casting Time: </strong>{{spell.castingTime}}</p>
+  <p><strong>Range: </strong>{{spell.range}}</p>
+  <p><strong>Components: </strong>{{spell.components}}</p>
+  <p><strong>Duration: </strong>{{spell.duration}}</p>
+  <p><strong>Tags: </strong> <span data-ng-repeat="tag in spell.tags" class="label label-info" style="margin-right:4px;">{{tag}}</span></p>
+  <div marked="spell.description"></div>
+</div>
