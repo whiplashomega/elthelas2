@@ -1,0 +1,10 @@
+{
+  "model": "User",
+  "documents": [
+    {
+      "username": "whiplashomega",
+      "password": "beta2gamma",
+      "admin": true
+    }
+  ]
+}

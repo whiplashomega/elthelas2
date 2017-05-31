@@ -89,7 +89,7 @@ gulp.task('historyjson', function () {
     historyarray.push(event);
   });
   if(historyarray.length === files.length) {
-    fs.writeFile("./dev/json/history.json", JSON.stringify(historyarray), "utf-8");
+    fs.writeFile("./json/history.json", JSON.stringify({ "model": "History", "documents": historyarray}), "utf-8");
   }
   return true;
 });
@@ -128,14 +128,14 @@ gulp.task('spellsjson', function() {
     spellarray.push(spell);
   });
   if(spellarray.length === files.length) {
-    fs.writeFile("./dev/json/spells.json", JSON.stringify(spellarray), "utf-8");
+    fs.writeFile("./json/spells.json", JSON.stringify({ "model": "Spell", "documents": spellarray }), "utf-8");
   }
   return true;
 });
 
 
 gulp.task('jsoncompile', function() {
-  function compiledir(sourcedir, destination) {
+  function compiledir(sourcedir, destination, modelName) {
     var files = fs.readdirSync(sourcedir);
     var comparray = [];
     files.forEach(file => {
@@ -147,16 +147,16 @@ gulp.task('jsoncompile', function() {
         console.log(e.name + ": " + e.message);
       }
     });
-    fs.writeFile(destination, JSON.stringify(comparray), "utf-8");
+    fs.writeFile(destination, JSON.stringify({ "model": modelName, "documents": comparray }), "utf-8");
   }
   //gods
-  compiledir("./data/gods", "./dev/json/gods.json");
+  compiledir("./data/gods", "./json/gods.json", "God");
   //races
-  compiledir("./data/races", "./dev/json/races.json");
+  compiledir("./data/races", "./json/races.json", "Race");
   //organizations
-  compiledir("./data/organizations", "./dev/json/organizations.json");
+  compiledir("./data/organizations", "./json/organizations.json", "Organization");
   
-  compiledir("./data/divines", "./dev/json/divines.json");
+  compiledir("./data/divines", "./json/divines.json", "Divine");
   return true;
 });
 

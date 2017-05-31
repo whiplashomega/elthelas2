@@ -3,8 +3,9 @@ var express        = require('express');
 var app            = express();
 var bodyParser     = require('body-parser');
 var methodOverride = require('method-override');
-//var mongoose = require('mongoose');
-
+var mongoose = require('mongoose');
+var seeder = require('mongoose-seed-plus');
+var User = require('./app/models/user');
 // configuration ===========================================
 
 // config files
@@ -23,7 +24,29 @@ app.start = function() {
     }
     // connect to our mongoDB database 
     // (uncomment after you enter in your own credentials in config/db.js)
-    //mongoose.connect(db.url); 
+    mongoose.connect(db.url); 
+    
+    //detect preexisting data and seed the database if not found
+    User.find({}, function(err, user) {
+        if(err) throw err;
+        if(user.length > 0) {
+           //we are good
+           return;
+        } else {
+           //seed the database
+            seeder.start(__dirname + './json', [
+                /**
+                 * @path (string, required) : path to model
+                 * @name (string, required) : name of model
+                 * @clear (boolean, required) : clear DB collection flag
+                 */
+                 { path: 'models/divines.js', name: 'Divine', clear: true },
+                 { path: 'models/gods.js', name: 'God', clear: true },
+                 { path: 'models/history.js', name: 'History', clear: true },
+                 { path: 'models/user.js', name: 'User', clear: true }
+            ]);
+       }
+    });
     
     // get all data/stuff of the body (POST) parameters
     // parse application/json 
