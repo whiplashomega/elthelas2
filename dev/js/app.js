@@ -206,7 +206,21 @@
            data: { title: "History"}
        });
        $locationProvider.html5Mode(true);
-    }]);
+    }]).state('app.classes', {
+      url: 'ref/class',
+      views: {
+        'content@': {
+          templateUrl: '/html/content/options/classes.html',
+          controller: 'ClassController'
+        },
+        'head@': {
+          templateUrl: '/html/head/classes.html'
+        },
+        'sidebar@': {
+          templateUrl: '/html/sidebar/options.html'
+        }
+      }
+    });
         
     
 })(jQuery, angular);

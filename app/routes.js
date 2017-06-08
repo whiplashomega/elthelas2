@@ -1,4 +1,4 @@
-
+/* globals appRoot */
 
     module.exports = function(app, staticDir) {
 
@@ -82,7 +82,7 @@
         // frontend routes =========================================================
         // route to handle all angular requests
         app.get('*', function(req, res) {
-            res.sendfile('.'+staticDir+'/index.html'); // load our public/index.html file
+            res.sendFile(appRoot+staticDir+'/index.html'); // load our public/index.html file
         });
 
     };

@@ -12,7 +12,8 @@ var User = require('./app/models/user');
 var db = require('./config/db');
 
 // set our port
-
+var path = require('path');
+global.appRoot = path.resolve(__dirname);
 
 app.start = function() {
     var port = process.env.PORT || 8080; 
@@ -40,10 +41,13 @@ app.start = function() {
                  * @name (string, required) : name of model
                  * @clear (boolean, required) : clear DB collection flag
                  */
-                 { path: 'models/divines.js', name: 'Divine', clear: true },
-                 { path: 'models/gods.js', name: 'God', clear: true },
-                 { path: 'models/history.js', name: 'History', clear: true },
-                 { path: 'models/user.js', name: 'User', clear: true }
+                 { path: 'app/models/divines.js', name: 'Divine', clear: true },
+                 { path: 'app/models/gods.js', name: 'God', clear: true },
+                 { path: 'app/models/history.js', name: 'History', clear: true },
+                 { path: 'app/models/organizations.js', name: 'Organization', clear: true },
+                 { path: 'app/models/races.js', name: 'Race', clear: true },
+                 { path: 'app/models/spells.js', name: 'Race', clear: true },
+                 { path: 'app/models/user.js', name: 'User', clear: true }
             ]);
        }
     });
