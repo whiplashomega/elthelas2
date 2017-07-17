@@ -1,0 +1,21 @@
+{
+  "name": "Falak",
+  "nation": "Dormania",
+  "population": 20000,
+  "metro": 40000,
+  "majority": "Imperial Humans",
+  "ruling": "Imperial Humans",
+  "minorities": [
+    "Halflings",
+    "Elathian Gnomes"
+  ],
+  "exports": [],
+  "landmarks": [
+    {
+      "name": "The Imperial Harbor",
+      "description": ""
+    }
+  ],
+  "coords": [66.2, 163.3],
+  "description": "The northern port and trading hub Falak sits at the mouth of the Dorman river, and as such acts as the gateway between Desadorel and the rest of the world.  While the decline of the Imperial capitol has likewise led to a consequent decline in Falak's importance, it remains a bustling trade hub."
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Forbel",
+  "nation": "Malinval",
+  "population": 75000,
+  "metro": 300000,
+  "majority": "Grunt Orcs",
+  "ruling": "High Orcs",
+  "minorities": [
+    "High Orcs",
+    "Goblins",
+    "Hobgoblins"
+  ],
+  "exports": [
+    "Grain",
+    "Meat Livestock"
+  ],
+  "landmarks": [],
+  "coords": [-8.4, 65.4],
+  "description": "The magical effect that keeps rain from falling on the Desert of Despair, means that an abundance of it falls on the lands just beyond. The local orcs use this bounty to grow feed year round that in turn is used to raise huge farms full of livestock.  These livestock are loaded onto ships in Forbel and shipped down to Marinval, Gulutheim, and Makir, as well as driven northward to the battlefronts in the Golden Pass and beyond.\n\nCombine this with the large rear military encampments in and around the city, and it generates a great deal of wealth for the local warlord and his family, which has quickly become one of the wealthiest in Malinval (second perhaps only to the Warlord of Parakas who supplies the armies with steel). The warlord of Forbel was also one of the first to get behind the ascendency of the Prince of Fiends, sensing that a renewed war effort against the alliance would provide a substantial windfall for his territory."
+}

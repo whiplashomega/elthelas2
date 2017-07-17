@@ -1,0 +1,27 @@
+{
+  "name": "",
+  "coords": [],
+  "border-coords": [],
+  "color": "",
+  "map": "",
+  "capitol": "",
+  "cities": [],
+  "landmarks": [],
+  "borders": [],
+  "population": 0,
+  "populationDistribution": [{
+    "race": "",
+    "proportion": 0
+  }],
+  "government": "",
+  "ruler": "",
+  "history": "",
+  "gods": [],
+  "worship": "",
+  "culture": "",
+  "economics": "",
+  "slavery": "",
+  "magic": "",
+  "property": "",
+  "citizenship": ""
+}

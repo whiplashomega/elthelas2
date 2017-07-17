@@ -1,0 +1,43 @@
+{
+  "name": "Olda",
+  "coords": [-17,-2],
+  "border-coords": [],
+  "color": "#FFFF00",
+  "map": "/images/maps/nations/Olda.jpg",
+  "capitol": "Diya",
+  "cities": ["Punbar", "Barak"],
+  "landmarks": [],
+  "borders": ["Shendarel", "Eldoran", "Gnarra", "Morrindim", "Malinval"],
+  "population": 3500000,
+  "populationDistribution": [{
+    "race": "Goblins",
+    "proportion": 0.65
+  },
+  {
+    "race": "Kobolds",
+    "proportion": 0.20
+  },
+  {
+    "race": "Trollkin",
+    "proportion": 0.04
+  },
+  {
+    "race": "High Orcs",
+    "proportion": 0.04
+  },
+  {
+    "race": "Grunt Orcs",
+    "proportion": 0.07
+  }],
+  "government": "Olda is ruled by a loose confederation of High Orc nobility and landowners, who occasionally fight among themselves but for the most part seek to enrich themselves by exploiting the large slave population. On the occasions that they feel the country in total is threatened, they will meet in congress and appoint a warlord to lead them, but this has not happened in almost 70 years, as they consider the threat from Shendarel to be a joke (given Shendarel's population is about that of the High Orcs' trollkin mercenaries alone).",
+  "ruler": "",
+  "history": "Olda for most of history has been a fractured land. The orcs, goblins, and kobolds that lived there were once all slaves to various warring creatures, including Nagas, a group of Giants, and a rogue remaining Sorceron. A group of five mighty High Orc heroes changed all of this, managing to fight and kill their masters. The surviving Nagas were forced into the jungles and swamps, while the giants were wiped out, and the Sorceron killed. These 5 heroes are the ancestors of the modern High Orc nobility, and seeing (in their way) that the natural state of the goblins and kobolds at least was indeed slavery, they set out to be 'benevolent' masters and formed a compact of mutual defense. Soon after, as the population of slaves began to expand, they began importing their first trollkin mercenaries to keep them in check.",
+  "gods": ["Mat'raktha", "Maris", "Voodoo Hedge Gods"],
+  "worship": "To underestimate the power of the High Orc rulers would be a serious mistake, and priests do not practice in the country without the local lords approval, except for voodoo witches among the goblin and kobold slaves. Among the slaves no one has ever had a chance to hear much about any of the real Gods (and it all sounds like hogwash anyway, right?), so they rely on voodoo when they need divine aid, and worship a local pantheon of hedge gods that changes between local areas, sometimes as quickly as the next plantation over. The orcs tend to worship Mat'raktha or Maris, while the Trollkin tend to be antitheistic.",
+  "culture": "The high orcs tend to be highly cultured people, with many esoteric practices to keep the peace among themselves, while the Trollkin are there to do a job, and the slaves are more direct. The high orcs live in large mansions, with small houses nearby for their mercenaries and mud brick huts where the slaves live, surrounded by large plantations of rice, grapes, olives, and silkworms. The cities tend to be tiered, with the inner core of the city being the homes of the wealthy, ringed by the smaller homes of the mercenaries and large workhouses where finished products are made for sale. The outer ring of the cities are vast slums inhabited by slaves. Slaves are magically branded so that everyone knows who they belong to.",
+  "economics": "Olda is overall an incredibly wealthy state, exporting large amounts of rice, wine, silk, gems, and other luxury goods produced on the plantations and in the workhouses. However, this wealth is highly concentrated in a small percentage of the population, making that population incredibly wealthy indeed. It is estimated that the top 6 wealthiest people in the world are all High Orc lords living in Olda, and that is including Kings and Emperors.",
+  "slavery": "Slavery is the standard practice in Olda, and 9 in 10 residents are slaves. All goblins and kobolds in the country are either slaves, or are considered available for capture as slaves.",
+  "magic": "The High Orcs are big fans of learning and study, and many of them take up wizardry or other magical arts to impress the neighbors if nothing else.",
+  "property": "Ownership laws and property laws were outlined in the compact and have not changed since. Disputes of property are typically handled by a conference of local landowners. Occasionally disputes will lead to highly ritualized duels, usually to the first blood. If the issue remains unresolved, or if vengeance is sought, local wars do occasionally break out. The ownership of slaves is restricted to orcs, and the ownership of land to orcs and those in their service.",
+  "citizenship": "Political activity is restricted to Orcs in Olda by custom."
+}

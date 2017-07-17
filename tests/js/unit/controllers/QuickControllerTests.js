@@ -2,14 +2,14 @@
 
 describe('Quick Controller Tests', function() {
   var service, $q, deferred, $scope, controller;
-  var resolveObject = { data: [{
+  var resolveObject = { data: { documents: [{
     "title": "Test Spell",
     "level": "level1",
     "school": "conjuration",
     "castingTime": "1 action",
     "duration": "1 round",
     "tags": ["ritual", "wizard"]
-  }]};
+  }]}};
   beforeEach(module('elthelas'));
   
   beforeEach(inject(function($controller, _$q_, _$rootScope_, SpellProvider) {

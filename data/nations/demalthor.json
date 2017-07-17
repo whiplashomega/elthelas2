@@ -1,0 +1,35 @@
+{
+  "name": "Demal Thor",
+  "coords": [20,55],
+  "border-coords": [],
+  "color": "#FFFF00",
+  "map": "/images/maps/nations/Demal Thor.jpg",
+  "capitol": "Aridhem",
+  "cities": [],
+  "landmarks": ["Moon Pass", "Blighted Gap", "Fortress of Light", "Golden Pass", "Glass Cliff"],
+  "borders": ["Eldoran", "Malinval", "Curinor", "Gerasalim"],
+  "population": 500000,
+  "populationDistribution": [{
+    "race": "Moon Elves",
+    "proportion": 0.9
+  },
+  {
+    "race": "Wood Elves",
+    "proportion": 0.05
+  },
+  {
+    "race": "Half-Elves",
+    "proportion": 0.04
+  }],
+  "government": "Demal Thor is governed by a confederation of tribes. The chiefs meet yearly at Aridhem to discuss disputes and determine each tribes contribution to the forts in the Golden Pass, the Fortress of Light, and other border forts along the gap.",
+  "ruler": "",
+  "history": "The Moon Elves were originally Wood Elf settlers who took to the grasslands on what was then the far eastern edge of Eldoran as hunter-gatherers. As the closest elves to the humans, dwarves, and orcs, they routinely took the brunt of most wars waged by the homeland. After yet another war with the dwarves over the Mithril Hills led to the destruction of several of their tribes, the Moon Elves declared independence. While they are part of the Alliance of 6 Nations and are the defenders of the Golden Pass against the orcs, the Moon Elves find the situation much preferable to what they had before.\n\nCurrently the Moon Elves are struggling as a people. The recent orcish advance has sent several waves of armies through the Golden Pass, bypassing the Fortress of Light, while another Orc army pins down the bulk of Alliance forces in an endless siege at the blighted gap. The proud fortresses that once defended the pass are now little more than rubble, and Aridhem is an occupied city. The tribes themselves are scattered, disorganized, and without help may soon face extinction.",
+  "gods": ["Maris", "Sylvan", "Gaian"],
+  "worship": "Each tribe usually has 3 priests that share a mobile temple, each priest dedicated to a different God. The temples are simple affairs where the moon elves visit to pray and make offerings before undertaking difficult tasks or journeys.",
+  "culture": "The Moon Elves of Demal Thor are wandering hunter gatherers who follow the herds of buffalo through their land. They are used to a rough life living in tents, and differ significantly from other elves in their necessarily pragmatic outlook on life. The only permanent settlement in Demal'Thor, the capital Aridhem, is only sparsely populated most of the year.",
+  "economics": "While the economy of Demal Thor is primarily subsistence they do export ivory and leather goods, as well as the eastern world's fastest horses.",
+  "slavery": "Slavery is illegal in Demal Thor.",
+  "magic": "Local mages are given duties to support their tribe, outsider mages are viewed with suspicion but not strictly prohibited from practicing their craft.",
+  "property": "Land cannot be owned in Demal Thor except by tribes. Family groups will typically own their own tents and supplies however. Food from hunts is distributed evenly among those who participated and their families, with a small portion for orphans, the tribes priests, and the disabled.",
+  "citizenship": "Non elves are not allowed tribal membership in Demal Thor, Elves who are not born into a tribe and wish to join usually have to prove their loyalty to that tribe."
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Dera",
+  "coords": [26,-125],
+  "border-coords": [],
+  "color": "#FFFF00",
+  "map": "/images/maps/nations/Dera.jpg",
+  "capitol": "Dera",
+  "cities": [],
+  "landmarks": ["Veldt", "Demon Peaks"],
+  "borders": ["Dera'Dragorim"],
+  "population": 5000,
+  "populationDistribution": [{
+    "race": "Fey'ri",
+    "proportion": 1
+  }],
+  "government": "Dera today is ruled by a council of elder fey'ri.",
+  "ruler": "",
+  "history": "Dera once was a mighty empire, and its capitol city the jewel of the west until a climactic invasion by demons occured. Those who survived fled to a chain of islands to the east, forming the nation of Dera'Dragorim. However, an enclave of elves was among the first to be attacked. They were enslaved by the demons, and the women repeatedly raped. When the demons were driven back, the elves managed to escape. Yet the damage to their bloodlines was done. The women bore half-breed children, and the trauma of that birth left most of them infertile. The half-breeds were viable however, and within a couple of genrations there was not a child born that did not have at least some demon blood. Fearing retribution by others if they tried to reintegrate with common societies, they fled to the ancient sewers of the once great capitol. they remain there to this day, living in squalor, fearful to come out into the light of day.",
+  "gods": [],
+  "worship": "The Fey'ri are mostly antitheistic. They particularly revile Bahamut for not saving them from ruin when he rescued the human peoples of Dera.",
+  "culture": "The Fey'ri are generally not a kind people. They tend towards evil more than most people due to the influence of their blood. They are cruel towards failure and seek power over their peers.",
+  "economics": "The Fey'ri have a subsistence economy, hunting the creatures of the sewers and growing whatever they can(largely things like mushrooms) where sunlight filters down from the ruins above. Gifted mages among them often use their talents to create basic necessities of living more than grand arcane art.",
+  "slavery": "The Fey'ri do not have enough strength to take slaves, yet most have no moral objection.",
+  "magic": "Magic is not regulated among the Fey'ri, and they tend to be gifted sorcerers.",
+  "property": "Property is minimally protected, but can be taken through challenge.",
+  "citizenship": "Fey'ri are distrustful of outsiders, and are more likely to kill strangers in their land then even talk with them."
+}

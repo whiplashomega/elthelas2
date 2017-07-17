@@ -25,9 +25,10 @@
     "angular-mocks": "^1.6.3",
     "jasmine-jquery": "^2.1.1",
     "angular-ui-router": "^0.4.2",
-    "Leaflet.label": "^0.2.1",
+    "leaflet": "^1.0.0",
     "angular-sanitize": "^1.6.3",
-    "angular-cookies": "^1.6.3"
+    "angular-cookies": "^1.6.3",
+    "angular-timelinejs3": "^0.2.3"
   },
   "devDependencies": {
     "jasmine-core": "jasmine#^2.5.2",

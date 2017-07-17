@@ -1,0 +1,18 @@
+{
+  "name": "Damat",
+  "nation": "Alfadir",
+  "population": 20000,
+  "metro": 90000,
+  "majority": "Staelic Humans",
+  "ruling": "Staelic Humans",
+  "minorities": [
+    "Strongheart Halflings",
+    "Hisru Humans",
+    "Stagen Gnomes",
+    "Morrind Dwarves"
+  ],
+  "exports": [],
+  "landmarks": [],
+  "coords": [-57.1, -102.3],
+  "description": "Damat is emblematic of Alfadiran life.  The town is incredibly wealthy by international standards.  Sitting at the mouth of the Dir river it has control over trade between all of southern stagenheim and alfadir and the rest of the world.  Nevertheless it's wealth is dwarfed by the Alfadiran cities on the Alf river to the north, and so it has developed something of an inferiority complex.\n\nTaxes in Damat are much higher than the rest of Alfadir, and these funds are used to create large public works projects beyond what is really necessary for a city of its size.  As a result, the streets are all cobblestone, massive stone piers jut into the river and ocean, usually barely half full with ships.  The local governors palace is actually larger than the Crystal Palace in Dieel, and undergoes regular expansion even though whole wings of the palace currently go unused."
+}

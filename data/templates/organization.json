@@ -1,14 +1,14 @@
 {
-  id: "",
-  title: "",
-  description: "",
-  nations: [
+  "id": "",
+  "title": "",
+  "description": "",
+  "nations": [
   
   ],
-  cities: [
+  "cities": [
   
   ],
-  tenets: [],
+  "tenets": [],
   "level1": "",
   "level10": ""
 }

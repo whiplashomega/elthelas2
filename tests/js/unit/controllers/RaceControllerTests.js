@@ -7,7 +7,7 @@
 
 describe('Race Controller Tests', function() {
   var service, $q, deferred, $scope, controller;
-  var resolveObject = { data: [
+  var resolveObject = { data: { documents: [
     {
     id: "tieflings",
     name: "Tieflings",
@@ -102,7 +102,7 @@ describe('Race Controller Tests', function() {
       "weightroll": "1d6"
     }
   ]
-}]};
+}]}};
   beforeEach(module('elthelas'));
   
   beforeEach(inject(function($controller, _$q_, _$rootScope_, raceProvider) {

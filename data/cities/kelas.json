@@ -1,0 +1,15 @@
+{
+  "name": "Kelas",
+  "nation": "Staelia",
+  "population": 0,
+  "metro": 0,
+  "majority": "Staelic Human",
+  "ruling": "Staelic Human",
+  "minorities": [
+    "Strongheart Halfling"
+  ],
+  "exports": [],
+  "landmarks": [],
+  "coords": [-64.4, -75.5],
+  "description": ""
+}

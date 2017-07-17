@@ -1,0 +1,39 @@
+{
+  "name": "Dragonhome",
+  "coords": [0,-130],
+  "border-coords": [],
+  "color": "#FFFF00",
+  "map": "",
+  "capitol": "",
+  "cities": [],
+  "landmarks": ["Dragonhome Mountains"],
+  "borders": ["Dera", "Riftlan Wilds", "Zelfir"],
+  "population": 50000,
+  "populationDistribution": [{
+    "race": "Dragons (metallic)",
+    "proportion": 0.25
+  }, 
+  {
+    "race": "Dragons (chromatic)",
+    "proportion": 0.05
+  }, 
+  {
+    "race": "Dragonborn",
+    "proportion": 0.35
+  }, 
+  {
+    "race": "Deran Humans",
+    "proportion": 0.25
+  }],
+  "government": "The dragonhome does not have a single government, rather families and clans of dragons are ruled over by the eldest of the tribe, and each dragon has complete autonomy in their dealings with their vassals.",
+  "ruler": "",
+  "history": "In the early days of the world, dragons were much more common, and lived in many far flung places. After the fall of Dera, however, Bahamut declared the mountains between the east coast of Riftlan and the central Veldt, \"Dragonhome\", and a great migration of metallic and even some chromatic dragons followed. Roosts, dens and dungeons were built and established throughout the vast mountain ranges to house the dragons and their descendents.",
+  "gods": ["Bahamut", "Tiamat"],
+  "worship": "Dragons worship their Gods as Greatest Among Equals, rather than as lords never to be disobeyed, however they enforce a much stricter worship on their humanoid servants and vassals, who congregate regularly in shrines and temples to their lords respective Gods.",
+  "culture": "Humanoids in dragonhome are almost all vassals of one dragon or another, or occasionally to a particular family or clan. As such, almost all decisions of note are made by the dragons, and everything from the sizes of entryways (huge), to the methods of travel (no roads, one is expected to fly between roosts) cater to the particular ways of dragons.",
+  "economics": "Dragons are jealous creatures who often collect treasures, but the art of buying and selling is not typical among them. The vassals of the dragons will often collect scales, bones, and other pieces of their masters that are shed or from the dead, and trade them abroad to obtain goods for their own subsistence or treasures desired by their masters.",
+  "slavery": "While metallic dragons view slavery as evil, their vassals have little freedom and do not get paid (dragon society does not have a concept of work for payment, rather it is considered a duty to serve). Nevertheless, all vassals to metallic dragons are nominally there by choice. Chromatic dragons have no such misgivings, and will often force those they can into bondage, hunting those who try to escape.",
+  "magic": "There are no laws or particular customs concerning magic in Dragonhome, though all dragons have some sorcerous talent.",
+  "property": "A dragon is considered to own his den or roost, and there are a great many customs that must be abided by when visiting a neighbor.",
+  "citizenship": "Because there is no central government there is no concept of citizenship, however, long term survival invariably requires declaring oneself a vassal to an established dragon."
+}

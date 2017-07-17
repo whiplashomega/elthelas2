@@ -1,0 +1,39 @@
+{
+  "name": "Kandor",
+  "coords": [65,91],
+  "border-coords": [],
+  "color": "#FFFF00",
+  "map": "/images/maps/nations/Kandor.jpg",
+  "capitol": "Kaland",
+  "cities": ["Westport", "Purs"],
+  "landmarks": [],
+  "borders": ["Curinor", "Gerasalim", "Dormania"],
+  "population": 2800000,
+  "populationDistribution": [{
+    "race": "Imperial Humans",
+    "proportion": 0.85
+  },
+  {
+    "race": "Half-Dwarves",
+    "proportion": 0.08
+  },
+  {
+    "race": "Plains Dwarves",
+    "proportion": 0.05
+  },
+  {
+    "race": "Hill Dwarves",
+    "proportion": 0.03
+  }],
+  "government": "Kandor's feudal system is corrupt and oppressive, but nevertheless stable. Of all the nations on the Elathian continent, Kandor is the most separated from war, and it shows. The nobility are rarely soldiers, and tend towards extravagant displays of wealth, while their serfs suffer. The king is weak, plagued by nobles who vie for his throne, and the throne regularly changes hands between houses. Laws tend to be draconian, and vary by the fief, while the King's jurisdiction barely extends beyond Kaland.",
+  "ruler": "",
+  "history": "Kandor got its start as a part of the Dormanian Empire. When Emperor Dorman I marched through the territory that now makes up Kandor, he found it a hodgepodge of minor kingdoms many of which were practically vassals to the nearby dwarven power in Curinor. In a series of lightning wars he conquered the vassal kingdoms, and managed several key victories against the dwarves, managing to push them back deep into their mountains, and take control of several holds. By the time his empire began to succumb to corruption there was little thought in the dwarven kingdom that those holds could be retaken. The first King of Kandor was actually an appointee of Emperor Dorman V, a weak ruler who thought to consolidate the heart of the Empire while letting the corrupt northwest go its own way.",
+  "gods": ["Alohim", "Sara", "Dorman", "Dorun"],
+  "worship": "Kandor is one of three nations to worship Dorman, the ascended first Emperor of the Dormanian Empire, the conqueror and the law bringer. At least officially they worship Dorman. In practice it is a lesser cult with few followers except among those nobles that hope to claim some kind of descent. In practice most of the nobility worship Alohim, while the serfs pray to Sara for plentiful harvests so that they can avoid the wrath of their masters and feed their families. The Dwarves in their small mountain holds worship Dorun.",
+  "culture": "",
+  "economics": "Economically, Kandor is a rural agriculturally based country that imports most finished goods. Its trade ties to Curinor cannot be over-emphasized, as the dwarves require regular imports of food to support their people, while they export large amounts of finished goods, particularly metalwork.",
+  "slavery": "Slavery is illegal, technically, but contracts of serfdom are commonplace, and such contracts are hereditary.",
+  "magic": "There is a small college of wizardry in Kaland, and a slightly larger one in Westport, but mages in Kandor tend to be reclusive, and the Kandori distrustful of them. Most mages try to avoid the more rural areas of the country, where 'disappearances' happen with frightening regularity.",
+  "property": "Property can be held by anyone who is not a serf, so long as the purchase and sale are approved by the local liege lord, who still has a certain amount of property rights over all land within his domain, such as the right to quarter troops, enforce taxation, or confiscate property for the 'good of the state'.",
+  "citizenship": "People not of Kandori descent are distrusted, although humans from Gerasalim or Dormania generally less so than others. Dwarves and Half-Dwarves can have partial citizenship status (the right to own property essentially) if they are born in one of the dwarf enclaves or holds within the country."
+}

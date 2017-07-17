@@ -1,0 +1,35 @@
+{
+  "name": "Morrindim",
+  "coords": [-45,-20],
+  "border-coords": [],
+  "color": "#FFFF00",
+  "map": "/images/maps/nations/Morrindim.jpg",
+  "capitol": "Morrind",
+  "cities": ["Alados", "Marinda"],
+  "landmarks": ["Serpent's Spine"],
+  "borders": ["Gnarra", "Eldoran", "Olda", "Malinval", "Degak'Ta", "Nerim"],
+  "population": 600000,
+  "populationDistribution": [{
+    "race": "Morrind Dwarves",
+    "proportion": 0.94
+  },
+  {
+    "race": "Deran Humans",
+    "proportion": 0.03
+  },
+  {
+    "race": "Neran Humans",
+    "proportion": 0.02
+  }],
+  "government": "The Nation of Morrindim is a republic governed by the council of captains. With a grand admiral who acts as a high judge. Matters on board a ship are handled by the captain as absolute ruler. The council of captains is made up of all the captains in the Morrindim fleet, in total something like 5000 souls.",
+  "ruler": "",
+  "history": "After the God's War a small group of dwarves found themselves marooned on an island far away from any other land. Over time they developed ships and took to the sea seeking other dwarves, however, by the time they did they found that they had adapted to the sea as most dwarves to their mountain homes. Since then the Morrindim have been generally neutral in wars (although they have had a few with Dera'Dragorim over trade rights) and generally trade peacefully with anyone. Including the orcish nations and others.",
+  "gods": ["Maris", "Trimala", "Dorun"],
+  "worship": "Maris and Trimala have the largest cults in Morrind, relating to their extreme dependence on trade and the seas. However, they also pay service regularly to Dorun, the patron God of the dwarves.",
+  "culture": "All of Morrind culture, even those on land, relates strongly to that of shipboard discipline. One obeys ones captain absolutely, and punishments tend to be severe. Loyalty is likewise strong among the Morrind. Morrind dwarves who live on land are still organized into 'ships' of 150-300 people who are commanded by a captain.",
+  "economics": "the Morrind are highly dependent on trade for their welfare, however they do produce a few goods for export, including advanced ships and fine porcelain.",
+  "slavery": "Slavery is illegal among the Morrind, but respect for others customs and ways is common, and people with slaves who come on board a Morrind ship are respected.",
+  "magic": "Magic is forbidden except by permission of the captain. Nevertheless most ships have a sorcerer or wizard on board.",
+  "property": "Personal property is generally limited to what can be carried in a chest. Land, ships, and other large items are owned by the captains, however, profits from ventures are distributed strictly throughout the crew by law, where the captain gets 5% and the rest is divided evenly.",
+  "citizenship": "Anyone who is accepted into a ships crew is considered a citizen.  Any Morrind citizen who purchases and outfits a ship or productive enterprise is considered a 'captain' and has voting rights in the council."
+}

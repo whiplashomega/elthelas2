@@ -1,0 +1,43 @@
+{
+  "name": "Gerasalim",
+  "coords": [40,110],
+  "border-coords": [],
+  "color": "#FFFF00",
+  "map": "/images/maps/nations/Gerasalim.jpg",
+  "capitol": "Strovenguard",
+  "cities": ["Eastguard", "Northport"],
+  "landmarks": ["Fortress of Light", "Blighted Gap", "Black Shard Pass", "Saria Lake", "World Crack"],
+  "borders": ["Malinval", "Curinor", "Kandor", "Dormania"],
+  "population": 4200000,
+  "populationDistribution": [{
+    "race": "Imperial Humans",
+    "proportion": 0.75
+  },
+  {
+    "race": "Half-Elves",
+    "proportion": 0.1
+  },
+  {
+    "race": "Lightfoot Halflings",
+    "proportion": 0.06
+  },
+  {
+    "race": "Moon Elves",
+    "proportion": 0.04
+  },
+  {
+    "race": "Plains Dwarves",
+    "proportion": 0.04
+  }],
+  "government": "Gerasalim is ruled by an elected king, who rules for life and who appoints local governors.",
+  "ruler": "Queen Organa Mataelin. 43 years old, previously a renowned Cleric of Cora and General of the 5th Legion, stationed at Eastguard.",
+  "history": "The territory that is Gerasalim was made up of several small kingdoms with a loose alliance set in defense against the orcish threat before the invasion by Dorman the First. In fact, just before the invasion Dorman signed onto the alliance and promised his legions. Depending on the historical perspective, either the smaller kingdoms broke the alliance by not reinforcing Dorman's legions, or Dorman did by instead turning his legions against the kingdoms. Whatever the cause, the end result was the total conquest of the entire area by Dorman's ever-victorious legions, who then continued their expansion south into Malinval.\n\nSeveral generations later, with the orcs in a phase of expansion and Dorman V too obsessed with court politics to commit serious resources to guarding the southern border, the people in the south western portion of his empire rose up in mass rebellion. Electing a king from among the local generals, they defeated those garrisons that would not turn, and then threw back the orcish invaders. While in the present day relations with Dormania are friendly, it took several generations and renewed commitments to aid in the defense of the southern borders for that normalization to happen.",
+  "gods": ["Cora", "Dorman", "Bahamut", "Amathera", "Sara"],
+  "worship": "Gerasalim has a surprising variety of worship methods among its people. However there are certain themes to the Gods that find favor. The militaristic natures of Cora, Dorman, and Bahamut lend themselves well to the militaristic nature of Gerasaline society. At the same time Amathera and Sara lend themselves well to worship by the poorer agrarian segment of society.",
+  "culture": "Gerasalim is a highly militaristic country, and the heart of the Alliance of 6 Nations that led to the founding of the Fortress of Light. It sends the most soldiers to fight, and die, at the border forts with Malinval of any country, and its people see the war as one of both liberation and survival. All young people without children between the ages of 17 and 22 are required to serve in the military according to their talents. Clerics and Wizards must also serve 3 additional years upon completion of their training.",
+  "economics": "Gerasalim's economy is primarily agrarian, as they have ample supplies of water, but poor trade connections due to being landlocked. Only Northport has an easy to reach river connection that does not lead through orc-held territories. Nevertheless there are some mines along the southern and eastern edges of the country. Gerasalim exports grain northward and westward out of Northport and into Curinor and Demal Thor.\n\nThe country is subsidized somewhat by the other kingdoms of the alliance, who have armies stationed on Gerasaline soil that require supplies, most easily obtained locally from Gerasalim's merchants.\n\nGerasalim's smiths and craftsman are of average quality, with a few masters practicing in the major cities and working for the armies. It can be hard to find craftsmen experienced with unusual materials.",
+  "slavery": "Slavery is illegal in Gerasalim.",
+  "magic": "Magical training is encouraged but regulated. There is a major college of wizardry at Strovenguard and the king supplies scholarships to young men and women who show particular aptitude. Nevertheless, all wizards must serve an extended period in the military, and obtain a license to practice within Gerasalim.",
+  "property": "Any citizen can own property within Gerasalim, but the king and local governors have extensive rights of eminent domain, particularly for military purposes.",
+  "citizenship": "Anyone born within Gerasalim's borders is considered a citizen. However, naturalization can only be obtained by declaration of the king, usually due to extraordinary service within the military. Noncitizens have limited rights, in that they cannot own land, or graze more than 3 animals on public land, nor vote in elections for King. Noncitizens also do not have the right of appeal to the King, although few citizens ever have their appeal heard."
+}

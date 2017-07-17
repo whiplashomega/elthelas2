@@ -1,0 +1,17 @@
+{
+  "name": "North Port",
+  "nation": "Gerasalim",
+  "population": 0,
+  "metro": 0,
+  "majority": "Imperial Humans",
+  "ruling": "Imperial Humans",
+  "minorities": [
+    "Half-Elves",
+    "Lightfoot Halflings",
+    "Imperial Gnomes"
+  ],
+  "exports": [],
+  "landmarks": [],
+  "coords": [55, 105.2],
+  "description": ""
+}

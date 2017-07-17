@@ -1,0 +1,15 @@
+{
+  "name": "Ifritan",
+  "nation": "Stagenheim",
+  "population": 0,
+  "metro": 0,
+  "majority": "Stagen Gnomes",
+  "ruling": "Stagen Gnomes",
+  "minorities": [
+    "Child of Molton"
+  ],
+  "exports": [],
+  "landmarks": [],
+  "coords": [-58.1, -64.5],
+  "description": ""
+}

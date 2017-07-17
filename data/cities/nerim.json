@@ -1,0 +1,26 @@
+{
+  "name": "Nerim",
+  "nation": "Nerim",
+  "population": 500000,
+  "metro": 2000000,
+  "majority": "Undead",
+  "ruling": "Undead",
+  "minorities": [],
+  "exports": [],
+  "landmarks": [
+    {
+      "name": "The Royal Palace",
+      "description": "The imposing royal palace sits at the center of the city, seemingly untouched by time, it's spires visible for miles around.  It is an imposing, granite structure, with glass domed roofs and spires shooting hundreds of feet into the air.  Despite the supposed lack of maintainers and the hundreds of years it has been since mortal men lived in the city, the palace remains a gleaming marble structure, apparently untouched by rot or destruction."
+    },
+    {
+      "name": "Temple of Nera",
+      "description": "Once the center of religious life for the entire empire, the Temple of Nera is a large walled complex that sits across The Penitents Plaza from the Royal Palace. "
+    },
+    {
+      "name": "The Underworks",
+      "description": "To support it's massive population, the imperial government built a massive aquaduct and sewer system for the city.  As the population grew, and it    became difficult to continue feeding and supplying the local population, the government put building restrictions on the land at the edges of the city. Migrants responded by building down through the sewer system, creating level upon level of underground towns beneath the city, only loosely governed by the imperial administration. The police would occasionally move in, clear out the residents, and leave again, only to have the same residents move right back in."
+    }
+  ],
+  "coords": [-60, 125],
+  "description": "    Nerim was once the capital of a thriving empire, and had nearly a million residents.  The Nerim Cataclysm, centered in the Royal Palace of the city, left no one alive, but the city entirely intact.  Since then the resulting war, wind, and sand have taken their toll on the city, but its buildings, largely made of bone-white granite, and the similarly constructed underworks, are still mostly intact.\n\n The city is filled with large numbers of roaming undead, who come into and out of the city fruitlessly hunting for living beings to kill, perpetually trapped in a seemingly endless desert, never to die."
+}

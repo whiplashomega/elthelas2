@@ -1,0 +1,22 @@
+{
+  "name": "Poron",
+  "nation": "Dormania",
+  "population": 2000,
+  "metro": 2000,
+  "majority": "Imperial Humans",
+  "ruling": "Imperial Humans",
+  "minorities": [
+    "Morrind Dwarves",
+    "Imperial Gnomes",
+    "Lightfoot Halflings"
+  ],
+  "exports": [],
+  "landmarks": [
+    {
+      "name": "The Great Ramp",
+      "description": ""
+    }
+  ],
+  "coords": [37.7, 144.9],
+  "description": "  Built on reclaimed land at the base of the cliffs bordering the World Crack, at the lower terminus of the Great Ramp, Poron exists as a port town for the larger city of Malidal.  It is a town dominated by merchants and dock workers, and thanks to the forbidding cliffs, it is the only sizable port for hundreds of miles.  This makes it an incredible source of revenue for the Emperor, who charges a sizable port tax for any merchant who docks there."
+}

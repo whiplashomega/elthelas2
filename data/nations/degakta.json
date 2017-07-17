@@ -1,0 +1,35 @@
+{
+  "name": "Degak'Ta",
+  "coords": [-60,60],
+  "border-coords": [],
+  "color": "#FFFF00",
+  "map": "/images/maps/nations/Degak'Ta.jpg",
+  "capitol": "Sunra",
+  "cities": [],
+  "landmarks": [],
+  "borders": ["Morrindim", "Malinval", "Nerim"],
+  "population": 800000,
+  "populationDistribution": [{
+    "race": "Trollkin",
+    "proportion": 0.7
+  },
+  {
+    "race": "Ogres",
+    "proportion": 0.2
+  },
+  {
+    "race": "Trolls",
+    "proportion": 0.05
+  }],
+  "government": "The trollkin government is in the form of disciplined military regiments. The ultimate ruler is the grand marshal, however his primary responsibilities are the approval of large scale mercenary contracts and the appointment of the generals.",
+  "ruler": "Grand Marshal Gorok Hagmar",
+  "history": "The Trollkin were an experimental half-breed race that came about during the God's War. They were discarded as too weak as compared to their troll forebears and were thus left to their own devices. They found a place for themselves on the island of Degak'Ta, and despite the poor opinion of them held by the Sorceron who had created them, the Trollkin are exceptionally disciplined and capable fighters. The Trollkin have built the wealth of their country on their value as mercenaries, and most every major war has involved trollkin mercenaries on one or both sides.",
+  "gods": [],
+  "worship": "Degak'Ta is officially non-theistic to avoid conflicts of interest with potential employers.",
+  "culture": "Degak'Ta sees a lot of cultural imports, but the primary culture consistently remains Spartan and militaristic in nature.",
+  "economics": "Trollkin do not have many merchants or much of a merchant marine, particularly for an island nation. They do, however, have a sizable navy that transports their mercenaries to where they are needed. Trollkin mercenaries send most of the money they earn home to support their families back in Degak'Ta.",
+  "slavery": "Slavery is not strictly illegal in Degak'Ta, but the Trollkin do not keep slaves themselves.",
+  "magic": "Those who are capable mages are encouraged to pursue the craft for military purposes, and their is a small warmage college in Sunra.",
+  "property": "Any citizen can hold property in Degak'Ta as long as it is within the disgnated area apportioned for their regiment.",
+  "citizenship": "Anyone can join the mercenary bands of Degak'Ta, and 2 years of honorable service earns citizenship in Degak'Ta. Because they are so accepting of capable soldiers that may not be accepted elsewhere, there is actually a sizable minority of ogres who have emigrated to the island over the years, as well as a few full-blooded trolls."
+}

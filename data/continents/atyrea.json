@@ -1,0 +1,13 @@
+{
+  "name": "Atyrea",
+  "description": "Atyrea is the southern most known continent in Elthelas. It is connected by land bridge to the continent of Riftlan.\n\nAtyrea is the original home of the Staelic humans, a number of goliath tribes, and the Stagen gnomes. The hisru people migrated from Riftlan, displacing the native population in the northwestern plains, after a religious schism within their people. More recently orc colonists from Malinval carved a territory for themselves in the northeast, calling it sage.",
+  "contains": [
+    "Hisru'de'tan",
+    "Sage",
+    "Alfadir",
+    "Stagenheim",
+    "Staelia",
+    "Gorgro"
+  ],
+  "coords": [-56, -82]
+}

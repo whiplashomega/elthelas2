@@ -1,0 +1,18 @@
+{
+  "name": "Trade Sea",
+  "description": "The central Trade Sea lies between the two great continental landmasses of the world, and is filled with vast archipelegos, islands, and the massive Serpent's Spine reef.",
+  "contains": [
+    "Dera'Dragorim",
+    "Eldoran",
+    "Gnarra",
+    "Morrindim",
+    "Olda",
+    "Shendarel",
+    "Hisru'de'tan",
+    "Sage",
+    "Stagenheim",
+    "Staelia",
+    "Zelfir"
+  ],
+  "coords": [5, -40]
+}

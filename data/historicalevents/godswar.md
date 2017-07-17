@@ -1,6 +1,11 @@
 -500
+
+
+
+
+
+
 God's War
-The Gods' Agreement brings an end to the God's War.
 The God's War refers to a period of unknown length before recorded history in which the Gods walked Elthelas freely among their greatest creation and 
 servants, the Sorceron. Sorceron magi, wizards. Theologians (at least outside of groups that worship Mat'raktha) blame the war on a coup by Mat'raktha 
 in which he sought to claim the world for himself. Malik, the God of Chaos and War joined his coup because he thought it interesting, and they further 

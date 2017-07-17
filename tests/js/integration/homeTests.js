@@ -43,7 +43,7 @@ describe("home page tests", function() {
     it('DataTables should be working', function(next) {
       browser.clickLink("Languages", function() {
         expect(browser.query("#DataTables_Table_0")).toBeDefined();
-        console.log(browser.query("#DataTables_Table_0"));
+        //console.log(browser.query("#DataTables_Table_0"));
         next();
       });
     });

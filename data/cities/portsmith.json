@@ -1,0 +1,23 @@
+{
+  "name": "Port Smith",
+  "nation": "Dera'Dragorim",
+  "population": 2000,
+  "metro": 15000,
+  "majority": "Deran Humans",
+  "ruling": "Deran Humans",
+  "minorities": [
+    "Dragonborn",
+    "Fey'ri",
+    "Tieflings",
+    "Aasimar",
+    "Sorceron Blooded",
+    "Child of Molton",
+    "Genasi"
+  ],
+  "exports": [
+    "Exotic Animals"
+  ],
+  "landmarks": [],
+  "coords": [16.3, -116],
+  "description": "Port Smith was first founded by a group of Dormanian explorers.  Shortly after arriving and establishing a fort, all of them died of disease, but not before Dera'Dragorim had dispatched military vessels to contest the Dormanian's claim on their ancestral territory.  Today only the name of the fort remains of that Dormanian expedition, meanwhile Port Smith has become the entry point for Deran settlers and explorers seeking to reclaim their ancient home."
+}

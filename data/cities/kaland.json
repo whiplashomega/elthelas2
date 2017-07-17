@@ -1,0 +1,16 @@
+{
+  "name": "Kaland",
+  "nation": "Kandor",
+  "population": 0,
+  "metro": 0,
+  "majority": "Imperial Humans",
+  "ruling": "Imperial Humans",
+  "minorities": [
+    "lightfoot halflings",
+    "half-dwarves"
+  ],
+  "exports": [],
+  "landmarks": [],
+  "coords": [69.6, 79.1],
+  "description": ""
+}

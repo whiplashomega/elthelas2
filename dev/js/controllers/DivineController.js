@@ -23,7 +23,7 @@
     };
     
     divineProvider.getDivines().then(function(response) {
-      $scope.divines = response.data;
+      $scope.divines = response.data.documents;
       for(var x = 0; x < $scope.divines.length; x++) {
         if($scope.types.indexOf($scope.divines[x].type) === -1) {
           $scope.types.push($scope.divines[x].type);

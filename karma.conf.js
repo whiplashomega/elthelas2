@@ -10,7 +10,7 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['jasmine', 'es5-shim'],
+    frameworks: ['jasmine', 'es5-shim', 'es6-shim'],
 
 
     // list of files / patterns to load in the browser
@@ -68,7 +68,7 @@ module.exports = function(config) {
     hostname: process.env.IP,
     runnerPort: 0,
 
-    plugins: ['karma-jasmine', 'karma-phantomjs-launcher', 'karma-es5-shim'],
+    plugins: ['karma-jasmine', 'karma-phantomjs-launcher', 'karma-es5-shim', 'karma-es6-shim'],
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
     singleRun: false,

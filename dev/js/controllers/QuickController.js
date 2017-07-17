@@ -31,7 +31,7 @@
     $scope.spells;
     this.init = function() {
       SpellProvider.getSpells().then(function(response) {
-        $scope.spells = response.data;
+        $scope.spells = response.data.documents;
         
         var spellTableData = [];
         for(var x = 0; x < $scope.spells.length; x++) {
@@ -42,13 +42,13 @@
           }
           var id = 'spell' + x;
           var thisSpell = [
-            $scope.spells[x].title,
+            '<a href="#" data-spellid="' + x + '" class="' + id + '">' + $scope.spells[x].title + "</a>",
             $scope.spells[x].level,
             $scope.spells[x].school,
             $scope.spells[x].castingTime,
             $scope.spells[x].duration,
             $scope.spells[x].tags.join(", "),
-            "<input type='button' value='View' class='btn btn-sm btn-primary' id='"+ id + "' data-spellid='" + x + "' />"
+            "<input type='button' value='View' class='btn btn-sm btn-primary " + id + "' data-spellid='" + x + "' />"
           ];
           spellTableData.push(thisSpell);
         }
@@ -69,7 +69,7 @@
                 $scope.loadSpell(Number($(this).attr('data-spellid')));
               };
               for(var x = 0; x < $scope.spells.length; x++) {
-                $("#spell" + x).click(callback);
+                $(".spell" + x).click(callback);
               }
             }
           });

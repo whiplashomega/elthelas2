@@ -1,0 +1,29 @@
+{
+  "name": "Zelfin",
+  "nation": "Zelfir",
+  "population": 55000,
+  "metro": 165000,
+  "majority": "Hisru Humans",
+  "ruling": "Hisru Humans",
+  "minorities": [
+    "Staelic Humans",
+    "Deran Humans"
+  ],
+  "exports": [],
+  "landmarks": [
+    {
+      "name": "Temple of Amathera",
+      "description": ""
+    },
+    {
+      "name": "The Shield of Amathera",
+      "description": ""
+    },
+    {
+      "name": "Towers of the Archmagi",
+      "description": ""
+    }
+  ],
+  "coords": [-59.5, -130],
+  "description": "Zelfin is the bustling capitol of Zelfir. It is one of the only cities from ancient times outside of Curinor to have never suffered occupation from an outside force, due in large part to it's singular defense mechanism: The Shield of Amathera. A huge, unbreachable magical barrier surrounds the city, built in its infancy by the first Magi rulers of Zelfir after their victory over the Sorceron."
+}

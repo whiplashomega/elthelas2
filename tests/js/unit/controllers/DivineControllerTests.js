@@ -3,7 +3,7 @@
 
 describe('Divine Controller Tests', function() {
   var service, $q, deferred, $scope;
-  var resolveObject = { data: [{ id: 'ara', type: "Fey" }, { id: 'sanguine', type: "Fey" }]};
+  var resolveObject = { data: { documents: [{ id: 'ara', type: "Fey" }, { id: 'sanguine', type: "Fey" }]}};
   beforeEach(module('elthelas'));
   
   beforeEach(inject(function($controller, _$q_, _$rootScope_, divineProvider) {

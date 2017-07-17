@@ -1,0 +1,16 @@
+{
+  "name": "East Port",
+  "nation": "Dormania",
+  "population": 15000,
+  "metro": 35000,
+  "majority": "Imperial Humans",
+  "ruling": "Imperial Humans",
+  "minorities": [
+    "Lightfoot Halflings",
+    "Imperial Gnomes"
+  ],
+  "exports": [],
+  "landmarks": [],
+  "coords": [53.8,164.2],
+  "description": "East Port lacks the access to the capital had by Falak, but it nevertheless is an important port town, acting as the point of export for the eastern imperial heartland."
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Mak'hol",
+  "nation": "Malinval",
+  "population": 0,
+  "metro": 0,
+  "majority": "Grunt Orcs",
+  "ruling": "High Orcs",
+  "minorities": [
+    "Goblins",
+    "Hobgoblins",
+    "Gnolls"
+  ],
+  "exports": [],
+  "landmarks": [],
+  "coords": [-15.5, 45.6],
+  "description": ""
+}

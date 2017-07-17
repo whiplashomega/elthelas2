@@ -1,0 +1,15 @@
+{
+  "name": "Elathia",
+  "description": "Elathia is the largest and most heavily populated of the 3 known continents. It has been the home of great empires, and also of epic wars. It lies to the east of the other two major continents.",
+  "contains": [
+    "Dormania",
+    "Kandor",
+    "Gerasalim",
+    "Curinor",
+    "Demal'Thor",
+    "Eldoran",
+    "Arad",
+    "Malinval"
+  ],
+  "coords": [20, 90]
+}

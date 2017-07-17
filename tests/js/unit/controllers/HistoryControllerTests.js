@@ -4,16 +4,27 @@ describe("History Controller Tests", function() {
   var service, $q, deferred, $scope, controller;
   beforeEach(module("elthelas"));
   var resolveObject = {
-    data: [{
-      "date": 0,
-      "title": "Title",
-      "shortDesc": "Short Description",
-      "description": "This is a longer description"
+    data: {documents: [{
+      "start_date": {
+        "year": 0,
+        "month": 0,
+        "day": 0
+      },
+      "media": {
+        "url": "",
+        "caption": "",
+        "credit": ""
+      },
+      "text": {
+        "headline": "Title",
+        "text": "Description"
+      }
     }]
-  };
+  }};
   beforeEach(inject(function($controller, _$q_, _$rootScope_, HistoryProvider){
     $q = _$q_;
     $scope = _$rootScope_.$new();
+    $scope.timeline = { setData: function() {}, goTo: function() {}};
     deferred = _$q_.defer();
     service = HistoryProvider;
     
@@ -21,7 +32,8 @@ describe("History Controller Tests", function() {
     
     controller = $controller('HistoryController', {
       $scope: $scope,
-      HistoryProvider: HistoryProvider
+      HistoryProvider: HistoryProvider,
+      event: false
     });
   }));
   

@@ -1,0 +1,43 @@
+{
+  "name": "Curinor",
+  "coords": [50,55],
+  "border-coords": [],
+  "color": "#222200",
+  "map": "/images/maps/nations/Curinor.jpg",
+  "capitol": "Curin Keep",
+  "cities": ["Torin Hammer", "Stromforde", "High Hammer", "Granite Bluff"],
+  "landmarks": ["Blighted Gap", "Fortress of Light", "Mithril Hills"],
+  "borders": ["Eldoran", "Demal Thor", "Malinval", "Kandor", "Gerasalim"],
+  "population": 2600000,
+  "populationDistribution": [{
+    "race": "Hill Dwarves",
+    "proportion": 0.45
+  },
+  {
+    "race": "Plains Dwarves",
+    "proportion": 0.27
+  },
+  {
+    "race": "Deep Dwarves",
+    "proportion": 0.10
+  },
+  {
+    "race": "Half-Dwarves",
+    "proportion": 0.12
+  },
+  {
+    "race": "Imperial Humans",
+    "proportion": 0.04
+  }],
+  "government": "Curinor is ruled by the under-king, who is really more of a temporary elected president, as he serves a 5 year term and has greatly limited powers. The bulk of governing power lies with the Curin Congress, an assemblage of Deep Dwarves, elected by the deep dwarves of each hold.",
+  "ruler": "Under-King Magnor Stoneshield",
+  "history": "The dwarves found themselves in an unlikely place in Curinor. While the large mountain ranges made for excellent places in which to dig their holds, they were stuck with enemies on every side, with the human kingdoms on the east, the elves to the west, and the orcs to the south. Nevertheless, for most of their history they have thrived reasonably well. They subjugated the nearest human kingdoms to them, and used them to supply grain and other farm products to the holds while exporting metals and finished goods. It was a good situation until Dorman I invaded the vassal kingdoms. He crushed the dwarven army, and even managed to capture a number of the small holds along the border of Curinor. He even laid siege to Curin Keep for several years before giving up. The dwarves managed to maintain their sovereignty, but they have been in decline ever since, with their population shrinking and near-constant wars with the elves. In recent years they have even lost any effective presence in the Mithril Hills, bringing an end to over 1000 years of conflict with Eldoran over those lands. And clearing the way for both the Elves and Dwarves to join the Alliance of 6 Nations, and the construction of the Fortress of Light by Dwarven engineers.",
+  "gods": ["Dorun", "Amathera", "Tock"],
+  "worship": "Dwarves are not a typically religious people, but they all revere Dorun, patron God of the Dwarves and Deep places. The poor plains dwarves often worship Amathera as well, entreating her for protection.  Tock, god of machines, learning, and invention is often worshipped by the smithing and artisan class.",
+  "culture": "Society in Curinor is caste based, depending on how deep in the mountains you and your ancestors lived. Those dwarves that almost never see daylight, the Deep Dwarves, are the highest caste, and hold most of the political and economic power, while the Hill Dwarves that make up the bulk of the population live in the caves closer to the surface and regularly travel to trade with other peoples. Meanwhile the Plains Dwarves are farmers and craftsman that live on the open central plain of Curinor, and are shunned by most other dwarves. The dwarf holds are huge cave systems built into mountains and deep in the earth.",
+  "economics": "Curinor exports a wide variety of valuable minerals as well as stock metal. They also export weapons, armor, fine metalwork crafts and coal",
+  "slavery": "Slavery is illegal, but many Plains Dwarves live in effective slavery due to their caste making it impossible for them to earn more than a subsistence wage.",
+  "magic": "Licenses are required to practice magic in Curinor.",
+  "property": "Where one is able to purchase property depends on ones caste. A Plains Dwarf is not permitted to purchase property within the holds, while a hill dwarf must purchase property within half a mile of the surface. The Deep Dwarves are the only ones allowed to live and own property in the deep mines where the mineral veins are the richest, although they usually hire hill dwarves to do most of the actual work of mining.",
+  "citizenship": "Only deep dwarves hold any political power in Curinor, while the laws on the books nominally state that any dwarf (technically including the Morrindim) or half-dwarf is a citizen of Curinor."
+}

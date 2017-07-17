@@ -1,0 +1,25 @@
+{
+  "name": "Diya",
+  "nation": "Olda",
+  "population": 125000,
+  "metro": 250000,
+  "majority": "Goblins",
+  "ruling": "High Orcs",
+  "minorities": [
+    "High Orcs",
+    "Grunt Orcs",
+    "Trollkin",
+    "Kobolds"
+  ],
+  "exports": [
+    ""
+  ],
+  "landmarks": [
+    {
+      "name": "",
+      "description": ""
+    }
+  ],
+  "coords": [-18.3, -3.3],
+  "description": "Diya is a hub of the plantation economy of Olda, full of factories refining sugar and turning much of it into rum or molases, and others turning cotton into cloth.\n\nThe city itself is a sprawling mess, with no strong government.  Powerful families of High Orcs build their factories and slave quarters in bunches, turning the city into what is more like a sprawling mass of towns of various sizes.  The duties of the city guard are farmed out to the retainers of the powerful families, and a wanted man with one family might receive protection from another."
+}

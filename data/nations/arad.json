@@ -1,0 +1,35 @@
+{
+  "name": "Arad",
+  "coords": [5,132],
+  "border-coords": [],
+  "color": "#222200",
+  "map": "/images/maps/nations/Arad.jpg",
+  "capitol": "Albeliath",
+  "cities": ["Faran"],
+  "landmarks": ["World Crack"],
+  "borders": ["Malinval", "Terron", "Dormania"],
+  "population": 600000,
+  "populationDistribution": [{
+    "race": "Neran Humans",
+    "proportion": "0.84"
+  },
+  {
+    "race": "Imperial Humans",
+    "proportion": "0.07"
+  },
+  {
+    "race": "Lightfoot Halflings",
+    "proportion": "0.06"
+  }],
+  "government": "Arad is a monotheistic theocracy that worships Nera, Goddess of death and rebirth. Their government is led by her Prophet who has led the country since the demise of Nerim, although it is rumored that he is looking to die soon.",
+  "ruler": "The Prophet Albeliath",
+  "history": "Arad was already a colony of Nerim at the time of the cataclysm, however the church there was largely disconnected from that on the subcontinent. For years prior to the fateful day that ended the Empire, the priests in Arad had told of the corruption of the church and warned that the Emperor's quest for immortality was against the teachings of Nera.",
+  "gods": ["Nera"],
+  "worship": "Nera is the only God worshipped in Arad, if not by law then by practice. They consider themselves the true followers of Nera and that the church of Nerim at the time of the cataclysm was corrupt and misinterpreting her words, particularly the emperor who thought to be immortal, for while Nera may grant long life to her most faithful subjects, all beings must die so that their souls may be reborn. There is a great deal of misunderstanding about the beliefs of the people of Arad, and many nations have severed diplomatic relations with them fearing that they will cause another cataclysm.",
+  "culture": "The people of Arad are very formal, and always polite. They take for granted the appearance of certain things that others would consider horrible or disconcerting, such as the presence of deathless (which few outside of Arad can distinguish from typical undead) and faithful clerics who are approaching 3 or even 4 hundred years of age.",
+  "economics": "Arad is primarily agrarian, with many orchards and wineries. They export fine wines and artisan cheeses as well as dried fruits such as prunes and apricots.",
+  "slavery": "While the people of Arad do not keep slaves, slavery is allowed by treaty with Malinval that also keeps the orcs from invading. People who have not traveled to Arad often believe that they keep undead slaves to do all of their work. The fact is that undead in the typical sense are very rare in Arad, kept only by a few skilled necromancers. Rather deathless, who come back to aid their families by choice, appear quite commonly, particularly if they were devout followers of Nera.",
+  "magic": "Arcane magic is not illegal in any way, but most people in Arad see it as inferior to divine blessing.",
+  "property": "Property in Arad is owned by families and passed from generation to generation. Family estates tend to grow as families expand, rather than children move away. When two people are married, the man generally moves in with the woman's family.",
+  "citizenship": "Only followers of Nera are granted citizenship in Arad."
+}

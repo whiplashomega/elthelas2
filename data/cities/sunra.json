@@ -1,0 +1,17 @@
+{
+  "name": "Sunra",
+  "nation": "Degak'Ta",
+  "population": 12000,
+  "metro": 30000,
+  "majority": "Trollkin",
+  "ruling": "Trollkin",
+  "minorities": [
+    "Ogres",
+    "Orcs",
+    "Morrind Dwarves"
+  ],
+  "exports": [],
+  "landmarks": [],
+  "coords": [-60, 62.1],
+  "description": "Degak'Ta is the center of the militaristic might of the Trollkin Mercenary Army.  It is ruled over by the Grand Marshal, and the city itself is built as a network of fortresses surrounded by a massive outer wall.  Within the city, barracks, smithies, and other signs of military life dominate.  Trade occurs largely in the docks area, just outside the walls along the river front, where a sizeable Morrind community has sprung up.  Additionally, most every nation in the world has an embassy in the city, with an ambassador chosen for his supreme negotiating skill, responsible for negotiating contracts with the TMA and acquiring Trollkin shock troops for use in whatever wars or skirmishes they might be involved in.  These contracts bring a great deal of wealth to the city, and their really is no poor district in Degak'Ta.  The only members of Trollkin society who are not taken care of are those who dishonor a contract or are otherwise dishounorably discharged from the army, an offense whose punishment is exile or death.\n\n Recent attacks by demons have forced much of the population of the surrounding countryside into the walls, straining the cities resources. However, the disciplined Trollkin armies have largely managed to keep the demons out of the city itself."
+}

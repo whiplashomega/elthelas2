@@ -2,7 +2,7 @@
 /*global angular */
 (function($, ng) {
   "use strict";
-  ng.module('elthelas').controller('RaceController', ['$scope', '$location', 'raceProvider', function($scope, $location, raceProvider ) {
+  ng.module('elthelas').controller('RaceController', ['$scope', 'raceProvider', 'race', function($scope, raceProvider, race) {
     $scope.currentRace = false;
     
     $scope.loadRace = function(id) {
@@ -108,8 +108,20 @@
     };
     
     raceProvider.getRaces().then(function(response) {
-      $scope.races = response.data;
-      $scope.loadRace($location.search().race);
+      $scope.races = response.data.documents;
+      if(race) {
+        $scope.loadRace($scope.races.filter((a) => {
+          if(a.id === race || a.name === race) {
+            return true;
+          }
+          for(var x = 0; x < a.subraces.length; x++) {
+            if(a.subraces[x].id === race || a.subraces[x].name === race) {
+              return true;
+            }
+          }
+          
+        })[0].id)
+      }
       $("#ageTable").dataTable({
         data: $scope.getAllAgeData(),
         columns: [

@@ -2,7 +2,7 @@
 /*global angular */
 (function($, ng) {
   "use strict";
-  ng.module('elthelas').controller('OrganizationController', ['$scope', '$location', 'organizationProvider', function($scope, $location, organizationProvider ) {
+  ng.module('elthelas').controller('OrganizationController', ['$scope', '$location', 'organizationProvider', 'org', function($scope, $location, organizationProvider, org) {
     $scope.currentOrg = false;
     
     $scope.loadOrg = function(id) {
@@ -21,8 +21,10 @@
     };
     
     organizationProvider.getOrganizations().then(function(response) {
-      $scope.organizations = response.data;
-      $scope.loadOrg($location.search().organization);
+      $scope.organizations = response.data.documents;
+      if(org) {
+        $scope.loadOrg($scope.organizations.filter((a) => {return (a.id === org || a.title === org)})[0].id);
+      }
     });
   }]);
 })(jQuery, angular);

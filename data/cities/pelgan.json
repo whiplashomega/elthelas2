@@ -1,0 +1,15 @@
+{
+  "name": "Pelgan",
+  "nation": "Staelia",
+  "population": 0,
+  "metro": 0,
+  "majority": "Staelic Humans",
+  "ruling": "Staelic Humans",
+  "minorities": [
+    "Strongheart Halflings"
+  ],
+  "exports": [],
+  "landmarks": [],
+  "coords": [-70.6, -82.7],
+  "description": ""
+}

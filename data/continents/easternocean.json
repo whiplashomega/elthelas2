@@ -1,0 +1,11 @@
+{
+  "name": "Eastern Ocean",
+  "description": "The Eastern Ocean lies to the east of Dormania, a vast expanse of ocean that to date no sailor has managed to cross and return. It is theorized that it wraps around the far side of the world until reaching Riftlan, empty and impassable.",
+  "contains": [
+    "Dormania",
+    "Nerim",
+    "Seran",
+    "Terron"
+  ],
+  "coords": [55, 174]
+}

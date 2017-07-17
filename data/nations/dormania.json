@@ -1,0 +1,39 @@
+{
+  "name": "Dormania",
+  "coords": [60,135],
+  "border-coords": [],
+  "color": "#FFFF00",
+  "map": "/images/maps/nations/Dormania.jpg",
+  "capitol": "Desadorel",
+  "cities": ["Sreppe", "Farengar", "Falak", "Malidal", "East Dormania", "West Dormania", "Wayrest", "Timberlan", "South Port", "East Port", "Orania", "Prince Port", "Cur'Lesto", "Cur'Mestin", "Miner's Rest", "Poron"],
+  "landmarks": ["World Crack", "Great Ramp"],
+  "borders": ["Terron", "Malinval", "Arad", "Gerasalim", "Kandor"],
+  "population": 5600000,
+  "populationDistribution": [{
+    "race": "Imperial Humans",
+    "proportion": 0.7
+  },
+  {
+    "race": "Lightfoot Halflings",
+    "proportion": 0.1
+  },
+  {
+    "race": "Imperial Gnomes",
+    "proportion": 0.09
+  },
+  {
+    "race": "Half-Elves",
+    "proportion": 0.06
+  }],
+  "government": "Dormania is ruled by the eternal emperor, lord of all the east, Dorman. The Emperor has absolute authority in Dormania, although of course most decisions are made by appointed officials and bureaucrats, all officials serve at the pleasure of the Emperor.  The most recent Emperor, Dorman XXII, died after falling from the highest window in the tallest tower of his palace, shortly afterward his infant son and heir was found suffocated by his nurse.  This has left the government without an obvious ruler for the first time ever, and rule has reverted to the local lords.\n\nThe major cities of Dormania are ruled over by Dukes and Arch-dukes, each of which sits on the Council of Lords, charged by the imperial charter with choosing a new Emperor should the sitting Emperor die without an heir.  Unfortunately the Council has been deadlocked for some time.",
+  "ruler": "Until recently, Dorman XXII, now deceased.",
+  "history": "The city state of Desadorel was a prominent trade city and independent city state that exported iron, adamantine, and other valuable minerals before Dorman I became the king. With dreams of mighty conquest, he marshaled his troops and conquered several of his nearest neighbors before they really had time to build armies of their own. After a couple years of consolidation he went on the march again, and over his 40 year reign he conquered everything from the eastern coast west to the border of Curinor and south to Dal Okra.\n\nAfter his death it was not long before pieces of the empire began to fall away. First a slow march north by the orcs over a period of nearly 100 years reconquered the southernmost territory north to the Rust Desert, then during the disastrous reign of Dorman V Kandor and Gerasalim both declared independence. Since then the borders have remained fairly stable, although the extent of rule by the central authority has waxed and waned.",
+  "gods": ["Alohim", "Sara", "Dorman", "Fanome", "Maris", "Tock", "Trimala", "Gaian", "Molton"],
+  "worship": "The Dormanians have a history of experimenting with different religions, and most every God has a cult of at least some size in the empire. Dorman I, however, does hold a special place here.",
+  "culture": "Dormania is a country in flux. The countryside is still largely feudal, with Lords overseeing large areas of land cared for by their serfs, however few Lords have proper castles, but rather live in elaborate manor homes. Meanwhile the cities are home to a burgeoning middle class of merchants and artisans whose power is continually growing.",
+  "economics": "Dormania has many commercial centers and is a reasonably wealthy country. The bulk of the land east of the World Crack is made up of large open grasslands where they raise herds of cattle and other livestock. The hills above Desadorel have some of the world's richest deposits of adamantine. The north mostly produces grains, while the area around Malidal produces a number of cash crops such as cotton and olives.\n\nDesadorel is the largest metropolis on the continent north of Malinval, and most any kind of craftsman can be found there, not to mention more beauracrats than you can shake a stick at. Meanwhile Malidal is home to one of the finest colleges of wizardry in the world, (Dormanians would say THE finest, but even the more traveled people would rank it in the top 5.)",
+  "slavery": "Slavery is illegal in the empire, however serfdom is the regular order of the day in the countryside.",
+  "magic": "A Mage must be a registered member of one of the many magical colleges in order to practice magic legally. However, enforcement of this law outside of the major cities is largely ignored.",
+  "property": "Anyone can own property in the empire except for branded serfs.",
+  "citizenship": "Their is no legal method of citizenship in the empire, although records of the royal line are kept."
+}

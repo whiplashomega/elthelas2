@@ -2,7 +2,7 @@
 "use strict";
 
 (function($, ng) {
-  ng.module('elthelas').controller('GodsController', ['$scope', 'godProvider', '$location', function($scope, godProvider, $location) {
+  ng.module('elthelas').controller('GodsController', ['$scope', 'godProvider', 'god', function($scope, godProvider, god) {
     $scope.gods = false;
     $scope.GodByName = "";
     $scope.alignment = "";
@@ -14,8 +14,8 @@
     };
     
     godProvider.getGods().then(function(response) {
-      $scope.gods = response.data;
-      $scope.loadGod($location.search().god);
+      $scope.gods = response.data.documents;
+      $scope.loadGod($scope.gods.filter((a) => {return (a.id === god || a.name === god)})[0].id);
     });
 
   }]);

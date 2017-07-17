@@ -18,7 +18,7 @@ var gulp = require('gulp'),
     Server = require('karma').Server,
     jasmine = require('gulp-jasmine'),
     reporters = require('jasmine-reporters');
-
+var jsonlint = require("gulp-jsonlint");
 //precompile
 gulp.task('jshint', function() {
     gulp.src('tests/js/**/*.js').pipe(jshint()).pipe(jshint.reporter(stylish));
@@ -42,16 +42,16 @@ gulp.task('copylibraries', function() {
    gulp.src('./bower_components/jquery/dist/jquery.js').pipe(gulp.dest("./dev/libraries"));
    gulp.src('./bower_components/leaflet/dist/leaflet.js').pipe(gulp.dest("./dev/libraries"));
    gulp.src('./bower_components/leaflet/dist/leaflet.css').pipe(gulp.dest("./dev/css"));
-   gulp.src('./bower_components/leaflet/dist/images/*').pipe(gulp.dest("./dev/images"));
-   gulp.src('./bower_components/Leaflet.label/dist/leaflet.label.js').pipe(gulp.dest("./dev/libraries"));
-   gulp.src('./bower_components/Leaflet.label/dist/leaflet.label.css').pipe(gulp.dest("./dev/css"));
-   gulp.src('./bower_components/Leaflet.label/dist/images/*').pipe(gulp.dest("./dev/images"));
+   gulp.src('./bower_components/leaflet/dist/images/*').pipe(gulp.dest("./dev/css/images"));
    gulp.src('./bower_components/marked/lib/marked.js').pipe(gulp.dest("./dev/libraries"));
    gulp.src('./bower_components/angular-ui-router/release/angular-ui-router.js').pipe(gulp.dest("./dev/libraries"));
    gulp.src('./node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js').pipe(gulp.dest("./dev/libraries"));
    gulp.src('./node_modules/babel-polyfill/dist/polyfill.min.js').pipe(gulp.dest("./dev/libraries"));
    gulp.src('./node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css').pipe(gulp.dest("./dev/css"));
    gulp.src('./bower_components/angular-cookies/angular-cookies.min.js').pipe(gulp.dest("./dev/libraries"));
+   gulp.src('./bower_components/TimelineJS3/compiled/css/**/*').pipe(gulp.dest("./dev/css"));
+   gulp.src('./bower_components/TimelineJS3/compiled/js/timeline.js').pipe(gulp.dest("./dev/libraries"));
+   gulp.src('./bower_components/angular-timelinejs3/dist/js/ng-timeline.js').pipe(gulp.dest("./dev/libraries"));
    return true;
 });
 
@@ -79,17 +79,39 @@ gulp.task('historyjson', function () {
   var historyarray = [];
   files.forEach(file => {
     var data = fs.readFileSync("./data/historicalevents/" + file, "utf-8");
-    var event = {};
+
     var filearray = data.split('\n');
-    
-    event.date = filearray[0];
-    event.title = filearray[1];
-    event.shortDesc = filearray[2];
-    event.description = filearray.slice(3, filearray.length).join("\n");
-    historyarray.push(event);
+    if(filearray.length >= 9 && !isNaN(Number(filearray[0]))) {
+      var event = {
+        start_date: {
+          year: filearray[0],
+          month: filearray[1],
+          day: filearray[2]
+        },
+        media: {
+          url: filearray[6],
+          caption: '',
+          credit: ''
+        },
+        text: {
+          headline: filearray[7],
+          text: filearray.slice(8, filearray.length).join("\n")
+        }
+      }
+      if(filearray[3] !== "") {
+        event.end_date = {
+          year: filearray[3],
+          month: filearray[4],
+          day: filearray[5]
+        }
+      }
+      historyarray.push(event);      
+    } else {
+      throw new Error("improperly formatted event: " + file);
+    }
   });
   if(historyarray.length === files.length) {
-    fs.writeFile("./json/history.json", JSON.stringify({ "model": "History", "documents": historyarray}), "utf-8");
+    fs.writeFile("./dev/json/history.json", JSON.stringify({ "model": "History", "documents": historyarray}), "utf-8");
   }
   return true;
 });
@@ -128,13 +150,18 @@ gulp.task('spellsjson', function() {
     spellarray.push(spell);
   });
   if(spellarray.length === files.length) {
-    fs.writeFile("./json/spells.json", JSON.stringify({ "model": "Spell", "documents": spellarray }), "utf-8");
+    fs.writeFile("./dev/json/spells.json", JSON.stringify({ "model": "Spell", "documents": spellarray }), "utf-8");
   }
   return true;
 });
 
+gulp.task('jsonlint', function() {
+  gulp.src("./data/**/*.json")
+    .pipe(jsonlint())
+    .pipe(jsonlint.reporter());
+});
 
-gulp.task('jsoncompile', function() {
+gulp.task('jsoncompile', ['jsonlint'], function() {
   function compiledir(sourcedir, destination, modelName) {
     var files = fs.readdirSync(sourcedir);
     var comparray = [];
@@ -150,13 +177,23 @@ gulp.task('jsoncompile', function() {
     fs.writeFile(destination, JSON.stringify({ "model": modelName, "documents": comparray }), "utf-8");
   }
   //gods
-  compiledir("./data/gods", "./json/gods.json", "God");
+  compiledir("./data/gods", "./dev/json/gods.json", "God");
   //races
-  compiledir("./data/races", "./json/races.json", "Race");
+  compiledir("./data/races", "./dev/json/races.json", "Race");
   //organizations
-  compiledir("./data/organizations", "./json/organizations.json", "Organization");
+  compiledir("./data/organizations", "./dev/json/organizations.json", "Organization");
   
-  compiledir("./data/divines", "./json/divines.json", "Divine");
+  compiledir("./data/divines", "./dev/json/divines.json", "Divine");
+  
+  compiledir("./data/cities", "./dev/json/cities.json", "City");
+  
+  compiledir("./data/continents", "./dev/json/continents.json", "Continent");
+  
+  compiledir("./data/features", "./dev/json/features.json", "Feature");
+  
+  compiledir("./data/landmarks", "./dev/json/landmarks.json", "Landmark");
+  
+  compiledir("./data/nations", "./dev/json/nations.json", "Nation");
   return true;
 });
 
@@ -197,7 +234,7 @@ gulp.task('conttest', ['jshint'], function(done) {
   }, done).start();
 });
 //post-compile
-gulp.task('default', ['integrationtest', 'sass', 'spellsjson', 'jsoncompile', 'copylibraries'], function() {});
+gulp.task('default', ['integrationtest', 'sass', 'spellsjson', 'historyjson', 'jsoncompile', 'copylibraries'], function() {});
 
 gulp.task('prod', ['copyimages', 'usemin', 'copyjson'], function() {});
 

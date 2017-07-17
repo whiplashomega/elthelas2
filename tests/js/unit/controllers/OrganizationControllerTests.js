@@ -2,7 +2,7 @@
 
 describe('Organizations Controller Tests', function() {
   var service, $q, deferred, $scope, controller;
-  var resolveObject = { data: [{
+  var resolveObject = { data: { documents: [{
   "id": "trollkinmercenarycorps",
   "title": "Trollkin Mercenary Corps",
   "description": "The Trollkin Mercenary Corps is the official diplomatic arm of Degak'Ta, but membership is not restricted to citizens of Degak'Ta or Trollkin.  They are an elite group of mercenaries who will sign up for any conflict for the right price, even different sides of the same conflict. Once contracted they are known to be extremely loyal and impartial, governed by the contract they are given until it expires.  Further they are known to be among the best warriors in the world, so being able to afford Trollkin Mercenaries is considered extremely prestigious.",
@@ -54,7 +54,7 @@ describe('Organizations Controller Tests', function() {
   "level1": "####Favored Terrain####\n\nYou gain a favored terrain.  See the ranger feature in the PHB, if you already have a favored terrain you may pick an additional one.",
   "level10": "####Master Hunter####\n\nAdd the spell hunter's mark to your spells known or spellbook.  If you do not the ability to cast spells, you gain the ability to cast hunter's mark 1/day as a first level spell.  The duration changes from 'Concentration up to 1 hour' to '1 hour'."
   },
-  { "id": "badFormat" }]};
+  { "id": "badFormat" }]}};
   beforeEach(module('elthelas'));
   
   beforeEach(inject(function($controller, _$q_, _$rootScope_, organizationProvider) {
