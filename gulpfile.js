@@ -66,14 +66,11 @@ gulp.task('sass:watch', function() {
    gulp.watch('./dev/sass/**/*.scss',['sass']); 
 });
 
-gulp.task('usemin',['sass', 'copylibraries'], function () {
-  return gulp.src('./dev/**/*.html')
+gulp.task('usemin',['sass', 'copylibraries', 'copyjson', 'copyimages'], function () {
+  return gulp.src('./dev/index.html')
       .pipe(usemin({
-        css:[minifycss(),rev()],
-        js: [ngannotate(),uglify().on('error', function(err) {
-          gutil.log(gutil.colors.red('[Error]'), err.toString());
-          this.emit('end');
-          }),rev()]
+        css:[minifycss()],
+        js: [uglify()]
       }))
       .pipe(gulp.dest('./web/'));
 });
@@ -202,14 +199,17 @@ gulp.task('jsoncompile', ['jsonlint'], function() {
 });
 
 gulp.task('cleanup', [], function() {
-   return del(['web/images']); 
+   return del(['web/**/*']); 
 });
 
 gulp.task('copyimages', ['cleanup'], function() {
-   return gulp.src('dev/images/**/*').pipe(gulp.dest('web/images'));
+   gulp.src('dev/images/**/*').pipe(gulp.dest('web/images'));
+   gulp.src('dev/fonts/**/*').pipe(gulp.dest('web/fonts'));
+   gulp.src('dev/html/**/*').pipe(gulp.dest('web/html'));
+   return gulp.src('dev/css/images/**/*').pipe(gulp.dest('web/css/images'));
 });
 
-gulp.task('copyjson', ['spellsjson', 'historyjson', 'jsoncompile'], function() {
+gulp.task('copyjson', ['spellsjson', 'historyjson', 'jsoncompile', 'cleanup'], function() {
     return gulp.src('./dev/json/**/*.json').pipe(gulp.dest('./web/json'));
 });
 
