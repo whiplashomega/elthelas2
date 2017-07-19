@@ -65,7 +65,7 @@ gulp.task('sass:watch', function() {
    gulp.watch('./dev/sass/**/*.scss',['sass']); 
 });
 
-gulp.task('usemin',['unittest', 'sass', 'copylibraries'], function () {
+gulp.task('usemin',['sass', 'copylibraries'], function () {
   return gulp.src('./dev/**/*.html')
       .pipe(usemin({
         css:[minifycss(),rev()],
