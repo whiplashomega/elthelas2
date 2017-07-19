@@ -206,6 +206,7 @@ gulp.task('copyimages', ['cleanup'], function() {
    gulp.src('dev/images/**/*').pipe(gulp.dest('web/images'));
    gulp.src('dev/fonts/**/*').pipe(gulp.dest('web/fonts'));
    gulp.src('dev/html/**/*').pipe(gulp.dest('web/html'));
+   gulp.src('dev/libraries/locale/**/*').pipe(gulp.dest('web/js/locale'));
    return gulp.src('dev/css/images/**/*').pipe(gulp.dest('web/css/images'));
 });
 
