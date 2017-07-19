@@ -65,19 +65,19 @@
       for(var x = 0; x < $scope.cities.length; x++) {
         addmarker($scope.cities[x], "city");
       } 
-      for(var x = 0; x < $scope.nations.length; x++) {
-        addmarker($scope.nations[x], "nation");
+      for(var y = 0; y < $scope.nations.length; y++) {
+        addmarker($scope.nations[y], "nation");
       }
-      for(var x = 0; x < $scope.landmarks.length; x++) {
-        addmarker($scope.landmarks[x], "landmark");
+      for(var z = 0; z < $scope.landmarks.length; z++) {
+        addmarker($scope.landmarks[z], "landmark");
       }
-      for(var x = 0; x < $scope.features.length; x++) {
-        addmarker($scope.features[x], "feature");
+      for(var v = 0; v < $scope.features.length; v++) {
+        addmarker($scope.features[v], "feature");
       }
-      for(var x = 0; x < $scope.continents.length; x++) {
-        addmarker($scope.continents[x], "continent");
+      for(var u = 0; u < $scope.continents.length; u++) {
+        addmarker($scope.continents[u], "continent");
       }
-    }
+    };
     
     $scope.showCities = function() {
       for(var i = 0; i < markers.length; i++) {
@@ -156,19 +156,19 @@
       var item;
       if(location && type) {
         if(type === "continent") {
-          item = $scope.continents.filter(function(a) {return a.name === location})[0];
+          item = $scope.continents.filter(function(a) {return a.name === location;})[0];
         }
         if(type === "city") {
-          item = $scope.cities.filter((a) => {return a.name === location})[0];
+          item = $scope.cities.filter(function(a) {return a.name === location;})[0];
         }
         if(type === "nation") {
-          item = $scope.nations.filter((a) => {return a.name === location})[0];
+          item = $scope.nations.filter(function(a) {return a.name === location;})[0];
         }
         if(type === "landmark") {
-          item = $scope.landmarks.filter((a) => {return a.name === location})[0];
+          item = $scope.landmarks.filter(function(a) {return a.name === location;})[0];
         }
         if(type === "feature") {
-          item = $scope.features.filter((a) => {return a.name === location})[0];
+          item = $scope.features.filter(function(a) {return a.name === location;})[0];
         }
         showdetails(item, type);
       }

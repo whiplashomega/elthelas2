@@ -23,7 +23,7 @@
     organizationProvider.getOrganizations().then(function(response) {
       $scope.organizations = response.data.documents;
       if(org) {
-        $scope.loadOrg($scope.organizations.filter((a) => {return (a.id === org || a.title === org)})[0].id);
+        $scope.loadOrg($scope.organizations.filter(function(a) {return (a.id === org || a.title === org);})[0].id);
       }
     });
   }]);

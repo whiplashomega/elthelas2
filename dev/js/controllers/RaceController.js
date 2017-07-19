@@ -110,7 +110,7 @@
     raceProvider.getRaces().then(function(response) {
       $scope.races = response.data.documents;
       if(race) {
-        $scope.loadRace($scope.races.filter((a) => {
+        $scope.loadRace($scope.races.filter(function(a) {
           if(a.id === race || a.name === race) {
             return true;
           }
@@ -120,7 +120,7 @@
             }
           }
           
-        })[0].id)
+        })[0].id);
       }
       $("#ageTable").dataTable({
         data: $scope.getAllAgeData(),

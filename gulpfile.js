@@ -19,6 +19,7 @@ var gulp = require('gulp'),
     jasmine = require('gulp-jasmine'),
     reporters = require('jasmine-reporters');
 var jsonlint = require("gulp-jsonlint");
+var gutil = require('gulp-util');
 //precompile
 gulp.task('jshint', function() {
     gulp.src('tests/js/**/*.js').pipe(jshint()).pipe(jshint.reporter(stylish));
@@ -69,7 +70,10 @@ gulp.task('usemin',['sass', 'copylibraries'], function () {
   return gulp.src('./dev/**/*.html')
       .pipe(usemin({
         css:[minifycss(),rev()],
-        js: [ngannotate(),uglify(),rev()]
+        js: [ngannotate(),uglify().on('error', function(err) {
+          gutil.log(gutil.colors.red('[Error]'), err.toString());
+          this.emit('end');
+          }),rev()]
       }))
       .pipe(gulp.dest('./web/'));
 });

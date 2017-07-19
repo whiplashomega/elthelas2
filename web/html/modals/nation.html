@@ -1,0 +1,78 @@
+<div class="modal-header">
+    <h2>{{geoitem.name}}<button class="close" type="button" data-ng-click="cancel()">&times;</button></h2>
+</div>
+<div class="modal-body">
+  <style>
+    .modal-body .col-sm-6 {
+      max-width: 50%;
+      width: 50%;
+    }
+  </style>
+  <div data-ng-if="geoitem.map != undefined" style="float:right; max-width: 40%;">
+    <img src="{{geoitem.map}}" alt="{{geoitem.name}}" style="max-width:100%;" />
+  </div>
+<p>
+  <strong>Capitol: </strong> <a href="/geo/city/{{geoitem.capitol}}">{{geoitem.capitol}}</a>
+</p>
+<p>
+  <strong>Major Cities: </strong> 
+</p>
+<ul><li data-ng-repeat="city in geoitem.cities"><a href="/geo/city/{{city}}">{{city}}</a></li></ul>
+<p>
+  <strong>Major Landmarks: </strong> 
+</p>
+<ul><li data-ng-repeat="landmark in geoitem.landmarks"><a href="/geo/landmark/{{landmark}}">{{landmark}}</a></li></ul>
+<p>
+  <strong>Bordering Nations: </strong>
+</p>
+<ul>
+  <li data-ng-repeat="nation in geoitem.borders"><a href="/geo/nation/{{nation}}">{{nation}}</a></li>
+</ul>
+<p>
+  <strong>Population: </strong> {{geoitem.population | number: fractionSize}}
+</p>
+<h4>Population Distribution</h4>
+<table class="table table-striped">
+  <thead>
+    <tr><th>Race</th><th>Population</th><th>Fraction of Total</th></tr>
+  </thead>
+  <tbody>
+    <tr data-ng-repeat="pop in geoitem.populationDistribution | orderBy: pop.proportion">
+      <td><a href="/options/races/{{pop.race}}" data-ng-click="cancel()">{{pop.race}}</a></td>
+      <td>{{(pop.proportion * geoitem.population) | number: fractionSize}}</td>
+      <td>{{pop.proportion * 100}}%</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>{{(otherSize * geoitem.population) | number: fractionSize}}</td>
+      <td>{{otherSize * 100}}%</td>
+    </tr>
+  </tbody>
+</table>
+<h4>Government</h4>
+<p>
+  <strong>Current Ruler: </strong> {{geoitem.ruler}}
+</p>
+<div marked="geoitem.government"></div>
+<h4>History</h4>
+<div marked="geoitem.history"></div>
+<h4>Gods and Worship</h4>
+<p><strong>Commonly Worshipped Gods:</strong></p>
+<ul>
+  <li data-ng-repeat="god in geoitem.gods"><a href="/ref/gods/{{god}}" data-ng-click="cancel()">{{god}}</a></li>
+</ul>
+<div marked="geoitem.worship"></div>
+<h4>Cultural Notes</h4>
+<div marked="geoitem.culture"></div>
+<h4>Economics</h4>
+<div marked="geoitem.economics"></div>
+<h3>Laws Concerning Common Topics</h3>
+<h4>Slavery</h4>
+<div marked="geoitem.slavery"></div>
+<h4>Magic</h4>
+<div marked="geoitem.magic"></div>
+<h4>Property</h4>
+<div marked="geoitem.property"></div>
+<h4>Citizenship</h4>
+<div marked="geoitem.citizenship"></div>
+</div>

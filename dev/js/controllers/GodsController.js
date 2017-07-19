@@ -15,7 +15,7 @@
     
     godProvider.getGods().then(function(response) {
       $scope.gods = response.data.documents;
-      $scope.loadGod($scope.gods.filter((a) => {return (a.id === god || a.name === god)})[0].id);
+      $scope.loadGod($scope.gods.filter(function(a) {return (a.id === god || a.name === god);})[0].id);
     });
 
   }]);
