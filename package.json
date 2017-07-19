@@ -37,7 +37,13 @@
     "mongoose": "3.8.0",
     "mongoose-seed-plus": "^0.1.2",
     "passport": "^0.3.2",
-    "passport-local-mongoose": "^4.0.0"
+    "passport-local-mongoose": "^4.0.0",
+    "karma": "^1.7.0",
+    "karma-es5-shim": "0.0.4",
+    "karma-es6-shim": "^1.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "phantomjs-prebuilt": "^2.1.14"
   },
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install && node ./node_modules/gulp/bin/gulp prod"
