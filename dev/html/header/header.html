@@ -76,9 +76,20 @@
                       <li data-ng-if="globals === undefined"><a data-ng-click="register()">Sign Up</a></li>
                       <li data-ng-if="globals === undefined"><a data-ng-click="login('lg')">Sign In</a></li>
                   </ul>
-                  <form class="navbar-form navbar-right search" role="search">
-                    <gcse:searchbox-only></gcse:searchbox-only>
-                  </form>
+                 <div class="search-container">
+                  <script>
+                    (function() {
+                      var cx = '002019895859863268942:tbtmwpd5jy8';
+                      var gcse = document.createElement('script');
+                      gcse.type = 'text/javascript';
+                      gcse.async = true;
+                      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                      var s = document.getElementsByTagName('script')[0];
+                      s.parentNode.insertBefore(gcse, s);
+                    })();
+                  </script>
+                  <gcse:search></gcse:search>
+                  </div>
                 </div><!-- /.navbar-collapse -->
               </div><!-- /.container-fluid -->
             </nav>

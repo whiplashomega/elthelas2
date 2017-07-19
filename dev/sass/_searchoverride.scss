@@ -1,0 +1,37 @@
+@import "vars";
+
+.search-container {
+  @media screen and (min-width: 1024px) {
+    max-width: 30%;
+    float: right;
+  }
+  .gsc-control-cse {
+    background-color: $header-background;
+    border: none;
+  }
+  
+  .gsc-input-box {
+    border-radius: 4px;
+  }
+  
+  table.gsc-search-box {
+    margin-bottom: 0;
+  }
+  
+  .gsc-search-button-v2 {
+    border-color: #3079ed;
+    background-color: #4d90fe;
+    margin-top: 0;
+    height: 24px;
+    background-image: url(https://www.google.com/uds/css/v2/search_box_icon.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+  
+  .gsc-search-button-v2:hover {
+    background-color: #3079ed;
+    background-image: url(https://www.google.com/uds/css/v2/search_box_icon.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}

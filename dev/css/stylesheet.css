@@ -36,3 +36,33 @@ footer {
   color: black;
   font-weight: bold;
   font-size: 110%; }
+
+@media screen and (min-width: 1024px) {
+  .search-container {
+    max-width: 30%;
+    float: right; } }
+
+.search-container .gsc-control-cse {
+  background-color: #f8f8f8;
+  border: none; }
+
+.search-container .gsc-input-box {
+  border-radius: 4px; }
+
+.search-container table.gsc-search-box {
+  margin-bottom: 0; }
+
+.search-container .gsc-search-button-v2 {
+  border-color: #3079ed;
+  background-color: #4d90fe;
+  margin-top: 0;
+  height: 24px;
+  background-image: url(https://www.google.com/uds/css/v2/search_box_icon.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
+
+.search-container .gsc-search-button-v2:hover {
+  background-color: #3079ed;
+  background-image: url(https://www.google.com/uds/css/v2/search_box_icon.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
