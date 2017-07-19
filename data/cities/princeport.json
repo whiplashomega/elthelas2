@@ -1,0 +1,19 @@
+{
+  "name": "Prince Port",
+  "nation": "Dormania",
+  "population": 10000,
+  "metro": 30000,
+  "majority": "Imperial Humans",
+  "ruling": "Imperial Humans",
+  "minorities": [
+    "Lightfoot Halflings",
+    "Imperial Gnomes"
+  ],
+  "exports": [
+    "grain",
+    "cattle"
+  ],
+  "landmarks": [],
+  "coords": [68.9, 147.5],
+  "description": "Prince Port is one of the poorest duchies in Dormania, the land around it is not particularly productive cold plains that exports grain and cattle."
+}

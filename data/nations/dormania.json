@@ -5,7 +5,7 @@
   "color": "#FFFF00",
   "map": "/images/maps/nations/Dormania.jpg",
   "capitol": "Desadorel",
-  "cities": ["Sreppe", "Farengar", "Falak", "Malidal", "East Dormania", "West Dormania", "Wayrest", "Timberlan", "South Port", "East Port", "Orania", "Prince Port", "Cur'Lesto", "Cur'Mestin", "Miner's Rest", "Poron"],
+  "cities": ["Sreppe", "Farengar", "Falak", "Malidal", "East Dormania", "West Dormania", "Wayrest", "Timberlan", "South Port", "East Port", "Orania", "Prince Port", "Cur'Lesto", "Cur'Mestin", "Miner's Rest", "Poron", "Silver Head"],
   "landmarks": ["World Crack", "Great Ramp"],
   "borders": ["Terron", "Malinval", "Arad", "Gerasalim", "Kandor"],
   "population": 5600000,

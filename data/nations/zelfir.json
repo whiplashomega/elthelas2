@@ -1,0 +1,39 @@
+{
+  "name": "Zelfir",
+  "coords": [-54,-127],
+  "border-coords": [],
+  "color": "#FFFF00",
+  "map": "/images/maps/nations/Zelfir.jpg",
+  "capitol": "Zelfin",
+  "cities": ["Mandon", "Last Watch"],
+  "landmarks": ["Sorcerer's Prison", "Veldt"],
+  "borders": ["Hisru'de'tan", "Alfadir", "Dragonhome"],
+  "population": 3000000,
+  "populationDistribution": [{
+    "race": "Hisru Humans",
+    "proportion": 0.8
+  },
+  {
+    "race": "Deran Humans",
+    "proportion": 0.07
+  },
+  {
+    "race": "Staelic Humans",
+    "proportion": 0.06
+  },
+  {
+    "race": "Strongheart Halflings",
+    "proportion": 0.05
+  }],
+  "government": "Three archmagi serve as judges and make executive decisions by majority vote. They are elected by the council of wizards, a legislative body of 23 arcane casters elected by arcanists residing within 22 political districts plus one extra appointed by the high priest of Amathera. Elections for archmage are done proportionally, where the top 3 candidates get a seat. Local districts are ruled by a district governor appointed by the archmagi, and serving at their pleasure. Similarly the archmagi serve until a majority of the council votes to replace them or they lose their seat in that council. Council members serve a maximum of three 6-year terms. The voting eligible population consists of approximately 10,000 arcanists with a registered residence and license to practice magic within the country.",
+  "ruler": "",
+  "history": "At the time of the compact of Gods, only a few of the Sorceron people remained on Elthelas, most of them having either died in the war, or retreated to other planes of existence. One of those, whose name has been lost to history, maintained a kingdom of slaves to serve his every whim in the south of the western continent. Some of his slaves he trained in wizardry to provide additional conveniences. This proved his undoing. Some hundreds of years after the compact, these wizards, having managed to shake off the compulsion of their master, divined a method to imprison him. They lured him away from the kingdom, and their cast a spell that entrapped him forever with only the few slaves he had brought with him within an impenetrable magical barrier. However, when they returned to the city they found that their fellow slaves were confused, and did not know what to do. So they elected from amongst themselves rulers to guide the nation.\n\nZelfir has traditionally been a peaceful nation, although there occasionally have been wars with outside forces from Hisru'de'tan and Alfadir, and once a war with Dera that lasted for nearly a dozen years. Most of the army's time is spent hunting down stray beasts that wander south from the veldt or extraplanar incursions.",
+  "gods": ["Amathera"],
+  "worship": "Amathera is worshiped with monotheistic zeal, and is considered the liberator and protector of their people, to the point of her high priest selecting the only seat in the governing council filled by appointment. Her temples in Zelfir tend to be lavish, while the priests themselves live as paupers, giving donations to the temple to the poor.",
+  "culture": "",
+  "economics": "Zelfir is primarily agrarian and rural, producing large amounts of wheat, barley, and other grains, as well as vegetables for export. In the wet east pepper is the primary good produced for export, while in the eastern mountains they mine iron and other minerals.",
+  "slavery": "Slavery is strictly illegal, as is serfdom.",
+  "magic": "One must have a license to practice magic in Zelfir, and enchantment magic is strictly forbidden. Similarly evocation spells and necromancy spells may only be cast with special dispensation from the local district governor.",
+  "property": "All people are allowed to own property, and property disputes are handled by the district governors, with possibility of appeal to the archmagi.",
+  "citizenship": "Voting rights requires the ability to cast arcane magic, a proper license to do so, and a permanent residence. However, anyone with a permanent residence in the country has the right of appeal to the local district governor to resolve disputes as well as further appeal to the council of archmagi."
+}

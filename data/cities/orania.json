@@ -1,0 +1,16 @@
+{
+  "name": "Orania",
+  "nation": "Dormania",
+  "population": 10000,
+  "metro": 40000,
+  "majority": "Imperial Humans",
+  "ruling": "Imperial Humans",
+  "minorities": [
+    "Imperial Gnomes",
+    "Lightfoot Halflings"
+  ],
+  "exports": [],
+  "landmarks": [],
+  "coords": [65.6, 111.4],
+  "description": "Orania sits at the most inland point along the Dorman river that most ocean-going ships can reach.  Beyond Orania the river splits into several tributaries too shallow for the deep keeled ocean-faring ships.  This makes Orania an important trade city along the river."
+}

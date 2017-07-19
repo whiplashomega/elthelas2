@@ -25,10 +25,10 @@ app.start = function() {
     }
     // connect to our mongoDB database 
     // (uncomment after you enter in your own credentials in config/db.js)
-    mongoose.connect(db.url); 
+    //mongoose.connect(db.url); 
     
     //detect preexisting data and seed the database if not found
-    User.find({}, function(err, user) {
+    /*User.find({}, function(err, user) {
         if(err) throw err;
         if(user.length > 0) {
            //we are good
@@ -41,7 +41,7 @@ app.start = function() {
                  * @name (string, required) : name of model
                  * @clear (boolean, required) : clear DB collection flag
                  */
-                 { path: 'app/models/divines.js', name: 'Divine', clear: true },
+                 /*{ path: 'app/models/divines.js', name: 'Divine', clear: true },
                  { path: 'app/models/gods.js', name: 'God', clear: true },
                  { path: 'app/models/history.js', name: 'History', clear: true },
                  { path: 'app/models/organizations.js', name: 'Organization', clear: true },
@@ -50,7 +50,7 @@ app.start = function() {
                  { path: 'app/models/user.js', name: 'User', clear: true }
             ]);
        }
-    });
+    });*/
     
     // get all data/stuff of the body (POST) parameters
     // parse application/json 

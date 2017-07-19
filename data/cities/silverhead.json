@@ -1,0 +1,19 @@
+{
+  "name": "Silver Head",
+  "nation": "Dormania",
+  "population": 7000,
+  "metro": 21000,
+  "majority": "Imperial Gnomes",
+  "ruling": "Imperial Humans",
+  "minorities": [
+    "Imperial Humans",
+    "Lightfoot Halflings"
+  ],
+  "exports": [
+    "Silver",
+    "Gold"
+  ],
+  "landmarks": [],
+  "coords": [56.5, 116.5],
+  "description": "Silver Head gets its name, and its wealth, from the large silver deposits found in the nearby mines.  Gold is also fairly common in the area, and most of the empires gold comes from the mines here.  Silver Head is also the only city in the empire where gnomes are the majority of the population.  While the city is technically ruled by a human duke, gnomish merchants control the mines."
+}

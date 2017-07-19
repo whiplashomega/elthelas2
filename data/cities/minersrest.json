@@ -1,0 +1,19 @@
+{
+  "name": "Miner's Rest",
+  "nation": "Dormania",
+  "population": 9000,
+  "metro": 27000,
+  "majority": "Imperial Humans",
+  "ruling": "Imperial Gnomes",
+  "minorities": [
+    "Imperial Gnomes",
+    "Lightfoot Halflings"
+  ],
+  "exports": [
+    "coal",
+    "iron"
+  ],
+  "landmarks": [],
+  "coords": [49.2, 145.7],
+  "description": "Miner's Rest is the only duchy in the empire ruled by a non-human family.  The city is, as its name suggests, a mining community that exports coal and iron."
+}

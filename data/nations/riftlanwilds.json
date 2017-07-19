@@ -1,0 +1,51 @@
+{
+  "name": "Riftlan Wilds",
+  "coords": [-22,-145],
+  "border-coords": [],
+  "color": "#FFFF00",
+  "map": "/images/maps/nations/Riftlan.jpg",
+  "capitol": "",
+  "cities": [],
+  "landmarks": [],
+  "borders": ["Zelfir", "Dera", "Dera'Dragorim", "Dragonhome", "Hisru'de'tan"],
+  "population": 50000,
+  "populationDistribution": [{
+    "race": "Genasi",
+    "proportion": 0.5
+  },
+  {
+    "race": "Aasimar",
+    "proportion": 0.1
+  },
+  {
+    "race": "Tieflings",
+    "proportion": 0.1
+  },
+  {
+    "race": "Dragonborn",
+    "proportion": 0.08
+  },
+  {
+    "race": "Deran Humans",
+    "proportion": 0.06
+  },
+  {
+    "race": "Hisru Humans",
+    "proportion": 0.05
+  },
+  {
+    "race": "Fey'ri",
+    "proportion": 0.04
+  }],
+  "government": "",
+  "ruler": "",
+  "history": "The grasslands of the Riftlan Wilds are an incredibly dangerous place, filled with monsters and extraplanar beings.  Creatures with extraplanar origins often feel drawn to the area however, and small fortified settlements of Genasi, Aasimar, and Tieflings exist in isolated pockets throughout the wilds.",
+  "gods": [],
+  "worship": "",
+  "culture": "",
+  "economics": "",
+  "slavery": "",
+  "magic": "",
+  "property": "",
+  "citizenship": ""
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Cur'Lesto",
+  "nation": "Dormania",
+  "population": 6000,
+  "metro": 20000,
+  "majority": "Imperial Humans",
+  "ruling": "Imperial Humans",
+  "minorities": [
+    "Lightfoot Halflings",
+    "Imperial Gnomes"
+  ],
+  "exports": [],
+  "landmarks": [],
+  "coords": [64.7, 121],
+  "description": "Cur'Lesto is a minor dutchy, acting mostly as a local trade center for the areas farmers."
+}

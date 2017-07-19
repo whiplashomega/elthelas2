@@ -3,18 +3,22 @@
     /*max-width: 1024px;*/
     height: 800px;
     width: 90%;
-    margin: 10px 10px;
+    margin: 10px auto;
     position: relative;
     outline: none;
+  }
+  .btn-group {
+    margin: 10px 5%;
   }
 </style>
 
 <h1>Geography</h1>
-<div class="btn-group" style="margin: 10px 10px;">
+<div class="btn-group">
   <input type="button" class="btn btn-primary" data-ng-click="showCities()" value="Cities" />
   <input type="button" class="btn btn-primary" data-ng-click="showContinents()" value="Continents and Oceans" />
-  <input type="button" class="btn btn-primary" data-ng-click="showFeatures()" value="Features" />
+  <input type="button" class="btn btn-primary" data-ng-click="showFeatures()" value="Geographical Features" />
   <input type="button" class="btn btn-primary" data-ng-click="showLandmarks()" value="Landmarks" />
   <input type="button" class="btn btn-primary" data-ng-click="showNations()" value="Nations" />
+  <input type="button" class="btn btn-primary" data-ng-click="showAll()" value="Show All" />
 </div>
 <div id="map"></div>

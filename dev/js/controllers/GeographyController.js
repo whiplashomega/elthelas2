@@ -58,6 +58,27 @@
       markers.push(marker);
     }
     
+    $scope.showAll = function() {
+      for(var i = 0; i < markers.length; i++) {
+        map.removeLayer(markers[i]);
+      }
+      for(var x = 0; x < $scope.cities.length; x++) {
+        addmarker($scope.cities[x], "city");
+      } 
+      for(var x = 0; x < $scope.nations.length; x++) {
+        addmarker($scope.nations[x], "nation");
+      }
+      for(var x = 0; x < $scope.landmarks.length; x++) {
+        addmarker($scope.landmarks[x], "landmark");
+      }
+      for(var x = 0; x < $scope.features.length; x++) {
+        addmarker($scope.features[x], "feature");
+      }
+      for(var x = 0; x < $scope.continents.length; x++) {
+        addmarker($scope.continents[x], "continent");
+      }
+    }
+    
     $scope.showCities = function() {
       for(var i = 0; i < markers.length; i++) {
         map.removeLayer(markers[i]);

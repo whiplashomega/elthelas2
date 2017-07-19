@@ -1,0 +1,39 @@
+{
+  "name": "Shendarel",
+  "coords": [-2,-4],
+  "border-coords": [],
+  "color": "#FFFF00",
+  "map": "/images/maps/nations/Shendarel.jpg",
+  "capitol": "Swava",
+  "cities": [],
+  "landmarks": [],
+  "borders": ["Olda", "Eldoran", "Gnarra"],
+  "population": 300000,
+  "populationDistribution": [{
+    "race": "Neran Humans",
+    "proportion": 0.7
+  }, 
+  {
+    "race": "Half-Elves",
+    "proportion": 0.15
+  },
+  {
+    "race": "High Elves",
+    "proportion": 0.08
+  },
+  {
+    "race": "Imperial Humans",
+    "proportion": 0.05
+  }],
+  "government": "Shendarel has been ruled by a feudal-style monarchy for the past 1000 years, with a (mostly) unbroken line of kings and queens for that entire period (excluding certain cousins inheriting). The nobles are kept in line with the king by the ever-present need to defend their country from the land-hungry High Orcs and their servants. Most people in the country have served as soldiers at one point or another, and if you have not served your term of service it is impermissible to own property (of any kind).",
+  "ruler": "Queen Gretchen Strongheart",
+  "history": "Shendarel was originally settled as two separate colonies, which later merged into the city of Swava, about 1100 years ago: one by a group of Elves expanding south from Eldoran, and the other a human expedition sent from a now-disappeared nation somewhere around present day Kandor. The eventual intermingling of blood meant that the bulk of the nobility and the established population, as well as the royal line, were in fact Half-Elves. This remained the case until the disaster at Nerim, when a massive amount of refugees arrived, outnumbering the locals by almost 3 to 1. This influx of impoverished people led to a vast growth in the population of serfs.",
+  "gods": ["Alohim", "Amathera", "Cora"],
+  "worship": "The God most commonly worshiped differs primarily by social class, with most of the nobility worshiping Alohim, while their men-at-arms and other soldiers worship Cora. The serfs generally worship Amathera. Nevertheless almost all clerics and priests in Shendarel are schooled in war, and often ride out with the soldiers when the community is threatened.",
+  "culture": "War is a way of life in Shendarel. Serfs generally live in fear of both the nobility above them, and regular attacks by orcs, trollkin, and their goblin slaves. Meanwhile the only real way to get out of serfdom is to join the army, where the first possessions one owns for themselves are their weapons and armor.",
+  "economics": "Economically, Shendarel exports grains, vegetables, and many other food products far in excess of the needs of their population, but imports large amounts of weapons and armors, mostly elven made. In many ways economically they are still a colony of Eldoran.",
+  "slavery": "While slavery is technically illegal, serfdom in Shendarel is barely different. Serfs cannot own property of any kind, and leaving the land of their liege lord is almost impossible without being considered an outlaw.",
+  "magic": "Those who can use magic in Shendarel are typically forced into military service unless they are already people of property. Wizards are rare simply because few have the time for extensive study.",
+  "property": "Land ownership can only be granted rather than purchased. Other property can only be owned by people who have served in the military.",
+  "citizenship": "Citizenship is a misnomer in a land where rights are granted according to birth."
+}

@@ -1,13 +1,16 @@
 {
   "name": "Sreppe",
   "nation": "Dormania",
-  "population": 0,
-  "metro": 0,
-  "majority": "",
-  "ruling": "",
-  "minorities": [],
+  "population": 30000,
+  "metro": 120000,
+  "majority": "Imperial Humans",
+  "ruling": "Imperial Humans",
+  "minorities": [
+    "Imperial Gnomes",
+    "Stagen Gnomes"
+  ],
   "exports": [],
   "landmarks": [],
   "coords": [59.5, 119],
-  "description": ""
+  "description": "Sreppe is the gateway to the west for Dormania, merchants from Gerasalim and Kandor wishing to move their goods into the Empire come to Sreppe to sell their goods.  Meanwhile Sreppe is a major center for smelting and goods production, bringing in Kandori timber and minerals from the Sword Mountains."
 }
