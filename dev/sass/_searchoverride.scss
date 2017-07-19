@@ -6,7 +6,7 @@
     float: right;
   }
   .gsc-control-cse {
-    background-color: $header-background;
+    background-color: $navbackground;
     border: none;
   }
   
@@ -19,8 +19,8 @@
   }
   
   .gsc-search-button-v2 {
-    border-color: #3079ed;
-    background-color: #4d90fe;
+    border: none;
+    background-color: $success;
     margin-top: 0;
     height: 24px;
     background-image: url(https://www.google.com/uds/css/v2/search_box_icon.png);
@@ -29,7 +29,7 @@
   }
   
   .gsc-search-button-v2:hover {
-    background-color: #3079ed;
+    background-color: $successhover;
     background-image: url(https://www.google.com/uds/css/v2/search_box_icon.png);
     background-position: 50% 50%;
     background-repeat: no-repeat;

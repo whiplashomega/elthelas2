@@ -1,5 +1,8 @@
+@import "vars";
+
 .sidenav .nav {
   li a {
-    background-color: #eeeeee;
+    background-color: $sidenavbackground;
+    color: $sidenavcolor;
   }
 }

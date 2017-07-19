@@ -30,7 +30,8 @@ footer {
   height: auto; }
 
 .sidenav .nav li a {
-  background-color: #eeeeee; }
+  background-color: #6784C6;
+  color: #ffffff; }
 
 .nav a {
   color: black;
@@ -43,7 +44,7 @@ footer {
     float: right; } }
 
 .search-container .gsc-control-cse {
-  background-color: #f8f8f8;
+  background-color: #3E60AF;
   border: none; }
 
 .search-container .gsc-input-box {
@@ -53,8 +54,8 @@ footer {
   margin-bottom: 0; }
 
 .search-container .gsc-search-button-v2 {
-  border-color: #3079ed;
-  background-color: #4d90fe;
+  border: none;
+  background-color: #0A9595;
   margin-top: 0;
   height: 24px;
   background-image: url(https://www.google.com/uds/css/v2/search_box_icon.png);
@@ -62,7 +63,63 @@ footer {
   background-repeat: no-repeat; }
 
 .search-container .gsc-search-button-v2:hover {
-  background-color: #3079ed;
+  background-color: #043535;
   background-image: url(https://www.google.com/uds/css/v2/search_box_icon.png);
   background-position: 50% 50%;
   background-repeat: no-repeat; }
+
+.btn-primary, .btn-default {
+  background-color: #0E3182;
+  color: #ffffff; }
+
+.btn-primary:hover, .btn-default:hover {
+  background-color: #040e26; }
+
+.alert-info {
+  background-color: #0e3284;
+  color: #ffffff; }
+
+.btn-success {
+  background-color: #0A9595;
+  color: #ffffff; }
+
+.alert-success {
+  background-color: #0a9797;
+  color: #ffffff; }
+
+.btn-success:hover {
+  background-color: #043535; }
+
+.btn-warning {
+  background-color: #8069C9;
+  color: #000000; }
+
+.alert-warning {
+  background-color: #816bca;
+  color: #000000; }
+
+.btn-warning:hover {
+  background-color: #4d3696; }
+
+.btn-danger {
+  background-color: #3F1EAB;
+  color: #ffffff; }
+
+.alert-danger {
+  background-color: #401ead; }
+
+.btn-danger:hover {
+  background-color: #1f0f54; }
+
+.navbar-default {
+  background-color: #3E60AF; }
+  .navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
+    color: #ffffff; }
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-brand:hover {
+    color: #4d4d4d; }
+
+.jumbotron {
+  margin-top: 55px;
+  background-color: #c3e6e6; }
+  .jumbotron h1 a {
+    color: #000000; }

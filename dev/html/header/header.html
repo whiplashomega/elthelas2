@@ -1,12 +1,4 @@
-            <header class="header">
-                <h1>
-                  <a href="/">
-                  <img src="/images/swordshieldlogo.png" alt="" class="logo" /><span data-ng-cloak>Elthelas Campaign Setting - {{title}}</span>
-                  </a>
-                </h1>
-            
-            </header>
-            <nav class="navbar navbar-default">
+            <nav class="navbar navbar-default navbar-fixed-top">
               <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -93,6 +85,16 @@
                 </div><!-- /.navbar-collapse -->
               </div><!-- /.container-fluid -->
             </nav>
+            <header class="header jumbotron">
+                <h1>
+                  <a href="/">
+                  <img src="/images/swordshieldlogo.png" alt="" class="logo" /><span data-ng-cloak>Elthelas Campaign Setting - {{title}}</span>
+                  </a>
+                </h1>
+              
+            
+            </header>
+            
             <div data-ng-if="message" class="alert alert-warning">
               {{ message }}
             </div>

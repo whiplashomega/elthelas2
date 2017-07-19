@@ -1,0 +1,75 @@
+@import "vars";
+
+.btn-primary, .btn-default {
+  background-color: $primary;
+  color: $primarytext;
+}
+
+.btn-primary:hover, .btn-default:hover {
+  background-color: $primaryhover;
+}
+
+.alert-info {
+  background-color: lighten($primary, 0.4);
+  color: $primarytext;
+}
+
+.btn-success {
+  background-color: $success;
+  color: $successtext;
+}
+
+.alert-success {
+  background-color: lighten($success, 0.4);
+  color: $successtext;
+}
+
+.btn-success:hover {
+  background-color: $successhover;
+}
+
+.btn-warning {
+  background-color: $warning;
+  color: $warningtext;
+}
+
+.alert-warning {
+  background-color: lighten($warning, 0.4);
+  color: $warningtext;
+}
+
+.btn-warning:hover {
+  background-color: $warninghover;
+}
+
+.btn-danger {
+  background-color: $danger;
+  color: $dangertext;
+}
+
+.alert-danger {
+  background-color: lighten($danger, 0.4);
+}
+
+.btn-danger:hover {
+  background-color: $dangerhover;
+}
+
+.navbar-default {
+  background-color: $navbackground;
+  .navbar-nav>li>a, .navbar-brand {
+    color: $navtext;
+  }
+  
+  .navbar-nav>li>a:hover, .navbar-brand:hover {
+    color: $headerhover;
+  }
+}
+
+.jumbotron {
+  margin-top: 55px;
+  background-color: $header;
+  h1 a {
+    color: $headertext;
+  }
+}
