@@ -1,1 +1,1537 @@
-"use strict";!function(e,t){var n=t.module("elthelas",["ui.router","hc.marked","ui.bootstrap","ngCookies","ngTimeline"]);n.run(["$state","$stateParams",function(e,t){}]),n.config(["$stateProvider","$urlRouterProvider","$locationProvider",function(e,t,n){e.state("app",{url:"/",views:{header:{templateUrl:"/html/header/header.html",controller:"HeaderController"},footer:{templateUrl:"/html/footer/footer.html"},content:{templateUrl:"/html/content/home.html"},head:{templateUrl:"/html/head/home.html"},sidebar:{templateUrl:"/html/empty.html"}},data:{title:"Home"}}).state("app.domains",{url:"options/domains",views:{"content@":{templateUrl:"/html/content/options/domains.html"},"head@":{templateUrl:"/html/head/options/domains.html"},"sidebar@":{templateUrl:"/html/sidebar/options.html"}},data:{title:"Domains"}}).state("app.races",{url:"options/races",views:{"content@":{templateUrl:"/html/content/options/races.html",controller:"RaceController"},"head@":{templateUrl:"/html/head/options/races.html"},"sidebar@":{templateUrl:"/html/sidebar/options.html"}},data:{title:"Races"},resolve:{race:function(){return!1}}}).state("app.race",{url:"options/races/:race",views:{"content@":{templateUrl:"/html/content/options/races.html",controller:"RaceController"},"head@":{templateUrl:"/html/head/options/races.html"},"sidebar@":{templateUrl:"/html/sidebar/options.html"}},data:{title:"Races"},resolve:{race:function(e){return e.race}}}).state("app.languages",{url:"options/languages",views:{"content@":{templateUrl:"/html/content/options/languages.html",controller:"LanguagesController"},"head@":{templateUrl:"/html/head/options/languages.html"},"sidebar@":{templateUrl:"/html/sidebar/options.html"}},data:{title:"Languages"}}).state("app.gods",{url:"ref/gods",views:{"content@":{templateUrl:"/html/content/ref/gods.html",controller:"GodsController"},"head@":{templateUrl:"/html/head/ref/gods.html"},"sidebar@":{templateUrl:"/html/sidebar/ref.html"}},data:{title:"Gods"},resolve:{god:function(){return!1}}}).state("app.god",{url:"ref/gods/:god",views:{"content@":{templateUrl:"/html/content/ref/gods.html",controller:"GodsController"},"head@":{templateUrl:"/html/head/ref/gods.html"},"sidebar@":{templateUrl:"/html/sidebar/ref.html"}},data:{title:"Gods"},resolve:{god:function(e){return e.god}}}).state("app.organizations",{url:"ref/orgs",views:{"content@":{templateUrl:"/html/content/ref/organizations.html",controller:"OrganizationController"},"head@":{templateUrl:"/html/head/ref/organizations.html"},"sidebar@":{templateUrl:"/html/sidebar/ref.html"}},data:{title:"Organizations"},resolve:{org:function(){return!1}}}).state("app.organization",{url:"ref/orgs/:org",views:{"content@":{templateUrl:"/html/content/ref/organizations.html",controller:"OrganizationController"},"head@":{templateUrl:"/html/head/ref/organizations.html"},"sidebar@":{templateUrl:"/html/sidebar/ref.html"}},data:{title:"Organizations"},resolve:{org:function(e){return e.org}}}).state("app.calendar",{url:"ref/calendar",views:{"content@":{templateUrl:"/html/content/ref/calendar.html"},"head@":{templateUrl:"/html/head/ref/calendar.html"},"sidebar@":{templateUrl:"/html/sidebar/ref.html"}},data:{title:"Calendar"}}).state("app.cosmology",{url:"ref/cosmology",views:{"content@":{templateUrl:"/html/content/ref/cosmology.html"},"head@":{templateUrl:"/html/head/ref/cosmology.html"},"sidebar@":{templateUrl:"/html/sidebar/ref.html"}},data:{title:"Cosmology"}}).state("app.astronomy",{url:"ref/astronomy",views:{"content@":{templateUrl:"/html/content/ref/astronomy.html"},"head@":{templateUrl:"/html/head/ref/astronomy.html"},"sidebar@":{templateUrl:"/html/sidebar/ref.html"}},data:{title:"Astronomy"}}).state("app.magic",{url:"ref/magic",views:{"content@":{templateUrl:"/html/content/ref/magic.html"},"head@":{templateUrl:"/html/head/ref/magic.html"},"sidebar@":{templateUrl:"/html/sidebar/ref.html"}},data:{title:"Magic"}}).state("app.divines",{url:"ref/divines",views:{"content@":{templateUrl:"/html/content/ref/divines.html",controller:"DivineController"},"head@":{templateUrl:"/html/head/ref/divines.html"},"sidebar@":{templateUrl:"/html/sidebar/ref.html"}},data:{title:"Divines"}}).state("app.quickref",{url:"ref/quick",views:{"content@":{templateUrl:"/html/content/ref/quick.html",controller:"QuickController"},"head@":{templateUrl:"/html/head/ref/quick.html"},"sidebar@":{templateUrl:"/html/sidebar/ref.html"}},data:{title:"Quick Reference Manual"}}).state("app.history",{url:"history",views:{"content@":{templateUrl:"/html/content/history.html",controller:"HistoryController"},"head@":{templateUrl:"/html/head/history.html"},"sidebar@":{templateUrl:"/html/empty.html"}},data:{title:"History"},resolve:{event:function(){return!1}}}).state("app.historyevent",{url:"history/:eventname",views:{"content@":{templateUrl:"/html/content/history.html",controller:"HistoryController"},"head@":{templateUrl:"/html/head/history.html"},"sidebar@":{templateUrl:"/html/empty.html"}},data:{title:"History"},resolve:{event:function(e){return e.eventname}}}).state("app.classes",{url:"ref/class",views:{"content@":{templateUrl:"/html/content/options/classes.html",controller:"ClassController"},"head@":{templateUrl:"/html/head/options/races.html"},"sidebar@":{templateUrl:"/html/sidebar/options.html"}}}).state("app.geo",{url:"geo",views:{"content@":{templateUrl:"/html/content/geo.html",controller:"GeographyController"},"head@":{templateUrl:"/html/head/geo.html"},"sidebar@":{templateUrl:"/html/empty.html"}},data:{title:"Geography"},resolve:{location:function(){return!1},type:function(){return!1}}}).state("app.geoitem",{url:"geo/:type/:location",views:{"content@":{templateUrl:"/html/content/geo.html",controller:"GeographyController"},"head@":{templateUrl:"/html/head/geo.html"},"sidebar@":{templateUrl:"/html/empty.html"}},data:{title:"Geography"},resolve:{type:function(e){return e.type},location:function(e){return e.location}}}),n.html5Mode(!0)}])}(jQuery,angular),function(e,t){t.module("elthelas").controller("DivineController",["$scope","divineProvider",function(e,t){e.Divine="",e.divines=[],e.types=[],e.divineFilter=null,e.filterDivines=function(t){return null===e.divineFilter||t.type===e.divineFilter},e.loadDivine=function(t){e.Divine=e.divines.filter(function(e){return e.id===t})[0]},t.getDivines().then(function(t){e.divines=t.data.documents;for(var n=0;n<e.divines.length;n++)-1===e.types.indexOf(e.divines[n].type)&&e.types.push(e.divines[n].type)})}])}(jQuery,angular),function(e,t){t.module("elthelas").controller("GodsController",["$scope","godProvider","god",function(e,t,n){e.gods=!1,e.GodByName="",e.alignment="",e.loadGod=function(t){e.GodByName=e.gods.filter(function(e){return e.id===t})[0]},t.getGods().then(function(t){e.gods=t.data.documents,e.loadGod(e.gods.filter(function(e){return e.id===n||e.name===n})[0].id)})}])}(jQuery,angular),function(e,t,n){e.module("elthelas").controller("HeaderController",["$scope","$state","$rootScope","$uibModal","$document","AuthenticationProvider",function(e,o,r,a,l,i){var s=n.createElement("script");s.type="text/javascript",s.async=!0,s.src=(n.location.protocol,"https://www.google.com/cse/cse.js?cx=002019895859863268942:tbtmwpd5jy8");var c=n.getElementsByTagName("script")[0];c.parentNode.insertBefore(s,c),e.title=o.current.data.title,r.$on("$stateChangeSuccess",function(t,n,r,a,l,i){e.title=o.current.data.title}),i.LoadFromCookies(),e.globals=r.globals,e.message=!1,e.login=function(n){var o=t("body");a.open({animation:!0,ariaLabelledBy:"modal-title",ariaDescribedBy:"modal-body",templateUrl:"/app_dev.php/login",controller:"LoginController",size:n,appendTo:o}).result.then(function(t){e.globals=r.globals},function(){console.log("Modal dismissed at: "+new Date),e.globals=r.globals})},e.logout=function(){e.globals=void 0,i.ClearCredentials()},e.register=function(n){var o=t("body");a.open({animation:!0,ariaLabelledBy:"modal-title",ariaDescribedBy:"modal-body",templateUrl:"/app_dev.php/register/",controller:"RegisterController",size:n,appendTo:o}).result.then(function(t){t(),e.message=r.message,setTimeout(function(){e.message=!1,e.$apply()},5e3)},function(){console.log("Modal dismissed at: "+new Date),e.globals=r.globals})}}])}(angular,jQuery,document),function(e,t){t.module("elthelas").controller("LanguagesController",["$scope",function(t){t.init=function(){e(".datatable").dataTable()}}])}(jQuery,angular),function(e,t){t.module("elthelas").controller("OrganizationController",["$scope","$location","organizationProvider","org",function(e,t,n,o){e.currentOrg=!1,e.loadOrg=function(t){var n=e.organizations.filter(function(e){return e.id===t});n.length>0?e.currentOrg=n[0]:e.currentOrg={id:"error",name:""}},n.getOrganizations().then(function(t){e.organizations=t.data.documents,o&&e.loadOrg(e.organizations.filter(function(e){return e.id===o||e.title===o})[0].id)})}])}(jQuery,angular),function(e,t){t.module("elthelas").controller("QuickController",["$scope","SpellProvider","$uibModal",function(t,n,o){t.loadSpell=function(n){t.currentSpell=t.spells[n],t.$apply();var r=e("body");o.open({animation:!0,ariaLabelledBy:"modal-title",ariaDescribedBy:"modal-body",templateUrl:"/html/modals/spell.html",controller:"SpellController",size:"lg",appendTo:r,resolve:{spell:function(){return t.currentSpell}}}).result.then(function(e){},function(){console.log("Modal dismissed at: "+new Date)})},t.currentSpell=!1,t.spells,this.init=function(){n.getSpells().then(function(n){t.spells=n.data.documents;for(var o=[],r=0;r<t.spells.length;r++){void 0!==t.spells[r].level?t.spells[r].level=t.spells[r].level.replace("level",""):t.spells[r].level=" ";var a="spell"+r,l=['<a href="#" data-spellid="'+r+'" class="'+a+'">'+t.spells[r].title+"</a>",t.spells[r].level,t.spells[r].school,t.spells[r].castingTime,t.spells[r].duration,t.spells[r].tags.join(", "),"<input type='button' value='View' class='btn btn-sm btn-primary "+a+"' data-spellid='"+r+"' />"];o.push(l)}e("#spelltable").dataTable({data:o,responsive:!0,columns:[{title:"Title"},{title:"Level"},{title:"School"},{title:"Casting Time"},{title:"Duration"},{title:"Tags"},{title:"View"}],drawCallback:function(){for(var n=function(){t.loadSpell(Number(e(this).attr("data-spellid")))},o=0;o<t.spells.length;o++)e(".spell"+o).click(n)}})})},this.init()}])}(jQuery,angular),function(e,t){t.module("elthelas").controller("RaceController",["$scope","raceProvider","race",function(t,n,o){t.currentRace=!1,t.loadRace=function(e){var n=t.races.filter(function(t){return t.id===e});n.length>0?t.currentRace=n[0]:t.currentRace={id:"error",name:""}},t.formatAgeDataRow=function(e){var t=[];try{t.push(e.name),t.push(e.agepoints.puberty),t.push(e.agepoints.sexualmaturity),t.push(e.agepoints.mentalmaturity),t.push(e.agepoints.middleage),t.push(e.agepoints.oldage),t.push(e.agepoints.averagelifespan),t.push(e.agepoints.maxage)}catch(n){t=[],void 0===e.name||null===e.name?t.push("Error"):t.push(e.name),t.push(1),t.push(2),t.push(3),t.push(4),t.push(5),t.push(6),t.push(7)}return t},t.getAllAgeData=function(){for(var e=[],n=0;n<t.races.length;n++)e.push(this.formatAgeDataRow(t.races[n]));return e},t.formatSizeDataRow=function(e,t){var n=[];null!==t&&void 0!==t||(t="default");try{var o=e.subraces.filter(function(e){return e.id===t})[0];"default"===t?n.push(e.name):n.push(o.name),n.push(Math.floor(o.averageheight/12)+"'"+o.averageheight%12+'"'),n.push(Math.floor(o.baseheight/12)+"'"+o.baseheight%12+'"'),n.push(o.heightroll),n.push(o.averageweight+" lbs"),n.push(o.baseweight+" lbs"),n.push("Height Roll * "+o.weightroll)}catch(e){n=["Error",1,1,1,1,1,1]}return n},t.getAllSizeData=function(){for(var e=[],n=0;n<t.races.length;n++){var o=t.races[n];if(null===o.subraces||void 0===o.subraces)e.push(t.formatSizeDataRow(o));else for(var r=0;r<o.subraces.length;r++)e.push(t.formatSizeDataRow(o,o.subraces[r].id))}return e},n.getRaces().then(function(n){t.races=n.data.documents,o&&t.loadRace(t.races.filter(function(e){if(e.id===o||e.name===o)return!0;for(var t=0;t<e.subraces.length;t++)if(e.subraces[t].id===o||e.subraces[t].name===o)return!0})[0].id),e("#ageTable").dataTable({data:t.getAllAgeData(),columns:[{title:"Race"},{title:"Start of Puberty"},{title:"Sexual Maturity"},{title:"Mental Maturity"},{title:"Middle Age"},{title:"Old Age"},{title:"Average Lifespan"},{title:"Maximum Age"}]}),e("#sizeTable").dataTable({data:t.getAllSizeData(),columns:[{title:"Race/Subrace"},{title:"Average Height"},{title:"Base Height"},{title:"Height Roll"},{title:"Average Weight"},{title:"Base Weight"},{title:"Weight Roll"}]})})}])}(jQuery,angular),function(e,t){angular.module("elthelas").controller("LoginController",["$scope","$location","AuthenticationProvider","$uibModalInstance",function(e,n,o,r){function a(){return l.dataLoading=!0,o.Login(e.username,e.password,l.postLogin)}var l=this;e.username,e.password,e.rememberMe,e.login=a,l.postLogin=function(n){200===n.status?n.data.success?(o.SetCredentials(e.username,e.password,e.rememberMe),r.close("login success")):(t(".modal-body .alert").remove(),t(".modal-body").prepend("<div class='alert alert-danger'>"+n.data.message+"</div>")):l.dataLoading=!1},e.cancel=function(){r.dismiss("cancel")}}])}(angular,jQuery),function(e,t){e.module("elthelas").controller("RegisterController",["$location","$http","$rootScope","$uibModalInstance","$scope","AuthenticationProvider",function(e,n,o,r,a,l){function i(){s.dataLoading=!0,l.Register(t("#fos_user_registration_form_username").val(),t("#fos_user_registration_form_plainPassword_first").val(),t("#fos_user_registration_form_plainPassword_second").val(),t("#fos_user_registration_form_email").val(),t("#fos_user_registration_form__token").val(),function(e){r.close(function(){o.message=e.data})})}var s=this;a.register=i,a.cancel=function(){r.dismiss("cancel")}}])}(angular,jQuery),function(e){e.module("elthelas").controller("SpellController",["$scope","$uibModalInstance","spell",function(e,t,n){e.spell=n,e.cancel=function(){t.close("cancel")}}])}(angular),function(e,t){e.module("elthelas").controller("HistoryController",["marked","$scope","HistoryProvider","$uibModal","event",function(e,n,o,r,a){n.options={language:"el",layout:"portrait",timenav_position:"top",scale_factor:20},n.history=[],o.getHistory().then(function(o){n.history=o.data.documents;var l={title:{text:{headline:"Known History of Elthelas",text:""}},events:n.history};for(var i in l.events)l.events[i].text.text=e(l.events[i].text.text);if(n.timeline.setData(l),n.timeline.goTo(l.events.length),a){var s=n.history.filter(function(e){return e.text.headline.toLowerCase().replace(/ /g,"")===a.toLowerCase().replace(/ /g,"")})[0];r.open({animation:!0,ariaLabelledBy:"modal-title",ariaDescribedBy:"modal-body",templateUrl:"/html/modals/event.html",controller:"HistoryEventController",size:"lg",appendTo:t("body"),resolve:{event:function(){return s}}}).result.then(function(e){},function(){console.log("Modal dismissed at: "+new Date)})}},function(){})}]).controller("HistoryEventController",["$scope","$uibModalInstance","event",function(e,t,n){function o(e){switch(Number(e.data.month)){case 1:e.month="Neradan";break;case 2:e.month="Dorunor";break;case 3:e.month="Trimalan";break;case 4:e.month="Sylvanus";break;case 5:e.month="Gaiana";break;case 6:e.month="Alohiman";break;case 7:e.month="Coranus";break;case 8:e.month="Moltyr";break;case 9:e.month="Saris";break;case 10:e.month="Maridia";break;case 11:e.month="Tockra";break;case 12:e.month="Amatherin"}return e.day=e.data.day,e.year=e.data.year,e}e.event=n,e.event.start_date=o(e.event.start_date),e.event.end_date&&(e.event.end_date=o(e.event.end_date)),e.cancel=function(){t.close("cancel")}}])}(angular,jQuery),function(e,t){e.module("elthelas").controller("ClassController",["$scope",function(e){t(".racediv").hide(),t(".racebutton").click(function(){var e=t(this).attr("data-race");t(".racediv").hide(),t("#"+e).show()})}])}(angular,jQuery),function(e,t){t.module("elthelas").controller("GeographyController",["$scope","geoProvider","$uibModal","$q","type","location",function(t,n,o,r,a,l){function i(t,n){var r=e("body");o.open({animation:!0,ariaLabelledBy:"modal-title",ariaDescribedBy:"modal-body",templateUrl:"/html/modals/"+n+".html",controller:"GeoDetailsController",size:"lg",appendTo:r,resolve:{geoitem:function(){return t}}}).result.then(function(e){},function(){console.log("Modal dismissed at: "+new Date)})}function s(t,n){var o=L.marker(t.coords,{alt:t.name,city:t}).bindTooltip(t.name,{permanent:!0,interactive:!0,direction:"auto",opacity:.75});e(o).click(function(){c.flyTo(t.coords,4),i(t,n)}),o.addTo(c),u.push(o)}t.cities,t.continents,t.nations,t.features,t.landmarks;var c=L.map("map").setView([0,0],2);c.on("click",function(e){alert("Lat, Lon : "+e.latlng.lat+", "+e.latlng.lng)});var u=[];L.tileLayer("/images/maps/tiles/{z}/{y}/{x}.png",{attribution:"|--------| = 320/160/80/40 miles by zoom | map image created by Heather Domaszek",minZoom:0,maxZoom:4,tms:!0,noWrap:!0}).addTo(c),t.showAll=function(){for(var e=0;e<u.length;e++)c.removeLayer(u[e]);for(var n=0;n<t.cities.length;n++)s(t.cities[n],"city");for(var o=0;o<t.nations.length;o++)s(t.nations[o],"nation");for(var r=0;r<t.landmarks.length;r++)s(t.landmarks[r],"landmark");for(var a=0;a<t.features.length;a++)s(t.features[a],"feature");for(var l=0;l<t.continents.length;l++)s(t.continents[l],"continent")},t.showCities=function(){for(var e=0;e<u.length;e++)c.removeLayer(u[e]);for(var n=0;n<t.cities.length;n++)s(t.cities[n],"city")},t.showNations=function(){for(var e=0;e<u.length;e++)c.removeLayer(u[e]);for(var n=0;n<t.nations.length;n++)s(t.nations[n],"nation")},t.showFeatures=function(){for(var e=0;e<u.length;e++)c.removeLayer(u[e]);for(var n=0;n<t.features.length;n++)s(t.features[n],"feature")},t.showLandmarks=function(){for(var e=0;e<u.length;e++)c.removeLayer(u[e]);for(var n=0;n<t.landmarks.length;n++)s(t.landmarks[n],"landmark")},t.showContinents=function(){for(var e=0;e<u.length;e++)c.removeLayer(u[e]);for(var n=0;n<t.continents.length;n++)s(t.continents[n],"continent")},r.all([n.getCities().then(function(e){t.cities=e.data.documents},function(e){console.log(e)}),n.getNations().then(function(e){t.nations=e.data.documents},function(e){console.log(e)}),n.getFeatures().then(function(e){t.features=e.data.documents},function(e){console.log(e)}),n.getLandmarks().then(function(e){t.landmarks=e.data.documents},function(e){console.log(e)}),n.getContinents().then(function(e){t.continents=e.data.documents},function(e){console.log(e)})]).then(function(){var e;l&&a&&("continent"===a&&(e=t.continents.filter(function(e){return e.name===l})[0]),"city"===a&&(e=t.cities.filter(function(e){return e.name===l})[0]),"nation"===a&&(e=t.nations.filter(function(e){return e.name===l})[0]),"landmark"===a&&(e=t.landmarks.filter(function(e){return e.name===l})[0]),"feature"===a&&(e=t.features.filter(function(e){return e.name===l})[0]),i(e,a))})}]).controller("GeoDetailsController",["$scope","$uibModalInstance","geoitem",function(e,t,n){if(e.geoitem=n,e.otherSize=1,e.init=function(){var e=L.map("smallmap").setView(n.coords,4);L.tileLayer("/images/maps/tiles/{z}/{y}/{x}.png",{attribution:"|--------| = 320/160/80/40 miles by zoom | map image created by Heather Domaszek",minZoom:0,maxZoom:4,tms:!0,noWrap:!0}).addTo(e)},n.populationDistribution)for(var o=0;o<n.populationDistribution.length;o++)e.otherSize-=n.populationDistribution[o].proportion;e.cancel=function(){t.close("cancel")}}])}(jQuery,angular),function(e,t){t.module("elthelas").factory("divineProvider",["$q","$http",function(e,t){var n={};return n.getDivines=function(){var n=e.defer();return t.get("/json/divines.json").then(function(e){n.resolve(e)},function(e){n.reject()}),n.promise},n}])}(jQuery,angular),function(e,t){t.module("elthelas").factory("godProvider",["$q","$http",function(e,t){var n={};return n.getGods=function(){var n=e.defer();return t.get("/json/gods.json").then(function(e){n.resolve(e)},function(e){n.reject()}),n.promise},n}])}(jQuery,angular),function(e,t){t.module("elthelas").factory("organizationProvider",["$q","$http",function(e,t){var n={};return n.getOrganizations=function(){var n=e.defer();return t.get("/json/organizations.json").then(function(e){n.resolve(e)},function(e){n.reject()}),n.promise},n}])}(jQuery,angular),function(e,t){t.module("elthelas").factory("raceProvider",["$q","$http",function(e,t){var n={};return n.getRaces=function(){var n=e.defer();return t.get("/json/races.json").then(function(e){n.resolve(e)},function(e){n.reject()}),n.promise},n}])}(jQuery,angular),function(e){var t={keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(e){var t,n,o,r,a,l="",i="",s="",c=0;do{t=e.charCodeAt(c++),n=e.charCodeAt(c++),i=e.charCodeAt(c++),o=t>>2,r=(3&t)<<4|n>>4,a=(15&n)<<2|i>>6,s=63&i,isNaN(n)?a=s=64:isNaN(i)&&(s=64),l=l+this.keyStr.charAt(o)+this.keyStr.charAt(r)+this.keyStr.charAt(a)+this.keyStr.charAt(s),t=n=i="",o=r=a=s=""}while(c<e.length);return l},decode:function(e){var t,n,o,r,a,l="",i="",s="",c=0;/[^A-Za-z0-9\+\/\=]/g.exec(e)&&window.alert("There were invalid base64 characters in the input text.\nValid base64 characters are A-Z, a-z, 0-9, '+', '/',and '='\nExpect errors in decoding."),e=e.replace(/[^A-Za-z0-9\+\/\=]/g,"");do{o=this.keyStr.indexOf(e.charAt(c++)),r=this.keyStr.indexOf(e.charAt(c++)),a=this.keyStr.indexOf(e.charAt(c++)),s=this.keyStr.indexOf(e.charAt(c++)),t=o<<2|r>>4,n=(15&r)<<4|a>>2,i=(3&a)<<6|s,l+=String.fromCharCode(t),64!==a&&(l+=String.fromCharCode(n)),64!==s&&(l+=String.fromCharCode(i)),t=n=i="",o=r=a=s=""}while(c<e.length);return l}};angular.module("elthelas").factory("AuthenticationProvider",["$http","$cookies","$rootScope","$timeout",function(e,n,o,r){function a(t,n,o){return e({method:"POST",url:"app_dev.php/login_check",headers:{"Content-Type":"application/x-www-form-urlencoded"},transformRequest:function(e){var t=[];for(var n in e)t.push(encodeURIComponent(n)+"="+encodeURIComponent(e[n]));return t.join("&")},data:{_username:t,_password:n}}).then(function(e){o(e)})}function l(t,n,o,r,a,l){if(n!==o)return!1;e({method:"POST",url:"app_dev.php/register/",headers:{"Content-Type":"application/x-www-form-urlencoded"},data:"fos_user_registration_form[email]="+encodeURIComponent(r)+"&fos_user_registration_form[username]="+encodeURIComponent(t)+"&fos_user_registration_form[plainPassword][first]="+encodeURIComponent(n)+"&fos_user_registration_form[plainPassword][second]="+encodeURIComponent(o)+"&fos_user_registration_form[_token]="+encodeURIComponent(a)}).then(function(e){l(e)})}function i(r,a,l){var i=t.encode(r+":"+a);o.globals={currentUser:{username:r,password:a}},e.defaults.headers.common.Authorization="Basic "+i;var s=new Date;s.setDate(s.getDate()+7),l&&n.putObject("globals",o.globals,{expires:s})}function s(){o.globals={},n.remove("globals"),e.defaults.headers.common.Authorization="Basic"}var c={};return c.Login=a,c.SetCredentials=i,c.ClearCredentials=s,c.Register=l,c.LoadFromCookies=function(){o.globals=n.get("globals")},c}])}(angular),function(e,t){t.module("elthelas").factory("SpellProvider",["$q","$http",function(e,t){var n={};return n.getSpells=function(){var n=e.defer();return t.get("/json/spells.json").then(function(e){n.resolve(e)},function(e){n.reject()}),n.promise},n}])}(jQuery,angular),function(e,t){t.module("elthelas").factory("HistoryProvider",["$q","$http",function(e,t){var n={};return n.getHistory=function(){var n=e.defer();return t.get("/json/history.json").then(function(e){n.resolve(e)},function(e){n.reject()}),n.promise},n}])}(jQuery,angular),function(e,t){t.module("elthelas").factory("geoProvider",["$q","$http",function(e,t){var n={};return n.getCities=function(){var n=e.defer();return t.get("/json/cities.json").then(function(e){n.resolve(e)},function(e){n.reject()}),n.promise},n.getContinents=function(){var n=e.defer();return t.get("/json/continents.json").then(function(e){n.resolve(e)},function(e){n.reject()}),n.promise},n.getFeatures=function(){var n=e.defer();return t.get("/json/features.json").then(function(e){n.resolve(e)},function(e){n.reject()}),n.promise},n.getLandmarks=function(){var n=e.defer();return t.get("/json/landmarks.json").then(function(e){n.resolve(e)},function(e){n.reject()}),n.promise},n.getNations=function(){var n=e.defer();return t.get("/json/nations.json").then(function(e){n.resolve(e)},function(e){n.reject()}),n.promise},n}])}(jQuery,angular);
+/*globals jQuery, angular */
+"use strict";
+
+(function($, ng) {
+    var elthelas = ng.module('elthelas' ,['ui.router', 'hc.marked', 'ui.bootstrap', 'ngCookies', 'ngTimeline']);
+    elthelas.run(['$state', '$stateParams',
+        function($state, $stateParams) {
+            //this solves page refresh and getting back to state
+    }]);    
+    elthelas.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
+       $stateProvider.state('app', {
+           url:'/',
+           views: {
+               'header': {
+                   templateUrl: '/html/header/header.html',
+                   controller: 'HeaderController'
+               },
+               'footer': {
+                   templateUrl: '/html/footer/footer.html',
+               },
+               'content': {
+                   templateUrl: '/html/content/home.html',
+               },
+               'head': {
+                   templateUrl: '/html/head/home.html'
+               },
+               'sidebar': {
+                   templateUrl: '/html/empty.html'
+               }
+           },
+           data: { title: "Home"}
+       }).state('app.domains', {
+          url:'options/domains',
+          views: {
+              'content@': {
+                  templateUrl: '/html/content/options/domains.html'
+              },
+              'head@': {
+                  templateUrl: '/html/head/options/domains.html'
+              },
+              'sidebar@': {
+                  templateUrl: '/html/sidebar/options.html'
+              }
+          },
+          data: { title: "Domains"}
+       }).state('app.races', {
+           url: 'options/races',
+           views: {
+              'content@': {
+                  templateUrl: '/html/content/options/races.html',
+                  controller: 'RaceController'
+              },
+              'head@': {
+                  templateUrl: '/html/head/options/races.html'
+              },
+              'sidebar@': {
+                  templateUrl: '/html/sidebar/options.html'
+              },
+           },
+           data: { title: "Races"},
+           resolve: {
+             race: function() {
+               return false;
+             }
+           }
+       }).state('app.race', {
+         url: 'options/races/:race',
+         views: {
+              'content@': {
+                  templateUrl: '/html/content/options/races.html',
+                  controller: 'RaceController'
+              },
+              'head@': {
+                  templateUrl: '/html/head/options/races.html'
+              },
+              'sidebar@': {
+                  templateUrl: '/html/sidebar/options.html'
+              },           
+          },
+          data: { title: "Races"},
+          resolve: {
+            race: function($stateParams) {
+              return $stateParams.race;
+            } 
+          }
+       }).state('app.languages', {
+           url: 'options/languages',
+           views: {
+              'content@': {
+                  templateUrl: '/html/content/options/languages.html',
+                  controller: 'LanguagesController'
+              },
+              'head@': {
+                  templateUrl: '/html/head/options/languages.html'
+              },
+              'sidebar@': {
+                  templateUrl: '/html/sidebar/options.html'
+              },
+           },
+           data: { title: "Languages"}
+       }).state('app.gods', {
+         url: 'ref/gods',
+         views: {
+           'content@': {
+             templateUrl: '/html/content/ref/gods.html',
+             controller: 'GodsController'
+           },
+          'head@': {
+            templateUrl: '/html/head/ref/gods.html'
+          },
+           'sidebar@': {
+             templateUrl: '/html/sidebar/ref.html'
+           }
+         },
+        data: { title: "Gods"},
+        resolve: {
+          god: function() {
+            return false;
+          }
+        }
+       }).state('app.god', {
+         url: 'ref/gods/:god',
+         views: {
+           'content@': {
+             templateUrl: '/html/content/ref/gods.html',
+             controller: 'GodsController'
+           },
+          'head@': {
+            templateUrl: '/html/head/ref/gods.html'
+          },
+           'sidebar@': {
+             templateUrl: '/html/sidebar/ref.html'
+           }
+         },
+        data: { title: "Gods"},
+        resolve: {
+          god: function($stateParams) {
+            return $stateParams.god;
+          }
+        }
+       }).state('app.organizations', {
+         url: 'ref/orgs',
+         views: {
+           'content@': {
+             templateUrl: '/html/content/ref/organizations.html',
+             controller: 'OrganizationController'
+           },
+          'head@': {
+            templateUrl: '/html/head/ref/organizations.html'
+          },
+           'sidebar@': {
+             templateUrl: '/html/sidebar/ref.html'
+           }
+         },
+           data: { title: "Organizations"},
+           resolve: {
+             org: function() {
+               return false;
+             }
+           }
+       }).state('app.organization', {
+        url: 'ref/orgs/:org',
+        views: {
+           'content@': {
+             templateUrl: '/html/content/ref/organizations.html',
+             controller: 'OrganizationController'
+           },
+           'head@': {
+             templateUrl: '/html/head/ref/organizations.html'
+           },
+            'sidebar@': {
+              templateUrl: '/html/sidebar/ref.html'
+            }
+          },
+          data: { title: "Organizations"},
+          resolve: {
+            org: function($stateParams) {
+              return $stateParams.org;
+            }
+          }
+       }).state('app.calendar', {
+         url: 'ref/calendar',
+         views: {
+           'content@': {
+             templateUrl: '/html/content/ref/calendar.html'
+           },
+          'head@': {
+            templateUrl: '/html/head/ref/calendar.html'
+          },
+           'sidebar@': {
+             templateUrl: '/html/sidebar/ref.html'
+           }
+         },
+           data: { title: "Calendar"}
+       }).state('app.cosmology', {
+         url: 'ref/cosmology',
+         views: {
+           'content@': {
+             templateUrl: '/html/content/ref/cosmology.html'
+           },
+          'head@': {
+            templateUrl: '/html/head/ref/cosmology.html'
+          },
+           'sidebar@': {
+             templateUrl: '/html/sidebar/ref.html'
+           }
+         },
+           data: { title: "Cosmology"}
+       }).state('app.astronomy', {
+         url: 'ref/astronomy',
+         views: {
+           'content@': {
+             templateUrl: '/html/content/ref/astronomy.html'
+           },
+          'head@': {
+            templateUrl: '/html/head/ref/astronomy.html'
+          },
+           'sidebar@': {
+             templateUrl: '/html/sidebar/ref.html'
+           }
+         },
+           data: { title: "Astronomy"}
+       }).state('app.magic', {
+         url: 'ref/magic',
+         views: {
+           'content@': {
+             templateUrl: '/html/content/ref/magic.html'
+           },
+          'head@': {
+            templateUrl: '/html/head/ref/magic.html'
+          },
+           'sidebar@': {
+             templateUrl: '/html/sidebar/ref.html'
+           }
+         },
+           data: { title: "Magic"}
+       }).state('app.divines', {
+         url: 'ref/divines',
+         views: {
+           'content@': {
+             templateUrl: '/html/content/ref/divines.html',
+             controller: 'DivineController'
+           },
+          'head@': {
+            templateUrl: '/html/head/ref/divines.html'
+          },
+           'sidebar@': {
+             templateUrl: '/html/sidebar/ref.html'
+           }
+         },
+           data: { title: "Divines"}
+       }).state('app.quickref', {
+         url: 'ref/quick',
+         views: {
+           'content@': {
+             templateUrl: '/html/content/ref/quick.html',
+             controller: 'QuickController'
+           },
+          'head@': {
+            templateUrl: '/html/head/ref/quick.html'
+          },
+           'sidebar@': {
+             templateUrl: '/html/sidebar/ref.html'
+           }
+         },
+           data: { title: "Quick Reference Manual"}
+       }).state('app.history', {
+         url: 'history',
+         views: {
+           'content@': {
+             templateUrl: '/html/content/history.html',
+             controller: 'HistoryController'
+           },
+          'head@': {
+            templateUrl: '/html/head/history.html'
+          },
+          'sidebar@': {
+           templateUrl: '/html/empty.html'
+          }
+         },
+           data: { title: "History"},
+           resolve: {
+             event: function() {
+               return false;
+             }
+           }
+       }).state('app.historyevent', {
+         url: 'history/:eventname',
+        views: {
+           'content@': {
+             templateUrl: '/html/content/history.html',
+             controller: 'HistoryController'
+           },
+          'head@': {
+            templateUrl: '/html/head/history.html'
+          },
+          'sidebar@': {
+           templateUrl: '/html/empty.html'
+          }
+         },
+           data: { title: "History"},
+         resolve: {
+           event: function($stateParams) {
+             return $stateParams.eventname;
+           }
+         }
+       }).state('app.classes', {
+        url: 'ref/class',
+        views: {
+          'content@': {
+            templateUrl: '/html/content/options/classes.html',
+            controller: 'ClassController'
+          },
+          'head@': {
+            templateUrl: '/html/head/options/races.html'
+          },
+          'sidebar@': {
+            templateUrl: '/html/sidebar/options.html'
+          }
+        }
+       }).state('app.geo', {
+         url: 'geo',
+         views: {
+           'content@': {
+             templateUrl: '/html/content/geo.html',
+             controller: 'GeographyController'
+           },
+           'head@': {
+             templateUrl: '/html/head/geo.html'
+           },
+           'sidebar@': {
+             templateUrl: '/html/empty.html'
+          }
+        },
+        data: { title: "Geography" },
+        resolve: {
+          location: function() {
+            return false;
+            },
+          type: function() {
+            return false;
+          }
+        }
+      }).state('app.geoitem', {
+        url: 'geo/:type/:location',
+        views: {
+           'content@': {
+             templateUrl: '/html/content/geo.html',
+             controller: 'GeographyController'
+           },
+           'head@': {
+             templateUrl: '/html/head/geo.html'
+           },
+           'sidebar@': {
+             templateUrl: '/html/empty.html'
+          }
+        },
+        data: { title: "Geography" },
+        resolve: {
+          type: function($stateParams) {
+            return $stateParams.type;
+          },
+          location: function($stateParams) {
+            return $stateParams.location;
+          }
+        }
+      });
+       $locationProvider.html5Mode(true);
+    }]);
+        
+    
+})(jQuery, angular);
+/* globals angular, jQuery */
+"use strict";
+
+(function($, ng) {
+  ng.module('elthelas').controller('DivineController', ['$scope', 'divineProvider', function($scope, divineProvider) {
+    $scope.Divine = "";
+    $scope.divines = [];
+    $scope.types = [];
+    $scope.divineFilter = null;
+    
+    $scope.filterDivines = function(a) {
+      if($scope.divineFilter === null) {
+        return true;
+      } else {
+        return a.type === $scope.divineFilter; 
+      }
+    };
+    
+    $scope.loadDivine = function(id) {
+      $scope.Divine = $scope.divines.filter(function(a) {
+        return a.id === id;
+      })[0];
+    };
+    
+    divineProvider.getDivines().then(function(response) {
+      $scope.divines = response.data.documents;
+      for(var x = 0; x < $scope.divines.length; x++) {
+        if($scope.types.indexOf($scope.divines[x].type) === -1) {
+          $scope.types.push($scope.divines[x].type);
+        }
+      }
+    });
+  }]);
+})(jQuery, angular);
+/* globals angular, jQuery */
+"use strict";
+
+(function($, ng) {
+  ng.module('elthelas').controller('GodsController', ['$scope', 'godProvider', 'god', function($scope, godProvider, god) {
+    $scope.gods = false;
+    $scope.GodByName = "";
+    $scope.alignment = "";
+    
+    $scope.loadGod = function(id) {
+      $scope.GodByName = $scope.gods.filter(function(god) {
+        return god.id === id;
+      })[0];
+    };
+    
+    godProvider.getGods().then(function(response) {
+      $scope.gods = response.data.documents;
+      $scope.loadGod($scope.gods.filter(function(a) {return (a.id === god || a.name === god);})[0].id);
+    });
+
+  }]);
+})(jQuery, angular);
+/* global angular */
+/* global jQuery */
+/* global document */
+(function(ng, $, doc) {
+    ng.module('elthelas').controller('HeaderController', ['$scope', '$state', '$rootScope', '$uibModal', '$document', 'AuthenticationProvider',
+    function($scope, $state, $rootScope, $uibModal, $document, AuthenticationProvider) {
+        //Google Custom Search
+        var cx = '002019895859863268942:tbtmwpd5jy8';
+        var gcse = doc.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (doc.location.protocol === 'https:' ? 'https:' : 'https:') +
+          '//www.google.com/cse/cse.js?cx=' + cx;
+        var s = doc.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+        $scope.title = $state.current.data.title;
+        $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams, options){ 
+          $scope.title = $state.current.data.title;
+        });
+        AuthenticationProvider.LoadFromCookies();
+        $scope.globals = $rootScope.globals;
+        $scope.message = false;
+        
+        $scope.login = function(size) {
+          var parentElem = $("body");
+          var modalInstance = $uibModal.open({
+            animation: true,
+            ariaLabelledBy: 'modal-title',
+            ariaDescribedBy: 'modal-body',
+            templateUrl: '/app_dev.php/login',
+            controller: 'LoginController',
+            size: size,
+            appendTo: parentElem
+          });
+          
+          modalInstance.result.then(function (selectedItem) {
+              $scope.globals = $rootScope.globals;
+            }, function () {
+              console.log('Modal dismissed at: ' + new Date());
+              $scope.globals = $rootScope.globals;
+            });
+        };
+        
+        $scope.logout = function() {
+            $scope.globals = undefined;
+            AuthenticationProvider.ClearCredentials();
+        };
+        
+        $scope.register = function(size) {
+          var parentElem = $("body");
+          var modalInstance = $uibModal.open({
+            animation: true,
+            ariaLabelledBy: 'modal-title',
+            ariaDescribedBy: 'modal-body',
+            templateUrl: '/app_dev.php/register/',
+            controller: 'RegisterController',
+            size: size,
+            appendTo: parentElem
+          });
+          modalInstance.result.then(function (selectedItem) {
+            selectedItem();
+            $scope.message = $rootScope.message;
+            setTimeout(function() {
+              $scope.message = false;
+              $scope.$apply();
+            }, 5000);
+            
+          }, function () {
+              console.log('Modal dismissed at: ' + new Date());
+              $scope.globals = $rootScope.globals;
+          });
+        };
+    }]);
+    
+})(angular, jQuery, document);
+/*globals jQuery, angular */
+"use strict";
+
+(function($, ng) {
+  ng.module('elthelas').controller('LanguagesController', ['$scope', function($scope) {
+    $scope.init = function() {
+      $(".datatable").dataTable();
+    };
+  }]);
+})(jQuery, angular);
+/*global jQuery */
+/*global angular */
+(function($, ng) {
+  "use strict";
+  ng.module('elthelas').controller('OrganizationController', ['$scope', '$location', 'organizationProvider', 'org', function($scope, $location, organizationProvider, org) {
+    $scope.currentOrg = false;
+    
+    $scope.loadOrg = function(id) {
+      var tempArray = $scope.organizations.filter(function(org) {
+        return org.id === id;
+      });
+      if(tempArray.length > 0) {
+        $scope.currentOrg = tempArray[0];
+      }
+      else {
+        $scope.currentOrg = {
+          id: 'error',
+          name: ''
+        };
+      }
+    };
+    
+    organizationProvider.getOrganizations().then(function(response) {
+      $scope.organizations = response.data.documents;
+      if(org) {
+        $scope.loadOrg($scope.organizations.filter(function(a) {return (a.id === org || a.title === org);})[0].id);
+      }
+    });
+  }]);
+})(jQuery, angular);
+/* globals angular, jQuery */
+"use strict";
+
+(function($, ng) {
+  ng.module('elthelas').controller('QuickController', ['$scope', 'SpellProvider', '$uibModal', function($scope, SpellProvider, $uibModal) {
+    $scope.loadSpell =  function(index) {
+      $scope.currentSpell = $scope.spells[index];
+      $scope.$apply();
+      var parentElem = $("body");
+      var modalInstance = $uibModal.open({
+        animation: true,
+        ariaLabelledBy: 'modal-title',
+        ariaDescribedBy: 'modal-body',
+        templateUrl: '/html/modals/spell.html',
+        controller: 'SpellController',
+        size: 'lg',
+        appendTo: parentElem,
+        resolve: {
+          spell: function() {
+            return $scope.currentSpell;
+          }
+        }
+      });
+          
+      modalInstance.result.then(function (selectedItem) {
+      }, function () {
+        console.log('Modal dismissed at: ' + new Date());
+      });
+    };
+    $scope.currentSpell = false;
+    $scope.spells;
+    this.init = function() {
+      SpellProvider.getSpells().then(function(response) {
+        $scope.spells = response.data.documents;
+        
+        var spellTableData = [];
+        for(var x = 0; x < $scope.spells.length; x++) {
+          if($scope.spells[x].level !== undefined) {
+            $scope.spells[x].level = $scope.spells[x].level.replace('level', "");
+          } else {
+            $scope.spells[x].level = " ";
+          }
+          var id = 'spell' + x;
+          var thisSpell = [
+            '<a href="#" data-spellid="' + x + '" class="' + id + '">' + $scope.spells[x].title + "</a>",
+            $scope.spells[x].level,
+            $scope.spells[x].school,
+            $scope.spells[x].castingTime,
+            $scope.spells[x].duration,
+            $scope.spells[x].tags.join(", "),
+            "<input type='button' value='View' class='btn btn-sm btn-primary " + id + "' data-spellid='" + x + "' />"
+          ];
+          spellTableData.push(thisSpell);
+        }
+          $('#spelltable').dataTable({
+            data: spellTableData,
+            responsive: true,
+            columns: [
+              { title: "Title" },
+              { title: "Level" },
+              { title: "School" },
+              { title: "Casting Time" },
+              { title: "Duration" },
+              { title: "Tags" },
+              { title: "View" }
+            ],
+            drawCallback: function() {
+              var callback = function() {
+                $scope.loadSpell(Number($(this).attr('data-spellid')));
+              };
+              for(var x = 0; x < $scope.spells.length; x++) {
+                $(".spell" + x).click(callback);
+              }
+            }
+          });
+      });
+    };
+    
+    this.init();
+  }]);
+})(jQuery, angular);
+/*global jQuery */
+/*global angular */
+(function($, ng) {
+  "use strict";
+  ng.module('elthelas').controller('RaceController', ['$scope', 'raceProvider', 'race', function($scope, raceProvider, race) {
+    $scope.currentRace = false;
+    
+    $scope.loadRace = function(id) {
+      var tempArray = $scope.races.filter(function(race) {
+        return race.id === id;
+      });
+      if(tempArray.length > 0) {
+        $scope.currentRace = tempArray[0];
+      }
+      else {
+        $scope.currentRace = {
+          id: 'error',
+          name: ''
+        };
+      }
+    };
+    
+    $scope.formatAgeDataRow = function(race) {
+      var row = [];
+      try {
+        row.push(race.name);
+        row.push(race.agepoints.puberty);
+        row.push(race.agepoints.sexualmaturity);
+        row.push(race.agepoints.mentalmaturity);
+        row.push(race.agepoints.middleage);
+        row.push(race.agepoints.oldage);
+        row.push(race.agepoints.averagelifespan);
+        row.push(race.agepoints.maxage);
+      } catch(e) {
+        row = [];
+        //console.log(e.message);
+        //console.log(race);
+        if(race.name === undefined || race.name === null) {
+          row.push("Error");
+        } else {
+          row.push(race.name);
+        }
+        row.push(1);
+        row.push(2);
+        row.push(3);
+        row.push(4);
+        row.push(5);
+        row.push(6);
+        row.push(7);
+      }
+      return row;
+    };
+    
+    $scope.getAllAgeData = function() {
+      var ageData = [];
+      for(var x = 0; x < $scope.races.length; x++) {
+        ageData.push(this.formatAgeDataRow($scope.races[x]));
+      }
+      
+      return ageData;
+    };
+    
+    $scope.formatSizeDataRow = function(race, subrace) {
+      var row = [];
+      
+      if(subrace === null || subrace === undefined) {
+        subrace = "default";
+      }
+      try {
+        var thissub = race.subraces.filter(function(a) {
+          return a.id === subrace;
+        })[0];
+        if(subrace === "default") {
+          row.push(race.name);
+        } else {
+          row.push(thissub.name);
+        }
+        row.push(Math.floor(thissub.averageheight/12) + "\'" + thissub.averageheight%12 + "\"");
+        row.push(Math.floor(thissub.baseheight/12) + "\'" + thissub.baseheight%12 + "\"");
+        row.push(thissub.heightroll);
+        row.push(thissub.averageweight + " lbs");
+        row.push(thissub.baseweight + " lbs");
+        row.push("Height Roll * " + thissub.weightroll);        
+      }
+      catch(e) {
+        //console.log(e.message);
+        row = ["Error", 1, 1, 1, 1, 1, 1];
+      }
+
+      
+      return row;
+    };
+
+    $scope.getAllSizeData = function() {
+      var sizeData = [];
+      for(var x = 0; x < $scope.races.length; x++) {
+        var thisRace = $scope.races[x];
+        if(thisRace.subraces === null || thisRace.subraces === undefined) {
+          sizeData.push($scope.formatSizeDataRow(thisRace));
+        }
+        else {
+          for(var y = 0; y < thisRace.subraces.length; y++) {
+            sizeData.push($scope.formatSizeDataRow(thisRace, thisRace.subraces[y].id));
+          }
+        }
+      }
+      return sizeData;
+    };
+    
+    raceProvider.getRaces().then(function(response) {
+      $scope.races = response.data.documents;
+      if(race) {
+        $scope.loadRace($scope.races.filter(function(a) {
+          if(a.id === race || a.name === race) {
+            return true;
+          }
+          for(var x = 0; x < a.subraces.length; x++) {
+            if(a.subraces[x].id === race || a.subraces[x].name === race) {
+              return true;
+            }
+          }
+          
+        })[0].id);
+      }
+      $("#ageTable").dataTable({
+        data: $scope.getAllAgeData(),
+        columns: [
+          { title: 'Race' },
+          { title: 'Start of Puberty' },
+          { title: 'Sexual Maturity' },
+          { title: 'Mental Maturity' },
+          { title: 'Middle Age' },
+          { title: 'Old Age' },
+          { title: 'Average Lifespan' },
+          { title: 'Maximum Age' }
+          
+        ]
+      });
+      $("#sizeTable").dataTable({
+        data: $scope.getAllSizeData(),
+        columns: [
+          { title: 'Race/Subrace' },
+          { title: 'Average Height' },
+          { title: 'Base Height' },
+          { title: 'Height Roll' },
+          { title: 'Average Weight' },
+          { title: 'Base Weight' },
+          { title: 'Weight Roll' }
+        ]
+      });
+    });
+  }]);
+})(jQuery, angular);
+/* globals angular, jQuery */
+
+(function (ng, $) {
+  "use strict";
+  
+  angular.module('elthelas').controller('LoginController', ['$scope', '$location', 'AuthenticationProvider', '$uibModalInstance', 
+  function($scope, $location, AuthenticationProvider, $uibModalInstance) {
+    var vm = this;
+    
+    $scope.username;
+    $scope.password;
+    $scope.rememberMe;
+    $scope.login = login;
+    
+    vm.postLogin = function(response) {
+        if(response.status === 200) {
+          if(!response.data.success) {
+            $(".modal-body .alert").remove();
+            $(".modal-body").prepend("<div class='alert alert-danger'>" + response.data.message + "</div>");
+          } else {
+            AuthenticationProvider.SetCredentials($scope.username, $scope.password, $scope.rememberMe);
+            $uibModalInstance.close('login success');
+          }
+        } else {
+          vm.dataLoading = false;
+        }      
+    };
+    function login() {
+      vm.dataLoading = true;
+      return AuthenticationProvider.Login($scope.username, $scope.password, vm.postLogin);
+      
+    }
+    $scope.cancel = function () {
+      $uibModalInstance.dismiss('cancel');
+    };
+  }]);
+})(angular, jQuery);
+/* globals angular, jQuery */
+
+(function(ng ,$) {
+  'use strict';
+  
+  ng.module('elthelas').controller('RegisterController', ['$location', '$http', '$rootScope', '$uibModalInstance', '$scope', 'AuthenticationProvider',
+    function($location, $http, $rootScope, $uibModalInstance, $scope, AuthenticationProvider) {
+        var vm = this;
+ 
+        $scope.register = register;
+ 
+        function register() {
+          vm.dataLoading = true;
+          AuthenticationProvider.Register(
+            $("#fos_user_registration_form_username").val(),
+            $("#fos_user_registration_form_plainPassword_first").val(),
+            $("#fos_user_registration_form_plainPassword_second").val(),
+            $("#fos_user_registration_form_email").val(), 
+            $("#fos_user_registration_form__token").val(),
+            function(response) {
+              $uibModalInstance.close(function() {
+                $rootScope.message = response.data;
+              });
+          });
+        }
+        $scope.cancel = function () {
+          $uibModalInstance.dismiss('cancel');
+        };    
+  }]);
+})(angular, jQuery);
+/* globals angular */
+
+(function(ng) {
+  ng.module('elthelas').controller('SpellController', ['$scope', '$uibModalInstance', 'spell', function($scope, $uibModalInstance, spell) {
+    $scope.spell = spell;
+    
+    $scope.cancel = function () {
+      $uibModalInstance.close('cancel');
+    };
+  }]);
+})(angular);
+/* globals angular, jQuery */
+(function(ng, $) {
+  ng.module("elthelas").controller("HistoryController", ['marked', '$scope', 'HistoryProvider', '$uibModal', 'event',
+  function(marked, $scope, HistoryProvider, $uibModal, event) {
+    $scope.options = {
+      language: 'el',
+      layout: 'portrait',
+      timenav_position: 'top',
+      scale_factor: 20,
+    };
+    
+    $scope.history = [];
+    HistoryProvider.getHistory().then(function(response) {
+      $scope.history = response.data.documents;
+      var data = {
+        'title': {
+          'text': {
+            'headline': 'Known History of Elthelas',
+            'text': ''
+          }
+        },
+        'events': $scope.history
+      };
+      for(var e in data.events) {
+        data.events[e].text.text = marked(data.events[e].text.text);
+      }
+      $scope.timeline.setData(data);
+      $scope.timeline.goTo(data.events.length);
+      if(event) {
+        var selected = $scope.history.filter(function(a) {
+          return a.text.headline.toLowerCase().replace(/ /g, "") === event.toLowerCase().replace(/ /g, ""); 
+        })[0];
+        var modalInstance = $uibModal.open({
+        animation: true,
+        ariaLabelledBy: 'modal-title',
+        ariaDescribedBy: 'modal-body',
+        templateUrl: '/html/modals/event.html',
+        controller: 'HistoryEventController',
+        size: 'lg',
+        appendTo: $('body'),
+        resolve: {
+          event: function() {
+            return selected;
+          }
+        }
+      });
+          
+      modalInstance.result.then(function (selectedItem) {
+      }, function () {
+        console.log('Modal dismissed at: ' + new Date());
+      });
+      }
+    }, function() {
+      
+    });
+  }]).controller('HistoryEventController', ['$scope', '$uibModalInstance', 'event', function($scope, $uibModalInstance, event) {
+    $scope.event = event;
+    
+    function elthelasDateFormat(date) {
+      switch (Number(date.data.month)) {
+        case 1:
+          date.month = "Neradan"; break;
+        case 2:
+          date.month = "Dorunor"; break;
+        case 3:
+          date.month = "Trimalan"; break;
+        case 4:
+          date.month = "Sylvanus"; break;
+        case 5:
+          date.month = "Gaiana"; break;
+        case 6:
+          date.month = "Alohiman"; break;
+        case 7:
+          date.month = "Coranus"; break;
+        case 8:
+          date.month = "Moltyr"; break;
+        case 9:
+          date.month = "Saris"; break;
+        case 10:
+          date.month = "Maridia"; break;
+        case 11:
+          date.month = 'Tockra'; break;
+        case 12:
+          date.month = "Amatherin"; break;
+        default:
+          break;
+      }
+      date.day = date.data.day;
+      date.year = date.data.year;
+      
+      return date;
+    }
+    $scope.event.start_date = elthelasDateFormat($scope.event.start_date);
+    if($scope.event.end_date) {
+      $scope.event.end_date = elthelasDateFormat($scope.event.end_date);
+    }
+    $scope.cancel = function () {
+      $uibModalInstance.close('cancel');
+    };
+  }]);
+})(angular, jQuery);
+/* globals angular, jQuery */
+
+(function(ng, $) {
+  ng.module('elthelas').controller('ClassController', ['$scope', function($scope) {
+    $('.racediv').hide();
+    $('.racebutton').click(function() {
+      var classToShow = $(this).attr('data-race');
+      $('.racediv').hide();
+      $('#' + classToShow).show();
+    });
+  }]);
+})(angular, jQuery);
+/* globals angular, jQuery, L, alert */
+"use strict";
+
+(function($, ng) {
+  ng.module('elthelas').controller('GeographyController', ['$scope', 'geoProvider', '$uibModal', '$q', 'type', 'location', function($scope, geoProvider, $uibModal, $q, type, location) {
+    $scope.cities;
+    $scope.continents;
+    $scope.nations;
+    $scope.features;
+    $scope.landmarks;
+    
+    var map = L.map('map').setView([0, 0], 2);
+    map.on('click', function(e) {
+      alert("Lat, Lon : " + e.latlng.lat + ", " + e.latlng.lng);
+    });
+    var markers = [];
+    L.tileLayer('/images/maps/tiles/{z}/{y}/{x}.png', {
+            attribution: '|--------| = 320/160/80/40 miles by zoom | map image created by Heather Domaszek',
+            minZoom: 0,
+            maxZoom: 4,
+            tms: true,
+            noWrap: true
+          }).addTo(map);    
+          
+    function showdetails(geoitem, type) {
+      var parentElem = $("body");
+      var modalInstance = $uibModal.open({
+        animation: true,
+        ariaLabelledBy: 'modal-title',
+        ariaDescribedBy: 'modal-body',
+        templateUrl: '/html/modals/' + type + ".html",
+        controller: 'GeoDetailsController',
+        size: 'lg',
+        appendTo: parentElem,
+        resolve: {
+          geoitem: function() {
+            return geoitem;
+          }
+        }
+      });
+          
+      modalInstance.result.then(function (selectedItem) {
+      }, function () {
+        console.log('Modal dismissed at: ' + new Date());
+      });
+    }
+    
+    function addmarker(city, type) {
+      var marker = L.marker(city.coords, {
+        alt: city.name,
+        city: city
+      }).bindTooltip(city.name, { permanent: true, interactive: true, direction: "auto", opacity: 0.75 });
+      $(marker).click(function() {
+        map.flyTo(city.coords, 4);
+        showdetails(city, type);
+      });
+      marker.addTo(map);
+      markers.push(marker);
+    }
+    
+    $scope.showAll = function() {
+      for(var i = 0; i < markers.length; i++) {
+        map.removeLayer(markers[i]);
+      }
+      for(var x = 0; x < $scope.cities.length; x++) {
+        addmarker($scope.cities[x], "city");
+      } 
+      for(var y = 0; y < $scope.nations.length; y++) {
+        addmarker($scope.nations[y], "nation");
+      }
+      for(var z = 0; z < $scope.landmarks.length; z++) {
+        addmarker($scope.landmarks[z], "landmark");
+      }
+      for(var v = 0; v < $scope.features.length; v++) {
+        addmarker($scope.features[v], "feature");
+      }
+      for(var u = 0; u < $scope.continents.length; u++) {
+        addmarker($scope.continents[u], "continent");
+      }
+    };
+    
+    $scope.showCities = function() {
+      for(var i = 0; i < markers.length; i++) {
+        map.removeLayer(markers[i]);
+      }
+      for(var x = 0; x < $scope.cities.length; x++) {
+        addmarker($scope.cities[x], "city");
+      }
+    };
+    
+    $scope.showNations = function() {
+      for(var i = 0; i < markers.length; i++) {
+        map.removeLayer(markers[i]);
+      }
+      for(var x = 0; x < $scope.nations.length; x++) {
+        addmarker($scope.nations[x], "nation");
+      }
+    };
+    
+    $scope.showFeatures = function() {
+      for(var i = 0; i < markers.length; i++) {
+        map.removeLayer(markers[i]);
+      }
+      for(var x = 0; x < $scope.features.length; x++) {
+        addmarker($scope.features[x], "feature");
+      }
+    };
+    
+    $scope.showLandmarks = function() {
+      for(var i = 0; i < markers.length; i++) {
+        map.removeLayer(markers[i]);
+      }
+      for(var x = 0; x < $scope.landmarks.length; x++) {
+        addmarker($scope.landmarks[x], "landmark");
+      }
+    };
+    
+    $scope.showContinents = function() {
+      for(var i = 0; i < markers.length; i++) {
+        map.removeLayer(markers[i]);
+      }
+      for(var x = 0; x < $scope.continents.length; x++) {
+        addmarker($scope.continents[x], "continent");
+      }
+    };
+    
+    $q.all([geoProvider.getCities().then(function(response) {
+      $scope.cities = response.data.documents;
+    }, function(response) {
+      console.log(response);
+    }),
+    
+    geoProvider.getNations().then(function(response) {
+      $scope.nations = response.data.documents;
+    }, function(response) {
+      console.log(response);
+    }),
+
+    geoProvider.getFeatures().then(function(response) {
+      $scope.features = response.data.documents;
+    }, function(response) {
+      console.log(response);
+    }),
+
+    geoProvider.getLandmarks().then(function(response) {
+      $scope.landmarks = response.data.documents;
+    }, function(response) {
+      console.log(response);
+    }),
+
+    geoProvider.getContinents().then(function(response) {
+      $scope.continents = response.data.documents;
+    }, function(response) {
+      console.log(response);
+    })]).then(function() {
+      var item;
+      if(location && type) {
+        if(type === "continent") {
+          item = $scope.continents.filter(function(a) {return a.name === location;})[0];
+        }
+        if(type === "city") {
+          item = $scope.cities.filter(function(a) {return a.name === location;})[0];
+        }
+        if(type === "nation") {
+          item = $scope.nations.filter(function(a) {return a.name === location;})[0];
+        }
+        if(type === "landmark") {
+          item = $scope.landmarks.filter(function(a) {return a.name === location;})[0];
+        }
+        if(type === "feature") {
+          item = $scope.features.filter(function(a) {return a.name === location;})[0];
+        }
+        showdetails(item, type);
+      }
+    });
+    
+  }]).controller('GeoDetailsController', ['$scope', '$uibModalInstance', 'geoitem', function($scope, $uibModalInstance, geoitem) {
+    $scope.geoitem = geoitem;
+    $scope.otherSize = 1;
+    $scope.init = function() {
+      var map = L.map('smallmap').setView(geoitem.coords, 4);
+      L.tileLayer('/images/maps/tiles/{z}/{y}/{x}.png', {
+              attribution: '|--------| = 320/160/80/40 miles by zoom | map image created by Heather Domaszek',
+              minZoom: 0,
+              maxZoom: 4,
+              tms: true,
+              noWrap: true
+            }).addTo(map);
+    };
+    
+    if(geoitem.populationDistribution) {
+      for(var x = 0; x < geoitem.populationDistribution.length; x++) {
+        $scope.otherSize -= geoitem.populationDistribution[x].proportion;
+      }
+    }
+    $scope.cancel = function () {
+      $uibModalInstance.close('cancel');
+    };    
+  }]);
+})(jQuery, angular);
+/*global jQuery*/
+/*global angular */
+
+(function($, ng) {
+  "use strict";
+  ng.module('elthelas').factory('divineProvider', ['$q', '$http', function($q, $http) {
+    var divines = {};
+    
+    divines.getDivines = function() {
+      var deferred = $q.defer();
+      
+      $http.get("/json/divines.json").then(function(response) {
+        deferred.resolve(response);
+      }, function(response) {
+        deferred.reject();
+      });
+      
+      return deferred.promise;
+    };
+    
+    return divines;
+  }]);
+})(jQuery, angular);
+/*global jQuery*/
+/*global angular */
+
+(function($, ng) {
+  "use strict";
+  ng.module('elthelas').factory('godProvider', ['$q', '$http', function($q, $http) {
+    var gods = {};
+    
+    gods.getGods = function() {
+      var deferred = $q.defer();
+      
+      $http.get("/json/gods.json").then(function(response) {
+        deferred.resolve(response);
+      }, function(response) {
+        deferred.reject();
+      });
+      
+      return deferred.promise;
+    };
+    
+    return gods;
+  }]);
+})(jQuery, angular);
+/*global jQuery, angular*/
+
+(function($, ng) {
+  "use strict";
+  ng.module('elthelas').factory('organizationProvider', ['$q', '$http', function($q, $http) {
+    var organizations = {};
+    
+    organizations.getOrganizations = function() {
+      var deferred = $q.defer();
+      
+      $http.get("/json/organizations.json").then(function(response) {
+        deferred.resolve(response);
+      }, function(response) {
+        deferred.reject();
+      });
+      
+      return deferred.promise;
+    };
+    
+    return organizations;
+  }]);
+})(jQuery, angular);
+/*global jQuery*/
+/*global angular*/
+"use strict";
+
+(function($, ng) {
+  ng.module('elthelas').factory('raceProvider', ['$q', '$http', function($q, $http) {
+    var races = {};
+    
+    races.getRaces = function() {
+      var deferred = $q.defer();
+      
+      $http.get("/json/races.json").then(function(response) {
+        deferred.resolve(response);
+      }, function(response) {
+        deferred.reject();
+      });
+      
+      return deferred.promise;
+    };
+    
+    return races;
+  }]);
+})(jQuery, angular);
+/* globals angular */
+(function(ng) {
+  'use strict';
+  var Base64 = {
+    keyStr: 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=',
+    
+    encode: function (input) {
+      var output = "";
+      var chr1, chr2, chr3 = "";
+      var enc1, enc2, enc3, enc4 = "";
+      var i = 0;
+ 
+      do {
+        chr1 = input.charCodeAt(i++);
+        chr2 = input.charCodeAt(i++);
+        chr3 = input.charCodeAt(i++);
+ 
+        enc1 = chr1 >> 2;
+        enc2 = ((chr1 & 3) << 4) | (chr2 >> 4);
+        enc3 = ((chr2 & 15) << 2) | (chr3 >> 6);
+        enc4 = chr3 & 63;
+        if (isNaN(chr2)) {
+          enc3 = enc4 = 64;
+        } else if (isNaN(chr3)) {
+          enc4 = 64;
+        }
+ 
+        output = output +
+          this.keyStr.charAt(enc1) +
+          this.keyStr.charAt(enc2) +
+          this.keyStr.charAt(enc3) +
+          this.keyStr.charAt(enc4);
+          chr1 = chr2 = chr3 = "";
+        enc1 = enc2 = enc3 = enc4 = "";
+      } while (i < input.length);
+ 
+      return output;
+    },
+ 
+    decode: function (input) {
+      var output = "";
+      var chr1, chr2, chr3 = "";
+      var enc1, enc2, enc3, enc4 = "";
+      var i = 0;
+ 
+      // remove all characters that are not A-Z, a-z, 0-9, +, /, or =
+      var base64test = /[^A-Za-z0-9\+\/\=]/g;
+      if (base64test.exec(input)) {
+        window.alert("There were invalid base64 characters in the input text.\n" +
+                    "Valid base64 characters are A-Z, a-z, 0-9, '+', '/',and '='\n" +
+                    "Expect errors in decoding.");
+      }
+      input = input.replace(/[^A-Za-z0-9\+\/\=]/g, "");
+ 
+      do {
+        enc1 = this.keyStr.indexOf(input.charAt(i++));
+        enc2 = this.keyStr.indexOf(input.charAt(i++));
+        enc3 = this.keyStr.indexOf(input.charAt(i++));
+        enc4 = this.keyStr.indexOf(input.charAt(i++));
+        chr1 = (enc1 << 2) | (enc2 >> 4);
+        chr2 = ((enc2 & 15) << 4) | (enc3 >> 2);
+        chr3 = ((enc3 & 3) << 6) | enc4;
+ 
+        output = output + String.fromCharCode(chr1);
+ 
+        if (enc3 !== 64) {
+          output = output + String.fromCharCode(chr2);
+        }
+        if (enc4 !== 64) {
+          output = output + String.fromCharCode(chr3);
+        }
+ 
+        chr1 = chr2 = chr3 = "";
+        enc1 = enc2 = enc3 = enc4 = "";
+ 
+      } while (i < input.length);
+ 
+      return output;
+    }
+  };
+  angular.module('elthelas').factory('AuthenticationProvider', ['$http', '$cookies', '$rootScope', '$timeout',  
+  function($http, $cookies, $rootScope, $timeout) {
+    var service = {};
+    service.Login = Login;
+    service.SetCredentials = SetCredentials;
+    service.ClearCredentials = ClearCredentials;
+    service.Register = Register;
+    
+    function Login(username, password, callback) {
+      return $http({
+        method: 'POST',
+        url: 'app_dev.php/login_check',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        transformRequest: function(obj) {
+            var str = [];
+            for(var p in obj) {
+              if(true) {
+                str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+              }
+            }
+            return str.join("&");
+        },
+        data: { _username: username, _password: password }
+        }).then(function(response) { 
+        callback(response);
+      });
+    }
+    
+    function Register(username, password, passwordconfirm, email, token, callback) {
+      if(password !== passwordconfirm) {
+        return false;
+      } else {
+        $http({
+          method: 'POST',
+          url: 'app_dev.php/register/',
+          headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+          data: "fos_user_registration_form[email]="+encodeURIComponent(email)+
+            "&fos_user_registration_form[username]="+encodeURIComponent(username)+
+            "&fos_user_registration_form[plainPassword][first]="+encodeURIComponent(password)+
+            "&fos_user_registration_form[plainPassword][second]="+encodeURIComponent(passwordconfirm)+
+            "&fos_user_registration_form[_token]="+encodeURIComponent(token)
+        }).then(function(response) {
+            callback(response);
+        });
+      }
+    }
+    
+    function SetCredentials(username, password, rememberMe) {
+      var authdata = Base64.encode(username + ':' + password);
+      
+      $rootScope.globals = {
+        currentUser: {
+          username: username,
+          password: password
+        }
+      };
+      
+      $http.defaults.headers.common.Authorization = 'Basic ' + authdata;
+      
+      var cookieExp = new Date();
+      cookieExp.setDate(cookieExp.getDate() + 7);
+      if(rememberMe) {
+        $cookies.putObject('globals', $rootScope.globals, { expires: cookieExp });
+      }
+    }
+    
+    service.LoadFromCookies = function() {
+      $rootScope.globals = $cookies.get('globals');
+    };
+    
+    function ClearCredentials() {
+      $rootScope.globals = {};
+      $cookies.remove('globals');
+      $http.defaults.headers.common.Authorization = 'Basic';
+    }
+    
+    return service;
+  }]);
+})(angular);
+/*global jQuery*/
+/*global angular*/
+"use strict";
+
+(function($, ng) {
+  ng.module('elthelas').factory('SpellProvider', ['$q', '$http', function($q, $http) {
+    var spells = {};
+    
+    spells.getSpells = function() {
+      var deferred = $q.defer();
+      
+      $http.get("/json/spells.json").then(function(response) {
+        deferred.resolve(response);
+      }, function(response) {
+        deferred.reject();
+      });
+      
+      return deferred.promise;
+    };
+    
+    return spells;
+  }]);
+})(jQuery, angular);
+/*global jQuery*/
+/*global angular*/
+"use strict";
+
+(function($, ng) {
+  ng.module('elthelas').factory('HistoryProvider', ['$q', '$http', function($q, $http) {
+    var history = {};
+    
+    history.getHistory = function() {
+      var deferred = $q.defer();
+      
+      $http.get("/json/history.json").then(function(response) {
+        deferred.resolve(response);
+      }, function(response) {
+        deferred.reject();
+      });
+      
+      return deferred.promise;
+    };
+    
+    return history;
+  }]);
+})(jQuery, angular);
+/*global jQuery*/
+/*global angular */
+
+(function($, ng) {
+  "use strict";
+  ng.module('elthelas').factory('geoProvider', ['$q', '$http', function($q, $http) {
+    var geo = {};
+    
+    geo.getCities = function() {
+      var deferred = $q.defer();
+      
+      $http.get("/json/cities.json").then(function(response) {
+        deferred.resolve(response);
+      }, function(response) {
+        deferred.reject();
+      });
+      
+      return deferred.promise;
+    };
+    
+    geo.getContinents = function() {
+      var deferred = $q.defer();
+      
+      $http.get('/json/continents.json').then(function(response) {
+        deferred.resolve(response);
+      }, function(response) {
+        deferred.reject();
+      });
+      
+      return deferred.promise;
+    };
+    
+    geo.getFeatures = function() {
+      var deferred = $q.defer();
+      
+      $http.get('/json/features.json').then(function(response) {
+        deferred.resolve(response);
+      }, function(response) {
+        deferred.reject();
+      });
+      
+      return deferred.promise;
+    };
+    
+    
+    geo.getLandmarks = function() {
+      var deferred = $q.defer();
+      
+      $http.get('/json/landmarks.json').then(function(response) {
+        deferred.resolve(response);
+      }, function(response) {
+        deferred.reject();
+      });
+      
+      return deferred.promise;
+    };
+    
+    
+    geo.getNations = function() {
+      var deferred = $q.defer();
+      
+      $http.get('/json/nations.json').then(function(response) {
+        deferred.resolve(response);
+      }, function(response) {
+        deferred.reject();
+      });
+      
+      return deferred.promise;
+    };
+    
+    return geo;
+  }]);
+})(jQuery, angular);

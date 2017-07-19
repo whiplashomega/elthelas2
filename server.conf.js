@@ -19,7 +19,7 @@ app.start = function() {
     var port = process.env.PORT || 8080; 
     
     if(port == 8080) {
-        var staticDir = '/dev';
+        var staticDir = '/web';
     } else {
         var staticDir = '/web';
     }

@@ -2,12 +2,10 @@ var gulp = require('gulp'),
     minifycss = require('gulp-clean-css'),
     jshint = require('gulp-jshint'),
     stylish = require('jshint-stylish'),
-    uglify = require('gulp-uglify'),
     usemin = require('gulp-usemin'),
     imagemin = require('gulp-imagemin'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
-    //notify = require('gulp-notify'),
     cache = require('gulp-cache'),
     changed = require('gulp-changed'),
     rev = require('gulp-rev'),
@@ -70,7 +68,7 @@ gulp.task('usemin',['sass', 'copylibraries', 'copyjson', 'copyimages'], function
   return gulp.src('./dev/index.html')
       .pipe(usemin({
         css:[minifycss()],
-        js: [uglify()]
+        js: []
       }))
       .pipe(gulp.dest('./web/'));
 });
