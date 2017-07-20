@@ -28,7 +28,9 @@
     "leaflet": "^1.0.0",
     "angular-sanitize": "^1.6.3",
     "angular-cookies": "^1.6.3",
-    "angular-timelinejs3": "^0.2.3"
+    "angular-timelinejs3": "^0.2.3",
+    "datatables.net-responsive": "^2.1.1",
+    "datatables.net-responsive-dt": "^2.1.1"
   },
   "devDependencies": {
     "jasmine-core": "jasmine#^2.5.2",

@@ -37,6 +37,8 @@ gulp.task('copylibraries', function() {
    gulp.src('./bower_components/datatables/media/css/*.min.css').pipe(gulp.dest("./dev/css"));
    gulp.src('./bower_components/datatables/media/css/jquery.dataTables.css').pipe(gulp.dest("./dev/css"));
    gulp.src('./bower_components/datatables/media/images/*').pipe(gulp.dest("./dev/images"));
+   gulp.src('./bower_components/datatables.net-responsive/js/dataTables.responsive.min.js').pipe(gulp.dest("./dev/libraries"));
+   gulp.src('./bower_components/datatables.net-responsive-dt/css/responsive.dataTables.min.css').pipe(gulp.dest("./dev/css"));
    gulp.src('./bower_components/droll/droll.js').pipe(gulp.dest("./dev/libraries"));
    gulp.src('./bower_components/jquery/dist/jquery.js').pipe(gulp.dest("./dev/libraries"));
    gulp.src('./bower_components/leaflet/dist/leaflet.js').pipe(gulp.dest("./dev/libraries"));

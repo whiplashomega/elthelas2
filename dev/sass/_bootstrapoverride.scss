@@ -56,6 +56,16 @@
 }
 
 .navbar-default {
+  .navbar-toggle {
+    background-color: $success;
+    &:focus, &:hover {
+      background-color: darken($success, 15%);
+    }
+    .icon-bar {
+      background-color: $successtext;
+    }
+    border-color: $successtext;
+  }
   background-color: $navbackground;
   .navbar-nav>li>a, .navbar-nav>li>a:focus, .navbar-brand {
     color: $navtext;
@@ -70,7 +80,11 @@
     background-color: lighten($navbackground, 15%);
     color: $navtext;
   }
-  
+  @media (max-width: 767px) {
+    .navbar-nav .open .dropdown-menu>li>a {
+      color: $navtext;
+    }
+  }
   .dropdown-menu {
     background-color: $sidenavbackground;
     li>a {
@@ -87,5 +101,30 @@
   background-color: $header;
   h1 a {
     color: $headertext;
+    @media (max-width: 767px) {
+      font-size: 30px;
+      img {
+        max-width: 35%;
+        float: left;
+      }
+      span {
+        display: block;
+        float: left;
+        max-width: 65%;
+      }
+    }
+  }
+  p {
+    clear: both;
+    margin: none;
+  }
+  @media (max-width: 1364px) {
+    margin-top: 110px;
+  }
+  @media (max-width: 901px) {
+    margin-top: 195px;
+  }
+  @media (max-width: 767px) {
+    margin-top: 40px;
   }
 }

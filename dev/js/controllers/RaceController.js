@@ -124,6 +124,7 @@
       }
       $("#ageTable").dataTable({
         data: $scope.getAllAgeData(),
+        responsive: true,
         columns: [
           { title: 'Race' },
           { title: 'Start of Puberty' },
@@ -138,6 +139,7 @@
       });
       $("#sizeTable").dataTable({
         data: $scope.getAllSizeData(),
+        responsive: true,
         columns: [
           { title: 'Race/Subrace' },
           { title: 'Average Height' },
