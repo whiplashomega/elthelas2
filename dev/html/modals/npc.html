@@ -1,0 +1,58 @@
+<div class="sheet-npc row">
+  <div class="col-sm-6">
+    <h1>{{creature.name}}</h1>
+    <h4>{{creature.size}} {{creature.type}}, {{creature.alignment}}</h4>
+    <hr />
+    <table class="attr-table">
+      <tr>
+        <th>Armor Class</th><td>{{creature.ac}} ({{creature.acdesc}})</td>
+      </tr>
+      <tr>
+        <th>Initiative</th><td>{{creature.init}}</td>
+      </tr>
+      <tr>
+        <th>Hit Points</th><td>{{creature.hp}} ({{creature.hitdice}}d{{creature.hitdiesize}}) + {{creature.hitdice * creature.conmod}})</td>
+      </tr>
+      <tr>
+        <th>Speed</th><td>{{creature.speed}}</td>
+      </tr>
+    </table>
+    <hr />
+    <table class="attr-table">
+      <tr>
+        <th></th><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
+      </tr>
+      <tr>
+        <th>Score</th><td>{{creature.str}}</td><td>{{creature.dex}}</td><td>{{creature.con}}</td><td>{{creature.int}}</td><td>{{creature.wis}}</td><td>{{creature.cha}}</td>
+      </tr>
+      <tr>
+        <th>Mod</th><td>{{creature.strmod}}</td><td>{{creature.dexmod}}</td><td>{{creature.conmod}}</td><td>{{creature.intmod}}</td><td>{{creature.wismod}}</td><td>{{creature.chamod}}</td>
+      </tr>
+      <tr>
+        <th>Save</th><td>{{creature.strsave}}</td><td>{{creature.dexsave}}</td><td>{{creature.consave}}</td><td>{{creature.intsave}}</td><td>{{creature.wissave}}</td><td>{{creature.chasave}}</td>
+      </tr>
+    </table>
+    <hr />
+    <p>
+      <strong>Skills: </strong> <span data-ng-repeat="skill in creature.skills">{{skill.name}} +{{skill.mod}}</span>
+    </p>
+    <p>
+      <strong>Senses: </strong> {{creature.senses}}
+    </p>
+    <p>
+      <strong>Challenge: </strong> {{creature.challenge}}
+    </p>
+    <p>
+      <strong>Proficiency Bonus: </strong> {{creature.proficiency}}
+    </p>
+  </div>
+  <div class="col-sm-6">
+    <div data-ng-repeat="ability in creature.abilities">
+      <strong>{{ability.name}}.</strong> {{ability.description}}
+    </div>
+    <h2>Actions</h2>
+    <div data-ng-repeat="action in creature.actions">
+      <strong>{{action.name}}.</strong> {{action.description}}
+    </div>
+  </div>
+</div>

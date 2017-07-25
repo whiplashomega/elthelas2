@@ -27,14 +27,39 @@
         <!-- endbuild -->
     </head>
     <body>
-        
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1706715636300300',
+      xfbml      : true,
+      version    : 'v2.10'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>        
         <div ui-view="header"></div>
         <div class="container-fluid">
             <div ui-view="sidebar"></div>
+            
             <div ui-view="content"></div>
+            <div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
         </div>
         <div style="height:80px;display:block;">&nbsp;</div>
         <div ui-view="footer"></div>
+        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js"></script>
         <!-- build:js js/libraries.js -->
         <script src="/libraries/polyfill.min.js"></script>
         <script src="/libraries/angular.js"></script>
@@ -66,6 +91,7 @@
         <script src="/js/controllers/SpellController.js"></script>
         <script src="/js/controllers/HistoryController.js"></script>
         <script src="/js/controllers/ClassController.js"></script>
+        <script src="/js/controllers/CampaignController.js"></script>
         <script src="/js/controllers/GeographyController.js"></script>
         
         <script src="/js/services/DivineProvider.js"></script>

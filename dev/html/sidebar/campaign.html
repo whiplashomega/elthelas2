@@ -1,0 +1,6 @@
+    <nav class="sidenav col-sm-2">
+      <ul class="nav nav-pills nav-stacked">
+        <li data-ng-repeat="campaign in campaigns"><a ui-sref="app.campaign(campaign.id)">{{campaign.name}}</a></li>
+        <li data-ng-repeat"chapter in campaign.chapters"><a href="#" data-ng-click='loadChapter(chapter)'>{{chapter.name}}</a></li>
+      </ul>
+    </nav>

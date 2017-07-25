@@ -364,6 +364,43 @@
             return $stateParams.location;
           }
         }
+      }).state('app.about', {
+        url: 'about',
+        views: {
+          'content@': {
+            templateUrl: '/html/content/about.html'
+          },
+          'head@': {
+            templateUrl: '/html/head/about.html'
+          },
+          'sidebar@': {
+            templateUrl: '/html/sidebar/about.html'
+          }
+        },
+        data: { title: 'About the Author' }
+      }).state('app.campaign', {
+        url: 'campaigns/:campaign',
+        views: {
+          'content@': {
+            templateUrl: '/html/content/campaign.html',
+            controller: 'CampaignController'
+          },
+          'head@': {
+            templateUrl: '/html/head/campaign.html'
+          },
+          'sidebar@': {
+            templateUrl: '/html/sidebar/campaign.html',
+            controller: 'CampaignSidebarController'
+          }
+        },
+        data: {
+          title: 'Campaign Information'
+        },
+        resolve: {
+          campaign: function() {
+            return 'book1';
+          }
+        }
       });
        $locationProvider.html5Mode(true);
     }]);
