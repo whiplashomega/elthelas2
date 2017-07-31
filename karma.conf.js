@@ -21,6 +21,7 @@ module.exports = function(config) {
       'dev/libraries/angular-cookies.min.js',
       'dev/libraries/angular-ui-router.js',
       'dev/libraries/ui-bootstrap-tpls.js',
+      'dev/libraries/jquery.dataTables.js',
       'dev/libraries/**/*.js',
       'bower_components/angular-mocks/angular-mocks.js',
       'dev/js/**/*.js',

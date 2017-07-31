@@ -115,7 +115,8 @@ describe('Race Controller Tests', function() {
     
     controller = $controller('RaceController', {
       $scope: $scope,
-      raceProvider: raceProvider
+      raceProvider: raceProvider,
+      race: false
     });
   }));
   

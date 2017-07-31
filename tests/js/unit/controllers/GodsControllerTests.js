@@ -16,7 +16,8 @@ describe('God Controller Tests', function() {
     
     $controller('GodsController', {
       $scope: $scope,
-      godProvider: godProvider
+      godProvider: godProvider,
+      god: false
     });
   }));
   

@@ -67,7 +67,8 @@ describe('Organizations Controller Tests', function() {
     
     controller = $controller('OrganizationController', {
       $scope: $scope,
-      organizationProvider: organizationProvider
+      organizationProvider: organizationProvider,
+      org: false
     });
   }));
   it('factory function should be defined', function() {

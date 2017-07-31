@@ -13,8 +13,8 @@
         ordering: false,
         paging: false,
         info: false
-      }
-    var factable = $('#factotumtable').DataTable(options);
-    var racetable = $('#rangertable').DataTable(options);
+      };
+    $('#factotumtable').DataTable(options);
+    $('#rangertable').DataTable(options);
   }]);
 })(angular, jQuery);

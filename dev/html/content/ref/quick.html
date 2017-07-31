@@ -548,7 +548,7 @@
                   <td>Leather</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>2 gp</td><td>Leather ready for use in clothing or armor.</td>
                 </tr>
                 <tr>
-                  <td>Dragon Hide</td><td>Raw Material</td><td>150 lb</td><td>1 finished hide</td><td>3000 gp</td><td>A finished dragonhide that has been dried, descaled and de-fleshed.</td>
+                  <td>Dragon Hide</td><td>Raw Material</td><td>150 lb</td><td>1 finished hide</td><td>6000 gp</td><td>A finished dragonhide that has been dried, descaled and de-fleshed.</td>
                 </tr>
                 <tr>
                   <td>Dragon Leather</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>40 gp</td><td>Dragon leather ready for use in clothing or armor.</td>
@@ -786,153 +786,559 @@
           </uib-tab>
           <uib-tab index="7" heading="Armor">
             <h3>Armor</h3>
-            <table class="table table-striped datatable">
+            <p>
+              When ordering custom weapons and armor, the 'time cost' refers to the time required by 1 artisan to do the work by himself.  For most complex items, up to 12 workers may work on an item per day (4 working together in 3 shifts), additionally the presence of a master craftsmen allows the work to be completed in half the time.  Thus the minimum time required to create an item by a master craftsmans guild shop is 1/24 the listed time requirement, or changes the unit from days to hours.
+            </p>
+            <table class="table table-striped" id="armortable">
               <thead>
                 <tr>
-                  <th>Armor</th><th>Type</th><th>Material</th><th>AC</th><th>Strength</th><th>Stealth</th><th>Weight</th><th>Resistance</th><th>Material Cost</th><th>Time Cost</th><th>Cost</th><th>Suggested Price</th>
+                  <th>Armor</th><th>Type</th><th>Material</th><th>AC</th><th>Strength</th><th>Stealth</th><th>Weight</th><th>Resistance</th><th>Price</th><th>Time </th>
                 </tr>
               </thead>
+              <tfoot>
+                <tr>
+                  <th>Armor</th><th>Type</th><th>Material</th><th>AC</th><th>Strength</th><th>Stealth</th><th>Weight</th><th>Resistance</th><th>Price</th><th>Time </th>
+                </tr>
+              </tfoot>
               <tbody>
-                <tr>
-                  <td>Padded</td><td>Light</td><td>Cloth</td><td>11 + dex mod</td><td>-</td><td>disadvantage</td><td>8 lb</td><td>-</td><td>1.6 gp</td><td>1 workday</td><td>6.6 gp</td><td>8 gp</td>
-                </tr>
-                <tr>
-                  <td>Leather</td><td>Light</td><td>Leather</td><td>11 + dex mod</td><td>-</td><td>-</td><td>10 lb</td><td>-</td><td>20 gp</td><td>3 workdays</td><td>35 gp</td><td>39 gp</td>
-                </tr>
-                <tr>
-                  <td>Leather</td><td>Light</td><td>Dragon Leather</td><td>11 + dex mod</td><td>-</td><td>-</td><td>10 lb</td><td>dragon's breath weapon element</td><td>400 gp</td><td>4 workdays</td><td>420 gp</td><td>578 gp</td>
-                </tr>
-                <tr>
-                  <td>Studded Leather</td><td>Light</td><td>Leather</td><td>12 + dex mod</td><td>-</td><td>-</td><td>13 lb</td><td>-</td><td>26 gp</td><td>7 workdays</td><td>61 gp</td><td>74 gp</td>
-                </tr>
-                <tr>
-                  <td>Studded Leather</td><td>Light</td><td>Dragon Leather</td><td>12 + dex mod</td><td>-</td><td>-</td><td>13 lb</td><td>dragon's breath weapon element</td><td>520 gp</td><td>10 workdays</td><td>570 gp</td><td>855 gp</td>
-                </tr>
-                <tr>
-                  <td>Hide</td><td>Medium</td><td>Hides</td><td>12 + dex (max 2)</td><td>-</td><td>-</td><td>12 lb</td><td>-</td><td>6 gp</td><td>3 workdays</td><td>21 gp</td><td>26 gp</td>
-                </tr>
-                <tr>
-                  <td>Hide</td><td>Medium</td><td>Dragon Hides</td><td>12 + dex (max 2)</td><td>-</td><td>-</td><td>12 lb</td><td>dragon's breath weapon element</td><td>240 gp</td><td>4 workdays</td><td>260 gp</td><td>390 gp</td>
-                </tr>
-                <tr>
-                  <td>Chain Shirt</td><td>Medium</td><td>Steel</td><td>13 + dex (max 2)</td><td>-</td><td>-</td><td>20 lb</td><td>-</td><td>4 gp</td><td>20 workdays</td><td>104 gp</td><td>136 gp</td>
-                </tr>
-                <tr>
-                  <td>Chain Shirt</td><td>Light</td><td>Mithril</td><td>13 + dex</td><td>-</td><td>-</td><td>10 lb</td><td>-</td><td>150 gp</td><td>30 workdays</td><td>300 gp</td><td>390 gp</td>
-                </tr>
-                <tr>
-                  <td>Chain Shirt</td><td>Medium</td><td>Adamantine</td><td>13 + dex (max 2)</td><td>-</td><td>-</td><td>20 lb</td><td>non-magical slashing &amp; piercing</td><td>200 gp</td><td>30 workdays</td><td>350 gp</td><td>569 gp</td>
-                </tr>
-                <tr>
-                  <td>Chain Shirt</td><td>Medium</td><td>Parakas Steel</td><td>13 + dex (max 2)</td><td>-</td><td>-</td><td>20 lb</td><td>non-magical piercing</td><td>100 gp</td><td>20 workdays</td><td>200 gp</td><td>325 gp</td>
-                </tr>
-                <tr>
-                  <td>Scale Mail</td><td>Medium</td><td>Steel</td><td>14 + dex (max 2)</td><td>-</td><td>disadvantage</td><td>45 lb</td><td>-</td><td>27 gp</td><td>30 workdays</td><td>177 gp</td><td>248 gp</td>
-                </tr>
-                <tr>
-                  <td>Scale Mail</td><td>Medium</td><td>Mithril</td><td>14 + dex (max 2)</td><td>-</td><td>-</td><td>27.5 lb</td><td>-</td><td>282.5 gp</td><td>45 workdays</td><td>507.5 gp</td><td>711 gp</td>
-                </tr>
-                <tr>
-                  <td>Scale Mail</td><td>Medium</td><td>Adamantine</td><td>14 + dex (max 2)</td><td>-</td><td>disadvantage</td><td>45 lb</td><td>non-magical slashing &amp; piercing</td><td>370 gp</td><td>45 workdays</td><td>595 gp</td><td>1042 gp</td>
-                </tr>
-                <tr>
-                  <td>Scale Mail</td><td>Medium</td><td>Parakas Steel</td><td>14 + dex (max 2)</td><td>-</td><td>disadvantage</td><td>45 lb</td><td>non-magical piercing</td><td>195 gp</td><td>30 workdays</td><td>345 gp</td><td>604 gp</td>
-                </tr>
-                <tr>
-                  <td>Scale Mail</td><td>Medium</td><td>Dragon Scale</td><td>14 + dex (max 2)</td><td>-</td><td>disadvantage</td><td>45 lb</td><td>dragon's breath weapon element</td><td>1070 gp</td><td>45 workdays</td><td>1295 gp</td><td>2267 gp</td>
-                </tr>
-                <tr>
-                  <td>Breastplate</td><td>Medium</td><td>Steel</td><td>14 + dex (max 2)</td><td>-</td><td>-</td><td>20 lb</td><td>-</td><td>22 gp</td><td>40 workdays</td><td>222 gp</td><td>311 gp</td>
-                </tr>
-                <tr>
-                  <td>Breastplate</td><td>Light</td><td>Mithril</td><td>14 + dex</td><td>-</td><td>-</td><td>15 lb</td><td>-</td><td>95 gp</td><td>60 workdays</td><td>395 gp</td><td>553 gp</td>
-                </tr>
-                <tr>
-                  <td>Breastplate</td><td>Medium</td><td>Adamantine</td><td>14 + dex (max 2)</td><td>-</td><td>-</td><td>20 lb</td><td>non-magical slashing &amp; piercing</td><td>120 gp</td><td>60 workdays</td><td>420 gp</td><td>735 gp</td>
-                </tr>
-                <tr>
-                  <td>Breastplate</td><td>Medium</td><td>Parakas Steel</td><td>14 + dex (max 2)</td><td>-</td><td>-</td><td>20 lb</td><td>non-magical piercing</td><td>70 gp</td><td>40 workdays</td><td>270 gp</td><td>473 gp</td>
-                </tr>
-                <tr>
-                  <td>Breastplate</td><td>Medium</td><td>Dragon Scale</td><td>14 + dex (max 2)</td><td>-</td><td>-</td><td>20 lb</td><td>dragon's breath weapon element</td><td>320 gp</td><td>60 workdays</td><td>620 gp</td><td>1085 gp</td>
-                </tr>
-                <tr>
-                  <td>Half-Plate</td><td>Medium</td><td>Steel</td><td>15 + dex (max 2)</td><td>-</td><td>disadvantage</td><td>40 lb</td><td>-</td><td>26 gp</td><td>120 workdays</td><td>626 gp</td><td>939 gp</td>
-                </tr>
-                <tr>
-                  <td>Half-Plate</td><td>Medium</td><td>Mithril</td><td>15 + dex (max 2)</td><td>-</td><td>-</td><td>25 lb</td><td>-</td><td>245 gp</td><td>180 workdays</td><td>1145 gp</td><td>1718 gp</td>
-                </tr>
-                <tr>
-                  <td>Half-Plate</td><td>Medium</td><td>Adamantine</td><td>15 + dex (max 2)</td><td>-</td><td>disadvantage</td><td>40 lb</td><td>non-magical slashing &amp; piercing</td><td>320 gp</td><td>180 workdays</td><td>1220 gp</td><td>2288 gp</td>
-                </tr>
-                <tr>
-                  <td>Half-Plate</td><td>Medium</td><td>Parakas Steel</td><td>15 + dex (max 2)</td><td>-</td><td>disadvantage</td><td>40 lb</td><td>non-magical piercing</td><td>170 gp</td><td>120 workdays</td><td>770 gp</td><td>1444 gp</td>
-                </tr>
-                <tr>
-                  <td>Half-Plate</td><td>Medium</td><td>Dragon Scale</td><td>15 + dex (max 2)</td><td>-</td><td>disadvantage</td><td>40 lb</td><td>dragon's breath weapon element</td><td>920 gp</td><td>180 workdays</td><td>1820 gp</td><td>3413 gp</td>
-                </tr>
-                <tr>
-                  <td>Ring Mail</td><td>Heavy</td><td>Steel</td><td>14</td><td>-</td><td>disadvantage</td><td>40 lb</td><td>-</td><td>26 gp</td><td>20 workdays</td><td>126 gp</td><td>177 gp</td>
-                </tr>
-                <tr>
-                  <td>Ring Mail</td><td>Medium</td><td>Mithril</td><td>14 + dex (max 2)</td><td>-</td><td>-</td><td>25 lb</td><td>-</td><td>245 gp</td><td>30 workdays</td><td>395 gp</td><td>553 gp</td>
-                </tr>
-                <tr>
-                  <td>Ring Mail</td><td>Heavy</td><td>Adamantine</td><td>14</td><td>-</td><td>disadvantage</td><td>40 lb</td><td>non-magical slashing, piercing</td><td>320 gp</td><td>30 workdays</td><td>470 gp</td><td>823 gp</td>
-                </tr>
-                <tr>
-                  <td>Ring Mail</td><td>Heavy</td><td>Parakas Steel</td><td>14</td><td>-</td><td>disadvantage</td><td>40 lb</td><td>non-magical piercing</td><td>170 gp</td><td>20 workdays</td><td>270 gp</td><td>473 gp</td>
-                </tr>
-                <tr>
-                  <td>Chain Mail</td><td>Heavy</td><td>Steel</td><td>16</td><td>13</td><td>disadvantage</td><td>55 lb</td><td>-</td><td>11 gp</td><td>50 workdays</td><td>261 gp</td><td>418 gp</td>
-                </tr>
-                <tr>
-                  <td>Chain Mail</td><td>Medium</td><td>Mithril</td><td>16 + dex (max 2)</td><td>11</td><td>disadvantage</td><td>31.5 lb</td><td>-</td><td>353.5 gp</td><td>75 workdays</td><td>728.5 gp</td><td>1166 gp</td>
-                </tr>
-                <tr>
-                  <td>Chain Mail</td><td>Heavy</td><td>Adamantine</td><td>16</td><td>13</td><td>disadvantage</td><td>55 lb</td><td>non-magical slashing, piercing</td><td>471 gp</td><td>75 workdays</td><td>846 gp</td><td>1692 gp</td>
-                </tr>
-                <tr>
-                  <td>Chain Mail</td><td>Heavy</td><td>Parakas Steel</td><td>16</td><td>13</td><td>disadvantage</td><td>55 lb</td><td>non-magical piercing</td><td>236 gp</td><td>50 workdays</td><td>486 gp</td><td>972 gp</td>
-                </tr>
-                <tr>
-                  <td>Splint</td><td>Heavy</td><td>Steel</td><td>17</td><td>15</td><td>disadvantage</td><td>60 lb</td><td>-</td><td>30 gp</td><td>50 workdays</td><td>280 gp</td><td>476 gp</td>
-                </tr>
-                <tr>
-                  <td>Splint</td><td>Medium</td><td>Mithril</td><td>17 + dex (max 2)</td><td>13</td><td>disadvantage</td><td>35 lb</td><td>-</td><td>395 gp</td><td>75 workdays</td><td>770 gp</td><td>1309 gp</td>
-                </tr>
-                <tr>
-                  <td>Splint</td><td>Heavy</td><td>Adamantine</td><td>17</td><td>15</td><td>disadvantage</td><td>60 lb</td><td>non-magical slashing, piercing</td><td>520 gp</td><td>75 workdays</td><td>895 gp</td><td>1902 gp</td>
-                </tr>
-                <tr>
-                  <td>Splint</td><td>Heavy</td><td>Parakas Steel</td><td>17</td><td>15</td><td>disadvantage</td><td>60 lb</td><td>non-magical piercing</td><td>270 gp</td><td>50 workdays</td><td>520 gp</td><td>1105 gp</td>
-                </tr>
-                <tr>
-                  <td>Plate</td><td>Heavy</td><td>Steel</td><td>18</td><td>15</td><td>disadvantage</td><td>65 lb</td><td>-</td><td>31 gp</td><td>200 workdays</td><td>1031 gp</td><td>1856 gp</td>
-                </tr>
-                <tr>
-                  <td>Plate</td><td>Medium</td><td>Mithril</td><td>18 + dex (max 2)</td><td>13</td><td>disadvantage</td><td>37.5 lb</td><td>-</td><td>432.5 gp</td><td>300 workdays</td><td>1932.5 gp</td><td>3479 gp</td>
-                </tr>
-                <tr>
-                  <td>Plate</td><td>Heavy</td><td>Adamantine</td><td>18</td><td>15</td><td>disadvantage</td><td>65 lb</td><td>non-magical slashing, piercing</td><td>570 gp</td><td>300 workdays</td><td>2070 gp</td><td>4658 gp</td>
-                </tr>
-                <tr>
-                  <td>Plate</td><td>Heavy</td><td>Parakas Steel</td><td>18</td><td>15</td><td>disadvantage</td><td>65 lb</td><td>non-magical piercing</td><td>295 gp</td><td>200 workdays</td><td>1295 gp</td><td>2914 gp</td>
-                </tr>
-                <tr>
-                  <td>Plate</td><td>Heavy</td><td>Dragon Scale</td><td>18</td><td>15</td><td>disadvantage</td><td>65 lb</td><td>dragon's breath weapon element</td><td>1120 gp</td><td>300 workdays</td><td>2620 gp</td><td>5895 gp</td>
-                </tr>
+            		<tr>
+            			<td>Padded</td><td>Light</td><td>Cloth</td><td>11</td><td>-</td><td>disadvantage</td><td>8</td><td>-</td><td>6</td><td>1</td>
+            		</tr>
+		<tr>
+			<td>Leather</td>
+			<td>Light</td>
+			<td>Leather</td>
+			<td>11</td>
+			<td>-</td>
+			<td>-</td>
+			<td>10</td>
+			<td>-</td>
+			<td>32</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>Leather</td>
+			<td>Light</td>
+			<td>Dragon Leather</td>
+			<td>11</td>
+			<td>-</td>
+			<td>-</td>
+			<td>10</td>
+			<td>element of dragons breath weapon</td>
+			<td>2700</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>Studded Leather</td>
+			<td>Light</td>
+			<td>Leather</td>
+			<td>12</td>
+			<td>-</td>
+			<td>-</td>
+			<td>13</td>
+			<td>-</td>
+			<td>60</td>
+			<td>7</td>
+		</tr>
+		<tr>
+			<td>Studded Leather</td>
+			<td>Light</td>
+			<td>Dragon Leather</td>
+			<td>12</td>
+			<td>-</td>
+			<td>-</td>
+			<td>13</td>
+			<td>element of dragons breath weapon</td>
+			<td>3900</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>Hide</td>
+			<td>Medium</td>
+			<td>Hides</td>
+			<td>12</td>
+			<td>-</td>
+			<td>-</td>
+			<td>12</td>
+			<td>-</td>
+			<td>18</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>Hide</td>
+			<td>Medium</td>
+			<td>Dragon Hide</td>
+			<td>12</td>
+			<td>-</td>
+			<td>-</td>
+			<td>12</td>
+			<td>element of dragons breath weapon</td>
+			<td>1800</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>Chain Shirt</td>
+			<td>Medium</td>
+			<td>Steel</td>
+			<td>13</td>
+			<td>-</td>
+			<td>-</td>
+			<td>20</td>
+			<td>-</td>
+			<td>90</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td>Chain Shirt</td>
+			<td>Light</td>
+			<td>Mithril</td>
+			<td>13</td>
+			<td>-</td>
+			<td>-</td>
+			<td>10</td>
+			<td>-</td>
+			<td>600</td>
+			<td>30</td>
+		</tr>
+		<tr>
+			<td>Chain Shirt</td>
+			<td>Medium</td>
+			<td>Adamantine</td>
+			<td>13</td>
+			<td>-</td>
+			<td>-</td>
+			<td>20</td>
+			<td>non-magical slashing, piercing</td>
+			<td>2000</td>
+			<td>30</td>
+		</tr>
+		<tr>
+			<td>Chain Shirt</td>
+			<td>Medium</td>
+			<td>Parakas Steel</td>
+			<td>13</td>
+			<td>-</td>
+			<td>-</td>
+			<td>20</td>
+			<td>non-magical piercing</td>
+			<td>680</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td>Scale Mail</td>
+			<td>Medium</td>
+			<td>Steel</td>
+			<td>14</td>
+			<td>-</td>
+			<td>disadvantage</td>
+			<td>45</td>
+			<td>-</td>
+			<td>140</td>
+			<td>30</td>
+		</tr>
+		<tr>
+			<td>Scale Mail</td>
+			<td>Medium</td>
+			<td>Mithril</td>
+			<td>14</td>
+			<td>-</td>
+			<td>-</td>
+			<td>27.5</td>
+			<td>-</td>
+			<td>1400</td>
+			<td>45</td>
+		</tr>
+		<tr>
+			<td>Scale Mail</td>
+			<td>Medium</td>
+			<td>Adamantine</td>
+			<td>14</td>
+			<td>-</td>
+			<td>disadvantage</td>
+			<td>45</td>
+			<td>non-magical slashing, piercing</td>
+			<td>4400</td>
+			<td>45</td>
+		</tr>
+		<tr>
+			<td>Scale Mail</td>
+			<td>Medium</td>
+			<td>Parakas Steel</td>
+			<td>14</td>
+			<td>-</td>
+			<td>disadvantage</td>
+			<td>45</td>
+			<td>non-magical piercing</td>
+			<td>1600</td>
+			<td>30</td>
+		</tr>
+		<tr>
+			<td>Scale Mail</td>
+			<td>Medium</td>
+			<td>Dragon Scales</td>
+			<td>14</td>
+			<td>-</td>
+			<td>disadvantage</td>
+			<td>45</td>
+			<td>element of dragons breath weapon</td>
+			<td>12000</td>
+			<td>45</td>
+		</tr>
+		<tr>
+			<td>Breastplate</td>
+			<td>Medium</td>
+			<td>Steel</td>
+			<td>14</td>
+			<td>-</td>
+			<td>-</td>
+			<td>20</td>
+			<td>-</td>
+			<td>180</td>
+			<td>40</td>
+		</tr>
+		<tr>
+			<td>Breastplate</td>
+			<td>Light</td>
+			<td>Mithril</td>
+			<td>14</td>
+			<td>-</td>
+			<td>-</td>
+			<td>15</td>
+			<td>-</td>
+			<td>900</td>
+			<td>60</td>
+		</tr>
+		<tr>
+			<td>Breastplate</td>
+			<td>Medium</td>
+			<td>Adamantine</td>
+			<td>14</td>
+			<td>-</td>
+			<td>-</td>
+			<td>20</td>
+			<td>non-magical slashing, piercing</td>
+			<td>2500</td>
+			<td>60</td>
+		</tr>
+		<tr>
+			<td>Breastplate</td>
+			<td>Medium</td>
+			<td>Parakas Steel</td>
+			<td>14</td>
+			<td>-</td>
+			<td>-</td>
+			<td>20</td>
+			<td>non-magical piercing</td>
+			<td>900</td>
+			<td>40</td>
+		</tr>
+		<tr>
+			<td>Breastplate</td>
+			<td>Medium</td>
+			<td>Dragon Scales</td>
+			<td>14</td>
+			<td>-</td>
+			<td>-</td>
+			<td>20</td>
+			<td>element of dragons breath weapon</td>
+			<td>5800</td>
+			<td>60</td>
+		</tr>
+		<tr>
+			<td>Half Plate</td>
+			<td>Medium</td>
+			<td>Steel</td>
+			<td>15</td>
+			<td>-</td>
+			<td>disadvantage</td>
+			<td>40</td>
+			<td>-</td>
+			<td>600</td>
+			<td>120</td>
+		</tr>
+		<tr>
+			<td>Half Plate</td>
+			<td>Medium</td>
+			<td>Mithril</td>
+			<td>15</td>
+			<td>-</td>
+			<td>-</td>
+			<td>25</td>
+			<td>-</td>
+			<td>2000</td>
+			<td>180</td>
+		</tr>
+		<tr>
+			<td>Half Plate</td>
+			<td>Medium</td>
+			<td>Adamantine</td>
+			<td>15</td>
+			<td>-</td>
+			<td>disadvantage</td>
+			<td>40</td>
+			<td>non-magical slashing, piercing</td>
+			<td>6100</td>
+			<td>180</td>
+		</tr>
+		<tr>
+			<td>Half Plate</td>
+			<td>Medium</td>
+			<td>Parakas Steel</td>
+			<td>15</td>
+			<td>-</td>
+			<td>disadvantage</td>
+			<td>40</td>
+			<td>non-magical piercing</td>
+			<td>2300</td>
+			<td>120</td>
+		</tr>
+		<tr>
+			<td>Half Plate</td>
+			<td>Medium</td>
+			<td>Dragon Scales</td>
+			<td>15</td>
+			<td>&nbsp;</td>
+			<td>disadvantage</td>
+			<td>40</td>
+			<td>element of dragons breath weapon</td>
+			<td>13300</td>
+			<td>180</td>
+		</tr>
+		<tr>
+			<td>Ring Mail</td>
+			<td>Heavy</td>
+			<td>Steel</td>
+			<td>14</td>
+			<td>-</td>
+			<td>disadvantage</td>
+			<td>40</td>
+			<td>-</td>
+			<td>100</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td>Ring Mail</td>
+			<td>Medium</td>
+			<td>Mithril</td>
+			<td>14</td>
+			<td>-</td>
+			<td>-</td>
+			<td>25</td>
+			<td>-</td>
+			<td>1200</td>
+			<td>30</td>
+		</tr>
+		<tr>
+			<td>Ring Mail</td>
+			<td>Heavy</td>
+			<td>Adamantine</td>
+			<td>14</td>
+			<td>-</td>
+			<td>disadvantage</td>
+			<td>40</td>
+			<td>non-magical slashing, piercing</td>
+			<td>3800</td>
+			<td>30</td>
+		</tr>
+		<tr>
+			<td>Ring Mail</td>
+			<td>Heavy</td>
+			<td>Parakas Steel</td>
+			<td>14</td>
+			<td>-</td>
+			<td>disadvantage</td>
+			<td>40</td>
+			<td>non-magical piercing</td>
+			<td>1300</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td>Chain Mail</td>
+			<td>Heavy</td>
+			<td>Steel</td>
+			<td>16</td>
+			<td>13</td>
+			<td>disadvantage</td>
+			<td>55</td>
+			<td>-</td>
+			<td>260</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>Chain Mail</td>
+			<td>Medium</td>
+			<td>Mithril</td>
+			<td>16</td>
+			<td>11</td>
+			<td>-</td>
+			<td>31.5</td>
+			<td>-</td>
+			<td>1900</td>
+			<td>75</td>
+		</tr>
+		<tr>
+			<td>Chain Mail</td>
+			<td>Heavy</td>
+			<td>Adamantine</td>
+			<td>16</td>
+			<td>13</td>
+			<td>disadvantage</td>
+			<td>55</td>
+			<td>non-magical slashing, piercing</td>
+			<td>6400</td>
+			<td>75</td>
+		</tr>
+		<tr>
+			<td>Chain Mail</td>
+			<td>Heavy</td>
+			<td>Parakas Steel</td>
+			<td>16</td>
+			<td>13</td>
+			<td>disadvantage</td>
+			<td>55</td>
+			<td>non-magical piercing</td>
+			<td>2300</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>Splint</td>
+			<td>Heavy</td>
+			<td>Steel</td>
+			<td>17</td>
+			<td>15</td>
+			<td>disadvantage</td>
+			<td>60</td>
+			<td>-</td>
+			<td>280</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>Splint</td>
+			<td>Medium</td>
+			<td>Mithril</td>
+			<td>17</td>
+			<td>13</td>
+			<td>-</td>
+			<td>35</td>
+			<td>-</td>
+			<td>2200</td>
+			<td>75</td>
+		</tr>
+		<tr>
+			<td>Splint</td>
+			<td>Heavy</td>
+			<td>Adamantine</td>
+			<td>17</td>
+			<td>15</td>
+			<td>disadvantage</td>
+			<td>60</td>
+			<td>non-magical slashing, piercing</td>
+			<td>7300</td>
+			<td>75</td>
+		</tr>
+		<tr>
+			<td>Splint</td>
+			<td>Heavy</td>
+			<td>Parakas Steel</td>
+			<td>17</td>
+			<td>15</td>
+			<td>disadvantage</td>
+			<td>60</td>
+			<td>non-magical piercing</td>
+			<td>2600</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>Plate</td>
+			<td>Heavy</td>
+			<td>Steel</td>
+			<td>18</td>
+			<td>15</td>
+			<td>disadvantage</td>
+			<td>65</td>
+			<td>-</td>
+			<td>1200</td>
+			<td>200</td>
+		</tr>
+		<tr>
+			<td>Plate</td>
+			<td>Medium</td>
+			<td>Mithril</td>
+			<td>18</td>
+			<td>13</td>
+			<td>-</td>
+			<td>37.5</td>
+			<td>-</td>
+			<td>3700</td>
+			<td>300</td>
+		</tr>
+		<tr>
+			<td>Plate</td>
+			<td>Heavy</td>
+			<td>Adamantine</td>
+			<td>18</td>
+			<td>15</td>
+			<td>disadvantage</td>
+			<td>65</td>
+			<td>non-magical slashing, piercing</td>
+			<td>11900</td>
+			<td>300</td>
+		</tr>
+		<tr>
+			<td>Plate</td>
+			<td>Heavy</td>
+			<td>Parakas Steel</td>
+			<td>18</td>
+			<td>15</td>
+			<td>disadvantage</td>
+			<td>65</td>
+			<td>non-magical piercing</td>
+			<td>4500</td>
+			<td>200</td>
+		</tr>
+		<tr>
+			<td>Plate</td>
+			<td>Heavy</td>
+			<td>Dragon Scales</td>
+			<td>18</td>
+			<td>15</td>
+			<td>disadvantage</td>
+			<td>65</td>
+			<td>element of dragons breath weapon</td>
+			<td>26000</td>
+			<td>300</td>
+		</tr>
+		<tr>
+			<td>Shield</td>
+			<td>-</td>
+			<td>Steel</td>
+			<td>12</td>
+			<td>-</td>
+			<td>-</td>
+			<td>6</td>
+			<td>-</td>
+			<td>6</td>
+			<td>1</td>
+		</tr>
               </tbody>
             </table>
           </uib-tab>
           <uib-tab index="8" heading="Weapons">
             <h3>Weapons</h3>
-            <table class="table table-striped datatable">
+            <p>
+              When ordering custom weapons and armor, the 'time cost' refers to the time required by 1 artisan to do the work by himself.  For most complex items, up to 12 workers may work on an item per day (4 working together in 3 shifts), additionally the presence of a master craftsmen allows the work to be completed in half the time.  Thus the minimum time required to create an item by a master craftsmans guild shop is 1/24 the listed time requirement, or changes the unit from days to hours.
+            </p>
+            <table class="table table-striped" id="weapontable">
               <thead>
                 <tr>
                   <th>Name</th><th>Type</th><th>Material</th><th>Damage</th><th>Weight</th><th>Properties</th><th>Material Cost</th><th>Time Requirement</th><th>Cost</th><th>Suggested Price</th>
                 </tr>
               </thead>
+              <tfoot>
+                <tr>
+                  <th>Name</th><th>Type</th><th>Material</th><th>Damage</th><th>Weight</th><th>Properties</th><th>Material Cost</th><th>Time Requirement</th><th>Cost</th><th>Suggested Price</th>
+                </tr>
+              </tfoot>
               <tbody>
                 <tr>
                   <td>Club</td><td>Simple</td><td>Unworked Wood</td><td>1d4 bludgeoning</td><td>2 lb</td><td>light</td><td>0.2 gp</td><td>0 workdays</td><td>0.2 gp</td><td>0.3 gp</td>
@@ -1049,7 +1455,824 @@
             </table>
           </uib-tab>
           <uib-tab index="9" heading="Magic Items">
-            
+            <h1>Margo's Mystic Mail Order Enchantments Catalog</h1>
+            <table class="table table-striped datatable dt-responsive" id="magictable">
+              <thead>
+                <tr>
+                  <th>Item</th><th>Type</th><th>Cost (gp)</th><th>Rarity</th><th>Attunement</th><th>Effect</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <th>Item</th><th>Type</th><th>Cost</th><th>Rarity</th><th>Attunement</th><th>Effect</th>
+              </tfoot>
+              <tbody>
+
+                <tr>
+                  <td>Ever-Burning Fire Solution</td><td>Single Use</td><td>300</td><td>Uncommon</td><td>No</td><td>Upon being lit on fire, this liquid burns for 1 minute unless dispersed or smothered, dealing 2d6 fire damage to any creature or object in contact with it.  Water cannot extinguish the flames.</td>
+                </tr>
+                <tr>
+                  <td>Alchemy Jug</td><td>Misc. Equipment</td><td>500</td><td>Uncommon</td><td>No</td><td>This ceramic jug appears to be able to hold a gallon of liquid and weighs 12 pounds whether full or empty. Sloshing sounds can be heard from within the jug when it is shaken, even if the jug is empty.<br />You can use an action and name one liquid from the table below to cause the jug to produce the chosen liquid. Afterward, you can uncork the jug as an action and pour that liquid out, up to 2 gallons per minute. The maximum amount of liquid the jug can produce depends on the liquid you named.<br />Once the jug starts producing a liquid, it can't produce a different one, or more of one that has reached its maximum, until the next dawn.  The jug can produce 8 ounces of acid, 1/2 an ounce of basic poison, 4 gallons of beer, 1 gallon of honey, 2 gallons of mayonnaise, 1 quart of oil, 2 gallons of vinegar, 8 gallons of fresh water, 12 gallons of salt water, or 1 gallon of wine.</td>
+                </tr>
+                <tr>
+                  <td>Adamantine Armor</td><td>Armor</td><td>see armor tab</td><td>Uncommon</td><td>No</td><td>Gives resistance to non-magical piercing and slashing damage</td>
+                </tr>
+                <tr>
+                  <td>+1 Arrows</td><td>Ammunition</td><td>200 (20 arrows)</td><td>Uncommon</td><td>No</td><td>Attack and damage rolls made with these arrows have a +1 bonus.</td>
+                </tr>
+                <tr>
+                  <td>+2 Arrows</td><td>Ammunition</td><td>400 (20 arrows)</td><td>Rare</td><td>No</td><td>Attack and damage rolls made with these arrows have a +2 bonus.</td>
+                </tr>
+                <tr>
+                  <td>+3 Arrows</td><td>Ammunition</td><td>800 (20 arrows)</td><td>Very Rare</td><td>No</td><td>Attack and damage rolls made with these arrows have a +2 bonus.</td>
+                </tr>
+                <tr>
+                  <td>Amulet of Health</td><td>Misc. Equipment</td><td>5000</td><td>Rare</td><td>Yes</td><td>Your Constitution score is 19 while you wear this amulet. It has no effect on you if your Constitution is already 19 or higher.</td>
+                </tr>
+                <tr>
+                  <td>Amulet of Proof against Detection and Location</td><td>Misc. Equipment</td><td>3000</td><td>Uncommon</td><td>Yes</td><td>While wearing this amulet, you are hidden from divination magic. You can't be targeted by such magic or perceived through magical scrying sensors.</td>
+                </tr>
+                <tr>
+                  <td>Amulet of the Planes</td><td>Misc. Equipment</td><td>12000</td><td>Very Rare</td><td>Yes</td><td>While wearing this amulet, you can use an action to name a location that you are familiar with on another plane of existence. Then make a DC 15 Intelligence check. On a successful check, you cast the plane shift spell. On a failure, you and each creature and object within 15 feet of you travel to a random destination. Roll a dlOO. On a 1- 60, you travel to a random location on the plane you named. On a 61- 100, you travel to a randomly determined plane of existence.</td>
+                </tr>
+                <tr>
+                  <td>Animated Shield</td><td>Shield</td><td>15000</td><td>Very Rare</td><td>Yes</td><td>While holding this shield, you can speak its command word as a bonus action to cause it to animate. The shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The shield remains animated for 1 minute, until you use a bonus action to end this effect, or until you are incapacitated or die, at which point the shield falls to the ground or into your hand if you have one free.</td>
+                </tr>
+                <tr>
+                  <td>+1 Armor</td><td>Armor</td><td>4000 + cost of armor</td><td>Rare</td><td>No</td><td>You have a +1 bonus to AC while wearing this armor.</td>
+                </tr>
+                <tr>
+                  <td>+2 Armor</td><td>Armor</td><td>16000 + cost of armor</td><td>Very Rare</td><td>No</td><td>You have a +2 bonus to AC while wearing this armor.</td>
+                </tr>
+                <tr>
+                  <td>Armor of Resistance</td><td>Armor</td><td>8000 + armor</td><td>Rare</td><td>Yes</td><td>You have resistance to one type of damage while you wear this armor.</td>
+                </tr>
+                <tr>
+                  <td>Arrow-Catching Shield</td><td>Shield</td><td>4000</td><td>Rare</td><td>Yes</td><td>You gain a +2 bonus to AC against ranged attacks while you wield this shield. This bonus is in addition to the shield's normal bonus to AC. In addition, whenever an attacker makes a ranged attack against a target within 5 feet of you, you can use your reaction to become the target of the attack instead.</td>
+                </tr>
+                <tr>
+                  <td>Arrow of Slaying</td><td>Ammunition</td><td>6000 (20 arrows)</td><td>Very Rare</td><td>No</td><td>An arrow of slaying is a magic weapon meant to slay a particular kind of creature. Some are more focused than others; for example, there are both arrows of dragon slaying and arrows of blue dragon slaying. If a creature belonging to the type, race, or group associated with an arrow of slaying takes damage from the arrow, the creature must make a DC 17 Constitution saving throw, taking an extra 6d10 piercing damage on a failed save, or half as much extra damage on a successful one.<br />Once an arrow of slaying deals its extra damage to a creature, it becomes a nonmagical arrow. Other types of magic ammunition of this kind exist, such as bolts of slaying meant for a crossbow, though arrows are most common.</td>
+                </tr>
+                <tr>
+                  <td>Bag of Holding</td><td>Wondrous Item</td><td>3000</td><td>Uncommon</td><td>No</td><td>This bag has an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. The bag weighs 15 pounds, regardless of its contents. Retrieving an item from the bag requires an action. If the bag is overloaded, pierced, or torn, it ruptures and is destroyed, and its contents are scattered in the Astral Plane. If the bag is turned inside out, its contents spill forth, unharmed, but the bag must be put right before it can be used again. Breathing creatures inside the bag can survive up to a number of minutes equal to 10 divided by the number of creatures (minimum 1 minute), after which time they begin to suffocate.<br />Placing a bag of holding inside an extradimensional space created by a Heward's handy haversack, portable hole, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it to a random location on the Astral Plane. The gate then closes. The gate is one-way only and can't be reopened.</td>
+                </tr>
+                <tr>
+                  <td>Bag of Tricks</td><td>Wondrous Item</td><td>4000</td><td>Uncommon</td><td>No</td><td>This ordinary bag, made from gray, rust, or tan cloth, appears empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. The bag weighs 1/2 pound.<br />You can use an action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling a d8 and consulting the table that corresponds to the bag's color. See the Monster Manual for the creature's statistics.<br /> The creature is friendly to you and your companions, and it acts on your turn. You can use a bonus action to command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its nature. <br />Once three fuzzy objects have been pulled from the bag, the bag can't be used again until the next dawn.</td>
+                </tr>
+                <tr>
+                  <td>Bead of Force</td><td>Single Use</td><td>1000 (per bead)</td><td>Rare</td><td>No</td><td>This small black sphere measures 3/4 of an inch in diameter and weighs an ounce. Typically, 1d4 + 4 beads of force are found together. <br />You can use an action to throw the bead up to 60 feet. The bead explodes on impact and is destroyed. Each creature within a 10-foot radius of where the bead landed must succeed on a DC 15 Dexterity saving throw or take 5d4 force damage. A sphere of transparent force then encloses the area for 1 minute. Any creature that failed the save and is completely within the area is trapped inside this sphere. Creatures that succeeded on the save, or are partially within the area, are pushed away from the center of the sphere until they are no longer inside it. Only breathable air can pass through the sphere's wall. No attack or other effect can.<br /> An enclosed creature can use its action to push against the sphere's wall, moving the sphere up to half the creature's walking speed. The sphere can be picked up, and its magic causes it to weigh only 1 pound, regardless of the weight of creatures inside.</td>
+                </tr>
+                <tr>
+                  <td>Belt of Dwarvenkind</td><td>Wondrous Item</td><td>8000</td><td>Rare</td><td>Yes</td><td>While wearing this belt, you gain the following benefits:
+                    <ul>
+                      <li>Your Constitution score increases by 2, to a maximum of 20.</li>
+                      <li>You have advantage on Charisma (Persuasion) checks made to interact with dwarves.</li>
+                    </ul>
+                    In addition, while attuned to the belt, you have a 50 percent chance each day at dawn of growing a full beard if you're capable of growing one, or a visibly thicker beard if you already have one. If you aren't a dwarf, you gain the following additional benefits while wearing the belt:
+                    <ul>
+                      <li>You have advantage on saving throws against poison, and you have resistance against poison damage.</li>
+                      <li>You have darkvision out to a range of 60 feet.</li>
+                      <li>You can speak, read, and write Dwarvish.</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Belt of Hill Giant Strength</td><td>Wondrous Item</td><td>9000</td><td>Rare</td><td>Yes</td><td>While wearing this belt, your Strength score changes to 21. If your Strength is already equal to or greater than 21, the item has no effect on you.</td>
+                </tr>
+                <tr>
+                  <td>Belt of Stone/Frost Giant Strength</td><td>Wondrous Item</td><td>15000</td><td>Very Rare</td><td>Yes</td><td>While wearing this belt, your Strength score changes to 23. If your Strength is already equal to or greater than 23, the item has no effect on you.</td>
+                </tr>
+                <tr>
+                  <td>Belt of Fire Giant Strength</td><td>Wondrous Item</td><td>22000</td><td>Very Rare</td><td>Yes</td><td>While wearing this belt, your Strength score changes to 25. If your Strength is already equal to or greater than 25, the item has no effect on you.</td>
+                </tr>
+                <tr>
+                  <td>Boots of Elvenkind</td><td>Wondrous Item</td><td>4000</td><td>Uncommon</td><td>No</td><td>While you wear these boots, your steps make no sound, regardless of the surface you are moving across. You also have advantage on Dexterity (Stealth) checks that rely on moving silently.</td>
+                </tr>
+                <tr>
+                  <td>Boots of Levitation</td><td>Wondrous Item</td><td>7500</td><td>Rare</td><td>Yes</td><td>While you wear these boots, you can use an action to cast the levitate spell on yourself at will.</td>
+                </tr>
+                <tr>
+                  <td>Boots of Speed</td><td>Wondrous Item</td><td>7500</td><td>Rare</td><td>Yes</td><td>While you wear these boots, you can use a bonus action and click the boots' heels together. If you do, the boots double your walking speed, and any creature that makes an opportunity attack against you has disadvantage on the attack roll. If you click your heels together again, you end the effect.<br />When the boots' property has been used for a total of 10 minutes, the magic ceases to function until you finish a long rest.</td>
+                </tr>
+                <tr>
+                  <td>Boots of Striding and Springing</td><td>Wondrous Item</td><td>2000</td><td>Uncommon</td><td>Yes</td><td>While you wear these boots, your walking speed becomes 30 feet, unless your walking speed is higher, and your speed isn't reduced if you are encumbered or wearing heavy armor. In addition, you can jump three times the normal distance, though you can't jump farther than your remaining movement would allow.</td>
+                </tr>
+                <tr>
+                  <td>Boots of the Winterlands</td><td>Wondrous Item</td><td>4000</td><td>Uncommon</td><td>Yes</td><td>These furred boots are snug and feel quite warm. While you wear them, you gain the following benefits:
+                    <ul>
+                      <li>You have resistance to cold damage.</li>
+                      <li>You ignore difficult terrain created by ice or snow.</li>
+                      <li>You can tolerate temperatures as low as -50 degrees Fahrenheit without any additional protection. If you wear heavy clothes, you can tolerate temperatures as low as -100 degrees Fahrenheit.</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Boots of Spider Climbing</td><td>Wondrous Item</td><td>2500</td><td>Uncommon</td><td>yes</td><td>While wearing these boots you have a climbing speed of 30 feet.</td>
+                </tr>
+                <tr>
+                  <td>Bowl of Commanding Water Elementals</td><td>Wondrous Item</td><td>5000</td><td>Rare</td><td>No</td><td>While this bowl is filled with water, you can use an action to speak the bowl's command word and summon a water elemental, as if you had cast the conjure elemental spell. The bowl can't be used this way again until the next dawn. The bowl is about 1 foot in diameter and half as deep. It weighs 3 pounds and holds about 3 gallons.</td>
+                </tr>
+                <tr>
+                  <td>Bracers of Archery</td><td>Wondrous Item</td><td>3000</td><td>Uncommon</td><td>Yes</td><td>While wearing these bracers, you have proficiency with the longbow and shortbow, and you gain a +2 bonus to damage rolls on ranged attacks made with such weapons.</td>
+                </tr>
+                <tr>
+                  <td>Bracers of Defense</td><td>Wondrous Item</td><td>6000</td><td>Rare</td><td>Yes</td><td>While wearing these bracers, you gain a +2 bonus to AC if you are wearing no armor and using no shield.</td>
+                </tr>
+                <tr>
+                  <td>Brazier of Commanding Fire Elementals</td><td>Wondrous Item</td><td>5000</td><td>Rare</td><td>No</td><td>While a fire burns in this brass brazier, you can use an action to speak the brazier's command word and summon a fire elemental, as if you had cast the conjure elemental spell. The brazier can't be used this way again until the next dawn. The brazier weighs 5 pounds.</td>
+                </tr>
+                <tr>
+                  <td>Brooch of Shielding</td><td>Wondrous Item</td><td>3000</td><td>Uncommon</td><td>Yes</td><td>While wearing this brooch, you have resistance to force damage, and you have immunity to damage from the magic missile spell.</td>
+                </tr>
+                <tr>
+                  <td>Broom of Flying</td><td>Wondrous Item</td><td>9000</td><td>Uncommon</td><td>No</td><td>This wooden broom, which weighs 3 pounds, functions like a mundane broom until you stand astride it and speak its command word. It then hovers beneath you and can be ridden in the air. It has a flying speed of 50 feet. It can carry up to 400 pounds, but its flying speed becomes 30 feet while carrying over 200 pounds. The broom stops hovering when you land.<br />You can send the broom to travel alone to a destination within 1 mile of you if you speak the command word, name the location, and are familiar with that place. The broom comes back to you when you speak another command word, provided that the broom is still within 1 mile of you.</td>
+                </tr>
+                <tr>
+                  <td>Candle of Invocation</td><td>Wondrous Item</td><td>18000</td><td>Very Rare</td><td>Yes</td><td>This slender taper is dedicated to a deity and shares that deity's alignment. The candle's alignment can be detected with the detect evil and good spell. The DM chooses the god and associated alignment or determines the alignment randomly.<br />The candle's magic is activated when the candle is lit, which requires an action. After burning for 4 hours, the candle is destroyed. You can snuff it out early for use at a later time. Deduct the time it burned in increments of 1 minute from the candle's total burn time.<br />While lit, the candle sheds dim light in a 30-foot radius. Any creature within that light whose alignment matches that of the candle makes attack rolls, saving throws, and ability checks with advantage. In addition, a cleric or druid in the light whose a lignment matches the candle's can cast 1st-level spells he or she has prepared without expending spell slots, though the spell's effect is as if cast with a 1st-level slot.<br /> Alternatively, when you light the candle for the first time, you can cast the gate spell with it. Doing so destroys the candle.</td>
+                </tr>
+                <tr>
+                  <td>Cap of Water Breathing</td><td>Wondrous Item</td><td>2000</td><td>Uncommon</td><td>No</td><td>While wearing this cap underwater, you can speak its command word as an action to create a bubble of air around your head. It allows you to breathe normally underwater. This bubble stays with you until you speak the command word again, the cap is removed, or you are no longer underwater.</td>
+                </tr>
+                <tr>
+                  <td>Cape of the Mountebank</td><td>Wondrous Item</td><td>6000</td><td>Rare</td><td>No</td><td>This cape smells faintly of brimstone. While wearing it, you can use it to cast the dimension door spell as an action. This property of the cape can't be used again until the next dawn.<br />When you disappear, you leave behind a cloud of smoke, and you appear in a similar cloud of smoke at your destination. The smoke lightly obscures the space you left and the space you appear in, and it dissipates at the end of your next turn. A light or stronger wind disperses the smoke.</td>
+                </tr>
+                <tr>
+                  <td>Carpet of Flying</td><td>Wondrous Item</td><td>15000</td><td>Very Rare</td><td>No</td><td>You can speak the carpet's command word as an action to make the carpet hover and fly. It moves according to your spoken directions, provided that you are within 30 feet of it.<br />Four sizes of carpet of flying exist. The DM chooses the size of a given carpet or determines it randomly.<br />A carpet can carry up to twice the weight shown on the table, but it flies at half speed if it carries more than its normal capacity.</td>
+                </tr>
+                <tr>
+                  <td>Censer of Controlling Air Elementals</td><td>Wondrous Item</td><td>5000</td><td>Rare</td><td>No</td><td>While incense is burning in this censer, you can use an action to speak the censer's command word and summon an air elemental, as if you had cast the conjure elemental spell. The censer can't be used this way again until the next dawn.<br />This 6-inch-wide, 1-foot-high vessel resembles a chalice with a decorated lid. It weighs 1 pound.</td>
+                </tr>
+                <tr>
+                  <td>Chime of Opening</td><td>Wondrous Item</td><td>3000</td><td>Rare</td><td>No</td><td>This hollow metal tube measures about 1 foot long and weighs 1 pound. You can strike it as an action, pointing 1t at an object within 120 feet of you that can be opened, such as a door, lid, or lock. The chime issues a clear tone, and one lock or latch on the object opens unless the sound can't reach the object. If no locks or latches remain, the object itself opens. The chime can be used ten times. After the tenth time it cracks and becomes useless.</td>
+                </tr>
+                <tr>
+                  <td>Circlet of Blasting</td><td>Wondrous Item</td><td>3000</td><td>Uncommon</td><td>No</td><td>While wearing this circlet, you can use an action to cast the scorching ray spell with it. When you make the spell's attacks, you do so with an attack bonus of +5. The circlet can't be used this way again until the next dawn.</td>
+                </tr>
+                <tr>
+                  <td>Cloak of Arachnida</td><td>Wondrous Item</td><td>16000</td><td>Very Rare</td><td>Yes</td><td>This fine garment is made of black silk interwoven with faint silvery threads. While wearing it, you gain the following benefits:
+                    <ul>
+                      <li>You have resistance to poison damage.</li>
+                      <li>You have a climbing speed equal to your walking speed.You can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.</li>
+                      <li>You can't be caught in webs of any sort and can move through webs as if they were difficult terrain.</li>
+                      <li>You can use an action to cast the web spell (save DC 13). The web created by the spell fills twice its normal area. Once used, this property of the cloak can't be used again until the next dawn.</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Cloak of Displacement</td><td>Wondrous Item</td><td>8000</td><td>Rare</td><td>Yes</td><td>While you wear this cloak, it projects an illusion that makes you appear to be standing in a place near your actual location, causing any creature to have disadvantage on attack rolls against you. If you take damage, the property ceases to function until the start of your next turn. This property is suppressed while you are in-capacitated, restrained, or otherwise unable to move.</td>
+                </tr>
+                <tr>
+                  <td>Cloak of Elvenkind</td><td>Wondrous Item</td><td>5000</td><td>Uncommon</td><td>Yes</td><td>While you wear this cloak with its hood up, Wisdom (Perception) checks made to see you have disadvantage and you have advantage on Dexterity (Stealth) checks made to hide, as the cloak's color shifts to camouflage you. Pulling the hood up or down requires an action.</td>
+                </tr>
+                <tr>
+                  <td>Cloak of Protection</td><td>Wondrous Item</td><td>4000</td><td>Uncommon</td><td>Yes</td><td>You gain a +1 bonus to AC and saving throws while you wear this cloak.</td>
+                </tr>
+                <tr>
+                  <td>Cloak of Shadows</td><td>Wondrous Item</td><td>2500</td><td>Uncommon</td><td>Yes</td><td>While wearing this cloak you have advantage on dexterity(stealth) checks made to hide in dim light or darkness.</td>
+                </tr>
+                <tr>
+                  <td>Cloak of the Bat</td><td>Wondrous Item</td><td>9000</td><td>Rare</td><td>Yes</td><td>While wearing this cloak, you have advantage on Dexterity (Stealth) checks. In an area of dim light or darkness, you can grip the edges of the cloak with both hands and use it to fly at a speed of 40 feet. If you ever fail to grip the cloak's edges while flying in this way, or if you are no longer in dim light or darkness, you lose this flying speed.<br />While wearing the cloak in an area of dim light or darkness, you can use your action to cast polymorph on yourself, transforming into a bat. While you are in the form of the bat, you retain your Intelligence, Wisdom, and Charisma scores. The cloak can't be used this way again until the next dawn.</td>
+                </tr>
+                <tr>
+                  <td>Cloak of the Manta Ray</td><td>Wondrous Item</td><td>4000</td><td>Uncommon</td><td>No</td><td>While wearing this cloak with its hood up, you can breathe underwater, and you have a swimming speed of 60 feet. Pulling the hood up or down requires an action.</td>
+                </tr>
+                <tr>
+                  <td>Crystal Ball</td><td>Wondrous Item</td><td>18000</td><td>Very Rare</td><td>Yes</td><td>The typical crystal ball, a very rare item, is about 6 inches in diameter. While touching it, you can cast the scrying spell (save DC 17) with it. </td>
+                </tr>
+                <tr>
+                  <td>Daern's Instant Fortress</td><td>Wondrous Item</td><td>11000</td><td>Rare</td><td>No</td><td>You can use an action to place this l-inch metal cube on the ground and speak its command word. The cube rapidly grows into a fortress that remains until you use an action to speak the command word that dismisses it, which works only if the fortress is empty. The fortress is a square tower, 20 feet on a side and 30 feet high, with arrow slits on all sides and a battlement atop it. Its interior is divided into two floors with a ladder running along one wall to connect them. The ladder ends at a trapdoor leading to the roof. When activated, the tower has a small door on the side facing you. The door opens only at your command, which you can speak as a bonus action. It is immune to the knock spell and similar magic, such as that of a chime of opening.<br />Each creature in the area where the fortress appears must make a DC 15 Dexterity saving throw, taking lOdlO bludgeoning damage on a failed save, or half as much damage on a successful one. In either case, the creature is pushed to an unoccupied space outside but next to the fortress. Objects in the area that aren't being worn or carried take this damage and are pushed automatically.<br />The tower is made of adamantine, and its magic prevents it from being tipped over. The roof, the door, and the walls each have 100 hit points, immunity to damage from nonmagical weapons excluding siege weapons, and resistance to all other damage. Only a wish spell can repair the fortress (this use of the spell counts as replicating a spell of 8th level or lower). Each casting of wish causes the roof, the door, or one wall to regain 50 hit points.</td>
+                </tr>
+                <tr>
+                  <td>Dagger of Venom</td><td>Weapon</td><td>5000</td><td>Rare</td><td>No</td><td>You gain a +1 bonus to attack and damage rolls made with this magic weapon.<br />You can use an action to cause thick, black poison to coat the blade. The poison remains for 1 minute or until an attack using this weapon hits a creature. That creature must succeed on a DC 15 Constitution saving throw or take 2d10 poison damage and become poisoned for 1 minute. The dagger can't be used this way again until the next dawn.</td>
+                </tr>
+                <tr>
+                  <td>Dancing Sword</td><td>Weapon</td><td>15000</td><td>Very Rare</td><td>Yes</td><td>You can use a bonus action to toss this magic sword into the air and speak the command word. When you do so, the sword begins to hover, flies up to 30 feet, and attacks one creature of your choice within 5 feet of it. The sword uses your attack roll and ability score modifier to damage rolls.<br />While the sword hovers, you can use a bonus action to cause it to fly up to 30 feet to another spot within 30 feet of you. As part of the same bonus action, you can cause the sword to attack one creature within 5 feet of it. After the hovering sword attacks for the fourth time, it flies up to 30 feet and tries to return to your hand. If you have no hand free, it falls to the ground at your feet. If the sword has no unobstructed path to you, it moves as close to you as it can and then falls to the ground. It also ceases to hover if you grasp it or move more than 30 feet away from it.</td>
+                </tr>
+                <tr>
+                  <td>Decanter of Endless Water</td><td>Wondrous Item</td><td>2000</td><td>Uncommon</td><td>No</td><td>This stoppered flask sloshes when shaken, as if it contains water. The decanter weighs 2 pounds. You can use an action to remove the stopper and speak one of three command words, whereupon an amount of fresh water or salt water (your choice) pours out of the flask. The water stops pouring out at the start of your next turn. Choose from the following options:
+                    <ul>
+                      <li>"Stream" produces 1 gallon of water.</li>
+                      <li>"Fountain" produces 5 gallons of water.</li>
+                      <li>"Geyser" produces 30 gallons of water that gushes forth in a geyser 30 feet long and 1 foot wide. As a bonus action while holding the decanter, you can aim the geyser at a creature you can see within 30 feet of you. The target must succeed on a DC 13 Strength saving throw or take 1d4 bludgeoning damage and fall prone. Instead of a creature, you can target an object that isn't being worn or carried and that weighs no more than 200 pounds. The object is either knocked over or pushed up to 15 feet away from you.</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Dimensional Shackles</td><td>Wondrous Item</td><td>6000</td><td>Rare</td><td>No</td><td>You can use an action to place these shackles on an incapacitated creature. The shackles adjust to fit a creature of Small to Large size. In addition to serving as mundane manacles, the shackles prevent a creature bound by them from using any method of extradimensional movement, including teleportation or travel to a different plane of existence. They don't prevent the creature from passing-through an interdimensional portal.<br />You and any creature you designate when you use the shackles can use an action to remove them. Once every 30 days, the bound creature can make a DC 30 Strength Athletics) check. On a success, the creature breaks free and destroys the shackles.</td>
+                </tr>
+                <tr>
+                  <td>+1 Dragon Scale Mail</td><td>Armor (scale mail)</td><td>11000</td><td>Very Rare</td><td>Yes</td><td>Dragon scale mail is made of the scales of one kind of dragon. Sometimes dragons collect their cast-off scales and gift them to humanoids. Other times, hunters carefully skin and preserve the hide of a dead dragon. In either case, dragon scale mail is highly valued.<br />While wearing this armor, you gain a +1 bonus to AC, you have advantage on saving throws against the Frightful Presence and breath weapons of dragons, and you have resistance to one damage type that is determined by the kind of dragon that provided the scales.<br />Additionally, you can focus your senses as an action to magically discern the distance and direction to the closest dragon within 30 miles of you that is of the same type as the armor. This special action can't be used again until the next dawn.</td>
+                </tr>
+                <tr>
+                  <td>Dragon Slayer</td><td>Weapon</td><td>6000</td><td>Rare</td><td>No</td><td>You gain a +1 bonus to attack and damage rolls made with this magic weapon.<br /> When you hit a dragon with this weapon, the dragon takes an extra 3d6 damage of the weapon's type. For the purpose of this weapon, "dragon" refers to any creature with the dragon type, including dragon turtles and wyverns.</td>
+                </tr>
+                <tr>
+                  <td>Driftglobe</td><td>Wondrous Item</td><td>3000</td><td>Uncommon</td><td>No</td><td>This small sphere of thick glass weighs 1 pound. If you are within 60 feet of it, you can speak its command word and cause it to emanate the light or daylight spell. Once used, the daylight effect can't be used again until the next dawn.<br />You can speak another command word as an action to make the illuminated globe rise into the air and float no more than 5 feet off the ground. The globe hovers in this way until you or another creature grasps it. If you move more than 60 feet from the hovering globe, it follows you until it is within 60 feet of you. It takes the shortest route to do so. If prevented from moving, the globe sinks gently to the ground and becomes inactive, and its light winks out.</td>
+                </tr>
+                <tr>
+                  <td>Dust of Disappearance</td><td>Single Use</td><td>1000</td><td>Uncommon</td><td>No</td><td>Found in a small packet, this powder resembles very fine sand. There is enough of it for one use. When you use an action to throw the dust into the air, you and each creature and object within 10 feet of you become invisible for 2d4 minutes. The duration is the same for all subjects, and the dust is consumed when its magic takes effect. If a creature affected by the dust attacks or casts a spell, the invisibility ends for that creature.</td>
+                </tr>
+                <tr>
+                  <td>Dust of Dryness</td><td>Single Use</td><td>500</td><td>Uncommon</td><td>No</td><td>This small packet contains 1d6 + 4 pinches of dust. You can use an action to sprinkle a pinch of it over water. The dust turns a cube of water 15 feet on a side into one marble-sized pellet, which floats or rests near where the dust was sprinkled. The pellet's weight is negligible. Someone can use an action to smash the pellet against a hard surface, causing the pellet to shatter and release the water the dust absorbed. Doing so ends that pellet's magic. <br />An elemental composed mostly of water that is exposed to a pinch of the dust must make a DC 13 Constitution saving throw, taking 10d6 necrotic damage on a failed save, or half as much damage on a successful one.</td>
+                </tr>
+                <tr>
+                  <td>Dwarven Plate</td><td>Armor(plate)</td><td>20000</td><td>Very Rare</td><td>No</td><td>While wearing this armor, you gain a +2 bonus to AC. In addition, if an effect moves you against your will along the ground, you can use your reaction to reduce the distance you are moved by up to 10 feet.</td>
+                </tr>
+                <tr>
+                  <td>Dwarven Thrower</td><td>Weapon(warhammer)</td><td>28000</td><td>Very Rare</td><td>Yes (Dwarf only)</td><td>You gain a +3 bonus to attack and damage rolls made with this magic weapon. It has the thrown property with a normal range of 20 feet and a long range of 60 feet. When you hit with a ranged attack using this weapon, it deals an extra ld8 damage or, if the target is a giant, 2d8 damage. Immediately after the attack, the weapon flies back to your hand.</td>
+                </tr>
+                <tr>
+                  <td>Elemental Gem</td><td>Single Use</td><td>1000</td><td>Uncommon</td><td>No</td><td>This gem contains a mote of elemental energy. When you use an action to break the gem, an elemental is summoned as if you had cast the conjure elemental spell, and the gem's magic is lost. The type of gem determines the elemental summoned by the spell.</td>
+                </tr>
+                <tr>
+                  <td>Elixer of Health</td><td>Single Use</td><td>250</td><td>Rare</td><td>No</td><td>When you drink this potion, it cures any disease afflicting you, and it removes the blinded, deafened, paralyzed, and poisoned conditions. The clear red liquid has tiny bubbles of light in it.</td>
+                </tr>
+                <tr>
+                  <td>Elven Chain</td><td>Armor(chain shirt)</td><td>6000</td><td>Rare</td><td>No</td><td>You gain a +1 bonus to AC while you wear this armor. You are considered proficient with this armor even if you lack proficiency with medium armor.</td>
+                </tr>
+                <tr>
+                  <td>Eversmoking Bottle</td><td>Wondrous Item</td><td>3000</td><td>Uncommon</td><td>No</td><td>Smoke leaks from the lead-stoppered mouth of this brass bottle, which weighs 1 pound. When you use an action to remove the stopper, a cloud of thick smoke pours out in a 60-foot radius from the bottle. The cloud's area is heavily obscured. Each minute the bottle remains open and within the cloud, the radius increases by 10 feet until it reaches its maximum radius of 120 feet.<br />The cloud persists as long as the bottle is open. Closing the bottle requires you to speak its command word as an action. Once the bottle is closed, the cloud disperses after 10 minutes. A moderate wind (11 to 20 miles per hour) can also disperse the smoke after 1 minute, and a strong wind (21 or more miles per hour) can do so after 1 round.</td>
+                </tr>
+                <tr>
+                  <td>Eyes of Charming</td><td>Wondrous Item</td><td>2000</td><td>Uncommon</td><td>Yes</td><td>These crystal lenses fit over the eyes. They have 3 charges. While wearing them, you can expend 1 charge as an action to cast the charm person spell (save DC 13) on a humanoid within 30 feet of you, provided that you and the target can see each other. The lenses regain all expended charges daily at dawn.</td>
+                </tr>
+                <tr>
+                  <td>Eyes of Minute Seeing</td><td>Wondrous Item</td><td>2000</td><td>Uncommon</td><td>No</td><td>These crystal lenses fit over the eyes. While wearing them, you can see much better than normal out to a range of 1 foot. You have advantage on Intelligence (Investigation) checks that rely on sight while searching an area or studying an object within that range.</td>
+                </tr>
+                <tr>
+                  <td>Eyes of the Eagle</td><td>Misc. Equipment</td><td>2000</td><td>Uncommon</td><td>Yes</td><td>These crystal lenses fit over the eyes. While wearing them, you have advantage on Wisdom (Perception) checks that rely on sight. In conditions of clear visibility, you can make out details of even extremely distant creatures and objects as small as 2 feet across.</td>
+                </tr>
+                <tr>
+                  <td>Flame Tongue</td><td>Weapon</td><td>9000</td><td>Rare</td><td>Yes</td><td>You can use a bonus action to speak this magic sword's command word, causing flames to erupt from the blade. These flames shed bright light in a 40-foot radius and dim light for an additional 40 feet. While the sword is ablaze, it deals an extra 2d6 fire damage to any target it hits. The flames last until you use a bonus action to speak the command word again or until you drop or sheathe the sword.</td>
+                </tr>
+                <tr>
+                  <td>Folding Boat</td><td>Wondrous Item</td><td>6000</td><td>Rare</td><td>No</td><td>This object appears as a wooden box that measures 12 inches long, 6 inches wide, and 6 inches deep. It weigh 4 pounds and floats. It can be opened to store items inside. This item also has three command words, each requiring you to use an action to speak it.<br />One command word causes the box to unfold into a boat 10 feet long, 4 feet wide, and 2 feet deep. The boat has one pair of oars, an anchor, a mast, and a lateen sail. The boat can hold up to four Medium creatures comfortably.<br />The second command word causes the box to unfold into a ship 24 feet long, 8 feet wide; and 6 feet deep. The ship has a deck, rowing seats, five sets of oars, a steering oar, an anchor, a deck cabin, and a mast with a 5quare sail. The ship can hold fifteen Medium creatures comfortably.<br />When the box becomes a vessel, its weight becomes that of a normal vessel its size, and anything that was stored in the box remains in the boat.<br />The third command word causes the folding boat to fold back into a box, provided that no creatures are aboard. Any objects in the vessel that can't fit inside the box remain outside the box as it folds. Any objects in the vessel that can fit inside the box do so.</td>
+                </tr>
+                <tr>
+                  <td>Frost Brand</td><td>Weapon</td><td>9000</td><td>Very Rare</td><td>Yes</td><td>When you hit with an attack using this magic sword, the target takes an extra 1d6 cold damage. In addition, while you hold the sword, you have resistance to fire damage.<br />In freezing temperatures, the blade sheds bright light in a 10-foot radius and dim light for an additional 1O feet.<br />When you draw this weapon, you can extinguish all nmagical flames within 30 feet of you. This property can be used no more than once per hour.</td>
+                </tr>
+                <tr>
+                  <td>Gauntlets of Ogre Power</td><td>Wondrous Item</td><td>5000</td><td>Uncommon</td><td>Yes</td><td>Your Strength score is 19 while you wear these gauntlets. They have no effect on you if your Strength is already 19 or higher.</td>
+                </tr>
+                <tr>
+                  <td>Gem of Brightness</td><td>Wondrous Item</td><td>5000</td><td>Uncommon</td><td>No</td><td>This prism has 50 charges. While you are holding it, you can use an action to speak one of three command words to cause one of the following effects:
+                    <ul>
+                      <li>The first command word causes the gem to shed bright light in a 30-foot radius and dim light for an additional 30 feet. This effect doesn't expend a charge. It lasts until you use a bonus action to repeat the command word or until you use another function of the gem.</li>
+                      <li>The second command word expends 1 charge and causes the gem to fire a brilliant beam of light at one creature you can see within 60 feet of you. The creature must succeed on a DC 15 Constitution saving throw or become blinded for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</li>
+                      <li>The third command word expends 5 charges and causes the gem to flare with blinding light in a 30-foot cone originating from it. Each creature in the cone must make a saving throw as if struck by the beam created with the second command word.</li>
+                    </ul>
+                    When all of the gem's charges are expended, the gem becomes a non magical jewel worth 50 gp.</td>
+                </tr>
+                <tr>
+                  <td>Gem of Seeing</td><td>Wondrous Item</td><td>4000</td><td>Rare</td><td>Yes</td><td>This gem has 3 charges. As an action, you can speak the gem's command word and expend 1 charge. For the next 10 minutes, you have truesight out to 120 feet when you peer through the gem.<br />The gem regains 1d3 expended charges daily at dawn</td>
+                </tr>
+                <tr>
+                  <td>Giant Slayer</td><td>Weapon</td><td>7000</td><td>Rare</td><td>No</td><td>You gain a +1 bonus to attack and damage rolls made with this magic weapon.<br />When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or fall prone. For the purpose of this weapon, "giant" refers to any creature with the giant type, including ettins and trolls.</td>
+                </tr>
+                <tr>
+                  <td>Glamoured Studded Leather</td><td>Armor (studded leather)</td><td>7000</td><td>Rare</td><td>No</td><td>While wearing this armor, you gain a +1 bonus to AC. You can also use a bonus action to speak the armor's command word and cause the armor to assume the appearance of a normal set of clothing or some other kind of armor. You decide what it looks like, including color, style, and accessories, but the armor retains its normal bulk and weight. The illusory appearance lasts until you use this property again or remove the armor.</td>
+                </tr>
+                <tr>
+                  <td>Gloves of Missile Snaring</td><td>Wondrous Item</td><td>2000</td><td>Uncommon</td><td>Yes</td><td>These gloves seem to almost meld into your hands when you don them. When a ranged weapon attack hits you while you're wearing them, you can use your reaction to reduce the damage by 1d10 +your Dexterity modifier. provided that you have a free hand. If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in that hand.</td>
+                </tr>
+                <tr>
+                  <td>Gloves of Swimming and Climbing</td><td>Wondrous Item</td><td>2000</td><td>Uncommon</td><td>Yes</td><td>While wearing these gloves, climbing and swimming don't cost you extra movement, and you gain a +5 bonus to Strength (Athletics) checks made to climb or swim.</td>
+                </tr>
+                <tr>
+                  <td>Gloves of Thievery</td><td>Wondrous Item</td><td>3000</td><td>Uncommon</td><td>No</td><td>These gloves are invisible while worn. While wearing them, you gain a +5 bonus to Dexterity (Sleight of Hand) checks and Dexterity checks made to pick locks.</td>
+                </tr>
+                <tr>
+                  <td>Goggles of Night</td><td>Wondrous Item</td><td>2000</td><td>Uncommon</td><td>No</td><td>While wearing these dark lenses, you have darkvision out to a range of 60 feet. If you already have darkvision, wearing the goggles increases its range by 60 feet.</td>
+                </tr>
+                <tr>
+                  <td>Greater Wand of Pure Magic</td><td>Wondrous Item</td><td>20000</td><td>Very Rare</td><td>Yes</td><td>While you are attuned to this wand your maximum number of spell slots of levels 1 through 5 is increased by 1.  You must have a spell slot of a particular level for the wand to grant you an additional spell slot of that level.</td>
+                </tr>
+                <tr>
+                  <td>Hat of Disguise</td><td>Wondrous Item</td><td>2000</td><td>Uncommon</td><td>Yes</td><td>While wearing this hat, you can use an action to cast the disguise self spell from it at will. The spell ends if the hat is removed.</td>
+                </tr>
+                <tr>
+                  <td>Headband of Intellect</td><td>Wondrous Item</td><td>5000</td><td>Uncommon</td><td>Yes</td><td>Your Intelligence score is 19 while you wear this headband. It has no effect on you if your Intelligence is already 19 or higher.</td>
+                </tr>
+                <tr>
+                  <td>Helm of Brilliance</td><td>Wondrous Item</td><td>11000</td><td>Very Rare</td><td>Yes</td><td>This dazzling helm is set with 1d10 diamonds, 2d10 rubies, 3d10 fire opals, and 4d10 opals. Any gem pried from the helm crumbles to dust. When all the gems are removed or destroyed, the helm loses its magic.<br /> You gain the following benefits while wearing it:
+                    <ul>
+                      <li>You can use an action to cast one of the following spells (save DC 18), using one of the helm's gems of the specified type as a component: daylight (opal), fireball (fi re opal), prismatic spray (diamond), or wall of fire (ruby). The gem is destroyed when the spell is cast and disappears from the helm.</li>
+                      <li>As long as it has at least one diamond, the helm emits dim light in a 30-foot radius when at least one undead is within that area. Any undead that starts its turn in that area takes 1d6 radiant damage.</li>
+                      <li>As long as the helm has at least one ruby, you have resistance to fire damage.</li>
+                      <li>As long as the helm has at least one fire opal, you can use an action and speak a command word to cause one weapon you are holding to burst into flames. The flames emit bright light in a 10-foot radius and dim light for an additional 10 feet. The flames are harmless to you and the weapon. When you hit with an attack using the blazing weapon, the target takes an extra 1d6 fire damage. The flames last until you use a bonus action to speak the command word again or until you drop or stow the weapon.</li>
+                    </ul>
+                    Roll a d20 if you are wearing the helm and take fire damage as a result of failing a saving throw against a spell. On a roll of 1, the helm emits beams of light from its remaining gems. Each creature within 60 feet of the helm other than you must succeed on a DC 17 Dexterity saving throw or be struck by a beam, taking radiant damage equal to the number of gems in the helm. The helm and its gems are then destroyed.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Helm of Comprehending Languages</td><td>Wondrous Item</td><td>2000</td><td>Uncommon</td><td>No</td><td>While wearing this helm, you can use an action to cast the comprehend languages spell from it at will.</td>
+                </tr>
+                <tr>
+                  <td>Helm of Telepathy</td><td>Wondrous Item</td><td>Uncommon</td><td>4000</td><td>Yes</td><td>While wearing this helm , you can use an action to cast the detect thoughts spell (save DC 13) from it. As long as you maintain concentration on the spell, you can use a bonus action to send a telepathic message to a creature you are focused on. It can reply-using a bonus action to do so- while your focus on it continues.<br />While focusing on a creature with detect thoughts, you can use an action to cast the suggestion spell (save DC 13) from the helm on that creature. Once used, the suggestion property can't be used again until the next dawn.</td>
+                </tr>
+                <tr>
+                  <td>Helm of Teleportation</td><td>Wondrous Item</td><td>Rare</td><td>9000</td><td>Yes</td><td>This helm has 3 charges. While wearing it, you can use an action and expend 1 charge to cast the teleport spell from it. The helm regains 1d3 expended charges daily at dawn.</td>
+                </tr>
+                <tr>
+                  <td>Heward's Handy Haversack</td><td>Wondrous Item</td><td>Rare</td><td>3000</td><td>No</td><td>This backpack has a central pouch and two side pouches, each of which is an extradimensional space. Each side pouch can hold up to 20 pounds of material, not exceeding a volume of 2 cubic feet. The large central pouch can hold up to 8 cubic feet or 80 pounds of material. The backpack always weighs 5 pounds, regardless of its contents. <br />Placing an object in the haversack follows the normal rules for interacting with objects. Retrieving an item from the haversack requires you to use an action. When you reach into the haversack for a specific item, the item is always magically on top. <br />The haversack has a few limitations. If it is overloaded, or if a sharp object pierces it or tears it, the haversack ruptures and is destroyed. If the haversack is destroyed, its contents are lost forever, although an artifact always turns up again somewhere. If the haversack is turned inside out, its contents spill forth, unharmed, and the haversack must be put right before it can be used again. If a breathing creature is placed within the haversack, the creature can survive for up to 10 minutes, after which time it begins to suffocate.<br /> Placing the haversack inside an extradimensional space created by a bag of holding, portable hole, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10-feet of the gate is sucked through it and deposited in a random location on the Astral Plane. The gate then closes. The gate is one way only and can't be reopened.</td>
+                </tr>
+                <tr>
+                  <td>Horn of Blasting</td><td>Wondrous Item</td><td>3000</td><td>Rare</td><td>No</td><td>You can use an action to speak the horn's command word and then blow the horn, which emits a thunderous blast in a 30-foot cone that is audible 600 feet away. Each creature in the cone must make a DC 15 Constitution saving throw. On a failed save, a creature takes 5d6 thunder damage and is deafened for 1 minute. On a successful save, a creature takes half as much damage and isn't deafened. Creatures and objects made of glass or crystal have disadvantage on the saving throw and take 10d6 thunder damage instead of 5d6.<br />Each use of the horn's magic has a 20 percent chance of causing the horn to explode. The explosion deals 10d6 fire damage to the blower and destroys the horn.</td>
+                </tr>
+                <tr>
+                  <td>Horseshoes of a Zephyr</td><td>Wondrous Item</td><td>12000</td><td>Very Rare</td><td>No</td><td>These iron horseshoes come in a set of four. While all four shoes are affixed to the hooves of a horse or similar creature, they allow the creature to move normally while floating 4 inches above the ground. This effect means the cre.ature can cross or stand above nonsolid or unstable surfaces, such as water or lava. The creature leaves no tracks and ignores difficult terrain. In addition, the creature can move at normal speed for up to 12 hours a day without suffering exhaustion from a forced march.</td>
+                </tr>
+                <tr>
+                  <td>Horseshoes of Speed</td><td>Wondrous Item</td><td>4000</td><td>Rare</td><td>No</td><td>These iron horseshoes come in a set of four. While all four shoes are affixed to the hooves of a horse or similar creature, they increase the creature's walking speed by 30 feet.</td>
+                </tr>
+                <tr>
+                  <td>Immovable Rod</td><td>Rod</td><td>1500</td><td>Uncommon</td><td>No</td><td>This flat iron rod has a button on one end. You can use an action to press the button, which causes the rod to become magically fixed in place. Until you or another creature uses an action to push the button again, the rod doesn't move, even if it is defying gravity. The rod can hold up to 8,000 pounds of weight. More weight causes the rod to deactivate and fall. A creature can use an action to make a DC 30 Strength check, moving the fixed rod up to 10 feet on a success.</td>
+                </tr>
+                <tr>
+                  <td>Iron Bands of Bilarro</td><td>Wondrous Item</td><td>4000</td><td>Rare</td><td>No</td><td>This rusty iron sphere measures 3 inches in diameter and weighs 1 pound. You can use an action to speak the command word and throw the sphere at a Huge or smaller creature you can see within 60 feet of you. As the sphere moves through the air, it opens into a tangle of metal bands. <br />Make a ranged attack roll with an attack bonus equal to your Dexterity modifier plus your proficiency bonus. On a hit, the target is restrained until you take a bonus action to speak the command word again to release it. Doing so, or missing with the attack, causes the bands to contract and become a sphere once more. <br />A creature, including the one restrained, can use an action to make a DC 20 Strength check to break the iron bands. On a success, the item is destroyed, and the restrained creature is freed. If the check fails, any further attempts made by that creature automatically fail until 24 hours have elapsed. Once the bands are used, they can't be used again until the next dawn.</td>
+                </tr>
+                <tr>
+                  <td>Javelin of Lightning</td><td>Weapon (javelin)</td><td>3000</td><td>Uncommon</td><td>No</td><td>This javelin is a magic weapon. When you hurl it and speak its command word, it transforms into a bolt of lightning, forming a line 5 feet wide that extends out from you to a target within 120 feet. Each creature in the line excluding you and the target must make a DC 13 Dexterity saving throw, taking 4d6 lightning damage on a failed save, and half as much damage on a successful one. The lightning bolt turns back into a javelin when it reaches the target. Make a ranged weapon attack against the target. On a hit, the target takes damage from the javelin plus 4d6 lightning damage. <br />The javelin's property can't be used again until the next dawn. In the meantime, the javelin can still be used as a magic weapon.</td>
+                </tr>
+                <tr>
+                  <td>Keoghtom's Ointment</td><td>Single Use</td><td>2500</td><td>Uncommon</td><td>No</td><td>This glass jar, 3 inches in diameter, contains 4 doses of a thick mixture that smells faintly of aloe. The jar and its contents weigh 1/2 pound. As an action, one dose of the ointment can be swallowed or applied to the skin. The creature that receives it regains 2d8 + 2 hit points, ceases to be poisoned, and is cured of any disease.</td>
+                </tr>
+                <tr>
+                  <td>Lantern of Revealing</td><td>Wondrous Item</td><td>4000</td><td>Uncommon</td><td>No</td><td>While lit, this hooded lantern burns for 6 hours on 1 pint of oil, shedding bright light in a 30-foot radius and dim light for an additional 30 feet. Invisible creatures and objects are visible as long as they are in the lantern's bright light. You can use an action to lower the hood, reducing the light to dim light in a 5-foot radius.</td>
+                </tr>
+                <tr>
+                  <td>Lesser Wand of Pure Magic</td><td>Wand</td><td>3000</td><td>Uncommon</td><td>Yes</td><td>While you are attuned to this wand your maximum number of 1st level spell slots is increased by 1.  You must have a spell slot of a particular level for the wand to grant you an additional spell slot of that level.</td>
+                </tr>
+                <tr>
+                  <td>Mace of Disruption</td><td>Weapon (mace)</td><td>6000</td><td>Rare</td><td>Yes</td><td>When you hit a fiend or an undead with this magic weapon, that creature takes an extra 2d6 radiant damage. If the target has 25 hit points or fewer after taking this damage, it must succeed on a DC 15 Wisdom saving throw or be destroyed. On a successful save, the creature becomes frightened of you until the end of your next turn.<br />While you hold this weapon, it sheds bright light in a 20-foot radius and dim light for an additional 20 feet.</td>
+                </tr>
+                <tr>
+                  <td>Mace of Smiting</td><td>Weapon (mace)</td><td>9000</td><td>Rare</td><td>No</td><td>You gain a +1 bonus to attack and damage rolls made with this magic weapon. The bonus increases to +3 when you use the mace to attack a construct. When you roll a 20 on an attack roll made with this weapon, the target takes an extra 7 bludgeoning damage, or an extra 14 bludgeoning damage if it's a construct. If a construct has 25 hit points or fewer after taking this damage, it is destroyed.</td>
+                </tr>
+                <tr>
+                  <td>Mace of Terror</td><td>Weapon (mace)</td><td>5000</td><td>Rare</td><td>Yes</td><td>This magic weapon has 3 charges. While holding it, you can use an action and expend 1 charge to release a wave of terror. Each creature of your choice in a 30-foot radius extending from you must succeed on a DC 15 Wisdom saving throw or become frightened of you for 1 minute. While it is frightened in this way, a creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action it can use only the Dash action or try to escape from an effect that prevents it from moving. If it has nowhere it can move, the creature can use the Dodge action. At the end of each of its turns, a creature can repeat the saving throw, ending the effect on itself on a success.<br />The mace regains 1d3 expended charges daily at dawn.</td>
+                </tr>
+                <tr>
+                  <td>Mantle of Spell Resistance</td><td>Wondrous Item</td><td>9000</td><td>Rare</td><td>Yes</td><td>You have advantage on saving throws against spells while you wear this cloak.</td>
+                </tr>
+                <tr>
+                  <td>Manual of Bodily Health</td><td>Wondrous Item</td><td>30000</td><td>Very Rare</td><td>No</td><td>This book contains health and diet tips, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Constitution score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century.</td>
+                </tr>
+                <tr>
+                  <td>Manual of Gainful Exercise</td><td>Wondrous Item</td><td>30000</td><td>Very Rare</td><td>No</td><td>This book describes fitness exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Strength score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century.</td>
+                </tr>
+                <tr>
+                  <td>Manual of Quickness of Action</td><td>Wondrous Item</td><td>30000</td><td>Very Rare</td><td>No</td><td>This book contains coordination and balance exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying The book's contents and practicing its guidelines, your Dexterity score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century.</td>
+                </tr>
+                <tr>
+                  <td>Mariner's Armor</td><td>Armor</td><td>2000 + armor cost</td><td>Uncommon</td><td>No</td><td>While wearing this armor, you have a swimming speed equal to your walking speed. In addition, whenever you start your turn underwater with 0 hit points, the armor causes you to rise 60 feet toward the surface. The armor is decorated with fish and shell motifs.</td>
+                </tr>
+                <tr>
+                  <td>Medallion of Thoughts</td><td>Wondrous Item</td><td>3000</td><td>Uncommon</td><td>Yes</td><td>The medallion has 3 charges. While wearing it, you can use an action and expend 1 charge to cast the detect thoughts spell (save DC 13) from it. The medallion regains 1d3 expended charges daily at dawn.</td>
+                </tr>
+                <tr>
+                  <td>Mirror of Life Trapping</td><td>Wondrous Item</td><td>25000</td><td>Very Rare</td><td>No</td><td>When this 4-foot-tall mirror is viewed indirectly, its surface shows faint images of creatures. The mirror weighs 50 pounds, and it has AC 11, 10 hit points, and vulnerability to bludgeoning damage. It shatters and is destroyed when reduced to 0 hit points. <br />If the mirror is hanging on a vertical surface and you are within 5 feet of it, you can use an action to speak its command word and activate it. It remains activated until you use an action to speak the command word again. <br />Any creature other than you that sees its reflection in the activated mirror while within 30 feet of it must succeed on a DC 15 Charisma saving throw or be trapped, along with anything it is wearing or carrying, in one of the mirror's twelve extradimensional cells. This saving throw is made with advantage if the creature knows the mirror's nature, and constructs succeed on the saving throw automatically. <br />An extradimensional cell is an infinite expanse filled with thick fog that reduces visibility to 10 feet. Creatures trapped in the mirror's cells don't age, and they don't need to eat, drink, or sleep. A creature trapped within a cell can escape using magic that permits planar travel. Otherwise, the creature is confined to the cell until freed.<br />If the mirror traps a creature but its twelve extradimensional cells are already occupied, the mirror frees one trapped creature at random to accommodate the new prisoner. A freed creature appears in an unoccupied space within sight of the mirror but facing away from it. If the mirror is shattered, all creatures it contains are freed and appear in unoccupied spaces near it.<br /> While within 5 feet of the mirror, you can use an action to speak the name of one creature trapped in it or call out a particular cell by number. The creature named or contained in the named cell appears as an image on the mirror's surface. You and the creature can then communicate normally.<br /> In a similar way, you can use an action to speak a second command word and free one creature trapped in the mirror. The freed creature appears, along with its possessions, in the unoccupied space nearest to the mirror and facing away from it.</td>
+                </tr>
+                <tr>
+                  <td>Mystic Dwarven Alchemical Lead Expulsion Device</td><td>Weapon (exotic)</td><td>2000</td><td>Uncommon</td><td>No</td><td>martial ranged weapon, uses lead bullets, loading (2 rounds), 4d10 damage, range 30/120</td>
+                </tr>
+                <tr>
+                  <td>Necklace of Adaptation</td><td>Wondrous Item</td><td>2500</td><td>Uncommon</td><td>Yes</td><td>While wearing this necklace, you can breathe normally in any environment, and you have advantage on saving throws made against harmful gases and vapors (such as cloudkill and stinking cloud effects, inhaled poisons, and the breath weapons of some dragons).</td>
+                </tr>
+                <tr>
+                  <td>Necklace of Fireballs</td><td>Wondrous Item</td><td>5000</td><td>Rare</td><td>No</td><td>This necklace has 7 beads hanging from it. You can use an action to detach a bead and throw it up to 6 feet away. When it reaches the end of its trajectory, the bead detonates as a 3rd-level fireball spell (save DC 15) You can hurl multiple beads, or even the whole necklace, as one action. When you do so, increase the level of the fireball by 1 for each bead beyond the first.</td>
+                </tr>
+                <tr>
+                  <td>Nine Lives Stealer</td><td>Weapon</td><td>20000</td><td>Very Rare</td><td>Yes</td><td>You gain a +2 bonus to attack and damage rolls made with this magic weapon.<br />The sword has 6 charges. If you score a critical hit against a creature that has fewer than 100 hit points, it must succeed on a DC 15 Constitution saving throw or be slain instantly as the sword tears its life force from its body (a construct or an undead is immune). The sword loses 1 charge if the creature is slain. When the sword has no charges remaining, it loses this property.</td>
+                </tr>
+                <tr>
+                  <td>Oathbow</td><td>Weapon (longbow)</td><td>13000</td><td>Very Rare</td><td>Yes</td><td>When you nock an arrow on this bow, it whispers in Elvish, "Swift defeat to my enemies." When you use this weapon to make a ranged attack, you can, as a command phrase, say, "Swift death to you who have wronged me." The target of your attack becomes your sworn enemy until it dies or until dawn seven days later. You can have only one such sworn enemy at a time. When your sworn enemy dies, you can choose a new one after the next dawn.<br />When you make a ranged attack roll with this weapon against your sworn enemy, you have advantage on the roll. In addition, your target gains no benefit from cover, other than total cover, and you suffer no disadvantage due to long range. If the attack hits, your sworn enemy takes an extra 3d6 piercing damage. <br />While your sworn enemy lives, you have disadvantage on attack rolls with all other weapons.</td>
+                </tr>
+                <tr>
+                  <td>Oil of Etherealness</td><td>Single Use</td><td>1000</td><td>Rare</td><td>No</td><td>Beads of this cloudy gray oil form on the outside of its container and quickly evaporate. The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of the etherealness spell for 1 hour.</td>
+                </tr>
+                <tr>
+                  <td>Oil of Sharpness</td><td>Single Use</td><td>2000</td><td>Very Rare</td><td>No</td><td>This clear, gelatinous oil sparkles with tiny, ultrathin silver shards. The oil can coat one slashing or piercing weapon or up to 5 pieces of slashing or piercing ammunition. Applying the oil takes 1 minute. For 1 hour, the coated item is magical and has a +3 bonus to attack and damage rolls.</td>
+                </tr>
+                <tr>
+                  <td>Oil of Slipperiness</td><td>Single Use</td><td></td><td>Uncommon</td><td>No</td><td>This sticky black unguent is thick and heavy in the container, but it flows quickly when poured. The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of a freedom of movement spell for 8 hours. Alternatively, the oil can be poured on the ground as an action, where it covers a 10-foot square, duplicating the effect of the grease spell in that area for 8 hours.</td>
+                </tr>
+                <tr>
+                  <td>Pearl of Power</td><td>Wondrous Item</td><td>5000</td><td>Uncommon</td><td>Yes</td><td>You can use an action to speak this pearl's command word and regain one expended spell slot of up to 3rd level. Once you have used the pearl, it can't be used again until the next dawn.</td>
+                </tr>
+                <tr>
+                  <td>Periapt of Health</td><td>Wondrous Item</td><td>2000</td><td>Uncommon</td><td>No</td><td>You are immune to contracting any disease while you wear this pendant. If you are already infected with a disease, the effects of the disease are suppressed you while you wear the pendant.</td>
+                </tr>
+                <tr>
+                  <td>Periapt of Proof Against Poison</td><td>Wondrous Item</td><td>9000</td><td>Rare</td><td>No</td><td>This delicate silver chain has a brilliant-cut black gem pendant. While you wear it, poisons have no effect on you. You are immune to the poisoned condition and have immunity to poison damage.</td>
+                </tr>
+                <tr>
+                  <td>Periapt of Wound Closure</td><td>Wondrous Item</td><td>3000</td><td>Uncommon</td><td>Yes</td><td>While you wear this pendant, you stabilize whenever you are dying at the start of your turn. In addition, whenever you roll a Hit Die to regain hit points, double the number of hit points it restores.</td>
+                </tr>
+                <tr>
+                  <td>Philter of Love</td><td>Single Use</td><td>600</td><td>Uncommon</td><td>No</td><td>The next time you see a creature within 10 minutes after drinking this philter, you become charmed by that creature for 1 hour. If the creature is of a species and gender you are normally attracted to, you regard it as your true love while you are charmed. This potion's rose-hued, effervescent liquid contains one easy-to-miss bubble shaped like a heart.</td>
+                </tr>
+                <tr>
+                  <td>Pipes of Haunting</td><td>Wondrous Item</td><td>4000</td><td>Uncommon</td><td>No</td><td>You must be proficient with wind instruments to use these pipes. They have 3 charges. You can use an action to play them and expend 1 charge to create an eerie, spellbinding tune. Each creature within 30 feet of you that hears you play must succeed on a DC 15 Wisdom saving throw or become frightened of you for 1 minute. If you wish, all creatures in the area that aren't hostile toward you automatically succeed on the saving throw. A creature that fails the saving throw can repeat it at the end of each of its turns, ending the effect on itself on a success. A creature that succeeds on its saving throw is immune to the effect of these pipes for 24 hours. The pipes regain 1d3 expended charges daily at dawn.</td>
+                </tr>
+                <tr>
+                  <td>Pipes of the Sewers</td><td>Wondrous Item</td><td>3000</td><td>Uncommon</td><td>No</td><td>You must be proficient with wind instruments to use these pipes. While you are attuned to the pipes, ordinary rats and giant rats are indifferent toward you and will not attack you unless you threaten or harm them. <br />The pipes have 3 charges. If you play the pipes as an action, you can use a bonus action to expend 1 to 3 charges, calling forth one swarm of rats (see the Monster Manual for statistics) with each expended charge, provided that enough rats are within half a mile of you to be called in this fashion (as determined by the DM). If there aren't enough rats to form a swarm, the charge is wasted. Called swarms move toward the music by the shortest available route but aren't under your control otherwise. The pipes regain ld3 expended charges daily at dawn.<br />Whenever a swarm of rats that isn't under another creature's control comes within 30 feet of you while you are playing the pipes, you can make a Charisma check contested by the swarm's Wisdom check. If you lose the contest, the swarm behaves as it normally would and can't be swayed by the pipes' music for the next 24 hours. If you win the contest, the swarm is swayed by the pipes' music and becomes friendly to you and your companions for as long as you continue to play the pipes each round as an action. A friendly swarm obeys your commands. If you issue no commands to a friendly swarm, it defends itself but otherwise takes no actions. If a friendly swarm starts its turn and can't hear the pipes' music, your control over that swarm ends, and the swarm behaves as it normally would and can't be swayed by the pipes' music for the next 24 hours.</td>
+                </tr>
+                <tr>
+                  <td>Portable Hole</td><td>Wondrous Item</td><td>7000</td><td>Rare</td><td>No</td><td>This fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter. You can use an action to unfold a portable hole and place it on or against a solid surface, whereupon the portable hole creates an extradimensional hole 10 feet deep. The cylindrical space within the hole exists on a different plane, so it can't be used to create open passages. Any creature inside an open portable hole can exit the hole by climbing out of it.<br />You can use an action to close a portable hole by taking hold of the edges of the cloth and folding it up. Folding the cloth closes the hole, and any creatures or objects within remain in the extradimensional space. No matter what's in it, the hole weighs next to nothing.<br />If the hole is folded up, a creature with in the hole's extradimensional space can use an action to make a DC 10 Strength check. On a successful check, the creature forces its way out and appears within 5 feet of the portable hole or the creature carrying it. A breathing creature within a closed portable hole can survive for up to 10 minutes, after which time it begins to suffocate.<br /> Placing a portable hole inside an extradimensional space created by a bag of holding, Heward's handy haversack, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it and deposited in a random location on the Astral Plane. The gate then closes. The gate is one-way only and can't be reopened.</td>
+                </tr>
+                <tr>
+                  <td>Potion of Animal Friendship</td><td>Single Use</td><td>500</td><td>Uncommon</td><td>No</td><td>When you drink this potion, you can cast the animal friendship spell (save DC 13) for 1 hour at will. Agitating this muddy liquid brings little bits into view: a fish scale, a hummingbird tongue, a cat claw, or a squirrel hair.</td>
+                </tr>
+                <tr>
+                  <td>Potion of Arcanum</td><td>Single Use</td><td>1000</td><td>Rare</td><td>No</td><td>Recover 1d4 levels worth of spell slots (sorcerer or bard only)</td>
+                </tr>
+                <tr>
+                  <td>Potion of Clairvoyance</td><td>Single Use</td><td>1000</td><td>Rare</td><td>No</td><td>When you drink this potion, you gain the effect of the clairvoyance spell. An eyeball bobs in this yellowish liquid but vanishes when the potion is opened.</td>
+                </tr>
+                <tr>
+                  <td>Potion of Climbing</td><td>Single Use</td><td>50</td><td>Common</td><td>No</td><td>When you drink this potion, you gain a climbing speed equal to your walking speed for 1 hour. During this time, you have advantage on Strength (Athletics) checks you make to climb. The potion is separated into brown, silver, and gray layers resembling bands of stone. Shaking the bottle fails to mix the colors.</td>
+                </tr>
+                <tr>
+                  <td>Potion of Dimunition</td><td>Single Use</td><td>600</td><td>Rare</td><td>No</td><td>When you drink this potion, you gain the "reduce" effect of the enlarge/reduce spell for 1d4 hours (no concentration required). The red in the potion's liquid continuously contracts to a tiny bead and then expands to color the clear liquid around it. Shaking the bottle fails to interrupt this process.</td>
+                </tr>
+                <tr>
+                  <td>Potion of Fire Breath</td><td>Single Use</td><td>200</td><td>Uncommon</td><td>No</td><td>After drinking this potion, you can use a bonus action to exhale fire at a target within 30 feet of you. The target must make a DC 13 Dexterity saving throw, taking 4d6 fire damage on a failed save, or half as much damage on a successful one. The effect t;nds after you exhale the fire three times or when 1 hour has passed.</td>
+                </tr>
+                <tr>
+                  <td>Potion of Flying</td><td>Single Use</td><td>4000</td><td>Very Rare</td><td>No</td><td>When you drink this potion, you gain a flying speed equal to your walking speed for 1 hour and can hover. If you're in the air when the potion wears off, you fall unless you have some other means of staying aloft. This potion's clear liquid floats at the top of its container and has cloudy white impurities drifting in it.</td>
+                </tr>
+                <tr>
+                  <td>Potion of Gaseous Form</td><td>Single Use</td><td>600</td><td>Rare</td><td>No</td><td>When you drink this potion, you gain the effect of the gaseous form spell for 1 hour (no concentration required) or until you end the effect as a bonus action. This potion's container seems to hold fog that moves and pours like water.</td>
+                </tr>
+                <tr>
+                  <td>Potion of Hill Giant Strength</td><td>Single Use</td><td>200</td><td>Uncommon</td><td>No</td><td>When you drink this potion, your Strength score changes to 21 for 1 hour.<br />This potion's transparent liquid has floating in it a sliver of fingernail from a hill giant.</td>
+                </tr>
+                <tr>
+                  <td>Potion of Stone Giant Strength</td><td>Single Use</td><td>600</td><td>Uncommon</td><td>No</td><td>When you drink this potion, your Strength score changes to 23 for 1 hour.<br />This potion's transparent liquid has floating in it a sliver of fingernail from a stone giant.</td>
+                </tr>
+                <tr>
+                  <td>Potion of Fire Giant Strength</td><td>Single Use</td><td>1200</td><td>Uncommon</td><td>No</td><td>When you drink this potion, your Strength score changes to 25 for 1 hour.<br />This potion's transparent liquid has floating in it a sliver of fingernail from a fire giant.</td>
+                </tr>
+                <tr>
+                  <td>Potion of Cloud Giant Strength</td><td>Single Use</td><td>2400</td><td>Uncommon</td><td>No</td><td>When you drink this potion, your Strength score changes to 27 for 1 hour.<br />This potion's transparent liquid has floating in it a sliver of fingernail from a cloud giant.</td>
+                </tr>
+                <tr>
+                  <td>Potion of Growth</td><td>Single Use</td><td>200</td><td>Uncommon</td><td>No</td><td>When you drink this potion, you gain the "enlarge" effect of the enlarge/reduce spell for 1d4 hours (no concentration required). The red in the potion's liquid continuously expands from a tiny bead to color the clear liquid around it and then contracts. Shaking the bottle fails to interrupt this process.</td>
+                </tr>
+                <tr>
+                  <td>Potion of Healing</td><td>Single Use</td><td>50</td><td>Common</td><td>No</td><td>You regain 2d4+2 hit points when you drink this potion. The potion's red liquid glimmers when agitated.</td>
+                </tr>
+                <tr>
+                  <td>Potion of Greater Healing</td><td>Single Use</td><td>200</td><td>Uncommon</td><td>No</td><td>You regain 4d4+4 hit points when you drink this potion. The potion's red liquid glimmers when agitated.</td>
+                </tr>
+                <tr>
+                  <td>Potion of Superior Healing</td><td>Single Use</td><td>800</td><td>Rare</td><td>No</td><td>You regain 8d4+8 hit points when you drink this potion. The potion's red liquid glimmers when agitated.</td>
+                </tr>
+                <tr>
+                  <td>Potion of Supreme Healing</td><td>Single Use</td><td>2500</td><td>Very Rare</td><td>No</td><td>You regain 10d4+20 hit points when you drink this potion. The potion's red liquid glimmers when agitated.</td>
+                </tr>
+                <tr>
+                  <td>Potion of Heroism</td><td>Single Use</td><td>800</td><td>Rare</td><td>No</td><td>For 1 hour after drinking it, you gain 10 temporary hit points that last for 1 hour. For the same duration, you are under the effect of the bless spell (no concentration required). This blue potion bubbles and steams as if boiling.</td>
+                </tr>
+                <tr>
+                  <td>Potion of Invisibility</td><td>Single Use</td><td>2000</td><td>Very Rare</td><td>No</td><td>This potion's container looks empty but feels as though it holds liquid. When you drink it, you become invisible for 1 hour. Anything you wear or carry is invisible with you. The effect ends early if you attack or cast a spell.</td>
+                </tr>
+                <tr>
+                  <td>Potion of Invulnerability</td><td>Single Use</td><td>600</td><td>Rare</td><td>No</td><td>For 1 minute after you drink this potion, you have resistance to all damage. The potion's syrupy liquid looks like liquified iron.</td>
+                </tr>
+                <tr>
+                  <td>Potion of Longevity</td><td>Single Use</td><td>3000</td><td>Very Rare</td><td>No</td><td>When you drink this potion, your physical age is reduced by 1d6 + 6 years, to a minimum of 13 years. Each time you subsequently drink a potion of longevity, there is 10 percent cumulative chance that you instead age by 1d6 + 6 years. Suspended in this amber liquid are a scorpion's tail, an adder's fang, a dead spider, and a tiny heart that, against all reason, is still beating. These ingredients vanish when the potion is opened.</td>
+                </tr>
+                <tr>
+                  <td>Potion of Mind Reading</td><td>Single Use</td><td>800</td><td>Rare</td><td>No</td><td>When you drink this potion, you gain the effect of the detect thoughts spell (save DC 13). The potion's dense, purple liquid has an ovoid cloud of pink floating in it.</td>
+                </tr>
+                <tr>
+                  <td>Potion of Resistance</td><td>Single Use</td><td>200</td><td>Uncommon</td><td>No</td><td>When you drink this potion, you gain resistance to one type of damage for 1 hour. The type of damage is determined when the potion is made.</td>
+                </tr>
+                <tr>
+                  <td>Potion of Speed</td><td>Single Use</td><td>2000</td><td>Very Rare</td><td>No</td><td>When you drink this potion, you gain the effect of the haste spell for 1 minute (no concentration required). The potion's yellow fluid is streaked with black and swirls on its own.</td>
+                </tr>
+                <tr>
+                  <td>Potion of Vitality</td><td>Single Use</td><td>2500</td><td>Very Rare</td><td>No</td><td>When you drink this potion, it removes any exhaustion you are suffering and cures any disease or poison affecting you. For the next 24 hours, you regain the maximum number of hit points for any Hit Die you spend. The potion's crimson liquid regularly pulses wi-dulllight, calling to mind a heartbeat.</td>
+                </tr>
+                <tr>
+                  <td>Potion of Waterbreathing</td><td>Single Use</td><td>150</td><td>Uncommon</td><td>No</td><td>You can breathe underwater for 1 hour after drinking this potion. Its cloudy green fluid smells of the sea and has a jellyfish-like bubble floating in it.</td>
+                </tr>
+                <tr>
+                  <td>Quiver of Ehlonna</td><td>Wondrous Item</td><td>1500</td><td>Uncommon</td><td>No</td><td>Each of the quiver's three compartments connects to an extradimensional space that allows the quiver to hold numerous items while never weighing more than 2 pounds. The shortest compartment can hold up to sixty arrows, bolts, or similar objects. The midsize compartment holds up to eighteen javelins or similar objects. The longest compartment holds up to six long objects, such as bows, quarterstaffs, or spears. You can draw any item the quiver contains as if doing so from a regular quiver or scabbard.</td>
+                </tr>
+                <tr>
+                  <td>Quiver of Swiftness</td><td>Wondrous Item</td><td>8000</td><td>Rare</td><td>Yes</td><td>While you are attuned to this quiver, whenever you take the attack action on your turn with a ranged weapon, you can make an additional attack with the same ranged weapon as a bonus action.  Additionally, you can ignore the loading property of any weapon whose ammunition can be stored in the quiver.</td>
+                </tr>
+                <tr>
+                  <td>Ring of Animal Influence</td><td>Ring</td><td>4000</td><td>Rare</td><td>No</td><td>This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. While wearing the ring, you can use an action to expend 1 of its charges to cast one of the following spells:
+                    <ul>
+                      <li>Animal friendship (save DC 13)</li>
+                      <li>Fear (save DC 13), targeting only beasts that have an Intelligence of 3 or lower</li>
+                      <li>Speak with animals</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Ring of Evasion</td><td>Ring</td><td>6000</td><td>Rare</td><td>Yes</td><td>This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. When you fail a Dexterity saving throw while wearing it, you can use your reaction to expend 1 of its charges to succeed on that saving throw instead.</td>
+                </tr>
+                <tr>
+                  <td>Ring of Feather Falling</td><td>Ring</td><td>4000</td><td>Rare</td><td>Yes</td><td>When you fall while wearing this ring, you descend 60 feet per round and take no damage from falling.</td>
+                </tr>
+                <tr>
+                  <td>Ring of Free Action</td><td>Ring</td><td>6000</td><td>Rare</td><td>Yes</td><td>While you wear this ring, difficult terrain doesn't cost you extra movement. In addition, magic can neither reduce your speed nor cause you to be paralyzed or restrained.</td>
+                </tr>
+                <tr>
+                  <td>Ring of Jumping</td><td>Ring</td><td>1500</td><td>Uncommon</td><td>Yes</td><td>While wearing this ring, you can cast the jump spell from it as a bonus action at will, but can target only yourself when you do so.</td>
+                </tr>
+                <tr>
+                  <td>Ring of Mind Shielding</td><td>Ring</td><td>3000</td><td>Uncommon</td><td>Yes</td><td>While wearing this ring, you are immune to magic that allows other creatures to read your thoughts, determine whether you are lying, know your alignment, or know your creature type. Creatures can telepathically communicate with you only if you allow it.<br />You can use an action to cause the ring to become invisible until you use another action to make it visible, until you remove the ring, or until you die.<br />If you die while wearing the ring, your soul enters it, unless it already houses a soul. You can remain in the ring or depart for the afterlife. As long as your soul is in the ring, you can telepathically communicate with any creature wearing it. A wearer can't prevent this telepathic communication.</td>
+                </tr>
+                <tr>
+                  <td>Ring of Protection</td><td>Ring</td><td>5000</td><td>Rare</td><td>Yes</td><td>You gain a +1 bonus to AC and saving throws while wearing this ring.</td>
+                </tr>
+                <tr>
+                  <td>Ring of Regeneration</td><td>Ring</td><td>13000</td><td>Very Rare</td><td>Yes</td><td>While wearing this ring, you regain 1d6 hit points every 10 minutes, provided that you have at least 1 hit point. If you lose a body part, the ring causes the missing part to regrow and return to full functionality after 1d6 + 1 days if you have at least 1 hit point the whole time.</td>
+                </tr>
+                <tr>
+                  <td>Ring of Resistance</td><td>Ring</td><td>6000</td><td>Rare</td><td>Yes</td><td>You have resistance to one damage type while wearing this ring. The gem in the ring indicates the type,</td>
+                </tr>
+                <tr>
+                  <td>Ring of Spell Storing</td><td>Ring</td><td>5000</td><td>Rare</td><td>Yes</td><td>This ring stores spells cast into it, holding them until the attuned wearer uses them. The ring can store up to 5 levels worth of spells at a time. When found, it contain ld6 - 1 levels of stored spells chosen by the DM.<br />Any creature can cast a spell of 1st through 5th level into the ring by touching the ring as the spell is cast. The spell has no effect, other than to be stored in the ring. If the ring can't hold the spell, the spell is expendec without effect. The level of the slot used to cast the spell determines how much space it uses.<br />While wearing this ring, you can cast any spell stored in it. The spell uses the slot level, spell save DC, spell attack bonus, and spellcasting ability of the original caster, but is otherwise treated as if you cast the spell. The spell cast from the ring is no longer stored in it, freeing up space.</td>
+                </tr>
+                <tr>
+                  <td>Ring of Swimming</td><td>Ring</td><td>2000</td><td>Uncommon</td><td>No</td><td>You have a swimming speed of 40 feet while wearing this ring.</td>
+                </tr>
+                <tr>
+                  <td>Ring of Telekinesis</td><td>Ring</td><td>14000</td><td>Very Rare</td><td>Yes</td><td>While wearing this ring, you can cast the telekinesis spell at will, but you can target only objects that aren't being worn or carried.</td>
+                </tr>
+                <tr>
+                  <td>Ring of the Ram</td><td>Ring</td><td>6000</td><td>Rare</td><td>Yes</td><td>This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. While wearing the ring, you can use an action to expend 1 to 3 of its charges to attack one creature you can see within 60 feet of you. The ring produces a spectral ram's head and makes its attack roll with a +7 bonus. On a hit, for each charge you spend, the target takes 2d10 force damage and is pushed 5 feet away from you.<br />Alternatively, you can expend 1 to 3 of the ring's charges as an action to try to break an object you can see within 60 feet of you that isn't being worn or carried. The ring makes a Strength check with a +5 bonus for each charge you spend.</td>
+                </tr>
+                <tr>
+                  <td>Ring of Warmth</td><td>Ring</td><td>3000</td><td>Uncommon</td><td>Yes</td><td>While wearing this ring, you have resistance to cold damage. In addition, you and everything you wear and carry are unharmed by temperatures as low as - 50 degrees Fahrenheit.</td>
+                </tr>
+                <tr>
+                  <td>Ring of Water Walking</td><td>Ring</td><td>2500</td><td>Uncommon</td><td>No</td><td>While wearing this ring, you can stand on and move across any liquid surface as if it were solid ground.</td>
+                </tr>
+                <tr>
+                  <td>Ring of X-ray Vision</td><td>Ring</td><td>5000</td><td>Rare</td><td>Yes</td><td>While wearing this ring, you can use an action to speak its command word. When you do so, you can see into and through solid matter for 1 minute. This vision has a radius of 30 feet. To you, solid objects within that radius appear transparent and don't prevent light from passing through them. The vision can penetrate 1 foot of stone, 1 inch of common metal, or up to 3 feet of wood or dirt. Thicker substances block the vision, as does a thin sheet of lead. Whenever you use the ring again before taking a long rest, you must succeed on a DC 15 Constitution saving throw or gain one level of exhaustion.</td>
+                </tr>
+                <tr>
+                  <td>Robe of Eyes</td><td>Wondrous Item</td><td>6000</td><td>Rare</td><td>Yes</td><td>This robe is adorned with eyelike patterns. While you wear the robe, you gain the following benefits:
+                    <ul>
+                      <li>The robe lets you see in all directions, and you have advantage on Wisdom (Perception) checks that rely on sight.</li>
+                      <li>You have darkvision out to a range of 120 feet.</li>
+                      <li>You can see invisible creatures and objects, as well as see into the Ethereal Plane, out to a range of 120 feet.</li>
+                    </ul>
+                    The eyes on the robe can't be closed or averted. Although you can close or avert your own eyes, you are never considered to be doing so while wearing this robe <br />A light spell cast on the robe or a daylight spell cast within 5 feet of the robe causes you to be blinded for 1 minute. At the end of each of your turns, you can make a Constitution saving throw (DC 11 for light or DC 15 for daylight), ending the blindness on a success.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Robe of Scintillating Colors</td><td>Wondrous Item</td><td>11000</td><td>Very Rare</td><td>Yes</td><td>This robe has 3 charges, and it regains 1d3 expended charges daily at dawn. While you wear it, you can use an action and expend 1 charge to cause the garment to display a shifting pattern of dazzling hues until the end of your next turn. During this time, the robe sheds bright light in a 30-foot radius and dim light for an additional 30 feet. Creatures that can see you have disadvantage on attack rolls against you. In addition, any creature in the bright light that can see you when the robe's power is activated must succeed on a DC 15 Wisdom saving throw or become stunned until the effect ends.</td>
+                </tr>
+                <tr>
+                  <td>Robe of Stars</td><td>Wondrous Item</td><td>14000</td><td>Very Rare</td><td>Yes</td><td>This black or dark blue robe is embroidered with small white or silver stars. You gain a +1 bonus to saving throws while you wear it.<br />Six stars, located on the robe's upper front portion, are particularly large. While wearing this robe, you can use an action to pull off one of the stars and use it to cast magic missile as a 5th-level spell. Daily at dusk, 1d6 removed stars reappear on the robe. While you wear the robe, you can use an action to enter the Astral Plane along with everything you are wearing and carrying. You remain there until you use an action to return to the plane you were on. You reappear in the last space you occupied, or if that space is occupied, the nearest unoccupied space.</td>
+                </tr>
+                <tr>
+                  <td>Rod of Absorption</td><td>Rod</td><td>13000</td><td>Very Rare</td><td>Yes</td><td>While holding this rod, you can use your reaction to absorb a spell that is targeting only you and not with an area of effect. The absorbed spell's effect is canceled, and the spell's energy- not the spell itself- is stored in the rod. The energy has the same level as the spell when it was cast. The rod can absorb and store up to 50 levels of energy over the course of its existence. Once the rod absorbs 50 levels of energy, it can't absorb more. If you are targeted by a spell that the rod can't store, the rod has no effect on that spell.<br />When you become attuned to the rod, you know how many levels of energy the rod has absorbed over the course of its existence, and how many levels of spell energy it currently has stored.<br />If you are a spellcaster holding the rod, you can convert energy stored in it into spell slots to cast spells you have prepared or know. You can create spell slots only of a level equal to or lower than your own spell slots, up to a maximum of 5th level. You use the stored levels in place of your slots, but otherwise cast the spell as normal. For example, you can use 3 levels stored in the rod as a 3rd-level spell slot.<br /> A rod that can no longer absorb spell energy and has no energy remaining becomes nonmagical.</td>
+                </tr>
+                <tr>
+                  <td>Rod of Alertness</td><td>Rod</td><td>20000</td><td>Very Rare</td><td>Yes</td><td>This rod has a flanged head and the following properties.<br /><strong>Alertness.</strong> While holding the rod, you have advantage on Wisdom (Perception) checks and on rolls for initiative.<br /><strong>Spells.</strong> While holding the rod, you can use an action to cast one of the following spells from it: detect evil and good, detect magic, detect poison and disease, or see invisibility.<br /><strong>Protective Aura.</strong> As an action, you can plant the haft end of the rod in the ground, whereupon the rod's head sheds bright light in a 60-foot radius and dim light for an additional 60 feet. While in that bright light, you and any creature that is friendly to you gain a +1 bonus to AC and saving throws and can sense the location of any invisible hostile creature that is also in the bright light.<br />The rod's head stops glowing and the effect ends after 10 minutes, or when a creature uses an action to pull the rod from the ground. This property can't be used again until the next dawn.</td>
+                </tr>
+                <tr>
+                  <td>Rod of the Pact Keeper +1</td><td>Rod</td><td>6000</td><td>Uncommon</td><td>Yes (Warlock)</td><td>While holding this rod, you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your warlock spells.<br />In addition, you can regain one warlock spell slot as an action while holding the rod. You can't use this Property again until you finish a long rest.</td>
+                </tr>
+                <tr>
+                  <td>Rod of Rulership</td><td>Rod</td><td>8000</td><td>Rare</td><td>Yes</td><td>You can use an action to present the rod and command Obedience from each creature of your choice that you can see within 120 feet of you. Each target must succeed on a DC 15 Wisdom saving throw or be charmed by you for 8 hours. While charmed in this way, the creature regards you as its trusted leader. If harmed by you or your companions, or commanded to do something contrary to its nature, a target ceases to be charmed in this way. The rod can't be used again until the next dawn.</td>
+                </tr>
+                <tr>
+                  <td>Rod of Security</td><td>Rod</td><td>16000</td><td>Very Rare</td><td>No</td><td>While holding this rod, you can use an action to activate it. The rod then instantly transports you and up to 199 other willing creatures you can see to a paradise that exists in an extraplanar space. You choose the form that the paradise takes. It could be a tranquil garden, lovely glade, cheery tavern, immense palace, tropical island, fantastic carnival, or whatever else you can imagine.<br />Regardless of its nature, the paradise contains enough water and food to sustain its visitors. Everything else that can be interacted with inside the extraplanar space can exist only there. For example, a flower picked from a garden in the paradise disappears if it is taken outside the extraplanar space.<br />For each hour spent in the paradise, a visitor regains hit points as if it had spent 1 Hit Die. Also, creatures don't age while in the paradise, although time passes normally. Visitors can remain in the paradise for up to 200 days divided by the number of creatures present (round down).<br />When the time runs out or you use an action to end it, all visitors reappear in the location they occupied when you activated the rod, or an unoccupied space nearest that location. The rod can't be used again until ten days have passed.</td>
+                </tr>
+                <tr>
+                  <td>Rope of Climbing</td><td>Wondrous Item</td><td>1500</td><td>Uncommon</td><td>No</td><td>This 60-foot length of silk rope weighs 3 pounds and can hold up to 3,000 pounds. If you hold one end of the rope and use an action to speak the command word, the rope animates. As a bonus action, you can command the other end to move toward a destination you choose. That end moves 10 feet on your turn when you first command it and 10 feet on each of your turns until reaching its destination, up to its maximum length away, or until you tell it to stop. You can also tell the rope to fasten itself securely to an object or to unfasten itself, to knot or unknot itself, or to coil itself for carrying. <br />If you tell the rope to knot, large knots appear at 1-foot intervals along the rope. While knotted, the rope shortens to a 50-foot length and grants advantage on checks made to climb it.<br />The rope has AC 20 and 20 hit points. It regains 1 hit point every 5 minutes as long as it has at least 1 hit point. If the rope drops to 0 hit points, it is destroyed.</td>
+                </tr>
+                <tr>
+                  <td>Rope of Entanglement </td><td>Wondrous Item</td><td>5000</td><td>Rare</td><td>No</td><td>This rope is 30 feet long and weighs 3 pounds. If you hold one end of the rope and use an action to speak its command word, the other end darts forward to entangle a creature you can see within 20 feet of you. The target must succeed on a DC 15 Dexterity saving throw or become restrained.<br />You can release the creature by using a bonus action to speak a second command word. A target restrained by the rope can use an action to make a DC 15 Strength or Dexterity check (target's choice). On a success, the creature is no longer restrained by the rope. <br />The rope has AC 20 and 20 hit points. It regains 1 hit point every 5 minutes as long as it has at least 1 hit point. If the rope drops to 0 hit points, it is destroyed.</td>
+                </tr>
+                <tr>
+                  <td>Saddle of the Cavalier</td><td>Wondrous Item</td><td>3000</td><td>Uncommon</td><td>No</td><td>While in this saddle on a mount, you can't be dismounted against your will if you're conscious, and attack rolls against the mount have disadvantage.</td>
+                </tr>
+                <tr>
+                  <td>Weapon of Speed</td><td>Weapon</td><td>21000</td><td>Very Rare</td><td>Yes</td><td>You gain a +2 bonus to attack and damage rolls made with this magic weapon. In addition, you can make one attack with it as a bonus action on each of your turns.</td>
+                </tr>
+                <tr>
+                  <td>Scroll of Protection</td><td>Single Use</td><td>800</td><td>Rare</td><td>No</td><td>Each scroll of protection works against a specific type of creature. <br />Using an action to read the scroll encloses you in a invisible barrier that extends from you to form a 5-footradius, 10-foot-high cylinder. For 5 minutes, this barrier prevents creatures of the specified type from entering or affecting anything within the cylinder.<br />The cylinder moves with you and remains centered on you. However, if you move in such a way that a creature of the specified type would be inside the cylinder, the effect ends.<br />A creature can attempt to overcome the barrier by using an action to make a DC 15 Charisma check. On a success, the creature ceases to be affected by the barrier.</td>
+                </tr>
+                <tr>
+                  <td>Cantrip Scroll</td><td>Single Use</td><td>25</td><td>Common</td><td>No</td><td>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list you can use an action to read the scroll and cast its spell without having to provide any of the spell's components. Otherwise, the scroll is unintelligible.<br />If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + spell's level. On a failed check, the spell disappears from the scroll with no other effect.<br />Once the spell is cast, the words on the scroll fade, and the scroll itself crumbles to dust. The attack bonus for the spell on the scroll is +5 and the Save DC is 13.</td>
+                </tr>
+                <tr>
+                  <td>1st Level Scroll</td><td>Single Use</td><td>50</td><td>Common</td><td>No</td><td>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list you can use an action to read the scroll and cast its spell without having to provide any of the spell's components. Otherwise, the scroll is unintelligible.<br />If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + spell's level. On a failed check, the spell disappears from the scroll with no other effect.<br />Once the spell is cast, the words on the scroll fade, and the scroll itself crumbles to dust. The attack bonus for the spell on the scroll is +5 and the Save DC is 13.</td>
+                </tr>
+                <tr>
+                  <td>2nd Level Scroll</td><td>Single Use</td><td>100</td><td>Uncommon</td><td>No</td><td>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list you can use an action to read the scroll and cast its spell without having to provide any of the spell's components. Otherwise, the scroll is unintelligible.<br />If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + spell's level. On a failed check, the spell disappears from the scroll with no other effect.<br />Once the spell is cast, the words on the scroll fade, and the scroll itself crumbles to dust. The attack bonus for the spell on the scroll is +5 and the Save DC is 13.</td>
+                </tr>
+                <tr>
+                  <td>3rd Level Scroll</td><td>Single Use</td><td>200</td><td>Uncommon</td><td>No</td><td>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list you can use an action to read the scroll and cast its spell without having to provide any of the spell's components. Otherwise, the scroll is unintelligible.<br />If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + spell's level. On a failed check, the spell disappears from the scroll with no other effect.<br />Once the spell is cast, the words on the scroll fade, and the scroll itself crumbles to dust. The attack bonus for the spell on the scroll is +7 and the Save DC is 15.</td>
+                </tr>
+                <tr>
+                  <td>4th Level Scroll</td><td>Single Use</td><td>400</td><td>Rare</td><td>No</td><td>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list you can use an action to read the scroll and cast its spell without having to provide any of the spell's components. Otherwise, the scroll is unintelligible.<br />If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + spell's level. On a failed check, the spell disappears from the scroll with no other effect.<br />Once the spell is cast, the words on the scroll fade, and the scroll itself crumbles to dust. The attack bonus for the spell on the scroll is +7 and the Save DC is 15.</td>
+                </tr>
+                <tr>
+                  <td>5th Level Scroll</td><td>Single Use</td><td>800</td><td>Rare</td><td>No</td><td>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list you can use an action to read the scroll and cast its spell without having to provide any of the spell's components. Otherwise, the scroll is unintelligible.<br />If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + spell's level. On a failed check, the spell disappears from the scroll with no other effect.<br />Once the spell is cast, the words on the scroll fade, and the scroll itself crumbles to dust. The attack bonus for the spell on the scroll is +9 and the Save DC is 17.</td>
+                </tr>
+                <tr>
+                  <td>6th Level Scroll</td><td>Single Use</td><td>1600</td><td>Very Rare</td><td>No</td><td>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list you can use an action to read the scroll and cast its spell without having to provide any of the spell's components. Otherwise, the scroll is unintelligible.<br />If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + spell's level. On a failed check, the spell disappears from the scroll with no other effect.<br />Once the spell is cast, the words on the scroll fade, and the scroll itself crumbles to dust. The attack bonus for the spell on the scroll is +9 and the Save DC is 17.</td>
+                </tr>
+                <tr>
+                  <td>7th Level Scroll</td><td>Single Use</td><td>3200</td><td>Very Rare</td><td>No</td><td>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list you can use an action to read the scroll and cast its spell without having to provide any of the spell's components. Otherwise, the scroll is unintelligible.<br />If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + spell's level. On a failed check, the spell disappears from the scroll with no other effect.<br />Once the spell is cast, the words on the scroll fade, and the scroll itself crumbles to dust. The attack bonus for the spell on the scroll is +10 and the Save DC is 18.</td>
+                </tr>
+                <tr>
+                  <td>8th Level Scroll</td><td>Single Use</td><td>6400</td><td>Very Rare</td><td>No</td><td>A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list you can use an action to read the scroll and cast its spell without having to provide any of the spell's components. Otherwise, the scroll is unintelligible.<br />If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + spell's level. On a failed check, the spell disappears from the scroll with no other effect.<br />Once the spell is cast, the words on the scroll fade, and the scroll itself crumbles to dust. The attack bonus for the spell on the scroll is +10 and the Save DC is 18.</td>
+                </tr>
+                <tr>
+                  <td>Sending Stones</td><td>Wondrous Item</td><td>3000</td><td>Uncommon</td><td>No</td><td>Sending stones come in pairs, with each smooth stone carved to match the other so the pairing is easily recognized. While you touch one stone, you can use an action to cast the sending spell from it. The target is the bearer of the other stone. If no creature bears the other stone, you know that fact as soon as you use the stone and don't cast the spell.<br />Once sending is cast through the stones, they can't be used again until the next dawn. If one of the stones in a pair is destroyed, the other one becomes nonmagical.</td>
+                </tr>
+                <tr>
+                  <td>Sentinel Shield</td><td>Armor (shield)</td><td>4000</td><td>Uncommon</td><td>No</td><td>While holding this shield, you have advantage on initiative rolls and Wisdom (Perception) checks. The shield is emblazoned with a symbol of an eye.</td>
+                </tr>
+                <tr>
+                  <td>Slippers of Spider Climbing</td><td>Wondrous Item</td><td>1500</td><td>Uncommon</td><td>Yes</td><td>While you wear these light shoes, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. You have a climbing speed equal to your walking speed. However the slippers don't allow you to move this way on a slippery surface, such as one covered by ice or oil.</td>
+                </tr>
+                <tr>
+                  <td>Shield +1</td><td>Armor (shield)</td><td>3000</td><td>Uncommon</td><td>No</td><td>While holding this shield, you have a +1 bonus to AC. This bonus is in addition to the shield's normal bonus to AC.</td>
+                </tr>
+                <tr>
+                  <td>Shield +2</td><td>Armor (shield)</td><td>9000</td><td>Rare</td><td>No</td><td>While holding this shield, you have a +2 bonus to AC. This bonus is in addition to the shield's normal bonus to AC.</td>
+                </tr>
+                <tr>
+                  <td>Shield +3</td><td>Armor (shield)</td><td>18000</td><td>Very Rare</td><td>No</td><td>While holding this shield, you have a +3 bonus to AC. This bonus is in addition to the shield's normal bonus to AC.</td>
+                </tr>
+                <tr>
+                  <td>Spellguard Shield</td><td>Armor (shield)</td><td>14000</td><td>Very Rare</td><td>No</td><td>While holding this shield, you have advantage on saving throws against spells and other magical effects, and spell attacks have disadvantage against you.</td>
+                </tr>
+                <tr>
+                  <td>Staff of Charming</td><td>Staff</td><td>7000</td><td>Rare</td><td>Yes (bard, cleric, druid, sorcerer, warlock, wizard)</td><td>While holding this staff, you can use an action to expend 1 of its 10 charges to cast charm person, command, or comprehend languages from it using your spell save DC. The staff can also be used as a magic quarterstaff.<br />If you are holding the staff and fail a saving throw against an enchantment spell that targets only you, you can turn your failed save into a successful one. You can't use this property of the staff again until the next dawn. If you succeed on a save against an enchantment spell that targets only you, with or without the staff's intervention, you can use your reaction to expend 1 charge from the staff and turn the spell back on its caster as if you had cast the spell.<br />The staff regains 1d8 + 2 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff becomes a nonmagical quarterstaff.</td>
+                </tr>
+                <tr>
+                  <td>Staff of Fire</td><td>Staff</td>13000<td></td><td>Very Rare</td><td>Yes (druid, sorcerer, warlock, wizard)</td><td>You have resistance to fire damage while you hold this staff.<br />The staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC: burning hands (1 charge), fireball (3 charges), or wall of fire (4 charges).<br />The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last cha rge, roll a d20. On a 1, the staff blackens, crumbles into cinders, and is destroyed.</td>
+                </tr>
+                <tr>
+                  <td>Staff of Frost</td><td>Staff</td><td>13000</td><td>Very Rare</td><td>Yes (druid, sorcerer, warlock, wizard)</td><td>You have resistance to cold damage while you hold this staff.<br />The staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC: cone of cold (5 charges), fog cloud (1 charge), ice storm (4 charges), or wall of ice (4 charges). The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff turns to water and is destroyed.</td>
+                </tr>
+                <tr>
+                  <td>Staff of Healing</td><td>Staff</td><td>8000</td><td>Rare</td><td>Yes (bard, cleric, druid)</td><td>This staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability modifier: cure wounds (1 charge per spell level, up to 4th), lesser restoration (2 charges). or mass cure wounds (5 charges). The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1. the staff vanishes in a flash of light, lost forever.</td>
+                </tr>
+                <tr>
+                  <td>Staff of Striking</td><td>Staff</td><td>21000</td><td>Very Rare</td><td>Yes</td><td>This staff can be wielded as a magic quarterstaff that grants a + 3 bonus to attack and damage rolls made with it.<br />The staff has 10 charges. When you hit with a melee attack using it, you can expend up to 3 of its charges. For each charge you expend, the target takes an extra ld6 force damage. The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff becomes a nonmagical quarterstaff.</td>
+                </tr>
+                <tr>
+                  <td>Staff of Swarming Insects</td><td>Staff</td><td>9000</td><td>Rare</td><td>Yes (bard, cleric, druid, sorcerer, warlock, wizard)</td><td>This staff has 10 charges and regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, a swarm of insects consumes and destroys the staff, then disperses.<br /><strong>Spells.</strong> While holding the staff, you can use an action to expend some of its charges to cast one of the following spells from it, using your spell save DC: giant insect (4 charges) or insect plague (5 charges). <strong>Insect Cloud.</strong> While holding the staff, you can use an action and expend 1 charge to cause a swarm of harmless flying insects to spread out in a 30-foot radius from you. The insects remain for 10 minutes, making the area heavily obscured for creatures other than you. The swarm moves with you, remaining centered on you. A wind of at least 10 miles per hour disperses the swarm and ends the effect.</td>
+                </tr>
+                <tr>
+                  <td>Staff of the Adder</td><td>Staff</td><td>3000</td><td>Uncommon</td><td>Yes (cleric, druid, warlock)</td><td>You can use a bonus action to speak this staff's command word and make the head of the staff become that of an animate poisonous snake for 1 minute. By using another bonus action to speak the command word again, you return the staff to its normal inanimate form.<br />You can make a melee attack using the snake head, which has a reach of 5 feet. Your proficiency bonus applies to the attack roll. On a hit, the target takes 1d6 piercing damage and must succeed on a DC 15 Constitution saving throw or take 3d6 poison damage. The snake head can be attacked while it is animate. It has an Armor Class of 15 and 20 hit points. If the head drops to 0 hit points, the staff is destroyed. As long as it's not destroyed, the staff regains all lost hit points when it reverts to its inanimate form.</td>
+                </tr>
+                <tr>
+                  <td>Staff of the Python</td><td>Staff</td><td>3000</td><td>Uncommon</td><td>Yes (cleric, druid, warlock)</td><td>You can use an action to speak this staff's command word and throw the staff on the ground within 10 feet of you. The staff becomes a giant constrictor snake (see the Monster Manual for statistics) under your control and acts on its own initiative count. By using a bonus action to speak the command word again, you return the staff to its normal form in a space formerly occupied by the snake. <br />On your turn, you can mentally command the snake if it is within 60 feet of you and you aren't incapacitated. You decide what action the snake takes and where it moves during its next turn, or you can issue it a general command, such as to attack your enemies or guard a location.<br /> If the snake is reduced to 0 hit points, it dies and reverts to its staff form. The staff then shatters and is destroyed. If the snake reverts to staff form before losing all its hit points, it regains all of them.</td>
+                </tr>
+                <tr>
+                  <td>Staff of the Woodlands</td><td>Staff</td><td>18000</td><td>Rare</td><td>Yes (druid)</td><td>This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. While holding it, you have a +2 bonus to spell attack rolls.<br />The staff has 10 charges for the following properties. It regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff loses its properties and becomes a nonmagical quarterstaff.<br /><strong>Spells</strong>. You can use an action to expend 1 or more of the staff's charges to cast one of the following spells from it, using your spell save DC: animal friendship (1 charge), awaken (5 charges), barkskin (2 charges), locate animals or plants (2 charges), speak with animals (1 charge), speak with plants (3 charges), or wall of thorns (6 charges).<br />You can also use an action to cast the pass without trace spell from the staff without using any charges.<br /><strong>Tree Form.</strong> You can use an action to plant one end of the staff in fertile earth and expend 1 charge to transform the staff into a healthy tree. The tree is 60 feet tall and has a 5-foot-diameter trunk, and its branches at the top spread out in a 20-foot radius. The tree appears ordinary but radiates a faint aura of transmutation magic if targeted by detect magic. While touching the tree and using another action to speak its command, word, you return the staff to its normal form. Any creature in the tree falls when it reverts to a staff.</td>
+                </tr>
+                <tr>
+                  <td>Staff of Thunder and Lightning</td><td>Staff</td><td>15000</td><td>Very Rare</td><td>Yes</td><td>This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. It also has the following additional properties. When one of these properties is used, it can't be used again until the next dawn.<br /><strong>Lightning.</strong> When you hit with a melee attack using the staff, you can cause the target to take an extra 2d6 lightning damage.<br /><strong>Thunder.</strong> When you hit with a melee attack using the staff, you can cause the staff to emit a crack of thunder, audible out to 300 feet. The target you hit must succeed on a DC 17 Constitution saving throw or become stunned until the end of your next turn.<br /><strong>Lightning Strike.</strong> You can use an action to cause a bolt of lightning to leap from the staff's tip in a line that is 5 feet wide and 120 feet long. Each creature in that line must make a DC 17 Dexterity saving throw, taking 9d6 lightning damage on a failed save, or half as much damage on a successful one.<br /><strong>Thunderclap.</strong> You can use an action to cause the staff to issue a deafening thunderclap, audible out to 600 feet. Each creature within 60 feet of you (not including you) must make a DC 17 Constitution saving throw. On a failed save, a creature takes 2d6 thunder damage and becomes deafened for 1 minute. On a successful save, a creature takes half damage and isn't deafened.<br /><strong>Thunder and Lightning.</strong> You can use an action to use the Lightning Strike and Thunderclap properties at the same time. Doing so doesn't expend the daily use of those properties, only the use of this one.</td>
+                </tr>
+                <tr>
+                  <td>Staff of Withering</td><td>Staff</td><td>6000</td><td>Rare</td><td>Yes (cleric, druid, warlock)</td><td>This staff has 3 charges and regains 1d3 expended charges daily at dawn.<br />The staff can be wielded as a magic quarterstaff. On a hit, it deals damage as a normal quarterstaff, and you can expend 1 charge to deal an extra 2d10 necrotic damage to the target. In addition, the target must succeed on a DC 15 Constitution saving throw or have disadvantage for 1 hour on any ability check or saving throw that uses Strength or Constitution.</td>
+                </tr>
+                <tr>
+                  <td>Stone of Controlling Earth Elementals</td><td>Wondrous Item</td><td>5000</td><td>Rare</td><td>No</td><td>If the stone is touching the ground, you can use an action to speak its command word and summon an earth elemental, as if you had cast the conjure elemental spell. The stone can't be used this way again until the next dawn. The stone weighs 5 pounds.</td>
+                </tr>
+                <tr>
+                  <td>Stone of Good Luck</td><td>Wondrous Item</td><td>3000</td><td>Uncommon</td><td>Yes</td><td>While this polished agate is on your person, you gain a + 1 bonus to ability checks and saving throws.</td>
+                </tr>
+                <tr>
+                  <td>Sun Blade</td><td>Weapon (longsword)</td><td>13000</td><td>Rare</td><td>Yes</td><td>This item appears to be a longsword hilt. While grasping the hilt, you can use a bonus action to cause a blade of pure radiance to spring into existence, or make the blade disappear. While the blade exists, this magic longsword has the finesse property. If you are proficient with shortswords or longswords, you are proficient with the sun blade.<br />You gain a +2 bonus to attack and damage rolls made with this weapon, which deals radiant damage instead of slashing damage. When you hit an undead with it, that target takes an extra 1d8 radiant damage. The sword's luminous blade emits bright light in a 15-foot radius and dim light for an additional 15 feet. The light is sunlight. While the blade persists, you can use an action to expand or reduce its radius of bright and dim light by 5 feet each, to a maximum of 30 feet each or a minimum of 10 feet each.</td>
+                </tr>
+                <tr>
+                  <td>Weapon of Life Stealing</td><td>Weapon</td><td>5000</td><td>Rare</td><td>Yes</td><td>When you attack a creature with this magic weapon and roll a 20 on the attack roll, that target takes an extra 10 necrotic damage if it isn't a construct or an undead. You also gain 10 temporary hit points.</td>
+                </tr>
+                <tr>
+                  <td>Weapon of Sharpness</td><td>Weapon (any slashing)</td><td>9000</td><td>Very Rare</td><td>Yes</td><td>When you attack an object with this magic weapon and hit, maximize your weapon damage dice against the target.<br />When you attack a creature with this weapon and roll a 20 on the attack roll, that target takes an extra 14 slashing damage. Then roll another d20. If you roll a 20 you lop off one of the target's limbs, with the effect of such loss determined by the DM. If the creature has no limb to sever, you lop off a portion of its body instead.<br />In addition, you can speak the weapon's command word to cause the blade to shed bright light in a 10-foot radius and dim light for an additional 10 feet. Speaking the command word again or sheathing the sword puts out the light.</td>
+                </tr>
+                <tr>
+                  <td>Weapon of Wounding</td><td>Weapon</td><td>8000</td><td>Rare</td><td>Yes</td><td>Hit points lost to this weapon's damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means.<br />Once per turn, when you hit a creature with an attack using this magic weapon, you can wound the target. At the start of each of the wounded creature's turns, it takes 1d4 necrotic damage for each time you've wounded it, and it can then make a DC 15 Constitution saving throw, ending the effect of all such wounds on itself on a success. Alternatively, the wounded creature, or a creature within 5 feet of it, can use an action to make a DC 15 Wisdom (Medicine) check, ending the effect of such wounds on it on a success.</td>
+                </tr>
+                <tr>
+                  <td>Tentacle Rod</td><td>Rod</td><td>9000</td><td>Rare</td><td>Yes</td><td>Made by the drow, this rod is a magic weapon that ends in three rubbery tentacles. While holding the rod, you can use an action to direct each tentacle to attack a creature you can see within 15 feet of you. Each tentacle makes a melee attack roll with a +9 bonus. On a hit, the tentacle deals 1d6 bludgeoning damage. If you hit a target with all three tentacles, it must make a DC 15 Constitution saving throw. On a failure, the creature's speed is halved, it has disadvantage on Dexterity saving throws, and it can't use reactions for 1 minute. Moreover, on each of its turns, it can take either an action or a bonus action, but not both. At the end of each of its turns, it can repeat the saving throw, ending the effect on itself on a success.</td>
+                </tr>
+                <tr>
+                  <td>Tome of Clear Thought</td><td>Wondrous Item</td><td>30000</td><td>Very Rare</td><td>No</td><td>This book contains memory and logic exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Intelligence score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century.</td>
+                </tr>
+                <tr>
+                  <td>Tome of Leadership and Influence</td><td>Wondrous Item</td><td>30000</td><td>Very Rare</td><td>No</td><td>This book contains guidelines for influencing and charming others, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Charisma score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century.</td>
+                </tr>
+                <tr>
+                  <td>Tome of Understanding</td><td>Wondrous Item</td><td>30000</td><td>Very Rare</td><td>No</td><td>This book contains intuition and insight exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Wisdom score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century.</td>
+                </tr>
+                <tr>
+                  <td>Trident of Fish Command</td><td>Weapon (trident)</td><td>3000</td><td>Uncommon</td><td>Yes</td><td>This trident is a magic weapon. It has 3 charges. While you carry it, you can use an action and expend 1 charge to cast dominate beast (save DC 15) from it on a beast that has an innate swimming speed. The trident regains 1d3 expended charges daily at dawn.</td>
+                </tr>
+                <tr>
+                  <td>Vicious Weapon</td><td>Weapon</td><td>5000</td><td>Rare</td><td>Yes</td><td>When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon's type.</td>
+                </tr>
+                <tr>
+                  <td>Wand of 1st Level Spell</td><td>Wand</td><td>3000</td><td>Uncommon</td><td>No</td><td>This wand has 7 charges and regains 1d6+1 charges daily at dawn.  If you expend the wands last charge roll a d20.  On a 1, the wand crumbles into ashes and is destroyed.  Each wand of this type has one 1st level spell associated with it.  The wielder can expend 1 charge of the wand to cast the spell as a 1st level spell.  If the spell can be cast at higher levels, the wielder can expend additional charges to cast it at a higher level.  For each charge expended the level of the spell increases by 1. The save DC and attack roll for spells cast from this wand depend on the spell list the spell is from and the wielders ability scores.  If it was chosen from the druid, cleric, or ranger spell lists, use wisdom.  If it was chosen from the sorcerer, bard, warlock, or paladin spell lists use charisma. If it was chosen from the wizard spell list use intelligence.</td>
+                </tr>
+                <tr>
+                  <td>Wand of 2nd Level Spell</td><td>Wand</td><td>6000</td><td>Rare</td><td>Yes (spellcaster)</td><td>This wand has 7 charges and regains 1d6+1 charges daily at dawn.  If you expend the wands last charge roll a d20.  On a 1, the wand crumbles into ashes and is destroyed.  Each wand of this type has one 2nd level spell associated with it.  The wielder can expend 1 charge of the wand to cast the spell as a 2nd level spell.  If the spell can be cast at higher levels, the wielder can expend additional charges to cast it at a higher level.  For each charge expended the level of the spell increases by 1. The save DC and attack roll for spells cast from this wand depend on the spell list the spell is from and the wielders ability scores.  If it was chosen from the druid, cleric, or ranger spell lists, use wisdom.  If it was chosen from the sorcerer, bard, warlock, or paladin spell lists use charisma. If it was chosen from the wizard spell list use intelligence.</td>
+                </tr>
+                <tr>
+                  <td>Wand of 3rd Level Spell</td><td>Wand</td><td>12000</td><td>Rare</td><td>Yes (spellcaster)</td><td>This wand has 7 charges and regains 1d6+1 charges daily at dawn.  If you expend the wands last charge roll a d20.  On a 1, the wand crumbles into ashes and is destroyed.  Each wand of this type has one 3rd level spell associated with it.  The wielder can expend 1 charge of the wand to cast the spell as a 3rd level spell.  If the spell can be cast at higher levels, the wielder can expend additional charges to cast it at a higher level.  For each charge expended the level of the spell increases by 1. The save DC and attack roll for spells cast from this wand depend on the spell list the spell is from and the wielders ability scores.  If it was chosen from the druid, cleric, or ranger spell lists, use wisdom.  If it was chosen from the sorcerer, bard, warlock, or paladin spell lists use charisma. If it was chosen from the wizard spell list use intelligence.</td>
+                </tr>
+                <tr>
+                  <td>Wand of 4th Level Spell</td><td>Wand</td><td>24000</td><td>Very Rare</td><td>Yes (spellcaster)</td><td>This wand has 7 charges and regains 1d6+1 charges daily at dawn.  If you expend the wands last charge roll a d20.  On a 1, the wand crumbles into ashes and is destroyed.  Each wand of this type has one 4th level spell associated with it.  The wielder can expend 1 charge of the wand to cast the spell as a 4th level spell.  If the spell can be cast at higher levels, the wielder can expend additional charges to cast it at a higher level.  For each charge expended the level of the spell increases by 1. The save DC and attack roll for spells cast from this wand depend on the spell list the spell is from and the wielders ability scores.  If it was chosen from the druid, cleric, or ranger spell lists, use wisdom.  If it was chosen from the sorcerer, bard, warlock, or paladin spell lists use charisma. If it was chosen from the wizard spell list use intelligence.</td>
+                </tr>
+                <tr>
+                  <td>Wand of Binding</td><td>Wand</td><td>12000</td><td>Rare</td><td>Yes (spellcaster)</td><td>This wand has 7 charges for the following properties. It regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed. <br /><strong>Spells.</strong> While holding the wand, you can use an action to expend some of its charges to cast one of the following spells (save DC 17): hold monster (5 charges) or hold person (2 charges).<br /><strong>Assisted Escape.</strong> While holding the wand, you can use your reaction to expend 1 charge and gain advantage on a saving throw you make to avoid being paralyzed or restrained, or you can expend 1 charge and gain advantage on any check you make to escape a grapple.</td>
+                </tr>
+                <tr>
+                  <td>Wand of Secrets</td><td>Wand</td><td>2000</td><td>Uncommon</td><td>No</td><td>The wand has 3 charges. While holding it. you can use an action to expend 1 of its charges, and if a secret door or trap is within 30 feet of you, the wand pulses and points at the one nearest to you. The wand regains ld3 expended charges daily at dawn.</td>
+                </tr>
+                <tr>
+                  <td>Wand of the War Mage +1</td><td>Wand</td><td>4000</td><td>Uncommon</td><td>Yes (spellcaster)</td><td>While holding this wand, you gain a +1 bonus to spell attack rolls. In addition, you ignore half cover when making a spell attack.</td>
+                </tr>
+                <tr>
+                  <td>Wand of the War Mage +2</td><td>Wand</td><td>9000</td><td>Rare</td><td>Yes (spellcaster)</td><td>While holding this wand, you gain a +2 bonus to spell attack rolls. In addition, you ignore half cover when making a spell attack.</td>
+                </tr>
+                <tr>
+                  <td>Wand of the War Mage +3</td><td>Wand</td><td>15000</td><td>Very Rare</td><td>Yes (spellcaster)</td><td>While holding this wand, you gain a +3 bonus to spell attack rolls. In addition, you ignore half cover when making a spell attack.</td>
+                </tr>
+                <tr>
+                  <td>Wand of Practiced Spells +1</td><td>Wand</td><td>2000</td><td>Uncommon</td><td>Yes (spellcaster)</td><td>While holding this wand, you gain a +1 bonus to spell attack rolls of cantrips you cast.</td>
+                </tr>
+                <tr>
+                  <td>Wand of Practiced Spells +2</td><td>Wand</td><td>5000</td><td>Uncommon</td><td>Yes (spellcaster)</td><td>While holding this wand, you gain a +2 bonus to spell attack rolls of cantrips you cast.</td>
+                </tr>
+                <tr>
+                  <td>Wand of Practiced Spells +3</td><td>Wand</td><td>9000</td><td>Uncommon</td><td>Yes (spellcaster)</td><td>While holding this wand, you gain a +3 bonus to spell attack rolls of cantrips you cast.</td>
+                </tr>
+                <tr>
+                  <td>Wand of Pure Magic</td><td>Wondrous Item</td><td>10000</td><td>Rare</td><td>Yes</td><td>While you are attuned to this wand your maximum number of spell slots of levels 1 through 3 is increased by 1.  You must have a spell slot of a particular level for the wand to grant you an additional spell slot of that level.</td>
+                </tr>
+                <tr>
+                  <td>Weapon +1</td><td>Weapon (any)</td><td>3000</td><td>Uncommon</td><td>No</td><td>You have a +1 bonus to attack and damage rolls made with this magic weapon.</td>
+                </tr>
+                <tr>
+                  <td>Weapon +2</td><td>Weapon (any)</td><td>8000</td><td>Rare</td><td>No</td><td>You have a +2 bonus to attack and damage rolls made with this magic weapon.</td>
+                </tr>
+                <tr>
+                  <td>Weapon +3</td><td>Weapon (any)</td><td>14000</td><td>Very Rare</td><td>No</td><td>You have a +3 bonus to attack and damage rolls made with this magic weapon.</td>
+                </tr>
+                <tr>
+                  <td>Weapon of Elemental Damage</td><td>Weapon (any)</td><td>4000</td><td>Uncommon</td><td>No</td><td>Each weapon of elemental damage doe a particular type of damage, either fire, cold, acid, or lightning damage.  Whenever an attack with this weapon hits it does an additional 1d6 damage of the elemental type in addition to its normal effects.</td>
+                </tr>
+                <tr>
+                  <td>Weapon of Elemental Damage +1</td><td>Weapon (any)</td><td>9000</td><td>Rare</td><td>Yes</td><td>You gain +1 to attack and damage rolls while wielding this weapon.<br />Each weapon of elemental damage doe a particular type of damage, either fire, cold, acid, or lightning damage.  Whenever an attack with this weapon hits it does an additional 1d6 damage of the elemental type in addition to its normal effects.</td>
+                </tr>
+                <tr>
+                  <td>Weapon of Warning</td><td>Weapon (any)</td><td>3000</td><td>Uncommon</td><td>Yes</td><td>This magic weapon warns you of danger. While the weapon is on your person, you have advantage on initiative rolls. In addition, you and any of your companions within 30 feet of you can't be surprised, except when incapacitated by something other than nonmagical sleep. The weapon magically awakens you and your companions within range if any of you are sleeping naturally when combat begins.</td>
+                </tr>
+                <tr>
+                  <td>Weapon of Returning +1</td><td>Weapon (any thrown)</td><td>7000</td><td>Rare</td><td>Yes</td><td>You gain +1 to attack and damage rolls while wielding this weapon.<br />This magic weapon instantly returns to the wielders hand after an attack is made with it, regardless of whether the attack hits or misses.  If the owner does not have a hand free it instead falls to the ground at his/her feat.</td>
+                </tr>
+                <tr>
+                  <td>Weapon of Returning</td><td>Weapon (any thrown)</td><td>1500</td><td>Uncommon</td><td>Yes</td><td>This magic weapon instantly returns to the wielders hand after an attack is made with it, regardless of whether the attack hits or misses.  If the owner does not have a hand free it instead falls to the ground at his/her feat.</td>
+                </tr>
+                <tr>
+                  <td>Wind Fan</td><td>Wondrous Item</td><td>2000</td><td>Uncommon</td><td>No</td><td>While holding this fan , you can use an action to cast the gust of wind spell (save DC 13) from it. Once used, the fan shouldn't be used again until the next dawn. Each time it is used again before then, it has a cumulative 20 percent chance of not working and tearing into useless, nonmagical tatters.</td>
+                </tr>
+                <tr>
+                  <td>Winged Boots</td><td>Wondrous Item</td><td>4000</td><td>Uncommon</td><td>Yes</td><td>While you wear these boots, you have a flying speed equal to your walking speed. You can use the boots to fly for up to 4 hours, all at once or in several shorter flights, each one using a minimum of 1 minute from the duration. If you are flying when the duration expires, you descend at a rate of 30 feet per round until you land. The boots regain 2 hours of flying capability for every 12 hours they aren't in use.</td>
+                </tr>
+                <tr>
+                  <td>Wings of Flying</td><td>Wondrous Item</td><td>7000</td><td>Rare</td><td>Yes</td><td>While wearing this cloak, you can use an action to speak its command word. Thish turns the cloak into a pair of bat wings or bird wings on your back for 1 hour or until you repeat the command word as an action. The wings give you a flying speed of 60 feet. When they disappear, you can't use them again for 1d12 hours.</td>
+                </tr>
+                <tr>
+                  <td>Amulet of Intelligence +2</td><td>Wondrous Item</td><td>6000</td><td>Rare</td><td>Yes</td><td>While wearing this amulet your intelligence score increases by 2.  This magical increase occurs even if it increases your intelligence above your normal maximum.</td>
+                </tr>
+                <tr>
+                  <td>Amulet of Charisma +2</td><td>Wondrous Item</td><td>6000</td><td>Rare</td><td>Yes</td><td>While wearing this amulet your charisma score increases by 2.  This magical increase occurs even if it increases your charisma above your normal maximum.</td>
+                </tr>
+                <tr>
+                  <td>Amulet of Wisdom +2</td><td>Wondrous Item</td><td>6000</td><td>Rare</td><td>Yes</td><td>While wearing this amulet your wisdom score increases by 2.  This magical increase occurs even if it increases your wisdom above your normal maximum.</td>
+                </tr>
+                <tr>
+                  <td>Belt of Strength +2</td><td>Wondrous Item</td><td>6000</td><td>Rare</td><td>Yes</td><td>While wearing this belt your strength score increases by 2.  This magical increase occurs even if it increases your strength above your normal maximum.</td>
+                </tr>
+                <tr>
+                  <td>Belt of Dexterity +2</td><td>Wondrous Item</td><td>6000</td><td>Rare</td><td>Yes</td><td>While wearing this belt your dexterity score increases by 2.  This magical increase occurs even if it increases your dexterity above your normal maximum.</td>
+                </tr>
+                <tr>
+                  <td>Belt of Constitution +2</td><td>Wondrous Item</td><td>6000</td><td>Rare</td><td>Yes</td><td>While wearing this belt your constitution score increases by 2.  This magical increase occurs even if it increases your constitution above your normal maximum.</td>
+                </tr>
+              </tbody>
+            </table>
           </uib-tab>
         </uib-tabset>
         <!--Conditions, Injuries, Spells, Actions, Cover-->

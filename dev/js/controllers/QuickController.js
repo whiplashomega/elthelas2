@@ -52,7 +52,7 @@
           ];
           spellTableData.push(thisSpell);
         }
-          $('#spelltable').dataTable({
+        $('#spelltable').dataTable({
             data: spellTableData,
             responsive: true,
             columns: [
@@ -73,6 +73,29 @@
               }
             }
           });
+        $('.datatable').DataTable();
+        
+        function createDataTable(selector) {
+          $(selector + ' tfoot th').each(function() {
+            var title = $(this).text();
+            $(this).html( '<input type="text" class="form-control" style="min-width: 80px" placeholder="Search '+title+'" />' );
+          });
+          
+          var table = $(selector).DataTable({
+            responsive: true,
+          });
+          
+          table.columns().every(function () {
+            $('input', this.footer()).on('keyup change', function(a, b) {
+              var index = this.parentNode.cellIndex;
+              table.column(index).search(this.value).draw();
+            });
+          }); 
+        }
+        
+        createDataTable('#magictable');
+        createDataTable('#armortable');
+        createDataTable('#weapontable');
       });
     };
     
