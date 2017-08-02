@@ -22,6 +22,8 @@ module.exports = function(config) {
       'dev/libraries/angular-ui-router.js',
       'dev/libraries/ui-bootstrap-tpls.js',
       'dev/libraries/jquery.dataTables.js',
+      'dev/libraries/leaflet.js',
+      'dev/libraries/leaflet-measure.min.js',
       'dev/libraries/**/*.js',
       'bower_components/angular-mocks/angular-mocks.js',
       'dev/js/**/*.js',

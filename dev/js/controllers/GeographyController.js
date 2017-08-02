@@ -8,20 +8,28 @@
     $scope.nations;
     $scope.features;
     $scope.landmarks;
-    
-    var map = L.map('map').setView([0, 0], 2);
+
+    var map = L.map('map', {
+      //crs: L.CRS.Simple
+    }).setView([0, 0], 2);
+
     map.on('click', function(e) {
       alert("Lat, Lon : " + e.latlng.lat + ", " + e.latlng.lng);
     });
+    var measureControl = new L.Control.Measure({
+      primaryLengthUnit: "miles",
+      primaryAreaUnit: 'sqmiles'
+    });
+    measureControl.addTo(map);
     var markers = [];
     L.tileLayer('/images/maps/tiles/{z}/{y}/{x}.png', {
-            attribution: '|--------| = 320/160/80/40 miles by zoom | map image created by Heather Domaszek',
+            attribution: 'map image created by Heather Domaszek',
             minZoom: 0,
-            maxZoom: 4,
+            maxZoom: 5,
             tms: true,
             noWrap: true
           }).addTo(map);    
-          
+    L.control.scale({ maxWidth: 300 }).addTo(map);     
     function showdetails(geoitem, type) {
       var parentElem = $("body");
       var modalInstance = $uibModal.open({

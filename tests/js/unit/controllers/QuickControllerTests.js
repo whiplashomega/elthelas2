@@ -1,7 +1,7 @@
 /* globals describe, inject, spyOn, it, expect*/
 
 describe('Quick Controller Tests', function() {
-  var service, $q, deferred, $scope, controller;
+  var service, $q, deferred, deferredMagic, deferredArmor, deferredWeapon, $scope, controller;
   var resolveObject = { data: { documents: [{
     "title": "Test Spell",
     "level": "level1",
@@ -12,17 +12,23 @@ describe('Quick Controller Tests', function() {
   }]}};
   beforeEach(module('elthelas'));
   
-  beforeEach(inject(function($controller, _$q_, _$rootScope_, SpellProvider) {
+  beforeEach(inject(function($controller, _$q_, _$rootScope_, SpellProvider, ItemProvider) {
     $q = _$q_;
     $scope = _$rootScope_.$new();
     deferred = _$q_.defer();
+    deferredMagic = _$q_.defer();
+    deferredArmor = _$q_.defer();
+    deferredWeapon = _$q_.defer();
     service = SpellProvider;
     
     spyOn(SpellProvider, 'getSpells').and.returnValue(deferred.promise);
-    
+    spyOn(ItemProvider, 'getMagicItems').and.returnValue(deferredMagic.promise);
+    spyOn(ItemProvider, 'getArmor').and.returnValue(deferredArmor.promise);
+    spyOn(ItemProvider, 'getWeapons').and.returnValue(deferredWeapon.promise);
     controller = $controller('QuickController', {
       $scope: $scope,
-      SpellProvider: SpellProvider
+      SpellProvider: SpellProvider,
+      ItemProvider: ItemProvider
     });
   }));
   
@@ -33,6 +39,9 @@ describe('Quick Controller Tests', function() {
   it('factory function should resolve a promise', function() {
     
     deferred.resolve(resolveObject);
+    deferredMagic.resolve({ data: []});
+    deferredArmor.resolve({ data: []});
+    deferredWeapon.resolve({ data: []});
     
     $scope.$apply();
     
@@ -42,6 +51,10 @@ describe('Quick Controller Tests', function() {
   
   it('should have a loadSpell function that populates $scope.currentSpell', function() {
     deferred.resolve(resolveObject);
+    deferredMagic.resolve({ data: []});
+    deferredArmor.resolve({ data: []});
+    deferredWeapon.resolve({ data: []});
+    
     $scope.$apply();
     $scope.loadSpell(0);
     expect($scope.currentSpell).toBeDefined();

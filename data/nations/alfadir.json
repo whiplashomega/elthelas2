@@ -1,7 +1,7 @@
 {
   "name": "Alfadir",  
-  "coords": [-56,-94],
-  "border-coords": [[-59.9, -107.2], [-57.3, -103.6], [-54, -104], [-47.5, -81.7], [-59.6, -85.4], [-59, -97.6]],
+  "coords": [-47.219568112315486, -73.64822387695314],
+  "border-coords": [],
   "color": "#FFFF00",
   "map": "/images/maps/nations/Alfadir.jpg",
   "capitol": "Dieel",

@@ -27,7 +27,7 @@
             animation: true,
             ariaLabelledBy: 'modal-title',
             ariaDescribedBy: 'modal-body',
-            templateUrl: '/app_dev.php/login',
+            templateUrl: '/html/modals/login.html',
             controller: 'LoginController',
             size: size,
             appendTo: parentElem
@@ -52,7 +52,7 @@
             animation: true,
             ariaLabelledBy: 'modal-title',
             ariaDescribedBy: 'modal-body',
-            templateUrl: '/app_dev.php/register/',
+            templateUrl: '/html/modals/register.html',
             controller: 'RegisterController',
             size: size,
             appendTo: parentElem

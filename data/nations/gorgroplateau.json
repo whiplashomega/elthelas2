@@ -1,7 +1,7 @@
 {
   "name": "Gorgro Plateau",
-  "coords": [-70,-100],
-  "border-coords": [[-65.8,-97.8], [-70.9,-106.7], [-71.9, -101.9], [-70.3, -94.9], [-65.2, -92.6]],
+  "coords": [-61.14323525084057, -78.83377075195314],
+  "border-coords": [],
   "color": "#222200",
   "map": "/images/maps/nations/Gorgro.jpg",
   "capitol": "",

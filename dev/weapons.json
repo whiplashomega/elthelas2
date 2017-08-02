@@ -1,0 +1,298 @@
+[
+ {
+   "Name": "Club",
+   "Type": "Simple",
+   "Damage": "1d4 bludgeoning",
+   "Weight": "2 lb",
+   "Properties": "light",
+   "Cost": "0.1"
+ },
+ {
+   "Name": "Dagger",
+   "Type": "Simple",
+   "Damage": "1d4 piercing",
+   "Weight": "1 lb",
+   "Properties": "Finesse, light, thrown (range 20/60)",
+   "Cost": "2"
+ },
+ {
+   "Name": "Greatclub",
+   "Type": "Simple",
+   "Damage": "1d8 bludgeoning",
+   "Weight": "10 lb",
+   "Properties": "Two-handed",
+   "Cost": "0.2"
+ },
+ {
+   "Name": "Handaxe",
+   "Type": "Simple",
+   "Damage": "1d6 slashing",
+   "Weight": "2 lb",
+   "Properties": "light, thrown (range 20/60)",
+   "Cost": "5"
+ },
+ {
+   "Name": "Javelin",
+   "Type": "Simple",
+   "Damage": "1d6 piercing",
+   "Weight": "2 lb",
+   "Properties": "light, thrown (range 30/120)",
+   "Cost": "0.5"
+ },
+ {
+   "Name": "Light Hammer",
+   "Type": "Simple",
+   "Damage": "1d4 bludgeoning",
+   "Weight": "2 lb",
+   "Properties": "light, thrown (range 20/60)",
+   "Cost": "2"
+ },
+ {
+   "Name": "Mace",
+   "Type": "Simple",
+   "Damage": "1d6 bludgeoning",
+   "Weight": "4 lb",
+   "Properties": "-",
+   "Cost": "5 gp"
+ },
+ {
+   "Name": "Quarterstaff",
+   "Type": "Simple",
+   "Damage": "1d6/1d8 bludgeoning",
+   "Weight": "4 lb",
+   "Properties": "versatile",
+   "Cost": "0.2"
+ },
+ {
+   "Name": "Sickle",
+   "Type": "Simple",
+   "Damage": "1d4 slashing",
+   "Weight": "2 lb",
+   "Properties": "light",
+   "Cost": "1"
+ },
+ {
+   "Name": "Spear",
+   "Type": "Simple",
+   "Damage": "1d6/1d8 piercing",
+   "Weight": "3 lb",
+   "Properties": "Thrown (range 20/60), versatile",
+   "Cost": "1"
+ },
+ {
+   "Name": "Crossbow, light",
+   "Type": "Simple",
+   "Damage": "1d8 piercing",
+   "Weight": "5 lb",
+   "Properties": "ranged, Ammunition (range 80/320), loading, two-handed",
+   "Cost": "25"
+ },
+ {
+   "Name": "Dart",
+   "Type": "Simple",
+   "Damage": "1d4 piercing",
+   "Weight": "0.25 lb",
+   "Properties": "ranged, Finesse, thrown (range 20/60)",
+   "Cost": "0.05"
+ },
+ {
+   "Name": "Shortbow",
+   "Type": "Simple",
+   "Damage": "1d6 piercing",
+   "Weight": "2 lb",
+   "Properties": "ranged, Ammunition (range 80/320), two-handed",
+   "Cost": "25"
+ },
+ {
+   "Name": "Sling",
+   "Type": "Simple",
+   "Damage": "1d4 bludgeoning",
+   "Weight": "-",
+   "Properties": "ranged, Ammunition (range 30/120)",
+   "Cost": "0.1"
+ },
+ {
+   "Name": "Battleaxe",
+   "Type": "Martial",
+   "Damage": "1d8/1d10 slashing",
+   "Weight": "4 lb",
+   "Properties": "versatile",
+   "Cost": "10"
+ },
+ {
+   "Name": "Flail",
+   "Type": "Martial",
+   "Damage": "1d8 bludgeoning",
+   "Weight": "2 lb",
+   "Properties": "-",
+   "Cost": "10"
+ },
+ {
+   "Name": "Glaive",
+   "Type": "Martial",
+   "Damage": "1d10 slashing",
+   "Weight": "6 lb",
+   "Properties": "heavy, reach, two-handed",
+   "Cost": "20"
+ },
+ {
+   "Name": "Greataxe",
+   "Type": "Martial",
+   "Damage": "1d12 slashing",
+   "Weight": "7 lb",
+   "Properties": "heavy, two-handed",
+   "Cost": "30"
+ },
+ {
+   "Name": "Greatsword",
+   "Type": "Martial",
+   "Damage": "2d6 slashing",
+   "Weight": "6 lb",
+   "Properties": "heavy, two-handed",
+   "Cost": "50"
+ },
+ {
+   "Name": "Halberd",
+   "Type": "Martial",
+   "Damage": "1d10 slashing",
+   "Weight": "6 lb",
+   "Properties": "heavy, reach, two-handed",
+   "Cost": "20"
+ },
+ {
+   "Name": "Lance",
+   "Type": "Martial",
+   "Damage": "1d12 piercing",
+   "Weight": "6 lb",
+   "Properties": "reach, special",
+   "Cost": "10"
+ },
+ {
+   "Name": "Longsword",
+   "Type": "Martial",
+   "Damage": "1d8/1d10 slashing",
+   "Weight": "3 lb",
+   "Properties": "versatile",
+   "Cost": "15"
+ },
+ {
+   "Name": "Maul",
+   "Type": "Martial",
+   "Damage": "2d6 bludgeoning",
+   "Weight": "10 lb",
+   "Properties": "heavy, two-handed",
+   "Cost": "10"
+ },
+ {
+   "Name": "Morningstar",
+   "Type": "Martial",
+   "Damage": "1d8 bludgeoning",
+   "Weight": "4 lb",
+   "Properties": "-",
+   "Cost": "15"
+ },
+ {
+   "Name": "Pike",
+   "Type": "Martial",
+   "Damage": "1d10 piercing",
+   "Weight": "18 lb",
+   "Properties": "heavy, reach, two-handed",
+   "Cost": "5"
+ },
+ {
+   "Name": "Rapier",
+   "Type": "Martial",
+   "Damage": "1d8 piercing",
+   "Weight": "2 lb",
+   "Properties": "finesse",
+   "Cost": "25"
+ },
+ {
+   "Name": "Scimitar",
+   "Type": "Martial",
+   "Damage": "1d6 slashing",
+   "Weight": "3 lb",
+   "Properties": "finesse, light",
+   "Cost": "25"
+ },
+ {
+   "Name": "Shortsword",
+   "Type": "Martial",
+   "Damage": "1d6 piercing",
+   "Weight": "2 lb",
+   "Properties": "finesse, light",
+   "Cost": "10"
+ },
+ {
+   "Name": "Trident",
+   "Type": "Martial",
+   "Damage": "1d6/1d8 piercing",
+   "Weight": "4 lb",
+   "Properties": "Thrown (range 20/60), versatile",
+   "Cost": "5"
+ },
+ {
+   "Name": "War pick",
+   "Type": "Martial",
+   "Damage": "1d8 piercing",
+   "Weight": "2 lb",
+   "Properties": "-",
+   "Cost": "5 gp"
+ },
+ {
+   "Name": "Warhammer",
+   "Type": "Martial",
+   "Damage": "1d8/1d10 bludgeoning",
+   "Weight": "2 lb",
+   "Properties": "versatile",
+   "Cost": "15"
+ },
+ {
+   "Name": "Whip",
+   "Type": "Martial",
+   "Damage": "1d4 slashing",
+   "Weight": "3 lb",
+   "Properties": "ranged, finesse, reach",
+   "Cost": "2"
+ },
+ {
+   "Name": "Blowgun",
+   "Type": "Martial",
+   "Damage": "1 piercing",
+   "Weight": "1 lb",
+   "Properties": "ranged, Ammunition (range 25/100), loading",
+   "Cost": "10"
+ },
+ {
+   "Name": "Crossbow, hand",
+   "Type": "Martial",
+   "Damage": "1d6 piercing",
+   "Weight": "3 lb",
+   "Properties": "ranged, Ammunition (range 30/120), loading, light",
+   "Cost": "75"
+ },
+ {
+   "Name": "Crossbow, heavy",
+   "Type": "Martial",
+   "Damage": "1d10 piercing",
+   "Weight": "18 lb",
+   "Properties": "ranged, Ammunition (range 100/400), loading, heavy, two-handed",
+   "Cost": "50"
+ },
+ {
+   "Name": "Longbow",
+   "Type": "Martial",
+   "Damage": "1d8 piercing",
+   "Weight": "2 lb",
+   "Properties": "ranged, Ammunition (range 150/600), heavy, two-handed",
+   "Cost": "50"
+ },
+ {
+   "Name": "Net",
+   "Type": "Martial",
+   "Damage": "0",
+   "Weight": "3 lb",
+   "Properties": "ranged, special, thrown (range 5/15)",
+   "Cost": "1"
+ }
+]

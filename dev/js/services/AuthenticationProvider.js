@@ -89,7 +89,7 @@
     function Login(username, password, callback) {
       return $http({
         method: 'POST',
-        url: 'app_dev.php/login_check',
+        url: '/users/login',
         headers: {'Content-Type': 'application/x-www-form-urlencoded'},
         transformRequest: function(obj) {
             var str = [];
@@ -112,7 +112,7 @@
       } else {
         $http({
           method: 'POST',
-          url: 'app_dev.php/register/',
+          url: '/users/register',
           headers: {'Content-Type': 'application/x-www-form-urlencoded'},
           data: "fos_user_registration_form[email]="+encodeURIComponent(email)+
             "&fos_user_registration_form[username]="+encodeURIComponent(username)+

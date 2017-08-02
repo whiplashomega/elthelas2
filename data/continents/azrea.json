@@ -1,0 +1,9 @@
+{
+  "name": "Azrea",
+  "description": "For hundreds of years, the subcontinent south of Elathia was known simply as Nerim, for the empire that dominated it.  However, once Nerim began to establish colonies outside of the subcontinent, a new name was needed to refer to the homeland.  The Emperor decided on Azrea, after Azrael the Angel of Death, first among Nera's servants.",
+  "contains": [
+    "Seran",
+    "Nerim"
+  ],
+  "coords": [-47.801347856653166, 100.51611274480821]
+}

@@ -43,6 +43,8 @@ gulp.task('copylibraries', function() {
    gulp.src('./bower_components/jquery/dist/jquery.js').pipe(gulp.dest("./dev/libraries"));
    gulp.src('./bower_components/leaflet/dist/leaflet.js').pipe(gulp.dest("./dev/libraries"));
    gulp.src('./bower_components/leaflet/dist/leaflet.css').pipe(gulp.dest("./dev/css"));
+   gulp.src('./bower_components/leaflet-measure/dist/leaflet-measure.css').pipe(gulp.dest("./dev/css"));
+   gulp.src('./bower_components/leaflet-measure/dist/leaflet-measure.min.js').pipe(gulp.dest("./dev/libraries"));
    gulp.src('./bower_components/leaflet/dist/images/*').pipe(gulp.dest("./dev/css/images"));
    gulp.src('./bower_components/marked/lib/marked.js').pipe(gulp.dest("./dev/libraries"));
    gulp.src('./bower_components/angular-ui-router/release/angular-ui-router.js').pipe(gulp.dest("./dev/libraries"));
