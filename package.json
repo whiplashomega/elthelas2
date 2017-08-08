@@ -52,7 +52,6 @@
   "devDependencies": {
     "karma": "^1.7.0",
     "karma-es5-shim": "0.0.4",
-    "karma-es6-shim": "^1.0.0",
     "karma-jasmine": "^1.1.0",
     "karma-phantomjs-launcher": "^1.0.4",
     "gulp-jshint": "^2.0.4",

@@ -4,7 +4,6 @@ var app            = express();
 var bodyParser     = require('body-parser');
 var methodOverride = require('method-override');
 var mongoose = require('mongoose');
-var seeder = require('mongoose-seed-plus');
 var User = require('./app/models/user');
 var passport = require('passport');
 var authenticate = require('./app/authenticate');
