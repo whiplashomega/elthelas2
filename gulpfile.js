@@ -245,6 +245,7 @@ gulp.task('prodcleanup', ['copyimages', 'usemin', 'copyjson'], function() {
     del(['tests/**/*']);
     return true;
   } else {
+    console.log(process.env);
     throw Error("attempt to delete development files outside of PROD replication!");
   }
 });
