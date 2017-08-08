@@ -238,10 +238,21 @@ gulp.task('integrationtest', ['unittest'], function() {
 });
 
 //post-compile
-
+gulp.task('prodcleanup', ['copyimages', 'usemin', 'copyjson'], function() {
+  if(process.env.PORT === 80 || process.env.PORT === 443) {
+    del(['dev/**/*']); 
+    del(['data/**/*']); 
+    del(['tests/**/*']);
+    return true;
+  } else {
+    throw Error("attempt to delete development files outside of PROD replication!");
+  }
+});
 
 //task groups
 gulp.task('default', ['integrationtest', 'sass', 'spellsjson', 'historyjson', 'jsoncompile', 'copylibraries'], function() {});
 
 //does not include testing
-gulp.task('prod', ['copyimages', 'usemin', 'copyjson'], function() {});
+gulp.task('prod', ['prodcleanup'], function() {
+  
+});
