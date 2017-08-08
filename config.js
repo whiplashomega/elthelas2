@@ -13,6 +13,7 @@ module.exports = {
             callbackURL: 'https://elthelas2-whiplashomega.c9users.io/users/facebook/callback'
         };
     } else {
+        console.log(process.env.MONGODB_URI);
         module.exports.mongoUrl = process.env.MONGODB_URI;
         module.exports.facebook = {
             clientID: '1706715636300300',
