@@ -1,4 +1,4 @@
-/* globals angular */
+/* globals angular FB*/
 (function(ng) {
   'use strict';
   var Base64 = {
@@ -81,57 +81,62 @@
   angular.module('elthelas').factory('AuthenticationProvider', ['$http', '$cookies', '$rootScope', '$timeout',  
   function($http, $cookies, $rootScope, $timeout) {
     var service = {};
-    service.Login = Login;
-    service.SetCredentials = SetCredentials;
-    service.ClearCredentials = ClearCredentials;
-    service.Register = Register;
     
-    function Login(username, password, callback) {
+    service.Check = function() {
+      FB.getLoginStatus(function(response) {
+          if(response.status === 'connected') {
+            response.authResponse.accessToken;
+            response.authResponse.userID;
+          } else if(false) {
+            
+          }
+      });      
+    }
+    
+    service.FacebookLogin = function() {
+      $http({
+        method: 'POST',
+        url: '/users/facebook',
+      }).then(function(response) {
+        var data = response;
+      });
+    }
+    
+    service.Login = function(username, password, callback) {
       return $http({
         method: 'POST',
         url: '/users/login',
-        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-        transformRequest: function(obj) {
-            var str = [];
-            for(var p in obj) {
-              if(true) {
-                str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
-              }
-            }
-            return str.join("&");
-        },
-        data: { _username: username, _password: password }
+        headers: {'Content-Type': 'application/json'},
+        data: { username: username, password: password }
         }).then(function(response) { 
         callback(response);
       });
     }
     
-    function Register(username, password, passwordconfirm, email, token, callback) {
-      if(password !== passwordconfirm) {
+    service.Register = function(user, callback) {
+      if(user.password !== user.passwordConfirm) {
         return false;
       } else {
         $http({
           method: 'POST',
           url: '/users/register',
-          headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-          data: "fos_user_registration_form[email]="+encodeURIComponent(email)+
-            "&fos_user_registration_form[username]="+encodeURIComponent(username)+
-            "&fos_user_registration_form[plainPassword][first]="+encodeURIComponent(password)+
-            "&fos_user_registration_form[plainPassword][second]="+encodeURIComponent(passwordconfirm)+
-            "&fos_user_registration_form[_token]="+encodeURIComponent(token)
+          data: user
         }).then(function(response) {
             callback(response);
+        }, function(response) {
+          console.log(response);
         });
       }
     }
     
-    function SetCredentials(username, password, rememberMe) {
+    service.SetCredentials = function(username, password, token, rememberMe) {
       var authdata = Base64.encode(username + ':' + password);
       
       $rootScope.globals = {
         currentUser: {
           username: username,
-          password: password
+          password: password,
+          token: token
         }
       };
       
@@ -148,7 +153,7 @@
       $rootScope.globals = $cookies.get('globals');
     };
     
-    function ClearCredentials() {
+    service.ClearCredentials = function() {
       $rootScope.globals = {};
       $cookies.remove('globals');
       $http.defaults.headers.common.Authorization = 'Basic';

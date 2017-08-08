@@ -6,6 +6,8 @@ var methodOverride = require('method-override');
 var mongoose = require('mongoose');
 var seeder = require('mongoose-seed-plus');
 var User = require('./app/models/user');
+var passport = require('passport');
+var authenticate = require('./app/authenticate');
 // configuration ===========================================
 
 // config files
@@ -25,7 +27,7 @@ app.start = function() {
     }
     // connect to our mongoDB database 
     // (uncomment after you enter in your own credentials in config/db.js)
-    //mongoose.connect(db.url); 
+    mongoose.connect(db.url); 
     
     //detect preexisting data and seed the database if not found
     /*User.find({}, function(err, user) {
@@ -64,7 +66,8 @@ app.start = function() {
     
     // override with the X-HTTP-Method-Override header in the request. simulate DELETE/PUT
     app.use(methodOverride('X-HTTP-Method-Override')); 
-    
+
+    app.use(passport.initialize());    
     // set the static files location /public/img will be /img for users
     app.use(express.static(__dirname + staticDir)); 
      

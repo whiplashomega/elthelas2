@@ -59,6 +59,7 @@
           });
           modalInstance.result.then(function (selectedItem) {
             selectedItem();
+            $scope.globals = $rootScope.globals;
             $scope.message = $rootScope.message;
             setTimeout(function() {
               $scope.message = false;

@@ -8,18 +8,18 @@
         var vm = this;
  
         $scope.register = register;
+        $scope.user = {};
  
         function register() {
           vm.dataLoading = true;
           AuthenticationProvider.Register(
-            $("#fos_user_registration_form_username").val(),
-            $("#fos_user_registration_form_plainPassword_first").val(),
-            $("#fos_user_registration_form_plainPassword_second").val(),
-            $("#fos_user_registration_form_email").val(), 
-            $("#fos_user_registration_form__token").val(),
+            $scope.user,
             function(response) {
               $uibModalInstance.close(function() {
-                $rootScope.message = response.data;
+                $rootScope.message = "Registration Successful!";
+                if(response.data.success === true) {
+                  AuthenticationProvider.SetCredentials($scope.user.username, $scope.user.password, response.data.token);
+                }
               });
           });
         }

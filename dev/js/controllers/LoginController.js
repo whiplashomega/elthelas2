@@ -12,13 +12,14 @@
     $scope.rememberMe;
     $scope.login = login;
     
+    
     vm.postLogin = function(response) {
         if(response.status === 200) {
           if(!response.data.success) {
             $(".modal-body .alert").remove();
             $(".modal-body").prepend("<div class='alert alert-danger'>" + response.data.message + "</div>");
           } else {
-            AuthenticationProvider.SetCredentials($scope.username, $scope.password, $scope.rememberMe);
+            AuthenticationProvider.SetCredentials($scope.username, $scope.password, response.token, $scope.rememberMe);
             $uibModalInstance.close('login success');
           }
         } else {
@@ -27,8 +28,8 @@
     };
     function login() {
       vm.dataLoading = true;
-      return AuthenticationProvider.Login($scope.username, $scope.password, vm.postLogin);
-      
+      AuthenticationProvider.Login($scope.username, $scope.password, vm.postLogin);
+      return false;
     }
     $scope.cancel = function () {
       $uibModalInstance.dismiss('cancel');

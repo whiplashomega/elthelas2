@@ -32,10 +32,11 @@
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '1706715636300300',
+      cookie     : true,
       xfbml      : true,
-      version    : 'v2.10'
+      version    : 'v2.8'
     });
-    FB.AppEvents.logPageView();
+    FB.AppEvents.logPageView();   
   };
 
   (function(d, s, id){
@@ -45,7 +46,7 @@
      js.src = "//connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
-</script>        
+</script>
         <div ui-view="header"></div>
         <div class="container-fluid">
             <div ui-view="sidebar"></div>

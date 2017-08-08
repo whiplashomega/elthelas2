@@ -59,14 +59,21 @@
                     </li>
                     <li>
                     </li>
-                    <li>
+                    <!--<li>
                       <a href="">Blog</a>
-                    </li>
-                      <li data-ng-if="globals"><a href="">My Account</a></li>
-                      <li data-ng-if="globals"><a href="">Change Password</a></li>
-                      <li data-ng-if="globals"><a data-ng-click="logout()">Log Out</a></li>
-                      <li data-ng-if="globals === undefined"><a data-ng-click="register()">Sign Up</a></li>
-                      <li data-ng-if="globals === undefined"><a data-ng-click="login('lg')">Sign In</a></li>
+                    </li>-->
+                    <li>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                        User <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li data-ng-if="globals"><a href="">My Account</a></li>
+                        <li data-ng-if="globals"><a href="">Change Password</a></li>
+                        <li data-ng-if="globals === undefined"><a data-ng-click="register()">Register</a></li>                   
+                      </ul>
+                    </li>   
+                    <li data-ng-if="globals === undefined"><a data-ng-click="login('lg')">Login</a></li>  
+                    <li data-ng-if="globals"><a data-ng-click="logout()">Logout</a></li>
                   </ul>
                  <div class="search-container">
                   <script>
