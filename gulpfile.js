@@ -239,10 +239,10 @@ gulp.task('integrationtest', ['unittest'], function() {
 
 //post-compile
 gulp.task('prodcleanup', ['copyimages', 'usemin', 'copyjson'], function() {
-  if(process.env.PORT === 80 || process.env.PORT === 443) {
-    del(['dev/**/*']); 
-    del(['data/**/*']); 
-    del(['tests/**/*']);
+  if(process.env.NPM_CONFIG_PRODUCTION === 'true') {
+    //del(['dev/**/*']); 
+    //del(['data/**/*']); 
+    //del(['tests/**/*']);
     return true;
   } else {
     console.log(process.env);
