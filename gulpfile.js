@@ -241,8 +241,8 @@ gulp.task('integrationtest', ['unittest'], function() {
 gulp.task('prodcleanup', ['copyimages', 'usemin', 'copyjson'], function() {
   if(process.env.NPM_CONFIG_PRODUCTION === 'true') {
     del(['dev/**/*']); 
-    del(['data/**/*']); 
-    del(['tests/**/*']);
+    //del(['data/**/*']); 
+    //del(['tests/**/*']);
     return true;
   } else {
     console.log(process.env);
