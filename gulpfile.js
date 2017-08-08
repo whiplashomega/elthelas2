@@ -1,7 +1,5 @@
 var gulp = require('gulp'),
     minifycss = require('gulp-clean-css'),
-    jshint = require('gulp-jshint'),
-    stylish = require('jshint-stylish'),
     usemin = require('gulp-usemin'),
     imagemin = require('gulp-imagemin'),
     rename = require('gulp-rename'),
@@ -12,14 +10,14 @@ var gulp = require('gulp'),
     del = require('del'),
     ngannotate = require('gulp-ng-annotate'),
     sass = require('gulp-sass'),
-    fs = require('fs'),
-    Server = require('karma').Server,
-    jasmine = require('gulp-jasmine'),
-    reporters = require('jasmine-reporters');
+    fs = require('fs');
 var jsonlint = require("gulp-jsonlint");
 var gutil = require('gulp-util');
 //precompile
 gulp.task('jshint', function() {
+  
+    var jshint = require('gulp-jshint'),
+      stylish = require('jshint-stylish');
     gulp.src('tests/js/**/*.js').pipe(jshint()).pipe(jshint.reporter(stylish));
     return gulp.src('dev/js/**/*.js')
     .pipe(jshint())
@@ -217,6 +215,7 @@ gulp.task('copyjson', ['spellsjson', 'historyjson', 'jsoncompile', 'cleanup'], f
 });
 
 gulp.task('unittest', ['jshint'], function(done) {
+  var Server = require('karma').Server
   new Server({
     configFile: __dirname + "/karma.conf.js",
     singleRun: true
@@ -224,6 +223,9 @@ gulp.task('unittest', ['jshint'], function(done) {
 });
 
 gulp.task('integrationtest', ['unittest'], function() {
+  
+  var jasmine = require('gulp-jasmine');
+  var reporters = require('jasmine-reporters');
   var server = require('./server.conf');
   server.start();
   gulp.src('tests/js/integration/test.spec.js').pipe(jasmine(
@@ -235,17 +237,11 @@ gulp.task('integrationtest', ['unittest'], function() {
     }));
 });
 
-gulp.task('conttest', ['jshint'], function(done) {
-  new Server({
-    configFile: __dirname + '/karma.conf.js'
-  }, done).start();
-});
 //post-compile
+
+
+//task groups
 gulp.task('default', ['integrationtest', 'sass', 'spellsjson', 'historyjson', 'jsoncompile', 'copylibraries'], function() {});
 
+//does not include testing
 gulp.task('prod', ['copyimages', 'usemin', 'copyjson'], function() {});
-
-//continuous integration
-gulp.task('watch', ['sass:watch', 'conttest'], function() {
-    
-});

@@ -3,7 +3,6 @@
 module.exports = {
     'secretKey': '12345-67890-09876-54321',
 }
-
     var port = process.env.PORT || 8080; 
     
     if(port == 8080) { //we are in a local environment, provision config variables accordingly
@@ -14,6 +13,7 @@ module.exports = {
             callbackURL: 'https://elthelas2-whiplashomega.c9users.io/users/facebook/callback'
         };
     } else {
+        console.log(process.env);
         module.exports.mongoUrl = MONGODB_URI;
         module.exports.facebook = {
             clientID: '1706715636300300',
