@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var passport = require('passport');
 var User = require('./models/user');
+var jwt = require('jsonwebtoken');
 var Verify = require('./verify');
 /* GET users listing. */
 router.get('/', Verify.verifyOrdinaryUser, Verify.verifyAdmin, function(req, res, next) {
@@ -40,6 +41,7 @@ router.get('/facebook/callback', function(req, res, next) {
         });
     })(req, res, next);
 });
+
 router.post('/register', function(req, res) {
     User.register(new User({ username : req.body.username }),
         req.body.password, function(err, user) {
@@ -111,4 +113,39 @@ router.get('/logout', function(req, res) {
         status: 'Bye!'
     });
 });
+
+router.route('/:username')
+    .get(Verify.verifyOrdinaryUser, function(req, res) {
+        User.find({ username: req.params.username }, function (err, user) {
+            if (err) throw err;
+            
+            if (req.params.decoded._doc.username === req.params.username) {
+                res.json({
+                    username: user.username,
+                    firstname: user.firstname,
+                    lastname: user.lastname,
+                    admin: user.admin
+                });
+            } 
+        });
+    })
+    .put(Verify.verifyOrdinaryUser, function(req, res) { 
+        User.find({ username: req.params.username }, function (err, user) {
+            if (err) throw err;
+            
+            if (req.params.decoded._doc.username === req.params.username) {
+                User.findOneAndUpdate({ username: req.params.username }, {
+                    firstname: user.firstname,
+                    lastname: user.lastname,
+                    password: user.password
+                }, {
+                    new: true
+                }, function (err, user) {
+                    if (err) throw err;
+                    res.json(user);
+                });
+            } 
+        });
+    });
+    
 module.exports = router;
