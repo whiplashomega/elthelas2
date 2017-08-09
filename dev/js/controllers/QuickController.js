@@ -31,7 +31,7 @@
     $scope.magicItems = [];
     $scope.armor = [];
     
-    function createDataTable(selector, data, columns) {
+    function createDataTable(selector, data, columns, postInit) {
       $(selector + ' tfoot th').each(function() {
         var title = $(this).text();
         $(this).html( '<input type="text" class="form-control" style="min-width: 80px" placeholder="Search '+title+'" />' );
@@ -44,14 +44,17 @@
         columns: columns,
         fixedHeader: {
           footer: true
-        }
+        },
+        initComplete: postInit
       });
       table.columns().every(function () {
         $('input', this.footer()).on('keyup change', function(a, b) {
           var index = this.parentNode.cellIndex;
           table.column(index).search(this.value).draw();
         });
-      }); 
+      });
+      
+      return table;
     }
     
     this.init = function() {
@@ -77,7 +80,7 @@
           ];
           spellTableData.push(thisSpell);
         }
-        createDataTable('#spelltable', spellTableData, [
+        var spelltable = createDataTable('#spelltable', spellTableData, [
               { title: "Title" },
               { title: "Level" },
               { title: "School" },
@@ -85,7 +88,15 @@
               { title: "Duration" },
               { title: "Tags" },
               { title: "View" }
-            ]);
+            ], function() {
+              var callback = function() {
+                $scope.loadSpell(Number($(this).attr('data-spellid')));
+              };
+              for(var x = 0; x < $scope.spells.length; x++) {
+                $(".spell" + x).click(callback);
+              }
+            });
+
         /*$('#spelltable').dataTable({
             paging: false,
             data: spellTableData,
