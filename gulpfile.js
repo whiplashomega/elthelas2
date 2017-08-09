@@ -25,7 +25,7 @@ gulp.task('jshint', function() {
 });
 
 gulp.task('copylibraries', function() {
-   gulp.src('./bower_components/angular/angular.js').pipe(gulp.dest("./dev/libraries"));
+   gulp.src('./bower_components/angular/angular.min.js').pipe(gulp.dest("./dev/libraries"));
    gulp.src('./bower_components/angular-marked/angular-marked.js').pipe(gulp.dest("./dev/libraries"));
    gulp.src('./bower_components/angular-marked/dist/angular-marked.js').pipe(gulp.dest("./dev/libraries"));
    gulp.src('./bower_components/bootstrap/dist/js/bootstrap.js').pipe(gulp.dest("./dev/libraries"));
@@ -239,15 +239,7 @@ gulp.task('integrationtest', ['unittest'], function() {
 
 //post-compile
 gulp.task('prodcleanup', ['copyimages', 'usemin', 'copyjson'], function() {
-  if(process.env.NPM_CONFIG_PRODUCTION === 'true') {
-    //del(['dev/**/*']); 
-    //del(['data/**/*']); 
-    //del(['tests/**/*']);
-    return true;
-  } else {
-    console.log(process.env);
-    throw Error("attempt to delete development files outside of PROD replication!");
-  }
+
 });
 
 //task groups
