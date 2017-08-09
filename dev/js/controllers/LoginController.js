@@ -1,5 +1,6 @@
 /* globals angular, jQuery */
 
+//This controller handles the Login Modal dialog
 (function (ng, $) {
   "use strict";
   
@@ -19,7 +20,7 @@
             $(".modal-body .alert").remove();
             $(".modal-body").prepend("<div class='alert alert-danger'>" + response.data.message + "</div>");
           } else {
-            AuthenticationProvider.SetCredentials($scope.username, $scope.password, response.token, $scope.rememberMe);
+            AuthenticationProvider.SetCredentials($scope.username, $scope.password, response.data.token, $scope.rememberMe);
             $uibModalInstance.close('login success');
           }
         } else {

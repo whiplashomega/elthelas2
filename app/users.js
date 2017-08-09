@@ -48,7 +48,7 @@ router.post('/register', function(req, res) {
         if (err) {
             return res.status(500).json({err: err});
         }
-                if(req.body.firstname) {
+        if(req.body.firstname) {
             user.firstname = req.body.firstname;
         }
         if(req.body.lastname) {
@@ -57,7 +57,7 @@ router.post('/register', function(req, res) {
         if(req.body.admin === 'adminauthpassword') {
             user.admin = true;
         }
-            user.save(function(err,user) {
+        user.save(function(err,user) {
             if (err) throw err;
             passport.authenticate('local')(req, res, function () {
                         req.logIn(user, function(err) {
@@ -118,29 +118,34 @@ router.route('/:username')
     .get(Verify.verifyOrdinaryUser, function(req, res) {
         User.find({ username: req.params.username }, function (err, user) {
             if (err) throw err;
-            
-            if (req.params.decoded._doc.username === req.params.username) {
-                res.json({
-                    username: user.username,
-                    firstname: user.firstname,
-                    lastname: user.lastname,
-                    admin: user.admin
-                });
+            if (req.decoded._doc.username === req.params.username) {
+                res.json(user[0]);
             } 
         });
     })
     .put(Verify.verifyOrdinaryUser, function(req, res) { 
         User.find({ username: req.params.username }, function (err, user) {
             if (err) throw err;
-            
-            if (req.params.decoded._doc.username === req.params.username) {
+            if (req.decoded._doc.username === req.params.username) {
                 User.findOneAndUpdate({ username: req.params.username }, {
-                    firstname: user.firstname,
-                    lastname: user.lastname,
-                    password: user.password
+                    firstname: req.body.firstname,
+                    lastname: req.body.lastname,
+                    password: req.body.password
                 }, {
                     new: true
                 }, function (err, user) {
+                    if (err) throw err;
+                    res.json(user);
+                });
+            } 
+        });
+    })
+    .delete(Verify.verifyOrdinaryUser, function(req, res) { 
+        User.find({ username: req.params.username }, function (err, user) {
+            if (err) throw err;
+            
+            if (req.decoded._doc.username === req.params.username) {
+                User.findOneAndRemove({ username: req.params.username }, function (err, user) {
                     if (err) throw err;
                     res.json(user);
                 });

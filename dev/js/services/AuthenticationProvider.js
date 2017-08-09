@@ -91,7 +91,7 @@
             
           }
       });      
-    }
+    };
     
     service.FacebookLogin = function() {
       $http({
@@ -100,7 +100,7 @@
       }).then(function(response) {
         var data = response;
       });
-    }
+    };
     
     service.Login = function(username, password, callback) {
       return $http({
@@ -111,7 +111,7 @@
         }).then(function(response) { 
         callback(response);
       });
-    }
+    };
     
     service.Register = function(user, callback) {
       if(user.password !== user.passwordConfirm) {
@@ -127,7 +127,7 @@
           console.log(response);
         });
       }
-    }
+    };
     
     service.SetCredentials = function(username, password, token, rememberMe) {
       var authdata = Base64.encode(username + ':' + password);
@@ -147,17 +147,67 @@
       if(rememberMe) {
         $cookies.putObject('globals', $rootScope.globals, { expires: cookieExp });
       }
-    }
+    };
     
     service.LoadFromCookies = function() {
-      $rootScope.globals = $cookies.get('globals');
+      var cookie = $cookies.get('globals');
+      if(cookie) {
+        $rootScope.globals = JSON.parse(cookie);
+      }
     };
     
     service.ClearCredentials = function() {
       $rootScope.globals = {};
       $cookies.remove('globals');
       $http.defaults.headers.common.Authorization = 'Basic';
-    }
+    };
+    
+    service.GetUserDetails = function(callback) {
+      if($rootScope.globals && $rootScope.globals.currentUser)
+      $http({
+        method: 'GET',
+        url: '/users/' + $rootScope.globals.currentUser.username,
+        headers: { 'x-access-token': $rootScope.globals.currentUser.token, 'Content-Type': 'application/json' }
+      }).then(function(response) {
+        callback(response.data);
+      }, function(response) {
+        console.log(response);
+        callback(false);
+      });  
+    };
+    
+    service.UpdateUser = function(username, firstname, lastname, password, passwordConfirm, callback) {
+      if(password === passwordConfirm && $rootScope.globals && $rootScope.globals.currentUser) {
+      $http({
+        method: 'PUT',
+        url: '/users/' + $rootScope.globals.currentUser.username,
+        headers: { 'x-access-token': $rootScope.globals.currentUser.token, 'Content-Type': 'application/json' },
+        data: { username: username, firstname: firstname, lastname: lastname, password: password }
+      }).then(function(response) {
+        callback(response.data);
+      }, function(response) {
+        callback(false);
+      });
+      } else {
+        console.log("password and passwordConfirm do not match");
+        callback(false);
+      }
+    };
+    
+    service.DeleteUser = function(username, password, callback) {
+      if($rootScope.globals && $rootScope.globals.currentUser && $rootScope.globals.currentUser.password === password) {
+        $http({
+          method: 'DELETE',
+          url: '/users/' + username,
+          headers: { 'x-access-token': $rootScope.globals.currentUser.token, 'Content-Type': 'application/json' }
+        }).then(function(response) {
+          callback(response.data);
+        }, function(response) {
+          console.log(response);
+          callback(false);
+        })
+      }
+    };
     
     return service;
   }]);

@@ -77,7 +77,17 @@
           ];
           spellTableData.push(thisSpell);
         }
-        $('#spelltable').dataTable({
+        createDataTable('#spelltable', spellTableData, [
+              { title: "Title" },
+              { title: "Level" },
+              { title: "School" },
+              { title: "Casting Time" },
+              { title: "Duration" },
+              { title: "Tags" },
+              { title: "View" }
+            ]);
+        /*$('#spelltable').dataTable({
+            paging: false,
             data: spellTableData,
             responsive: true,
             columns: [
@@ -97,7 +107,7 @@
                 $(".spell" + x).click(callback);
               }
             }
-          });
+          });*/
         $('.datatable').DataTable();
         
         ItemProvider.getArmor().then(function(response) {

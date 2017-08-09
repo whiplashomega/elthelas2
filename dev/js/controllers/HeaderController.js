@@ -71,6 +71,28 @@
               $scope.globals = $rootScope.globals;
           });
         };
+        
+        $scope.account = function(size) {
+          var parentElem = $("body");
+          var modalInstance = $uibModal.open({
+            animation: true,
+            ariaLabelledBy: 'modal-title',
+            ariaDescribedBy: 'modal-body',
+            templateUrl: '/html/modals/account.html',
+            controller: 'UserController',
+            size: size,
+            appendTo: parentElem
+          });
+          
+          modalInstance.result.then(function (selectedItem) {
+              $scope.globals = $rootScope.globals;
+              $scope.$apply();
+            }, function () {
+              console.log('Modal dismissed at: ' + new Date());
+              $scope.globals = $rootScope.globals;
+              $scope.$apply();
+            });
+        };
     }]);
     
 })(angular, jQuery, document);

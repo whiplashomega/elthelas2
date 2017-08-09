@@ -1,0 +1,25 @@
+<div class="modal-header">
+    <h2>My Account <button class="close" type="button" data-ng-click="cancel()">&times;</button></h2>
+</div>
+<div class="modal-body">
+  <h4>{{user.username}}</h4>
+  <div class="form-group">
+    <label>First Name: <input type="text" data-ng-model="user.firstname" class="form-control" /></label>
+  </div>
+  <div class="form-group">
+    <label>Last Name: <input type="text" data-ng-model="user.lastname" class="form-control" /></label>
+  </div>
+  <div class="form-group">
+    <label>Password: <input type="password" data-ng-model="user.password" class="form-control" /></label>
+    <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
+  </div>
+  <div class="form-group">
+    <label>Password Confirm: <input type="password" data-ng-model="user.passwordConfirm" class="form-control" /></label>
+    <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
+    <span ng-show="form.password.$dirty && user.password !== user.passwordConfirm">Password does not match</span>
+  </div>
+  <div class="btn-group">
+    <input type="button" class="btn btn-primary" value="Update" data-ng-click="updateUser()" ng-disabled="form.$invalid || vm.dataLoading"  />
+    <input type="button" class="btn btn-danger" value="Delete" data-ng-click="deleteUser()" />
+  </div>
+</div>
