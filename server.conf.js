@@ -44,10 +44,10 @@ app.start = function() {
     app.use(passport.initialize());    
     // set the static files location /public/img will be /img for users
     app.use(express.static(__dirname + config.staticDir)); 
-     
+
     // routes ==================================================
     require('./app/routes')(app, config.staticDir); // configure our routes
-    
+
     // start app ===============================================
     // startup our app at http://localhost:8080
     app.listen(config.port);

@@ -22,59 +22,108 @@
         
         var users = require('./users');
         app.use('/users', users);
+
+
         
-        var generalizedRouteProvider = function(app, Model) {
-            var Verify = require('./verify');
-            var express = require('express');
-            
-            var thisRouter = express.router();
-            
-            thisRouter.route('/')
-            .get(function (req, res, next) {
-                Model.find({}, function(err, item) {
-                    if (err) throw err;
-                    res.json(item);
-                });
-            })
-            .post(Verify.verifyOrdinaryUser, Verify.verifyAdmin, function (req, res, next) {
-                Model.create(req.body, function (err, item) {
-                    if (err) throw err;
-                    var id = item._id;
-                    res.json({ success: true, id: id });
-                })
-            })
-            .delete(Verify.verifyOrdinaryUser, Verify.verifyAdmin, function(req, res, next) {
-                Model.remove({}, function(err, resp) {
-                    if (err) throw err;
-                    res.json(resp);
-                });
+        app.get('/sitemap.xml', function(req, res) {
+            var sm = require('sitemap');
+            var sitemap = sm.createSitemap ({
+              hostname: 'https://elthelas.com',
+              cacheTime: 600000,        // 600 sec - cache purge period 
+            urls: [
+                { url: '/',  changefreq: 'monthly', priority: 1 },
+                { url: '/history',  changefreq: 'weekly',  priority: 0.7 },
+                { url: '/geo',  changefreq: 'weekly',  priority: 0.7 },
+                { url: '/options/domains',  changefreq: 'weekly',  priority: 0.7 },
+                { url: '/options/races',  changefreq: 'weekly',  priority: 0.7 },
+                { url: '/options/races/aasimar',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/options/races/bugbears',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/options/races/childofmolton',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/options/races/dragonborn',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/options/races/dwarves',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/options/races/elves',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/options/races/faelin',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/options/races/feyri',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/options/races/genasi',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/options/races/gnomes',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/options/races/goblins',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/options/races/goliaths',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/options/races/halfdwarves',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/options/races/halfelves',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/options/races/halflings',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/options/races/hobgoblins',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/options/races/humans',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/options/races/kobolds',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/options/races/lizardfolk',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/options/races/orcs',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/options/races/sorceronblooded',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/options/races/tieflings',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/options/races/trollkin',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/options/languages',  changefreq: 'weekly',  priority: 0.7 },
+                { url: '/ref/gods',  changefreq: 'weekly',  priority: 0.7 },
+                { url: '/ref/gods/alohim',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/gods/amathera',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/gods/arengesus',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/gods/bahamut',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/gods/cora',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/gods/dorman',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/gods/dorun',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/gods/fanome',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/gods/gaian',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/gods/malik',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/gods/maris',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/gods/matraktha',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/gods/molton',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/gods/nera',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/gods/sara',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/gods/sylvan',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/gods/tiamat',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/gods/tock',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/gods/trimala',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/gods/trolka',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/gods/zhuul',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/orgs',  changefreq: 'weekly',  priority: 0.7 },
+                { url: '/ref/orgs/allianceof6nations',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/orgs/amatherasshield',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/orgs/artificersofmechanus',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/orgs/blackguardsofmatraktha',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/orgs/blacksun',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/orgs/blackwolfirregulars',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/orgs/championsofcora',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/orgs/dormanianimperialguard',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/orgs/dragoncult',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/orgs/guildofheroes',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/orgs/illustriousguildofmerchantsandfineartisans',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/orgs/internationalgrangemastersalliance',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/orgs/keepersofthegrove',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/orgs/lordsoftherisingdawn',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/orgs/makersoflegend',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/orgs/mastersofthedeepsong',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/orgs/morrindbrewersclub',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/orgs/orderofthecleansingfire',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/orgs/shepherdsoftheallmother',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/orgs/silverdragonknights',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/orgs/stormlordsoftrimala',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/orgs/sylvansrangers',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/orgs/trollkinmercenarycorps',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/orgs/voidbringers',  changefreq: 'weekly',  priority: 0.5 },
+                { url: '/ref/calendar',  changefreq: 'weekly',  priority: 0.7 },
+                { url: '/ref/cosmology',  changefreq: 'weekly',  priority: 0.7 },
+                { url: '/ref/astronomy',  changefreq: 'weekly',  priority: 0.7 },
+                { url: '/ref/divines',  changefreq: 'weekly',  priority: 0.7 },
+                { url: '/ref/quick',  changefreq: 'weekly',  priority: 0.7 },
+                { url: '/ref/class',  changefreq: 'weekly',  priority: 0.7 },
+                { url: '/about',  changefreq: 'weekly',  priority: 0.7 },
+            ]        
             });
-            
-            thisRouter.route('/:itemId')
-            .get(function(req, res, next) {
-              Model.findById(req.params.itemId, function (err, item) {
-                  if (err) throw err;
-                  res.json(item);
-              });
-            })
-            .put(Verify.verifyOrdinaryUser, Verify.verifyAdmin, function (req, res, next) {
-                Model.findByIdAndUpdate(req.params.itemId, {
-                    $set: req.body
-                }, {
-                    new: true
-                }, function(err, item) {
-                    if(err) throw err;
-                    res.json(item);
-                });
-            })
-            .delete(Verify.verifyOrdinaryUser, Verify.verifyAdmin, function(req, res, next) {
-                Model.findByIdAndRemove(req.params.itemId, function(err, resp) {
-                    if (err) throw err;
-                    res.json(resp);
-                });
+            sitemap.toXML( function (err, xml) {
+                if (err) {
+                    return res.status(500).end();
+                }
+                res.header('Content-Type', 'application/xml');
+                res.send( xml );
             });
-            return thisRouter;
-        }
+        });  
         
         // route to handle creating goes here (app.post)
         // route to handle delete goes here (app.delete)
