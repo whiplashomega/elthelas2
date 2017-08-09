@@ -20,11 +20,11 @@
             });
         });*/
         
+        //user function routes
         var users = require('./users');
         app.use('/users', users);
-
-
         
+        //generate the sitemap on request
         app.get('/sitemap.xml', function(req, res) {
             var sm = require('sitemap');
             var sitemap = sm.createSitemap ({
@@ -124,9 +124,6 @@
                 res.send( xml );
             });
         });  
-        
-        // route to handle creating goes here (app.post)
-        // route to handle delete goes here (app.delete)
 
         // frontend routes =========================================================
         // route to handle all angular requests
