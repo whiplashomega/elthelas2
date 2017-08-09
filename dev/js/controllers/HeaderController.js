@@ -86,11 +86,9 @@
           
           modalInstance.result.then(function (selectedItem) {
               $scope.globals = $rootScope.globals;
-              $scope.$apply();
             }, function () {
               console.log('Modal dismissed at: ' + new Date());
               $scope.globals = $rootScope.globals;
-              $scope.$apply();
             });
         };
     }]);
