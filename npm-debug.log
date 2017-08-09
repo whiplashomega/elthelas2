@@ -1,0 +1,284 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v4.7.3/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v4.7.3/bin/npm',
+1 verbose cli   'install' ]
+2 info using npm@2.15.11
+3 info using node@v4.7.3
+4 verbose readDependencies loading dependencies from /home/ubuntu/workspace/package.json
+5 verbose install where, deps [ '/home/ubuntu/workspace',
+5 verbose install   [ 'angular-ui-bootstrap',
+5 verbose install     'body-parser',
+5 verbose install     'bower',
+5 verbose install     'bson',
+5 verbose install     'del',
+5 verbose install     'express',
+5 verbose install     'gulp',
+5 verbose install     'gulp-cache',
+5 verbose install     'gulp-changed',
+5 verbose install     'gulp-clean-css',
+5 verbose install     'gulp-concat',
+5 verbose install     'gulp-imagemin',
+5 verbose install     'gulp-jsonlint',
+5 verbose install     'gulp-ng-annotate',
+5 verbose install     'gulp-rename',
+5 verbose install     'gulp-rev',
+5 verbose install     'gulp-sass',
+5 verbose install     'gulp-usemin',
+5 verbose install     'gulp-util',
+5 verbose install     'jsonwebtoken',
+5 verbose install     'method-override',
+5 verbose install     'mongodb',
+5 verbose install     'mongoose',
+5 verbose install     'passport',
+5 verbose install     'passport-facebook',
+5 verbose install     'passport-local',
+5 verbose install     'passport-local-mongoose',
+5 verbose install     'karma',
+5 verbose install     'karma-es5-shim',
+5 verbose install     'karma-jasmine',
+5 verbose install     'karma-phantomjs-launcher',
+5 verbose install     'gulp-jshint',
+5 verbose install     'jshint',
+5 verbose install     'jshint-stylish',
+5 verbose install     'gulp-jasmine',
+5 verbose install     'jasmine',
+5 verbose install     'jasmine-core',
+5 verbose install     'jasmine-reporters',
+5 verbose install     'phantomjs-prebuilt' ] ]
+6 verbose install where, peers [ '/home/ubuntu/workspace', [] ]
+7 verbose installManyTop reading for lifecycle /home/ubuntu/workspace/package.json
+8 info preinstall elthelas@1.0.0
+9 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/angular-ui-bootstrap/package.json
+10 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/body-parser/package.json
+11 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/bower/package.json
+12 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/bson/package.json
+13 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/del/package.json
+14 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/express/package.json
+15 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/gulp/package.json
+16 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/gulp-cache/package.json
+17 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/gulp-changed/package.json
+18 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/gulp-clean-css/package.json
+19 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/gulp-concat/package.json
+20 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/gulp-imagemin/package.json
+21 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/gulp-jasmine/package.json
+22 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/gulp-jshint/package.json
+23 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/gulp-jsonlint/package.json
+24 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/gulp-ng-annotate/package.json
+25 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/gulp-rename/package.json
+26 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/gulp-rev/package.json
+27 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/gulp-sass/package.json
+28 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/gulp-uglify/package.json
+29 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/gulp-usemin/package.json
+30 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/gulp-util/package.json
+31 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/jasmine/package.json
+32 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/jasmine-core/package.json
+33 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/jasmine-reporters/package.json
+34 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/jshint/package.json
+35 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/jshint-stylish/package.json
+36 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/jsonwebtoken/package.json
+37 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/karma/package.json
+38 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/karma-es5-shim/package.json
+39 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/karma-jasmine/package.json
+40 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/karma-phantomjs-launcher/package.json
+41 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/method-override/package.json
+42 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/mongodb/package.json
+43 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/mongoose/package.json
+44 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/passport/package.json
+45 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/passport-facebook/package.json
+46 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/passport-local/package.json
+47 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/passport-local-mongoose/package.json
+48 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/phantomjs-prebuilt/package.json
+49 info package.json gulp-jsonlint@1.2.0 No license field.
+50 info package.json karma-es5-shim@0.0.4 No license field.
+51 info package.json passport@0.3.2 No README data
+52 info package.json gulp-rename@1.2.2 No license field.
+53 info package.json jasmine-reporters@2.2.1 No license field.
+54 info package.json passport-local@1.0.0 No license field.
+55 verbose readDependencies loading dependencies from /home/ubuntu/workspace/package.json
+56 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/angular-ui-bootstrap/package.json
+57 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/body-parser/package.json
+58 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/bower/package.json
+59 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/bson/package.json
+60 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/del/package.json
+61 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/express/package.json
+62 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/gulp/package.json
+63 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/gulp-cache/package.json
+64 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/gulp-changed/package.json
+65 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/gulp-clean-css/package.json
+66 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/gulp-concat/package.json
+67 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/gulp-imagemin/package.json
+68 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/gulp-jasmine/package.json
+69 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/gulp-jshint/package.json
+70 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/gulp-jsonlint/package.json
+71 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/gulp-ng-annotate/package.json
+72 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/gulp-rename/package.json
+73 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/gulp-rev/package.json
+74 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/gulp-sass/package.json
+75 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/gulp-uglify/package.json
+76 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/gulp-usemin/package.json
+77 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/gulp-util/package.json
+78 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/jasmine/package.json
+79 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/jasmine-core/package.json
+80 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/jasmine-reporters/package.json
+81 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/jshint/package.json
+82 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/jshint-stylish/package.json
+83 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/jsonwebtoken/package.json
+84 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/karma/package.json
+85 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/karma-es5-shim/package.json
+86 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/karma-jasmine/package.json
+87 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/karma-phantomjs-launcher/package.json
+88 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/method-override/package.json
+89 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/mongodb/package.json
+90 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/mongoose/package.json
+91 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/passport/package.json
+92 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/passport-facebook/package.json
+93 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/passport-local/package.json
+94 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/passport-local-mongoose/package.json
+95 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/phantomjs-prebuilt/package.json
+96 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/.bin/bower/package.json
+97 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/.bin/gulp/package.json
+98 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/.bin/jasmine/package.json
+99 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/.bin/jshint/package.json
+100 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/.bin/karma/package.json
+101 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/.bin/phantomjs/package.json
+102 verbose already installed skipping angular-ui-bootstrap@^2.5.0 /home/ubuntu/workspace
+103 verbose already installed skipping body-parser@^1.4.2 /home/ubuntu/workspace
+104 verbose already installed skipping bower@^1.8.0 /home/ubuntu/workspace
+105 verbose already installed skipping bson@^1.0.4 /home/ubuntu/workspace
+106 verbose already installed skipping del@^2.2.2 /home/ubuntu/workspace
+107 verbose already installed skipping express@^4.5.1 /home/ubuntu/workspace
+108 verbose already installed skipping gulp@^3.9.1 /home/ubuntu/workspace
+109 verbose already installed skipping gulp-cache@^0.4.6 /home/ubuntu/workspace
+110 verbose already installed skipping gulp-changed@^2.0.0 /home/ubuntu/workspace
+111 verbose already installed skipping gulp-clean-css@^3.3 /home/ubuntu/workspace
+112 verbose already installed skipping gulp-concat@^2.6.1 /home/ubuntu/workspace
+113 verbose already installed skipping gulp-imagemin@^3.1.1 /home/ubuntu/workspace
+114 verbose already installed skipping gulp-jsonlint@^1.2.0 /home/ubuntu/workspace
+115 verbose already installed skipping gulp-ng-annotate@^2.0.0 /home/ubuntu/workspace
+116 verbose already installed skipping gulp-rename@^1.2.2 /home/ubuntu/workspace
+117 verbose already installed skipping gulp-rev@^7.1.2 /home/ubuntu/workspace
+118 verbose already installed skipping gulp-sass@^3.1.0 /home/ubuntu/workspace
+119 verbose already installed skipping gulp-usemin@^0.3.28 /home/ubuntu/workspace
+120 verbose already installed skipping gulp-util@^3.0.8 /home/ubuntu/workspace
+121 verbose already installed skipping jsonwebtoken@^7.4.2 /home/ubuntu/workspace
+122 verbose already installed skipping method-override@^2.0.2 /home/ubuntu/workspace
+123 verbose already installed skipping mongodb@^2.1.0 /home/ubuntu/workspace
+124 verbose already installed skipping mongoose@^4.7.3 /home/ubuntu/workspace
+125 verbose already installed skipping passport@^0.3.2 /home/ubuntu/workspace
+126 verbose already installed skipping passport-facebook@^2.1.1 /home/ubuntu/workspace
+127 verbose already installed skipping passport-local@^1.0.0 /home/ubuntu/workspace
+128 verbose already installed skipping passport-local-mongoose@4.1.0 /home/ubuntu/workspace
+129 verbose already installed skipping karma@^1.7.0 /home/ubuntu/workspace
+130 verbose already installed skipping karma-es5-shim@0.0.4 /home/ubuntu/workspace
+131 verbose already installed skipping karma-jasmine@^1.1.0 /home/ubuntu/workspace
+132 verbose already installed skipping karma-phantomjs-launcher@^1.0.4 /home/ubuntu/workspace
+133 verbose already installed skipping gulp-jshint@^2.0.4 /home/ubuntu/workspace
+134 verbose already installed skipping jshint@^2.9.4 /home/ubuntu/workspace
+135 verbose already installed skipping jshint-stylish@^2.2.1 /home/ubuntu/workspace
+136 verbose already installed skipping gulp-jasmine@^2.4.2 /home/ubuntu/workspace
+137 verbose already installed skipping jasmine@^2.6.0 /home/ubuntu/workspace
+138 verbose already installed skipping jasmine-core@^2.6.0 /home/ubuntu/workspace
+139 verbose already installed skipping jasmine-reporters@^2.2.1 /home/ubuntu/workspace
+140 verbose already installed skipping phantomjs-prebuilt@^2.1.14 /home/ubuntu/workspace
+141 silly install resolved []
+142 info build /home/ubuntu/workspace
+143 info linkStuff elthelas@1.0.0
+144 silly linkStuff elthelas@1.0.0 has /home/ubuntu as its parent node_modules
+145 verbose linkBins elthelas@1.0.0
+146 verbose linkMans elthelas@1.0.0
+147 verbose rebuildBundles elthelas@1.0.0
+148 verbose rebuildBundles [ '.bin',
+148 verbose rebuildBundles   'angular-ui-bootstrap',
+148 verbose rebuildBundles   'body-parser',
+148 verbose rebuildBundles   'bower',
+148 verbose rebuildBundles   'bson',
+148 verbose rebuildBundles   'del',
+148 verbose rebuildBundles   'express',
+148 verbose rebuildBundles   'gulp',
+148 verbose rebuildBundles   'gulp-cache',
+148 verbose rebuildBundles   'gulp-changed',
+148 verbose rebuildBundles   'gulp-clean-css',
+148 verbose rebuildBundles   'gulp-concat',
+148 verbose rebuildBundles   'gulp-imagemin',
+148 verbose rebuildBundles   'gulp-jasmine',
+148 verbose rebuildBundles   'gulp-jshint',
+148 verbose rebuildBundles   'gulp-jsonlint',
+148 verbose rebuildBundles   'gulp-ng-annotate',
+148 verbose rebuildBundles   'gulp-rename',
+148 verbose rebuildBundles   'gulp-rev',
+148 verbose rebuildBundles   'gulp-sass',
+148 verbose rebuildBundles   'gulp-uglify',
+148 verbose rebuildBundles   'gulp-usemin',
+148 verbose rebuildBundles   'gulp-util',
+148 verbose rebuildBundles   'jasmine',
+148 verbose rebuildBundles   'jasmine-core',
+148 verbose rebuildBundles   'jasmine-reporters',
+148 verbose rebuildBundles   'jshint',
+148 verbose rebuildBundles   'jshint-stylish',
+148 verbose rebuildBundles   'jsonwebtoken',
+148 verbose rebuildBundles   'karma',
+148 verbose rebuildBundles   'karma-es5-shim',
+148 verbose rebuildBundles   'karma-jasmine',
+148 verbose rebuildBundles   'karma-phantomjs-launcher',
+148 verbose rebuildBundles   'method-override',
+148 verbose rebuildBundles   'mongodb',
+148 verbose rebuildBundles   'mongoose',
+148 verbose rebuildBundles   'passport',
+148 verbose rebuildBundles   'passport-facebook',
+148 verbose rebuildBundles   'passport-local',
+148 verbose rebuildBundles   'passport-local-mongoose',
+148 verbose rebuildBundles   'phantomjs-prebuilt' ]
+149 verbose rebuild bundle /home/ubuntu/workspace/node_modules/gulp-uglify
+150 info build /home/ubuntu/workspace/node_modules/gulp-uglify
+151 info preinstall gulp-uglify@2.1.2
+152 info linkStuff gulp-uglify@2.1.2
+153 silly linkStuff gulp-uglify@2.1.2 has /home/ubuntu/workspace/node_modules as its parent node_modules
+154 verbose linkBins gulp-uglify@2.1.2
+155 verbose linkMans gulp-uglify@2.1.2
+156 verbose rebuildBundles gulp-uglify@2.1.2
+157 verbose rebuildBundles [ '.bin',
+157 verbose rebuildBundles   'gulplog',
+157 verbose rebuildBundles   'has-gulplog',
+157 verbose rebuildBundles   'lodash',
+157 verbose rebuildBundles   'make-error-cause',
+157 verbose rebuildBundles   'through2',
+157 verbose rebuildBundles   'uglify-js',
+157 verbose rebuildBundles   'uglify-save-license',
+157 verbose rebuildBundles   'vinyl-sourcemaps-apply' ]
+158 info install gulp-uglify@2.1.2
+159 info postinstall gulp-uglify@2.1.2
+160 info install elthelas@1.0.0
+161 info postinstall elthelas@1.0.0
+162 verbose unsafe-perm in lifecycle true
+163 info elthelas@1.0.0 Failed to exec postinstall script
+164 verbose stack Error: elthelas@1.0.0 postinstall: `./node_modules/bower/bin/bower install && node ./node_modules/gulp/bin/gulp prod`
+164 verbose stack Exit status 1
+164 verbose stack     at EventEmitter.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.7.3/lib/node_modules/npm/lib/utils/lifecycle.js:217:16)
+164 verbose stack     at emitTwo (events.js:87:13)
+164 verbose stack     at EventEmitter.emit (events.js:172:7)
+164 verbose stack     at ChildProcess.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.7.3/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+164 verbose stack     at emitTwo (events.js:87:13)
+164 verbose stack     at ChildProcess.emit (events.js:172:7)
+164 verbose stack     at maybeClose (internal/child_process.js:854:16)
+164 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:222:5)
+165 verbose pkgid elthelas@1.0.0
+166 verbose cwd /home/ubuntu/workspace
+167 error Linux 4.9.17-c9
+168 error argv "/home/ubuntu/.nvm/versions/node/v4.7.3/bin/node" "/home/ubuntu/.nvm/versions/node/v4.7.3/bin/npm" "install"
+169 error node v4.7.3
+170 error npm  v2.15.11
+171 error code ELIFECYCLE
+172 error elthelas@1.0.0 postinstall: `./node_modules/bower/bin/bower install && node ./node_modules/gulp/bin/gulp prod`
+172 error Exit status 1
+173 error Failed at the elthelas@1.0.0 postinstall script './node_modules/bower/bin/bower install && node ./node_modules/gulp/bin/gulp prod'.
+173 error This is most likely a problem with the elthelas package,
+173 error not with npm itself.
+173 error Tell the author that this fails on your system:
+173 error     ./node_modules/bower/bin/bower install && node ./node_modules/gulp/bin/gulp prod
+173 error You can get information on how to open an issue for this project with:
+173 error     npm bugs elthelas
+173 error Or if that isn't available, you can get their info via:
+173 error
+173 error     npm owner ls elthelas
+173 error There is likely additional logging output above.
+174 verbose exit [ 1, true ]

@@ -26,14 +26,15 @@ app.start = function() {
     }
     // connect to our mongoDB database 
     // (uncomment after you enter in your own credentials in config/db.js)
-    mongoose.connect("mongodb://" + config.mongoUrl, function(err, res) {
+    mongoose.connect(config.mongoUrl + "?authMechanism=SCRAM-SHA-1", function(err, res) {
         if(err) {
             console.log('ERROR connecting to: ' + config.mongoUrl + '. ' + err);
         } else {
             console.log('Succeeded connecting to: ' + config.mongoUrl);
         }
     }); 
-    
+    //mongodb://heroku_vlxs8g6w:6rhh7hq5bbooe3h36vbc11mgqp@ds127063.mlab.com:27063/heroku_vlxs8g6w
+    //mongodb://heroku_vlxs8g6w:6rhh7hq5bbooe3h36vbc11mgqp@ds127063.mlab.com:27063/heroku_vlxs8g6w
     //detect preexisting data and seed the database if not found
     /*User.find({}, function(err, user) {
         if(err) throw err;
