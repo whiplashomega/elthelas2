@@ -1,17 +1,18 @@
-/* globals MONGODB_URI */
+/* globals MONGODB_URI, process, module */
 
 module.exports = {
     'secretKey': '12345-67890-09876-54321',
 }
-    var port = process.env.PORT || 8080; 
+    module.exports.port = process.env.PORT || 8080; 
     
-    if(port == 8080) { //we are in a local environment, provision config variables accordingly
+    if(module.exports.port == 8080) { //we are in a local environment, provision config variables accordingly
         module.exports.mongoUrl = 'mongodb://0.0.0.0:27017/elthelas';
         module.exports.facebook = {
             clientID: '1915523602044424',
             clientSecret: 'c5bd3fd394b3e67c7624da4aac935e06',
             callbackURL: 'https://elthelas2-whiplashomega.c9users.io/users/facebook/callback'
         };
+        module.exports.staticDir = '/dev';
     } else {
         console.log(process.env.MONGODB_URI);
         module.exports.mongoUrl = process.env.MONGODB_URI;
@@ -20,4 +21,5 @@ module.exports = {
             clientSecret: '409369a75ffe5ece6c1dbfa040ed8c6e',
             callbackURL: 'https://elthelas.com/users/facebook/callback'
         };
+        module.exports.staticDir = '/web';
     }

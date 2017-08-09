@@ -16,14 +16,8 @@ var config = require('./config');
 var path = require('path');
 global.appRoot = path.resolve(__dirname);
 
-app.start = function() {
-    var port = process.env.PORT || 8080; 
+app.start = function() { 
     
-    if(port == 8080) {
-        var staticDir = '/dev';
-    } else {
-        var staticDir = '/web';
-    }
     // connect to our mongoDB database 
     // (uncomment after you enter in your own credentials in config/db.js)
     mongoose.connect(config.mongoUrl + "?authMechanism=SCRAM-SHA-1", function(err, res) {
@@ -33,32 +27,6 @@ app.start = function() {
             console.log('Succeeded connecting to: ' + config.mongoUrl);
         }
     }); 
-    //mongodb://heroku_vlxs8g6w:6rhh7hq5bbooe3h36vbc11mgqp@ds127063.mlab.com:27063/heroku_vlxs8g6w
-    //mongodb://heroku_vlxs8g6w:6rhh7hq5bbooe3h36vbc11mgqp@ds127063.mlab.com:27063/heroku_vlxs8g6w
-    //detect preexisting data and seed the database if not found
-    /*User.find({}, function(err, user) {
-        if(err) throw err;
-        if(user.length > 0) {
-           //we are good
-           return;
-        } else {
-           //seed the database
-            seeder.start(__dirname + './json', [
-                /**
-                 * @path (string, required) : path to model
-                 * @name (string, required) : name of model
-                 * @clear (boolean, required) : clear DB collection flag
-                 */
-                 /*{ path: 'app/models/divines.js', name: 'Divine', clear: true },
-                 { path: 'app/models/gods.js', name: 'God', clear: true },
-                 { path: 'app/models/history.js', name: 'History', clear: true },
-                 { path: 'app/models/organizations.js', name: 'Organization', clear: true },
-                 { path: 'app/models/races.js', name: 'Race', clear: true },
-                 { path: 'app/models/spells.js', name: 'Race', clear: true },
-                 { path: 'app/models/user.js', name: 'User', clear: true }
-            ]);
-       }
-    });*/
     
     // get all data/stuff of the body (POST) parameters
     // parse application/json 
@@ -75,16 +43,16 @@ app.start = function() {
 
     app.use(passport.initialize());    
     // set the static files location /public/img will be /img for users
-    app.use(express.static(__dirname + staticDir)); 
+    app.use(express.static(__dirname + config.staticDir)); 
      
     // routes ==================================================
-    require('./app/routes')(app, staticDir); // configure our routes
+    require('./app/routes')(app, config.staticDir); // configure our routes
     
     // start app ===============================================
     // startup our app at http://localhost:8080
-    app.listen(port);
+    app.listen(config.port);
     // shoutout to the user                     
-    console.log('Magic happens on port ' + port);    
+    console.log('Magic happens on port ' + config.port);    
 }
 
 app.stop = function() {
