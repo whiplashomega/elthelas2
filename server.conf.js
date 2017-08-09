@@ -10,7 +10,7 @@ var authenticate = require('./app/authenticate');
 // configuration ===========================================
 
 // config files
-var db = require('./config/db');
+var config = require('./config');
 
 // set our port
 var path = require('path');
@@ -26,7 +26,13 @@ app.start = function() {
     }
     // connect to our mongoDB database 
     // (uncomment after you enter in your own credentials in config/db.js)
-    mongoose.connect(db.url); 
+    mongoose.connect(config.mongoUrl, function(err, res) {
+        if(err) {
+            console.log('ERROR connecting to: ' + config.mongoUrl + '. ' + err);
+        } else {
+            console.log('Succeeded connecting to: ' + config.mongoUrl);
+        }
+    }); 
     
     //detect preexisting data and seed the database if not found
     /*User.find({}, function(err, user) {
