@@ -72,7 +72,7 @@ describe('Login Controller Tests', function() {
     expect(loginResponse.data.message).not.toBeDefined();
     controller.postLogin(loginResponse);
     
-    expect(service.SetCredentials).toHaveBeenCalledWith('test', 'test', false);
+    expect(service.SetCredentials).toHaveBeenCalledWith('test', 'test', undefined, false);
     expect($uibModalInstance.close).toHaveBeenCalledWith('login success');
   });
   

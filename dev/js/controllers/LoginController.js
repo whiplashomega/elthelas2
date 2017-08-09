@@ -28,8 +28,7 @@
     };
     function login() {
       vm.dataLoading = true;
-      AuthenticationProvider.Login($scope.username, $scope.password, vm.postLogin);
-      return false;
+      return AuthenticationProvider.Login($scope.username, $scope.password, vm.postLogin);
     }
     $scope.cancel = function () {
       $uibModalInstance.dismiss('cancel');
