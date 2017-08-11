@@ -1,8 +1,8 @@
       {
-        "-id": "sara",
+        "id": "sara",
         "name": "Sara",
         "holysymbol": "a cornucopia",
-        "alignment": "neutral good",
+        "alignment": "Neutral Good",
         "domains": "balance, community, earth, good, halfling, plant, renewal",
         "domains5": "Life, Nature",
         "interfaithblessing": "+1 on attack rolls and skill checks",

@@ -1,0 +1,13 @@
+{
+  "name": "Spy",
+  "description": "Although your capabilities are not much different from those o f a burglar or smuggler, you learned and practiced them in a very different context: as an espionage agent. You might have been an officially sanctioned agent o f the crown, or perhaps you sold the secrets you uncovered to the highest bidder.",
+  "skills": ["Deception", "Stealth"],
+  "tools": ["One type of gaming set", "thieves' tools"],
+  "languages": 0,
+  "equipment": "A crowbar, a set of dark common clothes including a hood, and a belt pouch containing 15 gp",
+  "feature": {
+    "name": "Criminal Contact",
+    "description": "You have a reliable and trustworthy contact who acts as your liaison to a network o f other criminals. You know how to get messages to and from your contact, even over great distances; specifically, you know the local messengers, corrupt caravan masters, and seedy sailors who can deliver m essages for you."
+  },
+  "characteristics": "Criminals might seem like villains on the surface, and many o f them are v illainous to the core. But some have an abundance o f endearing, if not redeeming, characteristics. There might be honor among thieves, but criminals rarely show any respect for law or authority."
+}

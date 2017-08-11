@@ -401,6 +401,20 @@
             return 'book1';
           }
         }
+      }).state('app.backgrounds', {
+        url: 'options/backgrounds',
+        views: {
+          'content@': {
+            templateUrl: '/html/content/options/backgrounds.html',
+            controller: 'BackgroundController'
+          },
+          'head@': {
+            templateUrl: '/html/head/options/backgrounds.html'
+          },
+          'sidebar@': {
+            templateUrl: '/html/sidebar/options.html'
+          }
+        }
       });
        $locationProvider.html5Mode(true);
     }]);
