@@ -414,7 +414,10 @@
           'sidebar@': {
             templateUrl: '/html/sidebar/options.html'
           }
-        }
+        },
+        data: {
+          title: 'Backgrounds'
+        },
       });
        $locationProvider.html5Mode(true);
     }]);

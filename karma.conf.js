@@ -15,7 +15,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'dev/libraries/angular.js',
+      'dev/libraries/angular.min.js',
       'dev/libraries/jquery.js',
       'dev/libraries/marked.js',
       'dev/libraries/angular-cookies.min.js',

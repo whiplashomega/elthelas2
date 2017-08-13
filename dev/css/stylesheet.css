@@ -32,6 +32,17 @@ footer {
   max-width: 100px;
   max-height: 100px; }
 
+.card {
+  border: 1px solid #c3e6e6;
+  background-color: #c3e6e6;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 8px; }
+  .card h3 {
+    margin-top: 10px; }
+    .card h3 .btn {
+      padding: 2px 12px; }
+
 .sidenav .nav li a {
   background-color: #6784C6;
   color: #ffffff; }

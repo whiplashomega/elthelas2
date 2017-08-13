@@ -1,8 +1,17 @@
 # The Crystal of Light - Epic of Elthelas Book 1
 
+* [The Standard Heroes](#standard)
+* [Chapter 1 - Recruits](#chapter1)
+* [Chapter 2 - Escape](#chapter2)
+* [Chapter 3 - Parakas](#chapter3)
+* [Chapter 4 - Pursuit](#chapter4)
+* [Chapter 5 - Dwarves and Demons](#chapter5)
+* [Chapter 6 - Gaian](#chapter6)
+* [Chapter 7 - Amathera and ME](#chapter7)
+
 The Crystal of Light is the first of a series of campaigns in historical order, set more or less 1 right after the other with different groups of heroes.  The Crystal of Light details how everything went wrong, and the lives of the heroes caught up in it.  Later books refer to several of the 'standard' heroes listed here.  If you play through several campaigns with the same group you can replace the standard heroes with the heroes of your players in the later campaigns to provide a check-in as to the continuation of the world, and the fate of their players.  Any of the standard heroes that don't have a decent analog among the players can be presented as friendly NPCs who aid the players through the campaign.
 
-## The Standard Heroes
+<h2 id="standard">The Standard Heroes</h2>
 
 ### Galen
 **Race:** Half-Elf  
@@ -123,7 +132,7 @@ The Crystal of Light is the first of a series of campaigns in historical order, 
   </tr>
 </table>
 
-## Chapter 1 - Recruits
+<h2 id="chapter1">Chapter 1 - Recruits</h2>
 
 The party starts off as new recruits to the Black Wolf Irregulars, a paramilitary organization that handles the jobs regular soldiers just aren't cut out for on behalf of the Alliance of 6 Nations.  They have been assigned to the 2nd Regiment, 32nd Squad, which recently lost all but one member in an orc ambush, Sergeant "Mad Dog" Coras.  In addition to the party, a group of disparate recruits have been assigned to the squad.  Soren Aldorian, Fred "Pickles" Hairyfoot, Imse Soras, Jimmy T. Kirkwood, and Terridian "Syphilis" Stoneblade (game statistics below).
 
@@ -315,14 +324,21 @@ The party starts off as new recruits to the Black Wolf Irregulars, a paramilitar
 
 #### Proficiencies
 **Saving Throws:** Wisdom, Charisma  
-**Skills:** 
+**Skills:** Religion, Insight, Perception, Medicine  
 
-**Hit Points:** 
-**AC:** 
+**Hit Points:** 8 (1d8+3)  
+**AC:** 18 (chain mail, shield)  
+
+**Earth Domain:** Turgit Underhill is a cleric of Dorun, and is a follower of the Earth Domain.
 
 #### Actions
+**Spells:** Turgit has 2 first level spell slots, and he normally keeps the following 6 spells prepared: **Cure Wounds, Earth Tremor, Absorb Elements, Bless, Sanctuary,** and **Shield of Faith**.  He also knows the following cantrips which he can cast at will: **Guidance, Spare the Dying, Mold Earth, Magic Stone,** and **Mending**.
 
-**Description:** 
+**Warhammer:** +5 (1d8+3 bludgeoning)
+
+**Handaxe:** +5 (1d6+3 slashing), thrown (range 20/60) (has 2)
+
+**Description:** Turgit was reassigned to the 32nd squad to serve as a healer.  He has served at the Fortress of Light (in a different squad) for about 6 months, but hasn't yet seen any active combat.  His primary goal is to make sure the members of his squad make it back alive.  He has heard rumors that Sergeant Coras is not as brave as his reputation claims, and is determined to keep a close watch on his new Sergeant.  He is a gruff and generally silent dwarf.  When he does speak he is often unnecessarily harsh, though he doesn't mean to be.
 
 <table>
   <tr>
@@ -333,7 +349,23 @@ The party starts off as new recruits to the Black Wolf Irregulars, a paramilitar
   </tr>
 </table>
 
-## Chapter 2 - Escape
+#### Training
+The squad's first few days are spent in training.  Training events can include: marching in formation, one on one weapons training, foreign language classes, or skill training.  The first day the players will be introduced to all of the options, after which Sergeant Coras will encourage them to pick one thing to focus on while they wait for orders. Depending on their choice, they should make a check (detailed below) and if successful they will gain particular benefits.
+
+**Weapons Training:** A successful DC 13 strength or dexterity check (for finesse, light, or ranged weapons) will grant a +1 bonus to damage rolls with weapons of the chosen type.
+
+**Skill Training:** The check type depends on the skill being trained.  Dexterity skills require a Dexterity check, intelligence skills an intelligence check and so on.  The DC is always 13.  If the check is successful, the player gains +1 to ability checks with the chosen skill.
+
+**Language Training:** A successful DC 13 intelligence check allows the player gains the ability to understand the basics of a new language of their choice.  They will instantly be recognized as a foreign speaker by natives, but will be able to interpret basic written text and speech from that language and communicate basic ideas to others.  Additional training later can improve the players abilities in the language further.
+
+**Formation Drills:** A successful DC 13 constitution check will allow the player to occassionally perform a burst of speed.  The player can use a bonus action to move half their speed on their turn.  Once they use this ability they cannot do so again until they finish a short rest.
+
+#### Sparring Tournament
+On the last day there is a sparring tournament.  Players are given non-lethal melee weapons of their choice that do one less damage than normal, they cannot use any spell that would do damage to their opponent, or deal any lethal damage to the opponent.  It is a single elimination random bracket tournament between the players and the various NPC members of the squad (except Sergeant Coras).  The winner gets to pick either a level 1 spell scroll, a new weapon, studded leather armor, a breastplate, or splint mail.
+
+#### The First Mission - Wolves and Cows
+
+<h2 id="chapter2">Chapter 2 - Escape</h2>
 
 ### Najak
 
@@ -351,16 +383,14 @@ The party starts off as new recruits to the Black Wolf Irregulars, a paramilitar
   </tr>
 </table>
 
-## Chapter 3 - Parakas
+<h2 id="chapter3">Chapter 3 - Parakas</h2>
 
-## Chapter 4 - Pursuit
+<h2 id="chapter4">Chapter 4 - Pursuit</h2>
 
-## Chapter 5 - Dwarves and Demons
+<h2 id="chapter5">Chapter 5 - Dwarves and Demons</h2>
 
-## Chapter 6 - Gaian
-
+<h2 id="chapter6">Chapter 6 - Gaian</h2>
 ### Jim Jimmy Jim Jim Jim
 
-## Chapter 7 - Amathera and ME
-
+<h2 id="chapter7">Chapter 7 - Amathera and ME</h2>
 ### Avdotya

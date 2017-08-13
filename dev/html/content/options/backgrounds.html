@@ -1,0 +1,26 @@
+<div class="col-sm-10">
+  <h1>Backgrounds</h1>
+  <p>
+    The following backgrounds are suggested possibilities for players.  Work with your DM to determine the background for your character.
+  </p>
+  <div data-ng-repeat="background in backgrounds" class="card">
+    <h3 class="card-title">{{background.name}}<button type="button" class="btn btn-default pull-right" ng-click="background.isCollapsed = !background.isCollapsed">
+      <span data-ng-if="!background.isCollapsed">&#x25B2;</span><span data-ng-if="background.isCollapsed">&#x25BC;</span>
+    </button></h3>
+    <div uib-collapse="background.isCollapsed">
+      <div marked="background.description"></div>
+      <p>
+        <strong>Skills: </strong><span data-ng-repeat="skill in background.skills">{{skill}}, </span><br />
+        <strong>Tools: </strong><span data-ng-repeat="tool in background.tools">{{tool}}, </span><span data-ng-if="background.tools.length === 0">None</span><br />
+        <span data-ng-if="background.languages"><strong>Languages: </strong>{{background.languages}} of your choice</span>
+      </p>
+      <p>
+        <strong>Equipment: </strong><span marked="background.equipment"></span>
+      </p>
+      <h4>Feature: {{background.feature.name}}</h4>
+      <div marked="background.feature.description"></div>
+      <h4>Suggested Characteristics</h4>
+      <div marked="background.characteristics"></div>
+    </div>
+  </div>
+</div>

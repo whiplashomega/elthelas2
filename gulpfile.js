@@ -147,7 +147,7 @@ gulp.task('spellsjson', function() {
     spell.range = filearray[12].replace(/\*\*Range\*\*\:[ \t]+/g, "");
     spell.components = filearray[14].replace(/\*\*Components\*\*\:[ \t]+/g, "");
     spell.duration = filearray[16].replace(/\*\*Duration\*\*\:[ \t]+/g, "");
-    spell.description = "<p>" + filearray.slice(18, filearray.length-1).join("</p><p>").replace(/\*\*At Higher Levels.\*\*/g, "<strong>At Higher Levels.</strong>") + "</p>";
+    spell.description = "<p>" + filearray.slice(18, filearray.length).join("</p><p>").replace(/\*\*At Higher Levels.\*\*/g, "<strong>At Higher Levels.</strong>") + "</p>";
     spellarray.push(spell);
   });
   if(spellarray.length === files.length) {
@@ -195,6 +195,8 @@ gulp.task('jsoncompile', ['jsonlint'], function() {
   compiledir("./data/landmarks", "./dev/json/landmarks.json", "Landmark");
   
   compiledir("./data/nations", "./dev/json/nations.json", "Nation");
+  
+  compiledir("./data/backgrounds", "./dev/json/backgrounds.json", "Background");
   return true;
 });
 
