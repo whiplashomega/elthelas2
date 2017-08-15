@@ -10,8 +10,8 @@
     <div uib-collapse="background.isCollapsed">
       <div marked="background.description"></div>
       <p>
-        <strong>Skills: </strong><span data-ng-repeat="skill in background.skills">{{skill}}, </span><br />
-        <strong>Tools: </strong><span data-ng-repeat="tool in background.tools">{{tool}}, </span><span data-ng-if="background.tools.length === 0">None</span><br />
+        <strong>Skills: </strong>{{background.skills.join(', ')}}<br />
+        <strong>Tools: </strong>{{background.tools.join(', ')}}<span data-ng-if="background.tools.length === 0">None</span><br />
         <span data-ng-if="background.languages"><strong>Languages: </strong>{{background.languages}} of your choice</span>
       </p>
       <p>

@@ -350,7 +350,7 @@ The party starts off as new recruits to the Black Wolf Irregulars, a paramilitar
 </table>
 
 #### Training
-The squad's first few days are spent in training.  Training events can include: marching in formation, one on one weapons training, foreign language classes, or skill training.  The first day the players will be introduced to all of the options, after which Sergeant Coras will encourage them to pick one thing to focus on while they wait for orders. Depending on their choice, they should make a check (detailed below) and if successful they will gain particular benefits.
+The squad's first week is spent in training.  Training events can include: marching in formation, one on one weapons training, foreign language classes, or skill training.  The first day the players will be introduced to all of the options, after which Sergeant Coras will encourage them to pick one thing to focus on while they wait for orders. Depending on their choice, they should make a check (detailed below) and if successful they will gain particular benefits.
 
 **Weapons Training:** A successful DC 13 strength or dexterity check (for finesse, light, or ranged weapons) will grant a +1 bonus to damage rolls with weapons of the chosen type.
 
@@ -364,6 +364,45 @@ The squad's first few days are spent in training.  Training events can include: 
 On the last day there is a sparring tournament.  Players are given non-lethal melee weapons of their choice that do one less damage than normal, they cannot use any spell that would do damage to their opponent, or deal any lethal damage to the opponent.  It is a single elimination random bracket tournament between the players and the various NPC members of the squad (except Sergeant Coras).  The winner gets to pick either a level 1 spell scroll, a new weapon, studded leather armor, a breastplate, or splint mail.
 
 #### The First Mission - Wolves and Cows
+
+Sergeant Coras wakes the squad up on the first day of the second week with their first mission.  The previous night a caravan leading cattle down from Strovenguard was attacked by wolves that appeared out of nowhere, and disappeared again once the cattle were dead.  The merchants who were leading the caravan straggled into the fortress on foot in the early morning hours.  The party is to investigate the attack and make sure the next caravan, to arrive that evening, arrives without casualties.
+
+**What is going on:** The wolves are being summoned by a druid whose connection to nature has been corrupted by the death and destruction in the Blighted Gap.  The druid is hiding at a nearby camp.  If left unmolested, the Druid will attack and destroy the next caravan, and the next, and so on.
+
+**Reward for Success:** On a success the squad is payed a 500 gp bounty, which is split evenly among anyone who survived the mission by Sergeant Coras.  For every additional caravan that is destroyed the reward drops by 100 gp.  If the party has not solved the issue within 5 days the mission will be reassigned to a different squad and the squad will be given a black mark for dereliction of duty.
+
+#### Magrat the Druid
+**Race:** Moon Elf
+**Class & Level:** Druid 4, Circle of the Land  
+**Background:** Hermit  
+**Alignment:** Chaotic Evil
+
+#### Proficiencies
+**Saving Throws:** Wisdom, Charisma  
+**Skills:** Religion, Insight, Perception, Medicine  
+
+**Hit Points:** 28 (4d8+8)  
+**AC:** 18 (studded leather, shield)  
+
+#### Actions
+**Quarterstaff:** +3 (1d6) or after casting sheleleigh +7 (1d6+4)
+
+**Wild Shape:**
+
+**Spells:** Magrat has 4 first level spell slots and 3 second level spell slots, and she normally keeps the following spells prepared: **Invisibility, pass without trace, entangle, fog cloud, thunderwave, cure wounds, goodberry, barkskin, moonbeam, flaming sphere** and **spike growth**.  She also knows the following cantrips which she can cast at will: **frostbite, sheleleigh, thunderclap** and **guidance**.
+
+**Description:** 
+<table>
+  <tr>
+    <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
+  </tr>
+  <tr>
+    <td>10</td><td>18</td><td>14</td><td>8</td><td>18</td><td>8</td>
+  </tr>
+</table>
+
+#### The Second Mission - Scouting the South
+
 
 <h2 id="chapter2">Chapter 2 - Escape</h2>
 

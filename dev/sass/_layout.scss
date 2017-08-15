@@ -51,6 +51,11 @@ footer {
   border: 1px solid $header;
   background-color: $header;
   padding: 10px;
-  margin: 15px 0;
+  margin: 15px 10px;
   border-radius: 8px;
+  clear: both;
+}
+
+.clear-b {
+  clear: both;
 }

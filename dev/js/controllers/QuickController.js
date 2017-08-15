@@ -75,8 +75,7 @@
             $scope.spells[x].school,
             $scope.spells[x].castingTime,
             $scope.spells[x].duration,
-            $scope.spells[x].tags.join(", "),
-            "<input type='button' value='View' class='btn btn-sm btn-primary " + id + "' data-spellid='" + x + "' />"
+            $scope.spells[x].tags.join(", ")
           ];
           spellTableData.push(thisSpell);
         }
@@ -86,8 +85,7 @@
               { title: "School" },
               { title: "Casting Time" },
               { title: "Duration" },
-              { title: "Tags" },
-              { title: "View" }
+              { title: "Tags" }
             ], function() {
               var callback = function() {
                 $scope.loadSpell(Number($(this).attr('data-spellid')));

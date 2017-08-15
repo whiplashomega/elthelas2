@@ -378,28 +378,37 @@
           }
         },
         data: { title: 'About the Author' }
-      }).state('app.campaign', {
-        url: 'campaigns/:campaign',
+      }).state('app.book1', {
+        url: 'campaigns/book1',
         views: {
           'content@': {
-            templateUrl: '/html/content/campaign.html',
-            controller: 'CampaignController'
+            templateUrl: '/html/content/campaigns/book1.html'
           },
           'head@': {
-            templateUrl: '/html/head/campaign.html'
+            templateUrl: '/html/head/campaigns/book1.html'
           },
           'sidebar@': {
-            templateUrl: '/html/sidebar/campaign.html',
-            controller: 'CampaignSidebarController'
+            templateUrl: '/html/sidebar/campaign.html'
           }
         },
         data: {
-          title: 'Campaign Information'
-        },
-        resolve: {
-          campaign: function() {
-            return 'book1';
+          title: 'Epic of Elthelas Book 1: The Crystal of Light'
+        }
+      }).state('app.book4', {
+        url: 'campaigns/book4',
+        views: {
+          'content@': {
+            templateUrl: '/html/content/campaigns/book4.html'
+          },
+          'head@': {
+            templateUrl: '/html/head/campaigns/book4.html'
+          },
+          'sidebar@': {
+            templateUrl: '/html/sidebar/campaign.html'
           }
+        },
+        data: {
+          title: 'Epic of Elthelas Book 4: Desperate Measures'
         }
       }).state('app.backgrounds', {
         url: 'options/backgrounds',

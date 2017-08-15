@@ -36,12 +36,16 @@ footer {
   border: 1px solid #c3e6e6;
   background-color: #c3e6e6;
   padding: 10px;
-  margin: 15px 0;
-  border-radius: 8px; }
+  margin: 15px 10px;
+  border-radius: 8px;
+  clear: both; }
   .card h3 {
     margin-top: 10px; }
     .card h3 .btn {
       padding: 2px 12px; }
+
+.clear-b {
+  clear: both; }
 
 .sidenav .nav li a {
   background-color: #6784C6;
