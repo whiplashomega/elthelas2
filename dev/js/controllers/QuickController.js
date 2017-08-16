@@ -79,7 +79,7 @@
           ];
           spellTableData.push(thisSpell);
         }
-        var spelltable = createDataTable('#spelltable', spellTableData, [
+        createDataTable('#spelltable', spellTableData, [
               { title: "Title" },
               { title: "Level" },
               { title: "School" },
@@ -95,28 +95,6 @@
               }
             });
 
-        /*$('#spelltable').dataTable({
-            paging: false,
-            data: spellTableData,
-            responsive: true,
-            columns: [
-              { title: "Title" },
-              { title: "Level" },
-              { title: "School" },
-              { title: "Casting Time" },
-              { title: "Duration" },
-              { title: "Tags" },
-              { title: "View" }
-            ],
-            drawCallback: function() {
-              var callback = function() {
-                $scope.loadSpell(Number($(this).attr('data-spellid')));
-              };
-              for(var x = 0; x < $scope.spells.length; x++) {
-                $(".spell" + x).click(callback);
-              }
-            }
-          });*/
         $('.datatable').DataTable();
         
         ItemProvider.getArmor().then(function(response) {
@@ -249,21 +227,21 @@
                   "Cost (gp)": 3000
                 });
                 var dmgArray = ["fire", "acid", "cold", "lightning"];
-                dmgArray.forEach(function(type) {
+                dmgArray.forEach(function(dmg) {
                   $scope.magicItems.push({
-                    Item: $scope.weapons[l].Name + " of " + type,
+                    Item: $scope.weapons[l].Name + " of " + dmg,
                     Type: "Weapon (" + $scope.weapons[l].Name + ")",
                     Attunement: "No",
                     Rarity: "Uncommon",
-                    Effect: "Whenever an attack with this " + $scope.weapons[l].Name + " hits it does an additional 1d6 " + type + " damage in addition to its normal effects.",
+                    Effect: "Whenever an attack with this " + $scope.weapons[l].Name + " hits it does an additional 1d6 " + dmg + " damage in addition to its normal effects.",
                     "Cost (gp)": 4000
                   });  
                   $scope.magicItems.push({
-                    Item: "+1 " + $scope.weapons[l].Name + " of " + type,
+                    Item: "+1 " + $scope.weapons[l].Name + " of " + dmg,
                     Type: "Weapon (" + $scope.weapons[l].Name + ")",
                     Attunement: "Yes",
                     Rarity: "Rare",
-                    Effect: "You gain +1 to attack and damage rolls with this " + $scope.weapons[l].Name + ". Whenever an attack with this " + $scope.weapons[l].Name + " hits it does an additional 1d6 " + type + " damage in addition to its normal effects.",
+                    Effect: "You gain +1 to attack and damage rolls with this " + $scope.weapons[l].Name + ". Whenever an attack with this " + $scope.weapons[l].Name + " hits it does an additional 1d6 " + dmg + " damage in addition to its normal effects.",
                     "Cost (gp)": 9000
                   }); 
                 });
@@ -315,12 +293,12 @@
                   Rarity: "Very Rare",
                   "Cost (gp)": Number($scope.armor[z].Price) + 16000
                 });
-                resistArray.forEach(function(type) {
+                resistArray.forEach(function(resist) {
                   $scope.magicItems.push({
-                    Item: $scope.armor[z].Material + " " + $scope.armor[z].Armor + " of " + type + " Resistance",
+                    Item: $scope.armor[z].Material + " " + $scope.armor[z].Armor + " of " + resist + " Resistance",
                     Type: "Armor (" + $scope.armor[z].Armor + ")",
                     Attunement: "Yes",
-                    Effect: "You have resistance to "+ type +" damage while you wear this armor. " + $scope.armor[z].Resistance,
+                    Effect: "You have resistance to "+ resist +" damage while you wear this armor. " + $scope.armor[z].Resistance,
                     Rarity: "Rare",
                     "Cost (gp)": Number($scope.armor[z].Price) + 8000
                   });                
@@ -406,7 +384,7 @@
             }
           }
           return "Out of Stock";
-        }
+        };
         thisItem.push(inStock());
         magicItemTableData.push(thisItem);
       }

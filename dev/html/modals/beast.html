@@ -1,0 +1,39 @@
+<div class="modal-header">
+    <h2> {{creature.name}} <button class="close" type="button" data-ng-click="cancel()">&times;</button></h2>
+    <h4> {{creature.size}} {{creature.type}} <span data-ng-if="creature.subtype">({{creature.subtype}})</span>, {{creature.alignment}}</h4>
+</div>
+<div class="modal-body">
+  <p>
+    <strong>Armor Class:</strong> {{creature.acdesc}} <br />
+    <strong>Hit Points:</strong>{{creature.hpdesc}} <br />
+    <strong>Speed:</strong> {{creature.speed}}
+  </p>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{creature.str}} (<span ng-if="creature.strmod > 0">+</span>{{creature.strmod}})</td>
+        <td>{{creature.dex}} (<span ng-if="creature.dexmod > 0">+</span>{{creature.dexmod}})</td>
+        <td>{{creature.con}} (<span ng-if="creature.conmod > 0">+</span>{{creature.conmod}})</td>
+        <td>{{creature.int}} (<span ng-if="creature.intmod > 0">+</span>{{creature.intmod}})</td>
+        <td>{{creature.wis}} (<span ng-if="creature.wismod > 0">+</span>{{creature.wismod}})</td>
+        <td>{{creature.cha}} (<span ng-if="creature.chamod > 0">+</span>{{creature.chamod}})</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    <span data-ng-if="creature.saves"><strong>Saving Throws:</strong> {{creature.saves}} <br /></span>
+    <span data-ng-if="creature.skills.length > 0"><strong>Skills:</strong> {{creature.skills.join(", ")}} <br /></span>
+    <strong>Senses:</strong> {{creature.senses}} <br />
+    <span data-ng-if="creature.damageresistances"><strong>Damage Resistances:</strong> {{creature.damageresistances}} <br /></span>
+    <span data-ng-if="creature.damageimmunities"><strong>Damage Immunities:</strong> {{creature.damageimmunities}} <br /></span>
+    <span data-ng-if="creature.conditionimmunities"><strong>Condition Immunities:</strong> {{creature.conditionimmunities}} <br /></span>
+    <strong>Languages:</strong> {{creature.languages}} <br />
+    <strong>Challenge:</strong> {{creature.cr}}
+  </p>
+  <div marked="creature.description"></div>
+</div>

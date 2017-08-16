@@ -163,17 +163,18 @@
     };
     
     service.GetUserDetails = function(callback) {
-      if($rootScope.globals && $rootScope.globals.currentUser)
-      $http({
-        method: 'GET',
-        url: '/users/' + $rootScope.globals.currentUser.username,
-        headers: { 'x-access-token': $rootScope.globals.currentUser.token, 'Content-Type': 'application/json' }
-      }).then(function(response) {
-        callback(response.data);
-      }, function(response) {
-        console.log(response);
-        callback(false);
-      });  
+      if($rootScope.globals && $rootScope.globals.currentUser) {
+        $http({
+          method: 'GET',
+          url: '/users/' + $rootScope.globals.currentUser.username,
+          headers: { 'x-access-token': $rootScope.globals.currentUser.token, 'Content-Type': 'application/json' }
+        }).then(function(response) {
+          callback(response.data);
+        }, function(response) {
+          console.log(response);
+          callback(false);
+        }); 
+      }
     };
     
     service.UpdateUser = function(username, firstname, lastname, password, passwordConfirm, callback) {
@@ -205,7 +206,7 @@
         }, function(response) {
           console.log(response);
           callback(false);
-        })
+        });
       }
     };
     

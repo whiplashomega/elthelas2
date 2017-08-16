@@ -427,7 +427,24 @@
         data: {
           title: 'Backgrounds'
         },
-      });
+      }).state('app.beastiary', {
+      url: 'ref/beasts',
+      views: {
+        'content@': {
+          templateUrl: '/html/content/ref/beastiary.html',
+          controller: 'BeastController'
+        },
+        'head@': {
+          templateUrl: '/html/head/ref/beastiary.html'
+        },
+        'sidebar@': {
+          templateUrl: '/html/sidebar/ref.html'
+        }
+      },
+      data: {
+        title: 'Beastiary'
+      }
+    });
        $locationProvider.html5Mode(true);
     }]);
         

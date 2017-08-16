@@ -15,6 +15,10 @@ footer {
   }
 }
 
+.table tfoot {
+  display: table-header-group;
+}
+
 #raceDiv {
   clear: both;
 }

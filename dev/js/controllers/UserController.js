@@ -1,4 +1,4 @@
-/* globals angular */
+/* globals angular, alert */
 
 (function(ng) {
   ng.module('elthelas').controller('UserController', ['AuthenticationProvider', '$scope',  '$uibModalInstance', function(AuthenticationProvider, $scope, $uibModalInstance) {
