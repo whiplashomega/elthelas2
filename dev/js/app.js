@@ -28,7 +28,7 @@
                    templateUrl: '/html/empty.html'
                }
            },
-           data: { title: "Home"}
+           data: { title: "Home", auth: false }
        }).state('app.domains', {
           url:'options/domains',
           views: {
@@ -408,8 +408,9 @@
           }
         },
         data: {
-          title: 'Epic of Elthelas Book 4: Desperate Measures'
-        }
+          title: 'Epic of Elthelas Book 4: Desperate Measures',
+          auth: true
+        },
       }).state('app.backgrounds', {
         url: 'options/backgrounds',
         views: {

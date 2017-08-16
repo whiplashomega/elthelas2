@@ -4,6 +4,17 @@
 (function(ng, $, doc) {
     ng.module('elthelas').controller('HeaderController', ['$scope', '$state', '$rootScope', '$uibModal', '$document', 'AuthenticationProvider',
     function($scope, $state, $rootScope, $uibModal, $document, AuthenticationProvider) {
+        $rootScope.$on('$viewContentLoading', function(event) {
+          if($state.current.data.auth && $rootScope.globals === undefined) {
+            event.preventDefault();
+            $state.go('app');
+            $scope.message = 'Access Denied';
+            setTimeout(function() {
+              $scope.message = false;
+              $scope.$apply();
+            }, 5000);
+          }
+        });
         //Google Custom Search
         var cx = '002019895859863268942:tbtmwpd5jy8';
         var gcse = doc.createElement('script');
@@ -43,6 +54,9 @@
         
         $scope.logout = function() {
             $scope.globals = undefined;
+            if($state.current.data.auth) {
+              $state.go('app');
+            }
             AuthenticationProvider.ClearCredentials();
         };
         
