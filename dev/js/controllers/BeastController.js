@@ -48,7 +48,10 @@
           }
         }
       });
-    }
+      modalInstance.result.then(function (selectedItem) {}, function () {
+        console.log('Modal dismissed at: ' + new Date());
+      });
+    };
     
     beastProvider.getCreatures().then(function(response) {
       $scope.creatures = response.data.documents;
@@ -99,5 +102,5 @@
     $scope.cancel = function () {
       $uibModalInstance.close('cancel');
     };
-  }]);;
+  }]);
 })(angular, jQuery);
