@@ -1,6 +1,7 @@
 {
   "id": "tieflings",
   "name": "Tieflings",
+  "singular": "Tiefling",
   "description": "\n\nTieflings are the descendents of humans that have mated with demons or devils, they bear the mark of this touch in their appearance and nature. They often bear demonic traits, such as horns, forked tails or tongue, or reddish skin or eyes. They also tend towards evil more than the average person, and although this is far from a given, it is common enough that the distrust that follows them everywhere is justified.\n\nTieflings are not quite as rare as Aasimar (given demons' proclivity for lust), although they are still rare enough to cause a stir in any town they show up in, especially given their heritage. Tieflings are more common in the west, where demons, and demon attacks, are also more common. Tieflings of a good or neutral persuasion can usually find shelter in Dera'Dragorim or Zelfir, the second as a service to Amathera as a pity of their natural plight, and the first in recognition of a shared victimization at the hands of aggressive demon invaders.\n\n",
   "traits": [
     "Ability Score Increase: Your intelligence score increases by 1 and your charisma score increases by 2.",

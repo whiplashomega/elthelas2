@@ -392,7 +392,8 @@
           }
         },
         data: {
-          title: 'Epic of Elthelas Book 1: The Crystal of Light'
+          title: 'Epic of Elthelas Book 1: The Crystal of Light',
+          auth: true
         }
       }).state('app.book4', {
         url: 'campaigns/book4',
@@ -444,6 +445,24 @@
       },
       data: {
         title: 'Beastiary'
+      }
+    }).state('app.charbuilder', {
+      url: 'campaign/charbuilder',
+      views: {
+        'content@': {
+          templateUrl: '/html/content/tools/characterbuilder.html',
+          controller: 'CharController'
+        },
+        'head@': {
+          templateUrl: '/html/head/tools/characterbuilder.html'
+        },
+        'sidebar@': {
+          templateUrl: '/html/sidebar/campaign.html'
+        },
+        data: {
+          title: 'Character Builder', 
+          auth: true
+        }
       }
     });
        $locationProvider.html5Mode(true);

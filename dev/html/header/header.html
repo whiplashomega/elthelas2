@@ -20,12 +20,11 @@
                         <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                             In-Game Tools<span class="caret"></span>
                         </a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">DM Dashboard</a></li>
-                            <li><a href="#">Player Dashboard</a></li>
-                            <li><a ui-sref="app.book1">Epic of Elthelas Book 1</a></li>
-                            <li><a href="#">Epic of Elthelas Book 2</a></li>
-                            <li><a href="#">Epic of Elthelas Book 3</a></li>
+                        <ul data-ng-if="globals" class="dropdown-menu" role="menu">
+                            <li data-ng-if="globals"><a ui-sref="app.charbuilder">Character Builder</a></li>
+                            <li data-ng-if="globals"><a ui-sref="app.book1">Epic of Elthelas Book 1</a></li>
+                            <li data-ng-if="globals"><a href="#">Epic of Elthelas Book 2</a></li>
+                            <li data-ng-if="globals"><a href="#">Epic of Elthelas Book 3</a></li>
                             <li data-ng-if="globals"><a ui-sref="app.book4">Epic of Elthelas Book 4</a></li>
                         </ul>
                     </li>

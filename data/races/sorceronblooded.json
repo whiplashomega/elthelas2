@@ -1,6 +1,7 @@
 {
   "id": "sorceronblooded",
   "name": "Sorceron Blooded",
+  "singular": "Sorceron Blooded",
   "description": "hide",
   "traits": [
     "Ability Score Increase: Your Intelligence score increases by 2 and your Charisma score increases by 1.",

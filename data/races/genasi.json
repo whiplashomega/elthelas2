@@ -1,6 +1,7 @@
 {
   "id": "genasi",
   "name": "Genasi",
+  "singular": "Genasi",
   "description": "",
   "traits": [
     "Size. Genasi are as varied as their mortal parents but are generally built like humans, standing anywhere from 5 feet to over 6 feet tall. Your size is Medium.",
@@ -19,6 +20,7 @@
     {
       "id": "airgenasi",
       "name": "Air Genasi",
+      "singular": "Air Genasi",
       "image": "/images/races/airgenasi.jpg",
       "description": "",
       "traits": [
@@ -36,6 +38,7 @@
     {
       "id": "earthgenasi",
       "name": "Earth Genasi",
+      "singular": "Earth Genasi",
       "image": "/images/races/earthgenasi.jpg",
       "description": "",
       "traits": [
@@ -53,6 +56,7 @@
     {
       "id": "firegenasi",
       "name": "Fire Genasi",
+      "singular": "Fire Genasi",
       "image": "/images/races/firegenasi.jpg",
       "description": "",
       "traits": [
@@ -71,6 +75,7 @@
     {
       "id": "watergenasi",
       "name": "Water Genasi",
+      "singular": "Water Genasi",
       "image": "/images/races/watergenasi.jpg",
       "description": "",
       "traits": [

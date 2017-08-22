@@ -1,6 +1,7 @@
 {
   "id": "goliaths",
   "name": "Goliaths",
+  "singular": "Goliath",
   "description": "Goliaths are a tall, gangly, rocky skinned and tribal people. They love sport and competition, and are exceptionally strong and hardy. Their incredible height, strength, and large limbs allow them to wield weapons and perform feats of strength much better than most creatures of a relatively similar size. The Goliaths of Elthelas live in wandering tribes in high mountainous areas. They have never formed any centralized nation, and there have never been enough of them for any existing nation to try to force them under the national banner. The largest concentrations of Goliath tribes live in Stagenheim and Curinor, and they trade regularly with the local gnomes and dwarves respectively.",
   "traits": [
     "Ability Score Increase: Your strength increases by 2 and your constitution increases by 1.",

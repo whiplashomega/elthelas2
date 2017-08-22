@@ -1,6 +1,6 @@
 [
  {
-   "Armor": "Padded",
+   "Armor": "Padded Armor",
    "Type": "Light",
    "Material": "Cloth",
    "AC": 11,
@@ -12,7 +12,7 @@
    "Time to Craft": 1
  },
  {
-   "Armor": "Leather",
+   "Armor": "Leather Armor",
    "Type": "Light",
    "Material": "Leather",
    "AC": 11,
@@ -24,7 +24,7 @@
    "Time to Craft": 3
  },
  {
-   "Armor": "Leather",
+   "Armor": "Leather Armor",
    "Type": "Light",
    "Material": "Dragon Leather",
    "AC": 11,
@@ -36,7 +36,7 @@
    "Time to Craft": 4
  },
  {
-   "Armor": "Studded Leather",
+   "Armor": "Studded Leather Armor",
    "Type": "Light",
    "Material": "Leather",
    "AC": 12,
@@ -48,7 +48,7 @@
    "Time to Craft": 7
  },
  {
-   "Armor": "Studded Leather",
+   "Armor": "Studded Leather Armor",
    "Type": "Light",
    "Material": "Dragon Leather",
    "AC": 12,
@@ -60,7 +60,7 @@
    "Time to Craft": 10
  },
  {
-   "Armor": "Hide",
+   "Armor": "Hide Armor",
    "Type": "Medium",
    "Material": "Hides",
    "AC": 12,
@@ -72,7 +72,7 @@
    "Time to Craft": 3
  },
  {
-   "Armor": "Hide",
+   "Armor": "Hide Armor",
    "Type": "Medium",
    "Material": "Dragon Hide",
    "AC": 12,
@@ -182,7 +182,7 @@
  {
    "Armor": "Scale Mail",
    "Type": "Medium",
-   "Material": "Dragon Scales",
+   "Material": "Dragon Scale",
    "AC": 14,
    "Strength": "-",
    "Stealth": "disadvantage",
@@ -242,7 +242,7 @@
  {
    "Armor": "Breastplate",
    "Type": "Medium",
-   "Material": "Dragon Scales",
+   "Material": "Dragon Scale",
    "AC": 14,
    "Strength": "-",
    "Stealth": "-",
@@ -302,7 +302,7 @@
  {
    "Armor": "Half Plate",
    "Type": "Medium",
-   "Material": "Dragon Scales",
+   "Material": "Dragon Scale",
    "AC": 15,
    "Strength": "",
    "Stealth": "disadvantage",
@@ -408,7 +408,7 @@
    "Time to Craft": 50
  },
  {
-   "Armor": "Splint",
+   "Armor": "Splint Armor",
    "Type": "Heavy",
    "Material": "Steel",
    "AC": 17,
@@ -420,7 +420,7 @@
    "Time to Craft": 50
  },
  {
-   "Armor": "Splint",
+   "Armor": "Splint Armor",
    "Type": "Medium",
    "Material": "Mithril",
    "AC": 17,
@@ -432,7 +432,7 @@
    "Time to Craft": 75
  },
  {
-   "Armor": "Splint",
+   "Armor": "Splint Armor",
    "Type": "Heavy",
    "Material": "Adamantine",
    "AC": 17,
@@ -444,7 +444,7 @@
    "Time to Craft": 75
  },
  {
-   "Armor": "Splint",
+   "Armor": "Splint Armor",
    "Type": "Heavy",
    "Material": "Parakas Steel",
    "AC": 17,
@@ -492,7 +492,7 @@
    "Time to Craft": 300
  },
  {
-   "Armor": "Plate",
+   "Armor": "Plate Armor",
    "Type": "Heavy",
    "Material": "Parakas Steel",
    "AC": 18,
@@ -506,7 +506,7 @@
  {
    "Armor": "Plate",
    "Type": "Heavy",
-   "Material": "Dragon Scales",
+   "Material": "Dragon Scale",
    "AC": 18,
    "Strength": "15",
    "Stealth": "disadvantage",

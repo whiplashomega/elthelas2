@@ -1,6 +1,7 @@
 {
   "id": "goblins",
   "name": "Goblins",
+  "singular": "Goblin",
   "description": "Goblins are small gangly humanoids between 3-3 1/2 feet of height, they have skin ranging in color from an olive brown to a verdant green, smashed upturned noses, and large ears similar to those of elves. Their limbs, particularly their arms, are long compared to their torso, and they often grow large amounts of body hair. Most Goblins in the world are tribal, cruel, and generally bullies wherever they can be. Nevertheless most goblins live their lives as slaves to orcs and hobgoblins. Goblins are unusually strong for their size, having about the strength of the average adult human in a body less than half that size. Their small size and gangly form makes them very nimble as well, nevertheless they are typically considered ugly and have a perpetually sour disposition.",
   "traits": [
     "Ability Score Increase: Your dexterity increases by 2 and your constitution score increases by 1.",

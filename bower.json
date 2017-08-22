@@ -31,7 +31,8 @@
     "angular-timelinejs3": "^0.2.3",
     "datatables.net-responsive": "^2.1.1",
     "datatables.net-responsive-dt": "^2.1.1",
-    "leaflet-measure": "^2.1.7"
+    "leaflet-measure": "^2.1.7",
+    "seedrandom": "^2.4.3"
   },
   "devDependencies": {
     "jasmine-core": "jasmine#^2.5.2",

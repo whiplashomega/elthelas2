@@ -1,6 +1,7 @@
 {
   "id": "faelin",
   "name": "Faelin",
+  "singular": "Faelin",
   "description": "\n\nFaelin are frail, with light green skin and rainbow colored hair. These fey live in family groups in tree houses above the jungles of Gnarra. They are a stunningly beautiful and agile people, skilled at climbing any surface, and with latent magical talents, but they are physically weak when caught in single combat.\n\nThe Faelin have no written language and thus no recorded history, their reclusive nature means they are mentioned only in passing in the texts of other peoples. However, theological texts claim them as the patron people of the nature goddess Gaian, who brought them to Elthelas to be stewards of the deep forests.\n\n",
   "traits": [
     "Ability Score Increase: Your dexterity score and your charisma score each increase by 2.",

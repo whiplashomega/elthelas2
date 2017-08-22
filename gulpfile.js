@@ -53,6 +53,7 @@ gulp.task('copylibraries', function() {
    gulp.src('./bower_components/TimelineJS3/compiled/css/**/*').pipe(gulp.dest("./dev/css"));
    gulp.src('./bower_components/TimelineJS3/compiled/js/timeline.js').pipe(gulp.dest("./dev/libraries"));
    gulp.src('./bower_components/angular-timelinejs3/dist/js/ng-timeline.js').pipe(gulp.dest("./dev/libraries"));
+   gulp.src('./bower_components/seedrandom/seedrandom.min.js').pipe(gulp.dest('./dev/libraries'));
    return true;
 });
 
@@ -288,6 +289,8 @@ gulp.task('jsoncompile', ['jsonlint'], function() {
   compiledir("./data/nations", "./dev/json/nations.json", "Nation");
   
   compiledir("./data/backgrounds", "./dev/json/backgrounds.json", "Background");
+  
+  compiledir("./data/classes", "./dev/json/classes.json", "CharClass");
   return true;
 });
 

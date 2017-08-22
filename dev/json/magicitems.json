@@ -1,5 +1,29 @@
 [
  {
+   "Item": "Gauntlets of the Immortal Fist",
+   "Type": "Wondrous Item",
+   "Cost (gp)": "4000",
+   "Rarity": "Uncommon",
+   "Attunement": "Yes (monk)",
+   "Effect": "These gauntlets increase the hitting power of a monk's attacks.  Whenever you make an attack with an unarmed strike or a monk weapon, your martial arts damage is considered to be higher than it normally would be.  If you normally would do 1d4 damage, you instead do 1d6. 1d6 becomes 1d8, 1d8 becomes 1d10 and 1d10 becomes 1d12."
+ },
+ {
+   "Item": "Improved Gauntlets of the Immortal Fist",
+   "Type": "Wondrous Item",
+   "Cost (gp)": "9000",
+   "Rarity": "Rare",
+   "Attunement": "Yes (monk)",
+   "Effect": "These gauntlets increase the hitting power of a monk's attacks.  Whenever you make an attack with an unarmed strike or a monk weapon, your martial arts damage is considered to be higher than it normally would be.  If you normally would do 1d4 damage, you instead do 1d8. 1d6 becomes 1d10, 1d8 becomes 1d12 and 1d10 becomes 2d8."
+ },
+ {
+   "Item": "Superior Gauntlets of the Immortal Fist",
+   "Type": "Wondrous Item",
+   "Cost (gp)": "15000",
+   "Rarity": "Very Rare",
+   "Attunement": "Yes (monk)",
+   "Effect": "These gauntlets increase the hitting power of a monk's attacks.  Whenever you make an attack with an unarmed strike or a monk weapon, your martial arts damage is considered to be higher than it normally would be.  If you normally would do 1d4 damage, you instead do 1d10. 1d6 becomes 1d12, 1d8 becomes 2d8 and 1d10 becomes 2d10."
+ },
+ {
    "Item": "Ever-Burning Fire Solution",
    "Type": "Single Use",
    "Cost (gp)": "300",

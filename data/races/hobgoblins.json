@@ -1,6 +1,7 @@
 {
   "id": "hobgoblins",
   "name": "Hobgoblins",
+  "singular": "Hobgoblin",
   "description": "\n\nThe middle size cousin of the goblinoids, hobgoblins are also the most organized and militaristic. They live largely on the outskirts of Orcish society, and are often used as mercenaries by the Orcs in particularly hot battles. Hobgoblins are more versatile than your typical Orc, and do especially well in massed formations.\n\nLike all goblinoids, hobgoblins tend to be mean, vindictive, and deceitful. Unlike other goblinoids, they also tend to form large powerful bands capable of a real united threat. Hobgoblin mercenary bands can be found all over the world, although they primarily find themselves working for other evil creatures. Their greater versatility as compared to orcs and other goblinoids makes them excellent at filling specialized roles, everything from elite deep penetration teams to scouts to quartermasters.\n\nOutside of militaristic life, hobgoblin society is tribal, and focused on a specific pecking order.",
   "traits": [
     "Your strength score increases by 2, one other ability of your choice increases by 1.",

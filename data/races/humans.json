@@ -1,6 +1,7 @@
 {
   "id": "humans",
   "name": "Humans",
+  "singular": "Human",
   "description": "\n\nHumans are the most populous race on the planet, but also the most fragmented and spread out. They are known among other races for their adaptability and diversity. Humans have established a number of empires and nations in the history of Elthelas, yet most have fallen apart due to internal corruption, or were destroyed by external forces.\n\nThere are 5 subraces of humans in Elthelas, loosely grouped by the empires to which they belonged. 3 subraces originate from the western continents of Riftlan and Atyrea, and 2 originate from the eastern continent, Elathia, and the sub-continent, Nerim.\n\n",
   "traits": [
     "Size: Your size is medium."
@@ -18,6 +19,7 @@
     {
       "id": "deranhumans",
       "name": "Deran Humans",
+      "singular": "Deran Human",
       "image": "/images/races/deranhuman.jpg",
       "description": "\n\nThe Deran people once had a great empire on the northeast coast of Riftlan. Their capital, Dera, was at the time the most beautiful city in the world, surpassing even Loridesa of Eldoran. then disaster struck in the form of demon invasion. They were saved from annihilation by the Dragon God Bahamut and relocated to a chain of islands off the coast, where the founded the nation of Dera'Dragorim. They have been close allies with dragon kind, particularly metallic dragons, ever since, and to this day they consider demons to be their most hated enemies (with devils not far behind).\n\n",
       "traits": [
@@ -37,6 +39,7 @@
     {
       "id": "hisruhumans",
       "name": "Hisru Humans",
+      "singular": "Hisru Human",
       "image": "/images/races/hisruhuman.jpg",
       "description": "The Hisru people live primarily in the nations of Zelfir and Hisru'de'tan, and are the descendents of those humans in ancient times who were enslaved by the Sorceron now imprisoned northwest of Zelfir. Over the course of their slavery they were exposed to repeated compulsion spells, and over time built up a resistence to such effects. This resistence manifests itself in person as an incredible strength of will (what some would just call stubbornness). They also have a great tradition of horsemanship and herding, particularly in Hisru'de'tan where it is their entire way of life.",
       "traits": [
@@ -56,6 +59,7 @@
     {
       "id": "imperialhumans",
       "name": "Imperial Humans",
+      "singular": "Imperial Human",
       "image": "/images/races/imperialhuman.jpg",
       "description": "The imperials are descended from the scattered human nations on the eastern continent that were eventually united under the Dormanian Empire. Although the empire has since split into the nations of Gerasalim, Kandor, and Dormania, movement of people and continuous trade has resulted in a shared culture and heritage. Before the empire, the 15-odd nations that dotted the human portions of the continent each had their own rich and varied history, much of which was lost or destroyed when Emperor Dorman the 1st led his soldiers in conquest. Only the most studied of scholars today knows anything of the history of the varied parts of the empire before then.",
       "traits": [
@@ -72,6 +76,7 @@
     {
       "id": "neranhumans",
       "name": "Neran Humans",
+      "singular": "Neran Human",
       "image": "/images/races/neranhuman.jpg",
       "description": "The Neran people descend from the old kingdom of Nerim, once a great player in world politics, and the center of Nera's cult. After the magical disaster that left over 90% of the population as roaming, mindless undead, those who remained fled north and west, taking up residence where they could, in lands that now make up the nations of Terron, Arad, Seran, and Shendarel. Their history has left this people changed in oddly contradictory ways. Having been touched by the Death Goddess herself, they are naturally skilled at necromancy, but highly distrustful of those who use such magic. This touch also often makes them sickly. Their history of warfare with the undead has forced their clerics to train more than others in the art of channelling energy to turn undead, and their warriors more skilled at fighting them. Their natural distrust of others makes them poor diplomats, but they also have an unusual ability to recognize and avoid evil.",
       "traits": [
@@ -93,6 +98,7 @@
     {
       "id": "staelichumans",
       "name": "Staelic Humans",
+      "singular": "Staelic Human",
       "image": "/images/races/staelichuman.jpg",
       "description": "Often forgotten by the rest of the world outside of their immediate neighbors, the Staelic people inhabit the merchant kingdom of Alfadir, as well as their ancestral homeland of Staelia. They are masters of combat in medium and heavy armor, as well as tactical and mounted combat, and have developed an inherent resistence to the cold southern lands of their home. Historically their growth as a people has been checked by the endless war between them and the trolls, giants, and ogres who regularly sweep down from the Gorgro Plateau, and the strange and varied ice monsters that sweep northward from the ice wastes.",
       "traits": [

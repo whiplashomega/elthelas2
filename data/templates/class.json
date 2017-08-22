@@ -1,0 +1,33 @@
+{
+  "name": "",
+  "level": 0,
+  "hitdie": 12,
+  "proficiencies": {
+    "armor": [],
+    "weapons": [],
+    "tools": [],
+    "saving throws": [],
+    "numskills": 2,
+    "skills": []
+  },
+  "features": [
+    {
+      "level": 1,
+      "name": "",
+      "description": ""
+    }
+  ],
+  "subclass": [
+    {
+      "name": "",
+      "castermult": 0,
+      "features": [
+        {
+          "level": 3,
+          "name": "",
+          "description": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+<div class="col-sm-10">
+  <style>
+    .form-control {
+      border: 0px;
+      border-bottom: 1px solid black;
+      border-radius: 0px;
+      box-shadow: none;
+    }
+    .statscore {
+      width: 40px;
+      border-radius: 0px;
+      border: 0px;
+      border-bottom: 1px solid black;
+      box-shadow: none;
+    }
+    .table>tbody>tr>td, .table>thead>tr>th {
+      padding: 4px;
+    }
+    .bordered-section {
+      border: 1px outset black;
+      border-radius: 6px;
+      padding: 6px;
+      margin: 10px 0;
+      width: 100%;
+    }
+  </style>
+  <h1>Character Builder</h1>
+  <div class="row">
+    <!-- action buttons -->
+  </div>
+  <div class="row">
+    <label class="col-sm-4"><input id="charname" type="text" class="form-control" />Character Name</label>
+    <div class="col-sm-8">
+      <div class="bordered-section">
+        <!-- Class, Race, Background -->
+        <label class="col-sm-8">
+        <span data-ng-repeat="myclass in character.classes">
+          <select data-ng-model="character.classes[$index]" data-ng-options="charclass as charclass.name for charclass in classes" class="form-control" style="width: 38%; display: inline-block;"></select>
+          <select data-ng-model="character.classes[$index].selsubclass" data-ng-options="subc as subc.name for subc in character.classes[$index].subclass" class="form-control" style="width: 38%; display: inline-block;"></select>
+          <input type="number" data-ng-model="character.classes[$index].level" class="form-control" style="width:15%; display: inline-block"/>
+        </span>
+        Class & Level
+      </label>
+        <label class="col-sm-4">
+        <select data-ng-model="character.race" data-ng-options="race as race.singular for race in races" class="form-control"></select>Race
+      </label>
+        <label class="col-sm-8"><select data-ng-model="character.background" data-ng-options="background as background.name for background in backgrounds" class="form-control">
+        </select> Background</label>
+        <div class="col-sm-4">
+          <select data-ng-model="character.subrace" data-ng-options="subr as subr.singular for subr in character.race.subraces" class="form-control"></select>
+          Sub-Race
+        </div>
+        <div class="clear-b">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class='col-sm-3'>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Stat</th><th>Score</th><th>Racial</th><th>Bonus</th><th>Save</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>STR</th>
+            <td><input type="number" ng-model="character.str" class="statscore" min="0" /></td>
+            <td><input type="number" ng-model="character.racialstr" class="statscore" min="-5" /></td>
+            <td><span data-ng-if="character.str >= 10">+</span>{{character.strmod()}}</td>
+            <td><input type="checkbox" data-ng-model="character.strsave" /> <span data-ng-if="character.strsavebonus() >= 0">+</span>{{character.strsavebonus()}}</td>
+          </tr>
+          <tr>
+            <th>DEX</th>
+            <td><input type="number" ng-model="character.dex" class="statscore" min="0" /></td>
+            <td><input type="number" ng-model="character.racialdex" class="statscore" min="-5" /></td>
+            <td><span data-ng-if="character.dex >= 10">+</span>{{character.dexmod()}}</td>
+            <td><input type="checkbox" data-ng-model="character.dexsave" /> <span data-ng-if="character.dexsavebonus() >= 0">+</span>{{character.dexsavebonus()}}</td>
+          </tr>
+          <tr>
+            <th>CON</th>
+            <td><input type="number" ng-model="character.con" class="statscore" min="0" /></td>
+            <td><input type="number" ng-model="character.racialcon" class="statscore" min="-5" /></td>
+            <td><span data-ng-if="character.con >= 10">+</span>{{character.conmod()}}</td>
+            <td><input type="checkbox" data-ng-model="character.consave" /> <span data-ng-if="character.consavebonus() >= 0">+</span>{{character.consavebonus()}}</td>
+          </tr>
+          <tr>
+            <th>INT</th>
+            <td><input type="number" ng-model="character.int" class="statscore" min="0" /></td>
+            <td><input type="number" ng-model="character.racialint" class="statscore" min="-5" /></td>
+            <td><span data-ng-if="character.int >= 10">+</span>{{character.intmod()}}</td>
+            <td><input type="checkbox" data-ng-model="character.intsave" /> <span data-ng-if="character.intsavebonus() >= 0">+</span>{{character.intsavebonus()}}</td>
+          </tr>
+          <tr>
+            <th>WIS</th>
+            <td><input type="number" ng-model="character.wis" class="statscore" min="0" /></td>
+            <td><input type="number" ng-model="character.racialwis" class="statscore" min="-5" /></td>
+            <td><span data-ng-if="character.wis >= 10">+</span>{{character.wismod()}}</td>
+            <td><input type="checkbox" data-ng-model="character.wissave" /> <span data-ng-if="character.wissavebonus() >= 0">+</span>{{character.wissavebonus()}}</td>
+          </tr>
+          <tr>
+            <th>CHA</th>
+            <td><input type="number" ng-model="character.cha" class="statscore" min="0" /></td>
+            <td><input type="number" ng-model="character.racialcha" class="statscore" min="-5" /></td>
+            <td><span data-ng-if="character.cha >= 10">+</span>{{character.chamod()}}</td>
+            <td><input type="checkbox" data-ng-model="character.chasave" /> <span data-ng-if="character.chasavebonus() >= 0">+</span>{{character.chasavebonus()}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Point Buy Total: {{character.pointbuytotal()}}</strong></p>
+      <!-- Skills -->
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Skill</th><th>Mod</th><th>Prof?</th><th>Exp?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-ng-repeat="skill in character.skills">
+            <th>{{skill.name}}</th><td>{{character.getSkillMod(skill.name)}}</td><td><input type="checkbox" data-ng-model="skill.prof" /></td>
+            <td><input type="checkbox" data-ng-model="skill.expertise" /></td>
+          </tr>
+        </tbody>
+      </table>
+      <label>
+        <input class="checkbox-inline" type="checkbox" data-ng-model="character.jack" />Jack-of-All Trades
+      </label>
+      <!-- Proficiencies -->
+      <div class="bordered-section">
+        <h4>Proficiencies</h4>
+        <textarea data-ng-model="character.proficiencies" class="form-control" style="max-width: 100%;"></textarea>
+      </div>
+    </div>
+    <div class='col-sm-5'>
+      <div class="col-sm-4">
+        <label class="bordered-section">
+          <div style="width: 100%; margin-top: 10px"><input type="number" class="statscore" data-ng-model="character.hpcurrent"/> / <input type="number" class="statscore" data-ng-model="character.hpmax" />
+          </div>
+          Hit Points
+          <p>
+            NPC: {{character.npchp()}}, Heroic: {{character.heroichp()}}
+          </p>
+        </label>
+
+        <label class="bordered-section">
+          Hit Dice
+          <div data-ng-repeat="charclass in character.classes">
+            <input class="statscore" type="number" data-ng-model="charclass.hitdieremaining" />d{{charclass.hitdie}} max {{charclass.level}}
+          </div>
+        </label>        
+      </div>
+      <div class="col-sm-4">
+        <label class="bordered-section" style="margin-top:10px; text-align:center;">
+          {{character.ac()}}<br />
+          Armor Class
+        </label>        
+      </div>
+      <div class="col-sm-4">
+        <label class="bordered-section">
+          <input type="number" class="form-control" data-ng-model="character.initiative" />
+          Initiative
+        </label>        
+      </div>
+      <div class="col-sm-8">
+        <label class="bordered-section">
+          <input type="text" data-ng-model="character.speed" class="form-control" />Speed 
+        </label>
+      </div>
+      <div class="col-sm-8">
+        <div class="bordered-section">
+          <h4>Death Saves</h4>
+          <strong>Successes</strong> <label><input type="checkbox" data-ng-model="character.deathsuccess1"  class="checkbox-inline" /></label> <label><input type="checkbox" data-ng-model="character.deathsuccess2" class="checkbox-inline" /></label> <label><input type="checkbox" data-ng-model="character.deathsuccess3" class="checkbox-inline" /></label> <br />
+          <strong>Failures</strong> <label><input type="checkbox" data-ng-model="character.deathfailure1"  class="checkbox-inline" /></label> <label><input type="checkbox" data-ng-model="character.deathfailure2" class="checkbox-inline" /></label> <label><input type="checkbox" data-ng-model="character.deathfailure3" class="checkbox-inline" /></label>          
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="bordered-section">
+          <h4>Attacks</h4>
+          <div ng-repeat="attack in character.attacks">
+            <input type="text" data-ng-model="attack.name" class="form-control" placeholder="Attack Name" style="margin: 5px 0;" />
+            <label>Bonus: <input type="number" class="statscore" data-ng-model="attack.att" /></label> <label>Damage: <input type="text" class="statscore" style="min-width: 100px;" data-ng-model="attack.dmg" /></label> <label>Range: <input type="text" class="statscore" /></label> <button class="btn btn-danger" data-ng-click="character.removeAttack(attack)">-</button>
+          </div>
+          <button class="btn btn-success" data-ng-click="character.addAttack()">+</button>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="bordered-section">
+          <h4>Armor</h4>
+          <div ng-repeat="armor in character.armor">
+            <input type="text" data-ng-model="armor.name" class="form-control" placeholder="Armor Name" style="margin: 5px 0;" />
+            <label>AC: <input type="number" class="statscore" data-ng-model="armor.ac" /></label><label>Type: <select class="statscore" style="min-width:120px;" data-ng-model="armor.type">
+              <option value="unarmored">Unarmored</option>
+              <option value="light">Light</option>
+              <option value="medium">Medium</option>
+              <option value="medium+">Medium (max 3)</option>
+              <option value="heavy">Heavy</option>
+              <option value="shield">Shield</option>
+            </select></label><label>Equipped: <input type="checkbox" data-ng-model="armor.equipped" class="checkbox-inline" /></label>
+          </div>
+          <button class="btn btn-success" data-ng-click="character.addArmor()">+</button>
+        </div>
+      </div>
+      <!--HP, hitdice, speed, actions, spells-->
+    </div>
+    <div class="col-sm-4">
+      <div class="bordered-section">
+        <h3>Class Abilities</h3>
+        <div data-ng-repeat="charclass in character.classes">
+          <div data-ng-repeat="feature in charclass.features" class="clear-b">
+            <div data-ng-if="feature.level <= charclass.level">
+              <h4>{{feature.name}}<button type="button" class="btn btn-default pull-right" ng-click="feature.isCollapsed = !feature.isCollapsed">
+      <span data-ng-if="!feature.isCollapsed">&#x25B2;</span><span data-ng-if="feature.isCollapsed">&#x25BC;</span>
+    </button></h4>
+              <p marked="feature.description" uib-collapse="feature.isCollapsed"></p>
+            </div>
+          </div>
+          <div data-ng-repeat="feature in charclass.selsubclass.features" class="clear-b">
+            <div data-ng-if="feature.level <= charclass.level">
+              <h4>{{feature.name}}<button type="button" class="btn btn-default pull-right" ng-click="feature.isCollapsed = !feature.isCollapsed">
+      <span data-ng-if="!feature.isCollapsed">&#x25B2;</span><span data-ng-if="feature.isCollapsed">&#x25BC;</span>
+    </button></h4>
+              <p marked="feature.description" uib-collapse="feature.isCollapsed"></p>  
+            </div>
+          </div>
+        </div>
+        <h3><span data-ng-if="character.race.subraces[0].id === 'default'">{{character.race.singular}}</span><span data-ng-if="character.race.subraces[0].id !== 'default'">{{character.subrace.singular}}</span> Racial Traits</h3>
+        <p data-ng-repeat="trait in character.race.traits" marked="trait"></p>
+        <p data-ng-repeat="trait in character.subrace.traits" marked="trait"></p>
+        <h3>Background: {{character.background.name}}</h3>
+        <p>
+          <strong>Background Skills:</strong> {{character.background.skills.join(', ');}}<br />
+          <strong>Background Tools:</strong> {{character.background.tools.join(', ');}}<br />
+          <strong>Background Languages:</strong> {{character.background.languages}} of your choice
+        </p>
+        <h4>Feature: {{character.background.feature.name}}</h4>
+        <div marked="character.background.feature.description"></div>        
+      </div>
+
+    </div>
+   
+  </div>
+
+</div>

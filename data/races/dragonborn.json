@@ -1,6 +1,7 @@
 {
   "id": "dragonborn",
   "name": "Dragonborn",
+  "singular": "Dragonborn",
   "description": "\n\nAfter the people of Dera were rescued by the Dragon God Bahamut, many dragons came to live among the people of Dera'Dragorim, and it became a matter of honor to bear the child of a dragon. While half-dragon children were rarely viable, those that were born proved to be incredibly fertile, and it was considered almost as great an honor to bear the child of a half-dragon as a dragon. This led to a large population of people with a quarter or less of dragon blood, called Dragonborn or Spellscales. Dragonborn are more draconic in appearance than their Spellscale cousins, are larger, and considerably stronger. They have scaly hides, draconic like faces, and often have clawed hands and feet or even wings. Outside of Dera'Dragorim and more urban settings, they are often seen as monsters.\n\n",
   "traits": [
     "Ability Score Increase: Your strength score increases by 2, and your Charisma scores increases by 1.",
@@ -23,6 +24,7 @@
     {
       "id": "black",
       "name": "Black Dragonborn",
+      "singular": "Black Dragonborn",
       "description": "",
       "image": "/images/races/dragonborn.jpg",
       "traits": [
@@ -40,6 +42,7 @@
     {
       "id": "copper",
       "name": "Copper Dragonborn",
+      "singular": "Copper Dragonborn",
       "description": "",
       "image": false,
       "traits": [
@@ -57,6 +60,7 @@
     {
       "id": "blue",
       "name": "Blue Dragonborn",
+      "singular": "Blue Dragonborn",
       "description": "",
       "image": false,
       "traits": [
@@ -74,6 +78,7 @@
     {
       "id": "bronze",
       "name": "Bronze Dragonborn",
+      "singular": "Bronze Dragonborn",
       "description": "",
       "image": false,
       "traits": [
@@ -91,6 +96,7 @@
     {
       "id": "brass",
       "name": "Brass Dragonborn",
+      "singular": "Brass Dragonborn",
       "description": "",
       "image": false,
       "traits": [
@@ -108,6 +114,7 @@
     {
       "id": "gold",
       "name": "Gold Dragonborn",
+      "singular": "Gold Dragonborn",
       "description": "",
       "image": false,
       "traits": [
@@ -125,6 +132,7 @@
     {
       "id": "red",
       "name": "Red Dragonborn",
+      "singular": "Red Dragonborn",
       "description": "",
       "image": false,
       "traits": [
@@ -142,6 +150,7 @@
     {
       "id": "green",
       "name": "Green Dragonborn",
+      "singular": "Green Dragonborn",
       "description": "",
       "image": false,
       "traits": [
@@ -159,6 +168,7 @@
     {
       "id": "silver",
       "name": "Silver Dragonborn",
+      "singular": "Silver Dragonborn",
       "description": "",
       "image": false,
       "traits": [
@@ -176,6 +186,7 @@
     {
       "id": "white",
       "name": "White Dragonborn",
+      "singular": "White Dragonborn",
       "description": "",
       "image": false,
       "traits": [

@@ -1,6 +1,7 @@
 {
   "id": "gnomes",
   "name": "Gnomes",
+  "singular": "Gnome",
   "description": "The gnomes are a small, hardy folk, usually around 3 feet tall, but broad of shoulder with large featured faces (particularly their noses). Unlike halflings, who look like miniature humans with hairy feet, gnomes bodies are thicker and more dominated by the torso (although not to the extent of dwarves). The gnomes of Elthelas are split people. The eastern, Elathian Gnomes live in small reclusive communes within the cities of others, primarily the humans of Dormania, Kandor, and Gerasalim. Once they had a nation of their own, but it was destroyed and burned to the ground by the Emperor Dorman I, all record of it purged from history in the following years. Meanwhile in the west the gnomes of Stagenheim have become masters of technology.",
   "traits": [
     "Size: Gnomes range between 3 and 4 feet tall, and weight between 60 and 80 lbs. Your size is Small.",
@@ -21,6 +22,7 @@
     {
       "id": "elathiangnomes",
       "name": "Elathian Gnomes",
+      "singular": "Elathian Gnome",
       "image": "/images/races/elathiangnome.jpg",
       "description": "The imperial gnomes are natural tricksters and illusionists, adept at surviving as the bottom rung of society. They tend to prefer city life and the excitement it brings over the quiet countryside. Adventuring is a common way that they find excitement, especially when they are relatively young. Once they do settle down they tend to have large families and live in communal groups of several large extended families.",
       "traits": [
@@ -38,6 +40,7 @@
     {
       "id": "stagengnomes",
       "name": "Stagen Gnomes",
+      "singular": "Stagen Gnome",
       "image": "/images/races/stagengnome.jpg",
       "description": "The Gnomes of Stagenheim have a long recorded history, but most of it is esoteric to outsiders, and they have few interactions the other nations beyond the defense of their borders. Not that others are typically interested in their mountain home. The Stagen people are lovers of technology above all else, and more-so, they are creators of technology and magical items without peer. The designs for their fabled airships are jealously guarded, as is the design and construction of their magical crystals, immune to anti-magic effects, and with limitless charges. Those outsiders who know of them often claim that the crystals are the result of the gnomes directly tapping the power of Gods, but such rumors are probably unfounded.",
       "traits": [

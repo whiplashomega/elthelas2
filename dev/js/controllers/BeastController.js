@@ -53,8 +53,8 @@
       });
     };
     
-    beastProvider.getCreatures().then(function(response) {
-      $scope.creatures = response.data.documents;
+    beastProvider.getAll().then(function(response) {
+      $scope.creatures = response;
       
       var creatureTableData = [];
       for(var x = 0; x < $scope.creatures.length; x++) {

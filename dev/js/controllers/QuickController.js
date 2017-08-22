@@ -1,4 +1,4 @@
-/* globals angular, jQuery */
+/* globals angular, jQuery, Random */
 "use strict";
 
 (function($, ng) {
@@ -356,9 +356,10 @@
     
     $scope.setMagicItemStock = function() {
       var magicItemTableData = [];
-      
+      var today = new Date();
+      var randgen = Math.seedrandom(today.getYear() + today.getMonth() + today.getDate());
       for (var x = 0; x < $scope.magicItems.length; x++) {
-
+        var rand = Math.random();
         var thisItem = [];
         thisItem.push($scope.magicItems[x].Item);
         thisItem.push($scope.magicItems[x].Type);
@@ -367,7 +368,6 @@
         thisItem.push($scope.magicItems[x].Attunement);
         thisItem.push($scope.magicItems[x].Effect);
         var inStock = function() {
-          var rand = Math.random();
           if($scope.magicItems[x].Rarity === "Common") {
             return "In Stock";
           } else if($scope.magicItems[x].Rarity === "Uncommon") {

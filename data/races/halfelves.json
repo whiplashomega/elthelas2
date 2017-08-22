@@ -1,6 +1,7 @@
 {
   "id": "halfelves",
   "name": "Half-Elves",
+  "singular": "Half-Elf",
   "description": "\n\nHalf-Elves are incredibly rare in most of the world, but in the eastern areas of Eldoran and southwest Gerasalim, where elves and humans have lived side by side for generations, it sometimes seems as if every other person is a half-elf. Half-elves share some of the chiseled facial features of their elven parentage, while retaining some of the versatility and adaptability of their human forbears.\n\n",
   "traits": [
     "Ability Score Increase: Your Charisma score increases by 2 and two other ability scores of your choice increase by 1.",

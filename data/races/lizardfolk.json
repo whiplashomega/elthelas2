@@ -1,6 +1,7 @@
 {
   "id": "lizardfolk",
   "name": "Lizardfolk",
+  "singular": "Lizardfolk",
   "description": "\n\nOnly a fool looks at the lizardfolk and sees nothing more than scaly humanoids. Their physical shape notwithstanding, lizardfolk have more in common with iguanas or dragons than they do with humans, dwarves, or elves. Lizardfolk possess an alien and inscrutable mindset, their desires and thoughts driven by a different set of basic principles than those of warm-blooded creatures. Their dismal swamp homes might lie hundreds of miles from the nearest human settlement, but the gap between their way of thinking and that of the smooth-skins is far greater.\n\nDespite their alien outlook, some lizardfolk make an effort to understand and, in their own manner, befriend people of other races. Such lizardfolk make faithful and skilled allies.",
   "traits": [
     "Ability Score Increase. Your Constitution score increases by 2, and your Wisdom score increases by 1.",

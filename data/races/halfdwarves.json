@@ -1,6 +1,7 @@
 {
   "id": "halfdwarves",
   "name": "Half-Dwarves",
+  "singular": "Half-Dwarf",
   "description": "\n\nThe rare offspring of a dwarf and a human, Half-Dwarves look like thick, powerful somewhat shorter than average humans or very tall, somewhat gangly dwarves. While they are almost unheard of in most lands, there is a small but vibrant community of half-dwarves in the border region between Curinor and Gerasalim. Half-Dwarves are not so insular as other dwarves, but they tend to be ponderous and slow to react.",
   "traits": [
     "Ability Score Increase: Your Constitution score increases by 1 and two other ability scores increase by 1.",

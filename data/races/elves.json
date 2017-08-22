@@ -1,6 +1,7 @@
 {
   "id": "elves",
   "name": "Elves",
+  "singular": "Elf",
   "description": "\n\nThe elves were the first race to recover after the climactic God's War. The Gods and Sorceron did not see the mostly feral elves of the ancient world as reliable soldiers and Sylvan, their patron Goddess went to considerable effort to protect her people from harm. However once the war was over, with the other races having highly reduced and scattered populations, the elves finally got around to building cities and expanding. They formed the nation of Eldoran, which remains probably the most powerful nation on the planet besides Malinval. However, the high elves have often proven arrogant, and their internal conflicts with the moon elves finally resulted in civil war. The Moon Elves successfully asserted their independence and formed the nation of Demal Thor.\n\nThe Elves are split into 4 distinct subraces, the city dwelling high elves, the rural wood elves, the nomadic moon elves, and the still feral wild elves.\n\n",
   "traits": [
     "Size: Elves range from under 5 to over 6 feet tall and have slender builds. Your size is medium.",
@@ -22,6 +23,7 @@
     {
       "id": "highelves",
       "name": "High Elves",
+      "singular": "High Elf",
       "image": "/images/races/highelf.jpg",
       "description": "\n\nThe High Elves make up the majority of the ruling and merchant class of elves in Eldoran, and are the primary residents in the cities. They are relatively few compared to the Wood Elves who live throughout the countryside, but because most elven merchants are high elves, they tend to be considered the most stereotypical. High Elves are somewhat weaker, but better educated then Wood Elves.\n\n",
       "traits": [
@@ -41,6 +43,7 @@
     {
       "id": "moonelves",
       "name": "Moon Elves",
+      "singular": "Moon Elf",
       "image": "/images/races/moonelf.jpg",
       "description": "The Moon Elves of Demal Thor are a hardier breed of elves than the High Elves or Wood Elves, but they are gruff loners who generally appear standoffish to those outside of their clan. They live in nomadic clans of between 2 and 3 hundred individuals that wander the plains following the herds.",
       "traits": [
@@ -58,6 +61,7 @@
     {
       "id": "wildelves",
       "name": "Wild Elves",
+      "singular": "Wild Elf",
       "image": "/images/races/wildelf.jpg",
       "description": "The Wild Elves are as rare as they are reclusive, living in small groups in the deepest jungles of Eldoran and Gnarra. They generally lack education, and are often considered feral and uncivilized by other elves.",
       "traits": [
@@ -76,6 +80,7 @@
     {
       "id": "woodelves",
       "name": "Wood Elves",
+      "singular": "Wood Elf",
       "image": "/images/races/woodelf.jpg",
       "description": "The Wood Elves of Eldoran are only slightly removed from their feral roots. The Wood Elves are relatively unfamiliar with the learning and education present in much of modern civilization, but they are naturally strong, spending their lives as farmers, woodsmen, and craftsmen.",
       "traits": [

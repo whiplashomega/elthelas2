@@ -1,6 +1,7 @@
 {
   "id": "childofmolton",
   "name": "Child of Molton",
+  "singular": "Child of Molton",
   "description": "hide",
   "traits": [
     "Ability Score Increase: Your Dexterity score increases by 2 and your Charisma score increases by 2.",
