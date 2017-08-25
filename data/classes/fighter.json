@@ -1,0 +1,206 @@
+{
+  "name": "Fighter",
+  "level": 1,
+  "hitdie": 10,
+  "proficiencies": {
+    "armor": ["light armor", "medium armor", "heavy armor", "shields"],
+    "weapons": ["simple weapons", "martial weapons"],
+    "tools": [],
+    "saving throws": ["str", "con"],
+    "numskills": 2,
+    "skills": ["acrobatics", "animalhandling", "athletics", "history", "insight", "intimidation", "perception", "survival"]
+  },
+  "features": [
+    {
+      "level": 1,
+      "name": "Fighting Style",
+      "description": "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.\n\n#### Archery\n\nYou gain a +2 bonus to attack rolls you make with ranged weapons.\n\n#### Defense\n\nWhile you are wearing armor, you gain a +1 bonus to AC.\n\n#### Dueling\n\nWhen you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.\n\n#### Great Weapon Fighting\n\nWhen you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.\n\n#### Protection\n\nWhen a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.\n\n#### Two-Weapon Fighting\n\nWhen you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack."
+    },
+    {
+      "level": 1,
+      "name": "Second Wind",
+      "description": "You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level.\n\nOnce you use this feature, you must finish a short or long rest before you can use it again."
+    },
+    {
+      "level": 2,
+      "name": "Action Surge",
+      "description": "Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.\n\nOnce you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn."
+    },
+    {
+      "level": 3,
+      "name": "Martial Archetype",
+      "description": "At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques. Choose Champion, Battle Master, or Eldritch Knight, all detailed at the end o f the class description. The archetype you choose grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level."
+    },
+    {
+      "level": 4,
+      "name": "Ability Score Improvement",
+      "description": "When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+    },
+    {
+      "level": 5,
+      "name": "Extra Attack",
+      "description": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class."
+    },
+    {
+      "level": 9,
+      "name": "Indomitable",
+      "description": "Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can’t use this feature again until you finish a long rest. You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level."
+    }
+  ],
+  "subclass": [
+    {
+      "name": "Champion",
+      "castermult": 0,
+      "features": [
+        {
+          "level": 3,
+          "name": "Improved Critical",
+          "description": "Beginning when you choose this archetype at 3rd level, your weapon attacks score a critical hit on a roll of 19 or 20."
+        },
+        {
+          "level": 7,
+          "name": "Remarkable Athlete",
+          "description": "Starting at 7th level, you can add half your proficiency bonus (round up) to any Strength, Dexterity, or Constitution check you make that doesn’t already use your proficiency bonus. In addition, when you make a running long jump, the distance you can cover increases by a number of feet equal to your Strength modifier."
+        },
+        {
+          "level": 10,
+          "name": "Additional Fighting Style",
+          "description": "At 10th level, you can choose a second option from the Fighting Style class feature."
+        },
+        {
+          "level": 15,
+          "name": "Superior Critical",
+          "description": "Starting at 15th level, your weapon attacks score a critical hit on a roll of 18-20."
+        },
+        {
+          "level": 18,
+          "name": "Survivor",
+          "description": "At 18th level, you attain the pinnacle of resilience in battle. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier if you have no more than half of your hit points left. You don’t gain this benefit if you have 0 hit points."
+        }
+      ]
+    },
+    {
+      "name": "Battle Master",
+      "castermult": 0,
+      "features": [
+        {
+          "level": 3,
+          "name": "Combat Superiority",
+          "description": "When you choose this archetype at 3rd level, you learn maneuvers that are fueled by special dice called superiority dice.\n\n**Maneuvers.** You learn three maneuvers of your choice, which are detailed under \"Maneuvers\" below. Many maneuvers enhance an attack in some way. You can use only one maneuver per attack.\n\nYou learn two additional maneuvers of your choice at 7th, 10th, and 15th level. Each time you learn new maneuvers, you can also replace one maneuver you know with a different one.\n\n**Superiority Dice.** You have four superiority dice, which are d8s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest.\n\nYou gain another superiority die at 7th level and one more at 15th level.\n\n**Saving Throws.** Some of your maneuvers require your target to make a saving throw to resist the maneuver’s effects. The saving throw DC is calculated as follows:\n\nManeuver save DC = 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).\n\n#### Maneuvers\n\nThe maneuvers are presented in alphabetical order.\n\n**Commander’s Strike.** When you take the Attack action on your turn, you can forgo one of your attacks and use a bonus action to direct one of your companions to strike. When you do so, choose a friendly creature who can see or hear you and expend one superiority die. That creature can immediately use its reaction to make one weapon attack, adding the superiority die to the attack’s damage roll.\n\n**Disarming Attack.** When you hit a creature with a weapon attack, you can expend one superiority die to attempt to disarm the target, forcing it to drop one item of your choice that it’s holding. You add the superiority die to the attack’s damage roll, and the target must make a Strength saving throw. On a failed save, it drops the object you choose. The object lands at its feet.\n\n**Distracting Strike.** When you hit a creature with a weapon attack, you can expend one superiority die to distract the creature, giving your allies an opening. You add the superiority die to the attack’s damage roll. The next attack roll against the target by an attacker other than you has advantage if the attack is made before the start of your next turn.\n\n**Evasive Footwork.** When you move, you can expend one superiority die, rolling the die and adding the number rolled to your AC until you stop moving.\n\n**Feinting Attack.** You can expend one superiority die and use a bonus action on your turn to feint, choosing one creature within 5 feet o f you as your target. You have advantage on your next attack roll against that creature. If that attack hits, add the superiority die to the attack’s damage roll.\n\n**Goading Attack.** When you hit a creature with a weapon attack, you can expend one superiority die to attempt to goad the target into attacking you. You add the superiority die to the attack’s damage roll, and the target must make a Wisdom saving throw. On a failed save, the target has disadvantage on all attack rolls against targets other than you until the end of your next turn.\n\n**Lunging Attack.** When you make a melee weapon attack on your turn, you can expend one superiority die to increase your reach for that attack by 5 feet. If you hit, you add the superiority die to the attack’s damage roll.\n\n**Maneuvering Attack.** When you hit a creature with a weapon attack, you can expend one superiority die to maneuver one of your comrades into a more advantageous position. You add the superiority die to the attack’s damage roll, and you choose a friendly creature who can see or hear you. That creature can use its reaction to move up to half its speed without provoking opportunity attacks from the target of your attack. \n\n**Menacing Attack.** When you hit a creature with a weapon attack, you can expend one superiority die to attempt to frighten the target. You add the superiority die to the attack’s damage roll, and the target must make a Wisdom saving throw. On a failed save, it is frightened of you until the end of your next turn.\n\n**Parry.** When another creature damages you with a melee attack, you can use your reaction and expend one superiority die to reduce the damage by the number you roll on your superiority die + your Dexterity modifier.\n\n**Precision Attack.** When you make a weapon attack roll against a creature, you can expend one superiority die to add it to the roll. You can use this maneuver before or after making the attack roll, but before any effects of the attack are applied.\n\n**Pushing Attack.** When you hit a creature with a weapon attack, you can expend one superiority die to attempt to drive the target back. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 15 feet away from you.\n\n**Rally.** On your turn, you can use a bonus action and expend one superiority die to bolster the resolve of one of your companions. When you do so, choose a friendly creature who can see or hear you. That creature gains temporary hit points equal to the superiority die roll + your Charisma modifier.\n\n**Riposte.** When a creature misses you with a melee attack, you can use your reaction and expend one superiority die to make a melee weapon attack against the creature. If you hit, you add the superiority die to the attack's damage roll.\n\n**Sweeping Attack.** When you hit a creature with a melee weapon attack, you can expend one superiority die to attempt to damage another creature with the same attack. Choose another creature within 5 feet of the original target and within your reach. If the original attack roll would hit the second creature, it takes damage equal to the number you roll on your superiority die. The damage is of the same type dealt by the original attack.\n\n**Trip Attack.** When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock the target down. You add the superiority die to the attack’s damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you knock the target prone."
+        },
+        {
+          "level": 3,
+          "name": "Student of War",
+          "description": "At 3rd level, you gain proficiency with one type of artisan’s tools of your choice."
+        },
+        {
+          "level": 7,
+          "name": "Starting at 7th level, if you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice:\n\n* Strength score\n* Dexterity score\n* Constitution score\n* Armor Class\n* Current hit points\n* Total class levels (if any)\n* Fighter class levels (if any)"
+        },
+        {
+          "level": 10,
+          "name": "Improved Combat Superiority",
+          "description": "At 10th level, your superiority dice turn into d10s. At 18th level, they turn into dl2s."
+        },
+        {
+          "level": 15,
+          "name": "Relentless",
+          "description": "Starting at 15th level, when you roll initiative and have no superiority dice remaining, you regain 1 superiority die."
+        }
+      ]
+    },
+    {
+      "name": "Eldritch Knight",
+      "castermult": 0.334,
+      "features": [
+        {
+          "level": 3,
+          "name": "Spellcasting",
+          "description": "When you reach 3rd level, you augment your martial prowess with the ability to cast spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the wizard spell list.\n\n**Cantrips.** You learn two cantrips of your choice from the wizard spell list. You learn an additional wizard cantrip of your choice at 10th level.\n\n**Spell Slots.** The Eldritch Knight Spellcasting table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one o f these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.\n\nFor example, if you know the 1st-level spell shield and have a 1st-level and a 2nd-level spell slot available, you can cast shield using either slot.\n\n**Spells Known o f 1st-Level and Higher.** You know three 1st-level wizard spells of your choice, two of which you must choose from the abjuration and evocation spells on the wizard spell list.\n\nThe Spells Known column of the Eldritch Knight Spellcasting table shows when you learn more wizard spells of 1st level or higher. Each of these spells must be an abjuration or evocation spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level. \n\nThe spells you learn at 8th, 14th, and 20th level can come from any school of magic.\n\nWhenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots, and it must be an abjuration or evocation spell, unless you’re replacing the spell you gained at 8th, 14th, or 20th level.\n\n**Spellcasting Ability.** Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a w izard spell you cast and when making an attack roll with one.\n\nSpell save DC = 8 + your proficiency bonus + your Intelligence modifier\n\nSpell attack modifier = your proficiency bonus + your Intelligence modifier"
+        },
+        {
+          "level": 3,
+          "name": "Weapon Bond",
+          "description": "At 3rd level, you learn a ritual that creates a magical bond between yourself and one weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. The weapon must be within your reach throughout the ritual, at the conclusion of which you touch the weapon and forge the bond.\n\nOnce you have bonded a weapon to yourself, you can’t be disarmed of that weapon unless you are incapacitated. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand.\n\nYou can have up to two bonded weapons, but can summon only one at a time with your bonus action. If you attempt to bond with a third weapon, you must break the bond with one of the other two."
+        },
+        {
+          "level": 7,
+          "name": "War Magic",
+          "description": "Beginning at 7th level, when you use your action to cast a cantrip, you can make one weapon attack as a bonus action."
+        },
+        {
+          "level": 10,
+          "name": "Eldritch Strike",
+          "description": "At 10th level, you learn how to make your weapon strikes undercut a creature’s resistance to your spells. When you hit a creature with a weapon attack, that creature has disadvantage on the next saving throw it makes against a spell you cast before the end of your next turn."
+        },
+        {
+          "level": 15,
+          "name": "Arcane Charge",
+          "description": "At 15th level, you gain the ability to teleport up to 30 feet to an unoccupied space you can see when you use your Action Surge. You can teleport before or after the additional action."
+        },
+        {
+          "level": 18,
+          "name": "Improved War Magic",
+          "description": "Starting at 18th level, when you use your action to cast a spell, you can make one weapon attack as a bonus action."
+        }
+      ]
+    },
+    {
+      "name": "Knight of the Realm",
+      "castermult": 0,
+      "features": [
+        {
+          "level": 3,
+          "name": "Rallying Cry",
+          "description": "When you choose this a rchetype at 3rd level, you learn how to inspire your allies to fight on past their injuries. \n\nWhen you use your Second Wind feature, you can choose up to three creatures within 60 feet of you that are allied with you. Each one regains hit points equal to your fighter level, provided that the creature can see or hear you."
+        },
+        {
+          "level": 7,
+          "name": "Royal Envoy",
+          "description": "A knight of the realm serves as an envoy of the crown. Knights of high standing are expected to conduct themselves with grace.\n\nAt 7th level, you gain proficiency in the Persuasion skill. If you are already proficient in it, you gain proficiency in one of the following skills of your choice: Animal Handling, Insight, Intimidation, or Performance.\n\nYour proficiency bonus is doubled for any ability check you make that uses Persuasion. You receive this benefit regardless of the skill proficiency you gain from this feature."
+        },
+        {
+          "level": 10,
+          "name": "Inspiring Surge",
+          "description": "Starting at 10th level, when you use your Action Surge feature, you can choose one creature within 60 feet of you that is allied with you. That creature can make one melee or ranged weapon attack with its reaction, provided that it can see or hear you.\n\nStarting at 17th level, you can choose two allies within 60 feet of you, rather than one."
+        },
+        {
+          "level": 15,
+          "name": "Bulwark",
+          "description": "Beginning at 15th level, you can extend the benefit of your Indomitable feature to an ally. When you decide to use Indomitable to reroll an Intelligence, a Wisdom, or a Charisma saving throw and you aren't incapacitated, you can choose one ally within 60 feet of you that also failed its saving throw against the same effect. If that creature can see or hear you, it can reroll its saving throw and must use the new roll."
+        }
+      ]
+    },
+    {
+      "name": "Scourer",
+      "castermult": 0,
+      "features": [
+        {
+          "level": 3,
+          "name": "Slay Magic",
+          "description": "At third level when you take this Martial Archetype your skills reveal weak spots in spell casters that others miss. Gain an extra 1d8 damage against an enemy that you have seen casting a spell within the last minute. This damage increases to 2d8 at level 18."
+        },
+        {
+          "level": 3,
+          "name": "Bonus Proficiency",
+          "description": "You gain proficiency in the arcana skill."
+        },
+        {
+          "level": 7,
+          "name": "Capture Magic",
+          "description": "At level 7 you have learned how spell casters create and spin their magical effects, and have learned how to prevent it. When you successfully grapple a creature, the target becomes unable to cast spells that have verbal or semantic components as long as they are grappled."
+        },
+        {
+          "level": 10,
+          "name": "Counter Magic",
+          "description": "At level 10 you have learned the inner working of spells and can inherently use the spell against itself. Twice per short rest, you can bend another’s spell to your will. To do this you must spend your reaction to negate or control another casters spell. 3rd level or lower spells are automatically affected while higher level spells require a charisma check with the DC being 10 + the spells level. If you succeed, you can choose to negate the spell entirely, or if the spell targets a single target other than the caster, you can choose a different target for the spell. If the spell is a concentration spell, you take over concentration for the spells duration if you choose to do so. You may only concentrate on one spell at a time."
+        },
+        {
+          "level": 15,
+          "name": "See Magic",
+          "description": "At level 15, you have learned to see past the trickery magic can create. You have advantage on wisdom saves against spells and advantage on detecting illusions."
+        }
+      ]
+    }
+  ]
+}

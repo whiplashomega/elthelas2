@@ -1,0 +1,155 @@
+{
+  "name": "Factotum",
+  "level": 1,
+  "hitdie": 8,
+  "proficiencies": {
+    "armor": ["light armor", "shields"],
+    "weapons": ["simple weapons", "martial weapons"],
+    "tools": ["thieves' tools"],
+    "saving throws": ["dex", "int"],
+    "numskills": 3,
+    "skills": ["any"]
+  },
+  "features": [
+    {
+      "level": 1,
+      "name": "Inspired",
+      "description": "The Factotum gets a number of epiphany points that they can spend to activate certain class features. They get eipiphany points equal to their intelligence modifier plus half their class level (rounded down), minimum 1. They recover all of their epiphany points when they finish a short rest."
+    },
+    {
+      "level": 1,
+      "name": "Inspired Skills",
+      "description": "You can spend an epiphany point when making any skill check to add your intelligence bonus to the check."
+    },
+    {
+      "level": 2,
+      "name": "Spellcasting",
+      "description": "Starting at 2nd level, you start to pick up the intricacies of casting spells. As a student of magic, you have a spellbook containing spells that you have picked up in your travels.\n\n#### Cantrips\n\nAt 2nd level, you know four cantrips of your choice from any spell list. You learn additional cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Factotum table.\n\n#### Spellbook\n\nAt 2nd level you have a spellbook containing six 1st-level spells of your choice.\n\n#### Preparing and Casting Spells\n\nThe Factotum table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher as well as one epiphany point. You regain all expended spell slots when you finish a long rest.\n\nYou prepare the list of spells that are available for you to cast. To do so choose a number of spells from your spellbook equal to your intelligence modifier + one half of your factotum level (rounded down, minimum of 1 spell). The spells must be of a level for which you have spell slots.\n\nFor example, if you're a 5th-level factotum, you have four 1st-level and two 2nd-level spell slots. With an intelligence of 16, your list of prepared spells can include five spells of 1st or 2nd level, in any combination, chosen from your spellbook. If you prepare the 1st-level spell magic missile, you can cast it using a 1st-level or a 2nd-level slot. Casting a spell doesn't remove it from your list of prepared spells.\n\nYou can change your list of prepared spells when you finish a long rest. Preparing a new list of spells requires time spent studying your spellbook and memorizing incantations and gestures you must make to cast a spell: at least 1 minute per spell level for each spell on your list.\n\n#### Spellcasting Ability\nIntelligence is your spellcasting ability for your spells, since you learn your spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a spell you cast and when making an attack roll with one. Spell save DC = 8 + your proficiency bonus + your Intelligence modifier Spell attack modifier = your proficiency bonus + your intelligence modifier.\n\n#### Ritual Casting\n\nYou can cast a spell as a ritual if that spell has the ritual tag and you have the spell in your spellbook. You don't need to have the spell prepared.\n\n#### Spellcasting Focus\n\nYou can use an arcane focus or a divine focus (found in chapter 5) as a spellcasting focus for your spells.\n\n#### Learning Spells of 1st Level and Higher\n\nEach time you gain a Factotum level after 2nd, you can add one spell of your choice to your spellbook. Each of these spells must be of a level for which you have spell slots, as shown on the Factotum table. On your adventures, you might find other spells that you can add to your spellbook (see the “Your Spellbook” sidebar)."
+    },
+    {
+      "level": 2,
+      "name": "Inspired Attack",
+      "description": "Starting at 2nd level, you can spend an epiphany point before making an attack roll to add your intelligence bonus to the attack roll."
+    },
+    {
+      "level": 2,
+      "name": "Inspired Damage",
+      "description": "Starting at 2nd level, as a bonus action you can spend an epiphany point to add 1d8 to any weapon or spell damage roll you make until the start of your next turn."
+    },
+    {
+      "level": 3,
+      "name": "Factotum Philosophy",
+      "description": "At 3rd level your studies begin to focus on a particular specialty. Choose one of the Factotum Philosophies below, you gain different abilities depending on which philosophy you choose. You gain additional philosophy features at 7th, 10th and 15th level."
+    },
+    {
+      "level": 4,
+      "name": "Ability Score Improvement",
+      "description": "At 4th level, and again at 6th, 8th, 12th, 16th, and 19th level, you gain a +2 bonus to one ability score, +1 to two ability scores, or a feat."
+    },
+    {
+      "level": 5,
+      "name": "Extra Attack",
+      "description": "At 5th level you can make 2 attacks when you take the attack action on your turn."
+    },
+    {
+      "level": 11,
+      "name": "Inspired Defense",
+      "description": "At 11th level, On your turn you can spend 1 epiphany point to use the dodge or disengage actions as bonus actions on your turn."
+    },
+    {
+      "level": 14,
+      "name": "Inspired Aid",
+      "description": "At 14th level you can spend 1 epiphany point to use the help action as a bonus action on your turn."
+    },
+    {
+      "level": 20,
+      "name": "Inspired Recovery",
+      "description": "At 20th level you no longer require a short rest to regain your epiphany points, but can do so by spending 10 minutes reading and studying your books and materials."
+    }
+  ],
+  "subclass": [
+    {
+      "name": "Brains Over Brawn",
+      "castermult": 0.5,
+      "features": [
+        {
+          "level": 3,
+          "name": "Know Your Enemy",
+          "description": "Starting at 3rd level, you can spend a bonus action to study an opponent and discover how to get past its defenses. When you use this ability pick a target, you can use your intelligence modifier instead of strength or dexterity on weapon attack rolls and damage rolls against that target until the start of your next turn."
+        },
+        {
+          "level": 7,
+          "name": "Fighting Style Mimic",
+          "description": "At 10th level the Brains over Brawn Factotum can pick one of the following fighting styles. Whenever they finish a long rest they can spend 3 epiphany points to replace this fighting style with a different one from the list. This ability does not stack with the fighting style granted by any other class.\n\n* Archery - You gain a +2 bonus to attack rolls you make with ranged weapons.\n* Dueling - When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.\n* Two-Weapon Fighting - When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.\n* Great Weapon Fighting - When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit."
+        },
+        {
+          "level": 10,
+          "name": "Improved Inspired Damage",
+          "description": "At 10th level, when you use the inspired damage feature you add 2d8 to your damage rolls."
+        },
+        {
+          "level": 15,
+          "name": "Improved Inspired Attack",
+          "description": "At 15th level, when you use an epiphany point to add a bonus to your attack roll, you can make an additional attack as a bonus action, adding your intelligence modifier to both attacks."
+        }
+      ]
+    },
+    {
+      "name": "Arcane Dilettante",
+      "castermult": 0.5,
+      "features": [
+        {
+          "level": 3,
+          "name": "Cantrip Master",
+          "description": "At 3rd level you have become particularly adept at casting very basic spells. You learn 2 additional cantrips in addition to the number shown in the Factotum table. In addition you no longer have to use an epiphany point when casting a cantrip."
+        },
+        {
+          "level": 3,
+          "name": "Additional Skill Proficiency",
+          "description": "At 3rd level the arcane dilettante gains proficiency in the arcana skill. If they were already proficient in the arcana skill they gain expertise in the arcana skill (can add their proficiency bonus twice)."
+        },
+        {
+          "level": 7,
+          "name": "Keen Observer",
+          "description": "Starting at 7th level you have become a proficient enough spell caster that you can make a spell work with only minimal study. Starting when they gain this feature, the Factotum can add any spell they successfully observe being cast to their spellbook. In order to successfully add it to their spellbook the following conditions must be met:\n\n* The spell must be of a level the Factotum can cast.\n* The Factotum must be able to see (if it has somatic/material components) and hear (if it has a verbal component) the spell being cast.\n* They then must succeed on an intelligence (arcana) check with a DC equal to 15 + the spells level at the time the spell is cast. If they fail this check they can try again only if they observe the spell being cast again."
+        },
+        {
+          "level": 10,
+          "name": "Quick Study",
+          "description": "Starting at 10th level, whenever The Factotum finishes a short rest they can trade 1 spell from their prepared list for a different spell in their spellbook."
+        },
+        {
+          "level": 15,
+          "name": "Sage",
+          "description": "Starting at 15th level you can cast spells without spending epiphany points on them."
+        }
+      ]
+    },
+    {
+      "name": "The Skill Monkey",
+      "castermult": 0.5,
+      "features": [
+        {
+          "level": 3,
+          "name": "Jack-of-all-Trades",
+          "description": "Starting at 3rd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn’t already include your proficiency bonus."
+        },
+        {
+          "level": 7,
+          "name": "Improved Inspired Skills",
+          "description": "Starting at 7th level, when the Skill Monkey uses the inspire skill ability they add their proficiency bonus as well as their intelligence modifier to the check, even if they are already proficient in that skill."
+        },
+        {
+          "level": 10,
+          "name": "Expertise",
+          "description": "At 10th level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies."
+        },
+        {
+          "level": 15,
+          "name": "Reliable Talent",
+          "description": "By 15th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10."
+        }
+      ]
+    }
+  ]
+}

@@ -23,29 +23,44 @@
       margin: 10px 0;
       width: 100%;
     }
+    .table-input {
+      border-bottom: 0;
+      padding: 3px;
+    }
   </style>
   <h1>Character Builder</h1>
   <div class="row">
-    <!-- action buttons -->
-  </div>
-  <div class="row">
-    <label class="col-sm-4"><input id="charname" type="text" class="form-control" />Character Name</label>
+    <div class="col-sm-4">
+      <label class="col-sm-12"><input id="charname" type="text" class="form-control" data-ng-model="character.name" />Character Name</label>
+      <label class="col-sm-12"><input type="file" class="form-control" id="fileload" /></label>
+      <div class="btn-group col-sm-12">
+        <input type="button" class="btn btn-success" value="Load" ng-click="character.load()" /><input type="button" class="btn btn-primary" value="Save" ng-click="character.save()" />
+      </div>
+    </div>
+    
     <div class="col-sm-8">
       <div class="bordered-section">
         <!-- Class, Race, Background -->
         <label class="col-sm-8">
-        <span data-ng-repeat="myclass in character.classes">
-          <select data-ng-model="character.classes[$index]" data-ng-options="charclass as charclass.name for charclass in classes" class="form-control" style="width: 38%; display: inline-block;"></select>
-          <select data-ng-model="character.classes[$index].selsubclass" data-ng-options="subc as subc.name for subc in character.classes[$index].subclass" class="form-control" style="width: 38%; display: inline-block;"></select>
-          <input type="number" data-ng-model="character.classes[$index].level" class="form-control" style="width:15%; display: inline-block"/>
-        </span>
-        Class & Level
-      </label>
+          <span data-ng-repeat="myclass in character.classes">
+            <select data-ng-model="character.classes[$index]" data-ng-options="charclass as charclass.name for charclass in classes | classFilter: $index : character.classes" class="form-control" style="width: 38%; display: inline-block;" ngChange="character.classValidate($index)"></select>
+            <select data-ng-model="character.classes[$index].selsubclass" data-ng-options="subc as subc.name for subc in character.classes[$index].subclass" class="form-control" style="width: 38%; display: inline-block;"></select>
+            <input type="number" data-ng-model="character.classes[$index].level" class="form-control" style="width:15%; display: inline-block"/>
+            
+            <button class="btn btn-warning" data-ng-click="character.removeClass(myclass)">-</button>
+          </span>
+          Class & Level
+          <div class="btn-group" style="width:20%; margin-top: 5px;">
+            <button class="btn btn-success" data-ng-click="character.addClass()">+</button>
+          </div>
+          
+        </label>
         <label class="col-sm-4">
         <select data-ng-model="character.race" data-ng-options="race as race.singular for race in races" class="form-control"></select>Race
       </label>
         <label class="col-sm-8"><select data-ng-model="character.background" data-ng-options="background as background.name for background in backgrounds" class="form-control">
-        </select> Background</label>
+        </select> Background
+      </label>
         <div class="col-sm-4">
           <select data-ng-model="character.subrace" data-ng-options="subr as subr.singular for subr in character.race.subraces" class="form-control"></select>
           Sub-Race
@@ -108,6 +123,20 @@
         </tbody>
       </table>
       <p><strong>Point Buy Total: {{character.pointbuytotal()}}</strong></p>
+      <h4>Save Bonus Modifier</h4>
+      <table class="table">
+        <thead><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><input type="number" class="statscore" data-ng-model="character.strsavemagic" /></td>
+            <td><input type="number" class="statscore" data-ng-model="character.dexsavemagic" /></td>
+            <td><input type="number" class="statscore" data-ng-model="character.consavemagic" /></td>
+            <td><input type="number" class="statscore" data-ng-model="character.intsavemagic" /></td>
+            <td><input type="number" class="statscore" data-ng-model="character.wissavemagic" /></td>
+            <td><input type="number" class="statscore" data-ng-model="character.chasavemagic" /></td>
+          </tr>
+        </tbody>
+      </table>
       <!-- Skills -->
       <table class="table table-striped">
         <thead>
@@ -122,6 +151,7 @@
           </tr>
         </tbody>
       </table>
+
       <label>
         <input class="checkbox-inline" type="checkbox" data-ng-model="character.jack" />Jack-of-All Trades
       </label>
@@ -132,112 +162,325 @@
       </div>
     </div>
     <div class='col-sm-5'>
-      <div class="col-sm-4">
-        <label class="bordered-section">
-          <div style="width: 100%; margin-top: 10px"><input type="number" class="statscore" data-ng-model="character.hpcurrent"/> / <input type="number" class="statscore" data-ng-model="character.hpmax" />
-          </div>
-          Hit Points
-          <p>
-            NPC: {{character.npchp()}}, Heroic: {{character.heroichp()}}
-          </p>
-        </label>
-
-        <label class="bordered-section">
-          Hit Dice
-          <div data-ng-repeat="charclass in character.classes">
-            <input class="statscore" type="number" data-ng-model="charclass.hitdieremaining" />d{{charclass.hitdie}} max {{charclass.level}}
-          </div>
-        </label>        
-      </div>
-      <div class="col-sm-4">
-        <label class="bordered-section" style="margin-top:10px; text-align:center;">
-          {{character.ac()}}<br />
-          Armor Class
-        </label>        
-      </div>
-      <div class="col-sm-4">
-        <label class="bordered-section">
-          <input type="number" class="form-control" data-ng-model="character.initiative" />
-          Initiative
-        </label>        
-      </div>
-      <div class="col-sm-8">
-        <label class="bordered-section">
-          <input type="text" data-ng-model="character.speed" class="form-control" />Speed 
-        </label>
-      </div>
-      <div class="col-sm-8">
-        <div class="bordered-section">
-          <h4>Death Saves</h4>
-          <strong>Successes</strong> <label><input type="checkbox" data-ng-model="character.deathsuccess1"  class="checkbox-inline" /></label> <label><input type="checkbox" data-ng-model="character.deathsuccess2" class="checkbox-inline" /></label> <label><input type="checkbox" data-ng-model="character.deathsuccess3" class="checkbox-inline" /></label> <br />
-          <strong>Failures</strong> <label><input type="checkbox" data-ng-model="character.deathfailure1"  class="checkbox-inline" /></label> <label><input type="checkbox" data-ng-model="character.deathfailure2" class="checkbox-inline" /></label> <label><input type="checkbox" data-ng-model="character.deathfailure3" class="checkbox-inline" /></label>          
+      <div class="row">
+        <!--HP, hitdice, Proficiency -->
+        <div class="col-sm-4">
+          <label class="bordered-section">
+            <div style="width: 100%; margin-top: 10px"><input type="number" class="statscore" data-ng-model="character.hpcurrent"/> / <input type="number" class="statscore" data-ng-model="character.hpmax" />
+            </div>
+            Hit Points
+            <p>
+              NPC: {{character.npchp()}}, Heroic: {{character.heroichp()}}
+            </p>
+          </label>
+  
+          <label class="bordered-section">
+            Hit Dice
+            <div data-ng-repeat="charclass in character.classes">
+              <input class="statscore" type="number" data-ng-model="charclass.hitdieremaining" />d{{charclass.hitdie}} max {{charclass.level}}
+            </div>
+          </label> 
+          <label class="bordered-section" style="text-align:center;">
+            <span data-ng-if="character.prof() >= 0">+</span>{{character.prof()}}<br />
+            Proficiency Bonus
+          </label>
         </div>
-      </div>
-      <div class="col-sm-12">
-        <div class="bordered-section">
-          <h4>Attacks</h4>
-          <div ng-repeat="attack in character.attacks">
-            <input type="text" data-ng-model="attack.name" class="form-control" placeholder="Attack Name" style="margin: 5px 0;" />
-            <label>Bonus: <input type="number" class="statscore" data-ng-model="attack.att" /></label> <label>Damage: <input type="text" class="statscore" style="min-width: 100px;" data-ng-model="attack.dmg" /></label> <label>Range: <input type="text" class="statscore" /></label> <button class="btn btn-danger" data-ng-click="character.removeAttack(attack)">-</button>
-          </div>
-          <button class="btn btn-success" data-ng-click="character.addAttack()">+</button>
+        <!-- Armor Class -->
+        <div class="col-sm-4">
+          <label class="bordered-section" style="margin-top:10px; text-align:center;">
+            {{character.ac()}}<br />
+            Armor Class
+          </label>        
         </div>
-      </div>
-      <div class="col-sm-12">
-        <div class="bordered-section">
-          <h4>Armor</h4>
-          <div ng-repeat="armor in character.armor">
-            <input type="text" data-ng-model="armor.name" class="form-control" placeholder="Armor Name" style="margin: 5px 0;" />
-            <label>AC: <input type="number" class="statscore" data-ng-model="armor.ac" /></label><label>Type: <select class="statscore" style="min-width:120px;" data-ng-model="armor.type">
-              <option value="unarmored">Unarmored</option>
-              <option value="light">Light</option>
-              <option value="medium">Medium</option>
-              <option value="medium+">Medium (max 3)</option>
-              <option value="heavy">Heavy</option>
-              <option value="shield">Shield</option>
-            </select></label><label>Equipped: <input type="checkbox" data-ng-model="armor.equipped" class="checkbox-inline" /></label>
-          </div>
-          <button class="btn btn-success" data-ng-click="character.addArmor()">+</button>
+        <!-- Initiative -->
+        <div class="col-sm-4">
+          <label class="bordered-section">
+            <input type="number" class="form-control" data-ng-model="character.initiative" />
+            Initiative
+          </label>        
         </div>
+        <!-- Speed -->
+        <div class="col-sm-8">
+          <label class="bordered-section">
+            <input type="text" data-ng-model="character.speed" class="form-control" />Speed 
+          </label>
+        </div>
+        <!-- Death Saves -->
+        <div class="col-sm-8">
+          <div class="bordered-section">
+            <h4>Death Saves</h4>
+            <strong>Successes</strong> <label><input type="checkbox" data-ng-model="character.deathsuccess1"  class="checkbox-inline" /></label> <label><input type="checkbox" data-ng-model="character.deathsuccess2" class="checkbox-inline" /></label> <label><input type="checkbox" data-ng-model="character.deathsuccess3" class="checkbox-inline" /></label> <br />
+            <strong>Failures</strong> <label><input type="checkbox" data-ng-model="character.deathfailure1"  class="checkbox-inline" /></label> <label><input type="checkbox" data-ng-model="character.deathfailure2" class="checkbox-inline" /></label> <label><input type="checkbox" data-ng-model="character.deathfailure3" class="checkbox-inline" /></label>          
+          </div>
+        </div>
+        <!-- Attacks -->
+        <div class="col-sm-12">
+          <div class="bordered-section">
+            <h4>Attacks</h4>
+            <div ng-repeat="attack in character.attacks">
+              <input type="text" data-ng-model="attack.name" class="form-control" placeholder="Attack Name" style="margin: 5px 0;" />
+              <label>Bonus: <input type="number" class="statscore" data-ng-model="attack.att" /></label> <label>Damage: <input type="text" class="statscore" style="min-width: 100px;" data-ng-model="attack.dmg" /></label> <label>Range: <input type="text" class="statscore" /></label> <button class="btn btn-danger" data-ng-click="character.removeAttack(attack)">-</button>
+            </div>
+            <button class="btn btn-success" data-ng-click="character.addAttack()">+</button>
+          </div>
+        </div>
+        <!-- Armor -->
+        <div class="col-sm-12">
+          <div class="bordered-section">
+            <h4>Armor</h4>
+            <div ng-repeat="armor in character.armor">
+              <input type="text" data-ng-model="armor.name" class="form-control" placeholder="Armor Name" style="margin: 5px 0;" />
+              <label>AC: <input type="number" class="statscore" data-ng-model="armor.ac" /></label><label>Type: <select class="statscore" style="min-width:120px;" data-ng-model="armor.type">
+                <option value="unarmored">Unarmored</option>
+                <option value="light">Light</option>
+                <option value="medium">Medium</option>
+                <option value="medium+">Medium (max 3)</option>
+                <option value="heavy">Heavy</option>
+                <option value="shield">Shield</option>
+              </select></label><label>Equipped: <input type="checkbox" data-ng-model="armor.equipped" class="checkbox-inline" /></label>
+              
+              <div class="btn-group"><button class="btn btn-danger" data-ng-click="character.removeArmor(armor)" style="margin-top: 10px;">-</button></div>
+            </div>
+            <button class="btn btn-success" data-ng-click="character.addArmor()">+</button>
+          </div>
+        </div>
+        <!-- Equipment -->
+        <div class="col-sm-12">
+          <div class="bordered-section">
+            <h4>Equipment</h4>
+            <table class="table">
+              <thead>
+                <tr><th>Item</th><th>Weight</th><th>Quantity</th><th>Carried</th><th>Delete</th></tr>
+              </thead>
+              <tbody>
+                <tr data-ng-repeat="equipment in character.equipment">
+                  <td><input type="text" data-ng-model="equipment.name" class="form-control table-input" placeholder="Item" /></td>
+                  <td><input type="number" class="form-control table-input" data-ng-model="equipment.weight" /></td>
+                  <td><input type="number" class="form-control table-input" data-ng-model="equipment.quantity" /></td>
+                  <td><input type="checkbox" class="checkbox" style="margin-top:10px;" data-ng-model="equipment.carried" /></td>
+                  <td><button class="btn btn-danger" data-ng-click="character.removeEquipment(equipment)" style="padding: 2px 10px">-</button></td>
+                </tr>
+              </tbody>
+            </table>
+            <button class="btn btn-success clear-b" data-ng-click="character.addEquipment()">+</button>
+            <button class="btn btn-success clear-b" data-ng-click="addEquipmentFromList()">Add From List</button>
+            <div class="row">
+              <label class="col-sm-2"><input type="number" class="statscore" style="width:100%;" data-ng-model="character.cp" />CP</label>
+              <label class="col-sm-2"><input type="number" class="statscore" style="width:100%;" data-ng-model="character.sp" />SP</label>
+              <label class="col-sm-2"><input type="number" class="statscore" style="width:100%;" data-ng-model="character.ep" />EP</label>
+              <label class="col-sm-2"><input type="number" class="statscore" style="width:100%;" data-ng-model="character.gp" />GP</label>
+              <label class="col-sm-2"><input type="number" class="statscore" style="width:100%;" data-ng-model="character.pp" />PP</label>
+              <label class="col-sm-2">{{character.cp/100 + character.sp/10 + character.gp + character.pp*10 + character.ep/2}}<br />Wealth</label>
+            </div>
+            <label>Weight Carried: {{character.carryWeight()}} / {{character.carryCapacity()}}</label>
+            <label><input type="checkbox" class="checkbox-inline" data-ng-model="character.powerfulbuild" /> Powerful Build</label>
+          </div>
+        </div>
+        <!-- Spells -->
+        <div class="col-sm-12">
+          <div class="bordered-section">
+            <h4>Spells</h4>
+            
+            <table class="table">
+              <thead>
+                <tr><th colspan="9">Spell Slots</th></tr>
+                <tr><th>Level</th><th>Current</th><th>Max</th><th>Bonus</th></tr>
+                
+              </thead>
+              <tbody>
+                <tr>
+                  <th>1st</th>
+                  <td><input type="number" data-ng-model="character.spellslots[0]" class="statscore table-input" /></td>
+                  <td>{{slots[character.casterLevel()][0] + character.spellslotsbonus[0]}}</td>
+                  <td><input type="number" data-ng-model="character.spellslotsbonus[0]" class="statscore table-input" /></td>
+                </tr>
+                <tr>
+                  <th>2nd</th>
+                  <td><input type="number" data-ng-model="character.spellslots[1]" class="statscore table-input" /></td>
+                  <td>{{slots[character.casterLevel()][1] + character.spellslotsbonus[1]}}</td>
+                  <td><input type="number" data-ng-model="character.spellslotsbonus[1]" class="statscore table-input" /></td>
+                </tr>
+                <tr>
+                  <th>3rd</th>
+                  <td><input type="number" data-ng-model="character.spellslots[2]" class="statscore table-input" /></td>
+                  <td>{{slots[character.casterLevel()][2] + character.spellslotsbonus[2]}}</td>
+                  <td><input type="number" data-ng-model="character.spellslotsbonus[2]" class="statscore table-input" /></td>
+                </tr>
+                <tr>
+                  <th>4th</th>
+                  <td><input type="number" data-ng-model="character.spellslots[3]" class="statscore table-input" /></td>
+                  <td>{{slots[character.casterLevel()][3] + character.spellslotsbonus[3]}}</td>
+                  <td><input type="number" data-ng-model="character.spellslotsbonus[3]" class="statscore table-input" /></td>
+                </tr>
+                <tr>
+                  <th>5th</th>
+                  <td><input type="number" data-ng-model="character.spellslots[4]" class="statscore table-input" /></td>
+                  <td>{{slots[character.casterLevel()][4] + character.spellslotsbonus[4]}}</td>
+                  <td><input type="number" data-ng-model="character.spellslotsbonus[4]" class="statscore table-input" /></td>
+                </tr>
+                <tr>
+                  <th>6th</th>
+                  <td><input type="number" data-ng-model="character.spellslots[5]" class="statscore table-input" /></td>
+                  <td>{{slots[character.casterLevel()][5] + character.spellslotsbonus[5]}}</td>
+                  <td><input type="number" data-ng-model="character.spellslotsbonus[5]" class="statscore table-input" /></td>
+                </tr>
+                <tr>
+                  <th>7th</th>
+                  <td><input type="number" data-ng-model="character.spellslots[6]" class="statscore table-input" /></td>
+                  <td>{{slots[character.casterLevel()][6] + character.spellslotsbonus[6]}}</td>
+                  <td><input type="number" data-ng-model="character.spellslotsbonus[6]" class="statscore table-input" /></td>
+                </tr>
+                <tr>
+                  <th>8th</th>
+                  <td><input type="number" data-ng-model="character.spellslots[7]" class="statscore table-input" /></td>
+                  <td>{{slots[character.casterLevel()][7] + character.spellslotsbonus[7]}}</td>
+                  <td><input type="number" data-ng-model="character.spellslotsbonus[7]" class="statscore table-input" /></td>
+                </tr>
+                <tr>
+                  <th>9th</th>
+                  <td><input type="number" data-ng-model="character.spellslots[8]" class="statscore table-input" /></td>
+                  <td>{{slots[character.casterLevel()][8] + character.spellslotsbonus[8]}}</td>
+                  <td><input type="number" data-ng-model="character.spellslotsbonus[8]" class="statscore table-input" /></td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Spells Known</h4>
+            <table class="table table-striped" id="spellTable">
+              <thead>
+                <tr><th><a ng-click="spellOrder = 'title'; spellDir = !spellDir;">Title<span data-ng-if="spellOrder === 'title' && spellDir === true">&#8963;</span><span data-ng-if="spellOrder === 'title' && spellDir === false">&#8964;</span></a><br /><input type="text" data-ng-model="nameValue" style="max-width:60px; padding: 0; line-height: normal;" /></th>
+                <th><a ng-click="spellOrder = 'level'; spellDir = !spellDir;">Level<span data-ng-if="spellOrder === 'level' && spellDir === true">&#8963;</span><span data-ng-if="spellOrder === 'level' && spellDir === false">&#8964;</span></a><br /><select data-ng-model="levelValue">
+                  <option value="">All</option>
+                  <option value="cantrip">Cantrip</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                </select></th><th><a ng-click="spellOrder = 'school'; spellDir = !spellDir;">School<span data-ng-if="spellOrder === 'school' && spellDir === true">&#8963;</span><span data-ng-if="spellOrder === 'school' && spellDir === false">&#8964;</span></a><br /><select data-ng-model="schoolValue">
+                  <option value="">All</option>
+                  <option value="abjuration">Abjuration</option>
+                  <option value="conjuration">Conjuration</option>
+                  <option value="divination">Divination</option>
+                  <option value="enchantment">Enchantment</option>
+                  <option value="evocation">Evocation</option>
+                  <option value="illusion">Illusion</option>
+                  <option value="necromancy">Necromancy</option>
+                  <option value="transmutation">Transmutation</option>
+                </select></th><th>Del</th></tr>
+              </thead>
+              <tbody>
+                <tr data-ng-repeat="spell in character.spellsKnown | orderBy: spellOrder : spellDir | spellFilter : nameValue: levelValue : schoolValue">
+                  <td><a href="#" ng-click="loadSpell($index)">{{spell.title}}</a></td>
+                  <td>{{spell.level}}</td>
+                  <td>{{spell.school}}</td>
+                  <td><button ng-click="removeSpell(spell)" class="btn btn-danger">-</button></td>
+                </tr>
+              </tbody>
+            </table>
+            <button class="btn btn-primary" data-ng-click="addSpell()">+</button>
+          </div>
+        </div>        
       </div>
-      <!--HP, hitdice, speed, actions, spells-->
     </div>
     <div class="col-sm-4">
-      <div class="bordered-section">
-        <h3>Class Abilities</h3>
-        <div data-ng-repeat="charclass in character.classes">
-          <div data-ng-repeat="feature in charclass.features" class="clear-b">
-            <div data-ng-if="feature.level <= charclass.level">
-              <h4>{{feature.name}}<button type="button" class="btn btn-default pull-right" ng-click="feature.isCollapsed = !feature.isCollapsed">
-      <span data-ng-if="!feature.isCollapsed">&#x25B2;</span><span data-ng-if="feature.isCollapsed">&#x25BC;</span>
-    </button></h4>
-              <p marked="feature.description" uib-collapse="feature.isCollapsed"></p>
-            </div>
-          </div>
-          <div data-ng-repeat="feature in charclass.selsubclass.features" class="clear-b">
-            <div data-ng-if="feature.level <= charclass.level">
-              <h4>{{feature.name}}<button type="button" class="btn btn-default pull-right" ng-click="feature.isCollapsed = !feature.isCollapsed">
-      <span data-ng-if="!feature.isCollapsed">&#x25B2;</span><span data-ng-if="feature.isCollapsed">&#x25BC;</span>
-    </button></h4>
-              <p marked="feature.description" uib-collapse="feature.isCollapsed"></p>  
-            </div>
-          </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="bordered-section">
+            <h4>Personality Traits</h4>
+            <textarea data-ng-model="character.personality" class="form-control" style="max-width: 100%;"></textarea>
+          </div>          
         </div>
-        <h3><span data-ng-if="character.race.subraces[0].id === 'default'">{{character.race.singular}}</span><span data-ng-if="character.race.subraces[0].id !== 'default'">{{character.subrace.singular}}</span> Racial Traits</h3>
-        <p data-ng-repeat="trait in character.race.traits" marked="trait"></p>
-        <p data-ng-repeat="trait in character.subrace.traits" marked="trait"></p>
-        <h3>Background: {{character.background.name}}</h3>
-        <p>
-          <strong>Background Skills:</strong> {{character.background.skills.join(', ');}}<br />
-          <strong>Background Tools:</strong> {{character.background.tools.join(', ');}}<br />
-          <strong>Background Languages:</strong> {{character.background.languages}} of your choice
-        </p>
-        <h4>Feature: {{character.background.feature.name}}</h4>
-        <div marked="character.background.feature.description"></div>        
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="bordered-section">
+            <h4>Ideal</h4>
+            <textarea data-ng-model="character.ideal" class="form-control" style="max-width: 100%;"></textarea>
+          </div>          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="bordered-section">
+            <h4>Bond</h4>
+            <textarea data-ng-model="character.bond" class="form-control" style="max-width: 100%;"></textarea>
+          </div>          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="bordered-section">
+            <h4>Flaw</h4>
+            <textarea data-ng-model="character.flaw" class="form-control" style="max-width: 100%;"></textarea>
+          </div>          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="bordered-section">
+            <h3>Class Abilities</h3>
+            <div data-ng-repeat="charclass in character.classes">
+              <div data-ng-repeat="feature in charclass.features" class="clear-b">
+                <div data-ng-if="feature.level <= charclass.level">
+                  <h4>{{feature.name}}<button type="button" class="btn btn-default pull-right" ng-click="feature.isCollapsed = !feature.isCollapsed">
+          <span data-ng-if="!feature.isCollapsed">&#x25B2;</span><span data-ng-if="feature.isCollapsed">&#x25BC;</span>
+        </button></h4>
+                  <p marked="feature.description" uib-collapse="feature.isCollapsed"></p>
+                </div>
+              </div>
+              <div data-ng-repeat="feature in charclass.selsubclass.features" class="clear-b">
+                <div data-ng-if="feature.level <= charclass.level">
+                  <h4>{{feature.name}}<button type="button" class="btn btn-default pull-right" ng-click="feature.isCollapsed = !feature.isCollapsed">
+          <span data-ng-if="!feature.isCollapsed">&#x25B2;</span><span data-ng-if="feature.isCollapsed">&#x25BC;</span>
+        </button></h4>
+                  <p marked="feature.description" uib-collapse="feature.isCollapsed"></p>  
+                </div>
+              </div>
+            </div>
+            <h3><span data-ng-if="character.race.subraces[0].id === 'default'">{{character.race.singular}}</span><span data-ng-if="character.race.subraces[0].id !== 'default'">{{character.subrace.singular}}</span> Racial Traits</h3>
+            <p data-ng-repeat="trait in character.race.traits" marked="trait"></p>
+            <p data-ng-repeat="trait in character.subrace.traits" marked="trait"></p>
+            <h3>Background: {{character.background.name}}</h3>
+            <p>
+              <strong>Background Skills:</strong> {{character.background.skills.join(', ');}}<br />
+              <strong>Background Tools:</strong> {{character.background.tools.join(', ');}}<br />
+              <strong>Background Languages:</strong> {{character.background.languages}} of your choice
+            </p>
+            <h4>Feature: {{character.background.feature.name}}</h4>
+            <div marked="character.background.feature.description"></div>        
+          </div>          
+        </div>
       </div>
 
     </div>
-   
   </div>
-
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="bordered-section">
+        <h4>Notes</h4>
+        <textarea class="form-control" style="max-width:100%;" data-ng-model="character.notes"></textarea>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <h4>Journal</h4>
+      <div data-ng-repeat="entry in character.journal | orderBy: journalSort : true" class="bordered-section">
+        Date: <select data-ng-model="entry.day" class="statscore">
+          <option value=""></option>
+          <option ng-value="1">1</option><option ng-value="2">2</option><option ng-value="3">3</option><option ng-value="4">4</option><option ng-value="5">5</option><option ng-value="6">6</option><option ng-value="7">7</option><option ng-value="8">8</option><option ng-value="9">9</option><option ng-value="10">10</option><option ng-value="11">11</option><option ng-value="12">12</option><option ng-value="13">13</option><option ng-value="14">14</option><option ng-value="15">15</option><option ng-value="16">16</option><option ng-value="17">17</option><option ng-value="18">18</option><option ng-value="19">19</option><option ng-value="20">20</option><option ng-value="21">21</option><option ng-value="22">22</option><option ng-value="23">23</option><option ng-value="24">24</option><option ng-value="25">25</option><option ng-value="26">26</option><option ng-value="27">27</option><option ng-value="28">28</option><option ng-value="29">29</option><option ng-value="30">30</option>
+        </select>
+        <select data-ng-model="entry.month" class="statscore" style="width: 100px;">
+          <option value=""></option>
+          <option ng-value="1">Neradan</option><option ng-value="2">Dorunor</option><option ng-value="3">Trimalan</option><option ng-value="4">Sylvanus</option><option ng-value="5">Gaiana</option><option ng-value="6">Alohiman</option><option ng-value="7">Coranus</option><option ng-value="8">Moltyr</option><option ng-value="9">Saris</option><option ng-value="10">Maridia</option><option ng-value="11">Tockra</option><option ng-value="12">Amatherin</option>
+        </select>
+        <input type="number" class="statscore" style="width: 80px;" data-ng-model="entry.year" />
+        <button class="btn btn-danger" data-ng-click="character.deleteJournal(entry)">-</button><br />
+        <textarea class="form-control" style="max-width: 100%;" data-ng-model="entry.text"></textarea>
+      </div>
+      <button class="btn btn-primary" data-ng-click="character.addJournal()">Add Entry</button>
+    </div>
+  </div>
 </div>

@@ -1,0 +1,15 @@
+<div class="modal-header">
+  <h2>Add Equipment <button class="close" type="button" data-ng-click="cancel()">&times;</button></h2>
+</div>
+<div class="modal-content">
+  <table class="table table-striped">
+    <thead>
+      <tr><th></th><th>Item</th><th>Cost</th><th>Weight</th></tr>
+    </thead>
+    <tbody>
+      <tr data-ng-repeat="item in allEquipment">
+        <td><input type="button" class="btn btn-primary" value="Select" ng-click="selected(item)" /></td><td>{{item.Item}}</td><td>{{item.Cost}}</td><td>{{item.Weight}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

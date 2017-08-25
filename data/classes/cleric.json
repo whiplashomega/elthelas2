@@ -1,6 +1,6 @@
 {
   "name": "Cleric",
-  "level": 0,
+  "level": 1,
   "hitdie": 8,
   "proficiencies": {
     "armor": ["light armor", "medium armor", "shields"],

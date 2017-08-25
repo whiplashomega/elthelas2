@@ -1,6 +1,6 @@
 {
   "name": "Barbarian",
-  "level": 0,
+  "level": 1,
   "hitdie": 12,
   "proficiencies": {
     "armor": ["light armor", "medium armor", "shields"],

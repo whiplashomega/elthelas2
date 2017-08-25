@@ -199,7 +199,7 @@
                   Type: "Weapon (" + $scope.weapons[l].Name + ")",
                   Attunement: "No",
                   Rarity: "Uncommon",
-                  Effect: "You have a +1 bonus to attack and damage rolls made with this" + $scope.weapons[l].Name + ".",
+                  Effect: "You have a +1 bonus to attack and damage rolls made with this " + $scope.weapons[l].Name + ".",
                   "Cost (gp)": 3000
                 });
                 $scope.magicItems.push({
@@ -207,7 +207,7 @@
                   Type: "Weapon (" + $scope.weapons[l].Name + ")",
                   Attunement: "No",
                   Rarity: "Rare",
-                  Effect: "You have a +2 bonus to attack and damage rolls made with this" + $scope.weapons[l].Name + ".",
+                  Effect: "You have a +2 bonus to attack and damage rolls made with this " + $scope.weapons[l].Name + ".",
                   "Cost (gp)": 8000
                 });
                 $scope.magicItems.push({
@@ -215,7 +215,7 @@
                   Type: "Weapon (" + $scope.weapons[l].Name + ")",
                   Attunement: "No",
                   Rarity: "Very Rare",
-                  Effect: "You have a +3 bonus to attack and damage rolls made with this" + $scope.weapons[l].Name + ".",
+                  Effect: "You have a +3 bonus to attack and damage rolls made with this " + $scope.weapons[l].Name + ".",
                   "Cost (gp)": 14000
                 });
                 $scope.magicItems.push({

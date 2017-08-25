@@ -53,7 +53,7 @@
    "Damage": "1d6 bludgeoning",
    "Weight": "4 lb",
    "Properties": "-",
-   "Cost": "5 gp"
+   "Cost": "5"
  },
  {
    "Name": "Quarterstaff",
@@ -107,7 +107,7 @@
    "Name": "Sling",
    "Type": "Simple",
    "Damage": "1d4 bludgeoning",
-   "Weight": "-",
+   "Weight": "0",
    "Properties": "ranged, Ammunition (range 30/120)",
    "Cost": "0.1"
  },
@@ -237,7 +237,7 @@
    "Damage": "1d8 piercing",
    "Weight": "2 lb",
    "Properties": "-",
-   "Cost": "5 gp"
+   "Cost": "5"
  },
  {
    "Name": "Warhammer",

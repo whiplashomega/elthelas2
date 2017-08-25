@@ -42,6 +42,17 @@
       return deferred.promise;
     };
     
+    items.getEquipment = function() {
+      var deferred = $q.defer();
+      
+      $http.get('/json/equipment.json').then(function(response) {
+        deferred.resolve(response);
+      }, function(response) {
+        deferred.reject();
+      });
+      
+      return deferred.promise;
+    }
     return items;
   }]);
 })(jQuery, angular);
