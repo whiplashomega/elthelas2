@@ -1,4 +1,4 @@
-<div class="col-sm-10">
+<div class="col-sm-12">
   <style>
     .form-control {
       border: 0px;
@@ -27,18 +27,26 @@
       border-bottom: 0;
       padding: 3px;
     }
+    .prepspell {
+      background-color: #6784C6;
+      color: #ffffff;
+    }
+    .prepspell a {
+      color: #ffffff;
+    }
   </style>
   <h1>Character Builder</h1>
   <div class="row">
-    <div class="col-sm-4">
-      <label class="col-sm-12"><input id="charname" type="text" class="form-control" data-ng-model="character.name" />Character Name</label>
-      <label class="col-sm-12"><input type="file" class="form-control" id="fileload" /></label>
-      <div class="btn-group col-sm-12">
+    <div class="col-md-4">
+      
+      <label style="width:100%;"><input id="charname" type="text" class="form-control" data-ng-model="character.name" />Character Name</label>
+      <label style="width:100%;"><input type="file" class="form-control" id="fileload" /></label>
+      <div class="btn-group" style="width:100%;">
         <input type="button" class="btn btn-success" value="Load" ng-click="character.load()" /><input type="button" class="btn btn-primary" value="Save" ng-click="character.save()" />
       </div>
     </div>
     
-    <div class="col-sm-8">
+    <div class="col-md-8">
       <div class="bordered-section">
         <!-- Class, Race, Background -->
         <label class="col-sm-8">
@@ -47,7 +55,7 @@
             <select data-ng-model="character.classes[$index].selsubclass" data-ng-options="subc as subc.name for subc in character.classes[$index].subclass" class="form-control" style="width: 38%; display: inline-block;"></select>
             <input type="number" data-ng-model="character.classes[$index].level" class="form-control" style="width:15%; display: inline-block"/>
             
-            <button class="btn btn-warning" data-ng-click="character.removeClass(myclass)">-</button>
+            <button class="btn btn-danger" data-ng-click="character.removeClass(myclass)">&times;</button>
           </span>
           Class & Level
           <div class="btn-group" style="width:20%; margin-top: 5px;">
@@ -70,7 +78,7 @@
     </div>
   </div>
   <div class="row">
-    <div class='col-sm-3'>
+    <div class='col-lg-3'>
       <table class="table table-striped">
         <thead>
           <tr>
@@ -161,10 +169,10 @@
         <textarea data-ng-model="character.proficiencies" class="form-control" style="max-width: 100%;"></textarea>
       </div>
     </div>
-    <div class='col-sm-5'>
+    <div class='col-lg-5'>
       <div class="row">
         <!--HP, hitdice, Proficiency -->
-        <div class="col-sm-4">
+        <div class="col-xs-4">
           <label class="bordered-section">
             <div style="width: 100%; margin-top: 10px"><input type="number" class="statscore" data-ng-model="character.hpcurrent"/> / <input type="number" class="statscore" data-ng-model="character.hpmax" />
             </div>
@@ -186,27 +194,27 @@
           </label>
         </div>
         <!-- Armor Class -->
-        <div class="col-sm-4">
+        <div class="col-xs-4">
           <label class="bordered-section" style="margin-top:10px; text-align:center;">
             {{character.ac()}}<br />
             Armor Class
           </label>        
         </div>
         <!-- Initiative -->
-        <div class="col-sm-4">
+        <div class="col-xs-4">
           <label class="bordered-section">
             <input type="number" class="form-control" data-ng-model="character.initiative" />
             Initiative
           </label>        
         </div>
         <!-- Speed -->
-        <div class="col-sm-8">
+        <div class="col-xs-8">
           <label class="bordered-section">
             <input type="text" data-ng-model="character.speed" class="form-control" />Speed 
           </label>
         </div>
         <!-- Death Saves -->
-        <div class="col-sm-8">
+        <div class="col-xs-8">
           <div class="bordered-section">
             <h4>Death Saves</h4>
             <strong>Successes</strong> <label><input type="checkbox" data-ng-model="character.deathsuccess1"  class="checkbox-inline" /></label> <label><input type="checkbox" data-ng-model="character.deathsuccess2" class="checkbox-inline" /></label> <label><input type="checkbox" data-ng-model="character.deathsuccess3" class="checkbox-inline" /></label> <br />
@@ -214,18 +222,18 @@
           </div>
         </div>
         <!-- Attacks -->
-        <div class="col-sm-12">
+        <div class="col-xs-12">
           <div class="bordered-section">
             <h4>Attacks</h4>
             <div ng-repeat="attack in character.attacks">
               <input type="text" data-ng-model="attack.name" class="form-control" placeholder="Attack Name" style="margin: 5px 0;" />
-              <label>Bonus: <input type="number" class="statscore" data-ng-model="attack.att" /></label> <label>Damage: <input type="text" class="statscore" style="min-width: 100px;" data-ng-model="attack.dmg" /></label> <label>Range: <input type="text" class="statscore" /></label> <button class="btn btn-danger" data-ng-click="character.removeAttack(attack)">-</button>
+              <label>Bonus: <input type="number" class="statscore" data-ng-model="attack.att" /></label> <label>Damage: <input type="text" class="statscore" style="min-width: 100px;" data-ng-model="attack.dmg" /></label> <label>Range: <input type="text" class="statscore" /></label> <button class="btn btn-danger" data-ng-click="character.removeAttack(attack)">&times;</button>
             </div>
             <button class="btn btn-success" data-ng-click="character.addAttack()">+</button>
           </div>
         </div>
         <!-- Armor -->
-        <div class="col-sm-12">
+        <div class="col-xs-12">
           <div class="bordered-section">
             <h4>Armor</h4>
             <div ng-repeat="armor in character.armor">
@@ -239,13 +247,13 @@
                 <option value="shield">Shield</option>
               </select></label><label>Equipped: <input type="checkbox" data-ng-model="armor.equipped" class="checkbox-inline" /></label>
               
-              <div class="btn-group"><button class="btn btn-danger" data-ng-click="character.removeArmor(armor)" style="margin-top: 10px;">-</button></div>
+              <div class="btn-group"><button class="btn btn-danger" data-ng-click="character.removeArmor(armor)" style="margin-top: 10px;">&times;</button></div>
             </div>
             <button class="btn btn-success" data-ng-click="character.addArmor()">+</button>
           </div>
         </div>
         <!-- Equipment -->
-        <div class="col-sm-12">
+        <div class="col-xs-12">
           <div class="bordered-section">
             <h4>Equipment</h4>
             <table class="table">
@@ -258,7 +266,7 @@
                   <td><input type="number" class="form-control table-input" data-ng-model="equipment.weight" /></td>
                   <td><input type="number" class="form-control table-input" data-ng-model="equipment.quantity" /></td>
                   <td><input type="checkbox" class="checkbox" style="margin-top:10px;" data-ng-model="equipment.carried" /></td>
-                  <td><button class="btn btn-danger" data-ng-click="character.removeEquipment(equipment)" style="padding: 2px 10px">-</button></td>
+                  <td><button class="btn btn-danger" data-ng-click="character.removeEquipment(equipment)" style="padding: 2px 10px">&times;</button></td>
                 </tr>
               </tbody>
             </table>
@@ -277,7 +285,7 @@
           </div>
         </div>
         <!-- Spells -->
-        <div class="col-sm-12">
+        <div class="col-xs-12">
           <div class="bordered-section">
             <h4>Spells</h4>
             
@@ -345,10 +353,16 @@
               </tbody>
             </table>
             <h4>Spells Known</h4>
-            <table class="table table-striped" id="spellTable">
+            <p>
+              <strong>Number Prepared: {{character.numPrepared()}}</strong>
+            </p>
+            <table class="table" id="spellTable">
               <thead>
-                <tr><th><a ng-click="spellOrder = 'title'; spellDir = !spellDir;">Title<span data-ng-if="spellOrder === 'title' && spellDir === true">&#8963;</span><span data-ng-if="spellOrder === 'title' && spellDir === false">&#8964;</span></a><br /><input type="text" data-ng-model="nameValue" style="max-width:60px; padding: 0; line-height: normal;" /></th>
-                <th><a ng-click="spellOrder = 'level'; spellDir = !spellDir;">Level<span data-ng-if="spellOrder === 'level' && spellDir === true">&#8963;</span><span data-ng-if="spellOrder === 'level' && spellDir === false">&#8964;</span></a><br /><select data-ng-model="levelValue">
+                <tr>
+                  <th>
+                    <a ng-click="spellOrder = 'title'; spellDir = !spellDir;">Title<span data-ng-if="spellOrder === 'title' && spellDir === true">&#8963;</span><span data-ng-if="spellOrder === 'title' && spellDir === false">&#8964;</span></a><br /><input type="text" data-ng-model="nameValue" style="max-width:60px; padding: 0; line-height: normal;" />
+                  </th>
+                  <th><a ng-click="spellOrder = 'level'; spellDir = !spellDir;">Level<span data-ng-if="spellOrder === 'level' && spellDir === true">&#8963;</span><span data-ng-if="spellOrder === 'level' && spellDir === false">&#8964;</span></a><br /><select data-ng-model="levelValue">
                   <option value="">All</option>
                   <option value="cantrip">Cantrip</option>
                   <option value="1">1</option>
@@ -360,7 +374,8 @@
                   <option value="7">7</option>
                   <option value="8">8</option>
                   <option value="9">9</option>
-                </select></th><th><a ng-click="spellOrder = 'school'; spellDir = !spellDir;">School<span data-ng-if="spellOrder === 'school' && spellDir === true">&#8963;</span><span data-ng-if="spellOrder === 'school' && spellDir === false">&#8964;</span></a><br /><select data-ng-model="schoolValue">
+                </select></th>
+                  <th><a ng-click="spellOrder = 'school'; spellDir = !spellDir;">School<span data-ng-if="spellOrder === 'school' && spellDir === true">&#8963;</span><span data-ng-if="spellOrder === 'school' && spellDir === false">&#8964;</span></a><br /><select data-ng-model="schoolValue">
                   <option value="">All</option>
                   <option value="abjuration">Abjuration</option>
                   <option value="conjuration">Conjuration</option>
@@ -370,23 +385,31 @@
                   <option value="illusion">Illusion</option>
                   <option value="necromancy">Necromancy</option>
                   <option value="transmutation">Transmutation</option>
-                </select></th><th>Del</th></tr>
+                </select></th>
+                  <th><a ng-click="spellOrder = 'prepared'; spellDir = !spellDir;">Prep<span data-ng-if="spellOrder === 'prepared' && spellDir === true">&#8963;</span><span data-ng-if="spellOrder === 'prepared' && spellDir === false">&#8964;</span></a><br /><select data-ng-model="preparedValue">
+                  <option value="">All</option>
+                  <option ng-value="true">Yes</option>
+                  <option ng-value="false">No</option>
+                </select></th>
+                  <th>Del</th>
+                </tr>
               </thead>
               <tbody>
-                <tr data-ng-repeat="spell in character.spellsKnown | orderBy: spellOrder : spellDir | spellFilter : nameValue: levelValue : schoolValue">
+                <tr data-ng-repeat="spell in character.spellsKnown | orderBy: spellOrder : spellDir | spellFilter : nameValue : levelValue : schoolValue: preparedValue" data-ng-class="spell.prepared ? 'prepspell' : ''">
                   <td><a href="#" ng-click="loadSpell($index)">{{spell.title}}</a></td>
                   <td>{{spell.level}}</td>
                   <td>{{spell.school}}</td>
-                  <td><button ng-click="removeSpell(spell)" class="btn btn-danger">-</button></td>
+                  <td><input type="checkbox" data-ng-hide="spell.level === 'cantrip'" data-ng-model="spell.prepared" /></td>
+                  <td><button ng-click="removeSpell(spell)" class="btn btn-danger">&times;</button></td>
                 </tr>
               </tbody>
             </table>
-            <button class="btn btn-primary" data-ng-click="addSpell()">+</button>
+            <button class="btn btn-success" data-ng-click="addSpell()">+</button>
           </div>
         </div>        
       </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-lg-4">
       <div class="row">
         <div class="col-sm-12">
           <div class="bordered-section">
@@ -459,13 +482,13 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-6">
+    <div class="col-md-6">
       <div class="bordered-section">
         <h4>Notes</h4>
         <textarea class="form-control" style="max-width:100%;" data-ng-model="character.notes"></textarea>
       </div>
     </div>
-    <div class="col-sm-6">
+    <div class="col-md-6">
       <h4>Journal</h4>
       <div data-ng-repeat="entry in character.journal | orderBy: journalSort : true" class="bordered-section">
         Date: <select data-ng-model="entry.day" class="statscore">
@@ -477,10 +500,10 @@
           <option ng-value="1">Neradan</option><option ng-value="2">Dorunor</option><option ng-value="3">Trimalan</option><option ng-value="4">Sylvanus</option><option ng-value="5">Gaiana</option><option ng-value="6">Alohiman</option><option ng-value="7">Coranus</option><option ng-value="8">Moltyr</option><option ng-value="9">Saris</option><option ng-value="10">Maridia</option><option ng-value="11">Tockra</option><option ng-value="12">Amatherin</option>
         </select>
         <input type="number" class="statscore" style="width: 80px;" data-ng-model="entry.year" />
-        <button class="btn btn-danger" data-ng-click="character.deleteJournal(entry)">-</button><br />
+        <button class="btn btn-danger" data-ng-click="character.deleteJournal(entry)">&times;</button><br />
         <textarea class="form-control" style="max-width: 100%;" data-ng-model="entry.text"></textarea>
       </div>
-      <button class="btn btn-primary" data-ng-click="character.addJournal()">Add Entry</button>
+      <button class="btn btn-success" data-ng-click="character.addJournal()">Add Entry</button>
     </div>
   </div>
 </div>

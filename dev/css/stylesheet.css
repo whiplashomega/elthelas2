@@ -122,15 +122,8 @@ footer {
 .btn-warning:hover {
   background-color: #4d3696; }
 
-.btn-danger {
-  background-color: #3F1EAB;
-  color: #ffffff; }
-
 .alert-danger {
   background-color: #714fe0; }
-
-.btn-danger:hover {
-  background-color: #1f0f54; }
 
 .navbar-default {
   background-color: #3E60AF; }

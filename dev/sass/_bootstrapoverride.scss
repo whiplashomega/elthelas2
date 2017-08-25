@@ -3,10 +3,12 @@
 .btn-primary, .btn-default {
   background-color: $primary;
   color: $primarytext;
+  border-color: $primary;
 }
 
-.btn-primary:hover, .btn-default:hover {
+.btn-primary:hover, .btn-default:hover, .btn-primary:active, .btn-default:active {
   background-color: $primaryhover;
+  border-color: $primaryhover;
 }
 
 .alert-info {
@@ -17,6 +19,7 @@
 .btn-success {
   background-color: $success;
   color: $successtext;
+  border-color: $success;
 }
 
 .alert-success {
@@ -24,13 +27,9 @@
   color: $successtext;
 }
 
-.btn-success:hover {
+.btn-success:hover, .btn-success:active {
   background-color: $successhover;
-}
-
-.btn-warning {
-  background-color: $warning;
-  color: $warningtext;
+  border-color: $successhover;
 }
 
 .alert-warning {
@@ -38,21 +37,8 @@
   color: $warningtext;
 }
 
-.btn-warning:hover {
-  background-color: $warninghover;
-}
-
-.btn-danger {
-  background-color: $danger;
-  color: $dangertext;
-}
-
 .alert-danger {
   background-color: lighten($danger, 20%);
-}
-
-.btn-danger:hover {
-  background-color: $dangerhover;
 }
 
 .navbar-default {

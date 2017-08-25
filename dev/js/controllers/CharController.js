@@ -37,7 +37,7 @@
     }
     
   }).filter('spellFilter', function() {
-    return function(spells, name, level, school) {
+    return function(spells, name, level, school, prepared) {
         return spells.filter(function(a) {
           var temp = true;
           if(name !== "" && a.title.indexOf(name) === -1) {
@@ -47,6 +47,9 @@
             temp = false;
           }
           if(school !== "" && a.school !== school) {
+            temp = false;
+          }
+          if(prepared !== "" && a.prepared !== prepared) {
             temp = false;
           }
           return temp;
@@ -321,6 +324,15 @@
       },
       deleteJournal: function(entry) {
         this.journal.splice(this.journal.indexOf(entry), 1);
+      },
+      numPrepared: function() {
+        var count = 0;
+        this.spellsKnown.forEach(function(spell) {
+          if(spell.prepared && spell.level !== "cantrip") {
+            count ++;
+          }
+        });
+        return count;
       }
     };
     $scope.journalSort = function(a) {
@@ -332,11 +344,9 @@
     $scope.nameValue = "";
     $scope.levelValue = "";
     $scope.schoolValue = "";
+    $scope.preparedValue = "";
     $scope.spellOrder = "level";
-    $scope.setFilter =  function(attr, value) {
-      $scope.filterAttribute = attr;
-      $scope.filterValue = value;
-    }
+
     $scope.loadSpell =  function(index) {
       var currentSpell = $scope.character.spellsKnown[index];
       $scope.$apply();

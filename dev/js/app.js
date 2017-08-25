@@ -457,7 +457,7 @@
           templateUrl: '/html/head/tools/characterbuilder.html'
         },
         'sidebar@': {
-          templateUrl: '/html/sidebar/campaign.html'
+          templateUrl: '/html/empty.html'
         },
         data: {
           title: 'Character Builder', 
