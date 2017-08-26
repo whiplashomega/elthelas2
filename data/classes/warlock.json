@@ -61,6 +61,114 @@
           "level": 1,
           "name": "Fey Presence",
           "description": "Starting at 1st level, your patron bestows upon you the ability to project the beguiling and fearsome presence of the fey. As an action, you can cause each creature in a 10-foot cube originating from you to make a Wisdom saving throw against your warlock spell save DC. The creatures that fail their saving throws are all charmed or frightened by you (your choice) until the end of your next turn. \n\nOnce you use this feature, you can’t use it again until you finish a short or long rest."
+        },
+        {
+          "level": 6,
+          "name": "Misty Escape",
+          "description": "Starting at 6th level, you can vanish in a puff of mist in response to harm. When you take damage, you can use your reaction to turn invisible and teleport up to 60 feet to an unoccupied space you can see. You remain invisible until the start of your next turn or until you attack or cast a spell.\n\nOnce you use this feature, you can't use it again until you finish a short or long rest."
+        },
+        {
+          "level": 10,
+          "name": "Beguiling Defenses",
+          "description": "Beginning at 10th level, your patron teaches you how to turn the mind-affecting m agic of your enemies against them. You are immune to being charmed, and when another creature attempts to charm you, you can use your reaction to attempt to turn the charm back on that creature. The creature must succeed on a Wisdom saving throw against your warlock spell save DC or be charm ed by you for 1 minute or until the creature takes any damage"
+        },
+        {
+          "level": 14,
+          "name": "Dark Delirium",
+          "description": "Starting at 14th level, you can plunge a creature into an illusory realm. As an action, choose a creature that you can see within 60 feet of you. It must make a Wisdom saving throw against your warlock spell save DC. On a failed save, it is charmed or frightened by you (your choice) for 1 minute or until your concentration is broken (as if you are concentrating on a spell). This effect ends early if the creature takes any damage.\n\nUntil this illusion ends, the creature thinks it is lost in a misty realm, the appearance of which you choose. The creature can see and hear only itself, you, and the illusion.\n\nYou must finish a short or long rest before you can use this feature again."
+        }
+      ]
+    },
+    {
+      "name": "The Fiend",
+      "castermult": 0,
+      "features": [
+        {
+          "level": 1,
+          "name": "Expanded Spell List",
+          "description": "The Fiend lets you choose from an expanded list of spells when you learn a w arlock spell. The following spells are added to the w arlock spell list for you. 1st - burning hands, command. 2nd - blindness/deafness, scorching ray. 3rd - fireball, stinking cloud.  4th - fire shield, wall of fire. 5th - flame strike, hallow."
+        },
+        {
+          "level": 1,
+          "name": "Dark One's Blessing",
+          "description": "Starting at 1st level, when you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your warlock level (minimum of 1)."
+        },
+        {
+          "level": 6,
+          "name": "Dark One's Own Luck",
+          "description": "Starting at 6th level, you can call on your patron to alter fate in your favor. When you make an ability check or a saving throw, you can use this feature to add a d10 to your roll. You can do so after seeing the initial roll but before any of the roll’s effects occur.\n\nOnce you use this feature, you can’t use it again until you finish a short or long rest."
+        },
+        {
+          "level": 10,
+          "name": "Fiendish Resilience",
+          "description": "Starting at 10th level, you can choose one damage type when you finish a short or long rest. You gain resistance to that damage type until you choose a different one with this feature. Damage from magical weapons or silver weapons ignores this resistance."
+        },
+        {
+          "level": 14,
+          "name": "Hurl Through Hell",
+          "description": "Starting at 14th level, when you hit a creature with an attack, you can use this feature to instantly transport the target through the lower planes. The creature disappears and hurtles through a nightmare landscape.\n\nAt the end of your next turn, the target returns to the space it previously occupied, or the nearest unoccupied space. If the target is not a fiend, it takes 10d10 psychic damage as it reels from its horrific experience.\n\nOnce you use this feature, you can’t use it again until you finish a long rest."
+        }
+      ]
+    },
+    {
+      "name": "The Great Old One",
+      "castermult": 0,
+      "features": [
+        {
+          "level": 1,
+          "name": "Expanded Spell List",
+          "description": "The Great Old One lets you choose from an expanded list of spells when you learn a w arlock spell. The following spells are added to the warlock spell list for you. 1st - dissonant whispers, Tasha's hideous laughter. 2nd - detect thoughts, phantasmal force. 3rd - clairvoyance, sending. 4th - dominate beast, Evard's black tentacles. 5th - dominate person, telekinesis."
+        },
+        {
+          "level": 1,
+          "name": "Awakened Mind",
+          "description": "Starting at 1st level, your alien knowledge gives you the ability to touch the minds of other creatures. You can communicate telepathically with any creature you can see within 30 feet of you. You don’t need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language."
+        },
+        {
+          "level": 6,
+          "name": "Entropic Ward",
+          "description": "At 6th level, you learn to magically ward yourself against attack and to turn an enem y’s failed strike into good luck for yourself. When a creature makes an attack roll against you, you can use your reaction to impose disadvantage on that roll. If the attack misses you, your next attack roll against the creature has advantage if you make it before the end of your next turn.\n\nOnce you use this feature, you can’t use it again until you finish a short or long rest."
+        },
+        {
+          "level": 10,
+          "name": "Thought Shield",
+          "description": "Starting at 10th level, your thoughts can’t be read by telepathy or other means unless you allow it. You also have resistance to psychic damage, and whenever a creature deals psychic damage to you, that creature takes the same amount of damage that you do."
+        },
+        {
+          "level": 14,
+          "name": "Create Thrall",
+          "description": "At 14th level, you gain the ability to infect a humanoid’s mind with the alien magic of your patron. You can use your action to touch an incapacitated humanoid. That creature is then charmed by you until a remove curse spell is cast on it, the charmed condition is removed from it, or you use this feature again.\n\nYou can communicate telepathically with the charmed creature as long as the two of you are on the same plane of existence."
+        }
+      ]
+    },
+    {
+      "name": "The Undying",
+      "castermult": 0,
+      "features": [
+        {
+          "level": 1,
+          "name": "Expanded Spell List",
+          "description": "The Undying lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you. 1st - false life, ray of sickness. 2nd - blindness/deafness, silence. 3rd - feign death, speak with dead. 4th - aura of life, death ward. 5th - contagion, legend lore."          
+        },
+        {
+          "level": 1,
+          "name": "Among the Dead",
+          "description": "Starting at 1st level, you learn the spare the dying can-trip, which counts as a warlock cantrip for you. You also have advantage on saving throws against any disease. Additionally, undead have difficulty harming you. If an undead targets you directly with an attack or a harmful spell, that creature must make a Wisdom saving throw against your spell save DC (an undead needn't make the save when it includes you in an area effect, such as the explosion of fireball). On a failed save, the creature must choose a new target or forfeit targeting someone instead of you, potentially wasting the attack or spell. On a suc-cessful save, the creature is immune to this effect for 24 hours. An undead is also immune to this effect for 24 hours if you target it with an attack or a harmful spell."
+        },
+        {
+          "level": 6,
+          "name": "Defy Death",
+          "description": "Starting at 6th level, you can give yourself vitality when you cheat death or when you help someone else cheat it. You can regain hit points equal to ld8 +your Constitu-tion modifier (minimum of 1 hit point) when you succeed on a death saving throw or when you stabilize a creature with spare the dying.\n\nOnce you use this feature, you can't use it again until you finish a long rest. "
+        },
+        {
+          "level": 10,
+          "name": "Undying Nature",
+          "description": "Beginning at 10th level, you can hold your breath in-definitely, and you don't require food, water, or sleep, although you still require rest to reduce exhaustion and still benefit from finishing short and long rests.\n\nIn addition, you age at a slower rate. For every 10 years that pass, your body ages only 1 year, and you are immune to being magically aged."
+        },
+        {
+          "level": 14,
+          "name": "Indestructible Life",
+          "description": "When you reach 14th level, you partake of some of the true secrets of the Undying. On your turn, you can use a bonus action to regain hit points equal to ld8 +your warlock level. Additionally, if you put a severed body part of yours back in place when you use this feature, the part reattaches.\n\nOnce you use this feature, you can't use it again until you finish a short or long rest."
         }
       ]
     }
