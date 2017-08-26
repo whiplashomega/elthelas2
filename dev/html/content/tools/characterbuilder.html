@@ -287,6 +287,43 @@
         <!-- Spells -->
         <div class="col-xs-12">
           <div class="bordered-section">
+            <h4>Attack Bonus and Save DC</h4>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th></th><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Bonus</th>
+                  <th colspan="2">Atk Magic Bonus</th><td><input type="number" class="statscore" data-ng-model="character.attMagic" /></td>
+                  <th colspan="2">Save Magic Bonus</th><td><input type="number" class="statscore" data-ng-model="character.saveMagic" /></td>
+                </tr>
+                <tr>
+                  <th>Atk</th>
+                  <td>{{character.prof() + character.strmod() + character.attMagic}}</td>
+                  <td>{{character.prof() + character.dexmod() + character.attMagic}}</td>
+                  <td>{{character.prof() + character.conmod() + character.attMagic}}</td>
+                  <td>{{character.prof() + character.intmod() + character.attMagic}}</td>
+                  <td>{{character.prof() + character.wismod() + character.attMagic}}</td>
+                  <td>{{character.prof() + character.chamod() + character.attMagic}}</td>
+                </tr>
+                <tr>
+                  <th>Save</th>
+                  <td>{{8 + character.prof() + character.strmod() + character.saveMagic}}</td>
+                  <td>{{8 + character.prof() + character.dexmod() + character.saveMagic}}</td>
+                  <td>{{8 + character.prof() + character.conmod() + character.saveMagic}}</td>
+                  <td>{{8 + character.prof() + character.intmod() + character.saveMagic}}</td>
+                  <td>{{8 + character.prof() + character.wismod() + character.saveMagic}}</td>
+                  <td>{{8 + character.prof() + character.chamod() + character.saveMagic}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <div class="bordered-section">
             <h4>Spells</h4>
             
             <table class="table">
@@ -405,6 +442,7 @@
               </tbody>
             </table>
             <button class="btn btn-success" data-ng-click="addSpell()">+</button>
+
           </div>
         </div>        
       </div>

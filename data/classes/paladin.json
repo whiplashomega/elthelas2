@@ -1,0 +1,228 @@
+{
+  "name": "Paladin",
+  "level": 1,
+  "hitdie": 10,
+  "proficiencies": {
+    "armor": ["light armor", "medium armor", "heavy armor", "shields"],
+    "weapons": ["simple weapons", "martial weapons"],
+    "tools": [],
+    "saving throws": ["wis", "cha"],
+    "numskills": 2,
+    "skills": [
+      "athletics", "insight", "intimidation", "medicine", "persuasion", "religion"
+    ]
+  },
+  "features": [
+    {
+      "level": 1,
+      "name": "divine sense",
+      "description": "The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity (the vampire Count Strahd von Zarovich, for instance). Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the hallow spell.\n\nYou can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses."
+    },
+    {
+      "level": 1,
+      "name": "Lay on Hands",
+      "description": "Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your paladin level x 5.\n\nAs an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.\n\nAlternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one.\n\nThis feature has no effect on undead and constructs."
+    },
+    {
+      "level": 2,
+      "name": "Fighting Style",
+      "description": "At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.\n\n#### Defense\n\nWhile you are wearing armor, you gain a +1 bonus to AC.\n\n#### Dueling\n\nWhen you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.\n\n#### Great Weapon Fighting\n\nWhen you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are w ielding with two hands, you can reroll the die and must use the new roll. The weapon must have the two-handed or versatile property for you to gain this benefit.\n\n#### Protection\n\nWhen a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield."
+    },
+    {
+      "level": 2,
+      "name": "Spellcasting",
+      "description": "By 2nd level, you have learned to draw on divine magic through meditation and prayer to cast spells as a cleric does. See chapter 10 for the general rules o f spellcasting and chapter 11 for the paladin spell list.\n\n#### Preparing and Casting Spells\n\nThe Paladin table shows how many spell slots you have to cast your spells. To cast one o f your paladin spells of 1st level or higher, you must expend a slot o f the spell’s level or higher. You regain all expended spell slots when you finish a long rest.\n\nYou prepare the list of paladin spells that are available for you to cast, choosing from the paladin spell list. When you do so, choose a number of paladin spells equal to your Charisma modifier + half your paladin level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.\n\nFor example, if you are a 5th-level paladin, you have four 1st-level and two 2nd-level spell slots. With a Charisma of 14, your list of prepared spells can include four spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn’t remove it from your list of prepared spells.\n\nYou can change your list of prepared spells when you finish a long rest. Preparing a new list of paladin spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list.\n\n#### Spellcasting Ability\n\nCharisma is your spellcasting ability for your paladin spells, since their power derives from the strength of your convictions. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a paladin spell you cast and when making an attack roll with one.\n\nSpell save DC = 8 + your proficiency bonus + your Charisma modifier\n\nSpell attack modifier = your proficiency bonus + your Charisma modifier\n\n#### Spellcasting Focus\n\nYou can use a holy symbol (found in chapter 5) as a spellcasting focus for your paladin spells."
+    },
+    {
+      "level": 2,
+      "name": "Divine Smite",
+      "description": "Starting at 2nd level, when you hit a creature with a melee w eapon attack, you can expend one paladin spell slot to deal radiant damage to the target, in addition to the weapon’s damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend."
+    },
+    {
+      "level": 3,
+      "name": "Divine Health",
+      "description": "By 3rd level, the divine magic flowing through you makes you immune to disease."
+    },
+    {
+      "level": 3,
+      "name": "Sacred Oath",
+      "description": "When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose the Oath of Devotion, the Oath of the Ancients, or the Oath of Vengeance, all detailed at the end of the class description.\n\nYour choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.\n\n#### Oath Spells\n\nEach oath has a list o f associated spells. You gain access to these spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath spells don’t count against the number of spells you can prepare each day.\n\nIf you gain an oath spell that doesn’t appear on the paladin spell list, the spell is nonetheless a paladin spell for you.\n\n#### Channel Divinity\n\nYour oath allows you to channel divine energy to fuel magical effects. Each Channel Divinity option provided by your oath explains how to use it.\n\nWhen you use your Channel Divinity, you choose which option to use. You must then finish a short or long rest to use your Channel Divinity again.\n\nSome Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your paladin spell save DC."
+    },
+    {
+      "level": 4,
+      "name": "Ability Score Improvement",
+      "description": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+    },
+    {
+      "level": 5,
+      "name": "Extra Attack",
+      "description": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."      
+    },
+    {
+      "level": 6,
+      "name": "Aura of Protection",
+      "description": "Starting at 6th level, whenever you or a friendly creature within 10 feet o f you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus o f +1). You must be conscious to grant this bonus. At 18th level, the range of this aura increases to 30 feet."
+    },
+    {
+      "level": 10,
+      "name": "Aura of Courage",
+      "description": "Starting at 10th level, you and friendly creatures within 10 feet o f you can’t be frightened while you are conscious.\n\nAt 18th level, the range of this aura increases to 30 feet."
+    },
+    {
+      "level": 11,
+      "name": "Improved Divine Smite",
+      "description": "By 11th level, you are so suffused with righteous might that all your melee weapon strikes carry divine power with them. Whenever you hit a creature with a melee weapon, the creature takes an extra 1d8 radiant damage. If you also use your Divine Smite with an attack, you add this damage to the extra damage of your Divine Smite."
+    },
+    {
+      "level": 14,
+      "name": "Cleansing Touch",
+      "description": "Beginning at 14th level, you can use your action to end one spell on yourself or on one willing creature that you touch.\n\nYou can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain expended uses when you finish a long rest."
+    }
+  ],
+  "subclass": [
+    {
+      "name": "Oath of Devotion",
+      "castermult": 0.5,
+      "features": [
+        {
+          "level": 3,
+          "name": "Tenets of Devotion",
+          "description": "Though the exact w ords and strictures of the Oath of Devotion vary, paladins of this oath share these tenets.\n\n**Honesty.** Don’t lie or cheat. Let your word be your promise.\n\n**Courage.** Never fear to act, though caution is wise.\n\n**Compassion.** Aid others, protect the weak, and punish those who threaten them. Show mercy to your foes, but temper it with wisdom.\n\n**Honor.** Treat others with fairness, and let your honorable deeds be an example to them. Do as much good as possible while causing the least amount of harm.\n\n**Duty.** Be responsible for your actions and their consequences, protect those entrusted to your care, and obey those who have just authority over you."
+        },
+        {
+          "level": 3,
+          "name": "Oath Spells",
+          "description": "3rd - Protection from evil and good, sanctuary. 5th - lesser restoration, zone of truth. 9th - beacon of hope, dispel magic. 13th - freedom of movement, guardian of faith. 17th - commune, flame strike."
+        },
+        {
+          "level": 3,
+          "name": "Channel Divinity",
+          "description": "When you take this oath at 3rd level, you gain the following two Channel Divinity options.\n\n**Sacred Weapon.** As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon (with a minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the duration.\n\nYou can end this effect on your turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall unconscious, this effect ends.\n\n**Turn the Unholy.** As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 30 feet o f you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.\n\nA turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action."
+        },
+        {
+          "level": 7,
+          "name": "Aura of Devotion",
+          "description": "Starting at 7th level, you and friendly creatures within 10 feet o f you can’t be charmed while you are conscious.\n\nAt 18th level, the range of this aura increases to 30 feet."
+        },
+        {
+          "level": 15,
+          "name": "Purity of Spirit",
+          "description": "Beginning at 15th level, you are always under the effects of a protection from evil and good spell."
+        },
+        {
+          "level": 20,
+          "name": "Holy Nimbus",
+          "description": "At 20th level, as an action, you can emanate an aura of sunlight. For 1 minute, bright light shines from you in a 30-foot radius, and dim light shines 30 feet beyond that.\n\nWhenever an enemy creature starts its turn in the bright light, the creature takes 10 radiant damage.\n\nIn addition, for the duration, you have advantage on saving throws against spells cast by fiends or undead.\n\nOnce you use this feature, you can’t use it again until you finish a long rest."
+        }
+      ]
+    },
+    {
+      "name": "Oath of the Ancients",
+      "castermult": 0.5,
+      "features": [
+        {
+          "level": 3,
+          "name": "Tenets of the Ancients",
+          "description": "The tenets of the Oath o f the Ancients have been preserved for uncounted centuries. This oath emphasizes the principles of good above any concerns of law or chaos. Its four central principles are simple.\n\n**Kindle the Light.** Through your acts of mercy, kindness, and forgiveness, kindle the light of hope in the world, beating back despair.\n\n**Shelter the Light.** Where there is good, beauty, love, and laughter in the world, stand against the wickedness that w ould swallow it. Where life flourishes, stand against the forces that would render it barren.\n\n**Preserve Your Own Light.** Delight in song and laughter, in beauty and art. If you allow the light to die in your own heart, you can’t preserve it in the world.\n\n**Be the Light.** Be a glorious beacon for all who live in despair. Let the light of your joy and courage shine forth in all your deeds."
+        },
+        {
+          "level": 3,
+          "name": "Oath Spells",
+          "description": "3rd - ensnaring strike, speak with animals. 5th - moonbeam, misty step. 9th - plant growth, protection from energy. 13th - ice storm, stoneskin. 17th - commune with nature, tree stride."
+        },
+        {
+          "level": 3,
+          "name": "Channel Divinity",
+          "description": "When you take this oath at 3rd level, you gain the following two Channel Divinity options.\n\n**Nature’s Wrath.** You can use your Channel Divinity to invoke primeval forces to ensnare a foe. As an action, you can cause spectral vines to spring up and reach for a creature within 10 feet of you that you can see. The creature must succeed on a Strength or Dexterity saving throw (its choice) or be restrained. While restrained by the vines, the creature repeats the saving throw at the end of each of its turns. On a success, it frees itself and the vines vanish.\n\n**Turn the Faithless.** You can use your Channel Divinity to utter ancient words that are painful for fey and fiends to hear. As an action, you present your holy symbol, and each fey or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.\n\nA turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet o f you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.\n\nIf the creature’s true form is concealed by an illusion, shapeshifting, or other effect, that form is revealed while it is turned."
+        },
+        {
+          "level": 7,
+          "name": "Aura of Warding",
+          "description": "Beginning at 7th level, ancient magic lies so heavily upon you that it forms an eldritch ward. You and friendly creatures within 10 feet of you have resistance to damage from spells.\n\nAt 18th level, the range of this aura increases to 30 feet."
+        },
+        {
+          "level": 15,
+          "name": "Undying Sentinel",
+          "description": "Starting at 15th level, when you are reduced to 0 hit points and are not killed outright, you can choose to drop to 1 hit point instead. Once you use this ability, you can’t use it again until you finish a long rest.\n\nAdditionally, you suffer none of the drawbacks of old age, and you can’t be aged magically."
+        },
+        {
+          "level": 20,
+          "name": "Elder Champion",
+          "description": "At 20th level, you can assume the form of an ancient force of nature, taking on an appearance you choose. For example, your skin might turn green or take on a bark-like texture, your hair might become leafy or mosslike, or you might sprout antlers or a lion-like mane.\n\nUsing your action, you undergo a transformation. For 1 minute, you gain the following benefits:\n\n* At the start o f each o f your turns, you regain 10 hit points.\n* Whenever you cast a paladin spell that has a casting time of 1 action, you can cast it using a bonus action instead.\n* Enemy creatures within 10 feet of you have disadvantage on saving throws against your paladin spells and Channel Divinity options.\n\nOnce you use this feature, you can’t use it again until you finish a long rest."
+        }
+      ]
+    },
+    {
+      "name": "Oath of Vengeance",
+      "castermult": 0.5,
+      "features": [
+        {
+          "level": 3,
+          "name": "Tenets of Vengeance",
+          "description": "The tenets of the Oath of Vengeance vary by paladin, but all the tenets revolve around punishing wrongdoers by any means necessary. Paladins who uphold these tenets are willing to sacrifice even their own righteousness to mete out justice upon those who do evil, so the paladins are often neutral or lawful neutral in alignment. The core principles of the tenets are brutally simple.\n\n**Fight the Greater Evil.** Faced with a choice of fighting my sworn foes or combating a lesser evil. I choose the greater evil.\n\n**No Mercy for the Wicked.** Ordinary foes might win my mercy, but my sworn enemies do not.\n\n**By Any Means Necessary.** My qualms can’t get in the way of exterminating my foes. \n\n**Restitution.** If my foes wreak ruin on the world, it is because I failed to stop them. I must help those harmed by their misdeeds."
+        },
+        {
+          "level": 3,
+          "name": "Oath Spells",
+          "description": "3rd - bane, hunter's mark. 5th - hold person, misty step. 9th - haste, protection from energy. 13th - banishment, dimension door. 17th - hold monster, scrying."
+        },
+        {
+          "level": 3,
+          "name": "Channel Divinity",
+          "description": "When you take this oath at 3rd level, you gain the following two Channel Divinity options.\n\n**Abjure Enemy.** As an action, you present your holy symbol and speak a prayer of denunciation, using your Channel Divinity. Choose one creature within 60 feet of you that you can see. That creature must make a Wisdom saving throw, unless it is immune to being frightened. Fiends and undead have disadvantage on this saving throw.\n\nOn a failed save, the creature is frightened for 1 minute or until it takes any damage. While frightened, the creature’s speed is 0, and it can’t benefit from any bonus to its speed.\n\nOn a successful save, the creature’s speed is halved for 1 minute or until the creature takes any damage.\n\n**Vow of Enmity.** As a bonus action, you can utter a vow of enmity against a creature you can see within 10 feet of you, using your Channel Divinity. You gain advantage on attack rolls against the creature for 1 minute or until it drops to 0 hit points or falls unconscious."
+        },
+        {
+          "level": 7,
+          "name": "Relentless Avenger",
+          "description": "By 7th level, your supernatural focus helps you close off a foe’s retreat. When you hit a creature with an opportunity attack, you can move up to half your speed immediately after the attack and as part of the same reaction. This movement doesn’t provoke opportunity attacks."
+        },
+        {
+          "level": 15,
+          "name": "Soul of Vengeance",
+          "description": "Starting at 15th level, the authority with which you speak your Vow of Enmity gives you greater power over your foe. When a creature under the effect of your Vow of Enmity m akes an attack, you can use your reaction to make a melee weapon attack against that creature if it is within range."
+        },
+        {
+          "level": 20,
+          "name": "Avenging Angel",
+          "description": "At 20th level, you can assume the form of an angelic avenger. Using your action, you undergo a transformation. For 1 hour, you gain the following benefits:\n\n* Wings sprout from your back and grant you a flying speed of 60 feet.\n\n* You emanate an aura of menace in a 30-foot radius. The first time any enemy creature enters the aura or starts its turn there during a battle, the creature must succeed on a Wisdom saving throw or become frightened of you for 1 minute or until it takes any damage. Attack rolls against the frightened creature have advantage.\n\nOnce you use this feature, you can’t use it again until you finish a long rest."
+        }
+      ]
+    },
+    {
+      "name": "Oath of the Crown",
+      "castermult": 0.5,
+      "features": [
+        {
+          "level": 3,
+          "name": "Tenets of the Crown",
+          "description": "The tenets of the Oath of the Crown are often set by the sovereign to which their oath is sworn, but generally emphasize the following tenets.\n\n**Law.** The law is paramount. It is the mortar that holds the stones of civilization together, and it must be respected.\n\n**Loyalty.** Your word is your bond. Without loyalty, oaths and laws are meaningless.\n\n**Courage.** You must be willing to do what needs to be done for the sake of order, even in the face of overwhelming odds. If you don't act, then who will?\n\n**Responsibility.** You must deal with the consequences of your actions, and you are responsible for fulfilling your duties and obligations."
+        },
+        {
+          "level": 3,
+          "name": "Oath Spells",
+          "description": "3rd - command, compelled duel. 5th - warding bond, zone of truth. 9th - aura of vitality, spirit guardians. 13th - banishment, guardian of faith. 17th - circle of power, geas."
+        },
+        {
+          "level": 3,
+          "name": "Channel Divinity",
+          "description": "When you take this oath at 3rd level, you gain the following Channel Divinity options.\n\n**Champion Challenge.** You issue a challenge that compels other creatures to do battle with you. Each creature of your choice that you can see within 30 feet of you must make a Wisdom saving throw. On a failed save, a creature can't willingly move more than 30 feet away from you. This effect ends on the creature if you are incapacitated or die or if the creature is moved more than 30 feet away from you.\n\n**Turn the Tide.** As a bonus action, you can bolster injured creatures with your Channel Divinity. Each creature of your choice that can hear you within 30 feet of you regains hit points equal to ld6 +your Charisma modifier (minimum of 1) if it has no more than half of its hit points."
+        },
+        {
+          "level": 7,
+          "name": "Divine Allegiance",
+          "description": "Starting at 7th level, when a creature within 5 feet of you takes damage, you can use your reaction to magically substitute your own health for that of the target creature, causing that creature not to take the damage. Instead, you take the damage. This damage to you can't be reduced or prevented in any way."
+        },
+        {
+          "level": 15,
+          "name": "Unyielding Spirit",
+          "description": "Starting at 15th level, you have advantage on saving throws to avoid becoming paralyzed or stunned."
+        },
+        {
+          "level": 20,
+          "name": "Exalted Champion",
+          "description": "At 20th level, your presence on the field of battle is an inspiration to those dedicated to your cause. You can use your action to gain the following benefits for 1 hour:\n\n*You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.\n* Your allies have advantage on death saving throws while within 30 feet of you.\n*You have advantage on Wisdom saving throws, as do your allies within 30 feet of you.\n\nThis effect ends early if you are incapacitated or die. Once you use this feature, you can't use it again until you finish a long rest."
+        }
+      ]
+    }
+  ]
+}

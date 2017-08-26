@@ -192,11 +192,11 @@
       },
       heroichp: function() {
         var total = 0;
-          if(this.classes[0] !== undefined && this.classes[0].level > 0) {
-            total += this.classes[0].hitdie/2 - 1;
-          }
+        if(this.classes[0] !== undefined && this.classes[0].level > 0) {
+          total += this.classes[0].hitdie/2 - 1;
+        }
         for(var x in this.classes) {
-          total += (this.classes[x].hitdie/2 + 1 + this.conmod());
+          total += (this.classes[x].hitdie/2 + 1 + this.conmod()) * this.classes[x].level;
         }
         return total;
       },
@@ -333,7 +333,9 @@
           }
         });
         return count;
-      }
+      },
+      attMagic: 0,
+      saveMagic: 0
     };
     $scope.journalSort = function(a) {
       var month = a.month < 10 ? "0" + a.month.toString() : a.month.toString();
