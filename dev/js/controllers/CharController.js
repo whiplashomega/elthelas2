@@ -407,8 +407,8 @@
       });      
     };
     
-    $scope.removeSpell = function(index) {
-      $scope.character.spellsKnown.splice(index, 1);
+    $scope.removeSpell = function(spell) {
+      $scope.character.spellsKnown.splice($scope.character.spellsKnown.indexOf(spell), 1);
     }
     
     $scope.addEquipmentFromList = function() {
