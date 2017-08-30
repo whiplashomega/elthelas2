@@ -297,10 +297,20 @@
       },
       casterLevel: function() {
         var casterLevel = 0;
+        var classcounter = 0;
         for(var z in this.classes) {
-          casterLevel += this.classes[z].level * this.classes[z].selsubclass.castermult;
+          var thisClassCasterLevel = this.classes[z].level * this.classes[z].selsubclass.castermult;
+          if(thisClassCasterLevel >= 1) {
+            classcounter++;
+            casterLevel += thisClassCasterLevel;  
+          }
+          
         }
-        return Math.floor(casterLevel);
+        if(classcounter > 1) {
+          return Math.floor(casterLevel);
+        } else {
+          return Math.ceil(casterLevel);
+        }
       },
       bond: "",
       flaw: "",
