@@ -22,36 +22,39 @@
                    templateUrl: '/html/content/home.html',
                },
                'head': {
-                   templateUrl: '/html/head/home.html'
+                   templateUrl: '/html/head/head.html',
+                   controller: 'HeaderController'
                },
                'sidebar': {
                    templateUrl: '/html/empty.html'
                }
            },
-           data: { title: "Home", auth: false }
+           data: { 
+             title: "Home", 
+             auth: false,
+             metadescription: "Website for the Elthelas Campaign Setting for Dungeons and Dragons by Joseph Harrison. Dungeons and Dragons is owned and copyrighted by Wizard's of the Coast.",
+             metakeywords: ""
+           }
        }).state('app.domains', {
           url:'options/domains',
           views: {
               'content@': {
-                  templateUrl: '/html/content/options/domains.html'
-              },
-              'head@': {
-                  templateUrl: '/html/head/options/domains.html'
+                  templateUrl: '/html/content/options/domains.html',
+                  controller: 'DomainController'
               },
               'sidebar@': {
                   templateUrl: '/html/sidebar/options.html'
               }
           },
-          data: { title: "Domains"}
+          data: { title: "Domains",
+             metadescription: "List of Domains available in the Elthelas Campaign Setting for Dungeons and Dragons by Joseph Harrison. Dungeons and Dragons is owned and copyrighted by Wizard's of the Coast.",
+             metakeywords: "domains, air, earth, fire, water, craft, death, arcana, nature, life, light, war, tempest, trickery, trade"}
        }).state('app.races', {
            url: 'options/races',
            views: {
               'content@': {
                   templateUrl: '/html/content/options/races.html',
                   controller: 'RaceController'
-              },
-              'head@': {
-                  templateUrl: '/html/head/options/races.html'
               },
               'sidebar@': {
                   templateUrl: '/html/sidebar/options.html'
@@ -70,9 +73,6 @@
                   templateUrl: '/html/content/options/races.html',
                   controller: 'RaceController'
               },
-              'head@': {
-                  templateUrl: '/html/head/options/races.html'
-              },
               'sidebar@': {
                   templateUrl: '/html/sidebar/options.html'
               },           
@@ -90,9 +90,6 @@
                   templateUrl: '/html/content/options/languages.html',
                   controller: 'LanguagesController'
               },
-              'head@': {
-                  templateUrl: '/html/head/options/languages.html'
-              },
               'sidebar@': {
                   templateUrl: '/html/sidebar/options.html'
               },
@@ -105,9 +102,6 @@
              templateUrl: '/html/content/ref/gods.html',
              controller: 'GodsController'
            },
-          'head@': {
-            templateUrl: '/html/head/ref/gods.html'
-          },
            'sidebar@': {
              templateUrl: '/html/sidebar/ref.html'
            }
@@ -125,9 +119,6 @@
              templateUrl: '/html/content/ref/gods.html',
              controller: 'GodsController'
            },
-          'head@': {
-            templateUrl: '/html/head/ref/gods.html'
-          },
            'sidebar@': {
              templateUrl: '/html/sidebar/ref.html'
            }
@@ -145,9 +136,6 @@
              templateUrl: '/html/content/ref/organizations.html',
              controller: 'OrganizationController'
            },
-          'head@': {
-            templateUrl: '/html/head/ref/organizations.html'
-          },
            'sidebar@': {
              templateUrl: '/html/sidebar/ref.html'
            }
@@ -165,9 +153,6 @@
              templateUrl: '/html/content/ref/organizations.html',
              controller: 'OrganizationController'
            },
-           'head@': {
-             templateUrl: '/html/head/ref/organizations.html'
-           },
             'sidebar@': {
               templateUrl: '/html/sidebar/ref.html'
             }
@@ -184,9 +169,6 @@
            'content@': {
              templateUrl: '/html/content/ref/calendar.html'
            },
-          'head@': {
-            templateUrl: '/html/head/ref/calendar.html'
-          },
            'sidebar@': {
              templateUrl: '/html/sidebar/ref.html'
            }
@@ -198,9 +180,6 @@
            'content@': {
              templateUrl: '/html/content/ref/cosmology.html'
            },
-          'head@': {
-            templateUrl: '/html/head/ref/cosmology.html'
-          },
            'sidebar@': {
              templateUrl: '/html/sidebar/ref.html'
            }
@@ -212,9 +191,6 @@
            'content@': {
              templateUrl: '/html/content/ref/astronomy.html'
            },
-          'head@': {
-            templateUrl: '/html/head/ref/astronomy.html'
-          },
            'sidebar@': {
              templateUrl: '/html/sidebar/ref.html'
            }
@@ -226,9 +202,6 @@
            'content@': {
              templateUrl: '/html/content/ref/magic.html'
            },
-          'head@': {
-            templateUrl: '/html/head/ref/magic.html'
-          },
            'sidebar@': {
              templateUrl: '/html/sidebar/ref.html'
            }
@@ -241,9 +214,6 @@
              templateUrl: '/html/content/ref/divines.html',
              controller: 'DivineController'
            },
-          'head@': {
-            templateUrl: '/html/head/ref/divines.html'
-          },
            'sidebar@': {
              templateUrl: '/html/sidebar/ref.html'
            }
@@ -256,9 +226,6 @@
              templateUrl: '/html/content/ref/quick.html',
              controller: 'QuickController'
            },
-          'head@': {
-            templateUrl: '/html/head/ref/quick.html'
-          },
            'sidebar@': {
              templateUrl: '/html/sidebar/ref.html'
            }
@@ -270,13 +237,7 @@
            'content@': {
              templateUrl: '/html/content/history.html',
              controller: 'HistoryController'
-           },
-          'head@': {
-            templateUrl: '/html/head/history.html'
-          },
-          'sidebar@': {
-           templateUrl: '/html/empty.html'
-          }
+           }
          },
            data: { title: "History"},
            resolve: {
@@ -290,13 +251,7 @@
            'content@': {
              templateUrl: '/html/content/history.html',
              controller: 'HistoryController'
-           },
-          'head@': {
-            templateUrl: '/html/head/history.html'
-          },
-          'sidebar@': {
-           templateUrl: '/html/empty.html'
-          }
+           }
          },
            data: { title: "History"},
          resolve: {
@@ -305,18 +260,18 @@
            }
          }
        }).state('app.classes', {
-        url: 'ref/class',
+        url: 'options/class',
         views: {
           'content@': {
             templateUrl: '/html/content/options/classes.html',
             controller: 'ClassController'
           },
-          'head@': {
-            templateUrl: '/html/head/options/races.html'
-          },
           'sidebar@': {
             templateUrl: '/html/sidebar/options.html'
           }
+        },
+        data: {
+          title: "Classes"
         }
        }).state('app.geo', {
          url: 'geo',
@@ -324,13 +279,7 @@
            'content@': {
              templateUrl: '/html/content/geo.html',
              controller: 'GeographyController'
-           },
-           'head@': {
-             templateUrl: '/html/head/geo.html'
-           },
-           'sidebar@': {
-             templateUrl: '/html/empty.html'
-          }
+           }
         },
         data: { title: "Geography" },
         resolve: {
@@ -347,13 +296,7 @@
            'content@': {
              templateUrl: '/html/content/geo.html',
              controller: 'GeographyController'
-           },
-           'head@': {
-             templateUrl: '/html/head/geo.html'
-           },
-           'sidebar@': {
-             templateUrl: '/html/empty.html'
-          }
+           }
         },
         data: { title: "Geography" },
         resolve: {
@@ -370,9 +313,6 @@
           'content@': {
             templateUrl: '/html/content/about.html'
           },
-          'head@': {
-            templateUrl: '/html/head/about.html'
-          },
           'sidebar@': {
             templateUrl: '/html/sidebar/about.html'
           }
@@ -383,9 +323,6 @@
         views: {
           'content@': {
             templateUrl: '/html/content/campaigns/book1.html'
-          },
-          'head@': {
-            templateUrl: '/html/head/campaigns/book1.html'
           },
           'sidebar@': {
             templateUrl: '/html/sidebar/campaign.html'
@@ -400,9 +337,6 @@
         views: {
           'content@': {
             templateUrl: '/html/content/campaigns/book4.html'
-          },
-          'head@': {
-            templateUrl: '/html/head/campaigns/book4.html'
           },
           'sidebar@': {
             templateUrl: '/html/sidebar/campaign.html'
@@ -419,9 +353,6 @@
             templateUrl: '/html/content/options/backgrounds.html',
             controller: 'BackgroundController'
           },
-          'head@': {
-            templateUrl: '/html/head/options/backgrounds.html'
-          },
           'sidebar@': {
             templateUrl: '/html/sidebar/options.html'
           }
@@ -435,9 +366,6 @@
         'content@': {
           templateUrl: '/html/content/ref/beastiary.html',
           controller: 'BeastController'
-        },
-        'head@': {
-          templateUrl: '/html/head/ref/beastiary.html'
         },
         'sidebar@': {
           templateUrl: '/html/sidebar/ref.html'
@@ -453,17 +381,11 @@
           templateUrl: '/html/content/tools/characterbuilder.html',
           controller: 'CharController'
         },
-        'head@': {
-          templateUrl: '/html/head/tools/characterbuilder.html'
-        },
-        'sidebar@': {
-          templateUrl: '/html/empty.html'
-        },
-        data: {
+      },
+      data: {
           title: 'Character Builder', 
           auth: true
         }
-      }
     });
        $locationProvider.html5Mode(true);
     }]);

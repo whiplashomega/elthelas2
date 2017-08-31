@@ -25,8 +25,12 @@
         var s = doc.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(gcse, s);
         $scope.title = $state.current.data.title;
+        $scope.metadescription = $state.current.data.metadescription;
+        $scope.metakeywords = $state.current.data.metakeywords;
         $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams, options){ 
           $scope.title = $state.current.data.title;
+          $scope.metadescription = $state.current.data.metadescription;
+          $scope.metakeywords = $state.current.data.metakeywords;
         });
         AuthenticationProvider.LoadFromCookies();
         $scope.globals = $rootScope.globals;
