@@ -1,6 +1,77 @@
 <div class="col-sm-10">
-<h1 id="desperatemeasuresepicofelthelasbook4">Desperate Measures - Epic of Elthelas Book 4</h1>
+<!-- Character/Monster Template -->
+<!--
+    <aside class="card col-sm-6 pull-right">
+      <h3>Name</h3>
+      <h4>Size Type, Alignment</h4>
 
+    <p>
+      <strong>Hit Points:</strong> <br />
+      <strong>AC:</strong> <br />
+      <strong>Speed:</strong> <br />
+    </p>
+    <table class="table">
+      <tr>
+        <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
+      </tr>
+      <tr>
+        <td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td>
+      </tr>
+    </table>    
+    <p>
+      <strong>Saving Throws:</strong> <br />
+      <strong>Skills:</strong> <br />
+      <strong>Resistances: </strong> <br />
+      <strong>Damage Immunities: </strong> <br />
+      <strong>Condition Immunities: </strong> <br />
+      <strong>Senses:</strong> <br />
+      <strong>Languages:</strong> <br /> 
+      <strong>Challenge:</strong>
+    </p>
+    
+    <p><strong>Feature:</strong> Text</p>
+    
+    <h4 id="actions-1">Actions</h4>
+    
+    <p><strong>Action:</strong> Text</p>
+    
+
+    </aside>
+-->
+<h1 id="desperatemeasuresepicofelthelasbook4">Desperate Measures - Epic of Elthelas Book 4</h1>
+<div id="tableofcontents">
+  <h2>Table of Contents</h2>
+  <ul>
+    <li><strong><a href="#theworld">The World of Elthelas</a></strong></li>
+    <li><strong><a href="#curestan">Cur'Estan</a></strong>
+      <ul>
+        <li><a href="#curestanmap">Map of Cur'Estan</a></li>
+        <li><a href="#curestanpeople">Important People in Cur'Estan</a></li>
+        <li><a href="#curestanlocations">Locations in Cur'Estan</a></li>
+        <li><a href="#curestanfactions">Factions in Cur'Estan</a></li>
+      </ul>
+    </li>
+    <li><strong><a href="#chapter1">Chapter 1: Recruits</a></strong>
+      <ul>
+        <li><a href="#chapter1startingout">Starting Out</a></li>
+        <li><a href="#chapter1raiders">Raiders</a></li>
+        <li><a href="#chapter1raidersbase">The Raiders' Base</a></li>
+        <li><a href="#chapter1randomencounters">Random Encounters</a></li>
+      </ul>
+    </li>
+    <li><strong><a href="#chapter2">Chapter 2: Northport</a></strong></li>
+    <li><strong><a href="#characterindex">Index of Character Entries</a></strong></li>
+  </ul>
+</div>
+<div id="theworld">
+  <h2>The World</h2>
+  <p>
+    The campaign starts on the 18th of Trimala, 1846 YFC.  Roughly five months after the end of the Dormanian succession crisis. For details about the history of Elthelas, please see the <a ui-sref="app.history">History page</a>. For details on the calendar system, see the <a ui-sref="app.calendar">Calendar page</a>.
+  </p>
+  <p>
+    For details about the world itself, see the <a ui-sref="app.geo">Geography page</a>. Players may also be interested in information on the <a ui-sref="app.gods">Gods</a>, <a ui-sref="app.divines">Lesser Divines</a>, and <a ui-sref="app.cosmology">Planar Cosmology</a> of the setting.
+  </p>
+  <h3>The State of the World</h3>
 <p><strong>Gerasalim is in Flames</strong>. The Fortress of Light has fallen, Strovenguard is an occupied city, Eastguard has been reduced to rubble, and Northport is under imminent threat.  The last of the Gerasaline armies have retreated to the Sword Mountains, attacking the orc armies from caves and hidden strong points. </p>
 
 <p><strong>The Moon Elves are nearly extinct</strong>.  After 2 years of being hunted in their homeland their numbers have been reduced to a few thousand refugees who have fled into Eldoran, Curinor, and Gerasalim.</p>
@@ -13,156 +84,835 @@
 
 <p><strong>Kandor fights invasion from 2 sides</strong>.  The Orcs are now on the unfortified southern border of Kandor, sending raids north while they attempt to deal with the remaining Gerasaline armies, meanwhile the Dormanian legions threaten invasion from the East.</p>
 
-<p><strong>Into this destruction Gerad Heartbren, last commander of the Black Wolf Irregulars, has put out one last desperate call for recruitment</strong>.  You have answered this call, for reasons of your own, and have travelled to the fortress of Cur’Estan in the woods of Kandor, where the he is gathering the forces that will make a last desperate stand against evil in Elathia.</p>
+<p><strong>Into this destruction Gerad Heartbren, last commander of the Black Wolf Irregulars, has put out one last desperate call for recruitment</strong>.  You have answered this call, for reasons of your own, and have travelled to the fortress of Cur’Estan in the woods of Kandor, where the he is gathering the forces that will make a last desperate stand against evil in Elathia.</p>  
+</div>
 
-<h2 id="curestan">Cur'Estan</h2>
-<p><img src="/images/maps/curestan.png" alt="Map of Cur'Estan" /></p>
-<aside class="card col-sm-6 pull-right">
-  <h3>General Gerad Heartbren</h3>
-  <p><strong>Race:</strong> Moon Elf <br />
-<strong>Class &amp; Level:</strong> Fighter 15 (Eldritch Knight) <br />
-<strong>Background:</strong> Outlander <br />
-<strong>Alignment:</strong> Neutral Good</p>
+<div id="curestan">
+  <h2 id="curestan">Cur'Estan</h2>
+  <p class="row"><img src="/images/maps/curestan.png" alt="Map of Cur'Estan" class="col-sm-12" id="curestanmap" /></p>
+  <p>Cur'Estan was once the fortress capitol of an ancient minor Kandori king, destroyed by Dorman I and left as a ruin in the woods.  20 years ago the Black Wolf Irregulars rebuilt the central castle to serve as their headquarters, and over the twenty years since a small town has sprung up around the castle serving the needs of the castle.  Over the last year, as the orcs have ravaged Demal'Thor, and then moved into Gerasalim, refugees have slowly trickled into the town.  A refugee camp has sprung up on the outskirts, now threatening to outnumber the original residents.</p>
+  
+  <p>The de facto ruler of Cur'Estan is General Gerad Heartbren of the Black Wolf Irregulars.  He commands the castle, and roughly 2000 soldiers, the last remains of the Black Wolf Irregulars forces.  </p>
+  
+  <p>The massive castle, with it's 30 ft thick walls, and 100 ft tall keep towers over the town in the west.  It contains large storehouses, stables, smiths, and fletchers who supply the soldiers.
+  </p>
+  <p>The town itself is dominated by the large stone embassy buildings, one for each of the Alliance nations, Kandor, Gerasalim, Dormania, Curinor, Demal Thor, and Eldoran.  Today only the Kandori Embassy is occupied, the rest have been abandoned, with only a caretaker cleaning crew assigned by Gerad to keep them from falling into disrepair.  The streets of the town are winding and haphazard.  The town was built quickly, with no particular plan, as merchants and tradesmen gravitated towards the town to fill the needs of the castle garrison and soldiers stationed there. The area directly in front of the castle gate is kept clear except in the mornings, when the merchants from the town, farmers, and hunters from the surrounding area set up temporary stands to sell goods.</p>
+  <p>
+    To the south of the castle is the barracks of the Black Wolf Irregulars, approximately 1500 soldiers stay in the barracks (in addition to the 500 or so garrisoned in the castle).  The area west of the barracks is used as a training ground.
+  </p>
+  <p>To the south of the town is the refugee camp, housing about 1000 refugees, managed by a contingent of Amathera's Shield, about 50 strong.  The refugees are welcome in town, and occasionally one will have the funds to build a proper house in the town itself, the rest are housed in large tents in the camp, each housing as many as 50 people.</p>
+  <p>
+    The southeast, between the town and the refugee camp, sits the permament complex of the Lords of the Rising Dawn.  An order of knights and paladins headquartered in Kaland.  The order has approximately 1000 soldiers garrisoned here in 4 large barracks buildings.
+  </p>
+  <div id="curestanpeople">
+  <h3>Important People in Cur'Estan</h3>
+    <aside class="card col-sm-6 pull-right" id="geradheartbren">
+      <h3>General Gerad Heartbren</h3>
+      <p><strong>Race:</strong> Moon Elf <br />
+    <strong>Class &amp; Level:</strong> Fighter 15 (Eldritch Knight) <br />
+    <strong>Background:</strong> Outlander <br />
+    <strong>Alignment:</strong> Neutral Good</p>
+    
+    <h4 id="proficiencies-6">Proficiencies</h4>
+    
+    <p><strong>Saving Throws:</strong> +10 Strength, +7 Constitution <br />
+    <strong>Skills:</strong> Athletics, Survival, Perception, Intimidation</p>
+    
+    <p>
+      <strong>Hit Points:</strong> 135 (15d10 + 45) <br />
+      <strong>AC:</strong> 20 (plate +2) <br />
+      <strong>Languages:</strong> Elf, Imperial, Dwarf, Orc
+    </p>
+    
+    <p><strong>Great Weapon Fighting:</strong> Gerad rerolls 1s and 2s on his damage dice when wielding a weapon in 2 hands.</p>
+    
+    <p><strong>Feats:</strong> Great Weapon Master, Polearm Master</p>
+    <h4 id="actions-1">Actions</h4>
+    <p><strong>Multiattack:</strong> Gerad makes 3 glaive attacks when he takes the attack action on his turn.</p>
+    <p><strong>Glaive +2:</strong> +12 (1d10+7 slashing) or +7 1d10+17 slashing</p>
+    
+    <p><strong>Second Wind:</strong> Gerad can recover 1d10+15 hit points as a bonus action, he must finish a short rest before he can use this ability again.</p>
+    
+    <p><strong>Action Surge:</strong> Gerad can take a second action on his turn.  He must finish a short rest before he does so again.</p>
+    
+    <p><strong>Indomitable:</strong> Gerad can reroll a saving throw that he fails. If he does so, he must use the new roll, he can use this feature twice before he finishes a long rest.</p>
+    
+    <p><strong>Spellcasting: </strong> Gerad has 4 1st level spell slots, 3 2nd level spell slots and 2 3rd level spell slots.  He knows the following spells: <strong>Shield, absorb elements, magic missile, gust of wind, mirror image, shatter, darkness, counterspell, fireball,</strong> and <strong>sending</strong>.  He knows the following cantrips: <strong>Green-Flame Blade, Booming Blade,</strong> and <strong>fire bolt</strong></p>
+    <p><strong>War Magic:</strong> When Gerad uses his action to cast a cantrip, he can make one weapon attack as a bonus action.</p>
+    <table class="table">
+      <tr>
+        <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
+      </tr>
+      <tr>
+        <td>20</td><td>10</td><td>16</td><td>16</td><td>10</td><td>9</td>
+      </tr>
+    </table>
+    </aside>
+    
+    <h4>Gerad Heartbren</h4>
+    <p>
+      The now aging Moon Elf general is a gifted strategist and the de facto leader of the resistance forces, as they have come to be known since the dissolution of the Alliance.  His tribe was wiped out by the Orcs shortly after the fall of Aridhem, while he was commanding troops at the Fortress of Light, then he was reassigned to Cur’Estan shortly before the Fortress of Light’s own fall.  He blames himself for not being present for either battle, and is now determined to do better.
+    </p>
+    <p>
+      <strong>Goals: </strong> Gerad, as one of the few surviving moon elves of influence, is particularly concerned about finding and protecting any Moon Elf refugees he comes across.  He wants to see the Orcs removed from his homeland of Demal Thor. He was a young adventurer when the Alliance of 6 Nations was formed, and was an early believer in the future of peaceful relations.  He wants to see the Alliance come back together, and even bring in more members if possible.
+    </p>
+    <p>
+      <strong>Dislikes: </strong> Gerad holds a strong distaste for slavery and anything that shares similarities to it, such as serfdom or wage slavery.
+    </p>
+    <aside class="card col-sm-6 pull-right" id="jameslightbringer">
+      <h3>Duke James Lightbringer</h3>
+      <p><strong>Race:</strong> Imperial Human <br />
+    <strong>Class &amp; Level:</strong> Cleric 13 (War Domain) <br />
+    <strong>Background:</strong> Noble <br />
+    <strong>Alignment:</strong> Lawful Good</p>
+    
+    <h4 id="proficiencies-6">Proficiencies</h4>
+    
+    <p><strong>Saving Throws:</strong> Wisdom, Charisma<br />
+    <strong>Skills:</strong> Persuasion, History, Religion, Athletics</p>
+    
+    <p>
+      <strong>Hit Points:</strong> 91 (13d8 + 26) <br />
+      <strong>AC:</strong> 23 (plate +2, shield +1) <br />
+      <strong>Languages:</strong> Imperial, Dwarf, Morrind, Orc, Elf
+    </p>
+    
+    <p><strong>Feats:</strong> War Caster</p>
+    <h4 id="actions-1">Actions</h4>
+    
+    <p><strong>Lance +1:</strong> +9 (1d12+1d8+4 piercing)</p>
+    
+    <p><strong>Longsword +1:</strong> +9 (2d8+4 slashing)</p>
+    
+    <p><strong>Spellcasting: </strong> Lightbringer has the following spell slots: 4 1st level, 3 2nd level, 3 3rd level, 3 4th level, 2 5th level, 1 6th level, 1 7th level.</p>
+    
+    <p><strong>War Priest: </strong> When James uses the attack action, he can make one weapon attack as a bonus action.  He can do this 5 times.  He regains all uses on a long rest.</p>
+    
+    <p><strong>Guided Strike: </strong> James can uses his channel divinity to strike with supernatural accuracy.  When he makes an attack roll, he can use his channel divinity to gain a +10 bonus to the roll.</p>
+    
+    <p><strong>War God's Blessing: </strong> James can use his reaction and his channel divinity to grant a creature within 30 ft of him a +10 bonus to an attack roll.</p>
+    <table class="table">
+      <tr>
+        <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
+      </tr>
+      <tr>
+        <td>16</td><td>9</td><td>14</td><td>12</td><td>20</td><td>12</td>
+      </tr>
+    </table>  
+    </aside>
+    <h4>Duke James Lightbringer</h4>
+    <p>
+      Cleric of Alohim, Ambassador of the King of Kandor, and Commander of the Kandori armies in the east, Lightbringer is a leader of the Lords of the Rising Dawn.  He has a thousand Kandori soldiers at his command, and a contingent of skilled Paladins dedicated above all to wiping out the Orcs.  Despite all the setbacks, General Lightbringer remains constantly optimistic about their chances of success.
+    </p>
+    <p>
+      <strong>Goals: </strong> Duke Lightbringer is a loyal vassal of the Kandori king, and will not rebel against his leige lord.  He is dedicated to ensuring the security of Kandor's borders, and wants to wipe out the Orc race. 
+    </p>
+    <p>
+      <strong>Dislikes: </strong> Duke Lightbringer is a strong believer in the divine right to rule, and does not like that a common born person such as General Heartbren is in command at Cur'Estan.  He hates non-humans, particularly the green-skin races such as orcs and goblins, but has no love lost for elves, dwarves, halflings, or gnomes either.
+    </p>
+    <aside class="card col-sm-6 pull-right" id="haeraoelefros">
+      <h3>Haera Oelefros</h3>
+        <p><strong>Race:</strong> Half-Elf <br />
+    <strong>Class &amp; Level:</strong> Bard 11 (Valor Bard) <br />
+    <strong>Background:</strong> Entertainer <br />
+    <strong>Alignment:</strong> Neutral</p>
+    
+    <h4 id="proficiencies-6">Proficiencies</h4>
+    
+    <p><strong>Saving Throws:</strong> Dexterity, Charisma<br />
+    <strong>Skills:</strong> Acrobatics (expertise), Performance (expertise), Deception (expertise), Persuasion (expertise), Slight of Hand, Disguise Kit, Harp</p>
+    
+    <p>
+      <strong>Hit Points:</strong> 77 (11d8 + 22) <br />
+      <strong>AC:</strong> 21 (half-plate +1, shield +1) <br />
+      <strong>Languages:</strong> Imperial, Dwarf, Morrind, Orc, Elf
+    </p>
+    
+    <p><strong>Feats:</strong> War Caster</p>
+    <h4 id="actions-1">Actions</h4>
+    
+    <p><strong>Sheleleigh:</strong> +9 (1d8+5 magical bludgeoning)</p>
+    
+    <p><strong>Spellcasting: </strong> Haera has the following spell slots: 4 1st level, 3 2nd level, 3 3rd level, 3 4th level, 2 5th level, 1 6th level.</p>
+    
+    <p>
+      <strong>Bardic Inspiration:</strong> Haera can inspire others through stirring words or music. To do so, she uses a bonus action on your turn to choose one creature other than herself within 60 feet of her who can hear her. That creature gains one Bardic Inspiration die, a d10.</p>
+    <p>
+      Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, damage roll, or saving throw it makes, or as a reaction add it to its AC. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the DM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.
+    </p>
+    <p>
+      She can use this feature 5 times. She regains any expended uses when she finishes a short or long rest.
+    </p>
+    <p>
+      <strong>Song of Rest:</strong> Haera can use soothing music or oration to help revitalize her wounded allies during a short rest. If her or any friendly creatures who can hear her performance regain hit points at the end of the short rest, each of those creatures regains an extra 1d8 hit points.
+    </p>
+    <p>
+      <strong>Countercharm:</strong> Haera has the ability to use musical notes or words of power to disrupt mind-influencing effects. As an action, she can start a performance that lasts until the end of her next turn. During that time, her and any friendly creatures within 30 feet of her have advantage on saving throws against being frightened or charmed. A creature must be able to hear her to gain this benefit. The performance ends early if she is incapacitated or silenced or if she voluntarily ends it (no action required).
+    </p>
+    <table class="table">
+      <tr>
+        <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
+      </tr>
+      <tr>
+        <td>8</td><td>14</td><td>14</td><td>14</td><td>9</td><td>20</td>
+      </tr>
+    </table>  
+    </aside>
+    <h4>Master Bard Haera Oelefros</h4>
+    <p>
+      Haera Oelefros has led the Makers of Legend in Kandor for 15 years, and is convinced that the next grand story for the ages will come from the exploits of the resistance members.  She has brought a small contingent of bards with her to document what is going on, embedding them in various units she hopes will prove legendary.
+    </p>
+    <p>
+      Haera actually has very little stake in the outcome of the war (or so she believes).  She is originally from Dera'Dragorim, and has been in Kandor so long only because she became engrossed in collecting the war stories of returning veterans.  She is tired of writing down other people's tales however, and is determined to be the hero of the next story she writes, no matter what it takes.
+    </p>
+    <p>
+      <strong>Goals: </strong> Write the next major epic poem, preferably featuring herself as the hero.
+    </p>
+    <p>
+      <strong>Dislikes: </strong> Anyone who she thinks is more important than her.
+    </p>
+    <aside class="pull-right card col-sm-6" id="kymanhexhammer">
+      <h3>Kyman Hexhammer</h3>
+        <p><strong>Race:</strong> Morrind Dwarf <br />
+    <strong>Class &amp; Level:</strong> Rogue 3 (Mastermind), Wizard (Enchanter) 9 <br />
+    <strong>Background:</strong> Sailor <br />
+    <strong>Alignment:</strong> Neutral Evil</p>
+    
+    <h4 id="proficiencies-6">Proficiencies</h4>
+    
+    <p><strong>Saving Throws:</strong> Dexterity, Intelligence<br />
+    <strong>Skills:</strong> Arcana, Athletics, Deception (expertise), Insight (expertise), Perception, Slight of Hand, Disguise Kit, Forgery Kit, Thieves' Tools</p>
+    
+    <p>
+      <strong>Hit Points:</strong> 75 (3d8 + 9d6 + 24) <br />
+      <strong>AC:</strong> 17 (studded leather + 2) <br />
+      <strong>Languages:</strong> Imperial, Dwarf, Morrind, Orc, Elf, Goblin, Deran
+    </p>
+    
+    <p><strong>Feats:</strong> </p>
+    
+    <h4 id="actions-1">Actions</h4>
+    <p>
+      <strong>Cunning Action:</strong> Kyman can take the dash, disengage, help, and hide actions as bonus actions on his turn.  He can use the help action from a distance of 30 feet.
+    </p>
+    <p>
+      <strong>Spellcasting: </strong> Kyman is a 9th level spellcaster and has the following wizard spell slots: 4 1st level, 3 2nd level, 3 3rd level, 3 4th level, and 1 5th level.
+    </p>
+    <table class="table">
+      <tr>
+        <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
+      </tr>
+      <tr>
+        <td>8</td><td>14</td><td>14</td><td>20</td><td>10</td><td>14</td>
+      </tr>
+    </table>  
+    </aside>
+    <h4>Kyman Hexhammer</h4>
+    <p>
+      The Black Sun leader from Stromforde was appalled at the Dwarves decision to withdraw from the war.  He may not care about nations, unity, or goodness, but the destruction wrought by the Prince of Fiends and his Orc armies has made the ‘legitimate’ acquisition of wealth difficult.  He now uses his many connections to recruit spies and assassins for the resistance, for a fee of course.
+    </p>
+    <p>
+      Kyman is very aware of the threat that the Orcs pose, and believes that no elf, dwarf, human, halfling, or gnome is safe from them.  He is incredibly angry with the dwarves for withdrawing from the active war.
+    </p>
+    <p>
+      Kyman is a skilled, if rather amoral, wizard specializing in magical constructs and enchantment magic (the mental kind).  He rose through the ranks of the Black Sun through clever manipulation, crafty schemes, and secret betrayals of those who outranked him.
+    </p>
+    <p>
+      <strong>Goals: </strong> Get filthy rich, make sure the Resistance has enough money and resources to make him filthy rich. Convince the dwarves to rejoin the war effort.
+    </p>
+    <p>
+      Dislikes: People who worry too much about honor and let it get in the way of getting things done (or his future wealth).  Anyone who fails to pay him for services rendered.
+    </p>
+    <aside class="card col-sm-6 pull-right" id="wyrmlingtrapsmith">
+        <h3>Wyrmling Trapsmith</h3>
+        <p><strong>Race:</strong> Kobold <br />
+      <strong>Alignment:</strong> Lawful Neutral</p>
+      
+      <h4 id="proficiencies-6">Proficiencies</h4>
+      
+      <strong>Skills:</strong> Investigation, Arcana</p>
+      
+      <p>
+        <strong>Hit Points:</strong> 4 (1d6) <br />
+        <strong>AC:</strong> 15 (studded leather) <br />
+        <strong>Languages:</strong> Draconic, Imperial, Elf, Dwarf
+      </p>
+      
+      <h4 id="actions-1">Actions</h4>
+      <p>
+        <strong>Dagger: </strong> +5 (1d4+3)
+      </p>
+      <table class="table">
+        <tr>
+          <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
+        </tr>
+        <tr>
+          <td>6</td><td>16</td><td>10</td><td>18</td><td>14</td><td>10</td>
+        </tr>
+      </table>
+    </aside>
+    <h4>Quartermaster Wyrmling Trapsmith</h4>
+    <p>
+      The tiny kobold quartermaster was once an Orc slave before escaping.  He has proven himself incredibly adept at numbers and organization of supplies.  He is incredibly loyal to General Heartbren, who liberated his mine from the orcs.  His clan now controls a silver mine in the Dragons Teeth Mountains, just on the Demal'Thor side of the border.
+    </p>
+    <p>
+      While he is the quartermaster, he doesn't do any lifting himself.  He has employees for that.  He himself is in charge of numbers, inventory, and sales.
+    </p>
+    <p>
+      <strong>Goals: </strong> Secure a ready supply of food and weapons for Cur’Estan.  Make sure the number of mouths to feed doesn’t exceed the available supplies.
+    </p>
+    <p>
+      <strong>Dislikes: </strong> Refugees (or anyone) who doesn’t contribute meaningfully to the community.
+    </p>
+    <aside class="card col-sm-6 pull-right" id="margo">
+      <h3>Margo</h3>
+        <p><strong>Race:</strong> Stagen Gnome <br />
+    <strong>Class &amp; Level:</strong> Wizard (Transmuter) 17 <br />
+    <strong>Background:</strong> Sage <br />
+    <strong>Alignment:</strong> Neutral Good</p>
+    
+    <h4 id="proficiencies-6">Proficiencies</h4>
+    
+    <p><strong>Saving Throws:</strong>Constitution, Wisdom, Intelligence<br />
+    <strong>Skills:</strong> Arcana, History, Insight, Perception, Persuasion</p>
+    
+    <p>
+      <strong>Hit Points:</strong> 119 (17d6 + 51) <br />
+      <strong>AC:</strong> 17 (mage armor, bracers of defense) <br />
+      <strong>Languages:</strong> Imperial, Dwarf, Morrind, Orc, Elf, Goblin, Deran, Stagen, Hisru, Staelic
+    </p>
+    
+    <p><strong>Feats:</strong> Resilient, War Caster, Alert, Elemental Adept (fire)</p>
+    
+    <h4 id="actions-1">Actions</h4>
+    <p>
+      <strong>Spellcasting: </strong> Margo is a 17th level spellcaster and has the following wizard spell slots: 4 1st level, 3 2nd level, 3 3rd level, 3 4th level, 2 5th level, 1 6th level, 1 7th level, 1 8th level, and 1 9th level.
+    </p>
+    <table class="table">
+      <tr>
+        <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
+      </tr>
+      <tr>
+        <td>8</td><td>14</td><td>14</td><td>26</td><td>12</td><td>10</td>
+      </tr>
+    </table> 
+    </aside>
+    <h4>Margo</h4>
+    <p>
+      No one really knows much about Margo except that she showed up in town about a month ago and quickly showed off a skill in magic no one else in town had.  She set up shop selling magic items for a premium price.  She seems to dislike personal attachments, and never really visibly leaves her house/shop.  No one really knows where she gets materials, where she stores her goods for sale, or really anything else about her.
+    </p>
+    <p>
+      In reality Margo is an archmage from Stagenheim who has been travelling the world selling magical items for years.  For safety she does not keep any of her stock on this plane of existence, a tactic she started when she tried for a time to run her business via mail-order catalog.  She is deeply concerned by the Prince of Fiends success, and so has decided to ply her trade among those most likely to do some good in the fight against him.  She has no desire to get into any sort of combat herself, but will defend her shop if it is attacked.
+    </p>
+    <aside class="card col-sm-6 pull-right" id="jaxanchin">
+      <h3>Jaxan Chin</h3>
+        <p><strong>Race:</strong> Hisru Human <br />
+    <strong>Class &amp; Level:</strong> Cleric (Life) 4 <br />
+    <strong>Background:</strong> Acolyte <br />
+    <strong>Alignment:</strong> Neutral Good</p>
+    
+    <h4 id="proficiencies-6">Proficiencies</h4>
+    
+    <p><strong>Saving Throws:</strong>Wisdom, Charisma<br />
+    <strong>Skills:</strong> Insight, Persuasion, History, Religion</p>
+    
+    <p>
+      <strong>Hit Points:</strong> 24 (4d8 + 4) <br />
+      <strong>AC:</strong> 20 (plate armor, shield) <br />
+      <strong>Languages:</strong> Hisru, Staelic, Stagen, Imperial, Elf
+    </p>
+    
+    <h4 id="actions-1">Actions</h4>
+    <p>
+      <strong>Mace: </strong> melee weapon attack +4 (1d8+2 bludgeoning)
+    </p>
+    <p>
+      <strong>Spellcasting: </strong> Jaxan is a 4th level spellcaster and has the following cleric spell slots: 4 1st level, 3 2nd level.
+    </p>
+    <table class="table">
+      <tr>
+        <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
+      </tr>
+      <tr>
+        <td>14</td><td>10</td><td>12</td><td>14</td><td>16</td><td>14</td>
+      </tr>
+    </table> 
+    </aside>
+    <h4>Jaxan Chin</h4>
+    <p>
+      Jaxan is a cleric of Amathera, and the local leader of Amathera's Shield, the organization running the refugee camp.  Jaxan is not actually a particularly skilled or important cleric, but Amathera's Shield is short-handed in the extreme, and he was the highest ranking member they had available to assign to Cur'Estan.
+    </p>
+    <p>
+      Jaxan is good-hearted, and while he is not a skilled cleric, he is a skilled administrator, and the camp he runs hums along with minimal friction.  He is regularly at odds with Wyrmling, who hates giving valuable supplies to the refugees, even though General Heartbren ordered that all necessary supplies be made available.
+    </p>    
+  </div>
+  <div id="curestanlocations">
+    <h3>Locations in Cur'Estan</h3>
+    <h4>The Castle</h4>
+    <p>
+      The Castle of Cur'Estan is a massive fortress recently restored after being abandoned for some 500 years.  The castle towers each have basement storerooms, several floors of sleeping and living quarters for soldiers, and watch rooms.  When rebuilding the castle, the irregulars built a plumbing system into the keep, making use of a dwarven pump well to pull water from the local acquifer and move it to the various areas of the keep and walls.
+    </p>
+    <h4>
+      The Keep
+    </h4>
+    <p>
+      The Keep of Cur'Estan is used to house additional soldiers, the leadership of the Black Wolf Irregulars, and entertain guests and visitors.  Beuracratic staff and major officers have offices and living quarters in the higher floors.  The ground floor is dominated by the Great Hall and the armory, while the kitchens, pump system, and store rooms dominate the basement.  Gerad Heartbren has his office on the 4th floor of the keep, surrounded by abandoned offices once belonging to the other generals of the Black Wolf Irregulars.
+    </p>
+    <h4>
+      Quartermaster's Warehouse
+    </h4>
+    <p>
+      The quartermaster's central warehouse is the receiving point for goods in the keep.  While technically in charge of all of the castle's stores, the quartermaster keeps the most valuable goods close at hand in his central warehouse on the west wall of the keep.  The small quartermaster's gate behind the warehouse allows for quickly unloading wagons into the central warehouse, from which goods are then distributed to the other storerooms and assigned to soldiers or staff who need them.  Wyrmling Trapsmith spends most of his time in this central warehouse.
+    </p>
+    <h4>
+      Stables and Blacksmith
+    </h4>
+    <p>
+      The north wall of the castle is dominated by the Stables and blacksmiths shop.  Once containing enough horse for a sizable contingent of cavalry, the stables are barely at half capacity today.  The blacksmith here mostly handles tools, horseshoes, and repairs.  There is also a cooper and wheelright who work out of the blacksmith shop.
+    </p>
+    <h4>
+      Bladesmith, Fletcher, and Armorer
+    </h4>
+    <p>
+      Weapons and armor are made and repaired on site by the specialists working in the southeast corner of the keep.  All goods orders for the armorer, bladesmith, and fletcher come through the quartermaster, and finished goods are sent to the quartermasters warehouse for storage.
+    </p>
+    <h4>
+      The Town
+    </h4>
+    <p>
+      The town itself is dominated by the embassies, 6 large stone buildings near the center of town.  The only other stone building in the town is Margo's Mystics.  The town is fairly wealthy, dominated by merchants who handle supply chains for the irregulars and lords of the rising dawn, and the families of officers and soldiers.  
+    </p>
+    <h4>Market Square</h4>
+    <p>
+      The open space between the keep and the embassies is dominated each morning by market stalls, stands, and carts.  Here you can find all sorts of goods for sale, from meat pies to cleavers.  The market opens at dawn each day, and most merchants have closed up shop by noon. There are very few open shops with permanent buildings in the town, as the residents have become accustomed to the morning market tradition, saving their shopping for the next morning.
+    </p>
+    <h4>Kandori Embassy</h4>
+    <p>
+      The Kandori Embassy building is the largest and closest to the castle.  Here James Lightbringer, Ambassador of the King of Kandor and General of the Lords of the Rising Dawn, keeps his offices and beauracratic staff.  The embassy is in near constant contact with the castle, as the two forces work to coordinate their efforts and supply chains.
+    </p>
+    <h4>Gerasaline Embassy</h4>
+    <p>
+      Just north of the Kandori embassy, the Gerasaline embassy sits largely empty.  A skeleton staff keeps it clean and in-shape, while the ambassador in charge, Therin Lightsword, has not heard from his queen since the fall of Strovenguard.  The embassy ran out of funds some time ago, and the staff are now paid directly by the Black Wolf Irregulars.
+    </p>
+    <h4>Dormanian Embassy</h4>
+    <p>
+      The Dormanian Embassy has been run by a skeleton crew lately, as Dormania has dealt with it's own internal issues.  Since the resolution of the Imperial Succession there have been rumors of a new delegation to arrive soon.
+    </p>
+    <h4>Old Curinor Embassy</h4>
+    <p>
+      The Curinor embassy is all but abandoned.  Officially Curinor has withdrawn all support for outside forces, including the irregulars, to focus on the defense of their own lands and holds.
+    </p>
+    <h4>Eldoranian Embassy</h4>
+    <p>
+      A few months ago the Ambassador from Eldoran, a minor prince and cousin to the King, died suddenly in his sleep.  The chaos in civil war in Eldoran since then has meant no replacement has arrived.
+    </p>
+    <h4>Thorian Embassy</h4>
+    <p>
+      Demal Thor's ambassador still resides in the embassy, though there has been no council of clan chiefs in some time and thus no orders for him.  He has dismissed all of his staff so that they can return to their families if they live and help them make it out of Demal Thor to the relative safety of the refugee camps.
+    </p>
+    <h4>Margo's Mystics</h4>
+    <p>
+      Margo is an excentric gnome of unparalelled magical skill who specializes in enchantments.  Roughly 2 months ago she showed up in town, purchased the house of the richest merchant in town for an exorbitant sum, and then proceeded to turn the wooden walls into stone with magic.  She has a small store front on the first floor where she offers magical goods, although nothing besides pictures and descriptions are ever on display.  Whenever someone makes an order she disappears into a backroom, and 5 minutes later comes out with the desired item.  Her list of items in stock changes erratically and at odd intervals, things disappearing from her 'in stock' list without anyone ever coming to buy them.  
+    </p>
+    <p>
+      Obvious (and not so obvious) magical traps block the entrance into any part of the house outside of the main storefront.  To date Margo has apprehended 15 thieve's attempting to sneak into her store room.  No one is known to have ever succeeded at stealing anything of value from inside Margo's home.
+    </p>
+    <h4>Kyman's House</h4>
+    <p>
+      Kyman Hexhammer owns a large house near the Eldoranian Embassy, from which a variety of shady characters regularly come and go.  Although none of them seem to stay in town long. From here he runs a contract spy and infiltration service for the Black Wolf Irregulars, collects the information they bring in, and sends on the reports to General Heartbren.  The house and its furnishings display an ostentatious display of wealth.
+    </p>
+    <p>
+      Kyman himself doesn't live in the house, but a mysterious door in the back goes to his personal Mordenkainen's Magnificent Mansion, where he himself lives.
+    </p>
+    <h4>Refugee Camp</h4>
+    <p>
+      In recent months refugees from Gerasalim and Demal Thor have been arriving in Kandor by the thousands.  Gerad offered the area south of the city to Amathera's Shield for a refugee camp.  It currently houses about 1000 people, mostly from southwestern Gerasalim.  The camp is run by a cleric of Amathera by the name of Jaxan Chin.  The camp is an orderly place, with large tents full of straight rows of cots.  The camp is largely run by volunteers from within the refugee population itself.  The camp is (for the most part) supplied by the Black Wolf Irregulars, although Wyrmling is regularly stingy with supplies for the refugees, Jaxan has secured additional supplies directly through Amathera's Shield such that no one in the camp goes hungry.
+    </p>
+    <h4>Southern Barracks</h4>
+    <p>
+      The Southern Barracks is overflow housing for the Black Wolf Irregulars soldiers.  Currently at about half capacity, it consists of 6 large multilevel stone buildings each with beds, kitchens, and even plumbing.
+    </p>    
+  </div>
+  <div id="curestanfactions">
+    <h3>Factions in Cur'Estan</h3>
+    <h4>Amathera's Shield</h4>
+    <p>
+      Amathera's Shield runs the refugee camp in town, and is lead by Jaxan Shield.  There are only a few actual members of Amathera's Shield in town, as most of their numbers are dedicated to camps that need more active protection (and don't sit in the shadow of a friendly fortress with a sizable army).  Jaxan is not particularly comfortable dealing with things outside of his mission to help the destitute.
+    </p>
+    <h4>Artificer's of Mechanus</h4>
+    <p>
+      The Artificer's don't have an official representative in town, but Margo is in fact a member of the group, and is in regular contact with the guild leadership in Stagenheim.
+    </p>
+    <h4>Black Sun</h4>
+    <p>
+      Kyman Hexhammer has coopted by right of rank the small Black Sun presence that had been in Cur'Estan, and largely turned it towards the war effort.  The previous local guild master's disappearance remains an unsolved crime in town (one that the General Heartbren has informed the local constabulary they can safely ignore for the time being).
+    </p>
+    <h4>Black Wolf Irregulars</h4>
+    <p>
+      The Black Wolf Irregulars are the preeminent power in town.  They own the 3 mile radius around the castle as sovereign territory by treaty with the King of Kandor.  As such Gerad Heartbren, as the last ranking general of the Black Wolves, acts as the local ruler of the town.
+    </p>
+    <h4>Illustrious Guild of Merchants and Fine Artisans</h4>
+    <p>
+      Most of the merchants in town are members of the Illustrious Guild of Merchants.  They don't have a local leader, but have regular meetings at various bars in town to discuss issues and current events.
+    </p>
+    <h4>International Grangemaster's Alliance</h4>
+    <p>
+      The Grangemaster's Alliance has a chapter house in town where farmers from around the area meet to discuss problems and politics.
+    </p>
+    <h4>Lords of the Rising Dawn</h4>
+    <p>
+      The Lords of the Rising Dawn have a sizable presence in town, led by Duke Lightbringer.  They have a barracks compound on the southeast edge of town.
+    </p>
+    <h4>Maker's of Legend</h4>
+    <p>
+      The Maker's of Legend have inserted themselves into the Black Wolf Irregulars.  The local group is led by Haera Oelefros, and they are determined to record the events of the Orc War from the front lines.  Haera has an office in the keep, and has been tasked by General Heartbren with general records keeping and interfacing with foreign dignitaries.
+    </p>
+    <h4>Trollkin Mercenary Corps</h4>
+    <p>
+      There is currently a small embedded unit of the Trollkin Mercenary Corps with the Black Wolf Irregulars.
+    </p>
+    
+  </div>
 
-<h4 id="proficiencies-6">Proficiencies</h4>
+</div>
+<div id="chapter1">
+  <h2>Chapter 1: Recruits</h2>
+  <div id="chapter1startingout">
+    <h3>Starting Out</h3>
+    <h4>Building Your Character</h4>
+    <p>
+      Player's should use the following guidelines for building your character.
+    </p>
+    <p>
+      <strong>Step 1: Pick a Race</strong> <a ui-sref='app.races'>Use the race list on this site.</a>  Note that known languages have been removed from racial entries, languages known will be determined later.
+    </p>
+    <p>
+      <strong>Step 2: Determine Ability Scores</strong> You can choose between a 30 pt point buy (max 16) or roll 4d6 (pick 3) 6 times and then assign them to ability scores.  If you use a point buy, use the following table to determine the cost of any particular ability score (before racial adjustment):
+    </p>
+    <table class="table">
+      <tbody>
+        <tr>
+          <th>Score</th><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td>
+        </tr>
+        <tr>
+          <th>Cost</th><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>7</td><td>9</td><td>12</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      <strong>Step 3: Choose a Class</strong> <a ui-sref='app.classes'>Use the class list on this site.</a> If the class or subclass details are not listed on the site they are available in the Players Handbook or the D&D supplement book listed on the page.  If you do not have access to a copy of the particular book talk to your DM.
+    </p>
+    <p>
+      <strong>Step 4: Determine your background</strong> <a ui-sref='app.backgrounds'>You can use the background listing on the site.</a> Backgrounds can be custom built as well.  Talk to your DM if you would like to use a custom background.  Use the guidelines in the Player's Handbook for building any custom background.
+    </p>
+    <p>
+      <strong>Step 5: Choose your Faction (optional)</strong> Players for this campaign are encouraged (but not required) to start as part of a major faction.  PCs will receive additional orders (and potentially rewards) from faction leaders as part of each major mission.  The faction likely shows up in the characters backstory, and the characters ideals and goals should be closely aligned with the faction they join.  The organizations provide various benefits to players in their adventuring career as well as upholding certain ideals called tenets.  See the <a href='app.organizations'>Organizations page</a> for details on the factions, and the list below for the organizations available as factions to join in this campaign.
+    </p>
+    <p>
+      <strong>Step 6: Detailed Character History </strong> Flesh out your characters history in relation to the events of the world with your DM.  You need to answer a few important questions at a minimum:
+    </p>
+    <ul>
+      <li><a ui-sref='app.geo'>Where are they from?</a></li>
+      <li>They are starting the campaign at level 3, which means they have some history and skill already.  What have they done in the past?</li>
+      <li>Where were they before the start of the campaign?</li>
+      <li>Do they have family or friends somewhere that they care about? A previous adventuring party that is still out there somewhere?</li>
+      <li>If you are a member of a faction, how did you join it, what is your standing in that organization?</li>
+    </ul>
+    <p>
+      <strong>Step 7: Languages Known</strong> Determine what languages your character knows.  See the <a ui-sref='app.languages'>Languages page</a> for details on what and how many languages your character knows.  All PCs should know Imperial from some means, whether by being from a country that speaks it normally, or by getting it through a background, racial, or ability score based bonus language.
+    </p>
+    <p>
+      <strong>Step 8: Level up Your Character</strong> Your character should be level 3 at the start of the campaign, so level up your character appropriately according to your chosen class. Multiclassing may be allowed, for the rules of multiclassing, see the Player's Handbook.
+    </p>
+    <p>
+      <strong>Step 9: Choose your Equipment</strong> Ignore the equipment provided by your class.  In addition to the equipment provided by your background and potentially your faction, you start with 500 gp worth of equipment.  Players can use this to purchase armor, weapons, adventuring gear, mounts or common magic items (see the <a ui-sref="app.quickref">Quick Reference Manual</a> for listings and prices).
+    </p>
+    <h4>Organizations Available for Players to Join</h4>
+    <p>
+      Players who are part of a particular faction will receive orders from their faction to report to Cur'Estan, and then orders from their faction leader in the town.  The following factions are available for player characters to be a part of at the start of the campaign.
+    </p>
+    <h4>Amathera's Shield</h4>
+    <p>
+      Member's of Amathera's Shield will be told to report to the refugee camp in Cur'Estan.  Jaxan, not particularly needing an additional hand with the players skills, will instruct them to report to General Heartbren to aid in the general effort.
+    </p>
+      <h4>Artificer's of Mechanus</h4>
+      <p>
+        Members of the Artificer's of Mechanus may be responding to a request for an apprentice by Margo.  Once they've arrived, Margo will inform them that she wants them to report to General Heartbren as a recruit so that she can keep an eye on whats going on in the world.
+      </p>
+      <h4>Black Sun</h4>
+      <p>
+        Members of the Black Sun will be approached on entering the town and ordered to report to Kyman immediately.  Kyman will inform them that he is now their boss, and he needs someone to be part of a new infiltration team that General Heartbren is assembling.
+      </p>
+      <h4>Black Wolf Irregulars</h4>
+      <p>
+        Members of the Black Wolf Irregulars will either already be in town preexisting, or arriving as a survivor from another (now dead or disbanded) unit.  General Heartbren is the local commander, and lower ranked members will tell them to report to General Heartbren immediately.
+      </p>
+      <h4>Champions of Cora</h4>
+      <p>
+        The Champions of Cora have no local representation currently, but members of the Champions may be ordered by a cleric of Cora to go to Cur'Estan and assist however possible.  People in town will tell them to talk to General Heartbren to find out where they are needed.
+      </p>
+      <h4>Dormanian Imperial Guard</h4>
+      <p>
+        Members of the Dormanian Imperial Guard may arrive as part of the new delegation as a guard or diplomatic staff with the ambassador (either Theodore Gloryheart, Alexandra Ransomir, or Genevieve Octavius, depending on who won the election).  The ambassador will order them to infiltrate the Irregulars, if it is Alexandra or Theodore, to help the effort, and if it is Genevieve, to serve as a spy for the Emperor.
+      </p>
+      <h4>Guild of Heroes</h4>
+      <p>
+        The Guild of Heroes has recently taken a contract from General Heartbren to get a monster hunting specialist on an infiltration and assault team, and the PC member of the guild is assigned that contract.  They have a contact in town, one of the merchants, Feril Honeybait.
+      </p>
+      <h4>International Grangemaster's Alliance</h4>
+      <p>
+        The Grangemaster's Alliance has a local chapterhouse, and has taken it upon themselves to fill the gaps in supplying the local refugee camp.  A PC member of the Grangemaster's Alliance will be sent to General Heartbren to join his team.  The local Grangemaster, a farmer named Winslow Fredericks, is particularly concerned about the increase in raids on local farms and will use what resources are at his disposal to protect the farmers and their livelihoods.
+      </p>
+      
+      <h4>Illustrious Guild of Merchants and Fine Artisans</h4>
+      <p>
+        Most of the local merchants are members of the Guild (those who aren't are too minor for the Guild to be concerned over).  The PC guild member has been encouraged to go to Cur'Estan because there is opportunity for people of skill to earn enough of a fortune to start their own business, and the influx of refugees and the presence of so many soldiers means there is a glut of demand in the area as well.  The local guild leader, Kendrick O'Malley, will inform the PC on arrival that General Heartbren is offering well paid opportunities to handle issues the guild is already interested in, and encourage them to sign up.
+      </p>
+      <h4>Keepers of the Grove</h4>
+      <p>
+        The Druids of the Grove are concerned that the Prince of Fiends, by his very presence and continued success, threatens to upset the balance of power between the Gods.  The PC member of the Keepers of the Grove will be sent to Cur'Estan to find allies and assist in the battle against the Prince.
+      </p>
+      <h4>Lords of the Rising Dawn</h4>
+      <p>
+        Member's of the Lords of the Rising Dawn will be assigned by their local leader to work for Duke Lightbringer.  Lightbringer will inform them that General Heartbren has requested a member of the Lords to join a new team he is putting together and will send the PC to be that person.
+      </p>
+      <h4>Maker's of Legend</h4>
+      <p>
+        The Maker's of Legend is the one group from which there will be at least one member on the team.  A PC Maker of Legend will be called on by Haera Oelefros to record the doings of the team that General Heartbren is assembling.  Haera is convinced they will do great things and wants to make sure that the stories are recorded for posterity.
+      </p>
+      <h4>Masters of the Deep Song</h4>
+      <p>
+        The Church of Dorun is critical of the Underking's decision to withdraw the dwarves from the war, and will secretly send one of their own to assist in Cur'Estan.  The Master's of the Deep Song have a contact in the refugee camp, Ogrun Firebreath, who can provide insight, orders, and relay reports back to Curin Keep.
+      </p>
+      <h4>Shepherds of the All-Mother</h4>
+      <p>
+        The Shepherds of the All-Mother see the presence of the Prince of Fiends on Elthelas as a direct violation of the Gods agreement.  They are determined to end his influence and prevent his victory in the war.  The PC member may be viewed with suspicion in Cur'Estan, but General Heartbren is willing to take anyone who can be of use.  The Shepherds contact in Cur'Estan is a young gnomish cleric by the name of Gimble Beren, who has a front as the local undertaker.
+      </p>
+      <h4>Silver Dragon Knights</h4>
+      <p>
+        Dera'Dragorim has for now been too far removed from the issue to consider intervening with force in the war against the Orcs, but the Dragon Emperor has been considering it for some time.  He will send a PC member of the Silver Dragon Knights to Cur'Estan as a goodwill ambassador to serve at General Heartbren's pleasure, along with a diplomat, Farnor Spiketooth, who will serve as his official ambassador to the Irregulars.
+      </p>
+      <h4>Sylvan's Rangers</h4>
+      <p>
+        Sylvan's Rangers are renknowned adventurer's, and many would need little encouragement to join the fight against the servants of Sylvan's ancient enemy Mat'raktha.  The closest thing to a local representative of the Rangers would be the half-elf ranger who helps protect the nearby woods, Sondel Fistin.
+      </p>
+      <h4>Trollkin Mercenary Corps</h4>
+      <p>
+        The Trollkin Mercenary Corps have a contract with General Heartbren to supply a certain number of soldiers to his army.  The PC member would be sent as reinforcements to the local troop, and then assigned by General Heartbren to his new team.  The local Trollkin Sergeant, Drog Stonearm, will be the PCs contact with the organization.  He will provide the PC with his advance payment for each mission.
+      </p>
+    <h4>Factions Discouraged because they have a limited interest</h4>
+    <ul>
+      <li>Morrind Brewers' Club</li>
+      <li>Order of the Cleansing Fire</li>
+      <li>Stormlords of Trimala</li>
+    </ul>
+    <h4>Factions not Available</h4>
+    <p>
+      There are a few factions that are not available to player characters for this campaign (listed below).  These factions are either currently dissolute, or are directly opposed to the mission of Cur'Estan.
+    </p>
+    <ul>
+      <li>Alliance of 6 Nations</li>
+      <li>Black Guards of Mat'raktha</li>
+      <li>Dragon Cult</li>
+      <li>Voidbringers</li>
+    </ul>
+    <h4>Coming Together</h4>
+    <p>
+      Player's will come together for the first time in the office of Gerad Heartbren, the leader of the Black Wolf Irregulars, on the 18th of Trimalan, 1846.  He has summoned each of them there because their leaders and bosses see each of them as having a unique potential, and General Heartbren is intent on forging them into an elite team to handle the most difficult issues in the war.
+    </p>
+  </div>
+  <div id="chapter1raiders">
+    <h3>Raiders</h3>
+    <h4>DM rundown</h4>
+    <p>
+      The past several weeks have seen a series of raids on nearby farms by orcs and hobgoblins.  A large band of them split off from an orc army poised to attack Northport and has been raiding for supplies.  They were rebuffed from the more populous regions by the Kandori army, who declined to pursue them into the woodlands that surround Cur'Estan.  The raiders have set up a headquarters in the basement of an old fort, and have smaller sattelite camps throughout the region.  Each of the sattelite camps sends supplies back to the fort, which in turn sends supplies south to the main army.
+    </p>
+    <p>
+      The entire raiding band contains 50 orcs, 30 hobgoblins, and 20 goblins, most are a step above your average warrior, having volunteered for duty in hostile territory.  They have 15 wargs, and 2 Tanarukks at their disposal.  The orc leader is assisted by a young green dragon.
+    </p>
+    <p>
+      There is 1 camp close to Cur'Estan which is responsible for the raids that brought the raiders to General Heartbren's attention.  That camp has 5 orcs, 3 hobgoblins, 2 goblins and 3 wargs.
+    </p>
+    <aside class="card col-sm-6 pull-right" id="sandibrightsword">
+      <h3>Sandi Brightsword</h3>
+      <h4>Medium Humanoid (human), Lawful Good</h4>
 
-<p><strong>Saving Throws:</strong> +10 Strength, +7 Constitution <br />
-<strong>Skills:</strong> Athletics, Survival, Perception, Intimidation</p>
+      <p>
+        <strong>Hit Points:</strong> 24 (3d10 + 6)<br />
+        <strong>AC:</strong> 20 (plate, shield)<br />
+        <strong>Speed:</strong> 30 ft, 60 ft on horseback<br />
+      </p>
+      <table class="table">
+        <tr>
+          <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
+        </tr>
+        <tr>
+          <td>16</td><td>8</td><td>14</td><td>10</td><td>12</td><td>14</td>
+        </tr>
+      </table>    
+      <p>
+        <strong>Saving Throws:</strong> +3 Wis, +4 Cha<br />
+        <strong>Skills:</strong> +3 Perception, +3 Animal Handling, +4 Persuasion, +4 History<br />
+        <strong>Senses:</strong> passive perception 13<br />
+        <strong>Languages:</strong> Imperial, Dwarf, Morrind<br /> 
+        <strong>Challenge:</strong> 3
+      </p>
+    
+    <p><strong>Divine Sense:</strong> As Paladin</p>
+    
+    <p><strong>Lay on Hands: </strong> As Paladin, max 15 hp</p>
+    
+    <p><strong>Dueling Fighting Style:</strong> +2 damage when wielding a single one handed weapon, included below.</p>
+    
+    <p><strong>Divine Smite:</strong> As a Paladin</p>
+    <h4 id="actions-1">Actions</h4>
+    
+    <p><strong>Morningstar:</strong> Melee weapon attack To hit: +5, Damage: 10 (1d8+5) bludgeoning</p>
+    
+    <p><strong>Lance:</strong> Melee weapon attack (reach). To hit: +5, Damage: 12 (1d12+5) piercing</p>
+    
+    <p><strong>Spellcasting:</strong> Sandi has 3 first level spell slots that she can use to cast Paladin spells or power her divine smite.</p>
+    
+    </aside>
+    <p>
+      The most recent raid was of a farm 15 miles south of the town.  A Lords of the Rising Dawn patrol saw the smoke and responded, only to arrive too late.  The farmer and his family were dead on the scene, the house and barn burned to the ground.  The livestock were missing, and tracks led to the south.  After following the tracks for a few miles they lost the trail and returned to Cur'Estan to report in.  The patrol leader, Sergeant Sandi Brightsword, is available for the players to interrogate.
+    </p>
+    <p>
+      The farmer was a halfling by the name of Farn Littlefoot, his wife Jenny, and their two kids, Sally and Bob.  They raised hogs and chickens, as well as feed corn, beets, and wheat. They were members of the local Grange association in good standing and were well liked in the community.
+    </p>
+    <p>
+      General Heartbren will give the party a packet of order details that will include the location of the farm, the names of the farmers family, his primary orders and the orders from any factions the players belong to, detailed below.
+    </p>
+    <h4>Orders</h4>
+    <p><strong>General Heartbren's Orders:</strong> Find the raiders and put a stop to their attacks permanently.  In the process, please find any intelligence you can on orc army movements to the south.  Payment will be 20 gp per enemy killed or captured, plus a 500 gp bonus if you uncover good intelligence on the orcs plans.</p>
+    <p><strong>Amathera's Shield Orders:</strong> The raiders have stolen a large number of livestock and valuable food that could feed refugees and people in the town.  Please return as much of the stolen goods as you can to the refugee camp. -Jaxan Chin</p>
+    <p><strong>Black Sun Orders:</strong> I paid Farn 30 gp to help me move some product into town, 6 kegs of duty-free Red Gold Wine from Malidal.  It should have been at his farm at the time of the attack, make sure it gets back to me. -Kyman Hexhammer</p>
+    <p><strong>Dormanian Imperial Guard:</strong> Farn was a person of interest in a smuggling investigation recently involving Red Gold Wine.  Find the goods and any evidence you can and deliver them to the embassy. -Ambassador (x)</p>
+    <p><strong>Guild of Heroes:</strong> We have a contract on a young green dragon sighted in the area. While you are investigating down south, find the dragon and kill it.  Bring me back its scales and you'll get the contract reward, 1000 GP. -Feril Honeybait</p>
+    <p><strong>International Grangemaster's Alliance:</strong> Jenny was well liked here at the grange hall.  She wore a locket that was of deep personal value given to her by her sister Lily who lives here in town.  Please retreive it and return it to her sister if you can. -Winslow Fredericks</p>
+    <p><strong>Lords of the Rising Dawn Orders:</strong> Kill every orc involved in these raids.  These attacks prove the evil in their hearts and they cannot be tolerated.  Execute with prejudice. The Lords will provide a 20 gp bounty for each right ear of an orc, hobgoblin or goblin delivered. -Duke James Lightbringer</p>
+    <p><strong>Maker's of Legend:</strong> Make sure the battle with those orc raiders is glorious and a tale worth telling, and remember that you are supposed to be the heroes, so no sneaky or dishonorable behavior. -Haera Oelefros</p>
+    <p><strong>Master's of the Deep Song:</strong> We think these orcs may have been involved in a raid on a dwarf hold a few weeks ago, some important documents were stolen detailing some of the underground trade routes.  This information must be recovered or destroyed at all costs.  It cannot fall into non-dwarven hands, friend or foe. -Ogrun Firebreath</p>
+    <p><strong>Shepherds of the All-Mother:</strong> Those Rising Dawn fools simply left the bodies of the farmer and his family lying in the dirt.  Bring the bodies back to town with all possible dignity so that they can be given a proper burial. -Gimble Beran</p>
+    <p><strong>Trollkin Mercenary Corps:</strong> No special orders.  Your advance payment is 150 gp.  If final value of the contract exceeds that we will pay you the rest upon completion. -Drog Stonearm</p>
+    <p><strong>Quartermaster's Addendum:</strong> I planned to purchase those livestock for the stockpile here in the keep.  Make sure to deliver any recovered goods to the Quartermaster's office.</p>
+    <h4>The Farm</h4>
+    <p>
+      The Littlefoot Farm sits 15 miles south of Cur'Estan.  The house is little more than a burned out hulk, but searching it thoroughly players can discover valuables owned by the family left behind by the orcs, specifically a silver heart shaped locket with the names Sally Littlefoot and Bob Littlefoot inscribed inside once owned by Jenny Littlefoot, and their savings, 30 gp, hidden under what was once the bed.  The locket is worth 10 gp on the open market.
+    </p>
+    <p>
+      If the players ask about the locket in town they can discover that Jenny Littlefoot had a sister who lives in town, Lily, who will be willing to pay the players up to 25 gp for the locket.
+    </p>
+    <p>
+      The barn has also been burned down, and very little remains of it.  There is nothing of interest inside, but just outside the barn the players can pick up the tracks of the livestock that were driven away from the farm to the south.
+    </p>
+    <p>
+      The bodies of the family are laying covered by blankets outside the house until they can be retreived.  They were left there by the Lords of the Rising Dawn after being discovered in various places around the property.  All of the bodies show signs of being attacked with axes.  The children's bodies also have tooth marks.  A sufficiently high nature check can determine that the teeth marks are from a Worg, a vicious relative of wolves used by orcs as attack mounts.
+    </p>
+    <aside class="card col-sm-6 pull-right" id="gulloxhameater">
+      <h3>Gullox Hameater</h3>
+      <h4>Small Humanoid (goblinoid), Neutral Evil</h4>
 
-<p>
-  <strong>Hit Points:</strong> 135 (15d10 + 45) <br />
-  <strong>AC:</strong> 20 (plate +2) <br />
-  <strong>Languages:</strong> Elf, Imperial, Dwarf, Orc
-</p>
+    <p>
+      <strong>Hit Points:</strong> 9 (2d6 + 2)<br />
+      <strong>AC:</strong> 16 (leather armor, shield)<br />
+      <strong>Speed:</strong> 15 ft (Gullox's leg is injured)<br />
+    </p>
+    <table class="table">
+      <tr>
+        <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
+      </tr>
+      <tr>
+        <td>8</td><td>16</td><td>12</td><td>10</td><td>8</td><td>10</td>
+      </tr>
+    </table>    
+    <p>
+      <strong>Skills:</strong> Stealth +7<br />
+      <strong>Senses:</strong> Darkvision 60 ft. passive perception 9<br />
+      <strong>Languages:</strong> Goblin, Orc<br /> 
+      <strong>Challenge:</strong> 1/2
+    </p>
+    
+    <p><strong>Nimble Escape:</strong> The goblin can take the Disengage or Hide action as a bonus action on each of its turns.</p>
+    
+    <h4 id="actions-1">Actions</h4>
+    
+    <p><strong>Scimitar:</strong> Melee Weapon Attack: +5 to hit, reach 5 ft, one target.  Hit 6 (1d6+3) slashing damage.</p>
+    
+    <p><strong>Shortbow:</strong> Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit 6 (1d6+3) piercing damage.</p>
 
-<p><strong>Great Weapon Fighting:</strong> Gerad rerolls 1s and 2s on his damage dice when wielding a weapon in 2 hands.</p>
-
-<p><strong>Feats:</strong> Great Weapon Master, Polearm Master</p>
-<h4 id="actions-1">Actions</h4>
-<p><strong>Multiattack:</strong> Gerad makes 3 glaive attacks when he takes the attack action on his turn.</p>
-<p><strong>Glaive +2:</strong> +12 (1d10+7 slashing) or +7 1d10+17 slashing</p>
-
-<p><strong>Second Wind:</strong> Gerad can recover 1d10+15 hit points as a bonus action, he must finish a short rest before he can use this ability again.</p>
-
-<p><strong>Action Surge:</strong> Gerad can take a second action on his turn.  He must finish a short rest before he does so again.</p>
-
-<p><strong>Indomitable:</strong> Gerad can reroll a saving throw that he fails. If he does so, he must use the new roll, he can use this feature twice before he finishes a long rest.</p>
-
-<p><strong>Spellcasting: </strong> Gerad has 4 1st level spell slots, 3 2nd level spell slots and 2 3rd level spell slots.  He knows the following spells: <strong>Shield, absorb elements, magic missile, gust of wind, mirror image, shatter, darkness, counterspell, fireball,</strong> and <strong>sending</strong>.  He knows the following cantrips: <strong>Green-Flame Blade, Booming Blade,</strong> and <strong>fire bolt</strong></p>
-<p><strong>War Magic:</strong> When Gerad uses his action to cast a cantrip, he can make one weapon attack as a bonus action.</p>
-<table class="table">
-  <tr>
-    <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-  </tr>
-  <tr>
-    <td>20</td><td>10</td><td>16</td><td>16</td><td>10</td><td>9</td>
-  </tr>
-</table>
-</aside>
-<aside class="card col-sm-6 pull-right">
-  <h3>Duke James Lightbringer</h3>
-  <p><strong>Race:</strong> Imperial Human <br />
-<strong>Class &amp; Level:</strong> Cleric 13 (War Domain) <br />
-<strong>Background:</strong> Noble <br />
-<strong>Alignment:</strong> Lawful Good</p>
-
-<h4 id="proficiencies-6">Proficiencies</h4>
-
-<p><strong>Saving Throws:</strong> Wisdom, Charisma<br />
-<strong>Skills:</strong> Persuasion, History, Religion, Athletics</p>
-
-<p>
-  <strong>Hit Points:</strong> 91 (13d8 + 26) <br />
-  <strong>AC:</strong> 23 (plate +2, shield +1) <br />
-  <strong>Languages:</strong> Imperial, Dwarf, Morrind, Orc, Elf
-</p>
-
-<p><strong>Feats:</strong> War Caster</p>
-<h4 id="actions-1">Actions</h4>
-
-<p><strong>Lance +1:</strong> +9 (1d12+1d8+4 piercing)</p>
-
-<p><strong>Longsword +1:</strong> +9 (2d8+4 slashing)</p>
-
-<p><strong>Spellcasting: </strong> Lightbringer has the following spell slots: 4 1st level, 3 2nd level, 3 3rd level, 3 4th level, 2 5th level, 1 6th level, 1 7th level.</p>
-
-<p><strong>War Priest: </strong> When James uses the attack action, he can make one weapon attack as a bonus action.  He can do this 5 times.  He regains all uses on a long rest.</p>
-
-<p><strong>Guided Strike: </strong> James can uses his channel divinity to strike with supernatural accuracy.  When he makes an attack roll, he can use his channel divinity to gain a +10 bonus to the roll.</p>
-
-<p><strong>War God's Blessing: </strong> James can use his reaction and his channel divinity to grant a creature within 30 ft of him a +10 bonus to an attack roll.</p>
-<table class="table">
-  <tr>
-    <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-  </tr>
-  <tr>
-    <td>16</td><td>9</td><td>14</td><td>12</td><td>20</td><td>12</td>
-  </tr>
-</table>  
-</aside>
-<p>Cur'Estan was once the fortress capitol of an ancient minor Kandori king, destroyed by Dorman I and left as a ruin in the woods.  20 years ago the Black Wolf Irregulars rebuilt the central castle to serve as their headquarters, and over the twenty years since a small town has sprung up around the castle serving the needs of the castle.  Over the last year, as the orcs have ravaged Demal'Thor, and then moved into Gerasalim, refugees have slowly trickled into the town.  A refugee camp has sprung up on the outskirts, now threatening to outnumber the original residents.</p>
-
-<p>The de facto ruler of Cur'Estan is General Gerad Heartbren of the Black Wolf Irregulars.  He commands the castle, and roughly 2000 soldiers, the last remains of the Black Wolf Irregulars forces.  </p>
-
-<p>The massive castle, with it's 30 ft thick walls, and 100 ft tall keep towers over the town in the west.  It contains large storehouses, stables, smiths, and fletchers who supply the soldiers.
-</p>
-<p>The town itself is dominated by the large stone embassy buildings, one for each of the Alliance nations, Kandor, Gerasalim, Dormania, Curinor, Demal Thor, and Eldoran.  Today only the Kandori Embassy is occupied, the rest have been abandoned, with only a caretaker cleaning crew assigned by Gerad to keep them from falling into disrepair.  The streets of the town are winding and haphazard.  The town was built quickly, with no particular plan, as merchants and tradesmen gravitated towards the town to fill the needs of the castle garrison and soldiers stationed there. The area directly in front of the castle gate is kept clear except in the mornings, when the merchants from the town, farmers, and hunters from the surrounding area set up temporary stands to sell goods.</p>
-<p>
-  To the south of the castle is the barracks of the Black Wolf Irregulars, approximately 1500 soldiers stay in the barracks (in addition to the 500 or so garrisoned in the castle).  The area west of the barracks is used as a training ground.
-</p>
-<p>To the south of the town is the refugee camp, housing about 1000 refugees, managed by a contingent of Amathera's Shield, about 50 strong.  The refugees are welcome in town, and occasionally one will have the funds to build a proper house in the town itself, the rest are housed in large tents in the camp, each housing as many as 50 people.</p>
-<p>
-  The southeast, between the town and the refugee camp, sits the permament complex of the Lords of the Rising Dawn.  An order of knights and paladins headquartered in Kaland.  The order has approximately 1000 soldiers garrisoned here in 4 large barracks buildings.
-</p>
-<h3>Important People in Cur'Estan</h3>
-<h4>Gerad Heartbren</h4>
-<p>
-  The now aging Moon Elf general is a gifted strategist and the de facto leader of the resistance forces, as they have come to be known since the dissolution of the Alliance.  His tribe was wiped out by the Orcs shortly after the fall of Aridhem, while he was commanding troops at the Fortress of Light, then he was reassigned to Cur’Estan shortly before the Fortress of Light’s own fall.  He blames himself for not being present for either battle, and is now determined to do better.
-</p>
-<p>
-  <strong>Goals: </strong> Gerad, as one of the few surviving moon elves of influence, is particularly concerned about finding and protecting any Moon Elf refugees he comes across.  He wants to see the Orcs removed from his homeland of Demal Thor. He was a young adventurer when the Alliance of 6 Nations was formed, and was an early believer in the future of peaceful relations.  He wants to see the Alliance come back together, and even bring in more members if possible.
-</p>
-<p>
-  <strong>Dislikes: </strong> Gerad holds a strong distaste for slavery and anything that shares similarities to it, such as serfdom or wage slavery.
-</p>
-<h4>Duke James Lightbringer</h4>
-<p>
-  Cleric of Alohim, Ambassador of the King of Kandor, and Commander of the Kandori armies in the east, Lightbringer is a leader of the Lords of the Rising Dawn.  He has a thousand Kandori soldiers at his command, and a contingent of skilled Paladins dedicated above all to wiping out the Orcs.  Despite all the setbacks, General Lightbringer remains constantly optimistic about their chances of success.
-</p>
-<p>
-  <strong>Goals: </strong> Duke Lightbringer is a loyal vassal of the Kandori king, and will not rebel against his leige lord.  He is dedicated to ensuring the security of Kandor's borders, and wants to wipe out the Orc race. 
-</p>
-<p>
-  <strong>Dislikes: </strong> Duke Lightbringer is a strong believer in the divine right to rule, and does not like that a common born person such as General Heartbren is in command at Cur'Estan.  He hates non-humans, particularly the green-skin races such as orcs and goblins, but has no love lost for elves, dwarves, halflings, or gnomes either.
-</p>
-<h4>Master Bard Haera Oelefros</h4>
-<p>
-  Haera Oelefros has led the Makers of Legend in Kandor for 15 years, and is convinced that the next grand story for the ages will come from the exploits of the resistance members.  She has brought a small contingent of bards with her to document what is going on, embedding them in various units she hopes will prove legendary.
-</p>
-<p>
-  <strong>Goals: </strong> Write the next major epic poem, preferably featuring herself as the hero.
-</p>
-<p>
-  <strong>Dislikes: </strong> Anyone who she thinks is more important than her.
-</p>
-<h4>Kyman Hexhammer</h4>
-<p>
-  The Black Sun leader from Stromforde was appalled at the Dwarves decision to withdraw from the war.  He may not care about nations, unity, or goodness, but the destruction wrought by the Prince of Fiends and his Orc armies has made the ‘legitimate’ acquisition of wealth difficult.  He now uses his many connections to recruit spies and assassins for the resistance, for a fee of course.
-</p>
-<p>
-  <strong>Goals: </strong> Get filthy rich, make sure the Resistance has enough money and resources to make him filthy rich.  Get revenge on Dorman XXIII for kicking him and his contacts out of Dormania.
-</p>
-<p>
-  Dislikes: People who worry too much about honor and let it get in the way of getting things done (or his future wealth).  Anyone who fails to pay him for services rendered.
-</p>
-<h4>Quartermaster Wyrmling Trapsmith</h4>
-<p>
-  The tiny kobold quartermaster was once an Orc slave before escaping.  He has proven himself incredibly adept at numbers and organization of supplies.  He is incredibly loyal to General Heartbren, who liberated his mine from the orcs.  His clan now controls a silver mine in the Dragons Teeth Mountains, just on the Demal'Thor side of the border.
-</p>
-<p>
-  <strong>Goals: </strong> Secure a ready supply of food and weapons for Cur’Estan.  Make sure the number of mouths to feed doesn’t exceed the available supplies.
-</p>
-<p>
-  <strong>Dislikes: </strong> Refugees (or anyone) who doesn’t contribute meaningfully to the community.
-</p>
+    </aside>
+    <p>
+      One of the goblins, Gullox Hameater, on the raid was injured in the fight, and is hiding in the wheat field nearby.  If the players search the wheat field he can be found with a DC 14 perception check (or passive perception check).  He will not attack, realizing he is outnumbered, but is unwilling to help the players.  He can be bribed or intimidated into giving up the location of their camp.  He will not give the players clues to the larger raiding force if he can help it, and if he feels like he can get away cleanly he will do so.
+    </p>
+    <h4>Finding the Raiders</h4>
+    <p>
+      The Raider's camp is located 5 miles southwest of the farm.  The raiders attempted to conceal their tracks, but a skilled tracker make a DC 15 survival check to trace them to their camp to the southeast. During travel one of the random encounters from the 'Random Encounters' section of this chapter will happen.
+    </p>
+    <p>
+      Alternatively, Gullox Hameater can guide the players to the camp, or show them where it is on a local map if the players succeeded in capturing and then bribing or intimidating him.
+    </p>
+    <p>
+      Finally, a member of Sylvan's Rangers could recruit help from Sondel Fistin, who will identify the direction the orcs went for the party and give them their approximate location (he saw smoke from a campfire in that area earlier that day, but did not investigate closely, assuming it was travelers).
+    </p>
+    <h4>The Camp</h4>
+    <p>
+      The raiders' camp is currently populated by the squad leader, an Orc Blade of Ilneval, 2 regular Orcs, a hobgoblin and a Worg. The hobgoblin and one of the orcs are keeping an eye on the stolen livestock, about half of which still remain.  There are 5 two-man tents as well as one large tent used by the leader.  The remaining 2 orcs, 2 hobgoblins, goblin, and worg are currently traveling to the central raiding base to deliver the other missing livestock.
+    </p>
+    <p>
+      If any of the raiders detect the players they will immediately raise the alarm and attack.  The worg will follow the orders of any of the orcs or the hobgoblin.
+    </p>
+    <h4>Intelligence</h4>
+    <p>
+      In the leaders tent is a document with his orders, written in orc.  It says: 'We need more food for the army, particularly meat.  Find and retreive any livestock you can and send them south right away.  We will await your shipment at the forward base where we will send it on to the army.'  Additionally 50 gp and 6 kegs of Red Gold Wine worth 60 gp each can be found in the leader's tent.
+    </p>
+    <p>
+      If successfully captured and intimidated, any of the raiders besides the leader will give up the location of the raider's base, and inform the players of the general numbers there, and that the shipment could still be intercepted before it arrives.
+    </p>
+    <p>
+      The shipment group is not particularly concealing their tracks, and can be followed with relative ease (DC 11 survival check).
+    </p>
+  </div>
+  <div id="chapter1raidersbase">
+    <h3>The Raiders' Base</h3>
+    <h4>Finding the Base</h4>
+    <p>
+      The Fort they are using as a base is 60 miles, or 2 full days travel, southeast of Cur'Estan.  The raiders caravan will be encountered on the second day, whatever direction they are headed.  On the first day one of the random encounters from the 'Random Encounters' section of this chapter should occur.
+    </p>
+    <h4>The Raider Caravan</h4>
+    <p>If the party returns to Cur'Estan first or takes a long rest before persuing the remaining raiders further south, they will encounter the remaining raiders on their way back to the raiding camp. Otherwise they will encounter them on the way to the raiding base herding 20 pigs to the fort.  They are not keeping watch, and collectively have a passive perception of 9.  Among them there are 2 Orcs, 2 hobgoblins, and 1 goblin riding a worg.  If they see any member of the party they will immediately attack.</p>
+    <p>
+      They have no additional intelligence beyond what could be found at the camp.
+    </p>
+    <h4>Outer Defenses</h4>
+    <p>
+      The outside of the fort is lightly guarded, only 3 orcs keep watch from the broken towers with javelins and greataxes.  The outer defense is primarily handled by Dralaxin, the young green dragon who keeps his perch on top of the ruined keep of the old fort.  Likewise he has established a hoard on the roof of the keep with 5000 gp worth of gold and gems.  If Dralaxin or one of the orc guards sees any member of the party they will raise the alarm and all attack, however those inside the basement of the keep will ignore the alarm, they feel that with a dragon guarding the door they don't need to worry about attack from smaller groups, and if a larger group is sighted one of the guards will come down and alert them personally.  
+    </p>
+    <p>
+      The fort consists of a square outer wall of spiked logs, 80 feet on a side, with 1 wooden tower at each corner, and one central gate which stands open.  The northwest tower is nothing but a pile of rubble.  Each tower has a stairway winding up the back and left side to the top lookout, 30 ft up.  The top of the tower is surrounded by a wooden half-wall that provides half-cover to anyone standing up there.  The range of any ranged weapon attack from on top of the tower to the plain below is increased by 20 ft.  The keep is 60 ft cubed and made of stone.  The inside of the keep is largely empty except for some ruined furniture, having been looted long ago, and consists of only 1 large room, with a stairway along one wall that leads up to a ladder to the roof, and a trap door that heads down into the basement.  If the party returned to Cur'Estan or took a long rest before beginning the pursuit of the raiding caravan, the 20 stolen pigs will be inside the great hall.  The keep is 60 ft on a side and square.
+    </p>
+    <h4>Inside the Base</h4>
+    <h4>Intelligence</h4>
+  </div>
+  <div id="chapter1randomencounters">
+    <h3>Random Encounters</h3>
+  </div>
+</div>
+<div id="chapter2">
+  <h2>Chapter 2: Northport</h2>
+</div>
+<div id="characterindex">
+  <h2>Index of Character Entries</h2>
+  <ul>
+    <li><a href="#geradheartbren">Gerad Heartbren, General</a></li>
+    <li><a href="#gulloxhameater">Gullox Hameater</a></li>
+    <li><a href="#haeraoelefros">Haera Oelefros, Master Bard</a></li>
+    <li><a href="#jameslightbringer">James Lightbringer, Duke</a></li>
+    <li><a href="#jaxanchin">Jaxan Chin</a></li>
+    <li><a href="#kymanhexhammer">Kyman Hexhammer</a></li>
+    <li><a href="#margo">Margo</a></li>
+    <li><a href="#sandibrightsword">Sandi Brightsword, Sergeant</a></li>
+    <li><a href="#wyrmlingtrapsmith">Wyrmling Trapsmith, Quartermaster</a></li>
+  </ul>
+</div>
 </div>

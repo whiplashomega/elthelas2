@@ -2,13 +2,13 @@
 "use strict";
 
 (function($, ng) {
-    var elthelas = ng.module('elthelas' ,['ui.router', 'hc.marked', 'ui.bootstrap', 'ngCookies', 'ngTimeline']);
-    elthelas.run(['$state', '$stateParams',
-        function($state, $stateParams) {
-            //this solves page refresh and getting back to state
-    }]);    
-    elthelas.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
-       $stateProvider.state('app', {
+  var elthelas = ng.module('elthelas' ,['ui.router', 'hc.marked', 'ui.bootstrap', 'ngCookies', 'ngTimeline']);
+  elthelas.run(['$state', '$stateParams',
+    function($state, $stateParams) {
+    //this solves page refresh and getting back to state
+  }]);    
+  elthelas.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
+    $stateProvider.state('app', {
            url:'/',
            views: {
                'header': {
@@ -35,7 +35,7 @@
              metadescription: "Website for the Elthelas Campaign Setting for Dungeons and Dragons by Joseph Harrison. Dungeons and Dragons is owned and copyrighted by Wizard's of the Coast.",
              metakeywords: ""
            }
-       }).state('app.domains', {
+    }).state('app.domains', {
           url:'options/domains',
           views: {
               'content@': {
@@ -49,7 +49,7 @@
           data: { title: "Domains",
              metadescription: "List of Domains available in the Elthelas Campaign Setting for Dungeons and Dragons by Joseph Harrison. Dungeons and Dragons is owned and copyrighted by Wizard's of the Coast.",
              metakeywords: "domains, air, earth, fire, water, craft, death, arcana, nature, life, light, war, tempest, trickery, trade"}
-       }).state('app.races', {
+    }).state('app.races', {
            url: 'options/races',
            views: {
               'content@': {
@@ -66,7 +66,7 @@
                return false;
              }
            }
-       }).state('app.race', {
+    }).state('app.race', {
          url: 'options/races/:race',
          views: {
               'content@': {
@@ -83,7 +83,7 @@
               return $stateParams.race;
             } 
           }
-       }).state('app.languages', {
+    }).state('app.languages', {
            url: 'options/languages',
            views: {
               'content@': {
@@ -95,7 +95,7 @@
               },
            },
            data: { title: "Languages"}
-       }).state('app.gods', {
+    }).state('app.gods', {
          url: 'ref/gods',
          views: {
            'content@': {
@@ -112,7 +112,7 @@
             return false;
           }
         }
-       }).state('app.god', {
+    }).state('app.god', {
          url: 'ref/gods/:god',
          views: {
            'content@': {
@@ -129,7 +129,7 @@
             return $stateParams.god;
           }
         }
-       }).state('app.organizations', {
+    }).state('app.organizations', {
          url: 'ref/orgs',
          views: {
            'content@': {
@@ -146,7 +146,7 @@
                return false;
              }
            }
-       }).state('app.organization', {
+    }).state('app.organization', {
         url: 'ref/orgs/:org',
         views: {
            'content@': {
@@ -163,7 +163,7 @@
               return $stateParams.org;
             }
           }
-       }).state('app.calendar', {
+    }).state('app.calendar', {
          url: 'ref/calendar',
          views: {
            'content@': {
@@ -174,7 +174,7 @@
            }
          },
            data: { title: "Calendar"}
-       }).state('app.cosmology', {
+    }).state('app.cosmology', {
          url: 'ref/cosmology',
          views: {
            'content@': {
@@ -185,7 +185,7 @@
            }
          },
            data: { title: "Cosmology"}
-       }).state('app.astronomy', {
+    }).state('app.astronomy', {
          url: 'ref/astronomy',
          views: {
            'content@': {
@@ -196,7 +196,7 @@
            }
          },
            data: { title: "Astronomy"}
-       }).state('app.magic', {
+    }).state('app.magic', {
          url: 'ref/magic',
          views: {
            'content@': {
@@ -207,7 +207,7 @@
            }
          },
            data: { title: "Magic"}
-       }).state('app.divines', {
+    }).state('app.divines', {
          url: 'ref/divines',
          views: {
            'content@': {
@@ -219,7 +219,7 @@
            }
          },
            data: { title: "Divines"}
-       }).state('app.quickref', {
+    }).state('app.quickref', {
          url: 'ref/quick',
          views: {
            'content@': {
@@ -231,7 +231,7 @@
            }
          },
            data: { title: "Quick Reference Manual"}
-       }).state('app.history', {
+    }).state('app.history', {
          url: 'history',
          views: {
            'content@': {
@@ -245,7 +245,7 @@
                return false;
              }
            }
-       }).state('app.historyevent', {
+    }).state('app.historyevent', {
          url: 'history/:eventname',
         views: {
            'content@': {
@@ -259,7 +259,7 @@
              return $stateParams.eventname;
            }
          }
-       }).state('app.classes', {
+    }).state('app.classes', {
         url: 'options/class',
         views: {
           'content@': {
@@ -273,7 +273,7 @@
         data: {
           title: "Classes"
         }
-       }).state('app.geo', {
+    }).state('app.geo', {
          url: 'geo',
          views: {
            'content@': {
@@ -290,7 +290,7 @@
             return false;
           }
         }
-      }).state('app.geoitem', {
+    }).state('app.geoitem', {
         url: 'geo/:type/:location',
         views: {
            'content@': {
@@ -307,7 +307,7 @@
             return $stateParams.location;
           }
         }
-      }).state('app.about', {
+    }).state('app.about', {
         url: 'about',
         views: {
           'content@': {
@@ -318,7 +318,7 @@
           }
         },
         data: { title: 'About the Author' }
-      }).state('app.book1', {
+    }).state('app.book1', {
         url: 'campaigns/book1',
         views: {
           'content@': {
@@ -332,7 +332,7 @@
           title: 'Epic of Elthelas Book 1: The Crystal of Light',
           auth: true
         }
-      }).state('app.book4', {
+    }).state('app.book4', {
         url: 'campaigns/book4',
         views: {
           'content@': {
@@ -346,7 +346,21 @@
           title: 'Epic of Elthelas Book 4: Desperate Measures',
           auth: true
         },
-      }).state('app.backgrounds', {
+    }).state('app.book4playersguide', {
+      url: 'campaigns/book4/playersguide',
+      views: {
+        'content@': {
+          templateUrl: '/html/content/campaigns/book4playersguide.html'
+        },
+        'sidebar@': {
+          templateUrl: '/html/sidebar/options.html'
+        }
+      },
+      data: {
+        title: "Epic of Elthelas Book 4: Desparate Measures - Players Guide",
+        auth: false
+      }
+    }).state('app.backgrounds', {
         url: 'options/backgrounds',
         views: {
           'content@': {
@@ -360,7 +374,7 @@
         data: {
           title: 'Backgrounds'
         },
-      }).state('app.beastiary', {
+    }).state('app.beastiary', {
       url: 'ref/beasts',
       views: {
         'content@': {
@@ -384,11 +398,9 @@
       },
       data: {
           title: 'Character Builder', 
-          auth: true
+          auth: false
         }
     });
-       $locationProvider.html5Mode(true);
-    }]);
-        
-    
+    $locationProvider.html5Mode(true);
+  }]);
 })(jQuery, angular);
