@@ -91,10 +91,12 @@ footer {
 
 .btn-primary, .btn-default {
   background-color: #0E3182;
-  color: #ffffff; }
+  color: #ffffff;
+  border-color: #0E3182; }
 
-.btn-primary:hover, .btn-default:hover {
-  background-color: #040e26; }
+.btn-primary:hover, .btn-default:hover, .btn-primary:active, .btn-default:active {
+  background-color: #040e26;
+  border-color: #040e26; }
 
 .alert-info {
   background-color: #1854de;
@@ -102,25 +104,20 @@ footer {
 
 .btn-success {
   background-color: #0A9595;
-  color: #ffffff; }
+  color: #ffffff;
+  border-color: #0A9595; }
 
 .alert-success {
   background-color: #16efef;
   color: #ffffff; }
 
-.btn-success:hover {
-  background-color: #043535; }
-
-.btn-warning {
-  background-color: #8069C9;
-  color: #000000; }
+.btn-success:hover, .btn-success:active {
+  background-color: #043535;
+  border-color: #043535; }
 
 .alert-warning {
   background-color: #c0b4e4;
   color: #000000; }
-
-.btn-warning:hover {
-  background-color: #4d3696; }
 
 .alert-danger {
   background-color: #714fe0; }
@@ -179,3 +176,6 @@ footer {
   @media (max-width: 767px) {
     .jumbotron {
       margin-top: 40px; } }
+
+.ng-hide {
+  display: none; }
