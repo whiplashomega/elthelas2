@@ -2,7 +2,7 @@
 layout: post
 title: "Spectator"
 date: 2016-02-29
-tags: [size, type, cr]
+tags: [medium, aberration, cr3]
 ---
 
 **Medium aberration, lawful neutral**
