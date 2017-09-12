@@ -2,7 +2,7 @@
 layout: post
 title: "Carrion Crawler"
 date: 2016-02-29
-tags: [Large, monstrosity, cr2]
+tags: [large, monstrosity, cr2]
 ---
 
 **Large monstrosity, unaligned**
