@@ -23,8 +23,12 @@ tags: [medium, beast, cr1/4]
 
 **Challenge** 1/4 (50 XP)
 
- Keen Smell. The badger has advantage on Wisdom (Perception) checks that rely on smell. 
+***Keen Smell.*** The badger has advantage on Wisdom (Perception) checks that rely on smell. 
 
 **Actions** 
 
-Multiattack. The badger makes two attacks: one with its bite and one with its claws. Bite. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage. Claws. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) slashing damage.
+***Multiattack.*** The badger makes two attacks: one with its bite and one with its claws. 
+
+***Bite.*** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage. 
+
+***Claws.*** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) slashing damage.
