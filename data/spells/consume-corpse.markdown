@@ -2,7 +2,7 @@
 layout: post
 title:  "Consume Corpse"
 date:   2015-01-07
-source: PHB.219
+source: homebrew
 tags: [sorcerer, wizard, level2, necromancy]
 ---
 
