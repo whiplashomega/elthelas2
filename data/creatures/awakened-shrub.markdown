@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Awakened Shrub"
-date: 2016-02-29
-tags: [small, plant, cr0]
+date: 2017-09-10
+tags: [small, plant, cr0, monster-manual]
 ---
 
 **Small plant, unaligned**
@@ -15,22 +15,19 @@ tags: [small, plant, cr0]
 
 |   STR   |   DEX   |   CON   |   INT   |   WIS   |   CHA   |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 3 (−4) | 8 (−1) | 11 (+0) | 10 (+0) | 10 (+0) | 6 (−2) |
+| 3 (-4) | 8 (-1) | 11 (0) | 10 (0) | 10 (0) | 6 (-2) |
 
-**Damage Vulnerabilities** fire 
+**Damage Vulnerabilities** fire
 
-**Damage Resistances** piercing 
+**Damage Resistances** piercing
 
-**Senses** passive Perception 10 
-
-**Languages** one language known by its creator 
+**Languages** one language known by its creator
 
 **Challenge** 0 (10 XP)
 
-***False Appearance.*** While the shrub remains motionless, it is indistinguishable from a normal shrub. 
+***False Appearance.*** While the shrub remains motionless, it is indistinguishable from a normal shrub.
 
-**Actions** 
+**Actions**
 
-***Rake.*** Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 − 1) slashing damage. 
+***Rake.*** Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 - 1) slashing damage.
 
-An awakened shrub is an ordinary shrub given sentience and mobility by the awaken spell or similar magic.

@@ -1,34 +1,37 @@
 ---
 layout: post
 title: "Ogre Zombie"
-date: 2016-02-29
-tags: [large, undead, cr2]
+date: 2017-09-10
+tags: [large, undead, cr2, monster-manual]
 ---
 
 **Large undead, neutral evil**
 
 **Armor Class** 8
 
-**Hit Points** 85 (9d10 + 36)
+**Hit Points** 85 (9d10+36)
 
 **Speed** 30 ft.
 
 |   STR   |   DEX   |   CON   |   INT   |   WIS   |   CHA   |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 19 (+4) | 6 (−2) | 18 (+4) | 3 (−4) | 6 (−2) | 5 (−3) |
+| 19 (+4) | 6 (-2) | 18 (+4) | 3 (-4) | 6 (-2) | 5 (-3) |
 
-**Saving Throws** Wis +0 
+**Saving Throws** Wis +0
 
-**Damage Immunities** poison 
+**Damage Immunities** poison
 
-**Condition Immunities** poisoned 
+**Condition Immunities** poisoned
 
-**Senses** darkvision 60 ft., passive Perception 8 
+**Senses** darkvision 60 ft.
 
-**Languages** understands Common and Giant but can’t speak 
+**Languages** understands Common and Giant but can't speak
 
-**Challenge** 2 (450 XP) 
+**Challenge** 2 (450 XP)
 
-Undead Fortitude. If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead. 
+***Undead Fortitude.*** If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5+the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.
 
-**Actions** Morningstar. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.360 Appendix A: Miscellaneous Creatures This appendix contains statistics for various animals, vermin, and other critters. The stat blocks are organized alphabetically by creature name.
+**Actions**
+
+***Morningstar.*** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.
+

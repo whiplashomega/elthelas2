@@ -1,25 +1,23 @@
 ---
 layout: post
 title: "Crushing Wave Reaver"
-date: 2016-03-02
-tags: [medium, humanoid, cr1/2]
+date: 2017-09-10
+tags: [medium, humanoid, cr1/2, elemental-evil]
 ---
 
 **Medium humanoid (human), neutral evil**
 
 **Armor Class** 14 (shield)
 
-**Hit Points** 22 (4d8 + 4)
+**Hit Points** 22 (4d8+4)
 
 **Speed** 30 ft.
 
 |   STR   |   DEX   |   CON   |   INT   |   WIS   |   CHA   |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 15 (+2) | 14 (+2) | 13 (+1) | 10 (+0) | 11 (+0) | 8 (-1) |
+| 15 (+2) | 14 (+2) | 13 (+1) | 10 (0) | 11 (0) | 8 (-1) |
 
 **Skills** Athletics +4, Stealth +4
-
-**Senses** passive Perception 10
 
 **Languages** Common
 
@@ -31,4 +29,3 @@ tags: [medium, humanoid, cr1/2]
 
 ***Javelin.*** Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
 
-The foot soldiers of the Crushing Wave cult are vicious sea reavers. Many of them were pirates before they fell in with the cult, and they remain eager for blood and plunder.

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Howling Hatred Initiate"
-date: 2016-03-02
-tags: [medium, humanoid, cr1/8]
+date: 2017-09-10
+tags: [medium, humanoid, cr1/8, elemental-evil]
 ---
 
 **Medium humanoid (human), neutral evil**
@@ -15,11 +15,9 @@ tags: [medium, humanoid, cr1/8]
 
 |   STR   |   DEX   |   CON   |   INT   |   WIS   |   CHA   |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 10 (+0) | 15 (+2) | 10 (+0) | 10 (+0) | 9 (-1) | 11 (+0) |
+| 10 (0) | 15 (+2) | 10 (0) | 10 (0) | 9 (-1) | 11 (0) |
 
 **Skills** Deception +2, Religion +2, Stealth +4
-
-**Senses** passive Perception 9
 
 **Languages** Common
 
@@ -33,4 +31,3 @@ tags: [medium, humanoid, cr1/8]
 
 ***Dagger.*** Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.
 
-Howling Hatred initiates are attracted by the cult’s philosophy of non-attachment and the rejection of material things, unaware of the cult’s true nature.

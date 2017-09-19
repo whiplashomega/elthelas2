@@ -3,9 +3,13 @@ My Elthelas Campaign Setting website rebuilt on the MEAN stack.  This is my pers
 which hosts my older Symfony based version of the site, as well as an earlier version of this code from when I was still planning to use Symfony as
 the API backend for this code.  Symfony proved to be frustrating to work with from a headless standpoint, particularly in implementing user login and handling server routing.
 
-##Branches
-Production releases are tracked on the 'production' branch.
-Current development is on the 1.x-dev branch.
+## Branches
+Production releases are tracked on the 'production' branch.  
+Code ready for final testing should be on UAT branch  
+Current master development is on the 1.x-dev branch.  
+Updates to descriptions to go live before Book 4 Campaign launch: book4descriptions  
+Custom homebrew spells not yet playtested: newspells
+
 
 [See the live version at https://elthelas.com](https://elthelas.com)
 
