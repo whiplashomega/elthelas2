@@ -1,28 +1,33 @@
 ---
 layout: post
 title: "Polar Bear"
-date: 2016-02-29
-tags: [large, beast, cr2]
+date: 2017-09-10
+tags: [large, beast, cr2, monster-manual]
 ---
 
 **Large beast, unaligned**
 
 **Armor Class** 12 (natural armor)
 
-**Hit Points** 42 (5d10 + 15)
+**Hit Points** 42 (5d10+15)
 
 **Speed** 40 ft., swim 30 ft.
 
 |   STR   |   DEX   |   CON   |   INT   |   WIS   |   CHA   |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 20 (+5) | 10 (+0) | 16 (+3) | 2 (−4) | 13 (+1) | 7 (−2) |
+| 20 (+5) | 10 (0) | 16 (+3) | 2 (-4) | 13 (+1) | 7 (-2) |
 
-**Skills** Perception +3 
+**Skills** Perception +3
 
-**Senses** passive Perception 13 
+**Challenge** 2 (450 XP)
 
-**Languages** — 
+***Keen Smell.*** The bear has advantage on Wisdom (Perception) checks that rely on smell.
 
-**Challenge** 2 (450 XP) 
+**Actions**
 
-Keen Smell. The bear has advantage on Wisdom (Perception) checks that rely on smell. Actions Multiattack. The bear makes two attacks: one with its bite and one with its claws. Bite. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) piercing damage. Claws. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.
+***Multiattack.*** The bear makes two attacks: one with its bite and one with its claws.
+
+***Bite.*** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) piercing damage.
+
+***Claws.*** Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.
+

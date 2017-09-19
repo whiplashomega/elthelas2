@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Homunculus"
-date: 2016-02-29
-tags: [tiny, construct, cr0]
+date: 2017-09-10
+tags: [tiny, construct, cr0, monster-manual]
 ---
 
 **Tiny construct, neutral**
@@ -15,20 +15,21 @@ tags: [tiny, construct, cr0]
 
 |   STR   |   DEX   |   CON   |   INT   |   WIS   |   CHA   |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 4 (−3) | 15 (+2) | 11 (+0) | 10 (+0) | 10 (+0) | 7 (−2) |
+| 4 (-3) | 15 (+2) | 11 (0) | 10 (0) | 10 (0) | 7 (-2) |
 
-**Damage Immunities** poison 
+**Damage Immunities** poison
 
-**Condition Immunities** charmed, poisoned 
+**Condition Immunities** charmed, poisoned
 
-**Senses** darkvision 60 ft., passive Perception 10 
+**Senses** darkvision 60 ft.
 
-**Languages** understands the languages of its creator but can’t speak 
+**Languages** understands the languages of its creator but can't speak
 
 **Challenge** 0 (10 XP)
 
-Telepathic Bond. While the homunculus is on the same plane of existence as its master, it can magically convey what it senses to its master, and the two can communicate telepathically.
+***Telepathic Bond.*** While the homunculus is on the same plane of existence as its master, it can magically convey what it senses to its master, and the two can communicate telepathically.
 
 **Actions**
 
-Bite. Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 1 piercing damage, and the target must succeed on a DC 10 Constitution saving throw or be poisoned for 1 minute. If the saving throw fails by 5 or more, the target is instead poisoned for 5 (1d10) minutes and unconscious while poisoned in this way.
+***Bite.*** Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 1 piercing damage, and the target must succeed on a DC 10 Constitution saving throw or be poisoned for 1 minute. If the saving throw fails by 5 or more, the target is instead poisoned for 5 (1d10) minutes and unconscious while poisoned in this way.
+

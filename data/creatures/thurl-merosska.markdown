@@ -1,40 +1,37 @@
 ---
 layout: post
 title: "Thurl Merosska"
-date: 2016-03-02
-tags: [medium, humanoid, cr3]
+date: 2017-09-10
+tags: [medium, humanoid, cr3, tyranny-of-dragons]
 ---
 
 **Medium humanoid (human), lawful evil**
 
 **Armor Class** 16 (breastplate)
 
-**Hit Points** 71 (11d8 + 21)
+**Hit Points** 71 (11d8+21)
 
 **Speed** 30 ft.
 
 |   STR   |   DEX   |   CON   |   INT   |   WIS   |   CHA   |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 16 (+3) | 14 (+2) | 14 (+2) | 11 (+0) | 10 (+0) | 15 (+2) |
+| 16 (+3) | 14 (+2) | 14 (+2) | 11 (0) | 10 (0) | 15 (+2) |
 
-**Skills** Animal Handling +2, Athletics +5, Deception +4,
-Persuasion +4
-
-**Senses** passive Perception 10
+**Skills** Animal Handling +2, Athletics +5, Deception +4, Persuasion +4
 
 **Languages** Auran, Common
 
 **Challenge** 3 (700 XP)
 
-***Spellcasting.*** Thurl is a 5th-level spellcaster. His spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). Thurl knows the following sorcerer spells (an asterisked spell appears in this appendix):
+***Spellcasting.*** Thurl is a 5th-level spellcaster. His spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). Thurl knows the following sorcerer spells: 
 
-*Cantrips (at will):* friends, gust,* light, message, ray of frost
+* Cantrips (at will): friends, gust, light, message, ray of frost
 
-*1st level (4 slots):*expeditious retreat, feather fall, jump
+* 1st level (4 slots): expeditious retreat, feather fall, jump
 
-*2nd level (3 slots):* levitate, misty step
+* 2nd level (3 slots): levitate, misty step
 
-*3rd level (2 slots):* haste
+* 3rd level (2 slots): haste
 
 **Actions**
 
@@ -48,4 +45,3 @@ Persuasion +4
 
 ***Parry.*** Thurl adds 2 to his AC against one melee attack that would hit him. To do so, Thurl must see the attacker and be wielding a melee weapon.
 
-Thurl Merosska is the leader of the Feathergale Knights. Once a griffon rider of Waterdeep, Thurl retired after a storm nearly claimed his life. Obsessed with his neardeath experience, Thurl learned of Elemental Evil and promised to serve it in exchange for power.

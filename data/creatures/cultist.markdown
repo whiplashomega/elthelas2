@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Cultist"
-date: 2016-03-01
-tags: [medium, humanoid, cr1/8]
+date: 2017-09-10
+tags: [medium, humanoid, cr1/8, monster-manual]
 ---
 
 **Medium humanoid (any race), any non-good alignment**
@@ -15,20 +15,17 @@ tags: [medium, humanoid, cr1/8]
 
 |   STR   |   DEX   |   CON   |   INT   |   WIS   |   CHA   |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 11 (+0) | 12 (+1) | 10 (+0) | 10 (+0) | 11 (+0) | 10 (+0) |
+| 11 (0) | 12 (+1) | 10 (0) | 10 (0) | 11 (0) | 10 (0) |
 
-**Skills** Deception +2, Religion +2 
+**Skills** Deception +2, Religion +2
 
-**Senses** passive Perception 10 
+**Languages** any one language (usually Common)
 
-**Languages** any one language (usually Common) 
+**Challenge** 1/8 (25 XP)
 
-**Challenge** 1/8 (25 XP) 
+***Dark Devotion.*** The cultist has advantage on saving throws against being charmed or frightened.
 
-***Dark Devotion.*** The cultist has advantage on saving throws against being charmed or frightened. 
+**Actions**
 
-**Actions** 
+***Scimitar.*** Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 4 (1d6 + 1) slashing damage.
 
-***Scimitar.*** Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 4 (1d6 + 1) slashing damage. 
-
-Cultists swear allegiance to dark powers such as elemental princes, demon lords, or archdevils. Most conceal their loyalties to avoid being ostracized, imprisoned, or executed for their beliefs. Unlike evil acolytes, cultists often show signs of insanity in their beliefs and practices.

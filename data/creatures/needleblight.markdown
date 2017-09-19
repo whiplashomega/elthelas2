@@ -2,7 +2,7 @@
 layout: post
 title: "Needle Blight"
 date: 2016-02-29
-tags: [size, type, cr]
+tags: [medium, plant, cr1/4]
 ---
 
 **Medium plant, neutral evil**

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Kuo-toa"
-date: 2016-03-02
-tags: [medium, humanoid, cr1/4]
+title: "Kuo-Toa"
+date: 2017-09-10
+tags: [medium, humanoid, cr1/4, monster-manual]
 ---
 
 **Medium humanoid (kuo-toa), neutral evil**
@@ -15,11 +15,11 @@ tags: [medium, humanoid, cr1/4]
 
 |   STR   |   DEX   |   CON   |   INT   |   WIS   |   CHA   |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 13 (+1) | 10 (+0) | 11 (+0) | 11 (+0) | 10 (+0) | 8 (-1) |
+| 13 (+1) | 10 (0) | 11 (0) | 11 (0) | 10 (0) | 8 (-1) |
 
 **Skills** Perception +4
 
-**Senses** darkvision 120 ft., passive Perception 14
+**Senses** darkvision 120 ft.
 
 **Languages** Undercommon
 
@@ -27,9 +27,7 @@ tags: [medium, humanoid, cr1/4]
 
 ***Amphibious.*** The kuo-toa can breathe air and water.
 
-***Otherworldly Perception.*** The kuo-toa can sense the presence of any creature within 30 feet of it that is invisible or on the
-
-***Ethereal Plane.*** It can pinpoint such a creature that is moving.
+***Otherwordly Perception.*** The kuo-toa can sense the presence of any creature within 30 feet of it that is invisible or on the Ethereal Plane. It can pinpoint such a creature that is moving.
 
 ***Slippery.*** The kuo-toa has advantage on ability checks and saving throws made to escape a grapple.
 
@@ -45,4 +43,5 @@ tags: [medium, humanoid, cr1/4]
 
 **Reactions**
 
-***Sticky Shield.*** When a creature misses the kuo-toa with a melee weapon attack, the kuo-toa uses its sticky shield to catch the weapon. The attacker must succeed on a DC 11 Strength saving throw, or the weapon becomes stuck to the kuo-toa’s shield. If the weapon’s wielder can’t or won’t let go of the weapon, the wielder is grappled while the weapon is stuck. While stuck, the weapon can’t be used. A creature can pull the weapon free by taking an action to make a DC 11 Strength check and succeeding.
+***Sticky Shield.*** When a creature misses the kuo-toa with a melee weapon attack, the kuo-toa uses its sticky shield to catch the weapon. The attacker must succeed on a DC 11 Strength saving throw, or the weapon becomes stuck to the kuo-toa's shield. If the weapon's wielder can't or won't let go of the weapon, the wielder is grappled while the weapon is stuck. While stuck, the weapon can't be used. A creature can pull the weapon free by taking an action to make a DC 11 Strength check and succeeding.
+

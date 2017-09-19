@@ -1,21 +1,21 @@
 ---
 layout: post
 title: "Lizard King/Queen"
-date: 2016-03-02
-tags: [medium, humanoid, cr4]
+date: 2017-09-10
+tags: [medium, humanoid, cr4, monster-manual]
 ---
 
 **Medium humanoid (lizardfolk), chaotic evil**
 
 **Armor Class** 15 (natural armor)
 
-**Hit Points** 78 (12d8 + 24)
+**Hit Points** 78 (12d8+24)
 
 **Speed** 30 ft., swim 30 ft.
 
 |   STR   |   DEX   |   CON   |   INT   |   WIS   |   CHA   |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 17 (+3) | 12 (+1) | 15 (+2) | 11 (+0) | 11 (+0) | 15 (+2) |
+| 17 (+3) | 12 (+1) | 15 (+2) | 11 (0) | 11 (0) | 15 (+2) |
 
 **Saving Throws** Con +4, Wis +2
 
@@ -23,7 +23,7 @@ tags: [medium, humanoid, cr4]
 
 **Condition Immunities** frightened
 
-**Senses** darkvision 60 ft., passive Perception 14
+**Senses** darkvision 60 ft.
 
 **Languages** Abyssal, Draconic
 
@@ -42,3 +42,4 @@ tags: [medium, humanoid, cr4]
 ***Claws.*** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) slashing damage.
 
 ***Trident.*** Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 6 (1d6 + 3) piercing damage, or 7 (1d8 + 3) piercing damage if used with two hands to make a melee attack.
+
