@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Carrion Crawler"
-date: 2016-02-29
-tags: [large, monstrosity, cr2]
+date: 2017-09-10
+tags: [large, monstrosity, cr2, monster-manual]
 ---
 
 **Large monstrosity, unaligned**
@@ -19,30 +19,19 @@ tags: [large, monstrosity, cr2]
 
 **Skills** Perception +3
 
-**Senses** darkvision 60 ft., passive Perception 13
-
-**Languages** -
+**Senses** darkvision 60 ft.
 
 **Challenge** 2 (450 XP)
 
-***Keen Smell.*** The carrion crawler has advantage on Wisdom
-(Perception) checks that rely on smell.
+***Keen Smell.*** The carrion crawler has advantage on Wisdom (Perception) checks that rely on smell.
 
-***Spider Climb.*** The carrion crawler can climb difficult surfaces,
-including upside down on ceilings, without needing to make an
-ability check.
+***Spider Climb.*** The carrion crawler can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
 
-**Actions** 
+**Actions**
 
-***Multiattack.*** The carrion crawler makes two attacks: one with
-its tentacles and one with its bite.
+***Multiattack.*** The carrion crawler makes two attacks: one with its tentacles and one with its bite.
 
-***Tentacles.*** Melee Weapon Attack: +8 to hit, reach 10ft., one
-creature. Hit: 4 (1d4 + 2) poison damage, and the target must
-succeed on a DC 13 Constitution saving throw or be poisoned
-for 1 minute. Until this poison ends, the target is paralyzed.
-The target can repeat the saving throw at the end of each of its
-turns, ending the poison on itself on a success.
+***Tentacles.*** Melee Weapon Attack: +8 to hit, reach 10 ft., one creature. Hit: 4 (1d4 + 2) poison damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. Until this poison ends, the target is paralyzed. The target can repeat the saving throw at the end of each of its turns, ending the poison on itself on a success.
 
-***Bite.*** Melee Weapon Attack: +4 to hit, reach 5 ft ., one target.
-Hit: 7 (2d4 + 2) piercing damage.
+***Bite.*** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) piercing damage.
+

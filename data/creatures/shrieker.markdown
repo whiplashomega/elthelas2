@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Shrieker"
-date: 2016-02-29
-tags: [medium, plant, cr0]
+date: 2017-09-10
+tags: [medium, plant, cr0, monster-manual]
 ---
 
 **Medium plant, unaligned**
@@ -11,18 +11,21 @@ tags: [medium, plant, cr0]
 
 **Hit Points** 13 (3d8)
 
-**Speed** 0 ft.311
+**Speed** 0 ft.
 
 |   STR   |   DEX   |   CON   |   INT   |   WIS   |   CHA   |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 1 (−5) | 1 (−5) | 10 (+0) | 1 (−5) | 3 (−4) | 1 (−5) |
+| 1 (-5) | 1 (-5) | 10 (0) | 1 (-5) | 3 (-4) | 1 (-5) |
 
-**Condition Immunities** blinded, deafened, frightened 
+**Condition Immunities** blinded, deafened, frightened
 
-**Senses** blindsight 30 ft. (blind beyond this radius), passive Perception 6 
-
-**Languages** — 
+**Senses** blindsight 30 ft. (blind beyond this radius)
 
 **Challenge** 0 (10 XP)
 
- False Appearance. While the shrieker remains motionless, it is indistinguishable from an ordinary fungus. Reactions Shriek. When bright light or a creature is within 30 feet of the shrieker, it emits a shriek audible within 300 feet of it. The shrieker continues to shriek until the disturbance moves out of range and for 1d4 of the shrieker’s turns afterward.
+***False Appearance.*** While the shrieker remains motionless, it is indistinguishable from an ordinary fungus.
+
+**Actions**
+
+***Shriek.*** When bright light or a creature is within 30 feet of the shrieker, it emits a shriek audible within 300 feet of it. The shrieker continues to shriek until the disturbance moves out of range and for 1d4 of the shrieker's turns afterward
+

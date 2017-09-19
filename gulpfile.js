@@ -76,6 +76,16 @@ gulp.task('usemin',['sass', 'copylibraries', 'copyjson', 'copyimages'], function
       .pipe(gulp.dest('./web/'));
 });
 
+/*gulp.task('fixfilenames', function() {
+  var files = fs.readdirSync("./data/creatures2/bestiary");
+  files.forEach(file => {
+    var data = fs.readFileSync("./data/creatures2/bestiary/" + file, "utf-8");
+    var filename = file.replace(/[\d]+-[\d]+-[\d]+-/,"");
+    console.log(filename);
+    fs.writeFile("./data/creatures/" + filename, data, "utf-8");
+  });
+});*/
+
 gulp.task('historyjson', function () {
   var files = fs.readdirSync("./data/historicalevents");
   var historyarray = [];
@@ -137,7 +147,11 @@ gulp.task('creaturesjson', function() {
     creature.tags = filearray[4].replace(/tags:[ \t]+\[/g, "").replace(/\]/, "").split(", ");
     var sizes = ["tiny", "small", "medium", "large", "huge", "gargantuan", "colossal"];
     var types = ["humanoid", "plant", "beast", "dragon", "giant", "ooze", "swarm", "undead", "fiend", "celestial", "monstrosity", "aberration", "elemental", "construct", "fey"];
-    var alignments = ["chaotic evil", "neutral evil", "lawful evil", "chaotic neutral", "unaligned", "lawful neutral", "chaotic good", "neutral good", "lawful good", "neutral", "any alignment", "any non-good alignment", "any non-lawful alignment", "any chaotic alignment", "any evil"];
+    var alignments = [
+      "chaotic evil", 
+      "neutral evil", 
+      "lawful evil", 
+      "chaotic neutral", "unaligned", "lawful neutral", "chaotic good", "neutral good", "lawful good", "neutral", "any alignment", "any non-good alignment", "any non-lawful alignment", "any chaotic alignment", "any evil"];
     creature.size = intersect([creature.tags, sizes])[0];
     creature.type = intersect([creature.tags, types])[0];
     if(filearray[7].indexOf('(') !== -1) {
@@ -145,6 +159,7 @@ gulp.task('creaturesjson', function() {
     } else {
       creature.subtype = false;
     }
+    //console.log(creature.name);
     creature.cr = eval(creature.tags.filter(function(a) {
       return /cr/.test(a);
     })[0].replace(/cr/, ""));
@@ -339,7 +354,7 @@ gulp.task('prodcleanup', ['copyimages', 'usemin', 'copyjson'], function() {
 });
 
 //task groups
-gulp.task('default', ['integrationtest', 'sass', 'spellsjson', 'historyjson', 'jsoncompile', 'copylibraries'], function() {});
+gulp.task('default', ['integrationtest', 'sass', 'spellsjson', 'historyjson', 'creaturesjson', 'jsoncompile', 'copylibraries'], function() {});
 
 //does not include testing
 gulp.task('prod', ['prodcleanup'], function() {

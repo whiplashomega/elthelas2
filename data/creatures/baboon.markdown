@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Baboon"
-date: 2016-02-29
-tags: [small, beast, cr0]
+date: 2017-09-10
+tags: [small, beast, cr0, monster-manual]
 ---
 
 **Small beast, unaligned**
@@ -15,16 +15,13 @@ tags: [small, beast, cr0]
 
 |   STR   |   DEX   |   CON   |   INT   |   WIS   |   CHA   |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 8 (−1) | 14 (+2) | 11 (+0) | 4 (−3) | 12 (+1) | 6 (−2) |
-
-**Senses** passive Perception 11 
-
-**Languages** — 
+| 8 (-1) | 14 (+2) | 11 (0) | 4 (-3) | 12 (+1) | 6 (-2) |
 
 **Challenge** 0 (10 XP)
 
-***Pack Tactics.*** The baboon has advantage on an attack roll against a creature if at least one of the baboon’s allies is within 5 feet of the creature and the ally isn’t incapacitated. 
+***Pack Tactics.*** The baboon has advantage on an attack roll against a creature if at least one of the baboon's allies is within 5 ft. of the creature and the ally isn't incapacitated.
 
-**Actions** 
+**Actions**
 
-***Bite.*** Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 − 1) piercing damage.
+***Bite.*** Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 - 1) piercing damage.
+

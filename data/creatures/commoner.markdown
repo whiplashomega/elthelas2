@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Commoner"
-date: 2016-03-01
-tags: [medium, humanoid, cr0]
+date: 2017-09-10
+tags: [medium, humanoid, cr0, monster-manual]
 ---
 
 **Medium humanoid (any race), any alignment**
@@ -15,16 +15,13 @@ tags: [medium, humanoid, cr0]
 
 |   STR   |   DEX   |   CON   |   INT   |   WIS   |   CHA   |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 10 (+0) | 10 (+0) | 10 (+0) | 10 (+0) | 10 (+0) | 10 (+0) |
+| 10 (0) | 10 (0) | 10 (0) | 10 (0) | 10 (0) | 10 (0) |
 
-**Senses** passive Perception 10 
+**Languages** any one language (usually Common)
 
-**Languages** any one language (usually Common) 
+**Challenge** 0 (10 XP)
 
-**Challenge** 0 (10 XP) 
+**Actions**
 
-**Actions** 
+***Club.*** Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.
 
-***Club.*** Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage. 
-
-Commoners include peasants, serfs, slaves, servants, pilgrims, merchants, artisans, and hermits.

@@ -374,7 +374,7 @@
         data: {
           title: 'Backgrounds'
         },
-    }).state('app.beastiary', {
+    }).state('app.bestiary', {
       url: 'ref/beasts',
       views: {
         'content@': {
@@ -386,7 +386,7 @@
         }
       },
       data: {
-        title: 'Beastiary'
+        title: 'Bestiary'
       }
     }).state('app.charbuilder', {
       url: 'campaign/charbuilder',

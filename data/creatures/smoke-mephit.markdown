@@ -1,21 +1,21 @@
 ---
 layout: post
 title: "Smoke Mephit"
-date: 2016-03-02
-tags: [small, elemental, cr1/4]
+date: 2017-09-10
+tags: [small, elemental, cr1/4, monster-manual]
 ---
 
 **Small elemental, neutral evil**
 
 **Armor Class** 12
 
-**Hit Points** 22 (5d6 + 5)
+**Hit Points** 22 (5d6+5)
 
 **Speed** 30 ft., fly 30 ft.
 
 |   STR   |   DEX   |   CON   |   INT   |   WIS   |   CHA   |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 6 (-2) | 14 (+2) | 12 (+1) | 10 (+0) | 10 (+0) | 11 (+0) |
+| 6 (-2) | 14 (+2) | 12 (+1) | 10 (0) | 10 (0) | 11 (0) |
 
 **Skills** Perception +2, Stealth +4
 
@@ -23,7 +23,7 @@ tags: [small, elemental, cr1/4]
 
 **Condition Immunities** poisoned
 
-**Senses** darkvision 60 ft., passive Perception 12
+**Senses** darkvision 60 ft.
 
 **Languages** Auran, Ignan
 
@@ -37,4 +37,7 @@ tags: [small, elemental, cr1/4]
 
 ***Claws.*** Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) slashing damage.
 
-***Cinder Breath (Recharge 6).*** The mephit exhales a 15-foot cone of smoldering ash. Each creature in that area must succeed on a DC 10 Dexterity saving throw or be blinded until the end of the mephit’s next turn.
+***Cinder Breath (Recharge 6).*** The mephit exhales a 15-foot cone of smoldering ash. Each creature in that area must succeed on a DC 10 Dexterity saving throw or be blinded until the end of the mephit's next turn .
+
+***Variant: Summon Mephits (1/Day).*** The mephit has a 25 percent chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.
+

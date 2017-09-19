@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Acolyte"
-date: 2016-03-01
-tags: [medium, humanoid, cr1/4]
+date: 2017-09-10
+tags: [medium, humanoid, cr1/4, monster-manual]
 ---
 
 **Medium humanoid (any race), any alignment**
@@ -15,20 +15,21 @@ tags: [medium, humanoid, cr1/4]
 
 |   STR   |   DEX   |   CON   |   INT   |   WIS   |   CHA   |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 10 (+0) | 10 (+0) | 10 (+0) | 10 (+0) | 14 (+2) | 11 (+0) |
+| 10 (0) | 10 (0) | 10 (0) | 10 (0) | 14 (+2) | 11 (0) |
 
-**Skills** Medicine +4, Religion +2 
+**Skills** Medicine +4, Religion +2
 
-**Senses** passive Perception 12 
-
-**Languages** any one language (usually Common) 
+**Languages** any one language (usually Common)
 
 **Challenge** 1/4 (50 XP)
 
-***Spellcasting.*** The acolyte is a 1st‐level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has following cleric spells prepared: Cantrips (at will): light, sacred flame, thaumaturgy 1st level (3 slots): bless, cure wounds, sanctuary 
+***Spellcasting.*** The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has following cleric spells prepared: 
+
+* Cantrips (at will): light, sacred flame, thaumaturgy
+
+* 1st level (3 slots): bless, cure wounds, sanctuary
 
 **Actions**
 
 ***Club.*** Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.
 
-Acolytes are junior members of a clergy, usually answerable to a priest. They perform a variety of functions in a temple and are granted minor spellcasting power by their deities.

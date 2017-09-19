@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Goblin"
-date: 2016-02-29
-tags: [small, humanoid, cr1/4]
+date: 2017-09-10
+tags: [small, humanoid, cr1/4, monster-manual]
 ---
 
 **Small humanoid (goblinoid), neutral evil**
@@ -15,18 +15,21 @@ tags: [small, humanoid, cr1/4]
 
 |   STR   |   DEX   |   CON   |   INT   |   WIS   |   CHA   |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 8 (−1) | 14 (+2) | 10 (+0) | 10 (+0) | 8 (−1) | 8 (−1) |
+| 8 (-1) | 14 (+2) | 10 (0) | 10 (0) | 8 (-1) | 8 (-1) |
 
-**Skills** Stealth +6 
+**Skills** Stealth +6
 
-**Senses** darkvision 60 ft., passive Perception 9 
+**Senses** darkvision 60 ft.
 
-**Languages** Common, Goblin 
+**Languages** Common, Goblin
 
 **Challenge** 1/4 (50 XP)
 
-Nimble Escape. The goblin can take the Disengage or Hide action as a bonus action on each of its turns. 
+***Nimble Escape.*** The goblin can take the Disengage or Hide action as a bonus action on each of its turns.
 
 **Actions**
 
-Scimitar. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage. Shortbow. Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
+***Scimitar.*** Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage.
+
+***Shortbow.*** Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
+

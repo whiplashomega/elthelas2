@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Crawling Claw"
-date: 2016-03-02
-tags: [tiny, undead, cr0]
+date: 2017-09-10
+tags: [tiny, undead, cr0, monster-manual]
 ---
 
 **Tiny undead, neutral evil**
@@ -15,16 +15,15 @@ tags: [tiny, undead, cr0]
 
 |   STR   |   DEX   |   CON   |   INT   |   WIS   |   CHA   |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 13 (+1) | 14 (+2) | 11 (+0) | 5 (-3) | 10 (+0) | 4 (-3) |
+| 13 (+1) | 14 (+2) | 11 (0) | 5 (-3) | 10 (0) | 4 (-3) |
 
 **Damage Immunities** poison
 
-**Condition Immunities** charmed, exhaustion, poisoned
+**Condition Immunities** poisoned
 
-**Senses** blindsight 30 ft. (blind beyond this radius),
-passive Perception 10
+**Senses** blindsight 30 ft. (blind beyond this radius)
 
-**Languages** understands Common but can’t speak
+**Languages** understands Common but can't speak
 
 **Challenge** 0 (10 XP)
 
@@ -32,4 +31,5 @@ passive Perception 10
 
 **Actions**
 
-***Claw.*** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning or slashing damage (claw’s choice).
+***Claw.*** Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning or slashing damage (claw's choice) .
+

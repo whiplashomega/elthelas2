@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Crab"
-date: 2016-02-29
-tags: [tiny, beast, cr0]
+date: 2017-09-10
+tags: [tiny, beast, cr0, monster-manual]
 ---
 
 **Tiny beast, unaligned**
@@ -15,18 +15,17 @@ tags: [tiny, beast, cr0]
 
 |   STR   |   DEX   |   CON   |   INT   |   WIS   |   CHA   |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 2 (−4) | 11 (+0) | 10 (+0) | 1 (−5) | 8 (−1) | 2 (−4) |
+| 2 (-4) | 11 (0) | 10 (0) | 1 (-5) | 8 (-1) | 2 (-4) |
 
-**Skills** Stealth +2 
+**Skills** Stealth +2
 
-**Senses** blindsight 30 ft., passive Perception 9 
-
-**Languages** — 
+**Senses** blindsight 30 ft.
 
 **Challenge** 0 (10 XP)
 
- Amphibious. The crab can breathe air and water. 
+***Amphibious.*** The crab can breathe air and water.
 
-**Actions** 
+**Actions**
 
-Claw. Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 bludgeoning damage.
+***Claw.*** Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 bludgeoning damage.
+

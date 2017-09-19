@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Giant Weasel"
-date: 2016-02-29
-tags: [medium, beast, cr1/8]
+date: 2017-09-10
+tags: [medium, beast, cr1/8, monster-manual]
 ---
 
 **Medium beast, unaligned**
@@ -15,18 +15,17 @@ tags: [medium, beast, cr1/8]
 
 |   STR   |   DEX   |   CON   |   INT   |   WIS   |   CHA   |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 11 (+0) | 16 (+3) | 10 (+0) | 4 (−3) | 12 (+1) | 5 (−3) |
+| 11 (0) | 16 (+3) | 10 (0) | 4 (-3) | 12 (+1) | 5 (-3) |
 
-**Skills** Perception +3, Stealth +5 
+**Skills** Perception +3, Stealth +5
 
-**Senses** darkvision 60 ft., passive Perception 13 
-
-**Languages** — 
+**Senses** darkvision 60 ft.
 
 **Challenge** 1/8 (25 XP)
 
-Keen Hearing and Smell. The weasel has advantage on Wisdom (Perception) checks that rely on hearing or smell. 
+***Keen Hearing and Smell.*** The weasel has advantage on Wisdom (Perception) checks that rely on hearing or smell.
 
 **Actions**
 
-Bite. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage.
+***Bite.*** Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage.
+
