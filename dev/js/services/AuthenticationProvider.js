@@ -1,4 +1,4 @@
-/* globals angular FB*/
+/* globals angular, FB*/
 (function(ng) {
   'use strict';
   var Base64 = {
@@ -98,7 +98,7 @@
         method: 'POST',
         url: '/users/facebook',
       }).then(function(response) {
-        var data = response;
+        //var data = response;
       });
     };
     

@@ -30,7 +30,7 @@
         } else {
           factory.retreiveData().then(function() {
             deferred.resolve(factory.data);
-          }, function() { deferred.resolve(false) });
+          }, function() { deferred.resolve(false); });
         }
         
         return deferred.promise;
@@ -46,7 +46,7 @@
         } else {
           factory.retreiveData().then(function(response) {
             deferred.resolve(factory.data);
-          }, function() { deferred.resolve(false) });
+          }, function() { deferred.resolve(false); });
         }
         
         return deferred.promise;

@@ -22,7 +22,9 @@
         'events': $scope.history
       };
       for(var e in data.events) {
-        data.events[e].text.text = marked(data.events[e].text.text);
+        if(true) {
+          data.events[e].text.text = marked(data.events[e].text.text);
+        }
       }
       $scope.timeline.setData(data);
       $scope.timeline.goTo(data.events.length);

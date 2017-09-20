@@ -1,4 +1,4 @@
-/* globals angular, jQuery */
+/* globals angular, jQuery, alert, document, FileReader */
 (function(ng, $) {
   function createDataTable(selector, data, columns, postInit) {
     $(selector + ' tfoot th').each(function() {
@@ -34,7 +34,7 @@
         }
       }
       return filtered;
-    }
+    };
     
   }).filter('spellFilter', function() {
     return function(spells, name, level, school, prepared) {
@@ -110,7 +110,7 @@
       intmod: function() { return Math.floor(this.int/2 - 5); },
       wismod: function() { return Math.floor(this.wis/2 - 5); },
       chamod: function() { return Math.floor(this.cha/2 - 5); },
-      prof: function() { return Math.floor((this.level() - 1)/4) + 2 },
+      prof: function() { return Math.floor((this.level() - 1)/4) + 2; },
       jack: false,
       skills: [
         { name: "Acrobatics", prof: false, expertise: false, stat: "dexmod" },
@@ -169,7 +169,9 @@
       level: function() {
         var level = 0;
         for(var x in this.classes) {
-          level += this.classes[x].level;
+          if(true) {
+            level += this.classes[x].level;
+          }
         }
         return Math.max(1, level);
       },
@@ -186,7 +188,9 @@
       npchp: function() {
         var total = 0;
         for(var x in this.classes) {
-          total += (this.classes[x].hitdie/2 + 1 + this.conmod()) * this.classes[x].level;
+          if(true) {
+            total += (this.classes[x].hitdie/2 + 1 + this.conmod()) * this.classes[x].level;
+          }
         }
         return total;
       },
@@ -196,7 +200,9 @@
           total += this.classes[0].hitdie/2 - 1;
         }
         for(var x in this.classes) {
-          total += (this.classes[x].hitdie/2 + 1 + this.conmod()) * this.classes[x].level;
+          if(true) {
+            total += (this.classes[x].hitdie/2 + 1 + this.conmod()) * this.classes[x].level;
+          }
         }
         return total;
       },
@@ -298,12 +304,13 @@
       casterLevel: function() {
         var casterLevel = 0;
         var classcounter = 0;
-        for(var z in this.classes) {
-          var thisClassCasterLevel = this.classes[z].level * this.classes[z].selsubclass.castermult;
-          if(thisClassCasterLevel >= 1) {
-            classcounter++;
-            casterLevel += thisClassCasterLevel;  
+        for(var z = 0; z < this.classes.length; z++) {
+            var thisClassCasterLevel = this.classes[z].level * this.classes[z].selsubclass.castermult;
+            if(thisClassCasterLevel >= 1) {
+              classcounter++;
+              casterLevel += thisClassCasterLevel;  
           }
+
           
         }
         if(classcounter > 1) {
@@ -330,7 +337,7 @@
             year += 1;
           }
         }
-        this.journal.push({ month: month, day: day, year: year, text: "" })
+        this.journal.push({ month: month, day: day, year: year, text: "" });
       },
       deleteJournal: function(entry) {
         this.journal.splice(this.journal.indexOf(entry), 1);
@@ -352,7 +359,7 @@
       var day = a.day < 10 ? "0" + a.day.toString() : a.day.toString();
       var sortable = Number(a.year.toString() + month + day);
       return sortable;
-    }
+    };
     $scope.nameValue = "";
     $scope.levelValue = "";
     $scope.schoolValue = "";
@@ -409,7 +416,7 @@
     
     $scope.removeSpell = function(spell) {
       $scope.character.spellsKnown.splice($scope.character.spellsKnown.indexOf(spell), 1);
-    }
+    };
     
     $scope.addEquipmentFromList = function() {
       var parentElem = $("body");
@@ -495,11 +502,11 @@
     
     $scope.loadSpell = function(index) {
       $uibModalInstance.close($scope.spells[index]);
-    }
+    };
     
     $scope.cancel = function() {
       $uibModalInstance.close(false);
-    }
+    };
     
     var spellTableData = [];
     for(var x = 0; x < $scope.spells.length; x++) {
@@ -539,6 +546,6 @@
           }
         });        
       }
-    }
+    };
   }]);
 })(angular, jQuery);

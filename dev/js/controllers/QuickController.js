@@ -1,4 +1,4 @@
-/* globals angular, jQuery, Random */
+/* globals angular, jQuery */
 "use strict";
 
 (function($, ng) {
@@ -160,7 +160,24 @@
                 }
                 return true;
               });
-              
+              var dmgFunction = function(dmg, l) {
+                  $scope.magicItems.push({
+                    Item: $scope.weapons[l].Name + " of " + dmg,
+                    Type: "Weapon (" + $scope.weapons[l].Name + ")",
+                    Attunement: "No",
+                    Rarity: "Uncommon",
+                    Effect: "Whenever an attack with this " + $scope.weapons[l].Name + " hits it does an additional 1d6 " + dmg + " damage in addition to its normal effects.",
+                    "Cost (gp)": 4000
+                  });  
+                  $scope.magicItems.push({
+                    Item: "+1 " + $scope.weapons[l].Name + " of " + dmg,
+                    Type: "Weapon (" + $scope.weapons[l].Name + ")",
+                    Attunement: "Yes",
+                    Rarity: "Rare",
+                    Effect: "You gain +1 to attack and damage rolls with this " + $scope.weapons[l].Name + ". Whenever an attack with this " + $scope.weapons[l].Name + " hits it does an additional 1d6 " + dmg + " damage in addition to its normal effects.",
+                    "Cost (gp)": 9000
+                  });                
+              };
               for (var l = 0; l < $scope.weapons.length; l++) {
                 $scope.magicItems.push({
                   Item: $scope.weapons[l].Name + " of Wounding",
@@ -227,24 +244,9 @@
                   "Cost (gp)": 3000
                 });
                 var dmgArray = ["fire", "acid", "cold", "lightning"];
-                dmgArray.forEach(function(dmg) {
-                  $scope.magicItems.push({
-                    Item: $scope.weapons[l].Name + " of " + dmg,
-                    Type: "Weapon (" + $scope.weapons[l].Name + ")",
-                    Attunement: "No",
-                    Rarity: "Uncommon",
-                    Effect: "Whenever an attack with this " + $scope.weapons[l].Name + " hits it does an additional 1d6 " + dmg + " damage in addition to its normal effects.",
-                    "Cost (gp)": 4000
-                  });  
-                  $scope.magicItems.push({
-                    Item: "+1 " + $scope.weapons[l].Name + " of " + dmg,
-                    Type: "Weapon (" + $scope.weapons[l].Name + ")",
-                    Attunement: "Yes",
-                    Rarity: "Rare",
-                    Effect: "You gain +1 to attack and damage rolls with this " + $scope.weapons[l].Name + ". Whenever an attack with this " + $scope.weapons[l].Name + " hits it does an additional 1d6 " + dmg + " damage in addition to its normal effects.",
-                    "Cost (gp)": 9000
-                  }); 
-                });
+                for(var i = 0; i < dmgArray.length; i++) {
+                  dmgFunction(dmgArray[i], l);
+                }
                 if(/thrown/.test($scope.weapons[l].Properties)) {
                   $scope.magicItems.push({
                     Item: $scope.weapons[l].Name + " of Returning",
@@ -274,7 +276,16 @@
                   });                  
                 }
               }
-              
+              var resArmor = function(resist, z) {
+                  $scope.magicItems.push({
+                    Item: $scope.armor[z].Material + " " + $scope.armor[z].Armor + " of " + resist + " Resistance",
+                    Type: "Armor (" + $scope.armor[z].Armor + ")",
+                    Attunement: "Yes",
+                    Effect: "You have resistance to "+ resist +" damage while you wear this armor. " + $scope.armor[z].Resistance,
+                    Rarity: "Rare",
+                    "Cost (gp)": Number($scope.armor[z].Price) + 8000
+                  });                 
+              };
               for (var z = 0; z < $scope.armor.length; z++) {
                 var resistArray = ["fire", "cold", "acid", "poison", "bludgeoning", "piercing", "slashing", "force", "lightning", "thunder", "radiant", "necrotic"];
                 $scope.magicItems.push({
@@ -293,16 +304,9 @@
                   Rarity: "Very Rare",
                   "Cost (gp)": Number($scope.armor[z].Price) + 16000
                 });
-                resistArray.forEach(function(resist) {
-                  $scope.magicItems.push({
-                    Item: $scope.armor[z].Material + " " + $scope.armor[z].Armor + " of " + resist + " Resistance",
-                    Type: "Armor (" + $scope.armor[z].Armor + ")",
-                    Attunement: "Yes",
-                    Effect: "You have resistance to "+ resist +" damage while you wear this armor. " + $scope.armor[z].Resistance,
-                    Rarity: "Rare",
-                    "Cost (gp)": Number($scope.armor[z].Price) + 8000
-                  });                
-                });
+                for(var j = 0; j < resistArray.length; j++) {
+                  resArmor(resistArray[j], z);
+                }
                 $scope.magicItems.push({
                     Item: "Mariner's " + $scope.armor[z].Material + " " + $scope.armor[z].Armor,
                     Type: "Armor (" + $scope.armor[z].Armor + ")",
@@ -356,18 +360,9 @@
     
     $scope.setMagicItemStock = function() {
       var magicItemTableData = [];
-      var today = new Date();
-      var randgen = Math.seedrandom(today.getYear() + today.getMonth() + today.getDate());
-      for (var x = 0; x < $scope.magicItems.length; x++) {
-        var rand = Math.random();
-        var thisItem = [];
-        thisItem.push($scope.magicItems[x].Item);
-        thisItem.push($scope.magicItems[x].Type);
-        thisItem.push(Number($scope.magicItems[x]["Cost (gp)"]));
-        thisItem.push($scope.magicItems[x].Rarity);
-        thisItem.push($scope.magicItems[x].Attunement);
-        thisItem.push($scope.magicItems[x].Effect);
-        var inStock = function() {
+      //var today = new Date();
+      //var randgen = Math.seedrandom(today.getYear() + today.getMonth() + today.getDate());
+      var inStock = function(rand, x) {
           if($scope.magicItems[x].Rarity === "Common") {
             return "In Stock";
           } else if($scope.magicItems[x].Rarity === "Uncommon") {
@@ -384,8 +379,17 @@
             }
           }
           return "Out of Stock";
-        };
-        thisItem.push(inStock());
+      };
+      for (var x = 0; x < $scope.magicItems.length; x++) {
+        var rand = Math.random();
+        var thisItem = [];
+        thisItem.push($scope.magicItems[x].Item);
+        thisItem.push($scope.magicItems[x].Type);
+        thisItem.push(Number($scope.magicItems[x]["Cost (gp)"]));
+        thisItem.push($scope.magicItems[x].Rarity);
+        thisItem.push($scope.magicItems[x].Attunement);
+        thisItem.push($scope.magicItems[x].Effect);
+        thisItem.push(inStock(rand, x));
         magicItemTableData.push(thisItem);
       }
       

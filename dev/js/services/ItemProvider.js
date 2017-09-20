@@ -52,7 +52,7 @@
       });
       
       return deferred.promise;
-    }
+    };
     return items;
   }]);
 })(jQuery, angular);

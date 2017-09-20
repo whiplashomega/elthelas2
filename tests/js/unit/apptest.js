@@ -19,6 +19,7 @@ describe('stateProvider configuration testing', function() {
       $templateCache.put('/html/footer/footer.html', '');
       $templateCache.put('/html/content/home.html', '');
       $templateCache.put('/html/head/home.html', '');
+      $templateCache.put('/html/head/head.html', '');
       $templateCache.put('/html/empty.html', '');
     });
   });
@@ -32,15 +33,31 @@ describe('stateProvider configuration testing', function() {
     state = 'app.races';
     expect($state.href(state, { id: 1 })).toEqual('/options/races');
   });  
-  
-  it('divines state data check', function(done) {
+
+  it('races state data check', function(done) {
     state = 'app.races';
     $templateCache.put('/html/content/options/races.html', '');
-    $templateCache.put('/html/head/options/races.html', '');
     $templateCache.put('/html/sidebar/options.html', '');
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe("Races");
+      done();
+    });
+    $rootScope.$digest();
+  });
+
+  it('divines state url check', function() {
+    state = 'app.divines';
+    expect($state.href(state, { id: 1 })).toEqual('/ref/divines');
+  }); 
+  
+  it('divines state data check', function(done) {
+    state = 'app.divines';
+    $templateCache.put('/html/content/ref/divines.html', '');
+    $templateCache.put('/html/sidebar/ref.html', '');
+    $state.go(state).then(function(current) {
+      expect(current.name).toBe(state);
+      expect(current.data.title).toBe("Divines");
       done();
     });
     $rootScope.$digest();
@@ -54,7 +71,6 @@ describe('stateProvider configuration testing', function() {
   it('domains state data check', function(done) {
     state = 'app.domains';
     $templateCache.put('/html/content/options/domains.html', '');
-    $templateCache.put('/html/head/options/domains.html', '');
     $templateCache.put('/html/sidebar/options.html', '');
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
@@ -72,7 +88,6 @@ describe('stateProvider configuration testing', function() {
   it('languages state data check', function(done) {
     state = 'app.languages';
     $templateCache.put('/html/content/options/languages.html', '');
-    $templateCache.put('/html/head/options/languages.html', '');
     $templateCache.put('/html/sidebar/options.html', '');
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
@@ -90,7 +105,6 @@ describe('stateProvider configuration testing', function() {
   it('gods state data check', function(done) {
     state = 'app.gods';
     $templateCache.put('/html/content/ref/gods.html', '');
-    $templateCache.put('/html/head/ref/gods.html', '');
     $templateCache.put('/html/sidebar/ref.html', '');
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
@@ -108,7 +122,6 @@ describe('stateProvider configuration testing', function() {
   it('organizations state data check', function(done) {
     state = 'app.organizations';
     $templateCache.put('/html/content/ref/organizations.html', '');
-    $templateCache.put('/html/head/ref/organizations.html', '');
     $templateCache.put('/html/sidebar/ref.html', '');
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
@@ -126,7 +139,6 @@ describe('stateProvider configuration testing', function() {
   it('calendar state data check', function(done) {
     state = 'app.calendar';
     $templateCache.put('/html/content/ref/calendar.html', '');
-    $templateCache.put('/html/head/ref/calendar.html', '');
     $templateCache.put('/html/sidebar/ref.html', '');
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
@@ -144,7 +156,6 @@ describe('stateProvider configuration testing', function() {
   it('cosmology state data check', function(done) {
     state = 'app.cosmology';
     $templateCache.put('/html/content/ref/cosmology.html', '');
-    $templateCache.put('/html/head/ref/cosmology.html', '');
     $templateCache.put('/html/sidebar/ref.html', '');
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
@@ -162,7 +173,6 @@ describe('stateProvider configuration testing', function() {
   it('astronomy state data check', function(done) {
     state = 'app.astronomy';
     $templateCache.put('/html/content/ref/astronomy.html', '');
-    $templateCache.put('/html/head/ref/astronomy.html', '');
     $templateCache.put('/html/sidebar/ref.html', '');
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
@@ -180,7 +190,6 @@ describe('stateProvider configuration testing', function() {
   it('magic state data check', function(done) {
     state = 'app.magic';
     $templateCache.put('/html/content/ref/magic.html', '');
-    $templateCache.put('/html/head/ref/magic.html', '');
     $templateCache.put('/html/sidebar/ref.html', '');
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
@@ -198,7 +207,6 @@ describe('stateProvider configuration testing', function() {
   it('divines state data check', function(done) {
     state = 'app.divines';
     $templateCache.put('/html/content/ref/divines.html', '');
-    $templateCache.put('/html/head/ref/divines.html', '');
     $templateCache.put('/html/sidebar/ref.html', '');
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
@@ -216,7 +224,6 @@ describe('stateProvider configuration testing', function() {
   it('quick reference state data check', function(done) {
     state = 'app.quickref';
     $templateCache.put('/html/content/ref/quick.html', '');
-    $templateCache.put('/html/head/ref/quick.html', '');
     $templateCache.put('/html/sidebar/ref.html', '');
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
@@ -229,7 +236,6 @@ describe('stateProvider configuration testing', function() {
   it('organizations state data check', function(done) {
     state = 'app.organizations';
     $templateCache.put('/html/content/ref/organizations.html', '');
-    $templateCache.put('/html/head/ref/organizations.html', '');
     $templateCache.put('/html/sidebar/ref.html', '');
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
