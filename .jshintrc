@@ -1,5 +1,5 @@
 {
-  "camelcase": true,
+  "camelcase": false,
   "curly": true,
   "eqeqeq": true,
   "expr" : true,
@@ -24,7 +24,7 @@
     "context"    : false,
     "describe"   : false,
     "it"         : false,
-    "window"     : false,
+    "window"     : true,
     "angular" : true,
     "jQuery": true,
     "droll": true

@@ -46,23 +46,23 @@ describe('stateProvider configuration testing', function() {
     $rootScope.$digest();
   });
 
-  it('divines state url check', function() {
-    state = 'app.divines';
-    expect($state.href(state, { id: 1 })).toEqual('/ref/divines');
-  }); 
-  
-  it('divines state data check', function(done) {
-    state = 'app.divines';
-    $templateCache.put('/html/content/ref/divines.html', '');
-    $templateCache.put('/html/sidebar/ref.html', '');
-    $state.go(state).then(function(current) {
+  it('race state url check', function() {
+    state = 'app.race';
+    expect($state.href(state, { id: 1, race: 'humans' })).toEqual('/options/races/humans');
+  });  
+
+  it('race state data check', function(done) {
+    state = 'app.race';
+    $templateCache.put('/html/content/options/races.html', '');
+    $templateCache.put('/html/sidebar/options.html', '');
+    $state.go(state, {race: 'humans'}).then(function(current) {
       expect(current.name).toBe(state);
-      expect(current.data.title).toBe("Divines");
+      expect(current.data.title).toBe("Races");
       done();
     });
     $rootScope.$digest();
   });
-
+  
   it('domains state url check', function() {
     state = 'app.domains';
     expect($state.href(state, { id: 1 })).toEqual('/options/domains');
@@ -114,6 +114,23 @@ describe('stateProvider configuration testing', function() {
     $rootScope.$digest();
   });
 
+  it('god state url check', function() {
+    state = 'app.god';
+    expect($state.href(state, { id: 1, god: 'alohim' })).toEqual('/ref/gods/alohim');
+  });  
+  
+  it('god state data check', function(done) {
+    state = 'app.god';
+    $templateCache.put('/html/content/ref/gods.html', '');
+    $templateCache.put('/html/sidebar/ref.html', '');
+    $state.go(state, { god: 'alohim' }).then(function(current) {
+      expect(current.name).toBe(state);
+      expect(current.data.title).toBe("Gods");
+      done();
+    });
+    $rootScope.$digest();
+  });
+
   it('organizations state url check', function() {
     state = 'app.organizations';
     expect($state.href(state, { id: 1 })).toEqual('/ref/orgs');
@@ -124,6 +141,23 @@ describe('stateProvider configuration testing', function() {
     $templateCache.put('/html/content/ref/organizations.html', '');
     $templateCache.put('/html/sidebar/ref.html', '');
     $state.go(state).then(function(current) {
+      expect(current.name).toBe(state);
+      expect(current.data.title).toBe("Organizations");
+      done();
+    });
+    $rootScope.$digest();
+  });
+
+  it('organization state url check', function() {
+    state = 'app.organization';
+    expect($state.href(state, { id: 1, org: "blackwolfirregulars" })).toEqual('/ref/orgs/blackwolfirregulars');
+  });  
+  
+  it('organization state data check', function(done) {
+    state = 'app.organization';
+    $templateCache.put('/html/content/ref/organizations.html', '');
+    $templateCache.put('/html/sidebar/ref.html', '');
+    $state.go(state, { org: 'blackwolfirregulars' }).then(function(current) {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe("Organizations");
       done();
@@ -232,16 +266,206 @@ describe('stateProvider configuration testing', function() {
     });
     $rootScope.$digest();
   });
+
+  it('history state url check', function() {
+    state = 'app.history';
+    expect($state.href(state, { id: 1 })).toEqual('/history');
+  });
   
-  it('organizations state data check', function(done) {
-    state = 'app.organizations';
-    $templateCache.put('/html/content/ref/organizations.html', '');
-    $templateCache.put('/html/sidebar/ref.html', '');
+  it('history state data check', function(done) {
+    state = 'app.history';
+    $templateCache.put('/html/content/history.html', '');
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
-      expect(current.data.title).toBe("Organizations");
+      expect(current.data.title).toBe("History");
       done();
     });
     $rootScope.$digest();
   });
+
+  it('history event state url check', function() {
+    state = 'app.historyevent';
+    expect($state.href(state, { id: 1, eventname: 'aridhemfallstoorcishassault' })).toEqual('/history/aridhemfallstoorcishassault');
+  });
+  
+  it('history event state data check', function(done) {
+    state = 'app.historyevent';
+    $templateCache.put('/html/content/history.html', '');
+    $state.go(state, {eventname: 'aridhemfallstoorcishassault'}).then(function(current) {
+      expect(current.name).toBe(state);
+      expect(current.data.title).toBe("History");
+      done();
+    });
+    $rootScope.$digest();
+  });  
+
+  it('classes state url check', function() {
+    state = 'app.classes';
+    expect($state.href(state, { id: 1 })).toEqual('/options/class');
+  });
+  
+  it('classes state data check', function(done) {
+    state = 'app.classes';
+    $templateCache.put('/html/content/options/classes.html', '');
+    $templateCache.put('/html/sidebar/options.html', '');
+    $state.go(state).then(function(current) {
+      expect(current.name).toBe(state);
+      expect(current.data.title).toBe("Classes");
+      done();
+    });
+    $rootScope.$digest();
+  });
+
+  it('geo state url check', function() {
+    state = 'app.geo';
+    expect($state.href(state, { id: 1 })).toEqual('/geo');
+  });
+  
+  it('geo state data check', function(done) {
+    state = 'app.geo';
+    $templateCache.put('/html/content/geo.html', '');
+    $state.go(state).then(function(current) {
+      expect(current.name).toBe(state);
+      expect(current.data.title).toBe("Geography");
+      done();
+    });
+    $rootScope.$digest();
+  });
+  
+  it('geoitem state url check', function() {
+    state = 'app.geoitem';
+    expect($state.href(state, { id: 1, type: 'landmark', location: 'curestan' })).toEqual('/geo/landmark/curestan');
+  });
+  
+  it('geoitem state data check', function(done) {
+    state = 'app.geoitem';
+    $templateCache.put('/html/content/geo.html', '');
+    $state.go(state).then(function(current) {
+      expect(current.name).toBe(state);
+      expect(current.data.title).toBe("Geography");
+      done();
+    });
+    $rootScope.$digest();
+  });
+
+  it('about state url check', function() {
+    state = 'app.about';
+    expect($state.href(state, { id: 1 })).toEqual('/about');
+  });
+  
+  it('about state data check', function(done) {
+    state = 'app.about';
+    $templateCache.put('/html/content/about.html', '');
+    $templateCache.put('/html/sidebar/about.html', '');
+    $state.go(state).then(function(current) {
+      expect(current.name).toBe(state);
+      expect(current.data.title).toBe("About the Author");
+      done();
+    });
+    $rootScope.$digest();
+  });
+
+  it('book1 state url check', function() {
+    state = 'app.book1';
+    expect($state.href(state, { id: 1 })).toEqual('/campaigns/book1');
+  });
+  
+  it('book1 state data check', function(done) {
+    state = 'app.book1';
+    $templateCache.put('/html/content/campaigns/book1.html', '');
+    $templateCache.put('/html/sidebar/campaign.html', '');
+    $state.go(state).then(function(current) {
+      expect(current.name).toBe(state);
+      expect(current.data.title).toBe('Epic of Elthelas Book 1: The Crystal of Light');
+      expect(current.data.auth).toBe(true);
+      done();
+    });
+    $rootScope.$digest();
+  });
+
+  it('book4 state url check', function() {
+    state = 'app.book4';
+    expect($state.href(state, { id: 1 })).toEqual('/campaigns/book4');
+  });
+  
+  it('book4 state data check', function(done) {
+    state = 'app.book4';
+    $templateCache.put('/html/content/campaigns/book4.html', '');
+    $templateCache.put('/html/sidebar/campaign.html', '');
+    $state.go(state).then(function(current) {
+      expect(current.name).toBe(state);
+      expect(current.data.title).toBe('Epic of Elthelas Book 4: Desperate Measures');
+      expect(current.data.auth).toBe(true);
+      done();
+    });
+    $rootScope.$digest();
+  });
+
+  it('book 4 players guide state url check', function() {
+    state = 'app.book4playersguide';
+    expect($state.href(state, { id: 1 })).toEqual('/campaigns/book4/playersguide');
+  });
+  
+  it('book 4 players guide state data check', function(done) {
+    state = 'app.book4playersguide';
+    $templateCache.put('/html/content/campaigns/book4playersguide.html', '');
+    $templateCache.put('/html/sidebar/options.html', '');
+    $state.go(state).then(function(current) {
+      expect(current.name).toBe(state);
+      expect(current.data.title).toBe("Epic of Elthelas Book 4: Desparate Measures - Players Guide");
+      done();
+    });
+    $rootScope.$digest();
+  });
+
+  it('backgrounds state url check', function() {
+    state = 'app.backgrounds';
+    expect($state.href(state, { id: 1 })).toEqual('/options/backgrounds');
+  });
+  
+  it('backgrounds state data check', function(done) {
+    state = 'app.backgrounds';
+    $templateCache.put('/html/content/options/backgrounds.html', '');
+    $templateCache.put('/html/sidebar/options.html', '');
+    $state.go(state).then(function(current) {
+      expect(current.name).toBe(state);
+      expect(current.data.title).toBe("Backgrounds");
+      done();
+    });
+    $rootScope.$digest();
+  });
+
+  it('bestiary state url check', function() {
+    state = 'app.bestiary';
+    expect($state.href(state, { id: 1 })).toEqual('/ref/beasts');
+  });
+  
+  it('bestiary state data check', function(done) {
+    state = 'app.bestiary';
+    $templateCache.put('/html/content/ref/bestiary.html', '');
+    $templateCache.put('/html/sidebar/ref.html', '');
+    $state.go(state).then(function(current) {
+      expect(current.name).toBe(state);
+      expect(current.data.title).toBe("Bestiary");
+      done();
+    });
+    $rootScope.$digest();
+  });
+
+  it('character builder state url check', function() {
+    state = 'app.charbuilder';
+    expect($state.href(state, { id: 1 })).toEqual('/campaign/charbuilder');
+  });
+  
+  it('character builder state data check', function(done) {
+    state = 'app.charbuilder';
+    $templateCache.put('/html/content/tools/characterbuilder.html', '');
+    $state.go(state).then(function(current) {
+      expect(current.name).toBe(state);
+      expect(current.data.title).toBe("Character Builder");
+      done();
+    });
+    $rootScope.$digest();
+  });
+  
 });

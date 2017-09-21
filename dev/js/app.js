@@ -378,7 +378,7 @@
       url: 'ref/beasts',
       views: {
         'content@': {
-          templateUrl: '/html/content/ref/beastiary.html',
+          templateUrl: '/html/content/ref/bestiary.html',
           controller: 'BeastController'
         },
         'sidebar@': {
