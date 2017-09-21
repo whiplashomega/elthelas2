@@ -29,6 +29,20 @@ describe('stateProvider configuration testing', function() {
     expect($state.href(state, { id: 1 })).toEqual('/');
   });
 
+  it('root state data check', function(done) {
+    state = 'app';
+    $state.go(state).then(function(current) {
+      expect(current.name).toBe(state);
+      expect(current.data.title).toBe("Home");
+      expect(current.data.metadescription).toBeDefined();
+      expect(current.data.metakeywords).toBeDefined();
+      expect(current.data.metadescription.length > 0).toBe(true);
+      expect(current.data.metakeywords.length > 0).toBe(true);
+      done();
+    });
+    $rootScope.$digest();    
+  });
+
   it('races state url check', function() {
     state = 'app.races';
     expect($state.href(state, { id: 1 })).toEqual('/options/races');
@@ -41,6 +55,10 @@ describe('stateProvider configuration testing', function() {
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe("Races");
+      expect(current.data.metadescription).toBeDefined();
+      expect(current.data.metakeywords).toBeDefined();
+      expect(current.data.metadescription.length > 0).toBe(true);
+      expect(current.data.metakeywords.length > 0).toBe(true);
       done();
     });
     $rootScope.$digest();
@@ -58,6 +76,10 @@ describe('stateProvider configuration testing', function() {
     $state.go(state, {race: 'humans'}).then(function(current) {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe("Races");
+      expect(current.data.metadescription).toBeDefined();
+      expect(current.data.metakeywords).toBeDefined();
+      expect(current.data.metadescription.length > 0).toBe(true);
+      expect(current.data.metakeywords.length > 0).toBe(true);
       done();
     });
     $rootScope.$digest();
@@ -75,6 +97,10 @@ describe('stateProvider configuration testing', function() {
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe("Domains");
+      expect(current.data.metadescription).toBeDefined();
+      expect(current.data.metakeywords).toBeDefined();
+      expect(current.data.metadescription.length > 0).toBe(true);
+      expect(current.data.metakeywords.length > 0).toBe(true);
       done();
     });
     $rootScope.$digest();
@@ -92,6 +118,10 @@ describe('stateProvider configuration testing', function() {
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe("Languages");
+      expect(current.data.metadescription).toBeDefined();
+      expect(current.data.metakeywords).toBeDefined();
+      expect(current.data.metadescription.length > 0).toBe(true);
+      expect(current.data.metakeywords.length > 0).toBe(true);
       done();
     });
     $rootScope.$digest();
@@ -109,6 +139,10 @@ describe('stateProvider configuration testing', function() {
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe("Gods");
+      expect(current.data.metadescription).toBeDefined();
+      expect(current.data.metakeywords).toBeDefined();
+      expect(current.data.metadescription.length > 0).toBe(true);
+      expect(current.data.metakeywords.length > 0).toBe(true);
       done();
     });
     $rootScope.$digest();
@@ -126,6 +160,10 @@ describe('stateProvider configuration testing', function() {
     $state.go(state, { god: 'alohim' }).then(function(current) {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe("Gods");
+      expect(current.data.metadescription).toBeDefined();
+      expect(current.data.metakeywords).toBeDefined();
+      expect(current.data.metadescription.length > 0).toBe(true);
+      expect(current.data.metakeywords.length > 0).toBe(true);
       done();
     });
     $rootScope.$digest();
@@ -143,6 +181,10 @@ describe('stateProvider configuration testing', function() {
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe("Organizations");
+      expect(current.data.metadescription).toBeDefined();
+      expect(current.data.metakeywords).toBeDefined();
+      expect(current.data.metadescription.length > 0).toBe(true);
+      expect(current.data.metakeywords.length > 0).toBe(true);
       done();
     });
     $rootScope.$digest();
@@ -160,6 +202,10 @@ describe('stateProvider configuration testing', function() {
     $state.go(state, { org: 'blackwolfirregulars' }).then(function(current) {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe("Organizations");
+      expect(current.data.metadescription).toBeDefined();
+      expect(current.data.metakeywords).toBeDefined();
+      expect(current.data.metadescription.length > 0).toBe(true);
+      expect(current.data.metakeywords.length > 0).toBe(true);
       done();
     });
     $rootScope.$digest();
@@ -177,6 +223,10 @@ describe('stateProvider configuration testing', function() {
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe("Calendar");
+      expect(current.data.metadescription).toBeDefined();
+      expect(current.data.metakeywords).toBeDefined();
+      expect(current.data.metadescription.length > 0).toBe(true);
+      expect(current.data.metakeywords.length > 0).toBe(true);
       done();
     });
     $rootScope.$digest();
@@ -194,6 +244,10 @@ describe('stateProvider configuration testing', function() {
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe("Cosmology");
+      expect(current.data.metadescription).toBeDefined();
+      expect(current.data.metakeywords).toBeDefined();
+      expect(current.data.metadescription.length > 0).toBe(true);
+      expect(current.data.metakeywords.length > 0).toBe(true);
       done();
     });
     $rootScope.$digest();
@@ -211,6 +265,10 @@ describe('stateProvider configuration testing', function() {
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe("Astronomy");
+      expect(current.data.metadescription).toBeDefined();
+      expect(current.data.metakeywords).toBeDefined();
+      expect(current.data.metadescription.length > 0).toBe(true);
+      expect(current.data.metakeywords.length > 0).toBe(true);
       done();
     });
     $rootScope.$digest();
@@ -228,6 +286,10 @@ describe('stateProvider configuration testing', function() {
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe("Magic");
+      expect(current.data.metadescription).toBeDefined();
+      expect(current.data.metakeywords).toBeDefined();
+      expect(current.data.metadescription.length > 0).toBe(true);
+      expect(current.data.metakeywords.length > 0).toBe(true);
       done();
     });
     $rootScope.$digest();
@@ -245,6 +307,10 @@ describe('stateProvider configuration testing', function() {
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe("Divines");
+      expect(current.data.metadescription).toBeDefined();
+      expect(current.data.metakeywords).toBeDefined();
+      expect(current.data.metadescription.length > 0).toBe(true);
+      expect(current.data.metakeywords.length > 0).toBe(true);
       done();
     });
     $rootScope.$digest();
@@ -262,6 +328,10 @@ describe('stateProvider configuration testing', function() {
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe("Quick Reference Manual");
+      expect(current.data.metadescription).toBeDefined();
+      expect(current.data.metakeywords).toBeDefined();
+      expect(current.data.metadescription.length > 0).toBe(true);
+      expect(current.data.metakeywords.length > 0).toBe(true);
       done();
     });
     $rootScope.$digest();
@@ -278,6 +348,10 @@ describe('stateProvider configuration testing', function() {
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe("History");
+      expect(current.data.metadescription).toBeDefined();
+      expect(current.data.metakeywords).toBeDefined();
+      expect(current.data.metadescription.length > 0).toBe(true);
+      expect(current.data.metakeywords.length > 0).toBe(true);
       done();
     });
     $rootScope.$digest();
@@ -294,6 +368,10 @@ describe('stateProvider configuration testing', function() {
     $state.go(state, {eventname: 'aridhemfallstoorcishassault'}).then(function(current) {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe("History");
+      expect(current.data.metadescription).toBeDefined();
+      expect(current.data.metakeywords).toBeDefined();
+      expect(current.data.metadescription.length > 0).toBe(true);
+      expect(current.data.metakeywords.length > 0).toBe(true);
       done();
     });
     $rootScope.$digest();
@@ -311,6 +389,10 @@ describe('stateProvider configuration testing', function() {
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe("Classes");
+      expect(current.data.metadescription).toBeDefined();
+      expect(current.data.metakeywords).toBeDefined();
+      expect(current.data.metadescription.length > 0).toBe(true);
+      expect(current.data.metakeywords.length > 0).toBe(true);
       done();
     });
     $rootScope.$digest();
@@ -327,6 +409,10 @@ describe('stateProvider configuration testing', function() {
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe("Geography");
+      expect(current.data.metadescription).toBeDefined();
+      expect(current.data.metakeywords).toBeDefined();
+      expect(current.data.metadescription.length > 0).toBe(true);
+      expect(current.data.metakeywords.length > 0).toBe(true);
       done();
     });
     $rootScope.$digest();
@@ -343,6 +429,10 @@ describe('stateProvider configuration testing', function() {
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe("Geography");
+      expect(current.data.metadescription).toBeDefined();
+      expect(current.data.metakeywords).toBeDefined();
+      expect(current.data.metadescription.length > 0).toBe(true);
+      expect(current.data.metakeywords.length > 0).toBe(true);
       done();
     });
     $rootScope.$digest();
@@ -360,6 +450,10 @@ describe('stateProvider configuration testing', function() {
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe("About the Author");
+      expect(current.data.metadescription).toBeDefined();
+      expect(current.data.metakeywords).toBeDefined();
+      expect(current.data.metadescription.length > 0).toBe(true);
+      expect(current.data.metakeywords.length > 0).toBe(true);
       done();
     });
     $rootScope.$digest();
@@ -378,6 +472,10 @@ describe('stateProvider configuration testing', function() {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe('Epic of Elthelas Book 1: The Crystal of Light');
       expect(current.data.auth).toBe(true);
+      expect(current.data.metadescription).toBeDefined();
+      expect(current.data.metakeywords).toBeDefined();
+      expect(current.data.metadescription.length > 0).toBe(true);
+      expect(current.data.metakeywords.length > 0).toBe(true);
       done();
     });
     $rootScope.$digest();
@@ -396,6 +494,10 @@ describe('stateProvider configuration testing', function() {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe('Epic of Elthelas Book 4: Desperate Measures');
       expect(current.data.auth).toBe(true);
+      expect(current.data.metadescription).toBeDefined();
+      expect(current.data.metakeywords).toBeDefined();
+      expect(current.data.metadescription.length > 0).toBe(true);
+      expect(current.data.metakeywords.length > 0).toBe(true);
       done();
     });
     $rootScope.$digest();
@@ -413,6 +515,10 @@ describe('stateProvider configuration testing', function() {
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe("Epic of Elthelas Book 4: Desparate Measures - Players Guide");
+      expect(current.data.metadescription).toBeDefined();
+      expect(current.data.metakeywords).toBeDefined();
+      expect(current.data.metadescription.length > 0).toBe(true);
+      expect(current.data.metakeywords.length > 0).toBe(true);
       done();
     });
     $rootScope.$digest();
@@ -430,6 +536,10 @@ describe('stateProvider configuration testing', function() {
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe("Backgrounds");
+      expect(current.data.metadescription).toBeDefined();
+      expect(current.data.metakeywords).toBeDefined();
+      expect(current.data.metadescription.length > 0).toBe(true);
+      expect(current.data.metakeywords.length > 0).toBe(true);
       done();
     });
     $rootScope.$digest();
@@ -447,6 +557,10 @@ describe('stateProvider configuration testing', function() {
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe("Bestiary");
+      expect(current.data.metadescription).toBeDefined();
+      expect(current.data.metakeywords).toBeDefined();
+      expect(current.data.metadescription.length > 0).toBe(true);
+      expect(current.data.metakeywords.length > 0).toBe(true);
       done();
     });
     $rootScope.$digest();
@@ -463,6 +577,10 @@ describe('stateProvider configuration testing', function() {
     $state.go(state).then(function(current) {
       expect(current.name).toBe(state);
       expect(current.data.title).toBe("Character Builder");
+      expect(current.data.metadescription).toBeDefined();
+      expect(current.data.metakeywords).toBeDefined();
+      expect(current.data.metadescription.length > 0).toBe(true);
+      expect(current.data.metakeywords.length > 0).toBe(true);
       done();
     });
     $rootScope.$digest();
