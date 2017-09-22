@@ -6,6 +6,7 @@
   "traits": [
     "Darkvision: 60 ft.",
     "Speed: Your base walking speed is 30 ft.",
+    "Size: Your size is medium",
     "Celestial Resistance: You have resistance to necrotic damage and radiant damage.",
     "Healing Hands: As an action, you can touch a creature and cause it to regain a number of hit points equal to your level.  Once you use this trait, you can't use it again until you finish a long rest.",
     "Light Bearer: You know the light cantrip.  Charisma is your spellcasting ability for it."

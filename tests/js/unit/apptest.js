@@ -586,4 +586,23 @@ describe('stateProvider configuration testing', function() {
     $rootScope.$digest();
   });
   
+  it('has unique metadata for every state', function() {
+    var states = $state.get();
+    //console.log(states);
+    var descriptions = [];
+    var keywords = [];
+    for(var x = 0; x < states.length; x++) {
+      if(states[x].name !== '') {
+        for(var y = 0; y < descriptions.length; y++) {
+          expect(states[x].data.metadescription).not.toBe(descriptions[y]);
+        }
+        descriptions.push(states[x].data.metadescription);
+        for(var z = 0; z < keywords.length; z++) {
+          expect(states[x].data.metakeywords).not.toBe(keywords[z]);
+        }
+        keywords.push(states[x].data.metakeywords)
+      }
+    }
+  });
+  
 });

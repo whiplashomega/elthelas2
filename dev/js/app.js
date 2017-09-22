@@ -33,7 +33,7 @@
              title: "Home", 
              auth: false,
              metadescription: "Website for the Elthelas Campaign Setting for Dungeons and Dragons by Joseph Harrison. Dungeons and Dragons is owned and copyrighted by Wizard's of the Coast.",
-             metakeywords: ""
+             metakeywords: "Dungeons, Dragons, Elthelas, Campaign Setting, Homebrew"
            }
     }).state('app.domains', {
           url:'options/domains',
@@ -48,7 +48,8 @@
           },
           data: { title: "Domains",
              metadescription: "List of Domains available in the Elthelas Campaign Setting for Dungeons and Dragons by Joseph Harrison. Dungeons and Dragons is owned and copyrighted by Wizard's of the Coast.",
-             metakeywords: "domains, air, earth, fire, water, craft, death, arcana, nature, life, light, war, tempest, trickery, trade"}
+             metakeywords: "domains, air, earth, fire, water, craft, death, arcana, nature, life, light, war, tempest, trickery, trade"
+          }
     }).state('app.races', {
            url: 'options/races',
            views: {
@@ -60,7 +61,11 @@
                   templateUrl: '/html/sidebar/options.html'
               },
            },
-           data: { title: "Races"},
+           data: { 
+             title: "Races",
+             metadescription: "Race choices available for the Elthelas Campaign Setting including racial traits",
+             metakeywords: "races, human, elf, orc, goblin, kobold, dwarf, sorceron-blooded, child of molton, trollkin, aasimar, bugbear, dragonborn, faelin, genasi, goliath, half-dwarf, half-elf, hobgoblin, lizardfolk, tiefling"
+           },
            resolve: {
              race: function() {
                return false;
@@ -77,7 +82,11 @@
                   templateUrl: '/html/sidebar/options.html'
               },           
           },
-          data: { title: "Races"},
+          data: { 
+            title: "Races",
+            metadescription: "Race choices available for the Elthelas Campaign Setting including racial traits, displaying a particular race.",
+            metakeywords: "races, human, elf, orc, goblin, kobold, dwarf, sorceron-blooded, child of molton, trollkin, aasimar, bugbear, dragonborn, faelin, genasi, goliath, half-dwarf, half-elf, hobgoblin, lizardfolk, tiefling, preloaded"
+          },
           resolve: {
             race: function($stateParams) {
               return $stateParams.race;
@@ -94,7 +103,10 @@
                   templateUrl: '/html/sidebar/options.html'
               },
            },
-           data: { title: "Languages"}
+           data: { title: "Languages",
+             metadescription: "Languages available in the Elthelas Campaign Setting and rules for choosing languages for your character.",
+             metakeywords: "languages, rules, options, language"
+          }
     }).state('app.gods', {
          url: 'ref/gods',
          views: {
@@ -106,7 +118,11 @@
              templateUrl: '/html/sidebar/ref.html'
            }
          },
-        data: { title: "Gods"},
+        data: { 
+          title: "Gods",
+          metadescription: "Reference page of the Gods of the Elthelas campaign setting, including dogma, holy symbol, appearance, and more.",
+          metakeywords: "reference, gods, holy symbol, dogma, alohim, amathera, sara, cora, mat'raktha, trolka, maris, trimala, molton, dorun, sylvan, nera, gaian, malik, arengesus, area, zhuul"
+          },
         resolve: {
           god: function() {
             return false;
@@ -123,29 +139,37 @@
              templateUrl: '/html/sidebar/ref.html'
            }
          },
-        data: { title: "Gods"},
+        data: { 
+          title: "Gods",
+          metadescription: "Reference page of the Gods of the Elthelas campaign setting, including dogma, holy symbol, appearance, and more. With god preloaded.",
+          metakeywords: "reference, gods, holy symbol, dogma, alohim, amathera, sara, cora, mat'raktha, trolka, maris, trimala, molton, dorun, sylvan, nera, gaian, malik, arengesus, area, zhuul, preloaded"
+        },
         resolve: {
           god: function($stateParams) {
             return $stateParams.god;
           }
         }
     }).state('app.organizations', {
-         url: 'ref/orgs',
-         views: {
-           'content@': {
-             templateUrl: '/html/content/ref/organizations.html',
-             controller: 'OrganizationController'
-           },
-           'sidebar@': {
-             templateUrl: '/html/sidebar/ref.html'
-           }
-         },
-           data: { title: "Organizations"},
-           resolve: {
-             org: function() {
-               return false;
-             }
-           }
+        url: 'ref/orgs',
+        views: {
+          'content@': {
+            templateUrl: '/html/content/ref/organizations.html',
+            controller: 'OrganizationController'
+          },
+          'sidebar@': {
+            templateUrl: '/html/sidebar/ref.html'
+          }
+        },
+        data: { 
+          title: "Organizations",
+          metadescription: "Reference sheet for organizations prominent in the Elthelas Campaign Setting, including optional rules for players who are a part of those organizations.",
+          metakeywords: "reference, organizations, Black Wolf Irregulars, Amathera's Shield, Champions of Cora, Black Sun, International Grangemaster's Alliance, Silver Dragon Knights, Alliance of 6 Nations, Artificer's of Mechanus, Blackguards of Mat'raktha, Dormanian Imperial Guard, Dragon Cult, Guild of Heroes, Illustrious Guild of Merchants and Fine Artisans, Keepers of the Grove, Lords of the Rising Dawn, Makers of Legend, Masters of the Deep Song, Morrind Brewers Club, Order of the Cleansing Fire, Shepherds of the All-Mother, Stormlords of Trimala, Sylvan's Rangers, Trollkin Mercenary Corps, Voidbringers"
+        },
+        resolve: {
+          org: function() {
+            return false;
+          }
+        }
     }).state('app.organization', {
         url: 'ref/orgs/:org',
         views: {
@@ -157,7 +181,10 @@
               templateUrl: '/html/sidebar/ref.html'
             }
           },
-          data: { title: "Organizations"},
+        data: { title: "Organizations",
+          metadescription: "Reference sheet for organizations prominent in the Elthelas Campaign Setting, including optional rules for players who are a part of those organizations. Organization preloaded",
+          metakeywords: "reference, organizations, Black Wolf Irregulars, Amathera's Shield, Champions of Cora, Black Sun, International Grangemaster's Alliance, Silver Dragon Knights, Alliance of 6 Nations, Artificer's of Mechanus, Blackguards of Mat'raktha, Dormanian Imperial Guard, Dragon Cult, Guild of Heroes, Illustrious Guild of Merchants and Fine Artisans, Keepers of the Grove, Lords of the Rising Dawn, Makers of Legend, Masters of the Deep Song, Morrind Brewers Club, Order of the Cleansing Fire, Shepherds of the All-Mother, Stormlords of Trimala, Sylvan's Rangers, Trollkin Mercenary Corps, Voidbringers, preloaded"
+        },
           resolve: {
             org: function($stateParams) {
               return $stateParams.org;
@@ -173,7 +200,10 @@
              templateUrl: '/html/sidebar/ref.html'
            }
          },
-           data: { title: "Calendar"}
+           data: { title: "Calendar",
+             metadescription: "The calendar system commonly used on Elthelas as part of the Elthelas Campaign Setting.",
+             metakeywords: "reference, calendar, months, YFC"
+          }
     }).state('app.cosmology', {
          url: 'ref/cosmology',
          views: {
@@ -184,7 +214,10 @@
              templateUrl: '/html/sidebar/ref.html'
            }
          },
-           data: { title: "Cosmology"}
+           data: { title: "Cosmology",
+             metadescription: "Planar cosmology for the Elthelas Campaign Setting.",
+             metakeywords: "plane, cosmology, elthelas, ethereal, astral, aurumal, shadowfell, feywild, air, water, fire, earth, celestia, elysium, beastlands, arborea, ysgard, limbo, pandemonium, abyss, carceri, hades, gehenna, hell, nine hells, acheron, mechanus, arcadia, negative energy, positive enrgy, confluence"
+          }
     }).state('app.astronomy', {
          url: 'ref/astronomy',
          views: {
@@ -195,7 +228,10 @@
              templateUrl: '/html/sidebar/ref.html'
            }
          },
-           data: { title: "Astronomy"}
+           data: { title: "Astronomy",
+             metadescription: "Local astronomy for the Elthelas Campaign Setting's material plane.",
+             metakeywords: "astronomy, ara, aruru, dina"
+          }
     }).state('app.magic', {
          url: 'ref/magic',
          views: {
@@ -206,7 +242,10 @@
              templateUrl: '/html/sidebar/ref.html'
            }
          },
-           data: { title: "Magic"}
+           data: { title: "Magic",
+             metadescription: "Description of the forces of magic and the rules surrounding them in the Elthelas Campaign Setting.",
+             metakeywords: "magic, arcane, divine, schools, abjuration, conjuration, divination, enchantment, evocation, illusion, necromancy, transmutation, rules, wizards, sorcerers, arcanum"
+          }
     }).state('app.divines', {
          url: 'ref/divines',
          views: {
@@ -218,7 +257,10 @@
              templateUrl: '/html/sidebar/ref.html'
            }
          },
-           data: { title: "Divines"}
+           data: { title: "Divines",
+             metadescription: "Descriptions and information about the lesser divine beings of Elthelas, such as Archangels, demon lords, fey lords, and the Dukes of Hell",
+             metakeywords: "divine, archangel, angel, demon lord, fey lord, duke, hell, abyss"
+          }
     }).state('app.quickref', {
          url: 'ref/quick',
          views: {
@@ -230,7 +272,10 @@
              templateUrl: '/html/sidebar/ref.html'
            }
          },
-           data: { title: "Quick Reference Manual"}
+           data: { title: "Quick Reference Manual",
+             metadescription: "The Quick Reference Manual for the Elthelas Campaign Setting is a tool for players and Dungeon Masters to be able to quickly look up information on spells, magic items, and equipment. Use it to settle your disputes quickly and get on with the game.",
+             metakeywords: "quick reference, spells, magic items, armor, weapons, conditions, injuries."
+          }
     }).state('app.history', {
          url: 'history',
          views: {
@@ -239,7 +284,10 @@
              controller: 'HistoryController'
            }
          },
-           data: { title: "History"},
+           data: { title: "History",
+             metadescription: "The complete timeline of the known history of Elthelas, more events are added regularly, with dates and descriptions.",
+             metakeywords: "history, timeline, events"
+          },
            resolve: {
              event: function() {
                return false;
@@ -253,7 +301,10 @@
              controller: 'HistoryController'
            }
          },
-           data: { title: "History"},
+           data: { title: "History",
+             metadescription: "The complete timeline of the known history of Elthelas, more events are added regularly, with dates and descriptions. An event has been preloaded",
+             metakeywords: "history, timeline, events, preloaded"
+          },
          resolve: {
            event: function($stateParams) {
              return $stateParams.eventname;
@@ -271,7 +322,10 @@
           }
         },
         data: {
-          title: "Classes"
+          title: "Classes",
+             metadescription: "Character classes available in the Elthelas Campaign Setting, including homebrew options written by the author such as a revision to the ranger class (based on the Unearthed Arcana revised ranger), and the Factotum.",
+             metakeywords: "classes, class, barbarian, bard, cleric, druid, factotum, fighter, monk, paladin, ranger, rogue, sorcerer, warlock, wizard"
+          
         }
     }).state('app.geo', {
          url: 'geo',
@@ -281,7 +335,10 @@
              controller: 'GeographyController'
            }
         },
-        data: { title: "Geography" },
+        data: { title: "Geography",
+             metadescription: "Geographic and location information for the Elthelas Campaign Setting.",
+             metakeywords: "geography, location, elthelas, nations, cities, elathia, riftlan, atyrea, tu'eldoran, azrea, dormania, gerasalim, kandor, curinor, eldoran, demal thor, shendarel, olda, gnarra, morrindim, degak'ta, nerim, seran, terron, arad, malinval, sage, hisrudetan, alfadir, stagenheim, tiaov coast, staelia, gorgro, ice wastes, zelfir, dragonhome, dera'dragorim, dera, riftlan wilds"
+          },
         resolve: {
           location: function() {
             return false;
@@ -298,7 +355,10 @@
              controller: 'GeographyController'
            }
         },
-        data: { title: "Geography" },
+        data: { title: "Geography",
+             metadescription: "Geographic and location information for the Elthelas Campaign Setting. Preloaded.",
+             metakeywords: "geography, location, elthelas, nations, cities, elathia, riftlan, atyrea, tu'eldoran, azrea, dormania, gerasalim, kandor, curinor, eldoran, demal thor, shendarel, olda, gnarra, morrindim, degak'ta, nerim, seran, terron, arad, malinval, sage, hisrudetan, alfadir, stagenheim, tiaov coast, staelia, gorgro, ice wastes, zelfir, dragonhome, dera'dragorim, dera, riftlan wilds, preloaded"
+           },
         resolve: {
           type: function($stateParams) {
             return $stateParams.type;
@@ -317,7 +377,10 @@
             templateUrl: '/html/sidebar/about.html'
           }
         },
-        data: { title: 'About the Author' }
+        data: { title: 'About the Author',
+             metadescription: "All about Joseph Harrison, web developer and author of the Elthelas Campaign Setting.",
+             metakeywords: "Joseph Harrison, Joe, elthelas, author, developer, javascript, php"
+           }
     }).state('app.book1', {
         url: 'campaigns/book1',
         views: {
@@ -330,7 +393,10 @@
         },
         data: {
           title: 'Epic of Elthelas Book 1: The Crystal of Light',
-          auth: true
+          auth: true,
+             metadescription: "History and events of the Epic of Elthelas: Book 1, a campaign first run from August 2011 - May 2013.",
+             metakeywords: "crystal, crystal of light, book 1, restricted"
+          
         }
     }).state('app.book4', {
         url: 'campaigns/book4',
@@ -344,7 +410,10 @@
         },
         data: {
           title: 'Epic of Elthelas Book 4: Desperate Measures',
-          auth: true
+          auth: true,
+             metadescription: "Campaign plan and fully runable campaign for the Epic of Elthelas Book 4, detailing the epic conclusion to the Great Orc War. For players level 3-17",
+             metakeywords: "Book 4, desparate measures, level 3, restricted"
+          
         },
     }).state('app.book4playersguide', {
       url: 'campaigns/book4/playersguide',
@@ -358,7 +427,10 @@
       },
       data: {
         title: "Epic of Elthelas Book 4: Desparate Measures - Players Guide",
-        auth: false
+        auth: false,
+             metadescription: "Players guide and starting information for players intending to join the campaign Epic of Elthelas Book 4: Desparate Measures.",
+             metakeywords: "Book 4, players guide, desparate measures, starting information, character options"
+          
       }
     }).state('app.backgrounds', {
         url: 'options/backgrounds',
@@ -372,7 +444,10 @@
           }
         },
         data: {
-          title: 'Backgrounds'
+          title: 'Backgrounds',
+             metadescription: "Backgrounds available to players in the Elthelas Campaign Setting, including adaptations of backgrounds from the Sword Coast Adventurer's Guide.",
+             metakeywords: "backgrounds, elthelas, options, outlander, folk hero, sage, acolyte, urchin, charlatan, far traveler, city watch, investigator, soldier, pirate, sailor, hermit"
+          
         },
     }).state('app.bestiary', {
       url: 'ref/beasts',
@@ -386,7 +461,10 @@
         }
       },
       data: {
-        title: 'Bestiary'
+        title: 'Bestiary',
+             metadescription: "Bestiary for the Elthelas Campaign Setting. Will eventually include typical locations found for each creature (by plane/continent/terrain).",
+             metakeywords: "beast, bestiary, aberration, humanoid, fey, dragon, giant, monstrosity, ooze, plant, fiend, celestial, reference"
+          
       }
     }).state('app.charbuilder', {
       url: 'campaign/charbuilder',
@@ -398,7 +476,10 @@
       },
       data: {
           title: 'Character Builder', 
-          auth: false
+          auth: false,
+             metadescription: "Character builder that incorporates special options from the Elthelas Campaign Setting, build your character from scratch, export it as a json file, and reimport it any time.",
+             metakeywords: "character builder, json, export, import, elthelas, background, class, race, equipment, spells"
+          
         }
     });
     $locationProvider.html5Mode(true);

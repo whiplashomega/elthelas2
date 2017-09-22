@@ -5,7 +5,7 @@
   "description": "",
   "traits": [
     "Size. Genasi are as varied as their mortal parents but are generally built like humans, standing anywhere from 5 feet to over 6 feet tall. Your size is Medium.",
-    "Your base walking speed is 30 feet."
+    "Speed. Your base walking speed is 30 feet."
   ],
   "agepoints": {
     "puberty": 14,
