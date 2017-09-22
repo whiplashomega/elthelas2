@@ -59,4 +59,6 @@
   createFactory('beastProvider', '/json/creatures.json');
   
   createFactory('classProvider', '/json/classes.json');
+  
+  createFactory('backgroundProvider', '/json/backgrounds.json');
 })(jQuery, angular);

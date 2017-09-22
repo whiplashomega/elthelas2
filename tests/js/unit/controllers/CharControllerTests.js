@@ -23,7 +23,7 @@ describe('CharController Tests: ', function() {
     spells = SpellProvider;
     
     spyOn(raceProvider, 'getRaces').and.returnValue(deferred.promise);
-    spyOn(backgroundProvider, 'getBackgrounds').and.returnValue(deferred.promise);
+    spyOn(backgroundProvider, 'getAll').and.returnValue(deferred.promise);
     spyOn(classProvider, 'getAll').and.returnValue(deferred.promise);
     spyOn(ItemProvider, 'getEquipment').and.returnValue(deferred.promise);
     spyOn(ItemProvider, 'getArmor').and.returnValue(deferred.promise);
@@ -45,8 +45,8 @@ describe('CharController Tests: ', function() {
     expect(races.getRaces()).toBeDefined();
   });
   
-  it('getBackgrounds should be defined', function() {
-    expect(backgrounds.getBackgrounds()).toBeDefined();
+  it('backgrounds.getAll should be defined', function() {
+    expect(backgrounds.getAll()).toBeDefined();
   });
   
   it('classProvider.getAll should be defined', function() {

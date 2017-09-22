@@ -448,7 +448,7 @@
       $scope.races = response.data.documents;
     });
     
-    backgroundProvider.getBackgrounds().then(function(response) {
+    backgroundProvider.getAll().then(function(response) {
       $scope.backgrounds = response.data.documents;
     });
     
