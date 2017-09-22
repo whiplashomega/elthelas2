@@ -2,14 +2,14 @@
 
 describe('CharController Tests: ', function() {
   var races, classes, backgrounds, spells, items, $q, deferred, $scope;
-  var resolveRaces = { data: { documents: [{}] } };
+  /*var resolveRaces = { data: { documents: [{}] } };
   var resolveClasses = { data: { documents: [{}] } };
   var resolveBackgrounds = { data: { documents: [{}] } };
   var resolveEquipment = { data: { documents: [{}] }};
   var resolveWeapons = { data: { documents: [{}] }};
   var resolveArmor = { data: { documents: [{}] }};
   var resolveMagicItems = { data: { documents: [{}] }};
-  var resolveSpells = { data: { documents: [{}] }};
+  var resolveSpells = { data: { documents: [{}] }};*/
   beforeEach(module('elthelas'));
   beforeEach(inject(function($controller, _$q_, _$rootScope_, raceProvider, backgroundProvider, classProvider, ItemProvider, SpellProvider) {
     
@@ -38,7 +38,7 @@ describe('CharController Tests: ', function() {
       classProvider: classProvider,
       ItemProvider: ItemProvider,
       SpellProvider: SpellProvider
-    })
+    });
   }));
   
   it('getRaces should be defined', function() {

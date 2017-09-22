@@ -600,7 +600,7 @@ describe('stateProvider configuration testing', function() {
         for(var z = 0; z < keywords.length; z++) {
           expect(states[x].data.metakeywords).not.toBe(keywords[z]);
         }
-        keywords.push(states[x].data.metakeywords)
+        keywords.push(states[x].data.metakeywords);
       }
     }
   });
