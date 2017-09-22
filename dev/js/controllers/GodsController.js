@@ -30,7 +30,7 @@
     };
     
     godProvider.getAll().then(function(response) {
-      $scope.gods = response.data.documents;
+      $scope.gods = response;
       if(god) {
         $scope.loadGod($scope.gods.filter(function(a) {return (a.id === god || a.name === god);})[0].id);
       }

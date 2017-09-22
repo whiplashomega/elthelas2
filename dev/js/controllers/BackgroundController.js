@@ -5,7 +5,7 @@
     $scope.backgrounds = [];
     
     backgroundProvider.getAll().then(function(response) {
-      $scope.backgrounds = response.data.documents;
+      $scope.backgrounds = response;
       for(var x = 0; x < $scope.backgrounds.length; x++) {
         $scope.backgrounds[x].isCollapsed = true;
       }

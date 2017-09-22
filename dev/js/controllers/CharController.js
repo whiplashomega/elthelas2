@@ -449,7 +449,7 @@
     });
     
     backgroundProvider.getAll().then(function(response) {
-      $scope.backgrounds = response.data.documents;
+      $scope.backgrounds = response;
     });
     
     classProvider.getAll().then(function(response) {

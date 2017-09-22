@@ -11,7 +11,7 @@
     
     $scope.history = [];
     historyProvider.getAll().then(function(response) {
-      $scope.history = response.data.documents;
+      $scope.history = response;
       var data = {
         'title': {
           'text': {
