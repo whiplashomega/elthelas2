@@ -12,7 +12,7 @@ describe('God Controller Tests', function() {
     deferred = _$q_.defer();
     service = godProvider;
     
-    spyOn(godProvider, 'getGods').and.returnValue(deferred.promise);
+    spyOn(godProvider, 'getAll').and.returnValue(deferred.promise);
     
     $controller('GodsController', {
       $scope: $scope,
@@ -22,7 +22,7 @@ describe('God Controller Tests', function() {
   }));
   
   it('should be defined', function() {
-    expect(service.getGods()).toBeDefined();
+    expect(service.getAll()).toBeDefined();
   });
   
   it('should resolve a promise', function() {

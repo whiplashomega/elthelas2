@@ -1,7 +1,7 @@
 /* globals angular, jQuery */
 (function(ng, $) {
-  ng.module("elthelas").controller("HistoryController", ['marked', '$scope', 'HistoryProvider', '$uibModal', 'event',
-  function(marked, $scope, HistoryProvider, $uibModal, event) {
+  ng.module("elthelas").controller("HistoryController", ['marked', '$scope', 'historyProvider', '$uibModal', 'event',
+  function(marked, $scope, historyProvider, $uibModal, event) {
     $scope.options = {
       language: 'el',
       layout: 'portrait',
@@ -10,7 +10,7 @@
     };
     
     $scope.history = [];
-    HistoryProvider.getHistory().then(function(response) {
+    historyProvider.getAll().then(function(response) {
       $scope.history = response.data.documents;
       var data = {
         'title': {

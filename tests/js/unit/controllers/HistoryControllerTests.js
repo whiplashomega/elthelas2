@@ -21,24 +21,24 @@ describe("History Controller Tests", function() {
       }
     }]
   }};
-  beforeEach(inject(function($controller, _$q_, _$rootScope_, HistoryProvider){
+  beforeEach(inject(function($controller, _$q_, _$rootScope_, historyProvider){
     $q = _$q_;
     $scope = _$rootScope_.$new();
     $scope.timeline = { setData: function() {}, goTo: function() {}};
     deferred = _$q_.defer();
-    service = HistoryProvider;
+    service = historyProvider;
     
-    spyOn(HistoryProvider, 'getHistory').and.returnValue(deferred.promise);
+    spyOn(historyProvider, 'getAll').and.returnValue(deferred.promise);
     
     controller = $controller('HistoryController', {
       $scope: $scope,
-      HistoryProvider: HistoryProvider,
+      historyProvider: historyProvider,
       event: false
     });
   }));
   
   it('factory function should be defined', function() {
-    expect(service.getHistory()).toBeDefined();
+    expect(service.getAll()).toBeDefined();
   });
   
   it('factory function should resolve a promise', function() {

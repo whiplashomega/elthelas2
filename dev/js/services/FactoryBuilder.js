@@ -61,4 +61,10 @@
   createFactory('classProvider', '/json/classes.json');
   
   createFactory('backgroundProvider', '/json/backgrounds.json');
+  
+  createFactory('divineProvider', '/json/divines.json');
+  
+  createFactory('godProvider', '/json/gods.json');
+  
+  createFactory('historyProvider', '/json/history.json');
 })(jQuery, angular);

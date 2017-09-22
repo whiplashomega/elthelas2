@@ -12,7 +12,7 @@ describe('Divine Controller Tests', function() {
     deferred = _$q_.defer();
     service = divineProvider;
     
-    spyOn(divineProvider, 'getDivines').and.returnValue(deferred.promise);
+    spyOn(divineProvider, 'getAll').and.returnValue(deferred.promise);
     
     $controller('DivineController', {
       $scope: $scope,
@@ -21,7 +21,7 @@ describe('Divine Controller Tests', function() {
   }));
   
   it('should be defined', function() {
-    expect(service.getDivines()).toBeDefined();
+    expect(service.getAll()).toBeDefined();
   });
   
   it('should resolve a promise', function() {

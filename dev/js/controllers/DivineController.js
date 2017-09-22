@@ -22,7 +22,7 @@
       })[0];
     };
     
-    divineProvider.getDivines().then(function(response) {
+    divineProvider.getAll().then(function(response) {
       $scope.divines = response.data.documents;
       for(var x = 0; x < $scope.divines.length; x++) {
         if($scope.types.indexOf($scope.divines[x].type) === -1) {
