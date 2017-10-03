@@ -2,7 +2,7 @@
   "id": "aasimar",
   "name": "Aasimar",
   "singular": "Aasimar",
-  "description": "\n\nAasimar are the distant descendents of angels and gods. In Elthelas, there are 3 main subgroups of Aasimar, there is the standard Celestial Aasimar, descended from angels, planetars, guardinals, or eladrin. There are the descendents of Molton, god of fire and lust, who bears many children with his mortal worshippers. Lastly, there are the descendents of the sorceron, who have long since disappeared from the world, but whose mastery over magic lives in their distant descendents.\n\n",
+  "description": "\n\nAasimar are the distant descendents of angels and gods. ",
   "traits": [
     "Darkvision: 60 ft.",
     "Speed: Your base walking speed is 30 ft.",
