@@ -30,6 +30,7 @@
     $scope.spells;
     $scope.magicItems = [];
     $scope.armor = [];
+    $scope.gear = [];
     
     function createDataTable(selector, data, columns, postInit) {
       $(selector + ' tfoot th').each(function() {
@@ -58,6 +59,16 @@
     }
     
     this.init = function() {
+      ItemProvider.getEquipment().then(function(response) {
+        for(var e = 0; e < response.data.length; e++) {
+          $scope.gear.push([
+            response.data[e].Item,
+            response.data[e].Cost,
+            response.data[e].Weight
+          ]);
+        }
+        createDataTable("#geartable", $scope.gear, [{ title: "Item" }, {title: "Cost (gp)"}, {title: "weight"}], function() {});
+      });
       SpellProvider.getSpells().then(function(response) {
         $scope.spells = response.data.documents;
         
