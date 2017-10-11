@@ -11,7 +11,7 @@
 </p>
 <div id="raceDiv" data-ng-cloak>
   <h2>{{currentRace.name}}</h2>
-  <div marked="currentRace.description" data-ng-hide="currentRace.subraces.length === 1"></div>
+  <div marked="currentRace.description"></div>
   <div class="subrace" data-ng-repeat="subrace in currentRace.subraces">
     <h3 data-ng-hide="subrace.name === 'default'">{{subrace.name}}</h3>
     

@@ -2,7 +2,7 @@
   "id": "childofmolton",
   "name": "Child of Molton",
   "singular": "Child of Molton",
-  "description": "hide",
+  "description": "\n\nMolton, God of Fire and Lust, has long made it a habit of dallying with mortal women from among his worshippers. Those willing worshippers whom he selects are invited across the planes into his palace, where they report on returning having the best sex of their lives, returning with enough riches to set them and the resulting child up for the rest of their lives. His fertility knows no bounds, and even the most infertile women have found themselves with child after such encounters. The resulting children are usually still mostly human (and usually female, although not always), but find themselves infused with the essence of fire. They are renowned for their lustful ways (sometimes unfairly) as well as their affinity for fire, music, and dance. Children of Molton look mostly like their mothers parentage, but are born with hair in bright fiery colors of red, orange, yellow, blue or green and golden skin. They are also invariably beautiful, their skin without unnatural blemishes, faces well balanced, and a form that is lithe and graceful.",
   "traits": [
     "Ability Score Increase: Your Dexterity score increases by 2 and your Charisma score increases by 2.",
     "Size: Children of Molton are generally similar to elves or humans in height, weight, and build. Your size is medium.",
@@ -24,7 +24,7 @@
     {
       "id": "default",
       "name": "default",
-      "description": "\n\nMolton, God of Fire and Lust, has long made it a habit of dallying with mortal women from among his worshippers. Those willing worshippers whom he selects are invited across the planes into his palace, where they report on returning having the best sex of their lives, returning with enough riches to set them and the resulting child up for the rest of their lives. His fertility knows no bounds, and even the most infertile women have found themselves with child after such encounters. The resulting children are usually still mostly human (and usually female, although not always), but find themselves infused with the essence of fire. They are renowned for their lustful ways (sometimes unfairly) as well as their affinity for fire, music, and dance. Children of Molton look mostly like their mothers parentage, but are born with hair in bright fiery colors of red, orange, yellow, blue or green and golden skin. They are also invariably beautiful, their skin without unnatural blemishes, faces well balanced, and a form that is lithe and graceful.",
+      "description": "",
       "traits": [],
       "image": "/images/races/childofmolton.jpg",
       "averageheight": 67,
