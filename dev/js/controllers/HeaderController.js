@@ -1,6 +1,6 @@
 /* global angular */
 /* global jQuery */
-/* global document */
+/* global document, ga */
 (function(ng, $, doc) {
     ng.module('elthelas').controller('HeaderController', ['$scope', '$state', '$rootScope', '$uibModal', '$document', 'AuthenticationProvider',
     function($scope, $state, $rootScope, $uibModal, $document, AuthenticationProvider) {
@@ -13,6 +13,8 @@
               $scope.message = false;
               $scope.$apply();
             }, 5000);
+          } else {
+            ga('send', 'pageview');
           }
         });
         //Google Custom Search
