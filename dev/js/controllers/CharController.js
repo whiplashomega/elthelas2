@@ -275,16 +275,26 @@
         return this.str * 15 * (this.powerfulbuild ? 1.5 : 1);
       },
       spellsKnown: [],
-      save: function() {
+      validate: function() {
         if(this.name === "") {
           alert("cannot save character without name");
-          throw Error("cannot save character without name");
+          return false;
         }
-        var text = JSON.stringify(this);
-        var a = document.createElement('a');
-        a.setAttribute('href', 'data:text/plain;charset=utf-u,'+encodeURIComponent(text));
-        a.setAttribute('download', this.name + '.json');
-        a.click();
+        return true;
+      },
+      save: function() {
+        if(this.validate()) {
+          var text = JSON.stringify(this);
+          var a = document.createElement('a');
+          a.setAttribute('href', 'data:text/plain;charset=utf-u,'+encodeURIComponent(text));
+          a.setAttribute('download', this.name + '.json');
+          a.click();
+        }
+      },
+      savedrive: function() {
+        if(this.validate()) {
+          var text = JSON.stringify(this);
+        }
       },
       load: function() {
         var f = document.getElementById('fileload').files[0], r = new FileReader();

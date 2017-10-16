@@ -42,7 +42,10 @@
       <label style="width:100%;"><input id="charname" type="text" class="form-control" data-ng-model="character.name" />Character Name</label>
       <label style="width:100%;"><input type="file" class="form-control" id="fileload" /></label>
       <div class="btn-group" style="width:100%;">
-        <input type="button" class="btn btn-success" value="Load" ng-click="character.load()" /><input type="button" class="btn btn-primary" value="Save" ng-click="character.save()" />
+        <input type="button" class="btn btn-success" value="Load" ng-click="character.load()" />
+        <input type="button" class="btn btn-primary" value="Save" ng-click="character.save()" />
+        <button id="authorize-button" class="btn" style="display: none;">Authorize</button>
+        <button id="signout-button" class="btn" style="display: none;">Sign Out</button>
       </div>
     </div>
     
@@ -544,4 +547,5 @@
       <button class="btn btn-success" data-ng-click="character.addJournal()">Add Entry</button>
     </div>
   </div>
+
 </div>
