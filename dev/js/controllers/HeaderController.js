@@ -13,8 +13,6 @@
               $scope.message = false;
               $scope.$apply();
             }, 5000);
-          } else {
-            ga('send', 'pageview', '/' + $state.current.url);
           }
         });
         //Google Custom Search
@@ -33,6 +31,7 @@
           $scope.title = $state.current.data.title;
           $scope.metadescription = $state.current.data.metadescription;
           $scope.metakeywords = $state.current.data.metakeywords;
+          ga('send', 'pageview', '/' + $state.current.url);
         });
         AuthenticationProvider.LoadFromCookies();
         $scope.globals = $rootScope.globals;
