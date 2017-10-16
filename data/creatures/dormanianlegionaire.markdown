@@ -5,7 +5,7 @@ date: 2016-02-29
 tags: [medium, humanoid, cr2]
 ---
 
-**Medium humanoid (human), Lawful Neutral**
+**Medium humanoid (human), lawful neutral**
 
 **Armor Class** 17 (splint mail)
 
