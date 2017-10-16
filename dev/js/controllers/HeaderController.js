@@ -14,7 +14,7 @@
               $scope.$apply();
             }, 5000);
           } else {
-            ga('send', 'pageview');
+            ga('send', 'pageview', '/' + $state.current.url);
           }
         });
         //Google Custom Search
