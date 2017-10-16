@@ -2,6 +2,17 @@
 /* global jQuery */
 /* global document, ga */
 (function(ng, $, doc) {
+    ng.module('elthelas').controller('HeadController', ['$scope', '$state', function($scope, $state) {
+      $scope.title = $state.current.data.title;
+      $scope.metadescription = $state.current.data.metadescription;
+      $scope.metakeywords = $state.current.data.metakeywords;
+      $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams, options){ 
+        $scope.title = $state.current.data.title;
+        $scope.metadescription = $state.current.data.metadescription;
+        $scope.metakeywords = $state.current.data.metakeywords;
+        ga('send', 'pageview', '/' + $state.current.url);
+      });
+    }]);
     ng.module('elthelas').controller('HeaderController', ['$scope', '$state', '$rootScope', '$uibModal', '$document', 'AuthenticationProvider',
     function($scope, $state, $rootScope, $uibModal, $document, AuthenticationProvider) {
         $rootScope.$on('$viewContentLoading', function(event) {
@@ -24,15 +35,7 @@
           '//www.google.com/cse/cse.js?cx=' + cx;
         var s = doc.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(gcse, s);
-        $scope.title = $state.current.data.title;
-        $scope.metadescription = $state.current.data.metadescription;
-        $scope.metakeywords = $state.current.data.metakeywords;
-        $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams, options){ 
-          $scope.title = $state.current.data.title;
-          $scope.metadescription = $state.current.data.metadescription;
-          $scope.metakeywords = $state.current.data.metakeywords;
-          ga('send', 'pageview', '/' + $state.current.url);
-        });
+
         AuthenticationProvider.LoadFromCookies();
         $scope.globals = $rootScope.globals;
         $scope.message = false;

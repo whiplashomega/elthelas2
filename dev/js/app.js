@@ -23,7 +23,7 @@
                },
                'head': {
                    templateUrl: '/html/head/head.html',
-                   controller: 'HeaderController'
+                   controller: 'HeadController'
                },
                'sidebar': {
                    templateUrl: '/html/empty.html'
