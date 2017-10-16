@@ -26,6 +26,9 @@
             }, 5000);
           }
         });
+        $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams, options){ 
+          $scope.title = $state.current.data.title;
+        });
         //Google Custom Search
         var cx = '002019895859863268942:tbtmwpd5jy8';
         var gcse = doc.createElement('script');
