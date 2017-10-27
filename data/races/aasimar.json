@@ -2,7 +2,7 @@
   "id": "aasimar",
   "name": "Aasimar",
   "singular": "Aasimar",
-  "description": "\n\nAasimar are the distant descendents of angels and gods. ",
+  "description": "\n\nAasimar are the distant descendents of angels and gods. In many societies the birth of an aasimar is heralded as a grand event. Aasimar are incredibly rare, and don't have a unique culture of their own, but their personality is invariably altered by their divine forebear. The expectation that they will be better than their peers is strong, and can be overwhelming to some, while to others it is a call to true greatness.",
   "traits": [
     "Darkvision: 60 ft.",
     "Speed: Your base walking speed is 30 ft.",

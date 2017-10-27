@@ -9,7 +9,7 @@
     "Speed: Your base walking speed is 30 ft.",
     "Natural Spellcaster: Choose one cantrip from the wizard spell list, you can cast this cantrip at will using Intelligence as your spellcasting ability. Additionally choose one 1st level spell from the wizard spell list, you know that spell inherently, however, once you cast it you must complete a short rest before you can cast it again.",
     "Master of the Arcane: You have advantage on Intelligence (Arcana) checks.",
-    "Ancient Blood: your blood connects you to a people long dead, and all of their descendants connecting to you. Occassionally, in your dreams, you get visions of ages long past and worlds beyond this one. Once during each long rest you can make an intelligence (history) check related to some event that happened long ago, so long as it is possible that some ancestor of yours may have been present at the event. On a success you get a vision of what happened at that event and can recall what happened after you wake, from the perspective of your distant ancestor."
+    "Disease Resistance: You have advantage on saving throws against disease."
   ],
   "agepoints": {
     "puberty": 12,
