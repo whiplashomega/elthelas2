@@ -99,6 +99,17 @@
       removeClass: function(charclass) {
         this.classes.splice(this.classes.indexOf(charclass), 1);
       },
+      preparedSpells: function(charclass) {
+        var castStat = 0;
+        if(charclass.name === "Wizard" || charclass.name === "Factotum" || charclass.name === "Artificer") {
+          var castStat = this.intmod();
+        } else if(charclass.name === "Cleric" || charclass.name === "Druid") {
+          var castStat = this.wismod();
+        } else if(charclass.name === "Paladin") {
+          var castStat = this.chamod();
+        }
+        return Math.max(Math.floor(charclass.selsubclass.castermult * charclass.level) + castStat, 1);
+      },
       spellslots: [0, 0, 0, 0, 0, 0, 0, 0, 0],
       spellslotsbonus: [0, 0, 0, 0, 0, 0, 0, 0, 0],
       race: { subraces: [{ id: "default" }] },
@@ -315,6 +326,9 @@
         var casterLevel = 0;
         var classcounter = 0;
         for(var z = 0; z < this.classes.length; z++) {
+          if(typeof this.classes[z].selsubclass === "undefined") {
+            this.classes[z].selsubclass = { castermult: 0 };
+          }
             var thisClassCasterLevel = this.classes[z].level * this.classes[z].selsubclass.castermult;
             if(thisClassCasterLevel >= 1) {
               classcounter++;

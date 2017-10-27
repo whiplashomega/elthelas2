@@ -63,3 +63,6 @@ Cantrips (at will): eldritch blast (range 300 ft., +3 bonus to each damage roll)
 
 ***Scimitar (Yuan-ti Form Only).*** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6+3) slashing damage.
 
+#### Yuan-ti in Elthelas
+
+The Yuan-ti live in the deep jungles of Gnarra, and the dry wastelands of the Desert of Despair.  Their once mighty empires were toppled by the Sorceron long before the Gods War reshaped the world, and they have lived as exiles to society ever since, kept in check by powerful enemies.  In Gnarra they often strike out at the Faelin, hoping to steal the power of Gaian to raise themselves up as new Gods, while in Malinval they constantly plot against the orcs, servants of the Prince of Fiends, the very Sorceron who organized their destruction at the behest of Mat'raktha.

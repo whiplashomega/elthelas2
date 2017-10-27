@@ -63,3 +63,6 @@ At will: animal friendship (snakes only)
 
 ***Flurry of Bites.*** Melee Weapon Attack: +10 to hit, reach 10 ft., one creature. Hit: 27 (6d6+6) piercing damage plus 14 (4d6) poison damage.
 
+#### Yuan-ti in Elthelas
+
+The Yuan-ti live in the deep jungles of Gnarra, and the dry wastelands of the Desert of Despair.  Their once mighty empires were toppled by the Sorceron long before the Gods War reshaped the world, and they have lived as exiles to society ever since, kept in check by powerful enemies.  In Gnarra they often strike out at the Faelin, hoping to steal the power of Gaian to raise themselves up as new Gods, while in Malinval they constantly plot against the orcs, servants of the Prince of Fiends, the very Sorceron who organized their destruction at the behest of Mat'raktha.

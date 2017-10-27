@@ -208,7 +208,22 @@ gulp.task('creaturesjson', function() {
     pullrow(/\*\*Condition Immunities\*\*/, "conditionimmunities");
     pullrow(/\*\*Languages\*\*/, "languages");
     pullrow(/\*\*Damage Resistances\*\*/, "damageresistances");
+    pullrow(/\*\*Locations\*\*/, "locations");
+    pullrow(/\*\*LatLong\*\*/, "latlong");
     
+    if(creature.latlong) {
+      creature.latlong = creature.latlong.split(';');
+      creature.latlong = creature.latlong.map(function(item) {
+        var temp = item.split(',');
+        return temp.map(function(num) {
+          return Number(num);
+        });
+      });
+      console.log(creature.name + ": " + JSON.stringify(creature.latlong));
+    }
+    if(creature.languages) {
+      creature.languages = creature.languages.replace("Common", "First language of home country");
+    }
     //challenge rating has already been pulled so we just need to identify and remove the row.
     var challengerow = filearray.filter(function(a) {
       return /\*\*Challenge/.test(a);

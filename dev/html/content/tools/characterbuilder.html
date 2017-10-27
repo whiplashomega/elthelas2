@@ -393,8 +393,10 @@
               </tbody>
             </table>
             <h4>Spells Known</h4>
-            <p>
-              <strong>Number Prepared: {{character.numPrepared()}}</strong>
+            <p data-ng-repeat="charclass in character.classes">
+              <strong>{{charclass.name}}</strong><br />
+              <strong>Number Prepared: {{character.numPrepared(charclass) }}</strong><br />
+              <strong>Max Prepared: {{ character.preparedSpells(charclass) }}</strong>
             </p>
             <table class="table" id="spellTable">
               <thead>
@@ -431,6 +433,7 @@
                   <option ng-value="true">Yes</option>
                   <option ng-value="false">No</option>
                 </select></th>
+                <th><a ng-click="spellOrder = 'classname'; spellDir = !spellDir;">Class<span data-ng-if="spellOrder === 'classname' && spellDir === true">&#8963;</span><span data-ng-if="spellOrder === 'classname' && spellDir === false">&#8964;</span></a><br /><select data-ng-model="classValue" data-ng-options="charclass.name as charclass.name for charclass in character.classes"></select></th>
                   <th>Del</th>
                 </tr>
               </thead>
@@ -440,6 +443,7 @@
                   <td>{{spell.level}}</td>
                   <td>{{spell.school}}</td>
                   <td><input type="checkbox" data-ng-hide="spell.level === 'cantrip'" data-ng-model="spell.prepared" /></td>
+                  <td><select data-ng-model="spell.classname" data-ng-options="charclass.name as charclass.name for charclass in character.classes"></select></td>
                   <td><button ng-click="removeSpell(spell)" class="btn btn-danger">&times;</button></td>
                 </tr>
               </tbody>

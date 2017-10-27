@@ -59,3 +59,6 @@ Cantrips (at will): eldritch blast (range 300 ft., +3 bonus to each damage roll)
 
 ***Merrshaulk's Slumber (1/Day).*** The yuan-ti targets up to five creatures that it can see within 60 feet of it. Each target must succeed on a DC 13 Constitution saving throw or fall into a magical sleep and be unconscious for 10 minutes. A sleeping target awakens if it takes damage or if someone uses an action to shake or slap it awake. This magical sleep has no effect on a creature immune to being charmed.
 
+#### Yuan-ti in Elthelas
+
+The Yuan-ti live in the deep jungles of Gnarra, and the dry wastelands of the Desert of Despair.  Their once mighty empires were toppled by the Sorceron long before the Gods War reshaped the world, and they have lived as exiles to society ever since, kept in check by powerful enemies.  In Gnarra they often strike out at the Faelin, hoping to steal the power of Gaian to raise themselves up as new Gods, while in Malinval they constantly plot against the orcs, servants of the Prince of Fiends, the very Sorceron who organized their destruction at the behest of Mat'raktha.

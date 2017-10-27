@@ -6,8 +6,14 @@
   elthelas.run(['$state', '$stateParams',
     function($state, $stateParams) {
     //this solves page refresh and getting back to state
-  }]);    
-  elthelas.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
+  }]);
+  elthelas.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', 'markedProvider', function($stateProvider, $urlRouterProvider, $locationProvider, markedProvider) {
+    markedProvider.setOptions({
+      gfm: true,
+      tables: true,
+      breaks: true,
+      pedantic: true
+    });
     $stateProvider.state('app', {
            url:'/',
            views: {
@@ -402,11 +408,9 @@
         url: 'campaigns/book4',
         views: {
           'content@': {
-            templateUrl: '/html/content/campaigns/book4.html'
+            templateUrl: '/html/content/campaigns/book4.html',
+            controller: 'Book4Controller'
           },
-          'sidebar@': {
-            templateUrl: '/html/sidebar/campaign.html'
-          }
         },
         data: {
           title: 'Epic of Elthelas Book 4: Desperate Measures',

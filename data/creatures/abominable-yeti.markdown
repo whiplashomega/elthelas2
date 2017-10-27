@@ -27,6 +27,10 @@ tags: [huge, monstrosity, cr9, monster-manual]
 
 **Challenge** 9 (5,000 XP)
 
+**Locations** Ice Wastes, northern Curinor
+
+**LatLong** -66.23145747862573, -85.2264404296875; 53.64463782485651, 54.3438720703125
+
 ***Fear of Fire.*** If the yeti takes fire damage, it has disadvantage on attack rolls and ability checks until the end of its next turn.
 
 ***Keen Smell.*** The yeti has advantage on Wisdom (Perception) checks that rely on smell.

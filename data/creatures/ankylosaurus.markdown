@@ -19,6 +19,10 @@ tags: [huge, beast, cr3, monster-manual]
 
 **Challenge** 3 (700 XP)
 
+**Locations** Plains of Demal Thor
+
+**LatLong** 11.005904459659451, 45.37902832031251
+
 **Actions**
 
 ***Tail.*** Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 18 (4d6 + 4) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.

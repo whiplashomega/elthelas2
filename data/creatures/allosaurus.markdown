@@ -21,6 +21,10 @@ tags: [large, beast, cr2, monster-manual]
 
 **Challenge** 2 (450 XP)
 
+**Locations** Nerim
+
+**LatLong** -49.95121990866204, 103.21105957031251
+
 ***Pounce.*** If the allosaurus moves at least 30 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the allosaurus can make one bite attack against it as a bonus action.
 
 **Actions**

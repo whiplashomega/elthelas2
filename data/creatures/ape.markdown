@@ -23,6 +23,10 @@ tags: [medium, beast, cr1/2, monster-manual]
 
 **Actions**
 
+**Locations** Eldoran, Gnarra, Dera'Dragorim, and Eastern Riftlan
+
+**LatLong** 30.751277776257812, -8.234252929687502; 18.145851771694467, 25.515747070312504; -3.864254615721396, -23.703002929687504; 23.241346102386135, -68.35144042968751
+
 ***Multiattack.*** The ape makes two fist attacks.
 
 ***Fist.*** Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.

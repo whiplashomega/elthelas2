@@ -23,6 +23,10 @@ tags: [medium, humanoid, cr1/4, monster-manual]
 
 **Challenge** 1/4 (50 XP)
 
+**Locations** Scattered tribes in the high mountains of stagenheim.
+
+**LatLong** -46.195042108660154, -57.27722167968751
+
 ***Dive Attack.*** If the aarakocra is flying and dives at least 30 ft. straight toward a target and then hits it with a melee weapon attack, the attack deals an extra 3 (1d6) damage to the target.
 
 **Actions**

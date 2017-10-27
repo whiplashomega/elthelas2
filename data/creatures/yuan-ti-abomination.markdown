@@ -53,3 +53,6 @@ At will: animal friendship (snakes only)
 
 ***Longbow (Abomination Form Only).*** Ranged Weapon Attack: +6 to hit, range 150/600 ft., one target. Hit: 12 (2d8 + 3) piercing damage plus 10 (3d6) poison damage.
 
+#### Yuan-ti in Elthelas
+
+The Yuan-ti live in the deep jungles of Gnarra, and the dry wastelands of the Desert of Despair.  Their once mighty empires were toppled by the Sorceron long before the Gods War reshaped the world, and they have lived as exiles to society ever since, kept in check by powerful enemies.  In Gnarra they often strike out at the Faelin, hoping to steal the power of Gaian to raise themselves up as new Gods, while in Malinval they constantly plot against the orcs, servants of the Prince of Fiends, the very Sorceron who organized their destruction at the behest of Mat'raktha.
