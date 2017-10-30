@@ -37,3 +37,5 @@ tags: [medium, humanoid, cr1/4, monster-manual]
 
 ***Summon Air Elemental.*** Five aarakocra within 30 feet of each other can magically summon an air elemental. Each of the five must use its action and movement on three consecutive turns to perform an aerial dance and must maintain concentration while doing so (as if concentrating on a spell). When all five have finished their third turn of the dance, the elemental appears in an unoccupied space within 60 feet of them. It is friendly toward them and obeys their spoken commands. It remains for 1 hour, until it or all its summoners die, or until any of its summoners dismisses it as a bonus action. A summoner can't perform the dance again until it finishes a short rest. When the elemental returns to the Elemental Plane of Air, any aarakocra within 5 feet of it can return with it.
 
+#### Aarakocra in Elthelas
+Aarakocra do not have sizable settlements in the material plane of Elthelas, but rather are denizens of the plane of air.
