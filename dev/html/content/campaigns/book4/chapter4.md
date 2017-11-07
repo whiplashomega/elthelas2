@@ -11,7 +11,6 @@ The orc army that recently attacked Northport is now moving east into the sword 
 
 **Amathera's Shield Orders:** It is the common people hiding in the mountains we are most concerned about, more than queens and armies. Thousands of those fleeing the orcs have reportedly taken refuge with Queen Organa's army in the mountains. Make sure those people make it out alive. -Malia Demonslayer
 
-
 **Artificer's of Mechanus Orders:** I knew Jim once, before he went off his rocker. He used to specialize in transmutation in fact, but his mind was altered against his will. Make sure Jim makes it back to Cur'Estan, it would be nice to see him again. -Margo
 
 **Black Sun Orders:** While you are in Strovenguard, word is that Queen Organa left behind some great treasure hidden in the castle before the Orcs moved in that has never been found. Get into the castle and search for the treasure. Maybe that divining wizard can help you find it. There was a painting of Queen Organa's father that used to hang above her throne in the great hall. The orcs never found it, but it would have been too big to transport. Have the wizard scry on that, and then bring me the painting. The rest of the treasure is yours. -Kyman Hexhammer
