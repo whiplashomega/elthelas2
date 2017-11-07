@@ -57,6 +57,8 @@
       $scope.creatures = response;
       
       var creatureTableData = [];
+      var acTot = 0;
+      var numCre = 0;
       for(var x = 0; x < $scope.creatures.length; x++) {
         var id = 'creature' + x;
         var combinedType = $scope.creatures[x].type;

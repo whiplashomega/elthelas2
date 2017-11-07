@@ -28,7 +28,7 @@ The orc army that recently attacked Northport is now moving east into the sword 
 
 **Keepers of the Grove Orders:** Jim Jimmy Jim Jim Jim's mind has been touched by an unnatural force, and through him it's influence continues to spread in the world. See that his life is ended, then see that his body is given the heroes burial it deserves. His God will shepherd his soul in the afterlife. -via sending
 
-**Lords of the Rising Dawn Orders:** The orcs have repurposed a number of warehouses in Strovenguard to hold material for their armies. Discover which warehouses they are using and then burn them to the ground. -Duke James Lightbringer
+**Lords of the Rising Dawn Orders:** The orcs have turned Strovenguard into an internment camp, and no orc there is more guilty of this crime than the Warlords placed in charge of the city, kill them. If you can, make it look like infighting among themselves. -Duke James Lightbringer
 
 **Maker's of Legend Orders:** Why are we having the Gerasaline armies retreat? They should be fighting to the last in dramatic fashion! Convince the Queen to face the orcs directly, and then write me an awesome song about it! -Haera Oelefros
 
@@ -94,54 +94,55 @@ The Military District is dominated by what used to be living quarters for soldie
 
 The eastern portion of New Town is dominated by manufacturies and artisans.
 
-
-### Jim Jimmy Jim Jim Jim
+### Important People in Strovenguard
 
 <aside id="jimjimmyjim" class="card col-sm-6 pull-right">
-
-<h3 id="jimjimmyjimjimjim">Jim Jimmy Jim Jim Jim</h3>
-
-<h4>Small humanoid (gnome), chaotic good</h4>
-
-<p>
-<strong>Hit Points:</strong> <br />
-<strong>AC:</strong> <br />
-<strong>Speed:</strong>  <br />
-</p>
-
-<table class="table">
-<tbody>
-<tr>
-<th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-</tr>
-<tr>
-<td>8 (-1)</td><td>16 (+3)</td><td>16 (+3)</td><td>22 (+6)</td><td>6 (-2)</td><td>6 (-2)</td>
-</tr>
-</tbody>
-</table>
-
-<p>
-<strong>Saving Throws:</strong> Intelligence +10, Wisdom +2  <br />
-<strong>Skills:</strong> Arcana +10, Religion +10, History +10, Perception +6  <br />
-<strong>Senses:</strong> Darkvision 60 ft, passive perception 12  <br />
-<strong>Languages:</strong> morrind, stagen, staelic, orc, imperial  <br />
-<strong>Challenge:</strong> 11
-</p>
-
-<p>
-<strong>Spellcasting:</strong> Jim Jimmy Jim Jim Jim is an 11th level spellcaster. His attack bonus for spells is +10, and his save DC is 18\. He has the following spells prepared: Mage Armor, Shield, Levitate, Alter Self, Locate Object, Haste, See Invisibility, Clairvoyance, Polymorph, Tongues, Locate Creature, Arcane Eye, Animate Objects, Scrying, True Seeing
-</p>
-<p>
-<strong>Ritual Casting:</strong> Jim Jimmy Jim Jim Jim can cast the following spells as rituals: Alarm, Comprehend Languages, Detect Magic, Identify, Tenser's Floating Disk, Unseen Servant, Feign Death, Leomund's Tiny Hut, Water Breathing, Contact Other Plane, Rary's Telepathic Bond
-</p>
-<p>
-<strong>Cantrips:</strong> Jim Jimmy Jim Jim Jim knows the following cantrips that he can cast at will: fire bolt, mage hand, prestidigitation, minor illusion, frost bite
-</p>
-<h4>Actions</h4>
-<p>
-</strong>Dagger:</strong> Melee Weapon Attack, +7 (1d4+3)
-</p>
+  
+  <h3 id="jimjimmyjimjimjim">Jim Jimmy Jim Jim Jim</h3>
+  
+  <h4>Small humanoid (gnome), chaotic good</h4>
+  
+  <p>
+  <strong>Hit Points:</strong> <br />
+  <strong>AC:</strong> <br />
+  <strong>Speed:</strong>  <br />
+  </p>
+  
+  <table class="table">
+  <tbody>
+  <tr>
+  <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
+  </tr>
+  <tr>
+  <td>8 (-1)</td><td>16 (+3)</td><td>16 (+3)</td><td>22 (+6)</td><td>6 (-2)</td><td>6 (-2)</td>
+  </tr>
+  </tbody>
+  </table>
+  
+  <p>
+  <strong>Saving Throws:</strong> Intelligence +10, Wisdom +2  <br />
+  <strong>Skills:</strong> Arcana +10, Religion +10, History +10, Perception +6  <br />
+  <strong>Senses:</strong> Darkvision 60 ft, passive perception 12  <br />
+  <strong>Languages:</strong> morrind, stagen, staelic, orc, imperial  <br />
+  <strong>Challenge:</strong> 11
+  </p>
+  
+  <p>
+  <strong>Spellcasting:</strong> Jim Jimmy Jim Jim Jim is an 11th level spellcaster. His attack bonus for spells is +10, and his save DC is 18\. He has the following spells prepared: Mage Armor, Shield, Levitate, Alter Self, Locate Object, Haste, See Invisibility, Clairvoyance, Polymorph, Tongues, Locate Creature, Arcane Eye, Animate Objects, Scrying, True Seeing
+  </p>
+  <p>
+  <strong>Ritual Casting:</strong> Jim Jimmy Jim Jim Jim can cast the following spells as rituals: Alarm, Comprehend Languages, Detect Magic, Identify, Tenser's Floating Disk, Unseen Servant, Feign Death, Leomund's Tiny Hut, Water Breathing, Contact Other Plane, Rary's Telepathic Bond
+  </p>
+  <p>
+  <strong>Cantrips:</strong> Jim Jimmy Jim Jim Jim knows the following cantrips that he can cast at will: fire bolt, mage hand, prestidigitation, minor illusion, frost bite
+  </p>
+  <h4>Actions</h4>
+  <p>
+  </strong>Dagger:</strong> Melee Weapon Attack, +7 (1d4+3)
+  </p>
 </aside>
+
+##### Jim Jimmy Jim Jim Jim
 
 Jim Jimmy Jim Jim Jim is in Strovenguard, and once in the city he is not hard to find. Every one in town knows of him because he spends every day just outside the gates of the palace ranting at anyone who passes by and generally making a nuisance of himself. He has so far avoided unwanted attention by the orcs, but no one is really sure how since the castle is their base of operations and presumably they pass by him constantly.
 
@@ -157,7 +158,229 @@ Jim is not willing to help the party. He will rebuff them initially. In order to
 
 If convinced to help, Jim will attempt to scry on what the players ask him to, but only 1 thing per day.
 
-### Warehouses
+<aside class="card col-sm-6 pull-right">
+  <h3>Warlord Rol the Unsightly</h3>
+    <h4>Medium humanoid (orc), Lawful Evil</h4>
+
+  <p>
+    <strong>Hit Points:</strong> 96<br />
+    <strong>AC:</strong> 19<br />
+    <strong>Speed:</strong> 30 ft<br />
+  </p>
+  <table class="table">
+  <tr>
+    <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
+  </tr>
+  <tr>
+    <td>20 (+5)</td><td>8 (-1)</td><td>14 (+2)</td><td>14 (+2)</td><td>12 (+1)</td><td>9 (-1)</td>
+  </tr>
+  </table>    
+  <p>
+    <strong>Saving Throws:</strong> +9 Strength, +6 Constitution <br />
+    <strong>Skills:</strong> +9 Athletics, +3 Intimidation, +5 Insight, +5 Perception<br />
+    <strong>Senses:</strong> Darkvision 60 ft., Passive Perception 15<br />
+    <strong>Languages:</strong> Orc, Imperial, Goblin<br /> 
+    <strong>Challenge:</strong> 12
+  </p>
+      
+  <p><strong>Champion Fighter:</strong>12th level champion with all features.</p>
+      
+  <h4 id="actions-1">Actions</h4>
+  <p><strong>Multiattack</strong> Makes 3 greataxe attacks</p>
+  <p><strong>Greataxe +1:</strong> +10 (1d12+6)</p>
+</aside>
+
+##### Warlord Rol The Unsightly
+
+Rol the Unsightly is the Warlord in charge of the old city of Strovenguard, and thus has possession of the Queen's castle. He is a known drunkard, and is irritable at the innability to get the local breweries up and running properly. He has been taking out his anger on his subordinates.
+
+Rol spends most of his time hiding out in his personal quarters in the Royal Palace, he is typically alone except when he wants to rail against one or more of his subordinates.
+
+<aside class="card col-sm-6 pull-right">
+  <h3>Warlord Drorull Spine-Axe</h3>
+    <h4>Medium humanoid (orc), Lawful Evil</h4>
+
+  <p>
+    <strong>Hit Points:</strong> 88<br />
+    <strong>AC:</strong> 15<br />
+    <strong>Speed:</strong> 30 ft<br />
+  </p>
+  <table class="table">
+  <tr>
+    <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
+  </tr>
+  <tr>
+    <td>10 (+0)</td><td>14 (+2)</td><td>16 (+3)</td><td>8 (-1)</td><td>10 (+0)</td><td>20 (+5)</td>
+  </tr>
+  </table>    
+  <p>
+    <strong>Saving Throws:</strong> +7 Constitution, +9 Charisma <br />
+    <strong>Skills:</strong> +9 Intimidation, +3 Insight, +3 Perception, +9 Persuasion<br />
+    <strong>Senses:</strong> Darkvision 60 ft., Passive Perception 15<br />
+    <strong>Languages:</strong> Orc, Imperial, Goblin<br /> 
+    <strong>Challenge:</strong> 11
+  </p>
+      
+  <p><strong>Draconic Sorcerer:</strong> 11th level draconic sorcerer with all features, red dragon blood.</p>
+  
+  <p><strong>Spellcasting:</strong> Cantrips: Fire bolt, prestidigitation, message, mage hand, minor illusion, friends. Level 1: Shield, Thunderwave. Level 2: Misty Step, Suggestion. Level 3: Fear, Counterspell, Fireball. Level 4: Wall of Fire, Greater Invisibility. Level 5: Hold Monster, Animate Objects. Level 6: Mass Suggestion.</p>
+  
+  <p><strong>Metamagic:</strong> Subtle Spell, Empower Spell, Distant Spell.
+  <h4 id="actions-1">Actions</h4>
+</aside>
+
+##### Warlord Drorull Spine-Axe
+
+Warlord Spine-Axe is in control of the new city, and thus the breweries. He has denied the other warlords access to the little beer that is produced, hording it for his own men. He is aware of Rol's drinking problem, and sees it as a way to slight his rival who managed to secure the superior acquisition of the old city.
+
+Drorull stays in an old manor house in the city, where he regularly holds audience and keeps a direct hand in the affairs of the city.
+<aside class="card col-sm-6 pull-right">
+  <h3>Warlord Zhuk the Miscreant</h3>
+    <h4>Medium humanoid (orc), Neutral Evil</h4>
+
+  <p>
+    <strong>Hit Points:</strong> 63<br />
+    <strong>AC:</strong> 20<br />
+    <strong>Speed:</strong> 30 ft<br />
+  </p>
+  <table class="table">
+  <tr>
+    <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
+  </tr>
+  <tr>
+    <td>20 (+5)</td><td>8 (-1)</td><td>12 (+1)</td><td>14 (+2)</td><td>10 (+0)</td><td>14 (+2)</td>
+  </tr>
+  </table>    
+  <p>
+    <strong>Saving Throws:</strong> +2 Dexterity, +5 Intelligence <br />
+    <strong>Skills:</strong> +8 Intimidation, +8 Deception, +5 Persuasion, +8 Athletics<br />
+    <strong>Senses:</strong> Darkvision 60 ft., Passive Perception 15<br />
+    <strong>Languages:</strong> Orc, Imperial, Goblin<br /> 
+    <strong>Challenge:</strong> 10
+  </p>
+  <h4 id="actions-1">Actions</h4>
+  <p><strong>Cunning Action </strong> Disengage, Dash, Hide, or Help as a bonus action.
+</aside>
+
+##### Warlord Zhuk the Miscreant
+
+Warlord Zhuk is in control of North Town, north of the Ara river, a very minor award considering most of the residents of North Town managed to flee before the orcs arrived, and thus he gained few slaves from the apportionment.
+
+Zhuk is constantly paranoid that the other warlords will attack him or cut off food supplies to his men, and has forced his men onto half rations so that he can stockpile goods 'just in case'. He has also been building new fortifications around the previously unfortified North Town, dedicating every slave he does manage to capture to the task. His men have been running secret raids into the New City to try to steal slaves from Drorull Spine-Axe.
+
+Zhuk has made his home at Maris Island Fortress, the only fortified portion of his territory, where he regularly surrounds himself with guards.
+
+### Assassinate the Warlords
+
+#### Rol the Unsightly
+
+Rol is in the Royal Palace, for details on how to find and assassinate Rol the Unsightly see 'The Castle of the Queen'.
+
+#### Zhuk the Miscreant
+
+Zhuk is in Maris Island Fortress, where he surrounds himself with guards. Jim Jimmy Jim Jim Jim, if the party is stuck, will suggest pretending to be an emissary in order to get to him. Zhuk is desparate for allies, and will even entertain the thought of betraying the orc nation, if not particularly seriously. He will not, however, keep up his side of any deal he makes and will betray anyone who makes a deal with him at the first opportunity.
+
+##### Maris Island Fortress
+
+Maris Island Fortress has existed for some time as an enforcement location for tolls and taxes. It sits on an island at the mouth of the Ara River, with a fortified bridge going to either shore. When entering the castle from the city you enter via the south gate into room 1 below. When the players are attempting to learn about the fortress the following pieces of information are available:
+
+* No one uses the south gate anymore, it's barely even guarded.
+* Most of the servants go in and out via a servants entrance by the kitchens, the gate is kept locked though.
+* The north gate is usually open, but is guarded pretty heavily.
+* Zhuk is paranoid, and keeps his guards close.  Getting him alone is all but impossible.
+* Zhuk is desparate for allies against the other warlords, especially since he betrayed his brother to get the position he has and no one trusts him anymore.
+
+**1. The South Entryway** The South Entryway is not actively guarded on the inside, but Zhuk uses it for a display of power, the bodies of recently executed criminals have been put on display here, some with their heads on pikes, others chained to the wall. A hole in the cieling leads to room 5, where the guards keep watch. The gate is made of wood and kept locked with a heavy chain and padlock. The guards in the gatehouse above have the key.  The south door into the keep proper is trapped with a pressure plate that will cause a spray of fire to shoot out hitting targets within 15 feet of the door for 4d10 fire damage (DC 13 dex save for half).
+
+**a. Gatehouse Stairs.** These stairs lead up from the South Entryway into the related gatehouse.
+
+**2. Kitchens.** The castle kitchens are regularly filled with servants and cooks bustling in and out, most of which are human or halfling slaves. The north door is a small servants entrance that is kept locked, but one of the servants will open it for those who know the passphrase: 'Bagel muffins'. Anyone on staff knows the pass phrase, including the slaves, and most can be bribed to give it up, or a sneaky character may be able to overhear it in use as the door is regularly used by servants bringing in supplies.
+
+**3. Old Store Room.** This store room hasn't been used in some time. It is filled with barrels of long rotted fruit.
+
+**4. Kitchen Pantry.** One of two pantries associated with the castle kitchens, the servants often use the corridor behind the pantry to sneak a nap.
+
+**5. South Gatehouse.** Guarded by a Blade of Ilneval and 4 orc troopers, they try to avoid going downstairs if they can.
+
+**6. Inner Trap Room.** Once a cloak room for visitors, Zhuk has converted this room into a deathtrap. The south door is locked, and shoots a magic missile at anyone who touches it for 2d10 force damage. Their is a 5 foot platform on the north end of the room, and another one at the south end. Between the two, the floor has been dug out and poisoned spikes placed at the bottom. A rope bridge has been set up between the two platforms that is intentionally built to collapse as soon as someone steps on it.
+
+**7. Barracks.** This room is filled with beds for the various guards who live in the keep. Since Zhuk is paranoid and keeps as many of his guards as possible as close as possible, the room is packed with orc soldiers, 18 of them at the present time (all just average grunts). Most do not have weapons on them, rather their weapons are on weapon racks around the room (one on each wall). Several of them are playing dice, a few others sleeping, a couple of them eating dinner, etc.
+
+<aside class="card col-sm-6 pull-right">
+  <h3>Orc Elite Guard</h3>
+  <h4>Medium humanoid (orc), lawful evil</h4>
+  <p>
+    <strong>Hit Points:</strong> 38 (5d8 + 18)<br />
+    <strong>AC:</strong> 18 (plate armor)<br />
+    <strong>Speed:</strong> 30 ft.<br />
+  </p>
+  <table class="table">
+    <tr>
+      <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
+    </tr>
+    <tr>
+      <td>18 (+4)</td><td>12 (+1)</td><td>16 (+3)</td><td>8 (-1)</td><td>12 (+1)</td><td>10 (+0)</td>
+    </tr>
+  </table>    
+  <p>
+    <strong>Saving Throws:</strong> +6 Str, +5 Con<br />
+    <strong>Skills:</strong> Intimidation +2, perception +3<br />
+    <strong>Senses:</strong> darkvision 60 ft., passive perception 13<br />
+    <strong>Languages:</strong> Orc, Goblin, Morrind<br /> 
+    <strong>Challenge:</strong> 2
+  </p>
+      
+  <p><strong>Aggressive:</strong> As a bonus action, the orc can move up to its speed toward a hostile creature that it can see.</p>
+  
+  <p><strong>Savage Attacks:</strong> When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit.</p>
+
+  <p><strong>Polearm Master</strong> Other creatures provoke an opportunity attack when entering the Elite Guard's reach.
+  
+  <h4 id="actions-1">Actions</h4>
+      
+  <p><strong>Multiattack:</strong> The Elite Guard makes 2 halberd attacks and one with the halberds butt when it takes an attack action on its turn.</p>
+  
+  <p><strong>Halberd:</strong> Reach 10 ft. +6 (1d10+4)
+  
+  <p><strong>Halberd Butt:</strong> Reach 10 ft. +6 (1d4+4)
+</aside>
+
+**8. Great Hall.** Zhuk is typically in the Great Hall, with his 6 elite guards. All of the doors are kept locked and trapped, with disable switches from inside the hall. Anyone who attempts to pick the lock or break down a door gets sprayed with acid for 6d4 acid damage (DC 13 Dex save for half).
+
+**9. Old Treasure Room.** This room (behind a secret door in the old store room) has not been discovered by the orcs. It used to be used to store the toll collections, and 5000 GP was left behind here when the fortress was abandoned.
+
+**10. Kitchen Pantry 2.** The south kitchen pantry, where the rare and expensive ingredients are stored. The door is trapped and locked and only the head chef has the key. The trap is a simple arrow trap (+5 to hit, 1d8 damage). Inside are a number of rare alchemical ingredients worth 500 gp.
+
+**11. Soldiers Dining Room.** An old eating room for the soldiers. Their are still a couple of tables with chairs, but the orcs don't use it.
+
+**12. North gatehouse.** This room has 3 Elite Guards who make sure no one who isn't allowed enters the Great Hall.
+
+**13. Extended Barracks.** This room has been converted into additional barracks space, with sleeping pallets all around the room. It has 10 guards in it currently.
+
+**14. Abandoned Courtyard.** This inner courtyard is no longer used.
+
+**15. North Cloakroom.** This room is an unused cloakroom.
+
+**16. Vault.** This room was once a bedroom for a minor functionary, Zhuk, not knowing where the original vault was, has converted it into a vault for collected tolls and taxes. It has 10,000 GP and 3 random uncommon magic items confiscated from captured slaves. The door has been replaced with a heavy iron vault door, however the frame is still made of wood and can be relatively easily broken out.
+
+**17. Vault Guardroom.** This room is magically darkened, with 4 Red Fangs of Shargaas hiding in the darkness, waiting to strike at anyone who enters without permission.
+
+**18. Guard's Secret Room** This secret room used to be used as a hangout by guards in the know. There are empty kegs, card tables and some bare cupboards. The corpses of three guards who hid in here when the orcs attacked are huddled in the corner, having starved to death.
+
+**19. Servant's Living Quarters** This large living space was used by the castle staff before the orc invasion. It has been converted into a general slave quarters by the orcs. The kitchen, dining tables, and bookshelves that were there originally still remain, but now there are makeshift beds scattered around the room as well.
+<img src="/images/maps/dungeon/marisislandfortress.jpg" alt="" class="col-sm-12" />
+
+**20, 24. Storage ** These rooms are being used for storage of mundane goods.
+
+**21, 25, 27, Servant's Quarters** These rooms are all slave quarters rooms. There are 15 total slaves throughout the slave quarters.
+
+**23. **
+
+**26. Armoury ** This room is the general armory for guards on duty on the walls. The nearby stairwell leads up to the roof, where 20 guards are on duty at all times: 2 blades of illneval, 4 elite guards, and 14 normal orc soldiers.
+
+**28. **
+
+**29. Overseer's Room** This room is where the overseers for the castle slaves live.
 
 ### The Castle of the Queen
 
