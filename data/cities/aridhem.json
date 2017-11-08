@@ -1,15 +1,13 @@
 {
   "name": "Aridhem",
   "nation": "Demal'Thor",
-  "population": 2000,
-  "metro": 5000,
-  "majority": "Moon Elves",
-  "ruling": "Moon Elves",
-  "minorities": [
-    "Grunt Orcs"
-  ],
+  "population": 0,
+  "metro": 0,
+  "majority": "none",
+  "ruling": "none",
+  "minorities": [],
   "exports": [],
   "landmarks": [],
   "coords": [10.31491928581316, 51.42013549804688],
-  "description": "Aridhem's permanent population is actually only a few thousand souls, many of whom are merchants, both local and foreign, who deal in exporting the herd animals and leather goods that are the leading exports of the region, and selling various imported goods to the tribes. The herdsmen and craftsmen they trade with arrive with their clans at sporadic intervals when they need to buy and sell a large number of goods, or when the tribal leaders need to meet to discuss matters of state.\n\n Because of this there are very few permanent structures in the city. The city walls are simple fortifications consisting of low earthen mounds topped with spikes, guarding a mostly tent city. Towards the heart of the city is the Council Building, a rather utilitarian stone structure where the meetings between the tribal chiefs are held.  It contains not only meeting spaces, but also rooms and shelter for the chiefs and their entourages, as well as foreign dignitaries, such as the alliance ambassadors. Outside of the Council Building, only the occasional house, shop, or warehouse belonging to a merchant break up the field of tents.\n\n Currently the city is almost entirely depopulated, after it was sacked and occupied by an orcish army then retaken. Little trade occurs in the city now and those who could have fled. The city remains under immenent threat from orcish attack."
+  "description": "Aridhem's permanent population is actually only a few thousand souls, many of whom are merchants, both local and foreign, who deal in exporting the herd animals and leather goods that are the leading exports of the region, and selling various imported goods to the tribes. The herdsmen and craftsmen they trade with arrive with their clans at sporadic intervals when they need to buy and sell a large number of goods, or when the tribal leaders need to meet to discuss matters of state.\n\n Because of this there are very few permanent structures in the city. The city walls are simple fortifications consisting of low earthen mounds topped with spikes, guarding a mostly tent city. Towards the heart of the city is the Council Building, a rather utilitarian stone structure where the meetings between the tribal chiefs are held.  It contains not only meeting spaces, but also rooms and shelter for the chiefs and their entourages, as well as foreign dignitaries, such as the alliance ambassadors. Outside of the Council Building, only the occasional house, shop, or warehouse belonging to a merchant break up the field of tents.\n\n The recapture was short lived, however. Orcish armies pored through the golden pass once again in late 1845, and this time burned the city to the ground, leaving nothing but ash for the alliance to attempt to retake. Many of the Moon Elf diaspora, now all that remains of their race, dream of rebuilding their once proud capitol, but that day is likely far off."
 }
