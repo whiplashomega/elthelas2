@@ -1,0 +1,35 @@
+{
+  "id": "unionofwizardscolleges",
+  "title": "Union of Wizard's Colleges",
+  "description": "The Union of Wizard's Colleges is an international organization dedicated to the sharing of magical knowledge.  Unlike the Artificer's, who hoard artifacts and technical expertise, the Union is dedicated to training young wizards, sorcerers, bards, and others to use their magical abilities responsibly.  Founded first by the colleges in Zelfir's major cities as a way to prevent magical accidents and misuse of magic, the Union has since spread across the globe. It's members vow to always use magic responsibly, avoiding collateral damage, and educating the public on the benefits of accepting magic users into the community. The Union is involved in licensing users of arcane magic in several countries, including Zelfir, Kandor, Gerasalim, Eldoran, Dera'Dragorim, Staelia, and Dormania. Licensed wizard's do not need to be members of the Union, but the Union has contracts with governments to obtain special policing powers to police their own.",
+  "nations": [
+    "Dera'Dragorim",
+    "Dormania",
+    "Eldoran",
+    "Gerasalim",
+    "Kandor",
+    "Staelia",
+    "Zelfir"
+  ],
+  "cities": [
+    "Zelfin",
+    "Mandon",
+    "Last Watch",
+    "Malidal",
+    "Desadorel",
+    "Kalland",
+    "Strovenguard",
+    "Loridesa",
+    "Instar",
+    "Milan",
+    "Estapor"
+  ],
+  "tenets": [
+    "Avoid hurting bystanders with magic or other collateral damage to your activities",
+    "Share your knowledge with others",
+    "Obey the laws around magic use in whatever country you are in",
+    "Enforce the laws around magic use when others break them"
+  ],
+  "level1": "Learn a cantrip from the wizard, sorcerer, bard, or warlock lists. The casting stat for that cantrip depends on the list you chose it from, intelligence for wizard, charisma for sorcerer, bard, or warlock.",
+  "level10": "The Union shares knowledge with you regularly. Every ten days the union magically sends you a random spell scroll of a level you can cast (maximum 5th level) and on your classes spell list."
+}
