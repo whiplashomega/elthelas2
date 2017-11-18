@@ -371,8 +371,8 @@
     
     $scope.setMagicItemStock = function() {
       var magicItemTableData = [];
-      //var today = new Date();
-      //var randgen = Math.seedrandom(today.getYear() + today.getMonth() + today.getDate());
+      var today = new Date();
+      var randgen = Math.seedrandom(today.getYear() + today.getMonth() + today.getDate());
       var inStock = function(rand, x) {
           if($scope.magicItems[x].Rarity === "Common") {
             return "In Stock";
