@@ -55,19 +55,19 @@
     <p>
       Players who are part of a particular faction will receive orders from their faction to report to Cur'Estan, and then orders from their faction leader in the town.  The following factions are available for player characters to be a part of at the start of the campaign.
     </p>
-    <h4>Amathera's Shield</h4>
+    <!--<h4>Amathera's Shield</h4>
     <p>
       Member's of Amathera's Shield will be told to report to the refugee camp in Cur'Estan.  Jaxan, not particularly needing an additional hand with the players skills, will instruct them to report to General Heartbren to aid in the general effort.
     </p>
       <h4>Artificer's of Mechanus</h4>
       <p>
         Members of the Artificer's of Mechanus may be responding to a request for an apprentice by Margo.  Once they've arrived, Margo will inform them that she wants them to report to General Heartbren as a recruit so that she can keep an eye on whats going on in the world.
-      </p>
+      </p>-->
       <h4>Black Sun</h4>
       <p>
         Members of the Black Sun will be approached on entering the town and ordered to report to Kyman immediately.  Kyman will inform them that he is now their boss, and he needs someone to be part of a new infiltration team that General Heartbren is assembling.
       </p>
-      <h4>Black Wolf Irregulars</h4>
+      <!--<h4>Black Wolf Irregulars</h4>
       <p>
         Members of the Black Wolf Irregulars will either already be in town preexisting, or arriving as a survivor from another (now dead or disbanded) unit.  General Heartbren is the local commander, and lower ranked members will tell them to report to General Heartbren immediately.
       </p>
@@ -78,52 +78,52 @@
       <h4>Dormanian Imperial Guard</h4>
       <p>
         Members of the Dormanian Imperial Guard may arrive as part of the new delegation as a guard or diplomatic staff with the ambassador (either Theodore Gloryheart, Alexandra Ransomir, or Genevieve Octavius, depending on who won the election).  The ambassador will order them to infiltrate the Irregulars, if it is Alexandra or Theodore, to help the effort, and if it is Genevieve, to serve as a spy for the Emperor.
-      </p>
+      </p>-->
       <h4>Guild of Heroes</h4>
       <p>
         The Guild of Heroes has recently taken a contract from General Heartbren to get a monster hunting specialist on an infiltration and assault team, and the PC member of the guild is assigned that contract.  They have a contact in town, one of the merchants, Feril Honeybait.
       </p>
-      <h4>International Grangemaster's Alliance</h4>
+      <!--<h4>International Grangemaster's Alliance</h4>
       <p>
         The Grangemaster's Alliance has a local chapterhouse, and has taken it upon themselves to fill the gaps in supplying the local refugee camp.  A PC member of the Grangemaster's Alliance will be sent to General Heartbren to join his team.  The local Grangemaster, a farmer named Winslow Fredericks, is particularly concerned about the increase in raids on local farms and will use what resources are at his disposal to protect the farmers and their livelihoods.
-      </p>
+      </p>-->
       
       <h4>Illustrious Guild of Merchants and Fine Artisans</h4>
       <p>
         Most of the local merchants are members of the Guild (those who aren't are too minor for the Guild to be concerned over).  The PC guild member has been encouraged to go to Cur'Estan because there is opportunity for people of skill to earn enough of a fortune to start their own business, and the influx of refugees and the presence of so many soldiers means there is a glut of demand in the area as well.  The local guild leader, Kendrick O'Malley, will inform the PC on arrival that General Heartbren is offering well paid opportunities to handle issues the guild is already interested in, and encourage them to sign up.
       </p>
-      <h4>Keepers of the Grove</h4>
+      <!--<h4>Keepers of the Grove</h4>
       <p>
         The Druids of the Grove are concerned that the Prince of Fiends, by his very presence and continued success, threatens to upset the balance of power between the Gods.  The PC member of the Keepers of the Grove will be sent to Cur'Estan to find allies and assist in the battle against the Prince.
-      </p>
+      </p>-->
       <h4>Lords of the Rising Dawn</h4>
       <p>
         Member's of the Lords of the Rising Dawn will be assigned by their local leader to work for Duke Lightbringer.  Lightbringer will inform them that General Heartbren has requested a member of the Lords to join a new team he is putting together and will send the PC to be that person.
       </p>
-      <h4>Maker's of Legend</h4>
+      <!--<h4>Maker's of Legend</h4>
       <p>
         The Maker's of Legend is the one group from which there will be at least one member on the team.  A PC Maker of Legend will be called on by Haera Oelefros to record the doings of the team that General Heartbren is assembling.  Haera is convinced they will do great things and wants to make sure that the stories are recorded for posterity.
-      </p>
+      </p>-->
       <h4>Masters of the Deep Song</h4>
       <p>
         The Church of Dorun is critical of the Underking's decision to withdraw the dwarves from the war, and will secretly send one of their own to assist in Cur'Estan.  The Master's of the Deep Song have a contact in the refugee camp, Ogrun Firebreath, who can provide insight, orders, and relay reports back to Curin Keep.
       </p>
-      <h4>Shepherds of the All-Mother</h4>
+      <!--<h4>Shepherds of the All-Mother</h4>
       <p>
         The Shepherds of the All-Mother see the presence of the Prince of Fiends on Elthelas as a direct violation of the Gods agreement.  They are determined to end his influence and prevent his victory in the war.  The PC member may be viewed with suspicion in Cur'Estan, but General Heartbren is willing to take anyone who can be of use.  The Shepherds contact in Cur'Estan is a young gnomish cleric by the name of Gimble Beren, who has a front as the local undertaker.
-      </p>
+      </p>-->
       <h4>Silver Dragon Knights</h4>
       <p>
         Dera'Dragorim has for now been too far removed from the issue to consider intervening with force in the war against the Orcs, but the Dragon Emperor has been considering it for some time.  He will send a PC member of the Silver Dragon Knights to Cur'Estan as a goodwill ambassador to serve at General Heartbren's pleasure, along with a diplomat, Farnor Spiketooth, who will serve as his official ambassador to the Irregulars.
       </p>
-      <h4>Sylvan's Rangers</h4>
+      <!--<h4>Sylvan's Rangers</h4>
       <p>
         Sylvan's Rangers are renknowned adventurer's, and many would need little encouragement to join the fight against the servants of Sylvan's ancient enemy Mat'raktha.  The closest thing to a local representative of the Rangers would be the half-elf ranger who helps protect the nearby woods, Sondel Fistin.
       </p>
       <h4>Trollkin Mercenary Corps</h4>
       <p>
         The Trollkin Mercenary Corps have a contract with General Heartbren to supply a certain number of soldiers to his army.  The PC member would be sent as reinforcements to the local troop, and then assigned by General Heartbren to his new team.  The local Trollkin Sergeant, Drog Stonearm, will be the PCs contact with the organization.  He will provide the PC with his advance payment for each mission.
-      </p>
+      </p>-->
     <h4>Factions Discouraged because they have a limited interest</h4>
     <ul>
       <li>Morrind Brewers' Club</li>
@@ -209,16 +209,22 @@
     </p>
     <h4>Orders</h4>
     <p><strong>General Heartbren's Orders:</strong> Find the raiders and put a stop to their attacks permanently.  In the process, please find any intelligence you can on orc army movements to the south.  Payment will be 20 gp per enemy killed or captured, plus a 500 gp bonus if you uncover good intelligence on the orcs plans.</p>
-    <p><strong>Amathera's Shield Orders:</strong> The raiders have stolen a large number of livestock and valuable food that could feed refugees and people in the town.  Please return as much of the stolen goods as you can to the refugee camp. -Jaxan Chin</p>
+    <!--<p><strong>Amathera's Shield Orders:</strong> The raiders have stolen a large number of livestock and valuable food that could feed refugees and people in the town.  Please return as much of the stolen goods as you can to the refugee camp. -Jaxan Chin</p>-->
     <p><strong>Black Sun Orders:</strong> I paid Farn 30 gp to help me move some product into town, 6 kegs of duty-free Red Gold Wine from Malidal.  It should have been at his farm at the time of the attack, make sure it gets back to me. -Kyman Hexhammer</p>
-    <p><strong>Dormanian Imperial Guard:</strong> Farn was a person of interest in a smuggling investigation recently involving Red Gold Wine.  Find the goods and any evidence you can and deliver them to the embassy. -Ambassador (x)</p>
+    <!--<p><strong>Dormanian Imperial Guard:</strong> Farn was a person of interest in a smuggling investigation recently involving Red Gold Wine.  Find the goods and any evidence you can and deliver them to the embassy. -Ambassador (x)</p>-->
     <p><strong>Guild of Heroes:</strong> We have a contract on a young green dragon sighted in the area. While you are investigating down south, find the dragon and kill it.  Bring me back its scales and you'll get the contract reward, 1000 GP. -Feril Honeybait</p>
-    <p><strong>International Grangemaster's Alliance:</strong> Jenny was well liked here at the grange hall.  She wore a locket that was of deep personal value given to her by her sister Lily who lives here in town.  Please retreive it and return it to her sister if you can. -Winslow Fredericks</p>
+    <!--<p><strong>International Grangemaster's Alliance:</strong> Jenny was well liked here at the grange hall.  She wore a locket that was of deep personal value given to her by her sister Lily who lives here in town.  Please retreive it and return it to her sister if you can. -Winslow Fredericks</p>-->
+    <p>
+      <strong>Illustrious Guild of Merchants and Fine Artisans:</strong> Jenny Littlefoot was a friend to many of the merchants. Her sister Lily is a guild member here in town. She has requested that the locket she gave to Jenny be found and returned to her.  -Kendrick O'Mally
+    </p>
     <p><strong>Lords of the Rising Dawn Orders:</strong> Kill every orc involved in these raids.  These attacks prove the evil in their hearts and they cannot be tolerated.  Execute with prejudice. The Lords will provide a 20 gp bounty for each right ear of an orc, hobgoblin or goblin delivered. -Duke James Lightbringer</p>
-    <p><strong>Maker's of Legend:</strong> Make sure the battle with those orc raiders is glorious and a tale worth telling, and remember that you are supposed to be the heroes, so no sneaky or dishonorable behavior. -Haera Oelefros</p>
+    <!--<p><strong>Maker's of Legend:</strong> Make sure the battle with those orc raiders is glorious and a tale worth telling, and remember that you are supposed to be the heroes, so no sneaky or dishonorable behavior. -Haera Oelefros</p>-->
     <p><strong>Master's of the Deep Song:</strong> We think these orcs may have been involved in a raid on a dwarf hold a few weeks ago, some important documents were stolen detailing some of the underground trade routes.  This information must be recovered or destroyed at all costs.  It cannot fall into non-dwarven hands, friend or foe. -Ogrun Firebreath</p>
-    <p><strong>Shepherds of the All-Mother:</strong> Those Rising Dawn fools simply left the bodies of the farmer and his family lying in the dirt.  Bring the bodies back to town with all possible dignity so that they can be given a proper burial. -Gimble Beran</p>
-    <p><strong>Trollkin Mercenary Corps:</strong> No special orders.  Your advance payment is 150 gp.  If final value of the contract exceeds that we will pay you the rest upon completion. -Drog Stonearm</p>
+    <!--<p><strong>Shepherds of the All-Mother:</strong> Those Rising Dawn fools simply left the bodies of the farmer and his family lying in the dirt.  Bring the bodies back to town with all possible dignity so that they can be given a proper burial. -Gimble Beran</p>
+    <p><strong>Trollkin Mercenary Corps:</strong> No special orders.  Your advance payment is 150 gp.  If final value of the contract exceeds that we will pay you the rest upon completion. -Drog Stonearm</p>-->
+    <p>
+      <strong>Silver Dragon Knights:</strong> One of the other knights spotted a green dragon flying overhead as we came into town. While you are out investigating see if you can track that dragon down. Killing such a vicious predator will surely earn us goodwill points here in town. -Farnor Spiketooth
+    </p>
     <p><strong>Quartermaster's Addendum:</strong> I planned to purchase those livestock for the stockpile here in the keep.  Make sure to deliver any recovered goods to the Quartermaster's office.</p>
     <h4>The Farm</h4>
     <p>

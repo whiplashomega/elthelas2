@@ -9,41 +9,41 @@ The orc army that recently attacked Northport is now moving east into the sword 
 
 **General Heartbren's Orders:** Our scouts report that the orc army is moving east into the Sword Mountains, likely hunting the Gerasaline army that continues to harrass them. I need you to find that army first, and act as our envoys to Queen Organa. I want to offer them safe haven and alliance if they can make it to Cur'Estan. To find the army, I suggest you find the gnomish wizard, Jim Jimmy Jim Jim Jim. Word is he is in the occupied city of Strovenguard. His skills as a diviner should help you find the queen.
 
-**Amathera's Shield Orders:** It is the common people hiding in the mountains we are most concerned about, more than queens and armies. Thousands of those fleeing the orcs have reportedly taken refuge with Queen Organa's army in the mountains. Make sure those people make it out alive. -Malia Demonslayer
+<!--**Amathera's Shield Orders:** It is the common people hiding in the mountains we are most concerned about, more than queens and armies. Thousands of those fleeing the orcs have reportedly taken refuge with Queen Organa's army in the mountains. Make sure those people make it out alive. -Malia Demonslayer
 
-**Artificer's of Mechanus Orders:** I knew Jim once, before he went off his rocker. He used to specialize in transmutation in fact, but his mind was altered against his will. Make sure Jim makes it back to Cur'Estan, it would be nice to see him again. -Margo
+**Artificer's of Mechanus Orders:** I knew Jim once, before he went off his rocker. He used to specialize in transmutation in fact, but his mind was altered against his will. Make sure Jim makes it back to Cur'Estan, it would be nice to see him again. -Margo-->
 
 **Black Sun Orders:** While you are in Strovenguard, word is that Queen Organa left behind some great treasure hidden in the castle before the Orcs moved in that has never been found. Get into the castle and search for the treasure. Maybe that divining wizard can help you find it. There was a painting of Queen Organa's father that used to hang above her throne in the great hall. The orcs never found it, but it would have been too big to transport. Have the wizard scry on that, and then bring me the painting. The rest of the treasure is yours. -Kyman Hexhammer
 
-**Champions of Cora Orders:** Queen Organa is a good woman and will not abandon those of her people who have taken refuge in the mountains easily, nor would we want her to. Find a way to get all of them out of there. -Maya Scientalis
+<!--**Champions of Cora Orders:** Queen Organa is a good woman and will not abandon those of her people who have taken refuge in the mountains easily, nor would we want her to. Find a way to get all of them out of there. -Maya Scientalis
 
-**Dormanian Imperial Guard Orders:** Silver Head stands between the Dormanian armies and assistance with this war, held by a rebel Duke, however he is relatively weak, and we believe being blackmailed by Aquila. Stop there on your way there or back and find out what is keeping him loyal to Aquila. If you can turn him to our side we can move a legion into position to help cover Queen Organa's retreat. -Ambassador Gloryheart
+**Dormanian Imperial Guard Orders:** Silver Head stands between the Dormanian armies and assistance with this war, held by a rebel Duke, however he is relatively weak, and we believe being blackmailed by Aquila. Stop there on your way there or back and find out what is keeping him loyal to Aquila. If you can turn him to our side we can move a legion into position to help cover Queen Organa's retreat. -Ambassador Gloryheart-->
 
 **Guild of Heroes Orders:** We have a contract on a mind flayer in the area of Silver Head, track it down and kill it. Bring back it's head as proof. -Allison Highwater
 
-**International Grangemaster's Alliance Orders:** I'm afraid the grangemaster's alliance has little interest in mountains and mining towns. -Winslow Fredericks
+<!--**International Grangemaster's Alliance Orders:** I'm afraid the grangemaster's alliance has little interest in mountains and mining towns. -Winslow Fredericks-->
 
 **Illustrious Guild of Merchants and Fine Artisans Orders:** Larissa (LP) Percival is in Silver Head right now and has requested assistance with an undisclosed issue. Find her, find out what the trouble is, and take care of it. -Kendrick O'mally
 
-**Keepers of the Grove Orders:** Jim Jimmy Jim Jim Jim's mind has been touched by an unnatural force, and through him it's influence continues to spread in the world. See that his life is ended, then see that his body is given the heroes burial it deserves. His God will shepherd his soul in the afterlife. -via sending
+<!--**Keepers of the Grove Orders:** Jim Jimmy Jim Jim Jim's mind has been touched by an unnatural force, and through him it's influence continues to spread in the world. See that his life is ended, then see that his body is given the heroes burial it deserves. His God will shepherd his soul in the afterlife. -via sending-->
 
 **Lords of the Rising Dawn Orders:** The orcs have turned Strovenguard into an internment camp, and no orc there is more guilty of this crime than the Warlords placed in charge of the city, kill them. If you can, make it look like infighting among themselves. -Duke James Lightbringer
 
-**Maker's of Legend Orders:** Why are we having the Gerasaline armies retreat? They should be fighting to the last in dramatic fashion! Convince the Queen to face the orcs directly, and then write me an awesome song about it! -Haera Oelefros
+<!--**Maker's of Legend Orders:** Why are we having the Gerasaline armies retreat? They should be fighting to the last in dramatic fashion! Convince the Queen to face the orcs directly, and then write me an awesome song about it! -Haera Oelefros-->
 
 **Masters of the Deep Song Orders:** There is a group of dwarven prospectors up in the sword mountains whose presence may not be entirely legal by Gerasaline law. Make sure the army does not discover their presence unless their legal status is established first. -Ogrun Firebreath
 
-**Shepherds of the All-Mother Orders:** Queen Organa has long been a vocal opponent of the Neran Church. Take this wand of animate dead and find a way to prove to her that judicious use of the dead may just save the living in this wretched war. -Gimble Beren
+<!--**Shepherds of the All-Mother Orders:** Queen Organa has long been a vocal opponent of the Neran Church. Take this wand of animate dead and find a way to prove to her that judicious use of the dead may just save the living in this wretched war. -Gimble Beren-->
 
 **Silver Dragon Knights Orders:** There is a group of frost giants in the mountains that recently attacked and wounded a silver dragon, crippling it. They are hunting for it's lair now, wipe out the giants before they find their target. -Farnor Spiketooth
 
-**Sylvan's Rangers Orders:** There is a small colony of frost giants in the peaks that has been raiding the mining villages. See if you can find a way to wipe them out. -Vanriel Glamfara
+<!--**Sylvan's Rangers Orders:** There is a small colony of frost giants in the peaks that has been raiding the mining villages. See if you can find a way to wipe them out. -Vanriel Glamfara
 
-**Trollkin Mercenary Corps Orders:** Queen Organa has failed to pay her hired mercenaries for the past several months and now owes 20,000 gp in back pay. Extract payment from her, and if she won't pay, pass along to the mercenaries the order to return to Degak'Ta. -Drog Stonearm
+**Trollkin Mercenary Corps Orders:** Queen Organa has failed to pay her hired mercenaries for the past several months and now owes 20,000 gp in back pay. Extract payment from her, and if she won't pay, pass along to the mercenaries the order to return to Degak'Ta. -Drog Stonearm-->
 
 #### Transportation
 
-General Heartbren has rented a helmet of teleportation circle from Margo, and gives the party the sigil sequences for three circles: His own, located in Cur'Estan castle, the one in the abandoned Temple of Maris in Strovenguard, and one in the Temple of Maris in Silver Head, in the foothills of the Sword Mountains.
+General Heartbren has rented a helmet of teleportation circle from Margo, and gives the party the sigil sequences for three circles: His own, located in Cur'Estan castle, the one in the abandoned Temple of Maris in Strovenguard, and one in the Temple of Maris in Silver Head, in the foothills of the Sword Mountains. The helmet is usable once per day.
 
 #### Strovenguard
 

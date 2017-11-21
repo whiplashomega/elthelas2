@@ -88,7 +88,7 @@ gulp.task('usemin',['sass', 'copylibraries', 'copyjson', 'copyimages'], function
 gulp.task('historyjson', function () {
   var files = fs.readdirSync("./data/historicalevents");
   var historyarray = [];
-  files.forEach(file => {
+  files.forEach(function(file) {
     var data = fs.readFileSync("./data/historicalevents/" + file, "utf-8");
 
     var filearray = data.split('\n');
@@ -137,7 +137,7 @@ gulp.task('creaturesjson', function() {
   }
   var files = fs.readdirSync("./data/creatures");
   var creaturearray = [];
-  files.forEach(file => {
+  files.forEach(function(file) {
     var data = fs.readFileSync("./data/creatures/" + file, "utf-8");
     var creature = {};
     var filearray = data.split('\n');
@@ -248,7 +248,7 @@ gulp.task('spellsjson', function() {
   }
   var files = fs.readdirSync("./data/spells");
   var spellarray = [];
-  files.forEach(file => {
+  files.forEach(function(file) {
     var data = fs.readFileSync("./data/spells/" + file, "utf-8");
     var spell = {};
     var filearray = data.split('\n');
@@ -287,7 +287,7 @@ gulp.task('jsoncompile', ['jsonlint'], function() {
   function compiledir(sourcedir, destination, modelName) {
     var files = fs.readdirSync(sourcedir);
     var comparray = [];
-    files.forEach(file => {
+    files.forEach(function(file) {
       try {
         var item = JSON.parse(fs.readFileSync(sourcedir + "/" + file, "utf-8"));
         comparray.push(item);

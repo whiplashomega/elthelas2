@@ -7,54 +7,54 @@
     <p>
       <strong>General Heartbren's Orders:</strong> The influx of refugees presents a serious supply problem for Cur'Estan, and our best route of resupply, moving supplies upriver from Cur'Mestin is cut off by the rebels under Manius Aquila. You must find a way to get open a trade route with Cur'Mestin so that we can buy supplies.  Negotiate with the local duchess if you can, use other means if you have to, thousands of lives depend on it.
     </p>
-    <p>
+    <!--<p>
       <strong>Amathera's Shield Orders: </strong> Before you go, I need you to make sure the quartermaster provisions sufficient supplies for the refugees while you are gone.  So far he is refusing to work with me, so we may need something we can hold over his head to make sure he cooperates, at least until we can get additional supplies in from down river. -Malia Demonslayer
     </p>
     <p>
       <strong>Artificer's of Mechanus Orders: </strong> I have heard that there is a purple worm nest in the area, their eggs are purported to have incredibly interesting magical properties, bring me back one of the eggs and I'll give you an item of your choice. -Margo
-    </p>
+    </p>-->
     <p>
       <strong>Black Sun Orders: </strong> An old, associate, of mine has been seen in Cur'Mestin recently, apparently working for Genevieve Octavius. Felix is an opportunistic grifter who stole my Shield Guardian. Get it back from him, then kill him. -Kyman Hexhammer
     </p>
-    <p>
+    <!--<p>
       <strong>Champions of Cora Orders: </strong> There are rumors that Genevieve Octavius may have made deals with devils, find out for sure if this is the case.  If so, she cannot be allowed to continue in a position of power and must be deposed or killed. -Maya Scientalis
     </p>
     <p>
       <strong>Dormanian Imperial Guard Orders: </strong> There is a local group there that is loyal to the Empress led in secret by the duchess' own daughter and heir, Maria Octavius. Do what you can to aid her in regaining Cur'Mestin for the empire. -Ambassador Gloryheart
-    </p>
+    </p>-->
     <p>
       <strong>Guild of Heroes Orders: </strong> The Guild has a contract out for a purple worm egg desired by a rich buyer in Westport. Bring it back and the 10,000 GP reward is yours. -Allison Highwater
     </p>
-    <p>
+    <!--<p>
       <strong>International Grangemaster's Alliance Orders: </strong> Cur'Mestin has a stranglehold on the barley market in the area because they have developed a unique strain of barley that can survive longer into the fall through the early frosts. If you can get some of those seeds for our local farmers it would be much appreciated, and earn you a 100 gp bounty besides. -Winslow Fredericks
-    </p>
+    </p>-->
     <p>
       <strong>Illustrious Guild of Merchants and Fine Artisans Orders:</strong> This embargo is an afront to the guild.  Dormania and Kandor have had open trade relations since the schism! General Heartbren may be concerned about food, but this embargo is much bigger than that. Several of the local merchants pooled their resources to order a special shipment of goods a few weeks ago that has been held up in a warehouse in Cur'Mestin. I want you to personally escort that shipment back to Cur'Estan. -Kendrick O'mally
     </p>
-    <p>
+    <!--<p>
       <strong>Keepers of the Grove Orders: </strong> One of the druids from the area, Amra Olojeon, around Cur'Mestin was recently thrown in jail on trumped up charges. While you are there get them free. -via sending
-    </p>
+    </p>-->
     <p>
       <strong>Lords of the Rising Dawn Orders: </strong> We have received word that the local temple of Alohim in Cur'Mestin was desecrated. Make contact with the local priest among the loyalists in Cur'Mestin, find out who the perpetrator was, and see that they pay for their crimes against the High God. -Duke James Lightbringer
     </p>
-    <p>
+    <!--<p>
       <strong>Maker's of Legend Orders: </strong> I heard that there is a purple worm nest in Cur'Mestin! Now that sounds like a glorious battle. When you get back I want to hear your new balad about the battle with the purple worm, and the grand heroics involved in defeating it! -Haera Oelefros
-    </p>
+    </p>-->
     <p>
       <strong>Masters of the Deep Song Orders: </strong> Wyrmling Trapsmith, that fecund piece of shit of a quartermaster, has refused beer rations for the refugees! It isn't like the beer was much good anyways, but this is a travesty! Before you run off to Cur'Mestin I need you to get at least 3 barrels of beer out of the castle storehouse for me. -Ogrun Firebreath
     </p>
-    <p>
+    <!--<p>
       <strong>Shepherds of the All-Mother Orders: </strong> The faithful in Cur'Mestin have been under persecution by both the loyalists and the rebels. Make contact with the local cleric of Nera and inform him that he can bring his flock to safety here in Cur'Estan. -Gimble Beren
-    </p>
+    </p>-->
     <p>
       <strong>Silver Dragon Knights Orders:</strong> The Emperor's emissary to Dormania was held up in Cur'Mestin on his way to Desadorel. Find out where he is and help him continue on his journey. -Farnor Spiketooth
     </p>
-    <p>
+    <!--<p>
       <strong>Sylvan's Rangers Orders:</strong> One of Duchess Octavius' local overseers, Ogrun Hammerfist, is a murderer who she has allowed to walk free thanks to the success he has had in retreiving back taxes. See that he pays appropriately for his crimes. If there is any question, that means kill him. -Vanriel Glamfara
     </p>
     <p>
       <strong>Trollkin Mercenary Corps Orders:</strong> Genevieve Octavius has requested a contingent of Trollkin mercenaries for her personal guard. Negotiate terms of payment with her while you are there. Minimum payment should be at leat 500 gp per head per month of service, but her position likely has her desperate, so see if you can get more than that. -Drog Stonearm
-    </p>
+    </p>-->
   </div>
   <div id="chapter3settlement">
     <h3>Food for the Refugees</h3>

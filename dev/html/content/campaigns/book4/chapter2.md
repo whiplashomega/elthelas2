@@ -22,16 +22,16 @@
     <p>
       <strong>General Heartbren's Orders: </strong> That Orc army is moving on Northport far too quickly for us to intercept, and they outnumber us 6 to 1 besides.  I need you to get down there and organize an evacuation before the army gets there. -Gerad Heartbren
     </p>
-    <p>
+    <!--<p>
       <strong>Amathera's Shield Orders: </strong> A high ranking member of Amathera's Shield has been living in Northport and may be able to help you. Find Malia Demonslayer and make sure she makes it back to Cur'Estan. -Jaxan Chin
     </p>
     <p>
       <strong>Artificer's of Mechanus Orders: </strong> There's an old gnome mechanic by the name of Biggles Wump who retired to Northport some years ago. He probably still has copies of the plans to some of his old ideas. These plans need to stay out of the hands of those who aren't part of the Artificer's, make sure they aren't left behind for the Orcs. -Margo
-    </p>
+    </p>-->
     <p>
       <strong>Black Sun Orders: </strong> I have a spy who I need inserted into the Orc army, but he tends to cause, distrust, among humans. Get him to Northport and make sure he is safe until the city is empty, then he'll do his part when the Orc army gets there. -Kyman Hexhammer
     </p>
-    <p>
+    <!--<p>
       <strong>Champions of Cora Orders: </strong> Our scrying suggests the orcs are employing necromancers to strike fear into the citizens and keep them from fleeing. Kill them. Also we have heard rumors of an artifact being stored by the Guild of Heroes that in the right hands could bring hope to those poor people.  Retreive it, and use it to aid the fearful. -via sending
     </p>
     <p>
@@ -39,40 +39,40 @@
     </p>
     <p>
       <strong>Dormanian Imperial Guard Orders (Manius Aquila is Emperor): </strong> We have reason to believe that two fugitives from the law are hiding in Northport.  Vanriel Glamfara and Elhavir Soras were involved in a prison break some years ago and must be brought to justice.  Kill them or bring them back to the embassy in chains.
-    </p>
+    </p>-->
     <p>
-      <strong>Guild of Heroes Orders: </strong> We have a major chapterhouse in Northport, though most of the staff are already gone, one of our guild masters, Allison Highwater, has refused to leave. Find out what is keeping him there and help him deal with the problem so he can get to safety.  -Feril Honeybait
+      <strong>Guild of Heroes Orders: </strong> We have a major chapterhouse in Northport, though most of the staff are already gone, one of our guild masters, Allison Highwater, has refused to leave. Find out what is keeping her there and help her deal with the problem so she can get to safety.  -Feril Honeybait
     </p>
-    <p>
+    <!--<p>
       <strong>International Grangemaster's Alliance Orders: </strong> There is a lot of unworked land around Cur'Estan, and we will need experienced farmers to work it and feed all those refugees.  Don't forget the people living out in the country when you are handling the evacuation. -Winslow Fredericks
-    </p>
+    </p>-->
     <p>
       <strong>Illustrious Guild of Merchants and Fine Artisans Orders: </strong> Northport is a major center of trade and has vast storehouses full of all kinds of goods and supplies owned by guild members.  You need to find a way to get those goods transported north as well as the people. -Kendrick O'mally
     </p>
-    <p>
+    <!--<p>
       <strong>Keepers of the Grove Orders: </strong> That orc army has been ripping through the countryside with no regard for life. You must raise the alarm among the local druids that those orcs are coming. Additionally, there is an ex-druid there who betrayed the secrets of druidic. Elhavir Soras must be brought before the local Druids council to answer for his crime. -via sending
-    </p>
+    </p>-->
     <p>
       <strong>Lords of the Rising Dawn Orders: </strong> Tacticly, I think it would be smarter to focus on delaying the orcs rather than on hurrying the evacuation. Destroying bridges, illusory foes, and so on should slow the orcs down enough that the bulk of the people in Northport could escape, and kill a few orcs at the same time. -Duke James Lightbringer
     </p>
-    <p>
+    <!--<p>
       <strong>Maker's of Legend Orders: </strong> There is nothing heroic about soldiers fleeing before the enemy. You need to make sure there is some kind of heroic last stand to delay the oncoming attackers or we won't have good story material. -Haera Oelefros
-    </p>
+    </p>-->
     <p>
       <strong>Masters of the Deep Song Orders: </strong> The dwarven emissary to Gerasalim had fled to Northport shortly before Strovenguard fell, expecting the queen to flee there as well. Instead she took control of the armies in the east and left the emissary in the lurch.  Get him this stone, it's a one use teleport that he can use to escape back to Curinor. -Ogrun Firebreath
     </p>
-    <p>
+    <!--<p>
       <strong>Shepherds of the All-Mother Orders: </strong> The Orcs have employed necromancers to scare the people into staying in Northport.  How dare they give necromancy a bad name by using the undead for simple scare tactics. Kill these necromancers, then prove to the people of Northport that they have nothing to fear from the dead. -Gimble Beren
-    </p>
+    </p>-->
     <p>
       <strong>Silver Dragon Knights Orders: </strong> There is an old copper dragon named Sulac who lives in a cave near Northport. While I doubt he would help you directly, he is an old friend of the Emperor, and we would hate to see him threatened by these orcish invaders. -Farnor Spiketooth
     </p>
-    <p>
+    <!--<p>
       <strong>Sylvan's Rangers Orders: </strong> Vanriel Glamfara is a skilled member of our order who recently took control of the garrison there in Northport. We could use someone of her experience here in Cur'Estan, and she can surely help you in your evacuation efforts. Talk to her, and make sure she makes it out of there alive. -Sondel Fistin
     </p>
     <p>
       <strong>Trollkin Mercenary Corps Orders: </strong> The warchief of that orc army has refused to pay for the 300 mercenaries he's employing, but is blocking efforts at communication from Degak'Ta to his army. Those soldiers are being reassigned to Cur'Estan.  Get in there and deliver their orders. -Drog Stonearm
-    </p>
+    </p>-->
     <h4>Travelling to Northport</h4>
     <p>
       Northport is 660 miles south of Cur'Estan.  Players should be made aware that a normal fast pace may leave them little time to organize things in Northport before the Orcs arrive on the 14th of Sylvanus.  If one of the players is an Artificer of Mechanus, Margo will be willing to teleport the party to Northport if they have not angered her. Alternatively, the party can attempt to take a riverboat to Northport, in which case they must travel 310 miles to the Kandor River, and then 530 miles by boat.
