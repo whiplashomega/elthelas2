@@ -36,7 +36,7 @@
       <th>Notable Minorities</th><td><span data-ng-repeat="minority in geoitem.minorities"><a href="/options/races/{{minority}}" data-ng-click="cancel()">{{minority}}</a>, </span></td>
     </tr>
     <tr>
-      <th>Exports</th><td><span data-ng-repeat="export in geoitem.exports">{{export}}</span></td>
+      <th>Exports</th><td><span>{{geoitem.exports.join(", ")}}</span></td>
     </tr>
   </table>
   <h3 style="clear:both;">Description</h3>
