@@ -164,19 +164,21 @@
       var item;
       if(location && type) {
         if(type === "continent") {
-          item = $scope.continents.filter(function(a) {return a.name === location;})[0];
+          item = $scope.continents.filter(function(a) {
+            return a.name.toLowerCase().replace(/ /g,'') === location.toLowerCase().replace(/ /g,'');
+          })[0];
         }
         if(type === "city") {
-          item = $scope.cities.filter(function(a) {return a.name === location;})[0];
+          item = $scope.cities.filter(function(a) {return a.name.toLowerCase().replace(/ /g,'') === location.toLowerCase().replace(/ /g,'');})[0];
         }
         if(type === "nation") {
-          item = $scope.nations.filter(function(a) {return a.name === location;})[0];
+          item = $scope.nations.filter(function(a) {return a.name.toLowerCase().replace(/ /g,'') === location.toLowerCase().replace(/ /g,'');})[0];
         }
         if(type === "landmark") {
-          item = $scope.landmarks.filter(function(a) {return a.name === location;})[0];
+          item = $scope.landmarks.filter(function(a) {return a.name.toLowerCase().replace(/ /g,'') === location.toLowerCase().replace(/ /g,'');})[0];
         }
         if(type === "feature") {
-          item = $scope.features.filter(function(a) {return a.name === location;})[0];
+          item = $scope.features.filter(function(a) {return a.name.toLowerCase().replace(/ /g,'') === location.toLowerCase().replace(/ /g,'');})[0];
         }
         showdetails(item, type);
       }

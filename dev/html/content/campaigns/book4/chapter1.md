@@ -108,14 +108,18 @@
       <p>
         The Church of Dorun is critical of the Underking's decision to withdraw the dwarves from the war, and will secretly send one of their own to assist in Cur'Estan.  The Master's of the Deep Song have a contact in the refugee camp, Ogrun Firebreath, who can provide insight, orders, and relay reports back to Curin Keep.
       </p>
-      <!--<h4>Shepherds of the All-Mother</h4>
+      <h4>Shepherds of the All-Mother</h4>
       <p>
         The Shepherds of the All-Mother see the presence of the Prince of Fiends on Elthelas as a direct violation of the Gods agreement.  They are determined to end his influence and prevent his victory in the war.  The PC member may be viewed with suspicion in Cur'Estan, but General Heartbren is willing to take anyone who can be of use.  The Shepherds contact in Cur'Estan is a young gnomish cleric by the name of Gimble Beren, who has a front as the local undertaker.
-      </p>-->
+      </p>
       <h4>Silver Dragon Knights</h4>
       <p>
         Dera'Dragorim has for now been too far removed from the issue to consider intervening with force in the war against the Orcs, but the Dragon Emperor has been considering it for some time.  He will send a PC member of the Silver Dragon Knights to Cur'Estan as a goodwill ambassador to serve at General Heartbren's pleasure, along with a diplomat, Farnor Spiketooth, who will serve as his official ambassador to the Irregulars.
       </p>
+      <!--<h4>Tock's Inevitables</h4>
+      <p>
+        Officially, Tock's Inevitables don't exist. A character who is a member of the Inevitables will be sent to report to Mace Tinker, a Kolyarut disguised as a cleric of Tock who has set up a small temple in Cur'Estan.  Mace recommends the player use the Black Wolf Irregulars as a cover for getting to targets, and as helping them aids in getting closer to the ultimate target for the inevitables, the immortal Prince of Fiends himself, their goals are, at least temporarily aligned.
+      </p>-->
       <!--<h4>Sylvan's Rangers</h4>
       <p>
         Sylvan's Rangers are renknowned adventurer's, and many would need little encouragement to join the fight against the servants of Sylvan's ancient enemy Mat'raktha.  The closest thing to a local representative of the Rangers would be the half-elf ranger who helps protect the nearby woods, Sondel Fistin.
@@ -140,6 +144,35 @@
       <li>Dragon Cult</li>
       <li>Voidbringers</li>
     </ul>
+    
+    <h4>Barbarious Entrance</h4>
+    <p>
+      Barbarious has the following events to deal with before joining the rest of the party.
+    </p>
+    <p><strong>Meeting Ogrun Firebreath.</strong> Ogrun Firebreath is Barbarious contact in Cur'Estan with the Master's of the Deep Song. Ogrun is drunk when Barbarious meets him, but he is able to pass along orders. He tells Barbarious to sign up with the irregulars. First, because being known as an Irregular will keep people for attacking him just based on his race, and second because it gives them an in to aid in the war effort. He tells Barbarious that while General Heartbren is aware of their affiliation with the Masters, no one else in town is aware of this.</p>
+    
+    <p><strong>Encounter with Haera Oelefros.</strong> Haera Oelefros, having heard of an Orc entering town, wants to show off her awesomeness.  She will be waiting outside the castle (where Barbarious must go to enlist), and challenge him to a duel... with bagpipes!</p>
+    
+    <h4>Tilda Entrance</h4>
+    <p>
+      Tilda arrives at town with her friend Yeva. They have orders to find Kyman Hexhammer, and just about anyone in town can point them in his direction. Tilda has the following encounters to deal with before joining up with the party:
+    </p>
+    <p><strong>Meeting Kyman Hexhammer.</strong> Kyman lives in a lavish mansion near the center of town. Well, really he lives in a Mordenkainen's Magnificent Mansion the entrance to which is in a lavish mansion in the center of town. He has a number of loyal servants who will shepherd Tilda and Yeva to Kyman's study in the inner mansion. There Kyman will hear them out. He says he can supply profitable jobs to both of them. He sees through Tilda's disguise fairly easily, and offers her a way to avoid prosecution and suspicion while in Cur'Estan. General Heartbren has a deal with the King of Kandor that no active member of the Black Wolf Irregular's shall face prosecution for crimes committed before enlisting.  Since the severity of her crime means General Heartbren might voluntarily turn her over, he recommends maintaining her disguise anyway (at least until she proves herself indespensible to the general).  Yeva he has a different mission for, sending her back to Farengar on a fact finding mission.</p>
+    
+    <h4>Silas of Irons Entrance</h4>
+    
+    <p>
+      Silas has his own reasons for coming to Cur'Estan, but his arrival is expected by Gimble Beren, the young cleric of Nera. Gimble runs an undertakers shop in town, perhaps a fairly obvious front for a cleric of Nera, but at least a legitimate business that helps him complete his duties. Silas will have the following encounters:
+    </p>
+    Meet Gimble Beren
+    Encounter Barbarious and Lyle
+    
+    <h4>Eobard Thawne Entrance</h4>
+    
+    <h4>Lyle Entrance</h4>
+    
+    <h4>Flykr Moon Entrance</h4>
+    
     <h4>Coming Together</h4>
     <p>
       Player's will come together for the first time in the office of Gerad Heartbren, the leader of the Black Wolf Irregulars, on the 18th of Trimalan, 1846.  He has summoned each of them there because their leaders and bosses see each of them as having a unique potential, and General Heartbren is intent on forging them into an elite team to handle the most difficult issues in the war.
@@ -160,7 +193,6 @@
     <aside class="card col-sm-6 pull-right" id="sandibrightsword">
       <h3>Sandi Brightsword</h3>
       <h4>Medium Humanoid (human), Lawful Good</h4>
-
       <p>
         <strong>Hit Points:</strong> 24 (3d10 + 6)<br />
         <strong>AC:</strong> 20 (plate, shield)<br />
@@ -181,7 +213,6 @@
         <strong>Languages:</strong> Imperial, Dwarf, Morrind<br /> 
         <strong>Challenge:</strong> 3
       </p>
-    
     <p><strong>Divine Sense:</strong> As Paladin</p>
     
     <p><strong>Lay on Hands: </strong> As Paladin, max 15 hp</p>
@@ -211,20 +242,23 @@
     <p><strong>General Heartbren's Orders:</strong> Find the raiders and put a stop to their attacks permanently.  In the process, please find any intelligence you can on orc army movements to the south.  Payment will be 20 gp per enemy killed or captured, plus a 500 gp bonus if you uncover good intelligence on the orcs plans.</p>
     <!--<p><strong>Amathera's Shield Orders:</strong> The raiders have stolen a large number of livestock and valuable food that could feed refugees and people in the town.  Please return as much of the stolen goods as you can to the refugee camp. -Jaxan Chin</p>-->
     <p><strong>Black Sun Orders:</strong> I paid Farn 30 gp to help me move some product into town, 6 kegs of duty-free Red Gold Wine from Malidal.  It should have been at his farm at the time of the attack, make sure it gets back to me. -Kyman Hexhammer</p>
-    <!--<p><strong>Dormanian Imperial Guard:</strong> Farn was a person of interest in a smuggling investigation recently involving Red Gold Wine.  Find the goods and any evidence you can and deliver them to the embassy. -Ambassador (x)</p>-->
+    <!--<p><strong>Dormanian Imperial Guard:</strong> Farn was a person of interest in a smuggling investigation recently involving Red Gold Wine.  Find the goods and any evidence you can and deliver them to the embassy. -Ambassador (x)</p>
     <p><strong>Guild of Heroes:</strong> We have a contract on a young green dragon sighted in the area. While you are investigating down south, find the dragon and kill it.  Bring me back its scales and you'll get the contract reward, 1000 GP. -Feril Honeybait</p>
-    <!--<p><strong>International Grangemaster's Alliance:</strong> Jenny was well liked here at the grange hall.  She wore a locket that was of deep personal value given to her by her sister Lily who lives here in town.  Please retreive it and return it to her sister if you can. -Winslow Fredericks</p>-->
+    <p><strong>International Grangemaster's Alliance:</strong> Jenny was well liked here at the grange hall.  She wore a locket that was of deep personal value given to her by her sister Lily who lives here in town.  Please retreive it and return it to her sister if you can. -Winslow Fredericks</p>-->
     <p>
-      <strong>Illustrious Guild of Merchants and Fine Artisans:</strong> Jenny Littlefoot was a friend to many of the merchants. Her sister Lily is a guild member here in town. She has requested that the locket she gave to Jenny be found and returned to her.  -Kendrick O'Mally
+      <strong>Illustrious Guild of Merchants and Fine Artisans:</strong> Jenny Littlefoot was a friend to many of the merchants. Her sister Lily is a guild member here in town. She has requested that the locket she gave to Jenny be found and returned to her. Also we recommend finding a location in town to set up shophere in town, and perhaps a couple of people to run it for you while you are busy, your particular skill set may be needed here by the guild longer term.  -Kendrick O'Mally
     </p>
-    <p><strong>Lords of the Rising Dawn Orders:</strong> Kill every orc involved in these raids.  These attacks prove the evil in their hearts and they cannot be tolerated.  Execute with prejudice. The Lords will provide a 20 gp bounty for each right ear of an orc, hobgoblin or goblin delivered. -Duke James Lightbringer</p>
-    <!--<p><strong>Maker's of Legend:</strong> Make sure the battle with those orc raiders is glorious and a tale worth telling, and remember that you are supposed to be the heroes, so no sneaky or dishonorable behavior. -Haera Oelefros</p>-->
+    <!--<p><strong>Lords of the Rising Dawn Orders:</strong> Kill every orc involved in these raids.  These attacks prove the evil in their hearts and they cannot be tolerated.  Execute with prejudice. The Lords will provide a 20 gp bounty for each right ear of an orc, hobgoblin or goblin delivered. -Duke James Lightbringer</p>
+    <p><strong>Maker's of Legend:</strong> Make sure the battle with those orc raiders is glorious and a tale worth telling, and remember that you are supposed to be the heroes, so no sneaky or dishonorable behavior. -Haera Oelefros</p>-->
     <p><strong>Master's of the Deep Song:</strong> We think these orcs may have been involved in a raid on a dwarf hold a few weeks ago, some important documents were stolen detailing some of the underground trade routes.  This information must be recovered or destroyed at all costs.  It cannot fall into non-dwarven hands, friend or foe. -Ogrun Firebreath</p>
-    <!--<p><strong>Shepherds of the All-Mother:</strong> Those Rising Dawn fools simply left the bodies of the farmer and his family lying in the dirt.  Bring the bodies back to town with all possible dignity so that they can be given a proper burial. -Gimble Beran</p>
-    <p><strong>Trollkin Mercenary Corps:</strong> No special orders.  Your advance payment is 150 gp.  If final value of the contract exceeds that we will pay you the rest upon completion. -Drog Stonearm</p>-->
+    <p><strong>Shepherds of the All-Mother:</strong> Those Rising Dawn fools simply left the bodies of the farmer and his family lying in the dirt.  Bring the bodies back to town with all possible dignity so that they can be given a proper burial. -Gimble Beran</p>
+    <!--<p><strong>Trollkin Mercenary Corps:</strong> No special orders.  Your advance payment is 150 gp.  If final value of the contract exceeds that we will pay you the rest upon completion. -Drog Stonearm</p>-->
     <p>
       <strong>Silver Dragon Knights:</strong> One of the other knights spotted a green dragon flying overhead as we came into town. While you are out investigating see if you can track that dragon down. Killing such a vicious predator will surely earn us goodwill points here in town. -Farnor Spiketooth
     </p>
+    <!--<p>
+      <strong>Tock's Inevitables: </strong> We believe that the Littlefoot family was harboring a deserter who is not among the dead at the farm. Find Marmaduc Undertree and bring him back to me alive, I will see him brought to the correct authorities to face court marshal.
+    </p>-->
     <p><strong>Quartermaster's Addendum:</strong> I planned to purchase those livestock for the stockpile here in the keep.  Make sure to deliver any recovered goods to the Quartermaster's office.</p>
     <h4>The Farm</h4>
     <p>
@@ -237,43 +271,38 @@
       The barn has also been burned down, and very little remains of it.  There is nothing of interest inside, but just outside the barn the players can pick up the tracks of the livestock that were driven away from the farm to the south.
     </p>
     <p>
-      The bodies of the family are laying covered by blankets outside the house until they can be retreived.  They were left there by the Lords of the Rising Dawn after being discovered in various places around the property.  All of the bodies show signs of being attacked with axes.  The children's bodies also have tooth marks.  A sufficiently high nature check can determine that the teeth marks are from a Worg, a vicious relative of wolves used by orcs as attack mounts.
+      The bodies of the family are laying covered by blankets outside the house until they can be retreived.  They were left there by the Lords of the Rising Dawn after being discovered in various places around the property.  All of the bodies show signs of being attacked with axes.  The children's bodies also have tooth marks.  A sufficiently high nature check can determine that the teeth marks are from a Worg, a vicious relative of wolves used by orcs as attack mounts. Marmaduc's body is not present.
     </p>
     <aside class="card col-sm-6 pull-right" id="gulloxhameater">
       <h3>Gullox Hameater</h3>
       <h4>Small Humanoid (goblinoid), Neutral Evil</h4>
-
-    <p>
-      <strong>Hit Points:</strong> 9 (2d6 + 2)<br />
-      <strong>AC:</strong> 16 (leather armor, shield)<br />
-      <strong>Speed:</strong> 15 ft (Gullox's leg is injured)<br />
-    </p>
-    <table class="table">
-      <tr>
-        <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-      </tr>
-      <tr>
-        <td>8</td><td>16</td><td>12</td><td>10</td><td>8</td><td>10</td>
-      </tr>
-    </table>    
-    <p>
-      <strong>Skills:</strong> Stealth +7<br />
-      <strong>Senses:</strong> Darkvision 60 ft. passive perception 9<br />
-      <strong>Languages:</strong> Goblin, Orc<br /> 
-      <strong>Challenge:</strong> 1/2
-    </p>
-    
-    <p><strong>Nimble Escape:</strong> The goblin can take the Disengage or Hide action as a bonus action on each of its turns.</p>
-    
-    <h4 id="actions-1">Actions</h4>
-    
-    <p><strong>Scimitar:</strong> Melee Weapon Attack: +5 to hit, reach 5 ft, one target.  Hit 6 (1d6+3) slashing damage.</p>
-    
-    <p><strong>Shortbow:</strong> Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit 6 (1d6+3) piercing damage.</p>
-
+      <p>
+        <strong>Hit Points:</strong> 9 (2d6 + 2)<br />
+        <strong>AC:</strong> 16 (leather armor, shield)<br />
+        <strong>Speed:</strong> 15 ft (Gullox's leg is injured)<br />
+      </p>
+      <table class="table">
+        <tr>
+          <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
+        </tr>
+        <tr>
+          <td>8</td><td>16</td><td>12</td><td>10</td><td>8</td><td>10</td>
+        </tr>
+      </table>    
+      <p>
+        <strong>Skills:</strong> Stealth +7<br />
+        <strong>Senses:</strong> Darkvision 60 ft. passive perception 9<br />
+        <strong>Languages:</strong> Goblin, Orc<br /> 
+        <strong>Challenge:</strong> 1/2
+      </p>
+      <p><strong>Nimble Escape:</strong> The goblin can take the Disengage or Hide action as a bonus action on each of its turns.</p>
+      <h4 id="actions-1">Actions</h4>
+      <p><strong>Scimitar:</strong> Melee Weapon Attack: +5 to hit, reach 5 ft, one target.  Hit 6 (1d6+3) slashing damage.</p>
+      <p><strong>Shortbow:</strong> Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit 6 (1d6+3) piercing damage.</p>
     </aside>
+    
     <p>
-      One of the goblins, Gullox Hameater, on the raid was injured in the fight, and is hiding in the wheat field nearby.  If the players search the wheat field he can be found with a DC 14 perception check (or passive perception check).  He will not attack, realizing he is outnumbered, but is unwilling to help the players.  He can be bribed or intimidated into giving up the location of their camp.  He will not give the players clues to the larger raiding force if he can help it, and if he feels like he can get away cleanly he will do so.
+      One of the goblins, Gullox Hameater, on the raid was injured in the fight, and is hiding in the wheat field nearby.  If the players search the wheat field he can be found with a DC 14 perception check (or passive perception check).  He will not attack, realizing he is outnumbered, but is unwilling to help the players.  He can be bribed or intimidated into giving up the location of their camp.  He will not give the players clues to the larger raiding force if he can help it, and if he feels like he can get away cleanly he will do so. He does know that one of the halflings (Marmaduc, though he doesn't know the name) offered to show the orcs where the Littlefoots had hidden the Red Gold Wine if they let him live and was taken prisoner.
     </p>
     <h4>Finding the Raiders</h4>
     <p>
@@ -381,7 +410,9 @@
     <p>
       The orc boss will gloat supervillain style for a short time before attacking if the players do not attack right off.
     </p>
-    
+    <p>
+      Marmaduc Undertree is locked in a cage in the corner. He will offer to help the party if they free him, but will attempt to escape instead if they do so.
+    </p>
     <p class="row"><img src="/images/maps/raiderbase-level3.png" alt="Raider Base Level 2" class="col-sm-12" id="raiderbasemap3" /></p>
     <aside class="card col-sm-4 pull-right">
       <h3>Level Up</h3>
@@ -402,7 +433,6 @@
     <aside class="card col-sm-6 pull-right" id="brugge">
       <h3>Brugge, the Wounded Orc</h3>
       <h4>medium humanoid (orc), lawful evil</h4>
-
     <p>
       <strong>Hit Points:</strong> 1 (max 15)<br />
       <strong>AC:</strong> 14 (scale mail)<br />
@@ -427,12 +457,10 @@
     
     <p><strong>Dagger:</strong> +4 (1d4+2)</p>
     
-
     </aside>
     <aside class="card col-sm-6 pull-right" id="moonelfrefugee">
       <h3>Moon Elf Refugee</h3>
       <h4>medium humanoid (elf), neutral</h4>
-
     <p>
       <strong>Hit Points:</strong> 12 (2d8 + 2)<br />
       <strong>AC:</strong> 11<br />
@@ -458,7 +486,6 @@
     
     <p><strong>Dagger:</strong> Melee weapon attack: reach 5 ft, To hit: +3, Damage: 4 (1d4+1) piercing</p>
     
-
     </aside>
     <p>
       The following random encounters can occur at any of the 'random encounter points' either randomly or as desired by the DM.
