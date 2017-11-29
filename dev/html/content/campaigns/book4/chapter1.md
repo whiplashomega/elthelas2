@@ -144,7 +144,7 @@
       <li>Dragon Cult</li>
       <li>Voidbringers</li>
     </ul>
-    
+    <h4>Start Date: 18th of Trimalan, 1846.</h4>
     <h4>Barbarious Entrance</h4>
     <p>
       Barbarious has the following events to deal with before joining the rest of the party.
@@ -159,24 +159,75 @@
     </p>
     <p><strong>Meeting Kyman Hexhammer.</strong> Kyman lives in a lavish mansion near the center of town. Well, really he lives in a Mordenkainen's Magnificent Mansion the entrance to which is in a lavish mansion in the center of town. He has a number of loyal servants who will shepherd Tilda and Yeva to Kyman's study in the inner mansion. There Kyman will hear them out. He says he can supply profitable jobs to both of them. He sees through Tilda's disguise fairly easily, and offers her a way to avoid prosecution and suspicion while in Cur'Estan. General Heartbren has a deal with the King of Kandor that no active member of the Black Wolf Irregular's shall face prosecution for crimes committed before enlisting.  Since the severity of her crime means General Heartbren might voluntarily turn her over, he recommends maintaining her disguise anyway (at least until she proves herself indespensible to the general).  Yeva he has a different mission for, sending her back to Farengar on a fact finding mission.</p>
     
+    <p><strong>Enter Wyrmling Trapsmith.</strong> Wyrmling Trapsmith will interrupt Tilda's meeting with Kyman to complain that some of his booze has gone missing.  He will blame Kyman, claiming that one of Kyman's thieves must have stolen it. Kyman will deny it strongly (it wasn't him, it was Ogrun). Unless Tilda calms him down Wyrmling will leave in a huff.
+    
+    
     <h4>Silas of Irons Entrance</h4>
     
     <p>
       Silas has his own reasons for coming to Cur'Estan, but his arrival is expected by Gimble Beren, the young cleric of Nera. Gimble runs an undertakers shop in town, perhaps a fairly obvious front for a cleric of Nera, but at least a legitimate business that helps him complete his duties. Silas will have the following encounters:
     </p>
-    Meet Gimble Beren
-    Encounter Barbarious and Lyle
+    <p>
+      <strong>Meet Gimble Beren. </strong> Gimble Beren will stop Silas in the street, and invite him into his shop. There he will tell Silas about him being the local cleric of Nera, and will offer to provide him guidance on the will of Nera in relation to his work. He gives Silas some advice on finding Sir Dawnblade, by telling him to volunteer with the Lords of the Rising Dawn. 
+    </p>
+    <p>
+      <strong>Meet James Lightbringer.</strong> James Lightbringer likes to meet all new recruits personally.  If Silas goes to volunteer with the Rising Dawn he will be sent to James Lightbringer's office in the barracks. Lightbringer will not question him on his motivations, but rather than integrating him into a Lord's of the Rising Dawn unit, he will send him to join the joint task force.
+    </p>
     
     <h4>Eobard Thawne Entrance</h4>
     
-    <h4>Lyle Entrance</h4>
+    <p>Eobard is arriving with Farnor Spiketooth, the ambassador from Cur'Estan. They will be met at the entrance to the city by General Heartbren. The general will greet them graciously and offer them one of the old embassy buildings to set up in. He talks to the ambassador on the side for a brief bit, after which he will lead them to the embassy building. There is a staff of servants already in place. Farnor will order Barry, Salvator, and H.R. to start settling in and to search the building. He will have special orders for Eobard however. He will say that General Heartbren has requested that Farnor's best man be assigned to a special joint task force, and Farnor will say he is picking Eobard for that role. Eobard is to report to the castle immediately.</p>
+    
     
     <h4>Flykr Moon Entrance</h4>
     
+    <p>
+      Flykr Moon arrives in town with a small caravan of traveling merchants and peddlers that has been moving through Kandor selling goods to various towns. Their caravan is met as they enter the city by Kendrick O'mally, the local Illustrious Guild leader, who will ask to see the guild membership papers for each of the merchants.  He will mention to each that the town is looking for merchants to settle down and set up shop, as demand has been higher than the local shopkeepers can handle. When he meets Flykr, he will be impressed with her personal charisma and asks her if she can do a special job for him: Finding out if Margo is a guild member or not.
+    </p>
+    <p>
+      <strong>Meeting Margo.</strong> Margo is a Stagen Gnome artificer and skilled wizard who has set up shop in the center of town. She bought an old building, quickly demolished it with magic, and then built a new stone shop on the site all in a day. After her impressive display of magical talent, no one has had the courage yet to go in and ask if she is in good standing with the guild, or request she pay her guild dues. If Flykr will do this for him, Kendrick offers to have the guild procure her a shop in town where she can sell her dresses.
+    </p>
+    <p>
+      Margo is not in good standing with the guild. She is in fact, not a member, never has been, and does not want to be. When Flykr enters the store, Margo will ask what she is looking for, and will be friendly but curt about her unwillingness to be a part of the Illustrious Guild. She will ask Flykr what her name is, and upon hearing it, be surprised and say she has a letter for her, delivered to by a raven that very morning. She will hand over the letter (untampered with). The letters contents are such:
+    </p>
+    <p>
+      My Dearest Flykr,
+    </p>
+    <p>
+      I dream of you nightly, your beauty captivates me. My most recent dreams trouble me, however, I dare not give you details.  Know you must stay close to the dragonborn Eobard Thawne or you will both suffer for it.  When you can, find me in Northport and I will tell you more.  Be careful of Silas, he is not the innocent child he once was, and cannot be trusted.
+    </p>
+    <p>Forever Yours, <br />Carlyle</p>
+    <p>
+      On reporting in Kendrick will mention that General Heartbren had recently asked him if he had any interest in contributing someone to help on a special task force, but hadn't had anyone who would of had the skills for the work. He knows Eobard has been asked to join the group, and suggests Flykr do so as well, he would make sure her shop was staffed and producing income, and may occasionally have additional work for her based on what the task force is doing. He writes a quick note saying she is his representative for the task force, and sends her to the castle.
+    </p>
+    <h4>Eadric Tudoria Entrance</h4>
+    <p>
+      Eadric will be approached personally by General Heartbren and Ninatha Quiverleaf. He will be informed that he is being transferred to a new unit. He will be nominally in command, however his compatriots are not official Black Wolf Irregulars and as such his authority is only nominal. Gnar Locke will be taking command of his old patrol unit. Gerad will give Eadric descriptions of the other PCs as such:
+    </p>
+    <ul>
+      <li>A free orc, male, tall, likely carrying around bagpipes, who works for a confidential interested party. He isn't the brightest but word is he's tough, and may be helpful with infiltration of enemy positions. (Barbarious)</li>
+      <li>A short human man, a wizard and intelligence specialist working for Spymaster Hexhammer named Fallon</li>
+      <li>A Staelian fighter recently recruited by the Lords of the Rising Dawn named Silas</li>
+      <li>A bard college trained Child of Molton merchant, skilled at infiltration and charm, potentially also a capable scout named Flykr Moon</li>
+      <li>A Dragonborn knight who comes highly recommended by the Deran Ambassador named Eobard</li>
+    </ul>
+    <p>Eadric has the morning off to collect his new squad, but should report to the war room at noon. Gerad will have an initial mission for them then, and will give Eadric the special mission of learning as much as he can about them, particularly whether they can be trusted and are committed to the cause.</p>
     <h4>Coming Together</h4>
     <p>
-      Player's will come together for the first time in the office of Gerad Heartbren, the leader of the Black Wolf Irregulars, on the 18th of Trimalan, 1846.  He has summoned each of them there because their leaders and bosses see each of them as having a unique potential, and General Heartbren is intent on forging them into an elite team to handle the most difficult issues in the war.
+      <strong>The bagpipe duel.</strong> The first encounter where all the players are present will be the bagpipe duel between Haera and Barbarious. It will be opposed performance checks, with advantage if proficient in the instrument (Haera is not, but her performance modifier is +13). If Haera loses, she will leave in a huff. The party will have a chance to interact or talk.
     </p>
+    <p>
+      <strong>General Heartbren.</strong> General Heartbren will have observed the bagpipe duel with a certain amusement. He will congratulate Barbarious if he won the duel, and wish him better luck next time if he did not. Then he will invite the party into his offices in the keep. He will take them to a large conference room where his inner council is gathering. 
+    </p>
+    <p><strong>The Council of War.</strong> The war council is James Lightbringer, Theodore Gloryheart, Farnor Spiketooth, Haera Oelefros, Wyrmling Trapsmith, and Kyman Hexhammer. The party will arrive before any of the other council members except Ambassador Gloryheart, who General Heartbren will introduce as Theodore Gloryheart, Archduke of Falak, Ambassador of Empress Dormana I. Each of the others will be announced by the Seneschal in this order as such:</p>
+    <ul>
+      <li>Duke James Lightbringer, Lord of the East Reach, Lord General of the Rising Dawn, Ambassador of the King of Kandor.</li>
+      <li>Dragon Lord Farnor Spiketooth, Retired Commander of the Western Legion, Special Ambassador of the Dragon Emperor Valraxa</li>
+      <li>Master Bard Haera Oelefros, Chronicler of the Great Histories. Professor Emeritus of History at the Kandori University of Art and Music</li>
+      <li>Wyrmling Trapsmith, Quartermaster for the Black Wolf Irregulars</li>
+      <li>Kyman Hexhammer, Spymaster for the Black Wolf Irregulars</li>
+    </ul>
+    <p>Gerad will then lay out that each of them has been chosen to serve on a special group designed to bring together a wide range of expertise to deal with particularly thorny problems and missions involved in the war effort. First however, he wants to give them a chance to figure out how to work together as a group before giving them any truly difficult tasks. He will then lay out the raiding mission. After giving them the details of the situation, he will mention that they should remember that they still report to their respective organizations as well, who may provide insight or additional orders with each mission.</p>
   </div>
   <div id="chapter1raiders">
     <h3>Raiders</h3>
@@ -240,6 +291,7 @@
     </p>
     <h4>Orders</h4>
     <p><strong>General Heartbren's Orders:</strong> Find the raiders and put a stop to their attacks permanently.  In the process, please find any intelligence you can on orc army movements to the south.  Payment will be 20 gp per enemy killed or captured, plus a 500 gp bonus if you uncover good intelligence on the orcs plans.</p>
+    <p><strong>Black Wolf Irregular's Special Orders:</strong> Observe and determine the trustworthiness of squad members by whatever means necessary, we must know if these people are actually committed to the cause, and how far to trust each of them.</p>
     <!--<p><strong>Amathera's Shield Orders:</strong> The raiders have stolen a large number of livestock and valuable food that could feed refugees and people in the town.  Please return as much of the stolen goods as you can to the refugee camp. -Jaxan Chin</p>-->
     <p><strong>Black Sun Orders:</strong> I paid Farn 30 gp to help me move some product into town, 6 kegs of duty-free Red Gold Wine from Malidal.  It should have been at his farm at the time of the attack, make sure it gets back to me. -Kyman Hexhammer</p>
     <!--<p><strong>Dormanian Imperial Guard:</strong> Farn was a person of interest in a smuggling investigation recently involving Red Gold Wine.  Find the goods and any evidence you can and deliver them to the embassy. -Ambassador (x)</p>
@@ -248,8 +300,8 @@
     <p>
       <strong>Illustrious Guild of Merchants and Fine Artisans:</strong> Jenny Littlefoot was a friend to many of the merchants. Her sister Lily is a guild member here in town. She has requested that the locket she gave to Jenny be found and returned to her. Also we recommend finding a location in town to set up shophere in town, and perhaps a couple of people to run it for you while you are busy, your particular skill set may be needed here by the guild longer term.  -Kendrick O'Mally
     </p>
-    <!--<p><strong>Lords of the Rising Dawn Orders:</strong> Kill every orc involved in these raids.  These attacks prove the evil in their hearts and they cannot be tolerated.  Execute with prejudice. The Lords will provide a 20 gp bounty for each right ear of an orc, hobgoblin or goblin delivered. -Duke James Lightbringer</p>
-    <p><strong>Maker's of Legend:</strong> Make sure the battle with those orc raiders is glorious and a tale worth telling, and remember that you are supposed to be the heroes, so no sneaky or dishonorable behavior. -Haera Oelefros</p>-->
+    <p><strong>Lords of the Rising Dawn Orders:</strong> Kill every orc involved in these raids.  These attacks prove the evil in their hearts and they cannot be tolerated.  Execute with prejudice. The Lords will provide a 20 gp bounty for each right ear of an orc, hobgoblin or goblin delivered. -Duke James Lightbringer</p>
+    <!--<p><strong>Maker's of Legend:</strong> Make sure the battle with those orc raiders is glorious and a tale worth telling, and remember that you are supposed to be the heroes, so no sneaky or dishonorable behavior. -Haera Oelefros</p>-->
     <p><strong>Master's of the Deep Song:</strong> We think these orcs may have been involved in a raid on a dwarf hold a few weeks ago, some important documents were stolen detailing some of the underground trade routes.  This information must be recovered or destroyed at all costs.  It cannot fall into non-dwarven hands, friend or foe. -Ogrun Firebreath</p>
     <p><strong>Shepherds of the All-Mother:</strong> Those Rising Dawn fools simply left the bodies of the farmer and his family lying in the dirt.  Bring the bodies back to town with all possible dignity so that they can be given a proper burial. -Gimble Beran</p>
     <!--<p><strong>Trollkin Mercenary Corps:</strong> No special orders.  Your advance payment is 150 gp.  If final value of the contract exceeds that we will pay you the rest upon completion. -Drog Stonearm</p>-->

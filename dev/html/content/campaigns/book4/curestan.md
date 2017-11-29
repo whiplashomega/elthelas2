@@ -233,7 +233,7 @@
       <strong>Goals: </strong> Get filthy rich, make sure the Resistance has enough money and resources to make him filthy rich. Convince the dwarves to rejoin the war effort.
     </p>
     <p>
-      Dislikes: People who worry too much about honor and let it get in the way of getting things done (or his future wealth).  Anyone who fails to pay him for services rendered.
+      <strong>Dislikes:</strong> People who worry too much about honor and let it get in the way of getting things done (or his future wealth).  Anyone who fails to pay him for services rendered.
     </p>
     <aside class="card col-sm-6 pull-right" id="wyrmlingtrapsmith">
         <h3>Wyrmling Trapsmith</h3>
