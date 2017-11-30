@@ -9,6 +9,41 @@
           children: []
         },
         {
+          text: 'PCs',
+          url: '#pcs',
+          file: 'pcs.md',
+          children: [
+            {
+              text: 'Silas of Irons',
+              url: '#silas-of-irons'
+            },
+            {
+              text: 'Flykr Moon',
+              url: '#flykr-moon'
+            },
+            {
+              text: "Tilda/Fallon",
+              url: '#tilda-fallon'
+            },
+            {
+              text: 'Barbarious',
+              url: '#barbarious'
+            },
+            {
+              text: 'Eobard Thawne',
+              url: '#eobard-thawne'
+            },
+            {
+              text: 'Eadric Tudoria',
+              url: '#eadric-tudoria'
+            },
+            {
+              text: 'NPC Table',
+              url: '#npc-table'
+            }
+          ]
+        },
+        {
           text: 'Cur\'Estan',
           url: '#curestan',
           file: "curestan.md",
@@ -37,8 +72,12 @@
           file: "chapter1.md",
           children: [
             {
-              text: "Starting Out",
+              text: "Character Building",
               url: "#chapter1startingout"
+            },
+            {
+              text: "Arrival",
+              url: "#arrival"
             },
             {
               text: "Raiders",

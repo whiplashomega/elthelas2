@@ -5,7 +5,7 @@ module.exports = {
 }
     module.exports.port = process.env.PORT || 3000; 
     
-    if(module.exports.port == 3000) { //we are in a local environment, provision config variables accordingly
+    if(module.exports.port == 3000 || module.exports.port == 8080) { //we are in a local environment, provision config variables accordingly
         module.exports.mongoUrl = 'mongodb://0.0.0.0:27017/elthelas';
         module.exports.facebook = {
             clientID: '1915523602044424',

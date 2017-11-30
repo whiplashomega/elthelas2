@@ -2,7 +2,7 @@
 <div id="chapter1" class="clear-b">
   <h2>Chapter 1: Recruits</h2>
   <div id="chapter1startingout">
-    <h3>Starting Out</h3>
+    <h3>Character Building</h3>
     <h4>Building Your Character</h4>
     <p>
       Player's should use the following guidelines for building your character.
@@ -145,6 +145,7 @@
       <li>Voidbringers</li>
     </ul>
     <h4>Start Date: 18th of Trimalan, 1846.</h4>
+    <h3 id='arrival'>Arrival at Cur Estan</h3>
     <h4>Barbarious Entrance</h4>
     <p>
       Barbarious has the following events to deal with before joining the rest of the party.
