@@ -41,6 +41,48 @@
              metadescription: "Website for the Elthelas Campaign Setting for Dungeons and Dragons by Joseph Harrison. Dungeons and Dragons is owned and copyrighted by Wizard's of the Coast.",
              metakeywords: "Dungeons, Dragons, Elthelas, Campaign Setting, Homebrew"
            }
+    }).state('app.runner', {
+      url: 'runner',
+      views: {
+        'content@': {
+          templateUrl: '/html/content/ref/runner.html',
+          controller: 'EncounterController'
+        },
+        'sidebar@': {
+          templateUrl: '/html/sidebar/ref.html'
+        },
+      },
+      data: {
+        title: "Encounter Runner",
+        metadescription: "",
+        metakeywords: ""
+      },
+      resolve: {
+        creatures: function() {
+          return false;
+        } 
+      }
+    }).state('app.runnerprefill', {
+      url: 'runner/:creaturenames',
+      views: {
+        'content@': {
+          templateUrl: '/html/content/ref/runner.html',
+          controller: 'EncounterController'
+        },
+        'sidebar@': {
+          templateUrl: '/html/sidebar/ref.html'
+        }
+      },
+      data: {
+        title: "Encounter Runner",
+        metadescription: "",
+        metakeywords: ""
+      },
+      resolve: {
+        creatures: function($stateParams) {
+          return $stateParams.creaturenames.split("&");
+        } 
+      }
     }).state('app.domains', {
           url:'options/domains',
           views: {

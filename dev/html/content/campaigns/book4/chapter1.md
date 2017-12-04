@@ -305,7 +305,7 @@
     </p>
     <h4>The Camp</h4>
     <p>
-      The raiders' camp is currently populated by the squad leader, an Orc Blade of Ilneval, 2 regular Orcs, a hobgoblin and a Worg. The hobgoblin and one of the orcs are keeping an eye on the stolen livestock, about half of which still remain.  There are 5 two-man tents as well as one large tent used by the leader.  The remaining 2 orcs, 2 hobgoblins, goblin, and worg are currently traveling to the central raiding base to deliver the other missing livestock.
+      The raiders' camp is currently populated by the squad leader, <a href="/runner/orcbladeofilneval&orc&hobgoblin&hobgoblin&worg" target="_blank">an Orc Blade of Ilneval, 1 regular Orc, 2 hobgoblins and a Worg</a>. The hobgoblin and one of the orcs are keeping an eye on the stolen livestock, about half of which still remain.  There are 5 two-man tents as well as one large tent used by the leader.  The remaining 3 orcs, hobgoblin, goblin, and worg are currently traveling to the central raiding base to deliver the other missing livestock.
     </p>
     <p>
       If any of the raiders detect the players they will immediately raise the alarm and attack.  The worg will follow the orders of any of the orcs or the hobgoblin.
@@ -434,7 +434,7 @@
     </p>
     <h4>Refugees under Attack</h4>
     <p>
-      The party comes across a small family of refugees, 4 moon elves whose wagon is broken, and whose horse is already dead.  They are hiding in their covered wagon, with the parents trying their best to hold off 5 dire wolves.  If the party intervenes, 4 of the 5 dire wolves will immediately break off and attempt to intercept the party.
+      The party comes across a small family of refugees, 4 moon elves whose wagon is broken, and whose horse is already dead.  They are hiding in their covered wagon, with the parents trying their best to hold off <a href="/runner/direwolf&direwolf&direwolf&direwolf&direwolf" target="_blank">5 dire wolves</a>.  If the party intervenes, 4 of the 5 dire wolves will immediately break off and attempt to intercept the party.
     </p>
     <p>
       If rescued by the party the refugees have nothing to give them, but will speak highly of them to Jaxan Chin at the refugee camp when they get there. If one or more of the refugees dies they will be appreciative, but will not mention the incident to Jaxan outside of 'we were rescued by some soldiers'.
