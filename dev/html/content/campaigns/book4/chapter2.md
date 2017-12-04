@@ -134,60 +134,7 @@
     <p><strong>17. To Cur'Estan</strong> the Northeast road leads to Dormania and eastern Kandor, including Cur'Estan. Refugees attempting to escape along the road have all been attacked by orcs or undead.</p>
     <img class="col-sm-12" style="max-width:100%;" src="/images/maps/cities/northport.png" alt="map of northport" />
     <h4>Important People in Northport</h4>
-    <aside class="card col-sm-6 pull-right" id="vanriel">
-      <h3>Vanriel Glamfara</h3>
-      <h4>Medium humanoid (elf), Chaotic Good</h4>
-
-      <p>
-        <strong>Hit Points:</strong> 80 (10d10 + 20)<br />
-        <strong>AC:</strong> 18 (studded leather +1)<br />
-        <strong>Speed:</strong> 35 ft<br />
-      </p>
-      <table class="table">
-        <tr>
-          <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-        </tr>
-        <tr>
-          <td>10 (+0)</td><td>20 (+5)</td><td>14 (+2)</td><td>8 (-1)</td><td>16 (+3)</td><td>10 (+0)</td>
-        </tr>
-      </table>    
-      <p>
-        <strong>Saving Throws:</strong> +4 Strength, +9 Dexterity<br />
-        <strong>Skills:</strong> +7 Animal Handling, +7 Insight, +7 Medicine, +7 Perception, +9 Stealth, +7 Survival<br />
-        <strong>Condition Immunities: </strong> Magical Sleep<br />
-        <strong>Senses:</strong> Darkvision 60 ft, Passive Perception 17<br />
-        <strong>Languages:</strong> Imperial, Elf, Deran, Dwarf, Morrind, Orc<br /> 
-        <strong>Challenge:</strong> 10
-      </p>
-      
-      <p><strong>Favored Enemy:</strong> Orcs, Goblinoids, as ranger feature (+4 damage)</p>
-      
-      <p><strong>Primeval Awareness:</strong> as ranger feature</p>
-      
-      <p><strong>Archery Fighting Style:</strong> +2 bonus to attack rolls she makes with ranged weapons.</p>
-      
-      <p><strong>Ranger Spellcasting:</strong> 4 1st level spell slots, 3 2nd level spell slots, 2 3rd level spell slots.</p>
-      
-      <p><strong>Crossbow Expert:</strong> As the feat</p>
-      
-      <p><strong>Greater Favored Enemy:</strong> Fiends, as the ranger feature</p>
-      
-      <p><strong>Fleet of Foot:</strong> as ranger feature (dash as bonus action)</p>
-      
-      <p><strong>Hide in Plain Sight:</strong> as ranger feature</p>
-      
-      <p><strong>Horde Breaker:</strong> as ranger feature</p>
-      
-      <p><strong>Escape the Horde:</strong> as ranger feature</p>
-      <h4 id="actions-1">Actions</h4>
-      <p>
-        <strong>Multiattack:</strong> Vanriel makes 2 attacks when she takes the attack action on her turn. If she is wielding her hand crossbows, she can make 1 additional hand crossbow attack as a bonus action.
-      </p>
-      <p><strong>+1 Heavy Crossbow:</strong> Ranged weapon attack. Range 120/360, +12 to hit (1d10+6 piercing), +4 additional damage if attacking an orc, goblinoid, or fiend.</p>
-      <p><strong>+1 Hand Crossbow of Fire:</strong> Ranged Weapon attack. Range 120/360, +12 to hit (1d6+6 piercing + 1d6 fire damage), +4 additional damage if attacking an orc, goblinoid, or fiend.</p>
-    
-
-    </aside>    
+  
     <h4>Vanriel Glamfara</h4>
     <p>
       Vanriel is an ex-adventurer and ranger of some notable skill.  Originally a Black Wolf Irregular before an incident at the Fortress of Light saw her dishonorably discharged, the circumstances of her leaving the fortress are questionable.  Officially pardoned by the Irregulars after official petition from Zelfir in recognition of her service to that country.  She joined up with the local city guard in Eastguard after that, and rose to the rank of captain before the city was taken.  Managed to secure an orderly retreat and evacuation before the orcs burned the city.  Now she has taken control of the local guard of Northport, trying to whip the raw recruits into good enough shape to get things under control.
@@ -195,49 +142,6 @@
     <p>
       Vanriel herself feels overwhelmed by the task in front of her, she does not feel she is built for command, but has been thrust into the role by her men who look up to her, and the necessity of needing someone to take charge.
     </p>
-    <aside class="card col-sm-6 pull-right" id="malia">
-      <h3>Malia Demonslayer</h3>
-      <h4>Medium humanoid (sorceron-blooded), Neutral Good</h4>
-
-      <p>
-        <strong>Hit Points:</strong> <br />
-        <strong>AC:</strong> 18 (half-plate, shield) <br />
-        <strong>Speed:</strong> 30 ft<br />
-      </p>
-      <table class="table">
-        <tr>
-          <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-        </tr>
-        <tr>
-          <td>10</td><td>12</td><td>16</td><td>20</td><td>16</td><td>8</td>
-        </tr>
-      </table>    
-      <p>
-        <strong>Saving Throws:</strong> +7 Constitution, +7 Wisdom, +3 Charisma<br />
-        <strong>Skills:</strong> +9 Arcana, +9 History, +9 Religion, +7 Insight<br />
-        <strong>Senses:</strong> See Invisibility, passive perception 13<br />
-        <strong>Languages:</strong> Imperial, Elf, Orc, Dwarf, Morrind<br /> 
-        <strong>Challenge:</strong> 11
-      </p>
-      
-      <p><strong>Arcane Recovery:</strong> Can recover 5 levels worth of spell slots on a short rest 1/day</p>
-      
-      <p><strong>Portent:</strong> As wizard feature</p>
-      
-      <p><strong>Expert Divination:</strong> As wizard feature</p>
-
-      <p><strong>Third Eye:</strong> As wizard feature</p>
-      
-      <p><strong>Resilient: </strong> as feat, constitution.</p>
-      <p><strong>Elemental Adept: </strong> as feat, fire.</p>
-      <p><strong>Wand of Fire Bolt:</strong> Adds intelligence modifier to the damage when she casts the spell firebolt.</p>
-      <p><strong>Spellcasting:</strong> Malia is an 11th level spellcaster. She has the following cantrips: minor illusion, guidance, fire bolt, chill touch, mage hand, message, prestidigitation, light, mending,shocking grasp, ray of frost, acid splash. She has the following spells prepared: shield, cure wounds, healing word, guiding bolt, detect poison and disease, detect magic, magic missile, misty step, mirror image, levitate, sending, counterspell, fireball, hypnotic pattern, sleet storm, arcane eye, watery sphere, otiluke's resilient sphere, wall of force, wall of earth, animate objects, transmute rock</p>
-      <h4 id="actions-1">Actions</h4>
-      
-      <p><strong>Fire Bolt:</strong> Ranged spell attack. +9 to hit, 3d10+5 fire damage, ignores resistance.</p>
-    
-
-    </aside>
     <h4>Malia Demonslayer</h4>
     <p>
       Malia started out her career as an aberration hunter working for Amathera's Shield and the College of Malidal.  After a leave of absence to recover her erstwhile brother from Malinval she spent a short time working for the Guild of Heroes before reconnecting with Amathera's Shield to try to organize the refugees that were pouring into Northport.
@@ -245,37 +149,6 @@
     <p>
       Malia is intelligent, but abrassive.  She has been successful in organizing things like living space, food, schools, etc for the refugees, but has struggled with how to tamp down the rumors that spread through the city causing riots and other trouble.
     </p>
-    <aside class="card col-sm-6 pull-right" id="elhavir">
-      <h3>Elhavir Soras</h3>
-      <h4>Medium humanoid (elf), Chaotic Neutral</h4>
-
-      <p>
-        <strong>Hit Points:</strong> 60 (8d8 + 20)<br />
-        <strong>AC:</strong> 11<br />
-        <strong>Speed:</strong> 35 ft<br />
-      </p>
-      <table class="table">
-        <tr>
-          <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-        </tr>
-        <tr>
-          <td>14</td><td>12</td><td>14</td><td>10</td><td>18</td><td>12</td>
-        </tr>
-      </table>    
-      <p>
-        <strong>Skills:</strong> +4 Deception, +7 Insight, +7 Perception<br />
-        <strong>Condition Immunities: </strong> Magical sleep<br />
-        <strong>Senses:</strong> Darkvision 60 ft, passive perception 16<br />
-        <strong>Languages:</strong> Elf, Imperial, Dwarf, Orc<br /> 
-        <strong>Challenge:</strong> 5
-      </p>
-      
-      <h4 id="actions-1">Actions</h4>
-      
-      <p><strong>Flame Strike:</strong> As an action, Elhavir picks a 10 cube in which flames burst into life.  Any creature in the area must make a DC 14 wisdom save or take 3d6 fire damage, or half that amount on a success.</p>
-    
-
-    </aside>
     <h4>Elhavir Soras</h4>
     <p>
       The ex-druid Elhavir was once an adventuring companion to Vanriel, and like her spent some time in Eastguard afterwards. After the druids of Gaian discovered he taught their secrets to another who had no intention of being or becoming a druid he went into hiding to escape their wrath. He is currently hiding among the refugees in the Riverside Market.
@@ -283,59 +156,6 @@
     <p>
       Elhavir has lost access to his druidic magic, and sold off his old equipment long ago.  Yet he is still driven inside by a rage stemming from the death of his old animal companion, one that manifests itself in the form of directed fire that he can create at will.
     </p>
-    <aside class="card col-sm-6 pull-right" id="erestor">
-      <h3>Erestor</h3>
-      <h4>Medium humanoid (elf), Chaotic Neutral</h4>
-
-      <p>
-        <strong>Hit Points:</strong> 88 (11d10 + 22)<br />
-        <strong>AC:</strong> 17 (studded leather)<br />
-        <strong>Speed:</strong> 35 ft<br />
-      </p>
-      <table class="table">
-        <tr>
-          <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-        </tr>
-        <tr>
-          <td>12</td><td>20</td><td>14</td><td>10</td><td>14</td><td>8</td>
-        </tr>
-      </table>    
-      <p>
-        <strong>Saving Throws:</strong> +5 Strength, +9 Dexterity<br />
-        <strong>Skills:</strong> +5 Athletics, +9 Acrobatics, +6 Perception, +9 Slight of Hand, +9 Stealth, +6 Survival<br />
-        <strong>Condition Immunities: </strong> Magical sleep<br />
-        <strong>Senses:</strong> Darkvision 60 ft, passive perception 16<br />
-        <strong>Languages:</strong> Elf, Dwarf, Morrind, Orc, Deran, Infernal<br /> 
-        <strong>Challenge:</strong> 9
-      </p>
-      
-      <p><strong>Favored Enemy:</strong> Beasts, as ranger feature (+4 damage)</p>
-      
-      <p><strong>Primeval Awareness:</strong> as ranger feature</p>
-      
-      <p><strong>Archery Fighting Style:</strong> +2 bonus to attack rolls she makes with ranged weapons.</p>
-      
-      <p><strong>Ranger Spellcasting:</strong> 4 1st level spell slots, 3 2nd level spell slots, 2 3rd level spell slots.</p>
-      
-      <p><strong>Crossbow Expert:</strong> As the feat</p>
-      
-      <p><strong>Greater Favored Enemy:</strong> Fiends, as the ranger feature</p>
-      
-      <p><strong>Fleet of Foot:</strong> as ranger feature (dash as bonus action)</p>
-      
-      <p><strong>Hide in Plain Sight:</strong> as ranger feature</p>
-      
-      <p><strong>Collosus Slayer:</strong> as ranger feature</p>
-      
-      <p><strong>Escape the Horde:</strong> as ranger feature</p>
-
-      <p><strong>Volley:</strong> as ranger feature</p>
-      <h4 id="actions-1">Actions</h4>
-      
-      <p><strong>+1 Longbow of Entangle:</strong> Ranged weapon attack. +12 to hit (1d8+6 damage). Anyone hit with this longbow must make a dexterity save (DC 14) or be restrained as vines shoot out from the arrow and grab them.</p>
-    
-
-    </aside>
     <h4>Erestor</h4>
     <p>
       The free-wheeling ranger Erestor runs the Dragon's Brew with his friend Ralf.
@@ -343,61 +163,6 @@
     <p>
       Erestor's previous life had him facing all kinds of creatures after a freak accident left him stranded on the other side of the world.  During this time he befriended, and then later saved, Ralf.
     </p>
-    <aside class="card col-sm-6 pull-right" id="ralf">
-      <h3>Ralf</h3>
-      <h4>Medium humanoid (half-dwarf), Neutral</h4>
-
-      <p>
-        <strong>Hit Points:</strong> 66 (11d8 + 11)<br />
-        <strong>AC:</strong> 19<br />
-        <strong>Speed:</strong> 45 ft<br />
-      </p>
-      <table class="table">
-        <tr>
-          <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-        </tr>
-        <tr>
-          <td>10</td><td>20</td><td>12</td><td>8</td><td>18</td><td>9</td>
-        </tr>
-      </table>    
-      <p>
-        <strong>Saving Throws:</strong> +4 Strength, +9 Dexterity<br />
-        <strong>Skills:</strong> +8 Perception, +8 Insight<br />
-        <strong>Resistances: </strong> Poison<br />
-        <strong>Senses:</strong> Darkvision 60 ft<br />
-        <strong>Languages:</strong> Imperial, Elf, Dwarf<br /> 
-        <strong>Challenge:</strong> 11
-      </p>
-      
-      <p><strong>Unarmored Defense:</strong> as monk feature</p>
-      
-      <p><strong>Martial Arts:</strong> as monk feature</p>
-      
-      <p><strong>Ki:</strong> 11 Ki points, as monk feature</p>
-      
-      <p><strong>Unarmored Movement:</strong> +20 ft, as monk feature</p>
-      
-      <p><strong>Deflect Missiles:</strong> as monk feature, 1d10+16</p>
-      
-      <p><strong>Slow Fall:</strong> as monk feature, reduce falling damage by 55</p>
-      
-      <p><strong>Stunning Strike:</strong> as monk feature, DC 16</p>
-      
-      <p><strong>Evasion:</strong> as monk feature</p>
-      
-      <p><strong>Stillness of Mind:</strong> as monk feature</p>
-      
-      <p><strong>Purity of Body:</strong> as monk feature</p>
-      <p><strong>Open Hand Technique:</strong> as monk feature</p>
-      <p><strong>Wholeness of Body:</strong> as monk feature</p>
-      <p><strong>Tranquility:</strong> as monk feature</p>
-      <h4 id="actions-1">Actions</h4>
-      
-      <p><strong>Multiattack:</strong> Ralf makes 2 unarmed strikes when he takes the attack action on his turn.</p>
-      <p><strong>Unarmed Strike:</strong> +9 to hit. 1d10+5 bludgeoning damage.</p>
-    
-
-    </aside>
     <h4>Ralf</h4>
     <p>
       The half-dwarf monk Ralf runs the Dragon's Brew inn with his friend Erestor.
@@ -659,46 +424,6 @@
   <div id="chapter2guildofheroes">
     <h3>The Guild of Heroes</h3>
     
-    <aside class="card col-sm-6 pull-right" id="alisonhighwater">
-      <h3>Allison Highwater</h3>
-      <h4>Medium humanoid (tiefling), Neutral</h4>
-
-      <p>
-        <strong>Hit Points:</strong> 80 (8d10 + 32)<br />
-        <strong>AC:</strong> 18 (plate)<br />
-        <strong>Speed:</strong> 30 ft<br />
-      </p>
-      <table class="table">
-        <tr>
-          <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-        </tr>
-        <tr>
-          <td>20</td><td>9</td><td>18</td><td>14</td><td>8</td><td>10</td>
-        </tr>
-      </table>    
-      <p>
-        <strong>Saving Throws:</strong> +8 Strength, +7 Constitution<br />
-        <strong>Skills:</strong> +9 Athletics, +2 Animal Handling, +3 Persuasion, +2 Survival<br />
-        <strong>Resistances: </strong> fire<br />
-        <strong>Senses:</strong> Darkvision 60 ft, passive perception 9<br />
-        <strong>Languages:</strong> Imperial, Elf, Orc<br /> 
-        <strong>Challenge:</strong> 8
-      </p>
-      
-      <p><strong>Great Weapon Fighting Style:</strong> reroll 1s and 2s on damage dice</p>
-      
-      <p><strong>Second Wind:</strong> as fighter feature 1d10+8</p>
-      
-      <p><strong>Action Surge:</strong> as fighter feature</p>
-      
-      <p><strong>Spellcasting:</strong> Allison is an 8th level spellcaster, she has 4 1st level spell slots and 2 2nd level spell slots. She knows the following cantrips: Booming Blade, Green Flame Blade</p>
-      <p><strong>War Magic:</strong> When Allison uses her action to cast a cantrip she can make 1 weapon attack as a bonus action.</p>
-      <h4 id="actions-1">Actions</h4>
-      <p><strong>Multiattack:</strong> Allison makes 2 attacks when she takes the attack action on her turn.</p>
-      <p><strong>Maul:</strong> +8 to hit, 2d6+5 damage.</p>
-    
-
-    </aside>
     <h4>Entering the guild</h4>
     <p>
     The guild is already abandoned. Nothing of value is left and nobody is around. In the center area there is a trap door that has been left open, and players can vaguely here somebody talking to herself. Below in the trap door is Allison Highwater who is currently trying to insert two keys into two different slots on different sides of the room at the same time by throwing chairs. Players can easily convince her to help the cause if they help her open the door. She stresses that all of the magic items are stored inside are evil and dangerous.      

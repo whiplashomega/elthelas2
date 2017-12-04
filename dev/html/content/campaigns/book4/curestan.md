@@ -18,49 +18,6 @@
   </p>
   <div id="curestanpeople">
   <h3>Important People in Cur'Estan</h3>
-    <aside class="card col-sm-6 pull-right" id="geradheartbren">
-      <h3>General Gerad Heartbren</h3>
-      <p><strong>Race:</strong> Moon Elf <br />
-    <strong>Class &amp; Level:</strong> Fighter 15 (Eldritch Knight) <br />
-    <strong>Background:</strong> Outlander <br />
-    <strong>Alignment:</strong> Neutral Good</p>
-    
-    <h4 id="proficiencies-6">Proficiencies</h4>
-    
-    <p><strong>Saving Throws:</strong> +10 Strength, +7 Constitution <br />
-    <strong>Skills:</strong> Athletics, Survival, Perception, Intimidation</p>
-    
-    <p>
-      <strong>Hit Points:</strong> 135 (15d10 + 45) <br />
-      <strong>AC:</strong> 20 (plate +2) <br />
-      <strong>Languages:</strong> Elf, Imperial, Dwarf, Orc
-    </p>
-    
-    <p><strong>Great Weapon Fighting:</strong> Gerad rerolls 1s and 2s on his damage dice when wielding a weapon in 2 hands.</p>
-    
-    <p><strong>Feats:</strong> Great Weapon Master, Polearm Master</p>
-    <h4 id="actions-1">Actions</h4>
-    <p><strong>Multiattack:</strong> Gerad makes 3 glaive attacks when he takes the attack action on his turn.</p>
-    <p><strong>Glaive +2:</strong> +12 (1d10+7 slashing) or +7 1d10+17 slashing</p>
-    
-    <p><strong>Second Wind:</strong> Gerad can recover 1d10+15 hit points as a bonus action, he must finish a short rest before he can use this ability again.</p>
-    
-    <p><strong>Action Surge:</strong> Gerad can take a second action on his turn.  He must finish a short rest before he does so again.</p>
-    
-    <p><strong>Indomitable:</strong> Gerad can reroll a saving throw that he fails. If he does so, he must use the new roll, he can use this feature twice before he finishes a long rest.</p>
-    
-    <p><strong>Spellcasting: </strong> Gerad has 4 1st level spell slots, 3 2nd level spell slots and 2 3rd level spell slots.  He knows the following spells: <strong>Shield, absorb elements, magic missile, gust of wind, mirror image, shatter, darkness, counterspell, fireball,</strong> and <strong>sending</strong>.  He knows the following cantrips: <strong>Green-Flame Blade, Booming Blade,</strong> and <strong>fire bolt</strong></p>
-    <p><strong>War Magic:</strong> When Gerad uses his action to cast a cantrip, he can make one weapon attack as a bonus action.</p>
-    <table class="table">
-      <tr>
-        <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-      </tr>
-      <tr>
-        <td>20</td><td>10</td><td>16</td><td>16</td><td>10</td><td>9</td>
-      </tr>
-    </table>
-    </aside>
-    
     <h4>Gerad Heartbren</h4>
     <p>
       The now aging Moon Elf general is a gifted strategist and the de facto leader of the resistance forces, as they have come to be known since the dissolution of the Alliance.  His tribe was wiped out by the Orcs shortly after the fall of Aridhem, while he was commanding troops at the Fortress of Light, then he was reassigned to Cur’Estan shortly before the Fortress of Light’s own fall.  He blames himself for not being present for either battle, and is now determined to do better.
@@ -71,47 +28,6 @@
     <p>
       <strong>Dislikes: </strong> Gerad holds a strong distaste for slavery and anything that shares similarities to it, such as serfdom or wage slavery.
     </p>
-    <aside class="card col-sm-6 pull-right" id="jameslightbringer">
-      <h3>Duke James Lightbringer</h3>
-      <p><strong>Race:</strong> Imperial Human <br />
-    <strong>Class &amp; Level:</strong> Cleric 13 (War Domain) <br />
-    <strong>Background:</strong> Noble <br />
-    <strong>Alignment:</strong> Lawful Good</p>
-    
-    <h4 id="proficiencies-6">Proficiencies</h4>
-    
-    <p><strong>Saving Throws:</strong> Wisdom, Charisma<br />
-    <strong>Skills:</strong> Persuasion, History, Religion, Athletics</p>
-    
-    <p>
-      <strong>Hit Points:</strong> 91 (13d8 + 26) <br />
-      <strong>AC:</strong> 23 (plate +2, shield +1) <br />
-      <strong>Languages:</strong> Imperial, Dwarf, Morrind, Orc, Elf
-    </p>
-    
-    <p><strong>Feats:</strong> War Caster</p>
-    <h4 id="actions-1">Actions</h4>
-    
-    <p><strong>Lance +1:</strong> +9 (1d12+1d8+4 piercing)</p>
-    
-    <p><strong>Longsword +1:</strong> +9 (2d8+4 slashing)</p>
-    
-    <p><strong>Spellcasting: </strong> Lightbringer has the following spell slots: 4 1st level, 3 2nd level, 3 3rd level, 3 4th level, 2 5th level, 1 6th level, 1 7th level.</p>
-    
-    <p><strong>War Priest: </strong> When James uses the attack action, he can make one weapon attack as a bonus action.  He can do this 5 times.  He regains all uses on a long rest.</p>
-    
-    <p><strong>Guided Strike: </strong> James can uses his channel divinity to strike with supernatural accuracy.  When he makes an attack roll, he can use his channel divinity to gain a +10 bonus to the roll.</p>
-    
-    <p><strong>War God's Blessing: </strong> James can use his reaction and his channel divinity to grant a creature within 30 ft of him a +10 bonus to an attack roll.</p>
-    <table class="table">
-      <tr>
-        <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-      </tr>
-      <tr>
-        <td>16</td><td>9</td><td>14</td><td>12</td><td>20</td><td>12</td>
-      </tr>
-    </table>  
-    </aside>
     <h4>Duke James Lightbringer</h4>
     <p>
       Cleric of Alohim, Ambassador of the King of Kandor, and Commander of the Kandori armies in the east, Lightbringer is a leader of the Lords of the Rising Dawn.  He has a thousand Kandori soldiers at his command, and a contingent of skilled Paladins dedicated above all to wiping out the Orcs.  Despite all the setbacks, General Lightbringer remains constantly optimistic about their chances of success.
@@ -122,54 +38,6 @@
     <p>
       <strong>Dislikes: </strong> Duke Lightbringer is a strong believer in the divine right to rule, and does not like that a common born person such as General Heartbren is in command at Cur'Estan.  He hates non-humans, particularly the green-skin races such as orcs and goblins, but has no love lost for elves, dwarves, halflings, or gnomes either.
     </p>
-    <aside class="card col-sm-6 pull-right" id="haeraoelefros">
-      <h3>Haera Oelefros</h3>
-        <p><strong>Race:</strong> Half-Elf <br />
-    <strong>Class &amp; Level:</strong> Bard 11 (Valor Bard) <br />
-    <strong>Background:</strong> Entertainer <br />
-    <strong>Alignment:</strong> Neutral</p>
-    
-    <h4 id="proficiencies-6">Proficiencies</h4>
-    
-    <p><strong>Saving Throws:</strong> Dexterity, Charisma<br />
-    <strong>Skills:</strong> Acrobatics (expertise), Performance (expertise), Deception (expertise), Persuasion (expertise), Slight of Hand, Disguise Kit, Harp</p>
-    
-    <p>
-      <strong>Hit Points:</strong> 77 (11d8 + 22) <br />
-      <strong>AC:</strong> 21 (half-plate +1, shield +1) <br />
-      <strong>Languages:</strong> Imperial, Dwarf, Morrind, Orc, Elf
-    </p>
-    
-    <p><strong>Feats:</strong> War Caster</p>
-    <h4 id="actions-1">Actions</h4>
-    
-    <p><strong>Sheleleigh:</strong> +9 (1d8+5 magical bludgeoning)</p>
-    
-    <p><strong>Spellcasting: </strong> Haera has the following spell slots: 4 1st level, 3 2nd level, 3 3rd level, 3 4th level, 2 5th level, 1 6th level.</p>
-    
-    <p>
-      <strong>Bardic Inspiration:</strong> Haera can inspire others through stirring words or music. To do so, she uses a bonus action on your turn to choose one creature other than herself within 60 feet of her who can hear her. That creature gains one Bardic Inspiration die, a d10.</p>
-    <p>
-      Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, damage roll, or saving throw it makes, or as a reaction add it to its AC. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the DM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.
-    </p>
-    <p>
-      She can use this feature 5 times. She regains any expended uses when she finishes a short or long rest.
-    </p>
-    <p>
-      <strong>Song of Rest:</strong> Haera can use soothing music or oration to help revitalize her wounded allies during a short rest. If her or any friendly creatures who can hear her performance regain hit points at the end of the short rest, each of those creatures regains an extra 1d8 hit points.
-    </p>
-    <p>
-      <strong>Countercharm:</strong> Haera has the ability to use musical notes or words of power to disrupt mind-influencing effects. As an action, she can start a performance that lasts until the end of her next turn. During that time, her and any friendly creatures within 30 feet of her have advantage on saving throws against being frightened or charmed. A creature must be able to hear her to gain this benefit. The performance ends early if she is incapacitated or silenced or if she voluntarily ends it (no action required).
-    </p>
-    <table class="table">
-      <tr>
-        <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-      </tr>
-      <tr>
-        <td>8</td><td>14</td><td>14</td><td>14</td><td>9</td><td>20</td>
-      </tr>
-    </table>  
-    </aside>
     <h4>Master Bard Haera Oelefros</h4>
     <p>
       Haera Oelefros has led the Makers of Legend in Kandor for 15 years, and is convinced that the next grand story for the ages will come from the exploits of the resistance members.  She has brought a small contingent of bards with her to document what is going on, embedding them in various units she hopes will prove legendary.
@@ -183,42 +51,6 @@
     <p>
       <strong>Dislikes: </strong> Anyone who she thinks is more important than her.
     </p>
-    <aside class="pull-right card col-sm-6" id="kymanhexhammer">
-      <h3>Kyman Hexhammer</h3>
-        <p><strong>Race:</strong> Morrind Dwarf <br />
-    <strong>Class &amp; Level:</strong> Rogue 3 (Mastermind), Wizard (Enchanter) 9 <br />
-    <strong>Background:</strong> Sailor <br />
-    <strong>Alignment:</strong> Neutral Evil</p>
-    
-    <h4 id="proficiencies-6">Proficiencies</h4>
-    
-    <p><strong>Saving Throws:</strong> Dexterity, Intelligence<br />
-    <strong>Skills:</strong> Arcana, Athletics, Deception (expertise), Insight (expertise), Perception, Slight of Hand, Disguise Kit, Forgery Kit, Thieves' Tools</p>
-    
-    <p>
-      <strong>Hit Points:</strong> 75 (3d8 + 9d6 + 24) <br />
-      <strong>AC:</strong> 17 (studded leather + 2) <br />
-      <strong>Languages:</strong> Imperial, Dwarf, Morrind, Orc, Elf, Goblin, Deran
-    </p>
-    
-    <p><strong>Feats:</strong> </p>
-    
-    <h4 id="actions-1">Actions</h4>
-    <p>
-      <strong>Cunning Action:</strong> Kyman can take the dash, disengage, help, and hide actions as bonus actions on his turn.  He can use the help action from a distance of 30 feet.
-    </p>
-    <p>
-      <strong>Spellcasting: </strong> Kyman is a 9th level spellcaster and has the following wizard spell slots: 4 1st level, 3 2nd level, 3 3rd level, 3 4th level, and 1 5th level.
-    </p>
-    <table class="table">
-      <tr>
-        <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-      </tr>
-      <tr>
-        <td>8</td><td>14</td><td>14</td><td>20</td><td>10</td><td>14</td>
-      </tr>
-    </table>  
-    </aside>
     <h4>Kyman Hexhammer</h4>
     <p>
       The Black Sun leader from Stromforde was appalled at the Dwarves decision to withdraw from the war.  He may not care about nations, unity, or goodness, but the destruction wrought by the Prince of Fiends and his Orc armies has made the ‘legitimate’ acquisition of wealth difficult.  He now uses his many connections to recruit spies and assassins for the resistance, for a fee of course.
@@ -235,34 +67,6 @@
     <p>
       <strong>Dislikes:</strong> People who worry too much about honor and let it get in the way of getting things done (or his future wealth).  Anyone who fails to pay him for services rendered.
     </p>
-    <aside class="card col-sm-6 pull-right" id="wyrmlingtrapsmith">
-        <h3>Wyrmling Trapsmith</h3>
-        <p><strong>Race:</strong> Kobold <br />
-      <strong>Alignment:</strong> Lawful Neutral</p>
-      
-      <h4 id="proficiencies-6">Proficiencies</h4>
-      
-      <strong>Skills:</strong> Investigation, Arcana</p>
-      
-      <p>
-        <strong>Hit Points:</strong> 4 (1d6) <br />
-        <strong>AC:</strong> 15 (studded leather) <br />
-        <strong>Languages:</strong> Draconic, Imperial, Elf, Dwarf
-      </p>
-      
-      <h4 id="actions-1">Actions</h4>
-      <p>
-        <strong>Dagger: </strong> +5 (1d4+3)
-      </p>
-      <table class="table">
-        <tr>
-          <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-        </tr>
-        <tr>
-          <td>6</td><td>16</td><td>10</td><td>18</td><td>14</td><td>10</td>
-        </tr>
-      </table>
-    </aside>
     <h4>Quartermaster Wyrmling Trapsmith</h4>
     <p>
       The tiny kobold quartermaster was once an Orc slave before escaping.  He has proven himself incredibly adept at numbers and organization of supplies.  He is incredibly loyal to General Heartbren, who liberated his mine from the orcs.  His clan now controls a silver mine in the Dragons Teeth Mountains, just on the Demal'Thor side of the border.
@@ -276,39 +80,6 @@
     <p>
       <strong>Dislikes: </strong> Refugees (or anyone) who doesn’t contribute meaningfully to the community.
     </p>
-    <aside class="card col-sm-6 pull-right" id="margo">
-      <h3>Margo</h3>
-        <p><strong>Race:</strong> Stagen Gnome <br />
-    <strong>Class &amp; Level:</strong> Wizard (Transmuter) 17 <br />
-    <strong>Background:</strong> Sage <br />
-    <strong>Alignment:</strong> Neutral Good</p>
-    
-    <h4 id="proficiencies-6">Proficiencies</h4>
-    
-    <p><strong>Saving Throws:</strong>Constitution, Wisdom, Intelligence<br />
-    <strong>Skills:</strong> Arcana, History, Insight, Perception, Persuasion</p>
-    
-    <p>
-      <strong>Hit Points:</strong> 119 (17d6 + 51) <br />
-      <strong>AC:</strong> 17 (mage armor, bracers of defense) <br />
-      <strong>Languages:</strong> Imperial, Dwarf, Morrind, Orc, Elf, Goblin, Deran, Stagen, Hisru, Staelic
-    </p>
-    
-    <p><strong>Feats:</strong> Resilient, War Caster, Alert, Elemental Adept (fire)</p>
-    
-    <h4 id="actions-1">Actions</h4>
-    <p>
-      <strong>Spellcasting: </strong> Margo is a 17th level spellcaster and has the following wizard spell slots: 4 1st level, 3 2nd level, 3 3rd level, 3 4th level, 2 5th level, 1 6th level, 1 7th level, 1 8th level, and 1 9th level.
-    </p>
-    <table class="table">
-      <tr>
-        <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-      </tr>
-      <tr>
-        <td>8</td><td>14</td><td>14</td><td>26</td><td>12</td><td>10</td>
-      </tr>
-    </table> 
-    </aside>
     <h4>Margo</h4>
     <p>
       No one really knows much about Margo except that she showed up in town about a month ago and quickly showed off a skill in magic no one else in town had.  She set up shop selling magic items for a premium price.  She seems to dislike personal attachments, and never really visibly leaves her house/shop.  No one really knows where she gets materials, where she stores her goods for sale, or really anything else about her.
@@ -316,40 +87,6 @@
     <p>
       In reality Margo is an archmage from Stagenheim who has been travelling the world selling magical items for years.  For safety she does not keep any of her stock on this plane of existence, a tactic she started when she tried for a time to run her business via mail-order catalog.  She is deeply concerned by the Prince of Fiends success, and so has decided to ply her trade among those most likely to do some good in the fight against him.  She has no desire to get into any sort of combat herself, but will defend her shop if it is attacked.
     </p>
-    <aside class="card col-sm-6 pull-right" id="jaxanchin">
-      <h3>Jaxan Chin</h3>
-        <p><strong>Race:</strong> Hisru Human <br />
-    <strong>Class &amp; Level:</strong> Cleric (Life) 4 <br />
-    <strong>Background:</strong> Acolyte <br />
-    <strong>Alignment:</strong> Neutral Good</p>
-    
-    <h4 id="proficiencies-6">Proficiencies</h4>
-    
-    <p><strong>Saving Throws:</strong>Wisdom, Charisma<br />
-    <strong>Skills:</strong> Insight, Persuasion, History, Religion</p>
-    
-    <p>
-      <strong>Hit Points:</strong> 24 (4d8 + 4) <br />
-      <strong>AC:</strong> 20 (plate armor, shield) <br />
-      <strong>Languages:</strong> Hisru, Staelic, Stagen, Imperial, Elf
-    </p>
-    
-    <h4 id="actions-1">Actions</h4>
-    <p>
-      <strong>Mace: </strong> melee weapon attack +4 (1d8+2 bludgeoning)
-    </p>
-    <p>
-      <strong>Spellcasting: </strong> Jaxan is a 4th level spellcaster and has the following cleric spell slots: 4 1st level, 3 2nd level.
-    </p>
-    <table class="table">
-      <tr>
-        <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-      </tr>
-      <tr>
-        <td>14</td><td>10</td><td>12</td><td>14</td><td>16</td><td>14</td>
-      </tr>
-    </table> 
-    </aside>
     <h4>Jaxan Chin</h4>
     <p>
       Jaxan is a cleric of Amathera, and the local leader of Amathera's Shield, the organization running the refugee camp.  Jaxan is not actually a particularly skilled or important cleric, but Amathera's Shield is short-handed in the extreme, and he was the highest ranking member they had available to assign to Cur'Estan.

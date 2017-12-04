@@ -67,23 +67,23 @@
       <p>
         Members of the Black Sun will be approached on entering the town and ordered to report to Kyman immediately.  Kyman will inform them that he is now their boss, and he needs someone to be part of a new infiltration team that General Heartbren is assembling.
       </p>
-      <!--<h4>Black Wolf Irregulars</h4>
+      <h4>Black Wolf Irregulars</h4>
       <p>
         Members of the Black Wolf Irregulars will either already be in town preexisting, or arriving as a survivor from another (now dead or disbanded) unit.  General Heartbren is the local commander, and lower ranked members will tell them to report to General Heartbren immediately.
       </p>
-      <h4>Champions of Cora</h4>
+      <!--<h4>Champions of Cora</h4>
       <p>
         The Champions of Cora have no local representation currently, but members of the Champions may be ordered by a cleric of Cora to go to Cur'Estan and assist however possible.  People in town will tell them to talk to General Heartbren to find out where they are needed.
       </p>
       <h4>Dormanian Imperial Guard</h4>
       <p>
         Members of the Dormanian Imperial Guard may arrive as part of the new delegation as a guard or diplomatic staff with the ambassador (either Theodore Gloryheart, Alexandra Ransomir, or Genevieve Octavius, depending on who won the election).  The ambassador will order them to infiltrate the Irregulars, if it is Alexandra or Theodore, to help the effort, and if it is Genevieve, to serve as a spy for the Emperor.
-      </p>-->
+      </p>
       <h4>Guild of Heroes</h4>
       <p>
         The Guild of Heroes has recently taken a contract from General Heartbren to get a monster hunting specialist on an infiltration and assault team, and the PC member of the guild is assigned that contract.  They have a contact in town, one of the merchants, Feril Honeybait.
       </p>
-      <!--<h4>International Grangemaster's Alliance</h4>
+      <h4>International Grangemaster's Alliance</h4>
       <p>
         The Grangemaster's Alliance has a local chapterhouse, and has taken it upon themselves to fill the gaps in supplying the local refugee camp.  A PC member of the Grangemaster's Alliance will be sent to General Heartbren to join his team.  The local Grangemaster, a farmer named Winslow Fredericks, is particularly concerned about the increase in raids on local farms and will use what resources are at his disposal to protect the farmers and their livelihoods.
       </p>-->
@@ -162,6 +162,7 @@
     
     <p><strong>Enter Wyrmling Trapsmith.</strong> Wyrmling Trapsmith will interrupt Tilda's meeting with Kyman to complain that some of his booze has gone missing.  He will blame Kyman, claiming that one of Kyman's thieves must have stolen it. Kyman will deny it strongly (it wasn't him, it was Ogrun). Unless Tilda calms him down Wyrmling will leave in a huff.
     
+    <p><strong>Maggie Pelagius</strong> Maggie Pelagius is a corrupt law-enforcement officer from Westport. She has been hunting Tilda for years, always to have Tilda slip out of her grasp. Tilda will be approached by Maggie on leaving Kyman's house. Maggie will have a wanted poster with Tilda's face on it.  Maggie will ask Tilda if she 'has seen this woman?' but does not recognize her.</p>
     
     <h4>Silas of Irons Entrance</h4>
     
@@ -179,6 +180,7 @@
     
     <p>Eobard is arriving with Farnor Spiketooth, the ambassador from Cur'Estan. They will be met at the entrance to the city by General Heartbren. The general will greet them graciously and offer them one of the old embassy buildings to set up in. He talks to the ambassador on the side for a brief bit, after which he will lead them to the embassy building. There is a staff of servants already in place. Farnor will order Barry, Salvator, and H.R. to start settling in and to search the building. He will have special orders for Eobard however. He will say that General Heartbren has requested that Farnor's best man be assigned to a special joint task force, and Farnor will say he is picking Eobard for that role. Eobard is to report to the castle immediately.</p>
     
+    <p><strong>Barry Quits:</strong></p> Barry will be incredibly upset at Farnor for choosing Eobard over him when he is 'clearly the better warrior.' To which Farnor will respond that he is too inexperienced and unpredictable for a mission of this magnitude. Barry will then quit and storm off in a huff.
     
     <h4>Flykr Moon Entrance</h4>
     
@@ -213,6 +215,7 @@
       <li>A Dragonborn knight who comes highly recommended by the Deran Ambassador named Eobard</li>
     </ul>
     <p>Eadric has the morning off to collect his new squad, but should report to the war room at noon. Gerad will have an initial mission for them then, and will give Eadric the special mission of learning as much as he can about them, particularly whether they can be trusted and are committed to the cause.</p>
+    <p>When he goes to leave the castle he will encounter the bagpipe duel, with a crowd gathered around. Across the crowd he will see his brother, Alex, who will catch his eye, smile and then disappear into the crowd.</p>
     <h4>Coming Together</h4>
     <p>
       <strong>The bagpipe duel.</strong> The first encounter where all the players are present will be the bagpipe duel between Haera and Barbarious. It will be opposed performance checks, with advantage if proficient in the instrument (Haera is not, but her performance modifier is +13). If Haera loses, she will leave in a huff. The party will have a chance to interact or talk.
@@ -242,45 +245,6 @@
     <p>
       There is 1 camp close to Cur'Estan which is responsible for the raids that brought the raiders to General Heartbren's attention.  That camp has 5 orcs, 3 hobgoblins, 2 goblins and 3 wargs.
     </p>
-    <aside class="card col-sm-6 pull-right" id="sandibrightsword">
-      <h3>Sandi Brightsword</h3>
-      <h4>Medium Humanoid (human), Lawful Good</h4>
-      <p>
-        <strong>Hit Points:</strong> 24 (3d10 + 6)<br />
-        <strong>AC:</strong> 20 (plate, shield)<br />
-        <strong>Speed:</strong> 30 ft, 60 ft on horseback<br />
-      </p>
-      <table class="table">
-        <tr>
-          <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-        </tr>
-        <tr>
-          <td>16</td><td>8</td><td>14</td><td>10</td><td>12</td><td>14</td>
-        </tr>
-      </table>    
-      <p>
-        <strong>Saving Throws:</strong> +3 Wis, +4 Cha<br />
-        <strong>Skills:</strong> +3 Perception, +3 Animal Handling, +4 Persuasion, +4 History<br />
-        <strong>Senses:</strong> passive perception 13<br />
-        <strong>Languages:</strong> Imperial, Dwarf, Morrind<br /> 
-        <strong>Challenge:</strong> 3
-      </p>
-    <p><strong>Divine Sense:</strong> As Paladin</p>
-    
-    <p><strong>Lay on Hands: </strong> As Paladin, max 15 hp</p>
-    
-    <p><strong>Dueling Fighting Style:</strong> +2 damage when wielding a single one handed weapon, included below.</p>
-    
-    <p><strong>Divine Smite:</strong> As a Paladin</p>
-    <h4 id="actions-1">Actions</h4>
-    
-    <p><strong>Morningstar:</strong> Melee weapon attack To hit: +5, Damage: 10 (1d8+5) bludgeoning</p>
-    
-    <p><strong>Lance:</strong> Melee weapon attack (reach). To hit: +5, Damage: 12 (1d12+5) piercing</p>
-    
-    <p><strong>Spellcasting:</strong> Sandi has 3 first level spell slots that she can use to cast Paladin spells or power her divine smite.</p>
-    
-    </aside>
     <p>
       The most recent raid was of a farm 15 miles south of the town.  A Lords of the Rising Dawn patrol saw the smoke and responded, only to arrive too late.  The farmer and his family were dead on the scene, the house and barn burned to the ground.  The livestock were missing, and tracks led to the south.  After following the tracks for a few miles they lost the trail and returned to Cur'Estan to report in.  The patrol leader, Sergeant Sandi Brightsword, is available for the players to interrogate.
     </p>
@@ -326,34 +290,6 @@
     <p>
       The bodies of the family are laying covered by blankets outside the house until they can be retreived.  They were left there by the Lords of the Rising Dawn after being discovered in various places around the property.  All of the bodies show signs of being attacked with axes.  The children's bodies also have tooth marks.  A sufficiently high nature check can determine that the teeth marks are from a Worg, a vicious relative of wolves used by orcs as attack mounts. Marmaduc's body is not present.
     </p>
-    <aside class="card col-sm-6 pull-right" id="gulloxhameater">
-      <h3>Gullox Hameater</h3>
-      <h4>Small Humanoid (goblinoid), Neutral Evil</h4>
-      <p>
-        <strong>Hit Points:</strong> 9 (2d6 + 2)<br />
-        <strong>AC:</strong> 16 (leather armor, shield)<br />
-        <strong>Speed:</strong> 15 ft (Gullox's leg is injured)<br />
-      </p>
-      <table class="table">
-        <tr>
-          <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-        </tr>
-        <tr>
-          <td>8</td><td>16</td><td>12</td><td>10</td><td>8</td><td>10</td>
-        </tr>
-      </table>    
-      <p>
-        <strong>Skills:</strong> Stealth +7<br />
-        <strong>Senses:</strong> Darkvision 60 ft. passive perception 9<br />
-        <strong>Languages:</strong> Goblin, Orc<br /> 
-        <strong>Challenge:</strong> 1/2
-      </p>
-      <p><strong>Nimble Escape:</strong> The goblin can take the Disengage or Hide action as a bonus action on each of its turns.</p>
-      <h4 id="actions-1">Actions</h4>
-      <p><strong>Scimitar:</strong> Melee Weapon Attack: +5 to hit, reach 5 ft, one target.  Hit 6 (1d6+3) slashing damage.</p>
-      <p><strong>Shortbow:</strong> Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit 6 (1d6+3) piercing damage.</p>
-    </aside>
-    
     <p>
       One of the goblins, Gullox Hameater, on the raid was injured in the fight, and is hiding in the wheat field nearby.  If the players search the wheat field he can be found with a DC 14 perception check (or passive perception check).  He will not attack, realizing he is outnumbered, but is unwilling to help the players.  He can be bribed or intimidated into giving up the location of their camp.  He will not give the players clues to the larger raiding force if he can help it, and if he feels like he can get away cleanly he will do so. He does know that one of the halflings (Marmaduc, though he doesn't know the name) offered to show the orcs where the Littlefoots had hidden the Red Gold Wine if they let him live and was taken prisoner.
     </p>
@@ -483,63 +419,6 @@
   </div>
   <div id="chapter1randomencounters">
     <h3>Random Encounters</h3>
-    <aside class="card col-sm-6 pull-right" id="brugge">
-      <h3>Brugge, the Wounded Orc</h3>
-      <h4>medium humanoid (orc), lawful evil</h4>
-    <p>
-      <strong>Hit Points:</strong> 1 (max 15)<br />
-      <strong>AC:</strong> 14 (scale mail)<br />
-      <strong>Speed:</strong> 0 until healed, then 30 ft<br />
-    </p>
-    <table class="table">
-      <tr>
-        <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-      </tr>
-      <tr>
-        <td>14</td><td>10</td><td>12</td><td>8</td><td>10</td><td>12</td>
-      </tr>
-    </table>    
-    <p>
-      <strong>Skills: Deception +3</strong> <br />
-      <strong>Senses:</strong> darkvision 60 ft, passive perception 10<br />
-      <strong>Languages:</strong> Orc, Goblin<br /> 
-      <strong>Challenge: 0</strong>
-    </p>
-    
-    <h4 id="actions-1">Actions</h4>
-    
-    <p><strong>Dagger:</strong> +4 (1d4+2)</p>
-    
-    </aside>
-    <aside class="card col-sm-6 pull-right" id="moonelfrefugee">
-      <h3>Moon Elf Refugee</h3>
-      <h4>medium humanoid (elf), neutral</h4>
-    <p>
-      <strong>Hit Points:</strong> 12 (2d8 + 2)<br />
-      <strong>AC:</strong> 11<br />
-      <strong>Speed:</strong> 35 ft<br />
-    </p>
-    <table class="table">
-      <tr>
-        <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-      </tr>
-      <tr>
-        <td>10</td><td>12</td><td>12</td><td>10</td><td>10</td><td>10</td>
-      </tr>
-    </table>    
-    <p>
-      <strong>Skills:</strong> Perception +2<br />
-      <strong>Condition Immunities: </strong> Magical sleep<br />
-      <strong>Senses:</strong> Darkvision 60 ft, passive perception 12<br />
-      <strong>Languages:</strong> elf, dwarf, imperial<br /> 
-      <strong>Challenge:</strong> 0
-    </p>
-    
-    <h4 id="actions-1">Actions</h4>
-    
-    <p><strong>Dagger:</strong> Melee weapon attack: reach 5 ft, To hit: +3, Damage: 4 (1d4+1) piercing</p>
-    
-    </aside>
     <p>
       The following random encounters can occur at any of the 'random encounter points' either randomly or as desired by the DM.
     </p>
@@ -560,9 +439,9 @@
     <p>
       If rescued by the party the refugees have nothing to give them, but will speak highly of them to Jaxan Chin at the refugee camp when they get there. If one or more of the refugees dies they will be appreciative, but will not mention the incident to Jaxan outside of 'we were rescued by some soldiers'.
     </p>
-    <h4>Backstory Encounter</h4>
+    <h4>Backstory Encounter: Bartok Wailmane</h4>
     <p>
-      One random encounter should be designed based on a party member's back story.
+      While the party is resting, Silas is woken by someone shaking him awake. It is Bartok Wailmane, accompanied by Jazelle. Bartok will gloat to Silas about how his quest is hopeless, how Nera is nothing, and only Zhuul can give him the vengeance he desires. If Silas breaks out Jazelle will dimension door both of them away. Jazelle will interrupt Bartok to ask if she can kill Flykr. Bartok will respond 'not now! they will die when Zhuul decides and not before!'.
     </p>
   </div>
 </div>

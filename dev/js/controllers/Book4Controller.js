@@ -1,6 +1,51 @@
 /*global angular, jQuery*/
 (function(ng, $) {
-  ng.module('elthelas').controller('Book4Controller', ['$scope', '$http', function($scope, $http) {
+  ng.module('elthelas').directive('drag', ['$document', function($document) {
+  return {
+    link: function(scope, element, attr) {
+      var startX = 0, startY = 0, x = 0, y = 0;
+
+      element.css({
+       position: 'relative',
+       cursor: 'pointer'
+      });
+
+      element.on('mousedown', function(event) {
+        // Prevent default dragging of selected content
+        event.preventDefault();
+        startX = event.pageX - x;
+        startY = event.pageY - y;
+        $document.on('mousemove', mousemove);
+        $document.on('mouseup', mouseup);
+      });
+
+      function mousemove(event) {
+        y = event.pageY - startY;
+        x = event.pageX - startX;
+        element.parent().css({
+          top: y + 'px',
+          left:  x + 'px'
+        });
+      }
+
+      function mouseup() {
+        $document.off('mousemove', mousemove);
+        $document.off('mouseup', mouseup);
+      }
+    }
+  };
+}]).directive('dynamic', function ($compile) {
+  return {
+    restrict: 'A',
+    replace: true,
+    link: function (scope, ele, attrs) {
+      scope.$watch(attrs.dynamic, function(html) {
+        ele.html(html);
+        $compile(ele.contents())(scope);
+      });
+    }
+  };
+}).controller('Book4Controller', ['$scope', '$http', '$sce', '$compile', function($scope, $http, $sce, $compile) {
     $scope.navs = [
         {
           text: 'The World of Elthelas',
@@ -283,9 +328,9 @@
           children: []
         },
         {
-          text: "Appendix A: Index of Character Entries",
+          text: "NPC Character Entries",
           url: "#characterindex",
-          file: "appendixa.md",
+          file: "npcs.html",
           children: []
         }
       ];
@@ -294,7 +339,33 @@
     $scope.switchChapter = function(nav) {
       $scope.currentnav = nav;
       $http.get('/html/content/campaigns/book4/' + nav.file).then(function(response) {
-        $scope.content = response.data;
+        if(nav.file !== 'npcs.html') {
+          $scope.htmlcontent = "";
+          $scope.content = response.data;
+        } else {
+          $scope.content = "";
+          var trusted = $sce.trustAsHtml(response.data);
+          $scope.htmlcontent = response.data;
+        }
+        setTimeout(function() {
+          $('.datatable tfoot th').each(function() {
+            var title = $(this).text();
+            $(this).html( '<input type="text" class="form-control" style="min-width: 80px" placeholder="Search '+title+'" />' );
+          });
+                
+          var table = $('.datatable').DataTable({
+            responsive: true,
+            fixedHeader: {
+              footer: true
+            },
+          });
+          table.columns().every(function () {
+            $('input', this.footer()).on('keyup change', function(a, b) {
+              var index = this.parentNode.cellIndex;
+              table.column(index).search(this.value).draw();
+            });
+          });
+        }, 2000);
       });
     }
   }]);

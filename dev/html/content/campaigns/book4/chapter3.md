@@ -109,80 +109,11 @@
     <h5>8. Purple Worm Nest</h5>
     <p>A few miles to the east of town, some miners accidentally broke through into a purple worm's nest a few months ago. The mine was abandoned after that, and various monsters have moved in instead.</p>
     <h4>Important People</h4>
-    <aside class="card col-sm-6 pull-right" id="genevieveoctavius">
-      <h3>Genevieve Octavius</h3>
-      <h4>Medium humanoid (human), Lawful Evil</h4>
-
-      <p>
-        <strong>Hit Points:</strong> 48<br />
-        <strong>AC:</strong> 17 (demon-hide leather)<br />
-        <strong>Speed:</strong> 30 ft<br />
-      </p>
-      <table class="table">
-        <tr>
-          <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-        </tr>
-        <tr>
-          <td>8 (-1)</td><td>16 (+3)</td><td>12 (+1)</td><td>10 (+0)</td><td>13 (+1)</td><td>20 (+5)</td>
-        </tr>
-      </table>    
-      <p>
-        <strong>Saving Throws: Wis +4, Cha +8</strong> <br />
-        <strong>Skills:</strong> Deception +8, Persuasion +8, History +3, Intimidation +8<br />
-       <strong>Senses:</strong> passive perception 11<br />
-        <strong>Languages:</strong> Imperial, Dwarf, Elf, Morrind, Orc, Infernal <br /> 
-        <strong>Challenge:</strong> 8
-      </p>
-      
-      <p><strong>Warlock:</strong> Genevieve is an 8th level warlock, with the Pact of the Chain and Fiend Patron features.</p>
-      
-      <h4 id="actions-1">Actions</h4>
-      <p><strong>Multiattack:</strong> Genevieve makes 2 attacks with her Eldritch Blast when she takes the attack action on her turn.</p>
-      <p><strong>Eldritch Blast:</strong> 300 ft, +8 (1d10+5)</p>
-    
-
-    </aside>
     <h5>Genevieve Octavius.</h5> 
     <p>
       The Duchess of Cur'Mestin was an early supporter of Manius Aquila.  She has always been known as a power hungry woman.  The third (and least favored) child of her father, the previous Duke Octavius, she had her elder siblings murdered in their sleep (although it was never proven). Then, frustrated by her father's continued long life, waited until he slighted her at a party, then challenged him to a duel. She defeated her father in 'fair' combat after he tripped on something he couldn't see, inheriting his titles and duchy.
     </p>
     <p>After rising to power, Genevieve proceeded to consolidate it, swiftly replacing the counts and barons under her with men and women directly loyal to her.  Her largest frustration has been her own wayward daughter (and heir).</p>
-    <aside class="card col-sm-6 pull-right" id="genevieveoctaviusii">
-      <h3>Genevieve Octavius II</h3>
-      <h4>medium humanoid (human), Chaotic Good</h4>
-
-      <p>
-        <strong>Hit Points:</strong> 45<br />
-        <strong>AC:</strong> 18 (plate)<br />
-        <strong>Speed:</strong> 30 ft<br />
-      </p>
-      <table class="table">
-        <tr>
-          <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-        </tr>
-        <tr>
-          <td>16 (+3)</td><td>8 (-1)</td><td>16 (+3)</td><td>14 (+2)</td><td>8 (-1)</td><td>18 (+4)</td>
-        </tr>
-      </table>    
-      <p>
-        <strong>Saving Throws:</strong> Wis +2, Cha +7<br />
-        <strong>Skills:</strong> Persuasion +7, History +5, Athletics +6, Religion +5<br />
-        <strong>Condition Immunities: </strong> disease<br />
-        <strong>Senses:</strong> passive perception 9<br />
-        <strong>Languages:</strong> imperial, morrind<br /> 
-        <strong>Challenge:</strong> 5
-      </p>
-      
-      <p><strong>Smite:</strong> Can expend a spell slot to do additional radiant damage on an attack. After hitting an opponent with an attack can expend a 1st level spell slot to do 2d8 additional radiant damage on the attack plus an additional 1d8 radiant damage for every level above 1st.</p>
-      <p><strong>Spellcasting:</strong> Genevieve is a 5th level spellcaster. She has 4 1st level spell slots and 2 second level spell slots and has the following spells prepared: cure wounds, shield of faith, thunderous smite, wrathful smite, bane, hunter's mark, zone of truth, find steed, hold person, misty step</p>
-      <h4 id="actions-1">Actions</h4>
-      
-      <p><strong>Greatsword +1:</strong> Melee Weapon Attack. Range 5 ft. To hit: +7 (damage 2d6+4) reroll 1s and 2s in damage dice.</p>
-      
-      <p><strong>Handaxe:</strong> Melee or Ranged Weapon Attack. Range 20/60. To hit: +6 (damage 1d4+3)</p>
-    
-
-    </aside>
     <h5>Genevieve Octavius II.</h5>
     <p>
       Named by her mother in a pique of vanity, the younger Genevieve became enamored at a young age with a local priest of Cora. That priest soon died in suspicious circumstances (after her mother discovered their budding relationship), and young Genevieve put the pieces together.  Her uncle and grandfathers deaths, the disappearances among those who opposed her mother's iron fisted rule, and her own lover. When her mother pledged to support Manius Aquila's rebellion and began publicly trafficking with devils, Genevieve began quietly communicating with the Empress, and organizing a resistance force among the peasantry.
@@ -361,44 +292,6 @@
     <p>
       The upriver blockade is led by Ogrun Hammerfist, a cruel tax collector known to have murdered spouses and children of those who failed to pay. He is devoted to the Duchess, committed to her cause, and revels in causing pain.
     </p>
-    <aside class="card col-sm-6 pull-right" id="ogrunhammerfist">
-      <h3>Ogrun Hammerfist</h3>
-      <h4>Medium humanoid (human), Chaotic Evil</h4>
-
-      <p>
-        <strong>Hit Points:</strong> 60 (6d12 + 18)<br />
-        <strong>AC:</strong> 15 <br />
-        <strong>Speed:</strong> 40 ft<br />
-      </p>
-      <table class="table">
-        <tr>
-          <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-        </tr>
-        <tr>
-          <td>20 (+5)</td><td>14 (+2)</td><td>16 (+3)</td><td>8 (-1)</td><td>13 (+1)</td><td>8 (-1)</td>
-        </tr>
-      </table>    
-      <p>
-        <strong>Saving Throws:</strong> Str +8, Con +6<br />
-        <strong>Skills:</strong> Athletics +8, Insight +4, Intimidation +2, Perception +4<br />
-        <strong>Resistances: </strong> bludgeoning, piercing, and slashing damage while raging<br />
-        <strong>Condition Immunities: </strong> Charm, Frightened while raging<br />
-        <strong>Senses:</strong> passive perception 14<br />
-        <strong>Languages:</strong> Imperial<br /> 
-        <strong>Challenge:</strong> 6
-      </p>
-      
-      <p><strong>Rage:</strong> As Barbarian</p>
-      
-      <p><strong>Reckless Attack:</strong> As Barbarian</p>
-
-      <p><strong>Unarmored Defense:</strong> As Barbarian</p>
-      
-      <p><strong>Danger Sense:</strong> As Barbarian</p>
-      <h4 id="actions-1">Actions</h4>
-      <p><strong>Multiattack:</strong> Makes 3 hammerfist attacks</p>
-      <p><strong>+1 Hammerfists:</strong> +9 (1d8+6)</p>
-    </aside>
     <p>
       Ogrun has 2 spine devils and a knight backing him up. The blockade point itself consists of a dam and lock system, with a pier and guardhouse at the locks.  No ship is allowed to pass until it is inspected. If the duchess died, there are 2 bearded devils and a Chain Devil as well.
     </p>
