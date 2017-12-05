@@ -14,7 +14,7 @@
         <input type="text" class="form-control" placeholder="mini description" />
         <p>
           <strong>Armor Class:</strong> {{creature.acdesc}} <br />
-          <strong>Hit Points:</strong> <input type="number" value="{{creature.hp}}" style="max-width: 50px;" /> / {{creature.hpdesc}} <br />
+          <strong>Hit Points:</strong> <input type="number" data-ng-value="creature.hp" style="max-width: 50px;" /> / {{creature.hpdesc}} <br />
           <strong>Speed:</strong> {{creature.speed}}
         </p>
         <table class="table table-striped">

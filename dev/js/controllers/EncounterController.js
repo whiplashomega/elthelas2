@@ -35,19 +35,16 @@
 
     beastProvider.getAll().then(function(response) {
       $scope.creatures = response;
-      if(creatures) {
-        for(var x = 0; x < creatures.length; x++) {
-          var cre = $scope.creatures.filter(function(a) {
-            return a.name.toLowerCase().replace(/ /g, '') === creatures[x].toLowerCase().replace(/ /g, '');
-          });
-          if(cre.length > 0) {
-            $scope.encountercreatures.push(cre[0]);
-          }
-        }
-      }
       var creatureTableData = [];
+      //post processing
       for(var x = 0; x < $scope.creatures.length; x++) {
         var id = 'creature' + x;
+        $scope.creatures[x].strmod = Math.floor($scope.creatures[x].str/2 - 5);
+        $scope.creatures[x].dexmod = Math.floor($scope.creatures[x].dex/2 - 5);
+        $scope.creatures[x].conmod = Math.floor($scope.creatures[x].con/2 - 5);
+        $scope.creatures[x].intmod = Math.floor($scope.creatures[x].int/2 - 5);
+        $scope.creatures[x].wismod = Math.floor($scope.creatures[x].wis/2 - 5);
+        $scope.creatures[x].chamod = Math.floor($scope.creatures[x].cha/2 - 5);
         var combinedType = $scope.creatures[x].type;
         if($scope.creatures[x].subtype) {
           combinedType += ' (' + $scope.creatures[x].subtype + ')';
@@ -62,7 +59,16 @@
         ];
         creatureTableData.push(thisCreature);
       }
-      
+      if(creatures) {
+        for(var x = 0; x < creatures.length; x++) {
+          var cre = $scope.creatures.filter(function(a) {
+            return a.name.toLowerCase().replace(/ /g, '') === creatures[x].toLowerCase().replace(/ /g, '');
+          });
+          if(cre.length > 0) {
+            $scope.encountercreatures.push(cre[0]);
+          }
+        }
+      }
       createDataTable('#creaturetable', creatureTableData, [
         { title: "Name" },
         { title: "CR" },

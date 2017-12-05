@@ -305,8 +305,9 @@
     </p>
     <h4>The Camp</h4>
     <p>
-      The raiders' camp is currently populated by the squad leader, <a href="/runner/orcbladeofilneval&orc&hobgoblin&hobgoblin&worg" target="_blank">an Orc Blade of Ilneval, 1 regular Orc, 2 hobgoblins and a Worg</a>. The hobgoblin and one of the orcs are keeping an eye on the stolen livestock, about half of which still remain.  There are 5 two-man tents as well as one large tent used by the leader.  The remaining 3 orcs, hobgoblin, goblin, and worg are currently traveling to the central raiding base to deliver the other missing livestock.
+      The raiders' camp is currently populated by the squad leader, an Orc Blade of Ilneval, 1 regular Orc, 2 hobgoblins and a Worg. The hobgoblin and one of the orcs are keeping an eye on the stolen livestock, about half of which still remain.  There are 5 two-man tents as well as one large tent used by the leader.  The remaining 3 orcs, hobgoblin, goblin, and worg are currently traveling to the central raiding base to deliver the other missing livestock.
     </p>
+    <h5><a href="/runner/orcbladeofilneval&orc&hobgoblin&hobgoblin&worg" target="_blank">Run This Encounter</a></h5>
     <p>
       If any of the raiders detect the players they will immediately raise the alarm and attack.  The worg will follow the orders of any of the orcs or the hobgoblin.
     </p>
@@ -338,6 +339,7 @@
     <p>
       They have no additional intelligence beyond what could be found at the camp.
     </p>
+    <h5><a href="/runner/orc&orc&hobgoblin&hobgoblin&goblin&worg" target="_blank">Run This Encounter</a></h5>
     <h4>Outer Defenses</h4>
     <p>
       The outside of the fort is lightly guarded, only 3 orcs keep watch from the broken towers with javelins and greataxes.  The outer defense is primarily handled by Dralaxin, the young green dragon who keeps his perch on top of the ruined keep of the old fort.  Likewise he has established a hoard on the roof of the keep with 5000 gp worth of gold and gems.  If Dralaxin or one of the orc guards sees any member of the party they will raise the alarm and all attack, however those inside the basement of the keep will ignore the alarm, they feel that with a dragon guarding the door they don't need to worry about attack from smaller groups, and if a larger group is sighted one of the guards will come down and alert them personally.  
@@ -345,6 +347,7 @@
     <p>
       The fort consists of a square outer wall of spiked logs, 80 feet on a side, with 1 wooden tower at each corner, and one central gate which stands open.  The northwest tower is nothing but a pile of rubble.  Each tower has a stairway winding up the back and left side to the top lookout, 30 ft up.  The top of the tower is surrounded by a wooden half-wall that provides half-cover to anyone standing up there.  The range of any ranged weapon attack from on top of the tower to the plain below is increased by 20 ft.  The keep is 60 ft cubed and made of stone.  The inside of the keep is largely empty except for some ruined furniture, having been looted long ago, and consists of only 1 large room, with a stairway along one wall that leads up to a ladder to the roof, and a trap door that heads down into the basement.  If the party returned to Cur'Estan or took a long rest before beginning the pursuit of the raiding caravan, the 20 stolen pigs will be inside the great hall.  The keep is 60 ft on a side and square.
     </p>
+    <h5><a href="/runner/younggreendragon&orc&orc&orc" target="_blank">Run This Encounter</a></h5>
     <h4>Inside the Base: Level 1: Room 1</h4>
     <p>
       The map below details the first level of the keep basement.  The orcs have set up the rooms closest to the stairs as a guard post, complete with kitchen and readily available weapons.  The first room has 4 orcs and a hobgoblin in it.  One of the orcs is a Claw of Luthic, and the Hobgoblin is an Iron Shadow.  The spot at the bottom of the stairs is trapped with a 'hold person' spell rune.  It is a DC 13 investigation or perception check to identify it, and a DC 15 check to disarm it.  If it goes off the person stepping in the square must make a DC 13 Wisdom Save or suffer the effects of a 'hold person' spell.
@@ -352,14 +355,17 @@
     <p>
       The room is well lit, and the orcs and hobgoblin will attack as soon as they see the players coming down the stairs.  The room itself has two tables, one covered with various melee weapons (5 handaxes, 2 battleaxes, 1 scimitar, 3 shortswords, and a greatsword, all mundane), the other where 3 of the orcs (all but the claw of luthic) have been playing cards.  The Claw of Luthic and the Iron Shadow both sit in meditation by the door into room 2.
     </p>
+    <h5><a href="/runner/orcclawofluthic&hobgoblinironshadow&orc&orc&orc" target="_blank">Run This Encounter</a></h5>
     <h4>Inside the Base: Level 1: Room 2</h4>
     <p>
       Room 2 is a dining room where 5 orcs, 2 hobgoblins, and 2 goblins are eating before heading back to their raiding camp.  None of them are particularly special in any way.  The room has a long table covered in various half-eaten food (mostly meat), and 2 stoves with attached grills still warm from cooking.  They will have been alerted by the sound of combat in the other room and are waiting with weapons drawn.  The door to room 3 is solid iron and locked.  It is a DC 14 check with thieves tools to unlock it, or a DC 25 strength check to break it down.  There is a secret door from room 2 to 4 triggered by pressing a brick into the wall.  It is a DC 20 investigation check to find.
     </p>
+    <h5><a href="/runner/orc&orc&orc&orc&orc&hobgoblin&hobgoblin&goblin&goblin" target="_blank">Run This Encounter</a></h5>
     <h4>Inside the Base: Level 1: Room 3</h4>
     <p>
       Room 3 is the Tanarukk's room, where they are kept by the orcs until needed.  The 2 tanarukks have gone berserk in the room once already, literally tearing out chunks of the wall and throwing them around the room.  There are piles of rubble that are difficult terrain.  They can be heard clearly from the previous room yelling angrily and trying to get through the door.  They will attack anything that moves in the room.  The door on the far side of the room is likewise a thick iron door locked securely, DC 14 check with thieves' tools to unlock or DC 25 strength check to break down.
     </p>
+    <h5><a href="/runner/tanarukk&tanarukk" target="_blank">Run This Encounter</a></h5>
     <h4>Inside the Base: Level 1: Room 4</h4>
     <p>
       Room 4 is the sleeping room for the guards on duty.  It is currently empty, but has 6 beds in it.  An investigation check of 12 or higher finds that one of the guards kept a secret stash of loot in one of the matresses, a set of documents written in dwarven, and 25 gp.  The documents detail the underground trade routes and tunnels of the dwarves that go between the major holds.
@@ -377,6 +383,7 @@
     <p>
       Room 2 is the general barracks.  There are 6 orcs, 5 hobgoblins, and 3 goblins in the room.  All but 2 of them (both orcs) are currently sleeping, but will be immediately roused if the alarm trap is set off.  The room is full of beds.  The door on the far side is unlocked and untrapped, but if there is any fighting in the room it will be barricaded from the other side.
     </p>
+    <h5><a href="/runner/orc&orc&orc&orc&orc&orc&hobgoblin&hobgoblin&hobgoblin&hobgoblin&hobgoblin&goblin&goblin&goblin">Run This Encounter</a></h5>
     <h4>Raider Base: Level 2: Room 7</h4>
     <p>
       This is the general kitchen.  4 orcs, 2 hobgoblins, and 1 goblin are currently here.  One of the hobgoblins is a hobgoblin devestator.  They will be alerted by sounds of battle in the previous room and have barricaded the door with a table.  It is a DC 15 strength check to force the door open.
@@ -384,6 +391,7 @@
     <p>
       There are barrels all around the room full of various preserved foodstuffs, including several varieties of pickles, grains, dried meat and so on.  They are loot from the recent raids on farms, the portion of which has been kept by the raiders for their own supply.  The far door is locked and opening the door will cause a rock to fall from the ceiling above (DC 13 dex save to avoid, or 2d10 damage on failure).  Unlocking the door requires a DC 13 thieves' tools check, breaking it down is a DC 15 strength check.  Detecting the trap is DC 12 perception or investigation, disarming it is DC 15 thieves' tools check.
     </p>
+    <h5><a href="/runner/orc&orc&orc&orc&hobgoblin&hobgoblindevestator&goblin" target="_blank">Run This Encounter</a></h5>
     <h4>Raider Base: Level 2: Room 8</h4>
     <p>
       This last room of the level is empty except for a staircase leading down to level 3.  There is a small sign above the stairs that says: 'Do not disturb the boss unless he specifically asks for you'.
@@ -402,6 +410,7 @@
     <p>
       Marmaduc Undertree is locked in a cage in the corner. He will offer to help the party if they free him, but will attempt to escape instead if they do so.
     </p>
+    <h5><a href="/runner/orcbladeofilneval&goblinboss&bugbear&bugbear&hobgoblindevestator&marmaducundertree">Run This Encounter</a></h5>
     <p class="row"><img src="/images/maps/raiderbase-level3.png" alt="Raider Base Level 2" class="col-sm-12" id="raiderbasemap3" /></p>
     <aside class="card col-sm-4 pull-right">
       <h3>Level Up</h3>
@@ -432,16 +441,18 @@
     <p>
       This wounded orc was left for dead by his peers after they were attacked by Dire Wolves.  He has 1 hit point and has a +3 modifier to charisma (deception) checks and is armed with a dagger.  He will attempt to make a deal with the party, offering information in exchange for healing.  If interrogated (even after making a deal) he will attempt to deceive the party about the location of the camp, base, and numbers of his fellows.  He is fiercely loyal and will not give up his friends even if called out in his lies, intimidated, persuaded, or further bribed.  He refuses to be captured, and if players act aggressively towards him he will kill himself with his dagger. 
     </p>
+    <h5><a href="/runner/brugge" target="_blank">Run This Encounter</a></h5>
     <h4>Refugees under Attack</h4>
     <p>
-      The party comes across a small family of refugees, 4 moon elves whose wagon is broken, and whose horse is already dead.  They are hiding in their covered wagon, with the parents trying their best to hold off <a href="/runner/direwolf&direwolf&direwolf&direwolf&direwolf" target="_blank">5 dire wolves</a>.  If the party intervenes, 4 of the 5 dire wolves will immediately break off and attempt to intercept the party.
+      The party comes across a small family of refugees, 4 moon elves whose wagon is broken, and whose horse is already dead.  They are hiding in their covered wagon, with the parents trying their best to hold off <a href="/runner/direwolf&direwolf&direwolf&direwolf&direwolf&moonelfrefugee&moonelfrefugee&moonelfrefugee&moonelfrefugee" target="_blank">5 dire wolves</a>.  If the party intervenes, 4 of the 5 dire wolves will immediately break off and attempt to intercept the party.
     </p>
     <p>
       If rescued by the party the refugees have nothing to give them, but will speak highly of them to Jaxan Chin at the refugee camp when they get there. If one or more of the refugees dies they will be appreciative, but will not mention the incident to Jaxan outside of 'we were rescued by some soldiers'.
     </p>
     <h4>Backstory Encounter: Bartok Wailmane</h4>
     <p>
-      While the party is resting, Silas is woken by someone shaking him awake. It is Bartok Wailmane, accompanied by Jazelle. Bartok will gloat to Silas about how his quest is hopeless, how Nera is nothing, and only Zhuul can give him the vengeance he desires. If Silas breaks out Jazelle will dimension door both of them away. Jazelle will interrupt Bartok to ask if she can kill Flykr. Bartok will respond 'not now! they will die when Zhuul decides and not before!'.
+      While the party is resting, Silas is woken by someone shaking him awake. It is Bartok Wailmane, accompanied by Jazelle. Bartok will gloat to Silas about how his quest is hopeless, how Nera is nothing, and only Zhuul can give him the vengeance he desires. If Silas breaks out Jazelle will dimension door both of them away. Jazelle will interrupt Bartok to ask if she can kill Flykr. Bartok will respond 'not now! they will die when Lord Slithers decides and not before!'.
     </p>
+    <h5><a href="/runner/bartokwailmane&jazelle" target="_blank">Run This Encounter</a></h5>
   </div>
 </div>
