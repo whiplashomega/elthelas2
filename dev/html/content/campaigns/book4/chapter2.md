@@ -12,9 +12,9 @@
     <p>
       Players may opt to mop up the remaining raiding parties before returning to Cur'Estan. There are 3 additional raiding parties scattered around the area.  Each raiding party has between 3-6 orcs 1-3 hobgoblins, 1-3 goblins, and 1-2 worgs.  One Orc from each group should be a claw of luthic or a sword of ilnevall.  If they return to Cur'Estan first to deliver the information they recovered, General Heartbren will tell them that he will send soldiers to deal with the other raiding parties, and ask them to come back the next day for new orders.
     </p>
-    <p> 
-      One of more Cur'Estan encounters can happen during this time at the option of the DM (see <a href='#curestanencounters'>appendix B: Cur'Estan encounters</a>).
-    </p>
+    <h5><a href="/runner/orc&orc&orc&orcclawofluthic&hobgoblin&hobgoblin&goblin&goblin&worg&wrog" target="_blank">Run Raiding Party 1</a></h5>
+    <h5><a href="/runner/orcbladeofilneval&orc&orc&orc&orc&orc&hobgoblin&hobgoblin&hobgoblin&goblin&worg&worg" target="_blank">Run Raiding Party 2</a></h5>
+    <h5><a href="/runner/orcbladeofilneval&orc&orc&orc&hobgoblin&goblin&goblin&goblin&worg&worg" target="_blank">Run Raiding Party 3</a></h5>
     <p>
       The next day General Heartbren will have the parties new orders for them. As before, any factions the party members belong to will have additional orders for their members.
     </p>
@@ -38,12 +38,9 @@
       <strong>Dormanian Imperial Guard Orders (Alexandra is Empress/Gloryheart is Emperor): </strong> The local garrison in Northport was stripped of experienced soldiers over the last couple of years to bring more men to the front, but with proper training those soldiers could reinforce those here. Make sure the men of the garrison make it out alive. -Ambassador Gloryheart
     </p>
     <p>
-      <strong>Dormanian Imperial Guard Orders (Manius Aquila is Emperor): </strong> We have reason to believe that two fugitives from the law are hiding in Northport.  Vanriel Glamfara and Elhavir Soras were involved in a prison break some years ago and must be brought to justice.  Kill them or bring them back to the embassy in chains.
-    </p>-->
-    <p>
       <strong>Guild of Heroes Orders: </strong> We have a major chapterhouse in Northport, though most of the staff are already gone, one of our guild masters, Allison Highwater, has refused to leave. Find out what is keeping her there and help her deal with the problem so she can get to safety.  -Feril Honeybait
     </p>
-    <!--<p>
+    <p>
       <strong>International Grangemaster's Alliance Orders: </strong> There is a lot of unworked land around Cur'Estan, and we will need experienced farmers to work it and feed all those refugees.  Don't forget the people living out in the country when you are handling the evacuation. -Winslow Fredericks
     </p>-->
     <p>
@@ -61,9 +58,9 @@
     <p>
       <strong>Masters of the Deep Song Orders: </strong> The dwarven emissary to Gerasalim had fled to Northport shortly before Strovenguard fell, expecting the queen to flee there as well. Instead she took control of the armies in the east and left the emissary in the lurch.  Get him this stone, it's a one use teleport that he can use to escape back to Curinor. -Ogrun Firebreath
     </p>
-    <!--<p>
+    <p>
       <strong>Shepherds of the All-Mother Orders: </strong> The Orcs have employed necromancers to scare the people into staying in Northport.  How dare they give necromancy a bad name by using the undead for simple scare tactics. Kill these necromancers, then prove to the people of Northport that they have nothing to fear from the dead. -Gimble Beren
-    </p>-->
+    </p>
     <p>
       <strong>Silver Dragon Knights Orders: </strong> There is an old copper dragon named Sulac who lives in a cave near Northport. While I doubt he would help you directly, he is an old friend of the Emperor, and we would hate to see him threatened by these orcish invaders. -Farnor Spiketooth
     </p>
@@ -135,35 +132,35 @@
     <img class="col-sm-12" style="max-width:100%;" src="/images/maps/cities/northport.png" alt="map of northport" />
     <h4>Important People in Northport</h4>
   
-    <h4>Vanriel Glamfara</h4>
+    <h4><a href="/runner/vanrielglamfara">Vanriel Glamfara</a></h4>
     <p>
       Vanriel is an ex-adventurer and ranger of some notable skill.  Originally a Black Wolf Irregular before an incident at the Fortress of Light saw her dishonorably discharged, the circumstances of her leaving the fortress are questionable.  Officially pardoned by the Irregulars after official petition from Zelfir in recognition of her service to that country.  She joined up with the local city guard in Eastguard after that, and rose to the rank of captain before the city was taken.  Managed to secure an orderly retreat and evacuation before the orcs burned the city.  Now she has taken control of the local guard of Northport, trying to whip the raw recruits into good enough shape to get things under control.
     </p>
     <p>
       Vanriel herself feels overwhelmed by the task in front of her, she does not feel she is built for command, but has been thrust into the role by her men who look up to her, and the necessity of needing someone to take charge.
     </p>
-    <h4>Malia Demonslayer</h4>
+    <h4><a href="/runner/maliademonslayer" target="_blank">Malia Demonslayer</a></h4>
     <p>
       Malia started out her career as an aberration hunter working for Amathera's Shield and the College of Malidal.  After a leave of absence to recover her erstwhile brother from Malinval she spent a short time working for the Guild of Heroes before reconnecting with Amathera's Shield to try to organize the refugees that were pouring into Northport.
     </p>
     <p>
       Malia is intelligent, but abrassive.  She has been successful in organizing things like living space, food, schools, etc for the refugees, but has struggled with how to tamp down the rumors that spread through the city causing riots and other trouble.
     </p>
-    <h4>Elhavir Soras</h4>
+    <h4><a href="/runner/elhavirsoras" target="_blank">Elhavir Soras</a></h4>
     <p>
       The ex-druid Elhavir was once an adventuring companion to Vanriel, and like her spent some time in Eastguard afterwards. After the druids of Gaian discovered he taught their secrets to another who had no intention of being or becoming a druid he went into hiding to escape their wrath. He is currently hiding among the refugees in the Riverside Market.
     </p>
     <p>
       Elhavir has lost access to his druidic magic, and sold off his old equipment long ago.  Yet he is still driven inside by a rage stemming from the death of his old animal companion, one that manifests itself in the form of directed fire that he can create at will.
     </p>
-    <h4>Erestor</h4>
+    <h4><a href="/runner/erestor" target="_blank">Erestor</a></h4>
     <p>
       The free-wheeling ranger Erestor runs the Dragon's Brew with his friend Ralf.
     </p>
     <p>
       Erestor's previous life had him facing all kinds of creatures after a freak accident left him stranded on the other side of the world.  During this time he befriended, and then later saved, Ralf.
     </p>
-    <h4>Ralf</h4>
+    <h4><a href="/runner/ralf" target="_blank">Ralf</a></h4>
     <p>
       The half-dwarf monk Ralf runs the Dragon's Brew inn with his friend Erestor.
     </p>
@@ -177,54 +174,21 @@
     <p>
       Duke Resel left most of his possessions behind, and left no one in charge in the city in his stead, even conscripting the local guard captain as his escort. This left a power vacuum that others have struggled to fill in order to just maintain some semblance of order in the city.
     </p>
-    <h4>Sulac</h4>
+    <h4><a href="/runner/ancientcopperdragon" target="_blank">Sulac</a></h4>
     <p>
       The Ancient Copper Dragon, Sulac has lived in the hills west of Northport for hundreds of years.  He has watched conquering armies come and go, happily conversing with mortals who find their way to his cave, but never involving himself in their affairs.
     </p>
     <p>
       Sulac has not ventured out of his cave for some years, and the inner chambers are quite difficult to access for non-dragons.
     </p>
-    <h4>Allison Highwater</h4>
+    <h4><a href="/runner/allisonhighwater" target="_blank">Allison Highwater</a></h4>
     <p>
       Allison Highwater is the local guildmaster for the Guild of Heroes.  She was always considered something of an odd duck, but has been acting especially odd lately.  She has sequestered herself in the guild hall, refusing to come out even though the rest of the guild's members have long since left town.
     </p>
     <p>
       Allison's refusal to leave is tied to a set of magical artifacts that the Guild of Heroes acquired over the years. They were placed at the end of an intricate protective gauntlet that is nearly impossible for a single person to pass through on their own, even knowing all of the traps.
     </p>
-    <aside class="card col-sm-6 pull-right">
-      <h3>Harwik Greenskin</h3>
-      <h4>Small humanoid (goblinoid), Neutral</h4>
-
-      <p>
-        <strong>Hit Points:</strong> 15 (3d8)<br />
-        <strong>AC:</strong> 15 (studded leather)<br />
-        <strong>Speed:</strong> 30 ft<br />
-      </p>
-      <table class="table">
-        <tr>
-          <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-        </tr>
-        <tr>
-          <td>8</td><td>16</td><td>10</td><td>8</td><td>12</td><td>16</td>
-        </tr>
-      </table>    
-      <p>
-        <strong>Saving Throws:</strong> Dexterity +5, Intelligence +1<br />
-        <strong>Skills:</strong> Acrobatics +5, Deception +7, Perception +3, Slight of Hand +5, Stealth +7<br />
-        <strong>Senses:</strong> Darkvision 60 ft., passive Perception 13<br />
-        <strong>Languages:</strong> Goblin, Orc, Imperial<br /> 
-        <strong>Challenge:</strong> 3
-      </p>
-      
-      <p><strong>Sneak Attack:</strong> 2d6, as rogue feature</p>
-      
-      <h4 id="actions-1">Actions</h4>
-      
-      <p><strong>Dagger:</strong> +5 (1d6+3) plus an additional 2d6 if successful sneak attack</p>
-    
-
-    </aside>
-    <h4>Harwik Greenskin</h4>
+    <h4><a href="/runner/harwikgreenskin" target="_blank">Harwik Greenskin</a></h4>
     <p>
       Harwik Greenskin is Kyman Hexhammer's spy. If one of the party members is associated with the Black Sun, Kyman will ask the party to bring him with to Northport so he can stay behind and insert himself into the orc army.  He is a goblin, and an escaped slave who became an assassin working for the Black Sun. His mission is to get as close as possible to the orc warlord and use his sending stone to get intelligence  on the orc armies future movements back to Kyman.
     </p>
@@ -249,6 +213,7 @@
     <p>
       She refuses to be taken into custody by the party, and claims (truthfully) that she was pardoned.  If the party presses she will resist, aided by whatever guards are in the room with them.
     </p>
+    <h5><a href="/runner/vanrielglamfara&guard&guard&guard&guard">Run this Encounter</a></h5>
     <p>
       She asks the party to do the following things to enable the towns escape:
     </p>
@@ -296,12 +261,14 @@
     <p>
       If the players side with the druids and attempt to take Elhavir into custody, he will fight back, and if she learns of it, Vanriel will cease to provide help to the party.  The druids will thank the party for their assistance on delivery of Elhavir, alive or dead, and give them a wand of cure wounds in payment. If alerted to the proximity of the orc army by the players the druids will leave, scattering to the winds.
     </p>
+    <h5><a href="/runner/elhavirsoras" target="_blank">Run this Encounter</a></h5>
     <p>
       If the player's ask for the druid's assistance they can aid in delaying the orc army, using wild animals to harry the orcs supply lines. This results in a net delay of 1 day for every 5 days of travel the orcs have yet to make.
     </p>
     <p>
       If the player's side with Elhavir he will ask to be taken to Vanriel so she can smuggle him out of town.  He will give them a Wand of Detect Magic as a reward.  Two of the druid's (use NPC entry from the Monster Manual for Druid) will intercept the party on their way to the City Guard's headquarters and attack them assisted by 3 giant spiders (attacking from the rooftops) and 2 giant eagles.
     </p>
+    <h5><a href="/runner/druid&druid&giantspider&giantspider&giantspider&gianteagle&gianteagle" target="_blank">Run this Encounter</a></h5>
   </div>
   <div id="chapter2necromancers">
     <h3>Necromancers on the Edge of Town</h3>
@@ -316,69 +283,31 @@
       The necromancers have been harassing the town for a good two months now, and are well set in. Though their camp is out in the open, and does not have the benefit of predicting where attacks may come from. The necromancers believe they will be able to deal with any threat that shows up, and have set up traps to simply alert them to intruders. Once an alarm is raised, the necromancers spend a minute to create a huge skeleton to aid them against the incoming forces.
     </p>
     <p>
-      <strong>Zombie Moat:</strong> The encampment is surrounded by a ditch that is 15ft wide and 20ft deep (dug by zombies). The zombies that dug out the pit are still in it (and armed with shovels). The zombies also start growling at people they see, which alert the rest of the camp.
+      <strong>Zombie Moat:</strong> The encampment is surrounded by a ditch that is 15ft wide and 20ft deep (dug by zombies). The zombies that dug out the pit are still in it (14 total, and armed with shovels). The zombies also start growling at people they see, which alert the rest of the camp.
     </p>
+    <h5><a href="/runner/zombie&zombie&zombie&zombie&zombie&zombie&zombie&zombie&zombie&zombie&zombie&zombie&zombie&zombie&zombie&zombie" target="_blank">Run This Encounter</a></h5>
     <p>
       <strong>Patrols:</strong> These patrols travel in groups of 3, 1 wight and 2 skeletons armed with heavy crossbows. Players can expect to see at least 3 such groups randomly patrolling. One of the skeletons in the group has a bell, and will ring it loudly (as an action) when it see intruders. These skeletons join together to fight intruders if the alarm is raised, and will notice if the zombies in the pit start making noise.
     </p>
+    <h5><a href="/runner/wight&skeleton&skeleton" target="_blank">Run This Encounter</a></h5>
     <p>
       <strong>Watch Towers:</strong> 5 wooden watch towers have been set up within the camp. Each tower is 30 ft. high with a single ladder that leads to an upper platform.  The upper platform has half walls that provide partial cover. On top of each tower is 4 skeletons with heavy crossbows. These towers are positioned equidistant from one another (50 ft apart) and give a full circle of watch. The skeletons are quite dumb however, and only sound the alarm and attack if humans approach. A simple disguise, a large shrub, or a blanket could make the skeletons not bother attacking.
     </p>
+    <h5><a href="/runner/skeleton&skeleton&skeleton&skeleton">Run This Encounter</a></h5>
     <p>
       <strong>Ogre Zombie Pits:</strong> Similar to the first trap, there are sporadically zombie pits hidden in the area. A player that isn’t paying attention has an 80% chance of walking into a pit, and must make a DC 12 Dex Save or fall into a pit with an Ogre Zombie at the bottom. The necromancers have walked through the camp enough to know where the pits are by heart, and a DC 13 survival check reveals the paths that the necromancers have worn down (triggered automatically, no need for the player to guess at having to do one.). Alternately a passive perception of 16 or higher will notice any pits within 15 ft of a player automatically.
     </p>
+    <h5><a href="/runner/ogrezombie" target="_blank">Run This Encounter</a></h5>
     <p>
       <strong>Tortured Citizens:</strong> Some of the people from the town, those that attempted escape or attempted to fight the necromancers are chained to posts in the inner area of the camp. Each of these people are trapped with a glyph of warding, if the person is removed by some daring hero, the hero and the hostage explode for 5d8 thunder damage (DC 14 Constitution save for half). This creates a loud booming sound that alerts the skeleton patrols and the necromancers. The citizens are unconscious and have level 5 exhaustion (speed of 0). If given water or food some of them can mention that the necromancers did some magic thing to the pole they are chained to, but are not aware what it does. The rune itself is obvious, and a DC 15 arcana check will identify it's effect.
     </p>
     <p>
       <strong>Noisemakers:</strong> Lastly near the center of their camp the necromancers have set up noisemakers in the form of a curtain of bones on strings. The curtain entirely surrounds the camp, and there is no clear entrance. The noise maker simply makes rattling which alerts the skeleton patrols, and gives the necromancers enough time to summon their giant skeleton.
     </p>
-    <aside class="card col-sm-6 pull-right" id="northportnecromancers">
-      <h3>Orc Necromancer</h3>
-      <h4>Medium humanoid (orc), neutral evil</h4>
-
-      <p>
-        <strong>Hit Points:</strong> 63 (9d6 + 27)<br />
-        <strong>AC:</strong> 15 (natural armor)<br />
-        <strong>Speed:</strong> 30 ft.<br />
-      </p>
-      <table class="table">
-        <tr>
-          <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-        </tr>
-        <tr>
-          <td>10</td><td>14</td><td>14</td><td>11</td><td>12</td><td>18</td>
-        </tr>
-      </table>    
-      <p>
-        <strong>Skills:</strong> +5 Perception
-        <strong>Saving Throws:</strong> +6 Constitution, +8 Charisma<br />
-        <strong>Resistances: </strong> necrotic damage<br />
-        <strong>Senses:</strong> darkvision 60 ft., passive perception 15<br />
-        <strong>Languages:</strong> orc, goblin<br /> 
-        <strong>Challenge:</strong> 9
-      </p>
-      <p><strong>Metamagic:</strong> The Orc necromancer has access to the following metamagic options, and 9 sorcery points with which to use them: Empowered Spell, Twinned Spell</p>
-      <p><strong>Undead Resilience:</strong> +1 hit point per hit die and base AC = 13 + Dexterity modifier</p>
-      <p><strong>Necrotic Affinity:</strong> The orc necromancer adds his charisma modifier to the damage of any spell that does necrotic damage.</p>
-      <p><strong>Spellcasting:</strong> The necromancer is a 9th-level spellcaster. Its spellcasting ability is charisma (spell save DC 16, +8 to hit with spell attacks). The necromancer has the following sorcerer spells prepared:
-      <p>
-        Cantrips (at will): chill touch, dancing lights, mage hand, mending, shocking grasp<br />
-        1st level (4 slots}: false life, shield<br />
-        2nd level (3 slots}: blindness/deafness, ray of enfeeblement<br />
-        3rd level (3 slots): animate dead, vampiric touch<br />
-        4th level (3 slots): blight, storm sphere<br />
-        5th level (1 slot}: Wall of Stone (already expended at start of combat)
-      </p></p>
-      <h4 id="actions-1">Actions</h4>
-      
-      <p><strong>Withering Touch:</strong> Melee Spell Atwck: +8 to hit, reach 5 ft., one creature. Hit: 9 (2d4+4) necrotic damage.</p>
-    
-
-    </aside>
     <p>
-      <strong>Necromancer's Tent:</strong> Inside the tent are the necromancers. Ironically, they don’t like to have undead in the room with them, and instead just a big piles of bonus in a chest, along with anything else they may need.
+      <strong>Necromancer's Tent:</strong> Inside the tent are the necromancers. Ironically, they don’t like to have undead in the room with them, and instead just a big piles of bones in a chest, along with anything else they may need.
     </p>
+    <h5><a href="/runner/orcnecromancer&orcnecromancer&minotaurskeleton" target="_blank">Run This Encounter</a></h5>
   </div>
   <div id="chapter2sulac">
     <h3>Sulac's Lair</h3>
@@ -418,7 +347,7 @@
       Eventually if they stick around the illusion resets, if the players are still there they can see the entrance to the dragons lair behind the illusion. There the dragon is actually sleeping, and is much more willing to talk.
     </p>
     <p>
-      Sulac is unwilling to help against the necromancers or to directly confront the orcs. He will reward the party with one random magic item from his horde.  Sulac is willing to attack the orcs supply caravans for the party, potentially delaying the orc army.
+      Sulac is unwilling to help against the necromancers or to directly confront the orcs. He will reward the party with one random magic item from his horde.  Sulac is willing to attack the orcs supply caravans for the party.
     </p>
   </div>
   <div id="chapter2guildofheroes">
@@ -426,12 +355,13 @@
     
     <h4>Entering the guild</h4>
     <p>
-    The guild is already abandoned. Nothing of value is left and nobody is around. In the center area there is a trap door that has been left open, and players can vaguely here somebody talking to herself. Below in the trap door is Allison Highwater who is currently trying to insert two keys into two different slots on different sides of the room at the same time by throwing chairs. Players can easily convince her to help the cause if they help her open the door. She stresses that all of the magic items are stored inside are evil and dangerous.      
+    The guild is already abandoned. Nothing of value is left and nobody is around. In the center area there is a trap door that has been left open, and players can vaguely hear somebody talking to herself. Below in the trap door is Allison Highwater who is currently trying to insert two keys into two different slots on different sides of the room at the same time by throwing chairs. Players can easily convince her to help the cause if they help her open the door. She stresses that all of the magic items stored inside are evil and dangerous.      
     </p>
     <h4>Room 1: Monster Trap</h4>
     <p>
       The first room has a hydra in it that is loose but cannot escape through the door they came in as it closes behind the players. The guild leader assures the players that the hydra is well trained and will not attack them. The players enter the room and the hydra attacks. After the hydra is defeated (the guild leader wants it taken alive), the leader will explain that she has a ring that is supposed to calm it, but forgot it.
     </p>
+    <h5><a href="/runner/hydra&allisonhighwater" target="_blank">Run This Encounter</a></h5>
     <h4>Room 2: Mirror Room</h4>
     <p>
       When they enter this room it has full length mirrors along the walls. Once the players are in the room the mirrors cast Simulacrum from each player, creating a snow clone of each one that they have to fight. The clones only have half of their HP, but all of their abilities.
@@ -440,6 +370,7 @@
     <p>
       The next room is filled with hundreds of thousands of gold, gems, jewelry, amazing weapons and armor. The guild leader simply says “don’t touch it” and moves forward without a glance behind her. Everything in the room mimicks. All of it, everything, its mimicks all they way down. They are kept in a stupor by the guild and only awaken when touched.
     </p>
+    <h5><a href="/runner/mimic&mimic&mimic&mimic&allisonhighwater">Mimic</a></h5>
     <h4>Room 4: Riddles that Aren't Meant to be Solved</h4>
     <p>
       In this room a door gives each person a question that must be answered. The trick of it, that the guild leaders tell them, is that they must give the wrongest answer possible. When the right answer is given, a spout of fire shoots down from the ceiling.  The person answering the riddle must make a DC 15 dexterity saving throw or take 6d6 fire damage, or half as much on a success. Some example riddles are in the table below:
@@ -625,8 +556,9 @@
       The party can aid in the defense, however they are only a small part of the overall defense.  If the city guard has suffered severe casualties, they will be nearly wiped out by the attack and there will be a 50% chance that Vanriel dies in that case.  Additionally 500 refugees will parish in the attack in that case.
     </p>
     <p>
-      The party will be confronted with a contingent of orcs, 
+      The party will be confronted with a contingent of orcs. 
     </p>
+    <h5><a href="/runner/orcbladeofilneval&orcclawofluthic&orc&orc&orc&orc&orc&orc&orc&orc" target="_blank">Run This Encounter</a></h5>
     <aside class="card col-sm-4 pull-right">
       <h3>Level Up</h3>
       <p>
@@ -647,25 +579,25 @@
         </thead>
         <tbody>
           <tr>
-            <td>1-3</td><td>The Horde (10 skeletons and 10 zombies)</td>
+            <td>1-3</td><td><a href="/runner/skeleton&skeleton&skeleton&skeleton&skeleton&skeleton&skeleton&skeleton&skeleton&skeleton&zombie&zombie&zombie&zombie&zombie&zombie&zombie&zombie&zombie&zombie" target="_blank">The Horde (10 skeletons and 10 zombies)</a></td>
           </tr>
           <tr>
-            <td>4-6</td><td>4-6 Ogre Zombies</td>
+            <td>4-6</td><td><a href="/runner/ogrezombie&ogrezombie&ogrezombie&ogrezombie&ogrezombie&ogrezombie" target="_blank">4-6 Ogre Zombies</a></td>
           </tr>
           <tr>
-            <td>7-9</td><td>1 Flameskull and 2 Wights</td>
+            <td>7-9</td><td><a href="/runner/flameskull&wight&wight" target="_blank">1 Flameskull and 2 Wights</a></td>
           </tr>
           <tr>
-            <td>10-12</td><td>2 Flameskills and an Ogre Zombie</td>
+            <td>10-12</td><td><a href="/runner/flameskull&flameskull&ogrezombie" target="_blank">2 Flameskills and an Ogre Zombie</a></td>
           </tr>
           <tr>
-            <td>13-15</td><td>3 Wights</td>
+            <td>13-15</td><td><a href="/runner/wight&wight&wight" target="_blank">3 Wights</a></td>
           </tr>
           <tr>
-            <td>16-18</td><td>2 Spawn of Kyuss</td>
+            <td>16-18</td><td><a href="/runner/spawnofkyuss&spawnofkyuss" target="_blank">2 Spawn of Kyuss</a></td>
           </tr>
           <tr>
-            <td>19-20</td><td>Vampire Spawn, 2 Ogre Zombies, and 5 Skeletons</td>
+            <td>19-20</td><td><a href="/runner/vampirespawn&ogrezombie&ogrezombie&skeleton&skeleton&skeleton&skeleton&skeleton" target="_blank">Vampire Spawn, 2 Ogre Zombies, and 5 Skeletons</a></td>
           </tr>
         </tbody>
       </table>
@@ -674,9 +606,11 @@
     <p>
       5 bandits and a bandit captain attack the party as they travel.
     </p>
+    <h5><a href="/runner/banditcaptain&bandit&bandit&bandit&bandit&bandit" target="_blank">Run This Encounter</a></h5>
     <h4>Hungry Werebear</h4>
     <p>
       The party encounters a werebear eating a corpse mutilated beyond recognition.  It is clearly feral and starving, and tries to scare the party away but does not attack unless the party attacks first.
     </p>
+    <h5><a href="/runner/werebear" target="_blank">Run This Encounter</a></h5>
   </div>
 </div>

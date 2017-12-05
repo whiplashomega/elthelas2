@@ -146,6 +146,36 @@ He gets along incredibly well with a dwarf by the name of Arman Hammerfall. The 
 
 The only real silver lining for Eadric has been Ashes of the Mountain, or Ash as her friends call her. Ash is a female Tabaxi from a highly damaged tribe coming out of Gerasalim that sought refuge from the invading orcs. Eadric and Ash have begun to find solace in each others company and their relationship is slowly becoming something more than friends. Ash's father is none too happy that his daughter has been getting more affectionate with a non-Tabaxi given the tribes history with outsiders, but has had his attention diverted elsewhere due to the tragedies all around them.
 
+### Faction Standings
+
+<table class="table table-striped datatable">
+	<thead>
+		<tr>
+			<th>Faction</th><th>Current Standing</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr><td>Black Wolf Irregulars</td><td>2</td></tr>
+		<tr><td>Amathera's Shield</td><td>0</td></tr>
+		<tr><td>Artificer's of Mechanus</td><td>0</td></tr>
+		<tr><td>Black Sun</td><td>2</td></tr>
+		<tr><td>Champions of Cora</td><td>0</td></tr>
+		<tr><td>Dormanian Imperial Guard</td><td>0</td></tr>
+		<tr><td>Guild of Heroes</td><td>0</td></tr>
+		<tr><td>International Grangemaster's Alliance</td><td>0</td></tr>
+		<tr><td>Illustrious Guild of Merchants and Fine Artisans</td><td>3</td></tr>
+		<tr><td>Keepers of the Grove</td><td>0</td></tr>
+		<tr><td>Lords of the Rising Dawn</td><td>1</td></tr>
+		<tr><td>Maker's of Legend</td><td>0</td></tr>
+		<tr><td>Masters of the Deep Song</td><td>1</td></tr>
+		<tr><td>Shepherd's of the All-Mother</td><td>2</td></tr>
+		<tr><td>Silver Dragon Knights</td><td>2</td></tr>
+		<tr><td>Sylvan's Rangers</td><td>0</td></tr>
+		<tr><td>Tock's Inevitables</td><td>0</td></tr>
+		<tr><td>Trollkin Mercenary Corps</td><td>0</td></tr>
+	</tbody>
+</table>
+
 ### NPC Table
 
 <table class='table table-striped datatable'>

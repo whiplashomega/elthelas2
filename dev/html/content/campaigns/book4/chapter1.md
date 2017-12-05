@@ -383,7 +383,7 @@
     <p>
       Room 2 is the general barracks.  There are 6 orcs, 5 hobgoblins, and 3 goblins in the room.  All but 2 of them (both orcs) are currently sleeping, but will be immediately roused if the alarm trap is set off.  The room is full of beds.  The door on the far side is unlocked and untrapped, but if there is any fighting in the room it will be barricaded from the other side.
     </p>
-    <h5><a href="/runner/orc&orc&orc&orc&orc&orc&hobgoblin&hobgoblin&hobgoblin&hobgoblin&hobgoblin&goblin&goblin&goblin">Run This Encounter</a></h5>
+    <h5><a href="/runner/orc&orc&orc&orc&orc&orc&hobgoblin&hobgoblin&hobgoblin&hobgoblin&hobgoblin&goblin&goblin&goblin" target="_blank">Run This Encounter</a></h5>
     <h4>Raider Base: Level 2: Room 7</h4>
     <p>
       This is the general kitchen.  4 orcs, 2 hobgoblins, and 1 goblin are currently here.  One of the hobgoblins is a hobgoblin devestator.  They will be alerted by sounds of battle in the previous room and have barricaded the door with a table.  It is a DC 15 strength check to force the door open.
@@ -391,7 +391,7 @@
     <p>
       There are barrels all around the room full of various preserved foodstuffs, including several varieties of pickles, grains, dried meat and so on.  They are loot from the recent raids on farms, the portion of which has been kept by the raiders for their own supply.  The far door is locked and opening the door will cause a rock to fall from the ceiling above (DC 13 dex save to avoid, or 2d10 damage on failure).  Unlocking the door requires a DC 13 thieves' tools check, breaking it down is a DC 15 strength check.  Detecting the trap is DC 12 perception or investigation, disarming it is DC 15 thieves' tools check.
     </p>
-    <h5><a href="/runner/orc&orc&orc&orc&hobgoblin&hobgoblindevestator&goblin" target="_blank">Run This Encounter</a></h5>
+    <h5><a href="/runner/orc&orc&orc&orc&hobgoblin&hobgoblindevastator&goblin" target="_blank">Run This Encounter</a></h5>
     <h4>Raider Base: Level 2: Room 8</h4>
     <p>
       This last room of the level is empty except for a staircase leading down to level 3.  There is a small sign above the stairs that says: 'Do not disturb the boss unless he specifically asks for you'.
@@ -410,7 +410,7 @@
     <p>
       Marmaduc Undertree is locked in a cage in the corner. He will offer to help the party if they free him, but will attempt to escape instead if they do so.
     </p>
-    <h5><a href="/runner/orcbladeofilneval&goblinboss&bugbear&bugbear&hobgoblindevestator&marmaducundertree">Run This Encounter</a></h5>
+    <h5><a href="/runner/orcbladeofilneval&goblinboss&bugbear&bugbear&hobgoblindevastator&marmaducundertree">Run This Encounter</a></h5>
     <p class="row"><img src="/images/maps/raiderbase-level3.png" alt="Raider Base Level 2" class="col-sm-12" id="raiderbasemap3" /></p>
     <aside class="card col-sm-4 pull-right">
       <h3>Level Up</h3>

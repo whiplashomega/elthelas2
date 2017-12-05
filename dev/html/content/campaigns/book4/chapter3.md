@@ -21,11 +21,11 @@
     </p>
     <p>
       <strong>Dormanian Imperial Guard Orders: </strong> There is a local group there that is loyal to the Empress led in secret by the duchess' own daughter and heir, Maria Octavius. Do what you can to aid her in regaining Cur'Mestin for the empire. -Ambassador Gloryheart
-    </p>-->
+    </p>
     <p>
       <strong>Guild of Heroes Orders: </strong> The Guild has a contract out for a purple worm egg desired by a rich buyer in Westport. Bring it back and the 10,000 GP reward is yours. -Allison Highwater
     </p>
-    <!--<p>
+    <p>
       <strong>International Grangemaster's Alliance Orders: </strong> Cur'Mestin has a stranglehold on the barley market in the area because they have developed a unique strain of barley that can survive longer into the fall through the early frosts. If you can get some of those seeds for our local farmers it would be much appreciated, and earn you a 100 gp bounty besides. -Winslow Fredericks
     </p>-->
     <p>
@@ -43,9 +43,9 @@
     <p>
       <strong>Masters of the Deep Song Orders: </strong> Wyrmling Trapsmith, that fecund piece of shit of a quartermaster, has refused beer rations for the refugees! It isn't like the beer was much good anyways, but this is a travesty! Before you run off to Cur'Mestin I need you to get at least 3 barrels of beer out of the castle storehouse for me. -Ogrun Firebreath
     </p>
-    <!--<p>
+    <p>
       <strong>Shepherds of the All-Mother Orders: </strong> The faithful in Cur'Mestin have been under persecution by both the loyalists and the rebels. Make contact with the local cleric of Nera and inform him that he can bring his flock to safety here in Cur'Estan. -Gimble Beren
-    </p>-->
+    </p>
     <p>
       <strong>Silver Dragon Knights Orders:</strong> The Emperor's emissary to Dormania was held up in Cur'Mestin on his way to Desadorel. Find out where he is and help him continue on his journey. -Farnor Spiketooth
     </p>

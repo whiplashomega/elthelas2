@@ -326,12 +326,6 @@
           url: "#chapter14",
           file: "chapter14.md",
           children: []
-        },
-        {
-          text: "NPC Character Entries",
-          url: "#characterindex",
-          file: "npcs.html",
-          children: []
         }
       ];
     $scope.currentnav = false;
