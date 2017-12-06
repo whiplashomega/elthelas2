@@ -164,7 +164,7 @@
             ItemProvider.getMagicItems().then(function(data) {
               $scope.magicItems = data.data;
               $scope.magicItems = $scope.magicItems.filter(function(item) {
-                if(["1st Level Scroll", "Cantrip Scroll", "2nd Level Scroll", "3rd Level Scroll", "4th Level Scroll", "5th Level Scroll", "6th Level Scroll", "7th Level Scroll", "8th Level Scroll", "+1 Armor", "+2 Armor", "Armor of Resistance", "Mariner's Armor", "Weapon +1", "Weapon +2", "Weapon +3", "Weapon of Returning", "Weapon of Returning +1", "Weapon of Elemental Damage", "Weapon of Elemental Damage +1", "Weapon of Sharpness", "Vicious Weapon", "Weapon of Life Stealing", "Weapon of Warning", "Weapon of Wounding"]
+                if(["1st Level Scroll", "Cantrip Scroll", "2nd Level Scroll", "3rd Level Scroll", "4th Level Scroll", "5th Level Scroll", "6th Level Scroll", "7th Level Scroll", "8th Level Scroll", "+1 Armor", "+2 Armor", "Armor of Resistance", "Mariner's Armor", "Weapon +1", "Weapon +2", "Weapon +3", "Weapon of Returning", "Weapon of Returning +1", "Weapon of Elemental Damage", "Weapon of Elemental Damage +1", "Weapon of Sharpness", "Vicious Weapon", "Weapon of Life Stealing", "Weapon of Warning", "Weapon of Wounding", "Wand of 1st Level Spell", "Wand of 2nd Level Spell", "Wand of 3rd Level Spell", "Wand of 4th Level Spell"]
                   .indexOf(item.Item) !== -1) 
                 {
                   return false;
@@ -359,6 +359,58 @@
                 if($scope.spells[y].level !== "9") {
                   $scope.magicItems.push(item);
                 }
+                var wand;
+                if($scope.spells[y].level === 'cantrip') {
+                  wand = {
+                    Item: "Wand of " + $scope.spells[y].title,
+                    Type: "Wand",
+                    Attunement: "No",
+                    "Cost (gp)": 1000,
+                    Rarity: "Uncommon",
+                    Effect: "While holding this wand you can cast the cantrip " + $scope.spells[y].title + " at will. The save DC and attack roll for spells cast from this wand depend on the spell list the spell is from and the wielders ability scores. If it was chosen from the druid, cleric, or ranger spell lists, use wisdom. If it was chosen from the sorcerer, bard, warlock, or paladin spell lists use charisma. If it was chosen from the wizard spell list use intelligence."
+                  };
+                  $scope.magicItems.push(wand);
+                } else if ($scope.spells[y].level === '1') {
+                  wand = {
+                    Item: "Wand of " + $scope.spells[y].title,
+                    Type: "Wand",
+                    Attunement: "No",
+                    "Cost (gp)": 3000,
+                    Rarity: "Uncommon",
+                    Effect: "This wand has 7 charges and regains 1d6+1 charges daily at dawn. If you expend the wands last charge roll a d20. On a 1, the wand crumbles into ashes and is destroyed. Each wand of this type has one 1st level spell associated with it. The wielder can expend 1 charge of the wand to cast the spell as a 1st level spell. If the spell can be cast at higher levels, the wielder can expend additional charges to cast it at a higher level. For each charge expended the level of the spell increases by 1. The save DC and attack roll for spells cast from this wand depend on the spell list the spell is from and the wielders ability scores. If it was chosen from the druid, cleric, or ranger spell lists, use wisdom. If it was chosen from the sorcerer, bard, warlock, or paladin spell lists use charisma. If it was chosen from the wizard spell list use intelligence."
+                  };
+                  $scope.magicItems.push(wand);
+                } else if ($scope.spells[y].level === '2') {
+                  wand = {
+                    Item: "Wand of " + $scope.spells[y].title,
+                    Type: "Wand",
+                    Attunement: "Yes (spellcaster)",
+                    "Cost (gp)": 6000,
+                    Rarity: "Rare",
+                    Effect: "This wand has 7 charges and regains 1d6+1 charges daily at dawn. If you expend the wands last charge roll a d20. On a 1, the wand crumbles into ashes and is destroyed. Each wand of this type has one 1st level spell associated with it. The wielder can expend 1 charge of the wand to cast the spell as a 1st level spell. If the spell can be cast at higher levels, the wielder can expend additional charges to cast it at a higher level. For each charge expended the level of the spell increases by 1. The save DC and attack roll for spells cast from this wand depend on the spell list the spell is from and the wielders ability scores. If it was chosen from the druid, cleric, or ranger spell lists, use wisdom. If it was chosen from the sorcerer, bard, warlock, or paladin spell lists use charisma. If it was chosen from the wizard spell list use intelligence."
+                  };
+                  $scope.magicItems.push(wand);                  
+                } else if ($scope.spells[y].level === '3') {
+                  wand = {
+                    Item: "Wand of " + $scope.spells[y].title,
+                    Type: "Wand",
+                    Attunement: "Yes (spellcaster)",
+                    "Cost (gp)": 12000,
+                    Rarity: "Rare",
+                    Effect: "This wand has 7 charges and regains 1d6+1 charges daily at dawn. If you expend the wands last charge roll a d20. On a 1, the wand crumbles into ashes and is destroyed. Each wand of this type has one 1st level spell associated with it. The wielder can expend 1 charge of the wand to cast the spell as a 1st level spell. If the spell can be cast at higher levels, the wielder can expend additional charges to cast it at a higher level. For each charge expended the level of the spell increases by 1. The save DC and attack roll for spells cast from this wand depend on the spell list the spell is from and the wielders ability scores. If it was chosen from the druid, cleric, or ranger spell lists, use wisdom. If it was chosen from the sorcerer, bard, warlock, or paladin spell lists use charisma. If it was chosen from the wizard spell list use intelligence."
+                  };
+                  $scope.magicItems.push(wand);                  
+                } else if ($scope.spells[y].level === '3') {
+                  wand = {
+                    Item: "Wand of " + $scope.spells[y].title,
+                    Type: "Wand",
+                    Attunement: "Yes (spellcaster)",
+                    "Cost (gp)": 24000,
+                    Rarity: "Very Rare",
+                    Effect: "This wand has 7 charges and regains 1d6+1 charges daily at dawn. If you expend the wands last charge roll a d20. On a 1, the wand crumbles into ashes and is destroyed. Each wand of this type has one 1st level spell associated with it. The wielder can expend 1 charge of the wand to cast the spell as a 1st level spell. If the spell can be cast at higher levels, the wielder can expend additional charges to cast it at a higher level. For each charge expended the level of the spell increases by 1. The save DC and attack roll for spells cast from this wand depend on the spell list the spell is from and the wielders ability scores. If it was chosen from the druid, cleric, or ranger spell lists, use wisdom. If it was chosen from the sorcerer, bard, warlock, or paladin spell lists use charisma. If it was chosen from the wizard spell list use intelligence."
+                  };
+                  $scope.magicItems.push(wand);                  
+                }
               }
               $scope.setMagicItemStock();
             });            
@@ -371,6 +423,10 @@
     
     $scope.setMagicItemStock = function() {
       var magicItemTableData = [];
+      var magicWeaponTableData = [];
+      var magicArmorTableData = [];
+      var scrollTableData = [];
+      var wandTableData = [];
       var today = new Date();
       var randgen = Math.seedrandom(today.getYear() + today.getMonth() + today.getDate());
       var inStock = function(rand, x) {
@@ -395,18 +451,57 @@
         var rand = Math.random();
         var thisItem = [];
         thisItem.push($scope.magicItems[x].Item);
-        thisItem.push($scope.magicItems[x].Type);
         thisItem.push(Number($scope.magicItems[x]["Cost (gp)"]));
         thisItem.push($scope.magicItems[x].Rarity);
         thisItem.push($scope.magicItems[x].Attunement);
         thisItem.push($scope.magicItems[x].Effect);
         thisItem.push(inStock(rand, x));
-        magicItemTableData.push(thisItem);
+        if($scope.magicItems[x].Type.includes("Weapon")) {
+          magicWeaponTableData.push(thisItem);
+        } else if($scope.magicItems[x].Type.includes("Armor")) {
+          magicArmorTableData.push(thisItem);
+        } else if($scope.magicItems[x].Type.includes("scroll")) {
+          scrollTableData.push(thisItem);
+        } else if($scope.magicItems[x].Type.includes("Wand")) {
+          wandTableData.push(thisItem);
+        } else {
+          magicItemTableData.push(thisItem);
+        }
       }
-      
-      createDataTable('#magictable', magicItemTableData, [
-          { title: "Item" }, 
-          { title: "Type" }, 
+      createDataTable('#magicweapontable', magicWeaponTableData, [
+          { title: "Item" },
+          { title: "Cost (gp)" }, 
+          { title: "Rarity" }, 
+          { title: "Attunement" },
+          { title: "Effect" },
+          { title: "Random Stock" }
+          ]);
+      createDataTable('#magicarmortable', magicArmorTableData, [
+          { title: "Item" },
+          { title: "Cost (gp)" }, 
+          { title: "Rarity" }, 
+          { title: "Attunement" },
+          { title: "Effect" },
+          { title: "Random Stock" }
+          ]);
+      createDataTable('#magicscrolltable', scrollTableData, [
+          { title: "Item" },
+          { title: "Cost (gp)" }, 
+          { title: "Rarity" }, 
+          { title: "Attunement" },
+          { title: "Effect" },
+          { title: "Random Stock" }
+          ]);
+      createDataTable('#magicwandtable', wandTableData, [
+          { title: "Item" },
+          { title: "Cost (gp)" }, 
+          { title: "Rarity" }, 
+          { title: "Attunement" },
+          { title: "Effect" },
+          { title: "Random Stock" }
+          ]);
+      createDataTable('#magicothertable', magicItemTableData, [
+          { title: "Item" },
           { title: "Cost (gp)" }, 
           { title: "Rarity" }, 
           { title: "Attunement" },

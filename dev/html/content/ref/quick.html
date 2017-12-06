@@ -866,11 +866,43 @@
           </uib-tab>
           <uib-tab index="10" heading="Magic Items">
             <h1>Margo's Mystic Mail Order Enchantments Catalog</h1>
-            <table class="table table-striped dt-responsive" id="magictable">
-              <tfoot>
-                <th>Item</th><th>Type</th><th>Cost</th><th>Rarity</th><th>Attunement</th><th>Effect</th><th>In Stock</th>
-              </tfoot>
-            </table>
+            <uib-tabset id="magicitemcatalog">
+              <uib-tab index="1" heading="Scrolls">
+                <table class="table table-striped dt-responsive" id="magicscrolltable">
+                  <tfoot>
+                    <th>Item</th><th>Cost</th><th>Rarity</th><th>Attunement</th><th>Effect</th><th>In Stock</th>
+                  </tfoot>
+                </table>                  
+              </uib-tab>
+              <uib-tab index="2" heading="Wands">
+                <table class="table table-striped dt-responsive" id="magicwandtable">
+                  <tfoot>
+                    <th>Item</th><th>Cost</th><th>Rarity</th><th>Attunement</th><th>Effect</th><th>In Stock</th>
+                  </tfoot>
+                </table>                  
+              </uib-tab>
+              <uib-tab index="3" heading="Weapons">
+                <table class="table table-striped dt-responsive" id="magicweapontable">
+                  <tfoot>
+                    <th>Item</th><th>Cost</th><th>Rarity</th><th>Attunement</th><th>Effect</th><th>In Stock</th>
+                  </tfoot>
+                </table>                  
+              </uib-tab>
+              <uib-tab index="4" heading="Armor">
+                <table class="table table-striped dt-responsive" id="magicarmortable">
+                  <tfoot>
+                    <th>Item</th><th>Cost</th><th>Rarity</th><th>Attunement</th><th>Effect</th><th>In Stock</th>
+                  </tfoot>
+                </table>                
+              </uib-tab>
+              <uib-tab index="5" heading="Other">
+                <table class="table table-striped dt-responsive" id="magicothertable">
+                  <tfoot>
+                    <th>Item</th><th>Cost</th><th>Rarity</th><th>Attunement</th><th>Effect</th><th>In Stock</th>
+                  </tfoot>
+                </table>                
+              </uib-tab>
+            </uib-tabset>
           </uib-tab>
         </uib-tabset>
       </div>

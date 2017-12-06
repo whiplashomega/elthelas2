@@ -7,6 +7,9 @@
     <p>
       <strong>General Heartbren's Orders:</strong> The influx of refugees presents a serious supply problem for Cur'Estan, and our best route of resupply, moving supplies upriver from Cur'Mestin is cut off by the rebels under Manius Aquila. You must find a way to get open a trade route with Cur'Mestin so that we can buy supplies.  Negotiate with the local duchess if you can, use other means if you have to, thousands of lives depend on it.
     </p>
+    <p>
+      <strong>Black Wolf Irregulars Special Orders</strong> There are rumors that Genevieve Octavius may have made deals with devils, find out for sure if this is the case.  If so, she cannot be allowed to continue in a position of power and must be deposed or killed. -Gerad Heartbren
+    </p>
     <!--<p>
       <strong>Amathera's Shield Orders: </strong> Before you go, I need you to make sure the quartermaster provisions sufficient supplies for the refugees while you are gone.  So far he is refusing to work with me, so we may need something we can hold over his head to make sure he cooperates, at least until we can get additional supplies in from down river. -Malia Demonslayer
     </p>

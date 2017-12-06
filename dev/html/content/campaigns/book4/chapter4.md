@@ -9,6 +9,8 @@ The orc army that recently attacked Northport is now moving east into the sword 
 
 **General Heartbren's Orders:** Our scouts report that the orc army is moving east into the Sword Mountains, likely hunting the Gerasaline army that continues to harrass them. I need you to find that army first, and act as our envoys to Queen Organa. I want to offer them safe haven and alliance if they can make it to Cur'Estan. To find the army, I suggest you find the gnomish wizard, Jim Jimmy Jim Jim Jim. Word is he is in the occupied city of Strovenguard. His skills as a diviner should help you find the queen.
 
+**General Heartbren's Special Orders:** Silver Head stands between the Dormanian armies and assistance with this war, held by a rebel Duke, however he is relatively weak, and we believe being blackmailed by Aquila. Stop there on your way there or back and find out what is keeping him loyal to Aquila. If you can turn him to our side the Dormanian empress can move a legion into position to help cover Queen Organa's retreat.
+
 <!--**Amathera's Shield Orders:** It is the common people hiding in the mountains we are most concerned about, more than queens and armies. Thousands of those fleeing the orcs have reportedly taken refuge with Queen Organa's army in the mountains. Make sure those people make it out alive. -Malia Demonslayer
 
 **Artificer's of Mechanus Orders:** I knew Jim once, before he went off his rocker. He used to specialize in transmutation in fact, but his mind was altered against his will. Make sure Jim makes it back to Cur'Estan, it would be nice to see him again. -Margo-->
@@ -17,11 +19,11 @@ The orc army that recently attacked Northport is now moving east into the sword 
 
 <!--**Champions of Cora Orders:** Queen Organa is a good woman and will not abandon those of her people who have taken refuge in the mountains easily, nor would we want her to. Find a way to get all of them out of there. -Maya Scientalis
 
-**Dormanian Imperial Guard Orders:** Silver Head stands between the Dormanian armies and assistance with this war, held by a rebel Duke, however he is relatively weak, and we believe being blackmailed by Aquila. Stop there on your way there or back and find out what is keeping him loyal to Aquila. If you can turn him to our side we can move a legion into position to help cover Queen Organa's retreat. -Ambassador Gloryheart-->
+**Dormanian Imperial Guard Orders:** Silver Head stands between the Dormanian armies and assistance with this war, held by a rebel Duke, however he is relatively weak, and we believe being blackmailed by Aquila. Stop there on your way there or back and find out what is keeping him loyal to Aquila. If you can turn him to our side we can move a legion into position to help cover Queen Organa's retreat. -Ambassador Gloryheart
 
 **Guild of Heroes Orders:** We have a contract on a mind flayer in the area of Silver Head, track it down and kill it. Bring back it's head as proof. -Allison Highwater
 
-<!--**International Grangemaster's Alliance Orders:** I'm afraid the grangemaster's alliance has little interest in mountains and mining towns. -Winslow Fredericks-->
+**International Grangemaster's Alliance Orders:** I'm afraid the grangemaster's alliance has little interest in mountains and mining towns. -Winslow Fredericks-->
 
 **Illustrious Guild of Merchants and Fine Artisans Orders:** Larissa (LP) Percival is in Silver Head right now and has requested assistance with an undisclosed issue. Find her, find out what the trouble is, and take care of it. -Kendrick O'mally
 
@@ -33,7 +35,7 @@ The orc army that recently attacked Northport is now moving east into the sword 
 
 **Masters of the Deep Song Orders:** There is a group of dwarven prospectors up in the sword mountains whose presence may not be entirely legal by Gerasaline law. Make sure the army does not discover their presence unless their legal status is established first. -Ogrun Firebreath
 
-<!--**Shepherds of the All-Mother Orders:** Queen Organa has long been a vocal opponent of the Neran Church. Take this wand of animate dead and find a way to prove to her that judicious use of the dead may just save the living in this wretched war. -Gimble Beren-->
+**Shepherds of the All-Mother Orders:** Queen Organa has long been a vocal opponent of the Neran Church. Take this wand of animate dead and find a way to prove to her that judicious use of the dead may just save the living in this wretched war. -Gimble Beren
 
 **Silver Dragon Knights Orders:** There is a group of frost giants in the mountains that recently attacked and wounded a silver dragon, crippling it. They are hunting for it's lair now, wipe out the giants before they find their target. -Farnor Spiketooth
 
@@ -95,53 +97,7 @@ The eastern portion of New Town is dominated by manufacturies and artisans.
 
 ### Important People in Strovenguard
 
-<aside id="jimjimmyjim" class="card col-sm-6 pull-right">
-  
-  <h3 id="jimjimmyjimjimjim">Jim Jimmy Jim Jim Jim</h3>
-  
-  <h4>Small humanoid (gnome), chaotic good</h4>
-  
-  <p>
-  <strong>Hit Points:</strong> <br />
-  <strong>AC:</strong> <br />
-  <strong>Speed:</strong>  <br />
-  </p>
-  
-  <table class="table">
-  <tbody>
-  <tr>
-  <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-  </tr>
-  <tr>
-  <td>8 (-1)</td><td>16 (+3)</td><td>16 (+3)</td><td>22 (+6)</td><td>6 (-2)</td><td>6 (-2)</td>
-  </tr>
-  </tbody>
-  </table>
-  
-  <p>
-  <strong>Saving Throws:</strong> Intelligence +10, Wisdom +2  <br />
-  <strong>Skills:</strong> Arcana +10, Religion +10, History +10, Perception +6  <br />
-  <strong>Senses:</strong> Darkvision 60 ft, passive perception 12  <br />
-  <strong>Languages:</strong> morrind, stagen, staelic, orc, imperial  <br />
-  <strong>Challenge:</strong> 11
-  </p>
-  
-  <p>
-  <strong>Spellcasting:</strong> Jim Jimmy Jim Jim Jim is an 11th level spellcaster. His attack bonus for spells is +10, and his save DC is 18\. He has the following spells prepared: Mage Armor, Shield, Levitate, Alter Self, Locate Object, Haste, See Invisibility, Clairvoyance, Polymorph, Tongues, Locate Creature, Arcane Eye, Animate Objects, Scrying, True Seeing
-  </p>
-  <p>
-  <strong>Ritual Casting:</strong> Jim Jimmy Jim Jim Jim can cast the following spells as rituals: Alarm, Comprehend Languages, Detect Magic, Identify, Tenser's Floating Disk, Unseen Servant, Feign Death, Leomund's Tiny Hut, Water Breathing, Contact Other Plane, Rary's Telepathic Bond
-  </p>
-  <p>
-  <strong>Cantrips:</strong> Jim Jimmy Jim Jim Jim knows the following cantrips that he can cast at will: fire bolt, mage hand, prestidigitation, minor illusion, frost bite
-  </p>
-  <h4>Actions</h4>
-  <p>
-  </strong>Dagger:</strong> Melee Weapon Attack, +7 (1d4+3)
-  </p>
-</aside>
-
-##### Jim Jimmy Jim Jim Jim
+##### [Jim Jimmy Jim Jim Jim](/runner/jimjimmyjimjimjim)
 
 Jim Jimmy Jim Jim Jim is in Strovenguard, and once in the city he is not hard to find. Every one in town knows of him because he spends every day just outside the gates of the palace ranting at anyone who passes by and generally making a nuisance of himself. He has so far avoided unwanted attention by the orcs, but no one is really sure how since the castle is their base of operations and presumably they pass by him constantly.
 
@@ -157,111 +113,19 @@ Jim is not willing to help the party. He will rebuff them initially. In order to
 
 If convinced to help, Jim will attempt to scry on what the players ask him to, but only 1 thing per day.
 
-<aside class="card col-sm-6 pull-right">
-  <h3>Warlord Rol the Unsightly</h3>
-    <h4>Medium humanoid (orc), Lawful Evil</h4>
-
-  <p>
-    <strong>Hit Points:</strong> 96<br />
-    <strong>AC:</strong> 19<br />
-    <strong>Speed:</strong> 30 ft<br />
-  </p>
-  <table class="table">
-  <tr>
-    <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-  </tr>
-  <tr>
-    <td>20 (+5)</td><td>8 (-1)</td><td>14 (+2)</td><td>14 (+2)</td><td>12 (+1)</td><td>9 (-1)</td>
-  </tr>
-  </table>    
-  <p>
-    <strong>Saving Throws:</strong> +9 Strength, +6 Constitution <br />
-    <strong>Skills:</strong> +9 Athletics, +3 Intimidation, +5 Insight, +5 Perception<br />
-    <strong>Senses:</strong> Darkvision 60 ft., Passive Perception 15<br />
-    <strong>Languages:</strong> Orc, Imperial, Goblin<br /> 
-    <strong>Challenge:</strong> 12
-  </p>
-      
-  <p><strong>Champion Fighter:</strong>12th level champion with all features.</p>
-      
-  <h4 id="actions-1">Actions</h4>
-  <p><strong>Multiattack</strong> Makes 3 greataxe attacks</p>
-  <p><strong>Greataxe +1:</strong> +10 (1d12+6)</p>
-</aside>
-
-##### Warlord Rol The Unsightly
+##### [Warlord Rol The Unsightly](/runner/roltheunsightly)
 
 Rol the Unsightly is the Warlord in charge of the old city of Strovenguard, and thus has possession of the Queen's castle. He is a known drunkard, and is irritable at the innability to get the local breweries up and running properly. He has been taking out his anger on his subordinates.
 
 Rol spends most of his time hiding out in his personal quarters in the Royal Palace, he is typically alone except when he wants to rail against one or more of his subordinates.
 
-<aside class="card col-sm-6 pull-right">
-  <h3>Warlord Drorull Spine-Axe</h3>
-    <h4>Medium humanoid (orc), Lawful Evil</h4>
-
-  <p>
-    <strong>Hit Points:</strong> 88<br />
-    <strong>AC:</strong> 15<br />
-    <strong>Speed:</strong> 30 ft<br />
-  </p>
-  <table class="table">
-  <tr>
-    <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-  </tr>
-  <tr>
-    <td>10 (+0)</td><td>14 (+2)</td><td>16 (+3)</td><td>8 (-1)</td><td>10 (+0)</td><td>20 (+5)</td>
-  </tr>
-  </table>    
-  <p>
-    <strong>Saving Throws:</strong> +7 Constitution, +9 Charisma <br />
-    <strong>Skills:</strong> +9 Intimidation, +3 Insight, +3 Perception, +9 Persuasion<br />
-    <strong>Senses:</strong> Darkvision 60 ft., Passive Perception 15<br />
-    <strong>Languages:</strong> Orc, Imperial, Goblin<br /> 
-    <strong>Challenge:</strong> 11
-  </p>
-      
-  <p><strong>Draconic Sorcerer:</strong> 11th level draconic sorcerer with all features, red dragon blood.</p>
-  
-  <p><strong>Spellcasting:</strong> Cantrips: Fire bolt, prestidigitation, message, mage hand, minor illusion, friends. Level 1: Shield, Thunderwave. Level 2: Misty Step, Suggestion. Level 3: Fear, Counterspell, Fireball. Level 4: Wall of Fire, Greater Invisibility. Level 5: Hold Monster, Animate Objects. Level 6: Mass Suggestion.</p>
-  
-  <p><strong>Metamagic:</strong> Subtle Spell, Empower Spell, Distant Spell.
-  <h4 id="actions-1">Actions</h4>
-</aside>
-
-##### Warlord Drorull Spine-Axe
+##### [Warlord Drorull Spine-Axe](/runner/drorullspineaxe)
 
 Warlord Spine-Axe is in control of the new city, and thus the breweries. He has denied the other warlords access to the little beer that is produced, hording it for his own men. He is aware of Rol's drinking problem, and sees it as a way to slight his rival who managed to secure the superior acquisition of the old city.
 
 Drorull stays in an old manor house in the city, where he regularly holds audience and keeps a direct hand in the affairs of the city.
-<aside class="card col-sm-6 pull-right">
-  <h3>Warlord Zhuk the Miscreant</h3>
-    <h4>Medium humanoid (orc), Neutral Evil</h4>
 
-  <p>
-    <strong>Hit Points:</strong> 63<br />
-    <strong>AC:</strong> 20<br />
-    <strong>Speed:</strong> 30 ft<br />
-  </p>
-  <table class="table">
-  <tr>
-    <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-  </tr>
-  <tr>
-    <td>20 (+5)</td><td>8 (-1)</td><td>12 (+1)</td><td>14 (+2)</td><td>10 (+0)</td><td>14 (+2)</td>
-  </tr>
-  </table>    
-  <p>
-    <strong>Saving Throws:</strong> +2 Dexterity, +5 Intelligence <br />
-    <strong>Skills:</strong> +8 Intimidation, +8 Deception, +5 Persuasion, +8 Athletics<br />
-    <strong>Senses:</strong> Darkvision 60 ft., Passive Perception 15<br />
-    <strong>Languages:</strong> Orc, Imperial, Goblin<br /> 
-    <strong>Challenge:</strong> 10
-  </p>
-  <h4 id="actions-1">Actions</h4>
-  <p><strong>Cunning Action </strong> Disengage, Dash, Hide, or Help as a bonus action.
-</aside>
-
-##### Warlord Zhuk the Miscreant
+##### [Warlord Zhuk the Miscreant](/runner/zhukthemiscreant)
 
 Warlord Zhuk is in control of North Town, north of the Ara river, a very minor award considering most of the residents of North Town managed to flee before the orcs arrived, and thus he gained few slaves from the apportionment.
 
@@ -301,50 +165,17 @@ Maris Island Fortress has existed for some time as an enforcement location for t
 
 **5. South Gatehouse.** Guarded by a Blade of Ilneval and 4 orc troopers, they try to avoid going downstairs if they can.
 
+<p><strong><a href='/runner/orcbladeofilneval&orc&orc&orc&orc)' target="_blank">Run This Encounter</a></strong></p>
+
 **6. Inner Trap Room.** Once a cloak room for visitors, Zhuk has converted this room into a deathtrap. The south door is locked, and shoots a magic missile at anyone who touches it for 2d10 force damage. Their is a 5 foot platform on the north end of the room, and another one at the south end. Between the two, the floor has been dug out and poisoned spikes placed at the bottom. A rope bridge has been set up between the two platforms that is intentionally built to collapse as soon as someone steps on it.
 
 **7. Barracks.** This room is filled with beds for the various guards who live in the keep. Since Zhuk is paranoid and keeps as many of his guards as possible as close as possible, the room is packed with orc soldiers, 18 of them at the present time (all just average grunts). Most do not have weapons on them, rather their weapons are on weapon racks around the room (one on each wall). Several of them are playing dice, a few others sleeping, a couple of them eating dinner, etc.
 
-<aside class="card col-sm-6 pull-right">
-  <h3>Orc Elite Guard</h3>
-  <h4>Medium humanoid (orc), lawful evil</h4>
-  <p>
-    <strong>Hit Points:</strong> 38 (5d8 + 18)<br />
-    <strong>AC:</strong> 18 (plate armor)<br />
-    <strong>Speed:</strong> 30 ft.<br />
-  </p>
-  <table class="table">
-    <tr>
-      <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-    </tr>
-    <tr>
-      <td>18 (+4)</td><td>12 (+1)</td><td>16 (+3)</td><td>8 (-1)</td><td>12 (+1)</td><td>10 (+0)</td>
-    </tr>
-  </table>    
-  <p>
-    <strong>Saving Throws:</strong> +6 Str, +5 Con<br />
-    <strong>Skills:</strong> Intimidation +2, perception +3<br />
-    <strong>Senses:</strong> darkvision 60 ft., passive perception 13<br />
-    <strong>Languages:</strong> Orc, Goblin, Morrind<br /> 
-    <strong>Challenge:</strong> 2
-  </p>
-      
-  <p><strong>Aggressive:</strong> As a bonus action, the orc can move up to its speed toward a hostile creature that it can see.</p>
-  
-  <p><strong>Savage Attacks:</strong> When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit.</p>
-
-  <p><strong>Polearm Master</strong> Other creatures provoke an opportunity attack when entering the Elite Guard's reach.
-  
-  <h4 id="actions-1">Actions</h4>
-      
-  <p><strong>Multiattack:</strong> The Elite Guard makes 2 halberd attacks and one with the halberds butt when it takes an attack action on its turn.</p>
-  
-  <p><strong>Halberd:</strong> Reach 10 ft. +6 (1d10+4)
-  
-  <p><strong>Halberd Butt:</strong> Reach 10 ft. +6 (1d4+4)
-</aside>
+<p><strong><a href='/runner/orc&orc&orc&orc&orc&orc&orc&orc&orc&orc&orc&orc&orc&orc&orc&orc&orc&orc&orc&orc)' target="_blank">Run This Encounter</a></strong></p>
 
 **8. Great Hall.** Zhuk is typically in the Great Hall, with his 6 elite guards. All of the doors are kept locked and trapped, with disable switches from inside the hall. Anyone who attempts to pick the lock or break down a door gets sprayed with acid for 6d4 acid damage (DC 13 Dex save for half).
+
+<p><strong><a href="/runner/zhukthemiscreant&orceliteguard&orceliteguard&orceliteguard&orceliteguard&orceliteguard&orceliteguard" target="_blank">Run This Encounter</a></strong></p>
 
 **9. Old Treasure Room.** This room (behind a secret door in the old store room) has not been discovered by the orcs. It used to be used to store the toll collections, and 5000 GP was left behind here when the fortress was abandoned.
 
@@ -354,7 +185,11 @@ Maris Island Fortress has existed for some time as an enforcement location for t
 
 **12. North gatehouse.** This room has 3 Elite Guards who make sure no one who isn't allowed enters the Great Hall.
 
+<p><strong><a href="/runner/orceliteguard&orceliteguard&orceliteguard" target="_blank">Run This Encounter</a></strong></p>
+
 **13. Extended Barracks.** This room has been converted into additional barracks space, with sleeping pallets all around the room. It has 10 guards in it currently.
+
+<p><strong><a href="/runner/orc&orc&orc&orc&orc&orc&orc&orc&orc&orc" target="_blank">Run This Encounter</a></strong></p>
 
 **14. Abandoned Courtyard.** This inner courtyard is no longer used.
 
@@ -363,6 +198,8 @@ Maris Island Fortress has existed for some time as an enforcement location for t
 **16. Vault.** This room was once a bedroom for a minor functionary, Zhuk, not knowing where the original vault was, has converted it into a vault for collected tolls and taxes. It has 10,000 GP and 3 random uncommon magic items confiscated from captured slaves. The door has been replaced with a heavy iron vault door, however the frame is still made of wood and can be relatively easily broken out.
 
 **17. Vault Guardroom.** This room is magically darkened, with 4 Red Fangs of Shargaas hiding in the darkness, waiting to strike at anyone who enters without permission.
+
+<p><strong><a href="/runner/orcredfangofshargaas&orcredfangofshargaas&orcredfangofshargaas&orcredfangofshargaas" target="_blank">Run This Encounter</a></strong></p>
 
 **18. Guard's Secret Room** This secret room used to be used as a hangout by guards in the know. There are empty kegs, card tables and some bare cupboards. The corpses of three guards who hid in here when the orcs attacked are huddled in the corner, having starved to death.
 

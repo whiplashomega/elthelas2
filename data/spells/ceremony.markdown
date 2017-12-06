@@ -3,7 +3,7 @@ layout: post
 title: "Ceremony"
 date: 2015-07-14
 source: XGE.151
-tags: [paladin, cleric, level1, aburation, ritual]
+tags: [paladin, cleric, level1, abjuration, ritual]
 ---
 
 **1st-level abjuration (ritual)**

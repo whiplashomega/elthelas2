@@ -4,50 +4,16 @@
   <div id="chapter5orders">
     <h3>Orders</h3>
     <p>
-      As the massive refugee caravan trickles into Cur'Estan, General Heartbren rides out to congratulate the party on their success, and asks that they talk to Jaxan Chin and Wyrmling Trapsmith to find out what they can do to help, and asks that they find him in his office in the morning.
-    </p>
-    <p>
-      Jaxan Chin will be in discussions with Malia, and when the party asks after him, he will defer to Malia, saying she is taking control of Amathera's Shield in town.  Malia says the most immediate problem is food and asks the players to talk to the Dormanian Ambassador about getting food shipped in from Cur'Mestin.
-    </p>
-    <p>
-      The Dormanian Ambassador will refuse, saying it isn't because he is unwilling, but is unable, because Cur'Mestin is in active revolt, along with the other cities along the river.
-    </p>
-    <h4>Orders</h4>
-    <p>
       <strong>General Heartbren's Orders: </strong>  -Gerad Heartbren
-    </p>
-    <p>
-      <strong>Amathera's Shield Orders: </strong>  -Malia Demonslayer
-    </p>
-    <p>
-      <strong>Artificer's of Mechanus Orders: </strong>  -Margo
     </p>
     <p>
       <strong>Black Sun Orders: </strong> Before you track down the real traitor, I need you to help me use the situation to recruit a new agent. Giggle's Wump, one of the refugees who just arrived, may be the key to one of my plans succeeding. I need you to mix up some fake evidence that she is involved in this treason issue, then confront her with it. Tell her I can help her make the problem disappear, and then bring her to me. -Kyman Hexhammer
     </p>
     <p>
-      <strong>Champions of Cora Orders: </strong> We intend to establish a strong presence in this town, but we need to find a temporary headquarters, and a good location for a permanent one. You are more familiar with the players in this town than I, talk to the relevant people and find us somewhere we can serve the people besides a tent. -Maya Scientalis
-    </p>
-    <p>
-      <strong>Dormanian Imperial Guard Orders (Alexandra is Empress): </strong> -Ambassador Gloryheart
-    </p>
-    <p>
-      <strong>Guild of Heroes Orders: </strong> These evil artifacts are giving me a headache, just from the energy that leaks out when I open my bag of holding. I need you to find me someplace I can store them long term, maybe somewhere we can set up the Guild Chapterhouse even. A sizeable basement is preferable. -Allison Highwater
-    </p>
-    <p>
-      <strong>International Grangemaster's Alliance Orders: </strong> -Winslow Fredericks
-    </p>
-    <p>
       <strong>Illustrious Guild of Merchants and Fine Artisans Orders:</strong> -Kendrick O'mally
     </p>
     <p>
-      <strong>Keepers of the Grove Orders: </strong> There is something causing a disturbance in the balance of nature ne. -via sending
-    </p>
-    <p>
       <strong>Lords of the Rising Dawn Orders: </strong> We need to worry more about who this traitor was selling information to than who in particular the traitor was. We have many potential enemies in the world. Find out all of their contacts, track them down, and kill them for seducing someone to evil. -Duke James Lightbringer
-    </p>
-    <p>
-      <strong>Maker's of Legend Orders: </strong> -Haera Oelefros
     </p>
     <p>
       <strong>Masters of the Deep Song Orders: </strong> -Ogrun Firebreath
@@ -57,12 +23,6 @@
     </p>
     <p>
       <strong>Silver Dragon Knights Orders:</strong> A traitor seems unlikely, it is probably the fault of poor scrying protections on important planning meetings. Inspect the protections and then install these non-detection runes. -Farnor Spiketooth
-    </p>
-    <p>
-      <strong>Sylvan's Rangers Orders:</strong> I haven't been here long, but I already don't trust that Lightbringer fellow, and he seems to have the ear of General Heartbren. If it is him, General Heartbren may not believe it, bring me evidence of his wrongdoing and I'll make sure he's dealt with. -Vanriel Glamfara
-    </p>
-    <p>
-      <strong>Trollkin Mercenary Corps Orders:</strong> Trollkin are often suspected when rumors of treason start to fly. Comb through our ranks and make sure the Trollkin were not involved in this heinous act. -Drog Stonearm
     </p>
   </div>
   <div id="chapter5hunt">

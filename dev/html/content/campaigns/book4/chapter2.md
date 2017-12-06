@@ -22,6 +22,9 @@
     <p>
       <strong>General Heartbren's Orders: </strong> That Orc army is moving on Northport far too quickly for us to intercept, and they outnumber us 6 to 1 besides.  I need you to get down there and organize an evacuation before the army gets there. -Gerad Heartbren
     </p>
+    <p>
+      <strong>Black Wolf Irregulars Orders: </strong> A high ranking member of Amathera's Shield has been living in Northport and may be able to help you. Find Malia Demonslayer and make sure she makes it back to Cur'Estan. Her organizational abilities will be critical in managing the new influx of refugees. -Gerad Heartbren
+    </p>
     <!--<p>
       <strong>Amathera's Shield Orders: </strong> A high ranking member of Amathera's Shield has been living in Northport and may be able to help you. Find Malia Demonslayer and make sure she makes it back to Cur'Estan. -Jaxan Chin
     </p>
