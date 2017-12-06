@@ -1,9 +1,9 @@
 
 <div id="chapter1" class="clear-b">
-  <h2>Chapter 1: Recruits</h2>
+  <h1>Chapter 1: Recruits</h1>
   <div id="chapter1startingout">
-    <h3>Character Building</h3>
-    <h4>Building Your Character</h4>
+    <h2>Character Building</h2>
+    <h3>Building Your Character</h3>
     <p>
       Player's should use the following guidelines for building your character.
     </p>
@@ -51,18 +51,18 @@
     <p>
       <strong>Step 9: Choose your Equipment</strong> Ignore the equipment provided by your class.  In addition to the equipment provided by your background and potentially your faction, you start with 500 gp worth of equipment.  Players can use this to purchase armor, weapons, adventuring gear, mounts or common magic items (see the <a ui-sref="app.quickref">Quick Reference Manual</a> for listings and prices).
     </p>
-    <h4>Organizations Available for Players to Join</h4>
+    <h3>Organizations Available for Players to Join</h3>
     <p>
       Players who are part of a particular faction will receive orders from their faction to report to Cur'Estan, and then orders from their faction leader in the town.  The following factions are available for player characters to be a part of at the start of the campaign.
     </p>
-    <!--<h4>Amathera's Shield</h4>
+    <h4>Amathera's Shield</h4>
     <p>
       Member's of Amathera's Shield will be told to report to the refugee camp in Cur'Estan.  Jaxan, not particularly needing an additional hand with the players skills, will instruct them to report to General Heartbren to aid in the general effort.
     </p>
       <h4>Artificer's of Mechanus</h4>
       <p>
         Members of the Artificer's of Mechanus may be responding to a request for an apprentice by Margo.  Once they've arrived, Margo will inform them that she wants them to report to General Heartbren as a recruit so that she can keep an eye on whats going on in the world.
-      </p>-->
+      </p>
       <h4>Black Sun</h4>
       <p>
         Members of the Black Sun will be approached on entering the town and ordered to report to Kyman immediately.  Kyman will inform them that he is now their boss, and he needs someone to be part of a new infiltration team that General Heartbren is assembling.
@@ -71,7 +71,7 @@
       <p>
         Members of the Black Wolf Irregulars will either already be in town preexisting, or arriving as a survivor from another (now dead or disbanded) unit.  General Heartbren is the local commander, and lower ranked members will tell them to report to General Heartbren immediately.
       </p>
-      <!--<h4>Champions of Cora</h4>
+      <h4>Champions of Cora</h4>
       <p>
         The Champions of Cora have no local representation currently, but members of the Champions may be ordered by a cleric of Cora to go to Cur'Estan and assist however possible.  People in town will tell them to talk to General Heartbren to find out where they are needed.
       </p>
@@ -86,24 +86,23 @@
       <h4>International Grangemaster's Alliance</h4>
       <p>
         The Grangemaster's Alliance has a local chapterhouse, and has taken it upon themselves to fill the gaps in supplying the local refugee camp.  A PC member of the Grangemaster's Alliance will be sent to General Heartbren to join his team.  The local Grangemaster, a farmer named Winslow Fredericks, is particularly concerned about the increase in raids on local farms and will use what resources are at his disposal to protect the farmers and their livelihoods.
-      </p>-->
-      
+      </p>
       <h4>Illustrious Guild of Merchants and Fine Artisans</h4>
       <p>
         Most of the local merchants are members of the Guild (those who aren't are too minor for the Guild to be concerned over).  The PC guild member has been encouraged to go to Cur'Estan because there is opportunity for people of skill to earn enough of a fortune to start their own business, and the influx of refugees and the presence of so many soldiers means there is a glut of demand in the area as well.  The local guild leader, Kendrick O'Malley, will inform the PC on arrival that General Heartbren is offering well paid opportunities to handle issues the guild is already interested in, and encourage them to sign up.
       </p>
-      <!--<h4>Keepers of the Grove</h4>
+      <h4>Keepers of the Grove</h4>
       <p>
         The Druids of the Grove are concerned that the Prince of Fiends, by his very presence and continued success, threatens to upset the balance of power between the Gods.  The PC member of the Keepers of the Grove will be sent to Cur'Estan to find allies and assist in the battle against the Prince.
-      </p>-->
+      </p>
       <h4>Lords of the Rising Dawn</h4>
       <p>
         Member's of the Lords of the Rising Dawn will be assigned by their local leader to work for Duke Lightbringer.  Lightbringer will inform them that General Heartbren has requested a member of the Lords to join a new team he is putting together and will send the PC to be that person.
       </p>
-      <!--<h4>Maker's of Legend</h4>
+      <h4>Maker's of Legend</h4>
       <p>
         The Maker's of Legend is the one group from which there will be at least one member on the team.  A PC Maker of Legend will be called on by Haera Oelefros to record the doings of the team that General Heartbren is assembling.  Haera is convinced they will do great things and wants to make sure that the stories are recorded for posterity.
-      </p>-->
+      </p>
       <h4>Masters of the Deep Song</h4>
       <p>
         The Church of Dorun is critical of the Underking's decision to withdraw the dwarves from the war, and will secretly send one of their own to assist in Cur'Estan.  The Master's of the Deep Song have a contact in the refugee camp, Ogrun Firebreath, who can provide insight, orders, and relay reports back to Curin Keep.
@@ -116,25 +115,25 @@
       <p>
         Dera'Dragorim has for now been too far removed from the issue to consider intervening with force in the war against the Orcs, but the Dragon Emperor has been considering it for some time.  He will send a PC member of the Silver Dragon Knights to Cur'Estan as a goodwill ambassador to serve at General Heartbren's pleasure, along with a diplomat, Farnor Spiketooth, who will serve as his official ambassador to the Irregulars.
       </p>
-      <!--<h4>Tock's Inevitables</h4>
+      <h4>Tock's Inevitables</h4>
       <p>
         Officially, Tock's Inevitables don't exist. A character who is a member of the Inevitables will be sent to report to Mace Tinker, a Kolyarut disguised as a cleric of Tock who has set up a small temple in Cur'Estan.  Mace recommends the player use the Black Wolf Irregulars as a cover for getting to targets, and as helping them aids in getting closer to the ultimate target for the inevitables, the immortal Prince of Fiends himself, their goals are, at least temporarily aligned.
-      </p>-->
-      <!--<h4>Sylvan's Rangers</h4>
+      </p>
+      <h4>Sylvan's Rangers</h4>
       <p>
         Sylvan's Rangers are renknowned adventurer's, and many would need little encouragement to join the fight against the servants of Sylvan's ancient enemy Mat'raktha.  The closest thing to a local representative of the Rangers would be the half-elf ranger who helps protect the nearby woods, Sondel Fistin.
       </p>
       <h4>Trollkin Mercenary Corps</h4>
       <p>
         The Trollkin Mercenary Corps have a contract with General Heartbren to supply a certain number of soldiers to his army.  The PC member would be sent as reinforcements to the local troop, and then assigned by General Heartbren to his new team.  The local Trollkin Sergeant, Drog Stonearm, will be the PCs contact with the organization.  He will provide the PC with his advance payment for each mission.
-      </p>-->
-    <h4>Factions Discouraged because they have a limited interest</h4>
+      </p>
+    <h3>Factions Discouraged because they have a limited interest</h3>
     <ul>
       <li>Morrind Brewers' Club</li>
       <li>Order of the Cleansing Fire</li>
       <li>Stormlords of Trimala</li>
     </ul>
-    <h4>Factions not Available</h4>
+    <h3>Factions not Available</h3>
     <p>
       There are a few factions that are not available to player characters for this campaign (listed below).  These factions are either currently dissolute, or are directly opposed to the mission of Cur'Estan.
     </p>
@@ -145,54 +144,64 @@
       <li>Voidbringers</li>
     </ul>
     <h4>Start Date: 18th of Trimalan, 1846.</h4>
-    <h3 id='arrival'>Arrival at Cur Estan</h3>
-    <h4>Barbarious Entrance</h4>
+    <h2 id='arrival'>Arrival at Cur Estan</h2>
+    <h3>Barbarious Entrance</h3>
     <p>
       Barbarious has the following events to deal with before joining the rest of the party.
     </p>
-    <p><strong>Meeting Ogrun Firebreath.</strong> Ogrun Firebreath is Barbarious contact in Cur'Estan with the Master's of the Deep Song. Ogrun is drunk when Barbarious meets him, but he is able to pass along orders. He tells Barbarious to sign up with the irregulars. First, because being known as an Irregular will keep people for attacking him just based on his race, and second because it gives them an in to aid in the war effort. He tells Barbarious that while General Heartbren is aware of their affiliation with the Masters, no one else in town is aware of this.</p>
+    <h4>Meeting Ogrun Firebreath</h4>
+    <p>Ogrun Firebreath is Barbarious contact in Cur'Estan with the Master's of the Deep Song. Ogrun is drunk when Barbarious meets him, but he is able to pass along orders. He tells Barbarious to sign up with the irregulars. First, because being known as an Irregular will keep people for attacking him just based on his race, and second because it gives them an in to aid in the war effort. He tells Barbarious that while General Heartbren is aware of their affiliation with the Masters, no one else in town is aware of this.</p>
     
-    <p><strong>Encounter with Haera Oelefros.</strong> Haera Oelefros, having heard of an Orc entering town, wants to show off her awesomeness.  She will be waiting outside the castle (where Barbarious must go to enlist), and challenge him to a duel... with bagpipes!</p>
+    <h4>Encounter with Haera Oelefros</h4>
+    <p>Haera Oelefros, having heard of an Orc entering town, wants to show off her awesomeness.  She will be waiting outside the castle (where Barbarious must go to enlist), and challenge him to a duel... with bagpipes!</p>
     
-    <h4>Tilda Entrance</h4>
+    <h3>Tilda Entrance</h3>
     <p>
       Tilda arrives at town with her friend Yeva. They have orders to find Kyman Hexhammer, and just about anyone in town can point them in his direction. Tilda has the following encounters to deal with before joining up with the party:
     </p>
-    <p><strong>Meeting Kyman Hexhammer.</strong> Kyman lives in a lavish mansion near the center of town. Well, really he lives in a Mordenkainen's Magnificent Mansion the entrance to which is in a lavish mansion in the center of town. He has a number of loyal servants who will shepherd Tilda and Yeva to Kyman's study in the inner mansion. There Kyman will hear them out. He says he can supply profitable jobs to both of them. He sees through Tilda's disguise fairly easily, and offers her a way to avoid prosecution and suspicion while in Cur'Estan. General Heartbren has a deal with the King of Kandor that no active member of the Black Wolf Irregular's shall face prosecution for crimes committed before enlisting.  Since the severity of her crime means General Heartbren might voluntarily turn her over, he recommends maintaining her disguise anyway (at least until she proves herself indespensible to the general).  Yeva he has a different mission for, sending her back to Farengar on a fact finding mission.</p>
+    <h4>Meeting Kyman Hexhammer</h4>
+    <p>Kyman lives in a lavish mansion near the center of town. Well, really he lives in a Mordenkainen's Magnificent Mansion the entrance to which is in a lavish mansion in the center of town. He has a number of loyal servants who will shepherd Tilda and Yeva to Kyman's study in the inner mansion. There Kyman will hear them out. He says he can supply profitable jobs to both of them. He sees through Tilda's disguise fairly easily, and offers her a way to avoid prosecution and suspicion while in Cur'Estan. General Heartbren has a deal with the King of Kandor that no active member of the Black Wolf Irregular's shall face prosecution for crimes committed before enlisting.  Since the severity of her crime means General Heartbren might voluntarily turn her over, he recommends maintaining her disguise anyway (at least until she proves herself indespensible to the general).  Yeva he has a different mission for, sending her back to Farengar on a fact finding mission.</p>
     
-    <p><strong>Enter Wyrmling Trapsmith.</strong> Wyrmling Trapsmith will interrupt Tilda's meeting with Kyman to complain that some of his booze has gone missing.  He will blame Kyman, claiming that one of Kyman's thieves must have stolen it. Kyman will deny it strongly (it wasn't him, it was Ogrun). Unless Tilda calms him down Wyrmling will leave in a huff.
+    <h4>Enter Wyrmling Trapsmith</h4>
+    <p> Wyrmling Trapsmith will interrupt Tilda's meeting with Kyman to complain that some of his booze has gone missing.  He will blame Kyman, claiming that one of Kyman's thieves must have stolen it. Kyman will deny it strongly (it wasn't him, it was Ogrun). Unless Tilda calms him down Wyrmling will leave in a huff.
     
-    <p><strong>Maggie Pelagius</strong> Maggie Pelagius is a corrupt law-enforcement officer from Westport. She has been hunting Tilda for years, always to have Tilda slip out of her grasp. Tilda will be approached by Maggie on leaving Kyman's house. Maggie will have a wanted poster with Tilda's face on it.  Maggie will ask Tilda if she 'has seen this woman?' but does not recognize her.</p>
+    <h4>Maggie Pelagius</h4>
+    <p>Maggie Pelagius is a corrupt law-enforcement officer from Westport. She has been hunting Tilda for years, always to have Tilda slip out of her grasp. Tilda will be approached by Maggie on leaving Kyman's house. Maggie will have a wanted poster with Tilda's face on it.  Maggie will ask Tilda if she 'has seen this woman?' but does not recognize her.</p>
     
-    <h4>Silas of Irons Entrance</h4>
+    <h3>Silas of Irons Entrance</h3>
     
     <p>
       Silas has his own reasons for coming to Cur'Estan, but his arrival is expected by Gimble Beren, the young cleric of Nera. Gimble runs an undertakers shop in town, perhaps a fairly obvious front for a cleric of Nera, but at least a legitimate business that helps him complete his duties. Silas will have the following encounters:
     </p>
+    <h4>Meet Gimble Beren</h4>
     <p>
-      <strong>Meet Gimble Beren. </strong> Gimble Beren will stop Silas in the street, and invite him into his shop. There he will tell Silas about him being the local cleric of Nera, and will offer to provide him guidance on the will of Nera in relation to his work. He gives Silas some advice on finding Sir Dawnblade, by telling him to volunteer with the Lords of the Rising Dawn. 
+      Gimble Beren will stop Silas in the street, and invite him into his shop. There he will tell Silas about him being the local cleric of Nera, and will offer to provide him guidance on the will of Nera in relation to his work. He gives Silas some advice on finding Sir Dawnblade, by telling him to volunteer with the Lords of the Rising Dawn. 
     </p>
+    <h4>Meet James Lightbringer</h4>
     <p>
-      <strong>Meet James Lightbringer.</strong> James Lightbringer likes to meet all new recruits personally.  If Silas goes to volunteer with the Rising Dawn he will be sent to James Lightbringer's office in the barracks. Lightbringer will not question him on his motivations, but rather than integrating him into a Lord's of the Rising Dawn unit, he will send him to join the joint task force.
+      James Lightbringer likes to meet all new recruits personally.  If Silas goes to volunteer with the Rising Dawn he will be sent to James Lightbringer's office in the barracks. Lightbringer will not question him on his motivations, but rather than integrating him into a Lord's of the Rising Dawn unit, he will send him to join the joint task force.
     </p>
     
-    <h4>Eobard Thawne Entrance</h4>
+    <h3>Eobard Thawne Entrance</h3>
     
     <p>Eobard is arriving with Farnor Spiketooth, the ambassador from Cur'Estan. They will be met at the entrance to the city by General Heartbren. The general will greet them graciously and offer them one of the old embassy buildings to set up in. He talks to the ambassador on the side for a brief bit, after which he will lead them to the embassy building. There is a staff of servants already in place. Farnor will order Barry, Salvator, and H.R. to start settling in and to search the building. He will have special orders for Eobard however. He will say that General Heartbren has requested that Farnor's best man be assigned to a special joint task force, and Farnor will say he is picking Eobard for that role. Eobard is to report to the castle immediately.</p>
+    <h4>Barry Quits</h4>
+    <p>Barry will be incredibly upset at Farnor for choosing Eobard over him when he is 'clearly the better warrior.' To which Farnor will respond that he is too inexperienced and unpredictable for a mission of this magnitude. Barry will then quit and storm off in a huff.</p> 
     
-    <p><strong>Barry Quits:</strong></p> Barry will be incredibly upset at Farnor for choosing Eobard over him when he is 'clearly the better warrior.' To which Farnor will respond that he is too inexperienced and unpredictable for a mission of this magnitude. Barry will then quit and storm off in a huff.
-    
-    <h4>Flykr Moon Entrance</h4>
+    <h3>Flykr Moon Entrance</h3>
     
     <p>
       Flykr Moon arrives in town with a small caravan of traveling merchants and peddlers that has been moving through Kandor selling goods to various towns. Their caravan is met as they enter the city by Kendrick O'mally, the local Illustrious Guild leader, who will ask to see the guild membership papers for each of the merchants.  He will mention to each that the town is looking for merchants to settle down and set up shop, as demand has been higher than the local shopkeepers can handle. When he meets Flykr, he will be impressed with her personal charisma and asks her if she can do a special job for him: Finding out if Margo is a guild member or not.
     </p>
+    <h4>Meeting Margo</h4>
     <p>
-      <strong>Meeting Margo.</strong> Margo is a Stagen Gnome artificer and skilled wizard who has set up shop in the center of town. She bought an old building, quickly demolished it with magic, and then built a new stone shop on the site all in a day. After her impressive display of magical talent, no one has had the courage yet to go in and ask if she is in good standing with the guild, or request she pay her guild dues. If Flykr will do this for him, Kendrick offers to have the guild procure her a shop in town where she can sell her dresses.
+      Margo is a Stagen Gnome artificer and skilled wizard who has set up shop in the center of town. She bought an old building, quickly demolished it with magic, and then built a new stone shop on the site all in a day. After her impressive display of magical talent, no one has had the courage yet to go in and ask if she is in good standing with the guild, or request she pay her guild dues. If Flykr will do this for him, Kendrick offers to have the guild procure her a shop in town where she can sell her dresses.
     </p>
     <p>
       Margo is not in good standing with the guild. She is in fact, not a member, never has been, and does not want to be. When Flykr enters the store, Margo will ask what she is looking for, and will be friendly but curt about her unwillingness to be a part of the Illustrious Guild. She will ask Flykr what her name is, and upon hearing it, be surprised and say she has a letter for her, delivered to by a raven that very morning. She will hand over the letter (untampered with). The letters contents are such:
     </p>
+    <aside>
+    <h4>Letter from Carlyle</h4>
     <p>
       My Dearest Flykr,
     </p>
@@ -200,10 +209,11 @@
       I dream of you nightly, your beauty captivates me. My most recent dreams trouble me, however, I dare not give you details.  Know you must stay close to the dragonborn Eobard Thawne or you will both suffer for it.  When you can, find me in Northport and I will tell you more.  Be careful of Silas, he is not the innocent child he once was, and cannot be trusted.
     </p>
     <p>Forever Yours, <br />Carlyle</p>
+    </aside>
     <p>
       On reporting in Kendrick will mention that General Heartbren had recently asked him if he had any interest in contributing someone to help on a special task force, but hadn't had anyone who would of had the skills for the work. He knows Eobard has been asked to join the group, and suggests Flykr do so as well, he would make sure her shop was staffed and producing income, and may occasionally have additional work for her based on what the task force is doing. He writes a quick note saying she is his representative for the task force, and sends her to the castle.
     </p>
-    <h4>Eadric Tudoria Entrance</h4>
+    <h3>Eadric Tudoria Entrance</h3>
     <p>
       Eadric will be approached personally by General Heartbren and Ninatha Quiverleaf. He will be informed that he is being transferred to a new unit. He will be nominally in command, however his compatriots are not official Black Wolf Irregulars and as such his authority is only nominal. Gnar Locke will be taking command of his old patrol unit. Gerad will give Eadric descriptions of the other PCs as such:
     </p>
@@ -216,14 +226,16 @@
     </ul>
     <p>Eadric has the morning off to collect his new squad, but should report to the war room at noon. Gerad will have an initial mission for them then, and will give Eadric the special mission of learning as much as he can about them, particularly whether they can be trusted and are committed to the cause.</p>
     <p>When he goes to leave the castle he will encounter the bagpipe duel, with a crowd gathered around. Across the crowd he will see his brother, Alex, who will catch his eye, smile and then disappear into the crowd.</p>
-    <h4>Coming Together</h4>
+    <h3>Coming Together</h3>
+    <h4>The Bagpipe Duel</h4>
     <p>
-      <strong>The bagpipe duel.</strong> The first encounter where all the players are present will be the bagpipe duel between Haera and Barbarious. It will be opposed performance checks, with advantage if proficient in the instrument (Haera is not, but her performance modifier is +13). If Haera loses, she will leave in a huff. The party will have a chance to interact or talk.
+      The first encounter where all the players are present will be the bagpipe duel between Haera and Barbarious. It will be opposed performance checks, with advantage if proficient in the instrument (Haera is not, but her performance modifier is +13). If Haera loses, she will leave in a huff. The party will have a chance to interact or talk.
     </p>
+    <h4>The Council of War</h4>
     <p>
       <strong>General Heartbren.</strong> General Heartbren will have observed the bagpipe duel with a certain amusement. He will congratulate Barbarious if he won the duel, and wish him better luck next time if he did not. Then he will invite the party into his offices in the keep. He will take them to a large conference room where his inner council is gathering. 
     </p>
-    <p><strong>The Council of War.</strong> The war council is James Lightbringer, Theodore Gloryheart, Farnor Spiketooth, Haera Oelefros, Wyrmling Trapsmith, and Kyman Hexhammer. The party will arrive before any of the other council members except Ambassador Gloryheart, who General Heartbren will introduce as Theodore Gloryheart, Archduke of Falak, Ambassador of Empress Dormana I. Each of the others will be announced by the Seneschal in this order as such:</p>
+    <p>The war council is James Lightbringer, Theodore Gloryheart, Farnor Spiketooth, Haera Oelefros, Wyrmling Trapsmith, and Kyman Hexhammer. The party will arrive before any of the other council members except Ambassador Gloryheart, who General Heartbren will introduce as Theodore Gloryheart, Archduke of Falak, Ambassador of Empress Dormana I. Each of the others will be announced by the Seneschal in this order as such:</p>
     <ul>
       <li>Duke James Lightbringer, Lord of the East Reach, Lord General of the Rising Dawn, Ambassador of the King of Kandor.</li>
       <li>Dragon Lord Farnor Spiketooth, Retired Commander of the Western Legion, Special Ambassador of the Dragon Emperor Valraxa</li>
@@ -234,7 +246,7 @@
     <p>Gerad will then lay out that each of them has been chosen to serve on a special group designed to bring together a wide range of expertise to deal with particularly thorny problems and missions involved in the war effort. First however, he wants to give them a chance to figure out how to work together as a group before giving them any truly difficult tasks. He will then lay out the raiding mission. After giving them the details of the situation, he will mention that they should remember that they still report to their respective organizations as well, who may provide insight or additional orders with each mission.</p>
   </div>
   <div id="chapter1raiders">
-    <h3>Raiders</h3>
+    <h2>Raiders</h2>
     <h4>DM rundown</h4>
     <p>
       The past several weeks have seen a series of raids on nearby farms by orcs and hobgoblins.  A large band of them split off from an orc army poised to attack Northport and has been raiding for supplies.  They were rebuffed from the more populous regions by the Kandori army, who declined to pursue them into the woodlands that surround Cur'Estan.  The raiders have set up a headquarters in the basement of an old fort, and have smaller sattelite camps throughout the region.  Each of the sattelite camps sends supplies back to the fort, which in turn sends supplies south to the main army.
@@ -254,7 +266,7 @@
     <p>
       General Heartbren will give the party a packet of order details that will include the location of the farm, the names of the farmers family, his primary orders and the orders from any factions the players belong to, detailed below.
     </p>
-    <h4>Orders</h4>
+    <h3>Orders</h3>
     <p><strong>General Heartbren's Orders:</strong> Find the raiders and put a stop to their attacks permanently.  In the process, please find any intelligence you can on orc army movements to the south.  Payment will be 20 gp per enemy killed or captured, plus a 500 gp bonus if you uncover good intelligence on the orcs plans.</p>
     <p><strong>Black Wolf Irregular's Special Orders:</strong> Observe and determine the trustworthiness of squad members by whatever means necessary, we must know if these people are actually committed to the cause, and how far to trust each of them.</p>
     <!--<p><strong>Amathera's Shield Orders:</strong> The raiders have stolen a large number of livestock and valuable food that could feed refugees and people in the town.  Please return as much of the stolen goods as you can to the refugee camp. -Jaxan Chin</p>-->
@@ -276,8 +288,7 @@
     <!--<p>
       <strong>Tock's Inevitables: </strong> We believe that the Littlefoot family was harboring a deserter who is not among the dead at the farm. Find Marmaduc Undertree and bring him back to me alive, I will see him brought to the correct authorities to face court marshal.
     </p>-->
-    <p><strong>Quartermaster's Addendum:</strong> I planned to purchase those livestock for the stockpile here in the keep.  Make sure to deliver any recovered goods to the Quartermaster's office.</p>
-    <h4>The Farm</h4>
+    <h3>The Farm</h3>
     <p>
       The Littlefoot Farm sits 15 miles south of Cur'Estan.  The house is little more than a burned out hulk, but searching it thoroughly players can discover valuables owned by the family left behind by the orcs, specifically a silver heart shaped locket with the names Sally Littlefoot and Bob Littlefoot inscribed inside once owned by Jenny Littlefoot, and their savings, 30 gp, hidden under what was once the bed.  The locket is worth 10 gp on the open market.
     </p>
@@ -293,7 +304,7 @@
     <p>
       One of the goblins, Gullox Hameater, on the raid was injured in the fight, and is hiding in the wheat field nearby.  If the players search the wheat field he can be found with a DC 14 perception check (or passive perception check).  He will not attack, realizing he is outnumbered, but is unwilling to help the players.  He can be bribed or intimidated into giving up the location of their camp.  He will not give the players clues to the larger raiding force if he can help it, and if he feels like he can get away cleanly he will do so. He does know that one of the halflings (Marmaduc, though he doesn't know the name) offered to show the orcs where the Littlefoots had hidden the Red Gold Wine if they let him live and was taken prisoner.
     </p>
-    <h4>Finding the Raiders</h4>
+    <h3>Finding the Raiders</h3>
     <p>
       The Raider's camp is located 5 miles southwest of the farm.  The raiders attempted to conceal their tracks, but a skilled tracker make a DC 15 survival check to trace them to their camp to the southeast. During travel one of the random encounters from the 'Random Encounters' section of this chapter will happen.
     </p>
@@ -303,7 +314,7 @@
     <p>
       Finally, a member of Sylvan's Rangers could recruit help from Sondel Fistin, who will identify the direction the orcs went for the party and give them their approximate location (he saw smoke from a campfire in that area earlier that day, but did not investigate closely, assuming it was travelers).
     </p>
-    <h4>The Camp</h4>
+    <h3>The Camp</h3>
     <p>
       The raiders' camp is currently populated by the squad leader, an Orc Blade of Ilneval, 1 regular Orc, 2 hobgoblins and a Worg. The hobgoblin and one of the orcs are keeping an eye on the stolen livestock, about half of which still remain.  There are 5 two-man tents as well as one large tent used by the leader.  The remaining 3 orcs, hobgoblin, goblin, and worg are currently traveling to the central raiding base to deliver the other missing livestock.
     </p>
@@ -311,12 +322,6 @@
     <p>
       If any of the raiders detect the players they will immediately raise the alarm and attack.  The worg will follow the orders of any of the orcs or the hobgoblin.
     </p>
-    <aside class="card col-sm-4 pull-right">
-      <h3>Level Up</h3>
-      <p>
-        After defeating the raiders at the camp and retreiving the related intelligence there the party should level up to level 4.
-      </p>
-    </aside>
     <h4>Intelligence</h4>
     <p>
       In the leaders tent is a document with his orders, written in orc.  It says: 'We need more food for the army, particularly meat.  Find and retreive any livestock you can and send them south right away.  We will await your shipment at the forward base where we will send it on to the army.'  Additionally 50 gp and 6 kegs of Red Gold Wine worth 60 gp each can be found in the leader's tent.
@@ -327,10 +332,17 @@
     <p>
       The shipment group is not particularly concealing their tracks, and can be followed with relative ease (DC 11 survival check).
     </p>
+
   </div>
   <div id="chapter1raidersbase">
-    <h3>The Raiders' Base</h3>
-    <h4>Finding the Base</h4>
+    <h2>The Raiders' Base</h2>
+    <h3>Finding the Base</h3>
+    <aside>
+      <h4>Level Up</h4>
+      <p>
+        After defeating the raiders at the camp and retreiving the related intelligence there the party should level up to level 4.
+      </p>
+    </aside>
     <p>
       The Fort they are using as a base is 60 miles, or 2 full days travel, southeast of Cur'Estan.  The raiders caravan will be encountered on the second day, whatever direction they are headed.  On the first day one of the random encounters from the 'Random Encounters' section of this chapter should occur.
     </p>
@@ -340,7 +352,7 @@
       They have no additional intelligence beyond what could be found at the camp.
     </p>
     <h5><a href="/runner/orc&orc&hobgoblin&hobgoblin&goblin&worg" target="_blank">Run This Encounter</a></h5>
-    <h4>Outer Defenses</h4>
+    <h3>Outer Defenses</h3>
     <p>
       The outside of the fort is lightly guarded, only 3 orcs keep watch from the broken towers with javelins and greataxes.  The outer defense is primarily handled by Dralaxin, the young green dragon who keeps his perch on top of the ruined keep of the old fort.  Likewise he has established a hoard on the roof of the keep with 5000 gp worth of gold and gems.  If Dralaxin or one of the orc guards sees any member of the party they will raise the alarm and all attack, however those inside the basement of the keep will ignore the alarm, they feel that with a dragon guarding the door they don't need to worry about attack from smaller groups, and if a larger group is sighted one of the guards will come down and alert them personally.  
     </p>
@@ -348,6 +360,7 @@
       The fort consists of a square outer wall of spiked logs, 80 feet on a side, with 1 wooden tower at each corner, and one central gate which stands open.  The northwest tower is nothing but a pile of rubble.  Each tower has a stairway winding up the back and left side to the top lookout, 30 ft up.  The top of the tower is surrounded by a wooden half-wall that provides half-cover to anyone standing up there.  The range of any ranged weapon attack from on top of the tower to the plain below is increased by 20 ft.  The keep is 60 ft cubed and made of stone.  The inside of the keep is largely empty except for some ruined furniture, having been looted long ago, and consists of only 1 large room, with a stairway along one wall that leads up to a ladder to the roof, and a trap door that heads down into the basement.  If the party returned to Cur'Estan or took a long rest before beginning the pursuit of the raiding caravan, the 20 stolen pigs will be inside the great hall.  The keep is 60 ft on a side and square.
     </p>
     <h5><a href="/runner/younggreendragon&orc&orc&orc" target="_blank">Run This Encounter</a></h5>
+    <h3>Inside the Base</h3>
     <h4>Inside the Base: Level 1: Room 1</h4>
     <p>
       The map below details the first level of the keep basement.  The orcs have set up the rooms closest to the stairs as a guard post, complete with kitchen and readily available weapons.  The first room has 4 orcs and a hobgoblin in it.  One of the orcs is a Claw of Luthic, and the Hobgoblin is an Iron Shadow.  The spot at the bottom of the stairs is trapped with a 'hold person' spell rune.  It is a DC 13 investigation or perception check to identify it, and a DC 15 check to disarm it.  If it goes off the person stepping in the square must make a DC 13 Wisdom Save or suffer the effects of a 'hold person' spell.
@@ -412,8 +425,8 @@
     </p>
     <h5><a href="/runner/orcbladeofilneval&goblinboss&bugbear&bugbear&hobgoblindevastator&marmaducundertree">Run This Encounter</a></h5>
     <p class="row"><img src="/images/maps/raiderbase-level3.png" alt="Raider Base Level 2" class="col-sm-12" id="raiderbasemap3" /></p>
-    <aside class="card col-sm-4 pull-right">
-      <h3>Level Up</h3>
+    <aside>
+      <h4>Level Up</h4>
       <p>
         After completing the raider base dungeon and finding the critical intelligence located there the party should level up to level 5.
       </p>
@@ -427,7 +440,7 @@
     </p>
   </div>
   <div id="chapter1randomencounters">
-    <h3>Random Encounters</h3>
+    <h2>Random Encounters</h2>
     <p>
       The following random encounters can occur at any of the 'random encounter points' either randomly or as desired by the DM.
     </p>

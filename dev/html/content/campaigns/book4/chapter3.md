@@ -1,14 +1,16 @@
 
 <div id="chapter3" class="clear-b">
-  <h2>Chapter 3: Civil War</h2>
+  <h1>Chapter 3: Civil War</h1>
   <div id="chapter3preparation">
-    <h3>Preparation</h3>
-    <h4>Orders</h4>
+    <h2>Preparation</h2>
+    <h3>Orders</h3>
+    <h4>General Heartbren's Orders</h4>
     <p>
-      <strong>General Heartbren's Orders:</strong> The influx of refugees presents a serious supply problem for Cur'Estan, and our best route of resupply, moving supplies upriver from Cur'Mestin is cut off by the rebels under Manius Aquila. You must find a way to get open a trade route with Cur'Mestin so that we can buy supplies.  Negotiate with the local duchess if you can, use other means if you have to, thousands of lives depend on it.
+       The influx of refugees presents a serious supply problem for Cur'Estan, and our best route of resupply, moving supplies upriver from Cur'Mestin is cut off by the rebels under Manius Aquila. You must find a way to get open a trade route with Cur'Mestin so that we can buy supplies.  Negotiate with the local duchess if you can, use other means if you have to, thousands of lives depend on it.
     </p>
+    <h4>Black Wolf Irregulars Special Orders</h4>
     <p>
-      <strong>Black Wolf Irregulars Special Orders</strong> There are rumors that Genevieve Octavius may have made deals with devils, find out for sure if this is the case.  If so, she cannot be allowed to continue in a position of power and must be deposed or killed. -Gerad Heartbren
+      There are rumors that Genevieve Octavius may have made deals with devils, find out for sure if this is the case.  If so, she cannot be allowed to continue in a position of power and must be deposed or killed. -Gerad Heartbren
     </p>
     <!--<p>
       <strong>Amathera's Shield Orders: </strong> Before you go, I need you to make sure the quartermaster provisions sufficient supplies for the refugees while you are gone.  So far he is refusing to work with me, so we may need something we can hold over his head to make sure he cooperates, at least until we can get additional supplies in from down river. -Malia Demonslayer
@@ -16,8 +18,9 @@
     <p>
       <strong>Artificer's of Mechanus Orders: </strong> I have heard that there is a purple worm nest in the area, their eggs are purported to have incredibly interesting magical properties, bring me back one of the eggs and I'll give you an item of your choice. -Margo
     </p>-->
+    <h4>Black Sun Orders:</h4>
     <p>
-      <strong>Black Sun Orders: </strong> An old, associate, of mine has been seen in Cur'Mestin recently, apparently working for Genevieve Octavius. Felix is an opportunistic grifter who stole my Shield Guardian. Get it back from him, then kill him. -Kyman Hexhammer
+      An old, associate, of mine has been seen in Cur'Mestin recently, apparently working for Genevieve Octavius. Felix is an opportunistic grifter who stole my Shield Guardian. Get it back from him, then kill him. -Kyman Hexhammer
     </p>
     <!--<p>
       <strong>Champions of Cora Orders: </strong> There are rumors that Genevieve Octavius may have made deals with devils, find out for sure if this is the case.  If so, she cannot be allowed to continue in a position of power and must be deposed or killed. -Maya Scientalis
@@ -31,26 +34,31 @@
     <p>
       <strong>International Grangemaster's Alliance Orders: </strong> Cur'Mestin has a stranglehold on the barley market in the area because they have developed a unique strain of barley that can survive longer into the fall through the early frosts. If you can get some of those seeds for our local farmers it would be much appreciated, and earn you a 100 gp bounty besides. -Winslow Fredericks
     </p>-->
+    <h4>Illustrious Guild of Merchants and Fine Artisans Orders</h4>
     <p>
-      <strong>Illustrious Guild of Merchants and Fine Artisans Orders:</strong> This embargo is an afront to the guild.  Dormania and Kandor have had open trade relations since the schism! General Heartbren may be concerned about food, but this embargo is much bigger than that. Several of the local merchants pooled their resources to order a special shipment of goods a few weeks ago that has been held up in a warehouse in Cur'Mestin. I want you to personally escort that shipment back to Cur'Estan. -Kendrick O'mally
+      This embargo is an afront to the guild.  Dormania and Kandor have had open trade relations since the schism! General Heartbren may be concerned about food, but this embargo is much bigger than that. Several of the local merchants pooled their resources to order a special shipment of goods a few weeks ago that has been held up in a warehouse in Cur'Mestin. I want you to personally escort that shipment back to Cur'Estan. -Kendrick O'mally
     </p>
     <!--<p>
       <strong>Keepers of the Grove Orders: </strong> One of the druids from the area, Amra Olojeon, around Cur'Mestin was recently thrown in jail on trumped up charges. While you are there get them free. -via sending
     </p>-->
+    <h4>Lords of the Rising Dawn Orders</h4>
     <p>
-      <strong>Lords of the Rising Dawn Orders: </strong> We have received word that the local temple of Alohim in Cur'Mestin was desecrated. Make contact with the local priest among the loyalists in Cur'Mestin, find out who the perpetrator was, and see that they pay for their crimes against the High God. -Duke James Lightbringer
+      We have received word that the local temple of Alohim in Cur'Mestin was desecrated. Make contact with the local priest among the loyalists in Cur'Mestin, find out who the perpetrator was, and see that they pay for their crimes against the High God. -Duke James Lightbringer
     </p>
     <!--<p>
       <strong>Maker's of Legend Orders: </strong> I heard that there is a purple worm nest in Cur'Mestin! Now that sounds like a glorious battle. When you get back I want to hear your new balad about the battle with the purple worm, and the grand heroics involved in defeating it! -Haera Oelefros
     </p>-->
+    <h4>Masters of the Deep Song Orders</h4>
     <p>
-      <strong>Masters of the Deep Song Orders: </strong> Wyrmling Trapsmith, that fecund piece of shit of a quartermaster, has refused beer rations for the refugees! It isn't like the beer was much good anyways, but this is a travesty! Before you run off to Cur'Mestin I need you to get at least 3 barrels of beer out of the castle storehouse for me. -Ogrun Firebreath
+      Wyrmling Trapsmith, that fecund piece of shit of a quartermaster, has refused beer rations for the refugees! It isn't like the beer was much good anyways, but this is a travesty! Before you run off to Cur'Mestin I need you to get at least 3 barrels of beer out of the castle storehouse for me. -Ogrun Firebreath
     </p>
+    <h4>Shepherds of the All-Mother Orders</h4>
     <p>
-      <strong>Shepherds of the All-Mother Orders: </strong> The faithful in Cur'Mestin have been under persecution by both the loyalists and the rebels. Make contact with the local cleric of Nera and inform him that he can bring his flock to safety here in Cur'Estan. -Gimble Beren
+      The faithful in Cur'Mestin have been under persecution by both the loyalists and the rebels. Make contact with the local cleric of Nera and inform him that he can bring his flock to safety here in Cur'Estan. -Gimble Beren
     </p>
+    <h4>Silver Dragon Knights Orders</h4>
     <p>
-      <strong>Silver Dragon Knights Orders:</strong> The Emperor's emissary to Dormania was held up in Cur'Mestin on his way to Desadorel. Find out where he is and help him continue on his journey. -Farnor Spiketooth
+      The Emperor's emissary to Dormania was held up in Cur'Mestin on his way to Desadorel. Find out where he is and help him continue on his journey. -Farnor Spiketooth
     </p>
     <!--<p>
       <strong>Sylvan's Rangers Orders:</strong> One of Duchess Octavius' local overseers, Ogrun Hammerfist, is a murderer who she has allowed to walk free thanks to the success he has had in retreiving back taxes. See that he pays appropriately for his crimes. If there is any question, that means kill him. -Vanriel Glamfara
@@ -78,94 +86,60 @@
     </p>
   </div>
   <div id="chapter3curmestin">
-    <h3>Cur'Mestin</h3>
-    <h4>Locations</h4>
+    <h2>Cur'Mestin</h2>
+    <h3>Locations</h3>
     <img class="col-sm-12" style="max-width:100%;" src="/images/maps/cities/curmestin.png" alt="map of cur'mestin" />
-    <h5>1. Octavius Castle</h5>
+    <h4>1. Octavius Castle</h4>
     <p>
       Octavius Castle is the home of Genevieve Octavius and the seat of government for the duchy.  It is an imposing fortress built by Dorman I as a staging base before his invasion of Kandor. Genevieve has spent considerable sums repairing and restocking the fortress in recent years.
     </p>
-    <h5>2. The River Docks</h5>
+    <h4>2. The River Docks</h4>
     <p>
       The river docks of Cur'Mestin are a singular large complex near the main marketplace in the city. There are several huge warehouses nearby currently filled to the brim with supplies.
     </p>
-    <h5>3. Temple of Dorman</h5>
+    <h4>3. Temple of Dorman</h4>
     <p>
       The largest temple in the city, the local priests of Dorman have not taken a side in the conflict between Manius Aquila and Empress Dormana.
     </p>
-    <h5>4. Temple of Alohim</h5>
+    <h4>4. Temple of Alohim</h4>
     <p>
       The Temple of Alohim is a relatively minor temple in Cur'Mestin, and the few regular worshippers that go there have been alarmed at the recent changes in the doctrine, not to mention the sudden disappearance of the high priest. The lower priests claim he was simply recalled to Desadorel, but his family is still in town, so most don't believe them.
     </p>
-    <h5>5. Temple of Sara</h5>
+    <h4>5. Temple of Sara</h4>
     <p>
       The temple of Sara in town serves the local farmers without getting involved in politics.  The local grange meets in the temple every Mansday.
     </p>
-    <h5>6. Temple of Maris</h5>
+    <h4>6. Temple of Maris</h4>
     <p>
       The priests of the temple of Maris have been vocal in their opposition to civil war, and particularly the blockade of Cur'Estan. 
     </p>
-    <h5>7. Loyalist's Hideout</h5>
+    <h4>7. Loyalist's Hideout</h4>
     <p>
       Genevieve the Younger's loyalists meet in this restaurant to discuss plans to undermine the rebels. They regularly speak in codewords and passphrases, and most anyone who frequents the restaurant is aware that something fishy is going on with the duchesses daughter.
     </p>
-    <h5>8. Purple Worm Nest</h5>
+    <h4>8. Purple Worm Nest</h4>
     <p>A few miles to the east of town, some miners accidentally broke through into a purple worm's nest a few months ago. The mine was abandoned after that, and various monsters have moved in instead.</p>
-    <h4>Important People</h4>
-    <h5>Genevieve Octavius.</h5> 
+    <h3>Important People</h3>
+    <h4>Genevieve Octavius.</h4> 
     <p>
       The Duchess of Cur'Mestin was an early supporter of Manius Aquila.  She has always been known as a power hungry woman.  The third (and least favored) child of her father, the previous Duke Octavius, she had her elder siblings murdered in their sleep (although it was never proven). Then, frustrated by her father's continued long life, waited until he slighted her at a party, then challenged him to a duel. She defeated her father in 'fair' combat after he tripped on something he couldn't see, inheriting his titles and duchy.
     </p>
     <p>After rising to power, Genevieve proceeded to consolidate it, swiftly replacing the counts and barons under her with men and women directly loyal to her.  Her largest frustration has been her own wayward daughter (and heir).</p>
-    <h5>Genevieve Octavius II.</h5>
+    <h4>Genevieve Octavius II.</h4>
     <p>
       Named by her mother in a pique of vanity, the younger Genevieve became enamored at a young age with a local priest of Cora. That priest soon died in suspicious circumstances (after her mother discovered their budding relationship), and young Genevieve put the pieces together.  Her uncle and grandfathers deaths, the disappearances among those who opposed her mother's iron fisted rule, and her own lover. When her mother pledged to support Manius Aquila's rebellion and began publicly trafficking with devils, Genevieve began quietly communicating with the Empress, and organizing a resistance force among the peasantry.
     </p>
     <p>
       The younger Genevieve is bright and capable, but foolhardy, believing ever brightly in Cora's doctrine that no cause is ever truly lost.
     </p>
-    <aside class="card col-sm-6 pull-right" id="felixcrawford">
-      <h3>Felix Crawford</h3>
-      <h4>medium humanoid (half-elf), Lawful Evil</h4>
-
-      <p>
-        <strong>Hit Points:</strong> 35<br />
-        <strong>AC:</strong> 13 (studded leather)<br />
-        <strong>Speed:</strong> 30 ft<br />
-      </p>
-      <table class="table">
-        <tr>
-          <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-        </tr>
-        <tr>
-          <td>10 (+0)</td><td>12 (+1)</td><td>11 (+0)</td><td>16 (+3)</td><td>17 (+3)</td><td>22 (+6)</td>
-        </tr>
-      </table>    
-      <p>
-        <strong>Saving Throws:</strong> Dex +4, Cha +9<br />
-        <strong>Skills:</strong> Acrobatics +4, Insight +6, Investigation +6, Perception +6, Performance +9, Persuasion +12, Religion +6, Sleight of Hand +4, Stealth +4, Deception +12<br />
-        <strong>Senses:</strong> darkvision 60 ft, passive perception 16<br />
-        <strong>Languages:</strong> imperial, morrind, elf, dwarf<br /> 
-        <strong>Challenge:</strong> 7
-      </p>
-      <p><strong>Jack of all Trades.</strong> Felix adds +1 to any ability check he is not proficient with.</p>
-      <p><strong>Spellcasting:</strong> Felix is a 7th level spellcaster. He has 4 1st level spell slots, 3 second level spell slots, 3 3rd level spell slots and 1 4th level spell slot. He has the following spells prepared: at will: Minor Illusion, Vicious Mockery, Prestidigitation, Cutting Words. Slots: Cure Wounds, Thunderwave, Disguise Self, Heat Metal, Suggestion, Detect Thoughts, Enhance Ability, Dispel Magic, Speak with Dead, Fireball, Tongues, Dimension Door</p>
-      <h4 id="actions-1">Actions</h4>
-      
-      <p><strong>Rapier:</strong> Melee Weapon Attack. Range 5 ft. To hit: +4 (damage 1d8+1).</p>
-      
-      <p><strong>Vicious Mockery:</strong> Range 60 ft. Target makes a DC 17 wisdom save or takes 2d4 psychic damage.</p>
-    
-
-    </aside>
-    <h5>Felix Crawford</h5>
+    <h4><a href="/runner/felixcrawford&shieldguardian" target="_blank">Felix Crawford</a></h4>
     <p>
       Felix is a young half-elf with a questionable past. He regularly works for the highest bidder, sometimes as a spy, sometimes as a diplomat. He honors his contracts, but takes it very personally when someone else fails to honor theirs. Has worked with Kyman Hexhammer in the past, though they are not currently on the best of terms.  He has a shield guardian companion that rarely leaves his side.  He is currently in the employ of Genevieve Octavius to root out the loyalists.
     </p>
   </div>
   <div id="chapter3octaviuscastle">
-    <h3>Castle Octavius</h3>
-    <h4>Diplomacy</h4>
+    <h2>Castle Octavius</h2>
+    <h3>Diplomacy</h3>
     <p>
       When the players arrive at Castle Octavius they will be met by Felix Crawford and his shield guardian just inside the gate.  He will show them to the Grand Hall where Genevieve herself will meet with them. 
     </p>
@@ -178,8 +152,8 @@
     <p>
       If the party refuses her terms, attacks, or goes to leave without agreeing to them, she will order her guards to kill the party, while she and her cambion bodyguards exit through a hidden door behind her throne. The bone devil will attack the party if combat breaks out, and Genevieve the Younger will intervene on the party's behalf. The loyalist guards at the door will unlock the door and attempt to cover any retreat by Genevieve the Younger and the party.
     </p>
-    <aside class="card pull-right col-sm-6">
-      <h5>Trollkin Contract</h5>
+    <aside>
+      <h4>Trollkin Contract</h4>
       <p>
         If the party agrees to hunt down the loyalists leader, Genevieve will be willing to discuss the Trollkin's contract (should the party have that subquest). The terms she will agree to depend on the party's persuasion check.  5 or less and she demands a discount, 5-10 and she will agree to the standard rate, 11-15 and she will agree to up to 50 GP more per head, 16 or more and she will agree to up to 100 GP more per head.
       </p>
@@ -187,37 +161,59 @@
     <p>
       Once the party escapes or the devils are destroyed, Genevieve the Younger will ask the party to accompany her back to the loyalist hideout, where she will give them more details on the situation in Cur'Mestin.
     </p>
-    <h4>Sneaking into the Castle</h4>
+    <h3>Sneaking into the Castle</h3>
     <p>
       The party may at some point decide to sneak or talk their way into other parts of Castle Octavius, whether to free the druid imprisoned in the dungeon, assassinate Duchess Octavius, or steal something of value.
     </p>
-    <p><strong>1. The North Gatehouse</strong> The North Gatehouse is manned by 4 human guards, stationed on the second level. There is a small stairwell that leads up to that level on the ground floor. Their are several 2 foot by 2 foot openings in the floor of the second floor that they can pour boiling pitch down in the case of an incursion.</p>
-    <p><strong>2. Barracks</strong> The barracks is a two floor structure with sleeping quarters for the castles soldiers.  The ground floor is general living quarters, with tables, chairs, storage, etc. The second floor is sleeping quarters, with a gender partition in the middle of the room. There are generally 10-15 guards off duty in the barracks at any time. Only the human guards stay in the primary barracks.</p>
-    <p><strong>3. Corner towers.</strong> The large round corner towers are manned by a mix of devil and human guards (3 of each per tower). The first floor is sleeping quarters and barracks space, while the top level is the watch post.</p>
-    <p><strong>4. Commander's Quarters</strong> The quarters for Genevieve's captain of the guard, he has been replaced by a chain devil, who has turned the quarters into his personal playground. Peasants, barely alive from torture, are chained to the wall, and chains hang from the ceiling throughout the room.</p>
-    <p><strong>5. Duchess Octavius Apartments</strong> The apartments of the Duchess. The ground floor has living quarters and an office, as well as her daughters bedroom. The upper floor is the duchesses personal quarters, which remain locked at all times. Her communication stone is hidden under a floorboard by her bed.</p>
-    <p><strong>6. Guest room apartments.</strong> These rooms were once quarters dedicated to housing visiting functionaries, courtiers, and other persons of relatively high station. Today they remain locked at all times, and serve as housing for the Duchesses fiendish servants.</p>
-    <p><strong>7. Great Hall</strong> The Great Hall, where the duchess holds court, deals with matters of state, and hosts important functions. Excepting one of these functions the room generally stands empty, with Genevieve's throne of skulls at the head of the room, and a long table going down the center. The large stairway to the north of the Great Hall heads down to the dungeons.</p>
-    <p><strong>8. The South Gate</strong> The south gate is generally the receiving gate for visitors to the castle. It is less imposing than the north gate, lacking the flanking towers, but still has a double gate/portcullis and oil drop points from the second floor. The gate is generally manned by the Duchess butler and a pair of human guards.</p>
-    <p><strong>9. Receiving Room</strong> The receiving room stands just inside the south gate, and has another large gate on the far end for horses to pass through into the courtyard.</p>
-    <p><strong>10. Courtyard</strong> The open courtyard is maintained open grass for animals to graze. People living in the castle regularly pass through the courtyard on their way from one section of the castle to another.</p>
-    <p><strong>11. Kitchens.</strong> The castle kitchens. Regularly filled with servants and cooks preparing food for the various castle staff and soldier.</p>
-    <p><strong>12. Pantry.</strong> The storage space for the kitchens, includes the castles alcohol reserves.</p>
-    <p><strong>13. Servant's Quarters.</strong> The castle staff live in small apartments in this area.</p>
-    <p><strong>14. Storage.</strong> A storage area for dry goods.</p>
-    <p><strong>15. Fletcher/Weaponsmith</strong> The castle weaponsmith and fletcher works in this room with his apprentices.</p>
-    <p><strong>16. Blacksmith</strong> The castle blacksmith with his two apprentices has his shop in this room.</p>
-    <p><strong>17. Stables</strong> The stables of the castle, has 5 horses currently in stable, and a stableboy.</p>
-    <p><strong>18. Square tower.</strong> The four square towers are each manned by 2 bearded devils, armed with heavy crossbows as well as their glaives. The ground floor of each tower is unmanned storage space.</p>
-    <p><strong>19. Guard's Room</strong> The regular prison guards have been replaced by 3 barbed devils, who are busily torturing a prisoner. The guards room has several implements of torture, and a desk, where the keys to the cells lay. Hidden in the desk is an old prison register that lists the criminals in prison and their crimes. There is also a column listing planned release date, in which all of the previous writing has been scratched out and replaced with 'never'.</p>
-    <p><strong>20. The Druid's Cell</strong> The captured druid, Amra Olojeon, was thrown in prison for attacking a guard. She did attack the guard, because the guard was a bearded devil who was torturing some animals in her forest for fun. If rescued, she will point the party to the location of a secret stash outside the city where she hid her cloak of elven kind.</p>
-    <p><strong>21. East Cell Block</strong> The east cell block is completely full. 6 of the prisoners are in for treason (assisting the loyalists), 2 for contempt of court (looked at the duchess wrong), and the other 4 for various minor crimes (theft, breaking and entering, jay walking, trespassing).</p>
-    <p><strong>22. West Cell Block</strong> The west cell block is mostly empty, and appears to be reserved for more dangerous criminals. A permanent silence spell fills this cell block, slowly driving those who occupy it insane.  The captured druid sits in the second cell on the right. A murderer, driven mad by his own thoughts, is scratching at the bars just across from her. A wizard who defied the duchess is covered in self inflicted wounds, and has written a treatise on magical theory on the walls of his cell, in his own blood. Two of the cells have been used by the devils to store the corpses of their torture victims, and are piled high with dismembered bodies. The smell of rotting flesh fills the whole cell block. The last cell contains a little girl, who is in fact a cambion in disguise. If freed, the wizard (use the 'evoker' entry from Volo's Guide to Monsters), the murderer (use the 'gladiator' entry from the monster manual), and the cambion will all attack, both the party and each other, as soon as the cell block has been cleared. The druid will assist the party in this fight if it takes place (use the druid entry from the monster manual for Amra's statistics).</p>
+    <h4>1. The North Gatehouse</h4>
+    <p>The North Gatehouse is manned by 4 human guards, stationed on the second level. There is a small stairwell that leads up to that level on the ground floor. Their are several 2 foot by 2 foot openings in the floor of the second floor that they can pour boiling pitch down in the case of an incursion.</p>
+    <h4>2. Barracks</h4>
+    <p>The barracks is a two floor structure with sleeping quarters for the castles soldiers.  The ground floor is general living quarters, with tables, chairs, storage, etc. The second floor is sleeping quarters, with a gender partition in the middle of the room. There are generally 10-15 guards off duty in the barracks at any time. Only the human guards stay in the primary barracks.</p>
+    <h4>3. Corner towers.</h4>
+    <p>The large round corner towers are manned by a mix of devil and human guards (3 of each per tower). The first floor is sleeping quarters and barracks space, while the top level is the watch post.</p>
+    <h4>4. Commander's Quarters</h4>
+    <p>The quarters for Genevieve's captain of the guard, he has been replaced by a chain devil, who has turned the quarters into his personal playground. Peasants, barely alive from torture, are chained to the wall, and chains hang from the ceiling throughout the room.</p>
+    <h4>5. Duchess Octavius Apartments</h4>
+    <p>The apartments of the Duchess. The ground floor has living quarters and an office, as well as her daughters bedroom. The upper floor is the duchesses personal quarters, which remain locked at all times. Her communication stone is hidden under a floorboard by her bed.</p>
+    <h4>6. Guest room apartments.</h4>
+    <p>These rooms were once quarters dedicated to housing visiting functionaries, courtiers, and other persons of relatively high station. Today they remain locked at all times, and serve as housing for the Duchesses fiendish servants.</p>
+    <h4>7. Great Hall</h4>
+    <p>The Great Hall, where the duchess holds court, deals with matters of state, and hosts important functions. Excepting one of these functions the room generally stands empty, with Genevieve's throne of skulls at the head of the room, and a long table going down the center. The large stairway to the north of the Great Hall heads down to the dungeons.</p>
+    <h4>8. The South Gate</h4>
+    <p>The south gate is generally the receiving gate for visitors to the castle. It is less imposing than the north gate, lacking the flanking towers, but still has a double gate/portcullis and oil drop points from the second floor. The gate is generally manned by the Duchess butler and a pair of human guards.</p>
+    <h4>9. Receiving Room</h4>
+    <p>The receiving room stands just inside the south gate, and has another large gate on the far end for horses to pass through into the courtyard.</p>
+    <h4>10. Courtyard</h4>
+    <p>The open courtyard is maintained open grass for animals to graze. People living in the castle regularly pass through the courtyard on their way from one section of the castle to another.</p>
+    <h4>11. Kitchens.</h4>
+    <p>The castle kitchens. Regularly filled with servants and cooks preparing food for the various castle staff and soldier.</p>
+    <h4>12. Pantry.</h4>
+    <p> The storage space for the kitchens, includes the castles alcohol reserves.</p>
+    <h4>13. Servant's Quarters.</h4>
+    <p>The castle staff live in small apartments in this area.</p>
+    <h4>14. Storage.</h4>
+    <p> A storage area for dry goods.</p>
+    <h4>15. Fletcher/Weaponsmith</h4>
+    <p> The castle weaponsmith and fletcher works in this room with his apprentices.</p>
+    <h4>16. Blacksmith</h4>
+    <p> The castle blacksmith with his two apprentices has his shop in this room.</p>
+    <h4>17. Stables</h4>
+    <p> The stables of the castle, has 5 horses currently in stable, and a stableboy.</p>
+    <h4>18. Square tower.</h4>
+    <p> The four square towers are each manned by 2 bearded devils, armed with heavy crossbows as well as their glaives. The ground floor of each tower is unmanned storage space.</p>
+    <h4>19. Guard's Room</h4>
+    <p>The regular prison guards have been replaced by 3 barbed devils, who are busily torturing a prisoner. The guards room has several implements of torture, and a desk, where the keys to the cells lay. Hidden in the desk is an old prison register that lists the criminals in prison and their crimes. There is also a column listing planned release date, in which all of the previous writing has been scratched out and replaced with 'never'.</p>
+    <h4>20. The Druid's Cell</h4>
+    <p>The captured druid, Amra Olojeon, was thrown in prison for attacking a guard. She did attack the guard, because the guard was a bearded devil who was torturing some animals in her forest for fun. If rescued, she will point the party to the location of a secret stash outside the city where she hid her cloak of elven kind.</p>
+    <h4>21. East Cell Block</h4>
+    <p> The east cell block is completely full. 6 of the prisoners are in for treason (assisting the loyalists), 2 for contempt of court (looked at the duchess wrong), and the other 4 for various minor crimes (theft, breaking and entering, jay walking, trespassing).</p>
+    <h4>22. West Cell Block</h4>
+    <p> The west cell block is mostly empty, and appears to be reserved for more dangerous criminals. A permanent silence spell fills this cell block, slowly driving those who occupy it insane.  The captured druid sits in the second cell on the right. A murderer, driven mad by his own thoughts, is scratching at the bars just across from her. A wizard who defied the duchess is covered in self inflicted wounds, and has written a treatise on magical theory on the walls of his cell, in his own blood. Two of the cells have been used by the devils to store the corpses of their torture victims, and are piled high with dismembered bodies. The smell of rotting flesh fills the whole cell block. The last cell contains a little girl, who is in fact a cambion in disguise. If freed, the wizard (use the 'evoker' entry from Volo's Guide to Monsters), the murderer (use the 'gladiator' entry from the monster manual), and the cambion will all attack, both the party and each other, as soon as the cell block has been cleared. The druid will assist the party in this fight if it takes place (use the druid entry from the monster manual for Amra's statistics).</p>
     <img style="max-width:100%;" src="/images/maps/castleoctavius.png" alt="map of Castle Octavius" />
     <img style="max-width:100%;" src="/images/maps/castleoctaviusdungeon.png" alt="map of Castle Octavius" />
   </div>
   <div id="chapter3loyalistshideout">
-    <h3>The Loyalists' Hideout</h3>
+    <h2>The Loyalists' Hideout</h2>
     <p>
       The Loyalist's Hideout is an inn outside the walls of the city to the east. If the party agrees to help the cause, the innkeeper will comp their stay, drinks, and food.
     </p>
@@ -238,9 +234,10 @@
     <p>
       The next morning, Felix Crawford (assuming he has not already been eliminated by the party) will arrive at the hideout with a large contingent of bearded devils disguised as guards.  He will inform everyone inside that the Duchess is aware that this is a rebel hideout and to surrender immediately or be killed (intimidation check by Felix, potentially opposed by parties persuasion check). Should that fail to elicit surrender by the loyalists, Felix will say that he can secure free passage out of the city if they give up their leader (Felix is lying). If combat breaks out, Felix will flee with his shield guardian via dimension door. 
     </p>
+    <p><strong><a href="/runner/felixcrawford&shieldguardian&beardeddevil&beardeddevil&beardeddevil&beardeddevil&beardeddevil&beardeddevil">Run This Encounter</a></strong></p>
   </div>
   <div id="chapter3purplewormnest">
-    <h3>The Purple Worm Nest</h3>
+    <h2>The Purple Worm Nest</h2>
     <p>
       Mine entrance: The players enter the wormling tunnels through an established mine tunnel. The tunnel however has been weakened by purple worm tunnels in the area. The players enter through a normal cart tracked tunnel when the tunnel begins to crumble and they fall through into a worms tunnel. You can have there be a save for damage but since this is a scripted event I tend not to have that. The original tunnel they were on is now fully blocked and collapsed. 
     </p>
@@ -258,7 +255,7 @@
     </p>
   </div>
   <div id="chapter3templeofalohim">
-    <h3>The Temple of Alohim</h3>
+    <h2>The Temple of Alohim</h2>
     <p>
       Password: The barred doors of the temple have a single cultist “guard” that is supposed to let in other cultists. The password can be anything, but I recommend “Alohim sucks”. This password can be easily obtained by either hiding and listening to the password, or by finding any cultists and asking them nicely to join their cult, or interrogation. Or if the players are typical they will break down the door and alert the whole place at once.      
     </p>
@@ -279,7 +276,7 @@
     </p>
   </div>
   <div id="chapter3blockade">
-    <h3>Breaking the Blockade</h3>
+    <h2>Breaking the Blockade</h2>
     <p>
       Depending on how the party proceeds in dealing with Duchess Octavius, events may play out in different ways. If Duchess Octavius is killed, her devils will retreat from the city and begin a siege based around the checkpoints.  If the party elects to attempt to open a smuggling route, the checkpoints will need to be infiltrated in order to allow goods to flow to Cur'Estan.
     </p>
@@ -304,7 +301,7 @@
     </p>
   </div>
   <div id="#chapter3misc">
-    <h3>Miscelaneous Sidequests</h3>
+    <h2>Miscelaneous Sidequests</h2>
     <h4>Barley Seeds</h4>
     <p>
       The barley seeds for the farmers of Cur'Mestin are stored under heavy guard at a warehouse near the docks.  Only local grange members are allowed to go in and out of the warehouse. The warehouse is guarded by a gladiator, a mage, and a priest (see monster manual entries), as well as having multiple glyphs of warding on every door.
@@ -339,8 +336,8 @@
     <p>
       The ambassador of Dera'Dragorim has been put on house arrest by Genevieve Octavius while she attempts to convince him to recognize Aquila as the rightful Emperor rather than Alexandra.  The ambassador has refused and so remains in his home.  If the players seek him out, he is under guard by a Blackguard and a knight. He asks the party to find a way to sneak him out of the house, as he doesn't want people to die unnecessarily on his behalf.
     </p>
-    <aside class="card col-sm-6 pull-right">
-      <h3>Level Up</h3>
+    <aside>
+      <h4>Level Up</h4>
       <p>
         The players should level up to level 7 at the end of this mission.
       </p>

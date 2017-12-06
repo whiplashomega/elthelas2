@@ -1,14 +1,9 @@
 
 <div id="chapter2" class="clear-b">
-  <h2>Chapter 2: Escape from Northport</h2>
-  <p>
-    This chapter is laid out in the following way:
-  </p>
-  <ul>
-    <li>First a description of the orders the party may receive from any factions they are a part of and .</li>
-  </ul>
+  <h1>Chapter 2: Escape from Northport</h1>
+
   <div id="chapter2preparation">
-    <h3>Preparation</h3>
+    <h2>Preparation</h2>
     <p>
       Players may opt to mop up the remaining raiding parties before returning to Cur'Estan. There are 3 additional raiding parties scattered around the area.  Each raiding party has between 3-6 orcs 1-3 hobgoblins, 1-3 goblins, and 1-2 worgs.  One Orc from each group should be a claw of luthic or a sword of ilnevall.  If they return to Cur'Estan first to deliver the information they recovered, General Heartbren will tell them that he will send soldiers to deal with the other raiding parties, and ask them to come back the next day for new orders.
     </p>
@@ -18,12 +13,14 @@
     <p>
       The next day General Heartbren will have the parties new orders for them. As before, any factions the party members belong to will have additional orders for their members.
     </p>
-    <h4>Orders</h4>
+    <h3>Orders</h3>
+    <h4>General Heartbren's Orders</h4>
     <p>
-      <strong>General Heartbren's Orders: </strong> That Orc army is moving on Northport far too quickly for us to intercept, and they outnumber us 6 to 1 besides.  I need you to get down there and organize an evacuation before the army gets there. -Gerad Heartbren
+      That Orc army is moving on Northport far too quickly for us to intercept, and they outnumber us 6 to 1 besides.  I need you to get down there and organize an evacuation before the army gets there. -Gerad Heartbren
     </p>
+    <h4>Black Wolf Irregulars Orders</h4>
     <p>
-      <strong>Black Wolf Irregulars Orders: </strong> A high ranking member of Amathera's Shield has been living in Northport and may be able to help you. Find Malia Demonslayer and make sure she makes it back to Cur'Estan. Her organizational abilities will be critical in managing the new influx of refugees. -Gerad Heartbren
+      A high ranking member of Amathera's Shield has been living in Northport and may be able to help you. Find Malia Demonslayer and make sure she makes it back to Cur'Estan. Her organizational abilities will be critical in managing the new influx of refugees. -Gerad Heartbren
     </p>
     <!--<p>
       <strong>Amathera's Shield Orders: </strong> A high ranking member of Amathera's Shield has been living in Northport and may be able to help you. Find Malia Demonslayer and make sure she makes it back to Cur'Estan. -Jaxan Chin
@@ -31,8 +28,9 @@
     <p>
       <strong>Artificer's of Mechanus Orders: </strong> There's an old gnome mechanic by the name of Biggles Wump who retired to Northport some years ago. He probably still has copies of the plans to some of his old ideas. These plans need to stay out of the hands of those who aren't part of the Artificer's, make sure they aren't left behind for the Orcs. -Margo
     </p>-->
+    <h4>Black Sun Orders</h4>
     <p>
-      <strong>Black Sun Orders: </strong> I have a spy who I need inserted into the Orc army, but he tends to cause, distrust, among humans. Get him to Northport and make sure he is safe until the city is empty, then he'll do his part when the Orc army gets there. -Kyman Hexhammer
+      I have a spy who I need inserted into the Orc army, but he tends to cause, distrust, among humans. Get him to Northport and make sure he is safe until the city is empty, then he'll do his part when the Orc army gets there. -Kyman Hexhammer
     </p>
     <!--<p>
       <strong>Champions of Cora Orders: </strong> Our scrying suggests the orcs are employing necromancers to strike fear into the citizens and keep them from fleeing. Kill them. Also we have heard rumors of an artifact being stored by the Guild of Heroes that in the right hands could bring hope to those poor people.  Retreive it, and use it to aid the fearful. -via sending
@@ -46,26 +44,31 @@
     <p>
       <strong>International Grangemaster's Alliance Orders: </strong> There is a lot of unworked land around Cur'Estan, and we will need experienced farmers to work it and feed all those refugees.  Don't forget the people living out in the country when you are handling the evacuation. -Winslow Fredericks
     </p>-->
+    <h4>Illustrious Guild of Merchants and Fine Artisans Orders</h4>
     <p>
-      <strong>Illustrious Guild of Merchants and Fine Artisans Orders: </strong> Northport is a major center of trade and has vast storehouses full of all kinds of goods and supplies owned by guild members.  You need to find a way to get those goods transported north as well as the people. -Kendrick O'mally
+      Northport is a major center of trade and has vast storehouses full of all kinds of goods and supplies owned by guild members.  You need to find a way to get those goods transported north as well as the people. -Kendrick O'mally
     </p>
     <!--<p>
       <strong>Keepers of the Grove Orders: </strong> That orc army has been ripping through the countryside with no regard for life. You must raise the alarm among the local druids that those orcs are coming. Additionally, there is an ex-druid there who betrayed the secrets of druidic. Elhavir Soras must be brought before the local Druids council to answer for his crime. -via sending
     </p>-->
+    <h4>Lords of the Rising Dawn Orders</h4>
     <p>
-      <strong>Lords of the Rising Dawn Orders: </strong> Tacticly, I think it would be smarter to focus on delaying the orcs rather than on hurrying the evacuation. Destroying bridges, illusory foes, and so on should slow the orcs down enough that the bulk of the people in Northport could escape, and kill a few orcs at the same time. -Duke James Lightbringer
+      Tacticly, I think it would be smarter to focus on delaying the orcs rather than on hurrying the evacuation. Destroying bridges, illusory foes, and so on should slow the orcs down enough that the bulk of the people in Northport could escape, and kill a few orcs at the same time. -Duke James Lightbringer
     </p>
     <!--<p>
       <strong>Maker's of Legend Orders: </strong> There is nothing heroic about soldiers fleeing before the enemy. You need to make sure there is some kind of heroic last stand to delay the oncoming attackers or we won't have good story material. -Haera Oelefros
     </p>-->
+    <h4>Masters of the Deep Song Orders</h4>
     <p>
-      <strong>Masters of the Deep Song Orders: </strong> The dwarven emissary to Gerasalim had fled to Northport shortly before Strovenguard fell, expecting the queen to flee there as well. Instead she took control of the armies in the east and left the emissary in the lurch.  Get him this stone, it's a one use teleport that he can use to escape back to Curinor. -Ogrun Firebreath
+      The dwarven emissary to Gerasalim had fled to Northport shortly before Strovenguard fell, expecting the queen to flee there as well. Instead she took control of the armies in the east and left the emissary in the lurch.  Get him this stone, it's a one use teleport that he can use to escape back to Curinor. -Ogrun Firebreath
     </p>
+    <h4>Shepherds of the All-Mother Orders</h4>
     <p>
-      <strong>Shepherds of the All-Mother Orders: </strong> The Orcs have employed necromancers to scare the people into staying in Northport.  How dare they give necromancy a bad name by using the undead for simple scare tactics. Kill these necromancers, then prove to the people of Northport that they have nothing to fear from the dead. -Gimble Beren
+      The Orcs have employed necromancers to scare the people into staying in Northport.  How dare they give necromancy a bad name by using the undead for simple scare tactics. Kill these necromancers, then prove to the people of Northport that they have nothing to fear from the dead. -Gimble Beren
     </p>
+    <h4>Silver Dragon Knights Orders</h4>
     <p>
-      <strong>Silver Dragon Knights Orders: </strong> There is an old copper dragon named Sulac who lives in a cave near Northport. While I doubt he would help you directly, he is an old friend of the Emperor, and we would hate to see him threatened by these orcish invaders. -Farnor Spiketooth
+      There is an old copper dragon named Sulac who lives in a cave near Northport. While I doubt he would help you directly, he is an old friend of the Emperor, and we would hate to see him threatened by these orcish invaders. -Farnor Spiketooth
     </p>
     <!--<p>
       <strong>Sylvan's Rangers Orders: </strong> Vanriel Glamfara is a skilled member of our order who recently took control of the garrison there in Northport. We could use someone of her experience here in Cur'Estan, and she can surely help you in your evacuation efforts. Talk to her, and make sure she makes it out of there alive. -Sondel Fistin
@@ -73,7 +76,7 @@
     <p>
       <strong>Trollkin Mercenary Corps Orders: </strong> The warchief of that orc army has refused to pay for the 300 mercenaries he's employing, but is blocking efforts at communication from Degak'Ta to his army. Those soldiers are being reassigned to Cur'Estan.  Get in there and deliver their orders. -Drog Stonearm
     </p>-->
-    <h4>Travelling to Northport</h4>
+    <h3>Travelling to Northport</h3>
     <p>
       Northport is 660 miles south of Cur'Estan.  Players should be made aware that a normal fast pace may leave them little time to organize things in Northport before the Orcs arrive on the 14th of Sylvanus.  If one of the players is an Artificer of Mechanus, Margo will be willing to teleport the party to Northport if they have not angered her. Alternatively, the party can attempt to take a riverboat to Northport, in which case they must travel 310 miles to the Kandor River, and then 530 miles by boat.
     </p>
@@ -101,7 +104,7 @@
       </tbody>
     </table>
     <p>
-      During travel, when the party gets close to Cur'Estan, do one of the following random encounters from the random encounters section in this chapter:
+      During travel, when the party gets close to Northport, do one of the following random encounters from the random encounters section in this chapter:
     </p>
     <ul>
       <li>Raid</li>
@@ -110,30 +113,48 @@
     </ul>
   </div>
   <div id="chapter2northport">
-    <h3>Northport</h3>
+    <h2>Northport</h2>
     <p>
       Northport is the last major city in Gerasalim not in Orc hands.  It is filled to the brim with refugees from the south, crime is out of control, news from the outside world is scarce, and rumors regularly send the streets into a panic.  The outlying farms are regularly attacked by orc raiders, and recently anyone attempting to leave the city has found themselves under attack by the undead.
     </p>
-    <h4>Features</h4>
-    <p><strong>1. Riverside Market</strong> The center of trade in the town.  Goods that come off the docks mostly get bought and sold here.  As trade has died and refugees poured in, the market has become a tent city.</p>
-    <p><strong>2. Duke's Park</strong> The Duke's private game reserve, after Duke Resel fled the city for Kaland, this too was turned into space for refugees.  The deer and other game are long gone, having already been used to feed the populace.</p>
-    <p><strong>3. Duke's Palace</strong> The Ducal palace has been turned into the new headquarters of the city guard.</p>
-    <p><strong>4. The Southern Market</strong> Goods traveling north by road from Strovenguard and Eastguard are typically bought and sold at the Southern Market. Sometimes also called the 'duty-free' market, since there is no tax on goods bought and sold there, unlike the Riverside Market.</p>
-    <p><strong>5. Temple of Cora</strong> The Temple of Cora is the largest temple in town. They have put out a call for Champions to come and aid the city.</p>
-    <p><strong>6. Temple of Sara</strong> The Temple of Sara has served the areas farming population for many years, but is currently struggling to find a response to their growing concerns about raiders and attacks.</p>
-    <p><strong>7. Temple of Maris</strong> The Temple of Maris is a shadow of its old self. Once one of the busiest temples in the city, it is now tended by a single cleric with a few acolytes. The temple still has its old teleportation circle, but no one remains with the skill to activate it.</p>
-    <p><strong>8. Druid's Grove</strong> The local druids often convene in this space outside the city where they discuss recent events and scouting reports. The druids are not friendly to outsiders in their space, and locals know to avoid the grove.</p>
-    <p><strong>9. Temple of Dorman.</strong> Attendance at the Temple of Dorman has been down, and most of the senior clerics had already left the city before things got bad.</p>
-    <p><strong>10. Hotel District.</strong> Most of the inns in town are centered in the Hotel District, where the two major highways through town converge, just north of the river.</p>
-    <p><strong>11. Temple of Amathera.</strong> The Temple of Amathera was the first place to fill up with refugees, before other spaces became available for them.  The local clerical staff looks overworked and despondent.  Malia Demonslayer has her office here, from which she coordinates the efforts of Amathera's Shield in the city.</p>
-    <p><strong>12. Temple of Alohim.</strong> The temple of Alohim is second only to the temple of Cora in size, yet has one of the smallest segments of worshippers of the major temples in town.  Sitting directly across from the Ducal palace, the building was a gift from Duke Resel.</p>
-    <p><strong>13. The Dragon's Brew Inn.</strong> The Dragon's Brew is the largest inn in town, and sells the best beer. Run by the unlikely ex-adventuring duo, Erestor and Ralf, it is also likely the safest inn in town, as Ralf serves as both brewmaster and bouncer that noone wants to piss off, while Elhavir's keen eye and random conversation locates trouble before it happens. </p>
-    <p><strong>14. The Guild of Heroes Chapter House.</strong> Northport has been a major center for the Guild of Heroes for a number of years. The chapter house was largely evacuated some time ago, but the local Guildmaster still lives in the chapter house alone.</p>
-    <p><strong>15. To Sulac's Lair.</strong> Sulac the copper dragon has his cave lair about 30 miles west of Northport.</p>
-    <p><strong>16. To Orc Army.</strong> The Orc army is south of Northport, moving towards it at a pace of about 15 miles a day, and set to arrive (if not delayed) on the 14th of Sylvanus.</p>
-    <p><strong>17. To Cur'Estan</strong> the Northeast road leads to Dormania and eastern Kandor, including Cur'Estan. Refugees attempting to escape along the road have all been attacked by orcs or undead.</p>
+    <h3>Features</h3>
+    <h4>1. Riverside Market</h4>
+    <p>The center of trade in the town.  Goods that come off the docks mostly get bought and sold here.  As trade has died and refugees poured in, the market has become a tent city.</p>
+    
+    <h4>2. Duke's Park</h4>
+    <p>The Duke's private game reserve, after Duke Resel fled the city for Kaland, this too was turned into space for refugees.  The deer and other game are long gone, having already been used to feed the populace.</p>
+    <h4>3. Duke's Palace</h4>
+    <p>The Ducal palace has been turned into the new headquarters of the city guard.</p>
+    <h4>4. The Southern Market</h4>
+    <p>Goods traveling north by road from Strovenguard and Eastguard are typically bought and sold at the Southern Market. Sometimes also called the 'duty-free' market, since there is no tax on goods bought and sold there, unlike the Riverside Market.</p>
+    <h4>5. Temple of Cora</h4>
+    <p>The Temple of Cora is the largest temple in town. They have put out a call for Champions to come and aid the city.</p>
+    <h4>6. Temple of Sara</h4>
+    <p>The Temple of Sara has served the areas farming population for many years, but is currently struggling to find a response to their growing concerns about raiders and attacks.</p>
+    <h4>7. Temple of Maris</h4>
+    <p>The Temple of Maris is a shadow of its old self. Once one of the busiest temples in the city, it is now tended by a single cleric with a few acolytes. The temple still has its old teleportation circle, but no one remains with the skill to activate it.</p>
+    <h4>8. Druid's Grove</h4>
+    <p>The local druids often convene in this space outside the city where they discuss recent events and scouting reports. The druids are not friendly to outsiders in their space, and locals know to avoid the grove.</p>
+    <h4>9. Temple of Dorman.</h4>
+    <p>Attendance at the Temple of Dorman has been down, and most of the senior clerics had already left the city before things got bad.</p>
+    <h4>10. Hotel District.</h4> 
+    <p>Most of the inns in town are centered in the Hotel District, where the two major highways through town converge, just north of the river.</p>
+    <h4>11. Temple of Amathera.</h4>
+    <p>The Temple of Amathera was the first place to fill up with refugees, before other spaces became available for them.  The local clerical staff looks overworked and despondent.  Malia Demonslayer has her office here, from which she coordinates the efforts of Amathera's Shield in the city.</p>
+    <h4>12. Temple of Alohim.</h4>
+    <p>The temple of Alohim is second only to the temple of Cora in size, yet has one of the smallest segments of worshippers of the major temples in town.  Sitting directly across from the Ducal palace, the building was a gift from Duke Resel.</p>
+    <h4>13. The Dragon's Brew Inn.</h4>
+    <p>The Dragon's Brew is the largest inn in town, and sells the best beer. Run by the unlikely ex-adventuring duo, Erestor and Ralf, it is also likely the safest inn in town, as Ralf serves as both brewmaster and bouncer that noone wants to piss off, while Elhavir's keen eye and random conversation locates trouble before it happens. </p>
+    <h4>14. The Guild of Heroes Chapter House.</h4>
+    <p>Northport has been a major center for the Guild of Heroes for a number of years. The chapter house was largely evacuated some time ago, but the local Guildmaster still lives in the chapter house alone.</p>
+    <h4>15. To Sulac's Lair.</h4>
+    <p>Sulac the copper dragon has his cave lair about 30 miles west of Northport.</p>
+    <h4>To Orc Army.</h4>
+    <p>The Orc army is south of Northport, moving towards it at a pace of about 15 miles a day, and set to arrive (if not delayed) on the 14th of Sylvanus.</p>
+    <h4>17. To Cur'Estan</h4>
+    <p>the Northeast road leads to Dormania and eastern Kandor, including Cur'Estan. Refugees attempting to escape along the road have all been attacked by orcs or undead.</p>
     <img class="col-sm-12" style="max-width:100%;" src="/images/maps/cities/northport.png" alt="map of northport" />
-    <h4>Important People in Northport</h4>
+    <h3>Important People in Northport</h3>
   
     <h4><a href="/runner/vanrielglamfara">Vanriel Glamfara</a></h4>
     <p>
@@ -200,8 +221,8 @@
     </p>
   </div>
   <div id="chapter2riot">
-    <h3>Arrival in Northport</h3>
-    <h4>Riot</h4>
+    <h2>Arrival in Northport</h2>
+    <h3>Riot</h3>
     <p>
       Things begin going wrong for the players the minute they arrive in Northport.  Whether they teleport in, get off a boat, or simply walk into town, immediately there are cries from the crowd in the street of 'Orc spies!', 'The Orcs are attacking!' and 'The undead are here!'.  A pair of unarmed kobolds walking through the street, the player characters, and a gaunt looking old man are immediately set upon by the crowd as people begin screaming.  Members of the crowd are commoners, and the street is packed with them, roughly 50 of them are involved in the riot.  Any commoner who can't reach a target on its turn will begin to riot and break or steal whatever they can reach.
     </p>
@@ -228,7 +249,7 @@
     <p>
       She will pay their room and board at the Dragon's Brew while they are in town.
     </p>
-    <h4>The Dragon's Brew Inn</h4>
+    <h3>The Dragon's Brew Inn</h3>
     <p>
       The Dragon's Brew, like every other inn in town, is packed, but rooms have been cleared out for the party by the proprietors, Ralf and Erestor.  If the party is escorting Harwik Greenskin they will offer him their special safe room.
     </p>
@@ -238,7 +259,7 @@
     <p>
       Ralf and Erestor will also tell the party about any of the side quests they did not receive orders about previously, mentioning a rumor that the trollkin working with the orcs have not recently been paid, that the local druids have been showing up in the city looking for someone, that Allison Highwater, the Guild of Heroes guildmaster, is holed up in her chapter house refusing to leave, and that there is an ancient copper dragon west of town with a massive rumored horde. They do not bring up Biggles Wump unless asked.  If asked they can point the way to his house.
     </p>
-    <h4>The Old Artificer</h4>
+    <h3>The Old Artificer</h3>
     <p>
       Biggles Wump has a house in town.  He's a grumpy old gnome and refuses to open the door unless convinced.  He will refuse to participate in the evacuation, and says the party, and the orcs, will get his old plans over his dead body.  If the party gets inside the house, the house is filled with bookshelves covered in books of arcane plans for magical items and advanced gadgets.
     </p>
@@ -254,7 +275,7 @@
     <p>
       If the party talks to Giggles about her father's refusal to leave, she will agree to talk to him and will convince him to leave so that he can help his grandchildren escape.
     </p>
-    <h4>The Druid's Grove</h4>
+    <h3>The Druid's Grove</h3>
     <p>
       The local druid's regularly gather at a small grove just west of the city.  Recently they have been making trips into the city itself looking for Elhavir Soras, who committed the crime of teaching an enemy of Gaian their secret language. Elhavir himself is hiding in the refugee camp at the Riverside Market, but he has eluded detection by the druid's thus far.
     </p>
@@ -274,46 +295,53 @@
     <h5><a href="/runner/druid&druid&giantspider&giantspider&giantspider&gianteagle&gianteagle" target="_blank">Run this Encounter</a></h5>
   </div>
   <div id="chapter2necromancers">
-    <h3>Necromancers on the Edge of Town</h3>
+    <h2>Necromancers on the Edge of Town</h2>
     <p>
       For the past several months everyone trying to leave the city has been attacked by undead.  Any time the players leave the city they will be attacked by undead within an hour (see Undead Raid in the random encounter section of this chapter).  
     </p>
     <p>
       Whatever attacks them, they leave relatively obvious tracks that lead back to the necromancers camp.
     </p>
-    <h4>The Necromancer's Camp</h4>
+    <h3>The Necromancer's Camp</h3>
     <p>
       The necromancers have been harassing the town for a good two months now, and are well set in. Though their camp is out in the open, and does not have the benefit of predicting where attacks may come from. The necromancers believe they will be able to deal with any threat that shows up, and have set up traps to simply alert them to intruders. Once an alarm is raised, the necromancers spend a minute to create a huge skeleton to aid them against the incoming forces.
     </p>
+    <h4>Zombie Moat</h4>
     <p>
-      <strong>Zombie Moat:</strong> The encampment is surrounded by a ditch that is 15ft wide and 20ft deep (dug by zombies). The zombies that dug out the pit are still in it (14 total, and armed with shovels). The zombies also start growling at people they see, which alert the rest of the camp.
+      The encampment is surrounded by a ditch that is 15ft wide and 20ft deep (dug by zombies). The zombies that dug out the pit are still in it (14 total, and armed with shovels). The zombies also start growling at people they see, which alert the rest of the camp.
     </p>
     <h5><a href="/runner/zombie&zombie&zombie&zombie&zombie&zombie&zombie&zombie&zombie&zombie&zombie&zombie&zombie&zombie&zombie&zombie" target="_blank">Run This Encounter</a></h5>
+    <h4>Patrols</h4>
     <p>
-      <strong>Patrols:</strong> These patrols travel in groups of 3, 1 wight and 2 skeletons armed with heavy crossbows. Players can expect to see at least 3 such groups randomly patrolling. One of the skeletons in the group has a bell, and will ring it loudly (as an action) when it see intruders. These skeletons join together to fight intruders if the alarm is raised, and will notice if the zombies in the pit start making noise.
+      These patrols travel in groups of 3, 1 wight and 2 skeletons armed with heavy crossbows. Players can expect to see at least 3 such groups randomly patrolling. One of the skeletons in the group has a bell, and will ring it loudly (as an action) when it see intruders. These skeletons join together to fight intruders if the alarm is raised, and will notice if the zombies in the pit start making noise.
     </p>
     <h5><a href="/runner/wight&skeleton&skeleton" target="_blank">Run This Encounter</a></h5>
+    <h4>Watch Towers</h4>
     <p>
-      <strong>Watch Towers:</strong> 5 wooden watch towers have been set up within the camp. Each tower is 30 ft. high with a single ladder that leads to an upper platform.  The upper platform has half walls that provide partial cover. On top of each tower is 4 skeletons with heavy crossbows. These towers are positioned equidistant from one another (50 ft apart) and give a full circle of watch. The skeletons are quite dumb however, and only sound the alarm and attack if humans approach. A simple disguise, a large shrub, or a blanket could make the skeletons not bother attacking.
+      5 wooden watch towers have been set up within the camp. Each tower is 30 ft. high with a single ladder that leads to an upper platform.  The upper platform has half walls that provide partial cover. On top of each tower is 4 skeletons with heavy crossbows. These towers are positioned equidistant from one another (50 ft apart) and give a full circle of watch. The skeletons are quite dumb however, and only sound the alarm and attack if humans approach. A simple disguise, a large shrub, or a blanket could make the skeletons not bother attacking.
     </p>
     <h5><a href="/runner/skeleton&skeleton&skeleton&skeleton">Run This Encounter</a></h5>
+    <h4>Ogre Zombie Pits</h4>
     <p>
-      <strong>Ogre Zombie Pits:</strong> Similar to the first trap, there are sporadically zombie pits hidden in the area. A player that isn’t paying attention has an 80% chance of walking into a pit, and must make a DC 12 Dex Save or fall into a pit with an Ogre Zombie at the bottom. The necromancers have walked through the camp enough to know where the pits are by heart, and a DC 13 survival check reveals the paths that the necromancers have worn down (triggered automatically, no need for the player to guess at having to do one.). Alternately a passive perception of 16 or higher will notice any pits within 15 ft of a player automatically.
+      Similar to the first trap, there are sporadically zombie pits hidden in the area. A player that isn’t paying attention has an 80% chance of walking into a pit, and must make a DC 12 Dex Save or fall into a pit with an Ogre Zombie at the bottom. The necromancers have walked through the camp enough to know where the pits are by heart, and a DC 13 survival check reveals the paths that the necromancers have worn down (triggered automatically, no need for the player to guess at having to do one.). Alternately a passive perception of 16 or higher will notice any pits within 15 ft of a player automatically.
     </p>
     <h5><a href="/runner/ogrezombie" target="_blank">Run This Encounter</a></h5>
+    <h4>Tortured Citizens</h4>
     <p>
-      <strong>Tortured Citizens:</strong> Some of the people from the town, those that attempted escape or attempted to fight the necromancers are chained to posts in the inner area of the camp. Each of these people are trapped with a glyph of warding, if the person is removed by some daring hero, the hero and the hostage explode for 5d8 thunder damage (DC 14 Constitution save for half). This creates a loud booming sound that alerts the skeleton patrols and the necromancers. The citizens are unconscious and have level 5 exhaustion (speed of 0). If given water or food some of them can mention that the necromancers did some magic thing to the pole they are chained to, but are not aware what it does. The rune itself is obvious, and a DC 15 arcana check will identify it's effect.
+      Some of the people from the town, those that attempted escape or attempted to fight the necromancers are chained to posts in the inner area of the camp. Each of these people are trapped with a glyph of warding, if the person is removed by some daring hero, the hero and the hostage explode for 5d8 thunder damage (DC 14 Constitution save for half). This creates a loud booming sound that alerts the skeleton patrols and the necromancers. The citizens are unconscious and have level 5 exhaustion (speed of 0). If given water or food some of them can mention that the necromancers did some magic thing to the pole they are chained to, but are not aware what it does. The rune itself is obvious, and a DC 15 arcana check will identify it's effect.
     </p>
+    <h4>Noisemakers</h4>
     <p>
-      <strong>Noisemakers:</strong> Lastly near the center of their camp the necromancers have set up noisemakers in the form of a curtain of bones on strings. The curtain entirely surrounds the camp, and there is no clear entrance. The noise maker simply makes rattling which alerts the skeleton patrols, and gives the necromancers enough time to summon their giant skeleton.
+      Lastly near the center of their camp the necromancers have set up noisemakers in the form of a curtain of bones on strings. The curtain entirely surrounds the camp, and there is no clear entrance. The noise maker simply makes rattling which alerts the skeleton patrols, and gives the necromancers enough time to summon their giant skeleton.
     </p>
+    <h4>Necromancer's Tent</h4>
     <p>
-      <strong>Necromancer's Tent:</strong> Inside the tent are the necromancers. Ironically, they don’t like to have undead in the room with them, and instead just a big piles of bones in a chest, along with anything else they may need.
+      Inside the tent are the necromancers. Ironically, they don’t like to have undead in the room with them, and instead just a big piles of bones in a chest, along with anything else they may need.
     </p>
     <h5><a href="/runner/orcnecromancer&orcnecromancer&minotaurskeleton" target="_blank">Run This Encounter</a></h5>
   </div>
   <div id="chapter2sulac">
-    <h3>Sulac's Lair</h3>
+    <h2>Sulac's Lair</h2>
     <h4>Path to the dragon</h4>
     <p>
       The path to the dragon is a long winding upward sloping path, originally designed for carts to be carried up, back when the dragon still accepted offerings. Along the way there are six signs that read, in order:
@@ -354,7 +382,7 @@
     </p>
   </div>
   <div id="chapter2guildofheroes">
-    <h3>The Guild of Heroes</h3>
+    <h2>The Guild of Heroes</h2>
     
     <h4>Entering the guild</h4>
     <p>
@@ -408,8 +436,8 @@
     <p>
       With the issue dealt with, Allison will be able to help the party on one other task (such as fighting the Necromancers, delaying the orc army, getting to Sulac, etc), and will leave Northport with the refugees.
     </p>
-    <aside class="card col-sm-6 pull-right">
-      <h3>Luna, The Sword of Limitless Hope (Weapon, greatsword, legendary)</h3>
+    <aside>
+      <h4>Luna, The Sword of Limitless Hope (Weapon, greatsword, legendary)</h4>
       <p>
         The Sword of Limitless Hope was forged by Cora herself as a gift to her greatest champion during the Neran Cataclysm.  Used to strike down the Lich King of Nerim, the sword was believed lost, with occasional rumors of it appearing in a dragon’s horde, or a beholder’s dungeon. The Guild of Heroes discovered it during a routine contract, and hoping to take advantage of the obviously magical sword, attuned to it without researching its capabilities first.
       </p>
@@ -452,7 +480,7 @@
     </aside>
   </div>
   <div id="chapter2delayorcs">
-    <h3>Delay the Orc Army</h3>
+    <h2>Delay the Orc Army</h2>
     <p>
       The Orc army is travelling 15 miles a day towards Northport from the south.  Potentially leaving very little time to evacuate the refugees.  Vanriel and Malia will both suggest finding ways to delay the orcs after the necromancers are dealt with.  There are a number of ways to delay the orcs, detailed below.
     </p>
@@ -477,7 +505,7 @@
     </p>
   </div>
   <div id="chapter2evacuation">
-    <h3>Evacuation of Northport</h3>
+    <h2>Evacuation of Northport</h2>
     <p>
       Malia Demonslayer has a number of things she needs to evacuate the refugees.  While some refugees would be able to leave as soon as the necromancers are dealt with, for most to survive to Cur'Estan additional supplies are needed.
     </p>
@@ -562,15 +590,15 @@
       The party will be confronted with a contingent of orcs. 
     </p>
     <h5><a href="/runner/orcbladeofilneval&orcclawofluthic&orc&orc&orc&orc&orc&orc&orc&orc" target="_blank">Run This Encounter</a></h5>
-    <aside class="card col-sm-4 pull-right">
-      <h3>Level Up</h3>
+    <aside>
+      <h4>Level Up</h4>
       <p>
         After the party returns to Cur'Estan with the refugee caravan, they should level up to level 6.
       </p>
     </aside>
   </div>
   <div id="chapter2randomencounters">
-    <h3>Random Encounters</h3>
+    <h2>Random Encounters</h2>
     <h4>Raid</h4>
     <p>
       The party is attacked by undead raiders.  Roll on the table below to determine what attacks them:
