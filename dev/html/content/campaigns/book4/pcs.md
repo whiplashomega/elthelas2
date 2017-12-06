@@ -12,6 +12,36 @@
 
 **Background:** Outlander
 
+#### Faction Standings
+
+<table class="table table-striped datatable">
+	<thead>
+		<tr>
+			<th>Faction</th><th>Current Standing</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr><td>Black Wolf Irregulars</td><td>1</td></tr>
+		<tr><td>Amathera's Shield</td><td>0</td></tr>
+		<tr><td>Artificer's of Mechanus</td><td>0</td></tr>
+		<tr><td>Black Sun</td><td>0</td></tr>
+		<tr><td>Champions of Cora</td><td>0</td></tr>
+		<tr><td>Dormanian Imperial Guard</td><td>0</td></tr>
+		<tr><td>Guild of Heroes</td><td>0</td></tr>
+		<tr><td>International Grangemaster's Alliance</td><td>0</td></tr>
+		<tr><td>Illustrious Guild of Merchants and Fine Artisans</td><td>0</td></tr>
+		<tr><td>Keepers of the Grove</td><td>0</td></tr>
+		<tr><td>Lords of the Rising Dawn</td><td>1</td></tr>
+		<tr><td>Maker's of Legend</td><td>0</td></tr>
+		<tr><td>Masters of the Deep Song</td><td>0</td></tr>
+		<tr><td>Shepherd's of the All-Mother</td><td>2</td></tr>
+		<tr><td>Silver Dragon Knights</td><td>0</td></tr>
+		<tr><td>Sylvan's Rangers</td><td>0</td></tr>
+		<tr><td>Tock's Inevitables</td><td>0</td></tr>
+		<tr><td>Trollkin Mercenary Corps</td><td>0</td></tr>
+	</tbody>
+</table>
+
 #### Backstory
 
 Silas grew up with his mother in the mountains of Staelia. His mother was an evil witch and while she loved him dearly, her punishments were severe, and he bears many magical scars from his upbringing. He learned to fight from a minotaur companion of his mother, Tarik Spinehoof. Tarik watched over him growing up. Silas never knew his father and his mother almost never spoke of him.
@@ -33,6 +63,36 @@ Sir Dawnblade was most recently stationed at the Fortress of Light, leading the 
 **Race:** Child of Molton
 
 **Background:** ?
+
+#### Faction Standings
+
+<table class="table table-striped datatable">
+	<thead>
+		<tr>
+			<th>Faction</th><th>Current Standing</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr><td>Black Wolf Irregulars</td><td>1</td></tr>
+		<tr><td>Amathera's Shield</td><td>0</td></tr>
+		<tr><td>Artificer's of Mechanus</td><td>0</td></tr>
+		<tr><td>Black Sun</td><td>0</td></tr>
+		<tr><td>Champions of Cora</td><td>0</td></tr>
+		<tr><td>Dormanian Imperial Guard</td><td>0</td></tr>
+		<tr><td>Guild of Heroes</td><td>0</td></tr>
+		<tr><td>International Grangemaster's Alliance</td><td>0</td></tr>
+		<tr><td>Illustrious Guild of Merchants and Fine Artisans</td><td>3</td></tr>
+		<tr><td>Keepers of the Grove</td><td>0</td></tr>
+		<tr><td>Lords of the Rising Dawn</td><td>0</td></tr>
+		<tr><td>Maker's of Legend</td><td>0</td></tr>
+		<tr><td>Masters of the Deep Song</td><td>0</td></tr>
+		<tr><td>Shepherd's of the All-Mother</td><td>0</td></tr>
+		<tr><td>Silver Dragon Knights</td><td>0</td></tr>
+		<tr><td>Sylvan's Rangers</td><td>0</td></tr>
+		<tr><td>Tock's Inevitables</td><td>0</td></tr>
+		<tr><td>Trollkin Mercenary Corps</td><td>0</td></tr>
+	</tbody>
+</table>
 
 #### Backstory
 
@@ -72,6 +132,36 @@ Throughout her travels, Flykr has met many beings. Which has been both a blessin
 
 **Background:** ?
 
+#### Faction Standings
+
+<table class="table table-striped datatable">
+	<thead>
+		<tr>
+			<th>Faction</th><th>Current Standing</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr><td>Black Wolf Irregulars</td><td>1</td></tr>
+		<tr><td>Amathera's Shield</td><td>0</td></tr>
+		<tr><td>Artificer's of Mechanus</td><td>0</td></tr>
+		<tr><td>Black Sun</td><td>2</td></tr>
+		<tr><td>Champions of Cora</td><td>0</td></tr>
+		<tr><td>Dormanian Imperial Guard</td><td>0</td></tr>
+		<tr><td>Guild of Heroes</td><td>0</td></tr>
+		<tr><td>International Grangemaster's Alliance</td><td>0</td></tr>
+		<tr><td>Illustrious Guild of Merchants and Fine Artisans</td><td>0</td></tr>
+		<tr><td>Keepers of the Grove</td><td>0</td></tr>
+		<tr><td>Lords of the Rising Dawn</td><td>0</td></tr>
+		<tr><td>Maker's of Legend</td><td>0</td></tr>
+		<tr><td>Masters of the Deep Song</td><td>0</td></tr>
+		<tr><td>Shepherd's of the All-Mother</td><td>0</td></tr>
+		<tr><td>Silver Dragon Knights</td><td>0</td></tr>
+		<tr><td>Sylvan's Rangers</td><td>0</td></tr>
+		<tr><td>Tock's Inevitables</td><td>0</td></tr>
+		<tr><td>Trollkin Mercenary Corps</td><td>0</td></tr>
+	</tbody>
+</table>
+
 #### Backstory
 
 Tilda is a 24 year old human wizard from Kandor.  Around 5 years ago, Tilda was working in a book shop when she was framed for a for the murder of Duke Sebastian Mathis, Lord of Westport. The book shop owner, Eduard was not so lucky as to escape. Tilda managed to escape Kandor before she was arrested and executed, and she fled to Dormania.  Tilda was forced to live a nomadic existence as a fugitive, constantly moving from town to town, with detailed wanted posters of her face and alleged crime always dogging her steps.  She took occasional odd jobs, and stole when necessary to survive.  Once her street smarts improved and she developed a routine, Tilda's focus turned from survival to revenge.  She joined the Black Sun in Farengar, hoping to eventually hunt down the person or persons responsible for framing her.  At this point, she realizes it is futile to try to clear her name or get her old life back.  Justice under the law is a pipe dream.  The only thing left for her is vengeance.  She runs around disguised as a man and calls herself Fallon.  She wears baggy clothes and an occasional fake beard, and she compensates for her feminine features with over the top, stereotypical masculine  behavior.  Scratching, spitting, cursing, drinking, etc. She's developed quite the alcohol tolerance this way, as she engages in frequent drinking contests.  (Bascially if Gaston does it, Tilda does it).
@@ -90,6 +180,36 @@ Her mentor, Sarkis, as someone who doesn't share your wizardly skills, felt she 
 
 **Background:** Entertainer
 
+#### Faction Standings
+
+<table class="table table-striped datatable">
+	<thead>
+		<tr>
+			<th>Faction</th><th>Current Standing</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr><td>Black Wolf Irregulars</td><td>1</td></tr>
+		<tr><td>Amathera's Shield</td><td>0</td></tr>
+		<tr><td>Artificer's of Mechanus</td><td>0</td></tr>
+		<tr><td>Black Sun</td><td>0</td></tr>
+		<tr><td>Champions of Cora</td><td>0</td></tr>
+		<tr><td>Dormanian Imperial Guard</td><td>0</td></tr>
+		<tr><td>Guild of Heroes</td><td>0</td></tr>
+		<tr><td>International Grangemaster's Alliance</td><td>0</td></tr>
+		<tr><td>Illustrious Guild of Merchants and Fine Artisans</td><td>0</td></tr>
+		<tr><td>Keepers of the Grove</td><td>0</td></tr>
+		<tr><td>Lords of the Rising Dawn</td><td>0</td></tr>
+		<tr><td>Maker's of Legend</td><td>0</td></tr>
+		<tr><td>Masters of the Deep Song</td><td>1</td></tr>
+		<tr><td>Shepherd's of the All-Mother</td><td>0</td></tr>
+		<tr><td>Silver Dragon Knights</td><td>0</td></tr>
+		<tr><td>Sylvan's Rangers</td><td>0</td></tr>
+		<tr><td>Tock's Inevitables</td><td>0</td></tr>
+		<tr><td>Trollkin Mercenary Corps</td><td>0</td></tr>
+	</tbody>
+</table>
+
 #### Backstory
 
 His parents would travel the land performing music, so he never really had a land to call "home". After hearing a great warrior play the bagpipes before entering battle, Barbarous wanted to play them. His father enrolled him in the same college as Flyker Moon (he did not know her at the time), in hopes that he would realize the faults in his instrument and play the lute like a true bard. While Barbarious could play a tune, and sometimes even out perform his fellow classmates, his inconsistancy and random chaotic solos caused him to fail. When he was finally kicked out of school, he searched for the bagpipe playing warrior. He spent many nights listening to the winds hoping that the beautiful sound would fill his ears. After almost giving up on his dreams, he threw his bagpipes in the trash below his window. A few moments later he heard his bagpipes playing the unforgettable tune he'd heard as a child. Barbarious ran to the alleyway and met the Orc barbarian, Mugg. They spent many years together learning music and battle tactics. Mugg eventually had to travel for a large battle overseas, and recommended the Masters of the Deep for a place of worship and music. Barbarous reluctantly took his advice, and sought out the pale, Dwarves, subterranean land. Although many would find it hard to believe, they accepted him quickly as one of their own. That's what he's been up to.
@@ -106,6 +226,36 @@ His parents would travel the land performing music, so he never really had a lan
 
 **Background:** Noble
 
+#### Faction Standings
+
+<table class="table table-striped datatable">
+	<thead>
+		<tr>
+			<th>Faction</th><th>Current Standing</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr><td>Black Wolf Irregulars</td><td>1</td></tr>
+		<tr><td>Amathera's Shield</td><td>0</td></tr>
+		<tr><td>Artificer's of Mechanus</td><td>0</td></tr>
+		<tr><td>Black Sun</td><td>0</td></tr>
+		<tr><td>Champions of Cora</td><td>0</td></tr>
+		<tr><td>Dormanian Imperial Guard</td><td>0</td></tr>
+		<tr><td>Guild of Heroes</td><td>0</td></tr>
+		<tr><td>International Grangemaster's Alliance</td><td>0</td></tr>
+		<tr><td>Illustrious Guild of Merchants and Fine Artisans</td><td>0</td></tr>
+		<tr><td>Keepers of the Grove</td><td>0</td></tr>
+		<tr><td>Lords of the Rising Dawn</td><td>0</td></tr>
+		<tr><td>Maker's of Legend</td><td>0</td></tr>
+		<tr><td>Masters of the Deep Song</td><td>0</td></tr>
+		<tr><td>Shepherd's of the All-Mother</td><td>0</td></tr>
+		<tr><td>Silver Dragon Knights</td><td>2</td></tr>
+		<tr><td>Sylvan's Rangers</td><td>0</td></tr>
+		<tr><td>Tock's Inevitables</td><td>0</td></tr>
+		<tr><td>Trollkin Mercenary Corps</td><td>0</td></tr>
+	</tbody>
+</table>
+
 #### Backstory
 
 Eobard Thawne was a member of the ambassador's guard. Involved in a battle in which he nearly lost his life. He was hurried to a healer and saved. Since then, Eobard has felt that he was saved for a reason, that he didn't die so he could take justice into his own hands and protect those that couldn't protect themselves. He decided to become devoted to the Oath of Vengeance and the gods that he knows kept him alive to serve his new purpose. He has traveled since then, looking for people to help along the way. At one point while staying at a tavern in Dera Dagoram, he was witness to a wonderful performance led by Flykr. Having a love of music and his own talent in percussion, the pair stayed up late, talking and enjoying an epic jam session that many would have called a simple drum circle. It went until morning, and more than one patron grumbled about the noise interrupting their sleep. After moving on, Eobard eventually arrived in Cur'estan. 
@@ -121,6 +271,38 @@ Eobard Thawne was a member of the ambassador's guard. Involved in a battle in wh
 **Race:** Lightfoot Halfling
 
 **Background:** Investigator?
+
+#### Faction Standings
+
+<table class="table table-striped datatable">
+	<thead>
+		<tr>
+			<th>Faction</th><th>Current Standing</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr><td>Black Wolf Irregulars</td><td>3</td></tr>
+		<tr><td>Amathera's Shield</td><td>0</td></tr>
+		<tr><td>Artificer's of Mechanus</td><td>0</td></tr>
+		<tr><td>Black Sun</td><td>0</td></tr>
+		<tr><td>Champions of Cora</td><td>0</td></tr>
+		<tr><td>Dormanian Imperial Guard</td><td>0</td></tr>
+		<tr><td>Guild of Heroes</td><td>0</td></tr>
+		<tr><td>International Grangemaster's Alliance</td><td>0</td></tr>
+		<tr><td>Illustrious Guild of Merchants and Fine Artisans</td><td>0</td></tr>
+		<tr><td>Keepers of the Grove</td><td>0</td></tr>
+		<tr><td>Lords of the Rising Dawn</td><td>0</td></tr>
+		<tr><td>Maker's of Legend</td><td>0</td></tr>
+		<tr><td>Masters of the Deep Song</td><td>0</td></tr>
+		<tr><td>Shepherd's of the All-Mother</td><td>0</td></tr>
+		<tr><td>Silver Dragon Knights</td><td>0</td></tr>
+		<tr><td>Sylvan's Rangers</td><td>0</td></tr>
+		<tr><td>Tock's Inevitables</td><td>0</td></tr>
+		<tr><td>Trollkin Mercenary Corps</td><td>0</td></tr>
+	</tbody>
+</table>
+
+#### Backstory
 
 Eadric Tudoria was born in the capital city of Geraslim (I'm assuming it's Strovenguard but I'm not sure). His parents were members of the criminal organization Black Sun, and would routinely leave Eadric and his younger siblings, Alex and Keyla, with a “family friend” and Black Sun fence, Eselred Lankshire when they were assigned jobs out of the city. One day when he was 13 Eadric's parents left for a job and never returned. To this day he doesn't know what happened to his parents, but he suspects that they are dead. After that he and his siblings where left in Eselred's care full time and he moved them to the smaller city of Linden, south of Strovenguard along the Dina river (At least I think it is still the Dina river, It's the one leading south out of Saria Lake)
 
@@ -146,35 +328,7 @@ He gets along incredibly well with a dwarf by the name of Arman Hammerfall. The 
 
 The only real silver lining for Eadric has been Ashes of the Mountain, or Ash as her friends call her. Ash is a female Tabaxi from a highly damaged tribe coming out of Gerasalim that sought refuge from the invading orcs. Eadric and Ash have begun to find solace in each others company and their relationship is slowly becoming something more than friends. Ash's father is none too happy that his daughter has been getting more affectionate with a non-Tabaxi given the tribes history with outsiders, but has had his attention diverted elsewhere due to the tragedies all around them.
 
-### Faction Standings
 
-<table class="table table-striped datatable">
-	<thead>
-		<tr>
-			<th>Faction</th><th>Current Standing</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr><td>Black Wolf Irregulars</td><td>2</td></tr>
-		<tr><td>Amathera's Shield</td><td>0</td></tr>
-		<tr><td>Artificer's of Mechanus</td><td>0</td></tr>
-		<tr><td>Black Sun</td><td>2</td></tr>
-		<tr><td>Champions of Cora</td><td>0</td></tr>
-		<tr><td>Dormanian Imperial Guard</td><td>0</td></tr>
-		<tr><td>Guild of Heroes</td><td>0</td></tr>
-		<tr><td>International Grangemaster's Alliance</td><td>0</td></tr>
-		<tr><td>Illustrious Guild of Merchants and Fine Artisans</td><td>3</td></tr>
-		<tr><td>Keepers of the Grove</td><td>0</td></tr>
-		<tr><td>Lords of the Rising Dawn</td><td>1</td></tr>
-		<tr><td>Maker's of Legend</td><td>0</td></tr>
-		<tr><td>Masters of the Deep Song</td><td>1</td></tr>
-		<tr><td>Shepherd's of the All-Mother</td><td>2</td></tr>
-		<tr><td>Silver Dragon Knights</td><td>2</td></tr>
-		<tr><td>Sylvan's Rangers</td><td>0</td></tr>
-		<tr><td>Tock's Inevitables</td><td>0</td></tr>
-		<tr><td>Trollkin Mercenary Corps</td><td>0</td></tr>
-	</tbody>
-</table>
 
 ### NPC Table
 

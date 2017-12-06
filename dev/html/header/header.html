@@ -22,11 +22,11 @@
                         </a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a ui-sref="app.charbuilder">Character Builder</a></li>
+                            <li data-ng-if="globals"><a ui-sref="app.runner">Encounter Runner</a></li>
                             <li data-ng-if="globals"><a ui-sref="app.book1">Epic of Elthelas Book 1</a></li>
                             <li data-ng-if="globals"><a href="#">Epic of Elthelas Book 2</a></li>
                             <li data-ng-if="globals"><a href="#">Epic of Elthelas Book 3</a></li>
                             <li data-ng-if="globals"><a ui-sref="app.book4">Epic of Elthelas Book 4</a></li>
-                            <li data-ng-if="globals"><a ui-sref="app.runner">Encounter Runner</a></li>
                             <li><a ui-sref="app.book4playersguide">Epic of Elthelas Book 4 - Player's Guide</a></li>
                         </ul>
                     </li>
