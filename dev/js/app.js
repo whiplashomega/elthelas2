@@ -54,8 +54,9 @@
       },
       data: {
         title: "Encounter Runner",
-        metadescription: "",
-        metakeywords: ""
+        metadescription: "Run an encounter by selecting creatures from the bestiary",
+          auth: true,
+        metakeywords: "encounter"
       },
       resolve: {
         creatures: function() {
@@ -75,8 +76,9 @@
       },
       data: {
         title: "Encounter Runner",
-        metadescription: "",
-        metakeywords: ""
+          auth: true,
+        metadescription: "Run a pre-determined encounter via a link",
+        metakeywords: "encounter, pre-determined"
       },
       resolve: {
         creatures: function($stateParams) {
@@ -508,6 +510,7 @@
       },
       data: {
         title: 'Bestiary',
+          auth: true,
              metadescription: "Bestiary for the Elthelas Campaign Setting. Will eventually include typical locations found for each creature (by plane/continent/terrain).",
              metakeywords: "beast, bestiary, aberration, humanoid, fey, dragon, giant, monstrosity, ooze, plant, fiend, celestial, reference"
           
