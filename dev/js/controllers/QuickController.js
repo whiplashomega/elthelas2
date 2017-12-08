@@ -33,6 +33,7 @@
     $scope.gear = [];
     
     function createDataTable(selector, data, columns, postInit) {
+
       $(selector + ' tfoot th').each(function() {
         var title = $(this).text();
         $(this).html( '<input type="text" class="form-control" style="min-width: 80px" placeholder="Search '+title+'" />' );
@@ -54,7 +55,7 @@
           table.column(index).search(this.value).draw();
         });
       });
-      
+      console.log(table);
       return table;
     }
     
@@ -109,6 +110,7 @@
         $('.datatable').DataTable();
         
         ItemProvider.getArmor().then(function(response) {
+          //console.log(response);
           $scope.armor = response.data;
           var armorData = [];
           for(var i = 0; i < $scope.armor.length; i++) {
@@ -140,6 +142,7 @@
           ]);
           
           ItemProvider.getWeapons().then(function(response) {
+            //console.log(response);
             $scope.weapons = response.data;
             var weaponData = [];
             for(var k = 0; k < $scope.weapons.length; k++) {
@@ -162,6 +165,7 @@
             ]);
             
             ItemProvider.getMagicItems().then(function(data) {
+              //console.log(data);
               $scope.magicItems = data.data;
               $scope.magicItems = $scope.magicItems.filter(function(item) {
                 if(["1st Level Scroll", "Cantrip Scroll", "2nd Level Scroll", "3rd Level Scroll", "4th Level Scroll", "5th Level Scroll", "6th Level Scroll", "7th Level Scroll", "8th Level Scroll", "+1 Armor", "+2 Armor", "Armor of Resistance", "Mariner's Armor", "Weapon +1", "Weapon +2", "Weapon +3", "Weapon of Returning", "Weapon of Returning +1", "Weapon of Elemental Damage", "Weapon of Elemental Damage +1", "Weapon of Sharpness", "Vicious Weapon", "Weapon of Life Stealing", "Weapon of Warning", "Weapon of Wounding", "Wand of 1st Level Spell", "Wand of 2nd Level Spell", "Wand of 3rd Level Spell", "Wand of 4th Level Spell"]
@@ -327,9 +331,8 @@
                     "Cost (gp)": Number($scope.armor[z].Price) + 2000                
                 });
               }
-              
               for (var y = 0; y < $scope.spells.length; y++) {
-                var levelnum;
+                var levelnum = 0;
                 if($scope.spells[y].level === "cantrip") {
                   levelnum = 0;
                 } else {
@@ -412,6 +415,7 @@
                   $scope.magicItems.push(wand);                  
                 }
               }
+              //console.log($scope.magicItems);
               $scope.setMagicItemStock();
             });            
           });
@@ -458,7 +462,7 @@
         thisItem.push(inStock(rand, x));
         if($scope.magicItems[x].Type.includes("Weapon")) {
           magicWeaponTableData.push(thisItem);
-        } else if($scope.magicItems[x].Type.includes("Armor")) {
+        } else if($scope.magicItems[x].Type.includes("Armor") || $scope.magicItems[x].Type.includes("Shield")) {
           magicArmorTableData.push(thisItem);
         } else if($scope.magicItems[x].Type.includes("scroll")) {
           scrollTableData.push(thisItem);
@@ -468,6 +472,7 @@
           magicItemTableData.push(thisItem);
         }
       }
+
       createDataTable('#magicweapontable', magicWeaponTableData, [
           { title: "Item" },
           { title: "Cost (gp)" }, 
@@ -475,7 +480,7 @@
           { title: "Attunement" },
           { title: "Effect" },
           { title: "Random Stock" }
-          ]);
+      ]);
       createDataTable('#magicarmortable', magicArmorTableData, [
           { title: "Item" },
           { title: "Cost (gp)" }, 
@@ -483,7 +488,7 @@
           { title: "Attunement" },
           { title: "Effect" },
           { title: "Random Stock" }
-          ]);
+      ]);
       createDataTable('#magicscrolltable', scrollTableData, [
           { title: "Item" },
           { title: "Cost (gp)" }, 
@@ -491,7 +496,7 @@
           { title: "Attunement" },
           { title: "Effect" },
           { title: "Random Stock" }
-          ]);
+      ]);
       createDataTable('#magicwandtable', wandTableData, [
           { title: "Item" },
           { title: "Cost (gp)" }, 
@@ -499,7 +504,7 @@
           { title: "Attunement" },
           { title: "Effect" },
           { title: "Random Stock" }
-          ]);
+      ]);
       createDataTable('#magicothertable', magicItemTableData, [
           { title: "Item" },
           { title: "Cost (gp)" }, 
@@ -507,7 +512,7 @@
           { title: "Attunement" },
           { title: "Effect" },
           { title: "Random Stock" }
-          ]);
+      ]);
     };
     
     this.init();

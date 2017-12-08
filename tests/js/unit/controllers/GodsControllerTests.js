@@ -3,7 +3,7 @@
 
 describe('God Controller Tests', function() {
   var service, $q, deferred, $scope;
-  var resolveObject = { data: { documents: [{ id: 'alohim' }, { id: 'amathera' }]}};
+  var resolveObject = [{ id: 'alohim' }, { id: 'amathera' }];
   beforeEach(module('elthelas'));
   
   beforeEach(inject(function($controller, _$q_, _$rootScope_, godProvider) {

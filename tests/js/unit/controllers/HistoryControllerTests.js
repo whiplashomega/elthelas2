@@ -3,8 +3,7 @@
 describe("History Controller Tests", function() {
   var service, $q, deferred, $scope, controller;
   beforeEach(module("elthelas"));
-  var resolveObject = {
-    data: {documents: [{
+  var resolveObject = [{
       "start_date": {
         "year": 0,
         "month": 0,
@@ -19,8 +18,7 @@ describe("History Controller Tests", function() {
         "headline": "Title",
         "text": "Description"
       }
-    }]
-  }};
+    }];
   beforeEach(inject(function($controller, _$q_, _$rootScope_, historyProvider){
     $q = _$q_;
     $scope = _$rootScope_.$new();

@@ -45,16 +45,17 @@ footer {
   max-height: 100px;
 }
 
-.card {
+#main .card {
   h3 {
     margin-top: 10px;
+    border-bottom: none;
     .btn {
       padding: 2px 12px;
     }
   }
-  border: 1px solid $header;
-  background-color: $header;
-  padding: 10px;
+  border: 1px solid #e0e5c1;
+  background-color: #e0e5c1;
+  padding: 8px 12px;
   margin: 15px 10px;
   border-radius: 8px;
   clear: both;

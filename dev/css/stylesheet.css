@@ -35,16 +35,17 @@ footer {
   max-width: 100px;
   max-height: 100px; }
 
-.card {
-  border: 1px solid #c3e6e6;
-  background-color: #c3e6e6;
-  padding: 10px;
+#main .card {
+  border: 1px solid #e0e5c1;
+  background-color: #e0e5c1;
+  padding: 8px 12px;
   margin: 15px 10px;
   border-radius: 8px;
   clear: both; }
-  .card h3 {
-    margin-top: 10px; }
-    .card h3 .btn {
+  #main .card h3 {
+    margin-top: 10px;
+    border-bottom: none; }
+    #main .card h3 .btn {
       padding: 2px 12px; }
 
 .clear-b {
@@ -82,6 +83,37 @@ aside.card {
 .h1, h1 {
   font-size: 30px;
   font-weight: bold; }
+
+#main {
+  font-family: 'Open Sans', sans-serif; }
+
+#main h1, #main h2, #main h3, #main h4, #main h5 {
+  margin-top: 1em;
+  margin-bottom: .5em;
+  font-weight: 800;
+  color: #58180D; }
+
+#content img {
+  max-width: 100%;
+  display: block;
+  column-span: all; }
+
+#main h1 {
+  column-span: all;
+  font-size: .987cm; }
+
+#main h2 {
+  font-size: .705cm;
+  column-span: all; }
+
+#main h3 {
+  column-span: all;
+  font-size: .529cm;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #c9ad6a; }
+
+#main h4 {
+  font-size: .458cm; }
 
 .jumbotron h1 {
   font-size: 50px;

@@ -118,23 +118,23 @@
           children: [
             {
               text: "Character Building",
-              url: "#chapter1startingout"
+              url: "#character-building"
             },
             {
-              text: "Arrival",
-              url: "#arrival"
+              text: "Arrival at Cur'Estan",
+              url: "#arrival-at-cur-estan"
             },
             {
               text: "Raiders",
-              url: "#chapter1raiders"
+              url: "#raiders"
             },
             {
               text: "The Raiders' Base",
-              url: "#chapter1raidersbase"
+              url: "#the-raiders-base"
             },
             {
               text: "Random Encounters",
-              url: "#chapter1randomencounters"
+              url: "#random-encounters"
             }
           ]
         },
@@ -145,39 +145,39 @@
           children: [
             {
               text: "Preparations",
-              url: "#chapter2preparation"
+              url: "#preparation"
             },
             {
               text: "The City of Northport",
-              url: "#chapter2northport"
+              url: "#northport"
             },
             {
               text: "Arrival in Northport",
-              url: "#chapter2riot"
+              url: "#arrival-in-northport"
             },
             {
               text: "Necromancers on the Edge of Town",
-              url: "#chapter2necromancers"
+              url: "#necromancers-on-the-edge-of-town"
             },
             {
               text: "Sulac's Lair",
-              url: "#chapter2sulac"
+              url: "sulacs-lair"
             },
             {
               text: "The Guild of Heroes",
-              url: "#chapter2guildofheroes"
+              url: "#the-guild-of-heroes"
             },
             {
               text: "Delay the Orc Army",
-              url: "#chapter2delayorcs"
+              url: "#delay-the-orc-army"
             },
             {
               text: "Evacuation of Northport",
-              url: "#chapter2evacuation"
+              url: "#evacuation-of-northport"
             },
             {
               text: "Random Encounters",
-              url: "#chapter2randomencounters"
+              url: "#random-encounters"
             }
           ]
         },
@@ -188,39 +188,35 @@
           children: [
             {
               text: "Chapter 3: Preparation",
-              url: "#chapter3preparation"
-            },
-            {
-              text: "Chapter 3: Settlement",
-              url: "#chapter3settlement"
+              url: "#preparation"
             },
             {
               text: "Chapter 3: Cur'Mestin",
-              url: "#chapter3curmestin"
+              url: "curmestin"
             },
             {
               text: "Chapter 3: Castle Octavius",
-              url: "#chapter3octaviuscastle"
+              url: "#castle-octavius"
             },
             {
               text: "Chapter 3: The Loyalists' Hideout",
-              url: "#chapter3loyalistshideout"
+              url: "#the-loyalists-hideout"
             },
             {
               text: "Chapter 3: The Purple Worm Nest",
-              url: "#chapter3purplewormnest"
+              url: "#the-purple-worm-nest"
             },
             {
               text: "Chapter 3: The Temple of Alohim",
-              url: "#chapter3templeofalohim"
+              url: "#the-temple-of-alohim"
             },
             {
               text: "Chapter 3: Breaking the Blockade",
-              url: "#chapter3blockade"
+              url: "#breaking-the-blockade"
             },
             {
               text: "chapter 3: Miscelaneous Sidequests",
-              url: "#chapter3misc"
+              url: "#miscelaneous-sidequests"
             }
           ]
         },

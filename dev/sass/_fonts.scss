@@ -31,6 +31,44 @@ aside.card {
     font-weight: bold;
 }
 
+#main {
+    font-family: 'Open Sans', sans-serif;
+}
+
+  #main h1, #main h2, #main h3, #main h4, #main h5 {
+    margin-top: 1em;
+    margin-bottom: .5em;
+    font-weight: 800;
+    color: #58180D;    
+  }
+
+  #content img {
+    max-width: 100%;
+    display: block;
+    column-span: all;
+  }
+  
+  #main h1 {
+    column-span: all;
+    font-size: .987cm;
+  }
+  
+  #main h2 {
+    font-size: .705cm;
+    column-span: all;
+  }
+  
+  #main h3 {
+    column-span: all;
+    font-size: .529cm;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #c9ad6a;
+  }
+  
+  #main h4 {
+    font-size: .458cm;
+  }
+
 .jumbotron h1 {
     font-size: 50px;
     font-weight: bold;
