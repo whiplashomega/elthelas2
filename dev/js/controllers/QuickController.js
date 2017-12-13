@@ -55,7 +55,6 @@
           table.column(index).search(this.value).draw();
         });
       });
-      console.log(table);
       return table;
     }
     
@@ -113,6 +112,8 @@
           //console.log(response);
           $scope.armor = response.data;
           var armorData = [];
+          var today = new Date();
+          Math.seedrandom(today.getYear() + today.getMonth() + today.getDate());
           for(var i = 0; i < $scope.armor.length; i++) {
             var thisArmor = [];
             thisArmor.push($scope.armor[i].Armor);
@@ -125,6 +126,40 @@
             thisArmor.push($scope.armor[i].Resistance);
             thisArmor.push(Number($scope.armor[i].Price));
             thisArmor.push(Number($scope.armor[i]["Time to Craft"]));
+            var armorrand = Math.random();
+            if(["Steel", "Leather", "Hides", "Cloth"].includes($scope.armor[i].Material)) {
+              thisArmor.push("In Stock");
+            }
+            else if($scope.armor[i].Material === "Parakas Steel") {
+              if(armorrand < 0.45) {
+                thisArmor.push("In Stock");
+              } else {
+                thisArmor.push("Out of Stock");
+              }
+            }
+            else if($scope.armor[i].Material === "Mithril") {
+              if(armorrand < 0.25) {
+                thisArmor.push("In Stock");
+              } else {
+                thisArmor.push("Out of Stock");
+              }
+            }
+            else if($scope.armor[i].Material === "Adamantine") {
+              if(armorrand < 0.1) {
+                thisArmor.push("In Stock");
+              } else {
+                thisArmor.push("Out of Stock");
+              }
+            }
+            else if(["Dragon Leather", "Dragon Scales", "Dragon Hide"].includes($scope.armor[i].Material)) {
+              if(armorrand < 0.05) {
+                thisArmor.push("In Stock");
+              } else {
+                thisArmor.push("Out of Stock");
+              }
+            } else {
+              thisArmor.push("Out of Stock");
+            }
             armorData.push(thisArmor);
           }
           
@@ -138,7 +173,8 @@
             {title: "Weight"}, 
             {title: "Resistance"},
             {title: "Price"},
-            {title: "Time to Craft"}
+            {title: "Time to Craft"},
+            {title: "In Stock"}
           ]);
           
           ItemProvider.getWeapons().then(function(response) {
@@ -258,6 +294,14 @@
                   Effect: "This magic weapon warns you of danger. While the weapon is on your person, you have advantage on initiative rolls. In addition, you and any of your companions within 30 feet of you can't be surprised, except when incapacitated by something other than nonmagical sleep. The weapon magically awakens you and your companions within range if any of you are sleeping naturally when combat begins.",
                   "Cost (gp)": 3000
                 });
+                $scope.magicItems.push({
+                  Item: "Moon Touched " + $scope.weapons[l].Name,
+                  Type: "Weapon (" + $scope.weapons[l].Name + ")",
+                  Attunement: "Yes",
+                  Rarity: "Uncommon",
+                  Effect: "In darkness, the unsheathed blade of this weapon sheds moonlight, creating bright light in a 15-foot radius and dim light for an additional 15 feet.",
+                  "Cost (gp)": 200
+                });
                 var dmgArray = ["fire", "acid", "cold", "lightning"];
                 for(var i = 0; i < dmgArray.length; i++) {
                   dmgFunction(dmgArray[i], l);
@@ -293,10 +337,10 @@
               }
               var resArmor = function(resist, z) {
                   $scope.magicItems.push({
-                    Item: $scope.armor[z].Material + " " + $scope.armor[z].Armor + " of " + resist + " Resistance",
+                    Item: $scope.armor[z].Armor + " of " + resist + " Resistance " + "(" + $scope.armor[z].Material + ")",
                     Type: "Armor (" + $scope.armor[z].Armor + ")",
                     Attunement: "Yes",
-                    Effect: "You have resistance to "+ resist +" damage while you wear this armor. " + $scope.armor[z].Resistance,
+                    Effect: "You have resistance to "+ resist +" damage while you wear this armor. It also grants the following resistances based on its material: " + $scope.armor[z].Resistance,
                     Rarity: "Rare",
                     "Cost (gp)": Number($scope.armor[z].Price) + 8000
                   });                 
@@ -304,18 +348,42 @@
               for (var z = 0; z < $scope.armor.length; z++) {
                 var resistArray = ["fire", "cold", "acid", "poison", "bludgeoning", "piercing", "slashing", "force", "lightning", "thunder", "radiant", "necrotic"];
                 $scope.magicItems.push({
-                  Item: "+1 " + $scope.armor[z].Material + " " + $scope.armor[z].Armor,
+                  Item: $scope.armor[z].Armor + " of Gleaming (" + $scope.armor[z].Material + ")",
                   Type: "Armor (" + $scope.armor[z].Armor + ")",
                   Attunement: "No",
-                  Effect: "You have a +1 bonus to AC while wearing this armor." + $scope.armor[z].Resistance,
+                  Effect: "This armor never  gets dirty. It also grants the following resistances based on its material: " + $scope.armor[z].Resistance,
+                  Rarity: "Common",
+                  "Cost (gp)": Number($scope.armor[z].Price) + 200
+                });
+                $scope.magicItems.push({
+                  Item: "Cast-Off " + $scope.armor[z].Armor + " (" + $scope.armor[z].Material + ")",
+                  Type: "Armor (" + $scope.armor[z].Armor + ")",
+                  Attunement: "No",
+                  Effect: "You can doff this armor as an action. It also grants the following resistances based on its material: " + $scope.armor[z].Resistance,
+                  Rarity: "Common",
+                  "Cost (gp)": Number($scope.armor[z].Price) + 400
+                });
+                $scope.magicItems.push({
+                  Item: "Smoldering " + $scope.armor[z].Armor + " (" + $scope.armor[z].Material + ")",
+                  Type: "Armor (" + $scope.armor[z].Armor + ")",
+                  Attunement: "No",
+                  Effect: "Wisps of harmless, odorless smoke rise from this armor while it is worn. It also grants the following resistances based on its material: " + $scope.armor[z].Resistance,
+                  Rarity: "Common",
+                  "Cost (gp)": Number($scope.armor[z].Price) + 200
+                });
+                $scope.magicItems.push({
+                  Item: "+1 " + $scope.armor[z].Armor + " (" + $scope.armor[z].Material + ")",
+                  Type: "Armor (" + $scope.armor[z].Armor + ")",
+                  Attunement: "No",
+                  Effect: "You have a +1 bonus to AC while wearing this armor. It also grants the following resistances based on its material: " + $scope.armor[z].Resistance,
                   Rarity: "Rare",
                   "Cost (gp)": Number($scope.armor[z].Price) + 4000
                 });
                 $scope.magicItems.push({
-                  Item: "+2 " + $scope.armor[z].Material + " " + $scope.armor[z].Armor,
+                  Item: "+2 " + $scope.armor[z].Armor + " (" + $scope.armor[z].Material + ")",
                   Type: "Armor (" + $scope.armor[z].Armor + ")",
                   Attunement: "No",
-                  Effect: "You have a +2 bonus to AC while wearing this armor. " + $scope.armor[z].Resistance,
+                  Effect: "You have a +2 bonus to AC while wearing this armor. It also grants the following resistances based on its material: " + $scope.armor[z].Resistance,
                   Rarity: "Very Rare",
                   "Cost (gp)": Number($scope.armor[z].Price) + 16000
                 });
@@ -323,10 +391,10 @@
                   resArmor(resistArray[j], z);
                 }
                 $scope.magicItems.push({
-                    Item: "Mariner's " + $scope.armor[z].Material + " " + $scope.armor[z].Armor,
+                    Item: "Mariner's " + $scope.armor[z].Armor + " (" + $scope.armor[z].Material + ")",
                     Type: "Armor (" + $scope.armor[z].Armor + ")",
                     Attunement: "No",
-                    Effect: "While wearing this armor, you have a swimming speed equal to your walking speed. In addition, whenever you start your turn underwater with 0 hit points, the armor causes you to rise 60 feet toward the surface. The armor is decorated with fish and shell motifs. " + $scope.armor[z].Resistance,
+                    Effect: "While wearing this armor, you have a swimming speed equal to your walking speed. In addition, whenever you start your turn underwater with 0 hit points, the armor causes you to rise 60 feet toward the surface. The armor is decorated with fish and shell motifs. It also grants the following resistances based on its material: " + $scope.armor[z].Resistance,
                     Rarity: "Uncommon",
                     "Cost (gp)": Number($scope.armor[z].Price) + 2000                
                 });
@@ -432,22 +500,27 @@
       var scrollTableData = [];
       var wandTableData = [];
       var today = new Date();
-      var randgen = Math.seedrandom(today.getYear() + today.getMonth() + today.getDate());
+      Math.seedrandom(today.getYear() + today.getMonth() + today.getDate());
       var inStock = function(rand, x) {
-          if($scope.magicItems[x].Rarity === "Common") {
-            return "In Stock";
-          } else if($scope.magicItems[x].Rarity === "Uncommon") {
-            if(rand > 0.85) {
-              return "In Stock";
-            }
+          var threshold = 1;
+          if($scope.magicItems[x].Item.includes("Mithril")) {
+            threshold = 0.25;
+          } else if($scope.magicItems[x].Item.includes("Parakas Steel")) {
+            threshold = 0.45;
+          } else if($scope.magicItems[x].Item.includes("Adamantine")) {
+            threshold = 0.1;
+          } else if($scope.magicItems[x].Item.includes("Dragon")) {
+            threshold = 0.05;
+          }
+          if($scope.magicItems[x].Rarity === "Uncommon") {
+            threshold *= (3/20);
           } else if($scope.magicItems[x].Rarity === "Rare") {
-            if(rand > 0.95) {
-              return "In Stock";
-            }
+            threshold *= (1/20);
           } else if($scope.magicItems[x].Rarity === "Very Rare") {
-            if(rand > 0.99) {
-              return "In Stock";
-            }
+            threshold *= (1/100);
+          }
+          if(rand < threshold) {
+            return "In Stock";
           }
           return "Out of Stock";
       };

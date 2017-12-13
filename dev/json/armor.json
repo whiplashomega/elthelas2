@@ -7,8 +7,8 @@
    "Strength": "-",
    "Stealth": "disadvantage",
    "Weight": 8,
-   "Resistance": "-",
-   "Price": 6,
+   "Resistance": "none",
+   "Price": 5,
    "Time to Craft": 1
  },
  {
@@ -19,8 +19,8 @@
    "Strength": "-",
    "Stealth": "-",
    "Weight": 10,
-   "Resistance": "-",
-   "Price": 32,
+   "Resistance": "none",
+   "Price": 10,
    "Time to Craft": 3
  },
  {
@@ -43,8 +43,8 @@
    "Strength": "-",
    "Stealth": "-",
    "Weight": 13,
-   "Resistance": "-",
-   "Price": 60,
+   "Resistance": "none",
+   "Price": 45,
    "Time to Craft": 7
  },
  {
@@ -67,8 +67,8 @@
    "Strength": "-",
    "Stealth": "-",
    "Weight": 12,
-   "Resistance": "-",
-   "Price": 18,
+   "Resistance": "none",
+   "Price": 10,
    "Time to Craft": 3
  },
  {
@@ -91,8 +91,8 @@
    "Strength": "-",
    "Stealth": "-",
    "Weight": 20,
-   "Resistance": "-",
-   "Price": 90,
+   "Resistance": "none",
+   "Price": 50,
    "Time to Craft": 20
  },
  {
@@ -103,7 +103,7 @@
    "Strength": "-",
    "Stealth": "-",
    "Weight": 10,
-   "Resistance": "-",
+   "Resistance": "none",
    "Price": 600,
    "Time to Craft": 30
  },
@@ -139,8 +139,8 @@
    "Strength": "-",
    "Stealth": "disadvantage",
    "Weight": 45,
-   "Resistance": "-",
-   "Price": 140,
+   "Resistance": "none",
+   "Price": 50,
    "Time to Craft": 30
  },
  {
@@ -151,7 +151,7 @@
    "Strength": "-",
    "Stealth": "-",
    "Weight": 27.5,
-   "Resistance": "-",
+   "Resistance": "none",
    "Price": 1400,
    "Time to Craft": 45
  },
@@ -199,8 +199,8 @@
    "Strength": "-",
    "Stealth": "-",
    "Weight": 20,
-   "Resistance": "-",
-   "Price": 180,
+   "Resistance": "none",
+   "Price": 400,
    "Time to Craft": 40
  },
  {
@@ -211,7 +211,7 @@
    "Strength": "-",
    "Stealth": "-",
    "Weight": 15,
-   "Resistance": "-",
+   "Resistance": "none",
    "Price": 900,
    "Time to Craft": 60
  },
@@ -259,8 +259,8 @@
    "Strength": "-",
    "Stealth": "disadvantage",
    "Weight": 40,
-   "Resistance": "-",
-   "Price": 600,
+   "Resistance": "none",
+   "Price": 750,
    "Time to Craft": 120
  },
  {
@@ -271,7 +271,7 @@
    "Strength": "-",
    "Stealth": "-",
    "Weight": 25,
-   "Resistance": "-",
+   "Resistance": "none",
    "Price": 2000,
    "Time to Craft": 180
  },
@@ -320,7 +320,7 @@
    "Stealth": "disadvantage",
    "Weight": 40,
    "Resistance": "-",
-   "Price": 100,
+   "Price": 30,
    "Time to Craft": 20
  },
  {
@@ -331,7 +331,7 @@
    "Strength": "-",
    "Stealth": "-",
    "Weight": 25,
-   "Resistance": "-",
+   "Resistance": "none",
    "Price": 1200,
    "Time to Craft": 30
  },
@@ -368,7 +368,7 @@
    "Stealth": "disadvantage",
    "Weight": 55,
    "Resistance": "-",
-   "Price": 260,
+   "Price": 75,
    "Time to Craft": 50
  },
  {
@@ -379,7 +379,7 @@
    "Strength": "11",
    "Stealth": "-",
    "Weight": 31.5,
-   "Resistance": "-",
+   "Resistance": "none",
    "Price": 1900,
    "Time to Craft": 75
  },
@@ -415,8 +415,8 @@
    "Strength": "15",
    "Stealth": "disadvantage",
    "Weight": 60,
-   "Resistance": "-",
-   "Price": 280,
+   "Resistance": "none",
+   "Price": 200,
    "Time to Craft": 50
  },
  {
@@ -427,7 +427,7 @@
    "Strength": "13",
    "Stealth": "-",
    "Weight": 35,
-   "Resistance": "-",
+   "Resistance": "none",
    "Price": 2200,
    "Time to Craft": 75
  },
@@ -463,8 +463,8 @@
    "Strength": "15",
    "Stealth": "disadvantage",
    "Weight": 65,
-   "Resistance": "-",
-   "Price": 1200,
+   "Resistance": "none",
+   "Price": 1500,
    "Time to Craft": 200
  },
  {
@@ -475,7 +475,7 @@
    "Strength": "13",
    "Stealth": "-",
    "Weight": 37.5,
-   "Resistance": "-",
+   "Resistance": "none",
    "Price": 3700,
    "Time to Craft": 300
  },
@@ -519,12 +519,12 @@
    "Armor": "Shield",
    "Type": "-",
    "Material": "Steel",
-   "AC": 12,
+   "AC": 2,
    "Strength": "-",
    "Stealth": "-",
    "Weight": 6,
-   "Resistance": "-",
-   "Price": 6,
+   "Resistance": "none",
+   "Price": 10,
    "Time to Craft": 1
  }
 ]
