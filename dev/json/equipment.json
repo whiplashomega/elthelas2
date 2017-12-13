@@ -660,7 +660,7 @@
    "Weight": 1
  },
  {
-   "Item": "Viol",
+   "Item": "Vial",
    "Cost": 30,
    "Weight": 1
  },
@@ -678,5 +678,105 @@
    "Item": "Thieves’ tools",
    "Cost": 25,
    "Weight": 1
- }
+ },
+ {
+   "Item": "Ale (Gallon)",
+   "Cost": .2,
+   "Weight": 8
+ },
+ {
+   "Item": "Ale (Pint)",
+   "Cost": .04,
+   "Weight": 8
+ },
+ {
+   "Item": "Banquet (per person)",
+   "Cost": 10,
+   "Weight": 2
+ },
+ {
+   "Item": "Bread, loaf",
+   "Cost": .02,
+   "Weight": 1
+ },
+ {
+   "Item": "Cheese, hunk",
+   "Cost": .1,
+   "Weight": 1
+ },
+ {
+   "Item": "Inn Stay (squalid, per day)",
+   "Cost": .07,
+   "Weight": 0
+ },
+ {
+   "Item": "Inn Stay (poor, per day)",
+   "Cost": .1,
+   "Weight": 0
+ },
+ {
+   "Item": "Inn Stay (modest, per day)",
+   "Cost": .5,
+   "Weight": 0
+ },
+ {
+   "Item": "Inn Stay (comfortable, per day)",
+   "Cost": .8,
+   "Weight": 0
+ },
+ {
+   "Item": "Inn Stay (wealthy, per day)",
+   "Cost": 2,
+   "Weight": 0
+ },
+ {
+   "Item": "Inn Stay (aristocratic, per day)",
+   "Cost": 4,
+   "Weight": 0
+ },
+ {
+   "Item": "Meals (squalid, per day)",
+   "Cost": .03,
+   "Weight": 0
+ },
+ {
+   "Item": "Meals (poor, per day)",
+   "Cost": .06,
+   "Weight": 0
+ },
+ {
+   "Item": "Meals (modest, per day)",
+   "Cost": .3,
+   "Weight": 0
+ },
+ {
+   "Item": "Meals (comfortable, per day)",
+   "Cost": .5,
+   "Weight": 0
+ },
+ {
+   "Item": "Meals (wealthy, per day)",
+   "Cost": .8,
+   "Weight": 0
+ },
+ {
+   "Item": "Meals (aristocratic, per day)",
+   "Cost": 2,
+   "Weight": 0
+ },
+ {
+   "Item": "Meat, chunk",
+   "Cost": .3,
+   "Weight": 1
+ },
+ {
+   "Item": "Wine, common (pitcher)",
+   "Cost": .2,
+   "Weight": 4
+ },
+ {
+   "Item": "Wine, fine (bottle)",
+   "Cost": 10,
+   "Weight": 2
+ },
 ]
