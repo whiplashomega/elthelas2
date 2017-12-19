@@ -130,7 +130,7 @@
             if(["Steel", "Leather", "Hides", "Cloth"].includes($scope.armor[i].Material)) {
               thisArmor.push("In Stock");
             }
-            else if($scope.armor[i].Material === "Parakas Steel") {
+            else if($scope.armor[i].Material === "Parakas Steel" || $scope.armor[i].Material === "Orichalcum") {
               if(armorrand < 0.45) {
                 thisArmor.push("In Stock");
               } else {
@@ -505,7 +505,7 @@
           var threshold = 1;
           if($scope.magicItems[x].Item.includes("Mithril")) {
             threshold = 0.25;
-          } else if($scope.magicItems[x].Item.includes("Parakas Steel")) {
+          } else if($scope.magicItems[x].Item.includes("Parakas Steel") || $scope.magicItems[x].Item.includes("Orichalcum")) {
             threshold = 0.45;
           } else if($scope.magicItems[x].Item.includes("Adamantine")) {
             threshold = 0.1;
