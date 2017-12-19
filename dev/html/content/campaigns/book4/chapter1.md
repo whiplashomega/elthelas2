@@ -532,3 +532,59 @@ If rescued by the party the refugees have nothing to give them, but will speak h
 While the party is resting, Silas is woken by someone shaking him awake. It is Bartok Wailmane, accompanied by Jazelle. Bartok will gloat to Silas about how his quest is hopeless, how Nera is nothing, and only Zhuul can give him the vengeance he desires. If Silas breaks out Jazelle will dimension door both of them away. Jazelle will interrupt Bartok to ask if she can kill Flykr. Bartok will respond 'not now! they will die when Lord Slithers decides and not before!'.
 
 ##### [Run This Encounter](/runner/bartokwailmane&jazelle)
+
+## The Dragon Hunt
+
+### Beginnings
+
+Eobard receives an official writ of claim. Which states the Silver Dragon Knight Paladins are to be the owners of the green dragon corpse upon its death.
+
+Players are told they have some down time before the next mission is finalized. As such they are encouraged to hunt down the green dragon that escaped earlier. They are entitled to the dragons hoard upon completion. And the BWI’s will feel better knowing such an enemy will not appear again in the future.
+
+Players are told that dragons are particularly difficult to track down, but a witness saw it fly over the town earlier that day headed north. 
+
+### Tracking
+
+Players begin at Cur'Estan. A not very difficult check reveals a trail of gold coins headed towards the north.
+
+#### Lighttouch Family
+
+The gold trails pass by a small cottage in the woods. The trail stops here as the owners of the cottage have collected the gold. In the cottage is a “small” family of halflings that were exiled from their hometown for excessive thievery. 3 of them, the Mother (Farshin), Father (Mearls), and one of the kids (Robertarniterio), witnessed where the dragon went. 
+
+The mother wants gold in exchange for the trail, an absurd amount.
+
+The father wants redemption. Asking for meaningful positions in Cur'Estan. One that comes with decent pay.
+
+The child wants the family to be allowed back into their town of (pick a town).
+
+#### Horace, the traveler
+
+The trail leads them into a solitary man that has been picking up the gold trail that headed towards the players. Horace is missing an eye as one fell on him as it passed. Horace wants compensation for his missing eye. A written promise of 100 gold from the dragon’s stash. Horace cannot read though.
+
+#### Ravaeris, the deserter
+
+Ravaeris is a deserter from the Black Wolf Irregulars. No longer believing their cause and not getting paid enough to care, she left. Ravaeris only wants money, and has been picking up the gold leading towards the dragon. She will lie when the adventurer’s approach, saying she was going to slay the dragon. If players question she continues to lie about her goals, and says she only wants to redeem herself and rejoin the army. Ravaeris will abandon the party during the dragon fight and attempt to take all the gold for herself. The players can choose to let her join or not, they do not need her to find the dragon’s lair.
+
+#### The Orc Boss
+
+The Orc boss has also been trying to track down the Dragon, angry that it abandoned them as soon as things started to go south. One of his scouts sights the party approaching the Dragon's Cave (+5 stealth vs parties perception to be discovered). The scout will make a break for it if discovered, shouting for help. The orc boss and the men he has with him will then attack the party from multiple directions. The scout is a Red Fang of Shargaas, the leader is a Blade of Ilneval, the rest of the leaders elite group consists of a hobgoblin devastator and 2 orc claws of luthic.
+
+##### [Run This Encounter](/runner/orcredfangofshargaas&hobgoblindevastator&orcbladeofilneval&orcclawofluthic&orcclawofluthic)
+
+### The Dragon Cave
+
+The first room of the cave is where the dragon keeps its loyal followers. These are people that either tried to kill or steal from the dragon, before being pacified and manipulated into serving it. At this point these people’s minds are broken, and will fight to the death to protect the dragon. Though they are not very strong. The will simply tell the adventures they are not welcome in the cave, and they should turn back or else.
+
+##### [Run This Encounter](/runner/commoner)
+
+The second room has a 15 foot long crack in the ground, which is difficult for most people to jump over. Inside the crack, the dragon leaves some of its poison breath to fill in at a trap. The dragon can easily fly over the crack, and it makes a good obstacle if the dragon needs to escape.
+
+The third room, and last one before the dragon, holds an enslaved water elemental. This is of course, no ordinary water elemental, and is instead a poison elemental, dealing poison damage for it’s attacks, and forcing saves against being poisoned. The room itself has multiple piles of poison in it, and the elemental rises from one of them.
+
+##### [Run This Encounter](/runner/poisonelemental)
+
+### A Dragon’s Cunning
+
+In the final room, the treasure room, the dragon will make an appearance. The dragon speaks draconic, or a language at least one of them can understand, will attempt to use flattery, bargaining, begging and deception to escape. The dragon knows it is at a disadvantage within the cave, and will offer the dragon’s entire treasure hoard, and more, in exchange for being allowed to leave. If the players agree the dragon appears to be honest with its plans and exit’s the cave in peace. At the exit of the cave, the players will find the dragon is a liar, and is perched on the exit of the cave, ready to breath on them as they exit, then use the skies and the forest to its advantage, swooping at individual targets, and breath weapon on groups.
+
+##### [Run This Encounter](/runner/younggreendragon)

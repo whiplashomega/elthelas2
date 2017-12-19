@@ -31,7 +31,7 @@ tags: [large, fiend, cr12, monster-manual]
 
 **Languages** Infernal, telepathy 120 ft.
 
-**Challenge** 12 (8,400 XP)
+**Challenge** 9 (5000 XP)
 
 ***Devil's Sight.*** Magical darkness doesn't impede the devil's darkvision.
 

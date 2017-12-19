@@ -7,6 +7,57 @@
   </style>
   <h1>Encounter Runner</h1>
   <div class="row">
+    <div class="col-sm-4">
+      <label>
+        Party Size
+        <select class="form-control" data-ng-model="partysize" data-ng-change="calculateDifficulty()">
+          <option ng-value="1">1</option>
+          <option ng-value="2">2</option>
+          <option ng-value="3">3</option>
+          <option ng-value="4">4</option>
+          <option ng-value="5">5</option>
+          <option ng-value="6">6</option>
+          <option ng-value="7">7</option>
+          <option ng-value="8">8</option>
+          <option ng-value="9">9</option>
+          <option ng-value="10">10</option>
+        </select>
+      </label>
+    </div>
+    <div class="col-sm-4">
+      <label>
+        Average Level
+        <select class="form-control" data-ng-model="partylevel" data-ng-change="calculateDifficulty()">
+          <option ng-value="1">1</option>
+          <option ng-value="2">2</option>
+          <option ng-value="3">3</option>
+          <option ng-value="4">4</option>
+          <option ng-value="5">5</option>
+          <option ng-value="6">6</option>
+          <option ng-value="7">7</option>
+          <option ng-value="8">8</option>
+          <option ng-value="9">9</option>
+          <option ng-value="10">10</option>
+          <option ng-value="11">11</option>
+          <option ng-value="12">12</option>
+          <option ng-value="13">13</option>
+          <option ng-value="14">14</option>
+          <option ng-value="15">15</option>
+          <option ng-value="16">16</option>
+          <option ng-value="17">17</option>
+          <option ng-value="18">18</option>
+          <option ng-value="19">19</option>
+          <option ng-value="20">20</option>
+        </select>
+      </label>
+    </div>
+    <div class="col-sm-4">
+      <input type="button" class="btn btn-primary" value="Calculate" data-ng-click="calculateDifficulty()" /> Encounter Difficulty: {{ difficulty }} <br />
+      XP Value: {{xpvalue}}<br />
+      Adjusted XP Value: {{adjustedxpvalue}}
+    </div>
+  </div>
+  <div class="row">
     <div data-ng-repeat="creature in encountercreatures track by $index" class="col-sm-4">
         <h2> {{creature.name}} <button class="close" type="button" data-ng-click="removeCreature(creature)">&times;</button></h2>
         <button class="btn btn-primary" drag>Drag</button>

@@ -31,7 +31,7 @@
 		<tr><td>International Grangemaster's Alliance</td><td>0</td></tr>
 		<tr><td>Illustrious Guild of Merchants and Fine Artisans</td><td>0</td></tr>
 		<tr><td>Keepers of the Grove</td><td>0</td></tr>
-		<tr><td>Lords of the Rising Dawn</td><td>0</td></tr>
+		<tr><td>Lords of the Rising Dawn</td><td>-1</td></tr>
 		<tr><td>Maker's of Legend</td><td>0</td></tr>
 		<tr><td>Masters of the Deep Song</td><td>0</td></tr>
 		<tr><td>Shepherd's of the All-Mother</td><td>3</td></tr>
