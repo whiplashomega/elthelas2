@@ -110,6 +110,9 @@
         data: { username: username, password: password }
         }).then(function(response) { 
         callback(response);
+      }, function(response) {
+        console.log(response);
+        callback(response);
       });
     };
     

@@ -471,6 +471,40 @@ The crates are, like in the kitchen above, full of preserved food. The desk has 
 
 There is also a second copy of the dwarven trade route maps on the desk that is obviously different from the first found (if they found it). This second set is a forgery by the orc who originally found the documents, who intended to reveal they were a fake after they returned to the army, and thus undermine his superior, claiming he had saved the originals when his superior tried to destroy them. A note in the corner of the top dwarven document will read in orcish: for immediate delivery to High Command, critical intelligence.
 
+## Quest Rewards
+
+#### Party reward
+
+Gerad Heartbren will pay the party 1000 gp for defeating the orc raiders, plus an additional 200 gp for each additional raiding camp they destroy and 500 gp for the intelligence they recovered from the orc base. They will also get to keep the Dragon's horde (if found), and any equipment they looted from enemy corpses. The Silver Dragon Knights will strong-arm the dragon corpse if the players retreived it, offering a 1000 gp bounty for bringing it in, or if they refuse to take that deal enforcing it be turned over under contract terms.
+
+#### Eobard
+
+Farnor will offer to have the Green Dragon's hide turned into Splint Mail for Eobard (it is not enough scales for Plate if she asks for that instead). It will be available the next day.
+
+#### Eadric
+
+**HANDLE SECRETLY** Eadric will be given the option to kick any party members off the squad that he thinks will betray the party at some later date.  Any player who's character gets kicked out will need to roll a new character.
+
+#### Flykr
+
+Flykr will be presented with a shop, and 3 people who have applied for the job to run it for her. She gets to choose which one to hire. They are as follows:
+
+* Jacklyn, A young woman, a dancer herself, who is eager to learn a profitable trade, but has no head for numbers or figures. She is charismatic and engaging.
+* Eduard, An older, gruff gnome who is skilled at books and numbers. He used to run a bookstore in Westport. Knows Fallon (cooperated with authorities looking for her in the initial investigation, she worked in his shop once upon a time), though will not recognize her in disguise.
+* Ogrun Firebreath, secretly leader of the Masters of the Deep Song in town, publicly an out-of-work refugee with a drinking problem. He is charismatic and skilled at numbers, but may skim some money off the top to buy booze.
+
+#### Tilda/Fallon
+
+If all 6 kegs are returned to Kyman he will pay her 300 GP for her work.
+
+#### Silas
+
+The shepherds will give Silas a scroll of gentle repose for returning the bodies. The Lords of the Rising Dawn will give him 20 gp for every orc ear turned in. (probably somewhere between 1000 - 1500 gp)
+
+#### Barbarious
+
+Ogrun Firebreath will give Barbarious a Cloak of Billowing for his efforts.
+
 ## Random Encounters
 
 The following random encounters can occur at any of the 'random encounter points' either randomly or as desired by the DM.

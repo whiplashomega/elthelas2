@@ -1009,7 +1009,7 @@
  },
  {
    "Item": "Greater Wand of Pure Magic",
-   "Type": "Wondrous Item",
+   "Type": "Wand",
    "Cost (gp)": "20000",
    "Rarity": "Very Rare",
    "Attunement": "Yes",
@@ -2217,7 +2217,7 @@
  },
  {
    "Item": "Wand of Pure Magic",
-   "Type": "Wondrous Item",
+   "Type": "Wand",
    "Cost (gp)": "10000",
    "Rarity": "Rare",
    "Attunement": "Yes",

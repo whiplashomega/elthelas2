@@ -10,7 +10,7 @@
     
     $scope.username;
     $scope.password;
-    $scope.rememberMe;
+    $scope.rememberMe = true;
     $scope.login = login;
     
     
@@ -23,6 +23,8 @@
             AuthenticationProvider.SetCredentials($scope.username, $scope.password, response.data.token, $scope.rememberMe);
             $uibModalInstance.close('login success');
           }
+        } else if(response.status === 401) {
+          alert("Incorrect username or password.");
         } else {
           vm.dataLoading = false;
         }      

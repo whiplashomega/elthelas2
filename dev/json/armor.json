@@ -97,13 +97,13 @@
  },
  {
    "Armor": "Chain Shirt",
-   "Type": "Light",
+   "Type": "Medium",
    "Material": "Mithril",
    "AC": 13,
    "Strength": "-",
    "Stealth": "-",
    "Weight": 10,
-   "Resistance": "none",
+   "Resistance": "+1 max dex bonus",
    "Price": 600,
    "Time to Craft": 30
  },
@@ -115,7 +115,7 @@
    "Strength": "-",
    "Stealth": "-",
    "Weight": 20,
-   "Resistance": "non-magical slashing, piercing",
+   "Resistance": "non-magical slashing, immune to crits",
    "Price": 2000,
    "Time to Craft": 30
  },
@@ -129,6 +129,18 @@
    "Weight": 20,
    "Resistance": "non-magical piercing",
    "Price": 680,
+   "Time to Craft": 20
+ },
+ {
+   "Armor": "Chain Shirt",
+   "Type": "Medium",
+   "Material": "Orichalcum",
+   "AC": 13,
+   "Strength": "-",
+   "Stealth": "-",
+   "Weight": 22,
+   "Resistance": "non-magical bludgeoning",
+   "Price": 750,
    "Time to Craft": 20
  },
  {
@@ -151,7 +163,7 @@
    "Strength": "-",
    "Stealth": "-",
    "Weight": 27.5,
-   "Resistance": "none",
+   "Resistance": "+1 max dex bonus",
    "Price": 1400,
    "Time to Craft": 45
  },
@@ -163,7 +175,7 @@
    "Strength": "-",
    "Stealth": "disadvantage",
    "Weight": 45,
-   "Resistance": "non-magical slashing, piercing",
+   "Resistance": "non-magical slashing, immune to crits",
    "Price": 4400,
    "Time to Craft": 45
  },
@@ -177,6 +189,18 @@
    "Weight": 45,
    "Resistance": "non-magical piercing",
    "Price": 1600,
+   "Time to Craft": 30
+ },
+ {
+   "Armor": "Scale Mail",
+   "Type": "Medium",
+   "Material": "Orichalcum",
+   "AC": 14,
+   "Strength": "-",
+   "Stealth": "disadvantage",
+   "Weight": 51,
+   "Resistance": "non-magical bludgeoning",
+   "Price": 1750,
    "Time to Craft": 30
  },
  {
@@ -205,13 +229,13 @@
  },
  {
    "Armor": "Breastplate",
-   "Type": "Light",
+   "Type": "Medium",
    "Material": "Mithril",
    "AC": 14,
    "Strength": "-",
    "Stealth": "-",
    "Weight": 15,
-   "Resistance": "none",
+   "Resistance": "+1 max dex bonus",
    "Price": 900,
    "Time to Craft": 60
  },
@@ -223,7 +247,7 @@
    "Strength": "-",
    "Stealth": "-",
    "Weight": 20,
-   "Resistance": "non-magical slashing, piercing",
+   "Resistance": "non-magical slashing, immune to crits",
    "Price": 2500,
    "Time to Craft": 60
  },
@@ -237,6 +261,18 @@
    "Weight": 20,
    "Resistance": "non-magical piercing",
    "Price": 900,
+   "Time to Craft": 40
+ },
+ {
+   "Armor": "Breastplate",
+   "Type": "Medium",
+   "Material": "Orichalcum",
+   "AC": 14,
+   "Strength": "-",
+   "Stealth": "-",
+   "Weight": 22,
+   "Resistance": "non-magical bludgeoning",
+   "Price": 1000,
    "Time to Craft": 40
  },
  {
@@ -271,7 +307,7 @@
    "Strength": "-",
    "Stealth": "-",
    "Weight": 25,
-   "Resistance": "none",
+   "Resistance": "+1 max dex bonus",
    "Price": 2000,
    "Time to Craft": 180
  },
@@ -283,7 +319,7 @@
    "Strength": "-",
    "Stealth": "disadvantage",
    "Weight": 40,
-   "Resistance": "non-magical slashing, piercing",
+   "Resistance": "non-magical slashing, immune to crits",
    "Price": 6100,
    "Time to Craft": 180
  },
@@ -297,6 +333,18 @@
    "Weight": 40,
    "Resistance": "non-magical piercing",
    "Price": 2300,
+   "Time to Craft": 120
+ },
+ {
+   "Armor": "Half Plate",
+   "Type": "Medium",
+   "Material": "Orichalcum",
+   "AC": 15,
+   "Strength": "-",
+   "Stealth": "disadvantage",
+   "Weight": 44,
+   "Resistance": "non-magical bludgeoning",
+   "Price": 2500,
    "Time to Craft": 120
  },
  {
@@ -325,25 +373,13 @@
  },
  {
    "Armor": "Ring Mail",
-   "Type": "Medium",
-   "Material": "Mithril",
-   "AC": 14,
-   "Strength": "-",
-   "Stealth": "-",
-   "Weight": 25,
-   "Resistance": "none",
-   "Price": 1200,
-   "Time to Craft": 30
- },
- {
-   "Armor": "Ring Mail",
    "Type": "Heavy",
    "Material": "Adamantine",
    "AC": 14,
    "Strength": "-",
    "Stealth": "disadvantage",
    "Weight": 40,
-   "Resistance": "non-magical slashing, piercing",
+   "Resistance": "non-magical slashing, immune to crits",
    "Price": 3800,
    "Time to Craft": 30
  },
@@ -360,6 +396,18 @@
    "Time to Craft": 20
  },
  {
+   "Armor": "Ring Mail",
+   "Type": "Heavy",
+   "Material": "Orichalcum",
+   "AC": 14,
+   "Strength": "-",
+   "Stealth": "disadvantage",
+   "Weight": 44,
+   "Resistance": "non-magical bludgeoning",
+   "Price": 1500,
+   "Time to Craft": 20
+ },
+ {
    "Armor": "Chain Mail",
    "Type": "Heavy",
    "Material": "Steel",
@@ -373,25 +421,13 @@
  },
  {
    "Armor": "Chain Mail",
-   "Type": "Medium",
-   "Material": "Mithril",
-   "AC": 16,
-   "Strength": "11",
-   "Stealth": "-",
-   "Weight": 31.5,
-   "Resistance": "none",
-   "Price": 1900,
-   "Time to Craft": 75
- },
- {
-   "Armor": "Chain Mail",
    "Type": "Heavy",
    "Material": "Adamantine",
    "AC": 16,
    "Strength": "13",
    "Stealth": "disadvantage",
    "Weight": 55,
-   "Resistance": "non-magical slashing, piercing",
+   "Resistance": "non-magical slashing, immune to crits",
    "Price": 6400,
    "Time to Craft": 75
  },
@@ -408,6 +444,18 @@
    "Time to Craft": 50
  },
  {
+   "Armor": "Chain Mail",
+   "Type": "Heavy",
+   "Material": "Orichalcum",
+   "AC": 16,
+   "Strength": "13",
+   "Stealth": "disadvantage",
+   "Weight": 61,
+   "Resistance": "non-magical bludgeoning",
+   "Price": 2500,
+   "Time to Craft": 50
+ },
+ {
    "Armor": "Splint Armor",
    "Type": "Heavy",
    "Material": "Steel",
@@ -421,25 +469,13 @@
  },
  {
    "Armor": "Splint Armor",
-   "Type": "Medium",
-   "Material": "Mithril",
-   "AC": 17,
-   "Strength": "13",
-   "Stealth": "-",
-   "Weight": 35,
-   "Resistance": "none",
-   "Price": 2200,
-   "Time to Craft": 75
- },
- {
-   "Armor": "Splint Armor",
    "Type": "Heavy",
    "Material": "Adamantine",
    "AC": 17,
    "Strength": "15",
    "Stealth": "disadvantage",
    "Weight": 60,
-   "Resistance": "non-magical slashing, piercing",
+   "Resistance": "non-magical slashing, immune to crits",
    "Price": 7300,
    "Time to Craft": 75
  },
@@ -456,6 +492,30 @@
    "Time to Craft": 50
  },
  {
+   "Armor": "Splint Armor",
+   "Type": "Heavy",
+   "Material": "Orichalcum",
+   "AC": 17,
+   "Strength": "15",
+   "Stealth": "disadvantage",
+   "Weight": 66,
+   "Resistance": "non-magical bludgeoning",
+   "Price": 3000,
+   "Time to Craft": 50
+ },
+ {
+   "Armor": "Splint Armor",
+   "Type": "Heavy",
+   "Material": "Dragon Scale",
+   "AC": 17,
+   "Strength": "15",
+   "Stealth": "disadvantage",
+   "Weight": 60,
+   "Resistance": "element of dragon's breath weapon",
+   "Price": 15000,
+   "Time to Craft": 50
+ },
+ {
    "Armor": "Plate",
    "Type": "Heavy",
    "Material": "Steel",
@@ -469,25 +529,13 @@
  },
  {
    "Armor": "Plate",
-   "Type": "Medium",
-   "Material": "Mithril",
-   "AC": 18,
-   "Strength": "13",
-   "Stealth": "-",
-   "Weight": 37.5,
-   "Resistance": "none",
-   "Price": 3700,
-   "Time to Craft": 300
- },
- {
-   "Armor": "Plate",
    "Type": "Heavy",
    "Material": "Adamantine",
    "AC": 18,
    "Strength": "15",
    "Stealth": "disadvantage",
    "Weight": 65,
-   "Resistance": "non-magical slashing, piercing",
+   "Resistance": "non-magical slashing, immune to crits",
    "Price": 11900,
    "Time to Craft": 300
  },
@@ -501,6 +549,18 @@
    "Weight": 65,
    "Resistance": "non-magical piercing",
    "Price": 4500,
+   "Time to Craft": 200
+ },
+ {
+   "Armor": "Plate Armor",
+   "Type": "Heavy",
+   "Material": "Orichalcum",
+   "AC": 18,
+   "Strength": "15",
+   "Stealth": "disadvantage",
+   "Weight": 72,
+   "Resistance": "non-magical bludgeoning",
+   "Price": 5000,
    "Time to Craft": 200
  },
  {
@@ -523,6 +583,18 @@
    "Strength": "-",
    "Stealth": "-",
    "Weight": 6,
+   "Resistance": "none",
+   "Price": 10,
+   "Time to Craft": 1
+ },
+ {
+   "Armor": "Shield",
+   "Type": "-",
+   "Material": "Wood",
+   "AC": 2,
+   "Strength": "-",
+   "Stealth": "-",
+   "Weight": 3,
    "Resistance": "none",
    "Price": 10,
    "Time to Craft": 1

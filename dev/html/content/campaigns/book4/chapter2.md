@@ -24,7 +24,7 @@ A high ranking member of Amathera's Shield has been living in Northport and may 
 
 #### Black Sun Orders
 
-I have a spy who I need inserted into the Orc army, but he tends to cause, distrust, among humans. Get him to Northport and make sure he is safe until the city is empty, then he'll do his part when the Orc army gets there. -Kyman Hexhammer
+I have a spy who I need inserted into the Orc army, but he tends to cause, distrust, among humans. He is a goblin named is Harwik Greenskin. Get him to Northport and make sure he is safe until the city is empty, then he'll do his part when the Orc army gets there. -Kyman Hexhammer
 
 #### Illustrious Guild of Merchants and Fine Artisans Orders
 
@@ -32,78 +32,64 @@ Northport is a major center of trade and has vast storehouses full of all kinds 
 
 #### Lords of the Rising Dawn Orders
 
-Tacticly, I think it would be smarter to focus on delaying the orcs rather than on hurrying the evacuation. Destroying bridges, illusory foes, and so on should slow the orcs down enough that the bulk of the people in Northport could escape, and kill a few orcs at the same time. -Duke James Lightbringer
+Tacticly, I think it would be smarter to focus on delaying the orcs rather than on hurrying the evacuation. Destroying bridges, illusory foes, and so on should slow the orcs down enough that the bulk of the people in Northport could escape, and kill a few orcs at the same time. Make sure you delay them by at least a week. -Duke James Lightbringer
 
 #### Masters of the Deep Song Orders
 
-The dwarven emissary to Gerasalim had fled to Northport shortly before Strovenguard fell, expecting the queen to flee there as well. Instead she took control of the armies in the east and left the emissary in the lurch. Get him this stone, it's a one use teleport that he can use to escape back to Curinor. -Ogrun Firebreath
+The dwarven emissary to Gerasalim had fled to Northport shortly before Strovenguard fell, expecting the queen to flee there as well. Instead she took control of the armies in the east and left the emissary in the lurch. Convince him to use this stone, it's a one use teleport that he can use to escape back to Curinor. -Ogrun Firebreath
 
 #### Shepherds of the All-Mother Orders
 
-The Orcs have employed necromancers to scare the people into staying in Northport. How dare they give necromancy a bad name by using the undead for simple scare tactics. Kill these necromancers, then prove to the people of Northport that they have nothing to fear from the dead. -Gimble Beren
+The Orcs have employed necromancers to scare the people into staying in Northport. These necromancers have clearly lost their way. Convince them that they are misusing the power of Nera. -Gimble Beren
 
 #### Silver Dragon Knights Orders
 
-There is an old copper dragon named Sulac who lives in a cave near Northport. While I doubt he would help you directly, he is an old friend of the Emperor, and we would hate to see him threatened by these orcish invaders. -Farnor Spiketooth
+There is a reclusive old copper dragon named Sulac who lives in a cave near Northport. While I doubt he would help you directly, he is an old friend of the Emperor, and we would hate to see him threatened by these orcish invaders. Find him and warn him of the impending attack. -Farnor Spiketooth
 
 ### Travelling to Northport
 
-Northport is 660 miles south of Cur'Estan. Players should be made aware that a normal fast pace may leave them little time to organize things in Northport before the Orcs arrive on the 14th of Sylvanus. If one of the players is an Artificer of Mechanus, Margo will be willing to teleport the party to Northport if they have not angered her. Alternatively, the party can attempt to take a riverboat to Northport, in which case they must travel 310 miles to the Kandor River, and then 530 miles by boat.
+Northport is 660 miles south of Cur'Estan. They will receive their orders on the 18th of Trimalan, so players should be made aware that a normal fast pace may leave them little time to organize things in Northport before the Orcs arrive on the 14th of Sylvanus. If one of the players is an Artificer of Mechanus, Margo will be willing to teleport the party to Northport if they have not angered her. Alternatively, the party can attempt to take a riverboat to Northport, in which case they must travel 310 miles to the Kandor River, and then 530 miles by boat.
 
 If the party travels over land. Use the travel pace rules from the Player's Handbook for normal terrain.
 
-If the party attempts to take the river, use the travel pace rules from the Player's Handbook for the first 310 miles, then have them roll a chance die every day to see what kind of boats they see and consult the table below.
+#### Arrival dates based on standard paces
 
 <table class="table">
+  <thead><tr><th>Pace</th><th>Route</th><th>Arrival Date</th><th>Days to Orc Arrival</th></tr></thead>
+  <tbody>
+    <tr><td>Slow</td><td>Direct</td><td>Sylvanus 25</td><td>-11</td></tr>
+    <tr><td>Normal</td><td>Direct</td>Sylvanus 16</td><td>-2</td></tr>
+    <tr><td>Fast</td><td>Direct</td><td>Sylvanus 10</td><td>4</td></tr>
+    <tr><td>Fast + 1</td><td>Direct</td><td>Sylvanus 7</td><td>7</td></tr>
+    <tr><td>Fast + 2</td><td>Direct</td><td>Sylvanus 5</td><td>9</td></tr>
+    <tr><td>Fast + 3</td><td>Direct</td><td>Sylvanus 4</td><td>10</td></tr>
+    <tr><td>Slow + half-galley</td><td>River</td><td>Sylvanus 12</td><td>3</td></tr>
+    <tr><td>Normal + half-galley</td><td>River</td><td>Sylvanus 7</td><td>8</td></tr>
+    <tr><td>Fast + half-galley</td><td>River</td><td>Sylvanus 4</td><td>10</td></tr>
+    <tr><td>Fast + 1 + half-galley</td><td>River</td><td>Sylvanus 3</td><td>12</td></tr>
+    <tr><td>Fast + 2 + half-galley</td><td>River</td><td>Sylvanus 2</td><td>13</td></tr>
+    <tr><td>Fast + 3 + half-galley</td><td>River</td><td>Sylvanus 1</td><td>13</td></tr>
+    <tr><td>Slow + galley</td><td>River</td><td>Sylvanus 9</td><td>6</td></tr>
+    <tr><td>Normal + galley</td><td>River</td><td>Sylvanus 4</td><td>10</td></tr>
+    <tr><td>Fast + galley</td><td>River</td><td>Sylvanus 2</td><td>13</td></tr>
+    <tr><td>Fast + 1 + galley</td><td>River</td><td>Trimalan 30</td><td>14</td></tr>
+    <tr><td>Fast + 2 + galley</td><td>River</td><td>Trimalan 29</td><td>15</td></tr>
+    <tr><td>Fast + 3 + galley</td><td>River</td><td>Trimalan 28</td><td>16</td></tr>
+  </tbody>
+</table>
 
-<thead>
+If the party attempts to take the river, use the travel pace rules from the Player's Handbook for the first 310 miles, then have them roll a chance die every day to see what kind of boats they see and consult the table below.
 
-<tr>
+#### Boat table
 
-<th>Result</th>
-
-<th>Boat</th>
-
-</tr>
-
-</thead>
-
+<table class="table">
+<thead><tr><th>Result</th><th>Boat</th></tr></thead>
 <tbody>
-
-<tr>
-
-<td>1-20</td>
-
-<td>They see only a single keelboat, slowly ambling up the river (16 miles a day), and unwilling to take on passengers.</td>
-
-</tr>
-
-<tr>
-
-<td>21-40</td>
-
-<td>They see only a single keelboat, slowly ambling up the river (16 miles a day), willing to take on passengers.</td>
-
-</tr>
-
-<tr>
-
-<td>41-60</td>
-
-<td>In addition to a keelboat, they see a river galley travelling at half pace up river (100 miles a day) and willing to take on passengers.</td>
-
-</tr>
-
-<tr>
-
-<td>61-100</td>
-
-<td>They encounter a river galley travelling at full speed up river (200 miles a day) and willing to take on passengers.</td>
-
-</tr>
-
+<tr><td>1-20</td><td>They see only a single keelboat, slowly ambling up the river (16 miles a day), and unwilling to take on passengers.</td></tr>
+<tr><td>21-40</td><td>They see only a single keelboat, slowly ambling up the river (16 miles a day), willing to take on passengers.</td></tr>
+<tr><td>41-60</td><td>In addition to a keelboat, they see a river galley travelling at half pace up river (100 miles a day) and willing to take on passengers.</td></tr>
+<tr><td>61-100</td><td>They encounter a river galley travelling at full speed up river (200 miles a day) and willing to take on passengers.</td></tr>
 </tbody>
-
 </table>
 
 During travel, when the party gets close to Northport, do one of the following random encounters from the random encounters section in this chapter:
@@ -552,85 +538,15 @@ The trollkin refuse to help the party under any circumstances (outside of abando
 Malia Demonslayer has a number of things she needs to evacuate the refugees. While some refugees would be able to leave as soon as the necromancers are dealt with, for most to survive to Cur'Estan additional supplies are needed.
 
 <table class="table table-striped">
-
-<thead>
-
-<tr>
-
-<th>Group</th>
-
-<th>Needs</th>
-
-<th>Food Req.</th>
-
-</tr>
-
-</thead>
-
+<thead><tr><th>Group</th><th>Needs</th><th>Food Req.</th></tr></thead>
 <tbody>
-
-<tr>
-
-<td>Wealthy and Able</td>
-
-<td>Necromancer threat dealt with</td>
-
-<td>0 person days (self feed)</td>
-
-</tr>
-
-<tr>
-
-<td>City Guard</td>
-
-<td>Convince Vanriel to abandon the city, poor evacuation conditions met</td>
-
-<td>20,000 person days (or 10,000 person days if they take heavy casualties)</td>
-
-</tr>
-
-<tr>
-
-<td>Ralf and Erestor</td>
-
-<td>Large wagon to carry brewing equipment</td>
-
-<td>0 person days (self feed)</td>
-
-</tr>
-
-<tr>
-
-<td>Biggles Wump (and family)</td>
-
-<td>Have daughter convince him to leave, sick and elderly evacuation conditions met</td>
-
-<td>120 person days</td>
-
-</tr>
-
-<tr>
-
-<td>Poor</td>
-
-<td>Necromancer threat dealt with, hand carts, extra food</td>
-
-<td>400,000 person days</td>
-
-</tr>
-
-<tr>
-
-<td>Sick and Elderly</td>
-
-<td>Necromancer threat dealt with, wagons, extra food, medicine</td>
-
-<td>160,000 person days</td>
-
-</tr>
-
+<tr><td>Wealthy and Able</td><td>Necromancer threat dealt with</td><td>0 person days (self feed)</td></tr>
+<tr><td>City Guard</td><td>Convince Vanriel to abandon the city, poor evacuation conditions met</td><td>20,000 person days (or 10,000 person days if they take heavy casualties)</td></tr>
+<tr><td>Ralf and Erestor</td><td>Large wagon to carry brewing equipment</td><td>0 person days (self feed)</td></tr>
+<tr><td>Biggles Wump (and family)</td><td>Have daughter convince him to leave, sick and elderly evacuation conditions met</td><td>120 person days</td></tr>
+<tr><td>Poor</td><td>Necromancer threat dealt with, hand carts, extra food</td><td>400,000 person days</td></tr>
+<tr><td>Sick and Elderly</td><td>Necromancer threat dealt with, wagons, extra food, medicine</td><td>160,000 person days</td></tr>
 </tbody>
-
 </table>
 
 #### Hand Carts
@@ -707,79 +623,16 @@ The party will be confronted with a contingent of orcs.
 The party is attacked by undead raiders. Roll on the table below to determine what attacks them:
 
 <table class="table table-striped">
-
-<thead>
-
-<tr>
-
-<th>Roll (d20)</th>
-
-<th>Encounter</th>
-
-</tr>
-
-</thead>
-
+<thead><tr><th>Roll (d20)</th><th>Encounter</th></tr></thead>
 <tbody>
-
-<tr>
-
-<td>1-3</td>
-
-<td>[The Horde (10 skeletons and 10 zombies)](/runner/skeleton&skeleton&skeleton&skeleton&skeleton&skeleton&skeleton&skeleton&skeleton&skeleton&zombie&zombie&zombie&zombie&zombie&zombie&zombie&zombie&zombie&zombie)</td>
-
-</tr>
-
-<tr>
-
-<td>4-6</td>
-
-<td>[4-6 Ogre Zombies](/runner/ogrezombie&ogrezombie&ogrezombie&ogrezombie&ogrezombie&ogrezombie)</td>
-
-</tr>
-
-<tr>
-
-<td>7-9</td>
-
-<td>[1 Flameskull and 2 Wights](/runner/flameskull&wight&wight)</td>
-
-</tr>
-
-<tr>
-
-<td>10-12</td>
-
-<td>[2 Flameskills and an Ogre Zombie](/runner/flameskull&flameskull&ogrezombie)</td>
-
-</tr>
-
-<tr>
-
-<td>13-15</td>
-
-<td>[3 Wights](/runner/wight&wight&wight)</td>
-
-</tr>
-
-<tr>
-
-<td>16-18</td>
-
-<td>[2 Spawn of Kyuss](/runner/spawnofkyuss&spawnofkyuss)</td>
-
-</tr>
-
-<tr>
-
-<td>19-20</td>
-
-<td>[Vampire Spawn, 2 Ogre Zombies, and 5 Skeletons](/runner/vampirespawn&ogrezombie&ogrezombie&skeleton&skeleton&skeleton&skeleton&skeleton)</td>
-
-</tr>
-
+<tr><td>1-3</td><td>[The Horde (10 skeletons and 10 zombies)](/runner/skeleton&skeleton&skeleton&skeleton&skeleton&skeleton&skeleton&skeleton&skeleton&skeleton&zombie&zombie&zombie&zombie&zombie&zombie&zombie&zombie&zombie&zombie)</td></tr>
+<tr><td>4-6</td><td>[4-6 Ogre Zombies](/runner/ogrezombie&ogrezombie&ogrezombie&ogrezombie&ogrezombie&ogrezombie)</td></tr>
+<tr><td>7-9</td><td>[1 Flameskull and 2 Wights](/runner/flameskull&wight&wight)</td></tr>
+<tr><td>10-12</td><td>[2 Flameskills and an Ogre Zombie](/runner/flameskull&flameskull&ogrezombie)</td></tr>
+<tr><td>13-15</td><td>[3 Wights](/runner/wight&wight&wight)</td></tr>
+<tr><td>16-18</td><td>[2 Spawn of Kyuss](/runner/spawnofkyuss&spawnofkyuss)</td></tr>
+<tr><td>19-20</td><td>[Vampire Spawn, 2 Ogre Zombies, and 5 Skeletons](/runner/vampirespawn&ogrezombie&ogrezombie&skeleton&skeleton&skeleton&skeleton&skeleton)</td></tr>
 </tbody>
-
 </table>
 
 #### Bandits
@@ -793,3 +646,49 @@ The party is attacked by undead raiders. Roll on the table below to determine wh
 The party encounters a werebear eating a corpse mutilated beyond recognition. It is clearly feral and starving, and tries to scare the party away but does not attack unless the party attacks first.
 
 ##### [Run This Encounter](/runner/werebear)
+
+## Quest Rewards
+
+#### Party Rewards
+
+Rewards for the entire party will be based on how successful they were and how many people they saved. The below rewards are cumulative according to whomever they succeeded in rescuing.
+
+* 2000 gp for rescuing the city guard
+* 4000 gp for rescuing the wealthy and able
+* 4000 gp for rescuing the poor
+* 2000 gp for rescuing the sick and elderly
+* 500 gp for rescuing Ralf and Erestor
+* 500 gp for rescuing Vanriel
+* 500 gp for rescuing Malia Demonslayer
+
+#### Black Wolf Irregulars
+
+**Ring of the War Leader** Grants Inspiring Leader feat
+
+#### Black Sun
+
+**Wand of Pure Magic** - 1 extra spell slot of levels 1 - 3
+
+#### Illustrious Guild of Merchants
+
+2000 gp
+
+#### Shepherds of the All-Mother
+
+**Wand of the Immortal Knight** 1/day summon a skeletal warhorse for 8 hours, obeys your verbal commands to the best of its ability.
+
+#### Lords of the Rising Dawn
+
+**Sunlance** +1 weapon, shines bright light to 20 ft, dim light for another 20 ft activate or deactivate as bonus action
+
+#### Masters of the Deep Song
+
+One of the options below:
+
+**Half-Plate of the Battle Rager** +1 Half-Plate, grants 1d4 bonus damage on weapon attacks while raging.
+
+**Hammer of the Battlesong** +1 Maul, grants immunity to fear while the wielder is singing, does thunder damage.
+
+#### Silver Dragon Knights
+
+**Dragon's Breath Amulet** This amulet increases the damage from a Dragon or Dragonborn's breath weapon by 2d6 and increases its range by 5 ft (so a 15 ft cone becomes a 20 ft cone).

@@ -31,10 +31,10 @@
 		<tr><td>International Grangemaster's Alliance</td><td>0</td></tr>
 		<tr><td>Illustrious Guild of Merchants and Fine Artisans</td><td>0</td></tr>
 		<tr><td>Keepers of the Grove</td><td>0</td></tr>
-		<tr><td>Lords of the Rising Dawn</td><td>1</td></tr>
+		<tr><td>Lords of the Rising Dawn</td><td>0</td></tr>
 		<tr><td>Maker's of Legend</td><td>0</td></tr>
 		<tr><td>Masters of the Deep Song</td><td>0</td></tr>
-		<tr><td>Shepherd's of the All-Mother</td><td>2</td></tr>
+		<tr><td>Shepherd's of the All-Mother</td><td>3</td></tr>
 		<tr><td>Silver Dragon Knights</td><td>0</td></tr>
 		<tr><td>Sylvan's Rangers</td><td>0</td></tr>
 		<tr><td>Tock's Inevitables</td><td>0</td></tr>
@@ -81,7 +81,7 @@ Sir Dawnblade was most recently stationed at the Fortress of Light, leading the 
 		<tr><td>Dormanian Imperial Guard</td><td>0</td></tr>
 		<tr><td>Guild of Heroes</td><td>0</td></tr>
 		<tr><td>International Grangemaster's Alliance</td><td>0</td></tr>
-		<tr><td>Illustrious Guild of Merchants and Fine Artisans</td><td>3</td></tr>
+		<tr><td>Illustrious Guild of Merchants and Fine Artisans</td><td>4</td></tr>
 		<tr><td>Keepers of the Grove</td><td>0</td></tr>
 		<tr><td>Lords of the Rising Dawn</td><td>0</td></tr>
 		<tr><td>Maker's of Legend</td><td>0</td></tr>
@@ -144,7 +144,7 @@ Throughout her travels, Flykr has met many beings. Which has been both a blessin
 		<tr><td>Black Wolf Irregulars</td><td>1</td></tr>
 		<tr><td>Amathera's Shield</td><td>0</td></tr>
 		<tr><td>Artificer's of Mechanus</td><td>0</td></tr>
-		<tr><td>Black Sun</td><td>2</td></tr>
+		<tr><td>Black Sun</td><td>3</td></tr>
 		<tr><td>Champions of Cora</td><td>0</td></tr>
 		<tr><td>Dormanian Imperial Guard</td><td>0</td></tr>
 		<tr><td>Guild of Heroes</td><td>0</td></tr>
@@ -189,7 +189,7 @@ Her mentor, Sarkis, as someone who doesn't share your wizardly skills, felt she 
 		</tr>
 	</thead>
 	<tbody>
-		<tr><td>Black Wolf Irregulars</td><td>1</td></tr>
+		<tr><td>Black Wolf Irregulars</td><td>0</td></tr>
 		<tr><td>Amathera's Shield</td><td>0</td></tr>
 		<tr><td>Artificer's of Mechanus</td><td>0</td></tr>
 		<tr><td>Black Sun</td><td>0</td></tr>
@@ -201,7 +201,7 @@ Her mentor, Sarkis, as someone who doesn't share your wizardly skills, felt she 
 		<tr><td>Keepers of the Grove</td><td>0</td></tr>
 		<tr><td>Lords of the Rising Dawn</td><td>0</td></tr>
 		<tr><td>Maker's of Legend</td><td>0</td></tr>
-		<tr><td>Masters of the Deep Song</td><td>1</td></tr>
+		<tr><td>Masters of the Deep Song</td><td>0</td></tr>
 		<tr><td>Shepherd's of the All-Mother</td><td>0</td></tr>
 		<tr><td>Silver Dragon Knights</td><td>0</td></tr>
 		<tr><td>Sylvan's Rangers</td><td>0</td></tr>
@@ -249,7 +249,7 @@ His parents would travel the land performing music, so he never really had a lan
 		<tr><td>Maker's of Legend</td><td>0</td></tr>
 		<tr><td>Masters of the Deep Song</td><td>0</td></tr>
 		<tr><td>Shepherd's of the All-Mother</td><td>0</td></tr>
-		<tr><td>Silver Dragon Knights</td><td>2</td></tr>
+		<tr><td>Silver Dragon Knights</td><td>1</td></tr>
 		<tr><td>Sylvan's Rangers</td><td>0</td></tr>
 		<tr><td>Tock's Inevitables</td><td>0</td></tr>
 		<tr><td>Trollkin Mercenary Corps</td><td>0</td></tr>
@@ -281,7 +281,7 @@ Eobard Thawne was a member of the ambassador's guard. Involved in a battle in wh
 		</tr>
 	</thead>
 	<tbody>
-		<tr><td>Black Wolf Irregulars</td><td>3</td></tr>
+		<tr><td>Black Wolf Irregulars</td><td>4</td></tr>
 		<tr><td>Amathera's Shield</td><td>0</td></tr>
 		<tr><td>Artificer's of Mechanus</td><td>0</td></tr>
 		<tr><td>Black Sun</td><td>0</td></tr>
