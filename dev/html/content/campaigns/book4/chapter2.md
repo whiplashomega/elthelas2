@@ -28,11 +28,11 @@ I have a spy who I need inserted into the Orc army, but he tends to cause, distr
 
 #### Illustrious Guild of Merchants and Fine Artisans Orders
 
-Northport is a major center of trade and has vast storehouses full of all kinds of goods and supplies owned by guild members. You need to find a way to get those goods transported north as well as the people. -Kendrick O'mally
+Northport is a major center of trade and has vast storehouses full of all kinds of goods and supplies owned by guild members. You need to find a way to get those goods transported north. -Kendrick O'mally
 
 #### Lords of the Rising Dawn Orders
 
-Tacticly, I think it would be smarter to focus on delaying the orcs rather than on hurrying the evacuation. Destroying bridges, illusory foes, and so on should slow the orcs down enough that the bulk of the people in Northport could escape, and kill a few orcs at the same time. Make sure you delay them by at least a week. -Duke James Lightbringer
+Tacticly, I think it would be smarter to focus on delaying the orcs rather than on hurrying the evacuation. Destroying bridges, illusory foes, and so on should slow the orcs down enough that the bulk of the people in Northport could escape, and give our other squads a chance to pull people out of the outlying towns. Make sure you delay them by at least a week to give us sufficient time. -Duke James Lightbringer
 
 #### Masters of the Deep Song Orders
 
@@ -238,7 +238,7 @@ Things begin going wrong for the players the minute they arrive in Northport. Wh
 
 After 10 rounds of combat, 10 members of the city guard will arrive from all sides led by Vanriel Glamfara. They are wielding clubs, and their threat of overwhelming force will put an end to the riot. If the party has already dealt with all rioters by that point without killing anyone, Vanriel will thank them and invite them back to her office. If the party used deadly force on the rioters, she will take them into custody for manslaughter. The kobolds and old man, if still alive, will also be taken into protective custody.
 
-#### Guard Captain Vanriel Glamfara
+### Guard Captain Vanriel Glamfara
 
 Vanriel is willing to answer the parties questions. If they are in custody, she will interrogate them each individually about their role in the riot, what happened, etc. She is relatively easy to convince that the party acted in self-defense. If they are not, then she will talk to them over dinner, a relatively meager affair of bread and cheese.
 
@@ -255,6 +255,14 @@ She asks the party to do the following things to enable the towns escape:
 *   Find out from Malia Demonslayer what is needed to evacuate the refugees (see Evacuation of Northport).
 
 She will pay their room and board at the Dragon's Brew while they are in town.
+
+#### The Rivals
+
+At this point, assuming the party hasn't killed Vanriel, the Rival Party of Jazelle, Alex Tudoria, Barry, Bartok Wailmane, and Maggie Pelagius will enter. They will demand that the party return to Cur'Estan, and say that their services are not needed. They will attempt to convince Vanriel that the best way to help the people escape is to gather up the city guard and do a suicide mission attacking the orc army.
+
+The party has advantage on any charisma check made to convince her otherwise, opposed by the rival party (check led by Jazelle).
+
+##### [Run this Encounter](/runner/jazelle&alextudoria&barry&bartokwailmane&maggiepelagius)
 
 ### The Dragon's Brew Inn
 
@@ -404,65 +412,13 @@ The next room is filled with hundreds of thousands of gold, gems, jewelry, amazi
 In this room a door gives each person a question that must be answered. The trick of it, that the guild leaders tell them, is that they must give the wrongest answer possible. When the right answer is given, a spout of fire shoots down from the ceiling. The person answering the riddle must make a DC 15 dexterity saving throw or take 6d6 fire damage, or half as much on a success. Some example riddles are in the table below:
 
 <table class="table table-striped">
-
-<thead>
-
-<tr>
-
-<th>Riddle</th>
-
-<th>Correct Answer</th>
-
-<th>Answer that Opens the Door</th>
-
-</tr>
-
-</thead>
-
+<thead><tr><th>Riddle</th><th>Correct Answer</th><th>Answer that Opens the Door</th></tr></thead>
 <tbody>
-
-<tr>
-
-<td>What falls down but never up?</td>
-
-<td>Rain</td>
-
-<td>Helium.</td>
-
-</tr>
-
-<tr>
-
-<td>What has a foot but no legs?</td>
-
-<td>Snail</td>
-
-<td>Millipede</td>
-
-</tr>
-
-<tr>
-
-<td>If I drink, I die. If i eat, I am fine. What am I?</td>
-
-<td>Fire</td>
-
-<td>The Ocean</td>
-
-</tr>
-
-<tr>
-
-<td>What starts with the letter “t”, is filled with “t” and ends in “t”?</td>
-
-<td>teapot</td>
-
-<td>Air</td>
-
-</tr>
-
+<tr><td>What falls down but never up?</td><td>Rain</td><td>Helium.</td></tr>
+<tr><td>What has a foot but no legs?</td><td>Snail</td><td>Millipede</td></tr>
+<tr><td>If I drink, I die. If i eat, I am fine. What am I?</td><td>Fire</td><td>The Ocean</td></tr>
+<tr><td>What starts with the letter “t”, is filled with “t” and ends in “t”?</td><td>teapot</td><td>Air</td></tr>
 </tbody>
-
 </table>
 
 #### Room 5: Overly Complex Puzzle Room
@@ -517,21 +473,50 @@ The Orc army is travelling 15 miles a day towards Northport from the south. Pote
 
 #### Recruit Sulac to attack the supply caravans
 
-Sulac can easily lay waste to the lightly defended orc supply chain. Recruiting him to do so will delay the orcs by 3 days as they are forced to spend time stripping the countryside for food.
+Sulac can easily lay waste to the lightly defended orc supply chain. Recruiting him to do so will delay the orcs by 3 days as they are forced to spend time stripping the countryside for food. **Delays by 3 days**
 
 #### Burn bridges
 
-There is one bridge the orcs need to cross for every 45 miles of travel they still need to reach Northport. For each bridge burned, the orcs are delayed by 1/2 a day.
+There is one bridge the orcs need to cross for every 45 miles of travel they still need to reach Northport. For each bridge burned, the orcs are delayed by 1/2 a day. **Delay 1 day for every 6 remaining**
 
 #### Recruit the guard to raid their supplies
 
-The city guard could attempt a raid on the orcs supplies, stealing wagons, food, and medicine. They would be likely to take heavy casualties, but a successful raid would delay the orcs by 3 days.
+The city guard could attempt a raid on the orcs supplies, stealing wagons, food, and medicine. They would be likely to take heavy casualties, but a successful raid would delay the orcs by 3 days. **Delay by 3 days, does not stack with Sulac**
 
-#### Deliver the Trollkin's Orders
+#### Create False Forces
 
-The trollkin contingent in the orc army has not been paid their due and has been denied communication with Trollkin High Command. Deliver the orders from high command to abandon the army (or otherwise convince them to leave) and it will cause chaos in the orc army, delaying them by a day.
+The orcs could be forced to slow down if they had to be more careful about potential attack. We could probably slow them down by about a 1/3 if we planted false fires or other appearances of opposing forces along their route. **Delay by 1 day per 3 remaining**
 
-The trollkin refuse to help the party under any circumstances (outside of abandoning the orc army), as it is against Trollkin policy to attack a previous employer, even for non-payment, for 1 month after termination of the contract.
+#### Infiltrate and Kill Leaders
+
+Orc armies typically require strongarm leaders to move efficiently. If you can get into the camp and kill the warlord in charge, you should delay them by at least a few days while they squabble over who is in charge. **Delays by 4 days**
+
+##### Notes on running the camp infiltration
+
+* Anyone who does not appear orcish/goblinoid that is seen is attacked by orcs & goblins, 4 additional ones per round until the encounter is resolved (either through death, capture, or escape). Roll D100 4 times and consult the table below to determine what attacks.
+* Stealth checks to avoid detection while moving through the camp have a DC of 18. The DC of deception checks to maintain a disguise when challenged is 16.
+* The Orc Warlord's tent is at the center of the camp. There are 5 warlords who nominally run the army, 4 brigadier generals and a high commander, Warlord Catrus. The party need only kill the high commander to cause chaos in the camp, the other three would then fight each other for control of the army. The commander has 2 Elite Guards who stay with him most of the time, and functionaries come in and out of his tent pretty regularly on various business. While he ocasionally leaves his tent, while in his tent is the only time you can catch him with just his guards. [Run This Encounter](/runner/orceliteguard&orceliteguard&warlordcratus)
+* Warlord Cratus will always detect any PCs that enter his tent via an Arcane Eye he has over the door.
+
+<table class="table">
+  <thead><tr><th>Roll</th><th>Unit</th></tr></thead>
+  <tbody>
+    <tr><td>1-2</td><td>Orc Blade of Ilneval</td></tr>
+    <tr><td>2-4</td><td>Hobgoblin Devastator</td></tr>
+    <tr><td>5-6</td><td>Orc Red Fang of Shargaas</td></tr>
+    <tr><td>7-8</td><td>Hobgoblin Iron Shadow</td></tr>
+    <tr><td>9-15</td><td>Orc Claw of Luthic</td></tr>
+    <tr><td>16-30</td><td>Orc Elite Guard</td></tr>
+    <tr><td>31-45</td><td>Hobgoblin</td></tr>
+    <tr><td>46-80</td><td>Orc</td></tr>
+    <tr><td>81-83</td><td>Orc Eye of Grumsh</td></tr>
+    <tr><td>84-85</td><td>Orc Warlord</td></tr>
+    <tr><td>86-90</td><td>Goblin</td></tr>
+    <tr><td>91</td><td>Goblin Boss</td></tr>
+    <tr><td>92-100</td><td>Nothing</td></tr>
+  </tbody>
+</table>
+
 
 ## Evacuation of Northport
 

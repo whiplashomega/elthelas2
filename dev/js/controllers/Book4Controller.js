@@ -135,6 +135,10 @@
             {
               text: "Random Encounters",
               url: "#random-encounters"
+            },
+            {
+              text: "Dragon Hunt",
+              url: "#dragon-hunt"
             }
           ]
         },
@@ -215,7 +219,7 @@
               url: "#breaking-the-blockade"
             },
             {
-              text: "chapter 3: Miscelaneous Sidequests",
+              text: "Chapter 3: Miscelaneous Sidequests",
               url: "#miscelaneous-sidequests"
             }
           ]
