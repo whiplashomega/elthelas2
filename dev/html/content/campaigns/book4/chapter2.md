@@ -20,7 +20,7 @@ That Orc army is moving on Northport far too quickly for us to intercept, and th
 
 #### Black Wolf Irregulars Orders
 
-A high ranking member of Amathera's Shield has been living in Northport and may be able to help you. Find Malia Demonslayer and make sure she makes it back to Cur'Estan. Her organizational abilities will be critical in managing the new influx of refugees. -Gerad Heartbren
+I am Barrachiel, Protector of the Down-trodden, Consort of The Mistress of Magic. You have done well, seeking out Amathera's artifact and retrieving it from the vile spawn of Tiamat. Know that you will receive no quarter from the local masters of the church. Their fear of Amathera's divine glory does them no credit, but fear not! There is one who can serve as your advocate in the Shepherd's flock. Join yourself with the wolves who call themselves Black, and seek out Malia Demonslayer in the city of Northport. See her to safety, and she will guide you in fulfilling Amathera's Will.
 
 #### Black Sun Orders
 
