@@ -50,47 +50,57 @@ There is a reclusive old copper dragon named Sulac who lives in a cave near Nort
 
 Northport is 660 miles south of Cur'Estan. They will receive their orders on the 18th of Trimalan, so players should be made aware that a normal fast pace may leave them little time to organize things in Northport before the Orcs arrive on the 14th of Sylvanus. If one of the players is an Artificer of Mechanus, Margo will be willing to teleport the party to Northport if they have not angered her. Alternatively, the party can attempt to take a riverboat to Northport, in which case they must travel 310 miles to the Kandor River, and then 530 miles by boat.
 
-If the party travels over land. Use the travel pace rules from the Player's Handbook for normal terrain.
+If the party travels over land. Use the travel pace rules from the Player's Handbook for normal terrain. They have a total of 26 days from receiving their orders until the orcs arrive. Forced march checks are made per hour of forced marching, the DC starts at 11 for the first additional hour of marching, and every character must make the check. Each additional hour adds 1 to the DC, and every failure results in a level of exhaustion. A character with 2 levels of exhaustion can only march at a slow pace, a character with 5 levels of exhaustion cannot march at all. Each long rest the characters recover 1 level of exhaustion.
 
 #### Arrival dates based on standard paces
 
 <table class="table">
-  <thead><tr><th>Pace</th><th>Route</th><th>Arrival Date</th><th>Days to Orc Arrival</th></tr></thead>
+  <thead><tr><th>Pace</th><th>Route</th><th>Arrival Date</th><th>Distance Per Day</th><th>Days to Orc Arrival</th></tr></thead>
   <tbody>
-    <tr><td>Slow</td><td>Direct</td><td>Sylvanus 25</td><td>-11</td></tr>
-    <tr><td>Normal</td><td>Direct</td>Sylvanus 16</td><td>-2</td></tr>
-    <tr><td>Fast</td><td>Direct</td><td>Sylvanus 10</td><td>4</td></tr>
-    <tr><td>Fast + 1</td><td>Direct</td><td>Sylvanus 7</td><td>7</td></tr>
-    <tr><td>Fast + 2</td><td>Direct</td><td>Sylvanus 5</td><td>9</td></tr>
-    <tr><td>Fast + 3</td><td>Direct</td><td>Sylvanus 4</td><td>10</td></tr>
-    <tr><td>Slow + half-galley</td><td>River</td><td>Sylvanus 12</td><td>3</td></tr>
-    <tr><td>Normal + half-galley</td><td>River</td><td>Sylvanus 7</td><td>8</td></tr>
-    <tr><td>Fast + half-galley</td><td>River</td><td>Sylvanus 4</td><td>10</td></tr>
-    <tr><td>Fast + 1 + half-galley</td><td>River</td><td>Sylvanus 3</td><td>12</td></tr>
-    <tr><td>Fast + 2 + half-galley</td><td>River</td><td>Sylvanus 2</td><td>13</td></tr>
-    <tr><td>Fast + 3 + half-galley</td><td>River</td><td>Sylvanus 1</td><td>13</td></tr>
-    <tr><td>Slow + galley</td><td>River</td><td>Sylvanus 9</td><td>6</td></tr>
-    <tr><td>Normal + galley</td><td>River</td><td>Sylvanus 4</td><td>10</td></tr>
-    <tr><td>Fast + galley</td><td>River</td><td>Sylvanus 2</td><td>13</td></tr>
-    <tr><td>Fast + 1 + galley</td><td>River</td><td>Trimalan 30</td><td>14</td></tr>
-    <tr><td>Fast + 2 + galley</td><td>River</td><td>Trimalan 29</td><td>15</td></tr>
-    <tr><td>Fast + 3 + galley</td><td>River</td><td>Trimalan 28</td><td>16</td></tr>
+    <tr><td>Slow</td><td>Direct</td><td>Sylvanus 25</td><td>18 miles</td><td>-11</td></tr>
+    <tr><td>Normal</td><td>Direct</td>Sylvanus 16</td><td>24 miles</td><td>-2</td></tr>
+    <tr><td>Fast</td><td>Direct</td><td>Sylvanus 10</td><td>30 miles</td><td>4</td></tr>
+    <tr><td>Fast + 1</td><td>Direct</td><td>Sylvanus 7</td><td>34 miles</td><td>7</td></tr>
+    <tr><td>Fast + 2</td><td>Direct</td><td>Sylvanus 5</td><td>38 miles</td><td>9</td></tr>
+    <tr><td>Fast + 3</td><td>Direct</td><td>Sylvanus 4</td><td>42 miles<td>10</td></tr>
+    <tr><td>Slow + half-galley</td><td>River</td><td>Sylvanus 12</td><td>18, then 50</td><td>3</td></tr>
+    <tr><td>Normal + half-galley</td><td>River</td><td>Sylvanus 7</td><td>24, then 50</td><td>8</td></tr>
+    <tr><td>Fast + half-galley</td><td>River</td><td>Sylvanus 4</td><td>30, then 50</td><td>10</td></tr>
+    <tr><td>Fast + 1 + half-galley</td><td>River</td><td>Sylvanus 3</td><td>34, then 50</td><td>12</td></tr>
+    <tr><td>Fast + 2 + half-galley</td><td>River</td><td>Sylvanus 2</td><td>38, then 50</td><td>13</td></tr>
+    <tr><td>Fast + 3 + half-galley</td><td>River</td><td>Sylvanus 1</td><td>42, then 50</td><td>13</td></tr>
+    <tr><td>Slow + galley</td><td>River</td><td>Sylvanus 9</td><td>18, then 100</td><td>6</td></tr>
+    <tr><td>Normal + galley</td><td>River</td><td>Sylvanus 4</td><td>24, then 100</td><td>10</td></tr>
+    <tr><td>Fast + galley</td><td>River</td><td>Sylvanus 2</td><td>30, then 100</td><td>13</td></tr>
+    <tr><td>Fast + 1 + galley</td><td>River</td><td>Trimalan 30</td><td>34, then 100</td><td>14</td></tr>
+    <tr><td>Fast + 2 + galley</td><td>River</td><td>Trimalan 29</td><td>38, then 100</td><td>15</td></tr>
+    <tr><td>Fast + 3 + galley</td><td>River</td><td>Trimalan 28</td><td>42, then 100</td><td>16</td></tr>
   </tbody>
 </table>
 
 If the party attempts to take the river, use the travel pace rules from the Player's Handbook for the first 310 miles, then have them roll a chance die every day to see what kind of boats they see and consult the table below.
 
-#### Boat table
+#### Travelling by Boat
 
-<table class="table">
-<thead><tr><th>Result</th><th>Boat</th></tr></thead>
-<tbody>
-<tr><td>1-20</td><td>They see only a single keelboat, slowly ambling up the river (16 miles a day), and unwilling to take on passengers.</td></tr>
-<tr><td>21-40</td><td>They see only a single keelboat, slowly ambling up the river (16 miles a day), willing to take on passengers.</td></tr>
-<tr><td>41-60</td><td>In addition to a keelboat, they see a river galley travelling at half pace up river (100 miles a day) and willing to take on passengers.</td></tr>
-<tr><td>61-100</td><td>They encounter a river galley travelling at full speed up river (200 miles a day) and willing to take on passengers.</td></tr>
-</tbody>
-</table>
+When the party arrives at the river, the first ship to pass will be a keelboat, moving slowly upriver (slower than they can walk) and laden with cargo. They will be unwilling to take on armed passengers unless convinced. There are two crewmen, Captain Jack and his first mate Sparrow. They are carrying food to Northport, grain and dried meat.
+
+The next boat to pass is the galley of Captain Mercedes Hawk. She is a pirate and a slaver looking to sell slaves to the orcs.  All of her slaves are below decks, rowing the boat. They are travelling half-speed due to the current, but Mercedes will offer to put her crew on double shifts for the right price. She offers passage at 50 gp per person, or 75 gp per person for double time.
+
+She has 10 crewmen including herself.
+
+The ship has 2 levels below decks, the first is the cargo hold and quarters, players will be given rooms on this level (3 rooms, 2 per room). The ship is carrying some cargo in the form of spices (that Mercedes looted off the ship the slaves below decks came from.) The bottom level is the rowing deck, the 30 slaves down there never come up, and are only mentioned as 'oarsmen'. Mercedes will inform the party that it is off-limits, and the hatch remains padlocked at all times. Captain Mercedes and her first-mate Robert (also the slave driver) are the only ones with keys. The lock is a DC 15 slight of hand check to unlock (with advantage if proficient with thieves tools, must have thieves tools to attempt) or a DC 20 strength check to break.
+
+If the party does not investigate the lower deck on their own, the following things will happen, one per day if travelling at double speed, or one every other day if travelling at normal speed:
+
+event 1: The party hears a scream from below decks echo through the ship.
+
+event 2: There is a loud splash in the night as a crewman dumps a dead slave overboard. He responds to any questioning with 'just dumping the garbage'.
+
+event 3: Robert comes up from below decks still wearing his black mask and carrying his whip (which has blood on it).
+
+event 4: Robert calls the captain below decks saying there is a 'situation'. When the captain returns she is cleaning blood off her dagger. (If the party investigates here it is a slave that got loose from its chains and is holding a crewman hostage and demanding freedom).
+
+##### [Run this Encounter](/runner/bandit&bandit&bandit&bandit&bandit&bandit&bandit&bandit&bandit&captainmercedes)
 
 During travel, when the party gets close to Northport, do one of the following random encounters from the random encounters section in this chapter:
 
@@ -234,9 +244,9 @@ Because Harwik is a goblin he is immediately distrusted in Northport by the comm
 
 ### Riot
 
-Things begin going wrong for the players the minute they arrive in Northport. Whether they teleport in, get off a boat, or simply walk into town, immediately there are cries from the crowd in the street of 'Orc spies!', 'The Orcs are attacking!' and 'The undead are here!'. A pair of unarmed kobolds walking through the street, the player characters, and a gaunt looking old man are immediately set upon by the crowd as people begin screaming. Members of the crowd are commoners, and the street is packed with them, roughly 50 of them are involved in the riot. Any commoner who can't reach a target on its turn will begin to riot and break or steal whatever they can reach.
+Things begin going wrong for the players the minute they arrive in Northport. Whether they teleport in, get off a boat, or simply walk into town, immediately there are cries from the crowd in the street of 'Orc spies!', 'The Orcs are attacking!' and 'The undead are here!'. A pair of unarmed kobolds walking through the street, the player characters, and a gaunt looking old man are screamed at by the crowd, and it is clear that they will attack if not calmed down. The players can attempt to calm the crowd as a skill challenge using their own creativity. The players must keep the crowd calm for 2 minutes before the guards will arrive and disperse them. The players can see the guards approaching in the distance and judge the length of time until their arrival. The party as a whole can only use a particular skill once, and each successful use keeps the crowd from attacking for 30 seconds.
 
-After 10 rounds of combat, 10 members of the city guard will arrive from all sides led by Vanriel Glamfara. They are wielding clubs, and their threat of overwhelming force will put an end to the riot. If the party has already dealt with all rioters by that point without killing anyone, Vanriel will thank them and invite them back to her office. If the party used deadly force on the rioters, she will take them into custody for manslaughter. The kobolds and old man, if still alive, will also be taken into protective custody.
+10 members of the city guard will arrive from all sides led by Vanriel Glamfara. They are wielding clubs, and their threat of overwhelming force will put an end to the riot. If the party has avoided combat or avoided killing any rioters, Vanriel will thank them and invite them back to her office. If the party used deadly force on the rioters, she will take them into custody for manslaughter. The kobolds and old man, if still alive, will also be taken into protective custody.
 
 ### Guard Captain Vanriel Glamfara
 
