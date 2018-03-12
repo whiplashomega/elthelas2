@@ -7,15 +7,15 @@ var mongoose = require('mongoose');
 var User = require('./app/models/user');
 var passport = require('passport');
 var authenticate = require('./app/authenticate');
-var webpack = require('webpack');
-var webpackDevMiddleware = require('webpack-dev-middleware');
-var webpackHotMiddleware = require('webpack-hot-middleware');
+//var webpack = require('webpack');
+//var webpackDevMiddleware = require('webpack-dev-middleware');
+//var webpackHotMiddleware = require('webpack-hot-middleware');
 // configuration ===========================================
 
 // config files
 var config = require('./config/node');
-var webpackConfig = require('./build/webpack.dev.config');
-var compiler = webpack(webpackConfig);
+//var webpackConfig = require('./build/webpack.dev.config');
+//var compiler = webpack(webpackConfig);
 // set our port
 var path = require('path');
 global.appRoot = path.resolve(__dirname);
