@@ -1,0 +1,33 @@
+{
+  "id": "blackwolfirregulars",
+  "title": "Black Wolf Irregulars",
+  "description": "The Black Wolf Irregulars are a mercenary organization that has existed in northern [Elathia](/geo/continents/elathia) for the last 200 years or so, hiring themselves out by company to various militaries. They have a history of taking in those who don't fit into a standard military structure and coming up with unusual tactics designed to take advantage of them. After the formation of the [Alliance of 6 Nations](/org/allianceof6nations) they were hired en masse by the same to be a cross-national force that worked strictly for the Alliance as a whole. The Irregulars typically work in small squads on the peripheries of major battles, handling scouting missions, infiltration missions, and other missions that require unusual or specialized training for a small number of individuals.\n\nDespite their reputation for success and loyalty to their contractors, they still tend to be distrusted by national professional militaries.",
+  "nations": [
+    "eldoran",
+    "demalthor",
+    "curinor",
+    "gerasalim",
+    "kandor",
+    "dormania"
+  ],
+  "cities": [
+    "strovenguard",
+    "eastguard",
+    "purs",
+    "sreppe",
+    "desadorel",
+    "aridhem",
+    "estapor",
+    "storval",
+    "highhammer",
+    "granitebluff",
+    "loridesa"
+  ],
+  "tenets": [
+    "Complete the objective  you are given, even if it means working outside of typical means and methods.",
+    "Keep in contact with your commanding officer.",
+    "Leave no man behind.  Work as a team with your squad and don't leave anyone in enemy hands."
+  ],
+  "level1": "**Guild Funding.** You start with an additional 50 gold.",
+  "level10": "**Advanced Training.** Add +1 to one ability score of  your choice.  Also pick 1 skill you are proficient in, you gain expertise in that skill."
+}

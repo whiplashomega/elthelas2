@@ -1,0 +1,35 @@
+{
+  "name": "Dera'Dragorim",
+  "coords": [32.84267363195431, -59.76150512695313],
+  "border-coords": [],
+  "color": "#FFFF00",
+  "map": "/static/images/maps/nations/Dera'Dragorim.jpg",
+  "capitol": "Vasha",
+  "cities": ["Vashna", "Delan", "Portsmith"],
+  "landmarks": ["Smuggler's Pass"],
+  "borders": ["Dera", "Eldoran", "Gnarra"],
+  "population": 6300000,
+  "populationDistribution": [{
+    "race": "Deran Humans",
+    "proportion": 0.75
+  },
+  {
+    "race": "Dragonborn",
+    "proportion": 0.12    
+  },
+  {
+    "race": "High Elves",
+    "proportion": 0.08    
+  }],
+  "government": "Dera'Dragorim is ruled by the Dragon Emperor, an Elder Gold Dragon who has grown accustomed to human form, and who was put in place by Bahamut to rule justly and protect the people. There have been rumors that the Dragon Emperor is aging and may soon die, as he has become increasingly reclusive over the last dozen years or so.",
+  "ruler": "The Dragon Emperor Valraxa",
+  "history": "The islands that make up Dera'Dragorim used to be only distant colonies of the mighty empire of Dera. Dera ruled nearly half of the continent from their mighty capitol near the eastern coast of Riftlan. Yet it would not last. It is not known whether it was the work of some powerful evil wizard or simply a random rift as opens on that continent from time to time, but a portal opened one day high in the mountains above Dera between this world and the endless abyss. It was not long before hordes of demons began to pour through the portal. They marched relentlessly out of the portal in ever greater numbers. Whenever they found human habitation they would murder the men and children, burn everything to the ground, rape those women they desired, and send them onward to tell the tale. It was not long before the horde stood at the gates of Dera itself. Those people who had not already fled were slaughtered. It was just after the burning of the great city that Bahamut intervened. The Dragon God led the metallic dragons from all over the world against the demon horde and drove them back. Finally closing the portal through which they had come. Those demons that survived fled to the western mountains where many remain to this day. Bahamut brought the survivors of Dera to Vasha and Vashna, then small towns and left one of his greatest warriors to rule over them. They renamed their land Dera'Dragorim in honor of the sacrifice the dragons gave for them and took up the worship of Bahamut.\n\nSince then Dera'Dragorim has grown in wealth and prosperity. They have become great traders, rivaled only by the Morrindim and monopolize much of the trade in the west. Their warm fertile islands produce a variety of goods and they have even reestablished colonies on the continent, the largest being the city of Portsmith.",
+  "gods": ["Bahamut", "Maris"],
+  "worship": "Dragons of all kinds are considered holy in Dera'Dragorim although metallic dragons in particular. Bahamut is the patron God of the empire and his temples are everywhere. Yet they owe much of their wealth to trade and Maris the God of trade has a significant following in the trade enclaves.",
+  "culture": "There are many unusual halfbreeds who find welcome in Dera'Dragorim including dragonborn, tieflings, mephlings, and genasi. This is a representation both of their history, and of the highly tolerant nature of their society. Science and magic prosper, and Vashna holds the only alchemists guild outside of Stagenheim. Dragons are not only culturally sacred but militarily important to Dera'Dragorim as they make use of many draconic beasts as both mounts and war machines.",
+  "economics": "Dera'Dragorim's economy is based on cash crops which produce multiple times a year (as the tropical climate allows for growing crops year round) and trade. They export silk, citrus, spices, rice, and exotic animals and carry many other goods from one country to another.",
+  "slavery": "Slavery is illegal, and slavers are hunted down and killed when discovered.",
+  "magic": "The use of compulsions and charms is illegal, however there is no further regulation of magic beyond that.",
+  "property": "Only citizens are allowed to own property, however citizenship is not hard to achieve.",
+  "citizenship": "Anyone who pledges to obey the laws of the country and serve its interests can be naturalized as a citizen. Otherwise anyone born of 2 citizens is automatically a citizen of Dera'Dragorim."
+}

@@ -1,0 +1,19 @@
+{
+  "id": "dormanianimperialguard",
+  "title": "Dormanian Imperial Guard",
+  "description": "The Dormanian Imperial Guard is devoted to the defense of the Emperor Dorman, his heirs, and his empire.  They are an elite unit of guards, retainers, and knights who brook no threat to their charges. In battle they serve as the Emperor's personal retinue and vanguard.  Outside of battle they guard his person and that of his heirs.  On occasion members of the group may be tasked with missions of high importance to the Emperor, or to investigate rumors of assassination plots.",
+  "nations": [
+    "dormania"
+  ],
+  "cities": [
+    "desadorel"
+  ],
+  "tenets": [
+    "The Lives of the Emperor and his heirs are more important than your own.",
+    "The commands of the Emperor and his assigned representatives are absolute so long as they do not violate the first tenet",
+    "Dorman rewards the strong, become the best self you can be.",
+    "Protect the Dormanian Empire and its soldiers"
+  ],
+  "level1": "**Guard the Door.** You gain proficiency in the perception skill.  If you are already proficient you gain expertise instead.",
+  "level10": "**Guard the Body.** You gain the protection fighting style, if you already have the protection fighting style choose another fighting style from your class list.  Also you get a +1 bonus to AC while wearing a shield and you have an adjacent ally."
+}

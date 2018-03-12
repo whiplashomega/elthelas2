@@ -1,0 +1,23 @@
+{
+  "name": "",
+  "nation": "",
+  "population": 0,
+  "metro": 0,
+  "majority": "",
+  "ruling": "",
+  "minorities": [
+    ""
+  ],
+  "exports": [
+    ""
+  ],
+  "landmarks": [
+    {
+      "name": "",
+      "description": ""
+    }
+  ],
+  "coords": [0, 0],
+  "map": "",
+  "description": ""
+}

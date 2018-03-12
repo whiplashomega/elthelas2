@@ -1,0 +1,23 @@
+{
+  "name": "Dima",
+  "nation": "Eldoran",
+  "population": 8000,
+  "metro": 50000,
+  "majority": "Wood Elves",
+  "ruling": "High Elves",
+  "minorities": [
+    "High Elves",
+    "Plains Dwarves"
+  ],
+  "exports": [
+    ""
+  ],
+  "landmarks": [
+    {
+      "name": "The Mines of Dima",
+      "description": ""
+    }
+  ],
+  "coords": [43.26120612479979, -17.39822387695313],
+  "description": "Dima is not a large city, but it is notable as the hub for the northern mining regions of Eldoran.  It has a notable minority of Plains Dwarves expats who work the mines where the elves turn their noses up at going underground.  Most of the iron, steel, and other metals used by the elves is smelted in Dima before moving south along the Sindi Dal'Elda to Loridesa."
+}

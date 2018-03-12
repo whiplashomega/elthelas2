@@ -1,0 +1,59 @@
+@import "./_vars.scss";
+
+footer {
+  //position: fixed;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  ul {
+    margin: 0 auto 0 auto;
+    padding: 10px 0 10px 0;
+    width: auto;
+    height: 100%;
+    text-align: center;
+    background-color: #eeeeee;
+  }
+}
+
+.table tfoot {
+  display: table-header-group;
+}
+
+#raceDiv {
+  clear: both;
+}
+.racebuttondiv {
+  margin: 10px;
+  float: left;
+}
+
+.subrace {
+  clear: both;
+  display: block;
+}
+
+.raceimage {
+  float: right;
+  margin: 0px 0px 15px 15px;
+  max-width: 20%;
+  max-height: 300px;
+  height: auto;
+}
+
+.symbolimage {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.card {
+  border: 1px solid #e0e5c1;
+  background-color: #e0e5c1;
+  padding: 8px 12px;
+  margin: 15px 10px;
+  border-radius: 8px;
+  clear: both;
+}
+
+.clear-b {
+  clear: both;
+}

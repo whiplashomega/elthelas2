@@ -1,0 +1,25 @@
+{
+  "id": "stormlordsoftrimala",
+  "title": "Stormlords of Trimala",
+  "description": "The Stormlords represent the anger of the seas.  They are an organization dedicated to eliminating piracy and polution of the seas.  Coastal towns that dump their garbage into the sea often sea delegations of Stormlords demanding greater respect for the oceans.  Likewise, ships commanded by Stormlords often hunt down pirates to their lairs.",
+  "nations": [
+    "morrind",
+    "eldoran",
+    "shendarel"
+  ],
+  "cities": [
+    "morrindim",
+    "alados",
+    "sofala",
+    "estapor",
+    "milan",
+    "loridesa",
+    "swava"
+  ],
+  "tenets": [
+    "I must not abide piracy.  If I discover pirates active in an area I must destroy them if it is within my power to do so.",
+    "I cannot stand idle while others polute the sea."
+  ],
+  "level1": "**Elemental Adept.** At level 1 you learn the gust and shape water cantrips and can cast them at will.  Wisdom is your spellcasting stat for these spells.",
+  "level10": "**Master of the Storm.** At level 10 you learn the spell Call Lightning and can cast it 1/day without using a spell slot.  Wisdom is your spellcasting ability for this spell."
+}

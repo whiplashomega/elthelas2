@@ -1,0 +1,31 @@
+{
+  "id": "bloodbrothers",
+  "title": "Blood Brothers",
+  "description": "The Blood Brothers is an organization of military veterans, ex-bandits, and adventurers who couldn't give up fighting or wanted a more profitable way of doing so. They live for the thrill of the fight, and started a mercenary organization so they could keep doing so and get paid. The blood brothers will take just about anyone as a client, but won't fight other members of the Brotherhood. Unlike the Black Wolf Irregulars or the Trollkin Mercenary Corp, the Blood Brothers focus on small jobs, such as delving a dangerous dungeon for some artifact, assassinating a rival, or hunting down an escaped convict.",
+  "nations": [
+    "Dormania",
+    "Gerasalim",
+    "Malinval",
+    "Kandor",
+    "Curinor",
+    "Eldoran",
+    "Dera'Dragorim",
+    "Staelia",
+    "Stagenheim",
+    "Alfadir",
+    "Zelfir",
+    "Sage",
+    "Hisru'de'tan"
+  ],
+  "cities": [
+  
+  ],
+  "tenets": [
+    "Violence is the answer more often than you think",
+    "You aren't there to negotiate",
+    "We don't back down from a fight",
+    "Never fight another Blood Brother"
+  ],
+  "level1": "Blood for blood: As a reaction after taking damage you can designate the creature that damaged you as your target. For one minute you have a +2 bonus to weapon attack rolls against that creature. Once you use this feature you can't use it again until you finish a short or long rest.",
+  "level10": "Never say die: Your experience in battle gives you increased resilience. As a bonus action you can grant yourself temporary hit points equal to twice your level. These hit points last for one minute. Once you use this feature you cannot use it again until you finish a short or long rest."
+}

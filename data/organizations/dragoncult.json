@@ -1,0 +1,18 @@
+{
+  "id": "dragoncult",
+  "title": "Dragon Cult",
+  "description": "The Dragon Cult is a group of dragons and their humanoid followers dedicated to the rise of Tiamat and the destruction of all good-aligned Dragons.  Tiamat's evil nature and refusal to recognize even the other evil Gods as legitimate makes members of the Dragon Cult rare throughout the world, however the blessing of tiamat is not without benefits. Each member additionally serves a particular chromatic dragon, who passes on the orders of Tiamat, as well as their own desires to the members of the Dragon Cult under their control.",
+  "nations": [
+    "dragonhome"
+  ],
+  "cities": [
+  
+  ],
+  "tenets": [
+    "I cannot abide the existance of a metalic dragon, if I learn of ones existance I must find a way to destroy it.",
+    "I must never acknowledge the legitimacy of any God but Tiamat",
+    "I must not disobey my Dragon master, the chromatic dragons are the true inheritors of the earth."
+  ],
+  "level1": "**Breath of the Dragon.** You gain a breath weapon, per the Dragonborn racial trait.  If you are a Dragonborn you instead gain 1 additional use of your breath weapon per day.",
+  "level10": "**Wings of the Dragon.** You gain the ability to grow wings at will.  When you have your wings you have a 20 ft fly speed as long as you are not encumbered."
+}

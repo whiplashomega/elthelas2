@@ -1,0 +1,22 @@
+  @import '../../../node_modules/bootstrap/dist/css/bootstrap.css';
+  @import './_vars.scss';
+  @import './_searchoverride.scss';
+  @import './_bootstrapoverride.scss';
+  @import './_layout.scss';
+  
+  .sidenav a {
+    padding: 8px 15px;
+    margin: 2px 5px;
+    background-color: #6784c6;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: bold;
+    span {
+      display: block;
+    }
+  }
+  .handle {
+    position: relative;
+    display: block;
+    float: right;
+  }

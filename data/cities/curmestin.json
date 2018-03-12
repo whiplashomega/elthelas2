@@ -1,0 +1,19 @@
+{
+  "name": "Cur'Mestin",
+  "nation": "Dormania",
+  "population": 8000,
+  "metro": 24000,
+  "majority": "Imperial Humans",
+  "ruling": "Imperial Humans",
+  "minorities": [
+    "Imperial Gnomes",
+    "Lightfoot Halflings"
+  ],
+  "exports": [
+    "timber"
+  ],
+  "landmarks": [],
+  "coords": [57.231502991478926, 91.67404174804688],
+  "map": "/images/maps/cities/curmestin.jpg",
+  "description": "Cur'Mestin is the westernmost city in Dormania, the small city acts as the center for the timber industry in western Dormania and eastern Kandor. Originally built as a forward staging base when Dorman I was planning his invasion of Kandor, the city continued to grow long after the war was over. The walls and castle have been restored in recent years, turning it into a formidable fortress city."
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Mermaid Sea",
+  "description": "Comprising the oft-traversed bay between Zelfir and Alfadir, the mermaid sea links the two continents trade networks.  Civic planners have for years proposed building a massive canal to connect the mermaid sea to the dragon sea to the north of the Exodus Isthmus, but to date the Mage's Council has been unwilling to fund the effort, despite the promises of increased trade it would bring.",
+  "contains": [
+    "Zelfir",
+    "Alfadir"
+  ],
+  "coords": [-50.10930544536764, -91.61279350519183]
+}

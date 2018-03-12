@@ -1,0 +1,33 @@
+{
+  "name": "Fradae",
+  "nation": "Alfadir",
+  "population": 35000,
+  "metro": 120000,
+  "majority": "Staelic Humans",
+  "ruling": "Staelic Humans",
+  "minorities": [
+    "Strongheart Halflings",
+    "Hisru Humans",
+    "Stagen Gnomes",
+    "Morrind Dwarves"
+  ],
+  "exports": [],
+  "landmarks": [{
+    "name": "The Morrind Enclave",
+    "description": ""
+  },
+  {
+    "name": "Fradae Trader's Market",
+    "description": ""
+  },
+  {
+    "name": "Governor's Palace",
+    "description": ""
+  },
+  {
+    "name": "Grand Harbor",
+    "description": ""
+  }],
+  "coords": [-47.338822694822, -81.99783325195314],
+  "description": "Fradae is the premeir port of Alfadir, and is a major source of wealth for the country, as exports pour out of Stagenheim and the Alfadiran interior and move on to Zelfir, Morrindim, Staelia, and elsewhere.\n\n The Morrind enclave in Fradae is the largest population of Morrind in the world outside of the Morrind cities themselves. The local governor maintains a treaty that gives preferential treatment to Morrind ships in harbor in return for the right to levy a special tax on the goods that pass through.\n\n Between the harbor, the enclave, and the governor's palace lies the massive trader's market. Here merchants from the riverboats sell their goods for export to Morrind captains, all under the watchful eye of the governor's tax men. On the other side of the governor's palace lies the local market, where goods for local consumption are sold."
+}

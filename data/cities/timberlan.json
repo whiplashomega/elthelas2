@@ -1,0 +1,19 @@
+{
+  "name": "Timberlan",
+  "nation": "Dormania",
+  "population": 12000,
+  "metro": 24000,
+  "majority": "Imperial Humans",
+  "ruling": "Imperial Humans",
+  "minorities": [
+    "Lightfoot Halflings",
+    "Imperial Gnomes"
+  ],
+  "exports": [
+    "timber",
+    "cotton"
+  ],
+  "landmarks": [],
+  "coords": [28.867767182771782, 132.09191881120208],
+  "description": "Timberlan is an eastern port city that brings in timber from the south and cotton from the north for export to the rest of the empire.  It is often overlooked, as it is not particularly wealthy, but it has maintained a strong independent streak in Dormanian politics for years."
+}

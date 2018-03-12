@@ -1,0 +1,43 @@
+{
+  "name": "Stagenheim",
+  "coords": [-45.02695045318545, -56.33377075195313],
+  "border-coords": [],
+  "color": "#FFFF00",
+  "map": "/static/images/maps/nations/Stagenheim.jpg",
+  "capitol": "Craftheim",
+  "cities": ["Gnoma", "Ifritan"],
+  "landmarks": ["Fire Islands"],
+  "borders": ["Hisru'de'tan", "Sage", "Alfadir", "Staelia"],
+  "population": 2000000,
+  "populationDistribution": [{
+    "race": "Stagen Gnomes",
+    "proportion": 0.85
+  },
+  {
+    "race": "Deep Dwarves",
+    "proportion": 0.05
+  },
+  {
+    "race": "Strongheart Halflings",
+    "proportion": 0.04
+  },
+  {
+    "race": "Imperial Gnomes",
+    "proportion": 0.03
+  },
+  {
+    "race": "Kobolds",
+    "proportion": 0.02
+  }],
+  "government": "The Gnomes of Stagenheim are ruled by a king and an elected parliament. The parliament is in charge of the collection of taxes and troops, as well as enacting laws. The King is responsible for leading the armies, and enforcing the laws. Local governments are generally split between elected mayors and more traditional feudal lords.",
+  "ruler": "",
+  "history": "Stagenheim started out as a haven for gnome mages with unusual ideas in a network of caves provided to them by the God Tock. Over time they managed to overcome their various opponents and conquered a small nation of dwarves, as well as subdued several kobold tribes. When they managed to expand to the edge of Alfadir, their population exploded as they were able to import large quantities of food and other raw materials from throughout the continent.",
+  "gods": ["Tock", "Fanome", "Molton"],
+  "worship": "The priests of Tock are wealthy supporters of the many technologists in the country, and are in turn supported by those inventors who make it big with their support. Meanwhile the priests of Fanome serve as the emotional core of the country, as the single independent country of gnomish people. Molton is primarily worshiped by the people in the eastern Fire Islands who give offerings in the hope of avoiding his wrath in the form of volcanic eruptions.",
+  "culture": "The Stagen gnomes are technologists to the core, and strange contraptions both mundane and magical are common throughout Stagenheim.",
+  "economics": "Stagenheim is a huge consumer of raw materials, and an exporter of all sorts of finished contraptions, magical devices, furniture, and metal goods.",
+  "slavery": "Slavery is illegal, and foreigners who have slaves often have them 'liberated' by the local authorities.",
+  "magic": "Magic use requires a license that can be revoked if the ability is misused, but the licenses are cheap, oversight limited, and rules lax.",
+  "property": "While physical property is generally well-enforced, special distinctions have to be made for depth and purpose of use.",
+  "citizenship": "Only gnomes have voting rights in Stagenheim."
+}

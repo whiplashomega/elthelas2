@@ -1,0 +1,39 @@
+{
+  "name": "Hisru'de'tan",
+  "coords": [-27.994401411046148, -72.06619262695314],
+  "border-coords": [],
+  "color": "#FFFF00",
+  "map": "/static/images/maps/nations/Hisru'de'tan.jpg",
+  "capitol": "She'dal",
+  "cities": ["Atyrao", "Taruu"],
+  "landmarks": [],
+  "borders": ["Zelfir", "Alfadir", "Stagenheim", "Sage"],
+  "population": 1200000,
+  "populationDistribution": [{
+    "race": "Hisru Humans",
+    "proportion": 0.88
+  },
+  {
+    "race": "Deran Humans",
+    "proportion": 0.04
+  },
+  {
+    "race": "Stagen Gnomes",
+    "proportion": 0.03
+  },
+  {
+    "race": "Staelic Humans",
+    "proportion": 0.03
+  }],
+  "government": "Hisru'de'tan's government is a decentralized feudal clan system. With most power residing in the local clan chiefs. The Khan is nominal ruler of the nation, but in truth he is little more than the strongest clan chief. Civil strife is common, and internal wars commonplace. Nevertheless, it is the khan who sets most policy as regards trade with foreign nations.",
+  "ruler": "",
+  "history": "When the people of Zelfir gained their independence in the city, not all chose to submit to the leadership of the wizards. Those that did not were asked, politely but insistently, to leave. They took to horse, and crossed the mountains to the east, over the peninsula, and onto the steppe, where they have raised cattle ever since. Beyond these records, kept in the histories of Zelfir, no one really knows the history of Hisru'de'tan, as few Hisru have the ability to write, and those that do have never bothered to write about the past.",
+  "gods": ["Kara", "Mosru", "Paltak", "Nora", "Fedrik"],
+  "worship": "The Hisru have their own extensive pantheon of Gods based on animals, and their 'clerics' are usually just druids. Whether the Hisru Gods actually exist is still questionable, but the power of nature at the command of the druid priests is without compare.",
+  "culture": "The hisru are a nomadic people, who rely on their herds to survive.",
+  "economics": "Hisru'de'tan is dependent on the export of horse flesh and beef cattle, and import most of their forged metal and other finished goods(although you won't find more skilled farriers anywhere in the world). They also export worked leather.",
+  "slavery": "Slavery is not strictly illegal on a national level, however the purchase of slaves is. Male captives taken from other clans or other nations must serve faithfully for 5 years, after which they are given a horse and a milk cow and are allowed to either return to their home or join the clan. Female captives are taken as mistresses to the person who captured them, and if they leave after 5 years any children they have had in their captivity remain with the clan.",
+  "magic": "Most arcane magic is viewed with suspicion as witchcraft, if the viewer is even capable of discerning it from the druidic magic that is common in the area.",
+  "property": "Land is owned by clans, rather than individuals, as few homes are permanent anyway. Cows, horses, and other animals are owned by individual families. Any unmarried person over the age of 20 is considered a family unto him/herself.",
+  "citizenship": "Citizenship is either by birth or by clan adoption after serving 5 years as a captured slave. If not a member of the local clan or protected by treaty, any person entering a clans territory is by law forfeit of his/her life and liberty. The Khan's road is exempt from this law, being part of no clans territory."
+}

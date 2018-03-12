@@ -1,0 +1,39 @@
+{
+  "id": "internationalgrangemastersalliance",
+  "title": "International Grangemaster's Alliance",
+  "description": "After observing a spate of occurances where local lords levied unfair taxes on farmers and merchants with near monopoly local power refusing to give fair prices to farmers in the area, a group of clerics of Sara came together to officially form the Grangemaster's alliance.  The alliance is made up of thousands of local grange houses, each of which acts as a community center for farmers in the area.  Collectively they act as a bulwark against ruling class abuse, sponsor soup kitchens and other charitable causes to feed the poor, and promote causes farmers care about.  The organization is largely decentralized, no house is ever compelled to act by the others or by the organization as a whole, but their shared interests allow for powerful collective action.  When merchants in small communities refuse to pay fair prices, they can expect a grange sponsored buyer to come in and buy up the goods in their place, and when rulers demand unfair taxes they may suddenly find themselves unable to buy food for their armies.  The alliance crosses borders and has members even on opposite sides of major conflicts.",
+  "nations": [
+    "dormania",
+    "kandor",
+    "gerasalim",
+    "curinor",
+    "eldoran",
+    "demalthor",
+    "shendarel",
+    "olda",
+    "malinval",
+    "arad",
+    "terron",
+    "seran",
+    "degakta",
+    "morrindim",
+    "deradragorim",
+    "sage",
+    "hisrudetan",
+    "stagenheim",
+    "staelia",
+    "alfadir",
+    "zelfir"
+  ],
+  "cities": [
+  
+  ],
+  "tenets": [
+    "Do everything reasonable to ensure no one in your community goes hungry",
+    "You should own a farm or otherwise spend time each day growing food",
+    "speak up for the rights of farmers",
+    "pay your dues every month, equal to 5% of monthly farm profits or 20gp, whichever is higher."
+  ],
+  "level1": "**Herder.** Gain proficiency in the animal handling skill, if you are already proficient in animal handling you instead gain expertise in animal handling.",
+  "level10": "**Blessing of the Earth.** You learn the spell Plant Growth, and can cast it without expending a spell slot.  Once you use this ability you cannot use it again until you finish a long rest."
+}

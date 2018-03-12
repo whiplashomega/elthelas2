@@ -1,0 +1,47 @@
+{
+  "name": "Gorgro Plateau",
+  "coords": [-61.14323525084057, -78.83377075195314],
+  "border-coords": [],
+  "color": "#222200",
+  "map": "/static/images/maps/nations/Gorgro.jpg",
+  "capitol": "",
+  "cities": [],
+  "landmarks": ["Ice Wastes", "Troll Pass"],
+  "borders": ["Staelia", "Alfadir", "Stagenheim", "Tiaov Coast", "Ice Wastes"],
+  "population": 200000,
+  "populationDistribution": [{
+    "race": "Trolls",
+    "proportion": 0.2
+  },
+  {
+    "race": "Trollkin",
+    "proportion": 0.18
+  },
+  {
+    "race": "Ogres",
+    "proportion": 0.18
+  },
+  {
+    "race": "Giants",
+    "proportion": 0.14
+  },
+  {
+    "race": "Gnolls",
+    "proportion": 0.12
+  },
+  {
+    "race": "Hobgoblins",
+    "proportion": 0.12
+  }],
+  "government": "Gorgro is in truth a region rather than a nation. While there are some tribal entities within it, there is no real government of any kind.",
+  "ruler": "",
+  "history": "Gorgro featured prominently in the development of nearby nations, as many of the creatures that call the high plateau home are difficult to deal with, to say the least. Tribes of giants and trolls can eat entire villages before men can be marshaled to defense, and Ogres, Trollkin, Gnolls, and Hobgoblins are certainly not threats to sneeze at. However, no one has ever really recorded any history of the denizens of the plateau itself.",
+  "gods": ["Trollka", "Malik"],
+  "worship": "Worship methods vary significantly by the tribe and race. However Trolka and Malik are certainly the most common Gods worshipped.",
+  "culture": "",
+  "economics": "",
+  "slavery": "Without rule of law, the weak often find themselves slaves.",
+  "magic": "Particular moods on magic vary by tribe, but generally trolls, gnolls, and ogres are highly distrustful (or just too stupid to use it), while hobgoblins, giants and trollkin make use of it to their own advantage when they can.",
+  "property": "",
+  "citizenship": ""
+}

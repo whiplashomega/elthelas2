@@ -1,0 +1,237 @@
+{
+  "name": "Rogue",
+  "level": 1,
+  "hitdie": 8,
+  "proficiencies": {
+    "armor": ["light armor"],
+    "weapons": ["simple weapons", "hand crossbows", "longswords", "rapiers", "shortswords"],
+    "tools": ["thieve's tools"],
+    "saving throws": ["dex", "int"],
+    "numskills": 4,
+    "skills": ["acrobatics", "athletics", "deception", "insight", "intimidation", "investigation", "perception", "performance", "persuasion", "sleight of hand", "stealth"]
+  },
+  "features": [
+    {
+      "level": 1,
+      "name": "Expertise",
+      "description": "At 1st level, choose two o f your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves’ tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.\n\nAt 6th level, you can choose two more of your proficiencies (in skills or with thieves’ tools) to gain this benefit."
+    },
+    {
+      "level": 1,
+      "name": "Sneak Attack",
+      "description": "Beginning at 1st level, you know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.\n\nYou don’t need advantage on the attack roll if another enemy of the target is within 5 feet o f it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.\n\nThe amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
+    },
+    {
+      "level": 1,
+      "name": "Thieves' Cant",
+      "description": "During your rogue training you learned thieves’ cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves’ cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly.\n\nIn addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves’ guild, whether loot is nearby, or whether the people in an area are easy marks or w ill provide a safe house for thieves on the run."
+    },
+    {
+      "level": 2,
+      "name": "Cunning Action",
+      "description": "Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action."
+    },
+    {
+      "level": 3,
+      "name": "Roguish Archetype",
+      "description": "At 3rd level, you choose an archetype that you emulate in the exercise o f your rogue abilities: Thief, Assassin, or Arcane Trickster, all detailed at the end of the class description. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level."
+    },
+    {
+      "level": 4,
+      "name": "Ability Score Improvement",
+      "description": "When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+    },
+    {
+      "level": 5,
+      "name": "Uncanny Dodge",
+      "description": "Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack’s damage against you."
+    },
+    {
+      "level": 7,
+      "name": "Evasion",
+      "description": "Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon’s fiery breath or an ice storm spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+    },
+    {
+      "level": 11,
+      "name": "Reliable Talent",
+      "description": "By 11th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10."
+    },
+    {
+      "level": 14,
+      "name": "Blindsense",
+      "description": "Starting at 14th level, if you are able to hear, you are aware of the location of any hidden or invisible creature within 10 feet of you."
+    },
+    {
+      "level": 15,
+      "name": "Slippery Mind",
+      "description": "By 15th level, you have acquired greater mental strength. You gain proficiency in Wisdom saving throws."
+    },
+    {
+      "level": 18,
+      "name": "Elusive",
+      "description": "Beginning at 18th level, you are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren’t incapacitated."
+    },
+    {
+      "level": 20,
+      "name": "Stroke of Luck",
+      "description": "At 20th level, you have an uncanny knack for succeeding when you need to. If your attack m isses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20.\n\nOnce you use this feature, you can’t use it again until you finish a short or long rest."
+    }
+  ],
+  "subclass": [
+    {
+      "name": "Thief",
+      "castermult": 0,
+      "features": [
+        {
+          "level": 3,
+          "name": "Fast Hands",
+          "description": "Starting at 3rd level, you can use the bonus action granted by your Cunning Action to make a Dexterity (Sleight o f Hand) check, use your thieves’ tools to disarm a trap or open a lock, or take the Use an Object action."
+        },
+        {
+          "level": 3,
+          "name": "Second-Story Work",
+          "description": "When you choose this archetype at 3rd level, you gain the ability to climb faster than normal; climbing no longer costs you extra movement.\n\nIn addition, when you make a running jump, the distance you cover increases by a number of feet equal to your Dexterity modifier."
+        },
+        {
+          "level": 9,
+          "name": "Supreme Sneak",
+          "description": "Starting at 9th level, you have advantage on a Dexterity (Stealth) check if you move no more than half your speed on the same turn."
+        },
+        {
+          "level": 13,
+          "name": "Use Magic Device",
+          "description": "By 13th level, you have learned enough about the workings of magic that you can improvise the use of items even when they are not intended for you. You ignore all class, race, and level requirements on the use of magic items."
+        },
+        {
+          "level": 17,
+          "name": "Thief's Reflexes",
+          "description": "When you reach 17th level, you have become adept at laying ambushes and quickly escaping danger. You can take two turns during the first round of any combat. You take your first turn at your normal initiative and your second turn at your initiative minus 10. You can’t use this feature when you are surprised."
+        }
+      ]
+    },
+    {
+      "name": "Assassin",
+      "castermult": 0,
+      "features": [
+        {
+          "level": 3,
+          "name": "Bonus Proficiencies",
+          "description": "When you choose this archetype at 3rd level, you gain proficiency with the disguise kit and the poisoner’s kit."
+        },
+        {
+          "level": 3,
+          "name": "Assassinate",
+          "description": "Starting at 3rd level, you are at your deadliest when you get the drop on your enemies. You have advantage on attack rolls against any creature that hasn’t taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit."
+        },
+        {
+          "level": 9,
+          "name": "Infiltration Expertise",
+          "description": "Starting at 9th level, you can unfailingly create false identities for yourself. You must spend seven days and 25 gp to establish the history, profession, and affiliations for an identity. You can’t establish an identity that belongs to someone else. For example, you might acquire appropriate clothing, letters of introduction, and official looking certification to establish yourself as a member of a trading house from a remote city so you can insinuate yourself into the company of other wealthy merchants.\n\nThereafter, if you adopt the new identity as a disguise, other creatures believe you to be that person until given an obvious reason not to."
+        },
+        {
+          "level": 13,
+          "name": "Imposter",
+          "description": "At 13th level, you gain the ability to unerringly mimic another person’s speech, writing, and behavior. You must spend at least three hours studying these three components of the person’s behavior, listening to speech, examining handwriting, and observing mannerisms.\n\nYour ruse is indiscernible to the casual observer. If a wary creature suspects something is amiss, you have advantage on any Charisma (Deception) check you make to avoid detection."
+        },
+        {
+          "level": 17,
+          "name": "Death Strike",
+          "description": "Starting at 17th level, you become a master of instant death. When you attack and hit a creature that is surprised, it must make a Constitution saving throw (DC 8 + your Dexterity modifier + your proficiency bonus). On a failed save, double the damage of your attack against the creature."
+        }
+      ]
+    },
+    {
+      "name": "Arcane Trickster",
+      "castermult": 0.334,
+      "features": [
+        {
+          "level": 3,
+          "name": "Spellcasting",
+          "description": "When you reach 3rd level, you gain the ability to cast spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the wizard spell list.\n\n**Cantrips.** You learn three cantrips: mage hand and two other cantrips of your choice from the wizard spell list. You learn another wizard cantrip of your choice at 10th level.\n\n**Spell Slots.** The Arcane Trickster Spellcasting table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.\n\nFor example, if you know the 1st-level spell charm person and have a 1st-level and a 2nd-level spell slot available, you can cast charm person using either slot. \n\n**Spells Known of 1st-Level and Higher.** You know three 1st-level wizard spells of your choice, two of which you must choose from the enchantment and illusion spells on the wizard spell list.\n\nThe Spells Known column of the Arcane Trickster Spellcasting table shows when you learn more wizard spells of 1st level or higher. Each of these spells must be an enchantment or illusion spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level. The spells you learn at 8th, 14th, and 20th level can come from any school of magic.\n\nWhenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots, and it must be an enchantment or illusion spell, unless you’re replacing the spell you gained at 8th, 14th, or 20th level.\n\n**Spellcasting Ability.** Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.\n\nSpell save DC = 8 + your proficiency bonus + your Intelligence modifier\n\nSpell attack modifier = your proficiency bonus + your Intelligence modifier"
+        },
+        {
+          "level": 3,
+          "name": "Mage Hand Legerdemain",
+          "description": "Starting at 3rd level, when you cast mage hand, you can make the spectral hand invisible, and you can perform the following additional tasks with it:\n* You can stow one object the hand is holding in a container worn or carried by another creature.\n* You can retrieve an object in a container worn or carried by another creature.\n* You can use thieves’ tools to pick locks and disarm traps at range.\n\nYou can perform one o f these tasks without being noticed by a creature if you succeed on a Dexterity (Sleight of Hand) check contested by the creature’s Wisdom (Perception) check.\n\nIn addition, you can use the bonus action granted by your Cunning Action to control the hand."
+        },
+        {
+          "level": 9,
+          "name": "Magical Ambush",
+          "description": "Starting at 9th level, if you are hidden from a creature when you cast a spell on it, the creature has disadvantage on any saving throw it makes against the spell this turn."
+        },
+        {
+          "level": 13,
+          "name": "Versatile Trickster",
+          "description": "At 13th level, you gain the ability to distract targets with your mage hand. As a bonus action on your turn, you can designate a creature within 5 feet of the spectral hand created by the spell. Doing so gives you advantage on attack rolls against that creature until the end of the turn."
+        },
+        {
+          "level": 17,
+          "name": "Spell Thief",
+          "description": "At 17th level, you gain the ability to magically steal the knowledge of how to cast a spell from another spellcaster.\n\nImmediately after a creature casts a spell that targets you or includes you in its area of effect, you can use your reaction to force the creature to make a saving throw with its spellcasting ability modifier. The DC equals your spell save DC. On a failed save, you negate the spell’s effect against you, and you steal the knowledge o f the spell if it is at least 1st level and of a level you can cast (it doesn’t need to be a wizard spell). For the next 8 hours, you know the spell and can cast it using your spell slots. The creature can’t cast that spell until the 8 hours have passed.\n\nOnce you use this feature, you can’t use it again until you finish a long rest."
+        }
+      ]
+    },
+    {
+      "name": "Mastermind",
+      "castermult": 0,
+      "features": [
+        {
+          "level": 3,
+          "name": "Master of Intrigue",
+          "description": "When you choose this archetype at 3rd level, you gain proficiency with the disguise kit, the forgery kit, and one gaming set of your choice. You also learn two languages of your choice.\n\nAdditionally, you can unerringly mimic the speech patterns and accent of a creature that you hear speak for at least 1 minute, allowing you to pass yourself off as a native speaker of a particular land, provided that you know the language."
+        },
+        {
+          "level": 3,
+          "name": "Master of Tactics",
+          "description": "Starting at 3rd level, you can use the Help action as a bonus action. Additionally, when you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than 5 feet of you, if the target can see or hear you."
+        },
+        {
+          "level": 9,
+          "name": "Insightful Manipulator",
+          "description": "S ta rting at 9th level, if you spend at least 1 minute observin g or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if the creature is your equa l, s uperior, or inferior in regard to two of the following characteris tics of your choice:\n\n* Intelligence score\n* Wisdom score\n* Charisma score\n* Class levels (if any)\n\nAt the DM's option, you might also realize you know a piece of the creature's history or one of its personality traits, if it has any."
+        },
+        {
+          "level": 13,
+          "name": "Misdirection",
+          "description": "Beginning at 13th level, you can sometimes cause another creature to suffer an attack meant for you. When you are targeted by an attack while a creature within 5 feet of you is granting you cover against that attack, you can use your reaction to have the attack target that creature instead of you."
+        },
+        {
+          "level": 17,
+          "name": "Soul of Deceit",
+          "description": "Starting at 17th level, your thoughts can't be read by telepathy or other means, unless you allow it. You can present false thoughts by making a Charisma (Deception) check contested by the mind reader's Wisdom (Insight) check.\n\nAdditionally, no matter what you say, magic that would determine if you are telling the truth indicates you are being truthful, if you so choose, and you can't be compelled to tell the truth by magic."
+        }
+      ]
+    },
+    {
+      "name": "Swashbuckler",
+      "castermult": 0,
+      "features": [
+        {
+          "level": 3,
+          "name": "Fancy Footwork",
+          "description": "When you choose this archetype at 3rd level, you learn how to land a strike and then slip away without reprisal. During your turn, if you make a melee attack against a creature, that creature can't make opportunity attacks against you for the rest of your turn."
+        },
+        {
+          "level": 3,
+          "name": "Rakish Audacity",
+          "description": "Starting at 3rd level, your unmistakable confidence propels you into battle. You can add your Charisma modifier to your initiative rolls.\n\nIn addition, you don't need advantage on your attack roll to use your Sneak Attack if no creature other than your target is within 5 feet of you. All the other rules for the Sneak Attack class feature still apply to you."
+        },
+        {
+          "level": 9,
+          "name": "Panache",
+          "description": "At 9th level, your charm becomes extraordinarily beguiling. As an action, you can make a Charisma (Persuasion) check contested by a creature's Wisdom (Insight) check. The creature must be able to hear you, and the two of you must share a language.\n\nIf you succeed on the check and the creature is hostile to you, it has disadvantage on attack rolls against targets other than you and can't make opportunity attacks against targets other than you. This effect lasts for 1 minute, until one of your companions attacks the target or affects it with a spell, or until you and the target are more than 60 feet apart.\n\nIf you succeed on the check and the creature isn't hostile to you, it is charmed by you for 1 minute. While charmed, it regards you as a friendly acquaintance. This effect ends immediately if you or your companions do anything harmful to it."
+        },
+        {
+          "level": 13,
+          "name": "Elegant Maneuver",
+          "description": "Starting at 13th level, you can use a bonus action on your turn to gain advantage on the next Dexterity (Acrobatics) or Strength (Athletics) check you make during the same turn."
+        },
+        {
+          "level": 17,
+          "name": "Master Duelist",
+          "description": "Beginning at 17th level, your mastery of the blade lets you turn failure into success in combat. If you miss with an attack roll, you can roll it again with advantage. Once you do so, you can't use this feature again until you finish a short or long rest."
+        }
+      ]
+    }
+  ]
+}

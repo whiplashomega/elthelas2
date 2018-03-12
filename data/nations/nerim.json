@@ -1,0 +1,31 @@
+{
+  "name": "Nerim",
+  "coords": [-46.49839225859762, 107.93380737304689],
+  "border-coords": [],
+  "color": "#FFFF00",
+  "map": "/static/images/maps/nations/Nerim.jpg",
+  "capitol": "Nerim",
+  "cities": [],
+  "landmarks": ["Fang", "Iron Triangle", "Titan's Peaks"],
+  "borders": ["Seran", "Malinval", "Morrindim", "Degak'Ta"],
+  "population": 40000,
+  "populationDistribution": [{
+    "race": "Sand Orcs",
+    "proportion": 0.97
+  },
+  {
+    "race": "Neran Humans",
+    "proportion": 0.02
+  }],
+  "government": "The Sand Orcs are a tribal people ruled by tribal chiefs, typically a hereditary position, although exceptions have been made if the current heir is incompetent to allow a different tribe member to become chief. They have no real central government, although they do come together now and then to trade at Mount Fang where a cave system provides ample shade, and underground springs, water. The Necromancers and their undead servants tend to have varying shifting alliances, but certainly no government.",
+  "ruler": "",
+  "history": "Nerim was once a proud empire that rivaled (and often warred with) the Elves of Eldoran. They worshiped the Death Goddess Nera, who granted her people mastery over death and the dead, and the ability to seek justice beyond death as a risen deathless. The Emperor, known as the Eternal One, lived for nearly 1000 years through the gifts of Nera, his body kept young and powerful. He thought himself immortal, but inevitably Nera's gift began to fade and he began to age. Fearing death, he devised a ritual whereby he could grant himself and all of his people immortality. Indeed it would grant even the beasts of the field and the birds of the air eternal life. He set his people to the task, and when it was ready, he personally cast the spell. When it was over, there was nothing left living for 500 miles around the capital, instead all were transformed into some form of undead, and the emperor a powerful lich. Overcome with rage at his new grotesque form, the emperor led his 'people' on a quest to destroy all life, but the Gods intervened. Building massive mountains around the remains of the empire and blessing those who still lived and fought back with powerful magic to fight undead. It was rumored that the Emperor himself was killed in the push back. The undead armies retreated, but they still remain, and are fought over by necromancers who travel there with the idea of capturing the greatest horde of undead ever seen possibly on any world.\n\nIt was some 200 years before the fall of Nerim that the first orcs emigrated to the Nerimese subcontinent, building small villages in the mostly uninhabited south. At that time the area was mostly wasteland tundra, and the Nerans were uninterested in it or the Orcs. When the fall happened the orcs found themselves just outside of the radius of the Emperor's spell, and soon they were attacked by the undead hordes. They fled to a nearby volcano, where the God Molton sheltered them in deep caves while raining fire on the undead that came against them. They hid in the caves for 10 years before returning to the surface, only to discover that the tundra they had called home was gone, replaced by scorching deserts and ringed with massive mountains. They have since wandered the desert, traveling from oasis to oasis in tribes, building their own traditions and strengths far different from their mainland kin.",
+  "gods": ["Nera", "Molton"],
+  "worship": "The necromancers of the island and the sentient undead still generally practice a perverted form of the worship of Nera. Meanwhile the Sand Orcs worship Molton, the God of Fire, and constantly pray for his mercy to survive the desert heat.",
+  "culture": "The rest of the world typically sees Sand Orcs as just odd looking Grunt Orcs, blissfully unaware of their existence. Those scholars who are aware of their existence generally know little about them.\n\nThe Sand Orcs themselves likewise have little use for the outside world. They live in a world surrounded by enemies and where the land itself can kill in hours if one is not careful. Water and food are preserved carefully, and waste is considered the worst of sins. No animal is killed without being eaten, and even cannibalism has not been unheard of when times were bad.\n\nIn no other place are the ceremonies surrounding disposing of the dead more important. Dead bodies that are not eaten are immolated by each tribes Priest of Molton to avoid the latent magic of the land bringing them back as undead. Something that is all too common in Nerim. Even accidentally dismembered bodyparts are immolated to avoid being strangled by your own disembodied hand in the middle of the night.",
+  "economics": "The sand orcs have a subsistence, hunter-gatherer type economy.",
+  "slavery": "The sand orcs do not keep slaves themselves, but generally do not care about others keeping slaves. The Necromancers rarely care to feed slaves, preferring to kill them and raise them as undead servants.",
+  "magic": "Magic is rare, but unregulated among the sand orcs. The necromancers do not regulate magic among themselves.",
+  "property": "Property is tribal among the sand orcs. Necromancers have no laws.",
+  "citizenship": "tribal membership among the sand orcs is strictly hereditary."
+}

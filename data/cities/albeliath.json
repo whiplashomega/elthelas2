@@ -1,0 +1,20 @@
+{
+  "name": "Albeliath",
+  "nation": "Arad",
+  "population": 20000,
+  "metro": 60000,
+  "majority": "Neran Humans",
+  "ruling": "Neran Humans",
+  "minorities": [
+    "Lightfoot Halflings"
+  ],
+  "exports": [],
+  "landmarks": [
+    {
+      "name": "Temple of Nera",
+      "description": ""
+    }
+  ],
+  "coords": [8.581021215641854, 111.97471618652344],
+  "description": "Albeliath sits as the capitol of Arad, a nation shunned on the international stage for its monotheistic worship of the Goddess Nera.  Named for Nera's prophet, the nearly 1000 year old cleric Faran Albeliath, the city is built around the great Temple, which also acts as the center of government.\n\n The great temple itself stands in the center of the city, a mass of gleaming white and black spires amidst a complex of support buildings.  As the home of Albeliath and the heart of the Neran church, it also acts as the seat of government for all of Arad.\n\n Outsiders are surprisingly welcome in Albeliath, so long as they don't attempt to convert people to other faiths, or blaspheme against Nera."
+}

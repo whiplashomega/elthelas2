@@ -1,0 +1,22 @@
+{
+  "name": "Northport",
+  "nation": "Gerasalim",
+  "population": 25000,
+  "metro": 55000,
+  "majority": "Imperial Humans",
+  "ruling": "Imperial Humans",
+  "minorities": [
+    "Half-Elves",
+    "Lightfoot Halflings",
+    "Imperial Gnomes"
+  ],
+  "exports": [
+    "grain",
+    "lead",
+    "coal"
+  ],
+  "landmarks": [],
+  "coords": [46.96825851061674, 83.48840318620206],
+  "map": "/images/maps/cities/northport.jpg",
+  "description": "Northport is the last standing major city in Gerasalim, and is currently flush with refugees from the south.  The city is tense, and crime has become a major problem as opportunists take advantage of the dispossessed. Meanwhile, the city garrison was stripped to the bone to send more men to the front lines. The city receives little news of what is happening in the war outside of rumors and hearsay. Panic runs through the population regularly, whenever a rumor of orcs approaching gains traction.\n\nHistorically, Northport was a beacon of trade, the wealthiest city in Gerasalim and its only port with a gateway to the sea located as it is on the Kandor river. Merchants regularly sold grain northward into Kandor, often to eventually be sold to Curinor or even as far as Eldoran."
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Craftheim",
+  "nation": "Stagenheim",
+  "population": 40000,
+  "metro": 120000,
+  "majority": "Stagen Gnomes",
+  "ruling": "Stagen Gnomes",
+  "minorities": [
+    "Deep Dwarves, Strongheart Halflings"
+  ],
+  "exports": [],
+  "landmarks": [
+    {
+      "name": "Temple of Tock",
+      "description": "  The Temple of Tock in Craftheim is a marvelous floating wonder, hovering over the mountain peak via a combination of magical enchantment and mechanical force. Accessed via airship ferry, it is a coveted destination for scholars and engineers the world over.  It's library of reference materials and scholarly books is believed to be the largest in the world."
+    },
+    {
+      "name": "Hall of the Gnomish King",
+      "description": "The King of Stagenheim may not be the most powerful ruler in the world, but his palace, which also houses the offices of the parlaiment, is magnificant.  Built into the bowels of the mountain, it is filled with cavernous halls and incredible stonework."
+    },
+    {
+      "name": "The Airship Dock",
+      "description": "While only a few airships have ever left Stagenheim, there is no shortage of them in Craftheim.  Near the top of the mountain, the great helium filled balloons, with small ships suspended underneath may be a wonder of the world themselves.  Great platforms have been built extending out of the mountain to provide them a place to dock without descending to ground level."
+    },
+    {
+      "name": "The Patent Office",
+      "description": "Craftheim is home to the worlds sole patent office, a government entity that in Stagenheim has real teeth.  The Patent Office is rumored to have agents around the world acting in secret to make sure that patented designs do not leave Stagenheim and are not reproduced without the authorization of the patent holders."
+    }
+  ],
+  "coords": [-42.35854391749706, -56.50955200195313],
+  "description": "Craftheim, the city of engineers, built into and encompassing a mountain, is the center of Stagen society, and has the appearance of being from an entirely different era to most of the rest of the world.  Technological and magical wonders abound, from steam engines and airships to golems and enchantments."
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Wayrest",
+  "nation": "Dormania",
+  "population": 15000,
+  "metro": 25000,
+  "majority": "Imperial Humans",
+  "ruling": "Imperial Humans",
+  "minorities": [
+    "Imperial Gnomes",
+    "Lightfoot Halflings"
+  ],
+  "exports": [],
+  "landmarks": [],
+  "coords": [50.97503219680546, 104.58215318620205],
+  "description": "Wayrest is the halfway point on the overland trade route from the western portion of the empire to the heartland.  It's industries thus specialize in the many things an overland caravan needs at resupply, such as non-perishable foods, wheel-wrights, coopers and so on."
+}

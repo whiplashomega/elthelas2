@@ -1,0 +1,31 @@
+{
+  "name": "Seran",
+  "coords": [-36.3151251474805, 113.82247924804689],
+  "border-coords": [],
+  "color": "#FFFF00",
+  "map": "/static/images/maps/nations/Seran.jpg",
+  "capitol": "Kimly",
+  "cities": [],
+  "landmarks": ["Titan's Peaks"],
+  "borders": ["Nerim", "Malinval", "Terron"],
+  "population": 150000,
+  "populationDistribution": [{
+    "race": "Neran Humans",
+    "proportion": 0.83
+  },
+  {
+    "race": "Lightfoot Halflings",
+    "proportion": 0.14
+  }],
+  "government": "The king's authority in Seran is absolute. And he works through an appointed bureaucracy that handles most day-to-day issues.",
+  "ruler": "",
+  "history": "Seran is the only remaining bastion of human habitation on the sub-continent that once was the center of power for the Nerimese Empire. The population consists of those who refused to give up their homes and flee in the face of the advancing armies of undead. The kings are the descendants of a powerful pair of heroes who rallied the people to defend themselves, saving a remnant of the people.",
+  "gods": ["Cora"],
+  "worship": "The worship of Nera is strictly prohibited in Seran, and occasionally those suspected of worshiping the Death Goddess are lynched, stoned, or otherwise killed rather than being brought before a magistrate. The locals mostly worship Cora the Crusader, who blessed them in their last ditch defense of their homes.",
+  "culture": "Seran has a large standing army under the command of the king. Unlike most embattled nations, the Seranites place such great honor in defending ones homeland that the army is strictly on a volunteer basis, and those who join quickly become professional soldiers. Meanwhile Kimly has a large merchant class, and sends out the most trade ships per capita of any human nation.",
+  "economics": "Seran is largely uninhabited outside of gathered settlements, and the area immediately around Kimly. Food is mostly imported from Terron or Dormania. The woods in Seran however are known for their hardwoods, and unlike the elves, they don't feel any misgivings about cutting down trees beyond conservation of economic potential. While there are ample minerals, including very valuable veins of adamantine, mithril, and diamond in the Titan's Peaks, they go largely untouched, as building a mine in mountains filled with roaming undead armies generally leads to a quick death. The few mines that exist are highly fortified and employ large numbers of mercenaries.",
+  "slavery": "Slavery is illegal and few slaves remain slaves when they come there.",
+  "magic": "There is a small school of wizardry in Kimly, but Necromancy is never taught and is strictly prohibited on pain of death.",
+  "property": "All citizens in Seran are permitted to own property, however, the king has the right to confiscate any property necessary for the defense of the state.",
+  "citizenship": "Anyone who maintains a residence in Seran is considered a citizen (and is thus subject to taxation)."
+}

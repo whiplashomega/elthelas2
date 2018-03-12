@@ -1,0 +1,23 @@
+{
+  "name": "Malidal",
+  "nation": "Dormania",
+  "population": 25000,
+  "metro": 50000,
+  "majority": "Imperial Humans",
+  "ruling": "Imperial Humans",
+  "minorities": [
+    "Lightfoot Halflings",
+    "Imperial Gnomes",
+    "Elves",
+    "Half-Elves"
+  ],
+  "exports": [],
+  "landmarks": [
+    {
+      "name": "College of Arcanum",
+      "description": "Malidal has been a center of power for the magically inclined since before the founding of the Empire, and houses the largest school of magic east of Eldoran, the College of Arcanum. Housing at various times between 1,000 and 2,000 students, and between 50-100 teachers of all kinds of magic.  The college itself is a campus of gleaming white palaces with massive sheer marble towers that loom over the city."
+    }
+  ],
+  "coords": [29.19053283229458, 115.49034118652345],
+  "description": "  Built at the mouth of the Arcanum River, along the mile high cliffs of the World Crack, Malidal is a sight to behold.  The city is built around the College of Arcanum, the largest wizard's college outside of Zelfir and Eldoran.  The gleaming white towers of the college are visible for miles around.\n\n Malidal is also the upper terminus of the Great Ramp, a massive construction project started by Dorman V to connect Malidal to the sea below and provide a port on the western coast.\n\n The region surrounding Malidal is famous as wine country, and casks of wine from the region are often referred to among the merchant class as red gold."
+}

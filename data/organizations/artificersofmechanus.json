@@ -1,0 +1,38 @@
+{
+  "id": "artificersofmechanus",
+  "title": "Artificer's of Mechanus",
+  "description": "The Artificer's of Mechanus is an international organization of inventors, wizards, and engineers dedicated to seeking out hidden knowledge and building new or unusual machines and constructs.  They have sponsored universities in several major cities, and even universities that are not officially associated with the group typically still host members of the group.\n\nThe group has no official leadership, and only one real rule: knowledge should be shared freely with other members, and guarded closely from falling into the hands of others.",
+  "nations": [
+    "stagenheim",
+    "zelfir",
+    "deradragorim",
+    "eldoran",
+    "curinor",
+    "morrindim",
+    "gerasalim",
+    "dormania"
+  ],
+  "cities": [
+    "malidal",
+    "desadorel",
+    "strovenguard",
+    "milan",
+    "torinhammer",
+    "curinkeep",
+    "stromforde",
+    "granitebluff",
+    "vasha",
+    "vashna",
+    "craftheim",
+    "gnoma",
+    "ifritan",
+    "zelfin"
+  ],
+  "tenets": [
+    "The secrets of the guild must never be revealed.",
+    "Your secrets are the guilds secrets, and should be freely shared within the guild, but not outside of it.",
+    "The pursuit of knowledge transcends moral bounds."
+  ],
+  "level1": "**Engineer.** You get advantage on intelligence checks related to identifying or using magic items.",
+  "level10": "**Secret of the Golem.** Your skill has grown enough that the guild entrusts you with the secrets of golem building.  With sufficient time and materials you are able to build various types of golems.\n\n*50,000 gp worth of materials and 2 months: Iron Golem.\n*25,000 gp worth of materials and 1 month: Stone Golem.\n*20,000 gp worth of materials and 3 weeks: clay golem.\n*6,000 gp worth of materials, 3 humanoid corpses, and 2 weeks: flesh golem.\n*5,000 gp worth of materials and 1 week: copper golem.  Golems you build in this way obey your verbal orders to the best of their ability (unless berserk).  The copper golem is a new monster, a medium construct with an armor class of 13 (natural armor), 85 hit points (10d8+40), a 20 ft move speed, 18 str, 8 dev, 18 con, 3 int, 8 wis, 1 cha.  Immunity to acid, poison, and psychic damage.  Immune to charmed, exhaustion, frightened, paralyzed, petrified, and poisoned conditions.  darkvision 60 ft, passive perception 9.  Understands the languages of its creator but cannot speak.  A challenge rating of 4.  It has the following traits as written for the clay golem: berserk(triggers at 35 or fewer hit points), immutable form, magic resistance, and magic weapons, multiattack.  It's slam attack does 2d8+4 damage and has a +6 to hit.  It's proficiency bonus is +2."
+}

@@ -1,0 +1,16 @@
+{
+        "id": "matraktha",
+        "name": "Mat'raktha",
+        "holysymbol": "A downward pointing spike",
+        "alignment": "Lawful Evil",
+        "domains": "Death, Domination, Evil, Fate, Hatred, Law, Orc, Pride, Suffering",
+        "domains5": "Death",
+        "interfaithblessing": "+2 to attack rolls",
+        "worshippers": "Mat'raktha is worshipped by evil people throughout the world, if in secret in most places.  He is the patron of Orcs and the orcish tribes of Malinval and Olda mostly worship him.",
+        "allowedalignments": "Lawful Evil, Neutral Evil",
+        "weapon": "Greataxe",
+        "appearance": "Mat'raktha appears as an orc with very light olive green skin.  He has somewhat rough dark blonde hair precisely styled in neat dreads pulled back with a leather thong.  He is large and very muscled with sharp features and dark brown almost black eyes.  He is extremely well dressed, not necessarily expensive clothing but well-made, everything perfectly clean and neat.  Shoes and armor are always polished and there is never anything like worn cuffs or hanging threads.  Tusks are also always well-filed and polished.",
+        "dogma": "Mat'raktha promotes the domination of ones enemies through force.  His pride and hatred are what started the god War, and those who worship him are typically of the belief that the terms of the peace imposed at the end of the god War stripped Mat'raktha of what was rightfully his, domination over all the other god as King.",
+        "clergy": "Where his worship is allowed Mat'raktha's clerics extract tribute from his worshippers in return for blessings against their enemies.  Internal politicking among the clergy is common and those who rise high are either highly skilled, or quickly dead.",
+        "home": "Acheron"
+      }

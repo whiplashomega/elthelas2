@@ -1,0 +1,17 @@
+{
+  "id": "voidbringers",
+  "title": "Voidbringers",
+  "description": "The voidbringers are a collection of worshippers of Trollka, Malik, and various unspeakable evils from beyond the edge of existence who are dedicated to returning the world of Elthelas to the void.  The continued existence of the mortal plane is seen as an affrontory to the beauty of pure chaos, and so it must be brought to an end.",
+  "nations": [
+  
+  ],
+  "cities": [
+  
+  ],
+  "tenets": [
+    "Governments and organized religions represent the natural order.  I must never work for them, and should try to undermine them where possible.",
+    "If I have multiple ways I could solve a problem, I should choose the most violent or destructive method"
+  ],
+  "level1": "**Insanity.** You have been touched by the eternal void, and your mind will never be the same again.  Your dedication to chaos gives you advantage on saves against charm and fear.",
+  "level10": "**Extraplanar.** You are a senior agent of your God, and he speaks to you.  You can cast Contact Outer Plane once per day without using a spell slot so long as you use it to contact Trollka, Malik, or an outer evil whom you revere."
+}

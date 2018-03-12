@@ -1,0 +1,1219 @@
+<template>
+<div>
+  <h1>
+    Classes
+  </h1>
+  <p>
+    This page lists custom class descriptions for classes available in the Elthelas Campaign Setting.  As well as optional changes to existing classes
+    for balance reasons.
+  </p>
+  <ul class="list-inline">
+    <li class="list-inline-item"><button @click="showClass('barbarian')" class="racebutton btn btn-default">Barbarian</button></li>
+    <li class="list-inline-item"><button @click="showClass('bard')" class="racebutton btn btn-default">Bard</button></li>
+    <li class="list-inline-item"><button @click="showClass('cleric')" class="racebutton btn btn-default">Cleric</button></li>
+    <li class="list-inline-item"><button @click="showClass('druid')" class="racebutton btn btn-default">Druid</button></li>
+    <li class="list-inline-item"><button @click="showClass('factotum')" class="racebutton btn btn-default">Factotum</button></li>
+    <li class="list-inline-item"><button @click="showClass('fighter')" class="racebutton btn btn-default">Fighter</button></li>
+    <li class="list-inline-item"><button @click="showClass('monk')" class="racebutton btn btn-default">Monk</button></li>
+    <li class="list-inline-item"><button @click="showClass('paladin')" class="racebutton btn btn-default">Paladin</button></li>
+    <li class="list-inline-item"><button @click="showClass('ranger')" class="racebutton btn btn-default">Ranger</button></li>
+    <li class="list-inline-item"><button @click="showClass('rogue')" class="racebutton btn btn-default">Rogue</button></li>
+    <li class="list-inline-item"><button @click="showClass('sorcerer')" class="racebutton btn btn-default">Sorcerer</button></li>
+    <li class="list-inline-item"><button @click="showClass('warlock')" class="racebutton btn btn-default">Warlock</button></li>
+    <li class="list-inline-item"><button @click="showClass('wizard')" class="racebutton btn btn-default">Wizard</button></li>
+  </ul>
+  <div id="raceDetails"></div>
+  <div class="racediv" id="barbarian">
+    <h2>Barbarian</h2>
+    <p>For a detailed description of the Barbarian class see the Player's Handbook (p46-50)</p>
+    <h3>Primal Path</h3>
+    <p>Barbarians have the following Primal Paths available to them: </p>
+    <ul>
+      <li>Path of the Ancestral Guardian (XGE p9)</li>
+      <li>Path of the Battlerager (SCAG p121)</li>
+      <li>Path of the Berserker (PHB p49)</li>
+      <li>Path of the Storm Herald (XGE p10)</li>
+      <li>Path of the Totem Warrior (PHB p50)</li>
+      <li>Path of the Zealot (XGE p11)</li>
+    </ul>
+    <p>
+      You may also ask your DM to consider the following changes to the Barbarian's class features for balance reasons:
+    </p>
+    <h4>Rage</h4>
+    <p>
+      In battle, you fight with primal ferocity. On your turn,
+      you can enter a rage as a bonus action.
+    </p>
+    <p>
+      While raging, you gain the following benefits if you
+      aren’t wearing heavy armor:
+    </p>
+    <ul>
+      <li>You have advantage on Strength checks and Strength
+        saving throws.</li>
+      <li>
+        When you make a melee weapon attack using
+        Strength, you gain a bonus to the damage roll that
+        increases as you gain levels as a barbarian, <strike>as shown
+        in the Rage Damage column of the Barbarian table.</strike>
+        <strong>Equal to 1/4 your barbarian level (rounded up) + 2.</strong>
+      </li>
+      <li>You have resistance to bludgeoning, piercing, and
+        slashing damage.</li>
+    </ul>
+    <table class="table">
+      <tbody>
+        <tr><th>Barbarian Level</th><th>1-4</th><th>5-8</th><th>9-12</th><th>13-16</th><th>17-20</th></tr>
+        <tr><th>Rage Damage</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr>
+      </tbody>
+    </table>
+    <p>
+      If you are able to cast spells, you can’t cast them or
+      concentrate on them while raging.
+    </p>
+    <p>
+      Your rage lasts for 1 minute. It ends early if you are
+      knocked unconscious or if your turn ends and you
+      haven’t attacked a hostile creature since your last turn
+      or taken damage since then. You can also end your rage
+      on your turn as a bonus action.
+    </p>
+    <p>
+      Once you have raged the number of times shown
+      for your barbarian level in the Rages column of the
+      Barbarian table, you must finish a long rest before you
+      can rage again.
+    </p>
+  </div>
+  <div class="racediv" id="bard">
+    <h2>Bard</h2>
+    <p>For a detailed description of the Bard class see the Player's Handbook (p51-55)</p>
+    <h3>Bard College</h3>
+    <p>Bards have the following Bard Colleges available to them: </p>
+    <ul>
+      <li>College of Glamour (XGE p14)</li>
+      <li>College of Lore (PHB p54)</li>
+      <li>College of Swords (XGE p15)</li>
+      <li>College of Valor (PHB p55)</li>
+      <li>College of Whispers (XGE p16)</li>
+    </ul>
+  </div>
+  <div class="racediv" id="cleric">
+    <h2>Cleric</h2>
+    <p>For a detailed description of the Cleric class see the Player's Handbook (p56-63)</p>
+    <h3>Domain</h3>
+    <p>Clerics have the following Domains available to them: </p>
+    <ul>
+      <li><router-link to="/options/domains">Air (homebrew)</router-link></li>
+      <li>Arcana (SCAG p125-126)</li>
+      <li>Death (DMG)</li>
+      <li><router-link to="/options/domains">Earth (homebrew)</router-link></li>
+      <li><router-link to="/options/domains">Fire (homebrew)</router-link></li>
+      <li><router-link to="/options/domains">Forge (XGE)</router-link></li>
+      <li>Knowledge (PHB p59-60)</li>
+      <li>Life (PHB p60)</li>
+      <li>Light (PHB p60-61)</li>
+      <li>Nature (PHB p61-62)</li>
+      <li>Tempest (PHB p62)</li>
+      <li><router-link to="/options/domains">Trade (homebrew)</router-link></li>
+      <li>Trickery (PHB p62-63)</li>
+      <li>War (PHB p63)</li>
+      <li><router-link to="/options/domains">Water (homebrew)</router-link></li>
+    </ul>
+    <p>Note that a Cleric's domain choices </p>
+  </div>
+  <div class="racediv" id="druid">
+    <h2>Druid</h2>
+    <p>For a detailed description of the Druid class see the Player's Handbook (p64-69)</p>
+    <h3>Druid Circle</h3>
+    <p>Druids have the following Druid Circles available to them: </p>
+    <ul>
+      <li>Circle of Dreams (XGE p22)</li>
+      <li>Circle of the Land (PHB p68-69)</li>
+      <li>Circle of the Moon (PHB p69)</li>
+      <li>Circle of the Shepherd (XGE p23)</li>
+    </ul>
+  </div>
+  <div class="racediv" id="fighter">
+    <h2>Fighter</h2>
+    <p>For a detailed description of the Fighter class see the Player's Handbook (p70-75)</p>
+    <h3>Martial Archetypes</h3>
+    <p>Fighters have the following Martial Archetypes available to them: </p>
+    <ul>
+      <li>Arcane Archer (XGE p28)</li>
+      <li>Battle Master (PHB p73-74)</li>
+      <li>Cavalier (XGE p30)</li>
+      <li>Champion (PHB p72-73)</li>
+      <li>Eldritch Knight (PHB p74-75)</li>
+      <li>Knight of the Realm (see Purple Dragon Knight SCAG p128)</li>
+      <li>Samurai (XGE p31)</li>
+      <li>Scourer (see below)</li>
+    </ul>
+    <h3>Scourer</h3>
+    <p>
+      The scourer has dedicated their life to defeating magic. The scourer is a specialized individual that has trained to combat mages and the
+      spells they create. The scourer is unstoppable against those that cast spells, but is less effective against fighters, soldiers and
+      the like.
+    </p>
+    <p>
+      A scourer may be traveling alone, having a specific magical person or item to seek revenge on, or be part of a small group dedicated to
+      eradicating magic from the world. Scourers are part of a backlash against those in power that always seem to be, or have access to, magic.
+    </p>
+    <p>
+      Hiring a scourer is often cheaper than hiring a wizard, and can be used to effectively level the playing field against a group with magic.
+    </p>
+    <h4>Slay Magic</h4>
+    <p>
+      At third level when you take this Martial Archetype your skills reveal weak spots in spell casters that others miss. Gain an extra 1d8 damage against an enemy that you have seen casting a
+      spell within the last minute. This damage increases to 2d8 at level 18.
+    </p>
+    <h4>Bonus Proficiencies</h4>
+    <p>
+      You gain proficiency in the arcana skill.
+    </p>
+    <h4>Capture Magic</h4>
+    <p>
+      At level 7 you have learned how spell casters create and spin their magical effects, and have learned how to prevent it. When you successfully
+      grapple a creature, the target becomes unable to cast spells that have verbal or semantic components as long as they are grappled.
+    </p>
+    <h4>Counter Magic</h4>
+    <p>
+      At level 10 you have learned the inner working of spells and can inherently use the spell against itself. Twice per short rest, you can bend another’s
+      spell to your will.  To do this you must spend your reaction to negate or control another casters spell. 3rd level or lower spells are automatically affected while higher level spells
+      require a charisma check with the DC being 10 + the spells level. If you succeed, you can choose to negate the spell entirely, or
+      if the spell targets a single target other than the caster, you can choose a different target for the spell. If the spell is a concentration spell,
+      you take over concentration for the spells duration if you choose to do so. You may only concentrate on one spell at a time.
+    </p>
+    <h4>See Magic</h4>
+    <p>
+      At level 15, you have learned to see past the trickery magic can create. You have advantage on wisdom saves against spells and advantage on detecting
+      illusions.
+    </p>
+  </div>
+  <div class="racediv" id="factotum">
+    <h2>Factotum</h2>
+    <p>
+      The Factotum is a homebrewed class loosely based on the similarly named class from D&D 3.5.
+    </p>
+    <p>
+      The Factotum is the ultimate seeker of knowledge.  A student of
+      all schools, the Factotum seeks any kind of knowledge, and uses everything
+      she learns to her advantage.  Her constant study allows the Factotum to
+      display flashes of inspiration, filling any role necessary, if only for
+      a short time.  The Factotum is nothing if not versatile, although
+      occasionally unfocused.
+    </p>
+    <p>
+      Above all, the Factotum is prepared for anything, any circumstance and any challenge, at least when
+      they manage to make it out of the library.  While the Factotum's focus on learning new things is
+      similar to the wizard's focus on arcane knowledge, the Factotum does not share the Wizard's focus.
+      The Factotum is just as interested in that tome on arcane combat styles, or the architects detailed
+      schematics as that previously unknown spell.
+    </p>
+    <p>
+      Factotum's as civilians often work as librarians, scientists, or advisors to people of power.  As adventurers
+      they travel the world seeking out stores of hidden knowledge, documenting unusual creatures, learning from reclusive
+      masters of various arts and skills, or just meeting unusual people, enjoying foods they could never experience at home,
+      and seeing the sights.  In all of their doings they have a talent for coming up with the solution no one else thought of,
+      and with a flash of inspiration, snatching victory and success from the jaws of failure and defeat.
+    </p>
+    <p>
+      Humans and half-elves are the most common factotums, followed by halflings
+      and gnomes.
+    </p>
+    <h3>The Factotum</h3>
+    <table class="classtable table table-striped" id="factotumtable">
+      <thead>
+        <tr>
+          <th>Level</th><th>Prof. Bonus</th><th>Feature</th><th class="tablet-l">Cantrips Known</th><th class="tablet-l">1st</th><th class="tablet-l">2nd</th><th class="tablet-l">3rd</th><th class="tablet-l">4th</th><th class="tablet-l">5th</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td><td>2</td><td>Inspiration, Inspired Skills</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+        </tr>
+        <tr>
+          <td>2</td><td>2</td><td>Inspired Attack, Inspired Damage, Spellcasting</td><td>4</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td>
+        </tr>
+        <tr>
+          <td>3</td><td>2</td>
+          <td>Factotum Philosophy Feature</td><td>4</td><td>3</td><td>0</td><td>0</td><td>0</td><td>0</td>
+        </tr>
+        <tr>
+          <td>4</td><td>2</td>
+          <td>Ability Score Improvement</td><td>5</td><td>3</td><td>0</td><td>0</td><td>0</td><td>0</td>
+        </tr>
+        <tr>
+          <td>5</td><td>3</td>
+          <td>Extra Attack</td><td>5</td><td>4</td><td>2</td><td>0</td><td>0</td><td>0</td>
+        </tr>
+        <tr>
+          <td>6</td><td>3</td>
+          <td>Ability Score Improvement</td><td>5</td><td>4</td><td>2</td><td>0</td><td>0</td><td>0</td>
+        </tr>
+        <tr>
+          <td>7</td><td>3</td>
+          <td>Factotum Philosophy Feature</td><td>5</td><td>4</td><td>3</td><td>0</td><td>0</td><td>0</td>
+        </tr>
+        <tr>
+          <td>8</td><td>3</td>
+          <td>Ability Score Improvement</td><td>5</td><td>4</td><td>3</td><td>0</td><td>0</td><td>0</td>
+        </tr>
+        <tr>
+          <td>9</td><td>4</td>
+          <td></td><td>5</td><td>4</td><td>3</td><td>2</td><td>0</td><td>0</td>
+        </tr>
+        <tr>
+          <td>10</td><td>4</td>
+          <td>Factotum Philosophy Feature</td><td>6</td><td>4</td><td>3</td><td>2</td><td>0</td><td>0</td>
+        </tr>
+        <tr>
+          <td>11</td><td>4</td>
+          <td>Inspired Defense</td><td>4</td><td>6</td><td>3</td><td>3</td><td>0</td><td>0</td>
+        </tr>
+        <tr>
+          <td>12</td><td>4</td>
+          <td>Ability Score Improvement</td><td>6</td><td>4</td><td>3</td><td>3</td><td>0</td><td>0</td>
+        </tr>
+        <tr>
+          <td>13</td><td>5</td>
+          <td>-</td><td>6</td><td>4</td><td>3</td><td>3</td><td>1</td><td>0</td>
+        </tr>
+        <tr>
+          <td>14</td><td>5</td>
+          <td>Inspired Aid</td><td>6</td><td>4</td><td>3</td><td>3</td><td>1</td><td>0</td>
+        </tr>
+        <tr>
+          <td>15</td><td>5</td>
+          <td>Factotum Philosophy Feature</td><td>6</td><td>4</td><td>3</td><td>3</td><td>2</td><td>0</td>
+        </tr>
+        <tr>
+          <td>16</td><td>5</td>
+          <td>Ability Score Improvement</td><td>6</td><td>4</td><td>3</td><td>3</td><td>2</td><td>0</td>
+        </tr>
+        <tr>
+          <td>17</td><td>6</td>
+          <td></td><td>6</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td>
+        </tr>
+        <tr>
+          <td>18</td><td>6</td>
+          <td></td><td>6</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td>
+        </tr>
+        <tr>
+          <td>19</td><td>6</td>
+          <td>Ability Score Improvement</td><td>6</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td>
+        </tr>
+        <tr>
+          <td>20</td><td>6</td>
+          <td>Inspired Recovery</td><td>6</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Hit Points</h3>
+    <p>
+      <strong>Hit Dice:</strong> 1d8 per factotum level<br />
+      <strong>Hit Points at 1st Level:</strong> 8 + your Constitution Modifier<br />
+      <strong>Hit Points at Higher Levels:</strong> 1d8(or 5) + your Constitution modifier per
+      factotum level after 1st.
+    </p>
+    <h3>Proficiencies</h3>
+    <p>
+      <strong>Armor: </strong>Light armor, shields<br />
+      <strong>Weapons: </strong>Simple and martial weapons<br />
+      <strong>Tools: </strong>Thieves' Tools<br />
+      <strong>Saving Throws: </strong> Dexterity, Intelligence<br />
+      <strong>Skills: </strong> Choose any three skills
+    </p>
+    <h3>Equipment</h3>
+    <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+    <ul>
+      <li>(a) 2 weapons or (b) 1 weapon and a shield</li>
+      <li>(a) a short bow and 20 arrows, (b) a light crossbow and 20 bolts, or (c) two handaxes</li>
+      <li>(a) A dungeoneer's pack or (b) an explorer's pack</li>
+      <li>Leather armor</li>
+      <li>(a) a component pouch or (b) an arcane focus</li>
+      <li>Thief's tools</li>
+    </ul>
+    <h3>Class Features</h3>
+    <h4>Inspired</h4>
+    <p>
+      The Factotum gets a number of epiphany points that they can spend to
+      activate certain class features.  They get epiphany points equal to
+      their intelligence modifier plus half their class level (rounded down),
+      minimum 1.  They recover all of their epiphany points when they
+      finish a short rest.
+    </p>
+    <h4>Inspired Skills</h4>
+    <p>
+      You can spend an epiphany point when making any skill check to add
+      your intelligence bonus to the check.
+    </p>
+    <h4>Spellcasting</h4>
+    <p>
+      Starting at 2nd level, you start to pick up the intricacies of casting spells.  As a student of magic, you have a spellbook
+      containing spells that you have picked up in your travels.
+    </p>
+    <h4>Cantrips</h4>
+    <p>
+      At 2nd level, you know four cantrips of your choice from any spell list. You learn additional cantrips of your choice at higher levels, as
+      shown in the Cantrips Known column of the Factotum table.
+    </p>
+    <h4>Spellbook</h4>
+    <p>
+      At 2nd level you have a spellbook containing six 1st-level spells of your choice.
+    </p>
+    <h4>Preparing and Casting Spells</h4>
+    <p>
+      The Factotum table shows how many spell slots you have to cast your spells of 1st level and higher.  To cast one of these spells, you must
+      expend a slot of the spell's level or higher as well as one epiphany point.  You regain all expended spell slots when you finish a long rest.
+    </p>
+    <p>
+      You prepare the list of spells that are available for you to cast.  To do so choose a number of spells from your spellbook equal to your
+      intelligence modifier + one half of your factotum level (rounded down, minimum of 1 spell).  The spells must be of a level for which you have spell slots.
+    </p>
+    <p>
+      For example, if you're a 5th-level factotum, you have four 1st-level and two 2nd-level spell slots.  With an intelligence of 16, your list of
+      prepared spells can include five spells of 1st or 2nd level, in any combination, chosen from your spellbook.  If you prepare the 1st-level
+      spell magic missile, you can cast it using a 1st-level or a 2nd-level slot.  Casting a spell doesn't remove it from your list of prepared
+      spells.
+    </p>
+    <p>
+      You can change your list of prepared spells when you finish a long rest.  Preparing a new list of spells requires time spent studying your
+      spellbook and memorizing incantations and gestures you must make to cast a spell: at least 1 minute per spell level for each spell on your list.
+    </p>
+    <h4>Spellcasting Ability</h4>
+    <p>
+      Intelligence is your spellcasting ability for your spells, since you learn your spells through dedicated study and memorization. You use your
+      Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving
+      throw DC for a spell you cast and when making an attack roll with one. Spell save DC = 8 + your proficiency bonus + your Intelligence modifier
+      Spell attack modifier = your proficiency bonus + your intelligence modifier.
+    </p>
+    <h4>Ritual Casting</h4>
+    <p>
+      You can cast a spell as a ritual if that spell has the ritual tag and you have the spell in your spellbook. You don't need to have the spell
+      prepared.
+    </p>
+    <h4>Spellcasting Focus</h4>
+    <p>
+      You can use an arcane focus or a divine focus (found in chapter 5) as a spellcasting focus for your spells.
+    </p>
+    <h4>Learning Spells of 1st Level and Higher</h4>
+    <p>
+      Each time you gain a Factotum level after 2nd, you can add one spell of your choice to your spellbook. Each of these spells must be of a level for which
+      you have spell slots, as shown on the Factotum table. On your adventures, you might find other spells that you can add to your spellbook
+      (see the “Your Spellbook” sidebar).
+    </p>
+    <h4>Inspired Attack</h4>
+    <p>
+      Starting at 2nd level, you can spend an epiphany point before
+      making an attack roll to add your intelligence bonus to the attack
+      roll.
+    </p>
+    <h4>Inspired Damage</h4>
+    <p>
+      Starting at 2nd level, as a bonus action you can spend an epiphany
+      point to add 1d8 to any weapon or spell damage roll you make until
+      the start of your next turn.
+    </p>
+    <h4>Factotum Philosophy</h4>
+    <p>
+      At 3rd level your studies begin to focus on a particular specialty.
+      Choose one of the Factotum Philosophies below, you gain different
+      abilities depending on which philosophy you choose.  You gain
+      additional philosophy features at 7th, 10th and 15th level.
+    </p>
+    <h4>Ability Score Improvement</h4>
+    <p>
+      At 4th level, and again at 6th, 8th, 12th, 16th, and 19th level, you gain a +2 bonus to one ability score, +1 to two ability scores, or a feat.
+    </p>
+    <h4>Extra Attack</h4>
+    <p>
+      At 5th level you can make 2 attacks when you take the attack action on your turn.
+    </p>
+    <h4>Inspired Defense</h4>
+    <p>
+      At 11th level you can spend 1 epiphany point to use the dodge or disengage actions as bonus actions on your turn.
+    </p>
+    <h4>Inspired Aid</h4>
+    <p>
+      At 14th level you can spend 1 epiphany point to use the help action as a bonus action on your turn.
+    </p>
+    <h4>Inspired Recovery</h4>
+    <p>
+      At 20th level you no longer require a short rest to regain your
+      epiphany points, but can do so by spending 10 minutes reading and
+      studying your books and materials.
+    </p>
+    <h3>Factotum Philosophies</h3>
+    <h3>Brains Over Brawn</h3>
+    <p>
+      Those who follow the Brains over Brawn philosophy have focused their studies on the weaknesses
+      of their potential enemies, taking the idea of knowledge as power into the field of combat. These
+      scholars always seem to know their enemies weaknesses, and can use that knowledge to get around
+      their defenses.
+    </p>
+    <h4>Know Your Enemy</h4>
+    <p>
+      Starting at 3rd level, you can spend a bonus action to study an
+      opponent and discover how to get past its defenses.   When you use
+      this ability pick a target, you can use your intelligence modifier
+      instead of strength or dexterity on weapon attack rolls and damage
+      rolls against that target until the start of your next turn.
+    </p>
+    <h4>Fighting Style Mimic</h4>
+    <p>
+      At 7th level the Brains over Brawn Factotum can pick one of the following fighting styles.  Whenever they finish a long rest they can
+      spend 3 epiphany points to replace this fighting style with a different one from the list.  This ability does not stack with the fighting
+      style granted by any other class.
+    </p>
+    <ul>
+      <li><strong>Archery</strong> - You gain a +2 bonus to attack rolls you make with ranged weapons.</li>
+      <li><strong>Dueling</strong> - When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls
+          with that weapon.</li>
+      <li><strong>Two-Weapon Fighting</strong> - When you engage in two-weapon fighting, you can add your ability modifier to the damage
+          of the second attack.</li>
+      <li><strong>Great Weapon Fighting</strong> - When you roll a 1 or 2 on a damage die for an attack you
+          make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new
+          roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain
+          this benefit.</li>
+    </ul>
+    <h4>Improved Inspired Damage</h4>
+    <p>
+      At 10th level, when you use the inspired damage feature you add 2d8 to
+      your damage rolls.
+    </p>
+    <h4>Improved inspired Attack</h4>
+    <p>
+      At 15th level, when you use an epiphany point to add a bonus to
+      your attack roll, you can make an additional attack as a bonus action,
+      adding your intelligence modifier to both attacks.
+    </p>
+    <h3>Arcane Dilettante</h3>
+    <p>
+      The Arcane Dilettante has studied magic enough that they begin to seem less like
+      their faking it, and more like a practiced wizard.  They no longer rely on bursts
+      of inspiration for their most practiced spells, and can put together an idea of
+      how to cast even unpracticed spells with less effort.
+    </p>
+    <h4>Cantrip Master</h4>
+    <p>
+      At 3rd level you have become particularly adept at casting very basic spells.  You learn 2 additional cantrips in addition to the
+      number shown in the Factotum table.
+    </p>
+    <h4>Additional Skill Proficiency</h4>
+    <p>
+      At 3rd level the arcane dilettante gains proficiency in the arcana skill.  If they were already proficient in the
+      arcana skill they gain expertise in the arcana skill (can add their proficiency bonus twice).
+    </p>
+    <h4>Keen Observer</h4>
+    <p>
+      Starting at 7th level you have become a proficient enough spell caster that you can make a spell work with only minimal study.
+      Starting when they gain this feature, the Factotum can add any spell they successfully observe being cast to their spellbook.  In order to
+      successfully add it to their spellbook the following conditions
+      must be met:
+      <ul>
+        <li>The spell must be of a level the Factotum can cast.</li>
+        <li>
+          The Factotum must be able to see (if it has somatic/material components) and hear (if it has a verbal component)
+          the spell being cast.
+        </li>
+        <li>
+          They then must succeed on an intelligence (arcana) check with a DC equal to 15 + the spells level at the time the spell is cast.
+          If they fail this check they can try again only if they observe the spell being cast again.
+        </li>
+      </ul>
+    </p>
+    <h4>Quick Study</h4>
+    <p>
+      Starting at 10th level, whenever The Factotum finishes a short rest they can trade 1 spell from their prepared list for a different spell in
+      their spellbook.
+    </p>
+    <h4>Sage</h4>
+    <p>
+      Starting at 15th level you can cast spells without spending epiphany points on them.
+    </p>
+    <h3>The Skill Monkey</h3>
+    <p> The Skill Monkey has made it their mission to master every skill, taking the Factotum's philosophy of being prepared for anything to its ultimate extreme.</p>
+    <h4>Jack-of-all-Trades</h4>
+    <p>
+      Starting at 3rd level, you can add half your proficiency
+      bonus, rounded down, to any ability check you make that
+      doesn’t already include your proficiency bonus.
+    </p>
+    <h4>Improved Inspired Skills</h4>
+    <p>
+      Starting at 7th level, when the Skill Monkey uses the inspire skill ability they add their proficiency bonus as well as their intelligence modifier
+      to the check, even if they are already proficient in that skill.
+    </p>
+    <h4>Expertise</h4>
+    <p>
+      At 10th level, choose two of your skill proficiencies. Your
+      proficiency bonus is doubled for any ability check you
+      make that uses either of the chosen proficiencies.
+    </p>
+    <h4>Reliable Talent</h4>
+    <p>
+      By 15th level, you have refined your chosen skills until
+      they approach perfection. Whenever you make an ability
+      check that lets you add your proficiency bonus, you can
+      treat a d20 roll of 9 or lower as a 10.
+    </p>
+  </div>
+  <div class="racediv" id="monk">
+    <h2>Monk</h2>
+    <p>For a detailed description of the Monk class see the Player's Handbook (p76-81)</p>
+    <h3>Monastic Tradition</h3>
+    <p>Monks have the following Monastic Traditions available to them: </p>
+    <ul>
+      <li>Way of the Drunken Master (XGE p33)</li>
+      <li>Way of the Four Elements (PHB p80-81)</li>
+      <li>Way of the Kensei (XGE p34)</li>
+      <li>Way of the Long Death (SCAG p130-131)</li>
+      <li>Way of the Open Hand (PHB p79-80)</li>
+      <li>Way of Shadow (PHB p80)</li>
+      <li>Way of the Sun Soul (SCAG p131/XGE p35)</li>
+    </ul>
+  </div>
+  <div class="racediv" id="paladin">
+    <h2>Paladin</h2>
+    <p>For a detailed description of the Paladin class see the Player's Handbook (p82-88)</p>
+    <h3>Sacred Oath</h3>
+    <p>Paladins have the following Sacred Oaths available to them:</p>
+    <ul>
+      <li>Oath of the Ancients (PHB p86-87)</li>
+      <li>Oath of Conquest (XGE p37)</li>
+      <li>Oath of Devotion (PHB p85-86)</li>
+      <li>Oath of Redemption (XGE p38)</li>
+      <li>Oath of the Crown (SCAG p132-133)</li>
+      <li>Oath of Vengeance (PHB p87-88)</li>
+    </ul>
+  </div>
+  <div class="racediv" id="ranger">
+    <h2>Ranger (Revised)</h2>
+    <p>
+      This is a version of the ranger class based on the <a href="https://drive.google.com/file/d/0B8hs5jMXGj5iVHo0Zm9MOWx0TEU/view?usp=sharing">the Revised Ranger</a>
+      from unearthed arcana.
+    </p>
+    <p>
+      Important differences include:
+    </p>
+    <ul>
+      <li>Primeval awareness is gained at level 1 instead of 3.</li>
+      <li>Primeval awareness range is reduced to 120 ft, and does not reveal numbers or other attributes.</li>
+      <li>All humanoids can no longer be a favored enemy, rather you must choose 2 races of humanoids.</li>
+      <li>Natural Explorer delayed until 3rd level.</li>
+      <li>Natural explorer no longer grants advantage on attack rolls.</li>
+      <li>Penalty imposed by Hide in Plain Sight reduced to -5.</li>
+      <li>The Deep Stalker Conclave is not available.</li>
+    </ul>
+    <table class="classtable table table-striped" id="rangertable">
+      <thead>
+        <tr>
+          <th>Level</th><th>Prof. bonus</th><th>Features</th><th class="tablet-l">Spells Known</th><th class="tablet-l">1st</th><th class="tablet-l">2nd</th><th class="tablet-l">3rd</th><th class="tablet-l">4th</th><th class="tablet-l">5th</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1st</td><td>+2</td><td>Favored Enemy, Primeval Awareness</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+          <td>2nd</td><td>+2</td><td>Fighting Style, Spellcasting</td><td>2</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+          <td>3rd</td><td>+2</td><td>Natural Explorer, Ranger Conclave</td><td>3</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+          <td>4th</td><td>+2</td><td>Ability Score Improvement</td><td>3</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+          <td>5th</td><td>+3</td><td>Ranger Conclave Feature</td><td>4</td><td>4</td><td>2</td><td>-</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+          <td>6th</td><td>+3</td><td>Greater Favored Enemy</td><td>4</td><td>4</td><td>2</td><td>-</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+          <td>7th</td><td>+3</td><td>Ranger Conclave Feature</td><td>5</td><td>4</td><td>3</td><td>-</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+          <td>8th</td><td>+3</td><td>Ability Score Improvement</td><td>5</td><td>4</td><td>3</td><td>-</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+          <td>9th</td><td>+4</td><td>Fleet of Foot</td><td>6</td><td>4</td><td>3</td><td>2</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+          <td>10th</td><td>+4</td><td>Hide in Plain Sight</td><td>6</td><td>4</td><td>3</td><td>2</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+          <td>11th</td><td>+4</td><td>Ranger Conclave Feature</td><td>7</td><td>4</td><td>3</td><td>3</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+          <td>12th</td><td>+4</td><td>Ability Score Improvement</td><td>7</td><td>4</td><td>3</td><td>3</td><td>-</td><td>-</td>
+        </tr>
+        <tr>
+          <td>13th</td><td>+5</td><td>Improved Natural Explorer</td><td>8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>-</td>
+        </tr>
+        <tr>
+          <td>14th</td><td>+5</td><td>Vanish</td><td>8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>-</td>
+        </tr>
+        <tr>
+          <td>15th</td><td>+5</td><td>Ranger Conclave Feature</td><td>9</td><td>4</td><td>3</td><td>3</td><td>2</td><td>-</td>
+        </tr>
+        <tr>
+          <td>16th</td><td>+5</td><td>Ability Score Improvement</td><td>9</td><td>4</td><td>3</td><td>3</td><td>2</td><td>-</td>
+        </tr>
+        <tr>
+          <td>17th</td><td>+6</td><td>-</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td>
+        </tr>
+        <tr>
+          <td>18th</td><td>+6</td><td>Feral Senses</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td>
+        </tr>
+        <tr>
+          <td>19th</td><td>+6</td><td>Ability Score Improvement</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td>
+        </tr>
+        <tr>
+          <td>20th</td><td>+6</td><td>Foe Slayer</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Hit Points</h3>
+    <p>
+      <strong>Hit Dice: </strong> 1d10 per ranger level<br />
+      <strong>Hit Points at 1st Level: </strong> 10 + your Constitution modifier<br />
+      <strong>Hit Points at Higher Levels: </strong> 1d10 (or 6) + your Constitution modifier per ranger level after 1st
+    </p>
+    <h3>Proficiencies</h3>
+    <p>
+      <strong>Armor: </strong> Light armor, medium armor, shield<br />
+      <strong>Weapons: </strong> Simple weapons, martial weapons<br />
+      <strong>Tools: </strong> None
+    </p>
+    <p>
+      <strong>Saving Throws: </strong> Strength, Dexterity<br />
+      <strong>Skills: </strong> Choose three from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival
+    </p>
+    <h3>Equipment</h3>
+    <p>
+      You start with the following equipment, in addition to the equipment granted by your background:
+    </p>
+    <ul>
+      <li>(a) scale mail or (b) leather armor</li>
+      <li>(a) two shortswords or (b) two simple melee weapons</li>
+      <li>(a) a dungeoneer's pack or (b) an explorer's pack</li>
+      <li>A longbow and a quiver of 20 arrows</li>
+    </ul>
+    <h3>Favored Enemy</h3>
+    <p>
+      Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy commonly encountered in the wilds.
+    </p>
+    <p>
+      Choose a type of favored enemy: beasts, fey, two races of humanoids, monstrosities, or undead. You gain a +2 bonus to damage rolls with weapon attacks against creatures of the
+      chosen type. Additionally, you have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.
+    </p>
+    <p>
+      When you gain this feature, you also learn one language of your choice, typically one spoken by your favored enemy or creatures associated with it. However, you are
+      free to pick any language you wish to learn.
+    </p>
+    <h3>Primeval Awareness</h3>
+    <p>
+      Your mastery of ranger lore allows you to establish a powerful link to beasts and to the land around you.
+    </p>
+    <p>
+      You have an innate ability to communicate with beasts, and they recognize you as a kindred spirit. Through sounds and gestures, you can
+      communicate simple ideas to a beast as an action, and can read its basic mood and intent. You learn its emotional state, whether it is affected by
+      magic of any sort, its short-term needs (such as food or safety), and actions you can take (if any) to persuade it to not attack.
+    </p>
+    <p>
+      You cannot use this ability against a creature that you have attacked within the past 10 minutes.
+    </p>
+    <p>
+      Additionally, you can attune your senses to determine if any of your favored enemies lurk nearby. By spending an action in
+      concentration (as if you were concentrating on a spell), you can sense whether any of your favored enemies are present within 120 ft of
+      you. This feature reveals which of your favored enemies are present, and the creatures’ general direction and distance from you, but not their numbers or other attributes.
+    </p>
+    <p>
+      If there are multiple groups of your favored enemies within range, you learn this information for each group.
+    </p>
+    <h3>Fighting Style</h3>
+    <p>
+      At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style
+      option more than once, even if you later get to choose again.
+    </p>
+    <h4>Archery</h4>
+    <p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
+    <h4>Defense</h4>
+    <p>While you are wearing armor, you gain a +1 bonus to AC</p>
+    <h4>Dueling</h4>
+    <p>When you are weilding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+    <h4>Two-Weapon Fighting</h4>
+    <p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
+    <h3>Spellcasting</h3>
+    <p>
+      By the time you reach 2nd level, you have learned to use the magical essence of nature to cast spells, much as a druid does. See chapter 10
+      for the general rules of spellcasting and chapter 11 for the ranger spell list.
+    </p>
+    <h4>Spell Slots</h4>
+    <p>
+      The Ranger table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must
+      expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.
+    </p>
+    <p>
+      For example, if you know the 1st-level spell animal friendship and have a 1st-level and a 2nd-level spell slot available, you can cast animal
+      friendship using either slot.
+    </p>
+    <h4>Spells Known of 1st Level and Higher</h4>
+    <p>
+      You know two 1st-level spells of your choice from the ranger spell list.
+    </p>
+    <p>
+      The Spells Known column of the Ranger table shows when you learn more ranger spells of your choice. Each of these spells must be of a level for
+      which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.
+    </p>
+    <p>
+      Additionally, when you gain a level in this class, you can choose one of the ranger spells you know and replace it with another spell from the
+      ranger spell list, which also must be of a level for which you have spell slots.
+    </p>
+    <h4>Spellcasting Ability</h4>
+    <p>
+      Wisdom is your spellcasting ability for your ranger spells, since your magic draws on your attunement to nature. You use your Wisdom
+      whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a
+      ranger spell you cast and when making an attack roll with one.
+    </p>
+    <p>
+      <strong>Spell save DC = </strong> 8 + your proficiency bonus + your Wisdom modifier
+    </p>
+    <p>
+      <strong>Spell attack modifier = </strong> your proficiency bonus + your Wisdom modifier
+    </p>
+    <h3>Natural Explorer</h3>
+    <p>
+      By the time you reach 3rd level you have become a master of navigating the natural world, and you react with swift and decisive action when
+      attacked. This grants you the following benefits:
+    </p>
+    <ul>
+      <li>You ignore difficult terrain.</li>
+      <li>You have advantage on initiative rolls.</li>
+    </ul>
+    <p>
+      In addition you are skilled at navigating the wilderness.  You gain the following benefits when traveling for an hour or more:
+    </p>
+    <ul>
+      <li>Difficult terrain doesn't slow your groups travel.</li>
+      <li>Your group can't become lost except by magical means.</li>
+      <li>Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.</li>
+      <li>If you are traveling alone, you can move stealthily at a normal pace.</li>
+      <li>When you forage, you find twice as much food as you normally would.</li>
+      <li>While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</li>
+    </ul>
+    <h3>Ranger Conclave</h3>
+    <p>
+      At 3rd level, you choose to emulate the ideals and training of a ranger conclave: the Beast Conclave, the Hunter Conclave, or the Stalker
+      Conclave, all detailed at the end of the class description. Your choice grants you features at 3rd level and again at 5th, 7th, 11th, and 15th
+      level.
+    </p>
+    <h3>Ability Score Improvement</h3>
+    <p>
+      When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase
+      two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.
+    </p>
+    <h3>Greater Favored Enemy</h3>
+    <p>
+      At 6th level, you are ready to hunt even deadlier game. Choose a type of greater favored enemy: aberrations, celestials, constructs, dragons,
+      elementals, fiends, or giants. You gain all the benefits against this chosen enemy that you normally gain against your favored enemy, including an
+      additional language. Your bonus to damage rolls against all your favored enemies increases to +4.
+    </p>
+    <p>
+      Additionally, you have advantage on saving throws against the spells and abilities used by a greater favored enemy.
+    </p>
+    <h3>Fleet of Foot</h3>
+    <p>
+      Beginning at 9th level, you can use the Dash action as a bonus action on your turn.
+    </p>
+
+    <h3>Hide in Plain Sight</h3>
+    <p>
+      Starting at 10th level, you can remain perfectly still for long periods of time to set up ambushes.
+    </p>
+    <p>
+      When you attempt to hide on your turn, you can opt to not move on that turn. If you avoid moving, creatures that attempt to detect you
+      take a −5 penalty to their Wisdom (Perception) checks until the start of your next turn. You lose this benefit if you move or fall prone, either
+      voluntarily or because of some external effect. You are still automatically detected if any effect or action causes you to no longer be hidden.
+    </p>
+    <p>
+      If you are still hidden on your next turn, you can continue to remain motionless and gain this benefit until you are detected.
+    </p>
+    <h3>Improved Natural Explorer</h3>
+    <p>
+      Starting at 13th level, on your first turn during combat, you have advantage on attack rolls against creatures that have not yet acted.
+    </p>
+    <h3>Vanish</h3>
+    <p>
+      Starting at 14th level, you can use the Hide action as a bonus action on your turn. Also, you can’t be tracked by nonmagical means, unless
+      you choose to leave a trail.
+    </p>
+    <h3>Feral Senses</h3>
+    <p>
+      At 18th level, you gain preternatural senses that help you fight creatures you can’t see. When you attack a creature you can’t see, your inability to
+      see it doesn’t impose disadvantage on your attack rolls against it.
+    </p>
+    <p>
+      You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn’t hidden from you and you
+      aren’t blinded or deafened.
+    </p>
+    <h3>Foe Slayer</h3>
+    <p>
+      At 20th level, you become an unparalleled hunter. Once on each of your turns, you can add your Wisdom modifier to the attack roll or the
+      damage roll of an attack you make. You can choose to use this feature before or after the roll, but before any effects of the roll are applied.
+    </p>
+    <h2>Ranger Conclaves</h2>
+    <p>
+      Across the wilds, rangers come together to form conclaves—loose associations whose members share a similar outlook on how best to protect
+      nature from those who would despoil it.
+    </p>
+    <h3>Beast Conclave</h3>
+    <p>
+      Many rangers are more at home in the wilds than in civilization, to the point where animals consider them kin. Rangers of the Beast Conclave
+      develop a close bond with a beast, then further strengthen that bond through the use of magic.
+    </p>
+    <h4>Animal Companion</h4>
+    <p>
+      At 3rd level, you learn to use your magic to create a powerful bond with a creature of the natural world.
+    </p>
+    <p>
+      With 8 hours of work and the expenditure of 50 gp worth of rare herbs and fine food, you call forth an animal from the wilderness to serve as
+      your faithful companion. You normally select your companion from among the following animals: an ape, a black bear, a boar, a giant
+      badger, a giant weasel, a mule, a panther, or a wolf. However, your DM might pick one of these animals for you, based on the surrounding
+      terrain and on what types of creatures would logically be present in the area.
+    </p>
+    <p>
+      At the end of the 8 hours, your animal companion appears and gains all the benefits of your Companion’s Bond ability. You can have
+      only one animal companion at a time.
+    </p>
+    <p>
+      If your animal companion is ever slain, the magical bond you share allows you to return it to life. With 8 hours of work and the expenditure of
+      25 gp worth of rare herbs and fine food, you call forth your companion’s spirit and use your magic to create a new body for it. You can return
+      an animal companion to life in this manner even if you do not possess any part of its body.
+    </p>
+    <p>
+      If you use this ability to return a former animal companion to life while you have a current animal companion, your current companion
+      leaves you and is replaced by the restored companion.
+    </p>
+    <h4>Companion's Bond</h4>
+    <p>
+      Your animal companion gains a variety of benefits while it is linked to you.
+    </p>
+    <p>
+      The animal companion loses its Multiattack action, if it has one.
+    </p>
+    <p>
+      The companion obeys your commands as best it can. It rolls for initiative like any other creature, but you determine its actions, decisions,
+      attitudes, and so on. If you are incapacitated or absent, your companion acts on its own.
+    </p>
+    <p>
+      When using your Natural Explorer feature, you and your animal companion can both move stealthily at a normal pace.
+    </p>
+    <aside>
+      <h4>Keeping Track of Proficiency</h4>
+      <p>
+        When you gain your animal companion at 3rd level, its proficiency bonus matches yours at +2. As you gain levels and increase your proficiency bonus, remember
+        that your companion’s proficiency bonus improves as well, and is applied to the following areas: Armor Class, skills, saving throws, attack bonus, and damage rolls.
+      </p>
+    </aside>
+    <p>
+      Your animal companion has abilities and game statistics determined in part by your level. Your companion uses your proficiency bonus rather
+      than its own. In addition to the areas where it normally uses its proficiency bonus, an animal companion also adds its proficiency bonus to its
+      AC and to its damage rolls.
+    </p>
+    <p>
+      Your animal companion gains proficiency in two skills of your choice. It also becomes proficient with all saving throws.
+    </p>
+    <p>
+      For each level you gain after 3rd, your animal companion gains an additional hit die and increases its hit points accordingly.
+    </p>
+    <p>
+      Whenever you gain the Ability Score Improvement class feature, your companion’s abilities also improve. Your companion can
+      increase one ability score of your choice by 2, or it can increase two ability scores of your choice by 1. As normal, your companion can’t increase
+      an ability score above 20 using this feature unless its description specifies otherwise.
+    </p>
+    <p>
+      Your companion shares your alignment, and has a personality trait and a flaw that you can roll for or select from the tables below. Your
+      companion shares your ideal, and its bond is always, "The ranger who travels with me is a beloved companion for whom I would gladly give my life"
+    </p>
+    <aside>
+      <h4>Why no Multiattack?</h4>
+      <p>
+        Multiattack is a useful design tool that keeps monsters simple for the DM. It provides a boost in offense, but that boost is meant to make a
+        beast threatening for one battle—a notion that doesn’t mesh well with a beast intended to fight with the party, rather than against it.
+        Project Multiattack across an entire adventure, and an animal companion runs the risk of outclassing the fighters and barbarians in the party.
+      </p>
+      <p>
+        So in story terms, your animal companion has traded in some of its ferocity (in the form of Multiattack) for better awareness and the ability to fight more
+        effectively in concert with you.
+      </p>
+    </aside>
+    <aside>
+      <h4>Expanding Companion Options</h4>
+      <p>
+        Depending on the nature of your campaign, the DM might choose to expand the options for your animal companion. As a rule of thumb, a beast can serve as an
+        animal companion if it is Medium or smaller, has 15 or fewer hit points, and cannot deal more than 8 damage with a single attack. In general, that applies to creatures
+        with a challenge rating of 1/4 or less, but there are exceptions.
+      </p>
+    </aside>
+    <p>
+      Your animal companion gains the benefits of your Favored Enemy feature, and of your Greater Favored Enemy feature when you gain that feature at 6th level. It uses the favored
+      enemies you selected for those features.
+    </p>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>d6</th><th>Trait</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td><td>I'm dauntless in the face of adversity.</td>
+        </tr>
+        <tr>
+          <td>2</td><td>Threaten my friends, threaten me.</td>
+        </tr>
+        <tr>
+          <td>3</td><td>I stay on alert so others can rest.</td>
+        </tr>
+        <tr>
+          <td>4</td><td>People see an animal and underestimate me. I use that to my advantage.</td>
+        </tr>
+        <tr>
+          <td>5</td><td>I have a knack for showing up in the nick of time.</td>
+        </tr>
+        <tr>
+          <td>6</td><td>I put my friends needs before my own in all things.</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>d6</th><th>Flaw</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td><td>If there's food left unattended, I'll eat it.</td>
+        </tr>
+        <tr>
+          <td>2</td><td>I growl at strangers, and all people except my ranger are strangers to me.</td>
+        </tr>
+        <tr>
+          <td>3</td><td>Any time is a good time for a belly rub.</td>
+        </tr>
+        <tr>
+          <td>4</td><td>I'm deathly afraid of water.</td>
+        </tr>
+        <tr>
+          <td>5</td><td>My idea of hello is a flurry of licks to the face.</td>
+        </tr>
+        <tr><td>6</td><td>I jump on creatures to tell them how much I love them.</td></tr>
+      </tbody>
+    </table>
+    <h4>Coordinated Attack</h4>
+    <p>
+      Beginning at 5th level, you and your animal companion form a more potent fighting team.
+      When you use the Attack action on your turn, if your companion can see you, it can use its
+      reaction to make a melee attack.
+    </p>
+    <h4>Beast's Defense</h4>
+    <p>
+      At 7th level, while your companion can see you, it has advantage on all saving throws.
+    </p>
+    <h4>Storm of Claws and Fangs</h4>
+    <p>
+      At 11th level, your companion can use its action to make a melee attack against each creature of its choice within 5 feet of it, with a separate
+      attack roll for each target.
+    </p>
+    <h4>Superior Beast's Defense</h4>
+    <p>
+      At 15th level, whenever an attacker that your companion can see hits it with an attack, it can use its reaction to halve the attack’s damage
+      against it.
+    </p>
+    <h3>Hunter Conclave</h3>
+    <p>
+      Some rangers seek to master weapons to better protect civilization from the terrors of the wilderness. Members of the Hunter Conclave
+      learn specialized fighting techniques for use against the most dire threats, from rampaging ogres and hordes of orcs to towering giants and
+      terrifying dragons.
+    </p>
+    <h4>Hunter's Prey</h4>
+    <p>
+      At 3rd level, you gain one of the following features of your choice.
+    </p>
+    <p>
+      <strong>Colossus Slayer.</strong> Your tenacity can wear down the most potent foes.  When you hit a creature with a weapon attack, the
+      creature takes an extra 1d8 damage if it is below its hit point maximum.  You can deal this extra damage only once per turn.
+    </p>
+    <p>
+      <strong>Giant Killer.</strong> When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your
+      reaction to attack that creature immediately after its attack, provided that you can see the creature.
+    </p>
+    <p>
+      <strong>Horde Breaker.</strong> Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon
+      against a different creature that is within 5 feet of the original target and within range of  your weapon.
+    </p>
+    <h4>Extra Attack</h4>
+    <p>
+      Beginning at 5th level, you can attack twice, instead of once, whenever you take the attack action on your turn.
+    </p>
+    <h4>Defensive Tactics</h4>
+    <p>
+      At 7th level, you gain one of the following features of your choice.
+    </p>
+    <p>
+      <strong>Escape the Horde.</strong> Opportunity attacks against you are made with disadvantage.
+    </p>
+    <p>
+      <strong>Multiattack defense.</strong> When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks
+      made by that creature for the rest of the turn.
+    </p>
+    <p>
+      <strong>Steel Will.</strong> You have advantage on saving throws against being frightened.
+    </p>
+    <h4>Multiattack</h4>
+    <p>
+      At 11th level, you gain one of the following features of your choice.
+    </p>
+    <p>
+      <strong>Volley.</strong> You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within
+      your weapons range.  You must have ammunition for each target, as normal, and you make a separate attack roll for each target.
+    </p>
+    <p>
+      <strong>Whirlwind Attack.</strong> You can use your action to make melee attacks against any number of creatures within 5 feet of you, with a separate
+      attack roll for each target.
+    </p>
+    <h4>Superior Hunter's Defense</h4>
+    <p>
+      At 15th level you gain one of the following features of your choice.
+    </p>
+    <p>
+      <strong>Evasion.</strong> When you are subjected to an effect, such as a red dragon's fiery breath or a lightning bolt spell, that allows you to make a
+      dexterity saving throw to take only half damage, you instead take no damage if you succeed on a saving throw, and only half damage if you fail.
+    </p>
+    <p>
+      <strong>Stand against the Tide.</strong> When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat
+      the same attack against another creature (other than itself) of your choice.
+    </p>
+    <p>
+      <strong>Uncanny Dodge.</strong> When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.
+    </p>
+  </div>
+  <div class="racediv" id="rogue">
+    <h2>Rogue</h2>
+    <p>For a detailed description of the Rogue class see the Player's Handbook (p94-98)</p>
+    <h3>Roguish Archetype</h3>
+    <p>Rogues have the following Roguish Archetypes available to them:</p>
+    <ul>
+      <li>Arcane Trickster (PHB p97-98)</li>
+      <li>Assassin (PHB p97)</li>
+      <li>Inquisitive (XGE p45)</li>
+      <li>Mastermind (SCAG p135/XGE p46)</li>
+      <li>Scout (XGE p47)</li>
+      <li>Swashbuckler (SCAG p135-136/XGE p47)</li>
+      <li>Thief (PHB p97)</li>
+    </ul>
+  </div>
+  <div class="racediv" id="sorcerer">
+    <h2>Sorcerer</h2>
+    <p>For a detailed description of the Sorcerer class see the Player's Handbook (p99-104)</p>
+    <h3>Sorcerous Origins</h3>
+    <p>Sorcerers have the following Sorcerous Origins available to them:</p>
+    <ul>
+      <li>Divine Soul (XGE p50)</li>
+      <li>Draconic Bloodline (PHB p102-103)</li>
+      <li>Wild Magic (PHB p103-104)</li>
+      <li>Shadow Magic (XGE p50)</li>
+      <li>Sorceron Bloodline (homebrew, see below)</li>
+      <li>Storm Sorcery (XGE p51)</li>
+    </ul>
+
+    <h3>Sorceron Bloodline</h3>
+    <p>
+      The descendents of the Sorceron often show the physical traits of their ancient magical celestial ancestors
+      (see the Sorceron Blooded Aasimar subrace), however some appear to show the physical characteristics of
+      their other family.  Nevertheless many of them have one thing in common, blood naturally infused with
+      Arcanum crystal, and the resulting affinity for sorcerous magic.  Granted many of them do not pursue this path,
+      using their magical abilities rarely if at all, and thus not developing in the sorcerer class, but those
+      that do can choose the Sorceron Bloodline for their Sorcerous Origin.
+    </p>
+    <h4>Force Affinity</h4>
+    <p>
+      At 1st level, the blood of the Sorceron gives the Sorceron blooded a special affinity for spells that manipulate pure
+      magical force.  They learn the magic missile, mage armor, and shield spells in addition to their normal spells known.
+    </p>
+    <h4>Enhanced Force Spells</h4>
+    <p>
+      When the Sorceron Blooded casts the magic missile spell, each missile does 1d4 + 2 in damage instead of its normal damage.
+    </p>
+    <p>
+      When the Sorceron Blooded casts the Mage Armor spell it has a duration of 16 hours instead of the typical 8 hours.
+    </p>
+    <h4>Spontaneous Recovery</h4>
+    <p>
+      Starting at 6th level, whenever the Sorceron Blooded casts a spell of 1st level or higher, roll a d20, on a 20 the spell slot is not expended
+      when the spell is cast.  Starting at 18th level the spell slot is not expended when the Sorceron Blooded rolls a 19 or a 20 on the d20 roll.
+    </p>
+    <h4>Overwhelming Force</h4>
+    <p>
+      At 14th level your connection to pure force has grown.  You learn the disintigrate spell, if you already know the disintigrate spell pick
+      a different sorcerer spell of 5th level or lower.  Whenever you cast disintigrate, if the target makes their save they take half damage
+      instead of no damage.
+    </p>
+  </div>
+  <div class="racediv" id="warlock">
+    <h2>Warlock</h2>
+    <p>For a detailed description of the Warlock class see the Player's Handbook (p105-111)</p>
+    <h3>Otherworldly Patron</h3>
+    <p>Warlocks have the following Otherworldly Patrons available to them:</p>
+    <ul>
+      <li>The Archfey (PHB p108-109) also see the <a href="/ref/divines">list of fey lords on the lesser divines page</a></li>
+      <li>The Celestial (XGE p54)</li>
+      <li>The Fiend (PHB p109)</li>
+      <li>The Great Old One (PHB p109-110)</li>
+      <li>The Hexblade (XGE p55)</li>
+      <li>The Undying (SCAG p139-140)</li>
+    </ul>
+  </div>
+  <div class="racediv" id="wizard">
+    <h2>Wizard</h2>
+    <p>For a detailed description of the Wizard class see the Player's Handbook (p112-119)</p>
+    <h3>Arcane Tradition</h3>
+    <p>Wizards have the following Arcane Traditions available to them:</p>
+    <ul>
+      <li>Bladesinging (SCAG 141-142)</li>
+      <li>School of Abjuration (PHB p115-116)</li>
+      <li>School of Conjuration (PHB p116)</li>
+      <li>School of Divination (PHB p116-117)</li>
+      <li>School of Enchantment (PHB p117)</li>
+      <li>School of Evocation (PHB p117-118)</li>
+      <li>School of Illusion (PHB p118)</li>
+      <li>School of Necromancy (PHB p118-119)</li>
+      <li>School of Transmutation (PHB p119)</li>
+      <li>War Magic (XGE p59)</li>
+    </ul>
+  </div>
+  <div>
+    <h3>
+      Multiclass Prerequisites and Proficiencies for Custom Classes
+    </h3>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Class</th><th>Preqrequisites</th><th>Bonus Proficiencies</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Factotum</td><td>Intelligence 13</td><td>Light armor, simple weapons, shields, one skill proficiency</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</template>
+<script src="./class.js"></script>
+<style src="./class.scss" lang="scss" scoped></style>

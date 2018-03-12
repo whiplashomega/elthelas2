@@ -1,0 +1,24 @@
+  @import '../../../node_modules/leaflet/dist/leaflet.css';
+  @import '../../../node_modules/leaflet-measure/dist/leaflet-measure.css';
+  
+  #map {
+    /*max-width: 1024px;*/
+    height: 800px;
+    width: 90%;
+    margin: 10px auto;
+    position: relative;
+    outline: none;
+  }
+  .btn-group {
+    margin: 10px 5%;
+  }
+  .modal-body .col-sm-6 {
+          width: 50%;
+          max-width: 50%;
+  }
+  #smallmap {
+        max-width: 40%;
+          width: 40%;
+          height: 400px;
+          float: right;
+  }

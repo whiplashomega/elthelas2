@@ -1,0 +1,42 @@
+{
+  "id": "firbolg",
+  "name": "Firbolgs",
+  "singular": "Firbolg",
+  "description": "\n\nFirbolgs are an exceedingly rare race native to the hidden woods of Eldoran. No one really knows where the Firbolgs come from, though some in Eldoran claim, with hate in their eyes, that they are the twisted offspring of the unholy unions between elves and dwarves. While no modern union of elf and dwarf has ever produced viable children, this theory nevertheless continues to hold weight among the common people of Eldoran. The nature of Firbolgs, however, is so unassuming, and so closely aligned with the highest ideals of Elven society, that few can ever find enough fault in one to get any persecution to stick. Nevertheless, the Firbolgs largely keep to themselves, rarely interacting with others except to pay their taxes and occasionally trade for goods they cannot make themselves. They act as guardians of the deepest groves, a task for which the Elven monarchy has often paid them, but which they would likely do regardless.\n\n",
+  "traits": [
+    "Ability Score Increase. Your Wisdom score increases by 2, and your Strength score increases by 1.",
+    "Size. Firbolg are between 7 and 8 feet tall and weigh between 240 and 300 pounds. Your size is Medium.",
+    "Speed. Your base walking speed is 30 feet.",
+    "Firbolg Magic. You can cast detect magic and disguise self with this trait, using Wisdom as your spellcasting ability for them. Once you cast either spell, you can't cast it again with this trait until you finish a short or long rest. When you use this version of disguise self, you can seem up to 3 feet shorter than normal, allowing you to more easily blend in with humans and elves.",
+    "Hidden Step. As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Once you use this trait, you can't use it again until you finish a short or long rest.",
+    "Powerful Build. You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.",
+    "Speech of Beast and Leaf. You have the ability to communicate in a limited manner with beasts and plants. They can understand the meaning of your words, though you have no special ability to understand them in return. You have advantage on all Charisma checks you make to influence them."
+  ],
+  "agepoints": {
+    "puberty": 24,
+    "sexualmaturity": 30,
+    "mentalmaturity": 50,
+    "middleage": 80,
+    "oldage": 110,
+    "averagelifespan": 150,
+    "maxage": 190
+  },
+  "subraces": [
+    {
+      "id": "default",
+      "name": "default",
+      "singular": "",
+      "image": "/static/images/races/firbolg.jpg",
+      "description": "",
+      "traits": [
+      
+      ],
+      "averageheight": 90,
+      "baseheight": 76,
+      "heightroll": "4d6",
+      "averageweight": 270,
+      "baseweight": 200,
+      "weightroll": "2d4"
+    }  
+  ]
+}

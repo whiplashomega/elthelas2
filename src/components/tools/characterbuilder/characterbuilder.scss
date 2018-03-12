@@ -1,0 +1,34 @@
+    .form-control {
+      border: 0px;
+      border-bottom: 1px solid black;
+      border-radius: 0px;
+      box-shadow: none;
+    }
+    .statscore {
+      width: 40px;
+      border-radius: 0px;
+      border: 0px;
+      border-bottom: 1px solid black;
+      box-shadow: none;
+    }
+    .table>tbody>tr>td, .table>thead>tr>th {
+      padding: 4px;
+    }
+    .bordered-section {
+      border: 1px outset black;
+      border-radius: 6px;
+      padding: 6px;
+      margin: 10px 0;
+      width: 100%;
+    }
+    .table-input {
+      border-bottom: 0;
+      padding: 3px;
+    }
+    .prepspell {
+      background-color: #6784C6;
+      color: #ffffff;
+    }
+    .prepspell a {
+      color: #ffffff;
+    }

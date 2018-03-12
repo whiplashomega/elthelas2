@@ -1,0 +1,21 @@
+{
+  "name": "Last Watch",
+  "nation": "Zelfir",
+  "population": 3000,
+  "metro": 6000,
+  "majority": "Hisru Humans",
+  "ruling": "Hisru Humans",
+  "minorities": [
+    "Genasi",
+    "Sorceron-Blooded",
+    "Aasimar",
+    "Tieflings",
+    "Fey'ri",
+    "Dragonborn",
+    "Deran Humans"
+  ],
+  "exports": [],
+  "landmarks": [],
+  "coords": [-38.30718056188315, -112.10243225097656],
+  "description": ""
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Amatheran Ocean",
+  "description": "While some have theorized that the ocean west of Riftlan is the same as the ocean east of Dormania, no one has yet been able to prove that fact.  As such, they still maintain different names on the two continents.",
+  "contains": [
+    "Alfadir",
+    "Zelfir"
+  ],
+  "coords": [-62.97918986280014, -128.73339951038363]
+}

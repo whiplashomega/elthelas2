@@ -1,0 +1,17 @@
+{
+  "name": "Loridesa",
+  "nation": "Eldoran",
+  "population": 0,
+  "metro": 0,
+  "majority": "High Elves",
+  "ruling": "High Elves",
+  "minorities": [
+    "Wood Elves",
+    "Wild Elves",
+    "Half-Elves"
+  ],
+  "exports": [],
+  "landmarks": [],
+  "coords": [26.667095801104814, -23.374786376953125],
+  "description": ""
+}

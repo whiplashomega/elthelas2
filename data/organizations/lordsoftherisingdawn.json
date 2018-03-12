@@ -1,0 +1,48 @@
+{
+  "id": "lordsoftherisingdawn",
+  "title": "Lords of the Rising Dawn",
+  "description": "The Lords of the Rising Dawn are Alohim's order of Paladins.  They are dedicated to defeating evil and upholding the law.",
+  "nations": [
+    "dormania",
+    "gerasalim",
+    "kandor",
+    "terron",
+    "seran",
+    "shendarel",
+    "staelia",
+    "alfadir",
+    "eldoran"
+  ],
+  "cities": [
+    "desadorel",
+    "falak",
+    "malidal",
+    "poron",
+    "sreppe",
+    "farengar",
+    "northport",
+    "strovenguard",
+    "eastguard",
+    "purs",
+    "kaland",
+    "westport",
+    "tenecha",
+    "kimly",
+    "swava",
+    "kelas",
+    "instar",
+    "pelgan",
+    "dieel",
+    "fradae",
+    "damat",
+    "loridesa",
+    "milan",
+    "sofala"
+  ],
+  "tenets": [
+    "I must never break the laws of my home country or any of its allies while I am there.",
+    "Evil must be rooted out and brought to light.  If an evil is unlawful I must put an end to it.  If it is in within the law I must reveal the perversion in the law to those capable of changing it."
+  ],
+  "level1": "**Light of Dawn.** You know the light cantrip and can cast it at will.",
+  "level10": "**Radiant Weapons.** When you make a weapon attack you can choose for the damage you do to be radiant damage instead of bludgeoning, piercing, or slashing damage."
+}

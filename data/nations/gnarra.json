@@ -1,0 +1,35 @@
+{
+  "name": "Gnarra",
+  "coords": [-3.601142320158722, -23.72634887695313],
+  "border-coords": [],
+  "color": "#FFFF00",
+  "map": "/static/images/maps/nations/Gnarra.jpg",
+  "capitol": "",
+  "cities": [],
+  "landmarks": ["Serpent's Spine"],
+  "borders": ["Morrindim", "Eldoran", "Shendarel", "Olda", "Dera'Dragorim"],
+  "population": 100000,
+  "populationDistribution": [{
+    "race": "Faelin",
+    "proportion": 0.6
+  },
+  {
+    "race": "Wild Elves",
+    "proportion": 0.2
+  },
+  {
+    "race": "Kobolds",
+    "proportion": 0.15
+  }],
+  "government": "The Faelin and the Wild Elves both shun governments, and tend to live in solitary family groups.",
+  "ruler": "",
+  "history": "Gnarra has never really had contact with the outside world, and most expeditions to explore the interior have never returned. Faelin and Wild Elves who leave Gnarra rarely speak of home, and then only reluctantly.",
+  "gods": ["Gaian"],
+  "worship": "Those Faelin who have appeared in the outside world have almost exclusively worshiped Gaian, the nature goddess and patron of fey. How this worship is handled within the country is anybody's guess.",
+  "culture": "",
+  "economics": "",
+  "slavery": "The attitude of all fey-like creatures towards slavery is anything but favorable.",
+  "magic": "Magic is believed to be common in this lush land.",
+  "property": "",
+  "citizenship": ""
+}

@@ -1,0 +1,30 @@
+{
+  "id": "blackguardsofmatraktha",
+  "title": "Black Guards of Mat'raktha",
+  "description": "The Black Guards are the militaristic branch of the church of Mat'raktha, mostly, but not solely, made up of orcs, they are dedicated to the destruction of the worshippers of all other Gods so that Mat'raktha can finally take his place as the rightful God King and King of Gods.\n\nTheir chapter houses are largly concentrated in Malinval, and they are officially led by the Prince of Fiends himself.",
+  "nations": [
+    "malinval",
+    "olda",
+    "sage"
+  ],
+  "cities": [
+    "makhol",
+    "forbel",
+    "marinval",
+    "makir",
+    "mordaserekhai",
+    "gulutheim",
+    "ochreken",
+    "malgeth",
+    "parakas",
+    "sage",
+    "punbar"
+  ],
+  "tenets": [
+    "Mat'raktha's glory must come before all other concerns.",
+    "Obey your betters unless they prove themselves weak.  If they are weak, replace them.",
+    "Power is it's own goal."
+  ],
+  "level1": "**Intimidating Presence.** You gain proficiency in the intimidation skill.  If you are already proficient you gain expertise instead.",
+  "level10": "**Destroy the Unfaithful.** After making an attack roll but before the DM tells you the result of that attack you can choose to add +10 to the result.  You can do this twice, after which you must finish a long rest before using this feature again."
+}

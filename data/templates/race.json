@@ -1,0 +1,36 @@
+{
+  "id": "",
+  "name": "",
+  "singular": "",
+  "description": "\n\n\n\n",
+  "traits": [
+
+  ],
+  "agepoints": {
+    "puberty": 0,
+    "sexualmaturity": 0,
+    "mentalmaturity": 0,
+    "middleage": 0,
+    "oldage": 0,
+    "averagelifespan": 0,
+    "maxage": 0
+  },
+  "subraces": [
+    {
+      "id": "",
+      "name": "",
+      "singular": "",
+      "image": "",
+      "description": "",
+      "traits": [
+      
+      ],
+      "averageheight": 0,
+      "baseheight": 0,
+      "heightroll": "",
+      "averageweight": 0,
+      "baseweight": 0,
+      "weightroll": ""
+    }  
+  ]
+}

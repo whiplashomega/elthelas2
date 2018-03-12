@@ -1,0 +1,11 @@
+{
+  "name": "Ice Ocean",
+  "description": "The far north of the world is covered in polar ice, spreading in the winter to block the northern ports of Kaland and Farengar, and receding in the summer.  This landless ocean has never been crossed.",
+  "contains": [
+    "Curinor",
+    "Dormania",
+    "Eldoran",
+    "Kandor"
+  ],
+  "coords": [67.42099038630205, 59.0009754896164]
+}

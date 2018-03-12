@@ -1,0 +1,10 @@
+{
+  "name": "Dragon Sea",
+  "description": "Sitting due east of the southern Dragonhome Mountains, the Dragon Sea can be perilous waters for the unprepared.  For that reason most sailors, skirt the Hisru coast as they move south, eventually putting into shore at Mandon, or possibly portaging over the Exodus Isthmus into the Mermaid Sea, and the rich Alfadiran port cities beyond.",
+  "contains": [
+    "Zelfir",
+    "Dragonhome",
+    "Hisru'de'tan"
+  ],
+  "coords": [-28.98315533942919, -92.84326225519183]
+}

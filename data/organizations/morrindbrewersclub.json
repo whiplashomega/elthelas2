@@ -1,0 +1,52 @@
+{
+  "id": "morrindbrewersclub",
+  "title": "Morrind Brewers Club",
+  "description": "The [Morrind](/geo/nations/morrindim), like their kin from [Curinor](/geo/nations/curinor), love beer and brewing. Unlike their kin from [Curinor](/geo/nations/curinor), they have access to a variety of ingredients unlike any other group in the world. Some years back, a group of prominent brewers from a variety of colonies got together and began trading recipes. Soon they formed an organization, admittance to which required the submission of a high quality recipe (judged by the local guild members). It caught on like wildfire, and now the world over it is known that the place to get the best beer is the local Morrind Brewers Club.",
+  "nations": [
+    "morrindim",
+    "olda",
+    "eldoran",
+    "alfadir",
+    "malinval",
+    "stagenheim",
+    "staelia",
+    "seran",
+    "shendarel",
+    "zelfir",
+    "terron",
+    "kandor",
+    "dormania"
+  ],
+  "cities": [
+    "alados",
+    "barak",
+    "damat",
+    "diya",
+    "estapor",
+    "fradae",
+    "gulutheim",
+    "ifritan",
+    "instar",
+    "kimly",
+    "loridesa",
+    "malidal",
+    "mandon",
+    "milan",
+    "mordaserekhai",
+    "morrind",
+    "ochreken",
+    "pelgan",
+    "safala",
+    "swava",
+    "tenecha",
+    "westport"
+  ],
+  "tenets": [
+    "I must always be on the lookout for new recipes and share them with the club.",
+    "I should promote a local club member to anyone looking for a good place to drink.",
+    "If I own a bar it must display the Morrind Brewer's Club sign out front",
+    "I can never serve or accept poor quality alcohol"
+  ],
+  "level1": "**Beer Brewing Training.** You gain proficiency in alchemist's tools and brewer's tools.",
+  "level10": "**Master Brewer.** The club funds the founding of a bar for you in return for a cut of the profits.  The bar takes 20 days to build and start operations, after which it will earn you 20 gp of profit a day assuming it is maintained and staffed."
+}

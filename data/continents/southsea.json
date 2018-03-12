@@ -1,0 +1,15 @@
+{
+  "name": "South Sea",
+  "description": "The South Sea is the home of a number of large islands, a subcontinent, and is the almost exclusive domain of the Morrind trade fleets.  Neran and Morrind are spoken in just about every port along the coast.",
+  "contains": [
+    "Degak'Ta",
+    "Morrindim",
+    "Nerim",
+    "Seran",
+    "Terron",
+    "Arad",
+    "Dormania",
+    "Malinval"
+  ],
+  "coords": [-58.39249965939756, 35.125487744808204]
+}

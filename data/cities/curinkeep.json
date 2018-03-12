@@ -1,0 +1,33 @@
+{
+  "name": "Curin Keep",
+  "nation": "Curinor",
+  "population": 160000,
+  "metro": 210000,
+  "majority": "Hill Dwarves",
+  "ruling": "Deep Dwarves",
+  "minorities": [
+    "Plains Dwarves",
+    "Half-Dwarves"
+  ],
+  "exports": [],
+  "landmarks": [
+    {
+      "name": "Temple of the Song",
+      "description": "The headquarters of the church of Dorun, The sound of the temple singers can be heard throughout the caverns of Curin Keep ringing in complex harmonies that overlap each other in intricate ways such that wherever one is the song is different, but always beautiful."
+    },
+    {
+      "name": "Halls of the Underking",
+      "description": "The palace of the underking is the center of Curinor's government. While the public facing side is grand and beautiful, with walls of marble and gilt, behind the scenes it houses a massive beauracracy that manages the regulation and government of the kingdom. The underking himself is more a figurhead than anything, acting as the face of the government to foreign powers."
+    },
+    {
+      "name": "The Deepest Chamber",
+      "description": "The Deepest Chamber is the home of the Curin Congress, the primary legislative and judicial body of Curinor. It's name has been a misnomer for nearly 1000 years however, as the mines have continued to dig deeper and deeper into the earth, yet when the chamber was first built, it was indeed the deepest chamber the dwarves had ever built."
+    },
+    {
+      "name": "Alliance Embassy",
+      "description": "The Embassy of the Alliance of 6 Nations actually sits above ground, near one of the primary entrances to the city. It is a large fortress complex where the ambassadors from the other 5 nations have quarters and meeting rooms, as well as take audience with members of their constituencies so that they can advocate for their positions."
+    }
+  ],
+  "coords": [51.998410382390325, 52.29904174804688],
+  "description": "Curin Keep, the impregnable fortress, is the ancient center of dwarven culture, and the first hold.  Over its history it has grown from a small network of mines and caverns into a massive undermountain fortress that goes thousands of feet below the surface and houses hundreds of thousands of dwarves.  Tunnels from Curin Keep lead to every major hold in Curinor."
+}

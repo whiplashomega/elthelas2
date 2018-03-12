@@ -1,0 +1,15 @@
+{
+  "name": "High Hammer",
+  "nation": "Curinor",
+  "population": 20000,
+  "metro": 40000,
+  "majority": "Hill Dwarves",
+  "ruling": "Deep Dwarves",
+  "minorities": [
+    "Plains Dwarves, Half-Dwarves"
+  ],
+  "exports": [],
+  "landmarks": [],
+  "coords": [32.24997445586331, 62.052841186523445],
+  "description": "Highhammer is the military and agricultural center for Curinor.  Highhammer is built into one of the tallest mountains in the region, and the largest granite outcropping on the planet.  This makes it a particularly effective fortress hold, and the dwarves have fortified it accordingly."
+}

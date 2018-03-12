@@ -1,0 +1,29 @@
+{
+  "name": "Vasha",
+  "nation": "Dera'Dragorim",
+  "population": 150000,
+  "metro": 400000,
+  "majority": "Deran Humans",
+  "ruling": "Dragonborn",
+  "minorities": [
+      "Dragonborn",
+      "Hisru Humans",
+      "Elves",
+      "Tieflings",
+      "Genasi",
+      "Fey'ri"
+    ],
+  "exports": [
+      "Alchemical supplies",
+      "Dragon scales",
+      "Spices",
+      "Pepper",
+      "Coffee"
+    ],
+  "landmarks": [
+      { "name": "Palace of the Dragon Emperor", "description": "The Palace of the Dragon Emperor technically sits on an island inbetween Vasha and it's sister city Vashna. The huge palace complex is built to resemble a grand mountain, with the quarters of the Dragon Emperor being at the peak. From there the residents often see the Emperor's coming and goings in Dragon form." },
+      { "name": "The Golden Bridge", "description": "The Golden Bridge is the largest bridge structure in the world. It exists in two parts, with the Palace of the Dragon Emperor sitting in the center. The three mile long set of massive suspension bridges connect the cities of Vasha and Vashna, and are constantly busy with people passing back and forth. Massive markets sit on either end of the bridge, and there are merchants who specialize entirely in transporting goods across the bridge, often making 3 to 5 trips a day carrying loads of goods." }
+    ],
+  "coords": [27.823531538538685, -62.01452650129796],
+  "description": "Vasha is the northern city of the bifurcated capitol of Dera'Dragorim.  Vasha is the poorer of the two cities, with most of the government offices and the Temple of Bahamut both being in Vashna instead. Vasha does have the bardic and wizards college, as well as the foundries and the Planar Quarter, where the tieflings, fey'ri, and genasi populations in the city tend to congregate.  Vasha is a highly cosmopolitan city, and you can see people of just about every race and type walking the streets."
+}

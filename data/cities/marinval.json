@@ -1,0 +1,23 @@
+{
+  "name": "Marinval",
+  "nation": "Malinval",
+  "population": 500000,
+  "metro": 1500000,
+  "majority": "Grunt Orcs",
+  "ruling": "High Orcs",
+  "minorities": [
+    "High Orcs",
+    "Goblins",
+    "Hobgoblins",
+    "Kobolds"
+  ],
+  "exports": [],
+  "landmarks": [
+    {
+      "name": "The Chambers of Mat'raktha",
+      "description": ""
+    }
+  ],
+  "coords": [-9.492408153765531, 66.05186462402345],
+  "description": "  Home to a half dozen major warlords, and also the seat of Malinval's government, Marinval hosts the Chambers of Mat'raktha, where twice a year all the significant warlords of Malinval gather to discuss the direction of the tribes, resolve minor disputes and attempt to come to a consensus in electing an Overlord, who will serve as master of the united orcish armies until his death.\n\n An Overlord has only successfully been elected about a dozen times in the last several thousand years (records are not kept and so the exact number is not clear), but each time has been marked by a period of major orcish expansion, until the Overlord is inevitably assassinated by a jealous peer and the orc tribes fracture and are forced to retreat once again.\n\n It was near the end of 1842 YFC that an Overlord was last elected, when the Prince of Fiends himself, right hand of Mat'raktha, and mighty Sorceron wizard arrived unexpectedly at the biannual gathering, and demanded allegiance from the warlords present.  It took only a few deaths before all understood exactly who stood in front of them and voted to grant him dominion over all the tribes.\n\n the Prince moved the center of his government north to Dal Okra, but that did not diminish the importance of Malinval as the beating heart of the Orc nation."
+}

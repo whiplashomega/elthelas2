@@ -1,0 +1,16 @@
+      {
+        "id": "zhuul",
+        "name": "Zhuul",
+        "holysymbol": "A skull",
+        "alignment": "Neutral Evil",
+        "domains": "Darkness, Decay, Evil, Hatred, Pestilence, Retribution, Undead, Undeath",
+        "domains5": "Death, Knowledge",
+        "interfaithblessing": "+2 on damage rolls",
+        "worshippers": "Zhuul, Lord of Decay, is worshipped by those whose hearts are twisted by hatred or jealousy.  He offers them revenge for perceived wrongs, binding the souls of his worshippers eternally to his service.  To others he offers forbidden or hidden knowledge.  He is a patron to evil wizards and thieves.",
+        "allowedalignments": "Lawful Evil, Neutral Evil, Chaotic Evil",
+        "weapon": "Dagger, Hand Crossbow",
+        "appearance": "Zhuul's appearance is similar to that of a Balor or a Pit Fiend, towering over mortals with huge wings and clawed arms.",
+        "dogma": "Zhuul teaches his worshippers to seek power over ones enemies by whatever means necessary.  Seeking beauty is seen as weak and pathetic.",
+        "clergy": "Zhuul's clergy come from every race and country, attaching themselves to evil aligned organizations or disguising themselves as clergy of other Gods or by holding other jobs or professions",
+        "home": "Hades"
+      }

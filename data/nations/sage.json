@@ -1,0 +1,31 @@
+{
+  "name": "Sage",
+  "coords": [-29.45873118535533, -54.13650512695313],
+  "border-coords": [],
+  "color": "#FFFF00",
+  "map": "/static/images/maps/nations/Sage.jpg",
+  "capitol": "Sage",
+  "cities": [],
+  "landmarks": [],
+  "borders": ["Hisru'de'tan", "Stagenheim"],
+  "population": 500000,
+  "populationDistribution": [{
+    "race": "Grunt Orcs",
+    "proportion": 0.94
+  },
+  {
+    "race": "Goblins",
+    "proportion": 0.05
+  }],
+  "government": "Sage does not have a unified government, but the city-state proper does have a single warlord; however his control does not extend far beyond the city itself. Meanwhile smaller tribes with their own warlords live throughout the territory. The various tribes have shifting alliances, and often fight among themselves as much as against their neighbors.",
+  "ruler": "",
+  "history": "Sage has little to no recorded history, but scholars in Stagenheim record first contact with orcs on the continent about 800 years ago. It is theorized, given their close similarity to the common Grunt Orcs of Malinval, that it was established first as a colony, where the Grunt Orcs later killed the local High Orc rulers. It may also be possible that a small group of grunt orcs rebelled and left Malinval to escape retribution.",
+  "gods": ["Malik", "Mat'raktha"],
+  "worship": "Worship methods and God of choice tend to vary by clan, but Malik is the most common God. Each clan tends to have at least 1 priest of their particular patron God, who often has one or two apprentices, that deals with all matters religious for the clan.",
+  "culture": "Tribal and warlike.",
+  "economics": "Sage is mostly a self-sufficient society, with few exports and imports (and few nations are very willing to trade with them).",
+  "slavery": "The more prosperous clans always tend to have a few goblin slaves around.",
+  "magic": "Magic is unregulated, and there are even a few orc wizards in the city, however most casters tend to be of the more spontaneous variety.",
+  "property": "There is no specific law on property, but generally things are owned by whoever can hold on to it.",
+  "citizenship": "Tribal membership is determined by the particular customs of a tribe, but it typically requires birth within the tribe or various arduous tasks."
+}

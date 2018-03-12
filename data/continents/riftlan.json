@@ -1,0 +1,11 @@
+{
+  "name": "Riftlan",
+  "description": "Riftlan as a continent is largely uninhabited by humanoids, although not for lack of trying. The border between the material non-material planes is weak across most of the continent, particularly in the northern half, regularly allowing unusual and magical creatures to slip through. Encountering a stray demon tends to be catastrophic to your average farming community, making settlement on the continent difficult at best. The worst case is best exemplified by the destruction of Dera at the hands of a demonic army, the result of a portal opening in the northern mountains to the abyss. The resulting catastrophy required the intervention of a God to end, and though the portal is long closed, the remnants of that army still linger in the western mountains.",
+  "contains": [
+    "Dera",
+    "Dragonhome",
+    "Dera'Dragorim",
+    "Zelfir"
+  ],
+  "coords": [-7.257854327574074, -116.39794975519182]
+}

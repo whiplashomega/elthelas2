@@ -1,0 +1,17 @@
+{
+  "name": "Makir",
+  "nation": "Malinval",
+  "population": 0,
+  "metro": 0,
+  "majority": "Grunt Orcs",
+  "ruling": "High Orcs",
+  "minorities": [
+    "Goblins",
+    "Hobgoblins",
+    "Kobolds"
+  ],
+  "exports": [],
+  "landmarks": [],
+  "coords": [2.5479878714713835, 76.64474487304689],
+  "description": ""
+}

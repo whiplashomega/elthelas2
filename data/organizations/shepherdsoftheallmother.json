@@ -1,0 +1,18 @@
+{
+  "id": "shepherdsoftheallmother",
+  "title": "Shepherds of the All-Mother",
+  "description": "Making up a hidden cult of Nera worshippers throughout the world, the Shepherds of the All-Mother provide rituals to help the soul reach its designated afterlife, and believe in the continued usefulness of the body after death, via necromancy.  Even in Nera worshipping Arad the shepherds are considered a fringe group, nevertheless they maintain a presence in most communities throughout the world.",
+  "nations": [
+  
+  ],
+  "cities": [
+  
+  ],
+  "tenets": [
+    "The dead must always receive the ritual of passage. If I am capable I must give the souls of the recently dead the chance to reach the afterlife.",
+    "Once the soul has passed on a body is not useless.  Whether as material, meat, or undead servant the bodies of the dead can serve the living.",
+    "Undead can provide useful services and labor and I must fight the stereotype that they are servants of evil."
+  ],
+  "level1": "**Religious Rites.** You gain proficiency in the religion skill, if you are already proficient from your class or background you gain expertise instead.",
+  "level10": "**Necromantic Rituals.** You learn the spell animate dead and can cast it 1/day at the 3rd level without using a spell slot.  Additionally, when you cast animate dead you can choose to have it last until the next time you cast the spell instead of the normal duration of 24 hours."
+}

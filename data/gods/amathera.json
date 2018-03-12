@@ -1,0 +1,17 @@
+      {
+        "id": "amathera",
+        "name": "Amathera",
+        "holysymbol": "A sheaf of grain over a kite shield",
+        "symbolimage": "/images/holysymbol/amathera.jpg",
+        "alignment": "Neutral Good",
+        "domains": "Community, Family, Good, Healing, Knowledge, Liberation, Protection",
+        "domains5": "Arcana, Knowledge, Life",
+        "interfaithblessing": "+2 to AC",
+        "worshippers": "The poor, the weak, and those in need of protection from greater foes all pray to Amathera. The nation of Zelfir worships Amathera exclusively, as she aided them in their liberation from the Sorceron now imprisoned in the Sorcerer's Prison.",
+        "allowedalignments": "Lawful Good, Neutral Good, Chaotic Good, Neutral",
+        "weapon": "Spear, Shield(shield bash)",
+        "appearance": "Amathera appears as a tall, slender, well muscled woman with dark hair and brown eyes.  Typically dressed in simple white clothing carrying a large shield.",
+        "dogma": "Amathera preaches that all people of means should give of what they have to the poor. Those who worship her tend to practice charity and her temples also serve as poor houses and houses of learning. Amathera favors the creation of trade schools and universities that are cheap to attend or free to all. She bans the usage of compulsion magic by her followers. Each year on the shortest day of the year Amathera's priests hold the feast of the lowly where the poorest in the community are honored guests and all must bring offerings of their best to grace them.",
+        "clergy": "The clergy of Amathera receive little to no recognition (at least outside of Zelfir) and live as humbly as those they administer to, usually having cells within the poor houses they operate. They must be blessed with robust health by Amathera for they often work in the dirtiest and most dangerous areas, yet they rarely suffer from disease or attack. Indeed, only the most wretchedly depraved would attack a cleric of Amathera while he was undertaking his duty, for all are welcome to the protection of the Goddess.",
+        "home": "Amathera resides with her worshippers in the plains of Elysium"
+      }

@@ -1,0 +1,22 @@
+{
+  "name": "Swava",
+  "nation": "Shendarel",
+  "population": 0,
+  "metro": 0,
+  "majority": "",
+  "ruling": "",
+  "minorities": [
+    ""
+  ],
+  "exports": [
+    ""
+  ],
+  "landmarks": [
+    {
+      "name": "",
+      "description": ""
+    }
+  ],
+  "coords": [-0.896447530064861, -0.5789796262979509],
+  "description": ""
+}

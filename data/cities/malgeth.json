@@ -1,0 +1,17 @@
+{
+  "name": "Malgeth",
+  "nation": "Malinval",
+  "population": 0,
+  "metro": 0,
+  "majority": "Grunt Orcs",
+  "ruling": "High Orcs",
+  "minorities": [
+    "Goblins",
+    "Hobgoblins",
+    "Kobolds"
+  ],
+  "exports": [],
+  "landmarks": [],
+  "coords": [19.973348786110613, 99.58213806152345],
+  "description": ""
+}

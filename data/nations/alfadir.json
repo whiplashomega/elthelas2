@@ -1,0 +1,59 @@
+{
+  "name": "Alfadir",  
+  "coords": [-47.219568112315486, -73.64822387695314],
+  "border-coords": [],
+  "color": "#FFFF00",
+  "map": "/static/images/maps/nations/Alfadir.jpg",
+  "capitol": "Dieel",
+  "cities": [
+    "Fradae",
+    "Damat"
+  ],
+  "landmarks": [],
+  "borders": [
+    "Hisru'de'tan",
+    "Stagenheim",
+    "Staelia",
+    "Zelfir"
+  ],
+  "population": 3000000,
+  "populationDistribution": [{
+    "race": "Staelic Humans",
+    "proportion": 0.6
+  },
+  {
+    "race": "Hisru Humans",
+    "proportion": 0.15
+  },
+  {
+    "race": "Strongheart Halflings",
+    "proportion": 0.06
+  },
+  {
+    "race": "Tallfellow Halflings",
+    "proportion": 0.05
+  },
+  {
+    "race": "Morrind Dwarves",
+    "proportion": 0.04
+  },
+  {
+    "race": "Stagen Gnomes",
+    "proportion": 0.04
+  }],
+  "government": "Alfadir is a country that can be bought. The primary government in Alfadir is the Council of Lords, however titles are not hereditary or elected, but rather purchased, as an optional, and very significant, tax. Once a title is paid for it lasts 10 years unless the tax is paid again. Thus the wealthiest members of society make the rules, and outside forces sometimes make large inroads into Alfadiran society through the influx of money. Indeed there are 3 members of the council who are in fact Morrind Dwarves, and 2 from Staelia, 1 from Hisru'de'tan, 2 from Zelfir, 5 from Dera'Dragorim, and 6 from Stagenheim. There is no limit to the number of lords that sit on the council, and the funds raised by the tax go to civic improvements and the maintenance of the army, often through generous no-bid contracts to council members.",
+  "ruler": "Council of Lords",
+  "history": "Alfadir was originally a Staelic colony by a group of merchants who hoped to escape the endless wars with the trolls. It worked, and the colonies position on two major rivers that come out of the gnome-controlled mountains of stagenheim means that there are a bevy of goods to carry to the coast. Additionally, Alfadiran merchants handle most of the purchase and sales of Hisru cattle to lands that need it, such as Zelfir and Stagenheim, and control the ports in the villages that line the isthmus between Zelfir and Hisru'de'tan, and in the Hisru city of Atyrao.",
+  "gods": [
+    "Maris",
+    "Sara",
+    "Trimala"
+  ],
+  "worship": "Maris, god of trade, travel and divination is the primary patron God of Alfadir, but most of the common folk worship Sara or Trimala.",
+  "culture": "Alfadir is a country where anything can be bought for the right price, even things that are nominally illegal can usually be obtained if one has the money to pay for a title first. Corruption is rampant, and it is simply expected that obtaining government services will require a bribe of some sort. The poor tend to keep their heads down and work their land.",
+  "economics": "Alfadir's economy revolves around the river trade and cash crop farming within the fertile flood plains of its rivers.\n\nMost of the land in Alfadir is owned by the very wealthy, who rent out portions of it to poorer farmers rather than work it themselves. Cash crops such as cotton and dyes are common more inland, while the coastal region is the worlds largest producer of sugar.",
+  "slavery": "Slavery is nominally illegal in Alfadir, however indentured servitude is common.",
+  "magic": "Magic users are free to practice in Alfadir, and there is a major research college in Dieel, sponsored by the government.",
+  "property": "Property rights are strongly protected and almost anything except the rivers and the public roadways can be bought.",
+  "citizenship": "Alfadir does not have citizenship requirements, anyone who lives or comes to Alfadir is treated the same way, and always based on the size of their wallet."
+}

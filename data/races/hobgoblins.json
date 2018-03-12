@@ -1,0 +1,41 @@
+{
+  "id": "hobgoblins",
+  "name": "Hobgoblins",
+  "singular": "Hobgoblin",
+  "description": "\n\nThe middle size cousin of the goblinoids, hobgoblins are also the most organized and militaristic. They live largely on the outskirts of Orcish society, and are often used as mercenaries by the Orcs in particularly hot battles. Hobgoblins are more versatile than your typical Orc, and do especially well in massed formations.\n\nLike all goblinoids, hobgoblins tend to be mean, vindictive, and deceitful. Unlike other goblinoids, they also tend to form large powerful bands capable of a real united threat. Hobgoblin mercenary bands can be found all over the world, although they primarily find themselves working for other evil creatures. Their greater versatility as compared to orcs and other goblinoids makes them excellent at filling specialized roles, everything from elite deep penetration teams to scouts to quartermasters.\n\nOutside of militaristic life, hobgoblin society is tribal, and focused on a specific pecking order.\n\n#### Hobgoblin Culture in Elthelas\n\nHobgoblin's are perhaps the most likely race in Elthelas to have never formed their own nation.  Militaristic, organized, and capable, they suffered primarily from their proximity to the much more numerous orcs who have continually dominated the hobgoblins. Nevertheless the hobgoblins have fared better than their smaller cousins, earning places as powerful semi-independent auxiliary units to orc armies, and freedom from slavery.\n\nHobgoblin society is regulated and communal, anyone who does not work towards the good of the tribe or the army is outcast. Spouses and children who are not warriors follow the army, cooking meals, repairing tools, weapons, armor, or whatever else is needed. There is little art among hobgoblins, and music tends to be marching or war songs.",
+  "traits": [
+    "Ability Score Improvement: Your Constitution score increases by 2, and your Intelligence score increases by 1.",
+    "Size: Hobgoblins are between 5 and 6 feet tall and weigh between 150 and 200 pounds. Your size is Medium.",
+    "Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+    "Size: Hobgoblins are roughly the height and weight of humans, your size is medium.",
+    "Speed: Your speed is 30 ft",
+    "Martial Training: You are proficient with two martial weapons of your choice and with light armor.",
+    "Saving Face: Hobgoblins are careful not to show weakness in front of their allies, for fear of losing status. If you miss with an attack roll or fail an ability check or a saving throw, you can gain a bonus to the roll equal to the number of allies you can see within 30 feet of you (maximum bonus of +5). Once you use this trait, you can't use it again until you finish a short or long rest."
+  ],
+  "agepoints": {
+    "puberty": 8,
+    "sexualmaturity": 10,
+    "mentalmaturity": 15,
+    "middleage": 25,
+    "oldage": 35,
+    "averagelifespan": 50,
+    "maxage": 65
+  },
+  "subraces": [
+    {
+      "id": "default",
+      "name": "",
+      "image": "/static/images/races/hobgoblin.jpg",
+      "description": "",
+      "traits": [
+      
+      ],
+      "averageheight": 67,
+      "baseheight": 56,
+      "heightroll": "2d10",
+      "averageweight": 165,
+      "baseweight": 110,
+      "weightroll": "2d4"
+    }  
+  ]
+}

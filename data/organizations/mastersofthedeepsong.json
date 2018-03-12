@@ -1,0 +1,28 @@
+{
+  "id": "mastersofthedeepsong",
+  "title": "Masters of the Deep Song",
+  "description": "Among the highest acolytes of Dorun are the Masters of the Deep Song. They are skilled musicians who sing and teach the oral history of their God through music.  The songs of the masters of the deep can travel huge distances as they echo through the tunnels of a dwarven hold, creating intricate overlapping harmonies.  These masters of music are sworn to uphold the strictest tenets of their faith.",
+  "nations": [
+    "curinor",
+    "morrindim",
+    "stagenheim"
+  ],
+  "cities": [
+    "curinkeep",
+    "torinhammer",
+    "stromforde",
+    "highhammer",
+    "granitebluff",
+    "morrindim",
+    "alados",
+    "craftheim",
+    "gnoma",
+    "ifritan"
+  ],
+  "tenets": [
+    "**Darkness Protects.** Dorun lives in the darkness and shuns the light, I must live by his example and never reveal my face to the sun.  If necessary I may use a mask or cloak to hide myself, but to expose my face to direct sunlight would be the greatest shame.",
+    "I must make time each day to practice my art.  I will grow through the songs of my people."
+  ],
+  "level1": "**Singer.** You gain proficiency in the performance skill.  If you are already proficient in performance you gain expertise instead.",
+  "level10": "**Master of the Deep Song.** You gain the ability to cast the spell enthrall at will without using a spell slot.  Charisma is your spellcasting ability when it is cast in this way."
+}

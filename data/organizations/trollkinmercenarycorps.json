@@ -1,0 +1,18 @@
+{
+  "id": "trollkinmercenarycorps",
+  "title": "Trollkin Mercenary Corps",
+  "description": "The Trollkin Mercenary Corps is the official diplomatic arm of Degak'Ta, but membership is not restricted to citizens of Degak'Ta or Trollkin.  They are an elite group of mercenaries who will sign up for any conflict for the right price, even different sides of the same conflict. Once contracted they are known to be extremely loyal and impartial, governed by the contract they are given until it expires.  Further they are known to be among the best warriors in the world, so being able to afford Trollkin Mercenaries is considered extremely prestigious.",
+  "nations": [
+    "degakta"
+  ],
+  "cities": [
+    "sunra"
+  ],
+  "tenets": [
+    "My contract is law.  Failing to fulfill the contract I agree to is never acceptable for any reason.",
+    "Never work without payment.  We are not a charity organization",
+    "Avoid religious entanglements.  Many employers have particular religious beliefs, and one should avoid offending future employers.  I must never engage in public displays of religion or work directly for a religious organization."
+  ],
+  "level1": "**Advance Payment.** People who give you contracted missions are willing to pay in advance whenever they are able.  The reputation of the Mercenary Corps preceeds you.",
+  "level10": "**Battle Master.** The advance training the Corps provides has paid off and you are able to do more damage with every swing of your sword or shot of your bow.  You get +1d4 damage on all weapon attack rolls."
+}

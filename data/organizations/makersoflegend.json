@@ -1,0 +1,36 @@
+{
+  "id": "makersoflegend",
+  "title": "Maker's of Legend",
+  "description": "The Makers of Legend are probably the most influential of the bardic colleges.  They teach their students to not only spread the knowledge of legendary accomplishments, but to constantly seek to become a hero of legend.  Cowardice or bad actions are highly frowned upon.",
+  "nations": [
+    "dormania",
+    "gerasalim",
+    "kandor",
+    "curinor",
+    "eldoran",
+    "terron",
+    "shendarel",
+    "zelfir",
+    "staelia",
+    "deradragorim"
+  ],
+  "cities": [
+    "desadorel",
+    "kaland",
+    "strovenguard",
+    "curinkeep",
+    "loridesa",
+    "tenecha",
+    "swava",
+    "zelfin",
+    "instar",
+    "vasha"
+  ],
+  "tenets": [
+    "I will always behave in the most courageous manner possible",
+    "Legends are made in the eyes of those who watch them, I must always appear to be upstanding to others",
+    "I must make sure that everyone knows the legends of my people"
+  ],
+  "level1": "**Book of Legends.** The Makers of Legend have supplied you with a book of prominent legends and stories from history.  While the book is in your possession you have advantage on intelligence(history) checks.",
+  "level10": "**Inspiring Leader.** You gain 1 additional use of bardic inspiration per short rest."
+}

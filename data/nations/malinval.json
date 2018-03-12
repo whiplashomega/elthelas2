@@ -1,0 +1,55 @@
+{
+  "name": "Malinval",
+  "coords": [-4.477856485570586, 82.62130737304688],
+  "border-coords": [],
+  "color": "#FFFF00",
+  "map": "/static/images/maps/nations/Malinval.jpg",
+  "capitol": "Marinval",
+  "cities": ["Mak'hol", "Forbel", "Makir", "Parakas", "Malgeth", "Morda'serek'hai", "Gulutheim", "Ochre'ken"],
+  "landmarks": ["Desert of Despair", "Glass Cliff", "Blighted Gap", "Rust Desert", "Black Shard Pass", "Golden Pass", "Dal Okra"],
+  "borders": ["Eldoran", "Demal Thor", "Curinor", "Gerasalim", "Dormania", "Arad", "Terron", "Seran", "Nerim", "Morrindim", "Degak'Ta", "Olda"],
+  "population": 20300000,
+  "populationDistribution": [{
+    "race": "Grunt Orcs",
+    "proportion": 0.6
+  },
+  {
+    "race": "Goblins",
+    "proportion": 0.19
+  },
+  {
+    "race": "Hobgoblins",
+    "proportion": 0.06
+  },
+  {
+    "race": "High Orcs",
+    "proportion": 0.05
+  },
+  {
+    "race": "Trollkin",
+    "proportion": 0.04
+  },
+  {
+    "race": "Neran Humans",
+    "proportion": 0.03
+  },
+  {
+    "race": "Kobolds",
+    "proportion": 0.02
+  },
+  {
+    "race": "Moon Elves",
+    "proportion": 0.01
+  }],
+  "government": "Marinval's current government is a common subject of rumor. While historically it has been a relatively fractured nation, with civil wars common between different Orc warlords whose territory is constantly shifting, in recent years scouts and spies have reported that internal affairs have been relatively quiet, while the orcs' attacks against their neighbors have begun to increase. This has sparked rumors that either a particularly adept warlord has united the tribes, or the often-discounted possibility that the Prince of Fiends, a Sorceron long imprisoned in the mountain Dal Okra may have awakened. Nevertheless the local warlords still seem to be more or less in control of their own territory, and the best description of the government currently could probably be described as a despotic confederacy.\n\nRumors in recent months have continued to solidify on the reawakening of the Prince of Fiends.",
+  "ruler": "Believed to be the Prince of Fiends",
+  "history": "Malinval's size and strength have varied greatly over time depending on the strength of whatever warlords are in power and how fractured their outside enemies are. For example, when the Dormanian and Nerimese Empires were at their heights, Makir and Dal Okra formed the northern border while Makir and Gulutheim formed the eastern, leaving the country at nearly half of its current size. Nevertheless, the last 300 years have seen a slow but steady expansion for the Orcs. Only the imposing Fortress of Light and the difficulty in moving supplies across the Blighted Gap have stopped them from extending their borders possibly as far as Northport and the Moon Pass.\n\nThe orcs are a warlike people, and the land they live in shows the scars of nearly 3000 years of endless wars, including being the location for many major battles in the God's War. The Glass Cliff, the World Crack, and the Rust Desert are three such locations. Meanwhile Black Shard Pass was literally cut out of the mountains by the Dormanian Emperor's magi in order to provide an avenue of attack in his southward expansion, and the Blighted Gap was created when the Orcs burned and salted everything in their path in a major offensive 200 years ago. Old fortresses, both abandoned and in current use dot much of the landscape, built by both orcs and non-orcs, as well as cities that rose up and were likewise destroyed or abandoned in the face of advancing enemies.",
+  "gods": ["Mat'raktha"],
+  "worship": "While other Gods have often had cults among the people of Malinval, recently these have fallen into disfavor while Mat'raktha's worship has risen.",
+  "culture": "At the lowest level, Malinvan culture is one of survival of the strongest. Nevertheless there is an inherent discipline that comes with being a highly militaristic people used to obeying orders, and in the warband everyone has his place. The common misconception in the north has always been that the Orcs attack as frenzied berserkers with no thought for strategy, but no thought could be further from the truth. While Orc Berserker's are a fearsome sight, and one worth remembering, they are only one aspect of an orcish fighting force, and not really representative of the culture at large.\n\nIn fact, Malinval encompasses a wide variety of cultures. On the one hand you have the mining city of Parakas, a top down, highly regimented communistic city built entirely of steel (for which it is famous), while on the other you have Forbel, a tent city that has been the site of massive clan wars, as it is the center of the western cattle trade, and up to a dozen warlords have laid claim to it at one time. The capitol, Marinval, is a sprawling city of low sod and brick buildings, temporary fortifications, and castles.",
+  "economics": "Malinval is huge, and produces a great many goods for sale and use internally, however, generally the people are poor and overcrowded.  There is little to no trade with it's northern neighbors (that which exists is done entirely in the black market), but it exports a number of goods to Morrindim, Olda, Arad, Terron, and Seran,  particularly food and metal goods.",
+  "slavery": "Slavery is common in Malinval, and like in other orc dominated areas most slaves are goblins, with a small smattering of the descendants of Neran refugees and kobolds.",
+  "magic": "Magic is allowed, or at least there is no unified statute concerning its use. Youngsters who show promise are often encouraged in magical study, just so long as they are loyal to and do not prove a threat to the local warlord. Any mage considered a threat to power is usually hunted and executed.",
+  "property": "Property is usually what you can hold onto, although there is a certain amount of respect for women and children, and the custom is never to displace from their home a family with kids. This of course encourages breeding so as to avoid losing everything one has to someone stronger than oneself.",
+  "citizenship": "Most orcs would sooner die than follow someone not an orc. Thus almost all of the major warlords have been orcs, and even local captains. The closest analog to 'citizenship' is membership in a clan, and each clan determines its own rules for membership."
+}

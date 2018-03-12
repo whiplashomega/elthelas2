@@ -1,0 +1,31 @@
+{
+  "name": "Terron",
+  "coords": [-6.489983332670651, 118.21701049804689],
+  "border-coords": [],
+  "color": "#FFFF00",
+  "map": "/static/images/maps/nations/Terron.jpg",
+  "capitol": "Tenecha",
+  "cities": [],
+  "landmarks": ["World Crack"],
+  "borders": ["Arad", "Seran", "Dormania"],
+  "population": 600000,
+  "populationDistribution": [{
+    "race": "Neran Humans",
+    "proportion": 0.85
+  },
+  {
+    "race": "Imperial Humans",
+    "proportion": 0.1
+  }],
+  "government": "Terron is ruled by the Council of Lords. The 27 seat assembly is hereditary, and members are banned from intermarriage. Terron is unusual in this way that the nobility are in fact required to marry non-nobles in order to preserve the separation of the noble houses and prevent power from becoming consolidated in a single individual.",
+  "ruler": "",
+  "history": "During the period leading up to the cataclysm of Nerim, 27 Lords from within Nerim opposed the Emperor's plan for immortality. They tried to curry influence with the church to build opposition and force the Emperor to back down, but they were betrayed. Fearing for their lives they fled and met up on the island colony Terron. It was while they were meeting there that the cataclysm occurred. Horrified by the masses of undead they believed resulted from the use of Nera's power, they gave up the worship of Nera and took up the worship of Cora. Once the ensuing war ended, the 27 Lords split the island into 27 estates, and vowed to govern jointly rather then ever let one man have enough power to repeat an event like the cataclysm.",
+  "gods": ["Cora", "Sara"],
+  "worship": "The nobility have traditionally worshiped Cora ever since the cataclysm, and many of the common people do as well. Sara also has a strong following among the agrarian class.",
+  "culture": "The culture of Terron is influenced by a strong sense of personal freedom and a distrust of powerful people. Laws are designed to protect individuals rights and limit the power of the great. It is the only country in the world with a progressive tax system.\n\nTerron's poor tend to be subsistence farmers or miners up in the mountains. While no one of them has much, they all help each other as much as they can, and to refuse aid to someone in need is considered the worst of manners.",
+  "economics": "Terron is a poor country of subsistence farmers and miners. The lords of the land typically have control of larger plantations and trading interests, but even they are usually only comparable to a middling noble or regional merchant in Dormania or Eldoran.\n\nThe mountains are dotted with small mines built by entrepaneuring prospectors. They tend to have big dreams, and not much capital, so their mines rarely get far beneath the surface, yet the rumors of large deposits of valuable gemstones and veins of silver and gold regularly draw them up into the mountains. Occasionally foreigners, particularly dwarves who hear the rumors, will find their way to Terron to try their luck, but the locals have a strong distaste for such outsiders 'who come to strip our land and carry away everything we have'.",
+  "slavery": "Slavery is illegal in Terron",
+  "magic": "Magic is closely regulated, and most high level magic is strictly illegal. One man should never be allowed so much power is the view in Terron.",
+  "property": "While any citizen can own property in Terron, there are restrictions on how much, although the nobility are the only ones that get close to pushing that boundary. Anyone who owns too much property is liable to have the extra portion of his estates confiscated and distributed to poor homesteaders.",
+  "citizenship": "An oath of opposition to tyranny and the Goddess Nera is required for citizenship in Terron."
+}

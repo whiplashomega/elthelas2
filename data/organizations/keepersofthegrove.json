@@ -1,0 +1,18 @@
+{
+  "id": "keepersofthegrove",
+  "title": "Keepers of the Grove",
+  "description": "The Keepers of the Grove are a druidic order dedicated to protecting the Grove of Gaia, a hidden grove on the island of Gnarra that is the home of the Goddess Gaian.",
+  "nations": [
+    "gnarra",
+    "eldoran"
+  ],
+  "cities": [
+  
+  ],
+  "tenets": [
+    "I must stay in contact with the druids at the grove itself, and ensure its continued safety at all times",
+    "Nature must be protected from the ravages of civilization"
+  ],
+  "level1": "**Child of Nature.** You have proficiency in nature checks.  If you are already proficient in nature you gain expertise instead.",
+  "level10": "**Blessing of the Earth.** You learn the spell Plant Growth, and can cast it without expending a spell slot.  Once you use this ability you cannot use it again until you finish a long rest."
+}

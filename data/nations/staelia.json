@@ -1,0 +1,35 @@
+{
+  "name": "Staelia",
+  "coords": [-59.130863097255904, -62.13455200195313],
+  "border-coords": [],
+  "color": "#FF0000",
+  "map": "/static/images/maps/nations/Staelia.jpg",
+  "capitol": "Instar",
+  "cities": ["Kelas", "Pelgan"],
+  "landmarks": ["Troll Pass", "Ice Wastes"],
+  "borders": ["Gorgro Plateau", "Stagenheim", "Alfadir", "Ice Wastes", "Tiaov Coast"],
+  "population": 12000000,
+  "populationDistribution": [{
+    "race": "Staelic Humans",
+    "proportion": 0.9
+  }, 
+  {
+    "race": "Stagen Gnomes",
+    "proportion": 0.05
+  }, 
+  {
+    "race": "Morrind Dwarves",
+    "proportion": 0.03
+  }],
+  "government": "Staelia is a feudal monarchy with a strong class of battle-hardened nobility that is incredibly loyal to king and country.",
+  "ruler": "",
+  "history": "Staelia has had little effect on history outside of their own region, as most of their history has been spent fighting with various monstrous races from Gorgro and the Ice Wastes. Although occasionally they have had minor skirmishes with the gnomes and the separatist colony of Alfadir.",
+  "gods": ["Alohim", "Amathera", "Sara", "Tock"],
+  "worship": "Worship in Staelia is almost entirely determined by social class. The nobility all generally worship Alohim, while the commoners worship Amathera or Sara. Those gnomes who live in Staelia typically worship Tock.",
+  "culture": "Staelia is a culture of chivalric ideals. Romantic love is glorified, serfs are effectively property, with the justification of 'protection' and combat follows strict rules, at least internally. Staelia does not lack for tacticians willing to bend the rules in favor of a better result when facing unconventional foes, as unconventional is rather typical here.\n\nBuildings in Staelia are almost always strongly fortified and built of stone, and the air of paranoia can become almost palpable as one approaches the Gorgro plateau. A raid can happen at anytime, anywhere, and everyone knows it. Every few years the King or one of the powerful Lords will organize a campaign into the plateau, where they will hunt and kill as many trolls, ogres, and giants as they can manage, but this usually does little to stem the tide. Also, unless the army is very lucky or very skilled, casualties are usually high, reducing the number of men available for the border forts.\n\nNevertheless, the people of Staelia persevere. They have singlehandedly fought back the trolls and giants for hundreds of years, and while they have not grown in power or gained real ground, they have not gone into decline or lost territory either. It is a culture of endless war that the people have come to accept as simply the way their world is.",
+  "economics": "Staelia has a weak economy that is mostly agrarian. They import most of their finished goods from Stagenheim or Alfadir. It is the bread basket of Atyrea.",
+  "slavery": "Slavery is illegal in Staelia, yet serfdom is a cultural institution.",
+  "magic": "Magic is not regulated, although magi are drafted at a much higher rate than most people.",
+  "property": "Property ownership is restricted to those of noble blood.",
+  "citizenship": "Serfs are born to their land, as are the nobility. It means entirely different things for each class, as the nobility own the land they are born to. Nevertheless, citizenship in Staelia can only be acquired by birth or by declaration of the king (usually through assignment of property)."
+}

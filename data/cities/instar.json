@@ -1,0 +1,22 @@
+{
+  "name": "Instar",
+  "nation": "Staelia",
+  "population": 0,
+  "metro": 0,
+  "majority": "Staelic Humans",
+  "ruling": "Staelic Humans",
+  "minorities": [
+    "Strongheart Halflings"
+  ],
+  "exports": [
+    ""
+  ],
+  "landmarks": [
+    {
+      "name": "",
+      "description": ""
+    }
+  ],
+  "coords": [-58.65408464530598, -56.99501037597656],
+  "description": ""
+}
