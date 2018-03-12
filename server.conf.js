@@ -24,13 +24,13 @@ app.start = function() {
     
     // connect to our mongoDB database 
     // (uncomment after you enter in your own credentials in config/db.js)
-    mongoose.connect(config.mongoUrl + "?authMechanism=SCRAM-SHA-1", function(err, res) {
+    /*mongoose.connect(config.mongoUrl + "?authMechanism=SCRAM-SHA-1", function(err, res) {
         if(err) {
             console.log('ERROR connecting to: ' + config.mongoUrl + '. ' + err);
         } else {
             console.log('Succeeded connecting to: ' + config.mongoUrl);
         }
-    }); 
+    });*/ 
     
     // get all data/stuff of the body (POST) parameters
     // parse application/json 
@@ -50,7 +50,7 @@ app.start = function() {
     // override with the X-HTTP-Method-Override header in the request. simulate DELETE/PUT
     app.use(methodOverride('X-HTTP-Method-Override')); 
 
-    app.use(passport.initialize());    
+    //app.use(passport.initialize());    
     // set the static files location /public/img will be /img for users
     app.use(express.static('.')); 
 
