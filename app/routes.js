@@ -129,7 +129,7 @@
         // route to handle all angular requests
         app.get('*', function(req, res) {
             if(staticDir) {
-                res.sendFile(appRoot + staticDir + '/index.html');
+                res.sendFile(appRoot + '/..' + staticDir + '/index.html');
             } else {
                 res.sendFile(appRoot+'/index.html'); // load our public/index.html file
             }
