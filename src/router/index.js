@@ -120,7 +120,8 @@ var router = new Router({
     {
       name: 'runner',
       meta: {
-        title: "Encounter Runner"
+        title: "Encounter Runner",
+        auth: true
       },
       path: '/runner',
       components: {
@@ -130,7 +131,8 @@ var router = new Router({
     {
       name: 'runnerdynamic',
       meta: {
-        title: "Encounter Runner"
+        title: "Encounter Runner",
+        auth: true
       },
       path: '/runner/:encounter',
       components: {
@@ -257,7 +259,8 @@ var router = new Router({
     {
       name: "book4",
       meta: {
-        title: "Epic of Elthelas: Book 4"
+        title: "Epic of Elthelas: Book 4",
+        auth: true
       },
       path: '/tools/book4/dm/:chapter',
       components: {
@@ -290,7 +293,17 @@ var router = new Router({
   mode: 'history'
 });
 router.beforeEach((to, from, next) => {
-  store.dispatch('changeTitle', to.meta.title);
-  next();
+  console.log(store.state);
+  if (to.meta.auth && !store.state.auth.loggedin) {
+    next({
+      path: '/',
+      query: {
+        redirect: to.fullPath
+      }
+    });
+  } else {
+    store.dispatch('changeTitle', to.meta.title);
+    next();
+  }
 });
 export default router;
