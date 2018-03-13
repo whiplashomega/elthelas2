@@ -1,2 +1,0 @@
-
-require('./homeTests.js');

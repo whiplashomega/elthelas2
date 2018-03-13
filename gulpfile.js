@@ -1,89 +1,7 @@
 var gulp = require('gulp'),
-    minifycss = require('gulp-clean-css'),
-    usemin = require('gulp-usemin'),
-    rename = require('gulp-rename'),
-    concat = require('gulp-concat'),
-    cache = require('gulp-cache'),
-    changed = require('gulp-changed'),
-    rev = require('gulp-rev'),
-    del = require('del'),
-    ngannotate = require('gulp-ng-annotate'),
-    sass = require('gulp-sass'),
     fs = require('fs');
 var jsonlint = require("gulp-jsonlint");
-var gutil = require('gulp-util');
-//precompile
-gulp.task('jshint', function() {
-  
-    var jshint = require('gulp-jshint'),
-      stylish = require('jshint-stylish');
-    gulp.src('tests/js/**/*.js').pipe(jshint()).pipe(jshint.reporter(stylish));
-    return gulp.src('dev/js/**/*.js')
-    .pipe(jshint())
-    .pipe(jshint.reporter(stylish));
-});
-
-gulp.task('copylibraries', function() {
-   gulp.src('./bower_components/angular/angular.min.js').pipe(gulp.dest("./dev/libraries"));
-   gulp.src('./bower_components/angular-marked/angular-marked.js').pipe(gulp.dest("./dev/libraries"));
-   gulp.src('./bower_components/angular-marked/dist/angular-marked.js').pipe(gulp.dest("./dev/libraries"));
-   gulp.src('./bower_components/bootstrap/dist/js/bootstrap.js').pipe(gulp.dest("./dev/libraries"));
-   gulp.src('./bower_components/bootstrap/dist/css/*.min.css').pipe(gulp.dest("./dev/css"));
-   gulp.src('./bower_components/bootstrap/dist/fonts/*').pipe(gulp.dest("./dev/fonts"));
-   gulp.src('./bower_components/datatables/media/js/jquery.dataTables.js').pipe(gulp.dest("./dev/libraries"));
-   gulp.src('./bower_components/datatables/media/css/*.min.css').pipe(gulp.dest("./dev/css"));
-   gulp.src('./bower_components/datatables/media/css/jquery.dataTables.css').pipe(gulp.dest("./dev/css"));
-   gulp.src('./bower_components/datatables/media/images/*').pipe(gulp.dest("./dev/images"));
-   gulp.src('./bower_components/datatables.net-responsive/js/dataTables.responsive.min.js').pipe(gulp.dest("./dev/libraries"));
-   gulp.src('./bower_components/datatables.net-responsive-dt/css/responsive.dataTables.min.css').pipe(gulp.dest("./dev/css"));
-   gulp.src('./bower_components/droll/droll.js').pipe(gulp.dest("./dev/libraries"));
-   gulp.src('./bower_components/jquery/dist/jquery.js').pipe(gulp.dest("./dev/libraries"));
-   gulp.src('./bower_components/leaflet/dist/leaflet.js').pipe(gulp.dest("./dev/libraries"));
-   gulp.src('./bower_components/leaflet/dist/leaflet.css').pipe(gulp.dest("./dev/css"));
-   gulp.src('./bower_components/leaflet-measure/dist/leaflet-measure.css').pipe(gulp.dest("./dev/css"));
-   gulp.src('./bower_components/leaflet-measure/dist/leaflet-measure.min.js').pipe(gulp.dest("./dev/libraries"));
-   gulp.src('./bower_components/leaflet/dist/images/*').pipe(gulp.dest("./dev/css/images"));
-   gulp.src('./bower_components/marked/lib/marked.js').pipe(gulp.dest("./dev/libraries"));
-   gulp.src('./bower_components/angular-ui-router/release/angular-ui-router.js').pipe(gulp.dest("./dev/libraries"));
-   gulp.src('./node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js').pipe(gulp.dest("./dev/libraries"));
-   gulp.src('./node_modules/babel-polyfill/dist/polyfill.min.js').pipe(gulp.dest("./dev/libraries"));
-   gulp.src('./node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css').pipe(gulp.dest("./dev/css"));
-   gulp.src('./bower_components/angular-cookies/angular-cookies.min.js').pipe(gulp.dest("./dev/libraries"));
-   gulp.src('./bower_components/TimelineJS3/compiled/css/**/*').pipe(gulp.dest("./dev/css"));
-   gulp.src('./bower_components/TimelineJS3/compiled/js/timeline.js').pipe(gulp.dest("./dev/libraries"));
-   gulp.src('./bower_components/angular-timelinejs3/dist/js/ng-timeline.js').pipe(gulp.dest("./dev/libraries"));
-   gulp.src('./bower_components/seedrandom/seedrandom.min.js').pipe(gulp.dest('./dev/libraries'));
-   return true;
-});
-
-//compile
-gulp.task('sass', function() {
-    return gulp.src('./dev/sass/**/*.scss').pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./dev/css'));
-});
-
-gulp.task('sass:watch', function() {
-   gulp.watch('./dev/sass/**/*.scss',['sass']); 
-});
-
-gulp.task('usemin',['sass', 'copylibraries', 'copyjson', 'copyimages'], function () {
-  return gulp.src('./dev/index.html')
-      .pipe(usemin({
-        css:[minifycss()],
-        js: []
-      }))
-      .pipe(gulp.dest('./web/'));
-});
-
-/*gulp.task('fixfilenames', function() {
-  var files = fs.readdirSync("./data/creatures2/bestiary");
-  files.forEach(file => {
-    var data = fs.readFileSync("./data/creatures2/bestiary/" + file, "utf-8");
-    var filename = file.replace(/[\d]+-[\d]+-[\d]+-/,"");
-    console.log(filename);
-    fs.writeFile("./data/creatures/" + filename, data, "utf-8");
-  });
-});*/
+var webpack = require("webpack-stream");
 
 gulp.task('historyjson', function () {
   var files = fs.readdirSync("./data/historicalevents");
@@ -122,7 +40,9 @@ gulp.task('historyjson', function () {
     }
   });
   if(historyarray.length === files.length) {
-    fs.writeFile("./static/json/history.json", JSON.stringify({ "model": "History", "documents": historyarray}), "utf-8");
+    fs.writeFile("./static/json/history.json", JSON.stringify({ "model": "History", "documents": historyarray}), "utf-8", function() {
+      return true;
+    });
   }
   return true;
 });
@@ -234,10 +154,13 @@ gulp.task('creaturesjson', function() {
     creaturearray.push(creature);
   });
   if(creaturearray.length === files.length) {
-    fs.writeFile("./static/json/creatures.json", JSON.stringify({ "model": "Creature", "documents": creaturearray }), "utf-8");
+    fs.writeFile("./static/json/creatures.json", JSON.stringify({ "model": "Creature", "documents": creaturearray }), "utf-8", function() {
+      return true;
+    });
   }
   return true;  
 });
+
 gulp.task('spellsjson', function() {
   function intersect(arrays) {
     return arrays.shift().filter(function(v) {
@@ -272,7 +195,9 @@ gulp.task('spellsjson', function() {
     spellarray.push(spell);
   });
   if(spellarray.length === files.length) {
-    fs.writeFile("./static/json/spells.json", JSON.stringify({ "model": "Spell", "documents": spellarray }), "utf-8");
+    fs.writeFile("./static/json/spells.json", JSON.stringify({ "model": "Spell", "documents": spellarray }), "utf-8", function() {
+      return true;
+    });
   }
   return true;
 });
@@ -296,7 +221,9 @@ gulp.task('jsoncompile', ['jsonlint'], function() {
         console.log(e.name + ": " + e.message);
       }
     });
-    fs.writeFile(destination, JSON.stringify({ "model": modelName, "documents": comparray }), "utf-8");
+    fs.writeFile(destination, JSON.stringify({ "model": modelName, "documents": comparray }), "utf-8", function() {
+      return true;
+    });
   }
   //gods
   compiledir("./data/gods", "./static/json/gods.json", "God");
@@ -323,52 +250,19 @@ gulp.task('jsoncompile', ['jsonlint'], function() {
   return true;
 });
 
-gulp.task('cleanup', [], function() {
-   return del(['web/**/*']); 
-});
-
-gulp.task('copyimages', ['cleanup'], function() {
-   gulp.src('dev/images/**/*').pipe(gulp.dest('web/images'));
-   gulp.src('dev/fonts/**/*').pipe(gulp.dest('web/fonts'));
-   gulp.src('dev/html/**/*').pipe(gulp.dest('web/html'));
-   gulp.src('dev/libraries/locale/**/*').pipe(gulp.dest('web/js/locale'));
-   return gulp.src('dev/css/images/**/*').pipe(gulp.dest('web/css/images'));
-});
-
-gulp.task('copyjson', ['spellsjson', 'historyjson', 'creaturesjson', 'jsoncompile', 'cleanup'], function() {
-    return gulp.src('./dev/json/**/*.json').pipe(gulp.dest('./web/json'));
-});
-
-gulp.task('unittest', ['jshint'], function(done) {
-  var Server = require('karma').Server
-  new Server({
-    configFile: __dirname + "/karma.conf.js",
-    singleRun: true
-  }, done).start();
+gulp.task('unittest', [], function(done) {
+  done();
 });
 
 gulp.task('integrationtest', ['unittest'], function() {
-  
-  var jasmine = require('gulp-jasmine');
-  var reporters = require('jasmine-reporters');
-  var server = require('./server.conf');
-  server.start();
-  gulp.src('tests/js/integration/test.spec.js').pipe(jasmine(
-    {
-      reporter: new reporters.TerminalReporter(),
-      jasmineDone: function() {
-        server.stop();
-      }
-    }));
-});
-
-//post-compile
-gulp.task('prodcleanup', ['copyimages', 'usemin', 'copyjson'], function() {
-
+  return true;
 });
 
 //task groups
-gulp.task('default', ['integrationtest', 'sass', 'spellsjson', 'historyjson', 'creaturesjson', 'jsoncompile', 'copylibraries'], function() {});
+gulp.task('default', ['integrationtest', 'spellsjson', 'historyjson', 'creaturesjson', 'jsoncompile'], function() {
+  console.log("something");
+  require('./build/build.js');
+});
 
 //does not include testing
 gulp.task('prod', ['prodcleanup'], function() {
