@@ -13,7 +13,7 @@ var authenticate = require('./app/authenticate');
 var config = require('./config/node');
 // set our port
 var path = require('path');
-global.appRoot = path.resolve(__dirname + config.staticDir);
+global.appRoot = path.resolve(__dirname) + config.staticDir;
 
 app.start = function() { 
     console.log("starting");

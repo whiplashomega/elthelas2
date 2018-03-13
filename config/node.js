@@ -12,7 +12,7 @@ module.exports = {
             clientSecret: 'c5bd3fd394b3e67c7624da4aac935e06',
             callbackURL: 'https://elthelas2-whiplashomega.c9users.io/users/facebook/callback'
         };
-        module.exports.staticDir = false;
+        module.exports.staticDir = "";
         module.exports.port = 8081;
     } else {
         console.log(process.env.MONGODB_URI);
