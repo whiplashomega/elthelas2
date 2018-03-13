@@ -7,28 +7,25 @@ var mongoose = require('mongoose');
 var User = require('./app/models/user');
 var passport = require('passport');
 var authenticate = require('./app/authenticate');
-var webpack = require('webpack');
-var webpackDevMiddleware = require('webpack-dev-middleware');
-var webpackHotMiddleware = require('webpack-hot-middleware');
 // configuration ===========================================
 
 // config files
 var config = require('./config/node');
 // set our port
 var path = require('path');
-global.appRoot = path.resolve(__dirname);
+global.appRoot = path.resolve(__dirname + config.staticDir);
 
 app.start = function() { 
     console.log("starting");
     // connect to our mongoDB database 
     // (uncomment after you enter in your own credentials in config/db.js)
-    /*mongoose.connect(config.mongoUrl + "?authMechanism=SCRAM-SHA-1", function(err, res) {
+    mongoose.connect(config.mongoUrl + "?authMechanism=SCRAM-SHA-1", function(err, res) {
         if(err) {
             console.log('ERROR connecting to: ' + config.mongoUrl + '. ' + err);
         } else {
             console.log('Succeeded connecting to: ' + config.mongoUrl);
         }
-    });*/ 
+    }); 
     
     // get all data/stuff of the body (POST) parameters
     // parse application/json 
@@ -39,14 +36,6 @@ app.start = function() {
     // parse application/x-www-form-urlencoded
     app.use(bodyParser.urlencoded({ extended: true })); 
     console.log('loaded bodyParser');
-    
-    if(config.port === 3000 || config.port === 8080) {
-        var webpackConfig = require('./build/webpack.dev.config');
-        var compiler = webpack(webpackConfig);
-        app.use(webpackDevMiddleware(compiler, { publicPath: webpackConfig.output.publicPath, stats: {colors: true}}));
-        app.use(webpackHotMiddleware(compiler, { log: console.log}));
-        console.log('webpack middleware and hotware loaded');
-    }
     
     // override with the X-HTTP-Method-Override header in the request. simulate DELETE/PUT
     app.use(methodOverride('X-HTTP-Method-Override')); 

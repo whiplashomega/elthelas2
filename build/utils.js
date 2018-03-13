@@ -28,10 +28,17 @@ exports.cssLoaders = function (options) {
       sourceMap: options.sourceMap
     }
   }
+  
+  const sassLoader = {
+    loader: 'sass-loader',
+    options: {
+      sourceMap: options.sourceMap
+    }
+  }
 
   // generate loader string to be used with extract text plugin
   function generateLoaders (loader, loaderOptions) {
-    const loaders = options.usePostCSS ? [cssLoader, postcssLoader] : [cssLoader]
+    const loaders = options.usePostCSS ? [cssLoader, postcssLoader, sassLoader] : [cssLoader, sassLoader]
 
     if (loader) {
       loaders.push({
