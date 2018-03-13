@@ -14,8 +14,6 @@ var webpackHotMiddleware = require('webpack-hot-middleware');
 
 // config files
 var config = require('./config/node');
-var webpackConfig = require('./build/webpack.dev.config');
-var compiler = webpack(webpackConfig);
 // set our port
 var path = require('path');
 global.appRoot = path.resolve(__dirname);
@@ -43,6 +41,8 @@ app.start = function() {
     console.log('loaded bodyParser');
     
     if(config.port === 3000 || config.port === 8080) {
+        var webpackConfig = require('./build/webpack.dev.config');
+        var compiler = webpack(webpackConfig);
         app.use(webpackDevMiddleware(compiler, { publicPath: webpackConfig.output.publicPath, stats: {colors: true}}));
         app.use(webpackHotMiddleware(compiler, { log: console.log}));
         console.log('webpack middleware and hotware loaded');
