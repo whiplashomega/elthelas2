@@ -42,7 +42,7 @@ app.start = function() {
     // override with the X-HTTP-Method-Override header in the request. simulate DELETE/PUT
     app.use(methodOverride('X-HTTP-Method-Override')); 
     console.log('methodOverride started');
-    //app.use(passport.initialize());    
+    app.use(passport.initialize());    
     // set the static files location /public/img will be /img for users
     app.use(express.static('.')); 
     console.log("express static loaded");

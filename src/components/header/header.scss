@@ -1,3 +1,5 @@
+@import './src/components/scss/vars';
+
 .site-header {
   background-color: #3e60af;
   color: white;
@@ -19,8 +21,67 @@
 
 .jumbotron {
   background-color: #c3e6e6;
+  @media (min-width: 576px) {
+    padding: 3rem 0rem;
+  }
+  position: relative;
+  .linebutton {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    border-radius: 4px 4px 0px 0px;
+  }
 }
 
+  .topbutton {
+    border-radius: 0px 0px 4px 4px;
+  }
 .jumbotron a {
   color: black;
+}
+
+.form-inline {
+  label {
+    justify-content: right;
+  }
+  margin-bottom: 5px;
+}
+
+
+.site-header .container .search-container {
+  max-width: 20%;
+  padding: 10px 0px;
+  div {
+    padding: 0;
+  }
+  .gsc-control-cse {
+    background-color: $navbackground;
+    border: none;
+  }
+  
+  .gsc-input-box {
+    border-radius: 4px;
+    height: 2.5em;
+  }
+  
+  table.gsc-search-box {
+    margin-bottom: 0;
+  }
+  
+  .gsc-search-button {
+    height: 2.5em;
+    border-radius: 4px;
+    background-color: $success;
+  }
+  .gsc-search-botton:hover {
+  }
+  .gsc-search-button-v2 {
+    border: none;
+    margin-top: 0;
+    height: 100%;
+  }
+  
+  .gsc-search-button-v2:hover {
+    background-color: $successhover;
+  }
 }

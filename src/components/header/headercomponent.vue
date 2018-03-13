@@ -11,11 +11,11 @@
             </a>
             <ul class="dropdown-menu" role="menu">
               <li class="dropdown-item"><router-link to="/tools/charbuilder">Character Builder</router-link></li>
-              <li class="dropdown-item"><router-link to="/runner">Encounter Runner</router-link></li>
-              <li class="dropdown-item"><a ui-sref="app.book1">Epic of Elthelas Book 1</a></li>
-              <li class="dropdown-item"><a href="#">Epic of Elthelas Book 2</a></li>
-              <li class="dropdown-item"><a href="#">Epic of Elthelas Book 3</a></li>
-              <li class="dropdown-item"><router-link to="/tools/book4/dm/curestan">Epic of Elthelas Book 4</router-link></li>
+              <li class="dropdown-item" v-if="loggedin"><router-link to="/runner">Encounter Runner</router-link></li>
+              <li class="dropdown-item" v-if="loggedin"><a ui-sref="app.book1">Epic of Elthelas Book 1</a></li>
+              <li class="dropdown-item" v-if="loggedin"><a href="#">Epic of Elthelas Book 2</a></li>
+              <li class="dropdown-item" v-if="loggedin"><a href="#">Epic of Elthelas Book 3</a></li>
+              <li class="dropdown-item" v-if="loggedin"><router-link to="/tools/book4/dm/curestan">Epic of Elthelas Book 4</router-link></li>
               <li class="dropdown-item"><router-link to="/tools/book4/playersguide">Epic of Elthelas Book 4 - Player's Guide</router-link></li>
             </ul>
         </div>
@@ -53,27 +53,67 @@
               <li class="dropdown-item"><router-link to="/ref/orgs">Organizations</router-link></li>
             </ul>
         </div>
-        <div><a data-ng-click="account('lg')">My Account</a></div>
-        <div><a data-ng-click="logout()">Logout</a></div>
-          <!-- When Logged Out -->
-        <div><a data-ng-click="register()">Register</a></div>
-        <div><a data-ng-click="login('lg')">Login</a></div>
+        <div class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+            User <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="dropdown-item" v-if="loggedin"><a data-ng-click="account('lg')">My Account</a></li>
+            <li class="dropdown-item" v-if="loggedin"><a @click="logout()">Logout</a></li>
+            <!-- When Logged Out -->
+            <li class="dropdown-item" v-if="!loggedin"><a @click="showRegister = true">Register</a></li>
+            <li class="dropdown-item" v-if="!loggedin"><a @click="showLogin = true">Login</a></li>
+          </ul>
+        </div>
+        <div class="search-container"><gcse:search></gcse:search></div>
     </div><!-- /.container-fluid -->
   </nav>
-  <header class="header jumbotron">
+  <header class="header jumbotron" v-if="!hidetitle">
     <div class="container">
       <h1>
         <a href="/">
           <img src="/static/images/swordshieldlogo.png" alt="" class="logo" /><span data-ng-cloak>Elthelas Campaign Setting - {{title}}</span>
         </a>
       </h1>
+      <button class="btn btn-default linebutton" @click="hidetitle = !hidetitle" v-if="!hidetitle">Hide</button>
     </div>
   </header>
-
+  <div class="row" v-if="hidetitle"><div class="col-10"><h4 style="margin-left:15px;">Elthelas Campaign Setting - {{title}}</h4></div><button class="btn btn-default topbutton" @click="hidetitle = !hidetitle">Show</button></div>
+  <b-modal id="loginmodal" size="lg" title="Login" v-model="showLogin">
+    <div class="form-inline">
+      <label class="col-3">Username:</label> <input type="text" v-model="logincreds.username" class="form-control col-9" />
+    </div>
+    <div class="form-inline">
+      <label class="col-3">Password:</label> <input type="password" v-model="logincreds.password" class="form-control col-9" />
+    </div>
+    <div slot="modal-footer">
+      <div class="btn-group"><button type="button" class="btn btn-default" @click="handleLogin()">Login</button><button type="button" class="btn btn-danger" @click="showLogin=false">Cancel</button></div>
+    </div>
+  </b-modal>
+  <b-modal id="registermodal" size="lg" title="Register" v-model="showRegister">
+    <div class="form-inline">
+      <label class="col-3">Username:</label> <input type="text" v-model="registeruser.username" class="form-control col-9" />
+    </div>
+    <div class="form-inline">
+      <label class="col-3">First Name:</label> <input type="text" v-model="registeruser.firstname" class="form-control col-9" />
+    </div>
+    <div class="form-inline">
+      <label class="col-3">Last Name:</label> <input type="text" v-model="registeruser.lastname" class="form-control col-9" />
+    </div>
+    <div class="form-inline">
+      <label class="col-3">Password:</label> <input type="password" v-model="registeruser.password" class="form-control col-9" />
+    </div>
+    <div class="form-inline">
+      <label class="col-3">Confirm Password:</label> <input type="password" v-model="registeruser.passwordConfirm" class="form-control col-9" />
+    </div>
+    <div slot="modal-footer">
+      <div class="btn-group"><button type="button" class="btn btn-default" @click="handleRegister()">Login</button><button type="button" class="btn btn-danger" @click="showRegister=false">Cancel</button></div>
+    </div>
+  </b-modal>
 </div>
 </template>
 <script src="./header.js">
 
 </script>
-<style src="./header.scss">
+<style src="./header.scss" lang="scss">
 </style>

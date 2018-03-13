@@ -16,7 +16,8 @@ exports.facebook = passport.use(new FacebookStrategy({
     callbackURL: config.facebook.callbackURL
 },
 function(accessToken, refreshToken, profile, done) {
-    User.findOne({OauthId: profile.id }, function(err, user) {
+    User.findOne({ OauthId: profile.id }, function(err, user) {
+        console.log('something');
         if(err) {
             console.log(err);
         }

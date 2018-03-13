@@ -35,6 +35,7 @@ router.get('/facebook/callback', function(req, res, next) {
             
             res.status(200).json({
                 status: 'Login successful!',
+                user: user,
                 success: true,
                 token: token
             });
@@ -71,6 +72,7 @@ router.post('/register', function(req, res) {
                             
                             res.status(200).json({
                                 status: 'Login successful!',
+                                user: user,
                                 success: true,
                                 token: token
                             });
@@ -92,8 +94,10 @@ router.post('/login', function(req, res, next) {
         }
         req.logIn(user, function(err) {
             if (err) {
+                console.log(user);
+                console.log(err);
                 return res.status(500).json({
-                   err: 'Could not log in user'
+                   err: "Could not login User"
                 });
             }
             
@@ -101,6 +105,7 @@ router.post('/login', function(req, res, next) {
             res.status(200).json({
                status: 'Login successful!',
                success: true,
+               user: user,
                token: token
             });
         });

@@ -14,9 +14,9 @@ const HOST = process.env.HOST
 const PORT = process.env.PORT// && Number(process.env.PORT)
 
 const devWebpackConfig = merge(baseWebpackConfig, {
-  module: {
+  /*module: {
     rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })
-  },
+  },*/
   // cheap-module-eval-source-map is faster for development
   devtool: config.dev.devtool,
 
@@ -31,6 +31,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     hot: true,
     contentBase: false, // since we use CopyWebpackPlugin.
     compress: true,
+    disableHostCheck: true,
     host: HOST || config.dev.host,
     port: PORT || config.dev.port,
     open: config.dev.autoOpenBrowser,

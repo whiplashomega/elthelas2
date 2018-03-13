@@ -2,6 +2,8 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
 import BootstrapVue from 'bootstrap-vue';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-vue/dist/bootstrap-vue.css';
 import VueResource from 'vue-resource';
 import marked from 'marked';
 import 'bootstrap';
@@ -22,6 +24,8 @@ Vue.directive('sortable', {
     return sortable;
   }
 });
+
+Vue.config.ignoredElements = ['gse:searchbox-only'];
 
 Vue.filter('marked', function(input) {
   return marked(input);

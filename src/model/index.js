@@ -14,6 +14,7 @@ import geo from './geomodels';
 import backgrounds from './backgrounds';
 import races from './races';
 import classes from './classes';
+import auth from './auth';
 
 Vue.use(Vuex);
 
@@ -32,7 +33,8 @@ export default new Vuex.Store({
     geo,
     backgrounds,
     races,
-    classes
+    classes,
+    auth
   },
   state: {
     title: "Test"
