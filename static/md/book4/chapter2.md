@@ -348,6 +348,28 @@ Inside the tent are the necromancers. Ironically, they don’t like to have unde
 
 ##### [Run This Encounter](/runner/orcnecromancer&orcnecromancer&minotaurskeleton)
 
+## Backstory Encounters
+
+#### Carlyle Part 1
+
+While in the city, Flykr will be approached by a peasant named Phil, walking with a disjointed step, a raven on his shoulder.  He will, with a pained expression,
+and as if resisting the impulse, hand her a letter.  The letter states:
+
+My Dearest Flykr,
+
+I am in pieces with grief over my recent lack of communication.  Finding a decent courier to communicate my undying devotion to you has been a trial. I hoped to meet you here in Northport, but circumstances
+demand most of my mind be concentrated elsewhere. Nevertheless I think of you regularly.  The gentleman who has delivered this letter on my behalf has a token for you, a small piece of what I hope will one
+day be a grand token of our undying devotion to eachother. You need but ask him for it. I pray that it can keep you from harm until we meet again.
+
+Forever Yours,
+Carlyle
+
+If asked he will hand over the first piece of the Carlyle sword (identified simply as 'blade shard necklace'), again, unwillingly.
+
+#### Rival Party
+
+The rival party 
+
 ## Sulac's Lair
 
 #### Path to the dragon
