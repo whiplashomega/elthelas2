@@ -31,6 +31,22 @@
     right: 10%;
     border-radius: 4px 4px 0px 0px;
   }
+  @media (max-width: 768px) {
+    padding: 1rem 0rem;
+    border-radius: 0;
+    h1 {
+      line-height: 1;
+      a {
+        font-size: 0.5em;
+        img {
+          display: none;
+        }
+      }
+    }
+    button {
+      display: none;
+    }
+  }
 }
 
   .topbutton {
@@ -49,7 +65,9 @@
 
 
 .site-header .container .search-container {
-  max-width: 20%;
+  @media screen and (min-width: 1024px) {
+    max-width: 20%;
+  }
   padding: 10px 0px;
   div {
     padding: 0;

@@ -3,8 +3,8 @@
     <headercomponent />
     <div class='container-fluid'>
       <div class="row">
-        <router-view class="view two col-2" name="sidebar"></router-view>
-        <router-view class="view one col-10"></router-view>
+        <router-view class="view two col-sm-2" name="sidebar"></router-view>
+        <router-view class="view one col-sm-10"></router-view>
       </div>
     </div>
   </div>

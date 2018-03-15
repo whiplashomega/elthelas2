@@ -370,6 +370,12 @@ If asked he will hand over the first piece of the Carlyle sword (identified simp
 
 The rival party 
 
+#### Herad Paleleaf, Bountyhunter
+
+#### Samvel
+
+#### Erik Dawnblade
+
 ## Sulac's Lair
 
 #### Path to the dragon

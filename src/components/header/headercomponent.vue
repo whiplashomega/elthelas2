@@ -1,78 +1,81 @@
 <template>
 <div>
-  <nav class="site-header sticky-top py-1">
-    <div class="container d-flex flex-column flex-md-row justify-content-between">
-        <div>
-          <router-link to="/">Home</router-link>
-        </div>
-        <div class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-              In-Game Tools<span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-              <li class="dropdown-item"><router-link to="/tools/charbuilder">Character Builder</router-link></li>
-              <li class="dropdown-item" v-if="loggedin"><router-link to="/runner">Encounter Runner</router-link></li>
-              <li class="dropdown-item" v-if="loggedin"><a ui-sref="app.book1">Epic of Elthelas Book 1</a></li>
-              <li class="dropdown-item" v-if="loggedin"><a href="#">Epic of Elthelas Book 2</a></li>
-              <li class="dropdown-item" v-if="loggedin"><a href="#">Epic of Elthelas Book 3</a></li>
-              <li class="dropdown-item" v-if="loggedin"><router-link to="/tools/book4/dm/curestan">Epic of Elthelas Book 4</router-link></li>
-              <li class="dropdown-item"><router-link to="/tools/book4/playersguide">Epic of Elthelas Book 4 - Player's Guide</router-link></li>
-            </ul>
-        </div>
-        <div class="dropdown">
+  <b-navbar toggleable="md" class="site-header sticky-top py-1" type="dark">
+    <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+    <b-collapse is-nav id="nav_collapse">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+          <div>
+            <router-link to="/">Home</router-link>
+          </div>
+          <div class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                In-Game Tools<span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-item"><router-link to="/tools/charbuilder">Character Builder</router-link></li>
+                <li class="dropdown-item" v-if="loggedin"><router-link to="/runner">Encounter Runner</router-link></li>
+                <li class="dropdown-item" v-if="loggedin"><a ui-sref="app.book1">Epic of Elthelas Book 1</a></li>
+                <li class="dropdown-item" v-if="loggedin"><a href="#">Epic of Elthelas Book 2</a></li>
+                <li class="dropdown-item" v-if="loggedin"><a href="#">Epic of Elthelas Book 3</a></li>
+                <li class="dropdown-item" v-if="loggedin"><router-link to="/tools/book4/dm/curestan">Epic of Elthelas Book 4</router-link></li>
+                <li class="dropdown-item"><router-link to="/tools/book4/playersguide">Epic of Elthelas Book 4 - Player's Guide</router-link></li>
+              </ul>
+          </div>
+          <div class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                Character Options <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-item"><router-link to="/options/backgrounds">Backgrounds</router-link></li>
+                <li class="dropdown-item"><router-link to="/options/class">Classes</router-link></li>
+                <li class="dropdown-item"><router-link to="/options/domains">Domains</router-link></li>
+                <li class="dropdown-item"><router-link to="/options/languages">Languages</router-link></li>
+                <li class="dropdown-item"><router-link to="/options/races">Races</router-link></li>
+              </ul>
+          </div>
+          <div>
+            <router-link to="/geo">Geography</router-link>
+          </div>
+          <div>
+            <router-link to="/history">History</router-link>
+          </div>
+          <div class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-              Character Options <span class="caret"></span>
+                Reference <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-item"><router-link to="/ref/quick">Quick Reference Manual</router-link></li>
+                <li class="dropdown-item"><router-link to="/ref/bestiary">Bestiary</router-link></li>
+                <li class="dropdown-item"><router-link to="/ref/calendar">Calendar</router-link></li>
+                <li class="dropdown-item"><router-link to="/ref/cosmology">Cosmology</router-link></li>
+                <li class="dropdown-item"><router-link to="/ref/astronomy">Astronomy</router-link></li>
+                <li class="dropdown-item"><router-link to="/ref/magic">Magic</router-link></li>
+                <li class="dropdown-item"><router-link to="/ref/gods">Gods</router-link></li>
+                <li class="dropdown-item"><router-link to="/ref/divines">Divine Beings</router-link></li>
+                <li class="dropdown-item"><router-link to="/ref/orgs">Organizations</router-link></li>
+              </ul>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+              User <span class="caret"></span>
             </a>
             <ul class="dropdown-menu" role="menu">
-              <li class="dropdown-item"><router-link to="/options/backgrounds">Backgrounds</router-link></li>
-              <li class="dropdown-item"><router-link to="/options/class">Classes</router-link></li>
-              <li class="dropdown-item"><router-link to="/options/domains">Domains</router-link></li>
-              <li class="dropdown-item"><router-link to="/options/languages">Languages</router-link></li>
-              <li class="dropdown-item"><router-link to="/options/races">Races</router-link></li>
+              <li class="dropdown-item" v-if="loggedin"><a data-ng-click="account('lg')">My Account</a></li>
+              <li class="dropdown-item" v-if="loggedin"><a @click="logout()">Logout</a></li>
+              <!-- When Logged Out -->
+              <li class="dropdown-item" v-if="!loggedin"><a @click="showRegister = true">Register</a></li>
+              <li class="dropdown-item" v-if="!loggedin"><a @click="showLogin = true">Login</a></li>
             </ul>
-        </div>
-        <div>
-          <router-link to="/geo">Geography</router-link>
-        </div>
-        <div>
-          <router-link to="/history">History</router-link>
-        </div>
-        <div class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-              Reference <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-              <li class="dropdown-item"><router-link to="/ref/quick">Quick Reference Manual</router-link></li>
-              <li class="dropdown-item"><router-link to="/ref/bestiary">Bestiary</router-link></li>
-              <li class="dropdown-item"><router-link to="/ref/calendar">Calendar</router-link></li>
-              <li class="dropdown-item"><router-link to="/ref/cosmology">Cosmology</router-link></li>
-              <li class="dropdown-item"><router-link to="/ref/astronomy">Astronomy</router-link></li>
-              <li class="dropdown-item"><router-link to="/ref/magic">Magic</router-link></li>
-              <li class="dropdown-item"><router-link to="/ref/gods">Gods</router-link></li>
-              <li class="dropdown-item"><router-link to="/ref/divines">Divine Beings</router-link></li>
-              <li class="dropdown-item"><router-link to="/ref/orgs">Organizations</router-link></li>
-            </ul>
-        </div>
-        <div class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-            User <span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu" role="menu">
-            <li class="dropdown-item" v-if="loggedin"><a data-ng-click="account('lg')">My Account</a></li>
-            <li class="dropdown-item" v-if="loggedin"><a @click="logout()">Logout</a></li>
-            <!-- When Logged Out -->
-            <li class="dropdown-item" v-if="!loggedin"><a @click="showRegister = true">Register</a></li>
-            <li class="dropdown-item" v-if="!loggedin"><a @click="showLogin = true">Login</a></li>
-          </ul>
-        </div>
-        <div class="search-container"><gcse:search></gcse:search></div>
-    </div><!-- /.container-fluid -->
-  </nav>
+          </div>
+          <div class="search-container"><gcse:search></gcse:search></div>
+      </div><!-- /.container-fluid -->
+    </b-collapse>
+  </b-navbar>
   <header class="header jumbotron" v-if="!hidetitle">
     <div class="container">
       <h1>
         <a href="/">
-          <img src="/static/images/swordshieldlogo.png" alt="" class="logo" /><span data-ng-cloak>Elthelas Campaign Setting - {{title}}</span>
+          <img src="/static/images/swordshieldlogo.png" alt="" class="logo" />Elthelas Campaign Setting - {{title}}
         </a>
       </h1>
       <button class="btn btn-default linebutton" @click="hidetitle = !hidetitle" v-if="!hidetitle">Hide</button>
