@@ -7,7 +7,7 @@ tags: [medium, humanoid, cr3]
 
 **Medium humanoid (dragonborn), chaotic neutral**
 
-**Armor Class** 18 (plate)
+**Armor Class** 20 (plate, shield)
 
 **Hit Points** 37 (5d8 + 15)
 
@@ -29,7 +29,7 @@ tags: [medium, humanoid, cr3]
 
 **Challenge** 3
 
-**Great Weapon Fighting:** Reroll 1s and 2s on damage dice
+**Dueling:** +2 damage when attack with a 1 handed weapon and not wielding another weapon
 
 **Spellcasting:** Cantrips: Booming Blade, Green Flame Blade, 1st level spells: Shield, Absorb Elements, Expeditious Retreat, Magic Missile 3 1st level slots
 
@@ -43,4 +43,4 @@ tags: [medium, humanoid, cr3]
 
 **Breath Weapon:** 15 ft cone, DC 13 Constitution Save, 2d6 Cold Damage (half on success)
 
-**Greatsword:** +7, 2d6+5
+**Longsword:** melee weapon attack, +7 to hit, 5 ft reach, 1d8+7 slashing damage

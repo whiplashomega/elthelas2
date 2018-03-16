@@ -1,5 +1,5 @@
 <template>
-	<div class="col-12">
+	<div class="col-sm-12">
   <h1>Encounter Runner</h1>
     <div class="row">
     <div class="col-sm-4">

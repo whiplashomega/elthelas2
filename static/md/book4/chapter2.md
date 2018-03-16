@@ -256,14 +256,6 @@ She asks the party to do the following things to enable the towns escape:
 
 She will pay their room and board at the Dragon's Brew while they are in town.
 
-#### The Rivals
-
-At this point, assuming the party hasn't killed Vanriel, the Rival Party of Jazelle, Alex Tudoria, Barry, Bartok Wailmane, and Maggie Pelagius will enter. They will demand that the party return to Cur'Estan, and say that their services are not needed. They will attempt to convince Vanriel that the best way to help the people escape is to gather up the city guard and do a suicide mission attacking the orc army.
-
-The party has advantage on any charisma check made to convince her otherwise, opposed by the rival party (check led by Jazelle).
-
-##### [Run this Encounter](/runner/jazelle&alextudoria&barry&bartokwailmane&maggiepelagius)
-
 ### The Dragon's Brew Inn
 
 The Dragon's Brew, like every other inn in town, is packed, but rooms have been cleared out for the party by the proprietors, Ralf and Erestor. If the party is escorting Harwik Greenskin they will offer him their special safe room.

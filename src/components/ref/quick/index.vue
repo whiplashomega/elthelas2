@@ -1,5 +1,5 @@
 <template>
-	<div class="col-12">
+	<div class="col-sm-12">
         <b-tabs id="refdiv">
           <b-tab title="Spells">
             <h3>Spells</h3>

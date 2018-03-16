@@ -41,4 +41,4 @@ tags: [medium, humanoid, cr3]
 
 **Multiattack** Makes 2 greataxe attacks when taking the attack action on her turn.
 
-**Greataxe** +6 to hit, 1d12 + 4 slashing damage on a hit (+7 while raging).
+**Greataxe** +6 to hit, 1d12 + 4 slashing damage on a hit (+8 while raging).

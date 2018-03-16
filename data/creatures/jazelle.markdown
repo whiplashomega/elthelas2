@@ -33,8 +33,12 @@ tags: [medium, humanoid, cr3]
 
 **Spellcasting:** 4 1st level slots, 3 2nd level slots, 2 3rd level slots. Spells Known: Mage Armor, Shield, Magic Missile (1 extra damage per missile), Thunderwave, Sleep, Suggestion, Phantasmal Force, Fireball, Major Image
 
-**Metamagic:** 3 Sorcery Points, Subtle Spell, Twin Spell
+**Metamagic:** 5 Sorcery Points, Subtle Spell, Twin Spell
 
 **Actions** 
 
 **Dagger:** +5, 1d4+3
+
+**Fire bolt** ranged spell attack, +7 to hit, 120 ft range, 2d10 fire damage
+
+**Shocking Grasp** melee spelll attack, +7 to hit, 5 ft reach, 2d8 lightning damage, target cannot react

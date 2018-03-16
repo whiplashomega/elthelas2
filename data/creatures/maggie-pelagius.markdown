@@ -27,6 +27,8 @@ tags: [medium, humanoid, cr3, homebrew]
 
 ***Smite.*** When hit with an attack can expend one spell slot to add 2d8 radiant damage to the attack, +1d8 for every level of the slot above 1st.
 
+***Dueling Fighting Style*** Does an extra 2 damage when wielding a one handed weapon and no other weapon
+
 ***Spellcasting.*** 4 1st level slots, 2 2nd level slots. Spells prepared: sanctuary, sleep, calm emotions, hold person.
 
 ***Channel Divinity.*** 
@@ -41,5 +43,5 @@ tags: [medium, humanoid, cr3, homebrew]
 
 ***Multiattack.*** Maggie makes 2 warhammer attacks when she takes the attack action on her turn.
 
-***Warhammer.*** Melee Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) bludgeoning damage.
+***Warhammer.*** Melee Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 7) bludgeoning damage.
 
