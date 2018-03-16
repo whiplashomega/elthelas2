@@ -456,7 +456,7 @@ Lastly near the center of their camp the necromancers have set up noisemakers in
 
 Inside the tent are the necromancers. Ironically, they don’t like to have undead in the room with them, and instead just a big piles of bones in a chest, along with anything else they may need.
 
-##### [Run This Encounter](/runner/orcnecromancer&orcnecromancer&minotaurskeleton)
+##### [Run This Encounter](/runner/orcnecromancer&orcnecromancer&massiveskeleton)
 
 ## The Guild of Heroes
 

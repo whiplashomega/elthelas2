@@ -7,21 +7,21 @@ tags: [medium, humanoid, cr3]
 
 **Medium humanoid (plains dwarf), lawful evil**
 
-**Armor Class** 18
+**Armor Class** 17
 
-**Hit Points** 47 (5d8 + 25)
+**Hit Points** 42 (5d8 + 20)
 
 **Speed** 35 ft
 
 |   STR   |   DEX   |   CON   |   INT   |   WIS   |   CHA   |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 18 (+4) | 16 (+3) | 20 (+5) | 8 (-1) | 10 (+0) | 10 (+0) |
+| 18 (+4) | 16 (+3) | 18 (+4) | 8 (-1) | 10 (+0) | 10 (+0) |
 
 **Saving Throws** Strength +6, Constitution +7
 
 **Skills** Athletics +6, Intimidation +2, Stealth +5
 
-**Damage Resistances** all except psychic while raging, poison always
+**Damage Resistances** bludgeoning, piercing, and slashing damage while raging, poison always
 
 **Senses** darkvision 60 ft, passive perception 10
 
@@ -33,7 +33,13 @@ tags: [medium, humanoid, cr3]
 
 **Danger Sense** Advantage on Dexterity saves against effects she can see.
 
+**Wolf Totem** Allies have advantage on melee attacks against enemies within 5 ft of you.
+
 **Unarmored Defense** Adds Constitution to AC when unarmored.
+
+**Sentinel** When you hit a creature with an opportunity attack, the creature’s speed becomes 0 for the rest of the turn. Creatures within 5 feet of you provoke opportunity
+attacks from you even if they take the Disengage action before leaving your reach. When a creature within 5 feet of you makes an attack against a target other than you (and that target doesn’t
+have this feat), you can use your reaction to make a melee weapon attack against the attacking creature.
 
 **Actions** 
 
