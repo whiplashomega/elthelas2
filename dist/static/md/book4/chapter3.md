@@ -6,31 +6,40 @@
 
 #### General Heartbren's Orders
 
-The influx of refugees presents a serious supply problem for Cur'Estan, and our best route of resupply, moving supplies upriver from Cur'Mestin is cut off by the rebels under Manius Aquila. You must find a way to get open a trade route with Cur'Mestin so that we can buy supplies. Negotiate with the local duchess if you can, use other means if you have to, thousands of lives depend on it.
+The influx of refugees presents a serious supply problem for Cur'Estan, and our best route of resupply, moving supplies upriver from Cur'Mestin is cut off by the
+rebels under Manius Aquila. You must find a way to get open a trade route with Cur'Mestin so that we can buy supplies. Negotiate with the local duchess if you can,
+use other means if you have to, thousands of lives depend on it.
 
-#### Black Wolf Irregulars Special Orders
+#### Amathera's Shield Orders
 
-There are rumors that Genevieve Octavius may have made deals with devils, find out for sure if this is the case. If so, she cannot be allowed to continue in a position of power and must be deposed or killed. -Gerad Heartbren
+There are rumors that Genevieve Octavius may have made deals with devils, find out for sure if this is the case. If so, she cannot be allowed to continue in a position
+of power and must be deposed or killed. -Malia Demonslayer
 
 #### Black Sun Orders:
 
-An old, associate, of mine has been seen in Cur'Mestin recently, apparently working for Genevieve Octavius. Felix is an opportunistic grifter who stole my Shield Guardian. Get it back from him, then kill him. -Kyman Hexhammer
+An old, associate, of mine has been seen in Cur'Mestin recently, apparently working for Genevieve Octavius. Felix is an opportunistic grifter who stole my Shield Guardian.
+Get it back from him, then kill him. -Kyman Hexhammer
 
 #### Illustrious Guild of Merchants and Fine Artisans Orders
 
-This embargo is an afront to the guild. Dormania and Kandor have had open trade relations since the schism! General Heartbren may be concerned about food, but this embargo is much bigger than that. Several of the local merchants pooled their resources to order a special shipment of goods a few weeks ago that has been held up in a warehouse in Cur'Mestin. I want you to personally escort that shipment back to Cur'Estan. -Kendrick O'mally
+This embargo is an afront to the guild. Dormania and Kandor have had open trade relations since the schism! General Heartbren may be concerned about food, but this
+embargo is much bigger than that. Several of the local merchants pooled their resources to order a special shipment of goods a few weeks ago that has been held up
+in a warehouse in Cur'Mestin. I want you to personally escort that shipment back to Cur'Estan. -Kendrick O'mally
 
 #### Lords of the Rising Dawn Orders
 
-We have received word that the local temple of Alohim in Cur'Mestin was desecrated. Make contact with the local priest among the loyalists in Cur'Mestin, find out who the perpetrator was, and see that they pay for their crimes against the High God. -Duke James Lightbringer
+We have received word that the local temple of Alohim in Cur'Mestin was desecrated. Make contact with the local priest among the loyalists in Cur'Mestin, find out who
+the perpetrator was, and see that they pay for their crimes against the High God. -Duke James Lightbringer
 
 #### Masters of the Deep Song Orders
 
-Wyrmling Trapsmith, that fecund piece of shit of a quartermaster, has refused beer rations for the refugees! It isn't like the beer was much good anyways, but this is a travesty! Before you run off to Cur'Mestin I need you to get at least 3 barrels of beer out of the castle storehouse for me. -Ogrun Firebreath
+Wyrmling Trapsmith, that fecund piece of shit of a quartermaster, has refused beer rations for the refugees! It isn't like the beer was much good anyways, but this is a
+travesty! Before you run off to Cur'Mestin I need you to get at least 3 barrels of beer out of the castle storehouse for me. -Ogrun Firebreath
 
 #### Shepherds of the All-Mother Orders
 
-The faithful in Cur'Mestin have been under persecution by both the loyalists and the rebels. Make contact with the local cleric of Nera and inform him that he can bring his flock to safety here in Cur'Estan. -Gimble Beren
+The faithful in Cur'Mestin have been under persecution by both the loyalists and the rebels. Make contact with the local cleric of Nera and inform him that he can bring
+his flock to safety here in Cur'Estan. -Gimble Beren
 
 #### Silver Dragon Knights Orders
 

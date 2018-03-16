@@ -33,10 +33,14 @@ tags: [medium, humanoid, cr3]
 
 **Spellcasting:** Cantrips: Booming Blade, Green Flame Blade, 1st level spells: Shield, Absorb Elements, Expeditious Retreat, Magic Missile 3 1st level slots
 
+**Second Wind** Regain 1d10+5 hit points as a bonus action
+
+**Action Surge** Once per short rest take a second action on his turn.
+
 **Actions** 
 
-**Multiattack** Barry makes 2 greataxe attacks when he takes the attack action on his turn.
+**Multiattack** Barry makes 2 greatsword attacks when he takes the attack action on his turn.
 
 **Breath Weapon:** 15 ft cone, DC 13 Constitution Save, 2d6 Cold Damage (half on success)
 
-**Greataxe:** +7, 1d12+5
+**Greatsword:** +7, 2d6+5

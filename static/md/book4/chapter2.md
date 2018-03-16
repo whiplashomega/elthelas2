@@ -399,6 +399,8 @@ kidnapping
 
 If confronted, the rival party will get the crowd to attack the party for them, and slip away.
 
+##### [Run This Encounter](/runner/jazelle&barry&bartokwailmane&maggiepelagius&yostisligranitebrand&heradpaleleaf)
+
 #### Samvel
 
 Tilda's brother, Samvel, will whisper to Tilda from a nearby alley. He offers to hide the party in his house nearby. He honestly wants to help, however he can offer little

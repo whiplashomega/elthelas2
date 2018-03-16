@@ -284,7 +284,44 @@ Biggles also does have family in town, and will talk about them (at length) if a
 
 If the party talks to Giggles about her father's refusal to leave, she will agree to talk to him and will convince him to leave so that he can help his grandchildren escape.
 
-### The Druid's Grove
+## Sulac's Lair
+
+#### Path to the dragon
+
+The path to the dragon is a long winding upward sloping path, originally designed for carts to be carried up, back when the dragon still accepted offerings. Along the way there are six signs that read, in order:
+
+1.  Danger! Dragon ahead, do not enter.
+2.  No, seriously, real dragon ahead, do not enter.
+3.  Real acid breathing dragon, actually real, will kill you.
+4.  If you are seeking to kill the dragon, know that it is protected under Gerasilim law and attacking it is a felony punishable by 5 years in prison
+5.  If you are seeking to talk to the dragon, know that it hates visitors and will not permit entry. It is also a dragon and will probably kill you
+6.  Well you're here, the dragon is ahead, any chance to live past today is in the other direction. Choose wisely.
+
+The Lair itself contains a series of traps that prevent access to the dragon.
+
+#### First Trap
+
+Before you is a giant pit that seems to disappear with how far down it is. There is a single rope ladder bridge that spans the pit. The bridge is useless, and is designed to throw people off as it only has a single anchor point on each end. Any character that uses the bridge must pass a DC 25 Dex check to cross or be tossed off the bridge. The dragon has set up a permanent feather fall spell in the pit, which funnels into a tunnel to drop off people at the base of the mountain with a sign that reads "don't come back."
+
+#### Second Trap
+
+Frictionless floor trap. A long hallway that is 10ft wide and 80ft long is stretched in front of you. There is a safe platform that is 5ft long before the trap begin, so that players can see their fate. The next 10ft is a pit trap that leads into the same feather fall tunnel as the previous trap, so that players can see the sign. After that is 40ft of obviously very smooth sleek metal surface. This surface is on the floor, walls and ceiling is completely frictionless. A player on the surface cannot stop or change direction or jump. After the 40ft of slip and slide is another 10ft long pit trap that again leads to the exit. There is then a 5ft platform for the players to land on. The back wall has an illusion of a wall 10ft before the actual wall, so attempts to shoot an arrow with a rope simply goes through the illusion. The back wall is slanted to prevent arrows from sticking in. The entire area is hallowed to prevent teleportation.
+
+#### Third Trap
+
+Man eating plants. The tunnel is filled with giant Venus fly trap like plants, that hide in brush and reach out to eat passerby's. The plants then attempt to forcibly teleport anyone they are eating via the transport via plants spell, it is a DC 14 charisma save to avoid this, and a DC 14 strength save to escape. Burning down the plants is a very bad idea however, as the plant matter burns a black smoke which fills the cavern, blinds them, suffocates them, and alerts the dragon to the party being complete morons. There is an obvious sign that says “Burn my garden and I’ll kill you”.
+
+#### Fourth Trap
+
+The final trap is just a programmed illusion of the dragon. It appears to be sleeping, whenever anyone wakes it up or speaks directly to it the illusion activates. It wakes up with a roar of fire into the air, then aggressively and continually threatens anyone that sticks around, talking over people and not listening to anything they are saying. The illusion also activates the dragons fear aura.
+
+#### Victory
+
+Eventually if they stick around the illusion resets, if the players are still there they can see the entrance to the dragons lair behind the illusion. There the dragon is actually sleeping, and is much more willing to talk.
+
+Sulac is unwilling to help against the necromancers or to directly confront the orcs. He will reward the party with one random magic item from his horde. Sulac is willing to attack the orcs supply caravans for the party.
+
+## The Druid's Grove
 
 The local druid's regularly gather at a small grove just west of the city. Recently they have been making trips into the city itself looking for Elhavir Soras, who committed the crime of teaching an enemy of Gaian their secret language. Elhavir himself is hiding in the refugee camp at the Riverside Market, but he has eluded detection by the druid's thus far.
 
@@ -299,6 +336,87 @@ If the player's ask for the druid's assistance they can aid in delaying the orc 
 If the player's side with Elhavir he will ask to be taken to Vanriel so she can smuggle him out of town. He will give them a Wand of Detect Magic as a reward. Two of the druid's (use NPC entry from the Monster Manual for Druid) will intercept the party on their way to the City Guard's headquarters and attack them assisted by 3 giant spiders (attacking from the rooftops) and 2 giant eagles.
 
 ##### [Run this Encounter](/runner/druid&druid&giantspider&giantspider&giantspider&gianteagle&gianteagle)
+
+## Backstory Encounters
+
+#### Carlyle Part 1
+
+While in the city, Flykr will be approached by a peasant named Phil, walking with a disjointed step, a raven on his shoulder.  He will, with a pained expression,
+and as if resisting the impulse, hand her a letter.  The letter states:
+
+My Dearest Flykr,
+
+I am in pieces with grief over my recent lack of communication.  Finding a decent courier to communicate my undying devotion to you has been a trial. I hoped to meet you here in Northport, but circumstances
+demand most of my mind be concentrated elsewhere. Nevertheless I think of you regularly.  The gentleman who has delivered this letter on my behalf has a token for you, a small piece of what I hope will one
+day be a grand token of our undying devotion to eachother. You need but ask him for it. I pray that it can keep you from harm until we meet again.
+
+Forever Yours,
+Carlyle
+
+If asked he will hand over the first piece of the Carlyle sword (identified simply as 'blade shard necklace'), again, unwillingly.
+
+#### Rival Party
+
+The rival party will enter town on the backs of glamoured horses, and to much acclaim.  The party will see them, but they will not make eye contact with the party. They will
+declare loudly that they are looking for criminals on the run from the law, name the party members by name, and begin handing out flyers with their pictures on it (including
+Tilda as a woman, not as Fallon). The flyers read:
+
+WANTED! The noble party of Jazelle, Barry, Bartok Wailmane, Maggie Pelagius, Yostisli Granitebrand, and Herad Paleleaf are seeking wanted criminals on behalf of 
+High Lord Slithers. The parties below are wanted in connection to various crimes committed in Kandor, Eldoran, Gerasalim, Dormania, and elsewhere. All are wanted
+dead or alive except the child Adam, who is to be brought back alive so he may be returned to his family.
+
+##### Tilda
+Murder of the High Duke of Westport
+kidnapping
+theft
+lying to an officer of the law
+
+##### Adam
+theft
+fraud
+smuggling
+
+##### Barbarious
+assault
+murder
+espionage
+theft
+kidnapping
+
+##### Silas of Irons
+assault
+espionage
+kidnapping
+
+##### Eobard Thawne
+murder
+kidnapping
+
+##### Flykr Moon
+theft
+fraud
+kidnapping
+
+If confronted, the rival party will get the crowd to attack the party for them, and slip away.
+
+##### [Run This Encounter](/runner/jazelle&barry&bartokwailmane&maggiepelagius&yostisligranitebrand&heradpaleleaf)
+
+#### Samvel
+
+Tilda's brother, Samvel, will whisper to Tilda from a nearby alley. He offers to hide the party in his house nearby. He honestly wants to help, however he can offer little
+besides immediate shelter, and reassurance that Malia and Vanriel have little patience for bounty hunters. He is happy to see Tilda, and will go along with her deceptions
+if brought into the loop (but does not know her as Fallon otherwise). He is not very good at lying (+2 deception), but will hold to the story if caught in a lie.
+
+#### Herad Paleleaf, Bountyhunter
+
+Some short time later, Herad Paleleaf will approach the party alone and ask to speak with Silas. He will offer Silas a deal: bring him Adam and he'll have his part in the
+whole affair expunged. He tries to convince him that it is the right thing to do, since Adam is so young and ran away from home. He just wants to get Adam back to his 
+family.
+
+#### Erik Dawnblade
+
+If Silas enquires about Erik Dawnblade in town, a reasonable investigation check will reveal that he was in Northport roughly a month ago, but headed east and hasn't been
+seen since.
 
 ## Necromancers on the Edge of Town
 
@@ -347,43 +465,6 @@ Lastly near the center of their camp the necromancers have set up noisemakers in
 Inside the tent are the necromancers. Ironically, they don’t like to have undead in the room with them, and instead just a big piles of bones in a chest, along with anything else they may need.
 
 ##### [Run This Encounter](/runner/orcnecromancer&orcnecromancer&minotaurskeleton)
-
-## Sulac's Lair
-
-#### Path to the dragon
-
-The path to the dragon is a long winding upward sloping path, originally designed for carts to be carried up, back when the dragon still accepted offerings. Along the way there are six signs that read, in order:
-
-1.  Danger! Dragon ahead, do not enter.
-2.  No, seriously, real dragon ahead, do not enter.
-3.  Real acid breathing dragon, actually real, will kill you.
-4.  If you are seeking to kill the dragon, know that it is protected under Gerasilim law and attacking it is a felony punishable by 5 years in prison
-5.  If you are seeking to talk to the dragon, know that it hates visitors and will not permit entry. It is also a dragon and will probably kill you
-6.  Well you're here, the dragon is ahead, any chance to live past today is in the other direction. Choose wisely.
-
-The Lair itself contains a series of traps that prevent access to the dragon.
-
-#### First Trap
-
-Before you is a giant pit that seems to disappear with how far down it is. There is a single rope ladder bridge that spans the pit. The bridge is useless, and is designed to throw people off as it only has a single anchor point on each end. Any character that uses the bridge must pass a DC 25 Dex check to cross or be tossed off the bridge. The dragon has set up a permanent feather fall spell in the pit, which funnels into a tunnel to drop off people at the base of the mountain with a sign that reads "don't come back."
-
-#### Second Trap
-
-Frictionless floor trap. A long hallway that is 10ft wide and 80ft long is stretched in front of you. There is a safe platform that is 5ft long before the trap begin, so that players can see their fate. The next 10ft is a pit trap that leads into the same feather fall tunnel as the previous trap, so that players can see the sign. After that is 40ft of obviously very smooth sleek metal surface. This surface is on the floor, walls and ceiling is completely frictionless. A player on the surface cannot stop or change direction or jump. After the 40ft of slip and slide is another 10ft long pit trap that again leads to the exit. There is then a 5ft platform for the players to land on. The back wall has an illusion of a wall 10ft before the actual wall, so attempts to shoot an arrow with a rope simply goes through the illusion. The back wall is slanted to prevent arrows from sticking in. The entire area is hallowed to prevent teleportation.
-
-#### Third Trap
-
-Man eating plants. The tunnel is filled with giant Venus fly trap like plants, that hide in brush and reach out to eat passerby's. The plants then attempt to forcibly teleport anyone they are eating via the transport via plants spell, it is a DC 14 charisma save to avoid this, and a DC 14 strength save to escape. Burning down the plants is a very bad idea however, as the plant matter burns a black smoke which fills the cavern, blinds them, suffocates them, and alerts the dragon to the party being complete morons. There is an obvious sign that says “Burn my garden and I’ll kill you”.
-
-#### Fourth Trap
-
-The final trap is just a programmed illusion of the dragon. It appears to be sleeping, whenever anyone wakes it up or speaks directly to it the illusion activates. It wakes up with a roar of fire into the air, then aggressively and continually threatens anyone that sticks around, talking over people and not listening to anything they are saying. The illusion also activates the dragons fear aura.
-
-#### Victory
-
-Eventually if they stick around the illusion resets, if the players are still there they can see the entrance to the dragons lair behind the illusion. There the dragon is actually sleeping, and is much more willing to talk.
-
-Sulac is unwilling to help against the necromancers or to directly confront the orcs. He will reward the party with one random magic item from his horde. Sulac is willing to attack the orcs supply caravans for the party.
 
 ## The Guild of Heroes
 
