@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Yostisli Granitebluff"
+title: "Yostisli Granitebrand"
 date: 2016-02-29
 tags: [medium, humanoid, cr3]
 ---
