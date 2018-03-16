@@ -399,11 +399,12 @@ Tilda's brother, Samvel, will whisper to Tilda from a nearby alley. He offers to
 besides immediate shelter, and reassurance that Malia and Vanriel have little patience for bounty hunters. He is happy to see Tilda, and will go along with her deceptions
 if brought into the loop (but does not know her as Fallon otherwise). He is not very good at lying (+2 deception), but will hold to the story if caught in a lie.
 
-#### Herad Paleleaf, Bountyhunter
+#### Herad Paleleaf and Yostisli Granitebrand
 
-Some short time later, Herad Paleleaf will approach the party alone and ask to speak with Silas. He will offer Silas a deal: bring him Adam and he'll have his part in the
-whole affair expunged. He tries to convince him that it is the right thing to do, since Adam is so young and ran away from home. He just wants to get Adam back to his 
-family.
+Some short time later, Herad Paleleaf and Yostisli Granitebrand will approach the party alone and ask to speak with Silas and Barbarious. They will offer them a deal: bring 
+them Adam and renounce the Masters of the Deep Song and they'll have their part in the whole affair expunged, they can walk away without issue. He tries to convince him that
+it is the right thing to do, since Adam is so young and ran away from home. He just wants to get Adam back to his family. Yostisli will say that Barbarious presence in the 
+Masters is an affront to the order, and if he refuses she will feel duty bound to hunt him down and kill him.
 
 #### Erik Dawnblade
 
@@ -446,7 +447,11 @@ Similar to the first trap, there are sporadically zombie pits hidden in the area
 
 #### Tortured Citizens
 
-Some of the people from the town, those that attempted escape or attempted to fight the necromancers are chained to posts in the inner area of the camp. Each of these people are trapped with a glyph of warding, if the person is removed by some daring hero, the hero and the hostage explode for 5d8 thunder damage (DC 14 Constitution save for half). This creates a loud booming sound that alerts the skeleton patrols and the necromancers. The citizens are unconscious and have level 5 exhaustion (speed of 0). If given water or food some of them can mention that the necromancers did some magic thing to the pole they are chained to, but are not aware what it does. The rune itself is obvious, and a DC 15 arcana check will identify it's effect.
+Some of the people from the town, those that attempted escape or attempted to fight the necromancers are chained to posts in the inner area of the camp. Each of these
+people are trapped with a glyph of warding, if the person is removed by some daring hero, the hero and the hostage explode for 5d8 thunder damage (DC 14 Constitution
+save for half). This creates a loud booming sound that alerts the skeleton patrols and the necromancers. The citizens are unconscious and have level 5 exhaustion
+(speed of 0). If given water or food some of them can mention that the necromancers did some magic thing to the pole they are chained to, but are not aware what it does.
+The rune itself is obvious, and a DC 15 arcana check will identify it's effect.
 
 #### Noisemakers
 

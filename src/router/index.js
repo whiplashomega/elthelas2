@@ -25,6 +25,7 @@ import book4guide from '../components/tools/book4guide';
 import book4 from '../components/tools/book4';
 import book4menu from '../components/tools/book4menu';
 import charbuilder from '../components/tools/characterbuilder';
+import npcgen from '@/components/tools/npcgenerator';
 
 Vue.use(Router);
 
@@ -287,6 +288,16 @@ var router = new Router({
       path: '/tools/charbuilder',
       components: {
         default: charbuilder
+      }
+    },
+    {
+      name: "npcgen",
+      meta: {
+        title: "NPC Generator"
+      },
+      path: '/tools/npcgen',
+      components: {
+        default: npcgen
       }
     }
   ],
