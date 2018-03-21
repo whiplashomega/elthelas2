@@ -477,7 +477,10 @@ The first room has a hydra in it that is loose but cannot escape through the doo
 
 #### Room 2: Mirror Room
 
-When they enter this room it has full length mirrors along the walls. Once the players are in the room the mirrors cast Simulacrum from each player, creating a snow clone of each one that they have to fight. The clones only have half of their HP, but all of their abilities.
+When they enter this room it has full length mirrors along the walls. Once the players are in the room the mirrors cast Simulacrum from each player, creating a snow clone 
+of each one that they have to fight. The clones only have half of their HP, but all of their abilities.
+
+##### [Run This Encounter](/runner/silasclone&flykrclone&fallonclone&eobardclone&barbariousclone&adamclone)
 
 #### Room 3: Cursed Treasure
 
