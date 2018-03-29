@@ -28,7 +28,8 @@ I have a spy who I need inserted into the Orc army, but he tends to cause, distr
 
 #### Illustrious Guild of Merchants and Fine Artisans Orders
 
-Northport is a major center of trade and has vast storehouses full of all kinds of goods and supplies owned by guild members. You need to find a way to get those goods transported north. -Kendrick O'mally
+Northport is a major center of trade and has vast storehouses full of all kinds of goods and supplies owned by guild members. You need to find a way to get those goods 
+transported north. -Kendrick O'mally
 
 #### Lords of the Rising Dawn Orders
 

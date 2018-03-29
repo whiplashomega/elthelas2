@@ -36,7 +36,9 @@
       "heightroll": "2d12",
       "averageweight": 265,
       "baseweight": 175,
-      "weightroll": "2d6"
+      "weightroll": "2d6",
+      "stats": [2, 0, 1, 0, 0, 0],
+      "speed": [30, 0, 0, 0, 0]
     },
     {
       "id": "highorcs",
@@ -53,7 +55,9 @@
       "heightroll": "2d10",
       "averageweight": 215,
       "baseweight": 140,
-      "weightroll": "2d6"
+      "weightroll": "2d6",
+      "stats": [2, 0, 0, 0, 0, 1],
+      "speed": [30, 0, 0, 0, 0]
     },
     {
       "id": "sandorcs",
@@ -70,7 +74,9 @@
       "heightroll": "2d12",
       "averageweight": 231,
       "baseweight": 140,
-      "weightroll": "2d6"
+      "weightroll": "2d6",
+      "stats": [2, 0, 2, 0, 0, 0],
+      "speed": [30, 0, 0, 0, 0]
     }
   ]
 }

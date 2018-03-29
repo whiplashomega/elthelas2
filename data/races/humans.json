@@ -34,7 +34,9 @@
       "heightroll": "2d12",
       "averageweight": 175,
       "baseweight": 110,
-      "weightroll": "2d4"
+      "weightroll": "2d4",
+      "stats": [0, 0, 0, 0, 0, 0],
+      "speed": [30, 0, 0, 0, 0]
     },
     {
       "id": "hisruhumans",
@@ -54,7 +56,9 @@
       "heightroll": "2d10",
       "averageweight": 155,
       "baseweight": 100,
-      "weightroll": "2d4"
+      "weightroll": "2d4",
+      "stats": [0, 0, 0, 0, 0, 0],
+      "speed": [30, 0, 0, 0, 0]
     },
     {
       "id": "imperialhumans",
@@ -71,7 +75,9 @@
       "heightroll": "2d10",
       "averageweight": 165,
       "baseweight": 110,
-      "weightroll": "2d4"
+      "weightroll": "2d4",
+      "stats": [0, 0, 0, 0, 0, 0],
+      "speed": [30, 0, 0, 0, 0]
     },
     {
       "id": "neranhumans",
@@ -93,7 +99,9 @@
       "heightroll": "2d8",
       "averageweight": 155,
       "baseweight": 110,
-      "weightroll": "2d4"
+      "weightroll": "2d4",
+      "stats": [0, 0, 0, 0, 0, 0],
+      "speed": [35, 0, 0, 0, 0]
     },
     {
       "id": "staelichumans",
@@ -113,7 +121,9 @@
       "heightroll": "2d10",
       "averageweight": 175,
       "baseweight": 120,
-      "weightroll": "2d4"
+      "weightroll": "2d4",
+      "stats": [0, 0, 0, 0, 0, 0],
+      "speed": [30, 0, 0, 0, 0]
     } 
   ]
 }

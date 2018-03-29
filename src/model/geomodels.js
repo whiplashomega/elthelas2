@@ -11,6 +11,16 @@ const state = {
 const getters = {
   allCities: state => state.cities,
   allNations: state => state.nations,
+  allNationNames: state => {
+    return state.nations.map((a) => {
+      return a.name;
+    });
+  },
+  allCityNames: state => {
+    return state.cities.map((a) => {
+      return a.name;
+    });
+  },
   allLandmarks: state => state.landmarks,
   allFeatures: state => state.features,
   allContinents: state => state.continents

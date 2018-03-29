@@ -34,7 +34,9 @@
       "heightroll": "2d4",
       "averageweight": 40,
       "baseweight": 35,
-      "weightroll": "1"
+      "weightroll": "1",
+      "stats": [0, 2, 0, 0, 0, 2],
+      "speed": [30, 0, 20, 0, 0]
     }
   ]
 }

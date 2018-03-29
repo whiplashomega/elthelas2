@@ -2,11 +2,14 @@ import { mapGetters } from 'vuex';
 
 export default {
   computed: mapGetters({
-    races: 'allRaces',
+    races: 'builderRaces',
     backgrounds: 'allBackgrounds',
     equipment: 'allEquipment',
     spells: 'allSpells',
-    classes: 'allClasses'
+    classes: 'allClasses',
+    nations: 'allNationNames',
+    cities: 'allCityNames',
+    factions: 'allOrganizations'
   }),
   data () {
     return {
@@ -35,7 +38,7 @@ export default {
         [4, 3, 3, 3, 3, 2, 1, 1, 1],
         [4, 3, 3, 3, 3, 2, 2, 1, 1],
       ],
-      character: {
+      oldcharacter: {
         name: "",
         str: 8, dex: 8, con: 8, int: 8, wis: 8, cha: 8,
         racialstr: 0, racialdex: 0, racialcon: 0, racialint: 0, racialwis: 0, racialcha: 0,
@@ -347,7 +350,122 @@ export default {
         },
         attMagic: 0,
         saveMagic: 0
+      },
+      character: {
+        name: "",
+        player: "",
+        charclasses: [{ thisclass: {name: "", subclass: [], hitdie: 6 }, level: 0 }],
+        race: { stats: [0, 0, 0, 0, 0, 0], speed: [0, 0, 0, 0 ,0]},
+        background: {},
+        alignment: "",
+        faction: {},
+        homecountry: "",
+        hometown: "",
+        age: "",
+        height: "",
+        weight: "",
+        gender: "",
+        eyes: "",
+        skin: "",
+        skills: [
+          { name: "Acrobatics", prof: 0, stat: 1, magic: 0 },
+          { name: "Animal Handling", prof: 0, stat: 4, magic: 0 },
+          { name: "Arcana", prof: 0, stat: 3, magic: 0 },
+          { name: "Athletics", prof: 0, stat: 0, magic: 0 },
+          { name: "Deception", prof: 0, stat: 5, magic: 0 },
+          { name: "History", prof: 0, stat: 3, magic: 0 },
+          { name: "Insight", prof: 0, stat: 4, magic: 0 },
+          { name: "Intimidation", prof: 0, stat: 5, magic: 0 },
+          { name: "Investigation", prof: 0, stat: 3, magic: 0 },
+          { name: "Medicine", prof: 0, stat: 4, magic: 0 },
+          { name: "Nature", prof: 0, stat: 3, magic: 0 },
+          { name: "Perception", prof: 0, stat: 4, magic: 0 },
+          { name: "Performance", prof: 0, stat: 5, magic: 0 },
+          { name: "Persuasion", prof: 0, stat: 5, magic: 0 },
+          { name: "Religion", prof: 0, stat: 3, magic: 0 },
+          { name: "Sleight of Hand", prof: 0, stat: 1, magic: 0 },
+          { name: "Stealth", prof: 0, stat: 1, magic: 0 },
+          { name: "Survival", prof: 0, stat: 4, magic: 0 },
+        ],
+        saves: [false, false, false, false, false, false],
+        savebonus: [0, 0, 0, 0, 0 ,0],
+        stats: [8, 8, 8, 8, 8, 8],
+        statbonus: [0, 0, 0, 0, 0 ,0],
+        initmagic: 0,
+        hpmagic: 0,
+        acmagic: 0,
+        speedmagic: [0, 0, 0, 0, 0]
       }
+    };
+  },
+  methods: {
+    setRaceDefaults () {
+      this.character.age = this.character.race.agepoints.mentalmaturity;
+      var feet = Math.floor(this.character.race.averageheight / 12);
+      var inches = this.character.race.averageheight % 12;
+      this.character.height = feet + "' " + inches + "''";
+      this.character.weight = this.character.race.averageweight + " lbs";
+    },
+    classtext () {
+      return this.character.charclasses.reduce((a, b) => {
+        return a + b.thisclass.name + " " + b.level.toString() + " ";
+      }, "");
+    },
+    addclass () {
+      this.character.charclasses.push({ thisclass: {name: "", subclass: [] }, level: 0 });
+    },
+    removeclass (i) {
+      if(this.character.charclasses.length > 1) {
+        this.character.charclasses.splice(i, 1);
+      }
+      else {
+        alert("cannot remove last class");
+      }
+    },
+    getStatTotal(i) {
+      return Number(this.character.stats[i]) + Number(this.character.race.stats[i]) + Number(this.character.statbonus[i]);
+    },
+    getStatMod(i) {
+      return Math.floor(this.getStatTotal(i)/2) - 5;
+    },
+    getSaveMod(i) {
+      return this.getStatMod(i) + this.character.saves[i] * this.profbonus();
+    },
+    profbonus() {
+      var level = this.character.charclasses.reduce((a, b) => {
+        return a + Number(b.level);
+      }, 0);
+      return Math.ceil(level/4)+1;
+    },
+    getSkillMod(skill) {
+      return this.getStatMod(skill.stat) + Math.floor(Number(skill.prof) * this.profbonus());
+    },
+    getInitMod() {
+      return this.getStatMod(1) + Number(this.character.initmagic);
+    },
+    getHPTotal() {
+      var total = 0;
+      this.character.charclasses.forEach((cc) => {
+        total += Number(cc.level) * (cc.thisclass.hitdie/2 + this.getStatMod(2) + 1);
+      });
+      total += (this.character.charclasses[0].thisclass.hitdie/2 - 1);
+      total += Number(this.character.hpmagic);
+      return total;
+    },
+    pointbuy() {
+      return this.character.stats.reduce((a, b) => {
+        var c = Number(b) - 8;
+        if (b > 13) {
+          c += Number(b) - 13;
+        }
+        if (b > 15) {
+          c += Number(b) - 15;
+        }
+        return a + c;
+      }, 0);
+    },
+    getSpeedStat(i) {
+      return Number(this.character.race.speed[i]) + Number(this.character.speedmagic[i]);
     }
   }
 }

@@ -37,7 +37,9 @@
       "heightroll": "2d8",
       "averageweight": 240,
       "baseweight": 175,
-      "weightroll": "2d6"
+      "weightroll": "2d6",
+      "stats": [2, 0, 0, 0, 0, 1],
+      "speed": [30, 0, 0, 0, 0]
     },
     {
       "id": "copper",
@@ -55,7 +57,9 @@
       "heightroll": "2d8",
       "averageweight": 240,
       "baseweight": 175,
-      "weightroll": "2d6"
+      "weightroll": "2d6",
+      "stats": [2, 0, 0, 0, 0, 1],
+      "speed": [30, 0, 0, 0, 0]
     },
     {
       "id": "blue",
@@ -73,7 +77,9 @@
       "heightroll": "2d8",
       "averageweight": 240,
       "baseweight": 175,
-      "weightroll": "2d6"
+      "weightroll": "2d6",
+      "stats": [2, 0, 0, 0, 0, 1],
+      "speed": [30, 0, 0, 0, 0]
     },
     {
       "id": "bronze",
@@ -91,7 +97,9 @@
       "heightroll": "2d8",
       "averageweight": 240,
       "baseweight": 175,
-      "weightroll": "2d6"
+      "weightroll": "2d6",
+      "stats": [2, 0, 0, 0, 0, 1],
+      "speed": [30, 0, 0, 0, 0]
     },
     {
       "id": "brass",
@@ -109,7 +117,9 @@
       "heightroll": "2d8",
       "averageweight": 240,
       "baseweight": 175,
-      "weightroll": "2d6"
+      "weightroll": "2d6",
+      "stats": [2, 0, 0, 0, 0, 1],
+      "speed": [30, 0, 0, 0, 0]
     },
     {
       "id": "gold",
@@ -127,7 +137,9 @@
       "heightroll": "2d8",
       "averageweight": 240,
       "baseweight": 175,
-      "weightroll": "2d6"
+      "weightroll": "2d6",
+      "stats": [2, 0, 0, 0, 0, 1],
+      "speed": [30, 0, 0, 0, 0]
     },
     {
       "id": "red",
@@ -145,7 +157,9 @@
       "heightroll": "2d8",
       "averageweight": 240,
       "baseweight": 175,
-      "weightroll": "2d6"
+      "weightroll": "2d6",
+      "stats": [2, 0, 0, 0, 0, 1],
+      "speed": [30, 0, 0, 0, 0]
     },
     {
       "id": "green",
@@ -163,7 +177,9 @@
       "heightroll": "2d8",
       "averageweight": 240,
       "baseweight": 175,
-      "weightroll": "2d6"
+      "weightroll": "2d6",
+      "stats": [2, 0, 0, 0, 0, 1],
+      "speed": [30, 0, 0, 0, 0]
     },
     {
       "id": "silver",
@@ -181,7 +197,9 @@
       "heightroll": "2d8",
       "averageweight": 240,
       "baseweight": 175,
-      "weightroll": "2d6"
+      "weightroll": "2d6",
+      "stats": [2, 0, 0, 0, 0, 1],
+      "speed": [30, 0, 0, 0, 0]
     },
     {
       "id": "white",
@@ -199,7 +217,9 @@
       "heightroll": "2d8",
       "averageweight": 240,
       "baseweight": 175,
-      "weightroll": "2d6"
+      "weightroll": "2d6",
+      "stats": [2, 0, 0, 0, 0, 1],
+      "speed": [30, 0, 0, 0, 0]
     }
   ]
 }

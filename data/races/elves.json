@@ -38,7 +38,9 @@
       "heightroll": "2d10",
       "averageweight": 120,
       "baseweight": 90,
-      "weightroll": "1d4"
+      "weightroll": "1d4",
+      "stats": [0, 2, 0, 1, 0, 0],
+      "speed": [30, 0, 0, 0, 0]
     },
     {
       "id": "moonelves",
@@ -56,7 +58,9 @@
       "heightroll": "2d10",
       "averageweight": 140,
       "baseweight": 100,
-      "weightroll": "1d6"
+      "weightroll": "1d6",
+      "stats": [0, 2, 1, 0, 0, 0],
+      "speed": [35, 0, 0, 0, 0]
     },
     {
       "id": "wildelves",
@@ -75,7 +79,9 @@
       "heightroll": "2d8",
       "averageweight": 115,
       "baseweight": 90,
-      "weightroll": "1d4"
+      "weightroll": "1d4",
+      "stats": [0, 2, 0, 0, 0, 1],
+      "speed": [35, 0, 0, 0, 0]
     },
     {
       "id": "woodelves",
@@ -94,7 +100,9 @@
       "heightroll": "2d10",
       "averageweight": 130,
       "baseweight": 100,
-      "weightroll": "1d4"
+      "weightroll": "1d4",
+      "stats": [0, 2, 0, 0, 1, 0],
+      "speed": [35, 0, 0, 0, 0]
     }
   ]
 }

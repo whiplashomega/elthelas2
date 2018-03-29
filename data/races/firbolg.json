@@ -36,7 +36,9 @@
       "heightroll": "4d6",
       "averageweight": 270,
       "baseweight": 200,
-      "weightroll": "2d4"
+      "weightroll": "2d4",
+      "stats": [1, 0, 0, 0, 2, 0],
+      "speed": [30, 0, 0, 0, 0]
     }  
   ]
 }

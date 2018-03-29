@@ -35,7 +35,9 @@
       "heightroll": "2d4",
       "averageweight": 40,
       "baseweight": 35,
-      "weightroll": "1"
+      "weightroll": "1",
+      "stats": [0, 2, 0, 0, 0, 1],
+      "speed": [25, 0, 0, 0, 0]
     },
     {
       "id": "stronghearthalfling",
@@ -55,7 +57,9 @@
       "heightroll": "2d4",
       "averageweight": 50,
       "baseweight": 35,
-      "weightroll": "1d6"
+      "weightroll": "1d6",
+      "stats": [0, 2, 1, 0, 0, 0],
+      "speed": [25, 0, 0, 0, 0]
     },
     {
       "id": "tallfellowhalflings",
@@ -74,7 +78,9 @@
       "heightroll": "2d6",
       "averageweight": 90,
       "baseweight": 70,
-      "weightroll": "1d4"
+      "weightroll": "1d4",
+      "stats": [1, 2, 0, 0, 0, 1],
+      "speed": [30, 0, 0, 0, 0]
     }
   ]
 }

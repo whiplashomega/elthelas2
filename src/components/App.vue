@@ -36,6 +36,9 @@ export default {
     this.$store.dispatch('getAllRaces');
     this.$store.dispatch('getAllClasses');
     this.$store.dispatch('getAllBackgrounds');
+    this.$store.dispatch('getAllOrganizations');
+    this.$store.dispatch('getAllNations');
+    this.$store.dispatch('getAllCities');
     this.$store.dispatch('getAllSpells').then(() => {
       console.log("Spells Retrieved");
       this.$store.dispatch('getAllArmor').then(() => {

@@ -35,7 +35,9 @@
       "heightroll": "2d4",
       "averageweight": 55,
       "baseweight": 40,
-      "weightroll": "1d6"
+      "weightroll": "1d6",
+      "stats": [0, 1, 0, 2, 0, 0],
+      "speed": [25, 0, 0, 0, 0]
     },
     {
       "id": "stagengnomes",
@@ -54,7 +56,9 @@
       "heightroll": "2d4",
       "averageweight": 60,
       "baseweight": 45,
-      "weightroll": "1d6"
+      "weightroll": "1d6",
+      "stats": [0, 0, 1, 2, 0, 0],
+      "speed": [25, 0, 0, 0, 0]
     }
   ]
 }

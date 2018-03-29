@@ -37,7 +37,9 @@
       "heightroll": "2d4",
       "averageweight": 135,
       "baseweight": 100,
-      "weightroll": "2d6"
+      "weightroll": "2d6",
+      "stats": [0, 0, 1, 0, 2, 0],
+      "speed": [25, 0, 0, 0, 0]
       },
       {
         "id": "hilldwarves",
@@ -58,7 +60,9 @@
       "heightroll": "2d4",
       "averageweight": 150,
       "baseweight": 115,
-      "weightroll": "2d6"
+      "weightroll": "2d6",
+      "stats": [0, 0, 2, 0, 1, 0],
+      "speed": [25, 0, 0, 0, 0]
       },
       {
         "id": "morrinddwarves",
@@ -78,7 +82,9 @@
       "heightroll": "2d6",
       "averageweight": 175,
       "baseweight": 125,
-      "weightroll": "2d6"
+      "weightroll": "2d6",
+      "stats": [0, 0, 2, 0, 0, 1],
+      "speed": [30, 0, 0, 0, 0]
       },
       {
         "id": "plainsdwarves",
@@ -99,7 +105,9 @@
       "heightroll": "2d4",
       "averageweight": 165,
       "baseweight": 130,
-      "weightroll": "2d6"
+      "weightroll": "2d6",
+      "stats": [2, 0, 2, 0, 0, 0],
+      "speed": [25, 0, 0, 0, 0]
       }
     ]
   }

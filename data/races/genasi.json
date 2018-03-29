@@ -33,7 +33,9 @@
       "heightroll": "2d10",
       "averageweight": 140,
       "baseweight": 100,
-      "weightroll": "1d6"
+      "weightroll": "1d6",
+      "stats": [0, 1, 2, 0, 0, 0],
+      "speed": [30, 0, 0, 0, 0]
     },
     {
       "id": "earthgenasi",
@@ -51,7 +53,9 @@
       "heightroll": "2d10",
       "averageweight": 195,
       "baseweight": 120,
-      "weightroll": "2d6"
+      "weightroll": "2d6",
+      "stats": [1, 0, 2, 0, 0, 0],
+      "speed": [30, 0, 0, 0, 0]
     },
     {
       "id": "firegenasi",
@@ -70,7 +74,9 @@
       "heightroll": "2d8",
       "averageweight": 165,
       "baseweight": 120,
-      "weightroll": "2d4"
+      "weightroll": "2d4",
+      "stats": [0, 0, 2, 1, 0, 0],
+      "speed": [30, 0, 0, 0, 0]
     },
     {
       "id": "watergenasi",
@@ -90,7 +96,9 @@
       "heightroll": "2d10",
       "averageweight": 165,
       "baseweight": 110,
-      "weightroll": "2d4"
+      "weightroll": "2d4",
+      "stats": [0, 0, 2, 0, 1, 0],
+      "speed": [30, 0, 0, 30, 0]
     }
   ]
 }

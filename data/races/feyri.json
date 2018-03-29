@@ -25,6 +25,7 @@
     {
       "id": "default",
       "name": "Fey'ri",
+      "singular": "Fey'ri",
       "image": "/static/images/races/feyri.jpg",
       "description": "",
       "traits": [],
@@ -33,7 +34,9 @@
       "heightroll": "2d10",
       "averageweight": 130,
       "baseweight": 100,
-      "weightroll": "1d4"
+      "weightroll": "1d4",
+      "stats": [0, 1, 0, 2, 0, 0],
+      "speed": [30, 40, 0, 0, 0]
     }
   ]
 }
