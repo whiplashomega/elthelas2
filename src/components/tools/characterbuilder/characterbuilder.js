@@ -13,6 +13,10 @@ export default {
   }),
   data () {
     return {
+      attackmodal: false,
+      newattack: { name: "", bonus: "", damage: "", range: "", type: "", dtype: "" },
+      armormodal: false,
+      newarmor: { name: "", type: "", ac: 0, edit: false },
       weapons: [],
       armor: [],
       slots: [
@@ -354,9 +358,9 @@ export default {
       character: {
         name: "",
         player: "",
-        charclasses: [{ thisclass: {name: "", subclass: [], hitdie: 6 }, level: 0 }],
+        charclasses: [{ thisclass: {name: "", subclass: [], hitdie: 6 }, level: 0, selsubclass: { features: [] } }],
         race: { stats: [0, 0, 0, 0, 0, 0], speed: [0, 0, 0, 0 ,0]},
-        background: {},
+        background: { feature: { show: false, description: "", name: "" } },
         alignment: "",
         faction: {},
         homecountry: "",
@@ -394,7 +398,9 @@ export default {
         initmagic: 0,
         hpmagic: 0,
         acmagic: 0,
-        speedmagic: [0, 0, 0, 0, 0]
+        speedmagic: [0, 0, 0, 0, 0],
+        attacks: [],
+        armors: []
       }
     };
   },
@@ -412,7 +418,7 @@ export default {
       }, "");
     },
     addclass () {
-      this.character.charclasses.push({ thisclass: {name: "", subclass: [] }, level: 0 });
+      this.character.charclasses.push({ thisclass: {name: "", subclass: [] }, level: 0, selsubclass: { features: [] } });
     },
     removeclass (i) {
       if(this.character.charclasses.length > 1) {
@@ -466,6 +472,56 @@ export default {
     },
     getSpeedStat(i) {
       return Number(this.character.race.speed[i]) + Number(this.character.speedmagic[i]);
+    },
+    addAttack() {
+      this.character.attacks.push(this.newattack);
+      this.newattack = { name: "", bonus: "", damage: "", range: "", type: "", dtype: "", edit: false };
+      this.attackmodal = false;
+    },
+    removeAttack(index) {
+      this.character.attacks.splice(index, 1);
+    },
+    addArmor() {
+      this.character.armors.push(this.newarmor);
+      this.newarmor = { name: "", type: "", ac: 0, edit: false };
+      this.armormodal = false;
+    },
+    removeArmor(index) {
+      this.character.armors.splice(index, 1);
+    },
+    accalc() {
+      var ac = 10 + this.getStatMod(1);
+      var shield = 0;
+      this.character.armors.forEach((a) => {
+        a.ac = Number(a.ac);
+        if(a.equipped) {
+          if(a.type === "Heavy Armor") {
+            if(a.ac > ac) {
+              ac = a.ac;
+            }
+          } else if(a.type === "Medium Armor") {
+            var tmp = a.ac + Math.min(2, this.getStatMod(1));
+            if(tmp > ac) {
+              ac = tmp;
+            }
+          } else if(a.type === "Shield" && a.ac > shield) {
+            shield = a.ac;
+          } else {
+            var tmp = a.ac + this.getStatMod(1);
+            if(tmp > ac) {
+              ac = tmp;
+            }
+          }
+        }
+      });
+      return Number(ac) + Number(shield);
+    },
+    log(val) {
+      console.log(val);
+    },
+    setval(object, attribute, value) {
+      object[attribute] = value;
+      this.$forceUpdate();
     }
   }
-}
+};

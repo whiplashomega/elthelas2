@@ -201,6 +201,114 @@
           "description": "At level 15, you have learned to see past the trickery magic can create. You have advantage on wisdom saves against spells and advantage on detecting illusions."
         }
       ]
+    },
+    {
+      "name": "Arcane Archer",
+      "castermult": 0,
+      "features": [
+        {
+          "level": 3,
+          "name": "Arcane Archer Lore",
+          "description": "At 3rd level, you learn magical theory or some of the secrets of nature—typical for practitioners of this elven martial tradition. You choose to gain proficiency in either the Arcana or the Nature skill, and you choose to learn either the prestidigitation or the drufdcraft cantrip."
+        },
+        {
+          "level": 3,
+          "name": "Arcane Shot",
+          "description": "At 3rd level, you learn to unleash special magical effects with some of your shots. When you gain this feature, you learn two Arcane Shot options of your choice (see “Arcane Shot Options” below).\n\nOnce per turn when you fire a magic arrow from a shortbow or longbow as part of the Attack action, you can apply one of your Arcane Shot options to that arrow. You decide to use the option when the arrow hits a creature, unless the option doesn’t involve an attack roll. You have two uses of this ability, and you regain all expended uses of it when you finish a short or long rest.\n\nYou gain an additional Arcane Shot option of your choice when you reach certain levels in this class: 7th, 10th, 15th, and 18th level. Each option also improves when you become an 18th—level fighter."
+        },
+        {
+          "level": 7,
+          "name": "Magic Arrow",
+          "description": "At 7th level, you gain the ability to infuse arrows with magic. Whenever you fire a nonmagical arrow from a shortbow or longbow, you can make it magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. The magic fades from the arrow immediately after it hits or misses its target."
+        },
+        {
+          "level": 7,
+          "name": "Curving Shot",
+          "description": "At 7th level, you learn how to direct an errant arrow toward a new target. When you make an attack roll with a magic arrow and miss, you can use a bonus action to reroll the attack roll against a different target within 60 feet of the original target."
+        },
+        {
+          "level": 15,
+          "name": "Ever-Ready Shot",
+          "description": "Starting at 15th level, your magical archery is available whenever battle starts. If you roll initiative and have no uses of Arcane Shot remaining, you regain one use of it."
+        }
+      ]
+    },
+    {
+      "name": "Cavalier",
+      "castermult": 0,
+      "features": [
+        {
+          "level": 3,
+          "name": "Bonus Proficiency",
+          "description": "When you choose this archetype at 3rd level, you gain proficiency in one of the following skills of your choice: Animal Handling, History, Insight, Performance, or Persuasion. Alternatively, you learn one language of your choice."
+        },
+        {
+          "level": 3,
+          "name": "Born to the Saddle",
+          "description": "Starting at 3rd level, your mastery as a rider becomes apparent. You have advantage on saving throws made to avoid falling off your mount. If you fall off your mount and descend no more than 10 feet, you can land on your feet if you’re not incapacitated.\n\nFinally, mounting or dismounting a creature costs you only 5 feet of movement, rather than half your speed."
+        },
+        {
+          "level": 3,
+          "name": "Unwavering Mark",
+          "description": "Starting at 3rd level, you can menace your foes, foiling their attacks and punishing them for harming others. When you hit a creature with a melee weapon attack, you can mark the creature until the end of your next turn. This effect ends early if you are incapacitated or you die, or if someone else marks the creature.\n\nWhile it is within 5 feet of you, a creature marked by you has disadvantage on any attack roll that doesn’t target you.\n\nIn addition, if a creature marked by you deals damage to anyone other than you, you can make a special melee weapon attack against the marked creature as a bonus action on your next turn. You have advantage on the attack roll, and if it hits, the attacks weapon deals extra damage to the target equal to half your fighter level.\n\nRegardless of the number of creatures you mark, you can make this special attack a number of times equal to your Strength modifier (minimum of once), and you regain all expended uses of it when you finish a long rest."
+        },
+        {
+          "level": 7,
+          "name": "Warding Maneuver",
+          "description": "At 7th level, you learn to fend off strikes directed at you, your mount, or other creatures nearby. If you or a creature you can see within 5 feet of you is hit by an attack, you can roll 1d8 as a reaction if you’re wielding a melee weapon or a shield. Roll the die, and add the number rolled to the target’s AC against that attack. If the attack still hits, the target has resistance against the attack’s damage.\n\nYou can use this feature a number of times equal to your Constitution modifier (minimum of once), and you regain all expended uses of it when you finish a long rest."
+        },
+        {
+          "level": 10,
+          "name": "Hold the Line",
+          "description": "At 10th level, you become a master of locking down your enemies. Creatures provoke an opportunity attack from you when they move 5 feet or more while within your reach, and if you hit a creature with an opportunity attack, the target’s speed is reduced to 0 until the end of the current turn."
+        },
+        {
+          "level": 15,
+          "name": "Ferocious Charger",
+          "description": "Starting at 15th level, you can run down your foes, whether you’re mounted or not. If you move at least 10 feet in a straight line right before attacking a creature and you hit it with the attack, that target must succeed on a Strength saving throw (DC 8 + your proficiency bonus + your Strength modifier) or be knocked prone. You can use this feature only once on each of your turns."
+        },
+        {
+          "level": 18,
+          "name": "Vigilant Defender",
+          "description": "Starting at 18th level, you respond to danger with extraordinary vigilance. In combat, you get a special reaction that you can take once on every creature’s turn, except your turn. You can use this special reaction only to make an opportunity attack, and you can’t use it on the same turn that you take your normal reaction."
+        }
+      ]
+    },
+    {
+      "name": "Samurai",
+      "castermult": 0,
+      "features": [
+        {
+          "level": 3,
+          "name": "Bonus Proficiency",
+          "description": "When you choose this archetype at 3rd level, you gain proficiency in one of the following skills of your choice: History, Insight, Performance, or Persuasion. Alternatively, you learn one language of your choice."
+        },
+        {
+          "level": 3,
+          "name": "Fighting Spirit",
+          "description": "Starting at 3rd level, your intensity in battle can shield you and help you strike true. As a bonus action on your turn, you can give yourself advantage on weapon attack rolls until the end of the current turn. When you do so, you also gain 5 temporary hit points. The number of temporary hit points increases when you reach certain levels in this class, increasing to 10 at 10th level and 15 at 15th level.\n\nYou can use this feature three times, and you regain all expended uses of it when you finish a long rest."
+        },
+        {
+          "level": 7,
+          "name": "Elegant Courtier",
+          "description": "Starting at 7th level, your discipline and attention to detail allow you to excel in social situations. Whenever you make a Charisma (Persuasion) check, you gain a bonus to the check equal to your Wisdom modifier.\n\nYour self-control also causes you to gain proficiency in Wisdom saving throws. If you already have this proficiency, you instead gain proficiency in Intelligence or Charisma saving throws (your choice)."
+        },
+        {
+          "level": 10,
+          "name": "Tireless Spirit",
+          "description": "Starting at 10th level, when you roll initiative and have no uses of Fighting Spirit remaining, you regain one use."
+        },
+        {
+          "level": 15,
+          "name": "Rapid Strike",
+          "description": "Starting at 15th level, you learn to trade accuracy for swift strikes. If you take the Attack action on your turn and have advantage on an attack roll against one of the targets, you can forgo the advantage for that roll to make an additional weapon attack against that target, as part of the same action. You can do so no more than once per turn."
+        },
+        {
+          "level": 18,
+          "name": "Strength before Death",
+          "description": "Starting at 18th level, your fighting spirit can delay the grasp of death. If you take damage that reduces you to 0 hit points and doesn’t kill you outright, you can use your reaction to delay falling unconscious, and you can immediately take an extra turn, interrupting the current turn. While you have 0 hit points during that extra turn, taking damage causes death saving throw failures as normal, and three death saving throw failures can still kill you. When the extra turn ends, you fall unconscious if you still have 0 hit points.\n\nOnce you use this feature, you can’t use it again until you finish a long rest."
+        }
+      ]
     }
   ]
 }

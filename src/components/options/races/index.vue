@@ -18,8 +18,8 @@
         <img :src="subrace.image" :alt="subrace.name" v-if="subrace.image" class="raceimage" />
         <div v-html="$options.filters.marked(subrace.description)"></div>
         <ul>
-          <li v-for="trait in currentRace.traits" v-bind:key="trait"><div v-html="$options.filters.marked(trait)"></div></li>
-          <li v-for="trait in subrace.traits" v-bind:key="trait"><div v-html="$options.filters.marked(trait)"></div></li>
+          <li v-for="(trait, index) in currentRace.traits" v-bind:key="index"><div v-if="typeof trait === 'string'" v-html="$options.filters.marked(trait)"></div><div v-else><strong>{{trait.name}}</strong><span v-html="$options.filters.marked(trait.description)"></span></div></li>
+          <li v-for="(trait, index) in subrace.traits" v-bind:key="index"><div v-if="typeof trait === 'string'" v-html="$options.filters.marked(trait)"></div><div v-else><strong>{{trait.name}}</strong><span v-html="$options.filters.marked(trait.description)"></span></div></li>
         </ul>
       </div>
     </div>

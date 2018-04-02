@@ -589,212 +589,33 @@
     </ul>
   </div>
   <div class="racediv" id="ranger">
-    <h2>Ranger (Revised)</h2>
+    <h2>Ranger</h2>
     <p>
-      This is a version of the ranger class based on the <a href="https://drive.google.com/file/d/0B8hs5jMXGj5iVHo0Zm9MOWx0TEU/view?usp=sharing">the Revised Ranger</a>
-      from unearthed arcana.
+      The ranger has been an issue of some consternation for many players, as written in the PHB, many, including myself, consider it to be underpowered compared to the other classes. It
+      lacked a real niche. Outclassed in whatever role it might try to fill, whether that be as a scout, skill monkey, striker, tank, etc. There have been many attempts to resolve this, including, famously, multiple revisions of a revised ranger class that appeared in unearthed arcana. In my opinion, however, this revised ranger went too far, especially when taking into account the possibility of multiclass characters, feats, etc. Looking at the analysis that exists about the real problems with the ranger class, and using the revised ranger as inspiration, I have, instead of a complete overhaul of the class, reworked a few of the classes features to be more useful, and largely replaced the beast master archetype with a variation on unearthed arcana's version.  These revisions are below:
     </p>
-    <p>
-      Important differences include:
-    </p>
-    <ul>
-      <li>Primeval awareness is gained at level 1 instead of 3.</li>
-      <li>Primeval awareness range is reduced to 120 ft, and does not reveal numbers or other attributes.</li>
-      <li>All humanoids can no longer be a favored enemy, rather you must choose 2 races of humanoids.</li>
-      <li>Natural Explorer delayed until 3rd level.</li>
-      <li>Natural explorer no longer grants advantage on attack rolls.</li>
-      <li>Penalty imposed by Hide in Plain Sight reduced to -5.</li>
-      <li>The Deep Stalker Conclave is not available.</li>
-    </ul>
-    <table class="classtable table table-striped" id="rangertable">
-      <thead>
-        <tr>
-          <th>Level</th><th>Prof. bonus</th><th>Features</th><th class="tablet-l">Spells Known</th><th class="tablet-l">1st</th><th class="tablet-l">2nd</th><th class="tablet-l">3rd</th><th class="tablet-l">4th</th><th class="tablet-l">5th</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1st</td><td>+2</td><td>Favored Enemy, Primeval Awareness</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-        </tr>
-        <tr>
-          <td>2nd</td><td>+2</td><td>Fighting Style, Spellcasting</td><td>2</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td>
-        </tr>
-        <tr>
-          <td>3rd</td><td>+2</td><td>Natural Explorer, Ranger Conclave</td><td>3</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td>
-        </tr>
-        <tr>
-          <td>4th</td><td>+2</td><td>Ability Score Improvement</td><td>3</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td>
-        </tr>
-        <tr>
-          <td>5th</td><td>+3</td><td>Ranger Conclave Feature</td><td>4</td><td>4</td><td>2</td><td>-</td><td>-</td><td>-</td>
-        </tr>
-        <tr>
-          <td>6th</td><td>+3</td><td>Greater Favored Enemy</td><td>4</td><td>4</td><td>2</td><td>-</td><td>-</td><td>-</td>
-        </tr>
-        <tr>
-          <td>7th</td><td>+3</td><td>Ranger Conclave Feature</td><td>5</td><td>4</td><td>3</td><td>-</td><td>-</td><td>-</td>
-        </tr>
-        <tr>
-          <td>8th</td><td>+3</td><td>Ability Score Improvement</td><td>5</td><td>4</td><td>3</td><td>-</td><td>-</td><td>-</td>
-        </tr>
-        <tr>
-          <td>9th</td><td>+4</td><td>Fleet of Foot</td><td>6</td><td>4</td><td>3</td><td>2</td><td>-</td><td>-</td>
-        </tr>
-        <tr>
-          <td>10th</td><td>+4</td><td>Hide in Plain Sight</td><td>6</td><td>4</td><td>3</td><td>2</td><td>-</td><td>-</td>
-        </tr>
-        <tr>
-          <td>11th</td><td>+4</td><td>Ranger Conclave Feature</td><td>7</td><td>4</td><td>3</td><td>3</td><td>-</td><td>-</td>
-        </tr>
-        <tr>
-          <td>12th</td><td>+4</td><td>Ability Score Improvement</td><td>7</td><td>4</td><td>3</td><td>3</td><td>-</td><td>-</td>
-        </tr>
-        <tr>
-          <td>13th</td><td>+5</td><td>Improved Natural Explorer</td><td>8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>-</td>
-        </tr>
-        <tr>
-          <td>14th</td><td>+5</td><td>Vanish</td><td>8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>-</td>
-        </tr>
-        <tr>
-          <td>15th</td><td>+5</td><td>Ranger Conclave Feature</td><td>9</td><td>4</td><td>3</td><td>3</td><td>2</td><td>-</td>
-        </tr>
-        <tr>
-          <td>16th</td><td>+5</td><td>Ability Score Improvement</td><td>9</td><td>4</td><td>3</td><td>3</td><td>2</td><td>-</td>
-        </tr>
-        <tr>
-          <td>17th</td><td>+6</td><td>-</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td>
-        </tr>
-        <tr>
-          <td>18th</td><td>+6</td><td>Feral Senses</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td>
-        </tr>
-        <tr>
-          <td>19th</td><td>+6</td><td>Ability Score Improvement</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td>
-        </tr>
-        <tr>
-          <td>20th</td><td>+6</td><td>Foe Slayer</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td>
-        </tr>
-      </tbody>
-    </table>
-    <h3>Hit Points</h3>
-    <p>
-      <strong>Hit Dice: </strong> 1d10 per ranger level<br />
-      <strong>Hit Points at 1st Level: </strong> 10 + your Constitution modifier<br />
-      <strong>Hit Points at Higher Levels: </strong> 1d10 (or 6) + your Constitution modifier per ranger level after 1st
-    </p>
-    <h3>Proficiencies</h3>
-    <p>
-      <strong>Armor: </strong> Light armor, medium armor, shield<br />
-      <strong>Weapons: </strong> Simple weapons, martial weapons<br />
-      <strong>Tools: </strong> None
-    </p>
-    <p>
-      <strong>Saving Throws: </strong> Strength, Dexterity<br />
-      <strong>Skills: </strong> Choose three from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival
-    </p>
-    <h3>Equipment</h3>
-    <p>
-      You start with the following equipment, in addition to the equipment granted by your background:
-    </p>
-    <ul>
-      <li>(a) scale mail or (b) leather armor</li>
-      <li>(a) two shortswords or (b) two simple melee weapons</li>
-      <li>(a) a dungeoneer's pack or (b) an explorer's pack</li>
-      <li>A longbow and a quiver of 20 arrows</li>
-    </ul>
     <h3>Favored Enemy</h3>
     <p>
       Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy commonly encountered in the wilds.
     </p>
     <p>
-      Choose a type of favored enemy: beasts, fey, two races of humanoids, monstrosities, or undead. You gain a +2 bonus to damage rolls with weapon attacks against creatures of the
-      chosen type. Additionally, you have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.
+      Choose a type of favored enemy: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead. You gain a +2 bonus to damage rolls with weapon attacks against creatures of the chosen type. Additionally, you have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.
     </p>
     <p>
-      When you gain this feature, you also learn one language of your choice, typically one spoken by your favored enemy or creatures associated with it. However, you are
-      free to pick any language you wish to learn.
-    </p>
-    <h3>Primeval Awareness</h3>
-    <p>
-      Your mastery of ranger lore allows you to establish a powerful link to beasts and to the land around you.
+      When you gain this feature, you also learn one language of your choice, typically one spoken by your favored enemy or creatures associated with it. However, you are free to pick any language you wish to learn.
     </p>
     <p>
-      You have an innate ability to communicate with beasts, and they recognize you as a kindred spirit. Through sounds and gestures, you can
-      communicate simple ideas to a beast as an action, and can read its basic mood and intent. You learn its emotional state, whether it is affected by
-      magic of any sort, its short-term needs (such as food or safety), and actions you can take (if any) to persuade it to not attack.
-    </p>
-    <p>
-      You cannot use this ability against a creature that you have attacked within the past 10 minutes.
-    </p>
-    <p>
-      Additionally, you can attune your senses to determine if any of your favored enemies lurk nearby. By spending an action in
-      concentration (as if you were concentrating on a spell), you can sense whether any of your favored enemies are present within 120 ft of
-      you. This feature reveals which of your favored enemies are present, and the creatures’ general direction and distance from you, but not their numbers or other attributes.
-    </p>
-    <p>
-      If there are multiple groups of your favored enemies within range, you learn this information for each group.
-    </p>
-    <h3>Fighting Style</h3>
-    <p>
-      At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style
-      option more than once, even if you later get to choose again.
-    </p>
-    <h4>Archery</h4>
-    <p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
-    <h4>Defense</h4>
-    <p>While you are wearing armor, you gain a +1 bonus to AC</p>
-    <h4>Dueling</h4>
-    <p>When you are weilding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
-    <h4>Two-Weapon Fighting</h4>
-    <p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
-    <h3>Spellcasting</h3>
-    <p>
-      By the time you reach 2nd level, you have learned to use the magical essence of nature to cast spells, much as a druid does. See chapter 10
-      for the general rules of spellcasting and chapter 11 for the ranger spell list.
-    </p>
-    <h4>Spell Slots</h4>
-    <p>
-      The Ranger table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must
-      expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.
-    </p>
-    <p>
-      For example, if you know the 1st-level spell animal friendship and have a 1st-level and a 2nd-level spell slot available, you can cast animal
-      friendship using either slot.
-    </p>
-    <h4>Spells Known of 1st Level and Higher</h4>
-    <p>
-      You know two 1st-level spells of your choice from the ranger spell list.
-    </p>
-    <p>
-      The Spells Known column of the Ranger table shows when you learn more ranger spells of your choice. Each of these spells must be of a level for
-      which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.
-    </p>
-    <p>
-      Additionally, when you gain a level in this class, you can choose one of the ranger spells you know and replace it with another spell from the
-      ranger spell list, which also must be of a level for which you have spell slots.
-    </p>
-    <h4>Spellcasting Ability</h4>
-    <p>
-      Wisdom is your spellcasting ability for your ranger spells, since your magic draws on your attunement to nature. You use your Wisdom
-      whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a
-      ranger spell you cast and when making an attack roll with one.
-    </p>
-    <p>
-      <strong>Spell save DC = </strong> 8 + your proficiency bonus + your Wisdom modifier
-    </p>
-    <p>
-      <strong>Spell attack modifier = </strong> your proficiency bonus + your Wisdom modifier
+      You choose one additional favored enemy, as well as an additional language, at 6th level and 14th level, and the damage you do to your favored enemies increases to +4 at 6th level, and +6 at 14th level.
     </p>
     <h3>Natural Explorer</h3>
     <p>
-      By the time you reach 3rd level you have become a master of navigating the natural world, and you react with swift and decisive action when
-      attacked. This grants you the following benefits:
+      You are a master of navigating the natural world, and you react with swift and decisive action when attacked. This grants you the following benefits:
     </p>
     <ul>
-      <li>You ignore difficult terrain.</li>
       <li>You have advantage on initiative rolls.</li>
     </ul>
     <p>
-      In addition you are skilled at navigating the wilderness.  You gain the following benefits when traveling for an hour or more:
+      In addition you are skilled at navigating the wilderness. You gain the following benefits when traveling for an hour or more:
     </p>
     <ul>
       <li>Difficult terrain doesn't slow your groups travel.</li>
@@ -804,31 +625,15 @@
       <li>When you forage, you find twice as much food as you normally would.</li>
       <li>While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</li>
     </ul>
-    <h3>Ranger Conclave</h3>
+    <h3>Primeval Awareness</h3>
     <p>
-      At 3rd level, you choose to emulate the ideals and training of a ranger conclave: the Beast Conclave, the Hunter Conclave, or the Stalker
-      Conclave, all detailed at the end of the class description. Your choice grants you features at 3rd level and again at 5th, 7th, 11th, and 15th
-      level.
+      Beginning at 3rd level, you can use your action and to focus your awareness on the region around you. For 1 minute you can sense whether the following types of creatures are present within 1 mile of you: aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn’t reveal the creatures location or number. If at least one of the creatures is within 60 feet of you this ability reveals the location of the nearest creature.
     </p>
     <h3>Ability Score Improvement</h3>
     <p>
       When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase
       two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.
     </p>
-    <h3>Greater Favored Enemy</h3>
-    <p>
-      At 6th level, you are ready to hunt even deadlier game. Choose a type of greater favored enemy: aberrations, celestials, constructs, dragons,
-      elementals, fiends, or giants. You gain all the benefits against this chosen enemy that you normally gain against your favored enemy, including an
-      additional language. Your bonus to damage rolls against all your favored enemies increases to +4.
-    </p>
-    <p>
-      Additionally, you have advantage on saving throws against the spells and abilities used by a greater favored enemy.
-    </p>
-    <h3>Fleet of Foot</h3>
-    <p>
-      Beginning at 9th level, you can use the Dash action as a bonus action on your turn.
-    </p>
-
     <h3>Hide in Plain Sight</h3>
     <p>
       Starting at 10th level, you can remain perfectly still for long periods of time to set up ambushes.
@@ -841,35 +646,23 @@
     <p>
       If you are still hidden on your next turn, you can continue to remain motionless and gain this benefit until you are detected.
     </p>
-    <h3>Improved Natural Explorer</h3>
-    <p>
-      Starting at 13th level, on your first turn during combat, you have advantage on attack rolls against creatures that have not yet acted.
-    </p>
-    <h3>Vanish</h3>
-    <p>
-      Starting at 14th level, you can use the Hide action as a bonus action on your turn. Also, you can’t be tracked by nonmagical means, unless
-      you choose to leave a trail.
-    </p>
-    <h3>Feral Senses</h3>
-    <p>
-      At 18th level, you gain preternatural senses that help you fight creatures you can’t see. When you attack a creature you can’t see, your inability to
-      see it doesn’t impose disadvantage on your attack rolls against it.
-    </p>
-    <p>
-      You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn’t hidden from you and you
-      aren’t blinded or deafened.
-    </p>
     <h3>Foe Slayer</h3>
     <p>
       At 20th level, you become an unparalleled hunter. Once on each of your turns, you can add your Wisdom modifier to the attack roll or the
       damage roll of an attack you make. You can choose to use this feature before or after the roll, but before any effects of the roll are applied.
     </p>
-    <h2>Ranger Conclaves</h2>
+    <h2>Ranger Archetypes</h2>
     <p>
-      Across the wilds, rangers come together to form conclaves—loose associations whose members share a similar outlook on how best to protect
-      nature from those who would despoil it.
+      Ranger's can adhere to one of the following archetypes:
     </p>
-    <h3>Beast Conclave</h3>
+    <ul>
+      <li>Beast Master (detailed below)</li>
+      <li>Hunter (PHB)</li>
+      <li>Gloom Stalker (XGE)</li>
+      <li>Horizon Walker (XGE)</li>
+      <li>Monster Slayer (XGE)</li>
+    </ul>
+    <h3>Beast Master</h3>
     <p>
       Many rangers are more at home in the wilds than in civilization, to the point where animals consider them kin. Rangers of the Beast Conclave
       develop a close bond with a beast, then further strengthen that bond through the use of magic.
@@ -879,10 +672,7 @@
       At 3rd level, you learn to use your magic to create a powerful bond with a creature of the natural world.
     </p>
     <p>
-      With 8 hours of work and the expenditure of 50 gp worth of rare herbs and fine food, you call forth an animal from the wilderness to serve as
-      your faithful companion. You normally select your companion from among the following animals: an ape, a black bear, a boar, a giant
-      badger, a giant weasel, a mule, a panther, or a wolf. However, your DM might pick one of these animals for you, based on the surrounding
-      terrain and on what types of creatures would logically be present in the area.
+      With 8 hours of work and the expenditure of 50 gp worth of rare herbs and fine food, you call forth an animal from the wilderness to serve as your faithful companion. You can select any beast of cr 1/2 or less that could reasonably appear in the area you are in, see the . However, your DM might pick one of these animals for you, based on the surrounding terrain and on what types of creatures would logically be present in the area (for examples see the Learning Beast Shapes tables in Xanathar's Guide to Everything, pages 24-26).
     </p>
     <p>
       At the end of the 8 hours, your animal companion appears and gains all the benefits of your Companion’s Bond ability. You can have
@@ -900,9 +690,6 @@
     <h4>Companion's Bond</h4>
     <p>
       Your animal companion gains a variety of benefits while it is linked to you.
-    </p>
-    <p>
-      The animal companion loses its Multiattack action, if it has one.
     </p>
     <p>
       The companion obeys your commands as best it can. It rolls for initiative like any other creature, but you determine its actions, decisions,
@@ -938,29 +725,10 @@
       Your companion shares your alignment, and has a personality trait and a flaw that you can roll for or select from the tables below. Your
       companion shares your ideal, and its bond is always, "The ranger who travels with me is a beloved companion for whom I would gladly give my life"
     </p>
-    <aside>
-      <h4>Why no Multiattack?</h4>
-      <p>
-        Multiattack is a useful design tool that keeps monsters simple for the DM. It provides a boost in offense, but that boost is meant to make a
-        beast threatening for one battle—a notion that doesn’t mesh well with a beast intended to fight with the party, rather than against it.
-        Project Multiattack across an entire adventure, and an animal companion runs the risk of outclassing the fighters and barbarians in the party.
-      </p>
-      <p>
-        So in story terms, your animal companion has traded in some of its ferocity (in the form of Multiattack) for better awareness and the ability to fight more
-        effectively in concert with you.
-      </p>
-    </aside>
-    <aside>
-      <h4>Expanding Companion Options</h4>
-      <p>
-        Depending on the nature of your campaign, the DM might choose to expand the options for your animal companion. As a rule of thumb, a beast can serve as an
-        animal companion if it is Medium or smaller, has 15 or fewer hit points, and cannot deal more than 8 damage with a single attack. In general, that applies to creatures
-        with a challenge rating of 1/4 or less, but there are exceptions.
-      </p>
-    </aside>
+
     <p>
-      Your animal companion gains the benefits of your Favored Enemy feature, and of your Greater Favored Enemy feature when you gain that feature at 6th level. It uses the favored
-      enemies you selected for those features.
+      Your animal companion gains the benefits of your Favored Enemy feature. It uses the favored
+      enemies you selected.
     </p>
     <table class="table table-striped">
       <thead>
@@ -1014,12 +782,6 @@
         <tr><td>6</td><td>I jump on creatures to tell them how much I love them.</td></tr>
       </tbody>
     </table>
-    <h4>Coordinated Attack</h4>
-    <p>
-      Beginning at 5th level, you and your animal companion form a more potent fighting team.
-      When you use the Attack action on your turn, if your companion can see you, it can use its
-      reaction to make a melee attack.
-    </p>
     <h4>Beast's Defense</h4>
     <p>
       At 7th level, while your companion can see you, it has advantage on all saving throws.
@@ -1034,73 +796,7 @@
       At 15th level, whenever an attacker that your companion can see hits it with an attack, it can use its reaction to halve the attack’s damage
       against it.
     </p>
-    <h3>Hunter Conclave</h3>
-    <p>
-      Some rangers seek to master weapons to better protect civilization from the terrors of the wilderness. Members of the Hunter Conclave
-      learn specialized fighting techniques for use against the most dire threats, from rampaging ogres and hordes of orcs to towering giants and
-      terrifying dragons.
-    </p>
-    <h4>Hunter's Prey</h4>
-    <p>
-      At 3rd level, you gain one of the following features of your choice.
-    </p>
-    <p>
-      <strong>Colossus Slayer.</strong> Your tenacity can wear down the most potent foes.  When you hit a creature with a weapon attack, the
-      creature takes an extra 1d8 damage if it is below its hit point maximum.  You can deal this extra damage only once per turn.
-    </p>
-    <p>
-      <strong>Giant Killer.</strong> When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your
-      reaction to attack that creature immediately after its attack, provided that you can see the creature.
-    </p>
-    <p>
-      <strong>Horde Breaker.</strong> Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon
-      against a different creature that is within 5 feet of the original target and within range of  your weapon.
-    </p>
-    <h4>Extra Attack</h4>
-    <p>
-      Beginning at 5th level, you can attack twice, instead of once, whenever you take the attack action on your turn.
-    </p>
-    <h4>Defensive Tactics</h4>
-    <p>
-      At 7th level, you gain one of the following features of your choice.
-    </p>
-    <p>
-      <strong>Escape the Horde.</strong> Opportunity attacks against you are made with disadvantage.
-    </p>
-    <p>
-      <strong>Multiattack defense.</strong> When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks
-      made by that creature for the rest of the turn.
-    </p>
-    <p>
-      <strong>Steel Will.</strong> You have advantage on saving throws against being frightened.
-    </p>
-    <h4>Multiattack</h4>
-    <p>
-      At 11th level, you gain one of the following features of your choice.
-    </p>
-    <p>
-      <strong>Volley.</strong> You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within
-      your weapons range.  You must have ammunition for each target, as normal, and you make a separate attack roll for each target.
-    </p>
-    <p>
-      <strong>Whirlwind Attack.</strong> You can use your action to make melee attacks against any number of creatures within 5 feet of you, with a separate
-      attack roll for each target.
-    </p>
-    <h4>Superior Hunter's Defense</h4>
-    <p>
-      At 15th level you gain one of the following features of your choice.
-    </p>
-    <p>
-      <strong>Evasion.</strong> When you are subjected to an effect, such as a red dragon's fiery breath or a lightning bolt spell, that allows you to make a
-      dexterity saving throw to take only half damage, you instead take no damage if you succeed on a saving throw, and only half damage if you fail.
-    </p>
-    <p>
-      <strong>Stand against the Tide.</strong> When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat
-      the same attack against another creature (other than itself) of your choice.
-    </p>
-    <p>
-      <strong>Uncanny Dodge.</strong> When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.
-    </p>
+
   </div>
   <div class="racediv" id="rogue">
     <h2>Rogue</h2>

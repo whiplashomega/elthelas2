@@ -178,7 +178,7 @@
                 <div class="row">
                   <div class="col-6">
                     <div class="charsheet-static center">
-                      AC<br />10
+                      AC<br />{{accalc()}}
                     </div>
                   </div>
                   <div class="col-6">
@@ -201,10 +201,41 @@
                 <div class="row">
                   <div class="col">
                     <div class="charsheet-static">
-                      <h4>Attacks</h4>
-                    </div>
-                    <div class="charsheet-static">
                       <h4>Armor</h4>
+                      <div class="smalltext" v-for="(armor, index) in character.armors" v-bind:key="index">
+                        {{ armor.name }}, {{armor.type}}, AC {{armor.ac}} <input type="checkbox" v-model="armor.equipped" />
+                        <button type="button" class="print-hide btn-symbol" @click="armor.edit = true">&#9998;</button>
+                        <b-modal v-model="armor.edit">
+                          Name:
+                          <input type="text" class="form-control" v-model="armor.name" />
+                          Type:
+                          <select v-model="armor.type" class="form-control">
+                            <option>Unarmored Bonus</option>
+                            <option>Light Armor</option>
+                            <option>Medium Armor</option>
+                            <option>Heavy Armor</option>
+                            <option>Shield</option>
+                          </select>
+                          AC:
+                          <input type="number" v-model="armor.ac" class="form-control" />
+                        </b-modal>
+                        <button type="button" @click="removeArmor(index)" class="print-hide btn btn-sm btn-danger">X</button>
+                      </div>
+                      <button type="button" @click="armormodal = true" class="btn btn-sm btn-primary">+</button>
+                      <b-modal v-model="armormodal" @ok="addArmor()">
+                        Name:
+                        <input type="text" class="form-control" v-model="newarmor.name" />
+                        Type:
+                        <select v-model="newarmor.type" class="form-control">
+                          <option>Unarmored Bonus</option>
+                          <option>Light Armor</option>
+                          <option>Medium Armor</option>
+                          <option>Heavy Armor</option>
+                          <option>Shield</option>
+                        </select>
+                        AC:
+                        <input type="number" v-model="newarmor.ac" class="form-control" />
+                      </b-modal>
                     </div>
                     <div class="charsheet-static">
                       <h4>Equipment</h4>
@@ -217,6 +248,84 @@
           <div class="col-5">
             <div class="row">
               <div class="col">
+                <div class="charsheet-static">
+                  <h4>Attacks</h4>
+                  <div v-for="(attack, index) in character.attacks" v-bind:key="index" class="smalltext">
+                    <strong>{{attack.name}}:</strong> {{attack.type}},
+                    range {{attack.range}},
+                    <span v-if="attack.bonus > -1">+</span>{{attack.bonus}} to hit
+                    ({{attack.damage}} {{attack.dtype}} damage).
+                    <button type="button" class="print-hide btn-symbol" @click="attack.edit = true">&#9998;</button>
+                    <b-modal v-model="attack.edit">
+                      Name:
+                      <input type="text" class="form-control" v-model="attack.name" />
+                      Bonus:
+                      <input type="number" class="form-control" v-model="attack.bonus" />
+                      Damage:
+                      <input type="text" class="form-control" v-model="attack.damage" />
+                      Range:
+                      <input type="text" class="form-control" v-model="attack.range" />
+                      Type:
+                      <select v-model="attack.type" class="form-control">
+                        <option>Melee Weapon Attack</option>
+                        <option>Ranged Weapon Attack</option>
+                        <option>Melee Spell Attack</option>
+                        <option>Ranged Spell Attack</option>
+                        <option>Unarmed Strike</option>
+                      </select>
+                      Damage Type:
+                      <select v-model="attack.dtype" class="form-control">
+                        <option>Bludgeoning</option>
+                        <option>Piercing</option>
+                        <option>Slashing</option>
+                        <option>Acid</option>
+                        <option>Cold</option>
+                        <option>Fire</option>
+                        <option>Force</option>
+                        <option>Lightning</option>
+                        <option>Necrotic</option>
+                        <option>Poison</option>
+                        <option>Radiant</option>
+                        <option>Thunder</option>
+                      </select>
+                    </b-modal>
+                    <button type="button" @click="removeAttack(index)" class="print-hide btn btn-sm btn-danger">X</button>
+                  </div>
+                  <button type="button" @click="attackmodal = true" class="print-hide btn btn-primary btn-sm">+</button>
+                  <b-modal v-model="attackmodal" title="Add Attack" @ok="addAttack()">
+                    Name:
+                    <input type="text" class="form-control" v-model="newattack.name" />
+                    Bonus:
+                    <input type="number" class="form-control" v-model="newattack.bonus" />
+                    Damage:
+                    <input type="text" class="form-control" v-model="newattack.damage" />
+                    Range:
+                    <input type="text" class="form-control" v-model="newattack.range" />
+                    Type:
+                    <select v-model="newattack.type" class="form-control">
+                      <option>Melee Weapon Attack</option>
+                      <option>Ranged Weapon Attack</option>
+                      <option>Melee Spell Attack</option>
+                      <option>Ranged Spell Attack</option>
+                      <option>Unarmed Strike</option>
+                    </select>
+                    Damage Type:
+                    <select v-model="newattack.dtype" class="form-control">
+                      <option>Bludgeoning</option>
+                      <option>Piercing</option>
+                      <option>Slashing</option>
+                      <option>Acid</option>
+                      <option>Cold</option>
+                      <option>Fire</option>
+                      <option>Force</option>
+                      <option>Lightning</option>
+                      <option>Necrotic</option>
+                      <option>Poison</option>
+                      <option>Radiant</option>
+                      <option>Thunder</option>
+                    </select>
+                  </b-modal>
+                </div>
                 <div class="charsheet-static">
                   Injuries
                   <input type="text" class="charsheet-text" />
@@ -231,6 +340,64 @@
                 </div>
                 <div class="charsheet-static">
                   Features
+                  {{log(typeof character.background) }}
+                  <p class="smalltext" v-if="typeof character.background === 'object'">
+                    <span  :title="character.background.feature.description">{{character.background.feature.name}}</span>
+                    <button class="btn btn-sm print-hide float-right" type="button" @click="setval(character.background.feature, 'show', true)"
+                      v-if="!character.background.feature.show">
+                      &#x25BC;
+                    </button>
+                    <button class="btn btn-sm print-hide float-right" type="button" @click="setval(character.background.feature, 'show', false)"
+                      v-if="character.background.feature.show">
+                      &#x25B2;
+                    </button>
+                    <span v-if="character.background.feature.show" v-html="$options.filters.marked(character.background.feature.description)"></span>
+                  </p>
+                  <div  v-for="(trait, index) in character.race.traits" class="smalltext" v-bind:key="index">
+                    <p v-if="typeof trait === 'string'" v-html="$options.filters.marked(trait)">
+                    </p>
+                    <p v-else>
+                      <span :title="trait.description">{{trait.name}}</span>
+                    <button class="btn btn-sm print-hide float-right" type="button" @click="setval(trait, 'show', true)"
+                      v-if="!trait.show">
+                      &#x25BC;
+                    </button>
+                    <button class="btn btn-sm print-hide float-right" type="button" @click="setval(trait, 'show', false)"
+                      v-if="trait.show">
+                      &#x25B2;
+                    </button>
+                    <span v-if="trait.show" v-html="$options.filters.marked(trait.description)"></span>
+                    </p>
+                  </div>
+                  <div class="smalltext" v-for="charclass in character.charclasses" v-bind:key="charclass.thisclass.name">
+                    <p v-for="feature in charclass.thisclass.features" v-bind:key="feature.name" v-if="feature.level <= charclass.level">
+                      <span :title="feature.description">{{feature.name}}</span>
+                      <button class="btn btn-sm print-hide float-right" type="button" @click="setval(feature, 'show', true)"
+                        v-if="!feature.show">
+                        &#x25BC;
+                      </button>
+                      <button class="btn btn-sm print-hide float-right" type="button" @click="setval(feature, 'show', false)"
+                        v-if="feature.show">
+                        &#x25B2;
+                      </button>
+                      <span v-if="feature.show" v-html="$options.filters.marked(feature.description)"></span>
+                    </p>
+                    <div v-for="feature in charclass.selsubclass.features" v-bind:key="feature.name">
+                      <p v-if="feature.level <= charclass.level">
+                        <span :title="feature.description">{{feature.name}}</span>
+                        <button class="btn btn-sm print-hide float-right" type="button" @click="setval(feature, 'show', true)"
+                          v-if="!feature.show">
+                          &#x25BC;
+                        </button>
+                        <button class="btn btn-sm print-hide float-right" type="button" @click="setval(feature, 'show', false)"
+                          v-if="feature.show">
+                          &#x25B2;
+                        </button>
+                        <span v-if="feature.show" v-html="$options.filters.marked(feature.description)"></span>
+                      </p>
+                    </div>
+                  </div>
+                  <p>&nbsp;</p>
                 </div>
               </div>
             </div>

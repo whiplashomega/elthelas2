@@ -14,12 +14,12 @@
     {
       "level": 1,
       "name": "Favored Enemy",
-      "description": "Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy commonly encountered in the wilds.\n\nChoose a type of favored enemy: beasts, fey, two races of humanoids, monstrosities, or undead. You gain a +2 bonus to damage rolls with weapon attacks against creatures of the chosen type. Additionally, you have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.\n\nWhen you gain this feature, you also learn one language of your choice, typically one spoken by your favored enemy or creatures associated with it. However, you are free to pick any language you wish to learn."
+      "description": "Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy commonly encountered in the wilds.\n\nChoose a type of favored enemy: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead. You gain a +2 bonus to damage rolls with weapon attacks against creatures of the chosen type. Additionally, you have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.\n\nWhen you gain this feature, you also learn one language of your choice, typically one spoken by your favored enemy or creatures associated with it. However, you are free to pick any language you wish to learn.\n\nYou choose one additional favored enemy, as well as an additional language, at 6th level and 14th level, and the damage you do to your favored enemies increases to +4 at 6th level, and +6 at 14th level."
     },
     {
       "level": 1,
-      "name": "Primeval Awareness",
-      "description": "Your mastery of ranger lore allows you to establish a powerful link to beasts and to the land around you.\n\nYou have an innate ability to communicate with beasts, and they recognize you as a kindred spirit. Through sounds and gestures, you can communicate simple ideas to a beast as an action, and can read its basic mood and intent. You learn its emotional state, whether it is affected by magic of any sort, its short-term needs (such as food or safety), and actions you can take (if any) to persuade it to not attack.\n\nYou cannot use this ability against a creature that you have attacked within the past 10 minutes.\n\nAdditionally, you can attune your senses to determine if any of your favored enemies lurk nearby. By spending an action in concentration (as if you were concentrating on a spell), you can sense whether any of your favored enemies are present within 120 ft of you. This feature reveals which of your favored enemies are present, and the creatures’ general direction and distance from you, but not their numbers or other attributes.\n\nIf there are multiple groups of your favored enemies within range, you learn this information for each group."
+      "name": "Natural Explorer",
+      "description": "By the time you reach 3rd level you have become a master of navigating the natural world, and you react with swift and decisive action when attacked. This grants you the following benefits:\n\n* You have advantage on initiative rolls.\n\nIn addition you are skilled at navigating the wilderness. You gain the following benefits when traveling for an hour or more:\n\n* Difficult terrain doesn't slow your groups travel.\n* Your group can't become lost except by magical means.\n* Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.\n* If you are traveling alone, you can move stealthily at a normal pace.\n* When you forage, you find twice as much food as you normally would.\n* While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area."
     },
     {
       "level": 2,
@@ -33,13 +33,13 @@
     },
     {
       "level": 3,
-      "name": "Natural Explorer",
-      "description": "By the time you reach 3rd level you have become a master of navigating the natural world, and you react with swift and decisive action when attacked. This grants you the following benefits:\n\n* You ignore difficult terrain.\n* You have advantage on initiative rolls.\n\nIn addition you are skilled at navigating the wilderness. You gain the following benefits when traveling for an hour or more:\n\n* Difficult terrain doesn't slow your groups travel.\n* Your group can't become lost except by magical means.\n* Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.\n* If you are traveling alone, you can move stealthily at a normal pace.\n* When you forage, you find twice as much food as you normally would.\n* While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area."
+      "name": "Ranger Archetype",
+      "description": "At 3rd level, you choose an archetype that you strive to emulate: Hunter or Beast Master, both detailed at the end o f the class description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level."
     },
     {
       "level": 3,
-      "name": "Ranger Conclave",
-      "description": "At 3rd level, you choose to emulate the ideals and training of a ranger conclave: the Beast Conclave, the Hunter Conclave, or the Stalker Conclave, all detailed at the end of the class description. Your choice grants you features at 3rd level and again at 5th, 7th, 11th, and 15th level."
+      "name": "Primeval Awareness",
+      "description": "Beginning at 3rd level, you can use your action and to focus your awareness on the region around you. For 1 minute you can sense whether the following types of creatures are present within 1 mile of you: aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn’t reveal the creatures location or number. If at least one of the creatures is within 60 feet of you this ability reveals the location of the nearest creature."
     },
     {
       "level": 4,
@@ -47,24 +47,19 @@
       "description": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
     },
     {
-      "level": 6,
-      "name": "Greater Favored Enemy",
-      "description": "At 6th level, you are ready to hunt even deadlier game. Choose a type of greater favored enemy: aberrations, celestials, constructs, dragons, elementals, fiends, or giants. You gain all the benefits against this chosen enemy that you normally gain against your favored enemy, including an additional language. Your bonus to damage rolls against all your favored enemies increases to +4.\n\nAdditionally, you have advantage on saving throws against the spells and abilities used by a greater favored enemy."
+      "level": 5,
+      "name": "Extra Attack",
+      "description": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
     },
     {
-      "level": 9,
-      "name": "Fleet of Foot",
-      "description": "Beginning at 9th level, you can use the Dash action as a bonus action on your turn."
+      "level": 8,
+      "name": "Land's Stride",
+      "description": "Starting at 8th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.\n\nIn addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell."
     },
     {
       "level": 10,
       "name": "Hide in Plain Sight",
       "description": "Starting at 10th level, you can remain perfectly still for long periods of time to set up ambushes.\n\nWhen you attempt to hide on your turn, you can opt to not move on that turn. If you avoid moving, creatures that attempt to detect you take a −5 penalty to their Wisdom (Perception) checks until the start of your next turn. You lose this benefit if you move or fall prone, either voluntarily or because of some external effect. You are still automatically detected if any effect or action causes you to no longer be hidden.\n\nIf you are still hidden on your next turn, you can continue to remain motionless and gain this benefit until you are detected."
-    },
-    {
-      "level": 13,
-      "name": "Improved Natural Explorer",
-      "description": "Starting at 13th level, on your first turn during combat, you have advantage on attack rolls against creatures that have not yet acted."
     },
     {
       "level": 14,
@@ -84,18 +79,13 @@
   ],
   "subclass": [
     {
-      "name": "Beast Conclave",
+      "name": "Beast Master",
       "castermult": 0.5,
       "features": [
         {
           "level": 3,
           "name": "Animal Companion",
-          "description": "At 3rd level, you learn to use your magic to create a powerful bond with a creature of the natural world.\n\nWith 8 hours of work and the expenditure of 50 gp worth of rare herbs and fine food, you call forth an animal from the wilderness to serve as your faithful companion. You normally select your companion from among the following animals: an ape, a black bear, a boar, a giant badger, a giant weasel, a mule, a panther, or a wolf. However, your DM might pick one of these animals for you, based on the surrounding terrain and on what types of creatures would logically be present in the area.\n\nAt the end of the 8 hours, your animal companion appears and gains all the benefits of your Companion’s Bond ability. You can have only one animal companion at a time.\n\nIf your animal companion is ever slain, the magical bond you share allows you to return it to life. With 8 hours of work and the expenditure of 25 gp worth of rare herbs and fine food, you call forth your companion’s spirit and use your magic to create a new body for it. You can return an animal companion to life in this manner even if you do not possess any part of its body.\n\nIf you use this ability to return a former animal companion to life while you have a current animal companion, your current companion leaves you and is replaced by the restored companion.\n\n#### Companion's Bond\n\nYour animal companion gains a variety of benefits while it is linked to you.\n\nThe animal companion loses its Multiattack action, if it has one.\n\nThe companion obeys your commands as best it can. It rolls for initiative like any other creature, but you determine its actions, decisions, attitudes, and so on. If you are incapacitated or absent, your companion acts on its own.\n\nWhen using your Natural Explorer feature, you and your animal companion can both move stealthily at a normal pace.\n\n#### Keeping Track of Proficiency\n\nWhen you gain your animal companion at 3rd level, its proficiency bonus matches yours at +2. As you gain levels and increase your proficiency bonus, remember that your companion’s proficiency bonus improves as well, and is applied to the following areas: Armor Class, skills, saving throws, attack bonus, and damage rolls.\n\nYour animal companion has abilities and game statistics determined in part by your level. Your companion uses your proficiency bonus rather than its own. In addition to the areas where it normally uses its proficiency bonus, an animal companion also adds its proficiency bonus to its AC and to its damage rolls.\n\nYour animal companion gains proficiency in two skills of your choice. It also becomes proficient with all saving throws.\n\nFor each level you gain after 3rd, your animal companion gains an additional hit die and increases its hit points accordingly.\n\nWhenever you gain the Ability Score Improvement class feature, your companion’s abilities also improve. Your companion can increase one ability score of your choice by 2, or it can increase two ability scores of your choice by 1. As normal, your companion can’t increase an ability score above 20 using this feature unless its description specifies otherwise.\n\nYour companion shares your alignment, and has a personality trait and a flaw that you can roll for or select from the tables below. Your companion shares your ideal, and its bond is always, \"The ranger who travels with me is a beloved companion for whom I would gladly give my life.\"\n\n#### Why no Multiattack?\n\nMultiattack is a useful design tool that keeps monsters simple for the DM. It provides a boost in offense, but that boost is meant to make a beast threatening for one battle—a notion that doesn’t mesh well with a beast intended to fight with the party, rather than against it. Project Multiattack across an entire adventure, and an animal companion runs the risk of outclassing the fighters and barbarians in the party.\n\nSo in story terms, your animal companion has traded in some of its ferocity (in the form of Multiattack) for better awareness and the ability to fight more effectively in concert with you.\n\n#### Expanding Companion Options\n\nDepending on the nature of your campaign, the DM might choose to expand the options for your animal companion. As a rule of thumb, a beast can serve as an animal companion if it is Medium or smaller, has 15 or fewer hit points, and cannot deal more than 8 damage with a single attack. In general, that applies to creatures with a challenge rating of 1/4 or less, but there are exceptions.\n\nYour animal companion gains the benefits of your Favored Enemy feature, and of your Greater Favored Enemy feature when you gain that feature at 6th level. It uses the favored enemies you selected for those features."
-        },
-        {
-          "level": 5,
-          "name": "Coordinated Attack",
-          "description": "Beginning at 5th level, you and your animal companion form a more potent fighting team. When you use the Attack action on your turn, if your companion can see you, it can use its reaction to make a melee attack."
+          "description": "At 3rd level, you learn to use your magic to create a powerful bond with a creature of the natural world.\n\nWith 8 hours of work and the expenditure of 50 gp worth of rare herbs and fine food, you call forth an animal from the wilderness to serve as your faithful companion. You can select any beast of cr 1/2 or less that could reasonably appear in the area you are in, see the . However, your DM might pick one of these animals for you, based on the surrounding terrain and on what types of creatures would logically be present in the area (for examples see the Learning Beast Shapes tables in Xanathar's Guide to Everything, pages 24-26).\n\nAt the end of the 8 hours, your animal companion appears and gains all the benefits of your Companion’s Bond ability. You can have only one animal companion at a time.\n\nIf your animal companion is ever slain, the magical bond you share allows you to return it to life. With 8 hours of work and the expenditure of 25 gp worth of rare herbs and fine food, you call forth your companion’s spirit and use your magic to create a new body for it. You can return an animal companion to life in this manner even if you do not possess any part of its body.\n\nIf you use this ability to return a former animal companion to life while you have a current animal companion, your current companion leaves you and is replaced by the restored companion.\n\n#### Companion's Bond\n\nYour animal companion gains a variety of benefits while it is linked to you.\n\nThe companion obeys your commands as best it can. It rolls for initiative like any other creature, but you determine its actions, decisions, attitudes, and so on. If you are incapacitated or absent, your companion acts on its own.\n\nWhen using your Natural Explorer feature, you and your animal companion can both move stealthily at a normal pace.\n\n#### Keeping Track of Proficiency\n\nWhen you gain your animal companion at 3rd level, its proficiency bonus matches yours at +2. As you gain levels and increase your proficiency bonus, remember that your companion’s proficiency bonus improves as well, and is applied to the following areas: Armor Class, skills, saving throws, attack bonus, and damage rolls.\n\nYour animal companion has abilities and game statistics determined in part by your level. Your companion uses your proficiency bonus rather than its own. In addition to the areas where it normally uses its proficiency bonus, an animal companion also adds its proficiency bonus to its AC and to its damage rolls.\n\nYour animal companion gains proficiency in two skills of your choice. It also becomes proficient with all saving throws.\n\nFor each level you gain after 3rd, your animal companion gains an additional hit die and increases its hit points accordingly.\n\nWhenever you gain the Ability Score Improvement class feature, your companion’s abilities also improve. Your companion can increase one ability score of your choice by 2, or it can increase two ability scores of your choice by 1. As normal, your companion can’t increase an ability score above 20 using this feature unless its description specifies otherwise.\n\nYour companion shares your alignment, and has a personality trait and a flaw that you can roll for or select from the tables below. Your companion shares your ideal, and its bond is always, \"The ranger who travels with me is a beloved companion for whom I would gladly give my life.\n\nYour animal companion gains the benefits of your Favored Enemy feature. It uses the favored enemies you selected."
         },
         {
           "level": 7,
@@ -124,11 +114,6 @@
           "description": "At 3rd level, you gain one of the following features of your choice.\n\n**Colossus Slayer.** Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it is below its hit point maximum. You can deal this extra damage only once per turn.\n\n**Giant Killer.\n\n When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.\n\n**Horde Breaker.** Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon."
         },
         {
-          "level": 5,
-          "name": "Extra Attack",
-          "description": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the attack action on your turn."
-        },
-        {
           "level": 7,
           "name": "Defensive Tactics",
           "description": "At 7th level, you gain one of the following features of your choice.\n\n**Escape the Horde.** Opportunity attacks against you are made with disadvantage.\n\n**Multiattack defense.** When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.\n\n**Steel Will.** You have advantage on saving throws against being frightened."
@@ -142,6 +127,114 @@
           "level": 15,
           "name": "Superior Hunter's Defense",
           "description": "At 15th level you gain one of the following features of your choice.\n\n**Evasion.** When you are subjected to an effect, such as a red dragon's fiery breath or a lightning bolt spell, that allows you to make a dexterity saving throw to take only half damage, you instead take no damage if you succeed on a saving throw, and only half damage if you fail.\n\n**Stand against the Tide.** When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice.\n\n**Uncanny Dodge.** When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you."
+        }
+      ]
+    },
+    {
+      "name": "Gloom Stalker",
+      "castermult": 0.5,
+      "features": [
+        {
+          "level": 3,
+          "name": "Gloom Stalker Magic",
+          "description": "Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Gloom Stalker Spells table. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.\n\n*3rd - disguise self\n*5th - rope trick\n*9th - fear\n*13th - greater invisibility\n*seeming"
+        },
+        {
+          "level": 3,
+          "name": "Dread Ambusher",
+          "description": "At 3rd level, you master the art of the ambush. You can give yourself a bonus to your initiative rolls equal to your Wisdom modifier.\n\nAt the start of your first turn Of each combat, your walking speed increases by 10 feet, which lasts until the end of that turn. If you take the Attack action on that turn, you can make one additional weapon attack as part of that action. If that attack hits, the target takes an extra 1d8 damage of the weapons damage type."
+        },
+        {
+          "level": 3,
+          "name": "Umbral Sight",
+          "description": "At 3rd level, you gain darkvision out to a range of 60' feet. If you already have darkvision from your race, its range increases by 30 feet.\n\nYou are also adept at evading creatures that rely on darkvision. While in darkness, you are invisible to any creature that relies on darkvision to see you in that darkness."
+        },
+        {
+          "level": 7,
+          "name": "Iron Mind",
+          "description": "By 7th level, you have honed your ability to resist the mind—altering powers of your prey. You gain proficiency in Wisdom saving throws. If you already have this proficiency, you instead gain proficiency in Intelligence or Charisma saving throws (your choice)."
+        },
+        {
+          "level": 11,
+          "name": "Stalker's Flurry",
+          "description": "At 11th level, you learn to attack with such unexpected speed that you can turn a miss into another strike. Once on each of your turns when you miss with a weapon attack, you can make another weapon attack as part of the same action."
+        },
+        {
+          "level": 15,
+          "name": "Shadowy Dodge",
+          "description": "Starting at 15th level, you can dodge in unforeseen ways, with wisps of supernatural shadow around you. Whenever a creature makes an attack roll against you and doesn’t have advantage on the roll, you can use your reaction to impose disadvantage on it. You must use this feature before you know the outcome of the attack roll."
+        }
+      ]
+    },
+    {
+      "name": "Horizon Walker",
+      "castermult": 0.5,
+      "features": [
+        {
+          "level": 3,
+          "name": "Horizon Walker Magic",
+          "description": "Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Horizon Walker Spells table. The spell counts as a ranger spell for you, but it doesn’t count against the number of ranger spells you know.\n\n*3rd - protection from evil and good\n*5th - misty step\n*9th - haste\n*13th - banishment\n*17th - teleportation circle"
+        },
+        {
+          "level": 3,
+          "name": "Detect Portal",
+          "description": "At 3rd level, you gain the ability to magically sense the presence of a planar portal. As an action, you detect the distance and direction to the closest planar portal within 1 mile of you.\n\nOnce you use this feature, you can’t use it again until you finish a short or long rest.\n\nSee the “Planar Travel” section in chapter 2 of the Dungeon Master’s Guide for examples of planar portals."
+        },
+        {
+          "level": 3,
+          "name": "Planar Warrior",
+          "description": "At 3rd level, you learn to draw on the energy of the multiverse to augment your attacks.\n\nAs a bonus action, choose one creature you can see within 30 feet of you. The next time you hit that creature on this turn with a weapon attack, all damage dealt by the attack becomes force damage, and the creature takes an extra 1d8 force damage from the attack. When you reach 11th level in this class, the extra damage increases to 2d8."
+        },
+        {
+          "level": 7,
+          "name": "Ethereal Step",
+          "description": "At 7th level, you learn to step through the Ethereal Plane. As a bonus action, you can cast the etherealness spell with this feature, without expending a spell slot, but the spell ends at the end of the current turn.\n\nOnce you use this feature, you can’t use it again until you finish a short or long rest."
+        },
+        {
+          "level": 11,
+          "name": "Distant Strike",
+          "description": "At 11th level, you gain the ability to pass between the planes in the blink of an eye. When you take the Attack action, you can teleport up to 10 feet before each attack to an unoccupied space you can see.\n\nIf you attack at least two different creatures with the action, you can make one additional attack with it against a third creature."
+        },
+        {
+          "level": 15,
+          "name": "Spectral Defense",
+          "description": "At 15th level, your ability to move between planes enables you to slip through the planar boundaries to lessen the harm done to you during battle. When you take damage from an attack, you can use your reaction to give yourself resistance to all of that attack’s damage on this turn."
+        }
+      ]
+    },
+    {
+      "name": "Monster Slayer",
+      "castermult": 0.5,
+      "features": [
+        {
+          "level": 3,
+          "name": "Monster Slayer Magic",
+          "description": "Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Monster Slayer Spells table. The spell counts as a ranger spell for you, but it doesn’t count against the number of ranger spells you know.\n\n*3rd - protection from evil and good\n*5th - zone of truth\n*9th - magic circle\n*13th - banishment\n*17th - hold monster"
+        },
+        {
+          "level": 3,
+          "name": "Hunter's Sense",
+          "description": "At 3rd level, you gain the ability to peer at a creature and magically discern how best to hurt it. As an action, choose one creature you can see within 60 feet of you. You immediately learn whether the creature has any damage immunities, resistances, or vulnerabilities and what they are. If the creature is hidden from divination magic, you sense that it has no damage immunities, resistances, or vulnerabilities.\n\nYou can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses of it when you finish a long rest."
+        },
+        {
+          "level": 3,
+          "name": "Slayer's Prey",
+          "description": "Starting at 3rd level, you can focus your ire on one foe, increasing the harm you inflict on it. As a bonus action, you designate one creature you can see within 60 feet of you as the target of this feature. The first time each turn that you hit that target with a weapon attack, it takes an extra 1d6 damage from the weapon.\n\nThis benefit lasts until you finish a short or long rest. It ends early if you designate a different creature."
+        },
+        {
+          "level": 7,
+          "name": "Supernatural Defense",
+          "description": "At 7th level, you gain extra resilience against your prey’s assaults on your mind and body. Whenever the target of your Slayer’s Prey forces you to make a saving throw and whenever you make an ability check to escape that targets grapple, add 1d6 to your roll."
+        },
+        {
+          "level": 11,
+          "name": "Magic-User's Nemesis",
+          "description": "At 11th level, you gain the ability to thwart someone else’s magic. When you see a creature casting a spell or teleporting within 60 feet of you, you can use your reaction to try to magically foil it. The creature must succeed on a Wisdom saving throw against your spell save DC, or its spell or teleport fails and is wasted.\n\nOnce you use this feature, you can’t use it again until you finish a short or long rest."
+        },
+        {
+          "level": 15,
+          "name": "Slayer's Counter",
+          "description": "At 15th level, you gain the ability to counterattack when your prey tries to sabotage you. If the target of your Slayer’s Prey forces you to make a saving throw, you can use your reaction to make one weapon attack against the quarry. You make this attack immediately before making the saving throw. If your attack hits, your save automatically succeeds, in addition to the attack’s normal effects."
         }
       ]
     }

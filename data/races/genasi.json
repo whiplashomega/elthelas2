@@ -4,8 +4,8 @@
   "singular": "Genasi",
   "description": "",
   "traits": [
-    "Size. Genasi are as varied as their mortal parents but are generally built like humans, standing anywhere from 5 feet to over 6 feet tall. Your size is Medium.",
-    "Speed. Your base walking speed is 30 feet."
+    { "name": "Size", "description": "Genasi are as varied as their mortal parents but are generally built like humans, standing anywhere from 5 feet to over 6 feet tall. Your size is Medium." },
+    { "name": "Speed", "description": "Your base walking speed is 30 feet." }
   ],
   "agepoints": {
     "puberty": 14,
@@ -24,9 +24,9 @@
       "image": "/static/images/races/airgenasi.jpg",
       "description": "",
       "traits": [
-        "Your Constitution score increases by 2 and your Dexterity score increases by 1.",
-        "Unending Breath. You can hold your breath indefinitely while you’re not incapacitated.",
-        "Mingle with the Wind. You can cast the levitate spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell."
+        { "name": "Ability Score Increase", "description": "Your Constitution score increases by 2 and your Dexterity score increases by 1." },
+        { "name": "Unending Breath", "description": "You can hold your breath indefinitely while you’re not incapacitated." },
+        { "name": "Mingle with the Wind", "description": "You can cast the levitate spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell." }
       ],
       "averageheight": 67,
       "baseheight": 56,
@@ -44,9 +44,9 @@
       "image": "/static/images/races/earthgenasi.jpg",
       "description": "",
       "traits": [
-        "Your Constitution score increases by 2 and your Strength score increases by 1.",
-        "Earth Walk. You can move across difficult terrain made of earth or stone without expending extra movement.",
-        "Merge with Stone. You can cast the pass without trace spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell."
+        { "name": "Ability Score Increase", "description": "Your Constitution score increases by 2 and your Strength score increases by 1." },
+        { "name": "Earth Walk", "description": "You can move across difficult terrain made of earth or stone without expending extra movement." },
+        { "name": "Merge with Stone", "description": "You can cast the pass without trace spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell." }
       ],
       "averageheight": 67,
       "baseheight": 56,
@@ -64,10 +64,10 @@
       "image": "/static/images/races/firegenasi.jpg",
       "description": "",
       "traits": [
-        "Your Constitution score increases by 2 and your Intelligence score increases by 1.",
-        "Darkvision. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. Your ties to the Elemental Plane of Fire make your darkvision unusual: everything you see in darkness is in a shade of red.",
-        "Fire Resistance. You have resistance to fire damage.",
-        "Reach to the Blaze. You know the produce flame cantrip. Once you reach 3rd level, you can cast the burning hands spell once with this trait as a 1st-level spell, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells."
+        { "name": "Ability Score Increase", "description": "Your Constitution score increases by 2 and your Intelligence score increases by 1." },
+        { "name": "Darkvision", "description": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. Your ties to the Elemental Plane of Fire make your darkvision unusual: everything you see in darkness is in a shade of red." },
+        { "name": "Fire Resistance", "description": "You have resistance to fire damage." },
+        { "name": "Reach to the Blaze", "description": "You know the produce flame cantrip. Once you reach 3rd level, you can cast the burning hands spell once with this trait as a 1st-level spell, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells." }
       ],
       "averageheight": 67,
       "baseheight": 58,
@@ -85,11 +85,11 @@
       "image": "/static/images/races/watergenasi.jpg",
       "description": "",
       "traits": [
-        "Your Constitution score increases by 2 and your Wisdom score increases by 1.",
-        "Acid Resistance. You have resistance to acid damage.",
-        "Amphibious. You can breathe air and water.",
-        "Swim. You have a swimming speed of 30 feet.",
-        "Call to the Wave. You know the shape water cantrip (see chapter 2). When you reach 3rd level, you can cast the create or destroy water spell as a 2nd-level spell once with this trait, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells."
+        { "name": "Ability Score Increase", "description": "Your Constitution score increases by 2 and your Wisdom score increases by 1." },
+        { "name": "Acid Resistance", "description": "You have resistance to acid damage." },
+        { "name": "Amphibious", "description": "You can breathe air and water." },
+        { "name": "Swim", "description": "You have a swimming speed of 30 feet" },
+        { "name": "Call to the Wave", "description": "You know the shape water cantrip (see chapter 2). When you reach 3rd level, you can cast the create or destroy water spell as a 2nd-level spell once with this trait, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells." }
       ],
       "averageheight": 67,
       "baseheight": 56,

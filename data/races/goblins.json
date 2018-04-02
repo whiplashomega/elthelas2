@@ -4,12 +4,12 @@
   "singular": "Goblin",
   "description": "Goblins are small gangly humanoids between 3-3 1/2 feet of height, they have skin ranging in color from an olive brown to a verdant green, smashed upturned noses, and large ears similar to those of elves. Their limbs, particularly their arms, are long compared to their torso, and they often grow large amounts of body hair. Most Goblins in the world are tribal, cruel, and generally bullies wherever they can be. Nevertheless most goblins live their lives as slaves to orcs and hobgoblins. Goblins are unusually strong for their size, having about the strength of the average adult human in a body less than half that size. Their small size and gangly form makes them very nimble as well, nevertheless they are typically considered ugly and have a perpetually sour disposition.\n\n#### Goblin Culture in Elthelas\n\n Goblin's cruel nature is not a true genetic trait, but is rather the result of generations of racial resentment resulting from their perpetual slavery. Goblin's exposed to a life of freedom often are able to avoid that trap. Their cowardice is likewise typically a result of being the smallest creature in the room. Within the slave huts, the goblins have invented their own voodoo religion, and invented forms of music and art that cannot be stolen away by their captors, such as elaborate tatoos and multi-part acapella harmonies. Meanwhile tales of a prophesied goblin savior, who would free their people from their captivity, circulate regularly among the slave huts, despite the best attempts by the orcs to stamp them out.",
   "traits": [
-    "Ability Score Increase: Your dexterity increases by 2 and your constitution score increases by 1.",
-    "Size: Goblins are between 3 and 4 feet tall and weight between 70 and 90 lbs. Your size is Small.",
-    "Speed: Your base walking speed is 30 feet.",
-    "Darkvision: You can see in dim light for 60 feet in front of you as if it were bright light, and in darkness as if it were dim light. You cannot see color in darkness, only shades of gray.",
-    "Nimble Escape: The goblin can take the Disengage or Hide action as a bonus action on each of its turns.",
-    "Fury of the Small: When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature.  The extra damage equals your level.  Once you use this trait, you can't use it again until you finish a short or long rest."
+    { "name": "Ability Score Increase", "description": "Your dexterity increases by 2 and your constitution score increases by 1." },
+    { "name": "Size", "description": "Goblins are between 3 and 4 feet tall and weight between 70 and 90 lbs. Your size is Small." },
+    { "name": "Speed", "description": "Your base walking speed is 30 feet." },
+    { "name": "Darkvision", "description": "You can see in dim light for 60 feet in front of you as if it were bright light, and in darkness as if it were dim light. You cannot see color in darkness, only shades of gray." },
+    { "name": "Nimble Escape", "description": "The goblin can take the Disengage or Hide action as a bonus action on each of its turns." },
+    { "name": "Fury of the Small", "description": "When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature.  The extra damage equals your level.  Once you use this trait, you can't use it again until you finish a short or long rest." }
   ],
   "agepoints": {
     "puberty": 8,

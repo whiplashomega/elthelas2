@@ -43,124 +43,196 @@
  }
   ],
   "subclass": [
- {
-   "name": "Draconic Bloodline",
-   "castermult": 1,
-   "features": [
-  {
- "level": 1,
- "name": "Dragon Ancestor",
- "description": "At 1st level, you choose one type of dragon as your ancestor. The damage type associated with each dragon is used by features you gain later.\n\nYou can speak, read, and write Draconic. Additionally, whenever you make a Charisma check when interacting with dragons, your proficiency bonus is doubled if it applies to the check."
-  },
-  {
- "level": 1,
- "name": "Draconic Resilience",
- "description": "As magic flows through your body, it causes physical traits of your dragon ancestors to emerge. At 1st level, your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class.\n\nAdditionally, parts of your skin are covered by a thin sheen of dragon-like scales. When you aren’t wearing armor, your AC equals 13 + your Dexterity modifier."
-  },
-  {
- "level": 6,
- "name": "Elemental Affinity",
- "description": "Starting at 6th level, when you cast a spell that deals damage of the type associated with your draconic ancestry, add your Charisma modifier to that damage.\n\nAt the same time, you can spend 1 sorcery point to gain resistance to that damage type for 1 hour."
-  },
-  {
- "level": 14,
- "name": "Dragon Wings",
- "description": "At 14th level, you gain the ability to sprout a pair of dragon wings from your back, gaining a flying speed equal to your current speed. You can create these wings as a bonus action on your turn. They last until you dismiss them as a bonus action on your turn.\n\nYou can’t manifest your wings while wearing armor unless the armor is made to accommodate them, and clothing not made to accommodate your wings might be destroyed when you manifest them."
-  },
-  {
- "level": 18,
- "name": "Draconic Presence",
- "description": "Beginning at 18th level, you can channel the dread presence of your dragon ancestor, causing those around you to become awestruck or frightened. As an action, you can spend 5 sorcery points to draw on this power and exude an aura of awe or fear (your choice) to a distance o f 60 feet. For 1 minute or until you lose your concentration (as if you w ere casting a concentration spell), each hostile creature that starts its turn in this aura must succeed on a Wisdom saving throw or be charmed (if you chose awe) or frightened (if you chose fear) until the aura ends. A creature that succeeds on this saving throw is immune to your aura for 24 hours."
-  }
-   ]
- },
- {
-   "name": "Wild Magic",
-   "castermult": 1,
-   "features": [
-  {
- "level": 1,
- "name": "Wild Magic Surge",
- "description": "Starting when you choose this origin at 1st level, your spellcasting can unleash surges of untamed magic. Immediately after you cast a sorcerer spell of 1st level or higher, the DM can have you roll a d20. If you roll a 1, roll on the Wild Magic Surge table to create a random magical effect."   
-  },
-  {
- "level": 1,
- "name": "Tides of Chaos",
- "description": "Starting at 1st level, you can manipulate the forces of chance and chaos to gain advantage on one attack roll, ability check, or saving throw. Once you do so, you must finish a long rest before you can use this feature again. Any time before you regain the use of this feature, the DM can have you roll on the W ild Magic Surge table immediately after you cast a sorcerer spell of 1st level or higher. You then regain the use of this feature"
-  },
-  {
- "level": 6,
- "name": "Bend Luck",
- "description": "Starting at 6th level, you have the ability to twist fate using your wild magic. W hen another creature you can see makes an attack roll, an ability check, or a saving throw, you can use your reaction and spend 2 sorcery points to roll 1d4 and apply the number rolled as a bonus or penalty (your choice) to the creature’s roll. You can do so after the creature rolls but before any effects of the roll occur."
-  },
-  {
- "level": 14,
- "name": "Controlled Chaos",
- "description": "At 14th level, you gain a m odicum of control over the surges of your wild magic. W henever you roll on the Wild Magic Surge table, you can roll twice and use either number."
-  },
-  {
- "level": 18,
- "name": "Spell Bombardment",
- "description": "Beginning at 18th level, the harmful energy of your spells intensifies. W hen you roll damage for a spell and roll the highest number possible on any of the dice, choose one of those dice, roll it again and add that roll to the damage. You can use the feature only once per turn."
-  }
-   ]
- },
- {
-   "name": "Favored Soul",
-   "castermult": 1,
-   "features": [
-  {
- "level": 1,
- "name": "Divine Magic",
- "description": "Your link to the divine allows you to learn spells normally associated with the cleric class. When your Spellcasting feature lets you learn a sorcerer cantrip or a sorcerer spell of 1st level or higher, you can choose the new spell from the cleric spell list in addition to the sorcerer spell list. You must otherwise obey all restrictions for selecting the spell, and it becomes a sorcerer spell for you.\n\nYou also learn the cure wounds spell, which doesn't count against your number of sorcerer spells known."
-  },
-  {
- "level": 1,
- "name": "Favored by the Gods",
- "description": "Starting at 1st level, divine power guards your destiny.  If you fail a saving throw or miss with an attack roll, you can roll 2d4 and add it to the total, possibly changing the outcome.\n\nOnce you use this feature, you can't use it again until you finish a short or long rest."
-  },
-  {
- "level": 6,
- "name": "Empowered Healing",
- "description": "Starting at 6th level, the celestial energy coursing through you can empower your healing magic. Whenever you roll dice to determine the number of hit points a sorcerer spell of yours restores, you can spend 1 sorcery point to reroll any number of those dice once."
-  },
-  {
- "level": 14,
- "name": "Angelic Form",
- "description": "At 14th level, your divine essence causes you to undergo a minor physical transformation. Your appearance takes on an otherworldly version of one of the following qualities (your choice): beautiful, youthful, kind, or imposing.\n\nIn addition, as a bonus action, you can manifest a pair of spectral wings frmom your back. The wings last until you're incapacitated or you dismiss them as a bonus action. While the wings are present, you have a flying speed of 30 feet."
-  },
-  {
- "level": 18,
- "name": "Unearthly Recovery",
- "description": "At 18th level, you gain the ability to overcome grievous injuries. As a bonus action when you have fewwer than half of your hit points remaining, you can regain a number of hit points equal to half your hit point maximum.\n\nOnce you use this feature, you can't use it again until you finish a long rest."
-  }
-   ]
- },
- {
-   "name": "Sorceron Bloodline",
-   "castermult": 1,
-   "features": [
-  {
+   {
+     "name": "Draconic Bloodline",
+     "castermult": 1,
+     "features": [
+    {
    "level": 1,
-   "name": "Force Affinity",
-   "description": "At 1st level, the blood of the Sorceron gives the Sorceron blooded a special affinity for spells that manipulate pure magical force. They learn the magic missile, mage armor, and shield spells in addition to their normal spells known."
-  },
-  {
- "level": 1,
- "name": "Enhanced Force Spells",
- "description": "When the Sorceron Blooded casts the magic missile spell, each missile does 1d4 + 2 in damage instead of its normal damage.\n\nWhen the Sorceron Blooded casts the Mage Armor spell it has a duration of 16 hours instead of the typical 8 hours."
-  },
-  {
- "level": 6,
- "name": "Spontaneous Recovery",
- "description": "Starting at 6th level, whenever the Sorceron Blooded casts a spell of 1st level or higher, roll a d20, on a 20 the spell slot is not expended when the spell is cast. Starting at 18th level the spell slot is not expended when the Sorceron Blooded rolls a 19 or a 20 on the d20 roll."
-  },
-  {
- "level": 14,
- "name": "Overwhelming Force",
- "description": "At 14th level your connection to pure force has grown.  You learn the disintigrate spell, if you already know the disintigrate spell pick a different sorcerer spell of 5th level or lower.  Whenever you cast disintigrate, if the target makes their save they take half damage instead of no damage."
-  }
-   ]
- }
+   "name": "Dragon Ancestor",
+   "description": "At 1st level, you choose one type of dragon as your ancestor. The damage type associated with each dragon is used by features you gain later.\n\nYou can speak, read, and write Draconic. Additionally, whenever you make a Charisma check when interacting with dragons, your proficiency bonus is doubled if it applies to the check."
+    },
+    {
+   "level": 1,
+   "name": "Draconic Resilience",
+   "description": "As magic flows through your body, it causes physical traits of your dragon ancestors to emerge. At 1st level, your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class.\n\nAdditionally, parts of your skin are covered by a thin sheen of dragon-like scales. When you aren’t wearing armor, your AC equals 13 + your Dexterity modifier."
+    },
+    {
+   "level": 6,
+   "name": "Elemental Affinity",
+   "description": "Starting at 6th level, when you cast a spell that deals damage of the type associated with your draconic ancestry, add your Charisma modifier to that damage.\n\nAt the same time, you can spend 1 sorcery point to gain resistance to that damage type for 1 hour."
+    },
+    {
+   "level": 14,
+   "name": "Dragon Wings",
+   "description": "At 14th level, you gain the ability to sprout a pair of dragon wings from your back, gaining a flying speed equal to your current speed. You can create these wings as a bonus action on your turn. They last until you dismiss them as a bonus action on your turn.\n\nYou can’t manifest your wings while wearing armor unless the armor is made to accommodate them, and clothing not made to accommodate your wings might be destroyed when you manifest them."
+    },
+    {
+   "level": 18,
+   "name": "Draconic Presence",
+   "description": "Beginning at 18th level, you can channel the dread presence of your dragon ancestor, causing those around you to become awestruck or frightened. As an action, you can spend 5 sorcery points to draw on this power and exude an aura of awe or fear (your choice) to a distance o f 60 feet. For 1 minute or until you lose your concentration (as if you w ere casting a concentration spell), each hostile creature that starts its turn in this aura must succeed on a Wisdom saving throw or be charmed (if you chose awe) or frightened (if you chose fear) until the aura ends. A creature that succeeds on this saving throw is immune to your aura for 24 hours."
+    }
+     ]
+   },
+   {
+     "name": "Wild Magic",
+     "castermult": 1,
+     "features": [
+    {
+   "level": 1,
+   "name": "Wild Magic Surge",
+   "description": "Starting when you choose this origin at 1st level, your spellcasting can unleash surges of untamed magic. Immediately after you cast a sorcerer spell of 1st level or higher, the DM can have you roll a d20. If you roll a 1, roll on the Wild Magic Surge table to create a random magical effect."   
+    },
+    {
+   "level": 1,
+   "name": "Tides of Chaos",
+   "description": "Starting at 1st level, you can manipulate the forces of chance and chaos to gain advantage on one attack roll, ability check, or saving throw. Once you do so, you must finish a long rest before you can use this feature again. Any time before you regain the use of this feature, the DM can have you roll on the W ild Magic Surge table immediately after you cast a sorcerer spell of 1st level or higher. You then regain the use of this feature"
+    },
+    {
+   "level": 6,
+   "name": "Bend Luck",
+   "description": "Starting at 6th level, you have the ability to twist fate using your wild magic. W hen another creature you can see makes an attack roll, an ability check, or a saving throw, you can use your reaction and spend 2 sorcery points to roll 1d4 and apply the number rolled as a bonus or penalty (your choice) to the creature’s roll. You can do so after the creature rolls but before any effects of the roll occur."
+    },
+    {
+   "level": 14,
+   "name": "Controlled Chaos",
+   "description": "At 14th level, you gain a m odicum of control over the surges of your wild magic. W henever you roll on the Wild Magic Surge table, you can roll twice and use either number."
+    },
+    {
+   "level": 18,
+   "name": "Spell Bombardment",
+   "description": "Beginning at 18th level, the harmful energy of your spells intensifies. W hen you roll damage for a spell and roll the highest number possible on any of the dice, choose one of those dice, roll it again and add that roll to the damage. You can use the feature only once per turn."
+    }
+     ]
+   },
+   {
+     "name": "Divine Soul",
+     "castermult": 1,
+     "features": [
+       {
+      "level": 1,
+      "name": "Divine Magic",
+      "description": "Your link to the divine allows you to learn spells from the cleric class. When your Spellcasting feature lets you learn or replace a sorcerer cantrip or a sorcerer spell of 1st level or higher, you can choose the new spell from the cleric spell list or the sorcerer spell list. You must otherwise obey all the restrictions for selecting the spell, and it becomes a sorcerer spell for you.\n\nIn addition, choose an affinity for the source of your divine power: good, evil, law, chaos, or neutrality. You learn an additional spell based on that affinity, as shown below. It is a sorcerer spell for you, but it doesn’t count against your number of sorcerer spells known. If you later replace this spell, you must replace it with a Spell from the cleric spell list.\n\n*Good - cure wounds\n*Evil - inflict wounds\n*Law - bless\n*Chaos - bane\n*Neutrality - protection from evil and good."
+       },
+       {
+      "level": 1,
+      "name": "Favored by the Gods",
+      "description": "Starting at 1st level, divine power guards your destiny. Ifyou fail a saving throw or miss with an attack roll, you can roll 2d4 and add it to the total, possibly changing the outcome. Once you use this feature, you can’t use it again until you finish a short or long rest."
+       },
+       {
+      "level": 6,
+      "name": "Empowered Healing",
+      "description": "Starting at 6th level, the divine energy coursing through you can empower healing spells. Whenever you or an ally within 5 feet of you rolls dice to determine the number of hit points a spell restores, you can spend 1 sorcery point to reroll any number of those dice once, provided you aren't incapacitated. You can use this feature only once per turn."
+       },
+       {
+      "level": 14,
+      "name": "Otherworldy Wings",
+      "description": "Starting at 14th level, you can use a bonus action to manifest a pair of spectral wings from your back. While the wings are present, you have a flying speed of 30 feet. The wings last until you're incapacitated, you die, or you dismiss them as a bonus action.\n\nThe affinity you chose for your Divine Magic feature determines the appearance of the spectral wings: eagle wings for good or law, bat wings for evil or chaos, and dragonfly wings for neutrality."
+       },
+       {
+      "level": 18,
+      "name": "Unearthly Recovery",
+      "description": "At 18th level, you gain the ability to overcome grievous injuries. As a bonus action when you have fewer than half of your hit points remaining, you can regain a number of hit points equal to half your hit point maximum.\n\nOnce you use this feature, you can’t use it again until you finish a long rest."
+       }
+     ]
+   },
+   {
+     "name": "Sorceron Bloodline",
+     "castermult": 1,
+     "features": [
+        {
+         "level": 1,
+         "name": "Force Affinity",
+         "description": "At 1st level, the blood of the Sorceron gives the Sorceron blooded a special affinity for spells that manipulate pure magical force. They learn the magic missile, mage armor, and shield spells in addition to their normal spells known."
+        },
+        {
+       "level": 1,
+       "name": "Enhanced Force Spells",
+       "description": "When the Sorceron Blooded casts the magic missile spell, each missile does 1d4 + 2 in damage instead of its normal damage.\n\nWhen the Sorceron Blooded casts the Mage Armor spell it has a duration of 16 hours instead of the typical 8 hours."
+        },
+        {
+       "level": 6,
+       "name": "Spontaneous Recovery",
+       "description": "Starting at 6th level, whenever the Sorceron Blooded casts a spell of 1st level or higher, roll a d20, on a 20 the spell slot is not expended when the spell is cast. Starting at 18th level the spell slot is not expended when the Sorceron Blooded rolls a 19 or a 20 on the d20 roll."
+        },
+        {
+       "level": 14,
+       "name": "Overwhelming Force",
+       "description": "At 14th level your connection to pure force has grown.  You learn the disintigrate spell, if you already know the disintigrate spell pick a different sorcerer spell of 6th level or lower.  Whenever you cast disintigrate, if the target makes their save they take half damage instead of no damage."
+        },
+        {
+          "level": 18,
+          "name": "Magical Attunement",
+          "description": "At 18th level the magic of your blood becomes particularly attuned to certain basic spells. Pick 2 sorcerer spells you know of 2nd level or lower, you can cast these spells without using a spell slot."
+        }
+     ]
+   },
+   {
+     "name": "Shadow Magic",
+     "castermult": 1,
+     "features": [
+        {
+          "level": 1,
+          "name": "Eyes of the Grave",
+          "description": "Starting at lst level, you have darkvision with a range of 120 feet.\n\nWhen you reach 3rd level in this class, you learn the darkness spell, which doesn’t count against your number of sorcerer spells known. In addition, you can cast it by spending 2 sorcery points or by expending a spell slot. If you cast it with sorcery points, you can see through the darkness created by the spell."
+        },
+        {
+          "level": 1,
+          "name": "Strength of the Grave",
+          "description": "Starting at lst level, your existence in a twilight state between life and death makes you difficult to defeat. When damage reduces you to 0 hit points, you can make a Charisma saving throw (DC 5 + the damage taken). On a success, you instead drop to 1 hit point. You can’t use this feature if you are reduced to 0 hit points by radiant damage or by a critical hit.\n\nAfter the saving throw succeeds, you can’t use this feature again until you finish a long rest."
+        },
+        {
+          "level": 6,
+          "name": "Hound of Ill Omen",
+          "description": "At 6th level, you gain the ability to call forth a howling creature of darkness to harass your foes. As a bonus action, you can spend 3 sorcery points to magically summon a hound of ill omen to target one creature you can see within 120 feet of you. The hound uses the dire wolf’s statistics (see the Monster Manual or appendix C in the Player’s Handbook), with the following changes:\n\n*The hound is size Medium, not Large, and it counts as a monstrosity, not a beast.\n*It appears with a number of temporary hit points equal to half your sorcerer level.\n*It can move through other creatures and objects as if they were difficult terrain. The bound takes 5 force damage if it ends its turn inside an object.\n*At the start of its turn, the hound automatically knows its target's location. If the target was hidden, it is no longer hidden from the hound.\n\nThe hound appears in an unoccupied space of your choice within 30 feet of the target. Roll initiative for the hound. On its turn, it can move only toward its target by the most direct route, and it can use its action only to attack its target. The hound can make opportunity attacks, but only against its target. Additionally, while the hound is within 5 feet of the target, the target has disadvantage on saving throws against any spell you cast. The hound disappears if it is reduced to 0 hit points, if its target is reduced to 0 hit points, or after 5 minutes."
+        },
+        {
+          "level": 14,
+          "name": "Shadow Walk",
+          "description": "At 14th level, you gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action, you can magically teleport up to 120 feet to an unoccupied space you can see that is also in dim light or darkness."
+        },
+        {
+          "level": 18,
+          "name": "Umbral Form",
+          "description": "Starting at 18th level, you can spend 6 sorcery points as a bonus action to magically transform yourself into a shadowy form. In this form, you have resistance to all damage except force and radiant damage, and you can move through other creatures and objects as if they were difficult terrain. You take 5 force damage if you end your turn inside an object.\n\nYou remain in this form for 1 minute. It ends early if you are incapacitated, if you die, or if you dismiss it as a bonus action."
+        }
+      ]
+   },
+    {
+      "name": "Storm Sorcery",
+      "castermult": 1,
+      "features": [
+        {
+          "level": 1,
+          "name": "Wind Speaker",
+          "description": "The arcane magic you command is infused with elemental air. You can speak, read, and write Primordial. Knowing this language allows you to understand and be understood by those who speak its dialects: Aquan, Auran, Ignan, and Terran."
+        },
+        {
+          "level": 1,
+          "name": "Tempestuous Magic",
+          "description": "Starting at 1st level, you can use a bonus action on your turn to cause whirling gusts of elemental air to briefly surround you, immediately before or after you cast a spell of 1st level or higher. Doing so allows you to fly up to 10 feet without provoking opportunity attacks."
+        },
+        {
+          "level": 6,
+          "name": "Heart of the Storm",
+          "description": "At 6th level, you gain resistance to lightning and thunder damage. In addition, whenever you start casting a spell of 1st level or higher that deals lightning or thunder damage, stormy magic erupts from you. This eruption causes creatures of your choice that you can see within 10 feet of you to take lightning or thunder damage (choose each time this ability activates) equal to half your sorcerer level."
+        },
+        {
+          "level": 6,
+          "name": "Storm Guide",
+          "description": "At 6th level, you gain the ability to subtly control the weather around you.\n\nIf it is raining, you can use an action to cause the rain to stop falling in a 20-foot—radius sphere centered on you. You can end this effect as a bonus action.\n\nIf it is windy, you can use a bonus action each round to choose the direction that the wind blows in a 1OO-foot-radius sphere centered on you. The wind blows in that direction until the end of your next turn. This feature doesn't alter the speed of the wind."
+        },
+        {
+          "level": 14,
+          "name": "Storm's Fury",
+          "description": "Starting at 14th level, when you are hit by a melee attack, you can use your reaction to deal lightning damage to the attacker. The damage equals your sorcerer level. The attacker must also make a Strength saving throw against your sorcerer spell save DC. On a failed save, the attacker is pushed in a straight line up to 20 feet away from you."
+        },
+        {
+          "level": 18,
+          "name": "Wind Soul",
+          "description": "At 18th level, you gain immunity to lightning and thunder damage.\n\nYou also gain a magical flying speed of 60 feet. As an action. you can reduce your flying speed to 30 feet for 1 hour and choose a number of creatures within 30 feet of you equal to 3 + your Charisma modifier. The chosen creatures gain a magical flying speed of 30 feet for 1 hour. Once you reduce your flying speed in this way, you can’t do so again until you finish a short or long rest."
+        }
+      ]
+    }
   ]
 }

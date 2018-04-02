@@ -4,13 +4,13 @@
   "singular": "Tabaxi",
   "description": "\n\nThe Tabaxi are a catlike people that wander the world in small bands, often stopping in small villages to trade. They rarely if ever have permanent homes, and largely keep to themselves in their wandering. They can be found in most any nation, but actively tracking one down can be incredibly difficult. It is rare that a band of Tabaxi, typically no more than 10 to 20 in number including children, will stay in a particular town longer than a few days. Tabaxi who come of age will typically leave the band they were born in, wandering alone until they either find a new band to marry in to, or meet up with other young wanderer on their own and form a new band.\n\n#### Tabaxi Culture in Elthelas\n\nTabaxi love to tell stories, play music, and dance. Most nights in a Tabaxi camp are spent on these pursuits. Tabaxi bands are typically pacifists, as most nations regard the Tabaxi as a nation without a state, and may consider any violence perpetrated by a Tabaxi as an attack by all Tabaxi against their people, often leading to violent retribution. This typically leaves them incredibly careful to avoid conflicts with others, and if a trade relationship with a particular town turns sour, the Tabaxi will simply leave and not return. It also means they are susceptible to bandits and outlaws, who often claim in court that the Tabaxi attacked *them*, and they simply defended themselves. Tabaxi bands thus generally avoid areas of great turmoil.",
   "traits": [
-    "Ability Score Increase. Your Dexterity score increases by 2, and your Charisma score increases by 1.",
-    "Size. Tabaxi are taller on average than humans and relatively slender. Your size is Medium.",
-    "Speed. Your base walking speed is 30 feet.",
-    "Darkvision. You have a cat's keen senses, especially in the dark. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
-    "Feline Asility. Your reflexes and agility allow you to move with a burst of speed. When you move on your turnin combat, you can double your speed until the end of the turn. Once you use this trait, you can't use it again until you move 0 feet on one of your turns.",
-    "Cat's Claws. Because of your claws, you have a climbing speed of 20 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to ld4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.",
-    "Cat's Talent. You have proficiency in the Perception and Stealth skills."
+    { "name": "Ability Score Increase", "description": "Your Dexterity score increases by 2, and your Charisma score increases by 1." },
+    { "name": "Size", "description": "Tabaxi are taller on average than humans and relatively slender. Your size is Medium." },
+    { "name": "Speed", "description": "Your base walking speed is 30 feet." },
+    { "name": "Darkvision", "description": "You have a cat's keen senses, especially in the dark. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray." },
+    { "name": "Feline Agility", "description": "Your reflexes and agility allow you to move with a burst of speed. When you move on your turnin combat, you can double your speed until the end of the turn. Once you use this trait, you can't use it again until you move 0 feet on one of your turns." },
+    { "name": "Cat's Claws", "description": "Because of your claws, you have a climbing speed of 20 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to ld4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike." },
+    { "name": "Cat's Talent", "description": "You have proficiency in the Perception and Stealth skills." }
   ],
   "agepoints": {
     "puberty": 12,

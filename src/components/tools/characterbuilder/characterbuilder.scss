@@ -10,12 +10,21 @@
   font-weight: bold;  
 }
 
+.btn-symbol {
+  background: none;
+  border: none;
+}
 .charsheet-static {
   margin: 10px 0;
   font-size: 1.1em;
   font-weight: bold;
   border: 1px solid black;
   padding: 2px 5px;
+}
+
+.smalltext {
+  font-size: 0.75em;
+  font-weight: normal;
 }
 
 .center {

@@ -4,12 +4,12 @@
   "singular": "Tiefling",
   "description": "\n\nTieflings are the descendents of humans that have mated with demons or devils, they bear the mark of this touch in their appearance and nature. They often bear demonic traits, such as horns, forked tails or tongue, or reddish skin or eyes. They also tend towards evil more than the average person, and although this is far from a given, it is common enough that the distrust that follows them everywhere is justified.\n\nTieflings are not quite as rare as Aasimar (given demons' proclivity for lust), although they are still rare enough to cause a stir in any town they show up in, especially given their heritage. Tieflings are more common in the west, where demons, and demon attacks, are also more common. Tieflings of a good or neutral persuasion can usually find shelter in Dera'Dragorim or Zelfir, the second as a service to Amathera as a pity of their natural plight, and the first in recognition of a shared victimization at the hands of aggressive demon invaders.\n\n#### Tiefling Culture in Elthelas\n\nThe distrust that tieflings face at the hands of common folk, combined with the chaos in their blood, leads many to take up life as an adventurer or wanderer. Some find their way to the tiefling enclaves in more friendly cities, while many find themselves taken advantage of by evil lords who give them opportunities where no one else would. The largest population of settled Tiefling's in Elthelas is in the Deran city of Vasha. There it is common enough to see someone with horns or a forked tongue walking down the street that few pay it any mind. The Tiefling's there have found a niche working as alchemists, smelters and smiths, as well as other jobs where their natural resistances give them an edge over an ordinary human. These Tieflings are well integrated into Dera'Dragoran society.\n\nElsewhere in the world tieflings have evolved their own counter cultures. For example, In Malinval Tieflings are subject only to the church of Mat'raktha, and have a near monopoly on intercity trade, since they are the only race not subject to the warlords or mandatory slavery.",
   "traits": [
-    "Ability Score Increase: Your intelligence score increases by 1 and your charisma score increases by 2.",
-    "Size: Tieflings have about the same size and build as humans. Your size is medium.",
-    "Speed: Your base walking speed is 30 feet.",
-    "Darkvision: 60 ft.",
-    "Hellish Resistance: You have resistance to fire damage.",
-    "Infernal Legacy: You know the thaumatergy cantrip. Once you reach 3rd level, you can cast the hellish rebuke spell once per day as a 2nd-level spell. Once you reach 5th level you can cast the darkness spell once per day. Charisma is your spellcasting ability for these spells."
+    { "name": "Ability Score Increase", "description": "Your intelligence score increases by 1 and your charisma score increases by 2." },
+    { "name": "Size", "description": "Tieflings have about the same size and build as humans. Your size is medium." },
+    { "name": "Speed", "description": "Your base walking speed is 30 feet." },
+    { "name": "Darkvision", "description": "60 ft." },
+    { "name": "Hellish Resistance", "description": "You have resistance to fire damage." },
+    { "name": "Infernal Legacy", "description": "You know the thaumatergy cantrip. Once you reach 3rd level, you can cast the hellish rebuke spell once per day as a 2nd-level spell. Once you reach 5th level you can cast the darkness spell once per day. Charisma is your spellcasting ability for these spells." }
   ],
   "agepoints": {
     "puberty": 8,

@@ -4,12 +4,12 @@
   "singular": "Sorceron Blooded",
   "description": "\n\nthe Sorceron were a race of Godly servants that served all Gods. Originally serving the Gods in creating the world Elthelas and the many interconnecting planes of existence in an age long since forgotten. They were masters of magic, the inventors of the arcane arts. In the Gods War they served on both sides, and were the primary combatants, and while most of them died in that conflict, some few survivors retreating to other planes of existence besides the material with the Gods. Yet, before that age many Sorceron interbred with the races of Elthelas, and every now and then a child will be born with more Sorceron blood than typical. These unusual children show a rare talent for magic and are gifted with intelligence and charisma far beyond that of their kin.\n\nThe Sorceron Blooded look very similar to a normal human, but their blood typically betrays them when they are young, with their gift for magic blooming almost as soon as they can talk. ",
   "traits": [
-    "Ability Score Increase: Your Intelligence score increases by 2 and your Charisma score increases by 1.",
-    "Size: The Sorceron-blooded are generally similar to elves or humans in height, weight, and build. Your size is medium.",
-    "Speed: Your base walking speed is 30 ft.",
-    "Natural Spellcaster: Choose one cantrip from the wizard spell list, you can cast this cantrip at will using intelligence as your spellcasting ability. Additionally choose one 1st level spell from the wizard spell list, you know that spell without using a spell slot, however, once you cast it you must complete a short rest before you can cast it again.",
-    "Master of the Arcane: You have advantage on Intelligence (Arcana) checks.",
-    "Disease Resistance: You have advantage on saving throws against disease."
+    { "name": "Ability Score Increase", "description": "Your Intelligence score increases by 2 and your Charisma score increases by 1." },
+    { "name": "Size", "description": "The Sorceron-blooded are generally similar to elves or humans in height, weight, and build. Your size is medium." },
+    { "name": "Speed", "description": "Your base walking speed is 30 ft." },
+    { "name": "Natural Spellcaster", "description": "Choose one cantrip from the wizard spell list, you can cast this cantrip at will using intelligence as your spellcasting ability. Additionally choose one 1st level spell from the wizard spell list, you know that spell without using a spell slot, however, once you cast it you must complete a short rest before you can cast it again." },
+    { "name": "Master of the Arcane", "description": "You have advantage on Intelligence (Arcana) checks." },
+    { "name": "Disease Resistance", "description": "You have advantage on saving throws against disease." }
   ],
   "agepoints": {
     "puberty": 12,
