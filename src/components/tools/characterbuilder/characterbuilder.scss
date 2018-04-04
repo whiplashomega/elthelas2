@@ -6,10 +6,22 @@
   height: 24px;
 }
 
+.charsheet-textarea {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+  padding: 1px 0px;
+  height: auto;
+}
+
 .charsheet-label {
   font-weight: bold;  
 }
 
+.btn-sm {
+  padding: .05rem .4rem;
+  font-size: 0.7rem;
+}
 .btn-symbol {
   background: none;
   border: none;

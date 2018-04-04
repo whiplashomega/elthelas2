@@ -8,7 +8,6 @@ const state = {
 
 const getters = {
   isLoggedIn: (state) => {
-    console.log(state);
     if (state.loggedin) {
       return true;
     } else {

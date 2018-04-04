@@ -39,18 +39,8 @@ export default {
     this.$store.dispatch('getAllOrganizations');
     this.$store.dispatch('getAllNations');
     this.$store.dispatch('getAllCities');
-    this.$store.dispatch('getAllSpells').then(() => {
-      console.log("Spells Retrieved");
-      this.$store.dispatch('getAllArmor').then(() => {
-        console.log("Armor Retrieved");
-        this.$store.dispatch('getAllWeapons').then(() => {
-          console.log("Weapons Retrieved");
-          this.$store.dispatch('getAllMagicItems', {weapons: this.weapons, spells: this.spells, armor: this.armor}).then(() => {
-            console.log("Magic Items Retreived");
-          });
-        });
-      });
-    });
+    this.$store.dispatch('getAllFeats');
+    this.$store.dispatch('getAllMagicItems');
   }
 };
 </script>

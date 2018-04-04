@@ -4,6 +4,7 @@
       <div class="col-8 print-full">
         <div class="row">
           <div class="col-9">
+            <!-- Character, Player, Class -->
             <div class="row">
               <div class="col">
                 <input type="text" class="charsheet-text" v-model="character.name">
@@ -18,6 +19,7 @@
                 Class(es)
               </div>
             </div>
+            <!-- Race, Background, Alignment -->
             <div class="row">
               <div class="col-4">
                 <select @change="setRaceDefaults()" v-model="character.race" class="charsheet-text">
@@ -51,6 +53,7 @@
                 Alignment
               </div>
             </div>
+            <!-- Faction, Home Country, Home Town -->
             <div class="row">
               <div class="col-4">
                 <select class="charsheet-text" v-model="character.faction">
@@ -108,6 +111,7 @@
         <div class="row">
           <div class="col-7">
             <div class="row">
+              <!-- Ability Scores -->
               <div class="col-7">
                 <table class="abilitytable">
                   <thead>
@@ -134,7 +138,7 @@
                 <div class="row">
                   <div class="col">
                     <div class="charsheet-static">
-                      HP: <input type="number" class="charsheet-num" /> / {{getHPTotal()}} Max <br />
+                      HP: <input type="number" class="charsheet-num" v-model="character.hpcurrent" /> / {{getHPTotal()}} Max <br />
                       Temporary: <input type="number" class="charsheet-num" />
                     </div>
                   </div>
@@ -144,7 +148,7 @@
                     <div class="charsheet-static">
                       Hit Dice<br />
                       <div v-for="cc in character.charclasses" v-bind:key="cc.thisclass.name">
-                        <input type="number" class="charsheet-num" /> / {{cc.level}}d{{cc.thisclass.hitdie}}
+                        <input type="number" class="charsheet-num" v-model="cc.hitdice" /> / {{cc.level}}d{{cc.thisclass.hitdie}}
                       </div>
                     </div>
                   </div>
@@ -152,6 +156,7 @@
               </div>
             </div>
             <div class="row">
+              <!-- skills -->
               <div class="col-7">
                 <table class="abilitytable">
                   <thead>
@@ -173,20 +178,27 @@
                     </tr>
                   </tbody>
                 </table>
+                <div class="charsheet-static">
+                  <h5>Proficiencies and Languages</h5>
+                  <textarea v-model="character.proficiencies" class="charsheet-textarea smalltext"></textarea>
+                </div>
               </div>
               <div class="col-5">
                 <div class="row">
+                  <!-- AC -->
                   <div class="col-6">
                     <div class="charsheet-static center">
                       AC<br />{{accalc()}}
                     </div>
                   </div>
+                  <!-- Proficiency -->
                   <div class="col-6">
                     <div class="charsheet-static center">
                       Prof<br /><span v-if="profbonus() > -1">+</span>{{profbonus()}}
                     </div>
                   </div>
                 </div>
+                <!-- Speed -->
                 <div class="row">
                   <div class="col">
                     <div class="charsheet-static">
@@ -198,6 +210,7 @@
                     </div>
                   </div>
                 </div>
+                <!-- Armor -->
                 <div class="row">
                   <div class="col">
                     <div class="charsheet-static">
@@ -237,8 +250,43 @@
                         <input type="number" v-model="newarmor.ac" class="form-control" />
                       </b-modal>
                     </div>
+                  </div>
+                </div>
+                <!-- Equipment -->
+                <div class="row">
+                  <div class="col">
                     <div class="charsheet-static">
                       <h4>Equipment</h4>
+                      <div v-for="(item, index) in character.equipment" v-bind:key="index" class="smalltext">
+
+                        {{ item.name }} <span class="float-right">{{item.weight}} lbs</span><br />
+                        <span class="print-hide"><input type="checkbox" v-model="item.equipped" />Equipped</span>
+                        <span class="print-hide"><input type="checkbox" v-model="item.carried" />Held</span>
+                        <button type="button" class="btn btn-sm btn-danger print-hide" @click="removeEquipment(index)">X</button>
+                      </div>
+                      <button type="button" class="btn btn-sm btn-primary print-hide" @click="equipModal = true">+</button>
+                      <b-modal v-model="equipModal" title="Add Equipment" @ok="addEquipment()">
+                        <input type="text" class="form-control" v-model="newequip.name" />
+                        Name
+                        <input type="number" class="form-control" v-model="newequip.weight" />
+                        Weight
+                      </b-modal>
+                      <table class="table table-sm smalltext">
+                        <tbody>
+                          <tr>
+                            <th>CP</th><td><input type="number" class="charsheet-num" v-model="character.cp" /></td>
+                            <th>GP</th><td><input type="number" class="charsheet-num" v-model="character.gp" /></td>
+                          </tr>
+                          <tr>
+                            <th>SP</th><td><input type="number" class="charsheet-num" v-model="character.sp" /></td>
+                            <th>PP</th><td><input type="number" class="charsheet-num" v-model="character.pp" /></td>
+                          </tr>
+                          <tr><th colspan="2">Gems (value)</th><td colspan="2"><input type="number" class="charsheet-num" v-model="character.gems" /></td></tr>
+                          <tr><th colspan="2">Art (value)</th><td colspan="2"><input type="number" class="charsheet-num" v-model="character.art" /></td></tr>
+                        </tbody>
+                      </table>
+                      <span class="smalltext">Carry Weight: {{ carryWeight() }} / {{ carryMax() }}</span><br />
+                      <span class="smalltext">Total Gold: {{ totalGold() }}</span>
                     </div>
                   </div>
                 </div>
@@ -248,21 +296,33 @@
           <div class="col-5">
             <div class="row">
               <div class="col">
+                <!-- Attacks -->
                 <div class="charsheet-static">
                   <h4>Attacks</h4>
                   <div v-for="(attack, index) in character.attacks" v-bind:key="index" class="smalltext">
                     <strong>{{attack.name}}:</strong> {{attack.type}},
                     range {{attack.range}},
-                    <span v-if="attack.bonus > -1">+</span>{{attack.bonus}} to hit
-                    ({{attack.damage}} {{attack.dtype}} damage).
+                    <span v-if="attack.bonus > -1">+</span>{{getAttackBonus(attack)}} to hit
+                    ({{attack.damage}}<span v-if="getAttackDamageBonus(attack) > 0"> + {{getAttackDamageBonus(attack)}}</span><span v-if="getAttackDamageBonus(attack) < 0"> - {{getAttackDamageBonus(attack)}}</span> {{attack.dtype}} damage).
                     <button type="button" class="print-hide btn-symbol" @click="attack.edit = true">&#9998;</button>
                     <b-modal v-model="attack.edit">
                       Name:
                       <input type="text" class="form-control" v-model="attack.name" />
-                      Bonus:
+                      <input type="checkbox" v-model="attack.prof">Proficient? <input type="checkbox" v-model="addstat" />Add Ability Mod to Damage?
+                      <select class="form-control" v-model="attack.stat">
+                        <option :value="0">Strength</option>
+                        <option :value="1">Dexterity</option>
+                        <option :value="2">Constitution</option>
+                        <option :value="3">Intelligence</option>
+                        <option :value="4">Wisdom</option>
+                        <option :value="5">Charisma</option>
+                      </select>
+                      Additional Attack Bonus:
                       <input type="number" class="form-control" v-model="attack.bonus" />
-                      Damage:
+                      Damage Dice:
                       <input type="text" class="form-control" v-model="attack.damage" />
+                      Additional Damage Bonus:
+                      <input type="text" class="form-control" v-model="attack.damagebonus" />
                       Range:
                       <input type="text" class="form-control" v-model="attack.range" />
                       Type:
@@ -295,10 +355,21 @@
                   <b-modal v-model="attackmodal" title="Add Attack" @ok="addAttack()">
                     Name:
                     <input type="text" class="form-control" v-model="newattack.name" />
-                    Bonus:
+                    <input type="checkbox" v-model="newattack.prof">Proficient? <input type="checkbox" v-model="newattack.addstat" />Add Ability Mod to Damage?
+                      <select class="form-control" v-model="newattack.stat">
+                        <option :value="0">Strength</option>
+                        <option :value="1">Dexterity</option>
+                        <option :value="2">Constitution</option>
+                        <option :value="3">Intelligence</option>
+                        <option :value="4">Wisdom</option>
+                        <option :value="5">Charisma</option>
+                      </select>
+                    Additional Attack Bonus:
                     <input type="number" class="form-control" v-model="newattack.bonus" />
-                    Damage:
+                    Damage Dice:
                     <input type="text" class="form-control" v-model="newattack.damage" />
+                      Additional Damage Bonus:
+                      <input type="number" class="form-control" v-model="newattack.damagebonus" />
                     Range:
                     <input type="text" class="form-control" v-model="newattack.range" />
                     Type:
@@ -326,21 +397,36 @@
                     </select>
                   </b-modal>
                 </div>
+                <!-- Injuries -->
                 <div class="charsheet-static">
-                  Injuries
-                  <input type="text" class="charsheet-text" />
-                  <input type="text" class="charsheet-text" />
-                  <input type="text" class="charsheet-text" />
+                  Injuries/Madnesses
+                  <div v-for="(injury, index) in character.injuries" v-bind:key="index">
+                    <input type="text" v-model="injury.name" class="charsheet-text col-9" />
+                    <button class="btn btn-sm btn-danger" type="button" @click="removeInjury(index)">X</button>
+                  </div>
+                  <button class="btn btn-sm btn-primary print-hide" type="button" @click="addInjury">+</button>
                 </div>
+                <!-- Feats -->
                 <div class="charsheet-static">
-                  Feats/ASIs
-                  <select class="charsheet-text">
-                    <option>Text</option>
-                  </select>
+                  Feats/ASIs {{numASI}}
+                  <div v-for="(feat, index) in character.feats" v-bind:key="index" style="clear:both;">
+                    <select class="charsheet-text col-9" v-model="character.feats[index]">
+                      <option v-for="feat in featsort" v-bind:key="feat.name" :value="feat" :title="feat.description">{{feat.name}}</option>
+                    </select>
+                    <button class="btn btn-sm print-hide float-right" type="button" @click="setval(feat, 'show', true)"
+                      v-if="!feat.show">
+                      &#x25BC;
+                    </button>
+                    <button class="btn btn-sm print-hide float-right" type="button" @click="setval(feat, 'show', false)"
+                      v-if="feat.show">
+                      &#x25B2;
+                    </button>
+                    <p v-if="feat.show" v-html="$options.filters.marked(feat.description)"></p>
+                  </div>
                 </div>
+                <!-- Features -->
                 <div class="charsheet-static">
                   Features
-                  {{log(typeof character.background) }}
                   <p class="smalltext" v-if="typeof character.background === 'object'">
                     <span  :title="character.background.feature.description">{{character.background.feature.name}}</span>
                     <button class="btn btn-sm print-hide float-right" type="button" @click="setval(character.background.feature, 'show', true)"
@@ -396,6 +482,8 @@
                         <span v-if="feature.show" v-html="$options.filters.marked(feature.description)"></span>
                       </p>
                     </div>
+                    <div v-if="level() > 0" v-html="$options.filters.marked(character.faction.level1)"></div>
+                    <div v-if="level() > 9" v-html="$options.filters.marked(character.faction.level10)"></div>
                   </div>
                   <p>&nbsp;</p>
                 </div>
@@ -403,8 +491,200 @@
             </div>
           </div>
         </div>
+        <hr style="page-break-after: always" />
+                <div class="row">
+              <div class="col-12">
+                <div class="charsheet-static">
+                  <h5>Spells</h5>
+                  <div class="btn-group print-hide smalltext">
+                    <button class="btn btn-sm btn-primary" @click="displayLevel = 'cantrip'">cantrip</button>
+                    <button class="btn btn-sm btn-primary" @click="displayLevel = 'level1'">1</button>
+                    <button class="btn btn-sm btn-primary" @click="displayLevel = 'level2'">2</button>
+                    <button class="btn btn-sm btn-primary" @click="displayLevel = 'level3'">3</button>
+                    <button class="btn btn-sm btn-primary" @click="displayLevel = 'level4'">4</button>
+                    <button class="btn btn-sm btn-primary" @click="displayLevel = 'level5'">5</button>
+                    <button class="btn btn-sm btn-primary" @click="displayLevel = 'level6'">6</button>
+                    <button class="btn btn-sm btn-primary" @click="displayLevel = 'level7'">7</button>
+                    <button class="btn btn-sm btn-primary" @click="displayLevel = 'level8'">8</button>
+                    <button class="btn btn-sm btn-primary" @click="displayLevel = 'level9'">9</button>
+                  </div>
+                  <span class="smalltext"><input type="checkbox" v-model="preparedonly" />Prepared Only</span><br />
+                  {{displayLevel}}
+                  slots: <input type="number" v-model="character.availableslots[displayLevel]" class="charsheet-num" /> / {{ totalslots(displayLevel) }}<br />
+                  <span v-if="warlockSlots() > 0">Warlock Slots: <input type="number" v-model="character.warlockslotsavailable" class="charsheet-num" /> / {{ warlockSlots() }} level {{ warlockSlotLevel() }} slots</span>
+                  <div class="smalltext print-hide">
+                    <table class="table table-sm">
+                      <thead><tr><th>Spell</th><th>Casting Time</th><th>Duration</th><th>-</th></tr></thead>
+                      <tbody>
+                        <tr v-for="(spell, index) in character.spells[displayLevel]" v-bind:key="spell.title" v-if="(spell.prepared && preparedonly) || !preparedonly">
+                          <td>
+                            <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
+                          </td>
+                          <td>{{spell.castingTime}}</td>
+                          <td>{{spell.duration}}</td>
+                          <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="smalltext screen-hide">
+                    <table class="table table-sm">
+                      <thead><tr><th>Spell</th><th>Casting Time</th><th>Duration</th><th>Level</th><th>-</th></tr></thead>
+                      <tbody>
+                        <tr><td colspan="2">Cantrips</td><td colspan="2"></td></tr>
+                        <tr v-for="(spell, index) in character.spells['cantrip']" v-bind:key="spell.title">
+                          <td>
+                            <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
+                          </td>
+                          <td>{{spell.castingTime}}</td>
+                          <td>{{spell.duration}}</td>
+                          <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
+                        </tr>
+                        <tr><td colspan="2">Level 1</td><td colspan="2">{{totalslots('level1')}}</td></tr>
+                        <tr v-for="(spell, index) in character.spells['level1']" v-bind:key="spell.title">
+                          <td>
+                            <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
+                          </td>
+                          <td>{{spell.castingTime}}</td>
+                          <td>{{spell.duration}}</td>
+                          <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
+                        </tr>
+                        <tr><td colspan="2">Level 2</td><td colspan="2">{{totalslots('level2')}}</td></tr>
+                        <tr v-for="(spell, index) in character.spells['level2']" v-bind:key="spell.title">
+                          <td>
+                            <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
+                          </td>
+                          <td>{{spell.castingTime}}</td>
+                          <td>{{spell.duration}}</td>
+                          <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
+                        </tr>
+                        <tr><td colspan="2">Level 3</td><td colspan="2">{{totalslots('level3')}}</td></tr>
+                        <tr v-for="(spell, index) in character.spells['level3']" v-bind:key="spell.title">
+                          <td>
+                            <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
+                          </td>
+                          <td>{{spell.castingTime}}</td>
+                          <td>{{spell.duration}}</td>
+                          <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
+                        </tr>
+                        <tr><td colspan="2">Level 4</td><td colspan="2">{{totalslots('level4')}}</td></tr>
+                        <tr v-for="(spell, index) in character.spells['level4']" v-bind:key="spell.title">
+                          <td>
+                            <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
+                          </td>
+                          <td>{{spell.castingTime}}</td>
+                          <td>{{spell.duration}}</td>
+                          <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
+                        </tr>
+                        <tr><td colspan="2">Level 5</td><td colspan="2">{{totalslots('level5')}}</td></tr>
+                        <tr v-for="(spell, index) in character.spells['level5']" v-bind:key="spell.title">
+                          <td>
+                            <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
+                          </td>
+                          <td>{{spell.castingTime}}</td>
+                          <td>{{spell.duration}}</td>
+                          <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
+                        </tr>
+                        <tr><td colspan="2">Level 6</td><td colspan="2">{{totalslots('level6')}}</td></tr>
+                        <tr v-for="(spell, index) in character.spells['level6']" v-bind:key="spell.title">
+                          <td>
+                            <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
+                          </td>
+                          <td>{{spell.castingTime}}</td>
+                          <td>{{spell.duration}}</td>
+                          <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
+                        </tr>
+                        <tr><td colspan="2">Level 7</td><td colspan="2">{{totalslots('level7')}}</td></tr>
+                        <tr v-for="(spell, index) in character.spells['level7']" v-bind:key="spell.title">
+                          <td>
+                            <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
+                          </td>
+                          <td>{{spell.castingTime}}</td>
+                          <td>{{spell.duration}}</td>
+                          <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
+                        </tr>
+                        <tr><td colspan="2">Level 8</td><td colspan="2">{{totalslots('level8')}}</td></tr>
+                        <tr v-for="(spell, index) in character.spells['level8']" v-bind:key="spell.title">
+                          <td>
+                            <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
+                          </td>
+                          <td>{{spell.castingTime}}</td>
+                          <td>{{spell.duration}}</td>
+                          <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
+                        </tr>
+                        <tr><td colspan="2">Level 9</td><td colspan="2">{{totalslots('level9')}}</td></tr>
+                        <tr v-for="(spell, index) in character.spells['level9']" v-bind:key="spell.title">
+                          <td>
+                            <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
+                          </td>
+                          <td>{{spell.castingTime}}</td>
+                          <td>{{spell.duration}}</td>
+                          <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <button type="button" @click="spellModal = true" class="btn btn-sm btn-primary print-hide">+</button>
+                </div>
+                <b-modal v-model="spellModal" title="Add Spell" class="modal-lg">
+                  <input type="text" class="form-control" v-model="spellfilter" />
+                  <table class="table">
+                    <thead><tr><th>Spell</th><th>Level</th></tr></thead>
+                    <tbody>
+                      <tr v-for="spell in filteredspells" v-bind:key="spell.title">
+                        <td><a href="#" @click="addSpell(spell)">{{spell.title}}</a></td><td>{{spell.level}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </b-modal>
+                <b-modal v-model="spellDetailModal" @ok="spellDetailModal = false" id="spellmodal" size="lg" :title="detailspell.title" ok-only>
+                  <h4>
+                    <strong>{{detailspell.school}}
+                      {{detailspell.level.replace('level', 'level ')}}
+                    </strong>
+                    <span v-if="detailspell.ritual"> Ritual</span> ({{detailspell.source}})
+                  </h4>
+                  <p><strong>Casting Time: </strong>{{detailspell.castingTime}}</p>
+                  <p><strong>Range: </strong>{{detailspell.range}}</p>
+                  <p><strong>Components: </strong>{{detailspell.components}}</p>
+                  <p><strong>Duration: </strong>{{detailspell.duration}}</p>
+                  <p><strong>Tags: </strong> {{detailspell.tags.join(", ")}}</p>
+                  <div v-html="$options.filters.marked(detailspell.description)"></div>
+                </b-modal>
+              </div>
+            </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="charsheet-static smalltext">
+              <h4>Various Resources</h4>
+              <div class="row" v-for="(resource, index) in character.resources"
+                v-bind:key="index">
+                <div class="col-5">
+                  <input type="text" v-model="resource.name" class="charsheet-text" />
+                </div>
+                <input type="number" class="charsheet-num" v-model="resource.current" /> /
+                <input type="number" class="charsheet-num" v-model="resource.max" />
+                <select v-model="resource.recharge" class="charsheet-text col-3">
+                  <option value="never">Never</option>
+                  <option value="shortrest">Short Rest</option>
+                  <option value="longrest">Long Rest</option>
+                </select>
+                <button class="btn btn-sm btn-danger print-hide" @click="removeResource(index)">X</button>
+              </div>
+              <button type="button" class="btn btn-sm print-hide btn-primary"
+                @click="addResource()">+</button>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="col-4 print-hide">
+        <div class="row">
+          <div class="btn-group col-4">
+            <input type="button" value="Save" @click="save()" class="btn btn-primary" />
+            <input type="button" value="Load" @click="load()" class="btn btn-success" />
+          </div>
+          <input type="file" id="fileload" class="col-8" />
+        </div>
         <h2>Build</h2>
         <div class="row" v-for="(charclass, index) in character.charclasses"
           v-bind:key="index">
@@ -504,6 +784,90 @@
           <div class="col-3">
             <input class="charsheet-text" type="number" v-model="character.hpmagic" />
             Hit Points
+          </div>
+          <div class="col-3">
+            <input class="charsheet-text" type="number" v-model="character.acmagic" />
+            AC
+          </div>
+          <div class="col-3">
+            <input class="charsheet-text" type="number" v-model="character.bonusfeats" />
+            Bonus Feats
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <input class="charsheet-text" type="number" v-model="character.speedmagic[0]" />
+            Speed
+          </div>
+          <div class="col-2">
+            <input class="charsheet-text" type="number" v-model="character.speedmagic[1]" />
+            Fly
+          </div>
+          <div class="col-2">
+            <input class="charsheet-text" type="number" v-model="character.speedmagic[2]" />
+            Climb
+          </div>
+          <div class="col-2">
+            <input class="charsheet-text" type="number" v-model="character.speedmagic[3]" />
+            Swim
+          </div>
+          <div class="col-2">
+            <input class="charsheet-text" type="number" v-model="character.speedmagic[4]" />
+            Burrow
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <select v-model="character.size" class="charsheet-text">
+              <option value="tiny">Tiny</option>
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+              <option value="huge">Huge</option>
+            </select>Effective Size for Carry Capacity
+          </div>
+          <div class="col-6">
+            <input type="number" class="charsheet-text" v-model="character.capacitybonus" />
+            Carry Capacity Bonus
+          </div>
+        </div>
+        <h5>Bonus Spell Slots</h5>
+        <div class="row">
+          <div class="col-3">
+            <input type="number" class="charsheet-text" v-model="character.bonusslots[0]" />
+            level 1
+          </div>
+          <div class="col-3">
+            <input type="number" class="charsheet-text" v-model="character.bonusslots[1]" />
+            level 2
+          </div>
+          <div class="col-3">
+            <input type="number" class="charsheet-text" v-model="character.bonusslots[2]" />
+            level 3
+          </div>
+          <div class="col-3">
+            <input type="number" class="charsheet-text" v-model="character.bonusslots[3]" />
+            level 4
+          </div>
+          <div class="col-3">
+            <input type="number" class="charsheet-text" v-model="character.bonusslots[4]" />
+            level 5
+          </div>
+          <div class="col-3">
+            <input type="number" class="charsheet-text" v-model="character.bonusslots[5]" />
+            level 6
+          </div>
+          <div class="col-3">
+            <input type="number" class="charsheet-text" v-model="character.bonusslots[6]" />
+            level 7
+          </div>
+          <div class="col-3">
+            <input type="number" class="charsheet-text" v-model="character.bonusslots[7]" />
+            level 8
+          </div>
+          <div class="col-3">
+            <input type="number" class="charsheet-text" v-model="character.bonusslots[8]" />
+            level 9
           </div>
         </div>
       </div>

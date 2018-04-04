@@ -15,6 +15,7 @@ import backgrounds from './backgrounds';
 import races from './races';
 import classes from './classes';
 import auth from './auth';
+import feats from './feats';
 
 Vue.use(Vuex);
 
@@ -34,7 +35,8 @@ export default new Vuex.Store({
     backgrounds,
     races,
     classes,
-    auth
+    auth,
+    feats
   },
   state: {
     title: "Test"

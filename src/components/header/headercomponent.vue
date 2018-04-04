@@ -29,6 +29,7 @@
                 <li class="dropdown-item"><router-link to="/options/backgrounds">Backgrounds</router-link></li>
                 <li class="dropdown-item"><router-link to="/options/class">Classes</router-link></li>
                 <li class="dropdown-item"><router-link to="/options/domains">Domains</router-link></li>
+                <li class="dropdown-item"><router-link to="/options/feats">Feats</router-link></li>
                 <li class="dropdown-item"><router-link to="/options/languages">Languages</router-link></li>
                 <li class="dropdown-item"><router-link to="/options/races">Races</router-link></li>
               </ul>

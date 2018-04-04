@@ -26,6 +26,7 @@ import book4 from '../components/tools/book4';
 import book4menu from '../components/tools/book4menu';
 import charbuilder from '../components/tools/characterbuilder';
 import npcgen from '@/components/tools/npcgenerator';
+import feats from '@/components/options/feats';
 
 Vue.use(Router);
 
@@ -299,12 +300,22 @@ var router = new Router({
       components: {
         default: npcgen
       }
+    },
+    {
+      name: "feats",
+      meta: {
+        title: "Feats"
+      },
+      path: "/options/feats",
+      components: {
+        default: feats,
+        sidebar: options
+      }
     }
   ],
   mode: 'history'
 });
 router.beforeEach((to, from, next) => {
-  console.log(store.state);
   if (to.meta.auth && !store.state.auth.loggedin) {
     next({
       path: '/',
