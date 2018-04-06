@@ -180,7 +180,7 @@
                 </table>
                 <div class="charsheet-static">
                   <h5>Proficiencies and Languages</h5>
-                  <textarea v-model="character.proficiencies" class="charsheet-textarea smalltext"></textarea>
+                  <textarea v-model="character.proficiencies" class="charsheet-textarea smalltext" id="profbox"></textarea>
                 </div>
               </div>
               <div class="col-5">
@@ -213,7 +213,7 @@
                 <!-- Armor -->
                 <div class="row">
                   <div class="col">
-                    <div class="charsheet-static">
+                    <div class="charsheet-static" id="armorbox">
                       <h4>Armor</h4>
                       <div class="smalltext" v-for="(armor, index) in character.armors" v-bind:key="index">
                         {{ armor.name }}, {{armor.type}}, AC {{armor.ac}} <input type="checkbox" v-model="armor.equipped" />
@@ -255,7 +255,7 @@
                 <!-- Equipment -->
                 <div class="row">
                   <div class="col">
-                    <div class="charsheet-static">
+                    <div class="charsheet-static" id="equipmentbox">
                       <h4>Equipment</h4>
                       <div v-for="(item, index) in character.equipment" v-bind:key="index" class="smalltext">
 
@@ -312,7 +312,7 @@
             <div class="row">
               <div class="col">
                 <!-- Attacks -->
-                <div class="charsheet-static">
+                <div class="charsheet-static" id="attackdiv">
                   <h4>Attacks</h4>
                   <div v-for="(attack, index) in character.attacks" v-bind:key="index" class="smalltext">
                     <strong>{{attack.name}}:</strong> {{attack.type}},
@@ -440,7 +440,7 @@
                   </div>
                 </div>
                 <!-- Features -->
-                <div class="charsheet-static">
+                <div class="charsheet-static" id="featurebox">
                   Features
                   <p class="smalltext" v-if="character.background.feature.name.length > 0">
                     <span  :title="character.background.feature.description">{{character.background.feature.name}}</span>
@@ -497,9 +497,9 @@
                         <span v-if="feature.show" v-html="$options.filters.marked(feature.description)"></span>
                       </p>
                     </div>
-                    <div v-if="level() > 0" v-html="$options.filters.marked(character.faction.level1)"></div>
-                    <div v-if="level() > 9" v-html="$options.filters.marked(character.faction.level10)"></div>
                   </div>
+                  <div v-if="level() >= 1" v-html="$options.filters.marked(character.faction.level1)"></div>
+                  <div v-if="level() >= 10" v-html="$options.filters.marked(character.faction.level10)"></div>
                   <div class="smalltext" v-for="(feature, index) in character.features" v-bind:key="index">
                     <p>
                       <span :title="feature.description">{{feature.name}}</span>
@@ -556,7 +556,7 @@
                   <tbody>
                     <tr v-for="(spell, index) in character.spells[displayLevel]" v-bind:key="spell.title" v-if="(spell.prepared && preparedonly) || !preparedonly">
                       <td>
-                        <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
+                        <input type="checkbox" v-model="spell.prepared" /><span class="clickable" @click="spellDetail(spell)">{{spell.title}}</span>
                       </td>
                       <td>{{spell.castingTime}}</td>
                       <td>{{spell.duration}}</td>
@@ -665,12 +665,27 @@
               <button type="button" @click="spellModal = true" class="btn btn-sm btn-primary print-hide">+</button>
             </div>
             <b-modal v-model="spellModal" title="Add Spell" class="modal-lg">
+              Filter by Text
               <input type="text" class="form-control" v-model="spellfilter" />
+              Filter by Level
+              <select v-model="levelfilter" class="form-control">
+                <option value="all" selected>All</option>
+                <option value="cantrip">Cantrips</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
               <table class="table">
                 <thead><tr><th>Spell</th><th>Level</th></tr></thead>
                 <tbody>
                   <tr v-for="spell in filteredspells" v-bind:key="spell.title">
-                    <td><a href="#" @click="addSpell(spell)">{{spell.title}}</a></td><td>{{spell.level}}</td>
+                    <td><span class="clickable" @click="addSpell(spell)">{{spell.title}}</span></td><td>{{spell.level}}</td>
                   </tr>
                 </tbody>
               </table>

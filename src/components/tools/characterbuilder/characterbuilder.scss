@@ -39,6 +39,34 @@
   font-weight: normal;
 }
 
+#attackdiv {
+  max-height: 500px;
+}
+
+.clickable {
+  color: blue;
+  cursor: pointer; 
+}
+
+.clickable:hover {
+  text-decoration:underline;
+}
+#featurebox {
+  max-height: 720px;
+}
+
+#profbox {
+  height: 400px;
+  max-height: 560px;
+}
+
+#armorbox {
+  max-height: 385px;
+}
+
+#equipmentbox {
+  max-height: 600px;
+}
 .center {
   text-align: center;
 }
