@@ -94,9 +94,11 @@ export default {
       spellfilter: "",
       newattack: { name: "", stat: 0, bonus: 0, addstat: false, damage: "", range: "", type: "", dtype: "", edit: false, damagebonus: 0, prof: true },
       armormodal: false,
-      newequip: { name: "", equipped: false, carried: true, weight: 0 },
+      newequip: { name: "", equipped: false, carried: true, weight: 0, quantity: 1, attunement: false, edit: false },
       equipModal: false,
       newarmor: { name: "", type: "", ac: 0, edit: false },
+      newfeature: { name: "", description: "", show: false },
+      newFeatureModal: false,
       spellModal: false,
       spellDetailModal: false,
       detailspell: { level: "cantrip", description: "", tags: [] },
@@ -183,7 +185,8 @@ export default {
         spells: { cantrip: [], level1: [], level2: [], level3: [], level4: [], level5: [], level6: [], level7: [], level8: [], level9: [] },
         availableslots: { cantrip: 0, level1: 0, level2: 0, level3: 0, level4: 0, level5: 0, level6: 0, level7: 0, level8: 0, level9: 0 },
         bonusslots: [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        resources: []
+        resources: [],
+        features: []
       }
     };
   },
@@ -339,7 +342,7 @@ export default {
     },
     addEquipment() {
       this.character.equipment.push(this.newequip);
-      this.newequip = { name: "", equipped: false, carried: true, weight: 0 };
+      this.newequip = { name: "", equipped: false, carried: true, weight: 0, quantity: 1, attunement: false, edit: false };
       this.equipModal = false;
     },
     removeEquipment(i) {
@@ -349,7 +352,7 @@ export default {
       var sum = 0;
       this.character.equipment.forEach((a) => {
         if(a.carried) {
-          sum += Number(a.weight);
+          sum += Number(a.weight) * Number(a.quantity);
         }
       });
       sum += (Number(this.character.cp) + Number(this.character.sp) + Number(this.character.gp) + Number(this.character.pp))/50;
@@ -393,7 +396,11 @@ export default {
       this.character.charclasses.forEach((a) => {
         casterlevel += Number(a.level) * Number(a.selsubclass.castermult);
       });
-      return this.slots[casterlevel][index] + Number(this.character.bonusslots[index]);
+      try {
+        return this.slots[casterlevel][index] + Number(this.character.bonusslots[index]);
+      } catch (e) {
+        return 0;
+      }
     },
     validate() {
       if(this.character.name === "") {
@@ -461,8 +468,14 @@ export default {
     },
     shortrest() {
       this.character.warlockslotsavailable = this.warlockSlots();
+      this.character.resources.forEach((a) => {
+        if(a.recharge === 'shortrest') {
+          a.current = a.max;
+        }
+      });
     },
     longrest() {
+      this.shortrest();
       for(var prop in this.character.availableslots) {
         if(prop !== 'cantrip') {
           this.character.availableslots[prop] = this.totalslots(prop);
@@ -477,12 +490,164 @@ export default {
           a.hitdice = a.level;
         }
       });
+      this.character.resources.forEach((a) => {
+        if(a.recharge === 'longrest') {
+          a.current = a.max;
+        }
+      });
+    },
+    addFeature() {
+      this.character.features.push(this.newfeature);
+      this.newfeature = { name: "", description: "", show: false };
+      this.newFeatureModal = false;
+    },
+    removeFeature(i) {
+      this.character.features.splice(i, 1);
     },
     addResource() {
       this.character.resources.push({ name: "", current: 0, max: 0, recharge: "never"});
     },
     removeResource(i) {
       this.character.resources.splice(i, 1);
+    },
+    populateResources() {
+      this.character.charclasses.forEach((a) => {
+        if(a.thisclass.name === "Barbarian" && a.level < 20) {
+          var rage = { name: "Rage", current: 2, max: 2, recharge: "longrest"};
+          if(Number(a.level) >= 3) {
+            rage.max++;
+            rage.current++;
+          } if(Number(a.level) >= 6) {
+            rage.max++;
+            rage.current++;
+          } if(Number(a.level) >= 12) {
+            rage.max++;
+            rage.current++;
+          } if(Number(a.level) >= 17) {
+            rage.max++;
+            rage.current++;
+          }
+          this.character.resources.push(rage);
+        }
+        if(a.thisclass.name === "Barbarian" && a.selsubclass.name === "Path of the Ancestral Guardian" && a.level >= 10) {
+          this.character.resources.push({ name: "Consult the Spirits", current: 1, max: 1, recharge: "shortrest"});
+        }
+        if(a.thisclass.name === "Barbarian" && a.selsubclass.name === "Path of the Zealot") {
+          if(a.level >= 6) {
+            this.character.resources.push({ name: "Fanatical Focus", current: 1, max: 1, recharge: "never"});
+          }
+          if(a.level >= 10) {
+            this.character.resources.push({ name: "Zealous Presence", current: 1, max: 1, recharge: "longrest"});
+          }
+        }
+        if(a.thisclass.name === "Bard") {
+          var inspiration = { name: "Bardic Inspiration", current: this.getStatMod(5), max: this.getStatMod(5), recharge: "longrest"};
+          if(Number(a.level) >= 5) {
+            inspiration.recharge = "shortrest";
+          }
+          this.character.resources.push(inspiration);
+          if(a.selsubclass.name === "College of Glamour") {
+            if(a.level >= 3) {
+              this.character.resources.push({ name: "Enthralling Performance", current: 1, max: 1, recharge: "shortrest" });
+            }
+            if(a.level >= 6) {
+              this.character.resources.push({ name: "Mantle of Majesty", current: 1, max: 1, recharge: "longrest" });
+            }
+            if(a.level >= 14) {
+              this.character.resources.push({ name: "Unbreakable Majesty", current: 1, max: 1, recharge: "shortrest" });
+            }
+          }
+          if(a.selsubclass.name === "College of Whispers") {
+            if(a.level >= 6) {
+              this.character.resources.push({ name: "Mantle of Whispers", current: 1, max: 1, recharge: "shortrest" });
+            }
+            if(a.level >= 14) {
+              this.character.resources.push({ name: "Shadow Lore", current: 1, max: 1, recharge: "longrest" });
+            }
+          }
+        }
+        if(a.thisclass.name === "Cleric") {
+          var channel = { name: "Channel Divinity", current:1, max: 1, recharge: "shortrest" };
+          if(Number(a.level) >= 6) {
+            channel.current++;
+            channel.max++;
+          }
+          if(Number(a.level) >= 18) {
+            channel.current++;
+            channel.max++;
+          }
+          this.character.resources.push(channel);
+        }
+        if(a.thisclass.name === "Druid" && a.level < 20) {
+          this.character.resources.push({ name: "Wildshape", current: 2, max: 2, recharge: "shortrest"});
+        }
+        if(a.thisclass.name === "Factotum") {
+          var num = this.getStatMod(3) + a.level/2;
+          this.character.resources.push({ name: "Epiphany Points", current: num, max: num, recharge: "shortrest"});
+        }
+        if(a.thisclass.name === "Fighter") {
+          this.character.resources.push({ name: "Second Wind", current: 1, max: 1, recharge: "shortrest"});
+          if(a.level >= 2) {
+            var surge = { name: "Action Surge", current: 1, max: 1, recharge: "shortrest"};
+            if(a.level >= 17) {
+              surge.current++;
+              surge.max++;
+            }
+            this.character.resources.push(surge);
+          }
+          if(a.level >= 9) {
+            var num = Math.floor((a.level - 5)/4);
+            this.character.resources.push({ name: "Indomitable", current: num, max: num, recharge: "shortrest"});
+          }
+          if(a.level >= 3 && a.selsubclass.name === "Battle Master") {
+            var superiority = { name: "Combat Superiority", current: 4, max: 4, recharge: "shortrest" };
+            if(a.level >= 7) {
+              superiority.current++;
+              superiority.max++;
+            }
+            if(a.level >= 15) {
+              superiority.current++;
+              superiority.max++;
+            }
+          }
+        }
+        if(a.thisclass.name === "Monk" && a.level >= 2) {
+          this.character.resources.push({ name: "Ki", current: a.level, max: a.level, recharge: "shortrest" });
+        }
+        if(a.thisclass.name === "Paladin") {
+          this.character.resources.push({ name: "Lay on Hands", current: a.level * 5, max: a.level * 5, recharge: "longrest"});
+          this.character.resources.push({ name: "Divine Sense", current: this.getStatMod(5) + 1, max: this.getStatMod(5) + 1, recharge: "longrest"});
+          if(a.level >= 3) {
+            this.character.resources.push({ name: "Channel Divinity", current: 1, max: 1, recharge: "shortrest"});
+          }
+          if(a.level >= 14) {
+            this.character.resources.push({ name: "Cleansing Touch", current: this.getStatMod(5), max: this.getStatMod(5), recharge: "longrest" });
+          }
+        }
+        if(a.thisclass.name === "Sorcerer" && a.level >= 2) {
+          this.character.resources.push({ name: "Sorcery Points", current: a.level, max: a.level, recharge: "longrest" });
+        }
+        if(a.thisclass.name === "Wizard") {
+          if(a.level >= 2 && a.selsubclass.name === "Bladesinging") {
+            this.character.resources.push({ name: "Bladesong", current: 2, max: 2, recharge: "shortrest"});
+          }
+          if(a.level >= 2 && a.selsubclass.name === "School of Abjuration") {
+            this.character.resources.push({ name: "Arcane Ward", current: 1, max: 1, recharge: "longrest"});
+          }
+          if(a.level >= 2 && a.selsubclass.name === "School of Enchantment") {
+            this.character.resources.push({ name: "Hypnotic Gaze", current: 1, max: 1, recharge: "longrest"});
+          }
+          if(a.level >= 6 && a.selsubclass.name === "School of Enchantment") {
+            this.character.resources.push({ name: "Instinctive Charm", current: 1, max: 1, recharge: "longrest"});
+          }
+          if(a.level >= 10 && a.selsubclass.name === "School of Illusion") {
+            this.character.resources.push({ name: "Illusory Self", current: 1, max: 1, recharge: "shortrest"});
+          }
+          if(a.level >= 10 && a.selsubclass.name === "School of Transmutation") {
+            this.character.resources.push({ name: "Shapechanger", current: 1, max: 1, recharge: "shortrest"});
+          }
+        }
+      });
     }
   }
 };

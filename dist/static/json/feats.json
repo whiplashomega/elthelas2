@@ -122,7 +122,7 @@
   {
     "name": "Mobile",
     "prereq": "",
-    "description": "You are exceptionally speedy and agile. You gain the following benefits:\n\n* Your speed increases by 10 feet.\n*When you use the Dash action, difficult terrain doesn’t cost you extra movement on that turn.\n* When you make a melee attack against a creature, you don’t provoke opportunity attacks from that creature for the rest of the turn, whether you hit or not."
+    "description": "You are exceptionally speedy and agile. You gain the following benefits:\n\n* Your speed increases by 10 feet.\n* When you use the Dash action, difficult terrain doesn’t cost you extra movement on that turn.\n* When you make a melee attack against a creature, you don’t provoke opportunity attacks from that creature for the rest of the turn, whether you hit or not."
   },
   {
     "name": "Moderately Armored",
@@ -132,7 +132,7 @@
   {
     "name": "Mounted Combatant",
     "prereq": "",
-    "description": "You are a dangerous foe to face while mounted. While you are mounted and aren’t incapacitated, you gain the following benefits:\n*You have advantage on melee attack rolls against any unmounted creature that is smaller than your mount.\n*You can force an attack targeted at your mount to target you instead.\n*If your mount is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+    "description": "You are a dangerous foe to face while mounted. While you are mounted and aren’t incapacitated, you gain the following benefits:\n\n* You have advantage on melee attack rolls against any unmounted creature that is smaller than your mount.\n* You can force an attack targeted at your mount to target you instead.\n* If your mount is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
   },
   {
     "name": "Observant",

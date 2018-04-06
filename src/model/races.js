@@ -13,8 +13,8 @@ const getters = {
         var b = {
           ...state.all[x],
           ...state.all[x].subraces[y],
-          name: state.all[x].subraces[y].name,
-          singular: state.all[x].subraces[y].singular,
+          name: state.all[x].name + ", " + state.all[x].subraces[y].name,
+          singular: state.all[x].singular + ", " + state.all[x].subraces[y].singular,
           traits: [ ...state.all[x].traits, ...state.all[x].subraces[y].traits ]
         };
         if (state.all[x].subraces[y].id === "default") {
