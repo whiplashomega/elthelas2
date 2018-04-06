@@ -12,9 +12,7 @@ tags: [wizard, level6, transmutation]
 
 **Range**: Touch
 
-**Components**: V, S, M (clay, ash, and mandrake root, all
-of which the spell consumes, and a jewel-encrusted
-dagger worth at least 1,000 gp)
+**Components**: V, S, M (clay, ash, and mandrake root, all of which the spell consumes, and a jewel-encrusted dagger worth at least 1,000 gp)
 
 **Duration**: Instantaneous
 

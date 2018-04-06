@@ -218,6 +218,7 @@
                       <div class="smalltext" v-for="(armor, index) in character.armors" v-bind:key="index">
                         {{ armor.name }}, {{armor.type}}, AC {{armor.ac}} <input type="checkbox" v-model="armor.equipped" />
                         <button type="button" class="print-hide btn-symbol" @click="armor.edit = true">&#9998;</button>
+                        <button type="button" @click="removeArmor(index)" class="print-hide btn btn-sm btn-danger">X</button>
                         <b-modal v-model="armor.edit">
                           Name:
                           <input type="text" class="form-control" v-model="armor.name" />
@@ -232,9 +233,8 @@
                           AC:
                           <input type="number" v-model="armor.ac" class="form-control" />
                         </b-modal>
-                        <button type="button" @click="removeArmor(index)" class="print-hide btn btn-sm btn-danger">X</button>
                       </div>
-                      <button type="button" @click="armormodal = true" class="btn btn-sm btn-primary">+</button>
+                      <button type="button" @click="armormodal = true" class="btn btn-sm btn-primary print-hide">+</button>
                       <b-modal v-model="armormodal" @ok="addArmor()">
                         Name:
                         <input type="text" class="form-control" v-model="newarmor.name" />
@@ -320,6 +320,7 @@
                     <span v-if="attack.bonus > -1">+</span>{{getAttackBonus(attack)}} to hit
                     ({{attack.damage}}<span v-if="getAttackDamageBonus(attack) > 0"> + {{getAttackDamageBonus(attack)}}</span><span v-if="getAttackDamageBonus(attack) < 0"> - {{getAttackDamageBonus(attack)}}</span> {{attack.dtype}} damage).
                     <button type="button" class="print-hide btn-symbol" @click="attack.edit = true">&#9998;</button>
+                    <button type="button" @click="removeAttack(index)" class="print-hide btn btn-sm btn-danger">X</button>
                     <b-modal v-model="attack.edit">
                       Name:
                       <input type="text" class="form-control" v-model="attack.name" />
@@ -364,7 +365,6 @@
                         <option>Thunder</option>
                       </select>
                     </b-modal>
-                    <button type="button" @click="removeAttack(index)" class="print-hide btn btn-sm btn-danger">X</button>
                   </div>
                   <button type="button" @click="attackmodal = true" class="print-hide btn btn-primary btn-sm">+</button>
                   <b-modal v-model="attackmodal" title="Add Attack" @ok="addAttack()">
@@ -417,7 +417,7 @@
                   Injuries/Madnesses
                   <div v-for="(injury, index) in character.injuries" v-bind:key="index">
                     <input type="text" v-model="injury.name" class="charsheet-text col-9" />
-                    <button class="btn btn-sm btn-danger" type="button" @click="removeInjury(index)">X</button>
+                    <button class="btn btn-sm btn-danger print-hide" type="button" @click="removeInjury(index)">X</button>
                   </div>
                   <button class="btn btn-sm btn-primary print-hide" type="button" @click="addInjury">+</button>
                 </div>
@@ -528,7 +528,7 @@
             </div>
           </div>
         </div>
-        <hr style="page-break-after: always" />
+        <br style="page-break-after: always" />
         <!-- Spells -->
         <div class="row">
           <div class="col-12">
@@ -546,15 +546,15 @@
                 <button class="btn btn-sm btn-primary" @click="displayLevel = 'level8'">8</button>
                 <button class="btn btn-sm btn-primary" @click="displayLevel = 'level9'">9</button>
               </div>
-              <span class="smalltext"><input type="checkbox" v-model="preparedonly" />Prepared Only</span><br />
-              {{displayLevel}}
-              slots: <input type="number" v-model="character.availableslots[displayLevel]" class="charsheet-num" /> / {{ totalslots(displayLevel) }}<br />
+              <span class="smalltext print-hide"><input type="checkbox" v-model="preparedonly" />Prepared Only</span><br />
+              <span class="print-hide">{{displayLevel}}
+              slots: <input type="number" v-model="character.availableslots[displayLevel]" class="charsheet-num" /> / {{ totalslots(displayLevel) }}</span><br />
               <span v-if="warlockSlots() > 0">Warlock Slots: <input type="number" v-model="character.warlockslotsavailable" class="charsheet-num" /> / {{ warlockSlots() }} level {{ warlockSlotLevel() }} slots</span>
               <div class="smalltext print-hide">
                 <table class="table table-sm">
                   <thead><tr><th>Spell</th><th>Casting Time</th><th>Duration</th><th>-</th></tr></thead>
                   <tbody>
-                    <tr v-for="(spell, index) in character.spells[displayLevel]" v-bind:key="spell.title" v-if="(spell.prepared && preparedonly) || !preparedonly">
+                    <tr v-for="(spell, index) in character.spells[displayLevel]" v-bind:key="index" v-if="(spell.prepared && preparedonly) || !preparedonly">
                       <td>
                         <input type="checkbox" v-model="spell.prepared" /><span class="clickable" @click="spellDetail(spell)">{{spell.title}}</span>
                       </td>
@@ -567,10 +567,34 @@
               </div>
               <div class="smalltext screen-hide">
                 <table class="table table-sm">
-                  <thead><tr><th>Spell</th><th>Casting Time</th><th>Duration</th><th>Level</th><th>-</th></tr></thead>
+                  <thead><tr><th>Spell</th><th>Casting Time</th><th>Duration</th></tr></thead>
                   <tbody>
-                    <tr><td colspan="2">Cantrips</td><td colspan="2"></td></tr>
-                    <tr v-for="(spell, index) in character.spells['cantrip']" v-bind:key="spell.title">
+                    <tr><td colspan="2">Cantrips</td><td></td></tr>
+                    <tr v-for="(spell, index) in character.spells['cantrip']" v-bind:key="index">
+                      <td>
+                        <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
+                      </td>
+                      <td>{{spell.castingTime}}</td>
+                      <td>{{spell.duration}}</td>
+                    </tr>
+                    <tr><td colspan="2">Level 1</td><td>{{totalslots('level1')}} Slots</td></tr>
+                    <tr v-for="(spell, index) in character.spells['level1']" v-bind:key="index">
+                      <td>
+                        <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
+                      </td>
+                      <td>{{spell.castingTime}}</td>
+                      <td>{{spell.duration}}</td>
+                    </tr>
+                    <tr><td colspan="2">Level 2</td><td>{{totalslots('level2')}} Slots</td></tr>
+                    <tr v-for="(spell, index) in character.spells['level2']" v-bind:key="index">
+                      <td>
+                        <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
+                      </td>
+                      <td>{{spell.castingTime}}</td>
+                      <td>{{spell.duration}}</td>
+                    </tr>
+                    <tr><td colspan="2">Level 3</td><td>{{totalslots('level3')}} Slots</td></tr>
+                    <tr v-for="(spell, index) in character.spells['level3']" v-bind:key="index">
                       <td>
                         <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
                       </td>
@@ -578,86 +602,53 @@
                       <td>{{spell.duration}}</td>
                       <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
                     </tr>
-                    <tr><td colspan="2">Level 1</td><td colspan="2">{{totalslots('level1')}}</td></tr>
-                    <tr v-for="(spell, index) in character.spells['level1']" v-bind:key="spell.title">
+                    <tr><td colspan="2">Level 4</td><td colspan="2">{{totalslots('level4')}} Slots</td></tr>
+                    <tr v-for="(spell, index) in character.spells['level4']" v-bind:key="index">
                       <td>
                         <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
                       </td>
                       <td>{{spell.castingTime}}</td>
                       <td>{{spell.duration}}</td>
-                      <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
                     </tr>
-                    <tr><td colspan="2">Level 2</td><td colspan="2">{{totalslots('level2')}}</td></tr>
-                    <tr v-for="(spell, index) in character.spells['level2']" v-bind:key="spell.title">
+                    <tr><td colspan="2">Level 5</td><td>{{totalslots('level5')}} Slots</td></tr>
+                    <tr v-for="(spell, index) in character.spells['level5']" v-bind:key="index">
                       <td>
                         <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
                       </td>
                       <td>{{spell.castingTime}}</td>
                       <td>{{spell.duration}}</td>
-                      <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
                     </tr>
-                    <tr><td colspan="2">Level 3</td><td colspan="2">{{totalslots('level3')}}</td></tr>
-                    <tr v-for="(spell, index) in character.spells['level3']" v-bind:key="spell.title">
+                    <tr><td colspan="2">Level 6</td><td>{{totalslots('level6')}} Slots</td></tr>
+                    <tr v-for="(spell, index) in character.spells['level6']" v-bind:key="index">
                       <td>
                         <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
                       </td>
                       <td>{{spell.castingTime}}</td>
                       <td>{{spell.duration}}</td>
-                      <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
                     </tr>
-                    <tr><td colspan="2">Level 4</td><td colspan="2">{{totalslots('level4')}}</td></tr>
-                    <tr v-for="(spell, index) in character.spells['level4']" v-bind:key="spell.title">
+                    <tr><td colspan="2">Level 7</td><td>{{totalslots('level7')}} Slots</td></tr>
+                    <tr v-for="(spell, index) in character.spells['level7']" v-bind:key="index">
                       <td>
                         <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
                       </td>
                       <td>{{spell.castingTime}}</td>
                       <td>{{spell.duration}}</td>
-                      <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
                     </tr>
-                    <tr><td colspan="2">Level 5</td><td colspan="2">{{totalslots('level5')}}</td></tr>
-                    <tr v-for="(spell, index) in character.spells['level5']" v-bind:key="spell.title">
+                    <tr><td colspan="2">Level 8</td><td>{{totalslots('level8')}} Slots</td></tr>
+                    <tr v-for="(spell, index) in character.spells['level8']" v-bind:key="index">
                       <td>
                         <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
                       </td>
                       <td>{{spell.castingTime}}</td>
                       <td>{{spell.duration}}</td>
-                      <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
                     </tr>
-                    <tr><td colspan="2">Level 6</td><td colspan="2">{{totalslots('level6')}}</td></tr>
-                    <tr v-for="(spell, index) in character.spells['level6']" v-bind:key="spell.title">
+                    <tr><td colspan="2">Level 9</td><td>{{totalslots('level9')}} Slots</td></tr>
+                    <tr v-for="(spell, index) in character.spells['level9']" v-bind:key="index">
                       <td>
                         <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
                       </td>
                       <td>{{spell.castingTime}}</td>
                       <td>{{spell.duration}}</td>
-                      <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
-                    </tr>
-                    <tr><td colspan="2">Level 7</td><td colspan="2">{{totalslots('level7')}}</td></tr>
-                    <tr v-for="(spell, index) in character.spells['level7']" v-bind:key="spell.title">
-                      <td>
-                        <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
-                      </td>
-                      <td>{{spell.castingTime}}</td>
-                      <td>{{spell.duration}}</td>
-                      <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
-                    </tr>
-                    <tr><td colspan="2">Level 8</td><td colspan="2">{{totalslots('level8')}}</td></tr>
-                    <tr v-for="(spell, index) in character.spells['level8']" v-bind:key="spell.title">
-                      <td>
-                        <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
-                      </td>
-                      <td>{{spell.castingTime}}</td>
-                      <td>{{spell.duration}}</td>
-                      <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
-                    </tr>
-                    <tr><td colspan="2">Level 9</td><td colspan="2">{{totalslots('level9')}}</td></tr>
-                    <tr v-for="(spell, index) in character.spells['level9']" v-bind:key="spell.title">
-                      <td>
-                        <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
-                      </td>
-                      <td>{{spell.castingTime}}</td>
-                      <td>{{spell.duration}}</td>
-                      <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
                     </tr>
                   </tbody>
                 </table>

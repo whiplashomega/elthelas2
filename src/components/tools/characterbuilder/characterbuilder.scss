@@ -19,8 +19,8 @@
 }
 
 .btn-sm {
-  padding: .05rem .4rem;
-  font-size: 0.7rem;
+  padding: .05em .4em;
+  font-size: 0.8em;
 }
 .btn-symbol {
   background: none;
@@ -40,7 +40,7 @@
 }
 
 #attackdiv {
-  max-height: 500px;
+  max-height: 350px;
 }
 
 .clickable {
@@ -52,20 +52,25 @@
   text-decoration:underline;
 }
 #featurebox {
+  p {
+    margin-bottom: 0.5em;
+  }
+  h4 {
+    font-size: 1.5em;
+  }
   max-height: 720px;
 }
 
 #profbox {
   height: 400px;
-  max-height: 560px;
 }
 
 #armorbox {
-  max-height: 385px;
+  max-height: 325px;
 }
 
 #equipmentbox {
-  max-height: 600px;
+  max-height: 500px;
 }
 .center {
   text-align: center;
