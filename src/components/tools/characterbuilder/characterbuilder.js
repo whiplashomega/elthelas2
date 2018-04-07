@@ -101,6 +101,7 @@ export default {
     return {
       attackmodal: false,
       preparedonly: false,
+      mobile: false,
       spellfilter: "",
       newattack: { name: "", stat: 0, bonus: 0, addstat: false, damage: "", range: "", type: "", dtype: "", edit: false, damagebonus: 0, prof: true },
       armormodal: false,
@@ -671,6 +672,11 @@ export default {
           }
         }
       });
+    }
+  },
+  mounted () {
+    if(window.outerWidth < 500) {
+      this.mobile = true;
     }
   },
   updated() {
