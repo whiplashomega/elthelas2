@@ -1,4 +1,5 @@
 import { mapGetters } from 'vuex';
+import Vue from 'vue';
 
 export default {
   computed: {
@@ -12,6 +13,7 @@ export default {
       cities: 'allCityNames',
       factions: 'allOrganizations',
       feats: 'allFeats',
+      googletoken: 'getGoogleToken'
     }),
     featsort () {
       var feats = [ ...this.feats, { name: "Ability Score Increase", prereq: "", description: "Increase one ability score by 2 or 2 ability scores by 1" } ];
@@ -112,6 +114,7 @@ export default {
   data () {
     return {
       attackmodal: false,
+      filelist: [],
       preparedonly: false,
       mobile: false,
       classfilter: "all",
@@ -216,6 +219,52 @@ export default {
     };
   },
   methods: {
+    getDriveFiles() {
+      
+      this.$root.$emit('bv::show::modal','loading');
+      Vue.http.get('https://www.googleapis.com/drive/v3/files', { params: { access_token: this.googletoken, q: "mimeType contains 'json'"} }).then((response) => {
+        this.filelist = response.body.files;
+        console.log(this.filelist);
+        this.$root.$emit('bv::hide::modal','loading');
+        this.$root.$emit('bv::show::modal','drivemodal');
+      });
+    },
+    loadFromDrive(id) {
+      this.$root.$emit('bv::hide::modal','drivemodal');
+      this.$root.$emit('bv::show::modal','loading');
+      Vue.http.get('https://www.googleapis.com/drive/v3/files/' + id, { params: { access_token: this.googletoken, alt: "media"}}).then((response) => {
+        for(var x in response.body) {
+          if (response.body.hasOwnProperty(x)) {
+            this.character[x] = response.body[x];
+          }
+        }
+        this.$root.$emit('bv::hide::modal','loading');
+      });
+    },
+    saveToDrive(id) {
+      const boundary = '-------314159265358979323846';
+      const delimiter = "\r\n--" + boundary + "\r\n";
+      const close_delim = "\r\n--" + boundary + "--";
+      
+      var metadata = JSON.stringify({
+        name: this.character.name + '.json',
+        mimeType: 'application/json'
+      });
+      this.$root.$emit('bv::show::modal','loading');
+      var payload = delimiter +
+      'Content-Type: application/json\r\n\r\n' +
+      metadata +
+      delimiter +
+      'Content-Type: application/json\r\n\r\n' + 
+      JSON.stringify(this.character) +
+      close_delim;
+      Vue.http.post('https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart&name='+ this.character.name +'&access_token=' + this.googletoken, 
+        payload, 
+        { headers: { 'Content-Type': 'multipart/related; boundary="' + boundary + '"'}}).then((a) => {
+        console.log(a);
+        this.$root.$emit('bv::hide::modal','loading');
+      });
+    },
     totalGold() {
       return Number(this.character.cp)/100 + 
         Number(this.character.sp)/10 + 
@@ -411,7 +460,10 @@ export default {
       } else {
         var level = spell.level;
       }
-      this.character.spells[level].push(spell);
+      var exists = this.character.spells[level].contains(spell);
+      if(!exists) {
+        this.character.spells[level].push(spell);
+      }
       this.spellModal = false;
     },
     totalslots(level) {

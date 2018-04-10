@@ -3,7 +3,8 @@
 import Vue from 'vue';
 
 const state = {
-  loggedin: localStorage.getItem('token')
+  loggedin: localStorage.getItem('token'),
+  googletoken: ""
 };
 
 const getters = {
@@ -16,6 +17,9 @@ const getters = {
   },
   getUserInfo: (state) => {
     return state.loggedin;
+  },
+  getGoogleToken: (state) => {
+    return state.googletoken;
   }
 };
 
@@ -73,6 +77,9 @@ const mutations = {
   },
   "LOGOUT"(state) {
     state.loggedin = false;
+  },
+  setOAuth(state, {token}) {
+    state.googletoken = token;
   }
 };
 

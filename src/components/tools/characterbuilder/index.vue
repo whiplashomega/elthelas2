@@ -454,10 +454,8 @@
                     </button>
                     <span v-if="character.background.feature.show" v-html="$options.filters.marked(character.background.feature.description)"></span>
                   </p>
-                  <div  v-for="(trait, index) in character.race.traits" class="smalltext" v-bind:key="index">
-                    <p v-if="typeof trait === 'string'" v-html="$options.filters.marked(trait)">
-                    </p>
-                    <p v-else>
+                  <div  v-for="trait in character.race.traits" class="smalltext" v-bind:key="trait.name">
+                    <p>
                       <span :title="trait.description">{{trait.name}}</span>
                     <button class="btn btn-sm print-hide float-right" type="button" @click="setval(trait, 'show', true)"
                       v-if="!trait.show">
@@ -554,7 +552,7 @@
                 <table class="table table-sm">
                   <thead><tr><th>Spell</th><th>Casting Time</th><th>Duration</th><th>-</th></tr></thead>
                   <tbody>
-                    <tr v-for="(spell, index) in character.spells[displayLevel]" v-bind:key="index" v-if="(spell.prepared && preparedonly) || !preparedonly">
+                    <tr v-for="spell in character.spells[displayLevel]" v-bind:key="spell.title" v-if="(spell.prepared && preparedonly) || !preparedonly">
                       <td>
                         <input type="checkbox" v-model="spell.prepared" /><span class="clickable" @click="spellDetail(spell)">{{spell.title}}</span>
                       </td>
@@ -570,7 +568,7 @@
                   <thead><tr><th>Spell</th><th>Casting Time</th><th>Duration</th></tr></thead>
                   <tbody>
                     <tr><td colspan="2">Cantrips</td><td></td></tr>
-                    <tr v-for="(spell, index) in character.spells['cantrip']" v-bind:key="index">
+                    <tr v-for="spell in character.spells['cantrip']" v-bind:key="spell.title">
                       <td>
                         <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
                       </td>
@@ -578,7 +576,7 @@
                       <td>{{spell.duration}}</td>
                     </tr>
                     <tr><td colspan="2">Level 1</td><td>{{totalslots('level1')}} Slots</td></tr>
-                    <tr v-for="(spell, index) in character.spells['level1']" v-bind:key="index">
+                    <tr v-for="spell in character.spells['level1']" v-bind:key="spell.title">
                       <td>
                         <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
                       </td>
@@ -586,7 +584,7 @@
                       <td>{{spell.duration}}</td>
                     </tr>
                     <tr><td colspan="2">Level 2</td><td>{{totalslots('level2')}} Slots</td></tr>
-                    <tr v-for="(spell, index) in character.spells['level2']" v-bind:key="index">
+                    <tr v-for="spell in character.spells['level2']" v-bind:key="spell.title">
                       <td>
                         <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
                       </td>
@@ -594,7 +592,7 @@
                       <td>{{spell.duration}}</td>
                     </tr>
                     <tr><td colspan="2">Level 3</td><td>{{totalslots('level3')}} Slots</td></tr>
-                    <tr v-for="(spell, index) in character.spells['level3']" v-bind:key="index">
+                    <tr v-for="spell in character.spells['level3']" v-bind:key="spell.title">
                       <td>
                         <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
                       </td>
@@ -603,7 +601,7 @@
                       <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
                     </tr>
                     <tr><td colspan="2">Level 4</td><td colspan="2">{{totalslots('level4')}} Slots</td></tr>
-                    <tr v-for="(spell, index) in character.spells['level4']" v-bind:key="index">
+                    <tr v-for="spell in character.spells['level4']" v-bind:key="spell.title">
                       <td>
                         <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
                       </td>
@@ -611,7 +609,7 @@
                       <td>{{spell.duration}}</td>
                     </tr>
                     <tr><td colspan="2">Level 5</td><td>{{totalslots('level5')}} Slots</td></tr>
-                    <tr v-for="(spell, index) in character.spells['level5']" v-bind:key="index">
+                    <tr v-for="spell in character.spells['level5']" v-bind:key="spell.title">
                       <td>
                         <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
                       </td>
@@ -619,7 +617,7 @@
                       <td>{{spell.duration}}</td>
                     </tr>
                     <tr><td colspan="2">Level 6</td><td>{{totalslots('level6')}} Slots</td></tr>
-                    <tr v-for="(spell, index) in character.spells['level6']" v-bind:key="index">
+                    <tr v-for="spell in character.spells['level6']" v-bind:key="spell.title">
                       <td>
                         <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
                       </td>
@@ -627,7 +625,7 @@
                       <td>{{spell.duration}}</td>
                     </tr>
                     <tr><td colspan="2">Level 7</td><td>{{totalslots('level7')}} Slots</td></tr>
-                    <tr v-for="(spell, index) in character.spells['level7']" v-bind:key="index">
+                    <tr v-for="spell in character.spells['level7']" v-bind:key="spell.title">
                       <td>
                         <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
                       </td>
@@ -635,7 +633,7 @@
                       <td>{{spell.duration}}</td>
                     </tr>
                     <tr><td colspan="2">Level 8</td><td>{{totalslots('level8')}} Slots</td></tr>
-                    <tr v-for="(spell, index) in character.spells['level8']" v-bind:key="index">
+                    <tr v-for="spell in character.spells['level8']" v-bind:key="spell.title">
                       <td>
                         <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
                       </td>
@@ -643,7 +641,7 @@
                       <td>{{spell.duration}}</td>
                     </tr>
                     <tr><td colspan="2">Level 9</td><td>{{totalslots('level9')}} Slots</td></tr>
-                    <tr v-for="(spell, index) in character.spells['level9']" v-bind:key="index">
+                    <tr v-for="spell in character.spells['level9']" v-bind:key="spell.title">
                       <td>
                         <input type="checkbox" v-model="spell.prepared" /><a href="#" @click="spellDetail(spell)">{{spell.title}}</a>
                       </td>
@@ -715,7 +713,7 @@
             <div class="charsheet-static smalltext">
               <h4>Various Resources</h4>
               <div class="row" v-for="(resource, index) in character.resources"
-                v-bind:key="index">
+                :key="index">
                 <div class="col-5">
                   <input type="text" v-model="resource.name" class="charsheet-text" />
                 </div>
@@ -742,6 +740,18 @@
             <input type="button" value="Load" @click="load()" class="btn btn-success" />
           </div>
           <input type="file" id="fileload" class="col-8" />
+        </div>
+        <div class="row" v-if="googletoken">
+          <div class="col" style="margin-top:15px;">
+            <img src="https://developers.google.com/drive/images/drive_icon.png" alt="Google Drive" style="width:38px;height:38px;">
+            <div class="btn-group">
+              <button type="button" @click="getDriveFiles()" class="btn btn-primary">Load</button>
+              <button type="button" @click="saveToDrive()" class="btn btn-success">Save</button>
+            </div>
+          </div>
+        </div>
+        <div class="row" v-else>
+          <p class="col">Login to Google from the Menu to enable load and save from drive.</p>
         </div>
         <div class="row" style="margin-top: 10px;">
           <div class="btn-group col-12">
@@ -1658,6 +1668,18 @@
             </div>
             <input type="file" id="fileload" class="col-12" />
           </div>
+          <div class="row" v-if="googletoken">
+            <div class="col" style="margin-top:15px;">
+              <img src="https://developers.google.com/drive/images/drive_icon.png" alt="Google Drive" style="width:38px;height:38px;">
+              <div class="btn-group">
+                <button type="button" @click="getDriveFiles()" class="btn btn-primary">Load</button>
+                <button type="button" @click="saveToDrive()" class="btn btn-success">Save</button>
+              </div>
+            </div>
+          </div>
+          <div class="row" v-else>
+            <p class="col">Login to Google from the Menu to enable load and save from drive.</p>
+          </div>
           <div class="row" style="margin-top: 10px;">
             <div class="btn-group col-12">
               <button class="btn btn-primary" @click="shortrest()">Short Rest</button>
@@ -1762,6 +1784,16 @@
         </b-tab>
       </b-tabs>
     </div>
+    <b-modal id="drivemodal" title="Load File from Google Drive">
+      <div>
+        <div v-for="(file, index) in filelist" v-bind:key="index">
+          <a class="clickable" @click="loadFromDrive(file.id)">{{file.name}}</a>
+        </div>
+      </div>
+    </b-modal>
+    <b-modal id="loading"
+      no-close-on-backdrop no-close-on-esc hide-header hide-footer
+    ><img src="/static/images/giphy.gif" alt="Loading" /></b-modal>
   </div>
 </template>
 <style src="./characterbuilder.scss" scoped lang="scss"></style>

@@ -66,6 +66,7 @@
               <!-- When Logged Out -->
               <li class="dropdown-item" v-if="!loggedin"><a @click="showRegister = true">Register</a></li>
               <li class="dropdown-item" v-if="!loggedin"><a @click="showLogin = true">Login</a></li>
+              <li class="dropdown-item"><a @click="googleSignIn()">Google Sign In</a></li>
             </ul>
           </div>
           <div class="search-container"><gcse:search></gcse:search></div>
