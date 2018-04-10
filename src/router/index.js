@@ -27,6 +27,7 @@ import book4menu from '../components/tools/book4menu';
 import charbuilder from '../components/tools/characterbuilder';
 import npcgen from '@/components/tools/npcgenerator';
 import feats from '@/components/options/feats';
+import privacy from '@/components/privacy';
 
 Vue.use(Router);
 
@@ -309,6 +310,17 @@ var router = new Router({
       path: "/options/feats",
       components: {
         default: feats,
+        sidebar: options
+      }
+    },
+    {
+      name: "privacy",
+      meta: {
+        title: "Privacy Policy"
+      },
+      path: "/privacy-policy",
+      components: {
+        default: privacy,
         sidebar: options
       }
     }

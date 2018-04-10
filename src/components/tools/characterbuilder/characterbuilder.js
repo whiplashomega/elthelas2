@@ -66,7 +66,13 @@ export default {
       var filters = this.spellfilter.split(' ');
       if(this.spellfilter === "") {
         return this.spells.filter((a) => {
-          if(this.levelfilter === "all" || a.level === this.levelfilter) {
+          var inclass = a.tags.some((el) => {
+            if(this.classfilter === "all") {
+              return true;
+            }
+            return this.classfilter === el;
+          });
+          if((inclass && this.levelfilter === "all") || (inclass && a.level === this.levelfilter)) {
             return true;
           }
           return false;
@@ -88,7 +94,13 @@ export default {
             }
           }
           if(successarray.length >= filters.length) {
-            if(this.levelfilter === "all" || a.level === this.levelfilter) {
+            var inclass = a.tags.some((el) => {
+              if(this.classfilter === "all") {
+                return true;
+              }
+              return this.classfilter === el;
+            });
+            if((inclass && this.levelfilter === "all") || (inclass && a.level === this.levelfilter)) {
               success = true;
             }
           }
@@ -102,6 +114,8 @@ export default {
       attackmodal: false,
       preparedonly: false,
       mobile: false,
+      classfilter: "all",
+      levelfilter: "all",
       spellfilter: "",
       newattack: { name: "", stat: 0, bonus: 0, addstat: false, damage: "", range: "", type: "", dtype: "", edit: false, damagebonus: 0, prof: true },
       armormodal: false,
@@ -114,7 +128,6 @@ export default {
       spellDetailModal: false,
       detailspell: { level: "cantrip", description: "", tags: [] },
       displayLevel: "cantrip",
-      levelfilter: "all",
       slots: [
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [2, 0, 0, 0, 0, 0, 0, 0, 0],
