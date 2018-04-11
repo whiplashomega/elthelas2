@@ -496,8 +496,8 @@
                       </p>
                     </div>
                   </div>
-                  <div v-if="level() >= 1" v-html="$options.filters.marked(character.faction.level1)"></div>
-                  <div v-if="level() >= 10" v-html="$options.filters.marked(character.faction.level10)"></div>
+                  <div v-if="level() >= 1" v-html="$options.filters.marked(character.faction.level1)" class="smalltext"></div>
+                  <div v-if="level() >= 10" v-html="$options.filters.marked(character.faction.level10)" class="smalltext"></div>
                   <div class="smalltext" v-for="(feature, index) in character.features" v-bind:key="index">
                     <p>
                       <span :title="feature.description">{{feature.name}}</span>
@@ -545,6 +545,28 @@
                 <button class="btn btn-sm btn-primary" @click="displayLevel = 'level9'">9</button>
               </div>
               <span class="smalltext print-hide"><input type="checkbox" v-model="preparedonly" />Prepared Only</span><br />
+              <span class="smalltext">Save DCs and Attack Mods</span>
+              <table class="table table-sm smalltext">
+                <tr>
+                  <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
+                </tr>
+                <tr>
+                  <td>{{getSaveDC(0)}}</td>
+                  <td>{{getSaveDC(1)}}</td>
+                  <td>{{getSaveDC(2)}}</td>
+                  <td>{{getSaveDC(3)}}</td>
+                  <td>{{getSaveDC(4)}}</td>
+                  <td>{{getSaveDC(5)}}</td>
+                </tr>
+                <tr>
+                  <td>+{{getAttBonus(0)}}</td>
+                  <td>+{{getAttBonus(1)}}</td>
+                  <td>+{{getAttBonus(2)}}</td>
+                  <td>+{{getAttBonus(3)}}</td>
+                  <td>+{{getAttBonus(4)}}</td>
+                  <td>+{{getAttBonus(5)}}</td>
+                </tr>
+              </table>
               <span class="print-hide">{{displayLevel}}
               slots: <input type="number" v-model="character.availableslots[displayLevel]" class="charsheet-num" /> / {{ totalslots(displayLevel) }}</span><br />
               <span v-if="warlockSlots() > 0">Warlock Slots: <input type="number" v-model="character.warlockslotsavailable" class="charsheet-num" /> / {{ warlockSlots() }} level {{ warlockSlotLevel() }} slots</span>
@@ -944,6 +966,30 @@
             level 9
           </div>
         </div>
+        <h5>Save DC Bonus</h5>
+        <table class="table table-sm">
+          <tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr>
+          <tr>
+            <td><input type="number" class="charsheet-num" v-model="character.saveDCBonus[0]" /></td>
+            <td><input type="number" class="charsheet-num" v-model="character.saveDCBonus[1]" /></td>
+            <td><input type="number" class="charsheet-num" v-model="character.saveDCBonus[2]" /></td>
+            <td><input type="number" class="charsheet-num" v-model="character.saveDCBonus[3]" /></td>
+            <td><input type="number" class="charsheet-num" v-model="character.saveDCBonus[4]" /></td>
+            <td><input type="number" class="charsheet-num" v-model="character.saveDCBonus[5]" /></td>
+          </tr>
+        </table>
+        <h5>Spell Attack Bonus</h5>
+        <table class="table table-sm">
+          <tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr>
+          <tr>
+            <td><input type="number" class="charsheet-num" v-model="character.attBonus[0]" /></td>
+            <td><input type="number" class="charsheet-num" v-model="character.attBonus[1]" /></td>
+            <td><input type="number" class="charsheet-num" v-model="character.attBonus[2]" /></td>
+            <td><input type="number" class="charsheet-num" v-model="character.attBonus[3]" /></td>
+            <td><input type="number" class="charsheet-num" v-model="character.attBonus[4]" /></td>
+            <td><input type="number" class="charsheet-num" v-model="character.attBonus[5]" /></td>
+          </tr>
+        </table>
       </div>
     </div>
     <div v-if="mobile">
@@ -1398,6 +1444,28 @@
                   <button class="btn btn-sm btn-primary" @click="displayLevel = 'level8'">8</button>
                   <button class="btn btn-sm btn-primary" @click="displayLevel = 'level9'">9</button>
                 </div><br />
+                Save DCs and Attack Mods
+                <table class="table table-sm">
+                  <tr>
+                    <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
+                  </tr>
+                  <tr>
+                    <td>{{getSaveDC(0)}}</td>
+                    <td>{{getSaveDC(1)}}</td>
+                    <td>{{getSaveDC(2)}}</td>
+                    <td>{{getSaveDC(3)}}</td>
+                    <td>{{getSaveDC(4)}}</td>
+                    <td>{{getSaveDC(5)}}</td>
+                  </tr>
+                  <tr>
+                    <td>{{getAttBonus(0)}}</td>
+                    <td>{{getAttBonus(1)}}</td>
+                    <td>{{getAttBonus(2)}}</td>
+                    <td>{{getAttBonus(3)}}</td>
+                    <td>{{getAttBonus(4)}}</td>
+                    <td>{{getAttBonus(5)}}</td>
+                  </tr>
+                </table>
                 <span class="smalltext print-hide"><input type="checkbox" v-model="preparedonly" />Prepared Only</span><br />
                 <span class="print-hide">{{displayLevel}}
                 slots: <input type="number" v-model="character.availableslots[displayLevel]" class="charsheet-num" /> / {{ totalslots(displayLevel) }}</span><br />
@@ -1781,15 +1849,43 @@
               level 9
             </div>
           </div>
+          <h5>Save DC Bonus</h5>
+          <table class="table table-sm">
+            <tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr>
+            <tr>
+              <td><input type="number" class="charsheet-num" v-model="character.saveDCBonus[0]" /></td>
+              <td><input type="number" class="charsheet-num" v-model="character.saveDCBonus[1]" /></td>
+              <td><input type="number" class="charsheet-num" v-model="character.saveDCBonus[2]" /></td>
+              <td><input type="number" class="charsheet-num" v-model="character.saveDCBonus[3]" /></td>
+              <td><input type="number" class="charsheet-num" v-model="character.saveDCBonus[4]" /></td>
+              <td><input type="number" class="charsheet-num" v-model="character.saveDCBonus[5]" /></td>
+            </tr>
+          </table>
+          <h5>Spell Attack Bonus</h5>
+          <table class="table table-sm">
+            <tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr>
+            <tr>
+              <td><input type="number" class="charsheet-num" v-model="character.attBonus[0]" /></td>
+              <td><input type="number" class="charsheet-num" v-model="character.attBonus[1]" /></td>
+              <td><input type="number" class="charsheet-num" v-model="character.attBonus[2]" /></td>
+              <td><input type="number" class="charsheet-num" v-model="character.attBonus[3]" /></td>
+              <td><input type="number" class="charsheet-num" v-model="character.attBonus[4]" /></td>
+              <td><input type="number" class="charsheet-num" v-model="character.attBonus[5]" /></td>
+            </tr>
+          </table>
         </b-tab>
       </b-tabs>
     </div>
     <b-modal id="drivemodal" title="Load File from Google Drive">
-      <div>
-        <div v-for="(file, index) in filelist" v-bind:key="index">
-          <a class="clickable" @click="loadFromDrive(file.id)">{{file.name}}</a>
-        </div>
-      </div>
+      <table class="table table-striped">
+        <tr>
+          <th>File Name</th><th>Modified Date</th>
+        </tr>
+        <tr v-for="(file, index) in filelist" v-bind:key="index">
+          <td><span class="clickable" @click="loadFromDrive(file.id)">{{file.name}}</span></td>
+          <td>{{file.modifiedTime | date}}</td>
+        </tr>
+      </table>
     </b-modal>
     <b-modal id="loading"
       no-close-on-backdrop no-close-on-esc hide-header hide-footer

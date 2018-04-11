@@ -214,15 +214,23 @@ export default {
         availableslots: { cantrip: 0, level1: 0, level2: 0, level3: 0, level4: 0, level5: 0, level6: 0, level7: 0, level8: 0, level9: 0 },
         bonusslots: [0, 0, 0, 0, 0, 0, 0, 0, 0],
         resources: [],
-        features: []
+        features: [],
+        saveDCBonus: [0, 0, 0, 0, 0, 0],
+        attBonus: [0, 0, 0, 0, 0, 0]
       }
     };
+  },
+  filters: {
+    date (value) {
+      var date = new Date(value);
+      return date.toLocaleString();
+    }
   },
   methods: {
     getDriveFiles() {
       
       this.$root.$emit('bv::show::modal','loading');
-      Vue.http.get('https://www.googleapis.com/drive/v3/files', { params: { access_token: this.googletoken, q: "mimeType contains 'json'"} }).then((response) => {
+      Vue.http.get('https://www.googleapis.com/drive/v3/files', { params: { access_token: this.googletoken, q: "mimeType contains 'json'", fields: 'files(id, name, size, modifiedTime)'} }).then((response) => {
         this.filelist = response.body.files;
         console.log(this.filelist);
         this.$root.$emit('bv::hide::modal','loading');
@@ -304,6 +312,12 @@ export default {
     },
     getSaveMod(i) {
       return this.getStatMod(i) + Number(this.character.savebonus[i]) + this.character.saves[i] * this.profbonus();
+    },
+    getSaveDC(i) {
+      return 8 + this.profbonus() + this.getStatMod(i) + Number(this.character.saveDCBonus[i]);
+    },
+    getAttBonus(i) {
+      return Number(this.character.attBonus[i]) + this.getStatMod(i) + this.profbonus();
     },
     profbonus() {
       var level = this.character.charclasses.reduce((a, b) => {
@@ -460,7 +474,7 @@ export default {
       } else {
         var level = spell.level;
       }
-      var exists = this.character.spells[level].contains(spell);
+      var exists = this.character.spells[level].includes(spell);
       if(!exists) {
         this.character.spells[level].push(spell);
       }
