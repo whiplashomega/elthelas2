@@ -228,7 +228,6 @@ export default {
   },
   methods: {
     getDriveFiles() {
-      
       this.$root.$emit('bv::show::modal','loading');
       Vue.http.get('https://www.googleapis.com/drive/v3/files', { params: { access_token: this.googletoken, q: "mimeType contains 'json'", fields: 'files(id, name, size, modifiedTime)'} }).then((response) => {
         this.filelist = response.body.files;
@@ -426,7 +425,7 @@ export default {
       this.$forceUpdate();
     },
     addFeat() {
-      this.character.feats.push({ name: "", prereq: "", description: "" });
+      this.character.feats.push({ selectedfeat: {name: "", prereq: "", description: "" }});
     },
     removeFeat(i) {
       this.character.feats.splice(i, 1);
@@ -754,7 +753,7 @@ export default {
     }
   },
   mounted () {
-    if(window.outerWidth < 500) {
+    if(window.outerWidth < 1024) {
       this.mobile = true;
     }
   },

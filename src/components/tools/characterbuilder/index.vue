@@ -23,6 +23,7 @@
             <div class="row">
               <div class="col-4">
                 <select @change="setRaceDefaults()" v-model="character.race" class="charsheet-text">
+                  <option :value="character.race">{{character.race.singular}}</option>
                   <option v-for="race in races" v-bind:key="race.id" :value="race">
                     {{race.singular}}
                   </option>
@@ -31,6 +32,7 @@
               </div>
               <div class="col-4">
                 <select v-model="character.background" class="charsheet-text">
+                  <option :value="character.background">{{character.background.name}}</option>
                   <option v-for="background in backgrounds" :value="background"
                     v-bind:key="background.name">
                     {{background.name}}
@@ -57,6 +59,7 @@
             <div class="row">
               <div class="col-4">
                 <select class="charsheet-text" v-model="character.faction">
+                  <option :value="character.faction">{{character.faction.title}}</option>
                   <option v-for="faction in factions" :value="faction"
                     v-bind:key="faction.id">{{faction.title}}</option>
                 </select>
@@ -426,6 +429,7 @@
                   Feats/ASIs {{numASI}}
                   <div v-for="(feat, index) in character.feats" v-bind:key="index" style="clear:both;">
                     <select class="charsheet-text col-9" v-model="character.feats[index]">
+                      <option :value="character.feats[index]">{{character.feats[index].name}}</option>
                       <option v-for="feat in featsort" v-bind:key="feat.name" :value="feat" :title="feat.description">{{feat.name}}</option>
                     </select>
                     <button class="btn btn-sm print-hide float-right" type="button" @click="setval(feat, 'show', true)"
@@ -787,6 +791,7 @@
           <div class="col-3">
             <select class="charsheet-text"
               v-model="charclass.thisclass">
+              <option :value="charclass.thisclass">{{charclass.thisclass.name}}</option>
               <option v-for="classoption in classes" :value="classoption"
                 v-bind:key="classoption.name">
                 {{classoption.name}}
@@ -796,6 +801,7 @@
           <div class="col-6">
             <select class="charsheet-text"
               v-model="charclass.selsubclass">
+              <option :value="charclass.thisclass">{{charclass.thisclass.name}}</option>
               <option v-for="subc in charclass.thisclass.subclass" :value="subc"
                 v-bind:key="subc.name">
                 {{subc.name}}
@@ -1012,6 +1018,7 @@
             <div class="col-12">
               <select class="charsheet-text"
                 v-model="charclass.thisclass">
+                <option :value="charclass.thisclass">{{charclass.thisclass.name}}</option>
                 <option v-for="classoption in classes" :value="classoption"
                   v-bind:key="classoption.name">
                   {{classoption.name}}
@@ -1021,6 +1028,7 @@
             <div class="col-12">
               <select class="charsheet-text"
                 v-model="charclass.selsubclass">
+                <option :value="charclass.selsubclass">{{charclass.selsubclass.name}}</option>
                 <option v-for="subc in charclass.thisclass.subclass" :value="subc"
                   v-bind:key="subc.name">
                   {{subc.name}}
@@ -1041,6 +1049,7 @@
           <div class="row">
             <div class="col">
               <select @change="setRaceDefaults()" v-model="character.race" class="charsheet-text">
+                <option :value="character.race">{{character.race.singular}}</option>
                 <option v-for="race in races" v-bind:key="race.id" :value="race">
                   {{race.singular}}
                 </option>
@@ -1051,6 +1060,7 @@
           <div class="row">
             <div class="col">
               <select v-model="character.background" class="charsheet-text">
+                <option :value="character.background">{{character.background.name}}</option>
                 <option v-for="background in backgrounds" :value="background"
                   v-bind:key="background.name">
                   {{background.name}}
@@ -1079,6 +1089,7 @@
           <div class="row">
             <div class="col">
               <select class="charsheet-text" v-model="character.faction">
+                <option :value="character.faction">{{character.faction.title}}</option>
                 <option v-for="faction in factions" :value="faction"
                   v-bind:key="faction.id">{{faction.title}}</option>
               </select>
