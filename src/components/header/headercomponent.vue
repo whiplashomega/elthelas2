@@ -1,6 +1,6 @@
 <template>
 <div class="print-hide">
-  <b-navbar toggleable="md" class="site-header sticky-top py-1" type="dark">
+  <b-navbar toggleable="lg" class="site-header sticky-top py-1" type="dark">
     <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
     <b-collapse is-nav id="nav_collapse">
       <div class="container d-flex flex-column flex-md-row justify-content-between">
