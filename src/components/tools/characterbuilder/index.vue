@@ -600,9 +600,9 @@
                 <table class="table table-sm">
                   <thead><tr><th>Spell</th><th>Casting Time</th><th>Duration</th><th>Class</th><th>-</th></tr></thead>
                   <tbody>
-                    <tr v-for="spell in character.spells[displayLevel]" v-bind:key="spell.title" v-if="(spell.prepared && preparedonly) || !preparedonly">
+                    <tr v-for="(spell, index) in character.spells[displayLevel]" v-bind:key="spell.title" v-if="(spell.prepared && preparedonly) || !preparedonly">
                       <td>
-                        <input type="checkbox" v-model="spell.prepared" /><span class="clickable" @click="spellDetail(spell)">{{spell.title}}</span>
+                        <input type="checkbox" v-model="spell.prepared" /><span class="clickable" @click="spellDetail(spell)">{{spell.title}}<span v-if="spell.ritual"> (ritual)</span></span>
                       </td>
                       <td>{{spell.castingTime}}</td>
                       <td>{{spell.duration}}</td>
