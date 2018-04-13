@@ -219,7 +219,7 @@
                     <div class="charsheet-static" id="armorbox">
                       <h4>Armor</h4>
                       <div class="smalltext" v-for="(armor, index) in character.armors" v-bind:key="index">
-                        {{ armor.name }}, {{armor.type}}, AC {{armor.ac}} <input type="checkbox" v-model="armor.equipped" />
+                        {{ armor.name }}, {{armor.type}}, AC {{armorac(armor)}} <input type="checkbox" v-model="armor.equipped" />
                         <button type="button" class="print-hide btn-symbol" @click="armor.edit = true">&#9998;</button>
                         <button type="button" @click="removeArmor(index)" class="print-hide btn btn-sm btn-danger">X</button>
                         <b-modal v-model="armor.edit">
@@ -233,6 +233,17 @@
                             <option>Heavy Armor</option>
                             <option>Shield</option>
                           </select>
+                          <div v-if="armor.type==='Unarmored Bonus'">
+                            Unarmored Bonus Stat
+                            <select v-model="armor.unarmoredstat" class="form-control">
+                              <option :value="0">Strength</option>
+                              <option :value="1">Dexterity</option>
+                              <option :value="2">Constitution</option>
+                              <option :value="3">Intelligence</option>
+                              <option :value="4">Wisdom</option>
+                              <option :value="5">Charisma</option>
+                            </select>
+                          </div>
                           AC:
                           <input type="number" v-model="armor.ac" class="form-control" />
                         </b-modal>
@@ -249,6 +260,17 @@
                           <option>Heavy Armor</option>
                           <option>Shield</option>
                         </select>
+                        <div v-if="newarmor.type==='Unarmored Bonus'">
+                          Unarmored Bonus Stat
+                          <select v-model="newarmor.unarmoredstat" class="form-control">
+                            <option :value="0">Strength</option>
+                            <option :value="1">Dexterity</option>
+                            <option :value="2">Constitution</option>
+                            <option :value="3">Intelligence</option>
+                            <option :value="4">Wisdom</option>
+                            <option :value="5">Charisma</option>
+                          </select>
+                        </div>
                         AC:
                         <input type="number" v-model="newarmor.ac" class="form-control" />
                       </b-modal>
@@ -576,7 +598,7 @@
               <span v-if="warlockSlots() > 0">Warlock Slots: <input type="number" v-model="character.warlockslotsavailable" class="charsheet-num" /> / {{ warlockSlots() }} level {{ warlockSlotLevel() }} slots</span>
               <div class="smalltext print-hide">
                 <table class="table table-sm">
-                  <thead><tr><th>Spell</th><th>Casting Time</th><th>Duration</th><th>-</th></tr></thead>
+                  <thead><tr><th>Spell</th><th>Casting Time</th><th>Duration</th><th>Class</th><th>-</th></tr></thead>
                   <tbody>
                     <tr v-for="spell in character.spells[displayLevel]" v-bind:key="spell.title" v-if="(spell.prepared && preparedonly) || !preparedonly">
                       <td>
@@ -584,6 +606,7 @@
                       </td>
                       <td>{{spell.castingTime}}</td>
                       <td>{{spell.duration}}</td>
+                      <td>{{spell.class}}</td>
                       <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
                     </tr>
                   </tbody>
@@ -679,7 +702,7 @@
               </div>
               <button type="button" @click="spellModal = true" class="btn btn-sm btn-primary print-hide">+</button>
             </div>
-            <b-modal v-model="spellModal" title="Add Spell" class="modal-lg">
+            <b-modal v-model="spellModal" title="Add Spell" class="modal-lg" @ok="addSpell(selspell)">
               Filter by Text
               <input type="text" class="form-control" v-model="spellfilter" />
               Filter by Level
@@ -708,11 +731,17 @@
                 <option value="warlock">Warlock</option>
                 <option value="wizard">Wizard</option>
               </select>
-              <table class="table">
-                <thead><tr><th>Spell</th><th>Level</th></tr></thead>
-                <tbody>
-                  <tr v-for="spell in filteredspells" v-bind:key="spell.title">
-                    <td><span class="clickable" @click="addSpell(spell)">{{spell.title}}</span></td><td>{{spell.level}}</td>
+              Spell Added By Class:
+              <select v-model="selspellclass" class="form-control" required>
+                <option v-for="charclass in character.charclasses" :value="charclass.thisclass.name" v-bind:key="charclass.thisclass.name">{{charclass.thisclass.name}}</option>
+              </select>
+              <table class="table table-sm" id="spellList">
+                <thead style="float:left; width:100%; display: table;"><tr><th>-</th><th>Spell</th><th>Level</th></tr></thead>
+                <tbody style="overflow-y:scroll; max-height: 300px; float: left; width: 100%">
+                  <tr v-for="spell in filteredspells" v-bind:key="spell.title" style="float:left; width:100%; display: table">
+                    <td><input type="radio" name="selspell" :value="spell" v-model="selspell" required /></td>
+                    <td><span class="clickable" @click="spellDetail(spell)">{{spell.title}}</span></td>
+                    <td>{{spell.level}}</td>
                   </tr>
                 </tbody>
               </table>
@@ -1301,7 +1330,7 @@
               <div class="charsheet-static">
                 <h4>Armor</h4>
                 <div class="smalltext" v-for="(armor, index) in character.armors" v-bind:key="index">
-                  {{ armor.name }}, {{armor.type}}, AC {{armor.ac}} <input type="checkbox" v-model="armor.equipped" />
+                  {{ armor.name }}, {{armor.type}}, AC {{armorac(armor)}} <input type="checkbox" v-model="armor.equipped" />
                   <button type="button" class="print-hide btn-symbol" @click="armor.edit = true">&#9998;</button>
                   <button type="button" @click="removeArmor(index)" class="print-hide btn btn-sm btn-danger">X</button>
                   <b-modal v-model="armor.edit">
@@ -1315,7 +1344,18 @@
                       <option>Heavy Armor</option>
                       <option>Shield</option>
                     </select>
-                    AC:
+                    <div v-if="armor.type==='Unarmored Bonus'">
+                      Unarmored Bonus Stat
+                      <select v-model="armor.unarmoredstat" class="form-control">
+                        <option :value="0">Strength</option>
+                        <option :value="1">Dexterity</option>
+                        <option :value="2">Constitution</option>
+                        <option :value="3">Intelligence</option>
+                        <option :value="4">Wisdom</option>
+                        <option :value="5">Charisma</option>
+                      </select>
+                    </div>
+                    <span v-if="armor.type === 'Unarmored Bonus'">Additional Bonus </span>AC:
                     <input type="number" v-model="armor.ac" class="form-control" />
                   </b-modal>
                 </div>
@@ -1331,6 +1371,17 @@
                     <option>Heavy Armor</option>
                     <option>Shield</option>
                   </select>
+                  <div v-if="armor.type==='Unarmored Bonus'">
+                    Unarmored Bonus Stat
+                    <select v-model="armor.unarmoredstat" class="form-control">
+                      <option :value="0">Strength</option>
+                      <option :value="1">Dexterity</option>
+                      <option :value="2">Constitution</option>
+                      <option :value="3">Intelligence</option>
+                      <option :value="4">Wisdom</option>
+                      <option :value="5">Charisma</option>
+                    </select>
+                  </div>
                   AC:
                   <input type="number" v-model="newarmor.ac" class="form-control" />
                 </b-modal>
@@ -1482,14 +1533,13 @@
                 slots: <input type="number" v-model="character.availableslots[displayLevel]" class="charsheet-num" /> / {{ totalslots(displayLevel) }}</span><br />
                 <span v-if="warlockSlots() > 0">Warlock Slots: <input type="number" v-model="character.warlockslotsavailable" class="charsheet-num" /> / {{ warlockSlots() }} level {{ warlockSlotLevel() }} slots</span>
                 <div class="smalltext print-hide">
-                  <table class="table table-sm">
-                    <thead><tr><th>Spell</th><th>-</th></tr></thead>
-                    <tbody>
-                      <tr v-for="(spell, index) in character.spells[displayLevel]" v-bind:key="index" v-if="(spell.prepared && preparedonly) || !preparedonly">
-                        <td>
-                          <input type="checkbox" v-model="spell.prepared" /><span class="clickable" @click="spellDetail(spell)">{{spell.title}}</span>
-                        </td>
-                        <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
+                  <table class="table table-sm" id="spellList">
+                    <thead style="float:left; width:100%; display: table;"><tr><th>-</th><th>Spell</th><th>Level</th></tr></thead>
+                    <tbody style="overflow-y:scroll; max-height: 300px; float: left; width: 100%">
+                      <tr v-for="spell in filteredspells" v-bind:key="spell.title" style="float:left; width:100%; display: table">
+                        <td><input type="radio" name="selspell" :value="spell" v-model="selspell" required /></td>
+                        <td><span class="clickable" @click="spellDetail(spell)">{{spell.title}}</span></td>
+                        <td>{{spell.level}}</td>
                       </tr>
                     </tbody>
                   </table>

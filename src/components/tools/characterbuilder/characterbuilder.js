@@ -120,6 +120,8 @@ export default {
       classfilter: "all",
       levelfilter: "all",
       spellfilter: "",
+      selspell: {},
+      selspellclass: "",
       newattack: { name: "", stat: 0, bonus: 0, addstat: false, damage: "", range: "", type: "", dtype: "", edit: false, damagebonus: 0, prof: true },
       armormodal: false,
       newequip: { name: "", equipped: false, carried: true, weight: 0, quantity: 1, attunement: false, edit: false },
@@ -387,6 +389,21 @@ export default {
     removeArmor(index) {
       this.character.armors.splice(index, 1);
     },
+    armorac(a) {
+      var ac = 0;
+      if(a.type === "Heavy Armor") {
+        ac = a.ac;
+      } else if(a.type === "Medium Armor") {
+        ac = a.ac + Math.min(2, this.getStatMod(1));
+      } else if(a.type === "Shield") {
+        ac = a.ac;
+      } else if(a.type === 'Light Armor') {
+        ac = a.ac + this.getStatMod(1);
+      } else if(a.type === "Unarmored Bonus") {
+        ac = 10 + a.ac + this.getStatMod(1) + this.getStatMod(a.unarmoredstat);
+      }
+      return ac;
+    },
     accalc() {
       var ac = 10 + this.getStatMod(1);
       var shields = [];
@@ -404,8 +421,13 @@ export default {
             }
           } else if(a.type === "Shield") {
             shields.push(a.ac);
-          } else {
+          } else if(a.type === 'Light Armor') {
             var tmp = a.ac + this.getStatMod(1);
+            if(tmp > ac) {
+              ac = tmp;
+            }
+          } else if(a.type === "Unarmored Bonus") {
+            var tmp = 10 + a.ac + this.getStatMod(1) + this.getStatMod(a.unarmoredstat);
             if(tmp > ac) {
               ac = tmp;
             }
@@ -468,16 +490,19 @@ export default {
       this.character.spells[this.displayLevel].splice(i, 1);
     },
     addSpell(spell) {
-      if(spell.level !== 'cantrip') {
-        var level = 'level' + spell.level;
-      } else {
-        var level = spell.level;
+      if(spell) {
+        spell.class = this.selspellclass;
+        if(spell.level !== 'cantrip') {
+          var level = 'level' + spell.level;
+        } else {
+          var level = spell.level;
+        }
+        var exists = this.character.spells[level].includes(spell);
+        if(!exists) {
+          this.character.spells[level].push(spell);
+        }
+        this.spellModal = false;
       }
-      var exists = this.character.spells[level].includes(spell);
-      if(!exists) {
-        this.character.spells[level].push(spell);
-      }
-      this.spellModal = false;
     },
     totalslots(level) {
       if(level === 'cantrip') {
