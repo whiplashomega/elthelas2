@@ -503,6 +503,16 @@ export default {
         }
         this.spellModal = false;
       }
+      this.character.spells.forEach((level) => {
+        level.sort((b, c) => {
+          if(b.name > c.name) {
+            return 1;
+          } else if(c.name > b.name) {
+            return -1;
+          }
+          return 0;
+        });
+      });
     },
     totalslots(level) {
       if(level === 'cantrip') {
