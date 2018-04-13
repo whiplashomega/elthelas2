@@ -226,7 +226,8 @@ export default {
     date (value) {
       var date = new Date(value);
       return date.toLocaleString();
-    }
+    },
+
   },
   methods: {
     getDriveFiles() {
@@ -498,21 +499,12 @@ export default {
           var level = spell.level;
         }
         var exists = this.character.spells[level].includes(spell);
+
         if(!exists) {
           this.character.spells[level].push(spell);
         }
         this.spellModal = false;
       }
-      this.character.spells.forEach((level) => {
-        level.sort((b, c) => {
-          if(b.name > c.name) {
-            return 1;
-          } else if(c.name > b.name) {
-            return -1;
-          }
-          return 0;
-        });
-      });
     },
     totalslots(level) {
       if(level === 'cantrip') {
@@ -785,6 +777,18 @@ export default {
           }
         }
       });
+    },
+    sortSpells (spells) {
+      var x = spells.slice(0);
+      x.sort((b, c) => {
+        if(b.title > c.title) {
+          return 1;
+        } else if(c.title > b.title) {
+          return -1;
+        }
+        return 0;
+      });
+      return x;
     }
   },
   mounted () {

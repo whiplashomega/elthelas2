@@ -595,12 +595,13 @@
               </table>
               <span class="print-hide">{{displayLevel}}
               slots: <input type="number" v-model="character.availableslots[displayLevel]" class="charsheet-num" /> / {{ totalslots(displayLevel) }}</span><br />
-              <span v-if="warlockSlots() > 0">Warlock Slots: <input type="number" v-model="character.warlockslotsavailable" class="charsheet-num" /> / {{ warlockSlots() }} level {{ warlockSlotLevel() }} slots</span>
+              <span v-if="warlockSlots() > 0">Warlock Slots: <input type="number" v-model="character.warlockslotsavailable" class="charsheet-num" /> /
+                {{ warlockSlots() }} level {{ warlockSlotLevel() }} slots</span>
               <div class="smalltext print-hide">
                 <table class="table table-sm">
                   <thead><tr><th>Spell</th><th>Casting Time</th><th>Duration</th><th>Class</th><th>-</th></tr></thead>
                   <tbody>
-                    <tr v-for="(spell, index) in character.spells[displayLevel]" v-bind:key="spell.title" v-if="(spell.prepared && preparedonly) || !preparedonly">
+                    <tr v-for="(spell, index) in sortSpells(character.spells[displayLevel])" v-bind:key="spell.title" v-if="(spell.prepared && preparedonly) || !preparedonly">
                       <td>
                         <input type="checkbox" v-model="spell.prepared" /><span class="clickable" @click="spellDetail(spell)">{{spell.title}}<span v-if="spell.ritual"> (ritual)</span></span>
                       </td>
