@@ -1372,7 +1372,7 @@
                     <option>Heavy Armor</option>
                     <option>Shield</option>
                   </select>
-                  <div v-if="armor.type==='Unarmored Bonus'">
+                  <div v-if="newarmor.type==='Unarmored Bonus'">
                     Unarmored Bonus Stat
                     <select v-model="armor.unarmoredstat" class="form-control">
                       <option :value="0">Strength</option>
