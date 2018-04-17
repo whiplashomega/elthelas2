@@ -797,11 +797,13 @@ export default {
     }
   },
   updated() {
-    scaleFontSize('attackdiv');
-    scaleFontSize('featurebox');
-    scaleFontSize('profbox');
-    scaleFontSize('armorbox');
-    scaleFontSize('equipmentbox');
+    if(!this.mobile) {
+      scaleFontSize('attackdiv');
+      scaleFontSize('featurebox');
+      scaleFontSize('profbox');
+      scaleFontSize('armorbox');
+      scaleFontSize('equipmentbox');
+    }
   }
 };
 
