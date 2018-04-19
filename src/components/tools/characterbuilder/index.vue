@@ -1705,6 +1705,7 @@
                 v-if="feat.show">
                 &#x25B2;
               </button>
+              <p v-if="feat.show && feat.prereq !== ''"><strong>Prerequisite: </strong> feat.prereq</p>
               <p v-if="feat.show" v-html="$options.filters.marked(feat.description)"></p>
             </div>
           </div>

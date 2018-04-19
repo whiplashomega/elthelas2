@@ -225,6 +225,10 @@ gulp.task('jsoncompile', ['jsonlint'], function() {
       return true;
     });
   }
+  var feats = JSON.parse(fs.readFileSync('./data/feats/feats.json', 'utf-8'));
+  fs.writeFile('./static/json/feats.json', JSON.stringify(feats), 'utf-8', function() {
+    return true;
+  });
   //gods
   compiledir("./data/gods", "./static/json/gods.json", "God");
   //races

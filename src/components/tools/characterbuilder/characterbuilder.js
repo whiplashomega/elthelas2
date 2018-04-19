@@ -797,6 +797,11 @@ export default {
     }
   },
   updated() {
+    if(window.outerWidth < 1024) {
+      this.mobile = true;
+    } else {
+      this.mobile = false;
+    }
     if(!this.mobile) {
       scaleFontSize('attackdiv');
       scaleFontSize('featurebox');
