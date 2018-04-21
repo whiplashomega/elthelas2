@@ -1,13 +1,12 @@
 import { mapGetters } from 'vuex';
-import marked from 'marked';
 
 export default {
   computed: mapGetters({
-     gods: "allGods" 
+    gods: "allGods"
   }),
   data () {
     return {
-      GodByName: { worshippers: "", appearance: "", clergy: "", dogma: "", home: ""},
+      GodByName: { worshippers: "", appearance: "", clergy: "", dogma: "", home: "" },
       alignment: "",
       domain: "",
       SelectedGod: "",
@@ -25,7 +24,7 @@ export default {
       this.domainGods = this.gods.filter((god) => {
         var domains = god.domains5.split(", ");
         return domains.includes(this.domain);
-      });      
+      });
     },
     SelectedGod: function(a) {
       this.loadGod(a);
@@ -40,9 +39,9 @@ export default {
   },
   created () {
     this.$store.dispatch('getAllGods').then(() => {
-      if(this.$route.params.god) {
+      if (this.$route.params.god) {
         var god = this.$route.params.god;
-        this.loadGod(this.gods.filter(function(a) {return (a.id === god || a.name === god);})[0].id);
+        this.loadGod(this.gods.filter(function(a) { return (a.id === god || a.name === god); })[0].id);
       }
     });
   }

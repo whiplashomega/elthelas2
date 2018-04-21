@@ -290,8 +290,8 @@
     "description": "The fire in your blood has grown in strength, giving you an unrivaled affinity for fire, giving you the following abilities.\n* You learn the create bonfire and firebolt cantrips. Charisma is your casting stat for these cantrips.\n* You are immune to fire damage."
   },
   {
-    "name": "Trollkin Discipline",
+    "name": "Trollkin Regeneration",
     "prereq": "Trollkin",
-    "description": "You are a shining example of the extraordinary marshal discipline of your people. \n\n* Increase your strength or constitution score by 1 up to maximum of 20. \n* You gain proficiency in either constitution or wisdom saving throws."
+    "description": "Your troll blood gives you the ability to shrug off injuries and heal quickly, even to regenerate limbs over time. \n\n* Increase your strength or constitution score by 1 up to maximum of 20. \n* You gain the ability to regenerate from wounds. As long as you are conscious you regain 1 hit point every minute.\n* If you suffer an injury to your body such as a lost limb, finger, or broken bones, that can be healed with the regenerate spell, you can recover completely from that wound in 1 week without any other intervention."
   }
 ]

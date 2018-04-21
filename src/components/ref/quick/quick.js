@@ -31,7 +31,7 @@ export default {
         sortBy: null,
         sortDesc: false,
         filterBy: [ "title", "level", "school", "duration", "castingTime", "description", "tagsText" ],
-        modalInfo: { title: '', description: '', content: { title: '', level: '', school: '', duration: '', description: '', castingTime: '', tags: [], tagsText: ''} }
+        modalInfo: { title: '', description: '', content: { title: '', level: '', school: '', duration: '', description: '', castingTime: '', tags: [], tagsText: '' } }
       },
       equipmenttable: {
         fields: [
@@ -58,7 +58,7 @@ export default {
         ],
         filter: null,
         sortBy: null,
-        sortDesc: false        
+        sortDesc: false
       },
       weapontable: {
         fields: [
@@ -71,7 +71,7 @@ export default {
         ],
         filter: null,
         sortBy: null,
-        sortDesc: false        
+        sortDesc: false
       },
       magicitemtables: {
         fields: [
@@ -103,8 +103,8 @@ export default {
       this.$root.$emit('bv::show::modal', 'magicitemmodal', button);
     },
     resetSpellModal () {
-      this.spelltable.modalInfo.title;
-      this.spelltable.modalInfo.content = { title: '', level: '', school: '', duration: '', description: '', castingTime: '', tags: [], tagsText: ''};
+      this.spelltable.modalInfo.title = "";
+      this.spelltable.modalInfo.content = {title: '', level: '', school: '', duration: '', description: '', castingTime: '', tags: [], tagsText: ''};
     },
     resetMagicItemModal () {
       this.magicItemModal = { Item: '', Rarity: '', instock: '', Effect: '', 'Cost (gp)': '', Attunement: '' };
@@ -118,7 +118,7 @@ export default {
     magicitemfilter(a) {
       var filter = this.magicitemtables.filterBy;
       var value = this.magicitemtables.filter;
-      if(this.instockfilter(a)) {
+      if (this.instockfilter(a)) {
         var inelement = filter.some(function(el) {
           for (var y in a) {
             if (el === y && a[y].toString().toLowerCase().includes(value.toLowerCase())) {
@@ -126,7 +126,7 @@ export default {
             }
           }
         });
-        if(!value || inelement) {
+        if (!value || inelement) {
           return true;
         }
         return false;
@@ -137,17 +137,17 @@ export default {
       var spelltable = this.spelltable;
       var filter = spelltable.filterBy;
       var value = spelltable.filterValue;
-      var inclass = a.tags.some(function(el){
+      var inclass = a.tags.some(function(el) {
         return spelltable.classes.includes(el);
       });
       var inelement = filter.some(function(el) {
         for (var y in a) {
-          if(el === y && a[y].toLowerCase().includes(value.toLowerCase())) {
+          if (el === y && a[y].toLowerCase().includes(value.toLowerCase())) {
             return true;
           }
         }
       });
-      if(inclass && !value || inclass && inelement) {
+      if (inclass && (!value || inelement)) {
         return true;
       }
       return false;

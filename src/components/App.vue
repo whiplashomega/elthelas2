@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <headercomponent />
     <div class='container-fluid'>
       <div class="row">

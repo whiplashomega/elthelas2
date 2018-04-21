@@ -2,11 +2,11 @@ import { mapGetters } from 'vuex';
 
 export default {
   computed: mapGetters({
-     organizations: "allOrganizations" 
+    organizations: "allOrganizations"
   }),
   data () {
     return {
-      currentOrg: { level1: "", level10: "", tenets: [""], description: ""}
+      currentOrg: { level1: "", level10: "", tenets: [""], description: "" }
     };
   },
   methods: {

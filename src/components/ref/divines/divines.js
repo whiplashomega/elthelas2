@@ -1,9 +1,8 @@
 import { mapGetters } from 'vuex';
-import marked from 'marked';
 
 export default {
   computed: mapGetters({
-     divines: "allDivines" 
+    divines: "allDivines"
   }),
   data () {
     return {

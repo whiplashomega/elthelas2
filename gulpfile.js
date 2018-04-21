@@ -1,7 +1,6 @@
 var gulp = require('gulp'),
     fs = require('fs');
 var jsonlint = require("gulp-jsonlint");
-var webpack = require("webpack-stream");
 
 gulp.task('historyjson', function () {
   var files = fs.readdirSync("./data/historicalevents");
@@ -67,10 +66,14 @@ gulp.task('creaturesjson', function() {
     var sizes = ["tiny", "small", "medium", "large", "huge", "gargantuan", "colossal"];
     var types = ["humanoid", "plant", "beast", "dragon", "giant", "ooze", "swarm", "undead", "fiend", "celestial", "monstrosity", "aberration", "elemental", "construct", "fey"];
     var alignments = [
-      "chaotic evil", 
-      "neutral evil", 
-      "lawful evil", 
-      "chaotic neutral", "unaligned", "lawful neutral", "chaotic good", "neutral good", "lawful good", "neutral", "any alignment", "any non-good alignment", "any non-lawful alignment", "any chaotic alignment", "any evil"];
+      "chaotic evil", "neutral evil", 
+      "lawful evil", "chaotic neutral", 
+      "unaligned", "lawful neutral", 
+      "chaotic good", "neutral good", 
+      "lawful good", "neutral", 
+      "any alignment", "any non-good alignment", 
+      "any non-lawful alignment", "any chaotic alignment", 
+      "any evil"];
     creature.size = intersect([creature.tags, sizes])[0];
     creature.type = intersect([creature.tags, types])[0];
     if(filearray[7].indexOf('(') !== -1) {
@@ -139,7 +142,6 @@ gulp.task('creaturesjson', function() {
           return Number(num);
         });
       });
-      console.log(creature.name + ": " + JSON.stringify(creature.latlong));
     }
     if(creature.languages) {
       creature.languages = creature.languages.replace("Common", "First language of home country");
@@ -225,36 +227,50 @@ gulp.task('jsoncompile', ['jsonlint'], function() {
       return true;
     });
   }
-  var feats = JSON.parse(fs.readFileSync('./data/feats/feats.json', 'utf-8'));
-  fs.writeFile('./static/json/feats.json', JSON.stringify(feats), 'utf-8', function() {
-    return true;
-  });
+  function jsonmin(sourcefile, destination) {
+    var jsfile = JSON.parse(fs.readFileSync(sourcefile, 'utf-8'));
+    fs.writeFile(destination, JSON.stringify(jsfile), 'utf-8', function() {
+      return true;
+    });
+  }
+  //feats
+  jsonmin('./data/feats.json', './static/json/feats.json');
+  //weapons
+  jsonmin('./data/weapons.json', './static/json/weapons.json');
+  //armor
+  jsonmin('./data/armor.json', './static/json/armor.json');
+  //equipment
+  jsonmin('./data/equipment.json', './static/json/equipment.json');
+  //magic items
+  jsonmin('./data/magicitems.json', './static/json/magicitems.json');
   //gods
   compiledir("./data/gods", "./static/json/gods.json", "God");
   //races
   compiledir("./data/races", "./static/json/races.json", "Race");
   //organizations
   compiledir("./data/organizations", "./static/json/organizations.json", "Organization");
-  
+  //divines
   compiledir("./data/divines", "./static/json/divines.json", "Divine");
-  
+  //cities
   compiledir("./data/cities", "./static/json/cities.json", "City");
-  
+  //continents
   compiledir("./data/continents", "./static/json/continents.json", "Continent");
-  
+  //features
   compiledir("./data/features", "./static/json/features.json", "Feature");
-  
+  //landmarks
   compiledir("./data/landmarks", "./static/json/landmarks.json", "Landmark");
-  
+  //nations
   compiledir("./data/nations", "./static/json/nations.json", "Nation");
-  
+  //backgrounds
   compiledir("./data/backgrounds", "./static/json/backgrounds.json", "Background");
-  
+  //classes
   compiledir("./data/classes", "./static/json/classes.json", "CharClass");
   return true;
 });
 
 gulp.task('unittest', [], function(done) {
+  console.log('start');
+  console.log('end');
   done();
 });
 
@@ -263,12 +279,23 @@ gulp.task('integrationtest', ['unittest'], function() {
 });
 
 //task groups
-gulp.task('default', ['integrationtest', 'spellsjson', 'historyjson', 'creaturesjson', 'jsoncompile'], function() {
-  console.log("something");
+gulp.task('default', ['integrationtest', 'spellsjson', 'historyjson', 'creaturesjson', 'jsoncompile'], function(done) {
+  console.log("starting build task");
   require('./build/build.js');
+  done();
 });
 
 //does not include testing
 gulp.task('prod', ['prodcleanup'], function() {
   
+});
+
+var exec = require('child_process').exec;
+ 
+gulp.task('task', function (cb) {
+  exec('npm run unit', function (err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+    cb(err);
+  });
 });

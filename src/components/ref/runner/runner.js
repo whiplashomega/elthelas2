@@ -3,7 +3,7 @@ import marked from 'marked';
 
 export default {
   computed: mapGetters({
-     creatures: "allCreatures" 
+    creatures: "allCreatures"
   }),
   data () {
     return {
@@ -20,34 +20,34 @@ export default {
         sortBy: null,
         sortDesc: false,
         filterBy: [ "name", "size", "cr", "type", "subtype", "alignment", "description" ],
-        modalInfo: { 
-          name: "", 
-          tags: "", 
-          size: "", 
-          cr: "", 
-          type: "", 
-          subtype: "", 
-          alignment: "", 
-          ac: "", 
-          acdesc: "", 
-          hp: "", 
-          hpdesc: "", 
-          speed: "", 
-          str: "", 
-          dex: "", 
-          con: "", 
-          int: "", 
-          wis: "", 
-          cha: "", 
-          skills: "", 
-          saves: "", 
-          senses: "", 
-          damageimmunities: "", 
-          conditionimmunities: "", 
-          damageresistances: "", 
-          languages: "", 
-          locations: "", 
-          latlong: "", 
+        modalInfo: {
+          name: "",
+          tags: "",
+          size: "",
+          cr: "",
+          type: "",
+          subtype: "",
+          alignment: "",
+          ac: "",
+          acdesc: "",
+          hp: "",
+          hpdesc: "",
+          speed: "",
+          str: "",
+          dex: "",
+          con: "",
+          int: "",
+          wis: "",
+          cha: "",
+          skills: "",
+          saves: "",
+          senses: "",
+          damageimmunities: "",
+          conditionimmunities: "",
+          damageresistances: "",
+          languages: "",
+          locations: "",
+          latlong: "",
           description: ""
         }
       },
@@ -62,36 +62,36 @@ export default {
   },
   methods: {
     xpByCR (cr) {
-      if(cr === 0) return 10;
-      else if(cr === 0.125) return 25;
-      else if(cr === 0.25) return 50;
-      else if(cr === 0.5) return 100;
-      else if(cr === 1) return 200;
-      else if(cr === 2) return 450;
-      else if(cr === 3) return 700;
-      else if(cr === 4) return 1100;
-      else if(cr === 5) return 1800;
-      else if(cr === 6) return 2300;
-      else if(cr === 7) return 2900;
-      else if(cr === 8) return 3900;
-      else if(cr === 9) return 5000;
-      else if(cr === 10) return 5900;
-      else if(cr === 11) return 7200;
-      else if(cr === 12) return 8400;
-      else if(cr === 13) return 10000;
-      else if(cr === 14) return 11500;
-      else if(cr === 15) return 13000;
-      else if(cr === 16) return 15000;
-      else if(cr === 17) return 18000;
-      else if(cr === 18) return 20000;
-      else if(cr === 19) return 22000;
-      else if(cr === 20) return 25000;
-      else if(cr === 21) return 33000;
-      else if(cr === 22) return 41000;
-      else if(cr === 23) return 50000;
-      else if(cr === 24) return 62000;
-      else if(cr === 26) return 90000;
-      else if(cr === 30) return 155000;
+      if (cr === 0) return 10;
+      else if (cr === 0.125) return 25;
+      else if (cr === 0.25) return 50;
+      else if (cr === 0.5) return 100;
+      else if (cr === 1) return 200;
+      else if (cr === 2) return 450;
+      else if (cr === 3) return 700;
+      else if (cr === 4) return 1100;
+      else if (cr === 5) return 1800;
+      else if (cr === 6) return 2300;
+      else if (cr === 7) return 2900;
+      else if (cr === 8) return 3900;
+      else if (cr === 9) return 5000;
+      else if (cr === 10) return 5900;
+      else if (cr === 11) return 7200;
+      else if (cr === 12) return 8400;
+      else if (cr === 13) return 10000;
+      else if (cr === 14) return 11500;
+      else if (cr === 15) return 13000;
+      else if (cr === 16) return 15000;
+      else if (cr === 17) return 18000;
+      else if (cr === 18) return 20000;
+      else if (cr === 19) return 22000;
+      else if (cr === 20) return 25000;
+      else if (cr === 21) return 33000;
+      else if (cr === 22) return 41000;
+      else if (cr === 23) return 50000;
+      else if (cr === 24) return 62000;
+      else if (cr === 26) return 90000;
+      else if (cr === 30) return 155000;
     },
     filter (a) {
       var filter = this.creaturestable.filterBy;
@@ -103,7 +103,7 @@ export default {
           }
         }
       });
-      if(!value || inelement) {
+      if (!value || inelement) {
         return true;
       }
       return false;
@@ -118,63 +118,63 @@ export default {
       var hard = hardthresholds[this.partylevel - 1] * this.partysize;
       var deadly = deadlythresholds[this.partylevel - 1] * this.partysize;
       var xp = 0;
-      for(var x = 0; x < this.encountercreatures.length; x++) {
+      for (var x = 0; x < this.encountercreatures.length; x++) {
         xp += this.xpByCR(this.encountercreatures[x].cr);
       }
       this.xpvalue = xp;
-      if(this.partysize > 5) {
-        if(this.encountercreatures.length === 1) {
+      if (this.partysize > 5) {
+        if (this.encountercreatures.length === 1) {
           xp *= 0.5;
-        } else if(this.encountercreatures.length === 2) {
+        } else if (this.encountercreatures.length === 2) {
           xp *= 1;
-        } else if(this.encountercreatures.length >= 3 && this.encountercreatures.length <= 6) {
+        } else if (this.encountercreatures.length >= 3 && this.encountercreatures.length <= 6) {
           xp *= 1.5;
-        } else if(this.encountercreatures.length >= 7 && this.encountercreatures.length <= 10) {
+        } else if (this.encountercreatures.length >= 7 && this.encountercreatures.length <= 10) {
           xp *= 2;
-        } else if(this.encountercreatures.length >= 11 && this.encountercreatures.length <= 14) {
+        } else if (this.encountercreatures.length >= 11 && this.encountercreatures.length <= 14) {
           xp *= 2.5;
         } else {
           xp *= 3;
         }
-      } else if(this.partysize < 3) {
-        if(this.encountercreatures.length === 1) {
+      } else if (this.partysize < 3) {
+        if (this.encountercreatures.length === 1) {
           xp *= 1.5;
-        } else if(this.encountercreatures.length === 2) {
+        } else if (this.encountercreatures.length === 2) {
           xp *= 2;
-        } else if(this.encountercreatures.length >= 3 && this.encountercreatures.length <= 6) {
+        } else if (this.encountercreatures.length >= 3 && this.encountercreatures.length <= 6) {
           xp *= 2.5;
-        } else if(this.encountercreatures.length >= 7 && this.encountercreatures.length <= 10) {
+        } else if (this.encountercreatures.length >= 7 && this.encountercreatures.length <= 10) {
           xp *= 3;
-        } else if(this.encountercreatures.length >= 11 && this.encountercreatures.length <= 14) {
+        } else if (this.encountercreatures.length >= 11 && this.encountercreatures.length <= 14) {
           xp *= 4;
         } else {
           xp *= 5;
-        }        
+        }
       } else {
-        if(this.encountercreatures.length === 1) {
+        if (this.encountercreatures.length === 1) {
           xp *= 1;
-        } else if(this.encountercreatures.length === 2) {
+        } else if (this.encountercreatures.length === 2) {
           xp *= 1.5;
-        } else if(this.encountercreatures.length >= 3 && this.encountercreatures.length <= 6) {
+        } else if (this.encountercreatures.length >= 3 && this.encountercreatures.length <= 6) {
           xp *= 2;
-        } else if(this.encountercreatures.length >= 7 && this.encountercreatures.length <= 10) {
+        } else if (this.encountercreatures.length >= 7 && this.encountercreatures.length <= 10) {
           xp *= 2.5;
-        } else if(this.encountercreatures.length >= 11 && this.encountercreatures.length <= 14) {
+        } else if (this.encountercreatures.length >= 11 && this.encountercreatures.length <= 14) {
           xp *= 3;
         } else {
           xp *= 4;
-        }        
+        }
       }
       this.adjustedxpvalue = xp;
-      if(xp < easy) {
+      if (xp < easy) {
         this.difficulty = "too easy";
-      } else if(xp < medium) {
+      } else if (xp < medium) {
         this.difficulty = "easy";
-      } else if(xp < hard) {
+      } else if (xp < hard) {
         this.difficulty = "medium";
-      } else if(xp < deadly) {
+      } else if (xp < deadly) {
         this.difficulty = "hard";
-      } else if(xp < deadly * 1.5) {
+      } else if (xp < deadly * 1.5) {
         this.difficulty = "deadly";
       } else {
         this.difficulty = "nigh on impossible";
@@ -192,7 +192,7 @@ export default {
     },
     removeCreature (item) {
       this.encountercreatures = this.encountercreatures.filter((a) => {
-        if(a.id === item.id) {
+        if (a.id === item.id) {
           return false;
         }
         return true;
@@ -201,15 +201,15 @@ export default {
     }
   },
   mounted () {
-    if(this.$route.params.encounter) {
+    if (this.$route.params.encounter) {
       console.log('there is an encounter parameter');
       this.$store.dispatch('getAllCreatures').then(() => {
         var creatures = this.$route.params.encounter.split('&');
-        for(var x = 0; x < creatures.length; x++) {
+        for (var x = 0; x < creatures.length; x++) {
           var cre = this.creatures.filter(function(a) {
             return a.name.toLowerCase().replace(/ /g, '') === creatures[x].toLowerCase().replace(/ /g, '');
           });
-          if(cre.length > 0) {
+          if (cre.length > 0) {
             this.addToEncounter(cre[0]);
           }
         }

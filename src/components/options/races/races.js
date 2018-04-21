@@ -2,7 +2,7 @@ import { mapGetters } from 'vuex';
 
 export default {
   computed: mapGetters({
-     races: "allRaces" 
+    races: "allRaces"
   }),
   data () {
     return {
@@ -16,7 +16,7 @@ export default {
         { key: "middleage", sortable: true },
         { key: "oldage", sortable: true },
         { key: "averagelifespan", sortable: true },
-        { key: "maxage", sortable: true },
+        { key: "maxage", sortable: true }
       ],
       ageSortBy: "race",
       ageSortDesc: false,
@@ -49,12 +49,12 @@ export default {
   },
   created () {
     this.$store.dispatch('getAllRaces').then(() => {
-      for(var x = 0; x < this.races.length; x++) {
+      for (var x = 0; x < this.races.length; x++) {
         this.races[x].agepoints.race = this.races[x].name;
         this.ages.push(this.races[x].agepoints);
-        for(var y = 0; y < this.races[x].subraces.length; y++) {
+        for (var y = 0; y < this.races[x].subraces.length; y++) {
           var name = this.races[x].subraces[y].name;
-          if(name === "default" || name === "") {
+          if (name === "default" || name === "") {
             name = this.races[x].name;
           }
           var hwi = {...this.races[x].subraces[y]};

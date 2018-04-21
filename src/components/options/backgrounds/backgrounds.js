@@ -2,7 +2,7 @@ import { mapGetters } from 'vuex';
 
 export default {
   computed: mapGetters({
-     backgrounds: "allBackgrounds" 
+    backgrounds: "allBackgrounds"
   }),
   data () {
     return {

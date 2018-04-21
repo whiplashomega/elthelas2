@@ -30,12 +30,12 @@ export default {
         { name: "Master", stats: [20, 16, 14, 12, 10, 8] },
         { name: "Broken", stats: [22, 18, 16, 14, 10, 10] }
       ]
-    }
+    };
   },
   methods: {
     generateName () {
-      if(this.character.race.id === "dwarves") {
+      if (this.character.race.id === "dwarves") {
       }
     }
   }
-}
+};

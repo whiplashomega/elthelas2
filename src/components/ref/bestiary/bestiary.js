@@ -1,9 +1,8 @@
 import { mapGetters } from 'vuex';
-import marked from 'marked';
 
 export default {
   computed: mapGetters({
-     creatures: "allCreatures" 
+    creatures: "allCreatures"
   }),
   data () {
     return {
@@ -20,34 +19,34 @@ export default {
         sortBy: null,
         sortDesc: false,
         filterBy: [ "name", "size", "cr", "type", "subtype", "alignment", "description" ],
-        modalInfo: { 
-          name: "", 
-          tags: "", 
-          size: "", 
-          cr: "", 
-          type: "", 
-          subtype: "", 
-          alignment: "", 
-          ac: "", 
-          acdesc: "", 
-          hp: "", 
-          hpdesc: "", 
-          speed: "", 
-          str: "", 
-          dex: "", 
-          con: "", 
-          int: "", 
-          wis: "", 
-          cha: "", 
-          skills: "", 
-          saves: "", 
-          senses: "", 
-          damageimmunities: "", 
-          conditionimmunities: "", 
-          damageresistances: "", 
-          languages: "", 
-          locations: "", 
-          latlong: "", 
+        modalInfo: {
+          name: "",
+          tags: "",
+          size: "",
+          cr: "",
+          type: "",
+          subtype: "",
+          alignment: "",
+          ac: "",
+          acdesc: "",
+          hp: "",
+          hpdesc: "",
+          speed: "",
+          str: "",
+          dex: "",
+          con: "",
+          int: "",
+          wis: "",
+          cha: "",
+          skills: "",
+          saves: "",
+          senses: "",
+          damageimmunities: "",
+          conditionimmunities: "",
+          damageresistances: "",
+          languages: "",
+          locations: "",
+          latlong: "",
           description: ""
         }
       }
@@ -59,34 +58,34 @@ export default {
       this.$root.$emit('bv::show::modal', 'creaturemodal', button);
     },
     resetModal () {
-      this.creaturestable.modalInfo = { 
-        name: "", 
-        tags: "", 
-        size: "", 
-        cr: "", 
-        type: "", 
-        subtype: "", 
-        alignment: "", 
-        ac: "", 
-        acdesc: "", 
-        hp: "", 
-        hpdesc: "", 
-        speed: "", 
-        str: "", 
-        dex: "", 
-        con: "", 
-        int: "", 
-        wis: "", 
-        cha: "", 
-        skills: "", 
-        saves: "", 
-        senses: "", 
-        damageimmunities: "", 
-        conditionimmunities: "", 
-        damageresistances: "", 
+      this.creaturestable.modalInfo = {
+        name: "",
+        tags: "",
+        size: "",
+        cr: "",
+        type: "",
+        subtype: "",
+        alignment: "",
+        ac: "",
+        acdesc: "",
+        hp: "",
+        hpdesc: "",
+        speed: "",
+        str: "",
+        dex: "",
+        con: "",
+        int: "",
+        wis: "",
+        cha: "",
+        skills: "",
+        saves: "",
+        senses: "",
+        damageimmunities: "",
+        conditionimmunities: "",
+        damageresistances: "",
         languages: "",
         locations: "",
-        latlong: "", 
+        latlong: "",
         description: ""
       };
     },
@@ -100,7 +99,7 @@ export default {
           }
         }
       });
-      if(!value || inelement) {
+      if (!value || inelement) {
         return true;
       }
       return false;

@@ -813,6 +813,16 @@ and will leave Northport with the refugees.
   <p><strong>Radiant Damage:</strong> Luna does an additional 1d6 radiant damage, or an additional 3d6 radiant damage against undead.</p>
 </aside>
 
+## Druid's Revenge
+
+If the party saves kills the druids who attempted to take Elhavir, the rival party will work with the Druids to attempt to ambush and kill the party. A messenger will approach the party with a note. The note says:
+
+We have successfully secured the medicine necessary to save the town. Meet us at the large oak tree west of town and we'll hand it over.
+
+It is in fact a trap, but the medicine is there, sitting in a cart next to the tree, the local leader of the druid's circle waiting there. Two of his compatriots are wildshaped into squirrels in the tree, and after a brief conversation, they all will attack.
+
+[Run this Encounter](/runner/elizardryflagon&druid&druid&brownbear&brownbear)
+
 ## Delay the Orc Army
 
 The Orc army is travelling 15 miles a day towards Northport from the south. Potentially leaving very little time to evacuate the refugees. Vanriel and Malia will both 
@@ -847,8 +857,8 @@ days while they squabble over who is in charge. **Delays by 4 days**
 
 * Anyone who does not appear orcish/goblinoid that is seen is attacked by orcs & goblins, 4 additional ones per round until the encounter is resolved (either through death, capture, or escape). Roll D100 4 times and consult the table below to determine what attacks.
 * Stealth checks to avoid detection while moving through the camp have a DC of 18. The DC of deception checks to maintain a disguise when challenged is 16.
-* The Orc Warlord's tent is at the center of the camp. There are 5 warlords who nominally run the army, 4 brigadier generals and a high commander, Warlord Catrus. The party need only kill the high commander to cause chaos in the camp, the other three would then fight each other for control of the army. The commander has 2 Elite Guards who stay with him most of the time, and functionaries come in and out of his tent pretty regularly on various business. While he ocasionally leaves his tent, while in his tent is the only time you can catch him with just his guards. [Run This Encounter](/runner/orceliteguard&orceliteguard&warlordcratus)
-* Warlord Cratus will always detect any PCs that enter his tent via an Arcane Eye he has over the door.
+* The Orc Warlord's tent is at the center of the camp. There are 5 warlords who nominally run the army, 4 brigadier generals and a high commander, Warlord Catrus. The party need only kill the high commander to cause chaos in the camp, the other three would then fight each other for control of the army. The commander has 2 Elite Guards who stay with him most of the time, and functionaries come in and out of his tent pretty regularly on various business. While he ocasionally leaves his tent, while in his tent is the only time you can catch him with just his guards. [Run This Encounter](/runner/warlordcratus)
+* Warlord Cratus will always detect any PCs that enter his tent via an Arcane Eye that has been following the party. As they enter he shimmers, and suddenly there are two of them (one is an illusion). He also summons his force weapon, a longsword made of pure force.
 
 <table class="table">
   <thead><tr><th>Roll</th><th>Unit</th></tr></thead>
