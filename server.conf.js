@@ -29,12 +29,12 @@ app.start = function() {
     
     // get all data/stuff of the body (POST) parameters
     // parse application/json 
-    app.use(bodyParser.json()); 
+    app.use(bodyParser.json({limit: '50mb'})); 
     // parse application/vnd.api+json as json
     app.use(bodyParser.json({ type: 'application/vnd.api+json' })); 
     
     // parse application/x-www-form-urlencoded
-    app.use(bodyParser.urlencoded({ extended: true })); 
+    app.use(bodyParser.urlencoded({ extended: true }));
     
     app.use(express.static(__dirname + '/dist', { maxAge: 365 }));
     console.log('loaded bodyParser');
