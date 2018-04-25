@@ -4,12 +4,12 @@ import Vue from 'vue';
 
 const state = {
   loggedin: { token: localStorage.getItem('token'), username: localStorage.getItem('user') },
-  googletoken: ""
+  googletoken: { token: localStorage.getItem('googletoken'), expiry: localStorage.getItem('googleExpires') }
 };
 
 const getters = {
   isLoggedIn: (state) => {
-    if (state.loggedin) {
+    if (state.loggedin.token) {
       return true;
     } else {
       return false;
@@ -19,7 +19,12 @@ const getters = {
     return state.loggedin;
   },
   getGoogleToken: (state) => {
-    return state.googletoken;
+    if (state.googletoken.token && state.googletoken.expiry < new Date()) {
+      return state.googletoken;
+    } else {
+      state.googletoken = {};
+      return false;
+    }
   }
 };
 
@@ -79,8 +84,10 @@ const mutations = {
   "LOGOUT"(state) {
     state.loggedin = false;
   },
-  setOAuth(state, {token}) {
-    state.googletoken = token;
+  setOAuth(state, {params}) {
+    state.googletoken = { token: params.access_token, expiry: new Date(Date.now() + params.expiresIn * 1000) };
+    localStorage.setItem('googletoken', params.access_token);
+    localStorage.setItem('googleExpires', params.expiresIn);
   }
 };
 

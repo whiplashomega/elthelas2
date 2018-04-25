@@ -61,8 +61,6 @@ export default {
     handleLogin () {
       this.login(this.logincreds).then((response) => {
         this.showLogin = false;
-        console.log(response);
-        console.log(this.loggedin);
       }).catch(() => {
         this.errorMessage = "Error Logging In";
       });
@@ -70,7 +68,6 @@ export default {
     handleRegister () {
       this.register(this.registeruser).then((response) => {
         this.showRegister = false;
-        console.log(response);
       });
     }
   },
@@ -86,7 +83,8 @@ export default {
         params[keyval[0]] = keyval[1];
       });
       if (params.access_token) {
-        this.$store.commit('setOAuth', { token: params.access_token });
+        console.log(params);
+        this.$store.commit('setOAuth', { params });
       }
     }
   },
