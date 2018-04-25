@@ -2,9 +2,11 @@
 
 import Vue from 'vue';
 
+var now = new Date();
+
 const state = {
   loggedin: { token: localStorage.getItem('token'), username: localStorage.getItem('user') },
-  googletoken: { token: localStorage.getItem('googletoken'), expiry: localStorage.getItem('googleExpires') }
+  googletoken: { token: localStorage.getItem('googletoken'), expiry: new Date(Number(localStorage.getItem('googleExpires'))) }
 };
 
 const getters = {
@@ -19,7 +21,7 @@ const getters = {
     return state.loggedin;
   },
   getGoogleToken: (state) => {
-    if (state.googletoken.token && state.googletoken.expiry < new Date()) {
+    if (state.googletoken.token && state.googletoken.expiry > now) {
       return state.googletoken;
     } else {
       state.googletoken = {};
@@ -85,9 +87,10 @@ const mutations = {
     state.loggedin = false;
   },
   setOAuth(state, {params}) {
-    state.googletoken = { token: params.access_token, expiry: new Date(Date.now() + params.expiresIn * 1000) };
+    var expires = new Date(now.getTime() + params.expires_in * 1000);
+    state.googletoken = { token: params.access_token, expiry: expires };
     localStorage.setItem('googletoken', params.access_token);
-    localStorage.setItem('googleExpires', params.expiresIn);
+    localStorage.setItem('googleExpires', expires.getTime());
   }
 };
 
