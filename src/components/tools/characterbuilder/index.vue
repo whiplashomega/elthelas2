@@ -791,7 +791,7 @@
       </div>
       <div class="col-4 print-hide">
         <div class="row">
-          Load/Save From Disk
+          <h4 class="col-12">Load/Save From Disk</h4>
           <div class="btn-group col-4">
             <input type="button" value="Save" @click="save()" class="btn btn-primary" />
             <input type="button" value="Load" @click="load()" class="btn btn-success" />
@@ -807,6 +807,7 @@
           </div>
         </div>
         <div class="row" v-if="googletoken">
+          <h4 class="col-12">Load/Save From Google</h4>
           <div class="col" style="margin-top:15px;">
             <img src="https://developers.google.com/drive/images/drive_icon.png" alt="Google Drive" style="width:38px;height:38px;">
             <div class="btn-group">
@@ -1806,6 +1807,7 @@
         </b-tab>
         <b-tab title="Build">
           <div class="row">
+            <h4 class="col-12">Load/Save From Disk</h4>
             <div class="btn-group col-12">
               <input type="button" value="Save" @click="save()" class="btn btn-primary" />
               <input type="button" value="Load" @click="load()" class="btn btn-success" />
@@ -1813,7 +1815,7 @@
             <input type="file" id="fileload" class="col-12" />
           </div>
           <div class="row" v-if="loggedin">
-            Load/Save From Server
+            <h4 class="col-12">Load/Save From Server</h4>
             <div class="btn-group col-12">
               <input type="button" v-if="character._id" value="Save" @click="updateToServer()" class="btn btn-primary" />
               <input type="button" value="Save New" @click="newToServer()" class="btn btn-primary" />
@@ -1821,6 +1823,7 @@
             </div>
           </div>
           <div class="row" v-if="googletoken">
+            <h4 class="col-12">Load/Save From Google</h4>
             <div class="col" style="margin-top:15px;">
               <img src="https://developers.google.com/drive/images/drive_icon.png" alt="Google Drive" style="width:38px;height:38px;">
               <div class="btn-group">
@@ -1830,6 +1833,7 @@
             </div>
           </div>
           <div class="row" v-else>
+            <h4 class="col-12">Load/Save From Google</h4>
             <p class="col">Login to Google from the Menu to enable load and save from drive.</p>
           </div>
           <div class="row" style="margin-top: 10px;">
