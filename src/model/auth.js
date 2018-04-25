@@ -3,7 +3,7 @@
 import Vue from 'vue';
 
 const state = {
-  loggedin: localStorage.getItem('token'),
+  loggedin: { token: localStorage.getItem('token'), username: localStorage.getItem('user') },
   googletoken: ""
 };
 
@@ -59,7 +59,7 @@ const actions = {
     commit("LOGOUT");
   },
   saveAuthHeader() {
-    var token = state.loggedin;
+    var token = state.loggedin.token;
     Vue.http.headers.common['Authorization'] = 'Basic ' + token;
   }
 };
@@ -67,13 +67,14 @@ const actions = {
 const mutations = {
   getCachedCredentials (state) {
   },
-  "saveLogin" (state, { user, token, rememberme }) {
+  "saveLogin" (state, { user, token }) {
     console.log("SAVE LOGIN TRIGGERED");
     console.log(user);
     Vue.http.headers.common['Authorization'] = 'Basic ' + token;
-    localStorage.setItem('token', token);
     state.loggedin = user;
     state.loggedin.token = token;
+    localStorage.setItem('user', user.username);
+    localStorage.setItem('token', user.token);
   },
   "LOGOUT"(state) {
     state.loggedin = false;

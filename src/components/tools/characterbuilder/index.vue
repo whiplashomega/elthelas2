@@ -791,11 +791,20 @@
       </div>
       <div class="col-4 print-hide">
         <div class="row">
+          Load/Save From Disk
           <div class="btn-group col-4">
             <input type="button" value="Save" @click="save()" class="btn btn-primary" />
             <input type="button" value="Load" @click="load()" class="btn btn-success" />
           </div>
           <input type="file" id="fileload" class="col-8" />
+        </div>
+        <div class="row" v-if="loggedin">
+          <h4 class="col-12">Load/Save From Server</h4>
+          <div class="btn-group col-12">
+            <input type="button" v-if="character._id" value="Save" @click="updateToServer()" class="btn btn-primary" />
+            <input type="button" value="Save New" @click="newToServer()" class="btn btn-primary" />
+            <input type="button" value="Load" @click="getFromServer()" class="btn btn-success" />
+          </div>
         </div>
         <div class="row" v-if="googletoken">
           <div class="col" style="margin-top:15px;">
@@ -1803,6 +1812,14 @@
             </div>
             <input type="file" id="fileload" class="col-12" />
           </div>
+          <div class="row" v-if="loggedin">
+            Load/Save From Server
+            <div class="btn-group col-12">
+              <input type="button" v-if="character._id" value="Save" @click="updateToServer()" class="btn btn-primary" />
+              <input type="button" value="Save New" @click="newToServer()" class="btn btn-primary" />
+              <input type="button" value="Load" @click="getFromServer()" class="btn btn-success" />
+            </div>
+          </div>
           <div class="row" v-if="googletoken">
             <div class="col" style="margin-top:15px;">
               <img src="https://developers.google.com/drive/images/drive_icon.png" alt="Google Drive" style="width:38px;height:38px;">
@@ -1951,6 +1968,17 @@
         <tr v-for="(file, index) in filelist" v-bind:key="index">
           <td><span class="clickable" @click="loadFromDrive(file.id)">{{file.name}}</span></td>
           <td>{{file.modifiedTime | date}}</td>
+        </tr>
+      </table>
+    </b-modal>
+    <b-modal id="servermodal" title="Load File from Server">
+      <table class="table table-striped">
+        <tr>
+          <th>Character Name</th><th>Level</th><th>-</th>
+        </tr>
+        <tr v-for="character in characters" v-bind:key="character._id">
+          <td><span class="clickable" @click="loadChar(character)">{{character.name}}</span></td><td>{{charlevel(character)}}</td>
+          <td><input type="button" @click="deleteFromServer(character)" class="btn btn-danger" value="X" /></td>
         </tr>
       </table>
     </b-modal>

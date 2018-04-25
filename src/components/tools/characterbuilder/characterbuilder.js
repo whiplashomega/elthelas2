@@ -1,5 +1,6 @@
 import { mapGetters } from 'vuex';
 import Vue from 'vue';
+import test from '@/tests/unit/charbuilder.test.js';
 
 export default {
   computed: {
@@ -13,7 +14,9 @@ export default {
       cities: 'allCityNames',
       factions: 'allOrganizations',
       feats: 'allFeats',
-      googletoken: 'getGoogleToken'
+      googletoken: 'getGoogleToken',
+      token: 'getUserInfo',
+      loggedin: 'isLoggedIn'
     }),
     featsort () {
       var feats = [ ...this.feats, { name: "Ability Score Increase", prereq: "", description: "Increase one ability score by 2 or 2 ability scores by 1" } ];
@@ -224,7 +227,8 @@ export default {
         features: [],
         saveDCBonus: [0, 0, 0, 0, 0, 0],
         attBonus: [0, 0, 0, 0, 0, 0]
-      }
+      },
+      characters: []
     };
   },
   filters: {
@@ -276,6 +280,63 @@ export default {
         { headers: { 'Content-Type': 'multipart/related; boundary="' + boundary + '"' } }).then((a) => {
         console.log(a);
         this.$root.$emit('bv::hide::modal', 'loading');
+      });
+    },
+    getFromServer() {
+      if(this.loggedin) {
+        this.$root.$emit('bv::show::modal', 'loading');
+        this.$http.get('/characters?token=' + this.token.token).then(function(res) {
+          this.characters = res.body;
+          console.log(this.characters);
+          this.$root.$emit('bv::hide::modal', 'loading');
+        this.$root.$emit('bv::show::modal', 'servermodal');
+        }).catch(function(res) {
+          console.log(res);
+          alert("error when loading, please try logging off and in again");
+          this.$root.$emit('bv::hide::modal', 'loading');
+        });
+      }
+    },
+    loadChar(character) {
+      this.character = character;
+      this.$root.$emit('bv::hide::modal', 'servermodal');
+    },
+    updateToServer() {
+      this.$root.$emit('bv::show::modal', 'loading');
+      this.$http.post('/characters/' + this.character._id + '?token=' + this.token.token, { character: this.character }).then(function(res) {
+        console.log(res);
+        this.character._id = res.body._id;
+        this.$root.$emit('bv::hide::modal', 'loading');
+      }).catch(function(res) {
+        console.log(res);
+        alert("error when saving, please try logging off and in again");
+        this.$root.$emit('bv::hide::modal', 'loading');
+      });      
+    },
+    newToServer() {
+      this.$root.$emit('bv::show::modal', 'loading');
+      this.$http.post('/characters?token=' + this.token.token, { character: this.character }).then(function(res) {
+        console.log(res);
+        this.character._id = res.body._id;
+        this.$root.$emit('bv::hide::modal', 'loading');
+        this.$root.$emit('bv::show::modal', 'servermodal');
+      }).catch(function(res) {
+        console.log(res);
+        alert("error when loading, please try logging off and in again");
+        this.$root.$emit('bv::hide::modal', 'loading');
+      });
+    },
+    deleteFromServer(character) {
+      this.$root.$emit('bv::show::modal', 'loading');
+      this.$http.delete('/characters/' + character._id + '?token=' + this.token.token).then(function(res) {
+        if(res.body.success) {
+          this.$root.$emit('bv::hide::modal', 'loading');
+          this.characters.splice(this.characters.indexOf(character), 1);
+        }
+      }).catch(function(res) {
+        console.log(res);
+        alert("error when loading, please try logging off and in again");
+        this.$root.$emit('bv::hide::modal', 'loading');        
       });
     },
     totalGold() {
@@ -571,6 +632,13 @@ export default {
       });
       return level;
     },
+    charlevel(character) {
+      var level = 0;
+      character.charclasses.forEach((a) => {
+        level += Number(a.level);
+      });
+      return level;
+    },
     warlockSlots() {
       var slots = 0;
       this.character.charclasses.forEach((a) => {
@@ -794,8 +862,12 @@ export default {
     }
   },
   mounted () {
+    console.log(this.token);
     if (window.outerWidth < 1024) {
       this.mobile = true;
+    }
+    if(process.env.NODE_ENV === 'development') {
+      test.tests(this);
     }
   },
   updated() {

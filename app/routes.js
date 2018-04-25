@@ -22,7 +22,9 @@
         
         //user function routes
         var users = require('./users');
+        var characters = require('./characters');
         app.use('/users', users);
+        app.use('/characters', characters);
         
         //generate the sitemap on request
         app.get('/sitemap.xml', function(req, res) {

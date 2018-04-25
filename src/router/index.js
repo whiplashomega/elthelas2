@@ -28,6 +28,7 @@ import charbuilder from '../components/tools/characterbuilder';
 import npcgen from '@/components/tools/npcgenerator';
 import feats from '@/components/options/feats';
 import privacy from '@/components/privacy';
+import unit from '@/components/test';
 
 Vue.use(Router);
 
@@ -322,6 +323,16 @@ var router = new Router({
       components: {
         default: privacy,
         sidebar: options
+      }
+    },
+    {
+      name: "unittest",
+      meta: {
+        title: "Unit Test"
+      },
+      path: "/test/unit/:component",
+      components: {
+        default: unit
       }
     }
   ],

@@ -37,10 +37,11 @@ Vue.use(VueResource);
 Vue.config.productionTip = false;
 Vue.config.ignoredElements = ['gcse:search'];
 /* eslint-disable no-new */
-new Vue({
+var app = new Vue({
   el: '#app',
   router,
   components: { App },
   template: '<App/>',
   store
 });
+export default app;
