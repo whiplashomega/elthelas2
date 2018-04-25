@@ -315,11 +315,11 @@ export default {
     },
     newToServer() {
       this.$root.$emit('bv::show::modal', 'loading');
+      this.character._id = undefined;
       this.$http.post('/characters?token=' + this.token.token, { character: this.character }).then(function(res) {
         console.log(res);
         this.character._id = res.body._id;
         this.$root.$emit('bv::hide::modal', 'loading');
-        this.$root.$emit('bv::show::modal', 'servermodal');
       }).catch(function(res) {
         console.log(res);
         alert("error when loading, please try logging off and in again");
@@ -331,6 +331,7 @@ export default {
       this.$http.delete('/characters/' + character._id + '?token=' + this.token.token).then(function(res) {
         if(res.body.success) {
           this.$root.$emit('bv::hide::modal', 'loading');
+          this.$root.$emit('bv::show::modal', 'servermodal');
           this.characters.splice(this.characters.indexOf(character), 1);
         }
       }).catch(function(res) {

@@ -17,9 +17,10 @@ router.get('/', Verify.verifyOrdinaryUser, function(req, res, next) {
 });
 
 router.post('/', Verify.verifyOrdinaryUser, function(req, res, next) {
-  var newchar = new Character(req.body.character);
+  var newchar = new Character({ ...req.body.character, owner: req.decoded.username });
   newchar.save(function(err, character) {
     if (err) throw err;
+    console.log(character.id);
     res.header("Cache-Control", "no-cache, no-store, must-revalidate");
     res.header("Pragma", "no-cache");
     res.header("Expires", 0);
