@@ -140,9 +140,14 @@
     "description": "Quick to notice details of your environment, you gain the following benefits:\n\n* Increase your Intelligence or Wisdom score by 1, to a maximum o f 20.\n* If you can see a creature’s mouth while it is speaking a language you understand, you can interpret what it’s saying by reading its lips.\n* You have a +5 bonus to your passive Wisdom (Perception) and passive Intelligence (Investigation) scores."
   },
   {
+    "name": "Polearm Master (My Version)",
+    "prereq": "",
+    "description": "You can keep your enemies at bay with reach weapons. You gain the following benefits:\n\n* When you take the Attack action and attack with only a glaive, halberd, spear (two-handed, melee), trident (two-handed, melee) or quarterstaff (two-handed), you can use a bonus action to make a melee attack with the opposite end of the weapon. The weapon’s damage die for this attack is a d4, and the attack deals bludgeoning damage.\n* While you are wielding a glaive, halberd, spear, trident, pike, or quarterstaff, other creatures provoke an opportunity attack from you when they enter your reach."
+  },
+  {
     "name": "Polearm Master",
     "prereq": "",
-    "description": "You can keep your enemies at bay with reach weapons. You gain the following benefits:\n\n* When you take the Attack action and attack with only a glaive, halberd, spear (two-handed), or quarterstaff (two-handed), you can use a bonus action to make a melee attack with the opposite end of the weapon. The weapon’s damage die for this attack is a d4, and the attack deals bludgeoning damage.\n* While you are wielding a glaive, halberd, spear, pike, or quarterstaff, other creatures provoke an opportunity attack from you when they enter your reach."
+    "description": "You can keep your enemies at bay with reach weapons. You gain the following benefits:\n\n* When you take the Attack action and attack with only a glaive, halberd, or quarterstaff, you can use a bonus action to make a melee attack with the opposite end of the weapon. The weapon’s damage die for this attack is a d4, and the attack deals bludgeoning damage.\n* While you are w ielding a glaive, halberd, pike, or quarterstaff, other creatures provoke an opportunity attack from you when they enter your reach."
   },
   {
     "name": "Resilient",

@@ -42,7 +42,7 @@ export default {
         if (cl.level >= 8) {
           asi++;
         }
-        if (cl.level >= 10 && (cl.thisclass.name === "Fighter" || cl.thisclass.name === "Rogue")) {
+        if (cl.level >= 10 && (cl.thisclass.name === "Rogue")) {
           asi++;
         }
         if (cl.level >= 12) {
@@ -551,8 +551,7 @@ export default {
       this.spellDetailModal = true;
     },
     removeSpell(i) {
-      this.character.spells[this.displayLevel].splice(
-        this.character.spells[this.displayLevel].indexOf(i), 1);
+      this.character.spells[this.displayLevel].splice(i, 1);
     },
     addSpell(spell) {
       if (spell) {
@@ -578,7 +577,7 @@ export default {
       }
       var casterlevel = 0;
       this.character.charclasses.forEach((a) => {
-        casterlevel += Number(a.level) * Number(a.selsubclass.castermult);
+        casterlevel += Math.floor(Number(a.level) * Number(a.selsubclass.castermult));
       });
       try {
         return this.slots[casterlevel][index] + Number(this.character.bonusslots[index]);

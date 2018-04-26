@@ -58,9 +58,9 @@
  {
    "Name": "Quarterstaff",
    "Type": "Simple",
-   "Damage": "(1d6/)1d8 bludgeoning",
+   "Damage": "1d6/1d8 bludgeoning",
    "Weight": "4 lb",
-   "Properties": "two-handed, finesse (versatile/not finesse in book)",
+   "Properties": "versatile",
    "Cost": "0.2"
  },
  {
@@ -222,6 +222,14 @@
    "Weight": "2 lb",
    "Properties": "finesse, light",
    "Cost": "10"
+ },
+ {
+   "Name": "Trident (My Version)",
+   "Type": "Martial",
+   "Damage": "1d8/1d10 piercing",
+   "Weight": "4 lb",
+   "Properties": "Thrown (range 20/60), versatile",
+   "Cost": "5"
  },
  {
    "Name": "Trident",

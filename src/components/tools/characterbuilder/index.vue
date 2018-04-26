@@ -608,7 +608,7 @@
                       <td>{{spell.castingTime}}</td>
                       <td>{{spell.duration}}</td>
                       <td>{{spell.class}}</td>
-                      <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(spell)">X</button></td>
+                      <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
                     </tr>
                   </tbody>
                 </table>
@@ -703,64 +703,7 @@
               </div>
               <button type="button" @click="spellModal = true" class="btn btn-sm btn-primary print-hide">+</button>
             </div>
-            <b-modal v-model="spellModal" title="Add Spell" class="modal-lg" @ok="addSpell(selspell)">
-              Filter by Text
-              <input type="text" class="form-control" v-model="spellfilter" />
-              Filter by Level
-              <select v-model="levelfilter" class="form-control">
-                <option value="all" selected>All</option>
-                <option value="cantrip">Cantrips</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-              </select>
-              Filter by Class
-              <select v-model="classfilter" class="form-control">
-                <option value="all">All</option>
-                <option value="bard">Bard</option>
-                <option value="cleric">Cleric</option>
-                <option value="druid">Druid</option>
-                <option value="paladin">Paladin</option>
-                <option value="ranger">Ranger</option>
-                <option value="sorcerer">Sorcerer</option>
-                <option value="warlock">Warlock</option>
-                <option value="wizard">Wizard</option>
-              </select>
-              Spell Added By Class:
-              <select v-model="selspellclass" class="form-control" required>
-                <option v-for="charclass in character.charclasses" :value="charclass.thisclass.name" v-bind:key="charclass.thisclass.name">{{charclass.thisclass.name}}</option>
-              </select>
-              <table class="table table-sm" id="spellList">
-                <thead style="float:left; width:100%; display: table;"><tr><th>-</th><th>Spell</th><th>Level</th></tr></thead>
-                <tbody style="overflow-y:scroll; max-height: 300px; float: left; width: 100%">
-                  <tr v-for="spell in filteredspells" v-bind:key="spell.title" style="float:left; width:100%; display: table">
-                    <td><input type="radio" name="selspell" :value="spell" v-model="selspell" required /></td>
-                    <td><span class="clickable" @click="spellDetail(spell)">{{spell.title}}</span></td>
-                    <td>{{spell.level}}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </b-modal>
-            <b-modal v-model="spellDetailModal" @ok="spellDetailModal = false" id="spellmodal" size="lg" :title="detailspell.title" ok-only>
-              <h4>
-                <strong>{{detailspell.school}}
-                  {{detailspell.level.replace('level', 'level ')}}
-                </strong>
-                <span v-if="detailspell.ritual"> Ritual</span> ({{detailspell.source}})
-              </h4>
-              <p><strong>Casting Time: </strong>{{detailspell.castingTime}}</p>
-              <p><strong>Range: </strong>{{detailspell.range}}</p>
-              <p><strong>Components: </strong>{{detailspell.components}}</p>
-              <p><strong>Duration: </strong>{{detailspell.duration}}</p>
-              <p><strong>Tags: </strong> {{detailspell.tags.join(", ")}}</p>
-              <div v-html="$options.filters.marked(detailspell.description)"></div>
-            </b-modal>
+
           </div>
         </div>
         <!-- Resources -->
@@ -1554,65 +1497,13 @@
                       <td>{{spell.castingTime}}</td>
                       <td>{{spell.duration}}</td>
                       <td>{{spell.class}}</td>
-                      <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(spell)">X</button></td>
+                      <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
                     </tr>
                   </tbody>
                 </table>
                 </div>
                 <button type="button" @click="spellModal = true" class="btn btn-sm btn-primary print-hide">+</button>
               </div>
-              <b-modal v-model="spellModal" title="Add Spell" class="modal-lg">
-                Filter by Text
-                <input type="text" class="form-control" v-model="spellfilter" />
-                Filter by Level
-                <select v-model="levelfilter" class="form-control">
-                  <option value="all" selected>All</option>
-                  <option value="cantrip">Cantrips</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                </select>
-                Filter by Class
-                <select v-model="classfilter" class="form-control">
-                  <option value="all">All</option>
-                  <option value="bard">Bard</option>
-                  <option value="cleric">Cleric</option>
-                  <option value="druid">Druid</option>
-                  <option value="paladin">Paladin</option>
-                  <option value="ranger">Ranger</option>
-                  <option value="sorcerer">Sorcerer</option>
-                  <option value="warlock">Warlock</option>
-                  <option value="wizard">Wizard</option>
-                </select>
-                <table class="table">
-                  <thead><tr><th>Spell</th><th>Level</th></tr></thead>
-                  <tbody>
-                    <tr v-for="spell in filteredspells" v-bind:key="spell.title">
-                      <td><span class="clickable" @click="addSpell(spell)">{{spell.title}}</span></td><td>{{spell.level}}</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </b-modal>
-              <b-modal v-model="spellDetailModal" @ok="spellDetailModal = false" id="spellmodal" size="lg" :title="detailspell.title" ok-only>
-                <h4>
-                  <strong>{{detailspell.school}}
-                    {{detailspell.level.replace('level', 'level ')}}
-                  </strong>
-                  <span v-if="detailspell.ritual"> Ritual</span> ({{detailspell.source}})
-                </h4>
-                <p><strong>Casting Time: </strong>{{detailspell.castingTime}}</p>
-                <p><strong>Range: </strong>{{detailspell.range}}</p>
-                <p><strong>Components: </strong>{{detailspell.components}}</p>
-                <p><strong>Duration: </strong>{{detailspell.duration}}</p>
-                <p><strong>Tags: </strong> {{detailspell.tags.join(", ")}}</p>
-                <div v-html="$options.filters.marked(detailspell.description)"></div>
-              </b-modal>
             </div>
           </div>
         </b-tab>
@@ -1987,8 +1878,67 @@
       </table>
     </b-modal>
     <b-modal id="loading"
-      no-close-on-backdrop no-close-on-esc hide-header hide-footer
-    ><img src="/static/images/giphy.gif" alt="Loading" /></b-modal>
+      no-close-on-backdrop no-close-on-esc hide-header hide-footer>
+      <img src="/static/images/giphy.gif" alt="Loading" />
+    </b-modal>
+    <b-modal v-model="spellModal" title="Add Spell" class="modal-lg" @ok="addSpell(selspell)">
+      Filter by Text
+      <input type="text" class="form-control" v-model="spellfilter" />
+      Filter by Level
+      <select v-model="levelfilter" class="form-control">
+        <option value="all" selected>All</option>
+        <option value="cantrip">Cantrips</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+      Filter by Class
+      <select v-model="classfilter" class="form-control">
+        <option value="all">All</option>
+        <option value="bard">Bard</option>
+        <option value="cleric">Cleric</option>
+        <option value="druid">Druid</option>
+        <option value="paladin">Paladin</option>
+        <option value="ranger">Ranger</option>
+        <option value="sorcerer">Sorcerer</option>
+        <option value="warlock">Warlock</option>
+        <option value="wizard">Wizard</option>
+      </select>
+      Spell Added By Class:
+      <select v-model="selspellclass" class="form-control" required>
+        <option v-for="charclass in character.charclasses" :value="charclass.thisclass.name" v-bind:key="charclass.thisclass.name">{{charclass.thisclass.name}}</option>
+      </select>
+      <table class="table table-sm" id="spellList">
+        <thead style="float:left; width:100%; display: table;"><tr><th>-</th><th>Spell</th><th>Level</th></tr></thead>
+        <tbody style="overflow-y:scroll; max-height: 300px; float: left; width: 100%">
+          <tr v-for="spell in filteredspells" v-bind:key="spell.title" style="float:left; width:100%; display: table">
+            <td><input type="radio" name="selspell" :value="spell" v-model="selspell" required /></td>
+            <td><span class="clickable" @click="spellDetail(spell)">{{spell.title}}</span></td>
+            <td>{{spell.level}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </b-modal>
+    <b-modal v-model="spellDetailModal" @ok="spellDetailModal = false" id="spellmodal" size="lg" :title="detailspell.title" ok-only>
+      <h4>
+        <strong>{{detailspell.school}}
+          {{detailspell.level.replace('level', 'level ')}}
+        </strong>
+        <span v-if="detailspell.ritual"> Ritual</span> ({{detailspell.source}})
+      </h4>
+      <p><strong>Casting Time: </strong>{{detailspell.castingTime}}</p>
+      <p><strong>Range: </strong>{{detailspell.range}}</p>
+      <p><strong>Components: </strong>{{detailspell.components}}</p>
+      <p><strong>Duration: </strong>{{detailspell.duration}}</p>
+      <p><strong>Tags: </strong> {{detailspell.tags.join(", ")}}</p>
+      <div v-html="$options.filters.marked(detailspell.description)"></div>
+    </b-modal>
   </div>
 </template>
 <style src="./characterbuilder.scss" scoped lang="scss"></style>
