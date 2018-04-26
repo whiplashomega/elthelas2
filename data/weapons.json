@@ -58,9 +58,9 @@
  {
    "Name": "Quarterstaff",
    "Type": "Simple",
-   "Damage": "1d6/1d8 bludgeoning",
+   "Damage": "(1d6/)1d8 bludgeoning",
    "Weight": "4 lb",
-   "Properties": "versatile",
+   "Properties": "two-handed, finesse (versatile/not finesse in book)",
    "Cost": "0.2"
  },
  {

@@ -608,7 +608,7 @@
                       <td>{{spell.castingTime}}</td>
                       <td>{{spell.duration}}</td>
                       <td>{{spell.class}}</td>
-                      <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
+                      <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(spell)">X</button></td>
                     </tr>
                   </tbody>
                 </table>
@@ -1554,7 +1554,7 @@
                       <td>{{spell.castingTime}}</td>
                       <td>{{spell.duration}}</td>
                       <td>{{spell.class}}</td>
-                      <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(index)">X</button></td>
+                      <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(spell)">X</button></td>
                     </tr>
                   </tbody>
                 </table>
