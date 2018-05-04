@@ -1,65 +1,104 @@
 # Chapter 3: Civil War
 
-## Preparation
+## Encounters in Cur'Estan
 
-### Orders
+### Malia Takes Over the Refugee Camp
 
-#### General Heartbren's Orders
+Malia will request Adam accompany her to the refugee camp on arrival at Cur'Estan. She will immediately demand a meeting with Jaxan Chin, and tell him she is taking over the camp. Jaxan will object. If Adam does not intervene a fight between the two may break out. Malia will not kill Jaxan, but will put him in his place.
 
-The influx of refugees presents a serious supply problem for Cur'Estan, and our best route of resupply, moving supplies upriver from Cur'Mestin is cut off by the
-rebels under Manius Aquila. You must find a way to get open a trade route with Cur'Mestin so that we can buy supplies. Negotiate with the local duchess if you can,
-use other means if you have to, thousands of lives depend on it.
+[Run This Encounter](/runner/maliademonslayer&jaxanchin)
+
+### Flykr's Store
+
+Eduard will report to Flykr that the store is going reasonably well. He hands over a profit of 200 gp, but mentions that some inventory has gone missing. Not enough to be a significant problem, but there is clearly a thief. He does not suspect Jazelle, but does have a few recent customers that he suspects. They are:
+
+* Ogrun Firebreath - He was acting shifty when in the store. He is secretly a cross-dresser who likes to feel pretty, and so felt awkward when purchasing dresses for himself. This awkwardness made Eduard suspect him of the thefts. (Deception -1)
+* Kyman Hexhammer - Eduard is aware that Kyman is a powerful member of the Black Sun. He was in the store purchasing disguises for some of his thieves and is not actually the thief. Suspected because he is a known criminal. His cover story is that he is buying the dresses for his lover. (Deception +10)
+* Sara Grant - A middle aged woman who recently took up dancing. She is broke and came into the store to browse and dream of buying the nice silk dresses. Eduard is suspicious of her because she came in repeatedly but never actually bought anything. She doesn't want to admit that she can't afford the dresses, so she claims she was simply dissatisfied with the dresses available. (Deception +1)
+* Olivia Munbridge - A young woman who doesn't dance but shoplifts for thrills. Eduard was suspicious of her just because he doesn't like teenagers and thinks they are nothing but trouble. In this case he was right. Olivia came into the store three times. Coincidentally always just after Sara Grant had been there. She always purchased something small, a bell, a pair of shoes, etc, and smuggled out the stolen dresses in her bag. If questioned she claims she hates dresses (true) and would never steal them (false, she likes the thrill). Deception +5.
+
+### Reward Ceremony
+
+General Heartbren will convene an official reward ceremony for the party members the morning after they arrive. The leaders of the party's orders will be there. Those who completed their personal missions will receive additional rewards from their leader.
+
+* General Heartbren will reward the party 5000 gp each for successfully evacuating the city.
+* James Lightbringer will reward Silas with a suit of Gleaming Orichalcum Plate, adorned with symbols of Alohim and the Lords of the Rising Dawn.
+* Kyman Hexhammer will reward Fallon with an Amulet of Intelligence +2
+* Malia Demonslayer will reward Adam with her Wand of Fire
+
+#### Wand of Fire (wand, attunement)
+
+This wand grants a +1 bonus to spell attack rolls when casting spells that do fire damage, and adds the wielders spellcasting modifier to the damage rolls of fire spells. It has 5 charges, and recovers 1d4+1 charges after a long rest. The wielder can use 1 charge to cast the spell Burning Hands, 2 charges to cast Scorching Ray, or 3 charges to cast Fireball.
+
+## Orders
+
+### General Heartbren's Orders
+
+The influx of refugees has created a supply problem in Cur'Estan. In normal conditions we would transport goods via the Upper Yellow River from Cur'Mestin and the farming communities in western Dormania, but the Duchess of Cur'Mestin has blockaded the river due to our alliance with Empress Dormana. We need to end that blockade. If you can do it via diplomacy, wonderful, but if not, contact the Empresses loyalists in the city and find a way to break the blockade by force.
 
 #### Amathera's Shield Orders
 
-There are rumors that Genevieve Octavius may have made deals with devils, find out for sure if this is the case. If so, she cannot be allowed to continue in a position
-of power and must be deposed or killed. -Malia Demonslayer
+Rumor has it that the Duchess of Cur'Mestin, Genevieve Octavius, is in cahoots with devils who help prop up her rule in return for the souls of her people. I don't think I need to stress how grevious a crime that is. Bring an end to her rule, and expel the devils from the city.
 
-#### Black Sun Orders:
+#### Black Sun Orders
 
-An old, associate, of mine has been seen in Cur'Mestin recently, apparently working for Genevieve Octavius. Felix is an opportunistic grifter who stole my Shield Guardian.
-Get it back from him, then kill him. -Kyman Hexhammer
+I have heard that an old associate of mine has been working for Duchess Octavius. Find Felix and convince him to switch sides.
 
-#### Illustrious Guild of Merchants and Fine Artisans Orders
+#### Illustrious Guild of Merchant's and Fine Artisans Orders
 
-This embargo is an afront to the guild. Dormania and Kandor have had open trade relations since the schism! General Heartbren may be concerned about food, but this
-embargo is much bigger than that. Several of the local merchants pooled their resources to order a special shipment of goods a few weeks ago that has been held up
-in a warehouse in Cur'Mestin. I want you to personally escort that shipment back to Cur'Estan. -Kendrick O'mally
+There are rumors of a Purple Worm Nest near Cur'Mestin. Purple Worm eggs are incredibly valuable. Bring at least one back with you and we will pay you well for it.
 
-#### Lords of the Rising Dawn Orders
+#### Lord's of the Rising Dawn Orders
 
-We have received word that the local temple of Alohim in Cur'Mestin was desecrated. Make contact with the local priest among the loyalists in Cur'Mestin, find out who
-the perpetrator was, and see that they pay for their crimes against the High God. -Duke James Lightbringer
+The Temple of Alohim in the city has been taken over by some strange cult. Expel the invaders and restore the clerics to their temple.
 
-#### Masters of the Deep Song Orders
+#### Shepherd's of the All-Mother
 
-Wyrmling Trapsmith, that fecund piece of shit of a quartermaster, has refused beer rations for the refugees! It isn't like the beer was much good anyways, but this is a
-travesty! Before you run off to Cur'Mestin I need you to get at least 3 barrels of beer out of the castle storehouse for me. -Ogrun Firebreath
+We have heard of an unprecedented opportunity in Cur'Mestin! Take this scroll to the leader of the Shepherd's in the city. He will need you to find and kill one of the Purple Worms that live nearby. We will then raise it as an uber-powerful undead slave! One we will use to create a grand new system of underground tunnels for transportation to rival even the dwarves!
 
-#### Shepherds of the All-Mother Orders
+## Traveling to Cur'Mestin
 
-The faithful in Cur'Mestin have been under persecution by both the loyalists and the rebels. Make contact with the local cleric of Nera and inform him that he can bring
-his flock to safety here in Cur'Estan. -Gimble Beren
+#### Travelling by Boat
 
-#### Silver Dragon Knights Orders
+When the party arrives at the river, the first ship to pass will be a keelboat, moving slowly upriver (slower than they can walk) and laden with cargo. They will be unwilling to take on armed passengers unless convinced. There are two crewmen, Captain Jack and his first mate Sparrow. They are carrying food to Northport, grain and dried meat.
 
-The Emperor's emissary to Dormania was held up in Cur'Mestin on his way to Desadorel. Find out where he is and help him continue on his journey. -Farnor Spiketooth
+The next boat to pass is the galley of Captain Mercedes Hawk. She is a pirate and a slaver looking to sell slaves to the orcs.  All of her slaves are below decks, rowing the boat. They are travelling half-speed due to the current, but Mercedes will offer to put her crew on double shifts for the right price. She offers passage at 50 gp per person, or 75 gp per person for double time.
 
-### Food for the Refugees
+She has 10 crewmen including herself.
 
-The quartermaster has been refusing to give the refugees food, despite General Heartbren's orders. There are a few ways to solve this problem.
+The ship has 2 levels below decks, the first is the cargo hold and quarters, players will be given rooms on this level (3 rooms, 2 per room). The ship is carrying some cargo in the form of spices (that Mercedes looted off the ship the slaves below decks came from.) The bottom level is the rowing deck, the 30 slaves down there never come up, and are only mentioned as 'oarsmen'. Mercedes will inform the party that it is off-limits, and the hatch remains padlocked at all times. Captain Mercedes and her first-mate Robert (also the slave driver) are the only ones with keys. The lock is a DC 15 slight of hand check to unlock (with advantage if proficient with thieves tools, must have thieves tools to attempt) or a DC 20 strength check to break.
 
-#### Involve General Heartbren
+If the party does not investigate the lower deck on their own, the following things will happen, one per day if travelling at double speed, or one every other day if travelling at normal speed:
 
-General Heartbren will if asked personally appeal to Wyrmling to increase the rations for the refugees. Wyrmling will comply out of personal loyalty.
+event 1: The party hears a scream from below decks echo through the ship.
 
-#### Find Dirt on Wyrmling
+event 2: There is a loud splash in the night as a crewman dumps a dead slave overboard. He responds to any questioning with 'just dumping the garbage'.
 
-Wyrmling's quarters near his office contain a series of letters he has received from kobolds working for the orc armies. While there is nothing directly incriminating in the letters, Wyrmling will balk at their potential revelation to avoid any appearance of disloyalty.
+event 3: Robert comes up from below decks still wearing his black mask and carrying his whip (which has blood on it).
 
-#### Bribe one of Wyrmlings workers
+event 4: Robert calls the captain below decks saying there is a 'situation'. When the captain returns she is cleaning blood off her dagger. (If the party investigates here it is a slave that got loose from its chains and is holding a crewman hostage and demanding freedom).
 
-Wyrmling's second in command is Bog Ironfoot, an old plains dwarf who handles most deliveries and orders. If he overhears the party arguing with Wyrmling about the issue at any point, he will approach them and inform them that, for a price, he would be willing to ensure the goods are delivered to the refugees. Bog wants 100 gp to take on the job.
+##### [Run this Encounter](/runner/bandit&bandit&bandit&bandit&bandit&bandit&bandit&bandit&bandit&captainmercedes)
+
+## Carlyle Pt. 2
+
+Shortly after arrival in Cur'Mestin (before entering the city). A raven will drop the hilt of a rapier in front of Flykr, then land on her shoulder, a letter in a tube tied to it's leg (similar to a messenger pigeon). The letter will say:
+
+My Dearest Flykr,
+
+It has been my deepest honor to watch you these weeks. Your beauty and grace continue to surpass all others. Please accept this gift, when combined with the blade shard you already carry it will help to protect you from all harm. While a part of me is always with you, I must venture onward to Strovenguard. The Raven on your shoulder is my good friend Quothe, so long as you hold to the hilt of this blade he will serve you with loyalty, showing you all of the love that, for now, I cannot.
+
+Forever Yours,
+Carlyle
+
+<aside>
+<h4>The Singing Rapier (2 pieces)</h4>
+
+<p>When combined with the blade shard necklace makes a single magic weapon (broken rapier, functionally a dagger) that:</p>
+
+<p>2/day grants a bonus to AC equal to spellcasting modifier, advantage on acrobatics checks, and an extra 10 ft of movement speed for 1 minute (as bonus action).</p>
+<p>does 1d4 base damage.</p>
+</aside>
 
 ## Cur'Mestin
 
@@ -117,145 +156,31 @@ The younger Genevieve is bright and capable, but foolhardy, believing ever brigh
 
 Felix is a young half-elf with a questionable past. He regularly works for the highest bidder, sometimes as a spy, sometimes as a diplomat. He honors his contracts, but takes it very personally when someone else fails to honor theirs. Has worked with Kyman Hexhammer in the past, though they are not currently on the best of terms. He has a shield guardian companion that rarely leaves his side. He is currently in the employ of Genevieve Octavius to root out the loyalists.
 
-## Castle Octavius
+#### TODO: High Cleric of Alohim
 
-### Diplomacy
+#### TODO: Devil Second in Command
 
-When the players arrive at Castle Octavius they will be met by Felix Crawford and his shield guardian just inside the gate. He will show them to the Grand Hall where Genevieve herself will meet with them.
+#### TODO: Erik Dawnblade
 
-Genevieve is flanked by 2 Cambions who serve as her personal bodyguards, although they are disguised as ordinary guards (via the alter self spell). Her imp familiar is invisible, sitting on the arm of her throne. A bone devil hangs from the ceiling, disguised as the skeleton of a large beast. 8 Ordinary guards stand in various places around the room, 2 at the door, 4 along the walls, and 2 flanking the throne. Genevieve the Younger sits on fine chair observing the proceedings to one side, but will not get involved with the discussions. The guards will shut the door behind the party when they enter, visibly locking it. 6 of the guards are bearded devils disguised in full plate (AC 18, cannot make beard attacks), the other two (the ones by the door) are loyalists working for Genevieve the Younger.
+## Entering the City
 
-Genevieve wants Cur'Estan to back Manius Aquila's rebellion in order to open trade relations, and for the party to bring her the head of the loyalist leader as proof.
+There is a toll to enter the city of 10 gp, plus a premium determined by the collector at the gate. Weapons, armor, or other potentially dangerous goods are prohibited, and those entering are inspected for such items.
 
-If the party refuses her terms, attacks, or goes to leave without agreeing to them, she will order her guards to kill the party, while she and her cambion bodyguards exit through a hidden door behind her throne. The bone devil will attack the party if combat breaks out, and Genevieve the Younger will intervene on the party's behalf. The loyalist guards at the door will unlock the door and attempt to cover any retreat by Genevieve the Younger and the party.
+## Felix
 
-<aside>
+The Duchess is not present in the castle, and Felix is handling her affairs of state, while being in direct contact with her via a hidden sending stone. The Duchess will not agree to open the trade route unless the party brings her the head of the loyalists leader. It is obvious that she is working with devils, as the guards in the castle have all been replaced by bearded devils. During the conversation a functionary will butt into the conversation and report that some of the townspeople are protesting the recent tax increase outside the castle. Felix will respond that Sir Dawnblade is in town and dealing with those issues is his job. The functionary will then leave.
 
-<h4>Trollkin Contract</h4>
+## Encounter with Erik Dawnblade
 
-<p>If the party agrees to hunt down the loyalists leader, Genevieve will be willing to discuss the Trollkin's contract (should the party have that subquest). The terms she will agree to depend on the party's persuasion check. 5 or less and she demands a discount, 5-10 and she will agree to the standard rate, 11-15 and she will agree to up to 50 GP more per head, 16 or more and she will agree to up to 100 GP more per head.</p>
+If the party chooses to investigate the presence of Erik Dawnblade...
 
-</aside>
+Sir Dawnblade is in town to help deal with the loyalists. If things get bad he will skip town, but minor issues like peasants protesting he deals with without mercy. If the party does not intervene, Dawnblade will simply use his swords special ability to cast 'Dawn', laying waste to the peasants in a flash of burning light.
 
-Once the party escapes or the devils are destroyed, Genevieve the Younger will ask the party to accompany her back to the loyalist hideout, where she will give them more details on the situation in Cur'Mestin.
+## Contacting the Loyalists
 
-### Sneaking into the Castle
+## Orc Slaver's Seeking Flykr
 
-The party may at some point decide to sneak or talk their way into other parts of Castle Octavius, whether to free the druid imprisoned in the dungeon, assassinate Duchess Octavius, or steal something of value.
-
-#### 1\. The North Gatehouse
-
-The North Gatehouse is manned by 4 human guards, stationed on the second level. There is a small stairwell that leads up to that level on the ground floor. Their are several 2 foot by 2 foot openings in the floor of the second floor that they can pour boiling pitch down in the case of an incursion.
-
-#### 2\. Barracks
-
-The barracks is a two floor structure with sleeping quarters for the castles soldiers. The ground floor is general living quarters, with tables, chairs, storage, etc. The second floor is sleeping quarters, with a gender partition in the middle of the room. There are generally 10-15 guards off duty in the barracks at any time. Only the human guards stay in the primary barracks.
-
-#### 3\. Corner towers.
-
-The large round corner towers are manned by a mix of devil and human guards (3 of each per tower). The first floor is sleeping quarters and barracks space, while the top level is the watch post.
-
-#### 4\. Commander's Quarters
-
-The quarters for Genevieve's captain of the guard, he has been replaced by a chain devil, who has turned the quarters into his personal playground. Peasants, barely alive from torture, are chained to the wall, and chains hang from the ceiling throughout the room.
-
-#### 5\. Duchess Octavius Apartments
-
-The apartments of the Duchess. The ground floor has living quarters and an office, as well as her daughters bedroom. The upper floor is the duchesses personal quarters, which remain locked at all times. Her communication stone is hidden under a floorboard by her bed.
-
-#### 6\. Guest room apartments.
-
-These rooms were once quarters dedicated to housing visiting functionaries, courtiers, and other persons of relatively high station. Today they remain locked at all times, and serve as housing for the Duchesses fiendish servants.
-
-#### 7\. Great Hall
-
-The Great Hall, where the duchess holds court, deals with matters of state, and hosts important functions. Excepting one of these functions the room generally stands empty, with Genevieve's throne of skulls at the head of the room, and a long table going down the center. The large stairway to the north of the Great Hall heads down to the dungeons.
-
-#### 8\. The South Gate
-
-The south gate is generally the receiving gate for visitors to the castle. It is less imposing than the north gate, lacking the flanking towers, but still has a double gate/portcullis and oil drop points from the second floor. The gate is generally manned by the Duchess butler and a pair of human guards.
-
-#### 9\. Receiving Room
-
-The receiving room stands just inside the south gate, and has another large gate on the far end for horses to pass through into the courtyard.
-
-#### 10\. Courtyard
-
-The open courtyard is maintained open grass for animals to graze. People living in the castle regularly pass through the courtyard on their way from one section of the castle to another.
-
-#### 11\. Kitchens.
-
-The castle kitchens. Regularly filled with servants and cooks preparing food for the various castle staff and soldier.
-
-#### 12\. Pantry.
-
-The storage space for the kitchens, includes the castles alcohol reserves.
-
-#### 13\. Servant's Quarters.
-
-The castle staff live in small apartments in this area.
-
-#### 14\. Storage.
-
-A storage area for dry goods.
-
-#### 15\. Fletcher/Weaponsmith
-
-The castle weaponsmith and fletcher works in this room with his apprentices.
-
-#### 16\. Blacksmith
-
-The castle blacksmith with his two apprentices has his shop in this room.
-
-#### 17\. Stables
-
-The stables of the castle, has 5 horses currently in stable, and a stableboy.
-
-#### 18\. Square tower.
-
-The four square towers are each manned by 2 bearded devils, armed with heavy crossbows as well as their glaives. The ground floor of each tower is unmanned storage space.
-
-#### 19\. Guard's Room
-
-The regular prison guards have been replaced by 3 barbed devils, who are busily torturing a prisoner. The guards room has several implements of torture, and a desk, where the keys to the cells lay. Hidden in the desk is an old prison register that lists the criminals in prison and their crimes. There is also a column listing planned release date, in which all of the previous writing has been scratched out and replaced with 'never'.
-
-#### 20\. The Druid's Cell
-
-The captured druid, Amra Olojeon, was thrown in prison for attacking a guard. She did attack the guard, because the guard was a bearded devil who was torturing some animals in her forest for fun. If rescued, she will point the party to the location of a secret stash outside the city where she hid her cloak of elven kind.
-
-#### 21\. East Cell Block
-
-The east cell block is completely full. 6 of the prisoners are in for treason (assisting the loyalists), 2 for contempt of court (looked at the duchess wrong), and the other 4 for various minor crimes (theft, breaking and entering, jay walking, trespassing).
-
-#### 22\. West Cell Block
-
-The west cell block is mostly empty, and appears to be reserved for more dangerous criminals. A permanent silence spell fills this cell block, slowly driving those who occupy it insane. The captured druid sits in the second cell on the right. A murderer, driven mad by his own thoughts, is scratching at the bars just across from her. A wizard who defied the duchess is covered in self inflicted wounds, and has written a treatise on magical theory on the walls of his cell, in his own blood. Two of the cells have been used by the devils to store the corpses of their torture victims, and are piled high with dismembered bodies. The smell of rotting flesh fills the whole cell block. The last cell contains a little girl, who is in fact a cambion in disguise. If freed, the wizard (use the 'evoker' entry from Volo's Guide to Monsters), the murderer (use the 'gladiator' entry from the monster manual), and the cambion will all attack, both the party and each other, as soon as the cell block has been cleared. The druid will assist the party in this fight if it takes place (use the druid entry from the monster manual for Amra's statistics).
-
-![map of Castle Octavius](/images/maps/castleoctavius.png) ![map of Castle Octavius](/images/maps/castleoctaviusdungeon.png)</div>
-
-## The Loyalists' Hideout
-
-The Loyalist's Hideout is an inn outside the walls of the city to the east. If the party agrees to help the cause, the innkeeper will comp their stay, drinks, and food.
-
-Genevieve the Younger will tell the party that her mother has been slowly replacing the guards at the castle with summoned devils, and she believes both her mother and Manius Aquila are working for one or more of the Dukes of Hell. Most people in Cur'Mestin are suspicious of the Duchess, but she has violently supressed any and all dissent up until now. She asks for the party's help in overthrowing her mother, and promises to pledge Cur'Mestin to Empress Dormana, and open trade with Cur'Estan, if they help her. She presents several possible ways of removing her mother from power: Using the purple worms, assassination, or replacing her communication stone.
-
-#### Using the Purple Worms
-
-Genevieve the Younger tells the party about the purple worm nest discovered in the mine to the east, and tells the party that a Purple Worm always knows when an egg is stolen and where it is. If the party steals an egg from the purple worm nest and plants it in the castle, the Purple Worm will attack, potentially destroying the castle, but likely killing or weakening her mother and her devils. This would enable the loyalists to mop up the rest and take control of the town. See 'the Purple Worm Nest' below for details on the nest and using an egg to attract a purple worm to the castle.
-
-#### Assassination
-
-While Genevieve the Elder is no push over, Genevieve the Younger feels the party should be able to kill her if they can get to her. She suggests sneaking into the castle and taking on the Duchess directly as a possibility, the remaining devils would then have to be dealt with by the loyalists.
-
-#### Replacing her Communication Stone
-
-Alternatively if the party can sneak into the castle they could replace the stone that the Duchess uses to communicate with her demonic patron with one designed by a wizard working with the loyalists. They could then feed false orders to the Duchess, bringing her out of the castle where the loyalists (with help from the party) could ambush her.
-
-#### Discovery
-
-The next morning, Felix Crawford (assuming he has not already been eliminated by the party) will arrive at the hideout with a large contingent of bearded devils disguised as guards. He will inform everyone inside that the Duchess is aware that this is a rebel hideout and to surrender immediately or be killed (intimidation check by Felix, potentially opposed by parties persuasion check). Should that fail to elicit surrender by the loyalists, Felix will say that he can secure free passage out of the city if they give up their leader (Felix is lying). If combat breaks out, Felix will flee with his shield guardian via dimension door.
-
-**[Run This Encounter](/runner/felixcrawford&shieldguardian&beardeddevil&beardeddevil&beardeddevil&beardeddevil&beardeddevil&beardeddevil)**
+## Rivals at Court
 
 ## The Purple Worm Nest
 
@@ -265,113 +190,23 @@ Worm tunnel: All paths lead to the next eventually, but they players can choose 
 
 More choices: The next tunnel has 3 branches each with different creatures for the players to find. Basilisks down one tunnel that can be detected by finding a miner that has turned to stone. Carrion crawlers which can be detected by seeing a few devoured corpses that have traces of the paralyzing poison on them. Or a couple bulettes that can be detected by noticing the type of tunnel has changed to be dug by a bulette.
 
-Failed summoning: The players stumble upon a recently wiped out cult of kobalds that were trying to resurrect their former master that died years ago. During their failed ritual they managed to summon a gauth, a beholder type creature that sneaks through poorly done ritauls. The gauth has resurrected some of the kobolds as zombies, and tries to devour the magical energy of the players. During the battle they can hear a loud commotion from the tunnel ahead that sounds like a purple worm fighting something.
+Failed summoning: The players stumble upon a recently wiped out cult of kobolds that were trying to resurrect their former master that died years ago. During their failed ritual they managed to summon a gauth, a beholder type creature that sneaks through poorly done ritauls. The gauth has resurrected some of the kobolds as zombies, and tries to devour the magical energy of the players. During the battle they can hear a loud commotion from the tunnel ahead that sounds like a purple worm fighting something.
 
-The nest: Within the nest itself there is a drider with a legion of spiders. Though the drider had a giant army of giant spiders to help they attracted the attention of a purple worm which they barely fought off with heavy casualties. One of the purple worms lie dead in its next, the gems already having been looted and taken away. The drider wants the worm eggs for some reason, and does not take kindly to the players trying to take their hard earned prize.
+The nest: Within the nest itself there is a drider with a legion of spiders. Though the drider had a giant army of giant spiders to help they attracted the attention of a purple worm which they barely fought off with heavy casualties. One of the purple worms lie dead in its nest, it's body mutilated and unusable, the gems already having been looted and taken away. The drider wants the worm eggs for some reason, and does not take kindly to the players trying to take their hard earned prize.
 
-## The Temple of Alohim
+## Infiltration
 
-Password: The barred doors of the temple have a single cultist “guard” that is supposed to let in other cultists. The password can be anything, but I recommend “Alohim sucks”. This password can be easily obtained by either hiding and listening to the password, or by finding any cultists and asking them nicely to join their cult, or interrogation. Or if the players are typical they will break down the door and alert the whole place at once.
+### Rescue the Prisoners
 
-The mooks: The top part of the temple has about 20 cultists looting the place and doing other tasks, such as practicing rituals to summon devils, preaching the glory of whatever devil they are following, or cleaning up after previous tasks. If the door is broken down most of them fight for only one round before retreating downstairs.
+### Raid the Armory
 
-The Spectator: Being at least somewhat competent, the cultists managed to summon a spectator. This is where the cultists will retreat to. The spectator will fight to the death, but the cultists will again retreat after one round of combat. Cowards.
+### Place the Purple Worm Egg
 
-The cult leader has a pet manticore that he has guarding the door so the idoit cultists don’t bother him or set off his trap in the next room. Some cultists ran straight here but were too afraid of the manticore to move ahead, and the others that ran when the spectator died are here too. The manticore of course fights to the death but make sure at least one cultists runs away.
+## Freeing the City
 
-The trap: The leader set up a glyph of warding on the final basement door to prevent his idiot cultists from bothering him during his work. If any of the cultists managed to escape this far, they all exploded. The glyph is obvious and simply explodes when the door opens. Players could think of at least a dozen ways around it.
+## Temple of Alohim
 
-The leader: The leader is currently in the process of attempting to permanently mind control the temple leader. He has a penchant for exoitic pets and has a trained chimera with him. The leader tries to get the temple leader to also attack the players, but having the mind control not fully set in yet the temple leader gets a wisdom save each turn to end the effect, such as the dominate person spell.
-
-## Breaking the Blockade
-
-Depending on how the party proceeds in dealing with Duchess Octavius, events may play out in different ways. If Duchess Octavius is killed, her devils will retreat from the city and begin a siege based around the checkpoints. If the party elects to attempt to open a smuggling route, the checkpoints will need to be infiltrated in order to allow goods to flow to Cur'Estan.
-
-#### The Duchess is Dead
-
-The devils do not have enough manpower to enforce a true blockade of the city, but by blocking river traffic, they can prevent most trade, including with Cur'Estan. Genevieve the Younger will receive a scout report shortly after her mother's death that the devils are blockading the river, and will inform the party. She asks them to do one last favor for her, and lead an assault on the upriver blockade between Cur'Mestin and Cur'Estan, while she leads her men to attack the downriver blockade.
-
-#### Open the Smuggling Route
-
-If the party elects to simply open a smuggling route with Cur'Estan, Genevieve the Younger will offer a plan for them. If they can kill the guards and the overseer at the two blockade points, she can have her men take their place. This will allow her to cause havoc with supplies for the castle, and also to send goods upriver to Cur'Estan.
-
-#### The Upriver Blockade
-
-The upriver blockade is led by Ogrun Hammerfist, a cruel tax collector known to have murdered spouses and children of those who failed to pay. He is devoted to the Duchess, committed to her cause, and revels in causing pain.
-
-Ogrun has 2 spine devils and a knight backing him up. The blockade point itself consists of a dam and lock system, with a pier and guardhouse at the locks. No ship is allowed to pass until it is inspected. If the duchess died, there are 2 bearded devils and a Chain Devil as well.
-
-#### The Downriver Blockade
-
-The downriver blockade is set up similar to the upriver blockade, but is less heavily manned, and only by human guards. The site is led by a knight, who has 3 guards as backup. Most ships are allowed through after paying a toll and a cursory inspection.
-
-## Miscelaneous Sidequests
-
-#### Barley Seeds
-
-The barley seeds for the farmers of Cur'Mestin are stored under heavy guard at a warehouse near the docks. Only local grange members are allowed to go in and out of the warehouse. The warehouse is guarded by a gladiator, a mage, and a priest (see monster manual entries), as well as having multiple glyphs of warding on every door.
-
-If the party attempts to enter the warehouse through any door or window without permission and without successfully dispelling the glyphs, roll on the following table 3 times to determine what happens. The same effect can happen multiple times. If the party attempts to teleport into the warehouse (regardless of what spell they use) the spell will succeed, but they will pop back into existence 50 feet over the river. This effect is caused by a small glass orb that hangs from the ceiling in the warehouse, the orb of redirection, which causes divination and teleportation magic to automatically redirect to a predetermined point.
-
-<table class="table">
-
-<thead>
-
-<tr>
-
-<th>Roll (1d6)</th>
-
-<th>Effect</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>1</td>
-
-<td>A loud alarm goes off.</td>
-
-<td>2</td>
-
-<td>The spell cone of cold.</td>
-
-<td>3</td>
-
-<td>The first person through the door is hit by a magic missile</td>
-
-<td>4</td>
-
-<td>a Wall of Force springs up around the party</td>
-
-<td>5</td>
-
-<td>The offender is teleported into the local jailhouse</td>
-
-<td>6</td>
-
-<td>The heat metal spell</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-#### The Special Shipment
-
-The Guild contact in Cur'Mestin is a portly merchant by the name of Boggs Henkel. Boggs says he has ships ready to take the shipment upriver, and the party is welcome to accompany them, but before he does he needs assurances that the overseer on the upriver checkpoint has been dealt with. If the party has completed the smuggling route quest they can accompany the shipment back to Cur'Estan without incident.
-
-#### Nera's Flock
-
-The priest of Nera lives in a small home near the edge of town. He appreciates the offer of safe haven, but informs the party that several of his followers have been imprisoned for their beliefs in a small jailhouse in town. The jailhouse is only lightly guarded (2 guards), but he asks the party to free his people without attacking the guards. The party can attempt to do it via stealth, or they could potentially bribe the guards (who will accept as little as 50 gp to free the prisoners).
-
-#### The Dragon Ambassador
-
-The ambassador of Dera'Dragorim has been put on house arrest by Genevieve Octavius while she attempts to convince him to recognize Aquila as the rightful Emperor rather than Alexandra. The ambassador has refused and so remains in his home. If the players seek him out, he is under guard by a Blackguard and a knight. He asks the party to find a way to sneak him out of the house, as he doesn't want people to die unnecessarily on his behalf.
+## Genevieve's Counterattack
 
 <aside>
 

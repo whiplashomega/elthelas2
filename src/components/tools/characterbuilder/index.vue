@@ -857,7 +857,9 @@
                 </tr>
               </tbody>
             </table>
-            Point Buy Total: {{ pointbuy() }}
+            Point Buy Total: {{ pointbuy() }}<br />
+            Stat Rolls: <span v-for="(roll, index) in statRolls" v-bind:key="index">{{roll}} </span>
+            <input type="button" @click="rollStats()" value="Roll!" />
           </div>
         </div>
         <div class="row">
@@ -1203,7 +1205,9 @@
                   </tr>
                 </tbody>
               </table>
-              Point Buy Total: {{ pointbuy() }}
+              Point Buy Total: {{ pointbuy() }}<br />
+              Stat Rolls: <span v-for="(roll, index) in statRolls" v-bind:key="index">{{roll}} </span>
+              <input type="button" @click="rollStats()" value="Roll!" />
             </div>
           </div>
         </b-tab>

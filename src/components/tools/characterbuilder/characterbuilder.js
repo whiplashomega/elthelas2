@@ -228,7 +228,8 @@ export default {
         saveDCBonus: [0, 0, 0, 0, 0, 0],
         attBonus: [0, 0, 0, 0, 0, 0]
       },
-      characters: []
+      characters: [],
+      statRolls: []
     };
   },
   filters: {
@@ -860,6 +861,21 @@ export default {
         return 0;
       });
       return x;
+    },
+    rollStats () {
+      function d6() {
+        return Math.floor(Math.random() * 6) + 1;
+      }
+      this.statRolls = [];
+      for(var x = 0; x < 6; x++) {
+        var roll = [d6(), d6(), d6(), d6()];
+        roll.sort();
+        console.log(roll);
+        roll.splice(0,1);
+        this.statRolls.push(roll.reduce((a, b) => {
+          return a + b;
+        }, 0));
+      }
     }
   },
   mounted () {
