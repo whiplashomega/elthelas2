@@ -3,7 +3,8 @@ import { mapGetters, mapActions } from 'vuex';
 export default {
   computed: mapGetters({
     title: 'title',
-    loggedin: 'isLoggedIn'
+    loggedin: 'isLoggedIn',
+    userinfo: 'getUserInfo'
   }),
   data () {
     return {

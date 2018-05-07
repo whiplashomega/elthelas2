@@ -12,7 +12,7 @@ npm install
 npm run dev
 
 # build for production with minification
-npm run build
+gulp
 
 # build for production and view the bundle analyzer report
 npm run build --report
