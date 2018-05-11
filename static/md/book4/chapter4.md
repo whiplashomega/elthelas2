@@ -323,3 +323,5 @@ The Gerasalim army has made a deal with a group of pixies to keep them hidden. T
 
 
 ## A Last Stand
+
+Players should level up to level 8 at the end of this chapter.

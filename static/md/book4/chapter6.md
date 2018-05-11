@@ -1,4 +1,4 @@
-## Chapter 6: Empire
+## Chapter 6: United Empire
 
 Manius Aquila's rebellion has kept the Empire out of the war long enough, go to Farengar and cut the head off the snake.
 
