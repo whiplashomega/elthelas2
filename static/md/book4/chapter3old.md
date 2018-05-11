@@ -109,7 +109,7 @@ Once the party escapes or the devils are destroyed, Genevieve the Younger will a
 
 ## Rescue the Prisoners
 
-Genevieve the younger has a number of loyalists who would aid her who have been imprisoned in the castle dungeon. She wants the party to free them. She can get them into the castle via a side gate, but then cannot be seen with them in the castle so that she can maintain her cover.
+Genevieve the younger has a number of loyalists who would aid her who have been imprisoned in the castle dungeon. She wants the party to free them. She can get them into the castle via a side gate, but then cannot be seen with them in the castle as she is well known and her mother is now aware of her treachery.
 
 ### Sneaking into the Castle
 

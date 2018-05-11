@@ -511,12 +511,6 @@ export default {
       object[attribute] = value;
       this.$forceUpdate();
     },
-    addFeat() {
-      this.character.feats.push({ selectedfeat: { name: "", prereq: "", description: "" } });
-    },
-    removeFeat(i) {
-      this.character.feats.splice(i, 1);
-    },
     addEquipment() {
       this.character.equipment.push(this.newequip);
       this.newequip = { name: "", equipped: false, carried: true, weight: 0, quantity: 1, attunement: false, edit: false };
@@ -547,7 +541,6 @@ export default {
       return base + Number(this.character.capacitybonus);
     },
     spellDetail(spell) {
-      console.log(spell);
       this.detailspell = spell;
       this.spellDetailModal = true;
     },
