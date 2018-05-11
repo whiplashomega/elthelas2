@@ -442,6 +442,20 @@ The west cell block is mostly empty, and appears to be reserved for more dangero
 
 The devils do not have enough manpower to enforce a true blockade of the city, but by blocking river traffic, they can prevent most trade, including with Cur'Estan. Genevieve the Younger will receive a scout report shortly after her mother's death that the devils are blockading the river, and will inform the party. She asks them to do one last favor for her, and lead an assault on the upriver blockade between Cur'Mestin and Cur'Estan, while she leads her men to attack the downriver blockade.
 
+#### The Upriver Blockade
+
+The upriver blockade is led by Ogrun Hammerfist, a cruel tax collector known to have murdered spouses and children of those who failed to pay. He is devoted to the Duchess, committed to her cause, and revels in causing pain.
+
+Ogrun has 2 spine devils and a knight backing him up. The blockade point itself consists of a dam and lock system, with a pier and guardhouse at the locks. No ship is allowed to pass until it is inspected. If the duchess died, there are 2 bearded devils and a Chain Devil as well.
+
+[Run This Encounter](/runner/ogrunhammerfist&spinedevil&spinedevil&knight)
+
+#### The Downriver Blockade
+
+The downriver blockade is set up similar to the upriver blockade, but is less heavily manned, and only by human guards. The site is led by a knight, who has 3 guards as backup. Most ships are allowed through after paying a toll and a cursory inspection.
+
+[Run This Encounter](/runner/knight&guard&guard&guard)
+
 <aside>
 
 <h4>Level Up</h4>
