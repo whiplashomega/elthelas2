@@ -145,7 +145,7 @@ export default {
         comp.addSpell(spell);
         chai.expect(comp.character.spells.level1[0].title).to.equal('Test');
         comp.displayLevel = "level1";
-        comp.removeSpell(0);
+        comp.removeSpell(spell);
         chai.expect(comp.character.spells.level1.length).to.equal(0);
       });
     });
