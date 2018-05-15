@@ -545,7 +545,7 @@ export default {
       this.spellDetailModal = true;
     },
     removeSpell(i) {
-      this.character.spells[this.displayLevel].splice(i, 1);
+      this.character.spells[this.displayLevel].splice(this.character.spells[this.displayLevel].indexOf(i), 1);
     },
     addSpell(spell) {
       if (spell) {

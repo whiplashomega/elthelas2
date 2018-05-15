@@ -139,7 +139,7 @@ export default {
         chai.expect(comp.carryMax()).to.equal(360);
       });
       it('should be able to set spell for detail modal, add and remove spells', function() {
-        var spell = { title: "Test", description: "Test", level: 1 };
+        var spell = { title: "Test", description: "Test", level: 'level1', tags: [] };
         comp.spellDetail(spell);
         chai.expect(comp.detailspell.title).to.equal('Test');
         comp.addSpell(spell);
