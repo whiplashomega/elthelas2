@@ -298,8 +298,8 @@
                             <input type="number" class="form-control" v-model="item.quantity" /><br />
                             <input type="checkbox" v-model="item.attunement" /> Attunement<br />
                             Container
-                            <select class="form-control" v-model="item.container">
-                              <option v-for="container in character.containers" v-bind:key="container.name" :value="container.id">{{container.name}}</option>
+                            <select class="form-control" v-model="item.container" @change="item.edit = false;">
+                              <option v-for="container in character.containers" v-bind:key="container.id" :value="container.id">{{container.name}}</option>
                             </select><br />
                             <button type="button" class="btn btn-danger print-hide" @click="removeEquipment(index)">Delete</button>
                           </b-modal>
@@ -317,7 +317,7 @@
                         <input type="checkbox" v-model="newequip.attunement" /> Attunement<br />
                         Container
                           <select class="form-control" v-model="newequip.container">
-                            <option v-for="container in character.containers" v-bind:key="container.name" :value="container.id">{{container.name}}</option>
+                            <option v-for="container in character.containers" v-bind:key="container.id" :value="container.id">{{container.name}}</option>
                           </select>
                       </b-modal>
                       <b-modal v-model="containModal" title="Add Container" @ok="addContainer()">
@@ -1678,8 +1678,8 @@
                   <input type="number" class="form-control" v-model="item.quantity" /><br />
                   <input type="checkbox" v-model="item.attunement" /> Attunement<br />
                   Container
-                  <select class="form-control" v-model="item.container">
-                    <option v-for="container in character.containers" v-bind:key="container.name" :value="container.id">{{container.name}}</option>
+                  <select class="form-control" v-model="item.container" @change="item.edit = false;">
+                    <option v-for="container in character.containers" v-bind:key="container.id" :value="container.id">{{container.name}}</option>
                   </select><br />
                   <button type="button" class="btn btn-danger print-hide" @click="removeEquipment(index)">Delete</button>
                 </b-modal>
@@ -1697,7 +1697,7 @@
               <input type="checkbox" v-model="newequip.attunement" /> Attunement<br />
               Container
                 <select class="form-control" v-model="newequip.container">
-                  <option v-for="container in character.containers" v-bind:key="container.name" :value="container.id">{{container.name}}</option>
+                  <option v-for="container in character.containers" v-bind:key="container.id" :value="container.id">{{container.name}}</option>
                 </select>
             </b-modal>
             <b-modal v-model="containModal" title="Add Container" @ok="addContainer()">

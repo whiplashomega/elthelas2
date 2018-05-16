@@ -153,6 +153,7 @@ export default {
     return {
       buildHide: false,
       ctypes: [
+        { name: "Carried/Worn", capacity: 9999, weightCounts: true, weight: 0 },
         { name: "Backpack", capacity: 30, weightCounts: true, weight: 5 },
         { name: "Pouch", capacity: 6, weightCounts: true, weight: 1 },
         { name: "Sack", capacity: 30, weightCounts: true, weight: 0.5 },
