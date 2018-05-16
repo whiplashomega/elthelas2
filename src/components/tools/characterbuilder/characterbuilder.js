@@ -115,6 +115,19 @@ export default {
     },
     equipmentContainers () {
       var containers = [];
+      var defcontainer = {
+        equipment: this.character.equipment.filter((a) => {
+          if(!a.container || this.character.containers.indexOf(a.container) === -1) {
+            return true;
+          }
+          return false;
+        }),
+        name: "Not In Container",
+        capacity: 9999,
+        weightCounts: true,
+      }
+      containers.push(defcontainer);
+      this.character.equipment.filter
       this.character.containers.forEach((c) => {
         var equip = this.character.equipment.filter((e) => {
           return e.container === c;
