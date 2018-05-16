@@ -278,7 +278,7 @@ export default {
         castlog: []
       },
       characters: [],
-      newequip: { name: "", weight: 0, quantity: 1, attunement: false, edit: false },
+      newequip: { name: "", weight: 0, quantity: 1, attunement: false, edit: false, container: 0 },
       statRolls: []
     };
   },
@@ -571,6 +571,7 @@ export default {
     },
     addContainer() {
       var id = Date.now();
+      console.log(id);
       this.character.containers.push({...this.newcontain, id: id });
       this.newcontain = { name: "", capacity: 0, weightCounts: true, weight: 0 };
       this.containModal = false;

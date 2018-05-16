@@ -317,7 +317,7 @@
                         <input type="checkbox" v-model="newequip.attunement" /> Attunement<br />
                         Container
                           <select class="form-control" v-model="newequip.container">
-                            <option v-for="container in character.containers" v-bind:key="container.name" :value="container">{{container.name}}</option>
+                            <option v-for="container in character.containers" v-bind:key="container.name" :value="container.id">{{container.name}}</option>
                           </select>
                       </b-modal>
                       <b-modal v-model="containModal" title="Add Container" @ok="addContainer()">
@@ -1697,7 +1697,7 @@
               <input type="checkbox" v-model="newequip.attunement" /> Attunement<br />
               Container
                 <select class="form-control" v-model="newequip.container">
-                  <option v-for="container in character.containers" v-bind:key="container.name" :value="container">{{container.name}}</option>
+                  <option v-for="container in character.containers" v-bind:key="container.name" :value="container.id">{{container.name}}</option>
                 </select>
             </b-modal>
             <b-modal v-model="containModal" title="Add Container" @ok="addContainer()">
