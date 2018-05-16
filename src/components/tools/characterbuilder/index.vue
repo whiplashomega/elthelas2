@@ -667,7 +667,7 @@
                       <td>{{spell.duration}}</td>
                       <td>{{spell.class}}</td>
                       <td><button type="button" class="btn btn-sm btn-primary print-hide" @click="castSpell(spell)">Cast</button>
-                        <select v-model="spell.castLevel">
+                        <select v-if="spell.level !== 'cantrip'" v-model="spell.castLevel">
                           <option>{{Number(spell.level)}}</option>
                           <option v-for="i in 9 - spell.level" v-bind:key="i">{{Number(i) + Number(spell.level)}}</option>
                         </select></td>
@@ -1607,7 +1607,7 @@
                       <td>{{spell.duration}}</td>
                       <td>{{spell.class}}</td>
                       <td><button type="button" class="btn btn-sm btn-primary print-hide" @click="castSpell(spell)">Cast</button>
-                        <select v-model="spell.castLevel">
+                        <select v-if="spell.level !== 'cantrip'" v-model="spell.castLevel">
                           <option>{{Number(spell.level)}}</option>
                           <option v-for="i in 9 - spell.level" v-bind:key="i">{{Number(i) + Number(spell.level)}}</option>
                         </select>
