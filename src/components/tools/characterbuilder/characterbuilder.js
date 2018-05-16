@@ -112,10 +112,34 @@ export default {
         });
         return success;
       });
+    },
+    equipmentContainers () {
+      var containers = [];
+      this.character.containers.forEach((c) => {
+        var equip = this.character.equipment.filter((e) => {
+          return e.container === c;
+        });
+        var weight = 0;
+        equip.forEach((e) => {
+          weight += e.weight * e.quantity;
+        });
+        containers.push({ ...c, equipment: equip, contains: weight, container: c });
+      });
+      return containers;
     }
   },
   data () {
     return {
+      ctypes: [
+        { name: "Backpack", capacity: 30, weightCounts: true, weight: 5 },
+        { name: "Pouch", capacity: 6, weightCounts: true, weight: 1 },
+        { name: "Sack", capacity: 30, weightCounts: true, weight: 0.5 },
+        { name: "Chest", capacity: 300, weightCounts: true, weight: 25 },
+        { name: "Bag of Holding", capacity: 500, weightCounts: false, weight: 15 },
+        { name: "Heward's Handy Haversack", capacity: 120, weightCounts: false, weight: 5 }
+      ],
+      containModal: false,
+      newcontain: { name: "Backpack", capacity: 0, weightCounts: true, weight: 0 },
       attackmodal: false,
       filelist: [],
       preparedonly: false,
@@ -127,7 +151,6 @@ export default {
       selspellclass: "",
       newattack: { name: "", stat: 0, bonus: 0, addstat: false, damage: "", range: "", type: "", dtype: "", edit: false, damagebonus: 0, prof: true },
       armormodal: false,
-      newequip: { name: "", equipped: false, carried: true, weight: 0, quantity: 1, attunement: false, edit: false },
       equipModal: false,
       newarmor: { name: "", type: "", ac: 0, edit: false },
       newfeature: { name: "", description: "", show: false },
@@ -212,6 +235,9 @@ export default {
         bonusfeats: 0,
         proficiencies: "",
         equipment: [],
+        containers: [
+          { name: "Default", capacity: 9999, weightCounts: true, weight: 0 }
+        ],
         cp: 0,
         sp: 0,
         gp: 0,
@@ -226,9 +252,11 @@ export default {
         resources: [],
         features: [],
         saveDCBonus: [0, 0, 0, 0, 0, 0],
-        attBonus: [0, 0, 0, 0, 0, 0]
+        attBonus: [0, 0, 0, 0, 0, 0],
+        castlog: []
       },
       characters: [],
+      newequip: { name: "", weight: 0, quantity: 1, attunement: false, edit: false },
       statRolls: []
     };
   },
@@ -513,17 +541,28 @@ export default {
     },
     addEquipment() {
       this.character.equipment.push(this.newequip);
-      this.newequip = { name: "", equipped: false, carried: true, weight: 0, quantity: 1, attunement: false, edit: false };
+      this.newequip = { name: "", weight: 0, quantity: 1, attunement: false, edit: false, container: this.character.containers[0] };
       this.equipModal = false;
     },
     removeEquipment(i) {
       this.character.equipment.splice(i, 1);
     },
+    addContainer() {
+      this.character.containers.push(this.newcontain);
+      this.newcontain = { name: "", capacity: 0, weightCounts: true, weight: 0 };
+      this.containModal = false;
+    },
+    removeContainer(container) {
+      this.character.containers.splice(this.character.containers.indexOf(container), 1);
+    },
     carryWeight() {
       var sum = 0;
-      this.character.equipment.forEach((a) => {
-        if (a.carried) {
-          sum += Number(a.weight) * Number(a.quantity);
+      this.equipmentContainers.forEach((a) => {
+        sum += a.weight;
+        if (a.weightCounts) {
+          sum += a.equipment.reduce((a, b) => {
+            return a + Number(b.weight) * Number(b.quantity);
+          }, 0);
         }
       });
       sum += (Number(this.character.cp) + Number(this.character.sp) + Number(this.character.gp) + Number(this.character.pp)) / 50;
@@ -558,10 +597,20 @@ export default {
         var exists = this.character.spells[level].includes(spell);
 
         if (!exists) {
+          spell.castLevel = spell.level;
           this.character.spells[level].push(spell);
         }
         this.spellModal = false;
       }
+    },
+    castSpell(spell) {
+      if (spell.level !== 'cantrip') {
+        var level = 'level' + spell.castLevel;
+      } else {
+        level = spell.level;
+      }
+      this.character.availableslots[level]--;
+      this.character.castlog.unshift({ ...spell });
     },
     totalslots(level) {
       if (level === 'cantrip') {
@@ -689,6 +738,7 @@ export default {
           a.current = a.max;
         }
       });
+      this.character.castlog = [];
     },
     addFeature() {
       this.character.features.push(this.newfeature);
@@ -873,6 +923,7 @@ export default {
   },
   mounted () {
     console.log(this.token);
+    this.newequip.container = this.character.containers[0];
     if (window.outerWidth < 1024) {
       this.mobile = true;
     }

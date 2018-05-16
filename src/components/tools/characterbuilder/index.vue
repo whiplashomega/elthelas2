@@ -282,24 +282,31 @@
                   <div class="col">
                     <div class="charsheet-static" id="equipmentbox">
                       <h4>Equipment</h4>
-                      <div v-for="(item, index) in character.equipment" v-bind:key="index" class="smalltext">
-
-                        <button type="button" class="print-hide btn-symbol float-left" @click="item.edit = true">&#9998;</button>
-                        {{ item.name }} <input type="number" class="charsheet-num" v-model="item.quantity" /> <input type="checkbox" v-model="item.carried" /> <span class="float-right">{{item.weight}} lbs</span><br />
-                        <b-modal v-model="item.edit" title="Edit Equipment">
-                          Name
-                          <input type="text" class="form-control" v-model="item.name" />
-                          Weight
-                          <input type="number" class="form-control" v-model="item.weight" />
-                          Quantity
-                          <input type="number" class="form-control" v-model="item.quantity" /><br />
-                          <input type="checkbox" v-model="item.attunement" /> Attunement
-                          <input type="checkbox" v-model="item.equipped" /> Equipped
-                          <input type="checkbox" v-model="item.carried" /> Held
-                          <button type="button" class="btn btn-danger print-hide" @click="removeEquipment(index)">Delete</button>
-                        </b-modal>
+                      <div v-for="container in equipmentContainers" v-bind:key="container.name">
+                        <h4>
+                          {{container.name}} <span class="smalltext">{{container.contains}} / {{container.capacity}} lbs <input type="button" class="btn btn-danger btn-sm" value="X" @click="removeContainer(container.container)" /></span>
+                        </h4>
+                        <div v-for="(item, index) in container.equipment" v-bind:key="index" class="smalltext">
+                          <button type="button" class="print-hide btn-symbol float-left" @click="item.edit = true">&#9998;</button>
+                          {{ item.name }} <input type="number" class="charsheet-num" v-model="item.quantity" /> <span class="float-right">{{item.weight}} lbs</span><br />
+                          <b-modal v-model="item.edit" title="Edit Equipment">
+                            Name
+                            <input type="text" class="form-control" v-model="item.name" />
+                            Weight
+                            <input type="number" class="form-control" v-model="item.weight" />
+                            Quantity
+                            <input type="number" class="form-control" v-model="item.quantity" /><br />
+                            <input type="checkbox" v-model="item.attunement" /> Attunement<br />
+                            Container
+                            <select class="form-control" v-model="item.container">
+                              <option v-for="container in character.containers" v-bind:key="container.name" :value="container">{{container.name}}</option>
+                            </select><br />
+                            <button type="button" class="btn btn-danger print-hide" @click="removeEquipment(index)">Delete</button>
+                          </b-modal>
+                        </div>
                       </div>
-                      <button type="button" class="btn btn-sm btn-primary print-hide" @click="equipModal = true">+</button>
+                      <button type="button" class="btn btn-sm btn-primary print-hide" @click="equipModal = true">+Equipment</button>
+                      <button type="button" class="btn btn-sm btn-primary print-hide" @click="containModal = true">+Container</button>
                       <b-modal v-model="equipModal" title="Add Equipment" @ok="addEquipment()">
                         Name
                         <input type="text" class="form-control" v-model="newequip.name" />
@@ -307,9 +314,23 @@
                         <input type="number" class="form-control" v-model="newequip.weight" />
                         Quantity
                         <input type="number" class="form-control" v-model="newequip.quantity" />
-                        <input type="checkbox" v-model="newequip.attunement" /> Attunement
-                        <input type="checkbox" v-model="newequip.equipped" /> Equipped
-                        <input type="checkbox" v-model="newequip.carried" /> Held
+                        <input type="checkbox" v-model="newequip.attunement" /> Attunement<br />
+                        Container
+                          <select class="form-control" v-model="newequip.container">
+                            <option v-for="container in character.containers" v-bind:key="container.name" :value="container">{{container.name}}</option>
+                          </select>
+                      </b-modal>
+                      <b-modal v-model="containModal" title="Add Container" @ok="addContainer()">
+                        Name
+                        <input type="text" class="form-control" v-model="newcontain.name" />
+                        Capacity
+                        <input type="number" class="form-control" v-model="newcontain.capacity" /><br />
+                        Weight Counts
+                        <input type="checkbox" v-model="newcontain.weightCounts" /><br />
+                        Select Predefined Type
+                        <select v-model="newcontain" class="form-control">
+                          <option v-for="c in ctypes" :value="c" v-bind:key="c.name">{{c.name}}</option>
+                        </select>
                       </b-modal>
                       <table class="table table-sm smalltext">
                         <tbody>
@@ -636,7 +657,7 @@
                 {{ warlockSlots() }} level {{ warlockSlotLevel() }} slots</span>
               <div class="smalltext print-hide">
                 <table class="table table-sm">
-                  <thead><tr><th>Spell</th><th>Casting Time</th><th>Duration</th><th>Class</th><th>-</th></tr></thead>
+                  <thead><tr><th>Spell</th><th>Casting Time</th><th>Duration</th><th>Class</th><th colspan="2">-</th></tr></thead>
                   <tbody>
                     <tr v-for="spell in sortSpells(character.spells[displayLevel])" v-bind:key="spell.title" v-if="(spell.prepared && preparedonly) || !preparedonly">
                       <td>
@@ -645,6 +666,11 @@
                       <td>{{spell.castingTime}}</td>
                       <td>{{spell.duration}}</td>
                       <td>{{spell.class}}</td>
+                      <td><button type="button" class="btn btn-sm btn-primary print-hide" @click="castSpell(spell)">Cast</button>
+                        <select v-model="spell.castLevel">
+                          <option>{{Number(spell.level)}}</option>
+                          <option v-for="i in 9 - spell.level" v-bind:key="i">{{Number(i) + Number(spell.level)}}</option>
+                        </select></td>
                       <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(spell)">X</button></td>
                     </tr>
                   </tbody>
@@ -739,6 +765,10 @@
                 </table>
               </div>
               <button type="button" @click="spellModal = true" class="btn btn-sm btn-primary print-hide">+</button>
+              <h4>Cast Log</h4>
+              <div class="smalltext" v-for="(spell, index) in character.castlog" v-bind:key="index">
+                {{spell.title}} {{spell.level}}
+              </div>
             </div>
 
           </div>
@@ -1567,7 +1597,7 @@
                 <span v-if="warlockSlots() > 0">Warlock Slots: <input type="number" v-model="character.warlockslotsavailable" class="charsheet-num" /> / {{ warlockSlots() }} level {{ warlockSlotLevel() }} slots</span>
                 <div class="smalltext print-hide">
                 <table class="table table-sm">
-                  <thead><tr><th>Spell</th><th>Casting Time</th><th>Duration</th><th>Class</th><th>-</th></tr></thead>
+                  <thead><tr><th>Spell</th><th>Casting Time</th><th>Duration</th><th>Class</th><th colspan="2">-</th></tr></thead>
                   <tbody>
                     <tr v-for="spell in sortSpells(character.spells[displayLevel])" v-bind:key="spell.title" v-if="(spell.prepared && preparedonly) || !preparedonly">
                       <td>
@@ -1576,12 +1606,23 @@
                       <td>{{spell.castingTime}}</td>
                       <td>{{spell.duration}}</td>
                       <td>{{spell.class}}</td>
+                      <td><button type="button" class="btn btn-sm btn-primary print-hide" @click="castSpell(spell)">Cast</button>
+                        <select v-model="spell.castLevel">
+                          <option>{{Number(spell.level)}}</option>
+                          <option v-for="i in 9 - spell.level" v-bind:key="i">{{Number(i) + Number(spell.level)}}</option>
+                        </select>
+                      </td>
                       <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(spell)">X</button></td>
                     </tr>
                   </tbody>
                 </table>
+
                 </div>
                 <button type="button" @click="spellModal = true" class="btn btn-sm btn-primary print-hide">+</button>
+                <h4>Cast Log</h4>
+                <div class="smalltext" v-for="(spell, index) in character.castlog" v-bind:key="index">
+                  {{spell.title}} {{spell.castLevel}}
+                </div>
               </div>
             </div>
           </div>
@@ -1615,23 +1656,31 @@
         <b-tab title="Equipment">
           <div class="charsheet-static" id="equipmentbox">
             <h4>Equipment</h4>
-            <div v-for="(item, index) in character.equipment" v-bind:key="index" class="smalltext">
-              <button type="button" class="print-hide btn-symbol float-left" @click="item.edit = true">&#9998;</button>
-              {{ item.name }} <input type="number" class="charsheet-num" v-model="item.quantity" /> <input type="checkbox" v-model="item.carried" /> <span class="float-right">{{item.weight}} lbs</span><br />
-              <b-modal v-model="item.edit" title="Edit Equipment">
-                Name
-                <input type="text" class="form-control" v-model="item.name" />
-                Weight
-                <input type="number" class="form-control" v-model="item.weight" />
-                Quantity
-                <input type="number" class="form-control" v-model="item.quantity" /><br />
-                <input type="checkbox" v-model="item.attunement" /> Attunement
-                <input type="checkbox" v-model="item.equipped" /> Equipped
-                <input type="checkbox" v-model="item.carried" /> Held
-                <button type="button" class="btn btn-danger print-hide" @click="removeEquipment(index)">Delete</button>
-              </b-modal>
+            <div v-for="container in equipmentContainers" v-bind:key="container.name">
+              <h4>
+                {{container.name}} <span class="smalltext">{{container.contains}} / {{container.capacity}} lbs <input type="button" class="btn btn-danger btn-sm" value="X" @click="removeContainer(container.container)" /></span>
+              </h4>
+              <div v-for="(item, index) in container.equipment" v-bind:key="index" class="smalltext">
+                <button type="button" class="print-hide btn-symbol float-left" @click="item.edit = true">&#9998;</button>
+                {{ item.name }} <input type="number" class="charsheet-num" v-model="item.quantity" /> <span class="float-right">{{item.weight}} lbs</span><br />
+                <b-modal v-model="item.edit" title="Edit Equipment">
+                  Name
+                  <input type="text" class="form-control" v-model="item.name" />
+                  Weight
+                  <input type="number" class="form-control" v-model="item.weight" />
+                  Quantity
+                  <input type="number" class="form-control" v-model="item.quantity" /><br />
+                  <input type="checkbox" v-model="item.attunement" /> Attunement<br />
+                  Container
+                  <select class="form-control" v-model="item.container">
+                    <option v-for="container in character.containers" v-bind:key="container.name" :value="container">{{container.name}}</option>
+                  </select><br />
+                  <button type="button" class="btn btn-danger print-hide" @click="removeEquipment(index)">Delete</button>
+                </b-modal>
+              </div>
             </div>
-            <button type="button" class="btn btn-sm btn-primary print-hide" @click="equipModal = true">+</button>
+            <button type="button" class="btn btn-sm btn-primary print-hide" @click="equipModal = true">+Equipment</button>
+            <button type="button" class="btn btn-sm btn-primary print-hide" @click="containModal = true">+Container</button>
             <b-modal v-model="equipModal" title="Add Equipment" @ok="addEquipment()">
               Name
               <input type="text" class="form-control" v-model="newequip.name" />
@@ -1639,9 +1688,23 @@
               <input type="number" class="form-control" v-model="newequip.weight" />
               Quantity
               <input type="number" class="form-control" v-model="newequip.quantity" />
-              <input type="checkbox" v-model="newequip.attunement" /> Attunement
-              <input type="checkbox" v-model="newequip.equipped" /> Equipped
-              <input type="checkbox" v-model="newequip.carried" /> Held
+              <input type="checkbox" v-model="newequip.attunement" /> Attunement<br />
+              Container
+                <select class="form-control" v-model="newequip.container">
+                  <option v-for="container in character.containers" v-bind:key="container.name" :value="container">{{container.name}}</option>
+                </select>
+            </b-modal>
+            <b-modal v-model="containModal" title="Add Container" @ok="addContainer()">
+              Name
+              <input type="text" class="form-control" v-model="newcontain.name" />
+              Capacity
+              <input type="number" class="form-control" v-model="newcontain.capacity" /><br />
+              Weight Counts
+              <input type="checkbox" v-model="newcontain.weightCounts" /><br />
+              Select Predefined Type
+              <select v-model="newcontain" class="form-control">
+                <option v-for="c in ctypes" :value="c" v-bind:key="c.name">{{c.name}}</option>
+              </select>
             </b-modal>
             <table class="table table-sm smalltext">
               <tbody>
@@ -2007,7 +2070,7 @@
     <b-modal v-model="spellDetailModal" @ok="spellDetailModal = false" id="spellmodal" size="lg" :title="detailspell.title" ok-only>
       <h4>
         <strong>{{detailspell.school}}
-          {{detailspell.level.replace('level', 'level ')}}
+          <span v-if="detailspell.level !== 'cantrip'">level </span>{{detailspell.level.toString()}}
         </strong>
         <span v-if="detailspell.ritual"> Ritual</span> ({{detailspell.source}})
       </h4>

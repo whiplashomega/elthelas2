@@ -139,7 +139,7 @@ export default {
         chai.expect(comp.carryMax()).to.equal(360);
       });
       it('should be able to set spell for detail modal, add and remove spells', function() {
-        var spell = { title: "Test", description: "Test", level: 'level1', tags: [] };
+        var spell = { title: "Test", description: "Test", level: 1, tags: [] };
         comp.spellDetail(spell);
         chai.expect(comp.detailspell.title).to.equal('Test');
         comp.addSpell(spell);
@@ -147,6 +147,13 @@ export default {
         comp.displayLevel = "level1";
         comp.removeSpell(spell);
         chai.expect(comp.character.spells.level1.length).to.equal(0);
+      });
+      it('should be able to cast a spell', function() {
+        var spell = { title: 'Test', description: "Test", level: 1, castLevel: 1, tags: [] };
+        comp.character.availableslots.level1 = 4;
+        comp.castSpell(spell);
+        chai.expect(comp.character.availableslots.level1).to.equal(3);
+        chai.expect(comp.character.castlog[0].title).to.equal('Test');
       });
     });
     mocha.checkLeaks();
