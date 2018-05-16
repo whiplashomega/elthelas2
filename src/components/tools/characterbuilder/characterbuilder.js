@@ -130,6 +130,7 @@ export default {
   },
   data () {
     return {
+      buildHide: false,
       ctypes: [
         { name: "Backpack", capacity: 30, weightCounts: true, weight: 5 },
         { name: "Pouch", capacity: 6, weightCounts: true, weight: 1 },

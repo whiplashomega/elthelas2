@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row" v-if="!mobile">
-      <div class="col-8 print-full">
+      <div class="print-full" v-bind:class="buildHide ? 'col-12' : 'col-8'">
         <div class="row">
           <div class="col-9">
             <!-- Character, Player, Class -->
@@ -608,6 +608,12 @@
                 </div>
               </div>
             </div>
+            <div class="row print-hide">
+              <div class="col">
+                <input type="button" @click="buildHide = !buildHide" value="Hide Build Section" v-if="!buildHide" class="btn btn-primary" />
+                <input type="button" @click="buildHide = !buildHide" value="Show Build Section" v-if="buildHide" class="btn btn-primary" />
+              </div>
+            </div>
           </div>
         </div>
         <br style="page-break-after: always" />
@@ -799,7 +805,7 @@
           </div>
         </div>
       </div>
-      <div class="col-4 print-hide">
+      <div class="col-4 print-hide" v-if="!buildHide">
         <div class="row">
           <h4 class="col-12">Load/Save From Disk</h4>
           <div class="btn-group col-4">
