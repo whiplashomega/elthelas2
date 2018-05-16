@@ -299,7 +299,7 @@
                             <input type="checkbox" v-model="item.attunement" /> Attunement<br />
                             Container
                             <select class="form-control" v-model="item.container">
-                              <option v-for="container in character.containers" v-bind:key="container.name" :value="container">{{container.name}}</option>
+                              <option v-for="container in character.containers" v-bind:key="container.name" :value="container.id">{{container.name}}</option>
                             </select><br />
                             <button type="button" class="btn btn-danger print-hide" @click="removeEquipment(index)">Delete</button>
                           </b-modal>
@@ -1679,7 +1679,7 @@
                   <input type="checkbox" v-model="item.attunement" /> Attunement<br />
                   Container
                   <select class="form-control" v-model="item.container">
-                    <option v-for="container in character.containers" v-bind:key="container.name" :value="container">{{container.name}}</option>
+                    <option v-for="container in character.containers" v-bind:key="container.name" :value="container.id">{{container.name}}</option>
                   </select><br />
                   <button type="button" class="btn btn-danger print-hide" @click="removeEquipment(index)">Delete</button>
                 </b-modal>

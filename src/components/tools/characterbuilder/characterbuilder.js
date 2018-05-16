@@ -117,7 +117,9 @@ export default {
       var containers = [];
       var defcontainer = {
         equipment: this.character.equipment.filter((a) => {
-          if(!a.container || this.character.containers.indexOf(a.container) === -1) {
+          if(!a.container || this.character.containers.filter(b => {
+            return a.container === b.id;
+          }).length === 0) {
             return true;
           }
           return false;
@@ -131,10 +133,12 @@ export default {
       defcontainer.equipment.forEach((e) => {
           defcontainer.contains += e.weight * e.quantity;
       });
-      containers.push(defcontainer);
+      if(defcontainer.equipment.length > 0) {
+        containers.push(defcontainer);
+      }
       this.character.containers.forEach((c) => {
         var equip = this.character.equipment.filter((e) => {
-          return e.container === c;
+          return e.container === c.id;
         });
         var weight = 0;
         equip.forEach((e) => {
@@ -254,7 +258,7 @@ export default {
         proficiencies: "",
         equipment: [],
         containers: [
-          { name: "Default", capacity: 9999, weightCounts: true, weight: 0 }
+          { id: 0, name: "Default", capacity: 9999, weightCounts: true, weight: 0 }
         ],
         cp: 0,
         sp: 0,
@@ -559,14 +563,15 @@ export default {
     },
     addEquipment() {
       this.character.equipment.push(this.newequip);
-      this.newequip = { name: "", weight: 0, quantity: 1, attunement: false, edit: false, container: this.character.containers[0] };
+      this.newequip = { name: "", weight: 0, quantity: 1, attunement: false, edit: false, container: this.character.containers[0].id };
       this.equipModal = false;
     },
     removeEquipment(i) {
       this.character.equipment.splice(i, 1);
     },
     addContainer() {
-      this.character.containers.push(this.newcontain);
+      var id = Date.now();
+      this.character.containers.push({...this.newcontain, id: id });
       this.newcontain = { name: "", capacity: 0, weightCounts: true, weight: 0 };
       this.containModal = false;
     },
