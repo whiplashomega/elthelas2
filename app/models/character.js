@@ -47,6 +47,7 @@ var Character = new Schema({
   feats: [],
   injuries: [],
   equipment: [],
+  containers: [],
   bonusslots: [Number],
   resources: [],
   features: [],
