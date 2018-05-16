@@ -572,7 +572,7 @@ export default {
     carryWeight() {
       var sum = 0;
       this.equipmentContainers.forEach((a) => {
-        sum += a.weight;
+        sum += Number(a.weight);
         if (a.weightCounts) {
           sum += a.equipment.reduce((a, b) => {
             return a + Number(b.weight) * Number(b.quantity);

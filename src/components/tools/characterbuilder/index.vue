@@ -283,7 +283,7 @@
                     <div class="charsheet-static" id="equipmentbox">
                       <h4>Equipment</h4>
                       <div v-for="container in equipmentContainers" v-bind:key="container.name">
-                        <h4>
+                        <h4 class="smalltext">
                           {{container.name}} <span class="smalltext">{{container.contains}} / {{container.capacity}} lbs <input type="button" class="btn btn-danger btn-sm" value="X" @click="removeContainer(container.container)" /></span>
                         </h4>
                         <div v-for="(item, index) in container.equipment" v-bind:key="index" class="smalltext">
