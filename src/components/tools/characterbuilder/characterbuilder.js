@@ -125,9 +125,13 @@ export default {
         name: "Not In Container",
         capacity: 9999,
         weightCounts: true,
-      }
+        weight: 0,
+        contains: 0
+      };
+      defcontainer.equipment.forEach((e) => {
+          defcontainer.contains += e.weight * e.quantity;
+      });
       containers.push(defcontainer);
-      this.character.equipment.filter
       this.character.containers.forEach((c) => {
         var equip = this.character.equipment.filter((e) => {
           return e.container === c;
