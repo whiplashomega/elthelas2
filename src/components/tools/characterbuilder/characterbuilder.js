@@ -172,7 +172,7 @@ export default {
       spellfilter: "",
       selspell: {},
       selspellclass: "",
-      newattack: { name: "", stat: 0, bonus: 0, addstat: false, damage: "", range: "", type: "", dtype: "", edit: false, damagebonus: 0, prof: true },
+      newattack: { name: "", stat: 0, bonus: 0, addstat: false, damage: "", range: "", type: "", dtype: "", edit: false, damagebonus: 0, prof: true, damage2: "", dtype2: "" },
       armormodal: false,
       equipModal: false,
       newarmor: { name: "", type: "", ac: 0, edit: false },
@@ -475,7 +475,7 @@ export default {
     },
     addAttack() {
       this.character.attacks.push(this.newattack);
-      this.newattack = { name: "", stat: 0, bonus: 0, addstat: 0, damage: "", range: "", type: "", dtype: "", edit: false, damagebonus: 0, prof: true };
+      this.newattack = { name: "", stat: 0, bonus: 0, addstat: 0, damage: "", range: "", type: "", dtype: "", edit: false, damagebonus: 0, prof: true, damage2: "", dtype2: "" };
       this.attackmodal = false;
     },
     addInjury() {

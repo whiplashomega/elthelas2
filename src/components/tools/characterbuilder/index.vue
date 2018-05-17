@@ -1429,7 +1429,7 @@
               ({{attack.damage}}
               <span v-if="getAttackDamageBonus(attack) > 0">+ {{getAttackDamageBonus(attack)}}</span>
               <span v-if="getAttackDamageBonus(attack) < 0"> - {{getAttackDamageBonus(attack)}}</span> {{attack.dtype}} damage
-              <span v-if="attack.damage2 !== ''"> + {{attack.damage2}} {{attack.dtype2}} damage</span>).
+              <span v-if="attack.damage2"> + {{attack.damage2}} {{attack.dtype2}} damage</span>).
               <button type="button" class="print-hide btn-symbol" @click="attack.edit = true">&#9998;</button>
               <button type="button" @click="removeAttack(index)" class="print-hide btn btn-sm btn-danger">X</button>
               <b-modal v-model="attack.edit">
