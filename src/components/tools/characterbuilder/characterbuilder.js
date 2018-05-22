@@ -896,6 +896,11 @@ export default {
         if (a.thisclass.name === "Sorcerer" && Number(a.level) >= 2) {
           this.character.resources.push({ name: "Sorcery Points", current: Number(a.level), max: Number(a.level), recharge: "longrest" });
         }
+        if (a.thisclass.name === "Warlock") {
+          if(Number(a.level) >= 1 && a.selsubclass.name === "The Hexblade") {
+            this.character.resources.push({ name: "Hexblade's Curse", current: 1, max: 1, recharge: "shortrest" });
+          }
+        }
         if (a.thisclass.name === "Wizard") {
           if (Number(a.level) >= 2 && a.selsubclass.name === "Bladesinging") {
             this.character.resources.push({ name: "Bladesong", current: 2, max: 2, recharge: "shortrest" });

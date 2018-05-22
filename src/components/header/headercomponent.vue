@@ -14,6 +14,7 @@
               <ul class="dropdown-menu" role="menu">
                 <li class="dropdown-item"><router-link to="/tools/charbuilder">Character Builder</router-link></li>
                 <li class="dropdown-item" v-if="loggedin"><router-link to="/runner">Encounter Runner</router-link></li>
+                <li class="dropdown-item"><router-link to="/tools/inittracker">Initiative Tracker</router-link></li>
                 <li class="dropdown-item" v-if="loggedin"><a ui-sref="app.book1">Epic of Elthelas Book 1</a></li>
                 <li class="dropdown-item" v-if="loggedin"><a href="#">Epic of Elthelas Book 2</a></li>
                 <li class="dropdown-item" v-if="loggedin"><a href="#">Epic of Elthelas Book 3</a></li>

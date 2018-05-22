@@ -25,10 +25,10 @@ import book4guide from '../components/tools/book4guide';
 import book4 from '../components/tools/book4';
 import book4menu from '../components/tools/book4menu';
 import charbuilder from '../components/tools/characterbuilder';
+import inittracker from '../components/tools/inittracker';
 import npcgen from '@/components/tools/npcgenerator';
 import feats from '@/components/options/feats';
 import privacy from '@/components/privacy';
-import unit from '@/components/test';
 
 Vue.use(Router);
 
@@ -294,6 +294,16 @@ var router = new Router({
       }
     },
     {
+      name: "inittracker",
+      meta: {
+        title: "Initiative Tracker"
+      },
+      path: '/tools/inittracker',
+      components: {
+        default: inittracker
+      }
+    },
+    {
       name: "npcgen",
       meta: {
         title: "NPC Generator"
@@ -323,16 +333,6 @@ var router = new Router({
       components: {
         default: privacy,
         sidebar: options
-      }
-    },
-    {
-      name: "unittest",
-      meta: {
-        title: "Unit Test"
-      },
-      path: "/test/unit/:component",
-      components: {
-        default: unit
       }
     }
   ],

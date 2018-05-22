@@ -124,7 +124,7 @@ who have influence over that domain.
 					<td>7th</td><td>arcane eye, Leomund's secret chest</td>
 				</tr>
 				<tr>
-					<td>planar binding, teleportation circle</td>
+					<td>9th</td><td>planar binding, teleportation circle</td>
 				</tr>
 			</tbody>
 		</table>

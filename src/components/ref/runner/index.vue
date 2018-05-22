@@ -2,48 +2,58 @@
 	<div class="col-sm-12">
   <h1>Encounter Runner</h1>
     <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-8">
       <label>
         Party Size
         <select class="form-control" v-model="partysize" @change="calculateDifficulty()">
-          <option ng-value="1">1</option>
-          <option ng-value="2">2</option>
-          <option ng-value="3">3</option>
-          <option ng-value="4">4</option>
-          <option ng-value="5">5</option>
-          <option ng-value="6">6</option>
-          <option ng-value="7">7</option>
-          <option ng-value="8">8</option>
-          <option ng-value="9">9</option>
-          <option ng-value="10">10</option>
+          <option :value="1">1</option>
+          <option :value="2">2</option>
+          <option :value="3">3</option>
+          <option :value="4">4</option>
+          <option :value="5">5</option>
+          <option :value="6">6</option>
+          <option :value="7">7</option>
+          <option :value="8">8</option>
+          <option :value="9">9</option>
+          <option :value="10">10</option>
         </select>
       </label>
-    </div>
-    <div class="col-sm-4">
       <label>
         Average Level
         <select class="form-control" v-model="partylevel" @change="calculateDifficulty()">
-          <option ng-value="1">1</option>
-          <option ng-value="2">2</option>
-          <option ng-value="3">3</option>
-          <option ng-value="4">4</option>
-          <option ng-value="5">5</option>
-          <option ng-value="6">6</option>
-          <option ng-value="7">7</option>
-          <option ng-value="8">8</option>
-          <option ng-value="9">9</option>
-          <option ng-value="10">10</option>
-          <option ng-value="11">11</option>
-          <option ng-value="12">12</option>
-          <option ng-value="13">13</option>
-          <option ng-value="14">14</option>
-          <option ng-value="15">15</option>
-          <option ng-value="16">16</option>
-          <option ng-value="17">17</option>
-          <option ng-value="18">18</option>
-          <option ng-value="19">19</option>
-          <option ng-value="20">20</option>
+          <option :value="1">1</option>
+          <option :value="2">2</option>
+          <option :value="3">3</option>
+          <option :value="4">4</option>
+          <option :value="5">5</option>
+          <option :value="6">6</option>
+          <option :value="7">7</option>
+          <option :value="8">8</option>
+          <option :value="9">9</option>
+          <option :value="10">10</option>
+          <option :value="11">11</option>
+          <option :value="12">12</option>
+          <option :value="13">13</option>
+          <option :value="14">14</option>
+          <option :value="15">15</option>
+          <option :value="16">16</option>
+          <option :value="17">17</option>
+          <option :value="18">18</option>
+          <option :value="19">19</option>
+          <option :value="20">20</option>
         </select>
+      </label>
+      <label>
+        Terrain
+        <select class="form-control" v-model="terrain" @change="calculateDifficulty()">
+          <option :value="0.75">Player Advantage</option>
+          <option :value="1">None</option>
+          <option :value="1.25">Monster Advantage</option>
+        </select>
+      </label>
+      <label>
+        Monster Has Powerful AoE
+        <input type="checkbox" class="checkbox" v-model="aoe" @change="calculateDifficulty()" />
       </label>
     </div>
     <div class="col-sm-4">
@@ -56,7 +66,7 @@
     <div v-for="creature in encountercreatures" v-bind:key="creature.id" class="col-sm-3" >
         <h2> {{creature.name}} <i class="handle">&#8592;&#8594;<button class="close" type="button" @click="removeCreature(creature)">&times;</button></i> </h2>
         <div class="creature">
-          <h4> {{creature.size}} {{creature.type}}<span data-ng-if="creature.subtype"> ({{creature.subtype}})</span>, {{creature.alignment}}</h4>
+          <h4> {{creature.size}} {{creature.type}}<span v-if="creature.subtype"> ({{creature.subtype}})</span>, {{creature.alignment}}</h4>
           <input type="text" class="form-control" placeholder="mini description" v-model="creature.mini" />
           <p>
             <strong>Armor Class:</strong> {{creature.acdesc}} <br />
@@ -71,22 +81,22 @@
             </thead>
             <tbody>
               <tr>
-                <td>{{creature.str}} (<span ng-if="creature.strmod > 0">+</span>{{creature.strmod}})</td>
-                <td>{{creature.dex}} (<span ng-if="creature.dexmod > 0">+</span>{{creature.dexmod}})</td>
-                <td>{{creature.con}} (<span ng-if="creature.conmod > 0">+</span>{{creature.conmod}})</td>
-                <td>{{creature.int}} (<span ng-if="creature.intmod > 0">+</span>{{creature.intmod}})</td>
-                <td>{{creature.wis}} (<span ng-if="creature.wismod > 0">+</span>{{creature.wismod}})</td>
-                <td>{{creature.cha}} (<span ng-if="creature.chamod > 0">+</span>{{creature.chamod}})</td>
+                <td>{{creature.str}} (<span v-if="creature.strmod > 0">+</span>{{creature.strmod}})</td>
+                <td>{{creature.dex}} (<span v-if="creature.dexmod > 0">+</span>{{creature.dexmod}})</td>
+                <td>{{creature.con}} (<span v-if="creature.conmod > 0">+</span>{{creature.conmod}})</td>
+                <td>{{creature.int}} (<span v-if="creature.intmod > 0">+</span>{{creature.intmod}})</td>
+                <td>{{creature.wis}} (<span v-if="creature.wismod > 0">+</span>{{creature.wismod}})</td>
+                <td>{{creature.cha}} (<span v-if="creature.chamod > 0">+</span>{{creature.chamod}})</td>
               </tr>
             </tbody>
           </table>
           <p>
-            <span data-ng-if="creature.saves"><strong>Saving Throws:</strong> {{creature.saves}} <br /></span>
-            <span data-ng-if="creature.skills.length > 0"><strong>Skills:</strong> {{creature.skills.join(", ")}} <br /></span>
+            <span data-v-if="creature.saves"><strong>Saving Throws:</strong> {{creature.saves}} <br /></span>
+            <span v-if="creature.skills.length > 0"><strong>Skills:</strong> {{creature.skills.join(", ")}} <br /></span>
             <strong>Senses:</strong> {{creature.senses}} <br />
-            <span data-ng-if="creature.damageresistances"><strong>Damage Resistances:</strong> {{creature.damageresistances}} <br /></span>
-            <span data-ng-if="creature.damageimmunities"><strong>Damage Immunities:</strong> {{creature.damageimmunities}} <br /></span>
-            <span data-ng-if="creature.conditionimmunities"><strong>Condition Immunities:</strong> {{creature.conditionimmunities}} <br /></span>
+            <span v-if="creature.damageresistances"><strong>Damage Resistances:</strong> {{creature.damageresistances}} <br /></span>
+            <span v-if="creature.damageimmunities"><strong>Damage Immunities:</strong> {{creature.damageimmunities}} <br /></span>
+            <span v-if="creature.conditionimmunities"><strong>Condition Immunities:</strong> {{creature.conditionimmunities}} <br /></span>
             <strong>Languages:</strong> {{creature.languages}} <br />
             <strong>Challenge:</strong> {{creature.cr}}
           </p>

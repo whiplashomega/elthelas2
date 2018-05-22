@@ -57,7 +57,9 @@ export default {
       partysize: 4,
       difficulty: "",
       xpvalue: 0,
-      adjustedxpvalue: 0
+      terrain: 1,
+      adjustedxpvalue: 0,
+      aoe: false
     };
   },
   methods: {
@@ -122,50 +124,10 @@ export default {
         xp += this.xpByCR(this.encountercreatures[x].cr);
       }
       this.xpvalue = xp;
-      if (this.partysize > 5) {
-        if (this.encountercreatures.length === 1) {
-          xp *= 0.5;
-        } else if (this.encountercreatures.length === 2) {
-          xp *= 1;
-        } else if (this.encountercreatures.length >= 3 && this.encountercreatures.length <= 6) {
-          xp *= 1.5;
-        } else if (this.encountercreatures.length >= 7 && this.encountercreatures.length <= 10) {
-          xp *= 2;
-        } else if (this.encountercreatures.length >= 11 && this.encountercreatures.length <= 14) {
-          xp *= 2.5;
-        } else {
-          xp *= 3;
-        }
-      } else if (this.partysize < 3) {
-        if (this.encountercreatures.length === 1) {
-          xp *= 1.5;
-        } else if (this.encountercreatures.length === 2) {
-          xp *= 2;
-        } else if (this.encountercreatures.length >= 3 && this.encountercreatures.length <= 6) {
-          xp *= 2.5;
-        } else if (this.encountercreatures.length >= 7 && this.encountercreatures.length <= 10) {
-          xp *= 3;
-        } else if (this.encountercreatures.length >= 11 && this.encountercreatures.length <= 14) {
-          xp *= 4;
-        } else {
-          xp *= 5;
-        }
-      } else {
-        if (this.encountercreatures.length === 1) {
-          xp *= 1;
-        } else if (this.encountercreatures.length === 2) {
-          xp *= 1.5;
-        } else if (this.encountercreatures.length >= 3 && this.encountercreatures.length <= 6) {
-          xp *= 2;
-        } else if (this.encountercreatures.length >= 7 && this.encountercreatures.length <= 10) {
-          xp *= 2.5;
-        } else if (this.encountercreatures.length >= 11 && this.encountercreatures.length <= 14) {
-          xp *= 3;
-        } else {
-          xp *= 4;
-        }
-      }
-      this.adjustedxpvalue = xp;
+      xp *= (4 / (this.partysize + 1));
+      xp *= (1 + this.encountercreatures.length * 0.1);
+      xp *= this.terrain * (1 + 0.05 * this.aoe * this.partysize);
+      this.adjustedxpvalue = Math.floor(xp);
       if (xp < easy) {
         this.difficulty = "too easy";
       } else if (xp < medium) {
