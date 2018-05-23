@@ -5,6 +5,14 @@ import $ from 'jquery';
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 
+function round(number, precision) {
+  var shift = function (number, exponent) {
+    var numArray = ("" + number).split("e");
+    return +(numArray[0] + "e" + (numArray[1] ? (+numArray[1] + exponent) : exponent));
+  };
+  return shift(Math.round(shift(number, +precision)), -precision);
+}
+
 export default {
   computed: mapGetters({
     cities: 'allCities',
@@ -33,9 +41,18 @@ export default {
       }
       if (type === 'nation') {
         this.nation = geoitem;
-        this.otherSize = this.nation.populationDistribution.reduce((a, b) => {
+        this.otherSize = round(this.nation.populationDistribution.reduce((a, b) => {
           return a - b.proportion;
-        }, 1);
+        }, 1), 3);
+      }
+      if (type === 'landmark') {
+        this.landmark = geoitem;
+      }
+      if (type === 'feature') {
+        this.feature = geoitem;
+      }
+      if (type === 'continent') {
+        this.continent = geoitem;
       }
       this.$root.$emit('bv::show::modal', type + 'modal');
     },

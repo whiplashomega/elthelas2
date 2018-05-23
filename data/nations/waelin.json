@@ -1,0 +1,35 @@
+{
+  "name": "Eldoran",
+  "coords": [15.876809064146771, 25.356445312500004],
+  "border-coords": [],
+  "color": "#FFFF00",
+  "map": "/static/images/maps/nations/Eldoran.jpg",
+  "capitol": "Estapor",
+  "cities": ["Sofala", "Storvel"],
+  "landmarks": ["Glass Cliff", "Mithral Hills", "Moon Pass"],
+  "borders": ["Gnarra", "Curinor", "Demal Thor", "Malinval", "Shendarel", "Olda"],
+  "population": 900000,
+  "populationDistribution": [{
+    "race": "Wood Elves",
+    "proportion": 0.72
+  },
+  {
+    "race": "High Elves",
+    "proportion": 0.08    
+  },
+  {
+    "race": "Half-Elves",
+    "proportion": 0.18    
+  }],
+  "government": "Waelin is led by a council of Dukes who elect a leader from their own ranks, currently the Duchess of Estapor, Malorin Sadefa. Because their declaration of independence is so new, there is very little central government in place, and laws are mostly what was in place in Eldoran already.",
+  "ruler": "Duchess Malorin Sadefa",
+  "history": "Waelin is currently considered by most nations to be a rebellious province of Eldoran. However, as the months of the rebellion have gone on it has become increasingly clear to merchants and common folk that Eldoran's attempts to bring the province in line are unlikely to succeed without outside intervention, and they have begun to consider it a new nation state of its own. The Illustrious Guild of Merchants and Fine Artisans (colloquially IGoMFA) has recently sent an official representative to Duchess Sadefa's court to negotiate rules of trade for its members in Waelin separate from greater Eldoran.\n\nThe rebellion in Waelin began as a secession dispute, with the Dukes of Waelin disputing the secession of Darendel to the throne of Eldoran following the sudden death of the old king and his immediate heirs. This was compounded by the fact that Darendel had recently married a half-elf of questionable birth, meaning future heirs to the throne would not be pure-blooded elves, and by his subsequent mismanagement of the war effort, diverting critical resources to finding and executing a half-dwarf adventurer that had not been seen in months. Rumors likewise began to spread that the new queen had aligned herself with one or more demon lords, and it did not take long for political insiders to see the power she wielded over her husband.\n\nAfter formal protests with the new king about his queen and his use of resources fell on deaf ears, the Waelin dukes, also those hit hardest by the war effort and distant from Loridesa's political control, met in secret to determine a plan. Led by Duchess Sadefa, the Dukes determined that independence was the only viable option, and in concert with the Church of Sylvan, put for a proclomation that the Royal House of Se'la'mer had lost the blessing of Sylvan, and as such no elf was subject to their rule, and until such time as Sylvan chose a new King of the Elves, the Duchies of Waelin would heed no order from Darendel Se'la'mer or any of his representatives. Civil war had begun.",
+  "gods": ["Gaian", "Amathera", "Sylvan"],
+  "worship": "The elves worship Gaian and Amathera as nature God and protector. However Sylvan is worshipped the most as patron God of the Elves, who spent the God's War protecting her people rather than actively fighting. The elven royal house was chosen specifically by Sylvan to rule, and that divine right has prevented most civil conflict in Eldoran until now.",
+  "culture": "The elves love nature, and it shows in their practices and architecture. Aged trees are protected, and most smaller villages are actually built in the canopy of the trees, while the larger cities are built among them and around them. Farmers specifically grow crops that thrive in the shade and the elves tend to live far apart from each other (Eldoran has one of the lowest population densities of any country.)",
+  "economics": "The elves export specialty woods, spices, fine furniture, art, fine steel and mithril. They are also the world's largest exporter of magical goods such as scrolls, wands, and other enchanted items.",
+  "slavery": "Slavery is abhorrent to the elves.",
+  "magic": "Magic comes naturally to the elves and is highly commonplace. The regulations for its use are highly esoteric to outsiders, often dictating specific times when specific spells can be used. (For example the mage armor spell can only be cast when one feels threatened, and is considered a threat in itself).",
+  "property": "Trees are protected, and the removal of wood is usually done by special magic or the cutting of low branches rather than by cutting them down. Otherwise any elf can own property in Eldoran.",
+  "citizenship": "Any elf except moon elves are considered citizens. Although the only real difference between citizens and non-citizens is whether they are counted when seeking members of the council of elders."
+}

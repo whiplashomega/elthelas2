@@ -123,37 +123,28 @@
   </b-modal>
   <b-modal id="landmarkmodal" size="lg" @hide="hideModal" :title="landmark.name" ok-only>
     <div>
-      <div id="smallmap"></div>
-      <div class="col-sm-6">
         <div v-html="$options.filters.marked(landmark.description)"></div>
         <ul v-if="landmark.contains != undefined && landmark.contains.length > 0">
           <li v-for="nation in landmark.contains" v-bind:key="nation"><router-link :to="'/geo/nation/' + nation">{{nation}}</router-link></li>
         </ul>
-      </div>
       <div style="clear:both;">&nbsp;</div>
     </div>
   </b-modal>
   <b-modal id="featuremodal" size="lg" @hide="hideModal" :title="feature.name" ok-only>
     <div>
-      <div id="smallmap"></div>
-      <div class="col-sm-6">
-        <div v-html="$options.filters.marked(feature.description)"></div>
-        <ul v-if="feature.contains != undefined && feature.contains.length > 0">
-          <li v-for="nation in feature.contains" v-bind:key="nation"><router-link :to="'/geo/nation/' + nation">{{nation}}</router-link></li>
-        </ul>
-      </div>
+      <div v-html="$options.filters.marked(feature.description)"></div>
+      <ul v-if="feature.contains != undefined && feature.contains.length > 0">
+        <li v-for="nation in feature.contains" v-bind:key="nation"><router-link :to="'/geo/nation/' + nation">{{nation}}</router-link></li>
+      </ul>
       <div style="clear:both;">&nbsp;</div>
     </div>
   </b-modal>
   <b-modal id="continentmodal" size="lg" @hide="hideModal" :title="continent.name" ok-only>
     <div class="modal-body">
-      <div id="smallmap"></div>
-      <div class="col-sm-6">
-        <div v-html="$options.filters.marked(continent.description)"></div>
-        <ul v-if="continent.contains != undefined && continent.contains.length > 0">
-          <li v-for="nation in continent.contains" v-bind:key="nation"><router-link :to="'/geo/nation/' + nation">{{nation}}</router-link></li>
-        </ul>
-      </div>
+      <div v-html="$options.filters.marked(continent.description)"></div>
+      <ul v-if="continent.contains != undefined && continent.contains.length > 0">
+        <li v-for="nation in continent.contains" v-bind:key="nation"><router-link :to="'/geo/nation/' + nation">{{nation}}</router-link></li>
+      </ul>
       <div style="clear:both;">&nbsp;</div>
     </div>
   </b-modal>
