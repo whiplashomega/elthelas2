@@ -347,8 +347,14 @@ router.beforeEach((to, from, next) => {
       }
     });
   } else {
+    window.dataLayer = window.dataLayer || [];
+    gtag('js', new Date());
+    gtag('config', 'UA-49438333-2');
     store.dispatch('changeTitle', to.meta.title);
     next();
   }
 });
+
+function gtag() { window.dataLayer.push(arguments); }
+
 export default router;

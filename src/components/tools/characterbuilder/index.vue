@@ -808,11 +808,12 @@
       <div class="col-4 print-hide" v-if="!buildHide">
         <div class="row">
           <h4 class="col-12">Load/Save From Disk</h4>
-          <div class="btn-group col-4">
+          <div class="btn-group col-6">
             <input type="button" value="Save" @click="save()" class="btn btn-primary" />
             <input type="button" value="Load" @click="load()" class="btn btn-success" />
+            <input type="button" value="Reset" @click="reset()" class="btn btn-warning" />
           </div>
-          <input type="file" id="fileload" class="col-8" />
+          <input type="file" id="fileload" class="col-6" />
         </div>
         <div class="row" v-if="loggedin">
           <h4 class="col-12">Load/Save From Server</h4>
@@ -1850,6 +1851,7 @@
             <div class="btn-group col-12">
               <input type="button" value="Save" @click="save()" class="btn btn-primary" />
               <input type="button" value="Load" @click="load()" class="btn btn-success" />
+              <input type="button" value="Reset" @click="reset()" class="btn btn-warning" />
             </div>
             <input type="file" id="fileload" class="col-12" />
           </div>
