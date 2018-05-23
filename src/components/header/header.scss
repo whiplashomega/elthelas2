@@ -80,6 +80,14 @@
   .gsc-input-box {
     border-radius: 4px;
     height: 2.5em;
+    input.gsc-input {
+      width: 100%;
+      line-height: 32px;
+      border-radius: 4px;
+    }
+    .gsib_a {
+      padding-top: 0px;
+    }
   }
   
   table.gsc-search-box {
@@ -90,6 +98,7 @@
     height: 2.5em;
     border-radius: 4px;
     background-color: $success;
+    padding: 0px 4px;
   }
   .gsc-search-botton:hover {
   }
