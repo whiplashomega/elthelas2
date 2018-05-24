@@ -131,6 +131,7 @@
                 </table>
               </div>
               <div class="col-5">
+                <!-- Initiative -->
                 <div class="row">
                   <div class="col">
                     <div class="charsheet-static center">
@@ -138,6 +139,7 @@
                     </div>
                   </div>
                 </div>
+                <!-- HP -->
                 <div class="row">
                   <div class="col">
                     <div class="charsheet-static">
@@ -146,6 +148,7 @@
                     </div>
                   </div>
                 </div>
+                <!-- Hit Dice -->
                 <div class="row">
                   <div class="col">
                     <div class="charsheet-static">

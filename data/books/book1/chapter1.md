@@ -58,6 +58,9 @@ Her keen elfin eyes perked up when the last recruit came through the door howeve
 
 The functionary didn't even look up as they continued. "Name?"
 
-"Alkea." A deep female voice responded. The functionary looked up, finally noticing the shear size of the recruit, and the covering clothing.
+"Alkea." A deep female voice responded in an unfamiliar, slurred accent. The functionary looked up, finally noticing the shear size of the recruit, and the covering clothing.
 
 "Show your face recruit." The woman dropped the hood, and before she could reach up to remove her mask the sound of swords leaving sheaths filled the room. Vanriel instinctively reached for her bow. The mask dropped, revealing the unmistakable small tusks of an orc woman.
+
+### Alkea
+
