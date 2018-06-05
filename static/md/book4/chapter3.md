@@ -44,6 +44,10 @@ Rumor has it that the Duchess of Cur'Mestin, Genevieve Octavius, is in cahoots w
 
 I have heard that an old associate of mine has been working for Duchess Octavius. Find Felix and convince him to switch sides.
 
+#### Champions of Cora Orders
+
+Duchess Octavius has offended good people everywhere with her oppressive rule. Meanwhile her daughter has proven to be a valuable servant of Cora. Kill the Duchess and see that her daughter takes the throne.
+
 #### Illustrious Guild of Merchant's and Fine Artisans Orders
 
 There are rumors of a Purple Worm Nest near Cur'Mestin. Purple Worm eggs are incredibly valuable. Bring at least one back with you and we will pay you well for it.

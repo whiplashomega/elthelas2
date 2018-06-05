@@ -1,0 +1,140 @@
+.charsheet-text {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+  padding: 1px 0px;
+  height: 24px;
+}
+
+.charsheet-textarea {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+  padding: 1px 0px;
+  height: auto;
+}
+
+.charsheet-label {
+  font-weight: bold;  
+}
+
+.btn-sm {
+  padding: .05em .4em;
+  font-size: 0.8em;
+}
+.btn-symbol {
+  background: none;
+  border: none;
+}
+.charsheet-static {
+  margin: 10px 0;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 2px 5px;
+}
+
+.smalltext {
+  font-size: 0.75em;
+  font-weight: normal;
+}
+
+#attackdiv {
+  max-height: 350px;
+}
+
+.clickable {
+  color: blue;
+  cursor: pointer; 
+}
+
+.clickable:hover {
+  text-decoration:underline;
+}
+#featurebox {
+  p {
+    margin-bottom: 0.5em;
+  }
+  h4 {
+    font-size: 1.5em;
+  }
+  max-height: 720px;
+}
+
+#profbox {
+  height: 400px;
+}
+
+#armorbox {
+  max-height: 325px;
+}
+
+#equipmentbox {
+  max-height: 500px;
+}
+.center {
+  text-align: center;
+}
+.sheet-container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ddlogo {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0px;
+  padding: 10px;
+}
+.charsheet-num {
+  border: none;
+  max-width: 50px;
+  text-align: right;
+  @media screen and (max-width:500px) {
+    max-width: 35px;
+    font-size: 0.85em;
+  }
+}
+
+.abilitytable {
+  margin-top: 10px;
+  border: 1px solid black;
+  width: 100%;
+  font-size: 0.95em;
+  tr {
+    border-bottom: 1px solid black;
+  }
+  td, th {
+    padding: 3px;
+    border-right: 1px solid black;
+  }
+}
+
+#spellList {
+  display: table;
+  width: 100%;
+
+  thead, tbody {
+    float: left;
+    width: 100%;
+  }
+  tbody {
+    overflow: auto;
+    height: 350px;
+  }
+  tr {
+    width: 100%;
+    display: table;
+    text-align: left;
+  }
+  th:nth-of-type(1), td:nth-of-type(1) {
+    width: 10%;
+  }
+  th:nth-of-type(3), td:nth-of-type(3) {
+    width: 20%;
+  }
+  th, td {
+    width: 70%;
+  }
+}
