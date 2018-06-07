@@ -39,7 +39,7 @@ gulp.task('historyjson', function () {
     }
   });
   if(historyarray.length === files.length) {
-    fs.writeFile("./static/json/history.json", JSON.stringify({ "model": "History", "documents": historyarray}), "utf-8", function() {
+    fs.writeFile("./elthelasapp/static/json/history.json", JSON.stringify({ "model": "History", "documents": historyarray}), "utf-8", function() {
       return true;
     });
   }
@@ -156,7 +156,7 @@ gulp.task('creaturesjson', function() {
     creaturearray.push(creature);
   });
   if(creaturearray.length === files.length) {
-    fs.writeFile("./static/json/creatures.json", JSON.stringify({ "model": "Creature", "documents": creaturearray }), "utf-8", function() {
+    fs.writeFile("./elthelasapp/static/json/creatures.json", JSON.stringify({ "model": "Creature", "documents": creaturearray }), "utf-8", function() {
       return true;
     });
   }
@@ -197,7 +197,7 @@ gulp.task('spellsjson', function() {
     spellarray.push(spell);
   });
   if(spellarray.length === files.length) {
-    fs.writeFile("./static/json/spells.json", JSON.stringify({ "model": "Spell", "documents": spellarray }), "utf-8", function() {
+    fs.writeFile("./elthelasapp/static/json/spells.json", JSON.stringify({ "model": "Spell", "documents": spellarray }), "utf-8", function() {
       return true;
     });
   }
@@ -234,54 +234,44 @@ gulp.task('jsoncompile', ['jsonlint'], function() {
     });
   }
   //feats
-  jsonmin('./data/feats.json', './static/json/feats.json');
+  jsonmin('./data/feats.json', './elthelasapp/static/json/feats.json');
   //weapons
-  jsonmin('./data/weapons.json', './static/json/weapons.json');
+  jsonmin('./data/weapons.json', './elthelasapp/static/json/weapons.json');
   //armor
-  jsonmin('./data/armor.json', './static/json/armor.json');
+  jsonmin('./data/armor.json', './elthelasapp/static/json/armor.json');
   //equipment
-  jsonmin('./data/equipment.json', './static/json/equipment.json');
+  jsonmin('./data/equipment.json', './elthelasapp/static/json/equipment.json');
   //magic items
-  jsonmin('./data/magicitems.json', './static/json/magicitems.json');
+  jsonmin('./data/magicitems.json', './elthelasapp/static/json/magicitems.json');
   //gods
-  compiledir("./data/gods", "./static/json/gods.json", "God");
+  compiledir("./data/gods", "./elthelasapp/static/json/gods.json", "God");
   //races
-  compiledir("./data/races", "./static/json/races.json", "Race");
+  compiledir("./data/races", "./elthelasapp/static/json/races.json", "Race");
   //organizations
-  compiledir("./data/organizations", "./static/json/organizations.json", "Organization");
+  compiledir("./data/organizations", "./elthelasapp/static/json/organizations.json", "Organization");
   //divines
-  compiledir("./data/divines", "./static/json/divines.json", "Divine");
+  compiledir("./data/divines", "./elthelasapp/static/json/divines.json", "Divine");
   //cities
-  compiledir("./data/cities", "./static/json/cities.json", "City");
+  compiledir("./data/cities", "./elthelasapp/static/json/cities.json", "City");
   //continents
-  compiledir("./data/continents", "./static/json/continents.json", "Continent");
+  compiledir("./data/continents", "./elthelasapp/static/json/continents.json", "Continent");
   //features
-  compiledir("./data/features", "./static/json/features.json", "Feature");
+  compiledir("./data/features", "./elthelasapp/static/json/features.json", "Feature");
   //landmarks
-  compiledir("./data/landmarks", "./static/json/landmarks.json", "Landmark");
+  compiledir("./data/landmarks", "./elthelasapp/static/json/landmarks.json", "Landmark");
   //nations
-  compiledir("./data/nations", "./static/json/nations.json", "Nation");
+  compiledir("./data/nations", "./elthelasapp/static/json/nations.json", "Nation");
   //backgrounds
-  compiledir("./data/backgrounds", "./static/json/backgrounds.json", "Background");
+  compiledir("./data/backgrounds", "./elthelasapp/static/json/backgrounds.json", "Background");
   //classes
-  compiledir("./data/classes", "./static/json/classes.json", "CharClass");
-  return true;
-});
-
-gulp.task('unittest', [], function(done) {
-  console.log('start');
-  console.log('end');
-  done();
-});
-
-gulp.task('integrationtest', ['unittest'], function() {
+  compiledir("./data/classes", "./elthelasapp/static/json/classes.json", "CharClass");
   return true;
 });
 
 //task groups
-gulp.task('default', ['integrationtest', 'spellsjson', 'historyjson', 'creaturesjson', 'jsoncompile'], function(done) {
+gulp.task('default', ['spellsjson', 'historyjson', 'creaturesjson', 'jsoncompile'], function(done) {
   console.log("starting build task");
-  require('./build/build.js');
+  require('./elthelasapp/build/build.js');
   done();
 });
 

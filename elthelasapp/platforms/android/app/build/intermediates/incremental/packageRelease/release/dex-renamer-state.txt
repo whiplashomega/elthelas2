@@ -1,0 +1,4 @@
+#Thu Jun 07 18:17:32 UTC 2018
+base.0=/home/ec2-user/environment/elthelasapp/platforms/android/app/build/intermediates/transforms/dex/release/0
+renamed.0=classes.dex
+file.0=/home/ec2-user/environment/elthelasapp/platforms/android/app/build/intermediates/transforms/dex/release/0/classes.dex
