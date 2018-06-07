@@ -36,7 +36,7 @@ app.start = function() {
     // parse application/x-www-form-urlencoded
     app.use(bodyParser.urlencoded({ extended: true }));
     
-    app.use(express.static(__dirname + '/dist', { maxAge: 365 }));
+    app.use(express.static(__dirname + '/elthelasapp/www/dist', { maxAge: 365 }));
     console.log('loaded bodyParser');
     
     // override with the X-HTTP-Method-Override header in the request. simulate DELETE/PUT
