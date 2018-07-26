@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import ctest from './cordovatest.js';
 
 const state = {
   all: []
@@ -11,7 +12,7 @@ const getters = {
 const actions = {
   getAllBackgrounds ({ commit }) {
     return new Promise((resolve) => {
-      Vue.http.get('/static/json/backgrounds.json').then((response) => {
+      Vue.http.get(ctest.baseUrl + 'static/json/backgrounds.json').then((response) => {
         var backgrounds = response.body.documents;
         for (var x = 0; x < backgrounds.length; x++) {
           backgrounds[x].isCollapsed = true;

@@ -25,7 +25,7 @@
     <div id="chapter1startingout">
       <h3>Starting Out</h3>
       <p>
-        You will start as someone who, for whatever reason, has answered the call by Gerad Heartbren to gather at Cur'Estan to defeat the orcs.  You may be a true believer, a money-hungry opportunist, or a desparate refugee. You may be acting on the behest of a faction you belong to, or seeking revenge.  Whatever your reasons, you find yourself at the gates of the castle Cur'Estan, ready to wade into the fray of a war seemingly already lost.  You are the last great hope of Elthelas.
+        You will start as someone who, for whatever reason, has answered the call by Gerad Heartbren to gather at Cur'Estan to defeat the orcs.  You may be a true believer, a money-hungry opportunist, or a desparate refugee. You may be acting at the behest of a faction you belong to, or seeking revenge.  Whatever your reasons, you find yourself at the gates of the castle Cur'Estan, ready to wade into the fray of a war seemingly already lost.  You are the last great hope of Elthelas.
       </p>
       <h4>Building Your Character</h4>
       <p>
@@ -54,18 +54,25 @@
         <strong>Step 4: Determine your background</strong> <a ui-sref='app.backgrounds'>You can use the background listing on the site.</a> Backgrounds can be custom built as well.  Talk to your DM if you would like to use a custom background.  Use the guidelines in the Player's Handbook for building any custom background.
       </p>
       <p>
-        <strong>Step 5: Choose your Faction (optional)</strong> Players for this campaign are encouraged (but not required) to start as part of a major faction.  PCs will receive additional orders (and potentially rewards) from faction leaders as part of each major mission.  The faction likely shows up in the characters backstory, and the characters ideals and goals should be closely aligned with the faction they join.  The organizations provide various benefits to players in their adventuring career as well as upholding certain ideals called tenets.  See the <a href='app.organizations'>Organizations page</a> for details on the factions, and the list below for the organizations available as factions to join in this campaign.
+        <strong>Step 5: Choose your Faction</strong> Players for this campaign are encouraged to start as part of a major faction.  PCs will receive additional orders (and potentially rewards) from faction leaders as part of each major mission.  The faction likely shows up in the characters backstory, and the characters ideals and goals should be closely aligned with the faction they join.  The organizations provide various benefits to players in their adventuring career as well as upholding certain ideals called tenets.  See the <a href='app.organizations'>Organizations page</a> for details on the factions, and the list below for the organizations available as factions to join in this campaign. If none of the prebuilt factions interest you, work with your DM to build a new faction of which you are a part.
       </p>
       <p>
-        <strong>Step 6: Detailed Character History </strong> Flesh out your characters history in relation to the events of the world with your DM.  You need to answer a few important questions at a minimum:
+        <strong>Step 6: Detailed Character History </strong> Flesh out your characters history in relation to the events of the world with your DM.  You need to answer a few important questions, make note of each answer, and provide a copy to your DM:
       </p>
       <ul>
         <li><a ui-sref='app.geo'>Where are they from?</a></li>
         <li>They are starting the campaign at level 3, which means they have some history and skill already.  What have they done in the past?</li>
         <li>Where were they before the start of the campaign?</li>
-        <li>Do they have family or friends somewhere that they care about? A previous adventuring party that is still out there somewhere?</li>
+        <li>Do they have family or friends somewhere that they care about? Who are their parents? How has their family affected their life?</li>
         <li>If you are a member of a faction, how did you join it, what is your standing in that organization?</li>
+        <li>Is your character heroic? Would they lay down their life or otherwise make sacrifices for the greater good or to save another?</li>
+        <li>What are their immediate goals? Are you seeking wealth, fame, glory? Are you after something more specific? Why?</li>
+        <li>Is your character religious? The existance of the Gods is rarely disputed in Elthelas, but not everyone care to worship. Do they? If so who? (and of course, why?)</li>
+        <li>Is your character merciful? Unforgiving? Temperate? Regularly Drunk? Scholarly? What character traits do they have that shape how they approach problems?</li>
       </ul>
+      <p>
+        While you are coming up with these answers, talk to the other players. Find ways to incorporate one or more of them into your backstory. Are you from the same town? Were you both wronged by a common enemy? Maybe you served together in the military, or aided eachother on a previous adventure! The possibilities are limitless.
+      </p>
       <p>
         <strong>Step 7: Languages Known</strong> Determine what languages your character knows.  See the <a ui-sref='app.languages'>Languages page</a> for details on what and how many languages your character knows.  All PCs should know Imperial from some means, whether by being from a country that speaks it normally, or by getting it through a background, racial, or ability score based bonus language. <em>Imperial will be the lingua franca of the campaign, and not knowing it will be a major hindrance to your character.</em>
       </p>
@@ -132,7 +139,7 @@
       <p>
         To the south of the castle is the barracks of the Black Wolf Irregulars, approximately 1500 soldiers stay in the barracks (in addition to the 500 or so garrisoned in the castle).  The area west of the barracks is used as a training ground.
       </p>
-      <p>To the south of the town is the refugee camp, housing about 1000 refugees, managed by a contingent of Amathera's Shield, about 50 strong.  The refugees are welcome in town, and occasionally one will have the funds to build a proper house in the town itself, the rest are housed in large tents in the camp, each housing as many as 50 people.</p>
+      <p>To the south of the town is the refugee camp, which has grown to be somewhat of a tent city, housing more than 20000 refugees from Gerasalim, managed by a contingent of Amathera's Shield, about 50 strong, and any volunteers they can find.  The refugees are welcome in town, and occasionally one will have the funds to build a proper house in the town itself, the rest are housed in large tents in the camp, each housing as many as 50 people.</p>
       <p>
         The southeast, between the town and the refugee camp, sits the permament complex of the Lords of the Rising Dawn.  An order of knights and paladins headquartered in Kaland.  The order has approximately 1000 soldiers garrisoned here in 4 large barracks buildings.
       </p>

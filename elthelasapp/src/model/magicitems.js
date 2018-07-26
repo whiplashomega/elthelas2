@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import ctest from './cordovatest.js';
 
 const state = {
   all: [],
@@ -26,7 +27,7 @@ const actions = {
         this.dispatch('getAllArmor'),
         this.dispatch('getAllWeapons')])
         .then(() => {
-          Vue.http.get('/static/json/magicitems.json').then((response) => {
+          Vue.http.get(ctest.baseUrl + 'static/json/magicitems.json').then((response) => {
             var magicitems = response.body;
             commit('GET_MAGICITEMS', { magicitems: magicitems, weapons: this.getters.allWeapons, armor: this.getters.allArmor, spells: this.getters.allSpells });
             resolve();

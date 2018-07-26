@@ -807,6 +807,23 @@
             </div>
           </div>
         </div>
+        <!-- Personality -->
+        <div class="row">
+          My traits
+          Brave/Coward
+          Merciful/Unforgiving
+          Religious/Unreligious
+          Generous/Greedy
+          Relaxed/Neurotic
+          Talkative/Taciturn
+          Bookish/Simple
+          Careful/Foolish
+        </div>
+        <!-- Party Bond -->
+        <!-- Family -->
+        <!-- Goals -->
+        <!-- Values -->
+        <!-- Stronghold -->
       </div>
       <div class="col-4 print-hide" v-if="!buildHide">
         <div class="row">

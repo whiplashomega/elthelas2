@@ -1,6 +1,7 @@
 /* globals localStorage */
 
 import Vue from 'vue';
+import ctest from './cordovatest.js';
 
 var now = new Date();
 
@@ -33,7 +34,7 @@ const getters = {
 const actions = {
   login ({ commit }, payload) {
     return new Promise((resolve, reject) => {
-      Vue.http.post('/users/login', { username: payload.username, password: payload.password }).then((response) => {
+      Vue.http.post(ctest.baseUrl + 'users/login', { username: payload.username, password: payload.password }).then((response) => {
         if (response.status === 200) {
           commit('saveLogin', { user: response.body.user, token: response.body.token });
           resolve(response);
@@ -49,7 +50,7 @@ const actions = {
     if (user.password !== user.passwordConfirm) {
       return false;
     }
-    Vue.http.post('/users/register', user, (response) => {
+    Vue.http.post(ctest.baseUrl + 'users/register', user, (response) => {
       if (response.status === 200) {
         commit('saveLogin', { user: response.body.user, token: response.body.token });
       } else {

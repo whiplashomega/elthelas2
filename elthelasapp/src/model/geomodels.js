@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import ctest from './cordovatest.js';
 
 const state = {
   cities: [],
@@ -29,7 +30,7 @@ const getters = {
 const actions = {
   getAllCities ({ commit }) {
     return new Promise((resolve) => {
-      Vue.http.get('/static/json/cities.json').then((response) => {
+      Vue.http.get(ctest.baseUrl + 'static/json/cities.json').then((response) => {
         var cities = response.body.documents;
         commit('getCities', { cities: cities });
         resolve();
@@ -38,7 +39,7 @@ const actions = {
   },
   getAllNations ({ commit }) {
     return new Promise((resolve) => {
-      Vue.http.get('/static/json/nations.json').then((response) => {
+      Vue.http.get(ctest.baseUrl + 'static/json/nations.json').then((response) => {
         var nations = response.body.documents;
         commit('getNations', { nations: nations });
         resolve();
@@ -47,7 +48,7 @@ const actions = {
   },
   getAllLandmarks ({ commit }) {
     return new Promise((resolve) => {
-      Vue.http.get('/static/json/landmarks.json').then((response) => {
+      Vue.http.get(ctest.baseUrl + 'static/json/landmarks.json').then((response) => {
         var landmarks = response.body.documents;
         commit('getLandmarks', { landmarks: landmarks });
         resolve();
@@ -56,7 +57,7 @@ const actions = {
   },
   getAllFeatures ({ commit }) {
     return new Promise((resolve) => {
-      Vue.http.get('/static/json/features.json').then((response) => {
+      Vue.http.get(ctest.baseUrl + 'static/json/features.json').then((response) => {
         var features = response.body.documents;
         commit('getFeatures', { features: features });
         resolve();
@@ -65,7 +66,7 @@ const actions = {
   },
   getAllContinents ({ commit }) {
     return new Promise((resolve) => {
-      Vue.http.get('/static/json/continents.json').then((response) => {
+      Vue.http.get(ctest.baseUrl + 'static/json/continents.json').then((response) => {
         var continents = response.body.documents;
         commit('getContinents', { continents: continents });
         resolve();

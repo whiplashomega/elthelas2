@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import ctest from './cordovatest.js';
 
 const state = {
   all: []
@@ -32,7 +33,7 @@ const getters = {
 const actions = {
   getAllRaces ({ commit }) {
     return new Promise((resolve) => {
-      Vue.http.get('/static/json/races.json').then((response) => {
+      Vue.http.get(ctest.baseUrl + 'static/json/races.json').then((response) => {
         var races = response.body.documents;
         commit('GET_RACES', { races: races });
         resolve();

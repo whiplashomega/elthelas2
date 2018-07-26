@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import marked from 'marked';
+import ctest from './cordovatest.js';
 
 const state = {
   all: []
@@ -12,7 +13,7 @@ const getters = {
 const actions = {
   getAllCreatures ({ commit }) {
     return new Promise((resolve) => {
-      Vue.http.get('/static/json/creatures.json').then((response) => {
+      Vue.http.get(ctest.baseUrl + 'static/json/creatures.json').then((response) => {
         var creatures = response.body.documents;
         for (var x = 0; x < creatures.length; x++) {
           creatures[x].descr = marked(creatures[x].description);

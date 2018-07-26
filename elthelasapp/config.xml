@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.elthelas" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>HelloCordova</name>
+    <name>Elthelas</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
@@ -8,7 +8,6 @@
         Joseph Harrison
     </author>
     <content src="dist/index.html" />
-    <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
     <icon src="/static/images/swordshieldlogo.png" />
     <allow-intent href="http://*/*" />
@@ -25,4 +24,5 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <engine name="android" spec="^7.0.0" />
+    <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
 </widget>
