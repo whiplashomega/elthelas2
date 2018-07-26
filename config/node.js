@@ -22,5 +22,5 @@ module.exports = {
             clientSecret: '409369a75ffe5ece6c1dbfa040ed8c6e',
             callbackURL: 'https://elthelas.com/users/facebook/callback'
         };
-        module.exports.staticDir = 'elthelasapp/www/dist';
+        module.exports.staticDir = '/elthelasapp/www/dist';
     }
