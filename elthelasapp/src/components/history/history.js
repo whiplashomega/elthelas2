@@ -21,7 +21,7 @@ export default {
       timeline: {}
     };
   },
-  created () {
+  mounted () {
     this.$store.dispatch('getAllEvents').then(() => {
       var timelineevents = {
         events: this.events

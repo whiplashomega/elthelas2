@@ -37,3 +37,7 @@
     display: none;
   }
 }
+
+html {
+  font-size: calc(10px + (16 - 10) * ((100vw - 400px) / (1600 - 300)));
+}

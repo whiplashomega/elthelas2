@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import ctest from './cordovatest.js';
 
 const state = {
   all: []
@@ -11,7 +12,7 @@ const getters = {
 const actions = {
   getAllSpells ({ commit }) {
     return new Promise((resolve) => {
-      Vue.http.get('/static/json/spells.json').then((response) => {
+      Vue.http.get(ctest.baseUrl + 'static/json/spells.json').then((response) => {
         var spells = response.body.documents;
         for (var x in spells) {
           spells[x].tagsText = spells[x].tags.join(', ');

@@ -1,0 +1,119 @@
+{
+    "lang": "fr",
+    "date": {
+        "month_abbr": [
+            "ner.",
+            "dor.",
+            "tri.",
+            "syl.",
+            "gai.",
+            "alo.",
+            "cor.",
+            "mol.",
+            "mar.",
+            "sar.",
+            "toc.",
+            "amt."
+        ],
+        "day_abbr": [
+            "God.",
+            "Elf.",
+            "Gno.",
+            "Dra.",
+            "Man.",
+            "Dwa.",
+            "Orc."
+        ],
+        "day": [
+            "Godsday",
+            "Elvesday",
+            "Gnomesday",
+            "Dragonsday",
+            "Mansday",
+            "Dwarvesday",
+            "Orcsday"
+        ],
+        "month": [
+            "Neradan",
+            "Dorunor",
+            "Trimalan",
+            "Sylvanus",
+            "Gaiana",
+            "Alohiman",
+            "Coranus",
+            "Moltyr",
+            "Saris",
+            "Maridia",
+            "Tockra",
+            "Amatherin"
+        ]
+    },
+    "api": {
+        "wikipedia": ""
+    },
+    "messages": {
+        "loading": "Loading",
+        "contract_timeline": "Contract Timeline",
+        "return_to_title": "Return to Title",
+        "wikipedia": "",
+        "loading_content": "Loading Content",
+        "expand_timeline": "Expand Timeline",
+        "loading_timeline": "Loading Timeline... ",
+        "error": "Error",
+        "swipe_to_navigate": "Swipe to Navigate <br><span class='tl-button'>OK</span>",
+        "unknown_read_err": "Uknown Read Error.",
+        "invalid_url_err": "Invalid URL Error.",
+        "network_err": "Network Error.",
+        "empty_feed_err": "Empty Feed Error",
+        "missing_start_date_err": "Missing Start Date Error",
+        "invalid_data_format_err": "Invalid Date Format Error.",
+        "date_compare_err": "Date Compare Error",
+        "invalid_scale_err": "Invalid Scale Error",
+        "invalid_date_err": "Invalid Date Error",
+        "invalid_hour_err": "Invalid Hour Error",
+        "invalid_minute_err": "Invalid Minute Error",
+        "invalid_second_err": "Invalid Seconds Error",
+        "invalid_fractional_err": "Invalid Fractional",
+        "invalid_second_fractional_err": "",
+        "invalid_year_err": "Invalid Year Error",
+        "flickr_notfound_err": "Flickr Photo Not Found",
+        "flickr_invalidurl_err": "Flickr Invalid URL",
+        "imgur_invalidurl_err": "URL Imgur invalide",
+        "twitter_invalidurl_err": "URL Twitter invalide",
+        "twitter_load_err": "Impossible de charger le tweet",
+        "twitterembed_invalidurl_err": "URL d'embed Twitter invalide",
+        "wikipedia_load_err": "Impossible de charger les données de Wikipedia",
+        "youtube_invalidurl_err": "URL YouTube invalide",
+        "spotify_invalid_url": "URL Spotify invalide",
+        "template_value_err": "Aucune donnée pour cette variable",
+        "invalid_rgb_err": "Argument RGB invalide"
+    },
+    "dateformats": {
+        "full_long": "dddd',' d mmm yyyy 'à' HH:MM",
+        "full_short": "d mmm",
+        "full": "d mmmm yyyy",
+        "month_short": "mmm",
+        "time_no_seconds_small_date": "HH:MM'<br/><small>'d mmmm yyyy'</small>'",
+        "month": "mmmm yyyy",
+        "time_no_seconds_short": "HH:MM",
+        "time_short": "HH:MM:ss",
+        "year": "yyyy",
+        "full_long_small_date": "HH:MM'<br/><small>'dddd',' d mmm yyyy'</small>'"
+    },
+    "era_labels": {
+        "positive_year": {
+            "prefix": "",
+            "suffix": "YFC"
+        },
+        "negative_year": {
+            "prefix": "-",
+            "suffix": "YFC"
+        }
+    },
+    "period_labels": {
+        "t": ["a", "p"],
+        "tt": ["am", "pm"],
+        "T": ["A", "P"],
+        "TT": ["AM", "PM"]
+    }
+}

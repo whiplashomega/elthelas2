@@ -1,9 +1,9 @@
 <template>
 <div class="print-hide">
-  <b-navbar toggleable="lg" class="site-header sticky-top py-1" type="dark">
+  <b-navbar toggleable="xl" class="site-header sticky-top py-1" type="dark">
     <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
     <b-collapse is-nav id="nav_collapse">
-      <div class="container d-flex flex-column flex-lg-row justify-content-between">
+      <div class="container d-flex flex-column flex-xl-row justify-content-between">
           <div>
             <router-link to="/">Home</router-link>
           </div>

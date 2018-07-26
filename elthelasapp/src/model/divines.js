@@ -1,5 +1,7 @@
 import Vue from 'vue';
 import marked from 'marked';
+import ctest from './cordovatest.js';
+
 const state = {
   all: [{ name: 'Placeholder', id: 'placeholder' }]
 };
@@ -11,7 +13,7 @@ const getters = {
 const actions = {
   getAllDivines ({ commit }) {
     return new Promise((resolve) => {
-      Vue.http.get('/static/json/divines.json').then((response) => {
+      Vue.http.get(ctest.baseUrl + 'static/json/divines.json').then((response) => {
         var divines = response.body.documents;
         for (var x = 0; x < divines.length; x++) {
           divines[x].descr = marked(divines[x].description);

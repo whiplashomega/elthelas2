@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import ctest from './cordovatest.js';
 
 const state = {
   all: [{ name: 'Placeholder', id: 'placeholder' }]
@@ -11,7 +12,7 @@ const getters = {
 const actions = {
   getAllOrganizations ({ commit }) {
     return new Promise((resolve) => {
-      Vue.http.get('/static/json/organizations.json').then((response) => {
+      Vue.http.get(ctest.baseUrl + 'static/json/organizations.json').then((response) => {
         var orgs = response.body.documents;
         commit('organizations', { orgs: orgs });
         resolve();
