@@ -176,6 +176,17 @@ var router = new Router({
       }
     },
     {
+      name: 'orgsdynamic',
+      meta: {
+        title: "Important Organizations"
+      },
+      path: '/ref/orgs/:org',
+      components: {
+        default: organizations,
+        sidebar: refmenu
+      }
+    },
+    {
       name: 'history',
       meta: {
         title: "History of Elthelas"
