@@ -96,7 +96,7 @@
         <li>Illustrious Guild of Merchants and Fine Artisans</li>
         <li>Keepers of the Grove</li>
         <li>Lords of the Rising Dawn</li>
-        <li>Maker's of Legend</li>
+        <li>Makers of Legend</li>
         <li>Masters of the Deep Song</li>
         <li>Shepherds of the All-Mother</li>
         <li>Silver Dragon Knights</li>
@@ -128,7 +128,6 @@
       <p>
         Cur'Estan was once the fortress capitol of an ancient minor Kandori king, destroyed by Dorman I and left as a ruin in the woods.  20 years ago the Black Wolf Irregulars rebuilt the central castle to serve as their headquarters, and over the twenty years since a small town has sprung up around the castle serving the needs of the castle.  Over the last year, as the orcs have ravaged Demal'Thor, and then moved into Gerasalim, refugees have slowly trickled into the town.  A refugee camp has sprung up on the outskirts, and after the evacuation of Northport, they greatly outnumber the original residents.
       </p>
-      <h4>Black Wolf Irregulars</h4>
       <p>The de facto ruler of Cur'Estan is General Gerad Heartbren of the Black Wolf Irregulars.  He commands the castle, and roughly 2000 soldiers, the last remains of the Black Wolf Irregulars forces.</p>
       <p>The massive castle, with it's 30 ft thick walls, and 100 ft tall keep towers over the town in the west.  It contains large storehouses, stables, smiths, and fletchers who supply the soldiers.</p>
       <p>
@@ -141,25 +140,87 @@
       <p>
         The southeast, between the town and the refugee camp, sits the permament complex of the Lords of the Rising Dawn.  An order of knights and paladins headquartered in Kaland.  The order has approximately 1000 soldiers garrisoned here in 4 large barracks buildings.
       </p>
-              <li>Amathera's Shield</li>
-        <li>Artificer's of Mechanus</li>
-        <li>Black Sun</li>
-        
-        <li>Blood Brothers</li>
-        <li>Champions of Cora</li>
-        <li>Dormanian Imperial Guard</li>
-        <li>Guild of Heroes</li>
-        <li>International Grangemaster's Alliance</li>
-        <li>Illustrious Guild of Merchants and Fine Artisans</li>
-        <li>Keepers of the Grove</li>
-        <li>Lords of the Rising Dawn</li>
-        <li>Maker's of Legend</li>
-        <li>Masters of the Deep Song</li>
-        <li>Shepherds of the All-Mother</li>
-        <li>Silver Dragon Knights</li>
-        <li>Sylvan's Rangers</li>
-        <li>Trollkin Mercenary Corps</li>
-        <li>Union of Wizard's Colleges</li>
+      <h3>Faction Details in Cur'Estan</h3>
+      <h4><router-link to="/ref/orgs/amathera'sshield">Amathera's Shield</router-link></h4>
+      <p>
+        Amathera's Shield as an organization is one of the most overworked but nevertheless persistent groups in Cur'Estan. Officially they are in charge of the local refugee camp as a non-combatant group supplying aid to the dispossessed, unofficially they are the wartime arm of the Church of Amathera. Locally they are led by Malia Demonslayer, a recent arrival who led the evacuation of Northport. She is a skilled wizard and diviner as well, who has spent significant time behind enemy lines and is a part of Gerad Heartbren's war council.
+      </p>
+      <h4><router-link to="/ref/orgs/artificer'sofmechanus">Artificer's of Mechanus</router-link></h4>
+      <p>
+        The Artificer's of Mechanus do not have an official presence in the city, but Margo, the local perveyor of magical gear, is known to be a high-ranking member.
+      </p>
+      <h4><router-link to="/ref/orgs/blacksun">Black Sun</router-link></h4>
+      <p>
+        No one publicly acknowledges that the international thieve's guild known as the Black Sun has taken an interest in the war effort, but Kyman Hexhammer has often been linked to the organization, even rumored to be one of it's leaders, and he sits on Gerad Heartbren's War Council as his spymaster.
+      </p>
+      <h4><router-link to="/ref/orgs/blackwolfirregulars">Black Wolf Irregulars</router-link></h4>
+      <p>
+        The Black Wolf Irregulars are the leading faction in Cur'Estan, the town revolves around the fact that it is their headquarters, and the fact that they are the only real force still trying to coordinate efforts against the orcs. Their leader is Gerad Heartbren, an elderly but still spry Moon Elf and the last living founding member of the organization. He was reknowned in his day as an adventurer and skilled spellsword before commanding armies.
+      </p>
+      <h4><router-link to="/ref/orgs/bloodbrothers">Blood Brothers</router-link></h4>
+      <p>
+        The Blood Brothers are a relatively minor group in Cur'Estan itself, but they have set up a small chapter house in town led by a retired Kandori captain named Bero Orcslayer. They often take contracts from the irregulars to deal with local troublemakers so that General Heartbren can focus on broader concerns.
+      </p>
+      <h4><router-link to="/ref/orgs/championsofcora">Champions of Cora</router-link></h4>
+      <p>
+        The Champions of Cora do not have chapter houses in the traditional sense and never have, but those who wish to serve as Champions of Cora in or near Cur'Estan can report to the local Cleric of Cora Rolf Schönbecker.
+      </p>
+      <h4><router-link to="/ref/orgs/dormanianimperialguard">Dormanian Imperial Guard</router-link></h4>
+      <p>
+        Dormania is still nominally part of the Alliance of 6 Nations, despite being unable to commit troops to the war effort, and the Empress has recently sent the Archduke (and legendary general) Theodore Gloryheart to act as her ambassador in Cur'Estan and to serve as an advisor to Gerad Heartbren. Members of the Dormanian Imperial Guard would report to him as the highest ranking representative of the Empress.
+      </p>
+      <h4><router-link to="/ref/orgs/guildofheroes">Guild of Heroes</router-link></h4>
+      <p>
+        The Guild of Heroes is in the process of openning a new chapter house in Cur'Estan, led by Allison Highwater, who was most recently the local guild master in Northport before the evacuation.
+      </p>
+      <h4><router-link to="/ref/orgs/internationalgrangemaster'salliance">International Grangemaster's Alliance</router-link></h4>
+      <p>
+        The dense forests of eastern Kandor are not particularly kind to farmers, but nevertheless there are a number of homesteaders in the area who have formed a local grange and supply the town with food as best they can. The grangemaster is a local farmer named Winslow Fredericks.
+      </p>
+      <h4><router-link to="/ref/orgs/illustriousguildofmerchantsandfineartisans">Illustrious Guild of Merchants and Fine Artisans</router-link></h4>
+      <p>
+        The Illustrious Guild controls trade into and out of Cur'Estan, and the vast majority of local merchants are members. The elected guild master is Kendrick O'Malley, a retired timber merchant who gave his business to his son so he could concentrate on his job with the guild.
+      </p>
+      <h4><router-link to="/ref/orgs/theinevitables">The Inevitables</router-link></h4>
+      <p>
+        The Inevitables have no official presence in Cur'Estan, however the reemergence of the Prince of Fiends makes clear that he is in violation of several of the Eternal Laws, and must suffer the consequences. Members would receive their orders from the actual Inevitables via sending.
+      </p>
+      <h4><router-link to="/ref/orgs/keepersofthegrove">Keepers of the Grove</router-link></h4>
+      <p>
+        The Keepers of the Grove do not have an official representative in Cur'Estan, members of the Keepers may confer with the local Archdruid, Aconi Willowbark, if they wish, but he is not a member of the Keepers. Rather they would receive their orders via sending from the Earthmother's Druidic Council in Gnarra.
+      </p>
+      <h4><router-link to="/ref/orgs/lordsoftherisingdawn">Lords of the Rising Dawn</router-link></h4>
+      <p>
+        The Lords of the Rising Dawn are one of the primary factions in Cur'Estan as well as Kandori politics in general. The local general is Duke James Lightbringer. Duke Lightbringer also acts as the official representative and ambassador of the King of Kandor, and serves on General Heartbren's War Council.
+      </p>
+      <h4><router-link to="/ref/orgs/makersoflegend">Makers of Legend</router-link></h4>
+      <p>
+        The Makers of Legend are officially represented in Cur'Estan by Haera Oelefros, a master bard and historian who is determined to write the definitive volumes of the war effort against the orcs, telling the story of how victory was snatched from the jaws of defeat.
+      </p>
+      <h4><router-link to="/ref/orgs/mastersofthedeepsong">Masters of the Deep Song</router-link></h4>
+      <p>
+        The Masters of the Deep Song must officially abide by the decision of the Curinor War Council to withdraw the dwarves from the war effort. Unofficially it is rumored that they have sent agents in disguise to Cur'Estan, hiding among the refugees.
+      </p>
+      <h4><router-link to="/ref/orgs/shepherdsoftheall-mother">Shepherds of the All-Mother</router-link></h4>
+      <p>
+        The Shepherds of the All-Mother do not have an official presence in town, and are considered an illegal organization, but cloaked persons have been seen performing the ceremony of sanctifying the dead after local funerals, and everyone knows if you want to get in contact with a Cleric of Nera, talk to the local undertaker, Gimble Beren.
+      </p>
+      <h4><router-link to="/ref/orgs/silverdragonknights">Silver Dragon Knights</router-link></h4>
+      <p>
+        While The Dragon Emperor is not officially part of the war against the orcs, he recently sent one of his most skilled diplomats to Cur'Estan. Farnor Spiketooth is officially there to observe and advise, but his rather large contingent of 'guards' have been seen training with the Black Wolf Irregulars.
+      </p>
+      <h4><router-link to="/ref/orgs/sylvan'srangers">Sylvan's Rangers</router-link></h4>
+      <p>
+        Sylvan's Rangers do not have chapter houses, but the highest ranking member in town is Vanriel Glamfara, once captain of the guard in Eastguard, then the de facto captain of the guard in Northport when it was evacutated.
+      </p>
+      <h4><router-link to="/ref/orgs/trollkinmercenarycorps">Trollkin Mercenary Corps</router-link></h4>
+      <p>
+        Butch Godtouched leads a local group of Trollkin Mercenaries whose contract was paid for by Empress Dormana. Called Godtouched because she has literally stood in the presence of Gods and come back to tell about it, Butch is a legend among the Trollkin.
+      </p>
+      <h4><router-link to="/ref/orgs/unionofwizard'scolleges">Union of Wizard's Colleges</router-link></h4>
+      <p>
+        Many of the faculty of the Wizard's College in Strovenguard have found refuge in Cur'Estan. The old Dean of Abjuration, Ryvitior Morin, has begun work on a school of wizardry in Cur'Estan, and is actively recruiting magi of all types and skill levels as both students and faculty.
+      </p>
     </div>
   </div>
 </template>
