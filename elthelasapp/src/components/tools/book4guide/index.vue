@@ -11,16 +11,13 @@
         This campaign starts with the players at level 3 and takes them all the way up to level 17 over the course of 14 chapters.
       </p>
       <h3>The State of the World</h3>
-      <p><strong>Gerasalim is in Flames</strong>. The Fortress of Light has fallen, Strovenguard is an occupied city, Eastguard has been reduced to rubble, and Northport is under imminent threat.  The last of the Gerasaline armies have retreated to the Sword Mountains, attacking the orc armies from caves and hidden strong points. </p>
+      <p><strong>Gerasalim is in Flames</strong>. The Fortress of Light has fallen, Strovenguard is an occupied city, Eastguard has been reduced to rubble, and Northport has been evacuated.  The last of the Gerasaline armies have retreated to the Sword Mountains, attacking the orc armies from caves and hidden strong points. </p>
       <p><strong>The Moon Elves are nearly extinct</strong>.  After 2 years of being hunted in their homeland their numbers have been reduced to a few thousand refugees who have fled into Eldoran, Curinor, and Gerasalim.</p>
       <p><strong>The Dwarves have retreated to their holds</strong>.  No major hold has ever fallen to a foreign invader, and the Dwarves have withdrawn their armies to wait out the crisis.</p>
       <p><strong>Eldoran is in civil war</strong>.  The sudden extinction of the royal line and the ascension of the relatively incompetent Derandel to the throne left a massive power vacuum that various local lords have risen to fill.  Only the Waelin region on continental Elathia still fights against the Orcs, now desperate for reinforcements as Orc armies march directly on their borders.</p>
       <p><strong>Kandor faces invasion</strong>.  The Orcs are now on the unfortified southern border of Kandor, sending raids north while they attempt to deal with the remaining Gerasaline armies.</p>
       <p><strong>Into this destruction Gerad Heartbren, last commander of the Black Wolf Irregulars, has put out one last desperate call for recruitment</strong>.  You have answered this call, for reasons of your own, and have travelled to the fortress of Cur’Estan in the woods of Kandor, where the he is gathering the forces that will make a last desperate stand against evil in Elathia.</p>
-      <blockquote>
-        <p class="alert alert-warning">This might change depending on the resolution of the previous campaign.</p>
-        <p><strong>Dormania has withdrawn from the Alliance</strong>. The ascension of Alexandra Ransomir as Dormana I, Empress of Dormania, brings new hope in the east, but her ascension is not uncontested. The slighted second place finisher, Manius Aquila, has raised his flag in rebellion, and the western duchies of Dormania have risen to support him. This has forced the new Empress to hold back the legions and fight a war on her own territory.</p>
-      </blockquote>
+      <p><strong>Dormania has withdrawn from the Alliance</strong>. The ascension of Alexandra Ransomir as Dormana I, Empress of Dormania, brings new hope in the east, but her ascension is not uncontested. The slighted second place finisher, Manius Aquila, has raised his flag in rebellion, and the western duchies of Dormania have risen to support him. This has forced the new Empress to hold back the legions and fight a war on her own territory.</p>
     </div>
     <div id="chapter1startingout">
       <h3>Starting Out</h3>
@@ -54,7 +51,7 @@
         <strong>Step 4: Determine your background</strong> <a ui-sref='app.backgrounds'>You can use the background listing on the site.</a> Backgrounds can be custom built as well.  Talk to your DM if you would like to use a custom background.  Use the guidelines in the Player's Handbook for building any custom background.
       </p>
       <p>
-        <strong>Step 5: Choose your Faction</strong> Players for this campaign are encouraged to start as part of a major faction.  PCs will receive additional orders (and potentially rewards) from faction leaders as part of each major mission.  The faction likely shows up in the characters backstory, and the characters ideals and goals should be closely aligned with the faction they join.  The organizations provide various benefits to players in their adventuring career as well as upholding certain ideals called tenets.  See the <a href='app.organizations'>Organizations page</a> for details on the factions, and the list below for the organizations available as factions to join in this campaign. If none of the prebuilt factions interest you, work with your DM to build a new faction of which you are a part.
+        <strong>Step 5: Choose your Faction</strong> Players for this campaign are encouraged to start as part of a major faction.  Maybe you have been a long-time member of said faction, or you may be a new member at the start of the game. PCs will receive additional orders (and potentially rewards) from faction leaders as part of each major mission.  The faction likely shows up in the characters backstory, and the characters ideals and goals should be closely aligned with the faction they join.  The organizations provide various benefits to players in their adventuring career as well as upholding certain ideals called tenets.  See the <a href='app.organizations'>Organizations page</a> for details on the factions, and the list below for the organizations available as factions to join in this campaign. If none of the prebuilt factions interest you, work with your DM to build a new faction of which you are a part.
       </p>
       <p>
         <strong>Step 6: Detailed Character History </strong> Flesh out your characters history in relation to the events of the world with your DM.  You need to answer a few important questions, make note of each answer, and provide a copy to your DM:
@@ -112,10 +109,10 @@
         Being a part of one of the factions below may require additional work with your DM to develop your characters motivations and reason to be a part of the campaign.
       </p>
       <ul>
-        <li>Alliance of 6 Nations</li>
-        <li>Morrind Brewers' Club</li>
-        <li>Order of the Cleansing Fire</li>
-        <li>Stormlords of Trimala</li>
+        <li>Alliance of 6 Nations - This faction currently has no leadership</li>
+        <li>Morrind Brewers' Club - The Morrind are currently neutral in the war</li>
+        <li>Order of the Cleansing Fire - They want to destroy the elites on both sides of the war</li>
+        <li>Stormlords of Trimala - Most of the campaign will take place in landlocked areas, piracy is not a significant concern.</li>
       </ul>
       <h4>Factions not Available</h4>
       <p>
@@ -129,8 +126,9 @@
         <h3 id="curestan">Cur'Estan</h3>
       <p class="row"><img src="/images/maps/cities/curestan.png" alt="Map of Cur'Estan" class="col-sm-12" id="curestanmap" /></p>
       <p>
-        Cur'Estan was once the fortress capitol of an ancient minor Kandori king, destroyed by Dorman I and left as a ruin in the woods.  20 years ago the Black Wolf Irregulars rebuilt the central castle to serve as their headquarters, and over the twenty years since a small town has sprung up around the castle serving the needs of the castle.  Over the last year, as the orcs have ravaged Demal'Thor, and then moved into Gerasalim, refugees have slowly trickled into the town.  A refugee camp has sprung up on the outskirts, now threatening to outnumber the original residents.
+        Cur'Estan was once the fortress capitol of an ancient minor Kandori king, destroyed by Dorman I and left as a ruin in the woods.  20 years ago the Black Wolf Irregulars rebuilt the central castle to serve as their headquarters, and over the twenty years since a small town has sprung up around the castle serving the needs of the castle.  Over the last year, as the orcs have ravaged Demal'Thor, and then moved into Gerasalim, refugees have slowly trickled into the town.  A refugee camp has sprung up on the outskirts, and after the evacuation of Northport, they greatly outnumber the original residents.
       </p>
+      <h4>Black Wolf Irregulars</h4>
       <p>The de facto ruler of Cur'Estan is General Gerad Heartbren of the Black Wolf Irregulars.  He commands the castle, and roughly 2000 soldiers, the last remains of the Black Wolf Irregulars forces.</p>
       <p>The massive castle, with it's 30 ft thick walls, and 100 ft tall keep towers over the town in the west.  It contains large storehouses, stables, smiths, and fletchers who supply the soldiers.</p>
       <p>
@@ -143,6 +141,25 @@
       <p>
         The southeast, between the town and the refugee camp, sits the permament complex of the Lords of the Rising Dawn.  An order of knights and paladins headquartered in Kaland.  The order has approximately 1000 soldiers garrisoned here in 4 large barracks buildings.
       </p>
+              <li>Amathera's Shield</li>
+        <li>Artificer's of Mechanus</li>
+        <li>Black Sun</li>
+        
+        <li>Blood Brothers</li>
+        <li>Champions of Cora</li>
+        <li>Dormanian Imperial Guard</li>
+        <li>Guild of Heroes</li>
+        <li>International Grangemaster's Alliance</li>
+        <li>Illustrious Guild of Merchants and Fine Artisans</li>
+        <li>Keepers of the Grove</li>
+        <li>Lords of the Rising Dawn</li>
+        <li>Maker's of Legend</li>
+        <li>Masters of the Deep Song</li>
+        <li>Shepherds of the All-Mother</li>
+        <li>Silver Dragon Knights</li>
+        <li>Sylvan's Rangers</li>
+        <li>Trollkin Mercenary Corps</li>
+        <li>Union of Wizard's Colleges</li>
     </div>
   </div>
 </template>
