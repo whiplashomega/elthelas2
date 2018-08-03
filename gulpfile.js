@@ -1,8 +1,9 @@
 var gulp = require('gulp'),
     fs = require('fs');
 var jsonlint = require("gulp-jsonlint");
+var build = require('./elthelasapp/build/build.js');
 
-gulp.task('historyjson', function () {
+gulp.task('historyjson', function (done) {
   var files = fs.readdirSync("./data/historicalevents");
   var historyarray = [];
   files.forEach(function(file) {
@@ -43,10 +44,10 @@ gulp.task('historyjson', function () {
       return true;
     });
   }
-  return true;
+  done();
 });
 
-gulp.task('creaturesjson', function() {
+gulp.task('creaturesjson', function(done) {
   function intersect(arrays) {
     return arrays.shift().filter(function(v) {
       return arrays.every(function(a) {
@@ -160,10 +161,10 @@ gulp.task('creaturesjson', function() {
       return true;
     });
   }
-  return true;  
+  done(); 
 });
 
-gulp.task('spellsjson', function() {
+gulp.task('spellsjson', function(done) {
   function intersect(arrays) {
     return arrays.shift().filter(function(v) {
         return arrays.every(function(a) {
@@ -201,16 +202,17 @@ gulp.task('spellsjson', function() {
       return true;
     });
   }
-  return true;
+  done();
 });
 
-gulp.task('jsonlint', function() {
+gulp.task('jsonlint', function(done) {
   gulp.src("./data/**/*.json")
     .pipe(jsonlint())
     .pipe(jsonlint.reporter());
+  done();
 });
 
-gulp.task('jsoncompile', ['jsonlint'], function() {
+gulp.task('jsoncompile', gulp.parallel('jsonlint'), function(done) {
   function compiledir(sourcedir, destination, modelName) {
     var files = fs.readdirSync(sourcedir);
     var comparray = [];
@@ -265,27 +267,17 @@ gulp.task('jsoncompile', ['jsonlint'], function() {
   compiledir("./data/backgrounds", "./elthelasapp/static/json/backgrounds.json", "Background");
   //classes
   compiledir("./data/classes", "./elthelasapp/static/json/classes.json", "CharClass");
-  return true;
-});
-
-//task groups
-gulp.task('default', ['spellsjson', 'historyjson', 'creaturesjson', 'jsoncompile'], function(done) {
-  console.log("starting build task");
-  require('./elthelasapp/build/build.js');
   done();
 });
 
-//does not include testing
-gulp.task('prod', ['prodcleanup'], function() {
-  
+gulp.task('build', function(done) {
+  console.log("starting build task");
+  build().then(function() {
+    console.log("supposedly done");
+    done();
+  });  
 });
-
-var exec = require('child_process').exec;
- 
-gulp.task('task', function (cb) {
-  exec('npm run unit', function (err, stdout, stderr) {
-    console.log(stdout);
-    console.log(stderr);
-    cb(err);
-  });
+//task groups
+gulp.task('default', gulp.series(gulp.parallel('spellsjson', 'historyjson', 'creaturesjson', 'jsoncompile'), 'build'), function(done) {
+  done();
 });

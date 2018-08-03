@@ -18,6 +18,38 @@
   </p>
   <div id="curestanpeople">
   <h3>Important People in Cur'Estan</h3>
+    <h4>Aconi Willowbark</h4>
+    <p>
+      Archdruid Aconi Willowbark does not concern herself with war or the affairs of men. This tiny halfling turned archdruid is increasingly concerned about the growing population of Cur'Estan, and particularly the effects of that growing population on the surrounding woodlands.
+    </p>
+    <h4>Allison Highwater</h4>
+    <p>
+      Allison was the longtime guild master of the Guild of Heroes in Northport before all of her members fled the orc army, leaving her behind. She stayed to attempt to remove the dangerous magical artifacts the guild had collected before the orcs could arrive and claim them. Successfully doing so, she came to Cur'Estan only a week or so before the larger refugee caravan from Northport. Unlike most of the refugees, she had enough on-hand wealth to begin construction on a new chapter house in town. She is a friend and confidant to Malia Demonslayer, who previously was a member of her guild.
+    </p>
+    <p>
+      <strong>Goals:</strong> Allison is an entrepeneur first and foremost, but one with a good heart. She seeks out contracts that get her people paid but also do good work, typically in the form of hunting some dangerous monster or crazed abberation.
+    </p>
+    <h4>Bero Orcslayer</h4>
+    <p>
+      Bero's Blood Brothers have been recruited in Cur'Estan to keep the peace. Handling the work of criminal investigators in the suddenly massive refugee camp. Bero himself was a soldier for years before being forced into retirement under cloudy circumstances. He joined the blood brothers because he couldn't seem to make it outside of war and fighting. His skill and cunning have earned him promotions, and now he leads the Blood Brothers in Cur'Estan.
+    </p>
+    <p>
+      <strong>Goals:</strong> Bero wants to fight, and knows that most members of his guild are in it for the opportunity to fight as well. The fact that they get paid for it is secondary, as long as they get to do so without getting into too much trouble. He wants to prove to General Heartbren that the Blood Brothers should be sent out into the field, fighting on the front lines with deadly weapons instead of threatening peasants with cudgels and investigating petty crimes.
+    </p>
+    <h4>Butch Godtouched</h4>
+    <p>
+      The leader of the local trollkin contingent asked for the job. While publicly she maintains the neutral face of a trollkin, most trollkin know that she asked for this job, to be in the thick of it fighting for the fate of the world, even if that means fighting other Trollkin hired by the better funded orc armies. Butch has seen Gods go toe-to-toe, she was the only one of those who fought the demi-god Area to return to the material plane. She spent some time after that as a bodyguard for Alexandra Ransomir before she became Empress Dormana, who then signed her contract over to the Black Wolf Irregulars at Butch's request.
+    </p>
+    <p>
+      <strong>Goals:</strong> Butch has changed much since her early life as a typical trollkin mercenary. After working for the party of Rhakheim for so long, she came to believe in their cause, and now picks and chooses her contracts with care. Nevertheless she still believes in the core ethos of the Trollkin: You don't work unless you get paid, but if you get paid, your loyalty remains absolute until they stop paying.
+    </p>
+    <h4>Farnor Spiketooth</h4>
+    <p>
+      Lord of Vasha, Emissary of Valraxa, the Dragon Emperor. Farnor Spiketooth would sow awe around him were he in his homeland. Here in Kandor he is just an oddity. A Dragonborn noble in a land where such things are unheard of. Nevertheless he has General Heartbren's ear, as well as that of his Emperor. Farnor is a skilled diplomat and loyal vassal who shares his masters concerns about the failing war effort in Elathia, but as of yet has been unable to convince Emperor Valraxa that his long policy of non-interference in the Elathian continent is due for revision.
+    </p>
+    <p>
+      <strong>Goals:</strong> Farnor's primary goal is to aid the war effort of the Black Wolf Irregulars, with secondary goals of aiding the cause of metallic dragons in general, and keeping all of his efforts from being discovered by the enemy.
+    </p>
     <h4>Gerad Heartbren</h4>
     <p>
       The now aging Moon Elf general is a gifted strategist and the de facto leader of the resistance forces, as they have come to be known since the dissolution of the Alliance.  His tribe was wiped out by the Orcs shortly after the fall of Aridhem, while he was commanding troops at the Fortress of Light, then he was reassigned to Cur’Estan shortly before the Fortress of Light’s own fall.  He blames himself for not being present for either battle, and is now determined to do better.
@@ -28,17 +60,14 @@
     <p>
       <strong>Dislikes: </strong> Gerad holds a strong distaste for slavery and anything that shares similarities to it, such as serfdom or wage slavery.
     </p>
-    <h4>Duke James Lightbringer</h4>
+    <h4>Gimble Beren</h4>
     <p>
-      Cleric of Alohim, Ambassador of the King of Kandor, and Commander of the Kandori armies in the east, Lightbringer is a leader of the Lords of the Rising Dawn.  He has a thousand Kandori soldiers at his command, and a contingent of skilled Paladins dedicated above all to wiping out the Orcs.  Despite all the setbacks, General Lightbringer remains constantly optimistic about their chances of success.
+      To the average person Gimble Beren is just the local undertaker. In secret he is the local leader of the Shepherds of the All-Mother, a cleric of Nera trained in Albeliath.
     </p>
     <p>
-      <strong>Goals: </strong> Duke Lightbringer is a loyal vassal of the Kandori king, and will not rebel against his leige lord.  He is dedicated to ensuring the security of Kandor's borders, and wants to wipe out the Orc race. 
+      Goals: Like many of the undercover clerics of Nera throughout the realms, Gimble's goals are to provide the rights of passage to the deceased, despite the stigma attached to it, and to break down the stigma and hatred around the worship of Nera stemming from the Nerim cataclysm.
     </p>
-    <p>
-      <strong>Dislikes: </strong> Duke Lightbringer is a strong believer in the divine right to rule, and does not like that a common born person such as General Heartbren is in command at Cur'Estan.  He hates non-humans, particularly the green-skin races such as orcs and goblins, but has no love lost for elves, dwarves, halflings, or gnomes either.
-    </p>
-    <h4>Master Bard Haera Oelefros</h4>
+    <h4>Haera Oelefros</h4>
     <p>
       Haera Oelefros has led the Makers of Legend in Kandor for 15 years, and is convinced that the next grand story for the ages will come from the exploits of the resistance members.  She has brought a small contingent of bards with her to document what is going on, embedding them in various units she hopes will prove legendary.
     </p>
@@ -50,6 +79,23 @@
     </p>
     <p>
       <strong>Dislikes: </strong> Anyone who she thinks is more important than her.
+    </p>
+    <h4>James Lightbringer</h4>
+    <p>
+      Cleric of Alohim, Ambassador of the King of Kandor, and Commander of the Kandori armies in the east, Lightbringer is a leader of the Lords of the Rising Dawn.  He has a thousand Kandori soldiers at his command, and a contingent of skilled Paladins dedicated above all to wiping out the Orcs.  Despite all the setbacks, General Lightbringer remains constantly optimistic about their chances of success.
+    </p>
+    <p>
+      <strong>Goals: </strong> Duke Lightbringer is a loyal vassal of the Kandori king, and will not rebel against his leige lord.  He is dedicated to ensuring the security of Kandor's borders, and wants to wipe out the Orc race. 
+    </p>
+    <p>
+      <strong>Dislikes: </strong> Duke Lightbringer is a strong believer in the divine right to rule, and does not like that a common born person such as General Heartbren is in command at Cur'Estan.  He hates non-humans, particularly the green-skin races such as orcs and goblins, but has no love lost for elves, dwarves, halflings, or gnomes either.
+    </p>
+    <h4>Kendrick O'Malley</h4>
+    <p>
+      Kendrick has lived in Cur'Estan his whole life, starting his career by brokering deals between local lumberjacks and travelling merchants before taking over the local mill. He has since left that business to his son to manage his job as the local Guildmaster of the Illustrious Guild of Merchants and Fine Artisans, a job he takes very seriously. Kendrick is a small man, but a fierce negotiator, and his ready wit and smile hide a cut throat political mind that has driven many want to be challengers who refused the Guild's overtures out of business.
+    </p>
+    <p>
+      <strong>Goals:</strong> Kendrick's primary concern is maintaining the primacy of the Guild in all trade that flows into and out of Cur'Estan. He regularly curates business opportunities that he then passes on to guild members in a position to take advantage of them. His skill at this has earned him the ready loyalty of the local merchants, many of which owe their start to his guidance.
     </p>
     <h4>Kyman Hexhammer</h4>
     <p>
@@ -67,6 +113,59 @@
     <p>
       <strong>Dislikes:</strong> People who worry too much about honor and let it get in the way of getting things done (or his future wealth).  Anyone who fails to pay him for services rendered.
     </p>
+    <h4>Jaxan Chin</h4>
+    <p>
+      Jaxan is a cleric of Amathera, and the previous leader of Amathera's Shield before being displaced by Malia Demonslayer.  Jaxan is not actually a particularly skilled or important cleric, but Amathera's Shield is short-handed in the extreme, and he was the highest ranking member they had available to assign to Cur'Estan.
+    </p>
+    <p>
+      Jaxan is good-hearted, and while he is not a skilled cleric, he is a skilled administrator, and the camp he runs hums along with minimal friction.  He is regularly at odds with Wyrmling, who hates giving valuable supplies to the refugees, even though General Heartbren ordered that all necessary supplies be made available.
+    </p>
+    <h4>Malia Demonslayer</h4>
+    <p>
+      The cleric turned wizard abberation hunter turned administrator who earned her name defeating a Rhakshasa, a rare feat for a wizard. Malia has returned to her roots in the Church of Amathera to aid those most in need. She had been working out of Northport as a monster hunter with the Guild of Heroes when the Duke fled the city. She offered help to the local council and soon found herself in charge of the city by virtue of being the last one willing to try. When she arrived in Cur'Estan she displaced Jaxan Chin by virtue of being recognized as the leader by the vast horde of refugees who followed her there, and the unwillingness of those of lesser rank to go against her will.
+    </p>
+    <p>
+      She is a friend and confidant of Allison Highwater, the old guildmaster of the Guild of Heroes in Northport, who is now attempting to rebuild that guild in Cur'Estan.
+    </p>
+    <h4>Margo</h4>
+    <p>
+      No one really knows much about Margo except that she showed up in town about a month ago and quickly showed off a skill in magic no one else in town had.  She set up shop selling magic items for a premium price.  She seems to dislike personal attachments, and never really visibly leaves her house/shop.  No one really knows where she gets materials, where she stores her goods for sale, or really anything else about her.
+    </p>
+    <p>
+      In reality Margo is an archmage from Stagenheim who has been travelling the world selling magical items for years.  For safety she does not keep any of her stock on this plane of existence, a tactic she started when she tried for a time to run her business via mail-order catalog.  She is deeply concerned by the Prince of Fiends success, and so has decided to ply her trade among those most likely to do some good in the fight against him.  She has no desire to get into any sort of combat herself, but will defend her shop if it is attacked.
+    </p>
+    <h4>Ogrun Firebreath</h4>
+    <p>
+      Ogrun to outside appearances is an old drunk dwarf refugee. Known only to those who are members of the Order of the Deep Song, he is a Master Singer in that organization, skilled at infiltration and espionage. He is the local contact for members of that order.
+    </p>
+    <p>
+      Goals: To aid expat dwarves escape the orcs and to make sure no orc ever steps into a dwarven hold.
+    </p>
+    <h4>Ryvitior Morin</h4>
+    <p>
+      Headmaster Ryvitior was the Dean of Abjuration at the Wizard's College of Strovenguard before the city fell. He managed to escape the city with several other faculty, and through various events found himself in Cur'Estan. Never one to rest on his laurels, Ryvitior set about creating a new college, recruiting students from the local populace and the many refugees. Ryvitior is almost the ultimate stereotypical sage wizard, in his early 70s, he sports a long white beard, spectacles, and is constantly buried in his books in the tiny office he calls home at the top of the 3 story wooden building that makes up the whole of his fledgling Schwarzhund School of the Arcane Arts.
+    </p>
+    <p>
+      Goals: Ryvitior is a teacher first and a researcher second, without much room for other concerns. He spends most of his days tutoring students, and regularly sends his most experienced students on research expeditions seeking ancient knowledge, interesting artifacts, or rare books.
+    </p>
+    <h4>Theodore Gloryheart</h4>
+    <p>
+      The legend in the flesh, Theodore Gloryheart is reknowned as the Dormanian General who turned back the last orc warlord to unite a large portion of Malinval and attack the Alliance of 6 Nations. Though of common birth, he was granted an Archduchy by the Emperor, and was the instrumetal vote in putting Alexandra Ransomir on the throne, withdrawing his own claim to support her. Now he serves as an 'ambassador' to the Black Wolf Irregulars, but more as a general without an army besides a few members of the Dormanian Imperial Guard he was able to bring with him, men and women utterly loyal to the Empress.
+    </p>
+    <h4>Vanriel Glamfara</h4>
+    <p>
+      Vanriel came to Cur'Estan at the head of a ragtag group of soldiers and city-guard, some of which had followed her since her time as Captain of the Watch in Eastguard. The motley group now trains with the Black Wolf Irregulars, a group that ironically just a few years ago expelled Vanriel under suspicion of collaboration with the enemy, charges that have long since been expunged. Her heroism at the battles of Zelfin, Eastguard, and Northport have spread ahead of her despite her humble nature. Now she leads the Black Wolf Irregulars scouts.
+    </p>
+    <p>
+      Goals: Vanriel's goal for a very long time was to support her family after her father fell ill. Today she has lost contact with them, and fears the worst, but spends most of her time trying to protect the men in her unit and the people they are responsible for.
+    </p>
+    <h4>Winslow Fredericks</h4>
+    <p>
+      Winslow is not quick of speech or ready of wit, but he is a farmer, through and through. As head of the local grange it is his job to represent the local farmers in advising the local ruler, in this case General Heartbren. He doesn't much like the job, but he was duly elected by the Grange members, so he does it anyway.
+    </p>
+    <p>
+      Goals: To make sure local farmers are able to make ends meet and feed the people.
+    </p>
     <h4>Quartermaster Wyrmling Trapsmith</h4>
     <p>
       The tiny kobold quartermaster was once an Orc slave before escaping.  He has proven himself incredibly adept at numbers and organization of supplies.  He is incredibly loyal to General Heartbren, who liberated his mine from the orcs.  His clan now controls a silver mine in the Dragons Teeth Mountains, just on the Demal'Thor side of the border.
@@ -77,23 +176,6 @@
     <p>
       <strong>Goals: </strong> Secure a ready supply of food and weapons for Cur’Estan.  Make sure the number of mouths to feed doesn’t exceed the available supplies.
     </p>
-    <p>
-      <strong>Dislikes: </strong> Refugees (or anyone) who doesn’t contribute meaningfully to the community.
-    </p>
-    <h4>Margo</h4>
-    <p>
-      No one really knows much about Margo except that she showed up in town about a month ago and quickly showed off a skill in magic no one else in town had.  She set up shop selling magic items for a premium price.  She seems to dislike personal attachments, and never really visibly leaves her house/shop.  No one really knows where she gets materials, where she stores her goods for sale, or really anything else about her.
-    </p>
-    <p>
-      In reality Margo is an archmage from Stagenheim who has been travelling the world selling magical items for years.  For safety she does not keep any of her stock on this plane of existence, a tactic she started when she tried for a time to run her business via mail-order catalog.  She is deeply concerned by the Prince of Fiends success, and so has decided to ply her trade among those most likely to do some good in the fight against him.  She has no desire to get into any sort of combat herself, but will defend her shop if it is attacked.
-    </p>
-    <h4>Jaxan Chin</h4>
-    <p>
-      Jaxan is a cleric of Amathera, and the local leader of Amathera's Shield, the organization running the refugee camp.  Jaxan is not actually a particularly skilled or important cleric, but Amathera's Shield is short-handed in the extreme, and he was the highest ranking member they had available to assign to Cur'Estan.
-    </p>
-    <p>
-      Jaxan is good-hearted, and while he is not a skilled cleric, he is a skilled administrator, and the camp he runs hums along with minimal friction.  He is regularly at odds with Wyrmling, who hates giving valuable supplies to the refugees, even though General Heartbren ordered that all necessary supplies be made available.
-    </p>    
   </div>
   <div id="curestanlocations">
     <h3>Locations in Cur'Estan</h3>

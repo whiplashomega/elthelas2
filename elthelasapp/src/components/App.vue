@@ -7,6 +7,7 @@
         <router-view class="view one col-sm-10"></router-view>
       </div>
     </div>
+    <footer-comp />
   </div>
 </template>
 <style src="./scss/globalstyles.scss" lang="scss">
@@ -15,12 +16,14 @@
 <script>
 
 import headercomponent from './header/headercomponent';
+import FooterComp from '@/components/footer';
 import { mapGetters } from 'vuex';
 
 export default {
   name: 'app',
   components: {
-    headercomponent
+    headercomponent,
+    FooterComp
   },
   computed: mapGetters({
     weapons: 'allWeapons',
