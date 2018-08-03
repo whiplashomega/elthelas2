@@ -94,6 +94,7 @@
         <li>Guild of Heroes</li>
         <li>International Grangemaster's Alliance</li>
         <li>Illustrious Guild of Merchants and Fine Artisans</li>
+        <li>Inevitables</li>
         <li>Keepers of the Grove</li>
         <li>Lords of the Rising Dawn</li>
         <li>Makers of Legend</li>

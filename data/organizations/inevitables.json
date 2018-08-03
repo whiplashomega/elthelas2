@@ -9,11 +9,11 @@
     
   ],
   "tenets": [
-    "The 5 most important laws of order are be strickly enforced. These laws are: \n\n*The law of oaths - That all oaths are inevitably kept.\n*The law of Justice - That all who escape justice will inevitably be face it.\n*The law of Death - That all who live will Inevitably die.\n*The law of Godhood - That all who attempt to attain Godhood shall Inevitably fail.\n*The law of Space and Time - That all who attempt to Alter Fate will inevitably meet that same fate.",
+    "The 5 most important laws of order are be strickly enforced. These laws are: \n\n* The law of oaths - That all oaths are inevitably kept.\n* The law of Justice - That all who escape justice will inevitably be face it.\n* The law of Death - That all who live will Inevitably die.\n* The law of Godhood - That all who attempt to attain Godhood shall Inevitably fail.\n* The law of Space and Time - That all who attempt to Alter Fate will inevitably meet that same fate.",
     "Your goals are Inevitable, nothing will stop the goal from being fulfilled.",
     "Those who are set to be punished, whether they are to be captured or killed, will meet that exact fate.",
     "Those who are innocent of any crime cannot be harmed by you, or coerced into crime."
   ],
   "level1": "Robotic implants - You gain darkvision up to 60ft. If you already have darkvision, the vision distance is doubled.",
-  "level10": "You can Locate Creature once a day."
+  "level10": "You can cast Locate Creature once a day without expending a spell slot."
 }
