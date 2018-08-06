@@ -24,6 +24,8 @@ var newCharacter = function() {
         allies: "",
         backstory: "",
         bond: "",
+        personality: "",
+        notes: "",
         god: "",
         skin: "",
         skills: [

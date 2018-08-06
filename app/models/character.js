@@ -25,6 +25,8 @@ var Character = new Schema({
   allies: { type: String, default: "" },
   backstory: { type: String, default: "" },
   bond: { type: String, default: "" },
+  personality: { type: String, default: "" },
+  notes: { type: String, default: "" },
   eyes: { type: String, default: "" },
   skin: { type: String, default: "" },
   size: { type: String, default: "medium" },
