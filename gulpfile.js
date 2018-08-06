@@ -1,5 +1,7 @@
 var gulp = require('gulp'),
     fs = require('fs');
+var console = {};
+console.log = require('fancy-log');
 var jsonlint = require("gulp-jsonlint");
 var build = require('./elthelasapp/build/build.js');
 
@@ -41,10 +43,10 @@ gulp.task('historyjson', function (done) {
   });
   if(historyarray.length === files.length) {
     fs.writeFile("./elthelasapp/static/json/history.json", JSON.stringify({ "model": "History", "documents": historyarray}), "utf-8", function() {
-      return true;
+      console.log("writing history.json");
+      done();
     });
   }
-  done();
 });
 
 gulp.task('creaturesjson', function(done) {
@@ -158,10 +160,10 @@ gulp.task('creaturesjson', function(done) {
   });
   if(creaturearray.length === files.length) {
     fs.writeFile("./elthelasapp/static/json/creatures.json", JSON.stringify({ "model": "Creature", "documents": creaturearray }), "utf-8", function() {
-      return true;
+      console.log("writing creatures.json");
+      done(); 
     });
   }
-  done(); 
 });
 
 gulp.task('spellsjson', function(done) {
@@ -199,10 +201,10 @@ gulp.task('spellsjson', function(done) {
   });
   if(spellarray.length === files.length) {
     fs.writeFile("./elthelasapp/static/json/spells.json", JSON.stringify({ "model": "Spell", "documents": spellarray }), "utf-8", function() {
-      return true;
+      console.log("writing spells.json");
+      done();
     });
   }
-  done();
 });
 
 gulp.task('jsonlint', function(done) {
@@ -212,8 +214,8 @@ gulp.task('jsonlint', function(done) {
   done();
 });
 
-gulp.task('jsoncompile', gulp.parallel('jsonlint'), function(done) {
-  function compiledir(sourcedir, destination, modelName) {
+function compiledir(sourcedir, destination, modelName) {
+  return new Promise(function(resolve) {
     var files = fs.readdirSync(sourcedir);
     var comparray = [];
     files.forEach(function(file) {
@@ -226,48 +228,45 @@ gulp.task('jsoncompile', gulp.parallel('jsonlint'), function(done) {
       }
     });
     fs.writeFile(destination, JSON.stringify({ "model": modelName, "documents": comparray }), "utf-8", function() {
-      return true;
-    });
-  }
-  function jsonmin(sourcefile, destination) {
+      console.log("writing " + destination);
+      resolve();
+    });      
+  });
+}
+
+function jsonmin(sourcefile, destination) {
+  console.log("starting " + destination);
+  return new Promise(function(resolve) {
     var jsfile = JSON.parse(fs.readFileSync(sourcefile, 'utf-8'));
     fs.writeFile(destination, JSON.stringify(jsfile), 'utf-8', function() {
-      return true;
+      console.log("writing " + destination);
+      resolve();
     });
-  }
-  //feats
-  jsonmin('./data/feats.json', './elthelasapp/static/json/feats.json');
-  //weapons
-  jsonmin('./data/weapons.json', './elthelasapp/static/json/weapons.json');
-  //armor
-  jsonmin('./data/armor.json', './elthelasapp/static/json/armor.json');
-  //equipment
-  jsonmin('./data/equipment.json', './elthelasapp/static/json/equipment.json');
-  //magic items
-  jsonmin('./data/magicitems.json', './elthelasapp/static/json/magicitems.json');
-  //gods
-  compiledir("./data/gods", "./elthelasapp/static/json/gods.json", "God");
-  //races
-  compiledir("./data/races", "./elthelasapp/static/json/races.json", "Race");
-  //organizations
-  compiledir("./data/organizations", "./elthelasapp/static/json/organizations.json", "Organization");
-  //divines
-  compiledir("./data/divines", "./elthelasapp/static/json/divines.json", "Divine");
-  //cities
-  compiledir("./data/cities", "./elthelasapp/static/json/cities.json", "City");
-  //continents
-  compiledir("./data/continents", "./elthelasapp/static/json/continents.json", "Continent");
-  //features
-  compiledir("./data/features", "./elthelasapp/static/json/features.json", "Feature");
-  //landmarks
-  compiledir("./data/landmarks", "./elthelasapp/static/json/landmarks.json", "Landmark");
-  //nations
-  compiledir("./data/nations", "./elthelasapp/static/json/nations.json", "Nation");
-  //backgrounds
-  compiledir("./data/backgrounds", "./elthelasapp/static/json/backgrounds.json", "Background");
-  //classes
-  compiledir("./data/classes", "./elthelasapp/static/json/classes.json", "CharClass");
-  done();
+  })
+}
+  
+gulp.task('jsoncompile', function(done) {
+  console.log("starting");
+  Promise.all([
+    jsonmin('./data/feats.json', './elthelasapp/static/json/feats.json'), //weapons
+    jsonmin('./data/weapons.json', './elthelasapp/static/json/weapons.json'), //armor
+    jsonmin('./data/armor.json', './elthelasapp/static/json/armor.json'), //equipment
+    jsonmin('./data/equipment.json', './elthelasapp/static/json/equipment.json'), //magic items
+    jsonmin('./data/magicitems.json', './elthelasapp/static/json/magicitems.json'), //gods
+    compiledir("./data/gods", "./elthelasapp/static/json/gods.json", "God"), //races
+    compiledir("./data/races", "./elthelasapp/static/json/races.json", "Race"), //organizations
+    compiledir("./data/organizations", "./elthelasapp/static/json/organizations.json", "Organization"), //divines
+    compiledir("./data/divines", "./elthelasapp/static/json/divines.json", "Divine"), //cities
+    compiledir("./data/cities", "./elthelasapp/static/json/cities.json", "City"), //continents
+    compiledir("./data/continents", "./elthelasapp/static/json/continents.json", "Continent"), //features
+    compiledir("./data/features", "./elthelasapp/static/json/features.json", "Feature"), //landmarks
+    compiledir("./data/landmarks", "./elthelasapp/static/json/landmarks.json", "Landmark"), //nations
+    compiledir("./data/nations", "./elthelasapp/static/json/nations.json", "Nation"), //backgrounds
+    compiledir("./data/backgrounds", "./elthelasapp/static/json/backgrounds.json", "Background"), //classes
+    compiledir("./data/classes", "./elthelasapp/static/json/classes.json", "CharClass")]).then(function() {
+      console.log("all finished");
+      done();
+    });
 });
 
 gulp.task('build', function(done) {
@@ -278,6 +277,4 @@ gulp.task('build', function(done) {
   });  
 });
 //task groups
-gulp.task('default', gulp.series(gulp.parallel('spellsjson', 'historyjson', 'creaturesjson', 'jsoncompile'), 'build'), function(done) {
-  done();
-});
+gulp.task('default', gulp.series('jsonlint', gulp.parallel('spellsjson', 'historyjson', 'creaturesjson', 'jsoncompile'), 'build'));

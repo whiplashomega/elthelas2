@@ -15,22 +15,6 @@
                 Player
               </div>
               <div class="col">
-                <div class="charsheet-text">{{classtext()}}</div>
-                Class(es)
-              </div>
-            </div>
-            <!-- Race, Background, Alignment -->
-            <div class="row">
-              <div class="col-4">
-                <select @change="setRaceDefaults()" v-model="character.race" class="charsheet-text">
-                  <option :value="character.race">{{character.race.singular}}</option>
-                  <option v-for="race in races" v-bind:key="race.id" :value="race">
-                    {{race.singular}}
-                  </option>
-                </select>
-                Race
-              </div>
-              <div class="col-4">
                 <select v-model="character.background" class="charsheet-text">
                   <option :value="character.background">{{character.background.name}}</option>
                   <option v-for="background in backgrounds" :value="background"
@@ -40,19 +24,21 @@
                 </select>
                 Background
               </div>
-              <div class="col-4">
-                <select v-model="character.alignment" class="charsheet-text">
-                  <option value="Lawful Good">Lawful Good</option>
-                  <option value="Neutral Good">Neutral Good</option>
-                  <option value="Chaotic Good">Chaotic Good</option>
-                  <option value="Lawful Neutral">Lawful Neutral</option>
-                  <option value="Neutral">Neutral</option>
-                  <option value="Chaotic Neutral">Chaotic Neutral</option>
-                  <option value="Lawful Evil">Lawful Evil</option>
-                  <option value="Neutral Evil">Neutral Evil</option>
-                  <option value="Chaotic Evil">Chaotic Evil</option>
+            </div>
+            <!-- Race, Background, Alignment -->
+            <div class="row">
+              <div class="col-6">
+                <select @change="setRaceDefaults()" v-model="character.race" class="charsheet-text">
+                  <option :value="character.race">{{character.race.singular}}</option>
+                  <option v-for="race in races" v-bind:key="race.id" :value="race">
+                    {{race.singular}}
+                  </option>
                 </select>
-                Alignment
+                Race
+              </div>
+              <div class="col-6">
+                <div class="charsheet-text">{{classtext()}}</div>
+                Class(es)
               </div>
             </div>
             <!-- Faction, Home Country, Home Town -->
@@ -84,32 +70,6 @@
             </div>
           </div>
           <div class="col-3"><img src="/static/images/ddlogo.png" class="ddlogo" /></div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <input type="text" class="charsheet-text" v-model="character.age">
-            Age
-          </div>
-          <div class="col">
-            <input type="text" class="charsheet-text" v-model="character.gender">
-            Gender
-          </div>
-          <div class="col">
-            <input type="text" class="charsheet-text" v-model="character.height">
-            Height
-          </div>
-          <div class="col">
-            <input type="text" class="charsheet-text" v-model="character.weight">
-            Weight
-          </div>
-          <div class="col">
-            <input type="text" class="charsheet-text" v-model="character.eyes">
-            Eyes
-          </div>
-          <div class="col">
-            <input type="text" class="charsheet-text" v-model="character.skin">
-            Skin
-          </div>
         </div>
         <div class="row">
           <div class="col-7">
@@ -807,17 +767,68 @@
             </div>
           </div>
         </div>
-        <!-- Personality -->
+        <!-- Fluff Details -->
         <div class="row">
-          My traits
-          Brave/Coward
-          Merciful/Unforgiving
-          Religious/Unreligious
-          Generous/Greedy
-          Relaxed/Neurotic
-          Talkative/Taciturn
-          Bookish/Simple
-          Careful/Foolish
+          <div class="col-3">
+            <input type="text" class="charsheet-text" v-model="character.name" />
+            Name
+          </div>
+          <div class="col-3">
+            <input type="text" class="charsheet-text" v-model="character.gender">
+            Gender
+          </div>
+          <div class="col-3">
+            <input type="text" class="charsheet-text" v-model="character.god">
+            God Worshipped
+          </div>
+          <div class="col-3">
+            <select v-model="character.alignment" class="charsheet-text">
+              <option value="Lawful Good">Lawful Good</option>
+              <option value="Neutral Good">Neutral Good</option>
+              <option value="Chaotic Good">Chaotic Good</option>
+              <option value="Lawful Neutral">Lawful Neutral</option>
+              <option value="Neutral">Neutral</option>
+              <option value="Chaotic Neutral">Chaotic Neutral</option>
+              <option value="Lawful Evil">Lawful Evil</option>
+              <option value="Neutral Evil">Neutral Evil</option>
+              <option value="Chaotic Evil">Chaotic Evil</option>
+            </select>
+            Alignment
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="charsheet-text" v-model="character.age">
+            Age
+          </div>
+          <div class="col">
+            <input type="text" class="charsheet-text" v-model="character.height">
+            Height
+          </div>
+          <div class="col">
+            <input type="text" class="charsheet-text" v-model="character.weight">
+            Weight
+          </div>
+          <div class="col">
+            <input type="text" class="charsheet-text" v-model="character.hair">
+            Hair
+          </div>
+          <div class="col">
+            <input type="text" class="charsheet-text" v-model="character.eyes">
+            Eyes
+          </div>
+          <div class="col">
+            <input type="text" class="charsheet-text" v-model="character.skin">
+            Skin
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="charsheet-static">
+              <h5>Allies and Organizations</h5>
+              <textarea v-model="character.allies" class="charsheet-textarea smalltext"></textarea>
+            </div>
+          </div>
         </div>
         <!-- Party Bond -->
         <!-- Family -->

@@ -23,6 +23,7 @@
     "sitemap": "^1.13.0"
   },
   "devDependencies": {
+    "fancy-log": "^1.3.2",
     "gulp": "^4.0.0",
     "gulp-cli": "^2.0.1",
     "gulp-jsonlint": "^1.2.1"

@@ -20,6 +20,11 @@ var newCharacter = function() {
         weight: "",
         gender: "",
         eyes: "",
+        hair: "",
+        allies: "",
+        backstory: "",
+        bond: "",
+        god: "",
         skin: "",
         skills: [
           { name: "Acrobatics", prof: 0, stat: 1, magic: 0 },
