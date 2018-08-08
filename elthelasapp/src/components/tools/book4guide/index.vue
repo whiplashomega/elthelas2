@@ -2,10 +2,10 @@
   <div>
     <div id="theworld">
       <p>
-        The campaign starts on the 18th of Trimala, 1846 YFC.  Roughly five months after the end of the Dormanian succession crisis. For details about the history of Elthelas, please see the <a ui-sref="app.history">History page</a>. For details on the calendar system, see the <a ui-sref="app.calendar">Calendar page</a>.
+        The campaign starts on the 18th of Trimala, 1846 YFC.  Roughly five months after the end of the Dormanian succession crisis. For details about the history of Elthelas, please see the <router-link to="/geo">History page</router-link>. For details on the calendar system, see the <router-link to="/ref/calendar">Calendar page</router-link>.
       </p>
       <p>
-        For details about the world itself, see the <a ui-sref="app.geo">Geography page</a>. Players may also be interested in information on the <a ui-sref="app.gods">Gods</a>, <a ui-sref="app.divines">Lesser Divines</a>, and <a ui-sref="app.cosmology">Planar Cosmology</a> of the setting.
+        For details about the world itself, see the <router-link to="/geo">Geography page</router-link>. Players may also be interested in information on the <router-link t="/ref/gods">Gods</router-link>, <router-link to="/ref/divines">Lesser Divines</router-link>, and <router-link to="/ref/cosmology">Planar Cosmology</router-link> of the setting.
       </p>
       <p>
         This campaign starts with the players at level 3 and takes them all the way up to level 17 over the course of 14 chapters.
@@ -29,7 +29,7 @@
         Players should use the following guidelines for building their characters.
       </p>
       <p>
-        <strong>Step 1: Pick a Race</strong> <a ui-sref='app.races'>Use the race list on this site.</a>  Note that known languages have been removed from racial entries, languages known will be determined later.
+        <strong>Step 1: Pick a Race</strong> <router-link to="/options/races">Use the race list on this site.</router-link>  Note that known languages have been removed from racial entries, languages known will be determined later.
       </p>
       <p>
         <strong>Step 2: Determine Ability Scores</strong> You can choose between a 30 pt point buy (max 16) or roll 4d6 (pick 3) 6 times and then assign them to ability scores.  If you use a point buy, use the following table to determine the cost of any particular ability score (before racial adjustment):
@@ -45,19 +45,19 @@
         </tbody>
       </table>
       <p>
-        <strong>Step 3: Choose a Class</strong> <a ui-sref='app.classes'>Use the class list on this site.</a> If the class or subclass details are not listed on the site they are available in the Players Handbook or the D&D supplement book listed on the page.  If you do not have access to a copy of the particular book talk to your DM.
+        <strong>Step 3: Choose a Class</strong> <router-link to="/options/class">Use the class list on this site.</router-link> If the class or subclass details are not listed on the site they are available in the Players Handbook or the D&D supplement book listed on the page.  If you do not have access to a copy of the particular book talk to your DM.
       </p>
       <p>
-        <strong>Step 4: Determine your background</strong> <a ui-sref='app.backgrounds'>You can use the background listing on the site.</a> Backgrounds can be custom built as well.  Talk to your DM if you would like to use a custom background.  Use the guidelines in the Player's Handbook for building any custom background.
+        <strong>Step 4: Determine your background</strong> <router-link to="/options/backgrounds">You can use the background listing on the site.</router-link> Backgrounds can be custom built as well.  Talk to your DM if you would like to use a custom background.  Use the guidelines in the Player's Handbook for building any custom background.
       </p>
       <p>
-        <strong>Step 5: Choose your Faction</strong> Players for this campaign are encouraged to start as part of a major faction.  Maybe you have been a long-time member of said faction, or you may be a new member at the start of the game. PCs will receive additional orders (and potentially rewards) from faction leaders as part of each major mission.  The faction likely shows up in the characters backstory, and the characters ideals and goals should be closely aligned with the faction they join.  The organizations provide various benefits to players in their adventuring career as well as upholding certain ideals called tenets.  See the <a href='app.organizations'>Organizations page</a> for details on the factions, and the list below for the organizations available as factions to join in this campaign. If none of the prebuilt factions interest you, work with your DM to build a new faction of which you are a part.
+        <strong>Step 5: Choose your Faction</strong> Players for this campaign are encouraged to start as part of a major faction.  Maybe you have been a long-time member of said faction, or you may be a new member at the start of the game. PCs will receive additional orders (and potentially rewards) from faction leaders as part of each major mission.  The faction likely shows up in the characters backstory, and the characters ideals and goals should be closely aligned with the faction they join.  The organizations provide various benefits to players in their adventuring career as well as upholding certain ideals called tenets.  See the <router-link to="/ref/orgs">Organizations page</router-link> for details on the factions, and the list below for the organizations available as factions to join in this campaign. If none of the prebuilt factions interest you, work with your DM to build a new faction of which you are a part.
       </p>
       <p>
         <strong>Step 6: Detailed Character History </strong> Flesh out your characters history in relation to the events of the world with your DM.  You need to answer a few important questions, make note of each answer, and provide a copy to your DM:
       </p>
       <ul>
-        <li><a ui-sref='app.geo'>Where are they from?</a></li>
+        <li><router-link to="/geo">Where are they from?</router-link></li>
         <li>They are starting the campaign at level 3, which means they have some history and skill already.  What have they done in the past?</li>
         <li>Where were they before the start of the campaign?</li>
         <li>Do they have family or friends somewhere that they care about? Who are their parents? How has their family affected their life?</li>
@@ -71,17 +71,17 @@
         While you are coming up with these answers, talk to the other players. Find ways to incorporate one or more of them into your backstory. Are you from the same town? Were you both wronged by a common enemy? Maybe you served together in the military, or aided eachother on a previous adventure! The possibilities are limitless.
       </p>
       <p>
-        <strong>Step 7: Languages Known</strong> Determine what languages your character knows.  See the <a ui-sref='app.languages'>Languages page</a> for details on what and how many languages your character knows.  All PCs should know Imperial from some means, whether by being from a country that speaks it normally, or by getting it through a background, racial, or ability score based bonus language. <em>Imperial will be the lingua franca of the campaign, and not knowing it will be a major hindrance to your character.</em>
+        <strong>Step 7: Languages Known</strong> Determine what languages your character knows.  See the <router-link to="/options/languages">Languages page</router-link> for details on what and how many languages your character knows.  All PCs should know Imperial from some means, whether by being from a country that speaks it normally, or by getting it through a background, racial, or ability score based bonus language. <em>Imperial will be the lingua franca of the campaign, and not knowing it will be a major hindrance to your character.</em>
       </p>
       <p>
         <strong>Step 8: Level up Your Character</strong> Your character should be level 3 at the start of the campaign, so level up your character appropriately according to your chosen class. Multiclassing may be allowed with DM approval, for the rules of multiclassing, see the Player's Handbook.
       </p>
       <p>
-        <strong>Step 9: Choose your Equipment</strong> Ignore the equipment provided by your class.  In addition to the equipment provided by your background and potentially your faction, you start with 500 gp worth of equipment.  Players can use this to purchase armor, weapons, adventuring gear, mounts or common magic items (see the <a ui-sref="app.quickref">Quick Reference Manual</a> for listings and prices).
+        <strong>Step 9: Choose your Equipment</strong> Ignore the equipment provided by your class.  In addition to the equipment provided by your background and potentially your faction, you start with 500 gp worth of equipment.  Players can use this to purchase armor, weapons, adventuring gear, mounts or common magic items (see the <router-link to="/ref/quick">Quick Reference Manual</router-link> for listings and prices).
       </p>
       <h4>Organizations Available for Players to Join</h4>
       <p>
-        The following factions are available for player characters to be a part of at the start of the campaign. See the <a ui-sref="app.organizations" >Organizations</a> page for details about each faction.
+        The following factions are available for player characters to be a part of at the start of the campaign. See the <router-link to="/ref/orgs">Organizations</router-link> page for details about each faction.
       </p>
       <ul>
         <li>Amathera's Shield</li>
