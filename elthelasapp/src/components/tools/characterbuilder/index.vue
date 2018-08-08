@@ -833,6 +833,14 @@
         <div class="row">
           <div class="col">
             <div class="charsheet-static">
+              <h5>Family</h5>
+              <textarea v-model="character.family" class="charsheet-textarea smalltext"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="charsheet-static">
               <h5>Backstory</h5>
               <textarea v-model="character.backstory" class="charsheet-textarea smalltext"></textarea>
             </div>

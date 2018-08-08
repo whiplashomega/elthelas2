@@ -1,4 +1,4 @@
-# Chapter 2: Escape from Northport
+# Chapter 2: Sealed
 
 ## Preparation
 
@@ -7,7 +7,7 @@
 
 #### General Heartbren's Orders
 
-
+The refugees from Northport managed to smuggle out artifacts that we must guarantee will not fall into the hands of the enemy. I know of a hidden dungeon where I would like to seal these artifacts in northern Kandor.
 
 #### Black Wolf Irregulars Orders
 
