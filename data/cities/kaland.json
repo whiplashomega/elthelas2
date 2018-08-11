@@ -1,8 +1,8 @@
 {
   "name": "Kaland",
   "nation": "Kandor",
-  "population": 0,
-  "metro": 0,
+  "population": 75000,
+  "metro": 120000,
   "majority": "Imperial Humans",
   "ruling": "Imperial Humans",
   "minorities": [
@@ -12,5 +12,5 @@
   "exports": [],
   "landmarks": [],
   "coords": [61.7939003991346, 62.799911499023445],
-  "description": ""
+  "description": "The capitol of Kandor sits at the mouth of the Kandor River, a 3 season port that serves as the entrance to the sea for most of Kandor and Gerasalim, it is a city full of wealth and corruption, as well as archaic tradition."
 }

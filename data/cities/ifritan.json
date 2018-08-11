@@ -1,8 +1,8 @@
 {
   "name": "Ifritan",
   "nation": "Stagenheim",
-  "population": 0,
-  "metro": 0,
+  "population": 15000,
+  "metro": 40000,
   "majority": "Stagen Gnomes",
   "ruling": "Stagen Gnomes",
   "minorities": [
@@ -11,5 +11,5 @@
   "exports": [],
   "landmarks": [],
   "coords": [-49.43955695894085, -52.60047912597657],
-  "description": ""
+  "description": "Ifritan was built originally by devotees of Molton, a small gnomish hold just far enough away from the volcanic peeks of the Fire Islands to avoid catastrophic destruction. However, those same volcanic peeks held massive deposits of rare gemstones and heavy metals belched up by the volcanoes. When the gnomish king discovered this fact, he sent the army to take control of the town. Today Ifritan is a major gnomish city that acts as it's primary seaport and as a center of mining activity on the Fire Islands, the closest permanent settlement to all of the mines in the area."
 }

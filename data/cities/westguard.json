@@ -1,0 +1,17 @@
+{
+  "name": "Westguard",
+  "nation": "Gerasalim",
+  "population": 6000,
+  "metro": 10000,
+  "majority": "Imperial Human",
+  "ruling": "Imperial Human",
+  "minorities": [
+    "Half-Dwarves",
+    "Lightfoot Halflings",
+    "Elathian Gnomes"
+  ],
+  "exports": [],
+  "landmarks": [],
+  "coords": [36.34942094089192, 73.80615234375001],
+  "description": "Westguard as a town serves as the primary trading hub between the dwarven holds and Gerasalim. It is a fortified city that sits on the riverbank less than a mile from the easternmost egress of the trade tunnels of Curinor. Today the city is braced for the worst, separated from the bulk of the Gerasaline army, it survives by virtue of the orcs so far respecting the dwarves withdrawal from the war."
+}

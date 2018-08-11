@@ -7,4 +7,4 @@
 </div>
 </template>
 <script src="./history.js"></script>
-<style src="./history.scss" lang="scss" scoped></style>
+<style src="./history.scss" lang="scss"></style>

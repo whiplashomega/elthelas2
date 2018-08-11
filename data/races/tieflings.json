@@ -42,7 +42,6 @@
       "id": "feraltiefling",
       "name": "Feral Tiefling",
       "singular": "Feral Tiefling",
-      "image": "/static/images/races/tiefling.jpg",
       "description": "",
       "traits": [
         { "name": "Ability Score Increase", "description": "Your intelligence score increases by 1 and your dexterity score increases by 2." },
@@ -61,7 +60,6 @@
       "id": "deviltiefling",
       "name": "Devil-Blood Tiefling",
       "singular": "Devil-Blood Tiefling",
-      "image": "/static/images/races/tiefling.jpg",
       "description": "",
       "traits": [
         { "name": "Ability Score Increase", "description": "Your intelligence score increases by 1 and your charisma score increases by 2." },

@@ -101,7 +101,7 @@
   <div class="racediv" id="cleric">
     <h2>Cleric</h2>
     <p>For a detailed description of the Cleric class see the Player's Handbook (p56-63)</p>
-    <h3>Domain</h3>
+    <h3><router-link to="/options/domains">Domain</router-link></h3>
     <p>Clerics have the following Domains available to them: </p>
     <ul>
       <li><router-link to="/options/domains">Air (homebrew)</router-link></li>
@@ -147,7 +147,7 @@
       <li>Eldritch Knight (PHB p74-75)</li>
       <li>Knight of the Realm (see Purple Dragon Knight SCAG p128)</li>
       <li>Samurai (XGE p31)</li>
-      <li>Scourer (see below)</li>
+      <li>Scourer (homebrew, see below)</li>
     </ul>
     <h3>Scourer</h3>
     <p>
@@ -164,8 +164,7 @@
     </p>
     <h4>Slay Magic</h4>
     <p>
-      At third level when you take this Martial Archetype your skills reveal weak spots in spell casters that others miss. Gain an extra 1d8 damage against an enemy that you have seen casting a
-      spell within the last minute. This damage increases to 2d8 at level 18.
+      At third level when you take this Martial Archetype your skills reveal weak spots in spell casters that others miss. Gain an extra 1d8 damage against an enemy that you have seen casting a spell within the last minute. This damage increases to 2d8 at level 18.
     </p>
     <h4>Bonus Proficiencies</h4>
     <p>
@@ -181,8 +180,8 @@
       At level 10 you have learned the inner working of spells and can inherently use the spell against itself. Twice per short rest, you can bend another’s
       spell to your will.  To do this you must spend your reaction to negate or control another casters spell. 3rd level or lower spells are automatically affected while higher level spells
       require a charisma check with the DC being 10 + the spells level. If you succeed, you can choose to negate the spell entirely, or
-      if the spell targets a single target other than the caster, you can choose a different target for the spell. If the spell is a concentration spell,
-      you take over concentration for the spells duration if you choose to do so. You may only concentrate on one spell at a time.
+      if the spell targets a single target other than the caster, you can choose a different target for the spell and if the spell is a concentration spell,
+      you take over concentration for the spells duration. You may only concentrate on one spell at a time.
     </p>
     <h4>See Magic</h4>
     <p>
@@ -196,30 +195,16 @@
       The Factotum is a homebrewed class loosely based on the similarly named class from D&D 3.5.
     </p>
     <p>
-      The Factotum is the ultimate seeker of knowledge.  A student of
-      all schools, the Factotum seeks any kind of knowledge, and uses everything
-      she learns to her advantage.  Her constant study allows the Factotum to
-      display flashes of inspiration, filling any role necessary, if only for
-      a short time.  The Factotum is nothing if not versatile, although
-      occasionally unfocused.
+      The Factotum is the ultimate seeker of knowledge.  A student of all schools, the Factotum seeks any kind of knowledge, and uses everything she learns to her advantage.  Her constant study allows the Factotum to display flashes of inspiration, filling any role necessary, if only for a short time.  The Factotum is nothing if not versatile, although occasionally unfocused.
     </p>
     <p>
-      Above all, the Factotum is prepared for anything, any circumstance and any challenge, at least when
-      they manage to make it out of the library.  While the Factotum's focus on learning new things is
-      similar to the wizard's focus on arcane knowledge, the Factotum does not share the Wizard's focus.
-      The Factotum is just as interested in that tome on arcane combat styles, or the architects detailed
-      schematics as that previously unknown spell.
+      Above all, the Factotum is prepared for anything, any circumstance and any challenge, at least when they manage to make it out of the library.  While the Factotum's focus on learning new things is similar to the wizard's focus on arcane knowledge, the Factotum does not share the Wizard's focus. The Factotum is just as interested in that tome on combat styles, or the architects detailed schematics as that previously unknown spell.
     </p>
     <p>
-      Factotum's as civilians often work as librarians, scientists, or advisors to people of power.  As adventurers
-      they travel the world seeking out stores of hidden knowledge, documenting unusual creatures, learning from reclusive
-      masters of various arts and skills, or just meeting unusual people, enjoying foods they could never experience at home,
-      and seeing the sights.  In all of their doings they have a talent for coming up with the solution no one else thought of,
-      and with a flash of inspiration, snatching victory and success from the jaws of failure and defeat.
+      Factotum's as civilians often work as librarians, scientists, or advisors to people of power.  As adventurers they travel the world seeking out stores of hidden knowledge, documenting unusual creatures, learning from reclusive masters of various arts and skills, or just meeting unusual people, enjoying foods they could never experience at home, and seeing the sights.  In all of their doings they have a talent for coming up with the solution no one else thought of, and with a flash of inspiration, snatching victory and success from the jaws of failure and defeat.
     </p>
     <p>
-      Humans and half-elves are the most common factotums, followed by halflings
-      and gnomes.
+      Humans and half-elves are the most common factotums, followed by halflings and gnomes.
     </p>
     <h3>The Factotum</h3>
     <table class="classtable table table-striped" id="factotumtable">
@@ -313,8 +298,7 @@
     <p>
       <strong>Hit Dice:</strong> 1d8 per factotum level<br />
       <strong>Hit Points at 1st Level:</strong> 8 + your Constitution Modifier<br />
-      <strong>Hit Points at Higher Levels:</strong> 1d8(or 5) + your Constitution modifier per
-      factotum level after 1st.
+      <strong>Hit Points at Higher Levels:</strong> 1d8(or 5) + your Constitution modifier per factotum level after 1st.
     </p>
     <h3>Proficiencies</h3>
     <p>
@@ -337,26 +321,19 @@
     <h3>Class Features</h3>
     <h4>Inspired</h4>
     <p>
-      The Factotum gets a number of epiphany points that they can spend to
-      activate certain class features.  They get epiphany points equal to
-      their intelligence modifier plus half their class level (rounded down),
-      minimum 1.  They recover all of their epiphany points when they
-      finish a short rest.
+      The Factotum gets a number of epiphany points that they can spend to activate certain class features.  They get epiphany points equal to their intelligence modifier plus half their class level (rounded down), minimum 1.  They recover all of their epiphany points when they finish a short rest.
     </p>
     <h4>Inspired Skills</h4>
     <p>
-      You can spend an epiphany point when making any skill check to add
-      your intelligence bonus to the check.
+      You can spend an epiphany point when making any skill check to add your intelligence bonus to the check.
     </p>
     <h4>Spellcasting</h4>
     <p>
-      Starting at 2nd level, you start to pick up the intricacies of casting spells.  As a student of magic, you have a spellbook
-      containing spells that you have picked up in your travels.
+      Starting at 2nd level, you start to pick up the intricacies of casting spells.  As a student of magic, you have a spellbook containing spells that you have picked up in your travels.
     </p>
     <h4>Cantrips</h4>
     <p>
-      At 2nd level, you know four cantrips of your choice from any spell list. You learn additional cantrips of your choice at higher levels, as
-      shown in the Cantrips Known column of the Factotum table.
+      At 2nd level, you know four cantrips of your choice from any spell list. You learn additional cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Factotum table.
     </p>
     <h4>Spellbook</h4>
     <p>
@@ -364,34 +341,24 @@
     </p>
     <h4>Preparing and Casting Spells</h4>
     <p>
-      The Factotum table shows how many spell slots you have to cast your spells of 1st level and higher.  To cast one of these spells, you must
-      expend a slot of the spell's level or higher as well as one epiphany point.  You regain all expended spell slots when you finish a long rest.
+      The Factotum table shows how many spell slots you have to cast your spells of 1st level and higher.  To cast one of these spells, you must expend a slot of the spell's level or higher as well as one epiphany point.  You regain all expended spell slots when you finish a long rest.
     </p>
     <p>
-      You prepare the list of spells that are available for you to cast.  To do so choose a number of spells from your spellbook equal to your
-      intelligence modifier + one half of your factotum level (rounded down, minimum of 1 spell).  The spells must be of a level for which you have spell slots.
+      You prepare the list of spells that are available for you to cast.  To do so choose a number of spells from your spellbook equal to your intelligence modifier + one half of your factotum level (rounded down, minimum of 1 spell).  The spells must be of a level for which you have spell slots.
     </p>
     <p>
-      For example, if you're a 5th-level factotum, you have four 1st-level and two 2nd-level spell slots.  With an intelligence of 16, your list of
-      prepared spells can include five spells of 1st or 2nd level, in any combination, chosen from your spellbook.  If you prepare the 1st-level
-      spell magic missile, you can cast it using a 1st-level or a 2nd-level slot.  Casting a spell doesn't remove it from your list of prepared
-      spells.
+      For example, if you're a 5th-level factotum, you have four 1st-level and two 2nd-level spell slots.  With an intelligence of 16, your list of prepared spells can include five spells of 1st or 2nd level, in any combination, chosen from your spellbook.  If you prepare the 1st-level spell magic missile, you can cast it using a 1st-level or a 2nd-level slot.  Casting a spell doesn't remove it from your list of prepared spells.
     </p>
     <p>
-      You can change your list of prepared spells when you finish a long rest.  Preparing a new list of spells requires time spent studying your
-      spellbook and memorizing incantations and gestures you must make to cast a spell: at least 1 minute per spell level for each spell on your list.
+      You can change your list of prepared spells when you finish a long rest. Preparing a new list of spells requires time spent studying your spellbook and memorizing incantations and gestures you must make to cast a spell: at least 1 minute per spell level for each spell on your list.
     </p>
     <h4>Spellcasting Ability</h4>
     <p>
-      Intelligence is your spellcasting ability for your spells, since you learn your spells through dedicated study and memorization. You use your
-      Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving
-      throw DC for a spell you cast and when making an attack roll with one. Spell save DC = 8 + your proficiency bonus + your Intelligence modifier
-      Spell attack modifier = your proficiency bonus + your intelligence modifier.
+      Intelligence is your spellcasting ability for your spells, since you learn your spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a spell you cast and when making an attack roll with one. Spell save DC = 8 + your proficiency bonus + your Intelligence modifier Spell attack modifier = your proficiency bonus + your intelligence modifier.
     </p>
     <h4>Ritual Casting</h4>
     <p>
-      You can cast a spell as a ritual if that spell has the ritual tag and you have the spell in your spellbook. You don't need to have the spell
-      prepared.
+      You can cast a spell as a ritual if that spell has the ritual tag and you have the spell in your spellbook. You don't need to have the spell prepared.
     </p>
     <h4>Spellcasting Focus</h4>
     <p>
@@ -399,28 +366,19 @@
     </p>
     <h4>Learning Spells of 1st Level and Higher</h4>
     <p>
-      Each time you gain a Factotum level after 2nd, you can add one spell of your choice to your spellbook. Each of these spells must be of a level for which
-      you have spell slots, as shown on the Factotum table. On your adventures, you might find other spells that you can add to your spellbook
-      (see the “Your Spellbook” sidebar).
+      Each time you gain a Factotum level after 2nd, you can add one spell of your choice to your spellbook. Each of these spells must be of a level for which you have spell slots, as shown on the Factotum table. On your adventures, you might find other spells that you can add to your spellbook (see the “Your Spellbook” sidebar).
     </p>
     <h4>Inspired Attack</h4>
     <p>
-      Starting at 2nd level, you can spend an epiphany point before
-      making an attack roll to add your intelligence bonus to the attack
-      roll.
+      Starting at 2nd level, you can spend an epiphany point before making an attack roll to add your intelligence bonus to the attack roll.
     </p>
     <h4>Inspired Damage</h4>
     <p>
-      Starting at 2nd level, as a bonus action you can spend an epiphany
-      point to add 1d8 to any weapon or spell damage roll you make until
-      the start of your next turn.
+      Starting at 2nd level, as a bonus action you can spend an epiphany point to add 1d8 to any weapon or spell damage roll you make until the start of your next turn.
     </p>
     <h4>Factotum Philosophy</h4>
     <p>
-      At 3rd level your studies begin to focus on a particular specialty.
-      Choose one of the Factotum Philosophies below, you gain different
-      abilities depending on which philosophy you choose.  You gain
-      additional philosophy features at 7th, 10th and 15th level.
+      At 3rd level your studies begin to focus on a particular specialty. Choose one of the Factotum Philosophies below, you gain different abilities depending on which philosophy you choose.  You gain additional philosophy features at 7th, 10th and 15th level.
     </p>
     <h4>Ability Score Improvement</h4>
     <p>
@@ -440,31 +398,20 @@
     </p>
     <h4>Inspired Recovery</h4>
     <p>
-      At 20th level you no longer require a short rest to regain your
-      epiphany points, but can do so by spending 10 minutes reading and
-      studying your books and materials.
+      At 20th level you no longer require a short rest to regain your epiphany points, but can do so by spending 10 minutes reading and studying your books and materials.
     </p>
     <h3>Factotum Philosophies</h3>
     <h3>Brains Over Brawn</h3>
     <p>
-      Those who follow the Brains over Brawn philosophy have focused their studies on the weaknesses
-      of their potential enemies, taking the idea of knowledge as power into the field of combat. These
-      scholars always seem to know their enemies weaknesses, and can use that knowledge to get around
-      their defenses.
+      Those who follow the Brains over Brawn philosophy have focused their studies on the weaknesses of their potential enemies, taking the idea of knowledge as power into the field of combat. These scholars always seem to know their enemies weaknesses, and can use that knowledge to get around their defenses.
     </p>
     <h4>Know Your Enemy</h4>
     <p>
-      Starting at 3rd level, you can spend a bonus action to study an
-      opponent and discover how to get past its defenses.   When you use
-      this ability pick a target, you can use your intelligence modifier
-      instead of strength or dexterity on weapon attack rolls and damage
-      rolls against that target until the start of your next turn.
+      Starting at 3rd level, your combat tactics focus on knowing your opponent and how to get past its defenses. You can use your intelligence modifier instead of strength or dexterity on weapon attack rolls and damage rolls.
     </p>
     <h4>Fighting Style Mimic</h4>
     <p>
-      At 7th level the Brains over Brawn Factotum can pick one of the following fighting styles.  Whenever they finish a long rest they can
-      spend 3 epiphany points to replace this fighting style with a different one from the list.  This ability does not stack with the fighting
-      style granted by any other class.
+      At 7th level the Brains over Brawn Factotum can pick one of the following fighting styles. Whenever they finish a long rest they can spend 3 epiphany points to replace this fighting style with a different one from the list. If you already have a particular fighting style granted by another class you cannot pick that fighting style again.
     </p>
     <ul>
       <li><strong>Archery</strong> - You gain a +2 bonus to attack rolls you make with ranged weapons.</li>
@@ -479,54 +426,40 @@
     </ul>
     <h4>Improved Inspired Damage</h4>
     <p>
-      At 10th level, when you use the inspired damage feature you add 2d8 to
-      your damage rolls.
+      At 10th level, when you use the inspired damage feature you add 2d8 to your damage rolls.
     </p>
     <h4>Improved inspired Attack</h4>
     <p>
-      At 15th level, when you use an epiphany point to add a bonus to
-      your attack roll, you can make an additional attack as a bonus action,
-      adding your intelligence modifier to both attacks.
+      At 15th level, when you use an epiphany point to add a bonus to your attack roll, you can make an additional attack as a bonus action, adding your intelligence modifier to both attacks.
     </p>
     <h3>Arcane Dilettante</h3>
     <p>
-      The Arcane Dilettante has studied magic enough that they begin to seem less like
-      their faking it, and more like a practiced wizard.  They no longer rely on bursts
-      of inspiration for their most practiced spells, and can put together an idea of
-      how to cast even unpracticed spells with less effort.
+      The Arcane Dilettante has studied magic enough that they begin to seem less like their faking it, and more like a practiced wizard.  They no longer rely on bursts of inspiration for their most practiced spells, and can put together an idea of how to cast even unpracticed spells with less effort.
     </p>
     <h4>Cantrip Master</h4>
     <p>
-      At 3rd level you have become particularly adept at casting very basic spells.  You learn 2 additional cantrips in addition to the
-      number shown in the Factotum table.
+      At 3rd level you have become particularly adept at casting very basic spells.  You learn 2 additional cantrips in addition to the number shown in the Factotum table.
     </p>
     <h4>Additional Skill Proficiency</h4>
     <p>
-      At 3rd level the arcane dilettante gains proficiency in the arcana skill.  If they were already proficient in the
-      arcana skill they gain expertise in the arcana skill (can add their proficiency bonus twice).
+      At 3rd level the arcane dilettante gains proficiency in the arcana skill.  If they were already proficient in the arcana skill they gain expertise in the arcana skill (can add their proficiency bonus twice).
     </p>
     <h4>Keen Observer</h4>
     <p>
-      Starting at 7th level you have become a proficient enough spell caster that you can make a spell work with only minimal study.
-      Starting when they gain this feature, the Factotum can add any spell they successfully observe being cast to their spellbook.  In order to
-      successfully add it to their spellbook the following conditions
-      must be met:
+      Starting at 7th level you have become a proficient enough spell caster that you can make a spell work with only minimal study. Starting when they gain this feature, the Factotum can add any spell of 1st level or higher they successfully observe being cast to their spellbook.  In order to successfully add it to their spellbook the following conditions must be met:
       <ul>
         <li>The spell must be of a level the Factotum can cast.</li>
         <li>
-          The Factotum must be able to see (if it has somatic/material components) and hear (if it has a verbal component)
-          the spell being cast.
+          The Factotum must be able to see (if it has somatic/material components) and hear (if it has a verbal component) the spell being cast. If the spell is cast without any components, such as a Sorcerer using the subtle spell feat, the Factotum cannot use this feature.
         </li>
         <li>
-          They then must succeed on an intelligence (arcana) check with a DC equal to 15 + the spells level at the time the spell is cast.
-          If they fail this check they can try again only if they observe the spell being cast again.
+          At the time they observe the spell being cast the Factotum must succeed on an intelligence (arcana) check with a DC equal to 15 + the spells level at the time the spell is cast. If they fail this check they can try again only if they observe the spell being cast again.
         </li>
       </ul>
     </p>
     <h4>Quick Study</h4>
     <p>
-      Starting at 10th level, whenever The Factotum finishes a short rest they can trade 1 spell from their prepared list for a different spell in
-      their spellbook.
+      Starting at 10th level, whenever The Factotum finishes a short rest they can trade 1 spell from their prepared list for a different spell in their spellbook.
     </p>
     <h4>Sage</h4>
     <p>
@@ -536,27 +469,19 @@
     <p> The Skill Monkey has made it their mission to master every skill, taking the Factotum's philosophy of being prepared for anything to its ultimate extreme.</p>
     <h4>Jack-of-all-Trades</h4>
     <p>
-      Starting at 3rd level, you can add half your proficiency
-      bonus, rounded down, to any ability check you make that
-      doesn’t already include your proficiency bonus.
+      Starting at 3rd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn’t already include your proficiency bonus.
     </p>
     <h4>Improved Inspired Skills</h4>
     <p>
-      Starting at 7th level, when the Skill Monkey uses the inspire skill ability they add their proficiency bonus as well as their intelligence modifier
-      to the check, even if they are already proficient in that skill.
+      Starting at 7th level, when the Skill Monkey uses the inspire skill ability they add their proficiency bonus as well as their intelligence modifier to the check, even if they are already proficient in that skill.
     </p>
     <h4>Expertise</h4>
     <p>
-      At 10th level, choose two of your skill proficiencies. Your
-      proficiency bonus is doubled for any ability check you
-      make that uses either of the chosen proficiencies.
+      At 10th level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.
     </p>
     <h4>Reliable Talent</h4>
     <p>
-      By 15th level, you have refined your chosen skills until
-      they approach perfection. Whenever you make an ability
-      check that lets you add your proficiency bonus, you can
-      treat a d20 roll of 9 or lower as a 10.
+      By 15th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.
     </p>
   </div>
   <div class="racediv" id="monk">

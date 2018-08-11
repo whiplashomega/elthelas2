@@ -1,8 +1,8 @@
 {
   "name": "Loridesa",
   "nation": "Eldoran",
-  "population": 0,
-  "metro": 0,
+  "population": 30000,
+  "metro": 90000,
   "majority": "High Elves",
   "ruling": "High Elves",
   "minorities": [
@@ -13,5 +13,5 @@
   "exports": [],
   "landmarks": [],
   "coords": [26.667095801104814, -23.374786376953125],
-  "description": ""
+  "description": "Loridesa, the first city, blessed of Sylvan, is the beating heart of Eldoran. The city is home to some of the greatest artists, thinkers, and mages to ever grace Elthelas. The cities curved spires of worked stone sit interspersed with the Great Trees, ancient and magical trees with trunks a hundred feet thick and branches half a mile up and wide. The common folk of Loridesa do not bother to live on the ground, rather the trees themselves are filled with bridges and platforms and little homes built among the branches. It has always been said among the elves that none have truly lived until they have beheld the beauty and speldor of Loridesa."
 }

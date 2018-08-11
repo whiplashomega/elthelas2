@@ -1,0 +1,20 @@
+{
+  "name": "Cur'Estan",
+  "nation": "Kandor",
+  "population": 48000,
+  "metro": 64000,
+  "majority": "Imperial Humans",
+  "ruling": "Imperial Humans",
+  "minorities": [
+    "Imperial Gnomes",
+    "Lightfoot Halflings"
+  ],
+  "exports": [
+    "timber",
+    "mercenaries"
+  ],
+  "landmarks": [],
+  "coords": [56.511017504952164, 81.91818237304689],
+  "map": "/images/maps/cities/curmestin.jpg",
+  "description": "Cur'Estan in ancient days was the capitol of a minor Kandori king before being conquered by Dorman I. The town and castle were abandoned after that except for a small population supporting the local timber industry. Then in 1832 YFC the old castle and surrounding town was granted as a semi-independent fiefdom to the Black Wolf Irregulars in return for favors granted to the King of Kandor, who rebuilt the castle, and used it as a headquarters for their mercenary organization. This brought in workers to support the military organization and almost overnight the town was back on the map. As the war with the orcs turned bad and Gerasalim fell, Cur'Estan quickly became a center for refugees coming north and the population has exploded to 5 times it's prewar size, with the vast majority of people living in the massive refugee camp just south of town."
+}

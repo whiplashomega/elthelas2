@@ -1,13 +1,16 @@
 {
   "name": "Purs",
   "nation": "Kandor",
-  "population": 0,
-  "metro": 0,
-  "majority": "",
-  "ruling": "",
-  "minorities": [],
+  "population": 20000,
+  "metro": 60000,
+  "majority": "Imperial Human",
+  "ruling": "Imperial Human",
+  "minorities": [
+    "Half-dwarves",
+    "Lightfoot halflings"
+  ],
   "exports": [],
   "landmarks": [],
   "coords": [52.28429044165821, 69.07434068620205],
-  "description": ""
+  "description": "Purs is the agrarian center of southern Kandor, an area that has long served as the breadbasket of northern Elathia. Huge grain elevators filled with wheat and corn fill the city, ships leaving daily to take goods north through Kaland, or caravans heading westward to Westport or Curin Keep."
 }

@@ -1,0 +1,19 @@
+{
+  "name": "Mithrin",
+  "nation": "Curinor",
+  "population": 8000,
+  "metro": 14000,
+  "majority": "Plains Dwarves",
+  "ruling": "Deep Dwarves",
+  "minorities": [
+    "Deep Dwarves",
+    "Elves",
+    "Hill Dwarves"
+  ],
+  "exports": [
+    "Mithril"
+  ],
+  "landmarks": [],
+  "coords": [38.54053459825973, 37.88566387296076],
+  "description": "Mithrin has been the center of dwarven operations in the Mithril Hills for the last 300 years. It is a true, fortified dwarven hold, built deep into the hills. It withstood a year long elven siege in the last Mithril War, holding the line against invasion even while the surrounding minor holds were slaughtered to the man. Today the city is a strange confluence of elven and dwarven influences. About 60% of the population remains dwarves who live below ground, but the official seat of government sits above ground, where the two provincial governors, one elf and one dwarf, share space in a single palace."
+}

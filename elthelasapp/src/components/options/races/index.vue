@@ -12,10 +12,11 @@
     </p>
     <div id="raceDiv" v-if="currentRace.name">
       <h2>{{currentRace.name}}</h2>
+      <img :src="currentRace.subraces[0].image" :alt="currentRace.name" class="raceimage" />
       <div v-html="$options.filters.marked(currentRace.description)"></div>
-      <div class="subrace" v-for="subrace in currentRace.subraces" v-bind:key="subrace.id">
+      <div class="subrace" v-for="(subrace, index) in currentRace.subraces" v-bind:key="subrace.id">
         <h3 v-if="subrace.name !== 'default'">{{subrace.name}}</h3>
-        <img :src="subrace.image" :alt="subrace.name" v-if="subrace.image" class="raceimage" />
+        <img :src="subrace.image" :alt="subrace.name" v-if="subrace.image && index !== 0" class="raceimage" />
         <div v-html="$options.filters.marked(subrace.description)"></div>
         <ul>
           <li v-for="(trait, index) in currentRace.traits" v-bind:key="index"><div v-if="typeof trait === 'string'" v-html="$options.filters.marked(trait)"></div><div v-else><strong>{{trait.name}}</strong><span v-html="$options.filters.marked(trait.description)"></span></div></li>
