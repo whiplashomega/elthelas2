@@ -11,10 +11,11 @@
     <input type="button" class="btn btn-secondary" @click="showWarMap()"  v-if="!warmap" value="Show Terrotories of Control" />
     <input type="button" class="btn btn-secondary" @click="showWarMap()"  v-if="warmap" value="Hide Terrotories of Control" />
   </div>
-  <div v-if="warmap">
-    <div style="clear:left;"><div style="width:20px; height: 20px; float: left; background-color: blue;margin: 0px 10px 10px 10px; clear: left;"></div> Alliance</div>
-    <div style="clear:left;"><div style="width:20px; height: 20px; float: left; background-color: red;margin: 0px 10px 10px 10px; clear: left;"></div> Orcs</div>
-    <div style="clear:left;"><div style="width:20px; height: 20px; float: left; background-color: orange;margin: 0px 10px 10px 10px; clear: left;"></div> Manius Aquila's Rebellion</div>
+  <div v-if="warmap" class="row">
+    <div class="col-3"><div style="width:20px; height: 20px; float: left; background-color: blue;margin: 0px 10px 10px 10px; clear: left;"></div> Alliance</div>
+    <div class="col-3"><div style="width:20px; height: 20px; float: left; background-color: red;margin: 0px 10px 10px 10px; clear: left;"></div> Orcs</div>
+    <div class="col-3"><div style="width:20px; height: 20px; float: left; background-color: orange;margin: 0px 10px 10px 10px; clear: left;"></div> Manius Aquila's Rebellion</div>
+    <div class="col-3"><div style="width:20px; height: 20px; float: left; background-color: green;margin: 0px 10px 10px 10px; clear: left;"></div> Waelin Rebellion</div>
   </div>
   <div id="map"></div>
   <b-modal id="nationmodal" size="lg" @hide="hideModal" :title="nation.name" ok-only>

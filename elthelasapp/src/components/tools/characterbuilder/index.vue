@@ -870,11 +870,6 @@
             </div>
           </div>
         </div>
-        <!-- Party Bond -->
-        <!-- Family -->
-        <!-- Goals -->
-        <!-- Values -->
-        <!-- Stronghold -->
       </div>
       <div class="col-4 print-hide" v-if="!buildHide">
         <div class="row">
@@ -1268,6 +1263,12 @@
             <div class="col">
               <input type="text" class="charsheet-text" v-model="character.weight">
               Weight
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="charsheet-text" v-model="character.hair">
+              Hair
             </div>
           </div>
           <div class="row">
@@ -1914,6 +1915,56 @@
               <textarea class="form-control" v-model="newfeature.description"></textarea>
             </b-modal>
             <p>&nbsp;</p>
+          </div>
+        </b-tab>
+        <b-tab title="Fluff">
+          <div class="row">
+            <div class="col">
+              <div class="charsheet-static">
+                <h5>Allies and Organizations</h5>
+                <textarea v-model="character.allies" class="charsheet-textarea smalltext"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="charsheet-static">
+                <h5>Family</h5>
+                <textarea v-model="character.family" class="charsheet-textarea smalltext"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="charsheet-static">
+                <h5>Backstory</h5>
+                <textarea v-model="character.backstory" class="charsheet-textarea smalltext"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="charsheet-static">
+                <h5>Bond</h5>
+                <textarea v-model="character.bond" class="charsheet-textarea smalltext"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="charsheet-static">
+                <h5>Personality</h5>
+                <textarea v-model="character.personality" class="charsheet-textarea smalltext"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="charsheet-static">
+                <h5>Notes</h5>
+                <textarea v-model="character.notes" class="charsheet-textarea smalltext"></textarea>
+              </div>
+            </div>
           </div>
         </b-tab>
         <b-tab title="Build">

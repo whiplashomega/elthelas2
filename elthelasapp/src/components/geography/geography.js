@@ -213,7 +213,7 @@ export default {
       ];
       if(this.warmap === false) {
         this.alliance = L.polygon(alliancelatlong, { color: 'blue' });
-        this.alliance2 = L.polygon(alliance2latlong, { color: 'blue' });
+        this.alliance2 = L.polygon(alliance2latlong, { color: 'green' });
         this.orcs = L.polygon(orcslatlong, { color: 'red' });
         this.manius = L.polygon(maniusrebellionlatlong, { color: 'orange'});
         this.alliance.addTo(this.map);

@@ -45,15 +45,15 @@ The last issue is with a nearby mine. One of our merchants who regularly buys ir
 
 ### Faction Orders
 
-**Amathera's Shield**
+**Amathera's Shield** With tens of thousands of refugees to feed we need that food caravan here yesterday. We need you to prioritize that issue and get the food here by tomorrow.
 
-**Artificer's of Mechanus**
+**Artificer's of Mechanus** If there really is a dragon I'm sure it has some interesting devices in its horde, bring back any magical items you find in its horde for me to examine, I might even be able to improve them.
 
-**Black Sun**
+**Black Sun** I have heard rumors that the Druids are hiding a powerful staff, obtain it for me. I will make it worth your while.
 
 **Black Wolf Irregulars**
 
-**Blood Brothers**
+**Blood Brothers** We believe one of our own may have jepordized our contract to police the refugee camp. Look into the murder of Hilda Anschütz, one of the recently arrived refugees, if a Blood Brother killed her, we need to bring him in ourselves.
 
 **Champions of Cora**
 
@@ -124,6 +124,10 @@ The tunnel veers sharply to the right after the ballista, beyond which there is 
 #### The Dragon’s Lair
 
 The black dragon sleeps in a pool of acid in a large chamber. He is attended by a kobold sorcerer and a half-dozen servants/guards and any other kobolds who escaped from further up the tunnels. His small but significant horde sits in the corner of the room. The kobolds will attack the players ferociously here, no longer running but now fighting to the death. The dragon will jump in at the top of the second round of combat. Above the fight a cavernous vertical passage leads up and out to the sky, a network of massive spider webs blocking the path. If the fight is going poorly, the Dragon may breath up into this passage, melting the webs and sending the giant spiders down on the party. The spiders attack kobolds and party members alike indiscriminately, avoiding attacking only the dragon, who they fear instinctually.
+
+#### The horde
+
+200 cp, 8000 sp, 2300 gp, 110 pp, Onyx Figurine of Sylvan (250 gp), Electrum Ring inlaid with Brass (250 gp), Fine Steel Cloth Cloak (250 gp), Leopard Fur Pouch set with Chrysoprase (250 gp), Potion of Poison (uncommon, dmg 188), Wand of Secrets (uncommon, dmg 211), Mithral Armor (plate) (uncommon, dmg 182)
 
 <aside>
 
