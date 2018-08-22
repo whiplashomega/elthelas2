@@ -10,6 +10,7 @@ import 'bootstrap';
 import App from './components/App';
 import router from './router';
 import store from './model';
+import './registerServiceWorker';
 
 var Sortable = typeof require === 'function'
   ? require('sortablejs')

@@ -12,7 +12,7 @@ const getters = {
 const actions = {
   getAllWeapons ({ commit }) {
     return new Promise((resolve) => {
-      Vue.http.get(ctest.baseUrl + 'static/json/weapons.json').then((response) => {
+      Vue.http.get(ctest.baseUrl + 'json/weapons.json').then((response) => {
         var weapons = response.body;
         commit('GET_WEAPONS', { weapons: weapons });
         resolve();

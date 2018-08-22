@@ -12,7 +12,7 @@ const getters = {
 const actions = {
   getAllClasses ({ commit }) {
     return new Promise((resolve) => {
-      Vue.http.get(ctest.baseUrl + 'static/json/classes.json').then((response) => {
+      Vue.http.get(ctest.baseUrl + 'json/classes.json').then((response) => {
         var classes = response.body.documents;
         classes = classes.map((a) => {
           var r = { ...a };

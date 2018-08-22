@@ -13,7 +13,7 @@ const getters = {
 const actions = {
   getAllCreatures ({ commit }) {
     return new Promise((resolve) => {
-      Vue.http.get(ctest.baseUrl + 'static/json/creatures.json').then((response) => {
+      Vue.http.get(ctest.baseUrl + 'json/creatures.json').then((response) => {
         var creatures = response.body.documents;
         for (var x = 0; x < creatures.length; x++) {
           creatures[x].descr = marked(creatures[x].description);

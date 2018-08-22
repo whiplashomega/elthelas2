@@ -12,7 +12,7 @@ module.exports = {
             clientSecret: 'c5bd3fd394b3e67c7624da4aac935e06',
             callbackURL: 'https://elthelas2-whiplashomega.c9users.io/users/facebook/callback'
         };
-        module.exports.staticDir = "/elthelasapp/www/dist";
+        module.exports.staticDir = "/elthelasapp/dist";
         module.exports.port = 8081;
     } else {
         console.log(process.env.MONGODB_URI);
@@ -22,5 +22,5 @@ module.exports = {
             clientSecret: '409369a75ffe5ece6c1dbfa040ed8c6e',
             callbackURL: 'https://elthelas.com/users/facebook/callback'
         };
-        module.exports.staticDir = '/elthelasapp/www/dist';
+        module.exports.staticDir = '/elthelasapp/dist';
     }

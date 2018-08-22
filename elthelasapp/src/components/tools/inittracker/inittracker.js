@@ -1,17 +1,16 @@
 import { mapGetters } from 'vuex';
 
-
 export default {
-  computed: {    
+  computed: {
     ...mapGetters({
       token: 'getUserInfo',
       loggedin: 'isLoggedIn'
     }),
     initlist() {
       return this.initchars.sort((a, b) => {
-        if(Number(a.init) > Number(b.init)) {
+        if (Number(a.init) > Number(b.init)) {
           return -1;
-        } else if(Number(a.init) < Number(b.init)) {
+        } else if (Number(a.init) < Number(b.init)) {
           return 1;
         } else {
           return 0;
@@ -26,7 +25,7 @@ export default {
       characters: [],
       nextid: 0,
       current: 0
-    }
+    };
   },
   methods: {
     addInit() {
@@ -40,7 +39,7 @@ export default {
     removeInit(id) {
       var index = 0;
       var filteredlist = this.initchars.filter((obj) => {
-        if(obj.id !== id) {
+        if (obj.id !== id) {
           return true;
         } else {
           index = this.initlist.indexOf(obj) + 1;
@@ -60,14 +59,15 @@ export default {
     },
     delay(initchar) {
       var index = this.initlist.indexOf(initchar) + 1;
-      if(index < this.initlist.length) {
-        var nextchar = this.initlist[index];
+      var nextchar;
+      if (index < this.initlist.length) {
+        nextchar = this.initlist[index];
         this.current = nextchar.id;
-        initchar.init = Number(nextchar.init) - .01;
+        initchar.init = Number(nextchar.init) - 0.01;
       } else {
-        var nextchar = this.initlist[0];
+        nextchar = this.initlist[0];
         this.current = nextchar.id;
-        initchar.init = Number(nextchar.init) - .01;
+        initchar.init = Number(nextchar.init) - 0.01;
       }
     },
     nextCard(cur) {
@@ -78,13 +78,13 @@ export default {
       this.current = this.initlist[index].id;
     },
     getFromServer() {
-      if(this.loggedin) {
+      if (this.loggedin) {
         this.$root.$emit('bv::show::modal', 'loading');
         this.$http.get('/characters?token=' + this.token.token).then(function(res) {
           this.characters = res.body;
           console.log(this.characters);
           this.$root.$emit('bv::hide::modal', 'loading');
-        this.$root.$emit('bv::show::modal', 'servermodal');
+          this.$root.$emit('bv::show::modal', 'servermodal');
         }).catch(function(res) {
           console.log(res);
           alert("error when loading, please try logging off and in again");
@@ -107,6 +107,6 @@ export default {
         level += Number(a.level);
       });
       return level;
-    },
+    }
   }
-}
+};

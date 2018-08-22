@@ -24,7 +24,7 @@ export default {
           return a.title.toLowerCase().replace(/ /g, '') === org.toLowerCase().replace(/ /g, '');
         });
         if (orgs.length > 0) {
-            this.currentOrg = orgs[0];
+          this.currentOrg = orgs[0];
         }
       }
     });

@@ -211,11 +211,11 @@ export default {
         [19.475655495911596, 66.29150390625001],
         [22.59245816401359, 71.82861328125001]
       ];
-      if(this.warmap === false) {
+      if (this.warmap === false) {
         this.alliance = L.polygon(alliancelatlong, { color: 'blue' });
         this.alliance2 = L.polygon(alliance2latlong, { color: 'green' });
         this.orcs = L.polygon(orcslatlong, { color: 'red' });
-        this.manius = L.polygon(maniusrebellionlatlong, { color: 'orange'});
+        this.manius = L.polygon(maniusrebellionlatlong, { color: 'orange' });
         this.alliance.addTo(this.map);
         this.orcs.addTo(this.map);
         this.alliance2.addTo(this.map);
@@ -227,7 +227,6 @@ export default {
         this.map.removeLayer(this.alliance2);
         this.map.removeLayer(this.orcs);
         this.map.removeLayer(this.manius);
-        
       }
     },
     start () {

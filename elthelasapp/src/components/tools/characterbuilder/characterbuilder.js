@@ -4,86 +4,86 @@ import test from '@/tests/unit/charbuilder.test.js';
 
 var newCharacter = function() {
   return {
-        name: "",
-        player: "",
-        warlockslotsavailable: 0,
-        charclasses: [{ thisclass: { name: "", subclass: [], hitdie: 6 }, level: 0, selsubclass: { castermult: 0, features: [] } }],
-        race: { stats: [0, 0, 0, 0, 0, 0], speed: [0, 0, 0, 0, 0] },
-        background: { feature: { show: false, description: "", name: "" } },
-        alignment: "",
-        faction: { level1: "", level10: "" },
-        homecountry: "",
-        hometown: "",
-        age: "",
-        hpcurrent: 1,
-        height: "",
-        weight: "",
-        gender: "",
-        eyes: "",
-        hair: "",
-        allies: "",
-        backstory: "",
-        bond: "",
-        personality: "",
-        notes: "",
-        god: "",
-        skin: "",
-        skills: [
-          { name: "Acrobatics", prof: 0, stat: 1, magic: 0 },
-          { name: "Animal Handling", prof: 0, stat: 4, magic: 0 },
-          { name: "Arcana", prof: 0, stat: 3, magic: 0 },
-          { name: "Athletics", prof: 0, stat: 0, magic: 0 },
-          { name: "Deception", prof: 0, stat: 5, magic: 0 },
-          { name: "History", prof: 0, stat: 3, magic: 0 },
-          { name: "Insight", prof: 0, stat: 4, magic: 0 },
-          { name: "Intimidation", prof: 0, stat: 5, magic: 0 },
-          { name: "Investigation", prof: 0, stat: 3, magic: 0 },
-          { name: "Medicine", prof: 0, stat: 4, magic: 0 },
-          { name: "Nature", prof: 0, stat: 3, magic: 0 },
-          { name: "Perception", prof: 0, stat: 4, magic: 0 },
-          { name: "Performance", prof: 0, stat: 5, magic: 0 },
-          { name: "Persuasion", prof: 0, stat: 5, magic: 0 },
-          { name: "Religion", prof: 0, stat: 3, magic: 0 },
-          { name: "Sleight of Hand", prof: 0, stat: 1, magic: 0 },
-          { name: "Stealth", prof: 0, stat: 1, magic: 0 },
-          { name: "Survival", prof: 0, stat: 4, magic: 0 }
-        ],
-        saves: [false, false, false, false, false, false],
-        savebonus: [0, 0, 0, 0, 0, 0],
-        stats: [8, 8, 8, 8, 8, 8],
-        statbonus: [0, 0, 0, 0, 0, 0],
-        initmagic: 0,
-        hpmagic: 0,
-        acmagic: 0,
-        speedmagic: [0, 0, 0, 0, 0],
-        attacks: [],
-        armors: [],
-        feats: [],
-        injuries: [],
-        bonusfeats: 0,
-        proficiencies: "",
-        equipment: [],
-        containers: [
-          { id: 0, name: "Default", capacity: 9999, weightCounts: true, weight: 0 }
-        ],
-        cp: 0,
-        sp: 0,
-        gp: 0,
-        pp: 0,
-        art: 0,
-        gems: 0,
-        size: "medium",
-        capacitybonus: 0,
-        spells: { cantrip: [], level1: [], level2: [], level3: [], level4: [], level5: [], level6: [], level7: [], level8: [], level9: [] },
-        availableslots: { cantrip: 0, level1: 0, level2: 0, level3: 0, level4: 0, level5: 0, level6: 0, level7: 0, level8: 0, level9: 0 },
-        bonusslots: [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        resources: [],
-        features: [],
-        saveDCBonus: [0, 0, 0, 0, 0, 0],
-        attBonus: [0, 0, 0, 0, 0, 0],
-        castlog: []
-      };
-}
+    name: "",
+    player: "",
+    warlockslotsavailable: 0,
+    charclasses: [{ thisclass: { name: "", subclass: [], hitdie: 6 }, level: 0, selsubclass: { castermult: 0, features: [] } }],
+    race: { stats: [0, 0, 0, 0, 0, 0], speed: [0, 0, 0, 0, 0] },
+    background: { feature: { show: false, description: "", name: "" } },
+    alignment: "",
+    faction: { level1: "", level10: "" },
+    homecountry: "",
+    hometown: "",
+    age: "",
+    hpcurrent: 1,
+    height: "",
+    weight: "",
+    gender: "",
+    eyes: "",
+    hair: "",
+    allies: "",
+    backstory: "",
+    bond: "",
+    personality: "",
+    notes: "",
+    god: "",
+    skin: "",
+    skills: [
+      { name: "Acrobatics", prof: 0, stat: 1, magic: 0 },
+      { name: "Animal Handling", prof: 0, stat: 4, magic: 0 },
+      { name: "Arcana", prof: 0, stat: 3, magic: 0 },
+      { name: "Athletics", prof: 0, stat: 0, magic: 0 },
+      { name: "Deception", prof: 0, stat: 5, magic: 0 },
+      { name: "History", prof: 0, stat: 3, magic: 0 },
+      { name: "Insight", prof: 0, stat: 4, magic: 0 },
+      { name: "Intimidation", prof: 0, stat: 5, magic: 0 },
+      { name: "Investigation", prof: 0, stat: 3, magic: 0 },
+      { name: "Medicine", prof: 0, stat: 4, magic: 0 },
+      { name: "Nature", prof: 0, stat: 3, magic: 0 },
+      { name: "Perception", prof: 0, stat: 4, magic: 0 },
+      { name: "Performance", prof: 0, stat: 5, magic: 0 },
+      { name: "Persuasion", prof: 0, stat: 5, magic: 0 },
+      { name: "Religion", prof: 0, stat: 3, magic: 0 },
+      { name: "Sleight of Hand", prof: 0, stat: 1, magic: 0 },
+      { name: "Stealth", prof: 0, stat: 1, magic: 0 },
+      { name: "Survival", prof: 0, stat: 4, magic: 0 }
+    ],
+    saves: [false, false, false, false, false, false],
+    savebonus: [0, 0, 0, 0, 0, 0],
+    stats: [8, 8, 8, 8, 8, 8],
+    statbonus: [0, 0, 0, 0, 0, 0],
+    initmagic: 0,
+    hpmagic: 0,
+    acmagic: 0,
+    speedmagic: [0, 0, 0, 0, 0],
+    attacks: [],
+    armors: [],
+    feats: [],
+    injuries: [],
+    bonusfeats: 0,
+    proficiencies: "",
+    equipment: [],
+    containers: [
+      { id: 0, name: "Default", capacity: 9999, weightCounts: true, weight: 0 }
+    ],
+    cp: 0,
+    sp: 0,
+    gp: 0,
+    pp: 0,
+    art: 0,
+    gems: 0,
+    size: "medium",
+    capacitybonus: 0,
+    spells: { cantrip: [], level1: [], level2: [], level3: [], level4: [], level5: [], level6: [], level7: [], level8: [], level9: [] },
+    availableslots: { cantrip: 0, level1: 0, level2: 0, level3: 0, level4: 0, level5: 0, level6: 0, level7: 0, level8: 0, level9: 0 },
+    bonusslots: [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    resources: [],
+    features: [],
+    saveDCBonus: [0, 0, 0, 0, 0, 0],
+    attBonus: [0, 0, 0, 0, 0, 0],
+    castlog: []
+  };
+};
 
 export default {
   computed: {
@@ -200,7 +200,7 @@ export default {
       var containers = [];
       var defcontainer = {
         equipment: this.character.equipment.filter((a) => {
-          if(!a.container || this.character.containers.filter(b => {
+          if (!a.container || this.character.containers.filter(b => {
             return a.container === b.id;
           }).length === 0) {
             return true;
@@ -214,9 +214,9 @@ export default {
         contains: 0
       };
       defcontainer.equipment.forEach((e) => {
-          defcontainer.contains += e.weight * e.quantity;
+        defcontainer.contains += e.weight * e.quantity;
       });
-      if(defcontainer.equipment.length > 0) {
+      if (defcontainer.equipment.length > 0) {
         containers.push(defcontainer);
       }
       this.character.containers.forEach((c) => {
@@ -347,13 +347,13 @@ export default {
       });
     },
     getFromServer() {
-      if(this.loggedin) {
+      if (this.loggedin) {
         this.$root.$emit('bv::show::modal', 'loading');
         this.$http.get('/characters?token=' + this.token.token).then(function(res) {
           this.characters = res.body;
           console.log(this.characters);
           this.$root.$emit('bv::hide::modal', 'loading');
-        this.$root.$emit('bv::show::modal', 'servermodal');
+          this.$root.$emit('bv::show::modal', 'servermodal');
         }).catch(function(res) {
           console.log(res);
           alert("error when loading, please try logging off and in again");
@@ -375,7 +375,7 @@ export default {
         console.log(res);
         alert("error when saving, please try logging off and in again");
         this.$root.$emit('bv::hide::modal', 'loading');
-      });      
+      });
     },
     newToServer() {
       this.$root.$emit('bv::show::modal', 'loading');
@@ -393,7 +393,7 @@ export default {
     deleteFromServer(character) {
       this.$root.$emit('bv::show::modal', 'loading');
       this.$http.delete('/characters/' + character._id + '?token=' + this.token.token).then(function(res) {
-        if(res.body.success) {
+        if (res.body.success) {
           this.$root.$emit('bv::hide::modal', 'loading');
           this.$root.$emit('bv::show::modal', 'servermodal');
           this.characters.splice(this.characters.indexOf(character), 1);
@@ -401,7 +401,7 @@ export default {
       }).catch(function(res) {
         console.log(res);
         alert("error when loading, please try logging off and in again");
-        this.$root.$emit('bv::hide::modal', 'loading');        
+        this.$root.$emit('bv::hide::modal', 'loading');
       });
     },
     totalGold() {
@@ -585,7 +585,7 @@ export default {
     addContainer() {
       var id = Date.now();
       console.log(id);
-      this.character.containers.push({...this.newcontain, id: id });
+      this.character.containers.push({ ...this.newcontain, id: id });
       this.newcontain = { name: "", capacity: 0, weightCounts: true, weight: 0 };
       this.containModal = false;
     },
@@ -909,7 +909,7 @@ export default {
           this.character.resources.push({ name: "Sorcery Points", current: Number(a.level), max: Number(a.level), recharge: "longrest" });
         }
         if (a.thisclass.name === "Warlock") {
-          if(Number(a.level) >= 1 && a.selsubclass.name === "The Hexblade") {
+          if (Number(a.level) >= 1 && a.selsubclass.name === "The Hexblade") {
             this.character.resources.push({ name: "Hexblade's Curse", current: 1, max: 1, recharge: "shortrest" });
           }
         }
@@ -952,11 +952,11 @@ export default {
         return Math.floor(Math.random() * 6) + 1;
       }
       this.statRolls = [];
-      for(var x = 0; x < 6; x++) {
+      for (var x = 0; x < 6; x++) {
         var roll = [d6(), d6(), d6(), d6()];
         roll.sort();
         console.log(roll);
-        roll.splice(0,1);
+        roll.splice(0, 1);
         this.statRolls.push(roll.reduce((a, b) => {
           return a + b;
         }, 0));
@@ -971,7 +971,7 @@ export default {
     if (window.outerWidth < 1024) {
       this.mobile = true;
     }
-    if(process.env.NODE_ENV === 'development') {
+    if (process.env.NODE_ENV === 'development') {
       test.tests(this);
       this.reset();
     }

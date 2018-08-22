@@ -12,7 +12,7 @@ const getters = {
 const actions = {
   getAllFeats ({ commit }) {
     return new Promise((resolve) => {
-      Vue.http.get(ctest.baseUrl + 'static/json/feats.json').then((response) => {
+      Vue.http.get(ctest.baseUrl + 'json/feats.json').then((response) => {
         var feats = response.body;
         commit('GET_FEATS', { feats: feats });
         resolve();
