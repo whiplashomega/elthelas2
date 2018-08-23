@@ -307,7 +307,6 @@ export default {
       this.$root.$emit('bv::show::modal', 'loading');
       Vue.http.get('https://www.googleapis.com/drive/v3/files', { params: { access_token: this.googletoken, q: "mimeType contains 'json'", fields: 'files(id, name, size, modifiedTime)' } }).then((response) => {
         this.filelist = response.body.files;
-        console.log(this.filelist);
         this.$root.$emit('bv::hide::modal', 'loading');
         this.$root.$emit('bv::show::modal', 'drivemodal');
       });
@@ -343,7 +342,6 @@ export default {
       Vue.http.post('https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart&name=' + this.character.name + '&access_token=' + this.googletoken,
         payload,
         { headers: { 'Content-Type': 'multipart/related; boundary="' + boundary + '"' } }).then((a) => {
-        console.log(a);
         this.$root.$emit('bv::hide::modal', 'loading');
       });
     },
@@ -359,11 +357,9 @@ export default {
     updateToServer() {
       this.$root.$emit('bv::show::modal', 'loading');
       this.$http.post('/characters/' + this.character._id + '?token=' + this.token.token, { character: this.character }).then(function(res) {
-        console.log(res);
         this.character._id = res.body._id;
         this.$root.$emit('bv::hide::modal', 'loading');
       }).catch(function(res) {
-        console.log(res);
         alert("error when saving, please try logging off and in again");
         this.$root.$emit('bv::hide::modal', 'loading');
       });
@@ -372,11 +368,9 @@ export default {
       this.$root.$emit('bv::show::modal', 'loading');
       this.character._id = undefined;
       this.$http.post('/characters?token=' + this.token.token, { character: this.character }).then(function(res) {
-        console.log(res);
         this.character._id = res.body._id;
         this.$root.$emit('bv::hide::modal', 'loading');
       }).catch(function(res) {
-        console.log(res);
         alert("error when loading, please try logging off and in again");
         this.$root.$emit('bv::hide::modal', 'loading');
       });
@@ -390,7 +384,6 @@ export default {
           this.characters.splice(this.characters.indexOf(character), 1);
         }
       }).catch(function(res) {
-        console.log(res);
         alert("error when loading, please try logging off and in again");
         this.$root.$emit('bv::hide::modal', 'loading');
       });
@@ -528,13 +521,14 @@ export default {
       var shields = [];
       this.character.armors.forEach((a) => {
         a.ac = Number(a.ac);
+        var tmp;
         if (a.equipped) {
           if (a.type === "Heavy Armor") {
             if (a.ac > ac) {
               ac = a.ac;
             }
           } else if (a.type === "Medium Armor") {
-            var tmp = a.ac + Math.min(2, this.getStatMod(1));
+            tmp = a.ac + Math.min(2, this.getStatMod(1));
             if (tmp > ac) {
               ac = tmp;
             }
@@ -575,7 +569,6 @@ export default {
     },
     addContainer() {
       var id = Date.now();
-      console.log(id);
       this.character.containers.push({ ...this.newcontain, id: id });
       this.newcontain = { name: "", capacity: 0, weightCounts: true, weight: 0 };
       this.containModal = false;
@@ -615,10 +608,11 @@ export default {
       this.character.spells[this.displayLevel].splice(this.character.spells[this.displayLevel].indexOf(i), 1);
     },
     addSpell(spell) {
+      let level = "";
       if (spell) {
         spell.class = this.selspellclass;
         if (spell.level !== 'cantrip') {
-          var level = 'level' + spell.level;
+          level = 'level' + spell.level;
         } else {
           level = spell.level;
         }
@@ -641,12 +635,13 @@ export default {
       this.character.castlog.unshift({ ...spell });
     },
     totalslots(level) {
+      let index = 0;
       if (level === 'cantrip') {
         return 'infinite';
       } else {
-        var index = Number(level.substring(5)) - 1;
+        index = Number(level.substring(5)) - 1;
       }
-      var casterlevel = 0;
+      let casterlevel = 0;
       this.character.charclasses.forEach((a) => {
         casterlevel += Math.floor(Number(a.level) * Number(a.selsubclass.castermult));
       });
@@ -692,7 +687,6 @@ export default {
           }
         });
       };
-      console.log(f);
       if (typeof f !== "undefined") {
         r.readAsText(f);
       }
@@ -854,13 +848,13 @@ export default {
           this.character.resources.push({ name: "Wildshape", current: 2, max: 2, recharge: "shortrest" });
         }
         if (a.thisclass.name === "Factotum") {
-          var num = this.getStatMod(3) + Number(a.level) / 2;
+          let num = this.getStatMod(3) + Number(a.level) / 2;
           this.character.resources.push({ name: "Epiphany Points", current: num, max: num, recharge: "shortrest" });
         }
         if (a.thisclass.name === "Fighter") {
           this.character.resources.push({ name: "Second Wind", current: 1, max: 1, recharge: "shortrest" });
           if (Number(a.level) >= 2) {
-            var surge = { name: "Action Surge", current: 1, max: 1, recharge: "shortrest" };
+            let surge = { name: "Action Surge", current: 1, max: 1, recharge: "shortrest" };
             if (Number(a.level) >= 17) {
               surge.current++;
               surge.max++;
@@ -868,11 +862,11 @@ export default {
             this.character.resources.push(surge);
           }
           if (a.level >= 9) {
-            num = Math.floor((Number(a.level) - 5) / 4);
+            let num = Math.floor((Number(a.level) - 5) / 4);
             this.character.resources.push({ name: "Indomitable", current: num, max: num, recharge: "shortrest" });
           }
           if (Number(a.level) >= 3 && a.selsubclass.name === "Battle Master") {
-            var superiority = { name: "Combat Superiority", current: 4, max: 4, recharge: "shortrest" };
+            let superiority = { name: "Combat Superiority", current: 4, max: 4, recharge: "shortrest" };
             if (Number(a.level) >= 7) {
               superiority.current++;
               superiority.max++;
@@ -946,7 +940,6 @@ export default {
       for (var x = 0; x < 6; x++) {
         var roll = [d6(), d6(), d6(), d6()];
         roll.sort();
-        console.log(roll);
         roll.splice(0, 1);
         this.statRolls.push(roll.reduce((a, b) => {
           return a + b;
