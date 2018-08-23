@@ -13,6 +13,8 @@ function round(number, precision) {
   return shift(Math.round(shift(number, +precision)), -precision);
 }
 
+
+
 export default {
   computed: mapGetters({
     cities: 'allCities',
@@ -37,7 +39,9 @@ export default {
     };
   },
   methods: {
-    hideModal () {},
+    hideModal () {
+      return true;
+    },
     showdetails (geoitem, type) {
       if (type === 'city') {
         this.city = geoitem;
@@ -72,26 +76,26 @@ export default {
       this.markers.push(marker);
     },
     clearmarkers () {
-      for (var i = 0; i < this.markers.length; i++) {
+      for (let i = 0; i < this.markers.length; i++) {
         this.map.removeLayer(this.markers[i]);
       }
       this.markers = [];
     },
     showAll () {
       this.clearmarkers();
-      for (var x = 0; x < this.cities.length; x++) {
+      for (let x = 0; x < this.cities.length; x++) {
         this.addmarker(this.cities[x], 'city');
       }
-      for (x = 0; x < this.nations.length; x++) {
+      for (let x = 0; x < this.nations.length; x++) {
         this.addmarker(this.nations[x], 'nation');
       }
-      for (x = 0; x < this.landmarks.length; x++) {
+      for (let x = 0; x < this.landmarks.length; x++) {
         this.addmarker(this.landmarks[x], 'landmark');
       }
-      for (x = 0; x < this.continents.length; x++) {
+      for (let x = 0; x < this.continents.length; x++) {
         this.addmarker(this.continents[x], 'continent');
       }
-      for (x = 0; x < this.features.length; x++) {
+      for (let x = 0; x < this.features.length; x++) {
         this.addmarker(this.features[x], 'feature');
       }
     },
@@ -147,22 +151,23 @@ export default {
         var type = this.$route.params.type;
         var location = this.$route.params.name;
         var item = {};
+        var filteritems = function(a) {
+          return a.name.toLowerCase().replace(/ /g, '') === location.toLowerCase().replace(/ /g, '');
+        };
         if (type === "continent") {
-          item = this.continents.filter(function(a) {
-            return a.name.toLowerCase().replace(/ /g, '') === location.toLowerCase().replace(/ /g, '');
-          })[0];
+          item = this.continents.filter(filteritems)[0];
         }
         if (type === "city") {
-          item = this.cities.filter(function(a) { return a.name.toLowerCase().replace(/ /g, '') === location.toLowerCase().replace(/ /g, ''); })[0];
+          item = this.cities.filter(filteritems)[0];
         }
         if (type === "nation") {
-          item = this.nations.filter(function(a) { return a.name.toLowerCase().replace(/ /g, '') === location.toLowerCase().replace(/ /g, ''); })[0];
+          item = this.nations.filter(filteritems)[0];
         }
         if (type === "landmark") {
-          item = this.landmarks.filter(function(a) { return a.name.toLowerCase().replace(/ /g, '') === location.toLowerCase().replace(/ /g, ''); })[0];
+          item = this.landmarks.filter(filteritems)[0];
         }
         if (type === "feature") {
-          item = this.features.filter(function(a) { return a.name.toLowerCase().replace(/ /g, '') === location.toLowerCase().replace(/ /g, ''); })[0];
+          item = this.features.filter(filteritems)[0];
         }
         this.showdetails(item, type);
       }
@@ -178,11 +183,11 @@ export default {
       this.$store.dispatch('getAllTerritories')
     ]).then(() => {
       this.start();
+      return true;
     });
   },
   watch: {
     '$route' () {
-      console.log('wtf mate');
       this.start();
     }
   },
