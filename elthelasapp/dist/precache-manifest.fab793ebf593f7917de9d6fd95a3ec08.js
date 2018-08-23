@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "9f2d8973dac4691f169713d6c4eb7aa2",
-    "url": "/static/images/maps/nations/Staelia.jpg"
+    "revision": "d8b269d340bc6bd83c08a7c097532cac",
+    "url": "/static/images/maps/nations/Shendarel.jpg"
   },
   {
     "revision": "2c9027a52ecb8b251834138c2fbaa37f",
     "url": "/static/md/book4/theworld.md"
   },
   {
-    "revision": "bbf47a89fc91573241d70940b803a3a7",
-    "url": "/static/images/maps/nations/Stagenheim.jpg"
+    "revision": "ef50ee28a222c6c7a3d285370523b676",
+    "url": "/static/images/maps/nations/Staelia.jpg"
   },
   {
-    "revision": "bf9c474c66aae3bed86c",
-    "url": "/css/chunk-vendors.f93920fb.css"
+    "revision": "4c38a02fffe8d0d51ca3",
+    "url": "/css/chunk-vendors.96f6ef18.css"
   },
   {
     "revision": "82a4fd3fe6368758827dc06e38e22f16",
@@ -32,11 +32,11 @@ self.__precacheManifest = [
     "url": "/fonts/tl-icons.8402c93e.ttf"
   },
   {
-    "revision": "a494acfc4600770127180e0108f47068",
+    "revision": "9909a1a86dd78be6dd66248a5caa969f",
     "url": "/index.html"
   },
   {
-    "revision": "02e8691f4f0c925e3627f5385f93e3fa",
+    "revision": "608a7b7d14ae91dc7cf6c3bcf5b15def",
     "url": "/static/md/book4/pcs.md"
   },
   {
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/json/continents.json"
   },
   {
-    "revision": "449495c7b83143b4d8e1104533b5a353",
+    "revision": "6c471796e254b4755d6bf41f9277d1fa",
     "url": "/json/creatures.json"
   },
   {
@@ -120,6 +120,10 @@ self.__precacheManifest = [
     "url": "/json/spells.json"
   },
   {
+    "revision": "e87af93b6a8eeb08dd06a69a42eacede",
+    "url": "/json/territories.json"
+  },
+  {
     "revision": "25a8936310cdd60e6f19321b863bbc7c",
     "url": "/json/weapons.json"
   },
@@ -128,7 +132,7 @@ self.__precacheManifest = [
     "url": "/robots.txt"
   },
   {
-    "revision": "68e3d16ac9b9e082470820d7461b5c8f",
+    "revision": "c1b3ceaa78cfbdb60323daa25e6c2dc7",
     "url": "/static/images/apple-touch-icon.png"
   },
   {
@@ -144,19 +148,19 @@ self.__precacheManifest = [
     "url": "/static/images/back_enabled.png"
   },
   {
-    "revision": "e9a8062cac6c8ad85b626af5139889b3",
+    "revision": "12e44c81be439f7318c59e398cbdb5cb",
     "url": "/static/images/castle1.jpg"
   },
   {
-    "revision": "7d0736e6a733442fed527d30ed31ba0c",
+    "revision": "84db88f183ec95a6b09de660950919ed",
     "url": "/static/images/castle2.jpg"
   },
   {
-    "revision": "a26006c42f2ffac85cbd580bb9ddbbd3",
+    "revision": "bfaa35b4236be3123fff52a5bde318db",
     "url": "/static/images/ddlogo.png"
   },
   {
-    "revision": "348a0209a28c51092c6e438c0f81160a",
+    "revision": "b99fc6d8c14526dd3a8235a76d0a38f1",
     "url": "/static/images/death.png"
   },
   {
@@ -176,11 +180,11 @@ self.__precacheManifest = [
     "url": "/static/images/giphy.gif"
   },
   {
-    "revision": "33f2a2764578de574cda24ae35eef54e",
+    "revision": "172c13e86666407629bfc5b572ca198c",
     "url": "/static/images/holysymbol/alohim-symbol.png"
   },
   {
-    "revision": "de92a756caa13786aebd4a965722d05a",
+    "revision": "0804d81404b211165cca5baa5a8071d0",
     "url": "/static/images/holysymbol/amathera.jpg"
   },
   {
@@ -192,27 +196,27 @@ self.__precacheManifest = [
     "url": "/static/images/layers.png"
   },
   {
-    "revision": "eabdd628246521892b552b2f9d33fc8a",
+    "revision": "8a2402366f3815d607cd0b82db866602",
     "url": "/static/images/maps/castleoctavius.png"
   },
   {
-    "revision": "17610a5e27aa65a73c5530877623ba88",
+    "revision": "f5522b5e556d12b08b810d37fc8d54a3",
     "url": "/static/images/maps/castleoctaviusdungeon.png"
   },
   {
-    "revision": "c46e1b9beb7dba8aad784c3b307a018f",
+    "revision": "6cd741480d1464950b389109ff61dbd1",
     "url": "/static/images/maps/cities/curestan.png"
   },
   {
-    "revision": "00f4fecafd886a15444c72733ca12bc5",
+    "revision": "cf170aca514e992018b75f0890cdb1ad",
     "url": "/static/images/maps/cities/curmestin.png"
   },
   {
-    "revision": "e09d345253798b172e4db7ebec1621d4",
+    "revision": "ff1c546fd7995717273ae07df4b2ef77",
     "url": "/static/images/maps/cities/northport.png"
   },
   {
-    "revision": "d4a9a5666af6408d7521c718d3bf0cbc",
+    "revision": "cf024041a51378cf306a5057b4f327f9",
     "url": "/static/images/maps/cities/peloria.jpg"
   },
   {
@@ -220,147 +224,147 @@ self.__precacheManifest = [
     "url": "/static/images/maps/cities/strovenguard.png"
   },
   {
-    "revision": "dce2b258c0a818806c57984926c03bd1",
+    "revision": "fa6dcddf124129558d152b493c36f9bd",
     "url": "/static/images/maps/dungeon/marisislandfortress.jpg"
   },
   {
-    "revision": "1598622c9c7a39028adda52c0eb8c258",
+    "revision": "05c4e39efa8c33e632c0aebf9f7394d2",
     "url": "/static/images/maps/ElthelasMap.jpg"
   },
   {
-    "revision": "d9625d5d97ee9e20c6cd2d24ba0ed3a4",
+    "revision": "823642e329686955c25bc65a62c5c901",
     "url": "/static/images/maps/hexpaper.png"
   },
   {
-    "revision": "9bdcaf5b49f0438a9d56c72df3edff01",
+    "revision": "612d17588839cbcf1b6b9431e6ab3a70",
     "url": "/static/images/maps/nations/Alfadir.jpg"
   },
   {
-    "revision": "cc89302429eecd914e122ade71b13c96",
+    "revision": "6096ba7d7c5bc596f78213d1b6b9b04b",
     "url": "/static/images/maps/nations/Arad.jpg"
   },
   {
-    "revision": "1800e407b25841073803ed18df6075dd",
+    "revision": "511837c89bba3d49a87b077e2a3c2e40",
     "url": "/static/images/maps/nations/Atyrea.jpg"
   },
   {
-    "revision": "dc9d45266c1fee3fd36dcd2af89b9202",
+    "revision": "a5670331dce8177b115ce8c299e46c72",
     "url": "/static/images/maps/nations/CompleteMap.jpg"
   },
   {
-    "revision": "c1b4b8b4df13e339fb370f8884992925",
+    "revision": "eb7b7a5efa7cf5c5638568dc966aaed2",
     "url": "/static/images/maps/nations/Curinor.jpg"
   },
   {
-    "revision": "5a79243a85dc9c6faae3766f3e6f2bc7",
+    "revision": "d28e22537c84122dac16f246af99b2df",
     "url": "/static/images/maps/nations/Degak'Ta.jpg"
   },
   {
-    "revision": "b3f97bf55b18966529690aa019870d6a",
+    "revision": "ede4bb971c72ac18fcfaa0809c1c7b32",
     "url": "/static/images/maps/nations/Demal Thor.jpg"
   },
   {
-    "revision": "281ea58ee7046a5a6401e47c41acfbe6",
+    "revision": "d8f21767d8e4c37afbfbdb87bf8cd0e8",
     "url": "/static/images/maps/nations/Dera.jpg"
   },
   {
-    "revision": "008d07bff8874051a9f7231892771cef",
+    "revision": "1aeb3164147309be6be55b5d2681ea20",
     "url": "/static/images/maps/nations/Dera'Dragorim.jpg"
   },
   {
-    "revision": "3138cf43306944ef992f3661bc041772",
+    "revision": "bc833584d59eba4ec607a06c14be16a6",
     "url": "/static/images/maps/nations/Dormania.jpg"
   },
   {
-    "revision": "d1a43b7dec8b77ef6627f16a4080c122",
+    "revision": "e7039e5ff8d1d5cf94771edc1caeb782",
     "url": "/static/images/maps/nations/Elathia.jpg"
   },
   {
-    "revision": "841efffc825f32397146abbf6f2ca036",
+    "revision": "908449f6f546ccec284d5c08da7d34d8",
     "url": "/static/images/maps/nations/Eldoran.jpg"
   },
   {
-    "revision": "6c5645de131ff5ecd6e30f8eee888014",
+    "revision": "9b9b3059f929f1aea7c6f74d894976c7",
     "url": "/static/images/maps/nations/Gerasalim.jpg"
   },
   {
-    "revision": "638eb4ecad39bd26471e013885d3a632",
+    "revision": "41369cc13b76a58dc4ea4a9d0df63cbf",
     "url": "/static/images/maps/nations/Gnarra.jpg"
   },
   {
-    "revision": "8e2607732e59b8b2a907e6a718b9ec04",
+    "revision": "93dc9f35507999c23d99f6b2972cf1d5",
     "url": "/static/images/maps/nations/Gorgro.jpg"
   },
   {
-    "revision": "e4567c30a3286bfd1ffb980174ffc618",
+    "revision": "6bd2d9baf25c3ae923382055526ffb43",
     "url": "/static/images/maps/nations/Hisru'de'tan.jpg"
   },
   {
-    "revision": "0f717163d760a0e30ddd22273c6cf59b",
+    "revision": "7d62862332c7e57819b26084273d8faa",
     "url": "/static/images/maps/nations/Kandor.jpg"
   },
   {
-    "revision": "533b17dc9ec09fee4214dd55c7cd0708",
+    "revision": "524d48bd4b6baa6e1c022dfa77e90334",
     "url": "/static/images/maps/nations/Malinval.jpg"
   },
   {
-    "revision": "93a3171aab409cb4bf96011629e30a75",
+    "revision": "80a24fcd5580de3e26307cac92c4db54",
     "url": "/static/images/maps/nations/maptile.jpg"
   },
   {
-    "revision": "4655ad87e7a0046688a9e3f3b8c8f5f9",
+    "revision": "47e4d14803cefac329af2985d41d33b0",
     "url": "/static/images/maps/nations/Morrindim.jpg"
   },
   {
-    "revision": "2d4ec867eba7b0a8374db42974c42bb7",
+    "revision": "31be0102795deb2cf3e666bf4a37396c",
     "url": "/static/images/maps/nations/Nerim.jpg"
   },
   {
-    "revision": "ecf31d881b0391a93108c0564818c30f",
+    "revision": "745b878c13385d16efa6781b8b22ff2c",
     "url": "/static/images/maps/nations/Olda.jpg"
   },
   {
-    "revision": "62cf63abd7807c0decaaee2ee17b0bec",
+    "revision": "180f141945ea902c350b6cbbe6585dd0",
     "url": "/static/images/maps/nations/Riftlan.jpg"
   },
   {
-    "revision": "6fcb867eb6b23f606e599bf946f61365",
+    "revision": "1643fca143e65c37a86136dab36f079d",
     "url": "/static/images/maps/nations/Sage.jpg"
   },
   {
-    "revision": "eef2328150a06676c066a267a3a8ed9e",
+    "revision": "379da914adcaf8e5057821ab1ab02a3b",
     "url": "/static/images/maps/nations/Seran.jpg"
   },
   {
-    "revision": "bd1e6891e4db3ac4a5f6c722b9a4ca6e",
-    "url": "/static/images/maps/nations/Shendarel.jpg"
+    "revision": "eb57245da4fda59e17e1",
+    "url": "/js/app.8d1c8f85.js"
   },
   {
-    "revision": "c18607eb56406f431c68",
-    "url": "/js/app.9350f856.js"
+    "revision": "4c38a02fffe8d0d51ca3",
+    "url": "/js/chunk-vendors.50a0c1f6.js"
   },
   {
-    "revision": "bf9c474c66aae3bed86c",
-    "url": "/js/chunk-vendors.18cf1cfa.js"
+    "revision": "ffbba2f94a17fb70cee670a1bbee649c",
+    "url": "/static/images/maps/nations/Stagenheim.jpg"
   },
   {
-    "revision": "ea9f34662af0261cdd7f84da8f1325c3",
+    "revision": "282a36489325424ab7bdbeec8d6cf3e1",
     "url": "/static/images/maps/nations/Terron.jpg"
   },
   {
-    "revision": "6b7dbc2ef261f0c119c532623342abdb",
+    "revision": "8b8009b626fbb62aeeba316e7bdef0f6",
     "url": "/static/images/maps/nations/Zelfir.jpg"
   },
   {
-    "revision": "4fc29e9e132f131225e5dcb8eece6030",
+    "revision": "f32e3e2f8f23bda9351c3a459298078c",
     "url": "/static/images/maps/raiderbase-level1.png"
   },
   {
-    "revision": "06c82be235d18ee719bbc3b6b5ab511b",
+    "revision": "c4de78c002cd1ff95c18054843ca6732",
     "url": "/static/images/maps/raiderbase-level2.png"
   },
   {
-    "revision": "d24e1e013cb5d9241287728eac2a4dc5",
+    "revision": "28b9e3dd3a7a9eb45079756609f442dc",
     "url": "/static/images/maps/raiderbase-level3.png"
   },
   {
@@ -376,11 +380,11 @@ self.__precacheManifest = [
     "url": "/static/images/marker-shadow.png"
   },
   {
-    "revision": "b26b42b57012af9f2087a5caefe405a1",
+    "revision": "0d7bd044e0ef4c8ea39dace4f362fa3d",
     "url": "/static/images/mountaincity.jpg"
   },
   {
-    "revision": "7c49ce68aed9f17235f1304cfadd4416",
+    "revision": "0b5b7cfcaa65222b984e6ea9b5f2cccb",
     "url": "/static/images/paper.gif"
   },
   {
@@ -388,7 +392,7 @@ self.__precacheManifest = [
     "url": "/static/images/paper.jpg"
   },
   {
-    "revision": "b6938c6ddc4d12297151a6331b1cfdec",
+    "revision": "7978dc57e782f23194d5470b8cb95c56",
     "url": "/static/images/races/aasimar.jpg"
   },
   {
@@ -404,15 +408,15 @@ self.__precacheManifest = [
     "url": "/static/images/races/childofmolton.jpg"
   },
   {
-    "revision": "e7115e1003dd23bfcd8b04a1be8c7f47",
+    "revision": "5c38bae69878013db1ce346c512f6d1a",
     "url": "/static/images/races/deranhuman.jpg"
   },
   {
-    "revision": "46bcacd9f7525cc612bc1a8be038da87",
+    "revision": "de0eef5509c00a366a761bbe41f8eee8",
     "url": "/static/images/races/dragonborn.jpg"
   },
   {
-    "revision": "34e6fc3331964352af3eb330b7cb1d36",
+    "revision": "65f24ea31bdf770f3006cad884558ffa",
     "url": "/static/images/races/dwarf.jpg"
   },
   {
@@ -424,23 +428,23 @@ self.__precacheManifest = [
     "url": "/static/images/races/elathiangnome.jpg"
   },
   {
-    "revision": "2b8d040d26bedb5ef8de19d948c54415",
+    "revision": "2cc308354568e3406ad2f3a635a2bd9e",
     "url": "/static/images/races/faelin.png"
   },
   {
-    "revision": "6f11c43781d7ae6f4006e13b0ea59a03",
+    "revision": "944c9826db243250e757572cb94499cc",
     "url": "/static/images/races/feyri.jpg"
   },
   {
-    "revision": "73d3972bc009cd3f33629af41257667c",
+    "revision": "6943c04863d1db25a2f559aedb818ef6",
     "url": "/static/images/races/firbolg.jpg"
   },
   {
-    "revision": "cdb66c80f2f1bc735a283d7117a6b8e6",
+    "revision": "fb64e9fb13a2b0a7e9fcb408b38abb00",
     "url": "/static/images/races/firegenasi.jpg"
   },
   {
-    "revision": "b97e894be6e2cfaab40fc22e57809c4d",
+    "revision": "e39d4975a2a0b636a4508815c88a9136",
     "url": "/static/images/races/goblin.jpg"
   },
   {
@@ -448,7 +452,7 @@ self.__precacheManifest = [
     "url": "/static/images/races/goliath.jpg"
   },
   {
-    "revision": "eb0b7cef2210004f8bb79784854a165f",
+    "revision": "12fc4c8d61b5546356e6f2bb551574d4",
     "url": "/static/images/races/gruntorc.jpg"
   },
   {
@@ -460,7 +464,7 @@ self.__precacheManifest = [
     "url": "/static/images/races/halfelf.jpg"
   },
   {
-    "revision": "7ae8b039bc7f1a5cce1c996a3e4409bf",
+    "revision": "75c571827d8ac8c3ff1c6fa7fe861b87",
     "url": "/static/images/races/highelf.jpg"
   },
   {
@@ -476,11 +480,11 @@ self.__precacheManifest = [
     "url": "/static/images/races/hobgoblin.jpg"
   },
   {
-    "revision": "fa724f241796b06b26de0c6f1bcb1bc6",
+    "revision": "81d3c991e17b59230e0601bf2eebcbd0",
     "url": "/static/images/races/imperialhuman.jpg"
   },
   {
-    "revision": "3b4aa8728b6c75e747ff76a563e6bc3c",
+    "revision": "79d95cd4c3c37d9bd9f829ca826b69a6",
     "url": "/static/images/races/kobold.jpg"
   },
   {
@@ -488,11 +492,11 @@ self.__precacheManifest = [
     "url": "/static/images/races/lightfoothalfling.jpg"
   },
   {
-    "revision": "f39da57df3087823d743dbf91bcd40da",
+    "revision": "11294437ebd3f239975c3f9a1f83e4ab",
     "url": "/static/images/races/lizardfolk.jpg"
   },
   {
-    "revision": "08a856f6aa5bd080c53e2e2cecedf88b",
+    "revision": "5d5a654ae42a39dd8c3ac6ed40d7b6d4",
     "url": "/static/images/races/moonelf.jpg"
   },
   {
@@ -500,7 +504,7 @@ self.__precacheManifest = [
     "url": "/static/images/races/neranhuman.jpg"
   },
   {
-    "revision": "488c9783aceddf5b6bdcfbbd43ea5a84",
+    "revision": "2bfc6b9e7c154ba6d8f8cd1bf5255291",
     "url": "/static/images/races/sandorc.jpg"
   },
   {
@@ -516,23 +520,23 @@ self.__precacheManifest = [
     "url": "/static/images/races/stagengnome.jpg"
   },
   {
-    "revision": "0c542498bb7e0a8bda544dae626228a4",
+    "revision": "272bad49d24cd24b2767936b4aef705e",
     "url": "/static/images/races/stronghearthalfling.jpg"
   },
   {
-    "revision": "db4826bcf8e508bc2316c2b853d4bf8c",
+    "revision": "5ee5a59a50e43805d629edede76ed19c",
     "url": "/static/images/races/tabaxi.jpg"
   },
   {
-    "revision": "ad462c819c78e523d8bdff393412edcf",
+    "revision": "e7ec3e5c4dfc61a4dcbe96ea237ecc96",
     "url": "/static/images/races/tallfellowhalfling.jpg"
   },
   {
-    "revision": "89453504c8f149c8485c874b8ddf36ad",
+    "revision": "8a5582bb0e74b016353b7378d21bb76e",
     "url": "/static/images/races/tiefling.jpg"
   },
   {
-    "revision": "ebcf219b79e0d1b21d4745f75ad7e05c",
+    "revision": "ab02ddd0cb87e40b588df539023ff5fa",
     "url": "/static/images/races/trollkin.png"
   },
   {
@@ -540,7 +544,7 @@ self.__precacheManifest = [
     "url": "/static/images/races/watergenasi.jpg"
   },
   {
-    "revision": "2d78a0b6bee8d7965934460ac98cafe2",
+    "revision": "940832a5fdae23e17d440da97c76513d",
     "url": "/static/images/races/wildelf.jpg"
   },
   {
@@ -576,19 +580,19 @@ self.__precacheManifest = [
     "url": "/static/images/Sorting icons.psd"
   },
   {
-    "revision": "883e448b58cb1c9a4698151e400f94a1",
+    "revision": "eee156dac29e7319540324498d0c8251",
     "url": "/static/images/swordlogo.png"
   },
   {
-    "revision": "449ca6496ea41a7203fa3e523eb53012",
+    "revision": "c00c631ae9838677db9260a186c8fefa",
     "url": "/static/images/swordshieldlogo.png"
   },
   {
-    "revision": "815aa09ec6773d4f060e3ebd0dc0c73d",
+    "revision": "f21ea04f79eeec4c2e273228055c2ccf",
     "url": "/static/images/Tilda.jpg"
   },
   {
-    "revision": "21c7e7c6815105ddc96e0a79deb59f55",
+    "revision": "dc976522e1a2a837c16deac7cacd6b16",
     "url": "/static/md/book4/chapter1.md"
   },
   {
@@ -664,8 +668,8 @@ self.__precacheManifest = [
     "url": "/static/md/book4/curestan.md"
   },
   {
-    "revision": "c18607eb56406f431c68",
-    "url": "/css/app.50159f56.css"
+    "revision": "eb57245da4fda59e17e1",
+    "url": "/css/app.8d4c00a0.css"
   },
   {
     "revision": "d41d8cd98f00b204e9800998ecf8427e",
