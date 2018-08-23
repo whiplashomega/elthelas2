@@ -1,6 +1,70 @@
 import { mapGetters } from 'vuex';
 import marked from 'marked';
 
+const modalInfo = {
+  name: "",
+  tags: "",
+  size: "",
+  cr: "",
+  type: "",
+  subtype: "",
+  alignment: "",
+  ac: "",
+  acdesc: "",
+  hp: "",
+  hpdesc: "",
+  speed: "",
+  str: "",
+  dex: "",
+  con: "",
+  int: "",
+  wis: "",
+  cha: "",
+  skills: "",
+  saves: "",
+  senses: "",
+  damageimmunities: "",
+  conditionimmunities: "",
+  damageresistances: "",
+  languages: "",
+  locations: "",
+  latlong: "",
+  description: ""
+};
+
+const crxptable = [
+  { cr: 0, xp: 10 },
+  { cr: 0.125, xp: 25 },
+  { cr: 0.25, xp: 50 },
+  { cr: 0.5, xp: 100 },
+  { cr: 1, xp: 200 },
+  { cr: 2, xp: 450 },
+  { cr: 3, xp: 700 },
+  { cr: 4, xp: 1100 },
+  { cr: 5, xp: 1800 },
+  { cr: 6, xp: 2300 },
+  { cr: 7, xp: 2900 },
+  { cr: 8, xp: 3900 },
+  { cr: 9, xp: 5000 },
+  { cr: 10, xp: 5900 },
+  { cr: 11, xp: 7200 },
+  { cr: 12, xp: 8400 },
+  { cr: 13, xp: 10000 },
+  { cr: 14, xp: 11500 },
+  { cr: 15, xp: 13000 },
+  { cr: 16, xp: 15000 },
+  { cr: 17, xp: 18000 },
+  { cr: 18, xp: 20000 },
+  { cr: 19, xp: 22000 },
+  { cr: 20, xp: 25000 },
+  { cr: 21, xp: 33000 },
+  { cr: 22, xp: 41000 },
+  { cr: 23, xp: 50000 },
+  { cr: 24, xp: 62000 },
+  { cr: 26, xp: 90000 },
+  { cr: 30, xp: 155000 }
+];
+
 export default {
   computed: mapGetters({
     creatures: "allCreatures"
@@ -20,36 +84,7 @@ export default {
         sortBy: null,
         sortDesc: false,
         filterBy: [ "name", "size", "cr", "type", "subtype", "alignment", "description" ],
-        modalInfo: {
-          name: "",
-          tags: "",
-          size: "",
-          cr: "",
-          type: "",
-          subtype: "",
-          alignment: "",
-          ac: "",
-          acdesc: "",
-          hp: "",
-          hpdesc: "",
-          speed: "",
-          str: "",
-          dex: "",
-          con: "",
-          int: "",
-          wis: "",
-          cha: "",
-          skills: "",
-          saves: "",
-          senses: "",
-          damageimmunities: "",
-          conditionimmunities: "",
-          damageresistances: "",
-          languages: "",
-          locations: "",
-          latlong: "",
-          description: ""
-        }
+        modalInfo: { ...modalInfo }
       },
       encountercreatures: [],
       nextIndex: 0,
@@ -64,36 +99,9 @@ export default {
   },
   methods: {
     xpByCR (cr) {
-      if (cr === 0) return 10;
-      else if (cr === 0.125) return 25;
-      else if (cr === 0.25) return 50;
-      else if (cr === 0.5) return 100;
-      else if (cr === 1) return 200;
-      else if (cr === 2) return 450;
-      else if (cr === 3) return 700;
-      else if (cr === 4) return 1100;
-      else if (cr === 5) return 1800;
-      else if (cr === 6) return 2300;
-      else if (cr === 7) return 2900;
-      else if (cr === 8) return 3900;
-      else if (cr === 9) return 5000;
-      else if (cr === 10) return 5900;
-      else if (cr === 11) return 7200;
-      else if (cr === 12) return 8400;
-      else if (cr === 13) return 10000;
-      else if (cr === 14) return 11500;
-      else if (cr === 15) return 13000;
-      else if (cr === 16) return 15000;
-      else if (cr === 17) return 18000;
-      else if (cr === 18) return 20000;
-      else if (cr === 19) return 22000;
-      else if (cr === 20) return 25000;
-      else if (cr === 21) return 33000;
-      else if (cr === 22) return 41000;
-      else if (cr === 23) return 50000;
-      else if (cr === 24) return 62000;
-      else if (cr === 26) return 90000;
-      else if (cr === 30) return 155000;
+      return crxptable.find((a) => {
+        a.cr === cr;
+      }).xp;
     },
     filter (a) {
       var filter = this.creaturestable.filterBy;
