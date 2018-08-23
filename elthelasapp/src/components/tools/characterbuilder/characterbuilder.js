@@ -1,6 +1,7 @@
 import { mapGetters } from 'vuex';
 import Vue from 'vue';
 import test from '@/tests/unit/charbuilder.test.js';
+import helpers from '@/helpers/helpers';
 
 var newCharacter = function() {
   return {
@@ -348,17 +349,7 @@ export default {
     },
     getFromServer() {
       if (this.loggedin) {
-        this.$root.$emit('bv::show::modal', 'loading');
-        this.$http.get('/characters?token=' + this.token.token).then(function(res) {
-          this.characters = res.body;
-          console.log(this.characters);
-          this.$root.$emit('bv::hide::modal', 'loading');
-          this.$root.$emit('bv::show::modal', 'servermodal');
-        }).catch(function(res) {
-          console.log(res);
-          alert("error when loading, please try logging off and in again");
-          this.$root.$emit('bv::hide::modal', 'loading');
-        });
+        helpers.loading(this);
       }
     },
     loadChar(character) {
