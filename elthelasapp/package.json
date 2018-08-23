@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve --port $PORT --public 49cb7ebae558458bae721bacb45b1685.vfs.cloud9.us-east-2.amazonaws.com",
-    "build": "vue-cli-service build",
+    "serve": "gulp & vue-cli-service serve --port $PORT --public 49cb7ebae558458bae721bacb45b1685.vfs.cloud9.us-east-2.amazonaws.com",
+    "build": "gulp & vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

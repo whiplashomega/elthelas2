@@ -100,7 +100,7 @@ export default {
   methods: {
     xpByCR (cr) {
       return crxptable.find((a) => {
-        a.cr === cr;
+        return a.cr === cr;
       }).xp;
     },
     filter (a) {

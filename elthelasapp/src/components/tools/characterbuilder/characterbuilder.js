@@ -341,8 +341,9 @@ export default {
       closeDelim;
       Vue.http.post('https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart&name=' + this.character.name + '&access_token=' + this.googletoken,
         payload,
-        { headers: { 'Content-Type': 'multipart/related; boundary="' + boundary + '"' } }).then((a) => {
+        { headers: { 'Content-Type': 'multipart/related; boundary="' + boundary + '"' } }).then(() => {
         this.$root.$emit('bv::hide::modal', 'loading');
+        return;
       });
     },
     getFromServer() {

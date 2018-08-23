@@ -158,7 +158,7 @@ gulp.task('creaturesjson', function(done) {
     creaturearray.push(creature);
   });
   if(creaturearray.length === files.length) {
-    fs.writeFile("./elthelasapp/static/json/creatures.json", JSON.stringify({ "model": "Creature", "documents": creaturearray }), "utf-8", function() {
+    fs.writeFile("./elthelasapp/public/json/creatures.json", JSON.stringify({ "model": "Creature", "documents": creaturearray }), "utf-8", function() {
       console.log("writing creatures.json");
       done(); 
     });
@@ -199,7 +199,7 @@ gulp.task('spellsjson', function(done) {
     spellarray.push(spell);
   });
   if(spellarray.length === files.length) {
-    fs.writeFile("./elthelasapp/static/json/spells.json", JSON.stringify({ "model": "Spell", "documents": spellarray }), "utf-8", function() {
+    fs.writeFile("./elthelasapp/public/json/spells.json", JSON.stringify({ "model": "Spell", "documents": spellarray }), "utf-8", function() {
       console.log("writing spells.json");
       done();
     });
@@ -278,4 +278,4 @@ gulp.task('build', function(done) {
   });  
 });
 //task groups
-gulp.task('default', gulp.series('jsonlint', gulp.parallel('spellsjson', 'historyjson', 'creaturesjson', 'jsoncompile'), 'build'));
+gulp.task('default', gulp.series('jsonlint', gulp.parallel('spellsjson', 'historyjson', 'creaturesjson', 'jsoncompile')));
