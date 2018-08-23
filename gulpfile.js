@@ -3,7 +3,6 @@ var gulp = require('gulp'),
 var console = {};
 console.log = require('fancy-log');
 var jsonlint = require("gulp-jsonlint");
-var build = require('./elthelasapp/build/build.js');
 
 gulp.task('historyjson', function (done) {
   var files = fs.readdirSync("./data/historicalevents");
@@ -248,28 +247,30 @@ function jsonmin(sourcefile, destination) {
 gulp.task('jsoncompile', function(done) {
   console.log("starting");
   Promise.all([
-    jsonmin('./data/feats.json', './elthelasapp/static/json/feats.json'), //weapons
-    jsonmin('./data/weapons.json', './elthelasapp/static/json/weapons.json'), //armor
-    jsonmin('./data/armor.json', './elthelasapp/static/json/armor.json'), //equipment
-    jsonmin('./data/equipment.json', './elthelasapp/static/json/equipment.json'), //magic items
-    jsonmin('./data/magicitems.json', './elthelasapp/static/json/magicitems.json'), //gods
-    compiledir("./data/gods", "./elthelasapp/static/json/gods.json", "God"), //races
-    compiledir("./data/races", "./elthelasapp/static/json/races.json", "Race"), //organizations
-    compiledir("./data/organizations", "./elthelasapp/static/json/organizations.json", "Organization"), //divines
-    compiledir("./data/divines", "./elthelasapp/static/json/divines.json", "Divine"), //cities
-    compiledir("./data/cities", "./elthelasapp/static/json/cities.json", "City"), //continents
-    compiledir("./data/continents", "./elthelasapp/static/json/continents.json", "Continent"), //features
-    compiledir("./data/features", "./elthelasapp/static/json/features.json", "Feature"), //landmarks
-    compiledir("./data/landmarks", "./elthelasapp/static/json/landmarks.json", "Landmark"), //nations
-    compiledir("./data/nations", "./elthelasapp/static/json/nations.json", "Nation"), //backgrounds
-    compiledir("./data/backgrounds", "./elthelasapp/static/json/backgrounds.json", "Background"), //classes
-    compiledir("./data/classes", "./elthelasapp/static/json/classes.json", "CharClass")]).then(function() {
+    jsonmin('./data/feats.json', './elthelasapp/public/json/feats.json'), //weapons
+    jsonmin('./data/weapons.json', './elthelasapp/public/json/weapons.json'), //armor
+    jsonmin('./data/armor.json', './elthelasapp/public/json/armor.json'), //equipment
+    jsonmin('./data/equipment.json', './elthelasapp/public/json/equipment.json'), //magic items
+    jsonmin('./data/magicitems.json', './elthelasapp/public/json/magicitems.json'), //gods
+    compiledir("./data/gods", "./elthelasapp/public/json/gods.json", "God"), //races
+    compiledir("./data/races", "./elthelasapp/public/json/races.json", "Race"), //organizations
+    compiledir("./data/organizations", "./elthelasapp/public/json/organizations.json", "Organization"), //divines
+    compiledir("./data/divines", "./elthelasapp/public/json/divines.json", "Divine"), //cities
+    compiledir("./data/cities", "./elthelasapp/public/json/cities.json", "City"), //continents
+    compiledir("./data/continents", "./elthelasapp/public/json/continents.json", "Continent"), //features
+    compiledir("./data/features", "./elthelasapp/public/json/features.json", "Feature"), //landmarks
+    compiledir("./data/landmarks", "./elthelasapp/public/json/landmarks.json", "Landmark"), //nations
+    compiledir("./data/nations", "./elthelasapp/public/json/nations.json", "Nation"), //backgrounds
+    compiledir("./data/backgrounds", "./elthelasapp/public/json/backgrounds.json", "Background"), //classes
+    compiledir("./data/classes", "./elthelasapp/public/json/classes.json", "CharClass"),
+    compiledir("./data/territories", "./elthelasapp/public/json/territories.json", "Territories")]).then(function() {
       console.log("all finished");
       done();
     });
 });
 
 gulp.task('build', function(done) {
+  var build = require('./elthelasapp/build/build.js');
   console.log("starting build task");
   build().then(function() {
     console.log("supposedly done");
