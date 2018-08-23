@@ -16,6 +16,7 @@ import races from './races';
 import classes from './classes';
 import auth from './auth';
 import feats from './feats';
+import territories from './territories';
 
 Vue.use(Vuex);
 
@@ -36,7 +37,8 @@ export default new Vuex.Store({
     races,
     classes,
     auth,
-    feats
+    feats,
+    territories
   },
   state: {
     title: "Test"
