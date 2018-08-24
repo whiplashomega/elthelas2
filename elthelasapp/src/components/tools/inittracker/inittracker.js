@@ -33,9 +33,17 @@ export default {
       this.initchars.push({
         id: this.nextid,
         name: "",
+        mod: 0,
         init: 0
       });
       this.nextid = this.nextid + 1;
+    },
+    currentClass(c) {
+      if (this.current === c.id) {
+        return "current";
+      } else {
+        return "";
+      }
     },
     removeInit(id) {
       var index = 0;
@@ -83,14 +91,26 @@ export default {
         helpers.loading(this);
       }
     },
+    getStatTotal(character, i) {
+      return Number(character.stats[i]) + Number(character.race.stats[i]) + Number(character.statbonus[i]);
+    },
+    getStatMod(character, i) {
+      return Math.floor(this.getStatTotal(character, i) / 2) - 5;
+    },
     loadChar(character) {
       this.initchars.push({
         id: this.nextid,
         name: character.name,
+        mod: this.getStatMod(character, 1) + Number(character.initmagic),
         init: 0
       });
       this.nextid = this.nextid + 1;
       this.$root.$emit('bv::hide::modal', 'servermodal');
+    },
+    roll () {
+      this.initchars.forEach((character) => {
+        character.init = Number(character.mod) + Math.floor(Math.random() * 20) + 1;
+      });
     },
     charlevel(character) {
       var level = 0;

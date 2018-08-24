@@ -13,8 +13,6 @@ function round(number, precision) {
   return shift(Math.round(shift(number, +precision)), -precision);
 }
 
-
-
 export default {
   computed: mapGetters({
     cities: 'allCities',

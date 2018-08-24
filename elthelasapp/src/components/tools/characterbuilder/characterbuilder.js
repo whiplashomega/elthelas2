@@ -343,7 +343,7 @@ export default {
         payload,
         { headers: { 'Content-Type': 'multipart/related; boundary="' + boundary + '"' } }).then(() => {
         this.$root.$emit('bv::hide::modal', 'loading');
-        return;
+        return true;
       });
     },
     getFromServer() {
@@ -360,7 +360,7 @@ export default {
       this.$http.post('/characters/' + this.character._id + '?token=' + this.token.token, { character: this.character }).then(function(res) {
         this.character._id = res.body._id;
         this.$root.$emit('bv::hide::modal', 'loading');
-        return;
+        return true;
       }).catch(function() {
         alert("error when saving, please try logging off and in again");
         this.$root.$emit('bv::hide::modal', 'loading');
@@ -372,7 +372,7 @@ export default {
       this.$http.post('/characters?token=' + this.token.token, { character: this.character }).then(function(res) {
         this.character._id = res.body._id;
         this.$root.$emit('bv::hide::modal', 'loading');
-        return;
+        return true;
       }).catch(function() {
         alert("error when loading, please try logging off and in again");
         this.$root.$emit('bv::hide::modal', 'loading');
@@ -386,7 +386,7 @@ export default {
           this.$root.$emit('bv::show::modal', 'servermodal');
           this.characters.splice(this.characters.indexOf(character), 1);
         }
-        return;
+        return true;
       }).catch(function() {
         alert("error when loading, please try logging off and in again");
         this.$root.$emit('bv::hide::modal', 'loading');
