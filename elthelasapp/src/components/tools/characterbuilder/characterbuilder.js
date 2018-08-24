@@ -646,9 +646,13 @@ export default {
         index = Number(level.substring(5)) - 1;
       }
       let casterlevel = 0;
-      this.character.charclasses.forEach((a) => {
-        casterlevel += Math.floor(Number(a.level) * Number(a.selsubclass.castermult));
-      });
+      if (this.character.charclasses.length === 1) {
+        casterlevel += Math.ceil(Number(this.character.charclasses[0].level) * Number(this.character.charclasses[0].selsubclass.castermult));
+      } else {
+        this.character.charclasses.forEach((a) => {
+          casterlevel += Math.floor(Number(a.level) * Number(a.selsubclass.castermult));
+        });
+      }
       try {
         return this.slots[casterlevel][index] + Number(this.character.bonusslots[index]);
       } catch (e) {
