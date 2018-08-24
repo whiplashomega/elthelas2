@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/fonts/tl-icons.8402c93e.ttf"
   },
   {
-    "revision": "9909a1a86dd78be6dd66248a5caa969f",
+    "revision": "2417a7d2df28024dd76e8f4c193ebcdf",
     "url": "/index.html"
   },
   {
@@ -336,8 +336,8 @@ self.__precacheManifest = [
     "url": "/static/images/maps/nations/Seran.jpg"
   },
   {
-    "revision": "eb57245da4fda59e17e1",
-    "url": "/js/app.8d1c8f85.js"
+    "revision": "098fe57a1661b98baa6d",
+    "url": "/js/app.9646c03e.js"
   },
   {
     "revision": "4c38a02fffe8d0d51ca3",
@@ -668,8 +668,8 @@ self.__precacheManifest = [
     "url": "/static/md/book4/curestan.md"
   },
   {
-    "revision": "eb57245da4fda59e17e1",
-    "url": "/css/app.8d4c00a0.css"
+    "revision": "098fe57a1661b98baa6d",
+    "url": "/css/app.749a4170.css"
   },
   {
     "revision": "d41d8cd98f00b204e9800998ecf8427e",
