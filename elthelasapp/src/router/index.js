@@ -342,8 +342,7 @@ var router = new Router({
       },
       path: "/privacy-policy",
       components: {
-        default: privacy,
-        sidebar: options
+        default: privacy
       }
     }
   ],
