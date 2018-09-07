@@ -1,13 +1,16 @@
 {
   "name": "Sofala",
   "nation": "Eldoran",
-  "population": 0,
-  "metro": 0,
-  "majority": "",
-  "ruling": "",
-  "minorities": [],
+  "population": 25000,
+  "metro": 48000,
+  "majority": "Wood Elves",
+  "ruling": "High Elves",
+  "minorities": [
+    "High Elves",
+    "Moon Elves"
+  ],
   "exports": [],
   "landmarks": [],
   "coords": [27.473186726659648, 11.549926623702051],
-  "description": ""
+  "description": "Sofala was the first major colony of Eldoran on the Elathian continent. The city serves as the center for the Eldoran Navy, which has sided with the rebels in the Waelin Rebellion. Its position at the narrowest point of the Nasraigh Fiornde makes it a stop for every ship lawfully passing through the strait so they can pay the appropriate taxes."
 }

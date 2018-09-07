@@ -10,6 +10,8 @@
         <span v-if="current !== c.id">O</span>
         <label class="margin15">Name: <input type="text" v-model="c.name" class="form-control"/></label>
         <label class="margin15">Mod: <input type="number" v-model="c.mod" class="form-control"/></label>
+        <label class="margin15">Advantage: <input type="checkbox" v-model="c.advantage" /></label>
+        <label class="margin15">Disadvantage: <input type="checkbox" v-model="c.disadvantage" /></label>
         <label class="margin15">Init: <input type="number" v-model="c.init" class="form-control margin15" /></label>
         <button @click=removeInit(c.id) class="btn btn-danger margin15">X</button>
         <button @click="delay(c)" class="btn btn-success margin15">Delay</button>
@@ -22,6 +24,8 @@
         <label class="margin15">Name: <input type="text" v-model="c.name" class="form-control"/></label>
         <label class="margin15">Mod: <input type="number" v-model="c.mod" class="form-control"/></label>
         <label class="margin15">Init: <input type="number" v-model="c.init" class="form-control" /></label><br />
+        <label class="margin15">Advantage: <input type="checkbox" v-model="c.advantage" /></label>
+        <label class="margin15">Disadvantage: <input type="checkbox" v-model="c.disadvantage" /></label><br />
         <button @click=removeInit(c.id) class="btn btn-danger margin15">X</button>
         <button @click="delay(c)" class="btn btn-success margin15">Delay</button>
         <input type="button" @click="nextCard(c)" value="Done with Turn" class="btn btn-success margin15" />

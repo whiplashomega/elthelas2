@@ -34,6 +34,8 @@ export default {
         id: this.nextid,
         name: "",
         mod: 0,
+        advantage: false,
+        disadvantage: false,
         init: 0
       });
       this.nextid = this.nextid + 1;
@@ -102,6 +104,8 @@ export default {
         id: this.nextid,
         name: character.name,
         mod: this.getStatMod(character, 1) + Number(character.initmagic),
+        advantage: false,
+        disadvantage: false,
         init: 0
       });
       this.nextid = this.nextid + 1;
@@ -109,7 +113,23 @@ export default {
     },
     roll () {
       this.initchars.forEach((character) => {
-        character.init = Number(character.mod) + Math.floor(Math.random() * 20) + 1;
+        let roll1 = Number(character.mod) + Math.floor(Math.random() * 20) + 1;
+        let roll2 = Number(character.mod) + Math.floor(Math.random() * 20) + 1;
+        if (character.advantage && !character.disadvantage) {
+          if (roll1 > roll2) {
+            character.init = roll1;
+          } else {
+            character.init = roll2;
+          }
+        } else if (!character.advantage && character.disadvantage) {
+          if (roll1 < roll2) {
+            character.init = roll1;
+          } else {
+            character.init = roll2;
+          }
+        } else {
+          character.init = roll1;
+        }
       });
     },
     charlevel(character) {
