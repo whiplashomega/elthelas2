@@ -267,7 +267,7 @@ export default {
       spellDetailModal: false,
       detailspell: { level: "cantrip", description: "", tags: [] },
       displayLevel: "cantrip",
-      slots: slotsA,
+      slots: slotsArray,
       character: newCharacter(),
       blankchar: {},
       characters: [],

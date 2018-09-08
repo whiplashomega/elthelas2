@@ -1,13 +1,22 @@
 {
   "name": "Vashna",
   "nation": "Dera'Dragorim",
-  "population": 0,
-  "metro": 0,
-  "majority": "",
-  "ruling": "",
-  "minorities": [],
+  "population": 100000,
+  "metro": 550000,
+  "majority": "Deran Human",
+  "ruling": "Dragonborn",
+  "minorities": [
+    "Elves",
+    "Morrindim",
+    "Dragonborn",
+    "Strongheart Halfling"
+  ],
   "exports": [],
-  "landmarks": [],
-  "coords": [ 26.100201617867516, -61.79479993879796],
-  "description": ""
+  "landmarks": [
+    { "name": "Palace of the Dragon Emperor", "description": "The Palace of the Dragon Emperor technically sits on an island inbetween Vasha and it's sister city Vashna. The huge palace complex is built to resemble a grand mountain, with the quarters of the Dragon Emperor being at the peak. From there the residents often see the Emperor's coming and goings in Dragon form." },
+    { "name": "The Golden Bridge", "description": "The Golden Bridge is the largest bridge structure in the world. It exists in two parts, with the Palace of the Dragon Emperor sitting in the center. The three mile long set of massive suspension bridges connect the cities of Vasha and Vashna, and are constantly busy with people passing back and forth. Massive markets sit on either end of the bridge, and there are merchants who specialize entirely in transporting goods across the bridge, often making 3 to 5 trips a day carrying loads of goods." },
+    { "name": "Temple of Bahamut", "description": "The Grand Temple of Bahamut in Vashna is the center of religious activity in Dera'Dragorim. While the high priest is technically subservient to the Dragon Emperor, the Emperor rarely actually intervenes in religious matters. The temple itself is a massive complex and center of economic and religious activity."  }
+  ],
+  "coords": [ 26.100201617867516, -61.79479993879796 ],
+  "description": "Vashna is the bustling center of Dera'Dragorim. The elites of the empire converge on the city to trade massive amounts of wealth. Together with Vasha, the other half of the bifurcated capitol of the empire, it is the backbone of the wealthiest metropolitan area in the world."
 }
