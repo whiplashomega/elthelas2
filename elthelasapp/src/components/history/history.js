@@ -9,10 +9,11 @@ export default {
   data () {
     return {
       options: {
-        start_at_end: true,
+        // start_at_end: false,
         timenav_height: 300,
         height: 600,
-        hash_bookmark: true,
+        start_at_slide: 10,
+        // hash_bookmark: true,
         language: 'el',
         layout: 'portrait',
         timenav_position: 'top',

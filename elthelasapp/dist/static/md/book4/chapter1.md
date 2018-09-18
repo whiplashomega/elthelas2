@@ -279,3 +279,34 @@ The kobold sorcerer is the old leader of the tribe, and he chafes at being force
 
 </aside>
 
+<aside>
+
+<h4>Chapter Rewards</h4>
+
+<p>
+  Quest givers will provide rewards to the party for successful completion of their individual chapter quest.
+</p>
+
+<p>
+  <strong>Black Wolf Irregulars (Lilith): Hand Crossbow of Fire</strong> 
+</p>
+
+<p>
+  <strong>Black Wolf Irregulars (Var): Arrow-Catching Shield</strong> 
+</p>
+
+<p>
+  <strong>Black Wolf Irregulars (Eiko): </strong> Parakas Steel Plate Armor of Gleaming (approached by Duke Lightbringer for recruitment?)
+</p>
+
+<p>
+  <strong>Black Wolf Irregulars (Seig) </strong> +1 Lance (approached by Trollkin Mercs for recruitment?)
+</p>
+
+<p><strong>Sylvan's Rangers: </strong>A gold bounty of 2000 gp.</p>
+
+<p><strong>Union of Wizard's Colleges: </strong>A Wand of Practiced Spells +1 (+1 to spell attack rolls for cantrips)</p>
+
+<p><strong>The Inevitables: </strong> Gauntlets of the Immortal Fist</p>
+<p><strong>
+

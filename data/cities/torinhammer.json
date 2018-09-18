@@ -3,11 +3,17 @@
   "nation": "Curinor",
   "population": 60000,
   "metro": 80000,
-  "majority": "",
-  "ruling": "",
-  "minorities": [],
-  "exports": [],
+  "majority": "Hill Dwarf",
+  "ruling": "Deep Dwarf",
+  "minorities": [
+    "Deep Dwarf",
+    "Plains Dwarf"
+  ],
+  "exports": [
+    "Steel",
+    "Copper"
+  ],
   "landmarks": [],
   "coords": [51.661652843075444, 46.26672349870206],
-  "description": ""
+  "description": "Torin Hammer is Curinor's second city. Further from the borders than Curin Keep or Highhammer, it has never really seen combat even in the worst years of the Mithril Wars. Meanwhile large deposits of iron, coal, nickel, and zinc in the hills and mountains make it the worlds largest exporter of fine steel outside of orcish territory."
 }

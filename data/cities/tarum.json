@@ -1,13 +1,20 @@
 {
   "name": "Ta'rum",
   "nation": "Hisru'de'tan",
-  "population": 0,
-  "metro": 0,
-  "majority": "",
-  "ruling": "",
-  "minorities": [],
-  "exports": [],
-  "landmarks": [],
+  "population": 12000,
+  "metro": 60000,
+  "majority": "Hisru Human",
+  "ruling": "Hisru Human",
+  "minorities": [
+    "Morrind Dwarves"
+  ],
+  "exports": [
+    "Meat",
+    "Horses"
+  ],
+  "landmarks": [
+    { "name": "The Cattle Market", "description": "The Cattle Market regularly sees herds of thousands of cattle changing hands as the northern Hisru tribes bring their herds here to sell and trade for foreign goods. The massive cattle pens cover more territory than the city itself." }
+    ],
   "coords": [-14.876839715390929, -66.93640150129795],
-  "description": ""
+  "description": "Ta'rum is small as cities go, but for the nomadic Hisru it is about as big as they get. It sits at the end of Hisru'de'tan's largest navigable river, the Ruu, combined with a calm harbor makes it the premier trading port in Hisru territory."
 }

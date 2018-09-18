@@ -13,7 +13,7 @@ const getters = {
 const actions = {
   getAllEvents ({ commit }) {
     return new Promise((resolve) => {
-      Vue.http.get(ctest.baseUrl + 'static/json/history.json').then((response) => {
+      Vue.http.get(ctest.baseUrl + 'json/history.json').then((response) => {
         var events = response.body.documents;
         for (var x = 0; x < events.length; x++) {
           events[x].text.text = marked(events[x].text.text);

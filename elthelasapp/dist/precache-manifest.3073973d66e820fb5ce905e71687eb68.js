@@ -28,16 +28,16 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chaptertemplate.md"
   },
   {
-    "revision": "f21ea04f79eeec4c2e273228055c2ccf",
-    "url": "/static/images/Tilda.jpg"
-  },
-  {
     "revision": "f1feb4859a67831a64a09210d1930bf4",
     "url": "/static/md/book4/chapter8.md"
   },
   {
     "revision": "2aadc65aa90a103e7623b74ac6b77766",
     "url": "/static/md/book4/chapter9.md"
+  },
+  {
+    "revision": "408bd6e11ad4774bb150fa0abd2d544b",
+    "url": "/static/md/book4/chapter7.md"
   },
   {
     "revision": "fe9884553a1ae2ea1bb0d6f76a8d4822",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/json/backgrounds.json"
   },
   {
-    "revision": "778538891132ee7e3461e039c2cf6aa8",
+    "revision": "44fdf393a1b5b8a3c923dae3e8b7911d",
     "url": "/json/cities.json"
   },
   {
@@ -108,7 +108,7 @@ self.__precacheManifest = [
     "url": "/json/organizations.json"
   },
   {
-    "revision": "0d3e7422c61582de7bb10f6fc11f9812",
+    "revision": "7af02363f67a47972532bd0974f6ea4f",
     "url": "/json/races.json"
   },
   {
@@ -128,12 +128,12 @@ self.__precacheManifest = [
     "url": "/robots.txt"
   },
   {
-    "revision": "c1b3ceaa78cfbdb60323daa25e6c2dc7",
-    "url": "/static/images/apple-touch-icon.png"
-  },
-  {
     "revision": "e781d800b694c8f2a73cf57384600c6f",
     "url": "/static/images/back_disabled.png"
+  },
+  {
+    "revision": "c1b3ceaa78cfbdb60323daa25e6c2dc7",
+    "url": "/static/images/apple-touch-icon.png"
   },
   {
     "revision": "fdf50aed68ecbf5d7eacb0cc6c4271a6",
@@ -156,20 +156,20 @@ self.__precacheManifest = [
     "url": "/static/images/death.png"
   },
   {
-    "revision": "d3d9140c4d912e18b894495d6c87f2df",
-    "url": "/js/timeline.js"
+    "revision": "84db88f183ec95a6b09de660950919ed",
+    "url": "/static/images/castle2.jpg"
   },
   {
     "revision": "3852d0a511e68bc8d7d99907def31295",
     "url": "/static/images/forward_disabled.png"
   },
   {
-    "revision": "84db88f183ec95a6b09de660950919ed",
-    "url": "/static/images/castle2.jpg"
-  },
-  {
     "revision": "1c6abf0c640a5109092acc5de1ff085d",
     "url": "/static/images/forward_enabled_hover.png"
+  },
+  {
+    "revision": "d3d9140c4d912e18b894495d6c87f2df",
+    "url": "/js/timeline.js"
   },
   {
     "revision": "d47405ef544b312756219e9bab94c4de",
@@ -180,12 +180,12 @@ self.__precacheManifest = [
     "url": "/static/images/giphy.gif"
   },
   {
-    "revision": "172c13e86666407629bfc5b572ca198c",
-    "url": "/static/images/holysymbol/alohim-symbol.png"
-  },
-  {
     "revision": "4f0283c6ce28e888000e978e537a6a56",
     "url": "/static/images/layers-2x.png"
+  },
+  {
+    "revision": "172c13e86666407629bfc5b572ca198c",
+    "url": "/static/images/holysymbol/alohim-symbol.png"
   },
   {
     "revision": "a6137456ed160d7606981aa57c559898",
@@ -196,16 +196,16 @@ self.__precacheManifest = [
     "url": "/static/images/holysymbol/amathera.jpg"
   },
   {
-    "revision": "f5522b5e556d12b08b810d37fc8d54a3",
-    "url": "/static/images/maps/castleoctaviusdungeon.png"
-  },
-  {
     "revision": "6cd741480d1464950b389109ff61dbd1",
     "url": "/static/images/maps/cities/curestan.png"
   },
   {
     "revision": "8a2402366f3815d607cd0b82db866602",
     "url": "/static/images/maps/castleoctavius.png"
+  },
+  {
+    "revision": "f5522b5e556d12b08b810d37fc8d54a3",
+    "url": "/static/images/maps/castleoctaviusdungeon.png"
   },
   {
     "revision": "c992c8e53d1ffa7a8e0e89f78f51ddf1",
@@ -232,12 +232,12 @@ self.__precacheManifest = [
     "url": "/static/images/maps/nations/Arad.jpg"
   },
   {
-    "revision": "511837c89bba3d49a87b077e2a3c2e40",
-    "url": "/static/images/maps/nations/Atyrea.jpg"
-  },
-  {
     "revision": "cf024041a51378cf306a5057b4f327f9",
     "url": "/static/images/maps/cities/peloria.jpg"
+  },
+  {
+    "revision": "511837c89bba3d49a87b077e2a3c2e40",
+    "url": "/static/images/maps/nations/Atyrea.jpg"
   },
   {
     "revision": "eb7b7a5efa7cf5c5638568dc966aaed2",
@@ -304,24 +304,20 @@ self.__precacheManifest = [
     "url": "/static/images/maps/nations/Morrindim.jpg"
   },
   {
-    "revision": "31be0102795deb2cf3e666bf4a37396c",
-    "url": "/static/images/maps/nations/Nerim.jpg"
+    "revision": "823642e329686955c25bc65a62c5c901",
+    "url": "/static/images/maps/hexpaper.png"
   },
   {
     "revision": "745b878c13385d16efa6781b8b22ff2c",
     "url": "/static/images/maps/nations/Olda.jpg"
   },
   {
-    "revision": "823642e329686955c25bc65a62c5c901",
-    "url": "/static/images/maps/hexpaper.png"
+    "revision": "31be0102795deb2cf3e666bf4a37396c",
+    "url": "/static/images/maps/nations/Nerim.jpg"
   },
   {
     "revision": "1643fca143e65c37a86136dab36f079d",
     "url": "/static/images/maps/nations/Sage.jpg"
-  },
-  {
-    "revision": "80a24fcd5580de3e26307cac92c4db54",
-    "url": "/static/images/maps/nations/maptile.jpg"
   },
   {
     "revision": "180f141945ea902c350b6cbbe6585dd0",
@@ -332,20 +328,24 @@ self.__precacheManifest = [
     "url": "/static/images/maps/nations/Seran.jpg"
   },
   {
+    "revision": "80a24fcd5580de3e26307cac92c4db54",
+    "url": "/static/images/maps/nations/maptile.jpg"
+  },
+  {
     "revision": "d8b269d340bc6bd83c08a7c097532cac",
     "url": "/static/images/maps/nations/Shendarel.jpg"
   },
   {
-    "revision": "408bd6e11ad4774bb150fa0abd2d544b",
-    "url": "/static/md/book4/chapter7.md"
+    "revision": "6ccdd323bd6fadf7e4ff2ecd6fe1a0ce",
+    "url": "/static/md/book4/chapter6.md"
   },
   {
     "revision": "282a36489325424ab7bdbeec8d6cf3e1",
     "url": "/static/images/maps/nations/Terron.jpg"
   },
   {
-    "revision": "6ccdd323bd6fadf7e4ff2ecd6fe1a0ce",
-    "url": "/static/md/book4/chapter6.md"
+    "revision": "aaf56b5a77af775d3aa7800bfbf56663",
+    "url": "/static/md/book4/chapter4.md"
   },
   {
     "revision": "8b8009b626fbb62aeeba316e7bdef0f6",
@@ -412,12 +412,12 @@ self.__precacheManifest = [
     "url": "/static/images/races/deranhuman.jpg"
   },
   {
-    "revision": "de0eef5509c00a366a761bbe41f8eee8",
-    "url": "/static/images/races/dragonborn.jpg"
-  },
-  {
     "revision": "5872e208c0fa6c8ca881ff92a6482bfe",
     "url": "/static/images/races/elathiangnome.jpg"
+  },
+  {
+    "revision": "de0eef5509c00a366a761bbe41f8eee8",
+    "url": "/static/images/races/dragonborn.jpg"
   },
   {
     "revision": "3ce4a42bc915fc3159439073df9da04c",
@@ -436,10 +436,6 @@ self.__precacheManifest = [
     "url": "/static/images/races/firegenasi.jpg"
   },
   {
-    "revision": "2cc308354568e3406ad2f3a635a2bd9e",
-    "url": "/static/images/races/faelin.png"
-  },
-  {
     "revision": "e39d4975a2a0b636a4508815c88a9136",
     "url": "/static/images/races/goblin.jpg"
   },
@@ -452,68 +448,76 @@ self.__precacheManifest = [
     "url": "/static/images/races/gruntorc.jpg"
   },
   {
-    "revision": "75c571827d8ac8c3ff1c6fa7fe861b87",
-    "url": "/static/images/races/highelf.jpg"
+    "revision": "2cc308354568e3406ad2f3a635a2bd9e",
+    "url": "/static/images/races/faelin.png"
   },
   {
     "revision": "c53f66050739bd1a898183281cb2f59d",
     "url": "/static/images/races/halfelf.jpg"
   },
   {
-    "revision": "e8e20ac5721b8b71d488b9bc7cb550cb",
-    "url": "/static/images/races/hisruhuman.jpg"
-  },
-  {
-    "revision": "c4180c1785cbceca50e63ef294b7b6ba",
-    "url": "/static/images/races/hobgoblin.jpg"
-  },
-  {
-    "revision": "600b49a33e6d0b87f0156e87af204b2c",
-    "url": "/static/images/races/highorc.jpg"
-  },
-  {
-    "revision": "79d95cd4c3c37d9bd9f829ca826b69a6",
-    "url": "/static/images/races/kobold.jpg"
-  },
-  {
-    "revision": "81d3c991e17b59230e0601bf2eebcbd0",
-    "url": "/static/images/races/imperialhuman.jpg"
-  },
-  {
-    "revision": "622183a6972151afcf2dddaef7286ec6",
-    "url": "/static/images/races/lightfoothalfling.jpg"
+    "revision": "75c571827d8ac8c3ff1c6fa7fe861b87",
+    "url": "/static/images/races/highelf.jpg"
   },
   {
     "revision": "73866dd5318e886fb31cc59f2b20cc8a",
     "url": "/static/images/races/halfdwarf.png"
   },
   {
-    "revision": "8b39c5d45b68ce094d880758dc1de173",
-    "url": "/static/images/races/neranhuman.jpg"
+    "revision": "e8e20ac5721b8b71d488b9bc7cb550cb",
+    "url": "/static/images/races/hisruhuman.jpg"
   },
   {
-    "revision": "5d5a654ae42a39dd8c3ac6ed40d7b6d4",
-    "url": "/static/images/races/moonelf.jpg"
+    "revision": "600b49a33e6d0b87f0156e87af204b2c",
+    "url": "/static/images/races/highorc.jpg"
   },
   {
-    "revision": "2bfc6b9e7c154ba6d8f8cd1bf5255291",
-    "url": "/static/images/races/sandorc.jpg"
+    "revision": "c4180c1785cbceca50e63ef294b7b6ba",
+    "url": "/static/images/races/hobgoblin.jpg"
   },
   {
-    "revision": "e36347f58d092b7cb5494ad61b99be0c",
-    "url": "/static/images/races/sorceronblooded.jpg"
+    "revision": "79d95cd4c3c37d9bd9f829ca826b69a6",
+    "url": "/static/images/races/kobold.jpg"
   },
   {
-    "revision": "302aec51cb09667008caeaa80bfa42cc",
-    "url": "/static/images/races/staelichuman.jpg"
+    "revision": "622183a6972151afcf2dddaef7286ec6",
+    "url": "/static/images/races/lightfoothalfling.jpg"
+  },
+  {
+    "revision": "81d3c991e17b59230e0601bf2eebcbd0",
+    "url": "/static/images/races/imperialhuman.jpg"
+  },
+  {
+    "revision": "944c9826db243250e757572cb94499cc",
+    "url": "/static/images/races/feyri.jpg"
   },
   {
     "revision": "11294437ebd3f239975c3f9a1f83e4ab",
     "url": "/static/images/races/lizardfolk.jpg"
   },
   {
+    "revision": "5d5a654ae42a39dd8c3ac6ed40d7b6d4",
+    "url": "/static/images/races/moonelf.jpg"
+  },
+  {
+    "revision": "8b39c5d45b68ce094d880758dc1de173",
+    "url": "/static/images/races/neranhuman.jpg"
+  },
+  {
+    "revision": "302aec51cb09667008caeaa80bfa42cc",
+    "url": "/static/images/races/staelichuman.jpg"
+  },
+  {
+    "revision": "e36347f58d092b7cb5494ad61b99be0c",
+    "url": "/static/images/races/sorceronblooded.jpg"
+  },
+  {
     "revision": "38c6bd2f743f5b52aae0ad5bd018c6a1",
     "url": "/static/images/races/stagengnome.jpg"
+  },
+  {
+    "revision": "2bfc6b9e7c154ba6d8f8cd1bf5255291",
+    "url": "/static/images/races/sandorc.jpg"
   },
   {
     "revision": "e7ec3e5c4dfc61a4dcbe96ea237ecc96",
@@ -524,40 +528,36 @@ self.__precacheManifest = [
     "url": "/static/images/races/stronghearthalfling.jpg"
   },
   {
-    "revision": "944c9826db243250e757572cb94499cc",
-    "url": "/static/images/races/feyri.jpg"
-  },
-  {
     "revision": "5ee5a59a50e43805d629edede76ed19c",
     "url": "/static/images/races/tabaxi.jpg"
-  },
-  {
-    "revision": "940832a5fdae23e17d440da97c76513d",
-    "url": "/static/images/races/wildelf.jpg"
   },
   {
     "revision": "efae60c1602cba0af02b4bd987c3f4da",
     "url": "/static/images/races/watergenasi.jpg"
   },
   {
-    "revision": "d099ffa7c82d985074dca267d1ed1965",
-    "url": "/static/images/races/woodelf.jpg"
+    "revision": "940832a5fdae23e17d440da97c76513d",
+    "url": "/static/images/races/wildelf.jpg"
   },
   {
     "revision": "530b0235a26347136490b5c045e6f37e",
     "url": "/static/images/rss.png"
   },
   {
+    "revision": "d099ffa7c82d985074dca267d1ed1965",
+    "url": "/static/images/races/woodelf.jpg"
+  },
+  {
     "revision": "d7dc10c78f23615d328581aebcd805eb",
     "url": "/static/images/sort_asc_disabled.png"
   },
   {
-    "revision": "9a6486086d09bb38cf66a57cc559ade3",
-    "url": "/static/images/sort_both.png"
-  },
-  {
     "revision": "9326ad44ae4bebdedd141e7a53c2a730",
     "url": "/static/images/sort_asc.png"
+  },
+  {
+    "revision": "9a6486086d09bb38cf66a57cc559ade3",
+    "url": "/static/images/sort_both.png"
   },
   {
     "revision": "bda51e15154a18257b4f955a222fd66f",
@@ -568,16 +568,20 @@ self.__precacheManifest = [
     "url": "/static/images/sort_desc.png"
   },
   {
-    "revision": "eee156dac29e7319540324498d0c8251",
-    "url": "/static/images/swordlogo.png"
-  },
-  {
     "revision": "8a5582bb0e74b016353b7378d21bb76e",
     "url": "/static/images/races/tiefling.jpg"
   },
   {
     "revision": "9c287dd51872df723c35176fdcb4893d",
     "url": "/static/images/Sorting icons.psd"
+  },
+  {
+    "revision": "eee156dac29e7319540324498d0c8251",
+    "url": "/static/images/swordlogo.png"
+  },
+  {
+    "revision": "172b79007a00c3830172d334644bf32c",
+    "url": "/static/md/book4/chapter1.md"
   },
   {
     "revision": "c00c631ae9838677db9260a186c8fefa",
@@ -588,32 +592,28 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chapter10.md"
   },
   {
-    "revision": "ab02ddd0cb87e40b588df539023ff5fa",
-    "url": "/static/images/races/trollkin.png"
-  },
-  {
-    "revision": "dc976522e1a2a837c16deac7cacd6b16",
-    "url": "/static/md/book4/chapter1.md"
-  },
-  {
     "revision": "c1f7c7ff514a5a537df5875330776851",
     "url": "/static/md/book4/chapter11.md"
-  },
-  {
-    "revision": "4c5b11958f5fe61f98f10a7bb10b16af",
-    "url": "/static/md/book4/chapter13.md"
   },
   {
     "revision": "9a4b633c555585a69400617e46e2601e",
     "url": "/static/md/book4/chapter12.md"
   },
   {
+    "revision": "4c5b11958f5fe61f98f10a7bb10b16af",
+    "url": "/static/md/book4/chapter13.md"
+  },
+  {
     "revision": "63a9d0758a75c813df5826e8f43d7732",
     "url": "/static/md/book4/chapter14.md"
   },
   {
-    "revision": "272b53cce64b7110ad0a0ae2e82d2512",
+    "revision": "c662268fe99ef58813a7e8bd1162f2d9",
     "url": "/static/md/book4/chapter2.md"
+  },
+  {
+    "revision": "ab02ddd0cb87e40b588df539023ff5fa",
+    "url": "/static/images/races/trollkin.png"
   },
   {
     "revision": "fb86b84159b78f1bd9bd96c807232116",
@@ -636,15 +636,15 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chapter5.md"
   },
   {
-    "revision": "aaf56b5a77af775d3aa7800bfbf56663",
-    "url": "/static/md/book4/chapter4.md"
+    "revision": "f21ea04f79eeec4c2e273228055c2ccf",
+    "url": "/static/images/Tilda.jpg"
   },
   {
-    "revision": "4e18f3e6afdecfb92fa9",
-    "url": "/js/app.ac53e99e.js"
+    "revision": "5d8d9b099d6d8a1a21e5",
+    "url": "/js/app.675a8f73.js"
   },
   {
-    "revision": "5fc98ab1016ef292f728c461b5265927",
+    "revision": "11264dba4c332226e2d79fc9cb9965f4",
     "url": "/index.html"
   },
   {
@@ -668,7 +668,7 @@ self.__precacheManifest = [
     "url": "/css/chunk-vendors.96f6ef18.css"
   },
   {
-    "revision": "4e18f3e6afdecfb92fa9",
+    "revision": "5d8d9b099d6d8a1a21e5",
     "url": "/css/app.1d377813.css"
   },
   {
