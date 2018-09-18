@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "d8b269d340bc6bd83c08a7c097532cac",
-    "url": "/static/images/maps/nations/Shendarel.jpg"
+    "revision": "ef50ee28a222c6c7a3d285370523b676",
+    "url": "/static/images/maps/nations/Staelia.jpg"
   },
   {
-    "revision": "2c9027a52ecb8b251834138c2fbaa37f",
+    "revision": "2c0c0b0008f1399bde41ecb582de658d",
     "url": "/static/md/book4/theworld.md"
   },
   {
-    "revision": "ef50ee28a222c6c7a3d285370523b676",
-    "url": "/static/images/maps/nations/Staelia.jpg"
+    "revision": "ffbba2f94a17fb70cee670a1bbee649c",
+    "url": "/static/images/maps/nations/Stagenheim.jpg"
   },
   {
     "revision": "4c38a02fffe8d0d51ca3",
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/fonts/tl-icons.8402c93e.ttf"
   },
   {
-    "revision": "d6c02b534a709b2bfa50ece9dc028343",
+    "revision": "3392ffcef98755cca7332d0c346c3700",
     "url": "/index.html"
   },
   {
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/json/gods.json"
   },
   {
-    "revision": "d8a29c53c648d94ec3ec50f8a615367e",
+    "revision": "0f17866311b32b28c5b4e7bc53e81ae2",
     "url": "/json/history.json"
   },
   {
@@ -100,7 +100,7 @@ self.__precacheManifest = [
     "url": "/json/landmarks.json"
   },
   {
-    "revision": "c96918398a0631c74fd99ec438acdd80",
+    "revision": "d31ed2253dc12de02ba428b8e3d0f060",
     "url": "/json/magicitems.json"
   },
   {
@@ -336,16 +336,16 @@ self.__precacheManifest = [
     "url": "/static/images/maps/nations/Seran.jpg"
   },
   {
-    "revision": "5b25b1c696b8128519cf",
-    "url": "/js/app.cc52d2b3.js"
+    "revision": "d8b269d340bc6bd83c08a7c097532cac",
+    "url": "/static/images/maps/nations/Shendarel.jpg"
+  },
+  {
+    "revision": "262162989bd8509edf91",
+    "url": "/js/app.868918ee.js"
   },
   {
     "revision": "4c38a02fffe8d0d51ca3",
     "url": "/js/chunk-vendors.50a0c1f6.js"
-  },
-  {
-    "revision": "ffbba2f94a17fb70cee670a1bbee649c",
-    "url": "/static/images/maps/nations/Stagenheim.jpg"
   },
   {
     "revision": "282a36489325424ab7bdbeec8d6cf3e1",
@@ -592,6 +592,10 @@ self.__precacheManifest = [
     "url": "/static/images/Tilda.jpg"
   },
   {
+    "revision": "d41d8cd98f00b204e9800998ecf8427e",
+    "url": "/static/md/book.md"
+  },
+  {
     "revision": "172b79007a00c3830172d334644bf32c",
     "url": "/static/md/book4/chapter1.md"
   },
@@ -620,7 +624,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chapter1old.md"
   },
   {
-    "revision": "d6e09a9503464249549741f42e524a91",
+    "revision": "960de278899af2b7a4d933ac798cbb4e",
     "url": "/static/md/book4/chapter2.md"
   },
   {
@@ -628,7 +632,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chapter2old.md"
   },
   {
-    "revision": "68f1983dd5cffc6ed3a0b465fbe1fd83",
+    "revision": "51c76a226e970abe34f1704c3dc7f7ff",
     "url": "/static/md/book4/chapter3.md"
   },
   {
@@ -668,7 +672,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/curestan.md"
   },
   {
-    "revision": "5b25b1c696b8128519cf",
+    "revision": "262162989bd8509edf91",
     "url": "/css/app.1d377813.css"
   },
   {
