@@ -15,7 +15,7 @@ I need you to make a surreptitious pickup in the nearby town. The local blacksmi
 
 #### Inevitables Orders
 
-The Time Egg is a particularly noxious artifact, though the General and his fellows do not know it's full nature, it breaks the laws of time and must be destroyed. The Egg can be destroyed by subjecting it to extreme heat, but be cautious, it is a fragment of the will of Amathera, and her agents may attempt to stop you.
+The Time Egg is a particularly noxious artifact, though the General and his fellows do not know it's full nature, it breaks the laws of time and must be destroyed. The Egg can be destroyed by subjecting it to extreme heat, but be cautious, it is a fragment of the will of Amathera, and her agents may attempt to stop you. -Quarut, Inevitable of Time
 
 #### Sylvan's Rangers Orders
 
@@ -26,6 +26,8 @@ The Dragon uses some unusual creatures not seen elsewhere on the continent to de
 Bimriel, it is rumored, has recorded eons of history on the walls of her home. Please transcribe as much of this as you can.
 
 ### The Artifacts
+
+The Artifacts have been locked in a warded chest that acts similarly to a bag of holding (technically holding the artifacts in a demi-plane). The warding on the chest is specially designed to prevent their influence from seeping into the material plane and to prevent them from being found by magical means. However, General Heartbren trusts the key to the chest to the party.
 
 <!-- Time Egg -->
 <aside>
@@ -129,9 +131,9 @@ Bimriel, it is rumored, has recorded eons of history on the walls of her home. P
 </aside>
 <!-- Whelm -->
 <aside>
-  <h4>Whelm (weapon, warhammer, legendary, attunement)</h4>
+  <h4>Whelm (weapon, maul, legendary, attunement)</h4>
   <p>
-    Whelm is a powerful +3 great Warhammer with a reach of 10ft. This weapon was forged by the duergar for the purpose of destroying enemies which towered over them. 
+    Whelm is a powerful +3 great maul with a reach of 10ft. This weapon was forged by the duergar for the purpose of destroying enemies which towered over them. 
     While attuned to Whelm you gain the following benefits:
   </p>
   <ul>

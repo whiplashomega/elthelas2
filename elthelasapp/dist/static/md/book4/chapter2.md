@@ -129,9 +129,9 @@ Bimriel, it is rumored, has recorded eons of history on the walls of her home. P
 </aside>
 <!-- Whelm -->
 <aside>
-  <h4>Whelm (weapon, warhammer, legendary, attunement)</h4>
+  <h4>Whelm (weapon, maul, legendary, attunement)</h4>
   <p>
-    Whelm is a powerful +3 great Warhammer with a reach of 10ft. This weapon was forged by the duergar for the purpose of destroying enemies which towered over them. 
+    Whelm is a powerful +3 great maul with a reach of 10ft. This weapon was forged by the duergar for the purpose of destroying enemies which towered over them. 
     While attuned to Whelm you gain the following benefits:
   </p>
   <ul>

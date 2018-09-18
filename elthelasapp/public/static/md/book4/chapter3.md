@@ -2,59 +2,37 @@
 
 ## Encounters in Cur'Estan
 
-### Malia Takes Over the Refugee Camp
-
-Malia will request Adam accompany her to the refugee camp on arrival at Cur'Estan. She will immediately demand a meeting with Jaxan Chin, and tell him she is taking over the camp. Jaxan will object. If Adam does not intervene a fight between the two may break out. Malia will not kill Jaxan, but will put him in his place.
-
-[Run This Encounter](/runner/maliademonslayer&jaxanchin)
-
-### Flykr's Store
-
-Eduard will report to Flykr that the store is going reasonably well. He hands over a profit of 200 gp, but mentions that some inventory has gone missing. Not enough to be a significant problem, but there is clearly a thief. He does not suspect Jazelle, but does have a few recent customers that he suspects. They are:
-
-* Ogrun Firebreath - He was acting shifty when in the store. He is secretly a cross-dresser who likes to feel pretty, and so felt awkward when purchasing dresses for himself. This awkwardness made Eduard suspect him of the thefts. (Deception -1)
-* Kyman Hexhammer - Eduard is aware that Kyman is a powerful member of the Black Sun. He was in the store purchasing disguises for some of his thieves and is not actually the thief. Suspected because he is a known criminal. His cover story is that he is buying the dresses for his lover. (Deception +10)
-* Sara Grant - A middle aged woman who recently took up dancing. She is broke and came into the store to browse and dream of buying the nice silk dresses. Eduard is suspicious of her because she came in repeatedly but never actually bought anything. She doesn't want to admit that she can't afford the dresses, so she claims she was simply dissatisfied with the dresses available. (Deception +1)
-* Olivia Munbridge - A young woman who doesn't dance but shoplifts for thrills. Eduard was suspicious of her just because he doesn't like teenagers and thinks they are nothing but trouble. In this case he was right. Olivia came into the store three times. Coincidentally always just after Sara Grant had been there. She always purchased something small, a bell, a pair of shoes, etc, and smuggled out the stolen dresses in her bag. If questioned she claims she hates dresses (true) and would never steal them (false, she likes the thrill). Deception +5.
-
-### Reward Ceremony
-
-General Heartbren will convene an official reward ceremony for the party members the morning after they arrive. The leaders of the party's orders will be there. Those who completed their personal missions will receive additional rewards from their leader.
-
-* General Heartbren will reward the party 5000 gp each for successfully evacuating the city.
-* James Lightbringer will reward Silas with a suit of Gleaming Orichalcum Plate, adorned with symbols of Alohim and the Lords of the Rising Dawn.
-* Kyman Hexhammer will reward Fallon with an Amulet of Intelligence +2
-* Malia Demonslayer will reward Adam with her Wand of Fire
-
-#### Wand of Fire (wand, attunement)
-
-This wand grants a +1 bonus to spell attack rolls when casting spells that do fire damage, and adds the wielders spellcasting modifier to the damage rolls of fire spells. It has 5 charges, and recovers 1d4+1 charges after a long rest. The wielder can use 1 charge to cast the spell Burning Hands, 2 charges to cast Scorching Ray, or 3 charges to cast Fireball.
+<!-- TODO -->
 
 ## Orders
 
 ### General Heartbren's Orders
 
-The influx of refugees has created a supply problem in Cur'Estan. In normal conditions we would transport goods via the Upper Yellow River from Cur'Mestin and the farming communities in western Dormania, but the Duchess of Cur'Mestin has blockaded the river due to our alliance with Empress Dormana. We need to end that blockade. If you can do it via diplomacy, wonderful, but if not, contact the Empresses loyalists in the city and find a way to break the blockade by force.
+The influx of refugees has created a supply problem in Cur'Estan. In normal conditions we would transport goods via the Upper Yellow River from Cur'Mestin and the farming communities in western Dormania, but the Duchess of Cur'Mestin has blockaded the river due to our alliance with Empress Dormana. We need to end that blockade. The most likely route for success is probably to contact the Empresses loyalists in the city and find a way to break the blockade by force. 
 
-#### Amathera's Shield Orders
+#### Black Wolf Irregulars Orders
 
-Rumor has it that the Duchess of Cur'Mestin, Genevieve Octavius, is in cahoots with devils who help prop up her rule in return for the souls of her people. I don't think I need to stress how grevious a crime that is. Bring an end to her rule, and expel the devils from the city.
+The last group I sent on this mission never returned, find out what happened to Silas of Irons, Flykr Moon, and Adam, the last delegation I sent to Cur'Mestin.
 
-#### Black Sun Orders
+#### Inevitables Orders
 
-I have heard that an old associate of mine has been working for Duchess Octavius. Find Felix and convince him to switch sides.
+The Temple of Alohim in the city has been taken over by a cult hoping to summon creatures from beyond the Planes. Destroy this cult and any creatures they have managed to summon.
 
-#### Champions of Cora Orders
+#### Sylvan's Rangers Orders
 
-Duchess Octavius has offended good people everywhere with her oppressive rule. Meanwhile her daughter has proven to be a valuable servant of Cora. Kill the Duchess and see that her daughter takes the throne.
+Duchess Octavius has offended good people everywhere with her oppressive rule. Meanwhile her daughter is a good woman. Kill the Duchess and see that her daughter takes the throne.
 
-#### Illustrious Guild of Merchant's and Fine Artisans Orders
+#### Union of Wizard's Colleges Orders
 
-There are rumors of a Purple Worm Nest near Cur'Mestin. Purple Worm eggs are incredibly valuable. Bring at least one back with you and we will pay you well for it.
+There are rumors of a Purple Worm Nest near Cur'Mestin. Purple Worm eggs are incredibly valuable and rarely available for study. Bring at least one back with you and we will pay you well for it.
 
-#### Lord's of the Rising Dawn Orders
+#### Potential Orders for Other Factions
 
-The Temple of Alohim in the city has been taken over by some strange cult. Expel the invaders and restore the clerics to their temple.
+Deal with river pirates
+
+Expel the devils from the city
+
+Kill a Purple Worm
 
 #### Shepherd's of the All-Mother
 
