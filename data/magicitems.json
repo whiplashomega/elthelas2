@@ -1936,6 +1936,14 @@
    "Effect": "While holding this shield, you have advantage on saving throws against spells and other magical effects, and spell attacks have disadvantage against you."
  },
  {
+  "Item": "Amulet of the Shield Guardian",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "22000",
+  "Rarity": "Very Rare",
+  "Attunement": "Yes",
+  "Effect": "Once attuned, the wielder of this amulet gains the services of a Shield Guardian, a faithful companion that follows the wielders commands and strives to protect it. Possession of this amulet also imbues the wearer with the knowledge to create a new Shield Guardian attuned to this amulet should the first be destroyed, requiring 10000 gp worth of materials in the form of fine metals, gemstones, and arcanum crystal."
+ },
+ {
    "Item": "Staff of Charming",
    "Type": "Staff",
    "Cost (gp)": "7000",

@@ -41,8 +41,8 @@ gulp.task('historyjson', function (done) {
     }
   });
   if(historyarray.length === files.length) {
-    fs.writeFile("./elthelasapp/static/json/history.json", JSON.stringify({ "model": "History", "documents": historyarray}), "utf-8", function() {
-      console.log("writing history.json");
+    fs.writeFile("./elthelasapp/public/json/history.json", JSON.stringify({ "model": "History", "documents": historyarray}), "utf-8", function() {
+      console.log("writing /elthelasapp/public/json/history.json");
       done();
     });
   }
