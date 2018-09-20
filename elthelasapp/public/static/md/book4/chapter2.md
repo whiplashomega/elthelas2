@@ -3,15 +3,25 @@
 ## Preparation
 
 
+### Important NPCs
+
+#### James Gunn
+
+The local blacksmith of Winterdrift and a spy for the Black Wolf Irregulars. He acts as a handler, gathering reports from agents throughout Kandor and sending them back to Cur'Estan. Unfortunately, the local guards intercepted one of the communications being sent to him that contained confidential information from the King's Court. He managed to evade them and is currently in hiding at a friends farm, Agatha Harris, just outside of town.
+
+#### Agatha Harris
+
+A local farmer who thinks the charges against her friend James Gunn are trumped up nonsense. She is an old widow and well respected in town, so when she refused to let the guards search her house to look for James, they went along with it rather than do something that would have the city council after them if he wasn't there.
+
 ### Orders
 
 #### General Heartbren's Orders
 
-The refugees from Northport managed to smuggle out artifacts that we must guarantee will not fall into the hands of the enemy. I know of a hidden dungeon where I would like to seal these artifacts in northern Kandor. Travel to Mount Frost and find the lair of the Ancient Silver Dragon Bimriel. Get the Dragon to agree to guard the artifacts as a part of its horde.
+The refugees from Northport managed to smuggle out artifacts that we must guarantee will not fall into the hands of the enemy. There have already been some shifty people around town asking about them, so I want to get them as far away and as well hidden as possible. I know of a hidden dungeon where I would like to seal these artifacts in northern Kandor. Travel to Mount Frost and find the lair of the Ancient Silver Dragon Bimriel. Get the Dragon to agree to guard the artifacts as a part of its horde.
 
 #### Black Wolf Irregulars Orders
 
-I need you to make a surreptitious pickup in the nearby town. The local blacksmith is one of our covert agent, and will have a packet of intelligence reports we need you to retreive and bring back. Do not let anyone else see them, not even allies.
+I need you to make a surreptitious pickup in the nearby town of Winterdrift. The local blacksmith is one of our covert agents, and will have a packet of intelligence reports we need you to retreive and bring back. Do not let anyone else see them, not even allies.
 
 #### Inevitables Orders
 
@@ -337,18 +347,42 @@ The Artifacts have been locked in a warded chest that acts similarly to a bag of
 
 ### Travelling to Mount Frost
 
-some sort of attack by someone seeking one of the artifacts
+The party won't get far out of town before they are stopped on the road by a group that wants the artifacts in the chest. A hooded and cloaked wizard, backed up by several hulking undead, will demand they turn over the Book of Vile Darkness, in the name of Xagnol the Deatheater, or be killed where they stand.
+
+[Run This Encounter](/runner/necromancer&ogrezombie&ogrezombie&minotaurskeleton&minotaurskeleton)
 
 ### Intelligence Gathering
 
-Kandori soldiers are looking for the documents
+Winterdrift is not a very big town, it has one inn, a few shops, and lots of farmland. Prominently posted throughout the town are wanted posters for 'James Gunn, local blacksmith'. His shop is abandoned, and has clearly been ransacked.
+
+James is hiding with a friend of his, Agatha Harris, who has a farm just outside of town. The documents they need were unfortunately at his shop in a hidden safe, and he is not sure if the guards found it or not. In fact the guards did find it, but were unable to open it. They carried it back to the local jail until they could find someone who could open it for them.
 
 ### Destroying the Time Egg
 
 Must be thrown into the volcano, Paladins of Amathera will try to prevent its destruction
 
+[Run This Encounter](/runner/paladinofamathera&paladinofamathera&evoker&masterthief)
+
 ### Mount Frost
 
+***The Entrance*** The cave entrance is blocked by a massive sheet of ice, 50 ft tall. It does not reach all the way to the ceiling and is climbable but requires a DC 20 athletics check even from those with a climb speed, or the use of climbers tools (pitons, rope, and an ice pick). On the other side of the blockade is a deep drift of loosely packed snow. It will break the fall of anyone falling from the top but the snow gets into clothes, and exposed areas and if it isn't dealt with within 1 minute the resulting cold causes one level of exhaustion. A small group of Yeti's guards the entrance past the ice sheet and will begin attacking anyone who makes it over.
 
+[Run This Encounter](/runner/yeti&yeti&abominableyeti)
+
+***The Creche*** This large room is filled with piles of snow, and a silver wyrmling and a young silver dragon are napping in two piles of the same. There are 3 kobold attendants who do not attack the party, but refuse them entrance, as any risk to their charges (the children of Bimriel) is unacceptable. The children are named Qyvris and Corsas.
+
+[Run This Encounter](/runner/youngsilverdragon&silverdragonwyrmling&kobolddragonshield&kobolddragonshield&kobolddragonshield)
+
+[Run This Encounter](/runner/iceelemental&iceelemental&icemephit&icemephit&icemephit&icemephit&icemephit&icemephit)
+
+[Run This Encounter](/runner/winterwolf&winterwolf&winterwolf&winterwolf&winterwolf&winterwolf&winterwolf&winterwolf)
+
+***The Gallery*** The gallery contains massive stone frieses filled with stories from Bimriel's life. Sitting in the gallery are 4 frost giants discussing how they are going to surprise the Dragon Bimriel and try to steal its horde. 
+
+[Run This Encounter](/runner/frostgiant&frostgiant&frostgiant&frostgiant)
+
+[Run This Encounter](/runner/whitemaw&whitemaw)
+
+**The Stories of the Gallery.** Featured prominently are tales of the long dead kingdom of Asiro, the land of the Tabaxi, that once stood in the shadow of Mount Frost. When Bimriel was a much younger Dragon, he was good friends with several of the Tabaxi kings, and protected them from harm. It tells of the dances he attended and the songs he listened to, including lyrics to several. It also tells of the destruction of Asiro, Dorman's armies marching through the land in an all out assault, burning towns and slaughtering all who opposed them. At the end of the epic tale, Bimriel is fighting alongside his friend, the Tabaxi King, when the king is struck down by Dorman himself. Bimriel is injured, but spared by the Dormanian Emperor, and vows to never become involved in the wars of mortals again. 
 
 ### Return to Cur'Estan

@@ -1,7 +1,7 @@
 <div id="chapter8" class="clear-b">
   <h2>Chapter 5: Waelin Independence</h2>
   <p>
-    The elven king is weak, but so far has been committed to fighting the rebellion in the Waelin region. Find a way to convince either him or the rebels to end the war.
+    The new elven kingdom of Waelin is willing to aid the war effort where Eldoran is not. They have requested our aid in diplomatic matters in return. I am sending you to Loridesa in Eldoran. Your mission is to infiltrate the court and find a way to bring an end to the civil war that secures Waelin's independence and, ideally, brings Eldoran back into the war as well.
   </p>
   <p>
     <strong>Location(s): </strong> Sofala, Estapor, Loridesa

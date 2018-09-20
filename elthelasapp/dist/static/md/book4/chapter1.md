@@ -193,6 +193,8 @@ I've just arrived in Cur'Estan and hopefully to a new life. I miss my family, bu
 
 ## The Druid Problem
 
+When the party is leaving to talk to the Druid's they will be stopped by a gold-skinned Dragonborn, [Satura Kalmuc](/runner/saturakalmuc), who asks if they know the location of the kobold mine of Queen Clara Eliana. She claims that her boss has a special reward for the Queen but hasn't been able to find her since they left Dormania (deception +10).
+
 The Druids have been using a Staff of Mass Suggestion to convince the lumberjacks to give up on their work each day. They do not offer alternative solutions to the issue, but are amenable to reasonable ideas that address their concerns (deforestation, chasing away of wildlife). Should their concerns be addressed, they are willing, if asked, to sell the staff for a few thousand gold.
 
 The Druid's leader is Aconi Willowbark
@@ -265,7 +267,7 @@ A good diplomacy check if there are negotiations can convince the dragon that hi
 
 The kobold sorcerer is the old leader of the tribe, and he chafes at being forced to serve an evil dragon. He will turn on his master if the party has avoided killing kobolds up to now, and if he does so will the other kobolds.
 
-(Run this Encounter)[/runner/youngblackdragon&koboldscalesorcerer&kobolddragonshield&kobolddragonshield&kobolddragonshield&giantspider&giantspider&giantspider]
+[Run this Encounter](/runner/youngblackdragon&koboldscalesorcerer&kobolddragonshield&kobolddragonshield&kobolddragonshield&giantspider&giantspider&giantspider)
 
 #### The horde
 

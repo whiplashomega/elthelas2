@@ -12,6 +12,8 @@
 
 **Background:** Sage
 
+#### Faction Standings
+
 <table class="table table-striped datatable">
 	<thead>
 		<tr>
@@ -41,9 +43,9 @@
 	</tbody>
 </table>
 
-Ching Shu grew up in Zelfir, her parents were both wizards and members of the Union of Wizard's Colleges who pushed her into a similar career track. She spent her youth studying with the college and eventually took up field research and tutoring because it promised greater rewards than a faculty position. She recently was offered a staff position by Ryvitior Morin at the new college he is founding in Cur'Estan. The position is as his official staff field researcher.
+#### Backstory 
 
-#### Faction Standings
+Ching Shu grew up in Zelfir, her parents were both wizards and members of the Union of Wizard's Colleges who pushed her into a similar career track. She spent her youth studying with the college and eventually took up field research and tutoring because it promised greater rewards than a faculty position. She recently was offered a staff position by Ryvitior Morin at the new college he is founding in Cur'Estan. The position is as his official staff field researcher.
 
 ### Eyvindra Veil
 
@@ -87,6 +89,8 @@ Ching Shu grew up in Zelfir, her parents were both wizards and members of the Un
 		<tr><td>Union of Wizard's Colleges</td><td>0</td></tr>
 	</tbody>
 </table>
+
+#### Backstory
 
 Father was the Air Genie, Stratos, and her mother was Tia Woodthrall, second wife to the noble elf Phanthos Woodthrall, of Loridesa, Eldoran. Phanthos’s first wife died in childbirth to his second son. He married Tia who gave birth to twin sons. While on holiday in Dera Dragorim, Tia was seduced by Stratos. Months later, she gave birth to Eyvindra Veil. Though Phanthos hated Eyvindra, her mother loved her dearly. As did her two half brothers, Svarlt and Alfie. But her step brothers, Krose and Everette, hated her as much as their father.
 
@@ -155,11 +159,12 @@ Curious, Eyvindra finds herself in a strange and hectic city, searching for her 
 	</tbody>
 </table>
 
+#### Backstory
 "Otherworldly." She's exceptionally tall and thin, and wears fully-covering monk's robes and a hood at all times. She also wears a perfectly smooth white mask, with only two holes cut for her eyes. Speaking of eyes, they're alien too: they stare intensely without blinking, and change color with her emotions. She doesn't really "pass" for any known race, and only the most knowledgeable people figure out "what" she is without asking.
 
 She's very graceful, and travels light--she doesn't seem to care much about worldly possessions. She also doesn't talk much, and generally makes people very uneasy with the mask, and the silence, and the staring, and the alien body proportions... and she gives off a fair whirring sound??
 
-##### Her story so far:
+**Her story so far:**
 
 Her parents were Hisru craftsmen and inventors in Zelfir; their lives were prosperous but they were unable to have children. One day, a Stagen gnome came to their workshop, having heard of their inventions. He stayed with them for a month to exchange knowledge. He suggested they pray to Tock--the Creator God would surely have no problem giving them a child.
 
@@ -189,41 +194,41 @@ Kismet trained as long as she could. She joined other members on their missions,
 
 When she visited her parents like she promised, they immediately recognized her otherworldly stature and grace, but they did not recognize the person she had become. Kismet said farewell to her elderly parents for the last time, and boarded a ship for Elathia.
 
-##### Where are they from?
+**Where are they from?**
 
 Zelfir until she was 8, then The Inevitables' monastery until she was 37.
 
-##### They are starting the campaign at level 3... What have they done in the past?
+**They are starting the campaign at level 3... What have they done in the past?**
 
 Kismet was training with The Inevitables to be the Yīnguǒ Bàoyìng--the "Retribution of Fate."
 
-##### Where were they before the start of the campaign?
+**Where were they before the start of the campaign?**
 
 She was instructed to go to Cur'Estan; she just arrived after traveling.
 
-##### Do they have family or friends somewhere that they care about? Who are their parents? How has their family affected their life?
+**Do they have family or friends somewhere that they care about? Who are their parents? How has their family affected their life?**
 
 Her parents are alive, but not in her life (and haven't been for decades). The closest thing she has to a social community is the order, but she doesn't have real friends or loved ones. 
 
 I'm going for Dalai Lama vibes here--what happens when you take a small child from their family, tell them their a chosen one, put them on a pedestal, and don't let anyone get close to them? Maybe she'll learn the True Meaning of Friendship in the campaign. :)
 
-##### If you are a member of a faction, how did you join it, what is your standing in that organization?
+**If you are a member of a faction, how did you join it, what is your standing in that organization?**
 
 Kismet's a sort of prophesied chosen one, but she's also still really new and hasn't proven herself yet. The order knows better than to put her in over her head right away, but have big plans for her. She has no say in any of this, which doesn't bother her because she is insanely Lawful and likes having clear-cut purpose.
 
-##### Is your character heroic? Would they lay down their life or otherwise make sacrifices for the greater good or to save another?
+**Is your character heroic? Would they lay down their life or otherwise make sacrifices for the greater good or to save another?**
 
 If "greater good" = Eternal Laws, without pause. If not, then nope. She has to stay focused.
 
-##### What are their immediate goals? Are you seeking wealth, fame, glory? Are you after something more specific? Why?
+**What are their immediate goals? Are you seeking wealth, fame, glory? Are you after something more specific? Why?**
 
 She receives instructions telepathically from The Inevitables, and does those. She doesn't really understand autonomy (yet), and doesn't really have personal goals.
 
-##### Is your character religious? If so who? (and of course, why?)
+**Is your character religious? If so who? (and of course, why?)**
 
 She was born through Tock's will, is a divinely-graced being of Tock, and serves him and the Eternal Laws through The Inevitables. But she does not really participate in organized religion or worship; it's more like a philosophy and way of life for her.
 
-##### Is your character merciful? Unforgiving? Temperate? Regularly Drunk? Scholarly? What character traits do they have that shape how they approach problems?
+**Is your character merciful? Unforgiving? Temperate? Regularly Drunk? Scholarly? What character traits do they have that shape how they approach problems?**
 
 Kismet genuinely believes she is an unstoppable force, and any setback is fate and happens for a good reason. Success is to her, pre-determined.
 The Inevitables swear to never harm those who have not committed a crime, and also that no one, not even a divine being, is above the law. So she's merciful in the sense that she will not harm innocents, but it's not out of sympathy so much as lawfulness.
@@ -272,6 +277,10 @@ She doesn't handle moral ambiguity well, and always seeks the right answer to ev
 	</tbody>
 </table>
 
+#### Backstory
+
+Daughter of a fruit merchant near the Moon Pass, she is Vanriel's half-sister (because their shared dad can't keep it in his pants), and after hearing about her sister's brave exploits, travelled to Cur'Estan to try to show her up.
+
 ### Varius Elianus
 
 **Player:** Nate Peterson
@@ -315,6 +324,8 @@ She doesn't handle moral ambiguity well, and always seeks the right answer to ev
 	</tbody>
 </table>
 
+#### Backstory
+
 Varius is a young kobold with bright gold scales, and is the sixth son of Queen Eliana III. He’s cheerful to a fault, follows orders without question, and is determined to prove his people are just as capable of heroism as the less “monstrous” races. He was sent by the Queen to enlist with the Black Wolf Irregulars to better represent his people in the war against the Orcs. Kobolds aren't always warmly welcomed or trusted, and he's been sent in civilian gear to avoid accusations of spying or thievery.
 
 His clan is long-descended from a gold dragon; the current royal line bear a striking resemblance to their draconic ancestor. They originally hailed from the Sword Mountains in Dormania, and considered themselves Imperial subjects. Kobold craftsmen and miners are very skilled, but a combination of racism and competition with Curinor kept them from finding a place in human society, and they languished in isolation. In 1815, Queen Clara Eliana III came to power and immediately set about changing that. The Fortress of Light represented a great opportunity: the Alliance armies needed supplies, Geraslim would rather produce them locally than rely on Curinor, and Strovenguard’s universities were full of knowledge the kobolds needed to prosper. The clan made the dangerous trek overland, purchased several long-abandoned mines to the west of Strovenguard, and set to work.
@@ -325,39 +336,40 @@ His squad picked through blood-stained battlefields or evacuated settlements, lo
 
 On the way back to camp, the kobolds stumbled onto a large column of orcs which was making directly for Strovenguard, and were spotted. The squad scattered, but a poisoned arrow caught Varius’s side, and he collapsed. Suddenly, one of the animals Varius had rescued - a massive gorilla - dropped out of one of the nearby trees, grabbed him, and sprinted into the trees. When Varius came to, he healed himself enough to travel and set off at a run to raise the alarm. The gorilla followed Varius all the way back, and Commander Ludo taught Varius the ritual needed to form a bond with him. Varius named the ape Silvester, and they’ve been inseparable ever since.
 
-##### Where are they from?
+**Where are they from?**
 
 Varius grew up in the hills west of Strovengard, raised by kobolds who immigrated relatively recently from the Sword Mountains.
 They are starting the campaign at level 3, which means they have some history and skill already. What have they done in the past?
 See above; primarily, scouting and fighting in guerilla warfare (pun intended) against the Orcs.
 
-##### Where were they before the start of the campaign?
+**Where were they before the start of the campaign?**
 
 In Strovengard prior to its fall; moved north with his people into Kandor after that. I imagine his people live somewhere in the foothills west/northwest of Purs, depending on local geography.
 
-##### Do they have family or friends somewhere that they care about? Who are their parents? How has their family affected their life?
+**Do they have family or friends somewhere that they care about? Who are their parents? How has their family affected their life?**
+
 His mother’s the Queen of his (relatively small) clan of kobolds, and he’s here on her orders. He didn’t really receive special treatment in most of his life because he’s the youngest child and far from the throne, but people had high expectations for him and his time in the military has definitely put him in the spotlight. Varius is the youngest child, and I don’t imagine him as particularly close to his siblings, who are likely more highly educated and a lot less likely to see combat (craftsmen, maybe actually managed to study in Strovengard?). 
 He’s very close to his (now former) commander, Ludo.  He had plenty of friends in the military, and likely still does, though I imagine that it’s been a relatively bloody fight even for skirmishers.
 
-##### If you are a member of a faction, how did you join it, what is your standing in that organization?
+**If you are a member of a faction, how did you join it, what is your standing in that organization?**
 
 Black Wolf Irregulars made the most sense as a faction, in which case he’s going to enlist (could have already enlisted recently if it’s helpful for the plot!). He has a reference of his former commander who trained him well.
 
 He’s at least initially directly working for his clan. They likely aren’t important enough to be treated as an organization, though it’d certainly be interesting. (Looking through the list, the flavor and the benefits of the dragon-worshippers would make sense for a draconic-themed line of kobolds, though I don’t imagine them as followers of the Dragon Emperor.)
 
-##### Is your character heroic? Would they lay down their life or otherwise make sacrifices for the greater good or to save another?
+**Is your character heroic? Would they lay down their life or otherwise make sacrifices for the greater good or to save another?**
 
 Definitely, though he’s pragmatic enough to put in a good effort to avoid the dying part.
 
-##### What are their immediate goals? Are you seeking wealth, fame, glory? Are you after something more specific? Why?
+**What are their immediate goals? Are you seeking wealth, fame, glory? Are you after something more specific? Why?**
 
 Varius is mostly seeking respect and glory for his people, and is hoping to do so by giving a good account of himself with the Black Wolf Irregulars. If the opportunity comes to acquire wealth or magical items to send back home, he’d take it as long as it didn’t dishonor his people (e.g., theft from non-Orcs).
 
-##### Is your character religious? The existance of the Gods is rarely disputed in Elthelas, but not everyone care to worship. Do they? If so who? (and of course, why?)
+**Is your character religious? The existance of the Gods is rarely disputed in Elthelas, but not everyone care to worship. Do they? If so who? (and of course, why?)**
 
 No; he hasn’t seen the Gods as particularly involved with the lives of his people, and in this war there are Gods fighting on both sides - they’re dangerous, and it’s better to just go unnoticed. He’s a loyal servant of his people and his Queen, and that’s enough for him.
 
-##### Is your character merciful? Unforgiving? Temperate? Regularly Drunk? Scholarly? What character traits do they have that shape how they approach problems?
+**Is your character merciful? Unforgiving? Temperate? Regularly Drunk? Scholarly? What character traits do they have that shape how they approach problems?**
 
 He follows orders even when he doesn’t necessarily agree with them, because that’s his job. Outside of that he’s cheerful, inquisitive, selfless, and cares a lot about making a good impression on people.
 
@@ -735,6 +747,100 @@ The only real silver lining for Eadric has been Ashes of the Mountain, or Ash as
 
 -->
 
+### Eiko
+
+**Player:** Alex Canterbury
+
+**Faction:** ?
+
+**Class:** Paladin (Oath of the Ancients)
+
+**Race:** Tabaxi
+
+**Background:** Noble
+
+#### Faction Standings
+
+<table class="table table-striped datatable">
+	<thead>
+		<tr>
+			<th>Faction</th><th>Current Standing</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr><td>Black Wolf Irregulars</td><td>1</td></tr>
+		<tr><td>Amathera's Shield</td><td>0</td></tr>
+		<tr><td>Artificer's of Mechanus</td><td>0</td></tr>
+		<tr><td>Black Sun</td><td>0</td></tr>
+		<tr><td>Champions of Cora</td><td>0</td></tr>
+		<tr><td>Dormanian Imperial Guard</td><td>0</td></tr>
+		<tr><td>Guild of Heroes</td><td>0</td></tr>
+		<tr><td>International Grangemaster's Alliance</td><td>0</td></tr>
+		<tr><td>Illustrious Guild of Merchants and Fine Artisans</td><td>0</td></tr>
+		<tr><td>Keepers of the Grove</td><td>0</td></tr>
+		<tr><td>Lords of the Rising Dawn</td><td>0</td></tr>
+		<tr><td>Maker's of Legend</td><td>0</td></tr>
+		<tr><td>Masters of the Deep Song</td><td>0</td></tr>
+		<tr><td>Shepherd's of the All-Mother</td><td>0</td></tr>
+		<tr><td>Silver Dragon Knights</td><td>0</td></tr>
+		<tr><td>Sylvan's Rangers</td><td>0</td></tr>
+		<tr><td>Tock's Inevitables</td><td>0</td></tr>
+		<tr><td>Trollkin Mercenary Corps</td><td>0</td></tr>
+		<tr><td>Union of Wizard's Colleges</td><td>0</td></tr>
+	</tbody>
+</table>
+
+#### Backstory
+
+A noble from a country that no longer exists from before the Dormanian Empire, was cursed under mysterious circumstances and became a statuette for hundreds of years. Ocassionally goes back to being a statuette.
+
+### Sir Seig
+
+**Player:** Olivia Beck
+
+**Faction:** ?
+
+**Class:** Fighter (Champion?)
+
+**Race:** Human (Imperial?)
+
+**Background:** ?
+
+#### Faction Standings
+
+<table class="table table-striped datatable">
+	<thead>
+		<tr>
+			<th>Faction</th><th>Current Standing</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr><td>Black Wolf Irregulars</td><td>1</td></tr>
+		<tr><td>Amathera's Shield</td><td>0</td></tr>
+		<tr><td>Artificer's of Mechanus</td><td>0</td></tr>
+		<tr><td>Black Sun</td><td>0</td></tr>
+		<tr><td>Champions of Cora</td><td>0</td></tr>
+		<tr><td>Dormanian Imperial Guard</td><td>0</td></tr>
+		<tr><td>Guild of Heroes</td><td>0</td></tr>
+		<tr><td>International Grangemaster's Alliance</td><td>0</td></tr>
+		<tr><td>Illustrious Guild of Merchants and Fine Artisans</td><td>0</td></tr>
+		<tr><td>Keepers of the Grove</td><td>0</td></tr>
+		<tr><td>Lords of the Rising Dawn</td><td>0</td></tr>
+		<tr><td>Maker's of Legend</td><td>0</td></tr>
+		<tr><td>Masters of the Deep Song</td><td>0</td></tr>
+		<tr><td>Shepherd's of the All-Mother</td><td>0</td></tr>
+		<tr><td>Silver Dragon Knights</td><td>0</td></tr>
+		<tr><td>Sylvan's Rangers</td><td>0</td></tr>
+		<tr><td>Tock's Inevitables</td><td>0</td></tr>
+		<tr><td>Trollkin Mercenary Corps</td><td>0</td></tr>
+		<tr><td>Union of Wizard's Colleges</td><td>0</td></tr>
+	</tbody>
+</table>
+
+#### Backstory
+
+????
+
 ### NPC Table
 
 <table class='table table-striped datatable'>
@@ -757,5 +863,30 @@ The only real silver lining for Eadric has been Ashes of the Mountain, or Ash as
 		<tr><td>Farnor Spiketooth</td><td>Local Leader</td><td>Cur'Estan</td><td>Ambassador from Emperor Valraxa to Cur'Estan, Gold Dragonborn</td></tr>
 		<tr><td>Arman Hammerfall</td><td>Guild Member (Varius, Lilith)</td><td>Cur’Estan</td><td>Lieutenant in Blackwolf Irregulars, experience working a forge.</td></tr>
 		<tr><td>Aconi Willowbark</td><td>Local Leader</td><td>Cur'Estan</td><td>Leader of the local Druid's circle</td>
+		<tr><td>Carver Edlund</td><td>Previous lover, rival (Eyvindra)</td><td>Cur'Estan Area</td><td>Once an elite scout with the Sylvan's Rangers, something has driven him mad, and he is now convinced that everyone else is part of a grand conspiracy</td></tr>
+		<tr><td>Fenrick Von Stoop</td><td>rival (Ching Shu)</td><td>Cur'Estan</td><td>A local member of the Blood Brothers, he is secretly a serial killer who targets magic users</td></tr>
+		<tr><td>Theri</td><td>rival (Kismet)</td><td>Unknown</td><td>A warlock of Arengesus who teleports through time causing Kismet trouble because he thinks it's funny</td></tr>
+		<tr><td>Satura Kalmuc</td><td>rival (Varius)</td><td>Cur'Estan</td><td>A Gold Dragonborn in service of the Ancient Blue Dragon Horroth, The Mysterious One, on a mission from her master to hunt down and kill Queen Clara Eliana III, because her kobolds refused to serve Horroth decades ago, a slight Horroth has never forgotten.</td></tr>
+		<tr><td>Horroth, the Mysterious One</td><td>BBEG (Varius)</td><td>Rust Desert</td><td>An Ancient Blue Dragon with a hate for Varius's queen that transcends time.</td></tr>
+		<tr><td>????</td><td>rival (Lilith)</td><td>????</td><td>????</td></tr>
+		<tr><td>Xagnol the Death Eater</td><td>rival (Eiko)</td><td>Unknown</td><td>In Eiko's time, Xagnol was an evil wizard who Eiko was hunting when he was cursed. Now she is a lich seeking Godhood.</td></tr>
+		<tr><td>????</td><td>rival (Sir Seig)</td><td>????</td><td>????</td></tr>
+		<tr><td>Stratos the Genie</td><td>Father (Eyvindra)</td><td>Enslaved by Prince of Fiends</td><td>A genie with a penchant for getting it on with mortals, he has a telepathic connection to his biological children that he is attempting to leverage to get Eyvindra on the path to freeing him.</td></tr>
+		<tr><td>Phanthos Woodthrall</td><td>Step Father (Eyvindra)</td><td>Loridesa</td><td>Living in shame after being humiliated by Eyvindra in court</td></tr>
+		<tr><td>Krose Woodthrall</td><td>Step Brother (Eyvindra)</td><td>Loridesa</td><td>Living in shame after being humiliated by Eyvindra in court</td></tr>
+		<tr><td>Everette Woodthrall</td><td>Step Brother (Eyvindra)</td><td>Loridesa</td><td>Living in shame after being humiliated by Eyvindra in court</td></tr>
+		<tr><td>Svarlt Woodthrall</td><td>Half-Brother (Eyvindra)</td><td>Unknown</td><td>Disappeared some time ago, a letter from Carver indicated he might be in Cur'Estan, but so far there has been no sign of him.</td></tr>
+		<tr><td>Alfie Woodthrall</td><td>Half-Brother (Eyvindra)</td><td>Unknown</td><td>Disappeared some time ago, a letter from Carver indicated he might be in Cur'Estan, but so far there has been no sign of him.</td></tr>
+		<tr><td>Queen Clara Eliana III</td><td>Kobold Queen (Varius)</td><td>Kobold Mine near Westguard</td><td>The now elderly Queen of Varius's Kobold clan</td></tr>
+		<tr><td>Commander Ludo</td><td>Mentor (Varius)</td><td>Kobold Mine near Westguard</td><td>Commander Ludo mentored Varius and taught him the ins and outs of being a scout and ranger</td></tr>
+		<tr><td>Butch Godtouched</td><td>Local Leader</td><td>Cur'Estan</td><td>Leader of the Trollkin Mercenaries in Cur'Estan, technically her contract is with Empress Dormana I, but has been transferred to General Heartbren as the only assistance the empire can give to the war effort at this time</td></tr>
+		<tr><td>Gerad Heartbren</td><td>Guild Leader (Varius, Lilith)</td><td>Leader of the Black Wolf Irregulars and the ruler of Cur'Estan</td></tr>
+		<tr><td>Haera Oelefros</td><td>Local Leader</td><td>Cur'Estan</td><td>Leader of the Makers of Legend in Cur'Estan</td></tr>
+		<tr><td>Malia Demonslayer</td><td>Local Leader</td><td>Cur'Estan</td><td>Leader of Amathera's Shield in Cur'Estan</td></tr>
+		<tr><td>Margo</td><td>Local Leader, Merchant</td><td>Cur'Estan</td><td>Leader of the Artificer's of Mechanus, Magic item merchant in Cur'Estan</td></tr>
+		<tr><td>Theodore Gloryheart</td><td>Local Leader</td><td>Cur'Estan</td><td>Ambassador from the Empress of Dormania, Archduke of Falak, leader of the Dormanian Imperial Guard</td></tr>
+		<tr><td>Vanriel Glamfara</td><td>Guild Leader (Eyvindra Veil)</td><td>Leader of Sylvan's Rangers, Scout Commander for the Black Wolf Irregulars</td></tr>
+		<tr><td>Winslow Fredericks</td><td>Local Leader</td><td>Cur'Estan</td><td>Grangemaster of the International Grangemaster's Alliance in Cur'Estan</td></tr>
+		<tr><td>Wyrmling Trapsmith</td><td>Quartermaster</td><td>Cur'Estan</td><td>Quartermaster for the Black Wolf Irregulars</td></tr>
 	</tbody>
 </table>
