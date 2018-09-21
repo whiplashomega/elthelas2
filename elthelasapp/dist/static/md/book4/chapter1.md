@@ -286,15 +286,15 @@ The kobold sorcerer is the old leader of the tribe, and he chafes at being force
 <h4>Chapter Rewards</h4>
 
 <p>
-  Quest givers will provide rewards to the party for successful completion of their individual chapter quest. Lilith, Var, Eiko, and Sir Seig will have General Heartbren escort them to the armory, where he will personally pick out rewards for them and congratulate them on a job well done. For Eyvindra, Vanriel will give her a bag of gold
+  General Heartbren will give each member of the party 500 gp, and quest givers will provide rewards to the party for successful completion of their individual chapter quest. Lilith, Var, Eiko, and Sir Seig will have General Heartbren escort them to the armory, where he will personally pick out rewards for them and congratulate them on a job well done. For Eyvindra, Vanriel will give her a bag of gold.
 </p>
 
 <p>
-  <strong>Black Wolf Irregulars (Lilith): Hand Crossbow of Fire</strong> 
+  <strong>Black Wolf Irregulars (Lilith):</strong>  Hand Crossbow of Fire
 </p>
 
 <p>
-  <strong>Black Wolf Irregulars (Var): Arrow-Catching Shield</strong> 
+  <strong>Black Wolf Irregulars (Var):</strong>  Arrow-Catching Shield
 </p>
 
 <p>
@@ -302,12 +302,12 @@ The kobold sorcerer is the old leader of the tribe, and he chafes at being force
 </p>
 
 <p>
-  <strong>Black Wolf Irregulars (Seig) </strong> +1 Lance (approached by Trollkin Mercs for recruitment?)
+  <strong>Black Wolf Irregulars (Seig) </strong> Lance of Warning(approached by Trollkin Mercs for recruitment?)
 </p>
 
 <p><strong>Sylvan's Rangers: </strong>A gold bounty of 2000 gp and a Wand of Eldritch Blast.</p>
 
-<p><strong>Union of Wizard's Colleges: </strong>A Wand of Practiced Spells +1 (+1 to spell attack rolls for cantrips)</p>
+<p><strong>Union of Wizard's Colleges: </strong>A Wand of the War Mage +1</p>
 
 <p><strong>The Inevitables: </strong> Gauntlets of the Immortal Fist</p>
 <p><strong>

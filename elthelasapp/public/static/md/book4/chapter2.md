@@ -16,7 +16,7 @@ Luna found Barbarious to be an unworthy companion, and his devotion incomplete, 
 
 #### Luna, the Sword of Cora, Initiate
 
-Luna initially is a +1 Sword
+Luna initially is a +1 Rapier.
 
 ***Light Eternal*** The holder of Luna can cast the light spell at will on Luna only.
 
@@ -386,7 +386,6 @@ The party won't get far out of town before they are stopped on the road by a gro
 
 [Run This Encounter](/runner/necromancer&ogrezombie&ogrezombie&minotaurskeleton&minotaurskeleton)
 
-
 ### Xagnol's Ancient Lair
 
 Xagnol abandoned his old haunts ages ago, but the cave remains infested with undead to this day. The cave is not large, and is easily explored once the pack of ghouls that inhabits it is destroyed. Searching the cave can find:
@@ -433,7 +432,11 @@ Must be thrown into the volcano, Paladins of Amathera will try to prevent its de
 
 ***The Slide*** The door at the other end of the entrance hall opens to a steep icy slide that circles down into the bowels of the mountain. At intervals down the slide it sends the players into large snow banks, before continuing on. There are 4 snow banks in total, including one at the bottom.
 
-***The Portal*** The bottom of the slide opens into the portal room, where Bimriel has set up a permanent gate to the frozen portions of the plane of water near its border with the plane of air. This room is exceptionally cold, such that staying in it for more than a minute will begin to add levels of exhaustion, and it is guarded by creatures that have wandered through the portal, Ice Elementals and Ice Mephits. There are two doors out of this room, one to the right and one to the left. If the party doubles back into this room after going one way or the other, additional ice elementals and ice mephits may have wandered through the portal. Roll once on the table below for the first minute, and again for every 5 minutes after that, until there are 6 creatures in the room. The door to the left leads to the library while the door to the right leads to the staff quarters. The ice elementals will not attack the players unless they either attack first (the elementals particularly, they don't care about the mephits) or they approach the portal. The ice mephits will demand the players shoes in order to let them past, except Eyvindra, who they will call 'the Descended'.
+***Hallway of Icicles*** Many small icicles jut out of the wall, none are sharp and they look non-threatening and decorative, but it is rather difficult to move through them without breaking any of the them. When enough break, or certain ones break, the stability of the ceiling falls apart and the player is covered in more snow slush.
+
+***Fake Statue*** At the end of the Hallway of Icicles is an abrupt corner there is a statue of a noble adventurer, gazing in horror down the hallway which the players cannot see at this point. The players may believe there is a gorgon or a basilisk around the corner, but this is actually something the dragon asked to be made as tribute and isn’t even a real person. The trap part is that after the corner there is a pit of more slush snow, plainly visible, but do you dare look? Any player that tries to turn the corner while averting their eyes falls into the snow. Try to play up the basilisk possibly, specifically ask if the players are averting their gaze as they walk around the corner. Even if one falls in continue to ask if they avert their gaze. Further down the hallways they will find a plaque which dedicates the statue to the dragon, made as his request.
+
+***The Portal*** The hallway with the fake statue leads into the portal room, where Bimriel has set up a permanent gate to the frozen portions of the plane of water near its border with the plane of air. This room is exceptionally cold, such that staying in it for more than a minute will begin to add levels of exhaustion, and it is guarded by creatures that have wandered through the portal, Ice Elementals and Ice Mephits. There are two doors out of this room, one to the right and one to the left. If the party doubles back into this room after going one way or the other, additional ice elementals and ice mephits may have wandered through the portal. Roll once on the table below for the first minute, and again for every 5 minutes after that, until there are 6 creatures in the room. The door to the left leads to the library while the door to the right leads to the staff quarters. The ice elementals will not attack the players unless they either attack first (the elementals particularly, they don't care about the mephits) or they approach the portal. The ice mephits will demand the players shoes in order to let them past, except Eyvindra, who they will call 'the Descended'.
 
 [Run This Encounter](/runner/iceelemental&iceelemental&icemephit&icemephit&icemephit)
 
@@ -458,7 +461,23 @@ Must be thrown into the volcano, Paladins of Amathera will try to prevent its de
 
 [Run This Encounter](/runner/stonegolem&stonegolem&yeti&yeti&yeti&kobold&kobold&kobold&kobold&kobold&kobold&kobold&kobold&kobold&kobold&kobold&kobold)
 
-***The Hall of Mirrors*** insert hall of mirrors trap designed by Brent, three exits from this room, one to The Creche, one to The Sanitarium (both of which do not lead to things beyond), and one to the ooze room.
+***The Hall of Mirrors*** Players enter the room from the south, and see the complicated mirror puzzle before them. 
+
+There are ice platforms (Blue squares) that allow the players to stand. The walls are thick solid ice, climbing equipment does not pierce them. Below is rushing ice water. If a player falls in, they are swept quickly underwater, and out of the room to the south. They take bludgeoning damage, a level of exhaustion, and are spat out in a previous room.
+
+Light comes from the ceiling and centers on mirrors (Orange triangles) which bounce the light in a straight line across the room. They can be rotated 360 degrees, but not up and down.
+
+Green Crystals (Green stars) can have light shown on them. When they have light in them, they cause the corresponding thin ice bridge (Purple lines), with the same number to turn 90 degrees. If the light is broken, they turn back to their original position. If a player stands on the bridge while it is in motion they must make a dex save or falls off, as they are basically balancing beams. Players require no check to balance on the beams, as long as nothing moves or disturbs their crossing.
+
+Big rocks (Grey pentagon), will block the light. They are very slick, and jumping onto them is quite difficult.
+
+The center platform (Brown circle with line), also blocks light. There are 4 blue crystals (Blue stars), that, when they have light shown on them, lower the platform down from the ceiling. When all 4 are lit, the platform is lowered enough to be moved onto.
+
+The two side doors have an extendable bridge (Pink Squares), so when one player makes it they can extend the bridge so others may enter. The extendable bridge requires a player to hold it in place, or it will retract.
+
+The jist is, they need to shine 4 lights at the center area, and also shine two on the path that lead to the exit door in order to escape. The other two rooms need to have a player stand on the bridge as it turns in order to open the door. 
+
+![Mirror Puzzle](/static/images/mirrorpuzzle.png)
 
 ***The Sanitarium*** Bimriel often takes in those who have been touched by madness from the surrounding communities. The Sanitarium is where she houses them. It currently houses 8 people who are too dangerous to be part of society. They are cared for by Bimriel's staff, and live in padded cells. When the party enters, kobolds in white coats are carrying an unconscious man into one of the cells, where they lay him in bed, shut and lock the door. They kobolds do not bother the party so long as they do not interfere with their work, and are willing to answer questions. Two of the patients are in the outer area, one sits in the corner hugging his knees and muttering to himself, while the other is sitting staring straight ahead, ignoring all around him. Upon seeing Eyvindra, the one in the corner will get up and run to her, trying to grab her arm. He tells her that she must get a message to Carver that he has been caught. Igor has been caught and Carver will have to continue on his own.
 
