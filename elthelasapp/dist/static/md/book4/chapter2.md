@@ -2,6 +2,25 @@
 
 ## Preparation
 
+Vanriel will at the outset go to Eyvindra's house. She will ask her to continue to work with the team, and lets her know that Carver was seen at the local stables, where he purchased a horse and rode off to the east.
+
+### Offers to Join
+
+#### Sir Seig
+
+Sir Seig will be approached by Butch Godtouched with an offer to join the Trollkin Mercenary Corps as a Special Liaison. If she accepts, the intelligence gathering orders will go to her, and the Black Wolf Irregulars will receive the alternate orders.
+
+#### Eiko
+
+Luna found Barbarious to be an unworthy companion, and his devotion incomplete, and forcibly unattuned from him. He dropped the blade and fled. Luna has concealed herself from view from all except those she thinks might be worthy, one of which is Eiko. Eiko will be walking along when she suddenly notices a sword sitting on the ground (rapier?). No one else seems to notice it, despite being conspicuously laying there in a public space. If she picks it up, it will talk to her, introduce itself, and ask if Eiko is willing to devote herself fighting evil in the name of Cora, and accept Cora into her heart. If so, Luna will instantly become attuned to Eiko, and give Eiko quests as a Champion of Cora.
+
+#### Luna, the Sword of Cora, Initiate
+
+Luna initially is a +1 Sword
+
+***Light Eternal*** The holder of Luna can cast the light spell at will on Luna only.
+
+***Fearless*** While attuned to and holding Luna you cannot be frightened.
 
 ### Important NPCs
 
@@ -13,6 +32,14 @@ The local blacksmith of Winterdrift and a spy for the Black Wolf Irregulars. He 
 
 A local farmer who thinks the charges against her friend James Gunn are trumped up nonsense. She is an old widow and well respected in town, so when she refused to let the guards search her house to look for James, they went along with it rather than do something that would have the city council after them if he wasn't there.
 
+#### Bimriel the Learned
+
+Bimriel is an Ancient Silver Dragon, well known to live on Mount Frost. She has an extensive dungeon, and is known to horde books.
+
+#### Bubbles
+
+Bimriel's butler, Bubbles is an Iron Golem that through a mad experiment by his creator was given sentience. He now serves Bimriel faithfully as the head of her household.
+
 ### Orders
 
 #### General Heartbren's Orders
@@ -22,6 +49,14 @@ The refugees from Northport managed to smuggle out artifacts that we must guaran
 #### Black Wolf Irregulars Orders
 
 I need you to make a surreptitious pickup in the nearby town of Winterdrift. The local blacksmith is one of our covert agents, and will have a packet of intelligence reports we need you to retreive and bring back. Do not let anyone else see them, not even allies.
+
+#### Trollkin Mercenary Corps Orders
+
+The Trollkin maintain a strict stance on religion, no member of the Mercenary Corps shall publicly espose any religion, nor favor or oppose any contract based on relgion. However, there has been a recent underground movement where many Trollkin have begun to favor the Dark God Malik, drawing on his power to achieve greater success in combat. Recently a Trollkin squad under contract with the King of Kandor, went rogue, breaking contract and killing 10 of the King's men in the name of Malik. This sort of besmirching of the Corps reputation must not be allowed to stand. The rogue squad was tracked to the area of Winterdrift. Find them and kill them. Here's your payment for the job.
+
+#### Champions of Cora Orders
+
+Delving into your memories I see you have an unbeaten foe in the necromancer Xagnol. If you are to travel to your old homeland, find the cave where you once faced Xagnol, and discover what has become of the wretched creature.
 
 #### Inevitables Orders
 
@@ -351,6 +386,17 @@ The party won't get far out of town before they are stopped on the road by a gro
 
 [Run This Encounter](/runner/necromancer&ogrezombie&ogrezombie&minotaurskeleton&minotaurskeleton)
 
+
+### Xagnol's Ancient Lair
+
+Xagnol abandoned his old haunts ages ago, but the cave remains infested with undead to this day. The cave is not large, and is easily explored once the pack of ghouls that inhabits it is destroyed. Searching the cave can find:
+* DC 5: Some petrified biscuits in a rotting cupboard.
+* DC 10: Xagnol's old journal. The journal describes his quest for immortality, his discovery of the ritual to become a lich (though not details on what the ritual entails), as well as talks about the spell he created as a joke to use on adventurers who bother him that turns them into statuettes. He describes at the end of the journal how he has discovered that the sword Frostmourne, a key part of the ritual, is being stored at the Fortress of Cur'Mestin to the east.
+* DC 15: A dry skeleton, still in a rotted soldier's uniform, with the insignia of Sir Seig's old squad on the shoulder.
+* DC 20: A hidden cache with 1400 gp.
+
+[Run This Encounter](/runner/ghast&ghast&ghast&ghast&ghoul&ghoul&ghoul&ghoul)
+
 ### Intelligence Gathering
 
 Winterdrift is not a very big town, it has one inn, a few shops, and lots of farmland. Prominently posted throughout the town are wanted posters for 'James Gunn, local blacksmith'. His shop is abandoned, and has clearly been ransacked.
@@ -365,24 +411,71 @@ Must be thrown into the volcano, Paladins of Amathera will try to prevent its de
 
 ### Mount Frost
 
-***The Entrance*** The cave entrance is blocked by a massive sheet of ice, 50 ft tall. It does not reach all the way to the ceiling and is climbable but requires a DC 20 athletics check even from those with a climb speed, or the use of climbers tools (pitons, rope, and an ice pick). On the other side of the blockade is a deep drift of loosely packed snow. It will break the fall of anyone falling from the top but the snow gets into clothes, and exposed areas and if it isn't dealt with within 1 minute the resulting cold causes one level of exhaustion. A small group of Yeti's guards the entrance past the ice sheet and will begin attacking anyone who makes it over.
+***The Yetis*** Roughly half way up the mountain, the party sees a massive yeti running full speed towards them. It will not stop but will run right past them. Following the Abominable Yeti is a group of regular Yetis who are trying to chase it down and kill it. These Yetis will attack the party on sight.
 
-[Run This Encounter](/runner/yeti&yeti&abominableyeti)
+[Run This Encounter](/runner/abominableyeti&yeti&yeti&yeti&yeti&yeti)
+
+***Climbing the Mountain*** This encounter may happen when approaching the Dragon's lair or when attempting to reach the summit to destroy the time egg, whichever happens first. The mountain is steep, and perpetually covered in snow as a magical blizzard rages overhead. Climbing requires either slow progress with the use of climbing tools, or a DC 10 athletics check for each quarter mile attempted, with a failure resulting in no progress. It is exceptionally cold, and failure to wear appropriate winter gear causes a level of exhaustion for every 30 minutes spent in the snow, and resting while exposed to the blizzard is not possible unless special cold weather tents are used. While climbing the steep hillside a skilled perception check (DC 16) will notice that Winter Wolves have picked up the parties scent and are circling in for the kill. Failure to detect the circling wolves means the wolves jump out of the snow at the party.
+
+[Run This Encounter](/runner/winterwolf&winterwolf&winterwolf&winterwolf&winterwolf&winterwolf&winterwolf)
+
+***The Ritual*** As the party approaches the ice sheet wall that marks the entrance to the dungeon, they will see a group of 5 ice mephits sitting in a circle and chanting. The mephits do not seem to be responding to anyone, they do not seem to even notice the players, but Eyvindra will feel drawn to whatever ritual they are performing. If she approaches the Voice in her head will suddenly say 'Find Me at ' and then go silent. When it does, the ice mephits awaken from their trance, and seeing themselves outnumbered, will attempt to flee. A good Arcana or history roll will identify the ritual as a very primitive form of the spell Sending, advantageous because it requires almost impreceptibly small amounts of magical energy, but difficult to perform because it requires the sender and receiver to share blood, and to perform a lengthy ritual to send and receive the message.
+
+[Run This Encounter](/runner/icemephit&icemephit&icemephit&icemephit&icemephit)
+
+***The Entrance*** The cave entrance is blocked by a massive sheet of ice, 50 ft tall.It does not reach all the way to the ceiling and is climbable but requires a DC 20 athletics check even from those with a climb speed, or the use of climbers tools (pitons, rope, and an ice pick).  Just in front of this is an extra large chest with a sign that says 'leave tribute here and I'll collect it when I get around to it -Bimriel'. On the other side of the blockade is a deep drift of loosely packed snow. It will break the fall of anyone falling from the top but the snow gets into clothes, and exposed areas and if it isn't dealt with within 1 minute the resulting cold causes one level of exhaustion. A small group of Yeti's guards the entrance past the ice sheet and will begin attacking anyone who makes it over. Beyond the Yeti's is a massive double door 20 ft tall and 20 ft wide, with a giant steel knocker. If the party uses the knocker the door will be answered by Bubbles (see below)
+
+[Run This Encounter](/runner/yeti&yeti&yeti&yeti&yeti)
+
+***The Greeting Hall*** The first room beyond the entrance is the Greeting Hall, where the sentient Iron Golem Bubbles, Bimriel's butler, will greet the party. Bubbles is not hostile to the party, but informs them that Bimriel does not guarantee free passage through his den to any, however friendly they may be, and if they have tribute to offer, the safest way for them to do so would be to leave it in the chest outside where it will be collected in a day or two or whenever Bimriel gets around to it. However, if they choose to deliver tribute to Bimriel directly, they will have to get through the dungeon. Bubbles reassures the party however, that so long as they do not steal from her, and do not attack the staff, Bimriel will not harm them and will certainly hear them out should they make it to her chamber.
+
+[Run This Encounter](/runner/irongolem)
+
+***The Slide*** The door at the other end of the entrance hall opens to a steep icy slide that circles down into the bowels of the mountain. At intervals down the slide it sends the players into large snow banks, before continuing on. There are 4 snow banks in total, including one at the bottom.
+
+***The Portal*** The bottom of the slide opens into the portal room, where Bimriel has set up a permanent gate to the frozen portions of the plane of water near its border with the plane of air. This room is exceptionally cold, such that staying in it for more than a minute will begin to add levels of exhaustion, and it is guarded by creatures that have wandered through the portal, Ice Elementals and Ice Mephits. There are two doors out of this room, one to the right and one to the left. If the party doubles back into this room after going one way or the other, additional ice elementals and ice mephits may have wandered through the portal. Roll once on the table below for the first minute, and again for every 5 minutes after that, until there are 6 creatures in the room. The door to the left leads to the library while the door to the right leads to the staff quarters. The ice elementals will not attack the players unless they either attack first (the elementals particularly, they don't care about the mephits) or they approach the portal. The ice mephits will demand the players shoes in order to let them past, except Eyvindra, who they will call 'the Descended'.
+
+[Run This Encounter](/runner/iceelemental&iceelemental&icemephit&icemephit&icemephit)
+
+<table class="table table-striped">
+  <thead><tr><th>Roll (d10)</th><th>Result</th></tr></thead>
+  <tbody>
+    <tr><td>1-4</td><td>Nothing</td></tr>
+    <tr><td>5-8</td><td>Ice Mephit</td></tr>
+    <tr><td>9-10</td><td>Ice Elemental</td></tr>
+  </tbody>
+</table>
+
+***The Library*** The library is a massive chamber with bookshelves 30 ft tall (and no ladders). Books from every era have been collected here. There are two doors out of the library. One is heavily trapped and magically sealed, covered in runes, while the other looks like it was heavily trapped, before the dead frost giant in front of it tried to open it. It is however, jammed shut from the other side (DC 15 Strength check to force the door, the Frost Giants have placed a rock in front of the door to keep out intruders while they plan, their planning can relatively easily be heard through the door DC 8 Perception). The sealed door leads to the Great Library of the Stone Giants. The other door leads to the Gallery.
+
+***The Gallery*** The gallery contains massive stone frieses filled with stories from Bimriel's life. Sitting in the gallery are 4 frost giants discussing how they are going to surprise the Dragon Bimriel and try to steal its horde. There is no way forward through the gallery.
+
+[Run This Encounter](/runner/frostgiant&frostgiant&frostgiant&frostgiant)
+
+***The Stories of the Gallery.*** Featured prominently are tales of the long dead kingdom of Asiro, the land of the Tabaxi, that once stood in the shadow of Mount Frost. When Bimriel was a much younger Dragon, he was good friends with several of the Tabaxi kings, and protected them from harm. It tells of the dances he attended and the songs he listened to, including lyrics to several. It also tells of the destruction of Asiro, Dorman's armies marching through the land in an all out assault, burning towns and slaughtering all who opposed them. At the end of the epic tale, Bimriel is fighting alongside his friend, the Tabaxi King, when the king is struck down by Dorman himself. Bimriel is injured, but spared by the Dormanian Emperor, and vows to never become involved in the wars of mortals again. 
+
+***The Staff Quarters*** The Staff Quarters has a central hallway with many side rooms off of it, there are a number of silver kobolds passing through, sitting at tables, etc, as well as a few Yeti's who have been employed to help with the cleaning, and a golem or two doing some repetitive manual labor to cut out new rooms from the stone. Everyone is friendly to the players unless they attacked Bubbles, stole books from the library, or stole tribute from the tribute chest. In which case frontal assault on the room is likely to be suicide for the players. There are many diverging paths here, but only one leads out of the Staff Quarters and into the rest of the dungeon. Any of the staff can point the way.
+
+[Run This Encounter](/runner/stonegolem&stonegolem&yeti&yeti&yeti&kobold&kobold&kobold&kobold&kobold&kobold&kobold&kobold&kobold&kobold&kobold&kobold)
+
+***The Hall of Mirrors*** insert hall of mirrors trap designed by Brent, three exits from this room, one to The Creche, one to The Sanitarium (both of which do not lead to things beyond), and one to the ooze room.
+
+***The Sanitarium*** Bimriel often takes in those who have been touched by madness from the surrounding communities. The Sanitarium is where she houses them. It currently houses 8 people who are too dangerous to be part of society. They are cared for by Bimriel's staff, and live in padded cells. When the party enters, kobolds in white coats are carrying an unconscious man into one of the cells, where they lay him in bed, shut and lock the door. They kobolds do not bother the party so long as they do not interfere with their work, and are willing to answer questions. Two of the patients are in the outer area, one sits in the corner hugging his knees and muttering to himself, while the other is sitting staring straight ahead, ignoring all around him. Upon seeing Eyvindra, the one in the corner will get up and run to her, trying to grab her arm. He tells her that she must get a message to Carver that he has been caught. Igor has been caught and Carver will have to continue on his own.
+
+The orderlies, if asked about Igor, explain that they believe he went insane after finding some kind of strange, and presumably magical, stone while on a scouting mission in Malinval. They haven't been able to get details out of him, but he was committed after he was found wandering through Winterdrift accusing everyone of being out to get him.
 
 ***The Creche*** This large room is filled with piles of snow, and a silver wyrmling and a young silver dragon are napping in two piles of the same. There are 3 kobold attendants who do not attack the party, but refuse them entrance, as any risk to their charges (the children of Bimriel) is unacceptable. The children are named Qyvris and Corsas.
 
 [Run This Encounter](/runner/youngsilverdragon&silverdragonwyrmling&kobolddragonshield&kobolddragonshield&kobolddragonshield)
 
-[Run This Encounter](/runner/iceelemental&iceelemental&icemephit&icemephit&icemephit&icemephit&icemephit&icemephit)
-
-[Run This Encounter](/runner/winterwolf&winterwolf&winterwolf&winterwolf&winterwolf&winterwolf&winterwolf&winterwolf)
-
-***The Gallery*** The gallery contains massive stone frieses filled with stories from Bimriel's life. Sitting in the gallery are 4 frost giants discussing how they are going to surprise the Dragon Bimriel and try to steal its horde. 
-
-[Run This Encounter](/runner/frostgiant&frostgiant&frostgiant&frostgiant)
+***The Ooze Room*** The Ooze room is 100 ft tall and long, and 20 ft wide, with a 10 ft by 10 ft door on each end, one leading to the Hall of Mirrors, and one leading into the Grand Hall. The door to the Grand Hall is locked (DC 18 thieves tools to unlock). On first entering the room it appears as if it becomes taller as one moves closer to the Grand Hall, but once the entrance has been cleared 1-2 White Maws fall from the ceiling above the entrance and attack the party, almost having the appearance of a cave-in.
 
 [Run This Encounter](/runner/whitemaw&whitemaw)
 
-**The Stories of the Gallery.** Featured prominently are tales of the long dead kingdom of Asiro, the land of the Tabaxi, that once stood in the shadow of Mount Frost. When Bimriel was a much younger Dragon, he was good friends with several of the Tabaxi kings, and protected them from harm. It tells of the dances he attended and the songs he listened to, including lyrics to several. It also tells of the destruction of Asiro, Dorman's armies marching through the land in an all out assault, burning towns and slaughtering all who opposed them. At the end of the epic tale, Bimriel is fighting alongside his friend, the Tabaxi King, when the king is struck down by Dorman himself. Bimriel is injured, but spared by the Dormanian Emperor, and vows to never become involved in the wars of mortals again. 
+***The Grand Hall*** The Grand Hall is where Bimriel entertains guests when she decides to. There are large tables (currently empty), staff on hand (all silver kobolds + Bubbles), and fireplaces with fires burning brightly. The room is pleasantly warm. Bubbles, who teleported down here to greet the party on their successful completion of the dungeon. Bubbles offers the players warm food and drink that, if accepted, will reduce any levels of exhaustion they have by one. The food is served by the Kobold waitstaff, who bring food in through a small side door that leads to the kitchens. There is a grand double door at the end of the Grand Hall that leads to Bimriel's personal quarters. Players are asked to leave behind all weapons, magical items that are not tribute for Bimriel (including Arcanum crystals, spellbooks, etc), with Bubbles before entering Bimriel's quarters and are each given a ring that they are asked to put on. These rings are Rings of Detection, they make the wearer visable to anyone within 500 ft, even through walls, magic etc, and require a remove curse spell to remove. Attempting to force their way in without the rings will lead to hostility from Bubbles and the kobold staff.
+
+[Run This Encounter](/runner/irongolem&kobold&kobold&kobold&kobold&kobold&kobold)
+
+***Bimriel's Quarters*** Bimriel will greet the players in human form when they enter her quarters. She takes the appearance of an older, yet fit, woman, wearing a tasteful gown in an older style. Her quarters are a strange mix of massive and human sized accomodations, but everything is finely crafted stone. The room is cold, but not uncomfortably so.
 
 ### Return to Cur'Estan

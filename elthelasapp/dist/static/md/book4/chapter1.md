@@ -286,7 +286,7 @@ The kobold sorcerer is the old leader of the tribe, and he chafes at being force
 <h4>Chapter Rewards</h4>
 
 <p>
-  Quest givers will provide rewards to the party for successful completion of their individual chapter quest.
+  Quest givers will provide rewards to the party for successful completion of their individual chapter quest. Lilith, Var, Eiko, and Sir Seig will have General Heartbren escort them to the armory, where he will personally pick out rewards for them and congratulate them on a job well done. For Eyvindra, Vanriel will give her a bag of gold
 </p>
 
 <p>
@@ -305,7 +305,7 @@ The kobold sorcerer is the old leader of the tribe, and he chafes at being force
   <strong>Black Wolf Irregulars (Seig) </strong> +1 Lance (approached by Trollkin Mercs for recruitment?)
 </p>
 
-<p><strong>Sylvan's Rangers: </strong>A gold bounty of 2000 gp.</p>
+<p><strong>Sylvan's Rangers: </strong>A gold bounty of 2000 gp and a Wand of Eldritch Blast.</p>
 
 <p><strong>Union of Wizard's Colleges: </strong>A Wand of Practiced Spells +1 (+1 to spell attack rolls for cantrips)</p>
 
