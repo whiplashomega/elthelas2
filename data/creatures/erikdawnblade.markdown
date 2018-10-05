@@ -2,7 +2,7 @@
 layout: post
 title: "Erik Dawnblade"
 date: 2016-02-29
-tags: [medium, humanoid (fallen aasimar), cr9]
+tags: [medium, humanoid (fallen aasimar), cr10]
 ---
 
 **Medium humanoid (fallen aasimar), lawful evil**
@@ -29,7 +29,7 @@ tags: [medium, humanoid (fallen aasimar), cr9]
 
 **Languages** Imperial, Orc, Infernal
 
-**Challenge** 9
+**Challenge** 10
 
 **Spellcasting** Erik is an 11th level spellcaster. He has 4 1st level, 3 2nd level, and 3 3rd level spell slots.
 

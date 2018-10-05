@@ -27,7 +27,7 @@ tags: [medium, humanoid, cr3]
 
 **Languages** Staelic, Stagen, Imperial
 
-**Challenge** 2
+**Challenge** 1
 
 **Spellcasting** Charm Person, Thunderwave, Faerie Fire, Speak w/ Animal, Calm Emotions, Crown of Madness, Hold Person, Tongues, Spell Save DC 14, Spell Attack Bonus +6
 

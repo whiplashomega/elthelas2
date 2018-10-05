@@ -35,6 +35,8 @@ tags: [medium, humanoid, cr5]
 
 **Actions** 
 
+**Multiattack:** Genevieve makes 2 greatsword attacks on her turn.
+
 **Greatsword +1:** Melee Weapon Attack. Range 5 ft. To hit: +7 (damage 2d6+4) reroll 1s and 2s in damage dice.
 
 **Handaxe:** Melee or Ranged Weapon Attack. Range 20/60. To hit: +6 (damage 1d4+3)

@@ -13,7 +13,12 @@ export default {
     magicscrolls: 'allMagicScrolls',
     magicweapons: 'allMagicWeapons',
     magicarmor: 'allMagicArmor',
-    magicother: 'allMagicOther'
+    magicother: 'allMagicOther',
+    commons: 'allCommons',
+    uncommons: 'allUncommons',
+    rares: 'allRares',
+    veryrares: 'allVeryRares',
+    legendaries: 'allLegendaries'
   }),
   data: function() {
     return {
@@ -83,11 +88,13 @@ export default {
         ],
         filter: "",
         filterBy: [ "Item", "Type", "Attunement", "Rarity", "Cost (gp)", "Effect" ],
+        filterRarity: [ "Common", "Uncommon", "Rare", "Very Rare", "Legendary" ],
+        filterCost: "",
         sortBy: null,
         sortDesc: false
       },
       magicItemModal: { Item: '', Rarity: '', instock: '', Effect: '', 'Cost (gp)': '', Attunement: '' },
-      instockonly: false
+      instockonly: true
     };
   },
   methods: {
@@ -119,14 +126,20 @@ export default {
       var filter = this.magicitemtables.filterBy;
       var value = this.magicitemtables.filter;
       if (this.instockfilter(a)) {
-        var inelement = filter.some(function(el) {
+        var inelement = filter.some((el) => {
           for (var y in a) {
             if (el === y && a[y].toString().toLowerCase().includes(value.toLowerCase())) {
-              return true;
+              if ((!this.magicitemtables.filterCost || Number(this.magicitemtables.filterCost) >= a["Cost (gp)"]) && this.magicitemtables.filterRarity.includes(a.Rarity)) {
+                return true;
+              }
             }
           }
         });
-        if (!value || inelement) {
+        if ((
+          !value &&
+          (!this.magicitemtables.filterCost || Number(this.magicitemtables.filterCost)) >= a["Cost (gp)"] &&
+          this.magicitemtables.filterRarity.includes(a.Rarity)) ||
+          inelement) {
           return true;
         }
         return false;

@@ -389,6 +389,7 @@ The party won't get far out of town before they are stopped on the road by a gro
 ### Xagnol's Ancient Lair
 
 Xagnol abandoned his old haunts ages ago, but the cave remains infested with undead to this day. The cave is not large, and is easily explored once the pack of ghouls that inhabits it is destroyed. Searching the cave can find:
+
 * DC 5: Some petrified biscuits in a rotting cupboard.
 * DC 10: Xagnol's old journal. The journal describes his quest for immortality, his discovery of the ritual to become a lich (though not details on what the ritual entails), as well as talks about the spell he created as a joke to use on adventurers who bother him that turns them into statuettes. He describes at the end of the journal how he has discovered that the sword Frostmourne, a key part of the ritual, is being stored at the Fortress of Cur'Mestin to the east.
 * DC 15: A dry skeleton, still in a rotted soldier's uniform, with the insignia of Sir Seig's old squad on the shoulder.
@@ -401,6 +402,14 @@ Xagnol abandoned his old haunts ages ago, but the cave remains infested with und
 Winterdrift is not a very big town, it has one inn, a few shops, and lots of farmland. Prominently posted throughout the town are wanted posters for 'James Gunn, local blacksmith'. His shop is abandoned, and has clearly been ransacked.
 
 James is hiding with a friend of his, Agatha Harris, who has a farm just outside of town. The documents they need were unfortunately at his shop in a hidden safe, and he is not sure if the guards found it or not. In fact the guards did find it, but were unable to open it. They carried it back to the local jail until they could find someone who could open it for them.
+
+### Trollkin Rebels
+
+The Trollkin who broke contract passed through Winterdrift shortly before the party arrives to the area. Interrogating locals reveals that they asked about where they could pick up a ship, and were reportedly travelling up to Port Frost to try to catch a ship.
+
+The rebels are currently staying at 'The Lonely Sailor', a seedy inn and brothel in Port Frost that caters to sailors passing through Port Frost. There are 5 of them total, as well as the human Priest of Malik who convinced them to break contract. The priest will not engage the party directly, nor reveal his role in the whole thing until the Trollkin rebels are dead, at which point he will declare that Malik will have his revenge and flee.
+
+[Run This Encounter](/runner/trollkinwarmonger&trollkinwarmonger&trollkinwarmonger&trollkinwarmonger&trollkinwarmonger)
 
 ### Destroying the Time Egg
 
@@ -463,7 +472,7 @@ Must be thrown into the volcano, Paladins of Amathera will try to prevent its de
 
 ***The Hall of Mirrors*** Players enter the room from the south, and see the complicated mirror puzzle before them. 
 
-There are ice platforms (Blue squares) that allow the players to stand. The walls are thick solid ice, climbing equipment does not pierce them. Below is rushing ice water. If a player falls in, they are swept quickly underwater, and out of the room to the south. They take bludgeoning damage, a level of exhaustion, and are spat out in a previous room.
+There are ice platforms (Blue squares) that allow the players to stand. The walls are smooth solid metal, climbing equipment does not pierce them. Below is rushing ice water. If a player falls in, they are swept quickly underwater, and out of the room to the south. They take bludgeoning damage, a level of exhaustion, and are spat out in a previous room.
 
 Light comes from the ceiling and centers on mirrors (Orange triangles) which bounce the light in a straight line across the room. They can be rotated 360 degrees, but not up and down.
 
@@ -498,3 +507,4 @@ The orderlies, if asked about Igor, explain that they believe he went insane aft
 ***Bimriel's Quarters*** Bimriel will greet the players in human form when they enter her quarters. She takes the appearance of an older, yet fit, woman, wearing a tasteful gown in an older style. Her quarters are a strange mix of massive and human sized accomodations, but everything is finely crafted stone. The room is cold, but not uncomfortably so.
 
 ### Return to Cur'Estan
+

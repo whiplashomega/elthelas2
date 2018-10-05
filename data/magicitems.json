@@ -1037,7 +1037,7 @@
    "Cost (gp)": "11000",
    "Rarity": "Very Rare",
    "Attunement": "Yes",
-   "Effect": "This dazzling helm is set with 1d10 diamonds, 2d10 rubies, 3d10 fire opals, and 4d10 opals. Any gem pried from the helm crumbles to dust. When all the gems are removed or destroyed, the helm loses its magic.\n You gain the following benefits while wearing it:                                            You can use an action to cast one of the following spells (save DC 18), using one of the helm's gems of the specified type as a component: daylight (opal), fireball (fi re opal), prismatic spray (diamond), or wall of fire (ruby). The gem is destroyed when the spell is cast and disappears from the helm.                       As long as it has at least one diamond, the helm emits dim light in a 30-foot radius when at least one undead is within that area. Any undead that starts its turn in that area takes 1d6 radiant damage.                       As long as the helm has at least one ruby, you have resistance to fire damage.                       As long as the helm has at least one fire opal, you can use an action and speak a command word to cause one weapon you are holding to burst into flames. The flames emit bright light in a 10-foot radius and dim light for an additional 10 feet. The flames are harmless to you and the weapon. When you hit with an attack using the blazing weapon, the target takes an extra 1d6 fire damage. The flames last until you use a bonus action to speak the command word again or until you drop or stow the weapon.                                          Roll a d20 if you are wearing the helm and take fire damage as a result of failing a saving throw against a spell. On a roll of 1, the helm emits beams of light from its remaining gems. Each creature within 60 feet of the helm other than you must succeed on a DC 17 Dexterity saving throw or be struck by a beam, taking radiant damage equal to the number of gems in the helm. The helm and its gems are then destroyed."
+   "Effect": "This dazzling helm is set with 1d10 diamonds, 2d10 rubies, 3d10 fire opals, and 4d10 opals. Any gem pried from the helm crumbles to dust. When all the gems are removed or destroyed, the helm loses its magic.\n You gain the following benefits while wearing it:\n\n* You can use an action to cast one of the following spells (save DC 18), using one of the helm's gems of the specified type as a component: daylight (opal), fireball (fi re opal), prismatic spray (diamond), or wall of fire (ruby). The gem is destroyed when the spell is cast and disappears from the helm.\n* As long as it has at least one diamond, the helm emits dim light in a 30-foot radius when at least one undead is within that area. Any undead that starts its turn in that area takes 1d6 radiant damage.\n* As long as the helm has at least one ruby, you have resistance to fire damage.\n* As long as the helm has at least one fire opal, you can use an action and speak a command word to cause one weapon you are holding to burst into flames. The flames emit bright light in a 10-foot radius and dim light for an additional 10 feet. The flames are harmless to you and the weapon. When you hit with an attack using the blazing weapon, the target takes an extra 1d6 fire damage. The flames last until you use a bonus action to speak the command word again or until you drop or stow the weapon.\n* Roll a d20 if you are wearing the helm and take fire damage as a result of failing a saving throw against a spell. On a roll of 1, the helm emits beams of light from its remaining gems. Each creature within 60 feet of the helm other than you must succeed on a DC 17 Dexterity saving throw or be struck by a beam, taking radiant damage equal to the number of gems in the helm. The helm and its gems are then destroyed."
  },
  {
    "Item": "Helm of Comprehending Languages",
@@ -1581,7 +1581,7 @@
    "Cost (gp)": "4000",
    "Rarity": "Rare",
    "Attunement": "No",
-   "Effect": "This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. While wearing the ring, you can use an action to expend 1 of its charges to cast one of the following spells:                                            Animal friendship (save DC 13)                       Fear (save DC 13), targeting only beasts that have an Intelligence of 3 or lower                       Speak with animals"
+   "Effect": "This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. While wearing the ring, you can use an action to expend 1 of its charges to cast one of the following spells:\n\n* Animal friendship (save DC 13)\n* Fear (save DC 13), targeting only beasts that have an Intelligence of 3 or lower\n* Speak with animals"
  },
  {
    "Item": "Ring of Evasion",
@@ -2366,5 +2366,349 @@
    "Rarity": "Rare",
    "Attunement": "Yes",
    "Effect": "While wearing this belt your constitution score increases by 2.  This magical increase occurs even if it increases your constitution above your normal maximum."
+ },
+ {
+   "Item": "Apparatus of Kwalish",
+   "Type": "Wondrous Item",
+   "Cost (gp)": "1000000",
+   "Rarity": "Legendary",
+   "Attunement": "No",
+   "Effect": "See DMG Page 151"
+ },
+ {
+  "Item": "Armor of Invulnerability",
+  "Type": "Armor (plate)",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "Yes",
+  "Effect": "You have resistance to nonmagical damage while you wear this armor. Additionally, you can use an action to make yourself immune to nonmagical damage for 10 minutes or until you are no longer wearing the armor. Once this special action is used, it can't be used again until the next dawn."
+ },
+ {
+  "Item": "Belt of Cloud Giant Strength",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "Yes",
+  "Effect": "While wearing this belt, your Strength score changes to 27. If your Strength is already equal to or greater than the belt's score, the item has no effect on you."
+ },
+ {
+  "Item": "Cloak of Invisibility",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "Yes",
+  "Effect": "While wearing this cloak, you can pull its hood over your head to cause yourself to become invisible. While you are invisible, anything you are carrying or wearing is invisible with you. You become visible when you cease wearing the hood. Pulling the hood up or down requires an action.\n\nDeduct the time you are invisible, in increments of 1 minute, from the cloak's maximum duration of 2 hours. After 2 hours of use, the cloak ceases to function. For every uninterrupted period of 12 hours the cloak goes unused, it regains 1 hour of duration."
+ },
+ {
+  "Item": "Crystal Ball of Mind Reading",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "Yes",
+  "Effect": "The typical crystal ball, a very rare item, is about 6 inches in diameter. While touching it, you can cast the scrying spell (save DC 17) with it. You can use an action to cast the detect thoughts spell (save DC 17) while you are scrying with the crystal ball, targeting creatures you can see within 30 feet of the spell's sensor. You don't need to concentrate on this detect thoughts to maintain it during its duration, but it ends if scrying ends."
+ },
+ {
+  "Item": "Crystal Ball of Telepathy",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "Yes",
+  "Effect": "The typical crystal ball, a very rare item, is about 6 inches in diameter. While touching it, you can cast the scrying spell (save DC 17) with it. While scrying with the crystal ball, you can communicate telepathically with creatures you can see within 30 feet of the spell's sensor. You can also use an action to cast the suggestion spell (save DC 17) through the sensor on one of those creatures. You don't need to concentrate on this suggestion to maintain it during its duration, but it ends if scrying ends. Once used, the suggestion power of the crystal ball can't be used again until the next dawn."
+ },
+ {
+  "Item": "Crystal Ball of True Seeing",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "Yes",
+  "Effect": "The typical crystal ball, a very rare item, is about 6 inches in diameter. While touching it, you can cast the scrying spell (save DC 17) with it. While scrying with the crystal ball, you have truesight with a radius of 120 feet centered on the spell's sensor."
+ },
+ {
+  "Item": "Cubic Gate",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "No",
+  "Effect": "This cube is 3 inches across and radiates palpable magical energy. The six sides of the cube are each keyed to a different plane of existence, one of which is the Material Plane. The other sides are linked to planes determined by the DM.\n\nYou can use an action to press one side of the cube to cast the gate spell with it, opening a portal to the plane keyed to that side. Alternatively, if you use an action to press one side twice, you can cast the plane shift spell (save DC 17) with the cube and transport the targets to the plane keyed to that side.\n\nThe cube has 3 charges. Each use of the cube expends 1 charge. The cube regains ld3 expended charges daily at dawn."
+ },
+ {
+  "Item": "Defender",
+  "Type": "Weapon (any sword)",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "Yes",
+  "Effect": "You gain a +3 bonus to attack and damage rolls made with this magic weapon.\n\nThe first time you attack with the sword on each of your turns, you can transfer some or all of the sword's bonus to your Armor Class, instead of using the bonus on any attacks that turn. For example, you could reduce the bonus to your attack and damage rolls to +1 and gain a +2 bonus to AC. The adjusted bonuses remain in effect until the start of your next turn, although you must hold the sword to gain a bonus to AC from it."
+ },
+ {
+  "Item": "Efreeti Chain",
+  "Type": "Armor (chain mail)",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "Yes",
+  "Effect": "While wearing this armor, you gain a +3 bonus to AC, you are immune to fire damage, and you can understand and speak Primordial. In addition, you can stand on and walk across molten rock as if it were solid ground."
+ },
+ {
+  "Item": "Bronze Griffon",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "10000",
+  "Rarity": "Rare",
+  "Attunement": "No",
+  "Effect": "A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.\n\nThe creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions. See the Monster Manual for the creature's statistics, except for the giant fly.\n\nThe creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.\n\nThis bronze statuette is of a griffon rampant. It can become a griffon for up to 6 hours. Once it has been used, it can't be used again until 5 days have passed."
+ },
+ {
+  "Item": "Ebony Fly",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "8000",
+  "Rarity": "Rare",
+  "Attunement": "No",
+  "Effect": "A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.\n\nThe creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions. See the Monster Manual for the creature's statistics, except for the giant fly.\n\nThe creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.\n\nThis ebony statuette is carved in the likeness of a horsefly. It can become a giant fly for up to 12 hours and can be ridden as a mount. Once it has been used, it can't be used again until 2 day have passed."
+ },
+ {
+  "Item": "Ivory Goats",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "15000",
+  "Rarity": "Rare",
+  "Attunement": "No",
+  "Effect": "A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.\n\nThe creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions. See the Monster Manual for the creature's statistics, except for the giant fly.\n\nThe creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.\n\nThese ivory statuettes of goats are always created in sets of three. Each goat looks unique and functions differently from the others. Their properties are as follows:\n\n* The goat of traveling can become a Large goat with the same statistics as a riding horse. It has 24 charges, and each hour or portion thereof it spends in beast form costs 1 charge. While it has charges, you can use it as often as you wish. When it runs out of charges, it reverts to a figurine and can't be used again until 7 days have passed, when it regains all its charges.\n* The goat of travail becomes a giant goat for up to 3 hours. Once it has been used, it can't be used again until 30 days have passed.\n* The goat of terror becomes a giant goat for up to 3 hours. The goat can't attack, but you can remove its horns and use them as weapons. One horn becomes a +1 lance, and the other becomes a +2 longsword. Removing a horn requires an action, and the weapons disappear and the horns return when the goat reverts to figurine form. In addition, the goat radiates a 30-foot-radius aura of terror while you are riding it. Any creature hostile to you that starts its turn in the aura must succeed on a DC 15 Wisdom saving throw or be frightened of the goat for 1 minute, or until the goat reverts to figurine form. The frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Once it successfully saves against the effect, a creature is immune to the goat's aura for the next 24 hours. Once the figurine has been used, it can't be used again until 15 days have passed."
+ },
+ {
+  "Item": "Marble Elephant",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "8000",
+  "Rarity": "Rare",
+  "Attunement": "No",
+  "Effect": "A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.\n\nThe creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions. See the Monster Manual for the creature's statistics, except for the giant fly.\n\nThe creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.\n\nThis marble statuette is about 4 inches high and long. It can become an elephant for up to 24 hours. Once it has been used, it can't be used again until 7 days have passed."
+ },
+ {
+  "Item": "Obsidian Steed",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "18000",
+  "Rarity": "Very Rare",
+  "Attunement": "No",
+  "Effect": "A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.\n\nThe creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions. See the Monster Manual for the creature's statistics, except for the giant fly.\n\nThe creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.\n\nThis polished obsidian horse can become a nightmare for up to 24 hours. The nightmare fights only to defend itself. Once it has been used, it can't be used again until 5 days have passed. If you have a good alignment, the figurine has a 10 percent chance each time you use it to ignore your orders, including a command to revert to figurine form. If you mount the nightmare while it is ignoring your orders, you and the nightmare are instantly transported to a random location on the plane of Hades, where the nightmare reverts to figurine form."
+ },
+ {
+  "Item": "Onyx Dog",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "8000",
+  "Rarity": "Rare",
+  "Attunement": "No",
+  "Effect": "A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.\n\nThe creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions. See the Monster Manual for the creature's statistics, except for the giant fly.\n\nThe creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.\n\nThis onyx statuette of a dog can become a mastiff for up to 6 hours. The mastiff has an Intelligence of 8 and can speak Common. It also has dark vision out to a range of 60 feet and can see invisible creatures and objects within that range. Once it has been used, it can't be used again until 7 days have passed."
+ },
+ {
+  "Item": "Serpentine Owl",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "12000",
+  "Rarity": "Rare",
+  "Attunement": "No",
+  "Effect": "A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.\n\nThe creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions. See the Monster Manual for the creature's statistics, except for the giant fly.\n\nThe creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.\n\nThis serpentine statuette of an owl can become a giant owl for up to 8 hours. Once it has been used, it can't be used again until 2 days have passed. The owl can telepathically communicate with you at any range if you and it are on the same plane of existence."
+ },
+ {
+  "Item": "Silver Raven",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "5000",
+  "Rarity": "Uncommon",
+  "Attunement": "No",
+  "Effect": "A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.\n\nThe creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions. See the Monster Manual for the creature's statistics, except for the giant fly.\n\nThe creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.\n\nThis silver statuette of a raven can become a raven for up to 12 hours. Once it has been used, it can't be used again until 2 days have passed. While in raven form, the figurine allows you to cast the animal messenger spell on it at will."
+ },
+ {
+  "Item": "Hammer of Thunderbolts",
+  "Type": "Weapon (maul)",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "No",
+  "Effect": "You gain a +1 bonus to attack and damage rolls made with this magic weapon.\n\nGiant's Bane (Requires Attunement). You must be wearing a belt of giant strength (any variety) and gauntlets of ogre power to attune to this weapon. The attunement ends if you take off either of those items. While you are attuned to this weapon and holding it, your Strength score increases by 4 and can exceed 20, but not 30. When you roll a 20 on an attack roll made with this weapon against a giant, the giant must succeed on a DC 17 Constitution saving throw or die.\n\nThe hammer also has 5 charges. While attuned to it, you can expend 1 charge and make a ranged weapon attack with the hammer, hurling it as if it had the thrown property with a normal range of 20 feet and a long range of 60 feet. If the attack hits, the hammer unleashes a thunderclap audible out to 300 feet. The target and every creature within 30 feet of it must succeed on a DC 17 Constitution saving throw or be stunned until the end of your next turn. The hammer regains 1d4 + 1 expended charges daily at dawn."
+ },
+ {
+  "Item": "Holy Avenger",
+  "Type": "Weapon (any sword)",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "Yes (Paladin)",
+  "Effect": "You gain a +3 bonus to attack and damage rolls made with this magic weapon. When you hit a fiend or an undead with it, that creature takes an extra 2d10 radiant damage.\n\nWhile you hold the drawn sword, it creates an aura in a 10-foot radius around you. You and all creatures friendly to you in the aura have advantage on saving throws against spells and other magical effects. If you have 17 or more levels in the paladin class, the radius of the aura increases to 30 feet."
+ },
+ {
+  "Item": "Iron Flask",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "No",
+  "Effect": "See DMG Page 178"
+ },
+ {
+  "Item": "Luck Blade",
+  "Type": "Weapon (any sword)",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "Yes",
+  "Effect": "You gain a +1 bonus to attack and damage rolls made with this magic weapon. While the sword is on your person, you also gain a +1 bonus to saving throws.\n\nLuck. If the sword is on your person, you can call on its luck (no action required) to reroll one attack roll, ability check, or saving throw you dislike. You must use the second roll. This property can't be used again until the next dawn.\n\nWish. The sword has 1d4- 1 charges. While holding it, you can use an action to expend 1 charge and cast the wish spell from it. This property can't be used again until the next dawn. The sword loses this property if it has no charges."
+ },
+ {
+  "Item": "Plate Armor of Etherealness",
+  "Type": "Armor (plate)",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "Yes",
+  "Effect": "While you're wearing this armor, you can speak its command word as an action to gain the effect of the etherealness spell, which last for 10 minutes or until you remove the armor or use an action to speak the command word again. This property of the armor can't be used again until the next dawn."
+ },
+ {
+  "Item": "Ring of Djinni Summoning",
+  "Type": "Ring",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "Yes",
+  "Effect": "While wearing this ring, you can speak its command word as an action to summon a particular djinni from the Elemental Plane of Air. The djinni appears in an unoccupied space you choose within 120 feet of you. It remains as long as you concentrate (as if concentrating on a spell), to a maximum of 1 hour, or until it drops to 0 hit points. It then returns to its home plane.\n\nWhile summoned, the djinni is friendly to you and your companions. It obeys any commands you give it, no matter what language you use. If you fail to command it, the djinni defends itself against attackers but takes no other actions.\n\nAfter the djinni departs, it can't be summoned again for 24 hours, and the ring becomes nonmagical if the djinni dies."
+ },
+ {
+  "Item": "Ring of Air Elemental Command",
+  "Type": "Ring",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "Yes",
+  "Effect": "While wearing this ring, you have advantage on attack rolls against elementals from the plane of air, and they have disadvantage on attack rolls against you. In addition, you have access to properties based on the linked plane.\n\nThe ring has 5 charges. It regains 1d4 + 1 expended charges daily at dawn. Spells cast from the ring have a save DC of 17. You can expend 2 of the ring's charges to cast dominate monster on an air elemental. In addition, when you fall, you descend 60 feet per round and take no damage from falling. You can also speak and understand Auran.\n\nIf you help slay an air elemental while attuned to the ring, you gain access to the following additional properties:\n\n* You have resistance to lightning damage.\n* You have a flying speed equal to your walking speed and can hover.\n* You can cast the following spells from the ring, expending the necessary number of charges: chain lightning (3 charges), gust of wind (2 charges), or wind wall (1 charge)."
+ },
+ {
+  "Item": "Ring of Earth Elemental Command",
+  "Type": "Ring",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "Yes",
+  "Effect": "While wearing this ring, you have advantage on attack rolls against elementals from the plane of earth, and they have disadvantage on attack rolls against you. In addition, you have access to properties based on the linked plane.\n\nThe ring has 5 charges. It regains 1d4 + 1 expended charges daily at dawn. Spells cast from the ring have a save DC of 17. You can expend 2 of the ring's charges to cast dominate monster on an earth elemental. In addition, you can move in difficult terrain that is composed of rubble, rocks, or dirt as if it were normal terrain. You can also speak and understand Terran.\n\nIf you help slay an earth elemental while attuned to the ring, you gain access to the following additional properties:\n\n* You have resistance to acid damage.\n* You can move through solid earth or rock as if those areas were difficult terrain. If you end your turn there you are shunted out to the nearest unoccupied space you last occupied.\n* You can cast the following spells from the ring, expending the necessary number of charges: stone shape (2 charges), stoneskin (3 charges), or wall of stone (3 charges)."
+ },
+ {
+  "Item": "Ring of Fire Elemental Command",
+  "Type": "Ring",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "Yes",
+  "Effect": "While wearing this ring, you have advantage on attack rolls against elementals from the plane of fire, and they have disadvantage on attack rolls against you. In addition, you have access to properties based on the linked plane.\n\nThe ring has 5 charges. It regains 1d4 + 1 expended charges daily at dawn. Spells cast from the ring have a save DC of 17. You can expend 2 of the ring's charges to cast dominate monster on a fire elemental. In addition, you have resistance to fire damage. You can also speak and understand Ignan.\n\nIf you help slay a fire elemental while attuned to the ring, you gain access to the following additional properties:\n\n* You are immune to fire damage.\n* You can cast the following spells from the ring, expending the necessary number of charges: burning hands (1 charge), fireball (2 charges), and wall of fire (3 charges)."
+ },
+ {
+  "Item": "Ring of Water Elemental Command",
+  "Type": "Ring",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "Yes",
+  "Effect": "While wearing this ring, you have advantage on attack rolls against elementals from the plane of water, and they have disadvantage on attack rolls against you. In addition, you have access to properties based on the linked plane.\n\nThe ring has 5 charges. It regains 1d4 + 1 expended charges daily at dawn. Spells cast from the ring have a save DC of 17. You can expend 2 of the ring's charges to cast dominate monster on a water elemental. In addition, you can stand on and walk across liquid surfaces as if they were solid ground. You can also speak and understand Aquan.\n\nIf you help slay a water elemental while attuned to the ring, you gain access to the following additional properties:\n\n* You can breathe underwater and have a swimming speed equal to your walking speed.\n* You can cast the following spells from the ring, expending the necessary number of charges: create or destroy water (1 charge), control water (3 charges), ice storm (2 charges), or wall of ice (3 charges)."
+ },
+ {
+  "Item": "Ring of Invisibility",
+  "Type": "Ring",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "Yes",
+  "Effect": "While wearing this ring, you can turn invisible as an action. Anything you are wearing or carrying is invisible with you. You remain invisible until the ring is removed, until you attack or cast a spell, or until you use a bonus action to become visible again."
+ },
+ {
+  "Item": "Ring of Spell Turning",
+  "Type": "Ring",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "Yes",
+  "Effect": "While wearing this ring, you have advantage on saving throws against any spell that targets only you (not in an area of effect). In addition, if you roll a 20 for the save and the spell is 7th level or lower, the spell has no effect on you and instead targets the caster, using the slot level, spell save DC, attack bonus, and spellcasting ability of the caster."
+ },
+ {
+  "Item": "Ring of Three Wishes",
+  "Type": "Ring",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "No",
+  "Effect": "While wearing this ring, you can use an action to expend 1 of its 3 charges to cast the wish spell from it. The ring becomes nonmagical when you use the last charge."
+ },
+ {
+  "Item": "Robe of the Archmagi",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "Yes (sorcerer, warlock, or wizard)",
+  "Effect": "This elegant garment is made from exquisite cloth of white, gray, or black and adorned with silvery runes. You gain these benefits while wearing the robe:\n\n* If you aren't wearing armor, your base Armor Class is 15 + your Dexterity modifier.\n* You have advantage on saving throws against spells and other magical effects.\n* Your spell save DC and spell attack bonus each increase by 2."
+ },
+ {
+  "Item": "Rod of Lordly Might",
+  "Type": "Rod",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "Yes",
+  "Effect": "See DMG page 196"
+ },
+ {
+  "Item": "Rod of Resurrection",
+  "Type": "Rod",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "Yes (Cleric, Druid, or Paladin)",
+  "Effect": "The rod has 5 charges. While you hold it, you can use an action to cast one of the following spells from it: heal (expends 1 charge) or resurrection (expends 5 charges).\n\nThe rod regains 1 expended charge daily at dawn. If the rod is reduced to 0 charges, roll a d20. On a 1, the rod disappears in a burst of radiance."
+ },
+ {
+  "Item": "Scarab of Protection",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "Yes",
+  "Effect": "If you hold this beetle-shaped medallion in your hand for 1 round, an inscription appears on its surface revealing its magical nature. It provides two benefits while it is on your person:\n\n* You have advantage on saving throws against spells.\n* The scarab has 12 charges. If you fail a saving throw against a necromancy spell or a harmful effect originating from an undead creature, you can use your reaction to expend 1 charge and turn the failed save into a successful one. The scarab crumbles into powder and is destroyed when its last charge is expended."
+ },
+ {
+  "Item": "Sovereign Glue",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "No",
+  "Effect": "This viscous, milky-white substance can form a permanent adhesive bond between any two objects. It must be stored in a jar or flask that has been coated inside with oil of slipperiness. When found, a container contains 1d6 + 1 ounces.\n\nOne ounce of the glue can cover a 1-foot square surface. The glue takes 1 minute to set. Once it has done so, the bond it creates can be broken only by the application of universal solvent or oil of etherealness or with a wish spell."
+ },
+ {
+  "Item": "Staff of the Magi",
+  "Type": "Staff",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "Yes (Sorcerer, Warlock, or Wizard)",
+  "Effect": "This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. While you hold it, you gain a +2 bonus to spell attack rolls.\n\nThe staff has 50 charges for the following properties. It regains 4d6 + 2 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 20, the staff regains 1d12 + 1 charges.\n\nSpell Absorption. While holding the staff, you have advantage on saving throws against spells. In addition, you can use your reaction when another creature casts a spell that targets only you. If you do, the staff absorbs the magic of the spell, canceling its effect and gaining a number of charges equal to the absorbed spell's level. However, if doing so brings the staff's total number of charges above 50, the staff explodes as if you activated its retributive strike (see below).\n\nSpells. While holding the staff, you can use an action to expend some of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability: conjure elemental (7 charges), dispel magic (3 charges), fireball (7th-level version, 7 charges), flaming sphere (2 charges), ice storm (4 charges), invisibility (2 charges), knock (2 charges), lightning bolt (7th-level version, 7 charges), passwall (5 charges), plane shift (7 charges), telekinesis (5 charges), wall of fire (4 charges), or web (2 charges).\n\nYou can also use an action to cast one of the following spells from the staff without using any charges: arcane lock, detect magic, enlarge/reduce, light, mage hand, or protection from evil and good.\n\nRetributive Strike. You can use an action to break the staff over your knee or against a solid surface, performing a retributive strike. The staff is destroyed and releases its remaining magic in an explosion that expands to fill a 30-foot-radius sphere centered on it. You have a 50 percent chance to instantly travel to a random plane of existence, avoiding the explosion. If you fail to avoid the effect, you take force damage equal to 16 x the number of charges in the staff. Every other creature in the area must make a DC 17 Dexterity saving throw. On a failed save, a creature takes an amount of damage based on how far away it is from the point of origin, as shown in the following table. On a successful save, a creature takes half as much damage."
+ },
+ {
+  "Item": "Talisman of the Sphere",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "Yes",
+  "Effect": "When you make an Intelligence (Arcana) check to control a sphere of annihilation while you are holding this talisman, you double your proficiency bonus on the check. In addition, when you start your turn with control over a sphere of annihilation, you can use an action to levitate it 10 feet plus a number of additional feet equal to 10 x your Intelligence modifier."
+ },
+ {
+  "Item": "Universal Solvent",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "No",
+  "Effect": "This tube holds milky liquid with a strong alcohol smell. You can use an action to pour the contents of the tube onto a surface within reach. The liquid instantly dissolves up to 1 square foot of adhesive it touches, including sovereign glue."
+ },
+ {
+  "Item": "Vorpal Sword",
+  "Type": "Weapon (any sword that deals slashing damage)",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "Yes",
+  "Effect": "You gain a +3 bonus to attack and damage rolls made with this magic weapon. In addition, the weapon ignores resistance to slashing damage.\n\nWhen you attack a creature that has at least one head with this weapon and roll a 20 on the attack roll, you cut off one of the creature's heads. The creature dies if it can't survive without the lost head. A creature is immune to this effect if it is immune to slashing damage, doesn't have or need a head, has legendary actions, or the DM decides that the creature is too big for its head to be cut off with this weapon. Such a creature instead takes an extra 6d8 slashing damage from the hit."
+ },
+ {
+  "Item": "Well of Many Worlds",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "No",
+  "Effect": "This fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter.\n\nYou can use an action to unfold and place the well of many worlds on a solid surface, whereupon it creates a two-way portal to another world or plane of existence. Each time the item opens a portal, the DM decides where it leads. You can use an action to close an open portal by taking hold of the edges of the cloth and folding it up. Once well of many worlds has opened a portal, it can't do so again for ld8 hours."
+ },
+ {
+  "Item": "Baret of Improved Concentration",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "25000",
+  "Rarity": "Very Rare",
+  "Attunement": "Yes",
+  "Effect": "While attuned to this baret you can concentrate on up to 2 spells at the same time. If you are concentrating on more than 1 spell at once and you are forced to make a concentration save you must make a separate save for each spell, and have disadvantage on the saving throw."
+ },
+ {
+  "Item": "Staff of Shillelagh",
+  "Type": "Weapon (staff)",
+  "Cost (gp)": "8000",
+  "Rarity": "Rare",
+  "Attunement": "No",
+  "Effect": "When making a melee attack with this magical staff you can use your spell attack modifier instead of your normal attack modifier."
  }
 ]

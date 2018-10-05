@@ -888,5 +888,7 @@ A noble from a country that no longer exists from before the Dormanian Empire, w
 		<tr><td>Vanriel Glamfara</td><td>Guild Leader (Eyvindra Veil)</td><td>Leader of Sylvan's Rangers, Scout Commander for the Black Wolf Irregulars</td></tr>
 		<tr><td>Winslow Fredericks</td><td>Local Leader</td><td>Cur'Estan</td><td>Grangemaster of the International Grangemaster's Alliance in Cur'Estan</td></tr>
 		<tr><td>Wyrmling Trapsmith</td><td>Quartermaster</td><td>Cur'Estan</td><td>Quartermaster for the Black Wolf Irregulars</td></tr>
+		<tr><td>Usko the Lumberjack</td><td>Boy Toy (Lilith)</td><td>Ripped lumberjack who Lilith met at a bar and enjoys the company of</td></tr>
+		<tr><td>Frankie the Lumberjack Leader</td><td>Local Leader</td><td>Leader of the Lumberjacks in Cur'Estan</td></tr>
 	</tbody>
 </table>

@@ -2,7 +2,7 @@
 layout: post
 title: "Allison Highwater"
 date: 2016-02-29
-tags: [medium, humanoid, cr8]
+tags: [medium, humanoid, cr7]
 ---
 
 **Medium humanoid (tiefling), neutral**
@@ -27,7 +27,7 @@ tags: [medium, humanoid, cr8]
 
 **Languages** Imperial, Elf, Orc
 
-**Challenge** 8
+**Challenge** 7
 
 **Great Weapon Fighting Style:** reroll 1s and 2s on damage dice
 

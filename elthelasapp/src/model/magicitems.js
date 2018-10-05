@@ -7,7 +7,12 @@ const state = {
   magicwands: [],
   magicweapons: [],
   magicarmor: [],
-  magicother: []
+  magicother: [],
+  allcommons: [],
+  alluncommons: [],
+  allrares: [],
+  allveryrares: [],
+  alllegendaries: []
 };
 
 const getters = {
@@ -16,7 +21,12 @@ const getters = {
   allMagicWands: state => state.magicwands,
   allMagicWeapons: state => state.magicweapons,
   allMagicArmor: state => state.magicarmor,
-  allMagicOther: state => state.magicother
+  allMagicOther: state => state.magicother,
+  allCommons: state => state.allcommons,
+  allUncommons: state => state.alluncommons,
+  allRares: state => state.allrares,
+  allVeryRares: state => state.allveryrares,
+  allLegendaries: state => state.alllegendaries
 };
 
 const actions = {
@@ -40,7 +50,7 @@ const actions = {
 const mutations = {
   'GET_MAGICITEMS' (state, { magicitems, weapons, armor, spells }) {
     var items = magicitems.filter(function(item) {
-      if (["1st Level Scroll", "Cantrip Scroll", "2nd Level Scroll", "3rd Level Scroll", "4th Level Scroll", "5th Level Scroll", "6th Level Scroll", "7th Level Scroll", "8th Level Scroll", "+1 Armor", "+2 Armor", "Armor of Resistance", "Mariner's Armor", "Weapon +1", "Weapon +2", "Weapon +3", "Weapon of Returning", "Weapon of Returning +1", "Weapon of Elemental Damage", "Weapon of Elemental Damage +1", "Weapon of Sharpness", "Vicious Weapon", "Weapon of Life Stealing", "Weapon of Warning", "Weapon of Wounding", "Wand of 1st Level Spell", "Wand of 2nd Level Spell", "Wand of 3rd Level Spell", "Wand of 4th Level Spell"]
+      if (["1st Level Scroll", "Cantrip Scroll", "2nd Level Scroll", "3rd Level Scroll", "4th Level Scroll", "5th Level Scroll", "6th Level Scroll", "7th Level Scroll", "8th Level Scroll", "+1 Armor", "+2 Armor", "+3 Armor", "Armor of Resistance", "Mariner's Armor", "Weapon +1", "Weapon +2", "Weapon +3", "Weapon of Returning", "Weapon of Returning +1", "Weapon of Elemental Damage", "Weapon of Elemental Damage +1", "Weapon of Sharpness", "Vicious Weapon", "Weapon of Life Stealing", "Weapon of Warning", "Weapon of Wounding", "Wand of 1st Level Spell", "Wand of 2nd Level Spell", "Wand of 3rd Level Spell", "Wand of 4th Level Spell"]
         .indexOf(item.Item) !== -1) {
         return false;
       }
@@ -222,6 +232,14 @@ const mutations = {
         Rarity: "Very Rare",
         "Cost (gp)": Number(armor[z].Price) + 16000
       });
+      items.push({
+        Item: "+3 " + armor[z].Armor + " (" + armor[z].Material + ")",
+        Type: "Armor (" + armor[z].Armor + ")",
+        Attunement: "No",
+        Effect: "You have a +3 bonus to AC while wearing this armor. It also grants the following resistances based on its material: " + armor[z].Resistance,
+        Rarity: "Legendary",
+        "Cost (gp)": Number(armor[z].Price) + 1000000
+      });
       for (var k = 0; k < resistArray.length; k++) {
         resArmor(resistArray[k], z);
       }
@@ -337,10 +355,18 @@ const mutations = {
       }
       if (items[x].Rarity === "Uncommon") {
         threshold *= (3 / 20);
+        state.alluncommons.push(items[x]);
       } else if (items[x].Rarity === "Rare") {
         threshold *= (1 / 20);
+        state.allrares.push(items[x]);
       } else if (items[x].Rarity === "Very Rare") {
         threshold *= (1 / 100);
+        state.allveryrares.push(items[x]);
+      } else if (items[x].Rarity === "Legendary") {
+        threshold *= 0;
+        state.alllegendaries.push(items[x]);
+      } else {
+        state.allcommons.push(items[x]);
       }
       if (rand < threshold) {
         return "In Stock";

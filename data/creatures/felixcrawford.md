@@ -2,7 +2,7 @@
 layout: post
 title: "Felix Crawford"
 date: 2016-02-29
-tags: [medium, humanoid, cr7]
+tags: [medium, humanoid, cr5]
 ---
 
 **Medium humanoid (half-elf), lawful evil**
@@ -25,7 +25,7 @@ tags: [medium, humanoid, cr7]
 
 **Languages** Imperial, Morrind, Elf, Dwarf
 
-**Challenge** 8
+**Challenge** 5
 
 **Jack of all Trades.** Felix adds +1 to any ability check he is not proficient with.
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Gerad Heartbren"
 date: 2016-02-29
-tags: [medium, humanoid, cr15]
+tags: [medium, humanoid, cr14]
 ---
 
 **Medium humanoid (elf), neutral good**
@@ -27,7 +27,7 @@ tags: [medium, humanoid, cr15]
 
 **Languages** Elf, Imperial, Dwarf, Orc
 
-**Challenge** 15
+**Challenge** 14
 
 **Great Weapon Fighting:** Gerad rerolls 1s and 2s on his damage dice when wielding a weapon in 2 hands.
 

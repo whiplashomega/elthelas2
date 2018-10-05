@@ -25,8 +25,8 @@ tags: [medium, humanoid, cr5]
 
 **Languages** Elf, Imperial, Dwarf, Orc
 
-**Challenge** 5
+**Challenge** 3
 
 **Actions** 
 
-**Flame Strike:** As an action, Elhavir picks a 10 cube in which flames burst into life. Any creature in the area must make a DC 14 wisdom save or take 3d6 fire damage, or half that amount on a success.
+**Flame Strike:** As an action, Elhavir picks a 10 cube in which flames burst into life. Any creature in the area must make a DC 13 wisdom save or take 3d6 fire damage, or half that amount on a success.

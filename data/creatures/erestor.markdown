@@ -2,7 +2,7 @@
 layout: post
 title: "Erestor"
 date: 2016-02-29
-tags: [medium, humanoid, cr11]
+tags: [medium, humanoid, cr6]
 ---
 
 **Medium humanoid (elf), chaotic neutral**
@@ -27,13 +27,13 @@ tags: [medium, humanoid, cr11]
 
 **Languages** Elf, Dwarf, Morrind, Orc, Deran, Infernal
 
-**Challenge** 11
+**Challenge** 6
 
 **Favored Enemy:** Beasts, as ranger feature (+4 damage)
 
 **Primeval Awareness:** as ranger feature
 
-**Archery Fighting Style:** +2 bonus to attack rolls she makes with ranged weapons.
+**Archery Fighting Style:** +2 bonus to attack rolls he makes with ranged weapons.
 
 **Ranger Spellcasting:** 4 1st level spell slots, 3 2nd level spell slots, 2 3rd level spell slots.
 
@@ -53,4 +53,4 @@ tags: [medium, humanoid, cr11]
 
 **Actions** 
 
-**+1 Longbow of Entangle:** Ranged weapon attack. +12 to hit (1d8+6 damage). Anyone hit with this longbow must make a dexterity save (DC 14) or be restrained as vines shoot out from the arrow and grab them.
+**+1 Longbow of Entangle:** Ranged weapon attack. +11 to hit (1d8+6 damage). Anyone hit with this longbow must make a dexterity save (DC 13) or be restrained as vines shoot out from the arrow and grab them.

@@ -1258,14 +1258,22 @@
             <b-row>
               <b-col md="8">
                 <b-form-checkbox label="In Stock Only" v-model="instockonly">Display In Stock Items Only</b-form-checkbox>
-                  <b-form-checkbox-group v-model="magicitemtables.filterBy">
-                    <b-form-checkbox value="Item">Item</b-form-checkbox>
-                    <b-form-checkbox value="Type">Type</b-form-checkbox>
-                    <b-form-checkbox value="Cost (gp)">Cost (gp)</b-form-checkbox>
-                    <b-form-checkbox value="Attunement">Attunement</b-form-checkbox>
-                    <b-form-checkbox value="Effect">Effect</b-form-checkbox>
-                    <b-form-checkbox value="Rarity">Rarity</b-form-checkbox>
-                  </b-form-checkbox-group>
+                <b-form-checkbox-group v-model="magicitemtables.filterBy">
+                  <b-form-checkbox value="Item">Item</b-form-checkbox>
+                  <b-form-checkbox value="Type">Type</b-form-checkbox>
+                  <b-form-checkbox value="Cost (gp)">Cost (gp)</b-form-checkbox>
+                  <b-form-checkbox value="Attunement">Attunement</b-form-checkbox>
+                  <b-form-checkbox value="Effect">Effect</b-form-checkbox>
+                  <b-form-checkbox value="Rarity">Rarity</b-form-checkbox>
+                </b-form-checkbox-group>
+                <b-form-checkbox-group v-model="magicitemtables.filterRarity">
+                  <b-form-checkbox value="Common">Common</b-form-checkbox>
+                  <b-form-checkbox value="Uncommon">Uncommon</b-form-checkbox>
+                  <b-form-checkbox value="Rare">Rare</b-form-checkbox>
+                  <b-form-checkbox value="Very Rare">Very Rare</b-form-checkbox>
+                  <b-form-checkbox value="Legendary">Legendary</b-form-checkbox>
+                </b-form-checkbox-group>
+                Maximum Cost <b-form-input label="Maximum Cost" type="number" v-model="magicitemtables.filterCost" class="col-4" />
               </b-col>
               <b-col md="4" class="my-1">
                 <b-input-group>
