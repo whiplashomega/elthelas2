@@ -17,8 +17,8 @@ module.exports = {
     workboxOptions: {
       offlineGoogleAnalytics: true,
       runtimeCaching: [{
-        urlPattern: /\//,
-        handler: 'networkFirst',
+        urlPattern: /.*/,
+        handler: 'cacheFirst',
         options: {
           fetchOptions: {
             credentials: 'same-origin'

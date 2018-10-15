@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "ef50ee28a222c6c7a3d285370523b676",
-    "url": "/static/images/maps/nations/Staelia.jpg"
+    "revision": "ffbba2f94a17fb70cee670a1bbee649c",
+    "url": "/static/images/maps/nations/Stagenheim.jpg"
   },
   {
     "revision": "884a9f42e6c5b021aded9d6a17e77156",
     "url": "/wrapFetch.js"
   },
   {
-    "revision": "ffbba2f94a17fb70cee670a1bbee649c",
-    "url": "/static/images/maps/nations/Stagenheim.jpg"
+    "revision": "282a36489325424ab7bdbeec8d6cf3e1",
+    "url": "/static/images/maps/nations/Terron.jpg"
   },
   {
     "revision": "d49c68ad49f92f4db2e5",
@@ -126,10 +126,6 @@ self.__precacheManifest = [
   {
     "revision": "ef7253ed20b47b8088b491a345d76300",
     "url": "/json/weapons.json"
-  },
-  {
-    "revision": "fc72ca165ddd78f4c89ef0309398206c",
-    "url": "/manifest.webmanifest"
   },
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
@@ -344,16 +340,16 @@ self.__precacheManifest = [
     "url": "/static/images/maps/nations/Shendarel.jpg"
   },
   {
+    "revision": "ef50ee28a222c6c7a3d285370523b676",
+    "url": "/static/images/maps/nations/Staelia.jpg"
+  },
+  {
     "revision": "b7f66c36bea52116eeac",
     "url": "/js/app.78c27484.js"
   },
   {
     "revision": "d49c68ad49f92f4db2e5",
     "url": "/js/chunk-vendors.f3472507.js"
-  },
-  {
-    "revision": "282a36489325424ab7bdbeec8d6cf3e1",
-    "url": "/static/images/maps/nations/Terron.jpg"
   },
   {
     "revision": "8b8009b626fbb62aeeba316e7bdef0f6",
