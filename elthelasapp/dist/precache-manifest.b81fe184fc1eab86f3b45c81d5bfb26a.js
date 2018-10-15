@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/fonts/tl-icons.8402c93e.ttf"
   },
   {
-    "revision": "158bd38b06957876efb67c96c6ec84ca",
+    "revision": "80ad75c75b068b3305769bc45c415f17",
     "url": "/index.html"
   },
   {
