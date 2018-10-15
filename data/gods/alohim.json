@@ -13,5 +13,13 @@
         "appearance": "Alohim has shoulder length golden brown hair, often tied back and golden brown eyes.  He either dresses in rich noble clothing with plenty of gold trim and purple or golden armor and well-made boots of leather.  He has a long face with large features.",
         "dogma": "Alohim teaches that the nobility have a divine right to their position, and a divine duty to protect their subjects and root out evil. Cowardice in the face of one's enemies is anathema. Followers of Alohim are to keep themselves pure, avoiding evil acts of all kinds.",
         "clergy": "The Clergy of Alohim tend to be wealthy, as they receive large donations from the nobility whom they support. They tend to support good order in a country through the strict separation of nobility and serf.",
-        "home": "Alohim's palace lies at the peak of Mount Celestia"
+        "home": "Alohim's palace lies at the peak of Mount Celestia",
+        "church": "",
+        "tenets": [
+          "I must above all, safeguard the lives of those who depend on me.",
+          "I must recognize the divine right to command granted to Kings and their vassals.",
+          "I must pray each day at dawn, celebrating the coming of the light."
+        ],
+        "level1": "",
+        "level10": ""
       }

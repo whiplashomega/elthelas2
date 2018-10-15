@@ -12,5 +12,9 @@
         "appearance": "Dorman appears as an older muscular man in armor, with a sword at his waist and a shield strapped to his back or arm.  His hair is dark with streaks of gray, and his eyes are blue.  He is built wide rather than tall, with a thick bull-like neck.",
         "dogma": "Dorman teaches of the law of trial by combat, for the victor writes the law and the law decides the victor. Justice is the acquisition of their due by the strong, and mercy has no place in his teachings. Nevertheless the lower classes should be kept up, for the sake of further enriching their betters if nothing else.",
         "clergy": "The clergy of Dorman are often retired military officers and usually command a large force of citizen militia. They often ride out to war with the armies not as chaplains but as fellow warriors, committing themselves to where the battle is hottest to bring victory and conquest for their king and God.",
-        "home": "Kingdom of Celestia"
+        "home": "Kingdom of Celestia",
+        "church": "",
+        "tenets": [],
+        "level1": "",
+        "level10": ""
       }

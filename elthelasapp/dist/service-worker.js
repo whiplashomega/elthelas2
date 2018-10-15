@@ -11,10 +11,10 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js");
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.508f13a16a3ec1ce3c2d4ac3d6db5dc9.js"
+  "/precache-manifest.d01ebd010a406271ae8585ac2bd4b20b.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "Elthelas"});
@@ -27,3 +27,7 @@ workbox.core.setCacheNameDetails({prefix: "Elthelas"});
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
+
+workbox.routing.registerRoute(/\//, workbox.strategies.networkFirst({ "fetchOptions":{"credentials":"same-origin"}, plugins: [] }), 'GET');
+
+workbox.googleAnalytics.initialize({});

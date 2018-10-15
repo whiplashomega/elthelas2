@@ -6,7 +6,7 @@
   "traits": [
     { "name": "Size", "description": "Tieflings have about the same size and build as humans. Your size is medium." },
     { "name": "Speed", "description": "Your base walking speed is 30 feet." },
-    { "name": "Darkvision", "description": "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet o f you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray." },
+    { "name": "Darkvision", "description": "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray." },
     { "name": "Hellish Resistance", "description": "You have resistance to fire damage." }
   ],
   "agepoints": {

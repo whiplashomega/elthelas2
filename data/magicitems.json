@@ -2706,9 +2706,112 @@
  {
   "Item": "Staff of Shillelagh",
   "Type": "Weapon (staff)",
-  "Cost (gp)": "8000",
+  "Cost (gp)": "12000",
   "Rarity": "Rare",
   "Attunement": "No",
-  "Effect": "When making a melee attack with this magical staff you can use your spell attack modifier instead of your normal attack modifier."
+  "Effect": "When making a melee attack with this magical staff you can use your spell attack modifier instead of your normal attack modifier. Additionally it grants a +1 bonus to attack and damage rolls made with it."
+ },
+ {
+  "Item": "Sword of Extended Reach",
+  "Type": "Weapon (Greatsword)",
+  "Cost (gp)": "9000",
+  "Rarity": "Rare",
+  "Attunement": "No",
+  "Effect": "This sword grants a +1 bonus to attack and damage rolls.\n\nWhile weilding this sword you can speak the command word as a bonus action. When you do so the sword magically grows to an unusual size while it's weight and heft do not change, extending it's reach by 5 ft until the beginning of your next turn."
+ },
+ {
+  "Item": "Blade of Any Size",
+  "Type": "Weapon (dagger)",
+  "Cost (gp)": "5000",
+  "Rarity": "Uncommon",
+  "Attunement": "No",
+  "Effect": "By pressing one of four buttons on the hilt of this dagger as an action you can change it into a shortsword, longsword, greatsword, or back into a dagger."
+ },
+ {
+  "Item": "Harp of Inspiration",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "3000",
+  "Rarity": "Uncommon",
+  "Attunement": "Yes (bard)",
+  "Effect": "While attuned to this harp your maximum number of uses of bardic inspiration is increased by one."
+ },
+ {
+  "Item": "Armor of Magic Shadows",
+  "Type": "Armor (studded leather)",
+  "Cost (gp)": "9000",
+  "Rarity": "Rare",
+  "Attunement": "Yes (spellcaster)",
+  "Effect": "This armor grants a +1 bonus to AC. While attuned to and wearing this armor, you can expend a spell slot as a bonus action to become invisible for a number of rounds equal to the level of the slot expended."
+ },
+ {
+  "Item": "Ring of Attunement",
+  "Type": "Ring",
+  "Cost (gp)": "15000",
+  "Rarity": "Very Rare",
+  "Attunement": "Yes",
+  "Effect": "This item while attuned does not count towards the maximum number of items a character can have attuned, but rather increases the maximum number by 1. However, it is only possible to have one of these attuned on a single person."
+ },
+ {
+  "Item": "Abjurer's Robe",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "18000",
+  "Rarity": "Very Rare",
+  "Attunement": "Yes (Wizard or Sorcerer)",
+  "Effect": "While you are attuned to and wearing this robe your AC is equal to 13 + your dexterity modifier. Additionally, this robe has 10 charges, and regains 1d8 charges daily at dawn. You can use a charge of the robe to cast one of the following spells: shield, absorb elements, protection from evil and good."
+ },
+ {
+  "Item": "Apprentice's Robe",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "5000",
+  "Rarity": "Uncommon",
+  "Attunement": "No",
+  "Effect": "While wearing this robe your AC is equal to 13 + your dexterity modifier."
+ },
+ {
+  "Item": "Evoker's Robe",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "18000",
+  "Attunement": "Yes (Wizard or Sorcerer)",
+  "Effect": "While you are attuned to and wearing this robe your AC is equal to 13 + your dexterity modifier. Additionally, this robe has 10 charges, and regains 1d8 charges daily at dawn. You can use charges to cast the following spells: Magic Missile (1 charge), Shatter (2 charges), Lightning Bolt (3 charges)"
+ },
+ {
+  "Item": "Robes of the Persuasive Speaker",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "5000",
+  "Rarity": "Uncommon",
+  "Attunement": "No",
+  "Effect": "This robe has 3 charges and recovers 1d3 charges daily at dawn. While wearing the robe, you can expend one charge as an action to gain advantage on the next charisma check you make. Alternatively you can expend 2 charges to cast the spell Command."
+ },
+ {
+  "Item": "The Party Inventory",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "15000",
+  "Rarity": "Very Rare",
+  "Attunement": "Yes, up to 4 creatures",
+  "Effect": "Up to 4 creatures can be attuned to this item at the same time. The Party Inventory looks like a large sack, and always weighs 5 lbs, no matter how much is put in it. The inside of the bag opens to an interdimensional space that is 10 ft by 10 ft, and can hold 1000 lbs. Any creature who is attuned to the bag and is within 60 ft of it can summon any action in the bag to their hand as a bonus action."
+ },
+ {
+  "Item": "Magic Dust",
+  "Type": "Single Use",
+  "Cost (gp)": "250",
+  "Rarity": "Common",
+  "Attunement": "No",
+  "Effect": "Snorting or smoking this powerful stimulant gives an incredible feeling of power to the user, heightening senses, improving strength, and increasing mental acuity. After using the dust the user gains a +4 bonus to strength, dexterity, intelligence, and Charisma; 2d8 temporary hitpoints; advantage on perception checks; and is immune to exhaustion for 1 hour. This does not remove levels of exhaustion already suffered, but suppresses any effects of that exhaustion. After the effect wears off the user suffers a level of exhaustion, and has disadvantage on all checks for 24 hours, this can be avoided by using more Magic Dust before the effect wears off. Using Magic Dust also brings with it the risk of addiction. After using Magic Dust, roll a d20. On a result of 4 or less the user becomes addicted to Magic Dust, suffering a constant desire to have more Dust, and cannot have less than 1 level of exhaustion unless they have used Magic Dust within the last 24 hours. This addiction can be removed by Greater Restoration."
+ },
+ {
+  "Item": "Case of Emergency",
+  "Type": "Single Use",
+  "Cost (gp)": "1000",
+  "Rarity": "Uncommon",
+  "Attunement": "No",
+  "Effect": "This tiny black box, about an inch in diameter, contains within it the power to change the future in a small, but predictable way. You can smash the box as a reaction when making any d20 roll, and instead of making the roll, proceed with the result as if you had rolled a 20 on the die."
+ },
+ {
+  "Item": "Potion of Rage",
+  "Type": "Single Use",
+  "Cost (gp)": "500",
+  "Rarity": "Uncommon",
+  "Attunement": "No",
+  "Effect": "After drinking this potion the user enters a frenzied state of bloodlust. For the next minute or until they become incapacitated they have advantage on strength checks, +3 damage when attacking with strength, resistance to bludgeoning, piercing, and slashing damage, and can make an additional attack as a bonus action when they take the attack action on their turn."
  }
 ]

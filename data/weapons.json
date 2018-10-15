@@ -302,5 +302,13 @@
    "Weight": "3 lb",
    "Properties": "ranged, special, thrown (range 5/15)",
    "Cost": "1"
+ },
+ {
+   "Name": "Long Spear",
+   "Type": "Simple",
+   "Damage": "1d8 piercing",
+   "Weight": "6 lb",
+   "Properties": "heavy, two-handed, reach",
+   "Cost": "1"
  }
 ]

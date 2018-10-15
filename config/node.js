@@ -13,7 +13,7 @@ module.exports = {
             callbackURL: 'https://elthelas2-whiplashomega.c9users.io/users/facebook/callback'
         };
         module.exports.staticDir = "/elthelasapp/dist";
-        module.exports.port = 8081;
+        //module.exports.port = 8081;
     } else {
         console.log(process.env.MONGODB_URI);
         module.exports.mongoUrl = process.env.MONGODB_URI;

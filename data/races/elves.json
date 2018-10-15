@@ -51,7 +51,7 @@
       "traits": [
         { "name": "Ability Score Increase", "description": "Your dexterity score increases by 2 and your constitution score increases by 1." },
         { "name": "Speed", "description": "Your base walking speed is 35 feet." },
-        { "name": "Nomad", "description": "You have proficiency with the survival skill, and add double your proficiency bonus to Wisdom(survival) checks." }
+        { "name": "Nomad", "description": "You have proficiency with the survival skill, and add double your proficiency bonus to Wisdom (survival) checks." }
       ],
       "averageheight": 65,
       "baseheight": 54,
@@ -72,7 +72,7 @@
         { "name": "Ability Score Increase", "description": "Your dexterity score increases by 2 and your Charisma score increases by 1." },
         { "name": "Speed", "description": "Your base walking speed is 35 feet." },
         { "name": "Darkvision", "description": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in the darkness, only shades of gray." },
-        { "name": "Cantrip", "description": "You know one cantrip of your choice from the wizard spell list. Charisma is your spellcasting ability for it." }
+        { "name": "Cantrip", "description": "You know one cantrip of your choice from the sorcerer spell list. Charisma is your spellcasting ability for it." }
       ],
       "averageheight": 62,
       "baseheight": 53,
