@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
+    "revision": "ef50ee28a222c6c7a3d285370523b676",
+    "url": "/static/images/maps/nations/Staelia.jpg"
+  },
+  {
+    "revision": "2c0c0b0008f1399bde41ecb582de658d",
+    "url": "/static/md/book4/theworld.md"
+  },
+  {
     "revision": "ffbba2f94a17fb70cee670a1bbee649c",
     "url": "/static/images/maps/nations/Stagenheim.jpg"
-  },
-  {
-    "revision": "884a9f42e6c5b021aded9d6a17e77156",
-    "url": "/wrapFetch.js"
-  },
-  {
-    "revision": "282a36489325424ab7bdbeec8d6cf3e1",
-    "url": "/static/images/maps/nations/Terron.jpg"
   },
   {
     "revision": "d49c68ad49f92f4db2e5",
@@ -32,12 +32,12 @@ self.__precacheManifest = [
     "url": "/fonts/tl-icons.8402c93e.ttf"
   },
   {
-    "revision": "80ad75c75b068b3305769bc45c415f17",
+    "revision": "4c0880d81704c48fa0ea2acda4372fef",
     "url": "/index.html"
   },
   {
-    "revision": "2c0c0b0008f1399bde41ecb582de658d",
-    "url": "/static/md/book4/theworld.md"
+    "revision": "f55d35b6df4a425a6381e208f665c445",
+    "url": "/static/md/book4/pcs.md"
   },
   {
     "revision": "fe9884553a1ae2ea1bb0d6f76a8d4822",
@@ -126,6 +126,10 @@ self.__precacheManifest = [
   {
     "revision": "ef7253ed20b47b8088b491a345d76300",
     "url": "/json/weapons.json"
+  },
+  {
+    "revision": "0b725cd54bc29c1332544e44645117f8",
+    "url": "/manifest.webmanifest"
   },
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
@@ -340,16 +344,16 @@ self.__precacheManifest = [
     "url": "/static/images/maps/nations/Shendarel.jpg"
   },
   {
-    "revision": "ef50ee28a222c6c7a3d285370523b676",
-    "url": "/static/images/maps/nations/Staelia.jpg"
-  },
-  {
     "revision": "b7f66c36bea52116eeac",
     "url": "/js/app.78c27484.js"
   },
   {
     "revision": "d49c68ad49f92f4db2e5",
     "url": "/js/chunk-vendors.f3472507.js"
+  },
+  {
+    "revision": "282a36489325424ab7bdbeec8d6cf3e1",
+    "url": "/static/images/maps/nations/Terron.jpg"
   },
   {
     "revision": "8b8009b626fbb62aeeba316e7bdef0f6",
@@ -674,10 +678,6 @@ self.__precacheManifest = [
   {
     "revision": "0d23db96b30aac2e9e4ad9a330555364",
     "url": "/static/md/book4/curestan.md"
-  },
-  {
-    "revision": "f55d35b6df4a425a6381e208f665c445",
-    "url": "/static/md/book4/pcs.md"
   },
   {
     "revision": "b7f66c36bea52116eeac",

@@ -14,6 +14,7 @@ module.exports = {
     }
   },
   pwa: {
+    themeColor: "#3e60af",
     workboxOptions: {
       offlineGoogleAnalytics: true,
       runtimeCaching: [{
