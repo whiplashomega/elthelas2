@@ -1,6 +1,6 @@
 # elthelas
 
-> (elthelas.com)[https://elthelas.com]
+> [elthelas.com](https://elthelas.com)
 
 ## Build Setup
 
@@ -9,10 +9,16 @@
 npm install
 
 # serve with hot reload at localhost:8080
-npm run elthelasapp/dev
+cd elthelasapp
+npm run serve
 
 # build for production with minification
-gulp
+cd elthelasapp
+npm run build
+
+# run the production build
+start mongodb database service, however you need to do it in your local environment
+node server
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
