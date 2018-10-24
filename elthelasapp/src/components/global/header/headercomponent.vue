@@ -87,15 +87,17 @@
   </header>
   <div class="row" v-if="hidetitle"><div class="col-10"><h4 style="margin-left:15px;">Elthelas Campaign Setting - {{title}}</h4></div><button class="btn btn-default topbutton" @click="hidetitle = !hidetitle">Show</button></div>
   <b-modal id="loginmodal" size="lg" title="Login" v-model="showLogin">
-    <div class="form-inline">
-      <label class="col-3">Username:</label> <input type="text" v-model="logincreds.username" class="form-control col-9" />
-    </div>
-    <div class="form-inline">
-      <label class="col-3">Password:</label> <input type="password" v-model="logincreds.password" class="form-control col-9" />
-    </div>
-    <div slot="modal-footer">
-      <div class="btn-group"><button type="button" class="btn btn-default" @click="handleLogin()">Login</button><button type="button" class="btn btn-danger" @click="showLogin=false">Cancel</button></div>
-    </div>
+    <form name="login">
+      <div class="form-inline">
+        <label class="col-3">Username:</label> <input type="text" v-model="logincreds.username" class="form-control col-9" />
+      </div>
+      <div class="form-inline">
+        <label class="col-3">Password:</label> <input type="password" v-model="logincreds.password" class="form-control col-9" />
+      </div>
+      <div slot="modal-footer">
+        <div class="btn-group"><button type="button" class="btn btn-default" @click="handleLogin()">Login</button><button type="button" class="btn btn-danger" @click="showLogin=false">Cancel</button></div>
+      </div>
+    </form>
   </b-modal>
   <b-modal id="registermodal" size="lg" title="Register" v-model="showRegister">
     <div class="form-inline">
