@@ -205,7 +205,7 @@ export default {
       primaryAreaUnit: 'sqmiles'
     });
     measureControl.addTo(this.map);
-    L.tileLayer('http://elthelas-maps.s3-website.us-east-2.amazonaws.com/maps/tiles/{z}/{y}/{x}.png', {
+    L.tileLayer('https://elthelas-images.herokuapp.com//maps/tiles/{z}/{y}/{x}.png', {
       attribution: 'map image created by Heather Domaszek',
       minZoom: 0,
       maxZoom: 5,
