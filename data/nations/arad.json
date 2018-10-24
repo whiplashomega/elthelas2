@@ -3,7 +3,7 @@
   "coords": [5.965753671065536, 106.08810424804689],
   "border-coords": [],
   "color": "#222200",
-  "map": "/static/images/maps/nations/Arad.jpg",
+  "map": "https://elthelas-images.herokuapp.com/maps/nations/Arad.jpg",
   "capitol": "Albeliath",
   "cities": ["Faran"],
   "landmarks": ["World Crack"],

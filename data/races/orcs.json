@@ -24,7 +24,7 @@
       "id": "gruntorcs",
       "name": "Grunt Orcs",
       "singular": "Grunt Orc",
-      "image": "/static/images/races/gruntorc.jpg",
+      "image": "https://elthelas-images.herokuapp.com/races/gruntorc.jpg",
       "description": "The grunt orcs have never really been able to rule themselves in any organized or permanent manner. When they haven't been ruled by outsiders or their high orc brethren, they have generally been little more than tribal, ruled by whatever warlord happened to be the strongest. Grunt Orcs are the strongest of the orc breeds, and make up the bulk of the orc armies. When not at war they often compete in feats of strength, including blood sports.",
       "traits": [
         { "name": "Ability Score Increase", "description": "Your strength score increases by 2 and your constitution score increases by 1." },
@@ -44,7 +44,7 @@
       "id": "highorcs",
       "name": "High Orcs",
       "singular": "High Orc",
-      "image": "/static/images/races/highorc.jpg",
+      "image": "https://elthelas-images.herokuapp.com/races/highorc.jpg",
       "description": "The high orcs are less strong, and slightly smaller than grunt orcs, and more than a bit lazy, but they make up for it with greater social skills and diplomatic nature. They tend to be the rulers in Orc society, playing others off each other to rise to the top in orcish politics, befriending the strongest grunt orcs, and using them as champions as they rise to the top of society. Many of the high orcs live apart from their kin, on the island nation of Olda, where they keep vast hordes of slaves to do their bidding, watched over by highly paid mercenaries.",
       "traits": [
         { "name": "Ability Score Increase", "description": "Your strength score increases by 2 and your charisma score increases by 1." },
@@ -63,7 +63,7 @@
       "id": "sandorcs",
       "name": "Sand Orcs",
       "singular": "Sand Orc",
-      "image": "/static/images/races/sandorc.jpg",
+      "image": "https://elthelas-images.herokuapp.com/races/sandorc.jpg",
       "description": "\n\nThe Sand Orcs are an offshoot of Grunt Orcs that have taken up a nomadic lifestyle in the deserts of Nerim. They are a hardy people, and excellent riders, making use of powerful riding lizards for travel. They move from oasis to oasis in wandering tribes, and have little contact with the outside world.\n\nSand Orcs are leaner compared to their Grunt Orc and High Orc cousins, and their skin more brown and tan than green.\n\n",
       "traits": [
         { "name": "Ability Score Increase", "description": "Your strength score increases by 2 and your Constitution score increases by 2." },

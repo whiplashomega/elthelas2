@@ -43,7 +43,7 @@ his flock to safety here in Cur'Estan. -Gimble Beren
 
 ### Locations
 
-![map of cur'mestin](/images/maps/cities/curmestin.png)
+![map of cur'mestin](https://elthelas-images.herokuapp.com/maps/cities/curmestin.png)
 
 #### 1\. Octavius Castle
 
@@ -203,7 +203,7 @@ The east cell block is completely full. 6 of the prisoners are in for treason (a
 
 The west cell block is mostly empty, and appears to be reserved for more dangerous criminals. A permanent silence spell fills this cell block, slowly driving those who occupy it insane. The captured druid sits in the second cell on the right. A murderer, driven mad by his own thoughts, is scratching at the bars just across from her. A wizard who defied the duchess is covered in self inflicted wounds, and has written a treatise on magical theory on the walls of his cell, in his own blood. Two of the cells have been used by the devils to store the corpses of their torture victims, and are piled high with dismembered bodies. The smell of rotting flesh fills the whole cell block. The last cell contains a little girl, who is in fact a cambion in disguise. If freed, the wizard (use the 'evoker' entry from Volo's Guide to Monsters), the murderer (use the 'gladiator' entry from the monster manual), and the cambion will all attack, both the party and each other, as soon as the cell block has been cleared. The druid will assist the party in this fight if it takes place (use the druid entry from the monster manual for Amra's statistics).
 
-![map of Castle Octavius](/images/maps/castleoctavius.png) ![map of Castle Octavius](/images/maps/castleoctaviusdungeon.png)</div>
+![map of Castle Octavius](https://elthelas-images.herokuapp.com/maps/castleoctavius.png) ![map of Castle Octavius](https://elthelas-images.herokuapp.com/maps/castleoctaviusdungeon.png)</div>
 
 ## The Loyalists' Hideout
 

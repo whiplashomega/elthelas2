@@ -24,7 +24,7 @@
     {
       "id": "default",
       "name": "",
-      "image": "/static/images/races/hobgoblin.jpg",
+      "image": "https://elthelas-images.herokuapp.com/races/hobgoblin.jpg",
       "description": "",
       "traits": [
       

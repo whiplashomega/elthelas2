@@ -486,7 +486,7 @@ The two side doors have an extendable bridge (Pink Squares), so when one player 
 
 The jist is, they need to shine 4 lights at the center area, and also shine two on the path that lead to the exit door in order to escape. The other two rooms need to have a player stand on the bridge as it turns in order to open the door. 
 
-![Mirror Puzzle](/static/images/mirrorpuzzle.png)
+![Mirror Puzzle](https://elthelas-images.herokuapp.com/mirrorpuzzle.png)
 
 ***The Sanitarium*** Bimriel often takes in those who have been touched by madness from the surrounding communities. The Sanitarium is where she houses them. It currently houses 8 people who are too dangerous to be part of society. They are cared for by Bimriel's staff, and live in padded cells. When the party enters, kobolds in white coats are carrying an unconscious man into one of the cells, where they lay him in bed, shut and lock the door. They kobolds do not bother the party so long as they do not interfere with their work, and are willing to answer questions. Two of the patients are in the outer area, one sits in the corner hugging his knees and muttering to himself, while the other is sitting staring straight ahead, ignoring all around him. Upon seeing Eyvindra, the one in the corner will get up and run to her, trying to grab her arm. He tells her that she must get a message to Carver that he has been caught. Igor has been caught and Carver will have to continue on his own.
 

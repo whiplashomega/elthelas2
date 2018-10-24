@@ -3,7 +3,7 @@
   "coords": [-61.14323525084057, -78.83377075195314],
   "border-coords": [],
   "color": "#222200",
-  "map": "/static/images/maps/nations/Gorgro.jpg",
+  "map": "https://elthelas-images.herokuapp.com/maps/nations/Gorgro.jpg",
   "capitol": "",
   "cities": [],
   "landmarks": ["Ice Wastes", "Troll Pass"],

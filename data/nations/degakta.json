@@ -3,7 +3,7 @@
   "coords": [-48.980216985374994, 48.69552612304688],
   "border-coords": [],
   "color": "#FFFF00",
-  "map": "/static/images/maps/nations/Degak'Ta.jpg",
+  "map": "https://elthelas-images.herokuapp.com/maps/nations/Degak'Ta.jpg",
   "capitol": "Sunra",
   "cities": [],
   "landmarks": [],

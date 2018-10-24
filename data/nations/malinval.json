@@ -3,7 +3,7 @@
   "coords": [-4.477856485570586, 82.62130737304688],
   "border-coords": [],
   "color": "#FFFF00",
-  "map": "/static/images/maps/nations/Malinval.jpg",
+  "map": "https://elthelas-images.herokuapp.com/maps/nations/Malinval.jpg",
   "capitol": "Marinval",
   "cities": ["Mak'hol", "Forbel", "Makir", "Parakas", "Malgeth", "Morda'serek'hai", "Gulutheim", "Ochre'ken"],
   "landmarks": ["Desert of Despair", "Glass Cliff", "Blighted Gap", "Rust Desert", "Black Shard Pass", "Golden Pass", "Dal Okra"],

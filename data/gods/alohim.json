@@ -2,7 +2,7 @@
         "id": "alohim",
         "name": "Alohim",
         "holysymbol": "A Yellow Rising Sun on a White Background",
-        "symbolimage": "/images/holysymbol/alohim-symbol.png",
+        "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/alohim-symbol.png",
         "alignment": "Lawful Good",
         "domains": "Courage, Domination, Glory, Good, Inquisition, Law, Nobility, Pride, Purification, Sun",
         "domains5": "Light, War",

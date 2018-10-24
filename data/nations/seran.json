@@ -3,7 +3,7 @@
   "coords": [-36.3151251474805, 113.82247924804689],
   "border-coords": [],
   "color": "#FFFF00",
-  "map": "/static/images/maps/nations/Seran.jpg",
+  "map": "https://elthelas-images.herokuapp.com/maps/nations/Seran.jpg",
   "capitol": "Kimly",
   "cities": [],
   "landmarks": ["Titan's Peaks"],

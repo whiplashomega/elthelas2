@@ -3,7 +3,7 @@
   "coords": [-27.994401411046148, -72.06619262695314],
   "border-coords": [],
   "color": "#FFFF00",
-  "map": "/static/images/maps/nations/Hisru'de'tan.jpg",
+  "map": "https://elthelas-images.herokuapp.com/maps/nations/Hisru'de'tan.jpg",
   "capitol": "She'dal",
   "cities": ["Atyrao", "Taruu"],
   "landmarks": [],

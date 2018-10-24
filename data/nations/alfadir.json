@@ -3,7 +3,7 @@
   "coords": [-47.219568112315486, -73.64822387695314],
   "border-coords": [],
   "color": "#FFFF00",
-  "map": "/static/images/maps/nations/Alfadir.jpg",
+  "map": "https://elthelas-images.herokuapp.com/maps/nations/Alfadir.jpg",
   "capitol": "Dieel",
   "cities": [
     "Fradae",

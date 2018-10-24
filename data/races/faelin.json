@@ -27,7 +27,7 @@
     "id": "default",
     "name": "",
     "description": "",
-    "image": "/static/images/races/faelin.png",
+    "image": "https://elthelas-images.herokuapp.com/races/faelin.png",
     "traits": [],
       "averageheight": 36,
       "baseheight": 31,

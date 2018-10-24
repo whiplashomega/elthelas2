@@ -25,7 +25,7 @@
     {
       "id": "default",
       "name": "",
-      "image": "/static/images/races/trollkin.png",
+      "image": "https://elthelas-images.herokuapp.com/races/trollkin.png",
       "description": "",
       "traits": [ ],
       "averageheight": 84,

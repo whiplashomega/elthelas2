@@ -26,7 +26,7 @@
       "name": "default",
       "description": "",
       "traits": [],
-      "image": "/static/images/races/childofmolton.jpg",
+      "image": "https://elthelas-images.herokuapp.com/races/childofmolton.jpg",
       "averageheight": 67,
       "baseheight": 56,
       "heightroll": "2d10",

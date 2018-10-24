@@ -23,7 +23,7 @@
       "id": "infernaltiefling",
       "name": "Infernal Tiefling",
       "singular": "Infernal Tiefling",
-      "image": "/static/images/races/tiefling.jpg",
+      "image": "https://elthelas-images.herokuapp.com/races/tiefling.jpg",
       "description": "",
       "traits": [
         { "name": "Ability Score Increase", "description": "Your intelligence score increases by 1 and your charisma score increases by 2." },

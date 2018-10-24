@@ -24,7 +24,7 @@
       "id": "highelves",
       "name": "High Elves",
       "singular": "High Elf",
-      "image": "/static/images/races/highelf.jpg",
+      "image": "https://elthelas-images.herokuapp.com/races/highelf.jpg",
       "description": "\n\nThe High Elves make up the majority of the ruling and merchant class of elves in Eldoran, and are the primary residents in the cities. They are relatively few compared to the Wood Elves who live throughout the countryside, but because most elven merchants are high elves, they tend to be considered the most stereotypical. High Elves are somewhat weaker, but better educated then Wood Elves.\n\n",
       "traits": [
         { "name": "Ability Score Increase", "description": "Your dexterity score increases by 2 and your intelligence score increases by 1." },
@@ -46,7 +46,7 @@
       "id": "moonelves",
       "name": "Moon Elves",
       "singular": "Moon Elf",
-      "image": "/static/images/races/moonelf.jpg",
+      "image": "https://elthelas-images.herokuapp.com/races/moonelf.jpg",
       "description": "The Moon Elves of Demal Thor are a hardier breed of elves than the High Elves or Wood Elves, but they are gruff loners who generally appear standoffish to those outside of their clan. They live in nomadic clans of between 2 and 3 hundred individuals that wander the plains following the herds.",
       "traits": [
         { "name": "Ability Score Increase", "description": "Your dexterity score increases by 2 and your constitution score increases by 1." },
@@ -66,7 +66,7 @@
       "id": "wildelves",
       "name": "Wild Elves",
       "singular": "Wild Elf",
-      "image": "/images/races/wildelf.jpg",
+      "image": "https://elthelas-images.herokuapp.com/races/wildelf.jpg",
       "description": "The Wild Elves are as rare as they are reclusive, living in small groups in the deepest jungles of Eldoran and Gnarra. They generally lack education, and are often considered feral and uncivilized by other elves.",
       "traits": [
         { "name": "Ability Score Increase", "description": "Your dexterity score increases by 2 and your Charisma score increases by 1." },
@@ -87,7 +87,7 @@
       "id": "woodelves",
       "name": "Wood Elves",
       "singular": "Wood Elf",
-      "image": "/static/images/races/woodelf.jpg",
+      "image": "https://elthelas-images.herokuapp.com/races/woodelf.jpg",
       "description": "The Wood Elves of Eldoran are only slightly removed from their feral roots. The Wood Elves are relatively unfamiliar with the learning and education present in much of modern civilization, but they are naturally strong, spending their lives as farmers, woodsmen, and craftsmen.",
       "traits": [
         { "name": "Ability Score Increase", "description": "Your dexterity score increases by 2 and your wisdom score increases by 1." },

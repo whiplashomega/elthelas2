@@ -3,7 +3,7 @@
   "coords": [56.26776108757582, 107.14279174804689],
   "border-coords": [],
   "color": "#FFFF00",
-  "map": "/static/images/maps/nations/Dormania.jpg",
+  "map": "https://elthelas-images.herokuapp.com/maps/nations/Dormania.jpg",
   "capitol": "Desadorel",
   "cities": ["Sreppe", "Farengar", "Falak", "Malidal", "East Dormania", "West Dormania", "Wayrest", "Timberlan", "South Port", "East Port", "Orania", "Prince Port", "Cur'Lesto", "Cur'Mestin", "Miner's Rest", "Poron", "Silver Head"],
   "landmarks": ["World Crack", "Great Ramp"],

@@ -1,5 +1,6 @@
 <template>
 <div class="col-sm-12">
+	<img src="https://elthelas-images.herokuapp.com/castle1.jpg" alt="" style="float:right; margin: 10px; max-width: 40%; height: auto;" />
   <p>
 		Welcome to Elthelas. Elthelas is a world of fantasy. It is full of strange creatures, wondrous places, dark evils, and grand adventures. In Elthelas Gods and magic are a part of day to day life.
 	</p>

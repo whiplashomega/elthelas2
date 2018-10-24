@@ -24,7 +24,7 @@
     {
       "id": "default",
       "name": "Goblins",
-      "image": "/static/images/races/goblin.jpg",
+      "image": "https://elthelas-images.herokuapp.com/races/goblin.jpg",
       "description": "",
       "traits": [],
       "averageheight": 44,

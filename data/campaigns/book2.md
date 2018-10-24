@@ -18,6 +18,6 @@
 
 Cur'Estan was once the fortress capitol of an ancient minor Kandori king, destroyed by Dorman I and left as a ruin in the woods.  20 years ago the Black Wolf Irregulars rebuilt the central castle to serve as their headquarters, and over the twenty years since a small town has sprung up around the castle serving the needs of the castle.  Over the last year, as the orcs have ravaged Demal'Thor, and then moved into Gerasalim, refugees have slowly trickled into the town.  A refugee camp has sprung up on the outskirts, now threatening to outnumber the original residents.
 
-![Map of Cur'Estan](/images/maps/curestan.png "")
+![Map of Cur'Estan](https://elthelas-images.herokuapp.com/maps/curestan.png "")
 
 The de facto ruler of Cur'Estan is General Gerad Heartbren of the Black Wolf Irregulars.  He commands the castle, and roughly 2000 soldiers, the last remains of the Black Wolf Irregulars forces.  

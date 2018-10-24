@@ -48,7 +48,7 @@
     </b-modal>
     <b-modal id="loading"
       no-close-on-backdrop no-close-on-esc hide-header hide-footer>
-      <img src="/static/images/giphy.gif" alt="Loading" />
+      <img src="https://elthelas-images.herokuapp.com/giphy.gif" alt="Loading" />
     </b-modal>
   </div>
 </template>

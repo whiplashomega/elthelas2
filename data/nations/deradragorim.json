@@ -3,7 +3,7 @@
   "coords": [32.84267363195431, -59.76150512695313],
   "border-coords": [],
   "color": "#FFFF00",
-  "map": "/static/images/maps/nations/Dera'Dragorim.jpg",
+  "map": "https://elthelas-images.herokuapp.com/maps/nations/Dera'Dragorim.jpg",
   "capitol": "Vasha",
   "cities": ["Vashna", "Delan", "Portsmith"],
   "landmarks": ["Smuggler's Pass"],

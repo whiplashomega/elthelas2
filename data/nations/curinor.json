@@ -3,7 +3,7 @@
   "coords": [44.465151013519645, 45.26779174804688],
   "border-coords": [],
   "color": "#222200",
-  "map": "/static/images/maps/nations/Curinor.jpg",
+  "map": "https://elthelas-images.herokuapp.com/maps/nations/Curinor.jpg",
   "capitol": "Curin Keep",
   "cities": ["Torin Hammer", "Stromforde", "High Hammer", "Granite Bluff"],
   "landmarks": ["Blighted Gap", "Fortress of Light", "Mithril Hills"],

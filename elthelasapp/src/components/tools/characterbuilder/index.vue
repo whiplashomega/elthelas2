@@ -69,7 +69,7 @@
               </datalist>
             </div>
           </div>
-          <div class="col-3"><img src="/static/images/ddlogo.png" class="ddlogo" /></div>
+          <div class="col-3"><img src="https://elthelas-images.herokuapp.com/ddlogo.png" class="ddlogo" /></div>
         </div>
         <div class="row">
           <div class="col-7">
@@ -2151,7 +2151,7 @@
     </b-modal>
     <b-modal id="loading"
       no-close-on-backdrop no-close-on-esc hide-header hide-footer>
-      <img src="/static/images/giphy.gif" alt="Loading" />
+      <img src="https://elthelas-images.herokuapp.com/giphy.gif" alt="Loading" />
     </b-modal>
     <b-modal v-model="spellModal" title="Add Spell" class="modal-lg" @ok="addSpell(selspell)">
       Filter by Text

@@ -25,7 +25,7 @@
         "id": "protectedaasimar",
         "name": "Protected Aasimar",
         "singular": "Protected Aasimar",
-        "image": "/static/images/races/aasimar.jpg",
+        "image": "https://elthelas-images.herokuapp.com/races/aasimar.jpg",
         "description": "\n\nProtector aasimar are charged by the powers of good to guard the weak, to strike at evil wherever it arises, and to stand vigilant against the darkness. From a young age, a protector aasimar receives advice and directives that urge to stand against evil.\n\n",
         "traits": [
           { "name": "Ability Score Increase", "description": "Your wisdom score increases by 1 and your charisma score increases by 2." },

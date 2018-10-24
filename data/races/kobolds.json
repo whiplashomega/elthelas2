@@ -24,7 +24,7 @@
     {
       "id": "default",
       "name": "",
-      "image": "/static/images/races/kobold.jpg",
+      "image": "https://elthelas-images.herokuapp.com/races/kobold.jpg",
       "description": "",
       "traits": [
       

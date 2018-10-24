@@ -25,7 +25,7 @@
       "id": "default",
       "name": "Fey'ri",
       "singular": "Fey'ri",
-      "image": "/static/images/races/feyri.jpg",
+      "image": "https://elthelas-images.herokuapp.com/races/feyri.jpg",
       "description": "",
       "traits": [],
       "averageheight": 65,

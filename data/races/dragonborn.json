@@ -26,7 +26,7 @@
       "name": "Black Dragonborn",
       "singular": "Black Dragonborn",
       "description": "",
-      "image": "/static/images/races/dragonborn.jpg",
+      "image": "https://elthelas-images.herokuapp.com/races/dragonborn.jpg",
       "traits": [
         { "name": "Damage Type", "description": "Acid" },
         { "name": "Breath Weapon Area of Effect", "description": "5 by 30ft line" },

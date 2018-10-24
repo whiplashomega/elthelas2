@@ -26,7 +26,7 @@
       "id": "default",
       "name": "default",
       "singular": "",
-      "image": "/static/images/races/firbolg.jpg",
+      "image": "https://elthelas-images.herokuapp.com/races/firbolg.jpg",
       "description": "",
       "traits": [
       

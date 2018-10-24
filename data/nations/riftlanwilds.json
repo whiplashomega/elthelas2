@@ -3,7 +3,7 @@
   "coords": [11.350796722383672, -121.02127075195314],
   "border-coords": [],
   "color": "#FFFF00",
-  "map": "/static/images/maps/nations/Riftlan.jpg",
+  "map": "https://elthelas-images.herokuapp.com/maps/nations/Riftlan.jpg",
   "capitol": "",
   "cities": [],
   "landmarks": [],

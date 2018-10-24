@@ -3,7 +3,7 @@
   "coords": [-4.565473550710278, -1.7536926269531252],
   "border-coords": [],
   "color": "#FFFF00",
-  "map": "/static/images/maps/nations/Shendarel.jpg",
+  "map": "https://elthelas-images.herokuapp.com/maps/nations/Shendarel.jpg",
   "capitol": "Swava",
   "cities": [],
   "landmarks": [],

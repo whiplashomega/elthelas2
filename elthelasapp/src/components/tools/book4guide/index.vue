@@ -125,7 +125,7 @@
         <li>Voidbringers</li>
       </ul>
         <h3 id="curestan">Cur'Estan</h3>
-      <p class="row"><img src="/static/images/maps/cities/curestan.png" alt="Map of Cur'Estan" class="col-sm-12" id="curestanmap" /></p>
+      <p class="row"><img src="https://elthelas-images.herokuapp.com/maps/cities/curestan.png" alt="Map of Cur'Estan" class="col-sm-12" id="curestanmap" /></p>
       <p>
         Cur'Estan was once the fortress capitol of an ancient minor Kandori king, destroyed by Dorman I and left as a ruin in the woods.  20 years ago the Black Wolf Irregulars rebuilt the central castle to serve as their headquarters, and over the twenty years since a small town has sprung up around the castle serving the needs of the castle.  Over the last year, as the orcs have ravaged Demal'Thor, and then moved into Gerasalim, refugees have slowly trickled into the town.  A refugee camp has sprung up on the outskirts, and after the evacuation of Northport, they greatly outnumber the original residents.
       </p>

@@ -24,7 +24,7 @@
     {
       "id": "default",
       "name": "",
-      "image": "/static/images/races/halfelf.jpg",
+      "image": "https://elthelas-images.herokuapp.com/races/halfelf.jpg",
       "description": "",
       "traits": [
       

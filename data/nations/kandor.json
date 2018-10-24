@@ -3,7 +3,7 @@
   "coords": [59.265880628258095, 71.28341674804689],
   "border-coords": [],
   "color": "#FFFF00",
-  "map": "/static/images/maps/nations/Kandor.jpg",
+  "map": "https://elthelas-images.herokuapp.com/maps/nations/Kandor.jpg",
   "capitol": "Kaland",
   "cities": ["Westport", "Purs"],
   "landmarks": [],

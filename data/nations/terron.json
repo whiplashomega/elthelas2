@@ -3,7 +3,7 @@
   "coords": [-6.489983332670651, 118.21701049804689],
   "border-coords": [],
   "color": "#FFFF00",
-  "map": "/static/images/maps/nations/Terron.jpg",
+  "map": "https://elthelas-images.herokuapp.com/maps/nations/Terron.jpg",
   "capitol": "Tenecha",
   "cities": [],
   "landmarks": ["World Crack"],

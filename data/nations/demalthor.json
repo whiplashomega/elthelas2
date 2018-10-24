@@ -3,7 +3,7 @@
   "coords": [12.726084296948196, 45.35568237304688],
   "border-coords": [],
   "color": "#FFFF00",
-  "map": "/static/images/maps/nations/Demal Thor.jpg",
+  "map": "https://elthelas-images.herokuapp.com/maps/nations/Demal Thor.jpg",
   "capitol": "Aridhem",
   "cities": [],
   "landmarks": ["Moon Pass", "Blighted Gap", "Fortress of Light", "Golden Pass", "Glass Cliff"],

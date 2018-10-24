@@ -3,7 +3,7 @@
   "coords": [-45.02695045318545, -56.33377075195313],
   "border-coords": [],
   "color": "#FFFF00",
-  "map": "/static/images/maps/nations/Stagenheim.jpg",
+  "map": "https://elthelas-images.herokuapp.com/maps/nations/Stagenheim.jpg",
   "capitol": "Craftheim",
   "cities": ["Gnoma", "Ifritan"],
   "landmarks": ["Fire Islands"],

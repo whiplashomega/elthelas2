@@ -79,7 +79,7 @@
     <div class="container">
       <h1>
         <a href="/">
-          <img src="/static/images/swordshieldlogo.png" alt="" class="logo" />Elthelas Campaign Setting - {{title}}
+          <img src="https://elthelas-images.herokuapp.com/swordshieldlogo.png" alt="" class="logo" />Elthelas Campaign Setting - {{title}}
         </a>
       </h1>
       <button class="btn btn-default linebutton" @click="hidetitle = !hidetitle" v-if="!hidetitle">Hide</button>

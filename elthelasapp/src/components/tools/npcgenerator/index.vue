@@ -55,7 +55,7 @@
               </datalist>
             </div>
           </div>
-          <div class="col-3"><img src="/static/images/ddlogo.png" class="ddlogo" /></div>
+          <div class="col-3"><img src="https://elthelas-images.herokuapp.com/ddlogo.png" class="ddlogo" /></div>
         </div>
         <div class="row">
           <div class="col-7">

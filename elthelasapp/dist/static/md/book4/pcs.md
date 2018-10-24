@@ -495,7 +495,7 @@ Throughout her travels, Flykr has met many beings. Which has been both a blessin
 
 ### Tilda / Fallon
 
-<img src="/static/images/Tilda.jpg" alt="" />
+<img src="https://elthelas-images.herokuapp.com/Tilda.jpg" alt="" />
 
 **Player:** Heather Domaszek
 

@@ -3,7 +3,7 @@
   "coords": [40.38002840251183, 85.43380737304689],
   "border-coords": [],
   "color": "#FFFF00",
-  "map": "/static/images/maps/nations/Gerasalim.jpg",
+  "map": "https://elthelas-images.herokuapp.com/maps/nations/Gerasalim.jpg",
   "capitol": "Strovenguard",
   "cities": ["Eastguard", "Northport"],
   "landmarks": ["Fortress of Light", "Blighted Gap", "Black Shard Pass", "Saria Lake", "World Crack"],

@@ -173,7 +173,7 @@ The Orc army is south of Northport, moving towards it at a pace of about 15 mile
 
 the Northeast road leads to Dormania and eastern Kandor, including Cur'Estan. Refugees attempting to escape along the road have all been attacked by orcs or undead.
 
-![map of northport](/images/maps/cities/northport.png)
+![map of northport](https://elthelas-images.herokuapp.com/maps/cities/northport.png)
 
 ### Important People in Northport
 

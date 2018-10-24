@@ -86,7 +86,7 @@ Carlyle
 
 ### Locations
 
-![map of cur'mestin](/static/images/maps/cities/curmestin.png)
+![map of cur'mestin](https://elthelas-images.herokuapp.com/maps/cities/curmestin.png)
 
 #### 1\. Octavius Castle
 
@@ -414,7 +414,7 @@ The west cell block is mostly empty, and appears to be reserved for more dangero
 
 [Run This Encounter](/runner/gladiator&cambion&evoker&druid)
 
-![map of Castle Octavius](/static/images/maps/castleoctavius.png) ![map of Castle Octavius](/static/images/maps/castleoctaviusdungeon.png)
+![map of Castle Octavius](https://elthelas-images.herokuapp.com/maps/castleoctavius.png) ![map of Castle Octavius](https://elthelas-images.herokuapp.com/maps/castleoctaviusdungeon.png)
 
 ## Freeing the City
 

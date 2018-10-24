@@ -3,7 +3,7 @@
   "coords": [-3.601142320158722, -23.72634887695313],
   "border-coords": [],
   "color": "#FFFF00",
-  "map": "/static/images/maps/nations/Gnarra.jpg",
+  "map": "https://elthelas-images.herokuapp.com/maps/nations/Gnarra.jpg",
   "capitol": "",
   "cities": [],
   "landmarks": ["Serpent's Spine"],

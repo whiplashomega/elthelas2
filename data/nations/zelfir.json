@@ -3,7 +3,7 @@
   "coords": [-44.27667127377517, -106.07986450195312],
   "border-coords": [],
   "color": "#FFFF00",
-  "map": "/static/images/maps/nations/Zelfir.jpg",
+  "map": "https://elthelas-images.herokuapp.com/maps/nations/Zelfir.jpg",
   "capitol": "Zelfin",
   "cities": ["Mandon", "Last Watch"],
   "landmarks": ["Sorcerer's Prison", "Veldt"],

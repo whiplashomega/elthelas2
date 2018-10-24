@@ -65,7 +65,7 @@ General Heartbren has rented a helmet of teleportation circle from Margo, and gi
 
 ## Strovenguard
 
-<img src='/images/maps/cities/strovenguard.png' class="col-sm-12" />
+<img src='https://elthelas-images.herokuapp.com/maps/cities/strovenguard.png' class="col-sm-12" />
 
 Strovenguard is an occupied city. The Orcs forced the queen to abandon her capitol a few months ago, and most of the cities population is now officially enslaved by one warlord or another. Three orc's have been assigned as overseers for the town, officially gaining 'Warlord' status as a result, and have partitioned the town into thirds. The alliance between the warlords is tenuous, and the sections operate mostly autonomously. Humans, elves, dwarves, gnomes, or halflings who do not have a slave brand are considered outlaws by the orcs, and fair game for whomever can capture them.
 
@@ -260,7 +260,7 @@ This secret room used to be used as a hangout by guards in the know. There are e
 ##### 19. Servant's Living Quarters
 
 This large living space was used by the castle staff before the orc invasion. It has been converted into a general slave quarters by the orcs. The kitchen, dining tables, and bookshelves that were there originally still remain, but now there are makeshift beds scattered around the room as well.
-<img src="/images/maps/dungeon/marisislandfortress.jpg" alt="" class="col-sm-12" />
+<img src="https://elthelas-images.herokuapp.com/maps/dungeon/marisislandfortress.jpg" alt="" class="col-sm-12" />
 
 ##### 20, 24. Storage
 

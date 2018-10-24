@@ -24,7 +24,7 @@
     {
       "id": "default",
       "name": "",
-      "image": "/static/images/races/halfdwarf.png",
+      "image": "https://elthelas-images.herokuapp.com/races/halfdwarf.png",
       "description": "",
       "traits": [],
       "averageheight": 59,

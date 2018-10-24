@@ -26,7 +26,7 @@
       "name": "default",
       "description": "",
       "traits": [],
-      "image": "/static/images/races/sorceronblooded.jpg",
+      "image": "https://elthelas-images.herokuapp.com/races/sorceronblooded.jpg",
       "averageheight": 65,
       "baseheight": 56,
       "heightroll": "2d8",

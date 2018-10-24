@@ -3,7 +3,7 @@
   "coords": [21.861498734372567, -96.58767700195314],
   "border-coords": [],
   "color": "#FFFF00",
-  "map": "/static/images/maps/nations/Dera.jpg",
+  "map": "https://elthelas-images.herokuapp.com/maps/nations/Dera.jpg",
   "capitol": "Dera",
   "cities": [],
   "landmarks": ["Veldt", "Demon Peaks"],

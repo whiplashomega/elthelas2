@@ -22,7 +22,7 @@
         "id": "deepdwarves",
         "name": "Deep Dwarves",
         "singular": "Deep Dwarf",
-        "image": "/static/images/races/dwarf.jpg",
+        "image": "https://elthelas-images.herokuapp.com/races/dwarf.jpg",
         "description": "The Deep Dwarves are the ruling caste of dwarven society in Curinor. They rarely (if ever in their lives) see the sun, preferring to stay in the deepest parts of the dwarven holds. They travel between holds via underground roads or by palanquin, and almost never associate with plains dwarves, let alone non-dwarves. Deep Dwarves have exceedingly pale, almost colorless skin.",
         "traits": [
           { "name": "Ability Score Increase", "description": "Your Constitution score increases by 1 and your wisdom score increases by 2." },

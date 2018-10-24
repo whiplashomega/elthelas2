@@ -21,7 +21,7 @@
       "id": "airgenasi",
       "name": "Air Genasi",
       "singular": "Air Genasi",
-      "image": "/static/images/races/airgenasi.jpg",
+      "image": "https://elthelas-images.herokuapp.com/races/airgenasi.jpg",
       "description": "",
       "traits": [
         { "name": "Ability Score Increase", "description": "Your Constitution score increases by 2 and your Dexterity score increases by 1." },
@@ -41,7 +41,7 @@
       "id": "earthgenasi",
       "name": "Earth Genasi",
       "singular": "Earth Genasi",
-      "image": "/static/images/races/earthgenasi.jpg",
+      "image": "https://elthelas-images.herokuapp.com/races/earthgenasi.jpg",
       "description": "",
       "traits": [
         { "name": "Ability Score Increase", "description": "Your Constitution score increases by 2 and your Strength score increases by 1." },
@@ -61,7 +61,7 @@
       "id": "firegenasi",
       "name": "Fire Genasi",
       "singular": "Fire Genasi",
-      "image": "/static/images/races/firegenasi.jpg",
+      "image": "https://elthelas-images.herokuapp.com/races/firegenasi.jpg",
       "description": "",
       "traits": [
         { "name": "Ability Score Increase", "description": "Your Constitution score increases by 2 and your Intelligence score increases by 1." },
@@ -82,7 +82,7 @@
       "id": "watergenasi",
       "name": "Water Genasi",
       "singular": "Water Genasi",
-      "image": "/static/images/races/watergenasi.jpg",
+      "image": "https://elthelas-images.herokuapp.com/races/watergenasi.jpg",
       "description": "",
       "traits": [
         { "name": "Ability Score Increase", "description": "Your Constitution score increases by 2 and your Wisdom score increases by 1." },

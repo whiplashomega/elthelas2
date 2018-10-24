@@ -17,6 +17,6 @@
   ],
   "landmarks": [],
   "coords": [46.96825851061674, 83.48840318620206],
-  "map": "/images/maps/cities/northport.jpg",
+  "map": "https://elthelas-images.herokuapp.com/maps/cities/northport.jpg",
   "description": "Northport was the last standing major city in Gerasalim, flush with refugees from the south before a heroic evacuation effort that transplanted the tens of thousands of citizens and refugees north to Cur'Estan.  The city is now occupied by the orcs, even if there is no one really left of the original inhabitants. Nevertheless to all appearances the orcs intend to use the city as a staging base for incursions further north."
 }

@@ -3,7 +3,7 @@
   "coords": [34.08906131584996, -12.036895751953127],
   "border-coords": [],
   "color": "#FFFF00",
-  "map": "/static/images/maps/nations/Eldoran.jpg",
+  "map": "https://elthelas-images.herokuapp.com/maps/nations/Eldoran.jpg",
   "capitol": "Loridesa",
   "cities": ["Milan", "Dima", "Sofala", "Storvel", "Estapor"],
   "landmarks": ["God Spire", "Undead Woods", "Glass Cliff", "Mithral Hills", "Moon Pass"],

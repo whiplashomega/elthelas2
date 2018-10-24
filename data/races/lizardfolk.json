@@ -28,7 +28,7 @@
     {
       "id": "default",
       "name": "",
-      "image": "/static/images/races/lizardfolk.jpg",
+      "image": "https://elthelas-images.herokuapp.com/races/lizardfolk.jpg",
       "description": "",
       "traits": [
       

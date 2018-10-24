@@ -3,7 +3,7 @@
   "coords": [-46.49839225859762, 107.93380737304689],
   "border-coords": [],
   "color": "#FFFF00",
-  "map": "/static/images/maps/nations/Nerim.jpg",
+  "map": "https://elthelas-images.herokuapp.com/maps/nations/Nerim.jpg",
   "capitol": "Nerim",
   "cities": [],
   "landmarks": ["Fang", "Iron Triangle", "Titan's Peaks"],

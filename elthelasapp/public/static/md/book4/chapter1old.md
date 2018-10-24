@@ -415,7 +415,7 @@ Room 4 is the sleeping room for the guards on duty. It is currently empty, but h
 
 The northwest corner of the room has stairs leading down to the next level.
 
-![Raider Base Level 1](/images/maps/raiderbase-level1.png)
+![Raider Base Level 1](https://elthelas-images.herokuapp.com/maps/raiderbase-level1.png)
 
 #### Raider Base: Level 2: Room 5
 
@@ -441,7 +441,7 @@ There are barrels all around the room full of various preserved foodstuffs, incl
 
 This last room of the level is empty except for a staircase leading down to level 3\. There is a small sign above the stairs that says: 'Do not disturb the boss unless he specifically asks for you'.
 
-![Raider Base Level 2](/images/maps/raiderbase-level2.png)
+![Raider Base Level 2](https://elthelas-images.herokuapp.com/maps/raiderbase-level2.png)
 
 #### Raider Base: Level 3
 
@@ -455,7 +455,7 @@ Marmaduc Undertree is locked in a cage in the corner. He will offer to help the 
 
 ##### [Run This Encounter](/runner/orcbladeofilneval&goblinboss&bugbear&bugbear&hobgoblindevastator&marmaducundertree)
 
-![Raider Base Level 2](/images/maps/raiderbase-level3.png)
+![Raider Base Level 2](https://elthelas-images.herokuapp.com/maps/raiderbase-level3.png)
 
 <aside>
 
