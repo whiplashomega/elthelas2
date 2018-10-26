@@ -17,7 +17,7 @@
 
 import headercomponent from '@/components/global/header/headercomponent';
 import FooterComp from '@/components/global/footer';
-import { mapGetters } from 'vuex';
+import { mapGetters, mapMutations } from 'vuex';
 
 export default {
   name: 'app',
@@ -44,6 +44,23 @@ export default {
     this.$store.dispatch('getAllCities');
     this.$store.dispatch('getAllFeats');
     this.$store.dispatch('getAllMagicItems');
+  },
+  methods: {
+    ...mapMutations({
+      setMobile: "setMobile"
+    })
+  },
+  mounted () {
+    if (window.outerWidth < 1024) {
+      this.setMobile(true);
+    }
+  },
+  updated () {
+    if (window.outerWidth < 1024) {
+      this.setMobile(true);
+    } else {
+      this.setMobile(false);
+    }
   }
 };
 </script>

@@ -1,5 +1,6 @@
 import { mapGetters } from 'vuex';
 import marked from 'marked';
+import helpers from '@/helpers/helpers';
 
 const modalInfo = {
   name: "",
@@ -67,10 +68,13 @@ const crxptable = [
 
 export default {
   computed: mapGetters({
-    creatures: "allCreatures"
+    creatures: "allCreatures",
+    token: 'getUserInfo',
+    loggedin: 'isLoggedIn'
   }),
   data () {
     return {
+      characters: [],
       creaturestable: {
         fields: [
           { key: 'name', label: 'Name', sortable: true },
@@ -168,6 +172,55 @@ export default {
         return true;
       });
       this.calculateDifficulty();
+    },
+    loadChar(character) {
+      this.encountercreatures.push({
+        id: this.nextid,
+        name: character.name,
+        size: "",
+        type: "humanoid",
+        subtype: "",
+        alignment: "",
+        acdesc: "",
+        speed: "",
+        str: "",
+        dex: "",
+        con: "",
+        int: "",
+        wis: "",
+        cha: "",
+        strmod: "",
+        dexmod: "",
+        conmod: "",
+        intmod: "",
+        wismod: "",
+        chamod: "",
+        saves: "",
+        skills: "",
+        senses: "",
+        damageresistances: "",
+        damageimmunities: "",
+        conditionimmunities: "",
+        languages: "",
+        cr: "",
+        descr: "",
+        mini: "",
+        currenthp: 0,
+        hpdesc: ""
+      });
+      this.$root.$emit('bv::hide::modal', 'servermodal');
+    },
+    getFromServer() {
+      if (this.loggedin) {
+        helpers.loading(this);
+      }
+    },
+    charlevel(character) {
+      var level = 0;
+      character.charclasses.forEach((a) => {
+        level += Number(a.level);
+      });
+      return level;
     }
   },
   mounted () {

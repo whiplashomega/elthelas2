@@ -14,6 +14,7 @@ import geo from './geomodels';
 import backgrounds from './backgrounds';
 import races from './races';
 import classes from './classes';
+import characters from './characters';
 import auth from './auth';
 import feats from './feats';
 import territories from './territories';
@@ -38,18 +39,24 @@ export default new Vuex.Store({
     classes,
     auth,
     feats,
-    territories
+    territories,
+    characters
   },
   state: {
-    title: "Test"
+    title: "Test",
+    mobile: false
   },
   mutations: {
     'CHANGE_TITLE' (state, { title }) {
       state.title = title;
+    },
+    setMobile (state, val) {
+      state.mobile = val;
     }
   },
   getters: {
-    title: state => state.title
+    title: state => state.title,
+    isMobile: state => state.mobile
   },
   actions: {
     changeTitle ({ commit }, title) {

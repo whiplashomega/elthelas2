@@ -62,15 +62,16 @@
       Adjusted XP Value: {{adjustedxpvalue}}
     </div>
   </div>
+  <div>
+    <input type="button" @click="getFromServer()" value="Load Character" class="btn btn-success margin15" />
+  </div>
   <div class="row" v-sortable="{ handle: '.handle' }">
     <div v-for="creature in encountercreatures" v-bind:key="creature.id" class="col-sm-3" >
         <h2> {{creature.name}} <i class="handle">&#8592;&#8594;<button class="close" type="button" @click="removeCreature(creature)">&times;</button></i> </h2>
         <div class="creature">
           <h4> {{creature.size}} {{creature.type}}<span v-if="creature.subtype"> ({{creature.subtype}})</span>, {{creature.alignment}}</h4>
-          <input type="text" class="form-control" placeholder="mini description" v-model="creature.mini" />
           <p>
             <strong>Armor Class:</strong> {{creature.acdesc}} <br />
-            <strong>Hit Points:</strong> <input type="number" v-model="creature.currenthp" style="max-width: 50px;" /> / {{creature.hpdesc}} <br />
             <strong>Speed:</strong> {{creature.speed}}
           </p>
           <table class="table table-striped">
@@ -124,6 +125,7 @@
     </b-col>
   </b-row>
   <b-table show-empty
+    id="creaturetable"
     :striped="true" :bordered="false"
     :responsive="true"
     stacked="sm"
@@ -134,7 +136,30 @@
     :sort-desc.sync="creaturestable.sortDesc">
     <template slot="name" slot-scope="row"><a href="#" @click.stop="addToEncounter(row.item, row.index, $event.target)">{{row.value}}</a></template>
   </b-table>
+  <div id="inithptracker">
+    <div v-for="creature in encountercreatures" v-bind:key="creature.id" class="form-inline form-row" >
+      {{ creature.name }}&nbsp;
+      <input type="text" class="form-control" placeholder="mini description" v-model="creature.mini" />&nbsp;
+      <input type="number" v-model="creature.currenthp" style="max-width: 75px;" class="form-control" /> &nbsp;/ {{creature.hpdesc}}
+      <button class="close" type="button" @click="removeCreature(creature)">&times;</button>
+    </div>
   </div>
+  <b-modal id="servermodal" title="Load File from Server">
+    <table class="table table-striped">
+      <tr>
+        <th>Character Name</th><th>Level</th><th>-</th>
+      </tr>
+      <tr v-for="character in characters" v-bind:key="character._id">
+        <td><span class="clickable" @click="loadChar(character)">{{character.name}}</span></td><td>{{charlevel(character)}}</td>
+        <td><input type="button" @click="deleteFromServer(character)" class="btn btn-danger" value="X" /></td>
+      </tr>
+    </table>
+  </b-modal>
+  <b-modal id="loading"
+    no-close-on-backdrop no-close-on-esc hide-header hide-footer>
+    <img src="https://elthelas-images.herokuapp.com/giphy.gif" alt="Loading" />
+  </b-modal>
+</div>
 </template>
 <script src="./runner.js"></script>
 <style src="./runner.scss" lang="scss" scoped></style>

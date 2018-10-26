@@ -6,7 +6,19 @@ const state = {
 };
 
 const getters = {
-  allFeats: state => state.all
+  allFeats: state => state.all,
+  featsort: (state) => {
+    var feats = [ ...state.all, { name: "Ability Score Increase", prereq: "", description: "Increase one ability score by 2 or 2 ability scores by 1" } ];
+    function ftsrt (a, b) {
+      if (a.name > b.name) {
+        return 1;
+      } else if (a.name < b.name) {
+        return -1;
+      }
+      return 0;
+    }
+    return feats.sort(ftsrt);
+  }
 };
 
 const actions = {
