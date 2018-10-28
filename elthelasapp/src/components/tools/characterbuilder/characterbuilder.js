@@ -5,6 +5,10 @@ import initiative from '@/components/tools/characterbuilder/initiative';
 import appearance from '@/components/tools/characterbuilder/appearance';
 import hitpoints from '@/components/tools/characterbuilder/hitpoints';
 import buildclass from '@/components/tools/characterbuilder/buildclass';
+import skills from '@/components/tools/characterbuilder/skills';
+import combat from '@/components/tools/characterbuilder/combat';
+import equipment from '@/components/tools/characterbuilder/equipment';
+import loadsave from '@/components/tools/characterbuilder/loadsave';
 // import test from '@/tests/unit/charbuilder.test.js';
 
 export default {
@@ -14,36 +18,24 @@ export default {
     initiative,
     appearance,
     hitpoints,
-    buildclass
+    buildclass,
+    skills,
+    combat,
+    equipment,
+    loadsave
   },
   computed: {
     ...mapGetters({
       mobile: 'isMobile',
-      equipment: 'allEquipment',
       spells: 'allSpells',
       feats: 'allFeats',
-      googletoken: 'getGoogleToken',
-      token: 'getUserInfo',
-      loggedin: 'isLoggedIn',
       character: 'getCharacter',
-      totalGold: "totalGold",
-      profbonus: 'profbonus',
-      getStatTotal: 'getStatTotal',
-      getStatMod: 'getStatMod',
-      getSaveMod: 'getSaveMod',
       getSaveDC: 'getSaveDC',
       getAttBonus: 'getAttBonus',
-      getSkillMod: 'getSkillMod',
-      getHPTotal: 'getHPTotal',
       pointbuy: "pointbuy",
       getSpeedStat: "getSpeedStat",
       getAttackBonus: "getAttackBonus",
       getAttackDamageBonus: "getAttackDamageBonus",
-      armorac: "armorac",
-      accalc: "accalc",
-      equipmentContainers: "equipmentContainers",
-      carryWeight: "carryWeight",
-      carryMax: "carryMax",
       slots: "getSlots",
       warlockSlots: "warlockSlots",
       warlockSlotLevel: "warlockSlotLevel",
@@ -139,20 +131,7 @@ export default {
   data () {
     return {
       buildHide: false,
-      comp: this,
-      ctypes: [
-        { name: "Carried/Worn", capacity: 9999, weightCounts: true, weight: 0 },
-        { name: "Backpack", capacity: 30, weightCounts: true, weight: 5 },
-        { name: "Pouch", capacity: 6, weightCounts: true, weight: 1 },
-        { name: "Sack", capacity: 30, weightCounts: true, weight: 0.5 },
-        { name: "Chest", capacity: 300, weightCounts: true, weight: 25 },
-        { name: "Bag of Holding", capacity: 500, weightCounts: false, weight: 15 },
-        { name: "Heward's Handy Haversack", capacity: 120, weightCounts: false, weight: 5 }
-      ],
-      containModal: false,
-      newcontain: { name: "Backpack", capacity: 0, weightCounts: true, weight: 0 },
       attackmodal: false,
-      filelist: [],
       preparedonly: false,
       classfilter: "all",
       levelfilter: "all",
@@ -160,18 +139,13 @@ export default {
       selspell: {},
       selspellclass: "",
       newattack: { name: "", stat: 0, bonus: 0, addstat: false, damage: "", range: "", type: "", dtype: "", edit: false, damagebonus: 0, prof: true, damage2: "", dtype2: "" },
-      armormodal: false,
-      equipModal: false,
-      newarmor: { name: "", type: "", ac: 0, edit: false },
       newfeature: { name: "", description: "", show: false },
       newFeatureModal: false,
       spellModal: false,
       spellDetailModal: false,
       detailspell: { level: "cantrip", description: "", tags: [] },
       displayLevel: "cantrip",
-      blankchar: {},
-      characters: [],
-      newequip: { name: "", weight: 0, quantity: 1, attunement: false, edit: false, container: 0 }
+      blankchar: {}
     };
   },
   filters: {
@@ -182,27 +156,11 @@ export default {
   },
   methods: {
     ...mapActions({
-      getDriveFiles: "getDriveFiles",
-      loadFromDrive: "loadFromDrive",
-      saveToDrive: "saveToDrive",
-      getFromServer: "getFromServer",
-      loadChar: "loadChar",
-      updateToServer: "updateToServer",
-      newToServer: "newToServer",
-      deleteFromServer: "deleteFromServer",
-      setRaceDefaults: "setRaceDefaults",
       addInjury: "addInjury",
       removeInjury: "removeInjury",
       removeAttack: "removeAttack",
       removeArmor: "removeArmor",
-      removeEquipment: "removeEquipment",
-      removeContainer: "removeContainer",
       castSpell: "castSpell",
-      shortrest: "shortrest",
-      longrest: "longrest",
-      saveCharacter: "saveCharacter",
-      loadCharacter: "loadCharacter",
-      resetCharacter: "resetCharacter",
       rollStats: "rollStats"
     }),
     addAttack() {
@@ -210,28 +168,12 @@ export default {
       this.newattack = { name: "", stat: 0, bonus: 0, addstat: 0, damage: "", range: "", type: "", dtype: "", edit: false, damagebonus: 0, prof: true, damage2: "", dtype2: "" };
       this.attackmodal = false;
     },
-    addArmor() {
-      this.character.armors.push(this.newarmor);
-      this.newarmor = { name: "", type: "", ac: 0, edit: false };
-      this.armormodal = false;
-    },
     log(val) {
       console.log(val);
     },
     setval(object, attribute, value) {
       object[attribute] = value;
       this.$forceUpdate();
-    },
-    addEquipment() {
-      this.character.equipment.push(this.newequip);
-      this.newequip = { name: "", weight: 0, quantity: 1, attunement: false, edit: false, container: this.character.containers[0].id };
-      this.equipModal = false;
-    },
-    addContainer() {
-      var id = Date.now();
-      this.character.containers.push({ ...this.newcontain, id: id });
-      this.newcontain = { name: "", capacity: 0, weightCounts: true, weight: 0 };
-      this.containModal = false;
     },
     spellDetail(spell) {
       this.detailspell = spell;
@@ -254,13 +196,6 @@ export default {
         }
         this.spellModal = false;
       }
-    },
-    charlevel(character) {
-      var level = 0;
-      character.charclasses.forEach((a) => {
-        level += Number(a.level);
-      });
-      return level;
     },
     addFeature() {
       this.character.features.push(this.newfeature);
@@ -434,7 +369,6 @@ export default {
     }
   },
   mounted () {
-    this.newequip.container = this.character.containers[0];
     if (process.env.NODE_ENV === 'development') {
       // test.tests(this);
       // this.reset();

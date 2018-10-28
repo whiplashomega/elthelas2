@@ -15,212 +15,17 @@
                 <initiative />
                 <!-- HP -->
                 <hitpoints />
-                <!-- Hit Dice -->
-                <div class="row">
-                  <div class="col">
-                    <div class="charsheet-static">
-                      Hit Dice<br />
-                      <div v-for="cc in character.charclasses" v-bind:key="cc.thisclass.name">
-                        <input type="number" class="charsheet-num" v-model="cc.hitdice" /> / {{cc.level}}d{{cc.thisclass.hitdie}}
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
             <div class="row">
               <!-- skills -->
               <div class="col-7">
-                <table class="abilitytable">
-                  <thead>
-                    <tr><th>Skill</th><th>Prof?</th><th>Mod</th><th>Magic</th></tr>
-                  </thead>
-                  <tbody>
-                    <tr v-for="skill in character.skills" v-bind:key="skill.name">
-                      <th>{{skill.name}}</th>
-                      <td>
-                        <select v-model="skill.prof" class="charsheet-num">
-                          <option :value="0">No</option>
-                          <option :value="0.5">Half</option>
-                          <option :value="1">Yes</option>
-                          <option :value="2">Exp</option>
-                        </select>
-                      </td>
-                      <td><span v-if="getSkillMod(skill) > -1">+</span>{{getSkillMod(skill)}}</td>
-                      <td><input type="number" class="charsheet-num" v-model="skill.magic" /></td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div class="charsheet-static">
-                  <h5>Proficiencies and Languages</h5>
-                  <textarea v-model="character.proficiencies" class="charsheet-textarea smalltext" id="profbox"></textarea>
-                </div>
+                <skills />
               </div>
               <div class="col-5">
-                <div class="row">
-                  <!-- AC -->
-                  <div class="col-6">
-                    <div class="charsheet-static center">
-                      AC<br />{{accalc}}
-                    </div>
-                  </div>
-                  <!-- Proficiency -->
-                  <div class="col-6">
-                    <div class="charsheet-static center">
-                      Prof<br /><span v-if="profbonus > -1">+</span>{{profbonus}}
-                    </div>
-                  </div>
-                </div>
-                <!-- Speed -->
-                <div class="row">
-                  <div class="col">
-                    <div class="charsheet-static">
-                      Speed: {{getSpeedStat(0)}} ft<br />
-                      Fly: {{getSpeedStat(1)}} ft<br />
-                      Climb: {{getSpeedStat(2)}} ft<br />
-                      Swim: {{getSpeedStat(3)}} ft<br />
-                      Burrow: {{getSpeedStat(4)}} ft
-                    </div>
-                  </div>
-                </div>
-                <!-- Armor -->
-                <div class="row">
-                  <div class="col">
-                    <div class="charsheet-static" id="armorbox">
-                      <h4>Armor</h4>
-                      <div class="smalltext" v-for="(armor, index) in character.armors" v-bind:key="index">
-                        {{ armor.name }}, {{armor.type}}, AC {{armorac(armor)}} <input type="checkbox" v-model="armor.equipped" />
-                        <button type="button" class="print-hide btn-symbol" @click="armor.edit = true">&#9998;</button>
-                        <button type="button" @click="removeArmor(index)" class="print-hide btn btn-sm btn-danger">X</button>
-                        <b-modal v-model="armor.edit">
-                          Name:
-                          <input type="text" class="form-control" v-model="armor.name" />
-                          Type:
-                          <select v-model="armor.type" class="form-control">
-                            <option>Unarmored Bonus</option>
-                            <option>Light Armor</option>
-                            <option>Medium Armor</option>
-                            <option>Heavy Armor</option>
-                            <option>Shield</option>
-                          </select>
-                          <div v-if="armor.type==='Unarmored Bonus'">
-                            Unarmored Bonus Stat
-                            <select v-model="armor.unarmoredstat" class="form-control">
-                              <option :value="0">Strength</option>
-                              <option :value="1">Dexterity</option>
-                              <option :value="2">Constitution</option>
-                              <option :value="3">Intelligence</option>
-                              <option :value="4">Wisdom</option>
-                              <option :value="5">Charisma</option>
-                            </select>
-                          </div>
-                          AC:
-                          <input type="number" v-model="armor.ac" class="form-control" />
-                        </b-modal>
-                      </div>
-                      <button type="button" @click="armormodal = true" class="btn btn-sm btn-primary print-hide">+</button>
-                      <b-modal v-model="armormodal" @ok="addArmor()">
-                        Name:
-                        <input type="text" class="form-control" v-model="newarmor.name" />
-                        Type:
-                        <select v-model="newarmor.type" class="form-control">
-                          <option>Unarmored Bonus</option>
-                          <option>Light Armor</option>
-                          <option>Medium Armor</option>
-                          <option>Heavy Armor</option>
-                          <option>Shield</option>
-                        </select>
-                        <div v-if="newarmor.type==='Unarmored Bonus'">
-                          Unarmored Bonus Stat
-                          <select v-model="newarmor.unarmoredstat" class="form-control">
-                            <option :value="0">Strength</option>
-                            <option :value="1">Dexterity</option>
-                            <option :value="2">Constitution</option>
-                            <option :value="3">Intelligence</option>
-                            <option :value="4">Wisdom</option>
-                            <option :value="5">Charisma</option>
-                          </select>
-                        </div>
-                        AC:
-                        <input type="number" v-model="newarmor.ac" class="form-control" />
-                      </b-modal>
-                    </div>
-                  </div>
-                </div>
+                <combat />
                 <!-- Equipment -->
-                <div class="row">
-                  <div class="col">
-                    <div class="charsheet-static" id="equipmentbox">
-                      <h4>Equipment</h4>
-                      <div v-for="container in equipmentContainers" v-bind:key="container.name">
-                        <h4 class="smalltext">
-                          {{container.name}} <span class="smalltext">{{container.contains}} / {{container.capacity}} lbs <input type="button" class="btn btn-danger btn-sm" value="X" @click="removeContainer(container.container)" /></span>
-                        </h4>
-                        <div v-for="(item, index) in container.equipment" v-bind:key="index" class="smalltext">
-                          <button type="button" class="print-hide btn-symbol float-left" @click="item.edit = true">&#9998;</button>
-                          {{ item.name }} <input type="number" class="charsheet-num" v-model="item.quantity" /> <span class="float-right">{{item.weight}} lbs</span><br />
-                          <b-modal v-model="item.edit" title="Edit Equipment">
-                            Name
-                            <input type="text" class="form-control" v-model="item.name" />
-                            Weight
-                            <input type="number" class="form-control" v-model="item.weight" />
-                            Quantity
-                            <input type="number" class="form-control" v-model="item.quantity" /><br />
-                            <input type="checkbox" v-model="item.attunement" /> Attunement<br />
-                            Container
-                            <select class="form-control" v-model="item.container" @change="item.edit = false;">
-                              <option v-for="container in character.containers" v-bind:key="container.id" :value="container.id">{{container.name}}</option>
-                            </select><br />
-                            <button type="button" class="btn btn-danger print-hide" @click="removeEquipment(index)">Delete</button>
-                          </b-modal>
-                        </div>
-                      </div>
-                      <button type="button" class="btn btn-sm btn-primary print-hide" @click="equipModal = true">+Equipment</button>
-                      <button type="button" class="btn btn-sm btn-primary print-hide" @click="containModal = true">+Container</button>
-                      <b-modal v-model="equipModal" title="Add Equipment" @ok="addEquipment()">
-                        Name
-                        <input type="text" class="form-control" v-model="newequip.name" />
-                        Weight
-                        <input type="number" class="form-control" v-model="newequip.weight" />
-                        Quantity
-                        <input type="number" class="form-control" v-model="newequip.quantity" />
-                        <input type="checkbox" v-model="newequip.attunement" /> Attunement<br />
-                        Container
-                          <select class="form-control" v-model="newequip.container">
-                            <option v-for="container in character.containers" v-bind:key="container.id" :value="container.id">{{container.name}}</option>
-                          </select>
-                      </b-modal>
-                      <b-modal v-model="containModal" title="Add Container" @ok="addContainer()">
-                        Name
-                        <input type="text" class="form-control" v-model="newcontain.name" />
-                        Capacity
-                        <input type="number" class="form-control" v-model="newcontain.capacity" /><br />
-                        Weight Counts
-                        <input type="checkbox" v-model="newcontain.weightCounts" /><br />
-                        Select Predefined Type
-                        <select v-model="newcontain" class="form-control">
-                          <option v-for="c in ctypes" :value="c" v-bind:key="c.name">{{c.name}}</option>
-                        </select>
-                      </b-modal>
-                      <table class="table table-sm smalltext">
-                        <tbody>
-                          <tr>
-                            <th>CP</th><td><input type="number" class="charsheet-num" v-model="character.cp" /></td>
-                            <th>GP</th><td><input type="number" class="charsheet-num" v-model="character.gp" /></td>
-                          </tr>
-                          <tr>
-                            <th>SP</th><td><input type="number" class="charsheet-num" v-model="character.sp" /></td>
-                            <th>PP</th><td><input type="number" class="charsheet-num" v-model="character.pp" /></td>
-                          </tr>
-                          <tr><th colspan="2">Gems (value)</th><td colspan="2"><input type="number" class="charsheet-num" v-model="character.gems" /></td></tr>
-                          <tr><th colspan="2">Art (value)</th><td colspan="2"><input type="number" class="charsheet-num" v-model="character.art" /></td></tr>
-                        </tbody>
-                      </table>
-                      <span class="smalltext">Carry Weight: {{ carryWeight }} / {{ carryMax }}</span><br />
-                      <span class="smalltext">Total Gold: {{ totalGold }}</span>
-                    </div>
-                  </div>
-                </div>
+                <equipment />
               </div>
             </div>
           </div>
@@ -726,42 +531,7 @@
         </div>
       </div>
       <div class="col-4 print-hide" v-if="!buildHide">
-        <div class="row">
-          <h4 class="col-12">Load/Save From Disk</h4>
-          <div class="btn-group col-6">
-            <input type="button" value="Save" @click="saveCharacter()" class="btn btn-primary" />
-            <input type="button" value="Load" @click="loadCharacter()" class="btn btn-success" />
-            <input type="button" value="Reset" @click="resetCharacter()" class="btn btn-warning" />
-          </div>
-          <input type="file" id="fileload" class="col-6" />
-        </div>
-        <div class="row" v-if="loggedin">
-          <h4 class="col-12">Load/Save From Server</h4>
-          <div class="btn-group col-12">
-            <input type="button" v-if="character._id" value="Save" @click="updateToServer(comp)" class="btn btn-primary" />
-            <input type="button" value="Save New" @click="newToServer(comp)" class="btn btn-primary" />
-            <input type="button" value="Load" @click="getFromServer(comp)" class="btn btn-success" />
-          </div>
-        </div>
-        <div class="row" v-if="googletoken">
-          <h4 class="col-12">Load/Save From Google</h4>
-          <div class="col" style="margin-top:15px;">
-            <img src="https://developers.google.com/drive/images/drive_icon.png" alt="Google Drive" style="width:38px;height:38px;">
-            <div class="btn-group">
-              <button type="button" @click="getDriveFiles()" class="btn btn-primary">Load</button>
-              <button type="button" @click="saveToDrive()" class="btn btn-success">Save</button>
-            </div>
-          </div>
-        </div>
-        <div class="row" v-else>
-          <p class="col">Login to Google from the Menu to enable load and save from drive.</p>
-        </div>
-        <div class="row" style="margin-top: 10px;">
-          <div class="btn-group col-12">
-            <button class="btn btn-primary" @click="shortrest()">Short Rest</button>
-            <button class="btn btn-success" @click="longrest()">Long Rest</button>
-          </div>
-        </div>
+        <loadsave />
         <h2>Build</h2>
         <buildclass />
         <div class="row">
@@ -959,135 +729,12 @@
           </div>
         </b-tab>
         <b-tab title="Skills">
-          <table class="abilitytable">
-            <thead>
-              <tr><th>Skill</th><th>Prof?</th><th>Mod</th><th>Magic</th></tr>
-            </thead>
-            <tbody>
-              <tr v-for="skill in character.skills" v-bind:key="skill.name">
-                <th>{{skill.name}}</th>
-                <td>
-                  <select v-model="skill.prof" class="charsheet-num">
-                    <option :value="0">No</option>
-                    <option :value="0.5">Half</option>
-                    <option :value="1">Yes</option>
-                    <option :value="2">Exp</option>
-                  </select>
-                </td>
-                <td><span v-if="getSkillMod(skill) > -1">+</span>{{getSkillMod(skill)}}</td>
-                <td><input type="number" class="charsheet-num" v-model="skill.magic" /></td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="charsheet-static">
-            <h5>Proficiencies and Languages</h5>
-            <textarea v-model="character.proficiencies" class="charsheet-textarea smalltext" id="profbox"></textarea>
-          </div>
+          <skills />
         </b-tab>
         <b-tab title="Combat">
-          <hitpoints />
           <initiative />
-          <!-- Hit Dice -->
-          <div class="row">
-            <div class="col">
-              <div class="charsheet-static">
-                Hit Dice<br />
-                <div v-for="cc in character.charclasses" v-bind:key="cc.thisclass.name">
-                  <input type="number" class="charsheet-num" v-model="cc.hitdice" /> / {{cc.level}}d{{cc.thisclass.hitdie}}
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <!-- AC -->
-            <div class="col-6">
-              <div class="charsheet-static center">
-                AC<br />{{accalc}}
-              </div>
-            </div>
-            <!-- Proficiency -->
-            <div class="col-6">
-              <div class="charsheet-static center">
-                Prof<br /><span v-if="profbonus > -1">+</span>{{profbonus}}
-              </div>
-            </div>
-          </div>
-          <!-- Speed -->
-          <div class="row">
-            <div class="col">
-              <div class="charsheet-static">
-                Speed: {{getSpeedStat(0)}} ft<br />
-                Fly: {{getSpeedStat(1)}} ft<br />
-                Climb: {{getSpeedStat(2)}} ft<br />
-                Swim: {{getSpeedStat(3)}} ft<br />
-                Burrow: {{getSpeedStat(4)}} ft
-              </div>
-            </div>
-          </div>
-          <!-- Armor -->
-          <div class="row">
-            <div class="col">
-              <div class="charsheet-static">
-                <h4>Armor</h4>
-                <div class="smalltext" v-for="(armor, index) in character.armors" v-bind:key="index">
-                  {{ armor.name }}, {{armor.type}}, AC {{armorac(armor)}} <input type="checkbox" v-model="armor.equipped" />
-                  <button type="button" class="print-hide btn-symbol" @click="armor.edit = true">&#9998;</button>
-                  <button type="button" @click="removeArmor(index)" class="print-hide btn btn-sm btn-danger">X</button>
-                  <b-modal v-model="armor.edit">
-                    Name:
-                    <input type="text" class="form-control" v-model="armor.name" />
-                    Type:
-                    <select v-model="armor.type" class="form-control">
-                      <option>Unarmored Bonus</option>
-                      <option>Light Armor</option>
-                      <option>Medium Armor</option>
-                      <option>Heavy Armor</option>
-                      <option>Shield</option>
-                    </select>
-                    <div v-if="armor.type==='Unarmored Bonus'">
-                      Unarmored Bonus Stat
-                      <select v-model="armor.unarmoredstat" class="form-control">
-                        <option :value="0">Strength</option>
-                        <option :value="1">Dexterity</option>
-                        <option :value="2">Constitution</option>
-                        <option :value="3">Intelligence</option>
-                        <option :value="4">Wisdom</option>
-                        <option :value="5">Charisma</option>
-                      </select>
-                    </div>
-                    <span v-if="armor.type === 'Unarmored Bonus'">Additional Bonus </span>AC:
-                    <input type="number" v-model="armor.ac" class="form-control" />
-                  </b-modal>
-                </div>
-                <button type="button" @click="armormodal = true" class="btn btn-sm btn-primary print-hide">+</button>
-                <b-modal v-model="armormodal" @ok="addArmor()">
-                  Name:
-                  <input type="text" class="form-control" v-model="newarmor.name" />
-                  Type:
-                  <select v-model="newarmor.type" class="form-control">
-                    <option>Unarmored Bonus</option>
-                    <option>Light Armor</option>
-                    <option>Medium Armor</option>
-                    <option>Heavy Armor</option>
-                    <option>Shield</option>
-                  </select>
-                  <div v-if="newarmor.type==='Unarmored Bonus'">
-                    Unarmored Bonus Stat
-                    <select v-model="armor.unarmoredstat" class="form-control">
-                      <option :value="0">Strength</option>
-                      <option :value="1">Dexterity</option>
-                      <option :value="2">Constitution</option>
-                      <option :value="3">Intelligence</option>
-                      <option :value="4">Wisdom</option>
-                      <option :value="5">Charisma</option>
-                    </select>
-                  </div>
-                  AC:
-                  <input type="number" v-model="newarmor.ac" class="form-control" />
-                </b-modal>
-              </div>
-            </div>
-          </div>
+          <hitpoints />
+          <combat />
           <!-- Attacks -->
           <div class="charsheet-static">
             <h4>Attacks</h4>
@@ -1329,75 +976,7 @@
           </div>
         </b-tab>
         <b-tab title="Equipment">
-          <div class="charsheet-static" id="equipmentbox">
-            <h4>Equipment</h4>
-            <div v-for="container in equipmentContainers" v-bind:key="container.name">
-              <h4>
-                {{container.name}} <span class="smalltext">{{container.contains}} / {{container.capacity}} lbs <input type="button" class="btn btn-danger btn-sm" value="X" @click="removeContainer(container.container)" /></span>
-              </h4>
-              <div v-for="(item, index) in container.equipment" v-bind:key="index" class="smalltext">
-                <button type="button" class="print-hide btn-symbol float-left" @click="item.edit = true">&#9998;</button>
-                {{ item.name }} <input type="number" class="charsheet-num" v-model="item.quantity" /> <span class="float-right">{{item.weight}} lbs</span><br />
-                <b-modal v-model="item.edit" title="Edit Equipment">
-                  Name
-                  <input type="text" class="form-control" v-model="item.name" />
-                  Weight
-                  <input type="number" class="form-control" v-model="item.weight" />
-                  Quantity
-                  <input type="number" class="form-control" v-model="item.quantity" /><br />
-                  <input type="checkbox" v-model="item.attunement" /> Attunement<br />
-                  Container
-                  <select class="form-control" v-model="item.container" @change="item.edit = false;">
-                    <option v-for="container in character.containers" v-bind:key="container.id" :value="container.id">{{container.name}}</option>
-                  </select><br />
-                  <button type="button" class="btn btn-danger print-hide" @click="removeEquipment(index)">Delete</button>
-                </b-modal>
-              </div>
-            </div>
-            <button type="button" class="btn btn-sm btn-primary print-hide" @click="equipModal = true">+Equipment</button>
-            <button type="button" class="btn btn-sm btn-primary print-hide" @click="containModal = true">+Container</button>
-            <b-modal v-model="equipModal" title="Add Equipment" @ok="addEquipment()">
-              Name
-              <input type="text" class="form-control" v-model="newequip.name" />
-              Weight
-              <input type="number" class="form-control" v-model="newequip.weight" />
-              Quantity
-              <input type="number" class="form-control" v-model="newequip.quantity" />
-              <input type="checkbox" v-model="newequip.attunement" /> Attunement<br />
-              Container
-                <select class="form-control" v-model="newequip.container">
-                  <option v-for="container in character.containers" v-bind:key="container.id" :value="container.id">{{container.name}}</option>
-                </select>
-            </b-modal>
-            <b-modal v-model="containModal" title="Add Container" @ok="addContainer()">
-              Name
-              <input type="text" class="form-control" v-model="newcontain.name" />
-              Capacity
-              <input type="number" class="form-control" v-model="newcontain.capacity" /><br />
-              Weight Counts
-              <input type="checkbox" v-model="newcontain.weightCounts" /><br />
-              Select Predefined Type
-              <select v-model="newcontain" class="form-control">
-                <option v-for="c in ctypes" :value="c" v-bind:key="c.name">{{c.name}}</option>
-              </select>
-            </b-modal>
-            <table class="table table-sm smalltext">
-              <tbody>
-                <tr>
-                  <th>CP</th><td><input type="number" class="charsheet-num" v-model="character.cp" /></td>
-                  <th>GP</th><td><input type="number" class="charsheet-num" v-model="character.gp" /></td>
-                </tr>
-                <tr>
-                  <th>SP</th><td><input type="number" class="charsheet-num" v-model="character.sp" /></td>
-                  <th>PP</th><td><input type="number" class="charsheet-num" v-model="character.pp" /></td>
-                </tr>
-                <tr><th colspan="2">Gems (value)</th><td colspan="2"><input type="number" class="charsheet-num" v-model="character.gems" /></td></tr>
-                <tr><th colspan="2">Art (value)</th><td colspan="2"><input type="number" class="charsheet-num" v-model="character.art" /></td></tr>
-              </tbody>
-            </table>
-            <span class="smalltext">Carry Weight: {{ carryWeight }} / {{ carryMax }}</span><br />
-            <span class="smalltext">Total Gold: {{ totalGold }}</span>
-          </div>
+          <equipment />
         </b-tab>
         <b-tab title="Features">
           <div class="charsheet-static">
@@ -1564,43 +1143,7 @@
           </div>
         </b-tab>
         <b-tab title="Build">
-          <div class="row">
-            <h4 class="col-12">Load/Save From Disk</h4>
-            <div class="btn-group col-12">
-              <input type="button" value="Save" @click="saveCharacter()" class="btn btn-primary" />
-              <input type="button" value="Load" @click="loadCharacter()" class="btn btn-success" />
-              <input type="button" value="Reset" @click="resetCharacter()" class="btn btn-warning" />
-            </div>
-            <input type="file" id="fileload" class="col-12" />
-          </div>
-          <div class="row" v-if="loggedin">
-            <h4 class="col-12">Load/Save From Server</h4>
-            <div class="btn-group col-12">
-              <input type="button" v-if="character._id" value="Save" @click="updateToServer()" class="btn btn-primary" />
-              <input type="button" value="Save New" @click="newToServer()" class="btn btn-primary" />
-              <input type="button" value="Load" @click="getFromServer()" class="btn btn-success" />
-            </div>
-          </div>
-          <div class="row" v-if="googletoken">
-            <h4 class="col-12">Load/Save From Google</h4>
-            <div class="col" style="margin-top:15px;">
-              <img src="https://developers.google.com/drive/images/drive_icon.png" alt="Google Drive" style="width:38px;height:38px;">
-              <div class="btn-group">
-                <button type="button" @click="getDriveFiles()" class="btn btn-primary">Load</button>
-                <button type="button" @click="saveToDrive()" class="btn btn-success">Save</button>
-              </div>
-            </div>
-          </div>
-          <div class="row" v-else>
-            <h4 class="col-12">Load/Save From Google</h4>
-            <p class="col">Login to Google from the Menu to enable load and save from drive.</p>
-          </div>
-          <div class="row" style="margin-top: 10px;">
-            <div class="btn-group col-12">
-              <button class="btn btn-primary" @click="shortrest()">Short Rest</button>
-              <button class="btn btn-success" @click="longrest()">Long Rest</button>
-            </div>
-          </div>
+          <loadsave />
           <div class="row">
             <h4 class="col-12">Various Bonuses</h4>
             <div class="col-3">
@@ -1723,32 +1266,6 @@
         </b-tab>
       </b-tabs>
     </div>
-    <b-modal id="drivemodal" title="Load File from Google Drive">
-      <table class="table table-striped">
-        <tr>
-          <th>File Name</th><th>Modified Date</th>
-        </tr>
-        <tr v-for="(file, index) in filelist" v-bind:key="index">
-          <td><span class="clickable" @click="loadFromDrive(file.id)">{{file.name}}</span></td>
-          <td>{{file.modifiedTime | date}}</td>
-        </tr>
-      </table>
-    </b-modal>
-    <b-modal id="servermodal" title="Load File from Server">
-      <table class="table table-striped">
-        <tr>
-          <th>Character Name</th><th>Level</th><th>-</th>
-        </tr>
-        <tr v-for="character in characters" v-bind:key="character._id">
-          <td><span class="clickable" @click="loadChar({ character: character, comp: comp })">{{character.name}}</span></td><td>{{charlevel(character)}}</td>
-          <td><input type="button" @click="deleteFromServer({ character: character, comp: comp })" class="btn btn-danger" value="X" /></td>
-        </tr>
-      </table>
-    </b-modal>
-    <b-modal id="loading"
-      no-close-on-backdrop no-close-on-esc hide-header hide-footer>
-      <img src="https://elthelas-images.herokuapp.com/giphy.gif" alt="Loading" />
-    </b-modal>
     <b-modal v-model="spellModal" title="Add Spell" class="modal-lg" @ok="addSpell(selspell)">
       Filter by Text
       <input type="text" class="form-control" v-model="spellfilter" />
