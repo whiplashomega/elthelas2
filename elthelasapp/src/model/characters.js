@@ -158,6 +158,7 @@ export default {
             }
           }
         }
+        return b;
       }, 10 + getters.getStatMod(1));
       let shield = shields.reduce((a, b) => {
         return b + a;

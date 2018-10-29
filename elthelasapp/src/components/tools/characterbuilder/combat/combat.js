@@ -5,6 +5,7 @@ export default {
     ...mapGetters({
       character: "getCharacter",
       accalc: "accalc",
+      armorac: "armorac",
       profbonus: "profbonus",
       getSpeedStat: "getSpeedStat"
     })
