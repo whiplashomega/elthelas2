@@ -14,6 +14,7 @@ import features from '@/components/tools/characterbuilder/features';
 import spells from '@/components/tools/characterbuilder/spells';
 import bonus from '@/components/tools/characterbuilder/bonus';
 import resources from '@/components/tools/characterbuilder/resources';
+import fluff from '@/components/tools/characterbuilder/fluff';
 // import test from '@/tests/unit/charbuilder.test.js';
 
 export default {
@@ -32,7 +33,8 @@ export default {
     features,
     spells,
     bonus,
-    resources
+    resources,
+    fluff
   },
   computed: {
     ...mapGetters({
@@ -59,12 +61,6 @@ export default {
     }),
     log(val) {
       console.log(val);
-    }
-  },
-  mounted () {
-    if (process.env.NODE_ENV === 'development') {
-      // test.tests(this);
-      // this.reset();
     }
   }
 };

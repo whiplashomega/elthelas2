@@ -30,14 +30,8 @@ export default {
       loadCharacter: "loadCharacter",
       shortrest: "shortrest",
       longrest: "longrest",
-      resetCharacter: "resetCharacter"
-    }),
-    charlevel(character) {
-      var level = 0;
-      character.charclasses.forEach((a) => {
-        level += Number(a.level);
-      });
-      return level;
-    }
+      resetCharacter: "resetCharacter",
+      charlevel: "charlevel"
+    })
   }
 };

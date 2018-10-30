@@ -130,6 +130,13 @@ export default {
       }
       return ac;
     },
+    charlevel: () => (character) => {
+      var level = 0;
+      character.charclasses.forEach((a) => {
+        level += Number(a.level);
+      });
+      return level;
+    },
     accalc: (state, getters) => {
       var shields = state.currentCharacter.armors.filter((a) => {
         return a.type === "Shield";

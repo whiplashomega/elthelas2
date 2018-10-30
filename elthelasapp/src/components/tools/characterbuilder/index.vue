@@ -60,54 +60,7 @@
         </div>
         <!-- Fluff Details -->
         <appearance />
-        <div class="row">
-          <div class="col">
-            <div class="charsheet-static">
-              <h5>Allies and Organizations</h5>
-              <textarea v-model="character.allies" class="charsheet-textarea smalltext"></textarea>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="charsheet-static">
-              <h5>Family</h5>
-              <textarea v-model="character.family" class="charsheet-textarea smalltext"></textarea>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="charsheet-static">
-              <h5>Backstory</h5>
-              <textarea v-model="character.backstory" class="charsheet-textarea smalltext"></textarea>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="charsheet-static">
-              <h5>Bond</h5>
-              <textarea v-model="character.bond" class="charsheet-textarea smalltext"></textarea>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="charsheet-static">
-              <h5>Personality</h5>
-              <textarea v-model="character.personality" class="charsheet-textarea smalltext"></textarea>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="charsheet-static">
-              <h5>Notes</h5>
-              <textarea v-model="character.notes" class="charsheet-textarea smalltext"></textarea>
-            </div>
-          </div>
-        </div>
+        <fluff />
       </div>
       <div class="col-4 print-hide" v-if="!buildHide">
         <loadsave />
@@ -196,7 +149,6 @@
           <initiative />
           <hitpoints />
           <combat />
-          <!-- Attacks -->
           <attacks />
         </b-tab>
         <b-tab title="Spells">
@@ -207,30 +159,7 @@
           </div>
         </b-tab>
         <b-tab title="Resources">
-          <div class="row">
-            <div class="col-12">
-              <div class="charsheet-static smalltext">
-                <h4>Various Resources</h4>
-                <div class="row" v-for="(resource, index) in character.resources"
-                  v-bind:key="index">
-                  <div class="col-5">
-                    <input type="text" v-model="resource.name" class="charsheet-text" />
-                  </div>
-                  <input type="number" class="charsheet-num" v-model="resource.current" /> /
-                  <input type="number" class="charsheet-num" v-model="resource.max" />
-                  <select v-model="resource.recharge" class="charsheet-text col-3">
-                    <option value="never">Never</option>
-                    <option value="shortrest">Short Rest</option>
-                    <option value="longrest">Long Rest</option>
-                  </select>
-                  <button class="btn btn-sm btn-danger print-hide" @click="removeResource(index)">X</button>
-                </div>
-                <button type="button" class="btn btn-sm print-hide btn-primary"
-                  @click="addResource()">+</button>
-                <button type="button" class="btn btn-sm btn-success print-hide" @click="populateResources()">Populate from Classes</button>
-              </div>
-            </div>
-          </div>
+          <resources />
         </b-tab>
         <b-tab title="Equipment">
           <equipment />
@@ -239,54 +168,7 @@
           <features />
         </b-tab>
         <b-tab title="Fluff">
-          <div class="row">
-            <div class="col">
-              <div class="charsheet-static">
-                <h5>Allies and Organizations</h5>
-                <textarea v-model="character.allies" class="charsheet-textarea smalltext"></textarea>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <div class="charsheet-static">
-                <h5>Family</h5>
-                <textarea v-model="character.family" class="charsheet-textarea smalltext"></textarea>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <div class="charsheet-static">
-                <h5>Backstory</h5>
-                <textarea v-model="character.backstory" class="charsheet-textarea smalltext"></textarea>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <div class="charsheet-static">
-                <h5>Bond</h5>
-                <textarea v-model="character.bond" class="charsheet-textarea smalltext"></textarea>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <div class="charsheet-static">
-                <h5>Personality</h5>
-                <textarea v-model="character.personality" class="charsheet-textarea smalltext"></textarea>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <div class="charsheet-static">
-                <h5>Notes</h5>
-                <textarea v-model="character.notes" class="charsheet-textarea smalltext"></textarea>
-              </div>
-            </div>
-          </div>
+          <fluff />
         </b-tab>
         <b-tab title="Build">
           <loadsave />

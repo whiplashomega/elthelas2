@@ -1,6 +1,5 @@
-import { mapGetters } from 'vuex';
+import { mapGetters, mapActions } from 'vuex';
 import marked from 'marked';
-import helpers from '@/helpers/helpers';
 
 const modalInfo = {
   name: "",
@@ -67,11 +66,34 @@ const crxptable = [
 ];
 
 export default {
-  computed: mapGetters({
-    creatures: "allCreatures",
-    token: 'getUserInfo',
-    loggedin: 'isLoggedIn'
-  }),
+  computed: {
+    ...mapGetters({
+      creatures: "allCreatures",
+      token: 'getUserInfo',
+      charlevel: "charlevel",
+      loggedin: 'isLoggedIn',
+      accalc: "accalc",
+      getSpeedStat: "getSpeedStat",
+      getStatTotal: "getStatTotal",
+      getStatMod: "getStatMod",
+      getSaveMod: "getSaveMod",
+      getSkillMod: "getSkillMod",
+      getHPTotal: "getHPTotal",
+      getAttackBonus: "getAttackBonus",
+      getAttackDamageBonus: "getAttackDamageBonus",
+      totalslots: "totalslots",
+      getInitMod: "getInitMod"
+    }),
+    encountercreaturesinit () {
+      return this.encountercreatures.sort((a, b) => {
+        if (a.init > b.init) {
+          return -1;
+        } else {
+          return 1;
+        }
+      });
+    }
+  },
   data () {
     return {
       characters: [],
@@ -98,10 +120,15 @@ export default {
       xpvalue: 0,
       terrain: 1,
       adjustedxpvalue: 0,
-      aoe: false
+      aoe: false,
+      comp: this
     };
   },
   methods: {
+    ...mapActions({
+      getFromServer: "getFromServer",
+      loadChar: "loadChar"
+    }),
     xpByCR (cr) {
       return crxptable.find((a) => {
         return a.cr === cr;
@@ -161,6 +188,10 @@ export default {
       creature.currenthp = creature.hp;
       creature.descr = marked(creature.description);
       creature.mini = "";
+      creature.initMod = creature.dexmod;
+      creature.advantage = false;
+      creature.disadvantage = false;
+      creature.init = 0;
       this.encountercreatures.push(creature);
       this.calculateDifficulty();
     },
@@ -173,54 +204,114 @@ export default {
       });
       this.calculateDifficulty();
     },
-    loadChar(character) {
-      this.encountercreatures.push({
-        id: this.nextid,
-        name: character.name,
-        size: "",
-        type: "humanoid",
-        subtype: "",
-        alignment: "",
-        acdesc: "",
-        speed: "",
-        str: "",
-        dex: "",
-        con: "",
-        int: "",
-        wis: "",
-        cha: "",
-        strmod: "",
-        dexmod: "",
-        conmod: "",
-        intmod: "",
-        wismod: "",
-        chamod: "",
-        saves: "",
-        skills: "",
-        senses: "",
-        damageresistances: "",
-        damageimmunities: "",
-        conditionimmunities: "",
-        languages: "",
-        cr: "",
-        descr: "",
-        mini: "",
-        currenthp: 0,
-        hpdesc: ""
-      });
-      this.$root.$emit('bv::hide::modal', 'servermodal');
+    createSkillsArray (character) {
+      return character.skills.reduce((a, b) => {
+        if (b.prof > 0) {
+          a.push("+" + this.getSkillMod(b) + " " + b.name);
+          return a;
+        } else {
+          return a;
+        }
+      }, []);
     },
-    getFromServer() {
-      if (this.loggedin) {
-        helpers.loading(this);
+    createDescription (character) {
+      let descr = character.attacks.reduce((red, att) => {
+        let attstring = "**" + att.name + ":** " + att.type + ", range " + att.range + ", ";
+        if (this.getAttackBonus(att) > -1) attstring += "+";
+        attstring += this.getAttackBonus(att) + " to hit (" + att.damage;
+        if (this.getAttackDamageBonus(att) > 0) attstring += " +" + this.getAttackDamageBonus(att);
+        else if (this.getAttackDamageBonus(att) < 0) attstring += " -" + this.getAttackDamageBonus(att);
+        attstring += " " + att.dtype + " damage ";
+        if (att.damage2 !== '') attstring += " + " + att.damage2 + " " + att.dtype2 + " damage";
+        return red + attstring + "\n\n";
+      }, "");
+      let reducer = (red, feat) => {
+        return red + "**" + feat.name + ":** " + feat.description + "\n\n";
+      };
+      descr = character.feats.reduce(reducer, descr);
+      descr = character.charclasses.reduce((red, cls) => {
+        red = cls.thisclass.features.reduce(reducer, red);
+        red = cls.selsubclass.features.reduce(reducer, red);
+        return red;
+      }, descr);
+      descr = character.race.traits.reduce(reducer, descr);
+      descr = character.features.reduce(reducer, descr);
+      let spells = "**Spells**\n\n";
+      for (let key in character.spells) {
+        if (character.spells[key].length > 0) {
+          spells += "**" + key + "(" + this.totalslots(key) + " slots):** " + character.spells[key].reduce((red, spell) => {
+            return red + spell.title + (spell.prepared ? "*" : "") + ", ";
+          }, "") + "\n\n";
+        }
       }
+      if (spells.length > 14) descr += spells;
+      return marked(descr);
     },
-    charlevel(character) {
-      var level = 0;
-      character.charclasses.forEach((a) => {
-        level += Number(a.level);
+    selCharacter(character) {
+      this.loadChar({ character: character, comp: this }).then(() => {
+        this.encountercreatures.push({
+          id: this.nextIndex,
+          name: character.name,
+          size: "medium",
+          type: "humanoid",
+          subtype: character.race.singular,
+          alignment: character.alignment,
+          acdesc: this.accalc,
+          speed: this.getSpeedStat(0) + " ft",
+          str: this.getStatTotal(0),
+          dex: this.getStatTotal(1),
+          con: this.getStatTotal(2),
+          int: this.getStatTotal(3),
+          wis: this.getStatTotal(4),
+          cha: this.getStatTotal(5),
+          strmod: this.getStatMod(0),
+          dexmod: this.getStatMod(1),
+          conmod: this.getStatMod(2),
+          intmod: this.getStatMod(3),
+          wismod: this.getStatMod(4),
+          chamod: this.getStatMod(5),
+          saves: "+" + this.getSaveMod(0) + " strength +" + this.getSaveMod(1) + " dexterity +" + this.getSaveMod(2) + " constitution +" + this.getSaveMod(3) + " intelligence +" + this.getSaveMod(4) + " wisdom +" + this.getSaveMod(5) + " charisma.",
+          skills: this.createSkillsArray(character),
+          senses: "",
+          damageresistances: "",
+          damageimmunities: "",
+          conditionimmunities: "",
+          languages: character.proficiencies,
+          cr: this.charlevel(character) - 1,
+          descr: this.createDescription(character),
+          mini: "",
+          currenthp: character.hpcurrent,
+          hpdesc: this.getHPTotal,
+          initMod: this.getInitMod,
+          advantage: false,
+          disadvantage: false,
+          init: 0
+        });
+        this.nextIndex++;
+        this.calculateDifficulty();
+        this.$root.$emit('bv::hide::modal', 'servermodal');
       });
-      return level;
+    },
+    roll () {
+      this.encountercreatures.forEach((character) => {
+        let roll1 = Number(character.initMod) + Math.floor(Math.random() * 20) + 1;
+        let roll2 = Number(character.initMod) + Math.floor(Math.random() * 20) + 1;
+        if (character.advantage && !character.disadvantage) {
+          if (roll1 > roll2) {
+            character.init = roll1;
+          } else {
+            character.init = roll2;
+          }
+        } else if (!character.advantage && character.disadvantage) {
+          if (roll1 < roll2) {
+            character.init = roll1;
+          } else {
+            character.init = roll2;
+          }
+        } else {
+          character.init = roll1;
+        }
+      });
     }
   },
   mounted () {

@@ -63,7 +63,7 @@
     </div>
   </div>
   <div>
-    <input type="button" @click="getFromServer()" value="Load Character" class="btn btn-success margin15" />
+    <input type="button" @click="getFromServer(comp)" value="Load Character" class="btn btn-success margin15" />
   </div>
   <div class="row" v-sortable="{ handle: '.handle' }">
     <div v-for="creature in encountercreatures" v-bind:key="creature.id" class="col-sm-3" >
@@ -136,13 +136,18 @@
     :sort-desc.sync="creaturestable.sortDesc">
     <template slot="name" slot-scope="row"><a href="#" @click.stop="addToEncounter(row.item, row.index, $event.target)">{{row.value}}</a></template>
   </b-table>
-  <div id="inithptracker">
-    <div v-for="creature in encountercreatures" v-bind:key="creature.id" class="form-inline form-row" >
+  <div id="inithptracker" class="row">
+    <div v-for="creature in encountercreaturesinit" v-bind:key="creature.id" class="form-inline form-row col-md-6" >
       {{ creature.name }}&nbsp;
-      <input type="text" class="form-control" placeholder="mini description" v-model="creature.mini" />&nbsp;
+      <input type="text" class="form-control" style="max-width: 150px;" placeholder="mini description" v-model="creature.mini" />&nbsp;
       <input type="number" v-model="creature.currenthp" style="max-width: 75px;" class="form-control" /> &nbsp;/ {{creature.hpdesc}}
+      Init: +{{ creature.initMod }}&nbsp;
+      <input type="number" v-model="creature.init" style="max-width: 75px;" class="form-control" />&nbsp;
+      <div class="ck-button"><label><input type="checkbox" v-model="creature.advantage" /><span>Adv</span></label></div>
+      <div class="ck-button"><label><input type="checkbox" v-model="creature.disadvantage" /><span>Dis</span></label></div>
       <button class="close" type="button" @click="removeCreature(creature)">&times;</button>
     </div>
+    <input type="button" @click="roll()" value="Roll Initiative" />
   </div>
   <b-modal id="servermodal" title="Load File from Server">
     <table class="table table-striped">
@@ -150,7 +155,7 @@
         <th>Character Name</th><th>Level</th><th>-</th>
       </tr>
       <tr v-for="character in characters" v-bind:key="character._id">
-        <td><span class="clickable" @click="loadChar(character)">{{character.name}}</span></td><td>{{charlevel(character)}}</td>
+        <td><span class="clickable" @click="selCharacter(character)">{{character.name}}</span></td><td>{{charlevel(character)}}</td>
         <td><input type="button" @click="deleteFromServer(character)" class="btn btn-danger" value="X" /></td>
       </tr>
     </table>
