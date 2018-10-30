@@ -25,7 +25,6 @@ import book4guide from '../components/tools/book4guide';
 import book4 from '../components/tools/book4';
 import book4menu from '../components/tools/book4menu';
 import charbuilder from '../components/tools/characterbuilder';
-import inittracker from '../components/tools/inittracker';
 import npcgen from '@/components/tools/npcgenerator';
 import feats from '@/components/options/feats';
 import privacy from '@/components/privacy';
