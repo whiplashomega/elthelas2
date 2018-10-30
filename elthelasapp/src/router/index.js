@@ -305,16 +305,6 @@ var router = new Router({
       }
     },
     {
-      name: "inittracker",
-      meta: {
-        title: "Initiative Tracker"
-      },
-      path: '/tools/inittracker',
-      components: {
-        default: inittracker
-      }
-    },
-    {
       name: "npcgen",
       meta: {
         title: "NPC Generator"
