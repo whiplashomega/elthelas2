@@ -1,51 +1,47 @@
 self.__precacheManifest = [
   {
-    "revision": "b58081e43f66a676a043cb400fe150e3",
-    "url": "/json/races.json"
-  },
-  {
-    "revision": "2c0c0b0008f1399bde41ecb582de658d",
-    "url": "/static/md/book4/theworld.md"
-  },
-  {
     "revision": "70de9259d70c18926185de5d60e42a0f",
     "url": "/json/spells.json"
-  },
-  {
-    "revision": "0d4e6a752139aa6467f8",
-    "url": "/css/chunk-vendors.fb7d2cbe.css"
-  },
-  {
-    "revision": "82a4fd3fe6368758827dc06e38e22f16",
-    "url": "/img/tl-icons.82a4fd3f.svg"
-  },
-  {
-    "revision": "b0f49cd26ba67885381b66e77665bf02",
-    "url": "/fonts/tl-icons.b0f49cd2.eot"
-  },
-  {
-    "revision": "1c1bfe463a8773c8b703389174dc4dd9",
-    "url": "/fonts/tl-icons.1c1bfe46.woff"
-  },
-  {
-    "revision": "8402c93e00aa667edeceebe3dcfde5fe",
-    "url": "/fonts/tl-icons.8402c93e.ttf"
-  },
-  {
-    "revision": "fa511db83feefe95ecc66209ed27aa67",
-    "url": "/index.html"
   },
   {
     "revision": "ebce43a68e5940d359e05b02ef8e8df3",
     "url": "/static/md/book4/pcs.md"
   },
   {
-    "revision": "fe9884553a1ae2ea1bb0d6f76a8d4822",
-    "url": "/js/locale/el.json"
+    "revision": "2c0c0b0008f1399bde41ecb582de658d",
+    "url": "/static/md/book4/theworld.md"
   },
   {
-    "revision": "d3d9140c4d912e18b894495d6c87f2df",
-    "url": "/js/timeline.js"
+    "revision": "e87af93b6a8eeb08dd06a69a42eacede",
+    "url": "/json/territories.json"
+  },
+  {
+    "revision": "fdb36527fc0560f0a890",
+    "url": "/js/chunk-vendors.34f0fd89.js"
+  },
+  {
+    "revision": "2a7a0ec8da4974b7bfb9f99c94243405",
+    "url": "/static/md/book4/curestan.md"
+  },
+  {
+    "revision": "c5636d02b570345d28ba985cc2cf6e0e",
+    "url": "/static/md/book4/chaptertemplate.md"
+  },
+  {
+    "revision": "2aadc65aa90a103e7623b74ac6b77766",
+    "url": "/static/md/book4/chapter9.md"
+  },
+  {
+    "revision": "f1feb4859a67831a64a09210d1930bf4",
+    "url": "/static/md/book4/chapter8.md"
+  },
+  {
+    "revision": "408bd6e11ad4774bb150fa0abd2d544b",
+    "url": "/static/md/book4/chapter7.md"
+  },
+  {
+    "revision": "fe9884553a1ae2ea1bb0d6f76a8d4822",
+    "url": "/js/locale/el.json"
   },
   {
     "revision": "5142d6998f2907692d3fd3fb446368b5",
@@ -112,32 +108,32 @@ self.__precacheManifest = [
     "url": "/json/organizations.json"
   },
   {
-    "revision": "7918a6d8b67647f69552",
-    "url": "/js/app.305ece20.js"
+    "revision": "b58081e43f66a676a043cb400fe150e3",
+    "url": "/json/races.json"
   },
   {
-    "revision": "0d4e6a752139aa6467f8",
-    "url": "/js/chunk-vendors.3c9abe43.js"
+    "revision": "6ccdd323bd6fadf7e4ff2ecd6fe1a0ce",
+    "url": "/static/md/book4/chapter6.md"
   },
   {
-    "revision": "e87af93b6a8eeb08dd06a69a42eacede",
-    "url": "/json/territories.json"
+    "revision": "4aa5ed4c77597d4ab0a032dbc32cd44c",
+    "url": "/static/md/book4/chapter5.md"
   },
   {
     "revision": "ef7253ed20b47b8088b491a345d76300",
     "url": "/json/weapons.json"
   },
   {
-    "revision": "0b725cd54bc29c1332544e44645117f8",
-    "url": "/manifest.webmanifest"
+    "revision": "d41d8cd98f00b204e9800998ecf8427e",
+    "url": "/static/md/book.md"
   },
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
     "url": "/robots.txt"
   },
   {
-    "revision": "d41d8cd98f00b204e9800998ecf8427e",
-    "url": "/static/md/book.md"
+    "revision": "0b725cd54bc29c1332544e44645117f8",
+    "url": "/manifest.webmanifest"
   },
   {
     "revision": "b4dbc6cdee8578c21eb3224fa90ecbbd",
@@ -160,6 +156,14 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chapter13.md"
   },
   {
+    "revision": "4d972ef0be0dc444b669e6dc5349408f",
+    "url": "/static/md/book4/chapter2.md"
+  },
+  {
+    "revision": "d3d9140c4d912e18b894495d6c87f2df",
+    "url": "/js/timeline.js"
+  },
+  {
     "revision": "63a9d0758a75c813df5826e8f43d7732",
     "url": "/static/md/book4/chapter14.md"
   },
@@ -168,8 +172,8 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chapter1old.md"
   },
   {
-    "revision": "17409a559fa16f2fbdbe28cf584652cf",
-    "url": "/static/md/book4/chapter2.md"
+    "revision": "0f3706bbf9968b8f0f3209cf69b52a59",
+    "url": "/static/md/book4/chapter3old.md"
   },
   {
     "revision": "e6e924c38482cc893175b92d762d5a1c",
@@ -180,44 +184,40 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chapter3.md"
   },
   {
-    "revision": "0f3706bbf9968b8f0f3209cf69b52a59",
-    "url": "/static/md/book4/chapter3old.md"
-  },
-  {
     "revision": "afd2980542ccea62c5cbe89b14b25f9c",
     "url": "/static/md/book4/chapter4.md"
   },
   {
-    "revision": "4aa5ed4c77597d4ab0a032dbc32cd44c",
-    "url": "/static/md/book4/chapter5.md"
+    "revision": "002d7e3a7c64ec2fa463",
+    "url": "/js/app.be33df2d.js"
   },
   {
-    "revision": "6ccdd323bd6fadf7e4ff2ecd6fe1a0ce",
-    "url": "/static/md/book4/chapter6.md"
+    "revision": "b3146351cab1f45e9a5df469c746121d",
+    "url": "/index.html"
   },
   {
-    "revision": "408bd6e11ad4774bb150fa0abd2d544b",
-    "url": "/static/md/book4/chapter7.md"
+    "revision": "82a4fd3fe6368758827dc06e38e22f16",
+    "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "f1feb4859a67831a64a09210d1930bf4",
-    "url": "/static/md/book4/chapter8.md"
+    "revision": "b0f49cd26ba67885381b66e77665bf02",
+    "url": "/fonts/tl-icons.b0f49cd2.eot"
   },
   {
-    "revision": "2aadc65aa90a103e7623b74ac6b77766",
-    "url": "/static/md/book4/chapter9.md"
+    "revision": "8402c93e00aa667edeceebe3dcfde5fe",
+    "url": "/fonts/tl-icons.8402c93e.ttf"
   },
   {
-    "revision": "c5636d02b570345d28ba985cc2cf6e0e",
-    "url": "/static/md/book4/chaptertemplate.md"
+    "revision": "1c1bfe463a8773c8b703389174dc4dd9",
+    "url": "/fonts/tl-icons.1c1bfe46.woff"
   },
   {
-    "revision": "2a7a0ec8da4974b7bfb9f99c94243405",
-    "url": "/static/md/book4/curestan.md"
+    "revision": "fdb36527fc0560f0a890",
+    "url": "/css/chunk-vendors.fb7d2cbe.css"
   },
   {
-    "revision": "7918a6d8b67647f69552",
-    "url": "/css/app.91ff3caf.css"
+    "revision": "002d7e3a7c64ec2fa463",
+    "url": "/css/app.805b858a.css"
   },
   {
     "revision": "d41d8cd98f00b204e9800998ecf8427e",

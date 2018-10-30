@@ -419,7 +419,13 @@ Must be thrown into the volcano, Paladins of Amathera will try to prevent its de
 
 ### Mount Frost
 
+[Soundtrack](https://www.youtube.com/watch?v=IgKo2XZwdd8)
+
+![Mount Frost](https://elthelas-images.herokuapp.com/locations/mountfrost.jpg)
+
 ***The Yetis*** Roughly half way up the mountain, the party sees a massive yeti running full speed towards them. It will not stop but will run right past them. Following the Abominable Yeti is a group of regular Yetis who are trying to chase it down and kill it. These Yetis will attack the party on sight.
+
+![Bigby the Abominable Yeti](https://elthelas-images.herokuapp.com/npcs/bigby.jpg)
 
 [Run This Encounter](/runner/abominableyeti&yeti&yeti&yeti&yeti&yeti)
 
@@ -436,6 +442,8 @@ Must be thrown into the volcano, Paladins of Amathera will try to prevent its de
 [Run This Encounter](/runner/yeti&yeti&yeti&yeti&yeti)
 
 ***The Greeting Hall*** The first room beyond the entrance is the Greeting Hall, where the sentient Iron Golem Bubbles, Bimriel's butler, will greet the party. Bubbles is not hostile to the party, but informs them that Bimriel does not guarantee free passage through his den to any, however friendly they may be, and if they have tribute to offer, the safest way for them to do so would be to leave it in the chest outside where it will be collected in a day or two or whenever Bimriel gets around to it. However, if they choose to deliver tribute to Bimriel directly, they will have to get through the dungeon. Bubbles reassures the party however, that so long as they do not steal from her, and do not attack the staff, Bimriel will not harm them and will certainly hear them out should they make it to her chamber.
+
+![Bubbles](https://elthelas-images.herokuapp.com/npcs/bubbles.png)
 
 [Run This Encounter](/runner/irongolem)
 
@@ -459,6 +467,8 @@ Must be thrown into the volcano, Paladins of Amathera will try to prevent its de
 </table>
 
 ***The Library*** The library is a massive chamber with bookshelves 30 ft tall (and no ladders). Books from every era have been collected here. There are two doors out of the library. One is heavily trapped and magically sealed, covered in runes, while the other looks like it was heavily trapped, before the dead frost giant in front of it tried to open it. It is however, jammed shut from the other side (DC 15 Strength check to force the door, the Frost Giants have placed a rock in front of the door to keep out intruders while they plan, their planning can relatively easily be heard through the door DC 8 Perception). The sealed door leads to the Great Library of the Stone Giants. The other door leads to the Gallery.
+
+![Library](https://elthelas-images.herokuapp.com/locations/library.jpg)
 
 ***The Gallery*** The gallery contains massive stone frieses filled with stories from Bimriel's life. Sitting in the gallery are 4 frost giants discussing how they are going to surprise the Dragon Bimriel and try to steal its horde. There is no way forward through the gallery.
 
@@ -500,11 +510,16 @@ The orderlies, if asked about Igor, explain that they believe he went insane aft
 
 [Run This Encounter](/runner/whitemaw&whitemaw)
 
-***The Grand Hall*** The Grand Hall is where Bimriel entertains guests when she decides to. There are large tables (currently empty), staff on hand (all silver kobolds + Bubbles), and fireplaces with fires burning brightly. The room is pleasantly warm. Bubbles, who teleported down here to greet the party on their successful completion of the dungeon. Bubbles offers the players warm food and drink that, if accepted, will reduce any levels of exhaustion they have by one. The food is served by the Kobold waitstaff, who bring food in through a small side door that leads to the kitchens. There is a grand double door at the end of the Grand Hall that leads to Bimriel's personal quarters. Players are asked to leave behind all weapons, magical items that are not tribute for Bimriel (including Arcanum crystals, spellbooks, etc), with Bubbles before entering Bimriel's quarters and are each given a ring that they are asked to put on. These rings are Rings of Detection, they make the wearer visable to anyone within 500 ft, even through walls, magic etc, and require a remove curse spell to remove. Attempting to force their way in without the rings will lead to hostility from Bubbles and the kobold staff.
+***The Grand Hall*** The Grand Hall is where Bimriel entertains guests when she decides to. There are large tables (currently empty), staff on hand (all silver kobolds + Bubbles), and fireplaces with fires burning brightly. The room is pleasantly warm. Bubbles, who teleported down here to greet the party on their successful completion of the dungeon. Bubbles offers the players warm food and drink that, if accepted, will reduce any levels of exhaustion they have by one. The food is served by the Kobold waitstaff, who bring food in through a small side door that leads to the kitchens. There is a grand double door at the end of the Grand Hall that leads to Bimriel's personal quarters. Players are asked to leave behind all weapons, magical items that are not tribute for Bimriel (including Arcanum crystals, spellbooks, etc), with Bubbles before entering Bimriel's 
+quarters and are each given a ring that they are asked to put on. These rings are Rings of Detection, they make the wearer visable to anyone within 500 ft, even through walls, magic etc, and require a remove curse spell to remove. Attempting to force their way in without the rings will lead to hostility from Bubbles and the kobold staff.
+
+![Bimriel's Grand Hall](https://elthelas-images.herokuapp.com/locations/grandhall.jpg)
 
 [Run This Encounter](/runner/irongolem&kobold&kobold&kobold&kobold&kobold&kobold)
 
 ***Bimriel's Quarters*** Bimriel will greet the players in human form when they enter her quarters. She takes the appearance of an older, yet fit, woman, wearing a tasteful gown in an older style. Her quarters are a strange mix of massive and human sized accomodations, but everything is finely crafted stone. The room is cold, but not uncomfortably so.
+
+![Bimriel](https://elthelas-images.herokuapp.com/npcs/bimriel.jpg)
 
 ### Return to Cur'Estan
 
