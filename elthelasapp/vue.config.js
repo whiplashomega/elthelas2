@@ -21,12 +21,8 @@ module.exports = {
       offlineGoogleAnalytics: true,
       runtimeCaching: [
       {
-        urlPattern: /\/public\/static\/md\/.*/,
-        handler: 'networkFirst'
-      },
-      {
         urlPattern: /.*/,
-        handler: 'cacheFirst',
+        handler: 'networkFirst',
         options: {
           fetchOptions: {
             credentials: 'same-origin'
