@@ -36,7 +36,7 @@
       <tbody>
         <tr v-for="(encounter, index) in getRandom(tier, environment)" :key="encounter._id">
           <td>{{ index + 1 }}</td>
-          <td>{{ encounter.name }}</td>
+          <td><router-link :to="'/encounter/details/' + encounter._id">{{ encounter.name }}</router-link></td>
         </tr>
         <tr><td>7</td><td>Nothing Happens</td></tr>
         <tr><td>8</td><td>Nothing Happens</td></tr>
