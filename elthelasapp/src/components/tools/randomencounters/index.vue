@@ -30,7 +30,7 @@
     <table class="table table-striped">
       <thead>
         <tr>
-          <th>Encounter Name</th>
+          <th>Roll</th><th>Encounter Name</th>
         </tr>
       </thead>
       <tbody>
@@ -38,6 +38,10 @@
           <td>{{ index + 1 }}</td>
           <td>{{ encounter.name }}</td>
         </tr>
+        <tr><td>7</td><td>Nothing Happens</td></tr>
+        <tr><td>8</td><td>Nothing Happens</td></tr>
+        <tr><td>9</td><td>Nothing Happens</td></tr>
+        <tr><td>10</td><td>Nothing Happens</td></tr>
       </tbody>
     </table>
   </div>

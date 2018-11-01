@@ -1,4 +1,4 @@
-import { mapGetters } from 'vuex';
+import { mapGetters, mapActions } from 'vuex';
 
 export default {
   computed: {
@@ -12,5 +12,13 @@ export default {
       tier: "Any",
       environment: "Any"
     };
+  },
+  methods: {
+    ...mapActions({
+      getAll: "getAllEncounters"
+    })
+  },
+  created () {
+    this.getAll();
   }
 };
