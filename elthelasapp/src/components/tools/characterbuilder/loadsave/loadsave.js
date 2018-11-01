@@ -6,7 +6,8 @@ export default {
       googletoken: 'getGoogleToken',
       loggedin: 'isLoggedIn',
       token: 'getUserInfo',
-      character: "getCharacter"
+      character: "getCharacter",
+      charlevel: "charlevel"
     })
   },
   data () {
@@ -30,8 +31,7 @@ export default {
       loadCharacter: "loadCharacter",
       shortrest: "shortrest",
       longrest: "longrest",
-      resetCharacter: "resetCharacter",
-      charlevel: "charlevel"
+      resetCharacter: "resetCharacter"
     })
   }
 };

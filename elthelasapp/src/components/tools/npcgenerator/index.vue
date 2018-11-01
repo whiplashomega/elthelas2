@@ -4,15 +4,11 @@
     <div class="row">
       <div class="col-sm-3">
         <label>Profession</label>
-        <select v-model="npcgen.profession">
-          
-        </select>
+        <select v-model="npcgen.profession"></select>
       </div>
       <div class="col-sm-3">
         <label>Home Country</label>
-        <select v-model="npcgen.homecountry">
-          
-        </select>
+        <select v-model="npcgen.homecountry"></select>
       </div>
       <div class="col-sm-3">
         <label>Gender</label>

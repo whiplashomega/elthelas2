@@ -92,6 +92,11 @@ export default {
           return 1;
         }
       });
+    },
+    encounterlink () {
+      return '/runner/' + this.encountercreatures.map((cre) => {
+        return cre.name.replace(/ /g, "").toLowerCase();
+      }).join("&");
     }
   },
   data () {

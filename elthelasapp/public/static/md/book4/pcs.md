@@ -39,7 +39,7 @@
 		<tr><td>Sylvan's Rangers</td><td>0</td></tr>
 		<tr><td>Tock's Inevitables</td><td>0</td></tr>
 		<tr><td>Trollkin Mercenary Corps</td><td>0</td></tr>
-		<tr><td>Union of Wizard's Colleges</td><td>2</td></tr>
+		<tr><td>Union of Wizard's Colleges</td><td>3</td></tr>
 	</tbody>
 </table>
 
@@ -83,7 +83,7 @@ Ching Shu grew up in Zelfir, her parents were both wizards and members of the Un
 		<tr><td>Masters of the Deep Song</td><td>0</td></tr>
 		<tr><td>Shepherd's of the All-Mother</td><td>0</td></tr>
 		<tr><td>Silver Dragon Knights</td><td>0</td></tr>
-		<tr><td>Sylvan's Rangers</td><td>2</td></tr>
+		<tr><td>Sylvan's Rangers</td><td>3</td></tr>
 		<tr><td>Tock's Inevitables</td><td>0</td></tr>
 		<tr><td>Trollkin Mercenary Corps</td><td>0</td></tr>
 		<tr><td>Union of Wizard's Colleges</td><td>0</td></tr>
@@ -153,7 +153,7 @@ Curious, Eyvindra finds herself in a strange and hectic city, searching for her 
 		<tr><td>Shepherd's of the All-Mother</td><td>0</td></tr>
 		<tr><td>Silver Dragon Knights</td><td>0</td></tr>
 		<tr><td>Sylvan's Rangers</td><td>0</td></tr>
-		<tr><td>Tock's Inevitables</td><td>2</td></tr>
+		<tr><td>Tock's Inevitables</td><td>3</td></tr>
 		<tr><td>Trollkin Mercenary Corps</td><td>0</td></tr>
 		<tr><td>Union of Wizard's Colleges</td><td>0</td></tr>
 	</tbody>
@@ -255,7 +255,7 @@ She doesn't handle moral ambiguity well, and always seeks the right answer to ev
 		</tr>
 	</thead>
 	<tbody>
-		<tr><td>Black Wolf Irregulars</td><td>2</td></tr>
+		<tr><td>Black Wolf Irregulars</td><td>3</td></tr>
 		<tr><td>Amathera's Shield</td><td>0</td></tr>
 		<tr><td>Artificer's of Mechanus</td><td>0</td></tr>
 		<tr><td>Black Sun</td><td>0</td></tr>
@@ -302,7 +302,7 @@ Daughter of a fruit merchant near the Moon Pass, she is Vanriel's half-sister (b
 		</tr>
 	</thead>
 	<tbody>
-		<tr><td>Black Wolf Irregulars</td><td>2</td></tr>
+		<tr><td>Black Wolf Irregulars</td><td>3</td></tr>
 		<tr><td>Amathera's Shield</td><td>0</td></tr>
 		<tr><td>Artificer's of Mechanus</td><td>0</td></tr>
 		<tr><td>Black Sun</td><td>0</td></tr>
@@ -888,7 +888,7 @@ A noble from a country that no longer exists from before the Dormanian Empire, w
 		<tr><td>Vanriel Glamfara</td><td>Guild Leader (Eyvindra Veil)</td><td>Leader of Sylvan's Rangers, Scout Commander for the Black Wolf Irregulars</td></tr>
 		<tr><td>Winslow Fredericks</td><td>Local Leader</td><td>Cur'Estan</td><td>Grangemaster of the International Grangemaster's Alliance in Cur'Estan</td></tr>
 		<tr><td>Wyrmling Trapsmith</td><td>Quartermaster</td><td>Cur'Estan</td><td>Quartermaster for the Black Wolf Irregulars</td></tr>
-		<tr><td>Usko the Lumberjack</td><td>Boy Toy (Lilith)</td><td>Ripped lumberjack who Lilith met at a bar and enjoys the company of</td></tr>
-		<tr><td>Frankie the Lumberjack Leader</td><td>Local Leader</td><td>Leader of the Lumberjacks in Cur'Estan</td></tr>
+		<tr><td>Usko the Lumberjack</td><td>Boy Toy (Lilith)</td><td>Cur'Estan</td><td>Ripped lumberjack who Lilith met at a bar and enjoys the company of</td></tr>
+		<tr><td>Frankie the Lumberjack Leader</td><td>Local Leader</td><td>Cur'Estan</td><td>Leader of the Lumberjacks in Cur'Estan</td></tr>
 	</tbody>
 </table>

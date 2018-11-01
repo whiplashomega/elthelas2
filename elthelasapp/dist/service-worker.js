@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.14a11c1fc23f0b2dc957d65f183ab7e2.js"
+  "/precache-manifest.d05a957f719c4d635d3588787bfcf274.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "Elthelas"});
@@ -28,6 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
+workbox.routing.registerRoute(/\/public\/static\/md\/.*/, workbox.strategies.networkFirst(), 'GET');
 workbox.routing.registerRoute(/.*/, workbox.strategies.cacheFirst({ "fetchOptions":{"credentials":"same-origin"}, plugins: [] }), 'GET');
 
 workbox.googleAnalytics.initialize({});

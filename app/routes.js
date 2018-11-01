@@ -91,8 +91,11 @@ module.exports = function(app, staticDir) {
     //user function routes
     var users = require('./users');
     var characters = require('./characters');
+    var encounters = require('./encounters');
+    
     app.use('/users', users);
     app.use('/characters', characters);
+    app.use('/encounters', encounters);
     
     //generate the sitemap on request
     app.get('/sitemap.xml', function(req, res) {

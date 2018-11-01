@@ -28,6 +28,8 @@ import charbuilder from '../components/tools/characterbuilder';
 import npcgen from '@/components/tools/npcgenerator';
 import feats from '@/components/options/feats';
 import privacy from '@/components/privacy';
+import encounterbuilder from '@/components/tools/encounterbuilder';
+import randomencounters from '@/components/tools/randomencounters';
 
 Vue.use(Router);
 
@@ -332,6 +334,26 @@ var router = new Router({
       path: "/privacy-policy",
       components: {
         default: privacy
+      }
+    },
+    {
+      name: "encounterbuilder",
+      meta: {
+        title: "Encounter Builder"
+      },
+      path: "/encounter/builder",
+      components: {
+        default: encounterbuilder
+      }
+    },
+    {
+      name: "randomencounters",
+      meta: {
+        title: "Random Encounter Table"
+      },
+      path: "/encounter/random",
+      components: {
+        default: randomencounters
       }
     }
   ],

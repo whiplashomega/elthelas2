@@ -116,17 +116,13 @@ export default {
       }
     },
     armorac: (state, getters) => (a) => {
-      var ac = 0;
-      if (a.type === "Heavy Armor") {
-        ac = a.ac;
-      } else if (a.type === "Medium Armor") {
-        ac = a.ac + Math.min(2, getters.getStatMod(1));
-      } else if (a.type === "Shield") {
-        ac = a.ac;
+      var ac = Number(a.ac);
+      if (a.type === "Medium Armor") {
+        ac = Number(a.ac) + Math.min(2, getters.getStatMod(1));
       } else if (a.type === 'Light Armor') {
-        ac = a.ac + getters.getStatMod(1);
+        ac = Number(a.ac) + getters.getStatMod(1);
       } else if (a.type === "Unarmored Bonus") {
-        ac = 10 + a.ac + getters.getStatMod(1) + getters.getStatMod(a.unarmoredstat);
+        ac = 10 + Number(a.ac) + getters.getStatMod(1) + getters.getStatMod(a.unarmoredstat);
       }
       return ac;
     },
@@ -142,33 +138,20 @@ export default {
         return a.type === "Shield";
       });
       let ac = state.currentCharacter.armors.reduce((b, a) => {
-        let acnum = Number(a.ac);
-        if (a.equipped) {
-          if (a.type === "Heavy Armor") {
-            if (acnum > b) {
-              b = a.ac;
-            }
-          } else if (a.type === "Medium Armor") {
-            let tmp = a.ac + Math.min(2, getters.getStatMod(1));
-            if (tmp > b) {
-              b = tmp;
-            }
-          } else if (a.type === 'Light Armor') {
-            let tmp = a.ac + getters.getStatMod(1);
-            if (tmp > b) {
-              b = tmp;
-            }
-          } else if (a.type === "Unarmored Bonus") {
-            let tmp = 10 + a.ac + getters.getStatMod(1) + getters.getStatMod(a.unarmoredstat);
-            if (tmp > b) {
-              b = tmp;
-            }
+        if (a.equipped && a.type !== "Shield") {
+          let ac = getters.armorac(a);
+          if (ac > b) {
+            b = ac;
           }
         }
         return b;
       }, 10 + getters.getStatMod(1));
-      let shield = shields.reduce((a, b) => {
-        return b + a;
+      let shield = shields.reduce((b, a) => {
+        if (a.equipped) {
+          return b + Number(a.ac);
+        } else {
+          return b;
+        }
       }, 0);
       return Number(ac) + Number(shield) + Number(state.currentCharacter.acmagic);
     },

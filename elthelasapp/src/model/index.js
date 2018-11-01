@@ -18,6 +18,7 @@ import characters from './characters';
 import auth from './auth';
 import feats from './feats';
 import territories from './territories';
+import encounters from './encounters';
 
 Vue.use(Vuex);
 
@@ -40,7 +41,8 @@ export default new Vuex.Store({
     auth,
     feats,
     territories,
-    characters
+    characters,
+    encounters
   },
   state: {
     title: "Test",

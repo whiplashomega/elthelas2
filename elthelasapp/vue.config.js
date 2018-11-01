@@ -5,7 +5,9 @@ module.exports = {
       '/users/*': { target: 'http://0.0.0.0:8081' },
       '/users': { target: 'http://0.0.0.0:8081' },
       '/characters': { target: 'http://0.0.0.0:8081' },
-      '/characters/*': { target: 'http://0.0.0.0:8081' }
+      '/characters/*': { target: 'http://0.0.0.0:8081' },
+      '/encounters': { target: 'http://0.0.0.0:8081' },
+      '/encounters/*': { target: 'http://0.0.0.0:8081' }
     },
     headers: {
       "Access-Control-Allow-Origin": "*",
@@ -17,7 +19,12 @@ module.exports = {
     themeColor: "#3e60af",
     workboxOptions: {
       offlineGoogleAnalytics: true,
-      runtimeCaching: [{
+      runtimeCaching: [
+      {
+        urlPattern: /\/public\/static\/md\/.*/,
+        handler: 'networkFirst'
+      },
+      {
         urlPattern: /.*/,
         handler: 'cacheFirst',
         options: {

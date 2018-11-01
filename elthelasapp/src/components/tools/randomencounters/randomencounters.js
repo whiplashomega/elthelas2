@@ -1,19 +1,16 @@
 import { mapGetters } from 'vuex';
-// import newCharacter from '@/model/classes/character';
-// import droll from 'droll';
 
 export default {
   computed: {
     ...mapGetters({
-
+      encounters: "getEncounters",
+      getRandom: "getRandomEncounters"
     })
   },
   data () {
     return {
-
+      tier: "Any",
+      environment: "Any"
     };
-  },
-  methods: {
-
   }
 };

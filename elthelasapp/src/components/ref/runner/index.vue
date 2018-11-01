@@ -1,6 +1,9 @@
 <template>
 	<div class="col-sm-12">
   <h1>Encounter Runner</h1>
+  <p>
+    <a :href="encounterlink">Link to this Encounter</a>
+  </p>
     <div class="row">
     <div class="col-sm-8">
       <label>
@@ -147,7 +150,7 @@
       <div class="ck-button"><label><input type="checkbox" v-model="creature.disadvantage" /><span>Dis</span></label></div>
       <button class="close" type="button" @click="removeCreature(creature)">&times;</button>
     </div>
-    <input type="button" @click="roll()" value="Roll Initiative" />
+    <input type="button" class="btn btn-success" @click="roll()" value="Roll Initiative" />
   </div>
   <b-modal id="servermodal" title="Load File from Server">
     <table class="table table-striped">
@@ -156,7 +159,6 @@
       </tr>
       <tr v-for="character in characters" v-bind:key="character._id">
         <td><span class="clickable" @click="selCharacter(character)">{{character.name}}</span></td><td>{{charlevel(character)}}</td>
-        <td><input type="button" @click="deleteFromServer(character)" class="btn btn-danger" value="X" /></td>
       </tr>
     </table>
   </b-modal>
