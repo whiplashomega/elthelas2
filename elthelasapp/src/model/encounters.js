@@ -64,6 +64,11 @@ export default {
     loadEncounter: ({ state }, encounter) => {
       state.current = { ...encounter };
     },
+    loadEncounterById: ({ state }, { id: id }) => {
+      state.current = { ...state.all.filter((a) => {
+        return a._id === id;
+      })[0] };
+    },
     saveEncounter: ({ state, getters }) => {
       Vue.http.post('/encounters/' + state.current._id + "?token=" + getters.getUserInfo.token, { encounter: state.current }).then((res) => {
         state.all.splice(state.all.indexOf(state.current), 1);

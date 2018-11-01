@@ -30,6 +30,7 @@ import feats from '@/components/options/feats';
 import privacy from '@/components/privacy';
 import encounterbuilder from '@/components/tools/encounterbuilder';
 import randomencounters from '@/components/tools/randomencounters';
+import encounterdetails from '@/components/tools/encounterdetails';
 
 Vue.use(Router);
 
@@ -354,6 +355,26 @@ var router = new Router({
       path: "/encounter/random",
       components: {
         default: randomencounters
+      }
+    },
+    {
+      name: "encounterdetails",
+      meta: {
+        title: "Encounter Details"
+      },
+      path: "/encounter/details",
+      components: {
+        default: encounterdetails
+      }
+    },
+    {
+      name: "encounterdetailspreload",
+      meta: {
+        title: "Encounter Details"
+      },
+      path: "/encounter/details/:id",
+      components: {
+        default: encounterdetails
       }
     }
   ],

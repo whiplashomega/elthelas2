@@ -18,6 +18,10 @@
                 <li class="dropdown-item" v-if="loggedin"><a href="#">Epic of Elthelas Book 2</a></li>
                 <li class="dropdown-item" v-if="loggedin"><a href="#">Epic of Elthelas Book 3</a></li>
                 <li class="dropdown-item" v-if="loggedin && (userinfo.username === 'whiplashomega')"><router-link to="/tools/book4/dm/curestan">Epic of Elthelas Book 4</router-link></li>
+                <li class="dropdown-item" v-if="loggedin"><router-link to="/encounter/builder">Encounter Builder</a></li>
+                <li class="dropdown-item" v-if="loggedin"><router-link to="/encounter/random">Random Encounter Table</a></li>
+                <li class="dropdown-item" v-if="loggedin"><router-link to="/encounter/details">Encounter List</a></li>
+                <li class="dropdown-item" v-if="loggedin"><a href="#">Epic of Elthelas Book 3</a></li>
                 <li class="dropdown-item"><router-link to="/tools/book4/playersguide">Epic of Elthelas Book 4 - Player's Guide</router-link></li>
               </ul>
           </div>
