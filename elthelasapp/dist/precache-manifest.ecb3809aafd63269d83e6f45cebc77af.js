@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/fonts/tl-icons.8402c93e.ttf"
   },
   {
-    "revision": "5ea91a4567d149dbd370e2871a31e104",
+    "revision": "7695d70baf1fa242f96b65993a29193e",
     "url": "/index.html"
   },
   {
@@ -112,8 +112,8 @@ self.__precacheManifest = [
     "url": "/json/organizations.json"
   },
   {
-    "revision": "b16f620854e8a89517ce",
-    "url": "/js/app.e4ed3b86.js"
+    "revision": "268d2144d36aafd75c9b",
+    "url": "/js/app.4b752464.js"
   },
   {
     "revision": "d13d0d30aa8a3300d4bd",
@@ -216,7 +216,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/curestan.md"
   },
   {
-    "revision": "b16f620854e8a89517ce",
+    "revision": "268d2144d36aafd75c9b",
     "url": "/css/app.40aaf081.css"
   },
   {

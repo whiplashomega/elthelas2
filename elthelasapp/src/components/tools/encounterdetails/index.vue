@@ -1,5 +1,5 @@
 <template>
-  <div clas="col-sm-12">
+  <div class="col-sm-12">
     <div v-if="current._id">
       <h3><a :href="current.link">{{current.name}}</a></h3>
       <div class="row">
@@ -16,7 +16,7 @@
       <thead><tr><th>Name</th><th>Environment</th><th>Tier</th><th>Random</th><th>Complete</th></tr></thead>
       <tbody>
         <tr v-for="encounter in all" :key="encounter._id">
-          <td>{{encounter.name}}</td>
+          <td><router-link :to="'/encounter/details/' + encounter._id">{{encounter.name}}</router-link></td>
           <td>{{encounter.environment}}</td>
           <td>{{encounter.tier}}</td>
           <td>{{encounter.random}}</td>
