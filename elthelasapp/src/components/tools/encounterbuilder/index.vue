@@ -73,12 +73,17 @@
           <textarea v-model="current.text" class="form-control" style="min-height:150px;"></textarea>
         </div>
         <div>
+          <label>Potential Treasure (markdown allowed)</label>
+          <textarea v-model="current.treasure" class="form-control" style="min-height:150px;"></textarea>
+        </div>
+        <div>
           <h2>Preview</h2>
           <h3><a :href="current.link">{{current.name}}</a></h3>
           <div style="float:right;max-width:40%;" v-if="current.image">
             <img :src="current.image" :alt="current.name" />
           </div>
           <div v-html="$options.filters.marked(current.text)"></div>
+          <div v-html="$options.filters.marked(current.treasure)"></div>
         </div>
       </div>
       <div class="col-sm-4">

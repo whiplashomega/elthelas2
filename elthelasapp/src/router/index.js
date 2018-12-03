@@ -31,6 +31,7 @@ import privacy from '@/components/privacy';
 import encounterbuilder from '@/components/tools/encounterbuilder';
 import randomencounters from '@/components/tools/randomencounters';
 import encounterdetails from '@/components/tools/encounterdetails';
+import treasuregenerator from '@/components/tools/treasuregenerator';
 
 Vue.use(Router);
 
@@ -375,6 +376,16 @@ var router = new Router({
       path: "/encounter/details/:id",
       components: {
         default: encounterdetails
+      }
+    },
+    {
+      name: "treasuregenerator",
+      meta: {
+        title: "Treasure Generator"
+      },
+      path: "/treasuregenerator",
+      components: {
+        default: treasuregenerator
       }
     }
   ],

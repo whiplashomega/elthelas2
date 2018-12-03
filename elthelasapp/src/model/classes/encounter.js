@@ -2,6 +2,7 @@ export default function () {
   return {
     name: "",
     text: "",
+    treasure: "",
     link: "",
     image: "",
     prereq: "",

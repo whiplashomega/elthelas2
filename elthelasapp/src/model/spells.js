@@ -15,7 +15,13 @@ const actions = {
       Vue.http.get(ctest.baseUrl + 'json/spells.json').then((response) => {
         var spells = response.body.documents;
         for (var x in spells) {
-          spells[x].tagsText = spells[x].tags.join(', ');
+          try {
+            spells[x].tagsText = spells[x].tags.join(', ');
+          } catch (e) {
+            spells[x].tagsText = "";
+            console.log(x);
+            console.log(spells[x]);
+          }
         }
         commit('GET_SPELLS', { spells: spells });
         resolve();

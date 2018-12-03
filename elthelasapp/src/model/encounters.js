@@ -64,7 +64,7 @@ export default {
     loadEncounter: ({ state }, encounter) => {
       state.current = { ...encounter };
     },
-    loadEncounterById: ({ state }, { id: id }) => {
+    loadEncounterById: ({ state }, { id }) => {
       state.current = { ...state.all.filter((a) => {
         return a._id === id;
       })[0] };
