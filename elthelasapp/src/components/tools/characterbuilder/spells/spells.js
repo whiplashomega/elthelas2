@@ -99,6 +99,9 @@ export default {
         this.spellModal = false;
       }
     },
+    removeSpell(spell) {
+      this.character.spells[this.displayLevel].splice(this.character.spells[this.displayLevel.indexOf(spell)], 1);
+    },
     sortSpells (spells) {
       var x = spells.slice(0);
       x.sort((b, c) => {

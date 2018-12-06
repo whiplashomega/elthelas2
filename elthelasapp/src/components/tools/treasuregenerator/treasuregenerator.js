@@ -28,27 +28,37 @@ export default {
       if (this.horde) {
         this.generateHorde();
       } else {
-        this.generateIndividual();
+        this.treasure = this.generateIndividual();
       }
     },
     generateIndividual () {
-      var goldvalue;
+      let goldvalue, pp, gp, sp, cp;
       if (this.tier === 1) {
-        goldvalue = (Math.floor(Math.random() * 5995) / 100) + 0.04;
+        pp = Math.floor(Math.random() * 4);
+        gp = Math.floor(Math.random() * 20);
+        sp = Math.floor(Math.random() * 20);
+        cp = Math.floor(Math.random() * 20);
+        goldvalue = pp * 10 + gp + sp / 10 + cp / 100;
       } else if (this.tier === 2) {
-        goldvalue = Math.floor(Math.random() * 292) + 8;
+        pp = Math.floor(Math.random() * 20);
+        gp = Math.floor(Math.random() * 100);
+        sp = Math.floor(Math.random() * 100);
+        cp = Math.floor(Math.random() * 100);
+        goldvalue = pp * 10 + gp + sp / 10 + cp / 100;
       } else if (this.tier === 3) {
-        goldvalue = Math.floor(Math.random() * 2260) + 140;
+        pp = Math.floor(Math.random() * 200);
+        gp = Math.floor(Math.random() * 1000);
+        sp = Math.floor(Math.random() * 100);
+        cp = Math.floor(Math.random() * 100);
+        goldvalue = pp * 10 + gp + sp / 10 + cp / 100;
       } else if (this.tier === 4) {
-        goldvalue = Math.floor(Math.random() * 16200) + 1800;
+        pp = Math.floor(Math.random() * 1000);
+        gp = Math.floor(Math.random() * 5000);
+        sp = Math.floor(Math.random() * 200);
+        cp = Math.floor(Math.random() * 200);
+        goldvalue = pp * 10 + gp + sp / 10 + cp / 100;
       }
-      var pp = Math.floor(goldvalue / 100);
-      return pp;
+      return pp + " pp " + gp + " gp " + sp + " sp " + cp + " cp. Total value: " + goldvalue + " gp.";
     }
-  },
-  mounted () {
-    this.canv = this.$refs['canvas'].getContext('2d');
-    this.canv.fillStyle = 'rgb(200, 0, 0, 0.5)';
-    this.canv.fillRect(10, 10, 50, 50);
   }
 };
