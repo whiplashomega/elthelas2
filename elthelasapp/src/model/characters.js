@@ -261,7 +261,7 @@ export default {
     },
     level: (state) => {
       return state.currentCharacter.charclasses.reduce((level, a) => {
-        level += Number(a.level);
+        return level += Number(a.level);
       }, 0);
     },
     validateCharacter: (state) => {
