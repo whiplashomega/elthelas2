@@ -2813,5 +2813,13 @@
   "Rarity": "Uncommon",
   "Attunement": "No",
   "Effect": "After drinking this potion the user enters a frenzied state of bloodlust. For the next minute or until they become incapacitated they have advantage on strength checks, +3 damage when attacking with strength, resistance to bludgeoning, piercing, and slashing damage, and can make an additional attack as a bonus action when they take the attack action on their turn."
+ },
+ {
+  "Item": "Bag of Endless Knives",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "4000",
+  "Rarity": "Uncommon",
+  "Attunement": "No",
+  "Effect": "When you reach into this bag you will always find a dagger. Once drawn out of the bag the dagger exists for 1 round before disappearing. Nothing else can be stored in the bag, but the bag acts as a quiver, requiring no action to draw a dagger out."
  }
 ]
