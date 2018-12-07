@@ -523,44 +523,18 @@ quarters and are each given a ring that they are asked to put on. These rings ar
 
 ### Return to Cur'Estan
 
-Random Encounters Rolls
+Random Encounters
 
-1. Orc Raiders
-2. Theri Encounter
-3. Satura Encounter
-4. Rebel Raiders
-5. Necromancer Attack
-6. Bandits
-7. Stumble on a Gnoll Cave
-8. Burned out Caravan
-9. Army Patrol
-10. Trade Caravan en route to Cur'Estan
-11. Revanant seeking help in hunting murderer
-12. empty shack
-13. Hobgoblin Raiders arguing over loot
-14. Random Treasure Cache
-15. Meet a Traveling Cleric of Sara
-16. Young Green Dragon swoops down and attacks
-17. Run into a party of Guild of Heroes Adventurers hunting a pack of Werewolves.
-18. Ruined Temple
-19. Ruined Castle
-20. Abandoned Mine
-21. Kobold's from Varius's Tribe seeking help
-22. Group of Blood Brothers hired to take out Ching Shu
-23. Wandering Monster
+### Rewards
 
-#### Orc Raiders
+**General Quest Completion** 2000 GP for each player
 
-Orc assassins are hiding off the path in an attempt to ambush the party. They have been sent specifically to kill any members of the Black Wolves that they can.
+**Destruction of the Time Egg** "Bracers of Defense" delivered in person by a Quarut, who takes her into a demiplane for 'modification'.
 
-[Run This Encounter](/runner/orcredfangofshargaas&orcredfangofshargaas&orcredfangofshargaas&orcredfangofshargaas&orcredfangofshargaas)
+**Document Recovery** 5000 GP reward delivered, strangely, by James Lightbringer
 
-#### Theri On the Road
+**Yeti Return** Robes of the Persuasive Speaker
 
-Theri has set up what appears to be a merchants stand selling magical equipment blocking the road, this time disguised as a tiefling. He offers Kismet whatever she wants for free, "as an apology for trapping her in that dungeon that one time. Oh wait, that hasn't happened yet for you has it. Anyway, let me apologize ahead of time." Whatever she picks transforms at her touch into a boot, that continually flies at her and tries to hit her in the head. Theri teleports away laughing about "Boot to the Head! Oh that's a good one!"
+**History Recovered** Apprentice's Robe
 
-[Run This Encounter](/runner/animatedarmor&theri)
-
-#### Satura Seeks Queen Clara Eliana III
-
-Satura Kalmuc, secretly working for the Blue Dragon Horroth, is looking for Varius' kobold mine. He is after
+**Cave of the Necromancer** Bag of Endless Knives

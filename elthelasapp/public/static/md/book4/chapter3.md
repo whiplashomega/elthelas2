@@ -69,8 +69,6 @@ Breaking the siege of Eisenferd is one of the ways that Queen Organa may agree t
 
 The apprentices are a group of 3 less than level 1 wizards. They only know cantrips, each of them has learned one damaging cantrip and one other cantrip, for example, Harry knows firebolt and message, Harvy knows shocking grasp and mending, and Houston knows ray of frost and dancing lights.
 
-## The Frost Giants
-
 ## The Queen's Army
 
 #### Orc Scouts
@@ -98,6 +96,10 @@ The players stumble across a lone orc that is carrying a white flag of truce and
 #### Finding the Hidden Camp
 
 The Gerasalim army has made a deal with a group of pixies to keep them hidden. They have created a circle of stones that prevent normal creatures from finding the camp. The players need to have talked to jim jimmy jim jim to have a chance to find the place past the pixies magic. Any creature that enters the stone circle without permission finds it is impassible and raises and alarm for the pixies. (The stone circle is away from the view of the encampment so the players can only discuss with the pixies at this point.) The pixies are paranoid and not easily trusting. The pixies demand that one of the players be turned to stone if they wish to gain entry. The Pixies will mention that the stoned player will join their garden forever for the insults the players have bestowed on them, even if they didn’t really insult them. Play the pixies as paranoid and unable to reach any reasonable agreement, thinking the players are orcs in disguise. Ideally the players will be forced to fight the pixies to the death. If mentioned to the gerasalim army commander he doesn’t mind as he hated the pixies anyways.
+
+## The Frost Giants
+
+The Queen's Army is aware of the Frost Giants, but so far has been unable to triangulate their exact position, and since the attacks have been focused on a series of illegal Dwarven colonies, 
 
 ## Silver Head
 

@@ -9,6 +9,8 @@ function getWeaponVariants (weapon) {
     for (var i in mag) {
       if (typeof mag[i] === "string") {
         newobj[i] = mag[i].replace(/\$Name/g, weapon.Name);
+      } else {
+        newobj[i] = mag[i];
       }
       if (mag.test) {
         if (mag.test.test(mag[i])) {
