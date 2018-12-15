@@ -279,6 +279,7 @@ const mutations = {
       return "Out of Stock";
     };
     for (var x = 0; x < items.length; x++) {
+      items[x].print = false;
       items[x].instock = inStock(Math.random(), x);
       if (items[x].Type.includes("Weapon")) {
         state.magicweapons.push(items[x]);

@@ -1282,6 +1282,7 @@
                 </b-input-group>
               </b-col>
             </b-row>
+            <b-row><button class="btn btn-sm btn-primary" @click="printSelected()">Print Selected</button></b-row>
             <b-modal id="magicitemmodal" size="lg" @hide="resetMagicItemModal" :title="magicItemModal.Item" ok-only>
                 <p><strong>Type: </strong>{{magicItemModal.Type}}</p>
                 <p><strong>Cost (gp): </strong>{{magicItemModal["Cost (gp)"]}}</p>
@@ -1292,7 +1293,7 @@
             </b-modal>
             <b-tabs id="magicitemcatalog">
               <b-tab title="Scrolls">
-                <b-table show-empty
+                <b-table show-empty @row-clicked="selectForPrint"
                   :striped="true" :bordered="false"
                   :responsive="true"
                   stacked="sm"

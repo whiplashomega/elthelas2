@@ -80,6 +80,7 @@ export default {
       },
       magicitemtables: {
         fields: [
+          { key: "print", label: "Print", sortable: false },
           { key: "Item", label: "Item", sortable: true },
           { key: "Attunement", label: "Attunement", sortable: true },
           { key: "Rarity", label: "Rarity", sortable: true },
@@ -103,6 +104,25 @@ export default {
       this.spelltable.modalInfo.content = item;
       this.spelltable.modalInfo.description = marked(this.spelltable.modalInfo.content.description);
       this.$root.$emit('bv::show::modal', 'spellmodal', button);
+    },
+    selectForPrint (item) {
+      item.print = !item.print;
+      if (item.print) {
+        item._rowVariant = 'success';
+      } else {
+        item._rowVariant = undefined;
+      }
+    },
+    printSelected () {
+      let toPrint = this.magicitems.reduce((a, b) => {
+        console.log(b.print);
+        if (b.print) {
+          console.log(b);
+          a.push(b);
+        }
+        return a;
+      }, []);
+      console.log(toPrint);
     },
     magicItemInfo (item, index, button) {
       this.magicItemModal = item;

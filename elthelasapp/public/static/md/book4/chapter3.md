@@ -27,7 +27,7 @@ Silver Head stands between the Dormanian armies and assistance with this war, he
 
 ### Transportation
 
-General Heartbren has rented a helmet of teleportation circle from Margo, and gives the party the sigil sequences for two circles: His own, located in Cur'Estan castle and one in the Temple of Maris in Eisenferd. The helmet is usable once per day.
+General Heartbren has commissioned Margo to use Teleportation circle to get the party to Eisenferd.
 
 ## Eisenferd
 
@@ -99,17 +99,34 @@ The Gerasalim army has made a deal with a group of pixies to keep them hidden. T
 
 ## The Frost Giants
 
-The Queen's Army is aware of the Frost Giants, but so far has been unable to triangulate their exact position, and since the attacks have been focused on a series of illegal Dwarven colonies, 
+The Queen's Army is aware of the Frost Giants, but so far has been unable to triangulate their exact position, and since the attacks have been focused on a series of illegal Dwarven colonies, they haven't been overly concerned. They can point the party to some dwarf refugees who were from an attacked mine. The refugees can point the players to the mine, and note that the frost giants are probably trackable from there.
+
+At the mine the party will be met by an adult gold dragon who is likewise hunting the giants. It is not knowledgable in tracking, but offers to accompany and assist the party in destroying the giants.
 
 ## Silver Head
 
-The city of Silver Head sits in the foothills of the Sword Mountains.
+### Important People of Silver Head
+
+**Shoppi Silverbeard** The leader of the local guild of merchants, Shoppi is strongly opposed to the Duke siding with Manius Aquila.
+
+**Duke Julianus Cato** The duke of Silver Head, currently polymorphed into a goat. He vaguely remembers not being a goat, and recognizes the players as the sort of people who might help him return to his proper form.
+
+**The Doppelganger Duke** The Doppelganger who is currently mimicking duke Julianus was hired by Manius Aquila to take his place, who also provided the scroll of True Polymorph used for the transformation. He has brought in devils from Manius Aquila's primary force to serve as an enforcer squad.
+
+The city of Silver Head sits in the foothills of the Sword Mountains. It isn't a large city, but because of its strategic importance both as a funnel for valuable minerals and as a crossroads between 3 nations, it has been heavily fortified. Silver Head is the only majority gnome city of more than 1000 in Dormania, and while the duke himself is human, much of the power in the city rests with the gnomish silver merchants, in particular the head of the local branch of the Guild of Illustrious Merchants and Fine Artisans, Shoppi Silverbeard. Shoppi opposes the Dukes position in the civil war, as the city is blockaded from its most important trade routes and it hurts profits.
+
+When the players first arrive in the city, Shoppi is leading a street protest of merchants and workers involved in the silver trade demanding the Duke switch sides. A captain representing the Duke will declare the protest an act of treason and send in thugs to kill protesters. The thugs are bearded devils.
+
+During this scene a goat will begin following the party. The goat is the actual Duke, true polymorphed by the doppelganger who took his place.
 
 #### The Duke of Silver Head
 
+The Duke has been polymorphed into a goat, has all the intelligence and abilities of a goat, but vaguely remembers not being a goat.
+
 #### The Doppelganger
 
-## The Mind Flayer
+A doppelganger working for Manius Aquila and the devils managed to replace the Duke of Silver Head.
 
+## The Mind Flayer
 
 Players should level up to level 7 at the end of this chapter.
