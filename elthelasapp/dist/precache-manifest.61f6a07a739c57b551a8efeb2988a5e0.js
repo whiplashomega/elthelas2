@@ -1,43 +1,51 @@
 self.__precacheManifest = [
   {
-    "revision": "e87af93b6a8eeb08dd06a69a42eacede",
-    "url": "/json/territories.json"
-  },
-  {
-    "revision": "330982bccea858db7968bf5625401b26",
-    "url": "/static/md/book4/pcs.md"
+    "revision": "b58081e43f66a676a043cb400fe150e3",
+    "url": "/json/races.json"
   },
   {
     "revision": "2c0c0b0008f1399bde41ecb582de658d",
     "url": "/static/md/book4/theworld.md"
   },
   {
+    "revision": "70de9259d70c18926185de5d60e42a0f",
+    "url": "/json/spells.json"
+  },
+  {
+    "revision": "d13d0d30aa8a3300d4bd",
+    "url": "/css/chunk-vendors.fb7d2cbe.css"
+  },
+  {
+    "revision": "82a4fd3fe6368758827dc06e38e22f16",
+    "url": "/img/tl-icons.82a4fd3f.svg"
+  },
+  {
+    "revision": "b0f49cd26ba67885381b66e77665bf02",
+    "url": "/fonts/tl-icons.b0f49cd2.eot"
+  },
+  {
+    "revision": "1c1bfe463a8773c8b703389174dc4dd9",
+    "url": "/fonts/tl-icons.1c1bfe46.woff"
+  },
+  {
+    "revision": "8402c93e00aa667edeceebe3dcfde5fe",
+    "url": "/fonts/tl-icons.8402c93e.ttf"
+  },
+  {
+    "revision": "43260ba4fe3db99848fbf4409dabd2c1",
+    "url": "/index.html"
+  },
+  {
+    "revision": "330982bccea858db7968bf5625401b26",
+    "url": "/static/md/book4/pcs.md"
+  },
+  {
     "revision": "fe9884553a1ae2ea1bb0d6f76a8d4822",
     "url": "/js/locale/el.json"
   },
   {
-    "revision": "d13d0d30aa8a3300d4bd",
-    "url": "/js/chunk-vendors.03c1a5e0.js"
-  },
-  {
-    "revision": "2a7a0ec8da4974b7bfb9f99c94243405",
-    "url": "/static/md/book4/curestan.md"
-  },
-  {
-    "revision": "c5636d02b570345d28ba985cc2cf6e0e",
-    "url": "/static/md/book4/chaptertemplate.md"
-  },
-  {
-    "revision": "2aadc65aa90a103e7623b74ac6b77766",
-    "url": "/static/md/book4/chapter9.md"
-  },
-  {
-    "revision": "f1feb4859a67831a64a09210d1930bf4",
-    "url": "/static/md/book4/chapter8.md"
-  },
-  {
-    "revision": "408bd6e11ad4774bb150fa0abd2d544b",
-    "url": "/static/md/book4/chapter7.md"
+    "revision": "d3d9140c4d912e18b894495d6c87f2df",
+    "url": "/js/timeline.js"
   },
   {
     "revision": "5142d6998f2907692d3fd3fb446368b5",
@@ -104,36 +112,36 @@ self.__precacheManifest = [
     "url": "/json/organizations.json"
   },
   {
-    "revision": "b58081e43f66a676a043cb400fe150e3",
-    "url": "/json/races.json"
+    "revision": "d2abdd3c49a2e2b7b909",
+    "url": "/js/app.38ff7e14.js"
   },
   {
-    "revision": "70de9259d70c18926185de5d60e42a0f",
-    "url": "/json/spells.json"
+    "revision": "d13d0d30aa8a3300d4bd",
+    "url": "/js/chunk-vendors.03c1a5e0.js"
   },
   {
-    "revision": "6ccdd323bd6fadf7e4ff2ecd6fe1a0ce",
-    "url": "/static/md/book4/chapter6.md"
+    "revision": "e87af93b6a8eeb08dd06a69a42eacede",
+    "url": "/json/territories.json"
   },
   {
     "revision": "ef7253ed20b47b8088b491a345d76300",
     "url": "/json/weapons.json"
   },
   {
-    "revision": "c701d15498e29dd95e63b8f8aef0baa0",
-    "url": "/static/md/book4/chapter4old.md"
-  },
-  {
-    "revision": "d41d8cd98f00b204e9800998ecf8427e",
-    "url": "/static/md/book.md"
+    "revision": "0b725cd54bc29c1332544e44645117f8",
+    "url": "/manifest.webmanifest"
   },
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
     "url": "/robots.txt"
   },
   {
-    "revision": "0b725cd54bc29c1332544e44645117f8",
-    "url": "/manifest.webmanifest"
+    "revision": "d41d8cd98f00b204e9800998ecf8427e",
+    "url": "/static/md/book.md"
+  },
+  {
+    "revision": "b4dbc6cdee8578c21eb3224fa90ecbbd",
+    "url": "/static/md/book4/chapter1.md"
   },
   {
     "revision": "4c28c982dd966cbda62320d4f432222d",
@@ -142,14 +150,6 @@ self.__precacheManifest = [
   {
     "revision": "c1f7c7ff514a5a537df5875330776851",
     "url": "/static/md/book4/chapter11.md"
-  },
-  {
-    "revision": "b4dbc6cdee8578c21eb3224fa90ecbbd",
-    "url": "/static/md/book4/chapter1.md"
-  },
-  {
-    "revision": "d3d9140c4d912e18b894495d6c87f2df",
-    "url": "/js/timeline.js"
   },
   {
     "revision": "9a4b633c555585a69400617e46e2601e",
@@ -168,16 +168,16 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chapter1old.md"
   },
   {
-    "revision": "7f3ac65c03999ab0f8fc1feaa1fc85dc",
-    "url": "/static/md/book4/chapter3.md"
-  },
-  {
     "revision": "81c2fab248da1d2b661dd1538cac6fb6",
     "url": "/static/md/book4/chapter2.md"
   },
   {
     "revision": "e6e924c38482cc893175b92d762d5a1c",
     "url": "/static/md/book4/chapter2old.md"
+  },
+  {
+    "revision": "7f3ac65c03999ab0f8fc1feaa1fc85dc",
+    "url": "/static/md/book4/chapter3.md"
   },
   {
     "revision": "0f3706bbf9968b8f0f3209cf69b52a59",
@@ -188,39 +188,39 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chapter4.md"
   },
   {
+    "revision": "c701d15498e29dd95e63b8f8aef0baa0",
+    "url": "/static/md/book4/chapter4old.md"
+  },
+  {
     "revision": "4aa5ed4c77597d4ab0a032dbc32cd44c",
     "url": "/static/md/book4/chapter5.md"
   },
   {
-    "revision": "178d2294a22d572a268d",
-    "url": "/js/app.2fcc5e8b.js"
+    "revision": "6ccdd323bd6fadf7e4ff2ecd6fe1a0ce",
+    "url": "/static/md/book4/chapter6.md"
   },
   {
-    "revision": "782cd0df3f907cc9de641b0f47ce8dc1",
-    "url": "/index.html"
+    "revision": "408bd6e11ad4774bb150fa0abd2d544b",
+    "url": "/static/md/book4/chapter7.md"
   },
   {
-    "revision": "82a4fd3fe6368758827dc06e38e22f16",
-    "url": "/img/tl-icons.82a4fd3f.svg"
+    "revision": "f1feb4859a67831a64a09210d1930bf4",
+    "url": "/static/md/book4/chapter8.md"
   },
   {
-    "revision": "b0f49cd26ba67885381b66e77665bf02",
-    "url": "/fonts/tl-icons.b0f49cd2.eot"
+    "revision": "2aadc65aa90a103e7623b74ac6b77766",
+    "url": "/static/md/book4/chapter9.md"
   },
   {
-    "revision": "8402c93e00aa667edeceebe3dcfde5fe",
-    "url": "/fonts/tl-icons.8402c93e.ttf"
+    "revision": "c5636d02b570345d28ba985cc2cf6e0e",
+    "url": "/static/md/book4/chaptertemplate.md"
   },
   {
-    "revision": "1c1bfe463a8773c8b703389174dc4dd9",
-    "url": "/fonts/tl-icons.1c1bfe46.woff"
+    "revision": "2a7a0ec8da4974b7bfb9f99c94243405",
+    "url": "/static/md/book4/curestan.md"
   },
   {
-    "revision": "d13d0d30aa8a3300d4bd",
-    "url": "/css/chunk-vendors.fb7d2cbe.css"
-  },
-  {
-    "revision": "178d2294a22d572a268d",
+    "revision": "d2abdd3c49a2e2b7b909",
     "url": "/css/app.0b0dfd9f.css"
   },
   {
