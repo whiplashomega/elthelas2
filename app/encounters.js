@@ -26,7 +26,7 @@ router.post('/', Verify.verifyOrdinaryUser, function(req, res) {
 });
 
 router.post('/:id', Verify.verifyOrdinaryUser, function(req, res) {
-  Encounter.findOneAndUpdate({ _id: req.params.id, owner: req.decoded.username }, { ...req.body.character, _id: req.params.id } , { new: true }, function(err, encounter) {
+  Encounter.findOneAndUpdate({ _id: req.params.id, owner: req.decoded.username }, { ...req.body.encounter, _id: req.params.id } , { new: true }, function(err, encounter) {
     if (err) throw err;
     res.header("Cache-Control", "no-cache, no-store, must-revalidate");
     res.header("Pragma", "no-cache");
