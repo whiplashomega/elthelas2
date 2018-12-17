@@ -9,7 +9,7 @@ var Encounter = new Schema({
   prereq: String,
   environment: String,
   tier: String,
-  treasure: String,
+  treasure: { type: String, default: "" },
   random: Boolean,
   complete: Boolean,
   owner: String
