@@ -51,8 +51,11 @@ export default {
   },
   actions: {
     getAllEncounters: ({ state, getters }) => {
-      Vue.http.get('/encounters?token=' + getters.getUserInfo.token).then((res) => {
-        state.all = res.body;
+      return new Promise((resolve) => {
+        Vue.http.get('/encounters?token=' + getters.getUserInfo.token).then((res) => {
+          state.all = res.body;
+          resolve();
+        });
       });
     },
     saveNewEncounter: ({ state, getters }) => {
