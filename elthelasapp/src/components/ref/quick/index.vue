@@ -1,6 +1,6 @@
 <template>
 	<div class="col-sm-12">
-        <b-tabs id="refdiv">
+        <b-tabs id="refdiv" v-if="!printMode">
           <b-tab title="Spells">
             <h3>Spells</h3>
             <b-row>
@@ -55,7 +55,7 @@
                 <p><strong>Components: </strong>{{spelltable.modalInfo.content.components}}</p>
                 <p><strong>Duration: </strong>{{spelltable.modalInfo.content.duration}}</p>
                 <p><strong>Tags: </strong> {{spelltable.modalInfo.content.tagText}}</p>
-                <div v-html="spelltable.modalInfo.description"></div>
+                <div v-html="$options.filters.marked(spelltable.modalInfo.description)"></div>
             </b-modal>
           </b-tab>
           <b-tab title="Conditions">
@@ -1273,7 +1273,8 @@
                   <b-form-checkbox value="Very Rare">Very Rare</b-form-checkbox>
                   <b-form-checkbox value="Legendary">Legendary</b-form-checkbox>
                 </b-form-checkbox-group>
-                Maximum Cost <b-form-input label="Maximum Cost" type="number" v-model="magicitemtables.filterCost" class="col-4" />
+                <label class="col-4">Maximum Cost <b-form-input label="Maximum Cost" type="number" v-model="magicitemtables.filterCost" /></label>
+                <button class="btn btn-primary col-2" @click="printSelected()" style="margin-top:-5px;">Print Selected</button>
               </b-col>
               <b-col md="4" class="my-1">
                 <b-input-group>
@@ -1282,14 +1283,14 @@
                 </b-input-group>
               </b-col>
             </b-row>
-            <b-row><button class="btn btn-sm btn-primary" @click="printSelected()">Print Selected</button></b-row>
+            <b-row></b-row>
             <b-modal id="magicitemmodal" size="lg" @hide="resetMagicItemModal" :title="magicItemModal.Item" ok-only>
                 <p><strong>Type: </strong>{{magicItemModal.Type}}</p>
                 <p><strong>Cost (gp): </strong>{{magicItemModal["Cost (gp)"]}}</p>
                 <p><strong>Attunement: </strong>{{magicItemModal.Attunement}}</p>
                 <p><strong>Rarity: </strong>{{magicItemModal.Rarity}}</p>
                 <p><strong>{{magicItemModal.instock}}</strong></p>
-                <div v-html="magicItemModal.Effect"></div>
+                <div v-html="$options.filters.marked(magicItemModal.Effect)"></div>
             </b-modal>
             <b-tabs id="magicitemcatalog">
               <b-tab title="Scrolls">
@@ -1306,7 +1307,7 @@
                 </b-table>
               </b-tab>
               <b-tab title="Wands">
-                <b-table show-empty
+                <b-table show-empty @row-clicked="selectForPrint"
                   :striped="true" :bordered="false"
                   :responsive="true"
                   stacked="sm"
@@ -1319,7 +1320,7 @@
                 </b-table>
               </b-tab>
               <b-tab title="Weapons">
-                <b-table show-empty
+                <b-table show-empty @row-clicked="selectForPrint"
                   :striped="true" :bordered="false"
                   :responsive="true"
                   stacked="sm"
@@ -1345,7 +1346,7 @@
                 </b-table>
               </b-tab>
               <b-tab title="Other">
-                <b-table show-empty
+                <b-table show-empty @row-clicked="selectForPrint"
                   :striped="true" :bordered="false"
                   :responsive="true"
                   stacked="sm"
@@ -1360,6 +1361,13 @@
             </b-tabs>
           </b-tab>
         </b-tabs>
+        <div class="col-sm-12" v-if="printMode">
+          <div v-for="item in toPrint" :key="item.Item" style="margin-bottom:50px;page-break-inside:avoid;">
+            <h4>{{ item.Item }} ({{ item.Type }}, {{item.Rarity}})</h4>
+            <div v-html="$options.filters.marked(item.Effect)"></div>
+          </div>
+          <button class="btn btn-success" @click="toPrint = []; printMode = false;">Exit</button>
+        </div>
       </div>
 </template>
 <script src="./quick.js"></script>

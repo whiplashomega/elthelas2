@@ -95,7 +95,9 @@ export default {
         sortDesc: false
       },
       magicItemModal: { Item: '', Rarity: '', instock: '', Effect: '', 'Cost (gp)': '', Attunement: '' },
-      instockonly: true
+      instockonly: true,
+      toPrint: [],
+      printMode: false
     };
   },
   methods: {
@@ -114,7 +116,7 @@ export default {
       }
     },
     printSelected () {
-      let toPrint = this.magicitems.reduce((a, b) => {
+      this.toPrint = this.magicitems.reduce((a, b) => {
         console.log(b.print);
         if (b.print) {
           console.log(b);
@@ -122,7 +124,7 @@ export default {
         }
         return a;
       }, []);
-      console.log(toPrint);
+      this.printMode = true;
     },
     magicItemInfo (item, index, button) {
       this.magicItemModal = item;
