@@ -3,7 +3,7 @@ layout: post
 title: "Scrying"
 date: 2015-07-30
 source: PHB.273
-tags: [bard, cleric, druid, warlock, wizard, level5, divination]
+tags: [archivist, bard, cleric, druid, warlock, wizard, level5, divination]
 ---
 
 **5th-level divination**

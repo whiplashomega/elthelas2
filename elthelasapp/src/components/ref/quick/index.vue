@@ -15,6 +15,7 @@
                     <b-form-checkbox value="description">Description</b-form-checkbox>
                   </b-form-checkbox-group>
                   <b-form-checkbox-group v-model="spelltable.classes">
+                    <b-form-checkbox value="archivist">Archivist</b-form-checkbox>
                     <b-form-checkbox value="bard">Bard</b-form-checkbox>
                     <b-form-checkbox value="cleric">Cleric</b-form-checkbox>
                     <b-form-checkbox value="druid">Druid</b-form-checkbox>

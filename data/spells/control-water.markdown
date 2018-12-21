@@ -3,7 +3,7 @@ layout: post
 title:  "Control Water"
 date:   2015-01-05
 source: PHB.227
-tags: [cleric, druid, wizard, level4, transmutation]
+tags: [archivist, cleric, druid, wizard, level4, transmutation]
 ---
 
 **4th-level transmutation**

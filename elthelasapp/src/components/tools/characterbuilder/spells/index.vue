@@ -164,6 +164,7 @@
       Filter by Class
       <select v-model="classfilter" class="form-control">
         <option value="all">All</option>
+        <option value="archivist">Archivist</option>
         <option value="bard">Bard</option>
         <option value="cleric">Cleric</option>
         <option value="druid">Druid</option>
