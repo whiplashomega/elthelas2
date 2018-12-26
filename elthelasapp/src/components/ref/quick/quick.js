@@ -95,6 +95,7 @@ export default {
         sortDesc: false
       },
       magicItemModal: { Item: '', Rarity: '', instock: '', Effect: '', 'Cost (gp)': '', Attunement: '' },
+      gearModal: { Item: '', Cost: '', Weight: '', Description: '' },
       instockonly: true,
       toPrint: [],
       printMode: false
@@ -128,12 +129,18 @@ export default {
     },
     magicItemInfo (item, index, button) {
       this.magicItemModal = item;
-      this.magicItemModal.description = marked(this.magicItemModal.Effect);
       this.$root.$emit('bv::show::modal', 'magicitemmodal', button);
+    },
+    adventuringGearInfo (item, index, button) {
+      this.gearModal = item;
+      this.$root.$emit('bv::show::modal', 'gearmodal', button);
     },
     resetSpellModal () {
       this.spelltable.modalInfo.title = "";
       this.spelltable.modalInfo.content = {title: '', level: '', school: '', duration: '', description: '', castingTime: '', tags: [], tagsText: ''};
+    },
+    resetGearModal () {
+      this.gearModal = { Item: '', Cost: '', Weight: '', Description: '' };
     },
     resetMagicItemModal () {
       this.magicItemModal = { Item: '', Rarity: '', instock: '', Effect: '', 'Cost (gp)': '', Attunement: '' };

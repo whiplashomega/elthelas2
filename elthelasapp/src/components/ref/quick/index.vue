@@ -1190,6 +1190,11 @@
                   </b-input-group>
               </b-col>
             </b-row>
+            <b-modal id="gearmodal" size="lg" @hide="resetGearModal" :title="gearModal.Item" ok-only>
+                <p><strong>Cost (gp): </strong>{{gearModal.Cost}}</p>
+                <p><strong>Weight: </strong>{{gearModal.Weight}}</p>
+                <div v-html="$options.filters.marked(gearModal.Description)"></div>
+            </b-modal>
             <b-table show-empty
               :striped="true" :bordered="false"
               :responsive="true"
@@ -1199,6 +1204,7 @@
               :filter="equipmenttable.filter"
               :sort-by.sync="equipmenttable.sortBy"
               :sort-desc.sync="equipmenttable.sortDesc">
+              <template slot="Item" slot-scope="row"><a :title="row.item.Description" href="#" @click.stop="adventuringGearInfo(row.item, row.index, $event.target)">{{row.value}}</a></template>
             </b-table>
           </b-tab>
           <b-tab title="Armor">
@@ -1284,7 +1290,6 @@
                 </b-input-group>
               </b-col>
             </b-row>
-            <b-row></b-row>
             <b-modal id="magicitemmodal" size="lg" @hide="resetMagicItemModal" :title="magicItemModal.Item" ok-only>
                 <p><strong>Type: </strong>{{magicItemModal.Type}}</p>
                 <p><strong>Cost (gp): </strong>{{magicItemModal["Cost (gp)"]}}</p>

@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/fonts/tl-icons.8402c93e.ttf"
   },
   {
-    "revision": "d56f752cce68be5f9e5f57ae60bf1678",
+    "revision": "11f8443ea210e6e33ec2b930591298d2",
     "url": "/index.html"
   },
   {
@@ -76,11 +76,11 @@ self.__precacheManifest = [
     "url": "/json/divines.json"
   },
   {
-    "revision": "91426041b8b5c521f1117b59645fb14e",
+    "revision": "52a1bdf7deccf7030aa7bdfe3b645ae6",
     "url": "/json/equipment.json"
   },
   {
-    "revision": "509a0940649c60b463ec40d0e354b99f",
+    "revision": "c37abbcfc0dc71378ef2f24c5aea3b1d",
     "url": "/json/feats.json"
   },
   {
@@ -112,8 +112,8 @@ self.__precacheManifest = [
     "url": "/json/organizations.json"
   },
   {
-    "revision": "5b464ea61b639a73aff1",
-    "url": "/js/app.c05ea10a.js"
+    "revision": "803ae8871524d63c7b19",
+    "url": "/js/app.d9f14f71.js"
   },
   {
     "revision": "d13d0d30aa8a3300d4bd",
@@ -220,7 +220,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/curestan.md"
   },
   {
-    "revision": "5b464ea61b639a73aff1",
+    "revision": "803ae8871524d63c7b19",
     "url": "/css/app.c9e13c92.css"
   },
   {
