@@ -1,5 +1,10 @@
 import Character from '@/model/classes/character';
 import Vue from 'vue';
+import { Decimal } from 'decimal.js';
+
+function dec(num) {
+  return new Decimal(Number(num));
+}
 
 export default {
   state: {
@@ -53,12 +58,12 @@ export default {
     },
     totalGold: (state) => {
       let character = state.currentCharacter;
-      return Number(character.cp) / 100 +
-        Number(character.sp) / 10 +
-        Number(character.gp) +
-        Number(character.pp) * 10 +
-        Number(character.art) +
-        Number(character.gems);
+      return dec(character.cp).div(100)
+        .add(dec(character.sp).div(10))
+        .add(dec(character.gp))
+        .add(dec(character.pp).mul(10))
+        .add(dec(character.art))
+        .add(dec(character.gems)).toNumber();
     },
     getStatTotal: (state) => (i) => {
       return Number(state.currentCharacter.stats[i]) + Number(state.currentCharacter.race.stats[i]) + Number(state.currentCharacter.statbonus[i]);
@@ -191,16 +196,16 @@ export default {
       return containers;
     },
     carryWeight: (state, getters) => {
-      var sum = 0;
+      var sum = dec(0);
       getters.equipmentContainers.forEach((a) => {
-        sum += Number(a.weight);
+        sum = sum.add(a.weight);
         if (a.weightCounts) {
-          sum += a.equipment.reduce((a, b) => {
-            return a + Number(b.weight) * Number(b.quantity);
-          }, 0);
+          sum = sum.add(a.equipment.reduce((a, b) => {
+            return a.add(dec(b.weight).mul(b.quantity));
+          }, dec(0)));
         }
       });
-      sum += (Number(state.currentCharacter.cp) + Number(state.currentCharacter.sp) + Number(state.currentCharacter.gp) + Number(state.currentCharacter.pp)) / 50;
+      sum = sum.add(dec(state.currentCharacter.cp).add(state.currentCharacter.sp).add(state.currentCharacter.gp).add(state.currentCharacter.pp).div(50)).toNumber();
       return sum;
     },
     carryMax: (state, getters) => {

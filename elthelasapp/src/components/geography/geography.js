@@ -4,6 +4,7 @@ import 'leaflet-measure';
 import $ from 'jquery';
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
+import { Decimal } from 'decimal.js';
 
 function round(number, precision) {
   var shift = function (number, exponent) {
@@ -39,6 +40,9 @@ export default {
   methods: {
     hideModal () {
       return true;
+    },
+    div (num) {
+      return new Decimal(Number(num));
     },
     showdetails (geoitem, type) {
       if (type === 'city') {

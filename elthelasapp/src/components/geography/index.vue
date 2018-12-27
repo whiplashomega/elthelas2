@@ -50,8 +50,8 @@
         <tbody>
           <tr v-for="pop in nation.populationDistribution" v-bind:key="pop.race">
             <td><router-link :to="'/options/races/' + pop.race" >{{pop.race}}</router-link></td>
-            <td>{{(pop.proportion * nation.population)}}</td>
-            <td>{{pop.proportion * 100}}%</td>
+            <td>{{div(pop.proportion).mul(nation.population).toNumber()}}</td>
+            <td>{{div(pop.proportion).mul(100).toNumber()}}%</td>
           </tr>
           <tr>
             <td>Other</td>

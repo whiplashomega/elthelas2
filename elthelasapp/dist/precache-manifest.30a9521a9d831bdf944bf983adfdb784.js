@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/json/spells.json"
   },
   {
-    "revision": "d13d0d30aa8a3300d4bd",
-    "url": "/css/chunk-vendors.fb7d2cbe.css"
+    "revision": "ecd662a5d5e95da30733",
+    "url": "/css/chunk-vendors.1ad0b357.css"
   },
   {
     "revision": "82a4fd3fe6368758827dc06e38e22f16",
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/fonts/tl-icons.8402c93e.ttf"
   },
   {
-    "revision": "48efe248f5d552411f8f5befbf9c8f5a",
+    "revision": "4605b1a52cf0042715c654171f15d06f",
     "url": "/index.html"
   },
   {
@@ -104,7 +104,7 @@ self.__precacheManifest = [
     "url": "/json/magicitems.json"
   },
   {
-    "revision": "aeeaeba5a11d9cb41a770fc53bc7abd1",
+    "revision": "56942cb267f1d6467ed539ddf4fb191b",
     "url": "/json/nations.json"
   },
   {
@@ -112,12 +112,12 @@ self.__precacheManifest = [
     "url": "/json/organizations.json"
   },
   {
-    "revision": "6d91bf22808ce07c6a42",
-    "url": "/js/app.7634583e.js"
+    "revision": "afc771c8d5895f96213c",
+    "url": "/js/app.85bb3d69.js"
   },
   {
-    "revision": "d13d0d30aa8a3300d4bd",
-    "url": "/js/chunk-vendors.03c1a5e0.js"
+    "revision": "ecd662a5d5e95da30733",
+    "url": "/js/chunk-vendors.18dc5871.js"
   },
   {
     "revision": "e87af93b6a8eeb08dd06a69a42eacede",
@@ -220,7 +220,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/curestan.md"
   },
   {
-    "revision": "6d91bf22808ce07c6a42",
+    "revision": "afc771c8d5895f96213c",
     "url": "/css/app.75954042.css"
   },
   {
