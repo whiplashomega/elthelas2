@@ -399,10 +399,10 @@ export default {
       state.currentCharacter.armors.splice(index, 1);
     },
     removeEquipment({ state }, i) {
-      state.currentCharacter.equipment.splice(i, 1);
+      state.currentCharacter.equipment.splice(state.currentCharacter.equipment.indexOf(i), 1);
     },
     removeContainer({ state }, i) {
-      state.currentCharacter.containers.splice(i, 1);
+      state.currentCharacter.containers.splice(state.currentCharacter.containers.indexOf(i), 1);
     },
     castSpell({ state }, spell) {
       if (spell.level !== 'cantrip') {

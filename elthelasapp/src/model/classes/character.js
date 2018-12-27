@@ -60,7 +60,7 @@ export default function() {
     proficiencies: "",
     equipment: [],
     containers: [
-      { id: 0, name: "Default", capacity: 9999, weightCounts: true, weight: 0 }
+      { id: 1, name: "Carried/Worn", capacity: 9999, weightCounts: true, weight: 0 }
     ],
     cp: 0,
     sp: 0,

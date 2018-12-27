@@ -14,6 +14,7 @@ export default {
   data () {
     return {
       ctypes: [
+        { name: "", capacity: 0, weightCounts: true, weight: 0 },
         { name: "Carried/Worn", capacity: 9999, weightCounts: true, weight: 0 },
         { name: "Backpack", capacity: 30, weightCounts: true, weight: 5 },
         { name: "Pouch", capacity: 6, weightCounts: true, weight: 1 },
@@ -25,7 +26,8 @@ export default {
       containModal: false,
       newcontain: { name: "Backpack", capacity: 0, weightCounts: true, weight: 0 },
       equipModal: false,
-      newequip: { name: "", weight: 0, quantity: 1, attunement: false, edit: false, container: 0 }
+      newequip: { name: "", weight: 0, quantity: 1, attunement: false, edit: false, container: 0 },
+      ctypeselected: {}
     };
   },
   methods: {
@@ -33,8 +35,12 @@ export default {
       removeEquipment: "removeEquipment",
       removeContainer: "removeContainer"
     }),
+    newContainerType (ctype) {
+      this.newcontain = { ...ctype };
+    },
     addEquipment() {
-      this.character.equipment.push(this.newequip);
+      var id = Date.now();
+      this.character.equipment.push({ ...this.newequip, id: id });
       this.newequip = { name: "", weight: 0, quantity: 1, attunement: false, edit: false, container: this.character.containers[0].id };
       this.equipModal = false;
     },
@@ -43,6 +49,7 @@ export default {
       this.character.containers.push({ ...this.newcontain, id: id });
       this.newcontain = { name: "", capacity: 0, weightCounts: true, weight: 0 };
       this.containModal = false;
+      this.ctypeselected = this.ctypes[0];
     }
   },
   mounted () {

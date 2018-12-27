@@ -5,9 +5,9 @@
       <h4>Equipment</h4>
       <div v-for="container in equipmentContainers" v-bind:key="container.name">
         <h4 class="smalltext">
-        {{container.name}} <span class="smalltext">{{container.contains}} / {{container.capacity}} lbs <input type="button" class="btn btn-danger btn-sm" value="X" @click="removeContainer(container.container)" /></span>
+        {{container.name}} <span class="smalltext">{{container.contains}} / {{container.capacity}} lbs <input type="button" class="btn btn-danger btn-sm" value="X" @click="removeContainer(container)" /></span>
         </h4>
-        <div v-for="(item, index) in container.equipment" v-bind:key="index" class="smalltext">
+        <div v-for="item in container.equipment" v-bind:key="item.id" class="smalltext">
         <button type="button" class="print-hide btn-symbol float-left" @click="item.edit = true">&#9998;</button>
         {{ item.name }} <input type="number" class="charsheet-num" v-model="item.quantity" /> <span class="float-right">{{item.weight}} lbs</span><br />
         <b-modal v-model="item.edit" title="Edit Equipment">
@@ -22,7 +22,7 @@
             <select class="form-control" v-model="item.container" @change="item.edit = false;">
               <option v-for="container in character.containers" v-bind:key="container.id" :value="container.id">{{container.name}}</option>
             </select><br />
-            <button type="button" class="btn btn-danger print-hide" @click="removeEquipment(index)">Delete</button>
+            <button type="button" class="btn btn-danger print-hide" @click="removeEquipment(item)">Delete</button>
           </b-modal>
         </div>
       </div>
@@ -48,8 +48,10 @@
         <input type="number" class="form-control" v-model="newcontain.capacity" /><br />
         Weight Counts
         <input type="checkbox" v-model="newcontain.weightCounts" /><br />
+        Container Weight
+        <input type="number" class="form-control" v-model="newcontain.weight" /><br />
         Select Predefined Type
-        <select v-model="newcontain" class="form-control">
+        <select v-model="ctypeselected" class="form-control" @change="newContainerType(ctypeselected)">
           <option v-for="c in ctypes" :value="c" v-bind:key="c.name">{{c.name}}</option>
         </select>
       </b-modal>
