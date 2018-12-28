@@ -1,5 +1,7 @@
 {
-  "name": "Alfadir",  
+  "name": "Alfadir", 
+  "primelanguage": "",
+  "seclanguages": [],
   "coords": [-47.219568112315486, -73.64822387695314],
   "border-coords": [],
   "color": "#FFFF00",

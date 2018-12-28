@@ -1,5 +1,7 @@
 {
-  "name": "Shendarel",
+  "name": "Shendarel", 
+  "primelanguage": "",
+  "seclanguages": [],
   "coords": [-4.565473550710278, -1.7536926269531252],
   "border-coords": [],
   "color": "#FFFF00",

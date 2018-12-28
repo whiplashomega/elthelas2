@@ -1,5 +1,7 @@
 {
-  "name": "Eldoran",
+  "name": "Eldoran", 
+  "primelanguage": "",
+  "seclanguages": [],
   "coords": [34.08906131584996, -12.036895751953127],
   "border-coords": [],
   "color": "#FFFF00",

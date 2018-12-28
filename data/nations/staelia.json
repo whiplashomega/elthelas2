@@ -1,5 +1,7 @@
 {
-  "name": "Staelia",
+  "name": "Staelia", 
+  "primelanguage": "",
+  "seclanguages": [],
   "coords": [-59.130863097255904, -62.13455200195313],
   "border-coords": [],
   "color": "#FF0000",

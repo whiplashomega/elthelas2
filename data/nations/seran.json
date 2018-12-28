@@ -1,5 +1,7 @@
 {
-  "name": "Seran",
+  "name": "Seran", 
+  "primelanguage": "",
+  "seclanguages": [],
   "coords": [-36.3151251474805, 113.82247924804689],
   "border-coords": [],
   "color": "#FFFF00",

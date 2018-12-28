@@ -1,5 +1,7 @@
 {
-  "name": "Morrindim",
+  "name": "Morrindim", 
+  "primelanguage": "",
+  "seclanguages": [],
   "coords": [-36.738884124394296, -17.57400512695313],
   "border-coords": [],
   "color": "#FFFF00",

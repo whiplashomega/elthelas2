@@ -1,5 +1,7 @@
 {
-  "name": "Olda",
+  "name": "Olda", 
+  "primelanguage": "",
+  "seclanguages": [],
   "coords": [-11.5230875068685, 0.35568237304687506],
   "border-coords": [],
   "color": "#FFFF00",

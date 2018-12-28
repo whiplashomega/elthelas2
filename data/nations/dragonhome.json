@@ -1,5 +1,7 @@
 {
-  "name": "Dragonhome",
+  "name": "Dragonhome", 
+  "primelanguage": "",
+  "seclanguages": [],
   "coords": [0.9667509997666425, -104.93728637695314],
   "border-coords": [],
   "color": "#FFFF00",

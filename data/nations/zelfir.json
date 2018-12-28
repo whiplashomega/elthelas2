@@ -1,5 +1,7 @@
 {
-  "name": "Zelfir",
+  "name": "Zelfir", 
+  "primelanguage": "",
+  "seclanguages": [],
   "coords": [-44.27667127377517, -106.07986450195312],
   "border-coords": [],
   "color": "#FFFF00",

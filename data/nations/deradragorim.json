@@ -1,5 +1,7 @@
 {
-  "name": "Dera'Dragorim",
+  "name": "Dera'Dragorim", 
+  "primelanguage": "",
+  "seclanguages": [],
   "coords": [32.84267363195431, -59.76150512695313],
   "border-coords": [],
   "color": "#FFFF00",

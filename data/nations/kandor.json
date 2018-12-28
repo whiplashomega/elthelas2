@@ -1,5 +1,7 @@
 {
-  "name": "Kandor",
+  "name": "Kandor", 
+  "primelanguage": "",
+  "seclanguages": [],
   "coords": [59.265880628258095, 71.28341674804689],
   "border-coords": [],
   "color": "#FFFF00",

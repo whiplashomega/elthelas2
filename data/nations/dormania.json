@@ -1,5 +1,7 @@
 {
-  "name": "Dormania",
+  "name": "Dormania", 
+  "primelanguage": "",
+  "seclanguages": [],
   "coords": [56.26776108757582, 107.14279174804689],
   "border-coords": [],
   "color": "#FFFF00",

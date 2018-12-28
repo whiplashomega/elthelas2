@@ -1,5 +1,7 @@
 {
-  "name": "Riftlan Wilds",
+  "name": "Riftlan Wilds", 
+  "primelanguage": "",
+  "seclanguages": [],
   "coords": [11.350796722383672, -121.02127075195314],
   "border-coords": [],
   "color": "#FFFF00",

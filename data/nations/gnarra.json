@@ -1,5 +1,7 @@
 {
-  "name": "Gnarra",
+  "name": "Gnarra", 
+  "primelanguage": "",
+  "seclanguages": [],
   "coords": [-3.601142320158722, -23.72634887695313],
   "border-coords": [],
   "color": "#FFFF00",

@@ -1,5 +1,7 @@
 {
-  "name": "Sage",
+  "name": "Sage", 
+  "primelanguage": "",
+  "seclanguages": [],
   "coords": [-29.45873118535533, -54.13650512695313],
   "border-coords": [],
   "color": "#FFFF00",

@@ -1,5 +1,7 @@
 {
-  "name": "Malinval",
+  "name": "Malinval", 
+  "primelanguage": "",
+  "seclanguages": [],
   "coords": [-4.477856485570586, 82.62130737304688],
   "border-coords": [],
   "color": "#FFFF00",

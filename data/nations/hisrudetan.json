@@ -1,5 +1,7 @@
 {
-  "name": "Hisru'de'tan",
+  "name": "Hisru'de'tan", 
+  "primelanguage": "",
+  "seclanguages": [],
   "coords": [-27.994401411046148, -72.06619262695314],
   "border-coords": [],
   "color": "#FFFF00",

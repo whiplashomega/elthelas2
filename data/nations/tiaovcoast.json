@@ -1,5 +1,7 @@
 {
-  "name": "Tiaov Coast",
+  "name": "Tiaov Coast", 
+  "primelanguage": "",
+  "seclanguages": [],
   "coords": [-55.62799595426722, -88.58963012695314],
   "border-coords": [],
   "color": "#222200",

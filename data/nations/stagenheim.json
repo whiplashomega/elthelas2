@@ -1,5 +1,7 @@
 {
-  "name": "Stagenheim",
+  "name": "Stagenheim", 
+  "primelanguage": "",
+  "seclanguages": [],
   "coords": [-45.02695045318545, -56.33377075195313],
   "border-coords": [],
   "color": "#FFFF00",

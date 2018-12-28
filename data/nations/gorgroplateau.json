@@ -1,5 +1,7 @@
 {
-  "name": "Gorgro Plateau",
+  "name": "Gorgro Plateau", 
+  "primelanguage": "",
+  "seclanguages": [],
   "coords": [-61.14323525084057, -78.83377075195314],
   "border-coords": [],
   "color": "#222200",

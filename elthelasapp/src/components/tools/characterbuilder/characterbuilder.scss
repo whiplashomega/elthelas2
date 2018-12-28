@@ -40,7 +40,7 @@
 }
 
 #attackdiv {
-  max-height: 350px;
+  min-height: 175px;
 }
 
 .clickable {
@@ -58,7 +58,7 @@
   h4 {
     font-size: 1.5em;
   }
-  max-height: 720px;
+  min-height: 360px;
 }
 
 #profbox {
@@ -66,11 +66,11 @@
 }
 
 #armorbox {
-  max-height: 325px;
+  min-height: 160px;
 }
 
 #equipmentbox {
-  max-height: 500px;
+  min-height: 400px;
 }
 .center {
   text-align: center;

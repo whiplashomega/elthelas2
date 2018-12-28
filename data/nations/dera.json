@@ -1,5 +1,7 @@
 {
-  "name": "Dera",
+  "name": "Dera", 
+  "primelanguage": "",
+  "seclanguages": [],
   "coords": [21.861498734372567, -96.58767700195314],
   "border-coords": [],
   "color": "#FFFF00",

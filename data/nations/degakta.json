@@ -1,5 +1,7 @@
 {
-  "name": "Degak'Ta",
+  "name": "Degak'Ta", 
+  "primelanguage": "",
+  "seclanguages": [],
   "coords": [-48.980216985374994, 48.69552612304688],
   "border-coords": [],
   "color": "#FFFF00",

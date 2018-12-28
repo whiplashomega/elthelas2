@@ -3,9 +3,27 @@ export default function() {
     name: "",
     player: "",
     warlockslotsavailable: 0,
-    charclasses: [{ thisclass: { name: "", subclass: [], hitdie: 6, features: [] }, level: 0, selsubclass: { castermult: 0, features: [] } }],
+    charclasses: [{
+      thisclass:
+      {
+        name: "",
+        subclass: [],
+        hitdie: 6,
+        features: [],
+        proficiencies: {
+          "armor": [ ],
+          "weapons": [ ],
+          "tools": [ ],
+          "saving throws": [ ],
+          "numskills": 2,
+          "skills": [ ]
+        }
+      },
+      level: 0,
+      selsubclass: { castermult: 0, features: [] } }
+    ],
     race: { stats: [0, 0, 0, 0, 0, 0], speed: [0, 0, 0, 0, 0] },
-    background: { feature: { show: false, description: "", name: "" } },
+    background: { feature: { show: false, description: "", name: "" }, skills: [], tools: [] },
     alignment: "",
     faction: { level1: "", level10: "" },
     homecountry: "",

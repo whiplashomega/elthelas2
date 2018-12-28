@@ -1,5 +1,7 @@
 {
-  "name": "Nerim",
+  "name": "Nerim", 
+  "primelanguage": "",
+  "seclanguages": [],
   "coords": [-46.49839225859762, 107.93380737304689],
   "border-coords": [],
   "color": "#FFFF00",

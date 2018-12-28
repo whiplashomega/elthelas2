@@ -1,5 +1,7 @@
 {
-  "name": "Demal Thor",
+  "name": "Demal Thor", 
+  "primelanguage": "",
+  "seclanguages": [],
   "coords": [12.726084296948196, 45.35568237304688],
   "border-coords": [],
   "color": "#FFFF00",

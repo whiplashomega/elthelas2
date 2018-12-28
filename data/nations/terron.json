@@ -1,5 +1,7 @@
 {
-  "name": "Terron",
+  "name": "Terron", 
+  "primelanguage": "",
+  "seclanguages": [],
   "coords": [-6.489983332670651, 118.21701049804689],
   "border-coords": [],
   "color": "#FFFF00",

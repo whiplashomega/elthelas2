@@ -1,5 +1,7 @@
 {
-  "name": "Gerasalim",
+  "name": "Gerasalim", 
+  "primelanguage": "",
+  "seclanguages": [],
   "coords": [40.38002840251183, 85.43380737304689],
   "border-coords": [],
   "color": "#FFFF00",

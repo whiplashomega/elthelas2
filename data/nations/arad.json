@@ -1,5 +1,7 @@
 {
-  "name": "Arad",
+  "name": "Arad", 
+  "primelanguage": "",
+  "seclanguages": [],
   "coords": [5.965753671065536, 106.08810424804689],
   "border-coords": [],
   "color": "#222200",
