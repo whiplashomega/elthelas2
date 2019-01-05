@@ -1369,8 +1369,8 @@
         </b-tabs>
         <div class="col-sm-12" v-if="printMode">
           <div v-for="item in toPrint" :key="item.Item" style="margin-bottom:50px;page-break-inside:avoid;">
-            <h4>{{ item.Item }} ({{ item.Type }}, {{item.Rarity}})</h4>
-            <div v-html="$options.filters.marked(item.Effect)"></div>
+            <h4 style="font-size:3em;">{{ item.Item }} ({{ item.Type }}, {{item.Rarity}})</h4>
+            <div v-html="$options.filters.marked(item.Effect)" style="font-size:1.5em;"></div>
           </div>
           <button class="btn btn-success" @click="toPrint = []; printMode = false;">Exit</button>
         </div>
