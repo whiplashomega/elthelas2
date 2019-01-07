@@ -1339,7 +1339,7 @@
                 </b-table>
               </b-tab>
               <b-tab title="Armor">
-                <b-table show-empty
+                <b-table show-empty @row-clicked="selectForPrint"
                   :striped="true" :bordered="false"
                   :responsive="true"
                   stacked="sm"
