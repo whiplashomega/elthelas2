@@ -53,11 +53,11 @@ Shortly after the players arrive in town and have had a chance to meet a few of 
 
 The players arrive at the wall to see orcs and humans fighting at the top, orcish siege ladders bring additional orcish forces to the top. Emily Scholl leads her force to one side of the players, attempting to push the orcs off the wall, while Clara Moldenhauer personally commands the soldiers on the other side. Split control of friendly NPCs between the players. There should be two friendly soldiers for every  3 orcs, and 6 orcs per player character. Every fifth friendly soldier is a knight. The rest are guards armed with spears.
 
-There should be one siege ladder for every player present, and at the end of every round each siege ladder will deposit an additional orc at the top of the walls. Among the orcs, for each 10 orcs there is 1 Blade of Ilneval and 1 Claw of Luthic.
+There should be one siege ladder for every player present, and at the end of every round each siege ladder will deposit an additional orc at the top of the walls, and a catapult shot will land in one random square, dealing 3d10 bludgeoning damage (DC 12 dex save for half). Among the orcs, for each 10 orcs there is 1 Blade of Ilneval and 1 Claw of Luthic.
 
 Every 3 rounds the orcs will attempt to attach another siege ladder to the walls. Siege ladders can be pushed off with a DC 20 Strength Check, or destroyed. They are immune to piercing damage, and resistant to slashing and bludgeoning damage, have 30 hit points and an AC of 15. If the orcs are reduced to 3 siege ladders on the walls (or half the number of players, whichever is less) they will retreat.
 
-After the battle, Emily Scholl and Clara Moldenhauer will compliment the players skill in battle, thank them for their help, and offer to help them in whatever plan they have to sneak past enemy lines. 
+After the battle, Emily Scholl and Clara Moldenhauer will compliment the players skill in battle, thank them for their help, and offer to help them in whatever plan they have to sneak past enemy lines. Additionally, a bedraggled slave will be released from the orc camp to deliver a message. The orc warlord in charge, Cratus, offers to negotiate the terms of the cities surrender. His message: he will set up a diplomatic tent halfway between his army and the city. He will meet a delegation of the cities choice, no larger than 8 people, to meet his own delegation of 8 to negotiate the terms of surrender for the city.
 
 ### Breaking the Siege
 
@@ -100,8 +100,6 @@ The Gerasalim army has made a deal with a group of pixies to keep them hidden. T
 ## The Frost Giants
 
 The Queen's Army is aware of the Frost Giants, but so far has been unable to triangulate their exact position, and since the attacks have been focused on a series of illegal Dwarven colonies, they haven't been overly concerned. They can point the party to some dwarf refugees who were from an attacked mine. The refugees can point the players to the mine, and note that the frost giants are probably trackable from there.
-
-At the mine the party will be met by an adult gold dragon who is likewise hunting the giants. It is not knowledgable in tracking, but offers to accompany and assist the party in destroying the giants.
 
 ## Silver Head
 
