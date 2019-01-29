@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import ctest from './cordovatest.js';
 import magicweapons from '@/model/classes/magicweapons.js';
+import droll from 'droll';
 
 function getWeaponVariants (weapon) {
   return magicweapons.reduce((newArr, mag) => {
@@ -52,7 +53,14 @@ const getters = {
   allUncommons: state => state.alluncommons,
   allRares: state => state.allrares,
   allVeryRares: state => state.allveryrares,
-  allLegendaries: state => state.alllegendaries
+  allLegendaries: state => state.alllegendaries,
+  randomMagicItem: (state) => (maxvalue) => {
+    let possibles = state.all.filter((a) => {
+      return a["Cost (gp)"] <= maxvalue;
+    });
+    let i = droll.roll("1d" + possibles.length.toString()).total - 1;
+    return possibles[i];
+  }
 };
 
 const actions = {

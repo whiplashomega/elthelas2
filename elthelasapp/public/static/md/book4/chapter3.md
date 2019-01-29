@@ -47,27 +47,33 @@ Eisenferd is a small fortified city in the northwest of Gerasalim, so far ignore
 
 **Samli Sorgen** Leader of the apprentice wizards who fled to Eisenferd.
 
+**Kailu Azziri** Kailu was in the city hunting for magical artifacts stolen from the wizards college during the fall of Strovenguard.
+
+**Warlord Cratus** Master of the advance orc army responsible for the conquest of Northport now seiging Eisenferd. He has a love of duels and personal combat, and won his position through strategic success in fighting his enemies personally.
+
 ### Assault on the Walls
+
+Create the following initiative cards for this encounter:
+
+Blades of Ilneval +0 (2 attacks, longsword, +5 to hit, 2d8+3 damage)
+Claws of Luthic +0 (2 attacks (4 if less than half health), +4 to hit, 1d8+2 damage)
+Orc +1
 
 Shortly after the players arrive in town and have had a chance to meet a few of the more important people, the horns will blow in alarm and the streets will clear as a boulder from an orcish catapult levels a nearby house. Shouts can be heard from the south wall as well as the sounds of battle. If the players choose to intervene and help the defenders run the encounter as follows.
 
-The players arrive at the wall to see orcs and humans fighting at the top, orcish siege ladders bring additional orcish forces to the top. Emily Scholl leads her force to one side of the players, attempting to push the orcs off the wall, while Clara Moldenhauer personally commands the soldiers on the other side. Split control of friendly NPCs between the players. There should be two friendly soldiers for every  3 orcs, and 6 orcs per player character. Every fifth friendly soldier is a knight. The rest are guards armed with spears.
+The players arrive at the wall to see orcs and humans fighting at the top, orcish siege ladders bring additional orcish forces to the top. Emily Scholl leads her force to one side of the players, attempting to push the orcs off the wall, while Clara Moldenhauer personally commands the soldiers on the other side. Split control of friendly NPCs between the players. There should be two friendly soldiers per player character, and 6 orcs per player character. The rest are guards armed with spears and light crossbows.
 
-There should be one siege ladder for every player present, and at the end of every round each siege ladder will deposit an additional orc at the top of the walls, and a catapult shot will land in one random square, dealing 3d10 bludgeoning damage (DC 12 dex save for half). Among the orcs, for each 10 orcs there is 1 Blade of Ilneval and 1 Claw of Luthic.
+There should be one siege ladder for every player present, and at the end of every round each siege ladder will deposit an additional orc at the top of the walls, a catapult shot will land in one random square, dealing 3d10 bludgeoning damage (DC 12 dex save for half). Among the orcs, for each 10 orcs there is 1 Blade of Ilneval and 1 Claw of Luthic. To maintain this, for each orc deposited roll a d10, on a 9 place a Claw of Luthic, on a 10, place a blade of Ilneval. Each round roll a d6, on a 4, 5 or 6, the orcs attach another seige ladder to the walls.
 
-Every 3 rounds the orcs will attempt to attach another siege ladder to the walls. Siege ladders can be pushed off with a DC 20 Strength Check, or destroyed. They are immune to piercing damage, and resistant to slashing and bludgeoning damage, have 30 hit points and an AC of 15. If the orcs are reduced to 3 siege ladders on the walls (or half the number of players, whichever is less) they will retreat.
+Siege ladders can be pushed off with a DC 20 Strength Check, or destroyed. They are immune to piercing and poison damage, and resistant to cold, slashing and bludgeoning damage, have 30 hit points and an AC of 15. If the orcs are reduced to 3 siege ladders on the walls (or half the number of players, whichever is less) they will retreat.
 
 After the battle, Emily Scholl and Clara Moldenhauer will compliment the players skill in battle, thank them for their help, and offer to help them in whatever plan they have to sneak past enemy lines. Additionally, a bedraggled slave will be released from the orc camp to deliver a message. The orc warlord in charge, Cratus, offers to negotiate the terms of the cities surrender. His message: he will set up a diplomatic tent halfway between his army and the city. He will meet a delegation of the cities choice, no larger than 8 people, to meet his own delegation of 8 to negotiate the terms of surrender for the city.
-
-### Breaking the Siege
-
-Breaking the siege of Eisenferd is one of the ways that Queen Organa may agree to evacuate the mountains. She has a plan to send the orc army into disarray by assassinating the warlord in charge of the army at the same time as she attempts to decieve them into believing they are under attack by a much larger force, so that the orcs retreat.
 
 [Warlord Cratus](/runner/warlordcratus)
 
 ### The Apprentices
 
-The apprentices are a group of 3 less than level 1 wizards. They only know cantrips, each of them has learned one damaging cantrip and one other cantrip, for example, Harry knows firebolt and message, Harvy knows shocking grasp and mending, and Houston knows ray of frost and dancing lights.
+The apprentices are a group of 3 less than level 1 wizards, and one actual level 1 wizard. The lesser ones only know cantrips, each of them has learned one damaging cantrip and one other cantrip, Harry knows firebolt and message, Harvy knows shocking grasp and mending, and Houston knows ray of frost and dancing lights. The leader of the group and most experienced is Samli Sorgen, a level 1 wizard.
 
 ## The Queen's Army
 
@@ -101,6 +107,10 @@ The Gerasalim army has made a deal with a group of pixies to keep them hidden. T
 
 The Queen's Army is aware of the Frost Giants, but so far has been unable to triangulate their exact position, and since the attacks have been focused on a series of illegal Dwarven colonies, they haven't been overly concerned. They can point the party to some dwarf refugees who were from an attacked mine. The refugees can point the players to the mine, and note that the frost giants are probably trackable from there.
 
+The frost giants numbers have been overstated by the distraught miners, a fact that can be easily discerned from the tracks by a decent tracker. The mine was attacked by only 2 giants, and it is less of a 'colony' and more a few outcasts causing trouble. There are 3 frost giants that need to be dealt with.
+
+[Frost Giants](/runner/frostgiant&frostgiant&frostgiant)
+
 ## Silver Head
 
 ### Important People of Silver Head
@@ -126,5 +136,9 @@ The Duke has been polymorphed into a goat, has all the intelligence and abilitie
 A doppelganger working for Manius Aquila and the devils managed to replace the Duke of Silver Head.
 
 ## The Mind Flayer
+
+Calagus the Mind Flayer is living in Silver Head, using illusion to disguise himself as an ordinary Blacksmith. He is well regarded by his friends, but for some reason no one can remember what he looks like. If found out he will plead for a reprieve, for although he successfully completed his ritual to achieve functional immortality, he otherwise breaks no laws, and has not yet lived out the natural lifespan of a mindflayer. He will attempt to fight and escape if a repreive is not granted.
+
+[Calagus the Mind Flayer](/runner/calagusthemindflayer)
 
 Players should level up to level 7 at the end of this chapter.

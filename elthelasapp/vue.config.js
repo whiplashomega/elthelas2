@@ -1,5 +1,10 @@
 module.exports = {
+  configureWebpack: {
+    performance: { hints: false },
+  },
   devServer: {
+    hot: false,
+    inline: false,
     disableHostCheck: true,
     proxy: { 
       '/users/*': { target: 'http://0.0.0.0:8081' },

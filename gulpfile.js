@@ -251,6 +251,7 @@ gulp.task('jsoncompile', function(done) {
     jsonmin('./data/weapons.json', './elthelasapp/public/json/weapons.json'), //armor
     jsonmin('./data/armor.json', './elthelasapp/public/json/armor.json'), //equipment
     jsonmin('./data/equipment.json', './elthelasapp/public/json/equipment.json'), //magic items
+    jsonmin('./data/valuables.json', './elthelasapp/public/json/valuables.json'), //valuables
     jsonmin('./data/magicitems.json', './elthelasapp/public/json/magicitems.json'), //gods
     compiledir("./data/gods", "./elthelasapp/public/json/gods.json", "God"), //races
     compiledir("./data/races", "./elthelasapp/public/json/races.json", "Race"), //organizations

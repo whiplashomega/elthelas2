@@ -383,7 +383,7 @@ var router = new Router({
       meta: {
         title: "Treasure Generator"
       },
-      path: "/treasuregenerator",
+      path: "/tools/treasuregenerator",
       components: {
         default: treasuregenerator
       }

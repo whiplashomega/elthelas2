@@ -84,6 +84,10 @@
       Barbarian table, you must finish a long rest before you
       can rage again.
     </p>
+    <h3>Barbarians in Elthelas</h3>
+    <p>
+      Barbarian tribes exist in a wide variety of areas in Elthelas, particularly in the wild areas far from the cities. Notable places in Elathia include the runic mountains, sword mountains, the wooded region southwest of Purs, the border region between Eldoran, Demal Thor, and Curinor, the far southern region of Waelin, near the Glass Cliff, the Black Peaks, and the central plains of Malinval. In Atyrea, notable regions include the mountains of Sagenheim (since the gnomish cities exist mostly as cavern cities, the surface is largely held by barbarians), the southern ice wastes, throughout Sage, and the Tiaov Coast. In Riftlan, barbarian tribes can be found throughout in all regions north of Zelfir.
+    </p>
   </div>
   <div class="racediv" id="bard">
     <h2>Bard</h2>
@@ -97,6 +101,10 @@
       <li>College of Valor (PHB p55)</li>
       <li>College of Whispers (XGE p16)</li>
     </ul>
+    <h3>Bards in Elthelas</h3>
+    <p>
+      Schools that train bards exist throughout Elthelas, in many larger cities you can find 2 or even 3 colleges in competition with each other for students, promoting their different philosophies. While the differnet schools of thought have each spread throughout the lands, the College's of Glamour and Lore hold the most sway in Eldoran, while the College's of Swords and Valor are more common among the Dwarves and Humans. The College of Whispers is unique in that it does not publicize it's existence, although its graduates are often recruited by state sponsored spy agencies.
+    </p>
   </div>
   <div class="racediv" id="cleric">
     <h2>Cleric</h2>
@@ -120,7 +128,11 @@
       <li>War (PHB p63)</li>
       <li><router-link to="/options/domains">Water (homebrew)</router-link></li>
     </ul>
-    <p>Note that a Cleric's domain choices </p>
+    <p>Note that a Cleric's domain choices are limited by the God they choose to worship, refer to the Gods section of the reference manual for more information.</p>
+    <h3>Clerics in Elthelas</h3>
+    <p>
+      You can find Clerics of local Gods in just about every town or village in Elthelas. No farming community would establish itself without a cleric of Sara, and no war camp would be without a cleric of Cora, Mat'raktha, or Malik. Even larger trading ships or caravans will often recruit a cleric of Maris to aid them.
+    </p>
   </div>
   <div class="racediv" id="druid">
     <h2>Druid</h2>

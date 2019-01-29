@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "b58081e43f66a676a043cb400fe150e3",
-    "url": "/json/races.json"
+    "revision": "c05bf95e5f109d5b10284c99c2e62f7a",
+    "url": "/json/spells.json"
   },
   {
     "revision": "2c0c0b0008f1399bde41ecb582de658d",
     "url": "/static/md/book4/theworld.md"
   },
   {
-    "revision": "c05bf95e5f109d5b10284c99c2e62f7a",
-    "url": "/json/spells.json"
+    "revision": "e87af93b6a8eeb08dd06a69a42eacede",
+    "url": "/json/territories.json"
   },
   {
-    "revision": "ecd662a5d5e95da30733",
-    "url": "/css/chunk-vendors.1ad0b357.css"
+    "revision": "421823054b94fee11cab",
+    "url": "/css/chunk-vendors.6f5b12eb.css"
   },
   {
     "revision": "82a4fd3fe6368758827dc06e38e22f16",
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/fonts/tl-icons.8402c93e.ttf"
   },
   {
-    "revision": "4a66fd523410ed948c7c863d21ff83e5",
+    "revision": "8f00ec35f4c4302802ccfe5033854de6",
     "url": "/index.html"
   },
   {
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/json/continents.json"
   },
   {
-    "revision": "6315480a8c1f4dc6e41f902ed7e91c8b",
+    "revision": "601d4a2b6a387144f775bdfea2ec1e50",
     "url": "/json/creatures.json"
   },
   {
@@ -112,16 +112,20 @@ self.__precacheManifest = [
     "url": "/json/organizations.json"
   },
   {
-    "revision": "ebfe9238b59b7ac5109e",
-    "url": "/js/app.02c75aa1.js"
+    "revision": "b58081e43f66a676a043cb400fe150e3",
+    "url": "/json/races.json"
   },
   {
-    "revision": "ecd662a5d5e95da30733",
-    "url": "/js/chunk-vendors.18dc5871.js"
+    "revision": "10a24e79457a28860826",
+    "url": "/js/app.04167efe.js"
   },
   {
-    "revision": "e87af93b6a8eeb08dd06a69a42eacede",
-    "url": "/json/territories.json"
+    "revision": "421823054b94fee11cab",
+    "url": "/js/chunk-vendors.05eee613.js"
+  },
+  {
+    "revision": "9aec695007136bb1adfe8fa4e9596870",
+    "url": "/json/valuables.json"
   },
   {
     "revision": "ef7253ed20b47b8088b491a345d76300",
@@ -176,7 +180,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chapter2old.md"
   },
   {
-    "revision": "6769433de4bd591504fac59f8432c7b9",
+    "revision": "e6dbff11b38e038ac02384fb2134a99f",
     "url": "/static/md/book4/chapter3.md"
   },
   {
@@ -220,8 +224,8 @@ self.__precacheManifest = [
     "url": "/static/md/book4/curestan.md"
   },
   {
-    "revision": "ebfe9238b59b7ac5109e",
-    "url": "/css/app.bc185b22.css"
+    "revision": "10a24e79457a28860826",
+    "url": "/css/app.2fb9afc7.css"
   },
   {
     "revision": "d41d8cd98f00b204e9800998ecf8427e",
