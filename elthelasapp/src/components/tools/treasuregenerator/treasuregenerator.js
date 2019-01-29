@@ -241,6 +241,7 @@ export default {
       total += cp / 100;
       total += sp / 10;
       total += gp;
+      total += pp * 10;
       let gemmin = 0;
       let gemmax = r.gemmax;
       for (let numgems = droll.roll(r.numgems).total; numgems > 0; numgems--) {
