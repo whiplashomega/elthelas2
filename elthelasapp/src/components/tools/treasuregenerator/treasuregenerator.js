@@ -155,14 +155,14 @@ export default {
           { min: 77, max: 78, numgems: "3d6", gemmax: 50, nummagic: "1", magicmax: 800 },
           { min: 79, max: 79, numgems: "3d6", gemmax: 100, nummagic: "1", magicmax: 800 },
           { min: 80, max: 80, numgems: "2d4", gemmax: 250, nummagic: "1", magicmax: 800 },
-          { min: 81, max: 84, numgems: "2d4", gemmax: 25, nummagic: "1d4", magicmax: 2500 },
-          { min: 85, max: 88, numgems: "3d6", gemmax: 50, nummagic: "1d4", magicmax: 2500 },
-          { min: 89, max: 91, numgems: "3d6", gemmax: 100, nummagic: "1d4", magicmax: 2500 },
-          { min: 92, max: 94, numgems: "2d4", gemmax: 250, nummagic: "1d4", magicmax: 2500 },
-          { min: 95, max: 96, numgems: "3d6", gemmax: 100, nummagic: "1d4", magicmax: 5000 },
-          { min: 97, max: 98, numgems: "2d4", gemmax: 250, nummagic: "1d4", magicmax: 5000 },
-          { min: 99, max: 99, numgems: "3d6", gemmax: 100, nummagic: "1", magicmax: 10000 },
-          { min: 100, max: 100, numgems: "2d4", gemmax: 250, nummagic: "1", magicmax: 10000 }
+          { min: 81, max: 84, numgems: "2d4", gemmax: 25, nummagic: "1d4", magicmin: 800, magicmax: 2500 },
+          { min: 85, max: 88, numgems: "3d6", gemmax: 50, nummagic: "1d4", magicmin: 800, magicmax: 2500 },
+          { min: 89, max: 91, numgems: "3d6", gemmax: 100, nummagic: "1d4", magicmin: 800, magicmax: 2500 },
+          { min: 92, max: 94, numgems: "2d4", gemmax: 250, nummagic: "1d4", magicmin: 800, magicmax: 2500 },
+          { min: 95, max: 96, numgems: "3d6", gemmax: 100, nummagic: "1d4", magicmin: 1600, magicmax: 5000 },
+          { min: 97, max: 98, numgems: "2d4", gemmax: 250, nummagic: "1d4", magicmin: 1600, magicmax: 5000 },
+          { min: 99, max: 99, numgems: "3d6", gemmax: 100, nummagic: "1", magicmin: 2500, magicmax: 10000 },
+          { min: 100, max: 100, numgems: "2d4", gemmax: 250, nummagic: "1", magicmin: 2500, magicmax: 10000 }
         ];
       } else if (this.challenge === 3) {
         gp = droll.roll("4d6").total * 1000;
@@ -185,22 +185,22 @@ export default {
           { min: 55, max: 58, numgems: "2d4", gemmax: 750, nummagic: "1d4", magicmax: 800 },
           { min: 59, max: 62, numgems: "3d6", gemmax: 500, nummagic: "1d4", magicmax: 800 },
           { min: 63, max: 66, numgems: "3d6", gemmax: 1000, nummagic: "1d4", magicmax: 800 },
-          { min: 67, max: 68, numgems: "2d4", gemmax: 250, nummagic: "1", magicmax: 1600 },
-          { min: 69, max: 70, numgems: "2d4", gemmax: 750, nummagic: "1", magicmax: 1600 },
-          { min: 71, max: 72, numgems: "3d6", gemmax: 500, nummagic: "1", magicmax: 1600 },
-          { min: 73, max: 74, numgems: "3d6", gemmax: 1000, nummagic: "1", magicmax: 1600 },
-          { min: 75, max: 76, numgems: "2d4", gemmax: 250, nummagic: "1d6", magicmax: 5000 },
-          { min: 77, max: 78, numgems: "2d4", gemmax: 750, nummagic: "1d6", magicmax: 5000 },
-          { min: 79, max: 80, numgems: "3d6", gemmax: 500, nummagic: "1d6", magicmax: 5000 },
-          { min: 81, max: 82, numgems: "3d6", gemmax: 1000, nummagic: "1d6", magicmax: 5000 },
-          { min: 83, max: 85, numgems: "2d4", gemmax: 250, nummagic: "1d4", magicmax: 10000 },
-          { min: 86, max: 88, numgems: "2d4", gemmax: 750, nummagic: "1d4", magicmax: 10000 },
-          { min: 89, max: 90, numgems: "3d6", gemmax: 500, nummagic: "1d4", magicmax: 10000 },
-          { min: 91, max: 92, numgems: "3d6", gemmax: 1000, nummagic: "1d4", magicmax: 10000 },
-          { min: 93, max: 94, numgems: "2d4", gemmax: 250, nummagic: "1", magicmax: 200000 },
-          { min: 95, max: 96, numgems: "2d4", gemmax: 750, nummagic: "1", magicmax: 200000 },
-          { min: 97, max: 98, numgems: "3d6", gemmax: 500, nummagic: "1", magicmax: 200000 },
-          { min: 99, max: 100, numgems: "3d6", gemmax: 1000, nummagic: "1", magicmax: 200000 }
+          { min: 67, max: 68, numgems: "2d4", gemmax: 250, nummagic: "1", magicmin: 400, magicmax: 1600 },
+          { min: 69, max: 70, numgems: "2d4", gemmax: 750, nummagic: "1", magicmin: 400, magicmax: 1600 },
+          { min: 71, max: 72, numgems: "3d6", gemmax: 500, nummagic: "1", magicmin: 400, magicmax: 1600 },
+          { min: 73, max: 74, numgems: "3d6", gemmax: 1000, nummagic: "1", magicmin: 400, magicmax: 1600 },
+          { min: 75, max: 76, numgems: "2d4", gemmax: 250, nummagic: "1d6", magicmin: 1600, magicmax: 5000 },
+          { min: 77, max: 78, numgems: "2d4", gemmax: 750, nummagic: "1d6", magicmin: 1600, magicmax: 5000 },
+          { min: 79, max: 80, numgems: "3d6", gemmax: 500, nummagic: "1d6", magicmin: 1600, magicmax: 5000 },
+          { min: 81, max: 82, numgems: "3d6", gemmax: 1000, nummagic: "1d6", magicmin: 1600, magicmax: 5000 },
+          { min: 83, max: 85, numgems: "2d4", gemmax: 250, nummagic: "1d4", magicmin: 2500, magicmax: 10000 },
+          { min: 86, max: 88, numgems: "2d4", gemmax: 750, nummagic: "1d4", magicmin: 2500, magicmax: 10000 },
+          { min: 89, max: 90, numgems: "3d6", gemmax: 500, nummagic: "1d4", magicmin: 2500, magicmax: 10000 },
+          { min: 91, max: 92, numgems: "3d6", gemmax: 1000, nummagic: "1d4", magicmin: 2500, magicmax: 10000 },
+          { min: 93, max: 94, numgems: "2d4", gemmax: 250, nummagic: "1", magicmin: 5000, magicmax: 200000 },
+          { min: 95, max: 96, numgems: "2d4", gemmax: 750, nummagic: "1", magicmin: 5000, magicmax: 200000 },
+          { min: 97, max: 98, numgems: "3d6", gemmax: 500, nummagic: "1", magicmin: 5000, magicmax: 200000 },
+          { min: 99, max: 100, numgems: "3d6", gemmax: 1000, nummagic: "1", magicmin: 5000, magicmax: 200000 }
         ];
       } else if (this.challenge === 4) {
         gp = droll.roll("12d6").total * 1000;
@@ -215,22 +215,22 @@ export default {
           { min: 23, max: 30, numgems: "1d10", gemmax: 2500, nummagic: "1d6", magicmax: 800 },
           { min: 31, max: 38, numgems: "1d4", gemmax: 7500, nummagic: "1d6", magicmax: 800 },
           { min: 39, max: 46, numgems: "1d8", gemmax: 5000, nummagic: "1d6", magicmax: 800 },
-          { min: 47, max: 52, numgems: "3d6", gemmax: 1000, nummagic: "1d6", magicmax: 1600 },
-          { min: 53, max: 58, numgems: "1d10", gemmax: 2500, nummagic: "1d6", magicmax: 1600 },
-          { min: 59, max: 63, numgems: "1d4", gemmax: 7500, nummagic: "1d6", magicmax: 1600 },
-          { min: 64, max: 68, numgems: "1d8", gemmax: 5000, nummagic: "1d6", magicmax: 1600 },
-          { min: 69, max: 69, numgems: "3d6", gemmax: 1000, nummagic: "1d4", magicmax: 5000 },
-          { min: 70, max: 70, numgems: "1d10", gemmax: 2500, nummagic: "1d4", magicmax: 5000 },
-          { min: 71, max: 71, numgems: "1d4", gemmax: 7500, nummagic: "1d4", magicmax: 5000 },
-          { min: 72, max: 72, numgems: "1d8", gemmax: 5000, nummagic: "1d4", magicmax: 5000 },
-          { min: 73, max: 74, numgems: "3d6", gemmax: 1000, nummagic: "1d4", magicmax: 10000 },
-          { min: 75, max: 76, numgems: "1d10", gemmax: 2500, nummagic: "1d4", magicmax: 10000 },
-          { min: 77, max: 78, numgems: "1d4", gemmax: 7500, nummagic: "1d4", magicmax: 10000 },
-          { min: 79, max: 80, numgems: "1d8", gemmax: 5000, nummagic: "1d4", magicmax: 10000 },
-          { min: 81, max: 85, numgems: "3d6", gemmax: 1000, nummagic: "1d4", magicmax: 200000 },
-          { min: 86, max: 90, numgems: "1d10", gemmax: 2500, nummagic: "1d4", magicmax: 200000 },
-          { min: 91, max: 95, numgems: "1d4", gemmax: 7500, nummagic: "1d4", magicmax: 200000 },
-          { min: 96, max: 100, numgems: "1d8", gemmax: 5000, nummagic: "1d4", magicmax: 200000 }
+          { min: 47, max: 52, numgems: "3d6", gemmax: 1000, nummagic: "1d6", magicmin: 400, magicmax: 1600 },
+          { min: 53, max: 58, numgems: "1d10", gemmax: 2500, nummagic: "1d6", magicmin: 400, magicmax: 1600 },
+          { min: 59, max: 63, numgems: "1d4", gemmax: 7500, nummagic: "1d6", magicmin: 400, magicmax: 1600 },
+          { min: 64, max: 68, numgems: "1d8", gemmax: 5000, nummagic: "1d6", magicmin: 400, magicmax: 1600 },
+          { min: 69, max: 69, numgems: "3d6", gemmax: 1000, nummagic: "1d4", magicmin: 1600, magicmax: 5000 },
+          { min: 70, max: 70, numgems: "1d10", gemmax: 2500, nummagic: "1d4", magicmin: 1600, magicmax: 5000 },
+          { min: 71, max: 71, numgems: "1d4", gemmax: 7500, nummagic: "1d4", magicmin: 1600, magicmax: 5000 },
+          { min: 72, max: 72, numgems: "1d8", gemmax: 5000, nummagic: "1d4", magicmin: 1600, magicmax: 5000 },
+          { min: 73, max: 74, numgems: "3d6", gemmax: 1000, nummagic: "1d4", magicmin: 2500, magicmax: 10000 },
+          { min: 75, max: 76, numgems: "1d10", gemmax: 2500, nummagic: "1d4", magicmin: 2500, magicmax: 10000 },
+          { min: 77, max: 78, numgems: "1d4", gemmax: 7500, nummagic: "1d4", magicmin: 2500, magicmax: 10000 },
+          { min: 79, max: 80, numgems: "1d8", gemmax: 5000, nummagic: "1d4", magicmin: 2500, magicmax: 10000 },
+          { min: 81, max: 85, numgems: "3d6", gemmax: 1000, nummagic: "1d4", magicmin: 5000, magicmax: 200000 },
+          { min: 86, max: 90, numgems: "1d10", gemmax: 2500, nummagic: "1d4", magicmin: 5000, magicmax: 200000 },
+          { min: 91, max: 95, numgems: "1d4", gemmax: 7500, nummagic: "1d4", magicmin: 5000, magicmax: 200000 },
+          { min: 96, max: 100, numgems: "1d8", gemmax: 5000, nummagic: "1d4", magicmin: 5000, magicmax: 200000 }
         ];
       }
       lookup.forEach((a) => {
@@ -250,8 +250,9 @@ export default {
         total += Number(gemtype.Value);
       }
       let magicmax = r.magicmax;
+      let magicmin = r.magicmin ? r.magicmin : 0;
       for (let nummagic = droll.roll(r.nummagic).total; nummagic > 0; nummagic--) {
-        let item = this.randomMagicItem(magicmax);
+        let item = this.randomMagicItem(magicmin, magicmax);
         magicitems += " " + item.Item + " (" + item["Cost (gp)"] + " gp value)";
         total += Number(item["Cost (gp)"]);
       }

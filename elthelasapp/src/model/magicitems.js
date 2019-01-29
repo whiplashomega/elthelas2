@@ -54,9 +54,9 @@ const getters = {
   allRares: state => state.allrares,
   allVeryRares: state => state.allveryrares,
   allLegendaries: state => state.alllegendaries,
-  randomMagicItem: (state) => (maxvalue) => {
+  randomMagicItem: (state) => (minvalue, maxvalue) => {
     let possibles = state.all.filter((a) => {
-      return a["Cost (gp)"] <= maxvalue;
+      return a["Cost (gp)"] <= maxvalue && a["Cost (gp)"] >= minvalue;
     });
     let i = droll.roll("1d" + possibles.length.toString()).total - 1;
     return possibles[i];
