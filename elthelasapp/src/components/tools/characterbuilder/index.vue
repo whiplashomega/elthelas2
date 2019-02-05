@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row" v-if="!mobile">
-      <div class="print-full" v-bind:class="buildHide ? 'col-12' : 'col-8'">
+      <div class="print-full" :class="buildHide ? 'col-12' : 'col-8'">
         <characterheader />
         <div class="row">
           <div class="col-7">
@@ -39,8 +39,12 @@
             </div>
             <div class="row print-hide">
               <div class="col">
-                <input type="button" @click="buildHide = !buildHide" value="Hide Build Section" v-if="!buildHide" class="btn btn-primary" />
-                <input type="button" @click="buildHide = !buildHide" value="Show Build Section" v-if="buildHide" class="btn btn-primary" />
+                <input type="button" @click="buildHide = !buildHide"
+                       value="Hide Build Section" v-if="!buildHide"
+                       class="btn btn-primary" />
+                <input type="button" @click="buildHide = !buildHide"
+                       value="Show Build Section" v-if="buildHide"
+                       class="btn btn-primary" />
               </div>
             </div>
           </div>
@@ -102,12 +106,12 @@
                 </tr>
                 <tr>
                   <th>Save</th>
-                  <td><input type="checkbox" v-model="character.saves[0]"  /></td>
-                  <td><input type="checkbox" v-model="character.saves[1]"  /></td>
-                  <td><input type="checkbox" v-model="character.saves[2]"  /></td>
-                  <td><input type="checkbox" v-model="character.saves[3]"  /></td>
-                  <td><input type="checkbox" v-model="character.saves[4]"  /></td>
-                  <td><input type="checkbox" v-model="character.saves[5]"  /></td>
+                  <td><input type="checkbox" v-model="character.saves[0]" /></td>
+                  <td><input type="checkbox" v-model="character.saves[1]" /></td>
+                  <td><input type="checkbox" v-model="character.saves[2]" /></td>
+                  <td><input type="checkbox" v-model="character.saves[3]" /></td>
+                  <td><input type="checkbox" v-model="character.saves[4]" /></td>
+                  <td><input type="checkbox" v-model="character.saves[5]" /></td>
                 </tr>
                 <tr>
                   <th>Save Bonus</th>
@@ -121,7 +125,7 @@
               </tbody>
             </table>
             Point Buy Total: {{ pointbuy }}<br />
-            Stat Rolls: <span v-for="(roll, index) in statRolls" v-bind:key="index">{{roll}} </span>
+            Stat Rolls: <span v-for="(roll, index) in statRolls" :key="index">{{ roll }} </span>
             <input type="button" @click="rollStats()" value="Roll!" />
           </div>
         </div>

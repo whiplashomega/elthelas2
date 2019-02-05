@@ -11,10 +11,10 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.9034b33d1382d454b5dcd84d8c1a8454.js"
+  "/precache-manifest.791a99ee6d447470977b63e330d99687.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "Elthelas"});

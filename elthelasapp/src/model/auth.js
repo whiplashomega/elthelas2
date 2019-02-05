@@ -87,7 +87,7 @@ const mutations = {
   "LOGOUT"(state) {
     state.loggedin = false;
   },
-  setOAuth(state, {params}) {
+  setOAuth(state, { params }) {
     var expires = new Date(now.getTime() + params.expires_in * 1000);
     state.googletoken = { token: params.access_token, expiry: expires };
     localStorage.setItem('googletoken', params.access_token);

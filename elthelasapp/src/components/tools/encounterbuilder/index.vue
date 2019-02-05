@@ -4,9 +4,13 @@
       <div class="col-sm-8">
         <h1>Encounter Builder</h1>
         <div class="btn-group">
-          <input type="button" class="btn btn-success" value="Save" v-if="current._id" @click="save()" />
-          <input type="button" class="btn btn-primary" value="Save New" @click="saveNew()" />
-          <input type="button" class="btn btn-warning" value="Reset" @click="reset()" />
+          <input type="button" class="btn btn-success"
+                 value="Save" v-if="current._id"
+                 @click="save()" />
+          <input type="button" class="btn btn-primary"
+                 value="Save New" @click="saveNew()" />
+          <input type="button" class="btn btn-warning"
+                 value="Reset" @click="reset()" />
         </div>
         <div class="row">
           <div class="col-sm-6">
@@ -17,7 +21,7 @@
             <label>Prerequisite</label>
             <select v-model="current.prereq" class="form-control">
               <option value="">None</option>
-              <option v-for="enc in all" :value="enc._id" :key="enc._id">{{enc.name}}</option>
+              <option v-for="enc in all" :value="enc._id" :key="enc._id">{{ enc.name }}</option>
             </select>
           </div>
         </div>
@@ -78,7 +82,7 @@
         </div>
         <div>
           <h2>Preview</h2>
-          <h3><a :href="current.link">{{current.name}}</a></h3>
+          <h3><a :href="current.link">{{ current.name }}</a></h3>
           <div style="float:right;max-width:40%;" v-if="current.image">
             <img :src="current.image" :alt="current.name" />
           </div>
@@ -92,7 +96,7 @@
           <thead><tr><th>Encounter Name</th><th>X</th></tr></thead>
           <tbody>
             <tr v-for="encounter in all" :key="encounter._id">
-              <td><a href="#" @click="load(encounter)">{{encounter.name}}</a></td>
+              <td><a href="#" @click="load(encounter)">{{ encounter.name }}</a></td>
               <td><button @click="deleteEncounter({ encounter: encounter })" class="btn btn-danger btn-sm">X</button></td>
             </tr>
           </tbody>

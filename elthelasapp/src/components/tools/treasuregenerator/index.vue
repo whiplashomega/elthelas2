@@ -10,7 +10,9 @@
       <option :value="true">Horde</option>
       <option :value="false">Individual</option>
     </select>
-    <input type="number" min=1 max=100 v-model="d100" /> Roll Value
+    <input type="number"
+           min=1 max=100
+           v-model="d100" /> Roll Value
     <button @click="generateTreasure()">Generate!</button>
     <button @click="generateTreasureSetRoll()">Generate with Set Roll</button>
     <div>{{ treasure }}</div>

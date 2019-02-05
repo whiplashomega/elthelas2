@@ -3,8 +3,8 @@
     <headercomponent />
     <div class='container-fluid'>
       <div class="row">
-        <router-view class="view two col-sm-2" name="sidebar"></router-view>
-        <router-view class="view one col-sm-10"></router-view>
+        <router-view class="view two col-sm-2" name="sidebar" />
+        <router-view class="view one col-sm-10" />
       </div>
     </div>
     <footer-comp />
@@ -20,7 +20,7 @@ import FooterComp from '@/components/global/footer';
 import { mapGetters, mapMutations } from 'vuex';
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
     headercomponent,
     FooterComp
