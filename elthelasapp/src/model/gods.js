@@ -12,7 +12,7 @@ const getters = {
 const actions = {
   getAllGods ({ commit }) {
     return new Promise((resolve) => {
-      Vue.http.get(ctest.baseUrl + 'static/json/gods.json').then((response) => {
+      Vue.http.get(ctest.baseUrl + 'json/gods.json').then((response) => {
         var gods = response.body.documents;
         commit('GET_GODS', { gods: gods });
         resolve();

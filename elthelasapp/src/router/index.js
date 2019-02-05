@@ -17,7 +17,6 @@ import languages from '../components/options/languages';
 import book4guide from '../components/tools/book4guide';
 import book4 from '../components/tools/book4';
 import book4menu from '../components/tools/book4menu';
-import npcgen from '@/components/tools/npcgenerator';
 import feats from '@/components/options/feats';
 import races from '../components/options/races';
 import bestiary from '../components/ref/bestiary';
@@ -305,16 +304,6 @@ var router = new Router({
       path: '/tools/charbuilder',
       components: {
         default: charbuilder
-      }
-    },
-    {
-      name: "npcgen",
-      meta: {
-        title: "NPC Generator"
-      },
-      path: '/tools/npcgen',
-      components: {
-        default: npcgen
       }
     },
     {

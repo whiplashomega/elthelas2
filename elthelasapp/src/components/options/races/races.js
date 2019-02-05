@@ -57,7 +57,7 @@ export default {
           if (name === "default" || name === "") {
             name = this.races[x].name;
           }
-          var hwi = {...this.races[x].subraces[y]};
+          var hwi = { ...this.races[x].subraces[y] };
           hwi.name = name;
           this.hw.push(hwi);
         }

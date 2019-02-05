@@ -137,7 +137,7 @@ export default {
     },
     resetSpellModal () {
       this.spelltable.modalInfo.title = "";
-      this.spelltable.modalInfo.content = {title: '', level: '', school: '', duration: '', description: '', castingTime: '', tags: [], tagsText: ''};
+      this.spelltable.modalInfo.content = { title: '', level: '', school: '', duration: '', description: '', castingTime: '', tags: [], tagsText: '' };
     },
     resetGearModal () {
       this.gearModal = { Item: '', Cost: '', Weight: '', Description: '' };
