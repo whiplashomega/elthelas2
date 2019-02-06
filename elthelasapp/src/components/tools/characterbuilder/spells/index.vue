@@ -31,13 +31,17 @@
       slots: <input type="number" v-model="character.availableslots[displayLevel]" class="charsheet-num" /> / {{ totalslots(displayLevel) }}</span><br />
     <span v-if="warlockSlots > 0">Warlock Slots: <input type="number" v-model="character.warlockslotsavailable" class="charsheet-num" /> /
       {{ warlockSlots }} level {{ warlockSlotLevel }} slots</span>
+    <div>
+      Number Prepared:
+      <div v-for="cc in numprepared" :key="cc.classname">{{ cc.classname }}: {{ cc.numprepped }} / {{ cc.maxprepped }}</div>
+    </div>
     <div class="smalltext print-hide">
       <table class="table table-sm">
         <thead><tr><th>Spell</th><th>Casting Time</th><th>Duration</th><th>Class</th><th colspan="2">-</th></tr></thead>
         <tbody>
-          <tr v-for="spell in sortSpells(character.spells[displayLevel])" :key="spell.title" v-if="(spell.prepared && preparedonly) || !preparedonly">
+          <tr v-for="spell in sortSpells(character.spells[displayLevel])" :key="spell.title" v-if="(spell.prepared && preparedonly) || !preparedonly || displayLevel === 'cantrip'">
             <td>
-              <input type="checkbox" v-model="spell.prepared" /><span class="clickable" @click="spellDetail(spell)">{{ spell.title }}<span v-if="spell.ritual"> (ritual)</span></span>
+              <input type="checkbox" v-model="spell.prepared" v-if="displayLevel !== 'cantrip'" /><span class="clickable" @click="spellDetail(spell)">{{ spell.title }}<span v-if="spell.ritual"> (ritual)</span></span>
             </td>
             <td>{{ spell.castingTime }}</td>
             <td>{{ spell.duration }}</td>

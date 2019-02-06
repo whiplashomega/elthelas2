@@ -2,6 +2,7 @@
   "name": "Rogue",
   "level": 1,
   "hitdie": 8,
+  "caststat": 3,
   "proficiencies": {
     "armor": ["light armor"],
     "weapons": ["simple weapons", "hand crossbows", "longswords", "rapiers", "shortswords"],

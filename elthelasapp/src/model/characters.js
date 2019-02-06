@@ -38,6 +38,81 @@ export default {
   getters: {
     getStatRolls: (state) => state.statRolls,
     getSlots: (state) => state.slots,
+    getTotalPrepared: (state, getters) => {
+      let spells = state.currentCharacter.spells;
+      let classCounts = [];
+      state.currentCharacter.charclasses.forEach((a) => {
+        classCounts.push({
+          classname: a.thisclass.name,
+          maxprepped: a.level * a.selsubclass.castermult + getters.getStatMod(a.thisclass.caststat),
+          numprepped: 0
+        });
+      });
+      spells.level1.forEach((spell) => {
+        classCounts.forEach((cc) => {
+          if (spell.class === cc.classname) {
+            cc.numprepped++;
+          }
+        });
+      });
+      spells.level2.forEach((spell) => {
+        classCounts.forEach((cc) => {
+          if (spell.class === cc.classname) {
+            cc.numprepped++;
+          }
+        });
+      });
+      spells.level3.forEach((spell) => {
+        classCounts.forEach((cc) => {
+          if (spell.class === cc.classname) {
+            cc.numprepped++;
+          }
+        });
+      });
+      spells.level4.forEach((spell) => {
+        classCounts.forEach((cc) => {
+          if (spell.class === cc.classname) {
+            cc.numprepped++;
+          }
+        });
+      });
+      spells.level5.forEach((spell) => {
+        classCounts.forEach((cc) => {
+          if (spell.class === cc.classname) {
+            cc.numprepped++;
+          }
+        });
+      });
+      spells.level6.forEach((spell) => {
+        classCounts.forEach((cc) => {
+          if (spell.class === cc.classname) {
+            cc.numprepped++;
+          }
+        });
+      });
+      spells.level7.forEach((spell) => {
+        classCounts.forEach((cc) => {
+          if (spell.class === cc.classname) {
+            cc.numprepped++;
+          }
+        });
+      });
+      spells.level8.forEach((spell) => {
+        classCounts.forEach((cc) => {
+          if (spell.class === cc.classname) {
+            cc.numprepped++;
+          }
+        });
+      });
+      spells.level9.forEach((spell) => {
+        classCounts.forEach((cc) => {
+          if (spell.class === cc.classname) {
+            cc.numprepped++;
+          }
+        });
+      });
+      return classCounts;
+    },
     getCharacter: (state) => {
       return state.currentCharacter;
     },

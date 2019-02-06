@@ -2,6 +2,7 @@
   "name": "Sorcerer",
   "level": 1,
   "hitdie": 6,
+  "caststat": 5,
   "proficiencies": {
  "armor": [],
  "weapons": ["daggers", "darts", "slings", "quarterstaffs", "light crossbows"],

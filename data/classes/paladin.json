@@ -2,6 +2,7 @@
   "name": "Paladin",
   "level": 1,
   "hitdie": 10,
+  "caststat": 5,
   "proficiencies": {
     "armor": ["light armor", "medium armor", "heavy armor", "shields"],
     "weapons": ["simple weapons", "martial weapons"],

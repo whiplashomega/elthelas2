@@ -2,6 +2,7 @@
   "name": "Cleric",
   "level": 1,
   "hitdie": 8,
+  "caststat": 4,
   "proficiencies": {
     "armor": ["light armor", "medium armor", "shields"],
     "weapons": ["simple weapons"],

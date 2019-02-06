@@ -2,6 +2,7 @@
   "name": "Wizard",
   "level": 1,
   "hitdie": 6,
+  "caststat": 3,
   "proficiencies": {
     "armor": [],
     "weapons": ["daggers", "darts", "slings", "quarterstaffs", "light crossbows"],

@@ -2,6 +2,7 @@
   "name": "Archivist",
   "level": 0,
   "hitdie": 6,
+  "caststat": 3,
   "proficiencies": {
     "armor": [ "light armor", "medium armor" ],
     "weapons": [ "daggers", "darts", "slings", "quarterstaffs", "light crossbows" ],

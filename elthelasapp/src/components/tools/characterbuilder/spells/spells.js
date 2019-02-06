@@ -10,7 +10,8 @@ export default {
       slots: "getSlots",
       warlockSlots: "warlockSlots",
       warlockSlotLevel: "warlockSlotLevel",
-      totalslots: "totalslots"
+      totalslots: "totalslots",
+      numprepared: "getTotalPrepared"
     }),
     filteredspells () {
       var filters = this.spellfilter.split(' ');
