@@ -7,10 +7,10 @@
           <div class="col-7">
             <div class="row">
               <!-- Ability Scores -->
-              <div class="col-7">
+              <div class="col-7" v-if="!hideleft">
                 <abilityscores />
               </div>
-              <div class="col-5">
+              <div :class="hideleft ? 'col-12' : 'col-5'">
                 <!-- Initiative -->
                 <initiative />
                 <!-- HP -->
@@ -19,10 +19,10 @@
             </div>
             <div class="row">
               <!-- skills -->
-              <div class="col-7">
+              <div class="col-7" v-if="!hideleft">
                 <skills />
               </div>
-              <div class="col-5">
+              <div :class="hideleft ? 'col-12' : 'col-5'">
                 <combat />
                 <!-- Equipment -->
                 <equipment />
@@ -39,12 +39,8 @@
             </div>
             <div class="row print-hide">
               <div class="col">
-                <input type="button" @click="buildHide = !buildHide"
-                       value="Hide Build Section" v-if="!buildHide"
-                       class="btn btn-primary" />
-                <input type="button" @click="buildHide = !buildHide"
-                       value="Show Build Section" v-if="buildHide"
-                       class="btn btn-primary" />
+                <button class="btn btn-primary" @click="hideleft = !hideleft"><span v-if="!hideleft">Hide</span><span v-if="hideleft">Show</span> Left Column</button>&nbsp;
+                <button class="btn btn-primary" @click="buildHide = !buildHide"><span v-if="!buildHide">Hide</span><span v-if="buildHide">Show</span> Build Section</button>
               </div>
             </div>
           </div>

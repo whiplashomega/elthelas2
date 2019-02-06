@@ -18,30 +18,81 @@
               Weight
               <input type="number" class="form-control" v-model="item.weight" />
               Quantity
-              <input type="number" class="form-control" v-model="item.quantity" /><br />
+              <input type="number" class="form-control" v-model="item.quantity" />
+              Value (gp)
+              <input type="number" class="form-control" v-model="item.cost" /><br />
               <input type="checkbox" v-model="item.attunement" /> Attunement<br />
               Container
               <select class="form-control" v-model="item.container" @change="item.edit = false;">
                 <option v-for="container in character.containers" :key="container.id" :value="container.id">{{ container.name }}</option>
               </select><br />
+              Description
+              <textarea v-model="item.description" class="form-control"></textarea>
               <button type="button" class="btn btn-danger print-hide" @click="removeEquipment(item)">Delete</button>
             </b-modal>
           </div>
         </div>
         <button type="button" class="btn btn-sm btn-primary print-hide" @click="equipModal = true">+Equipment</button>
         <button type="button" class="btn btn-sm btn-primary print-hide" @click="containModal = true">+Container</button>
-        <b-modal v-model="equipModal" title="Add Equipment" @ok="addEquipment()">
-          Name
-          <input type="text" class="form-control" v-model="newequip.name" />
-          Weight
-          <input type="number" class="form-control" v-model="newequip.weight" />
+        <b-modal v-model="equipModal" title="Add Equipment">
           Quantity
           <input type="number" class="form-control" v-model="newequip.quantity" />
-          <input type="checkbox" v-model="newequip.attunement" /> Attunement<br />
           Container
           <select class="form-control" v-model="newequip.container">
-            <option v-for="container in character.containers" :key="container.id" :value="container.id">{{ container.name }}</option>
+            <option v-for="container in character.containers" :key="container.id" :value="container.id"> {{ container.name }}</option>
           </select>
+          <b-tabs id="existingEquip">
+            <b-tab title="New">
+              Name
+              <input type="text" class="form-control" v-model="newequip.name" />
+              Weight
+              <input type="number" class="form-control" v-model="newequip.weight" />
+              Value (gp)
+              <input type="number" class="form-control" v-model="newequip.cost" />
+              <input type="checkbox" v-model="newequip.attunement" /> Attunement<br />
+              Description
+              <textarea v-model="newequip.description" class="form-control"></textarea>
+              <button @click="addEquipment()" class="btn btn-sm btn-primary">Add Now</button>
+            </b-tab>
+            <b-tab title="Adventuring Gear">
+              <input placeholder="search" v-model="searchEquip" class="form-control" />
+              <table class="table table-striped table-sm">
+                <thead><tr><th>Item</th><th>Weight</th></tr></thead>
+                <tbody>
+                  <tr v-for="item in allGear" :key="item.Item">
+                    <td><a href="#" @click="addExistingEquipment(item, newequip.quantity, newequip.container)">{{ item.Item }}</a></td>
+                    <td>{{ item.Weight }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </b-tab>
+            <b-tab title="Weapons">
+              <input placeholder="search" v-model="searchEquip" class="form-control" />
+              <table class="table table-striped table-sm">
+                <thead><tr><th>Item</th><th>Weight</th></tr></thead>
+                <tbody>
+                  <tr v-for="item in allWeapons" :key="item.Name">
+                    <td><a href="#" @click="addExistingWeapon(item, newequip.quantity, newequip.container)">{{ item.Name }}</a></td>
+                    <td>{{ item.Weight }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </b-tab>
+            <b-tab title="Armor">
+              <input placeholder="search" v-model="searchEquip" class="form-control" />
+              <table class="table table-striped table-sm">
+                <thead><tr><th>Item</th><th>Type</th><th>AC</th><th>Weight</th></tr></thead>
+                <tbody>
+                  <tr v-for="item in allArmor" :key="item.Armor">
+                    <td><a href="#" @click="addExistingArmor(item, newequip.quantity, newequip.container)">{{ item.Armor }}</a></td>
+                    <td>{{ item.Type }}</td>
+                    <td>{{ item.AC }}</td>
+                    <td>{{ item.Weight }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </b-tab>
+          </b-tabs>
         </b-modal>
         <b-modal v-model="containModal" title="Add Container" @ok="addContainer()">
           Name

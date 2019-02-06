@@ -5,7 +5,7 @@ import droll from 'droll';
 
 function getWeaponVariants (weapon) {
   return magicweapons.reduce((newArr, mag) => {
-    let newobj = {};
+    let newobj = { ...weapon };
     let flag = false;
     for (var i in mag) {
       if (typeof mag[i] === "string") {
@@ -21,6 +21,7 @@ function getWeaponVariants (weapon) {
         flag = true;
       }
     }
+    newobj.Name = newobj.Item;
     if (flag) {
       newArr.push(newobj);
     }
@@ -84,7 +85,7 @@ const actions = {
 const mutations = {
   'GET_MAGICITEMS' (state, { magicitems, weapons, armor, spells }) {
     var items = magicitems.filter(function(item) {
-      if (["1st Level Scroll", "Cantrip Scroll", "2nd Level Scroll", "3rd Level Scroll", "4th Level Scroll", "5th Level Scroll", "6th Level Scroll", "7th Level Scroll", "8th Level Scroll", "+1 Armor", "+2 Armor", "+3 Armor", "Armor of Resistance", "Mariner's Armor", "Weapon +1", "Weapon +2", "Weapon +3", "Weapon of Returning", "Weapon of Returning +1", "Weapon of Elemental Damage", "Weapon of Elemental Damage +1", "Weapon of Sharpness", "Vicious Weapon", "Weapon of Life Stealing", "Weapon of Warning", "Weapon of Wounding", "Wand of 1st Level Spell", "Wand of 2nd Level Spell", "Wand of 3rd Level Spell", "Wand of 4th Level Spell"]
+      if (["1st Level Scroll", "Cantrip Scroll", "2nd Level Scroll", "3rd Level Scroll", "4th Level Scroll", "5th Level Scroll", "6th Level Scroll", "7th Level Scroll", "8th Level Scroll", "+1 Armor", "+2 Armor", "+3 Armor", "Armor of Resistance", "Mariner's Armor", "Weapon +1", "Weapon +2", "Weapon +3", "Weapon of Returning", "Weapon of Returning +1", "Weapon of Elemental Damage", "Weapon of Elemental Damage +1", "Frost Brand", "Weapon of Sharpness", "Vicious Weapon", "Giant Slayer", "Dagger of Venom", "Dancing Sword", "Dragon Slayer", "Weapon of Speed", "Flame Tongue", "Weapon of Life Stealing", "Weapon of Warning", "Weapon of Wounding", "Wand of 1st Level Spell", "Wand of 2nd Level Spell", "Wand of 3rd Level Spell", "Wand of 4th Level Spell"]
         .indexOf(item.Item) !== -1) {
         return false;
       }
@@ -95,6 +96,7 @@ const mutations = {
     }
     var resArmor = function(resist, z) {
       items.push({
+        ...armor[z],
         Item: armor[z].Armor + " of " + resist + " Resistance " + "(" + armor[z].Material + ")",
         Type: "Armor (" + armor[z].Armor + ")",
         Attunement: "Yes",
@@ -106,6 +108,7 @@ const mutations = {
     for (var z = 0; z < armor.length; z++) {
       var resistArray = ["fire", "cold", "acid", "poison", "bludgeoning", "piercing", "slashing", "force", "lightning", "thunder", "radiant", "necrotic"];
       items.push({
+        ...armor[z],
         Item: armor[z].Armor + " of Gleaming (" + armor[z].Material + ")",
         Type: "Armor (" + armor[z].Armor + ")",
         Attunement: "No",
@@ -114,6 +117,7 @@ const mutations = {
         "Cost (gp)": Number(armor[z].Price) + 200
       });
       items.push({
+        ...armor[z],
         Item: "Cast-Off " + armor[z].Armor + " (" + armor[z].Material + ")",
         Type: "Armor (" + armor[z].Armor + ")",
         Attunement: "No",
@@ -122,6 +126,7 @@ const mutations = {
         "Cost (gp)": Number(armor[z].Price) + 400
       });
       items.push({
+        ...armor[z],
         Item: "Smoldering " + armor[z].Armor + " (" + armor[z].Material + ")",
         Type: "Armor (" + armor[z].Armor + ")",
         Attunement: "No",
@@ -130,6 +135,8 @@ const mutations = {
         "Cost (gp)": Number(armor[z].Price) + 200
       });
       items.push({
+        ...armor[z],
+        AC: armor[z].AC + 1,
         Item: "+1 " + armor[z].Armor + " (" + armor[z].Material + ")",
         Type: "Armor (" + armor[z].Armor + ")",
         Attunement: "No",
@@ -138,6 +145,8 @@ const mutations = {
         "Cost (gp)": Number(armor[z].Price) + 4000
       });
       items.push({
+        ...armor[z],
+        AC: armor[z].AC + 2,
         Item: "+2 " + armor[z].Armor + " (" + armor[z].Material + ")",
         Type: "Armor (" + armor[z].Armor + ")",
         Attunement: "No",
@@ -146,6 +155,8 @@ const mutations = {
         "Cost (gp)": Number(armor[z].Price) + 16000
       });
       items.push({
+        ...armor[z],
+        AC: armor[z].AC + 3,
         Item: "+3 " + armor[z].Armor + " (" + armor[z].Material + ")",
         Type: "Armor (" + armor[z].Armor + ")",
         Attunement: "No",
@@ -157,6 +168,7 @@ const mutations = {
         resArmor(resistArray[k], z);
       }
       items.push({
+        ...armor[z],
         Item: "Mariner's " + armor[z].Armor + " (" + armor[z].Material + ")",
         Type: "Armor (" + armor[z].Armor + ")",
         Attunement: "No",

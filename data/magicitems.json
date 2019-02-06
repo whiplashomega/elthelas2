@@ -89,6 +89,8 @@
  },
  {
    "Item": "Animated Shield",
+   "AC": 2,
+   "Weight": 6,
    "Type": "Shield",
    "Cost (gp)": "15000",
    "Rarity": "Very Rare",
@@ -96,31 +98,9 @@
    "Effect": "While holding this shield, you can speak its command word as a bonus action to cause it to animate. The shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The shield remains animated for 1 minute, until you use a bonus action to end this effect, or until you are incapacitated or die, at which point the shield falls to the ground or into your hand if you have one free."
  },
  {
-   "Item": "+1 Armor",
-   "Type": "Armor",
-   "Cost (gp)": "4000 + cost of armor",
-   "Rarity": "Rare",
-   "Attunement": "No",
-   "Effect": "You have a +1 bonus to AC while wearing this armor."
- },
- {
-   "Item": "+2 Armor",
-   "Type": "Armor",
-   "Cost (gp)": "16000 + cost of armor",
-   "Rarity": "Very Rare",
-   "Attunement": "No",
-   "Effect": "You have a +2 bonus to AC while wearing this armor."
- },
- {
-   "Item": "Armor of Resistance",
-   "Type": "Armor",
-   "Cost (gp)": "8000 + armor",
-   "Rarity": "Rare",
-   "Attunement": "Yes",
-   "Effect": "You have resistance to one type of damage while you wear this armor."
- },
- {
    "Item": "Arrow-Catching Shield",
+   "AC": 2,
+   "Weight": 6,
    "Type": "Shield",
    "Cost (gp)": "4000",
    "Rarity": "Rare",
@@ -409,6 +389,8 @@
  },
  {
   "Item": "Shield of Expression",
+  "AC": 2,
+  "Weight": 6,
    "Type": "Armor (shield)",
    "Cost (gp)": "100",
    "Rarity": "Common",
@@ -488,7 +470,7 @@
    "Effect": "This wand has 3 charges. While holding it, you can use an action to expend 1 of its charges and create orchestral music by waving it around. The music can be heard out to a range of 60 feet and ends when you stop waving the wand.\n\nThe wand regains all expended charges daily at dawn. If you expend the wand’s last charge, roll a d20. On a 1, a sad tuba sound plays as the wand crumbles to dust and is destroyed."
  },
  {
-  "Item": "Wand of Pyrotechnics",
+  "Item": "Wand of Lesser Pyrotechnics",
    "Type": "Wand",
    "Cost (gp)": "125",
    "Rarity": "Common",
@@ -768,22 +750,6 @@
    "Effect": "You can use an action to place this l-inch metal cube on the ground and speak its command word. The cube rapidly grows into a fortress that remains until you use an action to speak the command word that dismisses it, which works only if the fortress is empty. The fortress is a square tower, 20 feet on a side and 30 feet high, with arrow slits on all sides and a battlement atop it. Its interior is divided into two floors with a ladder running along one wall to connect them. The ladder ends at a trapdoor leading to the roof. When activated, the tower has a small door on the side facing you. The door opens only at your command, which you can speak as a bonus action. It is immune to the knock spell and similar magic, such as that of a chime of opening.\nEach creature in the area where the fortress appears must make a DC 15 Dexterity saving throw, taking lOdlO bludgeoning damage on a failed save, or half as much damage on a successful one. In either case, the creature is pushed to an unoccupied space outside but next to the fortress. Objects in the area that aren't being worn or carried take this damage and are pushed automatically.\nThe tower is made of adamantine, and its magic prevents it from being tipped over. The roof, the door, and the walls each have 100 hit points, immunity to damage from nonmagical weapons excluding siege weapons, and resistance to all other damage. Only a wish spell can repair the fortress (this use of the spell counts as replicating a spell of 8th level or lower). Each casting of wish causes the roof, the door, or one wall to regain 50 hit points."
  },
  {
-   "Item": "Dagger of Venom",
-   "Type": "Weapon",
-   "Cost (gp)": "5000",
-   "Rarity": "Rare",
-   "Attunement": "No",
-   "Effect": "You gain a +1 bonus to attack and damage rolls made with this magic weapon.\nYou can use an action to cause thick, black poison to coat the blade. The poison remains for 1 minute or until an attack using this weapon hits a creature. That creature must succeed on a DC 15 Constitution saving throw or take 2d10 poison damage and become poisoned for 1 minute. The dagger can't be used this way again until the next dawn."
- },
- {
-   "Item": "Dancing Sword",
-   "Type": "Weapon",
-   "Cost (gp)": "15000",
-   "Rarity": "Very Rare",
-   "Attunement": "Yes",
-   "Effect": "You can use a bonus action to toss this magic sword into the air and speak the command word. When you do so, the sword begins to hover, flies up to 30 feet, and attacks one creature of your choice within 5 feet of it. The sword uses your attack roll and ability score modifier to damage rolls.\nWhile the sword hovers, you can use a bonus action to cause it to fly up to 30 feet to another spot within 30 feet of you. As part of the same bonus action, you can cause the sword to attack one creature within 5 feet of it. After the hovering sword attacks for the fourth time, it flies up to 30 feet and tries to return to your hand. If you have no hand free, it falls to the ground at your feet. If the sword has no unobstructed path to you, it moves as close to you as it can and then falls to the ground. It also ceases to hover if you grasp it or move more than 30 feet away from it."
- },
- {
    "Item": "Decanter of Endless Water",
    "Type": "Wondrous Item",
    "Cost (gp)": "2000",
@@ -798,22 +764,6 @@
    "Rarity": "Rare",
    "Attunement": "No",
    "Effect": "You can use an action to place these shackles on an incapacitated creature. The shackles adjust to fit a creature of Small to Large size. In addition to serving as mundane manacles, the shackles prevent a creature bound by them from using any method of extradimensional movement, including teleportation or travel to a different plane of existence. They don't prevent the creature from passing-through an interdimensional portal.\nYou and any creature you designate when you use the shackles can use an action to remove them. Once every 30 days, the bound creature can make a DC 30 Strength Athletics) check. On a success, the creature breaks free and destroys the shackles."
- },
- {
-   "Item": "+1 Dragon Scale Mail",
-   "Type": "Armor (scale mail)",
-   "Cost (gp)": "11000",
-   "Rarity": "Very Rare",
-   "Attunement": "Yes",
-   "Effect": "Dragon scale mail is made of the scales of one kind of dragon. Sometimes dragons collect their cast-off scales and gift them to humanoids. Other times, hunters carefully skin and preserve the hide of a dead dragon. In either case, dragon scale mail is highly valued.\nWhile wearing this armor, you gain a +1 bonus to AC, you have advantage on saving throws against the Frightful Presence and breath weapons of dragons, and you have resistance to one damage type that is determined by the kind of dragon that provided the scales.\nAdditionally, you can focus your senses as an action to magically discern the distance and direction to the closest dragon within 30 miles of you that is of the same type as the armor. This special action can't be used again until the next dawn."
- },
- {
-   "Item": "Dragon Slayer",
-   "Type": "Weapon",
-   "Cost (gp)": "6000",
-   "Rarity": "Rare",
-   "Attunement": "No",
-   "Effect": "You gain a +1 bonus to attack and damage rolls made with this magic weapon.\n When you hit a dragon with this weapon, the dragon takes an extra 3d6 damage of the weapon's type. For the purpose of this weapon, \"dragon\" refers to any creature with the dragon type, including dragon turtles and wyverns."
  },
  {
    "Item": "Driftglobe",
@@ -841,6 +791,8 @@
  },
  {
    "Item": "Dwarven Plate",
+   "AC": 20,
+   "Weight": 65,
    "Type": "Armor(plate)",
    "Cost (gp)": "20000",
    "Rarity": "Very Rare",
@@ -849,6 +801,9 @@
  },
  {
    "Item": "Dwarven Thrower",
+   "Damage": "1d8/1d10 bludgeoning",
+   "Weight": "2 lb",
+   "Properties": "versatile",
    "Type": "Weapon(warhammer)",
    "Cost (gp)": "28000",
    "Rarity": "Very Rare",
@@ -873,6 +828,8 @@
  },
  {
    "Item": "Elven Chain",
+   "AC": 14,
+   "Weight": 20,
    "Type": "Armor(chain shirt)",
    "Cost (gp)": "6000",
    "Rarity": "Rare",
@@ -912,28 +869,12 @@
    "Effect": "These crystal lenses fit over the eyes. While wearing them, you have advantage on Wisdom (Perception) checks that rely on sight. In conditions of clear visibility, you can make out details of even extremely distant creatures and objects as small as 2 feet across."
  },
  {
-   "Item": "Flame Tongue",
-   "Type": "Weapon",
-   "Cost (gp)": "9000",
-   "Rarity": "Rare",
-   "Attunement": "Yes",
-   "Effect": "You can use a bonus action to speak this magic sword's command word, causing flames to erupt from the blade. These flames shed bright light in a 40-foot radius and dim light for an additional 40 feet. While the sword is ablaze, it deals an extra 2d6 fire damage to any target it hits. The flames last until you use a bonus action to speak the command word again or until you drop or sheathe the sword."
- },
- {
    "Item": "Folding Boat",
    "Type": "Wondrous Item",
    "Cost (gp)": "6000",
    "Rarity": "Rare",
    "Attunement": "No",
    "Effect": "This object appears as a wooden box that measures 12 inches long, 6 inches wide, and 6 inches deep. It weigh 4 pounds and floats. It can be opened to store items inside. This item also has three command words, each requiring you to use an action to speak it.\nOne command word causes the box to unfold into a boat 10 feet long, 4 feet wide, and 2 feet deep. The boat has one pair of oars, an anchor, a mast, and a lateen sail. The boat can hold up to four Medium creatures comfortably.\nThe second command word causes the box to unfold into a ship 24 feet long, 8 feet wide; and 6 feet deep. The ship has a deck, rowing seats, five sets of oars, a steering oar, an anchor, a deck cabin, and a mast with a 5quare sail. The ship can hold fifteen Medium creatures comfortably.\nWhen the box becomes a vessel, its weight becomes that of a normal vessel its size, and anything that was stored in the box remains in the boat.\nThe third command word causes the folding boat to fold back into a box, provided that no creatures are aboard. Any objects in the vessel that can't fit inside the box remain outside the box as it folds. Any objects in the vessel that can fit inside the box do so."
- },
- {
-   "Item": "Frost Brand",
-   "Type": "Weapon",
-   "Cost (gp)": "9000",
-   "Rarity": "Very Rare",
-   "Attunement": "Yes",
-   "Effect": "When you hit with an attack using this magic sword, the target takes an extra 1d6 cold damage. In addition, while you hold the sword, you have resistance to fire damage.\nIn freezing temperatures, the blade sheds bright light in a 10-foot radius and dim light for an additional 1O feet.\nWhen you draw this weapon, you can extinguish all nmagical flames within 30 feet of you. This property can be used no more than once per hour."
  },
  {
    "Item": "Gauntlets of Ogre Power",
@@ -960,15 +901,9 @@
    "Effect": "This gem has 3 charges. As an action, you can speak the gem's command word and expend 1 charge. For the next 10 minutes, you have truesight out to 120 feet when you peer through the gem.\nThe gem regains 1d3 expended charges daily at dawn"
  },
  {
-   "Item": "Giant Slayer",
-   "Type": "Weapon",
-   "Cost (gp)": "7000",
-   "Rarity": "Rare",
-   "Attunement": "No",
-   "Effect": "You gain a +1 bonus to attack and damage rolls made with this magic weapon.\nWhen you hit a giant with it, the giant takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or fall prone. For the purpose of this weapon, \"giant\" refers to any creature with the giant type, including ettins and trolls."
- },
- {
    "Item": "Glamoured Studded Leather",
+   "AC": 13,
+   "Weight": 13,
    "Type": "Armor (studded leather)",
    "Cost (gp)": "7000",
    "Rarity": "Rare",
@@ -1114,6 +1049,9 @@
  {
    "Item": "Javelin of Lightning",
    "Type": "Weapon (javelin)",
+   "Damage": "1d6 piercing",
+   "Weight": "2 lb",
+   "Properties": "light, thrown (range 30/120)",
    "Cost (gp)": "3000",
    "Rarity": "Uncommon",
    "Attunement": "No",
@@ -1145,6 +1083,9 @@
  },
  {
    "Item": "Mace of Disruption",
+   "Damage": "1d6 bludgeoning",
+   "Weight": "4 lb",
+   "Properties": "-",
    "Type": "Weapon (mace)",
    "Cost (gp)": "6000",
    "Rarity": "Rare",
@@ -1153,6 +1094,9 @@
  },
  {
    "Item": "Mace of Smiting",
+   "Damage": "1d6 bludgeoning",
+   "Weight": "4 lb",
+   "Properties": "-",
    "Type": "Weapon (mace)",
    "Cost (gp)": "9000",
    "Rarity": "Rare",
@@ -1161,6 +1105,9 @@
  },
  {
    "Item": "Mace of Terror",
+   "Damage": "1d6 bludgeoning",
+   "Weight": "4 lb",
+   "Properties": "-",
    "Type": "Weapon (mace)",
    "Cost (gp)": "5000",
    "Rarity": "Rare",
@@ -1225,11 +1172,14 @@
  },
  {
    "Item": "Mystic Dwarven Alchemical Lead Expulsion Device",
+   "Damage": "4d10 bludgeoning",
+   "Weight": "4 lb",
+   "Properties": "ranged, Ammunition (range 60/240), loading, two-handed",
    "Type": "Weapon (exotic)",
    "Cost (gp)": "2000",
    "Rarity": "Uncommon",
    "Attunement": "No",
-   "Effect": "martial ranged weapon, uses lead bullets, loading (2 rounds), 4d10 damage, range 30/120"
+   "Effect": "martial ranged weapon, uses lead bullets, loading, 4d10 damage, range 60/24 0"
  },
  {
    "Item": "Necklace of Adaptation",
@@ -1248,15 +1198,10 @@
    "Effect": "This necklace has 7 beads hanging from it. You can use an action to detach a bead and throw it up to 6 feet away. When it reaches the end of its trajectory, the bead detonates as a 3rd-level fireball spell (save DC 15) You can hurl multiple beads, or even the whole necklace, as one action. When you do so, increase the level of the fireball by 1 for each bead beyond the first."
  },
  {
-   "Item": "Nine Lives Stealer",
-   "Type": "Weapon",
-   "Cost (gp)": "20000",
-   "Rarity": "Very Rare",
-   "Attunement": "Yes",
-   "Effect": "You gain a +2 bonus to attack and damage rolls made with this magic weapon.\nThe sword has 6 charges. If you score a critical hit against a creature that has fewer than 100 hit points, it must succeed on a DC 15 Constitution saving throw or be slain instantly as the sword tears its life force from its body (a construct or an undead is immune). The sword loses 1 charge if the creature is slain. When the sword has no charges remaining, it loses this property."
- },
- {
    "Item": "Oathbow",
+   "Damage": "1d8 piercing",
+   "Weight": "2 lb",
+   "Properties": "ranged, Ammunition (range 150/600), heavy, two-handed",
    "Type": "Weapon (longbow)",
    "Cost (gp)": "13000",
    "Rarity": "Very Rare",
@@ -1792,14 +1737,6 @@
    "Effect": "While in this saddle on a mount, you can't be dismounted against your will if you're conscious, and attack rolls against the mount have disadvantage."
  },
  {
-   "Item": "Weapon of Speed",
-   "Type": "Weapon",
-   "Cost (gp)": "21000",
-   "Rarity": "Very Rare",
-   "Attunement": "Yes",
-   "Effect": "You gain a +2 bonus to attack and damage rolls made with this magic weapon. In addition, you can make one attack with it as a bonus action on each of your turns."
- },
- {
    "Item": "Scroll of Protection",
    "Type": "Single Use",
    "Cost (gp)": "800",
@@ -1889,6 +1826,8 @@
  },
  {
    "Item": "Sentinel Shield",
+   "AC": 2,
+   "Weight": 6,
    "Type": "Armor (shield)",
    "Cost (gp)": "4000",
    "Rarity": "Uncommon",
@@ -1905,6 +1844,8 @@
  },
  {
    "Item": "Shield +1",
+   "AC": 3,
+   "Weight": 6,
    "Type": "Armor (shield)",
    "Cost (gp)": "3000",
    "Rarity": "Uncommon",
@@ -1913,6 +1854,8 @@
  },
  {
    "Item": "Shield +2",
+   "AC": 4,
+   "Weight": 6,
    "Type": "Armor (shield)",
    "Cost (gp)": "9000",
    "Rarity": "Rare",
@@ -1921,6 +1864,8 @@
  },
  {
    "Item": "Shield +3",
+   "AC": 5,
+   "Weight": 6,
    "Type": "Armor (shield)",
    "Cost (gp)": "18000",
    "Rarity": "Very Rare",
@@ -1929,6 +1874,8 @@
  },
  {
    "Item": "Spellguard Shield",
+   "AC": 2,
+   "Weight": 6,
    "Type": "Armor (shield)",
    "Cost (gp)": "14000",
    "Rarity": "Very Rare",
@@ -2050,34 +1997,13 @@
  {
    "Item": "Sun Blade",
    "Type": "Weapon (longsword)",
+   "Damage": "1d8/1d10 slashing",
+   "Weight": "3 lb",
+   "Properties": "versatile",
    "Cost (gp)": "13000",
    "Rarity": "Rare",
    "Attunement": "Yes",
    "Effect": "This item appears to be a longsword hilt. While grasping the hilt, you can use a bonus action to cause a blade of pure radiance to spring into existence, or make the blade disappear. While the blade exists, this magic longsword has the finesse property. If you are proficient with shortswords or longswords, you are proficient with the sun blade.\nYou gain a +2 bonus to attack and damage rolls made with this weapon, which deals radiant damage instead of slashing damage. When you hit an undead with it, that target takes an extra 1d8 radiant damage. The sword's luminous blade emits bright light in a 15-foot radius and dim light for an additional 15 feet. The light is sunlight. While the blade persists, you can use an action to expand or reduce its radius of bright and dim light by 5 feet each, to a maximum of 30 feet each or a minimum of 10 feet each."
- },
- {
-   "Item": "Weapon of Life Stealing",
-   "Type": "Weapon",
-   "Cost (gp)": "5000",
-   "Rarity": "Rare",
-   "Attunement": "Yes",
-   "Effect": "When you attack a creature with this magic weapon and roll a 20 on the attack roll, that target takes an extra 10 necrotic damage if it isn't a construct or an undead. You also gain 10 temporary hit points."
- },
- {
-   "Item": "Weapon of Sharpness",
-   "Type": "Weapon (any slashing)",
-   "Cost (gp)": "9000",
-   "Rarity": "Very Rare",
-   "Attunement": "Yes",
-   "Effect": "When you attack an object with this magic weapon and hit, maximize your weapon damage dice against the target.\nWhen you attack a creature with this weapon and roll a 20 on the attack roll, that target takes an extra 14 slashing damage. Then roll another d20. If you roll a 20 you lop off one of the target's limbs, with the effect of such loss determined by the DM. If the creature has no limb to sever, you lop off a portion of its body instead.\nIn addition, you can speak the weapon's command word to cause the blade to shed bright light in a 10-foot radius and dim light for an additional 10 feet. Speaking the command word again or sheathing the sword puts out the light."
- },
- {
-   "Item": "Weapon of Wounding",
-   "Type": "Weapon",
-   "Cost (gp)": "8000",
-   "Rarity": "Rare",
-   "Attunement": "Yes",
-   "Effect": "Hit points lost to this weapon's damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means.\nOnce per turn, when you hit a creature with an attack using this magic weapon, you can wound the target. At the start of each of the wounded creature's turns, it takes 1d4 necrotic damage for each time you've wounded it, and it can then make a DC 15 Constitution saving throw, ending the effect of all such wounds on itself on a success. Alternatively, the wounded creature, or a creature within 5 feet of it, can use an action to make a DC 15 Wisdom (Medicine) check, ending the effect of such wounds on it on a success."
  },
  {
    "Item": "Tentacle Rod",
@@ -2113,19 +2039,14 @@
  },
  {
    "Item": "Trident of Fish Command",
+   "Damage": "1d6/1d8 piercing",
+   "Weight": "4 lb",
+   "Properties": "Thrown (range 20/60), versatile",
    "Type": "Weapon (trident)",
    "Cost (gp)": "3000",
    "Rarity": "Uncommon",
    "Attunement": "Yes",
    "Effect": "This trident is a magic weapon. It has 3 charges. While you carry it, you can use an action and expend 1 charge to cast dominate beast (save DC 15) from it on a beast that has an innate swimming speed. The trident regains 1d3 expended charges daily at dawn."
- },
- {
-   "Item": "Vicious Weapon",
-   "Type": "Weapon",
-   "Cost (gp)": "5000",
-   "Rarity": "Rare",
-   "Attunement": "Yes",
-   "Effect": "When you roll a 20 on your attack roll with this magic weapon, the target takes an extra 7 damage of the weapon's type."
  },
  {
    "Item": "Wand of 1st Level Spell",
@@ -2232,70 +2153,6 @@
    "Effect": "While you are attuned to this wand your maximum number of spell slots of levels 1 through 3 is increased by 1.  You must have a spell slot of a particular level for the wand to grant you an additional spell slot of that level."
  },
  {
-   "Item": "Weapon +1",
-   "Type": "Weapon (any)",
-   "Cost (gp)": "3000",
-   "Rarity": "Uncommon",
-   "Attunement": "No",
-   "Effect": "You have a +1 bonus to attack and damage rolls made with this magic weapon."
- },
- {
-   "Item": "Weapon +2",
-   "Type": "Weapon (any)",
-   "Cost (gp)": "8000",
-   "Rarity": "Rare",
-   "Attunement": "No",
-   "Effect": "You have a +2 bonus to attack and damage rolls made with this magic weapon."
- },
- {
-   "Item": "Weapon +3",
-   "Type": "Weapon (any)",
-   "Cost (gp)": "14000",
-   "Rarity": "Very Rare",
-   "Attunement": "No",
-   "Effect": "You have a +3 bonus to attack and damage rolls made with this magic weapon."
- },
- {
-   "Item": "Weapon of Elemental Damage",
-   "Type": "Weapon (any)",
-   "Cost (gp)": "4000",
-   "Rarity": "Uncommon",
-   "Attunement": "No",
-   "Effect": "Each weapon of elemental damage doe a particular type of damage, either fire, cold, acid, or lightning damage.  Whenever an attack with this weapon hits it does an additional 1d6 damage of the elemental type in addition to its normal effects."
- },
- {
-   "Item": "Weapon of Elemental Damage +1",
-   "Type": "Weapon (any)",
-   "Cost (gp)": "9000",
-   "Rarity": "Rare",
-   "Attunement": "Yes",
-   "Effect": "You gain +1 to attack and damage rolls while wielding this weapon.\nEach weapon of elemental damage doe a particular type of damage, either fire, cold, acid, or lightning damage.  Whenever an attack with this weapon hits it does an additional 1d6 damage of the elemental type in addition to its normal effects."
- },
- {
-   "Item": "Weapon of Warning",
-   "Type": "Weapon (any)",
-   "Cost (gp)": "3000",
-   "Rarity": "Uncommon",
-   "Attunement": "Yes",
-   "Effect": "This magic weapon warns you of danger. While the weapon is on your person, you have advantage on initiative rolls. In addition, you and any of your companions within 30 feet of you can't be surprised, except when incapacitated by something other than nonmagical sleep. The weapon magically awakens you and your companions within range if any of you are sleeping naturally when combat begins."
- },
- {
-   "Item": "Weapon of Returning +1",
-   "Type": "Weapon (any thrown)",
-   "Cost (gp)": "7000",
-   "Rarity": "Rare",
-   "Attunement": "Yes",
-   "Effect": "You gain +1 to attack and damage rolls while wielding this weapon.\nThis magic weapon instantly returns to the wielders hand after an attack is made with it, regardless of whether the attack hits or misses.  If the owner does not have a hand free it instead falls to the ground at his/her feat."
- },
- {
-   "Item": "Weapon of Returning",
-   "Type": "Weapon (any thrown)",
-   "Cost (gp)": "1500",
-   "Rarity": "Uncommon",
-   "Attunement": "Yes",
-   "Effect": "This magic weapon instantly returns to the wielders hand after an attack is made with it, regardless of whether the attack hits or misses.  If the owner does not have a hand free it instead falls to the ground at his/her feat."
- },
- {
    "Item": "Wind Fan",
    "Type": "Wondrous Item",
    "Cost (gp)": "2000",
@@ -2377,6 +2234,8 @@
  },
  {
   "Item": "Armor of Invulnerability",
+  "AC": 18,
+  "Weight": 65,
   "Type": "Armor (plate)",
   "Cost (gp)": "1000000",
   "Rarity": "Legendary",
@@ -2432,15 +2291,9 @@
   "Effect": "This cube is 3 inches across and radiates palpable magical energy. The six sides of the cube are each keyed to a different plane of existence, one of which is the Material Plane. The other sides are linked to planes determined by the DM.\n\nYou can use an action to press one side of the cube to cast the gate spell with it, opening a portal to the plane keyed to that side. Alternatively, if you use an action to press one side twice, you can cast the plane shift spell (save DC 17) with the cube and transport the targets to the plane keyed to that side.\n\nThe cube has 3 charges. Each use of the cube expends 1 charge. The cube regains ld3 expended charges daily at dawn."
  },
  {
-  "Item": "Defender",
-  "Type": "Weapon (any sword)",
-  "Cost (gp)": "1000000",
-  "Rarity": "Legendary",
-  "Attunement": "Yes",
-  "Effect": "You gain a +3 bonus to attack and damage rolls made with this magic weapon.\n\nThe first time you attack with the sword on each of your turns, you can transfer some or all of the sword's bonus to your Armor Class, instead of using the bonus on any attacks that turn. For example, you could reduce the bonus to your attack and damage rolls to +1 and gain a +2 bonus to AC. The adjusted bonuses remain in effect until the start of your next turn, although you must hold the sword to gain a bonus to AC from it."
- },
- {
   "Item": "Efreeti Chain",
+  "AC": 19,
+  "Weight": 55,
   "Type": "Armor (chain mail)",
   "Cost (gp)": "1000000",
   "Rarity": "Legendary",
@@ -2513,19 +2366,14 @@
  },
  {
   "Item": "Hammer of Thunderbolts",
+  "Damage": "2d6 bludgeoning",
+  "Weight": "10 lb",
+  "Properties": "heavy, two-handed",
   "Type": "Weapon (maul)",
   "Cost (gp)": "1000000",
   "Rarity": "Legendary",
   "Attunement": "No",
   "Effect": "You gain a +1 bonus to attack and damage rolls made with this magic weapon.\n\nGiant's Bane (Requires Attunement). You must be wearing a belt of giant strength (any variety) and gauntlets of ogre power to attune to this weapon. The attunement ends if you take off either of those items. While you are attuned to this weapon and holding it, your Strength score increases by 4 and can exceed 20, but not 30. When you roll a 20 on an attack roll made with this weapon against a giant, the giant must succeed on a DC 17 Constitution saving throw or die.\n\nThe hammer also has 5 charges. While attuned to it, you can expend 1 charge and make a ranged weapon attack with the hammer, hurling it as if it had the thrown property with a normal range of 20 feet and a long range of 60 feet. If the attack hits, the hammer unleashes a thunderclap audible out to 300 feet. The target and every creature within 30 feet of it must succeed on a DC 17 Constitution saving throw or be stunned until the end of your next turn. The hammer regains 1d4 + 1 expended charges daily at dawn."
- },
- {
-  "Item": "Holy Avenger",
-  "Type": "Weapon (any sword)",
-  "Cost (gp)": "1000000",
-  "Rarity": "Legendary",
-  "Attunement": "Yes (Paladin)",
-  "Effect": "You gain a +3 bonus to attack and damage rolls made with this magic weapon. When you hit a fiend or an undead with it, that creature takes an extra 2d10 radiant damage.\n\nWhile you hold the drawn sword, it creates an aura in a 10-foot radius around you. You and all creatures friendly to you in the aura have advantage on saving throws against spells and other magical effects. If you have 17 or more levels in the paladin class, the radius of the aura increases to 30 feet."
  },
  {
   "Item": "Iron Flask",
@@ -2536,15 +2384,9 @@
   "Effect": "See DMG Page 178"
  },
  {
-  "Item": "Luck Blade",
-  "Type": "Weapon (any sword)",
-  "Cost (gp)": "1000000",
-  "Rarity": "Legendary",
-  "Attunement": "Yes",
-  "Effect": "You gain a +1 bonus to attack and damage rolls made with this magic weapon. While the sword is on your person, you also gain a +1 bonus to saving throws.\n\nLuck. If the sword is on your person, you can call on its luck (no action required) to reroll one attack roll, ability check, or saving throw you dislike. You must use the second roll. This property can't be used again until the next dawn.\n\nWish. The sword has 1d4- 1 charges. While holding it, you can use an action to expend 1 charge and cast the wish spell from it. This property can't be used again until the next dawn. The sword loses this property if it has no charges."
- },
- {
   "Item": "Plate Armor of Etherealness",
+  "AC": 18,
+  "Weight": 65,
   "Type": "Armor (plate)",
   "Cost (gp)": "1000000",
   "Rarity": "Legendary",
@@ -2681,7 +2523,10 @@
  },
  {
   "Item": "Vorpal Sword",
-  "Type": "Weapon (any sword that deals slashing damage)",
+  "Type": "Weapon (longsword)",
+  "Damage": "1d8/1d10 slashing",
+  "Weight": "3 lb",
+  "Properties": "versatile",
   "Cost (gp)": "1000000",
   "Rarity": "Legendary",
   "Attunement": "Yes",
@@ -2706,6 +2551,9 @@
  {
   "Item": "Staff of Shillelagh",
   "Type": "Weapon (staff)",
+  "Damage": "1d8 bludgeoning",
+  "Weight": "4 lb",
+  "Properties": "-",
   "Cost (gp)": "12000",
   "Rarity": "Rare",
   "Attunement": "No",
@@ -2717,11 +2565,17 @@
   "Cost (gp)": "9000",
   "Rarity": "Rare",
   "Attunement": "No",
+  "Damage": "2d6 slashing",
+  "Weight": "6 lb",
+  "Properties": "heavy, two-handed",
   "Effect": "This sword grants a +1 bonus to attack and damage rolls.\n\nWhile weilding this sword you can speak the command word as a bonus action. When you do so the sword magically grows to an unusual size while it's weight and heft do not change, extending it's reach by 5 ft until the beginning of your next turn."
  },
  {
   "Item": "Blade of Any Size",
   "Type": "Weapon (dagger)",
+  "Damage": "1d4/1d6/1d8/1d10/2d6 piercing",
+  "Weight": "1 lb",
+  "Properties": "Finesse, light, thrown (range 20/60)/Finesse, light/Versatile/two-handed, heavy",
   "Cost (gp)": "5000",
   "Rarity": "Uncommon",
   "Attunement": "No",
@@ -2737,6 +2591,8 @@
  },
  {
   "Item": "Armor of Magic Shadows",
+  "AC": 13,
+  "Weight": 13,
   "Type": "Armor (studded leather)",
   "Cost (gp)": "9000",
   "Rarity": "Rare",
@@ -2787,8 +2643,8 @@
   "Type": "Wondrous Item",
   "Cost (gp)": "15000",
   "Rarity": "Very Rare",
-  "Attunement": "Yes, up to 4 creatures",
-  "Effect": "Up to 4 creatures can be attuned to this item at the same time. The Party Inventory looks like a large sack, and always weighs 5 lbs, no matter how much is put in it. The inside of the bag opens to an interdimensional space that is 10 ft by 10 ft, and can hold 1000 lbs. Any creature who is attuned to the bag and is within 60 ft of it can summon any action in the bag to their hand as a bonus action."
+  "Attunement": "Yes, up to 8 creatures",
+  "Effect": "Up to 8 creatures can be attuned to this item at the same time. The Party Inventory looks like a large sack, and always weighs 5 lbs, no matter how much is put in it. The inside of the bag opens to an interdimensional space that is 10 ft by 10 ft, and can hold 1000 lbs. Any creature who is attuned to the bag and is within 60 ft of it can summon any item in the bag to their hand as a bonus action."
  },
  {
   "Item": "Magic Dust",

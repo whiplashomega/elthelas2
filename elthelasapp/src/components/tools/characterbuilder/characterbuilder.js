@@ -46,7 +46,8 @@ export default {
   },
   data () {
     return {
-      buildHide: false
+      buildHide: false,
+      hideleft: false
     };
   },
   filters: {
