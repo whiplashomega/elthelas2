@@ -55,7 +55,7 @@ export default {
     allGear () {
       var allgear = [ ...this.equipment, ...this.scrolls, ...this.wands, ...this.magicother ];
       allgear.forEach((item) => {
-        if (!item.Weight) {
+        if (typeof item.Weight === "undefined") {
           item.Weight = 1;
         }
       });
