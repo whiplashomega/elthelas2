@@ -56,7 +56,7 @@ export default {
       var allgear = [ ...this.equipment, ...this.scrolls, ...this.wands, ...this.magicother ];
       allgear.forEach((item) => {
         if (!item.Weight) {
-          item.Weight = "1 lb";
+          item.Weight = 1;
         }
       });
       var instance = this;
@@ -115,7 +115,7 @@ export default {
         edit: false,
         container: containerId
       });
-      this.existingEquipModal = false;
+      this.equipModal = false;
     },
     addExistingWeapon(item, quantity, containerId) {
       var id = Date.now();

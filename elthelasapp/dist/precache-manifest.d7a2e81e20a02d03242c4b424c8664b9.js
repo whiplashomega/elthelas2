@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "/json/history.json"
   },
   {
-    "revision": "d35566f4a03f3e7b29e9",
+    "revision": "ac791afc876172e2b7ae",
     "url": "/css/characterbuilder.bcd5f719.css"
   },
   {
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "d0317a352683c86becc272f65ef64703",
+    "revision": "41530718d483db1ac0185d21a9d61e7d",
     "url": "/index.html"
   },
   {
@@ -144,12 +144,12 @@ self.__precacheManifest = [
     "url": "/json/features.json"
   },
   {
-    "revision": "504e98d010dfc817aebb",
-    "url": "/js/app.6299d1a5.js"
+    "revision": "d5cf0fefd819ed160fb1",
+    "url": "/js/app.605537d9.js"
   },
   {
-    "revision": "d35566f4a03f3e7b29e9",
-    "url": "/js/characterbuilder.054938f2.js"
+    "revision": "ac791afc876172e2b7ae",
+    "url": "/js/characterbuilder.5218e660.js"
   },
   {
     "revision": "27d1a45d96aa15386fc72c329f87f6ca",
@@ -280,7 +280,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/curestan.md"
   },
   {
-    "revision": "504e98d010dfc817aebb",
+    "revision": "d5cf0fefd819ed160fb1",
     "url": "/css/app.76580425.css"
   },
   {
