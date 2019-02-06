@@ -50,63 +50,63 @@ export default {
       });
       spells.level1.forEach((spell) => {
         classCounts.forEach((cc) => {
-          if (spell.class === cc.classname) {
+          if (spell.class === cc.classname && spell.prepared) {
             cc.numprepped++;
           }
         });
       });
       spells.level2.forEach((spell) => {
         classCounts.forEach((cc) => {
-          if (spell.class === cc.classname) {
+          if (spell.class === cc.classname && spell.prepared) {
             cc.numprepped++;
           }
         });
       });
       spells.level3.forEach((spell) => {
         classCounts.forEach((cc) => {
-          if (spell.class === cc.classname) {
+          if (spell.class === cc.classname && spell.prepared) {
             cc.numprepped++;
           }
         });
       });
       spells.level4.forEach((spell) => {
         classCounts.forEach((cc) => {
-          if (spell.class === cc.classname) {
+          if (spell.class === cc.classname && spell.prepared) {
             cc.numprepped++;
           }
         });
       });
       spells.level5.forEach((spell) => {
         classCounts.forEach((cc) => {
-          if (spell.class === cc.classname) {
+          if (spell.class === cc.classname && spell.prepared) {
             cc.numprepped++;
           }
         });
       });
       spells.level6.forEach((spell) => {
         classCounts.forEach((cc) => {
-          if (spell.class === cc.classname) {
+          if (spell.class === cc.classname && spell.prepared) {
             cc.numprepped++;
           }
         });
       });
       spells.level7.forEach((spell) => {
         classCounts.forEach((cc) => {
-          if (spell.class === cc.classname) {
+          if (spell.class === cc.classname && spell.prepared) {
             cc.numprepped++;
           }
         });
       });
       spells.level8.forEach((spell) => {
         classCounts.forEach((cc) => {
-          if (spell.class === cc.classname) {
+          if (spell.class === cc.classname && spell.prepared) {
             cc.numprepped++;
           }
         });
       });
       spells.level9.forEach((spell) => {
         classCounts.forEach((cc) => {
-          if (spell.class === cc.classname) {
+          if (spell.class === cc.classname && spell.prepared) {
             cc.numprepped++;
           }
         });
