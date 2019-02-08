@@ -45,7 +45,7 @@
             </div>
           </div>
         </div>
-        <br style="page-break-after: always" />
+        <div style="page-break-after: always">&nbsp;</div>
         <!-- Spells -->
         <div class="row">
           <div class="col-12">
@@ -58,6 +58,7 @@
             <resources />
           </div>
         </div>
+        <div style="page-break-after: always">&nbsp;</div>
         <!-- Fluff Details -->
         <appearance />
         <fluff />
