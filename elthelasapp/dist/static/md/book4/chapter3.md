@@ -61,15 +61,37 @@ Orc +1
 
 Shortly after the players arrive in town and have had a chance to meet a few of the more important people, the horns will blow in alarm and the streets will clear as a boulder from an orcish catapult levels a nearby house. Shouts can be heard from the south wall as well as the sounds of battle. If the players choose to intervene and help the defenders run the encounter as follows.
 
-The players arrive at the wall to see orcs and humans fighting at the top, orcish siege ladders bring additional orcish forces to the top. Emily Scholl leads her force to one side of the players, attempting to push the orcs off the wall, while Clara Moldenhauer personally commands the soldiers on the other side. Split control of friendly NPCs between the players. There should be two friendly soldiers per player character, and 6 orcs per player character. The rest are guards armed with spears and light crossbows.
+The players arrive at the wall to see orcs and humans fighting at the top, orcish siege ladders bring additional orcish forces to the top. Describe the scene as such:
 
-There should be one siege ladder for every player present, and at the end of every round each siege ladder will deposit an additional orc at the top of the walls, a catapult shot will land in one random square, dealing 3d10 bludgeoning damage (DC 12 dex save for half). Among the orcs, for each 10 orcs there is 1 Blade of Ilneval and 1 Claw of Luthic. To maintain this, for each orc deposited roll a d10, on a 9 place a Claw of Luthic, on a 10, place a blade of Ilneval. Each round roll a d6, on a 4, 5 or 6, the orcs attach another seige ladder to the walls.
+You arrive to see the orcs appear to be more or less in control of this section of wall already, with only minimal resistence left, a dozen or so guards lie dead on the walls or having fallen to the bottom, only two remain fighting at the top of the wall. Emily Scholl stands with 2 guards on the stairs, fighting off several orcs attempting to descend into the town itself, another woman in heavy armor you don't recognize stands on the wall by herself, you watch as she swings her greatsword in a great arc, cleaving an orc in two. As you rush in a bolt of fire streaks down from above, landing amidst the orcs on the far side, a winged demonic looking fellow hovers above the battlefield. Several more orcs come climbing up onto the wall from the ladders that have been leaned against it, before one of them suddenly gasps in surprise, two shortswords protruding from its belly to reveal a halfling that had been hiding in the shadows, you catch only a glimpse of her before she has disappeared from view again. Another ladder crashes against the wall, another orc soldier jumping off ready to fight. There is a whistling sound followed by a loud crash before the house next to you caves in on itself, clearly impacted by something. Roll initiative. 
+
+Split control of friendly NPCs between the players. There are 4 friendly NPCs
+
+* Clara Moldenhauer, Cleric of Cora
+* Emily Scholl, Fighter and Commander of the Guard
+* Kailu Azziri, Bladesinger wizard
+* Regina Underfoot, leader of the thieves guild, who volunteered to aid in the defense of the town. Officially she is a concerned citizen and a fruit merchant put out of business by the siege.
+* there are 4 friendly soldiers left
+
+There are 3 orcs per player character already on the wall (21-24). 2 of them are Blades of Ilneval, and 2 are Claws of Luthic. Total orcs in the assault force is 500.
+
+[Stat Blocks for Orcs](/runner/orcbladeofilneval&orcclawofluthic&orc)
+
+There should be one siege ladder for every player present, maximum 6, and at the end of every round each siege ladder will deposit an additional orc at the top of the walls, and a catapult shot will land in one random square, dealing 3d10 bludgeoning damage and 2d10 fire damage (DC 12 dex save for half) to anyone in or adjacent to that square (15 ft cube). Among the orcs, for each 10 orcs there is 1 Blade of Ilneval and 1 Claw of Luthic. To maintain this, for each orc deposited roll a d10, on a 9 place a Claw of Luthic, on a 10, place a blade of Ilneval. Each round roll a d6, on a 5 or 6, the orcs attach another seige ladder to the walls.
 
 Siege ladders can be pushed off with a DC 20 Strength Check, or destroyed. They are immune to piercing and poison damage, and resistant to cold, slashing and bludgeoning damage, have 30 hit points and an AC of 15. If the orcs are reduced to 3 siege ladders on the walls (or half the number of players, whichever is less) they will retreat.
 
-After the battle, Emily Scholl and Clara Moldenhauer will compliment the players skill in battle, thank them for their help, and offer to help them in whatever plan they have to sneak past enemy lines. Additionally, a bedraggled slave will be released from the orc camp to deliver a message. The orc warlord in charge, Cratus, offers to negotiate the terms of the cities surrender. His message: he will set up a diplomatic tent halfway between his army and the city. He will meet a delegation of the cities choice, no larger than 8 people, to meet his own delegation of 8 to negotiate the terms of surrender for the city.
+After the battle, any NPCs not under Sydney's control will compliment the players skill in battle , thank them for their help, and escuse themselves to help cleaning up the wreckage. (if they are still alive) Whoever is alive but not under Sydney's control will suggest to Sydney's character that they accompany the party for a time and escort them through town.
+
+### Offer to Negotiate
+
+Shortly after the battle, a bedraggled slave will be released from the orc camp to deliver a message. The players will likely hear about it from anyone around them at the time. The orc warlord in charge, Cratus, offers to negotiate the terms of the cities surrender. His message: he will set up a diplomatic tent halfway between his army and the city. He will meet a delegation of the cities choice, no larger than 10 people, to meet his own delegation of 10 to negotiate the terms of surrender for the city.
+
+Should battle break out, Cratus's delegation consists of himself, two Orc Blade of Ilnevals, two Hobgoblin Devestators, and six Orc Elite Guards
 
 [Warlord Cratus](/runner/warlordcratus)
+
+[The Delegation](/runner/warlordcratus&orcbladeofilneval&orcbladeofilneval&hobgoblindevastator&hobgoblindevastator&orceliteguard&orceliteguard&orceliteguard&orceliteguard&orceliteguard)
 
 ### The Apprentices
 

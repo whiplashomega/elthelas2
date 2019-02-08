@@ -14,10 +14,12 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.18c247e742cdab91882adb7e2a3d6324.js"
+  "/precache-manifest.96ffca620f07d27ee55674c8a4486f9f.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "Elthelas"});
+
+workbox.skipWaiting();
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to

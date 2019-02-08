@@ -23,6 +23,7 @@ module.exports = {
   pwa: {
     themeColor: "#3e60af",
     workboxOptions: {
+      skipWaiting: true,
       offlineGoogleAnalytics: true,
       runtimeCaching: [
       {

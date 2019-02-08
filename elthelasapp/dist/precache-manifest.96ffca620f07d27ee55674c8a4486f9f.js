@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "/json/history.json"
   },
   {
-    "revision": "d49468de124b6c85add5",
+    "revision": "0c78b7229ad2e77b8120",
     "url": "/css/characterbuilder.bcd5f719.css"
   },
   {
@@ -24,48 +24,48 @@ self.__precacheManifest = [
     "url": "/js/chunk-vendors.da534e4e.js"
   },
   {
-    "revision": "7fa6f359daa1905840f3",
+    "revision": "36cd9d0354d01ebbc4d5",
     "url": "/css/classes.edefa7b2.css"
   },
   {
-    "revision": "7fa6f359daa1905840f3",
-    "url": "/js/classes.ca0fa2f8.js"
+    "revision": "36cd9d0354d01ebbc4d5",
+    "url": "/js/classes.830b3391.js"
   },
   {
-    "revision": "c17bc21e77d6aa503682",
+    "revision": "b6b8b2cc88ef9d82e39b",
     "url": "/css/domains.f849abdb.css"
   },
   {
-    "revision": "c17bc21e77d6aa503682",
-    "url": "/js/domains.8a783424.js"
+    "revision": "b6b8b2cc88ef9d82e39b",
+    "url": "/js/domains.9c0fbd04.js"
   },
   {
-    "revision": "ef7065dde5a7c1e9229b",
+    "revision": "49d0600ca359d6449126",
     "url": "/css/encounters.8b5fefc0.css"
   },
   {
-    "revision": "ef7065dde5a7c1e9229b",
-    "url": "/js/encounters.748e7f06.js"
+    "revision": "49d0600ca359d6449126",
+    "url": "/js/encounters.a38dd5f7.js"
   },
   {
-    "revision": "53e3a4d5a6095228812b",
+    "revision": "0649cda513e0aa8409a2",
     "url": "/css/geography.9ace0302.css"
   },
   {
-    "revision": "53e3a4d5a6095228812b",
-    "url": "/js/geography.f41ac3bb.js"
+    "revision": "0649cda513e0aa8409a2",
+    "url": "/js/geography.57e44d2a.js"
   },
   {
-    "revision": "19ad909cf8dc77cb705b",
+    "revision": "27ec19575c048fda1ec0",
     "url": "/css/quickref.c3621473.css"
   },
   {
-    "revision": "19ad909cf8dc77cb705b",
-    "url": "/js/quickref.348b6fd3.js"
+    "revision": "27ec19575c048fda1ec0",
+    "url": "/js/quickref.75a70a80.js"
   },
   {
-    "revision": "ebdd0077fd3ed27a2a6c",
-    "url": "/js/treasure.2a43c97d.js"
+    "revision": "7a1cb17538a99dc8e243",
+    "url": "/js/treasure.99c90b1e.js"
   },
   {
     "revision": "b0f49cd26ba67885381b66e77665bf02",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "8396044d432f59a56d4b7c2e7ec63974",
+    "revision": "478cc83511eef1b0004f1f5427aad093",
     "url": "/index.html"
   },
   {
@@ -144,12 +144,12 @@ self.__precacheManifest = [
     "url": "/json/features.json"
   },
   {
-    "revision": "9462a09c973de3b8b933",
-    "url": "/js/app.a60d406f.js"
+    "revision": "9dc2bf91394ed97cc9e8",
+    "url": "/js/app.f4d77648.js"
   },
   {
-    "revision": "d49468de124b6c85add5",
-    "url": "/js/characterbuilder.ee0815ec.js"
+    "revision": "0c78b7229ad2e77b8120",
+    "url": "/js/characterbuilder.87a57b34.js"
   },
   {
     "revision": "27d1a45d96aa15386fc72c329f87f6ca",
@@ -236,7 +236,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chapter2old.md"
   },
   {
-    "revision": "e6dbff11b38e038ac02384fb2134a99f",
+    "revision": "80398b91c501d9b194f0f7f847483919",
     "url": "/static/md/book4/chapter3.md"
   },
   {
@@ -280,7 +280,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/curestan.md"
   },
   {
-    "revision": "9462a09c973de3b8b933",
+    "revision": "9dc2bf91394ed97cc9e8",
     "url": "/css/app.76580425.css"
   },
   {
