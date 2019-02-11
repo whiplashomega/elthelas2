@@ -1,71 +1,75 @@
 self.__precacheManifest = [
   {
-    "revision": "73d5da13c7011a62223e9c7d8b277a66",
-    "url": "/json/gods.json"
+    "revision": "27d1a45d96aa15386fc72c329f87f6ca",
+    "url": "/json/landmarks.json"
+  },
+  {
+    "revision": "2a7a0ec8da4974b7bfb9f99c94243405",
+    "url": "/static/md/book4/curestan.md"
   },
   {
     "revision": "2c0c0b0008f1399bde41ecb582de658d",
     "url": "/static/md/book4/theworld.md"
   },
   {
-    "revision": "0f17866311b32b28c5b4e7bc53e81ae2",
-    "url": "/json/history.json"
+    "revision": "aab0c39091fcb171e6c785f7840bbbe0",
+    "url": "/static/md/book4/pcs.md"
   },
   {
-    "revision": "c795ca4e28aa0817b5cb",
-    "url": "/css/characterbuilder.6568bede.css"
+    "revision": "05fd0b582f5d094124435a801f091c66",
+    "url": "/json/nations.json"
   },
   {
     "revision": "24d8aa26fb0ad35b9465",
     "url": "/css/chunk-vendors.8555efa7.css"
   },
   {
-    "revision": "24d8aa26fb0ad35b9465",
-    "url": "/js/chunk-vendors.da534e4e.js"
-  },
-  {
-    "revision": "36cd9d0354d01ebbc4d5",
+    "revision": "79fb1e63ff9df14db6ce",
     "url": "/css/classes.edefa7b2.css"
   },
   {
-    "revision": "36cd9d0354d01ebbc4d5",
-    "url": "/js/classes.830b3391.js"
+    "revision": "79fb1e63ff9df14db6ce",
+    "url": "/js/classes.74f53ad6.js"
   },
   {
-    "revision": "b6b8b2cc88ef9d82e39b",
+    "revision": "11741f8874501aed6126",
     "url": "/css/domains.f849abdb.css"
   },
   {
-    "revision": "b6b8b2cc88ef9d82e39b",
-    "url": "/js/domains.9c0fbd04.js"
+    "revision": "11741f8874501aed6126",
+    "url": "/js/domains.27a153ce.js"
   },
   {
-    "revision": "49d0600ca359d6449126",
+    "revision": "a418bf3e3d9870de5d60",
     "url": "/css/encounters.8b5fefc0.css"
   },
   {
-    "revision": "49d0600ca359d6449126",
-    "url": "/js/encounters.a38dd5f7.js"
+    "revision": "a418bf3e3d9870de5d60",
+    "url": "/js/encounters.4a2ad7a0.js"
   },
   {
-    "revision": "0649cda513e0aa8409a2",
+    "revision": "46b70e74157db9f96353",
     "url": "/css/geography.9ace0302.css"
   },
   {
-    "revision": "0649cda513e0aa8409a2",
-    "url": "/js/geography.57e44d2a.js"
+    "revision": "46b70e74157db9f96353",
+    "url": "/js/geography.e0b59846.js"
   },
   {
-    "revision": "27ec19575c048fda1ec0",
+    "revision": "5c2bf3bb807a563524f5",
     "url": "/css/quickref.c3621473.css"
   },
   {
-    "revision": "27ec19575c048fda1ec0",
-    "url": "/js/quickref.75a70a80.js"
+    "revision": "5c2bf3bb807a563524f5",
+    "url": "/js/quickref.78372084.js"
   },
   {
-    "revision": "7a1cb17538a99dc8e243",
-    "url": "/js/treasure.99c90b1e.js"
+    "revision": "b148ec60602c4177fae0",
+    "url": "/js/treasure.8aa089fa.js"
+  },
+  {
+    "revision": "1c1bfe463a8773c8b703389174dc4dd9",
+    "url": "/fonts/tl-icons.1c1bfe46.woff"
   },
   {
     "revision": "b0f49cd26ba67885381b66e77665bf02",
@@ -76,32 +80,20 @@ self.__precacheManifest = [
     "url": "/fonts/tl-icons.8402c93e.ttf"
   },
   {
-    "revision": "1c1bfe463a8773c8b703389174dc4dd9",
-    "url": "/fonts/tl-icons.1c1bfe46.woff"
-  },
-  {
     "revision": "82a4fd3fe6368758827dc06e38e22f16",
     "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "464b7d8e39deb5422b4ea8d337c31079",
+    "revision": "b51e3bc4ef785087745102af5bbd956c",
     "url": "/index.html"
   },
   {
-    "revision": "330982bccea858db7968bf5625401b26",
-    "url": "/static/md/book4/pcs.md"
+    "revision": "c5636d02b570345d28ba985cc2cf6e0e",
+    "url": "/static/md/book4/chaptertemplate.md"
   },
   {
     "revision": "fe9884553a1ae2ea1bb0d6f76a8d4822",
     "url": "/js/locale/el.json"
-  },
-  {
-    "revision": "d3d9140c4d912e18b894495d6c87f2df",
-    "url": "/js/timeline.js"
-  },
-  {
-    "revision": "efc28f3579bb800850de349535a7af21",
-    "url": "/js/timeline.min.js"
   },
   {
     "revision": "5142d6998f2907692d3fd3fb446368b5",
@@ -144,24 +136,24 @@ self.__precacheManifest = [
     "url": "/json/features.json"
   },
   {
-    "revision": "dd5bfef9b5b9efba1ca5",
-    "url": "/js/app.278a0f30.js"
+    "revision": "73d5da13c7011a62223e9c7d8b277a66",
+    "url": "/json/gods.json"
   },
   {
-    "revision": "c795ca4e28aa0817b5cb",
-    "url": "/js/characterbuilder.fd236aa0.js"
+    "revision": "0f17866311b32b28c5b4e7bc53e81ae2",
+    "url": "/json/history.json"
   },
   {
-    "revision": "27d1a45d96aa15386fc72c329f87f6ca",
-    "url": "/json/landmarks.json"
+    "revision": "917645b2b9dfc494550d",
+    "url": "/js/app.2f4f506b.js"
   },
   {
     "revision": "1fed40634ab1b8c516d38e28c5e732e9",
     "url": "/json/magicitems.json"
   },
   {
-    "revision": "05fd0b582f5d094124435a801f091c66",
-    "url": "/json/nations.json"
+    "revision": "24d8aa26fb0ad35b9465",
+    "url": "/js/chunk-vendors.da534e4e.js"
   },
   {
     "revision": "2cbd491b03b1d24fcf01c9112168a9f0",
@@ -192,28 +184,32 @@ self.__precacheManifest = [
     "url": "/manifest.webmanifest"
   },
   {
-    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
-    "url": "/robots.txt"
+    "revision": "efc28f3579bb800850de349535a7af21",
+    "url": "/js/timeline.min.js"
   },
   {
     "revision": "d41d8cd98f00b204e9800998ecf8427e",
     "url": "/static/md/book.md"
   },
   {
-    "revision": "b4dbc6cdee8578c21eb3224fa90ecbbd",
-    "url": "/static/md/book4/chapter1.md"
+    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
+    "url": "/robots.txt"
   },
   {
     "revision": "4c28c982dd966cbda62320d4f432222d",
     "url": "/static/md/book4/chapter10.md"
   },
   {
-    "revision": "c1f7c7ff514a5a537df5875330776851",
-    "url": "/static/md/book4/chapter11.md"
+    "revision": "b4dbc6cdee8578c21eb3224fa90ecbbd",
+    "url": "/static/md/book4/chapter1.md"
   },
   {
     "revision": "9a4b633c555585a69400617e46e2601e",
     "url": "/static/md/book4/chapter12.md"
+  },
+  {
+    "revision": "c1f7c7ff514a5a537df5875330776851",
+    "url": "/static/md/book4/chapter11.md"
   },
   {
     "revision": "4c5b11958f5fe61f98f10a7bb10b16af",
@@ -228,6 +224,18 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chapter1old.md"
   },
   {
+    "revision": "6f858c08d06a2418abe821d571dbb3d0",
+    "url": "/static/md/book4/chapter3.md"
+  },
+  {
+    "revision": "d3d9140c4d912e18b894495d6c87f2df",
+    "url": "/js/timeline.js"
+  },
+  {
+    "revision": "77dbf53ee1cc6e134c20ca318a0d8ff9",
+    "url": "/static/md/book4/chapter4.md"
+  },
+  {
     "revision": "81c2fab248da1d2b661dd1538cac6fb6",
     "url": "/static/md/book4/chapter2.md"
   },
@@ -236,24 +244,16 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chapter2old.md"
   },
   {
-    "revision": "80398b91c501d9b194f0f7f847483919",
-    "url": "/static/md/book4/chapter3.md"
-  },
-  {
     "revision": "0f3706bbf9968b8f0f3209cf69b52a59",
     "url": "/static/md/book4/chapter3old.md"
   },
   {
-    "revision": "77dbf53ee1cc6e134c20ca318a0d8ff9",
-    "url": "/static/md/book4/chapter4.md"
+    "revision": "4aa5ed4c77597d4ab0a032dbc32cd44c",
+    "url": "/static/md/book4/chapter5.md"
   },
   {
     "revision": "c701d15498e29dd95e63b8f8aef0baa0",
     "url": "/static/md/book4/chapter4old.md"
-  },
-  {
-    "revision": "4aa5ed4c77597d4ab0a032dbc32cd44c",
-    "url": "/static/md/book4/chapter5.md"
   },
   {
     "revision": "6ccdd323bd6fadf7e4ff2ecd6fe1a0ce",
@@ -268,19 +268,19 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chapter8.md"
   },
   {
+    "revision": "985962221eca395ada46",
+    "url": "/js/characterbuilder.1febb28c.js"
+  },
+  {
     "revision": "2aadc65aa90a103e7623b74ac6b77766",
     "url": "/static/md/book4/chapter9.md"
   },
   {
-    "revision": "c5636d02b570345d28ba985cc2cf6e0e",
-    "url": "/static/md/book4/chaptertemplate.md"
+    "revision": "985962221eca395ada46",
+    "url": "/css/characterbuilder.6568bede.css"
   },
   {
-    "revision": "2a7a0ec8da4974b7bfb9f99c94243405",
-    "url": "/static/md/book4/curestan.md"
-  },
-  {
-    "revision": "dd5bfef9b5b9efba1ca5",
+    "revision": "917645b2b9dfc494550d",
     "url": "/css/app.76580425.css"
   },
   {

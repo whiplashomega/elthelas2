@@ -67,8 +67,8 @@ You arrive to see the orcs appear to be more or less in control of this section 
 
 Split control of friendly NPCs between the players. There are 4 friendly NPCs
 
-* Clara Moldenhauer, Cleric of Cora
-* Emily Scholl, Fighter and Commander of the Guard
+* Clara Moldenhauer, Fighter and Commander of the Guard
+* Emily Scholl, Cleric of Cora
 * Kailu Azziri, Bladesinger wizard
 * Regina Underfoot, leader of the thieves guild, who volunteered to aid in the defense of the town. Officially she is a concerned citizen and a fruit merchant put out of business by the siege.
 * there are 4 friendly soldiers left
@@ -78,6 +78,14 @@ There are 3 orcs per player character already on the wall (21-24). 2 of them are
 [Stat Blocks for Orcs](/runner/orcbladeofilneval&orcclawofluthic&orc)
 
 There should be one siege ladder for every player present, maximum 6, and at the end of every round each siege ladder will deposit an additional orc at the top of the walls, and a catapult shot will land in one random square, dealing 3d10 bludgeoning damage and 2d10 fire damage (DC 12 dex save for half) to anyone in or adjacent to that square (15 ft cube). Among the orcs, for each 10 orcs there is 1 Blade of Ilneval and 1 Claw of Luthic. To maintain this, for each orc deposited roll a d10, on a 9 place a Claw of Luthic, on a 10, place a blade of Ilneval. Each round roll a d6, on a 5 or 6, the orcs attach another seige ladder to the walls.
+
+End of Initiative Actions
+
+* Catapult Shot
+* Ladder Roll (1d6, new ladder on 5 or 6)
+* New Orcs Arrive
+* New Guards Arrive (new guard on 4, 5 or 6)
+* Orc Morale check, roll a d20 + (number of living orcs - number of living friends), retreats on a result less than 10
 
 Siege ladders can be pushed off with a DC 20 Strength Check, or destroyed. They are immune to piercing and poison damage, and resistant to cold, slashing and bludgeoning damage, have 30 hit points and an AC of 15. If the orcs are reduced to 3 siege ladders on the walls (or half the number of players, whichever is less) they will retreat.
 

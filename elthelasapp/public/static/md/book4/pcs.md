@@ -39,7 +39,7 @@
 		<tr><td>Sylvan's Rangers</td><td>0</td></tr>
 		<tr><td>Tock's Inevitables</td><td>0</td></tr>
 		<tr><td>Trollkin Mercenary Corps</td><td>0</td></tr>
-		<tr><td>Union of Wizard's Colleges</td><td>3</td></tr>
+		<tr><td>Union of Wizard's Colleges</td><td>4</td></tr>
 	</tbody>
 </table>
 
@@ -83,7 +83,7 @@ Ching Shu grew up in Zelfir, her parents were both wizards and members of the Un
 		<tr><td>Masters of the Deep Song</td><td>0</td></tr>
 		<tr><td>Shepherd's of the All-Mother</td><td>0</td></tr>
 		<tr><td>Silver Dragon Knights</td><td>0</td></tr>
-		<tr><td>Sylvan's Rangers</td><td>3</td></tr>
+		<tr><td>Sylvan's Rangers</td><td>4</td></tr>
 		<tr><td>Tock's Inevitables</td><td>0</td></tr>
 		<tr><td>Trollkin Mercenary Corps</td><td>0</td></tr>
 		<tr><td>Union of Wizard's Colleges</td><td>0</td></tr>
@@ -153,7 +153,7 @@ Curious, Eyvindra finds herself in a strange and hectic city, searching for her 
 		<tr><td>Shepherd's of the All-Mother</td><td>0</td></tr>
 		<tr><td>Silver Dragon Knights</td><td>0</td></tr>
 		<tr><td>Sylvan's Rangers</td><td>0</td></tr>
-		<tr><td>Tock's Inevitables</td><td>3</td></tr>
+		<tr><td>Tock's Inevitables</td><td>1</td></tr>
 		<tr><td>Trollkin Mercenary Corps</td><td>0</td></tr>
 		<tr><td>Union of Wizard's Colleges</td><td>0</td></tr>
 	</tbody>
@@ -255,7 +255,7 @@ She doesn't handle moral ambiguity well, and always seeks the right answer to ev
 		</tr>
 	</thead>
 	<tbody>
-		<tr><td>Black Wolf Irregulars</td><td>3</td></tr>
+		<tr><td>Black Wolf Irregulars</td><td>4</td></tr>
 		<tr><td>Amathera's Shield</td><td>0</td></tr>
 		<tr><td>Artificer's of Mechanus</td><td>0</td></tr>
 		<tr><td>Black Sun</td><td>0</td></tr>
@@ -302,7 +302,7 @@ Daughter of a fruit merchant near the Moon Pass, she is Vanriel's half-sister (b
 		</tr>
 	</thead>
 	<tbody>
-		<tr><td>Black Wolf Irregulars</td><td>3</td></tr>
+		<tr><td>Black Wolf Irregulars</td><td>4</td></tr>
 		<tr><td>Amathera's Shield</td><td>0</td></tr>
 		<tr><td>Artificer's of Mechanus</td><td>0</td></tr>
 		<tr><td>Black Sun</td><td>0</td></tr>
@@ -751,7 +751,7 @@ The only real silver lining for Eadric has been Ashes of the Mountain, or Ash as
 
 **Player:** Alex Canterbury
 
-**Faction:** ?
+**Faction:** Champions of Cora
 
 **Class:** Paladin (Oath of the Ancients)
 
@@ -772,7 +772,7 @@ The only real silver lining for Eadric has been Ashes of the Mountain, or Ash as
 		<tr><td>Amathera's Shield</td><td>0</td></tr>
 		<tr><td>Artificer's of Mechanus</td><td>0</td></tr>
 		<tr><td>Black Sun</td><td>0</td></tr>
-		<tr><td>Champions of Cora</td><td>0</td></tr>
+		<tr><td>Champions of Cora</td><td>1</td></tr>
 		<tr><td>Dormanian Imperial Guard</td><td>0</td></tr>
 		<tr><td>Guild of Heroes</td><td>0</td></tr>
 		<tr><td>International Grangemaster's Alliance</td><td>0</td></tr>
@@ -798,7 +798,7 @@ A noble from a country that no longer exists from before the Dormanian Empire, w
 
 **Player:** Olivia Beck
 
-**Faction:** ?
+**Faction:** Trollkin Mercenary Corps
 
 **Class:** Fighter (Champion?)
 
@@ -832,7 +832,7 @@ A noble from a country that no longer exists from before the Dormanian Empire, w
 		<tr><td>Silver Dragon Knights</td><td>0</td></tr>
 		<tr><td>Sylvan's Rangers</td><td>0</td></tr>
 		<tr><td>Tock's Inevitables</td><td>0</td></tr>
-		<tr><td>Trollkin Mercenary Corps</td><td>0</td></tr>
+		<tr><td>Trollkin Mercenary Corps</td><td>1</td></tr>
 		<tr><td>Union of Wizard's Colleges</td><td>0</td></tr>
 	</tbody>
 </table>
@@ -840,6 +840,57 @@ A noble from a country that no longer exists from before the Dormanian Empire, w
 #### Backstory
 
 ????
+
+### Kailee Azziri
+
+**Player:** Sydney Reed
+
+**Faction:** Union of Wizards Colleges
+
+**Class:** Wizard (Bladesinger)
+
+**Race:** Fey'ri
+
+**Background:** Sage
+
+#### Faction Standings
+
+<table class="table table-striped datatable">
+	<thead>
+		<tr>
+			<th>Faction</th><th>Current Standing</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr><td>Black Wolf Irregulars</td><td>0</td></tr>
+		<tr><td>Amathera's Shield</td><td>0</td></tr>
+		<tr><td>Artificer's of Mechanus</td><td>0</td></tr>
+		<tr><td>Black Sun</td><td>0</td></tr>
+		<tr><td>Champions of Cora</td><td>0</td></tr>
+		<tr><td>Dormanian Imperial Guard</td><td>0</td></tr>
+		<tr><td>Guild of Heroes</td><td>0</td></tr>
+		<tr><td>International Grangemaster's Alliance</td><td>0</td></tr>
+		<tr><td>Illustrious Guild of Merchants and Fine Artisans</td><td>0</td></tr>
+		<tr><td>Keepers of the Grove</td><td>0</td></tr>
+		<tr><td>Lords of the Rising Dawn</td><td>0</td></tr>
+		<tr><td>Maker's of Legend</td><td>0</td></tr>
+		<tr><td>Masters of the Deep Song</td><td>0</td></tr>
+		<tr><td>Shepherd's of the All-Mother</td><td>0</td></tr>
+		<tr><td>Silver Dragon Knights</td><td>0</td></tr>
+		<tr><td>Sylvan's Rangers</td><td>0</td></tr>
+		<tr><td>Tock's Inevitables</td><td>0</td></tr>
+		<tr><td>Trollkin Mercenary Corps</td><td>0</td></tr>
+		<tr><td>Union of Wizard's Colleges</td><td>2</td></tr>
+	</tbody>
+</table>
+
+#### Backstory
+
+Kailee grew up in the outskirts of Loridesa. Her parents were part of the Fey'ri expat communities of Dera'Dragorim before leaving for Eldoran. Her parents were skilled artisans of fine and magical metals and came to Loridesa after being discovered by one of the smiths of the king's court. This placed them firmly in the upper middle class of Loridesa, and while they suffered a great deal of distrust and racism from the full-blooded elves, Kailee nevertheless was in want of nothing growing up. 
+
+She struggled to make friends among the elves and found solace in the king's library, where the librarians welcomed her and guided her education. She became especially interested in the study of magic of all sorts, seeking out the works of those who had studied magical artifacts and works of great works of magical power. She was recognized by the king himself for several discoveries she made of once thought forgotten lore, a fact that would prove her undoing in the court. Presumably whipped up by jealous rivals, she was chased from town by a mob. 
+
+Eventually, she enrolled at the Bladesingers Academy in Estapor, keeping her previous discoveries to herself and dedicating herself to the study of the arcane. After graduation, she was enlisted by the Union of Wizards Colleges as a special investigator to search out the misuse of magic throughout the realms.
 
 ### NPC Table
 
