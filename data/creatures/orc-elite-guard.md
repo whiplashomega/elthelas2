@@ -7,7 +7,7 @@ tags: [medium, humanoid, cr2]
 
 **Medium humanoid (orc), lawful evil**
 
-**Armor Class** 18 (plate armor)
+**Armor Class** 18 (parakas steel plate armor)
 
 **Hit Points** 38 (5d8 + 18)
 
@@ -19,7 +19,7 @@ tags: [medium, humanoid, cr2]
 
 **Saving Throws** +6 Str, +5 Con
 
-**Skills** Intimidation +2, perception +3
+**Skills** Intimidation +3, perception +4
 
 **Senses**  darkvision 60 ft., passive perception 13
 
@@ -37,6 +37,8 @@ tags: [medium, humanoid, cr2]
 
 **Multiattack** The Elite Guard makes 2 halberd attacks and one with the halberds butt when it takes an attack action on its turn.
 
-**Halberd** Reach 10 ft. +6 (1d10+4)
+**Halberd** Reach 10 ft. +7 (1d10+4)
 
-**Halberd Butt** Reach 10 ft. +6 (1d4+4)
+**Halberd Butt** Reach 10 ft. +7 (1d4+4)
+
+**Orc War Machine Creature** This creature is built for the Orc War Machine. Proficiency bonus is based on hit dice rather than CR, weapons and armor are set up for a professional military.

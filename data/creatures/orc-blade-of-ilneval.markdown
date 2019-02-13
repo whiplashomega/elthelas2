@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Orc Blade of Ilneval"
+title: "Orc Blade of Mat'Raktha"
 date: 2017-09-10
 tags: [medium, humanoid, cr4, volos-guide]
 ---

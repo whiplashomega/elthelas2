@@ -11,7 +11,7 @@
           </h4>
           <div v-for="item in container.equipment" :key="item.id" class="smalltext">
             <button type="button" class="print-hide btn-symbol float-left" @click="item.edit = true">&#9998;</button>
-            {{ item.name }} <input type="number" class="charsheet-num" v-model="item.quantity" /> <span class="float-right">{{ item.weight }} lbs</span><br />
+            <span :class="item.attunement ? 'attuned' : ''">{{ item.name }}</span> <input type="number" class="charsheet-num" v-model="item.quantity" /> <span class="float-right">{{ item.weight }} lbs</span><br />
             <b-modal v-model="item.edit" title="Edit Equipment">
               Name
               <input type="text" class="form-control" v-model="item.name" />

@@ -296,6 +296,14 @@
    "Cost": "50"
  },
  {
+   "Name": "Greatbow",
+   "Type": "Martial",
+   "Damage": "2d6 piercing",
+   "Weight": "4 lb",
+   "Properties": "ranged, Ammunition (range 150/600), heavy, two-handed, requires Str 13 to wield",
+   "Cost": "50"
+ },
+ {
    "Name": "Net",
    "Type": "Martial",
    "Damage": "0",

@@ -127,6 +127,7 @@
           </div>
         </div>
         <bonus />
+        <createcreature />
       </div>
     </div>
     <div v-if="mobile">
