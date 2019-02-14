@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Orc War Captain"
+title: "Orc Warlord"
 date: 2017-09-10
 tags: [medium, humanoid, cr8]
 ---

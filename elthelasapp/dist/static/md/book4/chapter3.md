@@ -93,13 +93,29 @@ After the battle, any NPCs not under Sydney's control will compliment the player
 
 ### Offer to Negotiate
 
-Shortly after the battle, a bedraggled slave will be released from the orc camp to deliver a message. The players will likely hear about it from anyone around them at the time. The orc warlord in charge, Cratus, offers to negotiate the terms of the cities surrender. His message: he will set up a diplomatic tent halfway between his army and the city. He will meet a delegation of the cities choice, no larger than 10 people, to meet his own delegation of 10 to negotiate the terms of surrender for the city.
+Shortly after the battle, a bedraggled slave will be released from the orc camp to deliver a message. The players will likely hear about it from anyone around them at the time. The orc warlord in charge, Cratus, offers to negotiate the terms of the cities surrender. His message: he will set up a diplomatic tent halfway between his army and the city the following day at noon. He will meet a delegation of the cities choice, no larger than 10 people, to meet his own delegation of 10 to negotiate the terms of surrender for the city.
 
-Should battle break out, Cratus's delegation consists of himself, two Orc Blade of Ilnevals, two Hobgoblin Devestators, and six Orc Elite Guards
+If the players remain in town long enough for the negotiation to happen, and there is no deal on surrender, a second assault, this time in more ernest will occur. This second assault will dig under the walls instead of attempting to scale them, with trained bullettes breaking through followed by orc attack squads spreading out through the town.
+
+The players will hear alarms coming from the city during the negotation followed by smoke coming from behind the walls. The warlord will respond that his assault team is currently burning all of the temples in the city. He is able to attack the city with impunity, and his soldiers will continue to slaughter the residents until surrender is agreed upon.
+
+Should battle break out, Cratus's delegation consists of himself, one of his top lieutenants, a sorcerer, a cleric, 3 elite guards and 3 elite archers.
 
 [Warlord Cratus](/runner/warlordcratus)
 
-[The Delegation](/runner/warlordcratus&orcbladeofilneval&orcbladeofilneval&hobgoblindevastator&hobgoblindevastator&orceliteguard&orceliteguard&orceliteguard&orceliteguard&orceliteguard)
+[The Delegation](/runner/warlordcratus&orcwarlord&orcbattlesorcerer&orcwarcleric&orceliteguard&orceliteguard&orceliteguard&orcelitearcher&orcelitearcher&orcelitearcher)
+
+Cratus will not kill the players if he beats them in combat, but will stabilize them at 0 hp and leave, then use skywrite to leave a countdown in the sky, starting at 3 hours.
+
+[Breakthrough Squad](/runner/trainedbulette&orcwarcaptain&orcbattlesorcerer&orctrainedberserker&orcsoldier)
+
+[Battle Line Squad](/runner/trainedbulette&orcwarcaptain&orcwarcleric&orceliteguard&orcspearman)
+
+Frost Giants - The orcs have an uneasy alliance with the Frost Giants
+
+Should the players negotiate the escape of the people of the city, or escape by other means, the orcs will harrass the escapees with Worg Riders (1 per player).
+
+[Worg Riders](/runner/war-trainedworg&hobgoblinworgrider)
 
 ### The Apprentices
 
