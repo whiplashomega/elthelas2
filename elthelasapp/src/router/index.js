@@ -252,6 +252,17 @@ var router = new Router({
       }
     },
     {
+      name: "classesspecific",
+      meta: {
+        title: "Classes"
+      },
+      path: '/options/class/:id',
+      components: {
+        default: classes,
+        sidebar: options
+      }
+    },
+    {
       name: "domains",
       meta: {
         title: "Domains"

@@ -1,18 +1,12 @@
-import $ from 'jquery';
-
 export default {
   data () {
     return {
-
+      shownClass: ""
     };
   },
-  methods: {
-    showClass(id) {
-      $(".racediv").hide();
-      $("#" + id).show();
+  mounted () {
+    if (this.$route.params.id) {
+      this.shownClass = this.$route.params.id.toLowerCase();
     }
-  },
-  created () {
-
   }
 };

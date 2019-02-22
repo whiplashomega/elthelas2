@@ -8,22 +8,22 @@
       for balance reasons.
     </p>
     <ul class="list-inline">
-      <li class="list-inline-item"><button @click="showClass('barbarian')" class="racebutton btn btn-default">Barbarian</button></li>
-      <li class="list-inline-item"><button @click="showClass('bard')" class="racebutton btn btn-default">Bard</button></li>
-      <li class="list-inline-item"><button @click="showClass('cleric')" class="racebutton btn btn-default">Cleric</button></li>
-      <li class="list-inline-item"><button @click="showClass('druid')" class="racebutton btn btn-default">Druid</button></li>
-      <li class="list-inline-item"><button @click="showClass('factotum')" class="racebutton btn btn-default">Factotum</button></li>
-      <li class="list-inline-item"><button @click="showClass('fighter')" class="racebutton btn btn-default">Fighter</button></li>
-      <li class="list-inline-item"><button @click="showClass('monk')" class="racebutton btn btn-default">Monk</button></li>
-      <li class="list-inline-item"><button @click="showClass('paladin')" class="racebutton btn btn-default">Paladin</button></li>
-      <li class="list-inline-item"><button @click="showClass('ranger')" class="racebutton btn btn-default">Ranger</button></li>
-      <li class="list-inline-item"><button @click="showClass('rogue')" class="racebutton btn btn-default">Rogue</button></li>
-      <li class="list-inline-item"><button @click="showClass('sorcerer')" class="racebutton btn btn-default">Sorcerer</button></li>
-      <li class="list-inline-item"><button @click="showClass('warlock')" class="racebutton btn btn-default">Warlock</button></li>
-      <li class="list-inline-item"><button @click="showClass('wizard')" class="racebutton btn btn-default">Wizard</button></li>
+      <li class="list-inline-item"><button @click="shownClass = 'barbarian'" class="racebutton btn btn-default">Barbarian</button></li>
+      <li class="list-inline-item"><button @click="shownClass ='bard'" class="racebutton btn btn-default">Bard</button></li>
+      <li class="list-inline-item"><button @click="shownClass = 'cleric'" class="racebutton btn btn-default">Cleric</button></li>
+      <li class="list-inline-item"><button @click="shownClass = 'druid'" class="racebutton btn btn-default">Druid</button></li>
+      <li class="list-inline-item"><button @click="shownClass = 'factotum'" class="racebutton btn btn-default">Factotum</button></li>
+      <li class="list-inline-item"><button @click="shownClass = 'fighter'" class="racebutton btn btn-default">Fighter</button></li>
+      <li class="list-inline-item"><button @click="shownClass = 'monk'" class="racebutton btn btn-default">Monk</button></li>
+      <li class="list-inline-item"><button @click="shownClass = 'paladin'" class="racebutton btn btn-default">Paladin</button></li>
+      <li class="list-inline-item"><button @click="shownClass = 'ranger'" class="racebutton btn btn-default">Ranger</button></li>
+      <li class="list-inline-item"><button @click="shownClass = 'rogue'" class="racebutton btn btn-default">Rogue</button></li>
+      <li class="list-inline-item"><button @click="shownClass = 'sorcerer'" class="racebutton btn btn-default">Sorcerer</button></li>
+      <li class="list-inline-item"><button @click="shownClass = 'warlock'" class="racebutton btn btn-default">Warlock</button></li>
+      <li class="list-inline-item"><button @click="shownClass = 'wizard'" class="racebutton btn btn-default">Wizard</button></li>
     </ul>
     <div id="raceDetails"></div>
-    <div class="racediv" id="barbarian">
+    <div v-if="shownClass === 'barbarian'">
       <h2>Barbarian</h2>
       <p>For a detailed description of the Barbarian class see the Player's Handbook (p46-50)</p>
       <h3>Primal Path</h3>
@@ -87,7 +87,7 @@
         Barbarian tribes exist in a wide variety of areas in Elthelas, particularly in the wild areas far from the cities. Notable places in Elathia include the runic mountains, sword mountains, the wooded region southwest of Purs, the border region between Eldoran, Demal Thor, and Curinor, the far southern region of Waelin, near the Glass Cliff, the Black Peaks, and the central plains of Malinval. In Atyrea, notable regions include the mountains of Sagenheim (since the gnomish cities exist mostly as cavern cities, the surface is largely held by barbarians), the southern ice wastes, throughout Sage, and the Tiaov Coast. In Riftlan, barbarian tribes can be found throughout in all regions north of Zelfir.
       </p>
     </div>
-    <div class="racediv" id="bard">
+    <div v-if="shownClass === 'bard'">
       <h2>Bard</h2>
       <p>For a detailed description of the Bard class see the Player's Handbook (p51-55)</p>
       <h3>Bard College</h3>
@@ -104,7 +104,7 @@
         Schools that train bards exist throughout Elthelas, in many larger cities you can find 2 or even 3 colleges in competition with each other for students, promoting their different philosophies. While the differnet schools of thought have each spread throughout the lands, the College's of Glamour and Lore hold the most sway in Eldoran, while the College's of Swords and Valor are more common among the Dwarves and Humans. The College of Whispers is unique in that it does not publicize it's existence, although its graduates are often recruited by state sponsored spy agencies.
       </p>
     </div>
-    <div class="racediv" id="cleric">
+    <div v-if="shownClass === 'cleric'">
       <h2>Cleric</h2>
       <p>For a detailed description of the Cleric class see the Player's Handbook (p56-63)</p>
       <h3><router-link to="/options/domains">Domain</router-link></h3>
@@ -132,7 +132,7 @@
         You can find Clerics of local Gods in just about every town or village in Elthelas. No farming community would establish itself without a cleric of Sara, and no war camp would be without a cleric of Cora, Mat'raktha, or Malik. Even larger trading ships or caravans will often recruit a cleric of Maris to aid them.
       </p>
     </div>
-    <div class="racediv" id="druid">
+    <div v-if="shownClass === 'druid'">
       <h2>Druid</h2>
       <p>For a detailed description of the Druid class see the Player's Handbook (p64-69)</p>
       <h3>Druid Circle</h3>
@@ -144,7 +144,7 @@
         <li>Circle of the Shepherd (XGE p23)</li>
       </ul>
     </div>
-    <div class="racediv" id="fighter">
+    <div v-if="shownClass === 'fighter'">
       <h2>Fighter</h2>
       <p>For a detailed description of the Fighter class see the Player's Handbook (p70-75)</p>
       <h3>Martial Archetypes</h3>
@@ -199,7 +199,7 @@
         illusions.
       </p>
     </div>
-    <div class="racediv" id="factotum">
+    <div v-if="shownClass === 'factotum'">
       <h2>Factotum</h2>
       <p>
         The Factotum is a homebrewed class loosely based on the similarly named class from D&D 3.5.
@@ -491,7 +491,7 @@
         By 15th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.
       </p>
     </div>
-    <div class="racediv" id="monk">
+    <div v-if="shownClass === 'monk'">
       <h2>Monk</h2>
       <p>For a detailed description of the Monk class see the Player's Handbook (p76-81)</p>
       <h3>Monastic Tradition</h3>
@@ -506,7 +506,7 @@
         <li>Way of the Sun Soul (SCAG p131/XGE p35)</li>
       </ul>
     </div>
-    <div class="racediv" id="paladin">
+    <div v-if="shownClass === 'paladin'">
       <h2>Paladin</h2>
       <p>For a detailed description of the Paladin class see the Player's Handbook (p82-88)</p>
       <h3>Sacred Oath</h3>
@@ -520,7 +520,7 @@
         <li>Oath of Vengeance (PHB p87-88)</li>
       </ul>
     </div>
-    <div class="racediv" id="ranger">
+    <div v-if="shownClass === 'ranger'">
       <h2>Ranger</h2>
       <p>
         The ranger has been an issue of some consternation for many players, as written in the PHB, many, including myself, consider it to be underpowered compared to the other classes. It
@@ -728,7 +728,7 @@
         against it.
       </p>
     </div>
-    <div class="racediv" id="rogue">
+    <div v-if="shownClass === 'rogue'">
       <h2>Rogue</h2>
       <p>For a detailed description of the Rogue class see the Player's Handbook (p94-98)</p>
       <h3>Roguish Archetype</h3>
@@ -743,7 +743,7 @@
         <li>Thief (PHB p97)</li>
       </ul>
     </div>
-    <div class="racediv" id="sorcerer">
+    <div v-if="shownClass === 'sorcerer'">
       <h2>Sorcerer</h2>
       <p>For a detailed description of the Sorcerer class see the Player's Handbook (p99-104)</p>
       <h3>Sorcerous Origins</h3>
@@ -789,7 +789,7 @@
         instead of no damage.
       </p>
     </div>
-    <div class="racediv" id="warlock">
+    <div v-if="shownClass === 'warlock'">
       <h2>Warlock</h2>
       <p>For a detailed description of the Warlock class see the Player's Handbook (p105-111)</p>
       <h3>Otherworldly Patron</h3>
@@ -803,7 +803,7 @@
         <li>The Undying (SCAG p139-140)</li>
       </ul>
     </div>
-    <div class="racediv" id="wizard">
+    <div v-if="shownClass === 'wizard'">
       <h2>Wizard</h2>
       <p>For a detailed description of the Wizard class see the Player's Handbook (p112-119)</p>
       <h3>Arcane Tradition</h3>

@@ -42,9 +42,65 @@ export default {
       let spells = state.currentCharacter.spells;
       let classCounts = [];
       state.currentCharacter.charclasses.forEach((a) => {
+        let num = Math.floor(a.level * a.selsubclass.castermult + getters.getStatMod(a.thisclass.caststat));
+        if (a.thisclass.name === "Sorcerer") {
+          num = Math.min(a.level, 11) + 1;
+          num += Math.floor(Math.max(0, Math.min(a.level, 17) - 11) / 2);
+          if (a.selsubclass.name === "Sorceron Bloodline") {
+            num += 3;
+          }
+        }
+        if (a.thisclass.name === "Warlock") {
+          num = Math.min(a.level, 9) + 1;
+          num += Math.floor(Math.max(0, a.level - 9) / 2);
+        }
+        if (a.thisclass.name === "Bard") {
+          num = Math.min(a.level, 9) + 3;
+          num += Math.floor(Math.max(0, Math.min(a.level, 17) - 9) / 2);
+          if (a.level > 9) {
+            num += 2;
+          }
+          if (a.level > 13) {
+            num += 2;
+          }
+          if (a.level > 17) {
+            num += 2;
+          }
+          if (a.level > 5 && a.selsubclass.name === "College of Lore") {
+            num += 2;
+          }
+        }
+        if (a.thisclass.name === "Cleric" || (a.thisclass.name === "Druid" && a.selsubclass.name === "Circle of the Land")) {
+          num += 2 + Math.floor(Math.min(a.level - 1, 8) / 2) * 2;
+        }
+        if (a.thisclass.name === "Ranger") {
+          num = Math.ceil(a.level / 2) + 1;
+          if ((a.selsubclass.name === "Gloom Stalker" || a.selsubclass.name === "Horizon Walker" || a.selsubclass.name === "Monster Slayer") && a.level > 2) {
+            num += Math.floor((a.level - 1) / 4) + 1;
+          }
+        }
+        if (a.thisclass.name === "Paladin" && a.level > 2) {
+          num += (Math.floor((a.level - 1) / 4) + 1) * 2;
+        }
+        if ((a.thisclass.name === "Fighter" && a.selsubclass.name === "Eldritch Knight") ||
+            (a.thisclass.name === "Rogue" && a.selsubclass.name === "Arcane Trickster")) {
+          num = Math.floor((a.level - 1) / 3) + 3;
+          if (a.level >= 8) {
+            num++;
+          }
+          if (a.level >= 11) {
+            num++;
+          }
+          if (a.level >= 14) {
+            num++;
+          }
+          if (a.level >= 20) {
+            num++;
+          }
+        }
         classCounts.push({
           classname: a.thisclass.name,
-          maxprepped: a.level * a.selsubclass.castermult + getters.getStatMod(a.thisclass.caststat),
+          maxprepped: num,
           numprepped: 0
         });
       });

@@ -99,11 +99,11 @@ If the players remain in town long enough for the negotiation to happen, and the
 
 The players will hear alarms coming from the city during the negotation followed by smoke coming from behind the walls. The warlord will respond that his assault team is currently burning all of the temples in the city. He is able to attack the city with impunity, and his soldiers will continue to slaughter the residents until surrender is agreed upon.
 
-Should battle break out, Cratus's delegation consists of himself, one of his top lieutenants, a sorcerer, a cleric, 3 elite guards and 3 elite archers.
+Should battle break out, Cratus's delegation consists of himself, one of his top lieutenants, a sorcerer, a cleric, 3 elite guards and 3 elite archers. Should the players gain the advantage in  the combat, Cratus will call on his companion, an Adult Blue Dragon named Numenos, child of Horroth. Numenos is his safety valve should the negotations go bad, as Cratus trusts very, very few people, and already intends to betray the negotiators by attacking the city, and so intends to hold all the cards.
 
 [Warlord Cratus](/runner/warlordcratus)
 
-[The Delegation](/runner/warlordcratus&orcwarlord&orcbattlesorcerer&orcwarcleric&orceliteguard&orceliteguard&orceliteguard&orcelitearcher&orcelitearcher&orcelitearcher)
+[The Delegation](/runner/warlordcratus&orcwarlord&orcbattlesorcerer&orcwarcleric&orceliteguard&orceliteguard&orceliteguard&orcelitearcher&orcelitearcher&orcelitearcher&adultbluedragon)
 
 Cratus will not kill the players if he beats them in combat, but will stabilize them at 0 hp and leave, then use skywrite to leave a countdown in the sky, starting at 3 hours.
 
@@ -151,7 +151,7 @@ The Gerasalim army has made a deal with a group of pixies to keep them hidden. T
 
 ## The Frost Giants
 
-The Queen's Army is aware of the Frost Giants, but so far has been unable to triangulate their exact position, and since the attacks have been focused on a series of illegal Dwarven colonies, they haven't been overly concerned. They can point the party to some dwarf refugees who were from an attacked mine. The refugees can point the players to the mine, and note that the frost giants are probably trackable from there.
+The Queen's Army is aware of the Frost Giants, but so far has been unable to triangulate their exact position, and since the attacks have been focused on a series of illegal Dwarven colonies, and the frost giants numbers appear to be very small, they haven't been overly concerned. They can point the party to some dwarf refugees who were from an attacked mine. The refugees can point the players to the mine, and note that the frost giants are probably trackable from there.
 
 The frost giants numbers have been overstated by the distraught miners, a fact that can be easily discerned from the tracks by a decent tracker. The mine was attacked by only 2 giants, and it is less of a 'colony' and more a few outcasts causing trouble. There are 3 frost giants that need to be dealt with.
 
