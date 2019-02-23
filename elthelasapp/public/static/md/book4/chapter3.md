@@ -123,11 +123,36 @@ The apprentices are a group of 3 less than level 1 wizards, and one actual level
 
 ## The Queen's Army
 
+#### Tuna Sandwiches from Beyond Space and Time
+
+Theri is once again on the side of the road, in the middle of nowhere, selling random things. This time 'Sandwiches from Beyond Space and Time!' They appear to be ordinary tuna sandwiches. He will act as if he has never met anyone in the party before, but will be very interested in Kismet, recognizing her as part of the order of The Inevitables, or as he would put it 'those crazy assassins who kill people for doing fun stuff'. If the party buys sandwichs (for the ridiculously inflated price of 10 gp each), they will find that they are in fact, ordinary tuna sandwiches, delicious, but nothing particularly special. If attacked, he will simply teleport away, using a case of emergency to succeed on any saving throw he might have to that would incapacitate him.
+
+The next day as they travel through a village on the road a local sandwich merchant will suddenly start complaining that all his tuna sandwiches just disappeared. On questioning he made the tuna sandwiches not half-an-hour before.
+
+#### Vanriel the Great
+
+After talking with the sandwich merchant, Lilith will be approached by the mayor in town, who will recognize her as 'the Hero of Winterdrift', and ask her to come to the center of town so he can present her with an award for her many feats of heroism. He will tell everyone in the town to gather their families and come to the town square as soon as possible, and when everyone is gathered he will present Lilith with the 'Key to the Village' and regail 'Vanriel and her band of useless squires'.
+
+#### The Orc Sorcerer
+
+While they are travelling the party will be ambushed by the orc sorcerer whom Kailee stole the amulet from and a band of raiders. The sorcerer will recognize Kailee and yell at her for stealing his necklace, vowing to 'ruin her life before he kills her, if it is the last thing he does'. He will teleport away in a huff.
+
+[Raiding Party](/runner/orcwarcaptain&orcbattlesorcerer&orctrainedberserker&orcsoldier)
+
+#### Return of a familiar face
+
+Kailee's familiar will return to her with a letter, after she had sent it to deliver her most recent report several days before. The letter states:
+
+Kailee,
+
+Thank you for your report. We are sad to hear that you have not been able to locate the artifacts as of yet, but we have great faith in your ability to do so. Unforunately the continued civil war is making it difficult for us to continue operations in Estapor, and we are likely to leave soon. Please, once you have found both of the artifacts, return them to Ryvitior Morin, who was a Dean at the college in Strovenguard and is founding a new school in Cur'Estan.
+
+Yours,
+Dean Alistair Asul
+
 #### Orc Scouts
 
 The orc army has sent out many scouts to try and find where the army is staying. These scouting groups range from 4-8 orcs based on how likely they are to find the enemy. The scouts move stealthily and should roll stealth vs the players passive perception, or their check if they decide to make one. If the orcs go unnoticed they surprise the players and attempt to capture them for information.
-
-The orc scouting party is made up of Red Fang's of Shargaas (see Volo's guide to monsters) riding on Giant Bats. They will employ magical darkness (which they and their bats can see through) combined with diving attack tactics. If a rider is killed it's mount will flee.
 
 #### Fake camp sites
 
@@ -139,15 +164,15 @@ The poisoned food is a DC 14 constitution save or be poisoned for 2d6 hours. The
 
 #### Giant Ape Trap
 
-The army came across a giant ape in their travels and decided it would make an excellent trap. They knocked it out and buried it underground a little, they left it magically asleep and put a still burning campfire above it. The campfire is easily noticed and meant for the orcs, but the players find it first. When the players walk towards the campfire their footsteps, if they are not stealthed enough, will wake up the giant ape, which will very dramatically burst out from underground, and perhaps knock players prone for the ape to smush.
+The army came across a pair of giant apes in their travels and decided it would make an excellent trap. They knocked it out and buried it underground a little, they left it magically asleep and put a still burning campfire above it. The campfire is easily noticed and meant for the orcs, but the players find it first. When the players walk towards the campfire their footsteps, if they are not stealthed enough, will wake up the giant apes, which will very dramatically burst out from underground, and perhaps knock players prone for the apes to smush.
 
-#### Fake Orc Negotiator
-
-The players stumble across a lone orc that is carrying a white flag of truce and softly playing a drum to be noticed. The orc is meant to be a negotiator for the Geraslims army’s surrender, but in reality the orc is only supposed to learn information about where the army is hiding. The Gerasalim army is too noble to slaughter a peaceful negotiator, and their position will be exposed if he manages to get in contact with the army. The players have to make a decision on how to handle the negotiator before he gets noticed by the army.
+[Giant Ape](/runner/giantape&giantape)
 
 #### Finding the Hidden Camp
 
 The Gerasalim army has made a deal with a group of pixies to keep them hidden. They have created a circle of stones that prevent normal creatures from finding the camp. The players need to have talked to jim jimmy jim jim to have a chance to find the place past the pixies magic. Any creature that enters the stone circle without permission finds it is impassible and raises and alarm for the pixies. (The stone circle is away from the view of the encampment so the players can only discuss with the pixies at this point.) The pixies are paranoid and not easily trusting. The pixies demand that one of the players be turned to stone if they wish to gain entry. The Pixies will mention that the stoned player will join their garden forever for the insults the players have bestowed on them, even if they didn’t really insult them. Play the pixies as paranoid and unable to reach any reasonable agreement, thinking the players are orcs in disguise. Ideally the players will be forced to fight the pixies to the death. If mentioned to the gerasalim army commander he doesn’t mind as he hated the pixies anyways.
+
+The pixies have a number of tiny statues that look like people. If interrogated, they stole the statues hundreds of years ago from a necromancer who passed through the area who had a fancy sword. They believe he was heading north to Cur'Mestin from there to find a Purple Worm Egg.
 
 ## The Frost Giants
 
@@ -186,5 +211,36 @@ A doppelganger working for Manius Aquila and the devils managed to replace the D
 Calagus the Mind Flayer is living in Silver Head, using illusion to disguise himself as an ordinary Blacksmith. He is well regarded by his friends, but for some reason no one can remember what he looks like. If found out he will plead for a reprieve, for although he successfully completed his ritual to achieve functional immortality, he otherwise breaks no laws, and has not yet lived out the natural lifespan of a mindflayer. He will attempt to fight and escape if a repreive is not granted.
 
 [Calagus the Mind Flayer](/runner/calagusthemindflayer)
+
+## The Shrine
+
+While in Silver Head Eyvindra will feel a breeze pushing her off the main street that no one else feels, while the voice whispers, 'follow, follow, follow'. In the alley it pushes her towards there is a strange shrine. A man in rags huddles next to it, ranting about the voice that made him build it. The shrine depicts a scene, where there is a large statue of Sylvan. Around the statue are inscribed the holy symbols of Trimala (a waterfall cascading over a cliff), Dorun (a black pick and hammer crossed over a silver background), Molton (tri-headed flame), and Sylvan (an oak tree in midsummer). Below it is the following inscription:
+
+To free the Great Genie Stratos and gain your hearts wish, build thee a statue of Sylvan on the slopes of Dal'Okra. Inscribe into the rock around it the symbols of the elements, and pour over the eyes of Sylvan her tears for the blood of her children. Mix thee the blood of a cloud giant, an ancient blue dragon, a behir, and Stratos himself. This shall be the tears that Sylvan weaps to free her favored son of air.
+
+The party will then be ambushed by an Efreeti, disguised as a passer-by, and it's summoned fire elemental, who shouts that Stratos shall never be free.
+
+[Efreeti Ambush](/runner/efreeti&fireelemental)
+
+## The Kobold from the Mine Office
+
+While in Silver Head, Varius will catch sight of a familiar face, another kobold from his mine, who upon seeing him will flee. Magdos was one of the kobolds at the mine office in Westguard. He is the last survivor of the 12 kobolds who were stationed there. Each of them were tortured in turn by a blue dragonborn, demanding to know the location of the Queen and how to gain entrance to the mine. 5 died from torture before it was Magdos's turn, Magdos broke and gave Satura the information he wanted, after which Satura killed the other remaining staffers and left Magdos half-dead before leaving. Magdos is supremely regretful, but feels he cannot be forgiven and must get as far away from home as possible.
+
+## Moving Forward
+
+Once the city of Silver Head has been flipped, three armies will converge on the city, a Dormanian Legion, the army of Gerasalim, and the Black Wolf Irregulars from Cur'Estan. General Heartbren will congratulate the party on their success, and give them options of ways they could continue to help.
+
+* Move against Manius Aquila by unseating the duchess of Cur'Mestin
+* Go to the dwarves in High Hammer and appeal to them to rejoin the war effort
+* Go to Estapor to try to negotiate a settlement in the Elven civil war, bringing Waelin, Eldoran, or both back into the war effort.
+* Go to Strovenguard and try to lead a slave rebellion to split the orc armies attention.
+
+### Rewards
+
+Stronghold?
+
+OR
+
+3000 GP per player plus another 3000 GP if they completed their personal quest
 
 Players should level up to level 7 at the end of this chapter.

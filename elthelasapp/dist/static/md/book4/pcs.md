@@ -941,5 +941,6 @@ Eventually, she enrolled at the Bladesingers Academy in Estapor, keeping her pre
 		<tr><td>Wyrmling Trapsmith</td><td>Quartermaster</td><td>Cur'Estan</td><td>Quartermaster for the Black Wolf Irregulars</td></tr>
 		<tr><td>Usko the Lumberjack</td><td>Boy Toy (Lilith)</td><td>Cur'Estan</td><td>Ripped lumberjack who Lilith met at a bar and enjoys the company of</td></tr>
 		<tr><td>Frankie the Lumberjack Leader</td><td>Local Leader</td><td>Cur'Estan</td><td>Leader of the Lumberjacks in Cur'Estan</td></tr>
+		<tr><td>Ryvitior Morin</td><td>Guild Leader (Ching Shu, Kailee Azziri)</td><td>Cur'Estan</td><td>Leader of the Wizard's College in Cur'Estan</td></tr>
 	</tbody>
 </table>
