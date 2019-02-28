@@ -20,7 +20,7 @@ import book4menu from '../components/tools/book4menu';
 import feats from '@/components/options/feats';
 import races from '../components/options/races';
 import bestiary from '../components/ref/bestiary';
-import runner from '../components/ref/runner';
+import runner from '../components/tools/runner';
 import privacy from '@/components/privacy';
 const domains = () => import(/* webpackChunkName: "domains" */ '../components/options/domains');
 const classes = () => import(/* webpackChunkName: "classes" */ '../components/options/class');

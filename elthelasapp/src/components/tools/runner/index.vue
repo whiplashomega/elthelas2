@@ -112,12 +112,31 @@
       </div>
     </div>
     <b-row>
-      <b-col md="8">
+      <b-col md="2">
+        <label>
+          Type
+          <select v-model="typeFilter" class="form-control">
+            <option value="">All</option>
+            <option value="aberration">Aberration</option>
+            <option value="beast">Beast</option>
+            <option value="celestial">Celestial</option>
+            <option value="dragon">Dragon</option>
+            <option value="construct">Construct</option>
+            <option value="fiend">Fiend</option>
+            <option value="giant">Giant</option>
+            <option value="humanoid">Humanoid</option>
+            <option value="monstrosity">Monstrosity</option>
+            <option value="plant">Plant</option>
+            <option value="ooze">Ooze</option>
+            <option value="undead">Undead</option>
+          </select>
+        </label>
+      </b-col>
+      <b-col md="6">
         <b-form-checkbox-group v-model="creaturestable.filterBy">
           <b-form-checkbox value="name">Name</b-form-checkbox>
           <b-form-checkbox value="size">Size</b-form-checkbox>
           <b-form-checkbox value="cr">CR</b-form-checkbox>
-          <b-form-checkbox value="type">Type</b-form-checkbox>
           <b-form-checkbox value="subtype">Subtype</b-form-checkbox>
           <b-form-checkbox value="alignment">Alignment</b-form-checkbox>
           <b-form-checkbox value="description">Description</b-form-checkbox>

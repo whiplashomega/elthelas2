@@ -114,10 +114,11 @@ export default {
         filterValue: "",
         sortBy: null,
         sortDesc: false,
-        filterBy: [ "name", "size", "cr", "type", "subtype", "alignment", "description" ],
+        filterBy: [ "name", "size", "cr", "subtype", "alignment", "description" ],
         modalInfo: { ...modalInfo }
       },
       encountercreatures: [],
+      typeFilter: "",
       nextIndex: 0,
       partylevel: 1,
       partysize: 4,
@@ -141,15 +142,24 @@ export default {
     },
     filter (a) {
       var filter = this.creaturestable.filterBy;
-      var value = this.creaturestable.filterValue;
-      var inelement = filter.some(function(el) {
-        for (var y in a) {
-          if (el === y && a[y].toString().toLowerCase().includes(value.toLowerCase())) {
-            return true;
+      var values = this.creaturestable.filterValue.split(" ");
+      let inelement = true;
+      if (this.typeFilter !== "" && a.type !== this.typeFilter) {
+        inelement = false;
+      }
+      values.forEach((value) => {
+        let exists = filter.some(function(el) {
+          for (var y in a) {
+            if (el === y && a[y].toString().toLowerCase().includes(value.toLowerCase())) {
+              return true;
+            }
           }
+        });
+        if (this.creaturestable.filterValue && !exists) {
+          inelement = false;
         }
       });
-      if (!value || inelement) {
+      if (inelement) {
         return true;
       }
       return false;

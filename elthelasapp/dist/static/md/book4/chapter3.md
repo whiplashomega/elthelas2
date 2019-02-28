@@ -135,7 +135,7 @@ After talking with the sandwich merchant, Lilith will be approached by the mayor
 
 #### The Orc Sorcerer
 
-While they are travelling the party will be ambushed by the orc sorcerer whom Kailee stole the amulet from and a band of raiders. The sorcerer will recognize Kailee and yell at her for stealing his necklace, vowing to 'ruin her life before he kills her, if it is the last thing he does'. He will teleport away in a huff.
+While they are travelling the party will see smoke ahead. A village ahead of them is under attack by an orc raiding party. The party is led by the orc sorcerer whom Kailee stole the amulet from and a band of raiders. The sorcerer will recognize Kailee and yell at her for stealing his necklace, vowing to 'make her hurt before he kills her'.
 
 [Raiding Party](/runner/orcwarcaptain&orcbattlesorcerer&orctrainedberserker&orcsoldier)
 
