@@ -312,7 +312,7 @@ export default {
       this.newstaff = { name: "", job: { name: "", typicalSalary: 0, bonus: "" }, salary: 0 };
     },
     newDay () {
-      this.addToTreasury(this.netRevenue, "daily net revenue from " + this.gameDate);
+      this.addToTreasury(this.netRevenue, "daily net revenue");
       this.stronghold.gameDay += 1;
       if (this.stronghold.gameDay > 30) {
         this.stronghold.gameDay = 1;
@@ -359,7 +359,7 @@ export default {
     },
     addToTreasury (changeby, record) {
       this.stronghold.treasury += Number(changeby);
-      this.stronghold.transactionrecord.push({ id: Date.now(), amount: changeby, description: record, balance: this.stronghold.treasury });
+      this.stronghold.transactionrecord.push({ id: Date.now(), amount: changeby, description: record, balance: this.stronghold.treasury, date: this.gameDate });
       this.changeby = 0;
       this.record = "";
     }
