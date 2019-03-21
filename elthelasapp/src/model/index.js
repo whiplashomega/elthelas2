@@ -20,6 +20,7 @@ import feats from './feats';
 import territories from './territories';
 import encounters from './encounters';
 import valuables from './valuables';
+import stronghold from './stronghold';
 
 Vue.use(Vuex);
 
@@ -44,7 +45,8 @@ export default new Vuex.Store({
     territories,
     characters,
     encounters,
-    valuables
+    valuables,
+    stronghold
   },
   state: {
     title: "Test",

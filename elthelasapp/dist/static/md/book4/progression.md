@@ -29,6 +29,10 @@ This chapter introduces Warlord Cratus, and presents the players with the situat
 
 This chapter involves fomenting rebellion against the orcs in Strovenguard, to force Warlord Cratus's attention back to the south. Completing this chapter puts the orcs on high alert, setting up Chapter 8 - Defense of Cur'Estan to happen after any one other chapter is completed.
 
+**Minimum Level**: 7
+
+**Maximum Level**: 12
+
 * Chapter 5 - Civil War
 * Chapter 6 - Halls of the Underking
 * Chapter 7 - Waelin Independence
@@ -36,6 +40,12 @@ This chapter involves fomenting rebellion against the orcs in Strovenguard, to f
 * If Chapter 7 done: Chapter 11 - Moon Pass
 
 ## Chapter 5 - Civil War
+
+**Minimum Level**: 7
+
+**Maximum Level**: 13
+
+**Rival Battle**: Theri
 
 This chapter is the first of a 2 chapter series with Manius Aquila as the primary rival. Completing it sets up Chapter 10: United Empire.
 
@@ -50,6 +60,12 @@ This chapter is the first of a 2 chapter series with Manius Aquila as the primar
 
 ## Chapter 6 - Halls of the Underking
 
+**Minimum Level**: 7
+
+**Maximum Level**: 13
+
+**Rival Battle**: Horroth
+
 Saving the dwarves from the Flayer brings them back into the war. If you have also completed Chapter 8 - Defense of Cur'Estan, it opens up Chapter 9 - Parakas Steel
 
 * Chapter 4 - Behind Enemy Lines
@@ -62,6 +78,12 @@ Saving the dwarves from the Flayer brings them back into the war. If you have al
 **If Chapter 4 was previously done - Chapter 8 - Defense of Cur'Estan will be the only option.**
 
 ## Chapter 7 - Waelin Independence
+
+**Minimum Level**: 7
+
+**Maximum Level**: 13
+
+**Rival Battle:**
 
 Successfully defeating Derandel and reuniting the elves, the new Elven King will request help with freeing the Moon Pass
 
@@ -76,6 +98,12 @@ Successfully defeating Derandel and reuniting the elves, the new Elven King will
 
 ## Chapter 8 - Defense of Cur'Estan
 
+**Minimum Level**: 9
+
+**Maximum Level**: 13
+
+**Rival Battle:** Vanriel
+
 The players are called back to Cur'Estan to defend against the orc army advancing on the fledgling city. This chapter should lead to the death of Warlord Cratus
 
 * Chapter 5 - Civil War
@@ -87,6 +115,10 @@ The players are called back to Cur'Estan to defend against the orc army advancin
 
 ## Chapter 9 - Parakas Steel
 
+**Minimum Level**: 10
+
+**Maximum Level**: 14
+
 The behavior of the orcs in Cur'Estan and Curin Keep makes us believe the loyalty of the orcs to the Prince of Fiends is less than absolute. The orcs from Parakas never participated in the fighting in either location, go to Parakas, and figure out a way to meet with the Warlord in secret. If we can flip him, we can get valuable intelligence that may lead us to a way to kill the Prince himself.
 
 * Chapter 5 - Civil War
@@ -96,6 +128,10 @@ The behavior of the orcs in Cur'Estan and Curin Keep makes us believe the loyalt
 * If Chapter 10 and 11 done: Chapter 12 - Liberation
 
 ## Chapter 10 - United Empire
+
+**Minimum Level**: 8
+
+**Maximum Level**: 14
 
 * Chapter 4 - Behind Enemy Lines
 * Chapter 6 - Halls of the Underking
@@ -108,6 +144,10 @@ The behavior of the orcs in Cur'Estan and Curin Keep makes us believe the loyalt
 
 ## Chapter 11 - Moon Pass
 
+**Minimum Level**: 8
+
+**Maximum Level**: 14
+
 * Chapter 4 - Behind Enemy Lines
 * Chapter 5 - Civil War
 * Chapter 6 - Halls of the Underking
@@ -119,12 +159,24 @@ The behavior of the orcs in Cur'Estan and Curin Keep makes us believe the loyalt
 
 ## Chapter 12 - Liberation
 
+**Minimum Level**: 15
+
+**Maximum Level**: 15
+
 Liberating Strovenguard will happen off-screen during Chapter 9, setting up a grand battle to retake the Fortress of Light, from here on, the story takes a more linear path to the end.
 
 ## Chapter 13 - Armageddon
+
+**Minimum Level**: 16
+
+**Maximum Level**: 16
 
 The orc army is on the defensive, and the Prince of Fiends is growing desparate to win his war. In desperation, he turns to ancient dark rituals to attempt to destroy his enemies by bringing the Blood War to the material world.
 
 ## Chapter 14 - Assassination
 
-The united army of the alliance is trapped in the Fortress of Light while the Blood War turns the Blighted Gap into a literal hellscape, over it all the Prince of Fiends presides with his devil ally Asmodeus. 
+**Minimum Level**: 17
+
+**Maximum Level**: 17
+
+The united army of the alliance is trapped in the Fortress of Light while the Blood War turns the Blighted Gap into a literal hellscape, over it all the Prince of Fiends presides with his devil ally Asmodeus.

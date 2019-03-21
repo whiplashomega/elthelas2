@@ -182,6 +182,10 @@ The frost giants numbers have been overstated by the distraught miners, a fact t
 
 [Frost Giants](/runner/frostgiant&frostgiant&frostgiant)
 
+## The Orc Slavers
+
+On the way to Silver Head, the party will come across an orc column leading recently captured slaves south. Luna will implore Eiko to save the slaves from the orcs. Should she accept, Luna's second form will be unlocked.
+
 ## Silver Head
 
 ### Important People of Silver Head
@@ -228,19 +232,37 @@ While in Silver Head, Varius will catch sight of a familiar face, another kobold
 
 ## Moving Forward
 
-Once the city of Silver Head has been flipped, three armies will converge on the city, a Dormanian Legion, the army of Gerasalim, and the Black Wolf Irregulars from Cur'Estan. General Heartbren will congratulate the party on their success, and give them options of ways they could continue to help.
-
-* Move against Manius Aquila by unseating the duchess of Cur'Mestin
-* Go to the dwarves in High Hammer and appeal to them to rejoin the war effort
-* Go to Estapor to try to negotiate a settlement in the Elven civil war, bringing Waelin, Eldoran, or both back into the war effort.
-* Go to Strovenguard and try to lead a slave rebellion to split the orc armies attention.
+Once the city of Silver Head has been flipped, three armies will converge on the city, a Dormanian Legion, the army of Gerasalim, and the Black Wolf Irregulars from Cur'Estan, led by Duke Lightbringer. James will congratulate the party on their success, and request that they return to Cur'Estan immediately for further orders.
 
 ### Rewards
 
-Stronghold?
+The Duke of Silver Head if he survives will give the players a wand of teleportation circle, if he doesn't, Queen Organa will have her court wizard cast it for them to get back to Cur'Estan. On return to Cur'Estan General Heartbren will congratulate the party, and give them a week off to rest and recuperate, as well as a...
 
-OR
+#### Stronghold
 
-3000 GP per player plus another 3000 GP if they completed their personal quest
+General Heartbren will reward the players with ownership over a ruined fort east along the river from Cur'Estan, as well as 5 km^2 of surrounding land (currently unimproved and uninhabited Forest) to do with as they like. He also appoints a head engineer who can manage any construction projects they would like done. Their land is half a days travel (4 hours) on foot from Cur'Estan, about 8 miles, 2 hours travel time if there were a road or accompanied by a forest ranger.
+
+#### Personal Quest Rewards
+
+**Black Wolf Irregulars**: Helm of Teleportation Circle (castable 1/week) from the Duke of Silver Head, as well as 5000 GP each.
+
+**Union of Wizard's Colleges**: They each get their choice of an Elemental Gem and 5000 GP. 
+
+**Sylvan's Rangers**: Dust of Disappearance and 5000 GP
+
+**Inevitables**: Case of Emergency and 5000 GP
+
+**Champions of Cora**: Luna Improvement and 5000 GP
+
+#### Luna, the Sword of Cora, Devout
+
+Luna is a +2 Rapier.
+
+***Light Eternal*** The holder of Luna can cast the light spell at will on Luna only.
+
+***Fearless*** While attuned to and holding Luna you cannot be frightened.
+
+***Light Burst*** As an action the wielder can raise Luna towards the sky and command Luna to shine even brighter for a brief time, dealing 3d6 radiant damage to creatures within 10 ft (except the wielder), suppressing any magical darkness within 60 ft, and shining bright light out to a distance of 120 ft. This effect ends at the end of your next turn, after which Luna cannot shed light of any kind until the next dawn.
+
 
 Players should level up to level 7 at the end of this chapter.

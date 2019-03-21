@@ -22,6 +22,7 @@ import races from '../components/options/races';
 import bestiary from '../components/ref/bestiary';
 import runner from '../components/tools/runner';
 import privacy from '@/components/privacy';
+import strongholdbuilder from '@/components/tools/strongholdbuilder';
 const domains = () => import(/* webpackChunkName: "domains" */ '../components/options/domains');
 const classes = () => import(/* webpackChunkName: "classes" */ '../components/options/class');
 const encounterbuilder = () => import(/* webpackChunkName: "encounters" */ '@/components/tools/encounterbuilder');
@@ -386,6 +387,16 @@ var router = new Router({
       path: "/tools/treasuregenerator",
       components: {
         default: treasuregenerator
+      }
+    },
+    {
+      name: "strongholdbuilder",
+      meta: {
+        title: "Stronghold Builder"
+      },
+      path: "/tools/strongholdbuilder",
+      components: {
+        default: strongholdbuilder
       }
     }
   ],
