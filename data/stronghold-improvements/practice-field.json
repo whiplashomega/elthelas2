@@ -1,0 +1,17 @@
+{
+  "id": "practice-field",
+  "name": "Practice Field",
+  "cost": 750,
+  "benefit": "includes archery targets, practice dummies, etc. spending 4 hours practicing with a particular weapon grants a +1 bonus to attack and damage rolls with that weapon for 1 week",
+  "staff": [{ "name": "Trainer", "num": 0 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 0,
+  "buildtime": 5,
+  "prerequisites": [ ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "castle"
+}

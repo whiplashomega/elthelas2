@@ -1,0 +1,17 @@
+{
+  "id": "teleportation-circle",
+  "name": "Teleportation Circle",
+  "cost": 20000,
+  "benefit": "allows easy teleportation to any other known teleportation circle, usable day construction begins",
+  "staff": [{ "name": "Master Wizard (Conjurer)", "num": 0 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 0,
+  "buildtime": 360,
+  "prerequisites": [ "keep" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "castle"
+}

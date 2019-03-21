@@ -1,0 +1,17 @@
+{
+  "id": "library",
+  "name": "Library",
+  "cost": 4500,
+  "benefit": "Gives advantage on arcana, religion, and history checks when consulted",
+  "staff": [{ "name": "Librarian", "num": 0 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 0,
+  "buildtime": 20,
+  "prerequisites": [ "keep" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "castle"
+}

@@ -16,6 +16,7 @@
               <li class="dropdown-item"><router-link to="/tools/charbuilder">Character Builder</router-link></li>
               <li class="dropdown-item" v-if="loggedin"><router-link to="/runner">Encounter Runner</router-link></li>
               <li class="dropdown-item"><router-link to="/tools/treasuregenerator">Treasure Generator</router-link></li>
+              <li class="dropdown-item"><router-link to="/tools/strongholdbuilder">Stronghold Builder</router-link></li>
               <li class="dropdown-item" v-if="loggedin"><router-link to="/tools/book1">Epic of Elthelas Book 1</router-link></li>
               <li class="dropdown-item" v-if="loggedin"><router-link to="/tools/book2">Epic of Elthelas Book 2</router-link></li>
               <li class="dropdown-item" v-if="loggedin"><router-link to="/tools/book3">Epic of Elthelas Book 3</router-link></li>

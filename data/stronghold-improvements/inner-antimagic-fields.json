@@ -1,0 +1,17 @@
+{
+  "id": "inner-antimagic-fields",
+  "name": "Inner Wall Antimagic Fields",
+  "cost": 40000,
+  "benefit": "protects the central village wall from magical attacks",
+  "staff": [{ "name": "Wizard", "num": 0 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 0,
+  "buildtime": 15,
+  "prerequisites": [ "inner-defensive-towers" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "town"
+}

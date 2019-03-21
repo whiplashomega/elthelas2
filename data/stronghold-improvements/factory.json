@@ -1,0 +1,17 @@
+{
+  "id": "factory",
+  "name": "Factory",
+  "cost": 10000,
+  "benefit": "Produces simple finished trade goods of a type of the players choice",
+  "staff": [{ "name": "Factory Foreman", "num": 1 }],
+  "revenue": 200,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 100,
+  "buildtime": 30,
+  "prerequisites": [ "town", "mill" ],
+  "hide": true,
+  "count": 0,
+  "max": 6,
+  "type": "town"
+}

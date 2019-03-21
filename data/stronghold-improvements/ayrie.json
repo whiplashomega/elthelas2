@@ -1,0 +1,17 @@
+{
+  "id": "ayrie",
+  "name": "Ayrie",
+  "cost": 7500,
+  "benefit": "allows for the training and use of bird-like flying beasts and monstrosities as mounts",
+  "staff": [{ "name": "Ayrie Master", "num": 1 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 0,
+  "buildtime": 25,
+  "prerequisites": [ "keep-expansion" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "castle"
+}

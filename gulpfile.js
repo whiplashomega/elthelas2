@@ -252,18 +252,19 @@ gulp.task('jsoncompile', function(done) {
     jsonmin('./data/armor.json', './elthelasapp/public/json/armor.json'), //equipment
     jsonmin('./data/equipment.json', './elthelasapp/public/json/equipment.json'), //magic items
     jsonmin('./data/valuables.json', './elthelasapp/public/json/valuables.json'), //valuables
-    jsonmin('./data/magicitems.json', './elthelasapp/public/json/magicitems.json'), //gods
-    compiledir("./data/gods", "./elthelasapp/public/json/gods.json", "God"), //races
-    compiledir("./data/races", "./elthelasapp/public/json/races.json", "Race"), //organizations
-    compiledir("./data/organizations", "./elthelasapp/public/json/organizations.json", "Organization"), //divines
-    compiledir("./data/divines", "./elthelasapp/public/json/divines.json", "Divine"), //cities
-    compiledir("./data/cities", "./elthelasapp/public/json/cities.json", "City"), //continents
-    compiledir("./data/continents", "./elthelasapp/public/json/continents.json", "Continent"), //features
-    compiledir("./data/features", "./elthelasapp/public/json/features.json", "Feature"), //landmarks
-    compiledir("./data/landmarks", "./elthelasapp/public/json/landmarks.json", "Landmark"), //nations
-    compiledir("./data/nations", "./elthelasapp/public/json/nations.json", "Nation"), //backgrounds
-    compiledir("./data/backgrounds", "./elthelasapp/public/json/backgrounds.json", "Background"), //classes
-    compiledir("./data/classes", "./elthelasapp/public/json/classes.json", "CharClass"),
+    jsonmin('./data/magicitems.json', './elthelasapp/public/json/magicitems.json'), //magicitems
+    compiledir("./data/gods", "./elthelasapp/public/json/gods.json", "God"), //gods
+    compiledir("./data/stronghold-improvements", "./elthelasapp/public/json/improvements.json", "Improvements"), //stronghold improvements
+    compiledir("./data/races", "./elthelasapp/public/json/races.json", "Race"), //races
+    compiledir("./data/organizations", "./elthelasapp/public/json/organizations.json", "Organization"), //organizations
+    compiledir("./data/divines", "./elthelasapp/public/json/divines.json", "Divine"), //divines
+    compiledir("./data/cities", "./elthelasapp/public/json/cities.json", "City"), //cities
+    compiledir("./data/continents", "./elthelasapp/public/json/continents.json", "Continent"), //continents
+    compiledir("./data/features", "./elthelasapp/public/json/features.json", "Feature"), //features
+    compiledir("./data/landmarks", "./elthelasapp/public/json/landmarks.json", "Landmark"), //landmarks
+    compiledir("./data/nations", "./elthelasapp/public/json/nations.json", "Nation"), //nations
+    compiledir("./data/backgrounds", "./elthelasapp/public/json/backgrounds.json", "Background"), //backgrounds
+    compiledir("./data/classes", "./elthelasapp/public/json/classes.json", "CharClass"), //classes
     compiledir("./data/territories", "./elthelasapp/public/json/territories.json", "Territories")]).then(function() {
       console.log("all finished");
       done();

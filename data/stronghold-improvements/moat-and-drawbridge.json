@@ -1,0 +1,17 @@
+{
+  "id": "moat-and-drawbridge",
+  "name": "Moat and Drawbridge",
+  "cost": 4500,
+  "benefit": "Provides additional protection from assault",
+  "staff": [{ "name": "Guard", "num": 5 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 0,
+  "buildtime": 20,
+  "prerequisites": [ "castle-wall" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "castle"
+}

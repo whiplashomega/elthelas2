@@ -1,0 +1,17 @@
+{
+  "id": "inn",
+  "name": "Inn",
+  "cost": 5000,
+  "benefit": "provides a place for ships to dock, provides tax revenue from ships docking fees",
+  "staff": [{ "name": "Innkeeper", "num": 1 }],
+  "revenue": 50,
+  "pop": 3,
+  "staffpop": 1,
+  "employs": 10,
+  "buildtime": 15,
+  "prerequisites": [ "village" ],
+  "hide": true,
+  "count": 0,
+  "max": 7,
+  "type": "town"
+}

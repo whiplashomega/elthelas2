@@ -1,0 +1,17 @@
+{
+  "id": "food-farm",
+  "name": "Food Farm",
+  "cost": 3000,
+  "benefit": "Grows food crops, enough to feed roughly 500 people",
+  "staff": [{ "name": "Head Farmer", "num": 1 }],
+  "revenue": 60,
+  "pop": 40,
+  "staffpop": 1,
+  "employs": 16,
+  "buildtime": 10,
+  "prerequisites": [ "clear-land" ],
+  "hide": true,
+  "count": 0,
+  "max": 100,
+  "type": "countryside"
+}

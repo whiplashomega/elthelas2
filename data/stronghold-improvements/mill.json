@@ -1,0 +1,17 @@
+{
+  "id": "mill",
+  "name": "Mill",
+  "cost": 6000,
+  "benefit": "a water mill used to power factories and mill grain",
+  "staff": [{ "name": "Miller", "num": 1 }],
+  "revenue": 100,
+  "pop": 3,
+  "staffpop": 1,
+  "employs": 10,
+  "buildtime": 10,
+  "prerequisites": [ "town", "food-farm" ],
+  "hide": true,
+  "count": 0,
+  "max": 3,
+  "type": "town"
+}

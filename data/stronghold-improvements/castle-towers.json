@@ -1,0 +1,17 @@
+{
+  "id": "castle-towers",
+  "name": "Castle Towers",
+  "cost": 3000,
+  "benefit": "Provides additional defense for a castle, and rooms for 20 staff or guards",
+  "staff": [{ "name": "Guard", "num": 5 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 20,
+  "employs": 0,
+  "buildtime": 10,
+  "prerequisites": [ "castle-wall" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "castle"
+}

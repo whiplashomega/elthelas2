@@ -1,0 +1,17 @@
+{
+  "id": "constables-office",
+  "name": "Constable's Office",
+  "cost": 1500,
+  "benefit": "Gives constables a place to work from, includes two jail cells",
+  "staff": [{ "name": "Constable", "num": 3 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 0,
+  "buildtime": 10,
+  "prerequisites": [ "village" ],
+  "hide": true,
+  "count": 0,
+  "max": 7,
+  "type": "town"
+}

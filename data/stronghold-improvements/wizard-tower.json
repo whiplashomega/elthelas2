@@ -1,0 +1,17 @@
+{
+  "id": "wizard-tower",
+  "name": "Wizard Tower",
+  "cost": 9000,
+  "benefit": "by tapping into lay lines, allows arcane casters to restore all spell slots via a short rest",
+  "staff": [{ "name": "Wizard", "num": 0 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 0,
+  "buildtime": 30,
+  "prerequisites": [ "keep" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "castle"
+}

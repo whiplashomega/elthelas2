@@ -1,0 +1,17 @@
+{
+  "id": "theater",
+  "name": "Theater",
+  "cost": 8000,
+  "benefit": "A theater for the performing arts, collects fees from shows that wish to perform there",
+  "staff": [{ "name": "Steward", "num": 0 }],
+  "revenue": 100,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 15,
+  "buildtime": 20,
+  "prerequisites": [ "town" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "town"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "inner-wall",
+  "name": "Inner Walls",
+  "cost": 24000,
+  "benefit": "provides basic defenses for the central village",
+  "staff": [{ "name": "Guard", "num": 20 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 0,
+  "buildtime": 45,
+  "prerequisites": [ "village" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "town"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "artificers-workshop",
+  "name": "Artificers Workshop",
+  "cost": 15000,
+  "benefit": "Provides for the construction of magical artifacts by a skilled artificer",
+  "staff": [{ "name": "Artificer", "num": 0 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 0,
+  "buildtime": 30,
+  "prerequisites": [ "wizard-tower" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "castle"
+}

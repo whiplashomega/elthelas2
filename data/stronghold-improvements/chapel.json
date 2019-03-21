@@ -1,0 +1,17 @@
+{
+  "id": "chapel",
+  "name": "Chapel",
+  "cost": 3000,
+  "benefit": "dedicated to God of choice, allows for recruitment of one cleric of same God, no high priests",
+  "staff": [{ "name": "Cleric", "num": 1 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 1,
+  "buildtime": 10,
+  "prerequisites": [ "keep" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "castle"
+}

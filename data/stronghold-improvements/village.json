@@ -1,0 +1,17 @@
+{
+  "id": "village",
+  "name": "Village",
+  "cost": 8000,
+  "benefit": "build out a small village around your castle where people can live, with houses for up to 200 people",
+  "staff": [{ "name": "Steward", "num": 0 }],
+  "revenue": 0,
+  "pop": 200,
+  "staffpop": 0,
+  "employs": 40,
+  "buildtime": 30,
+  "prerequisites": [ ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "town"
+}

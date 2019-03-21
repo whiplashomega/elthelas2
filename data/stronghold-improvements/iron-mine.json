@@ -1,0 +1,17 @@
+{
+  "id": "iron-mine",
+  "name": "Iron Mine",
+  "cost": 15000,
+  "benefit": "mines iron for fun and profit",
+  "staff": [{ "name": "Mine Foreman", "num": 1 }],
+  "revenue": 100,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 50,
+  "buildtime": 30,
+  "prerequisites": [ "new-land" ],
+  "hide": true,
+  "count": 0,
+  "max": 2,
+  "type": "countryside"
+}

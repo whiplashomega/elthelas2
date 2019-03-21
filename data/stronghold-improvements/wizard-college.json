@@ -1,0 +1,17 @@
+{
+  "id": "wizard-college",
+  "name": "Wizard College",
+  "cost": 40000,
+  "benefit": "provides a place where people can learn the arcane arts, makes it easier to recruit wizards and sorcerers, and collect tuition from the students",
+  "staff": [{ "name": "Master Wizard", "num": 3 }],
+  "revenue": 500,
+  "pop": 100,
+  "staffpop": 3,
+  "employs": 20,
+  "buildtime": 50,
+  "prerequisites": [ "wizard-tower", "town" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "town"
+}

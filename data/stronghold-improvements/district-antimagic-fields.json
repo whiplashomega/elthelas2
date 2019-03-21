@@ -1,0 +1,17 @@
+{
+  "id": "district-antimagic-fields",
+  "name": "District Wall Antimagic Fields",
+  "cost": 80000,
+  "benefit": "protects an additional district wall from magical attacks",
+  "staff": [{ "name": "Wizard", "num": 0 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 0,
+  "buildtime": 15,
+  "prerequisites": [ "district-wall-towers" ],
+  "hide": true,
+  "count": 0,
+  "max": 5,
+  "type": "town"
+}

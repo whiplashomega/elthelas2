@@ -1,0 +1,17 @@
+{
+  "id": "harbor",
+  "name": "Harbor",
+  "cost": 15000,
+  "benefit": "provides a place for ships to dock, provides tax revenue from ships docking fees",
+  "staff": [{ "name": "Harbormaster", "num": 1 }],
+  "revenue": 300,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 20,
+  "buildtime": 20,
+  "prerequisites": [ "town" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "town"
+}

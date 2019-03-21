@@ -1,0 +1,17 @@
+{
+  "id": "golem-forge",
+  "name": "Golem Forge",
+  "cost": 15000,
+  "benefit": "Provides tools to construct golems and other constructs, cost to create golems reduced by 30%",
+  "staff": [{ "name": "Artificer", "num": 0 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 0,
+  "buildtime": 30,
+  "prerequisites": [ "wizard-tower" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "castle"
+}

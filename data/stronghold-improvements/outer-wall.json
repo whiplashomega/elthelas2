@@ -1,0 +1,17 @@
+{
+  "id": "outer-wall",
+  "name": "Outer Walls",
+  "cost": 60000,
+  "benefit": "protects town and related improvements from attack",
+  "staff": [{ "name": "Guard", "num": 50 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 0,
+  "buildtime": 60,
+  "prerequisites": [ "town" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "town"
+}

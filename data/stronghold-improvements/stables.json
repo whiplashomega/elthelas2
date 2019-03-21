@@ -1,0 +1,17 @@
+{
+  "id": "stables",
+  "name": "Stables",
+  "cost": 1500,
+  "benefit": "allows for the training and keeping of standard mounts such as horses and riding dogs",
+  "staff": [{ "name": "Stablemaster", "num": 1 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 0,
+  "buildtime": 10,
+  "prerequisites": [ "keep" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "castle"
+}

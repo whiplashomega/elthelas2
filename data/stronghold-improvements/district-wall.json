@@ -1,0 +1,17 @@
+{
+  "id": "district-wall",
+  "name": "District Wall",
+  "cost": 40000,
+  "benefit": "protects additional districts and related improvements from attack",
+  "staff": [{ "name": "Guard", "num": 40 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 0,
+  "buildtime": 60,
+  "prerequisites": [ "outer-wall", "town", "additional-district" ],
+  "hide": true,
+  "count": 0,
+  "max": 5,
+  "type": "town"
+}

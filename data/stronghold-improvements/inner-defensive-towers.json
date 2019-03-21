@@ -1,0 +1,17 @@
+{
+  "id": "inner-defensive-towers",
+  "name": "Inner Wall Defensive Towers",
+  "cost": 12000,
+  "benefit": "provides additional defenses for the central village",
+  "staff": [{ "name": "Guard", "num": 10 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 30,
+  "employs": 0,
+  "buildtime": 30,
+  "prerequisites": [ "inner-wall" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "town"
+}

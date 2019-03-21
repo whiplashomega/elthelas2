@@ -1,0 +1,17 @@
+{
+  "id": "dungeon",
+  "name": "Dungeon",
+  "cost": 3000,
+  "benefit": "allows for keeping of up to 20 prisoners",
+  "staff": [{ "name": "Prison Warden", "num": 1 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 0,
+  "buildtime": 10,
+  "prerequisites": [ "keep" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "castle"
+}

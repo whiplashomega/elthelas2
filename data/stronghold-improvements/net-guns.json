@@ -1,0 +1,17 @@
+{
+  "id": "net-guns",
+  "name": "Net Guns",
+  "cost": 1500,
+  "benefit": "Specialized Ballistas that fire bola like nets to restrain opponents, particularly flying creatures.",
+  "staff": [],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 0,
+  "buildtime": 5,
+  "prerequisites": [ "ballista-emplacements" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "castle"
+}

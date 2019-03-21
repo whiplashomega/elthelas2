@@ -1,0 +1,17 @@
+{
+  "id": "keep",
+  "name": "Keep",
+  "cost": 4500,
+  "benefit": "castle is habitable, includes an armory, a basic treasury and some fortifications",
+  "staff": [{ "name": "Servant", "num": 3 }, { "name": "Guard", "num": 5 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 10,
+  "employs": 0,
+  "buildtime": 15,
+  "prerequisites": [ ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "castle"
+}

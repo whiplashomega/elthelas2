@@ -1,0 +1,17 @@
+{
+  "id": "garden",
+  "name": "Garden",
+  "cost": 150,
+  "benefit": "provides a space for planting specialized plants",
+  "staff": [{ "name": "Gardener", "num": 1 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 0,
+  "buildtime": 5,
+  "prerequisites": [ ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "castle"
+}

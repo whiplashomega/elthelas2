@@ -1,0 +1,17 @@
+{
+  "id": "dungeon-expansion",
+  "name": "Dungeon Expansion",
+  "cost": 2250,
+  "benefit": "allows for keeping of up to 20 additional prisoners",
+  "staff": [{ "name": "Prison Warden", "num": 1 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 0,
+  "buildtime": 10,
+  "prerequisites": [ "dungeon" ],
+  "hide": true,
+  "count": 0,
+  "max": 3,
+  "type": "castle"
+}

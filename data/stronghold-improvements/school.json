@@ -1,0 +1,17 @@
+{
+  "id": "school",
+  "name": "School",
+  "cost": 6000,
+  "benefit": "a school house where local children can learn their letters and numbers",
+  "staff": [{ "name": "Teacher", "num": 1 }],
+  "revenue": 0,
+  "pop": 3,
+  "staffpop": 1,
+  "employs": 0,
+  "buildtime": 15,
+  "prerequisites": [ "village" ],
+  "hide": true,
+  "count": 0,
+  "max": 7,
+  "type": "town"
+}

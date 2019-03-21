@@ -1,0 +1,17 @@
+{
+  "id": "barracks-expansion",
+  "name": "Barracks Expansion",
+  "cost": 1500,
+  "benefit": "Housing for soldiers, includes beds for 50 staff",
+  "staff": [{ "name": "Captain", "num": 1 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 50,
+  "employs": 0,
+  "buildtime": 10,
+  "prerequisites": [ "barracks" ],
+  "hide": true,
+  "count": 0,
+  "max": 3,
+  "type": "castle"
+}

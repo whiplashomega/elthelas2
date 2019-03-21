@@ -1,0 +1,17 @@
+{
+  "id": "clear-land",
+  "name": "Clear Land",
+  "cost": 2000,
+  "benefit": "Turn 1 km^2 of forested land into cleared land appropriate for farming.",
+  "staff": [],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 0,
+  "buildtime": 10,
+  "prerequisites": [ "new-land" ],
+  "hide": true,
+  "count": 0,
+  "max": 100,
+  "type": "countryside"
+}

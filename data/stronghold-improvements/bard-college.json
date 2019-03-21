@@ -1,0 +1,17 @@
+{
+  "id": "bard-college",
+  "name": "Bard College",
+  "cost": 40000,
+  "benefit": "A small college for bards, teaching students of the bardic school of the players choice, and collecting sizable tuitions from students",
+  "staff": [{ "name": "Bard", "num": 3 }],
+  "revenue": 500,
+  "pop": 100,
+  "staffpop": 3,
+  "employs": 20,
+  "buildtime": 50,
+  "prerequisites": [ "theater" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "town"
+}

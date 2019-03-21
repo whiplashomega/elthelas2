@@ -1,0 +1,17 @@
+{
+  "id": "seminary",
+  "name": "Seminary",
+  "cost": 40000,
+  "benefit": "provide a place where people can learn the clerical arts, makes it easier to recruit clerics as followers, and collecting tuition from students",
+  "staff": [{ "name": "Cleric", "num": 3 }],
+  "revenue": 500,
+  "pop": 100,
+  "staffpop": 3,
+  "employs": 20,
+  "buildtime": 50,
+  "prerequisites": [ "temple" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "town"
+}

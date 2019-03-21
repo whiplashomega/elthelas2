@@ -1,0 +1,17 @@
+{
+  "id": "secured-treasury",
+  "name": "Secured Treasury",
+  "cost": 6000,
+  "benefit": "Magically secured treasury",
+  "staff": [{ "name": "Guard", "num": 2 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 0,
+  "buildtime": 10,
+  "prerequisites": [ "keep" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "castle"
+}

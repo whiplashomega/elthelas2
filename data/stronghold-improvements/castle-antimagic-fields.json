@@ -1,0 +1,17 @@
+{
+  "id": "castle-antimagic-fields",
+  "name": "Castle Antimagic Fields",
+  "cost": 15000,
+  "benefit": "protects the castle walls from magical attacks",
+  "staff": [{ "name": "Wizard", "num": 0 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 0,
+  "buildtime": 10,
+  "prerequisites": [ "castle-towers" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "castle"
+}

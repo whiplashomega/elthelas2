@@ -92,10 +92,12 @@ module.exports = function(app, staticDir) {
     var users = require('./users');
     var characters = require('./characters');
     var encounters = require('./encounters');
+    var strongholds = require('./strongholds');
     
     app.use('/users', users);
     app.use('/characters', characters);
     app.use('/encounters', encounters);
+    app.use('/strongholds', strongholds);
     
     //generate the sitemap on request
     app.get('/sitemap.xml', function(req, res) {

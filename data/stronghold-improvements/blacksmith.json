@@ -1,0 +1,17 @@
+{
+  "id": "blacksmith",
+  "name": "Blacksmith",
+  "cost": 3000,
+  "benefit": "",
+  "staff": [{ "name": "Blacksmith", "num": 1 }],
+  "revenue": 25,
+  "pop": 3,
+  "staffpop": 1,
+  "employs": 4,
+  "buildtime": 10,
+  "prerequisites": [ "village" ],
+  "hide": true,
+  "count": 0,
+  "max": 7,
+  "type": "town"
+}

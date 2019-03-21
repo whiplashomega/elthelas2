@@ -1,0 +1,17 @@
+{
+  "id": "additional-district",
+  "name": "Additional District",
+  "cost": 20000,
+  "benefit": "",
+  "staff": [{ "name": "Steward", "num": 0 }],
+  "revenue": 0,
+  "pop": 1000,
+  "staffpop": 0,
+  "employs": 200,
+  "buildtime": 45,
+  "prerequisites": [ "town" ],
+  "hide": true,
+  "count": 0,
+  "max": 5,
+  "type": "town"
+}

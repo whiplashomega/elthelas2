@@ -1,0 +1,17 @@
+{
+  "id": "outer-defensive-towers",
+  "name": "Outer Wall Defensive Towers",
+  "cost": 30000,
+  "benefit": "Defensive Towers for the Outer Town Wall",
+  "staff": [{ "name": "Guard", "num": 30 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 50,
+  "employs": 0,
+  "buildtime": 40,
+  "prerequisites": [ "outer-wall" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "town"
+}

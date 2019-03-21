@@ -1,0 +1,17 @@
+{
+  "id": "lumber-camp",
+  "name": "Lumber Camp",
+  "cost": 1500,
+  "benefit": "cuts trees for fun and profit",
+  "staff": [{ "name": "Lumberjack Foreman", "num": 1 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 0,
+  "buildtime": 5,
+  "prerequisites": [ "new-land" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "countryside"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "blacksmith-magical",
+  "name": "Blacksmith - Magical",
+  "cost": 15000,
+  "benefit": "Allows for purchasing common and uncommon magical weapons and armor at half cost",
+  "staff": [{ "name": "Artificer", "num": 1 }, { "name": "Blacksmith", "num": 1 }],
+  "revenue": 400,
+  "pop": 6,
+  "staffpop": 2,
+  "employs": 8,
+  "buildtime": 20,
+  "prerequisites": [ "town" ],
+  "hide": true,
+  "count": 0,
+  "max": 6,
+  "type": "town"
+}

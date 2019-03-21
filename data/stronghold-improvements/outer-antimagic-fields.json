@@ -1,0 +1,17 @@
+{
+  "id": "outer-antimagic-fields",
+  "name": "Outer Wall Antimagic Fields",
+  "cost": 80000,
+  "benefit": "protects the town wall from magical attacks",
+  "staff": [{ "name": "Wizard", "num": 0 }],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 0,
+  "buildtime": 15,
+  "prerequisites": [ "outer-defensive-towers" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "town"
+}

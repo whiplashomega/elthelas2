@@ -1,0 +1,17 @@
+{
+  "id": "new-land",
+  "name": "Land",
+  "cost": 2500,
+  "benefit": "Gain an additional 1 km^2 of unimproved forested land",
+  "staff": [],
+  "revenue": 0,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 0,
+  "buildtime": 0,
+  "prerequisites": [ ],
+  "hide": true,
+  "count": 0,
+  "max": 100,
+  "type": "countryside"
+}
