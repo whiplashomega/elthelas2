@@ -12,6 +12,9 @@ export default {
       stronghold: "stronghold",
       allStrongholds: "strongholds"
     }),
+    reverseTransactions () {
+      return this.stronghold.transactionrecord.slice().reverse();
+    },
     getPop () {
       let pop = this.stronghold.improvements.reduce((a, b) => {
         return a + b.pop;
@@ -44,6 +47,9 @@ export default {
               allmet = false;
             }
           });
+          if (imp.cost > this.stronghold.treasury) {
+            allmet = false;
+          }
           return allmet;
         });
       } else {

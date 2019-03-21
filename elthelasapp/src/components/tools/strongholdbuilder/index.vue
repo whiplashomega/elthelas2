@@ -53,10 +53,11 @@
           <table class="table table-striped">
             <thead><tr><th>Amount</th><th>Description</th><th>Balance</th></tr></thead>
             <tbody>
-              <tr v-for="transaction in stronghold.transactionrecord" :key="transaction.id">
+              <tr v-for="transaction in reverseTransactions" :key="transaction.id">
                 <td>{{ transaction.amount }}</td>
                 <td>{{ transaction.description }}</td>
                 <td>{{ transaction.balance }}</td>
+                <td>{{ transaction.date }}</td>
               </tr>
             </tbody>
           </table>
