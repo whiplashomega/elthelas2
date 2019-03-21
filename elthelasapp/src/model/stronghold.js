@@ -181,6 +181,11 @@ const state = {
       bonus: "Required to collect taxes and tolls"
     },
     {
+      name: "Teacher",
+      typicalSalary: 5,
+      bonus: "runs a school for children, teaching reading, writing, and arithmetic"
+    },
+    {
       name: "Trainer",
       typicalSalary: 90,
       bonus: "increases quality of guards to level 3 equivalent NPCs"
