@@ -146,6 +146,11 @@ const state = {
       subtype: ""
     },
     {
+      name: "Miller",
+      typicalSalary: 5,
+      bonus: "required to collect profits from a mill"
+    },
+    {
       name: "Mine Foreman",
       typicalSalary: 5,
       bonus: "required to collect profits from a mine"
@@ -167,7 +172,7 @@ const state = {
     },
     {
       name: "Shopkeeper",
-      typicalSalary: 1,
+      typicalSalary: 3,
       bonus: "Manages a shop."
     },
     {
