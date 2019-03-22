@@ -52,7 +52,9 @@ export default {
           }
           if ((imp.id === "food-farm" || imp.id === "cash-crop-farm") && this.availableClearedLand < 1) {
             allmet = false;
-          } else if ((imp.id === "town" || imp.id ==="additional-district") && this.forestedLand < 1.25) {
+          } else if ((imp.id === "town" || imp.id === "additional-district") && this.forestedLand < 1.25) {
+            allmet = false;
+          } else if ((imp.id === "village") && this.forestedLand < 0.25) {
             allmet = false;
           }
           return allmet;
@@ -266,7 +268,7 @@ export default {
       return improvementRevenue + this.taxRevenue + this.bankRevenue + this.lumberRevenue;
     },
     expenses () {
-      return this.totalSalary;
+      return this.totalSalary + this.buildingMaintenance;
     },
     netRevenue () {
       return this.grossRevenue - this.expenses;
@@ -287,6 +289,15 @@ export default {
     },
     gameDate () {
       return this.stronghold.gameMonth + "/" + this.stronghold.gameDay + "/" + this.stronghold.gameYear;
+    },
+    buildingMaintenance () {
+      return this.stronghold.improvements.reduce((a, b) => {
+        let maintenanceFree = [ "new-land", "clear-land" ];
+        if (maintenanceFree.includes(b.id)) {
+          return a;
+        }
+        return a + b.cost * 0.001;
+      }, 0);
     }
   },
   data () {

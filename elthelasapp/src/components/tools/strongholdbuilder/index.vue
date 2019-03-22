@@ -104,7 +104,8 @@
     <div class="row">
       <div class="col-sm-4">
         <h2>Improvements</h2>
-        <button @click="addImprovementModal = true" class="btn btn-success">+</button>
+        <button @click="addImprovementModal = true" class="btn btn-success">+</button><br />
+        Building Maintenance: {{ buildingMaintenance }}
         <h4>{{ stronghold.castleName }} Castle Improvements</h4>
         <div v-for="improvement in castleImprovements" :key="improvement.id">
           <improvement :improvement="improvement" :stronghold="stronghold" />
