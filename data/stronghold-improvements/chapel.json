@@ -1,7 +1,7 @@
 {
   "id": "chapel",
   "name": "Chapel",
-  "cost": 3000,
+  "cost": 6000,
   "benefit": "dedicated to God of choice, allows for recruitment of one cleric of same God, no high priests",
   "staff": [{ "name": "Cleric", "num": 1 }],
   "revenue": 0,

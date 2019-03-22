@@ -1,7 +1,7 @@
 {
   "id": "district-wall",
   "name": "District Wall",
-  "cost": 40000,
+  "cost": 80000,
   "benefit": "protects additional districts and related improvements from attack",
   "staff": [{ "name": "Guard", "num": 40 }],
   "revenue": 0,

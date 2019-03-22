@@ -1,7 +1,7 @@
 {
   "id": "temple",
   "name": "Temple",
-  "cost": 8000,
+  "cost": 12000,
   "benefit": "dedicated to God of choice, allows for recruitment of clerics of same God",
   "staff": [{ "name": "Cleric", "num": 1 }],
   "revenue": 0,

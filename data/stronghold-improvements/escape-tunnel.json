@@ -1,7 +1,7 @@
 {
   "id": "escape-tunnel",
   "name": "Escape Tunnel",
-  "cost": 3000,
+  "cost": 9000,
   "benefit": "Provides a way for those in the keep to escape to the outside should the castle fall",
   "staff": [],
   "revenue": 0,

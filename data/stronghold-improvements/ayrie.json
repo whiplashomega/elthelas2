@@ -1,7 +1,7 @@
 {
   "id": "ayrie",
   "name": "Ayrie",
-  "cost": 7500,
+  "cost": 15000,
   "benefit": "allows for the training and use of bird-like flying beasts and monstrosities as mounts",
   "staff": [{ "name": "Ayrie Master", "num": 1 }],
   "revenue": 0,

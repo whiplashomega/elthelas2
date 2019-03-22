@@ -1,7 +1,7 @@
 {
   "id": "general-store",
   "name": "General Store",
-  "cost": 2500,
+  "cost": 4000,
   "benefit": "sells common goods to the populace at large for profit",
   "staff": [{ "name": "Shopkeeper", "num": 1 }],
   "revenue": 50,

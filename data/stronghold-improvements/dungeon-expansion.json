@@ -1,7 +1,7 @@
 {
   "id": "dungeon-expansion",
   "name": "Dungeon Expansion",
-  "cost": 2250,
+  "cost": 7500,
   "benefit": "allows for keeping of up to 20 additional prisoners",
   "staff": [{ "name": "Prison Warden", "num": 1 }],
   "revenue": 0,

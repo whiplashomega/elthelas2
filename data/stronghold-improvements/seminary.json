@@ -1,7 +1,7 @@
 {
   "id": "seminary",
   "name": "Seminary",
-  "cost": 40000,
+  "cost": 80000,
   "benefit": "provide a place where people can learn the clerical arts, makes it easier to recruit clerics as followers, and collecting tuition from students",
   "staff": [{ "name": "Cleric", "num": 3 }],
   "revenue": 500,

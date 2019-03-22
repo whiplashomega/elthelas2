@@ -1,7 +1,7 @@
 {
   "id": "district-wall-towers",
   "name": "District Wall Towers",
-  "cost": 24000,
+  "cost": 48000,
   "benefit": "Defensive Towers for the a District Wall",
   "staff": [{ "name": "Guard", "num": 20 }],
   "revenue": 0,

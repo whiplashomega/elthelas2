@@ -1,7 +1,7 @@
 {
   "id": "inner-wall",
   "name": "Inner Walls",
-  "cost": 24000,
+  "cost": 44000,
   "benefit": "provides basic defenses for the central village",
   "staff": [{ "name": "Guard", "num": 20 }],
   "revenue": 0,

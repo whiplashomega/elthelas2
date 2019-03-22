@@ -1,7 +1,7 @@
 {
   "id": "clear-land",
   "name": "Clear Land",
-  "cost": 2000,
+  "cost": 4000,
   "benefit": "Turn 1 km^2 of forested land into cleared land appropriate for farming.",
   "staff": [],
   "revenue": 0,

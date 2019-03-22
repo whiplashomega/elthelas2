@@ -1,7 +1,7 @@
 {
   "id": "barracks",
   "name": "Barracks",
-  "cost": 2200,
+  "cost": 5500,
   "benefit": "Housing for soldiers, includes beds for 50 staff",
   "staff": [{ "name": "Captain", "num": 1 }],
   "revenue": 0,

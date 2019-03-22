@@ -1,7 +1,7 @@
 {
   "id": "blacksmith",
   "name": "Blacksmith",
-  "cost": 3000,
+  "cost": 5000,
   "benefit": "",
   "staff": [{ "name": "Blacksmith", "num": 1 }],
   "revenue": 25,

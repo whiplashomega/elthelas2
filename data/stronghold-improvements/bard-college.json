@@ -1,7 +1,7 @@
 {
   "id": "bard-college",
   "name": "Bard College",
-  "cost": 40000,
+  "cost": 80000,
   "benefit": "A small college for bards, teaching students of the bardic school of the players choice, and collecting sizable tuitions from students",
   "staff": [{ "name": "Bard", "num": 3 }],
   "revenue": 500,

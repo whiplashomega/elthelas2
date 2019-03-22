@@ -1,7 +1,7 @@
 {
   "id": "factory",
   "name": "Factory",
-  "cost": 10000,
+  "cost": 20000,
   "benefit": "Produces simple finished trade goods of a type of the players choice",
   "staff": [{ "name": "Factory Foreman", "num": 1 }],
   "revenue": 200,

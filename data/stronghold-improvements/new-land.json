@@ -1,7 +1,7 @@
 {
   "id": "new-land",
   "name": "Land",
-  "cost": 2500,
+  "cost": 5000,
   "benefit": "Gain an additional 1 km^2 of unimproved forested land",
   "staff": [],
   "revenue": 0,

@@ -1,71 +1,75 @@
 self.__precacheManifest = [
   {
-    "revision": "0f17866311b32b28c5b4e7bc53e81ae2",
-    "url": "/json/history.json"
+    "revision": "1fed40634ab1b8c516d38e28c5e732e9",
+    "url": "/json/magicitems.json"
+  },
+  {
+    "revision": "6a63da1c7305b86f96c480edf01e587e",
+    "url": "/static/md/book4/pcs.md"
   },
   {
     "revision": "2c0c0b0008f1399bde41ecb582de658d",
     "url": "/static/md/book4/theworld.md"
   },
   {
-    "revision": "57f0af64f1127c2f67cccb9d4740bc72",
-    "url": "/json/improvements.json"
+    "revision": "2dc0eb456bd2d749e15b2b93036de7e7",
+    "url": "/static/md/book4/progression.md"
   },
   {
-    "revision": "18109f2f9e359a775f64",
-    "url": "/css/characterbuilder.10db1b9f.css"
+    "revision": "2cbd491b03b1d24fcf01c9112168a9f0",
+    "url": "/json/organizations.json"
   },
   {
     "revision": "b580d593f5dbb4468425",
     "url": "/css/chunk-vendors.56fce49b.css"
   },
   {
-    "revision": "b580d593f5dbb4468425",
-    "url": "/js/chunk-vendors.e2549129.js"
-  },
-  {
-    "revision": "a31fd0688ae966578122",
+    "revision": "1ee72c115551369f679a",
     "url": "/css/classes.3b9936d9.css"
   },
   {
-    "revision": "a31fd0688ae966578122",
-    "url": "/js/classes.33f9c12c.js"
+    "revision": "1ee72c115551369f679a",
+    "url": "/js/classes.400195b3.js"
   },
   {
-    "revision": "47152006b8f7c48af1b8",
+    "revision": "63ef7bb6210b971420b4",
     "url": "/css/domains.f849abdb.css"
   },
   {
-    "revision": "47152006b8f7c48af1b8",
-    "url": "/js/domains.10d3e887.js"
+    "revision": "63ef7bb6210b971420b4",
+    "url": "/js/domains.ca8271a4.js"
   },
   {
-    "revision": "7e4c645c3f427bb5ebc4",
+    "revision": "239fef5ddf755bff6ff7",
     "url": "/css/encounters.8b5fefc0.css"
   },
   {
-    "revision": "7e4c645c3f427bb5ebc4",
-    "url": "/js/encounters.731f2a2c.js"
+    "revision": "239fef5ddf755bff6ff7",
+    "url": "/js/encounters.9542b2bb.js"
   },
   {
-    "revision": "0cc4fa668c593e74494f",
+    "revision": "0f54c2d096312c6075bb",
     "url": "/css/geography.9ace0302.css"
   },
   {
-    "revision": "0cc4fa668c593e74494f",
-    "url": "/js/geography.6fdbcacb.js"
+    "revision": "0f54c2d096312c6075bb",
+    "url": "/js/geography.124578c3.js"
   },
   {
-    "revision": "d7bfc7f5045a088ee1de",
+    "revision": "cf7d62c840a973b8683a",
     "url": "/css/quickref.c3621473.css"
   },
   {
-    "revision": "d7bfc7f5045a088ee1de",
-    "url": "/js/quickref.41f50af4.js"
+    "revision": "cf7d62c840a973b8683a",
+    "url": "/js/quickref.0d82dce7.js"
   },
   {
-    "revision": "c2bcd05e82d922038b3e",
-    "url": "/js/treasure.a2d564f4.js"
+    "revision": "9b4aa1fd0ad099233f9b",
+    "url": "/js/treasure.6d1b5e0a.js"
+  },
+  {
+    "revision": "1c1bfe463a8773c8b703389174dc4dd9",
+    "url": "/fonts/tl-icons.1c1bfe46.woff"
   },
   {
     "revision": "b0f49cd26ba67885381b66e77665bf02",
@@ -76,32 +80,16 @@ self.__precacheManifest = [
     "url": "/fonts/tl-icons.8402c93e.ttf"
   },
   {
-    "revision": "1c1bfe463a8773c8b703389174dc4dd9",
-    "url": "/fonts/tl-icons.1c1bfe46.woff"
-  },
-  {
     "revision": "82a4fd3fe6368758827dc06e38e22f16",
     "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "18bce3a463e79adb94db590968d73ace",
+    "revision": "ad55f95b31ecdbd874f0bc19bfed9ef2",
     "url": "/index.html"
   },
   {
-    "revision": "2dc0eb456bd2d749e15b2b93036de7e7",
-    "url": "/static/md/book4/progression.md"
-  },
-  {
-    "revision": "fe9884553a1ae2ea1bb0d6f76a8d4822",
-    "url": "/js/locale/el.json"
-  },
-  {
-    "revision": "d3d9140c4d912e18b894495d6c87f2df",
-    "url": "/js/timeline.js"
-  },
-  {
-    "revision": "efc28f3579bb800850de349535a7af21",
-    "url": "/js/timeline.min.js"
+    "revision": "2a7a0ec8da4974b7bfb9f99c94243405",
+    "url": "/static/md/book4/curestan.md"
   },
   {
     "revision": "5142d6998f2907692d3fd3fb446368b5",
@@ -148,28 +136,28 @@ self.__precacheManifest = [
     "url": "/json/gods.json"
   },
   {
-    "revision": "6ce820a4ee68a224d5c4",
-    "url": "/js/app.38fa04ee.js"
+    "revision": "0f17866311b32b28c5b4e7bc53e81ae2",
+    "url": "/json/history.json"
   },
   {
-    "revision": "18109f2f9e359a775f64",
-    "url": "/js/characterbuilder.01bf0c6c.js"
+    "revision": "57f0af64f1127c2f67cccb9d4740bc72",
+    "url": "/json/improvements.json"
   },
   {
     "revision": "27d1a45d96aa15386fc72c329f87f6ca",
     "url": "/json/landmarks.json"
   },
   {
-    "revision": "1fed40634ab1b8c516d38e28c5e732e9",
-    "url": "/json/magicitems.json"
+    "revision": "743489591a29e87f63d7",
+    "url": "/js/app.5bf135c7.js"
   },
   {
     "revision": "05fd0b582f5d094124435a801f091c66",
     "url": "/json/nations.json"
   },
   {
-    "revision": "2cbd491b03b1d24fcf01c9112168a9f0",
-    "url": "/json/organizations.json"
+    "revision": "b580d593f5dbb4468425",
+    "url": "/js/chunk-vendors.e2549129.js"
   },
   {
     "revision": "b58081e43f66a676a043cb400fe150e3",
@@ -192,6 +180,18 @@ self.__precacheManifest = [
     "url": "/json/weapons.json"
   },
   {
+    "revision": "fe9884553a1ae2ea1bb0d6f76a8d4822",
+    "url": "/js/locale/el.json"
+  },
+  {
+    "revision": "efc28f3579bb800850de349535a7af21",
+    "url": "/js/timeline.min.js"
+  },
+  {
+    "revision": "d41d8cd98f00b204e9800998ecf8427e",
+    "url": "/static/md/book.md"
+  },
+  {
     "revision": "0b725cd54bc29c1332544e44645117f8",
     "url": "/manifest.webmanifest"
   },
@@ -200,16 +200,12 @@ self.__precacheManifest = [
     "url": "/robots.txt"
   },
   {
-    "revision": "d41d8cd98f00b204e9800998ecf8427e",
-    "url": "/static/md/book.md"
+    "revision": "ad607ac3ac0ad4e1530918e3caa96d05",
+    "url": "/static/md/book4/chapter10.md"
   },
   {
     "revision": "b4dbc6cdee8578c21eb3224fa90ecbbd",
     "url": "/static/md/book4/chapter1.md"
-  },
-  {
-    "revision": "ad607ac3ac0ad4e1530918e3caa96d05",
-    "url": "/static/md/book4/chapter10.md"
   },
   {
     "revision": "cb2c491075996cab08407addd262ad89",
@@ -218,6 +214,10 @@ self.__precacheManifest = [
   {
     "revision": "e6bccb97b7f80cc1ee1d115edb4fd25d",
     "url": "/static/md/book4/chapter12.md"
+  },
+  {
+    "revision": "d3d9140c4d912e18b894495d6c87f2df",
+    "url": "/js/timeline.js"
   },
   {
     "revision": "4c5b11958f5fe61f98f10a7bb10b16af",
@@ -240,12 +240,12 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chapter2old.md"
   },
   {
-    "revision": "14fa10c6f0a72e4d4fc43afae930b91f",
-    "url": "/static/md/book4/chapter3.md"
-  },
-  {
     "revision": "0f3706bbf9968b8f0f3209cf69b52a59",
     "url": "/static/md/book4/chapter3old.md"
+  },
+  {
+    "revision": "14fa10c6f0a72e4d4fc43afae930b91f",
+    "url": "/static/md/book4/chapter3.md"
   },
   {
     "revision": "77dbf53ee1cc6e134c20ca318a0d8ff9",
@@ -256,20 +256,16 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chapter5.md"
   },
   {
-    "revision": "5c7d77ba4f9ed7029bb75c7c09c0837f",
-    "url": "/static/md/book4/chapter6.md"
-  },
-  {
     "revision": "de42cfb4e6533b9a504ebf0cf040b174",
     "url": "/static/md/book4/chapter7.md"
   },
   {
-    "revision": "408bd6e11ad4774bb150fa0abd2d544b",
-    "url": "/static/md/book4/chapter7old.md"
+    "revision": "5c7d77ba4f9ed7029bb75c7c09c0837f",
+    "url": "/static/md/book4/chapter6.md"
   },
   {
-    "revision": "deb69e20439bb1e4ee55ff6e2affdadd",
-    "url": "/static/md/book4/chapter8.md"
+    "revision": "408bd6e11ad4774bb150fa0abd2d544b",
+    "url": "/static/md/book4/chapter7old.md"
   },
   {
     "revision": "c58d91a5bb074d7012836eea11c53703",
@@ -280,15 +276,19 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chaptertemplate.md"
   },
   {
-    "revision": "2a7a0ec8da4974b7bfb9f99c94243405",
-    "url": "/static/md/book4/curestan.md"
+    "revision": "deb69e20439bb1e4ee55ff6e2affdadd",
+    "url": "/static/md/book4/chapter8.md"
   },
   {
-    "revision": "6a63da1c7305b86f96c480edf01e587e",
-    "url": "/static/md/book4/pcs.md"
+    "revision": "a938ab88bd3d60310d7e",
+    "url": "/js/characterbuilder.0d6a69a9.js"
   },
   {
-    "revision": "6ce820a4ee68a224d5c4",
+    "revision": "a938ab88bd3d60310d7e",
+    "url": "/css/characterbuilder.10db1b9f.css"
+  },
+  {
+    "revision": "743489591a29e87f63d7",
     "url": "/css/app.5af59fdb.css"
   },
   {

@@ -1,7 +1,7 @@
 {
   "id": "warehouse",
   "name": "Warehouse",
-  "cost": 6000,
+  "cost": 9000,
   "benefit": "provides a location for merchants to store their goods",
   "staff": [{ "name": "Quartermaster", "num": 1 }],
   "revenue": 50,

@@ -1,7 +1,7 @@
 {
   "id": "inn",
   "name": "Inn",
-  "cost": 5000,
+  "cost": 7000,
   "benefit": "provides a place for ships to dock, provides tax revenue from ships docking fees",
   "staff": [{ "name": "Innkeeper", "num": 1 }],
   "revenue": 50,

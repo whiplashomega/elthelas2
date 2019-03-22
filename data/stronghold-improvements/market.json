@@ -1,7 +1,7 @@
 {
   "id": "market",
   "name": "Market",
-  "cost": 3000,
+  "cost": 6000,
   "benefit": "a designated central marketplace for local merchants to set up their stalls and sell their wares, for a fee",
   "staff": [{ "name": "Steward", "num": 0 }],
   "revenue": 100,

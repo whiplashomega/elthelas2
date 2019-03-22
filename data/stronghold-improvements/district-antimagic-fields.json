@@ -1,7 +1,7 @@
 {
   "id": "district-antimagic-fields",
   "name": "District Wall Antimagic Fields",
-  "cost": 80000,
+  "cost": 160000,
   "benefit": "protects an additional district wall from magical attacks",
   "staff": [{ "name": "Wizard", "num": 0 }],
   "revenue": 0,

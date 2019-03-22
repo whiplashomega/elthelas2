@@ -1,7 +1,7 @@
 {
   "id": "merchant-bank",
   "name": "Merchant Bank",
-  "cost": 15000,
+  "cost": 20000,
   "benefit": "Increases overall tax revenue by 10%, treasury earns interest at 0.2% per day",
   "staff": [{ "name": "Banker", "num": 1 }],
   "revenue": 0,

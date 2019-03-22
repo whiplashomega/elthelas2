@@ -1,7 +1,7 @@
 {
   "id": "wizard-college",
   "name": "Wizard College",
-  "cost": 40000,
+  "cost": 80000,
   "benefit": "provides a place where people can learn the arcane arts, makes it easier to recruit wizards and sorcerers, and collect tuition from the students",
   "staff": [{ "name": "Master Wizard", "num": 3 }],
   "revenue": 500,

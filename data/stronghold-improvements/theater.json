@@ -1,7 +1,7 @@
 {
   "id": "theater",
   "name": "Theater",
-  "cost": 8000,
+  "cost": 12000,
   "benefit": "A theater for the performing arts, collects fees from shows that wish to perform there",
   "staff": [{ "name": "Steward", "num": 0 }],
   "revenue": 100,

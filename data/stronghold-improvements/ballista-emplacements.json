@@ -1,7 +1,7 @@
 {
   "id": "ballista-emplacements",
   "name": "Ballista Emplacements",
-  "cost": 1500,
+  "cost": 3000,
   "benefit": "Adds ballistas to strategic points on the castle walls",
   "staff": [],
   "revenue": 0,

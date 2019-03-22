@@ -1,7 +1,7 @@
 {
   "id": "cash-crop-farm",
   "name": "Cash Crop Farm",
-  "cost": 4500,
+  "cost": 15000,
   "benefit": "Grows a cash crop of players choice",
   "staff": [{ "name": "Head Farmer", "num": 1 }],
   "revenue": 100,

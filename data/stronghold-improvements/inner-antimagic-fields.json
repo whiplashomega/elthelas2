@@ -1,7 +1,7 @@
 {
   "id": "inner-antimagic-fields",
   "name": "Inner Wall Antimagic Fields",
-  "cost": 40000,
+  "cost": 80000,
   "benefit": "protects the central village wall from magical attacks",
   "staff": [{ "name": "Wizard", "num": 0 }],
   "revenue": 0,

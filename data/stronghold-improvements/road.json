@@ -1,7 +1,7 @@
 {
   "id": "road",
   "name": "Road",
-  "cost": 7500,
+  "cost": 20000,
   "benefit": "reduces travel time to Cur'Estan by 50%",
   "staff": [ ],
   "revenue": 0,

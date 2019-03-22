@@ -50,6 +50,11 @@ export default {
           if (imp.cost > this.stronghold.treasury) {
             allmet = false;
           }
+          if ((imp.id === "food-farm" || imp.id === "cash-crop-farm") && this.availableClearedLand < 1) {
+            allmet = false;
+          } else if ((imp.id === "town" || imp.id ==="additional-district") && this.forestedLand < 1.25) {
+            allmet = false;
+          }
           return allmet;
         });
       } else {
@@ -95,6 +100,9 @@ export default {
         let index = -1;
         needed.forEach((stn) => {
           if (st.job.name === stn.name) {
+            index = needed.indexOf(stn);
+            stn.num--;
+          } else if (st.job.subtype && stn.name === st.job.name + " (" + st.job.subtype + ")") {
             index = needed.indexOf(stn);
             stn.num--;
           }

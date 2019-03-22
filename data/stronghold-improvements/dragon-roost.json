@@ -1,7 +1,7 @@
 {
   "id": "dragon-roost",
   "name": "Dragon Roost",
-  "cost": 15000,
+  "cost": 50000,
   "benefit": "Provides a home for an adult or lesser dragon, dragon not included",
   "staff": [{ "name": "Servant", "num": 5 }],
   "revenue": 0,

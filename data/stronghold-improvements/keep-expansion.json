@@ -1,7 +1,7 @@
 {
   "id": "keep-expansion",
   "name": "Keep Expansion",
-  "cost": 7500,
+  "cost": 15000,
   "benefit": "increases size of the keep",
   "staff": [{ "name": "Servant", "num": 3 }],
   "revenue": 0,

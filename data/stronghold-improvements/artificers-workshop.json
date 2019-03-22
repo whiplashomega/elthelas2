@@ -1,7 +1,7 @@
 {
   "id": "artificers-workshop",
   "name": "Artificers Workshop",
-  "cost": 15000,
+  "cost": 30000,
   "benefit": "Provides for the construction of magical artifacts by a skilled artificer",
   "staff": [{ "name": "Artificer", "num": 0 }],
   "revenue": 0,

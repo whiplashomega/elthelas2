@@ -1,7 +1,7 @@
 {
   "id": "nondetection-wards",
   "name": "Nondetection Wards",
-  "cost": 15000,
+  "cost": 30000,
   "benefit": "Using the ley line connection of the wizard tower, create a field of nondetection around the keep",
   "staff": [{ "name": "Wizard (Illusionist)", "num": 0 }],
   "revenue": 0,

@@ -1,7 +1,7 @@
 {
   "id": "castle-wall",
   "name": "Castle Wall",
-  "cost": 4500,
+  "cost": 15000,
   "benefit": "Provides additional line of defense for castle buildings",
   "staff": [{ "name": "Guard", "num": 10 }],
   "revenue": 0,

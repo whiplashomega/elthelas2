@@ -1,7 +1,7 @@
 {
   "id": "harbor",
   "name": "Harbor",
-  "cost": 15000,
+  "cost": 30000,
   "benefit": "provides a place for ships to dock, provides tax revenue from ships docking fees",
   "staff": [{ "name": "Harbormaster", "num": 1 }],
   "revenue": 300,

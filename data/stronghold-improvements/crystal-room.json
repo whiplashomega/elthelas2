@@ -1,7 +1,7 @@
 {
   "id": "crystal-room",
   "name": "Crystal Room",
-  "cost": 15000,
+  "cost": 20000,
   "benefit": "The mirrored walls of this room can be used to scry on any place within 5 miles",
   "staff": [ { "name": "Master Wizard (Diviner)", "num": 0 } ],
   "revenue": 0,

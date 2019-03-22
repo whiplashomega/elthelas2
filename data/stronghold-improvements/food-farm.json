@@ -1,7 +1,7 @@
 {
   "id": "food-farm",
   "name": "Food Farm",
-  "cost": 3000,
+  "cost": 10000,
   "benefit": "Grows food crops, enough to feed roughly 500 people",
   "staff": [{ "name": "Head Farmer", "num": 1 }],
   "revenue": 60,

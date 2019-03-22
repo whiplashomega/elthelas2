@@ -1,7 +1,7 @@
 {
   "id": "secured-treasury",
   "name": "Secured Treasury",
-  "cost": 6000,
+  "cost": 12000,
   "benefit": "Magically secured treasury",
   "staff": [{ "name": "Guard", "num": 2 }],
   "revenue": 0,

@@ -1,7 +1,7 @@
 {
   "id": "library",
   "name": "Library",
-  "cost": 4500,
+  "cost": 5000,
   "benefit": "Gives advantage on arcana, religion, and history checks when consulted",
   "staff": [{ "name": "Librarian", "num": 0 }],
   "revenue": 0,
