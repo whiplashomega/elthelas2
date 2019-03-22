@@ -1,7 +1,7 @@
 {
   "id": "town",
   "name": "Town",
-  "cost": 150000,
+  "cost": 120000,
   "benefit": "build out from a village to a larger town, with housing for up to 1000 people",
   "staff": [{ "name": "Steward", "num": 0 }],
   "revenue": 0,

@@ -28,7 +28,8 @@ var Stronghold = function () {
     staff: [],
     gameYear: 1846,
     gameMonth: 7,
-    gameDay: 12
+    gameDay: 12,
+    notes: ""
   };
 };
 
@@ -95,6 +96,11 @@ const state = {
       name: "Factory Foreman",
       typicalSalary: 5,
       bonus: "Manages a factory as a business."
+    },
+    {
+      name: "Gardener",
+      typicalSalary: 3,
+      bonus: "Manages the castle garden, supplying useful alchemical ingredients, or just pretty flowers."
     },
     {
       name: "Guard",

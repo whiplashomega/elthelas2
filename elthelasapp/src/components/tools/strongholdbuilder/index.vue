@@ -64,6 +64,7 @@
         </b-modal>
       </div>
       <div class="col-sm-3">
+        <h4>Details</h4>
         Total Population: {{ getPop }}<br />
         Number Employed: {{ totalEmployees }}<br />
         Beds for Staff: {{ staffBeds }}<br />
@@ -80,14 +81,12 @@
         Expenses: {{ expenses }}<br />
       </div>
       <div class="col-sm-3">
-        <h4>Needed Staff</h4>
-        <div v-for="staff in neededStaff" :key="staff.id">
-          {{ staff.name }} x {{ staff.num }}
-        </div>
         <h4>Unmet Needs</h4>
         <div v-for="staff in unmetStaffNeed" :key="staff.name">
           {{ staff.name }} x {{ staff.num }}
         </div>
+        <h4>Notes</h4>
+        <textarea class="form-control" v-model="stronghold.notes"></textarea>
       </div>
       <div class="col-sm-3">
         <h4>Under Construction</h4>
@@ -187,10 +186,13 @@
         <h4>Staff Summary</h4>
         Total Staff Salary: {{ totalSalary }}
         <table class="table table-striped table-sm">
-          <thead><th>Job</th><th>Total</th><th>Bonus</th></thead>
+          <thead><th>Job</th><th>Total</th><th>Needed</th><th>Bonus</th></thead>
           <tbody>
             <tr v-for="staff in staffSummary" :key="staff.job.name + staff.job.subtype">
-              <td>{{ staff.job.name }} <span v-if="staff.job.subtype">({{ staff.job.subtype }})</span></td><td>{{ staff.count }}</td><td>{{ staff.job.bonus }}</td>
+              <td>{{ staff.job.name }} <span v-if="staff.job.subtype">({{ staff.job.subtype }})</span></td>
+              <td>{{ staff.count }}</td>
+              <td>{{ staff.needed }}</td>
+              <td>{{ staff.job.bonus }}</td>
             </tr>
           </tbody>
         </table>

@@ -1,0 +1,17 @@
+{
+  "id": "shipyard",
+  "name": "Shipyard",
+  "cost": 30000,
+  "benefit": "Builds riverboats",
+  "staff": [{ "name": "Blacksmith", "num": 1 }, { "name": "Shipbuilder", "num": 1 }],
+  "revenue": 200,
+  "pop": 0,
+  "staffpop": 0,
+  "employs": 20,
+  "buildtime": 20,
+  "prerequisites": [ "harbor" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "town"
+}

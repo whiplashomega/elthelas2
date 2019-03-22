@@ -1,0 +1,17 @@
+{
+  "id": "manor-house",
+  "name": "Manor House",
+  "cost": 5000,
+  "benefit": "A large extravagent home for staff or party members to live in.",
+  "staff": [{ "name": "Servant", "num": 2 }],
+  "revenue": 0,
+  "pop": 7,
+  "staffpop": 4,
+  "employs": 0,
+  "buildtime": 20,
+  "prerequisites": [ "village" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "town"
+}

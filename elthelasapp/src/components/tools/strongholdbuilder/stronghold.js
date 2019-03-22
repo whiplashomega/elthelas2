@@ -117,6 +117,13 @@ export default {
     },
     staffSummary () {
       return this.stronghold.staff.reduce((a, b) => {
+        let needmatch = this.neededStaff.filter((st) => {
+          if (!b.job.subtype) {
+            return b.job.name === st.job.name;
+          } else {
+            return b.job.name === st.job.name && b.job.subtype === st.job.subtype;
+          }          
+        });
         let match = a.filter((st) => {
           if (!b.job.subtype) {
             return b.job.name === st.job.name;
@@ -127,7 +134,7 @@ export default {
         if (match) {
           match.count++;
         } else {
-          a.push({ job: b.job, count: 1 });
+          a.push({ job: b.job, count: 1, needed: needmatch.num });
         }
         return a;
       }, []);
@@ -198,7 +205,7 @@ export default {
       if (guards) guardcount = guards.count;
       let taxRevenue = 0;
       if (steward) {
-        taxRevenue = Math.min(0.1 * this.getPop, 0.1 * (guardcount * 100 + constablecount * 500));
+        taxRevenue = Math.min(0.15 * this.getPop, 0.15 * (guardcount * 100 + constablecount * 500));
       }
       return taxRevenue;
     },
@@ -292,11 +299,11 @@ export default {
     },
     buildingMaintenance () {
       return this.stronghold.improvements.reduce((a, b) => {
-        let maintenanceFree = [ "new-land", "clear-land" ];
+        let maintenanceFree = [ "new-land", "clear-land", "teleportation-circle" ];
         if (maintenanceFree.includes(b.id)) {
           return a;
         }
-        return a + b.cost * 0.001;
+        return a + b.cost * 0.0005;
       }, 0);
     }
   },

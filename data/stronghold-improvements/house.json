@@ -1,0 +1,17 @@
+{
+  "id": "house",
+  "name": "House",
+  "cost": 1000,
+  "benefit": "Build an additional house for staff (or party) members to live in with their families",
+  "staff": [],
+  "revenue": 0,
+  "pop": 7,
+  "staffpop": 2,
+  "employs": 0,
+  "buildtime": 10,
+  "prerequisites": [ "village" ],
+  "hide": true,
+  "count": 0,
+  "max": 1,
+  "type": "town"
+}
