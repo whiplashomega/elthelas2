@@ -118,12 +118,12 @@ export default {
     staffSummary () {
       return this.stronghold.staff.reduce((a, b) => {
         let needmatch = this.neededStaff.filter((st) => {
-          if (!b.job.subtype) {
-            return b.job.name === st.job.name;
+          if (!st.name.includes("(")) {
+            return b.job.name === st.name;
           } else {
-            return b.job.name === st.job.name && b.job.subtype === st.job.subtype;
-          }          
-        });
+            return b.job.name + " (" + b.job.subtype + ")" === st.name;
+          }
+        })[0];
         let match = a.filter((st) => {
           if (!b.job.subtype) {
             return b.job.name === st.job.name;
@@ -131,6 +131,11 @@ export default {
             return b.job.name === st.job.name && b.job.subtype === st.job.subtype;
           }
         })[0];
+        if (!needmatch) {
+          needmatch = { num: 0 };
+        } else if (needmatch.num === 0) {
+          needmatch.num = 1;
+        }
         if (match) {
           match.count++;
         } else {
