@@ -3,7 +3,7 @@
   "name": "District Wall Towers",
   "cost": 48000,
   "benefit": "Defensive Towers for the a District Wall",
-  "staff": [{ "name": "Guard", "num": 20 }],
+  "staff": [{ "name": "Guard", "num": 20, "cur": 0 }],
   "revenue": 0,
   "pop": 0,
   "staffpop": 0,

@@ -3,7 +3,7 @@
   "name": "Shipyard",
   "cost": 30000,
   "benefit": "Builds riverboats",
-  "staff": [{ "name": "Blacksmith", "num": 1 }, { "name": "Shipbuilder", "num": 1 }],
+  "staff": [{ "name": "Blacksmith", "num": 1, "cur": 0 }, { "name": "Shipbuilder", "num": 1, "cur": 0 }],
   "revenue": 200,
   "pop": 0,
   "staffpop": 0,

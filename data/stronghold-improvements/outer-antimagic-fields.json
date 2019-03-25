@@ -3,7 +3,7 @@
   "name": "Outer Wall Antimagic Fields",
   "cost": 160000,
   "benefit": "protects the town wall from magical attacks",
-  "staff": [{ "name": "Wizard", "num": 0 }],
+  "staff": [{ "name": "Wizard", "num": 0, "cur": 0 }],
   "revenue": 0,
   "pop": 0,
   "staffpop": 0,

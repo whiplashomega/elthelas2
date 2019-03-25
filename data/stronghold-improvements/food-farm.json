@@ -3,7 +3,7 @@
   "name": "Food Farm",
   "cost": 10000,
   "benefit": "Grows food crops, enough to feed roughly 500 people",
-  "staff": [{ "name": "Head Farmer", "num": 1 }],
+  "staff": [{ "name": "Head Farmer", "num": 1, "cur": 0 }],
   "revenue": 60,
   "pop": 40,
   "staffpop": 1,

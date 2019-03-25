@@ -3,7 +3,7 @@
   "name": "Blacksmith",
   "cost": 5000,
   "benefit": "",
-  "staff": [{ "name": "Blacksmith", "num": 1 }],
+  "staff": [{ "name": "Blacksmith", "num": 1, "cur": 0 }],
   "revenue": 25,
   "pop": 3,
   "staffpop": 1,

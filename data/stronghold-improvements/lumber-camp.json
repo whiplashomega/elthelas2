@@ -3,7 +3,7 @@
   "name": "Lumber Camp",
   "cost": 2000,
   "benefit": "cuts trees for fun and profit",
-  "staff": [{ "name": "Lumberjack Foreman", "num": 1 }],
+  "staff": [{ "name": "Lumberjack Foreman", "num": 1, "cur": 0 }],
   "revenue": 0,
   "pop": 0,
   "staffpop": 0,

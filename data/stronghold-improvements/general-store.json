@@ -3,7 +3,7 @@
   "name": "General Store",
   "cost": 4000,
   "benefit": "sells common goods to the populace at large for profit",
-  "staff": [{ "name": "Shopkeeper", "num": 1 }],
+  "staff": [{ "name": "Shopkeeper", "num": 1, "cur": 0 }],
   "revenue": 50,
   "pop": 3,
   "staffpop": 1,

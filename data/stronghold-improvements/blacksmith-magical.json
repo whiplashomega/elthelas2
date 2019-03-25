@@ -3,7 +3,7 @@
   "name": "Blacksmith - Magical",
   "cost": 15000,
   "benefit": "Allows for purchasing common and uncommon magical weapons and armor at half cost",
-  "staff": [{ "name": "Artificer", "num": 1 }, { "name": "Blacksmith", "num": 1 }],
+  "staff": [{ "name": "Artificer", "num": 1, "cur": 0 }, { "name": "Blacksmith", "num": 1, "cur": 0 }],
   "revenue": 400,
   "pop": 6,
   "staffpop": 2,

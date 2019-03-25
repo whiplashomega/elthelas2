@@ -3,7 +3,7 @@
   "name": "Village",
   "cost": 25000,
   "benefit": "build out a small village around your castle where people can live, with houses for up to 200 people",
-  "staff": [{ "name": "Steward", "num": 0 }],
+  "staff": [{ "name": "Steward", "num": 0, "cur": 0 }],
   "revenue": 0,
   "pop": 200,
   "staffpop": 0,

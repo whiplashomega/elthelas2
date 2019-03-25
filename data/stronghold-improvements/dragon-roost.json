@@ -3,7 +3,7 @@
   "name": "Dragon Roost",
   "cost": 50000,
   "benefit": "Provides a home for an adult or lesser dragon, dragon not included",
-  "staff": [{ "name": "Servant", "num": 5 }],
+  "staff": [{ "name": "Servant", "num": 5, "cur": 0 }],
   "revenue": 0,
   "pop": 0,
   "staffpop": 0,

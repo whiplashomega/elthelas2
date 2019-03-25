@@ -3,7 +3,7 @@
   "name": "Outer Wall Defensive Towers",
   "cost": 50000,
   "benefit": "Defensive Towers for the Outer Town Wall",
-  "staff": [{ "name": "Guard", "num": 30 }],
+  "staff": [{ "name": "Guard", "num": 30, "cur": 0 }],
   "revenue": 0,
   "pop": 0,
   "staffpop": 50,

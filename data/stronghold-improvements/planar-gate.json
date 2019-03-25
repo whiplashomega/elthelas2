@@ -3,7 +3,7 @@
   "name": "Planar Gate",
   "cost": 100000,
   "benefit": "Create  a permanent planar gate to a particular plane of existence",
-  "staff": [{ "name": "Archmage (Conjurer)", "num": 0 }],
+  "staff": [{ "name": "Archmage (Conjurer)", "num": 0, "cur": 0 }],
   "revenue": 0,
   "pop": 0,
   "staffpop": 0,

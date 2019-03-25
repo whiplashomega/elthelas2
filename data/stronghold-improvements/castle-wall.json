@@ -3,7 +3,7 @@
   "name": "Castle Wall",
   "cost": 15000,
   "benefit": "Provides additional line of defense for castle buildings",
-  "staff": [{ "name": "Guard", "num": 10 }],
+  "staff": [{ "name": "Guard", "num": 10, "cur": 0 }],
   "revenue": 0,
   "pop": 0,
   "staffpop": 0,

@@ -3,7 +3,7 @@
   "name": "Market",
   "cost": 6000,
   "benefit": "a designated central marketplace for local merchants to set up their stalls and sell their wares, for a fee",
-  "staff": [{ "name": "Steward", "num": 0 }],
+  "staff": [{ "name": "Steward", "num": 0, "cur": 0 }],
   "revenue": 100,
   "pop": 0,
   "staffpop": 0,

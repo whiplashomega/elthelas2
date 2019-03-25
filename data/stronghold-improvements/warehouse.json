@@ -3,7 +3,7 @@
   "name": "Warehouse",
   "cost": 9000,
   "benefit": "provides a location for merchants to store their goods",
-  "staff": [{ "name": "Quartermaster", "num": 1 }],
+  "staff": [{ "name": "Quartermaster", "num": 1, "cur": 0 }],
   "revenue": 50,
   "pop": 0,
   "staffpop": 0,

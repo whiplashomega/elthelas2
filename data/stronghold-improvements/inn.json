@@ -3,7 +3,7 @@
   "name": "Inn",
   "cost": 7000,
   "benefit": "provides a place for ships to dock, provides tax revenue from ships docking fees",
-  "staff": [{ "name": "Innkeeper", "num": 1 }],
+  "staff": [{ "name": "Innkeeper", "num": 1, "cur": 0 }],
   "revenue": 50,
   "pop": 3,
   "staffpop": 1,

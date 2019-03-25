@@ -3,7 +3,7 @@
   "name": "Theater",
   "cost": 12000,
   "benefit": "A theater for the performing arts, collects fees from shows that wish to perform there",
-  "staff": [{ "name": "Steward", "num": 0 }],
+  "staff": [{ "name": "Steward", "num": 0, "cur": 0 }],
   "revenue": 100,
   "pop": 0,
   "staffpop": 0,

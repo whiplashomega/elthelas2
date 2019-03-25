@@ -3,7 +3,7 @@
   "name": "School",
   "cost": 8000,
   "benefit": "a school house where local children can learn their letters and numbers",
-  "staff": [{ "name": "Teacher", "num": 1 }],
+  "staff": [{ "name": "Teacher", "num": 1, "cur": 0 }],
   "revenue": 0,
   "pop": 3,
   "staffpop": 1,

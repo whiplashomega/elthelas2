@@ -3,7 +3,7 @@
   "name": "Outer Walls",
   "cost": 90000,
   "benefit": "protects town and related improvements from attack",
-  "staff": [{ "name": "Guard", "num": 50 }],
+  "staff": [{ "name": "Guard", "num": 50, "cur": 0 }],
   "revenue": 0,
   "pop": 0,
   "staffpop": 0,

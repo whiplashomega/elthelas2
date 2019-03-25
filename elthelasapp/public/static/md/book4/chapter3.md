@@ -206,9 +206,17 @@ During this scene a goat will begin following the party. The goat is the actual 
 
 The Duke has been polymorphed into a goat, has all the intelligence and abilities of a goat, but vaguely remembers not being a goat.
 
+#### The Legion Is Here to Help
+
+The day after the true duke is discovered by the players, the morning will bring high alert to the walls of Silver Head, as the Imperial Legion has appeared to the north of the city. A magically amplified voice, that of General Theodore Gloryheart, will demand the cities immediate surrender.
+
+Meanwhile a legionnaire commander and one of Gloryhearts trusted lieutenants, Silia Lucci, will approach the party. The legion has managed to sneak her and her platoon of about 10 elite guards into the city during the night (they did an air drop via griffin rider). Their goal is to sieze and hold the gates to the city. Unfortunately they don't believe they will be able to complete their mission unless communications and morale among the defenders can be disrupted, most likely by the death of the false Duke and the commander of the Devils in control of the city.
+
 #### The Doppelganger
 
 A doppelganger working for Manius Aquila and the devils managed to replace the Duke of Silver Head.
+
+[The Duke and his Devil](/runner/narzugon&doppelganger&nightmare)
 
 ## The Mind Flayer
 
@@ -263,6 +271,5 @@ Luna is a +2 Rapier.
 ***Fearless*** While attuned to and holding Luna you cannot be frightened.
 
 ***Light Burst*** As an action the wielder can raise Luna towards the sky and command Luna to shine even brighter for a brief time, dealing 3d6 radiant damage to creatures within 10 ft (except the wielder), suppressing any magical darkness within 60 ft, and shining bright light out to a distance of 120 ft. This effect ends at the end of your next turn, after which Luna cannot shed light of any kind until the next dawn.
-
 
 Players should level up to level 7 at the end of this chapter.

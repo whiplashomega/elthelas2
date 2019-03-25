@@ -3,7 +3,7 @@
   "name": "Garden",
   "cost": 150,
   "benefit": "provides a space for planting specialized plants",
-  "staff": [{ "name": "Gardener", "num": 1 }],
+  "staff": [{ "name": "Gardener", "num": 1, "cur": 0 }],
   "revenue": 0,
   "pop": 0,
   "staffpop": 0,

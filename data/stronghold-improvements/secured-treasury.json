@@ -3,7 +3,7 @@
   "name": "Secured Treasury",
   "cost": 12000,
   "benefit": "Magically secured treasury",
-  "staff": [{ "name": "Guard", "num": 2 }],
+  "staff": [{ "name": "Guard", "num": 2, "cur": 0 }],
   "revenue": 0,
   "pop": 0,
   "staffpop": 0,

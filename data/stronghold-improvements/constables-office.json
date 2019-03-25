@@ -3,7 +3,7 @@
   "name": "Constable's Office",
   "cost": 3000,
   "benefit": "Gives constables a place to work from, includes two jail cells",
-  "staff": [{ "name": "Constable", "num": 3 }],
+  "staff": [{ "name": "Constable", "num": 3, "cur": 0 }],
   "revenue": 0,
   "pop": 0,
   "staffpop": 0,

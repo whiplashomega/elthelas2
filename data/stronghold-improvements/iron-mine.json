@@ -3,7 +3,7 @@
   "name": "Iron Mine",
   "cost": 20000,
   "benefit": "mines iron for fun and profit",
-  "staff": [{ "name": "Mine Foreman", "num": 1 }],
+  "staff": [{ "name": "Mine Foreman", "num": 1, "cur": 0 }],
   "revenue": 100,
   "pop": 0,
   "staffpop": 0,

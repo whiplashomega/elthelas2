@@ -3,7 +3,7 @@
   "name": "Stables",
   "cost": 3000,
   "benefit": "allows for the training and keeping of standard mounts such as horses and riding dogs",
-  "staff": [{ "name": "Stablemaster", "num": 1 }],
+  "staff": [{ "name": "Stablemaster", "num": 1, "cur": 0 }],
   "revenue": 0,
   "pop": 0,
   "staffpop": 0,

@@ -3,7 +3,7 @@
   "name": "Dungeon",
   "cost": 9000,
   "benefit": "allows for keeping of up to 20 prisoners",
-  "staff": [{ "name": "Prison Warden", "num": 1 }],
+  "staff": [{ "name": "Prison Warden", "num": 1, "cur": 0 }],
   "revenue": 0,
   "pop": 0,
   "staffpop": 0,

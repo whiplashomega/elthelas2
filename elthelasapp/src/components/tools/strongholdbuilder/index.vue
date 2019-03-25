@@ -1,6 +1,13 @@
 <template>
   <div>
-    <h1>{{ stronghold.castleName }} : {{ stronghold.townName }}</h1>
+    <h1>
+      <div class="btn-group">
+        <button class="btn btn-warning" @click="newStronghold(); newmodal = true">New / Load</button>
+        <button class="btn btn-success" @click="saveNewStronghold()">Save New</button>
+        <button class="btn btn-primary" v-if="stronghold._id" @click="saveStronghold()">Save</button>
+      </div>
+      {{ stronghold.castleName }} : {{ stronghold.townName }}
+    </h1>
     <b-modal v-model="newmodal">
       Castle Name <input type="text" v-model="stronghold.castleName" class="form-control" />
       Town Name <input type="text" v-model="stronghold.townName" class="form-control" />
@@ -32,11 +39,6 @@
     </b-modal>
     <div class="row">
       <div class="col-sm-3">
-        <div class="btn-group">
-          <button class="btn btn-warning" @click="newStronghold(); newmodal = true">New / Load</button>
-          <button class="btn btn-success" @click="saveNewStronghold()">Save New</button>
-          <button class="btn btn-primary" v-if="stronghold._id" @click="saveStronghold()">Save</button>
-        </div><br />
         <strong>Current Treasury: {{ stronghold.treasury }}</strong><br />
         <strong>Net Revenue: {{ netRevenue }}</strong>&nbsp;&nbsp;
         <button class="btn btn-sm btn-primary" @click="newDay()">New Day</button><br />

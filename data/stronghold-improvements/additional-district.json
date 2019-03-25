@@ -3,7 +3,7 @@
   "name": "Additional District",
   "cost": 100000,
   "benefit": "",
-  "staff": [{ "name": "Steward", "num": 0 }],
+  "staff": [{ "name": "Steward", "num": 0, "cur": 0 }],
   "revenue": 0,
   "pop": 1000,
   "staffpop": 0,

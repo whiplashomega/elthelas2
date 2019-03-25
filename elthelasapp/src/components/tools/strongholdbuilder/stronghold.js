@@ -10,7 +10,12 @@ export default {
       improvements: "allImprovements",
       staffTypes: "staffTypes",
       stronghold: "stronghold",
-      allStrongholds: "strongholds"
+      allStrongholds: "strongholds",
+      forestedLand: "forestedLand",
+      urbanLand: "urbanLand",
+      farmLand: "farmLand",
+      totalLand: "totalLand",
+      availableClearedLand: "availableClearedLand"
     }),
     reverseTransactions () {
       return this.stronghold.transactionrecord.slice().reverse();
@@ -148,51 +153,6 @@ export default {
       return this.stronghold.staff.reduce((a, b) => {
         return a + Number(b.salary);
       }, 0);
-    },
-    totalLand () {
-      let land = this.stronghold.improvements.filter((a) => {
-        return a.id === "new-land";
-      })[0];
-      if (land) return land.count;
-      return 0;
-    },
-    availableClearedLand () {
-      let land = this.stronghold.improvements.filter((a) => {
-        return a.id === "clear-land";
-      })[0];
-      if (land) return land.count - this.farmLand;
-      return 0;
-    },
-    urbanLand () {
-      let land = 0;
-      let village = this.stronghold.improvements.filter((a) => {
-        return a.id === "village";
-      })[0];
-      if (village) land += (village.count * 0.25);
-      let town = this.stronghold.improvements.filter((a) => {
-        return a.id === "town";
-      })[0];
-      if (town) land += (town.count * 1.25);
-      let districts = this.stronghold.improvements.filter((a) => {
-        return a.id === "additional-district";
-      })[0];
-      if (districts) land += (districts.count * 1.25);
-      return land;
-    },
-    farmLand () {
-      let land = 0;
-      let foodfarms = this.stronghold.improvements.filter((a) => {
-        return a.id === "food-farm";
-      })[0];
-      let cashfarms = this.stronghold.improvements.filter((a) => {
-        return a.id === "cash-crop-farm";
-      })[0];
-      if (foodfarms) land += foodfarms.count;
-      if (cashfarms) land += cashfarms.count;
-      return land;
-    },
-    forestedLand () {
-      return this.totalLand - (this.availableClearedLand + this.farmLand + this.urbanLand);
     },
     taxRevenue () {
       let steward = this.staffSummary.filter((a) => {

@@ -3,7 +3,7 @@
   "name": "Animal Sanctuary",
   "cost": 3000,
   "benefit": "Can provide food and lodging for exotic animals such as animal companions, houses 3 animals",
-  "staff": [{ "name": "Beastmaster", "num": 1 }],
+  "staff": [{ "name": "Beastmaster", "num": 1, "cur": 0 }],
   "revenue": 0,
   "pop": 0,
   "staffpop": 0,

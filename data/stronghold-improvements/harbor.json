@@ -3,7 +3,7 @@
   "name": "Harbor",
   "cost": 30000,
   "benefit": "provides a place for ships to dock, provides tax revenue from ships docking fees",
-  "staff": [{ "name": "Harbormaster", "num": 1 }],
+  "staff": [{ "name": "Harbormaster", "num": 1, "cur": 0 }],
   "revenue": 300,
   "pop": 0,
   "staffpop": 0,

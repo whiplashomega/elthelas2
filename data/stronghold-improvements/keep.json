@@ -3,7 +3,7 @@
   "name": "Keep",
   "cost": 4500,
   "benefit": "castle is habitable, includes an armory, a basic treasury and some fortifications",
-  "staff": [{ "name": "Servant", "num": 3 }, { "name": "Guard", "num": 5 }],
+  "staff": [{ "name": "Servant", "num": 3, "cur": 0 }, { "name": "Guard", "num": 5, "cur": 0 }],
   "revenue": 0,
   "pop": 0,
   "staffpop": 10,

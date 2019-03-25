@@ -3,7 +3,7 @@
   "name": "Moat and Drawbridge",
   "cost": 12000,
   "benefit": "Provides additional protection from assault",
-  "staff": [{ "name": "Guard", "num": 5 }],
+  "staff": [{ "name": "Guard", "num": 5, "cur": 0 }],
   "revenue": 0,
   "pop": 0,
   "staffpop": 0,
