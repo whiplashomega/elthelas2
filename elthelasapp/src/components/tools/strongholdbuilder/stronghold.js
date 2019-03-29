@@ -11,19 +11,63 @@ export default {
       staffTypes: "staffTypes",
       stronghold: "stronghold",
       allStrongholds: "strongholds",
+      availableForestedLand: "availableForestedLand",
+      timberLand: "timberLand",
       forestedLand: "forestedLand",
       urbanLand: "urbanLand",
       farmLand: "farmLand",
       totalLand: "totalLand",
-      availableClearedLand: "availableClearedLand"
+      calcRevRatio: 'calcRevRatio',
+      calculateIncome: 'calculateIncome',
+      calculateRevenue: 'calculateRevenue',
+      availableClearedLand: "availableClearedLand",
+      guardsNeeded: 'guardsNeeded',
+      laborersNeeded: 'laborersNeeded',
+      servantsNeeded: 'servantsNeeded',
+      availableLaborers: 'availableLaborers',
+      neededStaff: 'neededStaff',
+      staffSummary: 'staffSummary',
+      privateLaborers: 'privateLaborers',
+      maxLaborers: 'maxLaborers',
+      totalPrivateEmployed: 'totalPrivateEmployed'
     }),
+    staffList () {
+      return [ ...this.stronghold.staff ].sort((a, b) => {
+        if (this.staffSort === 'job') {
+          if (a.job.name > b.job.name) {
+            return 1;
+          } else {
+            return -1;
+          }
+        } else {
+          if (a[this.staffSort] > b[this.staffSort]) {
+            return 1;
+          } else {
+            return -1;
+          }
+        }
+      });
+    },
+    calcTotalRevenue () {
+      let rev = this.stronghold.improvements.reduce((total, imp) => {
+        let rev = this.calculateRevenue(imp);
+        for (let key in total) {
+          total[key] += rev[key];
+        }
+        return total;
+      }, { alcohol: 0, arcanum: 0, cloth: 0, coal: 0, food: 0, iron: 0, leather: 0, lumber: 0, steel: 0, stone: 0, timber: 0, wool: 0 });
+      for (let key in rev) {
+        rev[key] += Number(this.stronghold.autoSell[key]);
+      }
+      return rev;
+    },
     reverseTransactions () {
       return this.stronghold.transactionrecord.slice().reverse();
     },
     getPop () {
       let pop = this.stronghold.improvements.reduce((a, b) => {
-        return a + b.pop;
-      }, 0) + this.stronghold.staff.length;
+        return a + b.pop * b.count;
+      }, 0) + this.stronghold.staff.length + this.stronghold.privateEmployees.length;
       return pop;
     },
     availableImprovements () {
@@ -40,10 +84,14 @@ export default {
           if ((donematch && donematch.count + conmatch.length >= imp.max) || conmatch.length >= imp.max) {
             allmet = false;
           }
-          console.log(imp);
           imp.prerequisites.forEach((req) => {
             let met = false;
             stronghold.improvements.forEach((strimp) => {
+              if (strimp.id === req) {
+                met = true;
+              }
+            });
+            stronghold.privateEnterprise.forEach((strimp) => {
               if (strimp.id === req) {
                 met = true;
               }
@@ -52,14 +100,13 @@ export default {
               allmet = false;
             }
           });
-          if (imp.cost > this.stronghold.treasury) {
+          if ((imp.id === "food-farm" || imp.id === "cattle-farm" || imp.id === 'winery' || imp.id === "sheep-farm") && this.availableClearedLand < 1) {
             allmet = false;
-          }
-          if ((imp.id === "food-farm" || imp.id === "cash-crop-farm") && this.availableClearedLand < 1) {
+          } else if ((imp.id === "town" || imp.id === "additional-district") && this.availableForestedLand < 1.25) {
             allmet = false;
-          } else if ((imp.id === "town" || imp.id === "additional-district") && this.forestedLand < 1.25) {
+          } else if ((imp.id === "village") && this.availableForestedLand < 0.25) {
             allmet = false;
-          } else if ((imp.id === "village") && this.forestedLand < 0.25) {
+          } else if ((imp.id === "clear-land" || imp.id === "lumber-camp") && this.availableForestedLand < 1) {
             allmet = false;
           }
           return allmet;
@@ -71,32 +118,35 @@ export default {
     castleImprovements () {
       return this.stronghold.improvements.filter((a) => {
         return a.type === "castle";
+      }).sort((a, b) => {
+        if (a.name > b.name) {
+          return 1;
+        } else {
+          return -1;
+        }
       });
     },
     countrysideImprovements () {
       return this.stronghold.improvements.filter((a) => {
         return a.type === "countryside";
+      }).sort((a, b) => {
+        if (a.name > b.name) {
+          return 1;
+        } else {
+          return -1;
+        }
       });
     },
     townImprovements () {
       return this.stronghold.improvements.filter((a) => {
         return a.type === "town";
+      }).sort((a, b) => {
+        if (a.name > b.name) {
+          return 1;
+        } else {
+          return -1;
+        }
       });
-    },
-    neededStaff () {
-      return this.stronghold.improvements.reduce((a, b) => {
-        b.staff.forEach((st) => {
-          let match = a.filter((stm) => {
-            return stm.name === st.name;
-          })[0];
-          if (match) {
-            match.num += st.num * b.count;
-          } else {
-            a.push({ ...st, id: Date.now(), num: st.num * b.count });
-          }
-        });
-        return a;
-      }, []);
     },
     unmetStaffNeed () {
       let needed = [];
@@ -106,7 +156,7 @@ export default {
       this.stronghold.staff.forEach((st) => {
         let index = -1;
         needed.forEach((stn) => {
-          if (st.job.name === stn.name) {
+          if (st.job.name === stn.name && stn.name !== "Guard" && stn.name !== "Servant") {
             index = needed.indexOf(stn);
             stn.num--;
           } else if (st.job.subtype && stn.name === st.job.name + " (" + st.job.subtype + ")") {
@@ -118,164 +168,225 @@ export default {
           needed.splice(index, 1);
         }
       });
+      let guards = needed.filter((a) => { return a.name === "Guard"; })[0];
+      if (guards) {
+        guards.num -= this.stronghold.guards;
+        if (guards.num <= 0) {
+          needed.splice(needed.indexOf(guards), 1);
+        }
+      }
+      let servants = needed.filter((a) => { return a.name === "Servant"; })[0];
+      if (servants) {
+        servants.num -= this.stronghold.servants;
+        if (servants.num <= 0) {
+          needed.splice(needed.indexOf(servants), 1);
+        }
+      }
       return needed;
-    },
-    staffSummary () {
-      return this.stronghold.staff.reduce((a, b) => {
-        let needmatch = this.neededStaff.filter((st) => {
-          if (!st.name.includes("(")) {
-            return b.job.name === st.name;
-          } else {
-            return b.job.name + " (" + b.job.subtype + ")" === st.name;
-          }
-        })[0];
-        let match = a.filter((st) => {
-          if (!b.job.subtype) {
-            return b.job.name === st.job.name;
-          } else {
-            return b.job.name === st.job.name && b.job.subtype === st.job.subtype;
-          }
-        })[0];
-        if (!needmatch) {
-          needmatch = { num: 0 };
-        } else if (needmatch.num === 0) {
-          needmatch.num = 1;
-        }
-        if (match) {
-          match.count++;
-        } else {
-          a.push({ job: b.job, count: 1, needed: needmatch.num });
-        }
-        return a;
-      }, []);
     },
     totalSalary () {
       return this.stronghold.staff.reduce((a, b) => {
         return a + Number(b.salary);
-      }, 0);
+      }, 0) + this.stronghold.guards * 2 + this.stronghold.servants * 0.5 + this.stronghold.laborers * 0.5;
     },
-    taxRevenue () {
+    taxEfficiency () {
+      let constablecount = 0;
+      let guardcount = this.stronghold.guards;
+      let taxEfficiency = 0;
       let steward = this.staffSummary.filter((a) => {
         return a.job.name === "Steward";
       })[0];
-      let constablecount = 0;
-      let constables = this.staffSummary.filter((a) => {
-        return a.job.name === "Constable";
+      let constablesoffice = this.improvements.filter((a) => {
+        return a.id === "constables-office";
       })[0];
-      if (constables) constablecount = constables.count;
-      let guardcount = 0;
-      let guards = this.staffSummary.filter((a) => {
-        return a.job.name === "Guard";
-      })[0];
-      if (guards) guardcount = guards.count;
-      let taxRevenue = 0;
-      if (steward) {
-        taxRevenue = Math.min(0.15 * this.getPop, 0.15 * (guardcount * 100 + constablecount * 500));
+      let constables;
+      if (constablesoffice) {
+        constables = constablesoffice.staff.filter((a) => {
+          return a.name === "Constable";
+        })[0];
       }
-      return taxRevenue;
+      if (constables) constablecount = constables.cur;
+      if (steward) {
+        taxEfficiency = Math.min(1, (guardcount * 100 + constablecount * 500) / this.getPop);
+      }
+      return Math.round(taxEfficiency * 100) / 100;
+    },
+    propertyTax () {
+      let privateEnterpriseValue = this.stronghold.privateEnterprise.reduce((total, imp) => {
+        return total + imp.goldCost;
+      }, 0);
+      return Math.round(this.stronghold.laws.propertyTaxRate * privateEnterpriseValue * this.taxEfficiency) / 100;
+    },
+    headTax () {
+      return Math.round(this.stronghold.laws.headTaxRate * this.getPop * this.taxEfficiency * 100) / 100;
+    },
+    incomeTax () {
+      let publicEmployees = (this.stronghold.laws.incomeTaxRate / 100) * this.totalSalary * this.taxEfficiency;
+      let privateIncomes = this.stronghold.privateEnterprise.reduce((total, imp) => {
+        return total + imp.employs * 0.5;
+      }, 0) + this.stronghold.privateEmployees.reduce((total, st) => {
+        return total + st.typicalSalary;
+      }, 0);
+      let privateEmployees = (this.stronghold.laws.incomeTaxRate / 100) * privateIncomes * this.taxEfficiency;
+      return Math.round((publicEmployees + privateEmployees) * 100) / 100;
+    },
+    taxRevenue () {
+      return this.headTax + this.incomeTax + this.propertyTax;
     },
     bankRevenue () {
       let bank = this.stronghold.improvements.filter((a) => {
         return a.id === "merchant-bank";
       })[0];
-      let banker = this.stronghold.staff.filter((a) => {
-        return a.job.name === "Banker";
-      })[0];
-      if (bank && banker) {
-        return this.stronghold.treasury * 0.002 + this.taxRevenue * 0.1;
+      if (bank) {
+        return Math.round((this.stronghold.treasury * 0.002 + this.taxRevenue * 0.1) * this.calcRevRatio(bank) * 100) / 100;
       }
       return 0;
     },
-    lumberRevenue () {
-      let lumbercamp = this.stronghold.improvements.filter((a) => {
-        return a.id === "lumber-camp";
-      })[0];
-      let foreman = this.stronghold.staff.filter((a) => {
-        return a.job.name === "Lumberjack Foreman";
-      })[0];
-      if (lumbercamp && foreman) return 10 * this.forestedLand;
-      return 0;
+    improvementRevenue () {
+      return this.stronghold.improvements.reduce((total, imp) => {
+        return total + this.calculateIncome(imp);
+      }, 0);
     },
     grossRevenue () {
-      let staffSumCopy = [];
-      this.staffSummary.forEach((st) => {
-        staffSumCopy.push({ ...st });
-      });
-      let improvementRevenue = this.stronghold.improvements.reduce((a, b) => {
-        let rev = b.revenue * b.count;
-        let naturecleric = this.stronghold.staff.filter((a) => {
-          return (a.job.name === "Cleric" || a.job.name === "High Priest") && a.job.subtype === "Nature";
-        })[0];
-        let earthcleric = this.stronghold.staff.filter((a) => {
-          return (a.job.name === "Cleric" || a.job.name === "High Priest") && a.job.subtype === "Earth";
-        })[0];
-        b.staff.forEach((st) => {
-          let reqstaff = staffSumCopy.filter((a) => {
-            let success = a.job.name === st.name && a.count >= st.num * b.count;
-            let partialsuccess = a.job.name === st.name && a.count >= st.num;
-            if (success) {
-              a.count -= st.num * b.count;
-            } else if (partialsuccess) {
-              rev = 0;
-              while (a.count >= st.num) {
-                rev += b.revenue;
-                a.count -= st.num;
-              }
-              return partialsuccess;
-            }
-            return success;
-          })[0];
-          if (!reqstaff) {
-            rev = 0;
-          }
-          if ((b.id === 'food-farm' || b.id === 'cash-crop-farm') && naturecleric) {
-            rev = rev * 2;
-          }
-          if ((b.id === 'iron-mine' || b.id === 'quarry') && earthcleric) {
-            rev = rev * 1.5;
-          }
-        });
-        return a + rev;
-      }, 0);
-      return improvementRevenue + this.taxRevenue + this.bankRevenue + this.lumberRevenue;
+      return Math.round((this.taxRevenue + this.bankRevenue + this.improvementRevenue + this.resourceRevenue) * 100) / 100;
     },
-    expenses () {
-      return this.totalSalary + this.buildingMaintenance;
+    resourceRevenue () {
+      let resourceRevenue = 0;
+      for (let key in this.stronghold.autoSell) {
+        let amount = Number(this.stronghold.autoSell[key]);
+        if (amount < 0) {
+          resourceRevenue -= amount * this.sellTable[key];
+        }
+      }
+      return Math.round(resourceRevenue * 100) / 100;
+    },
+    resourceCost () {
+      let resourceRevenue = 0;
+      for (let key in this.stronghold.autoSell) {
+        let amount = Number(this.stronghold.autoSell[key]);
+        if (amount > 0) {
+          resourceRevenue += amount * this.buyTable[key];
+        }
+      }
+      return Math.round(resourceRevenue * 100) / 100;
     },
     netRevenue () {
-      return this.grossRevenue - this.expenses;
+      return Math.round((this.grossRevenue - this.expenses) * 100) / 100;
+    },
+    expenses () {
+      return Math.round((this.totalSalary + this.buildingMaintenance + this.resourceCost) * 100) / 100;
+    },
+    unemploymentRate () {
+      return Math.round((1 - ((this.totalEmployees + this.totalPrivateEmployed) / (this.getPop * 0.7))) * 100);
     },
     totalEmployees () {
-      let improvementEmployees = this.stronghold.improvements.reduce((a, b) => {
-        return a + b.employs * b.count;
-      }, 0);
-      return improvementEmployees + this.stronghold.staff.length;
+      return Number(this.stronghold.laborers) + this.stronghold.staff.length + Number(this.stronghold.guards) + Number(this.stronghold.servants);
     },
     staffBeds () {
       return this.stronghold.improvements.reduce((a, b) => {
-        return a + b.staffpop;
+        return a + b.staffpop * b.count;
       }, 0);
     },
     availableStaffBeds () {
-      return this.staffBeds - this.stronghold.staff.length;
+      return this.staffBeds - (this.stronghold.staff.length + Number(this.stronghold.guards) + Number(this.stronghold.servants));
+    },
+    unrest () {
+      let unrest = 0;
+      if (this.getPop > 0) {
+        // people hate head taxes
+        if (Number(this.stronghold.laws.headTaxRate) > 0) {
+          unrest += Number(this.stronghold.laws.headTaxRate) * 200;
+        };
+        // and hate high income taxes
+        if (Number(this.stronghold.laws.incomeTaxRate) > 10) {
+          unrest += Number(this.stronghold.laws.incomeTaxRate) - 10;
+        }
+        if (Number(this.stronghold.laws.propertyTaxRate) > 0.1) {
+          unrest += (Number(this.stronghold.laws.propertyTaxRate) - 0.1) * 50;
+        }
+        // people want to work, very low unemployment reduces unrest, high unemployment increases unrest
+        let unemploymentModifier = (this.unemploymentRate - 20) * 0.5;
+        unrest += unemploymentModifier;
+        let foodSubsidiesModifier = ((Number(this.stronghold.laws.foodSubsidies) / this.getPop)) * 50;
+        unrest -= foodSubsidiesModifier;
+      }
+      return Math.round(unrest);
     },
     gameDate () {
       return this.stronghold.gameMonth + "/" + this.stronghold.gameDay + "/" + this.stronghold.gameYear;
     },
     buildingMaintenance () {
       return this.stronghold.improvements.reduce((a, b) => {
-        let maintenanceFree = [ "new-land", "clear-land", "teleportation-circle" ];
+        let maintenanceFree = [ "new-land", "clear-land", "teleportation-circle", "temple", "chapel" ];
         if (maintenanceFree.includes(b.id)) {
           return a;
         }
-        return a + b.cost * 0.0005;
+        return a + b.goldCost * 0.0005;
       }, 0);
+    },
+    sanctuaryAnimals () {
+      return this.stronghold.animals.filter((a) => {
+        return a.livesat === "animal-sanctuary";
+      }).sort();
+    },
+    stableAnimals () {
+      return this.stronghold.animals.filter((a) => {
+        return a.livesat === "stable";
+      }).sort();
+    },
+    ayrieAnimals () {
+      return this.stronghold.animals.filter((a) => {
+        return a.livesat === "ayrie";
+      }).sort();
     }
   },
   data () {
     return {
       changeby: 0,
+      buyTable: {
+        alcohol: 0.3,
+        arcanum: 750,
+        cloth: 3,
+        coal: 0.15,
+        food: 0.15,
+        iron: 0.45,
+        leather: 60,
+        lumber: 0.75,
+        steel: 0.75,
+        stone: 1.5,
+        timber: 0.15,
+        wool: 1.5
+      },
+      sellTable: {
+        alcohol: 0.2,
+        arcanum: 500,
+        cloth: 2,
+        coal: 0.1,
+        food: 0.1,
+        iron: 0.3,
+        leather: 40,
+        lumber: 0.5,
+        steel: 0.5,
+        stone: 1,
+        timber: 0.1,
+        wool: 1
+      },
+      resourceChange: {
+        alcohol: 0,
+        arcanum: 0,
+        cloth: 0,
+        coal: 0,
+        food: 0,
+        iron: 0,
+        leather: 0,
+        lumber: 0,
+        steel: 0,
+        stone: 0,
+        timber: 0,
+        wool: 0
+      },
       record: "",
+      staffSort: "name",
       showAvailable: true,
       showTransactionRecord: false,
       addImprovementModal: false,
@@ -284,7 +395,8 @@ export default {
         job: { name: "", typicalSalary: 0, bonus: "", subtype: "" },
         salary: 0
       },
-      newmodal: true
+      newmodal: true,
+      newanimal: { name: "", livesat: "stables", species: "", foodcost: 0 }
     };
   },
   methods: {
@@ -298,12 +410,27 @@ export default {
       saveNewStronghold: 'saveNewStronghold',
       deleteStronghold: 'deleteStronghold'
     }),
+    buyResource (type, amount) {
+      this.stronghold.resources[type] += Number(amount);
+      this.addToTreasury(-1 * Number(amount) * this.buyTable[type], "Purchase " + amount + " " + type);
+    },
+    sellResource (type, amount) {
+      this.stronghold.resources[type] -= Number(amount);
+      this.addToTreasury(Number(amount) * this.sellTable[type], "Sell " + amount + " " + type);
+    },
     addStaff () {
       this.stronghold.staff.push({ id: Date.now(), ...this.newstaff, job: { ...this.newstaff.job } });
       this.newstaff = { name: "", job: { name: "", typicalSalary: 0, bonus: "" }, salary: 0 };
     },
     newDay () {
+      // gold revenue
       this.addToTreasury(this.netRevenue, "daily net revenue");
+      // resource revenue
+      let rev = this.calcTotalRevenue;
+      for (let key in this.stronghold.resources) {
+        this.stronghold.resources[key] += Number(rev[key]);
+      }
+      // increment the date
       this.stronghold.gameDay += 1;
       if (this.stronghold.gameDay > 30) {
         this.stronghold.gameDay = 1;
@@ -314,6 +441,7 @@ export default {
         this.stronghold.gameYear += 1;
       }
       let finished = [];
+      // increment items under construction
       this.stronghold.construction.forEach((imp) => {
         imp.buildtime -= 1;
         if (imp.buildtime <= 0) {
@@ -321,9 +449,30 @@ export default {
           this.addImprovement(imp);
         }
       });
+      // clear finished projects
       finished.forEach((a) => {
         this.stronghold.construction.splice(this.stronghold.construction.indexOf(a), 1);
       });
+      // expend food subsidies
+      this.stronghold.resources.food -= this.stronghold.laws.foodSubsidies;
+      // reduce food subsidies if necessary
+      if (this.stronghold.laws.foodSubsidies > this.stronghold.resources.food) {
+        this.stronghold.laws.foodSubsidies = this.stronghold.resources.food;
+      }
+      // change autosell values
+      for (let key in this.stronghold.autoSell) {
+        let amount = Number(this.stronghold.autoSell[key]);
+        if (-amount > this.stronghold.resources[key]) {
+          this.stronghold.autoSell[key] = -this.stronghold.resources[key];
+        }
+      }
+    },
+    addAnimal () {
+      this.stronghold.animals.push({ id: Date.now() + Math.random(), ...this.newanimal });
+      this.newanimal = { name: "", livesat: "stables", species: "", foodcost: 0 };
+    },
+    removeAnimal (animal) {
+      this.stronghold.animals.splice(this.stronghold.animals.indexOf(animal), 1);
     },
     addToConstruction (improvement) {
       if (improvement.buildtime > 0) {
@@ -331,18 +480,50 @@ export default {
       } else {
         this.addImprovement(improvement);
       }
-      this.addToTreasury(-improvement.cost, "Begin construction on " + improvement.name);
+      if (!improvement.private) {
+        for (let key in improvement.resourceCost) {
+          this.stronghold.resources[key] -= improvement.resourceCost[key];
+          if (this.stronghold.resources[key] < 0) {
+            this.buyResource(key, this.stronghold.resources[key] * -1);
+          }
+        }
+        this.addToTreasury(-improvement.goldCost, "Begin construction on " + improvement.name);
+      }
       this.addImprovementModal = false;
     },
     addImprovement (improvement) {
       var match = this.stronghold.improvements.filter((a) => {
         return a.id === improvement.id;
       })[0];
-      if (match) {
-        match.count++;
+      if (improvement.private) {
+        match = this.stronghold.privateEnterprise.filter((a) => {
+          return a.id === improvement.id;
+        })[0];
+        if (match) {
+          match.count++;
+        } else {
+          improvement.count++;
+          this.stronghold.privateEnterprise.push(improvement);
+          improvement.staff.forEach((st) => {
+            let match = this.staffTypes.filter((a) => {
+              return a.name === st.name;
+            })[0];
+            if (match && st.num > 0) {
+              for (var x = 0; x < st.num; x++) {
+                this.stronghold.privateEmployees.push({ id: Date.now() + Math.random(), ...match });
+              }
+            } else if (match) {
+              this.stronghold.privateEmployees.push({ id: Date.now() + Math.random(), ...match });
+            }
+          });
+        }
       } else {
-        improvement.count++;
-        this.stronghold.improvements.push(improvement);
+        if (match) {
+          match.count++;
+        } else {
+          improvement.count++;
+          this.stronghold.improvements.push(improvement);
+        }
       }
     },
     fireStaff (staff) {
@@ -350,9 +531,11 @@ export default {
     },
     addToTreasury (changeby, record) {
       this.stronghold.treasury += Number(changeby);
-      this.stronghold.transactionrecord.push({ id: Date.now(), amount: changeby, description: record, balance: this.stronghold.treasury, date: this.gameDate });
+      this.stronghold.transactionrecord.push({ id: Date.now() + changeby + record, amount: changeby, description: record, balance: this.stronghold.treasury, date: this.gameDate });
       this.changeby = 0;
       this.record = "";
+      var x = Math.round(this.stronghold.treasury * 100);
+      this.stronghold.treasury = x / 100;
     }
   },
   created () {

@@ -64,11 +64,6 @@ export default [
     bonus: "Manages the castle garden, supplying useful alchemical ingredients, or just pretty flowers."
   },
   {
-    name: "Fortification Expert",
-    typicalSalary: 10,
-    bonus: "fortifications cost 25% less to build, and are built in 75% of the time"
-  },
-  {
     name: "Harbormaster",
     typicalSalary: 5,
     bonus: "Manages loading and unloading of ships and collection of taxes from a harbor"
@@ -86,6 +81,11 @@ export default [
     subtype: ""
   },
   {
+    name: "Hostler",
+    typicalSalary: 5,
+    bonus: "Will keep and train standard mounts such as horses and riding dogs, allowing for the equipment of cavalry."
+  },
+  {
     name: "Innkeeper",
     typicalSalary: 3,
     bonus: "Runs your inn for you, providing you with profits"
@@ -99,6 +99,16 @@ export default [
     name: "Lumberjack Foreman",
     typicalSalary: 3,
     bonus: "Required to run a lumber camp"
+  },
+  {
+    name: "Master Brewer",
+    typicalSalary: 3,
+    bonus: "Required to run a brewery"
+  },
+  {
+    name: "Master Smelter",
+    typicalSalary: 3,
+    bonus: "Required to run a smelter"
   },
   {
     name: "Master Wizard",
@@ -131,11 +141,6 @@ export default [
     name: "Shopkeeper",
     typicalSalary: 3,
     bonus: "Manages a shop."
-  },
-  {
-    name: "Stablemaster",
-    typicalSalary: 5,
-    bonus: "Will keep and train standard mounts such as horses and riding dogs, allowing for the equipment of cavalry."
   },
   {
     name: "Steward",

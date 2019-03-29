@@ -4,13 +4,24 @@ export default {
   props: [ "improvement", "stronghold" ],
   computed: {
     ...mapGetters({
-      forestedLand: "forestedLand"
+      forestedLand: "forestedLand",
+      calcRevRatio: 'calcRevRatio',
+      calculateIncome: 'calculateIncome',
+      calculateRevenue: 'calculateRevenue',
+      guardsNeeded: 'guardsNeeded',
+      laborersNeeded: 'laborersNeeded',
+      servantsNeeded: 'servantsNeeded',
+      availableLaborers: 'availableLaborers',
+      availableOfType: 'availableOfType'
     })
   },
   data () {
     return {};
   },
   methods: {
+    min (a) {
+      return Math.min(...a);
+    },
     removeImprovement (improvement) {
       if (improvement.removeNum) {
         improvement.count -= improvement.removeNum;

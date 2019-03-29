@@ -252,15 +252,15 @@ General Heartbren will reward the players with ownership over a ruined fort east
 
 #### Personal Quest Rewards
 
-**Black Wolf Irregulars**: Helm of Teleportation Circle (castable 1/week) from the Duke of Silver Head, as well as 5000 GP each.
+**Black Wolf Irregulars**: Helm of Teleportation Circle (castable 1/week) from the Duke of Silver Head, a pair of sending stones, and 8000 GP each.
 
-**Union of Wizard's Colleges**: They each get their choice of an Elemental Gem and 5000 GP. 
+**Union of Wizard's Colleges**: They each get their choice of an Elemental Gem and 8000 GP.
 
-**Sylvan's Rangers**: Dust of Disappearance and 5000 GP
+**Sylvan's Rangers**: Dust of Disappearance and 8000 GP
 
-**Inevitables**: Case of Emergency and 5000 GP
+**Inevitables**: Case of Emergency and 8000 GP
 
-**Champions of Cora**: Luna Improvement and 5000 GP
+**Champions of Cora**: Luna Improvement and 8000 GP
 
 #### Luna, the Sword of Cora, Devout
 
