@@ -131,7 +131,7 @@
                 <col />
                 <col />
                 <col style="width:30%;" />
-                <col />
+                <col style="width:5%;" />
                 <col />
                 <col />
                 <col />
