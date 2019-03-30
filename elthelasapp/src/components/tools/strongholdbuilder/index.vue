@@ -128,10 +128,10 @@
             <input type="checkbox" v-model="showAvailable" /> Only Show Available Improvements
             <table class="table table-striped table-responsive" style="width:100%;">
               <colgroup>
-                <col />
+                <col style="width:10%;" />
                 <col />
                 <col style="width:30%;" />
-                <col style="width:5%;" />
+                <col style="width:10%;" />
                 <col />
                 <col />
                 <col />
@@ -395,7 +395,7 @@
             Property Tax Rate (%)
             <br />
             <input type="number" class="form-control"
-                   min="0" max="stronghold.resources.food"
+                   min="0" :max="stronghold.resources.food"
                    style="max-width:75px; display:inline;" v-model="stronghold.laws.foodSubsidies"
                    step="1" title="Food subsidies are expensive, but reduce unrest." />
             Food Subsidies (person days of food)

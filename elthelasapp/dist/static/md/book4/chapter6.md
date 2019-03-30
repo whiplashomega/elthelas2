@@ -2,6 +2,26 @@
 
 Meeting the Dwarves
 
+## Missions
+
+#### Black Wolf Irregulars
+
+We hope to use this opportunity to place a spy in the halls of power of Curinor. Kyman Hexhammer, my spymaster has an old contact at the Black Sun headquarters in Highhammer, Ginmealine Bitterforge, who we would like to offer the job,. Find Ginmealine in Highhammer and get her on board.
+
+#### Inevitables
+
+The ex-dwarven commander, Bratal Flathide, has betrayed his oath to Curinor and taken to banditry in the hills near Westguard, capture him and deliver him to justice.
+
+-Kolyarut
+
+#### Union of Wizard's Colleges
+
+Our contacts in the area have spotted a Blue Dragon in the area, the body of a blue dragon contains a number of useful components for magical items and advanced ritual spells, find this dragon and return its scales, shock bladder, and a healthy sample of blood and brain here for study.
+
+#### Sylvan's Rangers
+
+The dwarves jealously guard the maps of the tunnel routes to their underground holds, these maps are a prize that the Rangers would pay dearly to obtain. Particularly there are rumors of deep delving tunnels filled with creatures never documented by anyone from the surface. Get me maps to those tunnels.
+
 ### The Town
 
 The players arrive at one of the few towns in the dwarven kingdom that hasn’t been fully evacuated. Mostly hill Dwarves and non-dwarves. A disorganized community made of those that refused to enter the depths. Asking around town, the townsfolk can easily point them in the direction of the dwarven hold entrance, but they all say its pointless as it is unmanned and impassible. If they players do bother to venture there it a massive magically enchanted metal door that prevents teleport or any entry. And indeed it is unmanned, no one responds to their call.

@@ -59,6 +59,7 @@ export default {
       for (let key in rev) {
         rev[key] += Number(this.stronghold.autoSell[key]);
       }
+      rev['food'] -= this.stronghold.laws.foodSubsidies;
       return rev;
     },
     reverseTransactions () {
@@ -453,8 +454,6 @@ export default {
       finished.forEach((a) => {
         this.stronghold.construction.splice(this.stronghold.construction.indexOf(a), 1);
       });
-      // expend food subsidies
-      this.stronghold.resources.food -= this.stronghold.laws.foodSubsidies;
       // reduce food subsidies if necessary
       if (this.stronghold.laws.foodSubsidies > this.stronghold.resources.food) {
         this.stronghold.laws.foodSubsidies = this.stronghold.resources.food;

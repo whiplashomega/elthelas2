@@ -4,7 +4,7 @@ export default {
   computed: mapGetters({
     title: 'title',
     loggedin: 'isLoggedIn',
-    userinfo: 'getUserInfo',
+    userinfo: 'getUserInfo'
   }),
   data () {
     return {

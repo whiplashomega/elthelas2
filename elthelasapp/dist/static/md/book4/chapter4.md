@@ -2,6 +2,22 @@
 
 Thanks to your efforts we finally have an army that stands a chance against the orcish forces in Northern Gerasalim. Our first goal with that army is to retake the city of Northport. To do that we want to force the orcish army to withdraw back to Strovenguard. I believe if we can force the orcish warlords in Strovenguard to start fighting amongst themselves the warlords in the main army will have to return to reestablish order. Go to Strovenguard, and find a way to force a conflict. Be careful, anyone in Strovenguard right now who isn't an orc is either a slave, or dead.
 
+#### Black Wolf Irregulars
+
+Queen Organa had a secret treasury hidden in her palace, enough platinum hidden away to make a difference in this war, and she has asked us to retreive it for her. It will likely be more than you can carry, but this gem once activated will teleport anything within 10 ft of it back here.
+
+#### Inevitables
+
+We have heard of a time traveler who has built a dungeon in the sewers of Strovenguard. Do not engage him for now, but explore this hidden lair and find out where he came from.
+
+#### Sylvan's Rangers
+
+Drorull Spine-Axe is known to be especially cruel to his slaves, even for an orc. Make sure he dies for his atrocities.
+
+#### Union of Wizards Colleges
+
+The lengendary gnome Transmuter Jim Jimmy Jim Jim is rumored to be in Strovenguard, find him and bring him back to Cur'Estan. Fair warning, he has been touched by otherworldly beings and may not be entirely sane, but his knowledge of the far realms must be preserved.
+
 ## Strovenguard
 
 <img src='https://elthelas-images.herokuapp.com/maps/cities/strovenguard.png' class="col-sm-12" />
@@ -70,7 +86,7 @@ If convinced to help, Jim will attempt to scry on what the players ask him to, b
 
 #### [Warlord Rol The Unsightly](/runner/roltheunsightly)
 
-Rol the Unsightly is the Warlord in charge of the old city of Strovenguard, and thus has possession of the Queen's castle. He is a known drunkard, and is irritable at the innability to get the local breweries up and running properly. He has been taking out his anger on his subordinates.
+Rol the Unsightly is the Warlord in charge of the old city of Strovenguard, and thus has possession of the Queen's castle. He is a known drunkard, and is irritable at the inability to get the local breweries up and running properly. He has been taking out his anger on his subordinates.
 
 Rol spends most of his time hiding out in his personal quarters in the Royal Palace, he is typically alone except when he wants to rail against one or more of his subordinates.
 

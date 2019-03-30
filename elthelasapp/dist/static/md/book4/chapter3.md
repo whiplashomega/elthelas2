@@ -238,6 +238,16 @@ The party will then be ambushed by an Efreeti, disguised as a passer-by, and it'
 
 While in Silver Head, Varius will catch sight of a familiar face, another kobold from his mine, who upon seeing him will flee. Magdos was one of the kobolds at the mine office in Westguard. He is the last survivor of the 12 kobolds who were stationed there. Each of them were tortured in turn by a blue dragonborn, demanding to know the location of the Queen and how to gain entrance to the mine. 5 died from torture before it was Magdos's turn, Magdos broke and gave Satura the information he wanted, after which Satura killed the other remaining staffers and left Magdos half-dead before leaving. Magdos is supremely regretful, but feels he cannot be forgiven and must get as far away from home as possible.
 
+## The Battle for Silver Head
+
+After the death/capture of the false Duke, Theodore Gloryheart arrives in the throne room, having been briefed on the situation by Shoppi via sending, he thought to personally destroy the usurper to create confusion and allow his men to retake the city. The fact that the usurper has already been dealt with gives him a great deal of confidence in the party, and he asks them to do one more thing to ensure the successful capture of Silver Head, capture the northern gatehouse. Meanwhile, General Gloryheart will work with the freed Duke to retake control of the palace and withdraw any human guards from the walls. The gatehouse is guarded by a chain devil and 2 bearded devils.
+
+[Battle for the Gatehouse](/runner/chaindevil&beardeddevil&beardeddevil)
+
+Meanwhile the Imperial Legion is already attempting an assault on the walls nearby, and when the gates open, they will begin to pour into the city, and the devils will retreat by plane shifting away whenever they are outnumbered.
+
+After the battle, General Gloryheart and the Duke of Silver Head will seek out the party. The Duke will give them as a reward a helm of Teleportation Circle and a pair of sending stones.
+
 ## Moving Forward
 
 Once the city of Silver Head has been flipped, three armies will converge on the city, a Dormanian Legion, the army of Gerasalim, and the Black Wolf Irregulars from Cur'Estan, led by Duke Lightbringer. James will congratulate the party on their success, and request that they return to Cur'Estan immediately for further orders.
@@ -252,9 +262,9 @@ General Heartbren will reward the players with ownership over a ruined fort east
 
 #### Personal Quest Rewards
 
-**Black Wolf Irregulars**: Helm of Teleportation Circle (castable 1/week) from the Duke of Silver Head, a pair of sending stones, and 8000 GP each.
+**Black Wolf Irregulars**: 8000 GP each, Oil of Etherealness, and a Bead of Force.
 
-**Union of Wizard's Colleges**: They each get their choice of an Elemental Gem and 8000 GP.
+**Union of Wizard's Colleges**: They each get their choice of an Elemental Gem and 8000 GP, if Kailee only returns half of her bounty she gets only half of the reward.
 
 **Sylvan's Rangers**: Dust of Disappearance and 8000 GP
 
@@ -271,5 +281,13 @@ Luna is a +2 Rapier.
 ***Fearless*** While attuned to and holding Luna you cannot be frightened.
 
 ***Light Burst*** As an action the wielder can raise Luna towards the sky and command Luna to shine even brighter for a brief time, dealing 3d6 radiant damage to creatures within 10 ft (except the wielder), suppressing any magical darkness within 60 ft, and shining bright light out to a distance of 120 ft. This effect ends at the end of your next turn, after which Luna cannot shed light of any kind until the next dawn.
+
+#### Introduction to the Stronghold
+
+The ruined keep, all that remains of the fort, oversees a bend in the West Yellow River atop a hill. The roof of the keep is missing, as is the front gate and the wooden floors. All that remains is a stone husk. A cluster of 5 tents, owned by refugees seeking a safe place to stay, sits inside. These refugees have survived by foraging off the land. The players can do with them as they like (let them stay on the land, evict them, employ them, etc). 
+
+One of them will offer to work for the players as a steward. He was once the steward of the Duke of Northport, but since his disappearance and the fall of Northport he has been without work and homeless. His name is James Butler.
+
+Lilith's paramour Usko will also offer to run a lumber camp for the party if they put up the seed money to build a couple of houses and buy tools for the camp.
 
 Players should level up to level 7 at the end of this chapter.
