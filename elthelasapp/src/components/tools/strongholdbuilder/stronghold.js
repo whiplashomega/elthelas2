@@ -48,7 +48,7 @@ export default {
         }
       });
     },
-    calcTotalRevenue: () => {
+    calcTotalRevenue () {
       let rev = this.stronghold.improvements.reduce((total, imp) => {
         let rev = this.calculateRevenue(imp);
         for (let key in total) {
