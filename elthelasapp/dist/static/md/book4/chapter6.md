@@ -1,6 +1,8 @@
 ## Chapter 6: Halls of the Underking
 
-Meeting the Dwarves
+#### General Orders
+
+The intelligence you provided gives me reason to believe that the orcs are preparing to assault the dwarven holds. Bring this information to the dwarven high council currently in High Hammer and convince them to rejoin this war before it is too late.
 
 ## Missions
 
