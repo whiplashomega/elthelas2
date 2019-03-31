@@ -13,7 +13,7 @@ var stronghold = new Schema({
   privateEnterprise: [],
   privateEmployees: [],
   staff: [],
-  autoSell: [],
+  autoSell: {},
   animals: [],
   laws: {},
   guards: Number,
