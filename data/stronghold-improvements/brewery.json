@@ -1,7 +1,7 @@
 {
   "id": "winery",
-  "name": "Winery",
-  "benefit": "Brews beer and spirits from grains",
+  "name": "Brewery / Distillery",
+  "benefit": "Brews beer or distills spirits from grain or fruit",
   "staff": [{ "name": "Master Brewer", "num": 1, "cur": 0 }],
   "goldCost": 1000,
   "resourceCost":  {

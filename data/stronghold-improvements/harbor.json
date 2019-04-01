@@ -1,7 +1,7 @@
 {
   "id": "harbor",
   "name": "Harbor",
-  "benefit": "provides a place for ships to dock, provides tax revenue from ships docking fees",
+  "benefit": "provides a place for ships to dock, provides tax revenue from ships docking fees, triples your export limit.",
   "staff": [{ "name": "Harbormaster", "num": 1, "cur": 0 }],
   "goldCost": 6000,
   "resourceCost":  {

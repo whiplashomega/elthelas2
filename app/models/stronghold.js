@@ -16,6 +16,7 @@ var stronghold = new Schema({
   autoSell: {},
   animals: [],
   laws: {},
+  merchants: [],
   guards: Number,
   servants: Number,
   laborers: Number,

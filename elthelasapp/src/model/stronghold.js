@@ -94,8 +94,10 @@ var Stronghold = function () {
       incomeTaxRate: 0,
       headTaxRate: 0,
       foodSubsidies: 0,
-      propertyTaxRate: 0
+      propertyTaxRate: 0,
+      todaysExports: 0
     },
+    merchants: [],
     guards: 0,
     servants: 0,
     laborers: 0,

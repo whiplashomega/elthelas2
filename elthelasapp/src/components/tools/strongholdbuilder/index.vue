@@ -352,6 +352,7 @@
                     <div class="btn-group">
                       <button class="btn btn-primary" @click="sellResource(key, resourceChange[key])">Sell</button>
                       <button class="btn btn-primary" @click="buyResource(key, resourceChange[key])">Buy</button>
+                      <button class="btn btn-primary" @click="addResource(key, resourceChange[key])">Add</button>
                     </div>
                   </td>
                 </tr>
@@ -373,9 +374,15 @@
             Employee Salaries: {{ totalSalary }}<br />
             Building Maintenance: {{ buildingMaintenance }}<br />
             Resource Purchases: {{ resourceCost }}
+            <h4>Exports/Imports</h4>
+            Today's Exports and Imports: {{ currentExportWeight }}<br />
+            Maximum Exports and Imports: {{ exportLimit }}
           </div>
           <div class="col-sm-3">
             <h4>Taxes</h4>
+            <p>
+              Collecting taxes requires a steward to be employed. Further, tax efficiency is determined by the rule of law in your demense, which is increased by hiring constables and guards. The higher the population, the more constables and guards you need. Constables require a constables office to do their job effectively, but are much more efficient at enforcing taxes and handling petty crime than guards.
+            </p>
             <input type="number" class="form-control"
                    min="0" max="0.5"
                    style="max-width:75px; display:inline;" v-model="stronghold.laws.headTaxRate"
@@ -393,15 +400,13 @@
                    style="max-width:75px; display:inline;" v-model="stronghold.laws.propertyTaxRate"
                    step="0.1" title="property taxes return a portion of the value of private property built on your land. The daily assessment cannot exceed 1% or property owners will simply sell out and leave." />
             Property Tax Rate (%)
-            <br />
+            <h4>Other Laws</h4>
             <input type="number" class="form-control"
                    min="0" :max="stronghold.resources.food"
                    style="max-width:75px; display:inline;" v-model="stronghold.laws.foodSubsidies"
                    step="1" title="Food subsidies are expensive, but reduce unrest." />
             Food Subsidies (person days of food)
-            <p>
-              Collecting taxes requires a steward to be employed. Further, tax efficiency is determined by the rule of law in your demense, which is increased by hiring constables and guards. The higher the population, the more constables and guards you need. Constables require a constables office to do their job effectively, but are much more efficient at enforcing taxes and handling petty crime than guards.
-            </p>
+            <br />
           </div>
         </div>
 
@@ -485,13 +490,32 @@
       </b-tab>
       <b-tab title="Private Enterprises">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-4">
+            <h4>Merchants</h4>
+            <button class="btn btn-success" @click="addMerchant()">Add</button>
+            <div v-for="merchant in stronghold.merchants" :key="merchant.id" class="row">
+              <label class="col-sm-7">
+                Name
+                <input type="text" class="form-control form-control-sm" v-model="merchant.name" />
+              </label>
+              <label class="col-sm-4">
+                Carry Weight
+                <input type="number" class="form-control form-control-sm"
+                       v-model="merchant.carryweight" min="0"
+                       title="amount that this merchant is able to carry out in kilograms in a day, a typical average merchant will have a value between 1000 and 2000" />
+              </label>
+              <div class="col-sm-1">
+                <button class="btn btn-sm btn-danger" style="margin-top:22px;" @click="deleteMerchant(merchant)">X</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
             <h4>{{ stronghold.townName }} Private Enterprises</h4>
             <div v-for="improvement in stronghold.privateEnterprise" :key="improvement.id">
               <h5>{{ improvement.name }} x {{ improvement.count }}</h5>
             </div>
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-4">
             <h4>Private Staff</h4>
             <p><strong>Laborers: {{ privateLaborers }}</strong></p>
             <p v-for="staff in stronghold.privateEmployees" :key="staff.id">{{ staff.name }}</p>

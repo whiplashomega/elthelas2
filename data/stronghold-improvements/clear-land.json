@@ -15,7 +15,7 @@
     "lumber": 0,
     "steel": 0,
     "stone": 0,
-    "timber": 0,
+    "timber": -40000,
     "wool": 0
   },
   "income": 0,

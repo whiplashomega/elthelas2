@@ -339,6 +339,61 @@ export default {
       return this.stronghold.animals.filter((a) => {
         return a.livesat === "ayrie";
       }).sort();
+    },
+    exportLimit () {
+      let road = this.stronghold.improvements.filter((a) => {
+        if (a.id === "road") {
+          return true;
+        }
+        return false;
+      })[0];
+      let harbor = this.stronghold.improvements.filter((a) => {
+        if (a.id === "harbor") {
+          return true;
+        }
+        return false;
+      })[0];
+      let base = this.stronghold.merchants.reduce((tot, mer) => {
+        return tot + Number(mer.carryweight);
+      }, 0);
+      let exportLimit = base;
+      if (road) {
+        exportLimit += base;
+      }
+      if (harbor) {
+        exportLimit += base * 2;
+      }
+      return exportLimit;
+    },
+    currentExportWeight () {
+      // first subtract local consumption, we let it go negative because our population will import food if they have to.
+      // general stores sell to the local populace, but don't directly import goods
+      let generalstores = this.stronghold.improvements.filter((a) => {
+        return a.id === 'general-store';
+      })[0];
+      let genstoresrev = { food: 0, alcohol: 0, cloth: 0, leather: 0, steel: 0 };
+      if (generalstores) {
+        genstoresrev = this.calculateRevenue(generalstores);
+      }
+      let food = Number(this.stronghold.autoSell.food) + Number(this.getPop) + genstoresrev.food;
+      let alcohol = Number(this.stronghold.autoSell.alcohol) + Number(this.getPop) / 6 + genstoresrev.alcohol;
+      let steel = Number(this.stronghold.autoSell.steel) + Number(this.getPop) / 20 + genstoresrev.steel;
+      let cloth = Number(this.stronghold.autoSell.cloth) + Number(this.getPop) / 20 + genstoresrev.cloth;
+      let leather = Number(this.stronghold.autoSell.leather) + Number(this.getPop) / 200 + genstoresrev.leather;
+      let timber = Number(this.stronghold.autoSell.timber) + Number(this.getPop) / 3;
+      let total = this.stronghold.laws.todaysExports + Math.abs(food);
+      total += Math.abs(steel);
+      total += Math.abs(Number(this.stronghold.autoSell.iron));
+      total += Math.abs(alcohol);
+      total += Math.abs(Number(this.stronghold.autoSell.coal));
+      total += Math.abs(Number(this.stronghold.autoSell.arcanum));
+      total += Math.abs(Number(this.stronghold.autoSell.wool));
+      total += Math.abs(leather * 20);
+      total += Math.abs(timber * 16);
+      total += Math.abs(Number(this.stronghold.autoSell.lumber) * 16);
+      total += Math.abs(cloth / 2);
+      total += Math.abs(Number(this.stronghold.autoSell.stone) * 1000);
+      return Math.round(total);
     }
   },
   data () {
@@ -386,6 +441,20 @@ export default {
         timber: 0,
         wool: 0
       },
+      unitWeightMod: {
+        alcohol: 1,
+        arcanum: 1,
+        cloth: 0.5,
+        coal: 1,
+        food: 1,
+        iron: 1,
+        leather: 20,
+        lumber: 16,
+        steel: 1,
+        stone: 1000,
+        timber: 16,
+        wool: 1
+      },
       record: "",
       staffSort: "name",
       showAvailable: true,
@@ -412,18 +481,43 @@ export default {
       deleteStronghold: 'deleteStronghold'
     }),
     buyResource (type, amount) {
+      let checkWeight = this.stronghold.laws.todaysExports + Number(amount) * this.unitWeightMod[type];
       this.stronghold.resources[type] += Number(amount);
+      this.stronghold.laws.todaysExports = checkWeight;
       this.addToTreasury(-1 * Number(amount) * this.buyTable[type], "Purchase " + amount + " " + type);
     },
     sellResource (type, amount) {
+      let checkWeight = this.stronghold.laws.todaysExports + Number(amount) * this.unitWeightMod[type];
       this.stronghold.resources[type] -= Number(amount);
-      this.addToTreasury(Number(amount) * this.sellTable[type], "Sell " + amount + " " + type);
+      this.stronghold.laws.todaysExports = checkWeight;
+      this.addToTreasury(Number(amount) * this.buyTable[type], "Sell " + amount + " " + type);
     },
     addStaff () {
       this.stronghold.staff.push({ id: Date.now(), ...this.newstaff, job: { ...this.newstaff.job } });
       this.newstaff = { name: "", job: { name: "", typicalSalary: 0, bonus: "" }, salary: 0 };
     },
     newDay () {
+      // reduce food subsidies if necessary
+      if (this.stronghold.laws.foodSubsidies > this.stronghold.resources.food) {
+        this.stronghold.laws.foodSubsidies = this.stronghold.resources.food;
+      }
+      // increment exports down
+      this.stronghold.laws.todaysExports -= this.exportLimit;
+      if (this.stronghold.laws.todaysExports < 0) {
+        this.stronghold.laws.todaysExports = 0;
+      }
+      // change autosell values
+      let remExportCap = this.exportLimit - this.stronghold.laws.todaysExports;
+      for (let key in this.stronghold.autoSell) {
+        let amount = Number(this.stronghold.autoSell[key]);
+        if (-amount > this.stronghold.resources[key]) {
+          this.stronghold.autoSell[key] = -this.stronghold.resources[key];
+        }
+        if (Math.abs(amount) * this.unitWeightMod[key] + remExportCap >= this.exportLimit && amount !== 0) {
+          let unitweight = remExportCap / (Math.abs(amount) * this.unitWeightMod[key]);
+          this.stronghold.autoSell[key] *= unitweight;
+        }
+      }
       // gold revenue
       this.addToTreasury(this.netRevenue, "daily net revenue");
       // resource revenue
@@ -454,17 +548,6 @@ export default {
       finished.forEach((a) => {
         this.stronghold.construction.splice(this.stronghold.construction.indexOf(a), 1);
       });
-      // reduce food subsidies if necessary
-      if (this.stronghold.laws.foodSubsidies > this.stronghold.resources.food) {
-        this.stronghold.laws.foodSubsidies = this.stronghold.resources.food;
-      }
-      // change autosell values
-      for (let key in this.stronghold.autoSell) {
-        let amount = Number(this.stronghold.autoSell[key]);
-        if (-amount > this.stronghold.resources[key]) {
-          this.stronghold.autoSell[key] = -this.stronghold.resources[key];
-        }
-      }
     },
     addAnimal () {
       this.stronghold.animals.push({ id: Date.now() + Math.random(), ...this.newanimal });
@@ -525,6 +608,9 @@ export default {
         }
       }
     },
+    addResource (res, amount) {
+      this.stronghold.resources[res] += Number(amount);
+    },
     fireStaff (staff) {
       this.stronghold.staff.splice(this.stronghold.staff.indexOf(staff), 1);
     },
@@ -535,6 +621,16 @@ export default {
       this.record = "";
       var x = Math.round(this.stronghold.treasury * 100);
       this.stronghold.treasury = x / 100;
+    },
+    addMerchant () {
+      this.stronghold.merchants.push({
+        id: Date.now() + Math.random(),
+        name: "",
+        carryweight: 0
+      });
+    },
+    deleteMerchant (merchant) {
+      this.stronghold.merchants.splice(this.stronghold.merchants.indexOf(merchant), 1);
     }
   },
   created () {
