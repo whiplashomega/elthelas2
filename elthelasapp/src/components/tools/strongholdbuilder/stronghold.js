@@ -490,7 +490,7 @@ export default {
       let checkWeight = this.stronghold.laws.todaysExports + Number(amount) * this.unitWeightMod[type];
       this.stronghold.resources[type] -= Number(amount);
       this.stronghold.laws.todaysExports = checkWeight;
-      this.addToTreasury(Number(amount) * this.buyTable[type], "Sell " + amount + " " + type);
+      this.addToTreasury(Number(amount) * this.sellTable[type], "Sell " + amount + " " + type);
     },
     addStaff () {
       this.stronghold.staff.push({ id: Date.now(), ...this.newstaff, job: { ...this.newstaff.job } });
