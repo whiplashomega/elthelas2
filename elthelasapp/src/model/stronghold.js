@@ -465,9 +465,12 @@ const actions = {
     });
   },
   deleteStronghold: ({ state, getters }, { stronghold }) => {
-    Vue.http.delete('/strongholds/' + stronghold._id + "?token=" + getters.getUserInfo.token).then(() => {
-      state.strongholds.splice(state.all.indexOf(stronghold));
-    });
+    let check = window.confirm("Are you sure you want to delete " + stronghold.castleName);
+    if (check) {
+      Vue.http.delete('/strongholds/' + stronghold._id + "?token=" + getters.getUserInfo.token).then(() => {
+        state.strongholds.splice(state.all.indexOf(stronghold));
+      });
+    }
   }
 };
 

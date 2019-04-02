@@ -507,15 +507,10 @@ export default {
         this.stronghold.laws.todaysExports = 0;
       }
       // change autosell values
-      let remExportCap = this.exportLimit - this.stronghold.laws.todaysExports;
       for (let key in this.stronghold.autoSell) {
         let amount = Number(this.stronghold.autoSell[key]);
         if (-amount > this.stronghold.resources[key]) {
           this.stronghold.autoSell[key] = -this.stronghold.resources[key];
-        }
-        if (Math.abs(amount) * this.unitWeightMod[key] + remExportCap >= this.exportLimit && amount !== 0) {
-          let unitweight = remExportCap / (Math.abs(amount) * this.unitWeightMod[key]);
-          this.stronghold.autoSell[key] *= unitweight;
         }
       }
       // gold revenue
