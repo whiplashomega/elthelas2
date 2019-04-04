@@ -57,7 +57,7 @@
       <h4>Load Stronghold</h4>
       <ul>
         <li v-for="stronghold in allStrongholds" :key="stronghold._id">
-          <a href="#" @click="loadStronghold(stronghold)">{{ stronghold.castleName }}</a>&nbsp;&nbsp;
+          <a href="#" @click="newmodal = false; loadStronghold(stronghold)">{{ stronghold.castleName }}</a>&nbsp;&nbsp;
           <button class="btn btn-danger" @click="deleteStronghold({ stronghold: stronghold })">X</button>
         </li>
       </ul>

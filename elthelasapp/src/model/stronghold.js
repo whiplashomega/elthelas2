@@ -458,11 +458,14 @@ const actions = {
     })[0] };
   },
   saveStronghold: ({ state, getters }) => {
-    Vue.http.post('/strongholds/' + state.current._id + "?token=" + getters.getUserInfo.token, { stronghold: state.current }).then((res) => {
-      state.strongholds.splice(state.all.indexOf(state.current), 1);
-      state.current = { ...res.body };
-      state.strongholds.push(res.body);
-    });
+    let check = window.confirm("Are you sure you want to save your changes to " + state.current.castleName + "?");
+    if (check) {
+      Vue.http.post('/strongholds/' + state.current._id + "?token=" + getters.getUserInfo.token, { stronghold: state.current }).then((res) => {
+        state.strongholds.splice(state.all.indexOf(state.current), 1);
+        state.current = { ...res.body };
+        state.strongholds.push(res.body);
+      });
+    }
   },
   deleteStronghold: ({ state, getters }, { stronghold }) => {
     let check = window.confirm("Are you sure you want to delete " + stronghold.castleName);

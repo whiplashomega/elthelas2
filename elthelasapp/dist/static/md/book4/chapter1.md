@@ -213,7 +213,7 @@ Daughter's Names: Auin & Adelhaid
 
 While traveling near the caravan's location the bandit's may attack the party. (50% chance before, if not, then after). The bandits, if interrogated, do know where the caravan is, but do not know where the scouts are.
 
-(Run this Encounter)[/runner/banditcaptain&bandit&bandit&bandit&bandit&bandit&bandit&bandit&bandit&bandit]
+[Run this Encounter](/runner/banditcaptain&bandit&bandit&bandit&bandit&bandit&bandit&bandit&bandit&bandit)
 <aside>
 
 <h4>Level Up</h4>

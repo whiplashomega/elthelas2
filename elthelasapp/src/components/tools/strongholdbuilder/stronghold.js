@@ -57,7 +57,7 @@ export default {
         return total;
       }, { alcohol: 0, arcanum: 0, cloth: 0, coal: 0, food: 0, iron: 0, leather: 0, lumber: 0, steel: 0, stone: 0, timber: 0, wool: 0 });
       for (let key in rev) {
-        rev[key] += Number(this.stronghold.autoSell[key]);
+        rev[key] = Math.round(rev[key] + Number(this.stronghold.autoSell[key]));
       }
       rev['food'] -= this.stronghold.laws.foodSubsidies;
       return rev;
@@ -406,11 +406,11 @@ export default {
         coal: 0.15,
         food: 0.15,
         iron: 0.45,
-        leather: 60,
-        lumber: 0.75,
+        leather: 80,
+        lumber: 5,
         steel: 0.75,
-        stone: 1.5,
-        timber: 0.15,
+        stone: 100,
+        timber: 1,
         wool: 1.5
       },
       sellTable: {
@@ -518,7 +518,7 @@ export default {
       // resource revenue
       let rev = this.calcTotalRevenue;
       for (let key in this.stronghold.resources) {
-        this.stronghold.resources[key] += Number(rev[key]);
+        this.stronghold.resources[key] = Math.round(this.stronghold.resources[key] + Number(rev[key])); 
       }
       // increment the date
       this.stronghold.gameDay += 1;
