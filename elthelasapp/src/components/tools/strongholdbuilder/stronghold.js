@@ -407,10 +407,10 @@ export default {
         food: 0.15,
         iron: 0.45,
         leather: 80,
-        lumber: 5,
+        lumber: 1,
         steel: 0.75,
-        stone: 100,
-        timber: 1,
+        stone: 25,
+        timber: 0.5,
         wool: 1.5
       },
       sellTable: {
