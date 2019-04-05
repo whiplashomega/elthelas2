@@ -407,7 +407,7 @@ export default {
         food: 0.15,
         iron: 0.45,
         leather: 60,
-        lumber: 1,
+        lumber: 1.5,
         steel: 0.75,
         stone: 25,
         timber: 0.5,
