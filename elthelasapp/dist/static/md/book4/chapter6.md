@@ -8,7 +8,7 @@ The intelligence you provided gives me reason to believe that the orcs are prepa
 
 #### Black Wolf Irregulars
 
-We hope to use this opportunity to place a spy in the halls of power of Curinor. Kyman Hexhammer, my spymaster has an old contact at the Black Sun headquarters in Highhammer, Ginmealine Bitterforge, who we would like to offer the job,. Find Ginmealine in Highhammer and get her on board.
+We hope to use this opportunity to place a spy in the halls of power of Curinor. Kyman Hexhammer, my spymaster has an old contact at the Black Sun headquarters in Highhammer, Ginmealine Bitterforge, who we would like to offer the job. Find Ginmealine in Highhammer and get her on board.
 
 #### Inevitables
 
@@ -23,6 +23,159 @@ Our contacts in the area have spotted a Blue Dragon in the area, the body of a b
 #### Sylvan's Rangers
 
 The dwarves jealously guard the maps of the tunnel routes to their underground holds, these maps are a prize that the Rangers would pay dearly to obtain. Particularly there are rumors of deep delving tunnels filled with creatures never documented by anyone from the surface. Get me maps to those tunnels.
+
+### Travel to Westguard
+
+Margo is looking to test her new airship design, based on the airships from her homeland of Stagenheim. She has designed it from scratch based on her own observations. She needs a crew to help her with her test flight, (the ship crews she asked took one look at the airship and refused) and offers the party a ride to wherever they need to go in return for manning the ship as crewmen for the journey.
+
+The ship requires party members to continually man various stations, including:
+
+Coal Shoveler - the forward momentum is produced by twin turbines that run off a coal steam engine, the coal shoveler is responsible for making sure pressure on the steam engine stays constant by watching the pressure gauge on the engine and regularly shovelling coal into the boiler.
+
+Regular check: DC 10 Strength check, DC 10 Constitution check. 
+
+Extreme Success: DC 20 Strength check, DC 15 Constitution check: speed increased by 1.
+
+Bad effect on failure: speed reduced by 1 mph, gain 1 level of exhaustion.
+
+Air Pressure Controller - The ship's altitude and direction are managed by enslaved air elementals kept in special chambers. The air elementals regularly try to escape by pushing against their containers. When they do the excess pressure must be immediately released using a special valve. There are dozens of these valves placed at difficult to access locations on a large lead wall.
+
+Regular check: DC 10 Acrobatics check. 
+
+Extreme success: DC 15 Acrobatics increases altitude by 1.
+
+Bad effect on failure: ship repair reduced by 1
+
+Engineer - The engineer is responsible for making sure the arcane engine that harnesses the power of the air elementals continues working. The engine consists of a large copper apparatus with hundreds of arcanum crystals aligned at particular angles. Whomever is manning the engine must make sure that the crystals stay in alignment as the moving ship constantly jostles them around.
+
+Regular check: DC 13 Arcana Check
+
+Extreme Success: DC 20 Arcana Check perfect alignment causes altitude to increase by 1
+
+Bad effect on failure: altitude reduced by 1, speed reduced by 1 for that period
+
+Spotter - Margo's pilot position has very poor visibility, she needs someone in the crows nest to call out directions
+
+Regular check: DC 12 Perception Check to spot threats, and DC 12 Survival to point out the correct direction to go
+
+Extreme Success: DC 20 Survival check to discover a faster route, increasing speed by 1
+
+Bad effect on failure: Failure of perception check causes extra roll on hazards table, failure on survival check causes speed reduced by 1
+
+Maintenance - Beyond specifically the arcane engine, the steam engine, and wooden hull need regular maintenance to keep up repair
+
+Regular check: DC 10 Intelligence check (advantage with tinkers tools and proficiency)
+
+Extreme Success: DC 20 Intelligence check increases ship repair by 1.
+
+Bad effect on failure: repair of ship reduced by 1
+
+Multiple people can man a single station. This is handled as a help action, giving advantage on the the check. Each of the 3 scales (altitude, speed, and repair) starts at a value of 5, can get as high as 8, and dropping to 0 causes the ship to crash.
+
+#### Speed Table
+
+<table class="table table-striped">
+  <thead>
+    <tr><th>Speed</th><th>Distance Travelled</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>5 miles travelled</td></tr>
+    <tr><td>2</td><td>10 miles travelled</td></tr>
+    <tr><td>3</td><td>15 miles travelled</td></tr>
+    <tr><td>4</td><td>20 miles travelled</td></tr>
+    <tr><td>5 (default speed)</td><td>25 miles travelled</td></tr>
+    <tr><td>6</td><td>30 miles travelled</td></tr>
+    <tr><td>7</td><td>35 miles travelled</td></tr>
+    <tr><td>8</td><td>40 miles travelled</td></tr>
+  </tbody>
+</table>
+
+#### Repair Table
+<table class="table table-striped">
+  <thead>
+    <tr><th>Repair</th><th>Check Modifier</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>+4 DC to all checks</td></tr>
+    <tr><td>2</td><td>+3 DC to all checks</td></tr>
+    <tr><td>3</td><td>+2 DC to all checks</td></tr>
+    <tr><td>4</td><td>+1 DC to all checks</td></tr>
+    <tr><td>5 (default speed)</td><td>checks as written</td></tr>
+    <tr><td>6</td><td>-1 DC to all checks</td></tr>
+    <tr><td>7</td><td>-2 DC to all checks</td></tr>
+    <tr><td>8</td><td>-3 DC to all checks</td></tr>
+  </tbody>
+</table>
+
+#### Altitude Table
+
+<table class="table table-striped">
+  <thead>
+    <tr><th>Altitude</th><th>Check Modifier</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>Max and default speed reduced by 2</td></tr>
+    <tr><td>2</td><td>Max and default speed reduced by 2</td></tr>
+    <tr><td>3</td><td>Max and default speed reduced by 1</td></tr>
+    <tr><td>4</td><td>Max and default speed reduced by 1</td></tr>
+    <tr><td>5 (default altitude)</td><td>as written</td></tr>
+    <tr><td>6</td><td>as written</td></tr>
+    <tr><td>7</td><td>default speed increased by 1</td></tr>
+    <tr><td>8</td><td>default speed increased by 1</td></tr>
+  </tbody>
+</table>
+
+#### Hazards Table
+Every round roll on the hazards table (twice if the spotter fails)
+
+<table class="table table-striped">
+  <thead>
+    <tr><th>Roll</th><th>Hazard</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>19-20</td><td>Nothing Happens</td></tr>
+    <tr><td>18</td><td>Hole in the blimp. Ship repair down by 1</td></tr>
+    <tr><td>17</td><td>Sleepy dragon falls asleep on the blimp. Requires special task to convince the dragon to leave, or ship loses 1 altitude each round. Dragon leaves on it’s own after 6 rounds.</td></tr>
+    <tr><td>16</td><td>Run into a Wizard’s tower. Negated by successful spotter check. ship takes 3 levels of repair damage immediately, and Wizard sends 3 air elementals to attack the ship that damaged his tower.</td></tr>
+    <tr><td>15</td><td>Storm clouds – Speed and repair go down by 1 each.</td></tr>
+    <tr><td>14</td><td>Escaped air elemental – Negated by successful engineer check. Special task of capture the air elemental. Max speed goes down by 1 if it escapes.</td></tr>
+    <tr><td>13</td><td>Harpy’s attack – Requires someone to do a special task of fight off harpy’s or ship repair goes down by 2 each round.</td></tr>
+    <tr><td>12</td><td>Coal oven breaks – Negated by successful maintenance check. Special task of repair the coal oven. Coal shoveling cannot be done while this isn’t done.</td></tr>
+    <tr><td>11</td><td>Air pressure control’s break – Negated by successful maintenance check. Special task of repair the air pressure controls. Air pressure control cannot be used while this isn’t done.</td></tr>
+    <tr><td>10</td><td>Opposing Air current – Speed decreases by 1 and DC of Coal Shoveling check increased by 5 this round.</td></tr>
+    <tr><td>9</td><td>Varied air pressure system – Air elementals are acting up more than usual, DC of Air Pressure Controller check increases by 5 for this round.</td></tr>
+    <tr><td>8</td><td>Strong positive current – The ship speed increases by 1 but DC of maintenance check goes up by 5.</td></tr>
+    <tr><td>7</td><td>Distracting landmark – DC of Spotters survival check increases by 5.</td></tr>
+    <tr><td>6</td><td>Arcane engine breaks down - Negated by successful engineer check. Altitude immediately drops by 2, and special task requiring DC 20 Arcana check to repair.</td></tr>
+    <tr><td>5</td><td>Hole in the hull - a flying piece of machinery breaks through the hull, special task to repair the hull with DC 15 intelligence check. Speed reduced by 1 due to increased drag until it is repaired.</td></tr>
+    <tr><td>4</td><td>Heavy Fog - DC of spotters perception check increases by 5.</td></tr>
+    <tr><td>3</td><td>Stowaway - A kid is discovered on board who stowed away in a barrel</td></tr>
+    <tr><td>2</td><td>Landing Parachute accidentally deploys - speed immediately reduced by 2. Special task to cut away the parachute or speed will be reduced by 2 each round.</td></tr>
+    <tr><td>1</td><td>Catastrophe! Roll on the catastrophe table.</td></tr>
+  </tbody>
+</table>
+
+#### Catastrophe Table
+
+<table class="table table-striped">
+  <thead>
+    <tr><th>Roll (d8)</th><th>What Happens</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>Malfunction of the arcane engine causes the ship to teleport to the astral plane. Margo can get the ship out, but doing so sets the ships speed and altitude to 1d4, and the transition causes damage to the hull as arcane energy surges through it, reducing repair by 1</td></tr>
+    <tr><td>2</td><td>Orc scouting squad sees the ship and shoots it with a catapult, causing extreme damage to the ship, ship loses 2 levels of repair before making it out of range</td></tr>
+    <tr><td>3</td><td>Accidentally hit a magical air current that causes the ship to spin. Speed and altitude are both reduced by 2.</td></tr>
+    <tr><td>4</td><td>Ghost Pirates - A flying ghost pirate ship starts chasing them, can confront or find another way to get the pirates to leave them alone.</td></tr>
+    <tr><td>5</td><td>Roc Attack - A roc attacks the ship!</td></tr>
+    <tr><td>6</td><td>Arcane engine explodes - The arcane engine suffers a thaumic surge, rendering the copper apparatus a heap of bent pieces, and sending arcanum crystals everywhere. Altitude drops by 2 each round it isn't fixed. DC 25 Arcana check to fix.</td></tr>
+    <tr><td>7</td><td>Angry Cloud Giant - A territorial cloud giant sees the party flying by from its cloud and throws a boulder at the ship, causing massive damage, ship repair reduced by 2 and there is a hole in the hull.</td></tr>
+    <tr><td>8</td><td>Air Sick Player - One of the players suffers from air sickness, DC 15 medicine check to help them recover, and they must rest until they do.</td></tr>
+  </tbody>
+</table>
+
+#### Westguard
+
+Westguard is not particularly large or important as a town. The town is not immediately under attack or under threat when the players arrive, but like other towns near the war front, it is chock full of refugees. It has managed to stay supplied by trading with the dwarves, but the tunnels went suddenly quiet a week before the players arrival. Human caravans that go in are turned away, and no dwarven caravans have come out.
 
 ### The Town
 
