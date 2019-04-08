@@ -212,7 +212,7 @@ export default {
       return Number(state.currentCharacter.attBonus[i]) + getters.getStatMod(i) + getters.profbonus;
     },
     getSkillMod: (state, getters) => (skill) => {
-      return getters.getStatMod(skill.stat) + Math.floor(Number(skill.prof) * getters.profbonus);
+      return getters.getStatMod(skill.stat) + Math.floor(Number(skill.prof) * getters.profbonus) + Number(skill.magic);
     },
     getInitMod: (state, getters) => {
       return getters.getStatMod(1) + Number(state.currentCharacter.initmagic);
