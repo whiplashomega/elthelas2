@@ -173,6 +173,7 @@ const getters = {
       } else if (a.type === 'town') {
         return tot + 0.02;
       }
+      return tot;
     }, 0);
     land += otherurbanland;
     if (districts) land += (districts.count * 1.25);
