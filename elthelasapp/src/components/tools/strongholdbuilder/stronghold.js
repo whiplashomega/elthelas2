@@ -57,7 +57,7 @@ export default {
         return total;
       }, { alcohol: 0, arcanum: 0, cloth: 0, coal: 0, food: 0, iron: 0, leather: 0, lumber: 0, steel: 0, stone: 0, timber: 0, wool: 0 });
       for (let key in rev) {
-        rev[key] = Math.round(rev[key] + Number(this.stronghold.autoSell[key]) * 100) / 100;
+        rev[key] = Math.round((rev[key] + Number(this.stronghold.autoSell[key])) * 100) / 100;
       }
       rev['food'] -= this.stronghold.laws.foodSubsidies;
       return rev;
