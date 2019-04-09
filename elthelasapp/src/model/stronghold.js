@@ -165,6 +165,16 @@ const getters = {
     let districts = state.current.improvements.filter((a) => {
       return a.id === "additional-district";
     })[0];
+    let otherurbanland = state.current.improvements.reduce((tot, a) => {
+      if (a.id === 'house' || a.id === 'staff-house') {
+        return tot + 0.01;
+      } else if (a.id === 'manor-house') {
+        return tot + 0.05;
+      } else if (a.type === 'town') {
+        return tot + 0.02;
+      }
+    }, 0);
+    land += otherurbanland;
     if (districts) land += (districts.count * 1.25);
     return land;
   },
