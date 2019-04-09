@@ -8,7 +8,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/theworld.md"
   },
   {
-    "revision": "f1df2c45f524af9afb78ace9255d15f3",
+    "revision": "8e2635491c8022c0cb4c1b2da4923831",
     "url": "/json/improvements.json"
   },
   {
