@@ -518,7 +518,7 @@ export default {
       // resource revenue
       let rev = this.calcTotalRevenue;
       for (let key in this.stronghold.resources) {
-        this.stronghold.resources[key] = Math.round(this.stronghold.resources[key] + Number(rev[key]) * 100) / 100; 
+        this.stronghold.resources[key] = Math.round((this.stronghold.resources[key] + Number(rev[key])) * 100) / 100; 
       }
       // increment the date
       this.stronghold.gameDay += 1;
