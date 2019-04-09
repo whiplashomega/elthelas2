@@ -312,7 +312,7 @@
       </p>
       <h3>Proficiencies</h3>
       <p>
-        <strong>Armor: </strong>Light armor, shields<br />
+        <strong>Armor: </strong>Light armor, medium armor, shields<br />
         <strong>Weapons: </strong>Simple and martial weapons<br />
         <strong>Tools: </strong>Thieves' Tools<br />
         <strong>Saving Throws: </strong> Dexterity, Intelligence<br />
