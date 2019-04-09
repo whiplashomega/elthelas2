@@ -34,7 +34,7 @@
     "wool": 40
   },
   "laborers": 0,
-  "storage": 0,
+  "storage": 1000,
   "pop": 17,
   "staffpop": 1,
   "employs": 10,

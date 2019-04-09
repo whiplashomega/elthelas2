@@ -1,7 +1,7 @@
 {
   "id": "town",
   "name": "Town",
-  "benefit": "build out from a village to a larger town, with housing for up to 1000 people",
+  "benefit": "build out from a village to a larger town, with housing for up to 1000 people and paved roads to facilitate commerce within the town",
   "staff": [{ "name": "Steward", "num": 0, "cur": 0 }],
   "goldCost": 15000,
   "resourceCost":  {
@@ -13,8 +13,8 @@
     "iron": 0,
     "leather": 0,
     "lumber": 25000,
-    "steel": 200,
-    "stone": 1000,
+    "steel": 1250,
+    "stone": 500,
     "timber": 0,
     "wool": 0
   },
@@ -34,11 +34,12 @@
     "wool": 0
   },
   "laborers": 0,
+  "storage": 3125,
   "pop": 1000,
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 60,
+  "buildtime": 40,
   "prerequisites": [ "village" ],
   "hide": true,
   "count": 0,

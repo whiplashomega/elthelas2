@@ -76,6 +76,7 @@ var Stronghold = function () {
         "staffpop": 0,
         "laborers": 0,
         "employs": 0,
+        "storage": 0,
         "operating": true,
         "buildtime": 0,
         "prerequisites": [ ],
@@ -167,17 +168,33 @@ const getters = {
     })[0];
     let otherurbanland = state.current.improvements.reduce((tot, a) => {
       if (a.id === 'house' || a.id === 'staff-house') {
-        return tot + 0.01;
+        return tot + 0.01 * a.count;
       } else if (a.id === 'manor-house') {
-        return tot + 0.05;
+        return tot + 0.05 * a.count;
       } else if (a.type === 'town') {
-        return tot + 0.02;
+        return tot + 0.02 * a.count;
       }
       return tot;
     }, 0);
     land += otherurbanland;
     if (districts) land += (districts.count * 1.25);
-    return land;
+    return Math.round(land * 100) / 100;
+  },
+  totalStorage: (state) => {
+    return state.current.improvements.reduce((tot, imp) => {
+      return tot + imp.storage * imp.count;
+    }, 0);
+  },
+  usedStorage: (state) => {
+    return state.current.resources.alcohol +
+           state.current.resources.arcanum +
+           state.current.resources.cloth +
+           state.current.resources.coal +
+           state.current.resources.food +
+           state.current.resources.iron +
+           state.current.resources.leather +
+           state.current.resources.steel +
+           state.current.resources.wool;
   },
   farmLand: (state) => {
     let land = 0;

@@ -376,7 +376,9 @@
             Resource Purchases: {{ resourceCost }}
             <h4>Exports/Imports</h4>
             Today's Exports and Imports: {{ currentExportWeight }}<br />
-            Maximum Exports and Imports: {{ exportLimit }}
+            Maximum Exports and Imports: {{ exportLimit }}<br />
+            Current Stored Goods: {{ usedStorage }}<br />
+            Total Storage Space: {{ totalStorage }}
           </div>
           <div class="col-sm-3">
             <h4>Taxes</h4>

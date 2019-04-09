@@ -36,7 +36,7 @@
   "pop": 1000,
   "staffpop": 0,
   "laborers": 0,
-  "storage": 0,
+  "storage": 3125,
   "employs": 0,
   "operating": true,
   "buildtime": 50,
