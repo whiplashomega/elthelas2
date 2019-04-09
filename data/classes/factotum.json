@@ -25,7 +25,7 @@
     {
       "level": 2,
       "name": "Spellcasting",
-      "description": "Starting at 2nd level, you start to pick up the intricacies of casting spells. As a student of magic, you have a spellbook containing spells that you have picked up in your travels.\n\n#### Cantrips\n\nAt 2nd level, you know four cantrips of your choice from any spell list. You learn additional cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Factotum table.\n\n#### Spellbook\n\nAt 2nd level you have a spellbook containing six 1st-level spells of your choice.\n\n#### Preparing and Casting Spells\n\nThe Factotum table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher as well as one epiphany point. You regain all expended spell slots when you finish a long rest.\n\nYou prepare the list of spells that are available for you to cast. To do so choose a number of spells from your spellbook equal to your intelligence modifier + one half of your factotum level (rounded down, minimum of 1 spell). The spells must be of a level for which you have spell slots.\n\nFor example, if you're a 5th-level factotum, you have four 1st-level and two 2nd-level spell slots. With an intelligence of 16, your list of prepared spells can include five spells of 1st or 2nd level, in any combination, chosen from your spellbook. If you prepare the 1st-level spell magic missile, you can cast it using a 1st-level or a 2nd-level slot. Casting a spell doesn't remove it from your list of prepared spells.\n\nYou can change your list of prepared spells when you finish a long rest. Preparing a new list of spells requires time spent studying your spellbook and memorizing incantations and gestures you must make to cast a spell: at least 1 minute per spell level for each spell on your list.\n\n#### Spellcasting Ability\nIntelligence is your spellcasting ability for your spells, since you learn your spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a spell you cast and when making an attack roll with one. Spell save DC = 8 + your proficiency bonus + your Intelligence modifier Spell attack modifier = your proficiency bonus + your intelligence modifier.\n\n#### Ritual Casting\n\nYou can cast a spell as a ritual if that spell has the ritual tag and you have the spell in your spellbook. You don't need to have the spell prepared.\n\n#### Spellcasting Focus\n\nYou can use an arcane focus or a divine focus (found in chapter 5) as a spellcasting focus for your spells.\n\n#### Learning Spells of 1st Level and Higher\n\nEach time you gain a Factotum level after 2nd, you can add one spell of your choice to your spellbook. Each of these spells must be of a level for which you have spell slots, as shown on the Factotum table. On your adventures, you might find other spells that you can add to your spellbook (see the “Your Spellbook” sidebar)."
+      "description": "Starting at 2nd level, you start to pick up the intricacies of casting spells. As a student of magic, you have a spellbook containing spells that you have picked up in your travels.\n\n#### Cantrips\n\nAt 2nd level, you know four cantrips of your choice from any spell list. You learn additional cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Factotum table.\n\n#### Spellbook\n\nAt 2nd level you have a spellbook containing six 1st-level spells of your choice.\n\n#### Preparing and Casting Spells\n\nThe Factotum table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.\n\nYou prepare the list of spells that are available for you to cast. To do so choose a number of spells from your spellbook equal to your intelligence modifier + one half of your factotum level (rounded down, minimum of 1 spell). The spells must be of a level for which you have spell slots.\n\nFor example, if you're a 5th-level factotum, you have four 1st-level and two 2nd-level spell slots. With an intelligence of 16, your list of prepared spells can include five spells of 1st or 2nd level, in any combination, chosen from your spellbook. If you prepare the 1st-level spell magic missile, you can cast it using a 1st-level or a 2nd-level slot. Casting a spell doesn't remove it from your list of prepared spells.\n\nYou can change your list of prepared spells when you finish a long rest. Preparing a new list of spells requires time spent studying your spellbook and memorizing incantations and gestures you must make to cast a spell: at least 1 minute per spell level for each spell on your list.\n\n#### Spellcasting Ability\nIntelligence is your spellcasting ability for your spells, since you learn your spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a spell you cast and when making an attack roll with one. Spell save DC = 8 + your proficiency bonus + your Intelligence modifier Spell attack modifier = your proficiency bonus + your intelligence modifier.\n\n#### Ritual Casting\n\nYou can cast a spell as a ritual if that spell has the ritual tag and you have the spell in your spellbook. You don't need to have the spell prepared.\n\n#### Spellcasting Focus\n\nYou can use an arcane focus or a divine focus (found in chapter 5) as a spellcasting focus for your spells.\n\n#### Learning Spells of 1st Level and Higher\n\nEach time you gain a Factotum level after 2nd, you can add one spell of your choice to your spellbook. Each of these spells must be of a level for which you have spell slots, as shown on the Factotum table. On your adventures, you might find other spells that you can add to your spellbook (see the “Your Spellbook” sidebar)."
     },
     {
       "level": 2,
@@ -65,7 +65,7 @@
     {
       "level": 20,
       "name": "Inspired Recovery",
-      "description": "At 20th level you no longer require a short rest to regain your epiphany points, but can do so by spending 10 minutes reading and studying your books and materials."
+      "description": "At 20th level if you have less than half of your epiphany points when you roll initiative you regain enough epiphany points to put your maximum."
     }
   ],
   "subclass": [
@@ -111,8 +111,8 @@
         },
         {
           "level": 7,
-          "name": "Keen Observer",
-          "description": "Starting at 7th level you have become a proficient enough spell caster that you can make a spell work with only minimal study. Starting when they gain this feature, the Factotum can add any spell they successfully observe being cast to their spellbook. In order to successfully add it to their spellbook the following conditions must be met:\n\n* The spell must be of a level the Factotum can cast.\n* The Factotum must be able to see (if it has somatic/material components) and hear (if it has a verbal component) the spell being cast.\n* They then must succeed on an intelligence (arcana) check with a DC equal to 15 + the spells level at the time the spell is cast. If they fail this check they can try again only if they observe the spell being cast again."
+          "name": "Spell Studies",
+          "description": "At 7th level the Arcane Dilettante can immediately add 6 spells to their spellbook of any level they can cast. Additionally, every factotum level after this one they can add 1 additional spell to their spellbook of any level they can cast."
         },
         {
           "level": 10,
@@ -122,7 +122,7 @@
         {
           "level": 15,
           "name": "Sage",
-          "description": "Starting at 15th level you can cast spells without spending epiphany points on them."
+          "description": "Starting at 15th level the factotum uses her level, rather than half her level to determine the maximum number of spells she can prepare."
         }
       ]
     },
@@ -138,7 +138,7 @@
         {
           "level": 7,
           "name": "Improved Inspired Skills",
-          "description": "Starting at 7th level, when the Skill Monkey uses the inspire skill ability they add their proficiency bonus as well as their intelligence modifier to the check, even if they are already proficient in that skill."
+          "description": "Starting at 7th level, when the Skill Monkey uses the inspire skill ability they add their proficiency bonus as well as their intelligence modifier to the check, even if they are already proficient in that skill.\n\nFuture Version: Starting at 7th level, when the Skill Monkey uses the inspire skill ability they gain advantage on that ability check."
         },
         {
           "level": 10,

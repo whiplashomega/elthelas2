@@ -453,7 +453,7 @@
       </p>
       <h4>Spell Studies</h4>
       <p>
-        At 7th level the Arcane Dilettante can immediately add 6 spells to their spellbook of any level they can cast. Additionally, every factotum level after this one they can add 1 additional spell to their spellbook of any level they can cast, and they use their level, rather than half their level to determine the maximum number of spells they can prepare.
+        At 7th level the Arcane Dilettante can immediately add 6 spells to their spellbook of any level they can cast. Additionally, every factotum level after this one they can add 1 additional spell to their spellbook of any level they can cast.
       </p>
       <h4>Quick Study</h4>
       <p>
@@ -461,7 +461,7 @@
       </p>
       <h4>Sage</h4>
       <p>
-        Starting at 15th level you can cast spells without spending epiphany points on them.
+        Starting at 15th level the factotum uses her level, rather than half her level to determine the maximum number of spells she can prepare.
       </p>
       <h3>The Skill Monkey</h3>
       <p> The Skill Monkey has made it their mission to master every skill, taking the Factotum's philosophy of being prepared for anything to its ultimate extreme.</p>
