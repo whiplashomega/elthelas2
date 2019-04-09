@@ -2,7 +2,7 @@
   "id": "winery",
   "name": "Winery",
   "benefit": "Grows wine grapes and ferments them into wine",
-  "staff": [{ "name": "Head Farmer", "num": 1, "cur": 0 }],
+  "staff": [{ "name": "Head Farmer", "num": 1, "cur": 0 }, { "name": "Master Brewer", "num": 1, "cur": 0 }],
   "goldCost": 1500,
   "resourceCost":  {
     "alcohol": 0,
@@ -20,7 +20,7 @@
   },
   "income": 0,
   "revenue": {
-    "alcohol": 750,
+    "alcohol": 500,
     "arcanum": 0,
     "cloth": 0,
     "coal": 0,

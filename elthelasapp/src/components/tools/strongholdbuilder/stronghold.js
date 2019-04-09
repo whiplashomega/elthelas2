@@ -451,7 +451,7 @@ export default {
         leather: 20,
         lumber: 16,
         steel: 1,
-        stone: 1000,
+        stone: 250,
         timber: 16,
         wool: 1
       },

@@ -8,7 +8,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/theworld.md"
   },
   {
-    "revision": "8e2635491c8022c0cb4c1b2da4923831",
+    "revision": "ccdf4d31df3814ce8fcbd07d1db69911",
     "url": "/json/improvements.json"
   },
   {
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "700c32667272e602c9f839b2ad667092",
+    "revision": "78194cec9c16b1a29cbac82eda618a53",
     "url": "/index.html"
   },
   {
@@ -148,8 +148,8 @@ self.__precacheManifest = [
     "url": "/json/gods.json"
   },
   {
-    "revision": "fc7d7349a039f6f8530b",
-    "url": "/js/app.d54c96aa.js"
+    "revision": "ae5593fc3c583a10d997",
+    "url": "/js/app.c7935d2b.js"
   },
   {
     "revision": "e7465d45a125471414ba",
@@ -288,7 +288,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/pcs.md"
   },
   {
-    "revision": "fc7d7349a039f6f8530b",
+    "revision": "ae5593fc3c583a10d997",
     "url": "/css/app.cb63fa56.css"
   },
   {

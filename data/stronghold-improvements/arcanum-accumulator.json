@@ -2,7 +2,7 @@
   "id": "arcanum-accumulator",
   "name": "Arcanum Accumulator",
   "benefit": "Using a 'seed' of Arcanum buried in a special chamber, this accumulator will slowly extract Arcanum from the depths of the planet.",
-  "staff": [{ "name": "Wizard", "num": 0, "cur": 0 }],
+  "staff": [{ "name": "Wizard", "num": 1, "cur": 0 }],
   "goldCost": 3000,
   "resourceCost": {
     "alcohol": 0,
@@ -21,7 +21,7 @@
   "income": 0,
   "revenue": {
     "alcohol": 0,
-    "arcanum": 1,
+    "arcanum": 2,
     "cloth": 0,
     "coal": 0,
     "food": 0,
@@ -43,6 +43,6 @@
   "prerequisites": [ "wizard-tower" ],
   "hide": true,
   "count": 0,
-  "max": 1,
+  "max": 2,
   "type": "castle"
 }
