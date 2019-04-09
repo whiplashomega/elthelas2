@@ -351,7 +351,7 @@
       </p>
       <h4>Preparing and Casting Spells</h4>
       <p>
-        The Factotum table shows how many spell slots you have to cast your spells of 1st level and higher.  To cast one of these spells, you must expend a slot of the spell's level or higher as well as one epiphany point.  You regain all expended spell slots when you finish a long rest.
+        The Factotum table shows how many spell slots you have to cast your spells of 1st level and higher.  To cast one of these spells, you must expend a slot of the spell's level or higher.  You regain all expended spell slots when you finish a long rest.
       </p>
       <p>
         You prepare the list of spells that are available for you to cast.  To do so choose a number of spells from your spellbook equal to your intelligence modifier + one half of your factotum level (rounded down, minimum of 1 spell).  The spells must be of a level for which you have spell slots.
@@ -408,7 +408,7 @@
       </p>
       <h4>Inspired Recovery</h4>
       <p>
-        At 20th level you no longer require a short rest to regain your epiphany points, but can do so by spending 10 minutes reading and studying your books and materials.
+        At 20th level if you have less than half of your epiphany points when you roll initiative you regain enough epiphany points to put your maximum.
       </p>
       <h3>Factotum Philosophies</h3>
       <h3>Brains Over Brawn</h3>
@@ -451,18 +451,9 @@
       <p>
         At 3rd level the arcane dilettante gains proficiency in the arcana skill.  If they were already proficient in the arcana skill they gain expertise in the arcana skill (can add their proficiency bonus twice).
       </p>
-      <h4>Keen Observer</h4>
+      <h4>Spell Studies</h4>
       <p>
-        Starting at 7th level you have become a proficient enough spell caster that you can make a spell work with only minimal study. Starting when they gain this feature, the Factotum can add any spell of 1st level or higher they successfully observe being cast to their spellbook.  In order to successfully add it to their spellbook the following conditions must be met:
-        <ul>
-          <li>The spell must be of a level the Factotum can cast.</li>
-          <li>
-            The Factotum must be able to see (if it has somatic/material components) and hear (if it has a verbal component) the spell being cast. If the spell is cast without any components, such as a Sorcerer using the subtle spell feat, the Factotum cannot use this feature.
-          </li>
-          <li>
-            At the time they observe the spell being cast the Factotum must succeed on an intelligence (arcana) check with a DC equal to 15 + the spells level at the time the spell is cast. If they fail this check they can try again only if they observe the spell being cast again.
-          </li>
-        </ul>
+        At 7th level the Arcane Dilettante can immediately add 6 spells to their spellbook of any level they can cast. Additionally, every factotum level after this one they can add 1 additional spell to their spellbook of any level they can cast, and they use their level, rather than half their level to determine the maximum number of spells they can prepare.
       </p>
       <h4>Quick Study</h4>
       <p>
@@ -481,6 +472,9 @@
       <h4>Improved Inspired Skills</h4>
       <p>
         Starting at 7th level, when the Skill Monkey uses the inspire skill ability they add their proficiency bonus as well as their intelligence modifier to the check, even if they are already proficient in that skill.
+      </p>
+      <p>
+        Future Version: Starting at 7th level, when the Skill Monkey uses the inspire skill ability they gain advantage on that ability check.
       </p>
       <h4>Expertise</h4>
       <p>
