@@ -40,7 +40,7 @@
   "employs": 5,
   "operating": true,
   "buildtime": 20,
-  "prerequisites": [ "town" ],
+  "prerequisites": [ ],
   "hide": true,
   "count": 0,
   "max": 10,
