@@ -7,6 +7,75 @@ function dec(num) {
 export default {
   getStatRolls: (state) => state.statRolls,
   getSlots: (state) => state.slots,
+  incrementClassCount: () => (spell, classCounts) => {
+    classCounts.forEach((cc) => {
+      if (spell.class === cc.classname && spell.prepared) {
+        cc.numprepped++;
+      }    
+    });
+  },
+  getNumPrepped: (state, getters) => (classCounts, spells) => {
+    spells.level1.forEach((spell) => {
+      getters.incrementClassCount(spell, classCounts);
+    });
+    spells.level2.forEach((spell) => {
+      getters.incrementClassCount(spell, classCounts);
+    });
+    spells.level3.forEach((spell) => {
+      getters.incrementClassCount(spell, classCounts);
+    });
+    spells.level4.forEach((spell) => {
+      getters.incrementClassCount(spell, classCounts);
+    });
+    spells.level5.forEach((spell) => {
+      getters.incrementClassCount(spell, classCounts);
+    });
+    spells.level6.forEach((spell) => {
+      getters.incrementClassCount(spell, classCounts);
+    });
+    spells.level7.forEach((spell) => {
+      getters.incrementClassCount(spell, classCounts);
+    });
+    spells.level8.forEach((spell) => {
+      getters.incrementClassCount(spell, classCounts);
+    });
+    spells.level9.forEach((spell) => {
+      getters.incrementClassCount(spell, classCounts);
+    });    
+  },
+  getBardPrepared: (state, getters) => (a) => {
+    let num = Math.min(a.level, 9) + 3;
+    num += Math.floor(Math.max(0, Math.min(a.level, 17) - 9) / 2);
+    if (a.level > 9) {
+      num += 2;
+    }
+    if (a.level > 13) {
+      num += 2;
+    }
+    if (a.level > 17) {
+      num += 2;
+    }
+    if (a.level > 5 && a.selsubclass.name === "College of Lore") {
+      num += 2;
+    }
+    
+  },
+  getThirdCasterPrepared: () => (a) => {
+    let num = Math.floor((a.level - 1) / 3) + 3;
+    if (a.level >= 8) {
+      num++;
+    }
+    if (a.level >= 11) {
+      num++;
+    }
+    if (a.level >= 14) {
+      num++;
+    }
+    if (a.level >= 20) {
+      num++;
+    }
+    return num;
+  },
   getTotalPrepared: (state, getters) => {
     let spells = state.currentCharacter.spells;
     let classCounts = [];
@@ -24,20 +93,7 @@ export default {
         num += Math.floor(Math.max(0, a.level - 9) / 2);
       }
       if (a.thisclass.name === "Bard") {
-        num = Math.min(a.level, 9) + 3;
-        num += Math.floor(Math.max(0, Math.min(a.level, 17) - 9) / 2);
-        if (a.level > 9) {
-          num += 2;
-        }
-        if (a.level > 13) {
-          num += 2;
-        }
-        if (a.level > 17) {
-          num += 2;
-        }
-        if (a.level > 5 && a.selsubclass.name === "College of Lore") {
-          num += 2;
-        }
+        num = getters.getBardPrepared(a);
       }
       if (a.thisclass.name === "Cleric" || (a.thisclass.name === "Druid" && a.selsubclass.name === "Circle of the Land")) {
         num += 2 + Math.floor(Math.min(a.level - 1, 8) / 2) * 2;
@@ -53,19 +109,7 @@ export default {
       }
       if ((a.thisclass.name === "Fighter" && a.selsubclass.name === "Eldritch Knight") ||
           (a.thisclass.name === "Rogue" && a.selsubclass.name === "Arcane Trickster")) {
-        num = Math.floor((a.level - 1) / 3) + 3;
-        if (a.level >= 8) {
-          num++;
-        }
-        if (a.level >= 11) {
-          num++;
-        }
-        if (a.level >= 14) {
-          num++;
-        }
-        if (a.level >= 20) {
-          num++;
-        }
+        getters.getThirdCasterPrepared(a);
       }
       classCounts.push({
         classname: a.thisclass.name,
@@ -73,69 +117,7 @@ export default {
         numprepped: 0
       });
     });
-    spells.level1.forEach((spell) => {
-      classCounts.forEach((cc) => {
-        if (spell.class === cc.classname && spell.prepared) {
-          cc.numprepped++;
-        }
-      });
-    });
-    spells.level2.forEach((spell) => {
-      classCounts.forEach((cc) => {
-        if (spell.class === cc.classname && spell.prepared) {
-          cc.numprepped++;
-        }
-      });
-    });
-    spells.level3.forEach((spell) => {
-      classCounts.forEach((cc) => {
-        if (spell.class === cc.classname && spell.prepared) {
-          cc.numprepped++;
-        }
-      });
-    });
-    spells.level4.forEach((spell) => {
-      classCounts.forEach((cc) => {
-        if (spell.class === cc.classname && spell.prepared) {
-          cc.numprepped++;
-        }
-      });
-    });
-    spells.level5.forEach((spell) => {
-      classCounts.forEach((cc) => {
-        if (spell.class === cc.classname && spell.prepared) {
-          cc.numprepped++;
-        }
-      });
-    });
-    spells.level6.forEach((spell) => {
-      classCounts.forEach((cc) => {
-        if (spell.class === cc.classname && spell.prepared) {
-          cc.numprepped++;
-        }
-      });
-    });
-    spells.level7.forEach((spell) => {
-      classCounts.forEach((cc) => {
-        if (spell.class === cc.classname && spell.prepared) {
-          cc.numprepped++;
-        }
-      });
-    });
-    spells.level8.forEach((spell) => {
-      classCounts.forEach((cc) => {
-        if (spell.class === cc.classname && spell.prepared) {
-          cc.numprepped++;
-        }
-      });
-    });
-    spells.level9.forEach((spell) => {
-      classCounts.forEach((cc) => {
-        if (spell.class === cc.classname && spell.prepared) {
-          cc.numprepped++;
-        }
-      });
-    });
+    getters.getNumPrepped(classCounts, spells);
     return classCounts;
   },
   getCharacter: (state) => {
