@@ -3,13 +3,10 @@ import Stronghold from '../classes/stronghold';
 
 export default {
   getAllImprovements ({ commit }) {
-    return new Promise((resolve) => {
-      Vue.http.get('/json/improvements.json').then((response) => {
-        var improvements = response.body.documents;
-        commit('GET_IMPROVEMENTS', { improvements: improvements });
-        resolve();
-        return true;
-      });
+    return Vue.http.get('/json/improvements.json').then((response) => {
+      var improvements = response.body.documents;
+      commit('GET_IMPROVEMENTS', { improvements: improvements });
+      return true;
     });
   },
   newStronghold: ({ state }) => {
@@ -43,6 +40,7 @@ export default {
         state.strongholds.splice(state.all.indexOf(state.current), 1);
         state.current = { ...res.body };
         state.strongholds.push(res.body);
+        return true;
       });
     }
   },
