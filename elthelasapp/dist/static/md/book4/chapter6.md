@@ -30,6 +30,14 @@ Margo is looking to test her new airship design, based on the airships from her 
 
 The ship requires party members to continually man various stations, including:
 
+Spotter - Margo's pilot position has very poor visibility, she needs someone in the crows nest to call out directions
+
+Regular check: DC 12 Perception Check to spot threats, and DC 12 Survival to point out the correct direction to go
+
+Extreme Success: DC 20 Survival check to discover a faster route, increasing speed by 1
+
+Bad effect on failure: Failure of perception check causes extra roll on hazards table, failure on survival check causes speed reduced by 1
+
 Coal Shoveler - the forward momentum is produced by twin turbines that run off a coal steam engine, the coal shoveler is responsible for making sure pressure on the steam engine stays constant by watching the pressure gauge on the engine and regularly shovelling coal into the boiler.
 
 Regular check: DC 10 Strength check, DC 10 Constitution check. 
@@ -54,19 +62,11 @@ Extreme Success: DC 20 Arcana Check perfect alignment causes altitude to increas
 
 Bad effect on failure: altitude reduced by 1, speed reduced by 1 for that period
 
-Spotter - Margo's pilot position has very poor visibility, she needs someone in the crows nest to call out directions
-
-Regular check: DC 12 Perception Check to spot threats, and DC 12 Survival to point out the correct direction to go
-
-Extreme Success: DC 20 Survival check to discover a faster route, increasing speed by 1
-
-Bad effect on failure: Failure of perception check causes extra roll on hazards table, failure on survival check causes speed reduced by 1
-
 Maintenance - Beyond specifically the arcane engine, the steam engine, and wooden hull need regular maintenance to keep up repair
 
-Regular check: DC 10 Intelligence check (advantage with tinkers tools and proficiency)
+Regular check: DC 10 (15) Intelligence check (advantage with tinkers tools and proficiency)
 
-Extreme Success: DC 20 Intelligence check increases ship repair by 1.
+Extreme Success: DC 20 (25) Intelligence check increases ship repair by 1.
 
 Bad effect on failure: repair of ship reduced by 1
 
@@ -79,14 +79,14 @@ Multiple people can man a single station. This is handled as a help action, givi
     <tr><th>Speed</th><th>Distance Travelled</th></tr>
   </thead>
   <tbody>
-    <tr><td>1</td><td>5 miles travelled</td></tr>
-    <tr><td>2</td><td>10 miles travelled</td></tr>
-    <tr><td>3</td><td>15 miles travelled</td></tr>
-    <tr><td>4</td><td>20 miles travelled</td></tr>
-    <tr><td>5 (default speed)</td><td>25 miles travelled</td></tr>
-    <tr><td>6</td><td>30 miles travelled</td></tr>
-    <tr><td>7</td><td>35 miles travelled</td></tr>
-    <tr><td>8</td><td>40 miles travelled</td></tr>
+    <tr><td>1</td><td>5 miles travelled (8 miles)</td></tr>
+    <tr><td>2</td><td>10 miles travelled (16 miles)</td></tr>
+    <tr><td>3</td><td>15 miles travelled (24 miles)</td></tr>
+    <tr><td>4</td><td>20 miles travelled (32 miles)</td></tr>
+    <tr><td>5 (default speed)</td><td>25 miles travelled (40 miles)</td></tr>
+    <tr><td>6</td><td>30 miles travelled (48 miles)</td></tr>
+    <tr><td>7</td><td>35 miles travelled (56 miles)</td></tr>
+    <tr><td>8</td><td>40 miles travelled (64 miles)</td></tr>
   </tbody>
 </table>
 
@@ -133,13 +133,12 @@ Every round roll on the hazards table (twice if the spotter fails)
     <tr><th>Roll</th><th>Hazard</th></tr>
   </thead>
   <tbody>
-    <tr><td>19-20</td><td>Nothing Happens</td></tr>
-    <tr><td>18</td><td>Hole in the blimp. Ship repair down by 1</td></tr>
-    <tr><td>17</td><td>Sleepy dragon falls asleep on the blimp. Requires special task to convince the dragon to leave, or ship loses 1 altitude each round. Dragon leaves on it’s own after 6 rounds.</td></tr>
+    <tr><td>18-20</td><td>Nothing Happens</td></tr>
+    <tr><td>17</td><td>Landing Parachute accidentally deploys - speed immediately reduced by 2. Special task to cut away the parachute or speed will be reduced by 2 each round.</td></tr>
     <tr><td>16</td><td>Run into a Wizard’s tower. Negated by successful spotter check. ship takes 3 levels of repair damage immediately, and Wizard sends 3 air elementals to attack the ship that damaged his tower.</td></tr>
     <tr><td>15</td><td>Storm clouds – Speed and repair go down by 1 each.</td></tr>
     <tr><td>14</td><td>Escaped air elemental – Negated by successful engineer check. Special task of capture the air elemental. Max speed goes down by 1 if it escapes.</td></tr>
-    <tr><td>13</td><td>Harpy’s attack – Requires someone to do a special task of fight off harpy’s or ship repair goes down by 2 each round.</td></tr>
+    <tr><td>13</td><td>A massive rainstorm with gail force winds, lightning, and hail. DC of all checks increased by 5.</td></tr>
     <tr><td>12</td><td>Coal oven breaks – Negated by successful maintenance check. Special task of repair the coal oven. Coal shoveling cannot be done while this isn’t done.</td></tr>
     <tr><td>11</td><td>Air pressure control’s break – Negated by successful maintenance check. Special task of repair the air pressure controls. Air pressure control cannot be used while this isn’t done.</td></tr>
     <tr><td>10</td><td>Opposing Air current – Speed decreases by 1 and DC of Coal Shoveling check increased by 5 this round.</td></tr>
@@ -149,9 +148,8 @@ Every round roll on the hazards table (twice if the spotter fails)
     <tr><td>6</td><td>Arcane engine breaks down - Negated by successful engineer check. Altitude immediately drops by 2, and special task requiring DC 20 Arcana check to repair.</td></tr>
     <tr><td>5</td><td>Hole in the hull - a flying piece of machinery breaks through the hull, special task to repair the hull with DC 15 intelligence check. Speed reduced by 1 due to increased drag until it is repaired.</td></tr>
     <tr><td>4</td><td>Heavy Fog - DC of spotters perception check increases by 5.</td></tr>
-    <tr><td>3</td><td>Stowaway - A kid is discovered on board who stowed away in a barrel</td></tr>
-    <tr><td>2</td><td>Landing Parachute accidentally deploys - speed immediately reduced by 2. Special task to cut away the parachute or speed will be reduced by 2 each round.</td></tr>
-    <tr><td>1</td><td>Catastrophe! Roll on the catastrophe table.</td></tr>
+    <tr><td>3</td><td>Hole in the blimp. Ship repair down by 1.</td></tr>
+    <tr><td>1-2</td><td>Catastrophe! Roll on the catastrophe table.</td></tr>
   </tbody>
 </table>
 
@@ -163,7 +161,7 @@ Every round roll on the hazards table (twice if the spotter fails)
   </thead>
   <tbody>
     <tr><td>1</td><td>Malfunction of the arcane engine causes the ship to teleport to the astral plane. Margo can get the ship out, but doing so sets the ships speed and altitude to 1d4, and the transition causes damage to the hull as arcane energy surges through it, reducing repair by 1</td></tr>
-    <tr><td>2</td><td>Orc scouting squad sees the ship and shoots it with a catapult, causing extreme damage to the ship, ship loses 2 levels of repair before making it out of range</td></tr>
+    <tr><td>2</td><td></td></tr>
     <tr><td>3</td><td>Accidentally hit a magical air current that causes the ship to spin. Speed and altitude are both reduced by 2.</td></tr>
     <tr><td>4</td><td>Ghost Pirates - A flying ghost pirate ship starts chasing them, can confront or find another way to get the pirates to leave them alone.</td></tr>
     <tr><td>5</td><td>Roc Attack - A roc attacks the ship!</td></tr>
@@ -173,31 +171,85 @@ Every round roll on the hazards table (twice if the spotter fails)
   </tbody>
 </table>
 
-#### Westguard
+If the trip is taking too long to run, Margo will have a bright idea. She will ask someone to take over for her at the pilots seat, and will handle 'maintenance' duties for the round. 
+
+### Westguard
 
 Westguard is not particularly large or important as a town. The town is not immediately under attack or under threat when the players arrive, but like other towns near the war front, it is chock full of refugees. It has managed to stay supplied by trading with the dwarves, but the tunnels went suddenly quiet a week before the players arrival. Human caravans that go in are turned away, and no dwarven caravans have come out.
 
-### The Town
+Westguard itself is tense, but there is little for the players here, with the dwarf tunnels locked and the orcs surrounding on three sides, there is no way out for the people of Westguard, but they remain alone and without a way to escape. If the players actually do try to seek out information on what people need in town, they almost universally say, 'a way out, to escape to the north'.
 
-The players arrive at one of the few towns in the dwarven kingdom that hasn’t been fully evacuated. Mostly hill Dwarves and non-dwarves. A disorganized community made of those that refused to enter the depths. Asking around town, the townsfolk can easily point them in the direction of the dwarven hold entrance, but they all say its pointless as it is unmanned and impassible. If they players do bother to venture there it a massive magically enchanted metal door that prevents teleport or any entry. And indeed it is unmanned, no one responds to their call.
+### The Kobold Mine Anatolia
+
+Varius's mine has been looted and abandoned. His Queen has been crucified, her corpse standing as a stark warning outside the mine. Inside the mine is no one but an elderly kobold miner who managed to hide, Grimecrag. Grimecrag tells of a mixed force of dragonborn, goliaths, lizardfolk, goblins, and more appearing suddenly at the mines entrance led by a massive blue dragon. While the mines traps killed many of the attackers, unlike most would-be foes, they pressed on, killing any who opposed them, and capturing anyone unable to fight. When they got to the Queen, Grimecrag watched from a hidey-hole as they immobilized her with magic, and nailed her to a cross. Everyone else who lived was taken prisoner and marched west, into the mountains, speaking of a nearby location the dragon wanted to turn into its lair. All of these events happened on Coranus 16, Grimecrag has been living in the remains of the mine ever since, scavenging food from what was left behind.
+
+### The Dragon Lair
+
+The Dragon has taken over a myconid colony as its base, killing the vast majority of the myconids.
+
+![Horroths Lair](https://elthelas-images.herokuapp.com/images/maps/dungeons/horroths-lair.png "Horroths Lair")
+
+**18 & 4** The entrance area is currently being expanded and fortified by some of captive Kobold miners, who are chained together in a chain gang. The are watched over by a trio of Goliath Werebears, the first party encounter with the cult of Horroth. There are 3 doors out, 2 to the south, and one to the east.
+
+[Run This Encounter](/runner/werebear&werebear&werebear)
+
+**33** This small hallway contains a giant bulbous mushroom. Walking close to the mushroom causes it to explode sending acid for 15 ft in all directions. People in the area must make a DC 13 Dexterity save or take 4d6 acid damage (save for half).
+
+**22** This guard room has 6 bugbears in it who are taking a break and playing cards, their loud laughter can be heard through the door. The room has 2 doors to the north and 1 leading east.
+
+[Run This Encounter](/runner/bugbear&bugbear&bugbear&bugbear&bugbear&bugbear)
+
+**6** This is the wardens room for the prison beyond. The warden is one of Horroth's children, a young blue dragon, who sleeps in an alcove to one side of the room, the keys hanging from one of its claws. The southern door is coated with the same fungus that fills room **19**.
+
+**19** This room is covered with small blue-green mushrooms. When the head of a mushroom is jostled, twin whiplike appendages roll out from underneath it and attempt to grapple the offending party, who must make a DC 13 acrobatics check to completely avoid the appendages, or a DC 13 athletics check to pull away by brute strength. If they fail either check they are grappled and take 3d6 poison damage each round until they successfully free themselves, or if they attempt athletics rather than acrobatics they take the damage once but successfully avoid being grappled.
+
+**2** This room is the prison room, where the dragon has imprisoned a number of animals it hopes to break and turn into useful servants. When the party enters a bugbear is talking to a giant bee in a cage in a not-so-sane way. If he detects the party, he will release the bee and command it to attack, but the bee will simply attack him instead. Besides the bee, there is a pegasus name Alli in a cage who has clearly been tortured. She tells a tale of once having been the steed of a mighty, if foolhardy, Paladin, who challenged Horroth to single combat. She thanks the party for her freedom, and tells them that should they take revenge for her fallen master from the dragons hide, she will serve them so long as they serve good and righteous causes. She has specially made half-plate barding in a nearby chest (room **36**). The bee, meanwhile, mostly wants honey.
+
+Besides the pegasus and the bee there are a number of giant rats that have been infected with myconid spores and have gone feral, and an angry griffon.
+
+[Run This Encounter](/runner/pegasus&giantbee&griffon&giantrat)
+
+**36** This area contains the possessions and food for the prisoners. There are a couple barrels of honey, a set of half-plate barding made for a pegasus, and a bunch of rat poison.
+
+**8 & 41** The antichamber. To the south twin gates block the entrance to Horroth's chamber, while to the north a series of trapped tunnels are designed to prevent unwanted visitors from reaching this location. The antichamber houses Horroth's personal guards, among them Satura Kalmuc, Magog the Bloody (leader of the goblins), Pargor the Mighty (leader of the Werebears), and a Clay Golem.
+
+[Run This Encounter](/runner/magogthebloody&saturakalmuc&pargorthemighty&claygolem)
+
+**3** Horroth's chamber. Horroth spends most of her time here, though she has her own exit as well, a large hole in the ceiling disguised by an illusion (a fact the kobolds are not aware of, but that could be discovered)
+
+[Run This Encounter](/runner/adultbluedragon)
+
+**45** The Teleportation Circle. Horroth chose this location for her new lair because the Myconids had already set up a teleportation circle, making it easy for her to transport her loot and all her minions here from her old lair.
+
+**47** Horroth's horde. 0 cp, 0 sp, 37000 gp, 26000 pp. Turquoise (10 gp value) Blue sapphire (1000 gp value) Diamond (5000 gp value) Emerald (1000 gp value) A necklace string of small pink pearls (2500 gp value) Chrysoprase (50 gp value) Gold ring set with bloodstones (250 gp value) Smoldering Breastplate (Mithril) (1100 gp value) Potion of Superior Healing (800 gp value) Wand of Blade Ward (1000 gp value) Wand of Prestidigitation (1000 gp value) Scroll of Elemental Bane (400 gp value) Scroll of Bones of the Earth (1600 gp value). Total value 312710 gp
+
+### The Tunnel Entrance
+
+Asking around town, the townsfolk can easily point them in the direction of the dwarven hold entrance, but they all say its pointless as it is unmanned and impassible. If they players do bother to venture there it a massive magically enchanted metal door that prevents teleport or any entry. And indeed it is unmanned, no one responds to their call.
 
 If the players are more persistent with the townsfolk, (Bribes, kindness, maybe doing a sidequest, being formal), the townsfolk know of a secret entrance that is suppodely to only be for dwarves that change their mind and wish to join the rest of them underground (this is what they are told, and it isn’t true, but they believe it.) They also learn this information if they waste time at the big metal door by a passer-by.
 
 This entrance is a trick devised by the dwarves to kill bands of orcs. They expect the townsfolk above to eventually be captured and tortured into giving away this info. There are a system of puzzles to make it look like a true test of “are you a dwarf”. But they also don’t want it to kill a dwarf that might actually wish to return.
 
-The Puzzles
+### The Puzzles
 
-Piano - Behind a massive bolder, that only the strength of 10 dwarves could move (Cumulative DC 100 Str Check that some of the dwarves could help with). Lies a passage the leads down. Eventually they come to a lone piano. Next to the piano, drips water onto curved shapes that ring out a simple melody. Players must play the melody on the paino. If you need an example, here is one from undertale that I like. Again the dwarves could help with this one if need be, but they will not continue past this point. Once played a wall opens to reveal the next area, the wall that opens is not the one directly next to the piano, making finding the opening ahead of time rather difficult. Players attempting to subvert the puzzles will not be treated nicely later on, as they are being monitored.
+**Piano** - Behind a massive bolder, that only the strength of 10 dwarves could move (Cumulative DC 100 Str Check that some of the dwarves could help with). Lies a passage the leads down. Eventually they come to a lone piano. Next to the piano, drips water onto curved shapes that ring out a simple melody. Players must play the melody on the paino. If you need an example, here is one from undertale that I like. Again the dwarves could help with this one if need be, but they will not continue past this point. Once played a wall opens to reveal the next area, the wall that opens is not the one directly next to the piano, making finding the opening ahead of time rather difficult. Players attempting to subvert the puzzles will not be treated nicely later on, as they are being monitored.
 
 https://www.youtube.com/watch?v=baNrufyAza8 
 
-Musical Tunnels – At the entrance to this tunnel there is a sign that reads: “To any dwarf that wishes to return; steal your resolve. There will be no turning back beyond this point. If you have any unresolved business on the surface, now would be the time. To anyone else, know that only a slow death awaits you below.” This is the point where any dwarf allies leave, not wanting to truly leave the surface forever.
+**Musical Tunnels** – At the entrance to this tunnel there is a sign that reads: “To any dwarf that wishes to return; steal your resolve. There will be no turning back beyond this point. If you have any unresolved business on the surface, now would be the time. To anyone else, know that only a slow death awaits you below.” This is the point where any dwarf allies leave, not wanting to truly leave the surface forever.
 
-Ahead the tunnels are Marked with seemingly random letters. A through G (Not in order). They twist and separate and reconnect. It quickly becomes obvious that there is no exit. Even the passage that leads back to the piano is gone, almost as if it was never there. The do find In the center of this weave of marked tunnels a funnel-like tube that leads down, too small to even fit your hand in. Inscribed next to it is “The final note of our nations anthem”. Which a simple history check will let them remember that it is a grand crescendo with all the notes, though The C is flat, and the E is Sharp.
+Ahead the tunnels are Marked with seemingly random letters. A through G (Not in order). They twist and separate and reconnect. In front of each tunnel is a bell tuned to a particular note hanging from the cieling. It quickly becomes obvious that there is no exit. Even the passage that leads back to the piano is gone, almost as if it was never there. The do find In the center of this weave of marked tunnels a funnel-like tube that leads down, too small to even fit your hand in. Inscribed next to it is “The final note of our nations anthem must sound in this cave. But beware, for only death awaits those fail this trial.”. Which a simple history check will let them remember that it is a D Major chord, consisting of D – F# – A.
 
-The tunnels hold any note sung in them for a bit of time. Singing any tune in the center of the tunnel makes the center ring out a note that is transcribed on the wall. Standing at the back of the cavern makes the note flat, and standing near the funnel makes it sharp. Though difficult, the puzzle could be completed with only one person running around singing all the notes. Again once all the notes are sung, a random wall reveals the next path.
+Each bell, when rung, takes a different amount of time to echo the note back through the tunnels. Singing any tune in the center of the tunnel makes the center ring out a note that is transcribed on the wall. Standing at the back of the cavern makes the note flat, and standing near the funnel makes it sharp. Though difficult, the puzzle could be completed with only one person running around singing all the notes. Again once all the notes are sung, a random wall reveals the next path.
 
-History Lesson – As the players move deeper into the tunnels they come to an opening with a history based puzzle. There are 5 slabs with names on them placed around the room. And on the big metal door there are 5 slots that the slabs could be placed in. The 6 slots have descriptions of historal figures of the dwarves. This is basic dwarven history, but orc raiders wouldn’t possibly know it. Some examples below.
+For each bell rung that does not belong in the chord, a stone golem will step out of the wall and attack.
+
+[Run This Encounter](/runner/stonegolem)
+
+The bells are labelled A - 1 A# - 2 B - 3 C - 4 C# - 5 D - 6 D# - 7 E - 8 F - 9 F# - 10 G - 11 G# - 12, and each takes 1 round longer than the one before to echo around.
+
+**History Lesson** – As the players move deeper into the tunnels they come to an opening with a history based puzzle. There are 5 slabs with names on them placed around the room. And on the big metal door there are 5 slots that the slabs could be placed in. The 6 slots have descriptions of historal figures of the dwarves. This is basic dwarven history, but orc raiders wouldn’t possibly know it. Some examples below.
 
 The name of our god – Dorun Forgesinger 
 (The last name is a trick to throw people off, it can be a nickname that people refer to Dorun as.)

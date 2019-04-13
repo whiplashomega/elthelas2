@@ -13,6 +13,8 @@ export default {
   },
   computed: {
     ...mapGetters({
+      changeby: 'changeby',
+      record: 'record',
       bankRevenue: 'bankRevenue',
       buildingMaintenance: 'buildingMaintenance',
       buyTable: 'getBuyTable',
@@ -119,7 +121,6 @@ export default {
   },
   data () {
     return {
-      changeby: 0,
       resourceChange: {
         alcohol: 0,
         arcanum: 0,
@@ -148,7 +149,6 @@ export default {
         timber: 16,
         wool: 1
       },
-      record: "",
       showTransactionRecord: false,
       newanimal: { name: "", livesat: "stables", species: "", foodcost: 0 }
     };
@@ -162,7 +162,8 @@ export default {
       loadStrongholdById: 'loadStrongholdById',
       saveStronghold: 'saveStronghold',
       saveNewStronghold: 'saveNewStronghold',
-      deleteStronghold: 'deleteStronghold'
+      deleteStronghold: 'deleteStronghold',
+      addToTreasury: 'addToTreasury'
     }),
     buyResource (type, amount) {
       let checkWeight = this.stronghold.laws.todaysExports + Number(amount) * this.unitWeightMod[type];
@@ -185,14 +186,6 @@ export default {
     },
     addResource (res, amount) {
       this.stronghold.resources[res] += Number(amount);
-    },
-    addToTreasury (changeby, record) {
-      this.stronghold.treasury += Number(changeby);
-      this.stronghold.transactionrecord.push({ id: Date.now() + changeby + record, amount: changeby, description: record, balance: this.stronghold.treasury, date: this.gameDate });
-      this.changeby = 0;
-      this.record = "";
-      var x = Math.round(this.stronghold.treasury * 100);
-      this.stronghold.treasury = x / 100;
     },
     addMerchant () {
       this.stronghold.merchants.push({

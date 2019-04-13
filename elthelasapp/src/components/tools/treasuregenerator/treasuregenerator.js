@@ -109,7 +109,6 @@ export default {
       let gems = "";
       let magicitems = "";
       let total = 0;
-      let lookup = [];
       let r = {};
       console.log(d100);
       if (this.challenge === 1) {

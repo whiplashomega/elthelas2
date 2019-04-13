@@ -11,7 +11,7 @@ export default {
     classCounts.forEach((cc) => {
       if (spell.class === cc.classname && spell.prepared) {
         cc.numprepped++;
-      }    
+      }
     });
   },
   getNumPrepped: (state, getters) => (classCounts, spells) => {
@@ -41,7 +41,7 @@ export default {
     });
     spells.level9.forEach((spell) => {
       getters.incrementClassCount(spell, classCounts);
-    });    
+    });
   },
   getBardPrepared: (state, getters) => (a) => {
     let num = Math.min(a.level, 9) + 3;
@@ -58,7 +58,7 @@ export default {
     if (a.level > 5 && a.selsubclass.name === "College of Lore") {
       num += 2;
     }
-    
+    return num;
   },
   getThirdCasterPrepared: () => (a) => {
     let num = Math.floor((a.level - 1) / 3) + 3;
@@ -271,10 +271,10 @@ export default {
       });
       var weight = 0;
       equip.forEach((e) => {
-      weight += e.weight * e.quantity;
+        weight += e.weight * e.quantity;
+      });
+      containers.push({ ...c, equipment: equip, contains: weight, container: c });
     });
-    containers.push({ ...c, equipment: equip, contains: weight, container: c });
-  });
     return containers;
   },
   carryWeight: (state, getters) => {
@@ -312,7 +312,7 @@ export default {
     if (state.currentCharacter.charclasses.length === 1) {
       casterlevel += Math.ceil(Number(state.currentCharacter.charclasses[0].level) * Number(state.currentCharacter.charclasses[0].selsubclass.castermult));
     } else {
-        state.currentCharacter.charclasses.forEach((a) => {
+      state.currentCharacter.charclasses.forEach((a) => {
         casterlevel += Math.floor(Number(a.level) * Number(a.selsubclass.castermult));
       });
     }

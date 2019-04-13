@@ -110,5 +110,5 @@ export default [
     { min: 86, max: 90, numgems: "1d10", gemmax: 2500, nummagic: "1d4", magicmin: 5000, magicmax: 200000 },
     { min: 91, max: 95, numgems: "1d4", gemmax: 7500, nummagic: "1d4", magicmin: 5000, magicmax: 200000 },
     { min: 96, max: 100, numgems: "1d8", gemmax: 5000, nummagic: "1d4", magicmin: 5000, magicmax: 200000 }
-  ],
+  ]
 ];

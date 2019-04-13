@@ -2,8 +2,8 @@ export default {
   barbResources (character, a) {
     if (Number(a.level) < 20) {
       var rage = this.calcRage(a);
-        this.character.resources.push(rage);
-      }
+      this.character.resources.push(rage);
+    }
     if (a.selsubclass.name === "Path of the Ancestral Guardian" && Number(a.level) >= 10) {
       character.resources.push({ name: "Consult the Spirits", current: 1, max: 1, recharge: "shortrest" });
     }
@@ -78,7 +78,7 @@ export default {
         superiority.current++;
         superiority.max++;
       }
-    }    
+    }
   },
   paladinResources (character, a) {
     character.resources.push({ name: "Lay on Hands", current: Number(a.level) * 5, max: Number(a.level) * 5, recharge: "longrest" });

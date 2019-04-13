@@ -1,4 +1,6 @@
 export default {
+  changeby: state => state.changeby,
+  record: state => state.record,
   allImprovements: state => state.all,
   availableClearedLand: (state, getters) => {
     let land = state.current.improvements.filter((a) => {

@@ -44,6 +44,14 @@ export default {
       });
     }
   },
+  addToTreasury ({ state, getters }, changeby, record) {
+    state.current.treasury += Number(changeby);
+    state.current.transactionrecord.push({ id: Date.now() + changeby + record, amount: changeby, description: record, balance: state.current.treasury, date: getters.gameDate });
+    state.changeby = 0;
+    state.record = "";
+    var x = Math.round(state.current.treasury * 100);
+    state.current.treasury = x / 100;
+  },
   deleteStronghold: ({ state, getters }, { stronghold }) => {
     let check = window.confirm("Are you sure you want to delete " + stronghold.castleName);
     if (check) {

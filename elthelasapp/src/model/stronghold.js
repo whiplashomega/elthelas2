@@ -8,6 +8,8 @@ const state = {
   strongholds: [],
   current: Stronghold(),
   staffTypes: staffTypes,
+  changeby: 0,
+  record: "",
   buyTable: {
     alcohol: 0.3,
     arcanum: 750,

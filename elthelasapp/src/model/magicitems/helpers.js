@@ -179,6 +179,6 @@ export default {
     if (rand < threshold) {
       return "In Stock";
     }
-    return "Out of Stock";    
+    return "Out of Stock";
   }
 };
