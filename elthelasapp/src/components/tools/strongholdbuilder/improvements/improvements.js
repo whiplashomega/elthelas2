@@ -1,4 +1,4 @@
-import { mapGetters } from 'vuex';
+import { mapGetters, mapActions } from 'vuex';
 import improvement from '../improvement';
 
 export default {
@@ -103,6 +103,9 @@ export default {
     };
   },
   methods: {
+    ...mapActions({
+      addImprovement: 'addImprovement'
+    }),
     addToConstruction (improvement) {
       if (improvement.buildtime > 0) {
         this.stronghold.construction.push({ ...improvement });
@@ -119,41 +122,6 @@ export default {
         this.addToTreasury(-improvement.goldCost, "Begin construction on " + improvement.name);
       }
       this.addImprovementModal = false;
-    },
-    addImprovement (improvement) {
-      var match = this.stronghold.improvements.filter((a) => {
-        return a.id === improvement.id;
-      })[0];
-      if (improvement.private) {
-        match = this.stronghold.privateEnterprise.filter((a) => {
-          return a.id === improvement.id;
-        })[0];
-        if (match) {
-          match.count++;
-        } else {
-          improvement.count++;
-          this.stronghold.privateEnterprise.push(improvement);
-          improvement.staff.forEach((st) => {
-            let match = this.staffTypes.filter((a) => {
-              return a.name === st.name;
-            })[0];
-            if (match && st.num > 0) {
-              for (var x = 0; x < st.num; x++) {
-                this.stronghold.privateEmployees.push({ id: Date.now() + Math.random(), ...match });
-              }
-            } else if (match) {
-              this.stronghold.privateEmployees.push({ id: Date.now() + Math.random(), ...match });
-            }
-          });
-        }
-      } else {
-        if (match) {
-          match.count++;
-        } else {
-          improvement.count++;
-          this.stronghold.improvements.push(improvement);
-        }
-      }
     }
   }
 };

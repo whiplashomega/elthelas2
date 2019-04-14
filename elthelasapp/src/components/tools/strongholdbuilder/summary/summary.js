@@ -29,7 +29,8 @@ export default {
       saveStronghold: 'saveStronghold',
       saveNewStronghold: 'saveNewStronghold',
       deleteStronghold: 'deleteStronghold',
-      addToTreasury: 'addToTreasury'
+      addToTreasury: 'addToTreasury',
+      addImprovement: 'addImprovement'
     }),
     newDay () {
       // reduce food subsidies if necessary

@@ -63,5 +63,40 @@ export default {
         return false;
       });
     }
+  },
+  addImprovement ({ state, getters }, improvement) {
+    var match = state.current.improvements.filter((a) => {
+      return a.id === improvement.id;
+    })[0];
+    if (improvement.private) {
+      match = state.current.privateEnterprise.filter((a) => {
+        return a.id === improvement.id;
+      })[0];
+      if (match) {
+        match.count++;
+      } else {
+        improvement.count++;
+        state.current.privateEnterprise.push(improvement);
+        improvement.staff.forEach((st) => {
+          let match = getters.staffTypes.filter((a) => {
+            return a.name === st.name;
+          })[0];
+          if (match && st.num > 0) {
+            for (var x = 0; x < st.num; x++) {
+              state.current.privateEmployees.push({ id: Date.now() + Math.random(), ...match });
+            }
+          } else if (match) {
+            state.current.privateEmployees.push({ id: Date.now() + Math.random(), ...match });
+          }
+        });
+      }
+    } else {
+      if (match) {
+        match.count++;
+      } else {
+        improvement.count++;
+        state.current.improvements.push(improvement);
+      }
+    }
   }
 };
