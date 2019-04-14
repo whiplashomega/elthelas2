@@ -23,6 +23,7 @@ export default {
       calculateIncome: 'calculateIncome',
       calculateRevenue: 'calculateRevenue',
       expenses: 'expenses',
+      getPop: 'getPop',
       grossRevenue: 'grossRevenue',
       headTax: 'headTax',
       improvementRevenue: 'improvementRevenue',
