@@ -12,60 +12,60 @@ self.__precacheManifest = [
     "url": "/json/improvements.json"
   },
   {
-    "revision": "3578afae35aa001d8706",
+    "revision": "f616bc3f745242da469c",
     "url": "/css/characterbuilder.10db1b9f.css"
   },
   {
-    "revision": "bae8ea762a2fdbec26f3",
-    "url": "/css/chunk-vendors.8555efa7.css"
+    "revision": "e6735ff390c553613ca1",
+    "url": "/css/chunk-vendors.ecc27ba5.css"
   },
   {
-    "revision": "bae8ea762a2fdbec26f3",
-    "url": "/js/chunk-vendors.e2549129.js"
+    "revision": "e6735ff390c553613ca1",
+    "url": "/js/chunk-vendors.c5c8a51d.js"
   },
   {
-    "revision": "6a814307dba66a131a0f",
+    "revision": "d63ebcc577ab99dbde1b",
     "url": "/css/classes.90ebbbe5.css"
   },
   {
-    "revision": "6a814307dba66a131a0f",
-    "url": "/js/classes.22865f37.js"
+    "revision": "d63ebcc577ab99dbde1b",
+    "url": "/js/classes.3107e089.js"
   },
   {
-    "revision": "490893c5bca3c09304e6",
+    "revision": "bc860acb3a780edd0218",
     "url": "/css/domains.f849abdb.css"
   },
   {
-    "revision": "490893c5bca3c09304e6",
-    "url": "/js/domains.ac0f2218.js"
+    "revision": "bc860acb3a780edd0218",
+    "url": "/js/domains.65c32ed1.js"
   },
   {
-    "revision": "928831f724b64d15dad9",
+    "revision": "e990e5895295b9daffad",
     "url": "/css/encounters.8b5fefc0.css"
   },
   {
-    "revision": "928831f724b64d15dad9",
-    "url": "/js/encounters.3e2ff257.js"
+    "revision": "e990e5895295b9daffad",
+    "url": "/js/encounters.7a6b4f41.js"
   },
   {
-    "revision": "c4dc57387bfba6d4d1c3",
+    "revision": "62156b616abd9550cbfe",
     "url": "/css/geography.9ace0302.css"
   },
   {
-    "revision": "c4dc57387bfba6d4d1c3",
-    "url": "/js/geography.8bf46862.js"
+    "revision": "62156b616abd9550cbfe",
+    "url": "/js/geography.88d4ebe2.js"
   },
   {
-    "revision": "0b8db478fefe7d3d1b1c",
+    "revision": "085bebac1dc3483550f9",
     "url": "/css/quickref.c3621473.css"
   },
   {
-    "revision": "0b8db478fefe7d3d1b1c",
-    "url": "/js/quickref.20eaed54.js"
+    "revision": "085bebac1dc3483550f9",
+    "url": "/js/quickref.aedbe7c2.js"
   },
   {
-    "revision": "0238f9699e105edca46d",
-    "url": "/js/treasure.474a9b18.js"
+    "revision": "48837380241a00dbf298",
+    "url": "/js/treasure.ff9ae10d.js"
   },
   {
     "revision": "b0f49cd26ba67885381b66e77665bf02",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "4356eb8ade66c04cf8a65c840d68f549",
+    "revision": "e69a95dbbf3f7423265844a72f801a96",
     "url": "/index.html"
   },
   {
@@ -148,12 +148,12 @@ self.__precacheManifest = [
     "url": "/json/gods.json"
   },
   {
-    "revision": "ff85f873519dff90a0b9",
-    "url": "/js/app.c8a9103c.js"
+    "revision": "003df9315065f3af38cb",
+    "url": "/js/app.96d83226.js"
   },
   {
-    "revision": "3578afae35aa001d8706",
-    "url": "/js/characterbuilder.e4d37ced.js"
+    "revision": "f616bc3f745242da469c",
+    "url": "/js/characterbuilder.7c5dd501.js"
   },
   {
     "revision": "27d1a45d96aa15386fc72c329f87f6ca",
@@ -288,7 +288,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/pcs.md"
   },
   {
-    "revision": "ff85f873519dff90a0b9",
+    "revision": "003df9315065f3af38cb",
     "url": "/css/app.cb63fa56.css"
   },
   {

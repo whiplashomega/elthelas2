@@ -175,6 +175,31 @@ export default {
   expenses: (state, getters) => {
     return Math.round((getters.totalSalary + getters.buildingMaintenance + getters.resourceCost) * 100) / 100;
   },
+  exportLimit: (state, getters) => {
+    let road = state.current.improvements.filter((a) => {
+      if (a.id === "road") {
+        return true;
+      }
+      return false;
+    })[0];
+    let harbor = state.current.improvements.filter((a) => {
+      if (a.id === "harbor") {
+        return true;
+      }
+      return false;
+    })[0];
+    let base = state.current.merchants.reduce((tot, mer) => {
+      return tot + Number(mer.carryweight);
+    }, 0);
+    let exportLimit = base;
+    if (road) {
+      exportLimit += base;
+    }
+    if (harbor) {
+      exportLimit += base * 2;
+    }
+    return exportLimit;
+  },
   farmLand: (state) => {
     let land = 0;
     let foodfarms = state.current.improvements.filter((a) => {

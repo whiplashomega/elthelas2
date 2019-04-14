@@ -23,6 +23,7 @@ export default {
       calculateIncome: 'calculateIncome',
       calculateRevenue: 'calculateRevenue',
       expenses: 'expenses',
+      exportLimit: 'exportLimit',
       getPop: 'getPop',
       grossRevenue: 'grossRevenue',
       headTax: 'headTax',
@@ -63,31 +64,6 @@ export default {
       return this.stronghold.animals.filter((a) => {
         return a.livesat === "ayrie";
       }).sort();
-    },
-    exportLimit () {
-      let road = this.stronghold.improvements.filter((a) => {
-        if (a.id === "road") {
-          return true;
-        }
-        return false;
-      })[0];
-      let harbor = this.stronghold.improvements.filter((a) => {
-        if (a.id === "harbor") {
-          return true;
-        }
-        return false;
-      })[0];
-      let base = this.stronghold.merchants.reduce((tot, mer) => {
-        return tot + Number(mer.carryweight);
-      }, 0);
-      let exportLimit = base;
-      if (road) {
-        exportLimit += base;
-      }
-      if (harbor) {
-        exportLimit += base * 2;
-      }
-      return exportLimit;
     },
     currentExportWeight () {
       // first subtract local consumption, we let it go negative because our population will import food if they have to.
