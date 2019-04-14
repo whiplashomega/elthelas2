@@ -12,6 +12,7 @@ export default {
       stronghold: 'stronghold',
       totalStorage: 'totalStorage',
       unrest: 'unrest',
+      exportLimit: 'exportLimit',
       usedStorage: 'usedStorage'
     })
   },
