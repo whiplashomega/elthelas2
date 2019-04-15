@@ -37,7 +37,21 @@ const state = {
     stone: 1,
     timber: 0.1,
     wool: 1
-  }
+  },
+  unitWeightMod: {
+    alcohol: 1,
+    arcanum: 1,
+    cloth: 0.5,
+    coal: 1,
+    food: 1,
+    iron: 1,
+    leather: 20,
+    lumber: 16,
+    steel: 1,
+    stone: 250,
+    timber: 16,
+    wool: 1
+  },
 };
 
 const mutations = {

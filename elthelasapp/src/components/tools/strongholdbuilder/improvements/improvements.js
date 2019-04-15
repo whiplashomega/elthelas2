@@ -105,7 +105,8 @@ export default {
   methods: {
     ...mapActions({
       addImprovement: 'addImprovement',
-      addtoTreasury: 'addToTreasuy'
+      addtoTreasury: 'addToTreasuy',
+      buyResource: 'buyResource'
     }),
     addToConstruction (improvement) {
       if (improvement.buildtime > 0) {

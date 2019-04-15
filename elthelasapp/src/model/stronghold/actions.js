@@ -98,5 +98,11 @@ export default {
         state.current.improvements.push(improvement);
       }
     }
-  }
+  },
+  buyResource ({ state, getters, dispatch }, type, amount) {
+    let checkWeight = state.current.laws.todaysExports + Number(amount) * getters.unitWeightMod[type];
+    state.current.resources[type] += Number(amount);
+    state.current.laws.todaysExports = checkWeight;
+    dispatch('addToTreasury', -1 * Number(amount) * this.buyTable[type], "Purchase " + amount + " " + type);
+  },
 };

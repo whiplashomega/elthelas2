@@ -110,20 +110,6 @@ export default {
         timber: 0,
         wool: 0
       },
-      unitWeightMod: {
-        alcohol: 1,
-        arcanum: 1,
-        cloth: 0.5,
-        coal: 1,
-        food: 1,
-        iron: 1,
-        leather: 20,
-        lumber: 16,
-        steel: 1,
-        stone: 250,
-        timber: 16,
-        wool: 1
-      },
       changeby: 0,
       record: "",
       showTransactionRecord: false,
@@ -140,14 +126,9 @@ export default {
       saveStronghold: 'saveStronghold',
       saveNewStronghold: 'saveNewStronghold',
       deleteStronghold: 'deleteStronghold',
-      addToTreasury: 'addToTreasury'
+      addToTreasury: 'addToTreasury',
+      buyResource: 'buyResource'
     }),
-    buyResource (type, amount) {
-      let checkWeight = this.stronghold.laws.todaysExports + Number(amount) * this.unitWeightMod[type];
-      this.stronghold.resources[type] += Number(amount);
-      this.stronghold.laws.todaysExports = checkWeight;
-      this.addToTreasury(-1 * Number(amount) * this.buyTable[type], "Purchase " + amount + " " + type);
-    },
     sellResource (type, amount) {
       let checkWeight = this.stronghold.laws.todaysExports + Number(amount) * this.unitWeightMod[type];
       this.stronghold.resources[type] -= Number(amount);

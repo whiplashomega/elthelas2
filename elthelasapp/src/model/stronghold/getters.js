@@ -458,6 +458,7 @@ export default {
   unemploymentRate: (state, getters) => {
     return Math.round((1 - ((getters.totalEmployees + getters.totalPrivateEmployed) / (getters.getPop * 0.7))) * 100);
   },
+  unitWeightMod: (state) => state.unitWeightMod,
   unmetStaffNeed: (state, getters) => {
     let needed = [];
     getters.neededStaff.forEach((a) => {
