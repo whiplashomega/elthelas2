@@ -51,7 +51,7 @@ export default {
         }
       }
       // gold revenue
-      this.addToTreasury(this.netRevenue, "daily net revenue");
+      this.addToTreasury({ changeby: this.netRevenue, record: "daily net revenue" });
       // resource revenue
       let rev = this.calcTotalRevenue;
       for (let key in this.stronghold.resources) {
