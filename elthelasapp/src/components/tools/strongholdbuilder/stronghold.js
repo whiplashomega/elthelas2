@@ -13,8 +13,6 @@ export default {
   },
   computed: {
     ...mapGetters({
-      changeby: 'changeby',
-      record: 'record',
       bankRevenue: 'bankRevenue',
       buildingMaintenance: 'buildingMaintenance',
       buyTable: 'getBuyTable',
@@ -126,6 +124,8 @@ export default {
         timber: 16,
         wool: 1
       },
+      changeby: 0,
+      record: "",
       showTransactionRecord: false,
       newanimal: { name: "", livesat: "stables", species: "", foodcost: 0 }
     };
