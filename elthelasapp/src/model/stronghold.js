@@ -51,7 +51,7 @@ const state = {
     stone: 250,
     timber: 16,
     wool: 1
-  },
+  }
 };
 
 const mutations = {

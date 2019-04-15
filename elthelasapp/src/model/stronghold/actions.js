@@ -44,7 +44,7 @@ export default {
       });
     }
   },
-  addToTreasury ({ state, getters }, changeby, record) {
+  addToTreasury ({ state, getters }, { changeby, record }) {
     state.current.treasury += Number(changeby);
     state.current.transactionrecord.push({ id: Date.now() + changeby + record, amount: changeby, description: record, balance: state.current.treasury, date: getters.gameDate });
     state.changeby = 0;
@@ -99,10 +99,10 @@ export default {
       }
     }
   },
-  buyResource ({ state, getters, dispatch }, type, amount) {
+  buyResource ({ state, getters, dispatch }, { type, amount }) {
     let checkWeight = state.current.laws.todaysExports + Number(amount) * getters.unitWeightMod[type];
     state.current.resources[type] += Number(amount);
     state.current.laws.todaysExports = checkWeight;
-    dispatch('addToTreasury', -1 * Number(amount) * getters.buyTable[type], "Purchase " + amount + " " + type);
-  },
+    dispatch('addToTreasury', { changeby: -1 * Number(amount) * state.buyTable[type], record: "Purchase " + amount + " " + type });
+  }
 };

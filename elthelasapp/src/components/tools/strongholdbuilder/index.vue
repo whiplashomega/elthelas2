@@ -25,7 +25,7 @@
                      style="width: 70%; display:inline;" />
             </p>
             <div class="btn-group">
-              <button class="btn btn-primary" @click="addToTreasury(changeby, record)">Add to Treasury</button>
+              <button class="btn btn-primary" @click="addToTreasury({ changeby: changeby, record: record })">Add to Treasury</button>
               <button class="btn btn-success" @click="showTransactionRecord = true">Transaction Record</button>
             </div><br />
             <b-modal v-model="showTransactionRecord" title="Transaction Record">
@@ -64,7 +64,7 @@
                   <td>
                     <div class="btn-group">
                       <button class="btn btn-primary" @click="sellResource(key, resourceChange[key])">Sell</button>
-                      <button class="btn btn-primary" @click="buyResource(key, resourceChange[key])">Buy</button>
+                      <button class="btn btn-primary" @click="buyResource({ type: key, amount: resourceChange[key] })">Buy</button>
                       <button class="btn btn-primary" @click="addResource(key, resourceChange[key])">Add</button>
                     </div>
                   </td>

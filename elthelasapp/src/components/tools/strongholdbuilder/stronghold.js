@@ -133,7 +133,7 @@ export default {
       let checkWeight = this.stronghold.laws.todaysExports + Number(amount) * this.unitWeightMod[type];
       this.stronghold.resources[type] -= Number(amount);
       this.stronghold.laws.todaysExports = checkWeight;
-      this.addToTreasury(Number(amount) * this.sellTable[type], "Sell " + amount + " " + type);
+      this.addToTreasury({ changeby: Number(amount) * this.sellTable[type], record: "Sell " + amount + " " + type });
     },
     addAnimal () {
       this.stronghold.animals.push({ id: Date.now() + Math.random(), ...this.newanimal });

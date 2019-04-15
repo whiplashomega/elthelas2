@@ -105,7 +105,7 @@ export default {
   methods: {
     ...mapActions({
       addImprovement: 'addImprovement',
-      addtoTreasury: 'addToTreasury',
+      addToTreasury: 'addToTreasury',
       buyResource: 'buyResource'
     }),
     addToConstruction (improvement) {
@@ -118,10 +118,10 @@ export default {
         for (let key in improvement.resourceCost) {
           this.stronghold.resources[key] -= improvement.resourceCost[key];
           if (this.stronghold.resources[key] < 0) {
-            this.buyResource(key, this.stronghold.resources[key] * -1);
+            this.buyResource({ type: key, amount: this.stronghold.resources[key] * -1 });
           }
         }
-        this.addToTreasury(-improvement.goldCost, "Begin construction on " + improvement.name);
+        this.addToTreasury({ changeby: -improvement.goldCost, record: "Begin construction on " + improvement.name });
       }
       this.addImprovementModal = false;
     }
