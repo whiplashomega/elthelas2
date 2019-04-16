@@ -145,7 +145,7 @@ export default {
       level = spell.level;
     }
     state.currentCharacter.availableslots[level]--;
-    state.currentCharacter.castlog.unshift({ ...spell });
+    state.currentCharacter.castlog.unshift({ ...spell, level: level });
   },
   shortrest: ({ state, getters }) => {
     state.currentCharacter.warlockslotsavailable = getters.warlockSlots;
