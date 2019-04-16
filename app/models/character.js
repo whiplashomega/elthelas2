@@ -16,7 +16,7 @@ var Character = new Schema({
   allies: { type: String, default: "" },
   backstory: { type: String, default: "" },
   bond: { type: String, default: "" },
-  castlog: { type: String, default: "" },
+  castlog: { type: Array, default: [] },
   eyes: { type: String, default: "" },
   family: { type: String, default: "" },
   gender: { type: String, default: "" },
