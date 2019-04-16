@@ -58,7 +58,11 @@ export default {
       });
   },
   loadChar: ({ state }, { character, comp }) => {
-    state.currentCharacter = character;
+    state.currentCharacter = Character();
+    for (let prop in character) {
+      state.currentCharacter[prop] = character[prop];
+    }
+    //state.currentCharacter = character;
     comp.$root.$emit('bv::hide::modal', 'servermodal');
   },
   updateToServer: ({ state }, comp) => {
