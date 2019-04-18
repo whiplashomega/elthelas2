@@ -30,7 +30,7 @@ Margo is looking to test her new airship design, based on the airships from her 
 
 The ship requires party members to continually man various stations, including:
 
-Spotter - Margo's pilot position has very poor visibility, she needs someone in the crows nest to call out directions
+**Spotter** - Margo's pilot position has very poor visibility, she needs someone in the crows nest to call out directions
 
 Regular check: DC 12 Perception Check to spot threats, and DC 12 Survival to point out the correct direction to go
 
@@ -38,7 +38,7 @@ Extreme Success: DC 20 Survival check to discover a faster route, increasing spe
 
 Bad effect on failure: Failure of perception check causes extra roll on hazards table, failure on survival check causes speed reduced by 1
 
-Coal Shoveler - the forward momentum is produced by twin turbines that run off a coal steam engine, the coal shoveler is responsible for making sure pressure on the steam engine stays constant by watching the pressure gauge on the engine and regularly shovelling coal into the boiler.
+**Coal Shoveler** - the forward momentum is produced by twin turbines that run off a coal steam engine, the coal shoveler is responsible for making sure pressure on the steam engine stays constant by watching the pressure gauge on the engine and regularly shovelling coal into the boiler.
 
 Regular check: DC 10 Strength check, DC 10 Constitution check. 
 
@@ -46,7 +46,7 @@ Extreme Success: DC 20 Strength check, DC 15 Constitution check: speed increased
 
 Bad effect on failure: speed reduced by 1 mph, gain 1 level of exhaustion.
 
-Air Pressure Controller - The ship's altitude and direction are managed by enslaved air elementals kept in special chambers. The air elementals regularly try to escape by pushing against their containers. When they do the excess pressure must be immediately released using a special valve. There are dozens of these valves placed at difficult to access locations on a large lead wall.
+**Air Pressure Controller** - The ship's altitude and direction are managed by enslaved air elementals kept in special chambers. The air elementals regularly try to escape by pushing against their containers. When they do the excess pressure must be immediately released using a special valve. There are dozens of these valves placed at difficult to access locations on a large lead wall.
 
 Regular check: DC 10 Acrobatics check. 
 
@@ -54,7 +54,7 @@ Extreme success: DC 15 Acrobatics increases altitude by 1.
 
 Bad effect on failure: ship repair reduced by 1
 
-Engineer - The engineer is responsible for making sure the arcane engine that harnesses the power of the air elementals continues working. The engine consists of a large copper apparatus with hundreds of arcanum crystals aligned at particular angles. Whomever is manning the engine must make sure that the crystals stay in alignment as the moving ship constantly jostles them around.
+**Engineer** - The engineer is responsible for making sure the arcane engine that harnesses the power of the air elementals continues working. The engine consists of a large copper apparatus with hundreds of arcanum crystals aligned at particular angles. Whomever is manning the engine must make sure that the crystals stay in alignment as the moving ship constantly jostles them around.
 
 Regular check: DC 13 Arcana Check
 
@@ -62,7 +62,7 @@ Extreme Success: DC 20 Arcana Check perfect alignment causes altitude to increas
 
 Bad effect on failure: altitude reduced by 1, speed reduced by 1 for that period
 
-Maintenance - Beyond specifically the arcane engine, the steam engine, and wooden hull need regular maintenance to keep up repair
+**Maintenance** - Beyond specifically the arcane engine, the steam engine, and wooden hull need regular maintenance to keep up repair
 
 Regular check: DC 10 (15) Intelligence check (advantage with tinkers tools and proficiency)
 
@@ -193,6 +193,8 @@ The Dragon has taken over a myconid colony as its base, killing the vast majorit
 
 [Run This Encounter](/runner/werebear&werebear&werebear)
 
+##### Prison Wing
+
 **33** This small hallway contains a giant bulbous mushroom. Walking close to the mushroom causes it to explode sending acid for 15 ft in all directions. People in the area must make a DC 13 Dexterity save or take 4d6 acid damage (save for half).
 
 **22** This guard room has 6 bugbears in it who are taking a break and playing cards, their loud laughter can be heard through the door. The room has 2 doors to the north and 1 leading east.
@@ -210,6 +212,20 @@ Besides the pegasus and the bee there are a number of giant rats that have been 
 [Run This Encounter](/runner/pegasus&giantbee&griffon&giantrat)
 
 **36** This area contains the possessions and food for the prisoners. There are a couple barrels of honey, a set of half-plate barding made for a pegasus, and a bunch of rat poison.
+
+##### Main Path
+
+**5** The east door from **4** leads to the electromagnet room. In the center of this room is a super-powerful magnet. Anyone wearing or carrying with them metal armor gets pulled towards the center. They must make a strength check to move away from the magnet with the DC determined by the distance from the magnet. Anyone wielding a metal weapon has disadvantage on attack rolls with that weapon.
+
+25 ft away - DC 8
+20 ft away - DC 10
+15 ft away - DC 13
+10 ft away - DC 17
+5 ft away - DC 20
+
+The enemies are all wearing leather armor and wielding greatclubs and longbows.
+
+[Run This Encounter](/runner/)
 
 **8 & 41** The antichamber. To the south twin gates block the entrance to Horroth's chamber, while to the north a series of trapped tunnels are designed to prevent unwanted visitors from reaching this location. The antichamber houses Horroth's personal guards, among them Satura Kalmuc, Magog the Bloody (leader of the goblins), Pargor the Mighty (leader of the Werebears), and a Clay Golem.
 

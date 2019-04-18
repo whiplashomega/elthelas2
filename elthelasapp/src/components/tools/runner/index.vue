@@ -156,7 +156,7 @@
              stacked="sm"
              :items="creatures"
              :fields="creaturestable.fields"
-             :filter="filter"
+             :filter-function="filter"
              :sort-by.sync="creaturestable.sortBy"
              :sort-desc.sync="creaturestable.sortDesc">
       <template slot="name" slot-scope="row"><a href="#" @click.stop="addToEncounter(row.item, row.index, $event.target)">{{ row.value }}</a></template>

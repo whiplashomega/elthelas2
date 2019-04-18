@@ -62,7 +62,7 @@ export default {
     for (let prop in character) {
       state.currentCharacter[prop] = character[prop];
     }
-    //state.currentCharacter = character;
+    // state.currentCharacter = character;
     comp.$root.$emit('bv::hide::modal', 'servermodal');
   },
   updateToServer: ({ state }, comp) => {

@@ -39,7 +39,7 @@
                  stacked="sm"
                  :items="spells"
                  :fields="spelltable.fields"
-                 :filter="spellfilter"
+                 :filter-function="spellfilter"
                  :sort-by.sync="spelltable.sortBy"
                  :sort-desc.sync="spelltable.sortDesc">
           <template slot="title" slot-scope="row">
@@ -1201,7 +1201,7 @@
                  stacked="sm"
                  :items="equipment"
                  :fields="equipmenttable.fields"
-                 :filter="equipmenttable.filter"
+                 :filter-function="equipmenttable.filter"
                  :sort-by.sync="equipmenttable.sortBy"
                  :sort-desc.sync="equipmenttable.sortDesc">
           <template slot="Item" slot-scope="row">
@@ -1229,7 +1229,7 @@
                  stacked="sm"
                  :items="armor"
                  :fields="armortable.fields"
-                 :filter="armortable.filter"
+                 :filter-function="armortable.filter"
                  :sort-by.sync="armortable.sortBy"
                  :sort-desc.sync="armortable.sortDesc">
         </b-table>
@@ -1254,7 +1254,7 @@
                  stacked="sm"
                  :items="weapons"
                  :fields="weapontable.fields"
-                 :filter="weapontable.filter"
+                 :filter-function="weapontable.filter"
                  :sort-by.sync="weapontable.sortBy"
                  :sort-desc.sync="weapontable.sortDesc">
         </b-table>
@@ -1310,7 +1310,7 @@
                      stacked="sm"
                      :items="magicscrolls"
                      :fields="magicitemtables.fields"
-                     :filter="magicitemfilter"
+                     :filter-function="magicitemfilter"
                      :sort-by.sync="magicitemtables.sortBy"
                      :sort-desc.sync="magicitemtables.sortDesc">
               <template slot="Item" slot-scope="row"><a href="#" @click.stop="magicItemInfo(row.item, row.index, $event.target)">{{ row.value }}</a></template>
@@ -1323,7 +1323,7 @@
                      stacked="sm"
                      :items="magicwands"
                      :fields="magicitemtables.fields"
-                     :filter="magicitemfilter"
+                     :filter-function="magicitemfilter"
                      :sort-by.sync="magicitemtables.sortBy"
                      :sort-desc.sync="magicitemtables.sortDesc">
               <template slot="Item" slot-scope="row"><a href="#" @click.stop="magicItemInfo(row.item, row.index, $event.target)">{{ row.value }}</a></template>
@@ -1336,7 +1336,7 @@
                      stacked="sm"
                      :items="magicweapons"
                      :fields="magicitemtables.fields"
-                     :filter="magicitemfilter"
+                     :filter-function="magicitemfilter"
                      :sort-by.sync="magicitemtables.sortBy"
                      :sort-desc.sync="magicitemtables.sortDesc">
               <template slot="Item" slot-scope="row"><a href="#" @click.stop="magicItemInfo(row.item, row.index, $event.target)">{{ row.value }}</a></template>
@@ -1349,7 +1349,7 @@
                      stacked="sm"
                      :items="magicarmor"
                      :fields="magicitemtables.fields"
-                     :filter="magicitemfilter"
+                     :filter-function="magicitemfilter"
                      :sort-by.sync="magicitemtables.sortBy"
                      :sort-desc.sync="magicitemtables.sortDesc">
               <template slot="Item" slot-scope="row"><a href="#" @click.stop="magicItemInfo(row.item, row.index, $event.target)">{{ row.value }}</a></template>
@@ -1362,7 +1362,7 @@
                      stacked="sm"
                      :items="magicother"
                      :fields="magicitemtables.fields"
-                     :filter="magicitemfilter"
+                     :filter-function="magicitemfilter"
                      :sort-by.sync="magicitemtables.sortBy"
                      :sort-desc.sync="magicitemtables.sortDesc">
               <template slot="Item" slot-scope="row"><a href="#" @click.stop="magicItemInfo(row.item, row.index, $event.target)">{{ row.value }}</a></template>

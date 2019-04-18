@@ -196,6 +196,6 @@ export default {
     }
   },
   created () {
-    console.log(this.magicscrolls);
+    // console.log(this.magicscrolls);
   }
 };
