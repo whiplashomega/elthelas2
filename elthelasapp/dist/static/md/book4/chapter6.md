@@ -223,15 +223,75 @@ Besides the pegasus and the bee there are a number of giant rats that have been 
 10 ft away - DC 17
 5 ft away - DC 20
 
-The enemies are all wearing leather armor and wielding greatclubs and longbows.
+Alerted by fighting in the front chamber, bugbear dragon cultists are waiting in sand filled sinkholes to ambush the party when they come into the room.
 
-[Run This Encounter](/runner/)
+[Run This Encounter](/runner/bugbeardragoncultist&bugbeardragoncultist&bugbeardragoncultist&bugbeardragoncultist&bugbeardragoncultist&bugbeardragoncultist)
 
-**8 & 41** The antichamber. To the south twin gates block the entrance to Horroth's chamber, while to the north a series of trapped tunnels are designed to prevent unwanted visitors from reaching this location. The antichamber houses Horroth's personal guards, among them Satura Kalmuc, Magog the Bloody (leader of the goblins), Pargor the Mighty (leader of the Werebears), and a Clay Golem.
+**29 & 30** This extended hallway has a lightning arc passing through the center between the two sections.
+
+**17** This area is a giant sand trap. The floor appears to be normal sand, but stepping onto it reveals it is in fact a giant sinkhole.
+
+**10, 21, & 35** This section is the werebear's quarters. A couple of werebears are sleeping soundly here and can be either snuck past or surprised (their passive perception while sleeping is 12)
+
+[Run This Encounter](/runner/werebear&werebear)
+
+**20, 34, & 24** The crossroads, to the west is the exit, to the southwest is the beasts wing, to the southeast is Horroth's personal wing and to the east is the general quarters. The crossroads chambers themselves are untrapped, but guarded by a werebear, a bugbear dragon cultist and 2 armored battle ogres in section **24**.
+
+##### East Wing
+
+**11 & 31** The East Wing is used to house Horroth's trusted staff. In this common area the goblins are holding a game of pigball. At the site of intruders they will attempt to scatter and flee.
+
+[Run This Encounter](/runner/goblin&goblin&goblin&goblin&goblin&goblin&goblin&goblin&goblin&goblin)
+
+**23** The bugbears sleeping quarters, when goblins flee into the room the bugbears will grab weapons and attack. There are 2 bugbear dragon cultists and 4 regular bugbears in the room.
+
+[Run This Encounter](/runner/bugbeardragoncultist&bugbeardragoncultist&bugbear&bugbear&bugbear&bugbear)
+
+**32** The goblins sleeping quarters.
+
+**9** The fleeing goblins will alert the werebears in this room who will attempt to confront the party. There are 3 werebears off duty.
+
+[Run This Encounter](/runner/werebear&werebear&werebear)
+
+**16** The armory. Can retreive a half-dozen fully charged lightning guns (6 charges each), various fits of studded leather armor and chain mail, and other mundane weapons. It is unguarded.
+
+##### Southwest Wing
+
+**12** Beast Tamers office. A number of small to medium beasts are in cages here, including a wolf, an eagle, a giant badger, and a few giant rats. The beast tamer himself is relatively non-threatening. Unlike the other servants of Horroth, he is a true hireling, hired for his skill at taming and training wild beasts, and holds no love for his master. He is a goblin and a coward, and under threat will offer to serve the party if they will spare his life and that of his beast trainees. If his life is spared he will warn them about the Behir in the next chamber. The behir is mind controlled with the help of an orb in the chamber, and is considered one of the dragon's greatest successes. The beastmaster will tell the party that Behir's are natural enemies of dragons, bred by giants to destroy them, and suggest that if they can break the mind control, the Behir is likely to immediately go after Horroth for revenge and ignore them.
+
+**7** The Behir's chamber.
+
+[Run This Encounter](/runner/behir)
+
+**28** The location of the mind control gem.
+
+**1** Ooze containment area. This area has a series of magical glass tubes, each containing a different kind of ooze.
+
+[Run This Encounter](/runner/blackpudding&gelatinouscube&grayooze&ochrejelly&slitheringtracker&whitemaw)
+
+**27 & 46** Spider den. This back hallway is filled with the webs of giant spiders. They will leave the players alone unless they purposefully intrude.
+
+[Run This Encounter](/runner/giantspider&giantspider&giantspider&giantspider)
+
+**15** If the party dealt with Horroth first, this room is empty. If not, Horroth, having become aware of the incursion into her dungeon by the party and deducing their goal to free the kobolds, has sent her son and her captains to intercept and stop them. Satura Kalmuc, Pargor the Mighty, Magog the Bloody and a Young Blue Dragon named Olatha confront the party to stop and kill them.
+
+[Run This Encounter](/runner/magogthebloody&saturakalmuc&pargorthemighty&youngbluedragon)
+
+**14, 13, 42, 30** This area is where the surviving kobolds not currently working have been relegated to sleep and live.
+
+**43** The treasure room of Horroth's daughter Olatha.
+
+0 cp, 0 sp, 16000 gp, 1900 pp. Gold circlet set with four aquamarines (2500 gp value) Large well-made tapestry (250 gp value) +1 Leather Armor (Leather) (4010 gp value) +1 Shortsword (3000 gp value) +1 Chain Shirt (Parakas Steel) (4680 gp value) Scroll of Create Undead (1600 gp value). Total value 51040 gp
+
+##### Horroth's Personal Section
+
+[Run This Encounter](/runner/battleogre&battleogre&bugbeardragoncultist&werebear)
+
+**8 & 41** The antichamber. To the south twin gates block the entrance to Horroth's chamber, while to the north a series of trapped tunnels are designed to prevent unwanted visitors from reaching this location. The antichamber houses Horroth's personal guards, among them Satura Kalmuc, Magog the Bloody (leader of the goblins), Pargor the Mighty (leader of the Werebears), and a Clay Golem. If the kobolds were freed first, only the clay golem will be here.
 
 [Run This Encounter](/runner/magogthebloody&saturakalmuc&pargorthemighty&claygolem)
 
-**3** Horroth's chamber. Horroth spends most of her time here, though she has her own exit as well, a large hole in the ceiling disguised by an illusion (a fact the kobolds are not aware of, but that could be discovered)
+**3** Horroth's chamber. Horroth spends most of her time here, though she has her own exit as well, through a sandy black wall. Should her son be killed with the party freeing the kobolds, she will retreat, taking her horde with her.
 
 [Run This Encounter](/runner/adultbluedragon)
 
@@ -270,7 +330,7 @@ The bells are labelled A - 1 A# - 2 B - 3 C - 4 C# - 5 D - 6 D# - 7 E - 8 F - 9 
 The name of our god – Dorun Forgesinger 
 (The last name is a trick to throw people off, it can be a nickname that people refer to Dorun as.)
 
-The first Dwarven King – (I don’t know this one,) Sikkoth Firebrand
+The first Dwarven King – Curin Highhammer
 
 The most famous dwarven builder – (Suggested names) Urmala Ashbender
 
@@ -280,13 +340,13 @@ The most famous dwarven entrepreneur – Vagruth Axebraid
 
 The most powerful dwarven mage - Ian Farbringer
 
-A corpse also lies within the room, from a month or so ago, of an orcish spy that attempted to enter. A medicine check reveals that they died from poison. If the players enter all the slabs, but any of them are incorrect, the room quickly fills up with poison gas until they either die, solve the puzzle, or open the door some other way. Obviously, you cannot expect players to know these guys we just made up. But instead of having them roll history checks for each one (Though they can do that if all else fails). Have them instead describe how their player would know each one first. For instance, if a paladin describes their holy teaching of ancient heroes pf gods, they are far more likely to know of Brehilda Leadarm. A wizard that studied at a college would know of the deads of Ein Farbringer. A very good description allows them to automatically succeed on a roll. Try and have each player do one.
+A corpse also lies within the room, from a month or so ago, of an orcish spy that attempted to enter. A medicine check reveals that they died from poison. If the players enter all the slabs, but any of them are incorrect, the room quickly fills up with poison gas until they either die, solve the puzzle, or open the door some other way. Obviously, you cannot expect players to know these guys we just made up. But instead of having them roll history checks for each one (Though they can do that if all else fails). Have them instead describe how their player would know each one first. For instance, if a paladin describes their holy teaching of ancient heroes of gods, they are far more likely to know of Brehilda Leadarm. A wizard that studied at a college would know of the deads of Ein Farbringer. A very good description allows them to automatically succeed on a roll. Try and have each player do one.
 
-Poisoned Water – Ahead in the tunnels there is a small stream of water with a sign that reads “Those that drink deep of the gifts of Dorun shall persevere”. Drinking the water forces the player to make a Con save against poison. Anyone resistant to poison automatically passes this saving throw. Anyone else must make a save or become poisoned in a special way. They feel foggy and light headed.
+**Poisoned Water** – Ahead in the tunnels there is a small stream of water with a sign that reads “Those that drink deep of the gifts of Dorun shall persevere”. Drinking the water forces the player to make a Con save against poison. Anyone resistant to poison automatically passes this saving throw. Anyone else must make a save or become poisoned in a special way. They feel foggy and light headed.
 
 Ahead of that area there is a small field of mushroom that must be passed. Anyone with a decent nature check can determine that these are known as “Caverns peace” mushroom. A very deadly and very rare mushroom that only grows deep in the underground. The mushrooms release toxic spores if disturbed, but they lose their toxicity in a day or so after being picked, so they do not make a good poison. Anyone that drank the water and did not fail can breathe the toxic spores without issues. Anyone that drank it and failed takes 8D8 poison damage (half on a successful Con save.) Anyone that didn’t drink the water takes 16D8 poison damage (half on a successful Con save.)
 
-Statues – The final puzzle leads them to a very very bright room. The first thing they notice is that there is an orb affixed to a stone pedestal in the center of this room that is giving off a permanent daylight spell. Even the players find it annoyingly bright.
+**Statues** – The final puzzle leads them to a very very bright room. The first thing they notice is that there is an orb affixed to a stone pedestal in the center of this room that is giving off a permanent daylight spell. Even the players find it annoyingly bright.
 The exit door has a pedestal that could have something placed on top of it before it, and 3 red crystals imbedded in the door. It reads “Where all dwarves feel at home”. In the room are six statues of dwarves, each holding an outstretch stone item.
 
 A warrior holds out a war hammer.
@@ -296,19 +356,19 @@ A Merchant holds out a bag of gold.
 A Cleric holds out a holy symbol of Dorun.
 A Scholar holds out a book.
 
-Whenever one of these items in placed on the pedestal one, a loud sound is made, one that clearly indicates incorrect, like a buzzer. And one of the lights on the door turns on. The trick is that none of these items answer the question properly. The real answer is that Dwarves feel at home in the dark underground. Players must cover up the daylight orb to reveal a glow-in-the-dark crystal plague in a recess in the wall. The plague reads “In the dark depths of the underground”. When placed on the pedestal it opens the door.
+Whenever one of these items in placed on the pedestal one, a loud sound is made, one that clearly indicates incorrect, like a buzzer. And one of the lights on the door turns on. The trick is that none of these items answer the question properly. The real answer is that Dwarves feel at home in the dark underground. Players must cover up the daylight orb to reveal a glow-in-the-dark crystal plaque in a recess in the wall. The plague reads “In the dark depths of the underground”. When placed on the pedestal it opens the door.
 
-Final Chamber – The final chamber is a massive room, thing airplane hanger sized, with a massive sliding double door at the end with the inscription “Curin keep Stronghold Southern Gate”. One could easily fit an army in the room, or an invading force. There is also a small sign on the door that reads “please knock”. The trap that I mentioned is that this massive door does not lead to the city in the depths, it doesn’t lead anywhere. The players aren’t anywhere close to it in terms of depth at this point. The entire room is designed to collapse and crush an invading force that tries to force the gate open.
+**Final Chamber** – The final chamber is a massive room, think airplane hanger sized, with a massive sliding double door at the end with the inscription “Highhammer Hold Eastern Gate”. One could easily fit an army in the room, or an invading force. There is also a small sign on the door that reads “please knock”. The trap that I mentioned is that this massive door does not lead to the city in the depths, it doesn’t lead anywhere. The players aren’t anywhere close to it in terms of depth at this point. The entire room is designed to collapse and crush an invading force that tries to force the gate open.
 
 Knocking on the door has a dwarf wizard use Thaumaturgy to have his voice echo in the room. He will ask the usual questions, assuming the players can gain his trust, he dimension doors into the room. He tells players he can take them to the city, but they will not be allowed to leave, and they may be executed for trespassing, as the dwarves cannot risk the location, defenses, and strategy’s getting into the hands of the enemy. After answering any more questions he casts teleportation circle to take them into the city.
 
-The Keep
+#### The Keep
 
  The players are lead from the teleportation circle, which is a heavily guarded secret, to Thornam Cavejaw, who is the one in charge of defense of the city. He is the wizards direct superior and the only one of the wizard can think of bringing them to. Thornam tells the players that the council probably will not listen to them. There is nothing they can offer to make them reconsider (Unless they actually have something that alludes to the Orcs plans, at the very least the dead orc spy had plans to use burrowing creatures).
 
 Thornam is absolutely confident in the defense of the stronghold. The dwarves have set up tectonic sensors to sense any burrowing creature. And even if they got past that, the rock at this depth is so thick it takes specially trained creatures to burrow it, and even then, they usually give those creatures special equipment to do it. An orc army burrowing in would be easy to notice, and fighting the dwarves in small dark tunnels would only be a slaughter for the orcs anyways, as they have mastered this technique. The commander confidently says “There is absolutely no way any orc army could ever possibly get into this stronghold!” (It is very cliché to have the attack happen right as he says it, but I think it would be funnier if your pause for a little bit, then describe the commander being aware of the claim he just made, and nervously look around, before saying “See? I told you that nothing could possibly -”). Then the attack begins.
 
-The Assault
+#### The Assault
 
 A massive light fills the extreme dark of the depths, a single hovering point above the city. It slowly expands larger and larger until it is the size of a ship. The light dims enough to see a Nautiloid, an ship of the illithid, thought to be lost to time, floating above the city. The sides of the ship bears the colors and symbol of the prince of fiends. A lone mind flayer stand on the farthest platform of the ship, looking down upon the city, he wears a unique helmet with many eyes that are able to see in all directions. The ship continues to be surrounded be the bubble of the astral sea.
 

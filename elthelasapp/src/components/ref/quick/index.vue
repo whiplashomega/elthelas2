@@ -1326,6 +1326,7 @@
                      :items="magicwands"
                      :fields="magicitemtables.fields"
                      :filter-function="magicitemfilter"
+                     :filter="magicitemtables.filter"
                      :sort-by.sync="magicitemtables.sortBy"
                      :sort-desc.sync="magicitemtables.sortDesc">
               <template slot="Item" slot-scope="row"><a href="#" @click.stop="magicItemInfo(row.item, row.index, $event.target)">{{ row.value }}</a></template>
@@ -1339,6 +1340,7 @@
                      :items="magicweapons"
                      :fields="magicitemtables.fields"
                      :filter-function="magicitemfilter"
+                     :filter="magicitemtables.filter"
                      :sort-by.sync="magicitemtables.sortBy"
                      :sort-desc.sync="magicitemtables.sortDesc">
               <template slot="Item" slot-scope="row"><a href="#" @click.stop="magicItemInfo(row.item, row.index, $event.target)">{{ row.value }}</a></template>
