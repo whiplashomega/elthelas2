@@ -12,7 +12,7 @@
           <div v-for="item in container.equipment" :key="item.id"
                class="smalltext" style="clear:both;">
             <button type="button" class="print-hide btn-symbol float-left" @click="item.edit = true">&#9998;</button>
-            <span :class="item.attunement ? 'attuned' : ''" :title="'Quantity: ' + item.quantity + ' Weight: ' + item.weight + ' lbs'">{{ item.name }}</span><br />
+            <span :class="item.attunement ? 'attuned' : ''" :title="'Quantity: ' + item.quantity + ' Weight: ' + item.weight + ' lbs'">{{ item.name }}</span><input type="number" class="charsheet-num" v-model="item.quantity" /><br />
             <b-modal v-model="item.edit" title="Edit Equipment">
               Name
               <input type="text" class="form-control" v-model="item.name" />
