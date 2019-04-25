@@ -8,7 +8,22 @@ export default {
       token: 'getUserInfo',
       character: "getCharacter",
       charlevel: "charlevel"
-    })
+    }),
+    charsorted () {
+      return this.characters.sort((a, b) => {
+        if (a.name > b.name) {
+          return 1;
+        } else if (b.name > a.name) {
+          return -1;
+        } else {
+          if (this.charlevel(a) > this.charlevel(b)) {
+            return 1;
+          } else {
+            return -1;
+          }
+        }
+      });
+    }
   },
   data () {
     return {

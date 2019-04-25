@@ -516,7 +516,7 @@
    "Time to Craft": 50
  },
  {
-   "Armor": "Plate",
+   "Armor": "Plate Armor",
    "Type": "Heavy",
    "Material": "Steel",
    "AC": 18,
@@ -528,7 +528,7 @@
    "Time to Craft": 200
  },
  {
-   "Armor": "Plate",
+   "Armor": "Plate Armor",
    "Type": "Heavy",
    "Material": "Adamantine",
    "AC": 18,
@@ -564,7 +564,7 @@
    "Time to Craft": 200
  },
  {
-   "Armor": "Plate",
+   "Armor": "Plate Armor",
    "Type": "Heavy",
    "Material": "Dragon Scale",
    "AC": 18,

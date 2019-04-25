@@ -2655,6 +2655,14 @@
   "Effect": "Snorting or smoking this powerful stimulant gives an incredible feeling of power to the user, heightening senses, improving strength, and increasing mental acuity. After using the dust the user gains a +4 bonus to strength, dexterity, intelligence, and Charisma; 2d8 temporary hitpoints; advantage on perception checks; and is immune to exhaustion for 1 hour. This does not remove levels of exhaustion already suffered, but suppresses any effects of that exhaustion. After the effect wears off the user suffers a level of exhaustion, and has disadvantage on all checks for 24 hours, this can be avoided by using more Magic Dust before the effect wears off. Using Magic Dust also brings with it the risk of addiction. After using Magic Dust, roll a d20. On a result of 4 or less the user becomes addicted to Magic Dust, suffering a constant desire to have more Dust, and cannot have less than 1 level of exhaustion unless they have used Magic Dust within the last 24 hours. This addiction can be removed by Greater Restoration."
  },
  {
+  "Item": "Opium Tea / Unprocessed Opium",
+  "Type": "Single Use",
+  "Cost (gp)": "5",
+  "Rarity": "Common",
+  "Attunement": "No",
+  "Effect": "Opium Tea is an incredibly calming drug used to dull pain and calm the nerves. Drinking this tea makes the user immune to fear and grants 1d4 temporary hitpoints, however it also immediately adds 1 level of exhaustion to the user. These effects last for 1 hour. Using Opium Tea also brings with it the risk of addiction. After using Opium Tea, roll a d20. On a result of 4 or less the user becomes addicted to Opium Tea, suffering a constant desire to have more Opium, and have their maximum hit points reduced by 5 unless they have used Opium within the last 24 hours. This addiction can be removed by Greater Restoration."
+ },
+ {
   "Item": "Case of Emergency",
   "Type": "Single Use",
   "Cost (gp)": "1000",
@@ -2677,5 +2685,29 @@
   "Rarity": "Uncommon",
   "Attunement": "No",
   "Effect": "When you reach into this bag you will always find a dagger. Once drawn out of the bag the dagger exists for 1 round before disappearing. Nothing else can be stored in the bag, but the bag acts as a quiver, requiring no action to draw a dagger out."
+ },
+ {
+  "Item": "Lesser Spellbook of Memory",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "4000",
+  "Rarity": "Uncommon",
+  "Attunement": "Yes (Wizard or Factotum)",
+  "Effect": "This spellbook is enchanted to enhance the memory of the user. The attuned wizard can copy spells into this spellbook (using the normal rules for copying spells), and can prepare an additional spell each day so long as that spell is scribed in this book."
+ },
+ {
+  "Item": "Spellbook of Memory",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "9000",
+  "Rarity": "Rare",
+  "Attunement": "Yes (Wizard or Factotum)",
+  "Effect": "This spellbook is enchanted to enhance the memory of the user. The attuned wizard can copy spells into this spellbook (using the normal rules for copying spells), and can prepare 3 additional spells each day so long as these spells are scribed in this book."
+ },
+ {
+  "Item": "Greater Spellbook of Memory",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "15000",
+  "Rarity": "Very Rare",
+  "Attunement": "Yes (Wizard or Factotum)",
+  "Effect": "This spellbook is enchanted to enhance the memory of the user. The attuned wizard can copy spells into this spellbook (using the normal rules for copying spells), and can prepare 5 additional spells each day so long as these spells are scribed in this book."
  }
 ]

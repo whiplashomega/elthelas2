@@ -4,7 +4,7 @@
     <div v-for="(attack, index) in character.attacks" :key="index" class="smalltext">
       <strong>{{ attack.name }}:</strong> {{ attack.type }},
       range {{ attack.range }},
-      <span v-if="attack.bonus > -1">+</span>{{ getAttackBonus(attack) }} to hit
+      <span v-if="getAttackBonus(attack) > -1">+</span>{{ getAttackBonus(attack) }} to hit
       ({{ attack.damage }}
       <span v-if="getAttackDamageBonus(attack) > 0">+ {{ getAttackDamageBonus(attack) }}</span>
       <span v-if="getAttackDamageBonus(attack) < 0"> - {{ getAttackDamageBonus(attack) }}</span> {{ attack.dtype }} damage

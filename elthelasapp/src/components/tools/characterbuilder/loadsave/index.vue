@@ -59,7 +59,7 @@
         <tr>
           <th>Character Name</th><th>Level</th><th>-</th>
         </tr>
-        <tr v-for="character in characters" :key="character._id">
+        <tr v-for="character in charsorted" :key="character._id">
           <td><span class="clickable" @click="loadChar({ character: character, comp: comp })">{{ character.name }}</span></td><td>{{ charlevel(character) }}</td>
           <td>
             <input type="button" @click="deleteFromServer({ character: character, comp: comp })"

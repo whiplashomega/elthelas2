@@ -31,13 +31,14 @@
         <tr><td>Morrindim</td><td>Morrind</td><td>Neran, Orc</td></tr>
         <tr><td>Nerim</td><td>Neran</td><td>Orc, Morrind</td></tr>
         <tr><td>Olda</td><td>Goblin</td><td>Orc, Elf</td></tr>
+        <tr><td>Riftlan Wilds</td><td>Hisru</td><td>Deran, one of Abyssal, Aquan, Auran, Celestial, Draconic, Ignan, Infernal, Sylvan, or Terran</td></tr>
         <tr><td>Sage</td><td>Orc</td><td>Goblin, Stagen</td></tr>
         <tr><td>Seran</td><td>Neran</td><td>Morrind</td></tr>
         <tr><td>Shendarel</td><td>Elf or Neran</td><td>Elf or Neran, Goblin</td></tr>
         <tr><td>Staelia</td><td>Staelic</td><td>Stagen</td></tr>
         <tr><td>Stagenheim</td><td>Stagen</td><td>Staelic, Hisru</td></tr>
         <tr><td>Terron</td><td>Neran</td><td>Imperial, Orc</td></tr>
-        <tr><td>Riftlan Wilds</td><td>Hisru</td><td>Deran, one of Abyssal, Aquan, Auran, Celestial, Draconic, Ignan, Infernal, Sylvan, or Terran</td></tr>
+        <tr><td>Waelin</td><td>Elf</td><td>Imperial, Sylvan</td></tr>
         <tr><td>Zelfir</td><td>Hisru</td><td>Staelic, Morrind</td></tr>
       </tbody>
     </table>
