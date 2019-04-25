@@ -32,8 +32,10 @@
             </b-modal>
           </div>
         </div>
-        <button type="button" class="btn btn-sm btn-primary print-hide" @click="equipModal = true">+Equipment</button>
-        <button type="button" class="btn btn-sm btn-primary print-hide" @click="containModal = true">+Container</button>
+        <div class="btn-group" style="clear:both;">
+          <button type="button" class="btn btn-sm btn-primary print-hide" @click="equipModal = true">+Equipment</button>
+          <button type="button" class="btn btn-sm btn-primary print-hide" @click="containModal = true">+Container</button>
+        </div>
         <b-modal v-model="equipModal" title="Add Equipment">
           Quantity
           <input type="number" class="form-control" v-model="newequip.quantity" />
