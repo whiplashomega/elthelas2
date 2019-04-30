@@ -83,8 +83,10 @@ router.post('/register', function(req, res) {
 });
 
 router.post('/login', function(req, res, next) {
+    console.log('begin user login');
     passport.authenticate('local', function(err, user, info) {
         if (err) {
+            console.log('Authentication error: ' + err);
             return next(err);
         }
         if(!user) {
