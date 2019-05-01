@@ -11,9 +11,6 @@
   </div>
 </template>
 <style src="./scss/globalstyles.scss" lang="scss">
-#pagebody {
-  margin-bottom: 60px;
-}
 </style>
 <script>
 
