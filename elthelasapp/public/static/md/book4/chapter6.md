@@ -299,6 +299,20 @@ Alerted by fighting in the front chamber, bugbear dragon cultists are waiting in
 
 **47** Horroth's horde. 0 cp, 0 sp, 37000 gp, 26000 pp. Turquoise (10 gp value) Blue sapphire (1000 gp value) Diamond (5000 gp value) Emerald (1000 gp value) A necklace string of small pink pearls (2500 gp value) Chrysoprase (50 gp value) Gold ring set with bloodstones (250 gp value) Smoldering Breastplate (Mithril) (1100 gp value) Potion of Superior Healing (800 gp value) Wand of Blade Ward (1000 gp value) Wand of Prestidigitation (1000 gp value) Scroll of Elemental Bane (400 gp value) Scroll of Bones of the Earth (1600 gp value). Total value 312710 gp
 
+### Bandits in the Hills
+
+Bratal Flathide runs a large company of bandits that have terrorized the entire area for some time. People in town know of him, but do not know where he is hiding. At some point while the party is out and about outside the city, a group of his bandits will attack the party. It should be an easy fight for them.
+
+[Run This Encounter](/runner/archer&knight&bandit&bandit&bandit&bandit&bandit&bandit&archer&bandit&bandit&bandit)
+
+Bratal himself rarely leaves his central camp.
+
+
+
+### The Deep Maps
+
+
+
 ### The Tunnel Entrance
 
 Asking around town, the townsfolk can easily point them in the direction of the dwarven hold entrance, but they all say its pointless as it is unmanned and impassible. If they players do bother to venture there it a massive magically enchanted metal door that prevents teleport or any entry. And indeed it is unmanned, no one responds to their call.
@@ -374,6 +388,16 @@ A massive light fills the extreme dark of the depths, a single hovering point ab
 
 Orc soldiers begin pouring down dozens of ropes, using special hand grips that allow them to fall down a rope, and slow themselves before they reach the bottom. These grips are called sky grips, and you could perhaps have the players discover orc plans to have hundreds of these created, but for what purpose is unknown. The mind flyer above is giving out orders to the orc leaders below in the assault. So even though the orcs have just arrived, they fight and act like they know the city very well, able to predict dwarfs’ soldiers movements, able to set up mini-ambushes. The home field advantage of the dwarves is gone.
 
+The orcs will move in battle squads through the city.
+
+[Orc Assault Squad Type 1](/runner/orcwarcaptain&orcbattlesorcerer&battleogre&orctrainedberserker&orctrainedberserker&orctrainedberserker&orctrainedberserker)
+
+Squad type 1 uses an armored ogre as a central tank in front. Once the Ogre engages tanky PCs, the Berserkers flank in to crush weaker back-line troops.
+
+[Orc Assault Squad Type 2](/runner/orcwarcaptain&orcwarcleric&orceliteguard&orceliteguard&orceliteguard&orcelitearcher&orcelitearcher&orcelitearcher)
+
+Squad type 2 fortifies choke points, laying down barriers to create cover and then the cleric and elite guards lock down opponents while the archers lay into them from behind.
+
 The ship continues to be in this bubble of the astral sea. Any ranged attacks that start from outside the bubble, lose all momentum once they enter it. Fireballs and arrows that attack the ship, stop in midair within the astral sea, as there are orcs still on the ship, whose sole job is to think the projectiles into stopping.
 
 Once this starts going down, Thornam begins immediately relaying orders, completely ignoring the players. If they ask to help, he simply tells them to stay out of the way, as he believes they are somehow involved (Which they might be, the orcs needed to know the location of the stronghold in order to arrive there). If they persist, Thornam will order a rookie dwarf soldier to take them to the dungeons, then everyone except the rookie leaves. The rookie doesn’t care if they actually go to the dungeons or not, he just wants to not have to fight on his first day.
@@ -384,6 +408,10 @@ The main thing they must do if they are to stop the invasion is kill the mind fl
 
 There are many ropes that are attached to the ship that the players could attempts to climb, though orcs would comes down the ropes to fight them. I think it would be rather interesting to have a combat encounter just on the ropes, as orcs attempt to cut the players ropes, swing down to meet them in combat, or maybe throw things at them from above (They don’t have arrows or oil prepared, as they figured people wouldn’t get this close to the ship.)
 
-Once on the ship they can see a massive orc army within the astral sea. They enter the ship, the exit it to get into the stronghold. The mind flyer, and perhaps either some orc guards (boring) or some pet creature he has waits to fight the players. Most of the orcs on the ship are mooks, meant to kill peasants and sow chaos rather than an elite fighting force.
+Once on the ship they can see a massive orc army within the astral sea. They enter the ship, the exit it to get into the stronghold.
+
+The Mind Flayer is guarded by his two pet umber hulks. Additionally, at the end of each round (initiative 0) a random orc war machine creature will jump onto the ship from the astral sea and engage.
+
+[Run This Encounter](/runner/mindflayer&umberhulk&umberhulk)
 
 Once defeated the ship exits the astral sea, and is affected by gravity and comes crashing down on the city. The council easily sees they are not safe from the might and resources of the prince of fiends, and is willing to listen to the players and join the war. 

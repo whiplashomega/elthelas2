@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "2ebb988d71c2da158f27ebc7c2015b2f",
+    "revision": "7b80d8db9d34e381369218482bf14cab",
     "url": "/index.html"
   },
   {
@@ -124,7 +124,7 @@ self.__precacheManifest = [
     "url": "/json/continents.json"
   },
   {
-    "revision": "8378a96ea1bf07f6199d10a0b3c5c686",
+    "revision": "cd1e9b20384189c2cb1bc17007b78ab5",
     "url": "/json/creatures.json"
   },
   {
@@ -148,8 +148,8 @@ self.__precacheManifest = [
     "url": "/json/gods.json"
   },
   {
-    "revision": "8129384d1ccc38b26c16",
-    "url": "/js/app.d12518d1.js"
+    "revision": "9a23b2bb4995509a0d1a",
+    "url": "/js/app.d1e4794b.js"
   },
   {
     "revision": "f1d6dd353be35139a76e",
@@ -256,7 +256,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chapter5.md"
   },
   {
-    "revision": "46e266d73b94d90cd8f698e0f8dd989b",
+    "revision": "e420f42ac240580438173638799b186c",
     "url": "/static/md/book4/chapter6.md"
   },
   {
@@ -288,7 +288,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/pcs.md"
   },
   {
-    "revision": "8129384d1ccc38b26c16",
+    "revision": "9a23b2bb4995509a0d1a",
     "url": "/css/app.b861a1a8.css"
   },
   {

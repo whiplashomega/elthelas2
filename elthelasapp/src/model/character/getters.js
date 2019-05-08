@@ -342,8 +342,9 @@ export default {
   warlockSlotLevel: (state) => {
     return Math.min(state.currentCharacter.charclasses.reduce((level, a) => {
       if (a.thisclass.name === "Warlock") {
-        level = Math.ceil(a.level / 2.0);
+        level = Math.ceil(Number(a.level) / 2.0);
       }
+      return level;
     }, 0), 5);
   },
   level: (state) => {
