@@ -488,7 +488,7 @@ export default {
     }
     let servants = needed.filter((a) => { return a.name === "Servant"; })[0];
     if (servants) {
-      servants.num -= this.stronghold.servants;
+      servants.num -= state.current.servants;
       if (servants.num <= 0) {
         needed.splice(needed.indexOf(servants), 1);
       }
