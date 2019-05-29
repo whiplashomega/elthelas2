@@ -207,7 +207,7 @@ export default {
     if (a.type === "Medium Armor") {
       let medmaster = state.currentCharacter.feats.filter((a) => {
         return a.name === "Medium Armor Master";
-      })[0];
+      });
       let maxdex = 2;
       if (medmaster.length > 0) {
         maxdex++;
