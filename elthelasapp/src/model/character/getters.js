@@ -205,7 +205,17 @@ export default {
   armorac: (state, getters) => (a) => {
     var ac = Number(a.ac);
     if (a.type === "Medium Armor") {
-      ac = Number(a.ac) + Math.min(2, getters.getStatMod(1));
+      let medmaster = state.currentCharacter.feats.filter((a) => {
+        return a.name === "Medium Armor Master";
+      })[0];
+      let maxdex = 2;
+      if (medmaster.length > 0) {
+        maxdex++;
+      }
+      if (a.name.toLowerCase().includes("mithril")) {
+        maxdex++;
+      }
+      ac = Number(a.ac) + Math.min(maxdex, getters.getStatMod(1));
     } else if (a.type === 'Light Armor') {
       ac = Number(a.ac) + getters.getStatMod(1);
     } else if (a.type === "Unarmored Bonus") {

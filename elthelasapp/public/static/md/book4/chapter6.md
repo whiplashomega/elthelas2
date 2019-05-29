@@ -281,7 +281,7 @@ Alerted by fighting in the front chamber, bugbear dragon cultists are waiting in
 
 **43** The treasure room of Horroth's daughter Olatha.
 
-0 cp, 0 sp, 16000 gp, 1900 pp. Gold circlet set with four aquamarines (2500 gp value) Large well-made tapestry (250 gp value) +1 Leather Armor (Leather) (4010 gp value) +1 Shortsword (3000 gp value) +1 Chain Shirt (Parakas Steel) (4680 gp value) Scroll of Create Undead (1600 gp value). Total value 51040 gp
+0 cp, 0 sp, 8000 gp, 900 pp. Gold circlet set with four aquamarines (2500 gp value) Large well-made tapestry (250 gp value) +1 Leather Armor (Leather) (4010 gp value) +1 Shortsword (3000 gp value) +1 Chain Shirt (Parakas Steel) (4680 gp value) Scroll of Create Undead (1600 gp value). Total value 33040 gp
 
 ##### Horroth's Personal Section
 
@@ -297,7 +297,7 @@ Alerted by fighting in the front chamber, bugbear dragon cultists are waiting in
 
 **45** The Teleportation Circle. Horroth chose this location for her new lair because the Myconids had already set up a teleportation circle, making it easy for her to transport her loot and all her minions here from her old lair.
 
-**47** Horroth's horde. 0 cp, 0 sp, 37000 gp, 26000 pp. Turquoise (10 gp value) Blue sapphire (1000 gp value) Diamond (5000 gp value) Emerald (1000 gp value) A necklace string of small pink pearls (2500 gp value) Chrysoprase (50 gp value) Gold ring set with bloodstones (250 gp value) Smoldering Breastplate (Mithril) (1100 gp value) Potion of Superior Healing (800 gp value) Wand of Blade Ward (1000 gp value) Wand of Prestidigitation (1000 gp value) Scroll of Elemental Bane (400 gp value) Scroll of Bones of the Earth (1600 gp value). Total value 312710 gp
+**47** Horroth's horde. 0 cp, 0 sp, 57000 gp, 8000 pp. Turquoise (10 gp value) Blue sapphire (1000 gp value) Diamond (5000 gp value) Emerald (1000 gp value) A necklace string of small pink pearls (2500 gp value) Chrysoprase (50 gp value) Gold ring set with bloodstones (250 gp value) Smoldering Breastplate (Mithril) (1100 gp value) Potion of Superior Healing (800 gp value) Wand of Blade Ward (1000 gp value) Wand of Prestidigitation (1000 gp value) Scroll of Elemental Bane (400 gp value) Scroll of Bones of the Earth (1600 gp value). Total value 152710 gp
 
 ### Bandits in the Hills
 
