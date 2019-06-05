@@ -51,6 +51,7 @@
               <select v-if="spell.level !== 'cantrip'" v-model="spell.castLevel">
                 <option>{{ Number(spell.level) }}</option>
                 <option v-for="i in 9 - spell.level" :key="i">{{ Number(i) + Number(spell.level) }}</option>
+                <option v-if="warlockSlotLevel >= spell.level" value="warlock">warlock</option>
               </select>
             </td>
             <td><button type="button" class="btn btn-sm btn-danger print-hide" @click="removeSpell(spell)">X</button></td>

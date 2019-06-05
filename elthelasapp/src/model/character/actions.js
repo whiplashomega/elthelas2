@@ -138,14 +138,19 @@ export default {
   removeContainer({ state }, i) {
     state.currentCharacter.containers.splice(state.currentCharacter.containers.indexOf(i), 1);
   },
-  castSpell({ state }, spell) {
-    if (spell.level !== 'cantrip') {
+  castSpell({ state, getters }, spell) {
+    if (spell.level !== 'cantrip' && spell.castLevel !== "warlock") {
       var level = 'level' + spell.castLevel;
     } else {
       level = spell.level;
     }
-    state.currentCharacter.availableslots[level]--;
-    state.currentCharacter.castlog.unshift({ ...spell, level: level });
+    if (spell.castLevel === "warlock") {
+      state.currentCharacter.warlockslotsavailable--;
+      state.currentCharacter.castlog.unshift({ ...spell, level: getters.warlockSlotLevel });
+    } else {
+      state.currentCharacter.availableslots[level]--;
+      state.currentCharacter.castlog.unshift({ ...spell, level: level });
+    }
   },
   shortrest: ({ state, getters }) => {
     state.currentCharacter.warlockslotsavailable = getters.warlockSlots;
