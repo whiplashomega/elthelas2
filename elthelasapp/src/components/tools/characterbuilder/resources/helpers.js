@@ -16,8 +16,8 @@ export default {
       }
     }
   },
-  bardResources (character, a) {
-    var inspiration = { name: "Bardic Inspiration", current: this.getStatMod(5), max: this.getStatMod(5), recharge: "longrest" };
+  bardResources (vue, character, a) {
+    var inspiration = { name: "Bardic Inspiration", current: vue.getStatMod(5), max: vue.getStatMod(5), recharge: "longrest" };
     if (Number(a.level) >= 5) {
       inspiration.recharge = "shortrest";
     }
@@ -78,6 +78,7 @@ export default {
         superiority.current++;
         superiority.max++;
       }
+      character.resources.push(superiority);
     }
   },
   paladinResources (vue, character, a) {

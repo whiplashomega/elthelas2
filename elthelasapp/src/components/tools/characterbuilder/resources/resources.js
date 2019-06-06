@@ -21,7 +21,7 @@ export default {
           helpers.barbResources(this.character, a);
         }
         if (a.thisclass.name === "Bard") {
-          helpers.bardResources(this.character, a);
+          helpers.bardResources(this, this.character, a);
         }
         if (a.thisclass.name === "Cleric") {
           helpers.clericResources(this.character, a);
