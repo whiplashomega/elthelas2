@@ -80,14 +80,14 @@ export default {
       }
     }
   },
-  paladinResources (character, a) {
+  paladinResources (vue, character, a) {
     character.resources.push({ name: "Lay on Hands", current: Number(a.level) * 5, max: Number(a.level) * 5, recharge: "longrest" });
-    character.resources.push({ name: "Divine Sense", current: this.getStatMod(5) + 1, max: this.getStatMod(5) + 1, recharge: "longrest" });
+    character.resources.push({ name: "Divine Sense", current: vue.getStatMod(5) + 1, max: vue.getStatMod(5) + 1, recharge: "longrest" });
     if (a.level >= 3) {
       character.resources.push({ name: "Channel Divinity", current: 1, max: 1, recharge: "shortrest" });
     }
     if (a.level >= 14) {
-      character.resources.push({ name: "Cleansing Touch", current: this.getStatMod(5), max: this.getStatMod(5), recharge: "longrest" });
+      character.resources.push({ name: "Cleansing Touch", current: vue.getStatMod(5), max: vue.getStatMod(5), recharge: "longrest" });
     }
   },
   wizardResources (character, a) {

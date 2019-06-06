@@ -4,7 +4,8 @@ import helpers from './helpers';
 export default {
   computed: {
     ...mapGetters({
-      character: "getCharacter"
+      character: "getCharacter",
+      getStatMod: "getStatMod"
     })
   },
   methods: {
@@ -39,7 +40,7 @@ export default {
           this.character.resources.push({ name: "Ki", current: Number(a.level), max: Number(a.level), recharge: "shortrest" });
         }
         if (a.thisclass.name === "Paladin") {
-          helpers.paladinResources(this.character, a);
+          helpers.paladinResources(this, this.character, a);
         }
         if (a.thisclass.name === "Sorcerer" && Number(a.level) >= 2) {
           this.character.resources.push({ name: "Sorcery Points", current: Number(a.level), max: Number(a.level), recharge: "longrest" });
