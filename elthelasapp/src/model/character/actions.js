@@ -164,7 +164,7 @@ export default {
     dispatch("shortrest").then(() => {
       for (var prop in state.currentCharacter.availableslots) {
         if (prop !== 'cantrip') {
-          state.currentCharacter.availableslots[prop] = state.totalslots(prop);
+          state.currentCharacter.availableslots[prop] = getters.totalslots(prop);
         }
       }
       state.currentCharacter.hpcurrent = getters.getHPTotal;
