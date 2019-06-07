@@ -2,24 +2,44 @@ import { mapGetters } from 'vuex';
 import marked from 'marked';
 
 export default {
-  computed: mapGetters({
-    title: 'title',
-    spells: 'allSpells',
-    equipment: 'allEquipment',
-    armor: 'allArmor',
-    weapons: 'allWeapons',
-    magicitems: 'allMagicItems',
-    magicwands: 'allMagicWands',
-    magicscrolls: 'allMagicScrolls',
-    magicweapons: 'allMagicWeapons',
-    magicarmor: 'allMagicArmor',
-    magicother: 'allMagicOther',
-    commons: 'allCommons',
-    uncommons: 'allUncommons',
-    rares: 'allRares',
-    veryrares: 'allVeryRares',
-    legendaries: 'allLegendaries'
-  }),
+  computed: {
+    ...mapGetters({
+      title: 'title',
+      spells: 'allSpells',
+      equipment: 'allEquipment',
+      armor: 'allArmor',
+      weapons: 'allWeapons',
+      magicitems: 'allMagicItems',
+      magicwands: 'allMagicWands',
+      magicscrolls: 'allMagicScrolls',
+      magicweapons: 'allMagicWeapons',
+      magicarmor: 'allMagicArmor',
+      magicother: 'allMagicOther',
+      commons: 'allCommons',
+      uncommons: 'allUncommons',
+      rares: 'allRares',
+      veryrares: 'allVeryRares',
+      legendaries: 'allLegendaries'
+    }),
+    filteredWands () {
+      return this.magicwands.filter(this.magicitemfilter);
+    },
+    filteredScrolls () {
+      return this.magicscrolls.filter(this.magicitemfilter);
+    },
+    filteredWeapons () {
+      return this.magicweapons.filter(this.magicitemfilter);
+    },
+    filteredArmor () {
+      return this.magicarmor.filter(this.magicitemfilter);
+    },
+    filteredOther () {
+      return this.magicother.filter(this.magicitemfilter);
+    },
+    filteredSpells () {
+      return this.spells.filter(this.spellfilter);
+    }
+  },
   data: function() {
     return {
       spelltable: {

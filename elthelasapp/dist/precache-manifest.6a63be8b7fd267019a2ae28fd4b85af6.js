@@ -56,12 +56,12 @@ self.__precacheManifest = [
     "url": "/js/geography.88d4ebe2.js"
   },
   {
-    "revision": "8add73c0931750c95e40",
-    "url": "/css/quickref.a2e6a52f.css"
+    "revision": "8faa2cb9698da5ffac16",
+    "url": "/css/quickref.183a88c4.css"
   },
   {
-    "revision": "8add73c0931750c95e40",
-    "url": "/js/quickref.35f9355f.js"
+    "revision": "8faa2cb9698da5ffac16",
+    "url": "/js/quickref.f0280ef1.js"
   },
   {
     "revision": "48837380241a00dbf298",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "30d6878da2f58aff6639e6e5a33b64d8",
+    "revision": "dd9ced466ee5fb7d05035d544c5ee9e2",
     "url": "/index.html"
   },
   {
@@ -148,8 +148,8 @@ self.__precacheManifest = [
     "url": "/json/gods.json"
   },
   {
-    "revision": "0e7bcb1e629f4bb81eb3",
-    "url": "/js/app.69aebae9.js"
+    "revision": "d0338c218d2370caae26",
+    "url": "/js/app.328b6a25.js"
   },
   {
     "revision": "31f2512c46ed08013cb9",
@@ -160,7 +160,7 @@ self.__precacheManifest = [
     "url": "/json/landmarks.json"
   },
   {
-    "revision": "40220ec6c6c8430cfadfe1c44a293d27",
+    "revision": "6ac95d43441c47c00c34a31f2fce0966",
     "url": "/json/magicitems.json"
   },
   {
@@ -288,7 +288,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/pcs.md"
   },
   {
-    "revision": "0e7bcb1e629f4bb81eb3",
+    "revision": "d0338c218d2370caae26",
     "url": "/css/app.b861a1a8.css"
   },
   {

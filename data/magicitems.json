@@ -2695,6 +2695,22 @@
   "Effect": "This spellbook is enchanted to enhance the memory of the user. The attuned wizard can copy spells into this spellbook (using the normal rules for copying spells), and can prepare an additional spell each day so long as that spell is scribed in this book."
  },
  {
+  "Item": "Shield Wand Case",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "600",
+  "Rarity": "Common",
+  "Attunement": "No",
+  "Effect": "This specially crafted case consists of a twisted metal rod with a hollow tube on one end. When properly installed on a shield (a permanent modification) the rod sticks out several inches from the center of the shields face, while the hollow tube ends just next to the hand grip on the shield, allowing one to stick a magic wand into the tube and hold it while also gripping the hand grip. This allows the user to use the wand from their shield hand without needing a separate free hand for it. This does not eliminate the need to have a free hand for somatic and material components of spells outside of whatever spell is provided by the wand."
+ },
+ {
+  "Item": "Haft Wand Case",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "600",
+  "Rarity": "Common",
+  "Attunement": "No",
+  "Effect": "This specially crafted weapon handle consists of a hollow metal rod that attaches to a more typical weapon handle, and must be specifically crafted for the weapon in question. When properly attached to a weapon (a permanent modification) this allows the user to use the wand placed within the weapon without needing a separate free hand for it. This does not eliminate the need to have a free hand for somatic and material components of spells outside of whatever spell is provided by the wand."
+ },
+ {
   "Item": "Spellbook of Memory",
   "Type": "Wondrous Item",
   "Cost (gp)": "9000",
