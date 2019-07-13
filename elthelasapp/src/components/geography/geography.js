@@ -78,6 +78,10 @@ export default {
       this.markers.push(marker);
     },
     clearmarkers () {
+      this.terrlayers.forEach((t) => {
+        this.map.removeLayer(t);
+      });
+      this.terrlayers = [];
       for (let i = 0; i < this.markers.length; i++) {
         this.map.removeLayer(this.markers[i]);
       }
@@ -90,6 +94,11 @@ export default {
       }
       for (let x = 0; x < this.nations.length; x++) {
         this.addmarker(this.nations[x], 'nation');
+        if (this.nations[x].bordercoords) {
+          var terr = L.polygon(this.nations[x].bordercoords, { color: this.nations[x].color });
+          terr.addTo(this.map);
+          this.terrlayers.push(terr);
+        }
       }
       for (let x = 0; x < this.landmarks.length; x++) {
         this.addmarker(this.landmarks[x], 'landmark');
@@ -111,6 +120,11 @@ export default {
       this.clearmarkers();
       for (var x = 0; x < this.nations.length; x++) {
         this.addmarker(this.nations[x], 'nation');
+        if (this.nations[x].bordercoords) {
+          var terr = L.polygon(this.nations[x].bordercoords, { color: this.nations[x].color });
+          terr.addTo(this.map);
+          this.terrlayers.push(terr);
+        }
       }
     },
     showLandmarks () {
@@ -209,12 +223,13 @@ export default {
       primaryAreaUnit: 'sqmiles'
     });
     measureControl.addTo(this.map);
-    L.tileLayer('https://elthelas-images.herokuapp.com//maps/tiles/{z}/{y}/{x}.png', {
-      attribution: 'map image created by Heather Domaszek',
+    L.tileLayer('https://elthelas-images.herokuapp.com/maps/newmap/tiles/{z}/{y}/{x}.png', {
+      attribution: 'map image created by Joseph Harrison',
       minZoom: 0,
       maxZoom: 5,
       tms: true,
-      noWrap: false
+      noWrap: false,
+      tileSize: L.point(256, 256)
     }).addTo(this.map);
     L.control.scale({ maxWidth: 300 }).addTo(this.map);
   }

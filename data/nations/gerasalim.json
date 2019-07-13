@@ -2,9 +2,14 @@
   "name": "Gerasalim", 
   "primelanguage": "",
   "seclanguages": [],
-  "coords": [40.38002840251183, 85.43380737304689],
-  "border-coords": [],
-  "color": "#FFFF00",
+  "coords": [61.73705351838136, 58.48282049043948],
+  "bordercoords": [
+    [57.87433972843447, 59.36075788346858],
+    [60.63582622096303, 63.00592124586621],
+    [62.6391349133703, 60.5465339170196],
+    [63.49497665139195, 54.925077165370254]
+  ],
+  "color": "#0000FF",
   "map": "https://elthelas-images.herokuapp.com/maps/nations/Gerasalim.jpg",
   "capitol": "Strovenguard",
   "cities": ["Eastguard", "Northport"],
