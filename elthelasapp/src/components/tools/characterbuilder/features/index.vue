@@ -11,6 +11,7 @@
     </div>
     <!-- Death Saves -->
     <div class="charsheet-static">
+      <h4>Death Saves</h4>
       Sucesses: <input type="number" class="charsheet-num" v-model="character.deathsuccess" /><br />
       Failures: <input type="number" class="charsheet-num" v-model="character.deathfail" />
     </div>
