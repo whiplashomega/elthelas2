@@ -1,3 +1,5 @@
+/* global navigator */
+
 import { mapGetters } from 'vuex';
 import L from 'leaflet';
 import 'leaflet-measure';
@@ -34,7 +36,9 @@ export default {
       continent: { description: "" },
       otherSize: 0,
       terrlayers: [],
-      warmap: false
+      warmap: false,
+      mouselat: 0,
+      mouselong: 0
     };
   },
   methods: {
@@ -77,6 +81,16 @@ export default {
       marker.addTo(this.map);
       this.markers.push(marker);
     },
+    addpolygon (nation) {
+      if (nation.bordercoords) {
+        var terr = L.polygon(nation.bordercoords, { color: nation.color });
+        terr.addTo(this.map);
+        $(terr).click(() => {
+          this.showdetails(nation, 'nation');
+        });
+        this.terrlayers.push(terr);
+      }
+    },
     clearmarkers () {
       this.terrlayers.forEach((t) => {
         this.map.removeLayer(t);
@@ -94,11 +108,7 @@ export default {
       }
       for (let x = 0; x < this.nations.length; x++) {
         this.addmarker(this.nations[x], 'nation');
-        if (this.nations[x].bordercoords) {
-          var terr = L.polygon(this.nations[x].bordercoords, { color: this.nations[x].color });
-          terr.addTo(this.map);
-          this.terrlayers.push(terr);
-        }
+        this.addpolygon(this.nations[x]);
       }
       for (let x = 0; x < this.landmarks.length; x++) {
         this.addmarker(this.landmarks[x], 'landmark');
@@ -112,6 +122,9 @@ export default {
     },
     showCities () {
       this.clearmarkers();
+      for (let x = 0; x < this.nations.length; x++) {
+        this.addpolygon(this.nations[x]);
+      }
       for (var x = 0; x < this.cities.length; x++) {
         this.addmarker(this.cities[x], 'city');
       }
@@ -120,11 +133,7 @@ export default {
       this.clearmarkers();
       for (var x = 0; x < this.nations.length; x++) {
         this.addmarker(this.nations[x], 'nation');
-        if (this.nations[x].bordercoords) {
-          var terr = L.polygon(this.nations[x].bordercoords, { color: this.nations[x].color });
-          terr.addTo(this.map);
-          this.terrlayers.push(terr);
-        }
+        this.addpolygon(this.nations[x]);
       }
     },
     showLandmarks () {
@@ -143,23 +152,6 @@ export default {
       this.clearmarkers();
       for (var x = 0; x < this.continents.length; x++) {
         this.addmarker(this.continents[x], 'continent');
-      }
-    },
-    showWarMap () {
-      if (this.warmap === false) {
-        this.territories.forEach((t) => {
-          t.areas.forEach((a) => {
-            var terr = L.polygon(a, { color: t.color });
-            terr.addTo(this.map);
-            this.terrlayers.push(terr);
-          });
-        });
-        this.warmap = true;
-      } else {
-        this.terrlayers.forEach((t) => {
-          this.map.removeLayer(t);
-        });
-        this.warmap = false;
       }
     },
     start () {
@@ -215,8 +207,15 @@ export default {
     });
     L.Marker.prototype.options.icon = DefaultIcon;
     this.map = L.map('map', {}).setView([0, 0], 2);
+    var thisvue = this;
+    this.map.on('mousemove', function(e) {
+      thisvue.mouselat = e.latlng.lat;
+      thisvue.mouselong = e.latlng.lng;
+      // alert("Lat, Lon : " + e.latlng.lat + ", " + e.latlng.lng);
+    });
     this.map.on('click', function(e) {
-      alert("Lat, Lon : " + e.latlng.lat + ", " + e.latlng.lng);
+      let val = "[" + e.latlng.lat + ", " + e.latlng.lng + "]";
+      navigator.clipboard.writeText(val);
     });
     var measureControl = new L.Control.Measure({
       primaryLengthUnit: "miles",

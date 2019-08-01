@@ -9,6 +9,7 @@ export default {
   data () {
     return {
       hidetitle: false,
+      logonformactive: true,
       logincreds: {
         username: "",
         password: ""
@@ -61,6 +62,7 @@ export default {
     }),
     handleLogin () {
       this.login(this.logincreds).then((response) => {
+        this.logonformactive = true;
         this.showLogin = false;
       }).catch(() => {
         this.errorMessage = "Error Logging In";
@@ -68,6 +70,7 @@ export default {
     },
     handleRegister () {
       this.register(this.registeruser).then((response) => {
+        this.logonformactive = true;
         this.showRegister = false;
       });
     }

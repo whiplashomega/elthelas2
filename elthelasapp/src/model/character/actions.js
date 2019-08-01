@@ -159,6 +159,8 @@ export default {
         a.current = a.max;
       }
     });
+    state.currentCharacter.deathsuccess = 0;
+    state.currentCharacter.deathfail = 0;
   },
   longrest: ({ state, getters, dispatch }) => {
     dispatch("shortrest").then(() => {

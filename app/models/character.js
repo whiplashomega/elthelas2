@@ -47,6 +47,8 @@ var Character = new Schema({
   acmagic: { type: Number, default: 0 },
   bonusfeats: { type: Number, default: 0 },
   saves: [Boolean],
+  deathsuccess: { type: Number, default: 0 },
+  deathfail:  { type: Number, default: 0 },
   savebonus: [Number],
   stats: [Number],
   statbonus: [Number],

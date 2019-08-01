@@ -795,6 +795,8 @@ and will leave Northport with the refugees.
   <p><strong>Light:</strong> Luna sheds bright light out to 30 ft, and dim light for an additional 30 ft. This effect can be turned on or off as a bonus action.</p>
   <p><strong>Fearless:</strong> While attuned to and holding Luna you cannot be frightened.</p>
   <h4>Luna (devout)</h4>
+    <p><strong>Light:</strong> Luna sheds bright light out to 30 ft, and dim light for an additional 30 ft. This effect can be turned on or off as a bonus action.</p>
+  <p><strong>Fearless:</strong> While attuned to and holding Luna you cannot be frightened.</p>
   <p>
     A devout follower of Cora attuned to Luna who proves their devotion to Cora and bravery in the face of overwhelming odds gains the ability to treat Luna as a +2 
     weapon and adds the following ability:

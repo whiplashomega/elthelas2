@@ -14,19 +14,9 @@
              @click="showNations()" value="Nations" />
       <input type="button" class="btn btn-primary"
              @click="showAll()" value="Show All" />
-      <input type="button" class="btn btn-secondary"
-             @click="showWarMap()" v-if="!warmap"
-             value="Show Terrotories of Control" />
-      <input type="button" class="btn btn-secondary"
-             @click="showWarMap()" v-if="warmap"
-             value="Hide Terrotories of Control" />
-    </div>
-    <div v-if="warmap" class="row">
-      <div class="col-3" v-for="t in territories" :key="t.name">
-        <div :style="'width:20px; height: 20px; float: left; background-color:' + t.color + ';margin: 0px 10px 10px 10px; clear: left;'"></div> {{ t.name }}
-      </div>
     </div>
     <div id="map"></div>
+    Latlong: [{{ mouselat }}, {{ mouselong }}]
     <b-modal id="nationmodal" size="lg"
              @hide="hideModal" :title="nation.name"
              ok-only>

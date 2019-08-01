@@ -9,6 +9,11 @@
       </div>
       <button class="btn btn-sm btn-primary print-hide" type="button" @click="addInjury">+</button>
     </div>
+    <!-- Death Saves -->
+    <div class="charsheet-static">
+      Sucesses: <input type="number" class="charsheet-num" v-model="character.deathsuccess" /><br />
+      Failures: <input type="number" class="charsheet-num" v-model="character.deathfail" />
+    </div>
     <!-- Feats -->
     <div class="charsheet-static">
       Feats/ASIs {{ numASI }}

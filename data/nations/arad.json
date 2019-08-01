@@ -1,7 +1,7 @@
 {
   "name": "Arad", 
-  "primelanguage": "",
-  "seclanguages": [],
+  "primelanguage": "Neran",
+  "seclanguages": ["Orc"],
   "coords": [44.73210119404699, 90.05959417373937],
   "bordercoords": [
     [49.98699361915004, 93.93486762289477],

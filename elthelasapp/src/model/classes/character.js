@@ -63,6 +63,8 @@ export default function() {
       { name: "Survival", prof: 0, stat: 4, magic: 0 }
     ],
     saves: [false, false, false, false, false, false],
+    deathsuccess: 0,
+    deathfail: 0,
     savebonus: [0, 0, 0, 0, 0, 0],
     stats: [8, 8, 8, 8, 8, 8],
     statbonus: [0, 0, 0, 0, 0, 0],
