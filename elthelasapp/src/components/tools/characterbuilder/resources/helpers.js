@@ -19,9 +19,9 @@ export default {
   bardResources (vue, character, a) {
     var inspiration = { name: "Bardic Inspiration", current: vue.getStatMod(5), max: vue.getStatMod(5), recharge: "longrest" };
     if (Number(a.level) >= 5) {
-      inspiration.recharge = "shortrest";
+      inspiration.recharge = "longrest";
     }
-    this.character.resources.push(inspiration);
+    character.resources.push(inspiration);
     if (a.selsubclass.name === "College of Glamour") {
       if (Number(a.level) >= 3) {
         character.resources.push({ name: "Enthralling Performance", current: 1, max: 1, recharge: "shortrest" });
