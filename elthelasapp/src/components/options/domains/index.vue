@@ -31,24 +31,28 @@
       <h2>Air Domain</h2>
       <h4>Air Domain Spells</h4>
       <table class='classtable table table-striped'>
-        <tr>
-          <th>Cleric Level</th><th>Spells</th>
-        </tr>
-        <tr>
-          <td>1st</td><td>feather fall, thunderwave</td>
-        </tr>
-        <tr>
-          <td>3rd</td><td>gust of wind, dust devil</td>
-        </tr>
-        <tr>
-          <td>5th</td><td>Wind Wall, Lightning Bolt</td>
-        </tr>
-        <tr>
-          <td>7th</td><td>conjure minor elementals(air only), storm sphere</td>
-        </tr>
-        <tr>
-          <td>9th</td><td>Control Winds, Conjure Elemental(air only)</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Cleric Level</th><th>Spells</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st</td><td>feather fall, thunderwave</td>
+          </tr>
+          <tr>
+            <td>3rd</td><td>gust of wind, dust devil</td>
+          </tr>
+          <tr>
+            <td>5th</td><td>Wind Wall, Lightning Bolt</td>
+          </tr>
+          <tr>
+            <td>7th</td><td>conjure minor elementals(air only), storm sphere</td>
+          </tr>
+          <tr>
+            <td>9th</td><td>Control Winds, Conjure Elemental(air only)</td>
+          </tr>
+        </tbody>
       </table>
       <h4>Bonus Proficiency</h4>
       <p>
@@ -182,7 +186,7 @@
             <td>5th</td><td>animate dead, vampiric touch</td>
           </tr>
           <tr>
-            <td>7th</td><td>blight</td><td>death ward</td>
+            <td>7th</td><td>blight, death ward</td>
           </tr>
           <tr>
             <td>9th</td><td>antilife shell, cloudkill</td>
@@ -221,24 +225,28 @@
       <h2>Earth Domain</h2>
       <h4>Earth Domain Spells</h4>
       <table class='classtable table table-striped'>
-        <tr>
-          <th>Cleric Level</th><th>Spells</th>
-        </tr>
-        <tr>
-          <td>1st</td><td>earth tremor, absorb elements</td>
-        </tr>
-        <tr>
-          <td>3rd</td><td>shatter, dust devil</td>
-        </tr>
-        <tr>
-          <td>5th</td><td>Erupting Earth, Meld into Stone</td>
-        </tr>
-        <tr>
-          <td>7th</td><td>conjure minor elementals(earth only), Stone Shape</td>
-        </tr>
-        <tr>
-          <td>9th</td><td>Wall of Stone, Conjure Elemental(earth only)</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Cleric Level</th><th>Spells</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st</td><td>earth tremor, absorb elements</td>
+          </tr>
+          <tr>
+            <td>3rd</td><td>shatter, dust devil</td>
+          </tr>
+          <tr>
+            <td>5th</td><td>Erupting Earth, Meld into Stone</td>
+          </tr>
+          <tr>
+            <td>7th</td><td>conjure minor elementals(earth only), Stone Shape</td>
+          </tr>
+          <tr>
+            <td>9th</td><td>Wall of Stone, Conjure Elemental(earth only)</td>
+          </tr>
+        </tbody>
       </table>
       <h4>Bonus Proficiency</h4>
       <p>
@@ -272,24 +280,28 @@
       <h2>Fire Domain</h2>
       <h4>Fire Domain Spells</h4>
       <table class='classtable table table-striped'>
-        <tr>
-          <th>Cleric Level</th><th>Spells</th>
-        </tr>
-        <tr>
-          <td>1st</td><td>fairie fire, burning hands</td>
-        </tr>
-        <tr>
-          <td>3rd</td><td>heat metal, flame blade</td>
-        </tr>
-        <tr>
-          <td>5th</td><td>fireball, elemental weapon(fire only)</td>
-        </tr>
-        <tr>
-          <td>7th</td><td>conjure minor elementals(fire only), wall of fire</td>
-        </tr>
-        <tr>
-          <td>9th</td><td>flame strike, Conjure Elemental(fire only)</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Cleric Level</th><th>Spells</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st</td><td>fairie fire, burning hands</td>
+          </tr>
+          <tr>
+            <td>3rd</td><td>heat metal, flame blade</td>
+          </tr>
+          <tr>
+            <td>5th</td><td>fireball, elemental weapon(fire only)</td>
+          </tr>
+          <tr>
+            <td>7th</td><td>conjure minor elementals(fire only), wall of fire</td>
+          </tr>
+          <tr>
+            <td>9th</td><td>flame strike, Conjure Elemental(fire only)</td>
+          </tr>
+        </tbody>
       </table>
       <h4>Bonus Proficiency</h4>
       <p>
@@ -395,24 +407,28 @@
       </p>
       <h4>Knowledge Domain Spells</h4>
       <table class='classtable table table-striped'>
-        <tr>
-          <th>Cleric Level</th><th>Spells</th>
-        </tr>
-        <tr>
-          <td>1st</td><td>command, identify</td>
-        </tr>
-        <tr>
-          <td>3rd</td><td>augury, suggestion</td>
-        </tr>
-        <tr>
-          <td>5th</td><td>nondetection, speak with dead</td>
-        </tr>
-        <tr>
-          <td>7th</td><td>arcane eye, confusion</td>
-        </tr>
-        <tr>
-          <td>9th</td><td>legend lore, scrying</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Cleric Level</th><th>Spells</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st</td><td>command, identify</td>
+          </tr>
+          <tr>
+            <td>3rd</td><td>augury, suggestion</td>
+          </tr>
+          <tr>
+            <td>5th</td><td>nondetection, speak with dead</td>
+          </tr>
+          <tr>
+            <td>7th</td><td>arcane eye, confusion</td>
+          </tr>
+          <tr>
+            <td>9th</td><td>legend lore, scrying</td>
+          </tr>
+        </tbody>
       </table>
       <h4>Blessings of Knowledge</h4>
       <p>
@@ -463,24 +479,28 @@
       </p>
       <h4>Life Domain Spells</h4>
       <table class='classtable table table-striped'>
-        <tr>
-          <th>Cleric Level</th><th>Spells</th>
-        </tr>
-        <tr>
-          <td>1st</td><td>bless, cure wounds</td>
-        </tr>
-        <tr>
-          <td>3rd</td><td>lesser restoration, spiritual weapon</td>
-        </tr>
-        <tr>
-          <td>5th</td><td>beacon of hope, revivify</td>
-        </tr>
-        <tr>
-          <td>7th</td><td>death ward, guardian of faith</td>
-        </tr>
-        <tr>
-          <td>9th</td><td>mass cure wounds, raise dead</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Cleric Level</th><th>Spells</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st</td><td>bless, cure wounds</td>
+          </tr>
+          <tr>
+            <td>3rd</td><td>lesser restoration, spiritual weapon</td>
+          </tr>
+          <tr>
+            <td>5th</td><td>beacon of hope, revivify</td>
+          </tr>
+          <tr>
+            <td>7th</td><td>death ward, guardian of faith</td>
+          </tr>
+          <tr>
+            <td>9th</td><td>mass cure wounds, raise dead</td>
+          </tr>
+        </tbody>
       </table>
       <h4>Bonus Proficiency</h4>
       <p>
@@ -517,24 +537,28 @@
       </p>
       <h4>Light Domain Spells</h4>
       <table class='classtable table table-striped'>
-        <tr>
-          <th>Cleric Level</th><th>Spells</th>
-        </tr>
-        <tr>
-          <td>1st</td><td>burning hands, faerie fire</td>
-        </tr>
-        <tr>
-          <td>3rd</td><td>flaming sphere, scorching ray</td>
-        </tr>
-        <tr>
-          <td>5th</td><td>daylight, fireball</td>
-        </tr>
-        <tr>
-          <td>7th</td><td>guardian of faith, wall of fire</td>
-        </tr>
-        <tr>
-          <td>9th</td><td>flame strike, scrying</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Cleric Level</th><th>Spells</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st</td><td>burning hands, faerie fire</td>
+          </tr>
+          <tr>
+            <td>3rd</td><td>flaming sphere, scorching ray</td>
+          </tr>
+          <tr>
+            <td>5th</td><td>daylight, fireball</td>
+          </tr>
+          <tr>
+            <td>7th</td><td>guardian of faith, wall of fire</td>
+          </tr>
+          <tr>
+            <td>9th</td><td>flame strike, scrying</td>
+          </tr>
+        </tbody>
       </table>
       <h4>Bonus Cantrip</h4>
       <p>
@@ -574,24 +598,28 @@
       </p>
       <h4>Nature Domain Spells</h4>
       <table class='classtable table table-striped'>
-        <tr>
-          <th>Cleric Level</th><th>Spells</th>
-        </tr>
-        <tr>
-          <td>1st</td><td>animal friendship, speak with animals</td>
-        </tr>
-        <tr>
-          <td>3rd</td><td>barkskin, spike growth</td>
-        </tr>
-        <tr>
-          <td>5th</td><td>plant growth, wind wall</td>
-        </tr>
-        <tr>
-          <td>7th</td><td>dominate beast, grasping vine</td>
-        </tr>
-        <tr>
-          <td>9th</td><td>insect plague, tree stride</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Cleric Level</th><th>Spells</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st</td><td>animal friendship, speak with animals</td>
+          </tr>
+          <tr>
+            <td>3rd</td><td>barkskin, spike growth</td>
+          </tr>
+          <tr>
+            <td>5th</td><td>plant growth, wind wall</td>
+          </tr>
+          <tr>
+            <td>7th</td><td>dominate beast, grasping vine</td>
+          </tr>
+          <tr>
+            <td>9th</td><td>insect plague, tree stride</td>
+          </tr>
+        </tbody>
       </table>
       <h4>Acolyte of Nature</h4>
       <p>
@@ -628,24 +656,28 @@
       </p>
       <h4>Tempest Domain Spells</h4>
       <table class='classtable table table-striped'>
-        <tr>
-          <th>Cleric Level</th><th>Spells</th>
-        </tr>
-        <tr>
-          <td>1st</td><td>fog cloud, thunderwave</td>
-        </tr>
-        <tr>
-          <td>3rd</td><td>gust of wind, shatter</td>
-        </tr>
-        <tr>
-          <td>5th</td><td>call lightning, sleet storm</td>
-        </tr>
-        <tr>
-          <td>7th</td><td>control water, ice storm</td>
-        </tr>
-        <tr>
-          <td>9th</td><td>destructive wave, insect plague</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Cleric Level</th><th>Spells</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st</td><td>fog cloud, thunderwave</td>
+          </tr>
+          <tr>
+            <td>3rd</td><td>gust of wind, shatter</td>
+          </tr>
+          <tr>
+            <td>5th</td><td>call lightning, sleet storm</td>
+          </tr>
+          <tr>
+            <td>7th</td><td>control water, ice storm</td>
+          </tr>
+          <tr>
+            <td>9th</td><td>destructive wave, insect plague</td>
+          </tr>
+        </tbody>
       </table>
       <h4>Bonus Proficiencies</h4>
       <p>
@@ -735,24 +767,28 @@
       </p>
       <h4>Trickery Domain Spells</h4>
       <table class='classtable table table-striped'>
-        <tr>
-          <th>Cleric Level</th><th>Spells</th>
-        </tr>
-        <tr>
-          <td>1st</td><td>charm person, disguise self</td>
-        </tr>
-        <tr>
-          <td>3rd</td><td>mirror image, pass without trace</td>
-        </tr>
-        <tr>
-          <td>5th</td><td>blink, dispel magic</td>
-        </tr>
-        <tr>
-          <td>7th</td><td>dimension door, polymorph</td>
-        </tr>
-        <tr>
-          <td>9th</td><td>dominate person, modify memory</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Cleric Level</th><th>Spells</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st</td><td>charm person, disguise self</td>
+          </tr>
+          <tr>
+            <td>3rd</td><td>mirror image, pass without trace</td>
+          </tr>
+          <tr>
+            <td>5th</td><td>blink, dispel magic</td>
+          </tr>
+          <tr>
+            <td>7th</td><td>dimension door, polymorph</td>
+          </tr>
+          <tr>
+            <td>9th</td><td>dominate person, modify memory</td>
+          </tr>
+        </tbody>
       </table>
       <h4>Blessing of the Trickster</h4>
       <p>
@@ -791,24 +827,28 @@
       </p>
       <h4>War Domain Spells</h4>
       <table class='classtable table table-striped'>
-        <tr>
-          <th>Cleric Level</th><th>Spells</th>
-        </tr>
-        <tr>
-          <td>1st</td><td>divine favor, shield of faith</td>
-        </tr>
-        <tr>
-          <td>3rd</td><td>magic weapon, spiritual weapon</td>
-        </tr>
-        <tr>
-          <td>5th</td><td>crusader's mantle, spirit guardians</td>
-        </tr>
-        <tr>
-          <td>7th</td><td>freedom of movement, stoneskin</td>
-        </tr>
-        <tr>
-          <td>9th</td><td>flame strike, hold monster</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Cleric Level</th><th>Spells</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st</td><td>divine favor, shield of faith</td>
+          </tr>
+          <tr>
+            <td>3rd</td><td>magic weapon, spiritual weapon</td>
+          </tr>
+          <tr>
+            <td>5th</td><td>crusader's mantle, spirit guardians</td>
+          </tr>
+          <tr>
+            <td>7th</td><td>freedom of movement, stoneskin</td>
+          </tr>
+          <tr>
+            <td>9th</td><td>flame strike, hold monster</td>
+          </tr>          
+        </tbody>
       </table>
       <h4>Bonus Proficiencies</h4>
       <p>
@@ -841,24 +881,28 @@
     <div class="racediv" id="water">
       <h2>Water Domain</h2>
       <table class='classtable table table-striped'>
-        <tr>
-          <th>Cleric Level</th><th>Spells</th>
-        </tr>
-        <tr>
-          <td>1st</td><td>Create or Destroy Water, Ice Knife</td>
-        </tr>
-        <tr>
-          <td>3rd</td><td>lesser restoration, water walk</td>
-        </tr>
-        <tr>
-          <td>5th</td><td>Wall of Water, Water Breathing</td>
-        </tr>
-        <tr>
-          <td>7th</td><td>Control Water, Watery Sphere</td>
-        </tr>
-        <tr>
-          <td>9th</td><td>Cone of Cold, Greater Restoration</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Cleric Level</th><th>Spells</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st</td><td>Create or Destroy Water, Ice Knife</td>
+          </tr>
+          <tr>
+            <td>3rd</td><td>lesser restoration, water walk</td>
+          </tr>
+          <tr>
+            <td>5th</td><td>Wall of Water, Water Breathing</td>
+          </tr>
+          <tr>
+            <td>7th</td><td>Control Water, Watery Sphere</td>
+          </tr>
+          <tr>
+            <td>9th</td><td>Cone of Cold, Greater Restoration</td>
+          </tr>
+        </tbody>
       </table>
       <h4>Bonus Proficiency</h4>
       <p>

@@ -146,7 +146,7 @@
           </div>
           <div class="col-sm-2">
             Daily Food Cost
-            <input type="number" class="form-control" v-model="newanimal.cost" />
+            <input type="number" class="form-control" v-model="newanimal.foodcost" />
           </div>
           <div class="col-sm-1">
             <button @click="addAnimal()" class="btn btn-success" style="margin-top:22px;">Add</button>

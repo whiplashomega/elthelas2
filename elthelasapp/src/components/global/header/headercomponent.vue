@@ -113,6 +113,8 @@
       <div v-else>
         Logging you in...
       </div>
+      <template slot="modal-footer" slot-scope="{ ok, cancel, hide }">
+      </template>
     </b-modal>
     <b-modal id="registermodal" size="lg"
              title="Register" v-model="showRegister">
@@ -139,6 +141,8 @@
       <div v-else>
         Registering, please wait...
       </div>
+      <template slot="modal-footer" slot-scope="{ ok, cancel, hide }">
+      </template>
     </b-modal>
   </div>
 </template>
