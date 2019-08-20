@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/json/landmarks.json"
   },
   {
-    "revision": "d3d9140c4d912e18b894495d6c87f2df",
-    "url": "/js/timeline.js"
+    "revision": "c58d91a5bb074d7012836eea11c53703",
+    "url": "/static/md/book4/chapter9.md"
   },
   {
     "revision": "6a63da1c7305b86f96c480edf01e587e",
@@ -16,40 +16,68 @@ self.__precacheManifest = [
     "url": "/static/md/book4/theworld.md"
   },
   {
-    "revision": "2a7a0ec8da4974b7bfb9f99c94243405",
-    "url": "/static/md/book4/curestan.md"
-  },
-  {
     "revision": "2dc0eb456bd2d749e15b2b93036de7e7",
     "url": "/static/md/book4/progression.md"
+  },
+  {
+    "revision": "2a7a0ec8da4974b7bfb9f99c94243405",
+    "url": "/static/md/book4/curestan.md"
   },
   {
     "revision": "c5636d02b570345d28ba985cc2cf6e0e",
     "url": "/static/md/book4/chaptertemplate.md"
   },
   {
-    "revision": "c58d91a5bb074d7012836eea11c53703",
-    "url": "/static/md/book4/chapter9.md"
+    "revision": "9455f0940c46f39d55d772ec4092d756",
+    "url": "/json/organizations.json"
+  },
+  {
+    "revision": "d63ebcc577ab99dbde1b",
+    "url": "/js/classes.3107e089.js"
+  },
+  {
+    "revision": "cd1895eb22cd16fe341e",
+    "url": "/js/domains.3af31711.js"
   },
   {
     "revision": "deb69e20439bb1e4ee55ff6e2affdadd",
     "url": "/static/md/book4/chapter8.md"
   },
   {
-    "revision": "408bd6e11ad4774bb150fa0abd2d544b",
-    "url": "/static/md/book4/chapter7old.md"
+    "revision": "e990e5895295b9daffad",
+    "url": "/js/encounters.7a6b4f41.js"
   },
   {
     "revision": "de0438c70e05315ffa2a86f42e6808ac",
     "url": "/static/md/book4/chapter7.md"
   },
   {
-    "revision": "6fd119ac4a4b574064861ca92b20ebca",
-    "url": "/static/md/book4/chapter4.md"
+    "revision": "3ae0fca13f9ad18ad212",
+    "url": "/js/geography.0919cfc0.js"
+  },
+  {
+    "revision": "408bd6e11ad4774bb150fa0abd2d544b",
+    "url": "/static/md/book4/chapter7old.md"
+  },
+  {
+    "revision": "8faa2cb9698da5ffac16",
+    "url": "/js/quickref.f0280ef1.js"
+  },
+  {
+    "revision": "48837380241a00dbf298",
+    "url": "/js/treasure.ff9ae10d.js"
   },
   {
     "revision": "d6003409f811a3dd3fa5d02d03334634",
     "url": "/static/md/book4/chapter5.md"
+  },
+  {
+    "revision": "6fd119ac4a4b574064861ca92b20ebca",
+    "url": "/static/md/book4/chapter4.md"
+  },
+  {
+    "revision": "0f3706bbf9968b8f0f3209cf69b52a59",
+    "url": "/static/md/book4/chapter3old.md"
   },
   {
     "revision": "06b4abcd112a0d49d28050575af6d068",
@@ -64,36 +92,8 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chapter1old.md"
   },
   {
-    "revision": "48837380241a00dbf298",
-    "url": "/js/treasure.ff9ae10d.js"
-  },
-  {
-    "revision": "0f3706bbf9968b8f0f3209cf69b52a59",
-    "url": "/static/md/book4/chapter3old.md"
-  },
-  {
-    "revision": "b59ed4e72d1e0934d2974fb27eb0ce35",
-    "url": "/static/md/book4/chapter3.md"
-  },
-  {
-    "revision": "63a9d0758a75c813df5826e8f43d7732",
-    "url": "/static/md/book4/chapter14.md"
-  },
-  {
-    "revision": "81c2fab248da1d2b661dd1538cac6fb6",
-    "url": "/static/md/book4/chapter2.md"
-  },
-  {
-    "revision": "4c5b11958f5fe61f98f10a7bb10b16af",
-    "url": "/static/md/book4/chapter13.md"
-  },
-  {
-    "revision": "e6bccb97b7f80cc1ee1d115edb4fd25d",
-    "url": "/static/md/book4/chapter12.md"
-  },
-  {
-    "revision": "cb2c491075996cab08407addd262ad89",
-    "url": "/static/md/book4/chapter11.md"
+    "revision": "fe9884553a1ae2ea1bb0d6f76a8d4822",
+    "url": "/js/locale/el.json"
   },
   {
     "revision": "97971c100baf08dd95f249aa532e758b",
@@ -108,7 +108,7 @@ self.__precacheManifest = [
     "url": "/json/cities.json"
   },
   {
-    "revision": "6d06ece8643d2a6342bc3ef5c1d34161",
+    "revision": "f7bf289f050065718321f1716e1a9ac6",
     "url": "/json/classes.json"
   },
   {
@@ -148,8 +148,8 @@ self.__precacheManifest = [
     "url": "/json/improvements.json"
   },
   {
-    "revision": "ad607ac3ac0ad4e1530918e3caa96d05",
-    "url": "/static/md/book4/chapter10.md"
+    "revision": "63a9d0758a75c813df5826e8f43d7732",
+    "url": "/static/md/book4/chapter14.md"
   },
   {
     "revision": "6ac95d43441c47c00c34a31f2fce0966",
@@ -160,8 +160,8 @@ self.__precacheManifest = [
     "url": "/json/nations.json"
   },
   {
-    "revision": "9455f0940c46f39d55d772ec4092d756",
-    "url": "/json/organizations.json"
+    "revision": "b59ed4e72d1e0934d2974fb27eb0ce35",
+    "url": "/static/md/book4/chapter3.md"
   },
   {
     "revision": "b58081e43f66a676a043cb400fe150e3",
@@ -200,64 +200,52 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chapter1.md"
   },
   {
+    "revision": "d3d9140c4d912e18b894495d6c87f2df",
+    "url": "/js/timeline.js"
+  },
+  {
+    "revision": "ad607ac3ac0ad4e1530918e3caa96d05",
+    "url": "/static/md/book4/chapter10.md"
+  },
+  {
+    "revision": "cb2c491075996cab08407addd262ad89",
+    "url": "/static/md/book4/chapter11.md"
+  },
+  {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
     "url": "/robots.txt"
   },
   {
-    "revision": "3ae0fca13f9ad18ad212",
-    "url": "/css/geography.9ace0302.css"
+    "revision": "e6bccb97b7f80cc1ee1d115edb4fd25d",
+    "url": "/static/md/book4/chapter12.md"
   },
   {
-    "revision": "b1d56a59761b9e15f509",
-    "url": "/js/app.915ccac6.js"
+    "revision": "81c2fab248da1d2b661dd1538cac6fb6",
+    "url": "/static/md/book4/chapter2.md"
   },
   {
-    "revision": "36dd645baf0d016eef6d",
-    "url": "/js/characterbuilder.f4c99bee.js"
-  },
-  {
-    "revision": "e6735ff390c553613ca1",
-    "url": "/js/chunk-vendors.c5c8a51d.js"
-  },
-  {
-    "revision": "d63ebcc577ab99dbde1b",
-    "url": "/js/classes.3107e089.js"
-  },
-  {
-    "revision": "cd1895eb22cd16fe341e",
-    "url": "/js/domains.3af31711.js"
-  },
-  {
-    "revision": "e990e5895295b9daffad",
-    "url": "/js/encounters.7a6b4f41.js"
-  },
-  {
-    "revision": "fe9884553a1ae2ea1bb0d6f76a8d4822",
-    "url": "/js/locale/el.json"
-  },
-  {
-    "revision": "8faa2cb9698da5ffac16",
-    "url": "/js/quickref.f0280ef1.js"
-  },
-  {
-    "revision": "3ae0fca13f9ad18ad212",
-    "url": "/js/geography.0919cfc0.js"
-  },
-  {
-    "revision": "82a4fd3fe6368758827dc06e38e22f16",
-    "url": "/img/tl-icons.82a4fd3f.svg"
+    "revision": "4c5b11958f5fe61f98f10a7bb10b16af",
+    "url": "/static/md/book4/chapter13.md"
   },
   {
     "revision": "8faa2cb9698da5ffac16",
     "url": "/css/quickref.183a88c4.css"
   },
   {
-    "revision": "8402c93e00aa667edeceebe3dcfde5fe",
-    "url": "/fonts/tl-icons.8402c93e.ttf"
+    "revision": "cd1895eb22cd16fe341e",
+    "url": "/css/domains.5c0bae6b.css"
   },
   {
-    "revision": "26e56e8e163b643cce8145b6045ea817",
+    "revision": "e990e5895295b9daffad",
+    "url": "/css/encounters.8b5fefc0.css"
+  },
+  {
+    "revision": "9282892b409ae746dd25a37e031884c5",
     "url": "/index.html"
+  },
+  {
+    "revision": "82a4fd3fe6368758827dc06e38e22f16",
+    "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
     "revision": "b0f49cd26ba67885381b66e77665bf02",
@@ -268,12 +256,24 @@ self.__precacheManifest = [
     "url": "/fonts/tl-icons.1c1bfe46.woff"
   },
   {
-    "revision": "e990e5895295b9daffad",
-    "url": "/css/encounters.8b5fefc0.css"
+    "revision": "8402c93e00aa667edeceebe3dcfde5fe",
+    "url": "/fonts/tl-icons.8402c93e.ttf"
   },
   {
-    "revision": "cd1895eb22cd16fe341e",
-    "url": "/css/domains.5c0bae6b.css"
+    "revision": "20f99ec8b054ffc7a01d",
+    "url": "/js/app.473baccd.js"
+  },
+  {
+    "revision": "3ae0fca13f9ad18ad212",
+    "url": "/css/geography.9ace0302.css"
+  },
+  {
+    "revision": "b251d189d807deae7a1a",
+    "url": "/js/characterbuilder.d984b785.js"
+  },
+  {
+    "revision": "e6735ff390c553613ca1",
+    "url": "/js/chunk-vendors.c5c8a51d.js"
   },
   {
     "revision": "d63ebcc577ab99dbde1b",
@@ -284,11 +284,11 @@ self.__precacheManifest = [
     "url": "/css/chunk-vendors.ecc27ba5.css"
   },
   {
-    "revision": "36dd645baf0d016eef6d",
-    "url": "/css/characterbuilder.8d1879f9.css"
+    "revision": "b251d189d807deae7a1a",
+    "url": "/css/characterbuilder.c883f041.css"
   },
   {
-    "revision": "b1d56a59761b9e15f509",
+    "revision": "20f99ec8b054ffc7a01d",
     "url": "/css/app.b861a1a8.css"
   },
   {

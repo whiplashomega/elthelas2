@@ -184,6 +184,7 @@
       </select>
       Spell Added By Class:
       <select v-model="selspellclass" class="form-control" required>
+        <option value="race">Race</option>
         <option v-for="charclass in character.charclasses" :value="charclass.thisclass.name" :key="charclass.thisclass.name">{{ charclass.thisclass.name }}</option>
       </select>
       <table class="table table-sm" id="spellList">
