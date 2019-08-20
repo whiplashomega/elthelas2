@@ -413,3 +413,27 @@ The Mind Flayer is guarded by his two pet umber hulks. Additionally, at the end 
 [Run This Encounter](/runner/mindflayer&umberhulk&umberhulk)
 
 Once defeated the ship exits the astral sea, and is affected by gravity and comes crashing down on the city. The council easily sees they are not safe from the might and resources of the prince of fiends, and is willing to listen to the players and join the war. 
+
+#### Rewards
+
+#### Primary Mission Rewards
+
+5000 GP for each player
+
+#### Black Wolf Irregulars
+
+Lilith: Armor of Magic Shadows
+
+Varius: 8000 gp
+
+#### Inevitables
+
+Improved Gauntlets of the Immortal Fist (replaces old gauntlets)
+
+#### Union of Wizard's Colleges
+
+Spellbook of Memory for each of them
+
+#### Sylvan's Rangers
+
+Boots of Speed

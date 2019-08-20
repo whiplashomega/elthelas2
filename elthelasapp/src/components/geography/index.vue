@@ -17,6 +17,17 @@
     </div>
     <div id="map"></div>
     Latlong: [{{ mouselat }}, {{ mouselong }}]
+    <h3>General Notes on the Geography and Climate of Elthelas</h3>
+    <p>
+      In general the climate of Elthelas is relatively mild. It has an axial tilt of ~15 degrees, causing correspondingly smaller polar and tropical regions, and larger temperate regions. Additionally periodic magical catastrophes (and the gods reaction to those catastrophes) have caused various areas to have unusual climates or geographical features. Notable examples include:
+    </p>
+    <ul>
+      <li>the Desert of Despair is somehow magically prevented from receiving any rainfall.</li>
+      <li>The mountains surrounding Nerim (that cause that region to receive little to no rainfall) were placed their by an act of the Gods after the cataclysm that destroyed that nation.</li>
+      <li>The Glass Cliff was created by some magical event in the time before recorded history.</li>
+      <li>Legend has it that the rust desert was the place where the Gods discarded their broken weapons at the end of the Gods War.</li>
+      <li>The Black Shard Pass was carved by wizards seeking to create a new invasion route into Malinval.</li>
+    </ul>
     <b-modal id="nationmodal" size="lg"
              @hide="hideModal" :title="nation.name"
              ok-only>

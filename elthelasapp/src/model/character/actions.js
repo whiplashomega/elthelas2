@@ -58,12 +58,15 @@ export default {
       });
   },
   loadChar: ({ state }, { character, comp }) => {
-    state.currentCharacter = Character();
-    for (let prop in character) {
-      state.currentCharacter[prop] = character[prop];
+    let c = window.confirm("Are you sure you want to load this character? This will erase any unsaved changes.");
+    if (c) {
+      state.currentCharacter = Character();
+      for (let prop in character) {
+        state.currentCharacter[prop] = character[prop];
+      }
+      // state.currentCharacter = character;
+      comp.$root.$emit('bv::hide::modal', 'servermodal');
     }
-    // state.currentCharacter = character;
-    comp.$root.$emit('bv::hide::modal', 'servermodal');
   },
   updateToServer: ({ state }, comp) => {
     comp.$root.$emit('bv::show::modal', 'loading');
@@ -196,30 +199,36 @@ export default {
     }
   },
   loadCharacter ({ state }) {
-    var f = document.getElementById('fileload').files[0];
-    var r = new FileReader();
-    state.currentCharacter = Character();
-    r.onloadend = function(e) {
-      var data = e.target.result;
-      var parsed = JSON.parse(data);
-      for (var x in parsed) {
-        if (parsed.hasOwnProperty(x)) {
-          state.currentCharacter[x] = parsed[x];
+    var c = window.confirm("Are you sure you want to load? This will erase any unsaved changes.");
+    if (c) {
+      var f = document.getElementById('fileload').files[0];
+      var r = new FileReader();
+      state.currentCharacter = Character();
+      r.onloadend = function(e) {
+        var data = e.target.result;
+        var parsed = JSON.parse(data);
+        for (var x in parsed) {
+          if (parsed.hasOwnProperty(x)) {
+            state.currentCharacter[x] = parsed[x];
+          }
         }
+        // validations!
+        state.currentCharacter.charclasses.forEach((a) => {
+          if (typeof a.selsubclass === "undefined") {
+            a.selsubclass = { features: [], name: "" };
+          }
+        });
+      };
+      if (typeof f !== "undefined") {
+        r.readAsText(f);
       }
-      // validations!
-      state.currentCharacter.charclasses.forEach((a) => {
-        if (typeof a.selsubclass === "undefined") {
-          a.selsubclass = { features: [], name: "" };
-        }
-      });
-    };
-    if (typeof f !== "undefined") {
-      r.readAsText(f);
     }
   },
   resetCharacter ({ state }) {
-    state.currentCharacter = Character();
+    var c = window.confirm("Are you sure you want to start over? This will erase any unsaved changes.");
+    if (c) {
+      state.currentCharacter = Character();
+    }
   },
   rollStats ({ state }) {
     function d6() {

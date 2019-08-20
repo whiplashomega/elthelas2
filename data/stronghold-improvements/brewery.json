@@ -1,5 +1,5 @@
 {
-  "id": "winery",
+  "id": "brewery",
   "name": "Brewery / Distillery",
   "benefit": "Brews beer or distills spirits from grain or fruit",
   "staff": [{ "name": "Master Brewer", "num": 1, "cur": 0 }],
@@ -44,5 +44,5 @@
   "hide": true,
   "count": 0,
   "max": 100,
-  "type": "countryside"
+  "type": "village"
 }

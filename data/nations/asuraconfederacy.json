@@ -36,21 +36,29 @@
   "borders": [],
   "population": 2100000,
   "populationDistribution": [{
-    "race": "Hobgoblin",
-    "proportion": 0.4
+    "race": "Hisru Human",
+    "proportion": 0.2
+    },
+    {
+      "race": "Deran Human",
+      "proportion": 0.2
     },
     {
       "race": "Elf",
-      "proportion": 0.28
+      "proportion": 0.22
     },
     {
       "race": "Dwarf",
-      "proportion": 0.28
+      "proportion": 0.22
+    },
+    {
+      "race": "Strongheart Halfling",
+      "proportion": 0.1
     }
   ],
   "government": "",
   "ruler": "",
-  "history": "",
+  "history": "The Asura Confederacy is a collection of elven, dwarven, halfling, and human city states that have banded together for mutual defense and trade. They face regular threats from the Yuan-ti to the north as well as a large number of lizardfolk, gnoll, and goblinoid communities within the confederacies larger borders. Internal strife between the city states is also not uncommon, as rulers vie for power within the confederacy. The infrastructure necessary for empire management has never existed however, and so these would be Kings of Asura have rarely gained much traction.",
   "gods": [],
   "worship": "",
   "culture": "",

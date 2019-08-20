@@ -1,7 +1,7 @@
 <template>
   <div>
+    <h4>Load/Save From Disk</h4>
     <div class="row">
-      <h4 class="col-12">Load/Save From Disk</h4>
       <div class="btn-group col-6">
         <input type="button" value="Save"
                @click="saveCharacter()" class="btn btn-primary" />
@@ -12,8 +12,8 @@
       </div>
       <input type="file" id="fileload" class="col-6" />
     </div>
+    <h4>Load/Save From Server</h4>
     <div class="row" v-if="loggedin">
-      <h4 class="col-12">Load/Save From Server</h4>
       <div class="btn-group col-12">
         <input type="button" v-if="character._id"
                value="Save" @click="updateToServer(comp)"
@@ -24,8 +24,13 @@
                @click="getFromServer(comp)" class="btn btn-success" />
       </div>
     </div>
+    <div class="row" v-else>
+      <p class="col">
+        Login from the menu to load/save on the web server.
+      </p>
+    </div>
+    <h4>Load/Save From Google</h4>
     <div class="row" v-if="googletoken">
-      <h4 class="col-12">Load/Save From Google</h4>
       <div class="col" style="margin-top:15px;">
         <img src="https://developers.google.com/drive/images/drive_icon.png" alt="Google Drive" style="width:38px;height:38px;">
         <div class="btn-group">

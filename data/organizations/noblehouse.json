@@ -1,0 +1,35 @@
+{
+  "id": "noblehouse",
+  "title": "Noble House",
+  "description": "You belong to a prominent noble house, either as a member of the family itself, or one of their retainers. Their goals are your goals, and it is likely your house is led by one or a few particularly powerful people. In general, noble houses strive to increase the power of their house however they can.",
+  "nations": [
+    "Eldoran",
+    "Waelin",
+    "Staelia",
+    "Kandor",
+    "Dormania",
+    "Curinor",
+    "Alfadir",
+    "Dera'Dragorim",
+    "Stagenheim",
+    "Blood Empire",
+    "Jotunheim",
+    "Asura Confederacy",
+    "Ssitsu",
+    "Malinval",
+    "Shendarel",
+    "Olda",
+    "Swava",
+    "Terron"
+  ],
+  "cities": [
+    
+  ],
+  "tenets": [
+    "Promote the interests of the house",
+    "Follow the orders of the house leaders",
+    "Protect the noble family at all costs"
+  ],
+  "level1": "**Influence** You have an intimate knowledge of not only your own house, but other noble houses within your nation. You have advantage on history and persuasion checks related to the nobility or made to influence them.",
+  "level10": "**Powerful Backers** You are a prominent and powerful person in local politics, and your words and actions have weight. You are able to command lesser members of your house, and they will assist you however they can. Members of other houses and guards within your nation and nations friendly to it recognize your sigil and give you deference."
+}
