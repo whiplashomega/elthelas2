@@ -24,19 +24,17 @@ export default {
       state.currentChapter.encounters.push(newEncounter());
     },
     getAllCampaigns: ({ state, getters }, comp) => {
-      if (comp.loggedin) {
-        comp.$root.$emit('bv::show::modal', 'loading');
-        comp.$http.get('/campaigns?token=' + comp.token.token).then(function(res) {
-          state.all = res.body;
-          comp.$root.$emit('bv::hide::modal', 'loading');
-          comp.$root.$emit('bv::show::modal', 'campaignmodal');
-          return true;
-        }).catch(function() {
-          alert("error when loading, please try logging off and in again");
-          comp.$root.$emit('bv::hide::modal', 'loading');
-          return false;
-        });
-      }
+      comp.$root.$emit('bv::show::modal', 'loading');
+      comp.$http.get('/campaigns?token=' + comp.token.token).then(function(res) {
+        state.all = res.body;
+        comp.$root.$emit('bv::hide::modal', 'loading');
+        comp.$root.$emit('bv::show::modal', 'campaignmodal');
+        return true;
+      }).catch(function() {
+        alert("error when loading, please try logging off and in again");
+        comp.$root.$emit('bv::hide::modal', 'loading');
+        return false;
+      });
     },
     saveNewCampaign: ({ state, getters }) => {
       Vue.http.post('/campaigns?token=' + getters.getUserInfo.token, { campaign: { ...state.current, _id: undefined } }).then((res) => {
