@@ -1,9 +1,9 @@
 <template>
   <div class="col-sm-12">
     <div class="btn-group">
-      <button class="btn btn-primary" @click="buildmode = !buildmode">Toggle Build Mode</button>
+      <button class="btn btn-primary" @click="buildmode = !buildmode">Toggle <span v-if="buildmode">View</span><span v-else>Build</span> Mode</button>
       <button class="btn btn-primary" @click="save()" v-if="campaign._id">Save</button>
-      <button class="btn btn-primary" @click="saveNew()">Save New</button>
+      <button class="btn btn-primary" @click="saveNew()" v-if="!campaign._id">Save New</button>
       <button class="btn btn-success" @click="getAll(comp)">Load</button>
       <button class="btn btn-warning" @click="newCamp()">New Campaign</button>
     </div>
@@ -103,9 +103,12 @@
                   </div>
                 </div>
               </div>
-              <div>
-                <label>Encounter Text (markdown allowed)</label>
-                <textarea v-model="encounter.text" class="form-control" style="min-height:150px;"></textarea>
+              <div class="row">
+                <div class="col-sm-6">
+                  <label>Encounter Text (markdown allowed)</label>
+                  <textarea v-model="encounter.text" class="form-control" style="min-height:150px;"></textarea>
+                </div>
+                <div class="col-sm-6" v-html="$options.filters.marked(encounter.text)"></div>
               </div>
               <div>
                 <label>Potential Treasure (markdown allowed)</label>
@@ -135,6 +138,10 @@
                 </div>
                 <div v-html="$options.filters.marked(encounter.text)"></div>
                 <div v-html="$options.filters.marked(encounter.treasure)"></div>
+                <div>
+                  <h4>Session Notes</h4>
+                  <textarea v-model="encounter.sessionnotes" class="form-control"></textarea>
+                </div>
               </div>
             </div>
           </div>

@@ -25,7 +25,7 @@ export default {
   },
   data: function () {
     return {
-      buildmode: true,
+      buildmode: false,
       comp: this
     };
   },

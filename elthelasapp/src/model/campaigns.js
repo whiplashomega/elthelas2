@@ -55,7 +55,7 @@ export default {
     loadCampaign: ({ state }, { campaign, comp }) => {
       state.current = { ...campaign };
       state.currentChapter = state.current.chapters[0];
-      comp.$root.$emit('bv::hide::modal', 'servermodal');
+      comp.$root.$emit('bv::hide::modal', 'campaignmodal');
     },
     loadCampaignById: ({ state }, { id }) => {
       state.current = { ...state.all.filter((a) => {
