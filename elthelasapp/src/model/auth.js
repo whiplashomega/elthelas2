@@ -18,6 +18,9 @@ const getters = {
       return false;
     }
   },
+  isAdmin: (state) => {
+    return state.loggedin.username.admin
+  },
   getUserInfo: (state) => {
     return state.loggedin;
   },
