@@ -19,6 +19,7 @@ export default {
       allCampaigns: 'getCampaigns',
       campaign: 'getCurrentCampaign',
       chapter: 'getCurrentChapter',
+      token: 'getUserInfo',
       loggedin: "isLoggedIn"
     })
   },
