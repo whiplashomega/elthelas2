@@ -9,6 +9,7 @@ export default function () {
     environment: "",
     tier: "",
     random: true,
-    complete: false
+    complete: false,
+    sessionnotes: ""
   };
 }

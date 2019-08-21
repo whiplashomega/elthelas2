@@ -36,11 +36,6 @@
                 <input type="text" class="form-control" v-model="chapter.title" />
               </label>
             </div>
-            <div class="row">
-              <div class="btn-group">
-                <button class="btn btn-primary" @click="addEncounter()">Add Encounter</button>
-              </div>
-            </div>
             <div v-for="encounter in chapter.encounters">
               <hr />
               <div class="row">
@@ -113,6 +108,12 @@
               <div>
                 <label>Potential Treasure (markdown allowed)</label>
                 <textarea v-model="encounter.treasure" class="form-control" style="min-height:150px;"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <hr />
+              <div class="btn-group">
+                <button class="btn btn-primary" @click="addEncounter()">Add Encounter</button>
               </div>
             </div>
           </div>
