@@ -18,7 +18,8 @@ export default {
     ...mapGetters({
       allCampaigns: 'getCampaigns',
       campaign: 'getCurrentCampaign',
-      chapter: 'getCurrentChapter'
+      chapter: 'getCurrentChapter',
+      loggedin: "isLoggedIn"
     })
   },
   data: function () {
