@@ -14,16 +14,21 @@
             </a>
             <ul class="dropdown-menu" role="menu">
               <li class="dropdown-item"><router-link to="/tools/charbuilder">Character Builder</router-link></li>
-              <li class="dropdown-item" v-if="isadmin"><router-link to="/runner">Encounter Runner</router-link></li>
+              <li class="dropdown-item" v-if="loggedin"><router-link to="/runner">Encounter Runner</router-link></li>
               <li class="dropdown-item"><router-link to="/tools/treasuregenerator">Treasure Generator</router-link></li>
               <li class="dropdown-item"><router-link to="/tools/strongholdbuilder">Stronghold Builder</router-link></li>
-              <li class="dropdown-item" v-if="isadmin"><router-link to="/tools/book1">Epic of Elthelas Book 1</router-link></li>
-              <li class="dropdown-item" v-if="isadmin"><router-link to="/tools/book2">Epic of Elthelas Book 2</router-link></li>
-              <li class="dropdown-item" v-if="isadmin"><router-link to="/tools/book3">Epic of Elthelas Book 3</router-link></li>
+              <li class="dropdown-item" v-if="loggedin"><router-link to="/tools/book1">Epic of Elthelas Book 1</router-link></li>
+              <li class="dropdown-item" v-if="loggedin"><router-link to="/tools/book2">Epic of Elthelas Book 2</router-link></li>
+              <li class="dropdown-item" v-if="loggedin"><router-link to="/tools/book3">Epic of Elthelas Book 3</router-link></li>
               <li class="dropdown-item" v-if="isadmin"><router-link to="/tools/book4/dm/curestan">Epic of Elthelas Book 4</router-link></li>
-              <li class="dropdown-item" v-if="isadmin"><router-link to="/encounter/builder">Encounter Builder</router-link></li>
-              <li class="dropdown-item" v-if="isadmin"><router-link to="/encounter/random">Random Encounter Table</router-link></li>
-              <li class="dropdown-item" v-if="isadmin"><router-link to="/encounter/details">Encounter List</router-link></li>
+              <li class="dropdown-item" v-if="loggedin"></li>
+              <li class="dropdown-item" v-if="loggedin"
+                  v-for="campaign in userCampaigns" :key="campaign._id">
+                <router-link :to="'/tools/campaigns/' + campaign.url">{{ campaign.title }}</router-link>
+              </li>
+              <li class="dropdown-item" v-if="loggedin"><router-link to="/encounter/builder">Encounter Builder</router-link></li>
+              <li class="dropdown-item" v-if="loggedin"><router-link to="/encounter/random">Random Encounter Table</router-link></li>
+              <li class="dropdown-item" v-if="loggedin"><router-link to="/encounter/details">Encounter List</router-link></li>
               <li class="dropdown-item"><router-link to="/tools/book4/playersguide">Epic of Elthelas Book 4 - Player's Guide</router-link></li>
             </ul>
           </div>

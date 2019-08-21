@@ -847,7 +847,7 @@
           </tr>
           <tr>
             <td>9th</td><td>flame strike, hold monster</td>
-          </tr>          
+          </tr>
         </tbody>
       </table>
       <h4>Bonus Proficiencies</h4>

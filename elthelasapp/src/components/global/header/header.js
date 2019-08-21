@@ -5,6 +5,7 @@ export default {
     title: 'title',
     loggedin: 'isLoggedIn',
     isadmin: 'isAdmin',
+    userCampaigns: 'getCampaigns',
     userinfo: 'getUserInfo'
   }),
   data () {
@@ -59,7 +60,8 @@ export default {
       login: 'login',
       register: 'register',
       logout: 'logout',
-      saveAuthHeader: 'saveAuthHeader'
+      saveAuthHeader: 'saveAuthHeader',
+      getAllCampaigns: 'getAllCampaigns'
     }),
     handleLogin () {
       this.login(this.logincreds).then((response) => {
@@ -79,6 +81,7 @@ export default {
   created () {
     if (this.loggedin) {
       this.saveAuthHeader();
+      this.getAllCampaigns();
     }
     if (this.$route.hash) {
       var vals = this.$route.hash.split('&');

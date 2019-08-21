@@ -22,7 +22,7 @@ export default {
       if (this.character.resources[i].current > 0) {
         this.character.resources[i].current--;
       } else {
-        alert ("Cannot use " + this.character.resources[i].name + ", already expended.");
+        alert("Cannot use " + this.character.resources[i].name + ", already expended.");
       }
     },
     populateResources() {

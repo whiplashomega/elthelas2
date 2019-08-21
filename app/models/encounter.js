@@ -12,6 +12,7 @@ var Encounter = new Schema({
   treasure: { type: String, default: "" },
   random: Boolean,
   complete: Boolean,
+  sessionnotes: String,
   owner: String
 });
 

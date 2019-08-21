@@ -19,7 +19,11 @@ const getters = {
     }
   },
   isAdmin: (state) => {
-    return state.loggedin.username.admin
+    if (state.loggedin.token) {
+      return state.loggedin.username.admin;
+    } else {
+      return false;
+    }
   },
   getUserInfo: (state) => {
     return state.loggedin;
