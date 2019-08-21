@@ -6,14 +6,14 @@ var Encounter = require('./encounter.js');
 var Chapter = new Schema({
   id: Number,
   title: { type: String, required: true },
-  encounters: [Encounter]
+  encounters: []
 });
 
 var Campaign = new Schema({
   title: { type: String, required: true },
   chapters: [Chapter],
   url: { type: String, required: true, unique: true },
-  playercharacters: [Character],
+  playercharacters: [],
   owner: String
 });
 
