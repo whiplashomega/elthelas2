@@ -21,7 +21,7 @@
               <li class="dropdown-item" v-if="loggedin"><router-link to="/tools/book2">Epic of Elthelas Book 2</router-link></li>
               <li class="dropdown-item" v-if="loggedin"><router-link to="/tools/book3">Epic of Elthelas Book 3</router-link></li>
               <li class="dropdown-item" v-if="isadmin"><router-link to="/tools/book4/dm/curestan">Epic of Elthelas Book 4</router-link></li>
-              <li class="dropdown-item" v-if="loggedin"></li>
+              <li class="dropdown-item" v-if="loggedin"><router-link to="/tools/campaigns">Campaign Builder</router-link></li>
               <li class="dropdown-item" v-if="loggedin"
                   v-for="campaign in userCampaigns" :key="campaign._id">
                 <router-link :to="'/tools/campaigns/' + campaign.url">{{ campaign.title }}</router-link>

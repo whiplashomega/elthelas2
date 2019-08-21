@@ -6,7 +6,7 @@ import ctest from './cordovatest.js';
 var now = new Date();
 
 const state = {
-  loggedin: { token: localStorage.getItem('token'), username: localStorage.getItem('user') },
+  loggedin: { token: localStorage.getItem('token'), username: localStorage.getItem('user'), admin: localStorage.getItem('admin') },
   googletoken: { token: localStorage.getItem('googletoken'), expiry: new Date(Number(localStorage.getItem('googleExpires'))) }
 };
 
@@ -20,7 +20,7 @@ const getters = {
   },
   isAdmin: (state) => {
     if (state.loggedin.token) {
-      return state.loggedin.username.admin;
+      return state.loggedin.admin;
     } else {
       return false;
     }
@@ -70,6 +70,7 @@ const actions = {
   },
   logout ({ commit }) {
     localStorage.removeItem("token");
+    localStorage.removeItem("admin");
     Vue.http.headers.common['Authorization'] = "";
     commit("LOGOUT");
   },
@@ -89,6 +90,7 @@ const mutations = {
     state.loggedin = user;
     state.loggedin.token = token;
     localStorage.setItem('user', user.username);
+    localStorage.setItem('admin', user.admin);
     localStorage.setItem('token', user.token);
   },
   "LOGOUT"(state) {
