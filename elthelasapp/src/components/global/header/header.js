@@ -61,7 +61,7 @@ export default {
       register: 'register',
       logout: 'logout',
       saveAuthHeader: 'saveAuthHeader',
-      getAllCampaigns: 'getAllCampaigns'
+      getAllCampaigns: 'getAllCampaignsSilent'
     }),
     handleLogin () {
       this.login(this.logincreds).then((response) => {
