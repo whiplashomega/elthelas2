@@ -13,7 +13,17 @@ export default {
       this.character.resources.push({ name: "", current: 0, max: 0, recharge: "never" });
     },
     removeResource(i) {
-      this.character.resources.splice(i, 1);
+      let c = window.confirm("are you sure you want to delete " + this.character.resources[i].name + "?");
+      if (c) {
+        this.character.resources.splice(i, 1);
+      }
+    },
+    useResource(i) {
+      if (this.character.resources[i].current > 0) {
+        this.character.resources[i].current--;
+      } else {
+        alert ("Cannot use " + this.character.resources[i].name + ", already expended.");
+      }
     },
     populateResources() {
       this.character.charclasses.forEach((a) => {

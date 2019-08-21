@@ -6,6 +6,7 @@
       <div class="col-5">
         <input type="text" v-model="resource.name" class="charsheet-text" />
       </div>
+      <button class="btn btn-sm btn-primary print-hide" @click="useResource(index)">Use</button>
       <input type="number" class="charsheet-num" v-model="resource.current" /> /
       <input type="number" class="charsheet-num" v-model="resource.max" />
       <select v-model="resource.recharge" class="charsheet-text col-3">
