@@ -23,7 +23,7 @@ export default {
     addEncounterToChapter: ({ state }) => {
       state.currentChapter.encounters.push(newEncounter());
     },
-    getAllCampaigns: ({ state, getters }, comp) => {
+    getAllCampaigns: ({ state }, comp) => {
       if (comp.loggedin) {
         comp.$root.$emit('bv::show::modal', 'loading');
         comp.$http.get('/campaigns?token=' + comp.token.token).then(function(res) {
@@ -38,13 +38,13 @@ export default {
         });
       }
     },
-    getAllCampaignsSilent: ({ state, getters}) => {
+    getAllCampaignsSilent: ({ state, getters }) => {
       return new Promise((resolve) => {
         Vue.http.get('/campaigns?token=' + getters.getUserInfo.token).then((res) => {
           state.all = res.body;
           resolve();
         });
-      });      
+      });
     },
     saveNewCampaign: ({ state, getters }) => {
       Vue.http.post('/campaigns?token=' + getters.getUserInfo.token, { campaign: { ...state.current, _id: undefined } }).then((res) => {
@@ -64,7 +64,7 @@ export default {
       state.currentChapter = state.current.chapters[0];
     },
     saveCampaign: ({ state, getters }) => {
-      Vue.http.post('/campaigns/' + state.current._id + "?token=" + getters.getUserInfo.token, { encounter: state.current }).then((res) => {
+      Vue.http.post('/campaigns/' + state.current._id + "?token=" + getters.getUserInfo.token, { campaign: state.current }).then((res) => {
         state.all.splice(state.all.indexOf(state.current), 1);
         state.current = { ...res.body };
         state.all.push(res.body);
