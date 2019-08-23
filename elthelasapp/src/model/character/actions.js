@@ -198,6 +198,16 @@ export default {
       a.click();
     }
   },
+  loadImage: ({ state, getters }) => {
+    var f = document.getElementById('imageload').files[0];
+    var r = new FileReader();
+    r.addEventListener("load", function () {
+      state.currentCharacter.image = r.result;
+    }, false);
+    if (f) {
+      r.readAsDataURL(f);
+    }
+  },
   loadCharacter ({ state }) {
     var c = window.confirm("Are you sure you want to load? This will erase any unsaved changes.");
     if (c) {

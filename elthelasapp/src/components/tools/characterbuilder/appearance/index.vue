@@ -50,6 +50,17 @@
         Skin
       </div>
     </div>
+    <div class="row">
+      <input type="file" id="imageload" class="col-sm" />
+      <div class="col-sm">
+        <input type="button" @click="loadimage()" class="btn btn-success" value="upload image" />
+      </div>
+    </div>
+    <div class="row" v-if="character.image">
+      <div class="col">
+        <img :src="character.image" :alt="character.name" />
+      </div>
+    </div>
   </div>
 </template>
 <script src="./appearance.js"></script>

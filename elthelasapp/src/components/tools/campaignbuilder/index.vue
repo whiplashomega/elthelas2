@@ -26,7 +26,7 @@
               <button class="btn btn-primary" @click="addChapter()">Add Chapter</button>
               <a href="#" class="nav-item"
                  v-for="(chapter, $index) in campaign.chapters" @click="loadChapter(chapter)"
-                 :key="chapter.id">Chapter {{ $index + 1 }}: {{ chapter.title }}</a>
+                 :key="chapter.id">Chapter {{ $index }}: {{ chapter.title }}</a>
             </nav>
           </div>
           <div class="col-sm-9" v-if="chapter">
@@ -125,8 +125,8 @@
           <div class="col-sm-3">
             <nav class="sidenav nav flex-column nav-pill">
               <a href="#" class="nav-item"
-                 v-for="chapter in campaign.chapters" @click="loadChapter(chapter)"
-                 :key="chapter.id">{{ chapter.title }}</a>
+                 v-for="(chapter, $index) in campaign.chapters" @click="loadChapter(chapter)"
+                 :key="chapter.id">Chapter {{ $index }}: {{ chapter.title }}</a>
             </nav>
           </div>
           <div class="col-sm-9">

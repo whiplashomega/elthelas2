@@ -65,6 +65,7 @@ export default function() {
     saves: [false, false, false, false, false, false],
     deathsuccess: 0,
     deathfail: 0,
+    image: "",
     savebonus: [0, 0, 0, 0, 0, 0],
     stats: [8, 8, 8, 8, 8, 8],
     statbonus: [0, 0, 0, 0, 0, 0],

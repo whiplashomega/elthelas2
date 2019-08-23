@@ -62,7 +62,7 @@ event 4: Robert calls the captain below decks saying there is a 'situation'. Whe
 
 ##### [Run this Encounter](/runner/bandit&bandit&bandit&bandit&bandit&bandit&bandit&bandit&bandit&captainmercedes)
 
-## Carlyle Pt. 2
+<!--## Carlyle Pt. 2
 
 Shortly after arrival in Cur'Mestin (before entering the city). A raven will drop the hilt of a rapier in front of Flykr, then land on her shoulder, a letter in a tube tied to it's leg (similar to a messenger pigeon). The letter will say:
 
@@ -80,7 +80,7 @@ Carlyle
 
 <p>2/day grants a bonus to AC equal to spellcasting modifier, advantage on acrobatics checks, and an extra 10 ft of movement speed for 1 minute (as bonus action).</p>
 <p>does 1d4 base damage.</p>
-</aside>
+</aside>-->
 
 ## Cur'Mestin
 
@@ -148,7 +148,7 @@ Erik Dawnblade, once Paladin of Alohim, now serves a different master. He has be
 
 There is a toll to enter the city of 10 gp, plus a premium determined by the collector at the gate. Weapons, armor, or other potentially dangerous goods are prohibited, and those entering are inspected for such items. There are multiple ways to enter the city and avoid the tolls, (sneak in via the docks, go over the wall, through the sewers, a clever disguise, etc). SKILL CHALLENGE.
 
-## Felix Crawford
+#### Felix Crawford
 
 The Duchess is not present in the castle, and Felix is handling her affairs of state, while being in direct contact with her via a hidden sending stone. Also present in the meeting are the Duchess's daughter Genevieve Octavius II, and Herad Paleleaf, the bounty hunter after Adam. The Duchess is scrying on the room, and has a sending stone to communicate with Felix. The Duchess will not agree to open the trade route unless the party brings her the head of the loyalists leader. It is obvious that she is working with devils, as the guards in the castle have all been replaced by bearded devils. During the conversation a functionary will butt into the conversation and report that some of the townspeople are protesting the recent tax increase outside the castle. Felix will respond that Sir Dawnblade is in town and dealing with those issues is his job. The functionary will then leave.
 

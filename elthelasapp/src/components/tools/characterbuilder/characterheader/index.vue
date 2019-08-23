@@ -68,7 +68,10 @@
         </datalist>
       </div>
     </div>
-    <div class="col-sm-3" v-if="!mobile"><img src="https://elthelas-images.herokuapp.com/ddlogo.png" class="ddlogo" /></div>
+    <div class="col-sm-3" v-if="!mobile">
+      <img v-if="!character.image" src="https://elthelas-images.herokuapp.com/ddlogo.png" class="ddlogo" />
+      <img v-else :src="character.image" :alt="character.name" class="ddlogo" />
+    </div>
   </div>
 </template>
 <script src="./characterheader.js"></script>

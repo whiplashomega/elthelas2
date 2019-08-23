@@ -24,7 +24,7 @@ The lengendary gnome Transmuter Jim Jimmy Jim Jim is rumored to be in Strovengua
 
 Strovenguard is an occupied city. The Orcs forced the queen to abandon her capitol a few months ago, and most of the cities population is now officially enslaved by one warlord or another. Three orc's have been assigned as overseers for the town, officially gaining 'Warlord' status as a result, and have partitioned the town into thirds. The alliance between the warlords is tenuous, and the sections operate mostly autonomously. Humans, elves, dwarves, gnomes, or halflings who do not have a slave brand are considered outlaws by the orcs, and fair game for whomever can capture them.
 
-### Major Locations in Strovenguard
+#### Major Locations in Strovenguard
 
 #### 1\. Royal Palace of Gerasalim
 
