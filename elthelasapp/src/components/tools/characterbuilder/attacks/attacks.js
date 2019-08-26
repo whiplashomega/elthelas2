@@ -12,7 +12,7 @@ export default {
   },
   data () {
     return {
-      newattack: { name: "", stat: 0, bonus: 0, addstat: false, damage: "", range: "", type: "", dtype: "", edit: false, damagebonus: 0, prof: true, damage2: "", dtype2: "", critRange: 20, damagebonus2: 0, damage3: "", damagebonus3: 0, dtype3: "", advantage: false },
+      newattack: { name: "", stat: 0, bonus: 0, addstat: false, damage: "", range: "", type: "", dtype: "", edit: false, damagebonus: 0, prof: true, damage2: "", dtype2: "", critRange: 20, damagebonus2: 0, damage3: "", damagebonus3: 0, dtype3: "", advantage: false, rolls: {}, rolled: false, roll: false },
       attackmodal: false
     };
   },
@@ -22,52 +22,77 @@ export default {
     }),
     addAttack() {
       this.character.attacks.push(this.newattack);
-      this.newattack = { name: "", stat: 0, bonus: 0, addstat: false, damage: "", range: "", type: "", dtype: "", edit: false, damagebonus: 0, prof: true, damage2: "", dtype2: "", critRange: 20, damagebonus2: 0, damage3: "", damagebonus3: 0, dtype3: "", advantage: false };
+      this.newattack = { name: "", stat: 0, bonus: 0, addstat: false, damage: "", range: "", type: "", dtype: "", edit: false, damagebonus: 0, prof: true, damage2: "", dtype2: "", critRange: 20, damagebonus2: 0, damage3: "", damagebonus3: 0, dtype3: "", advantage: false, rolls: {}, rolled: false, roll: false };
       this.attackmodal = false;
     },
-    rollAttack(attack) {
-      var elvenAccuracy = this.character.feats.reduce((a, b) => {
+    rerollDie(die, arr, i, att) {
+      arr[i] = droll.roll(die).total;
+      console.log(arr[i]);
+      console.log(att.rolls.dRoll1.total);
+      att.rolls.total1 = att.rolls.dRoll1.rolls.reduce((acc, cur) => {
+        return acc + cur;
+      }, 0) + this.getAttackDamageBonus(att) + (att.rolls.crit ? att.rolls.critRoll1.rolls.reduce((acc, cur) => {
+        return acc + cur;
+      }, 0) : 0);
+      att.rolls.totalDamage = att.rolls.total1;
+      if (att.rolls.dRoll2) {
+        att.rolls.total2 = att.rolls.dRoll2.rolls.reduce((acc, cur) => {
+          return acc + cur;
+        }, 0) + Number(att.damagebonus2) + (att.rolls.crit ? att.rolls.critRoll2.rolls.reduce((acc, cur) => {
+          return acc + cur;
+        }, 0) : 0);
+        att.rolls.totalDamage += att.rolls.total2;
+      }
+      if (att.rolls.dRoll3) {
+        att.rolls.total3 = att.rolls.dRoll3.rolls.reduce((acc, cur) => {
+          return acc + cur;
+        }, 0) + Number(att.damagebonus3) + (att.rolls.crit ? att.rolls.critRoll3.rolls.reduce((acc, cur) => {
+          return acc + cur;
+        }, 0) : 0);
+        att.rolls.totalDamage += att.rolls.total3;
+      }
+      this.$forceUpdate();
+    },
+    parse(roll) {
+      return droll.parse(roll);
+    },
+    rollAttack(att) {
+      att.rolls = {};
+      att.rolls.elvenAccuracy = this.character.feats.reduce((a, b) => {
         return (b.name === "Elven Accuracy") || a;
-      }, false) && (attack.stat === 1 || attack.stat === 3 || attack.stat === 4 || attack.stat === 5);
-      var rawRoll = Number(droll.roll('1d20'));
-      var firstRoll = rawRoll;
-      var secondRoll = Number(droll.roll('1d20'));
-      var thirdRoll = Number(droll.roll('1d20'));
-      if ((attack.advantage === "advantage" && secondRoll > rawRoll) || (attack.advantage === "disadvantage" && secondRoll < rawRoll)) {
-        rawRoll = secondRoll;
+      }, false) && (att.stat === 1 || att.stat === 3 || att.stat === 4 || att.stat === 5);
+      att.rolls.rawRoll = Number(droll.roll('1d20'));
+      att.rolls.firstRoll = att.rolls.rawRoll;
+      att.rolls.secondRoll = Number(droll.roll('1d20'));
+      att.rolls.thirdRoll = Number(droll.roll('1d20'));
+      if ((att.advantage === "advantage" && att.rolls.secondRoll > att.rolls.rawRoll) || (att.advantage === "disadvantage" && att.rolls.secondRoll < att.rolls.rawRoll)) {
+        att.rolls.rawRoll = att.rolls.secondRoll;
       }
-      if (attack.advantage === "advantage" && elvenAccuracy && thirdRoll > rawRoll) {
-        rawRoll = thirdRoll;
+      if (att.rolls.advantage === "advantage" && att.rolls.elvenAccuracy && att.rolls.thirdRoll > att.rolls.rawRoll) {
+        att.rolls.rawRoll = att.rolls.thirdRoll;
       }
-      var toHit = rawRoll + Number(this.getAttackBonus(attack));
-      var crit = false;
-      if (rawRoll >= Number(attack.critRange)) {
-        crit = true;
+      att.rolls.toHit = att.rolls.rawRoll + Number(this.getAttackBonus(att));
+      att.rolls.crit = false;
+      if (att.rolls.rawRoll >= Number(att.critRange)) {
+        att.rolls.crit = true;
       }
-      var damageRoll1 = Number(droll.roll(attack.damage)) + (crit ? Number(droll.roll(attack.damage)) : 0);
-      var damageRoll2 = attack.damage2 ? Number(droll.roll(attack.damage2)) + (crit ? Number(droll.roll(attack.damage2)) : 0) : 0;
-      var damageRoll3 = attack.damage3 ? Number(droll.roll(attack.damage3)) + (crit ? Number(droll.roll(attack.damage3)) : 0) : 0;
-      var damage1 = damageRoll1 + Number(this.getAttackDamageBonus(attack));
-      var damage2 = damageRoll2 + Number(attack.damagebonus2);
-      var damage3 = damageRoll3 + Number(attack.damagebonus3);
-      var damageTotal = damage1 + damage2 + damage3;
-      // build the alert
-      var alertString = "Attack Roll = " + toHit + " (" + rawRoll + " + " + this.getAttackBonus(attack) + ")";
-      if (crit) {
-        alertString += " Critical Hit!";
+      att.rolls.dRoll1 = droll.roll(att.damage);
+      att.rolls.critRoll1 = droll.roll(att.damage);
+      att.rolls.dRoll2 = att.damage2 ? droll.roll(att.damage2) : false;
+      att.rolls.critRoll2 = droll.roll(att.damage2);
+      att.rolls.dRoll3 = att.damage3 ? droll.roll(att.damage3) : false;
+      att.rolls.critRoll3 = droll.roll(att.damage3);
+      att.rolls.total1 = att.rolls.dRoll1.total + Number(this.getAttackDamageBonus(att)) + (att.rolls.crit ? att.rolls.critRoll1.total : 0);
+      att.rolls.totalDamage = att.rolls.total1;
+      if (att.rolls.dRoll2) {
+        att.rolls.total2 = att.rolls.dRoll2.total + Number(att.damagebonus2) + (att.rolls.crit ? att.rolls.critRoll2.total : 0);
+        att.rolls.totalDamage += att.rolls.total2;
       }
-      if (attack.advantage) {
-        alertString += " (All Rolls: " + firstRoll + " " + secondRoll + ((elvenAccuracy && attack.advantage === "advantage") ? " " + thirdRoll : "") + ")";
+      if (att.rolls.dRoll3) {
+        att.rolls.total3 = att.rolls.dRoll3.total + Number(att.damagebonus3) + (att.rolls.crit ? att.rolls.critRoll3.total : 0);
+        att.rolls.totalDamage += att.rolls.total3;
       }
-      alertString += "\n\nDamage: " + damageTotal + " (" + damage1 + " " + attack.dtype;
-      if (damage2) {
-        alertString += " + " + damage2 + " " + attack.dtype2;
-      }
-      if (damage3) {
-        alertString += " + " + damage3 + " " + attack.dtype3;
-      }
-      alertString += ")";
-      alert(alertString);
+      att.rolled = true;
     }
   }
 };

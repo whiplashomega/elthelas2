@@ -2,12 +2,118 @@
   <div class="charsheet-static" id="attackdiv">
     <h4>Attacks</h4>
     <div v-for="(attack, index) in character.attacks" :key="index" class="smalltext">
-      <button type="button" class="btn print-hide btn-sm btn-primary" @click="rollAttack(attack)">roll</button>
-      <select v-model="attack.advantage">
-        <option :value="false">none</option>
-        <option value="advantage">advantage</option>
-        <option value="disadvantage">disadvantage</option>
-      </select>
+      <b-modal v-model="attack.roll" title="Roll Attack" @ok="attack.roll = false; attack.rolled = false">
+        <h4>{{ attack.name }}</h4>
+        Advantage
+        <select class="form-control" v-model="attack.advantage">
+          <option :value="false">None</option>
+          <option value="advantage">Advantage</option>
+          <option value="disadvantage">Disadvantage</option>
+        </select>
+        <button type="button" class="btn btn-primary" @click="rollAttack(attack)">Roll Now!</button>
+        <div v-if="attack.rolled">
+          <h5 v-if="attack.rolls.crit">Critical Hit!</h5>
+          <p>
+            <strong>Attack Roll:</strong> {{ attack.rolls.toHit }} ({{ attack.rolls.rawRoll }} + {{ getAttackBonus(attack) }}) (All dice results: {{ attack.rolls.firstRoll }} <span v-if="attack.advantage">{{ attack.rolls.secondRoll }} <span v-if="attack.rolls.elvenAccuracy">{{ attack.rolls.thirdRoll }}</span></span>)
+          </p>
+          <p>
+            <strong>Damage Rolls</strong>
+          </p>
+          <strong>Total Damage: </strong> {{ attack.rolls.totalDamage }}
+          Damage 1 ({{ attack.dtype }}): {{ attack.rolls.total1 }}
+          <table class="abilitytable">
+            <thead>
+              <tr>
+                <th>Total</th>
+                <th v-for="num in parse(attack.damage).numDice" :key="num">{{ num }}</th>
+                <th v-if="attack.rolls.crit" v-for="num in parse(attack.damage).numDice" :key="num">{{ num + parse(attack.damage).numDice }}</th>
+                <th>Bonus</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{ attack.rolls.total1 }}</td>
+                <td v-for="num in parse(attack.damage).numDice" :key="num">{{ attack.rolls.dRoll1.rolls[num - 1] }}</td>
+                <td v-if="attack.rolls.crit" v-for="num in parse(attack.damage).numDice" :key="num">{{ attack.rolls.critRoll1.rolls[num - 1] }}</td>
+                <td>{{ getAttackDamageBonus(attack) }}</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td v-for="num in parse(attack.damage).numDice" :key="num">
+                  <button class="btn btn-sm btn-primary" @click="rerollDie('1d' + parse(attack.damage).numSides, attack.rolls.dRoll1.rolls, num - 1, attack)">ReRoll</button>
+                </td>
+                <td v-if="attack.rolls.crit" v-for="num in parse(attack.damage).numDice" :key="num">
+                  <button class="btn btn-sm btn-primary" @click="rerollDie('1d' + parse(attack.damage).numSides, attack.rolls.critRoll1.rolls, num - 1, attack)">ReRoll</button>
+                </td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+          <div v-if="attack.rolls.dRoll2">
+            Damage 2 ({{ attack.dtype2 }}): {{ attack.rolls.total2 }}
+            <table class="abilitytable">
+              <thead>
+                <tr>
+                  <th>Total</th>
+                  <th v-for="num in parse(attack.damage2).numDice" :key="num">{{ num }}</th>
+                  <th v-if="attack.rolls.crit" v-for="num in parse(attack.damage2).numDice" :key="num">{{ num + parse(attack.damage2).numDice }}</th>
+                  <th>Bonus</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{{ attack.rolls.total2 }}</td>
+                  <td v-for="num in parse(attack.damage2).numDice" :key="num">{{ attack.rolls.dRoll2.rolls[num - 1] }}</td>
+                  <td v-if="attack.rolls.crit" v-for="num in parse(attack.damage2).numDice" :key="num">{{ attack.rolls.critRoll2.rolls[num - 1] }}</td>
+                  <td>{{ attack.damagebonus2 }}</td>
+                </tr>
+                <tr>
+                  <td>-</td>
+                  <td v-for="num in parse(attack.damage2).numDice" :key="num">
+                    <button class="btn btn-sm btn-primary" @click="rerollDie('1d' + parse(attack.damage2).numSides, attack.rolls.dRoll2.rolls, num - 1, attack)">ReRoll</button>
+                  </td>
+                  <td v-if="attack.rolls.crit" v-for="num in parse(attack.damage2).numDice" :key="num">
+                    <button class="btn btn-sm btn-primary" @click="rerollDie('1d' + parse(attack.damage2).numSides, attack.rolls.critRoll2.rolls, num - 1, attack)">ReRoll</button>
+                  </td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div v-if="attack.rolls.dRoll3">
+            Damage 3 ({{ attack.dtype3 }}): {{ attack.rolls.total3 }}
+            <table class="abilitytable">
+              <thead>
+                <tr>
+                  <th>Total</th>
+                  <th v-for="num in parse(attack.damage3).numDice" :key="num">{{ num }}</th>
+                  <th v-if="attack.rolls.crit" v-for="num in parse(attack.damage3).numDice" :key="num">{{ num + parse(attack.damage3).numDice }}</th>
+                  <th>Bonus</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{{ attack.rolls.total3 }}</td>
+                  <td v-for="num in parse(attack.damage3).numDice" :key="num">{{ attack.rolls.dRoll3.rolls[num - 1] }}</td>
+                  <td v-if="attack.rolls.crit" v-for="num in parse(attack.damage3).numDice" :key="num">{{ attack.rolls.critRoll3.rolls[num - 1] }}</td>
+                  <td>{{ attack.damagebonus3 }}</td>
+                </tr>
+                <tr>
+                  <td>-</td>
+                  <td v-for="num in parse(attack.damage3).numDice" :key="num">
+                    <button class="btn btn-sm btn-primary" @click="rerollDie('1d' + parse(attack.damage3).numSides, attack.rolls.dRoll3.rolls, num - 1, attack)">ReRoll</button>
+                  </td>
+                  <td v-if="attack.rolls.crit" v-for="num in parse(attack.damage3).numDice" :key="num">
+                    <button class="btn btn-sm btn-primary" @click="rerollDie('1d' + parse(attack.damage3).numSides, attack.rolls.critRoll3.rolls, num - 1, attack)">ReRoll</button>
+                  </td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </b-modal>
+      <button type="button" class="btn print-hide btn-sm btn-primary" @click="attack.roll = true">roll</button>
       <strong>{{ attack.name }}:</strong> {{ attack.type }},
       range {{ attack.range }},
       <span v-if="getAttackBonus(attack) > -1">+</span>{{ getAttackBonus(attack) }} to hit
