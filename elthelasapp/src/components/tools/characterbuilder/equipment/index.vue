@@ -6,7 +6,7 @@
         <div v-for="container in equipmentContainers" :key="container.name" style="clear:both;">
           <h4 class="smalltext">
             {{ container.name }} <span class="smalltext">{{ container.contains }} / {{ container.capacity }} lbs
-              <input type="button" class="btn btn-danger btn-sm"
+              <input type="button" class="btn btn-danger btn-sm print-hide"
                      value="X" @click="removeContainer(container)" /></span>
           </h4>
           <div v-for="item in container.equipment" :key="item.id"

@@ -1,4 +1,4 @@
-import { mapGetters } from 'vuex';
+import { mapGetters, mapActions } from 'vuex';
 import helpers from './helpers';
 
 export default {
@@ -9,6 +9,10 @@ export default {
     })
   },
   methods: {
+    ...mapActions({
+      shortrest: "shortrest",
+      longrest: "longrest"
+    }),
     addResource() {
       this.character.resources.push({ name: "", current: 0, max: 0, recharge: "never" });
     },

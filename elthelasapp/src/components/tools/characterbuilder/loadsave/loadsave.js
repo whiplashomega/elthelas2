@@ -44,8 +44,6 @@ export default {
       deleteFromServer: "deleteFromServer",
       saveCharacter: "saveCharacter",
       loadCharacter: "loadCharacter",
-      shortrest: "shortrest",
-      longrest: "longrest",
       resetCharacter: "resetCharacter"
     })
   }

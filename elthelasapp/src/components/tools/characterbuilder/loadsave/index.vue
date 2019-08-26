@@ -42,12 +42,6 @@
     <div class="row" v-else>
       <p class="col">Login to Google from the Menu to enable load and save from drive.</p>
     </div>
-    <div class="row" style="margin-top: 10px;">
-      <div class="btn-group col-12">
-        <button class="btn btn-primary" @click="shortrest()">Short Rest</button>
-        <button class="btn btn-success" @click="longrest()">Long Rest</button>
-      </div>
-    </div>
     <b-modal id="drivemodal" title="Load File from Google Drive">
       <table class="table table-striped">
         <tr>

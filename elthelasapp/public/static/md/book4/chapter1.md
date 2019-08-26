@@ -310,5 +310,4 @@ The kobold sorcerer is the old leader of the tribe, and he chafes at being force
 <p><strong>Union of Wizard's Colleges: </strong>A Wand of the War Mage +1</p>
 
 <p><strong>The Inevitables: </strong> Gauntlets of the Immortal Fist</p>
-<p><strong>
 

@@ -16,9 +16,15 @@
       </select>
       <button class="btn btn-sm btn-danger print-hide" @click="removeResource(index)">X</button>
     </div>
-    <button type="button" class="btn btn-sm print-hide btn-primary"
-            @click="addResource()">+</button>
-    <button type="button" class="btn btn-sm btn-success print-hide" @click="populateResources()">Populate from Classes</button>
+    <div class="row print-hide" style="margin-top: 10px;">
+      <div class="btn-group col-12">
+        <button type="button" class="btn btn-sm print-hide btn-primary"
+                @click="addResource()">+</button>
+        <button type="button" class="btn btn-sm btn-success print-hide" @click="populateResources()">Populate from Classes</button>
+        <button class="btn btn-primary btn-sm" @click="shortrest()">Short Rest</button>
+        <button class="btn btn-success btn-sm" @click="longrest()">Long Rest</button>
+      </div>
+    </div>
   </div>
 </template>
 <script src="./resources.js"></script>

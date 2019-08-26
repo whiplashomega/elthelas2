@@ -1,21 +1,16 @@
+import { mapGetters } from 'vuex';
+
 export default {
   computed: {
-    character: "getCharacter"
+    ...mapGetters({
+      character: "getCharacter"
+    })
   },
-  data () {
+  data: function () {
     return {
-      creatureText: "---<br />layout:post<br />title:$charactername<br />date:" + Date().toString() +
-                    "<br />tags: $tagsarray<br />---<br /><br />" +
-                    "**Medium humanoid ($racename), $alignment**<br /><br />" +
-                    "**Armor Class:** $AC<br /><br />" +
-                    "**Hit Points:** $HPMax",
-      creatureTextModal: false,
-      cr: 0
+      cr: 0,
+      creatureText: "",
+      creatureTextModal: false
     };
-  },
-  methods: {
-    buildCreatureEntry () {
-      this.creatureTextModal = true;
-    }
   }
 };
