@@ -17,9 +17,11 @@
             <strong>Attack Roll:</strong> {{ attack.rolls.toHit }} ({{ attack.rolls.rawRoll }} + {{ getAttackBonus(attack) }}) (All dice results: {{ attack.rolls.firstRoll }} <span v-if="attack.advantage">{{ attack.rolls.secondRoll }} <span v-if="attack.rolls.elvenAccuracy">{{ attack.rolls.thirdRoll }}</span></span>)
           </p>
           <p>
+            <strong>Total Damage: </strong> {{ attack.rolls.totalDamage }}
+          </p>
+          <p>
             <strong>Damage Rolls</strong>
           </p>
-          <strong>Total Damage: </strong> {{ attack.rolls.totalDamage }}
           Damage 1 ({{ attack.dtype }}): {{ attack.rolls.total1 }}
           <table class="abilitytable">
             <thead>
