@@ -12,7 +12,7 @@ export default {
   },
   data () {
     return {
-      newattack: { name: "", stat: 0, bonus: 0, addstat: false, damage: "", range: "", type: "", dtype: "", edit: false, damagebonus: 0, prof: true, damage2: "", dtype2: "", critRange: 20, damagebonus2: 0, damage3: "", damagebonus3: 0, dtype3: "" },
+      newattack: { name: "", stat: 0, bonus: 0, addstat: false, damage: "", range: "", type: "", dtype: "", edit: false, damagebonus: 0, prof: true, damage2: "", dtype2: "", critRange: 20, damagebonus2: 0, damage3: "", damagebonus3: 0, dtype3: "", advantage: false },
       attackmodal: false
     };
   },
@@ -22,11 +22,23 @@ export default {
     }),
     addAttack() {
       this.character.attacks.push(this.newattack);
-      this.newattack = { name: "", stat: 0, bonus: 0, addstat: false, damage: "", range: "", type: "", dtype: "", edit: false, damagebonus: 0, prof: true, damage2: "", dtype2: "", critRange: 20, damagebonus2: 0, damage3: "", damagebonus3: 0, dtype3: "" };
+      this.newattack = { name: "", stat: 0, bonus: 0, addstat: false, damage: "", range: "", type: "", dtype: "", edit: false, damagebonus: 0, prof: true, damage2: "", dtype2: "", critRange: 20, damagebonus2: 0, damage3: "", damagebonus3: 0, dtype3: "", advantage: false };
       this.attackmodal = false;
     },
     rollAttack(attack) {
+      var elvenAccuracy = this.character.feats.reduce((a, b) => {
+        return (b.name === "Elven Accuracy") || a;
+      }, false) && (attack.stat === 1 || attack.stat === 3 || attack.stat === 4 || attack.stat === 5);
       var rawRoll = Number(droll.roll('1d20'));
+      var firstRoll = rawRoll;
+      var secondRoll = Number(droll.roll('1d20'));
+      var thirdRoll = Number(droll.roll('1d20'));
+      if ((attack.advantage === "advantage" && secondRoll > rawRoll) || (attack.advantage === "disadvantage" && secondRoll < rawRoll)) {
+        rawRoll = secondRoll;
+      }
+      if (attack.advantage === "advantage" && elvenAccuracy && thirdRoll > rawRoll) {
+        rawRoll = thirdRoll;
+      }
       var toHit = rawRoll + Number(this.getAttackBonus(attack));
       var crit = false;
       if (rawRoll >= Number(attack.critRange)) {
@@ -40,11 +52,14 @@ export default {
       var damage3 = damageRoll3 + Number(attack.damagebonus3);
       var damageTotal = damage1 + damage2 + damage3;
       // build the alert
-      var alertString = "Attack Roll = " + toHit + " (" + rawRoll + " + " + this.getAttackBonus(attack);
+      var alertString = "Attack Roll = " + toHit + " (" + rawRoll + " + " + this.getAttackBonus(attack) + ")";
       if (crit) {
         alertString += " Critical Hit!";
       }
-      alertString += ")\n\nDamage: " + damageTotal + " (" + damage1 + " " + attack.dtype;
+      if (attack.advantage) {
+        alertString += " (All Rolls: " + firstRoll + " " + secondRoll + ((elvenAccuracy && attack.advantage === "advantage") ? " " + thirdRoll : "") + ")";
+      }
+      alertString += "\n\nDamage: " + damageTotal + " (" + damage1 + " " + attack.dtype;
       if (damage2) {
         alertString += " + " + damage2 + " " + attack.dtype2;
       }

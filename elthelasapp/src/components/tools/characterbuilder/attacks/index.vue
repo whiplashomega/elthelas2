@@ -3,6 +3,11 @@
     <h4>Attacks</h4>
     <div v-for="(attack, index) in character.attacks" :key="index" class="smalltext">
       <button type="button" class="btn print-hide btn-sm btn-primary" @click="rollAttack(attack)">roll</button>
+      <select v-model="attack.advantage">
+        <option :value="false">none</option>
+        <option value="advantage">advantage</option>
+        <option value="disadvantage">disadvantage</option>
+      </select>
       <strong>{{ attack.name }}:</strong> {{ attack.type }},
       range {{ attack.range }},
       <span v-if="getAttackBonus(attack) > -1">+</span>{{ getAttackBonus(attack) }} to hit
