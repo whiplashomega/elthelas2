@@ -9,8 +9,8 @@
       ({{ attack.damage }}
       <span v-if="getAttackDamageBonus(attack) > 0">+ {{ getAttackDamageBonus(attack) }}</span>
       <span v-if="getAttackDamageBonus(attack) < 0"> - {{ getAttackDamageBonus(attack) }}</span> {{ attack.dtype }} damage
-      <span v-if="(attack.damage2 !== '') || attack.damagebonus2 > 0"> + {{ attack.damage2 }} <span v-if="attack.damagebonus2 > 0"> + {{ attack.damagebonus2 }}</span> {{ attack.dtype2 }} damage</span>
-      <span v-if="(attack.damage3 !== '') || attack.damagebonus3 > 0"> + {{ attack.damage3 }} <span v-if="attack.damagebonus3 > 0"> + {{ attack.damagebonus3 }}</span> {{ attack.dtype3 }} damage</span>) Critical Hit on {{ attack.critRange }}.
+      <span v-if="(attack.damage2 !== '') || Number(attack.damagebonus2) > 0"> + {{ attack.damage2 }} + {{ attack.damagebonus2 }} {{ attack.dtype2 }} damage</span>
+      <span v-if="(attack.damage3 !== '') || Number(attack.damagebonus3) > 0"> + {{ attack.damage3 }} + {{ attack.damagebonus3 }} {{ attack.dtype3 }} damage</span>) Critical Hit on {{ attack.critRange }}.
       <button type="button" class="print-hide btn-symbol" @click="attack.edit = true">&#9998;</button>
       <button type="button" @click="removeAttack(index)" class="print-hide btn btn-sm btn-danger">X</button>
       <b-modal v-model="attack.edit">
