@@ -22,7 +22,7 @@
           <p>
             <strong>Damage Rolls</strong>
           </p>
-          Damage 1 ({{ attack.dtype }}): {{ attack.rolls.total1 }}
+          {{ attack.dtype }} Damage: {{ attack.rolls.total1 }}
           <table class="abilitytable">
             <thead>
               <tr>
@@ -52,7 +52,7 @@
             </tbody>
           </table>
           <div v-if="attack.rolls.dRoll2">
-            Damage 2 ({{ attack.dtype2 }}): {{ attack.rolls.total2 }}
+            {{ attack.dtype2 }} Damage: {{ attack.rolls.total2 }}
             <table class="abilitytable">
               <thead>
                 <tr>
@@ -83,7 +83,7 @@
             </table>
           </div>
           <div v-if="attack.rolls.dRoll3">
-            Damage 3 ({{ attack.dtype3 }}): {{ attack.rolls.total3 }}
+            {{ attack.dtype3 }} Damage: {{ attack.rolls.total3 }}
             <table class="abilitytable">
               <thead>
                 <tr>

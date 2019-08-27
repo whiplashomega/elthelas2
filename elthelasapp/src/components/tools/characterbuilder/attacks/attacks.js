@@ -93,6 +93,7 @@ export default {
         att.rolls.totalDamage += att.rolls.total3;
       }
       att.rolled = true;
+      this.$forceUpdate();
     }
   }
 };

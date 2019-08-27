@@ -1,114 +1,100 @@
+
+
 export default {
-  barbResources (character, a) {
-    if (Number(a.level) < 20) {
-      var rage = this.calcRage(a);
-      this.character.resources.push(rage);
+  addAbility (character, name, max, recharge, minlevel, cl) {
+    if (Number(cl.level) >= minlevel) {
+      let obj = { name: name, current: max, max: max, recharge: recharge };
+      let i = character.resources.findIndex((a) => {
+        return a.name === name;
+      });
+      if (i !== -1) {
+        character.resources.splice(i, 1, obj);
+      } else {
+        character.resources.push(obj);
+      }
     }
-    if (a.selsubclass.name === "Path of the Ancestral Guardian" && Number(a.level) >= 10) {
-      character.resources.push({ name: "Consult the Spirits", current: 1, max: 1, recharge: "shortrest" });
+  },
+  barbResources (character, a) {
+    var rage = this.calcRage(a);
+    this.addAbility(character, rage.name, rage.max, rage.recharge, 1, a);
+    if (a.selsubclass.name === "Path of the Ancestral Guardian") {
+      this.addAbility(character, "Consult the Spirits", 1, "shortrest", 10, a);
     }
     if (a.selsubclass.name === "Path of the Zealot") {
-      if (a.level >= 6) {
-        character.resources.push({ name: "Fanatical Focus", current: 1, max: 1, recharge: "never" });
-      }
-      if (a.level >= 10) {
-        character.resources.push({ name: "Zealous Presence", current: 1, max: 1, recharge: "longrest" });
-      }
+      this.addAbility(character, "Fanatical Focus", 1, "never", 6, a);
+      this.addAbility(character, "Zealous Presence", 1, "longrest", 10, a);
     }
   },
   bardResources (vue, character, a) {
-    var inspiration = { name: "Bardic Inspiration", current: vue.getStatMod(5), max: vue.getStatMod(5), recharge: "longrest" };
-    if (Number(a.level) >= 5) {
-      inspiration.recharge = "shortrest";
-    }
-    character.resources.push(inspiration);
+    this.addAbility(character, "Bardic Inspiration", vue.getStatMod(5), "longrest", 1, a);
+    this.addAbility(character, "Bardic Inspiration", vue.getStatMod(5), "shortrest", 5, a);
     if (a.selsubclass.name === "College of Glamour") {
-      if (Number(a.level) >= 3) {
-        character.resources.push({ name: "Enthralling Performance", current: 1, max: 1, recharge: "shortrest" });
-      }
-      if (Number(a.level) >= 6) {
-        character.resources.push({ name: "Mantle of Majesty", current: 1, max: 1, recharge: "longrest" });
-      }
-      if (Number(a.level) >= 14) {
-        character.resources.push({ name: "Unbreakable Majesty", current: 1, max: 1, recharge: "shortrest" });
-      }
+      this.addAbility(character, "Enthralling Performance", 1, "shortrest", 3, a);
+      this.addAbility(character, "Mantle of Majesty", 1, "longrest", 6, a);
+      this.addAbility(character, "Unbreakable Majesty", 1, "shortrest", 14, a);
     }
     if (a.selsubclass.name === "College of Whispers") {
-      if (Number(a.level) >= 6) {
-        character.resources.push({ name: "Mantle of Whispers", current: 1, max: 1, recharge: "shortrest" });
-      }
-      if (Number(a.level) >= 14) {
-        character.resources.push({ name: "Shadow Lore", current: 1, max: 1, recharge: "longrest" });
-      }
+      this.addAbility(character, "Mantle of Whispers", 1, "shortrest", 6, a);
+      this.addAbility(character, "Shadow Lore", 1, "longrest", 14, a);
     }
   },
   clericResources (character, a) {
-    var channel = { name: "Channel Divinity", current: 1, max: 1, recharge: "shortrest" };
-    if (Number(a.level) >= 6) {
-      channel.current++;
-      channel.max++;
-    }
-    if (Number(a.level) >= 18) {
-      channel.current++;
-      channel.max++;
-    }
-    character.resources.push(channel);
+    this.addAbility(character, "Channel Divinity", 1, "shortrest", 1, a);
+    this.addAbility(character, "Channel Divinity", 2, "shortrest", 6, a);
+    this.addAbility(character, "Channel Divinity", 3, "shortrest", 18, a);
+  },
+  druidResources (character, a) {
+    this.addAbility(character, "Wildshape", 2, "shortrest", 1, a);
+  },
+  factotumResources (vue, character, a) {
+    this.addAbility(character, "Epiphany Points", vue.getStatMod(3) + Math.floor(Number(a.level) / 2), "shortrest", 1, a);
   },
   fighterResources (character, a) {
-    character.resources.push({ name: "Second Wind", current: 1, max: 1, recharge: "shortrest" });
-    if (Number(a.level) >= 2) {
-      let surge = { name: "Action Surge", current: 1, max: 1, recharge: "shortrest" };
-      if (Number(a.level) >= 17) {
-        surge.current++;
-        surge.max++;
-      }
-      character.resources.push(surge);
-    }
-    if (a.level >= 9) {
-      let num = Math.floor((Number(a.level) - 5) / 4);
-      character.resources.push({ name: "Indomitable", current: num, max: num, recharge: "shortrest" });
-    }
-    if (Number(a.level) >= 3 && a.selsubclass.name === "Battle Master") {
-      let superiority = { name: "Combat Superiority", current: 4, max: 4, recharge: "shortrest" };
-      if (Number(a.level) >= 7) {
-        superiority.current++;
-        superiority.max++;
-      }
-      if (Number(a.level) >= 15) {
-        superiority.current++;
-        superiority.max++;
-      }
-      character.resources.push(superiority);
+    this.addAbility(character, "Second Wind", 1, "shortrest", 1, a);
+    this.addAbility(character, "Action Surge", 1, "shortrest", 2, a);
+    this.addAbility(character, "Action Surge", 2, "shortrest", 17, a);
+    this.addAbility(character, "Indomitable", Math.floor((Number(a.level) - 5) / 4), "shortrest", 9, a);
+    if (a.selsubclass.name === "Battle Master") {
+      this.addAbility(character, "Combat Superiority", 4, "shortrest", 3, a);
+      this.addAbility(character, "Combat Superiority", 5, "shortrest", 7, a);
+      this.addAbility(character, "Combat Superiority", 6, "shortrest", 15, a);
     }
   },
+  monkResources (character, a) {
+    this.addAbility(character, "Ki", Number(a.level), "shortrest", 2, a);
+  },
   paladinResources (vue, character, a) {
-    character.resources.push({ name: "Lay on Hands", current: Number(a.level) * 5, max: Number(a.level) * 5, recharge: "longrest" });
-    character.resources.push({ name: "Divine Sense", current: vue.getStatMod(5) + 1, max: vue.getStatMod(5) + 1, recharge: "longrest" });
-    if (a.level >= 3) {
-      character.resources.push({ name: "Channel Divinity", current: 1, max: 1, recharge: "shortrest" });
-    }
-    if (a.level >= 14) {
-      character.resources.push({ name: "Cleansing Touch", current: vue.getStatMod(5), max: vue.getStatMod(5), recharge: "longrest" });
+    this.addAbility(character, "Lay on Hands", Number(a.level) * 5, "longrest", 1, a);
+    this.addAbility(character, "Divine Sense", vue.getStatMod(5) + 1, "longrest", 1, a);
+    this.addAbility(character, "Channel Divinity", 1, "shortrest", 3, a);
+    this.addAbility(character, "Cleansing Touch", vue.getStatMod(5), "longrest", 14, a);
+  },
+  sorcererResources (character, a) {
+    this.addAbility(character, "Sorcery Points", Number(a.level), "longrest", 2, a);
+  },
+  warlockResources (character, a) {
+    if (a.selsubclass.name === "The Hexblade") {
+      this.addAbility(character, "Hexblade's Curse", 1, "shortrest", 1, a);
     }
   },
   wizardResources (character, a) {
-    if (Number(a.level) >= 2 && a.selsubclass.name === "Bladesinging") {
-      character.resources.push({ name: "Bladesong", current: 2, max: 2, recharge: "shortrest" });
+    if (a.selsubclass.name === "Bladesinging") {
+      this.addAbility(character, "Bladesong", 2, "shortrest", 2, a);
     }
-    if (Number(a.level) >= 2 && a.selsubclass.name === "School of Abjuration") {
-      character.resources.push({ name: "Arcane Ward", current: 1, max: 1, recharge: "longrest" });
+    if (a.selsubclass.name === "School of Abjuration") {
+      this.addAbility(character, "Arcane Ward", 1, "longrest", 2, a);
     }
-    if (Number(a.level) >= 2 && a.selsubclass.name === "School of Enchantment") {
-      character.resources.push({ name: "Hypnotic Gaze", current: 1, max: 1, recharge: "longrest" });
+    if (a.selsubclass.name === "School of Enchantment") {
+      this.addAbility(character, "Hypnotic Gaze", 1, "longrest", 2, a);
     }
-    if (Number(a.level) >= 6 && a.selsubclass.name === "School of Enchantment") {
-      character.resources.push({ name: "Instinctive Charm", current: 1, max: 1, recharge: "longrest" });
+    if (a.selsubclass.name === "School of Enchantment") {
+      this.addAbility(character, "Instinctive Charm", 1, "longrest", 6, a);
     }
-    if (Number(a.level) >= 10 && a.selsubclass.name === "School of Illusion") {
-      character.resources.push({ name: "Illusory Self", current: 1, max: 1, recharge: "shortrest" });
+    if (a.selsubclass.name === "School of Illusion") {
+      this.addAbility(character, "Illusory Self", 1, "shortrest", 10, a);
     }
-    if (Number(a.level) >= 10 && a.selsubclass.name === "School of Transmutation") {
-      character.resources.push({ name: "Shapechanger", current: 1, max: 1, recharge: "shortrest" });
+    if (a.selsubclass.name === "School of Transmutation") {
+      this.addAbility(character, "Shapechanger", 1, "shortrest", 10, a);
     }
   },
   calcRage (a) {
