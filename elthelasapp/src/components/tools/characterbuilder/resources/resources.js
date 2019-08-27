@@ -41,7 +41,7 @@ export default {
           helpers.clericResources(this.character, a);
         }
         if (a.thisclass.name === "Druid") {
-          helpers.druidResources(this.character, a);
+          helpers.druidResources(this, this.character, a);
         }
         if (a.thisclass.name === "Factotum") {
           helpers.factotumResources(this, this.character, a);

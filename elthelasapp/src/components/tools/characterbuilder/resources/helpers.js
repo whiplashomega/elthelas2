@@ -43,8 +43,20 @@ export default {
     this.addAbility(character, "Channel Divinity", 2, "shortrest", 6, a);
     this.addAbility(character, "Channel Divinity", 3, "shortrest", 18, a);
   },
-  druidResources (character, a) {
+  druidResources (vue, character, a) {
     this.addAbility(character, "Wildshape", 2, "shortrest", 1, a);
+    if (a.selsubclass.name === "Circle of the Land") {
+      this.addAbility(character, "Natural Recovery", 1, "longrest", 2, a);
+    }
+    if (a.selsubclass.name === "Circle of Dreams") {
+      this.addAbility(character, "Balm of the Summer Court", Number(a.level), "longrest", 2, a);
+      this.addAbility(character, "Hidden Paths", vue.getStatMod(4), "longrest", 10, a);
+      this.addAbility(character, "Walker in Dreams", 1, "longrest", 14, a);
+    }
+    if (a.selsubclass.name === "Circle of the Shepherd") {
+      this.addAbility(character, "Spirit Totem", 1, "shortrest", 2, a);
+      this.addAbility(character, "Faithful Summons", 1, "longrest", 14, a);
+    }
   },
   factotumResources (vue, character, a) {
     this.addAbility(character, "Epiphany Points", vue.getStatMod(3) + Math.floor(Number(a.level) / 2), "shortrest", 1, a);
@@ -75,9 +87,36 @@ export default {
   warlockResources (character, a) {
     if (a.selsubclass.name === "The Hexblade") {
       this.addAbility(character, "Hexblade's Curse", 1, "shortrest", 1, a);
+      this.addAbility(character, "Accursed Specter", 1, "longrest", 6, a);
     }
+    if (a.selsubclass.name === "Archfey") {
+      this.addAbility(character, "Fey Presence", 1, "shortrest", 1, a);
+      this.addAbility(character, "Misty Escape", 1, "shortrest", 6, a);
+      this.addAbility(character, "Dark Delirium", 1, "shortrest", 14, a);
+    }
+    if (a.selsubclass.name === "The Great Old One") {
+      this.addAbility(character, "Entropic Ward", 1, "shortrest", 6, a);
+    }
+    if (a.selsubclass.name === "The Fiend") {
+      this.addAbility(character, "Dark One's Own Luck", 1, "shortrest", 6, a);
+      this.addAbility(character, "Hurl Through Hell", 1, "longrest", 14, a);
+    }
+    if (a.selsubclass.name === "The Undying") {
+      this.addAbility(character, "Defy Death", 1, "shortrest", 6, a);
+      this.addAbility(character, "Indestructible Life", 1, "shortrest", 14, a);
+    }
+    if (a.selsubclass.name === "The Celestial") {
+      this.addAbility(character, "Healing Light", 1 + Number(a.level), "longrest", 1, a);
+      this.addAbility(character, "Searing Vengeance", 1, "longrest", 14, a);
+    }
+    this.addAbility(character, "Mystic Arcanum level 6", 1, "longrest", 11, a);
+    this.addAbility(character, "Mystic Arcanum level 7", 1, "longrest", 13, a);
+    this.addAbility(character, "Mystic Arcanum level 8", 1, "longrest", 15, a);
+    this.addAbility(character, "Mystic Arcanum level 9", 1, "longrest", 17, a);
+    this.addAbility(character, "Eldritch Master", 1, "longrest", 20, a);
   },
   wizardResources (character, a) {
+    this.addAbility(character, "Arcane Recovery", 1, "longrest", 1, a);
     if (a.selsubclass.name === "Bladesinging") {
       this.addAbility(character, "Bladesong", 2, "shortrest", 2, a);
     }
