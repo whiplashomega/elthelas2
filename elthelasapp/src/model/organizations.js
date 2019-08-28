@@ -2,11 +2,16 @@ import Vue from 'vue';
 import ctest from './cordovatest.js';
 
 const state = {
-  all: [{ name: 'Placeholder', id: 'placeholder' }]
+  all: [{ name: 'Placeholder', id: 'placeholder' }],
+  allWithNull: []
 };
 
 const getters = {
-  allOrganizations: state => state.all
+  allOrganizations: state => state.all,
+  allOrganizationsWithNull: (state) => {
+    state.allWithNull = [ ...state.all, { name: "None", id: 'nofaction' } ];
+    return state.allWithNull;
+  }
 };
 
 const actions = {
