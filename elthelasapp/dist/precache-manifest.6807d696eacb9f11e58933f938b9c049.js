@@ -1,71 +1,71 @@
 self.__precacheManifest = [
   {
-    "revision": "0f17866311b32b28c5b4e7bc53e81ae2",
-    "url": "/json/history.json"
+    "revision": "6aae083ac3cfefbaa90b67c1da319cf9",
+    "url": "/json/landmarks.json"
+  },
+  {
+    "revision": "6a63da1c7305b86f96c480edf01e587e",
+    "url": "/static/md/book4/pcs.md"
+  },
+  {
+    "revision": "2dc0eb456bd2d749e15b2b93036de7e7",
+    "url": "/static/md/book4/progression.md"
   },
   {
     "revision": "2c0c0b0008f1399bde41ecb582de658d",
     "url": "/static/md/book4/theworld.md"
   },
   {
-    "revision": "180ff3435d558f90530bce4f540162f8",
-    "url": "/json/improvements.json"
+    "revision": "f0560626d4c1c5060ee0854af1a53e33",
+    "url": "/json/nations.json"
   },
   {
-    "revision": "0ee946184d8094b9b34f",
-    "url": "/css/characterbuilder.d56d2749.css"
+    "revision": "6127e549dd51c4c976ab",
+    "url": "/css/chunk-vendors.4342eb9d.css"
   },
   {
-    "revision": "e6735ff390c553613ca1",
-    "url": "/css/chunk-vendors.ecc27ba5.css"
+    "revision": "64fcd059104e5fcb7beb",
+    "url": "/css/classes.a0e6e8e8.css"
   },
   {
-    "revision": "e6735ff390c553613ca1",
-    "url": "/js/chunk-vendors.c5c8a51d.js"
+    "revision": "64fcd059104e5fcb7beb",
+    "url": "/js/classes.4be53dd3.js"
   },
   {
-    "revision": "d63ebcc577ab99dbde1b",
-    "url": "/css/classes.90ebbbe5.css"
+    "revision": "b214cbb0af245986006e",
+    "url": "/css/domains.319a74fe.css"
   },
   {
-    "revision": "d63ebcc577ab99dbde1b",
-    "url": "/js/classes.3107e089.js"
+    "revision": "b214cbb0af245986006e",
+    "url": "/js/domains.33d5b836.js"
   },
   {
-    "revision": "5383da49c80e41e887fa",
-    "url": "/css/domains.8ce426b8.css"
-  },
-  {
-    "revision": "5383da49c80e41e887fa",
-    "url": "/js/domains.5fb6e59d.js"
-  },
-  {
-    "revision": "e990e5895295b9daffad",
+    "revision": "aa05fe63540c95aaba59",
     "url": "/css/encounters.8b5fefc0.css"
   },
   {
-    "revision": "e990e5895295b9daffad",
-    "url": "/js/encounters.7a6b4f41.js"
+    "revision": "aa05fe63540c95aaba59",
+    "url": "/js/encounters.af7f6ee0.js"
   },
   {
-    "revision": "3ae0fca13f9ad18ad212",
-    "url": "/css/geography.9ace0302.css"
+    "revision": "524c07ebff3213dcd19c",
+    "url": "/css/geography.5638d246.css"
   },
   {
-    "revision": "3ae0fca13f9ad18ad212",
-    "url": "/js/geography.0919cfc0.js"
+    "revision": "524c07ebff3213dcd19c",
+    "url": "/js/geography.888a0843.js"
   },
   {
-    "revision": "8faa2cb9698da5ffac16",
-    "url": "/css/quickref.183a88c4.css"
+    "revision": "7973e4cbd1422c13f826",
+    "url": "/css/quickref.5fba4a1e.css"
   },
   {
-    "revision": "8faa2cb9698da5ffac16",
-    "url": "/js/quickref.f0280ef1.js"
+    "revision": "7973e4cbd1422c13f826",
+    "url": "/js/quickref.93cc5d06.js"
   },
   {
-    "revision": "48837380241a00dbf298",
-    "url": "/js/treasure.ff9ae10d.js"
+    "revision": "91296349d8082eae5efd",
+    "url": "/js/treasure.3b0bc85d.js"
   },
   {
     "revision": "b0f49cd26ba67885381b66e77665bf02",
@@ -84,24 +84,16 @@ self.__precacheManifest = [
     "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "5553608249d7398812812dba5a4ea448",
+    "revision": "43edc0f3da5394e5afec9f62bbf1bc3c",
     "url": "/index.html"
   },
   {
-    "revision": "2dc0eb456bd2d749e15b2b93036de7e7",
-    "url": "/static/md/book4/progression.md"
+    "revision": "69eb759f4382909b92a0",
+    "url": "/js/characterbuilder.7b91af9e.js"
   },
   {
     "revision": "fe9884553a1ae2ea1bb0d6f76a8d4822",
     "url": "/js/locale/el.json"
-  },
-  {
-    "revision": "d3d9140c4d912e18b894495d6c87f2df",
-    "url": "/js/timeline.js"
-  },
-  {
-    "revision": "efc28f3579bb800850de349535a7af21",
-    "url": "/js/timeline.min.js"
   },
   {
     "revision": "97971c100baf08dd95f249aa532e758b",
@@ -148,24 +140,24 @@ self.__precacheManifest = [
     "url": "/json/gods.json"
   },
   {
-    "revision": "a1bda65b3efb564c9f89",
-    "url": "/js/app.156c3511.js"
+    "revision": "0f17866311b32b28c5b4e7bc53e81ae2",
+    "url": "/json/history.json"
   },
   {
-    "revision": "0ee946184d8094b9b34f",
-    "url": "/js/characterbuilder.6235fb01.js"
+    "revision": "180ff3435d558f90530bce4f540162f8",
+    "url": "/json/improvements.json"
   },
   {
-    "revision": "6aae083ac3cfefbaa90b67c1da319cf9",
-    "url": "/json/landmarks.json"
+    "revision": "4b13064a88a8146d1788",
+    "url": "/js/app.06ddd239.js"
   },
   {
     "revision": "6ac95d43441c47c00c34a31f2fce0966",
     "url": "/json/magicitems.json"
   },
   {
-    "revision": "f0560626d4c1c5060ee0854af1a53e33",
-    "url": "/json/nations.json"
+    "revision": "6127e549dd51c4c976ab",
+    "url": "/js/chunk-vendors.9c41465a.js"
   },
   {
     "revision": "9455f0940c46f39d55d772ec4092d756",
@@ -196,16 +188,20 @@ self.__precacheManifest = [
     "url": "/manifest.webmanifest"
   },
   {
-    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
-    "url": "/robots.txt"
-  },
-  {
     "revision": "d41d8cd98f00b204e9800998ecf8427e",
     "url": "/static/md/book.md"
   },
   {
     "revision": "00c804dcff8ed49b07fa8fab13faf389",
     "url": "/static/md/book4/chapter1.md"
+  },
+  {
+    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
+    "url": "/robots.txt"
+  },
+  {
+    "revision": "efc28f3579bb800850de349535a7af21",
+    "url": "/js/timeline.min.js"
   },
   {
     "revision": "ad607ac3ac0ad4e1530918e3caa96d05",
@@ -220,8 +216,20 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chapter12.md"
   },
   {
+    "revision": "d3d9140c4d912e18b894495d6c87f2df",
+    "url": "/js/timeline.js"
+  },
+  {
+    "revision": "81c2fab248da1d2b661dd1538cac6fb6",
+    "url": "/static/md/book4/chapter2.md"
+  },
+  {
     "revision": "4c5b11958f5fe61f98f10a7bb10b16af",
     "url": "/static/md/book4/chapter13.md"
+  },
+  {
+    "revision": "b59ed4e72d1e0934d2974fb27eb0ce35",
+    "url": "/static/md/book4/chapter3.md"
   },
   {
     "revision": "63a9d0758a75c813df5826e8f43d7732",
@@ -232,18 +240,6 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chapter1old.md"
   },
   {
-    "revision": "81c2fab248da1d2b661dd1538cac6fb6",
-    "url": "/static/md/book4/chapter2.md"
-  },
-  {
-    "revision": "8e31e4f897e9abf93cc23356bdda7980",
-    "url": "/static/md/book4/chapter2old.md"
-  },
-  {
-    "revision": "b59ed4e72d1e0934d2974fb27eb0ce35",
-    "url": "/static/md/book4/chapter3.md"
-  },
-  {
     "revision": "0f3706bbf9968b8f0f3209cf69b52a59",
     "url": "/static/md/book4/chapter3old.md"
   },
@@ -252,24 +248,32 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chapter4.md"
   },
   {
+    "revision": "de0438c70e05315ffa2a86f42e6808ac",
+    "url": "/static/md/book4/chapter7.md"
+  },
+  {
     "revision": "c37156a220b3a2dda57343f2c2cc6dcb",
     "url": "/static/md/book4/chapter5.md"
+  },
+  {
+    "revision": "8e31e4f897e9abf93cc23356bdda7980",
+    "url": "/static/md/book4/chapter2old.md"
   },
   {
     "revision": "b851a579568265954e9b67087dd84273",
     "url": "/static/md/book4/chapter6.md"
   },
   {
-    "revision": "de0438c70e05315ffa2a86f42e6808ac",
-    "url": "/static/md/book4/chapter7.md"
+    "revision": "deb69e20439bb1e4ee55ff6e2affdadd",
+    "url": "/static/md/book4/chapter8.md"
+  },
+  {
+    "revision": "2a7a0ec8da4974b7bfb9f99c94243405",
+    "url": "/static/md/book4/curestan.md"
   },
   {
     "revision": "408bd6e11ad4774bb150fa0abd2d544b",
     "url": "/static/md/book4/chapter7old.md"
-  },
-  {
-    "revision": "deb69e20439bb1e4ee55ff6e2affdadd",
-    "url": "/static/md/book4/chapter8.md"
   },
   {
     "revision": "c58d91a5bb074d7012836eea11c53703",
@@ -280,16 +284,12 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chaptertemplate.md"
   },
   {
-    "revision": "2a7a0ec8da4974b7bfb9f99c94243405",
-    "url": "/static/md/book4/curestan.md"
+    "revision": "69eb759f4382909b92a0",
+    "url": "/css/characterbuilder.3a1d94f0.css"
   },
   {
-    "revision": "6a63da1c7305b86f96c480edf01e587e",
-    "url": "/static/md/book4/pcs.md"
-  },
-  {
-    "revision": "a1bda65b3efb564c9f89",
-    "url": "/css/app.f197ae87.css"
+    "revision": "4b13064a88a8146d1788",
+    "url": "/css/app.46be9565.css"
   },
   {
     "revision": "d41d8cd98f00b204e9800998ecf8427e",

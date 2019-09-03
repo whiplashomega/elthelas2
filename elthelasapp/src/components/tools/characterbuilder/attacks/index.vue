@@ -168,6 +168,7 @@
           <option>Lightning</option>
           <option>Necrotic</option>
           <option>Poison</option>
+          <option>Psychic</option>
           <option>Radiant</option>
           <option>Thunder</option>
         </select>
@@ -187,6 +188,7 @@
           <option>Lightning</option>
           <option>Necrotic</option>
           <option>Poison</option>
+          <option>Psychic</option>
           <option>Radiant</option>
           <option>Thunder</option>
         </select>
@@ -206,6 +208,7 @@
           <option>Lightning</option>
           <option>Necrotic</option>
           <option>Poison</option>
+          <option>Psychic</option>
           <option>Radiant</option>
           <option>Thunder</option>
         </select>
@@ -254,6 +257,7 @@
         <option>Lightning</option>
         <option>Necrotic</option>
         <option>Poison</option>
+        <option>Psychic</option>
         <option>Radiant</option>
         <option>Thunder</option>
       </select>
@@ -273,6 +277,7 @@
         <option>Lightning</option>
         <option>Necrotic</option>
         <option>Poison</option>
+        <option>Psychic</option>
         <option>Radiant</option>
         <option>Thunder</option>
       </select>
@@ -292,6 +297,7 @@
         <option>Lightning</option>
         <option>Necrotic</option>
         <option>Poison</option>
+        <option>Psychic</option>
         <option>Radiant</option>
         <option>Thunder</option>
       </select>
