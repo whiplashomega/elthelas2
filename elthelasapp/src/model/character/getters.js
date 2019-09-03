@@ -195,11 +195,11 @@ export default {
   getAttackBonus: (state, getters) => (attack) => {
     return Number(attack.bonus) + Number(getters.getStatMod(attack.stat)) + getters.profbonus * attack.prof;
   },
-  getAttackDamageBonus: (state, getters) => (attack) => {
-    if (attack.addstat) {
-      return Number(getters.getStatMod(attack.stat)) + Number(attack.damagebonus);
+  getDamageBonus: (state, getters) => (dmg, stat) => {
+    if (dmg.addstat) {
+      return Number(getters.getStatMod(stat)) + Number(dmg.damagebonus);
     } else {
-      return attack.damagebonus;
+      return Number(dmg.damagebonus);
     }
   },
   armorac: (state, getters) => (a) => {

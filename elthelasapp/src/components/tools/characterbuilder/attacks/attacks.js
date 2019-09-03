@@ -6,13 +6,14 @@ export default {
     ...mapGetters({
       character: 'getCharacter',
       getAttBonus: 'getAttBonus',
+      getStatMod: 'getStatMod',
       getAttackBonus: "getAttackBonus",
-      getAttackDamageBonus: "getAttackDamageBonus"
+      getDamageBonus: "getDamageBonus"
     })
   },
   data () {
     return {
-      newattack: { name: "", stat: 0, bonus: 0, addstat: false, damage: "", range: "", type: "", dtype: "", edit: false, damagebonus: 0, prof: true, damage2: "", dtype2: "", critRange: 20, damagebonus2: 0, damage3: "", damagebonus3: 0, dtype3: "", advantage: false, rolls: {}, rolled: false, roll: false },
+      newattack: { name: "", stat: 0, bonus: 0, damage: [ { dice: "", dtype: "", damagebonus: 0, addstat: false } ], range: "", type: "", edit: false, prof: true, advantage: false, rolls: {}, rolled: false, roll: false, critRange: 20 },
       attackmodal: false
     };
   },
@@ -22,35 +23,26 @@ export default {
     }),
     addAttack() {
       this.character.attacks.push(this.newattack);
-      this.newattack = { name: "", stat: 0, bonus: 0, addstat: false, damage: "", range: "", type: "", dtype: "", edit: false, damagebonus: 0, prof: true, damage2: "", dtype2: "", critRange: 20, damagebonus2: 0, damage3: "", damagebonus3: 0, dtype3: "", advantage: false, rolls: {}, rolled: false, roll: false };
+      this.newattack = { name: "", stat: 0, bonus: 0, damage: [ { dice: "", dtype: "", damagebonus: 0, addstat: false } ], range: "", type: "", edit: false, prof: true, advantage: false, rolls: {}, rolled: false, roll: false, critRange: 20 };
       this.attackmodal = false;
+    },
+    addDamage (attack) {
+      attack.damage.push({ dice: "", dtype: "", damagebonus: 0, addstat: false });
+    },
+    removeDamage (attack, i) {
+      attack.damage.splice(i, 1);
     },
     rerollDie(die, arr, i, att) {
       arr[i] = droll.roll(die).total;
-      console.log(arr[i]);
-      console.log(att.rolls.dRoll1.total);
-      att.rolls.total1 = att.rolls.dRoll1.rolls.reduce((acc, cur) => {
-        return acc + cur;
-      }, 0) + this.getAttackDamageBonus(att) + (att.rolls.crit ? att.rolls.critRoll1.rolls.reduce((acc, cur) => {
-        return acc + cur;
-      }, 0) : 0);
-      att.rolls.totalDamage = att.rolls.total1;
-      if (att.rolls.dRoll2) {
-        att.rolls.total2 = att.rolls.dRoll2.rolls.reduce((acc, cur) => {
+      let v = this;
+      att.rolls.damage.forEach((d) => {
+        d.total = d.dRoll.rolls.reduce((acc, cur) => {
           return acc + cur;
-        }, 0) + Number(att.damagebonus2) + (att.rolls.crit ? att.rolls.critRoll2.rolls.reduce((acc, cur) => {
-          return acc + cur;
-        }, 0) : 0);
-        att.rolls.totalDamage += att.rolls.total2;
-      }
-      if (att.rolls.dRoll3) {
-        att.rolls.total3 = att.rolls.dRoll3.rolls.reduce((acc, cur) => {
-          return acc + cur;
-        }, 0) + Number(att.damagebonus3) + (att.rolls.crit ? att.rolls.critRoll3.rolls.reduce((acc, cur) => {
-          return acc + cur;
-        }, 0) : 0);
-        att.rolls.totalDamage += att.rolls.total3;
-      }
+        }, 0) + Number(d.damagebonus) + (d.addstat ? Number(v.getStatMod(att.stat)) : 0) + (att.rolls.crit ? d.critRoll.total : 0);
+      });
+      att.rolls.totalDamage = att.rolls.damage.reduce((acc, d) => {
+        return acc + d.total;
+      }, 0);
       this.$forceUpdate();
     },
     parse(roll) {
@@ -76,22 +68,16 @@ export default {
       if (att.rolls.rawRoll >= Number(att.critRange)) {
         att.rolls.crit = true;
       }
-      att.rolls.dRoll1 = droll.roll(att.damage);
-      att.rolls.critRoll1 = droll.roll(att.damage);
-      att.rolls.dRoll2 = att.damage2 ? droll.roll(att.damage2) : false;
-      att.rolls.critRoll2 = droll.roll(att.damage2);
-      att.rolls.dRoll3 = att.damage3 ? droll.roll(att.damage3) : false;
-      att.rolls.critRoll3 = droll.roll(att.damage3);
-      att.rolls.total1 = att.rolls.dRoll1.total + Number(this.getAttackDamageBonus(att)) + (att.rolls.crit ? att.rolls.critRoll1.total : 0);
-      att.rolls.totalDamage = att.rolls.total1;
-      if (att.rolls.dRoll2) {
-        att.rolls.total2 = att.rolls.dRoll2.total + Number(att.damagebonus2) + (att.rolls.crit ? att.rolls.critRoll2.total : 0);
-        att.rolls.totalDamage += att.rolls.total2;
-      }
-      if (att.rolls.dRoll3) {
-        att.rolls.total3 = att.rolls.dRoll3.total + Number(att.damagebonus3) + (att.rolls.crit ? att.rolls.critRoll3.total : 0);
-        att.rolls.totalDamage += att.rolls.total3;
-      }
+      att.rolls.damage = att.damage.map((d) => {
+        let rolls = { ...d };
+        rolls.dRoll = droll.roll(d.dice);
+        rolls.critRoll = droll.roll(d.dice);
+        rolls.total = rolls.dRoll.total + this.getDamageBonus(d, att.stat) + (att.rolls.crit ? rolls.critRoll.total : 0);
+        return rolls;
+      });
+      att.rolls.totalDamage = att.rolls.damage.reduce((acc, d) => {
+        return acc + d.total;
+      }, 0);
       att.rolled = true;
       this.$forceUpdate();
     }

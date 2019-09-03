@@ -1,5 +1,3 @@
-
-
 export default {
   addAbility (character, name, max, recharge, minlevel, cl) {
     if (Number(cl.level) >= minlevel) {

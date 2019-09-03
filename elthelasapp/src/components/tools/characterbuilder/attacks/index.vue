@@ -22,91 +22,31 @@
           <p>
             <strong>Damage Rolls</strong>
           </p>
-          {{ attack.dtype }} Damage: {{ attack.rolls.total1 }}
-          <table class="abilitytable">
-            <thead>
-              <tr>
-                <th>Total</th>
-                <th v-for="num in parse(attack.damage).numDice" :key="num">{{ num }}</th>
-                <th v-if="attack.rolls.crit" v-for="num in parse(attack.damage).numDice" :key="num">{{ num + parse(attack.damage).numDice }}</th>
-                <th>Bonus</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>{{ attack.rolls.total1 }}</td>
-                <td v-for="num in parse(attack.damage).numDice" :key="num">{{ attack.rolls.dRoll1.rolls[num - 1] }}</td>
-                <td v-if="attack.rolls.crit" v-for="num in parse(attack.damage).numDice" :key="num">{{ attack.rolls.critRoll1.rolls[num - 1] }}</td>
-                <td>{{ getAttackDamageBonus(attack) }}</td>
-              </tr>
-              <tr>
-                <td>-</td>
-                <td v-for="num in parse(attack.damage).numDice" :key="num">
-                  <button class="btn btn-sm btn-primary" @click="rerollDie('1d' + parse(attack.damage).numSides, attack.rolls.dRoll1.rolls, num - 1, attack)">ReRoll</button>
-                </td>
-                <td v-if="attack.rolls.crit" v-for="num in parse(attack.damage).numDice" :key="num">
-                  <button class="btn btn-sm btn-primary" @click="rerollDie('1d' + parse(attack.damage).numSides, attack.rolls.critRoll1.rolls, num - 1, attack)">ReRoll</button>
-                </td>
-                <td>-</td>
-              </tr>
-            </tbody>
-          </table>
-          <div v-if="attack.rolls.dRoll2">
-            {{ attack.dtype2 }} Damage: {{ attack.rolls.total2 }}
+          <div v-for="(dmg, $index) in attack.rolls.damage" :key="$index">
+            {{ dmg.dtype }} Damage: {{ dmg.total }}
             <table class="abilitytable">
               <thead>
                 <tr>
                   <th>Total</th>
-                  <th v-for="num in parse(attack.damage2).numDice" :key="num">{{ num }}</th>
-                  <th v-if="attack.rolls.crit" v-for="num in parse(attack.damage2).numDice" :key="num">{{ num + parse(attack.damage2).numDice }}</th>
+                  <th v-for="num in parse(dmg.dice).numDice" :key="num">{{ num }}</th>
+                  <th v-if="attack.rolls.crit" v-for="num in parse(dmg.dice).numDice" :key="num">{{ num + parse(dmg.dice).numDice }}</th>
                   <th>Bonus</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>{{ attack.rolls.total2 }}</td>
-                  <td v-for="num in parse(attack.damage2).numDice" :key="num">{{ attack.rolls.dRoll2.rolls[num - 1] }}</td>
-                  <td v-if="attack.rolls.crit" v-for="num in parse(attack.damage2).numDice" :key="num">{{ attack.rolls.critRoll2.rolls[num - 1] }}</td>
-                  <td>{{ attack.damagebonus2 }}</td>
+                  <td>{{ dmg.total }}</td>
+                  <td v-for="num in parse(dmg.dice).numDice" :key="num">{{ dmg.dRoll.rolls[num - 1] }}</td>
+                  <td v-if="attack.rolls.crit" v-for="num in parse(dmg.dice).numDice" :key="num">{{ dmg.critRoll.rolls[num - 1] }}</td>
+                  <td>{{ getDamageBonus(dmg, attack.stat) }}</td>
                 </tr>
                 <tr>
                   <td>-</td>
-                  <td v-for="num in parse(attack.damage2).numDice" :key="num">
-                    <button class="btn btn-sm btn-primary" @click="rerollDie('1d' + parse(attack.damage2).numSides, attack.rolls.dRoll2.rolls, num - 1, attack)">ReRoll</button>
+                  <td v-for="num in parse(dmg.dice).numDice" :key="num">
+                    <button class="btn btn-sm btn-primary" @click="rerollDie('1d' + parse(dmg.dice).numSides, dmg.dRoll.rolls, num - 1, attack)">ReRoll</button>
                   </td>
-                  <td v-if="attack.rolls.crit" v-for="num in parse(attack.damage2).numDice" :key="num">
-                    <button class="btn btn-sm btn-primary" @click="rerollDie('1d' + parse(attack.damage2).numSides, attack.rolls.critRoll2.rolls, num - 1, attack)">ReRoll</button>
-                  </td>
-                  <td>-</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div v-if="attack.rolls.dRoll3">
-            {{ attack.dtype3 }} Damage: {{ attack.rolls.total3 }}
-            <table class="abilitytable">
-              <thead>
-                <tr>
-                  <th>Total</th>
-                  <th v-for="num in parse(attack.damage3).numDice" :key="num">{{ num }}</th>
-                  <th v-if="attack.rolls.crit" v-for="num in parse(attack.damage3).numDice" :key="num">{{ num + parse(attack.damage3).numDice }}</th>
-                  <th>Bonus</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>{{ attack.rolls.total3 }}</td>
-                  <td v-for="num in parse(attack.damage3).numDice" :key="num">{{ attack.rolls.dRoll3.rolls[num - 1] }}</td>
-                  <td v-if="attack.rolls.crit" v-for="num in parse(attack.damage3).numDice" :key="num">{{ attack.rolls.critRoll3.rolls[num - 1] }}</td>
-                  <td>{{ attack.damagebonus3 }}</td>
-                </tr>
-                <tr>
-                  <td>-</td>
-                  <td v-for="num in parse(attack.damage3).numDice" :key="num">
-                    <button class="btn btn-sm btn-primary" @click="rerollDie('1d' + parse(attack.damage3).numSides, attack.rolls.dRoll3.rolls, num - 1, attack)">ReRoll</button>
-                  </td>
-                  <td v-if="attack.rolls.crit" v-for="num in parse(attack.damage3).numDice" :key="num">
-                    <button class="btn btn-sm btn-primary" @click="rerollDie('1d' + parse(attack.damage3).numSides, attack.rolls.critRoll3.rolls, num - 1, attack)">ReRoll</button>
+                  <td v-if="attack.rolls.crit" v-for="num in parse(dmg.dice).numDice" :key="num">
+                    <button class="btn btn-sm btn-primary" @click="rerollDie('1d' + parse(dmg.dice).numSides, dmg.critRoll.rolls, num - 1, attack)">ReRoll</button>
                   </td>
                   <td>-</td>
                 </tr>
@@ -119,17 +59,15 @@
       <strong>{{ attack.name }}:</strong> {{ attack.type }},
       range {{ attack.range }},
       <span v-if="getAttackBonus(attack) > -1">+</span>{{ getAttackBonus(attack) }} to hit
-      ({{ attack.damage }}
-      <span v-if="getAttackDamageBonus(attack) > 0">+ {{ getAttackDamageBonus(attack) }}</span>
-      <span v-if="getAttackDamageBonus(attack) < 0"> - {{ getAttackDamageBonus(attack) }}</span> {{ attack.dtype }} damage
-      <span v-if="(attack.damage2 !== '') || Number(attack.damagebonus2) > 0"> + {{ attack.damage2 }} + {{ attack.damagebonus2 }} {{ attack.dtype2 }} damage</span>
-      <span v-if="(attack.damage3 !== '') || Number(attack.damagebonus3) > 0"> + {{ attack.damage3 }} + {{ attack.damagebonus3 }} {{ attack.dtype3 }} damage</span>) Critical Hit on {{ attack.critRange }}.
+      (
+      <span v-for="(dmg, $index) in attack.damage" :key="$index">{{ dmg.dice }}<span v-if="getDamageBonus(dmg, attack.stat) > 0">+ {{ getDamageBonus(dmg, attack.stat) }}</span>
+      <span v-if="getDamageBonus(dmg, attack.stat) < 0"> {{ getDamageBonus(dmg, attack.stat) }}</span> {{ dmg.dtype }} damage </span>) Critical Hit on {{ attack.critRange }}.
       <button type="button" class="print-hide btn-symbol" @click="attack.edit = true">&#9998;</button>
       <button type="button" @click="removeAttack(index)" class="print-hide btn btn-sm btn-danger">X</button>
       <b-modal v-model="attack.edit">
         Name:
         <input type="text" class="form-control" v-model="attack.name" />
-        <input type="checkbox" v-model="attack.prof">Proficient? <input type="checkbox" v-model="attack.addstat" />Add Ability Mod to Damage?
+        <input type="checkbox" v-model="attack.prof">Proficient?
         <select class="form-control" v-model="attack.stat">
           <option :value="0">Strength</option>
           <option :value="1">Dexterity</option>
@@ -152,73 +90,38 @@
           <option>Ranged Spell Attack</option>
           <option>Unarmed Strike</option>
         </select>
-        Damage Dice:
-        <input type="text" class="form-control" v-model="attack.damage" />
-        Damage Bonus (not including ability mod):
-        <input type="number" class="form-control" v-model="attack.damagebonus" />
-        Damage Type:
-        <select v-model="attack.dtype" class="form-control">
-          <option>Bludgeoning</option>
-          <option>Piercing</option>
-          <option>Slashing</option>
-          <option>Acid</option>
-          <option>Cold</option>
-          <option>Fire</option>
-          <option>Force</option>
-          <option>Lightning</option>
-          <option>Necrotic</option>
-          <option>Poison</option>
-          <option>Psychic</option>
-          <option>Radiant</option>
-          <option>Thunder</option>
-        </select>
-        Damage Dice 2:
-        <input type="text" class="form-control" v-model="attack.damage2" />
-        Damage Bonus 2:
-        <input type="number" class="form-control" v-model="attack.damagebonus2" />
-        Damage Type 2:
-        <select v-model="attack.dtype2" class="form-control">
-          <option>Bludgeoning</option>
-          <option>Piercing</option>
-          <option>Slashing</option>
-          <option>Acid</option>
-          <option>Cold</option>
-          <option>Fire</option>
-          <option>Force</option>
-          <option>Lightning</option>
-          <option>Necrotic</option>
-          <option>Poison</option>
-          <option>Psychic</option>
-          <option>Radiant</option>
-          <option>Thunder</option>
-        </select>
-        Damage Dice 3:
-        <input type="text" class="form-control" v-model="attack.damage3" />
-        Damage Bonus 3:
-        <input type="number" class="form-control" v-model="attack.damagebonus3" />
-        Damage Type 3:
-        <select v-model="attack.dtype3" class="form-control">
-          <option>Bludgeoning</option>
-          <option>Piercing</option>
-          <option>Slashing</option>
-          <option>Acid</option>
-          <option>Cold</option>
-          <option>Fire</option>
-          <option>Force</option>
-          <option>Lightning</option>
-          <option>Necrotic</option>
-          <option>Poison</option>
-          <option>Psychic</option>
-          <option>Radiant</option>
-          <option>Thunder</option>
-        </select>
+        <div v-for="(dmg, $index) in attack.damage" :key="$index">
+          Damage Dice:
+          <input type="text" class="form-control" v-model="dmg.dice" />
+          Damage Bonus (not including ability mod):
+          <input type="number" class="form-control" v-model="dmg.damagebonus" />
+          <input type="checkbox" v-model="dmg.addstat" />Add Ability Mod to Damage?<br />
+          Damage Type:
+          <select v-model="dmg.dtype" class="form-control">
+            <option>Bludgeoning</option>
+            <option>Piercing</option>
+            <option>Slashing</option>
+            <option>Acid</option>
+            <option>Cold</option>
+            <option>Fire</option>
+            <option>Force</option>
+            <option>Lightning</option>
+            <option>Necrotic</option>
+            <option>Poison</option>
+            <option>Psychic</option>
+            <option>Radiant</option>
+            <option>Thunder</option>
+          </select>
+          <button @click="removeDamage(attack, $index)" class="btn btn-sm btn-danger">Remove</button>
+        </div>
+        <button @click="addDamage(attack)" class="btn btn-primary btn-sm">Add Damage</button>
       </b-modal>
     </div>
     <button type="button" @click="attackmodal = true" class="print-hide btn btn-primary btn-sm">+</button>
     <b-modal v-model="attackmodal" title="Add Attack" @ok="addAttack()">
       Name:
       <input type="text" class="form-control" v-model="newattack.name" />
-      <input type="checkbox" v-model="newattack.prof">Proficient? <input type="checkbox" v-model="newattack.addstat" />Add Ability Mod to Damage?
+      <input type="checkbox" v-model="newattack.prof">Proficient?
       <select class="form-control" v-model="newattack.stat">
         <option :value="0">Strength</option>
         <option :value="1">Dexterity</option>
@@ -241,66 +144,31 @@
         <option>Ranged Spell Attack</option>
         <option>Unarmed Strike</option>
       </select>
-      Damage Dice:
-      <input type="text" class="form-control" v-model="newattack.damage" />
-      Damage Bonus (not including ability mod):
-      <input type="number" class="form-control" v-model="newattack.damagebonus" />
-      Damage Type:
-      <select v-model="newattack.dtype" class="form-control">
-        <option>Bludgeoning</option>
-        <option>Piercing</option>
-        <option>Slashing</option>
-        <option>Acid</option>
-        <option>Cold</option>
-        <option>Fire</option>
-        <option>Force</option>
-        <option>Lightning</option>
-        <option>Necrotic</option>
-        <option>Poison</option>
-        <option>Psychic</option>
-        <option>Radiant</option>
-        <option>Thunder</option>
-      </select>
-      Damage Dice 2:
-      <input type="text" class="form-control" v-model="newattack.damage2" />
-      Damage Bonus 2:
-      <input type="number" class="form-control" v-model="newattack.damagebonus2" />
-      Damage Type 2:
-      <select v-model="newattack.dtype2" class="form-control">
-        <option>Bludgeoning</option>
-        <option>Piercing</option>
-        <option>Slashing</option>
-        <option>Acid</option>
-        <option>Cold</option>
-        <option>Fire</option>
-        <option>Force</option>
-        <option>Lightning</option>
-        <option>Necrotic</option>
-        <option>Poison</option>
-        <option>Psychic</option>
-        <option>Radiant</option>
-        <option>Thunder</option>
-      </select>
-      Damage Dice 3:
-      <input type="text" class="form-control" v-model="newattack.damage3" />
-      Damage Bonus 3:
-      <input type="number" class="form-control" v-model="newattack.damagebonus3" />
-      Damage Type 3:
-      <select v-model="newattack.dtype3" class="form-control">
-        <option>Bludgeoning</option>
-        <option>Piercing</option>
-        <option>Slashing</option>
-        <option>Acid</option>
-        <option>Cold</option>
-        <option>Fire</option>
-        <option>Force</option>
-        <option>Lightning</option>
-        <option>Necrotic</option>
-        <option>Poison</option>
-        <option>Psychic</option>
-        <option>Radiant</option>
-        <option>Thunder</option>
-      </select>
+      <div v-for="(dmg, $index) in newattack.damage" :key="$index">
+        Damage Dice:
+        <input type="text" class="form-control" v-model="dmg.dice" />
+        Damage Bonus (not including ability mod):
+        <input type="number" class="form-control" v-model="dmg.damagebonus" />
+        <input type="checkbox" v-model="dmg.addstat" />Add Ability Mod to Damage?<br />
+        Damage Type:
+        <select v-model="dmg.dtype" class="form-control">
+          <option>Bludgeoning</option>
+          <option>Piercing</option>
+          <option>Slashing</option>
+          <option>Acid</option>
+          <option>Cold</option>
+          <option>Fire</option>
+          <option>Force</option>
+          <option>Lightning</option>
+          <option>Necrotic</option>
+          <option>Poison</option>
+          <option>Psychic</option>
+          <option>Radiant</option>
+          <option>Thunder</option>
+        </select>
+        <button @click="removeDamage(newattack, $index)" class="btn btn-sm btn-danger">Remove</button>
+      </div>
+      <button @click="addDamage(newattack)" class="btn btn-primary btn-sm">Add Damage</button>
     </b-modal>
   </div>
 </template>
