@@ -75,6 +75,40 @@ export default {
         state.all.splice(state.all.indexOf(campaign));
       });
     },
+    moveEncounterUp: ({ state }, index) => {
+      if (index > 0) {
+        let en = state.currentChapter.encounters.splice(index, 1);
+        state.currentChapter.encounters.splice(index - 1, 0, en);
+      }
+    },
+    moveEncounterDown: ({ state }, index) => {
+      if (index + 1 < state.currentChapter.encounters.length) {
+        let en = state.currentChapter.encounters.splice(index, 1);
+        state.currentChapter.encounters.splice(index + 1, 0, en);
+      }
+    },
+    deleteEncounter: ({ state }, index) => {
+      if (window.confirm("Are you sure you want to delete this encounter?")) {
+        state.currentChapter.encounters.splice(index, 1);
+      }
+    },
+    moveChapterUp: ({ state }, index) => {
+      if (index > 0) {
+        let en = state.current.chapters.splice(index, 1);
+        state.current.chapters.splice(index - 1, 0, en);
+      }
+    },
+    moveChapterDown: ({ state }, index) => {
+      if (index + 1 < state.current.chapters.length) {
+        let en = state.current.chapters.splice(index, 1);
+        state.current.chapters.splice(index + 1, 0, en);
+      }
+    },
+    deleteChapter: ({ state }, index) => {
+      if (window.confirm("Are you sure you want to delete this chapter?")) {
+        state.current.chapters.splice(index, 1);
+      }
+    },
     newCamapign: ({ state }) => {
       state.current = newCampaign();
       state.currentChapter = state.current.chapters[0];

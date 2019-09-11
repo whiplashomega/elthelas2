@@ -40,7 +40,13 @@ export default {
       newCamp: 'newCampaign',
       addChapter: 'addChapter',
       addEncounter: 'addEncounterToChapter',
-      loadChapter: 'loadChapter'
+      loadChapter: 'loadChapter',
+      moveEnUp: 'moveEncounterUp',
+      moveEnDown: 'moveEncounterDown',
+      moveChUp: 'moveChapterUp',
+      moveChDown: 'moveChapterDown',
+      deleteEncounter: 'deleteEncounter',
+      deleteChapter: 'deleteChapter'
     })
   }
 };

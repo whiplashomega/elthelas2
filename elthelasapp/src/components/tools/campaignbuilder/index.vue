@@ -24,9 +24,10 @@
             <h3>Chapters</h3>
             <nav class="sidenav nav flex-column nav-pill">
               <button class="btn btn-primary" @click="addChapter()">Add Chapter</button>
-              <a href="#" class="nav-item"
-                 v-for="(chapter, $index) in campaign.chapters" @click="loadChapter(chapter)"
-                 :key="chapter.id">Chapter {{ $index }}: {{ chapter.title }}</a>
+              <li class="nav-item" v-for="(chapter, $index) in campaign.chapters" :key="chapter.id">
+                <a href="#" @click="loadChapter(chapter)">Chapter {{ $index }}: {{ chapter.title }}</a>
+                <button @click="moveChUp($index)">↑</button><button @click="moveChDown($index)">↓</button><button @click="deleteChapter($index)">&#128465;</button>
+              </li>
             </nav>
           </div>
           <div class="col-sm-9" v-if="chapter">
@@ -36,11 +37,11 @@
                 <input type="text" class="form-control" v-model="chapter.title" />
               </label>
             </div>
-            <div v-for="encounter in chapter.encounters">
+            <div v-for="(encounter, $index) in chapter.encounters" :key="encounter._id">
               <hr />
               <div class="row">
                 <div class="col-sm-6">
-                  <label>Name</label>
+                  <label>Name</label><button @click="moveEnUp($index)">↑</button><button @click="moveEnDown($index)">↓</button><button @click="deleteEncounter($index)">&#128465;</button>
                   <input type="text" class="form-control" v-model="encounter.name" />
                 </div>
                 <!--<div class="col-sm-6">
@@ -131,9 +132,9 @@
           </div>
           <div class="col-sm-9">
             <h2>{{ chapter.title }}</h2>
-            <div v-for="encounter in chapter.encounters" :key="encounter._id">
+            <div v-for="(encounter, $index) in chapter.encounters" :key="encounter._id">
               <div>
-                <h3><a :href="encounter.link">{{ encounter.name }}</a></h3>
+                <h3><a :href="encounter.link">{{ encounter.name }}</a><button @click="moveEnUp($index)">↑</button><button @click="moveEnDown($index)">↓</button></h3>
                 <div style="float:right;max-width:40%;" v-if="encounter.image">
                   <img :src="encounter.image" :alt="encounter.name" />
                 </div>

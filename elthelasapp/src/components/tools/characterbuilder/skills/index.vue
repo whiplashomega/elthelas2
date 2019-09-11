@@ -15,7 +15,7 @@
               <option :value="2">Exp</option>
             </select>
           </td>
-          <td><span v-if="getSkillMod(skill) > -1">+</span>{{ getSkillMod(skill) }}</td>
+          <td><button @click="rollCheck(getSkillMod(skill))"><span v-if="getSkillMod(skill) > -1">+</span>{{ getSkillMod(skill) }}</button></td>
           <td><input type="number" class="charsheet-num" v-model="skill.magic" /></td>
         </tr>
       </tbody>
