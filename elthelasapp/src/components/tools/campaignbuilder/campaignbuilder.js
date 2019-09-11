@@ -32,10 +32,12 @@ export default {
   methods: {
     ...mapActions({
       getAll: 'getAllCampaigns',
+      getAllSilent: 'getAllCampaignsSilent',
       saveNew: 'saveNewCampaign',
       save: 'saveCampaign',
       load: 'loadCampaign',
       loadById: 'loadCampaignById',
+      loadByUrl: 'loadCampaignByUrl',
       deleteCamp: 'deleteCampaign',
       newCamp: 'newCampaign',
       addChapter: 'addChapter',
@@ -48,5 +50,12 @@ export default {
       deleteEncounter: 'deleteEncounter',
       deleteChapter: 'deleteChapter'
     })
+  },
+  created () {
+    this.getAllSilent().then(() => {
+      if (this.$route.params.url) {
+        this.loadByUrl({ url: this.$route.params.url });
+      }
+    });
   }
 };

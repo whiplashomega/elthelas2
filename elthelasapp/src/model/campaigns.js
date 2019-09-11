@@ -63,6 +63,12 @@ export default {
       })[0] };
       state.currentChapter = state.current.chapters[0];
     },
+    loadCampaignByUrl: ({ state }, { url }) => {
+      state.current = { ...state.all.filter((a) => {
+        return a.url === url;
+      })[0] };
+      state.currentChapter = state.current.chapters[0];
+    },
     saveCampaign: ({ state, getters }) => {
       Vue.http.post('/campaigns/' + state.current._id + "?token=" + getters.getUserInfo.token, { campaign: state.current }).then((res) => {
         state.all.splice(state.all.indexOf(state.current), 1);
