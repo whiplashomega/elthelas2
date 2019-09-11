@@ -47,7 +47,7 @@ export default {
       moveEnDown: 'moveEncounterDown',
       moveChUp: 'moveChapterUp',
       moveChDown: 'moveChapterDown',
-      deleteEncounter: 'deleteEncounter',
+      deleteEncounter: 'deleteCampaignEncounter',
       deleteChapter: 'deleteChapter'
     })
   },

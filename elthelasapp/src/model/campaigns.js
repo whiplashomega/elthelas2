@@ -93,7 +93,7 @@ export default {
         state.currentChapter.encounters.splice(index + 1, 0, ...en);
       }
     },
-    deleteEncounter: ({ state }, index) => {
+    deleteCampaignEncounter: ({ state }, index) => {
       if (window.confirm("Are you sure you want to delete this encounter?")) {
         state.currentChapter.encounters.splice(index, 1);
       }

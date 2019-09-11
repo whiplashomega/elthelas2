@@ -134,7 +134,7 @@
             <h2>{{ chapter.title }}</h2>
             <div v-for="(encounter, $index) in chapter.encounters" :key="encounter._id">
               <div>
-                <h3><a :href="encounter.link">{{ encounter.name }}</a><button @click="moveEnUp($index)">↑</button><button @click="moveEnDown($index)">↓</button></h3>
+                <h3><a :href="encounter.link" target="_blank">{{ encounter.name }}</a><button @click="moveEnUp($index)">↑</button><button @click="moveEnDown($index)">↓</button></h3>
                 <div style="float:right;max-width:40%;" v-if="encounter.image">
                   <img :src="encounter.image" :alt="encounter.name" />
                 </div>
