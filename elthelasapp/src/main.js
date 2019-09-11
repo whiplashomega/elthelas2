@@ -29,7 +29,11 @@ Vue.directive('sortable', {
 Vue.config.ignoredElements = ['gse:searchbox-only'];
 
 Vue.filter('marked', function(input) {
-  return marked(input);
+  if (input) {
+    return marked(input);
+  } else {
+    return "";
+  }
 });
 
 Vue.use(BootstrapVue);
