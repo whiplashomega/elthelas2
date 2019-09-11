@@ -84,13 +84,13 @@ export default {
     moveEncounterUp: ({ state }, index) => {
       if (index > 0) {
         let en = state.currentChapter.encounters.splice(index, 1);
-        state.currentChapter.encounters.splice(index - 1, 0, en);
+        state.currentChapter.encounters.splice(index - 1, 0, ...en);
       }
     },
     moveEncounterDown: ({ state }, index) => {
       if (index + 1 < state.currentChapter.encounters.length) {
         let en = state.currentChapter.encounters.splice(index, 1);
-        state.currentChapter.encounters.splice(index + 1, 0, en);
+        state.currentChapter.encounters.splice(index + 1, 0, ...en);
       }
     },
     deleteEncounter: ({ state }, index) => {
@@ -101,13 +101,13 @@ export default {
     moveChapterUp: ({ state }, index) => {
       if (index > 0) {
         let en = state.current.chapters.splice(index, 1);
-        state.current.chapters.splice(index - 1, 0, en);
+        state.current.chapters.splice(index - 1, 0, ...en);
       }
     },
     moveChapterDown: ({ state }, index) => {
       if (index + 1 < state.current.chapters.length) {
         let en = state.current.chapters.splice(index, 1);
-        state.current.chapters.splice(index + 1, 0, en);
+        state.current.chapters.splice(index + 1, 0, ...en);
       }
     },
     deleteChapter: ({ state }, index) => {
