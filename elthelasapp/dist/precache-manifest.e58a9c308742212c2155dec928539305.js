@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/json/improvements.json"
   },
   {
-    "revision": "02173ed7a7c9db16ef9c",
-    "url": "/css/characterbuilder.2b7906dc.css"
+    "revision": "4991567d684ceefc8151",
+    "url": "/css/characterbuilder.47bff61a.css"
   },
   {
     "revision": "6127e549dd51c4c976ab",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "29de07fb9a2f344632b9d447a662d331",
+    "revision": "5212f64b11c343157315fa82210990c5",
     "url": "/index.html"
   },
   {
@@ -148,12 +148,12 @@ self.__precacheManifest = [
     "url": "/json/gods.json"
   },
   {
-    "revision": "dd6a5f2865d87a76b225",
-    "url": "/js/app.b482c519.js"
+    "revision": "57d167292175d66601bc",
+    "url": "/js/app.2178f584.js"
   },
   {
-    "revision": "02173ed7a7c9db16ef9c",
-    "url": "/js/characterbuilder.5abf834a.js"
+    "revision": "4991567d684ceefc8151",
+    "url": "/js/characterbuilder.e41e1e2b.js"
   },
   {
     "revision": "6aae083ac3cfefbaa90b67c1da319cf9",
@@ -288,7 +288,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/pcs.md"
   },
   {
-    "revision": "dd6a5f2865d87a76b225",
+    "revision": "57d167292175d66601bc",
     "url": "/css/app.46be9565.css"
   },
   {

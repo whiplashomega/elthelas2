@@ -32,6 +32,13 @@ export default {
       characters: []
     };
   },
+  watch: {
+    character () {
+      if (this.character.autosave && this.loggedin) {
+        this.updateToServerSilent(this);
+      }
+    }
+  },
   methods: {
     ...mapActions({
       loadChar: "loadChar",
@@ -40,6 +47,7 @@ export default {
       saveToDrive: "saveToDrive",
       getFromServer: "getFromServer",
       updateToServer: "updateToServer",
+      updateToServerSilent: "updateToServerSilent",
       newToServer: "newToServer",
       deleteFromServer: "deleteFromServer",
       saveCharacter: "saveCharacter",

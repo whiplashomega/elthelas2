@@ -43,8 +43,7 @@ export default {
       mobile: 'isMobile',
       character: 'getCharacter',
       pointbuy: "pointbuy",
-      statRolls: "getStatRolls",
-      token: 'getUserInfo'
+      statRolls: "getStatRolls"
     })
   },
   data () {
@@ -59,15 +58,9 @@ export default {
       return date.toLocaleString();
     }
   },
-  updated () {
-    if (this.character.autosave) {
-      this.updateToServer(this);
-    }
-  },
   methods: {
     ...mapActions({
-      rollStats: "rollStats",
-      updateToServer: "updateToServerSilent"
+      rollStats: "rollStats"
     }),
     log(val) {
       console.log(val);
