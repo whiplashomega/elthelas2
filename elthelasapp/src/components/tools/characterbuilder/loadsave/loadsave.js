@@ -32,12 +32,21 @@ export default {
       characters: []
     };
   },
-  watch: {
-    character () {
-      if (this.character.autosave && this.loggedin) {
-        this.updateToServerSilent(this);
-      }
+  created () {
+    this.$store.watch(
+    function (state) {
+        return state.character;
+    },
+    function () {
+        //do something on data change
+        if (this.loggedin && this.character.autosave) {
+          this.updateToServerSilent(this);
+        }
+    },
+    {
+        deep: true //add this if u need to watch object properties change etc.
     }
+);
   },
   methods: {
     ...mapActions({
