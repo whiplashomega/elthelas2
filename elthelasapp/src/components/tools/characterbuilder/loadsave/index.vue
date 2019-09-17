@@ -24,6 +24,9 @@
                @click="getFromServer(comp)" class="btn btn-success" />
       </div>
     </div>
+    <div v-if="character._id">
+      <input type="checkbox" v-model="character.autosave" /> Autosave Character Changes
+    </div>
     <div class="row" v-else>
       <p class="col">
         Login from the menu to load/save on the web server.

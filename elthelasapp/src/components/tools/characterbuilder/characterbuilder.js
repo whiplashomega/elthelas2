@@ -58,9 +58,15 @@ export default {
       return date.toLocaleString();
     }
   },
+  updated () {
+    if (this.character.autosave) {
+      this.updateToServer(this);
+    }
+  },
   methods: {
     ...mapActions({
-      rollStats: "rollStats"
+      rollStats: "rollStats",
+      updateToServer: "updateToServer"
     }),
     log(val) {
       console.log(val);
