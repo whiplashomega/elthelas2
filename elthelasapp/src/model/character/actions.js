@@ -79,6 +79,14 @@ export default {
       comp.$root.$emit('bv::hide::modal', 'loading');
     });
   },
+  updateToServerSilent: ({ state }, comp) => {
+    Vue.http.post('/characters/' + state.currentCharacter._id + '?token=' + comp.token.token, { character: comp.character }).then(function(res) {
+      state.currentCharacter._id = res.body._id;
+      return true;
+    }).catch(function() {
+      alert("error when autosaving, please try logging off and in again");
+    });
+  },
   newToServer: ({ state }, comp) => {
     comp.$root.$emit('bv::show::modal', 'loading');
     state.currentCharacter._id = undefined;

@@ -43,7 +43,8 @@ export default {
       mobile: 'isMobile',
       character: 'getCharacter',
       pointbuy: "pointbuy",
-      statRolls: "getStatRolls"
+      statRolls: "getStatRolls",
+      token: 'getUserInfo'
     })
   },
   data () {
@@ -66,7 +67,7 @@ export default {
   methods: {
     ...mapActions({
       rollStats: "rollStats",
-      updateToServer: "updateToServer"
+      updateToServer: "updateToServerSilent"
     }),
     log(val) {
       console.log(val);
