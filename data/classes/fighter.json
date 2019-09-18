@@ -112,7 +112,7 @@
     },
     {
       "name": "Eldritch Knight",
-      "castermult": 0.334,
+      "castermult": 0.333,
       "features": [
         {
           "level": 3,

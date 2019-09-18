@@ -109,7 +109,7 @@ export default {
       }
       if ((a.thisclass.name === "Fighter" && a.selsubclass.name === "Eldritch Knight") ||
           (a.thisclass.name === "Rogue" && a.selsubclass.name === "Arcane Trickster")) {
-        getters.getThirdCasterPrepared(a);
+        num = getters.getThirdCasterPrepared(a);
       }
       classCounts.push({
         classname: a.thisclass.name,
@@ -123,8 +123,49 @@ export default {
   getCharacter: (state) => {
     return state.currentCharacter;
   },
-  getAsCreature: (state) => {
-    return state.currentCharacter;
+  getAsCreature: (state, getters) => {
+    let creature = {
+      name: state.currentCharacter.name,
+      type: "humanoid",
+      size: "medium",
+      subtype: state.currentCharacter.race.name,
+      cr: getters.level,
+      alignment: state.currentCharacter.alignment,
+      ac: getters.accalc,
+      acdesc: getters.accalc,
+      hp: getters.getHPTotal,
+      hpdesc: getters.getHPTotal,
+      speed: getters.getSpeedStat(0) + " ft",
+      str: getters.getStatTotal(0),
+      strmod: getters.getStatMod(0),
+      dex: getters.getStatTotal(1),
+      dexmod: getters.getStatMod(1),
+      con: getters.getStatTotal(2),
+      conmod: getters.getStatMod(2),
+      int: getters.getStatTotal(3),
+      intmod: getters.getStatMod(3),
+      wis: getters.getStatTotal(4),
+      wismod: getters.getStatMod(4),
+      cha: getters.getStatTotal(5),
+      chamod: getters.getStatMod(5),
+      saves: getters.getSaveMod(0) + " STR " + getters.getSaveMod(1) + " DEX " + getters.getSaveMod(2) + " CON " + getters.getSaveMod(3) + " INT " + getters.getSaveMod(4) + " WIS " + getters.getSaveMod(5) + " CHA",
+      senses: "passive perception " + (10 + getters.getSkillMod(state.currentCharacter.skills[11])),
+      damageimmunities: "",
+      conditionimmunities: "",
+      languages: "",
+      damageresistances: "",
+      locations: "",
+      latlong: "",
+      description: ""
+    };
+    for (let x = 1; x < 5; x++) {
+      if (getters.getSpeedStat(x)) {
+        creature.speed += " " + getters.getSpeedStat(x);
+        creature.speed += (x === 1 ? " fly" : (x === 2 ? " climb" : (x === 3 ? " swim" : (x === 4 ? " burrow" : ""))));
+      }
+    }
+    creature.tags = [creature.type, creature.size, "cr" + creature.cr, creature.alignment];
+    return creature;
   },
   classtext: (state) => {
     let character = state.currentCharacter;
