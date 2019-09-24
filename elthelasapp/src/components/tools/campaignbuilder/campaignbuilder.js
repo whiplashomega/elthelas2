@@ -30,6 +30,16 @@ export default {
     };
   },
   methods: {
+    watch: {
+      campaign: {
+        handler () {
+          if (this.campaign._id && this.loggedin) {
+            this.save();
+          }
+        },
+        deep: true
+      }
+    },
     ...mapActions({
       getAll: 'getAllCampaigns',
       getAllSilent: 'getAllCampaignsSilent',
