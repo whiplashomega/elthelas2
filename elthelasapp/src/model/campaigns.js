@@ -72,7 +72,6 @@ export default {
     saveCampaign: ({ state, getters }) => {
       Vue.http.post('/campaigns/' + state.current._id + "?token=" + getters.getUserInfo.token, { campaign: state.current }).then((res) => {
         state.all.splice(state.all.indexOf(state.current), 1);
-        state.current = { ...res.body };
         state.all.push(res.body);
       });
     },
