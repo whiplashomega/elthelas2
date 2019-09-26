@@ -29,25 +29,17 @@ export default {
       comp: this
     };
   },
-  methods: {
-    watch: {
-      campaign: {
-        handler () {
-          if (this.campaign._id && this.loggedin) {
-            this.save();
-          }
-        },
-        deep: true
+  watch: {
+    campaign: {
+      handler () {
+        if (this.campaign._id && this.loggedin) {
+          this.save();
+        }
       },
-      chapter: {
-        handler () {
-          if (this.campaign._id && this.loggedin) {
-            this.save();
-          }
-        },
-        deep: true
-      }
-    },
+      deep: true
+    }
+  },
+  methods: {
     ...mapActions({
       getAll: 'getAllCampaigns',
       getAllSilent: 'getAllCampaignsSilent',
