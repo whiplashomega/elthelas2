@@ -38,6 +38,14 @@ export default {
           }
         },
         deep: true
+      },
+      chapter: {
+        handler () {
+          if (this.campaign._id && this.loggedin) {
+            this.save();
+          }
+        },
+        deep: true
       }
     },
     ...mapActions({
