@@ -205,6 +205,30 @@
         <p>
           At your DMs discretion you may be able to use the spell list below instead of the wizard spell list when selecting Eldritch Knight spells, if you do you cannot select a spell off of the wizard list unless it is also on this list. Additionally, if using the list below the school of the spell does not matter and you can always select any spell from this list at any level.
         </p>
+        <h4>Cantrips</h4>
+        <ul>
+          <li>Acid Splash</li>
+          <li>Blade Ward</li>
+          <li>Booming Blade</li>
+          <li>Control Flames</li>
+          <li>Create Bonfire</li>
+          <li>Fire Bolt</li>
+          <li>Frostbite</li>
+          <li>Green-Flame Blade</li>
+          <li>Gust</li>
+          <li>Light</li>
+          <li>Lightning Lure</li>
+          <li>Message</li>
+          <li>Poison Spray</li>
+          <li>Produce Flame</li>
+          <li>Ray of Frost</li>
+          <li>Resistance</li>
+          <li>Shape Water</li>
+          <li>Shocking Grasp</li>
+          <li>Sword Burst</li>
+          <li>Thunderclap</li>
+          <li>True Strike</li>
+        </ul>
         <h4>Level 1</h4>
         <ul>
           <li>Absorb Elements</li>
