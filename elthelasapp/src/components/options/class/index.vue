@@ -215,9 +215,13 @@
           <li>Compelled Duel</li>
           <li>Earth Tremor</li>
           <li>Expeditious Retreat</li>
+          <li>Feather Fall</li>
           <li>Find Familiar</li>
           <li>Hail of Thorns</li>
+          <li>Hellish Rebuke</li>
           <li>Hunter's Mark</li>
+          <li>Ice Knife</li>
+          <li>Jump</li>
           <li>Longstrider</li>
           <li>Mage Armor</li>
           <li>Magic Missile</li>
@@ -255,6 +259,7 @@
         <h4>Level 3</h4>
         <ul>
           <li>Blinding Smite</li>
+          <li>Conjure Barrage</li>
           <li>Elemental Weapon</li>
           <li>Erupting Earth</li>
           <li>Fireball</li>
