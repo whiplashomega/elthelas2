@@ -154,50 +154,146 @@
         <li>Battle Master (PHB p73-74)</li>
         <li>Cavalier (XGE p30)</li>
         <li>Champion (PHB p72-73)</li>
-        <li>Eldritch Knight (PHB p74-75)</li>
+        <li>Eldritch Knight (PHB p74-75, see spell list option below)</li>
         <li>Knight of the Realm (see Purple Dragon Knight SCAG p128)</li>
         <li>Samurai (XGE p31)</li>
         <li>Scourer (homebrew, see below)</li>
       </ul>
-      <h3>Scourer</h3>
-      <p>
-        The scourer has dedicated their life to defeating magic. The scourer is a specialized individual that has trained to combat mages and the
-        spells they create. The scourer is unstoppable against those that cast spells, but is less effective against fighters, soldiers and
-        the like.
-      </p>
-      <p>
-        A scourer may be traveling alone, having a specific magical person or item to seek revenge on, or be part of a small group dedicated to
-        eradicating magic from the world. Scourers are part of a backlash against those in power that always seem to be, or have access to, magic.
-      </p>
-      <p>
-        Hiring a scourer is often cheaper than hiring a wizard, and can be used to effectively level the playing field against a group with magic.
-      </p>
-      <h4>Slay Magic</h4>
-      <p>
-        At third level when you take this Martial Archetype your skills reveal weak spots in spell casters that others miss. Gain an extra 1d8 damage against an enemy that you have seen casting a spell within the last minute. This damage increases to 2d8 at level 18.
-      </p>
-      <h4>Bonus Proficiencies</h4>
-      <p>
-        You gain proficiency in the arcana skill.
-      </p>
-      <h4>Capture Magic</h4>
-      <p>
-        At level 7 you have learned how spell casters create and spin their magical effects, and have learned how to prevent it. When you successfully
-        grapple a creature, the target becomes unable to cast spells that have verbal or semantic components as long as they are grappled.
-      </p>
-      <h4>Counter Magic</h4>
-      <p>
-        At level 10 you have learned the inner working of spells and can inherently use the spell against itself. Twice per short rest, you can bend another’s
-        spell to your will.  To do this you must spend your reaction to negate or control another casters spell. 3rd level or lower spells are automatically affected while higher level spells
-        require a charisma check with the DC being 10 + the spells level. If you succeed, you can choose to negate the spell entirely, or
-        if the spell targets a single target other than the caster, you can choose a different target for the spell and if the spell is a concentration spell,
-        you take over concentration for the spells duration. You may only concentrate on one spell at a time.
-      </p>
-      <h4>See Magic</h4>
-      <p>
-        At level 15, you have learned to see past the trickery magic can create. You have advantage on wisdom saves against spells and advantage on detecting
-        illusions.
-      </p>
+      <div>
+        <h3>Scourer</h3>
+        <p>
+          The scourer has dedicated their life to defeating magic. The scourer is a specialized individual that has trained to combat mages and the
+          spells they create. The scourer is unstoppable against those that cast spells, but is less effective against fighters, soldiers and
+          the like.
+        </p>
+        <p>
+          A scourer may be traveling alone, having a specific magical person or item to seek revenge on, or be part of a small group dedicated to
+          eradicating magic from the world. Scourers are part of a backlash against those in power that always seem to be, or have access to, magic.
+        </p>
+        <p>
+          Hiring a scourer is often cheaper than hiring a wizard, and can be used to effectively level the playing field against a group with magic.
+        </p>
+        <h4>Slay Magic</h4>
+        <p>
+          At third level when you take this Martial Archetype your skills reveal weak spots in spell casters that others miss. Gain an extra 1d8 damage against an enemy that you have seen casting a spell within the last minute. This damage increases to 2d8 at level 18.
+        </p>
+        <h4>Bonus Proficiencies</h4>
+        <p>
+          You gain proficiency in the arcana skill.
+        </p>
+        <h4>Capture Magic</h4>
+        <p>
+          At level 7 you have learned how spell casters create and spin their magical effects, and have learned how to prevent it. When you successfully
+          grapple a creature, the target becomes unable to cast spells that have verbal or semantic components as long as they are grappled.
+        </p>
+        <h4>Counter Magic</h4>
+        <p>
+          At level 10 you have learned the inner working of spells and can inherently use the spell against itself. Twice per short rest, you can bend another’s
+          spell to your will.  To do this you must spend your reaction to negate or control another casters spell. 3rd level or lower spells are automatically affected while higher level spells
+          require a charisma check with the DC being 10 + the spells level. If you succeed, you can choose to negate the spell entirely, or
+          if the spell targets a single target other than the caster, you can choose a different target for the spell and if the spell is a concentration spell,
+          you take over concentration for the spells duration. You may only concentrate on one spell at a time.
+        </p>
+        <h4>See Magic</h4>
+        <p>
+          At level 15, you have learned to see past the trickery magic can create. You have advantage on wisdom saves against spells and advantage on detecting
+          illusions.
+        </p>
+      </div>
+      <div>
+        <h3>Eldritch Knight</h3>
+        <p>
+          At your DMs discretion you may be able to use the spell list below instead of the wizard spell list when selecting Eldritch Knight spells, if you do you cannot select a spell off of the wizard list unless it is also on this list. Additionally, if using the list below the school of the spell does not matter and you can always select any spell from this list at any level.
+        </p>
+        <h4>Level 1</h4>
+        <ul>
+          <li>Absorb Elements</li>
+          <li>Armor of Agathys</li>
+          <li>Burning Hands</li>
+          <li>Catapult</li>
+          <li>Chromatic Orb</li>
+          <li>Compelled Duel</li>
+          <li>Earth Tremor</li>
+          <li>Expeditious Retreat</li>
+          <li>Find Familiar</li>
+          <li>Hail of Thorns</li>
+          <li>Hunter's Mark</li>
+          <li>Longstrider</li>
+          <li>Mage Armor</li>
+          <li>Magic Missile</li>
+          <li>Searing Smite</li>
+          <li>Thunderous Smite</li>
+          <li>Thunderwave</li>
+          <li>Shield</li>
+          <li>Witch Bolt</li>
+          <li>Wrathful Smite</li>
+        </ul>
+        <h4>Level 2</h4>
+        <ul>
+          <li>Aganazzar's Scorcher</li>
+          <li>Blur</li>
+          <li>Continual Flame</li>
+          <li>Cordon of Arrows</li>
+          <li>Darkness</li>
+          <li>Darkvision</li>
+          <li>Dragon's Breath</li>
+          <li>Enlarge/Reduce</li>
+          <li>Flame  Blade</li>
+          <li>Gust of Wind</li>
+          <li>Magic Weapon</li>
+          <li>Melf's Acid Arrow</li>
+          <li>Mirror Image</li>
+          <li>Misty Step</li>
+          <li>Moonbeam</li>
+          <li>Protection from Poison</li>
+          <li>Scorching Ray</li>
+          <li>Shadow Blade</li>
+          <li>Shatter</li>
+          <li>Snilloc's Snowball Swarm</li>
+          <li>Warding Wind</li>
+        </ul>
+        <h4>Level 3</h4>
+        <ul>
+          <li>Blinding Smite</li>
+          <li>Elemental Weapon</li>
+          <li>Erupting Earth</li>
+          <li>Fireball</li>
+          <li>Flame Arrows</li>
+          <li>Fly</li>
+          <li>Haste</li>
+          <li>Lightning Arrow</li>
+          <li>Lightning Bolt</li>
+          <li>Magic Circle</li>
+          <li>Melf's Minute Meteors</li>
+          <li>Phantom Steed</li>
+          <li>Protection from Energy</li>
+          <li>Sending</li>
+          <li>Sleet Storm</li>
+          <li>Slow</li>
+          <li>Thunder Step</li>
+          <li>Wall of Sand</li>
+          <li>Wall of Water</li>
+          <li>Water Breathing</li>
+          <li>Wind Wall</li>
+        </ul>
+        <h4>Level 4</h4>
+        <ul>
+          <li>Banishment</li>
+          <li>Control Water</li>
+          <li>Dimension Door</li>
+          <li>Fire Shield</li>
+          <li>Freedom of Movement</li>
+          <li>Ice Storm</li>
+          <li>Otiluke's Resilient Sphere</li>
+          <li>Polymorph</li>
+          <li>Sickening Radiance</li>
+          <li>Staggering Smite</li>
+          <li>Stoneskin</li>
+          <li>Storm Sphere</li>
+          <li>Vitriolic Sphere</li>
+          <li>Wall of Fire</li>
+        </ul>
+      </div>
     </div>
     <div v-if="shownClass === 'factotum'">
       <h2>Factotum</h2>
