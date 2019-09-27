@@ -32,6 +32,7 @@ const encounterdetails = () => import(/* webpackChunkName: "encounters" */ '@/co
 const treasuregenerator = () => import(/* webpackChunkName: "treasure" */ '@/components/tools/treasuregenerator');
 const charbuilder = () => import(/* webpackChunkName: "characterbuilder" */ '../components/tools/characterbuilder');
 const quick = () => import(/* webpackChunkName: "quickref" */ '../components/ref/quick');
+const magicitems = () => import(/* webpackChunkName: "magicitems" */ '../components/ref/magicitemcatalog');
 const geography = () => import(/* webpackChunkName: "geography" */ '../components/geography');
 
 Vue.use(Router);
@@ -155,6 +156,16 @@ var router = new Router({
       path: '/ref/quick',
       components: {
         default: quick
+      }
+    },
+    {
+      name: 'magicitems',
+      meta: {
+        title: "Magic Item Catalog"
+      },
+      path: '/ref/magicitems',
+      components: {
+        default: magicitems
       }
     },
     {

@@ -2,6 +2,7 @@
   <div>
     <nav class="sidenav nav flex-column nav-pill">
       <router-link to="/ref/quick" class="nav-item">Quick Reference Manual</router-link>
+      <router-link to="/ref/magicitems" class="nav-item">Magic Item Catalog</router-link>
       <router-link to="/ref/bestiary" class="nav-item">Bestiary</router-link>
       <router-link to="/ref/calendar" class="nav-item">Calendar</router-link>
       <router-link to="/ref/cosmology" class="nav-item">Cosmology</router-link>

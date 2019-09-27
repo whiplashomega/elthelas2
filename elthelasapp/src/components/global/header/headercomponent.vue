@@ -57,6 +57,7 @@
             </a>
             <ul class="dropdown-menu" role="menu">
               <li class="dropdown-item"><router-link to="/ref/quick">Quick Reference Manual</router-link></li>
+              <li class="dropdown-item"><router-link to="/ref/magicitems">Magic Item Catalog</router-link></li>
               <li class="dropdown-item" v-if="loggedin"><router-link to="/ref/bestiary">Bestiary</router-link></li>
               <li class="dropdown-item"><router-link to="/ref/calendar">Calendar</router-link></li>
               <li class="dropdown-item"><router-link to="/ref/cosmology">Cosmology</router-link></li>

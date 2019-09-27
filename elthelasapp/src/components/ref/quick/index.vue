@@ -1186,7 +1186,7 @@
           </tbody>
         </table>
       </b-tab>
-      <b-tab title="Adventuring Gear">
+      <b-tab index='7' title="Adventuring Gear">
         <b-row>
           <b-col md="6"></b-col>
           <b-col md="6" class="my-1">
@@ -1217,7 +1217,7 @@
           </template>
         </b-table>
       </b-tab>
-      <b-tab title="Armor">
+      <b-tab index='8' title="Armor">
         <h3>Armor</h3>
         <p>
           When ordering custom weapons and armor, the 'time cost' refers to the time required by 1 artisan to do the work by himself.  For most complex items, up to 12 workers may work on an item per day (4 working together in 3 shifts), additionally the presence of a master craftsmen allows the work to be completed in half the time.  Thus the minimum time required to create an item by a master craftsmans guild shop is 1/24 the listed time requirement, or changes the unit from days to hours.
@@ -1242,7 +1242,7 @@
                  :sort-desc.sync="armortable.sortDesc">
         </b-table>
       </b-tab>
-      <b-tab title="Weapons">
+      <b-tab index='9' title="Weapons">
         <h3>Weapons</h3>
         <p>
           When ordering custom weapons and armor, the 'time cost' refers to the time required by 1 artisan to do the work by himself.  For most complex items, up to 12 workers may work on an item per day (4 working together in 3 shifts), additionally the presence of a master craftsmen allows the work to be completed in half the time.  Thus the minimum time required to create an item by a master craftsmans guild shop is 1/24 the listed time requirement, or changes the unit from days to hours.
@@ -1267,120 +1267,7 @@
                  :sort-desc.sync="weapontable.sortDesc">
         </b-table>
       </b-tab>
-      <b-tab index="10" title="Magic Items">
-        <h1>Margo's Mystics Magic Item Catalog</h1>
-        <p class="alert alert-warning">
-          Note: The In Stock column is only relevant on game day, and reflects the items that Margo has in stock at her store during game.
-        </p>
-        <b-row>
-          <b-col md="8">
-            <b-form-checkbox label="In Stock Only" v-model="instockonly">Display In Stock Items Only</b-form-checkbox>
-            <b-form-checkbox-group v-model="magicitemtables.filterBy">
-              <b-form-checkbox value="Item">Item</b-form-checkbox>
-              <b-form-checkbox value="Type">Type</b-form-checkbox>
-              <b-form-checkbox value="Cost (gp)">Cost (gp)</b-form-checkbox>
-              <b-form-checkbox value="Attunement">Attunement</b-form-checkbox>
-              <b-form-checkbox value="Effect">Effect</b-form-checkbox>
-              <b-form-checkbox value="Rarity">Rarity</b-form-checkbox>
-            </b-form-checkbox-group>
-            <b-form-checkbox-group v-model="magicitemtables.filterRarity">
-              <b-form-checkbox value="Common">Common</b-form-checkbox>
-              <b-form-checkbox value="Uncommon">Uncommon</b-form-checkbox>
-              <b-form-checkbox value="Rare">Rare</b-form-checkbox>
-              <b-form-checkbox value="Very Rare">Very Rare</b-form-checkbox>
-              <b-form-checkbox value="Legendary">Legendary</b-form-checkbox>
-            </b-form-checkbox-group>
-            <label class="col-4">Maximum Cost <b-form-input label="Maximum Cost" type="number" v-model="magicitemtables.filterCost" /></label>
-            <button class="btn btn-primary col-2" @click="printSelected()" style="margin-top:-5px;">Print Selected</button>
-          </b-col>
-          <b-col md="4" class="my-1">
-            <b-input-group>
-              <b-form-input v-model="magicitemtables.filter" placeholder="Type to Search" />
-              <b-btn :disabled="!magicitemtables.filter" @click="magicitemtables.filter = ''">Clear</b-btn>
-            </b-input-group>
-          </b-col>
-        </b-row>
-        <b-modal id="magicitemmodal" size="lg"
-                 @hide="resetMagicItemModal" :title="magicItemModal.Item"
-                 ok-only>
-          <p><strong>Type: </strong>{{ magicItemModal.Type }}</p>
-          <p><strong>Cost (gp): </strong>{{ magicItemModal["Cost (gp)"] }}</p>
-          <p><strong>Attunement: </strong>{{ magicItemModal.Attunement }}</p>
-          <p><strong>Rarity: </strong>{{ magicItemModal.Rarity }}</p>
-          <p><strong>{{ magicItemModal.instock }}</strong></p>
-          <div v-html="$options.filters.marked(magicItemModal.Effect)"></div>
-        </b-modal>
-        <b-tabs id="magicitemcatalog">
-          <b-tab title="Scrolls">
-            <b-table show-empty @row-clicked="selectForPrint"
-                     :striped="true" :bordered="false"
-                     :responsive="true"
-                     stacked="sm"
-                     :items="filteredScrolls"
-                     :fields="magicitemtables.fields"
-                     :sort-by.sync="magicitemtables.sortBy"
-                     :sort-desc.sync="magicitemtables.sortDesc">
-              <template slot="Item" slot-scope="row"><a href="#" @click.stop="magicItemInfo(row.item, row.index, $event.target)">{{ row.value }}</a></template>
-            </b-table>
-          </b-tab>
-          <b-tab title="Wands">
-            <b-table show-empty @row-clicked="selectForPrint"
-                     :striped="true" :bordered="false"
-                     :responsive="true"
-                     stacked="sm"
-                     :items="filteredWands"
-                     :fields="magicitemtables.fields"
-                     :sort-by.sync="magicitemtables.sortBy"
-                     :sort-desc.sync="magicitemtables.sortDesc">
-              <template slot="Item" slot-scope="row"><a href="#" @click.stop="magicItemInfo(row.item, row.index, $event.target)">{{ row.value }}</a></template>
-            </b-table>
-          </b-tab>
-          <b-tab title="Weapons">
-            <b-table show-empty @row-clicked="selectForPrint"
-                     :striped="true" :bordered="false"
-                     :responsive="true"
-                     stacked="sm"
-                     :items="filteredWeapons"
-                     :fields="magicitemtables.fields"
-                     :sort-by.sync="magicitemtables.sortBy"
-                     :sort-desc.sync="magicitemtables.sortDesc">
-              <template slot="Item" slot-scope="row"><a href="#" @click.stop="magicItemInfo(row.item, row.index, $event.target)">{{ row.value }}</a></template>
-            </b-table>
-          </b-tab>
-          <b-tab title="Armor">
-            <b-table show-empty @row-clicked="selectForPrint"
-                     :striped="true" :bordered="false"
-                     :responsive="true"
-                     stacked="sm"
-                     :items="filteredArmor"
-                     :fields="magicitemtables.fields"
-                     :sort-by.sync="magicitemtables.sortBy"
-                     :sort-desc.sync="magicitemtables.sortDesc">
-              <template slot="Item" slot-scope="row"><a href="#" @click.stop="magicItemInfo(row.item, row.index, $event.target)">{{ row.value }}</a></template>
-            </b-table>
-          </b-tab>
-          <b-tab title="Other">
-            <b-table show-empty @row-clicked="selectForPrint"
-                     :striped="true" :bordered="false"
-                     :responsive="true"
-                     stacked="sm"
-                     :items="filteredOther"
-                     :fields="magicitemtables.fields"
-                     :sort-by.sync="magicitemtables.sortBy"
-                     :sort-desc.sync="magicitemtables.sortDesc">
-              <template slot="Item" slot-scope="row"><a href="#" @click.stop="magicItemInfo(row.item, row.index, $event.target)">{{ row.value }}</a></template>
-            </b-table>
-          </b-tab>
-        </b-tabs>
-      </b-tab>
     </b-tabs>
-    <div class="col-sm-12" v-if="printMode">
-      <div v-for="item in toPrint" :key="item.Item" style="margin-bottom:50px;page-break-inside:avoid;">
-        <h4 style="font-size:3em;">{{ item.Item }} ({{ item.Type }}, {{ item.Rarity }})</h4>
-        <div v-html="$options.filters.marked(item.Effect)" style="font-size:1.5em;"></div>
-      </div>
-      <button class="btn btn-success" @click="toPrint = []; printMode = false;">Exit</button>
-    </div>
   </div>
 </template>
 <script src="./quick.js"></script>

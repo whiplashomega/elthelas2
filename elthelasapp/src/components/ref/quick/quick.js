@@ -8,34 +8,8 @@ export default {
       spells: 'allSpells',
       equipment: 'allEquipment',
       armor: 'allArmor',
-      weapons: 'allWeapons',
-      magicitems: 'allMagicItems',
-      magicwands: 'allMagicWands',
-      magicscrolls: 'allMagicScrolls',
-      magicweapons: 'allMagicWeapons',
-      magicarmor: 'allMagicArmor',
-      magicother: 'allMagicOther',
-      commons: 'allCommons',
-      uncommons: 'allUncommons',
-      rares: 'allRares',
-      veryrares: 'allVeryRares',
-      legendaries: 'allLegendaries'
+      weapons: 'allWeapons'
     }),
-    filteredWands () {
-      return this.magicwands.filter(this.magicitemfilter);
-    },
-    filteredScrolls () {
-      return this.magicscrolls.filter(this.magicitemfilter);
-    },
-    filteredWeapons () {
-      return this.magicweapons.filter(this.magicitemfilter);
-    },
-    filteredArmor () {
-      return this.magicarmor.filter(this.magicitemfilter);
-    },
-    filteredOther () {
-      return this.magicother.filter(this.magicitemfilter);
-    },
     filteredSpells () {
       var filters = this.spelltable.filterValue.split(' ');
       if (this.spelltable.filterValue === "") {
@@ -141,27 +115,7 @@ export default {
         sortBy: null,
         sortDesc: false
       },
-      magicitemtables: {
-        fields: [
-          { key: "print", label: "Print", sortable: false },
-          { key: "Item", label: "Item", sortable: true },
-          { key: "Attunement", label: "Attunement", sortable: true },
-          { key: "Rarity", label: "Rarity", sortable: true },
-          { key: "Cost (gp)", label: "Cost (gp)", sortable: true },
-          { key: "instock", label: "In Stock", sortable: true }
-        ],
-        filter: "",
-        filterBy: [ "Item", "Type", "Attunement", "Rarity", "Cost (gp)", "Effect" ],
-        filterRarity: [ "Common", "Uncommon", "Rare", "Very Rare", "Legendary" ],
-        filterCost: "",
-        sortBy: null,
-        sortDesc: false
-      },
-      magicItemModal: { Item: '', Rarity: '', instock: '', Effect: '', 'Cost (gp)': '', Attunement: '' },
-      gearModal: { Item: '', Cost: '', Weight: '', Description: '' },
-      instockonly: true,
-      toPrint: [],
-      printMode: false
+      gearModal: { Item: '', Cost: '', Weight: '', Description: '' }
     };
   },
   methods: {
@@ -190,10 +144,6 @@ export default {
       }, []);
       this.printMode = true;
     },
-    magicItemInfo (item, index, button) {
-      this.magicItemModal = item;
-      this.$root.$emit('bv::show::modal', 'magicitemmodal', button);
-    },
     adventuringGearInfo (item, index, button) {
       this.gearModal = item;
       this.$root.$emit('bv::show::modal', 'gearmodal', button);
@@ -204,61 +154,6 @@ export default {
     },
     resetGearModal () {
       this.gearModal = { Item: '', Cost: '', Weight: '', Description: '' };
-    },
-    resetMagicItemModal () {
-      this.magicItemModal = { Item: '', Rarity: '', instock: '', Effect: '', 'Cost (gp)': '', Attunement: '' };
-    },
-    instockfilter(a) {
-      if (this.instockonly && a.instock !== "In Stock") {
-        return false;
-      }
-      return true;
-    },
-    magicitemfilter(a) {
-      var filter = this.magicitemtables.filterBy;
-      var value = this.magicitemtables.filter;
-      if (this.instockfilter(a)) {
-        var inelement = filter.some((el) => {
-          for (var y in a) {
-            if (el === y && a[y].toString().toLowerCase().includes(value.toLowerCase())) {
-              if ((!this.magicitemtables.filterCost || Number(this.magicitemtables.filterCost) >= a["Cost (gp)"]) && this.magicitemtables.filterRarity.includes(a.Rarity)) {
-                return true;
-              }
-            }
-          }
-        });
-        if ((
-          !value &&
-          (!this.magicitemtables.filterCost || Number(this.magicitemtables.filterCost)) >= a["Cost (gp)"] &&
-          this.magicitemtables.filterRarity.includes(a.Rarity)) ||
-          inelement) {
-          return true;
-        }
-        return false;
-      }
-      return false;
-    },
-    spellfilter (a) {
-      var spelltable = this.spelltable;
-      var filter = spelltable.filterBy;
-      var value = spelltable.filterValue;
-      var inclass = a.tags.some(function(el) {
-        return spelltable.classes.includes(el);
-      });
-      var inelement = filter.some(function(el) {
-        for (var y in a) {
-          if (el === y && a[y].toLowerCase().includes(value.toLowerCase())) {
-            return true;
-          }
-        }
-      });
-      if (inclass && (!value || inelement)) {
-        return true;
-      }
-      return false;
     }
-  },
-  created () {
-    // console.log(this.magicscrolls);
   }
 };
