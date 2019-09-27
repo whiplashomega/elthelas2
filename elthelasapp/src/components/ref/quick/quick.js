@@ -37,7 +37,50 @@ export default {
       return this.magicother.filter(this.magicitemfilter);
     },
     filteredSpells () {
-      return this.spells.filter(this.spellfilter);
+      var filters = this.spelltable.filterValue.split(' ');
+      if (this.spelltable.filterValue === "") {
+        return this.spells.filter((a) => {
+          var inclass = a.tags.some((el) => {
+            if (this.spelltable.classfilter === "all") {
+              return true;
+            }
+            return this.spelltable.classfilter === el;
+          });
+          if ((inclass && this.spelltable.levelfilter === "all") || (inclass && a.level === this.spelltable.levelfilter)) {
+            return true;
+          }
+          return false;
+        });
+      }
+      if (this.spelltable.levelfilter === "nonsense") {
+        return this.spelltable.levelfilter;
+      }
+      return this.spells.filter((a) => {
+        var success = false;
+        var successarray = [];
+        filters.forEach((b) => {
+          for (var prop in a) {
+            if (typeof a[prop] === 'string') {
+              if (a[prop].toLowerCase().includes(b)) {
+                successarray.push(true);
+                break;
+              }
+            }
+          }
+          if (successarray.length >= filters.length) {
+            var inclass = a.tags.some((el) => {
+              if (this.spelltable.classfilter === "all") {
+                return true;
+              }
+              return this.spelltable.classfilter === el;
+            });
+            if ((inclass && this.spelltable.levelfilter === "all") || (inclass && a.level === this.spelltable.levelfilter)) {
+              success = true;
+            }
+          }
+        });
+        return success;
+      });
     }
   },
   data: function() {
@@ -51,11 +94,11 @@ export default {
           { key: 'duration', label: 'Duration', sortable: true },
           { key: 'tagsText', label: 'Tags', sortable: true }
         ],
-        classes: [ "bard", "cleric", "druid", "paladin", "ranger", "sorcerer", "warlock", "wizard" ],
+        classfilter: "all",
+        levelfilter: "all",
         filterValue: "",
         sortBy: null,
         sortDesc: false,
-        filterBy: [ "title", "level", "school", "duration", "castingTime", "description", "tagsText" ],
         modalInfo: { title: '', description: '', content: { title: '', level: '', school: '', duration: '', description: '', castingTime: '', tags: [], tagsText: '' } }
       },
       equipmenttable: {

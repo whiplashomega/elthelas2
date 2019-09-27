@@ -5,28 +5,37 @@
         <h3>Spells</h3>
         <b-row>
           <b-col md="8">
-            <b-form-checkbox-group v-model="spelltable.filterBy">
-              <b-form-checkbox value="title">Title</b-form-checkbox>
-              <b-form-checkbox value="level">Level</b-form-checkbox>
-              <b-form-checkbox value="school">School</b-form-checkbox>
-              <b-form-checkbox value="castingTime">Casting Time</b-form-checkbox>
-              <b-form-checkbox value="duration">Duration</b-form-checkbox>
-              <b-form-checkbox value="tagsText">Tags</b-form-checkbox>
-              <b-form-checkbox value="description">Description</b-form-checkbox>
-            </b-form-checkbox-group>
-            <b-form-checkbox-group v-model="spelltable.classes">
-              <b-form-checkbox value="archivist">Archivist</b-form-checkbox>
-              <b-form-checkbox value="bard">Bard</b-form-checkbox>
-              <b-form-checkbox value="cleric">Cleric</b-form-checkbox>
-              <b-form-checkbox value="druid">Druid</b-form-checkbox>
-              <b-form-checkbox value="paladin">Paladin</b-form-checkbox>
-              <b-form-checkbox value="ranger">Ranger</b-form-checkbox>
-              <b-form-checkbox value="sorcerer">Sorcerer</b-form-checkbox>
-              <b-form-checkbox value="warlock">Warlock</b-form-checkbox>
-              <b-form-checkbox value="wizard">Wizard</b-form-checkbox>
-            </b-form-checkbox-group>
+            Filter by Level
+            <select v-model="spelltable.levelfilter" class="form-control">
+              <option value="all" selected>All</option>
+              <option value="cantrip">Cantrips</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+            Filter by Class
+            <select v-model="spelltable.classfilter" class="form-control">
+              <option value="all">All</option>
+              <option value="archivist">Archivist</option>
+              <option value="bard">Bard</option>
+              <option value="cleric">Cleric</option>
+              <option value="druid">Druid</option>
+              <option value="eldritchknight">Fighter (Eldritch Knight)</option>
+              <option value="paladin">Paladin</option>
+              <option value="ranger">Ranger</option>
+              <option value="sorcerer">Sorcerer</option>
+              <option value="warlock">Warlock</option>
+              <option value="wizard">Wizard</option>
+            </select>
           </b-col>
           <b-col md="4" class="my-1">
+            Search
             <b-input-group>
               <b-form-input v-model="spelltable.filterValue" placeholder="Type to Search" />
               <b-btn :disabled="!spelltable.filterValue" @click="filter = ''">Clear</b-btn>

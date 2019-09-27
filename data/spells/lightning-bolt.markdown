@@ -3,7 +3,7 @@ layout: post
 title: "Lightning Bolt"
 date: 2015-07-30
 source: PHB.255
-tags: [archivist, sorcerer, wizard, level3, evocation]
+tags: [archivist, sorcerer, wizard, eldritchknight, level3, evocation]
 ---
 
 **3rd-level evocation**

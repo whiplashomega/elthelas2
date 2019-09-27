@@ -3,7 +3,7 @@ layout: post
 title:  "Message"
 date:   2014-08-24
 source: PHB.259
-tags: [archivist, bard, sorcerer, wizard, cantrip, transmutation]
+tags: [archivist, bard, sorcerer, wizard, eldritchknight, cantrip, transmutation]
 ---
 
 **Transmutation cantrip**

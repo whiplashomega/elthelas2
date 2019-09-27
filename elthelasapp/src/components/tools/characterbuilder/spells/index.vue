@@ -176,6 +176,7 @@
         <option value="bard">Bard</option>
         <option value="cleric">Cleric</option>
         <option value="druid">Druid</option>
+        <option value="eldritchknight">Fighter (Eldritch Knight)</option>
         <option value="paladin">Paladin</option>
         <option value="ranger">Ranger</option>
         <option value="sorcerer">Sorcerer</option>

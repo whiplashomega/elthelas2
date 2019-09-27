@@ -3,7 +3,7 @@ layout: post
 title:  "Magic Missile"
 date:   2014-08-24
 source: PHB.257
-tags: [archivist, sorcerer, wizard, level1, evocation]
+tags: [archivist, sorcerer, wizard, eldritchknight, level1, evocation]
 ---
 
 **1st-level evocation**

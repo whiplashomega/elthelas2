@@ -3,7 +3,7 @@ layout: post
 title:  "Darkness"
 date:   2015-01-07
 source: PHB.230
-tags: [sorcerer, warlock, wizard, level2, evocation]
+tags: [sorcerer, warlock, wizard, eldritchknight, level2, evocation]
 ---
 
 **2nd-level evocation**

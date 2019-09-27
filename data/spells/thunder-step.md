@@ -3,7 +3,7 @@ layout: post
 title: "Thunder Step"
 date: 2015-07-14
 source: PHB.242
-tags: [sorcerer, warlock, wizard, level3, conjuration]
+tags: [sorcerer, warlock, wizard, eldritchknight, level3, conjuration]
 ---
 
 **3rd-level conjuration**

@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/json/improvements.json"
   },
   {
-    "revision": "649e71cf4a953d213786",
-    "url": "/css/characterbuilder.47bff61a.css"
+    "revision": "04c04c75814bbfae418f",
+    "url": "/css/characterbuilder.8455c889.css"
   },
   {
     "revision": "6127e549dd51c4c976ab",
@@ -24,12 +24,12 @@ self.__precacheManifest = [
     "url": "/js/chunk-vendors.9c41465a.js"
   },
   {
-    "revision": "f6cd087c789021dcf6b4",
-    "url": "/css/classes.9cf3114f.css"
+    "revision": "074c9b5dcd6fca8dd987",
+    "url": "/css/classes.94bcdf3a.css"
   },
   {
-    "revision": "f6cd087c789021dcf6b4",
-    "url": "/js/classes.9a2fb388.js"
+    "revision": "074c9b5dcd6fca8dd987",
+    "url": "/js/classes.4796453f.js"
   },
   {
     "revision": "b214cbb0af245986006e",
@@ -56,12 +56,12 @@ self.__precacheManifest = [
     "url": "/js/geography.888a0843.js"
   },
   {
-    "revision": "7973e4cbd1422c13f826",
-    "url": "/css/quickref.5fba4a1e.css"
+    "revision": "1a688db7abb6d9d5945a",
+    "url": "/css/quickref.b7a589fa.css"
   },
   {
-    "revision": "7973e4cbd1422c13f826",
-    "url": "/js/quickref.93cc5d06.js"
+    "revision": "1a688db7abb6d9d5945a",
+    "url": "/js/quickref.90bdf7d8.js"
   },
   {
     "revision": "91296349d8082eae5efd",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "0e32849185b5a9262bd59769c672c583",
+    "revision": "4974378f89eb3fdae4360e63798d4fb0",
     "url": "/index.html"
   },
   {
@@ -148,12 +148,12 @@ self.__precacheManifest = [
     "url": "/json/gods.json"
   },
   {
-    "revision": "e3b0ecb3058d17501896",
-    "url": "/js/app.6bc907f6.js"
+    "revision": "ed22d76c18cecd8c84d7",
+    "url": "/js/app.80202106.js"
   },
   {
-    "revision": "649e71cf4a953d213786",
-    "url": "/js/characterbuilder.718b8672.js"
+    "revision": "04c04c75814bbfae418f",
+    "url": "/js/characterbuilder.9d1e5eaa.js"
   },
   {
     "revision": "6aae083ac3cfefbaa90b67c1da319cf9",
@@ -176,7 +176,7 @@ self.__precacheManifest = [
     "url": "/json/races.json"
   },
   {
-    "revision": "f745a0f0d2ae26b1111a3a0cdf8bc4ee",
+    "revision": "5ffccbf3039b54b7e0ded3549a966f70",
     "url": "/json/spells.json"
   },
   {
@@ -288,7 +288,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/pcs.md"
   },
   {
-    "revision": "e3b0ecb3058d17501896",
+    "revision": "ed22d76c18cecd8c84d7",
     "url": "/css/app.46be9565.css"
   },
   {

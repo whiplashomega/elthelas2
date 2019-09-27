@@ -3,7 +3,7 @@ layout: post
 title: "Shatter"
 date: 2015-07-30
 source: PHB.275
-tags: [sorcerer, warlock, wizard, level2, evocation]
+tags: [sorcerer, warlock, wizard, eldritchknight, level2, evocation]
 ---
 
 **2nd-level evocation**

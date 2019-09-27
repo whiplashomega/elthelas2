@@ -3,7 +3,7 @@ layout: post
 title:  "Shield"
 date:   2014-08-24
 source: PHB.275
-tags: [archivist, sorcerer, wizard, level1, abjuration]
+tags: [archivist, sorcerer, wizard, eldritchknight, level1, abjuration]
 ---
 
 **1st-level abjuration**

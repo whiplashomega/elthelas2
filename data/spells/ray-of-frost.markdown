@@ -3,7 +3,7 @@ layout: post
 title:  "Ray of Frost"
 date:   2014-08-24
 source: PHB.271
-tags: [sorcerer, wizard, cantrip, evocation]
+tags: [sorcerer, wizard, eldritchknight, cantrip, evocation]
 ---
 
 **Evocation cantrip**

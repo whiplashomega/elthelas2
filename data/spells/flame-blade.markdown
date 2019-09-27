@@ -3,7 +3,7 @@ layout: post
 title: "Flame Blade"
 date: 2015-07-14
 source: PHB.242
-tags: [druid, level2, evocation]
+tags: [druid, eldritchknight, level2, evocation]
 ---
 
 **2nd-level evocation**

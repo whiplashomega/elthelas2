@@ -3,7 +3,7 @@ layout: post
 title:  "Force Weapon"
 date:   2014-08-24
 source: Homebrew
-tags: [wizard, sorcerer, warlock, bard, cantrip, evocation]
+tags: [wizard, sorcerer, warlock, bard, eldritchknight, cantrip, evocation]
 ---
 
 **Evocation cantrip**

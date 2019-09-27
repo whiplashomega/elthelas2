@@ -3,7 +3,7 @@ layout: post
 title:  "Dimension Door"
 date:   2015-01-11
 source: PHB.233
-tags: [archivist, bard, sorcerer, warlock, wizard, level4, conjuration]
+tags: [archivist, bard, sorcerer, warlock, wizard, eldritchknight, level4, conjuration]
 ---
 
 **4th-level conjuration**

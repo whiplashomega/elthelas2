@@ -3,7 +3,7 @@ layout: post
 title: "Moonbeam"
 date: 2015-07-30
 source: PHB.261
-tags: [archivist, druid, level2, evocation]
+tags: [archivist, druid, eldritchknight, level2, evocation]
 ---
 
 **2nd-level evocation**

@@ -3,7 +3,7 @@ layout: post
 title: "Dragon's Breath"
 date: 2015-07-14
 source: PHB.242
-tags: [sorcerer, level2, transmutation]
+tags: [sorcerer, eldritchknight, level2, transmutation]
 ---
 
 **2nd-level transmutation**

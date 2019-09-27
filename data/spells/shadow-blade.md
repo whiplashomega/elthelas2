@@ -3,7 +3,7 @@ layout: post
 title: "Shadow Blade"
 date: 2015-07-14
 source: PHB.242
-tags: [warlock, wizard, level2, illusion]
+tags: [warlock, wizard, eldritchknight, level2, illusion]
 ---
 
 **2nd-level illusion**

@@ -3,7 +3,7 @@ layout: post
 title:  "Expeditious Retreat"
 date:   2014-08-24
 source: PHB.238
-tags: [sorcerer, warlock, wizard, level1, transmutation]
+tags: [sorcerer, warlock, wizard, eldritchknight, level1, transmutation]
 ---
 
 **1st-level transmutation**

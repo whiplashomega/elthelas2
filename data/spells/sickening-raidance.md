@@ -3,7 +3,7 @@ layout: post
 title: "Sickening Radiance"
 date: 2015-07-14
 source: PHB.242
-tags: [sorcerer, warlock, wizard, level4, evocation]
+tags: [sorcerer, warlock, wizard, eldritchknight, level4, evocation]
 ---
 
 **4th-level evocation**

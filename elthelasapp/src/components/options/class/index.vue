@@ -213,6 +213,7 @@
           <li>Control Flames</li>
           <li>Create Bonfire</li>
           <li>Fire Bolt</li>
+          <li>Force Weapon</li>
           <li>Frostbite</li>
           <li>Green-Flame Blade</li>
           <li>Gust</li>
@@ -220,7 +221,6 @@
           <li>Lightning Lure</li>
           <li>Message</li>
           <li>Poison Spray</li>
-          <li>Produce Flame</li>
           <li>Ray of Frost</li>
           <li>Resistance</li>
           <li>Shape Water</li>
