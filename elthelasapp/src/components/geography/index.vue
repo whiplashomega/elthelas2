@@ -179,4 +179,4 @@
   </div>
 </template>
 <script src="./geography.js"></script>
-<style src="./geography.scss" lang="scss"></style>
+<style src="./geography.scss" lang="scss" scoped></style>

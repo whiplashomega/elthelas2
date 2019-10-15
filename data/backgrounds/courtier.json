@@ -1,0 +1,13 @@
+{
+  "name": "Courtier",
+  "description": "In your earlier days, you were a personage of some significance in a noble court or a bureaucratic organization. You might or might not come from an upper-class family; your talents, rather than the circumstances of your birth, could have secured you this position.",
+  "skills": ["Insight", "Persuasion"],
+  "tools": [],
+  "languages": 2,
+  "equipment": "A set of fine clothes and a pouch containing 5 gp",
+  "feature": {
+    "name": "Court Functionary",
+    "description": "Your knowledge of how bureaucracies function lets you gain access to the records and inner workings of any noble court or government you encounter. You know who the movers and shakers are, whom to go to for the favors you seek, and what the current intrigues of interest in the group are."
+  },
+  "characteristics": "Use the tables for the guild artisan background in the Player 's Handbook as the basis for your traits and motivations, modifying the entries when appropriate to suit your identity as a courtier.\n\nThe noble court or bureaucratic organization where you got your start is directly or indirectly associated with your bond (which could pertain to certain individuals in the group, such as your sponsor or mentor). Your ideal might be concerned with the prevailing philosophy of your court or organization."
+}

@@ -17,3 +17,13 @@ Wood elf from a poor family near the moon pass, skilled archer
 Cleric of Nera
 
 #### Soren
+
+#### Jim Jimmy Jim Jim
+Gnome Transmuter from Strovenguard, spent years in exile in Riftlan
+
+#### Avdotya
+Dwarven Demon Hunter
+
+#### Tanner
+
+#### Sir Briarwick

@@ -31,7 +31,7 @@
       </div>
       <div class="col-sm">
         <input type="text" class="charsheet-text" v-model="character.height">
-        Height
+        Height <button class="btn-sm btn-primary" @click="rollHeightWeight()">Roll</button>
       </div>
       <div class="col-sm">
         <input type="text" class="charsheet-text" v-model="character.weight">
