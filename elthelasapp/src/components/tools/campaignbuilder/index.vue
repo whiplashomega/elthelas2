@@ -6,7 +6,7 @@
       <button class="btn btn-primary" @click="saveNew()" v-if="!campaign._id">Save New</button>
       <button class="btn btn-success" @click="getAll(comp)">Load</button>
       <button class="btn btn-warning" @click="newCamp()">New Campaign</button>
-      <button class="btn btn-primary" @click="showChapter = !showChapters"><span v-if="showChapters">Hide</span><span v-else>Show</span> Chapters</button>
+      <button class="btn btn-primary" @click="showChapters = !showChapters"><span v-if="showChapters">Hide</span><span v-else>Show</span> Chapters</button>
     </div>
     <div v-if="campaign" class="col-sm-12">
       <div v-if="buildmode">
@@ -21,7 +21,7 @@
           </label>
         </div>
         <div class="row">
-          <div class="col-sm-3">
+          <div class="col-sm-3" v-if="showChapters">
             <h3>Chapters</h3>
             <nav class="sidenav nav flex-column nav-pill">
               <button class="btn btn-primary" @click="addChapter()">Add Chapter</button>
@@ -31,7 +31,7 @@
               </li>
             </nav>
           </div>
-          <div class="col-sm-9" v-if="chapter">
+          <div :class="showChapters ? 'col-sm-9' : 'col-sm-12'" v-if="chapter">
             <div class="row">
               <label class="col-sm-12">
                 Chapter Title
@@ -124,14 +124,14 @@
       <div v-if="!buildmode">
         <h1>{{ campaign.title }}</h1>
         <div class="row">
-          <div class="col-sm-3">
+          <div class="col-sm-3" v-if="showChapters">
             <nav class="sidenav nav flex-column nav-pill">
               <a href="#" class="nav-item"
                  v-for="(chapter, $index) in campaign.chapters" @click="loadChapter(chapter)"
                  :key="chapter.id">Chapter {{ $index }}: {{ chapter.title }}</a>
             </nav>
           </div>
-          <div class="col-sm-9">
+          <div :class="showChapters ? 'col-sm-9' : 'col-sm-12'">
             <h2>{{ chapter.title }}</h2>
             <div v-for="(encounter, $index) in chapter.encounters" :key="encounter._id">
               <div>
