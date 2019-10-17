@@ -84,6 +84,32 @@ export default {
       totalslots: "totalslots",
       getInitMod: "getInitMod"
     }),
+    filteredcreatures () {
+      let comp = this;
+      return this.creatures.filter((a) => {
+        var values = comp.creaturestable.filterValue.split(" ");
+        let inelement = true;
+        if (comp.typeFilter !== "" && a.type !== comp.typeFilter) {
+          inelement = false;
+        }
+        values.forEach((value) => {
+          let exists = comp.creaturestable.filterBy.some(function(el) {
+            for (var y in a) {
+              if (el === y && a[y].toString().toLowerCase().includes(value.toLowerCase())) {
+                return true;
+              }
+            }
+          });
+          if (comp.creaturestable.filterValue && !exists) {
+            inelement = false;
+          }
+        });
+        if (inelement) {
+          return true;
+        }
+        return false;
+      });
+    },
     encountercreaturesinit () {
       return this.encountercreatures.sort((a, b) => {
         if (a.init > b.init) {
@@ -139,30 +165,6 @@ export default {
       return crxptable.find((a) => {
         return a.cr === cr;
       }).xp;
-    },
-    filter (a) {
-      var filter = this.creaturestable.filterBy;
-      var values = this.creaturestable.filterValue.split(" ");
-      let inelement = true;
-      if (this.typeFilter !== "" && a.type !== this.typeFilter) {
-        inelement = false;
-      }
-      values.forEach((value) => {
-        let exists = filter.some(function(el) {
-          for (var y in a) {
-            if (el === y && a[y].toString().toLowerCase().includes(value.toLowerCase())) {
-              return true;
-            }
-          }
-        });
-        if (this.creaturestable.filterValue && !exists) {
-          inelement = false;
-        }
-      });
-      if (inelement) {
-        return true;
-      }
-      return false;
     },
     calculateDifficulty () {
       var easythresholds = [25, 50, 75, 125, 250, 300, 350, 450, 550, 600, 800, 1000, 1100, 1250, 1400, 1600, 2000, 2100, 2400, 2800];

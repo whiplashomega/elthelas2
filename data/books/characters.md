@@ -108,6 +108,10 @@ PC - Out of the Abyss - Joe Harrison
 #### Jharreck
 PC - Out of the Abyss - Dan Kuzuhara
 
+#### Nilofar
+PC - Out of the Abyss - Rachael McCormick
+NPC - Book 4 - Enemy
+
 #### Tanner
 PC - Book 1 - Nate Peterson
 NPC - Book 2 - Friendly

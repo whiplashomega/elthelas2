@@ -2,7 +2,7 @@
 layout: post
 title: "Erik Dawnblade"
 date: 2016-02-29
-tags: [medium, humanoid (fallen aasimar), cr10]
+tags: [medium, humanoid, cr10]
 ---
 
 **Medium humanoid (fallen aasimar), lawful evil**

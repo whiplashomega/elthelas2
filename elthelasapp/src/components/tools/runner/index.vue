@@ -120,8 +120,9 @@
             <option value="aberration">Aberration</option>
             <option value="beast">Beast</option>
             <option value="celestial">Celestial</option>
-            <option value="dragon">Dragon</option>
             <option value="construct">Construct</option>
+            <option value="dragon">Dragon</option>
+            <option value="elemental">Elemental</option>
             <option value="fiend">Fiend</option>
             <option value="giant">Giant</option>
             <option value="humanoid">Humanoid</option>
@@ -154,10 +155,8 @@
              :striped="true" :bordered="false"
              :responsive="true"
              stacked="sm"
-             :items="creatures"
+             :items="filteredcreatures"
              :fields="creaturestable.fields"
-             :filter-function="filter"
-             :filter="creaturestable.filterValue"
              :sort-by.sync="creaturestable.sortBy"
              :sort-desc.sync="creaturestable.sortDesc">
       <template slot="name" slot-scope="row"><a href="#" @click.stop="addToEncounter(row.item, row.index, $event.target)">{{ row.value }}</a></template>

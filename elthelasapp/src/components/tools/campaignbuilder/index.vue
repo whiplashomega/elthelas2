@@ -6,6 +6,7 @@
       <button class="btn btn-primary" @click="saveNew()" v-if="!campaign._id">Save New</button>
       <button class="btn btn-success" @click="getAll(comp)">Load</button>
       <button class="btn btn-warning" @click="newCamp()">New Campaign</button>
+      <button class="btn btn-primary" @click="showChapter = !showChapters"><span v-if="showChapters">Hide</span><span v-else>Show</span> Chapters</button>
     </div>
     <div v-if="campaign" class="col-sm-12">
       <div v-if="buildmode">

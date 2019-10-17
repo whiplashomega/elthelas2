@@ -1,6 +1,6 @@
 ## Chapter 7: Waelin Independence
 
-### Missions
+### Orders
 
 #### General Heartbren's Orders
 
@@ -21,6 +21,10 @@ We need funding for our order, and Loridesa has long been one of our primary fun
 #### Union of Wizard's Colleges Orders
 
 The elves keep many arcane secrets that they refuse to share with others. This may offend your sensibilities, but I have heard of a powerful book in the King's Library, the Tome of Clear Thought. I want you to steal that book so that we can study its secrets and share them with all the colleges of our order.
+
+#### Black Sun Orders
+
+#### Champions of Cora Orders
 
 ### The Noble Houses of Loridesa
 
