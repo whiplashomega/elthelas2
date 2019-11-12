@@ -14,6 +14,7 @@ var Campaign = new Schema({
   chapters: [Chapter],
   url: { type: String, required: true, unique: true },
   playercharacters: [],
+  invitedcharacters: [],
   owner: String
 });
 

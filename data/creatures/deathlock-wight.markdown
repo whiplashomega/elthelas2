@@ -2,7 +2,7 @@
 layout: post
 title: "Deathlock Wight"
 date: 2017-09-10
-tags: [medium, undead, cr3, tales-from-the-yawning-portal]
+tags: [medium, undead, cr3, MToF]
 ---
 
 **Medium undead, neutral evil**
@@ -27,15 +27,13 @@ tags: [medium, undead, cr3, tales-from-the-yawning-portal]
 
 **Condition Immunities** exhaustion, poisoned
 
-**Senses** darkvision 60 ft.
+**Senses** darkvision 60 ft., passive Perception 14
 
 **Languages** the languages it knew in life
 
 **Challenge** 3 (700 XP)
 
-***Source.*** tales from the yawning portal,  page 233
-
-***Undead Nature.*** A wight doesn't require air, food, drink, or sleep.
+***Source.*** Mordenkainen's Tome of Foes, page 129
 
 ***Innate Spellcasting.*** The wight's innate spellcasting ability is Charisma (spell save DC 13). It can innately cast the following spells, requiring no verbal or material components:
 

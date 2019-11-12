@@ -117,6 +117,11 @@ export default {
     newCamapign: ({ state }) => {
       state.current = newCampaign();
       state.currentChapter = state.current.chapters[0];
+    },
+    invitePCToCampaign: ({ state, getters }, pcid) => {
+      Vue.http.get('/characters/invite/' + pcid + '/' + state.current._id + '?token=' + getters.getUserInfo.token).then((res) => {
+        return;
+      });
     }
   }
 };

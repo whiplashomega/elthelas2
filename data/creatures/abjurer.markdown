@@ -29,13 +29,13 @@ tags: [medium, humanoid, cr9, volos-guide]
 
 Cantrips (at will): blade ward. dancing lights, mending, message, ray of frost
 
-1st level (4 slots): alarm*, mage armor, magic missile, shield*
+1st level (4 slots): alarm\*, mage armor, magic missile, shield\*
 
 2nd level (3 slots): arcane lock*, invisibility
 
-3rd level (3 slots): counterspell*, dispel magic*, fireball
+3rd level (3 slots): counterspell\*, dispel magic\*, fireball
 
-4th level (3 slots): banishment*, stoneskin*
+4th level (3 slots): banishment\*, stoneskin\*
 
 5th level (2 slots): cone of cold, wall of force
 

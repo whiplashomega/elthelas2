@@ -16,6 +16,7 @@ import bonus from '@/components/tools/characterbuilder/bonus';
 import resources from '@/components/tools/characterbuilder/resources';
 import fluff from '@/components/tools/characterbuilder/fluff';
 import createcreature from '@/components/tools/characterbuilder/createcreature';
+import campaigninfo from '@/components/tools/characterbuilder/campaigninfo';
 // import test from '@/tests/unit/charbuilder.test.js';
 
 export default {
@@ -36,7 +37,8 @@ export default {
     bonus,
     resources,
     fluff,
-    createcreature
+    createcreature,
+    campaigninfo
   },
   computed: {
     ...mapGetters({

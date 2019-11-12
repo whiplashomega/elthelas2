@@ -41,3 +41,4 @@ tags: [small, humanoid, cr1, monster-manual]
 
 ***Redirect Attack.*** When a creature the goblin can see targets it with an attack, the goblin can choose to have the attack target its mount instead.
 
+***Orc War Machine Creature***

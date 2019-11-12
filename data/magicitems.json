@@ -2725,5 +2725,21 @@
   "Rarity": "Very Rare",
   "Attunement": "Yes (Wizard or Factotum)",
   "Effect": "This spellbook is enchanted to enhance the memory of the user. The attuned wizard can copy spells into this spellbook (using the normal rules for copying spells), and can prepare 5 additional spells each day so long as these spells are scribed in this book."
+ },
+ {
+  "Item": "Ockham's Laser",
+  "Type": "Wondrous Item",
+  "Cost (gp)": "8000 gp",
+  "Rarity": "Rare",
+  "Attunement": "Yes",
+  "Effect": "This bracer fits snuggly on the wrist up to the elbow. It has 10 charges. When activated, a wand pops out of the bracer and fires one of the following spells of your choice, using the number of charges indicated: Ray of Frost - free; magic missile - 1 charge; scorching ray - 3 charges. Lightning Bolt - 5 charges, Sunbeam - 10 charges. It regains 1d6 charges daily at dawn. When necessary, the spell attack bonus for these spells is +7, and the Save DC is 15."
+ },
+ {
+   "Item": "Book of Rituals",
+   "Type": "Wondrous Item",
+   "Cost": "6000 gp",
+   "Rarity": "Uncommon",
+   "Attunement": "No",
+   "Effect": "This magical spell book contains 9 (3d4 + 2) spell levels worth of random spells that have the ritual tag (determined by the DM when the item is acquired). The book details all of the methods and incantations necessary to cast the rituals it contains. A spellcaster with the ritual caster ability can use the book to cast any of the rituals within as a ritual without preparing them or having them in their spellbook otherwise. However, the book does not contain the information necessary to cast the spells normally, and thus do not contain the information a wizard would need to add the spells to their normal spell book."
  }
 ]

@@ -86,7 +86,7 @@ const sitemapurls = [
     { url: '/about',  changefreq: 'weekly',  priority: 0.7 },
 ];
 
-module.exports = function(app, staticDir) {
+module.exports = function(app, staticDir, server) {
 
     //user function routes
     var users = require('./users');

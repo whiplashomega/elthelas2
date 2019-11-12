@@ -128,6 +128,7 @@
         </div>
         <bonus />
         <createcreature />
+        <campaigninfo />
       </div>
     </div>
     <div v-if="mobile">
@@ -175,6 +176,9 @@
         <b-tab title="Build">
           <loadsave />
           <bonus />
+        </b-tab>
+        <b-tab title="Campaign">
+          <campaigninfo />
         </b-tab>
       </b-tabs>
     </div>

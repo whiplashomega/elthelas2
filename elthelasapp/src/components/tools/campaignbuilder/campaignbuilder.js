@@ -1,4 +1,6 @@
 import { mapGetters, mapActions } from 'vuex';
+import notes from './notes';
+import pcmanager from './pcmanager';
 /* Campaign Object Structure
 {
     title: String,
@@ -22,6 +24,10 @@ export default {
       token: 'getUserInfo',
       loggedin: "isLoggedIn"
     })
+  },
+  components: {
+    notes,
+    pcmanager
   },
   data: function () {
     return {
@@ -50,16 +56,7 @@ export default {
       loadById: 'loadCampaignById',
       loadByUrl: 'loadCampaignByUrl',
       deleteCamp: 'deleteCampaign',
-      newCamp: 'newCampaign',
-      addChapter: 'addChapter',
-      addEncounter: 'addEncounterToChapter',
-      loadChapter: 'loadChapter',
-      moveEnUp: 'moveEncounterUp',
-      moveEnDown: 'moveEncounterDown',
-      moveChUp: 'moveChapterUp',
-      moveChDown: 'moveChapterDown',
-      deleteEncounter: 'deleteCampaignEncounter',
-      deleteChapter: 'deleteChapter'
+      newCamp: 'newCampaign'
     })
   },
   created () {

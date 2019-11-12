@@ -11,6 +11,7 @@ import App from './components/App';
 import router from './router';
 import store from './model';
 import './registerServiceWorker';
+import VueSocketio from 'vue-socket.io';
 
 var Sortable = typeof require === 'function'
   ? require('sortablejs')
@@ -38,6 +39,8 @@ Vue.filter('marked', function(input) {
 
 Vue.use(BootstrapVue);
 Vue.use(VueResource);
+console.log(window.location.hostname);
+Vue.use(VueSocketio, window.location.hostname);
 
 Vue.config.productionTip = false;
 Vue.config.ignoredElements = ['gcse:search'];
