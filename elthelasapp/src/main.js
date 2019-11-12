@@ -40,7 +40,7 @@ Vue.filter('marked', function(input) {
 Vue.use(BootstrapVue);
 Vue.use(VueResource);
 console.log(window.location.hostname);
-Vue.use(VueSocketio, window.location.hostname);
+// Vue.use(VueSocketio, window.location.hostname);
 
 Vue.config.productionTip = false;
 Vue.config.ignoredElements = ['gcse:search'];
