@@ -87,6 +87,9 @@ export default {
         if (a.selsubclass.name === "Sorceron Bloodline") {
           num += 3;
         }
+        if (a.selsubclass.name === "Sorceron Bloodline" && a.level >= 14) {
+          num++;
+        }
       }
       if (a.thisclass.name === "Warlock") {
         num = Math.min(a.level, 9) + 1;

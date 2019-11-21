@@ -94,6 +94,7 @@ module.exports = function(app, staticDir, server) {
     var encounters = require('./encounters');
     var strongholds = require('./strongholds');
     var campaigns = require('./campaigns');
+    var creatures = require('./creatures');
     
     app.use('/users', users);
     app.use('/characters', characters);

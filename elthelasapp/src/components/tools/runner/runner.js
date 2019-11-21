@@ -82,7 +82,9 @@ export default {
       getAttackBonus: "getAttackBonus",
       getAttackDamageBonus: "getAttackDamageBonus",
       totalslots: "totalslots",
-      getInitMod: "getInitMod"
+      getInitMod: "getInitMod",
+      getCreature: 'getCreature',
+      saveNewCreature: 'saveNewCreature'
     }),
     filteredcreatures () {
       let comp = this;
@@ -140,7 +142,7 @@ export default {
         filterValue: "",
         sortBy: null,
         sortDesc: false,
-        filterBy: [ "name", "size", "cr", "subtype", "alignment", "description" ],
+        filterBy: [ "name", "size", "cr", "subtype", "alignment" ],
         modalInfo: { ...modalInfo }
       },
       encountercreatures: [],
@@ -199,6 +201,12 @@ export default {
       }
     },
     addToEncounter (item) {
+      if (!item.description) {
+        this.getCreature(item._id);
+      }
+      if (!item._id) {
+        this.saveNewCreature(item);
+      }
       var creature = Object.assign({}, item);
       creature.id = this.nextIndex;
       this.nextIndex++;

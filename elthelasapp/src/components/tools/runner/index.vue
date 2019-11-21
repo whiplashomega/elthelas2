@@ -140,7 +140,6 @@
           <b-form-checkbox value="cr">CR</b-form-checkbox>
           <b-form-checkbox value="subtype">Subtype</b-form-checkbox>
           <b-form-checkbox value="alignment">Alignment</b-form-checkbox>
-          <b-form-checkbox value="description">Description</b-form-checkbox>
         </b-form-checkbox-group>
       </b-col>
       <b-col md="4" class="my-1">
@@ -159,7 +158,7 @@
              :fields="creaturestable.fields"
              :sort-by.sync="creaturestable.sortBy"
              :sort-desc.sync="creaturestable.sortDesc">
-      <template slot="name" slot-scope="row"><a href="#" @click.stop="addToEncounter(row.item, row.index, $event.target)">{{ row.value }}</a></template>
+      <template slot="name" slot-scope="row"><a href="#" @click.stop="addToEncounter(row.item, row.index, $event.target)"><span v-if="creature._id">DB </span>{{ row.value }}</a></template>
     </b-table>
     <div id="inithptracker" class="row">
       <div v-for="creature in encountercreaturesinit" :key="creature.id" class="form-inline form-row col-md-6" >

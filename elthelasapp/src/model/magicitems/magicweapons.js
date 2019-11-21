@@ -96,7 +96,7 @@ export default [
     "Cost (gp)": 3000
   },
   {
-    Item: "Moon Touched " + "$Name",
+    Item: "Moon Touched $Name",
     Type: "Weapon (" + "$Name" + ")",
     Attunement: "Yes",
     Rarity: "Uncommon",
@@ -104,7 +104,7 @@ export default [
     "Cost (gp)": 200
   },
   {
-    Item: "$Name" + " of " + "fire",
+    Item: "$Name of fire",
     Type: "Weapon (" + "$Name" + ")",
     Attunement: "No",
     Rarity: "Uncommon",
@@ -112,7 +112,7 @@ export default [
     "Cost (gp)": 4000
   },
   {
-    Item: "+1 " + "$Name" + " of " + "fire",
+    Item: "+1 " + "$Name of fire",
     Type: "Weapon (" + "$Name" + ")",
     Attunement: "Yes",
     Rarity: "Rare",
@@ -120,7 +120,7 @@ export default [
     "Cost (gp)": 9000
   },
   {
-    Item: "$Name" + " of " + "acid",
+    Item: "$Name of acid",
     Type: "Weapon (" + "$Name" + ")",
     Attunement: "No",
     Rarity: "Uncommon",
@@ -177,7 +177,7 @@ export default [
     Test: /thrown/
   },
   {
-    Item: "+1 " + "$Name" + " of Returning",
+    Item: "+1 $Name of Returning",
     Type: "Weapon (" + "$Name" + ")",
     Attunement: "Yes",
     Rarity: "Rare",
@@ -191,7 +191,7 @@ export default [
     "Cost (gp)": "20000",
     "Rarity": "Very Rare",
     "Attunement": "Yes",
-    "Effect": "You gain a +2 bonus to attack and damage rolls made with this magic $Name.\nThe $Name has 6 charges. If you score a critical hit against a creature that has fewer than 100 hit points, it must succeed on a DC 15 Constitution saving throw or be slain instantly as the $Name tears its life force from its body (a construct or an undead is immune). The $Name loses 1 charge if the creature is slain. When the sword has no charges remaining, it loses this property."
+    "Effect": "You gain a +2 bonus to attack and damage rolls made with this magic $Name.\nThe $Name has 6 charges. If you score a critical hit against a creature that has fewer than 100 hit points, it must succeed on a DC 15 Constitution saving throw or be slain instantly as the $Name tears its life force from its body (a construct or an undead is immune). The $Name loses 1 charge if the creature is slain. When the $Name has no charges remaining, it loses this property."
   },
   {
     "Item": "Defender $Name",
@@ -199,7 +199,7 @@ export default [
     "Cost (gp)": "1000000",
     "Rarity": "Legendary",
     "Attunement": "Yes",
-    "Effect": "You gain a +3 bonus to attack and damage rolls made with this magic $Name.\n\nThe first time you attack with the $Name on each of your turns, you can transfer some or all of the sword's bonus to your Armor Class, instead of using the bonus on any attacks that turn. For example, you could reduce the bonus to your attack and damage rolls to +1 and gain a +2 bonus to AC. The adjusted bonuses remain in effect until the start of your next turn, although you must hold the $Name to gain a bonus to AC from it."
+    "Effect": "You gain a +3 bonus to attack and damage rolls made with this magic $Name.\n\nThe first time you attack with the $Name on each of your turns, you can transfer some or all of the $Name's bonus to your Armor Class, instead of using the bonus on any attacks that turn. For example, you could reduce the bonus to your attack and damage rolls to +1 and gain a +2 bonus to AC. The adjusted bonuses remain in effect until the start of your next turn, although you must hold the $Name to gain a bonus to AC from it."
   },
   {
     "Item": "Holy Avenger $Name",
@@ -215,7 +215,7 @@ export default [
     "Cost (gp)": "1000000",
     "Rarity": "Legendary",
     "Attunement": "Yes",
-    "Effect": "You gain a +1 bonus to attack and damage rolls made with this magic $Name. While the $Name is on your person, you also gain a +1 bonus to saving throws.\n\nLuck. If the sword is on your person, you can call on its luck (no action required) to reroll one attack roll, ability check, or saving throw you dislike. You must use the second roll. This property can't be used again until the next dawn.\n\nWish. The sword has 1d4- 1 charges. While holding it, you can use an action to expend 1 charge and cast the wish spell from it. This property can't be used again until the next dawn. The $Name loses this property if it has no charges."
+    "Effect": "You gain a +1 bonus to attack and damage rolls made with this magic $Name. While the $Name is on your person, you also gain a +1 bonus to saving throws.\n\nLuck. If the $Name is on your person, you can call on its luck (no action required) to reroll one attack roll, ability check, or saving throw you dislike. You must use the second roll. This property can't be used again until the next dawn.\n\nWish. The $Name has 1d4- 1 charges. While holding it, you can use an action to expend 1 charge and cast the wish spell from it. This property can't be used again until the next dawn. The $Name loses this property if it has no charges."
   },
   {
     "Item": "Flame Tongue $Name",
@@ -223,7 +223,7 @@ export default [
     "Cost (gp)": "9000",
     "Rarity": "Rare",
     "Attunement": "Yes",
-    "Effect": "You can use a bonus action to speak this magic $Name's command word, causing flames to erupt from the blade. These flames shed bright light in a 40-foot radius and dim light for an additional 40 feet. While the sword is ablaze, it deals an extra 2d6 fire damage to any target it hits. The flames last until you use a bonus action to speak the command word again or until you drop or sheathe the $Name."
+    "Effect": "You can use a bonus action to speak this magic $Name's command word, causing flames to erupt from the blade. These flames shed bright light in a 40-foot radius and dim light for an additional 40 feet. While the $Name is ablaze, it deals an extra 2d6 fire damage to any target it hits. The flames last until you use a bonus action to speak the command word again or until you drop or sheathe the $Name."
   },
   {
     "Item": "Frost Brand $Name",
@@ -234,12 +234,28 @@ export default [
     "Effect": "When you hit with an attack using this magic $Name, the target takes an extra 1d6 cold damage. In addition, while you hold the $Name, you have resistance to fire damage.\nIn freezing temperatures, the blade sheds bright light in a 10-foot radius and dim light for an additional 1O feet.\nWhen you draw this weapon, you can extinguish all nmagical flames within 30 feet of you. This property can be used no more than once per hour."
   },
   {
-    Item: "$Name" + " of Sharpness",
-    Type: "Weapon (" + "$Name" + ")",
+    Item: "$Name of Sharpness",
+    Type: "Weapon ($Name)",
     Attunement: "Yes",
     Rarity: "Very Rare",
-    Effect: "When you attack an object with this magic weapon and hit, maximize your weapon damage dice against the target. When you attack a creature with this weapon and roll a 20 on the attack roll, that target takes an extra 14 slashing damage. Then roll another d20. If you roll a 20 you lop off one of the target's limbs, with the effect of such loss determined by the DM. If the creature has no limb to sever, you lop off a portion of its body instead. In addition, you can speak the weapon's command word to cause the blade to shed bright light in a 10-foot radius and dim light for an additional 10 feet. Speaking the command word again or sheathing the sword puts out the light.",
+    Effect: "When you attack an object with this magic weapon and hit, maximize your weapon damage dice against the target. When you attack a creature with this weapon and roll a 20 on the attack roll, that target takes an extra 14 slashing damage. Then roll another d20. If you roll a 20 you lop off one of the target's limbs, with the effect of such loss determined by the DM. If the creature has no limb to sever, you lop off a portion of its body instead. In addition, you can speak the weapon's command word to cause the blade to shed bright light in a 10-foot radius and dim light for an additional 10 feet. Speaking the command word again or sheathing the $Name puts out the light.",
     "Cost (gp)": 9000,
     Test: /slashing/
+  },
+  {
+    Item: "Holy $Name",
+    Type: "Weapon ($Name)",
+    Attunement: "No",
+    Rarity: "Rare",
+    Effect: "This $Name is blessed by a God. Attacks with it deal an additional 1d8 radiant damage or 2d8 radiant damage if the target is a fiend or undead.",
+    "Cost (gp)": 8000
+  },
+  {
+    Item: "$Name of Arcane Fire",
+    Type: "Weapon ($Name)",
+    Attunement: "No",
+    Rarity: "Uncommon",
+    Effect: "This $Name contains a crystal designed to focus arcane energy. While holding this weapon it acts as an arcane focus. Additionally, you can use the weapon to cast the fire bolt spell using the higher of your intelligence and charisma for the spell attack bonus.",
+    "Cost (gp)": 4000
   }
 ];
