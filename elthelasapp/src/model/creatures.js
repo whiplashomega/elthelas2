@@ -23,18 +23,10 @@ function calcStatMods (creature) {
 const actions = {
   getAllCreatures ({ commit }) {
     return new Promise((resolve) => {
-      Vue.http.get(ctest.baseUrl + 'json/creatures.json').then((response) => {
-        var creatures = response.body.documents;
-        Vue.http.get(ctest.baseUrl + 'creatures').then((response) => {
-          creatures.push(...response.body);
-          commit('GET_CREATURES', { creatures: creatures });
-          resolve();
-          for (var x = 0; x < creatures.length; x++) {
-            if (creatures[x].description) {
-              calcStatMods(creatures[x]);
-            }
-          }
-        })
+      Vue.http.get(ctest.baseUrl + 'creatures').then((response) => {
+        var creatures = response.body;
+        commit('GET_CREATURES', { creatures: creatures });
+        resolve();
       });
     });
   },
@@ -45,6 +37,7 @@ const actions = {
           return cre._id === id;
         });
         state.all[i] = response.body;
+        calcStatMods(state.all[i]);
         resolve(state.all[i]);
       });
     });

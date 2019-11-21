@@ -200,19 +200,9 @@ export default {
         this.difficulty = "nigh on impossible";
       }
     },
-    addAllCreatures () {
-      this.creatures.forEach((cre) => {
-        if (!cre._id) {
-          this.saveNewCreature(cre);
-        }
-      });
-    },
     async addToEncounter (item) {
       if (!item.description) {
         item = await this.getCreature(item._id);
-      }
-      if (!item._id) {
-        this.saveNewCreature(item);
       }
       var creature = Object.assign({}, item);
       creature.id = this.nextIndex;
