@@ -51,7 +51,7 @@ const actions = {
   },
   saveNewCreature ({ state, getters }, creature) {
     return new Promise((resolve) => {
-      Vue.http.post(ctest.baseUrl + 'creatures/?token=' + getters.getUserInfo.token, creature).then((response) => {
+      Vue.http.post(ctest.baseUrl + 'creatures/?token=' + getters.getUserInfo.token, { creature: creature }).then((response) => {
         creature._id = response.body._id;
       });
     });

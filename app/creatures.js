@@ -25,6 +25,7 @@ router.get('/:id', function(req, res) {
 
 router.post('/', Verify.verifyOrdinaryUser, function(req, res) {
   var newenc = new Creature({ ...req.body.creature });
+  console.log(req.body.creature);
   newenc.save(function(err, creature) {
     if (err) throw err;
     console.log(creature.id);

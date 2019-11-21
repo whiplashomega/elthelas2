@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "1fca3aebeca56e5a650d27617b08bf30",
+    "revision": "1999d7bb5810ee4f499e1e6615cfcc65",
     "url": "/index.html"
   },
   {
@@ -152,8 +152,8 @@ self.__precacheManifest = [
     "url": "/json/features.json"
   },
   {
-    "revision": "21415f724b2a8d71795e",
-    "url": "/js/app.5e38e58c.js"
+    "revision": "4c44942fffc8bc283ee2",
+    "url": "/js/app.6ce54d88.js"
   },
   {
     "revision": "6d93ef636da0e932c2d9",
@@ -296,7 +296,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/pcs.md"
   },
   {
-    "revision": "21415f724b2a8d71795e",
+    "revision": "4c44942fffc8bc283ee2",
     "url": "/css/app.98fbdfca.css"
   },
   {
