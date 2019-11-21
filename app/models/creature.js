@@ -11,7 +11,7 @@ var Creature = new Schema({
   alignment: String,
   ac: { type: String, default: "" },
   acdesc: String,
-  hp: String,
+  hp: Number,
   hpdesc: String,
   speed: String,
   str: Number,
