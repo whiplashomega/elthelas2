@@ -38,9 +38,9 @@ const actions = {
       });
     });
   },
-  getCreature ({ state, commit }, id) {
+  getCreature ({ state, getters }, id) {
     return new Promise((resolve) => {
-      Vue.http.get(ctest.baseUrl + '/creatures/' + id).then((response) => {
+      Vue.http.get(ctest.baseUrl + '/creatures/' + id + "?token=" + getters.getUserInfo.token).then((response) => {
         let i = state.all.findIndex((cre) => {
           return cre._id === id;
         });
@@ -49,9 +49,9 @@ const actions = {
       });
     });
   },
-  saveNewCreature ({ state }, creature) {
+  saveNewCreature ({ state, getters }, creature) {
     return new Promise((resolve) => {
-      Vue.http.post(ctest.baseUrl + '/creatures/', creature).then((response) => {
+      Vue.http.post(ctest.baseUrl + '/creatures/?token=' + getters.getUserInfo.token, creature).then((response) => {
         creature._id = response.body._id;
       });
     });
