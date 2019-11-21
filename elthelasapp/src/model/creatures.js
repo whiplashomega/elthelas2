@@ -1,13 +1,16 @@
 import Vue from 'vue';
 import marked from 'marked';
 import ctest from './cordovatest.js';
+import Creature from './classes/creature';
 
 const state = {
-  all: []
+  all: [],
+  builderCreature: Creature()
 };
 
 const getters = {
-  allCreatures: state => state.all
+  allCreatures: state => state.all,
+  builderCreature: state => state.builderCreature
 };
 
 function calcStatMods (creature) {
@@ -29,6 +32,9 @@ const actions = {
         resolve();
       });
     });
+  },
+  resetCreature ({ state }) {
+    state.builderCreature = Creature();
   },
   getCreature ({ state, getters }, id) {
     return new Promise((resolve) => {

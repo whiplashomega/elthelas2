@@ -24,6 +24,7 @@ import runner from '../components/tools/runner';
 import privacy from '@/components/privacy';
 import strongholdbuilder from '@/components/tools/strongholdbuilder';
 import campaignbuilder from '@/components/tools/campaignbuilder';
+import creaturebuilder from '../components/tools/creaturebuilder';
 const domains = () => import(/* webpackChunkName: "domains" */ '../components/options/domains');
 const classes = () => import(/* webpackChunkName: "classes" */ '../components/options/class');
 const encounterbuilder = () => import(/* webpackChunkName: "encounters" */ '@/components/tools/encounterbuilder');
@@ -429,6 +430,16 @@ var router = new Router({
       path: "/tools/campaigns/:url",
       components: {
         default: campaignbuilder
+      }
+    },
+    {
+      name: "creaturebuilder",
+      meta: {
+        title: "Creature Creator"
+      },
+      path: "/tools/creaturebuilder",
+      components: {
+        default: creaturebuilder
       }
     }
   ],

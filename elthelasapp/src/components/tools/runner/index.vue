@@ -4,7 +4,6 @@
     <p>
       <a :href="encounterlink">Link to this Encounter</a>
     </p>
-    <button @click="addAllCreatures()">Add All Creatures</button>
     <div class="row">
       <div class="col-sm-8">
         <label>

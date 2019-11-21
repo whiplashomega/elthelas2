@@ -22,6 +22,7 @@
                   v-for="campaign in userCampaigns" :key="campaign._id">
                 <router-link :to="'/tools/campaigns/' + campaign.url">{{ campaign.title }}</router-link>
               </li>
+              <li class="dropdown-item" v-if="loggedin"><router-link to="/tools/creaturebuilder">Creature Builder</router-link></li>
               <li class="dropdown-item" v-if="loggedin"><router-link to="/encounter/builder">Encounter Builder</router-link></li>
               <li class="dropdown-item" v-if="loggedin"><router-link to="/encounter/random">Random Encounter Table</router-link></li>
               <li class="dropdown-item" v-if="loggedin"><router-link to="/encounter/details">Encounter List</router-link></li>
