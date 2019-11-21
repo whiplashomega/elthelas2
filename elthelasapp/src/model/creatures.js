@@ -25,7 +25,7 @@ const actions = {
     return new Promise((resolve) => {
       Vue.http.get(ctest.baseUrl + 'json/creatures.json').then((response) => {
         var creatures = response.body.documents;
-        Vue.http.get(ctest.baseUrl + '/creatures').then((response) => {
+        Vue.http.get(ctest.baseUrl + 'creatures').then((response) => {
           creatures.push(...response.body);
           commit('GET_CREATURES', { creatures: creatures });
           resolve();
@@ -40,7 +40,7 @@ const actions = {
   },
   getCreature ({ state, getters }, id) {
     return new Promise((resolve) => {
-      Vue.http.get(ctest.baseUrl + '/creatures/' + id + "?token=" + getters.getUserInfo.token).then((response) => {
+      Vue.http.get(ctest.baseUrl + 'creatures/' + id + "?token=" + getters.getUserInfo.token).then((response) => {
         let i = state.all.findIndex((cre) => {
           return cre._id === id;
         });
@@ -51,7 +51,7 @@ const actions = {
   },
   saveNewCreature ({ state, getters }, creature) {
     return new Promise((resolve) => {
-      Vue.http.post(ctest.baseUrl + '/creatures/?token=' + getters.getUserInfo.token, creature).then((response) => {
+      Vue.http.post(ctest.baseUrl + 'creatures/?token=' + getters.getUserInfo.token, creature).then((response) => {
         creature._id = response.body._id;
       });
     });
