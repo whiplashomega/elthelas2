@@ -132,7 +132,7 @@ self.__precacheManifest = [
     "url": "/json/continents.json"
   },
   {
-    "revision": "be01ec5290f11a075c7fde83e1e23e0a",
+    "revision": "6322098fed5956b5aa96d48002ac2d7d",
     "url": "/json/creatures.json"
   },
   {
