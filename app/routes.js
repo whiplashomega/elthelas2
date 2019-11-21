@@ -101,6 +101,7 @@ module.exports = function(app, staticDir, server) {
     app.use('/encounters', encounters);
     app.use('/strongholds', strongholds);
     app.use('/campaigns', campaigns);
+    app.use('/creatures', creatures);
     
     //generate the sitemap on request
     app.get('/sitemap.xml', function(req, res) {
