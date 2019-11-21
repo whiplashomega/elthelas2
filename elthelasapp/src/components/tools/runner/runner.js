@@ -82,9 +82,7 @@ export default {
       getAttackBonus: "getAttackBonus",
       getAttackDamageBonus: "getAttackDamageBonus",
       totalslots: "totalslots",
-      getInitMod: "getInitMod",
-      getCreature: 'getCreature',
-      saveNewCreature: 'saveNewCreature'
+      getInitMod: "getInitMod"
     }),
     filteredcreatures () {
       let comp = this;
@@ -161,7 +159,9 @@ export default {
   methods: {
     ...mapActions({
       getFromServer: "getFromServer",
-      loadChar: "loadChar"
+      loadChar: "loadChar",
+      getCreature: 'getCreature',
+      saveNewCreature: 'saveNewCreature'
     }),
     xpByCR (cr) {
       return crxptable.find((a) => {
