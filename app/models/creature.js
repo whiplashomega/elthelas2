@@ -7,7 +7,7 @@ var Creature = new Schema({
   size: String,
   type: String,
   subtype: String,
-  cr: String,
+  cr: Number,
   alignment: String,
   ac: { type: String, default: "" },
   acdesc: String,
