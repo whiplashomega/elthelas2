@@ -4,7 +4,7 @@ var Creature = require('./models/creature');
 var Verify = require('./verify');
 
 router.get('/', function(req, res) {
-  Creature.find({}, { name: true, size: true, cr: true, subtype: true, alignment: true }, function (err, creatures) {
+  Creature.find({}, { name: true, size: true, cr: true, type: true, subtype: true, alignment: true }, function (err, creatures) {
     if (err) throw err;
     res.header('Cache-Control', "no-cache, no-store, must-revalidate");
     res.header("Pragma", "no-cache");

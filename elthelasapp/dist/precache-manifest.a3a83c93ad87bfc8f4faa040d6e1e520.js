@@ -16,12 +16,12 @@ self.__precacheManifest = [
     "url": "/css/characterbuilder.aa4c0045.css"
   },
   {
-    "revision": "9c318cde7c10fe645104",
-    "url": "/css/chunk-vendors.155a0081.css"
+    "revision": "830c068ac4a1d124d34c",
+    "url": "/css/chunk-vendors.2c0601b4.css"
   },
   {
-    "revision": "9c318cde7c10fe645104",
-    "url": "/js/chunk-vendors.a384c95a.js"
+    "revision": "830c068ac4a1d124d34c",
+    "url": "/js/chunk-vendors.a1b0b2a7.js"
   },
   {
     "revision": "ed25bab0b44011443651",
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "3dc2fb4df862ea757eb805b9983d7c38",
+    "revision": "5f9ea6f79cd98e551badd64e5d6e9c1b",
     "url": "/index.html"
   },
   {
@@ -132,7 +132,7 @@ self.__precacheManifest = [
     "url": "/json/continents.json"
   },
   {
-    "revision": "8bf0fb3e987ed742dcd156d3204f7b75",
+    "revision": "c7c7295cf47209ef1142ab3a7be8f65a",
     "url": "/json/creatures.json"
   },
   {
@@ -152,8 +152,8 @@ self.__precacheManifest = [
     "url": "/json/features.json"
   },
   {
-    "revision": "e74bc36e8480a03967c5",
-    "url": "/js/app.882a67e6.js"
+    "revision": "245f43964f38ccf96490",
+    "url": "/js/app.7a703913.js"
   },
   {
     "revision": "6d93ef636da0e932c2d9",
@@ -296,7 +296,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/pcs.md"
   },
   {
-    "revision": "e74bc36e8480a03967c5",
+    "revision": "245f43964f38ccf96490",
     "url": "/css/app.3a0b87da.css"
   },
   {

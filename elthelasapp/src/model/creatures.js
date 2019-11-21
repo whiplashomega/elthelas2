@@ -45,7 +45,7 @@ const actions = {
           return cre._id === id;
         });
         state.all[i] = response.body;
-        resolve();
+        resolve(state.all[i]);
       });
     });
   },

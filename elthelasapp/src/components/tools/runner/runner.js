@@ -200,9 +200,9 @@ export default {
         this.difficulty = "nigh on impossible";
       }
     },
-    addToEncounter (item) {
+    async addToEncounter (item) {
       if (!item.description) {
-        this.getCreature(item._id);
+        item = await this.getCreature(item._id);
       }
       if (!item._id) {
         this.saveNewCreature(item);
