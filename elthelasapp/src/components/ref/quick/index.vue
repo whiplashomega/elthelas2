@@ -50,7 +50,7 @@
                  :fields="spelltable.fields"
                  :sort-by.sync="spelltable.sortBy"
                  :sort-desc.sync="spelltable.sortDesc">
-          <template slot="title" slot-scope="row">
+          <template v-slot:cell(title)="row">
             <a href="#" @click.stop="info(row.item, row.index, $event.target)">{{ row.value }}</a>
           </template>
         </b-table>
@@ -1212,7 +1212,7 @@
                  :filter="equipmenttable.filter"
                  :sort-by.sync="equipmenttable.sortBy"
                  :sort-desc.sync="equipmenttable.sortDesc">
-          <template slot="Item" slot-scope="row">
+          <template v-slot:cell(Item)="row">
             <a :title="row.item.Description" href="#" @click.stop="adventuringGearInfo(row.item, row.index, $event.target)">{{ row.value }}</a>
           </template>
         </b-table>

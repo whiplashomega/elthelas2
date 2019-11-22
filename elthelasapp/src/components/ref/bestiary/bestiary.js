@@ -1,4 +1,4 @@
-import { mapGetters } from 'vuex';
+import { mapGetters, mapActions } from 'vuex';
 
 export default {
   computed: mapGetters({
@@ -53,8 +53,12 @@ export default {
     };
   },
   methods: {
-    info (item, index, button) {
-      this.creaturestable.modalInfo = item;
+    ...mapActions({
+      getCreature: 'getCreature'
+    }),
+    async info (item, index, button) {
+      var creature = await this.getCreature(item._id);
+      this.creaturestable.modalInfo = creature;
       this.$root.$emit('bv::show::modal', 'creaturemodal', button);
     },
     resetModal () {

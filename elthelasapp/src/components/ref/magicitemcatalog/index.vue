@@ -53,7 +53,7 @@
                    :fields="magicitemtables.fields"
                    :sort-by.sync="magicitemtables.sortBy"
                    :sort-desc.sync="magicitemtables.sortDesc">
-            <template slot="Item" slot-scope="row"><a href="#" @click.stop="magicItemInfo(row.item, row.index, $event.target)">{{ row.value }}</a></template>
+            <template v-slot:cell(Item)="row"><a href="#" @click.stop="magicItemInfo(row.item, row.index, $event.target)">{{ row.value }}</a></template>
           </b-table>
         </b-tab>
         <b-tab title="Wands">
@@ -65,7 +65,7 @@
                    :fields="magicitemtables.fields"
                    :sort-by.sync="magicitemtables.sortBy"
                    :sort-desc.sync="magicitemtables.sortDesc">
-            <template slot="Item" slot-scope="row"><a href="#" @click.stop="magicItemInfo(row.item, row.index, $event.target)">{{ row.value }}</a></template>
+            <template v-slot:cell(Item)="row"><a href="#" @click.stop="magicItemInfo(row.item, row.index, $event.target)">{{ row.value }}</a></template>
           </b-table>
         </b-tab>
         <b-tab title="Weapons">
@@ -77,7 +77,7 @@
                    :fields="magicitemtables.fields"
                    :sort-by.sync="magicitemtables.sortBy"
                    :sort-desc.sync="magicitemtables.sortDesc">
-            <template slot="Item" slot-scope="row"><a href="#" @click.stop="magicItemInfo(row.item, row.index, $event.target)">{{ row.value }}</a></template>
+            <template v-slot:cell(Item)="row"><a href="#" @click.stop="magicItemInfo(row.item, row.index, $event.target)">{{ row.value }}</a></template>
           </b-table>
         </b-tab>
         <b-tab title="Armor">
@@ -89,7 +89,7 @@
                    :fields="magicitemtables.fields"
                    :sort-by.sync="magicitemtables.sortBy"
                    :sort-desc.sync="magicitemtables.sortDesc">
-            <template slot="Item" slot-scope="row"><a href="#" @click.stop="magicItemInfo(row.item, row.index, $event.target)">{{ row.value }}</a></template>
+            <template v-slot:cell(Item)="row"><a href="#" @click.stop="magicItemInfo(row.item, row.index, $event.target)">{{ row.value }}</a></template>
           </b-table>
         </b-tab>
         <b-tab title="Other">
@@ -101,7 +101,7 @@
                    :fields="magicitemtables.fields"
                    :sort-by.sync="magicitemtables.sortBy"
                    :sort-desc.sync="magicitemtables.sortDesc">
-            <template slot="Item" slot-scope="row"><a href="#" @click.stop="magicItemInfo(row.item, row.index, $event.target)">{{ row.value }}</a></template>
+            <template v-slot:cell(Item)="row"><a href="#" @click.stop="magicItemInfo(row.item, row.index, $event.target)">{{ row.value }}</a></template>
           </b-table>
         </b-tab>
       </b-tabs>
