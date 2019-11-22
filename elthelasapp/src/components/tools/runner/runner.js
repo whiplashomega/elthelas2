@@ -82,7 +82,8 @@ export default {
       getAttackBonus: "getAttackBonus",
       getAttackDamageBonus: "getAttackDamageBonus",
       totalslots: "totalslots",
-      getInitMod: "getInitMod"
+      getInitMod: "getInitMod",
+      admin: "isAdmin"
     }),
     filteredcreatures () {
       let comp = this;
@@ -161,8 +162,15 @@ export default {
       getFromServer: "getFromServer",
       loadChar: "loadChar",
       getCreature: 'getCreature',
-      saveNewCreature: 'saveNewCreature'
+      saveNewCreature: 'saveNewCreature',
+      deleteCreature: "deleteCreature"
     }),
+    del (item) {
+      let conf = confirm ("are you sure you want to delete " + item.name + "? It cannot be recovered if you do.");
+      if(conf + this.admin) {
+        this.deleteCreature(item._id);
+      }
+    },
     xpByCR (cr) {
       return crxptable.find((a) => {
         return a.cr === cr;

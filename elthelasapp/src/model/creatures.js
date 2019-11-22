@@ -48,6 +48,16 @@ const actions = {
       });
     });
   },
+  deleteCreature ({ state }, id) {
+    return new Promise((resolve) => {
+      Vue.http.delete(ctest.baseUrl + 'creatures/' + id + "?token=" + getters.getUserInfo.token).then((response) => {
+        let i = state.all.findIndex((cre) => {
+          return cre._id === id;
+        });
+        state.all.splice(i, 1);
+      });
+    });
+  },
   saveNewCreature ({ state, getters }, creature) {
     return new Promise((resolve) => {
       Vue.http.post(ctest.baseUrl + 'creatures/?token=' + getters.getUserInfo.token, { creature: creature }).then((response) => {
