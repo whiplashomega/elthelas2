@@ -26,6 +26,7 @@ export default {
     },
     submitCreature () {
       this.saveNewCreature(this.creature);
+      this.$router.push('/runner');
     }
   }
 }
