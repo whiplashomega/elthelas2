@@ -119,8 +119,8 @@
     </div>
     <div class="row">
       <label class="col-sm-4">
-        Senses
-        <input type="text" class="form-control" v-model="creature.senses" />
+        Damage Resistances
+        <input type="text" class="form-control" v-model="creature.damageresistances" />
       </label>
       <label class="col-sm-4">
         Damage Immunities
@@ -137,8 +137,8 @@
         <input type="text" class="form-control" v-model="creature.languages" />
       </label>
       <label class="col-sm-4">
-        Damage Resistances
-        <input type="text" class="form-control" v-model="creature.damageresistances" />
+        Senses
+        <input type="text" class="form-control" v-model="creature.senses" />
       </label>
       <label class="col-sm-4">
         Locations
