@@ -86,6 +86,7 @@ const actions = {
     return new Promise((resolve) => {
       Vue.http.post(ctest.baseUrl + 'creatures/?token=' + getters.getUserInfo.token, { creature: creature }).then((response) => {
         creature._id = response.body._id;
+        state.all.push(response.body);
       });
     });
   }
