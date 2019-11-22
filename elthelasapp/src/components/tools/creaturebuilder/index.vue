@@ -74,16 +74,16 @@
     <div class="row">
       <label class="col-sm-6">
         Tags
-        <p v-for="(tag, $index) in creature.tags" :key="tag + $index" class="clearfix">
-          <input type="text" class="form-control col-sm-10" style="float:left;" v-model="tag" />
+        <p v-for="(tag, $index) in creature.tags" :key="tag.id" class="clearfix">
+          <input type="text" class="form-control col-sm-10" style="float:left;" v-model="tag.name" />
           <button class="btn btn-danger col-sm-1" style="float:left;" @click="removeTag($index)">X</button>
         </p>
         <button class="btn btn-success" @click="addTag()">Add Tag</button>
       </label>
       <label class="col-sm-6">
         Skills
-        <p v-for="(skill, $index) in creature.skills" :key="skill + $index" class="clearfix">
-          <input type="text" class="form-control col-sm-10" style="float:left;" v-model="skill" />
+        <p v-for="(skill, $index) in creature.skills" :key="skill.id" class="clearfix">
+          <input type="text" class="form-control col-sm-10" style="float:left;" v-model="skill.value" />
           <button class="btn btn-danger col-sm-1" style="float:left;" @click="removeSkill($index)">X</button>
         </p>
         <button class="btn btn-success" @click="addSkill()">Add Skill</button>

@@ -12,13 +12,14 @@ export default {
       resetCreature: "resetCreature"
     }),
     addTag () {
-      this.creature.tags.push("");
+      
+      this.creature.tags.push({ id: Math.random(), name: "" });
     },
     removeTag (i) {
       this.creature.tags.splice(i, 1);
     },
     addSkill () {
-      this.creature.skills.push("");
+      this.creature.skills.push({ id: Math.random(), value: "" });
     },
     removeSkill (i) {
       this.creature.skills.splice(i, 1);

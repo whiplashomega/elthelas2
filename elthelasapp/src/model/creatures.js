@@ -36,6 +36,20 @@ const actions = {
   resetCreature ({ state }) {
     state.builderCreature = Creature();
   },
+  getCreatureForEdit ({ getters }, id) {
+    return new Promise((resolve) => {
+      Vue.http.get(ctest.baseUrl + 'creatures/' + id + "?token=" + getters.getUserInfo.token).then((response) => {
+        resolve(response.body);
+      });
+    });
+  },
+  saveCreature ({ getters }, creature) {
+    return new Promise((resolve) => {
+      Vue.http.post(ctest.baseUrl + 'creatures/' + creature._id + '?token=' + getters.getUserInfo.token, { creature: creature }).then((response) => {
+        creature = response.body;
+      });
+    });
+  },
   getCreature ({ state, getters }, id) {
     return new Promise((resolve) => {
       Vue.http.get(ctest.baseUrl + 'creatures/' + id + "?token=" + getters.getUserInfo.token).then((response) => {
@@ -44,6 +58,16 @@ const actions = {
         });
         state.all[i] = response.body;
         calcStatMods(state.all[i]);
+        if (state.all[i].skills.length > 0 && typeof state.all[i].skills[0] === 'object') {
+          state.all[i].skills = state.all[i].skills.map((a) => {
+            return a.value;
+          });
+        }
+        if (state.all[i].tags.length > 0 && typeof state.all[i].tags[0] === 'object') {
+          state.all[i].tags = state.all[i].tags.map((a) => {
+            return a.name;
+          });
+        }
         resolve(state.all[i]);
       });
     });

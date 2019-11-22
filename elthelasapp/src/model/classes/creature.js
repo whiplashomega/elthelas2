@@ -1,7 +1,7 @@
 export default function () {
   return {
     name: "",
-    tags: [""],
+    tags: [],
     size: "",
     type: "",
     subtype: "",
@@ -18,7 +18,7 @@ export default function () {
     int: 8,
     wis: 8,
     cha: 8,
-    skills: [""],
+    skills: [],
     saves: "",
     senses: "",
     damageimmunities: "",
