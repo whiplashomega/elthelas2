@@ -78,13 +78,13 @@
           <input type="text" class="form-control col-sm-10" v-model="tag" />
           <button class="btn btn-danger" @click="removeTag($index)">X</button>
         </div>
-        <button class="btn btn-success" @click="addTag()">Add Tag</button>
+        <button class="btn btn-success col-sm-1" @click="addTag()">Add Tag</button>
       </label>
       <label class="col-sm-6">
         Skills
         <div v-for="(skill, $index) in creature.skills" :key="skill + $index">
           <input type="text" class="form-control col-sm-10" v-model="skill" />
-          <button class="btn btn-danger" @click="removeSkill($index)">X</button>
+          <button class="btn btn-danger col-sm-1" @click="removeSkill($index)">X</button>
         </div>
         <button class="btn btn-success" @click="addSkill()">Add Skill</button>
       </label>
