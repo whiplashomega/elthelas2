@@ -145,7 +145,7 @@
       <b-col md="4" class="my-1">
         <b-input-group>
           <b-form-input v-model="creaturestable.filterValue" placeholder="Type to Search" />
-          <b-btn :disabled="!creaturestable.filterValue" @click="filter = ''">Clear</b-btn>
+          <b-btn :disabled="!creaturestable.filterValue" @click="creaturestable.filterValue = ''">Clear</b-btn>
         </b-input-group>
       </b-col>
     </b-row>
@@ -158,7 +158,7 @@
              :fields="creaturestable.fields"
              :sort-by.sync="creaturestable.sortBy"
              :sort-desc.sync="creaturestable.sortDesc">
-      <template v-slot:cell(name)="row"><span><a href="#" @click.stop="addToEncounter(row.item, row.index, $event.target)">{{ row.value }}</a> <button class="btn btn-sm btn-danger" @click="del(row.item)" v-if="admin">X</button></span></template>
+      <template v-slot:cell(name)="row"><span><a href="#" @click.stop="addToEncounter(row.item, row.index, $event.target)">{{ row.value }}</a> <button class="btn btn-warning btn-sm" @click="edit(row.item)" v-if="admin">&#9998;</button><button class="btn btn-sm btn-danger" @click="del(row.item)" v-if="admin">X</button></span></template>
     </b-table>
     <div id="inithptracker" class="row">
       <div v-for="creature in encountercreaturesinit" :key="creature.id" class="form-inline form-row col-md-6" >

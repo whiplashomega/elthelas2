@@ -171,6 +171,12 @@ export default {
         this.deleteCreature(item._id);
       }
     },
+    edit (item) {
+      let conf = confirm ("are you sure you want to edit " + item.name + "?");
+      if (conf + this.admin) {
+        this.$router.push("/tools/creaturebuilder/" + item._id);
+      }
+    },
     xpByCR (cr) {
       return crxptable.find((a) => {
         return a.cr === cr;

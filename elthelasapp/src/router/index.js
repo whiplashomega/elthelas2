@@ -441,6 +441,16 @@ var router = new Router({
       components: {
         default: creaturebuilder
       }
+    },
+    {
+      name: "creatureeditor",
+      meta: {
+        title: "Edit Creature"
+      },
+      path: "/tools/creaturebuilder/:id",
+      components: {
+        default: creaturebuilder
+      }
     }
   ],
   mode: 'history'

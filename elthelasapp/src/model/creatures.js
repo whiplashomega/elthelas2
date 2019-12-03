@@ -36,9 +36,10 @@ const actions = {
   resetCreature ({ state }) {
     state.builderCreature = Creature();
   },
-  getCreatureForEdit ({ getters }, id) {
+  getCreatureForEdit ({ state, getters }, id) {
     return new Promise((resolve) => {
       Vue.http.get(ctest.baseUrl + 'creatures/' + id + "?token=" + getters.getUserInfo.token).then((response) => {
+        state.builderCreature = response.body;
         resolve(response.body);
       });
     });
@@ -47,6 +48,7 @@ const actions = {
     return new Promise((resolve) => {
       Vue.http.post(ctest.baseUrl + 'creatures/' + creature._id + '?token=' + getters.getUserInfo.token, { creature: creature }).then((response) => {
         creature = response.body;
+        resolve(response.body);
       });
     });
   },
