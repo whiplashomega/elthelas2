@@ -2,7 +2,8 @@ import { mapGetters, mapActions } from 'vuex';
 
 export default {
   computed: mapGetters({
-    creatures: "allCreatures"
+    creatures: "allCreatures",
+    admin: "isAdmin"
   }),
   data () {
     return {

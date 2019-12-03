@@ -29,7 +29,7 @@
              :filter="filter"
              :sort-by.sync="creaturestable.sortBy"
              :sort-desc.sync="creaturestable.sortDesc">
-            <template v-slot:cell(name)="row"><span><a href="#" @click.stop="info(row.item, row.index, $event.target)">{{ row.value }}</a> <button class="btn btn-warning btn-sm" @click="edit(row.item)">&#9998;</button><button class="btn btn-sm btn-danger" @click="del(row.item)" v-if="admin">X</button></span></template>
+            <template v-slot:cell(name)="row"><span><a href="#" @click.stop="info(row.item, row.index, $event.target)">{{ row.value }}</a> <button class="btn btn-warning btn-sm" @click="edit(row.item)" v-if="admin">&#9998;</button><button class="btn btn-sm btn-danger" @click="del(row.item)" v-if="admin">X</button></span></template>
     </b-table>
     <b-modal id="creaturemodal" size="lg"
              @hide="resetModal" :title="creaturestable.modalInfo.name"
