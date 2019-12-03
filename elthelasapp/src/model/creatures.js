@@ -72,7 +72,7 @@ const actions = {
       });
     });
   },
-  deleteCreature ({ state }, id) {
+  deleteCreature ({ state, getters }, id) {
     return new Promise((resolve) => {
       Vue.http.delete(ctest.baseUrl + 'creatures/' + id + "?token=" + getters.getUserInfo.token).then((response) => {
         let i = state.all.findIndex((cre) => {
