@@ -40,6 +40,11 @@ const actions = {
     return new Promise((resolve) => {
       Vue.http.get(ctest.baseUrl + 'creatures/' + id + "?token=" + getters.getUserInfo.token).then((response) => {
         state.builderCreature = response.body;
+        if (state.builderCreature.skills.length > 0 && typeof state.builderCreature.skills[0] === 'string') {
+          state.builderCreature.skills = state.builderCreature.skills.map((a) => {
+            return { id: Math.random(), value: a };
+          });
+        }
         resolve(response.body);
       });
     });

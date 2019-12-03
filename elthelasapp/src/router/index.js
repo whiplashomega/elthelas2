@@ -24,7 +24,8 @@ import runner from '../components/tools/runner';
 import privacy from '@/components/privacy';
 import strongholdbuilder from '@/components/tools/strongholdbuilder';
 import campaignbuilder from '@/components/tools/campaignbuilder';
-import creaturebuilder from '../components/tools/creaturebuilder';
+import creaturebuilder from '@/components/tools/creaturebuilder';
+import altasoror from '@/components/ref/altasoror';
 const domains = () => import(/* webpackChunkName: "domains" */ '../components/options/domains');
 const classes = () => import(/* webpackChunkName: "classes" */ '../components/options/class');
 const encounterbuilder = () => import(/* webpackChunkName: "encounters" */ '@/components/tools/encounterbuilder');
@@ -450,6 +451,16 @@ var router = new Router({
       path: "/tools/creaturebuilder/:id",
       components: {
         default: creaturebuilder
+      }
+    },
+    {
+      name: "altasoror",
+      meta: {
+        title: "Altasoror"
+      },
+      path: "/altasoror",
+      components: {
+        default: altasoror
       }
     }
   ],

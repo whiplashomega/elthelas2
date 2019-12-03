@@ -67,6 +67,7 @@
               <li class="dropdown-item"><router-link to="/ref/gods">Gods</router-link></li>
               <li class="dropdown-item"><router-link to="/ref/divines">Divine Beings</router-link></li>
               <li class="dropdown-item"><router-link to="/ref/orgs">Organizations</router-link></li>
+              <li class="dropdown-item"><router-link to="/altasoror">Altasoror</router-link></li>
             </ul>
           </div>
           <div class="dropdown">
