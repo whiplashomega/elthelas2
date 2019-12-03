@@ -45,6 +45,11 @@ const actions = {
             return { id: Math.random(), value: a };
           });
         }
+        if (state.builderCreature.tags.length > 0 && typeof state.builderCreature.tags[0] === 'string') {
+          state.builderCreature.tags = state.builderCreature.tags.map((a) => {
+            return { id: Math.random(), name: a };
+          });
+        }
         resolve(response.body);
       });
     });
