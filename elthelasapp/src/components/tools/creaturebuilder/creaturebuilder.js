@@ -10,6 +10,7 @@ export default {
     ...mapActions({
       saveNewCreature: "saveNewCreature",
       resetCreature: "resetCreature",
+      saveCreature: "saveCreature",
       getCreature: "getCreatureForEdit"
     }),
     addTag () {
