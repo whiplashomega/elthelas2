@@ -1,6 +1,9 @@
 <template>
   <div class="col-sm-12">
     <h1>The World of Altasoror</h1>
+    <p>
+      <a href="https://docs.google.com/document/d/1diJ_vKN03Esbddhd3ytSXHxNY-IBZqMhrv4-38MC-rU/edit">Beladonis Magical Wonders</a>
+    </p>
     <h4>Map of Altasoror</h4>
     <img src="https://elthelas-images.herokuapp.com/maps/altasoror-map.jpg" alt="map of altasoror" />
     <p>
