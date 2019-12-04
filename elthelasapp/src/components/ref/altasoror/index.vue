@@ -201,9 +201,15 @@
       </b-tab>
       <b-tab title="PCs">
         <h3>Ruthir</h3>
+        <p><strong>Race:</strong> Firbolg</p>
+        <p><strong>Class/Level:</strong> Moon Druid 5</p>
+        <p><router-link to="/tools/charbuilder/5dd18c710e4d1e0004bf3534">Character Sheet</router-link></p>
         <h3>Hanzo Rito</h3>
+        <p><strong>Race:</strong> Altasoror Human</p>
+        <p><strong>Class/Level:</strong> Eldritch Knight Fighter 5</p>
+        <p><router-link to="/tools/charbuilder/5d5c3e1bf1651e000430a212">Character Sheet</router-link></p>
         <h3>Agriel Osiris/Martinus Cato</h3>
-        <p><router-link to="http://elthelas.herokuapp.com/tools/charbuilder/5dbca6a3ae1e390004f9fa78">Character Sheet</router-link></p>
+        <p><router-link to="/tools/charbuilder/5dbca6a3ae1e390004f9fa78">Character Sheet</router-link></p>
         <p><strong>Race:</strong> Scourge Aasimar</p>
         <p><strong>Class/Level:</strong> Hexblade Warlock 5</p>
         <h4>Backstory</h4>
