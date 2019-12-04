@@ -17,6 +17,11 @@ export default {
       });
     }
   },
+  getOneFromServer: ({ state }, id) => {
+    Vue.http.get('/characters/' + id).then((response) => {
+      state.currentCharacter = { ...response.body };
+    });
+  },
   loadFromDrive: ({ state }, { comp, id }) => {
     comp.$root.$emit('bv::hide::modal', 'drivemodal');
     comp.$root.$emit('bv::show::modal', 'loading');

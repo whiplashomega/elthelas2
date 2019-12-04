@@ -62,10 +62,16 @@ export default {
   },
   methods: {
     ...mapActions({
-      rollStats: "rollStats"
+      rollStats: "rollStats",
+      getOneFromServer: "getOneFromServer"
     }),
     log(val) {
       console.log(val);
+    }
+  },
+  created () {
+    if(this.$route.params.id) {
+      this.getOneFromServer(this.$route.params.id);
     }
   }
 };

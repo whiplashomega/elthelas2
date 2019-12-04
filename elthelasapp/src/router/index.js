@@ -333,6 +333,16 @@ var router = new Router({
       }
     },
     {
+      name: "charactershare",
+      meta: {
+        title: "Character Builder"
+      },
+      path: '/tools/charbuilder/:id',
+      components: {
+        default: charbuilder
+      }
+    },
+    {
       name: "feats",
       meta: {
         title: "Feats"
