@@ -203,6 +203,7 @@
         <h3>Ruthir</h3>
         <h3>Hanzo Rito</h3>
         <h3>Agriel Osiris/Martinus Cato</h3>
+        <p><router-link to="http://elthelas.herokuapp.com/tools/charbuilder/5dbca6a3ae1e390004f9fa78">Character Sheet</router-link></p>
         <p><strong>Race:</strong> Scourge Aasimar</p>
         <p><strong>Class/Level:</strong> Hexblade Warlock 5</p>
         <h4>Backstory</h4>
