@@ -204,14 +204,38 @@
         <p><strong>Race:</strong> Firbolg</p>
         <p><strong>Class/Level:</strong> Moon Druid 5</p>
         <p><router-link to="/tools/charbuilder/5dd18c710e4d1e0004bf3534">Character Sheet</router-link></p>
+        <table class="table table-striped">
+          <thead>
+            <tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>10</td><td>10</td><td>14</td><td>12</td><td>18</td><td>12</td></tr>
+          </tbody>
+        </table>
         <h3>Hanzo Rito</h3>
         <p><strong>Race:</strong> Altasoror Human</p>
         <p><strong>Class/Level:</strong> Eldritch Knight Fighter 5</p>
         <p><router-link to="/tools/charbuilder/5d5c3e1bf1651e000430a212">Character Sheet</router-link></p>
+        <table class="table table-striped">
+          <thead>
+            <tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>18</td><td>8</td><td>16</td><td>13</td><td>10</td><td>10</td></tr>
+          </tbody>
+        </table>
         <h3>Agriel Osiris/Martinus Cato</h3>
-        <p><router-link to="/tools/charbuilder/5dbca6a3ae1e390004f9fa78">Character Sheet</router-link></p>
         <p><strong>Race:</strong> Scourge Aasimar</p>
         <p><strong>Class/Level:</strong> Hexblade Warlock 5</p>
+        <p><router-link to="/tools/charbuilder/5dbca6a3ae1e390004f9fa78">Character Sheet</router-link></p>
+        <table class="table table-striped">
+          <thead>
+            <tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>8</td><td>14</td><td>16</td><td>10</td><td>8</td><td>18</td></tr>
+          </tbody>
+        </table>
         <h4>Backstory</h4>
         <p>
           I was born Martinus Cato to factory workers in Desadorel. My parents died in a fire when the factory they worked in burned down. The owner had locked all the doors to keep people working. No one escaped. I was 8 years old at the time, my little sister was 5. 
@@ -262,7 +286,27 @@
           "I do not know. Go, it is your task." Some task, but at least it's something. Maybe I can find out where the hell I am from Bern.
         </p>
         <h3>Xane Ludor</h3>
+        <p><strong>Race:</strong> Altasoror Human</p>
+        <p><strong>Class/Level:</strong> Rogue 1 / Knowledge Cleric 4</p>
+        <table class="table table-striped">
+          <thead>
+            <tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>?</td><td>14</td><td>10</td><td>20</td><td>?</td><td>?</td></tr>
+          </tbody>
+        </table>
         <h3>Paradan</h3>
+        <p><strong>Race:</strong> (Wood?) Elf</p>
+        <p><strong>Class/Level:</strong> (Way of the Open Hand?) Monk 5</p>
+        <table class="table table-striped">
+          <thead>
+            <tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>?</td><td>20</td><td>?</td><td>?</td><td>?</td><td>?</td></tr>
+          </tbody>
+        </table>
       </b-tab>
       <b-tab title="Resources">
         <a href="https://docs.google.com/document/d/1diJ_vKN03Esbddhd3ytSXHxNY-IBZqMhrv4-38MC-rU/edit">Beladonis Magical Wonders</a>
