@@ -184,20 +184,314 @@
       </b-tab>
       <b-tab title="NPCs">
         <h2>Allies</h2>
-        <h4>Beladonis</h4>
-        <p>
-          <a href="https://docs.google.com/document/d/1diJ_vKN03Esbddhd3ytSXHxNY-IBZqMhrv4-38MC-rU/edit">Beladonis Magical Wonders</a>
-        </p>
-        <h4>Elise</h4>
-        <h4>Rutherford</h4>
-        <h4>Cecilia</h4>
-        <h4>Jimmy</h4>
-        <h4>Pickles</h4>
+        <div>
+          <h4>Rutherford Hayes</h4>
+          <p>
+            Sanctuary - has taken to working through the library in the Sanctuary to learn about smithing enchanted materials.
+          </p>
+          <p>
+            Altasoror - Year 1363 Day 122 - Best smith in Titan's heart. Interested in Rito smithing techniques and meteoric metal. Forged Hanzo's meteor armor and then chose to accompany Elise and the party on their quest between worlds.
+          </p>
+          <h4>Elise Corelin</h4>
+          <p>
+            Altasoror - Year 1372 Day 322 - Occompanied the party here, but had a terrible headache and mostly just stayed out of the way.
+          </p>
+          <p>
+            Sanctuary - her new home, doesn't like staying here too much, preferring to accompany the party.
+          </p>
+          <p>
+            Altasoror - Year 1363 Day 122 - Expert mountain guide. Guided the party through the Malthein mountains, helped track down Cecilia. Took the opportunity to explore other worlds in lieu of her share of the meteor.
+          </p>
+          <h4>Minister (Dove) Ana Dryscull</h4>
+          <p>
+            Altasoror - Year 1372 Day 322 - was working with the arsonist trying to bring Xane back, accidentally openned a portal dumping a horde of undead on the town and destroying city hall.</p>
+          <p>
+            Altasoror - Xane Backstory - Ludor's discerning and incredulous partner who accompanies him on every investigation. Her areas of focus are medicine and academic knowledge. She holds the rank of Dove within the church.
+          </p>
+          <h4>Beladonis</h4>
+          <p>
+            Elthelas - Year 1847 Sylvanus 2 - Elf wizard and enchanter that is curious about time travel and willing to exchange magical items for stories.
+          </p>
+          <p>
+            <a href="https://docs.google.com/document/d/1diJ_vKN03Esbddhd3ytSXHxNY-IBZqMhrv4-38MC-rU/edit">Beladonis Magical Wonders</a>
+          </p>
+          <h4>Jimmy Surefoot</h4>
+          <p>
+            Elthelas - Year 1847 Sylvanus 2 - Halfling kid that found the sword of the prophet when it fell from the sky, decided it was his. Now attempting to learn magic.
+          </p>
+          <h4>Cecilia Sorore</h4>
+          <p>
+            Altasoror - Year 1363 Day 122 - 8 year old silver haired girl. Was kidnapped by the Sesta and rescued by the party. ward of the Justicar, secret daughter of Morelle Enrico Gritti and Angela Sapier.
+          </p>
+          <h4>Morelle Skarn</h4>
+          <p>
+            Altasoror - Xane Backstory - Xane Ludor's direct supervisor in the Soric Church, who gives Ludor his assignments.
+          </p>
+          <h4>Lara Ludor</h4>
+          <p>
+            Altasoror - Xane Backstory - Xane's sister, who was abducted at a young age and never returned. Xane believes that she was taken by an extraplanar entity.
+          </p>
+          <h4>Myu Rito</h4>
+          <p>
+            Altasoror - Hanzo Backstory - Hanzo's cousin and friend
+          </p>
+          <h4>Sengoku</h4>
+          <p>
+            Altasoror - Hanzo Backstory - Master swordsman, Hanzo's sensei
+          </p>
+          <h4>Hanna</h4>
+          <p>
+            Altasoror - Hanzo Backstory - Blacksmith's assistant, Hanzo's youth crush
+          </p>
+          <h4>Arsinia Cato</h4>
+          <p>
+            Elthelas - Agriel Backstory - Martinus' (Agriel) sister. Born 1830, last seen in 1846.
+          </p>
+          <h4>Curia Luti</h4>
+          <p>
+            Elthelas - Agriel Backstory - Martinus' (Agriel) old partner in crime and romantic interest. Present at the time of his death.
+          </p>
+          <h4>Krozuth Alespine</h4>
+          <p>
+            Elthelas - Agriel Backstory - An old drunk dwarf who took in Martinus and Arsinia after the death of their parents
+          </p>
+          <h4>Rachele Cortesi</h4>
+          <p>
+            Elthelas - Agriel Backstory - Nera worshiper that found Agriel after his ressurection, helped him get oriented before his sudden second death.
+          </p>
+          <h4>Silveria</h4>
+          <p>
+            Elthelas - Ruthir Backstory - older elven innkeeper
+          </p>
+          <h4>Aethynn</h4>
+          <p>
+            Elthelas - Ruthir Backstory - elven child (orphaned)
+          </p>
+          <h4>Elthas</h4>
+          <p>
+            Elthelas - Ruthir Backstory - human enslaved by stone giants
+          </p>
+        </div>
+        <h2>Acquaintances</h2>
+        <div>
+          <h4>Mister E.</h4>
+          <p>
+            Altasoror - Year 1372 Day 322 - mysterious figure who gave Xane clues and helped fend off the undead.
+          </p>
+          <h4>Lugwig</h4>
+          <p>
+            Altasoror - Year 1372 Day 322 - Was guarding city hall, defeated Hanzo at arm wrestling, probably dead after explosion and undead attack.
+          </p>
+          <p>
+            Altasoror - Xane Backstory - Aricia's only town guard. Wasn't very competent.
+          </p>
+          <p>
+            Altasoror - Xane Backstory - Ludor's confidential fiend informant. He doesn't reveal his name, and keeps a very low profile.
+          </p>
+          <h4>Justicar Sasha Lao</h4>
+          <p>
+            Altasoror - Year 1372 Day 322 - known to have retired early after losing her touch. Wherabouts otherwise unknown.
+          </p>
+          <p>
+            Altasoror - Year 1363 Day 122 - Justicar of Titan's Heart. Mentor to Cecilia. Had the Amulet of Justice, eventually stolen by the party, commissioned party to rescue Cecilia.
+          </p>
+          <h4>Commander Codin</h4>
+          <p>
+            Altasoror - Year 1363 Day 122 - Commander of the military forces in Titan's Heart. Takes orders from the Justicar.
+          </p>
+          <h4>Mildred</h4>
+          <p>
+            Altasoror - Year 1363 Day 122 - Kindly woman that offered her home as a safe house for Elise, Rutherford, and the party.
+          </p>
+          <h4>Angela Sapier</h4>
+          <p>
+            Altasoror - Year 1363 Day 122 - Cecilia's mother. Prostitute at the Eye's Beauty, and constantly being watched.
+          </p>
+          <h4>Robin Pormalu</h4>
+          <p>
+            Altasoror - Year 1363 Day 122 - Dove of the Soric church, working in Malthein to attempt to open a communication with the Sesta.
+          </p>
+          <h4>Morelle Teresa Xita</h4>
+          <p>
+            Altasoror - Year 1363 Day 122 - Kindly Morelle that cared for her people more than most. Would die from a heart attack in a couple years.
+          </p>
+          <h4>Seth</h4>
+          <p>
+            Altasoror - Year 1363 Day 122 - A traveler that convinced the party to head to Winderwille instead of Titan's Heart
+          </p>
+          <h4>Old Milly</h4>
+          <p>
+            Elthelas - Year 1847 Sylvanus 2 - Tailor and known gossip. Made Agriel's new clothes.
+          </p>
+          <h4>The Assassin's Arrow</h4>
+          <p>
+            Altasoror - Xane Backstory - Their fearsome moniker is really a misnomer. This trio of scholars of the arcane arts are Ludor's go-to source for advice on all matters arcane.
+          </p>
+          <h4>Old Culley</h4>
+          <p>
+            Altasoror - Xane Backstory - A beggar corrupted by magic. Ludor put him behind bars years ago, but occasionally has to squeeze him for information.
+          </p>
+          <h4>Galan Yeslar</h4>
+          <p>
+            Elthelas - Agriel Backstory - Martinus Black Suns Boss
+          </p>
+          <h4>Yuen</h4>
+          <p>
+            Altasoror - Hanzo Backstory - Local guard of Rito
+          </p>
+          <h4>Kisha</h4>
+          <p>
+            Altasoror - Hanzo Backstory - Local guard of Rito
+          </p>
+          <h4>Mugen</h4>
+          <p>
+            Altasoror - Hanzo Backstory - Local guard of Rito
+          </p>
+          <h4>Amelia Veneziale</h4>
+          <p>
+            Elthelas - Agriel Backstory - Orphanage keeper in Desadorel
+          </p>
+          <h4>Sven</h4>
+          <p>
+            Elthelas - Ruthir Backstory - Half elf with an identity crisis
+          </p>
+          <h4>Ruthil</h4>
+          <p>
+            Elthelas - Ruthir Backstory - Elven alchemist that shares a root name and buys supplies from Ruthir
+          </p>
+          <h4>Tril</h4>
+          <p>
+            Elthelas - Ruthir Backstory - Elven Ranger
+          </p>
+          <h4>Farmer Krennor</h4>
+          <p>
+            Altasoror - Xane Backstory - Owner of a wheat farm, claimed he saw a being of pure fire.
+          </p>
+          <h4>Jeremiah Krennor</h4>
+          <p>
+            Altasoror - Xane Backstory - Farmer Krennors son
+          </p>
+          <h4>Farmer Diamens</h4>
+          <p>
+            Altasoror - Xane Backstory - Owner of a mixed crop field
+          </p>
+          <h4>Farmer lugor</h4>
+          <p>
+            Altasoror - Xane Backstory - Owner of a corn field
+          </p>
+        </div>
         <h2>Enemies</h2>
-        <h4>Sorom Enrico</h4>
-        <h4>Lord Rem</h4>
-        <h4>Paradox</h4>
-        <h2>Others</h2>
+        <div>
+          <h4>The Hookah Man</h4>
+          <p>
+            Altasoror - Year 1372 Day 322 - Agents of the Hookah Man appeared to interrogate Elise and warn off Xane from returning to Chechniar.
+          </p>
+          <p>
+            Altasoror - Xane Backstory - A high-ranking church official of undisclosed identify who seeks to prevent Ludor from uncovering too much information. Ludor knows little about him, or even his name, and so refers to him by his avid enthusiasm for hookah.
+          </p>
+          <h4>Mardu</h4>
+          <p>
+            Altasoror - Year 1372 Day 322 - Mardu took over the arsonist case after Xane died, falsely accusing Jeremiah for the crime.
+          </p>
+          <p>
+            Altasoror - Year 1363 Day 122 - Scourer of the Soric church, sent to investigate the party for Witchcraft.
+          </p>
+          <h4>Xarek</h4>
+          <p>
+            Altasoror - Year 1372 Day 322 - Mardu's partner, obsessed with beating things up, kind of a moron, thinks he is Xane's friend.
+          </p>
+          <p>
+            Altasoror - Xane Backstory - A Tenar/Tithetaker known for his cruelty, whom Ludor has an unfortunate habit of crossing paths with.
+          </p>
+          <h4>Melvin</h4>
+          <p>
+            Elthelas - Year -507 - A cambion that was looking for something in the blizzard. Now dead.
+          </p>
+          <h4>Gaarrr</h4>
+          <p>
+            Elthelas - Year -507 - A barbed devil that was supposed to protect Melvin, but enjoyed his fight with Hanzo too much to bother.
+          </p>
+          <h4>The Doom Whisperer</h4>
+          <p>
+            Elthelas - Year 1847 Sylvanus 2 - A massive demon summoned by an idiotic cultist.
+          </p>
+          <h4>Morelle/Sorom Enrico Gritti</h4>
+          <p>
+            Altasoror - Year 1363 Day 122 - secret father of Cecilia, asshole who keeps Cecilia's mother, a whore who he used for the purpose of fathering a child, tightly controlled.
+          </p>
+          <h4>David</h4>
+          <p>
+            Altasoror - Year 1363 Day 122 - Jackass mountain guide that hired thieves to steal the meteor, then tried to sue them to get it.
+          </p>
+          <h4>Sarce</h4>
+          <p>
+            Altasoror - Year 1363 Day 122 - Leader of the Winderville slave trade. Member of the Windsor tribe in Sesta. Imprisoned the party and Cecilia. Was eventually killed by the party.
+          </p>
+          <h4>Big Davey</h4>
+          <p>
+            Altasoror - Year 1363 Day 122 - Guy in charge of organization in Winderville. Eventually killed by the party.
+          </p>
+          <h4>Samwell</h4>
+          <p>
+            The bravest random thug in Winderwille. Didn't take shit from anyone. Also Exploded.
+          </p>
+          <h4>Douglinn</h4>
+          <p>
+            Altasoror - Year 1363 Day 122 - A Sesta blacksmith in Winderville. Eventually killed by the party.
+          </p>
+          <h4>Lord Rem</h4>
+          <p>
+            Altasoror - Year 1392 Day 1 - Savior that successfully destroyed all of reality.
+          </p>
+          <h4>Richy Rich</h4>
+          <p>
+            Altasoror - Year 1392 Day 1 - The richest man in Estapor, for a few minutes at least.
+          </p>
+          <h4>John Graves</h4>
+          <p>
+            Altasoror - Year 1392 Day 1 - Considered himself Lord Rem's second in command.
+          </p>
+          <h4>Hitiro Rito</h4>
+          <p>
+            Altasoror - Hanzo Backstory - Hanzo's adoptive father
+          </p>
+          <h4>Margery the Witch</h4>
+          <p>
+            Altasoror - Hanzo Backstory - A witch in Astapan that tried to kill Hanzo
+          </p>
+          <h4>The Onell Tribe</h4>
+          <p>
+            Altasoror - Hanzo Backstory - The tribe of Sesta that took credit for destroying Astipan
+          </p>
+          <h4>Tacitus Sylvus</h4>
+          <p>
+            Elthelas - Agriel Backstory - Baron that owned the factory that killed Martinus's (Agriel) parents
+          </p>
+          <h4>Malar Bloodtooth</h4>
+          <p>
+            Elthelas - Agriel Backstory - Black sun assassin known for his ruthlessness, ex-partner of Martinus's (Agriel).
+          </p>
+          <h4>Hadria Marsicus</h4>
+          <p>
+            Elthelas - Agriel Backstory - Orphanage owner in Desadorel
+          </p>
+          <h4>Valel</h4>
+          <p>
+            Elthelas - Ruthir Backstory - Elven youth that happens to pick on Ruthir whenever he sees him
+          </p>
+          <h4>Ligulg</h4>
+          <p>
+            Elthelas - Ruthir Backstory - stone giant jailer
+          </p>
+          <h4>Yor</h4>
+          <p>
+            Elthelas - Ruthir Backstory - stone giant chieftain
+          </p>
+          <h4>Paradox</h4>
+          <p>
+            Unknown - Paradan backstory - Alternate evil version of Paradan
+          </p>
+        </div>
       </b-tab>
       <b-tab title="PCs">
         <h3>Ruthir</h3>
