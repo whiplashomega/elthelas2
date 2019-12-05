@@ -603,7 +603,17 @@
         </table>
       </b-tab>
       <b-tab title="Resources">
-        <a href="https://docs.google.com/document/d/1diJ_vKN03Esbddhd3ytSXHxNY-IBZqMhrv4-38MC-rU/edit">Beladonis Magical Wonders</a>
+        <div>
+          <p>
+            <a href="https://docs.google.com/document/d/1diJ_vKN03Esbddhd3ytSXHxNY-IBZqMhrv4-38MC-rU/edit">Beladonis Magical Wonders</a>
+          </p>
+          <p>
+            <a href="https://docs.google.com/document/d/1nqhN_5Xmb0cZx5vcg7v6MZD_-GKN4hU0X0mOv3PlGKM/edit">Brent's Character's of Note Document</a>
+          </p>
+          <p>
+            <a href="https://docs.google.com/document/d/1oFwQdXE6eVB76OXl4eB_47NBqDYeT2eXv3U91SA7MQI/edit">Campaign Journal</a>
+          </p>
+        </div>
       </b-tab>
     </b-tabs>
   </div>
