@@ -120,7 +120,7 @@ export default {
     },
     invitePCToCampaign: ({ state, getters }, pcid) => {
       Vue.http.get('/characters/invite/' + pcid + '/' + state.current._id + '?token=' + getters.getUserInfo.token).then((res) => {
-        return;
+        return true;
       });
     }
   }

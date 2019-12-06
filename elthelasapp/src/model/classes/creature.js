@@ -28,5 +28,5 @@ export default function () {
     locations: "",
     latlong: [],
     description: ""
-  }
+  };
 }

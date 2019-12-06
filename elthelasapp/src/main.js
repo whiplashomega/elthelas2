@@ -11,7 +11,7 @@ import App from './components/App';
 import router from './router';
 import store from './model';
 import './registerServiceWorker';
-import VueSocketio from 'vue-socket.io';
+// import VueSocketio from 'vue-socket.io';
 
 var Sortable = typeof require === 'function'
   ? require('sortablejs')

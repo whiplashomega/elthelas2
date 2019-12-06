@@ -14,7 +14,7 @@
 </style>
 <script>
 
-import headercomponent from '@/components/global/header/headercomponent';
+import headercomponent from '@/components/global/header';
 import FooterComp from '@/components/global/footer';
 import { mapGetters, mapMutations } from 'vuex';
 
