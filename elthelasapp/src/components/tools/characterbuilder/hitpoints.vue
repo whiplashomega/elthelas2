@@ -15,6 +15,9 @@
         <div class="charsheet-static">
           Damage: <input type="number" class="charsheet-num"
                          v-model="damagetaken" :min="0" />
+          <div class="alert alert-warning" v-if="character.dr[dtype] !== '0'">
+            Affected by Resistance
+          </div>
           <select class="charsheet-text" v-model="dtype">
             <option value="piercing">Piercing (Non-Magical)</option>
             <option value="slashing">Slashing (Non-Magical)</option>
