@@ -24,7 +24,7 @@ export default {
         }
       } else {
         if (this.character.dr[this.dtype] === "3") {
-          adjusteddamage -= 3;
+          adjusteddamage = Math.max(adjusteddamage - 3, 0);
         } else if (this.character.dr[this.dtype] === "resistance") {
           adjusteddamage = Math.max(Math.floor(adjusteddamage / 2), 1);
         } else if (this.character.dr[this.dtype] === "immunity") {
