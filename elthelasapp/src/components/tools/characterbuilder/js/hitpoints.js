@@ -26,7 +26,7 @@ export default {
         if (this.character.dr[this.dtype] === "3") {
           adjusteddamage -= 3;
         } else if (this.character.dr[this.dtype] === "resistance") {
-          adjusteddamage /= 2;
+          adjusteddamage = Math.max(Math.floor(adjusteddamage / 2), 1);
         } else if (this.character.dr[this.dtype] === "immunity") {
           adjusteddamage = 0;
         } else if (this.character.dr[this.dtype] === "vulnerable") {

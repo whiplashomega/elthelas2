@@ -74,7 +74,9 @@ var Character = new Schema({
   availableslots: { cantrip: Number, level1: Number, level2: Number, level3: Number, level4: Number, level5: Number, level6: Number, level7: Number, level8: Number, level9: Number },
   autosave: { type: Boolean, default: false },
   owner: String,
-  campaigns: []
+  campaigns: [],
+  dr: {},
+  temphp: 0
 });
 
 module.exports = mongoose.model('Character', Character);
