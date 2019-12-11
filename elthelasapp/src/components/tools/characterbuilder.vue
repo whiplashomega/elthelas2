@@ -9,20 +9,14 @@
               <!-- Ability Scores -->
               <div class="col-7" v-if="!hideleft">
                 <abilityscores />
+                <skills />
               </div>
               <div :class="hideleft ? 'col-12' : 'col-5'">
                 <!-- Initiative -->
                 <initiative />
                 <!-- HP -->
                 <hitpoints />
-              </div>
-            </div>
-            <div class="row">
-              <!-- skills -->
-              <div class="col-7" v-if="!hideleft">
-                <skills />
-              </div>
-              <div :class="hideleft ? 'col-12' : 'col-5'">
+                <!-- Combat -->
                 <combat />
                 <!-- Equipment -->
                 <equipment />
@@ -45,6 +39,9 @@
             </div>
           </div>
         </div>
+        <div class="print-hide">
+          <loadsave />
+        </div>
         <div style="page-break-after: always">&nbsp;</div>
         <!-- Spells -->
         <div class="row">
@@ -64,7 +61,6 @@
         <fluff />
       </div>
       <div class="col-4 print-hide" v-if="!buildHide">
-        <loadsave />
         <h2>Build</h2>
         <buildclass />
         <div class="row">

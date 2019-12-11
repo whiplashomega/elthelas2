@@ -119,6 +119,201 @@
         <td><input type="number" class="charsheet-num" v-model="character.attBonus[5]" /></td>
       </tr>
     </table>
+    <h5>Damage Reduction</h5>
+    <table class="table table-sm">
+      <tr>
+        <th>Piercing (Non-Magical)</th>
+        <td>
+          <select v-model="character.dr.piercing">
+            <option value="0">0</option>
+            <option value="3">3</option>
+            <option value="resistance">Resistance</option>
+            <option value="immunity">Immunity</option>
+            <option value="vulnerable">Vulnerable</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>Slashing (Non-Magical)</th>
+        <td>
+          <select v-model="character.dr.slashing">
+            <option value="0">0</option>
+            <option value="3">3</option>
+            <option value="resistance">Resistance</option>
+            <option value="immunity">Immunity</option>
+            <option value="vulnerable">Vulnerable</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>Bludgeoning (Non-Magical)</th>
+        <td>
+          <select v-model="character.dr.bludgeoning">
+            <option value="0">0</option>
+            <option value="3">3</option>
+            <option value="resistance">Resistance</option>
+            <option value="immunity">Immunity</option>
+            <option value="vulnerable">Vulnerable</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>Piercing (Magical)</th>
+        <td>
+          <select v-model="character.dr.mpiercing">
+            <option value="0">0</option>
+            <option value="3">3</option>
+            <option value="resistance">Resistance</option>
+            <option value="immunity">Immunity</option>
+            <option value="vulnerable">Vulnerable</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>Slashing (Magical)</th>
+        <td>
+          <select v-model="character.dr.mslashing">
+            <option value="0">0</option>
+            <option value="3">3</option>
+            <option value="resistance">Resistance</option>
+            <option value="immunity">Immunity</option>
+            <option value="vulnerable">Vulnerable</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>Bludgeoning (Magical)</th>
+        <td>
+          <select v-model="character.dr.mbludgeoning">
+            <option value="0">0</option>
+            <option value="3">3</option>
+            <option value="resistance">Resistance</option>
+            <option value="immunity">Immunity</option>
+            <option value="vulnerable">Vulnerable</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>Acid</th>
+        <td>
+          <select v-model="character.dr.acid">
+            <option value="0">0</option>
+            <option value="3">3</option>
+            <option value="resistance">Resistance</option>
+            <option value="immunity">Immunity</option>
+            <option value="vulnerable">Vulnerable</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>Cold</th>
+        <td>
+          <select v-model="character.dr.cold">
+            <option value="0">0</option>
+            <option value="3">3</option>
+            <option value="resistance">Resistance</option>
+            <option value="immunity">Immunity</option>
+            <option value="vulnerable">Vulnerable</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>Fire</th>
+        <td>
+          <select v-model="character.dr.fire">
+            <option value="0">0</option>
+            <option value="3">3</option>
+            <option value="resistance">Resistance</option>
+            <option value="immunity">Immunity</option>
+            <option value="vulnerable">Vulnerable</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>Force</th>
+        <td>
+          <select v-model="character.dr.force">
+            <option value="0">0</option>
+            <option value="3">3</option>
+            <option value="resistance">Resistance</option>
+            <option value="immunity">Immunity</option>
+            <option value="vulnerable">Vulnerable</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>Lightning</th>
+        <td>
+          <select v-model="character.dr.lightning">
+            <option value="0">0</option>
+            <option value="3">3</option>
+            <option value="resistance">Resistance</option>
+            <option value="immunity">Immunity</option>
+            <option value="vulnerable">Vulnerable</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>Necrotic</th>
+        <td>
+          <select v-model="character.dr.necrotic">
+            <option value="0">0</option>
+            <option value="3">3</option>
+            <option value="resistance">Resistance</option>
+            <option value="immunity">Immunity</option>
+            <option value="vulnerable">Vulnerable</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>Poison</th>
+        <td>
+          <select v-model="character.dr.poison">
+            <option value="0">0</option>
+            <option value="3">3</option>
+            <option value="resistance">Resistance</option>
+            <option value="immunity">Immunity</option>
+            <option value="vulnerable">Vulnerable</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>Psychic</th>
+        <td>
+          <select v-model="character.dr.psychic">
+            <option value="0">0</option>
+            <option value="3">3</option>
+            <option value="resistance">Resistance</option>
+            <option value="immunity">Immunity</option>
+            <option value="vulnerable">Vulnerable</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>Radiant</th>
+        <td>
+          <select v-model="character.dr.radiant">
+            <option value="0">0</option>
+            <option value="3">3</option>
+            <option value="resistance">Resistance</option>
+            <option value="immunity">Immunity</option>
+            <option value="vulnerable">Vulnerable</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>Thunder</th>
+        <td>
+          <select v-model="character.dr.thunder">
+            <option value="0">0</option>
+            <option value="3">3</option>
+            <option value="resistance">Resistant</option>
+            <option value="immunity">Immune</option>
+            <option value="vulnerable">Vulnerable</option>
+          </select>
+        </td>
+      </tr>
+    </table>
   </div>
 </template>
 <script src="./js/bonus.js"></script>

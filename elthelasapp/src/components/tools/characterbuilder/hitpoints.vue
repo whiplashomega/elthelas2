@@ -3,8 +3,40 @@
     <div class="row">
       <div class="col">
         <div class="charsheet-static">
-          HP: <input type="number" class="charsheet-num" v-model="character.hpcurrent" /> / {{ getHPTotal }} Max <br />
-          Temporary: <input type="number" class="charsheet-num" />
+          HP: <input type="number" class="charsheet-num"
+                     v-model="character.hpcurrent" disabled /> / {{ getHPTotal }} Max <br />
+          Temporary: <input type="number" class="charsheet-num"
+                            v-model="character.temphp" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="charsheet-static">
+          Damage: <input type="number" class="charsheet-num"
+                         v-model="damagetaken" :min="0" />
+          <select class="charsheet-text" v-model="dtype">
+            <option value="piercing">Piercing (Non-Magical)</option>
+            <option value="slashing">Slashing (Non-Magical)</option>
+            <option value="bludgeoning">Bludgeoning (Non-Magical)</option>
+            <option value="mpiercing">Piercing (Magical)</option>
+            <option value="mslashing">Slashing (Magical)</option>
+            <option value="mbludgeoning">Bludgeoning (Magical)</option>
+            <option value="acid">Acid</option>
+            <option value="cold">Cold</option>
+            <option value="fire">Fire</option>
+            <option value="force">Force</option>
+            <option value="lightning">Lightning</option>
+            <option value="necrotic">Necrotic</option>
+            <option value="poison">Poison</option>
+            <option value="psychic">Psychic</option>
+            <option value="radiant">Radiant</option>
+            <option value="thunder">Thunder</option>
+            <option value="ignore">Ignores Resistance</option>
+            <option value="healing">Healing</option>
+          </select>
+          <input type="button" class="btn btn-sm btn-danger"
+                 value="Take Damage" @click="applyDamage()" />
         </div>
       </div>
     </div>
