@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <div class="row" v-if="!mobile">
-      <div class="print-hide">
-        <loadsave />
+      <div class="print-hide col-sm-12">
+        <loadsave minimal />
       </div>
       <div class="print-full" :class="buildHide ? 'col-12' : 'col-8'">
         <characterheader />
@@ -43,7 +43,7 @@
           </div>
         </div>
         <div class="print-hide">
-          <loadsave />
+          <loadsave :minimal="false" />
         </div>
         <div style="page-break-after: always">&nbsp;</div>
         <!-- Spells -->
@@ -173,7 +173,7 @@
           <fluff />
         </b-tab>
         <b-tab title="Build">
-          <loadsave />
+          <loadsave :minimal="false" />
           <bonus />
         </b-tab>
         <b-tab title="Campaign">

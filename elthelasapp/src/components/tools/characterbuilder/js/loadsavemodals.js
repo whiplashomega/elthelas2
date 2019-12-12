@@ -33,17 +33,8 @@ export default {
   methods: {
     ...mapActions({
       loadChar: "loadChar",
-      getDriveFiles: "getDriveFiles",
       loadFromDrive: "loadFromDrive",
-      saveToDrive: "saveToDrive",
-      getFromServer: "getFromServer",
-      updateToServer: "updateToServer",
-      updateToServerSilent: "updateToServerSilent",
-      newToServer: "newToServer",
-      deleteFromServer: "deleteFromServer",
-      saveCharacter: "saveCharacter",
-      loadCharacter: "loadCharacter",
-      resetCharacter: "resetCharacter"
+      deleteFromServer: "deleteFromServer"
     })
   }
 };
