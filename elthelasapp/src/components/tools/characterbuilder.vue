@@ -178,6 +178,7 @@
         </b-tab>
       </b-tabs>
     </div>
+    <loadsavemodals />
   </div>
 </template>
 <style src="./scss/characterbuilder.scss" scoped lang="scss"></style>

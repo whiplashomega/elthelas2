@@ -10,7 +10,8 @@ export default {
   data: function () {
     return {
       damagetaken: 0,
-      dtype: "piercing"
+      dtype: "piercing",
+      dlog: []
     };
   },
   methods: {

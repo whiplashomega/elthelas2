@@ -17,11 +17,13 @@ import resources from '@/components/tools/characterbuilder/resources';
 import fluff from '@/components/tools/characterbuilder/fluff';
 import createcreature from '@/components/tools/characterbuilder/createcreature';
 import campaigninfo from '@/components/tools/characterbuilder/campaigninfo';
+import loadsavemodals from '@/components/tools/characterbuilder/loadsavemodals';
 // import test from '@/tests/unit/charbuilder.test.js';
 
 export default {
   components: {
     characterheader,
+    loadsavemodals,
     abilityscores,
     initiative,
     appearance,

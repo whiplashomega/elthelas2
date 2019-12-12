@@ -38,8 +38,10 @@
             <option value="ignore">Ignores Resistance</option>
             <option value="healing">Healing</option>
           </select>
-          <input type="button" class="btn btn-sm btn-danger"
-                 value="Take Damage" @click="applyDamage()" />
+          <div class="btn-group">
+            <input type="button" class="btn btn-sm btn-danger"
+                   value="Take Damage" @click="applyDamage()" />
+          </div>
         </div>
       </div>
     </div>
