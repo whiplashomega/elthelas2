@@ -1,6 +1,9 @@
 <template>
   <div class="container">
     <div class="row" v-if="!mobile">
+      <div class="print-hide">
+        <loadsave />
+      </div>
       <div class="print-full" :class="buildHide ? 'col-12' : 'col-8'">
         <characterheader />
         <div class="row">
