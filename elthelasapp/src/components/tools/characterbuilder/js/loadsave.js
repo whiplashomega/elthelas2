@@ -27,9 +27,7 @@ export default {
   },
   data () {
     return {
-      comp: this,
-      filelist: [],
-      characters: []
+      comp: this
     };
   },
   watch: {

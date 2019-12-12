@@ -29,7 +29,9 @@ export default {
       [4, 3, 3, 3, 3, 2, 1, 1, 1], // caster level 19
       [4, 3, 3, 3, 3, 2, 2, 1, 1] // caster level 20
     ],
-    statRolls: []
+    statRolls: [],
+    characters: [],
+    drivefiles: []
   },
   getters: getters,
   actions: actions

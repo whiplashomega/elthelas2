@@ -2,11 +2,11 @@ import Character from '@/model/classes/character';
 import Vue from 'vue';
 
 export default {
-  getFromServer: ({ commit }, comp) => {
+  getFromServer: ({ commit, state }, comp) => {
     if (comp.loggedin) {
       comp.$root.$emit('bv::show::modal', 'loading');
       comp.$http.get('/characters?token=' + comp.token.token).then(function(res) {
-        comp.characters = res.body;
+        state.characters = res.body;
         comp.$root.$emit('bv::hide::modal', 'loading');
         comp.$root.$emit('bv::show::modal', 'servermodal');
         return true;
@@ -30,12 +30,12 @@ export default {
       comp.$root.$emit('bv::hide::modal', 'loading');
     });
   },
-  getDriveFiles: () => {
-    this.$root.$emit('bv::show::modal', 'loading');
-    Vue.http.get('https://www.googleapis.com/drive/v3/files', { params: { access_token: this.googletoken, q: "mimeType contains 'json'", fields: 'files(id, name, size, modifiedTime)' } }).then((response) => {
-      this.filelist = response.body.files;
-      this.$root.$emit('bv::hide::modal', 'loading');
-      this.$root.$emit('bv::show::modal', 'drivemodal');
+  getDriveFiles: ({ state }, { comp }) => {
+    comp.$root.$emit('bv::show::modal', 'loading');
+    Vue.http.get('https://www.googleapis.com/drive/v3/files', { params: { access_token: comp.googletoken, q: "mimeType contains 'json'", fields: 'files(id, name, size, modifiedTime)' } }).then((response) => {
+      state.drivefiles = response.body.files;
+      comp.$root.$emit('bv::hide::modal', 'loading');
+      comp.$root.$emit('bv::show::modal', 'drivemodal');
     });
   },
   saveToDrive: () => {

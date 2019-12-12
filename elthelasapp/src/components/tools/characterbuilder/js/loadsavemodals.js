@@ -5,7 +5,9 @@ export default {
     ...mapGetters({
       token: 'getUserInfo',
       character: "getCharacter",
-      charlevel: "charlevel"
+      charlevel: "charlevel",
+      characters: "serverCharacters",
+      filelist: "driveCharacters"
     }),
     charsorted () {
       return this.characters.sort((a, b) => {
@@ -25,20 +27,8 @@ export default {
   },
   data () {
     return {
-      comp: this,
-      filelist: [],
-      characters: []
+      comp: this
     };
-  },
-  watch: {
-    character: {
-      handler () {
-        if (this.character.autosave && this.loggedin) {
-          this.updateToServerSilent(this);
-        }
-      },
-      deep: true
-    }
   },
   methods: {
     ...mapActions({

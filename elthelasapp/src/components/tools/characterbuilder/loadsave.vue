@@ -45,7 +45,7 @@
           <div class="col" style="margin-top:15px;">
             <img src="https://developers.google.com/drive/images/drive_icon.png" alt="Google Drive" style="width:38px;height:38px;">
             <div class="btn-group">
-              <button type="button" @click="getDriveFiles()" class="btn btn-primary">Load</button>
+              <button type="button" @click="getDriveFiles({ comp: comp })" class="btn btn-primary">Load</button>
               <button type="button" @click="saveToDrive()" class="btn btn-success">Save</button>
             </div>
           </div>

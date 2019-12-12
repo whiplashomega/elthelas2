@@ -6,6 +6,8 @@ function dec(num) {
 
 export default {
   getStatRolls: (state) => state.statRolls,
+  serverCharacters: (state) => state.characters,
+  driveCharacters: (state) => state.drivefiles,
   getSlots: (state) => state.slots,
   incrementClassCount: () => (spell, classCounts) => {
     classCounts.forEach((cc) => {
