@@ -1,9 +1,14 @@
 import { mapActions, mapGetters } from 'vuex';
+import droll from 'droll';
+import charCalculators from '@/helpers/charcalc';
 
 export default {
   components: {},
   computed: {
-    ...mapGetters({})
+    ...mapGetters({
+      campaign: "getCurrentCampaign",
+      pcs: 'getCampaignCharacters'
+    })
   },
   data: function () {
     return {
@@ -12,11 +17,29 @@ export default {
   },
   methods: {
     ...mapActions({
-      invitePC: "invitePCToCampaign"
+      invitePC: "invitePCToCampaign",
+      fetchCampaignCharacter: "fetchCampaignCharacter"
     }),
-    emit: function () {
-      console.log(this);
-      this.$socket.emit("invitationSent", this.pcid);
+    addToCampaign() {
+      this.campaign.playercharacters.push(this.pcid);
+      this.fetchCampaignCharacter(this.pcid);
+      this.pcid = "";
+    },
+    ...charCalculators,
+    rollCheck (modifier) {
+      let res = droll.roll('1d20').total;
+      let adv = droll.roll('1d20').total;
+      alert("Base Roll: " + (res + modifier) + " (" + res + " + " + modifier + ")\nAdv/Dis Roll: " + (adv + modifier) + " (" + adv + " + " + modifier + ")");
+    },
+    removeFromCampaign(character) {
+      let i = this.campaign.playercharacters.findIndex((a) => {
+        return a === character._id;
+      });
+      this.campaign.playercharacters.splice(i, 1);
+      let j = this.pcs.findIndex((b) => {
+        return b._id === character._id;
+      });
+      this.pcs.splice(j, 1);
     }
   }
 };

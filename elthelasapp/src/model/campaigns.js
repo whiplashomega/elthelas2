@@ -6,12 +6,14 @@ export default {
   state: {
     all: [],
     current: newCampaign(),
-    currentChapter: false
+    currentChapter: false,
+    campaignCharacters: []
   },
   getters: {
     getCampaigns: (state) => state.all,
     getCurrentCampaign: (state) => state.current,
-    getCurrentChapter: (state) => state.currentChapter
+    getCurrentChapter: (state) => state.currentChapter,
+    getCampaignCharacters: (state) => state.campaignCharacters
   },
   actions: {
     addChapter: ({ state }) => {
@@ -52,10 +54,18 @@ export default {
         state.all.push(res.body);
       });
     },
-    loadCampaign: ({ state }, { campaign, comp }) => {
+    fetchCampaignCharacter: ({ state }, id) => {
+      Vue.http.get('/characters/' + id).then((response) => {
+        state.campaignCharacters.push({ ...response.body });
+      });
+    },
+    loadCampaign: ({ state, dispatch }, { campaign, comp }) => {
       state.current = { ...campaign };
       state.currentChapter = state.current.chapters[0];
       comp.$root.$emit('bv::hide::modal', 'campaignmodal');
+      state.current.playercharacters.forEach((pcid) => {
+        dispatch('fetchCampaignCharacter', pcid);
+      });
     },
     loadCampaignById: ({ state }, { id }) => {
       state.current = { ...state.all.filter((a) => {
@@ -63,10 +73,13 @@ export default {
       })[0] };
       state.currentChapter = state.current.chapters[0];
     },
-    loadCampaignByUrl: ({ state }, { url }) => {
+    loadCampaignByUrl: ({ state, dispatch }, { url }) => {
       state.current = { ...state.all.filter((a) => {
         return a.url === url;
       })[0] };
+      state.current.playercharacters.forEach((pcid) => {
+        dispatch('fetchCampaignCharacter', pcid);
+      });
       state.currentChapter = state.current.chapters[0];
     },
     saveCampaign: ({ state, getters }) => {
