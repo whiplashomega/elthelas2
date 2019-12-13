@@ -3,10 +3,10 @@
     <div class="row">
       <div class="col-sm">
         <div class="row" style="margin-bottom: 5px;">
-          <div :class="minimal ? 'col-sm-6' : 'col'" >
+          <div class="col-sm-6" >
             <input type="file" id="fileload" />
           </div>
-          <div :class="minimal ? 'col-sm-6' : 'col'" >
+          <div class="col-sm-6" >
             <div class="btn-group">
               <input type="button" disabled
                      value="File" class="btn"
