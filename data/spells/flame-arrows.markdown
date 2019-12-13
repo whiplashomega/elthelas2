@@ -3,7 +3,7 @@ layout: post
 title:  "Flame Arrows"
 date:   2015-11-19
 source: EE.18
-tags: [druid, ranger, sorcerer, wizard, eldritchknight, level3, transmutation]
+tags: [druid, ranger, sorcerer, wizard, eldritchknight, artificer, level3, transmutation]
 ---
 
 **3rd-level transmutation**

@@ -3,7 +3,7 @@ layout: post
 title:  "Identify"
 date:   2014-08-24
 source: PHB.252
-tags: [archivist, bard, wizard, level1, divination, ritual]
+tags: [archivist, bard, wizard, artificer, level1, divination, ritual]
 ---
 
 **1st-level divination (ritual)**

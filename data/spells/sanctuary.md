@@ -3,7 +3,7 @@ layout: post
 title:  "Sanctuary"
 date:   2014-08-24
 source: PHB.272
-tags: [archivist, cleric, level1, abjuration]
+tags: [archivist, cleric, artificer, level1, abjuration]
 ---
 
 **1st-level abjuration**

@@ -12,6 +12,20 @@ export default {
       }
     }
   },
+  artificerResources (vue, character, a) {
+    this.addAbility(character, "Flash of Genius", vue.getStatMod(3), "longrest", 7, a);
+    this.addAbility(character, "Spell-Storing Item", 2 * vue.getStatMod(3), "longrest", 11, a);
+    if (a.selsubclass.name === "Alchemist") {
+      this.addAbility(character, "Experimental Elixer", 1, "longrest", 3, a);
+    }
+    if (a.selsubclass.name === "Artillerist") {
+      this.addAbility(character, "Eldritch Cannon", 1, "longrest", 3, a);
+      this.addAbility(character, "Arcane Firearm", 1, "longrest", 5, a);
+    }
+    if (a.selsubclass.name === "Battle Smith") {
+      this.addAbility(character, "Arcane Jolt", vue.getStatMod(3), "longrest", 9, a);
+    }
+  },
   barbResources (character, a) {
     var rage = this.calcRage(a);
     this.addAbility(character, rage.name, rage.max, rage.recharge, 1, a);

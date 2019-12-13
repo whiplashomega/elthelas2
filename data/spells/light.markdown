@@ -3,7 +3,7 @@ layout: post
 title:  "Light"
 date:   2014-08-24
 source: PHB.255
-tags: [bard, cleric, sorcerer, wizard, archivist, eldritchknight, cantrip, evocation]
+tags: [bard, cleric, sorcerer, wizard, archivist, eldritchknight, artificer, cantrip, evocation]
 ---
 
 **Evocation cantrip**

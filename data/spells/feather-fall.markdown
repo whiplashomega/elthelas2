@@ -3,7 +3,7 @@ layout: post
 title:  "Feather Fall"
 date:   2014-08-24
 source: PHB.239
-tags: [bard, sorcerer, wizard, eldritchknight, level1, transmutation]
+tags: [bard, sorcerer, wizard, eldritchknight, artificer, level1, transmutation]
 ---
 
 **1st-level transmutation**

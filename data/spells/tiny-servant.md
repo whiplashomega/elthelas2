@@ -3,7 +3,7 @@ layout: post
 title: "Tiny Servant"
 date: 2015-07-14
 source: PHB.242
-tags: [wizard, level3, transmutation]
+tags: [wizard, artificer, level3, transmutation]
 ---
 
 **3rd-level transmutation**

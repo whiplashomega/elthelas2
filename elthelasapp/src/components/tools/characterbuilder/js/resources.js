@@ -31,6 +31,9 @@ export default {
     },
     populateResources() {
       this.character.charclasses.forEach((a) => {
+        if (a.thisclass.name === "Artificer") {
+          helpers.artificerResources(this, this.character, a);
+        }
         if (a.thisclass.name === "Barbarian") {
           helpers.barbResources(this.character, a);
         }

@@ -3,7 +3,7 @@ layout: post
 title:  "Blink"
 date:   2015-01-01
 source: PHB.219
-tags: [archivist, sorcerer, wizard, level3, transmutation]
+tags: [archivist, sorcerer, wizard, artificer, level3, transmutation]
 ---
 
 **3rd-level transmutation**

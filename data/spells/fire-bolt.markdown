@@ -3,7 +3,7 @@ layout: post
 title:  "Fire Bolt"
 date:   2015-01-07
 source: PHB.241
-tags: [sorcerer, wizard, eldritchknight, cantrip, evocation]
+tags: [sorcerer, wizard, eldritchknight, artificer, cantrip, evocation]
 ---
 
 **Evocation cantrip**

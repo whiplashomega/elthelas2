@@ -3,7 +3,7 @@ layout: post
 title:  "Guidance"
 date:   2014-08-24
 source: PHB.248
-tags: [archivist, cleric, druid, cantrip, divination]
+tags: [archivist, cleric, druid, artificer, cantrip, divination]
 ---
 
 **Divination cantrip**

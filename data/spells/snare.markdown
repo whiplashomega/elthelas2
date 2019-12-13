@@ -3,7 +3,7 @@ layout: post
 title:  "Snare"
 date:   2015-01-02
 source: XGE.165
-tags: [druid, ranger, wizard, level3, transmutation]
+tags: [druid, ranger, wizard, artificer, level3, transmutation]
 ---
 
 **1st-level abjuration**
