@@ -25,6 +25,13 @@ export default {
       this.fetchCampaignCharacter(this.pcid);
       this.pcid = "";
     },
+    reloadCharacter (pc) {
+      let i = this.pcs.findIndex((a) => {
+        return a._id === pc._id;
+      });
+      this.pcs.splice(i, 1);
+      this.fetchCampaignCharacter(pc._id);
+    },
     ...charCalculators,
     rollCheck (modifier) {
       let res = droll.roll('1d20').total;

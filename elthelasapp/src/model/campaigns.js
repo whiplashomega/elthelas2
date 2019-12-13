@@ -63,6 +63,7 @@ export default {
       state.current = { ...campaign };
       state.currentChapter = state.current.chapters[0];
       comp.$root.$emit('bv::hide::modal', 'campaignmodal');
+      state.campaignCharacters = [];
       state.current.playercharacters.forEach((pcid) => {
         dispatch('fetchCampaignCharacter', pcid);
       });

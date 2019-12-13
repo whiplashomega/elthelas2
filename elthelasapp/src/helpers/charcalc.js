@@ -229,10 +229,10 @@ export default {
     return 8 + this.profbonus(character) + this.statMod(character, i) + Number(character.saveDCBonus[i]);
   },
   saveMod: function(character, i) {
-    return this.statMod(character, i) + Number(this.currentCharacter.savebonus[i]) + character.saves[i] * this.profbonus(character);
+    return this.statMod(character, i) + Number(character.savebonus[i]) + character.saves[i] * this.profbonus(character);
   },
   skillMod: function(character, skill) {
-    return this.getStatMod(character, skill.stat) + Math.floor(Number(skill.prof) * this.profbonus(character)) + Number(skill.magic);
+    return this.statMod(character, skill.stat) + Math.floor(Number(skill.prof) * this.profbonus(character)) + Number(skill.magic);
   },
   speedStat: function(character, i) {
     return Number(character.race.speed[i]) + Number(character.speedmagic[i]);
