@@ -34,7 +34,7 @@ export default {
     });
     let ac = character.armors.reduce((b, a) => {
       if (a.equipped && a.type !== "Shield") {
-        let ac = this.armorac(character, a);
+        let ac = this.armorAC(character, a);
         if (ac > b) {
           b = ac;
         }

@@ -8,6 +8,18 @@
         <button @click="reloadCharacter(pc)" class="btn btn-success">Reload</button>
         <button @click="removeFromCampaign(pc)" class="btn btn-danger">Remove</button>
       </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="charsheet-static center">
+            AC<br />{{ acCalc(pc) }}
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="charsheet-static center">
+            Initiative: <span v-if="initMod(pc) > -1">+</span>{{ initMod(pc) }}
+          </div>
+        </div>
+      </div>
       <table class="abilitytable">
         <thead>
           <tr><th>Ability</th><th>Score</th><th>Mod</th><th>Save</th></tr>
