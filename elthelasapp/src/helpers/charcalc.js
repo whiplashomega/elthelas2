@@ -40,7 +40,7 @@ export default {
         }
       }
       return b;
-    }, 10 + this.getStatMod(character, 1));
+    }, 10 + this.statMod(character, 1));
     let shield = shields.reduce((b, a) => {
       if (a.equipped) {
         return b + Number(a.ac);
@@ -67,7 +67,7 @@ export default {
     } else if (a.type === 'Light Armor') {
       ac = Number(a.ac) + this.statMod(character, 1);
     } else if (a.type === "Unarmored Bonus") {
-      ac = 10 + Number(a.ac) + this.getStatMod(character, 1) + this.getStatMod(character, a.unarmoredstat);
+      ac = 10 + Number(a.ac) + this.statMod(character, 1) + this.statMod(character, a.unarmoredstat);
     }
     return ac;
   },
@@ -75,7 +75,7 @@ export default {
     return Number(character.attBonus[i]) + this.statMod(character, i) + this.profbonus(character);
   },
   attackBonus: function(character, attack) {
-    return Number(attack.bonus) + Number(this.getStatMod(character, attack.stat)) + this.profbonus(character) * attack.prof;
+    return Number(attack.bonus) + Number(this.statMod(character, attack.stat)) + this.profbonus(character) * attack.prof;
   },
   bardPrepared: function(a) {
     let num = Math.min(a.level, 9) + 3;
@@ -132,7 +132,7 @@ export default {
   },
   damageBonus: function(character, dmg, stat) {
     if (dmg.addstat) {
-      return Number(this.getStatMod(character, stat)) + Number(dmg.damagebonus);
+      return Number(this.statMod(character, stat)) + Number(dmg.damagebonus);
     } else {
       return Number(dmg.damagebonus);
     }
@@ -189,7 +189,7 @@ export default {
     });
   },
   initMod: function(character) {
-    return this.getStatMod(character, 1) + Number(character.initmagic);
+    return this.statMod(character, 1) + Number(character.initmagic);
   },
   level: function(character) {
     return character.charclasses.reduce((level, a) => {
@@ -247,7 +247,7 @@ export default {
     let spells = character.spells;
     let classCounts = [];
     character.charclasses.forEach((a) => {
-      let num = Math.floor(a.level * a.selsubclass.castermult + this.getStatMod(a.thisclass.caststat));
+      let num = Math.floor(a.level * a.selsubclass.castermult + this.statMod(a.thisclass.caststat));
       if (a.thisclass.name === "Sorcerer") {
         num = Math.min(a.level, 11) + 1;
         num += Math.floor(Math.max(0, Math.min(a.level, 17) - 11) / 2);
