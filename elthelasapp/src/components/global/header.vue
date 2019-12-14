@@ -102,7 +102,8 @@
     </header>
     <div class="row" v-if="hidetitle"><div class="col-10"><h4 style="margin-left:15px;">Elthelas Campaign Setting - {{ title }}</h4></div><button class="btn btn-default topbutton" @click="hidetitle = !hidetitle">Show</button></div>
     <b-modal id="loginmodal" size="lg"
-             title="Login" v-model="showLogin">
+             title="Login" v-model="showLogin"
+             hide-footer>
       <form name="login" v-if="logonformactive">
         <div class="form-inline">
           <label class="col-3">Username:</label> <input type="text" v-model="logincreds.username" class="form-control col-9" />
@@ -121,7 +122,8 @@
       </template>
     </b-modal>
     <b-modal id="registermodal" size="lg"
-             title="Register" v-model="showRegister">
+             title="Register" v-model="showRegister"
+             hide-footer>
       <div v-if="logonformactive">
         <div class="form-inline">
           <label class="col-3">Username:</label> <input type="text" v-model="registeruser.username" class="form-control col-9" />

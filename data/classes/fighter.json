@@ -188,13 +188,13 @@
         },
         {
           "level": 7,
-          "name": "Capture Magic",
-          "description": "At level 7 you have learned how spell casters create and spin their magical effects, and have learned how to prevent it. When you successfully grapple a creature, the target becomes unable to cast spells that have verbal or semantic components as long as they are grappled."
+          "name": "Counter Magic",
+          "description": "At level 10 you have learned the inner working of spells and can inherently use the spell against itself. Twice per short rest, you can bend another’s spell to your will. To do this you must spend your reaction to negate or control another casters spell. 3rd level or lower spells are automatically affected while higher level spells require a charisma check with the DC being 10 + the spells level. If you succeed, you can choose to negate the spell entirely, or if the spell targets a single target other than the caster, you can choose a different target for the spell. If the spell is a concentration spell, you take over concentration for the spells duration if you choose to do so. You may only concentrate on one spell at a time."
         },
         {
           "level": 10,
-          "name": "Counter Magic",
-          "description": "At level 10 you have learned the inner working of spells and can inherently use the spell against itself. Twice per short rest, you can bend another’s spell to your will. To do this you must spend your reaction to negate or control another casters spell. 3rd level or lower spells are automatically affected while higher level spells require a charisma check with the DC being 10 + the spells level. If you succeed, you can choose to negate the spell entirely, or if the spell targets a single target other than the caster, you can choose a different target for the spell. If the spell is a concentration spell, you take over concentration for the spells duration if you choose to do so. You may only concentrate on one spell at a time."
+          "name": "Capture Magic",
+          "description": "At level 7 you have learned how spell casters create and spin their magical effects, and have learned how to prevent it. When you successfully grapple a creature, the target becomes unable to cast spells that have verbal or semantic components as long as they are grappled."
         },
         {
           "level": 15,
