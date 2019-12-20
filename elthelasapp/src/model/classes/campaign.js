@@ -5,7 +5,8 @@ function newCampaign () {
       newChapter()
     ],
     playercharacters: [],
-    url: ""
+    url: "",
+    npcs: []
   };
 }
 

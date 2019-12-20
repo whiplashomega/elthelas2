@@ -36,4 +36,4 @@
   </div>
 </template>
 <script src="./js/skills.js"></script>
-<style src="../scss/characterbuilder.scss" lang="scss" scoped></style>
+<style src="./scss/characterbuilder.scss" lang="scss" scoped></style>

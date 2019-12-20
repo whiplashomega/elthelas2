@@ -82,4 +82,4 @@
   </div>
 </template>
 <script src="./js/pcmanager.js"></script>
-<style src="@/components/tools/scss/characterbuilder.scss" lang="scss" scoped></style>
+<style src="@/components/tools/characterbuilder/scss/characterbuilder.scss" lang="scss" scoped></style>

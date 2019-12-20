@@ -280,4 +280,4 @@ gulp.task('build', function(done) {
   });  
 });
 //task groups
-gulp.task('default', gulp.series('jsonlint', gulp.parallel('spellsjson', 'historyjson', 'creaturesjson', 'jsoncompile')));
+gulp.task('default', gulp.series('jsonlint', gulp.parallel('spellsjson', 'historyjson', 'jsoncompile')));

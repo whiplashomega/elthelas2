@@ -113,7 +113,8 @@ export default {
         ],
         filter: null,
         sortBy: null,
-        sortDesc: false
+        sortDesc: false,
+        printMode: false
       },
       gearModal: { Item: '', Cost: '', Weight: '', Description: '' }
     };

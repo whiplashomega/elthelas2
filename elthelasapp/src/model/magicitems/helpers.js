@@ -90,15 +90,15 @@ export default {
       if (typeof spell.level === "undefined") {
         console.log("bad level in spell: " + spell);
       } else {
-        levelnum = Number(spell.level);
         spell.level = spell.level.replace("level", "");
+        levelnum = Number(spell.level);
       }
     }
     var item = {
       Item: "Scroll of " + spell.title,
       Type: "Single Use (scroll)",
       Attunement: "No",
-      Effect: "This scroll bears the spell " + spell.title + ", written in a mystical cipher. If it is on your class's spell list you can use an action to read the scroll and cast it without having to provide any of the spell's components. If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC is " + (10 + levelnum) + ". On a failed check, the spell disappears from the scroll with no other effect. Once the spell is cast the scroll crumbles to dust. The attack bonus is " + (Math.floor(Math.abs(levelnum - 1) / 2) * 2 + 5) + " and the save DC is " + (Math.floor(Math.abs(levelnum - 1) / 2) * 2 + 13) + "."
+      Effect: "This scroll bears the spell " + spell.title + ", written in a mystical cipher. If it is on your class's spell list you can use an action to read the scroll and cast it without having to provide any of the spell's components. If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC of the check is " + (10 + levelnum) + ". On a failed check, the spell disappears from the scroll with no other effect, otherwise you are able to cast the spell as if you were casting it yourself without using a spell slot. Once the spell is cast the scroll crumbles to dust. The spell does not use your own save DC or attack bonus, rather it uses one based on the level of the spell. The attack bonus for this scroll is " + (Math.floor(Math.abs(levelnum - 1) / 2) * 2 + 5) + " and the save DC is " + (Math.floor(Math.abs(levelnum - 1) / 2) * 2 + 13) + "."
     };
     if (["cantrip", "1"].indexOf(spell.level) !== -1) {
       item.Rarity = "Common";

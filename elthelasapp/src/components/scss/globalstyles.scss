@@ -3,7 +3,7 @@
   @import './_bootstrapoverride.scss';
   @import './_layout.scss';
   
-  .sidenav a {
+  .nav-pill a {
     padding: 8px 15px;
     margin: 2px 5px;
     background-color: #6784c6;
@@ -30,6 +30,11 @@
     max-width: 100%;
     flex: 0 0 100%;
   }
+}
+
+.btn-symbol {
+  background: none;
+  border: none;
 }
 
 @media screen {

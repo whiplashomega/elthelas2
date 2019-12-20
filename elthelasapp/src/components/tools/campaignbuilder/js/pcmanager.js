@@ -3,7 +3,6 @@ import droll from 'droll';
 import charCalculators from '@/helpers/charcalc';
 
 export default {
-  components: {},
   computed: {
     ...mapGetters({
       campaign: "getCurrentCampaign",

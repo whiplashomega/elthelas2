@@ -1,6 +1,7 @@
 import { mapGetters, mapActions } from 'vuex';
 import notes from '@/components/tools/campaignbuilder/notes';
 import pcmanager from '@/components/tools/campaignbuilder/pcmanager';
+import npcmanager from '@/components/tools/campaignbuilder/npcmanager';
 /* Campaign Object Structure
 {
     title: String,
@@ -27,7 +28,8 @@ export default {
   },
   components: {
     notes,
-    pcmanager
+    pcmanager,
+    npcmanager
   },
   data: function () {
     return {

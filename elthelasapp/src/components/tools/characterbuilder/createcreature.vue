@@ -9,4 +9,4 @@
   </div>
 </template>
 <script src="./js/createcreature.js"></script>
-<style src="../scss/characterbuilder.scss" lang="scss"></style>
+<style src="./scss/characterbuilder.scss" lang="scss"></style>

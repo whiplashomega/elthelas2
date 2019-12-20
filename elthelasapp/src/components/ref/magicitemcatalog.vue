@@ -1,6 +1,6 @@
 <template>
   <div class="col-sm-12">
-    <div>
+    <div v-if="!printMode">
       <h1>Margo's Mystics Magic Item Catalog</h1>
       <p class="alert alert-warning">
         Note: The In Stock column is only relevant on game day, and reflects the items that Margo has in stock at her store during game.
@@ -111,7 +111,7 @@
         <h4 style="font-size:3em;">{{ item.Item }} ({{ item.Type }}, {{ item.Rarity }})</h4>
         <div v-html="$options.filters.marked(item.Effect)" style="font-size:1.5em;"></div>
       </div>
-      <button class="btn btn-success" @click="toPrint = []; printMode = false;">Exit</button>
+      <button class="btn btn-success print-hide" @click="toPrint = []; printMode = false;">Exit</button>
     </div>
   </div>
 </template>

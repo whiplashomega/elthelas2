@@ -10,10 +10,13 @@
     </div>
     <b-tabs>
       <b-tab title="Notes">
-        <notes :buildmode="buildmode"></notes>
+        <notes :buildmode="buildmode" />
       </b-tab>
       <b-tab title="PC Manager">
-        <pcmanager></pcmanager>
+        <pcmanager />
+      </b-tab>
+      <b-tab title="NPCs">
+        <npcmanager :buildmode="buildmode" />
       </b-tab>
     </b-tabs>
     <b-modal id="campaignmodal" title="Load File from Server">

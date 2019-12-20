@@ -67,9 +67,7 @@ export default {
     },
     printSelected () {
       this.toPrint = this.magicitems.reduce((a, b) => {
-        console.log(b.print);
         if (b.print) {
-          console.log(b);
           a.push(b);
         }
         return a;

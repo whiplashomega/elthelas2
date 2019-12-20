@@ -76,4 +76,4 @@
   </div>
 </template>
 <script src="./js/characterheader.js"></script>
-<style src="../scss/characterbuilder.scss" lang="scss" scoped></style>
+<style src="./scss/characterbuilder.scss" lang="scss" scoped></style>

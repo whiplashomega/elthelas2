@@ -1,6 +1,6 @@
 <template>
   <div class="col-sm-12">
-    <b-tabs id="refdiv" v-if="!printMode">
+    <b-tabs id="refdiv">
       <b-tab title="Spells">
         <h3>Spells</h3>
         <b-row>

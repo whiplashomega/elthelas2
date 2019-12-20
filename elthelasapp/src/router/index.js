@@ -15,8 +15,6 @@ import backgrounds from '../components/options/backgrounds';
 import options from '../components/options/menu';
 import languages from '../components/options/languages';
 import book4guide from '../components/tools/book4guide';
-import book4 from '../components/tools/book4';
-import book4menu from '../components/tools/book4menu';
 import feats from '@/components/options/feats';
 import races from '../components/options/races';
 import bestiary from '../components/ref/bestiary';
@@ -300,18 +298,6 @@ var router = new Router({
       }
     },
     {
-      name: "book4",
-      meta: {
-        title: "Epic of Elthelas: Book 4",
-        auth: true
-      },
-      path: '/tools/book4/dm/:chapter',
-      components: {
-        default: book4,
-        sidebar: book4menu
-      }
-    },
-    {
       name: "book4guide",
       meta: {
         title: "Epic of Elthelas Book 4 Players Guide"
@@ -366,7 +352,8 @@ var router = new Router({
     {
       name: "encounterbuilder",
       meta: {
-        title: "Encounter Builder"
+        title: "Encounter Builder",
+        auth: true
       },
       path: "/encounter/builder",
       components: {
@@ -376,7 +363,8 @@ var router = new Router({
     {
       name: "randomencounters",
       meta: {
-        title: "Random Encounter Table"
+        title: "Random Encounter Table",
+        auth: true
       },
       path: "/encounter/random",
       components: {
@@ -386,7 +374,8 @@ var router = new Router({
     {
       name: "encounterdetails",
       meta: {
-        title: "Encounter Details"
+        title: "Encounter Details",
+        auth: true
       },
       path: "/encounter/details",
       components: {
@@ -400,7 +389,8 @@ var router = new Router({
       },
       path: "/encounter/details/:id",
       components: {
-        default: encounterdetails
+        default: encounterdetails,
+        auth: true
       }
     },
     {
@@ -426,7 +416,8 @@ var router = new Router({
     {
       name: "campaignbuilder",
       meta: {
-        title: "Campaign Builder"
+        title: "Campaign Builder",
+        auth: true
       },
       path: "/tools/campaigns",
       components: {
@@ -436,7 +427,8 @@ var router = new Router({
     {
       name: "campaignbuilderview",
       meta: {
-        title: "Campaign Builder"
+        title: "Campaign Builder",
+        auth: true
       },
       path: "/tools/campaigns/:url",
       components: {
@@ -446,7 +438,8 @@ var router = new Router({
     {
       name: "creaturebuilder",
       meta: {
-        title: "Creature Creator"
+        title: "Creature Creator",
+        auth: true
       },
       path: "/tools/creaturebuilder",
       components: {
@@ -456,7 +449,8 @@ var router = new Router({
     {
       name: "creatureeditor",
       meta: {
-        title: "Edit Creature"
+        title: "Edit Creature",
+        auth: true
       },
       path: "/tools/creaturebuilder/:id",
       components: {
