@@ -61,14 +61,14 @@
         <div class="row">
           <label class="col-sm-12">
             <strong>History: </strong>
-            <span v-if="!npc.editMode">{{ npc.history }}</span>
+            <span v-if="!npc.editMode" v-html="$options.filters.marked(npc.history)"></span>
             <textarea v-model="npc.history" class="form-control" v-if="npc.editMode"></textarea>
           </label>
         </div>
         <div class="row">
           <label class="col-sm-12">
             <strong>Motivations: </strong>
-            <span v-if="!npc.editMode">{{ npc.motivations }}</span>
+            <span v-if="!npc.editMode" v-html="$options.filters.marked(npc.motivations)"></span>
             <textarea v-model="npc.motivations" class="form-control" v-if="npc.editMode"></textarea>
           </label>
         </div>

@@ -46,7 +46,7 @@ export default {
         location: "",
         motivations: "",
         history: "",
-        chapters: [],
+        chapters: ['all'],
         show: true
       });
     },
