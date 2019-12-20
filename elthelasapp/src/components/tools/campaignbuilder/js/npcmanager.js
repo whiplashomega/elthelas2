@@ -54,7 +54,9 @@ export default {
       let i = this.campaign.npcs.findIndex((a) => {
         return a.id === npc.id;
       });
-      this.campaign.npcs.splice(i, 1);
+      if (window.confirm("Are you sure you want to delete " + npc.name + "?")) {
+        this.campaign.npcs.splice(i, 1);
+      }
     }
   }
 };
