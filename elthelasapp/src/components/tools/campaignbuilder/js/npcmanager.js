@@ -21,6 +21,8 @@ export default {
       this.campaign.npcs.forEach((npc) => {
         if (this.filterByChapter === "all") {
           npcs.push(npc);
+        } else if (npc.chapters.includes("all")) {
+          npcs.push(npc);
         } else if (npc.chapters.includes(this.filterByChapter)) {
           npcs.push(npc);
         }
