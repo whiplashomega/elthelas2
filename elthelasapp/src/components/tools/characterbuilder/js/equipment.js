@@ -97,73 +97,89 @@ export default {
       this.newcontain = { ...ctype };
     },
     addEquipment() {
-      var id = Date.now();
-      this.character.equipment.push({ ...this.newequip, id: id });
-      this.newequip = { name: "", weight: 0, quantity: 1, attunement: false, edit: false, container: this.character.containers[0].id };
-      this.equipModal = false;
+      if (this.newequip.container !== 0) {
+        var id = Date.now();
+        this.character.equipment.push({ ...this.newequip, id: id });
+        this.newequip = { name: "", weight: 0, quantity: 1, attunement: false, edit: false, container: this.character.containers[0].id };
+        this.equipModal = false;
+      } else {
+        alert("Please select a container");
+      }
     },
     addExistingEquipment(item, quantity, containerId) {
-      var id = Date.now();
-      this.character.equipment.push({
-        id: id,
-        name: item.Item,
-        weight: Number(item.Weight),
-        quantity: quantity,
-        cost: item['Cost (gp)'] ? item['Cost (gp)'] : Number(item.Cost),
-        description: item.Effect ? item.Effect : item.Description,
-        attunement: item.Attunement ? item.Attunement.includes('Yes') : false,
-        edit: false,
-        container: containerId
-      });
-      this.equipModal = false;
+      if (containerId) {
+        var id = Date.now();
+        this.character.equipment.push({
+          id: id,
+          name: item.Item,
+          weight: Number(item.Weight),
+          quantity: quantity,
+          cost: item['Cost (gp)'] ? item['Cost (gp)'] : Number(item.Cost),
+          description: item.Effect ? item.Effect : item.Description,
+          attunement: item.Attunement ? item.Attunement.includes('Yes') : false,
+          edit: false,
+          container: containerId
+        });
+        this.equipModal = false;
+      } else {
+        alert("Please select a container");
+      }
     },
     addExistingWeapon(item, quantity, containerId) {
-      var id = Date.now();
-      this.character.equipment.push({
-        id: id,
-        name: item.Name,
-        weight: Number(item.Weight.substring(0, item.Weight.length - 2)),
-        quantity: quantity,
-        cost: item['Cost (gp)'] ? item['Cost (gp)'] : Number(item.Cost),
-        description: item.Type + " weapon, " + item.Damage + " damage, " + item.Properties + ". " + (item.Effect ? item.Effect : ""),
-        attunement: item.Attunement ? item.Attunement.includes('Yes') : false,
-        edit: false,
-        container: containerId
-      });
-      this.equipModal = false;
+      if (containerId) {
+        var id = Date.now();
+        this.character.equipment.push({
+          id: id,
+          name: item.Name,
+          weight: Number(item.Weight.substring(0, item.Weight.length - 2)),
+          quantity: quantity,
+          cost: item['Cost (gp)'] ? item['Cost (gp)'] : Number(item.Cost),
+          description: item.Type + " weapon, " + item.Damage + " damage, " + item.Properties + ". " + (item.Effect ? item.Effect : ""),
+          attunement: item.Attunement ? item.Attunement.includes('Yes') : false,
+          edit: false,
+          container: containerId
+        });
+        this.equipModal = false;
+      } else {
+        alert("Please select a container");
+      }
     },
     addExistingArmor(item, quantity, containerId) {
-      var id = Date.now();
-      this.character.equipment.push({
-        id: id,
-        name: item.Armor,
-        weight: Number(item.Weight),
-        quantity: quantity,
-        cost: item['Cost (gp)'] ? item['Cost (gp)'] : Number(item.Price),
-        description: "AC " + item.AC,
-        attunement: item.Attunement ? item.Attunement.includes('Yes') : false,
-        edit: false,
-        container: containerId
-      });
-      var armortype = "Light Armor";
-      if (item.Armor.toLowerCase().includes("breast") ||
-          item.Armor.toLowerCase().includes("shirt") ||
-          item.Armor.toLowerCase().includes("hide") ||
-          item.Armor.toLowerCase().includes("half") ||
-          item.Armor.toLowerCase().includes("scale mail")) {
-        armortype = "Medium Armor";
-      } else if (item.Armor.toLowerCase().includes("plate") || item.Armor.toLowerCase().includes("mail")) {
-        armortype = "Heavy Armor";
-      } else if (item.Armor.toLowerCase().includes("shield")) {
-        armortype = "Shield";
+      if (containerId) {
+        var id = Date.now();
+        this.character.equipment.push({
+          id: id,
+          name: item.Armor,
+          weight: Number(item.Weight),
+          quantity: quantity,
+          cost: item['Cost (gp)'] ? item['Cost (gp)'] : Number(item.Price),
+          description: "AC " + item.AC,
+          attunement: item.Attunement ? item.Attunement.includes('Yes') : false,
+          edit: false,
+          container: containerId
+        });
+        var armortype = "Light Armor";
+        if (item.Armor.toLowerCase().includes("breast") ||
+            item.Armor.toLowerCase().includes("shirt") ||
+            item.Armor.toLowerCase().includes("hide") ||
+            item.Armor.toLowerCase().includes("half") ||
+            item.Armor.toLowerCase().includes("scale mail")) {
+          armortype = "Medium Armor";
+        } else if (item.Armor.toLowerCase().includes("plate") || item.Armor.toLowerCase().includes("mail")) {
+          armortype = "Heavy Armor";
+        } else if (item.Armor.toLowerCase().includes("shield")) {
+          armortype = "Shield";
+        }
+        this.character.armors.push({
+          name: item.Armor,
+          ac: item.AC,
+          type: armortype,
+          edit: false
+        });
+        this.equipModal = false;
+      } else {
+        alert("Please select a container");
       }
-      this.character.armors.push({
-        name: item.Armor,
-        ac: item.AC,
-        type: armortype,
-        edit: false
-      });
-      this.equipModal = false;
     },
     addContainer() {
       var id = Date.now();
