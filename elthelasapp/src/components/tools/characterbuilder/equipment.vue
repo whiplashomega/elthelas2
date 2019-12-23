@@ -15,7 +15,8 @@
             <span :class="item.attunement ? 'attuned' : ''" :title="'Item Weight: ' + item.weight + ' lbs, Total Weight ' + item.weight * item.quantity + ' lbs'">
               {{ item.name }}
             </span><input type="number" class="charsheet-num" v-model="item.quantity" /><br />
-            <b-modal v-model="item.edit" title="Edit Equipment">
+            <b-modal v-model="item.edit" title="Edit Equipment"
+             hide-footer>
               Name
               <input type="text" class="form-control" v-model="item.name" />
               Weight
@@ -39,7 +40,8 @@
           <button type="button" class="btn btn-sm btn-primary print-hide" @click="equipModal = true">+Equipment</button>
           <button type="button" class="btn btn-sm btn-primary print-hide" @click="containModal = true">+Container</button>
         </div>
-        <b-modal v-model="equipModal" title="Add Equipment">
+        <b-modal v-model="equipModal" title="Add Equipment"
+             hide-footer>
           Quantity
           <input type="number" class="form-control" v-model="newequip.quantity" />
           Container
