@@ -126,7 +126,7 @@ export default {
         this.equipModal = false;
         return id;
       } else if (item.Pack) {
-        let cid = this.findAndAddItem(item.Container.name, 1, containerId);
+        let cid = this.findAndAddItem(item.PackContainer.name, 1, containerId);
         item.Contents.forEach((a) => {
           this.findAndAddItem(a.Item, a.quantity, cid);
         });

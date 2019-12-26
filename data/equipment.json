@@ -989,7 +989,7 @@
     "Cost": 16,
     "Weight": 0,
     "Pack": true,
-    "Container": 
+    "PackContainer": 
         { "name": "Backpack", "capacity": 30, "weightCounts": true, "weight": 5 },
     "Contents": [
       { "Item": "Ball bearings (bag of 1,000)", "quantity": 1 },
@@ -1013,7 +1013,7 @@
     "Cost": 39,
     "Weight": 0,
     "Pack": true,
-    "Container": 
+    "PackContainer": 
         { "name": "Chest", "capacity": 300, "weightCounts": true, "weight": 25 },
     "Contents": [
       { "Item": "Oil (flask)", "quantity": 2 },
@@ -1053,7 +1053,7 @@
     "Cost": 40,
     "Weight": 0,
     "Pack": true,
-    "Container": 
+    "PackContainer": 
         { "name": "Backpack", "capacity": 30, "weightCounts": true, "weight": 5 },
     "Contents": [
       { "Item": "Bedroll", "quantity": 1 },
@@ -1070,7 +1070,7 @@
     "Cost": 10,
     "Weight": 0,
     "Pack": true,
-    "Container": 
+    "PackContainer": 
         { "name": "Backpack", "capacity": 30, "weightCounts": true, "weight": 5 },
     "Contents": [
       { "Item": "Bedroll", "quantity": 1 },
@@ -1088,7 +1088,7 @@
     "Cost": 19,
     "Weight": 0,
     "Pack": true,
-    "Container": 
+    "PackContainer": 
         { "name": "Backpack", "capacity": 30, "weightCounts": true, "weight": 5 },
     "Contents": [
       { "Item": "Blanket", "quantity": 1 },
@@ -1108,7 +1108,7 @@
     "Cost": 40,
     "Weight": 0,
     "Pack": true,
-    "Container": 
+    "PackContainer": 
         { "name": "Backpack", "capacity": 30, "weightCounts": true, "weight": 5 },
     "Contents": [
       { "Item": "Book", "quantity": 1 },
