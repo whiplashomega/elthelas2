@@ -113,20 +113,20 @@ export default {
         alert("Please select a container");
       }
     },
-    findAndAddItem(name, quantity, containerId) {
+    findAndAddItem(name, quantity, containerId, bypass) {
       let newitem = this.equipment.filter((a) => {
         return a.Item === name
       })[0];
-      return this.addExistingEquipment(newitem, quantity, containerId);
+      return this.addExistingEquipment(newitem, quantity, containerId, bypass);
     },
-    addExistingEquipment(item, quantity, containerId) {
-      if (item.Container && confirm("Would you like to add this item as a container that can hold other items?")) {
+    addExistingEquipment(item, quantity, containerId, bypass = false) {
+      if (item.Container && (bypass || confirm("Would you like to add " + item.Item + " as a container that can hold other items?"))) {
         var id = Date.now();
         this.character.containers.push({ id: id, name: item.Item, capacity: item.Capacity, weightCounts: true, weight: Number(item.Weight) });
         this.equipModal = false;
         return id;
       } else if (item.Pack) {
-        let cid = this.findAndAddItem(item.PackContainer.name, 1, containerId);
+        let cid = this.findAndAddItem(item.PackContainer.name, 1, containerId, true);
         item.Contents.forEach((a) => {
           this.findAndAddItem(a.Item, a.quantity, cid);
         });

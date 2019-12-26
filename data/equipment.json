@@ -985,6 +985,12 @@
    "Description": ""
  },
  {
+   "Item": "String, 10 ft",
+   "Cost": 0.01,
+   "Weight": 0,
+   "Description": "10 ft of basic string or twine"
+ },
+ {
     "Item": "Burglar's Pack (will add contents to inventory)",
     "Cost": 16,
     "Weight": 0,
@@ -993,7 +999,7 @@
         { "name": "Backpack", "capacity": 30, "weightCounts": true, "weight": 5 },
     "Contents": [
       { "Item": "Ball bearings (bag of 1,000)", "quantity": 1 },
-      { "Item": "10 ft of string", "quantity": 1 },
+      { "Item": "String, 10 ft", "quantity": 1 },
       { "Item": "Bell", "quantity": 1 },
       { "Item": "Candle", "quantity": 5 },
       { "Item": "Crowbar", "quantity": 1 },
