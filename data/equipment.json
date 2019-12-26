@@ -81,10 +81,12 @@
    "Item": "Backpack",
    "Cost": 2,
    "Weight": 5,
+   "Container": true,
+   "Capacity": 30,
    "Description": "1 cubic foot/30 pounds of gear"
  },
  {
-   "Item": "Ball bearings (bag o f 1,000)",
+   "Item": "Ball bearings (bag of 1,000)",
    "Cost": 1,
    "Weight": 2,
    "Description": "As an action, you can spill these tiny metal balls from their pouch to cover a level area 10 feet square. A creature moving across the covered area must succeed on a DC 10 Dexterity saving throw or fall prone. A creature moving through the area at half speed doesn’t need to make the saving throw."
@@ -93,12 +95,16 @@
    "Item": "Barrel",
    "Cost": 2,
    "Weight": 70,
+   "Container": true,
+   "Capacity": 350,
    "Description": "40 gallons liquid, 4 cubic feet solid"
  },
  {
    "Item": "Basket",
    "Cost": 0.4,
    "Weight": 2,
+   "Container": true,
+   "Capacity": 40,
    "Description": "2 cubic feet/40 pounds of gear"
  },
  {
@@ -159,12 +165,16 @@
    "Item": "Case, crossbow bolt",
    "Cost": 1,
    "Weight": 1,
+   "Container": true,
+   "Capacity": 1.5,
    "Description": "This wooden case can hold up to twenty crossbow bolts."
  },
  {
    "Item": "Case, map or scroll",
    "Cost": 1,
    "Weight": 1,
+   "Container": true,
+   "Capacity": 1,
    "Description": "This cylindrical leather case can hold up to ten rolled-up sheets o f paper or five rolled-up sheets of parchment."
  },
  {
@@ -183,6 +193,8 @@
    "Item": "Chest",
    "Cost": 5,
    "Weight": 25,
+   "Container": true,
+   "Capacity": 300,
    "Description": "12 cubic feet/300 pounds of gear"
  },
  {
@@ -208,6 +220,12 @@
    "Cost": 15,
    "Weight": 6,
    "Description": ""
+ },
+ {
+   "Item": "Clothes, vestments",
+   "Cost": 15,
+   "Weight": 6,
+   "Description": "A priest's robes of office"
  },
  {
    "Item": "Clothes, traveler’s",
@@ -258,9 +276,11 @@
    "Description": "This kit includes a wooden rod, silken line, corkwood bobbers, steel hooks, lead sinkers, velvet lures, and narrow netting."
  },
  {
-   "Item": "Flask or tankard",
+   "Item": "Flask",
    "Cost": 0.02,
    "Weight": 1,
+   "Container": true,
+   "Capacity": 1,
    "Description": "1 pint liquid"
  },
  {
@@ -414,6 +434,18 @@
    "Description": ""
  },
  {
+   "Item": "Blotting Sand",
+   "Cost": 0.5,
+   "Weight": 0,
+   "Description": "This small bag of sand can be used to remove (blot) fresh ink from parchment before it has dried."
+ },
+ {
+   "Item": "Knife",
+   "Cost": 0.2,
+   "Weight": 1,
+   "Description": "This small knife is not particularly suited for combat, but is excellent for cutting through small objects like turnips."
+ },
+ {
    "Item": "Perfume (vial)",
    "Cost": 5,
    "Weight": 0,
@@ -459,12 +491,16 @@
    "Item": "Pouch",
    "Cost": 0.5,
    "Weight": 1,
+   "Container": true,
+   "Capacity": 6,
    "Description": "A cloth or leather pouch can hold up to 20 sling bullets or 50 blowgun needles, among other things. A compartmentalized pouch for holding spell components is called a component pouch (described earlier in this section). 1/5 cubic foot/6 pounds of gear"
  },
  {
    "Item": "Quiver",
    "Cost": 1,
    "Weight": 1,
+   "Container": true,
+   "Capacity": 1,
    "Description": "A quiver can hold up to 20 arrows."
  },
  {
@@ -570,10 +606,28 @@
    "Description": "This small container holds flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a torch—or anything else with abundant, exposed fuel—takes an action. Lighting any other fire takes 1 minute."
  },
  {
+   "Item": "Alms box",
+   "Cost": 0.1,
+   "Weight": 1,
+   "Description": "This small container has a small slit at the top for inserting coins and a sliding door for removing them later."
+ },
+ {
    "Item": "Torch",
    "Cost": 0.01,
    "Weight": 1,
    "Description": "A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage."
+ },
+ {
+   "Item": "Incense",
+   "Cost": 1,
+   "Weight": 0,
+   "Description": "A highly scented flammable material used for rituals."
+ },
+ {
+   "Item": "Censer",
+   "Cost": 10,
+   "Weight": 1,
+   "Description": "Used to burn incense in ritual ceremonies"
  },
  {
    "Item": "Vial",
@@ -585,6 +639,8 @@
    "Item": "Waterskin",
    "Cost": 0.2,
    "Weight": 5,
+   "Container": true,
+   "Capacity": 4,
    "Description": "contains 2 quarts of liquid (1/2 a gallon)"
  },
  {
@@ -929,45 +985,139 @@
    "Description": ""
  },
  {
-  "Item": "Burglar's Pack",
-  "Cost": 16,
-  "Weight": 0,
-  "Description": "Includes a backpack, a bag of 1,000 ball bearings, 10 feet of string, a bell, 5 candles, a crowbar, a hammer, 10 pitons, a hooded lantern, 2 flasks of oil, 5 days rations, a tinderbox, and a waterskin. The pack also has 50 feet of hempen rope strapped to the side of it."
- },
- {
-  "Item": "Diplomat's Pack",
-  "Cost": 39,
-  "Weight": 0,
-  "Description": "Includes a chest, 2 cases for maps and scrolls, a set of fine clothes, a bottle o f ink, an ink pen, a lamp, 2 flasks of oil, 5 sheets of paper, a vial of perfume, sealing wax, and soap."
- },
- {
-  "Item": "Dungeoneer's Pack",
-  "Cost": 12,
-  "Weight": 0,
-  "Description": "Includes a backpack, a crowbar, a hammer, 10 pitons, 10 torches, a tinderbox, 10 days of rations, and a waterskin. The pack also has 50 feet of hempen rope strapped to the side of it."
- },
- {
-  "Item": "Entertainer's Pack",
-  "Cost": 40,
-  "Weight": 0,
-  "Description": "Includes a backpack, a bedroll, 2 costumes, 5 candles, 5 days o f rations, a waterskin, and a disguise kit."
- },
- {
-  "Item": "Explorer's Pack",
-  "Cost": 10,
-  "Weight": 0,
-  "Description": "Includes a backpack, a bedroll, a mess kit, a tinderbox, 10 torches, 10 days of rations, and a waterskin. The pack also has 50 feet of hempen rope strapped to the side of it."
- },
- {
-  "Item": "Priest's Pack",
-  "Cost": 19,
-  "Weight": 0,
-  "Description": "Includes a backpack, a blanket, 10 candles, a tinderbox, an alms box, 2 blocks of incense, a censer, vestments, 2 days of rations, and a waterskin."
- },
- {
-  "Item": "Scholar's Pack",
-  "Cost": 40,
-  "Weight": 0,
-  "Description": "Includes a backpack, a book of lore, a bottle of ink, an ink pen, 10 sheets of parchment, a little bag of sand, and a small knife."
- }
+    "Item": "Burglar's Pack (will add contents to inventory)",
+    "Cost": 16,
+    "Weight": 0,
+    "Pack": true,
+    "Container": 
+        { "name": "Backpack", "capacity": 30, "weightCounts": true, "weight": 5 },
+    "Contents": [
+      { "Item": "Ball bearings (bag of 1,000)", "quantity": 1 },
+      { "Item": "10 ft of string", "quantity": 1 },
+      { "Item": "Bell", "quantity": 1 },
+      { "Item": "Candle", "quantity": 5 },
+      { "Item": "Crowbar", "quantity": 1 },
+      { "Item": "Hammer", "quantity": 1 },
+      { "Item": "Piton", "quantity": 10 },
+      { "Item": "Lantern, hooded", "quantity": 1 },
+      { "Item": "Oil (flask)", "quantity": 2 },
+      { "Item": "Rations (1 day)", "quantity": 5 },
+      { "Item": "Tinderbox", "quantity": 1 },
+      { "Item": "Waterskin", "quantity": 1 },
+      { "Item": "Rope, hempen (50 feet)", "quantity": 1 }
+    ],
+    "Description": "Includes a backpack, a bag of 1,000 ball bearings, 10 feet of string, a bell, 5 candles, a crowbar, a hammer, 10 pitons, a hooded lantern, 2 flasks of oil, 5 days rations, a tinderbox, and a waterskin. The pack also has 50 feet of hempen rope strapped to the side of it."
+  },
+  {
+    "Item": "Diplomat's Pack (will add contents to inventory)",
+    "Cost": 39,
+    "Weight": 0,
+    "Pack": true,
+    "Container": 
+        { "name": "Chest", "capacity": 300, "weightCounts": true, "weight": 25 },
+    "Contents": [
+      { "Item": "Oil (flask)", "quantity": 2 },
+      { "Item": "Case, map or scroll", "quantity": 2 },
+      { "Item": "Clothes, fine", "quantity": 1 },
+      { "Item": "Ink (1 ounce bottle)", "quantity": 1 },
+      { "Item": "Ink pen", "quantity": 1 },
+      { "Item": "Lamp", "quantity": 1 },
+      { "Item": "Paper (one sheet)", "quantity": 5 },
+      { "Item": "Perfume (vial)", "quantity": 1 },
+      { "Item": "Sealing wax", "quantity": 1 },
+      { "Item": "Soap", "quantity": 1 }
+    ],
+    "Description": "Includes a chest, 2 cases for maps and scrolls, a set of fine clothes, a bottle of ink, an ink pen, a lamp, 2 flasks of oil, 5 sheets of paper, a vial of perfume, sealing wax, and soap."
+  },
+  {
+    "Item": "Dungeoneer's Pack (will add contents to inventory)",
+    "Cost": 12,
+    "Weight": 0,
+    "Pack": true,
+    "Container": 
+        { "name": "Backpack", "capacity": 30, "weightCounts": true, "weight": 5 },
+    "Contents": [
+      { "Item": "Crowbar", "quantity": 1 },
+      { "Item": "Hammer", "quantity": 1 },
+      { "Item": "Tinderbox", "quantity": 1 },
+      { "Item": "Rations (1 day)", "quantity": 10 },
+      { "Item": "Waterskin", "quantity": 1 },
+      { "Item": "Rope, hempen (50 feet)", "quantity": 1 },
+      { "Item": "Piton", "quantity": 10 },
+      { "Item": "Torch", "quantity": 10 }
+    ],
+    "Description": "Includes a backpack, a crowbar, a hammer, 10 pitons, 10 torches, a tinderbox, 10 days of rations, and a waterskin. The pack also has 50 feet of hempen rope strapped to the side of it."
+  },
+  {
+    "Item": "Entertainer's Pack (will add contents to inventory)",
+    "Cost": 40,
+    "Weight": 0,
+    "Pack": true,
+    "Container": 
+        { "name": "Backpack", "capacity": 30, "weightCounts": true, "weight": 5 },
+    "Contents": [
+      { "Item": "Bedroll", "quantity": 1 },
+      { "Item": "Clothes, costume", "quantity": 2 },
+      { "Item": "Candle", "quantity": 5 },
+      { "Item": "Rations (1 day)", "quantity": 5 },
+      { "Item": "Waterskin", "quantity": 1 },
+      { "Item": "Disguise kit", "quantity": 1 }
+    ],
+    "Description": "Includes a backpack, a bedroll, 2 costumes, 5 candles, 5 days of rations, a waterskin, and a disguise kit."
+  },
+  {
+    "Item": "Explorer's Pack (will add contents to inventory)",
+    "Cost": 10,
+    "Weight": 0,
+    "Pack": true,
+    "Container": 
+        { "name": "Backpack", "capacity": 30, "weightCounts": true, "weight": 5 },
+    "Contents": [
+      { "Item": "Bedroll", "quantity": 1 },
+      { "Item": "Mess kit", "quantity": 1 },
+      { "Item": "Tinderbox", "quantity": 1 },
+      { "Item": "Torch", "quantity": 10 },
+      { "Item": "Rations (1 day)", "quantity": 10 },
+      { "Item": "Waterskin", "quantity": 1 },
+      { "Item": "Rope, hempen (50 feet)", "quantity": 1 }
+    ],
+    "Description": "Includes a backpack, a bedroll, a mess kit, a tinderbox, 10 torches, 10 days of rations, and a waterskin. The pack also has 50 feet of hempen rope strapped to the side of it."
+  },
+  {
+    "Item": "Priest's Pack (will add contents to inventory)",
+    "Cost": 19,
+    "Weight": 0,
+    "Pack": true,
+    "Container": 
+        { "name": "Backpack", "capacity": 30, "weightCounts": true, "weight": 5 },
+    "Contents": [
+      { "Item": "Blanket", "quantity": 1 },
+      { "Item": "Candle", "quantity": 10 },
+      { "Item": "Tinderbox", "quantity": 1 },
+      { "Item": "Alms box", "quantity": 1 },
+      { "Item": "Incense", "quantity": 2 },
+      { "Item": "Censer", "quantity": 1 },
+      { "Item": "Clothes, vestments", "quantity": 1 },
+      { "Item": "Rations (1 day)", "quantity": 2 },
+      { "Item": "Waterskin", "quantity": 1 }
+    ],
+    "Description": "Includes a backpack, a blanket, 10 candles, a tinderbox, an alms box, 2 blocks of incense, a censer, vestments, 2 days of rations, and a waterskin."
+  },
+  {
+    "Item": "Scholar's Pack (will add contents to inventory)",
+    "Cost": 40,
+    "Weight": 0,
+    "Pack": true,
+    "Container": 
+        { "name": "Backpack", "capacity": 30, "weightCounts": true, "weight": 5 },
+    "Contents": [
+      { "Item": "Book", "quantity": 1 },
+      { "Item": "Ink (1 ounce bottle)", "quantity": 1 },
+      { "Item": "Ink pen", "quantity": 1 },
+      { "Item": "Parchment (one sheet)", "quantity": 10 },
+      { "Item": "Blotting Sand", "quantity": 1 },
+      { "Item": "Knife", "quantity": 1 }
+    ],
+    "Description": "Includes a backpack, a book of lore, a bottle of ink, an ink pen, 10 sheets of parchment, a little bag of sand, and a small knife."
+  }
 ]

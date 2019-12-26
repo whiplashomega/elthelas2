@@ -73,10 +73,17 @@ export default {
       ctypes: [
         { name: "", capacity: 0, weightCounts: true, weight: 0 },
         { name: "Carried/Worn", capacity: 9999, weightCounts: true, weight: 0 },
-        { name: "Backpack", capacity: 30, weightCounts: true, weight: 5 },
-        { name: "Pouch", capacity: 6, weightCounts: true, weight: 1 },
-        { name: "Sack", capacity: 30, weightCounts: true, weight: 0.5 },
         { name: "Chest", capacity: 300, weightCounts: true, weight: 25 },
+        { name: "Backpack", capacity: 30, weightCounts: true, weight: 5 },
+        { name: "Barrel", capacity: 350, weightCounts: true, weight: 5 },
+        { name: "Basket", capacity: 40, weightCounts: true, weight: 5 },
+        { name: "Case, crossbow bolt", capacity: 1.5, weightCounts: true, weight: 5 },
+        { name: "Case, map or scroll", capacity: 1, weightCounts: true, weight: 5 },
+        { name: "Flask", capacity: 1, weightCounts: true, weight: 5 },
+        { name: "Pouch", capacity: 6, weightCounts: true, weight: 1 },
+        { name: "Quiver", capacity: 1, weightCounts: true, weight: 1 },
+        { name: "Sack", capacity: 30, weightCounts: true, weight: 0.5 },
+        { name: "Waterskin", capacity: 4, weightCounts: true, weight: 5 },
         { name: "Bag of Holding", capacity: 500, weightCounts: false, weight: 15 },
         { name: "Heward's Handy Haversack", capacity: 120, weightCounts: false, weight: 5 }
       ],
@@ -106,8 +113,24 @@ export default {
         alert("Please select a container");
       }
     },
+    findAndAddItem(name, quantity, containerId) {
+      let newitem = this.equipment.filter((a) => {
+        return a.Item === name
+      })[0];
+      return this.addExistingEquipment(newitem, quantity, containerId);
+    },
     addExistingEquipment(item, quantity, containerId) {
-      if (containerId) {
+      if (item.Container && confirm("Would you like to add this item as a container that can hold other items?")) {
+        var id = Date.now();
+        this.character.containers.push({ id: id, name: item.Item, capacity: item.Capacity, weightCounts: true, weight: Number(item.Weight) });
+        this.equipModal = false;
+        return id;
+      } else if (item.Pack) {
+        let cid = this.findAndAddItem(item.Container.name, 1, containerId);
+        item.Contents.forEach((a) => {
+          this.findAndAddItem(a.Item, a.quantity, cid);
+        });
+      } else if (containerId) {
         var id = Date.now();
         this.character.equipment.push({
           id: id,
