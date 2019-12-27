@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Booming Blade"
+title:  "Booming Blade (Homebrew)"
 date:   2015-12-07
 source: SCAG.142
 tags: [sorcerer, warlock, wizard, eldritchknight, cantrip, evocation]
@@ -10,7 +10,7 @@ tags: [sorcerer, warlock, wizard, eldritchknight, cantrip, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 5 ft
+**Range**: Your reach with the weapon used to cast the spell
 
 **Components**: V, M (a weapon)
 

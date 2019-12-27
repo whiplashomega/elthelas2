@@ -47,7 +47,8 @@ export default {
       mobile: 'isMobile',
       character: 'getCharacter',
       pointbuy: "pointbuy",
-      statRolls: "getStatRolls"
+      statRolls: "getStatRolls",
+      hitdicechanged: "hitdicechanged"
     })
   },
   data () {

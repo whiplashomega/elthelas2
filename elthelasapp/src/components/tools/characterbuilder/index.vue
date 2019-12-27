@@ -18,7 +18,7 @@
                 <!-- Initiative -->
                 <initiative />
                 <!-- HP -->
-                <hitpoints />
+                <hitpoints :key="hitdicechanged" />
                 <!-- Combat -->
                 <combat />
                 <!-- Equipment -->
@@ -149,7 +149,7 @@
         </b-tab>
         <b-tab title="Combat">
           <initiative />
-          <hitpoints />
+          <hitpoints :key="hitdicechanged" />
           <combat />
           <attacks />
         </b-tab>

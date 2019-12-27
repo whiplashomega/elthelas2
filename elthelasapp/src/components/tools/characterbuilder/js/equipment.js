@@ -114,15 +114,15 @@ export default {
       }
     },
     findAndAddItem(name, quantity, containerId, bypass) {
-      let newitem = this.equipment.filter((a) => {
-        return a.Item === name
+      let newitem = this.allGear.filter((a) => {
+        return a.Item === name;
       })[0];
       return this.addExistingEquipment(newitem, quantity, containerId, bypass);
     },
     addExistingEquipment(item, quantity, containerId, bypass = false) {
+      var id = Date.now();
       if (item.Container && (bypass || confirm("Would you like to add " + item.Item + " as a container that can hold other items?"))) {
-        var id = Date.now();
-        this.character.containers.push({ id: id, name: item.Item, capacity: item.Capacity, weightCounts: true, weight: Number(item.Weight) });
+        this.character.containers.push({ id: id, name: item.Item, capacity: item.Capacity, weightCounts: item.weightCounts, weight: Number(item.Weight) });
         this.equipModal = false;
         return id;
       } else if (item.Pack) {
@@ -131,7 +131,6 @@ export default {
           this.findAndAddItem(a.Item, a.quantity, cid);
         });
       } else if (containerId) {
-        var id = Date.now();
         this.character.equipment.push({
           id: id,
           name: item.Item,

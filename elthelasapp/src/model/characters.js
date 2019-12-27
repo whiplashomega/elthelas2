@@ -8,7 +8,8 @@ export default {
     currentCharacter: Character(),
     statRolls: [],
     characters: [],
-    drivefiles: []
+    drivefiles: [],
+    hitdicechanged: 0
   },
   getters: getters,
   actions: actions

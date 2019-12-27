@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/json/history.json"
   },
   {
-    "revision": "2d129ffcfec66dd59ab5",
-    "url": "/css/characterbuilder.edd7a320.css"
+    "revision": "7f91ed0634aca2ea5d4d",
+    "url": "/css/characterbuilder.5bf6495b.css"
   },
   {
     "revision": "a8de3d0de0c26539b1eb",
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "f4c7c20812d3a8a9e07fbd004c1b8a39",
+    "revision": "9530eadda39eebc12dc2e3cd97bcdf35",
     "url": "/index.html"
   },
   {
@@ -140,11 +140,11 @@ self.__precacheManifest = [
     "url": "/json/divines.json"
   },
   {
-    "revision": "8681a7e298d1729e6f00f3125c4bb764",
+    "revision": "9ee5c9d388d2e28896aa19e2f0b8a780",
     "url": "/json/equipment.json"
   },
   {
-    "revision": "c37abbcfc0dc71378ef2f24c5aea3b1d",
+    "revision": "dabcfc0b93cbd63f4cf9772da66f6030",
     "url": "/json/feats.json"
   },
   {
@@ -152,12 +152,12 @@ self.__precacheManifest = [
     "url": "/json/features.json"
   },
   {
-    "revision": "d0d908db02a9627b75e9",
-    "url": "/js/app.24db90f3.js"
+    "revision": "cea7296c80bd4ade040a",
+    "url": "/js/app.5877e770.js"
   },
   {
-    "revision": "2d129ffcfec66dd59ab5",
-    "url": "/js/characterbuilder.5ad02a5f.js"
+    "revision": "7f91ed0634aca2ea5d4d",
+    "url": "/js/characterbuilder.948d0acf.js"
   },
   {
     "revision": "180ff3435d558f90530bce4f540162f8",
@@ -168,7 +168,7 @@ self.__precacheManifest = [
     "url": "/json/landmarks.json"
   },
   {
-    "revision": "ce86a4e31cea64f804915e94e49b5ba6",
+    "revision": "81f3f8f7f597695a4b98b0a87b825589",
     "url": "/json/magicitems.json"
   },
   {
@@ -184,7 +184,7 @@ self.__precacheManifest = [
     "url": "/json/races.json"
   },
   {
-    "revision": "0c00e2f3a2a2d364e2615988fe47ee6d",
+    "revision": "919978c83695e82d2b7dfd1aa6573ec5",
     "url": "/json/spells.json"
   },
   {
@@ -296,7 +296,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/pcs.md"
   },
   {
-    "revision": "d0d908db02a9627b75e9",
+    "revision": "cea7296c80bd4ade040a",
     "url": "/css/app.825a0a0f.css"
   },
   {

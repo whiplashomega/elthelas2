@@ -2,6 +2,7 @@ import charCalculators from '@/helpers/charcalc';
 
 export default {
   getStatRolls: (state) => state.statRolls,
+  hitdicechanged: (state) => state.hitdicechanged,
   serverCharacters: (state) => state.characters,
   driveCharacters: (state) => state.drivefiles,
   getSlots: (state) => charCalculators.slots,

@@ -50,7 +50,8 @@
         <div class="charsheet-static">
           Hit Dice<br />
           <div v-for="cc in character.charclasses" :key="cc.thisclass.name">
-            <input type="number" class="charsheet-num" v-model="cc.hitdice" /> / {{ cc.level }}d{{ cc.thisclass.hitdie }}
+            <input type="number" class="charsheet-num"
+                   v-model="cc.hitdice" /> / {{ cc.level }}d{{ cc.thisclass.hitdie }}
           </div>
         </div>
       </div>

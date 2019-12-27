@@ -190,6 +190,7 @@ export default {
         if (typeof a.hitdice !== 'undefined') {
           a.hitdice += a.level / 2;
           a.hitdice = Math.min(a.hitdice, a.level);
+          state.hitdicechanged++;
         } else {
           a.hitdice = a.level;
         }
