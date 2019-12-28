@@ -67,7 +67,7 @@
                 <thead><tr><th>Item</th><th>Cost</th><th>Weight</th></tr></thead>
                 <tbody>
                   <tr v-for="item in allGear" :key="item.Item">
-                    <td><a href="#" @click="addExistingEquipment(item, newequip.quantity, newequip.container.id)">{{ item.Item }}</a></td>
+                    <td><a href="#" @click="addExistingEquipment(item, newequip.quantity, newequip.container, false)">{{ item.Item }}</a></td>
                     <td>{{ item.Cost }}</td>
                     <td>{{ item.Weight }}</td>
                   </tr>
