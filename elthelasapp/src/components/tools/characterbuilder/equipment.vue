@@ -80,7 +80,7 @@
                 <thead><tr><th>Item</th><th>Cost</th><th>Weight</th></tr></thead>
                 <tbody>
                   <tr v-for="item in allWeapons" :key="item.Name">
-                    <td><a href="#" @click="addExistingWeapon(item, newequip.quantity, newequip.container.id)">{{ item.Name }}</a></td>
+                    <td><a href="#" @click="addExistingWeapon(item, newequip.quantity, newequip.container)">{{ item.Name }}</a></td>
                     <td>{{ item.Cost }}</td>
                     <td>{{ item.Weight }}</td>
                   </tr>
@@ -93,7 +93,7 @@
                 <thead><tr><th>Item</th><th>Type</th><th>Cost</th><th>AC</th><th>Weight</th></tr></thead>
                 <tbody>
                   <tr v-for="item in allArmor" :key="item.Armor">
-                    <td><a href="#" @click="addExistingArmor(item, newequip.quantity, newequip.container.id)">{{ item.Armor }}</a></td>
+                    <td><a href="#" @click="addExistingArmor(item, newequip.quantity, newequip.container)">{{ item.Armor }}</a></td>
                     <td>{{ item.Type }}</td>
                     <td>{{ item.Price }}</td>
                     <td>{{ item.AC }}</td>
