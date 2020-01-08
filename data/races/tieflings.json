@@ -4,8 +4,6 @@
   "singular": "Tiefling",
   "description": "\n\nTieflings are the descendents of humans that have mated with demons or devils, they bear the mark of this touch in their appearance and nature. They often bear demonic traits, such as horns, forked tails or tongue, or reddish skin or eyes. They also tend towards evil more than the average person, and although this is far from a given, it is common enough that the distrust that follows them everywhere is justified.\n\nTieflings are not quite as rare as Aasimar (given demons' proclivity for lust), although they are still rare enough to cause a stir in any town they show up in, especially given their heritage. Tieflings are more common in the west, where demons, and demon attacks, are also more common. Tieflings of a good or neutral persuasion can usually find shelter in Dera'Dragorim or Zelfir, the second as a service to Amathera as a pity of their natural plight, and the first in recognition of a shared victimization at the hands of aggressive demon invaders.\n\n#### Tiefling Culture in Elthelas\n\nThe distrust that tieflings face at the hands of common folk, combined with the chaos in their blood, leads many to take up life as an adventurer or wanderer. Some find their way to the tiefling enclaves in more friendly cities, while many find themselves taken advantage of by evil lords who give them opportunities where no one else would. The largest population of settled Tiefling's in Elthelas is in the Deran city of Vasha. There it is common enough to see someone with horns or a forked tongue walking down the street that few pay it any mind. The Tiefling's there have found a niche working as alchemists, smelters and smiths, as well as other jobs where their natural resistances give them an edge over an ordinary human. These Tieflings are well integrated into Dera'Dragoran society.\n\nElsewhere in the world tieflings have evolved their own counter cultures. For example, In Malinval Tieflings are subject only to the church of Mat'raktha, and have a near monopoly on intercity trade, since they are the only race not subject to the warlords or mandatory slavery.",
   "traits": [
-    { "name": "Size", "description": "Tieflings have about the same size and build as humans. Your size is medium." },
-    { "name": "Speed", "description": "Your base walking speed is 30 feet." },
     { "name": "Darkvision", "description": "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray." },
     { "name": "Hellish Resistance", "description": "You have resistance to fire damage." }
   ],
@@ -20,13 +18,15 @@
   },
   "subraces": [
     {
-      "id": "infernaltiefling",
-      "name": "Infernal Tiefling",
-      "singular": "Infernal Tiefling",
+      "id": "humanborntiefling",
+      "name": "Human Demon Tiefling",
+      "singular": "Human Demon Tiefling",
       "image": "https://elthelas-images.herokuapp.com/races/tiefling.jpg",
-      "description": "",
+      "description": "Most tieflings are the descendents of humans and demons, and the unions are rarely consensual, though sometimes they are several generations back. These children are often outcasts. Reminders to their families of the horrible things in their pasts, and feared as carrying the disposition of their demonic progenitors.",
       "traits": [
-        { "name": "Ability Score Increase", "description": "Your intelligence score increases by 1 and your charisma score increases by 2." },
+        { "name": "Size", "description": "Tieflings have about the same size and build as humans. Your size is medium." },
+        { "name": "Speed", "description": "Your base walking speed is 30 feet." },
+        { "name": "Ability Score Increase", "description": "Your intelligence score increases by 1 and your Charisma score increases by 2." },
         { "name": "Infernal Legacy", "description": "You know the thaumatergy cantrip. Once you reach 3rd level, you can cast the hellish rebuke spell once per day as a 2nd-level spell. Once you reach 5th level you can cast the darkness spell once per day. Charisma is your spellcasting ability for these spells." }
       ],
       "averageheight": 66,
@@ -39,13 +39,34 @@
       "speed": [30, 0, 0, 0, 0]
     },
     {
-      "id": "feraltiefling",
-      "name": "Feral Tiefling",
-      "singular": "Feral Tiefling",
-      "description": "",
+      "id": "feyrisubrace",
+      "name": "Fey'ri",
+      "singular": "Fey'ri",
+      "image": "https://elthelas-images.herokuapp.com/races/feyri.jpg",
+      "description": "At the time of the demon invasion, Dera was home to the largest elven community outside of Eldoran. Unfortunately for these elves, their community was among the first attacked by the demons. Throughout most of the world it is believed that all of the elves were slaughtered, however a small percentage were kept as slaves, serving the whims of their demon masters, and subject to their lusts. Many of them died birthing the demonic offspring of these unions, and those who did not were rendered infertile. When Bahamut turned his wrath on the demons, forcing them to flee, they left their slaves, and their offspring, behind. These elves, trapped between an angry God and demon slave-masters, hid in the sewers of the ruined city, where they have lived since, expanding them as they had need of space. Over time they have intermarried and the demonic blood has spread and become diluted throughout their people. Today they rarely leave their underground home, but occasionally one will leave to travel the world. They are typically mistaken for a pointy eared , skinny and winged tiefling, and they rarely find a welcoming reception. Most return home.\n\nFey'ri have a naturally evil disposition, and the society as a whole has largely given into the call of their blood. The underworks of Dera where they live is a harsh environment where only the strongest are permitted to survive.\n\n",
       "traits": [
-        { "name": "Ability Score Increase", "description": "Your intelligence score increases by 1 and your dexterity score increases by 2." },
-        { "name": "Winged", "description": "You have bat-like wings sprouting from your shoulder blades. You have a flying speed of 30 feet." }
+        { "name": "Ability Score Increase", "description": "Your Dexterity score increases by 2 and your Intelligence score increases by 1." },
+        { "name": "Speed", "description": "Your base walking speed is 30 feet. You have a flying speed of 40 feet. To use this speed, you can’t be wearing heavy armor." },
+        { "name": "Fey Ancestry", "description": "You have advantage on saving throws against being charmed, and magic can't put you to sleep." },
+        { "name": "Trance", "description": "Fey'ri don't need to sleep. Instead they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is 'trance') While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep." }
+      ],
+      "averageheight": 65,
+      "baseheight": 54,
+      "heightroll": "2d10",
+      "averageweight": 130,
+      "baseweight": 100,
+      "weightroll": "1d4",
+      "stats": [0, 2, 0, 1, 0, 0],
+      "speed": [30, 30, 0, 0, 0]
+    },
+    {
+      "id": "deviltiefling",
+      "name": "Human Devil Tiefling",
+      "singular": "Human Devil Tiefling",
+      "description": "The most rare of the tieflings are those born of devils. Unlike demons these unions are typically at least nominally consensual, with the human parent often trading sex for something else. Some of the these are the children of incubi and sucubi, where the parent has traded their soul for carnal pleasures, while others are the children of other devils who have given some other material benefit to the human parent in trade for their own pleasure. Nevertheless, the children are still rarely wanted, and just as reviled in the community as other tieflings.",
+      "traits": [
+        { "name": "Ability Score Increase", "description": "Your Intelligence score increases by 1 and your Dexterity score increases by 2." },
+        { "name": "Devil's Tongue", "description": "You know the vicious mockery cantrip. When you reach 3rd level, you can cast the charm person spell as a 2nd-level spell once with this trait. When you reach 5th level , you can cast the enthrall spell once with this trait. You must finish a long rest to cast these spells once again with this trait. Intelligence is your spellcasting ability for them." }
       ],
       "averageheight": 66,
       "baseheight": 57,
@@ -57,21 +78,23 @@
       "speed": [30, 30, 0, 0, 0]
     },
     {
-      "id": "deviltiefling",
-      "name": "Devil-Blood Tiefling",
-      "singular": "Devil-Blood Tiefling",
-      "description": "",
+      "id": "tanarukk",
+      "name": "Tanarukk",
+      "singular": "Tanarukk",
+      "image": "https://elthelas-images.herokuapp.com/races/tanarukk.jpg",
+      "description": "Among the orcs it is considered an honor to be chosen by a fiend for breeding purposes. The children of these unions are the wild and unruly Tanarukk. Their fiendish blood accentuates their already aggressive nature, making them unpredictable but powerful weapons of war, but even in orc society they are treated as creatures to be feared rather than helped.",
       "traits": [
-        { "name": "Ability Score Increase", "description": "Your intelligence score increases by 1 and your charisma score increases by 2." },
-        { "name": "Devil's Tongue", "description": "You know the vicious mockery cantrip. When you reach 3rd level, you can cast the charm person spell as a 2nd-level spell once with this trait. When you reach 5th level , you can cast the enthrall spell once with this trait. You must finish a long rest to cast these spells once again with this trait. Charisma is your spellcasting ability for them." }
+        { "name": "Ability Score Increase", "description": "Your Strength and Constitution Scores both increase by 2." },
+        { "name": "Menacing", "description": "You gain proficiency in the intimidation skill." },
+        { "name": "Aggressive", "description": "As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started." }
       ],
-      "averageheight": 66,
-      "baseheight": 57,
-      "heightroll": "2d8",
-      "averageweight": 155,
-      "baseweight": 110,
-      "weightroll": "2d4",
-      "stats": [0, 0, 0, 1, 0, 2],
+      "averageheight": 78,
+      "baseheight": 65,
+      "heightroll": "2d12",
+      "averageweight": 290,
+      "baseweight": 200,
+      "weightroll": "2d6",
+      "stats": [2, 0, 2, 0, 0, 0],
       "speed": [30, 30, 0, 0, 0]
     }
   ]

@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "d29d00a4d8239941f4550940540bcdc2",
+    "revision": "7f5a08926b3876347a0c75bc1401b0e3",
     "url": "/index.html"
   },
   {
@@ -152,7 +152,7 @@ self.__precacheManifest = [
     "url": "/json/features.json"
   },
   {
-    "revision": "15095c23281c0a855410",
+    "revision": "db3554f457e26aaef746",
     "url": "/js/app.cf00c822.js"
   },
   {
@@ -180,7 +180,7 @@ self.__precacheManifest = [
     "url": "/json/organizations.json"
   },
   {
-    "revision": "b58081e43f66a676a043cb400fe150e3",
+    "revision": "1e15a90a1135708b17cf15d248a55c96",
     "url": "/json/races.json"
   },
   {
@@ -296,8 +296,8 @@ self.__precacheManifest = [
     "url": "/static/md/book4/pcs.md"
   },
   {
-    "revision": "15095c23281c0a855410",
-    "url": "/css/app.825a0a0f.css"
+    "revision": "db3554f457e26aaef746",
+    "url": "/css/app.607234cd.css"
   },
   {
     "revision": "d41d8cd98f00b204e9800998ecf8427e",
