@@ -275,7 +275,9 @@ export default {
         red = cls.selsubclass.features.reduce(reducer, red);
         return red;
       }, descr);
-      descr = character.race.traits.reduce(reducer, descr);
+      if (character.race.traits) {
+        descr = character.race.traits.reduce(reducer, descr);
+      }
       descr = character.features.reduce(reducer, descr);
       let spells = "**Spells**\n\n";
       for (let key in character.spells) {
