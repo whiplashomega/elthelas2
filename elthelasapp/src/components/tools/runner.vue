@@ -161,16 +161,13 @@
       <template v-slot:cell(name)="row"><span><a href="#" @click.stop="addToEncounter(row.item, row.index, $event.target)">{{ row.value }}</a> <button class="btn btn-warning btn-sm" @click="edit(row.item)" v-if="admin">&#9998;</button><button class="btn btn-sm btn-danger" @click="del(row.item)" v-if="admin">X</button></span></template>
     </b-table>
     <div id="inithptracker" class="row">
-      <div v-for="creature in encountercreaturesinit" :key="creature.id" class="form-inline form-row col-md-6" >
+      <div v-for="creature in encountercreaturesinit" :key="creature.id" class="form-inline form-row" >
         {{ creature.name }}&nbsp;
-        <input type="text" class="form-control"
-               style="max-width: 150px;" placeholder="mini description"
-               v-model="creature.mini" />&nbsp;
         <input type="number" v-model="creature.currenthp"
-               style="max-width: 75px;" class="form-control" /> &nbsp;/ {{ creature.hpdesc }}
+               style="max-width: 50px;" class="form-control form-control-sm" /> &nbsp;/ {{ creature.hpdesc }}
         Init: +{{ creature.initMod }}&nbsp;
         <input type="number" v-model="creature.init"
-               style="max-width: 75px;" class="form-control" />&nbsp;
+               style="max-width: 50px;" class="form-control form-control-sm" />&nbsp;
         <div class="ck-button"><label><input type="checkbox" v-model="creature.advantage" /><span>Adv</span></label></div>
         <div class="ck-button"><label><input type="checkbox" v-model="creature.disadvantage" /><span>Dis</span></label></div>
         <button class="close" type="button" @click="removeCreature(creature)">&times;</button>
