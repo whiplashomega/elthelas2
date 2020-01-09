@@ -9,7 +9,8 @@ export default {
     statRolls: [],
     characters: [],
     drivefiles: [],
-    hitdicechanged: 0
+    hitdicechanged: 0,
+    encounterCharacters: []
   },
   getters: getters,
   actions: actions

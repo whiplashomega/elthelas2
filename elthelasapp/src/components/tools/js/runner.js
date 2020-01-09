@@ -66,6 +66,10 @@ const crxptable = [
 ];
 
 export default {
+  props: {
+    creArray: Array,
+    charArray: Array
+  },
   computed: {
     ...mapGetters({
       creatures: "allCreatures",
@@ -83,7 +87,9 @@ export default {
       getAttackDamageBonus: "getAttackDamageBonus",
       totalslots: "totalslots",
       getInitMod: "getInitMod",
-      admin: "isAdmin"
+      admin: "isAdmin",
+      encountercreatures: "encounterCreatures",
+      characters: "encounterCharacters"
     }),
     filteredcreatures () {
       let comp = this;
@@ -128,7 +134,6 @@ export default {
   },
   data () {
     return {
-      characters: [],
       creaturestable: {
         fields: [
           { key: 'name', label: 'Name', sortable: true },
@@ -144,7 +149,6 @@ export default {
         filterBy: [ "name", "size", "cr", "subtype", "alignment" ],
         modalInfo: { ...modalInfo }
       },
-      encountercreatures: [],
       typeFilter: "",
       nextIndex: 0,
       partylevel: 1,
@@ -348,13 +352,9 @@ export default {
           character.init = roll1;
         }
       });
-    }
-  },
-  mounted () {
-    if (this.$route.params.encounter) {
-      console.log('there is an encounter parameter');
+    },
+    getCreaturesOnMount (creatures) {
       this.$store.dispatch('getAllCreatures').then(() => {
-        var creatures = this.$route.params.encounter.split('&');
         for (var x = 0; x < creatures.length; x++) {
           var cre = this.creatures.filter(function(a) {
             return a.name.toLowerCase().replace(/ /g, '') === creatures[x].toLowerCase().replace(/ /g, '');
@@ -364,6 +364,22 @@ export default {
           }
         }
         this.calculateDifficulty();
+      });
+    }
+  },
+  mounted () {
+    if (this.$route.params.encounter) {
+      console.log('there is an encounter parameter');
+      var creatures = this.$route.params.encounter.split('&');
+      this.getCreaturesOnMount(creatures);
+    } else if (this.creArray) {
+      console.log("running in campaign setting");
+      creatures = this.creArray;
+      this.getCreaturesOnMount(creatures);
+    }
+    if (this.charArray) {
+      this.charArray.forEach((a) => {
+        this.selCharacter(a);
       });
     }
   }

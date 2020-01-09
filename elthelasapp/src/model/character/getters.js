@@ -1,15 +1,16 @@
 import charCalculators from '@/helpers/charcalc';
 
 export default {
+  encounterCharacters: state => state.encounterCharacters,
   getStatRolls: (state) => state.statRolls,
   hitdicechanged: (state) => state.hitdicechanged,
   serverCharacters: (state) => state.characters,
   driveCharacters: (state) => state.drivefiles,
-  getSlots: (state) => charCalculators.slots,
+  getSlots: () => charCalculators.slots,
   incrementClassCount: () => (spell, classCounts) => {
     charCalculators.incrementClassCount(spell, classCounts);
   },
-  getNumPrepped: (state, getters) => (classCounts, spells) => {
+  getNumPrepped: () => (classCounts, spells) => {
     return charCalculators.numPrepped(classCounts, spells);
   },
   getBardPrepared: () => (a) => {

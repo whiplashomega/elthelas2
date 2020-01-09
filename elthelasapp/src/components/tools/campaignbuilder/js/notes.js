@@ -38,6 +38,9 @@ export default {
       moveChDown: 'moveChapterDown',
       deleteEncounter: 'deleteCampaignEncounter',
       deleteChapter: 'deleteChapter'
-    })
+    }),
+    loadEncounter (link) {
+      this.$parent.$parent.$parent.loadEncounter(link);
+    }
   }
 };

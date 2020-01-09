@@ -5,12 +5,14 @@ import Creature from './classes/creature';
 
 const state = {
   all: [],
-  builderCreature: Creature()
+  builderCreature: Creature(),
+  encounterCreatures: []
 };
 
 const getters = {
   allCreatures: state => state.all,
-  builderCreature: state => state.builderCreature
+  builderCreature: state => state.builderCreature,
+  encounterCreatures: state => state.encounterCreatures
 };
 
 function calcStatMods (creature) {

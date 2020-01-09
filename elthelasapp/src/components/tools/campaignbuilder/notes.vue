@@ -96,7 +96,11 @@
             <h2>{{ chapter.title }}</h2>
             <div v-for="(encounter, $index) in chapter.encounters" :key="encounter._id" :class="encounter.complete ? 'complete' : ''">
               <div>
-                <h3><a :href="encounter.link" target="_blank">{{ encounter.name }}</a><button @click="moveEnUp($index)">↑</button><button @click="moveEnDown($index)">↓</button></h3>
+                <h3>
+                  <a :href="encounter.link" target="_blank">{{ encounter.name }}</a>
+                  <button @click="moveEnUp($index)">↑</button><button @click="moveEnDown($index)">↓</button>
+                  <button @click="loadEncounter(encounter.link)" class="btn btn-success">Run in Tab</button>
+                </h3>
                 <div class="form-check">
                   <input type="checkbox" class="form-check-input" v-model="encounter.complete" />
                   <label class="form-check-label">Complete</label>

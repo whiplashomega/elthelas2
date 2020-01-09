@@ -18,6 +18,9 @@
       <b-tab title="NPCs">
         <npcmanager :buildmode="buildmode" />
       </b-tab>
+      <b-tab title="Encounter Runner">
+        <runner :cre-array="creArray" :char-array="charArray" :key="runnerKey" />
+      </b-tab>
     </b-tabs>
     <b-modal id="campaignmodal" title="Load File from Server">
       <table class="table table-striped">
