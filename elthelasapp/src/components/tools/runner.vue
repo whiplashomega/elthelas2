@@ -164,15 +164,16 @@
       <div v-for="creature in encountercreaturesinit" :key="creature.id" class="form-inline form-row" >
         {{ creature.name }}&nbsp;
         <input type="number" v-model="creature.currenthp"
-               style="max-width: 50px;" class="form-control form-control-sm" /> &nbsp;/ {{ creature.hpdesc }}
+               style="max-width: 50px;font-size:0.7rem" class="form-control form-control-sm" /> &nbsp;/ {{ creature.hpdesc }}
         Init: +{{ creature.initMod }}&nbsp;
         <input type="number" v-model="creature.init"
-               style="max-width: 50px;" class="form-control form-control-sm" />&nbsp;
+               style="max-width: 50px;font-size:0.7rem" class="form-control form-control-sm" />&nbsp;
         <div class="ck-button"><label><input type="checkbox" v-model="creature.advantage" /><span>Adv</span></label></div>
         <div class="ck-button"><label><input type="checkbox" v-model="creature.disadvantage" /><span>Dis</span></label></div>
         <button class="close" type="button" @click="removeCreature(creature)">&times;</button>
       </div>
       <input type="button" class="btn btn-success"
+             style="height:40px;"
              @click="roll()" value="Roll Initiative" />
     </div>
     <b-modal id="servermodal" title="Load File from Server">
