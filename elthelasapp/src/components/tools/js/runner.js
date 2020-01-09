@@ -84,7 +84,7 @@ export default {
       getSkillMod: "getSkillMod",
       getHPTotal: "getHPTotal",
       getAttackBonus: "getAttackBonus",
-      getAttackDamageBonus: "getAttackDamageBonus",
+      getDamageBonus: "getDamageBonus",
       totalslots: "totalslots",
       getInitMod: "getInitMod",
       admin: "isAdmin",
@@ -260,8 +260,8 @@ export default {
         let attstring = "**" + att.name + ":** " + att.type + ", range " + att.range + ", ";
         if (comp.getAttackBonus(att) > -1) attstring += "+";
         attstring += comp.getAttackBonus(att) + " to hit (" + att.damage;
-        if (comp.getAttackDamageBonus(att) > 0) attstring += " +" + comp.getAttackDamageBonus(att);
-        else if (comp.getAttackDamageBonus(att) < 0) attstring += " -" + comp.getAttackDamageBonus(att);
+        if (comp.getDamageBonus(att) > 0) attstring += " +" + comp.getDamageBonus(att);
+        else if (comp.getDamageBonus(att) < 0) attstring += " -" + comp.getDamageBonus(att);
         attstring += " " + att.dtype + " damage ";
         if (att.damage2 !== '') attstring += " + " + att.damage2 + " " + att.dtype2 + " damage";
         return red + attstring + "\n\n";
