@@ -72,6 +72,7 @@ export default {
       this.charArray = this.pcs;
       this.runnerKey++;
       this.activeTab = 3;
+      window.scroll(1, 1);
     }
   },
   created () {
