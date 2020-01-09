@@ -1,5 +1,6 @@
 import { mapGetters, mapActions } from 'vuex';
 import marked from 'marked';
+import charcalc from '@/helpers/charcalc';
 
 const modalInfo = {
   name: "",
@@ -409,13 +410,15 @@ export default {
       console.log('there is an encounter parameter');
       var creatures = this.$route.params.encounter.split('&');
       this.getCreaturesOnMount(creatures);
-    } else if (this.creArray) {
+    } else if (this.creArray.length > 0) {
       console.log("running in campaign setting");
       creatures = this.creArray;
       this.getCreaturesOnMount(creatures);
     }
-    if (this.charArray) {
+    if (this.charArray.length > 0) {
       this.loadCharacters(this.charArray);
+      this.partysize = this.charArray.length;
+      this.partylevel = charcalc.charlevel(this.charArray[0]);
     }
   }
 };
