@@ -2,6 +2,9 @@ import Character from '@/model/classes/character';
 import Vue from 'vue';
 
 export default {
+  setCharacter: ({ state }, character) => {
+    state.currentCharacter = character;
+  },
   getFromServer: ({ commit, state }, comp) => {
     if (comp.loggedin) {
       comp.$root.$emit('bv::show::modal', 'loading');

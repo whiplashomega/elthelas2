@@ -167,7 +167,8 @@ export default {
       loadChar: "loadChar",
       getCreature: 'getCreature',
       saveNewCreature: 'saveNewCreature',
-      deleteCreature: "deleteCreature"
+      deleteCreature: "deleteCreature",
+      setCharacter: "setCharacter"
     }),
     del (item) {
       let conf = confirm("are you sure you want to delete " + item.name + "? It cannot be recovered if you do.");
@@ -291,7 +292,7 @@ export default {
       return marked(descr);
     },
     buildCreature (character) {
-      this.curcharacter = character;
+      this.setCharacter(character);
       let creature = {
         id: this.nextIndex,
         name: character.name,
