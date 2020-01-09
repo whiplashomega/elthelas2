@@ -255,12 +255,13 @@ export default {
       }, []);
     },
     createDescription (character) {
+      let comp = this;
       let descr = character.attacks.reduce((red, att) => {
         let attstring = "**" + att.name + ":** " + att.type + ", range " + att.range + ", ";
-        if (this.getAttackBonus(att) > -1) attstring += "+";
-        attstring += this.getAttackBonus(att) + " to hit (" + att.damage;
-        if (this.getAttackDamageBonus(att) > 0) attstring += " +" + this.getAttackDamageBonus(att);
-        else if (this.getAttackDamageBonus(att) < 0) attstring += " -" + this.getAttackDamageBonus(att);
+        if (comp.getAttackBonus(att) > -1) attstring += "+";
+        attstring += comp.getAttackBonus(att) + " to hit (" + att.damage;
+        if (comp.getAttackDamageBonus(att) > 0) attstring += " +" + comp.getAttackDamageBonus(att);
+        else if (comp.getAttackDamageBonus(att) < 0) attstring += " -" + comp.getAttackDamageBonus(att);
         attstring += " " + att.dtype + " damage ";
         if (att.damage2 !== '') attstring += " + " + att.damage2 + " " + att.dtype2 + " damage";
         return red + attstring + "\n\n";
