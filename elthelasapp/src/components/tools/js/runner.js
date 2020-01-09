@@ -390,6 +390,7 @@ export default {
     }
   },
   mounted () {
+    this.encountercreatures = [];
     if (this.$route.params.encounter) {
       console.log('there is an encounter parameter');
       var creatures = this.$route.params.encounter.split('&');
