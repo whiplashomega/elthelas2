@@ -89,7 +89,7 @@ export default {
       getInitMod: "getInitMod",
       admin: "isAdmin",
       encountercreatures: "encounterCreatures",
-      characters: "encounterCharacters"
+      curcharacter: "getCharacter"
     }),
     filteredcreatures () {
       let comp = this;
@@ -291,6 +291,7 @@ export default {
       return marked(descr);
     },
     buildCreature (character) {
+      this.curcharacter = character;
       let creature = {
         id: this.nextIndex,
         name: character.name,
