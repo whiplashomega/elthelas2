@@ -342,23 +342,31 @@ export default {
       });
     },
     roll () {
+      let rolledCreatures = [];
       this.encountercreatures.forEach((character) => {
-        let roll1 = Number(character.initMod) + Math.floor(Math.random() * 20) + 1;
-        let roll2 = Number(character.initMod) + Math.floor(Math.random() * 20) + 1;
-        if (character.advantage && !character.disadvantage) {
-          if (roll1 > roll2) {
-            character.init = roll1;
-          } else {
-            character.init = roll2;
-          }
-        } else if (!character.advantage && character.disadvantage) {
-          if (roll1 < roll2) {
-            character.init = roll1;
-          } else {
-            character.init = roll2;
-          }
+        let prerolled = rolledCreatures.findIndex((a) => a.name === character.name );
+        if (prerolled !== -1) {
+          // we want to group creatures of the same type rather than roll them individually
+          character.init = rolledCreatures[prerolled].init;
         } else {
-          character.init = roll1;
+          let roll1 = Number(character.initMod) + Math.floor(Math.random() * 20) + 1;
+          let roll2 = Number(character.initMod) + Math.floor(Math.random() * 20) + 1;
+          if (character.advantage && !character.disadvantage) {
+            if (roll1 > roll2) {
+              character.init = roll1;
+            } else {
+              character.init = roll2;
+            }
+          } else if (!character.advantage && character.disadvantage) {
+            if (roll1 < roll2) {
+              character.init = roll1;
+            } else {
+              character.init = roll2;
+            }
+          } else {
+            character.init = roll1;
+          }
+          rolledCreatures.push(character);
         }
       });
     },
