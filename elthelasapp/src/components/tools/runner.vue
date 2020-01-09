@@ -72,7 +72,7 @@
              value="Load Character" class="btn btn-success margin15" />
     </div>
     <div class="row" v-sortable="{ handle: '.handle' }">
-      <div v-for="creature in statBlocks" :key="creature.id" class="col-sm-4 creature">
+      <div v-for="creature in statBlocks" :key="creature.id" class="col-sm-4">
         <h2> {{ creature.name }} <i class="handle">&#8592;&#8594;</i> </h2>
         <div class="creature">
           <h4> {{ creature.size }} {{ creature.type }}<span v-if="creature.subtype"> ({{ creature.subtype }})</span>, {{ creature.alignment }}</h4>
