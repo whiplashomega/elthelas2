@@ -211,7 +211,9 @@ export default {
       var deadly = deadlythresholds[this.partylevel - 1] * this.partysize;
       var xp = 0;
       for (var x = 0; x < this.encountercreatures.length; x++) {
-        xp += this.xpByCR(this.encountercreatures[x].cr);
+        if (!this.encountercreatures[x].ispc) {
+          xp += this.xpByCR(this.encountercreatures[x].cr);
+        }
       }
       this.xpvalue = xp;
       xp *= (4 / (this.partysize + 1));
