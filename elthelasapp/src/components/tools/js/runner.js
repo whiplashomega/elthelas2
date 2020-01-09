@@ -290,49 +290,52 @@ export default {
       if (spells.length > 14) descr += spells;
       return marked(descr);
     },
+    buildCreature (character) {
+      let creature = {
+        id: this.nextIndex,
+        name: character.name,
+        size: "medium",
+        type: "humanoid",
+        subtype: character.race.singular,
+        alignment: character.alignment,
+        acdesc: this.accalc,
+        speed: this.getSpeedStat(0) + " ft",
+        str: this.getStatTotal(0) + 0,
+        dex: this.getStatTotal(1),
+        con: this.getStatTotal(2),
+        int: this.getStatTotal(3),
+        wis: this.getStatTotal(4),
+        cha: this.getStatTotal(5),
+        strmod: this.getStatMod(0),
+        dexmod: this.getStatMod(1),
+        conmod: this.getStatMod(2),
+        intmod: this.getStatMod(3),
+        wismod: this.getStatMod(4),
+        chamod: this.getStatMod(5),
+        saves: "+" + this.getSaveMod(0) + " strength +" + this.getSaveMod(1) + " dexterity +" + this.getSaveMod(2) + " constitution +" + this.getSaveMod(3) + " intelligence +" + this.getSaveMod(4) + " wisdom +" + this.getSaveMod(5) + " charisma.",
+          skills: this.createSkillsArray(character),
+        senses: "",
+        damageresistances: "",
+        damageimmunities: "",
+        conditionimmunities: "",
+        languages: character.proficiencies,
+        cr: this.charlevel(character) - 1,
+        descr: this.createDescription(character),
+        mini: "",
+        currenthp: character.hpcurrent,
+        hpdesc: this.getHPTotal,
+        initMod: this.getInitMod,
+        advantage: false,
+        disadvantage: false,
+        init: 0
+      };
+      this.encountercreatures.push(creature);
+      this.nextIndex++;
+      this.calculateDifficulty();
+    },
     async selCharacter(character) {
       await this.loadChar({ character: character, comp: this, passthrough: true }).then(() => {
-        let creature = {
-          id: this.nextIndex,
-          name: character.name,
-          size: "medium",
-          type: "humanoid",
-          subtype: character.race.singular,
-          alignment: character.alignment,
-          acdesc: this.accalc,
-          speed: this.getSpeedStat(0) + " ft",
-          str: this.getStatTotal(0) + 0,
-          dex: this.getStatTotal(1),
-          con: this.getStatTotal(2),
-          int: this.getStatTotal(3),
-          wis: this.getStatTotal(4),
-          cha: this.getStatTotal(5),
-          strmod: this.getStatMod(0),
-          dexmod: this.getStatMod(1),
-          conmod: this.getStatMod(2),
-          intmod: this.getStatMod(3),
-          wismod: this.getStatMod(4),
-          chamod: this.getStatMod(5),
-          saves: "+" + this.getSaveMod(0) + " strength +" + this.getSaveMod(1) + " dexterity +" + this.getSaveMod(2) + " constitution +" + this.getSaveMod(3) + " intelligence +" + this.getSaveMod(4) + " wisdom +" + this.getSaveMod(5) + " charisma.",
-          skills: this.createSkillsArray(character),
-          senses: "",
-          damageresistances: "",
-          damageimmunities: "",
-          conditionimmunities: "",
-          languages: character.proficiencies,
-          cr: this.charlevel(character) - 1,
-          descr: this.createDescription(character),
-          mini: "",
-          currenthp: character.hpcurrent,
-          hpdesc: this.getHPTotal,
-          initMod: this.getInitMod,
-          advantage: false,
-          disadvantage: false,
-          init: 0
-        };
-        this.encountercreatures.push(creature);
-        this.nextIndex++;
-        this.calculateDifficulty();
+        this.buildCreature(character);
         this.$root.$emit('bv::hide::modal', 'servermodal');
       });
     },
@@ -371,8 +374,8 @@ export default {
       });
     },
     async loadCharacters (charArray) {
-      await charArray.forEach(async (a) => {
-        await this.selCharacter(a);
+      charArray.forEach((a) => {
+        this.buildCreature(a);
       });
     }
   },
