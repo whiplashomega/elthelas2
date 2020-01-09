@@ -166,7 +166,7 @@
         <input type="number" v-model="creature.currenthp"
                style="max-width: 50px;font-size:0.7rem" class="form-control form-control-sm" /> &nbsp;/ {{ creature.hpdesc }}
         Init: +{{ creature.initMod }}&nbsp;
-        <input type="number" v-model.lazy="creature.init"
+        <input type="number" v-model.lazy.number="creature.init"
                style="max-width: 50px;font-size:0.7rem" class="form-control form-control-sm" />&nbsp;
         <div class="ck-button"><label><input type="checkbox" v-model="creature.advantage" /><span>Adv</span></label></div>
         <div class="ck-button"><label><input type="checkbox" v-model="creature.disadvantage" /><span>Dis</span></label></div>
