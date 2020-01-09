@@ -88,7 +88,6 @@ export default {
       totalslots: "totalslots",
       getInitMod: "getInitMod",
       admin: "isAdmin",
-      encountercreatures: "encounterCreatures",
       curcharacter: "getCharacter"
     }),
     filteredcreatures () {
@@ -170,7 +169,8 @@ export default {
       terrain: 1,
       adjustedxpvalue: 0,
       aoe: false,
-      comp: this
+      comp: this,
+      encountercreatures: []
     };
   },
   methods: {
