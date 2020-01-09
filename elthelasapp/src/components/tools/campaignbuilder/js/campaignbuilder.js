@@ -41,7 +41,8 @@ export default {
       showChapters: true,
       creArray: [],
       charArray: [],
-      runnerKey: 0
+      runnerKey: 0,
+      activeTab: 0
     };
   },
   watch: {
@@ -70,6 +71,7 @@ export default {
       this.creArray = link.substr(link.search("runner/") + 7).split("&");
       this.charArray = this.pcs;
       this.runnerKey++;
+      this.activeTab = 3;
     }
   },
   created () {

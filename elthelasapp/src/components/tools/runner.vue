@@ -1,5 +1,5 @@
 <template>
-  <div class="col-sm-12">
+  <div class="col-sm-9">
     <h1>Encounter Runner</h1>
     <p>
       <a :href="encounterlink">Link to this Encounter</a>
@@ -72,8 +72,8 @@
              value="Load Character" class="btn btn-success margin15" />
     </div>
     <div class="row" v-sortable="{ handle: '.handle' }">
-      <div v-for="creature in encountercreatures" :key="creature.id" class="col-sm-3" >
-        <h2> {{ creature.name }} <i class="handle">&#8592;&#8594;<button class="close" type="button" @click="removeCreature(creature)">&times;</button></i> </h2>
+      <div v-for="creature in statBlocks" :key="creature.id" class="col-sm-4 creature">
+        <h2> {{ creature.name }} <i class="handle">&#8592;&#8594;</i> </h2>
         <div class="creature">
           <h4> {{ creature.size }} {{ creature.type }}<span v-if="creature.subtype"> ({{ creature.subtype }})</span>, {{ creature.alignment }}</h4>
           <p>

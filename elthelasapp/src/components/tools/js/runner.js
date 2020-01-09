@@ -117,6 +117,18 @@ export default {
         return false;
       });
     },
+    statBlocks () {
+      let blocks = [];
+      this.encountercreatures.forEach((a) => {
+        if (!a.ispc) {
+          let i = blocks.findIndex((b) => b.name === a.name );
+          if(i === -1) {
+            blocks.push(a);
+          }
+        }
+      });
+      return blocks;
+    },
     encountercreaturesinit () {
       return this.encountercreatures.sort((a, b) => {
         if (a.init > b.init) {
@@ -225,6 +237,7 @@ export default {
       }
       var creature = Object.assign({}, item);
       creature.id = this.nextIndex;
+      creature.ispc = false;
       this.nextIndex++;
       creature.currenthp = creature.hp;
       creature.descr = marked(creature.description);
@@ -291,13 +304,14 @@ export default {
       if (spells.length > 14) descr += spells;
       return marked(descr);
     },
-    buildCreature (character) {
+    buildCreature (character, ispc) {
       this.setCharacter(character);
       let creature = {
         id: this.nextIndex,
         name: character.name,
         size: "medium",
         type: "humanoid",
+        ispc: ispc,
         subtype: character.race.singular,
         alignment: character.alignment,
         acdesc: this.accalc,
@@ -337,7 +351,7 @@ export default {
     },
     async selCharacter(character) {
       await this.loadChar({ character: character, comp: this, passthrough: true }).then(() => {
-        this.buildCreature(character);
+        this.buildCreature(character, false);
         this.$root.$emit('bv::hide::modal', 'servermodal');
       });
     },
@@ -385,7 +399,7 @@ export default {
     },
     async loadCharacters (charArray) {
       charArray.forEach((a) => {
-        this.buildCreature(a);
+        this.buildCreature(a, true);
       });
     }
   },

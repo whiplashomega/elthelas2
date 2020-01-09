@@ -8,7 +8,7 @@
       <button class="btn btn-warning" @click="newCamp()">New Campaign</button>
       <button class="btn btn-primary" @click="showChapters = !showChapters"><span v-if="showChapters">Hide</span><span v-else>Show</span> Chapters</button>
     </div>
-    <b-tabs>
+    <b-tabs v-model="activeTab">
       <b-tab title="Notes">
         <notes :buildmode="buildmode" />
       </b-tab>
