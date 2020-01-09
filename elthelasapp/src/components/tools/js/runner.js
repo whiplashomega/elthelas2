@@ -292,7 +292,7 @@ export default {
     },
     async selCharacter(character) {
       await this.loadChar({ character: character, comp: this, passthrough: true }).then(() => {
-        this.encountercreatures.push({
+        let creature = {
           id: this.nextIndex,
           name: character.name,
           size: "medium",
@@ -301,7 +301,7 @@ export default {
           alignment: character.alignment,
           acdesc: this.accalc,
           speed: this.getSpeedStat(0) + " ft",
-          str: this.getStatTotal(0),
+          str: this.getStatTotal(0) + 0,
           dex: this.getStatTotal(1),
           con: this.getStatTotal(2),
           int: this.getStatTotal(3),
@@ -329,7 +329,8 @@ export default {
           advantage: false,
           disadvantage: false,
           init: 0
-        });
+        };
+        this.encountercreatures.push(creature);
         this.nextIndex++;
         this.calculateDifficulty();
         this.$root.$emit('bv::hide::modal', 'servermodal');
