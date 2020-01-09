@@ -290,8 +290,8 @@ export default {
       if (spells.length > 14) descr += spells;
       return marked(descr);
     },
-    selCharacter(character) {
-      this.loadChar({ character: character, comp: this }).then(() => {
+    async selCharacter(character) {
+      await this.loadChar({ character: character, comp: this, passthrough: true }).then(() => {
         this.encountercreatures.push({
           id: this.nextIndex,
           name: character.name,
@@ -368,6 +368,11 @@ export default {
         }
         this.calculateDifficulty();
       });
+    },
+    async loadCharacters (charArray) {
+      await charArray.forEach(async (a) => {
+        await this.selCharacter(a);
+      });
     }
   },
   mounted () {
@@ -381,9 +386,7 @@ export default {
       this.getCreaturesOnMount(creatures);
     }
     if (this.charArray) {
-      this.charArray.forEach((a) => {
-        this.selCharacter(a);
-      });
+      this.loadCharacters(this.charArray);
     }
   }
 };

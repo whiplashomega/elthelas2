@@ -62,8 +62,8 @@ export default {
         return true;
       });
   },
-  loadChar: ({ state }, { character, comp }) => {
-    let c = window.confirm("Are you sure you want to load this character? This will erase any unsaved changes.");
+  loadChar: ({ state }, { character, comp, passthrough }) => {
+    let c = passthrough || window.confirm("Are you sure you want to load this character? This will erase any unsaved changes.");
     if (c) {
       state.currentCharacter = Character();
       for (let prop in character) {
@@ -222,7 +222,7 @@ export default {
       r.readAsDataURL(f);
     }
   },
-  loadCharacter ({ state }) {
+  loadCharacter ({ state }, passthrough) {
     var c = window.confirm("Are you sure you want to load? This will erase any unsaved changes.");
     if (c) {
       var f = document.getElementById('fileload').files[0];
