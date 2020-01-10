@@ -14,7 +14,7 @@ import { mapGetters, mapActions } from 'vuex';
 */
 
 export default {
-  props: [ 'buildmode' ],
+  props: [ 'buildmode', 'showChapters' ],
   computed: {
     ...mapGetters({
       campaign: 'getCurrentCampaign',
@@ -23,8 +23,7 @@ export default {
   },
   data: function () {
     return {
-      comp: this,
-      showChapters: true
+      comp: this
     };
   },
   methods: {

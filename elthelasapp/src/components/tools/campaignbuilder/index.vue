@@ -10,7 +10,7 @@
     </div>
     <b-tabs v-model="activeTab">
       <b-tab title="Notes">
-        <notes :buildmode="buildmode" />
+        <notes :buildmode="buildmode" :showChapters="showChapters" />
       </b-tab>
       <b-tab title="PC Manager">
         <pcmanager />
