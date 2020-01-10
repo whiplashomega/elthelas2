@@ -64,13 +64,13 @@
               <div class="row">
                 <div class="col-sm-6">
                   <label>Encounter Text (markdown allowed)</label>
-                  <textarea v-model="encounter.text" class="form-control encounterbox"></textarea>
+                  <textarea v-model="encounter.text" class="form-control"></textarea>
                 </div>
                 <div class="col-sm-6" v-html="$options.filters.marked(encounter.text)"></div>
               </div>
               <div>
                 <label>Potential Treasure (markdown allowed)</label>
-                <textarea v-model="encounter.treasure" class="form-control" style="min-height:150px;"></textarea>
+                <textarea v-model="encounter.treasure" class="form-control"></textarea>
               </div>
             </div>
             <div class="row">
