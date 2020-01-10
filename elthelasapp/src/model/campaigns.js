@@ -149,30 +149,30 @@ export default {
     addEncounterToSection: ({ state }, section) => {
       section.encounters.push(newEncounter());
     },
-    deleteEncounterFromSection: ({ state }, section, encounter) => {
+    deleteEncounterFromSection: ({ state }, { section, encounter }) => {
       let i = section.encounters.findIndex((a) => {
         return a.id === encounter.id;
       });
       section.encounters.splice(i, 1);
     },
-    moveEncounterUpInSection: ({ state }, section, index) => {
+    moveEncounterUpInSection: ({ state }, { section, index }) => {
       if (index > 0) {
         let en = section.encounters.splice(index, 1);
         section.encounters.splice(index - 1, 0, ...en);
       }
     },
-    moveEncounterDownInSection: ({ state }, section, index) => {
+    moveEncounterDownInSection: ({ state }, { section, index }) => {
       if (index + 1 < section.encounters.length) {
         let en = section.encounters.splice(index, 1);
         section.encounters.splice(index + 1, 0, ...en);
       }
     },
-    moveEncounterFromSectionToSection: ({ state }, section1, section2, encounter) => {
+    moveEncounterFromSectionToSection: ({ state }, { section1, section2, encounter }) => {
       let i = section1.encounters.findIndex((a) => encounter.id === a.id);
       section1.encounters.splice(i, 1);
       section2.encounters.push(encounter);
     },
-    moveEncounterFromChapterToSection: ({ state }, encounter, section) => {
+    moveEncounterFromChapterToSection: ({ state }, { encounter, section }) => {
       let i = state.currentChapter.encounters.findIndex((a) => a.name === encounter.name);
       state.currentChapter.encounters.splice(i, 1);
       section.encounters.push(encounter);

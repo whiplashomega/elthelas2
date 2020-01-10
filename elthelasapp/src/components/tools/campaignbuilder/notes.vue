@@ -82,7 +82,9 @@
             <div v-for="(section, $index) in chapter.sections" :key="section.id">
               <div class="row">
                 <div class="col-sm-12">
-                  <label>Title</label><button @click="moveSectionUp($index)">↑</button><button @click="moveSectionDown($index)">↓</button><button @click="deleteSection(section)">&#128465;</button>
+                  <label>Title</label><button @click="moveSectionUp($index)" class="btn btn-sm">↑</button>
+                  <button @click="moveSectionDown($index)" class="btn btn-sm">↓</button>
+                  <button @click="deleteSection(section)" class="btn btn-sm">&#128465;</button>
                   <input type="text" class="form-control" v-model="section.title" />
                 </div>
               </div>
@@ -97,7 +99,9 @@
                 <hr />
                 <div class="row">
                   <div class="col-sm-6">
-                    <label>Name</label><button @click="moveEncounterUpInSection(section, $index)">↑</button><button @click="moveEncounterDownInSection(section, $index)">↓</button><button @click="deleteEncounterFromSection(section, encounter)">&#128465;</button>
+                    <label>Name</label><button @click="moveEncounterUpInSection({ section: section, index: $index })" class="btn btn-xs">↑</button>
+                    <button @click="moveEncounterDownInSection({ section: section, index: $index })" class="btn btn-sm">↓</button>
+                    <button @click="deleteEncounterFromSection({ section: section, encounter: encounter })" class="btn btn-xs">&#128465;</button>
                     <input type="text" class="form-control" v-model="encounter.name" />
                   </div>
                   <div class="col-sm-6">
@@ -137,7 +141,7 @@
                   Move to Section
                   <select v-model="section2" class="form-control form-control-sm">
                     <option v-for="sec2 in chapter.sections" :key="sec2.id" :value="sec2">{{ section.title }}</option>
-                    <button class="btn btn-success btn-sm" @click="moveEncounterFromSectionToSection(section, section2, encounter)">Go</button>
+                    <button class="btn btn-success btn-sm" @click="moveEncounterFromSectionToSection({ section1: section, section2: section2, encounter: encounter })">Go</button>
                   </select>
                 </div>
               </div>
@@ -215,8 +219,8 @@
                 <div>
                   <h4>
                     <a :href="encounter.link" target="_blank">{{ encounter.name }}</a>
-                    <button @click="moveEncounterUpInSection(section, $index)" class="btn btn-xs">↑</button>
-                    <button @click="moveEncounterDownInSection(section, $index)" class="btn btn-xs">↓</button>
+                    <button @click="moveEncounterUpInSection({ section: section, index: $index })" class="btn btn-xs">↑</button>
+                    <button @click="moveEncounterDownInSection({ section: section, index: $index })" class="btn btn-xs">↓</button>
                     <button @click="loadEncounter(encounter.link)" class="btn btn-success btn-xs">Run in Tab</button>
                   </h4>
                   <div class="form-check">
