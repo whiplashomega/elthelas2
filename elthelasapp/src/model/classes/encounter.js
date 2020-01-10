@@ -1,6 +1,6 @@
 export default function () {
   return {
-    id: Math.random(),
+    id: Date.now(),
     name: "",
     text: "",
     treasure: "",
