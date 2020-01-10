@@ -14,7 +14,8 @@ function newChapter () {
   return {
     id: Math.random(),
     title: "New Chapter",
-    encounters: []
+    encounters: [],
+    sections: []
   };
 }
 

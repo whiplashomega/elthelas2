@@ -32,7 +32,7 @@
                 <input type="text" class="form-control" v-model="chapter.title" />
               </label>
             </div>
-            <div v-for="(encounter, $index) in chapter.encounters" :key="encounter._id">
+            <div v-for="(encounter, $index) in chapter.encounters" :key="encounter.id">
               <hr />
               <div class="row">
                 <div class="col-sm-6">
@@ -79,6 +79,81 @@
                 <button class="btn btn-primary" @click="addEncounter()">Add Encounter</button>
               </div>
             </div>
+            <div v-for="(section, $index) in chapter.sections" :key="section.id">
+              <div class="row">
+                <div class="col-sm-12">
+                  <label>Title</label><button @click="moveSectionUp($index)">↑</button><button @click="moveSectionDown($index)">↓</button><button @click="deleteSection(section)">&#128465;</button>
+                  <input type="text" class="form-control" v-model="section.title" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <label>Section Description (markdown allowed)</label>
+                  <textarea v-model="section.description" class="form-control encounterbox"></textarea>
+                </div>
+                <div class="col-sm-6" v-html="$options.filters.marked(section.description)"></div>
+              </div>
+              <div v-for="(encounter, $index) in section.encounters" :key="encounter.id">
+                <hr />
+                <div class="row">
+                  <div class="col-sm-6">
+                    <label>Name</label><button @click="moveEncounterUpInSection(section, $index)">↑</button><button @click="moveEncounterDownInSection(section, $index)">↓</button><button @click="deleteEncounterFromSection(section, encounter)">&#128465;</button>
+                    <input type="text" class="form-control" v-model="encounter.name" />
+                  </div>
+                  <div class="col-sm-6">
+                    <label>Runner Link</label>
+                    <input type="text" class="form-control" v-model="encounter.link" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <label>Image URL</label>
+                    <input type="text" class="form-control" v-model="encounter.image" />
+                  </div>
+                  <div class="col-sm-4">
+                    <label>Flags</label>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" v-model="encounter.random" />
+                      <label class="form-check-label">Random</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" v-model="encounter.complete" />
+                      <label class="form-check-label">Complete</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <label>Encounter Text (markdown allowed)</label>
+                    <textarea v-model="encounter.text" class="form-control encounterbox"></textarea>
+                  </div>
+                  <div class="col-sm-6" v-html="$options.filters.marked(encounter.text)"></div>
+                </div>
+                <div>
+                  <label>Potential Treasure (markdown allowed)</label>
+                  <textarea v-model="encounter.treasure" class="form-control" style="min-height:150px;"></textarea>
+                </div>
+                <div>
+                  Move to Section
+                  <select v-model="section2" class="form-control form-control-sm">
+                    <option v-for="sec2 in chapter.sections" :key="sec2.id" :value="sec2">{{ section.title }}</option>
+                    <button class="btn btn-success btn-sm" @click="moveEncounterFromSectionToSection(section, section2, encounter)">Go</button>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <hr />
+                <div class="btn-group">
+                  <button class="btn btn-primary" @click="addEncounterToSection(section)">Add Encounter</button>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <hr />
+              <div class="btn-group">
+                <button class="btn btn-primary" @click="addSection()">Add Section</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -94,7 +169,7 @@
           </div>
           <div :class="showChapters ? 'col-sm-9' : 'col-sm-12'">
             <h2>{{ chapter.title }}</h2>
-            <div v-for="(encounter, $index) in chapter.encounters" :key="encounter._id" :class="encounter.complete ? 'complete' : ''">
+            <div v-for="(encounter, $index) in chapter.encounters" :key="encounter.id" :class="encounter.complete ? 'complete' : ''">
               <div>
                 <h3>
                   <a :href="encounter.link" target="_blank">{{ encounter.name }}</a>
@@ -117,6 +192,50 @@
                 <div>
                   <h4>Session Notes</h4>
                   <textarea v-model="encounter.sessionnotes" class="form-control"></textarea>
+                </div>
+              </div>
+            </div>
+            <div v-for="(section, $index) in chapter.sections" :key="section.id" :class="section.complete ? 'complete' : ''">
+              <h3>
+                {{ section.title }}
+                <button @click="moveSectionUp($index)" class="btn btn-sm">↑</button>
+                <button @click="moveSectionDown($index)" class="btn btn-sm">↓</button>
+              </h3>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" v-model="section.complete" />
+                <label class="form-check-label">Complete</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" v-model="section.hidden" />
+                <label class="form-check-label">Hide</label>
+              </div>
+              <div v-html="$options.filters.marked(section.description)" v-if="!section.hidden"></div>
+              <div v-for="(encounter, $index) in section.encounters" :key="encounter.id"
+                   :class="encounter.complete ? 'complete' : ''" v-if="!section.hidden">
+                <div>
+                  <h4>
+                    <a :href="encounter.link" target="_blank">{{ encounter.name }}</a>
+                    <button @click="moveEncounterUpInSection(section, $index)" class="btn btn-xs">↑</button>
+                    <button @click="moveEncounterDownInSection(section, $index)" class="btn btn-xs">↓</button>
+                    <button @click="loadEncounter(encounter.link)" class="btn btn-success btn-xs">Run in Tab</button>
+                  </h4>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" v-model="encounter.complete" />
+                    <label class="form-check-label">Complete</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" v-model="encounter.closed" />
+                    <label class="form-check-label">Hide</label>
+                  </div>
+                  <div style="float:right;max-width:40%;" v-if="encounter.image && !encounter.closed">
+                    <img :src="encounter.image" :alt="encounter.name" />
+                  </div>
+                  <div v-html="$options.filters.marked(encounter.text)" v-if="!encounter.closed"></div>
+                  <div v-html="$options.filters.marked(encounter.treasure)" v-if="!encounter.closed"></div>
+                  <div>
+                    <h4>Session Notes</h4>
+                    <textarea v-model="encounter.sessionnotes" class="form-control"></textarea>
+                  </div>
                 </div>
               </div>
             </div>

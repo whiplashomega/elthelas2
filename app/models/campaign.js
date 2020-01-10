@@ -6,7 +6,8 @@ var Encounter = require('./encounter.js');
 var Chapter = new Schema({
   id: Number,
   title: { type: String, required: true },
-  encounters: []
+  encounters: [],
+  sections: []
 });
 
 var Campaign = new Schema({

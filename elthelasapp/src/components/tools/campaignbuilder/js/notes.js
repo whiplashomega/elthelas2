@@ -23,7 +23,8 @@ export default {
   },
   data: function () {
     return {
-      comp: this
+      comp: this,
+      section2: { title: "Please Select a Section", id: 0 }
     };
   },
   methods: {
@@ -36,7 +37,17 @@ export default {
       moveChUp: 'moveChapterUp',
       moveChDown: 'moveChapterDown',
       deleteEncounter: 'deleteCampaignEncounter',
-      deleteChapter: 'deleteChapter'
+      deleteChapter: 'deleteChapter',
+      addSection: "addSection",
+      deleteSection: "deleteSection",
+      addEncounterToSection: "addEncounterToSection",
+      deleteEncounterFromSection: "deleteEncounterFromSection",
+      moveEncounterUpInSection: "moveEncounterUpInSection",
+      moveEncounterDownInSection: "moveEncounterDownInSection",
+      moveEncounterFromSectionToSection: "moveEncounterFromSectionToSection",
+      moveEncounterFromChapterToSection: "moveEncounterFromChapterToSection",
+      moveSectionUp: "moveSectionUp",
+      moveSectionDown: "moveSectionDown"
     }),
     loadEncounter (link) {
       this.$parent.$parent.$parent.loadEncounter(link);

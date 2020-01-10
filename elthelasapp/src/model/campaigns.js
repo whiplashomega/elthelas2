@@ -133,9 +133,61 @@ export default {
       state.currentChapter = state.current.chapters[0];
     },
     invitePCToCampaign: ({ state, getters }, pcid) => {
-      Vue.http.get('/characters/invite/' + pcid + '/' + state.current._id + '?token=' + getters.getUserInfo.token).then((res) => {
+      Vue.http.get('/characters/invite/' + pcid + '/' + state.current._id + '?token=' + getters.getUserInfo.token).then(() => {
         return true;
       });
+    },
+    addSection: ({ state }) => {
+      state.currentChapter.sections.push({ id: Math.random(), encounters: [], title: "", description: "", complete: false, hidden: false });
+    },
+    deleteSection: ({ state }, section) => {
+      let i = state.currentChapter.sections.findIndex((a) => {
+        return a.id === section.id;
+      });
+      state.currentChapter.sections.splice(i, 1);
+    },
+    addEncounterToSection: ({ state }, section) => {
+      section.encounters.push(newEncounter());
+    },
+    deleteEncounterFromSection: ({ state }, section, encounter) => {
+      let i = section.encounters.findIndex((a) => {
+        return a.id === encounter.id;
+      });
+      section.encounters.splice(i, 1);
+    },
+    moveEncounterUpInSection: ({ state }, section, index) => {
+      if (index > 0) {
+        let en = section.encounters.splice(index, 1);
+        section.encounters.splice(index - 1, 0, ...en);
+      }
+    },
+    moveEncounterDownInSection: ({ state }, section, index) => {
+      if (index + 1 < section.encounters.length) {
+        let en = section.encounters.splice(index, 1);
+        section.encounters.splice(index + 1, 0, ...en);
+      }
+    },
+    moveEncounterFromSectionToSection: ({ state }, section1, section2, encounter) => {
+      let i = section1.encounters.findIndex((a) => encounter.id === a.id);
+      section1.encounters.splice(i, 1);
+      section2.encounters.push(encounter);
+    },
+    moveEncounterFromChapterToSection: ({ state }, encounter, section) => {
+      let i = state.currentChapter.encounters.findIndex((a) => a.name === encounter.name);
+      state.currentChapter.encounters.splice(i, 1);
+      section.encounters.push(encounter);
+    },
+    moveSectionUp: ({ state }, index) => {
+      if (index > 0) {
+        let section = state.currentChapter.sections.splice(index, 1);
+        state.currentChapter.sections.splice(index - 1, 0, ...section);
+      }
+    },
+    moveSectionDown: ({ state }, index) => {
+      if (index + 1 < state.currentChapter.sections.length) {
+        let en = state.currentChapter.sections.splice(index, 1);
+        state.currentChapter.sections.splice(index + 1, 0, ...en);
+      }
     }
   }
 };

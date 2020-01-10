@@ -89,7 +89,8 @@ export default {
       totalslots: "totalslots",
       getInitMod: "getInitMod",
       admin: "isAdmin",
-      curcharacter: "getCharacter"
+      curcharacter: "getCharacter",
+      characters: "serverCharacters"
     }),
     filteredcreatures () {
       let comp = this;
@@ -121,8 +122,8 @@ export default {
       let blocks = [];
       this.encountercreatures.forEach((a) => {
         if (!a.ispc) {
-          let i = blocks.findIndex((b) => b.name === a.name );
-          if(i === -1) {
+          let i = blocks.findIndex((b) => b.name === a.name);
+          if (i === -1) {
             blocks.push(a);
           }
         }
@@ -332,7 +333,7 @@ export default {
         wismod: this.getStatMod(4),
         chamod: this.getStatMod(5),
         saves: "+" + this.getSaveMod(0) + " strength +" + this.getSaveMod(1) + " dexterity +" + this.getSaveMod(2) + " constitution +" + this.getSaveMod(3) + " intelligence +" + this.getSaveMod(4) + " wisdom +" + this.getSaveMod(5) + " charisma.",
-          skills: this.createSkillsArray(character),
+        skills: this.createSkillsArray(character),
         senses: "",
         damageresistances: "",
         damageimmunities: "",
@@ -361,7 +362,7 @@ export default {
     roll () {
       let rolledCreatures = [];
       this.encountercreatures.forEach((character) => {
-        let prerolled = rolledCreatures.findIndex((a) => a.name === character.name );
+        let prerolled = rolledCreatures.findIndex((a) => a.name === character.name);
         if (prerolled !== -1) {
           // we want to group creatures of the same type rather than roll them individually
           character.init = rolledCreatures[prerolled].init;

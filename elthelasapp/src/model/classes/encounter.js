@@ -1,5 +1,6 @@
 export default function () {
   return {
+    id: Math.random(),
     name: "",
     text: "",
     treasure: "",
@@ -10,6 +11,7 @@ export default function () {
     tier: "",
     random: true,
     complete: false,
+    subencounter: [],
     sessionnotes: ""
   };
 }
