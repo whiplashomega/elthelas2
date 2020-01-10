@@ -131,20 +131,21 @@
                 </div>
                 <div>
                   <label>Potential Treasure (markdown allowed)</label>
-                  <textarea v-model="encounter.treasure" class="form-control" style="min-height:150px;"></textarea>
+                  <textarea v-model="encounter.treasure" class="form-control"></textarea>
                 </div>
                 <div>
                   Move to Section
                   <select v-model="section2" class="form-control form-control-sm">
                     <option v-for="sec2 in chapter.sections" :key="sec2.id" :value="sec2">{{ section.title }}</option>
-                    <button class="btn btn-success btn-sm" @click="moveEncounterFromSectionToSection({ section1: section, section2: section2, encounter: encounter })">Go</button>
                   </select>
+                  <button class="btn btn-success btn-sm" @click="moveEncounterFromSectionToSection({ section1: section, section2: section2, encounter: encounter })">Go</button>
+                  <button class="btn btn-primary btn-sm" @click="addEncounterToSection({ section: section, index: $index })">Add Encounter After This One</button>
                 </div>
               </div>
               <div class="row">
                 <hr />
                 <div class="btn-group">
-                  <button class="btn btn-primary" @click="addEncounterToSection(section)">Add Encounter</button>
+                  <button class="btn btn-primary" @click="addEncounterToSection({ section: section, index: section.encounters.length - 1 })">Add Encounter</button>
                 </div>
               </div>
             </div>

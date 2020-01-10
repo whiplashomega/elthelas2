@@ -146,8 +146,8 @@ export default {
       });
       state.currentChapter.sections.splice(i, 1);
     },
-    addEncounterToSection: ({ state }, section) => {
-      section.encounters.push(newEncounter());
+    addEncounterToSection: ({ state }, { section, index }) => {
+      section.encounters.splice(index, 0, newEncounter());
     },
     deleteEncounterFromSection: ({ state }, { section, encounter }) => {
       let i = section.encounters.findIndex((a) => {
