@@ -64,7 +64,7 @@
               <div class="row">
                 <div class="col-sm-6">
                   <label>Encounter Text (markdown allowed)</label>
-                  <textarea v-model="encounter.text" class="form-control"></textarea>
+                  <textarea v-model="encounter.text" class="form-control encounterbox"></textarea>
                 </div>
                 <div class="col-sm-6" v-html="$options.filters.marked(encounter.text)"></div>
               </div>
@@ -117,10 +117,6 @@
                   <div class="col-sm-4">
                     <label>Flags</label>
                     <div class="form-check">
-                      <input type="checkbox" class="form-check-input" v-model="encounter.random" />
-                      <label class="form-check-label">Random</label>
-                    </div>
-                    <div class="form-check">
                       <input type="checkbox" class="form-check-input" v-model="encounter.complete" />
                       <label class="form-check-label">Complete</label>
                     </div>
@@ -129,7 +125,7 @@
                 <div class="row">
                   <div class="col-sm-6">
                     <label>Encounter Text (markdown allowed)</label>
-                    <textarea v-model="encounter.text" class="form-control encounterbox"></textarea>
+                    <textarea v-model="encounter.text" class="form-control"></textarea>
                   </div>
                   <div class="col-sm-6" v-html="$options.filters.marked(encounter.text)"></div>
                 </div>
