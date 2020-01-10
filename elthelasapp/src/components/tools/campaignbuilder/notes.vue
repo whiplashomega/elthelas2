@@ -92,14 +92,14 @@
                 <input type="checkbox" class="form-check-input" v-model="section.hidden" />
                 <label class="form-check-label">Hide</label>
               </div>
-              <div class="row" v-if="section.hidden">
+              <div class="row" v-if="!section.hidden">
                 <div class="col-sm-6">
                   <label>Section Description (markdown allowed)</label>
                   <textarea v-model="section.description" class="form-control encounterbox"></textarea>
                 </div>
                 <div class="col-sm-6" v-html="$options.filters.marked(section.description)"></div>
               </div>
-              <div v-for="(encounter, $index) in section.encounters" :key="encounter.id"  v-if="section.hidden">
+              <div v-for="(encounter, $index) in section.encounters" :key="encounter.id"  v-if="!section.hidden">
                 <hr />
                 <div class="row">
                   <div class="col-sm-6">
@@ -146,7 +146,7 @@
                   <button class="btn btn-primary btn-sm" @click="addEncounterToSection({ section: section, index: $index + 1 })">Add Encounter After This One</button>
                 </div>
               </div>
-              <div class="row" v-if="section.hidden">
+              <div class="row" v-if="!section.hidden">
                 <hr />
                 <div class="btn-group">
                   <button class="btn btn-primary" @click="addEncounterToSection({ section: section, index: section.encounters.length })">Add Encounter</button>
