@@ -1,0 +1,19 @@
+      {
+        "id": "asmodeus",
+        "name": "Asmodeus",
+        "holysymbol": "A pentagram",
+        "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/asmodeuspentagram.jpg",
+        "alignment": "Lawful Evil",
+        "domains": "Lord of Devils, God of Pacts",
+        "domains5": "Fire, War, Death",
+        "worshippers": "",
+        "weapon": "Mace",
+        "enemy": "Ba'al",
+        "appearance": "",
+        "home": "Nessus, the 9th Layer of Hell",
+        "tenets": [],
+        "holiday": "",
+        "lore": "",
+        "level1": "",
+        "level10": ""
+      }

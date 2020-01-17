@@ -99,7 +99,7 @@
                 </div>
                 <div class="col-sm-6" v-html="$options.filters.marked(section.description)"></div>
               </div>
-              <div v-for="(encounter, $index) in section.encounters" :key="encounter.id"  v-if="!section.hidden">
+              <div v-for="(encounter, $index) in section.encounters" :key="encounter.id" v-if="!section.hidden">
                 <hr />
                 <div class="row">
                   <div class="col-sm-6">

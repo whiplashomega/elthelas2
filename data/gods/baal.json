@@ -1,0 +1,22 @@
+      {
+        "id": "baal",
+        "name": "Ba'al",
+        "holysymbol": "A skull surrounded by drops of blood",
+        "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/baalskull.png",
+        "alignment": "Chaotic Evil",
+        "domains": "Lord of Demons, God of Destruction, Rape, Pillage, and Fear",
+        "domains5": "Fire, Death",
+        "interfaithblessing": "",
+        "worshippers": "Ba'al is not so much worshipped as feared. The demons fear his wrath. If the lesser Demon Lords felt they could challenge him and win, they probably would do so, but it speaks to Ba'al's power that until now none have. Mortals who pay homage to Ba'al usually are fools who think they can outsmart him as part of a deal. Few live through the experience, fewer still come out ahead.",
+        "allowedalignments": "Chaotic Evil, Neutral Evil",
+        "weapon": "whip",
+        "enemy": "",
+        "appearance": "Ba'al typically appears similar to the Balor's, but larger, as a massive 20 ft tall humanoid creature with red skin, wings, and horns. The fires of the abyss shine through his eyes and mouth, and the world morphs around him.",
+        "dogma": "Ba'al teaches that loyalty is for the weak, and the only true way to control others is through fear. He believes that all the multiverse should belong to him as part of the abyss, subject to his will.",
+        "clergy": "The clergy of Ba'al tend to be hedonists who believe Ba'als promise of eternal domination of their peers.",
+        "home": "The Abyss",
+        "church": "",
+        "tenets": [],
+        "level1": "",
+        "level10": ""
+      }
