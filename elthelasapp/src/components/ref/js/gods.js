@@ -6,7 +6,7 @@ export default {
   }),
   data () {
     return {
-      GodByName: { worshippers: "", appearance: "", clergy: "", dogma: "", home: "" },
+      GodByName: false,
       alignment: "",
       domain: "",
       SelectedGod: "",

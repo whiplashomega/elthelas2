@@ -56,51 +56,52 @@
         </p>
       </div>
       <div class="col-sm-9">
-        <div v-if="GodByName" class="row">
+        <div v-if="GodByName">
           <h2>{{ GodByName.name }}</h2>
-          <table class="table table-striped table-responsive col-sm-8">
-            <tr>
-              <td>Holy Symbol</td>
-              <td>
-                <span data-ng-if="GodByName.symbolimage == undefined">{{ GodByName.holysymbol }}</span>
-              </td>
-            </tr>
-            <tr>
-              <td>Alignment</td><td>{{ GodByName.alignment }}</td>
-            </tr>
-            <tr>
-              <td>Portfolio</td><td>{{ GodByName.domains }}</td>
-            </tr>
-            <tr>
-              <td>Domains 5e</td><td>{{ GodByName.domains5 }}</td>
-            </tr>
-            <tr>
-              <td>Favored Weapon</td><td>{{ GodByName.weapon }}</td>
-            </tr>
-            <tr>
-              <td>Enemies</td><td>{{ GodByName.enemy }}</td>
-            </tr>
-          </table>
-          <img class="symbolimage col-sm-4" v-if="GodByName.symbolimage != undefined"
-               :src="GodByName.symbolimage" :alt="GodByName.holysymbol"
-               :title="GodByName.holysymbol" />
-          <h3>Home</h3>
+          <div class="row">
+            <table class="table table-striped table-responsive col-sm-7">
+              <tr>
+                <td>Holy Symbol</td>
+                <td>
+                  <span data-ng-if="GodByName.symbolimage == undefined">{{ GodByName.holysymbol }}</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Alignment</td><td>{{ GodByName.alignment }}</td>
+              </tr>
+              <tr>
+                <td>Portfolio</td><td>{{ GodByName.domains }}</td>
+              </tr>
+              <tr>
+                <td>Domains 5e</td><td>{{ GodByName.domains5 }}</td>
+              </tr>
+              <tr>
+                <td>Favored Weapon</td><td>{{ GodByName.weapon }}</td>
+              </tr>
+              <tr>
+                <td>Enemies</td><td>{{ GodByName.enemy }}</td>
+              </tr>
+            </table>
+            <div class="symbolimage col-sm-5" v-if="GodByName.symbolimage != undefined"
+                 :style="'background-image: url(' + GodByName.symbolimage + ')'" :title="GodByName.holysymbol"></div>
+          </div>
+          <h4>Home</h4>
           <div v-html="$options.filters.marked(GodByName.home)"></div>
-          <h3>Appearance</h3>
+          <h4>Appearance</h4>
           <div v-html="$options.filters.marked(GodByName.appearance)"></div>
-          <h3>Worshippers</h3>
+          <h4>Worshippers</h4>
           <div v-html="$options.filters.marked(GodByName.worshippers)"></div>
-          <h3>High Tenets</h3>
+          <h4>High Tenets</h4>
           <ul>
             <li v-for="tenet in GodByName.tenets" :key="tenet">{{ tenet }}</li>
           </ul>
-          <h3>Holidays</h3>
+          <h4>Holidays</h4>
           <div v-html="$options.filters.marked(GodByName.holiday)"></div>
-          <h3>Level 1 Faction Feature</h3>
+          <h4>Level 1 Faction Feature</h4>
           <div v-html="$options.filters.marked(GodByName.level1)"></div>
-          <h3>Level 10 Faction Feature</h3>
+          <h4>Level 10 Faction Feature</h4>
           <div v-html="$options.filters.marked(GodByName.level10)"></div>
-          <h3>Lore and History</h3>
+          <h4>Lore and History</h4>
           <div v-html="$options.filters.marked(GodByName.lore)"></div>
         </div>
       </div>
