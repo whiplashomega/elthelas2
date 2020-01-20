@@ -56,16 +56,13 @@
         </p>
       </div>
       <div class="col-sm-9">
-        <div v-if="GodByName">
+        <div v-if="GodByName" class="row">
           <h2>{{ GodByName.name }}</h2>
-          <table class="table table-striped table-responsive">
+          <table class="table table-striped table-responsive col-sm-8">
             <tr>
               <td>Holy Symbol</td>
               <td>
                 <span data-ng-if="GodByName.symbolimage == undefined">{{ GodByName.holysymbol }}</span>
-                <img class="symbolimage" v-if="GodByName.symbolimage != undefined"
-                     :src="GodByName.symbolimage" :alt="GodByName.holysymbol"
-                     :title="GodByName.holysymbol" />
               </td>
             </tr>
             <tr>
@@ -84,6 +81,9 @@
               <td>Enemies</td><td>{{ GodByName.enemy }}</td>
             </tr>
           </table>
+          <img class="symbolimage col-sm-4" v-if="GodByName.symbolimage != undefined"
+               :src="GodByName.symbolimage" :alt="GodByName.holysymbol"
+               :title="GodByName.holysymbol" />
           <h3>Home</h3>
           <div v-html="$options.filters.marked(GodByName.home)"></div>
           <h3>Appearance</h3>
