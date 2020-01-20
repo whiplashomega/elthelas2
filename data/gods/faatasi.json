@@ -1,0 +1,21 @@
+      {
+        "id": "faatasi",
+        "name": "Fa'atasi",
+        "holysymbol": "A disc half white and half black, similar to Nera's but inverted, with the black on top.",
+        "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/",
+        "alignment": "Chaotic Evil",
+        "domains": "Madness, the Far Realm",
+        "domains5": "",
+        "worshippers": "Fa'atasi has no dedicated worshipers, any creature that is afflicted with a madness of some kind is his worshiper but they are unaware that he is speaking to them. When they hear whispers or see something it is Fa`atasi. This is how he gets power. ",
+        "weapon": "The Mind Spike, a morning star mace with a brain on the end with a bunch of spikes coming out of it.",
+        "enemy": "Amathera",
+        "appearance": "He appears as whatever the being thinks about while under the madness, he has no physical form that anyone knows about. ",
+        "home": "The Far Realm",
+        "tenets": [
+          "The universe is not truly explainable by logic, mortals attempts to make sense of the universe are their pointless attempts at preventing their inevitable insanity."
+        ],
+        "holiday": "",
+        "lore": "He likes to spread madness to anything he can, in any realm that he can. He isn't out to destroy any worlds or to take over but just to spread madness. Creatures of the Far Realm are more akin to playthings for him. He will inflict madness upon anything to gain power and try to spread to all realms.",
+        "level1": "",
+        "level10": ""
+      }
