@@ -32,10 +32,10 @@ Gaian - Goddess of Nature and Creation
     Labious* (via Nera) - Goddess of Fertility love Luck and husbandry
     Agrios* (via Gaian) - God of the Feywind, Wild places, and freedom
     Ganarea* (via Area) - God of Pestilance and Disease - Brent Freeman
-Area* - Goddess of Ultimate Destruction, Vengeance, and Space
+Area - Goddess of Ultimate Destruction, Vengeance, and Space
   Annam* - Father of Giants, God of Strength
     Moira* (via Nera) - Goddess of Fate - Heather
-    Funkus* (via Gaian) - God of Dance/Celebration
+    Funkus* (via Gaian) - God of Dance/Celebration - Dan Kuzuhara
     Trolka (via Area) - God of Hunger, Gluttony, and Excess
   Fanome - God of Tricksters and Illusions, patron of gnomes
     Alitheia* (via Nera) - Goddess of Truth, Sight, and Divination - Brent Freeman
