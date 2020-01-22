@@ -16,12 +16,12 @@ Nera - Goddess of Life and Death
     Chronos* (via Gaian) - God of Time - Isaac Schwabacher
     Woden* (via Area) DECEASED replaced by Dorman - God of Might and Rule by Strength
 Gaian - Goddess of Nature and Creation
-  Molton - God of Fertility and Lust
+  Molton - God of Fire, Fertility and Lust
     Adonna* (via Nera) - Goddess of Beauty and Art
     Kamin* (via Gaian) - God of Fire in Service of Man, the Hearth, and Cooking
     Vulcan* (via Area) - God of Volcanos, Fiery Destruction, and Smithing
   Trimala - Goddess of Sea and Storms
-    Maris (via Nera) - God of Trade and Fair Deals
+    Maris (via Nera) - God of Travel, Trade and Fair Deals
     Sedna* (via Gaian) - Goddess of Fish and Sea Creatures - Brent Freeman
     Frosti* (via Area) - God of Ice, Snow, and Winter
   Dorun - God of Earth, Stone, and Music

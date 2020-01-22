@@ -4,7 +4,7 @@
         "holysymbol": "A disc half white and half black",
         "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/neraholysymbol.png",
         "alignment": "Neutral Good and Neutral Evil",
-        "domains": "Life, Birth, and Death",
+        "domains": "Goddess of Life, Birth, and Death",
         "domains5": "Death, Life",
         "worshippers": "Nera's worshippers are rare and hunted in most countries in the modern era, as the common belief is that she is the God of Necromancers. She is worshipped as the one true great God in the country of Arad. Within Arad, her church acts as both ruler and church.",
         "weapon": "Flail",
@@ -16,6 +16,9 @@
           "All must eventually face the death of their mortal bodies. It is best to accept death with grace.",
           "Bodies are but houses for the soul, once the soul has departed the body should be used to help the living."
         ],
+        "holiday": "",
+        "parents": "1st Generation",
+        "lore": "",
         "level1": "",
         "level10": ""
       }

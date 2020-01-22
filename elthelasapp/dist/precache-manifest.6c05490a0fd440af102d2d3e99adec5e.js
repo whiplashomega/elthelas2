@@ -1,6 +1,6 @@
 self.__precacheManifest = [
   {
-    "revision": "4e19a018c6ddd78fd38b0db88deed6f8",
+    "revision": "30f3d07388a960d48ea05e5f25bae8cf",
     "url": "/json/gods.json"
   },
   {
