@@ -10,7 +10,7 @@ Nera - Goddess of Life and Death
   Indra* - Goddess of Greed and Individuality, Mother of Dragons
     Bahamut (via Nera) - Lord of Metallic Dragons, God of Righteous Might
     Leviathan* (via Gaian) - Lord of the Great Sea Creatures (dragon turtles, whales, aboleths, etc) - Matt Donovan
-    Tiamat (via Area) - Lord of Chromatic Dragons, God of Tyranny
+    Tiamat (via Area) - Lord of Chromatic Dragons, God of Plots
   Tock - God of Absolute Order, Writing
     Magus* (via Nera) - God of Magic - Brent Freeman
     Chronos* (via Gaian) - God of Time - Isaac Schwabacher
@@ -36,7 +36,7 @@ Area* - Goddess of Ultimate Destruction, Vengeance, and Space
   Annam* - Father of Giants, God of Strength
     Moira* (via Nera) - Goddess of Fate - Heather
     Funkus* (via Gaian) - God of Dance/Celebration
-    Odio* (via Area) - God of Hatred
+    Trolka (via Area) - God of Hunger, Gluttony, and Excess
   Fanome - God of Tricksters and Illusions, patron of gnomes
     Alitheia* (via Nera) - Goddess of Truth, Sight, and Divination - Brent Freeman
     Mystikinae* (via Gaian) - God of Secrets, Lies, and Forbidden Knowledge
@@ -48,4 +48,4 @@ Area* - Goddess of Ultimate Destruction, Vengeance, and Space
   Vrasja* - God of Assassins, Murder, and Blood
     Ptoma* (via Nera) - God of Undeath and the Undead
     Interitus* (via Gaian) - God of Decay, Fungus, and Soil
-    Ogard* (via Area) - God of Hunger, Gluttony, and Excess
+    Odio* (via Area) - God of Hatred
