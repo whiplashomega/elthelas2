@@ -1,6 +1,6 @@
 self.__precacheManifest = [
   {
-    "revision": "86b9810a3d1f9b8be43fc439a05e0f0f",
+    "revision": "682fe13978a71b65cc564ba1ed443559",
     "url": "/json/gods.json"
   },
   {
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "386683512f269252d7e89e58bc7ced70",
+    "revision": "743eb8478dc531625af708a651418085",
     "url": "/index.html"
   },
   {
@@ -152,8 +152,8 @@ self.__precacheManifest = [
     "url": "/json/features.json"
   },
   {
-    "revision": "37c9361412dad16d5b44",
-    "url": "/js/app.37f1913b.js"
+    "revision": "bac5550bd967bfd2e8fc",
+    "url": "/js/app.0e14ec3d.js"
   },
   {
     "revision": "a203c3874f8938b08d3e",
@@ -180,7 +180,7 @@ self.__precacheManifest = [
     "url": "/json/organizations.json"
   },
   {
-    "revision": "1e15a90a1135708b17cf15d248a55c96",
+    "revision": "6bf4f097eb9abb7a0e4a90a0fccecd80",
     "url": "/json/races.json"
   },
   {
@@ -296,7 +296,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/pcs.md"
   },
   {
-    "revision": "37c9361412dad16d5b44",
+    "revision": "bac5550bd967bfd2e8fc",
     "url": "/css/app.f630ddcd.css"
   },
   {

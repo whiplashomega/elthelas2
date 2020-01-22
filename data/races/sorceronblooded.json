@@ -21,6 +21,7 @@
     {
       "id": "humanborn",
       "name": "Human Born",
+      "singular": "Human Born",
       "description": "Sorceron Blooded born of humans tend towards more versatility than many others. Often rising to positions of leadership and influence.",
       "traits": [
         { "name": "Ability Score Increase", "description": "your Charisma score increases by 2 and two other ability scores by 1." },
@@ -33,12 +34,13 @@
       "averageweight": 175,
       "baseweight": 110,
       "weightroll": "2d4",
-      "stats": [0, 0, 0, 2, 0, 1],
+      "stats": [0, 0, 0, 0, 0, 2],
       "speed": [30, 0, 0, 0, 0]
     },
     {
       "id": "elfborn",
       "name": "Elf Born",
+      "singular": "Elf Born",
       "description": "Sorceron Blooded born of elves retain much of the fey grace of their parents, but with a spellcasting ability beyond even most elves.",
       "traits": [
         { "name": "Ability Score Increase", "description": "your Intelligence score increases by 2 and one other ability score by 1." },
@@ -53,12 +55,13 @@
       "averageweight": 140,
       "baseweight": 100,
       "weightroll": "1d6",
-      "stats": [0, 0, 0, 2, 0, 1],
+      "stats": [0, 0, 0, 2, 0, 0],
       "speed": [30, 0, 0, 0, 0]
     },
     {
       "id": "dwarfborn",
       "name": "Dwarf Born",
+      "singular": "Dwarf Born",
       "description": "Sorceron Blooded born of dwarves are hardy folk, with a keen intellect, often discernible from other dwarves only by their unnatural gift with magic.",
       "traits": [
         { "name": "Ability Score Increase", "description": "your Intelligence score increases by 2, your Constitution score increases by 1." },
@@ -73,12 +76,13 @@
       "averageweight": 135,
       "baseweight": 100,
       "weightroll": "2d6",
-      "stats": [0, 0, 0, 2, 0, 1],
+      "stats": [0, 0, 1, 2, 0, 0],
       "speed": [30, 0, 0, 0, 0]
     },
     {
       "id": "orcborn",
       "name": "Orc Born",
+      "singular": "Orc Born",
       "description": "Sorceron Blooded born of orcs are growing increasingly common since the awakening of the Prince of Fiends, as the Prince enjoys his carnal pleasures, and many an orc woman dreams of the prestige of bearing a child of the prince. As the first generation of orc born sorceron blooded has reached maturity they have been recruited into the highest echelons of orc society, serving as blackguards, warlords, and mages in service of the Prince.",
       "traits": [
         { "name": "Ability Score Increase", "description": "your Strength, Intelligence, and Charisma scores each increase by 1." },
@@ -92,7 +96,7 @@
       "averageweight": 215,
       "baseweight": 140,
       "weightroll": "2d6",
-      "stats": [0, 0, 0, 2, 0, 1],
+      "stats": [1, 0, 0, 1, 0, 1],
       "speed": [30, 0, 0, 0, 0]
     }
   ]

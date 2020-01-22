@@ -79,6 +79,9 @@
                 <td>Favored Weapon</td><td>{{ GodByName.weapon }}</td>
               </tr>
               <tr>
+                <td>Origins</td><td>{{ GodByName.parents }}</td>
+              </tr>
+              <tr>
                 <td>Enemies</td><td>{{ GodByName.enemy }}</td>
               </tr>
             </table>

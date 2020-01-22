@@ -4,19 +4,20 @@
         "holysymbol": "A black pick and hammer crossed over a silver background",
         "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/dorunholysymbol.png",
         "alignment": "Lawful Neutral",
-        "domains": "Cavern, Craft, Darkness, Dwarf, Earth, Fate, Metal, Rune",
+        "domains": "God of Earth, Stone, and Music",
         "domains5": "Earth, Forge",
-        "interfaithblessing": "+2 to AC",
-        "worshippers": "There is not a dwarf in the world who does not feel the call of the church of Dorun, whether they actively worship him or not, deep places resonate in their bones and the deep places resonate with the sound of His voice. Occasionally gnomes from Stagenheim who live deep within their caves will also take up the worship of Dorun, but for them it does not resonate quite so strongly.",
+        "worshippers": "There is not a dwarf in the world who does not feel the call of the church of Dorun, whether they actively worship him or not, deep places resonate in their bones and the deep places resonate with the sound of His voice. Occasionally gnomes from Stagenheim who live deep within their caves will also take up the worship of Dorun, but for them it does not resonate quite so strongly.\n\nThe clergy of Dorun are often great singers or composers. They often dedicate new holds and caverns with their first songs personally. They also enforce the caste system of dwarven society, refusing to dedicate caverns that are to be the home of any who have lived on the surface, for to be separated from the song of Dorun is to be separated from God.",
         "allowedalignments": "Neutral Good, Lawful Neutral, Neutral, Chaotic Neutral, Neutral Evil",
         "weapon": "War hammer",
-        "enemy": "",
+        "enemy": "Sylvan",
         "appearance": "Dorun appears as a middle-aged but still powerful looking dwarf, bald but with a long graying red braided beard.  He wears robes of black and gold studded with gemstones.",
-        "dogma": "Dorun takes great pleasure in song, especially those that resonate throughout his caverns and caves. Even bar songs in the depths of the Dwarven holds contain complicated harmony and counterpoint that is only enhanced when heard from 20 or 30 miles away as it echoes through chamber after chamber. Hymns are even more complicated. He further encourages his followers to delve deeply into the earth in search of rare metals and new places to call home. Magic runes were a gift of Dorun to dwarven bards and wizards who were great composers. The deep resonant tones of the dwarven voice are most suited to His worship, but higher tones and instruments are not turned away.",
-        "clergy": "The clergy of Dorun are often great singers or composers. They often dedicate new holds and caverns with their first songs personally. They also enforce the caste system of dwarven society, refusing to dedicate caverns that are to be the home of any who have lived on the surface, for to be separated from the song of Dorun is to be separated from God.",
         "home": "Plane of Earth",
-        "church": "",
-        "tenets": [],
+        "tenets": [
+          "The song of Dorun should never be left to die"
+        ],
+        "holiday": "",
+        "parents": "2nd Generation, born of Gaian",
+        "lore": "Dorun takes great pleasure in song, especially those that resonate throughout his caverns and caves. Even bar songs in the depths of the Dwarven holds contain complicated harmony and counterpoint that is only enhanced when heard from 20 or 30 miles away as it echoes through chamber after chamber. Hymns are even more complicated. He further encourages his followers to delve deeply into the earth in search of rare metals and new places to call home. Magic runes were a gift of Dorun to dwarven bards and wizards who were great composers. The deep resonant tones of the dwarven voice are most suited to His worship, but higher tones and instruments are not turned away.",
         "level1": "",
         "level10": ""
       }
