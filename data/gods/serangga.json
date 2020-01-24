@@ -1,20 +1,23 @@
       {
         "id": "serangga",
         "name": "Serangga",
-        "holysymbol": "",
+        "holysymbol": "A giant snake with insect legs in the shape of an "S" with 2 mandibles coming out the side of the mouth.",
         "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/",
-        "alignment": "",
-        "domains": "God of Insects, Snakes, and Crawling Things",
-        "domains5": "",
-        "worshippers": "",
+        "alignment": "Neutral",
+        "domains": "Goddess of Insects, Snakes, and Crawling Things",
+        "domains5": "Earth, Nature",
+        "worshippers": "Ankheg, Carrion Crawler, Ettercap, Grick, Shambler, Will -o'-Wisp, Yuan-Ti",
         "weapon": "",
-        "enemy": "",
-        "appearance": "",
-        "home": "",
-        "tenets": [],
+        "enemy": "Sedna",
+        "appearance": "Serangga appears as a 200 ft long snake black snake body with spider/centipede legs all down the torso. She has 4 Red eyes stacked on top of each other. When it opens its mouth 2 large barbed mandibles come out instead of teeth along with a forked tongue. The mandibles are venomous. She spends most of its time under the dirt.",
+        "home": "Palusectum",
+        "tenets": [
+          "The fittest survive",
+          "It is the kill that matters"
+        ],
         "holiday": "",
         "parents": "3rd Generation, born of Dorun and Area",
-        "lore": "",
+        "lore": "Serangga burrows under the ground and stays hidden most of the time, but when she is hungry she bursts from the ground to ambush her prey. The force of her sudden burst from the earth can cause earthquakes for miles around. Serangga is the embodiement of the principal Survial of the Fittest. She has no emotions as mortals typically consider them, considering only her own survival in her calculations.",
         "level1": "",
         "level10": ""
       }
