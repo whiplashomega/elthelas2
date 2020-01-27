@@ -13,7 +13,7 @@ Nera - Goddess of Life and Death  *Logos*
     Tiamat (via Area) - Lord of Chromatic Dragons, God of Plots *Kolasdrag*
   Tock - God of Absolute Order, Writing, and Machines *Mechanus* 
     Chronos* (via Nera) - God of Time - Isaac Schwabacher *Eternium*
-    Magus* (via Gaian) - God of Magic - Brent Freeman *Mecharcana*
+    Magus* (via Gaian) - God of Magic - Brent Freeman *Arcanius*
     *Woden* (via Area) DECEASED replaced by Dorman - God of Might and Rule by Strength *Niktos, the Halls of Victory*
 Gaian - Goddess of Nature and Creation *Elthelas*
   Molton - God of Fire, Fertility and Lust *Ignisia*
