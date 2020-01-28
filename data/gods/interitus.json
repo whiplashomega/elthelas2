@@ -1,20 +1,24 @@
       {
         "id": "interitus",
         "name": "Interitus",
-        "holysymbol": "",
+        "holysymbol": "A domed and spotted mushroom cap sheltering the soil below. Potentially other smaller fungi are sheltering beneath the cap as well.",
         "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/",
-        "alignment": "",
+        "alignment": "Chaotic Neutral, followers are typically TN or CN",
         "domains": "God of Decay, Fungus, and Soil",
-        "domains5": "",
-        "worshippers": "",
-        "weapon": "",
-        "enemy": "",
-        "appearance": "",
+        "domains5": "Grave",
+        "worshippers": "Myconids, some druids, occasional fanatics (found throughout civilization)\n\nSylvan is Interitus holy language but all are welcome. Many treatises have been written, including one by Autumn-Mother Choira that’s considered a must-read, but there are no officially-sanctioned texts. Myconids, Interitus’ largest group of followers, have no spoken or written language.",
+        "weapon": "Quarterstaff from an unrefined tree branch or sapling",
+        "enemy": "Undead",
+        "appearance": "An enormous regal myconid, which appears as non-threatening and dignified as possible. When he needs to pass as more humanoid, he appears as a decaying-but-not-repulsive man adorned in natural garb, as if a druid. He is fastidious about not appearing disgusting, unlike Ganarea and Ptoma. ![Interitus Appearance](https://elthelas-images.herokuapp.com/holysymbol/interitusappearance.png)",
         "home": "Aposynthesi",
-        "tenets": [],
-        "holiday": "",
+        "tenets": [
+          "All return to the earth. Denying this cycle starves the next generation.",
+          "Decay is a noble part of nature."
+        ],
+        "holiday": "Even non-followers still widely perform an annual ritual to him at harvest-time: They bury a symbolic portion of their harvest in a shallow layer of dirt in their field, in hopes of appeasing Interitus so the rest of their harvest will not rot, and in hopes of being blessed with rich soils next year. This shows they accept that some rot must occur to make next year’s crops healthy. In most communities, the “gift to the earth” is a solemn ritual that is performed as the opening ceremony of the harvest festivities, before anyone starts eating and enjoying themselves.
+",
         "parents": "3rd Generation, born of Vrasja and Gaian",
-        "lore": "",
+        "lore": "\"Most ‘civilized’ people revile a corpse, try to fend off rot, and work hard to preserve their harvests. The very core of ‘civilization’ is a desperate attempt to resist decay, to stave off ruin and decline... It’s ironic, then, that the very foundation of civilization is the fertile fields they sow nature’s gifts in. The precious black soil, filled with worms and fungus and rot, made rich by the very decay they loathe.\n\nThe wise see a corpse or spoilt food for what it is: A boutinful feast. A beginning, not an end. A delightful home for pallid fungus and speckled mould and delicate slime. Soon it shall bloom with autumn’s rainbow! The stomach bloats, the skin dries, the eyes sink. Do not shy away from Interitus’ handiwork, it is just as divine as Sara’s blossoms.\" - excerpt from sermon by Choira Hecatté, a halfling preacher of Interitus\n\nInteritus considers himself a very misunderstood and unfairly maligned god. How is his domain any less vital and beautiful than Sara’s or Sylvan’s or Labious’? People associate him with Serangga and Ganarea, even Ptoma. Why does every depiction of undead have to feature gratuitous use of rotting flesh? Don’t they know undead are unnaturally preserved against rot and should in fact be freed to return to the earth and nourish future generations? And why can’t people grasp that pestilence is the product of an imbalanced system, but decay is as much a part of nature as birth?\n\nInteritus has done as much as he can to distance himself from his father Vrasja and his half-sibling Ptoma. But the destructive and angry impulses of Area still run through him: he hates those deny his role as a respectable part of the cycle of nature. Corporeal undead are an affront to Interitus and his followers: Corpses should be allowed to return to the earth, naturally. He also spars with Sara’s when she helps her followers preserve the bounties of harvests--she’s a degenerate child of Gaian because she serves civilization above nature, and yet somehow she’s still so much more beloved than he...",
         "level1": "",
         "level10": ""
       }

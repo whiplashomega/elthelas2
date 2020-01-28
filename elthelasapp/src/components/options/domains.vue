@@ -17,10 +17,12 @@
       <li class="list-inline-item"><button @click="showClass('earth')" class="racebutton btn btn-default">Earth</button></li>
       <li class="list-inline-item"><button @click="showClass('fire')" class="racebutton btn btn-default">Fire</button></li>
       <li class="list-inline-item"><button @click="showClass('craft')" class="racebutton btn btn-default">Forge</button></li>
+      <li class="list-inline-item"><button @click="showClass('grace')" class="racebutton btn btn-default">Grave</button></li>
       <li class="list-inline-item"><button @click="showClass('knowledge')" class="racebutton btn btn-default">Knowledge</button></li>
       <li class="list-inline-item"><button @click="showClass('life')" class="racebutton btn btn-default">Life</button></li>
       <li class="list-inline-item"><button @click="showClass('light')" class="racebutton btn btn-default">Light</button></li>
       <li class="list-inline-item"><button @click="showClass('nature')" class="racebutton btn btn-default">Nature</button></li>
+      <li class="list-inline-item"><button @click="showClass('order')" class="racebutton btn btn-default">Order</button></li>
       <li class="list-inline-item"><button @click="showClass('tempest')" class="racebutton btn btn-default">Tempest</button></li>
       <li class="list-inline-item"><button @click="showClass('trade')" class="racebutton btn btn-default">Trade</button></li>
       <li class="list-inline-item"><button @click="showClass('trickery')" class="racebutton btn btn-default">Trickery</button></li>
@@ -400,6 +402,73 @@
         At 17th level, your affinity for fire and metal becomes more powerful due to your deity’s blessing. You gain immunity to fire damage, and while you’re wearing heavy  armor, you have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.
       </p>
     </div>
+    <div class="racediv" id="grave">
+      <h2>Grave Domain</h2>
+      <p>
+        Gods of the grave watch over the line between life and death. To these deities, death and the afterlife are a foundational part of the multiverse. To desecrate the peace of the dead is an abomination. Followers of these deities seek to put wandering spirits to rest, destroy the undead, and ease the suffering of the dying. Their magic also allows them to stave off death for a time. particularly for a person who still has some great work to accomplish in the world. This is a delay of death, not a denial of it, for death will eventually get its due.
+      </p>
+      <h4>Grave Domain Spells</h4>
+      <table class="classtable table table-striped">
+        <thead>
+          <tr>
+            <th>Cleric Level</th><th>Spells</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st</td><td>bane, false life</td>
+          </tr>
+          <tr>
+            <td>3rd</td><td>gentle repose, ray of enfeeblement</td>
+          </tr>
+          <tr>
+            <td>5th</td><td>revivify, vampiric touch</td>
+          </tr>
+          <tr>
+            <td>7th</td><td>blight, death ward</td>
+          </tr>
+          <tr>
+            <td>9th</td><td>antilife shell, raise dead (Cleric of Nera Only)</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4>Circle of Mortality</h4>
+      <p>
+        At 1st level, you gain the ability to manipulate the line between life and death. When you would normally roll one or more dice to restore hit points with a spell to a creature at 0 hit points, you instead use the highest number possible for each die.
+      </p>
+      <p>
+        In addition, you learn the spare the dying cantrip, which doesn’t count against the number of cleric cantrips you know. For you, it has a range of 30 feet, and you can cast it as a bonus action.
+      </p>
+      <h4>Eyes of the Grave</h4>
+      <p>
+        At lst level, you gain the ability to occasionally sense the presence of the undead, whose existence is an insult to the natural cycle of life. As an action, you can open your awareness to magically detect undead. Until the end of your next turn, you know the location of any undead within 60 feet of you that isn’t behind total cover and that isn’t protected from divination magic. This sense doesn’t tell you anything about a creature's capabilities or identity.
+      </p>
+      <p>
+        You can use this feature a number of times equal to your Wisdom modifier (minimum Of once). You regain all expended uses when you finish a long rest.
+      </p>
+      <h4>Channel Divinity: Path to the Grave</h4>
+      <p>
+        Starting at 2nd level, you can use your Channel Divinity to mark another creature’s life force for termination.
+      </p>
+      <p>
+        As an action, you choose one creature you can see within 30 feet of you, cursing it until the end Of your next turn. The next time you or an ally of yours hits the cursed creature with an attack, the creature has vulnerability to all of that attack's damage, and then the curse ends.
+      </p>
+      <h4>Sentinel at Death's Door</h4>
+      <p>
+        At 6th level, you gain the ability to impede death’s progress. As a reaction when you or a creature you can see within 30 feet of you suffers a critical hit, you can turn that hit into a normal hit. Any effects triggered by a critical hit are canceled.
+      </p>
+      <p>
+        You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest.
+      </p>
+      <h4>Potent Spellcasting</h4>
+      <p>
+        Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.
+      </p>
+      <h4>Keeper of Souls</h4>
+      <p>
+        Starting at 17th level. you can seize a trace of vitality from a parting soul and use it to heal the living. When an enemy you can see dies within 60 feet of you, you or one creature of your choice that is within 60 feet of you regains hit points equal to the enemy’s number of Hit Dice. You can use this feature only if you aren’t incapacitated. Once you use it, you can't do so again until the start of your next turn.
+      </p>
+    </div>
     <div class="racediv" id="knowledge">
       <h2>Knowledge Domain</h2>
       <p>
@@ -647,6 +716,79 @@
       <h4>Master of Nature</h4>
       <p>
         At 17th level, you gain the ability to command animals and plant creatures. While creatures are charmed by your Charm Animals and Plants feature, you can take a bonus action on your turn to verbally command what each of those creatures will do on its next turn.
+      </p>
+    </div>
+    <div class="racediv" id="order">
+      <h2>Order Domain</h2>
+      <p>
+        The Order Domain represents discipline, as well as devotion to a society or an institution and strict obedience to the laws governing it.
+      </p>
+      <p>
+        The ideal of order is obedience to the law above all else, rather than to a specific individual or the passing influence of emotion or popular rule. Clerics of order are typically concerned with how things are done, rather than whether an action's results are just. Following the law and obeying its edicts is critical, especially when it benefits these clerics and their guilds or deities.
+      </p>
+      <p>
+        Law establishes hierarchies. Those selected by the law to lead must be obeyed. Those who obey must do so to the best of their ability. In this manner, law creates an intricate web of obligations that allows society to forge order and security in a chaotic multiverse.
+      </p>
+      <h4>Order Domain Spells</h4>
+      <table class='classtable table table-striped'>
+        <thead>
+          <tr>
+            <th>Cleric Level</th><th>Spells</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st</td><td>command, heroism</td>
+          </tr>
+          <tr>
+            <td>3rd</td><td>hold person, zone of truth</td>
+          </tr>
+          <tr>
+            <td>5th</td><td>mass healing word, slow</td>
+          </tr>
+          <tr>
+            <td>7th</td><td>compulsion, locate creature</td>
+          </tr>
+          <tr>
+            <td>9th</td><td>commune, dominate person</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4>Bonus Proficiencies</h4>
+      <p>
+        When you choose this domain at 1st level, you gain proficiency with heavy armor. You also gain proficiency in the Intimidation or Persuasion skill (your choice).
+      </p>
+      <h4>Voice of Authority</h4>
+      <p>
+        Starting at 1st level, you can invoke the power of law to drive an ally to attack. If you cast a spell with a spell slot of 1st level or higher and target an ally with the spell, that ally can use their reaction immediately after the spell to make one weapon attack against a creature of your choice that you can see.
+      </p>
+      <p>
+        If the spell targets more than one ally, you choose the ally who can make the attack.
+      </p>
+      <h4>Channel Divinity: Order's Demand</h4>
+      <p>
+        Starting at 2nd level, you can use your Channel Divinity to exert an intimidating presence over others.
+      </p>
+      <p>
+        As an action, you present your holy symbol, and each creature of your choice that can see or hear you within 30 feet of you must succeed on a Wisdom saving throw or be charmed by you until the end of your next turn or until the charmed creature takes any damage. You can also cause any of the charmed creatures to drop what they are holding when they fail the saving th row.
+      </p>
+      <h4>Embodiment of the Law</h4>
+      <p>
+        At 6th level, you become remarkably adept at channeling magical energy to compel others.
+      </p>
+      <p>
+        If you cast a spell of the enchantment school using a spell slot of 1st level or higher, you can change the spell's casting time to 1 bonus action for this casting, provided the spell's casting time is normally 1 action.
+      </p>
+      <p>
+        You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.
+      </p>
+      <h4>Divine Strike</h4>
+      <p>
+        At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra ld8 psychic damage to the target. When you reach 14th level, the extra damage increases to 2d8.
+      </p>
+      <h4>Order's Wrath</h4>
+      <p>
+        Starting at 17th level, enemies you designate for destruction wilt under the combined efforts of you and your allies. If you deal your Divine Strike damage to a creature on your turn, you can curse that creature until the start of your next turn. The next time one of your allies hits the cursed creature with an attack, the target also takes 2d8 psychic damage, and the curse ends. You can curse a creature in this way only once per turn.
       </p>
     </div>
     <div class="racediv" id="tempest">

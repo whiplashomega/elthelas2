@@ -96,12 +96,14 @@
     </p>
     <h4>Skoteivas</h4>
     <p><strong>Home of: </strong> Mat'raktha</p>
-    <p></p>
+    <p>
+      
+    </p>
     <h4>The 9 Hells</h4>
     <p><strong>Home of: </strong> Asmodeus</p>
     <p>
     </p>
-    <p>Skoteivas </p>
+    <p> </p>
     <h4>Dracinium</h4>
     <p><strong>Home of: </strong> Indra, Bahamut</p>
     <p></p>

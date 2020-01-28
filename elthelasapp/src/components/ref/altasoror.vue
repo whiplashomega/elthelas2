@@ -468,8 +468,8 @@
       <b-tab title="PCs">
         <h3>Ruthir</h3>
         <p><strong>Race:</strong> Firbolg</p>
-        <p><strong>Class/Level:</strong> Moon Druid 5</p>
-        <p><router-link to="/tools/charbuilder/5dd18c710e4d1e0004bf3534">Character Sheet</router-link></p>
+        <p><strong>Class/Level:</strong> Moon Druid 7</p>
+        <p><router-link to="/tools/charbuilder/5d7fc069391e470004c18f34">Character Sheet</router-link></p>
         <table class="table table-striped">
           <thead>
             <tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr>
@@ -480,19 +480,19 @@
         </table>
         <h3>Hanzo Rito</h3>
         <p><strong>Race:</strong> Altasoror Human</p>
-        <p><strong>Class/Level:</strong> Eldritch Knight Fighter 5</p>
+        <p><strong>Class/Level:</strong> Eldritch Knight Fighter 7</p>
         <p><router-link to="/tools/charbuilder/5d5c3e1bf1651e000430a212">Character Sheet</router-link></p>
         <table class="table table-striped">
           <thead>
             <tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr>
           </thead>
           <tbody>
-            <tr><td>18</td><td>8</td><td>16</td><td>13</td><td>10</td><td>10</td></tr>
+            <tr><td>20</td><td>8</td><td>16</td><td>13</td><td>10</td><td>10</td></tr>
           </tbody>
         </table>
         <h3>Agriel Osiris/Martinus Cato</h3>
         <p><strong>Race:</strong> Scourge Aasimar</p>
-        <p><strong>Class/Level:</strong> Hexblade Warlock 5</p>
+        <p><strong>Class/Level:</strong> Hexblade Warlock 5 / Whispers Bard 2</p>
         <p><router-link to="/tools/charbuilder/5dbca6a3ae1e390004f9fa78">Character Sheet</router-link></p>
         <table class="table table-striped">
           <thead>
@@ -502,58 +502,9 @@
             <tr><td>8</td><td>14</td><td>16</td><td>10</td><td>8</td><td>18</td></tr>
           </tbody>
         </table>
-        <h4>Backstory</h4>
-        <p>
-          I was born Martinus Cato to factory workers in Desadorel. My parents died in a fire when the factory they worked in burned down. The owner had locked all the doors to keep people working. No one escaped. I was 8 years old at the time, my little sister was 5.
-        </p>
-        <p>
-          We were dumped at an orphanage, where the woman in charge forced us to work sewing clothes 14 hours a day. We lived with that for a month before I woke my sister up in the middle of the night and we climbed out the window. We ran back to our old apartment building, but our door was locked. Old Krozuth, the drunk dwarf who lived next door was around though and took us in. We lived with him for 2 years. He wasn't much of a parent, but he made sure we were fed. He couldn't hold down a job though and got evicted. Krozuth took to begging,
-        </p>
-        <p>
-          My sister and I, now 10 and 7, took to pick-pocketing and burglary to survive. Pretty soon I got noticed, by the Black Suns. A local boss by the name of Galan Yeslar found us, offered us a job working for him. We give him a cut of our take, he gives us a roof to sleep under and food to eat. Fair enough right? We made a point to give some of what we stole to Krozuth too, the guy wasn't getting any younger, and he was dear to us. Galan put us up in a boarding house, claimed we were his cousin's kids or something. Anyway, the woman who ran the place, Amelia Veneziale, took care of us reasonably well, and the front was that any money we had was given to us by Galan.
-        </p>
-        <p>
-          Working in the Black Suns I never really did better than a street-level pickpocket or small-time thief. The one time I was offered a better job I got paired with this nasty fellow by the name of Malar Bloodtooth. We were supposed to hold up some rich guy on the street. He resisted, I didn't want to fight. Malar cut him down without a thought. I ran. Never got offered any better work after that.
-        </p>
-        <p>
-          I died suddenly at the age of 19 when I was doing some second-story work (or more accurately 10th story work) and bet my partner, Curia Luti, that I could make the jump from the roof of one building to the next. I'd always had a crush on Curia, and we'd been partners for a couple of years now. Making a prayer to whatever God would hear me, I attempted the jump and fell to my death. A stupid attempt to impress a girl. My last thoughts were of my sister. Who was going to take care of her now?
-        </p>
-        <p>
-          With the Gods unable to decide on the rightful place for my soul, I found myself in Limbo, lost and wandering. Limbo is, not fun. There is no order there, so my mind can't make sense of anything. Everything is just an endless haze
-        </p>
-        <p>
-          The fog of limbo lifts. Who knows how long I have wandered the endless plane of Limbo, my mind unable to focus properly. Though the cleared consciousness is great, I stand before the iconic image of death himself. The angel Azrael, cloaked black holding a scythe. His hood up. Only a void where his face should be. His voice is deep and slow. "Martinus Cato?" It asks. I attempt to speak but find I can't, so I only nod. "You have been chosen for a task most grave. An ancient relic requires your protection and understanding." I attempt to ask questions, but I still can't speak. "You are hereby offered a second chance at life, complete the task, and the life is yours for as long as it lasts," I note that he does not describe what happens if I fail. "Do you accept the terms?" I again try to ask questions, to find out anything else, but I still can't speak, and Death's face holds no emotions. Returning to that endless fog is not an option. I nod my head in agreement.
-        </p>
-        <p>
-          A black portal manifests behind Azrael. "Then step forth. Your task is to understand the relic and destroy all that would claim it from you. Follow the relic, it knows the way, but be wary of what it offers." With that, Death dissipates into nothing, leaving behind the portal. The fog of limbo begins closing in once again, so I make my way through.
-        </p>
-        <p>
-          Inside, unexpectedly, is a very fancy hallway. Complete with trimmed wooden lining, a beautiful blue carpet, and some paintings along the wall. I attempt to make them out, but they blur as I look closer. Down the hallway is a wooden door, with a golden sign on it, in a language I do not recognize. I turn around and see only darkness the other way. I approach the door, but it is locked. I hear a voice on the other side. I lean in and listen close. It says only a singular word in an unfamiliar voice. "Learn". My vision fades in a flash of bright light, a black blob in front of me. Like a Rorschach blob. For a moment, I think it looks like a battle-ax, and at that moment, it becomes one, I reach out and take it. Intricately carved runes cover the black blade and handle. Holding it, it feels right, like it is a part of me.
-        </p>
-        <p>
-          I wake up, pain spread across my body. I feel hunger and thirst like I have never felt before. My body is broken, literally, at least my wrist, and a leg may be fractured. Wherever I am, it is dark, and it reeks of garbage. I attempt to move, but I must have several fractures throughout my body, as my bones are stiff in place. I can barely breathe, my body is a mess, and most notable, there is a throbbing in the back of my skull where I can feel the congealed blood. The gods have played a cruel joke and given me a dead man's body.
-        </p>
-        <p>
-          But then, the area I am in lights up. My body begins to glow faintly, and all the wounds close in unison. My vision focuses, and I can see. I am still hungry and thirsty, but not to the point of death. With the clearing of the pain comes a clearing of my mind, and in it are the last thoughts of a dying man "Meet Bern at the Shark's Tail inn". I move and notice something in my grip, it's the battle-ax from my vision. I move to remove myself from wherever I am.  Fuck, I think, not exactly the second chance at life I thought this would be. Grabbing the ax by the handle I limp away from the scene.
-        </p>
-        <p>
-          I am in some alley. It is nearing dark. I think to myself "What have you gotten yourself into Martinus?", but the name feels wrong. I think to myself a moment about my name. Agriel Osiris comes to mind. It feels right. Was it this person's name? I cannot help but think of myself as Agriel. I remember the dying man's last thoughts "Meet Bern at the Shark's Tail Inn". It seems to be all I have to go on for now.
-        </p>
-        <p>
-          Walking out into the main street I can't help but notice the stares. A small child watches me for a brief minute before running into her house. "Shit, I need a mirror, what do I even look like?"
-        </p>
-        <p>
-          A voice comes from a nearby doorway. "Come inside, blessed one, away from the stares of the unbelievers." A woman is standing there, in a black silk dress that accentuates her curves, she is older than me but still quite beautiful. Warily, I follow her inside. She tells me her name is Rachele and she shows me my appearance in a mirror. My skin, so pale it glows. My irises are white flaked with black. The effect is, otherworldly. I can feel a strange energy inside, waiting to be released. Rachele worships Nera in secret even providing rites of death for the nearby villagers. What the hell have I gotten myself into? "Go to the Shark's Tail Inn, find Bern." She tells me.
-        </p>
-        <p>
-          "Who the hell is Bern?" I ask.
-        </p>
-        <p>
-          "I do not know. Go, it is your task." Some task, but at least it's something. Maybe I can find out where the hell I am from Bern.
-        </p>
         <h3>Xane Ludor</h3>
         <p><strong>Race:</strong> Altasoror Human</p>
-        <p><strong>Class/Level:</strong> Rogue 1 / Knowledge Cleric 4</p>
+        <p><strong>Class/Level:</strong> Rogue 1 / Knowledge Cleric 5</p>
         <table class="table table-striped">
           <thead>
             <tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr>
@@ -564,7 +515,7 @@
         </table>
         <h3>Paradan</h3>
         <p><strong>Race:</strong> (Wood?) Elf</p>
-        <p><strong>Class/Level:</strong> (Way of the Open Hand?) Monk 5</p>
+        <p><strong>Class/Level:</strong> (Way of the Open Hand?) Monk 7</p>
         <table class="table table-striped">
           <thead>
             <tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr>

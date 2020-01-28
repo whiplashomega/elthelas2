@@ -1,20 +1,23 @@
       {
         "id": "chthonis",
         "name": "Chthonis",
-        "holysymbol": "",
-        "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/",
-        "alignment": "",
+        "holysymbol": "A round stone disk, ideally basalt, with an iron bead tightly fit in the center.",
+        "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/chthonisholysymbol.png",
+        "alignment": "True Neutral",
         "domains": "God of the Deep Stone, Magma, and Earthquakes",
-        "domains5": "",
-        "worshippers": "",
-        "weapon": "",
-        "enemy": "",
-        "appearance": "",
+        "domains5": "True Neutral",
+        "worshippers": "“true” earth elementals (i.e. not Dao--they hollow the earth and extract its riches, and are better suited to Dorun), some deep dwarf and stone giant druids.\n\nTerran is the holy language of Chthonis, but he has no official book or creed",
+        "weapon": "Hurled Boulder",
+        "enemy": "unknown",
+        "appearance": "He prefers to appear as a megalith of pure stone, perhaps found in a cave or near a mountaintop. A voice that is so deep you feel it in your stomach, rather than hear it in your ears, emanates from the stone itself. On the rare occasion he must take a more mobile form, he manifests as a truly colossal earth elemental, a veritable walking mountain, and does not bother to appear humanoid.![Chthonis Appearance](https://elthelas-images.herokuapp.com/holysymbol/chthonisappearance.jpg)",
         "home": "Lapisio",
-        "tenets": [],
+        "tenets": [
+          "The plainest, quietest things are the noblest. Even the humble pebble was formed in the heart of the earth, or in the grating of mountains, or the draining of long-forgotten oceans. A single pebble has seen far more of history than scholars will ever know.",
+          "Everything man has ever known or done is just a coat of dust the surface of stone--inconsequential."
+        ],
         "holiday": "",
         "parents": "3rd Generation, born of Dorun and Gaian",
-        "lore": "",
+        "lore": "If Dorun is the god of caverns, echoes, rich veins of ore, and mighty dwarven holds, then Chthonis is his quiet opposite: the faceless walls of stone between Dorun’s vaulted chambers, the great sea of rock all the way to the center of the world. There is far more deep stone than anything else; the world as most know it is only a thin crust on the vast body of Chthonis. Time, as most know it, is also inconsequential to him: His movements are the rising of mountains and the drift of continents. Only Chronos knows longer aeons and Zhuul vaster space.\n\nChthonis’ sea of rock has many layers. First a mantle of solid stone on which the world dwells--the bed upon which Gaian’s life blooms. Then an ocean of magma that feeds Vulcan’s volcanos. Next a slurry of diamonds that feeds Dorun’s mines. Finally, at the very center is a vast iron crystal, Chthonis’ Heart.\n\nFew mortals worship him, and Chthonis does not involve himself often in mortal affairs. His influence is most perceivable when it comes in the form of earthquakes, but even these are inscrutable: Is it anger? Boredom? Or some unknowable whim?\n\nAfter the Gods War, Chthonis was devastated to be banished to Lapisio. His worshippers insist he is the literal physical manifestation of the planet Elthelas calls home; they say the World Crack was formed when he was wrenched from his place at the heart of the earth. They believe the world will slowly die without his presence: that it will stop shifting, then stop spinning, then go cold… just another soulless rock in the void. The truly devout seek to return Chthonis to Elthelas, perhaps as part of Gaian’s “Nature’s Retribution” when she reawakens.",
         "level1": "",
         "level10": ""
       }
