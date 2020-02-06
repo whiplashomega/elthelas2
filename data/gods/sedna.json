@@ -1,20 +1,22 @@
       {
         "id": "sedna",
         "name": "Sedna",
-        "holysymbol": "",
-        "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/",
-        "alignment": "",
+        "holysymbol": "A fish",
+        "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/sednaholysymbol.png",
+        "alignment": "True Neutral",
         "domains": "Goddess of Fish and Sea Creatures",
-        "domains5": "",
-        "worshippers": "",
-        "weapon": "",
-        "enemy": "",
-        "appearance": "",
+        "domains5": "Tempest, Nature, Water",
+        "worshippers": "fish, amphibians, mermaids, sirens",
+        "weapon": "A serrated sword, akin to a swordfish.",
+        "enemy": "Ganarea – god of Disease. He often uses sea creatures to develop new and more powerful diseases.",
+        "appearance": "A mermaid when appearing to surface dwellers, or a giant squid to sea creatures.",
         "home": "Aquilos",
-        "tenets": [],
+        "tenets": [
+          "There is always a bigger fish"
+        ],
         "holiday": "",
         "parents": "3rd Generation, born of Trimala and Gaian",
-        "lore": "",
+        "lore": "Was greatly allied with Gaian until her fall. Teamed up with Leviathan to create an army of land fish warriors/ such as merfolk/lizardfolk to aid in the war.",
         "level1": "",
         "level10": ""
       }

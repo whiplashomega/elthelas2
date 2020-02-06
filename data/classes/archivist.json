@@ -15,36 +15,43 @@
     {
       "level": 1,
       "name": "Spellcasting",
+      "actiontype": "none",
       "description": "As a student of divine magic, you have a prayer book containing spells that serve as a record of your life’s work. See chapter 10 of the Player’s Handbook for the general rules of spellcasting and below for the archivist spell list.\n\n#### Cantrips\n\nAt first level you know three cantrips of your choice from the archivist spell list. You learn additional archivist cantrips of your choice at higher levels as shown in the Cantrips Known column of the archivist table.\n\n#### Prayerbook\n\nAn archivist’s prayerbook is a record of their studies and the key to their magic. Archivists use their prayerbooks to keep track of their discoveries and to prepare which spells they will be able to cast each day. At 1st-level you have a prayerbook containing six 1st level archivist spells of your choice.\n\n#### Preparing and Casting Spells\n\nThe archivist table shows how many spell slots you have to cast your spells of 1st-level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.\n\nYou prepare the list of archivist spells that are available for you to cast. To do so, choose a number of archivist spells from your prayerbook equal to your Intelligence modifier + your archivist level (minimum of one spell). The spells must be of a level for which you have slots.\n\nFor example, if you’re a 3rd-level archivist, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 16, your list of prepared spells can include six spells of 1st or 2nd-level, in any combination, chosen from your prayerbook. If you prepare the 1st level spell Bless, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn’t remove it from your list of prepared spells.\n\nYou can change your list of prepared spells when you finish a long rest. Preparing a new list of archivist spells requires time spent studying your prayerbook and practicing the gestures and incantations needed to cast the spell : at least 1 minute per spell level for each spell on your list.\n\n#### Spellcasting Ability\n\nIntelligence is your spellcasting ability for your archivist spells, since you learn your spells through dedicated study and notetaking. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for an archivist spell when you cast and when making an attack roll with one.\n\nSpell save DC = 8 + your proficiency bonus + your Intelligence modifier\n\nSpell attack modifier = your proficiency bonus + your Intelligence modifier\n\n#### Ritual Casting\n\nYou can cast an archivist spell as a ritual if that spell has the ritual tag and you have the spell in your prayer book. You don’t need to have the spell prepared.\n\n#### Spellcasting Focus\n\nYou can use a holy symbol (found in chapter 5 of the Player’s Handbook) as a spellcasting focus for your archivist spells.\n\n#### Learning Spells of 1st Level and Higher\n\nEach time you gain an archivist level, you can add two archivist spells of your choice to your prayerbook. Each of these spells must be of a level for which you have spell slots, as shown on the Archivist table. On your adventures, you might find other spells that you can add to your prayerbook (see the “Your Spellbook” sidebar on page 114 of the Player’s Handbook, replacing the word “wizard” with “archivist” and “spellbook” with “prayerbook”)."
     },
     {
       "level": 1,
       "name": "Polyglot",
+      "actiontype": "none",
       "description": "Archivists traditionally learn several languages in order to aid them in deciphering old tomes and arcane scrolls. At 1st, 5th, 10th, 15th, and 20th level, you learn one additional language of your choice."
     },
     {
       "level": 2,
       "name": "Scholarly Path",
+      "actiontype": "none",
       "description": "When you reach 2nd level, you choose a tradition of study, shaping how you approach knowledge through one of two main schools: the Lorekeeper or the Arcane Scribe, both detailed at the end of the class description.\n\nYour choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
     },
     {
       "level": 2,
       "name": "Otherworldly Insight",
+      "actiontype": "bonus",
       "description": "At 2nd level, your studies begin to pay off in battle, allowing you to quickly recognize enemies and their defenses. Each time you use this feature, select one creature within 60 ft. that you can see that has one of the following types: aberration, celestial, dragon, elemental, fey, fiend, monstrosity, plant, or undead. Using a bonus action, you study it briefly and learn one weakness, resistance, or immunity that creature possesses, if they posses any. The selected creature must have more than 0 HP at the time of using this feature for it to be successful.\n\nWhen you use this feature, you jot a quick note in your prayerbook to remind you of your findings. So long as your prayerbook is in your possession, you remember what you have learned and will not relearn the same information when using this on the same type of creature as your original target. Likewise, your notes are carried over when creating copies of your prayerbook, allowing you to reference your findings even when using a copy of your original prayerbook. You can use this feature a number of times equal to your Intelligence modifier before finishing a long rest."
     },
     {
       "level": 4,
       "name": "Ability Score Improvement",
+      "actiontype": "none",
       "description": "When you reach 4th level, and again at 8th,  12th,  16th, and  19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
     },
     {
       "level": 19,
       "name": "Spell Specialization",
+      "actiontype": "none",
       "description": "At 18th level, you have achieved a level of specialization that allows you to cast certain spells at will. When you finish a long rest, you may choose a number of spells in your prayerbook of 3rd level or lower with a combined level no higher than your Intelligence modifier. These spells are considered to be prepared for you and do not count against your number of spells prepared. You may cast each spell you designate once at their lowest level without using a spell slot. When you do so, you can’t do so again until you finish a short or long rest.\n\nIn order to cast any of these spells at a higher level, you must expend a spell slot as normal. You may choose to change which spells you have selected when you finish a long rest."
     },
     {
       "level": 20,
       "name": "Divine Insight",
+      "actiontype": "none",
       "description": "At 20th level, you experience a fleeting glimpse of true divine understanding, leaving your mind forever changed as a result. Your Intelligence and Wisdom scores increase by 2. Your maximum for those scores is now 22."
     }
   ],
@@ -56,21 +63,25 @@
         {
           "level": 2,
           "name": "Arcane Adept",
+          "actiontype": "none",
           "description": "At 2nd-level, your reflexive grasp of magic allows you to create a wide array of simple effects. Add three cantrips from any spell list to your list of cantrips known. These are in addition to the number of cantrips known listed in the Archivist table. The cantrips need not be from the same spell list."
         },
         {
           "level": 6,
           "name": "Divine Knowledge",
+          "actiontype": "none",
           "description": "At 6th level, you gain the ability to utilize many forms of divine magic, even forms outside of the usual scope of an archivist's studies. Add three spells of your choice from among the cleric, druid, paladin, or ranger spell lists to your prayerbook. A spell you choose must be of a level you can cast, as shown on the archivist table, or a cantrip. The chosen spells count as archivist spells for you and can be prepared as normal."
         },
         {
           "level": 10,
           "name": "Higher Mysteries",
+          "actiontype": "none",
           "description": "At 10th level, you tap into divine magic known only to a few. Choose one cleric domain. The domain’s spells are added to your prayer book, count as Archivist spells for you, and may be prepared as normal. For any domain spells which are already in your prayer book, you may select one spell of the same level from the Archivist spell list to add to your prayer book."
         },
         {
           "level": 14,
           "name": "Practiced Efficiency",
+          "actiontype": "bonus",
           "description": "At 14th level, your studious practice with magic enables you to more effectively utilize your resources in combat. When you cast a spell of 3rd level or lower with a casting time of one action, you may cast a cantrip as a bonus action. This feature can be used a number of times equal to your Wisdom modifier. All expended uses recharge at the end of a long rest."
         }
       ]
@@ -82,31 +93,37 @@
         {
           "level": 2,
           "name": "Forbidden Lore",
+          "actiontype": "none",
           "description": "At 2nd level, you can use your studies of various monsters to provide useful insight to your allies in combat. An archivist using a lore ability can target any creature that has one of the following types: aberration, celestial, dragon, elemental, fey, fiend, monstrosity, plant, or undead. Lore abilities are mutually exclusive – when you use a lore ability with another lore ability already active, the new effect replaces the old effect.\n\nWhen you use a lore ability, you must make a DC 15 Intelligence check as you attempt to recall information about the selected creature. On a natural roll of 20 (before modifiers), your chosen lore ability's effects last twice as long before fading. This extended duration lasts only for one use of the ability and ends early as normal if you use another lore ability before the duration has ended.\n\nDepending on the type of creature you target when you use this ability, you may add your proficiency bonus to your roll for the check if you are proficient in the relevant skill: Arcana for aberrations, dragons, and monstrosities; Nature for elementals, fey, and plants; Religion for celestials, fiends, and undead.\n\nIn order to use lore abilities, you must spend lore points. The number of lore points you possess is equal to your Intelligence modifier. You regain all expended lore points when you finish a long rest."
         },
         {
           "level": 2,
           "name": "Lore: Lost Tactics",
+          "actiontype": "bonus",
           "description": "At 2nd level, your knowledge has taught you to recognize a monster's weak points, letting your allies strike more effectively. As a bonus action, you can spend one lore point to make an Intelligence check to identify the monster. If successful, you may designate an ally to receive advantage on their first attack roll against the creature on their turn. On subsequent turns, you can choose to allow the bonus to remain on your designated ally or you may use your bonus action to transfer this effect to a new ally. This effect lasts for a maximum of one minute."
         },
         {
           "level": 6,
           "name": "Lore: Dark Foresight",
+          "actiontype": "bonus",
           "description": "At 6th level, your insight into monstrous anatomy and tactics better prepares you for their attacks, allowing you to call out valuable warnings to your allies. As a bonus action, you can spend one lore point to make an Intelligence check to study the monster. If successful, you may choose one ally within 30 ft. of you. Attacks made by the creature against your chosen ally have disadvantage. On subsequent turns, you may use your bonus action to transfer this effect to a new ally. The effect lasts for one minute."
         },
         {
           "level": 10,
           "name": "Adept Scholar",
+          "actiontype": "none",
           "description": "Beginning at 10th level, you regain all expended lore points on a short or long rest."
         },
         {
           "level": 10,
           "name": "Lore: Arcane Intuition",
+          "actiontype": "bonus",
           "description": "At 10th level, your experience has taught you the secrets of how monsters evoke magic, leaving you better prepared to counter such effects. As a bonus action, you can spend two lore points to make an Intelligence check to predict the monster’s movements. If successful, you may grant yourself and all allies within 30 ft. of you advantage on saving throws against the creature’s spells or other magical effects. Allies do not need to remain within 30 ft. of you to gain this benefit, but the ability only affects those who are within 30 ft. when it is first used. This effect lasts for one minute."
         },
         {
           "level": 14,
           "name": "Master Scholar",
+          "actiontype": "none",
           "description": "At 14th level, your practice in studying monsters and magic makes you more skilled at quickly recognizing these phenomena around you. Choose one of the following skills: Arcana, Nature, or Religion. Whenever you make a check using your chosen ability, you may add your Wisdom modifier to the check.\n\nIn addition, you gain additional lore points when you reach 14th level. Your total number of lore points is now equal to your Intelligence modifier + your Wisdom modifier."
         }
       ]

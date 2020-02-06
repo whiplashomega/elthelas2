@@ -116,6 +116,7 @@ export default function() {
       radiant: 0,
       thunder: 0
     },
+    actions: [],
     temphp: 0,
     castlog: []
   };

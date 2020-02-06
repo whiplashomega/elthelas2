@@ -61,7 +61,7 @@
     <h4>Arcanius</h4>
     <p><strong>Home of: </strong> Magus</p>
     <p>
-      The realm of pure magic. 
+      The realm of pure magic.
     </p>
     <h4>Monstrathelas, Land of Monsters</h4>
     <p><strong>Home of: </strong> Leviathan</p>
@@ -96,9 +96,7 @@
     </p>
     <h4>Skoteivas</h4>
     <p><strong>Home of: </strong> Mat'raktha</p>
-    <p>
-      
-    </p>
+    <p></p>
     <h4>The 9 Hells</h4>
     <p><strong>Home of: </strong> Asmodeus</p>
     <p>

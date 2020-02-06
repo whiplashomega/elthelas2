@@ -18,10 +18,12 @@ import fluff from '@/components/tools/characterbuilder/fluff';
 import createcreature from '@/components/tools/characterbuilder/createcreature';
 import campaigninfo from '@/components/tools/characterbuilder/campaigninfo';
 import loadsavemodals from '@/components/tools/characterbuilder/loadsavemodals';
+import actions from '@/components/tools/characterbuilder/actions';
 // import test from '@/tests/unit/charbuilder.test.js';
 
 export default {
   components: {
+    actions,
     characterheader,
     loadsavemodals,
     abilityscores,
@@ -54,7 +56,8 @@ export default {
   data () {
     return {
       buildHide: false,
-      hideleft: false
+      hideleft: false,
+      showActions: true
     };
   },
   filters: {

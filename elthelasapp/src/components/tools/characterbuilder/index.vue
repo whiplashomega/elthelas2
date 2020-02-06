@@ -30,14 +30,16 @@
             <div class="row">
               <div class="col">
                 <!-- Attacks -->
+                <actions v-if="showActions" />
                 <attacks />
                 <features />
               </div>
             </div>
             <div class="row print-hide">
               <div class="col">
-                <button class="btn btn-primary" @click="hideleft = !hideleft"><span v-if="!hideleft">Hide</span><span v-if="hideleft">Show</span> Left Column</button>&nbsp;
-                <button class="btn btn-primary" @click="buildHide = !buildHide"><span v-if="!buildHide">Hide</span><span v-if="buildHide">Show</span> Build Section</button>
+                <button class="btn btn-primary btn-sm" @click="hideleft = !hideleft"><span v-if="!hideleft">Hide</span><span v-if="hideleft">Show</span> Left</button>&nbsp;
+                <button class="btn btn-primary btn-sm" @click="buildHide = !buildHide"><span v-if="!buildHide">Hide</span><span v-if="buildHide">Show</span> Build</button>&nbsp;
+                <button class="btn btn-primary btn-sm" @click="showActions = !showActions"><span v-if="showActions">Hide</span><span v-if="!showActions">Show</span> Actions</button>
               </div>
             </div>
           </div>
@@ -151,6 +153,7 @@
           <initiative />
           <hitpoints :key="hitdicechanged" />
           <combat />
+          <actions />
           <attacks />
         </b-tab>
         <b-tab title="Spells">

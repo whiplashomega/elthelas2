@@ -1,20 +1,23 @@
       {
         "id": "magus",
         "name": "Magus",
-        "holysymbol": "",
-        "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/",
-        "alignment": "",
+        "holysymbol": "A wand with a trail of sparkles",
+        "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/magusholysymbol.png",
+        "alignment": "Lawful Neutral",
         "domains": "God of Magic",
-        "domains5": "",
-        "worshippers": "",
+        "domains5": "Arcana",
+        "worshippers": "Magical beings and creations, devote followers of magic, mages or aspiring mages. Sorcerer’s coming into their power.",
         "weapon": "",
-        "enemy": "",
-        "appearance": "",
+        "enemy": "Any who would try to use magic to usurp him.",
+        "appearance": "Magus takes on the appearance of a Wizened Wizard, in a set of blue robes with arcane runes stitched in gold. His head is adorned with a matching pointed blue hat, and his grey beard nearly touches the floor.",
         "home": "Arcanius",
-        "tenets": [],
+        "tenets": [
+          "Magic is an art, a method of self-expression and discovery. ",
+          "Magic in and of itself it neither good nor evil."
+        ],
         "holiday": "",
         "parents": "3rd Generation, born of Tock and Gaian",
-        "lore": "",
+        "lore": "There was a previous God of magic before the gods war. The previous god did not limit the scale of magic during their tenure, as a result magic could surpass the 9th level, and mortals were getting closer to matching gods power. That god was lost and forgotten during the conflict. Magus implemented more limits to the Power mortals could wield, but not the scope. ",
         "level1": "",
         "level10": ""
       }
