@@ -38,21 +38,21 @@
             <strong>Attack with Shove</strong>
           </div>
         </div>
-        <div v-for="action in actions" :key="action.id">
-          <p :title="action.description"><strong>{{ action.name }}</strong> <button @click="deleteAction(action)" v-if="action.useradd">X</button></p>
+        <div v-for="action in actions" :key="action.id" :title="action.description">
+          <strong>{{ action.name }}</strong> <button @click="deleteAction(action)" v-if="action.useradd">X</button>
         </div>
       </b-tab>
       <b-tab title="Bonus Actions">
-        <div v-for="action in bonus" :key="action.id">
-          <p :title="action.description"><strong>{{ action.name }}</strong> <button @click="deleteAction(action)" v-if="action.useradd">X</button></p>
+        <div v-for="action in bonus" :key="action.id" :title="action.description">
+          <strong>{{ action.name }}</strong> <button @click="deleteAction(action)" v-if="action.useradd">X</button>
         </div>
       </b-tab>
       <b-tab title="Reactions">
         <div title="When an opponent moves out of your reach you can use a reaction to make 1 attack against them">
           <strong>Opportunity Attack</strong>
         </div>
-        <div v-for="action in reactions" :key="action.id">
-          <p :title="action.description"><strong>{{ action.name }}</strong> <button @click="deleteAction(action)" v-if="action.useradd">X</button></p>
+        <div v-for="action in reactions" :key="action.id" :title="action.description">
+          <strong>{{ action.name }}</strong> <button @click="deleteAction(action)" v-if="action.useradd">X</button>
         </div>
       </b-tab>
       <button @click="addActionModal = true">+</button>
