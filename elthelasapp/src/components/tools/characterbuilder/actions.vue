@@ -28,6 +28,9 @@
           <div title="When an object requires your action for its use, you take the Use an Object action.">
             <strong>Use an Object</strong>
           </div>
+          <div title="attack with a weapon or an unarmed strike">
+            <strong>Attack</strong>
+          </div>
           <div title="as part of an attack action, you can replace 1 attack with a grapple check so long as you have 1 free hand.">
             <strong>Attack with Grapple</strong>
           </div>

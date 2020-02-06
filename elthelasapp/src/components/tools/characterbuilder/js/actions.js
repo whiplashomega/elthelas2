@@ -12,13 +12,6 @@ export default {
           actions.push(a);
         }
       });
-      this.character.attacks.forEach((a) => {
-        actions.push({
-          id: Date.now() + Math.random(),
-          name: "Attack with " + a.name,
-          description: ""
-        });
-      });
       Object.keys(this.character.spells).forEach((a) => {
         this.character.spells[a].forEach((b) => {
           let slotsAvailable = false;
@@ -70,13 +63,6 @@ export default {
         if (a.actiontype === 'reaction') {
           actions.push(a);
         }
-      });
-      this.character.attacks.forEach((a) => {
-        actions.push({
-          id: Date.now() + Math.random(),
-          name: "Attack with " + a.name,
-          description: ""
-        });
       });
       Object.keys(this.character.spells).forEach((a) => {
         this.character.spells[a].forEach((b) => {
