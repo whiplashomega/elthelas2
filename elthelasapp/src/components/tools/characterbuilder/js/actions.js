@@ -86,7 +86,7 @@ export default {
               slotsAvailable = true;
             }
           }
-          if (b.castingTime.contains('reaction') && (b.level === 'cantrip' || (b.prepared && slotsAvailable))) {
+          if (b.castingTime.includes('reaction') && (b.level === 'cantrip' || (b.prepared && slotsAvailable))) {
             actions.push({
               id: Date.now() + Math.random(),
               name: "Cast " + b.title,
