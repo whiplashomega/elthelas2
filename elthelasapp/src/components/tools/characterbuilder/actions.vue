@@ -6,6 +6,7 @@
         <div v-for="action in actions" :key="action.id + action.show.toString()" :title="action.description">
           <strong>{{ action.name }}</strong>
           <button class="btn btn-xs" @click="action.show = !action.show; forceUpdate()"><span v-if="action.show">&#x25B2;</span><span v-if="!action.show">&#x25BC;</span></button>
+          <button v-if="action.useradd && action.resourceused" @click="doAction(action)">Do</button> 
           <button @click="deleteAction(action)" class="btn btn-sm" v-if="action.useradd">X</button>
           <button v-if="action.title" type="button"
                   class="btn btn-sm btn-primary print-hide"
@@ -63,6 +64,11 @@
           <option value="action">Action</option>
           <option value="bonus">Bonus Action</option>
           <option value="reaction">Reaction</option>
+        </select>
+        <label>Resource Used</label>
+        <select v-model="newaction.resourceused" class="form-control">
+          <option :value="false">None</option>
+          <option v-for="resource in character.resources" :key="resource.name" :value="resource">{{ resource.name }}</option>
         </select>
         <label>Description:</label>
         <textarea v-model="newaction.description" class="form-control"></textarea>

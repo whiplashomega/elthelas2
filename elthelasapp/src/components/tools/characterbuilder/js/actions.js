@@ -8,7 +8,7 @@ export default {
     actions () {
       let actions = [ ...this.baseActions ];
       this.character.actions.forEach((a) => {
-        if (a.actiontype === 'action') {
+        if (a.actiontype === 'action' && (!a.resourceused || a.resourceused.current > 0)) {
           if (typeof a.show === 'undefined') { a.show = false }
           actions.push(a);
         }
@@ -36,7 +36,7 @@ export default {
     bonus () {
       let actions = [];
       this.character.actions.forEach((a) => {
-        if (a.actiontype === 'bonus') {
+        if (a.actiontype === 'bonus' && (!a.resourceused || a.resourceused.current > 0)) {
           if (typeof a.show === 'undefined') { a.show = false }
           actions.push(a);
         }
@@ -64,7 +64,7 @@ export default {
     reactions () {
       let actions = [ ...this.baseReactions ];
       this.character.actions.forEach((a) => {
-        if (a.actiontype === 'reaction') {
+        if (a.actiontype === 'reaction' && (!a.resourceused || a.resourceused.current > 0)) {
           if (typeof a.show === 'undefined') { a.show = false }
           actions.push(a);
         }
@@ -114,6 +114,7 @@ export default {
         actiontype: "action",
         id: Date.now(),
         useradd: true,
+        resourceused: false,
         show: false
       }
     };
@@ -131,10 +132,15 @@ export default {
         name: "", description: "", actiontype: "action", id: Date.now(), useradd: true
       };
     },
+    doAction (action) {
+      action.resourceused.current--;
+    },
     deleteAction(action) {
-      this.character.actions.splice(this.character.actions.findIndex((a) => {
-        return a.id === action.id;
-      }), 1);
+      if (confirm("Are you sure you want to delete this action?")) {
+        this.character.actions.splice(this.character.actions.findIndex((a) => {
+          return a.id === action.id;
+        }), 1);
+      }
     }
   }
 };
