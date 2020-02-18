@@ -9,6 +9,7 @@ export default {
       let actions = [ ...this.baseActions ];
       this.character.actions.forEach((a) => {
         if (a.actiontype === 'action') {
+          if (typeof a.show === 'undefined') { a.show = false }
           actions.push(a);
         }
       });
@@ -36,6 +37,7 @@ export default {
       let actions = [];
       this.character.actions.forEach((a) => {
         if (a.actiontype === 'bonus') {
+          if (typeof a.show === 'undefined') { a.show = false }
           actions.push(a);
         }
       });
@@ -63,6 +65,7 @@ export default {
       let actions = [ ...this.baseReactions ];
       this.character.actions.forEach((a) => {
         if (a.actiontype === 'reaction') {
+          if (typeof a.show === 'undefined') { a.show = false }
           actions.push(a);
         }
       });
