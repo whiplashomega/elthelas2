@@ -96,6 +96,7 @@
       </div>
       <div class="col-3">
         <input type="number" class="charsheet-text" v-model="character.warlockslotsmagic" />
+        Warlock
       </div>
     </div>
     <h5>Save DC Bonus</h5>
