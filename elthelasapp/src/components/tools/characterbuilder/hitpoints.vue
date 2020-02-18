@@ -45,7 +45,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row combat-hud-hide">
       <div class="col">
         <div class="charsheet-static">
           Hit Dice<br />
@@ -56,7 +56,7 @@
         </div>
       </div>
     </div>
-    <div class="row print-hide" style="margin-top: 10px;">
+    <div class="row print-hide combat-hud-hide" style="margin-top: 10px;">
       <div class="btn-group col-12">
         <button class="btn btn-primary" @click="shortrest()">Short Rest</button>
         <button class="btn btn-success" @click="longrest()">Long Rest</button>

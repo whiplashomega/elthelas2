@@ -192,22 +192,7 @@
     <loadsavemodals />
     <b-modal v-model="combatModal" title="Combat HUD"
              hide-footer size="xl">
-      <div class="row">
-        <div class="col-2">
-          <hitpoints />
-        </div>
-        <div class="col-4">
-          <attacks />
-        </div>
-        <div class="col-6">
-          <actions />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <resources />
-        </div>
-      </div>
+      <combathud :combat-modal="combatModal" />
     </b-modal>
   </div>
 </template>

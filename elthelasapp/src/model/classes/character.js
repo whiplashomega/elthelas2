@@ -20,6 +20,7 @@ export default function() {
         }
       },
       level: 0,
+      savedcstat: 0,
       selsubclass: { castermult: 0, features: [] } }
     ],
     race: { stats: [0, 0, 0, 0, 0, 0], speed: [0, 0, 0, 0, 0] },

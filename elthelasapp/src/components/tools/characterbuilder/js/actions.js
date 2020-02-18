@@ -9,8 +9,8 @@ export default {
     actions () {
       let actions = [ ...this.baseActions ];
       this.character.actions.forEach((a) => {
-        if (a.actiontype === 'action' && (!a.resourceused || a.resourceused.current > 0)) {
-          if (typeof a.show === 'undefined') { a.show = false }
+        if (a.actiontype === 'action') {
+          if (typeof a.show === 'undefined') { a.show = false; }
           actions.push(a);
         }
       });
@@ -37,8 +37,8 @@ export default {
     bonus () {
       let actions = [];
       this.character.actions.forEach((a) => {
-        if (a.actiontype === 'bonus' && (!a.resourceused || a.resourceused.current > 0)) {
-          if (typeof a.show === 'undefined') { a.show = false }
+        if (a.actiontype === 'bonus') {
+          if (typeof a.show === 'undefined') { a.show = false; }
           actions.push(a);
         }
       });
@@ -65,8 +65,8 @@ export default {
     reactions () {
       let actions = [ ...this.baseReactions ];
       this.character.actions.forEach((a) => {
-        if (a.actiontype === 'reaction' && (!a.resourceused || a.resourceused.current > 0)) {
-          if (typeof a.show === 'undefined') { a.show = false }
+        if (a.actiontype === 'reaction') {
+          if (typeof a.show === 'undefined') { a.show = false; }
           actions.push(a);
         }
       });
@@ -135,6 +135,7 @@ export default {
     },
     doAction (action) {
       action.resourceused.current--;
+      this.$forceUpdate();
     },
     deleteAction(action) {
       if (confirm("Are you sure you want to delete this action?")) {

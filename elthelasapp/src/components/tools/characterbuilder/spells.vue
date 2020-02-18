@@ -14,17 +14,13 @@
       <button class="btn btn-sm btn-primary" @click="displayLevel = 'level9'">9</button>
     </div>
     <span class="smalltext print-hide"><input type="checkbox" v-model="preparedonly" />Prepared Only</span><br />
-    <span class="smalltext">Save DCs and Attack Mods</span>
+    <span class="smalltext">Save DCs</span>
     <table class="table table-sm smalltext">
       <tr>
-        <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
+        <th v-for="cl in character.charclasses" :key="cl.thisclass.name" v-if="cl.savedcstat">{{ cl.thisclass.name }}</th>
       </tr>
       <tr>
-        <td>{{ getSaveDC(0) }}</td><td>{{ getSaveDC(1) }}</td><td>{{ getSaveDC(2) }}</td><td>{{ getSaveDC(3) }}</td><td>{{ getSaveDC(4) }}</td><td>{{ getSaveDC(5) }}</td>
-      </tr>
-      <tr>
-        <td>+{{ getAttBonus(0) }}</td><td>+{{ getAttBonus(1) }}</td><td>+{{ getAttBonus(2) }}</td>
-        <td>+{{ getAttBonus(3) }}</td><td>+{{ getAttBonus(4) }}</td><td>+{{ getAttBonus(5) }}</td>
+        <td v-for="cl in character.charclasses" :key="cl.thisclass.name" v-if="cl.savedcstat">{{ getSaveDC(cl.savedcstat) }}</td>
       </tr>
     </table>
     <span class="print-hide">{{ displayLevel }}

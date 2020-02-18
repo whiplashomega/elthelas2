@@ -27,7 +27,7 @@
       </div>
     </div>
     <!-- Armor -->
-    <div class="row">
+    <div class="row combat-hud-hide">
       <div class="col">
         <div class="charsheet-static" id="armorbox">
           <h4>Armor</h4>

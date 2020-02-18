@@ -19,6 +19,7 @@ import createcreature from '@/components/tools/characterbuilder/createcreature';
 import campaigninfo from '@/components/tools/characterbuilder/campaigninfo';
 import loadsavemodals from '@/components/tools/characterbuilder/loadsavemodals';
 import actions from '@/components/tools/characterbuilder/actions';
+import combathud from '@/components/tools/characterbuilder/combathud';
 // import test from '@/tests/unit/charbuilder.test.js';
 
 export default {
@@ -42,7 +43,8 @@ export default {
     resources,
     fluff,
     createcreature,
-    campaigninfo
+    campaigninfo,
+    combathud
   },
   computed: {
     ...mapGetters({
