@@ -3,7 +3,8 @@ import { mapGetters, mapActions } from 'vuex';
 export default {
   computed: {
     ...mapGetters({
-      "character": "getCharacter"
+      "character": "getCharacter",
+      "warlockSlotLevel": "warlockSlotLevel"
     }),
     actions () {
       let actions = [ ...this.baseActions ];

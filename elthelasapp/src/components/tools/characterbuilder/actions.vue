@@ -53,9 +53,6 @@
           <div v-if="action.show" v-html="$options.filters.marked(action.description)"></div>
         </div>
       </div>
-      <div class="btn-group">
-        <button @click="addActionModal = true" class="btn btn-sm">+</button>
-      </div>
       <b-modal v-model="addActionModal" @ok="addAction()">
         <label>Name:</label>
         <input type="text" class="form-control" v-model="newaction.name" />
@@ -73,6 +70,11 @@
         <label>Description:</label>
         <textarea v-model="newaction.description" class="form-control"></textarea>
       </b-modal>
+    </div>
+    <div class="row">
+      <div class="btn-group col">
+        <button @click="addActionModal = true" class="btn btn-sm">+</button>
+      </div>
     </div>
   </div>
 </template>
