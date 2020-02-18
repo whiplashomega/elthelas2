@@ -67,20 +67,20 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-2">
-        <hitpoints />
-        <combat />
-      </div>
-      <div class="col-4">
-        <attacks />
-      </div>
-      <div class="col-6">
-        <actions />
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
+      <div class="col-5">
+        <div class="row">
+          <div class="col-4">
+            <hitpoints />
+            <combat />
+          </div>
+          <div class="col-8">
+            <attacks />
+          </div>          
+        </div>
         <resources />
+      </div>
+      <div class="col-7">
+        <actions />
       </div>
     </div>
   </div>

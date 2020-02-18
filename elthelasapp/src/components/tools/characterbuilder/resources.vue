@@ -16,7 +16,7 @@
       </select>
       <button class="btn btn-sm btn-danger print-hide" @click="removeResource(index)">X</button>
     </div>
-    <div class="row print-hide combat-hud-hide" style="margin-top: 10px;">
+    <div class="row print-hide" style="margin-top: 10px;">
       <div class="btn-group col-12">
         <button type="button" class="btn btn-sm print-hide btn-primary"
                 @click="addResource()">+</button>

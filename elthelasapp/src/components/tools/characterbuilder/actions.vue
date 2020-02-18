@@ -81,7 +81,7 @@
     </div>
     <div class="row">
       <div class="btn-group col">
-        <button @click="addActionModal = true" class="btn btn-sm btn-primary combat-hud-hide">+</button>
+        <button @click="addActionModal = true" class="btn btn-sm btn-primary">+</button>
       </div>
     </div>
   </div>
