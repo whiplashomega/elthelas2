@@ -6,7 +6,7 @@
         <div v-for="action in actions" :key="action.id + action.show.toString()" :title="action.description">
           <strong>{{ action.name }}</strong>
           <button class="btn btn-xs" @click="action.show = !action.show; forceUpdate()"><span v-if="action.show">&#x25B2;</span><span v-if="!action.show">&#x25BC;</span></button>
-          <button v-if="action.useradd && action.resourceused" @click="doAction(action)">Do</button> 
+          <button v-if="action.useradd && action.resourceused" @click="doAction(action)" class="btn btn-sm btn-primary">Do</button>
           <button @click="deleteAction(action)" class="btn btn-sm" v-if="action.useradd">X</button>
           <button v-if="action.title" type="button"
                   class="btn btn-sm btn-primary print-hide"
@@ -24,6 +24,7 @@
         <div v-for="action in bonus" :key="action.id + action.show.toString()" :title="action.description">
           <strong>{{ action.name }}</strong>
           <button class="btn btn-xs" @click="action.show = !action.show; forceUpdate()"><span v-if="action.show">&#x25B2;</span><span v-if="!action.show">&#x25BC;</span></button>
+          <button v-if="action.useradd && action.resourceused" @click="doAction(action)" class="btn btn-sm btn-primary">Do</button>
           <button @click="deleteAction(action)" class="btn btn-sm" v-if="action.useradd">X</button>
           <button v-if="action.title" type="button"
                   class="btn btn-sm btn-primary print-hide"
@@ -41,6 +42,7 @@
         <div v-for="action in reactions" :key="action.id + action.show.toString()" :title="action.description">
           <strong>{{ action.name }}</strong>
           <button class="btn btn-xs" @click="action.show = !action.show; forceUpdate()"><span v-if="action.show">&#x25B2;</span><span v-if="!action.show">&#x25BC;</span></button>
+          <button v-if="action.useradd && action.resourceused" @click="doAction(action)" class="btn btn-sm btn-primary">Do</button>
           <button @click="deleteAction(action)" class="btn btn-sm" v-if="action.useradd">X</button>
           <button v-if="action.title" type="button"
                   class="btn btn-sm btn-primary print-hide"
@@ -73,7 +75,7 @@
     </div>
     <div class="row">
       <div class="btn-group col">
-        <button @click="addActionModal = true" class="btn btn-sm">+</button>
+        <button @click="addActionModal = true" class="btn btn-sm btn-primary">+</button>
       </div>
     </div>
   </div>
