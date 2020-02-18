@@ -94,6 +94,9 @@
         <input type="number" class="charsheet-text" v-model="character.bonusslots[8]" />
         level 9
       </div>
+      <div class="col-3">
+        <input type="number" class="charsheet-text" v-model="character.warlockslotsmagic" />
+      </div>
     </div>
     <h5>Save DC Bonus</h5>
     <table class="table table-sm">

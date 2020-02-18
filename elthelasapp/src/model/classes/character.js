@@ -119,6 +119,7 @@ export default function() {
     },
     actions: [],
     temphp: 0,
+    warlockslotsmagic: 0,
     castlog: []
   };
-};
+}

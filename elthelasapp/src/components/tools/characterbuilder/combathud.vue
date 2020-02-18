@@ -75,7 +75,7 @@
           </div>
           <div class="col-8">
             <attacks />
-          </div>          
+          </div>
         </div>
         <resources />
       </div>

@@ -33,6 +33,7 @@ var Character = new Schema({
   size: { type: String, default: "medium" },
   skin: { type: String, default: "" },
   warlockslotsavailable: { type: Number, default: 0 },
+  warlockslotsmagic: { type: Number, default: 0 },
   weight: { type: String, default: "" },
   cp: { type: Number, default: 0 },
   sp: { type: Number, default: 0 },
