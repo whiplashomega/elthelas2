@@ -5,8 +5,8 @@
         "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/annamholysymbol.png",
         "alignment": "Lawful Evil",
         "domains": "Father of Giants, God of Strength",
-        "domains5": "",
-        "worshippers": "Annam All-Father is universally revered by giants and also by many giant kin.",
+        "domains5": "Order, Forge, War",
+        "worshippers": "Annam All-Father is universally revered by giants and also by many giant kin. Competitions of sport are considered an informal sort of worship for Annam.",
         "weapon": "Lance",
         "enemy": "Indra",
         "appearance": "Annam appears as a 50 ft tall, white bearded, fair skinned giant.",
@@ -18,7 +18,7 @@
         ],
         "holiday": "",
         "parents": "2nd Generation, born of Area",
-        "lore": "",
+        "lore": "In ancient days Annam held a much higher place. His Giants held dominion over large swaths of the world, and were in constant wars with the Dragons. But even before the time of the Gods War their dominion began to wane. Constant wars with the Dragons and the mortal races took their toll, and soon their were not enough giants to maintain their dominion. Annam created a homeland for the giants at the top of the world, cold and unforgiving, mirrored after his own home of Nephelheim. While small groups of giants still dot the world, most have retreated to this ancient home.",
         "level1": "",
         "level10": ""
       }

@@ -25,6 +25,15 @@
         <button class="btn btn-success btn-sm" @click="longrest()">Long Rest</button>
       </div>
     </div>
+    <h6>Spell Slots</h6>
+    <div class="row print-hide">
+      <div class="col" v-for="i in 9" :key="i">
+        Lvl {{ i }}: {{ character.availableslots["level" + i] }} / {{ totalslots("level" + i) }}
+      </div>
+      <div class="col">
+        Wck: {{ character.warlockslotsavailable }} / {{ warlockSlots }} Lvl {{ warlockSlotLevel }}
+      </div>
+    </div>
   </div>
 </template>
 <script src="./js/resources.js"></script>

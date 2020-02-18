@@ -5,7 +5,10 @@ export default {
   computed: {
     ...mapGetters({
       character: "getCharacter",
-      getStatMod: "getStatMod"
+      getStatMod: "getStatMod",
+      totalslots: "totalslots",
+      warlockSlots: "warlockSlots",
+      warlockSlotLevel: "warlockSlotLevel"
     })
   },
   methods: {

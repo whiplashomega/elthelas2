@@ -30,7 +30,6 @@
             <div class="row">
               <div class="col">
                 <!-- Attacks -->
-                <actions v-if="showActions" />
                 <attacks />
                 <features />
               </div>
@@ -39,7 +38,8 @@
               <div class="col">
                 <button class="btn btn-primary btn-sm" @click="hideleft = !hideleft"><span v-if="!hideleft">Hide</span><span v-if="hideleft">Show</span> Left</button>&nbsp;
                 <button class="btn btn-primary btn-sm" @click="buildHide = !buildHide"><span v-if="!buildHide">Hide</span><span v-if="buildHide">Show</span> Build</button>&nbsp;
-                <button class="btn btn-primary btn-sm" @click="showActions = !showActions"><span v-if="showActions">Hide</span><span v-if="!showActions">Show</span> Actions</button>
+                <button class="btn btn-primary btn-sm" @click="showActions = !showActions"><span v-if="showActions">Hide</span><span v-if="!showActions">Show</span> Actions</button>&nbsp;
+                <button class="btn btn-primary btn-sm" @click="combatModal = true">Combat HUD</button>
               </div>
             </div>
           </div>
@@ -58,6 +58,11 @@
         <div class="row">
           <div class="col-12">
             <resources />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <actions v-if="showActions" />
           </div>
         </div>
         <div style="page-break-after: always">&nbsp;</div>
@@ -185,6 +190,25 @@
       </b-tabs>
     </div>
     <loadsavemodals />
+    <b-modal v-model="combatModal" title="Combat HUD"
+             hide-footer size="xl">
+      <div class="row">
+        <div class="col-2">
+          <hitpoints />
+        </div>
+        <div class="col-4">
+          <attacks />
+        </div>
+        <div class="col-6">
+          <actions />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <resources />
+        </div>
+      </div>
+    </b-modal>
   </div>
 </template>
 <style src="./scss/characterbuilder.scss" scoped lang="scss"></style>

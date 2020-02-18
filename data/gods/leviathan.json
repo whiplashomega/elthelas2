@@ -1,20 +1,22 @@
       {
         "id": "leviathan",
         "name": "Leviathan",
-        "holysymbol": "",
-        "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/",
-        "alignment": "",
+        "holysymbol": "Stylized tentacles reaching upward from the depths",
+        "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/leviathanholysymbol.png",
+        "alignment": "Neutral",
         "domains": "Lord of the Great Sea Creatures (dragon turtles, whales, aboleths, etc)",
-        "domains5": "",
+        "domains5": "Water",
         "worshippers": "",
-        "weapon": "",
-        "enemy": "",
-        "appearance": "",
+        "weapon": "The whip, often with multiple tails",
+        "enemy": "Trimala",
+        "appearance": "A large, unarmored man with untamed long hair and beard. In depictions by mortals, his wild locks resemble tentacles.",
         "home": "Monstrathelas",
-        "tenets": [],
+        "tenets": [
+          "Strength and actions are the true source of power, not feeble words."
+        ],
         "holiday": "",
         "parents": "3rd Generation, born of Indra and Gaian",
-        "lore": "",
+        "lore": "Leviathan typically keeps to the depths of the oceans, but at times will challenge the might of Trimala when he sends his forces from the depths to barrage hapless ships under Trimala's care. He often chooses to leave a handful of survivors, who often will turn away from her after seeing her blessing was insufficient to keep their comrades alive.",
         "level1": "",
         "level10": ""
       }

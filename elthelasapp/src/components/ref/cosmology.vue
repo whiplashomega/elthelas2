@@ -142,7 +142,9 @@
     <p></p>
     <h4>Nephelheim</h4>
     <p><strong>Home of: </strong> Annam, Trolka</p>
-    <p></p>
+    <p>
+      The home of the Giant Gods, Nephelheim is surprisingly varied in its appearance across its face. Most of it is a cold, frozen tundra where the sun does not shine, but with pockets of cold marshlands and dotted with fiery volcanoes. Cities filled with the souls of giants, trolls, and giant kin dot the landscape as well. In this place the Ordning is the absolute law, and everyone and everything knows its place in the heirarchy of strength.
+    </p>
     <h4>Temerus</h4>
     <p><strong>Home of: </strong> Fanome, Arengesus</p>
     <p></p>

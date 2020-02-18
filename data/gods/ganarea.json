@@ -1,20 +1,22 @@
       {
         "id": "ganarea",
         "name": "Ganarea",
-        "holysymbol": "",
-        "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/",
-        "alignment": "",
+        "holysymbol": "Bacteria",
+        "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/ganareaholysymbol.png",
+        "alignment": "Neutral Evil",
         "domains": "God of Pestilance and Disease",
-        "domains5": "",
-        "worshippers": "",
-        "weapon": "",
-        "enemy": "",
-        "appearance": "",
+        "domains5": "Nature, Death, Air",
+        "worshippers": "Myconids and other fungus creatures. People who are diseased often beg Ganarea for mercy, offering him gifts and sacrifices.",
+        "weapon": "A cloud of noxious gas or spores",
+        "enemy": "Penicillin/ Labious",
+        "appearance": "A cloud of toxic fumes",
         "home": "Morbustos",
-        "tenets": [],
+        "tenets": [
+          "Spread everywhere, leave nothing untouched. Infect everything."
+        ],
         "holiday": "",
         "parents": "3rd Generation, born of Sylvan and Area",
-        "lore": "",
+        "lore": "Allied themselves with Asmodeus and Malik during the gods war, wanted to leave all mortals infected with his presence.",
         "level1": "",
         "level10": ""
       }

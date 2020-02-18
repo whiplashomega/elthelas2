@@ -57,7 +57,8 @@ export default {
     return {
       buildHide: false,
       hideleft: false,
-      showActions: true
+      showActions: true,
+      combatModal: false
     };
   },
   filters: {

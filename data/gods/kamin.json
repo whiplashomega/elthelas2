@@ -1,20 +1,22 @@
       {
         "id": "kamin",
         "name": "Kamin",
-        "holysymbol": "",
+        "holysymbol": "Varies, For those studying religions, a simple drawing of a cookpot over fire within a hearth circle is considered to be his iconography. Bakers and others that follow him in a somewhat more organized way than simple household practice tend to carry talismans rather than symbols—piece of hearthstone from their home fires, chip from the wooden paddle used to make their first loaf of bread and so on.",
         "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/",
-        "alignment": "",
+        "alignment": "chaotic good",
         "domains": "God of Fire in Service of Man, the Hearth, and Cooking",
-        "domains5": "",
-        "worshippers": "",
-        "weapon": "",
-        "enemy": "",
-        "appearance": "",
+        "domains5": "Fire, Life",
+        "worshippers": "Bakers and cooks often have personal traditions or practices that honor Kamin. Many households also have practices to honor the household god of the hearth, though few have it as deliberate offering to Kamin and may make their offerings under other names or simply as old family tradition (the first or last bit of crust goes into the fire to keep it strong...ceremonies to welcome the family gods into a new home/hearth/oven...nearly ritualistic rules for when cleaning out the oven/hearth to preserve the flame, etc)",
+        "weapon": "Cast iron skillet",
+        "enemy": "Some feel that Kamin is intrinsically opposed to Ganarea, god of pestilence and disease, Frosti god of ice snow and winter, and Interitus god of decay, fungus and soil as the concept of hearthfires and good food are against cold, sickness and rot. However, others point out that fire is most welcome in the winter (and more dangerous in the dryness of summer), that gathering together to share in food and fire can lead to entire households being quarantined together instead of merely the sick individual and that much of what we cook comes from the soil, so to declare these things opposed to one another is foolish oversimplification and denies the interconnectedness of all the gods. This is generally reserved for theologians to debate.",
+        "appearance": "old man with grey hair and flashing eyes, short and slightly round. Kind and smiling",
         "home": "Domigarus",
-        "tenets": [],
+        "tenets": [
+          "Kamin is seen as a god of generosity. As he has given hearthstones to contain fire and taught the first people how to use fire to cook and bake, followers are to continue this tradition of sharing."
+        ],
         "holiday": "",
         "parents": "3rd Generation, born of Molton and Area",
-        "lore": "",
+        "lore": "Although scholars say that Kamin is born of Gaian and Molton, those more removed from formal religions and their practice instead claim that Kamin is the result of so many small gods being worshiped that eventually, a greater spirit was born to unite all of them, though without actually destroying their individuality. So the household spirit that lives in your fire and protects your family is separate and distinct from the household spirit that lives in my fire and protects my family. But both are linked to Kamin, are a piece of Kamin. One could make offerings to Kamin specifically or could make the offerings to Jeff (because that's what grandma said the fire spirit's name was and everyone in the family knows that you have to pour a spoonful of dough/batter into the fire before you bake or your biscuits will burn, so make the offering to Jeff and just shut up about this Kamin spirit already) and the household spirit/great god will receive it all the same. The practice is what matters, not the name. In this way, Kamin is in an odd position of being widely worshiped but little recognized.",
         "level1": "",
         "level10": ""
       }

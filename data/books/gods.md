@@ -9,23 +9,23 @@ Nera - Goddess of Life and Death  *Logos*
     Malik (via Area) - God of Chaos and Destruction *Chaus Prima*
   *Indra* - Goddess of Greed and Individuality, Mother of Dragons * Dracinium*
     Bahamut (via Nera) - Lord of Metallic Dragons, God of Righteous Might *Dracinium*
-    Leviathan* (via Gaian) - Lord of the Great Sea Creatures (dragon turtles, whales, aboleths, etc) - Matt Donovan *Monstrathelas*
+    Leviathan (via Gaian) - Lord of the Great Sea Creatures (dragon turtles, whales, aboleths, etc) - Matt Donovan *Monstrathelas*
     Tiamat (via Area) - Lord of Chromatic Dragons, God of Plots *Kolasdrag*
   Tock - God of Absolute Order, Writing, and Machines *Mechanus* 
     Chronos* (via Nera) - God of Time - Isaac Schwabacher *Eternium*
-    Magus* (via Gaian) - God of Magic - Brent Freeman *Arcanius*
+    Magus (via Gaian) - God of Magic - Brent Freeman *Arcanius*
     *Woden* (via Area) DECEASED replaced by Dorman - God of Might and Rule by Strength *Niktos, the Halls of Victory*
 Gaian - Goddess of Nature and Creation *Elthelas*
   Molton - God of Fire, Fertility and Lust *Ignisia*
     *Adonna* (via Nera) - Goddess of Beauty and Art *Gallaria Perfectum*
-    Vulcan* (via Gaian) - God of Volcanos, Fiery Destruction, and Smithing - Brandon *Ignisia*
+    Vulcan (via Gaian) - God of Volcanos, Fiery Destruction, and Smithing - Brandon *Ignisia*
     *Kamin* (via Area) - God of Fire in Service of Man, the Hearth, and Cooking *Domigarus*
   Trimala - Goddess of Sea and Storms *Aquilos*
     Maris (via Nera) - God of Travel, Trade and Fair Deals *Astral Sea*
-    Sedna* (via Gaian) - Goddess of Fish and Sea Creatures - Brent Freeman *Aquilos*
+    Sedna (via Gaian) - Goddess of Fish and Sea Creatures - Brent Freeman *Aquilos*
     *Frosti* (via Area) - God of Ice, Snow, and Winter *Hiemsal*
   Dorun - God of Earth, Stone, and Music *Lapisio*
-    Bragi* (via Nera) - God of Poetry and Speech - Brent Freeman *Poetica Melodium*
+    Bragi (via Nera) - God of Poetry and Speech - Brent Freeman *Poetica Melodium*
     *Chthonis* (via Gaian) - God of the Deep Stone, Magma, and Earthquakes *Lapisio*
     Serangga (via Area) - God of Insects, Snakes, and Crawling Things - Brandon *Palusectum*
   Sylvan - God of Air, Wind, and Animals *Caelum*
@@ -33,12 +33,12 @@ Gaian - Goddess of Nature and Creation *Elthelas*
     *Agrios* (via Gaian) - God of the Feywind, Wild places, and freedom *Feywild*
     Ganarea* (via Area) - God of Pestilance and Disease - Brent Freeman *Morbustos*
 Area - Goddess of Ultimate Destruction, Vengeance, and Space *Aitia*
-  Annam* - Father of Giants, God of Strength *Nephelheim*
+  Annam - Father of Giants, God of Strength *Nephelheim*
     Moira* (via Nera) - Goddess of Fate - Heather *Chakaria*
     Funkus* (via Gaian) - God of Dance/Celebration - Dan Kuzuhara *Discotechnus*
     Trolka (via Area) - God of Hunger, Gluttony, and Excess *Nephelheim*
   Fanome - God of Tricksters and Illusions, patron of gnomes *Temerus*
-    Alitheia* (via Nera) - Goddess of Truth, Sight, and Divination - Brent Freeman *Mirrodeum*
+    Alitheia (via Nera) - Goddess of Truth, Sight, and Divination - Brent Freeman *Mirrodeum*
     *Mystikinae* (via Gaian) - God of Secrets, Lies, and Forbidden Knowledge *Etherium*
     *Tychaíos* (via Area) DECEASED replaced by Arengesus - God of Randomness *Temerus*
   Zhuul - God of the Void *The Nothingness Beyond*
