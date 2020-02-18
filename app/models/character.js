@@ -9,7 +9,7 @@ var Skill = new Schema({
   magic: { type: Number, default: 0 }
 });
 
-var CharClass = new Schema({ thisclass: Schema.Types.Mixed, level: Number, selsubclass: Schema.Types.Mixed, hitdice: Number });
+var CharClass = new Schema({ thisclass: Schema.Types.Mixed, level: Number, selsubclass: Schema.Types.Mixed, hitdice: Number, savedcstat: Number });
 var Character = new Schema({
   age: { type: String, default: "" },
   alignment: { type: String, default: "" },
