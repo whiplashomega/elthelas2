@@ -140,6 +140,12 @@ export default {
       res.current--;
       this.$forceUpdate();
     },
+    resourceAvailable (action) {
+      let res = this.character.resources.filter((a) => {
+        return a.name === action.resourceused.name;
+      })[0];
+      return res.current > 0;
+    },
     deleteAction(action) {
       if (confirm("Are you sure you want to delete this action?")) {
         this.character.actions.splice(this.character.actions.findIndex((a) => {

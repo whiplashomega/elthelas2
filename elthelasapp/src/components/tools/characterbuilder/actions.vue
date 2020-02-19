@@ -6,9 +6,9 @@
         <div v-for="action in actions" :key="action.id + action.show.toString()" :title="action.description">
           <strong>{{ action.name }}</strong>
           <button class="btn btn-xs" @click="action.show = !action.show; forceUpdate()"><span v-if="action.show">&#x25B2;</span><span v-if="!action.show">&#x25BC;</span></button>
-          <button v-if="action.useradd && action.resourceused" :disabled="action.resourceused.current < 1"
+          <button v-if="action.useradd && action.resourceused" :disabled="!resourceAvailable(action)"
                   @click="doAction(action)" class="btn btn-sm btn-primary">Do</button>
-          <span v-if="action.resourceused && action.resourceused.current < 1" class="alert">Out of Uses</span>
+          <span v-if="action.resourceused && !resourceAvailable(action)" class="alert">Out of Uses</span>
           <button @click="deleteAction(action)" class="btn btn-sm" v-if="action.useradd">X</button>
           <button v-if="action.title" type="button"
                   class="btn btn-sm btn-primary print-hide"
@@ -27,8 +27,8 @@
           <strong>{{ action.name }}</strong>
           <button class="btn btn-xs" @click="action.show = !action.show; forceUpdate()"><span v-if="action.show">&#x25B2;</span><span v-if="!action.show">&#x25BC;</span></button>
           <button v-if="action.useradd && action.resourceused" @click="doAction(action)"
-                  class="btn btn-sm btn-primary" :disabled="action.resourceused.current < 1">Do</button>
-          <span v-if="action.resourceused && action.resourceused.current < 1" class="alert">Out of Uses</span>
+                  class="btn btn-sm btn-primary" :disabled="!resourceAvailable(action)">Do</button>
+          <span v-if="action.resourceused && !resourceAvailable(action)" class="alert">Out of Uses</span>
           <button @click="deleteAction(action)" class="btn btn-sm" v-if="action.useradd">X</button>
           <button v-if="action.title" type="button"
                   class="btn btn-sm btn-primary print-hide"
@@ -47,8 +47,8 @@
           <strong>{{ action.name }}</strong>
           <button class="btn btn-xs" @click="action.show = !action.show; forceUpdate()"><span v-if="action.show">&#x25B2;</span><span v-if="!action.show">&#x25BC;</span></button>
           <button v-if="action.useradd && action.resourceused" @click="doAction(action)"
-                  class="btn btn-sm btn-primary" :disabled="action.resourceused.current < 1">Do</button>
-          <span v-if="action.resourceused && action.resourceused.current < 1" class="alert">Out of Uses</span>
+                  class="btn btn-sm btn-primary" :disabled="!resourceAvailable(action)">Do</button>
+          <span v-if="action.resourceused && !resourceAvailable(action)" class="alert">Out of Uses</span>
           <button @click="deleteAction(action)" class="btn btn-sm" v-if="action.useradd">X</button>
           <button v-if="action.title" type="button"
                   class="btn btn-sm btn-primary print-hide"
