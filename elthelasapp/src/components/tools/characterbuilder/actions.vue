@@ -5,7 +5,7 @@
         <h4>Actions</h4>
         <div v-for="action in actions" :key="action.id + action.show.toString()" :title="action.description">
           <strong>{{ action.name }}</strong>
-          <button class="btn btn-xs" @click="action.show = !action.show; forceUpdate()"><span v-if="action.show">&#x25B2;</span><span v-if="!action.show">&#x25BC;</span></button>
+          <button class="btn btn-sm" @click="action.show = !action.show; forceUpdate()"><span v-if="action.show">&#x25B2;</span><span v-if="!action.show">&#x25BC;</span></button>
           <button v-if="action.useradd && action.resourceused" :disabled="!resourceAvailable(action)"
                   @click="doAction(action)" class="btn btn-sm btn-primary">Do</button>
           <span v-if="action.resourceused && !resourceAvailable(action)" class="alert">Out of Uses</span>
@@ -25,7 +25,7 @@
         <h4>Bonus Actions</h4>
         <div v-for="action in bonus" :key="action.id + action.show.toString()" :title="action.description">
           <strong>{{ action.name }}</strong>
-          <button class="btn btn-xs" @click="action.show = !action.show; forceUpdate()"><span v-if="action.show">&#x25B2;</span><span v-if="!action.show">&#x25BC;</span></button>
+          <button class="btn btn-sm" @click="action.show = !action.show; forceUpdate()"><span v-if="action.show">&#x25B2;</span><span v-if="!action.show">&#x25BC;</span></button>
           <button v-if="action.useradd && action.resourceused" @click="doAction(action)"
                   class="btn btn-sm btn-primary" :disabled="!resourceAvailable(action)">Do</button>
           <span v-if="action.resourceused && !resourceAvailable(action)" class="alert">Out of Uses</span>
@@ -45,7 +45,7 @@
         <h4>Reactions</h4>
         <div v-for="action in reactions" :key="action.id + action.show.toString()" :title="action.description">
           <strong>{{ action.name }}</strong>
-          <button class="btn btn-xs" @click="action.show = !action.show; forceUpdate()"><span v-if="action.show">&#x25B2;</span><span v-if="!action.show">&#x25BC;</span></button>
+          <button class="btn btn-sm" @click="action.show = !action.show; forceUpdate()"><span v-if="action.show">&#x25B2;</span><span v-if="!action.show">&#x25BC;</span></button>
           <button v-if="action.useradd && action.resourceused" @click="doAction(action)"
                   class="btn btn-sm btn-primary" :disabled="!resourceAvailable(action)">Do</button>
           <span v-if="action.resourceused && !resourceAvailable(action)" class="alert">Out of Uses</span>
