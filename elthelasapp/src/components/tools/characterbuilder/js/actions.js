@@ -22,6 +22,9 @@ export default {
               slotsAvailable = true;
             }
           }
+          if (this.warlockSlotLevel >= Number(b.level) && this.character.warlockslotsavailable > 0) {
+            slotsAvailable = true;
+          }
           if (b.castingTime === '1 action' && (b.level === 'cantrip' || (b.prepared && slotsAvailable))) {
             if (typeof b.id === 'undefined') {
               b.id = Date.now() + Math.random();
@@ -50,6 +53,9 @@ export default {
               slotsAvailable = true;
             }
           }
+          if (this.warlockSlotLevel >= Number(b.level) && this.character.warlockslotsavailable > 0) {
+            slotsAvailable = true;
+          }
           if (b.castingTime === '1 bonus action' && (b.level === 'cantrip' || (b.prepared && slotsAvailable))) {
             if (typeof b.id === 'undefined') {
               b.id = Date.now() + Math.random();
@@ -77,6 +83,9 @@ export default {
             if (this.character.availableslots["level" + x] > 0) {
               slotsAvailable = true;
             }
+          }
+          if (this.warlockSlotLevel >= Number(b.level) && this.character.warlockslotsavailable > 0) {
+            slotsAvailable = true;
           }
           if (b.castingTime.includes('reaction') && (b.level === 'cantrip' || (b.prepared && slotsAvailable))) {
             if (typeof b.id === 'undefined') {
