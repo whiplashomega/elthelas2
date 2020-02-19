@@ -134,7 +134,10 @@ export default {
       };
     },
     doAction (action) {
-      action.resourceused.current--;
+      let res = this.character.resources.filter((a) => {
+        return a.name === action.resourceused.name;
+      })[0];
+      res.current--;
       this.$forceUpdate();
     },
     deleteAction(action) {
