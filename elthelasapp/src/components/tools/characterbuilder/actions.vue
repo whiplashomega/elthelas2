@@ -4,7 +4,7 @@
       <div class="col-sm">
         <h4>Actions</h4>
         <div v-for="action in actions" :key="action.id + action.show.toString()" :title="action.description">
-          <strong>{{ action.name }}</strong>
+          <strong @click="action.show = !action.show; forceUpdate()">{{ action.name }}</strong>
           <button class="btn btn-sm" @click="action.show = !action.show; forceUpdate()"><span v-if="action.show">&#x25B2;</span><span v-if="!action.show">&#x25BC;</span></button>
           <button v-if="action.useradd && action.resourceused" :disabled="!resourceAvailable(action)"
                   @click="doAction(action)" class="btn btn-sm btn-primary">Do</button>
@@ -15,7 +15,7 @@
           <select v-if="action.title && action.level !== 'cantrip'" v-model="action.castLevel">
             <option>{{ Number(action.level) }}</option>
             <option v-for="i in 9 - action.level" :key="i">{{ Number(i) + Number(action.level) }}</option>
-            <option v-if="warlockSlotLevel >= action.level" value="warlock">warlock</option>
+            <option v-if="warlockSlotLevel >= action.level" value="warlock">wlk</option>
           </select>
           <div v-if="action.show" v-html="$options.filters.marked(action.description)" :key="action.id"></div>
         </div>
@@ -23,7 +23,7 @@
       <div class="col-sm">
         <h4>Bonus Actions</h4>
         <div v-for="action in bonus" :key="action.id + action.show.toString()" :title="action.description">
-          <strong>{{ action.name }}</strong>
+          <strong @click="action.show = !action.show; forceUpdate()">{{ action.name }}</strong>
           <button class="btn btn-sm" @click="action.show = !action.show; forceUpdate()"><span v-if="action.show">&#x25B2;</span><span v-if="!action.show">&#x25BC;</span></button>
           <button v-if="action.useradd && action.resourceused" @click="doAction(action)"
                   class="btn btn-sm btn-primary" :disabled="!resourceAvailable(action)">Do</button>
@@ -34,7 +34,7 @@
           <select v-if="action.title && action.level !== 'cantrip'" v-model="action.castLevel">
             <option>{{ Number(action.level) }}</option>
             <option v-for="i in 9 - action.level" :key="i">{{ Number(i) + Number(action.level) }}</option>
-            <option v-if="warlockSlotLevel >= action.level" value="warlock">warlock</option>
+            <option v-if="warlockSlotLevel >= action.level" value="warlock">wlk</option>
           </select>
           <div v-if="action.show" v-html="$options.filters.marked(action.description)"></div>
         </div>
@@ -42,7 +42,7 @@
       <div class="col-sm">
         <h4>Reactions</h4>
         <div v-for="action in reactions" :key="action.id + action.show.toString()" :title="action.description">
-          <strong>{{ action.name }}</strong>
+          <strong @click="action.show = !action.show; forceUpdate()">{{ action.name }}</strong>
           <button class="btn btn-sm" @click="action.show = !action.show; forceUpdate()"><span v-if="action.show">&#x25B2;</span><span v-if="!action.show">&#x25BC;</span></button>
           <button v-if="action.useradd && action.resourceused" @click="doAction(action)"
                   class="btn btn-sm btn-primary" :disabled="!resourceAvailable(action)">Do</button>

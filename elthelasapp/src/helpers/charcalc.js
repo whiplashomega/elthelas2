@@ -354,7 +354,7 @@ export default {
         } if (a.level >= 17) {
           slots++;
         }
-        slots += character.warlockslotsmagic;
+        slots += Number(character.warlockslotsmagic);
       }
     });
     return slots;

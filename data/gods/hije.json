@@ -1,20 +1,24 @@
       {
         "id": "hije",
         "name": "Hije",
-        "holysymbol": "",
-        "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/",
-        "alignment": "",
+        "holysymbol": "A Black Cloak",
+        "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/hijeholysymbol.png",
+        "alignment": "Neutral Evil",
         "domains": "Goddess of Shadow, Thieves, Master of the Shadowfell",
-        "domains5": "",
-        "worshippers": "",
-        "weapon": "",
-        "enemy": "",
-        "appearance": "",
+        "domains5": "Arcana, Trickery",
+        "worshippers": "Creatures that live in the shadows, thieves",
+        "weapon": "Hije's personal weapon is a mutating mass of shadow, able to take any form he desires.",
+        "enemy": "Alohim, Alitheia",
+        "appearance": "When appearing to mortals, Hije typically takes the form of a humanoid in a cloak, however it is impossible to see his face. No matter what light you shine into the cloak, all one can see inside is darkness and shadow.",
         "home": "The Shadowfell",
-        "tenets": [],
-        "holiday": "",
+        "tenets": [
+          "It is not a crime unless you are caught",
+          "Let the shadows be your armor",
+          "The light cannot exist without creating a shadow"
+        ],
+        "holiday": "Amatherin 26, the darkest day of the year, called the Shadows Day. On this day people leave out offerings for Hije, in return for protection from his followers.",
         "parents": "3rd Generation, born of Zhuul and Gaian",
-        "lore": "",
-        "level1": "",
-        "level10": ""
+        "lore": "Hije was born in opposition to Alohim, but also as his inevitable partner. A source of light in a world full of things inevitably creates shadows. Shadows flee from the light, but are also created by it. Hije is the essence of this tendency throughout all things. He is the negative space of existence. As such he is the patron of outcasts throughout societies. The name The Black Sun, the international association of thieves guilds, takes its name as a reference to Hije and his existence as negative space.\n\nHije himself is without emotion. He does not favor followers, but makes business arrangements. He is often a patron of Hexblade's, the most powerful or favored of which he grants powerful weapons made of pure shadow. These weapons are shards of the Shadowfell itself.",
+        "level1": "Gain proficiency in the stealth skill. If you are already proficient you gain expertise instead.",
+        "level10": "You learn the spell Greater Invisibility and can cast it once without using a spell slot."
       }

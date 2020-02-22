@@ -19,11 +19,11 @@ Gaian - Goddess of Nature and Creation *Elthelas*
   Molton - God of Fire, Fertility and Lust *Ignisia*
     *Adonna* (via Nera) - Goddess of Beauty and Art *Gallaria Perfectum*
     Vulcan (via Gaian) - God of Volcanos, Fiery Destruction, and Smithing - Brandon *Ignisia*
-    *Kamin* (via Area) - God of Fire in Service of Man, the Hearth, and Cooking *Domigarus*
+    Kamin (via Area) - God of Fire in Service of Man, the Hearth, and Cooking *Domigarus*
   Trimala - Goddess of Sea and Storms *Aquilos*
     Maris (via Nera) - God of Travel, Trade and Fair Deals *Astral Sea*
     Sedna (via Gaian) - Goddess of Fish and Sea Creatures - Brent Freeman *Aquilos*
-    *Frosti* (via Area) - God of Ice, Snow, and Winter *Hiemsal*
+    Sneordin (via Area) - God of Ice, Snow, and Winter *Hiemsal*
   Dorun - God of Earth, Stone, and Music *Lapisio*
     Bragi (via Nera) - God of Poetry and Speech - Brent Freeman *Poetica Melodium*
     *Chthonis* (via Gaian) - God of the Deep Stone, Magma, and Earthquakes *Lapisio*
@@ -43,9 +43,9 @@ Area - Goddess of Ultimate Destruction, Vengeance, and Space *Aitia*
     *Tychaíos* (via Area) DECEASED replaced by Arengesus - God of Randomness *Temerus*
   Zhuul - God of the Void *The Nothingness Beyond*
     Ba'al (via Nera) - Lord of Demons *The Abyss*
-    *Hije* (via Gaian) - Goddess of Shadow, Thieves, Master of the Shadowfell *Shadowfell*
+    Hije (via Gaian) - Goddess of Shadow, Thieves, Master of the Shadowfell *Shadowfell*
     Fa'atasi* (via Area) - God of Madness and the Far Realm - Brandon *Far Realm*
   *Vrasja* - God of Assassins, Murder, and Blood *Sanguinus*
-    *Ptoma* (via Nera) - God of Undeath and the Undead *Necronus*
-    *Interitus* (via Gaian) - God of Decay, Fungus, and Soil *Aposynthesi*
+    Ptoma (via Nera) - God of Undeath and the Undead *Necronus*
+    Interitus (via Gaian) - God of Decay, Fungus, and Soil *Aposynthesi*
     *Odio* (via Area) - God of Hatred *Sanguinus*

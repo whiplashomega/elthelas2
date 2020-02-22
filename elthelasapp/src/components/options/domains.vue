@@ -17,7 +17,7 @@
       <li class="list-inline-item"><button @click="showClass('earth')" class="racebutton btn btn-default">Earth</button></li>
       <li class="list-inline-item"><button @click="showClass('fire')" class="racebutton btn btn-default">Fire</button></li>
       <li class="list-inline-item"><button @click="showClass('craft')" class="racebutton btn btn-default">Forge</button></li>
-      <li class="list-inline-item"><button @click="showClass('grace')" class="racebutton btn btn-default">Grave</button></li>
+      <li class="list-inline-item"><button @click="showClass('grave')" class="racebutton btn btn-default">Grave</button></li>
       <li class="list-inline-item"><button @click="showClass('knowledge')" class="racebutton btn btn-default">Knowledge</button></li>
       <li class="list-inline-item"><button @click="showClass('life')" class="racebutton btn btn-default">Life</button></li>
       <li class="list-inline-item"><button @click="showClass('light')" class="racebutton btn btn-default">Light</button></li>

@@ -1,20 +1,24 @@
-      {
-        "id": "ptoma",
-        "name": "Ptoma",
-        "holysymbol": "",
-        "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/",
-        "alignment": "",
-        "domains": "God of Undeath and the Undead",
-        "domains5": "",
-        "worshippers": "",
-        "weapon": "",
-        "enemy": "",
-        "appearance": "",
-        "home": "Necronus",
-        "tenets": [],
-        "holiday": "",
-        "parents": "3rd Generation, born of Vrasja and Nera",
-        "lore": "",
-        "level1": "",
-        "level10": ""
-      }
+{
+  "id": "ptoma",
+  "name": "Ptoma",
+  "holysymbol": "A Red Skull on a Black Circle",
+  "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/ptomaholysymbol.png",
+  "alignment": "Neutral Evil",
+  "domains": "God of Undeath and the Undead",
+  "domains5": "Death",
+  "worshippers": "Necromancers, Sentient Undead (such as vampires), and those who serve them.",
+  "weapon": "A mace made from a femur and a skull",
+  "enemy": "Cora",
+  "appearance": "Ptoma takes the appearance of a lich.",
+  "home": "Necronus",
+  "tenets": [
+    "Do what is necessary to acheive greatness",
+    "The body is but flesh to be used",
+    "No life is more valuable than your own"
+  ],
+  "holiday": "",
+  "parents": "3rd Generation, ascended to replace Mortudex, the Judge of the Dead, born of Vrasja and Nera",
+  "lore": "Ptoma is the youngest of the Gods. The first record of him interacting with the world comes from slightly after the Neran cataclysm. There are a number of theories of why that is. One is that the Lich King managed to kill Mortudex, leaving an opening for him to ascend to Godhood. Another possibility is that Mortudex died in some other way, some time before or shortly after the cataclysm, and that some other Sentient Undead managed to ascend later. Evidence points to the second possibility more than the first, as reports are that the Lich King was killed by the Champions of Cora, but either theory is still possible. It is also possible that Mortudex had been dead since the Gods war, and it was only the Neran Cataclysm that provided a strong enough focus of Necrotic energies enabling someone to ascend to fill the void he left behind. Whatever the case, Ptoma quickly shook up the pantheon, preventing the other Gods from destroying the masses of undead created by the cataclysm, and immediately providing a foil to Cora.",
+  "level1": "",
+  "level10": ""
+}
