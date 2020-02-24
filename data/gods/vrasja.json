@@ -4,17 +4,22 @@
         "holysymbol": "A bloody dagger",
         "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/vrasjaholysymbol.jpg",
         "alignment": "Chaotic Evil",
-        "domains": "God of Assassins, Murder, and Blood",
-        "domains5": "Trickery, Death",
+        "domains": "Goddess of Assassins, Murder, and Blood",
+        "domains5": "Trickery, Death, War",
         "worshippers": "Those who practice the art of murder for hire, or just murder in general. Blood mages, and blood hunters.",
         "weapon": "A serrated dagger that constantly drips blood",
-        "enemy": "",
-        "appearance": "",
+        "enemy": "Amathera",
+        "appearance": "Vrasja appears as a muscular woman, scarred from battle, with blond hair always in a long braid. She is always seen in her signature blood red leather armor and with her face hidden by a blood red cloak. Her eyes glow red from under the shadow of her cloak.",
         "home": "Sanguinus",
-        "tenets": [],
+        "tenets": [
+          "Perform Blood Sacrifice in the name of Vrasja",
+          "Justice is a lie",
+          "Kill efficiently and without mercy",
+          "Prove your strength with the blood of your enemies"
+        ],
         "holiday": "",
         "parents": "2nd Generation, born of Area",
-        "lore": "",
+        "lore": "No one knows how many Gods of Murder there have been. All have taken the name Vrasja after ascending. All ascended by successfully murdering their predecessor. Scholars are only aware of the change by the occasional change in Vrasja's appearance, gender, and sometimes even minor changes to the tenets and demands made of her clerics.\n\nVrasja is a Goddess with ever shifting alliances. In the days of the Gods War she shifted sides constantly just to keep the war going, and the blood flowing. Where Nera represents natural death, reincarnation, and the normal order of things, Vrasja is the epitome of death by violence, gaining power with each mortal cut down in their prime.",
         "level1": "",
         "level10": ""
       }
