@@ -29,7 +29,7 @@ Gaian - Goddess of Nature and Creation *Elthelas*
     Chthonis (via Gaian) - God of the Deep Stone, Magma, and Earthquakes *Lapisio*
     Serangga (via Area) - God of Insects, Snakes, and Crawling Things - Brandon *Palusectum*
   Sylvan - God of Air, Wind, and Animals *Caelum*
-    *Labious* (via Nera) - Goddess of Fertility love Luck and husbandry *Mercuria*
+    **Labious* (via Nera) - Goddess of Fertility love Luck and husbandry *Mercuria* - Brent Freeman
     *Agrios* (via Gaian) - God of the Feywind, Wild places, and freedom *Feywild*
     Ganarea (via Area) - God of Pestilance and Disease - Brent Freeman *Morbustos*
 Area - Goddess of Ultimate Destruction, Vengeance, and Space *Aitia*
@@ -39,7 +39,7 @@ Area - Goddess of Ultimate Destruction, Vengeance, and Space *Aitia*
     Trolka (via Area) - God of Hunger, Gluttony, and Excess *Nephelheim*
   Fanome - God of Tricksters and Illusions, patron of gnomes *Temerus*
     Alitheia (via Nera) - Goddess of Truth, Sight, and Divination - Brent Freeman *Mirrodeum*
-    **Mystikinae* (via Gaian) - God of Secrets, Lies, and Forbidden Knowledge *Etherium*
+    **Mystikinae* (via Gaian) - God of Secrets, Lies, and Forbidden Knowledge *Etherium* - Brent Freeman
     *Tychaíos* (via Area) DECEASED replaced by Arengesus - God of Randomness *Temerus*
   Zhuul - God of the Void *The Nothingness Beyond*
     Ba'al (via Nera) - Lord of Demons *The Abyss*
@@ -48,4 +48,4 @@ Area - Goddess of Ultimate Destruction, Vengeance, and Space *Aitia*
   Vrasja - God of Assassins, Murder, and Blood *Sanguinus*
     Ptoma (via Nera) - God of Undeath and the Undead *Necronus*
     Interitus (via Gaian) - God of Decay, Fungus, and Soil *Aposynthesi*
-    *Odio* (via Area) - God of Hatred *Sanguinus*
+    **Odio* (via Area) - God of Hatred *Sanguinus* - Brent Freeman
