@@ -2741,7 +2741,7 @@
  {
   "Item": "Ockham's Laser",
   "Type": "Wondrous Item",
-  "Cost (gp)": "8000 gp",
+  "Cost (gp)": "8000",
   "Rarity": "Rare",
   "Attunement": "Yes",
   "Effect": "This bracer fits snuggly on the wrist up to the elbow. It has 10 charges. When activated, a wand pops out of the bracer and fires one of the following spells of your choice, using the number of charges indicated: Ray of Frost - free; magic missile - 1 charge; scorching ray - 3 charges. Lightning Bolt - 5 charges, Sunbeam - 10 charges. It regains 1d6 charges daily at dawn. When necessary, the spell attack bonus for these spells is +7, and the Save DC is 15."
@@ -2749,9 +2749,17 @@
  {
    "Item": "Book of Rituals",
    "Type": "Wondrous Item",
-   "Cost": "6000 gp",
+   "Cost": "6000",
    "Rarity": "Uncommon",
    "Attunement": "No",
    "Effect": "This magical spell book contains 9 (3d4 + 2) spell levels worth of random spells that have the ritual tag (determined by the DM when the item is acquired). The book details all of the methods and incantations necessary to cast the rituals it contains. A spellcaster with the ritual caster ability can use the book to cast any of the rituals within as a ritual without preparing them or having them in their spellbook otherwise. However, the book does not contain the information necessary to cast the spells normally, and thus do not contain the information a wizard would need to add the spells to their normal spell book."
+ },
+ {
+  "Item": "The General's Crossbow",
+  "Type": "Weapon (Hand Crossbow)",
+  "Cost": "1000000",
+  "Rarity": "Legendary",
+  "Attunement": "Yes",
+  "Effect": "This magical crossbow was specifically designed and built by a team of the best gnomish artificers from Stagenheim specifically as a gift for General Lilith of the Black Wolf Irregulars. It is attuned to her particular essence and can only be attuned by her. When attuned to this item, Lilith gains the following benefits:\n\n* +3 to attack and damage rolls made with this crossbow.\n* +2 to her dexterity and intelligence scores (does not stack with other magical bonuses to these scores).\n* When she makes an attack with this crossbow she can choose a damage type: fire, cold, lightning, poison, or acid. The crossbow does an additional 1d8 damage of that type.\n* This crossbow magically creates its own ammunition when fired, ignoring the loading and ammunition properties."
  }
 ]
