@@ -253,8 +253,10 @@ export default {
         num += Math.floor(Math.max(0, Math.min(a.level, 17) - 11) / 2);
         if (a.selsubclass.name === "Sorceron Bloodline") {
           num += 3;
-        }
+        } 
         if (a.selsubclass.name === "Sorceron Bloodline" && a.level >= 14) {
+          num++;
+        } else if (a.selsubclass.name === "Divine Soul") {
           num++;
         }
       }

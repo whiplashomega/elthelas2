@@ -1,20 +1,22 @@
       {
         "id": "chronos",
         "name": "Chronos",
-        "holysymbol": "",
-        "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/",
-        "alignment": "",
+        "holysymbol": "An hourglass",
+        "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/chronosholysymbol.jpg",
+        "alignment": "Lawful Neutral",
         "domains": "God of Time",
-        "domains5": "",
-        "worshippers": "",
-        "weapon": "",
-        "enemy": "",
-        "appearance": "",
+        "domains5": "Order",
+        "worshippers": "Chronos has almost no worshippers, rather as the master of one of the fundamental aspects of the universe",
+        "weapon": "time itself",
+        "enemy": "Arengesus",
+        "appearance": "Chronos appears as a vaguely humanoid shape in which one can see entire galaxies floating.",
         "home": "Eternium",
-        "tenets": [],
+        "tenets": [
+          "The flow of time must not be circumvented"
+        ],
         "holiday": "",
         "parents": "3rd Generation, born of Tock and Gaian",
-        "lore": "",
+        "lore": "Chronos does not fight fair. There is an ancient story of a group of powerful wizards who attempted to confront him on Eternium. They sought to force him to grant them his boon, but they had barely issued their ultimatum when they found the world around them had stopped, unable to be affected by them. Chronos accelerated time in the space they were in so much that they died of old age in seconds.",
         "level1": "",
         "level10": ""
       }

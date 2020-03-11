@@ -1,15 +1,15 @@
       {
-        "id": "sneordin",
-        "name": "Sneordin",
+        "id": "sneordra",
+        "name": "Sneordra",
         "holysymbol": "Icicles",
         "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/sneordinholysymbol.png",
         "alignment": "Neutral",
-        "domains": "God of Ice, Snow, and Winter",
+        "domains": "Goddess of Ice, Snow, and Winter",
         "domains5": "Water, Nature",
         "worshippers": "Yetis, Ice Mephits, those in cold climates often make offerings to request a gentle winter",
         "weapon": "A scepter made of an icicle",
         "enemy": "Molton",
-        "appearance": "Sneordin's nose is an icicle, his beard wisps of snow. His towering form dressed in all white with clawed hands reminiscent of the bare branches of a tree in winter.",
+        "appearance": "A tall, white skinned, curvaceous woman with hair the color of icicles and a crystalline dress.",
         "home": "Hiemsal",
         "tenets": [
           "Your desires are the enemy of your goals",
@@ -18,7 +18,7 @@
         ],
         "holiday": "The Snow Celebration, typically held on Neradan 20 in the northern hemisphere.",
         "parents": "3rd Generation, born of Trimala and Area",
-        "lore": "The followers of Sneordin have a unique method of divining, reading messages from Sneordin in the patterns frost makes on things such as glass or the surfaces of ponds. Priests of Sneordin typically take a vow of chastity, puting aside their earthly desires.",
+        "lore": "The followers of Sneordra have a unique method of divining, reading messages from Sneordra in the patterns frost makes on things such as glass or the surfaces of ponds. Priests of Sneordra typically take a vow of chastity, puting aside their earthly desires.",
         "level1": "",
         "level10": ""
       }

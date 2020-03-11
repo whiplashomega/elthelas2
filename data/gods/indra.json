@@ -1,20 +1,24 @@
-      {
-        "id": "indra",
-        "name": "Indra",
-        "holysymbol": "A gold dragon on a red background",
-        "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/indraholysymbol.jpg",
-        "alignment": "Neutral",
-        "domains": "Goddess of Greed and Individuality, Mother of Dragons",
-        "domains5": "",
-        "worshippers": "All dragons, chromatic or metalic, pay homage to Indra as their great mother.",
-        "weapon": "",
-        "enemy": "",
-        "appearance": "",
-        "home": "Dracinium",
-        "tenets": [],
-        "holiday": "",
-        "parents": "2nd Generation, born of Nera",
-        "lore": "",
-        "level1": "",
-        "level10": ""
-      }
+{
+  "id": "indra",
+  "name": "Indra",
+  "holysymbol": "A gold dragon on a red background",
+  "symbolimage": "https://elthelas-images.herokuapp.com/holysymbol/indraholysymbol.jpg",
+  "alignment": "Neutral",
+  "domains": "Goddess of Greed and Individuality, Mother of Dragons",
+  "domains5": "Trade, Order",
+  "worshippers": "All dragons, chromatic or metalic, pay homage to Indra as their great mother. She is often also worshipped by unscrupulous merchants who would be shunned by Maris, and fanatic individualists.",
+  "weapon": "",
+  "enemy": "Annam",
+  "appearance": "Indra typically appears as a long, serpentine dragon, with each scale a different color, from silver to red.",
+  "home": "Dracinium",
+  "tenets": [
+    "Acquisition of wealth is a worthy goal in and of itself",
+    "The Dragons are the greatest of the races, each worthy of worship on their own.",
+    "Worship no God but the Dragon Gods. Indra first, Bahamut and Tiamat second."
+  ],
+  "holiday": "",
+  "parents": "2nd Generation, born of Nera",
+  "lore": "Indra is a jealous God, and a God of her creations before others. She withdrew from the world long before the Gods War, after fighting her own jealous wars with Annam, God of the Giants. Her hatred for Annam and giant kind defies reason. While all Dragons worship her, it is the sort of worship that is second nature, most devote themselves much more fully to either Bahamut or Tiamat.",
+  "level1": "",
+  "level10": ""
+}

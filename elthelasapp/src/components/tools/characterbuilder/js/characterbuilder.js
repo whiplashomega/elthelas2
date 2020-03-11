@@ -60,7 +60,8 @@ export default {
       buildHide: false,
       hideleft: false,
       showActions: true,
-      combatModal: false
+      combatModal: false,
+      startGuide: true
     };
   },
   filters: {

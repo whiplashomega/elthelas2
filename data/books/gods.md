@@ -7,7 +7,7 @@ Nera - Goddess of Life and Death  *Logos*
     Asmodeus (via Nera) - Lord of Devils, God of Pacts *9 Hells of Skoteivas*
     **Alidal* (via Gaian) - Goddess of the Hunt - Heather *Lucusectus*
     Malik (via Area) - God of Chaos and Destruction *Chaus Prima*
-  *Indra* - Goddess of Greed and Individuality, Mother of Dragons * Dracinium*
+  Indra - Goddess of Greed and Individuality, Mother of Dragons * Dracinium*
     Bahamut (via Nera) - Lord of Metallic Dragons, God of Righteous Might *Dracinium*
     Leviathan (via Gaian) - Lord of the Great Sea Creatures (dragon turtles, whales, aboleths, etc) - Matt Donovan *Monstrathelas*
     Tiamat (via Area) - Lord of Chromatic Dragons, God of Plots *Kolasdrag*
@@ -30,7 +30,7 @@ Gaian - Goddess of Nature and Creation *Elthelas*
     Serangga (via Area) - God of Insects, Snakes, and Crawling Things - Brandon *Palusectum*
   Sylvan - God of Air, Wind, and Animals *Caelum*
     **Labious* (via Nera) - Goddess of Fertility love Luck and husbandry *Mercuria* - Brent Freeman
-    *Agrios* (via Gaian) - God of the Feywind, Wild places, and freedom *Feywild*
+    Agrios (via Gaian) - God of the Feywind, Wild places, and freedom *Feywild*
     Ganarea (via Area) - God of Pestilance and Disease - Brent Freeman *Morbustos*
 Area - Goddess of Ultimate Destruction, Vengeance, and Space *Aitia*
   Annam - Father of Giants, God of Strength *Nephelheim*
