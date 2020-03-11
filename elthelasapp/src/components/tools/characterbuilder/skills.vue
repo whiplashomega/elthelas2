@@ -11,8 +11,8 @@
             <select v-model="skill.prof" class="charsheet-num">
               <option :value="0">No</option>
               <option :value="0.5">Half</option>
-              <option :value="1">Yes</option>
-              <option :value="2">Exp</option>
+              <option :value="1" v-if="notRawCheck(skill)">Yes</option>
+              <option :value="2" v-if="notRawCheck(skill)">Exp</option>
             </select>
           </td>
           <td><button @click="rollCheck(getSkillMod(skill))"><span v-if="getSkillMod(skill) > -1">+</span>{{ getSkillMod(skill) }}</button></td>

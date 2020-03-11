@@ -44,6 +44,12 @@ export default function() {
     god: "",
     skin: "",
     skills: [
+      { name: "Strength", prof: 0, stat: 0, magic: 0 },
+      { name: "Dexterity", prof: 0, stat: 1, magic: 0 },
+      { name: "Constitution", prof: 0, stat: 2, magic: 0 },
+      { name: "Intelligence", prof: 0, stat: 3, magic: 0 },
+      { name: "Wisdom", prof: 0, stat: 4, magic: 0 },
+      { name: "Charisma", prof: 0, stat: 5, magic: 0 },
       { name: "Acrobatics", prof: 0, stat: 1, magic: 0 },
       { name: "Animal Handling", prof: 0, stat: 4, magic: 0 },
       { name: "Arcana", prof: 0, stat: 3, magic: 0 },

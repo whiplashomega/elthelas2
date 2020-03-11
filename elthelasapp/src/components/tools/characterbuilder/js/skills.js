@@ -9,6 +9,19 @@ export default {
     })
   },
   methods: {
+    notRawCheck (skill) {
+      if (
+        skill.name === "Strength" ||
+        skill.name === "Dexterity" ||
+        skill.name === "Constitution" ||
+        skill.name === "Intelligence" ||
+        skill.name === "Wisdom" ||
+        skill.name === "Charisma"
+      ) {
+        return false;
+      }
+      return true;
+    },
     rollCheck (modifier) {
       let res = droll.roll('1d20').total;
       let adv = droll.roll('1d20').total;
