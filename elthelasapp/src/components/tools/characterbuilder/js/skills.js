@@ -1,4 +1,4 @@
-import { mapGetters } from 'vuex';
+import { mapGetters, mapActions } from 'vuex';
 import droll from 'droll';
 
 export default {
@@ -22,6 +22,10 @@ export default {
     };
   },
   methods: {
+    ...mapActions({
+      addProficiency: "addProficiency",
+      removeProficiency: "removeProficiency"
+    }),
     notRawCheck (skill) {
       if (
         skill.name === "Strength" ||

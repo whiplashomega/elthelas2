@@ -6,7 +6,7 @@
       </thead>
       <tbody>
         <tr v-for="skill in character.skills" :key="skill.name">
-          <th>{{ skill.name }}<button v-if="skill.custom" class="btn btn-danger" @click="removeProficiency(skill)">-</button></th>
+          <th>{{ skill.name }}<button v-if="skill.custom" class="btn btn-danger print-hide" @click="removeProficiency(skill)">-</button></th>
           <td>
             <select v-model="skill.prof" class="charsheet-num">
               <option :value="0">No</option>
@@ -18,7 +18,7 @@
           <td><button @click="rollCheck(getSkillMod(skill))"><span v-if="getSkillMod(skill) > -1">+</span>{{ getSkillMod(skill) }}</button></td>
           <td><input type="number" class="charsheet-num" v-model="skill.magic" /></td>
         </tr>
-        <tr><th colspan="4"><button class="btn btn-primary" @click="newProfModal = true">+</button></th></tr>
+        <tr class="print-hide"><th colspan="4"><button class="btn btn-primary" @click="newProfModal = true">+</button></th></tr>
       </tbody>
     </table>
     <div class="charsheet-static">
