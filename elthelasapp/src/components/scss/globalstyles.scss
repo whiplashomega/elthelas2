@@ -10,13 +10,20 @@
 .nav-pill a {
   padding: 8px 15px;
   margin: 2px 5px;
-  background-color: #6784c6;
   border-radius: 4px;
-  color: #ffffff;
   font-weight: bold;
   span {
     display: block;
   }
+}
+
+.light .nav-pill a {
+  background-color: $sidenavbackground;
+  color: $sidenavcolor;
+}
+.dark .nav-pill a {
+  background-color: $darksidenavbackground;
+  color: $darksidenavcolor;
 }
 .dark.fullBody {
   background-color: $darkbackground;
