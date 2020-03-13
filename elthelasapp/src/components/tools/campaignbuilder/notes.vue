@@ -259,8 +259,11 @@
   .encounterbox {
     min-height: 500px;
   }
-  .complete {
+  .light .complete {
     background-color: rgba(180, 180, 230, 0.3);
     font-size: 0.8rem;
+  }
+  .dark .complete {
+    background-color: rgba(55, 55, 80, 0.3);
   }
 </style>
