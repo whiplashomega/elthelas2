@@ -1,13 +1,13 @@
 import { mapGetters, mapActions } from 'vuex';
 import droll from 'droll';
 
-let Proficiency = {
-        custom: true,
-        name: "",
-        stat: 0,
-        prof: 0,
-        magic: 0
-};
+function Proficiency () {
+  this.custom = true;
+  this.name = "";
+  this.stat = 0;
+  this.prof = 0;
+  this.magic = 0;
+}
 
 export default {
   computed: {
