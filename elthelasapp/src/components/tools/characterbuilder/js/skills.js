@@ -1,6 +1,14 @@
 import { mapGetters, mapActions } from 'vuex';
 import droll from 'droll';
 
+let Proficiency = {
+        custom: true,
+        name: "",
+        stat: 0,
+        prof: 0,
+        magic: 0
+};
+
 export default {
   computed: {
     ...mapGetters({
@@ -12,13 +20,7 @@ export default {
   data: function () {
     return {
       newProfModal: false,
-      newProf: {
-        custom: true,
-        name: "",
-        stat: 0,
-        prof: 0,
-        magic: 0
-      }
+      newProf: new Proficiency()
     };
   },
   methods: {
@@ -26,6 +28,10 @@ export default {
       addProficiency: "addProficiency",
       removeProficiency: "removeProficiency"
     }),
+    addProf (skill) {
+      this.addProficiency(skill);
+      this.newProf = new Proficiency();
+    },
     notRawCheck (skill) {
       if (
         skill.name === "Strength" ||

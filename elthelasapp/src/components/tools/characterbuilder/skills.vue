@@ -6,7 +6,7 @@
       </thead>
       <tbody>
         <tr v-for="skill in character.skills" :key="skill.name">
-          <th>{{ skill.name }}<button v-if="skill.custom" class="btn btn-danger print-hide" @click="removeProficiency(skill)">-</button></th>
+          <th>{{ skill.name }}<button v-if="skill.custom" class="btn btn-danger print-hide btn-sm" @click="removeProficiency(skill)">-</button></th>
           <td>
             <select v-model="skill.prof" class="charsheet-num">
               <option :value="0">No</option>
@@ -18,7 +18,7 @@
           <td><button @click="rollCheck(getSkillMod(skill))"><span v-if="getSkillMod(skill) > -1">+</span>{{ getSkillMod(skill) }}</button></td>
           <td><input type="number" class="charsheet-num" v-model="skill.magic" /></td>
         </tr>
-        <tr class="print-hide"><th colspan="4"><button class="btn btn-primary" @click="newProfModal = true">+</button></th></tr>
+        <tr class="print-hide"><th colspan="4"><button class="btn btn-primary btn-sm" @click="newProfModal = true">+</button></th></tr>
       </tbody>
     </table>
     <div class="charsheet-static">
@@ -35,7 +35,7 @@
       <textarea v-model="character.proficiencies" class="charsheet-textarea smalltext" id="profbox"></textarea>
     </div>
     <b-modal v-model="newProfModal" :modal-class="userinfo.themesetting"
-             @ok="addProficiency(newProf)" title="Add Custom Skill">
+             @ok="addProf(newProf)" title="Add Custom Skill">
       <label>Name</label>
       <input type="text" class="charsheet-text" v-model="newProf.name" />
       <label>Ability</label>
