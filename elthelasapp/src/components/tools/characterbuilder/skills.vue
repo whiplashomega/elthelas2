@@ -34,21 +34,21 @@
       <p style="font-size:9px;margin-bottom:2px;"><strong>Saves: </strong>{{ character.charclasses[0].thisclass.proficiencies["saving throws"].join(", ") }}</p>
       <textarea v-model="character.proficiencies" class="charsheet-textarea smalltext" id="profbox"></textarea>
     </div>
+    <b-modal v-model="newProfModal" :modal-class="userinfo.themesetting"
+             @ok="addProficiency(newProf)" title="Add Custom Skill">
+      <label>Name</label>
+      <input type="text" class="charsheet-text" v-model="newProf.name" />
+      <label>Ability</label>
+      <select v-model="newProf.stat" class="charsheet-text">
+        <option :value=0>Strength</option>
+        <option :value=1>Dexterity</option>
+        <option :value=2>Constitution</option>
+        <option :value=3>Intelligence</option>
+        <option :value=4>Wisdom</option>
+        <option :value=5>Charisma</option>
+      </select>
+    </b-modal>
   </div>
-  <b-modal v-model="newProfModal" modal-class="userinfo.themesetting"
-           @ok="addProficiency(newProf)" title="Add Custom Skill">
-    <label>Name</label>
-    <input type="text" class="charsheet-text" v-model="newProf.name" />
-    <label>Ability</label>
-    <select v-model="newProf.stat" class="charsheet-text">
-      <option :value=0>Strength</option>
-      <option :value=1>Dexterity</option>
-      <option :value=2>Constitution</option>
-      <option :value=3>Intelligence</option>
-      <option :value=4>Wisdom</option>
-      <option :value=5>Charisma</option>
-    </select>
-  </b-modal>
 </template>
 <script src="./js/skills.js"></script>
 <style src="./scss/characterbuilder.scss" lang="scss" scoped></style>

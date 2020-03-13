@@ -15,7 +15,8 @@ export default {
       carryMax: "carryMax",
       totalGold: "totalGold",
       equipmentContainers: "equipmentContainers",
-      armor: 'allArmor'
+      armor: 'allArmor',
+      userinfo: "getUserInfo"
     }),
     allWeapons () {
       var allweapons = [ ...this.weapons, ...this.magicweapons ];

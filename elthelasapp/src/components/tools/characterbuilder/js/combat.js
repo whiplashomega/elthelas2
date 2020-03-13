@@ -7,7 +7,8 @@ export default {
       accalc: "accalc",
       armorac: "armorac",
       profbonus: "profbonus",
-      getSpeedStat: "getSpeedStat"
+      getSpeedStat: "getSpeedStat",
+      userinfo: "getUserInfo"
     })
   },
   data () {

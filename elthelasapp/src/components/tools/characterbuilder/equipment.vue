@@ -16,7 +16,7 @@
               {{ item.name }}
             </span><input type="number" class="charsheet-num" v-model="item.quantity" /><br />
             <b-modal v-model="item.edit" title="Edit Equipment"
-                     hide-footer>
+                     hide-footer :modal-class="userinfo.themesetting">
               Name
               <input type="text" class="form-control" v-model="item.name" />
               Weight
@@ -41,7 +41,7 @@
           <button type="button" class="btn btn-sm btn-primary print-hide" @click="containModal = true">+Container</button>
         </div>
         <b-modal v-model="equipModal" title="Add Equipment"
-                 hide-footer>
+                 hide-footer :modal-class="userinfo.themesetting">
           Quantity
           <input type="number" class="form-control" v-model="newequip.quantity" />
           Container
@@ -104,7 +104,8 @@
             </b-tab>
           </b-tabs>
         </b-modal>
-        <b-modal v-model="containModal" title="Add Container" @ok="addContainer()">
+        <b-modal v-model="containModal" title="Add Container"
+                 @ok="addContainer()" :modal-class="userinfo.themesetting">
           Name
           <input type="text" class="form-control" v-model="newcontain.name" />
           Capacity
