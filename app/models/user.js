@@ -18,7 +18,9 @@ var User = new Schema({
    admin: {
        type: Boolean,
        default: false
-   }
+   },
+   showguide: { type: Boolean, default: true },
+   themesetting: { type: String, default: 'light' }
 });
 
 User.methods.getName = function() {

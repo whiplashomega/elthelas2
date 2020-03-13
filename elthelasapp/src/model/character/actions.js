@@ -1,6 +1,21 @@
 import Character from '@/model/classes/character';
 import Vue from 'vue';
 
+function addAbilities(curChar) {
+  if (curChar.skills.find(e => {
+    return e.name === "Strength";
+  }).length === 0) {
+    curChar.skills.unshift(
+      { name: "Strength", prof: 0, stat: 0, magic: 0 },
+      { name: "Dexterity", prof: 0, stat: 1, magic: 0 },
+      { name: "Constitution", prof: 0, stat: 2, magic: 0 },
+      { name: "Intelligence", prof: 0, stat: 3, magic: 0 },
+      { name: "Wisdom", prof: 0, stat: 4, magic: 0 },
+      { name: "Charisma", prof: 0, stat: 5, magic: 0 }
+    );
+  }
+}
+
 export default {
   setCharacter: ({ state }, character) => {
     state.currentCharacter = character;
@@ -23,6 +38,7 @@ export default {
   getOneFromServer: ({ state }, id) => {
     Vue.http.get('/characters/' + id).then((response) => {
       state.currentCharacter = { ...response.body };
+      addAbilities(state.currentCharacter);
     });
   },
   loadFromDrive: ({ state }, { comp, id }) => {
@@ -71,6 +87,7 @@ export default {
       state.currentCharacter = Character();
       for (let prop in character) {
         state.currentCharacter[prop] = character[prop];
+        addAbilities(state.currentCharacter);
       }
       // state.currentCharacter = character;
       comp.$root.$emit('bv::hide::modal', 'servermodal');
@@ -156,6 +173,15 @@ export default {
   },
   removeContainer({ state }, i) {
     state.currentCharacter.containers.splice(state.currentCharacter.containers.indexOf(i), 1);
+  },
+  addProficiency({ state }, proficiency) {
+    state.currentCharacter.skills.push(proficiency);
+  },
+  removeProficiency({ state }, skill) {
+    let i = state.currentCharacter.skills.indexOf(skill);
+    if (i !== -1 && confirm("Are you sure you want to remove the skill " + skill.name + "?")) {
+      state.currentCharacter.skills.splice(i, 1);
+    }
   },
   castSpell({ state, getters }, spell) {
     if (spell.level !== 'cantrip' && spell.castLevel !== "warlock") {

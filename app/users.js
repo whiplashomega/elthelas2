@@ -129,7 +129,7 @@ router.get('/logout', function(req, res) {
 
 router.route('/:username')
     .get(Verify.verifyOrdinaryUser, function(req, res) {
-        User.find({ username: req.params.username }, function (err, user) {
+        User.find({ username: req.decoded.username }, function (err, user) {
             if (err) throw err;
             if (req.decoded._doc.username === req.params.username) {
                 res.json(user[0]);
@@ -137,12 +137,13 @@ router.route('/:username')
         });
     })
     .put(Verify.verifyOrdinaryUser, function(req, res) { 
-        User.find({ username: req.params.username }, function (err, user) {
+        User.find({ username: req.decoded.username }, function (err, user) {
             if (err) throw err;
-            if (req.decoded._doc.username === req.params.username) {
+            if (req.decoded.username === req.params.username) {
                 User.findOneAndUpdate({ username: req.params.username }, {
                     firstname: req.body.firstname,
                     lastname: req.body.lastname,
+                    themesetting: req.body.themesetting,
                     password: req.body.password
                 }, {
                     new: true
@@ -154,7 +155,7 @@ router.route('/:username')
         });
     })
     .delete(Verify.verifyOrdinaryUser, function(req, res) { 
-        User.find({ username: req.params.username }, function (err, user) {
+        User.find({ username: req.decoded.username }, function (err, user) {
             if (err) throw err;
             
             if (req.decoded._doc.username === req.params.username) {
@@ -165,5 +166,24 @@ router.route('/:username')
             } 
         });
     });
-    
+router.route('/guidesetting')
+.post(Verify.verifyOrdinaryUser, function(req, res) {
+    User.findOneAndUpdate({ username: req.decoded.username }, {
+        showguide: req.body.guidesetting
+    }, { new: true }, function (err, user) {
+        if (err) throw err;
+        res.json({ success: true });
+    });
+});
+router.route('/themesetting')
+.post(Verify.verifyOrdinaryUser, function(req, res) {
+    console.log("started route execution");
+    User.findOneAndUpdate({ username: req.decoded.username }, {
+        themesetting: req.body.themesetting
+    }, { new: true }, function (err, user) {
+        if (err) throw err;
+        console.log("found user to update");
+        res.json({ success: true });
+    });
+});
 module.exports = router;

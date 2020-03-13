@@ -6,7 +6,7 @@
       </thead>
       <tbody>
         <tr v-for="skill in character.skills" :key="skill.name">
-          <th>{{ skill.name }}</th>
+          <th>{{ skill.name }}<button v-if="skill.custom" class="btn btn-danger" @click="removeProficiency(skill)">-</button></th>
           <td>
             <select v-model="skill.prof" class="charsheet-num">
               <option :value="0">No</option>
@@ -18,6 +18,7 @@
           <td><button @click="rollCheck(getSkillMod(skill))"><span v-if="getSkillMod(skill) > -1">+</span>{{ getSkillMod(skill) }}</button></td>
           <td><input type="number" class="charsheet-num" v-model="skill.magic" /></td>
         </tr>
+        <tr><th colspan="4"><button class="btn btn-primary" @click="newProfModal = true">+</button></th></tr>
       </tbody>
     </table>
     <div class="charsheet-static">
@@ -34,6 +35,20 @@
       <textarea v-model="character.proficiencies" class="charsheet-textarea smalltext" id="profbox"></textarea>
     </div>
   </div>
+  <b-modal v-model="newProfModal" modal-class="userinfo.themesetting"
+           @ok="addProficiency(newProf)" title="Add Custom Skill">
+    <label>Name</label>
+    <input type="text" class="charsheet-text" v-model="newProf.name" />
+    <label>Ability</label>
+    <select v-model="newProf.stat" class="charsheet-text">
+      <option :value=0>Strength</option>
+      <option :value=1>Dexterity</option>
+      <option :value=2>Constitution</option>
+      <option :value=3>Intelligence</option>
+      <option :value=4>Wisdom</option>
+      <option :value=5>Charisma</option>
+    </select>
+  </b-modal>
 </template>
 <script src="./js/skills.js"></script>
 <style src="./scss/characterbuilder.scss" lang="scss" scoped></style>

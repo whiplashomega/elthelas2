@@ -5,8 +5,21 @@ export default {
   computed: {
     ...mapGetters({
       getSkillMod: "getSkillMod",
-      character: "getCharacter"
+      character: "getCharacter",
+      userinfo: "getUserInfo"
     })
+  },
+  data: function () {
+    return {
+      newProfModal: false,
+      newProf: {
+        custom: true,
+        name: "",
+        stat: 0,
+        prof: 0,
+        magic: 0
+      }
+    };
   },
   methods: {
     notRawCheck (skill) {
