@@ -7,7 +7,8 @@ export default {
       character: "getCharacter",
       charlevel: "charlevel",
       characters: "serverCharacters",
-      filelist: "driveCharacters"
+      filelist: "driveCharacters",
+      userinfo: "getUserInfo"
     }),
     charsorted () {
       return this.characters.sort((a, b) => {

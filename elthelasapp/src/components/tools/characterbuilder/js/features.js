@@ -6,7 +6,8 @@ export default {
       character: "getCharacter",
       feats: 'allFeats',
       level: "level",
-      featsort: "featsort"
+      featsort: "featsort",
+      userinfo: "getUserInfo"
     }),
     numASI () {
       var asi = 0;

@@ -14,7 +14,8 @@ export default {
       uncommons: 'allUncommons',
       rares: 'allRares',
       veryrares: 'allVeryRares',
-      legendaries: 'allLegendaries'
+      legendaries: 'allLegendaries',
+      userinfo: "getUserInfo"
     }),
     filteredWands () {
       return this.magicwands.filter(this.magicitemfilter);

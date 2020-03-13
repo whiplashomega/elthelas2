@@ -90,7 +90,8 @@ export default {
       getInitMod: "getInitMod",
       admin: "isAdmin",
       curcharacter: "getCharacter",
-      characters: "serverCharacters"
+      characters: "serverCharacters",
+      userinfo: "getUserInfo"
     }),
     filteredcreatures () {
       let comp = this;

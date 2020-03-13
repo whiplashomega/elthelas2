@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/json/history.json"
   },
   {
-    "revision": "ccd88c4351ada0efe4c3",
-    "url": "/css/characterbuilder.c8e131c2.css"
+    "revision": "c3e7e0797e2595b4a5dd",
+    "url": "/css/characterbuilder.5a5a66bd.css"
   },
   {
     "revision": "22879a94bdd811c18721",
@@ -48,28 +48,28 @@ self.__precacheManifest = [
     "url": "/js/encounters.21c20842.js"
   },
   {
-    "revision": "08368551ad88f9467db4",
-    "url": "/css/geography.0a89021b.css"
+    "revision": "84f54fbfff67858b3675",
+    "url": "/css/geography.ae826965.css"
   },
   {
-    "revision": "08368551ad88f9467db4",
-    "url": "/js/geography.0df7df8a.js"
+    "revision": "84f54fbfff67858b3675",
+    "url": "/js/geography.4971477f.js"
   },
   {
-    "revision": "1460e72a3c3ae71f565e",
-    "url": "/css/magicitems.9687b82e.css"
+    "revision": "e7f3837dfdcf195a3d9b",
+    "url": "/css/magicitems.ca4d7108.css"
   },
   {
-    "revision": "1460e72a3c3ae71f565e",
-    "url": "/js/magicitems.0ee7bde2.js"
+    "revision": "e7f3837dfdcf195a3d9b",
+    "url": "/js/magicitems.eebd14da.js"
   },
   {
-    "revision": "e2710cfe1fd2d6cfe4f4",
-    "url": "/css/quickref.d420e36e.css"
+    "revision": "e27c1dd2067b3a594da0",
+    "url": "/css/quickref.5ddd20ad.css"
   },
   {
-    "revision": "e2710cfe1fd2d6cfe4f4",
-    "url": "/js/quickref.74be2166.js"
+    "revision": "e27c1dd2067b3a594da0",
+    "url": "/js/quickref.1835ab8f.js"
   },
   {
     "revision": "e7b473fa62506b88ea6b",
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "f0a61bece3213f37d4668bf7a141ab59",
+    "revision": "a7f18681cb63cf6f93ef1872bf5e78c1",
     "url": "/index.html"
   },
   {
@@ -152,12 +152,12 @@ self.__precacheManifest = [
     "url": "/json/features.json"
   },
   {
-    "revision": "0b0912a56da76fd3bba9",
-    "url": "/js/app.5a2b88c0.js"
+    "revision": "ee8480e02f20156d8be8",
+    "url": "/js/app.c6dfdf87.js"
   },
   {
-    "revision": "ccd88c4351ada0efe4c3",
-    "url": "/js/characterbuilder.2814d4fa.js"
+    "revision": "c3e7e0797e2595b4a5dd",
+    "url": "/js/characterbuilder.3b539bb3.js"
   },
   {
     "revision": "180ff3435d558f90530bce4f540162f8",
@@ -296,8 +296,8 @@ self.__precacheManifest = [
     "url": "/static/md/book4/pcs.md"
   },
   {
-    "revision": "0b0912a56da76fd3bba9",
-    "url": "/css/app.f74b6352.css"
+    "revision": "ee8480e02f20156d8be8",
+    "url": "/css/app.122bc2db.css"
   },
   {
     "revision": "d41d8cd98f00b204e9800998ecf8427e",

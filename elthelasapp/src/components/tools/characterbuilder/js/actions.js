@@ -4,7 +4,8 @@ export default {
   computed: {
     ...mapGetters({
       "character": "getCharacter",
-      "warlockSlotLevel": "warlockSlotLevel"
+      "warlockSlotLevel": "warlockSlotLevel",
+      userinfo: "getUserInfo"
     }),
     actions () {
       let actions = [ ...this.baseActions ];

@@ -35,7 +35,7 @@
       </b-row>
       <b-modal id="magicitemmodal" size="lg"
                @hide="resetMagicItemModal" :title="magicItemModal.Item"
-               ok-only>
+               ok-only :modal-class="userinfo.themesetting">
         <p><strong>Type: </strong>{{ magicItemModal.Type }}</p>
         <p><strong>Cost (gp): </strong>{{ magicItemModal["Cost (gp)"] }}</p>
         <p><strong>Attunement: </strong>{{ magicItemModal.Attunement }}</p>

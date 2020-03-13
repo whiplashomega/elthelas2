@@ -77,8 +77,9 @@
               User <span class="caret"></span>
             </a>
             <ul class="dropdown-menu" role="menu">
-              <li class="dropdown-item" v-if="loggedin"><a data-ng-click="account('lg')">My Account</a></li>
+              <li class="dropdown-item" v-if="loggedin"><a>My Account</a></li>
               <li class="dropdown-item" v-if="loggedin"><a @click="logout()">Logout</a></li>
+              <li class="dropdown-item" v-if="loggedin"><a @click="switchTheme()">Switch Theme</a></li>
               <!-- When Logged Out -->
               <li class="dropdown-item" v-if="!loggedin"><a @click="showRegister = true">Register</a></li>
               <li class="dropdown-item" v-if="!loggedin"><a @click="showLogin = true">Login</a></li>
@@ -103,7 +104,7 @@
     <div class="row" v-if="hidetitle"><div class="col-10"><h4 style="margin-left:15px;">Elthelas Campaign Setting - {{ title }}</h4></div><button class="btn btn-default topbutton" @click="hidetitle = !hidetitle">Show</button></div>
     <b-modal id="loginmodal" size="lg"
              title="Login" v-model="showLogin"
-             hide-footer>
+             hide-footer :modal-class="userinfo.themesetting">
       <form name="login" v-if="logonformactive">
         <div class="form-inline">
           <label class="col-3">Username:</label> <input type="text" v-model="logincreds.username" class="form-control col-9" />
@@ -123,7 +124,7 @@
     </b-modal>
     <b-modal id="registermodal" size="lg"
              title="Register" v-model="showRegister"
-             hide-footer>
+             hide-footer :modal-class="userinfo.themesetting">
       <div v-if="logonformactive">
         <div class="form-inline">
           <label class="col-3">Username:</label> <input type="text" v-model="registeruser.username" class="form-control col-9" />

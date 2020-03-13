@@ -6,7 +6,7 @@ import ctest from './cordovatest.js';
 var now = new Date();
 
 const state = {
-  loggedin: { token: localStorage.getItem('token'), username: localStorage.getItem('user'), admin: localStorage.getItem('admin') },
+  loggedin: { token: localStorage.getItem('token'), username: localStorage.getItem('user'), admin: localStorage.getItem('admin'), themesetting: localStorage.getItem('themesetting') },
   googletoken: { token: localStorage.getItem('googletoken'), expiry: new Date(Number(localStorage.getItem('googleExpires'))) }
 };
 
@@ -39,6 +39,13 @@ const getters = {
 };
 
 const actions = {
+  switchTheme () {
+    if (state.loggedin.themesetting === "light") {
+      state.loggedin.themesetting = "dark";
+    } else state.loggedin.themesetting = "light";
+    Vue.http.post('/users/themesetting?token=' + state.loggedin.token, state.loggedin);
+    localStorage.setItem('themesetting', state.loggedin.themesetting);
+  },
   login ({ commit }, payload) {
     return new Promise((resolve, reject) => {
       Vue.http.post(ctest.baseUrl + 'users/login', { username: payload.username, password: payload.password }).then((response) => {
@@ -71,6 +78,8 @@ const actions = {
   logout ({ commit }) {
     localStorage.removeItem("token");
     localStorage.removeItem("admin");
+    localStorage.removeItem("user");
+    localStorage.removeItem("themesetting");
     Vue.http.headers.common['Authorization'] = "";
     commit("LOGOUT");
   },
@@ -92,6 +101,7 @@ const mutations = {
     localStorage.setItem('user', user.username);
     localStorage.setItem('admin', user.admin);
     localStorage.setItem('token', user.token);
+    localStorage.setItem('themesetting', user.themesetting);
   },
   "LOGOUT"(state) {
     state.loggedin = false;

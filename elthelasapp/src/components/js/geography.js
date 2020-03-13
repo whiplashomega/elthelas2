@@ -23,7 +23,8 @@ export default {
     landmarks: 'allLandmarks',
     features: 'allFeatures',
     continents: 'allContinents',
-    territories: 'allTerritories'
+    territories: 'allTerritories',
+    userinfo: "getUserInfo"
   }),
   data () {
     return {

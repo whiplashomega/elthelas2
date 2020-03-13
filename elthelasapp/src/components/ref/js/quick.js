@@ -8,7 +8,8 @@ export default {
       spells: 'allSpells',
       equipment: 'allEquipment',
       armor: 'allArmor',
-      weapons: 'allWeapons'
+      weapons: 'allWeapons',
+      userinfo: "getUserInfo"
     }),
     filteredSpells () {
       var filters = this.spelltable.filterValue.split(' ');

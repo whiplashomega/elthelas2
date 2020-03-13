@@ -9,7 +9,6 @@
     background-color: $navbackground;
     border: none;
   }
-  
   .gsc-input-box {
     border-radius: 4px;
   }
@@ -33,5 +32,10 @@
     background-image: url(https://www.google.com/uds/css/v2/search_box_icon.png);
     background-position: 50% 50%;
     background-repeat: no-repeat;
+  }
+}
+.dark .search-container {
+  .gsc-control-cse {
+    background-color: $darknavbackground;
   }
 }

@@ -30,7 +30,7 @@
     </ul>
     <b-modal id="nationmodal" size="lg"
              @hide="hideModal" :title="nation.name"
-             ok-only>
+             ok-only :modal-class="userinfo.themesetting">
       <div>
         <div data-ng-if="nation.map != undefined" style="float:right; max-width: 40%;">
           <img :src="nation.map" :alt="nation.name" style="max-width:100%;" />
@@ -103,7 +103,7 @@
     </b-modal>
     <b-modal id="citymodal" size="lg"
              @hide="hideModal" :title="city.name"
-             ok-only>
+             ok-only :modal-class="userinfo.themesetting">
       <div v-if="city.map != undefined" style="float:right; max-width: 40%;">
         <img :src="city.map" :alt="city.name" style="max-width:100%;" />
       </div>
@@ -145,7 +145,7 @@
     </b-modal>
     <b-modal id="landmarkmodal" size="lg"
              @hide="hideModal" :title="landmark.name"
-             ok-only>
+             ok-only :modal-class="userinfo.themesetting">
       <div>
         <div v-html="$options.filters.marked(landmark.description)"></div>
         <ul v-if="landmark.contains != undefined && landmark.contains.length > 0">
@@ -156,7 +156,7 @@
     </b-modal>
     <b-modal id="featuremodal" size="lg"
              @hide="hideModal" :title="feature.name"
-             ok-only>
+             ok-only :modal-class="userinfo.themesetting">
       <div>
         <div v-html="$options.filters.marked(feature.description)"></div>
         <ul v-if="feature.contains != undefined && feature.contains.length > 0">
@@ -167,7 +167,7 @@
     </b-modal>
     <b-modal id="continentmodal" size="lg"
              @hide="hideModal" :title="continent.name"
-             ok-only>
+             ok-only :modal-class="userinfo.themesetting">
       <div class="modal-body">
         <div v-html="$options.filters.marked(continent.description)"></div>
         <ul v-if="continent.contains != undefined && continent.contains.length > 0">

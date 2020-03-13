@@ -1,3 +1,4 @@
+/* globals localStorage */
 import { mapGetters, mapActions } from 'vuex';
 
 export default {
@@ -6,7 +7,8 @@ export default {
     loggedin: 'isLoggedIn',
     isadmin: 'isAdmin',
     userCampaigns: 'getCampaigns',
-    userinfo: 'getUserInfo'
+    userinfo: 'getUserInfo',
+    getThemeSetting: 'getThemeSetting'
   }),
   data () {
     return {
@@ -18,6 +20,7 @@ export default {
       },
       registeruser: {
         username: "",
+        themesetting: "",
         password: "",
         passwordConfirm: "",
         firstname: "",
@@ -61,7 +64,8 @@ export default {
       register: 'register',
       logout: 'logout',
       saveAuthHeader: 'saveAuthHeader',
-      getAllCampaigns: 'getAllCampaignsSilent'
+      getAllCampaigns: 'getAllCampaignsSilent',
+      switchTheme: 'switchTheme'
     }),
     handleLogin () {
       this.login(this.logincreds).then((response) => {

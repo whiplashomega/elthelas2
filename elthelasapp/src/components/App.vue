@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="getThemeSetting" class="fullBody">
     <headercomponent />
     <div class='container-fluid' id="pagebody">
       <div class="row">
@@ -24,11 +24,20 @@ export default {
     headercomponent,
     FooterComp
   },
-  computed: mapGetters({
-    weapons: 'allWeapons',
-    armor: 'allArmor',
-    spells: 'allSpells'
-  }),
+  computed: {
+    ...mapGetters({
+      weapons: 'allWeapons',
+      armor: 'allArmor',
+      spells: 'allSpells',
+      user: "getUserInfo"
+    }),
+    getThemeSetting () {
+      if (this.user.themesetting) {
+        return this.user.themesetting;
+      }
+      return "light";
+    }
+  },
   data: function () {
     return {};
   },

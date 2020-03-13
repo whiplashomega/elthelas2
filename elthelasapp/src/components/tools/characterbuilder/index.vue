@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container charbuilder">
     <div class="row" v-if="!mobile">
       <div class="print-hide col-sm-12">
         <loadsave minimal />
@@ -191,11 +191,13 @@
     </div>
     <loadsavemodals />
     <b-modal v-model="combatModal" title="Combat HUD"
-             hide-footer size="xl">
+             hide-footer size="xl"
+             :modal-class="userinfo.themesetting">
       <combathud :combat-modal="combatModal" />
     </b-modal>
     <b-modal v-model="startGuide" title="Getting Started Guide"
-             hide-footer size="lg">
+             hide-footer size="lg"
+             :modal-class="userinfo.themesetting">
       <div>
         <p>
           Welcome to the Elthelas Character Builder. To get started building your character follow the instructions below.

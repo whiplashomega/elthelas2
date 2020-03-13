@@ -5,15 +5,31 @@
   color: $primarytext;
   border-color: $primary;
 }
+.dark .btn-primary, .dark .btn-default {
+  background-color: $darkprimary;
+  color: $darkprimarytext;
+  border-color: $darkprimary;
+}
 
 .btn-primary:hover, .btn-default:hover, .btn-primary:active, .btn-default:active {
   background-color: $primaryhover;
   border-color: $primaryhover;
 }
 
+.dark .btn-primary:hover, .dark .btn-default:hover, .dark .btn-primary:active, .dark .btn-default:active {
+  background-color: $darkprimaryhover;
+  border-color: $darkprimaryhover;
+}
+
 .alert-info {
   background-color: lighten($primary, 20%);
   color: $primarytext;
+}
+
+.dark .alert-info {
+  background-color: darken($darkprimary, 20%);
+  color: $darkprimarytext;
+  border-color: $darkprimary;
 }
 
 .btn-success {
@@ -22,9 +38,20 @@
   border-color: $success;
 }
 
+.dark .btn-success {
+  background-color: $darksuccess;
+  color: $darksuccesstext;
+  border-color: $darksuccess;
+}
+
 .alert-success {
   background-color: lighten($success, 20%);
   color: $successtext;
+}
+
+.dark .alert-success {
+  background-color: darken($darksuccess, 20%);
+  color: $darksuccesstext;
 }
 
 .btn-success:hover, .btn-success:active {
@@ -32,13 +59,29 @@
   border-color: $successhover;
 }
 
+.dark .btn-success:hover, .dark .btn-success:active {
+  background-color: $darksuccesshover;
+  border-color: $darksuccesshover;
+}
+
 .alert-warning {
   background-color: lighten($warning, 20%);
   color: $warningtext;
 }
 
+.dark .alert-warning {
+  background-color: darken($darkwarning, 20%);
+  color: $darkwarningtext;
+  border-color: $darkwarning;
+}
+
 .alert-danger {
   background-color: lighten($danger, 20%);
+}
+
+.dark .alert-danger {
+  background-color: darken($darkdanger, 20%);
+  color: $darkdangertext;
 }
 
 .navbar-default {
@@ -82,25 +125,59 @@
   }
 }
 
-.jumbotron {
-  background-color: $header;
-  h1 a {
-    color: $headertext;
-    @media (max-width: 767px) {
-      font-size: 30px;
-      img {
-        max-width: 35%;
-        float: left;
-      }
-      span {
-        display: block;
-        float: left;
-        max-width: 65%;
-      }
+.dark .navbar-default {
+  .navbar-toggle {
+    background-color: $darksuccess;
+    &:focus, &:hover {
+      background-color: lighten($darksuccess, 15%);
+    }
+    .icon-bar {
+      background-color: $darksuccesstext;
+    }
+    border-color: $darksuccesstext;
+  }
+  background-color: $darknavbackground;
+  .navbar-nav>li>a, .navbar-nav>li>a:focus, .navbar-brand {
+    color: $darknavtext;
+  }
+  .navbar-nav>.open>a, .navbar-nav>.open>a:focus, .navbar-nav>.open>a:hover {
+    background-color: darken($darknavbackground, 15%);
+    color: $darknavtext;
+  }
+  @media (max-width: 767px) {
+    .navbar-nav .open .dropdown-menu>li>a {
+      color: $darknavtext;
     }
   }
-  p {
-    clear: both;
-    margin: none;
+  .dropdown-menu {
+    background-color: $darksidenavbackground;
+    li>a {
+      color: $darksidenavcolor;
+    }
+    li>a:hover {
+      background-color: darken($darksidenavbackground, 15%);
+    }
   }
+}
+
+.dark .modal-content {
+  background-color: lighten($darkbackground, 5%);
+  color: $darktext;
+}
+
+.dark .form-control {
+  background-color: lighten($darkbackground, 15%);
+  color: $darktext;
+  border-color: $darkbackground;
+}
+
+.dark .table {
+  color: $darktext;
+  th, td {
+    border-top: 1px solid lighten($darkbackground, 25%);
+  }
+}
+
+.dark .table-striped tbody tr:nth-of-type(odd) {
+    background-color: lighten($darkbackground, 5%);
 }

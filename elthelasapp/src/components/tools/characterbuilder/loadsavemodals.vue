@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-modal id="drivemodal" title="Load File from Google Drive">
+    <b-modal id="drivemodal" title="Load File from Google Drive" :modal-class="userinfo.themesetting">
       <table class="table table-striped">
         <tr>
           <th>File Name</th><th>Modified Date</th>
@@ -11,7 +11,7 @@
         </tr>
       </table>
     </b-modal>
-    <b-modal id="servermodal" title="Load File from Server">
+    <b-modal id="servermodal" title="Load File from Server" :modal-class="userinfo.themesetting">
       <table class="table table-striped">
         <tr>
           <th>Character Name</th><th>Level</th><th>-</th>
@@ -27,7 +27,7 @@
     </b-modal>
     <b-modal id="loading" no-close-on-backdrop
              no-close-on-esc hide-header
-             hide-footer>
+             hide-footer :modal-class="userinfo.themesetting">
       <img src="https://elthelas-images.herokuapp.com/giphy.gif" alt="Loading" />
     </b-modal>
   </div>

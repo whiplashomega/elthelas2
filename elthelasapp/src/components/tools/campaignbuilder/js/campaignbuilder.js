@@ -25,7 +25,8 @@ export default {
       chapter: 'getCurrentChapter',
       token: 'getUserInfo',
       loggedin: "isLoggedIn",
-      pcs: 'getCampaignCharacters'
+      pcs: 'getCampaignCharacters',
+      userinfo: "getUserInfo"
     })
   },
   components: {

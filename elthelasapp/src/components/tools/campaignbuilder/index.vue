@@ -22,7 +22,7 @@
         <runner :cre-array="creArray" :char-array="charArray" :key="runnerKey" />
       </b-tab>
     </b-tabs>
-    <b-modal id="campaignmodal" title="Load File from Server">
+    <b-modal id="campaignmodal" title="Load File from Server" :modal-class="userinfo.themesetting">
       <table class="table table-striped">
         <tr>
           <th>Campaign Name</th><th>-</th>

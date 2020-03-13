@@ -57,7 +57,7 @@
         </b-table>
         <b-modal id="spellmodal" size="lg"
                  @hide="resetSpellModal" :title="spelltable.modalInfo.title"
-                 ok-only>
+                 ok-only :modal-class="userinfo.themesetting">
           <h4>
             <strong>{{ spelltable.modalInfo.content.school }}
               {{ spelltable.modalInfo.content.level.replace('level', 'level ') }}
@@ -1199,7 +1199,7 @@
         </b-row>
         <b-modal id="gearmodal" size="lg"
                  @hide="resetGearModal" :title="gearModal.Item"
-                 ok-only>
+                 ok-only :modal-class="userinfo.themesetting">
           <p><strong>Cost (gp): </strong>{{ gearModal.Cost }}</p>
           <p><strong>Weight: </strong>{{ gearModal.Weight }}</p>
           <div v-html="$options.filters.marked(gearModal.Description)"></div>

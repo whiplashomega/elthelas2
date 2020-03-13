@@ -58,7 +58,7 @@
           <div v-if="action.show" v-html="$options.filters.marked(action.description)"></div>
         </div>
       </div>
-      <b-modal v-model="addActionModal" @ok="addAction()">
+      <b-modal v-model="addActionModal" @ok="addAction()" :modal-class="userinfo.themesetting">
         <label>Name:</label>
         <input type="text" class="form-control" v-model="newaction.name" />
         <label>Action Type:</label>

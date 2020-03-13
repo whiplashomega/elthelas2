@@ -1,11 +1,12 @@
 @import '../../scss/vars';
 
 .site-header {
-  background-color: #3e60af;
+  background-color: $navbackground;
   color: white;
   font-weight: bold;
 }
-
+.dark .site-header {
+}
 .site-header a {
   color: white;
 }
@@ -19,8 +20,28 @@
   color: black;
 }
 
-.jumbotron {
-  background-color: #c3e6e6;
+.dark .site-header {
+  background-color: $darknavbackground;
+  .dropdown-menu {
+    background-color: $darkbackground;
+    border: 1px solid $darktext;
+    li:hover {
+      background-color: $darknavbackground;
+    }
+    a {
+      color: $darktext;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+.light .jumbotron, .dark .jumbotron {  
+  p {
+    clear: both;
+    margin: none;
+  }
   @media (min-width: 576px) {
     padding: 3rem 0rem;
   }
@@ -31,6 +52,10 @@
     right: 10%;
     border-radius: 4px 4px 0px 0px;
   }
+  h1 a {
+    @media (max-width: 767px) {
+      }
+  }
   @media (max-width: 768px) {
     padding: 1rem 0rem;
     border-radius: 0;
@@ -39,7 +64,13 @@
       a {
         font-size: 0.5em;
         img {
-          display: none;
+          max-width: 35%;
+          float: left;
+        }
+        span {
+          display: block;
+          float: left;
+          max-width: 65%;
         }
       }
     }
@@ -48,13 +79,22 @@
     }
   }
 }
+.light .jumbotron {
+  background-color: $header;
+  h1 a {
+    color: $headertext;
+  }
+}
+.dark .jumbotron {
+  background-color: $darkheader;
+  h1 a {
+    color: $darkheadertext;
+  }
+}
 
   .topbutton {
     border-radius: 0px 0px 4px 4px;
   }
-.jumbotron a {
-  color: black;
-}
 
 .form-inline {
   label {
@@ -110,5 +150,17 @@
   
   .gsc-search-button-v2:hover {
     background-color: $successhover;
+  }
+}
+
+.dark .site-header .container .search-container {
+  .gsc-control-cse {
+    background-color: $darknavbackground;
+  }
+  .gsc-search-button {
+    background-color: $darksuccess;
+  }
+  .gsc-search-button-v2:hover {
+    background-color: $darksuccesshover;
   }
 }

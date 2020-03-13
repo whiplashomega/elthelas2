@@ -1,24 +1,33 @@
-  @import '../../../node_modules/bootstrap/dist/css/bootstrap.css';
-  @import './_vars.scss';
-  @import './_bootstrapoverride.scss';
-  @import './_layout.scss';
-  
-  .nav-pill a {
-    padding: 8px 15px;
-    margin: 2px 5px;
-    background-color: #6784c6;
-    border-radius: 4px;
-    color: #ffffff;
-    font-weight: bold;
-    span {
-      display: block;
-    }
-  }
-  .handle {
-    position: relative;
+@import '../../../node_modules/bootstrap/dist/css/bootstrap.css';
+@import './_vars.scss';
+@import './_bootstrapoverride.scss';
+@import './_layout.scss';
+
+.fullBody {
+  min-height: 100vh;
+}
+
+.nav-pill a {
+  padding: 8px 15px;
+  margin: 2px 5px;
+  background-color: #6784c6;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: bold;
+  span {
     display: block;
-    float: right;
   }
+}
+.dark.fullBody {
+  background-color: $darkbackground;
+  color: $darktext;
+}
+
+.handle {
+  position: relative;
+  display: block;
+  float: right;
+}
 
 @media print {
   .print-hide {

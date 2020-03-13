@@ -52,7 +52,8 @@ export default {
       character: 'getCharacter',
       pointbuy: "pointbuy",
       statRolls: "getStatRolls",
-      hitdicechanged: "hitdicechanged"
+      hitdicechanged: "hitdicechanged",
+      userinfo: "getUserInfo"
     })
   },
   data () {

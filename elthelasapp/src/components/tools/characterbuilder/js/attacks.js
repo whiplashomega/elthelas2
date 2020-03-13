@@ -8,7 +8,8 @@ export default {
       getAttBonus: 'getAttBonus',
       getStatMod: 'getStatMod',
       getAttackBonus: "getAttackBonus",
-      getDamageBonus: "getDamageBonus"
+      getDamageBonus: "getDamageBonus",
+      userinfo: "getUserInfo"
     })
   },
   data () {

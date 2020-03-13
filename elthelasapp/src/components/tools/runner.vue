@@ -176,7 +176,7 @@
              style="height:40px;"
              @click="roll()" value="Roll Initiative" />
     </div>
-    <b-modal id="servermodal" title="Load File from Server">
+    <b-modal id="servermodal" title="Load File from Server" :modal-class="userinfo.themesetting">
       <table class="table table-striped">
         <tr>
           <th>Character Name</th><th>Level</th><th>-</th>
@@ -186,7 +186,7 @@
         </tr>
       </table>
     </b-modal>
-    <b-modal id="loading"
+    <b-modal id="loading" :modal-class="userinfo.themesetting"
              no-close-on-backdrop no-close-on-esc
              hide-header hide-footer>
       <img src="https://elthelas-images.herokuapp.com/giphy.gif" alt="Loading" />

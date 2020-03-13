@@ -110,7 +110,8 @@
         </p>
       </div>
       <button class="btn btn-sm print-hide btn-primary" type="button" @click="newFeatureModal = true">+</button>
-      <b-modal title="Add Feature" v-model="newFeatureModal" @ok="addFeature()">
+      <b-modal title="Add Feature" v-model="newFeatureModal"
+               @ok="addFeature()" :modal-class="userinfo.themesetting">
         Name
         <input type="text" class="form-control" v-model="newfeature.name" />
         Description
