@@ -6,7 +6,8 @@ var Skill = new Schema({
   name: { type: String, default: "" },
   prof: { type: Number, default: 0 },
   stat: { type: Number, default: 0 },
-  magic: { type: Number, default: 0 }
+  magic: { type: Number, default: 0 },
+  custom: { type: Boolean, default: false }
 });
 
 var CharClass = new Schema({ thisclass: Schema.Types.Mixed, level: Number, selsubclass: Schema.Types.Mixed, hitdice: Number, savedcstat: Number });
