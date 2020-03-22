@@ -28,7 +28,7 @@
               <button class="btn btn-primary" @click="addToTreasury({ changeby: changeby, record: record })">Add to Treasury</button>
               <button class="btn btn-success" @click="showTransactionRecord = true">Transaction Record</button>
             </div><br />
-            <b-modal v-model="showTransactionRecord" title="Transaction Record" :modal-class="userinfo.themesetting">
+            <b-modal v-model="showTransactionRecord" title="Transaction Record">
               <table class="table table-striped">
                 <thead><tr><th>Amount</th><th>Description</th><th>Balance</th></tr></thead>
                 <tbody>
