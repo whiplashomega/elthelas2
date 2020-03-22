@@ -9,7 +9,8 @@ export default {
     improvements: improvements,
     staff: staff,
     strongholdSummary: summary,
-    generalInformation: generalInformation
+    generalInformation: generalInformation,
+    userinfo: "getUserInfo"
   },
   computed: {
     ...mapGetters({
