@@ -13,7 +13,8 @@ export default {
       totalStorage: 'totalStorage',
       unrest: 'unrest',
       exportLimit: 'exportLimit',
-      usedStorage: 'usedStorage'
+      usedStorage: 'usedStorage',
+      userinfo: "getUserInfo"
     })
   },
   data () {

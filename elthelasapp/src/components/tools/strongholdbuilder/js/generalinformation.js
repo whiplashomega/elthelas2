@@ -18,7 +18,8 @@ export default {
       totalEmployees: 'totalEmployees',
       unemploymentRate: 'unemploymentRate',
       unrest: 'unrest',
-      urbanLand: 'urbanLand'
+      urbanLand: 'urbanLand',
+      userinfo: "getUserInfo"
     })
   }
 };

@@ -12,7 +12,8 @@ export default {
       laborersNeeded: 'laborersNeeded',
       servantsNeeded: 'servantsNeeded',
       availableLaborers: 'availableLaborers',
-      availableOfType: 'availableOfType'
+      availableOfType: 'availableOfType',
+      userinfo: "getUserInfo"
     })
   },
   data () {

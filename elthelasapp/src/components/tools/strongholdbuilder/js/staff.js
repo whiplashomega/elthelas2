@@ -12,7 +12,8 @@ export default {
       maxLaborers: 'maxLaborers',
       availableStaffBeds: 'availableStaffBeds',
       unmetStaffNeed: 'unmetStaffNeed',
-      staffTypes: 'staffTypes'
+      staffTypes: 'staffTypes',
+      userinfo: "getUserInfo"
     }),
     staffList () {
       return [ ...this.stronghold.staff ].sort((a, b) => {

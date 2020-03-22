@@ -15,7 +15,8 @@ export default {
       stronghold: 'stronghold',
       timberLand: 'timberLand',
       totalLand: 'totalLand',
-      urbanLand: 'urbanLand'
+      urbanLand: 'urbanLand',
+      userinfo: "getUserInfo"
     }),
     availableImprovements () {
       if (this.showAvailable) {
