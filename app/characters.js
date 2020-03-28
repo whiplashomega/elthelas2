@@ -20,9 +20,13 @@ router.get('/', Verify.verifyOrdinaryUser, function(req, res, next) {
 router.get('/:id', function (req, res, next) {
   Character.findOne({ _id: req.params.id }, function(err, character) {
     if (err) throw err;
-    res.header("Cache-Control", "no-cache, no-store, must-revalidate");
-    res.header("Pragma", "no-cache");
-    res.header("Expires", 0);
+    if (character === null) {
+      res.status(404);
+    } else {
+      res.header("Cache-Control", "no-cache, no-store, must-revalidate");
+      res.header("Pragma", "no-cache");
+      res.header("Expires", 0);
+    }
     res.json(character);
   });
 });

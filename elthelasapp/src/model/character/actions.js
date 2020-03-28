@@ -4,7 +4,7 @@ import Vue from 'vue';
 function addAbilities(curChar) {
   if (curChar.skills.find(e => {
     return e.name === "Strength";
-  }).length === 0) {
+  })) {
     curChar.skills.unshift(
       { name: "Strength", prof: 0, stat: 0, magic: 0 },
       { name: "Dexterity", prof: 0, stat: 1, magic: 0 },

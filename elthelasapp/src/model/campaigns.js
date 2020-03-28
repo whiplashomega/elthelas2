@@ -56,7 +56,9 @@ export default {
     },
     fetchCampaignCharacter: ({ state }, id) => {
       Vue.http.get('/characters/' + id).then((response) => {
-        state.campaignCharacters.push({ ...response.body });
+        if (response.status === 200) {
+          state.campaignCharacters.push({ ...response.body });
+        }
       });
     },
     loadCampaign: ({ state, dispatch }, { campaign, comp }) => {

@@ -2760,6 +2760,7 @@
   "Cost": "1000000",
   "Rarity": "Legendary",
   "Attunement": "Yes",
+  "Weight": "3 lb",
   "Effect": "This magical crossbow was specifically designed and built by a team of the best gnomish artificers from Stagenheim specifically as a gift for General Lilith of the Black Wolf Irregulars. It is attuned to her particular essence and can only be attuned by her. When attuned to this item, Lilith gains the following benefits:\n\n* +3 to attack and damage rolls made with this crossbow.\n* +2 to her dexterity and intelligence scores (does not stack with other magical bonuses to these scores).\n* When she makes an attack with this crossbow she can choose a damage type: fire, cold, lightning, poison, or acid. The crossbow does an additional 1d8 damage of that type.\n* This crossbow magically creates its own ammunition when fired, ignoring the loading and ammunition properties."
  }
 ]

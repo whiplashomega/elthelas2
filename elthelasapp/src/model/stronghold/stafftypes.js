@@ -64,6 +64,11 @@ export default [
     bonus: "Manages the castle garden, supplying useful alchemical ingredients, or just pretty flowers."
   },
   {
+    name: "Airship Crew",
+    typicalSalary: 5,
+    bonus: "Handles running your airship"
+  },
+  {
     name: "Harbormaster",
     typicalSalary: 5,
     bonus: "Manages loading and unloading of ships and collection of taxes from a harbor"
