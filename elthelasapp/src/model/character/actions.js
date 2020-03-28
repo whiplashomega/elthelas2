@@ -2,7 +2,7 @@ import Character from '@/model/classes/character';
 import Vue from 'vue';
 
 function addAbilities(curChar) {
-  if (curChar.skills.find(e => {
+  if (!curChar.skills.find(e => {
     return e.name === "Strength";
   })) {
     curChar.skills.unshift(
