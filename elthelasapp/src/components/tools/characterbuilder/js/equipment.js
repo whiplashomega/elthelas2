@@ -115,7 +115,7 @@ export default {
       }
     },
     findAndAddItem(name, quantity, containerId, bypass) {
-      let newitem = this.allGear.filter((a) => {
+      let newitem = this.equipment.filter((a) => {
         return a.Item === name;
       })[0];
       return this.addExistingEquipment(newitem, quantity, containerId, bypass);
