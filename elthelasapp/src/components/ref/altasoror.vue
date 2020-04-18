@@ -468,7 +468,7 @@
       <b-tab title="PCs">
         <h3>Ruthir</h3>
         <p><strong>Race:</strong> Firbolg</p>
-        <p><strong>Class/Level:</strong> Moon Druid 7</p>
+        <p><strong>Class/Level:</strong> Moon Druid 8</p>
         <p><router-link to="/tools/charbuilder/5d7fc069391e470004c18f34">Character Sheet</router-link></p>
         <table class="table table-striped">
           <thead>
@@ -480,8 +480,8 @@
         </table>
         <h3>Hanzo Rito</h3>
         <p><strong>Race:</strong> Altasoror Human</p>
-        <p><strong>Class/Level:</strong> Eldritch Knight Fighter 7</p>
-        <p><router-link to="/tools/charbuilder/5d5c3e1bf1651e000430a212">Character Sheet</router-link></p>
+        <p><strong>Class/Level:</strong> Samurai Fighter 8</p>
+        <p><router-link to="/tools/charbuilder/5e74deef90f445000413815b">Character Sheet</router-link></p>
         <table class="table table-striped">
           <thead>
             <tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr>
@@ -492,19 +492,19 @@
         </table>
         <h3>Agriel Osiris/Martinus Cato</h3>
         <p><strong>Race:</strong> Scourge Aasimar</p>
-        <p><strong>Class/Level:</strong> Hexblade Warlock 5 / Whispers Bard 2</p>
-        <p><router-link to="/tools/charbuilder/5dbca6a3ae1e390004f9fa78">Character Sheet</router-link></p>
+        <p><strong>Class/Level:</strong> Hexblade Warlock 7 / Whispers Bard 1</p>
+        <p><router-link to="/tools/charbuilder/5e694de4d5d9d200048a798f">Character Sheet</router-link></p>
         <table class="table table-striped">
           <thead>
             <tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr>
           </thead>
           <tbody>
             <tr><td>8</td><td>14</td><td>16</td><td>10</td><td>8</td><td>18</td></tr>
-          </tbody>
+          </tbody> 
         </table>
         <h3>Xane Ludor</h3>
         <p><strong>Race:</strong> Altasoror Human</p>
-        <p><strong>Class/Level:</strong> Rogue 1 / Knowledge Cleric 5</p>
+        <p><strong>Class/Level:</strong> Rogue 3 / Knowledge Cleric 5</p>
         <table class="table table-striped">
           <thead>
             <tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr>
@@ -515,7 +515,7 @@
         </table>
         <h3>Paradan</h3>
         <p><strong>Race:</strong> (Wood?) Elf</p>
-        <p><strong>Class/Level:</strong> (Way of the Open Hand?) Monk 7</p>
+        <p><strong>Class/Level:</strong> Drunken Master Monk 8</p>
         <table class="table table-striped">
           <thead>
             <tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr>

@@ -1,5 +1,5 @@
 <template>
-  <div id="#main">
+  <div id="#main" class="col-sm-10">
     <h1>Backgrounds</h1>
     <p>
       The following backgrounds are suggested possibilities for players.  Work with your DM to determine the background for your character.
