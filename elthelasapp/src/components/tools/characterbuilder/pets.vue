@@ -79,7 +79,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col">
+          <div class="col-sm-12">
             <textarea v-model="pet.features"></textarea>
           </div>
         </div>
