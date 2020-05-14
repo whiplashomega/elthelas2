@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "/json/history.json"
   },
   {
-    "revision": "ff85b72cb68d652b0a15",
+    "revision": "5c8d8ef90197e199b122",
     "url": "/css/characterbuilder.09408364.css"
   },
   {
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "9d9b9efb5675ea06cf2349eb1c703f5a",
+    "revision": "18400b68ee8071f55127c562ea1eadc3",
     "url": "/index.html"
   },
   {
@@ -152,12 +152,12 @@ self.__precacheManifest = [
     "url": "/json/features.json"
   },
   {
-    "revision": "0c1dd31f8661771d56db",
-    "url": "/js/app.5306fd93.js"
+    "revision": "24b62bbed6d027435852",
+    "url": "/js/app.847bd276.js"
   },
   {
-    "revision": "ff85b72cb68d652b0a15",
-    "url": "/js/characterbuilder.6147cccc.js"
+    "revision": "5c8d8ef90197e199b122",
+    "url": "/js/characterbuilder.813244c0.js"
   },
   {
     "revision": "cb9861ca9c3263c82d10f24ccb23a953",
@@ -296,7 +296,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/pcs.md"
   },
   {
-    "revision": "0c1dd31f8661771d56db",
+    "revision": "24b62bbed6d027435852",
     "url": "/css/app.1963ec3d.css"
   },
   {

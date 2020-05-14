@@ -21,7 +21,7 @@ export default {
               }
             }
           });
-          if (comp.creaturestable.filterValue && !exists) {
+          if (comp.creaturefilter && !exists) {
             inelement = false;
           }
         });
