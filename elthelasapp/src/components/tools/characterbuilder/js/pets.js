@@ -85,6 +85,7 @@ export default {
       ];
       pet.features = cre.description;
       this.character.pets.push(pet);
+      this.importPetModal = false;
     },
     calcScoreMod(score) {
       return Math.floor(score / 2) - 5;

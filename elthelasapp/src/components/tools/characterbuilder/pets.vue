@@ -88,8 +88,10 @@
     <button class="btn btn-primary btn-sm" @click="addPet()">Add New</button>
     <button class="btn btn-primary btn-sm" @click="importPetModal = true">Import Creature</button>
     <b-modal v-model="importPetModal" title="Import Creature as Pet"
-             :modal-class="userinfo.themesetting" hide-footer>
+             :modal-class="userinfo.themesetting" hide-footer
+             size="lg">
       <input type="text" v-model="creaturefilter" class="charsheet-text">
+      Search
       <b-table show-empty
                id="creaturetable"
                :striped="true" :bordered="false"
