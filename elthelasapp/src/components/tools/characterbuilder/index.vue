@@ -61,6 +61,11 @@
           </div>
         </div>
         <div class="row">
+          <div class="col-12">
+            <pets />
+          </div>
+        </div>
+        <div class="row">
           <div class="col">
             <actions v-if="showActions" />
           </div>
@@ -170,6 +175,9 @@
         </b-tab>
         <b-tab title="Resources">
           <resources />
+        </b-tab>
+        <b-tab title="Pets">
+          <pets />
         </b-tab>
         <b-tab title="Equipment">
           <equipment />

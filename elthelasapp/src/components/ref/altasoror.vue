@@ -116,14 +116,14 @@
           <li>Year 1363 Day 122 - Current: Day 141 – Take the Amulet of Justice</li>
           <li>Year 1372 Day 322 – Current Day 378 – Take the Planer Gate/ Mantle of the prophet</li>
           <li>Year 1387 Day 120 – Take Nuri's Shadow</li>
-          <li>Year 1390 Day 175 - ?</li>
+          <li>Year 1390 Day 175 - Take Titan's Trousers</li>
           <li>Year 1392 Day 1– End of Reality - Return the Sword of the Prophet</li>
         </ul>
         <h4>Elthelas</h4>
         <ul>
           <li>Year -507 Maridia 23rd – Take the Book of Vile Darkness / Return ?</li>
           <li>Year 1847 Sylvanus 2nd– Take the Sword of the Prophet, Return the Mantle of the Prophet</li>
-          <li>Year 1858 Moltyr 13th - ?</li>
+          <li>Year 1858 Moltyr 13th - Return the Titan's Trousers</li>
           <li>Year 1868  Amatherin 30th – Return the Planer Gate, Return Nuri's Shadow</li>
           <li>Year 2671 – Return the Book of vile Darkness</li>
           <li>Year 3605 -Return the Amulet of Justice</li>
@@ -500,7 +500,7 @@
           </thead>
           <tbody>
             <tr><td>8</td><td>14</td><td>16</td><td>10</td><td>8</td><td>18</td></tr>
-          </tbody> 
+          </tbody>
         </table>
         <h3>Xane Ludor</h3>
         <p><strong>Race:</strong> Altasoror Human</p>
