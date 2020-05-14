@@ -80,7 +80,8 @@
         </div>
         <div class="row">
           <div class="col-sm-12">
-            <textarea v-model="pet.features"></textarea>
+            Features
+            <textarea v-model="pet.features" class="charsheet-text"></textarea>
           </div>
         </div>
       </b-modal>
