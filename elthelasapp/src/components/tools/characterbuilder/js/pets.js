@@ -13,9 +13,6 @@ export default {
       return this.creatures.filter((a) => {
         var values = comp.creaturefilter.split(" ");
         let inelement = true;
-        if (comp.typeFilter !== "" && a.type !== comp.typeFilter) {
-          inelement = false;
-        }
         values.forEach((value) => {
           let exists = comp.creaturestable.filterBy.some(function(el) {
             for (var y in a) {
