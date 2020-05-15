@@ -47,11 +47,11 @@
         </div>
         <div class="row">
           <div class="col-sm">
-            <input type="number" class="charsheet-num" v-model="pet.ac" />
+            <input type="number" class="charsheet-num" v-model="pet.ac" /><br />
             AC
           </div>
           <div class="col-sm">
-            <input type="number" class="charsheet-num" v-model="pet.hpmax" />
+            <input type="number" class="charsheet-num" v-model="pet.hpmax" /><br />
             HP Max
           </div>
           <div class="col-sm-8">
@@ -68,12 +68,12 @@
                 <td><input type="number" class="charsheet-num" v-model="pet.abilityscores[5]"></td>
               </tr>
               <tr>
-                <td>+{{ calcScoreMod(pet.abilityscores[0]) }}</td>
-                <td>+{{ calcScoreMod(pet.abilityscores[1]) }}</td>
-                <td>+{{ calcScoreMod(pet.abilityscores[2]) }}</td>
-                <td>+{{ calcScoreMod(pet.abilityscores[3]) }}</td>
-                <td>+{{ calcScoreMod(pet.abilityscores[4]) }}</td>
-                <td>+{{ calcScoreMod(pet.abilityscores[5]) }}</td>
+                <td><span v-if="calcScoreMod(pet.abilityscores[0]) > 0">+</span>{{ calcScoreMod(pet.abilityscores[0]) }}</td>
+                <td><span v-if="calcScoreMod(pet.abilityscores[1]) > 0">+</span>{{ calcScoreMod(pet.abilityscores[1]) }}</td>
+                <td><span v-if="calcScoreMod(pet.abilityscores[2]) > 0">+</span>{{ calcScoreMod(pet.abilityscores[2]) }}</td>
+                <td><span v-if="calcScoreMod(pet.abilityscores[3]) > 0">+</span>{{ calcScoreMod(pet.abilityscores[3]) }}</td>
+                <td><span v-if="calcScoreMod(pet.abilityscores[4]) > 0">+</span>{{ calcScoreMod(pet.abilityscores[4]) }}</td>
+                <td><span v-if="calcScoreMod(pet.abilityscores[5]) > 0">+</span>{{ calcScoreMod(pet.abilityscores[5]) }}</td>
               </tr>
             </table>
           </div>
@@ -81,7 +81,7 @@
         <div class="row">
           <div class="col-sm-12">
             Features
-            <textarea v-model="pet.features" class="charsheet-text"></textarea>
+            <textarea v-model="pet.features" class="charsheet-text" style="min-height:200px;"></textarea>
           </div>
         </div>
       </b-modal>
