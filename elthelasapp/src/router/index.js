@@ -23,6 +23,7 @@ import privacy from '@/components/privacy';
 import strongholdbuilder from '@/components/tools/strongholdbuilder';
 import campaignbuilder from '@/components/tools/campaignbuilder';
 import creaturebuilder from '@/components/tools/creaturebuilder';
+import lifetimeline from '@/components/theharrisons/lifetimeline';
 import altasoror from '@/components/ref/altasoror';
 const domains = () => import(/* webpackChunkName: "domains" */ '../components/options/domains');
 const classes = () => import(/* webpackChunkName: "classes" */ '../components/options/class');
@@ -465,6 +466,16 @@ var router = new Router({
       path: "/altasoror",
       components: {
         default: altasoror
+      }
+    },
+    {
+      name: "lifetimeline",
+      meta: {
+        title: "Timeline of Life Events"
+      },
+      path: "/harrisons/timeline",
+      components: {
+        default: lifetimeline
       }
     }
   ],
