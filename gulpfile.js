@@ -48,6 +48,50 @@ gulp.task('historyjson', function (done) {
   }
 });
 
+gulp.task('personalhistoryjson', function (done) {
+  var files = fs.readdirSync("./data/personalevents");
+  var historyarray = [];
+  files.forEach(function(file) {
+    var data = fs.readFileSync("./data/personalevents/" + file, "utf-8");
+
+    var filearray = data.split('\n');
+    if(filearray.length >= 9 && !isNaN(Number(filearray[0]))) {
+      var event = {
+        start_date: {
+          year: filearray[0],
+          month: filearray[1],
+          day: filearray[2]
+        },
+        media: {
+          url: filearray[6],
+          caption: '',
+          credit: ''
+        },
+        text: {
+          headline: filearray[7],
+          text: filearray.slice(8, filearray.length).join("\n")
+        }
+      }
+      if(filearray[3] !== "") {
+        event.end_date = {
+          year: filearray[3],
+          month: filearray[4],
+          day: filearray[5]
+        }
+      }
+      historyarray.push(event);      
+    } else {
+      throw new Error("improperly formatted event: " + file);
+    }
+  });
+  if(historyarray.length === files.length) {
+    fs.writeFile("./elthelasapp/public/json/personalhistory.json", JSON.stringify({ "model": "History", "documents": historyarray}), "utf-8", function() {
+      console.log("writing /elthelasapp/public/json/personalhistory.json");
+      done();
+    });
+  }
+});
+
 gulp.task('creaturesjson', function(done) {
   function intersect(arrays) {
     return arrays.shift().filter(function(v) {
@@ -280,4 +324,4 @@ gulp.task('build', function(done) {
   });  
 });
 //task groups
-gulp.task('default', gulp.series('jsonlint', gulp.parallel('spellsjson', 'historyjson', 'jsoncompile')));
+gulp.task('default', gulp.series('jsonlint', gulp.parallel('spellsjson', 'historyjson', 'personalhistoryjson', 'jsoncompile')));

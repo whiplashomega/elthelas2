@@ -16,7 +16,7 @@ module.exports = {
         // module.exports.port = 8081;
     } else {
         console.log(process.env.MONGODB_URI);
-        module.exports.mongoUrl = process.env.MONGODB_URI + "?authMechanism=SCRAM-SHA-1";
+        module.exports.mongoUrl = "mongodb+srv://heroku_4r630pjp:<password>@elthelas.o7jzd.mongodb.net/heroku_4r630pjp?retryWrites=true&w=majority";
         module.exports.facebook = {
             clientID: '1706715636300300',
             clientSecret: '409369a75ffe5ece6c1dbfa040ed8c6e',
