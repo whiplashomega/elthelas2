@@ -15,12 +15,12 @@
     {
       "level": 1,
       "name": "Inspired",
-      "description": "The Factotum gets a number of epiphany points that they can spend to activate certain class features. They get eipiphany points equal to their intelligence modifier plus half their class level (rounded down), minimum 1. They recover all of their epiphany points when they finish a short rest."
+      "description": "The Factotum gets a number of epiphany points that they can spend to activate certain class features. They get epiphany points equal to their intelligence modifier plus half their class level (rounded down), minimum 1. They recover all of their epiphany points when they finish a long rest."
     },
     {
       "level": 1,
       "name": "Inspired Skills",
-      "description": "You can spend an epiphany point when making any skill check to add your intelligence bonus to the check."
+      "description": "You can spend an epiphany point when making any skill check to gain advantage on the check."
     },
     {
       "level": 2,
@@ -30,12 +30,12 @@
     {
       "level": 2,
       "name": "Inspired Attack",
-      "description": "Starting at 2nd level, you can spend an epiphany point before making an attack roll to add your intelligence bonus to the attack roll."
+      "description": "Starting at 2nd level, you can spend an epiphany point before making an attack roll to gain advantage on the roll."
     },
     {
       "level": 2,
       "name": "Inspired Damage",
-      "description": "Starting at 2nd level, as a bonus action you can spend an epiphany point to add 1d8 to any weapon or spell damage roll you make until the start of your next turn."
+      "description": "Starting at 2nd level, when you hit with an attack you can spend an epiphany point to add 2d8 damage to the damage roll. At 11th level this increases to 3d8, and at 17th level this increases to 4d8."
     },
     {
       "level": 3,
@@ -65,7 +65,7 @@
     {
       "level": 20,
       "name": "Inspired Recovery",
-      "description": "At 20th level if you have less than half of your epiphany points when you roll initiative you regain enough epiphany points to put your maximum."
+      "description": "At 20th level if you have less than half of your epiphany points when you roll initiative you regain enough epiphany points to put you at half your maximum."
     }
   ],
   "subclass": [
@@ -86,12 +86,12 @@
         {
           "level": 10,
           "name": "Improved Inspired Damage",
-          "description": "At 10th level, when you use the inspired damage feature you add 2d8 to your damage rolls."
+          "description": "At 10th level, when you use the inspired damage feature you add an additional 1d8 damage to the attack."
         },
         {
           "level": 15,
           "name": "Improved Inspired Attack",
-          "description": "At 15th level, when you use an epiphany point to add a bonus to your attack roll, you can make an additional attack as a bonus action, adding your intelligence modifier to both attacks."
+          "description": "At 15th level, when you use an epiphany point to add a bonus to your attack roll, you can make an additional attack as a bonus action, gaining advantage on both attacks."
         }
       ]
     },
@@ -138,7 +138,7 @@
         {
           "level": 7,
           "name": "Improved Inspired Skills",
-          "description": "Starting at 7th level, when the Skill Monkey uses the inspire skill ability they add their proficiency bonus as well as their intelligence modifier to the check, even if they are already proficient in that skill.\n\nFuture Version: Starting at 7th level, when the Skill Monkey uses the inspire skill ability they gain advantage on that ability check."
+          "description": "Starting at 7th level, when the Skill Monkey uses the inspire skill ability they add their proficiency bonus to the check, even if they are already proficient in that skill."
         },
         {
           "level": 10,
