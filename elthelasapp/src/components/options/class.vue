@@ -456,11 +456,11 @@
       <h3>Class Features</h3>
       <h4>Inspired</h4>
       <p>
-        The Factotum gets a number of epiphany points that they can spend to activate certain class features.  They get epiphany points equal to their intelligence modifier plus half their class level (rounded down), minimum 1.  They recover all of their epiphany points when they finish a short rest.
+        The Factotum gets a number of epiphany points that they can spend to activate certain class features.  They get epiphany points equal to their intelligence modifier plus half their class level (rounded down), minimum 1.  They recover all of their epiphany points when they finish a long rest.
       </p>
       <h4>Inspired Skills</h4>
       <p>
-        You can spend an epiphany point when making any skill check to add your intelligence bonus to the check.
+        You can spend an epiphany point when making any skill check to gain advantage on the check.
       </p>
       <h4>Spellcasting</h4>
       <p>
@@ -505,11 +505,11 @@
       </p>
       <h4>Inspired Attack</h4>
       <p>
-        Starting at 2nd level, you can spend an epiphany point before making an attack roll to add your intelligence bonus to the attack roll.
+        Starting at 2nd level, you can spend an epiphany point before making an attack roll to gain advantage on the roll.
       </p>
       <h4>Inspired Damage</h4>
       <p>
-        Starting at 2nd level, as a bonus action you can spend an epiphany point to add 1d8 to any weapon or spell damage roll you make until the start of your next turn.
+        Starting at 2nd level, when you hit with an attack you can spend an epiphany point to add 2d8 damage to the damage roll. At 11th level this increases to 3d8, and at 17th level this increases to 4d8. 
       </p>
       <h4>Factotum Philosophy</h4>
       <p>
@@ -533,7 +533,7 @@
       </p>
       <h4>Inspired Recovery</h4>
       <p>
-        At 20th level if you have less than half of your epiphany points when you roll initiative you regain enough epiphany points to put your maximum.
+        At 20th level if you have less than half of your epiphany points when you roll initiative you regain enough epiphany points to put you at half your maximum.
       </p>
       <h3>Factotum Philosophies</h3>
       <h3>Brains Over Brawn</h3>
@@ -558,11 +558,11 @@
       </ul>
       <h4>Improved Inspired Damage</h4>
       <p>
-        At 10th level, when you use the inspired damage feature you add 2d8 to your damage rolls.
+        At 10th level, when you use the inspired damage feature you add an additional 1d8 damage to the attack.
       </p>
       <h4>Improved inspired Attack</h4>
       <p>
-        At 15th level, when you use an epiphany point to add a bonus to your attack roll, you can make an additional attack as a bonus action, adding your intelligence modifier to both attacks.
+        At 15th level, when you use an epiphany point to add a bonus to your attack roll, you can make an additional attack as a bonus action, gaining advantage on both attacks.
       </p>
       <h3>Arcane Dilettante</h3>
       <p>
@@ -596,10 +596,7 @@
       </p>
       <h4>Improved Inspired Skills</h4>
       <p>
-        Starting at 7th level, when the Skill Monkey uses the inspire skill ability they add their proficiency bonus as well as their intelligence modifier to the check, even if they are already proficient in that skill.
-      </p>
-      <p>
-        Future Version: Starting at 7th level, when the Skill Monkey uses the inspire skill ability they gain advantage on that ability check.
+        Starting at 7th level, when the Skill Monkey uses the inspire skill ability they add their proficiency bonus to the check, even if they are already proficient in that skill.
       </p>
       <h4>Expertise</h4>
       <p>
