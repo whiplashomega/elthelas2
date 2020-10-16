@@ -16,14 +16,12 @@
         <div class="row">
           <div class="col-sm-3" v-if="showChapters">
             <nav class="sidenav nav flex-column nav-pill">
-              <li class="nav-item">
-                <a href="#" class="nav-item"
-                   v-for="(chapter, $index) in campaign.chapters" @click="loadChapter(chapter)"
-                   :key="chapter.id">Chapter {{ $index }}: {{ chapter.title }}</a>
+              <li class="navitem" v-for="(chapter, $index) in campaign.chapters" :key="chapter.id">
+                <a href="#" @click="loadChapter(chapter)">Chapter {{ $index }}: {{ chapter.title }}</a>
                 <button @click="moveChUp($index)">↑</button><button @click="moveChDown($index)">↓</button><button @click="deleteChapter($index)">&#128465;</button>
               </li>
             </nav>
-            <button class="btn btn-primary" @click="addChapter()">Add Chapter</button>
+            <button class="btn btn-primary" @click="addChapter()" style="margin-top: 12px;">Add Chapter</button>
           </div>
           <div :class="showChapters ? 'col-sm-9' : 'col-sm-12'">
             <h2 v-if="!chapter.buildmode">{{ chapter.title }} <button @click="chapter.buildmode = true" class='btn btn-primary'>&#9998;</button></h2>
@@ -240,7 +238,7 @@
 </template>
 <script src="./js/notes.js"></script>
 <style scoped>
-  #buildmode .navitem {
+  .navitem {
     margin-top: 12px;
   }
 
