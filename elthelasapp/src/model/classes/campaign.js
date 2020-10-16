@@ -1,6 +1,7 @@
 function newCampaign () {
   return {
     title: "New Campaign",
+    buildmode: true,
     chapters: [
       newChapter()
     ],
@@ -15,6 +16,7 @@ function newChapter () {
     id: Math.random(),
     title: "New Chapter",
     encounters: [],
+    buildmode: true,
     sections: []
   };
 }

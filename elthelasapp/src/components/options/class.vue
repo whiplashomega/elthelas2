@@ -509,7 +509,7 @@
       </p>
       <h4>Inspired Damage</h4>
       <p>
-        Starting at 2nd level, when you hit with an attack you can spend an epiphany point to add 2d8 damage to the damage roll. At 11th level this increases to 3d8, and at 17th level this increases to 4d8. 
+        Starting at 2nd level, when you hit with an attack you can spend an epiphany point to add 2d8 damage to the damage roll. At 11th level this increases to 3d8, and at 17th level this increases to 4d8.
       </p>
       <h4>Factotum Philosophy</h4>
       <p>

@@ -72,7 +72,7 @@
         <input type="button" @click="getFromServer(comp)"
                value="Load Character" class="btn btn-success margin15" />
       </div>
-      <div class="row" v-sortable="{ handle: '.handle' }">
+      <div class="row">
         <div v-for="creature in statBlocks" :key="creature.id" class="col-sm-4">
           <h2> {{ creature.name }} <i class="handle">&#8592;&#8594;</i> </h2>
           <div class="creature">

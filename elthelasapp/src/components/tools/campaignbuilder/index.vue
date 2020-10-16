@@ -1,7 +1,6 @@
 <template>
   <div class="col-sm-12">
     <div class="btn-group">
-      <button class="btn btn-primary" @click="buildmode = !buildmode">Toggle <span v-if="buildmode">View</span><span v-else>Build</span> Mode</button>
       <button class="btn btn-primary" @click="save()" v-if="campaign._id">Save</button>
       <button class="btn btn-primary" @click="saveNew()" v-if="!campaign._id">Save New</button>
       <button class="btn btn-success" @click="getAll(comp)">Load</button>

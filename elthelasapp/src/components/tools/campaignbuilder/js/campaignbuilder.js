@@ -37,7 +37,6 @@ export default {
   },
   data: function () {
     return {
-      buildmode: false,
       comp: this,
       showChapters: true,
       creArray: [],

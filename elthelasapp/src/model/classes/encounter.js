@@ -1,6 +1,7 @@
 export default function () {
   return {
     id: Date.now(),
+    buildmode: true,
     name: "",
     text: "",
     treasure: "",

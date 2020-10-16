@@ -140,7 +140,7 @@ export default {
       });
     },
     addSection: ({ state }) => {
-      state.currentChapter.sections.push({ id: Date.now(), encounters: [], title: "", description: "", complete: false, hidden: false });
+      state.currentChapter.sections.push({ id: Date.now(), encounters: [], buildmode: true, title: "", description: "", complete: false, hidden: false });
     },
     deleteSection: ({ state }, section) => {
       let i = state.currentChapter.sections.findIndex((a) => {
