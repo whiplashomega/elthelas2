@@ -21,6 +21,7 @@ export default {
     },
     loadChapter: ({ state }, chapter) => {
       state.currentChapter = chapter;
+      state.currentChapter.buildmode = false;
     },
     addEncounterToChapter: ({ state }) => {
       state.currentChapter.encounters.push(newEncounter());
@@ -62,8 +63,9 @@ export default {
       });
     },
     loadCampaign: ({ state, dispatch }, { campaign, comp }) => {
-      state.current = { ...campaign };
+      state.current = { ...campaign, buildmode: false };
       state.currentChapter = state.current.chapters[0];
+      state.currentChapter.buildmode = false;
       comp.$root.$emit('bv::hide::modal', 'campaignmodal');
       state.campaignCharacters = [];
       state.current.playercharacters.forEach((pcid) => {
