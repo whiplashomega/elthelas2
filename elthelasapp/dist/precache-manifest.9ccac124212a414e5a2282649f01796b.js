@@ -124,7 +124,7 @@ self.__precacheManifest = [
     "url": "/json/cities.json"
   },
   {
-    "revision": "e16982dba708bba0aa9a411c61abef01",
+    "revision": "42ea1768ead374ac08e9805d4cd4e8d1",
     "url": "/json/classes.json"
   },
   {
@@ -144,7 +144,7 @@ self.__precacheManifest = [
     "url": "/json/equipment.json"
   },
   {
-    "revision": "dabcfc0b93cbd63f4cf9772da66f6030",
+    "revision": "66028e93e6a59e910563fe5134e4a153",
     "url": "/json/feats.json"
   },
   {
@@ -184,11 +184,11 @@ self.__precacheManifest = [
     "url": "/json/personalhistory.json"
   },
   {
-    "revision": "6bf4f097eb9abb7a0e4a90a0fccecd80",
+    "revision": "f17f4ff83726f556e538540832620446",
     "url": "/json/races.json"
   },
   {
-    "revision": "9efb22b81983d7cfdeac66765bef3354",
+    "revision": "d4d02ca26b608703371f4a3235dc13d2",
     "url": "/json/spells.json"
   },
   {

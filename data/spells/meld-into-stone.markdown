@@ -3,7 +3,7 @@ layout: post
 title:  "Meld Into Stone"
 date:   2015-01-02
 source: PHB.259
-tags: [cleric, druid, level3, transmutation, ritual]
+tags: [cleric, druid, ranger, level3, transmutation, ritual]
 ---
 
 **3rd-level transmutation (ritual)**

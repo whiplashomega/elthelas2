@@ -3,7 +3,7 @@ layout: post
 title: "Cone of Cold"
 date: 2015-07-14
 source: PHB.224
-tags: [sorcerer, wizard, level5, evocation]
+tags: [druid, sorcerer, wizard, level5, evocation]
 ---
 
 **5th-level evocation**

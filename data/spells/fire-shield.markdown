@@ -3,7 +3,7 @@ layout: post
 title: "Fire Shield"
 date: 2015-07-14
 source: PHB.241
-tags: [wizard, eldritchknight, level4, evocation]
+tags: [druid, wizard, eldritchknight, level4, evocation]
 ---
 
 **4th-level evocation**

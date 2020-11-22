@@ -27,17 +27,17 @@
     {
       "level": 2,
       "name": "Fighting Style",
-      "description": "At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.\n\n#### Defense\n\nWhile you are wearing armor, you gain a +1 bonus to AC.\n\n#### Dueling\n\nWhen you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.\n\n#### Great Weapon Fighting\n\nWhen you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are w ielding with two hands, you can reroll the die and must use the new roll. The weapon must have the two-handed or versatile property for you to gain this benefit.\n\n#### Protection\n\nWhen a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield."
+      "description": "At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.\n\n#### Defense\n\nWhile you are wearing armor, you gain a +1 bonus to AC.\n\n#### Dueling\n\nWhen you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.\n\n#### Great Weapon Fighting\n\nWhen you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are w ielding with two hands, you can reroll the die and must use the new roll. The weapon must have the two-handed or versatile property for you to gain this benefit.\n\n#### Protection\n\nWhen a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.\n\n#### Blessed Warrior\n\nYou learn two cantrips of your choice from the cleric spell list. They count as paladin spells for you, and Charisma is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the cleric spell list.\n\n#### Blind Fighting\n\nYou have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.\n\n#### Interception\n\nWhen a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by 1d10 + your proficiency bonus (to a minimum of 0 damage), You must be wielding a shield or a simple or martial weapon to use this reaction."
     },
     {
       "level": 2,
       "name": "Spellcasting",
-      "description": "By 2nd level, you have learned to draw on divine magic through meditation and prayer to cast spells as a cleric does. See chapter 10 for the general rules o f spellcasting and chapter 11 for the paladin spell list.\n\n#### Preparing and Casting Spells\n\nThe Paladin table shows how many spell slots you have to cast your spells. To cast one o f your paladin spells of 1st level or higher, you must expend a slot o f the spell’s level or higher. You regain all expended spell slots when you finish a long rest.\n\nYou prepare the list of paladin spells that are available for you to cast, choosing from the paladin spell list. When you do so, choose a number of paladin spells equal to your Charisma modifier + half your paladin level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.\n\nFor example, if you are a 5th-level paladin, you have four 1st-level and two 2nd-level spell slots. With a Charisma of 14, your list of prepared spells can include four spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn’t remove it from your list of prepared spells.\n\nYou can change your list of prepared spells when you finish a long rest. Preparing a new list of paladin spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list.\n\n#### Spellcasting Ability\n\nCharisma is your spellcasting ability for your paladin spells, since their power derives from the strength of your convictions. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a paladin spell you cast and when making an attack roll with one.\n\nSpell save DC = 8 + your proficiency bonus + your Charisma modifier\n\nSpell attack modifier = your proficiency bonus + your Charisma modifier\n\n#### Spellcasting Focus\n\nYou can use a holy symbol (found in chapter 5) as a spellcasting focus for your paladin spells."
+      "description": "By 2nd level, you have learned to draw on divine magic through meditation and prayer to cast spells as a cleric does. See chapter 10 for the general rules o f spellcasting and chapter 11 for the paladin spell list.\n\n#### Preparing and Casting Spells\n\nThe Paladin table shows how many spell slots you have to cast your paladin spells. To cast one o f your paladin spells of 1st level or higher, you must expend a slot o f the spell’s level or higher. You regain all expended spell slots when you finish a long rest.\n\nYou prepare the list of paladin spells that are available for you to cast, choosing from the paladin spell list. When you do so, choose a number of paladin spells equal to your Charisma modifier + half your paladin level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.\n\nFor example, if you are a 5th-level paladin, you have four 1st-level and two 2nd-level spell slots. With a Charisma of 14, your list of prepared spells can include four spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn’t remove it from your list of prepared spells.\n\nYou can change your list of prepared spells when you finish a long rest. Preparing a new list of paladin spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list.\n\n#### Spellcasting Ability\n\nCharisma is your spellcasting ability for your paladin spells, since their power derives from the strength of your convictions. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a paladin spell you cast and when making an attack roll with one.\n\nSpell save DC = 8 + your proficiency bonus + your Charisma modifier\n\nSpell attack modifier = your proficiency bonus + your Charisma modifier\n\n#### Spellcasting Focus\n\nYou can use a holy symbol (found in chapter 5) as a spellcasting focus for your paladin spells."
     },
     {
       "level": 2,
       "name": "Divine Smite",
-      "description": "Starting at 2nd level, when you hit a creature with a melee w eapon attack, you can expend one paladin spell slot to deal radiant damage to the target, in addition to the weapon’s damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend."
+      "description": "Starting at 2nd level, when you hit a creature with a melee w eapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon’s damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend."
     },
     {
       "level": 3,
@@ -50,9 +50,19 @@
       "description": "When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose the Oath of Devotion, the Oath of the Ancients, or the Oath of Vengeance, all detailed at the end of the class description.\n\nYour choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.\n\n#### Oath Spells\n\nEach oath has a list o f associated spells. You gain access to these spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath spells don’t count against the number of spells you can prepare each day.\n\nIf you gain an oath spell that doesn’t appear on the paladin spell list, the spell is nonetheless a paladin spell for you.\n\n#### Channel Divinity\n\nYour oath allows you to channel divine energy to fuel magical effects. Each Channel Divinity option provided by your oath explains how to use it.\n\nWhen you use your Channel Divinity, you choose which option to use. You must then finish a short or long rest to use your Channel Divinity again.\n\nSome Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your paladin spell save DC."
     },
     {
+      "level": 3,
+      "name": "Harness Divine Power",
+      "description": "You can expend a use of your Channel Divinity to fuel your spells. As a bonus action, you touch your holy symbol, utter a prayer, and regain one expended spell slot, the level of which can be no higher than half your proficiency bonus (rounded up). The number of times you can use this feature is based on the level you've reached in this class: 3rd level, once; 7th level, twice; and 15th level, thrice. You regain all expended uses when you finish a long rest."
+    },
+    {
       "level": 4,
       "name": "Ability Score Improvement",
       "description": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+    },
+    {
+      "level": 4,
+      "name": "Martial Versatility",
+      "description": "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to paladins. This replacement represents a shift of focus in your martial practice."
     },
     {
       "level": 5,
@@ -72,7 +82,7 @@
     {
       "level": 11,
       "name": "Improved Divine Smite",
-      "description": "By 11th level, you are so suffused with righteous might that all your melee weapon strikes carry divine power with them. Whenever you hit a creature with a melee weapon, the creature takes an extra 1d8 radiant damage. If you also use your Divine Smite with an attack, you add this damage to the extra damage of your Divine Smite."
+      "description": "By 11th level, you are so suffused with righteous might that all your melee weapon strikes carry divine power with them. Whenever you hit a creature with a melee weapon, the creature takes an extra 1d8 radiant damage."
     },
     {
       "level": 14,
@@ -294,6 +304,78 @@
           "level": 20,
           "name": "Emissary of Redemption",
           "description": "At 20th level, you become an avatar of peace, which gives you two benefits:\n\n* You have resistance to all damage dealt by other creatures (their attacks, spells, and other effects).\n* Whenever a creature hits you with an attack, it takes radiant damage equal to half the damage you take from the attack.\n\nIf you attack a creature, cast a spell on it, or deal damage to it by any means but this feature, neither benefit works against that creature until you finish a long rest."
+        }
+      ]
+    },
+    {
+      "name": "Oath of Glory",
+      "castermult": 0.5,
+      "features": [
+        {
+          "level": 3,
+          "name": "Tenets of Glory",
+          "description": "The tenets of the Oath of Glory drive a paladin to attempt heroics that might one day shine in legend.\n\n**Actions over Words.** Strive to be known by glorious deeds, not words.\n\n**Challenges Are but Tests.** Face hardships with courage, and encourage your allies to face them with you.\n\n**Hone the Body.** Like raw stone, your body must be worked so its potential can be realized.\n\n**Discipline the Soul.** You must marshal the discipline to overcome failings within yourself that threaten to dim the glory of you and your friends."
+        },
+        {
+          "level": 3,
+          "name": "Oath Spells",
+          "description": "You gain oath spells at the Paladin levels listed in the Oath of Glory Spells table. See the Sacred Oath class feature for how oath spells work.\n\n* 3rd - guiding bolt, heroism.\n* 5th - enhance ability, magic weapon\n* 9th - haste, protection from energy\n* 13th - compulsion, freedom of movement\n* 17th - commune, flame strike"
+        },
+        {
+          "level": 3,
+          "name": "Channel Divinity",
+          "description": "You gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.\n\n**Peerless Athlete.** As a bonus action, you can use your Channel Divinity to augment your athleticism. For the next 10 minutes, you have advantage on Strength (Athletics) and Dexterity (Acrobatics) checks; you can carry, push, drag, and lift twice as much weight as normal; and the distance of your long and high jumps increases by 10 feet (this extra distance costs movement as normal).\n\n**Inspiring Smite.** Immediately after you deal damage to a creature with your Divine Site feature, you can use your Channel Divinity as a bonus action and distribute temporary hit points to creature of your choice within 30 feet of you, which can include you. The total number of temporary hit points equals 2d8 + your level in this class, divided among the chosen creatures however you like."
+        },
+        {
+          "level": 7,
+          "name": "Aura of Alacrity",
+          "description": "You emanate an aura that fills you and your companions with supernatural speed, allowing you to race across a battlefield in formation. Your walking speed increases by 10 feet. In addition, if you aren't incapacitated, the walking speed of any ally who starts their turn within 5 feet of you increases by 10 feet until the end of that turn.\n\nWhen you reach 18th level in this class, the range of the aura increases to 10 feet."
+        },
+        {
+          "level": 15,
+          "name": "Glorious Defense",
+          "description": "You can turn defense into a sudden strike. When you or another creature you can see within 10 feet of you is hit by an attack roll, you can use your reaction to grant a bonus to the target's AC against that attack, potentially causing it to miss. The bonus equals your Charisma modifier (minimum of +1). If the attack misses, you can make one weapon attack against the attacker as part of this reaction, provided the attacker is within your weapon's range.\n\nYou can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest."
+        },
+        {
+          "level": 20,
+          "name": "Living Legend",
+          "description": "You can empower yourself with the legends-whether true or exaggerated-of your great deeds. As a bonus action, you gain the following benefits for 1 minute:\n\n* You are blessed with an otherworldly presence, gaining advantage on all Charisma checks.\n* Once on each of your turns when you make a weapon attack and miss, you can cause that attack to hit instead.\n* If you fail a saving throw, you can use your reaction to reroll it. You must use this new roll.\n\nOnce you use this bonus action, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again."
+        }
+      ]
+    },
+    {
+      "name": "Oath of the Watchers",
+      "castermult": 0.5,
+      "features": [
+        {
+          "level": 3,
+          "name": "Tenets of the Watchers",
+          "description": "A paladin who assumes the Oath of the Watchers swears to safeguard mortal realms from otherworldly threats.\n\n**Vigilance.** The threats you face are cunning, powerful, and subversive. Be ever alert for their corruption.\n\n**Loyalty.** Never accepts gifts or favors from fiends or those who truck with them. Stay true to your order, your comrades, and your duty.\n\n**Discipline.** You are the shield against the endless terrors that lie beyond the stars. Your blade must be forever sharp and your mind keen to survive what lies beyond."
+        },
+        {
+          "level": 3,
+          "name": "Oath Spells",
+          "description": "You gain oaht spells at the paladin levels listed in the Oath of the Watchers table. See the Sacred Oath class feature for how oath spells work.\n\n* 3rd - alarm, detect magic\n* 5th - moonbeam, see invisibility\n* 9th - counterspell, nondetection\n* 13th - arua of purity, banishment\n* 17th - hold monster, scrying"
+        },
+        {
+          "level": 3,
+          "name": "Channel Divinity",
+          "description": "You gain the following Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.\n\n**Watcher's Will.** You can use your Channel Divinity to invest your presence with the warding power of your faith. As an action, you can choose a number of creatures you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of 1 creature). For 1 minute, you and the chosen creatures have advantage on Intelligence, Wisdom, and Charisma saving throws.\n\n**Abjure the Extraplanar.** You can use your Channel Divinity to castigate unworldly beings. As an action, you present your holy symbol and each aberration, celestial, elemental, fey, or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.\n\nA turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly end its move in a space within 30 feet of you. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature cna take the Dodge action."
+        },
+        {
+          "level": 7,
+          "name": "Aura of the Sentinel",
+          "description": "You emit an aura of alertness while you aren't incapacitated. When you and any creatures of your choice within 10 feet of you roll initiative, you all gain a bonus to initiative equal to your proficiency bonus.\n\nAt 18th level, the range of this aura increases to 30 feet."
+        },
+        {
+          "level": 15,
+          "name": "Vigilant Rebuke",
+          "description": "You've learned how to chastise anyone who dares wield beguilements against you and your wards. Whenever you or a creature you can see within 30 feet of you succeeds on an Intelligence, Wisdom, or Charisma saving throw, you can use your reaction to deal 2d8 + your Charisma modifier force damage to the creature that forced the saving throw."
+        },
+        {
+          "level": 20,
+          "name": "Mortal Bulwark",
+          "description": "You manifest a spark of divine power in defense of the mortal realms. As a bonus action, you gain the following benefits for 1 minute:\n\n* You gain truesight with a range of 120 feet.\n*You have advantage on attack rolls against aberrations, celestials, elementals, fey, and fiends.\n* When you hit a creature with an attack roll and deal damage to it, you can also force it to make a Charisma saving throw against your spell save DC. On a failed save, the creature is magically banished to its native plane of existence if it's currently not there. On a successful save, the creature can't be banished by this feature for 24 hours.\n\nOnce you use this bonus action, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again."
         }
       ]
     }

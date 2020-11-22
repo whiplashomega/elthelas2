@@ -6,7 +6,7 @@
     "traits": [
       { "name": "Size", "description": "Dwarves stand between 4 and 5 feet tall and average about 150 lbs. Your size is medium." },
       { "name": "Dwarven Resilience", "description": "You have advantage on saving throws against poison, and you have resistance against poison damage." },
-      { "name": "Dwarven Combat Training", "description": "You have proficiency with the battleaxe, handaxe, throwing hammer, and warhammer." }
+      { "name": "Dwarven Combat Training", "description": "You have proficiency with the battleaxe, handaxe, light hammer, and warhammer." }
     ],
     "agepoints": {
       "puberty": 15,

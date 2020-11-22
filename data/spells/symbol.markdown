@@ -3,7 +3,7 @@ layout: post
 title:  "Symbol"
 date:   2015-01-12
 source: PHB.280
-tags:   [archivist, bard, wizard, cleric, level7, abjuration]
+tags:   [archivist, bard, druid, wizard, cleric, level7, abjuration]
 ---
 
 **7th-level abjuration**

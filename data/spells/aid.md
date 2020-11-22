@@ -3,7 +3,7 @@ layout: post
 title:  "Aid"
 date:   2014-12-31
 source: PHB.211
-tags: [archivist, cleric, paladin, artificer, level2, abjuration]
+tags: [archivist, bard, cleric, ranger, paladin, artificer, level2, abjuration]
 ---
 
 **2nd-level abjuration**

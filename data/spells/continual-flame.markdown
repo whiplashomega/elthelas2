@@ -3,7 +3,7 @@ layout: post
 title: "Continual Flame"
 date: 2015-07-14
 source: PHB.227
-tags: [cleric, wizard, eldritchknight, artificer, level2, evocation]
+tags: [cleric, druid, wizard, eldritchknight, artificer, level2, evocation]
 ---
 
 **2nd-level evocation**

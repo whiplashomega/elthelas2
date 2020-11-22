@@ -3,7 +3,7 @@ layout: post
 title:  "Augury"
 date:   2014-12-31
 source: PHB.215
-tags: [archivist, cleric, level2, divination, ritual]
+tags: [archivist, cleric, druid, level2, divination, ritual]
 ---
 
 **2nd-level divination (ritual)**

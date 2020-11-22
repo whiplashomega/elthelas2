@@ -3,7 +3,7 @@ layout: post
 title:  "Entangle"
 date:   2014-08-24
 source: PHB.238
-tags: [druid, level1, conjuration]
+tags: [druid, ranger, level1, conjuration]
 ---
 
 **1st-level conjuration**

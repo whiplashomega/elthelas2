@@ -3,7 +3,7 @@ layout: post
 title:  "Command"
 date:   2014-08-24
 source: PHB.223
-tags: [archivist, cleric, paladin, level1, enchantment]
+tags: [archivist, bard, cleric, paladin, level1, enchantment]
 ---
 
 **1st-level enchantment**

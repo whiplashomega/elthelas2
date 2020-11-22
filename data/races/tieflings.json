@@ -27,7 +27,7 @@
         { "name": "Size", "description": "Tieflings have about the same size and build as humans. Your size is medium." },
         { "name": "Speed", "description": "Your base walking speed is 30 feet." },
         { "name": "Ability Score Increase", "description": "Your intelligence score increases by 1 and your Charisma score increases by 2." },
-        { "name": "Infernal Legacy", "description": "You know the thaumatergy cantrip. Once you reach 3rd level, you can cast the hellish rebuke spell once per day as a 2nd-level spell. Once you reach 5th level you can cast the darkness spell once per day. Charisma is your spellcasting ability for these spells." }
+        { "name": "Infernal Legacy", "description": "You know the thaumatergy cantrip. Once you reach 3rd level, you can cast the hellish rebuke spell once per long rest as a 2nd-level spell. Once you reach 5th level you can cast the darkness spell once per long rest. Charisma is your spellcasting ability for these spells." }
       ],
       "averageheight": 66,
       "baseheight": 57,

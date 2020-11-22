@@ -76,12 +76,12 @@
         {
           "level": 3,
           "name": "Know Your Enemy",
-          "description": "Starting at 3rd level, you can spend a bonus action to study an opponent and discover how to get past its defenses. When you use this ability pick a target, you can use your intelligence modifier instead of strength or dexterity on weapon attack rolls and damage rolls against that target until the start of your next turn."
+          "description": "Starting at 3rd level, your combat tactics focus on knowing your opponent and how to get past its defenses. You can use your intelligence modifier instead of strength or dexterity on weapon attack rolls and damage rolls."
         },
         {
           "level": 7,
           "name": "Fighting Style Mimic",
-          "description": "At 10th level the Brains over Brawn Factotum can pick one of the following fighting styles. Whenever they finish a long rest they can spend 3 epiphany points to replace this fighting style with a different one from the list. This ability does not stack with the fighting style granted by any other class.\n\n* Archery - You gain a +2 bonus to attack rolls you make with ranged weapons.\n* Dueling - When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.\n* Two-Weapon Fighting - When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.\n* Great Weapon Fighting - When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit."
+          "description": "At 7th level the Brains over Brawn Factotum can pick one of the following fighting styles. Whenever they finish a long rest they can spend 3 epiphany points to replace this fighting style with a different one from the list. If you already have a particular fighting style granted by another class you cannot pick that fighting style again.\n\n* Archery - You gain a +2 bonus to attack rolls you make with ranged weapons.\n* Dueling - When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.\n* Two-Weapon Fighting - When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.\n* Great Weapon Fighting - When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit."
         },
         {
           "level": 10,

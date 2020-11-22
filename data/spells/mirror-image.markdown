@@ -3,7 +3,7 @@ layout: post
 title: "Mirror Image"
 date: 2015-07-30
 source: PHB.260
-tags: [sorcerer, warlock, wizard, eldritchknight, level2, illusion]
+tags: [bard, sorcerer, warlock, wizard, eldritchknight, level2, illusion]
 ---
 
 **2nd-level illusion**
