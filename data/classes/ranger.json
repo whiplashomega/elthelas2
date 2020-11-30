@@ -45,7 +45,7 @@
     {
       "level": 3,
       "name": "Primal Awareness",
-      "description": "You can focus your awareness through the interconnections of nature: you learn additional spells when you reach certain levels in this class if you don't already know them, as shown in the Primal Awareness Spells table. These spells don't count against the number of ranger spells you know.\n\n* 3rd - speak with animals\n* 5th - beast sense\n* speak with plants\n* 13th - locate creature\n* 17th - commune with nature\n\nYou can cast each of these spells once without expending a spell slot. Once you cast a spell in this way, you can't do so again until you finish a long rest."
+      "description": "You can focus your awareness through the interconnections of nature: you learn additional spells when you reach certain levels in this class if you don't already know them, as shown in the Primal Awareness Spells table. These spells don't count against the number of ranger spells you know.\n\n* 3rd - speak with animals\n* 5th - beast sense\n* 9th - speak with plants\n* 13th - locate creature\n* 17th - commune with nature\n\nYou can cast each of these spells once without expending a spell slot. Once you cast a spell in this way, you can't do so again until you finish a long rest."
     },
     {
       "level": 4,
@@ -95,8 +95,8 @@
       "features": [
         {
           "level": 3,
-          "name": "Animal Companion",
-          "description": "At 3rd level, you learn to use your magic to create a powerful bond with a creature of the natural world.\n\nWith 8 hours of work and the expenditure of 50 gp worth of rare herbs and fine food, you call forth an animal from the wilderness to serve as your faithful companion. You can select any beast of cr 1/2 or less that could reasonably appear in the area you are in, see the . However, your DM might pick one of these animals for you, based on the surrounding terrain and on what types of creatures would logically be present in the area (for examples see the Learning Beast Shapes tables in Xanathar's Guide to Everything, pages 24-26).\n\nAt the end of the 8 hours, your animal companion appears and gains all the benefits of your Companion’s Bond ability. You can have only one animal companion at a time.\n\nIf your animal companion is ever slain, the magical bond you share allows you to return it to life. With 8 hours of work and the expenditure of 25 gp worth of rare herbs and fine food, you call forth your companion’s spirit and use your magic to create a new body for it. You can return an animal companion to life in this manner even if you do not possess any part of its body.\n\nIf you use this ability to return a former animal companion to life while you have a current animal companion, your current companion leaves you and is replaced by the restored companion.\n\n#### Companion's Bond\n\nYour animal companion gains a variety of benefits while it is linked to you.\n\nThe companion obeys your commands as best it can. It rolls for initiative like any other creature, but you determine its actions, decisions, attitudes, and so on. If you are incapacitated or absent, your companion acts on its own.\n\nWhen using your Natural Explorer feature, you and your animal companion can both move stealthily at a normal pace.\n\n#### Keeping Track of Proficiency\n\nWhen you gain your animal companion at 3rd level, its proficiency bonus matches yours at +2. As you gain levels and increase your proficiency bonus, remember that your companion’s proficiency bonus improves as well, and is applied to the following areas: Armor Class, skills, saving throws, attack bonus, and damage rolls.\n\nYour animal companion has abilities and game statistics determined in part by your level. Your companion uses your proficiency bonus rather than its own. In addition to the areas where it normally uses its proficiency bonus, an animal companion also adds its proficiency bonus to its AC and to its damage rolls.\n\nYour animal companion gains proficiency in two skills of your choice. It also becomes proficient with all saving throws.\n\nFor each level you gain after 3rd, your animal companion gains an additional hit die and increases its hit points accordingly.\n\nWhenever you gain the Ability Score Improvement class feature, your companion’s abilities also improve. Your companion can increase one ability score of your choice by 2, or it can increase two ability scores of your choice by 1. As normal, your companion can’t increase an ability score above 20 using this feature unless its description specifies otherwise.\n\nYour companion shares your alignment, and has a personality trait and a flaw that you can roll for or select from the tables below. Your companion shares your ideal, and its bond is always, \"The ranger who travels with me is a beloved companion for whom I would gladly give my life.\n\nYour animal companion gains the benefits of your Favored Enemy feature. It uses the favored enemies you selected."
+          "name": "Primal Companion",
+          "description": "You magically summon a primal b east, which draws strength from your bond with nature. The beast is friendly to you and your companions and obeys your commands. Choose its stat block-Beast of the Land, Beast of the Sea, or Beast of the Sky-which uses your proficiency bonus (PB) in several places. You also determine the kind of animal the beast is, choosing a kind appropriate for the stat block. Whatever kind you choose, the beast bears primal markings indicating its mystical origin.\n\nIn combat, the beast acts during your turn. It can move and use its reaction on its own, but the only action it takes is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. You can also sacrifice one of your attacks when you take the Attack action to command the beast to take the Attack action. If you are incapacitated, the beast can take any action of its choice, not just Dodge.\n\nIf the beast has died within the last hour, you can use your action to touch it and expend a spell slot of 1st level or higher. The beast returns to life after 1 minute with all its hit points restored.\n\nWhen you finish a long rest, you can summon a different primal beast. The new beast appears in an unoccupied space within 5 feet of you, and you choose its stat block and appearance. If you already have a beast from this feature, it vanishes when the new beast appears. The beast also vanishes if you die."
         },
         {
           "level": 7,
@@ -246,6 +246,73 @@
           "level": 15,
           "name": "Slayer's Counter",
           "description": "At 15th level, you gain the ability to counterattack when your prey tries to sabotage you. If the target of your Slayer’s Prey forces you to make a saving throw, you can use your reaction to make one weapon attack against the quarry. You make this attack immediately before making the saving throw. If your attack hits, your save automatically succeeds, in addition to the attack’s normal effects."
+        }
+      ]
+    },
+    {
+      "name": "Fey Wanderer",
+      "castermult": "0.5",
+      "features": [
+        {
+          "level": 3,
+          "name": "Dreadful Strikes",
+          "description": "You can augment your weapon strikes with mind-scarring magic, drawn from the gloomy hollows of the Feywild. When you hit a creature with a weapon, you can deal an extra 1d4 psychic damage to the target, which can take this extra damage only once per turn.\n\nThe extra damage increases to 1d6 when you reach 11th level in this class."
+        },
+        {
+          "level": 3,
+          "name": "Fey Wanderer Magic",
+          "description": "You learn an additional spell when you reach certain levels in this class, as shown in the Fey Wanderer Spells table. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.\n\n* 3rd - Charm Person\n* 5th - misty step\n* 9th - dispel magic\n* 13th - dimension door\n* 17th - mislead\n\nYou also possess a preturnatural blessing from a fey ally or a place of fey power. Choose your blessing from the Feywild Gifts table or determine it randomly."
+        },
+        {
+          "level": 3,
+          "name": "Otherworldly Glamour",
+          "description": "Your fey qualities gives you a supernatural charm. As a result, whenever you make a Charisma check, you gain a bonus to the check equal to your Wisdom modifier (minimum of +1).\n\nIn addition, you gain proficiency in one of the following skills of your choice: Deception, Performance, or Persuasion."
+        },
+        {
+          "level": 7,
+          "name": "Beguiling Twist",
+          "description": "The magic of the Feywild guards your mind. You have advantage on saving throws against being charmed or frightened.\n\nIn addition, whenever you or a creature you can see within 120 feet of you succeeds on a saving throw against being charmed or frightened, you can use your reaction to force a different creature you can see within 120 feet of you to make a Wisdom saving throw against your spell save DC. If the save fails, the target is charmed or frightened by you (your choice) for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a successful save."
+        },
+        {
+          "level": 11,
+          "name": "Fey Reinforcements",
+          "description": "The royal courts of the Feywild have blessed you with the assistance of fey beings: you know *summon fey*. It doesn't count against the number of ranger spells you know, and you can cast it without a material component. You can also cast it once without a spell slot, and you regain the ability to do so when you finish a long rest.\n\nWhenever you start casting the spell, you can modify it so that it doesn't require concentration. If you do so, the spell's duration becomes 1 minute for that casting."
+        },
+        {
+          "level": 15,
+          "name": "Misty Wanderer",
+          "description": "You can sli in and out of the Feywild to move in a blink of an eye: you can cast misty step without expending a spell slot. You can do so a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest.\n\nIn addition, whenever you cast misty step, you can bring along one willing creature you can see within 5 feet of you. That creature teleports to an unoccupied space of your choice within 5 feet of your destination space."
+        }
+      ]
+    },
+    {
+      "name": "Swarmkeeper",
+      "castermult": 0.5,
+      "features": [
+        {
+          "level": 3,
+          "name": "Gathered Swarm",
+          "description": "A swarm of intangible nature spirits has bonded itself to you and can assist you in battle. Until you die, the swarm remains in your space, crawling on you or flying and skittering around you within your space. You determine its appearance, or you generate its appearance by rolling on the Swarm Appearance table.\n\nOnce on each of your turns, you can cause the swarm to assist you in one of the following ways, immediately after you hit a creature with an attack:\n\n* The attack's target takes 1d6 piercing damage from the swarm.\n* The attack's target must succeed on a Strength saving throw against your spell save DC or be moved by the swarm up to 15 feet horizontally in a direction of your choice.\n* You are moved by the swarm 5 feet horizontally in a direction of your choice."
+        },
+        {
+          "level": 3,
+          "name": "Swarmkeeper Magic",
+          "description": "You learn the mage hand cantrip if you don't already know it. When you cast it, the hand takes the form of your swarming nature spirits.\n\nYou also learn an additional spell of 1st level or higher when you reach certain levels in this class, as shown in the Swarmkeeper Spells table. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.\n\n* 3rd - faerie fire, mage hand\n* 5th - web\n* 9th - gaseous form\n* 13th - arcane eye\n* 17th - insect plague"
+        },
+        {
+          "level": 7,
+          "name": "Writhing Tide",
+          "description": "You can condense part of your swarm into a focused mass that lifts you up. As a bonus action, you gain a flying speed of 10 feet and can hover. This effect lasts for 1 minute or until you are incapacitated.\n\nYou can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+        },
+        {
+          "level": 11,
+          "name": "Mighty Swarm",
+          "description": "Your Gathered Swarm grows mightier in the following ways.\n\n* The damage of Gather Swarm increases to 1d8.\n* If a creature fails its saving throw against being moved by Gathered Swarm, you can also cause the swarm to knock the creature prone.\n* When you are moved by Gathered Swarm, it gives you half cover until the start of your next turn."
+        },
+        {
+          "level": 15,
+          "name": "Swarming Dispersal",
+          "description": "You can discorporate into your swarm, avoiding danger. When you take damage, you can use your reaction to give yourself resistance to that damage. You vanish into your swarm and then teleport to an unoccupied space that you can see within 30 feet of you, where you reappear with the swarm.\n\nYou can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
         }
       ]
     }

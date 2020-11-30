@@ -253,7 +253,7 @@ export default {
         num += Math.floor(Math.max(0, Math.min(a.level, 17) - 11) / 2);
         if (a.selsubclass.name === "Sorceron Bloodline") {
           num += 3;
-        } 
+        }
         if (a.selsubclass.name === "Sorceron Bloodline" && a.level >= 14) {
           num++;
         } else if (a.selsubclass.name === "Divine Soul") {
@@ -334,6 +334,9 @@ export default {
       casterlevel += Math.ceil(Number(character.charclasses[0].level) * Number(character.charclasses[0].selsubclass.castermult));
     } else {
       character.charclasses.forEach((a) => {
+        if (a.name === "Artificer") {
+          casterlevel += Math.ceil(Number(a.level) * Number(a.selsubclass.castermult));
+        }
         casterlevel += Math.floor(Number(a.level) * Number(a.selsubclass.castermult));
       });
     }

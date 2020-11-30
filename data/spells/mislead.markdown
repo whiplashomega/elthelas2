@@ -3,7 +3,7 @@ layout: post
 title: "Mislead"
 date: 2015-07-30
 source: PHB.260
-tags: [bard, wizard, level5, illusion]
+tags: [bard, warlock, wizard, level5, illusion]
 ---
 
 **5th-level illusion**

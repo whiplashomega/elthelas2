@@ -3,7 +3,7 @@ layout: post
 title: "Magic Weapon"
 date: 2015-07-30
 source: PHB.257
-tags: [ranger, paladin, wizard, eldritchknight, artificer, level2, transmutation]
+tags: [ranger, paladin, sorcerer, wizard, eldritchknight, artificer, level2, transmutation]
 ---
 
 **2nd-level transmutation**

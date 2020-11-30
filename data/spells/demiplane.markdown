@@ -3,7 +3,7 @@ layout: post
 title:  "Demiplane"
 date:   2015-01-10
 source: PHB.231
-tags:   [archivist, warlock, wizard, level8, conjuration]
+tags:   [archivist, sorcerer, warlock, wizard, level8, conjuration]
 ---
 
 **8th-level conjuration**

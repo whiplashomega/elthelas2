@@ -81,6 +81,39 @@
       </div>
       <div class="col-6">
         <actions />
+        <div class="charsheet-static">
+          <h4>Active Modifiers</h4>
+          <div class="row">
+            <div class="col-7">Modifier</div>
+            <div class="col-2">Time</div>
+            <div class="col-2">Concentration?</div>
+          </div>
+          <div class="row" v-for="mod in character.activemodifiers" :key="mod.id">
+            <div class="col-7"><input type="text" v-model="mod.modifier" class="charsheet-text" /></div>
+            <div class="col-2"><input type="number" v-model="mod.remaining" class="charsheet-num" /></div>
+            <div class="col-2"><select v-model="mod.concentrating" class="charsheet-text">
+              <option :value="false">No</option>
+              <option :value="true">Yes</option>
+            </select></div>
+            <div class="col-1"><button @click="removeActiveModifier(mod.id)" class="btn btn-sm btn-danger">X</button></div>
+          </div>
+          <div class="row">
+            <div class="btn-group col">
+              <button @click="addActiveModifier()" class="btn btn-sm btn-primary">+</button>
+            </div>
+          </div>
+          <p>Active Concentration Effects: {{ numConcentrating }}</p>
+          <h5>Pass Time</h5>
+          <div class="row">
+            <div class="btn-group col">
+              <button @click="passTime(1)" class="btn btn-sm btn-primary">1 Round</button>
+              <button @click="passTime(10)" class="btn btn-sm btn-primary">1 Minute</button>
+              <button @click="passTime(100)" class="btn btn-sm btn-primary">10 Minutes</button>
+              <button @click="passTime(600)" class="btn btn-sm-btn-primary">1 hour</button>
+              <button @click="passTime(4800)" class="btn btn-sm btn-primary">8 hours</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

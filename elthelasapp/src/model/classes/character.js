@@ -44,6 +44,7 @@ export default function() {
     god: "",
     skin: "",
     pets: [],
+    activemodifiers: [],
     skills: [
       { name: "Strength", prof: 0, stat: 0, magic: 0 },
       { name: "Dexterity", prof: 0, stat: 1, magic: 0 },

@@ -30,12 +30,22 @@
  {
    "level": 3,
    "name": "Metamagic",
-   "description": "At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another one at 10th and 17th level.\n\nYou can use only one Metamagic option on a spell when you cast it, unless otherwise noted.\n\n#### Careful Spell\n\nWhen you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell.\n\n#### Distant Spell\n\nWhen you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell.\n\nWhen you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet.\n\n#### Empowered Spell\n\nWhen you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls.\n\nYou can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell.\n\n#### Extended Spell\n\nWhen you cast a spell that has a duration o f 1 minute or longer, you can spend 1 sorcery point to double its duration, to a maximum duration of 24 hours.\n\n#### Heightened Spell\n\nWhen you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw made against the spell.\n\n#### Quickened Spell\n\nWhen you cast a spell that has a casting time of 1 action, you can spend 2 sorcery points to change the casting time to 1 bonus action for this casting.\n\n#### Subtle Spell\n\nWhen you cast a spell, you can spend 1 sorcery point to cast it without any somatic or verbal components.\n\n#### Twinned Spell\n\nWhen you cast a spell that targets only one creature and doesn’t have a range of self, you can spend a number of sorcery points equal to the spell’s level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip). To be eligible, a spell must be incapable of targeting more than one creature at the spell’s current level. For example, magic missile and scorching ray aren’t eligible, but ray of frost and chromatic orb are."
+   "description": "At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another one at 10th and 17th level.\n\nYou can use only one Metamagic option on a spell when you cast it, unless otherwise noted.\n\n#### Careful Spell\n\nWhen you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell.\n\n#### Distant Spell\n\nWhen you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell.\n\nWhen you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet.\n\n#### Empowered Spell\n\nWhen you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls.\n\nYou can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell.\n\n#### Extended Spell\n\nWhen you cast a spell that has a duration o f 1 minute or longer, you can spend 1 sorcery point to double its duration, to a maximum duration of 24 hours.\n\n#### Heightened Spell\n\nWhen you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw made against the spell.\n\n#### Quickened Spell\n\nWhen you cast a spell that has a casting time of 1 action, you can spend 2 sorcery points to change the casting time to 1 bonus action for this casting.\n\n#### Subtle Spell\n\nWhen you cast a spell, you can spend 1 sorcery point to cast it without any somatic or verbal components.\n\n#### Twinned Spell\n\nWhen you cast a spell that targets only one creature and doesn’t have a range of self, you can spend a number of sorcery points equal to the spell’s level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip). To be eligible, a spell must be incapable of targeting more than one creature at the spell’s current level. For example, magic missile and scorching ray aren’t eligible, but ray of frost and chromatic orb are.\n\n#### Seeking Spell\n\nIf you make an attack roll for a spell and miss, you can spend 2 sorcery points to reroll the d20, and you must use the new roll.\n\nYou can use Seeking Spell even if you have already used a different Metamagic option during the casting of the spell.\n\n#### Transmuted Spell\n\nWhen you cast a spell that deals a type of damage from the following list, you can spend 1 sorcery point to change that damage type to one of the other listed types: acid, cold, fire, lightning, poison, thunder."
  },
  {
    "level": 4,
    "name": "Ability Score Improvement",
    "description": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+ },
+ {
+  "level": 4,
+  "name": "Sorcerous Versatility",
+  "description": "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can do one of the following, representing the magic within you flowing in new ways:\n\n* Replace one of the options you chose for the Metamagic feature with a different Metamagic option available to you.\n\n* Replace one cantrip you learned from this class's Spellcasting feature with another cantrip from the sorcerer spell list."
+ },
+ {
+  "level": 5,
+  "name": "Magical Guidance",
+  "description": "You can tap into your inner wellspring of magic to try to conjure success from failure. When you make an ability check that fails, you can spend 1 sorcery point to reroll the d20, and you must use the new roll, potentially turning the failure into a success."
  },
  {
    "level": 20,
@@ -232,6 +242,73 @@
           "level": 18,
           "name": "Wind Soul",
           "description": "At 18th level, you gain immunity to lightning and thunder damage.\n\nYou also gain a magical flying speed of 60 feet. As an action. you can reduce your flying speed to 30 feet for 1 hour and choose a number of creatures within 30 feet of you equal to 3 + your Charisma modifier. The chosen creatures gain a magical flying speed of 30 feet for 1 hour. Once you reduce your flying speed in this way, you can’t do so again until you finish a short or long rest."
+        }
+      ]
+    },
+    {
+      "name": "Aberrant Mind",
+      "castermult": 1,
+      "features": [
+        {
+          "level": 1,
+          "name": "Psionic Spells",
+          "description": "You learn additional spells when you reach certain levels in this class, as shown on the Psionic Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.\n\nWhenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be a divination or an enchantment spell from the sorcerer, warlock, or wizard spell list.\n\n* 1st - arms of Hadar, dissonant whispers, mind sliver.\n* 3rd - calm emotions, detect thoughts\n* 5th - hunger of Hadar, sending\n* 7th - Evard's black tentacles, summon aberration.\n* 9th - Rary's telepathic bond, telekinesis"
+        },
+        {
+          "level": 1,
+          "name": "Telepathic Speech",
+          "description": "You can form a telepathic connection between your mind and the mind of another. As a bonus action, choose one creature you can see within 30 feet of you. You and the chosen creature can speak telepathically with each other while the two of you are within a number of miles of each other equal to your Charisma modifier (minimum of 1 mile). To understand each other, you each must speak mentally in a language the other knows.\n\nThe telepathic connection lasts for a number of minutes equal to your sorcerer level. It ends early if you are incapacitated or die or if you use this ability to form a connection with a different creature."
+        },
+        {
+          "level": 6,
+          "name": "Psionic Sorcery",
+          "description": "When you cast any spell of 1st level or higher from your Psionic Spells feature, you can cast it by expending a spell slot as normal or by spending a number of sorcery points equal to the spell's level. If you cas tthe spell using sorcery points, it requires no verbal or somatic components, and it requires no material components, unless they are consumed by the spell."
+        },
+        {
+          "level": 6,
+          "name": "Psychic Defenses",
+          "description": "You gain resistance to psychic damage, and you have advantage on saving throws against being charmed or frightened."
+        },
+        {
+          "level": 14,
+          "name": "Revelation in Flesh",
+          "description": "You can unleash the aberrant truth hidden within yourself. As a bonus action, you can spend 1 or more sorcery points to magically transform your body for 10 minutes. For each sorcery point you spend, you can gain one of the following benefits of your choice, the effects of which last until the transformation ends:\n\n* You can see any invisible creature within 60 feet of you, provided it isn't behind total cover. Your eyes also turn black or become writhing sensory tendrils.\n* You gain a flying speed equal to your walking speed, and you can hover. As you fly, your skin glistens with mucus or shines with an otherworldly light.\n* You gain a swimming speed equal to twice your walking speed, and you can breathe underwater, Moreover, gills grow from your neck or fan out from behind your ears, your fingers become webbed, or you grow writhing cilia that extend through your clothing.\n* Your body long with any equipment you are wearing or carrying, becomes slimy and pliable. You can move through any space as narrow as 1 inch without squeezing and you can spend 5 feet of movement to escape from nonmagical restraints or being grappled."
+        },
+        {
+          "level": 18,
+          "name": "Warping Implosion",
+          "description": "You can unleash your aberrant power as a space-warping anomaly. As an action, you can teleport to an unoccupied space you can see within 120 feet of you. Immediately after you disappear, each creature within 30 feet of the space you left must make a Strength saving throw. On a failed save, a creature takes 3d10 force damage and is pulled straight toward the space you left, ending in an unoccupied space as close to your former space as possible. On a successful save, the creature takes half as much damage and isn't pulled.\n\nOnce you use this feature, you can't do so again until you finish a long rest, unless you spend 5 sorcery points to use it again."
+        }
+      ]
+    },
+    {
+      "name": "Clockwork Soul",
+      "castermult": "1",
+      "features": [
+        {
+          "level": 1,
+          "name": "Clockwork Magic",
+          "description": "You learn additional spells when you reach certain levels in this class, as shown on the Clockwork Spells table. Each of these spells counts as a sorcerer spell for you, but id doesn't count against the number of sorcerer spells you know.\n\nWhenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be an abjuration or a transmutation spell from the sorcerer, warlock, or wizard spell list.\n\n* 1st - alarm, protection from evil and good\n* 3rd - aid, lesser restoration\n* 5th - dispel magic, protection from energy\n* 7th - freedom of movement, summon construct\n* 9th - greater restoration, wall of force.\n\nIn addition, consult the Manifestations of Order table and choose or randomly determine a way your connection to order manifests while you are casting any of your sorcerer spells."
+        },
+        {
+          "level": 1,
+          "name": "Restore Balance",
+          "description": "Your connection to the plane of absolute order allows you to eqaulize chaotic moments. When a creature you can see within 60 feet of you is about to roll a d20 with advantage or disadvantage, you can use your reaction to prevent the roll from being affected by advantage and disadvantage.\n\nYou can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+        },
+        {
+          "level": 6,
+          "name": "Bastion of Law",
+          "description": "You can tap into the grand equation of existence to imbue a creature with a shimmering shield of order. As an action, you can expend 1 to 5 sorcery points to create a magical ward around yourself or another creature you can see within 30 feet of you. The ward lasts until you finish a long rest or until you use this feature again.\n\nThe ward is represented by a number of d8s equal to the number of sorcery points spent to create it. When the warded creature takes damage, it can expend a number of those dice, roll them, and reduce the damage taken by the total rolled on those dice."
+        },
+        {
+          "level": 14,
+          "name": "Trance of Order",
+          "description": "You gain the ability to align your consciousness to the endless calculations of Mechanus. As a bonus action, you can enter this state for 1 minute. For the duration, attack rolls against you can't benefit from advantage, and whenever you make an attack roll, an ability check, or a saving throw, you can treat a roll of 9 or lower on the d20 as a 10.\n\nOnce you use this bonus action, you can't use it again until you finish a long rest, unless you spend 5 sorcery points to use it again."
+        },
+        {
+          "level": 18,
+          "name": "Clockwork Cavalcade",
+          "description": "You summon spirits of order to expunge disorder around you. As an action, you summon the spirits in a 30-foot cube originating from you. The spirits look like modrons or other constructs of your choice. The spirits are intangible and invulnerable, and they create the following effects within the cube before vanishing:\n\n* The spirits restore up to 100 hit points, divided as you choose among any number of creatures of your choice in the cube.\n* Any damaged objects entirely in the cube are repaired instantly.\n* Every spell of 6th level or lower ends on creatures and objects of your choice in the cube.\n\nOnce you use this action, you can't use it again until you finish a long rest, unless you spend 7 sorcery points to use it again."
         }
       ]
     }

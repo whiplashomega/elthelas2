@@ -196,6 +196,25 @@ export default {
       state.currentCharacter.availableslots[level]--;
       state.currentCharacter.castlog.unshift({ ...spell, level: level });
     }
+    if (spell.duration.toLowerCase().includes("concentration")) {
+      let effect = {
+        id: Date.now() + Math.random(),
+        modifier: "concentrating on " + spell.title,
+        concentrating: true
+      };
+      if (spell.duration.toLowerCase().includes("1 minute")) {
+        effect.remaining = 10;
+      } else if (spell.duration.includes("1 hour")) {
+        effect.remaining = 600;
+      } else if (spell.duration.includes("1 round")) {
+        effect.remaining = 1;
+      } else if (spell.duration.includes("10 minutes")) {
+        effect.remaining = 100;
+      } else {
+        effect.remaining = 0;
+      }
+      state.currentCharacter.activemodifiers.push(effect);
+    }
   },
   shortrest: ({ state, getters }) => {
     state.currentCharacter.warlockslotsavailable = getters.warlockSlots;

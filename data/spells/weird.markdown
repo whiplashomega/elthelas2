@@ -3,7 +3,7 @@ layout: post
 title:  "Weird"
 date:   2015-01-10
 source: PHB.288
-tags:   [archivist, wizard, level9, illusion]
+tags:   [archivist, warlock, wizard, level9, illusion]
 ---
 
 **9th-level illusion**

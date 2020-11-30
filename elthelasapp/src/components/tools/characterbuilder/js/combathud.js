@@ -41,10 +41,39 @@ export default {
       return this.character.skills.filter((a) => {
         return a.name === "Stealth";
       })[0];
+    },
+    numConcentrating () {
+      return this.character.activemodifiers.reduce((a, b) => {
+        return a + b.concentrating;
+      }, 0);
     }
   },
   props: { combatModal: Boolean },
   methods: {
+    addActiveModifier () {
+      this.character.activemodifiers.push({
+        id: Date.now() + Math.random(),
+        modifier: "",
+        remaining: 10,
+        concentrating: false
+      });
+    },
+    removeActiveModifier (id) {
+      this.character.activemodifiers.splice(this.character.activemodifiers.findIndex((a) => {
+        return a.id === id;
+      }), 1);
+    },
+    passTime (amount) {
+      this.character.activemodifiers.forEach((a) => {
+        a.remaining -= amount;
+      });
+      this.character.activemodifiers = this.character.activemodifiers.filter((a) => {
+        if (a.remaining <= 0) {
+          alert(a.modifier + " has ended");
+        }
+        return a.remaining > 0;
+      });
+    },
     ...mapActions({}),
     rollCheck (modifier) {
       let res = droll.roll('1d20').total;
