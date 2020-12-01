@@ -109,7 +109,7 @@
               <button @click="passTime(1)" class="btn btn-sm btn-primary">1 Round</button>
               <button @click="passTime(10)" class="btn btn-sm btn-primary">1 Minute</button>
               <button @click="passTime(100)" class="btn btn-sm btn-primary">10 Minutes</button>
-              <button @click="passTime(600)" class="btn btn-sm-btn-primary">1 hour</button>
+              <button @click="passTime(600)" class="btn btn-sm btn-primary">1 hour</button>
               <button @click="passTime(4800)" class="btn btn-sm btn-primary">8 hours</button>
             </div>
           </div>
