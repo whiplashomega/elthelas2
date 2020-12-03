@@ -8,6 +8,7 @@
       for balance reasons.
     </p>
     <ul class="list-inline">
+      <li class="list-inline-item"><button @click="shownClass = 'artificer'" class="racebutton btn btn-default">Artificer</button></li>
       <li class="list-inline-item"><button @click="shownClass = 'barbarian'" class="racebutton btn btn-default">Barbarian</button></li>
       <li class="list-inline-item"><button @click="shownClass ='bard'" class="racebutton btn btn-default">Bard</button></li>
       <li class="list-inline-item"><button @click="shownClass = 'cleric'" class="racebutton btn btn-default">Cleric</button></li>
@@ -23,6 +24,17 @@
       <li class="list-inline-item"><button @click="shownClass = 'wizard'" class="racebutton btn btn-default">Wizard</button></li>
     </ul>
     <div id="raceDetails"></div>
+    <div v-if="shownClass === 'artificer'">
+      <h2>Artificer</h2>
+      <p>For a detailed description of the Artificer class see Tasha's Cauldron of Everything (p9-23)</p>
+      <h3>Artificer Specialists</h3>
+      <ul>
+        <li>Alchemist (TCE p14-15)</li>
+        <li>Armorer (TCE p15-17)</li>
+        <li>Artillerist (TCE p17-18)</li>
+        <li>Battle Smith (TCE p18-20)</li>
+      </ul>
+    </div>
     <div v-if="shownClass === 'barbarian'">
       <h2>Barbarian</h2>
       <p>For a detailed description of the Barbarian class see the Player's Handbook (p46-50)</p>
@@ -31,60 +43,16 @@
       <ul>
         <li>Path of the Ancestral Guardian (XGE p9)</li>
         <li>Path of the Battlerager (SCAG p121)</li>
+        <li>Path of the Beast (TCE p24-25)</li>
         <li>Path of the Berserker (PHB p49)</li>
         <li>Path of the Storm Herald (XGE p10)</li>
         <li>Path of the Totem Warrior (PHB p50)</li>
+        <li>Path of Wild Magic (TCE p25-26)</li>
         <li>Path of the Zealot (XGE p11)</li>
       </ul>
-      <p>
-        You may also ask your DM to consider the following changes to the Barbarian's class features for balance reasons:
-      </p>
-      <h4>Rage</h4>
-      <p>
-        In battle, you fight with primal ferocity. On your turn,
-        you can enter a rage as a bonus action.
-      </p>
-      <p>
-        While raging, you gain the following benefits if you
-        aren’t wearing heavy armor:
-      </p>
-      <ul>
-        <li>You have advantage on Strength checks and Strength saving throws.</li>
-        <li>
-          When you make a melee weapon attack using
-          Strength, you gain a bonus to the damage roll that
-          increases as you gain levels as a barbarian, <strike>as shown
-          in the Rage Damage column of the Barbarian table.</strike>
-          <strong>Equal to 1/4 your barbarian level (rounded up) + 2.</strong>
-        </li>
-        <li>You have resistance to bludgeoning, piercing, and slashing damage.</li>
-      </ul>
-      <table class="table">
-        <tbody>
-          <tr><th>Barbarian Level</th><th>1-4</th><th>5-8</th><th>9-12</th><th>13-16</th><th>17-20</th></tr>
-          <tr><th>Rage Damage</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr>
-        </tbody>
-      </table>
-      <p>
-        If you are able to cast spells, you can’t cast them or
-        concentrate on them while raging.
-      </p>
-      <p>
-        Your rage lasts for 1 minute. It ends early if you are
-        knocked unconscious or if your turn ends and you
-        haven’t attacked a hostile creature since your last turn
-        or taken damage since then. You can also end your rage
-        on your turn as a bonus action.
-      </p>
-      <p>
-        Once you have raged the number of times shown
-        for your barbarian level in the Rages column of the
-        Barbarian table, you must finish a long rest before you
-        can rage again.
-      </p>
       <h3>Barbarians in Elthelas</h3>
       <p>
-        Barbarian tribes exist in a wide variety of areas in Elthelas, particularly in the wild areas far from the cities. Notable places in Elathia include the runic mountains, sword mountains, the wooded region southwest of Purs, the border region between Eldoran, Demal Thor, and Curinor, the far southern region of Waelin, near the Glass Cliff, the Black Peaks, and the central plains of Malinval. In Atyrea, notable regions include the mountains of Sagenheim (since the gnomish cities exist mostly as cavern cities, the surface is largely held by barbarians), the southern ice wastes, throughout Sage, and the Tiaov Coast. In Riftlan, barbarian tribes can be found throughout in all regions north of Zelfir.
+        Barbarian tribes exist in a wide variety of areas in Elthelas, particularly in the wild areas far from the cities. Notable places in Elathia include the runic mountains, sword mountains, the wooded region southwest of Purs, the border region between Eldoran, Demal Thor, and Curinor, the far southern region of Waelin, near the Glass Cliff, the Black Peaks, and the central plains of Malinval. In Atyrea, notable regions include the mountains of Stagenheim (since the gnomish cities exist mostly as cavern cities, the surface is largely held by barbarians), the southern ice wastes, throughout Sage, and the Tiaov Coast. In Riftlan, barbarian tribes can be found throughout in all regions north of Zelfir.
       </p>
     </div>
     <div v-if="shownClass === 'bard'">
@@ -93,6 +61,8 @@
       <h3>Bard College</h3>
       <p>Bards have the following Bard Colleges available to them: </p>
       <ul>
+        <li>College of Creation (TCE p28-29)</li>
+        <li>College of Eloquence (TCE p29-30)</li>
         <li>College of Glamour (XGE p14)</li>
         <li>College of Lore (PHB p54)</li>
         <li>College of Swords (XGE p15)</li>
@@ -116,14 +86,17 @@
         <li><router-link to="/options/domains">Earth (homebrew)</router-link></li>
         <li><router-link to="/options/domains">Fire (homebrew)</router-link></li>
         <li><router-link to="/options/domains">Forge (XGE)</router-link></li>
-        <li>Knowledge (PHB p59-60)</li>
-        <li>Life (PHB p60)</li>
-        <li>Light (PHB p60-61)</li>
-        <li>Nature (PHB p61-62)</li>
-        <li>Tempest (PHB p62)</li>
+        <li><router-link to="/options/domains">Knowledge (PHB p59-60)</router-link></li>
+        <li><router-link to="/options/domains">Life (PHB p60)</router-link></li>
+        <li><router-link to="/options/domains">Light (PHB p60-61)</router-link></li>
+        <li><router-link to="/options/domains">Nature (PHB p61-62)</router-link></li>
+        <li>Order Domain (TCE p31-32)</li>
+        <li>Peace Domain (TCE p32-33)</li>
+        <li><router-link to="/options/domains">Tempest (PHB p62)</router-link></li>
         <li><router-link to="/options/domains">Trade (homebrew)</router-link></li>
-        <li>Trickery (PHB p62-63)</li>
-        <li>War (PHB p63)</li>
+        <li><router-link to="/options/domains">Trickery (PHB p62-63)</router-link></li>
+        <li>Twilight Domain (TCE p34-35)</li>
+        <li><router-link to="/options/domains">War (PHB p63)</router-link></li>
         <li><router-link to="/options/domains">Water (homebrew)</router-link></li>
       </ul>
       <p>Note that a Cleric's domain choices are limited by the God they choose to worship, refer to the Gods section of the reference manual for more information.</p>
@@ -142,6 +115,9 @@
         <li>Circle of the Land (PHB p68-69)</li>
         <li>Circle of the Moon (PHB p69)</li>
         <li>Circle of the Shepherd (XGE p23)</li>
+        <li>Circle of Spores (TCE p36-37)</li>
+        <li>Circle of Stars (TCE p38-39)</li>
+        <li>Circle of Wildfire (TCE p39-40)</li>
       </ul>
     </div>
     <div v-if="shownClass === 'fighter'">
@@ -158,6 +134,8 @@
         <li>Knight of the Realm (see Purple Dragon Knight SCAG p128)</li>
         <li>Samurai (XGE p31)</li>
         <li>Scourer (homebrew, see below)</li>
+        <li>Psi Warrior (TCE p42-44)</li>
+        <li>Rune Knight (TCE p44-45)</li>
       </ul>
       <div>
         <h3>Scourer</h3>
@@ -620,6 +598,8 @@
         <li>Way of the Open Hand (PHB p79-80)</li>
         <li>Way of Shadow (PHB p80)</li>
         <li>Way of the Sun Soul (SCAG p131/XGE p35)</li>
+        <li>Way of Mercy (TCE p49-50)</li>
+        <li>Way of the Astral Self (TCE p50-51)</li>
       </ul>
     </div>
     <div v-if="shownClass === 'paladin'">
@@ -634,10 +614,15 @@
         <li>Oath of Redemption (XGE p38)</li>
         <li>Oath of the Crown (SCAG p132-133)</li>
         <li>Oath of Vengeance (PHB p87-88)</li>
+        <li>Oath of the Watchers (TCE p54-55)</li>
+        <li>Oath of Glory (TCE p53-54)</li>
       </ul>
     </div>
     <div v-if="shownClass === 'ranger'">
       <h2>Ranger</h2>
+      <div class="alert alert-danger">
+        This version of the ranger is included for the purpose of being a reference for continuing characters. Otherwise please use the new and replacement abilities provided by Tasha's Cauldron of Everything to balance the ranger class.
+      </div>
       <p>
         The ranger has been an issue of some consternation for many players, as written in the PHB, many, including myself, consider it to be underpowered compared to the other classes. It
         lacked a real niche. Outclassed in whatever role it might try to fill, whether that be as a scout, skill monkey, striker, tank, etc. There have been many attempts to resolve this, including, famously, multiple revisions of a revised ranger class that appeared in unearthed arcana. In my opinion, however, this revised ranger went too far, especially when taking into account the possibility of multiclass characters, feats, etc. Looking at the analysis that exists about the real problems with the ranger class, and using the revised ranger as inspiration, I have, instead of a complete overhaul of the class, reworked a few of the classes features to be more useful, and largely replaced the beast master archetype with a variation on unearthed arcana's version.  These revisions are below:
@@ -704,145 +689,66 @@
         Ranger's can adhere to one of the following archetypes:
       </p>
       <ul>
-        <li>Beast Master (detailed below)</li>
+        <li>Beast Master (PHB with revisions in TCE p60)</li>
         <li>Hunter (PHB)</li>
         <li>Gloom Stalker (XGE)</li>
         <li>Horizon Walker (XGE)</li>
         <li>Monster Slayer (XGE)</li>
+        <li>Fey Wanderer (TCE p58-59)</li>
+        <li>Swarmkeeper (TCE p59-60)</li>
       </ul>
-      <h3>Beast Master</h3>
+      <h3>Optional Homebrew Features</h3>
+      <p>Ask your DM before taking these features. They are intended to help balance the ranger subclasses.</p>
+      <h4>Hunter Magic</h4>
+      <p>Level 3 Hunter Feature</p>
       <p>
-        Many rangers are more at home in the wilds than in civilization, to the point where animals consider them kin. Rangers of the Beast Conclave
-        develop a close bond with a beast, then further strengthen that bond through the use of magic.
+        This feature is homebrew, get your DM's permission to use it. You learn additional spells when you reach certain levels in this class, as shown on the Hunter Spells table. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.
       </p>
-      <h4>Animal Companion</h4>
-      <p>
-        At 3rd level, you learn to use your magic to create a powerful bond with a creature of the natural world.
-      </p>
-      <p>
-        With 8 hours of work and the expenditure of 50 gp worth of rare herbs and fine food, you call forth an animal from the wilderness to serve as your faithful companion. You can select any beast of cr 1/2 or less that could reasonably appear in the area you are in, see the . However, your DM might pick one of these animals for you, based on the surrounding terrain and on what types of creatures would logically be present in the area (for examples see the Learning Beast Shapes tables in Xanathar's Guide to Everything, pages 24-26).
-      </p>
-      <p>
-        At the end of the 8 hours, your animal companion appears and gains all the benefits of your Companion’s Bond ability. You can have
-        only one animal companion at a time.
-      </p>
-      <p>
-        If your animal companion is ever slain, the magical bond you share allows you to return it to life. With 8 hours of work and the expenditure of
-        25 gp worth of rare herbs and fine food, you call forth your companion’s spirit and use your magic to create a new body for it. You can return
-        an animal companion to life in this manner even if you do not possess any part of its body.
-      </p>
-      <p>
-        If you use this ability to return a former animal companion to life while you have a current animal companion, your current companion
-        leaves you and is replaced by the restored companion.
-      </p>
-      <h4>Companion's Bond</h4>
-      <p>
-        Your animal companion gains a variety of benefits while it is linked to you.
-      </p>
-      <p>
-        The companion obeys your commands as best it can. It rolls for initiative like any other creature, but you determine its actions, decisions,
-        attitudes, and so on. If you are incapacitated or absent, your companion acts on its own.
-      </p>
-      <p>
-        When using your Natural Explorer feature, you and your animal companion can both move stealthily at a normal pace.
-      </p>
-      <aside>
-        <h4>Keeping Track of Proficiency</h4>
-        <p>
-          When you gain your animal companion at 3rd level, its proficiency bonus matches yours at +2. As you gain levels and increase your proficiency bonus, remember
-          that your companion’s proficiency bonus improves as well, and is applied to the following areas: Armor Class, skills, saving throws, attack bonus, and damage rolls.
-        </p>
-      </aside>
-      <p>
-        Your animal companion has abilities and game statistics determined in part by your level. Your companion uses your proficiency bonus rather
-        than its own. In addition to the areas where it normally uses its proficiency bonus, an animal companion also adds its proficiency bonus to its
-        AC and to its damage rolls.
-      </p>
-      <p>
-        Your animal companion gains proficiency in two skills of your choice. It also becomes proficient with all saving throws.
-      </p>
-      <p>
-        For each level you gain after 3rd, your animal companion gains an additional hit die and increases its hit points accordingly.
-      </p>
-      <p>
-        Whenever you gain the Ability Score Improvement class feature, your companion’s abilities also improve. Your companion can
-        increase one ability score of your choice by 2, or it can increase two ability scores of your choice by 1. As normal, your companion can’t increase
-        an ability score above 20 using this feature unless its description specifies otherwise.
-      </p>
-      <p>
-        Your companion shares your alignment, and has a personality trait and a flaw that you can roll for or select from the tables below. Your
-        companion shares your ideal, and its bond is always, "The ranger who travels with me is a beloved companion for whom I would gladly give my life"
-      </p>
-      <p>
-        Your animal companion gains the benefits of your Favored Enemy feature. It uses the favored
-        enemies you selected.
-      </p>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>d6</th><th>Trait</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td><td>I'm dauntless in the face of adversity.</td>
-          </tr>
-          <tr>
-            <td>2</td><td>Threaten my friends, threaten me.</td>
-          </tr>
-          <tr>
-            <td>3</td><td>I stay on alert so others can rest.</td>
-          </tr>
-          <tr>
-            <td>4</td><td>People see an animal and underestimate me. I use that to my advantage.</td>
-          </tr>
-          <tr>
-            <td>5</td><td>I have a knack for showing up in the nick of time.</td>
-          </tr>
-          <tr>
-            <td>6</td><td>I put my friends needs before my own in all things.</td>
-          </tr>
-        </tbody>
+      <table class="classtable table table-striped">
+        <tr>
+          <th>Ranger Level</th><th>Spell</th>
+        </tr>
+        <tr>
+          <td>3rd</td><td>Ensnaring Strike</td>
+        </tr>
+        <tr>
+          <td>5th</td><td>Melf's Acid Arrow</td>
+        </tr>
+        <tr>
+          <td>9th</td><td>Conjure Barrage</td>
+        </tr>
+        <tr>
+          <td>13th</td><td>Guardian of Nature</td>
+        </tr>
+        <tr>
+          <td>17th</td><td>Wrath of Nature</td>
+        </tr>
       </table>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>d6</th><th>Flaw</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td><td>If there's food left unattended, I'll eat it.</td>
-          </tr>
-          <tr>
-            <td>2</td><td>I growl at strangers, and all people except my ranger are strangers to me.</td>
-          </tr>
-          <tr>
-            <td>3</td><td>Any time is a good time for a belly rub.</td>
-          </tr>
-          <tr>
-            <td>4</td><td>I'm deathly afraid of water.</td>
-          </tr>
-          <tr>
-            <td>5</td><td>My idea of hello is a flurry of licks to the face.</td>
-          </tr>
-          <tr><td>6</td><td>I jump on creatures to tell them how much I love them.</td></tr>
-        </tbody>
+      <h4>Beast Master Magic</h4>
+      <p>Level 3 Beast Master Feature</p>
+      <p>
+        This feature is homebrew, get your DM's permission to use it. You learn additional spells when you reach certain levels in this class, as shown on the Beast Master Spells table. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.
+      </p>
+      <table class="classtable table table-striped">
+        <tr>
+          <th>Ranger Level</th><th>Spell</th>
+        </tr>
+        <tr>
+          <td>3rd</td><td>Beast Bond</td>
+        </tr>
+        <tr>
+          <td>5th</td><td>Summon Beast</td>
+        </tr>
+        <tr>
+          <td>9th</td><td>Conjure Animals</td>
+        </tr>
+        <tr>
+          <td>13th</td><td>Giant Insect</td>
+        </tr>
+        <tr>
+          <td>17th</td><td>Commune with Nature</td>
+        </tr>
       </table>
-      <h4>Beast's Defense</h4>
-      <p>
-        At 7th level, while your companion can see you, it has advantage on all saving throws.
-      </p>
-      <h4>Storm of Claws and Fangs</h4>
-      <p>
-        At 11th level, your companion can use its action to make a melee attack against each creature of its choice within 5 feet of it, with a separate
-        attack roll for each target.
-      </p>
-      <h4>Superior Beast's Defense</h4>
-      <p>
-        At 15th level, whenever an attacker that your companion can see hits it with an attack, it can use its reaction to halve the attack’s damage
-        against it.
-      </p>
     </div>
     <div v-if="shownClass === 'rogue'">
       <h2>Rogue</h2>
@@ -857,6 +763,8 @@
         <li>Scout (XGE p47)</li>
         <li>Swashbuckler (SCAG p135-136/XGE p47)</li>
         <li>Thief (PHB p97)</li>
+        <li>Soulknife (TCE p63-65)</li>
+        <li>Phantom (TCE p62-63)</li>
       </ul>
     </div>
     <div v-if="shownClass === 'sorcerer'">
@@ -871,7 +779,236 @@
         <li>Shadow Magic (XGE p50)</li>
         <li>Sorceron Bloodline (homebrew, see below)</li>
         <li>Storm Sorcery (XGE p51)</li>
+        <li>Clockwork Soul (TCE p68-69)</li>
+        <li>Aberrant Mind (TCE p66-68)</li>
       </ul>
+      <h3>Optional Class Features</h3>
+      <p>Ask your DM before taking these features. They are intended to help balance the sorcerer subclasses.</p>
+      <h4>Divine Magic (Alternate)</h4>
+      <p>1st level divine soul feature</p>
+      <p>This replaces the existing Divine Magic feature.</p>
+      <p>
+        Your link to the divine allows you to learn spells from the cleric class. When your Spellcasting feature lets you learn or replace a sorcerer cantrip or a sorcerer spell of 1st level or higher, you can choose the new spell from the cleric spell list or the sorcerer spell list. You must otherwise obey all the restrictions for selecting the spell, and it becomes a sorcerer spell for you.
+      </p>
+      <p>
+        You learn additional spells when you reach certain levels in this class. Select two affinities from the following list: Good, Evil, Law, Chaos, Neutrality. Your chosen affinities can be different from your alignment, but you may not choose opposite ends of the same axis. You learn the spells from the tables below corresponding to your chosen affinities. Each spell counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.
+      </p>
+      <h5>Good Affinity Spells</h5>
+      <table class="classtable table table-striped">
+        <tr>
+          <th>Sorcerer Level</th><th>Spell</th>
+        </tr>
+        <tr><td>1st</td><td>Cure Wounds</td></tr>
+        <tr><td>3rd</td><td>Prayer of Healing</td></tr>
+        <tr><td>5th</td><td>Revivify</td></tr>
+        <tr><td>7th</td><td>Death Ward</td></tr>
+        <tr><td>9th</td><td>Greater Restoration</td></tr>
+      </table>
+      <h5>Evil Affinity Spells</h5>
+      <table class="classtable table table-striped">
+        <tr>
+          <th>Sorcerer Level</th><th>Spell</th>
+        </tr>
+        <tr><td>1st</td><td>Inflict Wounds</td></tr>
+        <tr><td>3rd</td><td>Ray of Enfeeblement</td></tr>
+        <tr><td>5th</td><td>Animate Dead</td></tr>
+        <tr><td>7th</td><td>Blight</td></tr>
+        <tr><td>9th</td><td>Danse Macabre</td></tr>
+      </table>
+      <h5>Law Affinity Spells</h5>
+      <table class="classtable table table-striped">
+        <tr>
+          <th>Sorcerer Level</th><th>Spell</th>
+        </tr>
+        <tr><td>1st</td><td>Bless</td></tr>
+        <tr><td>3rd</td><td>Calm Emotions</td></tr>
+        <tr><td>5th</td><td>Remove Curse</td></tr>
+        <tr><td>7th</td><td>Banishment</td></tr>
+        <tr><td>9th</td><td>Planar Binding</td></tr>
+      </table>
+      <h5>Chaos Affinity Spells</h5>
+      <table class="classtable table table-striped">
+        <tr>
+          <th>Sorcerer Level</th><th>Spell</th>
+        </tr>
+        <tr><td>1st</td><td>Bane</td></tr>
+        <tr><td>3rd</td><td>Crown of Madness</td></tr>
+        <tr><td>5th</td><td>Curse</td></tr>
+        <tr><td>7th</td><td>Freedom of Movement</td></tr>
+        <tr><td>9th</td><td>Destructive Wave</td></tr>
+      </table>
+      <h5>Neutrality Affinity Spells</h5>
+      <table class="classtable table table-striped">
+        <tr>
+          <th>Sorcerer Level</th><th>Spell</th>
+        </tr>
+        <tr><td>1st</td><td>Protection from Evil and Good</td></tr>
+        <tr><td>3rd</td><td>Zone of Truth</td></tr>
+        <tr><td>5th</td><td>Spirit Guardians</td></tr>
+        <tr><td>7th</td><td>Divination</td></tr>
+        <tr><td>9th</td><td>Dispel Evil and Good</td></tr>
+      </table>
+      <h4>Wilder Magic</h4>
+      <p>1st level Wild Mage feature</p>
+      <p>
+        This feature is homebrew, get your DM's permission to use it. As an action you can expend a spell slot of 5th level or lower to attempt to cast a Sorcerer spell you do not know of equal or lower level to the spell slot you expended. Before you resolve the spell, you must make a Charisma saving throw. The DC is 10 + twice the level of the spell slot you expended. On a successful save, you cast the spell as normal. On a failed save, the spell fails and instead you trigger a Wild Magic Surge.\n\nOnce you use this feature you cannot do so again until you finish a short or long rest.
+      </p>
+      <h4>Draconic Magic</h4>
+      <p>1st level Draconic Ancestry feature</p>
+      <p>
+        This feature is homebrew, get your DM's permission to use it. You learn additional spells when you reach certain levels in this class. Each spell counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know. You learn the spells from the Draconic Spells table below, as well as those on the table of your draconic ancestry.
+      </p>
+      <h5>Draconic Spells</h5>
+      <table class="classtable table table-striped">
+        <tr>
+          <th>Sorcerer Level</th><th>Spell</th>
+        </tr>
+        <tr><td>1st</td><td>Command</td></tr>
+        <tr><td>3rd</td><td>Dragon's Breath</td></tr>
+        <tr><td>5th</td><td>Fear</td></tr>
+        <tr><td>7th</td><td>Elemental Bane</td></tr>
+        <tr><td>9th</td><td>Dominate Person</td></tr>
+      </table>
+      <h5>Black Dragon Spells</h5>
+      <table class="classtable table table-striped">
+        <tr>
+          <th>Sorcerer Level</th><th>Spell</th>
+        </tr>
+        <tr><td>1st</td><td>Cause Fear</td></tr>
+        <tr><td>3rd</td><td>Melf's Acid Arrow</td></tr>
+        <tr><td>5th</td><td>Water Breathing</td></tr>
+        <tr><td>7th</td><td>Vitriolic Sphere</td></tr>
+        <tr><td>9th</td><td>Insect Plague</td></tr>
+      </table>
+      <h5>Blue Dragon Spells</h5>
+      <table class="classtable table table-striped">
+        <tr>
+          <th>Sorcerer Level</th><th>Spell</th>
+        </tr>
+        <tr><td>1st</td><td>Witch Bolt</td></tr>
+        <tr><td>3rd</td><td>Dust Devil</td></tr>
+        <tr><td>5th</td><td>Lightning Bolt</td></tr>
+        <tr><td>7th</td><td>Storm Sphere</td></tr>
+        <tr><td>9th</td><td>Wall of Stone</td></tr>
+      </table>
+      <h5>Brass Dragon Spells</h5>
+      <table class="classtable table table-striped">
+        <tr>
+          <th>Sorcerer Level</th><th>Spell</th>
+        </tr>
+        <tr><td>1st</td><td>Sleep</td></tr>
+        <tr><td>3rd</td><td>Suggestion</td></tr>
+        <tr><td>5th</td><td>Windwall</td></tr>
+        <tr><td>7th</td><td>Charm Monster</td></tr>
+        <tr><td>9th</td><td>Telepathic Bond</td></tr>
+      </table>
+      <h5>Bronze Dragon Spells</h5>
+      <table class="classtable table table-striped">
+        <tr>
+          <th>Sorcerer Level</th><th>Spell</th>
+        </tr>
+        <tr><td>1st</td><td>Thunderwave</td></tr>
+        <tr><td>3rd</td><td>Gust of Wind</td></tr>
+        <tr><td>5th</td><td>Tidal Wave</td></tr>
+        <tr><td>7th</td><td>Watery Sphere</td></tr>
+        <tr><td>9th</td><td>Control Winds</td></tr>
+      </table>
+      <h5>Copper Dragon Spells</h5>
+      <table class="classtable table table-striped">
+        <tr>
+          <th>Sorcerer Level</th><th>Spell</th>
+        </tr>
+        <tr><td>1st</td><td>Tasha's Hideous Laughter</td></tr>
+        <tr><td>3rd</td><td>Spike Growth</td></tr>
+        <tr><td>5th</td><td>Slow</td></tr>
+        <tr><td>7th</td><td>Confusion</td></tr>
+        <tr><td>9th</td><td>Geas</td></tr>
+      </table>
+      <h5>Gold Dragon Spells</h5>
+      <table class="classtable table table-striped">
+        <tr>
+          <th>Sorcerer Level</th><th>Spell</th>
+        </tr>
+        <tr><td>1st</td><td>Shield</td></tr>
+        <tr><td>3rd</td><td>Scorching Ray</td></tr>
+        <tr><td>5th</td><td>Counterspell</td></tr>
+        <tr><td>7th</td><td>Polymorph</td></tr>
+        <tr><td>9th</td><td>Dream</td></tr>
+      </table>
+      <h5>Green Dragon Spells</h5>
+      <table class="classtable table table-striped">
+        <tr>
+          <th>Sorcerer Level</th><th>Spell</th>
+        </tr>
+        <tr><td>1st</td><td>Ray of Sickness</td></tr>
+        <tr><td>3rd</td><td>Invisibility</td></tr>
+        <tr><td>5th</td><td>Stinking Cloud</td></tr>
+        <tr><td>7th</td><td>Hallucinatory Terrain</td></tr>
+        <tr><td>9th</td><td>Cloudkill</td></tr>
+      </table>
+      <h5>Red Dragon Spells</h5>
+      <table class="classtable table table-striped">
+        <tr>
+          <th>Sorcerer Level</th><th>Spell</th>
+        </tr>
+        <tr><td>1st</td><td>Burning Hands</td></tr>
+        <tr><td>3rd</td><td>Aganazzar's Scorcher</td></tr>
+        <tr><td>5th</td><td>Fireball</td></tr>
+        <tr><td>7th</td><td>Wall of Fire</td></tr>
+        <tr><td>9th</td><td>Immolation</td></tr>
+      </table>
+      <h5>Silver Dragon Spells</h5>
+      <table class="classtable table table-striped">
+        <tr>
+          <th>Sorcerer Level</th><th>Spell</th>
+        </tr>
+        <tr><td>1st</td><td>Identify</td></tr>
+        <tr><td>3rd</td><td>Hold Person</td></tr>
+        <tr><td>5th</td><td>Leomund's Tiny Hut</td></tr>
+        <tr><td>7th</td><td>Ice Storm</td></tr>
+        <tr><td>9th</td><td>Legend Lore</td></tr>
+      </table>
+      <h5>White Dragon Spells</h5>
+      <table class="classtable table table-striped">
+        <tr>
+          <th>Sorcerer Level</th><th>Spell</th>
+        </tr>
+        <tr><td>1st</td><td>Ice Knife</td></tr>
+        <tr><td>3rd</td><td>Snilloc's Snowball Swarm</td></tr>
+        <tr><td>5th</td><td>Sleet Storm</td></tr>
+        <tr><td>7th</td><td>Fireshield (chill shield only)</td></tr>
+        <tr><td>9th</td><td>Cone of Cold</td></tr>
+      </table>
+      <h4>Shadowfell Magic</h4>
+      <p>1st level Shadow Magic feature</p>
+      <p>
+        his feature is homebrew, get your DM's permission to use it. You learn additional spells when you reach certain levels in this class, as shown on the Shadowfell Spells table. Each spell counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.\n* 1st - inflict wounds, false life\n* 3rd - pass without trace, shadow blade\n* 5th - nondetection, summon shadowspawn\n* 7th - blight, shadow of moil\n* 9th - antilife shell, creation
+      </p>
+      <table class="classtable table table-striped">
+        <tr>
+          <th>Sorcerer Level</th><th>Spell</th>
+        </tr>
+        <tr><td>1st</td><td>Inflict Wounds, False Life</td></tr>
+        <tr><td>3rd</td><td>Pass Without Trace, Shadow Blade</td></tr>
+        <tr><td>5th</td><td>Nondetection, Summon Shadowspawn</td></tr>
+        <tr><td>7th</td><td>Blight, Shadow of Moil</td></tr>
+        <tr><td>9th</td><td>Antilife Shell, Creation</td></tr>
+      </table>
+      <h4>Storm Magic</h4>
+      <p>1st level Storm Sorcery feature</p>
+      <p>
+        This feature is homebrew, get your DM's permission to use it. You learn additional spells when you reach certain levels in this class, as shown on the Storm Spells table. Each spell counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.
+      </p>
+      <table class="classtable table table-striped">
+        <tr>
+          <th>Sorcerer Level</th><th>Spell</th>
+        </tr>
+        <tr><td>1st</td><td>Fog Cloud, Thunderwave</td></tr>
+        <tr><td>3rd</td><td>Shatter, Skywrite</td></tr>
+        <tr><td>5th</td><td>Call Lightning, Fly</td></tr>
+        <tr><td>7th</td><td>Ice Storm, Storm Sphere</td></tr>
+        <tr><td>9th</td><td>Control Winds, Destructive Wave</td></tr>
+      </table>
       <h3>Sorceron Bloodline</h3>
       <p>
         The descendents of the Sorceron often show the physical traits of their ancient magical celestial ancestors
@@ -881,11 +1018,21 @@
         using their magical abilities rarely if at all, and thus not developing in the sorcerer class, but those
         that do can choose the Sorceron Bloodline for their Sorcerous Origin.
       </p>
-      <h4>Force Affinity</h4>
+      <h4>Force Magic</h4>
       <p>
-        At 1st level, the blood of the Sorceron gives the Sorceron blooded a special affinity for spells that manipulate pure
-        magical force.  They learn the magic missile, mage armor, and shield spells in addition to their normal spells known.
+        The blood of the Sorceron gives the Sorceron blooded a special affinity for spells that manipulate pure magical force. You learn additional spells when you reach certain levels in this class, as shown on the Sorceron Spells table. Each spell counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.
       </p>
+      <h5>Sorceron Spells Table</h5>
+      <table class="classtable table table-striped">
+        <tr>
+          <th>Sorcerer Level</th><th>Spells</th>
+        </tr>
+        <tr><td>1st</td><td>Magic Missile, Mage Armor</td></tr>
+        <tr><td>3rd</td><td>Spiritual Weapon, Misty Step</td></tr>
+        <tr><td>5th</td><td>Blink, Leomund's Tiny Hut</td></tr>
+        <tr><td>7th</td><td>Dimension Door, Banishment</td></tr>
+        <tr><td>9th</td><td>Bigby's Hand, Wall of Force</td></tr>
+      </table>
       <h4>Enhanced Force Spells</h4>
       <p>
         When the Sorceron Blooded casts the magic missile spell, each missile does 1d4 + 2 in damage instead of its normal damage.
@@ -917,6 +1064,8 @@
         <li>The Great Old One (PHB p109-110)</li>
         <li>The Hexblade (XGE p55)</li>
         <li>The Undying (SCAG p139-140)</li>
+        <li>The Genie (TCE p73-75)</li>
+        <li>The Fathomless (TCE p72-73)</li>
       </ul>
     </div>
     <div v-if="shownClass === 'wizard'">
@@ -925,7 +1074,8 @@
       <h3>Arcane Tradition</h3>
       <p>Wizards have the following Arcane Traditions available to them:</p>
       <ul>
-        <li>Bladesinging (SCAG 141-142)</li>
+        <li>Bladesinging (TCE p75-77)</li>
+        <li>Order of Scribes (TCE p77-78)</li>
         <li>School of Abjuration (PHB p115-116)</li>
         <li>School of Conjuration (PHB p116)</li>
         <li>School of Divination (PHB p116-117)</li>
@@ -936,6 +1086,111 @@
         <li>School of Transmutation (PHB p119)</li>
         <li>War Magic (XGE p59)</li>
       </ul>
+      <h3>Optional Class Features</h3>
+      <p>Ask your DM before taking these features. They are intended to help balance the wizard against the power creep of other casters, and provide additional incentive to adhere to the flavor of the various sublcasses.</p>
+      <h4>Expanded Spellbook</h4>
+      <p>Level 2 Wizard Feature</p>
+      <p>This feature is homebrew, get your DM's permission to use it. You gain additional spells based on your particular specialty. As part of your studies you have memorized certain spells common to your field. Add the following spells to your spellbook at the level listed from the chart relevant to your Wizard School. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells."
+        },</p>
+        <h5>Bladesinging</h5>
+        <table>
+          <tr><th>Wizard Level</th><th>Spell</th></tr>
+          <tr><td>2nd</td><td>Longstrider</td></tr>
+          <tr><td>3rd</td><td>Shadow Blade</td></tr>
+          <tr><td>5th</td><td>Haste</td></tr>
+          <tr><td>7th</td><td>Stoneskin</td></tr>
+          <tr><td>9th</td><td>Steel Wind Strike</td></tr>
+        </table>
+        <h5>Order of Scribes</h5>
+        <table>
+          <tr><th>Wizard Level</th><th>Spell</th></tr>
+          <tr><td>2nd</td><td>Illusory Script</td></tr>
+          <tr><td>3rd</td><td>Augury</td></tr>
+          <tr><td>5th</td><td>Glyph of Warding</td></tr>
+          <tr><td>7th</td><td>Arcane Eye</td></tr>
+          <tr><td>9th</td><td>Modify Memory</td></tr>
+        </table>
+        <h5>School of Abjuration</h5>
+        <table>
+          <tr><th>Wizard Level</th><th>Spell</th></tr>
+          <tr><td>2nd</td><td>Mage Armor</td></tr>
+          <tr><td>3rd</td><td>Protection from Poison</td></tr>
+          <tr><td>5th</td><td>Magic Circle</td></tr>
+          <tr><td>7th</td><td>Freedom of Movement</td></tr>
+          <tr><td>9th</td><td>Dispel Evil and Good</td></tr>
+        </table>
+        <h5>School of Conjuration</h5>
+        <table>
+          <tr><th>Wizard Level</th><th>Spell</th></tr>
+          <tr><td>2nd</td><td>Grease</td></tr>
+          <tr><td>3rd</td><td>Misty Step</td></tr>
+          <tr><td>5th</td><td>Summon Shadowspawn</td></tr>
+          <tr><td>7th</td><td>Dimension Door</td></tr>
+          <tr><td>9th</td><td>Cloudkill</td></tr>
+        </table>
+        <h5>School of Divination</h5>
+        <table>
+          <tr><th>Wizard Level</th><th>Spell</th></tr>
+          <tr><td>2nd</td><td>Detect Magic</td></tr>
+          <tr><td>3rd</td><td>See Invisibility</td></tr>
+          <tr><td>5th</td><td>Tongues</td></tr>
+          <tr><td>7th</td><td>Locate Creature</td></tr>
+          <tr><td>9th</td><td>Legend Lore</td></tr>
+        </table>
+        <h5>School of Enchantment</h5>
+        <table>
+          <tr><th>Wizard Level</th><th>Spell</th></tr>
+          <tr><td>2nd</td><td>Command</td></tr>
+          <tr><td>3rd</td><td>Calm Emotions</td></tr>
+          <tr><td>5th</td><td>Enemies Abound</td></tr>
+          <tr><td>7th</td><td>Dominate Beast</td></tr>
+          <tr><td>9th</td><td>Hold Monster</td></tr>
+        </table>
+        <h5>School of Evocation</h5>
+        <table>
+          <tr><th>Wizard Level</th><th>Spell</th></tr>
+          <tr><td>2nd</td><td>Chromatic Orb</td></tr>
+          <tr><td>3rd</td><td>Shatter</td></tr>
+          <tr><td>5th</td><td>Melf's Minute Meteors</td></tr>
+          <tr><td>7th</td><td>Ice Storm</td></tr>
+          <tr><td>9th</td><td>Wall of Stone</td></tr>
+        </table>
+        <h5>School of Illusion</h5>
+        <table>
+          <tr><th>Wizard Level</th><th>Spell</th></tr>
+          <tr><td>2nd</td><td>Silent Image</td></tr>
+          <tr><td>3rd</td><td>Invisibility</td></tr>
+          <tr><td>5th</td><td>Fear</td></tr>
+          <tr><td>7th</td><td>Hallucinatory Terrain</td></tr>
+          <tr><td>9th</td><td>Mislead</td></tr>
+        </table>
+        <h5>School of Necromancy Spells</h5>
+        <table>
+          <tr><th>Wizard Level</th><th>Spell</th></tr>
+          <tr><td>2nd</td><td>False Life</td></tr>
+          <tr><td>3rd</td><td>Ray of Enfeeblement</td></tr>
+          <tr><td>5th</td><td>Summon Undead</td></tr>
+          <tr><td>7th</td><td>Blight</td></tr>
+          <tr><td>9th</td><td>Negative Energy Flood</td></tr>
+        </table>
+        <h5>School of Transmutation</h5>
+        <table>
+          <tr><th>Wizard Level</th><th>Spell</th></tr>
+          <tr><td>2nd</td><td>Feather Fall</td></tr>
+          <tr><td>3rd</td><td>Enhance Ability</td></tr>
+          <tr><td>5th</td><td>Fly</td></tr>
+          <tr><td>7th</td><td>Polymorph</td></tr>
+          <tr><td>9th</td><td>Transmute Rock</td></tr>
+        </table>
+        <h5>War Magic</h5>
+        <table>
+          <tr><th>Wizard Level</th><th>Spell</th></tr>
+          <tr><td>2nd</td><td>Magic Missile</td></tr>
+          <tr><td>3rd</td><td>Flaming Sphere</td></tr>
+          <tr><td>5th</td><td>Counterspell</td></tr>
+          <tr><td>7th</td><td>Storm Sphere</td></tr>
+          <tr><td>9th</td><td>Dawn</td></tr>
+        </table>
     </div>
     <div>
       <h3>

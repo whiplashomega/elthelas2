@@ -150,13 +150,16 @@
     <p></p>
     <h4>The Nothingness Beyond</h4>
     <p><strong>Home of: </strong> Zhuul</p>
-    <p></p>
+    <p>Where the Far Realm is a land full of madness beyond comprehension, aberrations, and beings beyond the comprehension of mortals, the nothingness beyond is a great empty space. A void where nothing at all can survive. Zhuul embodies this concept of nothingness, and as such has no real home on this plane, but rather encompasses all of it, and none of it. For he is nothingness, and The Nothingness Beyond contains nothing.</p>
     <h4>The Far Realm</h4>
     <p><strong>Home of: </strong> Fa'atasi</p>
+    A realm of twisted minds, madness, and beings beyond the comprehension of mortals. Ocassionally a being from here will become interested in the mortal realm and reach out to touch mortal minds. These beings take many forms and titles, and their interests do not align with anything in particular besides their own curiosity, but those touched by them invariably suffer insanities that put them beyond the mortal.
     <p></p>
     <h4>Sanguinus</h4>
     <p><strong>Home of: </strong> Vrasja, Odio</p>
-    <p></p>
+    <p>
+      The realm of blood, ruled by Vrasja and her daughter Odio. This realm is dominated by creatures bent on murder and hatred, both of mortals, and each other. Unlike many of the dark gods, Vrasja and Odio have never sought to expand their influence, but instead take great delight in twisting the minds of mortals against each other, and thus drawing more murderous, hateful souls into their grasp. Their shared palace is dominated by a great arena, where their latest aquisitions battle in brutal blood sport. However, death on this plane is not release, rather those who die here are reborn, their minds slowly becoming more and more dominated by hatred and a lust for blood, until each continually craves their next chance in the arena so that they can wreak havoc once again.
+    </p>
     <h4>Morbustos</h4>
     <p><strong>Home of: </strong> Ganarea</p>
     <p></p>
