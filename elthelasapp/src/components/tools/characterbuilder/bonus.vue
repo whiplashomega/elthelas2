@@ -123,6 +123,12 @@
         <td><input type="number" class="charsheet-num" v-model="character.attBonus[5]" /></td>
       </tr>
     </table>
+    <h5>Bonus Spells Known</h5>
+    <table class="table table-sm">
+      <tr v-for="(cls, index) in character.charclasses" :key="index">
+        <td>{{ cls.thisclass.name }}</td><td><input type="number" v-model="cls.bonusknown" class="charsheet-num" /></td>
+      </tr>
+    </table>
     <h5>Damage Reduction</h5>
     <table class="table table-sm">
       <tr>
