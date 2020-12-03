@@ -21,8 +21,9 @@ export default function() {
       },
       level: 0,
       savedcstat: 0,
-      selsubclass: { castermult: 0, features: [] } }
-    ],
+      selsubclass: { castermult: 0, features: [] },
+      bonusknown: 0 
+    }],
     race: { stats: [0, 0, 0, 0, 0, 0], speed: [0, 0, 0, 0, 0] },
     background: { feature: { show: false, description: "", name: "" }, skills: [], tools: [] },
     alignment: "",

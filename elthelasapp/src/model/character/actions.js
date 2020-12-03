@@ -147,7 +147,7 @@ export default {
     character.weight = character.race.averageweight + " lbs";
   },
   addclass ({ state }) {
-    state.currentCharacter.charclasses.push({ thisclass: { name: "", subclass: [] }, level: 0, selsubclass: { castermult: 0, features: [] }, savedcstat: 0 });
+    state.currentCharacter.charclasses.push({ thisclass: { name: "", subclass: [] }, level: 0, selsubclass: { castermult: 0, features: [] }, savedcstat: 0, bonusknown: 0 });
   },
   removeclass ({ state }, i) {
     if (state.currentCharacter.charclasses.length > 1) {

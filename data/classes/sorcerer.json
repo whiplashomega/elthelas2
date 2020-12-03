@@ -69,6 +69,11 @@
    "description": "As magic flows through your body, it causes physical traits of your dragon ancestors to emerge. At 1st level, your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class.\n\nAdditionally, parts of your skin are covered by a thin sheen of dragon-like scales. When you aren’t wearing armor, your AC equals 13 + your Dexterity modifier."
     },
     {
+      "level": 1,
+      "name": "Draconic Magic",
+      "description": "This feature is homebrew, get your DM's permission to use it. You learn additional spells when you reach certain levels in this class. Each spell counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know. You learn the spells from the Draconic Spells table below, as well as those on the table of your draconic ancestry.\n\n##### Draconic Spells\n\n* 1st - command\n* 3rd - dragon's breath\n* 5th - fear\n* 7th - elemental bane\n* 9th - dominate person.\n\n##### Black Dragon Spells\n\n* 1st - cause fear\n* 3rd - acid arrow\n* 5th - water breathing\n* 7th - vitriolic sphere\n* 9th - insect plague\n\n##### Blue Dragon Spells\n\n* 1st - withbolt\n* 3rd - dust devil\n* 5th - lightning bolt\n* 7th - storm sphere\n* 9th - wall of stone\n\n##### Brass Dragon Spells\n\n* 1st - sleep\n* 3rd - suggestion\n* 5th - windwall\n* 7th - charm monster\n* 9th - telepathic bond\n\n##### Bronze Dragon Spells\n\n* 1st - thunderwave\n* 3rd - gust of wind\n* 5th - tidal wave\n* 7th - watery sphere\n* 9th - control winds\n\n##### Copper Dragon Spells\n\n* 1st - hideous laughter\n* 3rd - spike growth\n* 5th - slow\n* 7th - confusion\n* 9th - geas\n\n##### Gold Dragon Spells\n\n* 1st - shield\n* 3rd - scorching ray\n* 5th - counterspell\n* 7th - polymorph\n* 9th - dream\n\n##### Green Dragon Spells\n* 1st - ray of sickness\n* 3rd - invisibility\n* 5th - stinking cloud\n* 7th - hallucinatory terrain\n* 9th - cloudkill\n\n##### Red Dragon Spells\n\n* 1st - burning hands\n* 3rd - Aganazzar's scorcher\n* 5th - fireball\n* 7th - wall of fire\n* 9th - immolation\n\n##### Silver Dragon Spells\n\n* 1st - identify\n* 3rd - hold person\n* - 5th - leomunds tiny hut\n* 7th - ice storm\n* 9th - legend lore\n\n##### White Dragon Spells\n\n* 1st - ice knife\n* 3rd - snowball swarm\n* 5th - sleet storm\n* 7th - fireshield (chill shield only)\n* 9th - cone of cold"
+    },
+    {
    "level": 6,
    "name": "Elemental Affinity",
    "description": "Starting at 6th level, when you cast a spell that deals damage of the type associated with your draconic ancestry, you can add your Charisma modifier to one damage roll of that spell.\n\nAt the same time, you can spend 1 sorcery point to gain resistance to that damage type for 1 hour."
@@ -100,6 +105,11 @@
    "description": "Starting at 1st level, you can manipulate the forces of chance and chaos to gain advantage on one attack roll, ability check, or saving throw. Once you do so, you must finish a long rest before you can use this feature again. Any time before you regain the use of this feature, the DM can have you roll on the W ild Magic Surge table immediately after you cast a sorcerer spell of 1st level or higher. You then regain the use of this feature"
     },
     {
+      "level": 1,
+      "name": "Wilder Magic",
+      "description": "This feature is homebrew, get your DM's permission to use it. As an action you can expend a spell slot of 5th level or lower to attempt to cast a Sorcerer spell you do not know of equal or lower level to the spell slot you expended. Before you resolve the spell, you must make a Charisma saving throw. The DC is 10 + twice the level of the spell slot you expended. On a successful save, you cast the spell as normal. On a failed save, the spell fails and instead you trigger a Wild Magic Surge.\n\nOnce you use this feature you cannot do so again until you finish a short or long rest."
+    },
+    {
    "level": 6,
    "name": "Bend Luck",
    "description": "Starting at 6th level, you have the ability to twist fate using your wild magic. W hen another creature you can see makes an attack roll, an ability check, or a saving throw, you can use your reaction and spend 2 sorcery points to roll 1d4 and apply the number rolled as a bonus or penalty (your choice) to the creature’s roll. You can do so after the creature rolls but before any effects of the roll occur."
@@ -126,9 +136,14 @@
       "description": "Your link to the divine allows you to learn spells from the cleric class. When your Spellcasting feature lets you learn or replace a sorcerer cantrip or a sorcerer spell of 1st level or higher, you can choose the new spell from the cleric spell list or the sorcerer spell list. You must otherwise obey all the restrictions for selecting the spell, and it becomes a sorcerer spell for you.\n\nIn addition, choose an affinity for the source of your divine power: good, evil, law, chaos, or neutrality. You learn an additional spell based on that affinity, as shown below. It is a sorcerer spell for you, but it doesn’t count against your number of sorcerer spells known. If you later replace this spell, you must replace it with a Spell from the cleric spell list.\n\n*Good - cure wounds\n*Evil - inflict wounds\n*Law - bless\n*Chaos - bane\n*Neutrality - protection from evil and good."
        },
        {
-      "level": 1,
-      "name": "Favored by the Gods",
-      "description": "Starting at 1st level, divine power guards your destiny. Ifyou fail a saving throw or miss with an attack roll, you can roll 2d4 and add it to the total, possibly changing the outcome. Once you use this feature, you can’t use it again until you finish a short or long rest."
+         "level": 1,
+         "name": "Divine Magic (Alternate)",
+         "description": "Your link to the divine allows you to learn spells from the cleric class. When your Spellcasting feature lets you learn or replace a sorcerer cantrip or a sorcerer spell of 1st level or higher, you can choose the new spell from the cleric spell list or the sorcerer spell list. You must otherwise obey all the restrictions for selecting the spell, and it becomes a sorcerer spell for you.\n\nYou learn additional spells when you reach certain levels in this class. Select two affinities from the following list: Good, Evil, Law, Chaos, Neutrality. Your chosen affinities can be different from your alignment, but you may not choose opposite ends of the same axis. You learn the spells from the tables below corresponding to your chosen affinities. Each spell counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.\n\n##### Good Affinity Spells\n\n* 1st - cure wounds\n* 3rd - prayer of healing\n* 5th - revivify\n* 7th - death ward\n* 9th - greater restoration\n\n##### Evil Affinity Spells\n\n* 1st - inflict wounds\n* 3rd - ray of enfeeblement\n* 5th - animate dead\n* 7th - blight\n* 9th - danse macabre\n\n##### Law Affinity Spells\n\n* 1st - bless\n* 3rd - calm emotions\n* 5th - remove curse\n* 7th - banishment\n* 9th - planar binding\n\n##### Chaos Affinity Spells\n\n* 1st - bane\n* 3rd - crown of madness\n* 5th - curse\n* 7th - freedom of movement\n* 9th - destructive wave\n\n##### Neutrality Affinity Spells\n\n* 1st - protection from evil and good\n* 3rd - zone of truth\n* 5th - spirit guardians\n* 7th - diviniation\n* 9th - dispel evil and good"
+       },
+       {
+        "level": 1,
+        "name": "Favored by the Gods",
+        "description": "Starting at 1st level, divine power guards your destiny. Ifyou fail a saving throw or miss with an attack roll, you can roll 2d4 and add it to the total, possibly changing the outcome. Once you use this feature, you can’t use it again until you finish a short or long rest."
        },
        {
       "level": 6,
@@ -153,8 +168,8 @@
      "features": [
         {
          "level": 1,
-         "name": "Force Affinity",
-         "description": "At 1st level, the blood of the Sorceron gives the Sorceron blooded a special affinity for spells that manipulate pure magical force. They learn the magic missile, mage armor, and shield spells in addition to their normal spells known."
+         "name": "Force Magic",
+         "description": "The blood of the Sorceron gives the Sorceron blooded a special affinity for spells that manipulate pure magical force. You learn additional spells when you reach certain levels in this class, as shown on the Sorceron Spells table. Each spell counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.\n\n* 1st - Magic Missile, Mage Armor\n* 3rd - spiritual weapon, misty step\n* 5th - blink, leomund's tiny hut\n* 7th - Dimension Door, Banishment\n* 9th - Bigby's Hand, Wall of Force"
         },
         {
        "level": 1,
@@ -189,6 +204,11 @@
         },
         {
           "level": 1,
+          "name": "Shadowfell Magic",
+          "description": "This feature is homebrew, get your DM's permission to use it. You learn additional spells when you reach certain levels in this class, as shown on the Shadowfell Spells table. Each spell counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.\n* 1st - inflict wounds, false life\n* 3rd - pass without trace, shadow blade\n* 5th - nondetection, summon shadowspawn\n* 7th - blight, shadow of moil\n* 9th - antilife shell, creation"
+        },
+        {
+          "level": 1,
           "name": "Strength of the Grave",
           "description": "Starting at lst level, your existence in a twilight state between life and death makes you difficult to defeat. When damage reduces you to 0 hit points, you can make a Charisma saving throw (DC 5 + the damage taken). On a success, you instead drop to 1 hit point. You can’t use this feature if you are reduced to 0 hit points by radiant damage or by a critical hit.\n\nAfter the saving throw succeeds, you can’t use this feature again until you finish a long rest."
         },
@@ -209,7 +229,7 @@
         }
       ]
    },
-    {
+   {
       "name": "Storm Sorcery",
       "castermult": 1,
       "features": [
@@ -217,6 +237,11 @@
           "level": 1,
           "name": "Wind Speaker",
           "description": "The arcane magic you command is infused with elemental air. You can speak, read, and write Primordial. Knowing this language allows you to understand and be understood by those who speak its dialects: Aquan, Auran, Ignan, and Terran."
+        },
+        {
+          "level": 1,
+          "name": "Storm Magic",
+          "description": "This feature is homebrew, get your DM's permission to use it. You learn additional spells when you reach certain levels in this class, as shown on the Storm Spells table. Each spell counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.\n\n* 1st - fog cloud, thunderwave\n* 3rd - shatter, skywrite\n* 5th - call lightning, fly\n* 7th - ice storm, storm sphere\n* 9th - control winds, destructive wave"
         },
         {
           "level": 1,
@@ -245,7 +270,7 @@
         }
       ]
     },
-    {
+   {
       "name": "Aberrant Mind",
       "castermult": 1,
       "features": [
@@ -281,7 +306,7 @@
         }
       ]
     },
-    {
+   {
       "name": "Clockwork Soul",
       "castermult": "1",
       "features": [

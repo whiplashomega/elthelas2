@@ -10,7 +10,7 @@ var Skill = new Schema({
   custom: { type: Boolean, default: false }
 });
 
-var CharClass = new Schema({ thisclass: Schema.Types.Mixed, level: Number, selsubclass: Schema.Types.Mixed, hitdice: Number, savedcstat: Number });
+var CharClass = new Schema({ thisclass: Schema.Types.Mixed, level: Number, selsubclass: Schema.Types.Mixed, hitdice: Number, savedcstat: Number, bonusknown: Number });
 var Character = new Schema({
   age: { type: String, default: "" },
   alignment: { type: String, default: "" },
