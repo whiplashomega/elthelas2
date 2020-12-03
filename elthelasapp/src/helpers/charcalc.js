@@ -272,7 +272,7 @@ export default {
           (a.thisclass.name === "Rogue" && a.selsubclass.name === "Arcane Trickster")) {
         num = this.thirdCasterPrepared(a);
       }
-      num += a.bonusknown;
+      num += Number(a.bonusknown);
       classCounts.push({
         classname: a.thisclass.name,
         maxprepped: num,
