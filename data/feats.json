@@ -75,7 +75,7 @@
     "description": "Your exposure to the Feywild's magic has changed you, granting you the following benefits:\n\n* Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.\n* You learn the misty step spell and one 1st-level spell of your choice. The 1st-level spell must be from the divination or enchantment school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
   },
   {
-    "name": "Fightning Initiate",
+    "name": "Fighting Initiate",
     "prereq": "Proficiency with a martial weapon",
     "description": "Your martial training has helped you develop a particular style of fighting. As a result, you learn one Fighting Style option of your choice from the fighter class. If you already have a style, the one you choose must be different.\n\nWhenever you reach a level that grants the Ability Score Improvement feature, you can replace this feat's fighting style with another one from the fighter class that you don't have."
   },

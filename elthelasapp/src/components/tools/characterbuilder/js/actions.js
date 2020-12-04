@@ -140,7 +140,7 @@ export default {
     addAction() {
       this.character.actions.push(this.newaction);
       this.newaction = {
-        name: "", description: "", actiontype: "action", id: Date.now(), useradd: true
+        name: "", description: "", actiontype: "action", id: Date.now(), useradd: true, resourceused: false, show: false
       };
     },
     doAction (action) {

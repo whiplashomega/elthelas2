@@ -17,12 +17,21 @@ export default {
       longrest: "longrest"
     }),
     addResource() {
-      this.character.resources.push({ name: "", current: 0, max: 0, recharge: "never" });
+      this.character.resources.push({ id: Date.now() + Math.random(), name: "", current: 0, max: 0, recharge: "never" });
     },
     removeResource(i) {
       let c = window.confirm("are you sure you want to delete " + this.character.resources[i].name + "?");
       if (c) {
-        this.character.resources.splice(i, 1);
+        let actions = this.character.actions.filter((a) => {
+          return a.resourceused.name === this.character.resources[i].name;
+        });
+        if (actions.length > 0) {
+          actions.forEach((a) => {
+            alert("Cannot delete resource " + this.character.resources[i].name + ". It is still used by the action " + a.name);
+          });
+        } else {
+          this.character.resources.splice(i, 1);  
+        }
       }
     },
     useResource(i) {
