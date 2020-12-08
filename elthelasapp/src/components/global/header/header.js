@@ -19,7 +19,7 @@ export default {
         password: ""
       },
       user: {
-        username: this.userinfo.username,
+        username: "",
         password: "",
         newpassword: "",
         passwordConfirm: ""
@@ -85,6 +85,7 @@ export default {
     },
     handleChangePassword () {
       if (this.user.newpassword === this.user.confirmPassword) {
+        this.user.username = this.userinfo.username;
         this.changePassword(this.user).then((response) => {
           this.logonformactive = false,
           this.showChangePassword = false
