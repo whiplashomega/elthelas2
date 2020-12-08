@@ -156,7 +156,7 @@
              hide-footer :modal-class="userinfo.themesetting">
       <div v-if="logonformactive">
         <div class="form-inline">
-          <label class="col-3">Current Password:</label> <input type="text" v-model="user.password" class="form-control col-9" />
+          <label class="col-3">Current Password:</label> <input type="password" v-model="user.password" class="form-control col-9" />
         </div>
         <div class="form-inline">
           <label class="col-3">New Password:</label> <input type="password" v-model="user.newpassword" class="form-control col-9" />
@@ -165,7 +165,7 @@
           <label class="col-3">Confirm New Password:</label> <input type="password" v-model="user.passwordConfirm" class="form-control col-9" />
         </div>
         <div slot="modal-footer">
-          <div class="btn-group"><button type="button" class="btn btn-default" @click="handleChangePassword(); logonformactive = false;">Login</button><button type="button" class="btn btn-danger" @click="showRegister=false">Cancel</button></div>
+          <div class="btn-group"><button type="button" class="btn btn-default" @click="handleChangePassword(); logonformactive = false;">Change Password</button><button type="button" class="btn btn-danger" @click="showRegister=false">Cancel</button></div>
         </div>
       </div>
       <div v-else>

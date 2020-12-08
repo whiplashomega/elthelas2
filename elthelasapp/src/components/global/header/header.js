@@ -84,16 +84,20 @@ export default {
       });
     },
     handleChangePassword () {
-      if (this.user.newpassword === this.user.confirmPassword) {
+      if (this.user.newpassword === this.user.passwordConfirm) {
         this.user.username = this.userinfo.username;
         this.changePassword(this.user).then((response) => {
-          this.logonformactive = false,
-          this.showChangePassword = false
+          this.logonformactive = true;
+          this.showChangePassword = false;
         }).catch(() => {
           this.errorMessage = "Error Changing Password";
+          this.logonformactive = true;
+          this.showChangePassword = false;
         });
       } else {
         alert("Passwords do not Match");
+        this.logonformactive = true;
+        this.showChangePassword = false;
       }
     },
     handleRegister () {
