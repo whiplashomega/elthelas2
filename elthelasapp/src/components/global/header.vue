@@ -83,8 +83,7 @@
               <!-- When Logged Out -->
               <li class="dropdown-item" v-if="!loggedin"><a @click="showRegister = true">Register</a></li>
               <li class="dropdown-item" v-if="!loggedin"><a @click="showLogin = true">Login</a></li>
-              <li class="dropdown-item" v-if="loggedin"><a @click="showChangePassword = true">Login</a></li>
-              <li class="dropdown-item"><a @click="googleSignIn()">Google Sign In</a></li>
+              <li class="dropdown-item" v-if="loggedin"><a @click="showChangePassword = true">Change Password</a></li>
               <li class="dropdown-item"><router-link to="/privacy-policy">Privacy Policy</router-link></li>
             </ul>
           </div>
@@ -153,7 +152,7 @@
       </template>
     </b-modal>
     <b-modal id="changepasswordmodal" size="lg"
-             title="Update Password" v-model="showRegister"
+             title="Update Password" v-model="showChangePassword"
              hide-footer :modal-class="userinfo.themesetting">
       <div v-if="logonformactive">
         <div class="form-inline">
