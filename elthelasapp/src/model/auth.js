@@ -60,6 +60,20 @@ const actions = {
       });
     });
   },
+  changePassword ({ commit }, user) {
+    return new Promise((resolve, reject) => {
+      Vue.http.put(ctest.baseUrl + 'users/' + user.username + "?token=" + state.loggedin.token, user).then((response) => {
+        if (response.status === 200) {
+          commit('saveLogin', { user: response.body.user, token: response.body.token });
+          resolve(response);
+        } else {
+          resolve(response);
+        }
+      }).catch((response) => {
+        reject(response);
+      });
+    });
+  },
   register ({ commit }, user) {
     if (user.password !== user.passwordConfirm) {
       return false;

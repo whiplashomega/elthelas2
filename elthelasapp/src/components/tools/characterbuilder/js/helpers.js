@@ -1,3 +1,5 @@
+import calc from '@/helpers/charcalc';
+
 export default {
   addAbility (character, name, max, recharge, minlevel, cl) {
     if (Number(cl.level) >= minlevel) {
@@ -35,6 +37,14 @@ export default {
     if (a.selsubclass.name === "Path of the Zealot") {
       this.addAbility(character, "Fanatical Focus", 1, "never", 6, a);
       this.addAbility(character, "Zealous Presence", 1, "longrest", 10, a);
+    }
+    if (a.selsubclass.name === "Path of the Beast") {
+      this.addAbility(character, "Infectious Fury", calc.profbonus(character), "longrest", 10, a);
+      this.addAbility(character, "Call the Hunt", calc.profbonus(character), "longrest", 14, a);
+    }
+    if (a.selsubclass.name === "Path of Wild Magic") {
+      this.addAbility(character, "Magic Awareness", calc.profbonus(character), "longrest", 3, a);
+      this.addAbility(character, "Bolstering Magic", calc.profbonus(character), "longrest", 6, a);
     }
   },
   bardResources (vue, character, a) {
@@ -130,7 +140,7 @@ export default {
   wizardResources (character, a) {
     this.addAbility(character, "Arcane Recovery", 1, "longrest", 1, a);
     if (a.selsubclass.name === "Bladesinging") {
-      this.addAbility(character, "Bladesong", 2, "shortrest", 2, a);
+      this.addAbility(character, "Bladesong", calc.profbonus(character), "longrest", 2, a);
     }
     if (a.selsubclass.name === "School of Abjuration") {
       this.addAbility(character, "Arcane Ward", 1, "longrest", 2, a);

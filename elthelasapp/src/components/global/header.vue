@@ -83,6 +83,7 @@
               <!-- When Logged Out -->
               <li class="dropdown-item" v-if="!loggedin"><a @click="showRegister = true">Register</a></li>
               <li class="dropdown-item" v-if="!loggedin"><a @click="showLogin = true">Login</a></li>
+              <li class="dropdown-item" v-if="loggedin"><a @click="showChangePassword = true">Login</a></li>
               <li class="dropdown-item"><a @click="googleSignIn()">Google Sign In</a></li>
               <li class="dropdown-item"><router-link to="/privacy-policy">Privacy Policy</router-link></li>
             </ul>
@@ -143,6 +144,29 @@
         </div>
         <div slot="modal-footer">
           <div class="btn-group"><button type="button" class="btn btn-default" @click="handleRegister(); logonformactive = false;">Login</button><button type="button" class="btn btn-danger" @click="showRegister=false">Cancel</button></div>
+        </div>
+      </div>
+      <div v-else>
+        Registering, please wait...
+      </div>
+      <template slot="modal-footer" slot-scope="{ ok, cancel, hide }">
+      </template>
+    </b-modal>
+    <b-modal id="changepasswordmodal" size="lg"
+             title="Update Password" v-model="showRegister"
+             hide-footer :modal-class="userinfo.themesetting">
+      <div v-if="logonformactive">
+        <div class="form-inline">
+          <label class="col-3">Current Password:</label> <input type="text" v-model="user.password" class="form-control col-9" />
+        </div>
+        <div class="form-inline">
+          <label class="col-3">New Password:</label> <input type="password" v-model="user.newpassword" class="form-control col-9" />
+        </div>
+        <div class="form-inline">
+          <label class="col-3">Confirm New Password:</label> <input type="password" v-model="user.passwordConfirm" class="form-control col-9" />
+        </div>
+        <div slot="modal-footer">
+          <div class="btn-group"><button type="button" class="btn btn-default" @click="handleChangePassword(); logonformactive = false;">Login</button><button type="button" class="btn btn-danger" @click="showRegister=false">Cancel</button></div>
         </div>
       </div>
       <div v-else>

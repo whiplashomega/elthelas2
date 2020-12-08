@@ -136,22 +136,50 @@ router.route('/:username')
             } 
         });
     })
-    .put(Verify.verifyOrdinaryUser, function(req, res) { 
-        User.find({ username: req.decoded.username }, function (err, user) {
-            if (err) throw err;
-            if (req.decoded.username === req.params.username) {
-                User.findOneAndUpdate({ username: req.params.username }, {
-                    firstname: req.body.firstname,
-                    lastname: req.body.lastname,
-                    themesetting: req.body.themesetting,
-                    password: req.body.password
-                }, {
-                    new: true
-                }, function (err, user) {
-                    if (err) throw err;
-                    res.json(user);
-                });
-            } 
+    .put(Verify.verifyOrdinaryUser, function(req, res, next) {
+        passport.authenticate('local', function(err, user, info) {
+            if (err) {
+                console.log('Authentication error: ' + err);
+                return next(err);
+            }
+            User.find({ username: req.decoded.username }, function (err, user) {
+                if (err) throw err;
+                if (req.decoded.username === req.params.username) {
+                    User.findOneAndUpdate({ username: req.params.username }, {
+                        firstname: req.body.firstname,
+                        lastname: req.body.lastname,
+                        themesetting: req.body.themesetting,
+                        password: req.body.password
+                    }, {
+                        new: true
+                    }, function (err, user) {
+                        if (err) throw err;
+                            req.logIn(user, function(err) {
+                            if (err) {
+                                console.log(user);
+                                console.log(err);
+                                return res.status(500).json({
+                                   err: "Could not login User"
+                                });
+                            }
+                            
+                            var token = Verify.getToken(user);
+                            res.status(200).json({
+                               status: 'Login successful!',
+                               success: true,
+                               user: { 
+                                 firstname: user.firstname, 
+                                 lastname: user.lastname,
+                                 admin: user.admin,
+                                 _id: user._id,
+                                 username: user.username
+                               },
+                               token: token
+                            });
+                        });
+                    });
+                }
+            });
         });
     })
     .delete(Verify.verifyOrdinaryUser, function(req, res) { 

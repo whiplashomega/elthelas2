@@ -18,6 +18,12 @@ export default {
         username: "",
         password: ""
       },
+      user: {
+        username: this.userinfo.username,
+        password: "",
+        newpassword: "",
+        passwordConfirm: ""
+      },
       registeruser: {
         username: "",
         themesetting: "",
@@ -27,7 +33,8 @@ export default {
         lastname: ""
       },
       showLogin: false,
-      showRegister: false
+      showRegister: false,
+      showChangePassword: false
     };
   },
   methods: {
@@ -65,7 +72,8 @@ export default {
       logout: 'logout',
       saveAuthHeader: 'saveAuthHeader',
       getAllCampaigns: 'getAllCampaignsSilent',
-      switchTheme: 'switchTheme'
+      switchTheme: 'switchTheme',
+      changePassword: 'changePassword'
     }),
     handleLogin () {
       this.login(this.logincreds).then((response) => {
@@ -74,6 +82,18 @@ export default {
       }).catch(() => {
         this.errorMessage = "Error Logging In";
       });
+    },
+    handleChangePassword () {
+      if (this.user.newpassword === this.user.confirmPassword) {
+        this.changePassword(this.user).then((response) => {
+          this.logonformactive = false,
+          this.showChangePassword = false
+        }).catch(() => {
+          this.errorMessage = "Error Changing Password";
+        });
+      } else {
+        alert("Passwords do not Match");
+      }
     },
     handleRegister () {
       this.register(this.registeruser).then((response) => {
