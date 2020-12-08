@@ -137,32 +137,20 @@ router.route('/:username')
         });
     })
     .put(Verify.verifyOrdinaryUser, function(req, res, next) {
-        passport.authenticate('local', function(err, user, info) {
-            if (err) {
-                console.log('Authentication error: ' + err);
-                return next(err);
-            }
-            User.find({ username: req.decoded.username }, function (err, user) {
-                if (err) throw err;
-                if (req.decoded.username === req.params.username) {
-                    User.findOneAndUpdate({ username: req.params.username }, {
-                        firstname: req.body.firstname,
-                        lastname: req.body.lastname,
-                        themesetting: req.body.themesetting,
-                        password: req.body.password
-                    }, {
-                        new: true
-                    }, function (err, user) {
-                        if (err) throw err;
-                            req.logIn(user, function(err) {
-                            if (err) {
-                                console.log(user);
-                                console.log(err);
-                                return res.status(500).json({
-                                   err: "Could not login User"
-                                });
-                            }
-                            
+        console.log("begin change password");
+        User.find({ username: req.decoded.username }, function (err, user) {
+            if (err) throw err;
+            console.log("found user");
+            console.log(req.params.username);
+            console.log(req.decoded.username);
+            console.log(req.params);
+            if (req.decoded.username === req.params.username) {
+                User.findOne({ username: req.params.username }, function (err, user) {
+                   if (err) throw err;
+                   user.setPassword(req.body.newpassword, function (err, user) {
+                      if (err) throw err;
+                      user.save(function(err) {
+                          if (err) throw err;
                             var token = Verify.getToken(user);
                             res.status(200).json({
                                status: 'Login successful!',
@@ -176,10 +164,10 @@ router.route('/:username')
                                },
                                token: token
                             });
-                        });
-                    });
-                }
-            });
+                      });
+                   });
+                });
+            }
         });
     })
     .delete(Verify.verifyOrdinaryUser, function(req, res) { 

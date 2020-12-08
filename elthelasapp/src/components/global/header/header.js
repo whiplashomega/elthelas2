@@ -81,6 +81,8 @@ export default {
         this.showLogin = false;
       }).catch(() => {
         this.errorMessage = "Error Logging In";
+        this.logonformactive = true;
+        this.showLogin = false;
       });
     },
     handleChangePassword () {
