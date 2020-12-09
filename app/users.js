@@ -146,24 +146,42 @@ router.route('/:username')
             console.log(req.params);
             if (req.decoded.username === req.params.username) {
                 User.findOne({ username: req.params.username }, function (err, user) {
-                   if (err) throw err;
-                   user.setPassword(req.body.newpassword, function (err, user) {
-                      if (err) throw err;
-                      user.save(function(err) {
-                          if (err) throw err;
-                            var token = Verify.getToken(user);
-                            res.status(200).json({
-                               status: 'Login successful!',
-                               success: true,
-                               user: { 
-                                 firstname: user.firstname, 
-                                 lastname: user.lastname,
-                                 admin: user.admin,
-                                 _id: user._id,
-                                 username: user.username
-                               },
-                               token: token
+                if (err) {
+                    console.log(user);
+                    console.log(err);
+                    return res.status(500).json({
+                       err: "Could not find user"
+                    });
+                }
+                user.setPassword(req.body.newpassword, function (err, user) {
+                    if (err) {
+                        console.log(user);
+                        console.log(err);
+                        return res.status(500).json({
+                           err: "Could not change password"
+                        });
+                    }
+                    user.save(function(err) {
+                        if (err) {
+                            console.log(user);
+                            console.log(err);
+                            return res.status(500).json({
+                               err: "Could not save user"
                             });
+                        }
+                        var token = Verify.getToken(user);
+                        res.status(200).json({
+                           status: 'Login successful!',
+                           success: true,
+                           user: { 
+                             firstname: user.firstname, 
+                             lastname: user.lastname,
+                             admin: user.admin,
+                             _id: user._id,
+                             username: user.username
+                           },
+                           token: token
+                        });
                       });
                    });
                 });
