@@ -2,6 +2,7 @@
   "name": "Artificer",
   "level": 0,
   "hitdie": 8,
+  "caststat": 5,
   "proficiencies": {
     "armor": [
       "light armor",

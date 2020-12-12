@@ -124,7 +124,7 @@ self.__precacheManifest = [
     "url": "/json/cities.json"
   },
   {
-    "revision": "19b92a480abc28c0cd57b1cd9c057a3f",
+    "revision": "583bf823795e5070e79a7b33783fd451",
     "url": "/json/classes.json"
   },
   {
