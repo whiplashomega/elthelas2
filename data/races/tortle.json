@@ -1,0 +1,60 @@
+{
+  "id": "tortle",
+  "name": "Tortles",
+  "singular": "Tortle",
+  "description": "The simple, peaceful, half-turtle Tortle people live in small cities along the coasts of Asura. They are the most welcoming of outsiders of all of the beast races of Asura, willingly accepting traders into their ports, though there are not many.",
+  "traits": [
+    {
+      "name": "Size", "description": "Tortle adults stand 5 to 6 feet tall and average 450 pounds. Their shells account for roughly one-third of their weight. Your size is Medium."
+    },
+    {
+      "name": "Speed", "description": "Your base walking speed is 30 feet"
+    },
+    {
+      "name": "Ability Score Increase", "description": "Your Strength score increases by 2, and your Wisdom score increases by 1."
+    },
+    {
+      "name": "Claws", "description": "Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage for an unarmed strike."
+    },
+    {
+      "name": "Hold Breath", "description": "You can hold your breath for up to 1 hour at a time. Tortles aren't natural swimmers, but they can remain underwater for some time before needing to come up for air."
+    },
+    {
+      "name": "Natural Armor", "description": "Due to your shell and the shape of your body, you are ill-suited to wearing armor. Your shell provides ample protection, however; it gives you a base AC of 17 (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal."
+    },
+    {
+      "name": "Shell Defense", "description": "You can withdraw into your shell as an action. Until you emerge, you gain a +4 bonus to AC, and have advantage on Strength and Constitution saving throws. While in your shell, you are prone, your speed is 0 and can't increase, you have disadvantage on Dexterity saving throws, you can't take reactions, and the only action you can take is a bonus action to emerge from your shell."
+    },
+    {
+      "name": "Survival Instinct", "description": "You gain proficiency in the Survival skill. Tortles have finely honed survival instincts."
+    }
+  ],
+  "agepoints": {
+    "puberty": 10,
+    "sexualmaturity": 12,
+    "mentalmaturity": 15,
+    "middleage": 25,
+    "oldage": 35,
+    "averagelifespan": 50,
+    "maxage": 70
+  },
+  "subraces": [
+    {
+      "id": "default",
+      "name": "",
+      "image": "https://elthelas-images.herokuapp.com/races/tortle.jpg",
+      "description": "",
+      "traits": [
+      
+      ],
+      "averageheight": 66,
+      "baseheight": 57,
+      "heightroll": "2d8",
+      "averageweight": 450,
+      "baseweight": 335,
+      "weightroll": "2d12",
+      "stats": [2, 0, 0, 0, 1, 0],
+      "speed": [30, 0, 0, 0, 0]
+    }  
+  ]
+}

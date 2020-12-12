@@ -15,6 +15,7 @@
       <tbody>
         <tr><td>Alfadir</td><td>Staelic</td><td>Hisru, Morrind</td></tr>
         <tr><td>Arad</td><td>Neran</td><td>Orc, Celestial</td></tr>
+        <tr><td>Asuran Confederacy</td><td>Asuran</td><td>Yuan-ti</td></tr>
         <tr><td>Curinor</td><td>Dwarf</td><td>Imperial, Morrind</td></tr>
         <tr><td>Degak'Ta</td><td>Trollkin</td><td>Orc, Morrind</td></tr>
         <tr><td>Demal Thor</td><td>Elf</td><td>Imperial, Dwarf</td></tr>
@@ -35,6 +36,7 @@
         <tr><td>Sage</td><td>Orc</td><td>Goblin, Stagen</td></tr>
         <tr><td>Seran</td><td>Neran</td><td>Morrind</td></tr>
         <tr><td>Shendarel</td><td>Elf or Neran</td><td>Elf or Neran, Goblin</td></tr>
+        <tr><td>Ssitsu</td><td>Yuan-ti</td><td>Asuran</td></tr>
         <tr><td>Staelia</td><td>Staelic</td><td>Stagen</td></tr>
         <tr><td>Stagenheim</td><td>Stagen</td><td>Staelic, Hisru</td></tr>
         <tr><td>Terron</td><td>Neran</td><td>Imperial, Orc</td></tr>
@@ -46,6 +48,7 @@
     <ul>
       <li>Abyssal: The language of Demons</li>
       <li>Aquan: The language of the plane of water and water elementals</li>
+      <li>Asuran: The language of the Asuran Confederacy</li>
       <li>Auran: The language of the plane of air and air elementals</li>
       <li>Celestial: The language of the Gods and their immediate servants</li>
       <li>Deran: The language of the peoples of Dera, now in Dera'Dragorim</li>
@@ -71,6 +74,7 @@
       <li>Terran: The language of the plane of earth and earth elementals</li>
       <li>Troll: The language of trolls</li>
       <li>Trollkin: The language of the trollkin of Degak'Ta</li>
+      <li>Yuan-ti: The language of the Yuan-ti of Ssitsu</li>
     </ul>
     <h3>Language Statistics</h3>
     <table class='table'>
@@ -105,6 +109,7 @@
         <tr><td>Terran</td><td>1/9</td><td>0</td></tr>
         <tr><td>Troll</td><td>1</td><td>0.5</td></tr>
         <tr><td>Trollkin</td><td>1</td><td>1</td></tr>
+        <tr><td>Yuan-ti</td><td>1</td><td>1</td></tr>
       </tbody>
     </table>
   </div>

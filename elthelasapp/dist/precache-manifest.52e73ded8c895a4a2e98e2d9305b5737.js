@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "c43b8e47a368b6813c77e102c6f1c280",
+    "revision": "61f003db8a4ca8b0de0c8a5d06db571c",
     "url": "/index.html"
   },
   {
@@ -120,7 +120,7 @@ self.__precacheManifest = [
     "url": "/json/backgrounds.json"
   },
   {
-    "revision": "5cb2bd857499728598eb98806d8afd74",
+    "revision": "f670cf326d020c122e5f29b07f98b801",
     "url": "/json/cities.json"
   },
   {
@@ -152,8 +152,8 @@ self.__precacheManifest = [
     "url": "/json/features.json"
   },
   {
-    "revision": "97a805bce27913d4e2aa",
-    "url": "/js/app.588c120f.js"
+    "revision": "e2e979e8b2cb6575531e",
+    "url": "/js/app.7eb8d92b.js"
   },
   {
     "revision": "acf2891da4d32ab7755f",
@@ -172,7 +172,7 @@ self.__precacheManifest = [
     "url": "/json/magicitems.json"
   },
   {
-    "revision": "61a14aee404c7bf6289b5ed2a4b617c4",
+    "revision": "eefd0fd405c39aca8a67207a9c2bd810",
     "url": "/json/nations.json"
   },
   {
@@ -184,7 +184,7 @@ self.__precacheManifest = [
     "url": "/json/personalhistory.json"
   },
   {
-    "revision": "f17f4ff83726f556e538540832620446",
+    "revision": "af215ad60a336fc174d622d62483e583",
     "url": "/json/races.json"
   },
   {
@@ -300,8 +300,8 @@ self.__precacheManifest = [
     "url": "/static/md/book4/pcs.md"
   },
   {
-    "revision": "97a805bce27913d4e2aa",
-    "url": "/css/app.4b853d5c.css"
+    "revision": "e2e979e8b2cb6575531e",
+    "url": "/css/app.7aedf91f.css"
   },
   {
     "revision": "d41d8cd98f00b204e9800998ecf8427e",

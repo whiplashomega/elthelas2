@@ -1,7 +1,7 @@
 {
-  "name": "Asura Confederacy", 
-  "primelanguage": "Hisru",
-  "seclanguages": ["Dwarf, Elf"],
+  "name": "Asuran Confederacy", 
+  "primelanguage": "Asuran",
+  "seclanguages": [],
   "coords": [-16.2, -140.6],
   "bordercoords": [
     [-11.525778716699989, -137.24121093750003],
@@ -30,41 +30,45 @@
   ],
   "color": "#440066",
   "map": "",
-  "capitol": "",
+  "capitol": "none",
   "cities": [],
   "landmarks": [],
-  "borders": [],
+  "borders": [ "Ssitsu" ],
   "population": 2100000,
   "populationDistribution": [{
-    "race": "Hisru Human",
-    "proportion": 0.2
+    "race": "Leonin",
+    "proportion": 0.20
     },
     {
-      "race": "Deran Human",
-      "proportion": 0.2
+      "race": "Aarakocra",
+      "proportion": 0.20
     },
     {
-      "race": "Elf",
-      "proportion": 0.22
+      "race": "Loxodon",
+      "proportion": 0.15
     },
     {
-      "race": "Dwarf",
-      "proportion": 0.22
+      "race": "Minotaur",
+      "proportion": 0.15
     },
     {
-      "race": "Strongheart Halfling",
-      "proportion": 0.1
+      "race": "Tabaxi",
+      "proportion": 0.15
+    },
+    {
+      "race": "Tortle",
+      "proportion": 0.15
     }
   ],
-  "government": "",
+  "government": "Loose Confederacy",
   "ruler": "",
-  "history": "The Asura Confederacy is a collection of elven, dwarven, halfling, and human city states that have banded together for mutual defense and trade. They face regular threats from the Yuan-ti to the north as well as a large number of lizardfolk, gnoll, and goblinoid communities within the confederacies larger borders. Internal strife between the city states is also not uncommon, as rulers vie for power within the confederacy. The infrastructure necessary for empire management has never existed however, and so these would be Kings of Asura have rarely gained much traction.",
+  "history": "The distant land of the Beast Walkers, the Asuran Confederacy is a loose collection of city states of the various beast walker races that live on the continent of Asura (except for the Yuan-ti), bound by a loose set of treaties for trade and mutual defense. They have almost no contact with the outside world.",
   "gods": [],
-  "worship": "",
-  "culture": "",
+  "worship": "The beast walkers worship a wide variety of Gods, with different city states often being dedicated to individual Gods. Most common among the Leonin is Alohim, while the Aarakocra commonly worship Sylvan. The Loxodon commonly worship Alithea and Mystikinae. The Minotaurs often worship Annam or Bahamut, and the Tabaxi often worship Fanome and Hije.",
+  "culture": "Asuran culture is insular, with individual cities being fairly homogenous of a particular kind of Beast Walker. The various cities are distrustful of each other, and often outright hostile to outsiders.",
   "economics": "",
-  "slavery": "",
-  "magic": "",
-  "property": "",
-  "citizenship": ""
+  "slavery": "Slavery is legal in most of the Asuran confederacy, with slaves making up a large lower class in many of the Asuran cities.",
+  "magic": "Rules around magic vary from city to city, but are generally lax.",
+  "property": "Property can only be held by citizens.",
+  "citizenship": "citizenship is by birth only, requiring one to be born to citizens of a city to be a citizen of that city. Slaves are not considered citizens."
 }

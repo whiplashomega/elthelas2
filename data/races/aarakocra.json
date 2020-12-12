@@ -1,0 +1,45 @@
+{
+  "id": "aarakocra",
+  "name": "Aarakocra",
+  "singular": "Aarakocra",
+  "description": "Long believed to only exist on the Plane of Air, there are in fact many Aarakocra native to Elthelas, building cliffside cities in the mountains of western Asura. They are an insular people, rarely venturing out of their native lands.",
+  "traits": [
+    { "name": "Ability Score Increase", "description": "Your dexterity increases by 2 and your wisdom increases by 1." },
+    { "name": "Size", "description": "Aarakocra are about 5 feet tall. They have thin, lightweight bodies that weigh between 80 and 100 pounds. Your size is Medium." },
+    { "name": "Speed", "description": "Your base walking speed is 25 feet, and you have a flying speed of 50 feet." },
+    {
+      "name": "Flight", "description": "You have a flying speed of 50 feet. To use this speed, you can't be wearing medium or heavy armor."
+    },
+    {
+      "name": "Talons", "description": "Your talons are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+    }
+  ],
+  "agepoints": {
+    "puberty": 2,
+    "sexualmaturity": 3,
+    "mentalmaturity": 4,
+    "middleage": 15,
+    "oldage": 25,
+    "averagelifespan": 30,
+    "maxage": 40
+  },
+  "subraces": [
+    {
+      "id": "default",
+      "name": "",
+      "image": "https://elthelas-images.herokuapp.com/races/aarakocra.png",
+      "description": "",
+      "traits": [
+      
+      ],
+      "averageheight": 60,
+      "baseheight": 53,
+      "heightroll": "2d6",
+      "averageweight": 90,
+      "baseweight": 55,
+      "weightroll": "2d4",
+      "stats": [0, 2, 0, 0, 1, 0],
+      "speed": [25, 50, 0, 0, 0]
+    }  
+  ]
+}

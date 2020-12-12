@@ -1,13 +1,34 @@
 {
   "name": "Dieel",
   "nation": "Alfadir",
-  "population": 0,
-  "metro": 0,
-  "majority": "",
-  "ruling": "",
-  "minorities": [],
-  "exports": [],
-  "landmarks": [],
+  "population": 60000,
+  "metro": 200000,
+  "majority": "Staelic Human",
+  "ruling": "Staelic Human",
+  "minorities": [
+    "Morrind Dwarves",
+    "Hisru Humans",
+    "Stagen Gnomes",
+    "Strongheart Halflings",
+    "Tallfellow Halflings"
+  ],
+  "exports": [
+    "wine",
+    "cotton",
+    "textiles",
+    "silk",
+    "magical components"
+  ],
+  "landmarks": [
+    {
+      "name": "The Inner City",
+      "description": "The inner city of Dieel is a walled enclave of palaces, temples, government buildings, and other massive stone buildings. It is one of the largest concentrations of extreme wealth in the world. As the city grew out of the inner walls, the rich merchants of the city slowly bought up all the property in the walled portion of the city until the entirety of it was filled to the brim with their massive stone palaces, private parks, etc."
+    },
+    {
+      "name": "Arcane University",
+      "description": "While not the biggest or most prestigious school of Wizardry, even on the continent, the Arcane University of Dieel is still a major center of magical scholarship."
+    }
+  ],
   "coords": [-40.97108508961965, -62.55851475213842],
-  "description": ""
+  "description": "Dieel, the capitol of Alfadir, is a large, sprawling city with a walled center and sprawling, unplanned districts that span all sides of the North and South Alf rivers, bridges and docks jutting out into the rivers like spiderwebs."
 }

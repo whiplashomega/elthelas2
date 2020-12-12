@@ -1,22 +1,26 @@
 {
   "name": "Instar",
   "nation": "Staelia",
-  "population": 0,
-  "metro": 0,
+  "population": 15000,
+  "metro": 40000,
   "majority": "Staelic Humans",
   "ruling": "Staelic Humans",
   "minorities": [
     "Strongheart Halflings"
   ],
   "exports": [
-    ""
+    "mercenaries"
   ],
   "landmarks": [
     {
-      "name": "",
-      "description": ""
+      "name": "The Eternal Fortress",
+      "description": "The Eternal Fortress is the seat of the King of Staelia, a huge castle that has been continually expanded over generations of Staelic kings. It is tradition for each king to make an addition to the fortress, whether it be to build a new section of wall, increase the height of the keep, add new towers, etc."
+    },
+    {
+      "name": "The War College",
+      "description": "The local college of wizardry, known as the War College, is not known for its stellar scholarship or repositories of knowledge. However, it is known for training wizards who excel in combat."
     }
   ],
   "coords": [-51.984034364013006, -46.250213035216994],
-  "description": ""
+  "description": "The fortress city of Instar, ancient home of the kings of Staelia. It is a city bound by strict regulation, and dominated by martial interests. The streets lie in straight lines, the houses, all stone, have arrow slits for windows, and battlements on the roofs. The massive walls are lined with balistae and magical devices. The whole city is towered over by the massive central castle known as the Eternal Fortress."
 }
