@@ -3,6 +3,8 @@
   "level": 1,
   "hitdie": 8,
   "caststat": 4,
+  "cantrips": 3,
+  "cantriplevel": 1,
   "proficiencies": {
     "armor": ["light armor", "medium armor", "shields"],
     "weapons": ["simple weapons"],

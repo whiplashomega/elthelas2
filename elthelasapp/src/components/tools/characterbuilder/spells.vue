@@ -32,6 +32,7 @@
     <div>
       Number Prepared:
       <div v-for="cc in numprepared" :key="cc.classname">{{ cc.classname }}: {{ cc.numprepped }} / {{ cc.maxprepped }}</div>
+      Cantrips Known: {{ cantripspicked }} / {{ cantrips }}
     </div>
     <div class="smalltext print-hide">
       <table class="table table-sm">

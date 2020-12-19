@@ -11,8 +11,12 @@ export default {
       warlockSlots: "warlockSlots",
       warlockSlotLevel: "warlockSlotLevel",
       totalslots: "totalslots",
-      numprepared: "getTotalPrepared"
+      numprepared: "getTotalPrepared",
+      cantrips: "cantripsKnown"
     }),
+    cantripspicked: function () {
+      return this.character.spells.cantrip.length;
+    },
     filteredspells () {
       var filters = this.spellfilter.split(' ');
       if (this.spellfilter === "") {

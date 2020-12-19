@@ -3,6 +3,7 @@ export default function() {
     name: "",
     player: "",
     warlockslotsavailable: 0,
+    bonuscantrips: 0,
     charclasses: [{
       thisclass:
       {

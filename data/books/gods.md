@@ -48,4 +48,4 @@ Area - Goddess of Ultimate Destruction, Vengeance, and Space *Aitia*
   Vrasja - God of Assassins, Murder, and Blood *Sanguinus*
     Ptoma (via Nera) - God of Undeath and the Undead *Necronus*
     Interitus (via Gaian) - God of Decay, Fungus, and Soil *Aposynthesi*
-    Odio (via Area) - God of Hatred *Sanguinus* - Brent Freeman
+    Odio  (via Area) - God of Hatred *Sanguinus* - Brent Freeman

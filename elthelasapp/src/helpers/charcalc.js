@@ -282,6 +282,41 @@ export default {
     this.numPrepped(classCounts, spells);
     return classCounts;
   },
+  cantripsknown: function(character) {
+    var cantrips = character.charclasses.reduce((a, b) => {
+      let classcantrips = 0;
+      if (b.level >= b.cantriplevel && b.cantrips > 0) {
+        classcantrips = b.cantrips;
+        if (b.selsubclass.castermult === 1) {
+          if (b.level >= 4) {
+            classcantrips++;
+          }
+          if (b.level >= 10) {
+            classcantrips++;
+          }
+        }
+        else {
+          if (b.level >= 10) {
+            classcantrips++;
+          }
+          if (b.level >= 14) {
+            classcantrips++;
+          }
+        }
+      } else if ((b.selsubclass.name === "Eldritch Knight" || b.selsubclass.name === "Arcane Trickster") && b.level >= 3) {
+        classcantrips = 2;
+        if (b.selsubclass.name === "Arcane Trickster") {
+          classcantrips++;
+        }
+        if (b.level >= 10) {
+          classcantrips++;
+        }
+      }
+      return a + classcantrips;
+    }, 0);
+    cantrips += Number(character.bonuscantrips);
+    return cantrips;
+  },
   profbonus: function(character) {
     var level = character.charclasses.reduce((a, b) => {
       return a + Number(b.level);

@@ -3,6 +3,8 @@
   "level": 1,
   "hitdie": 8,
   "caststat": 3,
+  "cantrips": 0,
+  "cantriplevel": 1,
   "proficiencies": {
     "armor": ["light armor"],
     "weapons": ["simple weapons", "hand crossbows", "longswords", "rapiers", "shortswords"],

@@ -1,0 +1,15 @@
+{
+  "name": "Tranquility",
+  "nation": "Asuran Confederacy",
+  "population": 30000,
+  "metro": 80000,
+  "majority": "Luxodon",
+  "ruling": "Luxodon",
+  "minorities": [
+  ],
+  "exports": [
+  ],
+  "landmarks": [],
+  "coords": [-18.9, -138.45],
+  "description": "The largest Luxodon city in the Asuran confederacy, Tranquility holds an outsized role in maintaining the loose alliance."
+}

@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/json/history.json"
   },
   {
-    "revision": "acf2891da4d32ab7755f",
-    "url": "/css/characterbuilder.5b7cdddb.css"
+    "revision": "dfb085e23b4f7784deea",
+    "url": "/css/characterbuilder.8acf3e2a.css"
   },
   {
     "revision": "157a2fbc34e32b3514ad",
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "61f003db8a4ca8b0de0c8a5d06db571c",
+    "revision": "f57fae05a0b0445da88e4b97a52bdbdd",
     "url": "/index.html"
   },
   {
@@ -120,11 +120,11 @@ self.__precacheManifest = [
     "url": "/json/backgrounds.json"
   },
   {
-    "revision": "f670cf326d020c122e5f29b07f98b801",
+    "revision": "57ba710bff7fc53aa6575ff5fd3347c8",
     "url": "/json/cities.json"
   },
   {
-    "revision": "721f3389d006d5531d07dfd93ee2e36b",
+    "revision": "39ea0cdb8f3824219e34d7c9425a8471",
     "url": "/json/classes.json"
   },
   {
@@ -152,12 +152,12 @@ self.__precacheManifest = [
     "url": "/json/features.json"
   },
   {
-    "revision": "e2e979e8b2cb6575531e",
-    "url": "/js/app.7eb8d92b.js"
+    "revision": "a84fb326f100ca2ceee4",
+    "url": "/js/app.a414c8bc.js"
   },
   {
-    "revision": "acf2891da4d32ab7755f",
-    "url": "/js/characterbuilder.7d66197a.js"
+    "revision": "dfb085e23b4f7784deea",
+    "url": "/js/characterbuilder.daf1bac2.js"
   },
   {
     "revision": "cb9861ca9c3263c82d10f24ccb23a953",
@@ -184,7 +184,7 @@ self.__precacheManifest = [
     "url": "/json/personalhistory.json"
   },
   {
-    "revision": "af215ad60a336fc174d622d62483e583",
+    "revision": "cc107a4fe83576af9dfaf9cbf6a60053",
     "url": "/json/races.json"
   },
   {
@@ -300,7 +300,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/pcs.md"
   },
   {
-    "revision": "e2e979e8b2cb6575531e",
+    "revision": "a84fb326f100ca2ceee4",
     "url": "/css/app.7aedf91f.css"
   },
   {

@@ -3,6 +3,8 @@
   "level": 1,
   "hitdie": 6,
   "caststat": 5,
+  "cantrips": 4,
+  "cantriplevel": 1,
   "proficiencies": {
  "armor": [],
  "weapons": ["daggers", "darts", "slings", "quarterstaffs", "light crossbows"],

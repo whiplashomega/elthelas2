@@ -95,6 +95,9 @@ export default {
   getSkillMod: (state) => (skill) => {
     return charCalculators.skillMod(state.currentCharacter, skill);
   },
+  cantripsKnown: (state) => {
+    return charCalculators.cantripsknown(state.currentCharacter);
+  },
   getInitMod: (state) => {
     return charCalculators.initMod(state.currentCharacter);
   },
