@@ -285,30 +285,30 @@ export default {
   cantripsknown: function(character) {
     var cantrips = character.charclasses.reduce((a, b) => {
       let classcantrips = 0;
-      if (b.level >= b.thisclass.cantriplevel && b.thisclass.cantrips > 0) {
+      if (Number(b.level) >= b.thisclass.cantriplevel && b.thisclass.cantrips > 0) {
         classcantrips = b.cantrips;
         if (b.selsubclass.castermult === 1) {
-          if (b.level >= 4) {
+          if (Number(b.level) >= 4) {
             classcantrips++;
           }
-          if (b.level >= 10) {
+          if (Number(b.level) >= 10) {
             classcantrips++;
           }
         }
         else {
-          if (b.level >= 10) {
+          if (Number(b.level) >= 10) {
             classcantrips++;
           }
-          if (b.level >= 14) {
+          if (Number(b.level) >= 14) {
             classcantrips++;
           }
         }
-      } else if ((b.selsubclass.name === "Eldritch Knight" || b.selsubclass.name === "Arcane Trickster") && b.level >= 3) {
+      } else if ((b.selsubclass.name === "Eldritch Knight" || b.selsubclass.name === "Arcane Trickster") && Number(b.level) >= 3) {
         classcantrips = 2;
         if (b.selsubclass.name === "Arcane Trickster") {
           classcantrips++;
         }
-        if (b.level >= 10) {
+        if (Number(b.level) >= 10) {
           classcantrips++;
         }
       }
