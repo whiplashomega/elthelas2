@@ -285,7 +285,7 @@ export default {
   cantripsknown: function(character) {
     var cantrips = character.charclasses.reduce((a, b) => {
       let classcantrips = 0;
-      if (b.level >= b.cantriplevel && b.cantrips > 0) {
+      if (b.level >= b.thisclass.cantriplevel && b.thisclass.cantrips > 0) {
         classcantrips = b.cantrips;
         if (b.selsubclass.castermult === 1) {
           if (b.level >= 4) {
