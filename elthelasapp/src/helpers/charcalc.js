@@ -287,7 +287,7 @@ export default {
       let classcantrips = 0;
       if (Number(b.level) >= b.thisclass.cantriplevel && b.thisclass.cantrips > 0) {
         classcantrips = b.thisclass.cantrips;
-        if (b.selsubclass.castermult === 1) {
+        if (b.selsubclass.castermult === 1 || b.thisclass.name === "Warlock") {
           if (Number(b.level) >= 4) {
             classcantrips++;
           }
