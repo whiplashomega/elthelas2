@@ -5,7 +5,7 @@ export default {
     ...mapGetters({
       events: 'allEvents'
     }),
-    sortedEvents: () => {
+    sortedEvents () {
       this.events.sort((a, b) => {
         if (a.startdate.year > b.startdate.year) {
           return 1;
@@ -22,7 +22,7 @@ export default {
         } else {
           return 0;
         }
-      })
+      });
     }
   },
   data () {
