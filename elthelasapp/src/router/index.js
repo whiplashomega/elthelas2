@@ -11,6 +11,7 @@ import gods from '../components/ref/gods';
 import divines from '../components/ref/divines';
 import organizations from '../components/ref/organizations';
 import history from '../components/history';
+import historylist from '../components/history/historylist';
 import backgrounds from '../components/options/backgrounds';
 import options from '../components/options/menu';
 import languages from '../components/options/languages';
@@ -210,6 +211,16 @@ var router = new Router({
       path: '/history',
       components: {
         default: history
+      }
+    },
+    {
+      name: 'historylist',
+      meta: {
+        title: "History of Elthelas"
+      },
+      path: '/historylist',
+      components: {
+        default: historylist
       }
     },
     {

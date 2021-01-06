@@ -3,7 +3,7 @@
     <h1>Player Races</h1>
     <div>
       <div v-for="race in races" :key="race.id" class="racebuttondiv">
-        <button class="racebutton btn btn-primary" @click="loadRace(race.id)">{{ race.name }}</button>
+        <button class="racebutton btn btn-primary" @click="loadRace(race.id)" v-if="race.id !== 'custom'">{{ race.name }}</button>
       </div>
     </div>
     <p style="clear:both;">

@@ -47,8 +47,16 @@
           <div>
             <router-link to="/geo">Geography</router-link>
           </div>
-          <div>
-            <router-link to="/history">History</router-link>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle"
+               data-toggle="dropdown" role="button"
+               aria-expanded="false">
+              History <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li class="dropdown-item"><router-link to="/history">Timeline View</router-link></li>
+              <li class="dropdown-item"><router-link to="/historylist">List View</router-link></li>
+            </ul>
           </div>
           <div class="dropdown">
             <a href="#" class="dropdown-toggle"

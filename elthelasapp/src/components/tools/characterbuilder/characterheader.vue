@@ -31,6 +31,9 @@
               {{ race.singular }}
             </option>
           </select>
+          <div>
+            <input type="text" class="charsheet-text" v-model="character.race.singular" />
+          </div>
           Race
         </div>
         <div class="col-sm-6">
