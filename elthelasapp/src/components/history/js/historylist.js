@@ -14,17 +14,17 @@ export default {
           b.end_date = { year: "", month: "", day: "" };
         }
         if (a.start_date.year > b.start_date.year) {
-          return 1;
+          return -1;
         } else if (a.start_date.year < b.start_date.year) {
-          return -1;
+          return 1;
         } else if (a.start_date.month > b.start_date.month) {
-          return 1;
+          return -1;
         } else if (a.start_date.month < b.start_date.month) {
-          return -1;
-        } else if (a.start_date.day > b.start_date.day) {
           return 1;
-        } else if (a.start_date.day < b.start_date.day) {
+        } else if (a.start_date.day > b.start_date.day) {
           return -1;
+        } else if (a.start_date.day < b.start_date.day) {
+          return 1;
         } else {
           return 0;
         }
