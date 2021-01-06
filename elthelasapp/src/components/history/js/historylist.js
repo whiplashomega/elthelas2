@@ -6,7 +6,7 @@ export default {
       events: 'allEvents'
     }),
     sortedEvents () {
-      this.events.sort((a, b) => {
+      return this.events.sort((a, b) => {
         if (!("end_date" in a)) {
           a.end_date = { year: "", month: "", day: "" };
         }
