@@ -1,0 +1,46 @@
+{
+  "name": "Consolidated Territories of Parakas",
+  "coords": [46.612657984230225, 75.62452282658322],
+  "bordercoords": [],
+  "bordercoords44": false,
+  "bordercoords53": [
+    [45.38494834654319, 55.00746654225145],
+    [44.238312212932016, 57.43932791963849],
+    [44.92689068119163, 60.865189269614056],
+    [41.33660710626426, 66.0039812945774],
+    [45.98980600197725, 86.1216262085378],
+    [49.98699361915004, 93.93486762289477],
+    [53.7892944367402, 93.40808151458832],
+    [50.6686131506577, 79.17758052238217],
+    [48.50386733939323, 67.40667229426101]
+  ],
+  "color": "#008822",
+  "map": "",
+  "capitol": "Parakas",
+  "cities": [
+    "Parakas",
+    "Malgeth"
+  ],
+  "landmarks": [],
+  "borders": [
+    "Malinval",
+    "Gerasalim",
+    "Federated Alliance Territories"
+  ],
+  "population": 3000000,
+  "populationDistribution": [{
+    "race": "",
+    "proportion": 0
+  }],
+  "government": "Communistic Dictatorship",
+  "ruler": "Algor Ironbreaker",
+  "history": "As the orc armies retreated at the end of the Great War, Algor Ironbreaker ensured his own rule and the destruction of the orc nation by playing turncoat. Negotiating a treaty in secret with the alliance, Lord Ironbreaker marched his men out to meet the orc armies as the fled across the black shard pass. The other orcs believed he was coming to reinforce them, but when he attacked even as the alliance armies marched down from the north, the legions of Malinval found themselves trapped in the pass. He then turned around and sieged Malgeth, eventually capturing it and the surrounding territories. In 1853 it is the only stable area of the old territories of Malinval.",
+  "gods": [],
+  "worship": "",
+  "culture": "",
+  "economics": "",
+  "slavery": "",
+  "magic": "",
+  "property": "",
+  "citizenship": ""
+}

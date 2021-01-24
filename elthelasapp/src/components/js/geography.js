@@ -39,7 +39,8 @@ export default {
       terrlayers: [],
       warmap: false,
       mouselat: 0,
-      mouselong: 0
+      mouselong: 0,
+      year: 1853
     };
   },
   methods: {
@@ -83,8 +84,17 @@ export default {
       this.markers.push(marker);
     },
     addpolygon (nation) {
-      if (nation.bordercoords) {
-        var terr = L.polygon(nation.bordercoords, { color: nation.color });
+      let year = Number(this.year);
+      let bordercoords = false;
+      if (year < 1845 && nation.bordercoords44) {
+        bordercoords = nation.bordercoords44;
+      } else if (year > 1849 && nation.bordercoords53) {
+        bordercoords = nation.bordercoords53;
+      } else if (nation.bordercoords) {
+        bordercoords = nation.bordercoords;
+      }
+      if (bordercoords) {
+        var terr = L.polygon(bordercoords, { color: nation.color });
         terr.addTo(this.map);
         $(terr).click(() => {
           this.showdetails(nation, 'nation');

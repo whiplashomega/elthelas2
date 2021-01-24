@@ -15,6 +15,12 @@
       <input type="button" class="btn btn-primary"
              @click="showAll()" value="Show All" />
     </div>
+    <div class="yearslide">
+      <h5>Year</h5>
+      <input type="range" class="form-range"
+             v-model="year" :min="1840"
+             :max="1853" step="1" /> {{ year }}
+    </div>
     <div id="map"></div>
     Latlong: [{{ mouselat }}, {{ mouselong }}]
     <h3>General Notes on the Geography and Climate of Elthelas</h3>

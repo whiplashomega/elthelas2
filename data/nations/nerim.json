@@ -4,6 +4,8 @@
   "seclanguages": [],
   "coords": [-2.237895124716353, 89.06195413772673],
   "border-coords": [],
+  "bordercoords44": false,
+  "bordercoords53": false,
   "color": "#FFFF00",
   "map": "https://elthelas-images.herokuapp.com/maps/nations/Nerim.jpg",
   "capitol": "Nerim",

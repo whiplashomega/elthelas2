@@ -294,8 +294,7 @@ export default {
           if (Number(b.level) >= 10) {
             classcantrips++;
           }
-        }
-        else {
+        } else {
           if (Number(b.level) >= 10) {
             classcantrips++;
           }

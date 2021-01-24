@@ -8,7 +8,8 @@ export default {
       charlevel: "charlevel",
       characters: "serverCharacters",
       filelist: "driveCharacters",
-      userinfo: "getUserInfo"
+      userinfo: "getUserInfo",
+      groups: "charGroups"
     }),
     charsorted () {
       return this.characters.sort((a, b) => {
@@ -23,19 +24,32 @@ export default {
             return -1;
           }
         }
+      }).filter((a) => {
+        if (this.groupfilter === "all") {
+          return true;
+        } else if (this.groupfilter === a.group) {
+          return true;
+        } else {
+          return false;
+        }
       });
     }
   },
   data () {
     return {
-      comp: this
+      comp: this,
+      groupfilter: "all"
     };
   },
   methods: {
     ...mapActions({
-      loadChar: "loadChar",
+      getOneFromServer: "getOneFromServer",
       loadFromDrive: "loadFromDrive",
       deleteFromServer: "deleteFromServer"
-    })
+    }),
+    loadChar (id) {
+      this.getOneFromServer(id);
+      this.$root.$emit('bv::hide::modal', 'servermodal');
+    }
   }
 };

@@ -4,6 +4,8 @@
   "seclanguages": [],
   "coords": [24.148006717536955, -90.86324427641067],
   "border-coords": [],
+  "bordercoords44": false,
+  "bordercoords53": false,
   "color": "#FFFF00",
   "map": "https://elthelas-images.herokuapp.com/maps/nations/Dera.jpg",
   "capitol": "Dera",

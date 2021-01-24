@@ -51,7 +51,7 @@ export default {
   },
   methods: {
     convertMonth (a) {
-      return this.monthIndex[a-1];
+      return this.monthIndex[a - 1];
     }
   },
   mounted () {

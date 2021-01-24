@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/json/history.json"
   },
   {
-    "revision": "f522a1dc28264319a618",
-    "url": "/css/characterbuilder.1e2ab737.css"
+    "revision": "8629b20068820edb09c6",
+    "url": "/css/characterbuilder.efd99324.css"
   },
   {
     "revision": "157a2fbc34e32b3514ad",
@@ -24,12 +24,12 @@ self.__precacheManifest = [
     "url": "/js/chunk-vendors.49ce772b.js"
   },
   {
-    "revision": "7e7ae628eaf715cdbb13",
-    "url": "/css/classes.5eed14a2.css"
+    "revision": "0e1caf94afd01dedb5f0",
+    "url": "/css/classes.ded5c744.css"
   },
   {
-    "revision": "7e7ae628eaf715cdbb13",
-    "url": "/js/classes.32613611.js"
+    "revision": "0e1caf94afd01dedb5f0",
+    "url": "/js/classes.8e7cce5b.js"
   },
   {
     "revision": "721a7662fc5d55cc1939",
@@ -48,12 +48,12 @@ self.__precacheManifest = [
     "url": "/js/encounters.97e9f5a7.js"
   },
   {
-    "revision": "95f301bae6af0db8b807",
-    "url": "/css/geography.fd738b4e.css"
+    "revision": "dc1e5daf2f21113fdb0d",
+    "url": "/css/geography.dfd9d89e.css"
   },
   {
-    "revision": "95f301bae6af0db8b807",
-    "url": "/js/geography.e8c7186c.js"
+    "revision": "dc1e5daf2f21113fdb0d",
+    "url": "/js/geography.dbfabc7d.js"
   },
   {
     "revision": "7fd8d396c472a865dedc",
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "92a8dbf9f6bc10372ea48be3d6e82e79",
+    "revision": "d77b2bc6f35aa0990bfdb02417a51481",
     "url": "/index.html"
   },
   {
@@ -152,12 +152,12 @@ self.__precacheManifest = [
     "url": "/json/features.json"
   },
   {
-    "revision": "38af74056878b528ab1a",
-    "url": "/js/app.c5d4c1b5.js"
+    "revision": "28a2fa05007fc2489278",
+    "url": "/js/app.ba675d49.js"
   },
   {
-    "revision": "f522a1dc28264319a618",
-    "url": "/js/characterbuilder.29cfd2b6.js"
+    "revision": "8629b20068820edb09c6",
+    "url": "/js/characterbuilder.725a0da5.js"
   },
   {
     "revision": "cb9861ca9c3263c82d10f24ccb23a953",
@@ -172,7 +172,7 @@ self.__precacheManifest = [
     "url": "/json/magicitems.json"
   },
   {
-    "revision": "eefd0fd405c39aca8a67207a9c2bd810",
+    "revision": "2c30b90a84da593fea264e196d9a133d",
     "url": "/json/nations.json"
   },
   {
@@ -300,7 +300,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/pcs.md"
   },
   {
-    "revision": "38af74056878b528ab1a",
+    "revision": "28a2fa05007fc2489278",
     "url": "/css/app.136443e7.css"
   },
   {

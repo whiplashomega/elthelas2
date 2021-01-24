@@ -4,6 +4,8 @@
   "seclanguages": [],
   "coords": [-52.98668384095864, -63.42006025076251],
   "border-coords": [],
+  "bordercoords44": false,
+  "bordercoords53": false,
   "color": "#222200",
   "map": "https://elthelas-images.herokuapp.com/maps/nations/Gorgro.jpg",
   "capitol": "",

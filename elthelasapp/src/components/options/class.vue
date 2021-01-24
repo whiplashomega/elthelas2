@@ -1090,107 +1090,108 @@
       <p>Ask your DM before taking these features. They are intended to help balance the wizard against the power creep of other casters, and provide additional incentive to adhere to the flavor of the various sublcasses.</p>
       <h4>Expanded Spellbook</h4>
       <p>Level 2 Wizard Feature</p>
-      <p>This feature is homebrew, get your DM's permission to use it. You gain additional spells based on your particular specialty. As part of your studies you have memorized certain spells common to your field. Add the following spells to your spellbook at the level listed from the chart relevant to your Wizard School. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells."
-        },</p>
-        <h5>Bladesinging</h5>
-        <table class="classtable table table-striped">
-          <tr><th>Wizard Level</th><th>Spell</th></tr>
-          <tr><td>2nd</td><td>Longstrider</td></tr>
-          <tr><td>3rd</td><td>Shadow Blade</td></tr>
-          <tr><td>5th</td><td>Haste</td></tr>
-          <tr><td>7th</td><td>Stoneskin</td></tr>
-          <tr><td>9th</td><td>Steel Wind Strike</td></tr>
-        </table>
-        <h5>Order of Scribes</h5>
-        <table class="classtable table table-striped">
-          <tr><th>Wizard Level</th><th>Spell</th></tr>
-          <tr><td>2nd</td><td>Illusory Script</td></tr>
-          <tr><td>3rd</td><td>Augury</td></tr>
-          <tr><td>5th</td><td>Glyph of Warding</td></tr>
-          <tr><td>7th</td><td>Arcane Eye</td></tr>
-          <tr><td>9th</td><td>Modify Memory</td></tr>
-        </table>
-        <h5>School of Abjuration</h5>
-        <table class="classtable table table-striped">
-          <tr><th>Wizard Level</th><th>Spell</th></tr>
-          <tr><td>2nd</td><td>Mage Armor</td></tr>
-          <tr><td>3rd</td><td>Protection from Poison</td></tr>
-          <tr><td>5th</td><td>Magic Circle</td></tr>
-          <tr><td>7th</td><td>Freedom of Movement</td></tr>
-          <tr><td>9th</td><td>Dispel Evil and Good</td></tr>
-        </table>
-        <h5>School of Conjuration</h5>
-        <table class="classtable table table-striped">
-          <tr><th>Wizard Level</th><th>Spell</th></tr>
-          <tr><td>2nd</td><td>Grease</td></tr>
-          <tr><td>3rd</td><td>Misty Step</td></tr>
-          <tr><td>5th</td><td>Summon Shadowspawn</td></tr>
-          <tr><td>7th</td><td>Dimension Door</td></tr>
-          <tr><td>9th</td><td>Cloudkill</td></tr>
-        </table>
-        <h5>School of Divination</h5>
-        <table class="classtable table table-striped">
-          <tr><th>Wizard Level</th><th>Spell</th></tr>
-          <tr><td>2nd</td><td>Detect Magic</td></tr>
-          <tr><td>3rd</td><td>See Invisibility</td></tr>
-          <tr><td>5th</td><td>Tongues</td></tr>
-          <tr><td>7th</td><td>Locate Creature</td></tr>
-          <tr><td>9th</td><td>Legend Lore</td></tr>
-        </table>
-        <h5>School of Enchantment</h5>
-        <table class="classtable table table-striped">
-          <tr><th>Wizard Level</th><th>Spell</th></tr>
-          <tr><td>2nd</td><td>Command</td></tr>
-          <tr><td>3rd</td><td>Calm Emotions</td></tr>
-          <tr><td>5th</td><td>Enemies Abound</td></tr>
-          <tr><td>7th</td><td>Dominate Beast</td></tr>
-          <tr><td>9th</td><td>Hold Monster</td></tr>
-        </table>
-        <h5>School of Evocation</h5>
-        <table class="classtable table table-striped">
-          <tr><th>Wizard Level</th><th>Spell</th></tr>
-          <tr><td>2nd</td><td>Chromatic Orb</td></tr>
-          <tr><td>3rd</td><td>Shatter</td></tr>
-          <tr><td>5th</td><td>Melf's Minute Meteors</td></tr>
-          <tr><td>7th</td><td>Ice Storm</td></tr>
-          <tr><td>9th</td><td>Wall of Stone</td></tr>
-        </table>
-        <h5>School of Illusion</h5>
-        <table class="classtable table table-striped">
-          <tr><th>Wizard Level</th><th>Spell</th></tr>
-          <tr><td>2nd</td><td>Silent Image</td></tr>
-          <tr><td>3rd</td><td>Invisibility</td></tr>
-          <tr><td>5th</td><td>Fear</td></tr>
-          <tr><td>7th</td><td>Hallucinatory Terrain</td></tr>
-          <tr><td>9th</td><td>Mislead</td></tr>
-        </table>
-        <h5>School of Necromancy Spells</h5>
-        <table class="classtable table table-striped">
-          <tr><th>Wizard Level</th><th>Spell</th></tr>
-          <tr><td>2nd</td><td>False Life</td></tr>
-          <tr><td>3rd</td><td>Ray of Enfeeblement</td></tr>
-          <tr><td>5th</td><td>Summon Undead</td></tr>
-          <tr><td>7th</td><td>Blight</td></tr>
-          <tr><td>9th</td><td>Negative Energy Flood</td></tr>
-        </table>
-        <h5>School of Transmutation</h5>
-        <table class="classtable table table-striped">
-          <tr><th>Wizard Level</th><th>Spell</th></tr>
-          <tr><td>2nd</td><td>Feather Fall</td></tr>
-          <tr><td>3rd</td><td>Enhance Ability</td></tr>
-          <tr><td>5th</td><td>Fly</td></tr>
-          <tr><td>7th</td><td>Polymorph</td></tr>
-          <tr><td>9th</td><td>Transmute Rock</td></tr>
-        </table>
-        <h5>War Magic</h5>
-        <table class="classtable table table-striped">
-          <tr><th>Wizard Level</th><th>Spell</th></tr>
-          <tr><td>2nd</td><td>Magic Missile</td></tr>
-          <tr><td>3rd</td><td>Flaming Sphere</td></tr>
-          <tr><td>5th</td><td>Counterspell</td></tr>
-          <tr><td>7th</td><td>Storm Sphere</td></tr>
-          <tr><td>9th</td><td>Dawn</td></tr>
-        </table>
+      <p>
+        This feature is homebrew, get your DM's permission to use it. You gain additional spells based on your particular specialty. As part of your studies you have memorized certain spells common to your field. Add the following spells to your spellbook at the level listed from the chart relevant to your Wizard School. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells."
+      </p>
+      <h5>Bladesinging</h5>
+      <table class="classtable table table-striped">
+        <tr><th>Wizard Level</th><th>Spell</th></tr>
+        <tr><td>2nd</td><td>Longstrider</td></tr>
+        <tr><td>3rd</td><td>Shadow Blade</td></tr>
+        <tr><td>5th</td><td>Haste</td></tr>
+        <tr><td>7th</td><td>Stoneskin</td></tr>
+        <tr><td>9th</td><td>Steel Wind Strike</td></tr>
+      </table>
+      <h5>Order of Scribes</h5>
+      <table class="classtable table table-striped">
+        <tr><th>Wizard Level</th><th>Spell</th></tr>
+        <tr><td>2nd</td><td>Illusory Script</td></tr>
+        <tr><td>3rd</td><td>Augury</td></tr>
+        <tr><td>5th</td><td>Glyph of Warding</td></tr>
+        <tr><td>7th</td><td>Arcane Eye</td></tr>
+        <tr><td>9th</td><td>Modify Memory</td></tr>
+      </table>
+      <h5>School of Abjuration</h5>
+      <table class="classtable table table-striped">
+        <tr><th>Wizard Level</th><th>Spell</th></tr>
+        <tr><td>2nd</td><td>Mage Armor</td></tr>
+        <tr><td>3rd</td><td>Protection from Poison</td></tr>
+        <tr><td>5th</td><td>Magic Circle</td></tr>
+        <tr><td>7th</td><td>Freedom of Movement</td></tr>
+        <tr><td>9th</td><td>Dispel Evil and Good</td></tr>
+      </table>
+      <h5>School of Conjuration</h5>
+      <table class="classtable table table-striped">
+        <tr><th>Wizard Level</th><th>Spell</th></tr>
+        <tr><td>2nd</td><td>Grease</td></tr>
+        <tr><td>3rd</td><td>Misty Step</td></tr>
+        <tr><td>5th</td><td>Summon Shadowspawn</td></tr>
+        <tr><td>7th</td><td>Dimension Door</td></tr>
+        <tr><td>9th</td><td>Cloudkill</td></tr>
+      </table>
+      <h5>School of Divination</h5>
+      <table class="classtable table table-striped">
+        <tr><th>Wizard Level</th><th>Spell</th></tr>
+        <tr><td>2nd</td><td>Detect Magic</td></tr>
+        <tr><td>3rd</td><td>See Invisibility</td></tr>
+        <tr><td>5th</td><td>Tongues</td></tr>
+        <tr><td>7th</td><td>Locate Creature</td></tr>
+        <tr><td>9th</td><td>Legend Lore</td></tr>
+      </table>
+      <h5>School of Enchantment</h5>
+      <table class="classtable table table-striped">
+        <tr><th>Wizard Level</th><th>Spell</th></tr>
+        <tr><td>2nd</td><td>Command</td></tr>
+        <tr><td>3rd</td><td>Calm Emotions</td></tr>
+        <tr><td>5th</td><td>Enemies Abound</td></tr>
+        <tr><td>7th</td><td>Dominate Beast</td></tr>
+        <tr><td>9th</td><td>Hold Monster</td></tr>
+      </table>
+      <h5>School of Evocation</h5>
+      <table class="classtable table table-striped">
+        <tr><th>Wizard Level</th><th>Spell</th></tr>
+        <tr><td>2nd</td><td>Chromatic Orb</td></tr>
+        <tr><td>3rd</td><td>Shatter</td></tr>
+        <tr><td>5th</td><td>Melf's Minute Meteors</td></tr>
+        <tr><td>7th</td><td>Ice Storm</td></tr>
+        <tr><td>9th</td><td>Wall of Stone</td></tr>
+      </table>
+      <h5>School of Illusion</h5>
+      <table class="classtable table table-striped">
+        <tr><th>Wizard Level</th><th>Spell</th></tr>
+        <tr><td>2nd</td><td>Silent Image</td></tr>
+        <tr><td>3rd</td><td>Invisibility</td></tr>
+        <tr><td>5th</td><td>Fear</td></tr>
+        <tr><td>7th</td><td>Hallucinatory Terrain</td></tr>
+        <tr><td>9th</td><td>Mislead</td></tr>
+      </table>
+      <h5>School of Necromancy Spells</h5>
+      <table class="classtable table table-striped">
+        <tr><th>Wizard Level</th><th>Spell</th></tr>
+        <tr><td>2nd</td><td>False Life</td></tr>
+        <tr><td>3rd</td><td>Ray of Enfeeblement</td></tr>
+        <tr><td>5th</td><td>Summon Undead</td></tr>
+        <tr><td>7th</td><td>Blight</td></tr>
+        <tr><td>9th</td><td>Negative Energy Flood</td></tr>
+      </table>
+      <h5>School of Transmutation</h5>
+      <table class="classtable table table-striped">
+        <tr><th>Wizard Level</th><th>Spell</th></tr>
+        <tr><td>2nd</td><td>Feather Fall</td></tr>
+        <tr><td>3rd</td><td>Enhance Ability</td></tr>
+        <tr><td>5th</td><td>Fly</td></tr>
+        <tr><td>7th</td><td>Polymorph</td></tr>
+        <tr><td>9th</td><td>Transmute Rock</td></tr>
+      </table>
+      <h5>War Magic</h5>
+      <table class="classtable table table-striped">
+        <tr><th>Wizard Level</th><th>Spell</th></tr>
+        <tr><td>2nd</td><td>Magic Missile</td></tr>
+        <tr><td>3rd</td><td>Flaming Sphere</td></tr>
+        <tr><td>5th</td><td>Counterspell</td></tr>
+        <tr><td>7th</td><td>Storm Sphere</td></tr>
+        <tr><td>9th</td><td>Dawn</td></tr>
+      </table>
     </div>
     <div>
       <h3>

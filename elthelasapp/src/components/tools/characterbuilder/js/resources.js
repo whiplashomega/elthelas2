@@ -30,7 +30,7 @@ export default {
             alert("Cannot delete resource " + this.character.resources[i].name + ". It is still used by the action " + a.name);
           });
         } else {
-          this.character.resources.splice(i, 1);  
+          this.character.resources.splice(i, 1);
         }
       }
     },

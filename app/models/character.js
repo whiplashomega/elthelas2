@@ -19,6 +19,7 @@ var Character = new Schema({
   bond: { type: String, default: "" },
   castlog: { type: Array, default: [] },
   bonuscantrips: 0,
+  group: { type: String, default: "" },
   pets: [],
   activemodifiers: [],
   eyes: { type: String, default: "" },

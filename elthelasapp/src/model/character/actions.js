@@ -23,7 +23,7 @@ export default {
   getFromServer: ({ commit, state }, comp) => {
     if (comp.loggedin) {
       comp.$root.$emit('bv::show::modal', 'loading');
-      comp.$http.get('/characters?token=' + comp.token.token).then(function(res) {
+      comp.$http.get('/characters/?token=' + comp.token.token).then(function(res) {
         state.characters = res.body;
         comp.$root.$emit('bv::hide::modal', 'loading');
         comp.$root.$emit('bv::show::modal', 'servermodal');
@@ -31,6 +31,16 @@ export default {
       }).catch(function() {
         alert("error when loading, please try logging off and in again");
         comp.$root.$emit('bv::hide::modal', 'loading');
+        return false;
+      });
+    }
+  },
+  getFromServerSilent: ({ state }, comp) => {
+    if (comp.loggedin) {
+      comp.$http.get('/characters/?token=' + comp.token.token).then(function(res) {
+        state.characters = res.body;
+        return true;
+      }).catch(function() {
         return false;
       });
     }

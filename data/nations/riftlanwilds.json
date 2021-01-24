@@ -4,6 +4,8 @@
   "seclanguages": [],
   "coords": [3.910839072696496, -98.02715337810398],
   "border-coords": [],
+  "bordercoords44": false,
+  "bordercoords53": false,
   "color": "#FFFF00",
   "map": "https://elthelas-images.herokuapp.com/maps/nations/Riftlan.jpg",
   "capitol": "",

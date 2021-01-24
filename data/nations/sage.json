@@ -4,6 +4,8 @@
   "seclanguages": [],
   "coords": [-25.122905883812038, -44.09630266696781],
   "border-coords": [],
+  "bordercoords44": false,
+  "bordercoords53": false,
   "color": "#FFFF00",
   "map": "https://elthelas-images.herokuapp.com/maps/nations/Sage.jpg",
   "capitol": "Sage",

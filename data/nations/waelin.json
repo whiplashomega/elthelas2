@@ -32,6 +32,8 @@
     [60.02678442879232, 18.22944019136648],
     [62.08877950737382, 21.78676829201961]
   ],
+  "bordercoords44": false,
+  "bordercoords53": false,
   "color": "#9900FF",
   "map": "https://elthelas-images.herokuapp.com/maps/nations/Eldoran.jpg",
   "capitol": "Estapor",

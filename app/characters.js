@@ -7,13 +7,23 @@ var Campaign = require('./models/campaign');
 var jwt = require('jsonwebtoken');
 var Verify = require('./verify');
 
-router.get('/', Verify.verifyOrdinaryUser, function(req, res, next) {
+/*router.get('/', Verify.verifyOrdinaryUser, function(req, res, next) {
   Character.find({ owner: req.decoded.username }, function (err, characters) {
       if (err) throw err;
       res.header("Cache-Control", "no-cache, no-store, must-revalidate");
       res.header("Pragma", "no-cache");
       res.header("Expires", 0);
       res.json(characters);
+  });
+});*/
+
+router.get('/', Verify.verifyOrdinaryUser, function(req, res, next) {
+  Character.find({ owner: req.decoded.username }, { owner: true, name: true, charclasses: true, group: true }, function (err, characters) {
+    if (err) throw err;
+    res.header("Cache-Control", "no-cache, no-store, must-revalidate");
+    res.header("Pragma", "no-cache");
+    res.header("Expires", 0);
+    res.json(characters);
   });
 });
 
@@ -100,16 +110,6 @@ router.get('/invite/:id/:cid', Verify.verifyOrdinaryUser, async function(req, re
 router.post('/acceptinvite/:id/:cid', Verify.verifyOrdinaryUser, function(req, res, next) {
   var cha = Character.findOne({ _id: req.params.id, owner: req.decoded.username });
   var camp = Campaign.findOne({ _id: req.params.cid });
-});
-
-router.get('/all', Verify.verifyOrdinaryUser, function(req, res, next) {
-  Character.find({}, { owner: true, name: true, level: true }, function (err, characters) {
-    if (err) throw err;
-    res.header("Cache-Control", "no-cache, no-store, must-revalidate");
-    res.header("Pragma", "no-cache");
-    res.header("Expires", 0);
-    res.json(characters);
-  });
 });
 
 module.exports = router;

@@ -89,6 +89,24 @@ export default {
   getSaveDC: (state) => (i) => {
     return charCalculators.saveDC(state.currentCharacter, i);
   },
+  charGroups: (state) => {
+    let groups = [];
+    state.characters.forEach((a) => {
+      let b = groups.findIndex((c) => {
+        return c.name === a.group;
+      });
+      if (b === -1 && a.group !== "") {
+        groups.push({ name: a.group, id: a.group + Date.now() });
+      }
+    });
+    let b = groups.findIndex((c) => {
+      return c.name === state.currentCharacter.group;
+    });
+    if (b === -1) {
+      groups.push({ name: state.currentCharacter.group, id: "curchargroup" });
+    }
+    return groups;
+  },
   getAttBonus: (state) => (i) => {
     return charCalculators.attBonus(state.currentCharacter, i);
   },

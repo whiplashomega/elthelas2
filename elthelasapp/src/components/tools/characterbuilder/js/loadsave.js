@@ -7,7 +7,8 @@ export default {
       loggedin: 'isLoggedIn',
       token: 'getUserInfo',
       character: "getCharacter",
-      charlevel: "charlevel"
+      charlevel: "charlevel",
+      groups: "charGroups"
     }),
     charsorted () {
       return this.characters.sort((a, b) => {
@@ -28,7 +29,8 @@ export default {
   props: { minimal: Boolean },
   data () {
     return {
-      comp: this
+      comp: this,
+      newgroup: ""
     };
   },
   watch: {
@@ -46,12 +48,21 @@ export default {
       getDriveFiles: "getDriveFiles",
       saveToDrive: "saveToDrive",
       getFromServer: "getFromServer",
+      getFromServerSilent: "getFromServerSilent",
       updateToServer: "updateToServer",
       updateToServerSilent: "updateToServerSilent",
       newToServer: "newToServer",
       saveCharacter: "saveCharacter",
       loadCharacter: "loadCharacter",
       resetCharacter: "resetCharacter"
-    })
+    }),
+    addGroup () {
+      this.character.group = this.newgroup;
+    }
+  },
+  mounted () {
+    if (this.loggedin) {
+      this.getFromServerSilent(this);
+    }
   }
 };
