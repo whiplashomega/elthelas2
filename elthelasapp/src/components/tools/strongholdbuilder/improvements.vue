@@ -33,6 +33,8 @@
       </div>
       <b-modal v-model="addImprovementModal" title="Add Improvement" size="xl">
         <input type="checkbox" v-model="showAvailable" /> Only Show Available Improvements
+        <input type="checkbox" v-model="dmGift" /> DM Gift (added without cost)
+        <input type="checkbox" v-model="addImediately" /> Ignore Construction Time
         <table class="table table-striped table-responsive" style="width:100%;">
           <colgroup>
             <col style="width:10%;" />

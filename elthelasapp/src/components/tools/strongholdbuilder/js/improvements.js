@@ -100,7 +100,9 @@ export default {
   data () {
     return {
       addImprovementModal: false,
-      showAvailable: true
+      showAvailable: true,
+      dmGift: false,
+      addImediately: false
     };
   },
   methods: {
@@ -110,12 +112,16 @@ export default {
       buyResource: 'buyResource'
     }),
     addToConstruction (improvement) {
-      if (improvement.buildtime > 0) {
+      let buildtime = improvement.buildtime;
+      if (this.addImediately) {
+        buildtime = 0;
+      }
+      if (buildtime > 0) {
         this.stronghold.construction.push({ ...improvement });
       } else {
         this.addImprovement(improvement);
       }
-      if (!improvement.private) {
+      if (!improvement.private && !this.dmGift) {
         for (let key in improvement.resourceCost) {
           this.stronghold.resources[key] -= improvement.resourceCost[key];
           if (this.stronghold.resources[key] < 0) {

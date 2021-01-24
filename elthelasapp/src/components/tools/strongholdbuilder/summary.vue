@@ -55,6 +55,12 @@
                       v-model="stronghold.gameYear" />
         </label>
       </div>
+      <div class="row">
+        Starting Land (km^2)
+        <input type="number" min="1"
+               max="100" step="1" class="form-control"
+               v-model="stronghold.improvements[0].count" />
+      </div>
       <h4>Load Stronghold</h4>
       <ul>
         <li v-for="stronghold in allStrongholds" :key="stronghold._id">
