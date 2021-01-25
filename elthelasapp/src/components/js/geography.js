@@ -86,16 +86,23 @@ export default {
     addpolygon (nation) {
       let year = Number(this.year);
       let bordercoords = false;
-      if (year < 1845 && nation.bordercoords44) {
-        bordercoords = nation.bordercoords44;
-      } else if (year > 1849 && nation.bordercoords53) {
-        bordercoords = nation.bordercoords53;
-      } else if (nation.bordercoords) {
-        bordercoords = nation.bordercoords;
+      nation.bordercoords.sort((a, b) => {
+        if (a.year > b.year) {
+          return 1;
+        } else {
+          return -1;
+        }
+      });
+      let prevyear = -5000;
+      for (var x = 0; x < nation.bordercoords.length; x++) {
+        if (nation.bordercoords[x].year <= year && nation.bordercoords[x].year > prevyear) {
+          prevyear = nation.bordercoords[x].year;
+          bordercoords = nation.bordercoords[x].borders;
+        }
       }
-      if (bordercoords) {
+      if (bordercoords && bordercoords.length > 0 && year >= nation.startyear && (!nation.endyear || year < nation.endyear)) {
         var terr = L.polygon(bordercoords, { color: nation.color });
-        terr.addTo(this.map);
+        terr.addTo(this.map).bindTooltip(nation.name, { permanent: true, interactive: true, direction: "auto", opacity: 0.75, className: "nationlabel" });
         $(terr).click(() => {
           this.showdetails(nation, 'nation');
         });
@@ -118,7 +125,7 @@ export default {
         this.addmarker(this.cities[x], 'city');
       }
       for (let x = 0; x < this.nations.length; x++) {
-        this.addmarker(this.nations[x], 'nation');
+        // this.addmarker(this.nations[x], 'nation');
         this.addpolygon(this.nations[x]);
       }
       for (let x = 0; x < this.landmarks.length; x++) {
@@ -143,7 +150,7 @@ export default {
     showNations () {
       this.clearmarkers();
       for (var x = 0; x < this.nations.length; x++) {
-        this.addmarker(this.nations[x], 'nation');
+        // this.addmarker(this.nations[x], 'nation');
         this.addpolygon(this.nations[x]);
       }
     },

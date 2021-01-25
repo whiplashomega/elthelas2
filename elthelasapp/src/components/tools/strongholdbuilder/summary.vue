@@ -56,10 +56,12 @@
         </label>
       </div>
       <div class="row">
-        Starting Land (km^2)
-        <input type="number" min="1"
-               max="100" step="1" class="form-control"
-               v-model="stronghold.improvements[0].count" />
+        <div class="col-sm-12">
+          Starting Land (km^2)
+          <input type="number" min="1"
+                 max="100" step="1"
+                 class="form-control" v-model="stronghold.improvements[0].count" />
+        </div>
       </div>
       <h4>Load Stronghold</h4>
       <ul>

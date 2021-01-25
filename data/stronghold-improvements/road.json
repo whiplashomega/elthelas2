@@ -1,7 +1,7 @@
 {
   "id": "road",
   "name": "Road",
-  "benefit": "reduces travel time to Cur'Estan by 50%, doubles your export limit.",
+  "benefit": "reduces travel time to nearby towns by 50%, doubles your export limit.",
   "staff": [ ],
   "goldCost": 10000,
   "resourceCost":  {

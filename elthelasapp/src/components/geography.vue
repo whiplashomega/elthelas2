@@ -18,8 +18,8 @@
     <div class="yearslide">
       <h5>Year</h5>
       <input type="range" class="form-range"
-             v-model="year" :min="1840"
-             :max="1853" step="1" /> {{ year }}
+             v-model="year" :min="-500"
+             :max="1853" step="1" /> <input type="number" v-model="year" :min="-500" :max ="1853" step="1" />
     </div>
     <div id="map"></div>
     Latlong: [{{ mouselat }}, {{ mouselong }}]
