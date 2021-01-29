@@ -48,12 +48,12 @@ self.__precacheManifest = [
     "url": "/js/encounters.97e9f5a7.js"
   },
   {
-    "revision": "eabb22fd99f8e9679ab9",
-    "url": "/css/geography.cffa8c1f.css"
+    "revision": "dbb268e26a16343ff189",
+    "url": "/css/geography.683e088f.css"
   },
   {
-    "revision": "eabb22fd99f8e9679ab9",
-    "url": "/js/geography.b2a7749a.js"
+    "revision": "dbb268e26a16343ff189",
+    "url": "/js/geography.fb43e430.js"
   },
   {
     "revision": "7fd8d396c472a865dedc",
@@ -64,12 +64,12 @@ self.__precacheManifest = [
     "url": "/js/magicitems.ef89fbdb.js"
   },
   {
-    "revision": "4b864e1069f51db8c585",
-    "url": "/css/quickref.5ddd20ad.css"
+    "revision": "f96d37e0186e0e483d63",
+    "url": "/css/quickref.59056da7.css"
   },
   {
-    "revision": "4b864e1069f51db8c585",
-    "url": "/js/quickref.dd01fa72.js"
+    "revision": "f96d37e0186e0e483d63",
+    "url": "/js/quickref.70a965be.js"
   },
   {
     "revision": "da9e4f95760975edbe97",
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "a3ce49b8906c946c9c33f601399feadd",
+    "revision": "4c2cbf6bc285c85cf97cf6739ca7140d",
     "url": "/index.html"
   },
   {
@@ -152,8 +152,8 @@ self.__precacheManifest = [
     "url": "/json/features.json"
   },
   {
-    "revision": "13c2dea2a03c3be4e2fe",
-    "url": "/js/app.1aacfb82.js"
+    "revision": "3f961dc7a863ad71ea97",
+    "url": "/js/app.9159d6e5.js"
   },
   {
     "revision": "8629b20068820edb09c6",
@@ -188,7 +188,7 @@ self.__precacheManifest = [
     "url": "/json/races.json"
   },
   {
-    "revision": "bbdc3f59ede8fba856d497a56619b143",
+    "revision": "c2c83e2ba4d13d9cdabd4920e4b9122b",
     "url": "/json/spells.json"
   },
   {
@@ -300,7 +300,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/pcs.md"
   },
   {
-    "revision": "13c2dea2a03c3be4e2fe",
+    "revision": "3f961dc7a863ad71ea97",
     "url": "/css/app.136443e7.css"
   },
   {

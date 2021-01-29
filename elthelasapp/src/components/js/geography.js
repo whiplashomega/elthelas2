@@ -40,7 +40,7 @@ export default {
       warmap: false,
       mouselat: 0,
       mouselong: 0,
-      year: 1853
+      year: 1854
     };
   },
   methods: {

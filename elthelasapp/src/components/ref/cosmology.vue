@@ -4,6 +4,12 @@
     <p>
       The Planes in Elthelas are geographically coexistent, but the actual matter making them up is separated by barriers of arcane force. Thus, planes being adjacent is simply describing that there is only one barrier between them. Since cutting through multiple planar barriers at once requires exponentially more energy, planar travel typically requires movement through adjacent planes.
     </p>
+    <div>
+      <img src="https://elthelas-images.herokuapp.com/elthelas-planar-map.jpg" style="width: 100%;" alt="A map of the Planes of Elthelas" />
+      <p>
+        Map image courtesy of <a href="https://github.com/sethscheib">Seth Scheib</a>
+      </p>
+    </div>
     <h3>The Planes of Creation</h3>
     <p>
       These are the planes derived from the essence of Gaian, the heart of creation. The geography of each of these planes is mirrored between them, the root of which is the Material, and all the others being reflections of that.
