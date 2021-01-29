@@ -7,7 +7,7 @@
     <div>
       <img src="https://elthelas-images.herokuapp.com/maps/elthelas-planar-map.jpg" style="width: 100%;" alt="A map of the Planes of Elthelas" />
       <p>
-        Map image courtesy of <a href="https://github.com/sethscheib">Seth Scheib</a>
+        Map image courtesy of <a href="https://github.com/sethscheib">Seth Scheib</a>, Art by Chyna Schut
       </p>
     </div>
     <h3>The Planes of Creation</h3>
