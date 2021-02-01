@@ -243,8 +243,17 @@ export default {
     return state.current.gameMonth + "/" + state.current.gameDay + "/" + state.current.gameYear;
   },
   getPop: (state) => {
-    let pop = state.current.population.adults + state.current.population.children + state.current.population.invalid + state.current.staff.length;
+    let pop = Number(state.current.population.adults) + Number(state.current.population.children) + Number(state.current.population.invalid) + state.current.staff.length;
     return pop;
+  },
+  getEmployable: (state) => {
+    return state.current.population.adults;
+  },
+  getChildren: (state) => {
+    return state.current.population.children;
+  },
+  getInvalid: (state) => {
+    return state.current.population.invalid;
   },
   getBuyTable: state => state.buyTable,
   getSellTable: state => state.sellTable,
@@ -454,7 +463,7 @@ export default {
     }, 0);
   },
   unemploymentRate: (state, getters) => {
-    return Math.round((1 - ((getters.totalEmployees + getters.totalPrivateEmployed) / (getters.getPop * 0.7))) * 100);
+    return Math.round((1 - ((getters.totalEmployees + getters.totalPrivateEmployed) / Number(state.current.population.adults))) * 100);
   },
   unitWeightMod: (state) => state.unitWeightMod,
   unmetStaffNeed: (state, getters) => {

@@ -5,6 +5,7 @@ export default {
     ...mapGetters({
       guardsNeeded: "guardsNeeded",
       totalSalary: 'totalSalary',
+      getPop: 'getPop',
       stronghold: 'stronghold',
       servantsNeeded: 'servantsNeeded',
       laborersNeeded: 'laborersNeeded',

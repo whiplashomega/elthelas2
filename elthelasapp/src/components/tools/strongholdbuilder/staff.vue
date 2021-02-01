@@ -13,7 +13,7 @@
             <tr>
               <td>Healthy Adults</td>
               <td>
-                <input type="number" v-model="stronghold.population.adults" 
+                <input type="number" v-model="stronghold.population.adults"
                        class="form-control" min="0" />
               </td>
             </tr>
@@ -29,6 +29,12 @@
               <td>
                 <input type="number" v-model="stronghold.population.invalid"
                        class="form-control" min="0" />
+              </td>
+            </tr>
+            <tr>
+              <td>Total Population</td>
+              <td>
+                {{ getPop }}
               </td>
             </tr>
           </tbody>
@@ -74,7 +80,7 @@
             </tr>
           </tbody>
         </table>
-        <div v-if="stronghold.laborers >= maxLaborers" class="red">Not Enough Housing To Hire Additional Laborers</div>
+        <div v-if="stronghold.laborers >= maxLaborers" class="red">Not Enough Housing or Healthy Adults To Hire Additional Laborers</div>
         <div v-if="availableStaffBeds <= 0" class="red">Not Enough Beds To House Additional Skilled Staff</div>
       </div>
       <div class="col-sm-2">
