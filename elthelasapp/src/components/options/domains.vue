@@ -309,9 +309,9 @@
       <p>
         When you choose this domain at 1st level, you gain proficiency with martial weapons.
       </p>
-      <h4>Disciple of Fire</h4>
+      <h4>Bonus Cantrips</h4>
       <p>
-        Also starting at 1st level, your fire spells are more effective, you add your wisdom modifier to the damage of any spell you cast that does fire damage.
+        You learn two of the following cantrips of your choice: create bonfire, control flames, fire bolt, produce flame, or green flame blade. These cantrips count as cleric spells for you.
       </p>
       <h4>Channel Divinity: Fire Burst</h4>
       <p>
@@ -320,9 +320,9 @@
       <p>
         As an action, you present your holy symbol and nearby enemies burst into flame.  Pick a number of opponents equal to your wisdom modifier within 30 feet of you.  Each of those creatures must make a constitution saving throw or catch fire.  The fire does 3d6 fire damage every round at the start of that creatures turn until someone uses an action to extinguish the flames.
       </p>
-      <h4>Manipulate Flames</h4>
+      <h4>Disciple of Fire</h4>
       <p>
-        At 6th level your God grants you the ability to manipulate flames.  On your turn, you can manipulate any non-magical flame within 60 feet of you. As an action you can extinguish any fire smaller than a 5 foot cube, or turn a small fire (such as a torch) into a conflagration in a neighboring square. Any creature caught in the conflagration must make a dexterity save, taking 2d6 fire damage on a failed save, or half as much on a successful one.  The conflagration lasts for only 1 round unless their is fuel available in the square, in which case it lasts until the fuel is consumed.
+        Starting at 6th level, your fire spells are more effective, you add your wisdom modifier to the damage of any spell you cast that does fire damage.
       </p>
       <h4>Flame Strike</h4>
       <p>
