@@ -1,7 +1,7 @@
 {
-  "id": "coal-mine",
-  "name": "Coal Mine",
-  "benefit": "mines coal for fun and profit. Requires the discovery of coal on your land before it can be built.",
+  "id": "rare-metal-mine",
+  "name": "Rare Metal Mine",
+  "benefit": "mines a rare metal for fun and profit (Mithral, Adamantium, Orichalcum). Requires the discovery of that metal on your land before it can be built. Enables local blacksmiths to work with that metal when making weapons or armor.",
   "staff": [{ "name": "Mine Foreman", "num": 1, "cur": 0 }],
   "goldCost": 2000,
   "resourceCost":  {
@@ -18,14 +18,14 @@
     "timber": 2000,
     "wool": 0
   },
-  "income": 0,
+  "income": 150,
   "revenue": {
     "alcohol": 0,
     "arcanum": 0,
     "cloth": 0,
-    "coal": 500,
+    "coal": 0,
     "food": 0,
-    "iron": 0,
+    "iron": 500,
     "leather": 0,
     "lumber": 0,
     "steel": 0,

@@ -3,6 +3,36 @@
     <h2>Staff</h2>
     <div class="row">
       <div class="col-sm-5">
+        <h4>Population</h4>
+        <table class="table table-striped table-sm">
+          <colgroup>
+            <col />
+            <col style="wdith: 15%;" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <td>Healthy Adults</td>
+              <td>
+                <input type="number" v-model="stronghold.population.adults" 
+                       class="form-control" min="0" />
+              </td>
+            </tr>
+            <tr>
+              <td>Children</td>
+              <td>
+                <input type="number" v-model="stronghold.population.children"
+                       class="form-control" min="0" />
+              </td>
+            </tr>
+            <tr>
+              <td>Sick</td>
+              <td>
+                <input type="number" v-model="stronghold.population.invalid"
+                       class="form-control" min="0" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
         <h4>Staff Summary</h4>
         Total Staff Salary: {{ totalSalary }}
         <table class="table table-striped table-sm">

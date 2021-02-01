@@ -18,6 +18,11 @@ export default function () {
       "timber": 0,
       "wool": 0
     },
+    population: {
+      adults: 0,
+      invalid: 0,
+      children: 0
+    },
     autoSell: {
       alcohol: 0,
       arcanum: 0,

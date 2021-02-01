@@ -16,6 +16,9 @@
       Total Population: {{ getPop }}<br />
       Your Employees: {{ totalEmployees }}<br />
       Total Number Employed: {{ totalEmployees + privateLaborers + stronghold.privateEmployees.length }}<br />
+      Adults in Good Health: {{ getEmployable }}<br />
+      Children: {{ getChildren }}<br />
+      Sick, Disabled, and Elderly: {{ getInvalid }}<br />
       Unemployment Rate: {{ unemploymentRate }}%<br />
       Beds for Staff: {{ staffBeds }}<br />
       Available Beds: {{ availableStaffBeds }}<br />

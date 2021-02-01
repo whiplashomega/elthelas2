@@ -243,9 +243,7 @@ export default {
     return state.current.gameMonth + "/" + state.current.gameDay + "/" + state.current.gameYear;
   },
   getPop: (state) => {
-    let pop = state.current.improvements.reduce((a, b) => {
-      return a + b.pop * b.count;
-    }, 0) + state.current.staff.length + state.current.privateEmployees.length;
+    let pop = state.current.population.adults + state.current.population.children + state.current.population.invalid + state.current.staff.length;
     return pop;
   },
   getBuyTable: state => state.buyTable,
@@ -287,11 +285,11 @@ export default {
     }, 0);
   },
   maxLaborers: (state, getters) => {
-    return state.current.improvements.reduce((total, imp) => {
+    return Math.min(state.current.improvements.reduce((total, imp) => {
       return total + Math.floor(imp.pop * imp.count * 0.7);
     }, 0) + state.current.privateEnterprise.reduce((total, imp) => {
       return total + Math.floor(imp.pop * imp.count * 0.7);
-    }, 0) - getters.privateLaborers;
+    }, 0) - getters.privateLaborers, state.current.population.adults - getters.privateLaborers);
   },
   neededStaff: (state) => {
     return state.current.improvements.reduce((a, b) => {

@@ -1,7 +1,7 @@
 {
   "id": "iron-mine",
   "name": "Iron Mine",
-  "benefit": "mines iron for fun and profit",
+  "benefit": "mines iron for fun and profit. Requires the discovery of iron on your land before it can be built.",
   "staff": [{ "name": "Mine Foreman", "num": 1, "cur": 0 }],
   "goldCost": 2000,
   "resourceCost":  {
