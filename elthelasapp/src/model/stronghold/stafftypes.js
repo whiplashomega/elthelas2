@@ -1,5 +1,15 @@
 export default [
   {
+    name: "Lord or Party Member",
+    typicalSalary: 0,
+    bonus: ""
+  },
+  {
+    name: "Other Retinue",
+    typicalSalary: 0,
+    bonus: ""
+  },
+  {
     name: "Archmage",
     typicalSalary: 720,
     bonus: "A master wizard of the highest order, can cast the most powerful of spells of the appropriate school.",

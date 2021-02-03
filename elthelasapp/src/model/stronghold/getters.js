@@ -300,6 +300,13 @@ export default {
       return total + Math.floor(imp.pop * imp.count * 0.7);
     }, 0) - getters.privateLaborers, state.current.population.adults - getters.privateLaborers);
   },
+  totalHousing: (state) => {
+    return state.current.improvements.reduce((total, imp) => {
+      return total + Math.floor(imp.pop * imp.count);
+    }, 0) + state.current.privateEnterprise.reduce((total, imp) => {
+      return total + Math.floor(imp.pop * imp.count);
+    }, 0);
+  },
   neededStaff: (state) => {
     return state.current.improvements.reduce((a, b) => {
       b.staff.forEach((st) => {

@@ -14,7 +14,9 @@ export default {
       unrest: 'unrest',
       exportLimit: 'exportLimit',
       usedStorage: 'usedStorage',
-      userinfo: "getUserInfo"
+      userinfo: "getUserInfo",
+      totalHousing: "totalHousing",
+      getPop: "getPop"
     })
   },
   data () {

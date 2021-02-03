@@ -14,7 +14,8 @@ export default {
       availableStaffBeds: 'availableStaffBeds',
       unmetStaffNeed: 'unmetStaffNeed',
       staffTypes: 'staffTypes',
-      userinfo: "getUserInfo"
+      userinfo: "getUserInfo",
+      totalHousing: "totalHousing"
     }),
     staffList () {
       return [ ...this.stronghold.staff ].sort((a, b) => {

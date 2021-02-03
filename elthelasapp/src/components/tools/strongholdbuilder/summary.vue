@@ -26,6 +26,14 @@
           </div>
         </div>
         <div class="row">
+          <div class="col-sm-3">
+            <strong>Total Housing: </strong> {{ totalHousing }}
+          </div>
+          <div class="col-sm-3">
+            <strong>Total Population: </strong> {{ getPop }}
+          </div>
+        </div>
+        <div class="row">
           <div v-for="(resource, key) in stronghold.resources" :key="key"
                class="col-sm-3" :class="calcTotalRevenue[key] < 0 ? 'red' : ''">
             <strong>{{ key }}</strong>: {{ resource }} (<span v-if="calcTotalRevenue[key] >= 0">+</span>{{ calcTotalRevenue[key] }})

@@ -31,13 +31,8 @@
     },
     {
       "level": 2,
-      "name": "Inspired Attack",
-      "description": "Starting at 2nd level, you can spend an epiphany point before making an attack roll to gain advantage on the roll."
-    },
-    {
-      "level": 2,
       "name": "Inspired Damage",
-      "description": "Starting at 2nd level, when you hit with an attack you can spend an epiphany point to add 2d8 damage to the damage roll. At 11th level this increases to 3d8, and at 17th level this increases to 4d8."
+      "description": "Starting at 2nd level, when you hit with an attack you can spend an epiphany point to add 2d6 damage to the damage roll. At 11th level this increases to 3d6, and at 17th level this increases to 4d6."
     },
     {
       "level": 3,
@@ -51,13 +46,18 @@
     },
     {
       "level": 5,
+      "name": "Inspired Attack",
+      "description": "Starting at 5th level, you can spend an epiphany point before making an attack roll to gain advantage on the roll."
+    },
+    {
+      "level": 5,
       "name": "Extra Attack",
       "description": "At 5th level you can make 2 attacks when you take the attack action on your turn."
     },
     {
-      "level": 11,
+      "level": 9,
       "name": "Inspired Defense",
-      "description": "At 11th level, On your turn you can spend 1 epiphany point to use the dodge or disengage actions as bonus actions on your turn."
+      "description": "At 9th level, On your turn you can spend 1 epiphany point to use the dodge or disengage actions as bonus actions on your turn."
     },
     {
       "level": 14,
@@ -88,12 +88,12 @@
         {
           "level": 10,
           "name": "Improved Inspired Damage",
-          "description": "At 10th level, when you use the inspired damage feature you add an additional 1d8 damage to the attack."
+          "description": "At 10th level, when you use the inspired damage feature you add an additional 1d6 damage to the attack."
         },
         {
           "level": 15,
           "name": "Improved Inspired Attack",
-          "description": "At 15th level, when you use an epiphany point to add a bonus to your attack roll, you can make an additional attack as a bonus action, gaining advantage on both attacks."
+          "description": "At 15th level, when you use an epiphany point to get advantage on your attack roll, you can make an additional attack as a bonus action, gaining advantage on both attacks."
         }
       ]
     },
