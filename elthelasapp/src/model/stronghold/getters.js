@@ -522,7 +522,7 @@ export default {
       let foodSubsidiesModifier = ((Number(state.current.laws.foodSubsidies) / getters.getPop)) * 50;
       unrest -= foodSubsidiesModifier;
     }
-    return Math.round(unrest);
+    return Math.max(Math.round(unrest), 0);
   },
   urbanLand: (state) => {
     let land = 0;

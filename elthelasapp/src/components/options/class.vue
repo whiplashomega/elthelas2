@@ -481,13 +481,9 @@
       <p>
         Each time you gain a Factotum level after 2nd, you can add one spell of your choice to your spellbook. Each of these spells must be of a level for which you have spell slots, as shown on the Factotum table. On your adventures, you might find other spells that you can add to your spellbook (see the “Your Spellbook” sidebar).
       </p>
-      <h4>Inspired Attack</h4>
-      <p>
-        Starting at 2nd level, you can spend an epiphany point before making an attack roll to gain advantage on the roll.
-      </p>
       <h4>Inspired Damage</h4>
       <p>
-        Starting at 2nd level, when you hit with an attack you can spend an epiphany point to add 2d8 damage to the damage roll. At 11th level this increases to 3d8, and at 17th level this increases to 4d8.
+        Starting at 2nd level, when you hit with an attack you can spend an epiphany point to add 2d6 damage to the damage roll. At 11th level this increases to 3d6, and at 17th level this increases to 4d6.
       </p>
       <h4>Factotum Philosophy</h4>
       <p>
@@ -501,9 +497,13 @@
       <p>
         At 5th level you can make 2 attacks when you take the attack action on your turn.
       </p>
+      <h4>Inspired Attack</h4>
+      <p>
+        Starting at 5th level, you can spend an epiphany point before making an attack roll to gain advantage on the roll.
+      </p>
       <h4>Inspired Defense</h4>
       <p>
-        At 11th level you can spend 1 epiphany point to use the dodge or disengage actions as bonus actions on your turn.
+        At 9th level you can spend 1 epiphany point to use the dodge or disengage actions as bonus actions on your turn.
       </p>
       <h4>Inspired Aid</h4>
       <p>
@@ -536,11 +536,11 @@
       </ul>
       <h4>Improved Inspired Damage</h4>
       <p>
-        At 10th level, when you use the inspired damage feature you add an additional 1d8 damage to the attack.
+        At 10th level, when you use the inspired damage feature you add an additional 1d6 damage to the attack.
       </p>
       <h4>Improved inspired Attack</h4>
       <p>
-        At 15th level, when you use an epiphany point to add a bonus to your attack roll, you can make an additional attack as a bonus action, gaining advantage on both attacks.
+        At 15th level, when you use an epiphany point to get advantage on your attack roll, you can make an additional attack as a bonus action, gaining advantage on both attacks.
       </p>
       <h3>Arcane Dilettante</h3>
       <p>

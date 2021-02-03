@@ -255,70 +255,69 @@
             <tr><td>15-16</td><td>A wandering prospector arrives and excitedly proclaims that he has found coal on your land.</td></tr>
             <tr><td>17</td><td>A wandering prospector arrives and excitedly proclaims that he has found a random rare metal on your land (roll a d3, 1=Mithral, 2=Adamantium, 3=Orichalcum).</td></tr>
             <tr><td>18-22</td><td>A wandering prospector arrives and offers to search your lands for valuable metals in return for a job as head miner (roll a d100, 1-5 he finds a rare metal, 5-15 he finds gold, 16-60 he finds Iron, 61-100 he finds coal).</td></tr>
-            <tr><td>23</td><td>Your miners stumble on a cache of buried treasure.</td></tr>
-            <tr><td>24</td><td>A merchant arrives in town offering special wares, including a selection of magic items.</td></tr>
-            <tr><td>25-26</td><td>A middle class family moves to town and builds a house.</td></tr>
-            <tr><td>27</td><td>Your workers discover an old shed in the woods, filled with booze. Gain 100 alcohol.</td></tr>
-            <tr><td>28-30</td><td>1d6 sick people recover naturally.</td></tr>
-            <tr><td>31</td><td>A wandering cleric comes through town and heals 3d4 people before moving on.</td></tr>
-            <tr><td>32-33</td><td>An invitation from a neighboring Lord arrives to join them for a feast.</td></tr>
-            <tr><td>34</td><td>A wandering druid casts Plant Growth on one of your farms, doubling its yield for the day.</td></tr>
-            <tr><td>35</td><td>Mercenaries arrive in town and offer their services.</td></tr>
-            <tr><td>36</td><td>An Artificer arrives in town offering to sell a device he has invented.</td></tr>
-            <tr><td>37-41</td><td>A baby is born in town.</td></tr>
-            <tr><td>42-47</td><td>An elderly person in town dies.</td></tr>
-            <tr><td>48-52</td><td>A child has reached adulthood (1 child becomes an adult).</td></tr>
-            <tr><td>53-54</td><td>A rare animal is spotted in the woods.</td></tr>
-            <tr><td>55</td><td>One of the townspeople is convinced a family member is a doppleganger.</td></tr>
-            <tr><td>56</td><td>A pair of mages arrive in town separately, begin dueling in the town square, the residents are terrified.</td></tr>
-            <tr><td>57</td><td>A mysterious stranger arrives in town selling cursed items to townsfolk.</td></tr>
-            <tr><td>58</td><td>One of the townsfolk finds a treasure map in the attic left behind by his recently deceased grandfather.</td></tr>
-            <tr><td>59-60</td><td>An adventurer arrives in town with tales of a lost treasure. His companions fell trying to claim it.</td></tr>
-            <tr><td>61</td><td>A dragon lands in the center of town and takes a nap.</td></tr>
-            <tr><td>62-63</td><td>A wandering duelist comes to town and challenges one of the players to a duel of honor (to the blood, not the death)</td></tr>
-            <tr><td>64-65</td><td>A worker is injured in an accident (1 adult becomes invalid).</td></tr>
-            <tr><td>66-70</td><td>A worker has retired.</td></tr>
-            <tr><td>71</td><td>Nothing interesting happens.</td></tr>
-            <tr><td>72</td><td>A Tax Collector from a ruler arrives and demands a tax payment of d20 * 25 gp</td></tr>
-            <tr><td>73</td><td>A Tax Collector from a ruler arrives and demands a tax payment of d20 * 50 gp</td></tr>
-            <tr><td>74</td><td>A Tax Collector from a ruler arrives and demands a tax payment of d20 * 75 gp</td></tr>
-            <tr><td>75</td><td>A Tax Collector from a ruler arrives and demands a tax payment of d20 * 100 gp</td></tr>
-            <tr><td>76</td><td>A Tax Collector from a ruler arrives and demands a tax payment of d20 * 125 gp</td></tr>
-            <tr><td>77</td><td>A Tax Collector from a ruler arrives and demands a tax payment of d20 * 150 gp</td></tr>
-            <tr><td>78</td><td>3d4 (1d4 children, 1d4 adults, 1d4 invalids) Refugees arrive at your town begging for a place to live.</td></tr>
-            <tr><td>79</td><td>3d6 (1d6 children, 1d6 adults, 1d6 invalids) Refugees arrive at your town begging for a place to live.</td></tr>
-            <tr><td>80</td><td>3d8 (1d8 children, 1d8 adults, 1d8 invalids) Refugees arrive at your town begging for a place to live.</td></tr>
-            <tr><td>81</td><td>6d4 (2d4 children, 2d4 adults, 2d4 invalids) Refugees arrive at your town begging for a place to live.</td></tr>
-            <tr><td>82</td><td>6d6 (2d6 children, 2d6 adults, 2d6 invalids) Refugees arrive at your town begging for a place to live.</td></tr>
-            <tr><td>83</td><td>6d8 (2d8 children, 2d8 adults, 2d8 invalids) Refugees arrive at your town begging for a place to live.</td></tr>
-            <tr><td>84</td><td>9d4 (3d4 children, 3d4 adults, 3d4 invalids) Refugees arrive at your town begging for a place to live.</td></tr>
-            <tr><td>85</td><td>9d6 (3d6 children, 3d6 adults, 3d6 invalids) Refugees arrive at your town begging for a place to live.</td></tr>
-            <tr><td>86</td><td>9d8 (3d8 children, 3d8 adults, 3d8 invalids) Refugees arrive at your town begging for a place to live.</td></tr>
-            <tr><td>87</td><td>There is a murder in town! The people beg the players to investigate.</td></tr>
-            <tr><td>88</td><td>A wolf pack has killed some sheep on a farm you own. Lose 100 food, and it has a 25% chance of happening again each day until the wolves are found and dealt with.</td></tr>
-            <tr><td>89</td><td>People die in a tragic accident, 1d6 people die.</td></tr>
-            <tr><td>90</td><td>There is a Monster lurking near town (roll randomly to determine type).</td></tr>
-            <tr><td>91</td><td>A large group of townspeople have joined a suspicious cult, your steward is concerned.</td></tr>
-            <tr><td>92</td><td>A large group of townspeople have converted to a new religion.</td></tr>
-            <tr><td>93</td><td>Flooding in town causes damage to several buildings.</td></tr>
-            <tr><td>94</td><td>Some of your people are convinced by wandering adventurers to join their quest. 1d4 adults leave town.</td></tr>
-            <tr><td>95</td><td>Plague sweeps into town, sickening 2d6 people per day until it is dealt with.</td></tr>
-            <tr><td>96</td><td>There is a shipwreck near the town blocking the harbor and disrupting trade.</td></tr>
-            <tr><td>97</td><td>A bad storm causes damage to a building and injures 1d6 people and killing 1d4-1.</td></tr>
-            <tr><td>98</td><td>A chromatic dragon demands tribute or it will burn the town.</td></tr>
-            <tr><td>99-100</td><td>Graves have been dug up in the night, the Steward suspects a necromancer.</td></tr>
-            <tr><td>101-103</td><td>One of the loyalists in town is attacked by a mob and killed.</td></tr>
-            <tr><td>104-106</td><td>Mercenaries attack and attempt to take the town!</td></tr>
-            <tr><td>107-109</td><td>Work strike happens. 50% of yesterdays income lost. Will continue until demands are met or otherwise dealt with.</td></tr>
-            <tr><td>110-112</td><td>Drug problems are sweeping through town causing working adults to become sick. 1d6 people each day become sick until it is dealt with.</td></tr>
-            <tr><td>113-115</td><td>People leave your town. 3d6 people (1d6 of each type) leave town to find a new home.</td></tr>
-            <tr><td>116-118</td><td>Starving people have begun to grow sick, 2d6 adults become invalids</td></tr>
-            <tr><td>119-122</td><td>An Assassin strikes in the night attempting to kill one of the players or a member of their staff.</td></tr>
-            <tr><td>123-125</td><td>A lycanthrope has bitten some people in your town. If not dealt with, it is likely to spread.</td></tr>
-            <tr><td>126-127</td><td>Arsonists strike in the night burning down a random building. The cost to rebuild depends on the building and the effectiveness of the response.</td></tr>
-            <tr><td>128-129</td><td>Petty criminals plague the town, robbing houses and picking pockets. Tax revenues are reduced by 25% until they are dealt with, and things in storage may randomly disappear.</td></tr>
-            <tr><td>130-132</td><td>Starving people have raided your storehouses, stealing all of your stored food.</td></tr>
-            <tr><td>133+</td><td>Revolt. The people in your village are taking up arms to attack you!</td></tr>
+            <tr><td>23-26</td><td>8d8 (3d8 children, 5d8 adults) colonists arrive unexpectedly from one of the Alliance nations (roll randomly), hoping for a place to settle. They bring enough materials and money to build 3 houses and a large farm.</td></tr>
+            <tr><td>27</td><td>Your miners stumble on a cache of buried treasure.</td></tr>
+            <tr><td>28</td><td>A merchant arrives in town offering special wares, including a selection of magic items.</td></tr>
+            <tr><td>29-30</td><td>A middle class family moves to town and builds a house.</td></tr>
+            <tr><td>31</td><td>Your workers discover an old shed in the woods, filled with booze. Gain 100 alcohol.</td></tr>
+            <tr><td>31-33</td><td>1d6 sick people recover naturally.</td></tr>
+            <tr><td>34</td><td>A wandering cleric comes through town and heals 3d4 people before moving on.</td></tr>
+            <tr><td>35-36</td><td>An invitation from a neighboring Lord arrives to join them for a feast.</td></tr>
+            <tr><td>37</td><td>A wandering druid casts Plant Growth on one of your farms, doubling its yield for the day.</td></tr>
+            <tr><td>38</td><td>Mercenaries arrive in town and offer their services.</td></tr>
+            <tr><td>39</td><td>An Artificer arrives in town offering to sell a device he has invented.</td></tr>
+            <tr><td>40-45</td><td>A baby is born in town.</td></tr>
+            <tr><td>46-50</td><td>An elderly person in town dies.</td></tr>
+            <tr><td>51-55</td><td>A child has reached adulthood (1 child becomes an adult).</td></tr>
+            <tr><td>56-57</td><td>A rare animal is spotted in the woods.</td></tr>
+            <tr><td>58</td><td>One of the townspeople is convinced a family member is a doppleganger.</td></tr>
+            <tr><td>59</td><td>A pair of mages arrive in town separately, begin dueling in the town square, the residents are terrified.</td></tr>
+            <tr><td>60</td><td>A mysterious stranger arrives in town selling cursed items to townsfolk.</td></tr>
+            <tr><td>61</td><td>One of the townsfolk finds a treasure map in the attic left behind by his recently deceased grandfather.</td></tr>
+            <tr><td>62-63</td><td>An adventurer arrives in town with tales of a lost treasure. His companions fell trying to claim it.</td></tr>
+            <tr><td>64</td><td>A dragon lands in the center of town and takes a nap.</td></tr>
+            <tr><td>65</td><td>A wandering duelist comes to town and challenges one of the players to a duel of honor (to the blood, not the death)</td></tr>
+            <tr><td>66</td><td>A worker is injured in an accident (1 adult becomes invalid).</td></tr>
+            <tr><td>67-69</td><td>A worker has retired.</td></tr>
+            <tr><td>70</td><td>Nothing interesting happens.</td></tr>
+            <tr><td>71</td><td>A Tax Collector from a ruler arrives and demands a tax payment of d20 * 25 gp</td></tr>
+            <tr><td>72</td><td>A Tax Collector from a ruler arrives and demands a tax payment of d20 * 50 gp</td></tr>
+            <tr><td>73</td><td>A Tax Collector from a ruler arrives and demands a tax payment of d20 * 75 gp</td></tr>
+            <tr><td>74</td><td>A Tax Collector from a ruler arrives and demands a tax payment of d20 * 100 gp</td></tr>
+            <tr><td>75</td><td>A Tax Collector from a ruler arrives and demands a tax payment of d20 * 125 gp</td></tr>
+            <tr><td>76</td><td>A Tax Collector from a ruler arrives and demands a tax payment of d20 * 150 gp</td></tr>
+            <tr><td>77</td><td>3d4 (1d4 children, 1d4 adults, 1d4 invalids) Refugees arrive at your town begging for a place to live.</td></tr>
+            <tr><td>78</td><td>3d6 (1d6 children, 1d6 adults, 1d6 invalids) Refugees arrive at your town begging for a place to live.</td></tr>
+            <tr><td>79</td><td>3d8 (1d8 children, 1d8 adults, 1d8 invalids) Refugees arrive at your town begging for a place to live.</td></tr>
+            <tr><td>80</td><td>6d4 (2d4 children, 2d4 adults, 2d4 invalids) Refugees arrive at your town begging for a place to live.</td></tr>
+            <tr><td>81</td><td>6d6 (2d6 children, 2d6 adults, 2d6 invalids) Refugees arrive at your town begging for a place to live.</td></tr>
+            <tr><td>82</td><td>6d8 (2d8 children, 2d8 adults, 2d8 invalids) Refugees arrive at your town begging for a place to live.</td></tr>
+            <tr><td>83</td><td>There is a murder in town! The people beg the players to investigate.</td></tr>
+            <tr><td>84</td><td>A wolf pack has killed some sheep on a farm you own. Lose 100 food, and it has a 25% chance of happening again each day until the wolves are found and dealt with.</td></tr>
+            <tr><td>85</td><td>People die in a tragic accident, 1d6 people die.</td></tr>
+            <tr><td>86</td><td>There is a Monster lurking near town (roll randomly to determine type).</td></tr>
+            <tr><td>87</td><td>A large group of townspeople have joined a suspicious cult, your steward is concerned.</td></tr>
+            <tr><td>88</td><td>A large group of townspeople have converted to a new religion.</td></tr>
+            <tr><td>89</td><td>Flooding in town causes damage to several buildings.</td></tr>
+            <tr><td>90</td><td>Some of your people are convinced by wandering adventurers to join their quest. 1d4 adults leave town.</td></tr>
+            <tr><td>91</td><td>Plague sweeps into town, sickening 2d6 people per day until it is dealt with.</td></tr>
+            <tr><td>92</td><td>There is a shipwreck near the town blocking the harbor and disrupting trade.</td></tr>
+            <tr><td>93</td><td>A bad storm causes damage to a building and injures 1d6 people and killing 1d4-1.</td></tr>
+            <tr><td>94</td><td>A chromatic dragon demands tribute or it will burn the town.</td></tr>
+            <tr><td>95</td><td>Graves have been dug up in the night, the Steward suspects a necromancer.</td></tr>
+            <tr><td>96-99</td><td>People leave your town. 3d6 people (1d6 children and 2d6 adults) leave town to find a new home.</td></tr>
+            <tr><td>100-102</td><td>One of the loyalists in town is attacked by a mob and killed.</td></tr>
+            <tr><td>103-105</td><td>Revolutionaries attack and attempt to take the town!</td></tr>
+            <tr><td>106-107</td><td>Work strike happens. 50% of yesterdays income lost. Will continue until demands are met or otherwise dealt with.</td></tr>
+            <tr><td>108-110</td><td>Revolt. The people in your village are taking up arms to attack you!</td></tr>
+            <tr><td>111-113</td><td>Drug problems are sweeping through town causing working adults to become sick. 1d6 people each day become sick until it is dealt with.</td></tr>
+            <tr><td>114-115</td><td>Starving people have begun to grow sick, 2d6 adults become invalids</td></tr>
+            <tr><td>116-118</td><td>An Assassin strikes in the night attempting to kill one of the players or a member of their staff.</td></tr>
+            <tr><td>119</td><td>A lycanthrope has bitten some people in your town. If not dealt with, it is likely to spread.</td></tr>
+            <tr><td>120</td><td>Arsonists strike in the night burning down a random building. The cost to rebuild depends on the building and the effectiveness of the response.</td></tr>
+            <tr><td>121-122</td><td>Petty criminals plague the town, robbing houses and picking pockets. Tax revenues are reduced by 25% until they are dealt with, and things in storage may randomly disappear.</td></tr>
+            <tr><td>123-124</td><td>Starving people have raided your storehouses, stealing all of your stored food.</td></tr>
+            <tr><td>125+</td><td>Revolt. The people in your village are taking up arms to attack you!</td></tr>
           </tbody>
         </table>
       </b-tab>

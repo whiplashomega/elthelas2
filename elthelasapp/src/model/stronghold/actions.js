@@ -77,19 +77,19 @@ export default {
       } else {
         improvement.count++;
         state.current.privateEnterprise.push(improvement);
-        improvement.staff.forEach((st) => {
-          let match = getters.staffTypes.filter((a) => {
-            return a.name === st.name;
-          })[0];
-          if (match && st.num > 0) {
-            for (var x = 0; x < st.num; x++) {
-              state.current.privateEmployees.push({ id: Date.now() + Math.random(), ...match });
-            }
-          } else if (match) {
+      }
+      improvement.staff.forEach((st) => {
+        let match = getters.staffTypes.filter((a) => {
+          return a.name === st.name;
+        })[0];
+        if (match && st.num > 0) {
+          for (var x = 0; x < st.num; x++) {
             state.current.privateEmployees.push({ id: Date.now() + Math.random(), ...match });
           }
-        });
-      }
+        } else if (match) {
+          state.current.privateEmployees.push({ id: Date.now() + Math.random(), ...match });
+        }
+      });
     } else {
       if (match) {
         match.count++;
