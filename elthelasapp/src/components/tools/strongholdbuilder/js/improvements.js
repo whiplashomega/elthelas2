@@ -57,7 +57,16 @@ export default {
           } else if ((imp.id === "clear-land" || imp.id === "lumber-camp") && this.availableForestedLand < 1) {
             allmet = false;
           }
+          if (this.tagFilter !== "all") {
+            if (!imp.tags.includes(this.tagFilter)) {
+              allmet = false;
+            }
+          }
           return allmet;
+        });
+      } else if (this.tagFilter !== "all") {
+        return this.improvements.filter((imp) => {
+          return imp.tags.includes(this.tagFilter);
         });
       } else {
         return this.improvements;
@@ -102,7 +111,8 @@ export default {
       addImprovementModal: false,
       showAvailable: true,
       dmGift: false,
-      addImediately: false
+      addImediately: false,
+      tagFilter: "all"
     };
   },
   methods: {

@@ -35,6 +35,15 @@
         <input type="checkbox" v-model="showAvailable" /> Only Show Available Improvements
         <input type="checkbox" v-model="dmGift" /> DM Gift (added without cost)
         <input type="checkbox" v-model="addImediately" /> Ignore Construction Time
+        <select v-model="tagFilter">
+          <option value="all">All</option>
+          <option value="infrastructure">Infrastructure</option>
+          <option value="income">Income</option>
+          <option value="player-benefit">Player Benefit</option>
+          <option value="housing">Housing</option>
+          <option value="defense">Defense</option>
+          <option value="faction-base">Potential Base</option>
+        </select>
         <table class="table table-striped table-responsive" style="width:100%;">
           <colgroup>
             <col style="width:10%;" />
