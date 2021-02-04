@@ -160,14 +160,14 @@ export default {
       let naturecleric = state.current.staff.filter((a) => {
         return a.job.subtype === 'Nature';
       })[0];
-      if (naturecleric && (improvement.id === 'food-farm' || improvement.id === 'sheep-farm' || improvement.id === "cattle-farm" || improvement.id === "winery")) {
-        revenue[res] *= 2;
+      if (naturecleric && (improvement.id === 'food-farm' || improvement.id === "winery")) {
+        revenue[res] *= 1.25;
       }
       let earthcleric = state.current.staff.filter((a) => {
         return a.job.subtype === "Earth";
       })[0];
       if (earthcleric && (improvement.id === 'coal-mine' || improvement.id === 'iron-mine' || improvement.id === 'quarry')) {
-        revenue[res] *= 2;
+        revenue[res] *= 1.25;
       }
     }
     return revenue;

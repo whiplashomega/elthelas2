@@ -33,7 +33,7 @@
             <strong>Total Population: </strong> {{ getPop }}
           </div>
           <div class="col-sm-3">
-            <strong>Non-Staff Population: </strong> {{ getPop - (staffSummary.length + Number(stronghold.guards) + Number(stronghold.servants)) }}
+            <strong>Non-Staff Population: </strong> {{ getPop - (staffList.length + Number(stronghold.guards) + Number(stronghold.servants)) }}
           </div>
         </div>
         <div class="row">
