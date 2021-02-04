@@ -16,7 +16,8 @@ export default {
       usedStorage: 'usedStorage',
       userinfo: "getUserInfo",
       totalHousing: "totalHousing",
-      getPop: "getPop"
+      getPop: "getPop",
+      staffSummary: "staffSummary"
     })
   },
   data () {

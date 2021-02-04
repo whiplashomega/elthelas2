@@ -244,6 +244,7 @@ export default {
   },
   getPop: (state) => {
     let pop = Number(state.current.population.adults) + Number(state.current.population.children) + Number(state.current.population.invalid) + state.current.staff.length;
+    pop += Number(state.current.guards) + Number(state.current.servants);
     return pop;
   },
   getEmployable: (state) => {

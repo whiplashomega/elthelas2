@@ -27,10 +27,13 @@
         </div>
         <div class="row">
           <div class="col-sm-3">
-            <strong>Total Housing: </strong> {{ totalHousing }}
+            <strong>Non-Staff Housing: </strong> {{ totalHousing }}
           </div>
           <div class="col-sm-3">
             <strong>Total Population: </strong> {{ getPop }}
+          </div>
+          <div class="col-sm-3">
+            <strong>Non-Staff Population: </strong> {{ getPop - (staffSummary.length + Number(stronghold.guards) + Number(stronghold.servants)) }}
           </div>
         </div>
         <div class="row">
