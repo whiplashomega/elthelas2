@@ -301,8 +301,7 @@
             <tr><td>89</td><td>Flooding in town causes damage to several buildings.</td></tr>
             <tr><td>90</td><td>Some of your people are convinced by wandering adventurers to join their quest. 1d4 adults leave town.</td></tr>
             <tr><td>91</td><td>Plague sweeps into town, sickening 2d6 people per day until it is dealt with.</td></tr>
-            <tr><td>92</td><td>There is a shipwreck near the town blocking the harbor and disrupting trade.</td></tr>
-            <tr><td>93</td><td>A bad storm causes damage to a building and injures 1d6 people and killing 1d4-1.</td></tr>
+            <tr><td>92-93</td><td>Robbery! Robbers break into the keep in the night and attempt to make off with any stored gold.</td></tr>
             <tr><td>94</td><td>A chromatic dragon demands tribute or it will burn the town.</td></tr>
             <tr><td>95</td><td>Graves have been dug up in the night, the Steward suspects a necromancer.</td></tr>
             <tr><td>96-99</td><td>People leave your town. 3d6 people (1d6 children and 2d6 adults) leave town to find a new home.</td></tr>
