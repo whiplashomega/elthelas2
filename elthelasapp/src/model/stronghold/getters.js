@@ -175,39 +175,14 @@ export default {
   expenses: (state, getters) => {
     return Math.round((getters.totalSalary + getters.buildingMaintenance + getters.resourceCost) * 100) / 100;
   },
-  exportLimit: (state, getters) => {
-    let road = state.current.improvements.filter((a) => {
-      if (a.id === "road") {
-        return true;
-      }
-      return false;
-    })[0];
-    let harbor = state.current.improvements.filter((a) => {
-      if (a.id === "harbor") {
-        return true;
-      }
-      return false;
-    })[0];
-    let base = state.current.merchants.reduce((tot, mer) => {
-      return tot + Number(mer.carryweight);
-    }, 0);
-    let exportLimit = base;
-    if (road) {
-      exportLimit += base;
-    }
-    if (harbor) {
-      exportLimit += base * 2;
-    }
-    return exportLimit;
-  },
   farmLand: (state) => {
     let land = 0;
-    let farms = state.current.improvements.forEach((a) => {
+    state.current.improvements.forEach((a) => {
       if (a.isfarm) {
         land++;
       }
     });
-    let pfoodfarms = state.current.privateEnterprise.forEach((a) => {
+    state.current.privateEnterprise.forEach((a) => {
       if (a.isfarm) {
         land++;
       }
@@ -449,7 +424,7 @@ export default {
     }, 0);
   },
   unemploymentRate: (state, getters) => {
-    return Math.round((1 - ((getters.totalEmployees + getters.totalPrivateEmployed) / Number(state.current.population.adults))) * 100);
+    return state.current.population.adults ? Math.round((1 - ((getters.totalEmployees + getters.totalPrivateEmployed) / Number(state.current.population.adults))) * 100) : 0;
   },
   unitWeightMod: (state) => state.unitWeightMod,
   unmetStaffNeed: (state, getters) => {
@@ -505,10 +480,16 @@ export default {
       // people want to work, very low unemployment reduces unrest, high unemployment increases unrest
       let unemploymentModifier = (getters.unemploymentRate - 20) * 0.5;
       unrest += unemploymentModifier;
-      let foodSubsidiesModifier = ((Number(state.current.laws.foodSubsidies) / getters.getPop)) * 50;
+      let foodSubsidiesModifier = getters.getPop ? ((Number(state.current.laws.foodSubsidies) / getters.getPop)) * 50 : 0;
       unrest -= foodSubsidiesModifier;
+      // people want a place to live. If there isn't enough housing, unrest increases
+      let housingModifier = getters.nonstaffPop ? Math.max(((getters.nonstaffPop - getters.totalHousing) / getters.nonstaffPop) * 2, 0): 0;
+      unrest += housingModifier;
     }
     return Math.max(Math.round(unrest), 0);
+  },
+  nonstaffPop: (state, getters) => {
+    return getters.getPop - (state.current.staff.length + Number(state.current.guards) + Number(state.current.servants));
   },
   urbanLand: (state) => {
     let land = 0;

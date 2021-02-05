@@ -17,7 +17,8 @@ export default {
       userinfo: "getUserInfo",
       totalHousing: "totalHousing",
       getPop: "getPop",
-      staffList: "staffList"
+      staffList: "staffList",
+      nonstaffPop: "nonstaffPop"
     })
   },
   data () {

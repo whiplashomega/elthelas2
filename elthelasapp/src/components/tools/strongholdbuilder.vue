@@ -87,16 +87,17 @@
             Employee Salaries: {{ totalSalary }}<br />
             Building Maintenance: {{ buildingMaintenance }}<br />
             Resource Purchases: {{ resourceCost }}
-            <h4>Exports/Imports</h4>
-            Today's Exports and Imports: {{ currentExportWeight }}<br />
-            Maximum Exports and Imports: {{ exportLimit }}<br />
+            <h4>Storage</h4>
             Current Stored Goods: {{ usedStorage }}<br />
             Total Storage Space: {{ totalStorage }}
           </div>
           <div class="col-sm-3">
             <h4>Taxes</h4>
             <p>
-              Collecting taxes requires a steward to be employed. Further, tax efficiency is determined by the rule of law in your demense, which is increased by hiring constables and guards. The higher the population, the more constables and guards you need. Constables require a constables office to do their job effectively, but are much more efficient at enforcing taxes and handling petty crime than guards.
+              Collecting taxes requires a steward to be employed. Further, tax efficiency is determined by the rule of law in your demense, which is increased by hiring constables and guards. The higher the population, the more constables and guards you need. Constables require a constables office to do their job effectively, but are much more efficient at enforcing taxes and handling petty crime than guards. For maximum tax efficiency you need at least 1 guard for every 100 people or at least 1 constable for every 500 people, combined. So if you have a population of 600, you would have maximum tax efficiency with 2 constables, 1 constable and 1 guard, or 6 guards.
+            </p>
+            <p>
+              Current Tax Efficiency: <strong>{{ taxEfficiency * 100 }}%</strong>
             </p>
             <input type="number" class="form-control"
                    min="0" max="0.5"
@@ -205,32 +206,13 @@
       </b-tab>
       <b-tab title="Private Enterprises">
         <div class="row">
-          <div class="col-sm-4">
-            <h4>Merchants</h4>
-            <button class="btn btn-success" @click="addMerchant()">Add</button>
-            <div v-for="merchant in stronghold.merchants" :key="merchant.id" class="row">
-              <label class="col-sm-7">
-                Name
-                <input type="text" class="form-control form-control-sm" v-model="merchant.name" />
-              </label>
-              <label class="col-sm-4">
-                Carry Weight
-                <input type="number" class="form-control form-control-sm"
-                       v-model="merchant.carryweight" min="0"
-                       title="amount that this merchant is able to carry out in kilograms in a day, a typical average merchant will have a value between 1000 and 2000" />
-              </label>
-              <div class="col-sm-1">
-                <button class="btn btn-sm btn-danger" style="margin-top:22px;" @click="deleteMerchant(merchant)">X</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
+          <div class="col-sm-6">
             <h4>{{ stronghold.townName }} Private Enterprises</h4>
             <div v-for="improvement in stronghold.privateEnterprise" :key="improvement.id">
               <h5>{{ improvement.name }} x {{ improvement.count }}</h5>
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-6">
             <h4>Private Staff</h4>
             <p><strong>Laborers: {{ privateLaborers }}</strong></p>
             <p v-for="staff in stronghold.privateEmployees" :key="staff.id">{{ staff.name }}</p>
@@ -325,7 +307,7 @@
     <p>&nbsp;</p>
   </div>
 </template>
-<script src="./js/stronghold.js"></script>
+<script src="./strongholdbuilder/js/stronghold.js"></script>
 <style>
 .modal-xl {
   max-width: 1400px;
