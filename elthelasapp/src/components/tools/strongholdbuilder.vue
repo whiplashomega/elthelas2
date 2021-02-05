@@ -117,6 +117,7 @@
                    style="max-width:75px; display:inline;" v-model="stronghold.laws.propertyTaxRate"
                    step="0.1" title="property taxes return a portion of the value of private property built on your land. The daily assessment cannot exceed 1% or property owners will simply sell out and leave." />
             Property Tax Rate (%)
+            <br />
             <input type="number" class="form-control"
                    min="0" max="0.5"
                    style="max-width:75px; display:inline;" v-model="stronghold.laws.rentRate"

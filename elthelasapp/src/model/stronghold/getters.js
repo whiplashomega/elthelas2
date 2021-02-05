@@ -245,14 +245,15 @@ export default {
     return Math.round((publicEmployees + privateEmployees) * 100) / 100;
   },
   rents: (state, getters) => {
+    let rentRate = Number(state.current.laws.rentRate);
     let publicHousing = state.current.improvements.reduce((total, imp) => {
       return total + Math.floor(imp.pop * imp.count);
     }, 0);
     let numberRenting = getters.getPop - state.current.privateEnterprise.reduce((total, imp) => {
       return total + Math.floor(imp.pop * imp.count);
     }, 0);
-    if (state.current.laws.rentRate) {
-      return state.current.laws.rentRate * 5 * (getters.staffBeds - getters.availableStaffBeds) + state.current.laws.rentRate * Math.min(publicHousing, numberRenting);
+    if (rentRate) {
+      return rentRate * 5 * (getters.staffBeds - getters.availableStaffBeds) + rentRate * Math.min(publicHousing, numberRenting);
     } else {
       state.current.laws.rentRate = 0;
       return 0;
