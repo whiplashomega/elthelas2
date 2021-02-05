@@ -124,7 +124,7 @@ export default {
         this.stronghold.privateEnterprise.splice(this.stronghold.privateEnterprise.indexOf(improvement), 1);
       }
       improvement.staff.forEach((st) => {
-        this.stronghold.privateStaff.splice(this.stronghold.privateStaff.findIndex((a) => {
+        this.stronghold.privateEmployees.splice(this.stronghold.privateEmployees.findIndex((a) => {
           return a.name === st.name;
         }), 1);
       });

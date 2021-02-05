@@ -255,6 +255,7 @@ export default {
       return state.current.laws.rentRate * 5 * (getters.staffBeds - getters.availableStaffBeds) + state.current.laws.rentRate * Math.min(publicHousing, numberRenting);
     } else {
       state.current.laws.rentRate = 0;
+      return 0;
     }
   },
   laborersNeeded (state) {
