@@ -19,7 +19,7 @@
             <strong>Available Beds: </strong> {{ availableStaffBeds }}
           </div>
           <div class="col-sm-3">
-            <strong>Max Laborers: </strong> {{ maxLaborers }}
+            <strong>Total Staff Beds:</strong> {{ staffBeds }}
           </div>
           <div class="col-sm-3">
             <strong>Unrest: </strong> {{ unrest }}%
@@ -36,7 +36,7 @@
             <strong>Non-Staff Population: </strong> {{ nonstaffPop }}
           </div>
           <div class="col-sm-3">
-            <strong></strong>
+            <strong>Max Laborers: </strong> {{ maxLaborers }}
           </div>
         </div>
         <div class="row">
