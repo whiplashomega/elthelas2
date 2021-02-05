@@ -202,38 +202,16 @@ export default {
   },
   farmLand: (state) => {
     let land = 0;
-    let foodfarms = state.current.improvements.filter((a) => {
-      return a.id === "food-farm";
-    })[0];
-    let cashfarms = state.current.improvements.filter((a) => {
-      return a.id === "sheep-farm";
-    })[0];
-    let cowfarms = state.current.improvements.filter((a) => {
-      return a.id === "cattle-farm";
-    })[0];
-    let winefarms = state.current.improvements.filter((a) => {
-      return a.id === "winery";
-    })[0];
-    let pfoodfarms = state.current.privateEnterprise.filter((a) => {
-      return a.id === "food-farm";
-    })[0];
-    let pcashfarms = state.current.privateEnterprise.filter((a) => {
-      return a.id === "sheep-farm";
-    })[0];
-    let pcowfarms = state.current.privateEnterprise.filter((a) => {
-      return a.id === "cattle-farm";
-    })[0];
-    let pwinefarms = state.current.privateEnterprise.filter((a) => {
-      return a.id === "winery";
-    })[0];
-    if (foodfarms) land += foodfarms.count;
-    if (cashfarms) land += cashfarms.count;
-    if (cowfarms) land += cowfarms.count;
-    if (winefarms) land += winefarms.count;
-    if (pfoodfarms) land += pfoodfarms.count;
-    if (pcashfarms) land += pcashfarms.count;
-    if (pcowfarms) land += pcowfarms.count;
-    if (pwinefarms) land += pwinefarms.count;
+    let farms = state.current.improvements.forEach((a) => {
+      if (a.isfarm) {
+        land++;
+      }
+    });
+    let pfoodfarms = state.current.privateEnterprise.forEach((a) => {
+      if (a.isfarm) {
+        land++;
+      }
+    });
     return land;
   },
   forestedLand: (state, getters) => {

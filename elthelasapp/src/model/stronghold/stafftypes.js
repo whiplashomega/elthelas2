@@ -32,6 +32,11 @@ export default [
     bonus: "Manages a bank."
   },
   {
+    name: "Bard",
+    typicalSalary: 40,
+    bonus: "Plays music for entertainment."
+  },
+  {
     name: "Beastmaster",
     typicalSalary: 20,
     bonus: "Can feed and take care of animal companions in an animal sanctuary."
@@ -124,6 +129,31 @@ export default [
     name: "Master Smelter",
     typicalSalary: 3,
     bonus: "Required to run a smelter"
+  },
+  {
+    name: "Master Brickmaker",
+    typicalSalary: 3,
+    bonus: "Required to run a brickmaking kiln"
+  },
+  {
+    name: "Master Potter",
+    typicalSalary: 3,
+    bonus: "Required to run a pottery shop"
+  },
+  {
+    name: "Paper Maker",
+    typicalSalary: 3,
+    bonus: "Required to run a pottery shop"
+  },
+  {
+    name: "Carpenter",
+    typicalSalary: 3,
+    bonus: "Required to run a furniture shop"
+  },
+  {
+    name: "Weaver",
+    typicalSalary: 3,
+    bonus: "Required to run a weaver's shop"
   },
   {
     name: "Master Wizard",

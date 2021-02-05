@@ -48,7 +48,7 @@ export default {
               allmet = false;
             }
           });
-          if ((imp.id === "food-farm" || imp.id === "cattle-farm" || imp.id === 'winery' || imp.id === "sheep-farm") && this.availableClearedLand < 1) {
+          if ((imp.isfarm) && this.availableClearedLand < 1) {
             allmet = false;
           } else if ((imp.id === "town" || imp.id === "additional-district") && this.availableForestedLand < 1.25) {
             allmet = false;
