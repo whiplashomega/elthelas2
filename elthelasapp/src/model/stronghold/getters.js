@@ -536,7 +536,7 @@ export default {
     return Math.round(land * 100) / 100;
   },
   usedStorage: (state) => {
-    return state.current.resources.reduce((a, b) => {
+    return Object.values(state.current.resources).reduce((a, b) => {
       return a + b;
     }, 0);
   }
