@@ -73,18 +73,9 @@ export default {
     let denominator = 0;
     let staffratio = 1;
     let resourceratios = {
-      "alcohol": 1,
-      "arcanum": 1,
-      "cloth": 1,
-      "coal": 1,
-      "food": 1,
-      "iron": 1,
-      "leather": 1,
-      "lumber": 1,
-      "steel": 1,
-      "stone": 1,
-      "timber": 1,
-      "wool": 1
+      "alcohol": 1, "arcanum": 1, "brick": 1, "clay": 1, "cloth": 1, "coal": 1, "coffee": 1, "consumergoods": 1, "cotton": 1,
+      "food": 1, "furniture": 1, "horses": 1, "iron": 1, "leather": 1, "lumber": 1, "paper": 1, "pottery": 1, "raremetal": 1,
+      "steel": 1, "stone": 1, "sugar": 1, "timber": 1, "wool": 1
     };
     if (improvement.staff.length > 0 || improvement.employs > 0) {
       numerator += Number(improvement.laborers);
@@ -122,14 +113,25 @@ export default {
     return Math.round(Math.min(
       resourceratios.alcohol,
       resourceratios.arcanum,
+      resourceratios.brick,
+      resourceratios.clay,
       resourceratios.cloth,
       resourceratios.coal,
+      resourceratios.coffee,
+      resourceratios.consumergoods,
+      resourceratios.cotton,
       resourceratios.food,
+      resourceratios.furniture,
+      resourceratios.horses,
       resourceratios.iron,
       resourceratios.leather,
       resourceratios.lumber,
+      resourceratios.paper,
+      resourceratios.pottery,
+      resourceratios.raremetal,
       resourceratios.steel,
       resourceratios.stone,
+      resourceratios.sugar,
       resourceratios.timber,
       resourceratios.wool,
       staffratio,
@@ -143,7 +145,7 @@ export default {
         total[key] += rev[key];
       }
       return total;
-    }, { alcohol: 0, arcanum: 0, cloth: 0, coal: 0, food: 0, iron: 0, leather: 0, lumber: 0, steel: 0, stone: 0, timber: 0, wool: 0 });
+    }, { alcohol: 0, arcanum: 0, brick: 0, clay: 0, cloth: 0, coal: 0, coffee: 0, consumergoods: 0, cotton: 0, food: 0, furniture: 0, horses: 0, iron: 0, leather: 0, lumber: 0, paper: 0, pottery: 0, raremetal: 0, steel: 0, stone: 0, sugar: 0, timber: 0, wool: 0 });
     for (let key in rev) {
       rev[key] = Math.round((rev[key] + Number(state.current.autoSell[key])) * 100) / 100;
     }
