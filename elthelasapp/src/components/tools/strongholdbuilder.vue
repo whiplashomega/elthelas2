@@ -308,26 +308,4 @@
   </div>
 </template>
 <script src="./strongholdbuilder/js/stronghold.js"></script>
-<style scoped>
-.modal-xl {
-  max-width: 1400px;
-}
-.red {
-  color: red;
-}
-.bold {
-  color: darkblue;
-}
-.strongholdbuilder {
-  font-size: 0.8rem;
-}
-.strongholdbuilder .form-control {
-  font-size: 0.8rem;
-}
-.strongholdbuilder .btn {
-  font-size: 0.8rem;
-}
-.strongholdbuilder h1 {
-  font-size: 2rem;
-}
-</style>
+<style src="./strongholdbuilder/scss/stronghold.scss" lang="scss" scoped></style>

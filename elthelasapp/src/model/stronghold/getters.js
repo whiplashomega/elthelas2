@@ -483,7 +483,7 @@ export default {
       let foodSubsidiesModifier = getters.getPop ? ((Number(state.current.laws.foodSubsidies) / getters.getPop)) * 50 : 0;
       unrest -= foodSubsidiesModifier;
       // people want a place to live. If there isn't enough housing, unrest increases
-      let housingModifier = getters.nonstaffPop ? Math.max(((getters.nonstaffPop - getters.totalHousing) / getters.nonstaffPop) * 2, 0): 0;
+      let housingModifier = getters.nonstaffPop ? Math.max(((getters.nonstaffPop - getters.totalHousing) / getters.nonstaffPop) * 2, 0) : 0;
       unrest += housingModifier;
     }
     return Math.max(Math.round(unrest), 0);

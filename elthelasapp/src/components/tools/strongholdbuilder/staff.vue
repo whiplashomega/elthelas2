@@ -143,4 +143,4 @@
   </div>
 </template>
 <script src="./js/staff.js"></script>
-<style></style>
+<style src="./scss/stronghold.scss" lang="scss" scoped></style>

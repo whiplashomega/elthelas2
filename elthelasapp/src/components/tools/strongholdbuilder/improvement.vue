@@ -45,8 +45,4 @@
   </div>
 </template>
 <script src="./js/improvement.js"></script>
-<style>
-.modal-xl {
-  max-width: 1300px;
-}
-</style>
+<style src="./scss/stronghold.scss" lang="scss" scoped></style>
