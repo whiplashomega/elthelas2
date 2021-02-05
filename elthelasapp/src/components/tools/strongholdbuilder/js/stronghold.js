@@ -30,10 +30,12 @@ export default {
       neededStaff: 'neededStaff',
       privateLaborers: 'privateLaborers',
       propertyTax: 'propertyTax',
+      rents: 'rents',
       resourceCost: 'resourceCost',
       resourceRevenue: 'resourceRevenue',
       sellTable: 'getSellTable',
       staffBeds: 'staffBeds',
+      staffTypes: 'staffTypes',
       staffSummary: 'staffSummary',
       stronghold: "stronghold",
       taxRevenue: 'taxRevenue',
@@ -111,6 +113,22 @@ export default {
       addToTreasury: 'addToTreasury',
       buyResource: 'buyResource'
     }),
+    deletePrivateEnterprise (improvement) {
+      let match = this.stronghold.privateEnterprise.filter((a) => {
+        return a.id === improvement.id;
+      })[0];
+      if (match && match.count > 1) {
+        match.count--;
+      } else {
+        improvement.count--;
+        this.stronghold.privateEnterprise.splice(this.stronghold.privateEnterprise.indexOf(improvement), 1);
+      }
+      improvement.staff.forEach((st) => {
+        this.stronghold.privateStaff.splice(this.stronghold.privateStaff.findIndex((a) => {
+          return a.name === st.name;
+        }), 1);
+      });
+    },
     sellResource (type, amount) {
       let checkWeight = this.stronghold.laws.todaysExports + Number(amount) * this.unitWeightMod[type];
       this.stronghold.resources[type] -= Number(amount);

@@ -143,7 +143,8 @@ export default function () {
       headTaxRate: 0,
       foodSubsidies: 0,
       propertyTaxRate: 0,
-      todaysExports: 0
+      todaysExports: 0,
+      rentRate: 0
     },
     merchants: [],
     guards: 0,

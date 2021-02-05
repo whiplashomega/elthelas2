@@ -81,6 +81,7 @@
             Income Tax Revenue: {{ incomeTax }}<br />
             Head Tax Revenue: {{ headTax }}<br />
             Property Tax Revenue: {{ propertyTax }}<br />
+            Rents Revenue: {{ rents }}<br />
             Bank Revenue: {{ bankRevenue }}
             <h4>Expenses</h4>
             Total Expenses: {{ expenses }}<br />
@@ -116,6 +117,11 @@
                    style="max-width:75px; display:inline;" v-model="stronghold.laws.propertyTaxRate"
                    step="0.1" title="property taxes return a portion of the value of private property built on your land. The daily assessment cannot exceed 1% or property owners will simply sell out and leave." />
             Property Tax Rate (%)
+            <input type="number" class="form-control"
+                   min="0" max="0.5"
+                   style="max-width:75px; display:inline;" v-model="stronghold.laws.rentRate"
+                   step="0.01" title="rents on public owned housing." />
+            Daily Rent for Laborers (Middle Class housing pays 5 times this amount)
             <h4>Other Laws</h4>
             <input type="number" class="form-control"
                    min="0" :max="stronghold.resources.food"
@@ -209,7 +215,7 @@
           <div class="col-sm-6">
             <h4>{{ stronghold.townName }} Private Enterprises</h4>
             <div v-for="improvement in stronghold.privateEnterprise" :key="improvement.id">
-              <h5>{{ improvement.name }} x {{ improvement.count }}</h5>
+              <h5>{{ improvement.name }} x {{ improvement.count }} <button @click="deletePrivateEnterprise(improvement)" class="btn btn-danger">X</button></h5>
             </div>
           </div>
           <div class="col-sm-6">

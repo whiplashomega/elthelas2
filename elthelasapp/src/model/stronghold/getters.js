@@ -244,6 +244,19 @@ export default {
     let privateEmployees = (state.current.laws.incomeTaxRate / 100) * privateIncomes * getters.taxEfficiency;
     return Math.round((publicEmployees + privateEmployees) * 100) / 100;
   },
+  rents: (state, getters) => {
+    let publicHousing = state.current.improvements.reduce((total, imp) => {
+      return total + Math.floor(imp.pop * imp.count);
+    }, 0);
+    let numberRenting = getters.getPop - state.current.privateEnterprise.reduce((total, imp) => {
+      return total + Math.floor(imp.pop * imp.count);
+    }, 0);
+    if (state.current.laws.rentRate) {
+      return state.current.laws.rentRate * 5 * (getters.staffBeds - getters.availableStaffBeds) + state.current.laws.rentRate * Math.min(publicHousing, numberRenting);
+    } else {
+      state.current.laws.rentRate = 0;
+    }
+  },
   laborersNeeded (state) {
     return state.current.improvements.reduce((a, b) => {
       return a + b.employs * b.count;
@@ -388,7 +401,7 @@ export default {
     return Math.round(taxEfficiency * 100) / 100;
   },
   taxRevenue: (state, getters) => {
-    return getters.headTax + getters.incomeTax + getters.propertyTax;
+    return getters.headTax + getters.incomeTax + getters.propertyTax + getters.rents;
   },
   timberLand: (state, getters) => {
     let land = 0;
@@ -476,11 +489,13 @@ export default {
       if (Number(state.current.laws.incomeTaxRate) > 10) {
         unrest += Number(state.current.laws.incomeTaxRate) - 10;
       }
+      // rent is despised
+      unrest += Number(state.current.laws.rentRate) * 100;
       if (Number(state.current.laws.propertyTaxRate) > 0.1) {
         unrest += (Number(state.current.laws.propertyTaxRate) - 0.1) * 50;
       }
       // people want to work, very low unemployment reduces unrest, high unemployment increases unrest
-      let unemploymentModifier = (getters.unemploymentRate - 20) * 0.5;
+      let unemploymentModifier = (getters.unemploymentRate) * 0.5;
       unrest += unemploymentModifier;
       let foodSubsidiesModifier = getters.getPop ? ((Number(state.current.laws.foodSubsidies) / getters.getPop)) * 50 : 0;
       unrest -= foodSubsidiesModifier;
@@ -521,14 +536,8 @@ export default {
     return Math.round(land * 100) / 100;
   },
   usedStorage: (state) => {
-    return state.current.resources.alcohol +
-           state.current.resources.arcanum +
-           state.current.resources.cloth +
-           state.current.resources.coal +
-           state.current.resources.food +
-           state.current.resources.iron +
-           state.current.resources.leather +
-           state.current.resources.steel +
-           state.current.resources.wool;
+    return state.current.resources.reduce((a, b) => {
+      return a + b;
+    }, 0);
   }
 };
