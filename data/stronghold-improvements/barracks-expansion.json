@@ -67,5 +67,6 @@
   "count": 0,
   "max": 3,
   "tags": [ "defense", "housing" ],
-  "type": "castle"
+  "type": "castle",
+  "isfarm": false
 }

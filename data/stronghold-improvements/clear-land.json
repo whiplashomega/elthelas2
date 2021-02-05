@@ -67,5 +67,6 @@
   "count": 0,
   "max": 100,
   "tags": [ "infrastructure" ],
-  "type": "countryside"
+  "type": "countryside",
+  "isfarm": false
 }

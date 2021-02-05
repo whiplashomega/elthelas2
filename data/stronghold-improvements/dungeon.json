@@ -67,5 +67,6 @@
   "count": 0,
   "max": 1,
   "tags": [ "player-benefit" ],
-  "type": "castle"
+  "type": "castle",
+  "isfarm": false
 }

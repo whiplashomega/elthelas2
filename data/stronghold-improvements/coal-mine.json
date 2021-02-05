@@ -67,5 +67,6 @@
   "count": 0,
   "max": 2,
   "tags": [ "income" ],
-  "type": "countryside"
+  "type": "countryside",
+  "isfarm": false
 }

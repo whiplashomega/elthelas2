@@ -67,5 +67,6 @@
   "count": 0,
   "max": 5,
   "tags": [ "infrastructure", "housing" ],
-  "type": "town"
+  "type": "town",
+  "isfarm": false
 }

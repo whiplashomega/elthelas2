@@ -67,5 +67,6 @@
   "count": 0,
   "max": 7,
   "tags": [ "income" ],
-  "type": "town"
+  "type": "town",
+  "isfarm": false
 }

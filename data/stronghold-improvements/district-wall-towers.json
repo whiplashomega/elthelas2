@@ -67,5 +67,6 @@
   "count": 0,
   "max": 5,
   "tags": [ "defense" ],
-  "type": "town"
+  "type": "town",
+  "isfarm": false
 }
