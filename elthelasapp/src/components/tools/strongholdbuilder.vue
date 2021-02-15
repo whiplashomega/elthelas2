@@ -132,7 +132,6 @@
             <br />
           </div>
         </div>
-
       </b-tab>
       <b-tab title="Animals">
         <div class="row">
@@ -306,6 +305,80 @@
             <tr><td>121-122</td><td>Petty criminals plague the town, robbing houses and picking pockets. Tax revenues are reduced by 25% until they are dealt with, and things in storage may randomly disappear.</td></tr>
             <tr><td>123-124</td><td>Starving people have raided your storehouses, stealing all of your stored food.</td></tr>
             <tr><td>125+</td><td>Revolt. The people in your village are taking up arms to attack you!</td></tr>
+          </tbody>
+        </table>
+      </b-tab>
+      <b-tab title="Actions">
+        <h2>Actions</h2>
+        <p>This is not a final and complete list. Players are encouraged to think creatively about what to do with their time.</p>
+        <table class="table table-striped">
+          <tbody>
+            <tr><th>Action</th><th>Cost</th><th>Time</th></tr>
+            <tr>
+              <td>Recruit Colonists from the Homeland (1d6 kids, 2d6 adults).</td>
+              <td>100 gp</td>
+              <td>1/2 day</td>
+            </tr>
+            <tr>
+              <td>Get local refugees to join the town. (1d6 kids, 1d6 adults, 1d6 invalids)</td>
+              <td>10 gp</td>
+              <td>1/2 day</td>
+            </tr>
+            <tr>
+              <td>Recruit skilled worker from the population. Requires an investigation check for success. DC = 10 + base salary</td>
+              <td>0 gp</td>
+              <td>1/2 day</td>
+            </tr>
+            <tr>
+              <td>Encourage people to leave town (1d6 kids, 2d6 adults).</td>
+              <td>50-unrest gp</td>
+              <td>1/2 day</td>
+            </tr>
+            <tr>
+              <td>Recruit skilled worker from out of town.</td>
+              <td>5 * typical salary signing bonus</td>
+              <td>2 days</td>
+            </tr>
+            <tr>
+              <td>Hold a Feast (roll a DC 12 Persuasion check). Success reduces effect of unrest on next 7 random event rolls by half.</td>
+              <td>100 gp</td>
+              <td>1 day</td>
+            </tr>
+            <tr>
+              <td>Patrol the area. Who knows what could happen?</td>
+              <td>0 gp</td>
+              <td>1 day</td>
+            </tr>
+            <tr>
+              <td>Send an emissary to another Lord</td>
+              <td>20 gp</td>
+              <td>1/2 day</td>
+            </tr>
+            <tr>
+              <td>Hire Prospector to Search for Minerals. Roll 1d100, 1-10 something bad happens. 11-50, they find nothing. 51-75, they find coal. 76-95, you find iron. 96-99, you find gold (or silver). 100 you find a rare metal, roll a 1d3, on 1 it is Orichalcum, on a 2 it is Adamantium, on a 3 it is Mithril.</td>
+              <td>200 gp</td>
+              <td>1 day</td>
+            </tr>
+            <tr>
+              <td>Hire druids/clerics to tend to the sick. Heal 2d6 sick people in town.</td>
+              <td>200 gp</td>
+              <td>1 day</td>
+            </tr>
+            <tr>
+              <td>Search for rare medicinal herbs in the woods. (roll a DC 20 Nature check). On a success you find enough herbs to heal 1d6 sick people.</td>
+              <td>0 gp</td>
+              <td>1 day</td>
+            </tr>
+            <tr>
+              <td>Seek guidance from a God via omens or prayer. Roll a DC 15 religion check. On a success gain advantage on a skill check of your choice in the next day. If you fail by five or more, get disadvantage instead on a check of the DMs choice.</td>
+              <td>0 gp</td>
+              <td>1 day</td>
+            </tr>
+            <tr>
+              <td>Hire spies to dig up information on another Lord. The DM will roll an investigation check in secret on the spies behalf, depending on the result you may or may not get useful information.</td>
+              <td>200 gp</td>
+              <td>1 day</td>
+            </tr>
           </tbody>
         </table>
       </b-tab>

@@ -358,7 +358,7 @@ export default {
       casterlevel += Math.ceil(Number(character.charclasses[0].level) * Number(character.charclasses[0].selsubclass.castermult));
     } else {
       character.charclasses.forEach((a) => {
-        if (a.name === "Artificer") {
+        if (a.thisclass.name === "Artificer") {
           casterlevel += Math.ceil(Number(a.level) * Number(a.selsubclass.castermult));
         }
         casterlevel += Math.floor(Number(a.level) * Number(a.selsubclass.castermult));
