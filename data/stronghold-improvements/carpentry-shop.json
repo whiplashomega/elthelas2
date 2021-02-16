@@ -65,7 +65,7 @@
   "prerequisites": [ "village" ],
   "hide": true,
   "count": 0,
-  "max": 7,
+  "max": 100,
   "tags": [ "income", "housing" ],
   "type": "town",
   "isfarm": false

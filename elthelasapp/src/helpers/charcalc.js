@@ -247,7 +247,7 @@ export default {
     let spells = character.spells;
     let classCounts = [];
     character.charclasses.forEach((a) => {
-      let num = Math.floor(a.level * a.selsubclass.castermult + this.statMod(character, a.thisclass.caststat));
+      let num = Math.floor(a.level * a.selsubclass.castermult + this.statMod(character, a.savedcstat));
       if (a.thisclass.name === "Sorcerer") {
         num = Math.min(a.level, 11) + 1;
         num += Math.floor(Math.max(0, Math.min(a.level, 17) - 11) / 2);

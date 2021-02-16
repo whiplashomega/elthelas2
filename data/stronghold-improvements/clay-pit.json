@@ -65,7 +65,7 @@
   "prerequisites": [ "new-land" ],
   "hide": true,
   "count": 0,
-  "max": 2,
+  "max": 100,
   "tags": [ "income" ],
   "type": "countryside",
   "isfarm": false
