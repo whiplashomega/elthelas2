@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import { newCampaign, newChapter } from './classes/campaign';
 import newEncounter from './classes/encounter';
+import Character from './classes/character';
 
 export default {
   state: {
@@ -62,6 +63,10 @@ export default {
             state.campaignCharacters.push({ ...response.body });
           } else {
             alert("Bad character in array.");
+            var badchar = Character();
+            badchar._id = id;
+            badchar.name = "Delete Me! I'm broken.";
+            state.campaignCharacters.push(badchar);
           }
         }
       });
