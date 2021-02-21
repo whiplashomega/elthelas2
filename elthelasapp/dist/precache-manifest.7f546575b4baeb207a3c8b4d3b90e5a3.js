@@ -92,12 +92,12 @@ self.__precacheManifest = [
     "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "0c9e8151384a22fe7089f16256f63e5f",
+    "revision": "d26322091fe8b99b7a0b56710f42a41c",
     "url": "/index.html"
   },
   {
-    "revision": "8629b20068820edb09c6",
-    "url": "/js/characterbuilder.725a0da5.js"
+    "revision": "a86043b36c0b54efffc6",
+    "url": "/js/characterbuilder.ee4b5556.js"
   },
   {
     "revision": "fe9884553a1ae2ea1bb0d6f76a8d4822",
@@ -152,8 +152,8 @@ self.__precacheManifest = [
     "url": "/json/history.json"
   },
   {
-    "revision": "fa9e8e0b4eb499fefdb3",
-    "url": "/js/app.0e936427.js"
+    "revision": "c430663c0f1f182ce2bd",
+    "url": "/js/app.fc0a7e9d.js"
   },
   {
     "revision": "6aae083ac3cfefbaa90b67c1da319cf9",
@@ -176,7 +176,7 @@ self.__precacheManifest = [
     "url": "/json/personalhistory.json"
   },
   {
-    "revision": "cc107a4fe83576af9dfaf9cbf6a60053",
+    "revision": "12b68091c6ecb5b46514a7958d12b588",
     "url": "/json/races.json"
   },
   {
@@ -196,48 +196,48 @@ self.__precacheManifest = [
     "url": "/json/weapons.json"
   },
   {
-    "revision": "efc28f3579bb800850de349535a7af21",
-    "url": "/js/timeline.min.js"
+    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
+    "url": "/robots.txt"
   },
   {
     "revision": "d41d8cd98f00b204e9800998ecf8427e",
     "url": "/static/md/book.md"
   },
   {
-    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
-    "url": "/robots.txt"
-  },
-  {
     "revision": "0b725cd54bc29c1332544e44645117f8",
     "url": "/manifest.webmanifest"
   },
   {
-    "revision": "cb2c491075996cab08407addd262ad89",
-    "url": "/static/md/book4/chapter11.md"
+    "revision": "efc28f3579bb800850de349535a7af21",
+    "url": "/js/timeline.min.js"
   },
   {
     "revision": "ad607ac3ac0ad4e1530918e3caa96d05",
     "url": "/static/md/book4/chapter10.md"
   },
   {
-    "revision": "e6bccb97b7f80cc1ee1d115edb4fd25d",
-    "url": "/static/md/book4/chapter12.md"
+    "revision": "00c804dcff8ed49b07fa8fab13faf389",
+    "url": "/static/md/book4/chapter1.md"
+  },
+  {
+    "revision": "cb2c491075996cab08407addd262ad89",
+    "url": "/static/md/book4/chapter11.md"
   },
   {
     "revision": "4c5b11958f5fe61f98f10a7bb10b16af",
     "url": "/static/md/book4/chapter13.md"
   },
   {
-    "revision": "d3d9140c4d912e18b894495d6c87f2df",
-    "url": "/js/timeline.js"
+    "revision": "e6bccb97b7f80cc1ee1d115edb4fd25d",
+    "url": "/static/md/book4/chapter12.md"
   },
   {
     "revision": "63a9d0758a75c813df5826e8f43d7732",
     "url": "/static/md/book4/chapter14.md"
   },
   {
-    "revision": "00c804dcff8ed49b07fa8fab13faf389",
-    "url": "/static/md/book4/chapter1.md"
+    "revision": "d3d9140c4d912e18b894495d6c87f2df",
+    "url": "/js/timeline.js"
   },
   {
     "revision": "a03092bf9c5844541f055daad071a492",
@@ -252,16 +252,16 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chapter2old.md"
   },
   {
-    "revision": "b59ed4e72d1e0934d2974fb27eb0ce35",
-    "url": "/static/md/book4/chapter3.md"
-  },
-  {
     "revision": "0f3706bbf9968b8f0f3209cf69b52a59",
     "url": "/static/md/book4/chapter3old.md"
   },
   {
     "revision": "fcf8be2d52b70b074a0a7a4d62777969",
     "url": "/static/md/book4/chapter4.md"
+  },
+  {
+    "revision": "b59ed4e72d1e0934d2974fb27eb0ce35",
+    "url": "/static/md/book4/chapter3.md"
   },
   {
     "revision": "9fa07e9ef515faf9739f8b975ed62b75",
@@ -276,16 +276,16 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chapter7old.md"
   },
   {
-    "revision": "deb69e20439bb1e4ee55ff6e2affdadd",
-    "url": "/static/md/book4/chapter8.md"
+    "revision": "b851a579568265954e9b67087dd84273",
+    "url": "/static/md/book4/chapter6.md"
   },
   {
     "revision": "c58d91a5bb074d7012836eea11c53703",
     "url": "/static/md/book4/chapter9.md"
   },
   {
-    "revision": "b851a579568265954e9b67087dd84273",
-    "url": "/static/md/book4/chapter6.md"
+    "revision": "deb69e20439bb1e4ee55ff6e2affdadd",
+    "url": "/static/md/book4/chapter8.md"
   },
   {
     "revision": "c5636d02b570345d28ba985cc2cf6e0e",
@@ -296,12 +296,12 @@ self.__precacheManifest = [
     "url": "/static/md/book4/curestan.md"
   },
   {
-    "revision": "8629b20068820edb09c6",
+    "revision": "a86043b36c0b54efffc6",
     "url": "/css/characterbuilder.efd99324.css"
   },
   {
-    "revision": "fa9e8e0b4eb499fefdb3",
-    "url": "/css/app.4dd8e31f.css"
+    "revision": "c430663c0f1f182ce2bd",
+    "url": "/css/app.34e13129.css"
   },
   {
     "revision": "d41d8cd98f00b204e9800998ecf8427e",

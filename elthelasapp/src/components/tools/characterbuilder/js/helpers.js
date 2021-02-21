@@ -60,10 +60,26 @@ export default {
       this.addAbility(character, "Shadow Lore", 1, "longrest", 14, a);
     }
   },
-  clericResources (character, a) {
-    this.addAbility(character, "Channel Divinity", 1, "shortrest", 1, a);
+  clericResources (vue, character, a) {
+    this.addAbility(character, "Channel Divinity", 1, "shortrest", 2, a);
     this.addAbility(character, "Channel Divinity", 2, "shortrest", 6, a);
     this.addAbility(character, "Channel Divinity", 3, "shortrest", 18, a);
+    if (a.selsubclass.name === "Air Domain") {
+      this.addAbility(character, "Living Air", 1, "longrest", 17, a);
+    }
+    if (a.selsubclass.name === "Earth Domain") {
+      this.addAbility(character, "Living Earth", 1, "longrest", 17, a);
+    }
+    if (a.selsubclass.name === "Fire Domain") {
+      this.addAbility(character, "Living Fire", 1, "longrest", 17, a);
+    }
+    if (a.selsubclass.name === "Grave Domain") {
+      this.addAbility(character, "Sentinel at Death's Door", vue.getStatMod(4), "longrest", 17, a);
+    }
+    if (a.selsubclass.name === "Twilight Domain") {
+      this.addAbility(character, "Eyes of Night", 1, "longrest", 1, a);
+      this.addAbility(character, "Steps of Night", calc.profbonus(character), "longrest", 6, a);
+    }
   },
   druidResources (vue, character, a) {
     this.addAbility(character, "Wildshape", 2, "shortrest", 1, a);

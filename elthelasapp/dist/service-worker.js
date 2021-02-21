@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.c5b6526a19adc3ac9098e893ab9d8715.js"
+  "/precache-manifest.7f546575b4baeb207a3c8b4d3b90e5a3.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "Elthelas"});

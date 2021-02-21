@@ -58,7 +58,12 @@ export default {
     fetchCampaignCharacter: ({ state }, id) => {
       Vue.http.get('/characters/' + id).then((response) => {
         if (response.status === 200) {
-          state.campaignCharacters.push({ ...response.body });
+          try {
+            JSON.parse(response.body);
+            state.campaignCharacters.push({ ...response.body });
+          } catch (e) {
+            alert("Bad character in array.");
+          }
         }
       });
     },

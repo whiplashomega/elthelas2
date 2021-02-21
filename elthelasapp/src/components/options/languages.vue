@@ -16,6 +16,7 @@
         <tr><td>Alfadir</td><td>Staelic</td><td>Hisru, Morrind</td></tr>
         <tr><td>Arad</td><td>Neran</td><td>Orc, Celestial</td></tr>
         <tr><td>Asuran Confederacy</td><td>Asuran</td><td>Yuan-ti</td></tr>
+        <tr><td>Consolidated Territories of Parakas</td><td>Orc</td><td>Goblin, Imperial</td></tr>
         <tr><td>Curinor</td><td>Dwarf</td><td>Imperial, Morrind</td></tr>
         <tr><td>Degak'Ta</td><td>Trollkin</td><td>Orc, Morrind</td></tr>
         <tr><td>Demal Thor</td><td>Elf</td><td>Imperial, Dwarf</td></tr>
@@ -23,6 +24,7 @@
         <tr><td>Dera'Dragorim</td><td>Deran</td><td>Draconic, Hisru</td></tr>
         <tr><td>Dormania</td><td>Imperial</td><td>Morrind</td></tr>
         <tr><td>Eldoran</td><td>Elf</td><td>Deran, Sylvan</td></tr>
+        <tr><td>Federated Alliance Territories</td><td>One of Orc, Goblin, Imperial, Elf, Dwarf</td><td>Two of Orc, Goblin, Imperial, Elf, or Dwarf</td></tr>
         <tr><td>Gerasalim</td><td>Imperial</td><td>Elf, Orc</td></tr>
         <tr><td>Gnarra</td><td>Sylvan</td><td>Elf</td></tr>
         <tr><td>Gorgro</td><td>Giant or Troll</td><td>Giant or Troll, Staelic</td></tr>
