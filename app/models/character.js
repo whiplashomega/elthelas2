@@ -18,6 +18,7 @@ var Character = new Schema({
   backstory: { type: String, default: "" },
   bond: { type: String, default: "" },
   castlog: { type: Array, default: [] },
+  sessions: [],
   bonuscantrips: 0,
   group: { type: String, default: "" },
   pets: [],

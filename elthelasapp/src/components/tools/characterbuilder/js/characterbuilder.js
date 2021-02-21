@@ -21,6 +21,7 @@ import loadsavemodals from '@/components/tools/characterbuilder/loadsavemodals';
 import actions from '@/components/tools/characterbuilder/actions';
 import combathud from '@/components/tools/characterbuilder/combathud';
 import pets from '@/components/tools/characterbuilder/pets';
+import gamenotes from '@/components/tools/characterbuilder/gamenotes';
 // import test from '@/tests/unit/charbuilder.test.js';
 
 export default {
@@ -46,7 +47,8 @@ export default {
     createcreature,
     campaigninfo,
     combathud,
-    pets
+    pets,
+    gamenotes
   },
   computed: {
     ...mapGetters({
@@ -55,16 +57,15 @@ export default {
       pointbuy: "pointbuy",
       statRolls: "getStatRolls",
       hitdicechanged: "hitdicechanged",
-      userinfo: "getUserInfo"
+      userinfo: "getUserInfo",
+      groups: "charGroups"
     })
   },
   data () {
     return {
       buildHide: false,
-      hideleft: false,
-      showActions: true,
-      combatModal: false,
-      startGuide: true
+      startGuide: true,
+      newgroup: ""
     };
   },
   filters: {
@@ -80,6 +81,9 @@ export default {
     }),
     log(val) {
       console.log(val);
+    },
+    addGroup () {
+      this.character.group = this.newgroup;
     }
   },
   created () {

@@ -6,74 +6,103 @@
       </div>
       <div class="print-full" :class="buildHide ? 'col-12' : 'col-8'">
         <characterheader />
-        <div class="row">
-          <div class="col-7">
-            <div class="row">
-              <!-- Ability Scores -->
-              <div class="col-7" v-if="!hideleft">
-                <abilityscores />
-                <skills />
-              </div>
-              <div :class="hideleft ? 'col-12' : 'col-5'">
-                <!-- Initiative -->
-                <initiative />
-                <!-- HP -->
-                <hitpoints :key="hitdicechanged" />
-                <!-- Combat -->
-                <combat />
-                <!-- Equipment -->
-                <equipment />
-              </div>
-            </div>
-          </div>
-          <div class="col-5">
-            <div class="row">
-              <div class="col">
-                <!-- Attacks -->
-                <attacks />
-                <features />
-              </div>
-            </div>
-            <div class="row print-hide">
-              <div class="col">
-                <button class="btn btn-primary btn-sm" @click="hideleft = !hideleft"><span v-if="!hideleft">Hide</span><span v-if="hideleft">Show</span> Left</button>&nbsp;
-                <button class="btn btn-primary btn-sm" @click="buildHide = !buildHide"><span v-if="!buildHide">Hide</span><span v-if="buildHide">Show</span> Build</button>&nbsp;
-                <button class="btn btn-primary btn-sm" @click="showActions = !showActions"><span v-if="showActions">Hide</span><span v-if="!showActions">Show</span> Actions</button>&nbsp;
-                <button class="btn btn-primary btn-sm" @click="combatModal = true">Combat HUD</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="print-hide">
-          <loadsave :minimal="false" />
-        </div>
-        <div style="page-break-after: always">&nbsp;</div>
-        <!-- Spells -->
-        <div class="row">
-          <div class="col-12">
-            <spells />
-          </div>
-        </div>
-        <!-- Resources -->
-        <div class="row">
-          <div class="col-12">
-            <resources />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <pets />
-          </div>
-        </div>
-        <div class="row">
+        <div class="row print-hide">
           <div class="col">
-            <actions v-if="showActions" />
+            <button class="btn btn-primary btn-sm pull-right" @click="buildHide = !buildHide"><span v-if="!buildHide">Hide</span><span v-if="buildHide">Show</span> Build</button>&nbsp;
           </div>
         </div>
-        <div style="page-break-after: always">&nbsp;</div>
-        <!-- Fluff Details -->
-        <appearance />
-        <fluff />
+        <b-tabs>
+          <b-tab title="Character Sheet">
+            <div class="row">
+              <div class="col-7">
+                <div class="row">
+                  <!-- Ability Scores -->
+                  <div class="col-7">
+                    <abilityscores />
+                    <skills />
+                  </div>
+                  <div :class="hideleft ? 'col-12' : 'col-5'">
+                    <!-- Initiative -->
+                    <initiative />
+                    <!-- HP -->
+                    <hitpoints :key="hitdicechanged" />
+                    <!-- Combat -->
+                    <combat />
+                    <!-- Equipment -->
+                    <equipment />
+                  </div>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="row">
+                  <div class="col">
+                    <!-- Attacks -->
+                    <attacks />
+                    <features />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="print-hide">
+              <loadsave :minimal="false" />
+            </div>
+            <div style="page-break-after: always">&nbsp;</div>
+            <!-- Spells -->
+            <div class="row">
+              <div class="col-12">
+                <spells />
+              </div>
+            </div>
+            <!-- Resources -->
+            <div class="row">
+              <div class="col-12">
+                <resources />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <pets />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <actions v-if="showActions" />
+              </div>
+            </div>
+            <div style="page-break-after: always">&nbsp;</div>
+            <!-- Fluff Details -->
+            <appearance />
+            <fluff />
+          </b-tab>
+          <b-tab title="Combat HUD">
+            <combathud :combat-modal="combatModal" />
+          </b-tab>
+          <b-tab title="Character Details">
+            <!-- Fluff Details -->
+            <appearance />
+            <fluff />
+          </b-tab>
+          <b-tab title="Spells &amp; Resources">
+            <div class="row">
+              <div class="col-12">
+                <spells />
+              </div>
+            </div>
+            <!-- Resources -->
+            <div class="row">
+              <div class="col-12">
+                <resources />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <pets />
+              </div>
+            </div>
+          </b-tab>
+          <b-tab title="Game Notes">
+            <gamenotes />
+          </b-tab>
       </div>
       <div class="col-4 print-hide" v-if="!buildHide">
         <h2>Build</h2>
@@ -138,7 +167,16 @@
           </div>
         </div>
         <bonus />
-        <createcreature />
+        <div class="col-sm">
+          <h5>Add to Group</h5>
+          <select v-model="character.group">
+            <option v-for="group in groups" :value="group.name" :key="group.id">{{ group.name }}</option>
+            <option :value="''">None</option>
+          </select>
+          <h6>Create New Group</h6>
+          <input type="text" v-model="newgroup" class="charsheet-text" />
+          <button class="btn btn-sm btn-primary" @click="addGroup()">Create</button>
+        </div>
         <campaigninfo />
       </div>
     </div>
@@ -198,11 +236,6 @@
       </b-tabs>
     </div>
     <loadsavemodals />
-    <b-modal v-model="combatModal" title="Combat HUD"
-             hide-footer size="xl"
-             :modal-class="userinfo.themesetting">
-      <combathud :combat-modal="combatModal" />
-    </b-modal>
     <b-modal v-model="startGuide" title="Getting Started Guide"
              hide-footer size="lg"
              :modal-class="userinfo.themesetting">

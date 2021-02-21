@@ -29,8 +29,7 @@ export default {
   props: { minimal: Boolean },
   data () {
     return {
-      comp: this,
-      newgroup: ""
+      comp: this
     };
   },
   watch: {
@@ -55,10 +54,7 @@ export default {
       saveCharacter: "saveCharacter",
       loadCharacter: "loadCharacter",
       resetCharacter: "resetCharacter"
-    }),
-    addGroup () {
-      this.character.group = this.newgroup;
-    }
+    })
   },
   mounted () {
     if (this.loggedin) {

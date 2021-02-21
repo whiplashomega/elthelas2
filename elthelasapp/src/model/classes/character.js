@@ -44,6 +44,7 @@ export default function() {
     bond: "",
     personality: "",
     notes: "",
+    sessions: [],
     god: "",
     skin: "",
     pets: [],
