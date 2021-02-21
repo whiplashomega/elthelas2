@@ -8,7 +8,7 @@
         <characterheader />
         <div class="row print-hide">
           <div class="col">
-            <button class="btn btn-primary btn-sm pull-right" @click="buildHide = !buildHide"><span v-if="!buildHide">Hide</span><span v-if="buildHide">Show</span> Build</button>&nbsp;
+            <button class="btn btn-primary btn-sm" style="float:right;" @click="buildHide = !buildHide"><span v-if="!buildHide">Hide</span><span v-if="buildHide">Show</span> Build</button>&nbsp;
           </div>
         </div>
         <b-tabs>
