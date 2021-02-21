@@ -11,23 +11,26 @@
     </div>
     <div v-if="currentSession.id !== ''">
       <div class="row">
-        <div class="col-4">
+        <div class="col-3">
           <div class="charsheet-static">
             <label>Today's Date</label>
             <input type="text" class="charsheet-text" v-model="currentSession.date" />
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-3">
           <div class="charsheet-static">
             <label>Session Start Date</label>
             <input type="text" class="charsheet-text" v-model="currentSession.ingamedate.start" />
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-3">
           <div class="charsheet-static">
             <label>Session End Date</label>
             <input type="text" class="charsheet-text" v-model="currentSession.ingamedate.end" />
           </div>
+        </div>
+        <div class="col-3 btn-group">
+          <button @click="removeSession(currentSession)" class="btn btn-danger">Delete</button>
         </div>
       </div>
       <div class="row">

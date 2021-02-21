@@ -25,7 +25,7 @@ export default {
         locations: "",
         goals: "",
         encounters: "",
-        loots: ""
+        loot: ""
       }
     };
   },
@@ -43,10 +43,20 @@ export default {
       this.encounters = "";
       this.loot = "";
     },
-    addSession () {
+    addSession() {
       let session = new this.Session(new Date());
       this.character.sessions.push(session);
       this.currentSession = session;
+    },
+    removeSession(session) {
+      if(confirm("Are you sure you want to delete this session?")) {
+        this.character.sessions.splice(this.character.sessions.findIndex(session), 1);
+        if (this.character.sessions.length > 0) {
+          this.currentSession = this.character.sessions[0];
+        } else {
+          this.currentSession = { id: "", date: "", ingamedate: { start: "", end: "" }, npcs: "", locations: "", goals: "", encounters: "", loot: "" };
+        }
+      }
     }
   }
 };
