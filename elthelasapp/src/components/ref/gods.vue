@@ -9,7 +9,7 @@
           </thead>
           <tbody>
             <tr v-for="god in gods" :key="god.id">
-              <td><img :src="GodByName.symbolimage" alt="" style="max-width:50px;max-height:50px;width:auto;height:auto;" /></td>
+              <td :style="'background-image: url(' + GodByName.symbolimage + ');max-height:30px;width:auto;'" :title="GodByName.holysymbol"></td>
               <td>{{ god.name }}</td>
               <td>{{ god.domains }}</td>
               <td>{{ god.domains5 }}</td>
@@ -51,21 +51,7 @@
             <p>
               <b-form-select v-model="domain">
                 <option value="" selected>Select a Domain</option>
-                <option value="Air">Air</option>
-                <option value="Arcana">Arcana</option>
-                <option value="Craft">Craft</option>
-                <option value="Death">Death</option>
-                <option value="Earth">Earth</option>
-                <option value="Fire">Fire</option>
-                <option value="Knowledge">Knowledge</option>
-                <option value="Life">Life</option>
-                <option value="Light">Light</option>
-                <option value="Nature">Nature</option>
-                <option value="Tempest">Tempest</option>
-                <option value="Trade">Trade</option>
-                <option value="Trickery">Trickery</option>
-                <option value="War">War</option>
-                <option value="Water">Water</option>
+                <option v-for="dom in domains" :key="dom" :value="dom">{{ dom }}</option>
               </b-form-select>
             </p>
             <p>

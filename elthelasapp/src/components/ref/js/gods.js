@@ -1,9 +1,23 @@
 import { mapGetters } from 'vuex';
 
 export default {
-  computed: mapGetters({
-    gods: "allGods"
-  }),
+  computed: {
+    ...mapGetters({
+      gods: "allGods"
+    }),
+    domains () {
+      let domains = [];
+      this.gods.forEach((god) => {
+        let doms = god.domains5.split(", ");
+        doms.forEach((dom) => {
+          if (!domains.includes(dom)) {
+            domains.push(dom);
+          }
+        });
+      });
+      return domains;
+    }
+  },
   data () {
     return {
       GodByName: false,
