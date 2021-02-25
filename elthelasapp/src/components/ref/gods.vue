@@ -9,7 +9,7 @@
           </thead>
           <tbody>
             <tr v-for="god in gods" :key="god.id">
-              <td :style="'background-image: url(' + god.symbolimage + ');max-height:30px;width:auto;background-size:contain;'" :title="GodByName.holysymbol"></td>
+              <td :style="'background-image: url(' + god.symbolimage + ');max-height:30px;width:auto;background-size:contain;background-repeat: no-repeat;'" :title="GodByName.holysymbol"></td>
               <td>{{ god.name }}</td>
               <td>{{ god.domains }}</td>
               <td>{{ god.domains5 }}</td>
