@@ -15,7 +15,9 @@ export default {
           }
         });
       });
-      return domains;
+      return domains.sort((a, b) => {
+        return a.name > b.name ? 1 : -1;
+      });
     }
   },
   data () {
