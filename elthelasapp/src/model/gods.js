@@ -2,7 +2,7 @@ import Vue from 'vue';
 import ctest from './cordovatest.js';
 
 const state = {
-  all: [{ name: 'Placeholder', id: 'placeholder' }]
+  all: [{ name: 'Placeholder', id: 'placeholder', domains5: "" }]
 };
 
 const getters = {
