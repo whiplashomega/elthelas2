@@ -24,11 +24,9 @@ export default {
       return Math.min(...a);
     },
     removeImprovement (improvement) {
-      if (improvement.removeNum) {
-        improvement.count -= improvement.removeNum;
-        if (improvement.count === 0) {
-          this.stronghold.improvements.splice(this.stronghold.improvements.indexOf(improvement), 1);
-        }
+      improvement.count -= improvement.removeNum;
+      if (improvement.count <= 0) {
+        this.stronghold.improvements.splice(this.stronghold.improvements.indexOf(improvement), 1);
       }
     }
   }

@@ -73,9 +73,7 @@ export default {
     let denominator = 0;
     let staffratio = 1;
     let resourceratios = {
-      "alcohol": 1, "arcanum": 1, "brick": 1, "clay": 1, "cloth": 1, "coal": 1, "coffee": 1, "consumergoods": 1, "cotton": 1,
-      "food": 1, "furniture": 1, "horses": 1, "iron": 1, "leather": 1, "lumber": 1, "paper": 1, "pottery": 1, "raremetal": 1,
-      "steel": 1, "stone": 1, "sugar": 1, "timber": 1, "wool": 1
+      "alcohol": 1, "arcanum": 1, "brick": 1, "clay": 1, "cloth": 1, "coal": 1, "coffee": 1, "consumergoods": 1, "cotton": 1, "food": 1, "furniture": 1, "horses": 1, "iron": 1, "leather": 1, "lumber": 1, "paper": 1, "pottery": 1, "raremetal": 1, "steel": 1, "stone": 1, "sugar": 1, "timber": 1, "wool": 1
     };
     if (improvement.staff.length > 0 || improvement.employs > 0) {
       numerator += Number(improvement.laborers);
@@ -150,6 +148,13 @@ export default {
       rev[key] = Math.round((rev[key] + Number(state.current.autoSell[key])) * 100) / 100;
     }
     rev['food'] -= state.current.laws.foodSubsidies;
+    rev['food'] -= state.current.animals.reduce((b, a) => {
+      if (a.livesat === "homeless") {
+        return b + a.foodcost * 2;
+      } else {
+        return b + a.foodcost;
+      }
+    }, 0);
     return rev;
   },
   calculateIncome: (state, getters) => (improvement) => {
@@ -210,6 +215,20 @@ export default {
   },
   getInvalid: (state) => {
     return state.current.population.invalid;
+  },
+  getPopNeeds: (state, getters) => {
+    let popNeeds = {};
+    for (let key in state.popNeedsMultCommon) {
+      popNeeds[key] = state.popNeedsMultCommon[key] * getters.nonstaffPop;
+      state.current.staff.forEach((staff) => {
+        if (staff.salary > 10) {
+          popNeeds[key] += state.popNeedsMultUpper[key];
+        } else {
+          popNeeds[key] += state.popNeedsMultMiddle[key];
+        }
+      });
+    }
+    return popNeeds;
   },
   getBuyTable: state => state.buyTable,
   getSellTable: state => state.sellTable,
@@ -496,6 +515,12 @@ export default {
       if (Number(state.current.laws.propertyTaxRate) > 0.1) {
         unrest += (Number(state.current.laws.propertyTaxRate) - 0.1) * 50;
       }
+      // homeless animals owned by the party
+      unrest += state.current.animals.reduce((b, a) => {
+        if (a.livesat === "homeless") {
+          return b + 0.5;
+        }
+      }, 0);
       // people want to work, very low unemployment reduces unrest, high unemployment increases unrest
       let unemploymentModifier = (getters.unemploymentRate) * 0.5;
       unrest += unemploymentModifier;

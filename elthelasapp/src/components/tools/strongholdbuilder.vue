@@ -43,7 +43,7 @@
             </b-modal>
             <table class="table table-striped">
               <thead>
-                <tr><th>Resource</th><th>On Hand</th><th>Sell</th><th>Buy</th><th>Daily Sell/Buy</th><th>Change By</th><th>Actions</th></tr>
+                <tr><th>Resource</th><th>On Hand</th><th>Sell</th><th>Buy</th><th>Daily Sell/Buy</th><th>Pop Needs</th><th>Change By</th><th>Actions</th></tr>
               </thead>
               <tbody>
                 <tr v-for="(resource, key) in stronghold.resources" :key="key">
@@ -51,6 +51,7 @@
                   <td>{{ resource }}</td>
                   <td><span>{{ sellTable[key] }}</span></td>
                   <td><span>{{ buyTable[key] }}</span></td>
+                  <td><span>{{ popNeeds[key] }}</span></td>
                   <td>
                     <input type="number" v-model="stronghold.autoSell[key]"
                            class="form-control" style="width:75px;"
@@ -146,37 +147,39 @@
           <div class="col-sm-3">
             Lives At
             <select class="form-control" v-model="newanimal.livesat">
-              <option value="animal-sanctuary">Animal Sanctuary</option>
+              <option value="homeless">Homeless</option>
               <option value="stable">Stable</option>
+              <option value="animal-sanctuary">Animal Sanctuary</option>
               <option value="ayrie">Ayrie</option>
             </select>
           </div>
           <div class="col-sm-2">
             Daily Food Cost
-            <input type="number" class="form-control" v-model="newanimal.foodcost" />
+            <input type="number" class="form-control" v-model="newanimal.foodcost" title="see bottom of page for typical food costs by animal size and diet." />
           </div>
           <div class="col-sm-1">
             <button @click="addAnimal()" class="btn btn-success" style="margin-top:22px;">Add</button>
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-4">
-            <h4>Animal Sanctuary</h4>
+          <h4>Homeless</h4>
+          <p>Homeless animals require double food and increase unrest by 0.5% each. While they may actually live in various locations, the lack of a proper home for them is frustrating for the staff and causes an increase in maintenance costs.</p>
             <table class="table table-sm table-striped">
               <thead>
                 <tr><th>Name</th><th>Species</th><th>Food Cost</th><th>Delete</th></tr>
               </thead>
               <tbody>
-                <tr v-for="animal in sanctuaryAnimals" :key="animal.id">
+                <tr v-for="animal in homelessAnimals" :key="animal.id">
                   <td>{{ animal.name }}</td>
                   <td>{{ animal.species }}</td>
-                  <td>{{ animal.foodcost }}</td>
+                  <td>{{ animal.foodcost * 2 }} (base {{ animal.foodcost }})</td>
                   <td><button class="btn btn-danger" @click="removeAnimal(animal)">X</button></td>
                 </tr>
               </tbody>
             </table>
-          </div>
-          <div class="col-sm-4">
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
             <h4>Stables</h4>
             <table class="table table-sm table-striped">
               <thead>
@@ -192,7 +195,27 @@
               </tbody>
             </table>
           </div>
-          <div class="col-sm-4">
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <h4>Animal Sanctuary</h4>
+            <table class="table table-sm table-striped">
+              <thead>
+                <tr><th>Name</th><th>Species</th><th>Food Cost</th><th>Delete</th></tr>
+              </thead>
+              <tbody>
+                <tr v-for="animal in sanctuaryAnimals" :key="animal.id">
+                  <td>{{ animal.name }}</td>
+                  <td>{{ animal.species }}</td>
+                  <td>{{ animal.foodcost }}</td>
+                  <td><button class="btn btn-danger" @click="removeAnimal(animal)">X</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
             <h4>Ayrie</h4>
             <table class="table table-sm table-striped">
               <thead>
@@ -205,6 +228,37 @@
                   <td>{{ animal.foodcost }}</td>
                   <td><button class="btn btn-danger" @click="removeAnimal(animal)">X</button></td>
                 </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <h4>Typical Food Costs by Diet and Size (in units of food)</h4>
+            <table>
+              <thead><tr><th>Size</th><th>Diet</th><th>Typical Food Cost</th></tr></thead>
+              <tbody>
+                <tr><td>Tiny</td><td>Any</td><td>0.05</td></tr>
+                <tr><td>Small</td><td>Herbivore/Frugivore</td><td>0.1</td></tr>
+                <tr><td>Small</td><td>Omnivore/Carnivore</td><td>0.5</td></tr>
+                <tr><td>Medium</td><td>Herbivore</td><td>0.25</td></tr>
+                <tr><td>Medium</td><td>Frugivore</td><td>0.5</td></tr>
+                <tr><td>Medium</td><td>Omnivore/Carnivore</td><td>1</td></tr>
+                <tr><td>Large</td><td>Herbivore</td><td>1</td></tr>
+                <tr><td>Large</td><td>Frugivore</td><td>2</td></tr>
+                <tr><td>Large</td><td>Omnivore/Carnivore</td>4</tr>
+                <tr><td>Huge</td><td>Herbivore</td><td>4</td></tr>
+                <tr><td>Huge</td><td>Frugivore</td><td>8</td></tr>
+                <tr><td>Huge</td><td>Omnivore/Carnivore</td><td>16</td></tr>
+              </tbody>
+            </table>
+            <h4>Multipliers for Other Traits</h4>
+            <table>
+              <thead><tr><th>Trait</th><th>Multiplier</th></tr></thead>
+              <tbody>
+                <tr><td>Flying Speed</td><td>2</td></tr>
+                <tr><td>Monstrous Type</td><td>2</td></tr>
+                <tr><td>Size Greater than Huge</td><td>4</td></tr>
               </tbody>
             </table>
           </div>

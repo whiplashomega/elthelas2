@@ -46,6 +46,7 @@ export default {
       totalStorage: 'totalStorage',
       unemploymentRate: 'unemploymentRate',
       unrest: 'unrest',
+      popNeeds: 'getPopNeeds',
       usedStorage: 'usedStorage'
     }),
     reverseTransactions () {
@@ -64,6 +65,11 @@ export default {
     ayrieAnimals () {
       return this.stronghold.animals.filter((a) => {
         return a.livesat === "ayrie";
+      }).sort();
+    },
+    homelessAnimals () {
+      return this.stronghold.animals.filter((a) => {
+        return a.livesat === "homeless";
       }).sort();
     }
   },

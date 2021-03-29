@@ -27,13 +27,13 @@
         </div>
         <div class="row">
           <div class="col-sm-3">
-            <strong>Non-Staff Housing: </strong> {{ totalHousing }}
-          </div>
-          <div class="col-sm-3">
             <strong>Total Population: </strong> {{ getPop }}
           </div>
           <div class="col-sm-3">
             <strong>Non-Staff Population: </strong> {{ nonstaffPop }}
+          </div>
+          <div class="col-sm-3">
+            <strong>Non-Staff Housing: </strong> {{ totalHousing }}
           </div>
           <div class="col-sm-3">
             <strong>Max Laborers: </strong> {{ maxLaborers }}
