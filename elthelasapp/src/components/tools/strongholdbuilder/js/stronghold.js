@@ -47,6 +47,7 @@ export default {
       unemploymentRate: 'unemploymentRate',
       unrest: 'unrest',
       popNeeds: 'getPopNeeds',
+      privateProduced: 'getPrivateProduction',
       usedStorage: 'usedStorage'
     }),
     reverseTransactions () {

@@ -43,7 +43,7 @@
             </b-modal>
             <table class="table table-striped">
               <thead>
-                <tr><th>Resource</th><th>On Hand</th><th>Sell</th><th>Buy</th><th>Daily Sell/Buy</th><th>Pop Needs</th><th>Change By</th><th>Actions</th></tr>
+                <tr><th>Resource</th><th>On Hand</th><th>Sell</th><th>Buy</th><th>Pop Needs</th><th>Daily Sell/Buy</th><th>Change By</th><th>Actions</th></tr>
               </thead>
               <tbody>
                 <tr v-for="(resource, key) in stronghold.resources" :key="key">
@@ -52,6 +52,7 @@
                   <td><span>{{ sellTable[key] }}</span></td>
                   <td><span>{{ buyTable[key] }}</span></td>
                   <td><span>{{ popNeeds[key] }}</span></td>
+                  <td><span>{{ privateProduced[key] }}</span></td>
                   <td>
                     <input type="number" v-model="stronghold.autoSell[key]"
                            class="form-control" style="width:75px;"
@@ -162,8 +163,9 @@
           </div>
         </div>
         <div class="row">
-          <h4>Homeless</h4>
-          <p>Homeless animals require double food and increase unrest by 0.5% each. While they may actually live in various locations, the lack of a proper home for them is frustrating for the staff and causes an increase in maintenance costs.</p>
+          <div class="col-sm-12">
+            <h4>Homeless</h4>
+            <p>Homeless animals require double food and increase unrest by 0.5% each. While they may actually live in various locations, the lack of a proper home for them is frustrating for the staff and causes an increase in maintenance costs.</p>
             <table class="table table-sm table-striped">
               <thead>
                 <tr><th>Name</th><th>Species</th><th>Food Cost</th><th>Delete</th></tr>
@@ -177,6 +179,7 @@
                 </tr>
               </tbody>
             </table>
+          </div>
         </div>
         <div class="row">
           <div class="col-sm-12">

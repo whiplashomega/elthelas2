@@ -228,7 +228,25 @@ export default {
         }
       });
     }
+    for (let key in popNeeds) {
+      popNeeds[key] = (popNeeds[key] * 100) / 100;
+    }
     return popNeeds;
+  },
+  getPrivateProduction: (state, getters) => {
+    let produced = state.current.privateEnterprise.reduce((b, a) => {
+      for (let key in a.revenue) {
+        if (b[key]) {
+          b[key] += a.revenue[key];
+        } else {
+          b[key] = a.revenue[key];
+        }
+      }
+    }, {});
+    for (let key in produced) {
+      produced[key] = (produced[key] * 100) / 100;
+    }
+    return produced;
   },
   getBuyTable: state => state.buyTable,
   getSellTable: state => state.sellTable,
