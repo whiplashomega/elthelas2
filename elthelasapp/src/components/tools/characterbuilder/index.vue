@@ -1,5 +1,8 @@
 <template>
   <div class="container charbuilder">
+    <div class="alert alert-danger" v-if="message">
+      {{ message }}
+    </div>
     <div class="row" v-if="!mobile">
       <div class="print-hide col-sm-12">
         <loadsave minimal />

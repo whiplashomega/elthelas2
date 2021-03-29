@@ -10,7 +10,8 @@ export default {
     characters: [],
     drivefiles: [],
     hitdicechanged: 0,
-    encounterCharacters: []
+    encounterCharacters: [],
+    message: ""
   },
   getters: getters,
   actions: actions

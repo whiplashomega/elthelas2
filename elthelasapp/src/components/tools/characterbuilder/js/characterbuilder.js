@@ -58,7 +58,8 @@ export default {
       statRolls: "getStatRolls",
       hitdicechanged: "hitdicechanged",
       userinfo: "getUserInfo",
-      groups: "charGroups"
+      groups: "charGroups",
+      message: "getCharErrorMessage"
     })
   },
   data () {

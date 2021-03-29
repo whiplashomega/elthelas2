@@ -119,7 +119,10 @@ export default {
       state.currentCharacter._id = res.body._id;
       return true;
     }).catch(function() {
-      alert("error when autosaving, please try logging off and in again");
+      state.message = "error when autosaving, please try logging off and in again";
+      setTimeout(function() {
+        state.message = "";
+      }, 10000);
     });
   },
   newToServer: ({ state }, comp) => {

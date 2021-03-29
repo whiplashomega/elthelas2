@@ -1,6 +1,9 @@
 import charCalculators from '@/helpers/charcalc';
 
 export default {
+  getCharErrorMessage: (state) => {
+    return state.message;
+  },
   getStatRolls: (state) => state.statRolls,
   hitdicechanged: (state) => state.hitdicechanged,
   serverCharacters: (state) => state.characters,
