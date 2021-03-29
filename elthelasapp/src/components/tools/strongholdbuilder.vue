@@ -43,7 +43,7 @@
             </b-modal>
             <table class="table table-striped">
               <thead>
-                <tr><th>Resource</th><th>On Hand</th><th>Sell</th><th>Buy</th><th>Pop Needs</th><th>Daily Sell/Buy</th><th>Change By</th><th>Actions</th></tr>
+                <tr><th>Resource</th><th>On Hand</th><th>Sell</th><th>Buy</th><th>Pop Needs</th><th>Private Production</th><th>Daily Sell/Buy</th><th>Change By</th><th>Actions</th></tr>
               </thead>
               <tbody>
                 <tr v-for="(resource, key) in stronghold.resources" :key="key">

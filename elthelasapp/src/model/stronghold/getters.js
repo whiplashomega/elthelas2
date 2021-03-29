@@ -242,6 +242,7 @@ export default {
           b[key] = a.revenue[key];
         }
       }
+      return b;
     }, {});
     for (let key in produced) {
       produced[key] = (produced[key] * 100) / 100;
