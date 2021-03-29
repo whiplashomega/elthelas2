@@ -21,6 +21,7 @@ export default {
       calcTotalRevenue: 'calcTotalRevenue',
       calculateIncome: 'calculateIncome',
       calculateRevenue: 'calculateRevenue',
+      calcGrossRevenue: 'calcGrossRevenue',
       expenses: 'expenses',
       getPop: 'getPop',
       grossRevenue: 'grossRevenue',
