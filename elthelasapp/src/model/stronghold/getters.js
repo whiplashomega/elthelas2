@@ -233,7 +233,7 @@ export default {
       });
     }
     for (let key in popNeeds) {
-      popNeeds[key] = (popNeeds[key] * 100) / 100;
+      popNeeds[key] = Math.round(popNeeds[key] * 100) / 100;
     }
     return popNeeds;
   },
@@ -249,7 +249,7 @@ export default {
       return b;
     }, {});
     for (let key in produced) {
-      produced[key] = (produced[key] * 100) / 100;
+      produced[key] = Math.round(produced[key] * 100) / 100;
     }
     return produced;
   },
@@ -541,7 +541,7 @@ export default {
       // homeless animals owned by the party
       unrest += state.current.animals.reduce((b, a) => {
         if (a.livesat === "homeless") {
-          return b + 0.5;
+          return b + 0.25;
         }
       }, 0);
       // people want to work, very low unemployment reduces unrest, high unemployment increases unrest

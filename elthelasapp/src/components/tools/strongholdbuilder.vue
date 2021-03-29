@@ -167,7 +167,6 @@
         <div class="row">
           <div class="col-sm-12">
             <h4>Homeless</h4>
-            <p>Homeless animals require double food and increase unrest by 0.5% each. While they may actually live in various locations, the lack of a proper home for them is frustrating for the staff and causes an increase in maintenance costs.</p>
             <table class="table table-sm table-striped">
               <thead>
                 <tr><th>Name</th><th>Species</th><th>Food Cost</th><th>Delete</th></tr>
