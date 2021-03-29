@@ -13,7 +13,7 @@
       </b-tab>
       <b-tab title="Budget">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-7">
             <h4>Current Treasury</h4>
             <h6>Gold Transactions</h6>
             <p>
@@ -43,7 +43,7 @@
             </b-modal>
             <table class="table table-striped">
               <thead>
-                <tr><th>Resource</th><th>On Hand</th><th>Sell</th><th>Buy</th><th>Pop Needs</th><th>Private Production</th><th>Daily Sell/Buy</th><th>Change By</th><th>Actions</th></tr>
+                <tr><th>Resource</th><th>On Hand</th><th>Sell</th><th>Buy</th><th>Pop Needs</th><th>Your Production</th><th>Private Production</th><th>Daily Sell/Buy</th><th>Change By</th><th>Actions</th></tr>
               </thead>
               <tbody>
                 <tr v-for="(resource, key) in stronghold.resources" :key="key">
@@ -52,6 +52,7 @@
                   <td><span>{{ sellTable[key] }}</span></td>
                   <td><span>{{ buyTable[key] }}</span></td>
                   <td><span>{{ popNeeds[key] }}</span></td>
+                  <td><span>{{ calcTotalRevenue[key] }}</span></td>
                   <td><span>{{ privateProduced[key] }}</span></td>
                   <td>
                     <input type="number" v-model="stronghold.autoSell[key]"
@@ -74,7 +75,7 @@
               </tbody>
             </table>
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-2">
             <h4>Revenue</h4>
             Total Revenue: {{ grossRevenue }}<br />
             Direct Income: {{ improvementRevenue }}<br />
@@ -156,7 +157,8 @@
           </div>
           <div class="col-sm-2">
             Daily Food Cost
-            <input type="number" class="form-control" v-model="newanimal.foodcost" title="see bottom of page for typical food costs by animal size and diet." />
+            <input type="number" class="form-control"
+                   v-model="newanimal.foodcost" title="see bottom of page for typical food costs by animal size and diet." />
           </div>
           <div class="col-sm-1">
             <button @click="addAnimal()" class="btn btn-success" style="margin-top:22px;">Add</button>
