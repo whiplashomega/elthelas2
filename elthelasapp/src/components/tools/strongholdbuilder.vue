@@ -52,7 +52,7 @@
                   <td><span>{{ sellTable[key] }}</span></td>
                   <td><span>{{ buyTable[key] }}</span></td>
                   <td><span>{{ popNeeds[key] }}</span></td>
-                  <td><span>{{ calcTotalRevenue[key] }}</span></td>
+                  <td><span>{{ calculateRevenue[key] }}</span></td>
                   <td><span>{{ privateProduced[key] }}</span></td>
                   <td>
                     <input type="number" v-model="stronghold.autoSell[key]"
