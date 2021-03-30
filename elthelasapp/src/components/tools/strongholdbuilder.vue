@@ -292,16 +292,15 @@
             <tr><td>3</td><td>A wandering mercenary arrives in town looking for work. (Fighter level = 2d4 + 1, max of the player level)</td></tr>
             <tr><td>4</td><td>A wandering cleric arrives in town looking for work. (Cleric level = 2d4 + 1, max of the player level)</td></tr>
             <tr><td>5-6</td><td>Unbranded cattle have wandered into town and are captured by the townspeople. Add 200 food to your stockpiles.</td></tr>
-            <tr><td>7-8</td><td>A wealthy family moves into town, building a manor house and a new random business (private enterprises).</td></tr>
-            <tr><td>9</td><td>5d6 Kobold prospectors show up at your keep shouting about how they have discovered gold! They offer to mine it for you in exchange for the rights to live in town. (Build a Gold Mine).</td></tr>
-            <tr><td>10</td><td>5d6 Kobold prospectors show up at your keep shouting about how they have discovered iron! They offer to mine it for you in exchange for the rights to live in town. (Build an Iron Mine).</td></tr>
-            <tr><td>11</td><td>5d6 Kobold prospectors show up at your keep shouting about how they have discovered coal! They offer to mine it for you in exchange for the rights to live in town. (Build a Coal Mine).</td></tr>
-            <tr><td>12</td><td>A wandering prospector arrives and excitedly proclaims that he has found gold on your land.</td></tr>
-            <tr><td>13-14</td><td>A wandering prospector arrives and excitedly proclaims that he has found iron on your land.</td></tr>
-            <tr><td>15-16</td><td>A wandering prospector arrives and excitedly proclaims that he has found coal on your land.</td></tr>
-            <tr><td>17</td><td>A wandering prospector arrives and excitedly proclaims that he has found a random rare metal on your land (roll a d3, 1=Mithral, 2=Adamantium, 3=Orichalcum).</td></tr>
-            <tr><td>18-22</td><td>A wandering prospector arrives and offers to search your lands for valuable metals in return for a job as head miner (roll a d100, 1-5 he finds a rare metal, 5-15 he finds gold, 16-60 he finds Iron, 61-100 he finds coal).</td></tr>
-            <tr><td>23-26</td><td>8d8 (3d8 children, 5d8 adults) colonists arrive unexpectedly from one of the Alliance nations (roll randomly), hoping for a place to settle. They bring enough materials and money to build 3 houses and a large farm.</td></tr>
+            <tr><td>7-9</td><td>A wealthy family moves into town, building a manor house and a new random business (private enterprises).</td></tr>
+            <tr><td>10</td><td>5d6 Kobold prospectors show up at your keep shouting about how they have discovered gold or a rare metal! They offer to mine it for you in exchange for the rights to live in town. (Build a Gold Mine).</td></tr>
+            <tr><td>11</td><td>5d6 Kobold prospectors show up at your keep shouting about how they have discovered iron or coal! They offer to mine it for you in exchange for the rights to live in town. (Build an Iron Mine or Coal Mine).</td></tr>
+            <tr><td>12-13</td><td>A wandering prospector arrives and excitedly proclaims that he has found valuable minerals on your land (1d100, 1-5 rare metal, 6-15 gold, 16-50 coal, 51-90 coal, 91-100, something bad).</td></tr>
+            <tr><td>14-15</td><td>Your people find rare edible fruits and mushrooms in the forests. Roll 3d20 and gain that many units of food.</td></tr>
+            <tr><td>16</td><td>You find a cache of money in an unexpected place. Roll 2d100 and gain that much gold.</td></tr>
+            <tr><td>17-20</td><td>8d8 (3d8 children, 5d8 adults) colonists arrive unexpectedly from one of the Alliance nations (roll randomly), hoping for a place to settle. They bring enough materials and money to build 3 houses and a large farm.</td></tr>
+            <tr><td>21-23</td><td>A family moves into town. (2 adults, 1d6-1 children)</td></tr>
+            <tr><td>24-26</td><td>Workers are particularly productive. Increase revenue by 25% today.</td></tr>
             <tr><td>27</td><td>Your miners stumble on a cache of buried treasure.</td></tr>
             <tr><td>28</td><td>A merchant arrives in town offering special wares, including a selection of magic items.</td></tr>
             <tr><td>29-30</td><td>A middle class family moves to town and builds a house.</td></tr>
