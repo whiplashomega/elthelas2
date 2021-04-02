@@ -106,6 +106,7 @@
           <b-tab title="Game Notes">
             <gamenotes />
           </b-tab>
+        </b-tabs>
       </div>
       <div class="col-4 print-hide" v-if="!buildHide">
         <h2>Build</h2>

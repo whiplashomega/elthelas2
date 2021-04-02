@@ -49,7 +49,7 @@ export default {
       this.currentSession = session;
     },
     removeSession(session) {
-      if(confirm("Are you sure you want to delete this session?")) {
+      if (confirm("Are you sure you want to delete this session?")) {
         this.character.sessions.splice(this.character.sessions.findIndex(session), 1);
         if (this.character.sessions.length > 0) {
           this.currentSession = this.character.sessions[0];

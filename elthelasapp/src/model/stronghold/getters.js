@@ -147,7 +147,7 @@ export default {
     return rev;
   },
   calcTotalRevenue: (state, getters) => {
-    let rev = getters.calcGrossRevenue;
+    let rev = { ...getters.calcGrossRevenue };
     for (let key in rev) {
       rev[key] = Math.round((rev[key] + Number(state.current.autoSell[key])) * 100) / 100;
     }
