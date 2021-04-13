@@ -482,8 +482,11 @@ export default {
       return tot + imp.storage * imp.count;
     }, 0);
   },
+  employablePeople: (state) => {
+    return Number(state.current.population.adults) + state.current.staff.length + Number(state.current.guards) + Number(state.current.servants) + Number(state.current.privateEmployees.length);
+  },
   unemploymentRate: (state, getters) => {
-    return state.current.population.adults ? Math.round((1 - ((getters.totalEmployees + getters.totalPrivateEmployed) / Number(state.current.population.adults))) * 100) : 0;
+    return state.current.population.adults ? Math.round((1 - ((getters.totalEmployees + getters.totalPrivateEmployed) / getters.employablePeople)) * 100) : 0;
   },
   unitWeightMod: (state) => state.unitWeightMod,
   unmetStaffNeed: (state, getters) => {
