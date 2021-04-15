@@ -374,22 +374,22 @@
             <tr>
               <td>Recruit Colonists from the Homeland (1d6 kids, 2d6 adults).</td>
               <td>100 gp</td>
-              <td>1/2 day</td>
+              <td>1 day</td>
             </tr>
             <tr>
               <td>Get local refugees to join the town. (1d6 kids, 1d6 adults, 1d6 invalids)</td>
               <td>10 gp</td>
-              <td>1/2 day</td>
+              <td>1 day</td>
             </tr>
             <tr>
               <td>Recruit skilled worker from the population. Requires an investigation check for success. DC = 10 + base salary</td>
               <td>0 gp</td>
-              <td>1/2 day</td>
+              <td>1 day</td>
             </tr>
             <tr>
               <td>Encourage people to leave town (1d6 kids, 2d6 adults).</td>
               <td>50-unrest gp</td>
-              <td>1/2 day</td>
+              <td>1 day</td>
             </tr>
             <tr>
               <td>Recruit skilled worker from out of town.</td>
@@ -432,9 +432,24 @@
               <td>1 day</td>
             </tr>
             <tr>
-              <td>Hire spies to dig up information on another Lord. The DM will roll an investigation check in secret on the spies behalf, depending on the result you may or may not get useful information.</td>
+              <td>Hire spies to dig up information on another Lord. The DM will roll an investigation check in secret on the spies behalf, depending on the result you may or may not get useful information. Spy returns after enough time to travel to the Lord's home and back has passed.</td>
               <td>200 gp</td>
               <td>1 day</td>
+            </tr>
+            <tr>
+              <td>Go Hunting. Roll a survival check. Result determines how much is gained. 1-9: 1 unit of food (caught a rabbit, found some berries). 10-14: 2-5 units of food. 15-20: 10 units of food and 1 leather (a deer). 21+: 20 units of food and 2 leather.</td>
+              <td>0 gp</td>
+              <td>1 day</td>
+            </tr>
+            <tr>
+              <td>Research a topic. Make a relevant knowledge check, result determines how much information is discovered. DC determined by DM.</td>
+              <td>0 gp</td>
+              <td>1 day</td>
+            </tr>
+            <tr>
+              <td>Aid Construction Efforts. Requires a DC 15 Carpenters Tools check (if the building is mostly wood) or Mason's tools check if it is mostly stone. Reduce build time of one building by 1 day.</td>
+              <td>0 gp</td>
+              <td>2 days</td>
             </tr>
           </tbody>
         </table>

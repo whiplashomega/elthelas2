@@ -26,7 +26,7 @@
           <thead><tr><th>Improvement</th><th>Days Remaining</th></tr></thead>
           <tbody>
             <tr v-for="(imp, index) in stronghold.construction" :key="imp.id + index">
-              <td>{{ imp.name }} <span v-if="imp.private">(private)</span></td><td>{{ imp.buildtime }}</td>
+              <td>{{ imp.name }} <span v-if="imp.private">(private)</span></td><td><input type="number" v-model="imp.buildtime" min="0" /></td>
             </tr>
           </tbody>
         </table>
