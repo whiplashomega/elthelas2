@@ -34,6 +34,7 @@ router.get('/:id', function (req, res, next) {
       res.status(404);
     } else {
       res.header("Cache-Control", "no-cache, no-store, must-revalidate");
+      res.header("Access-Control-Allow-Origin", "*");
       res.header("Pragma", "no-cache");
       res.header("Expires", 0);
     }
