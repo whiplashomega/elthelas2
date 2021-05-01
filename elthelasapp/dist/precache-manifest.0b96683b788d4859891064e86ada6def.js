@@ -160,7 +160,7 @@ self.__precacheManifest = [
     "url": "/js/characterbuilder.4239fdd0.js"
   },
   {
-    "revision": "89b5f9b383cbb17d0638d634391e1c7b",
+    "revision": "6f5544e498a9137553e4f50ae6d8410c",
     "url": "/json/improvements.json"
   },
   {
