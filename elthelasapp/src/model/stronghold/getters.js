@@ -384,7 +384,7 @@ export default {
       return a + b.staffpop * b.count;
     }, 0) + state.current.privateEnterprise.reduce((total, imp) => {
       return total + imp.staffpop * imp.count;
-    });
+    }, 0);
   },
   staffSummary: (state, getters) => {
     return state.current.staff.reduce((a, b) => {
