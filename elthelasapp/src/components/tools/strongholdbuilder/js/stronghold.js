@@ -158,7 +158,7 @@ export default {
       if (!Array.isArray(this.stronghold.vassals)) {
         this.stronghold.vassals = [];
       }
-      this.stronghold.vassals.push({ id: Date.now() + Math.rand(), name: "", income: 0 });
+      this.stronghold.vassals.push({ id: Date.now() + Math.random(), name: "", income: 0 });
     }
   },
   created () {

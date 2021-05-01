@@ -24,9 +24,13 @@ export default {
       return Math.min(...a);
     },
     removeImprovement (improvement) {
-      improvement.count -= improvement.removeNum;
-      if (improvement.count <= 0) {
-        this.stronghold.improvements.splice(this.stronghold.improvements.indexOf(improvement), 1);
+      if (improvement.removeNum) {
+        improvement.count -= improvement.removeNum;
+        if (improvement.count <= 0) {
+          this.stronghold.improvements.splice(this.stronghold.improvements.indexOf(improvement), 1);
+        }
+      } else {
+        alert("please select the amount to remove.");
       }
     }
   }
