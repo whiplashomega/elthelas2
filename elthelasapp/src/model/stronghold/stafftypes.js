@@ -193,6 +193,11 @@ export default [
     bonus: "Required to collect taxes and tolls"
   },
   {
+    name: "Tax Collector",
+    typicalSalary: 20,
+    bonus: "Required to collect taxes from vassals. Salary includes the cost the tax collector pays for his own guards."
+  },
+  {
     name: "Teacher",
     typicalSalary: 5,
     bonus: "runs a school for children, teaching reading, writing, and arithmetic"

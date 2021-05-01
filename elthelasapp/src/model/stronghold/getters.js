@@ -48,7 +48,7 @@ export default {
     return Number(total) - Number(assigned);
   },
   availableStaffBeds: (state, getters) => {
-    return getters.staffBeds - (state.current.staff.length + Number(state.current.guards) + Number(state.current.servants));
+    return getters.staffBeds - (state.current.staff.length + Number(state.current.guards) + Number(state.current.servants) + state.current.privateEmployees.length);
   },
   bankRevenue: (state, getters) => {
     let bank = state.current.improvements.filter((a) => {
@@ -382,7 +382,9 @@ export default {
   staffBeds: (state) => {
     return state.current.improvements.reduce((a, b) => {
       return a + b.staffpop * b.count;
-    }, 0);
+    }, 0) + state.current.privateEnterprise.reduce((total, imp) => {
+      return total + imp.staffpop * imp.count;
+    });
   },
   staffSummary: (state, getters) => {
     return state.current.staff.reduce((a, b) => {
@@ -445,7 +447,7 @@ export default {
     return Math.round(taxEfficiency * 100) / 100;
   },
   taxRevenue: (state, getters) => {
-    return getters.headTax + getters.incomeTax + getters.propertyTax + getters.rents;
+    return getters.headTax + getters.incomeTax + getters.propertyTax + getters.rents + getters.vassalTax;
   },
   timberLand: (state, getters) => {
     let land = 0;
@@ -475,7 +477,7 @@ export default {
   totalSalary: (state) => {
     return state.current.staff.reduce((a, b) => {
       return a + Number(b.salary);
-    }, 0) + state.current.guards * 2 + state.current.servants * 0.5 + state.current.laborers * 0.5;
+    }, 0) + (state.current.laws.conscription ? state.current.guards * 0.5 : state.current.guards * 2) + state.current.servants * 0.5 + state.current.laborers * 0.5;
   },
   totalStorage: (state) => {
     return state.current.improvements.reduce((tot, imp) => {
@@ -555,6 +557,10 @@ export default {
       // people want a place to live. If there isn't enough housing, unrest increases
       let housingModifier = getters.nonstaffPop ? Math.max(((getters.nonstaffPop - getters.totalHousing) / getters.nonstaffPop) * 20, 0) : 0;
       unrest += housingModifier;
+      if (state.current.laws.conscription) {
+        let percentguards = Math.round((state.current.guards / getters.getPop) * 100);
+        unrest += percentguards;
+      }
     }
     return Math.max(Math.round(unrest), 0);
   },
@@ -592,5 +598,23 @@ export default {
     return Object.values(state.current.resources).reduce((a, b) => {
       return a + b;
     }, 0);
+  },
+  vassalTax: (state) => {
+    let taxcollector = state.current.staff.find((a) => {
+      if (a.job.name === "Tax Collector") {
+        return true;
+      }
+    });
+    if (taxcollector && Array.isArray(state.current.vassals)) {
+      let totalvassalincome = state.current.vassals.reduce((a, b) => {
+        return b + Number(a.income);
+      }, 0);
+      return totalvassalincome * (Number(state.current.laws.vassalTaxRate) / 100);
+    } else {
+      return 0;
+    }
+  },
+  vassalUnrest: (state) => {
+    return 0;
   }
 };

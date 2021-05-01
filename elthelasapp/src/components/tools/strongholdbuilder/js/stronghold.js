@@ -49,7 +49,8 @@ export default {
       unrest: 'unrest',
       popNeeds: 'getPopNeeds',
       privateProduced: 'getPrivateProduction',
-      usedStorage: 'usedStorage'
+      usedStorage: 'usedStorage',
+      vassalTax: 'vassalTax'
     }),
     reverseTransactions () {
       return this.stronghold.transactionrecord.slice().reverse();
@@ -152,6 +153,12 @@ export default {
     },
     addResource (res, amount) {
       this.stronghold.resources[res] += Number(amount);
+    },
+    addVassal () {
+      if (!Array.isArray(this.stronghold.vassals)) {
+        this.stronghold.vassals = [];
+      }
+      this.stronghold.vassals.push({ id: Date.now() + Math.rand(), name: "", income: 0 });
     }
   },
   created () {

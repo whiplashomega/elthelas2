@@ -138,13 +138,16 @@ export default function () {
     privateEmployees: [],
     staff: [],
     animals: [],
+    vassals: [],
     laws: {
       incomeTaxRate: 0,
       headTaxRate: 0,
       foodSubsidies: 0,
       propertyTaxRate: 0,
       todaysExports: 0,
-      rentRate: 0
+      rentRate: 0,
+      vassalTaxRate: 0,
+      conscription: 0
     },
     merchants: [],
     guards: 0,

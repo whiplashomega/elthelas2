@@ -84,6 +84,7 @@
             Income Tax Revenue: {{ incomeTax }}<br />
             Head Tax Revenue: {{ headTax }}<br />
             Property Tax Revenue: {{ propertyTax }}<br />
+            Vassal Tax Revenue: {{ vassalTax }}<br />
             Rents Revenue: {{ rents }}<br />
             Bank Revenue: {{ bankRevenue }}
             <h4>Expenses</h4>
@@ -126,6 +127,12 @@
                    style="max-width:75px; display:inline;" v-model="stronghold.laws.rentRate"
                    step="0.01" title="rents on public owned housing." />
             Daily Rent for Laborers (Middle Class housing pays 5 times this amount)
+            <br />
+            <input type="number" class="form-control"
+                   min="0" max="50"
+                   style="max-width:75px; display:inline;" v-model="stronghold.laws.vassalTaxRate"
+                   step="1" title="vassal taxes enforce taxes on your vassals. Enforcing vassal taxes requires hiring a tax collector. Additionally, vassal tax rates above 10% increase the amount of vassal unrest by the amount above 10%" />
+            Vassal Tax Rate (%)
             <h4>Other Laws</h4>
             <input type="number" class="form-control"
                    min="0" :max="stronghold.resources.food"
@@ -133,6 +140,8 @@
                    step="1" title="Food subsidies are expensive, but reduce unrest." />
             Food Subsidies (person days of food)
             <br />
+            <input type="checkbox" v-model="stronghold.laws.conscription" title="conscription involves forcing people to work as soldiers. It enables you to make any portion of your population guards, and reduces the cost of guards to the cost of laborers. However, your unrest will increase by the percentage of your population that is guards." />
+            Conscription
           </div>
         </div>
       </b-tab>
@@ -268,18 +277,33 @@
           </div>
         </div>
       </b-tab>
-      <b-tab title="Private Enterprises">
+      <b-tab title="Private Enterprises and Vassals">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-4">
             <h4>{{ stronghold.townName }} Private Enterprises</h4>
             <div v-for="improvement in stronghold.privateEnterprise" :key="improvement.id">
               <h5>{{ improvement.name }} x {{ improvement.count }} <button @click="deletePrivateEnterprise(improvement)" class="btn btn-danger">X</button></h5>
             </div>
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-4">
             <h4>Private Staff</h4>
             <p><strong>Laborers: {{ privateLaborers }}</strong></p>
             <p v-for="staff in stronghold.privateEmployees" :key="staff.id">{{ staff.name }}</p>
+          </div>
+          <div class="col-sm-4">
+            <h4>Vassals</h4>
+            <table class="table table-striped">
+              <tr>
+                <th>Name</th><th>Income</th>
+              </tr>
+              <tr v-for="vassal in stronghold.vassals" :key="vassal.id">
+                <td><input type="text" v-model="vassal.name" /></td>
+                <td><input type="number" v-model="vassal.income" /></td>
+              </tr>
+            </table>
+            <div class="btn-group">
+              <button @click="addVassal()" class="btn btn-sm btn-primary">+</button>
+            </div>
           </div>
         </div>
       </b-tab>

@@ -26,7 +26,6 @@ import campaignbuilder from '@/components/tools/campaignbuilder';
 import creaturebuilder from '@/components/tools/creaturebuilder';
 import lifetimeline from '@/components/theharrisons/lifetimeline';
 import altasoror from '@/components/ref/altasoror';
-import roll20 from '@/components/tools/roll20';
 const domains = () => import(/* webpackChunkName: "domains" */ '../components/options/domains');
 const classes = () => import(/* webpackChunkName: "classes" */ '../components/options/class');
 const encounterbuilder = () => import(/* webpackChunkName: "encounters" */ '@/components/tools/encounterbuilder');
@@ -488,16 +487,6 @@ var router = new Router({
       path: "/harrisons/timeline",
       components: {
         default: lifetimeline
-      }
-    },
-    {
-      name: "roll20connector",
-      meta: {
-        title: "Roll 20 Connector"
-      },
-      path: "/roll20",
-      components: {
-        default: roll20
       }
     }
   ],
