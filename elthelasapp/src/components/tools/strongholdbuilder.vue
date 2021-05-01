@@ -363,7 +363,10 @@
             <tr><td>87</td><td>If number of adults is greater than 1050 A baby is born in town. Otherwise nothing happens.</td></tr>
             <tr><td>88</td><td>If the number of adults is greater than 1200 a worker has retired. Otherwise nothing happens.</td></tr>
             <tr><td>89</td><td>If number of adults is greater than 1200 A baby is born in town. Otherwise nothing happens.</td></tr>
-            <tr><td>90-110</td><td>Nothing interesting happens.</td></tr>
+            <tr><td>91-95</td><td>If number of homeless people is greater than 0, your people build a house (private enterprise), otherwise nothing happens.</td></tr>
+            <tr><td>96-100</td><td>If number of available staff beds is less than 3, your people build a staff house (private enterprise), otherwise nothing happens.</td></tr>
+            <tr><td>101-105</td><td>If number of homeless people is greater than 0, your people build a log cabin (private enterprise), otherwise nothing happens.</td></tr>
+            <tr><td>106-110</td><td>Nothing interesting happens.</td></tr>
             <tr><td>111</td><td>If number of sick/elderly is greater than 1200, an elderly person dies. Otherwise nothing happens.</td></tr>
             <tr><td>112</td><td>If the number of children is greater than 1200 a child has reached adulthood (1 child becomes an adult). Otherwise nothing happens.</td></tr>
             <tr><td>113</td><td>If the number of children is greater than 1050 a child has reached adulthood (1 child becomes an adult). Otherwise nothing happens.</td></tr>
