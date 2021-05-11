@@ -543,12 +543,6 @@ export default {
       if (Number(state.current.laws.propertyTaxRate) > 0.1) {
         unrest += (Number(state.current.laws.propertyTaxRate) - 0.1) * 50;
       }
-      // homeless animals owned by the party
-      unrest += state.current.animals.reduce((b, a) => {
-        if (a.livesat === "homeless") {
-          return b + 0.25;
-        }
-      }, 0);
       // people want to work, very low unemployment reduces unrest, high unemployment increases unrest
       let unemploymentModifier = (getters.unemploymentRate) * 0.5;
       unrest += unemploymentModifier;
