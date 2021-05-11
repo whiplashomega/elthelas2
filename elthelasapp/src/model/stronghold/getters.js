@@ -295,7 +295,7 @@ export default {
       return total + Math.floor(imp.pop * imp.count);
     }, 0);
     if (rentRate) {
-      return rentRate * 5 * (getters.staffBeds - getters.availableStaffBeds) + rentRate * Math.min(publicHousing, numberRenting);
+      return rentRate * 5 * (getters.staffBeds - getters.availableStaffBeds) + rentRate * Math.min(publicHousing, numberRenting) - (state.current.laws.conscription ? state.current.guards * 5 * rentRate : 0) + (state.current.laws.conscription ? state.current.guard * rentRate : 0);
     } else {
       state.current.laws.rentRate = 0;
       return 0;
@@ -488,7 +488,7 @@ export default {
     return Number(state.current.population.adults) + state.current.staff.length + Number(state.current.guards) + Number(state.current.servants) + Number(state.current.privateEmployees.length);
   },
   unemploymentRate: (state, getters) => {
-    return state.current.population.adults ? Math.round((1 - ((getters.totalEmployees + getters.totalPrivateEmployed) / getters.employablePeople)) * 100) : 0;
+    return Math.max(state.current.population.adults ? Math.round((1 - ((getters.totalEmployees + getters.totalPrivateEmployed) / getters.employablePeople)) * 100) : 0, 0);
   },
   unitWeightMod: (state) => state.unitWeightMod,
   unmetStaffNeed: (state, getters) => {
