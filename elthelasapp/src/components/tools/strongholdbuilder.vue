@@ -315,10 +315,11 @@
           <thead><tr><th>Roll</th><th>Event</th></tr></thead>
           <tbody>
             <tr><td>1</td><td>You gain 5 levels instantly and find 100000 gold.</td></tr>
-            <tr><td>2</td><td>Your people, grateful for your kind rule, give you gifts worth d20 * 20 gp</td></tr>
-            <tr><td>3</td><td>A wandering mercenary arrives in town looking for work. (Fighter level = 2d4 + 1, max of the player level)</td></tr>
-            <tr><td>4</td><td>A wandering cleric arrives in town looking for work. (Cleric level = 2d4 + 1, max of the player level)</td></tr>
-            <tr><td>5-6</td><td>Unbranded cattle have wandered into town and are captured by the townspeople. Add 200 food to your stockpiles.</td></tr>
+            <tr><td>2</td><td>Roll twice more and use both results. This event can stack.</td></tr>
+            <tr><td>3</td><td>Your people, grateful for your kind rule, give you gifts worth d20 * 20 gp</td></tr>
+            <tr><td>4</td><td>A wandering mercenary arrives in town looking for work. (Fighter level = 2d4 + 1, max of the player level)</td></tr>
+            <tr><td>5</td><td>A wandering cleric arrives in town looking for work. (Cleric level = 2d4 + 1, max of the player level)</td></tr>
+            <tr><td>6</td><td>Unbranded cattle have wandered into town and are captured by the townspeople. Add 200 food to your stockpiles.</td></tr>
             <tr><td>7-10</td><td>A wealthy family moves into town, building a manor house and a new random business (private enterprises).</td></tr>
             <tr><td>11</td><td>5d6 Kobold prospectors show up at your keep shouting about how they have discovered gold or a rare metal! They offer to mine it for you in exchange for the rights to live in town. (Build a Gold Mine).</td></tr>
             <tr><td>12</td><td>5d6 Kobold prospectors show up at your keep shouting about how they have discovered iron or coal! They offer to mine it for you in exchange for the rights to live in town. (Build an Iron Mine or Coal Mine).</td></tr>
@@ -399,7 +400,7 @@
             <tr><td>145-146</td><td>A traveling bard passes through town.</td></tr>
             <tr><td>147-149</td><td>A wandering cleric passes through town and gives a sermon in town.</td></tr>
             <tr><td>150</td><td>A wandering wizard comes through town looking for work and a place to study.</td></tr>
-            <tr><td>150-151</td><td>A skilled fighter wanders through town.</td></tr>
+            <tr><td>151</td><td>A skilled fighter wanders through town.</td></tr>
             <tr><td>152-153</td><td>A creepy looking mage wanders into town. He says he means no harm, but the people find him unsettling.</td></tr>
             <tr><td>154-156</td><td>An ill omen appears, unsettling the townsfolk. The effect of unrest on your next roll is increased by 2.</td></tr>
             <tr><td>157</td><td>A chromatic dragon attacks and demands tribute from the town.</td></tr>
@@ -429,7 +430,8 @@
             <tr><td>194</td><td>A chromatic dragon demands tribute or it will burn the town.</td></tr>
             <tr><td>195</td><td>Graves have been dug up in the night, the Steward suspects a necromancer.</td></tr>
             <tr><td>196-199</td><td>People leave your town. 3d6 people (1d6 children and 2d6 adults) leave town to find a new home.</td></tr>
-            <tr><td>200-202</td><td>One of the loyalists in town is attacked by a mob and killed.</td></tr>
+            <tr><td>200</td><td>Roll twice more and use both results. This event can stack.</td></tr>
+            <tr><td>201-202</td><td>One of the loyalists in town is attacked by a mob and killed.</td></tr>
             <tr><td>203-205</td><td>Revolutionaries attack and attempt to take the town!</td></tr>
             <tr><td>206-207</td><td>Work strike happens. 50% of yesterdays income lost. Will continue until demands are met or otherwise dealt with.</td></tr>
             <tr><td>208-210</td><td>Revolt. The people in your village are taking up arms to attack you!</td></tr>
