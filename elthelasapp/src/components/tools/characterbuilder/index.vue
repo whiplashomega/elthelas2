@@ -24,7 +24,7 @@
                     <abilityscores />
                     <skills />
                   </div>
-                  <div :class="hideleft ? 'col-12' : 'col-5'">
+                  <div class="col-5">
                     <!-- Initiative -->
                     <initiative />
                     <!-- HP -->
@@ -69,7 +69,7 @@
             </div>
             <div class="row">
               <div class="col">
-                <actions v-if="showActions" />
+                <actions />
               </div>
             </div>
             <div style="page-break-after: always">&nbsp;</div>
@@ -78,7 +78,7 @@
             <fluff />
           </b-tab>
           <b-tab title="Combat HUD">
-            <combathud :combat-modal="combatModal" />
+            <combathud />
           </b-tab>
           <b-tab title="Character Details">
             <!-- Fluff Details -->
@@ -86,6 +86,11 @@
             <fluff />
           </b-tab>
           <b-tab title="Spells &amp; Resources">
+            <div class="row">
+              <div class="col-12">
+                <otherrolls />
+              </div>
+            </div>
             <div class="row">
               <div class="col-12">
                 <spells />

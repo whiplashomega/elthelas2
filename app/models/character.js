@@ -67,6 +67,7 @@ var Character = new Schema({
   image: String,
   equipment: [],
   containers: [],
+  rolls: [],
   bonusslots: [Number],
   resources: [],
   features: [],

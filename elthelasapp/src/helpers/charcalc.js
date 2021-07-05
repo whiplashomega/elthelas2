@@ -131,11 +131,14 @@ export default {
     }, "");
   },
   damageBonus: function(character, dmg, stat) {
+    let bonus = dmg.damagebonus;
     if (dmg.addstat) {
-      return Number(this.statMod(character, stat)) + Number(dmg.damagebonus);
-    } else {
-      return Number(dmg.damagebonus);
+      bonus += Number(this.statMod(character, stat));
     }
+    if (dmg.prof) {
+      bonus += this.profbonus(character);
+    }
+    return bonus;
   },
   equipmentContainers: function(character) {
     var containers = [];

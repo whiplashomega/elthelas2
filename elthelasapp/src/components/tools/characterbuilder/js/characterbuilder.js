@@ -22,6 +22,7 @@ import actions from '@/components/tools/characterbuilder/actions';
 import combathud from '@/components/tools/characterbuilder/combathud';
 import pets from '@/components/tools/characterbuilder/pets';
 import gamenotes from '@/components/tools/characterbuilder/gamenotes';
+import otherrolls from '@/components/tools/characterbuilder/otherrolls';
 // import test from '@/tests/unit/charbuilder.test.js';
 
 export default {
@@ -48,7 +49,8 @@ export default {
     campaigninfo,
     combathud,
     pets,
-    gamenotes
+    gamenotes,
+    otherrolls
   },
   computed: {
     ...mapGetters({
