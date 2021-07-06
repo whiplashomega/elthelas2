@@ -131,12 +131,12 @@ export default {
     }, "");
   },
   damageBonus: function(character, dmg, stat) {
-    let bonus = dmg.damagebonus;
+    let bonus = Number(dmg.damagebonus);
     if (dmg.addstat) {
       bonus += Number(this.statMod(character, stat));
     }
     if (dmg.prof) {
-      bonus += this.profbonus(character);
+      bonus += Number(this.profbonus(character));
     }
     return bonus;
   },

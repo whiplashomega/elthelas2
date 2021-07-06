@@ -29,6 +29,7 @@
           <option value="Intelligence">Intelligence</option>
           <option value="Wisdom">Wisdom</option>
           <option value="Charisma">Charisma</option>
+          <option value="Varies (see description)">Varies (see description)</option>
         </select>
         Save Effect
         <input type="text" class="form-control" v-model="roll.savefor" />
@@ -39,6 +40,8 @@
         <div v-for="(dmg, $index) in roll.damage" :key="$index">
           Dice:
           <input type="text" class="form-control" v-model="dmg.dice" />
+          Higher Levels Dice:
+          <input type="text" class="form-control" v-model="dmg.higherlevels" />
           Bonus (not including ability mod or proficiency):
           <input type="number" class="form-control" v-model="dmg.damagebonus" />
           <input type="checkbox" v-model="dmg.addstat" />Add Ability Mod?<br />
@@ -82,6 +85,8 @@
       <div v-for="(dmg, $index) in newroll.damage" :key="$index">
         Dice:
         <input type="text" class="form-control" v-model="dmg.dice" />
+        Higher Levels Dice:
+        <input type="text" class="form-control" v-model="dmg.higherlevels" />
         Bonus (not including ability mod or proficiency):
         <input type="number" class="form-control" v-model="dmg.damagebonus" />
         <input type="checkbox" v-model="dmg.addstat" />Add Ability Mod?<br />
