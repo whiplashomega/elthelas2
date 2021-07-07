@@ -357,8 +357,17 @@ export default {
       index = Number(level.substring(5)) - 1;
     }
     let casterlevel = 0;
-    if (character.charclasses.length === 1) {
-      casterlevel += Math.ceil(Number(character.charclasses[0].level) * Number(character.charclasses[0].selsubclass.castermult));
+    let numcasterclasses = character.charclasses.reduce((a, b) => {
+      if (b.selsubclass.castermult > 0) {
+        return a + 1;
+      }  else {
+        return a;
+      }
+    }, 0);
+    if (numcasterclasses <= 1) {
+      character.charclasses.forEach((a) => {
+        casterlevel += Math.ceil(Number(a.level) * Number(a.selsubclass.castermult));
+      });
     } else {
       character.charclasses.forEach((a) => {
         if (a.thisclass.name === "Artificer") {
