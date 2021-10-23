@@ -16,6 +16,12 @@ tags:   [sorcerer, wizard, level9, conjuration]
 
 **Duration**: Instantaneous
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: []
+
 _Wish_ is the mightiest spell a mortal creature can cast. By simply speaking aloud, you can alter the very foundations of reality in accord with your desires.
 
 The basic use of this spell is to duplicate any other spell of 8th level or lower. You don't need to meet any requirements in that spell, including costly components. The spell simply takes effect.

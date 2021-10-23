@@ -16,6 +16,12 @@ tags: [druid, sorcerer, wizard, eldritchknight, cantrip, transmutation]
 
 **Duration**: Instantaneous
 
+**Saving Throw**: Strength
+
+**Save For**: not pushed
+
+**Damage**: []
+
 You seize the air and compel it to create one of the following effects at a point you can see within range:
 
 * One Medium or smaller creature that you choose must succeed on a Strength saving throw or be pushed up to 5 feet away from you.

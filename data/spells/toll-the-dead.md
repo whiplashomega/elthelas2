@@ -16,6 +16,12 @@ tags: [cleric, warlock, wizard, cantrip, necromancy]
 
 **Duration**: Instantaneous
 
+**Saving Throw**: Wisdom
+
+**Save For**: no damage
+
+**Damage**: [ { "dice": "1d12", "label": "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" }, { "dice": "1d8", "label": "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 You point at one creature you can see within range, and the sound of a dolorous bell fills the air around it for a moment. The target must succeed on a Wisdom
 saving throw or take 1d8 necrotic damage. If the target is missing any of its hit points, it instead takes 1d12 necrotic damage.
 

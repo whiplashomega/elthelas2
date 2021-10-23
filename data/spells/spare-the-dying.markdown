@@ -16,4 +16,10 @@ tags: [cleric, artificer, cantrip, necromancy]
 
 **Duration**: Instantaneous
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: []
+
 You touch a living creature that has 0 hit points. The creature becomes stable. This spell has no effect on undead or constructs.

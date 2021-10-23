@@ -16,6 +16,12 @@ tags: [archivist, bard, sorcerer, wizard, level2, divination]
 
 **Duration**: Concentration, up to 1 minute
 
+**Saving Throw**: Constitution
+
+**Save For**: half damage
+
+**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 For the duration, you can read the thoughts of certain creatures. When you cast the spell and as your action on each turn until the spell ends, you can focus your mind on any one creature that you can see within 30 feet of you. If the creature you choose has an Intelligence of 3 or lower or doesn’t speak any language, the creature is unaffected.
 
 You initially learn the surface thoughts of the creature—what is most on its mind in that moment. As an action, you can either shift your attention to another creature’s thoughts or attempt to probe deeper into the same creature’s mind. If you probe deeper, the target must make a Wisdom saving throw. If it fails, you gain insight into its reasoning (if any), its emotional state, and something that looms large in its mind (such as something it worries over, loves, or hates). If it succeeds, the spell ends. Either way, the target knows that you are probing into its mind, and unless you shift your attention to another creature’s thoughts, the creature can use its action on its turn to make an Intelligence check contested by your Intelligence check; if it succeeds, the spell ends.

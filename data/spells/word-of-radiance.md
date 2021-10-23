@@ -16,6 +16,12 @@ tags: [cleric, cantrip, evocation]
 
 **Duration**: Instantaneous
 
+**Saving Throw**: Constitution
+
+**Save For**: none
+
+**Damage**: [ { "dice": "1d6", "label": "radiant", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 You utter a divine word, and burning radiance erupts from you. Each creature of your choice that you can see within range must succeed on a Constitution saving
 throw or take ld6 radiant damage.
 

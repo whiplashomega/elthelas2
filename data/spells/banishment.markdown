@@ -16,6 +16,12 @@ tags: [archivist, cleric, paladin, sorcerer, warlock, wizard, eldritchknight, le
 
 **Duration**: Concentration, up to 1 minute
 
+**Saving Throw**: Constitution
+
+**Save For**: half damage
+
+**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 You attempt to send one creature that you can see within range to another plane of existence. The target must succeed on a Charisma saving throw or be banished.
 
 If the target is native to the plane of existence you're on, you banish the target to a harmless demiplane. While there, the target is incapacitated. The target remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.

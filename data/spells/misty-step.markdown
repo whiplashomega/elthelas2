@@ -16,4 +16,10 @@ tags: [archivist, sorcerer, warlock, wizard, eldritchknight, level2, conjuration
 
 **Duration**: Instantaneous
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: []
+
 Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.

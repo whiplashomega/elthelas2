@@ -16,6 +16,12 @@ tags: [cleric, level7, conjuration]
 
 **Duration**: 24 hours
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: []
+
 You cause a temple to shimmer into existence on ground you can see within range. The temple must fit within an unoccupied cube of space, up to 120 feet on each side.
 The temple remains until the spell ends. It is dedicated to whatever god, pantheon, or philosophy is represented by the holy symbol used in the casting.
 

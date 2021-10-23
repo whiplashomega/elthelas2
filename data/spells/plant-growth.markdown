@@ -16,6 +16,12 @@ tags: [bard, druid, ranger, level3, transmutation]
 
 **Duration**: Instantaneous
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: []
+
 This spell channels vitality into plants within a specific area. There are two possible uses for the spell, granting either immediate or long-term benefits.
 
 If you cast this spell using 1 action, choose a point within range. All normal plants in a 100-foot radius centered on that point become thick and overgrown. A creature moving through the area must spend 4 feet of movement for every 1 foot it moves.

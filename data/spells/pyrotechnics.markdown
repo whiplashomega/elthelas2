@@ -16,6 +16,12 @@ tags: [bard, sorcerer, wizard, artificer, level2, transmutation]
 
 **Duration**: Instantaneous
 
+**Saving Throw**: Constitution
+
+**Save For**: not blinded
+
+**Damage**: []
+
 Choose an area of flame that you can see and that can fit within a 5-foot cube within range. You can extinguish the fire in that area, and you create either fireworks or smoke.
 
 **Fireworks.** The target explodes with a dazzling display of colors. Each creature within 10 feet of the target must succeed on a Constitution saving throw or become blinded until the end of your next turn.

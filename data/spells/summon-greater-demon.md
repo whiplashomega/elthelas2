@@ -16,6 +16,12 @@ tags: [warlock, wizard, level4, conjuration]
 
 **Duration**: Concentration, up to 1 hour
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: []
+
 You utter foul words, summoning one demon from the chaos of the Abyss. You choose the demon’s type, which must be one of challenge rating 5 or lower, such as a
 shadow demon or a barlgura. The demon appears in an unoccupied space you can see within range, and the demon disappears when it drops to 0 hit points or when
 the spell ends.

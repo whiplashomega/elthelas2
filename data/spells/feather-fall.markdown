@@ -16,4 +16,10 @@ tags: [bard, sorcerer, wizard, eldritchknight, artificer, level1, transmutation]
 
 **Duration**: 1 minute
 
+**Saving Throw**: Constitution
+
+**Save For**: half damage
+
+**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature.

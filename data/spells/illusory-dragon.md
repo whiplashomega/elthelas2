@@ -16,6 +16,12 @@ tags: [wizard, level8, illusion]
 
 **Duration**: Concentration, up to 1 minute
 
+**Saving Throw**: Varies (see description)
+
+**Save For**: Varies (see description)
+
+**Damage**: [ { "dice": "7d6", "label": "acid, cold, fire, lightning, necrotic, or poison", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 By gathering threads of shadow material from the Shadowfell, you create a Huge shadowy dragon in an unoccupied space that you can see within range. The illusion
 lasts for the spell's duration and occupies its space, as if it were a creature.
 

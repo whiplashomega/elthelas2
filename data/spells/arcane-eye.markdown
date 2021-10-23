@@ -16,6 +16,12 @@ tags: [archivist, wizard, artificer, level4, divination]
 
 **Duration**: Concentration, up to 1 hour
 
+**Saving Throw**: Constitution
+
+**Save For**: half damage
+
+**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 You create an invisible, magical eye within range that hovers in the for the duration.
 
 You mentally receive visual information from the eye, which has normal vision and darkvision out to 30 feet. The eye can look in every direction.

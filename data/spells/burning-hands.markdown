@@ -16,6 +16,12 @@ tags: [sorcerer, wizard, eldritchknight, level1, evocation]
 
 **Duration**: Instantaneous
 
+**Saving Throw**: Constitution
+
+**Save For**: half damage
+
+**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a Dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one.
 
 The fire ignites any flammable objects in the area that aren’t being worn or carried.

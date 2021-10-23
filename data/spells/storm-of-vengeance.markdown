@@ -16,6 +16,12 @@ tags:   [druid, level9, conjuration]
 
 **Duration**: Concentration, up to 1 minute
 
+**Saving Throw**: Varies (see description)
+
+**Save For**: Varies (see description)
+
+**Damage**: [ { "dice": "2d6", "label": "thunder", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" }, { "dice": "1d6", "label": "acid", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" }, { "dice": "10d6", "label": "lightning", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" }, { "dice": "2d6", "label": "bludgeoning", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" }, { "dice": "1d6", "label": "cold", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 A churning storm cloud forms, centered on a point you can see and spreading to a radius of 360 feet. Lightning flashes in the area, thunder booms, and strong winds roar. Each creature under the cloud (no more than 5,000 feet beneath the cloud) when it appears must make a Constitution saving throw. On a failed save, a creature takes 2d6 thunder damage and becomes deafened for 5 minutes.
 
 Each round you maintain concentration on this spell, the storm produces additional effects on your turn.

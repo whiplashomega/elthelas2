@@ -16,6 +16,12 @@ tags: [druid, sorcerer, warlock, wizard, level6, transmutation]
 
 **Duration**: Concentration, up to 10 minutes
 
+**Saving Throw**: Constitution
+
+**Save For**: half damage
+
+**Damage**: [ { "dice": "2d10", "label": "bludgeoning", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 Until the spell ends, wind whirls around you, and you gain the following benefits:
 
 * Ranged weapon attacks made against you have disadvantage on the attack roll.

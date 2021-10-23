@@ -16,6 +16,12 @@ tags: [ranger, level1, transmutation]
 
 **Duration**: Concentration, up to 1 minute
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: [ { "dice": "1d8", "label": "force", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 You move like the wind. Until the spell ends, your movement doesn’t provoke opportunity attacks.
 
 Once before the spell ends, you can give yourself advantage on one weapon attack roll on your turn. That attack deals an extra 1d8 force damage on a hit. Whether you hit or miss, your walking speed increases by 30 feet until the end of that turn.

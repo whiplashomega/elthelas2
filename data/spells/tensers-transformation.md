@@ -16,6 +16,12 @@ tags: [wizard, level6, transmutation]
 
 **Duration**: Concentration, up to 10 minutes
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: []
+
 You endow yourself with endurance and martial prowess fueled by magic. Until the spell ends, you can’t cast spells, and you gain the following benefits:
 
 * You gain 50 temporary hit points. If any of these remain when the spell ends, they are lost.

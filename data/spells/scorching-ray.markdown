@@ -16,6 +16,12 @@ tags: [sorcerer, wizard, eldritchknight, level2, evocation]
 
 **Duration**: Instantaneous
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: [ { "dice": "2d6", "label": "fire", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 You create three rays of fire and hurl them at targets within range. You can hurl them at one target or several.
 
 Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire damage.

@@ -16,6 +16,12 @@ tags: [cleric, level5, evocation]
 
 **Duration**: Until dispelled
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: []
+
 You touch a point and infuse an area around it with holy (or unholy) power. The area can have a radius up to 60 feet, and the spell fails if the radius includes an area already under the effect a *hallow* spell. The affected area is subject to the following effects. 
 
 First, celestials, elementals, fey, fiends, and undead can’t enter the area, nor can such creatures charm, frighten, or possess creatures within it. Any creature charmed, frightened, or possessed by such a creature is no longer charmed, frightened, or possessed upon entering the area. You can exclude one or more of those types of creatures from this effect. 

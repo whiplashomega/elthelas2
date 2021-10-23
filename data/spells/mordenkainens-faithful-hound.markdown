@@ -16,6 +16,12 @@ tags: [wizard, artificer, level4, conjuration]
 
 **Duration**: 8 hours
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: [ { "dice": "4d8", "label": "piercing", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 You conjure a phantom watchdog in an unoccupied space that you can see within range, where it remains for the duration, until you dismiss it as an action, or until you move more than 100 feet away from it.
 
 The hound is invisible to all creatures except you and can't be harmed. When a Small or larger creature comes within 30 feet of it without first speaking the password that you specify when you cast this spell, the hound starts barking loudly. The hound sees invisible creatures and can see into the Ethereal Plane. It ignores illusions.

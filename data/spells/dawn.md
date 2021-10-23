@@ -16,6 +16,12 @@ tags: [cleric, wizard, level5, evocation]
 
 **Duration**: Concentration, up to 1 minute
 
+**Saving Throw**: Constitution
+
+**Save For**: half damage
+
+**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 The light of dawn shines down on a location you specify within range. Until the spell ends, a 30—foot-radius, 40-foot-high cylinder of bright light glimmers there. This 
 light is sunlight. 
 

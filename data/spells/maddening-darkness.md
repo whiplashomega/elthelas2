@@ -16,6 +16,12 @@ tags: [warlock, wizard, level8, evocation]
 
 **Duration**: Concentration, up to 10 minutes
 
+**Saving Throw**: Wisdom
+
+**Save For**: half damage
+
+**Damage**: [ { "dice": "8d8", "label": "psychic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 Magical darkness spreads from a point you choose within range to fill a 60—foot—radius sphere until the spell ends. The darkness spreads around corners. A creature
 with darkvision can’t see through this darkness. Nonmagical light, as well as light created by spells of 8th level or lower, can't illuminate the area.
 

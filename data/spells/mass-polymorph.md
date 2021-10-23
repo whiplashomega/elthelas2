@@ -16,6 +16,12 @@ tags: [bard, sorcerer, wizard, level9, transmutation]
 
 **Duration**: Concentration, up to 1 hour
 
+**Saving Throw**: Wisdom
+
+**Save For**: unaffected
+
+**Damage**: []
+
 You transform up to ten creatures of your choice that you can see within range. An unwilling target must succeed on a Wisdom saving throw to resist the transformation. 
 An unwilling shapechanger automatically succeeds on the save.
 

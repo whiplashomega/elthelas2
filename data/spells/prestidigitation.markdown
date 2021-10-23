@@ -16,6 +16,12 @@ tags: [bard, sorcerer, warlock, wizard, archivist, artificer, cantrip, transmuta
 
 **Duration**: Up to 1 hour
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: []
+
 This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within range:
 
 * You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.

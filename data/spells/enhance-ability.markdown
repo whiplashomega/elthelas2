@@ -16,6 +16,12 @@ tags: [archivist, bard, cleric, druid, ranger, sorcerer, artificer, wizard, leve
 
 **Duration**: Concentration, up to 1 hour
 
+**Saving Throw**: Constitution
+
+**Save For**: half damage
+
+**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 You touch a creature and bestow upon it a magical enhancement. Choose one of the following effects: the target gains the effect until the spell ends.
 
 **Bear's Endurance.** The target has advantage on Constitution checks. It also gains 2d6 temporary hit points, which are lost when the spell ends.

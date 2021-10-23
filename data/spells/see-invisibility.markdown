@@ -16,4 +16,10 @@ tags: [bard, sorcerer, wizard, artificer, level2, divination]
 
 **Duration**: 1 hour
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: []
+
 For the duration, you see invisible creatures and objects as if they were visible, and you can see into the Ethereal Plane. Ethereal creatures and objects appear ghostly and translucent.

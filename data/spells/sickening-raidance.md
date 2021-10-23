@@ -16,6 +16,12 @@ tags: [sorcerer, warlock, wizard, eldritchknight, level4, evocation]
 
 **Duration**: Concentration, up to 10 minutes
 
+**Saving Throw**: Constitution
+
+**Save For**: no effect
+
+**Damage**: [ { "dice": "4d10", label: "radiant", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 Dim, greenish light spreads within a 30—foot-radius sphere centered on a point you choose within range. The light spreads around corners, and it lasts until the spell ends.
 
 When a creature moves into the spell’s area for the first time on a turn or starts its turn there, that creature must succeed on a Constitution saving throw or take

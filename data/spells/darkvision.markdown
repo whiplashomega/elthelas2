@@ -16,4 +16,10 @@ tags: [archivist, druid, ranger, sorcerer, wizard, eldritchknight, artificer, le
 
 **Duration**: 8 hours
 
+**Saving Throw**: Constitution
+
+**Save For**: half damage
+
+**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has darkvision out to a range of 60 feet.

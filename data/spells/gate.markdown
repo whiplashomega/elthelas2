@@ -16,6 +16,12 @@ tags:   [archivist, cleric, sorcerer, warlock, wizard, level9, conjuration]
 
 **Duration**: Concentration, up to 1 minute
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: []
+
 You conjure a portal linking an unoccupied space you can see within range to a precise location on a different plane of existence. The portal is a circular opening, which you can make 5 to 20 feet in diameter. You can orient the portal in any direction you choose. The portal lasts for the duration.
 
 The portal has a front and a back on each plane where it appears. Travel through the portal is possible only by moving through its front. Anything that does so is instantly transported to the other plane, appearing in the unoccupied space nearest to the portal.

@@ -16,6 +16,12 @@ tags: [wizard, artificer, level3, transmutation]
 
 **Duration**: 8 hours
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: []
+
 You touch one Tiny, nonmagical object that isn’t attached to another object or a surface and isn’t being carried by another creature. The target animates and
 sprouts little arms and legs, becoming a creature under your control until the spell ends or the creature drops to 0 hit points. See the stat block for its statistics.
 

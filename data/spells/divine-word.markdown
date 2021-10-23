@@ -16,6 +16,12 @@ tags:   [archivist, cleric, level7, evocation]
 
 **Duration**: Instantaneous
 
+**Saving Throw**: Charisma
+
+**Save For**: no effect
+
+**Damage**: []
+
 You utter a divine word, imbued with the power that shaped the world at the dawn of creation. Choose any number of creatures you can see within range. Each creature that can hear you must make a Charisma saving throw. On a failed save, a creature suffers an effect based on its current hit points:
 
 * 50 hit points or fewer: deafened for 1 minute

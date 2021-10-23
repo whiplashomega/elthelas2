@@ -16,9 +16,15 @@ tags: [druid, ranger, level2, conjuration]
 
 **Duration**: Concentration, up to 1 minute
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: [ { "dice": "1d6", "label": "healing", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d6" } ]
+
 You call forth a nature spirit to soothe the wounded. The intangible spirit appears in a space that is a 5-foot cube you can see within range. The spirit looks like a transparent beast or fey (your choice).
 
-Until the spell ends, whenever you or a creature you can see moves into the spirits space for the first time on a turn or starts its turn there, you can cause the spirit to restore ld6 hit points to that creature (no action required). The spirit can’t heal constructs or undead. As a bonus action on your turn, you can move the Spirit up to 30 feet to a space you can see. The spirit can heal a number of times equal to 1 + your spellcasting ability modifier (minimum of twice). After healing that number of times, the spirit disappears.
+Until the spell ends, whenever you or a creature you can see moves into the spirits space for the first time on a turn or starts its turn there, you can cause the spirit to restore ld6 hit points to that creature (no action required). The spirit can’t heal constructs or undead. As a bonus action on your turn, you can move the Spirit up to 30 feet to a space you can see.
 
 **Errata Clarification** The spell ends once the spirit has restored hit points a number of times equal to three times your spellcasting ability modifier (minimum of once).
 

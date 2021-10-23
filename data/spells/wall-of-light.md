@@ -16,6 +16,12 @@ tags: [sorcerer, warlock, wizard, level5, evocation]
 
 **Duration**: Concentration, up to 10 minutes
 
+**Saving Throw**: Constitution
+
+**Save For**: half damage and not blinded
+
+**Damage**: [ { "dice": "4d8", "label": "radiant", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 A shimmering wall of bright light appears at a point you choose within range. The wall appears in any orientation you choose: horizontally, vertically, or diagonally. It
 can be free floating, or it can rest on a solid surface. The wall can be up to 60 feet long, 10 feet high, and 5 feet thick. The wall blocks line of sight, but creatures 
 and objects can pass through it. It emits bright light out to 120 feet and dim light for an additional 120 feet.

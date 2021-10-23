@@ -16,6 +16,12 @@ tags: [bard, sorcerer, warlock, wizard, level9, enchantment]
 
 **Duration**: Instantaneous
 
+**Saving Throw**: Intelligence
+
+**Save For**: half damage and not stunned
+
+**Damage**: [ { "dice": "14d6", "label": "psychic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 You unleash the power of your mind to blast the intellect of up to ten creatures of your choice that you can see within range. Creatures that have an Intelligence score
 of 2 or lower are unaffected.
 

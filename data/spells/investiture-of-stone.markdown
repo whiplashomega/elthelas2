@@ -16,6 +16,12 @@ tags: [druid, sorcerer, warlock, wizard, level6, transmutation]
 
 **Duration**: Concentration, up to 10 minutes
 
+**Saving Throw**: Dexterity
+
+**Save For**: avoid prone
+
+**Damage**: []
+
 Until the spell ends, bits of rock spread across your body, and you gain the following benefits:
 
 * You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.

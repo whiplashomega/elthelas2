@@ -16,6 +16,12 @@ tags: [wizard, level6, evocation]
 
 **Duration**: Concentration, up to 10 minutes
 
+**Saving Throw**: Constitution
+
+**Save For**: half damage
+
+**Damage**: [ { "dice": "5d6", "label": "cold", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 You create a wall of ice on a solid surface within range. You can form it into a hemispherical dome or a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-square panels. Each panel must be contiguous with another panel. In any form, the wall is 1 foot thick and lasts for the duration.
 
 If the wall cuts through a creature’s space when it appears, the creature within its area is pushed to one side of the wall and must make a Dexterity saving throw. On a failed save, the creature takes 10d6 cold damage, or half as much damage on a successful save.

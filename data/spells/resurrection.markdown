@@ -16,6 +16,12 @@ tags:   [archivist, bard, cleric, druid, level7, necromancy]
 
 **Duration**: Instantaneous
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: []
+
 You touch a dead creature that has been dead for no more than a century, that didn't die of old age, and that isn't undead. If its soul is free and willing, the target returns to life with all its hit points.
 
 This spell neutralizes any poisons and cures normal diseases afflicting the creature when it died. It doesn't however, remove magical diseases, curses, and the like; if such effects aren't removed prior to casting the spell, the afflict the target on its return to life.

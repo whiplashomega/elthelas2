@@ -16,6 +16,12 @@ tags: [warlock, wizard, level5, conjuration]
 
 **Duration**: Concetration, up to 1 hour
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: []
+
 Uttering a dark incantation, you summon a devil from the Nine Hells. You choose the devil’s type, which must be one of challenge rating 6 or lower, 
 such as a barbed devil or a bearded devil. The devil appears in an unoccupied space that you can see within range. The devil disappears when it drops to 0 
 hit points or when the spell ends.

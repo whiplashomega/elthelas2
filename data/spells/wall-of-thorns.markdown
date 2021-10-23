@@ -16,6 +16,12 @@ tags: [druid, level6, conjuration]
 
 **Duration**: Concentration, up to 10 minutes
 
+**Saving Throw**: Dexterity
+
+**Save For**: half damage
+
+**Damage**: [ { "dice": "7d8", "label": "piercing/slashing", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 You create a wall of tough, pliable, tangled brush bristling with needle-sharp thorns. The wall appears within range on a solid surface and lasts for the duration. You choose to make the wall up to 60 feet long, 10 feet high, and 5 feet thick or a circle that has a 20-foot diameter and is up to 20 feet high and 5 feet thick. The wall blocks line of sight.
 
 When the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes 7d8 piercing damage, or half as much damage on a successful save.

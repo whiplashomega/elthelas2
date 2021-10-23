@@ -16,6 +16,12 @@ tags: [sorcerer, warlock, wizard, eldritchknight, level3, conjuration]
 
 **Duration**: Instantaneous
 
+**Saving Throw**: Constitution
+
+**Save For**: half damage
+
+**Damage**: [ { "dice": "3d10", label: "thunder", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d10" } ]
+
 You teleport yourself to an unoccupied space you can see within range. Immediately after you disappear, a thunderous boom sounds. and each creature within 10
 feet of the space you left must make a Constitution saving throw, taking 3d10 thunder damage on a failed save, or half as much damage on a successful one. The thunder 
 can be heard from up to 300 feet away.

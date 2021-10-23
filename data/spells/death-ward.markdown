@@ -16,6 +16,12 @@ tags: [cleric, paladin, level4, abjuration]
 
 **Duration**: 8 hours
 
+**Saving Throw**: Constitution
+
+**Save For**: half damage
+
+**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 You touch a creature and grant it a measure of protection from death.
 
 The first time the target would drop to 0 hit points as a result of taking damage, the target instead drops to 1 hit point, and the spell ends.

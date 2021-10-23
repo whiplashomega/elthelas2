@@ -16,6 +16,12 @@ tags: [druid, sorcerer, wizard, cantrip, transmutation]
 
 **Duration**: Instantaneous or 1 hour (see below)
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: []
+
 You choose a portion of dirt or stone that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways:
 
 * If you target an area of loose earth, you can instantaneously excavate it, move it along the ground, and deposit it up to 5 feet away. This movement doesn’t have enough force to cause damage.

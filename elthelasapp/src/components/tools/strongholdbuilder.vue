@@ -530,7 +530,17 @@
             <tr>
               <td>Aid Construction Efforts. Requires a DC 15 Carpenters Tools check (if the building is mostly wood) or Mason's tools check if it is mostly stone. Reduce build time of one building by 1 day.</td>
               <td>0 gp</td>
-              <td>2 days</td>
+              <td>1 day</td>
+            </tr>
+            <tr>
+              <td>Hold Court</td>
+              <td>0 gp</td>
+              <td>Roll a random event roll. The second roll may have limited effect.</td>
+            </tr>
+            <tr>
+              <td>Calm the People</td>
+              <td>0 gp</td>
+              <td>Spend your day with the people of the town helping to calm them and make your presence known. Make a DC 20 Persuasion check, reducing the effect of unrest on he next random event roll by 2.</td>
             </tr>
           </tbody>
         </table>

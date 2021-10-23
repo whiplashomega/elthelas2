@@ -16,6 +16,12 @@ tags: [archivist, wizard, artificer, level4, abjuration]
 
 **Duration**: 24 hours
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: []
+
 You make an area within range magically secure. The area is a cube that can be as small as 5 feet to as large as 100 feet on each side. The spell lasts for the duration or until you use an action to dismiss it.
 
 When you cast the spell, you decide what sort of security the spell provides, choosing any or all of the following properties:

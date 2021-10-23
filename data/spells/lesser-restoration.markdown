@@ -16,4 +16,10 @@ tags: [archivist, bard, cleric, druid, paladin, ranger, artificer, level2, abjur
 
 **Duration**: Instantaneous
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: []
+
 You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.

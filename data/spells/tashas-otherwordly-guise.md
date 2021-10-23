@@ -16,6 +16,12 @@ tags: [sorcerer, warlock, wizard, level6, transmutation]
 
 **Duration**: Concentration, up to 1 minute
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: []
+
 Uttering an incantation, you draw on the magic of the Lower Planes or Upper Planes (your choice) to transform yourself. You gain the following benefits until the spell ends:
 
 * You are immune to fire and poison damage (Lower Planes) or radiant and necrotic damage (Upper Planes).

@@ -16,6 +16,12 @@ tags: [archivist, wizard, bard, level6, abjuration]
 
 **Duration**: 24 hours
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: []
+
 You create a ward that protects up to 2,500 square feet of floor space (an area 50 feet square, or one hundred 5-foot squares or twenty-five 10-foot squares). The warded area can be up to 20 feet tall, and shaped as you desire. You can ward several stories of a stronghold by dividing the area among them, as long as you can walk into each contiguous area while you are casting the spell.
 
 When you cast this spell, you can specify individuals that are unaffected by any or all of the effects that you choose. You can also specify a password that, when spoken aloud, makes the speaker immune to these effects.

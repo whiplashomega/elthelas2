@@ -23,7 +23,7 @@
       "image": "https://elthelas-images.herokuapp.com/races/deranhuman.jpg",
       "description": "\n\nThe Deran people once had a great empire on the northeast coast of Riftlan. Their capital, Dera, was at the time the most beautiful city in the world, surpassing even Loridesa of Eldoran. then disaster struck in the form of demon invasion. They were saved from annihilation by the Dragon God Bahamut and relocated to a chain of islands off the coast, where the founded the nation of Dera'Dragorim. They have been close allies with dragon kind, particularly metallic dragons, ever since, and to this day they consider demons to be their most hated enemies (with devils not far behind).\n\n",
       "traits": [
-        { "name": "Ability Score Increase", "description": "Three different ability scores of your choice each increase by 1." },
+        { "name": "Ability Score Increase", "description": "Increase one ability score of your choice by 2 and another score of your choice by 1." },
         { "name": "Skills", "description": "You gain proficiency in one skill of your choice." },
         { "name": "Draconic Heritage", "description": "You gain resistance to damage of one type: electric, fire, acid, or cold." },
         { "name": "Demon Hunter", "description": "You have advantage on attack rolls, skill checks, and saving throws, made against or relating to fiends." },
@@ -86,7 +86,7 @@
       "image": "https://elthelas-images.herokuapp.com/races/neranhuman.jpg",
       "description": "The Neran people descend from the old kingdom of Nerim, once a great player in world politics, and the center of Nera's cult. After the magical disaster that left over 90% of the population as roaming, mindless undead, those who remained fled north and west, taking up residence where they could, in lands that now make up the nations of Terron, Arad, Seran, and Shendarel. Their history has left this people changed in oddly contradictory ways. Having been touched by the Death Goddess herself, they are naturally skilled at necromancy, but highly distrustful of those who use such magic. This touch also often makes them sickly. Their history of warfare with the undead has forced their clerics to train more than others in the art of channelling energy to turn undead, and their warriors more skilled at fighting them. Their natural distrust of others makes them poor diplomats, but they also have an unusual ability to recognize and avoid evil.",
       "traits": [
-        { "name": "Ability Score Increase", "description": "Three different ability scores of your choice each increase by 1." },
+        { "name": "Ability Score Increase", "description": "Increase one ability score of your choice by 2 and another score of your choice by 1." },
         { "name": "Speed", "description": "Your base walking speed is 35 ft." },
         { "name": "Darkvision", "description": "You can see in the dark as if it were bright light out to 60 ft" },
         { "name": "Affinity for the Dead", "description": "+1 to the saving throw DC of all necromancy spells you cast, you always add your proficiency bonus to the saving throw DC and attack rolls for necromancy spells, even if you do not have your spell focus." },

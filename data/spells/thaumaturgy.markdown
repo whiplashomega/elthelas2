@@ -16,6 +16,12 @@ tags: [cleric, archivist, cantrip, transmutation]
 
 **Duration**: Up to 1 minute
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: []
+
 You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range:
 
 * Your voice booms up to three times as loud as normal for 1 minute.

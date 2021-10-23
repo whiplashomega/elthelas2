@@ -16,6 +16,12 @@ tags:   [archivist, wizard, level7, transmutation]
 
 **Duration**: Until dispelled
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: []
+
 By means of this spell, a willing creature or an object can be hidden away, safe from detection for the duration. When you cast the spell and touch the target, it becomes invisible and can't be targeted by divination spells or perceived through scrying sensors created by divination spells.
 
 If the target is a creature, it falls into a state of suspended animation. Time ceases to flow for it, and it doesn't grow older.

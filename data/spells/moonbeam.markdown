@@ -16,6 +16,12 @@ tags: [archivist, druid, eldritchknight, level2, evocation]
 
 **Duration**: Concentration, up to 1 minute
 
+**Saving Throw**: Constitution
+
+**Save For**: half damage
+
+**Damage**: [ { "dice": "2d10", "label": "radiant", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 A silvery beam of pale light shines down in a 5-foot-radius, 40-foot-high cylinder centered on a point within range. Until the spell ends, dim light fills the cylinder.
 
 When a creature enters the spell's area for the first time on a turn or starts its turn there, it is engulfed in ghostly flames that cause searing pain, and it must make a Constitution saving throw. It takes 2d10 radiant damage on a failed save, or half as much on a successful one.

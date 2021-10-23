@@ -239,7 +239,16 @@ gulp.task('spellsjson', function(done) {
     spell.range = filearray[12].replace(/\*\*Range\*\*\:[ \t]+/g, "");
     spell.components = filearray[14].replace(/\*\*Components\*\*\:[ \t]+/g, "");
     spell.duration = filearray[16].replace(/\*\*Duration\*\*\:[ \t]+/g, "");
-    spell.description = "<p>" + filearray.slice(18, filearray.length).join("</p><p>").replace(/\*\*At Higher Levels.\*\*/g, "<strong>At Higher Levels.</strong>") + "</p>";
+    spell.savestat = filearray[18].replace(/\*\*Saving Throw\*\*\:[ \t]+/g, "");
+    spell.savefor = filearray[20].replace(/\*\*Save For\*\*\:[ \t]+/g, "");
+    try {
+      spell.damage = JSON.parse(filearray[22].replace(/\*\*Damage\*\*\:[ \t]+/g, "").replace(/label\:/g, "\"label\":"));
+    } catch (e) {
+      console.log(e);
+      console.log(filearray[22].replace(/\*\*Damage\*\*\:[ \t]+/g, ""));
+      console.log(spell.title);
+    }
+    spell.description = "<p>" + filearray.slice(24, filearray.length).join("</p><p>").replace(/\*\*At Higher Levels.\*\*/g, "<strong>At Higher Levels.</strong>") + "</p>";
     spellarray.push(spell);
   });
   if(spellarray.length === files.length) {

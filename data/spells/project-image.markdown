@@ -16,6 +16,12 @@ tags:   [bard, wizard, level7, illusion]
 
 **Duration**: Concentration, up to 1 day
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: []
+
 You create an illusory copy of yourself that lasts for the duration. The copy can appear at any location within range that you have seen before, regardless of intervening obstacles. The illusion looks and sounds like you but is intangible. If the illusion takes any damage, it disappears, and the spell ends.
 
 You can use your action to move this illusion up to twice your speed, and make it gesture, speak, and behave in whatever way you choose. It mimics your mannerisms perfectly.

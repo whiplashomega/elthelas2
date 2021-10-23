@@ -16,6 +16,12 @@ tags: [sorcerer, warlock, wizard, level6, illusion]
 
 **Duration**: Concentration, up to 1 minute
 
+**Saving Throw**: Intelligence
+
+**Save For**: end the spell
+
+**Damage**: [ { "dice": "5d10", "label": "psychic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" }, { "dice": "10d10", "label": "ending psychic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 You attempt to bind a creature within an illusory cell that only it perceives. One creature you can see within range must make an Intelligence saving throw. The
 target succeeds automatically if it is immune to being charmed. On a successful save, the target takes 5d10 psychic damage, and the spell ends. On a failed save,
 the target takes 5d10 psychic damage, and you make the area immediately around the target’s space appear dangerous to it in some way. You might cause the target

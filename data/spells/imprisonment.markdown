@@ -16,6 +16,12 @@ tags:   [warlock, wizard, level9, abjuration]
 
 **Duration**: Until dispelled
 
+**Saving Throw**: Wisdom
+
+**Save For**: no effect
+
+**Damage**: []
+
 You create a magical restraint to hold a creature that you can see within range. The target must succeed on a Wisdom saving throw or be bound by the spell; if it succeeds, it is immune to this spell if you cast it again. While affected by this spell, the creature doesn't need to breathe, eat, or drink, and it doesn't age. Divination spells can't locate or perceive the target.
 
 When you cast the spell, you choose one of the following forms of imprisonment.

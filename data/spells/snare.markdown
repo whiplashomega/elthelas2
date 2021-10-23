@@ -16,6 +16,12 @@ tags: [druid, ranger, wizard, artificer, level1, abjuration]
 
 **Duration**: 8 hours
 
+**Saving Throw**: Dexterity
+
+**Save For**: no effect
+
+**Damage**: []
+
 As you cast this spell, you use the rope to create a circle with a 5-foot radius on the ground or the floor. When you finish casting, the rope disappears and the circle becomes a magic trap.
 
 This trap is nearly invisible, requiring a successful Intelligence (Investigation) check against your spell save DC to be discerned.

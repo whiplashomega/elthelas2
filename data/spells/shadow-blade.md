@@ -16,6 +16,12 @@ tags: [warlock, wizard, eldritchknight, level2, illusion]
 
 **Duration**: Concentration, up to 1 minute
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: [ { "dice": "2d8", label: "psychic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d8" } ]
+
 You weave together threads of shadow to create a sword of solidified gloom in your hand. This magic sword lasts until the spell ends. It counts as a simple melee weapon
 with which you are proficient. It deals 2d8 psychic damage on a hit and has the finesse, light, and thrown properties (range 20/60). In addition, when you use the
 sword to attack a target that is in dim light or darness, you make the attack roll with advantage.

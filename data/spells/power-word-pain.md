@@ -16,6 +16,12 @@ tags: [sorcerer, warlock, wizard, level7, enchantment]
 
 **Duration**: Instantaneous
 
+**Saving Throw**: Constitution
+
+**Save For**: end the spell
+
+**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 You speak a word of power that causes waves of intense pain to assail one creature you can see within range. If the target has 100 hit points or fewer, it is subject
 to crippling pain. Otherwise, the spell has no effect on it. A target is also unaffected if it is immune to being charmed.
 

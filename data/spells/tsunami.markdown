@@ -16,6 +16,12 @@ tags:   [druid, level8, conjuration]
 
 **Duration**: Concentration, up to 6 rounds
 
+**Saving Throw**: Strength
+
+**Save For**: half damage
+
+**Damage**: [ { "dice": "6d10", "label": "bludgeoning", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 A wall of water springs into existence at a point you choose within range. You can make the wall up to 300 feet long, 300 feet high, and 50 feet thick. The wall lasts for the duration.
 
 When the wall appears, each creature within its area must make a Strength saving throw. On a failed save, a creature takes 6d10 bludgeoning damage, or half as much damage on a successful save.

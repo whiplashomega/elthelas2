@@ -16,6 +16,12 @@ tags: [bard, sorcerer, wizard, artificer, level5, transmutation]
 
 **Duration**: Concentration, up to 1 hour
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: []
+
 Your magic deepens a creature’s understanding of its own talent. You touch one willing creature and give it expertise in one skill of your choice; until the spell ends,
 the creature doubles its proficiency bonus for ability checks it makes that use the chosen skill.
 

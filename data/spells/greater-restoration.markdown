@@ -16,6 +16,12 @@ tags: [cleric, druid, ranger, bard, artificer, level5, abjuration]
 
 **Duration**: Instantaneous
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: []
+
 You imbue a creature you touch with positive energy to undo a debilitating effect. You can reduce the target’s exhaustion level by one, or end one of the following effects on the target:
 
 * One effect that charmed or petrified the target

@@ -16,6 +16,12 @@ tags: [warlock, wizard, level3, conjuration]
 
 **Duration**: Concentration, up to 1 hour
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: []
+
 You utter foul words, summoning demons from the chaos of the Abyss. Roll on the following table to determine what appears.
 
 <table>

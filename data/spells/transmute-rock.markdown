@@ -16,6 +16,12 @@ tags: [druid, wizard, artificer, level5, transmutation]
 
 **Duration**: Instantaneous
 
+**Saving Throw**: Varies (see description)
+
+**Save For**: Varies (see description)
+
+**Damage**: [ { "dice": "4d8", "label": "bludgeoning", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 You choose an area of stone or mud that you can see that fits within a 40-foot cube and that is within range, and choose one of the following effects.
 
 **Transmute Rock to Mud.** Nonmagical rock of any sort in the area becomes an equal volume of thick and flowing mud that remains for the spell’s duration.

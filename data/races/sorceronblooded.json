@@ -85,7 +85,7 @@
       "singular": "Orc Born",
       "description": "Sorceron Blooded born of orcs are growing increasingly common since the awakening of the Prince of Fiends, as the Prince enjoys his carnal pleasures, and many an orc woman dreams of the prestige of bearing a child of the prince. As the first generation of orc born sorceron blooded has reached maturity they have been recruited into the highest echelons of orc society, serving as blackguards, warlords, and mages in service of the Prince.",
       "traits": [
-        { "name": "Ability Score Increase", "description": "your Strength, Intelligence, and Charisma scores each increase by 1." },
+        { "name": "Ability Score Increase", "description": "your Strength increases by 2, Intelligence and Charisma scores each increase by 1." },
         { "name": "Darkvision", "description": "60 ft." },
         { "name": "Menacing", "description": "You gain proficiency in the intimidation skill." },
         { "name": "Aggressive", "description": "As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started." }
@@ -96,7 +96,7 @@
       "averageweight": 215,
       "baseweight": 140,
       "weightroll": "2d6",
-      "stats": [1, 0, 0, 1, 0, 1],
+      "stats": [2, 0, 0, 1, 0, 1],
       "speed": [30, 0, 0, 0, 0]
     }
   ]

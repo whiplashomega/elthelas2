@@ -16,6 +16,12 @@ tags: [wizard, level6, necromancy]
 
 **Duration**: Until dispelled
 
+**Saving Throw**: Charisma
+
+**Save For**: resist possession
+
+**Damage**: []
+
 Your body falls into a catatonic state as your soul leaves it and enters the container you used for the spell's material component. While your soul inhabits the container, you are aware of your surroundings as if you were in the container's space. You can't move or use reactions. The only action you can take is to project your soul up to 100 feet out of the container, either returning to your living body (and ending the spell) or attempting to possess a humanoid's body.
 
 You can attempt to possess any humanoid within 100 feet of you that you can see (creatures warded by a *[protection from evil and good](../protection-from-evil-and-good "protection from evil and good (lvl 1)")* or *[magic circle](../magic-circle "magic circle (lvl 3)")* spell can't be possessed). The target must make a Charisma saving throw. On a failure, your soul moves into the target's body, and the target's soul becomes trapped in the container. On a success, the target resists your efforts to possess it, and you can't attempt to possess it again for 24 hours.

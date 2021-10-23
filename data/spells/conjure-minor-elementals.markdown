@@ -16,6 +16,12 @@ tags: [druid, wizard, level4, conjuration]
 
 **Duration**: Concentration, up to 1 hour
 
+**Saving Throw**: Constitution
+
+**Save For**: half damage
+
+**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 You summon elementals that appear in unoccupied spaces that you can see within range. You choose one of the following options for what appears:
 
 * One elemental of challenge rating 2 or lower

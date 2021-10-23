@@ -16,6 +16,12 @@ tags: [archivist, druid, sorcerer, wizard, artificer, level5, evocation]
 
 **Duration**: Concentration, up to 10 minutes
 
+**Saving Throw**: Dexterity
+
+**Save For**: can use reaction to escape
+
+**Damage**: []
+
 A nonmagical wall of solid stone springs into existence at a point you choose within range. The wall is 6 inches thick and is composed of ten 10-foot-by-10-foot panels. Each panel must be contiguous with at least one other panel. Alternatively, you can create 10-foot-by-20-foot panels that are only 3 inches thick.
 
 If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice). If a creature would be surrounded on all sides by the wall (or the wall and another solid surface), that creature can make a Dexterity saving throw. On a success, it can use its reaction to move up to its speed so that it is no longer enclosed by the wall.

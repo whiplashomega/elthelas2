@@ -16,6 +16,12 @@ tags: [druid, sorcerer, warlock, wizard, level6, transmutation]
 
 **Duration**: Concentration, up to 10 minutes
 
+**Saving Throw**: Constitution
+
+**Save For**: half damage
+
+**Damage**: [ { "dice": "4d6", "label": "cold", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 Until the spell ends, ice rimes your body, and you gain the following benefits:
 
 * You are immune to cold damage and have resistance to fire damage.

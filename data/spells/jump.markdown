@@ -16,4 +16,10 @@ tags: [archivist, druid, ranger, sorcerer, wizard, eldritchknight, artificer, le
 
 **Duration**: 1 minute
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: []
+
 You touch a creature. The creature's jump distance is tripled until the spell ends.

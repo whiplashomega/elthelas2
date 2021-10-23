@@ -16,6 +16,12 @@ tags: [archivist, cleric, paladin, warlock, wizard, level3, necromancy]
 
 **Duration**: Concentration, up to 1 minute
 
+**Saving Throw**:
+
+**Save For**:
+
+**Damage**: [ { "dice": "1d8", "label": "radiant, necrotic, or cold", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d8" } ]
+
 You call forth spirits of the dead, which flit around you for the spell's duration. The spirits are intangible and invulnerable.
 
 Until the spell ends, any attack you make deals 1d8 extra damage when you hit a creature within 10 feet of you. This damage is radiant, necrotic, or cold (your choice when you cast the spell). Any creature that takes this damage can't regain hit points until the start of your next turn.

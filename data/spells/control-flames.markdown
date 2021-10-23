@@ -16,6 +16,12 @@ tags: [druid, sorcerer, wizard, eldritchknight, cantrip, transmutation]
 
 **Duration**: Instantaneous or 1 hour (see below)
 
+**Saving Throw**: Constitution
+
+**Save For**: half damage
+
+**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+
 You choose nonmagical flame that you can see within range and that fits within a 5-foot cube. You affect it in one of the following ways:
 
 * You instantaneously expand the flame 5 feet in one direction, provided that wood or other fuel is present in the new location.
