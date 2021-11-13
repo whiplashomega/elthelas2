@@ -16,11 +16,11 @@ tags: [druid, ranger, paladin, eldritchknight, artificer, level3, transmutation]
 
 **Duration**: Concentration, up to 1 hour
 
-**Saving Throw**: Constitution
+**Saving Throw**: 
 
-**Save For**: half damage
+**Save For**:
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ { "dice": "1d4", label: "element of choice", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d4" } ]
 
 A nonmagical weapon you touch becomes a magic weapon. Choose one of the following damage types: acid, cold, fire, lightning, or thunder. For the duration, the weapon has a +1 bonus to attack rolls and deals an extra 1d4 damage of the chosen type when it hits.
 

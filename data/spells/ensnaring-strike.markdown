@@ -16,11 +16,11 @@ tags: [ranger, level1, conjuration]
 
 **Duration**: Concentration, up to 1 minute
 
-**Saving Throw**: Constitution
+**Saving Throw**: Strength
 
-**Save For**: half damage
+**Save For**: not restrained
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ { "dice": "1d6", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d6" } ]
 
 The next time you hit a creature with a weapon attack before this spell ends, a writhing mass of thorny vines appears at the point of impact, and the target must succeed on a Strength saving throw or be restrained by the magical vines until the spell ends. A Large or larger creature has advantage on this saving throw. If the target succeeds on the save, the vines shrivel away.
 

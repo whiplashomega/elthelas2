@@ -16,11 +16,11 @@ tags: [archivist, bard, warlock, wizard, level5, illusion]
 
 **Duration**: 8 hours
 
-**Saving Throw**: Constitution
+**Saving Throw**: Wisdom
 
-**Save For**: half damage
+**Save For**: no effect
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [{ "dice": "3d6", label: "psychic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
 This spell shapes a creature's dreams. Choose a creature known to you as the target of this spell. The target must be on the same plane of existence as you. Creatures that don't sleep, such as elves, can't be contacted by this spell. You, or a willing creature you touch, enters a trance state, acting as a messenger. While in the trance, the messenger is aware of his or her surroundings, but can't take actions or move.
 

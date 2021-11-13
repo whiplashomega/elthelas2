@@ -16,11 +16,11 @@ tags: [sorcerer, eldritchknight, level2, transmutation]
 
 **Duration**: Concentration, up to 1 minute
 
-**Saving Throw**: Constitution
+**Saving Throw**: Dexterity
 
 **Save For**: half damage
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ { "dice": "3d6", label: "element of choice", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d6" } ]
 
 You touch one willing creature and imbue it with the power to spew magical energy from its mouth, provided
 it has one. Choose acid, cold, fire, lightning, or poison. Until the spell ends, the creature can use an action to

@@ -105,19 +105,35 @@ export default [
   },
   {
     Item: "$Name of fire",
-    Type: "Weapon (" + "$Name" + ")",
+    Type: "Weapon ($Name)",
     Attunement: "No",
     Rarity: "Uncommon",
     Effect: "Whenever an attack with this " + "$Name" + " hits it does an additional 1d6 " + "fire" + " damage in addition to its normal effects.",
     "Cost (gp)": 4000
   },
   {
-    Item: "+1 " + "$Name of fire",
+    Item: "$Name of Greater Fire",
+    Type: "Weapon ($Name)",
+    Attunement: "No",
+    Rarity: "Rare",
+    Effect: "Whenever an attack with this " + "$Name" + " hits it does an additional 2d6 " + "fire" + " damage in addition to its normal effects.",
+    "Cost (gp)": 9000
+  },
+  {
+    Item: "+1 $Name of fire",
     Type: "Weapon (" + "$Name" + ")",
     Attunement: "Yes",
     Rarity: "Rare",
     Effect: "You gain +1 to attack and damage rolls with this " + "$Name" + ". Whenever an attack with this " + "$Name" + " hits it does an additional 1d6 " + "fire" + " damage in addition to its normal effects.",
     "Cost (gp)": 9000
+  },
+  {
+    Item: "+1 $Name of Greater Fire",
+    Type: "Weapon (" + "$Name" + ")",
+    Attunement: "Yes",
+    Rarity: "Rare",
+    Effect: "You gain +1 to attack and damage rolls with this " + "$Name" + ". Whenever an attack with this " + "$Name" + " hits it does an additional 2d6 " + "fire" + " damage in addition to its normal effects.",
+    "Cost (gp)": 15000
   },
   {
     Item: "$Name of acid",
@@ -128,12 +144,28 @@ export default [
     "Cost (gp)": 4000
   },
   {
-    Item: "+1 " + "$Name" + " of " + "acid",
+    Item: "$Name of Greater acid",
+    Type: "Weapon (" + "$Name" + ")",
+    Attunement: "No",
+    Rarity: "Rare",
+    Effect: "Whenever an attack with this " + "$Name" + " hits it does an additional 2d6 acid damage in addition to its normal effects.",
+    "Cost (gp)": 9000
+  },
+  {
+    Item: "+1 $Name of acid",
     Type: "Weapon (" + "$Name" + ")",
     Attunement: "Yes",
     Rarity: "Rare",
     Effect: "You gain +1 to attack and damage rolls with this " + "$Name" + ". Whenever an attack with this " + "$Name" + " hits it does an additional 1d6 " + "acid" + " damage in addition to its normal effects.",
     "Cost (gp)": 9000
+  },
+  {
+    Item: "+1 $Name of greater acid",
+    Type: "Weapon ($Name)",
+    Attunement: "Yes",
+    Rarity: "Very Rare",
+    Effect: "You gain +1 to attack and damage rolls with this " + "$Name" + ". Whenever an attack with this " + "$Name" + " hits it does an additional 2d6 " + "acid" + " damage in addition to its normal effects.",
+    "Cost (gp)": 15000
   },
   {
     Item: "$Name" + " of " + "cold",
@@ -144,12 +176,28 @@ export default [
     "Cost (gp)": 4000
   },
   {
+    Item: "$Name of greater cold",
+    Type: "Weapon (" + "$Name" + ")",
+    Attunement: "No",
+    Rarity: "Uncommon",
+    Effect: "Whenever an attack with this " + "$Name" + " hits it does an additional 2d6 " + "cold" + " damage in addition to its normal effects.",
+    "Cost (gp)": 9000
+  },
+  {
     Item: "+1 " + "$Name" + " of " + "cold",
     Type: "Weapon (" + "$Name" + ")",
     Attunement: "Yes",
     Rarity: "Rare",
     Effect: "You gain +1 to attack and damage rolls with this " + "$Name" + ". Whenever an attack with this " + "$Name" + " hits it does an additional 1d6 " + "cold" + " damage in addition to its normal effects.",
     "Cost (gp)": 9000
+  },
+  {
+    Item: "+1 " + "$Name" + " of " + "greater cold",
+    Type: "Weapon (" + "$Name" + ")",
+    Attunement: "Yes",
+    Rarity: "Rare",
+    Effect: "You gain +1 to attack and damage rolls with this " + "$Name" + ". Whenever an attack with this " + "$Name" + " hits it does an additional 2d6 " + "cold" + " damage in addition to its normal effects.",
+    "Cost (gp)": 15000
   },
   {
     Item: "$Name" + " of " + "lightning",
@@ -160,12 +208,28 @@ export default [
     "Cost (gp)": 4000
   },
   {
+    Item: "$Name" + " of " + "greater lightning",
+    Type: "Weapon (" + "$Name" + ")",
+    Attunement: "No",
+    Rarity: "Uncommon",
+    Effect: "Whenever an attack with this " + "$Name" + " hits it does an additional 2d6 " + "lightning" + " damage in addition to its normal effects.",
+    "Cost (gp)": 9000
+  },
+  {
     Item: "+1 " + "$Name" + " of " + "lightning",
     Type: "Weapon (" + "$Name" + ")",
     Attunement: "Yes",
     Rarity: "Rare",
     Effect: "You gain +1 to attack and damage rolls with this " + "$Name" + ". Whenever an attack with this " + "$Name" + " hits it does an additional 1d6 " + "lightning" + " damage in addition to its normal effects.",
     "Cost (gp)": 9000
+  },
+  {
+    Item: "+1 " + "$Name" + " of " + "greater lightning",
+    Type: "Weapon (" + "$Name" + ")",
+    Attunement: "Yes",
+    Rarity: "Rare",
+    Effect: "You gain +1 to attack and damage rolls with this " + "$Name" + ". Whenever an attack with this " + "$Name" + " hits it does an additional 2d6 " + "lightning" + " damage in addition to its normal effects.",
+    "Cost (gp)": 15000
   },
   {
     Item: "$Name" + " of Returning",
@@ -249,6 +313,14 @@ export default [
     Rarity: "Rare",
     Effect: "This $Name is blessed by a God. Attacks with it deal an additional 1d8 radiant damage or 2d8 radiant damage if the target is a fiend or undead.",
     "Cost (gp)": 8000
+  },
+  {
+    Item: "Greater Holy $Name",
+    Type: "Weapon ($Name)",
+    Attunement: "Yes",
+    Rarity: "Very Rare",
+    Effect: "This $Name is blessed by a God. Attacks with it deal an additional 2d8 radiant damage or 3d8 radiant damage if the target is a fiend or undead.",
+    "Cost (gp)": 16000
   },
   {
     Item: "$Name of Arcane Fire",

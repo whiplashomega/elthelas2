@@ -16,11 +16,11 @@ tags: [sorcerer, wizard, level6, transmutation]
 
 **Duration**: Instantaneous
 
-**Saving Throw**: Constitution
+**Saving Throw**: Dexterity
 
-**Save For**: half damage
+**Save For**: no effect
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ { "dice": "10d6", label: "necrotic", "damagebonus": 40, "addstat": false, "prof": false, "higherlevels": "3d6" } ]
 
 A thin green ray springs from your pointing finger to a target that you can see within range. The target can be a creature, an object, or a creation of magical force, such as the wall created by *[wall of force](../wall-of-force/ "wall of force (lvl 5)")*.
 

@@ -16,11 +16,11 @@ tags: [archivist, bard, cleric, druid, wizard, level3, necromancy, ritual]
 
 **Duration**: 1 hour
 
-**Saving Throw**: Constitution
+**Saving Throw**:
 
-**Save For**: half damage
+**Save For**:
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ ]
 
 You touch a willing creature and put it into a cataleptic state that is indistinguishable from death.
 

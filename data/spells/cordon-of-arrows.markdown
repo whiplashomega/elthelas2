@@ -16,11 +16,11 @@ tags: [ranger, eldritchknight, level2, transmutation]
 
 **Duration**: 8 hours
 
-**Saving Throw**: Constitution
+**Saving Throw**: Dexterity
 
-**Save For**: half damage
+**Save For**: no damage
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ { "dice": "1d6", label: "piercing", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
 You plant four pieces of nonmagical ammunition—arrows or crossbow bolts—in the ground within range and lay magic upon them to protect an area. Until the spell ends, whenever a creature other than you comes within 30 feet of the ammunition for the first time on a turn or ends its turn there, one piece of ammunition flies up to strike it. The creature must succeed on a Dexterity saving throw or take 1d6 piercing damage. The piece of ammunition is then destroyed. The spell ends when no ammunition remains.
 

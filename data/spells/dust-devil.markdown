@@ -16,11 +16,11 @@ tags: [druid, sorcerer, wizard, level2, conjuration]
 
 **Duration**: Concentration, up to 1 minute
 
-**Saving Throw**: Constitution
+**Saving Throw**: Strength
 
-**Save For**: half damage
+**Save For**: half damage and not pushed
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ { "dice": "1d8", label: "bludgeoning", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d8" } ]
 
 Choose an unoccupied 5-foot cube of air that you can see within range. An elemental force that resembles a dust devil appears in the cube and lasts for the spell’s duration.
 

@@ -16,11 +16,11 @@ tags: [cleric, druid, ranger, level2, divination]
 
 **Duration**: Instantaneous
 
-**Saving Throw**: Constitution
+**Saving Throw**:
 
-**Save For**: half damage
+**Save For**:
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: []
 
 You sense the presence of any trap within range that is within line of sight. A trap, for the purpose of this spell, includes anything that would inflict a sudden or unexpected effect you consider harmful or undesirable, which was specifically intended as such by its creator. Thus, the spell would sense an area affected by the *[alarm](../alarm/ "alarm (lvl 1)")* spell, a *[glyph of warding](../glyph-of-warding/ "glyph of warding (lvl 3)")*, or a mechanical pit trap, but it would not reveal a natural weakness in the floor, an unstable ceiling, or a hidden sinkhole.
 

@@ -16,11 +16,11 @@ tags: [archivist, bard, cleric, druid, paladin, ranger, artificer, level1, evoca
 
 **Duration**: Instantaneous
 
-**Saving Throw**: Constitution
+**Saving Throw**: 
 
-**Save For**: half damage
+**Save For**: 
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ { "dice": "1d8", label: "healing", "damagebonus": 0, "addstat": true, "prof": false, "higherlevels": "1d8" } ]
 
 A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.
 

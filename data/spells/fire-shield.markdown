@@ -16,11 +16,11 @@ tags: [druid, sorcerer, wizard, eldritchknight, level4, evocation]
 
 **Duration**: 10 minutes
 
-**Saving Throw**: Constitution
+**Saving Throw**:
 
-**Save For**: half damage
+**Save For**:
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ { "dice": "2d8", label: "fire or cold", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
 Thin and wispy flames wreathe your body for the duration, shedding bright light in a 10-foot radius and dim light for an additional 10 feet, You can end the spell early by using an action to dismiss it.
 

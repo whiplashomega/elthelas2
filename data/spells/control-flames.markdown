@@ -16,11 +16,11 @@ tags: [druid, sorcerer, wizard, eldritchknight, cantrip, transmutation]
 
 **Duration**: Instantaneous or 1 hour (see below)
 
-**Saving Throw**: Constitution
+**Saving Throw**: 
 
-**Save For**: half damage
+**Save For**: 
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: []
 
 You choose nonmagical flame that you can see within range and that fits within a 5-foot cube. You affect it in one of the following ways:
 

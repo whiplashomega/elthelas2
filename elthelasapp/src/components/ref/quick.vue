@@ -43,6 +43,36 @@
             </b-input-group>
           </b-col>
         </b-row>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Level</th>
+              <th>School</th>
+              <th>Casting Time</th>
+              <th>Duration</th>
+              <th>Tags</th>
+            </tr>
+            <tr>
+              <th><input type="text" v-model="titleFilter" class="form-control" /></th>
+              <th><input type="text" v-model="levelFilter" class="form-control" /></th>
+              <th><input type="text" v-model="schoolFilter" class="form-control" /></th>
+              <th><input type="text" v-model="timeFilter" class="form-control" /></th>
+              <th><input type="text" v-model="durationFilter" class="form-control" /></th>
+              <th><input type="text" v-model="tagsFilter" class="form-control" /> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="spell in filteredSpells" :key="spell.title">
+              <td>{{ spell.title }}</td>
+              <td>{{ spell.level }}</td>
+              <td>{{ spell.school }}</td>
+              <td>{{ spell.castingTime }}</td>
+              <td>{{ spell.duration }}</td>
+              <td>{{ spell.tagsText }}</td>
+            </tr>
+          </tbody>
+        </table>
         <b-table show-empty
                  :striped="true" :bordered="false"
                  :responsive="true"

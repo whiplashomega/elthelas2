@@ -18,9 +18,9 @@ tags:   [cleric, druid, sorcerer, level8, evocation]
 
 **Saving Throw**: Constitution
 
-**Save For**: half damage
+**Save For**: lose concentration
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ { "dice": "5d6", label: "bludgeoning", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
 You create a seismic disturbance at a point on the ground that you can see within range. For the duration, an intense tremor rips through the ground in a 100-foot-radius circle centered on that point and shakes creatures and structures in contact with the ground in that area.
 

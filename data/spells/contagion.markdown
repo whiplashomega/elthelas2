@@ -16,11 +16,11 @@ tags: [cleric, druid, level5, necromancy]
 
 **Duration**: 7 days
 
-**Saving Throw**: Constitution
+**Saving Throw**: Varies
 
-**Save For**: half damage
+**Save For**: varies
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: []
 
 Your touch inflicts disease. Make a melee spell attack against a creature within your reach. On a hit, you afflict the creature with a disease of your choice from any of the ones described below.
 

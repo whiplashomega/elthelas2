@@ -16,11 +16,11 @@ tags: [bard, druid, warlock, wizard, level8, enchantment]
 
 **Duration**: Instantaneous
 
-**Saving Throw**: Constitution
+**Saving Throw**: Intelligence
 
-**Save For**: half damage
+**Save For**: no effect
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ { "dice": "4d6", label: "psychic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
 You blast the mind of a creature that you can see within range, attempting to shatter its intellect and personality. The target takes 4d6 psychic damage and must make an Intelligence saving throw.
 

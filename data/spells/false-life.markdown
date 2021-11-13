@@ -16,11 +16,11 @@ tags: [sorcerer, wizard, artificer, level1, necromancy]
 
 **Duration**: 1 hour
 
-**Saving Throw**: Constitution
+**Saving Throw**: 
 
-**Save For**: half damage
+**Save For**: 
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ { "dice": "1d4", label: "temp hp", "damagebonus": 4, "addstat": false, "prof": false, "higherlevels": "" } ]
 
 Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration.
 
