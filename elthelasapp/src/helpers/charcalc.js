@@ -360,7 +360,7 @@ export default {
     let numcasterclasses = character.charclasses.reduce((a, b) => {
       if (b.selsubclass.castermult > 0) {
         return a + 1;
-      }  else {
+      } else {
         return a;
       }
     }, 0);

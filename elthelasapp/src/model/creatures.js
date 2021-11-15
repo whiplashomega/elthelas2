@@ -32,6 +32,8 @@ const actions = {
         var creatures = response.body;
         commit('GET_CREATURES', { creatures: creatures });
         resolve();
+      }).catch((response) => {
+        console.log("could not fetch creatures from DB");
       });
     });
   },

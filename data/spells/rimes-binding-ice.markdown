@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Revivify"
+title:  "Rimes Binding Ice"
 date:   2015-01-02
 source: PHB.272
 tags: [sorcerer, wizard, level2, evocation]

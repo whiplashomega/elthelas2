@@ -25,7 +25,7 @@ export default {
       this.character.rolls.splice(i, 1);
     },
     addDamage (roll) {
-      roll.damage.push( { dice: "", label: "", damagebonus: 0, addstat: false, prof: false, higherlevels: "" } );
+      roll.damage.push({ dice: "", label: "", damagebonus: 0, addstat: false, prof: false, higherlevels: "" });
     },
     removeDamage (roll, i) {
       roll.damage.splice(i, 1);

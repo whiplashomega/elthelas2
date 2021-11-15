@@ -5,22 +5,8 @@
         <h3>Spells</h3>
         <b-row>
           <b-col md="8">
-            Filter by Level
-            <select v-model="spelltable.levelfilter" class="form-control">
-              <option value="all" selected>All</option>
-              <option value="cantrip">Cantrips</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-            </select>
             Filter by Class
-            <select v-model="spelltable.classfilter" class="form-control">
+            <select v-model="spelltable.classFilter" class="form-control">
               <option value="all">All</option>
               <option value="archivist">Archivist</option>
               <option value="artificer">Artificer</option>
@@ -54,17 +40,61 @@
               <th>Tags</th>
             </tr>
             <tr>
-              <th><input type="text" v-model="titleFilter" class="form-control" /></th>
-              <th><input type="text" v-model="levelFilter" class="form-control" /></th>
-              <th><input type="text" v-model="schoolFilter" class="form-control" /></th>
-              <th><input type="text" v-model="timeFilter" class="form-control" /></th>
-              <th><input type="text" v-model="durationFilter" class="form-control" /></th>
-              <th><input type="text" v-model="tagsFilter" class="form-control" /> </th>
+              <th><input type="text" v-model="spelltable.titleFilter" class="form-control" /></th>
+              <th><select v-model="spelltable.levelFilter" class="form-control">
+                <option value="all" selected>All</option>
+                <option value="cantrip">Cantrips</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select></th>
+              <th><select v-model="spelltable.schoolFilter" class="form-control">
+                <option value="all">All</option>
+                <option value="abjuration">Abjuration</option>
+                <option value="conjuration">Conjuration</option>
+                <option value="divination">Divination</option>
+                <option value="enchantment">Enchantment</option>
+                <option value="evocation">Evocation</option>
+                <option value="illusion">Illusion</option>
+                <option value="necromancy">Necromancy</option>
+                <option value="transmutation">Transmutation</option>
+              </select></th>
+              <th><select v-model="spelltable.timeFilter" class="form-control">
+                <option value="all">All</option>
+                <option value="1 action">1 action</option>
+                <option value="1 bonus action">1 bonus action</option>
+                <option value="1 reaction">1 reaction</option>
+                <option value="1 minute">1 minute</option>
+                <option value="10 minutes">10 minutes</option>
+                <option value="1 hour">1 hour</option>
+                <option value="8 hours">8 hours</option>
+                <option value="24 hours">24 hours</option>
+              </select></th>
+              <th><input type="checkbox" v-model="spelltable.concFilter" /> Exclude Concentration <select v-model="spelltable.durationFilter" class="form-control">
+                <option value="all">All</option>
+                <option value="instantaneous">Instantaneous</option>
+                <option value="1 round">1 round</option>
+                <option value="1 minute">1 minute</option>
+                <option value="10 minutes">10 minutes</option>
+                <option value="1 hour">1 hour</option>
+                <option value="6 hours">6 hours</option>
+                <option value="8 hours">8 hours</option>
+                <option value="24 hours">24 hours</option>
+                <option value="10 days">10 days</option>
+                <option value="until dispelled">until dispelled</option>
+              </select></th>
+              <th><input type="text" v-model="spelltable.tagsFilter" class="form-control" /> </th>
             </tr>
           </thead>
           <tbody>
             <tr v-for="spell in filteredSpells" :key="spell.title">
-              <td>{{ spell.title }}</td>
+              <td><a href="#" @click.stop="info(spell, 0, $event.target)">{{ spell.title }}</a></td>
               <td>{{ spell.level }}</td>
               <td>{{ spell.school }}</td>
               <td>{{ spell.castingTime }}</td>
@@ -73,18 +103,6 @@
             </tr>
           </tbody>
         </table>
-        <b-table show-empty
-                 :striped="true" :bordered="false"
-                 :responsive="true"
-                 stacked="sm"
-                 :items="filteredSpells"
-                 :fields="spelltable.fields"
-                 :sort-by.sync="spelltable.sortBy"
-                 :sort-desc.sync="spelltable.sortDesc">
-          <template v-slot:cell(title)="row">
-            <a href="#" @click.stop="info(row.item, row.index, $event.target)">{{ row.value }}</a>
-          </template>
-        </b-table>
         <b-modal id="spellmodal" size="lg"
                  @hide="resetSpellModal" :title="spelltable.modalInfo.title"
                  ok-only :modal-class="userinfo.themesetting">

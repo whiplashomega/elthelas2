@@ -3,7 +3,7 @@ layout: post
 title:  "Ashardalon’s Stride"
 date:   2015-01-09
 source: PHB.215
-tags:   [artificer, sorcerer, warlock, wizard, level9, necromancy]
+tags:   [artificer, sorcerer, warlock, wizard, level3, transmutation]
 ---
 
 **3rd-level transmutation**
@@ -16,11 +16,11 @@ tags:   [artificer, sorcerer, warlock, wizard, level9, necromancy]
 
 **Duration**: Concentration, up to 1 minute
 
-**Saving Throw**: Constitution
+**Saving Throw**: 
 
-**Save For**: half damage
+**Save For**: 
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ { "dice": "1d6", label: "fire", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
 The billowing flames of a dragon blast from your feet, granting you explosive speed. For the duration, your speed increases by 20 feet and moving doesn’t provoke opportunity attacks.
 

@@ -12,50 +12,53 @@ export default {
       userinfo: "getUserInfo"
     }),
     filteredSpells () {
-      var filters = this.spelltable.filterValue.split(' ');
-      if (this.spelltable.filterValue === "") {
-        return this.spells.filter((a) => {
-          var inclass = a.tags.some((el) => {
-            if (this.spelltable.classfilter === "all") {
-              return true;
-            }
-            return this.spelltable.classfilter === el;
-          });
-          if ((inclass && this.spelltable.levelfilter === "all") || (inclass && a.level === this.spelltable.levelfilter)) {
-            return true;
-          }
-          return false;
-        });
-      }
-      if (this.spelltable.levelfilter === "nonsense") {
-        return this.spelltable.levelfilter;
-      }
-      return this.spells.filter((a) => {
-        var success = false;
-        var successarray = [];
-        filters.forEach((b) => {
-          for (var prop in a) {
-            if (typeof a[prop] === 'string') {
-              if (a[prop].toLowerCase().includes(b)) {
-                successarray.push(true);
-                break;
-              }
-            }
-          }
-          if (successarray.length >= filters.length) {
-            var inclass = a.tags.some((el) => {
-              if (this.spelltable.classfilter === "all") {
-                return true;
-              }
-              return this.spelltable.classfilter === el;
-            });
-            if ((inclass && this.spelltable.levelfilter === "all") || (inclass && a.level === this.spelltable.levelfilter)) {
-              success = true;
-            }
+      var textfilters = this.spelltable.filterValue.split(' ');
+      let spells = this.spells.filter((a) => {
+        let passes = true;
+        textfilters.forEach((item) => {
+          if (!(a.description.includes(item) ||
+                a.title.includes(item) ||
+                a.level.includes(item) ||
+                a.school.includes(item) ||
+                a.castingTime.includes(item) ||
+                a.tagsText.includes(item) ||
+                a.components.includes(item))) {
+            passes = false;
           }
         });
-        return success;
+        return passes;
       });
+      spells = spells.filter((a) => {
+        return a.title.includes(this.spelltable.titleFilter) || this.spelltable.titleFilter === "";
+      });
+      spells = spells.filter((a) => {
+        return a.tags.indexOf(this.spelltable.classFilter) !== -1 || this.spelltable.classFilter === "all";
+      });
+      spells = spells.filter((a) => {
+        return a.level === this.spelltable.levelFilter || this.spelltable.levelFilter === "all";
+      });
+      spells = spells.filter((a) => {
+        return a.school.toLowerCase() === this.spelltable.schoolFilter || this.spelltable.schoolFilter === "all";
+      });
+      spells = spells.filter((a) => {
+        return a.castingTime.toLowerCase().includes(this.spelltable.timeFilter) || this.spelltable.timeFilter === "all";
+      });
+      spells = spells.filter((a) => {
+        let lengthtest = a.duration.toLowerCase().includes(this.spelltable.durationFilter) || this.spelltable.durationFilter === "all";
+        let conctest = !a.duration.toLowerCase().includes("concentration") || !this.spelltable.concFilter;
+        return lengthtest && conctest;
+      });
+      spells = spells.filter((a) => {
+        let tags = this.spelltable.tagsFilter.split(" ");
+        let passes = true;
+        tags.forEach((b) => {
+          if (!a.tagsText.includes(b)) {
+            passes = false;
+          }
+        });
+        return passes;
+      });
+      return spells;
     }
   },
   data: function() {
@@ -69,8 +72,14 @@ export default {
           { key: 'duration', label: 'Duration', sortable: true },
           { key: 'tagsText', label: 'Tags', sortable: true }
         ],
-        classfilter: "all",
-        levelfilter: "all",
+        classFilter: "all",
+        levelFilter: "all",
+        titleFilter: "",
+        schoolFilter: "all",
+        timeFilter: "all",
+        durationFilter: "all",
+        concFilter: false,
+        tagsFilter: "",
         filterValue: "",
         sortBy: null,
         sortDesc: false,
