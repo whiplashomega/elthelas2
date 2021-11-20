@@ -147,7 +147,11 @@ export default function () {
       todaysExports: 0,
       rentRate: 0,
       vassalTaxRate: 0,
-      conscription: 0
+      conscription: 0,
+      rainfall: 0,
+      temperature: 50,
+      continental: false,
+      lattitude: 0
     },
     merchants: [],
     guards: 0,
@@ -156,6 +160,9 @@ export default function () {
     gameYear: 1846,
     gameMonth: 7,
     gameDay: 12,
+    rainString: "",
+    currentTemperature: 0,
+    windSpeed: 0,
     notes: ""
   };
 }

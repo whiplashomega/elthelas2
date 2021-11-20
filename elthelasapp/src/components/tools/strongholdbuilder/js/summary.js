@@ -24,7 +24,10 @@ export default {
   },
   data () {
     return {
-      newmodal: true
+      newmodal: true,
+      dayofweek: "Godsday",
+      dayNames: ["Godsday", "Elvesday", "Gnomesday", "Dragonsday", "Mansday", "Dwarvesday", "Orcsday"],
+      monthNames: ["Neradan", "Dorunor", "Trimalan", "Sylvanus", "Gaiana", "Alohiman", "Coranus", "Moltyr", "Saris", "Maridia", "Tockra", "Amatherin"]
     };
   },
   methods: {
@@ -86,6 +89,67 @@ export default {
       finished.forEach((a) => {
         this.stronghold.construction.splice(this.stronghold.construction.indexOf(a), 1);
       });
+      // run weather randomizer
+      this.calcWeather();
+      let dayselapsedSinceCalendarStart = this.stronghold.gameYear * 365 + this.stronghold.gameMonth * 30 + this.stronghold.gameDay;
+      this.dayofweek = this.dayNames[dayselapsedSinceCalendarStart % 7];
+      this.month = this.monthNames[this.stronghold.gameMonth - 1];
+      alert("A new day has begun. It is the " + this.stronghold.gameDay + "th day of " + this.month + " it is " + this.stronghold.currentTemperature + " degrees outside. " + this.stronghold.rainString + ". The average windspeed is " + this.stronghold.windSpeed + " mph");
+    },
+    calcWeather () {
+      let season = 3;
+      let avgTemp = Number(this.stronghold.laws.temperature);
+      if (this.stronghold.gameMonth < 3 || this.stronghold.gameMonth > 11) {
+        season = 4;
+      } else if (this.stronghold.gameMonth < 2 && this.stronghold.gameMonth < 6) {
+        season = 1;
+      } else if (this.stronghold.gameMonth > 5 && this.stronghold.gameMonth < 9) {
+        season = 2;
+      }
+      if ((season === 2 && this.stronghold.laws.lattitude >= 0) || (season === 4 && this.stronghold.laws.lattitude < 0)) { // summer
+        avgTemp += 10;
+        if (this.stronghold.laws.continental) {
+          avgTemp += 15;
+        }
+      } else if (season === 4 || season === 2) { // winter
+        avgTemp -= 10;
+        if (this.stronghold.laws.continental) {
+          avgTemp -= 15;
+        }
+      }
+      let minTemp = avgTemp - 20 - (this.stronghold.laws.continental * 20);
+      let maxTemp = avgTemp + 20 + (this.stronghold.laws.continental * 20);
+      let range = maxTemp - minTemp;
+      let temperature = Math.floor(Math.random() * range) + minTemp;
+      let rainChance = (2.75 * this.stronghold.laws.rainfall) / 365;
+      let rainString = "No precipitation";
+      if (Math.random() < rainChance) { // rainy day
+        let rainStrengthNum = Math.random();
+        if (rainStrengthNum < 0.33) {
+          rainString = "Scattered showers occur throughout the day";
+          if (temperature < 32) {
+            rainString = "Snow flurries occur throughout the day";
+          }
+        } else if (rainStrengthNum < 0.5) {
+          rainString = "A steady rain falls throughout the day.";
+          if (temperature < 32) {
+            rainString = "An inch or two of snow falls over the course of the day";
+          }
+        } else if (rainStrengthNum < 0.67) {
+          rainString = "A storm passed through overnight";
+          if (temperature < 40) {
+            rainString = "A snowstorm passes through overnight";
+          }
+        } else {
+          rainString = "A large thunderstorm sweeps into the area";
+          if (temperature < 32) {
+            rainString = "A major blizzard passes through the area";
+          }
+        }
+      }
+      this.stronghold.currentTemperature = temperature;
+      this.stronghold.rainString = rainString;
+      this.stronghold.windSpeed = Math.floor(Math.random() * 20) + (Math.random() > 0.75 ? Math.floor(Math.random() * 30) : 0);
     }
   }
 };

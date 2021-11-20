@@ -1,4 +1,4 @@
-<template>
+**<template>
   <div class="col-sm-12 strongholdbuilder">
     <stronghold-summary />
     <b-tabs>
@@ -544,6 +544,34 @@
             </tr>
           </tbody>
         </table>
+      </b-tab>
+      <b-tab title="Weather">
+        <p>
+          Today's Weather: {{ stronghold.currentTemperature }} Degrees Farenheit. {{ stronghold.rainString }}. Average Windspeed: {{ stronghold.windSpeed }}
+        </p>
+        <label>Typical Yearly Rainfall:
+          <select v-model="stronghold.laws.rainfall" class="form-control">
+            <option :value="0">Supernatural Desert (0 rain)</option>
+            <option :value="5">Desert (1-10 inches rain)</option>
+            <option :value="17">Dry Grassland (11-25 inches rain)</option>
+            <option :value="33">Grassland or Savannah (26-40 inches rain)</option>
+            <option :value="48">Forest (41-55 inches rain)</option>
+            <option :value="65">Wet Forest, Marsh or Swamp (56-80 inches rain)</option>
+            <option :value="100">Rainforest (80+ inches rain)</option>
+          </select>
+        </label>
+        <label>Annual Mean Temperature (F):
+          <input type="number" min="-70"
+                 max="120" v-model="stronghold.laws.temperature" />
+        </label>
+        <label>
+          Continental (More than 200 miles from the coast):
+          <input type="checkbox" v-model="stronghold.laws.continental" />
+        </label>
+        <label>Lattitiude:
+          <input type="number" min="-90"
+                 max="90" v-model="stronghold.laws.lattitude" />
+        </label>
       </b-tab>
     </b-tabs>
     <p>&nbsp;</p>
