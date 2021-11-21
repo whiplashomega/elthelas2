@@ -1,5 +1,16 @@
 import { mapGetters, mapActions } from 'vuex';
 
+function randNbm() {
+  let u = 0;
+  let v = 0;
+  while (u === 0) u = Math.random(); // Converting [0,1) to (0,1)
+  while (v === 0) v = Math.random();
+  let num = Math.sqrt(-2.0 * Math.log(u)) * Math.cos(2.0 * Math.PI * v);
+  num = num / 10.0 + 0.5; // Translate to 0 -> 1
+  if (num > 1 || num < 0) return randNbm(); // resample between 0 and 1
+  return num;
+}
+
 export default {
   computed: {
     ...mapGetters({
@@ -94,7 +105,7 @@ export default {
       let dayselapsedSinceCalendarStart = this.stronghold.gameYear * 365 + this.stronghold.gameMonth * 30 + this.stronghold.gameDay;
       this.dayofweek = this.dayNames[dayselapsedSinceCalendarStart % 7];
       this.month = this.monthNames[this.stronghold.gameMonth - 1];
-      alert("A new day has begun. It is the " + this.stronghold.gameDay + "th day of " + this.month + " it is " + this.stronghold.currentTemperature + " degrees outside. " + this.stronghold.rainString + ". The average windspeed is " + this.stronghold.windSpeed + " mph");
+      alert("A new day has begun. It is the " + this.stronghold.gameDay + "th day of " + this.month + ", " + this.dayofweek + ". it is " + this.stronghold.currentTemperature + " degrees outside. " + this.stronghold.rainString + ". The average windspeed is " + this.stronghold.windSpeed + " mph");
     },
     calcWeather () {
       let season = 3;
@@ -107,20 +118,20 @@ export default {
         season = 2;
       }
       if ((season === 2 && this.stronghold.laws.lattitude >= 0) || (season === 4 && this.stronghold.laws.lattitude < 0)) { // summer
-        avgTemp += 10;
-        if (this.stronghold.laws.continental) {
+        avgTemp += 20;
+        if (this.stronghold.laws.continental && Math.abs(this.stronghold.laws.lattitude) > 30) {
           avgTemp += 15;
         }
       } else if (season === 4 || season === 2) { // winter
-        avgTemp -= 10;
-        if (this.stronghold.laws.continental) {
+        avgTemp -= 20;
+        if (this.stronghold.laws.continental && Math.abs(this.stronghold.laws.lattitude) > 30) {
           avgTemp -= 15;
         }
       }
-      let minTemp = avgTemp - 20 - (this.stronghold.laws.continental * 20);
-      let maxTemp = avgTemp + 20 + (this.stronghold.laws.continental * 20);
+      let minTemp = avgTemp - 30 - (this.stronghold.laws.continental * 10);
+      let maxTemp = avgTemp + 30 + (this.stronghold.laws.continental * 10);
       let range = maxTemp - minTemp;
-      let temperature = Math.floor(Math.random() * range) + minTemp;
+      let temperature = Math.floor(randNbm() * range) + minTemp;
       let rainChance = (2.75 * this.stronghold.laws.rainfall) / 365;
       let rainString = "No precipitation";
       if (Math.random() < rainChance) { // rainy day
@@ -131,7 +142,7 @@ export default {
             rainString = "Snow flurries occur throughout the day";
           }
         } else if (rainStrengthNum < 0.5) {
-          rainString = "A steady rain falls throughout the day.";
+          rainString = "A steady rain falls throughout the day";
           if (temperature < 32) {
             rainString = "An inch or two of snow falls over the course of the day";
           }

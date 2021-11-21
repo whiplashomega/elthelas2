@@ -8,7 +8,7 @@
           <button class="btn btn-primary" v-if="stronghold._id" @click="saveStronghold()">Save</button>
         </div>
         {{ stronghold.castleName }} : {{ stronghold.townName }}
-        {{ gameDate }}&nbsp;&nbsp;<button class="btn btn-primary" @click="newDay()">New Day</button>
+        {{ gameDate }} {{ dayofweek }}&nbsp;&nbsp;<button class="btn btn-primary" @click="newDay()">New Day</button>
       </h1>
       <div class="col-sm-7">
         <div class="row">
