@@ -312,7 +312,7 @@ export default {
     }, 0);
   },
   maxLaborers: (state, getters) => {
-    return state.current.population.adults - (getters.privateLaborers + state.current.servants + state.current.guards);
+    return state.current.population.adults - (getters.privateLaborers + Number(state.current.servants) + Number(state.current.guards));
   },
   totalHousing: (state) => {
     return state.current.improvements.reduce((total, imp) => {
