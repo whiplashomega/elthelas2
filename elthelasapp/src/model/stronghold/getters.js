@@ -16,7 +16,11 @@ export default {
     return Number(state.current.laborers) - state.current.improvements.reduce((total, imp) => {
       return total + Number(imp.laborers);
     }, 0) - state.current.construction.reduce((total, imp) => {
-      return total + Number(imp.laborersassigned);
+      if (imp.laborersassigned) {
+        return total + Number(imp.laborersassigned);
+      } else {
+        return total;
+      }
     }, 0);
   },
   availableOfType: (state, getters) => (type) => {
