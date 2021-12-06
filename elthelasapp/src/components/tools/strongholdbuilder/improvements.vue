@@ -32,7 +32,7 @@
               <td>
                 <input type="number" v-model="imp.laborersassigned"
                        min="0" :max="min([imp.buildtime, availableLaborers])"
-                       style="max-width: 75px;" />
+                       style="max-width: 75px;" v-if="!imp.private" />
               </td>
             </tr>
           </tbody>

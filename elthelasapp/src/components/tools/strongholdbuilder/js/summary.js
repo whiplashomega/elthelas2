@@ -104,8 +104,12 @@ export default {
             }
             imp.resourceCost[key] -= imp.resourceCost[key] * percentdone;
           }
+          imp.buildtime -= amountconstructed;
+        } else if (imp.private) {
+          imp.buildtime -= 20;
+        } else {
+          imp.build -= amountconstructed;
         }
-        imp.buildtime -= amountconstructed;
         if (imp.buildtime <= 0) {
           finished.push(imp);
           this.addImprovement(imp);
