@@ -31,7 +31,7 @@
                          min="0" style="max-width: 75px;" /></td>
               <td>
                 <input type="number" v-model="imp.laborersassigned"
-                       min="0" :max="min([imp.buildtime, availableLaborers])"
+                       min="0" :max="min([imp.buildtime, availableLaborers + imp.laborersassigned])"
                        style="max-width: 75px;" v-if="!imp.private" />
               </td>
             </tr>

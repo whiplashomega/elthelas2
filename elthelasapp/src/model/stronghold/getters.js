@@ -15,6 +15,8 @@ export default {
   availableLaborers: (state) => {
     return Number(state.current.laborers) - state.current.improvements.reduce((total, imp) => {
       return total + Number(imp.laborers);
+    }, 0) - state.current.construction.reduce((total, imp) => {
+      return total + Number(imp.laborersassigned);
     }, 0);
   },
   availableOfType: (state, getters) => (type) => {
