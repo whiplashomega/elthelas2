@@ -16,11 +16,11 @@ tags: [archivist, cleric, level5, divination, ritual]
 
 **Duration**: 1 minute
 
-**Saving Throw**: Constitution
+**Saving Throw**: 
 
-**Save For**: half damage
+**Save For**: 
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: []
 
 You contact your deity or a divine proxy and ask up to three questions that can be answered with a yes or no. You must ask your questions before the spell ends. You receive a correct answer for each question.
 

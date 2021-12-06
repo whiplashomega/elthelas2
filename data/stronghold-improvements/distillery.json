@@ -3,7 +3,7 @@
   "name": "Rum Distillery",
   "benefit": "Distills Rum from Sugar",
   "staff": [{ "name": "Master Brewer", "num": 1, "cur": 0 }],
-  "goldCost": 1000,
+  "goldCost": 100,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 1,
   "employs": 20,
   "operating": true,
-  "buildtime": 10,
+  "buildtime": 200,
   "prerequisites": [ "town" ],
   "hide": true,
   "count": 0,

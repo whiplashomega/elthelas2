@@ -20,7 +20,7 @@ tags: [druid, sorcerer, wizard, level5, evocation]
 
 **Save For**: half damage
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ { "dice": "8d8", label: "cold", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d8" } ]
 
 A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage on a successful one.
 

@@ -3,7 +3,7 @@
   "name": "Escape Tunnel",
   "benefit": "Provides a way for those in the keep to escape to the outside should the castle fall",
   "staff": [],
-  "goldCost": 5000,
+  "goldCost": 500,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 20,
+  "buildtime": 400,
   "prerequisites": [ ],
   "hide": true,
   "count": 0,

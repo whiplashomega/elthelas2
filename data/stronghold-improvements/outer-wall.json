@@ -3,7 +3,7 @@
   "name": "Outer Walls",
   "benefit": "protects town and related improvements from attack",
   "staff": [{ "name": "Guard", "num": 50, "cur": 0 }],
-  "goldCost": 25000,
+  "goldCost": 2500,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 60,
+  "buildtime": 1200,
   "prerequisites": [ "town" ],
   "hide": true,
   "count": 0,

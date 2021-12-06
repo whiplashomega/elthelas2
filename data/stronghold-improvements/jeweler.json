@@ -3,7 +3,7 @@
   "name": "Jeweler",
   "benefit": "Creates fine jewelry out of fine materials.",
   "staff": [{ "name": "Goldsmith", "num": 1, "cur": 0 }],
-  "goldCost": 2000,
+  "goldCost": 200,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 10,
+  "buildtime": 200,
   "prerequisites": [ "town", "gold-mine" ],
   "hide": true,
   "count": 0,

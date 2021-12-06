@@ -1,8 +1,8 @@
 {
   "name": "Estapor",
   "nation": "Waelin",
-  "population": 16000,
-  "metro": 40000,
+  "population": 22000,
+  "metro": 55000,
   "majority": "Wood Elves",
   "ruling": "High Elves",
   "minorities": [
@@ -13,5 +13,5 @@
   "exports": [],
   "landmarks": [],
   "coords": [36.359927919534485, 15.611253562674055],
-  "description": "Estapor is the center of government for the continental Waelin region of Eldoran.  It also manages to extract a fair amount of wealth from the trade on the Sindi Silmeranna.  The Waelin government centered in Estapor is more a beauracratic center than a true decision making apparatus.  The beauracracy oversees the enactment of the decisions made by the central government in Loridesa, but makes few real decisions of its own."
+  "description": "Estapor is the capitol of the new elven nation of Waelin.  It also manages to extract a fair amount of wealth from the trade on the Sindi Silmeranna. With the independence of Waelin, this city has catapulted into new importance with an influx of people seeking to curry favor with the new Queen."
 }

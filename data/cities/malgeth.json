@@ -1,8 +1,8 @@
 {
   "name": "Malgeth",
-  "nation": "Malinval",
-  "population": 0,
-  "metro": 0,
+  "nation": "Consolidated Territories of Parakas",
+  "population": 15000,
+  "metro": 25000,
   "majority": "Grunt Orcs",
   "ruling": "High Orcs",
   "minorities": [
@@ -13,5 +13,5 @@
   "exports": [],
   "landmarks": [],
   "coords": [51.186660007669204, 86.46914719088788],
-  "description": ""
+  "description": "The fortress city of Malgeth has long stood as the southern bastion of the Black Shard Pass. The original fortress first built by Dorman I during his surprise invasion of Malinval through the artificial pass, the withdrawal in later years saw the fortress captured by orcish warlords. The fortress has been expanded repeatedly as it traded hands back and forth over the following centuries. Today it sits under the control of the Consolidated Territories of Parakas."
 }

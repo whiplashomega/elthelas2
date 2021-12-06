@@ -3,7 +3,7 @@
   "name": "Inner Wall Antimagic Fields",
   "benefit": "protects the central village wall from magical attacks",
   "staff": [{ "name": "Wizard", "num": 0, "cur": 0 }],
-  "goldCost": 7500,
+  "goldCost": 750,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 100,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 15,
+  "buildtime": 300,
   "prerequisites": [ "inner-defensive-towers" ],
   "hide": true,
   "count": 0,

@@ -3,7 +3,7 @@
   "name": "Paper Mill",
   "benefit": "a factory where they make paper",
   "staff": [{ "name": "Factory Foreman", "num": 1, "cur": 0 }, { "name": "Paper Maker", "num": 1, "cur": 0 }],
-  "goldCost": 8000,
+  "goldCost": 800,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 60,
   "operating": true,
-  "buildtime": 10,
+  "buildtime": 200,
   "prerequisites": [ "town" ],
   "hide": true,
   "count": 0,

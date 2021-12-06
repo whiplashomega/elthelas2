@@ -1,0 +1,20 @@
+{
+  "name": "Ghurad",
+  "nation": "Western Independent Cities",
+  "population": 15000,
+  "metro": 45000,
+  "majority": "Grunt Orcs",
+  "ruling": "High Orcs",
+  "minorities": [
+    "Goblins",
+    "Hobgoblins",
+    "Gnolls",
+    "Morrind Dwarves",
+    "Wood Elves"
+  ],
+  "exports": [],
+  "landmarks": [
+  ],
+  "coords": [27.831789750079267, 23.88381540674164],
+  "description": "Ghurad is a young city, rising from a tiny fishing port into a major trading hub after the end of the Great War opened trade between the Western Independent Cities, Waelin, Eldoran, and Shendarel."
+}

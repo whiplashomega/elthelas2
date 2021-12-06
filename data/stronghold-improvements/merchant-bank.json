@@ -3,7 +3,7 @@
   "name": "Merchant Bank",
   "benefit": "Increases overall tax revenue by 10%, treasury earns interest at 0.2% per day. Provides the opportunity to take out loans.",
   "staff": [{ "name": "Banker", "num": 1, "cur": 0 }],
-  "goldCost": 5000,
+  "goldCost": 500,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 20,
   "operating": true,
-  "buildtime": 30,
+  "buildtime": 600,
   "prerequisites": [ "outer-wall", "market" ],
   "hide": true,
   "count": 0,

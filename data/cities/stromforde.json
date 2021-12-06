@@ -1,13 +1,24 @@
 {
   "name": "Stromforde",
   "nation": "Curinor",
-  "population": 0,
-  "metro": 0,
-  "majority": "",
-  "ruling": "",
-  "minorities": [],
+  "population": 80000,
+  "metro": 130000,
+  "majority": "Plains Dwarves",
+  "ruling": "Deep Dwarves",
+  "minorities": [
+    "Hill Dwarves",
+    "Deep Dwarves",
+    "Lightfoot Halflings",
+    "Morrind Dwarves",
+    "Imperial Humans"
+  ],
   "exports": [],
-  "landmarks": [],
+  "landmarks": [
+    {
+      "name": "Strom's Wall",
+      "description": "A massive seawall that protects the artificial harbor of Stromforde, it rises more than 80 feet above the sea level at low tide, with a wide causeway atop it dotted with towers and crenelations. This wall was the first place that dwarves adopted the cannon after they first imported the design from Stagenheim, and the massive cannons that sit atop the sea wall's towers are some of the largest in the world. A raid by a powerful pirate admiral once dared to attempt to capture Stromforde harbor. He had 80 ships at his command, but the local navy did not even bother to leave their moorings, as each and every one was blasted apart before they could get close."
+    }
+  ],
   "coords": [69.76779412202235, 36.077644634724265],
-  "description": ""
+  "description": "The port city of Stromforde is the traditional access point for merchants seeking to trade with the dwarven holds of the Runic Mountains. Built at the point where the runic mountains reach the sea, half the city is built into the hillsides, while the other half is a marshy mess of buildings built on pilings and stone piers jutting out into the ocean. With no natural harbor anywhere nearby, the dwarves built their own with a massive stone seawall protecting the city from the ravages of the Ice Ocean. Yet the dwarves themselves largely do not concern themselves with shipping, instead relying on outside merchants from Imperial lands or their Morrind cousins to actually ship goods from place to place."
 }

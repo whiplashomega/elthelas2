@@ -3,7 +3,7 @@
   "name": "Horse Breeder",
   "benefit": "breeds and raises horses for sale",
   "staff": [{ "name": "Head Farmer", "num": 1, "cur": 0 }],
-  "goldCost": 1500,
+  "goldCost": 150,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 1,
   "employs": 20,
   "operating": true,
-  "buildtime": 10,
+  "buildtime": 200,
   "prerequisites": [ "new-land" ],
   "hide": true,
   "count": 0,

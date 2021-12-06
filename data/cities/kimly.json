@@ -1,13 +1,13 @@
 {
   "name": "Kimly",
   "nation": "Seran",
-  "population": 0,
-  "metro": 0,
+  "population": 30000,
+  "metro": 80000,
   "majority": "Neran Humans",
   "ruling": "Neran Humans",
   "minorities": [],
   "exports": [],
   "landmarks": [],
   "coords": [16.85777679372975, 94.47461128519416],
-  "description": ""
+  "description": "The capitol of Seran is a severe place, populated by a hardscrabble people determined to hold on to a homeland under constant seige. It is almost a right of passage for clerics and paladins of Cora to visit the city at least once in their lives. To hear the stories, and contribute in the push back against the undead. The city itself is not a harsh fortress, but mandatory conscription means that most people of age have served their time in the mountain forts and watchtowers that hold back the undead of Nerim."
 }

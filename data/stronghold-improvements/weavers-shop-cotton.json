@@ -3,7 +3,7 @@
   "name": "Weaver's Shop (Cotton Cloth)",
   "benefit": "A small shop where workers weave cotton into cloth",
   "staff": [{ "name": "Weaver", "num": 1, "cur": 0 }],
-  "goldCost": 1500,
+  "goldCost": 150,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 10,
   "operating": true,
-  "buildtime": 10,
+  "buildtime": 200,
   "prerequisites": [ "village" ],
   "hide": true,
   "count": 0,

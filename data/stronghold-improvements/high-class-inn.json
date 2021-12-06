@@ -3,7 +3,7 @@
   "name": "High-Class Inn",
   "benefit": "A high class inn serves a wealthier clientelle, and thus brings in more revenue, but you won't get that clientelle if your town isn't big enough.",
   "staff": [{ "name": "Innkeeper", "num": 1, "cur": 0 }, { "name": "Bard", "num": 1, "cur": 0 }],
-  "goldCost": 3000,
+  "goldCost": 300,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 15,
   "operating": true,
-  "buildtime": 15,
+  "buildtime": 300,
   "prerequisites": [ "town" ],
   "hide": true,
   "count": 0,

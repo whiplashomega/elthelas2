@@ -3,7 +3,7 @@
   "name": "Winery",
   "benefit": "Grows wine grapes and ferments them into wine",
   "staff": [{ "name": "Head Farmer", "num": 1, "cur": 0 }, { "name": "Master Brewer", "num": 1, "cur": 0 }],
-  "goldCost": 1500,
+  "goldCost": 150,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 1,
   "employs": 30,
   "operating": true,
-  "buildtime": 10,
+  "buildtime": 200,
   "prerequisites": [ "clear-land" ],
   "hide": true,
   "count": 0,

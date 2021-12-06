@@ -3,7 +3,7 @@
   "name": "Castle Stockades",
   "benefit": "A simple wall made of spiked logs with wooden platforms for defenders. It provides basic defenses for the central village.",
   "staff": [{ "name": "Guard", "num": 10, "cur": 0 }],
-  "goldCost": 1500,
+  "goldCost": 150,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 10,
+  "buildtime": 200,
   "prerequisites": [ "village" ],
   "hide": true,
   "count": 0,

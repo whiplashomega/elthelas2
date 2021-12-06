@@ -3,7 +3,7 @@
   "name": "District Wall",
   "benefit": "protects additional districts and related improvements from attack",
   "staff": [{ "name": "Guard", "num": 40, "cur": 0 }],
-  "goldCost": 18000,
+  "goldCost": 1800,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 60,
+  "buildtime": 1200,
   "prerequisites": [ "outer-wall", "town", "additional-district" ],
   "hide": true,
   "count": 0,

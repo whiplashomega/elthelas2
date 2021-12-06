@@ -3,7 +3,7 @@
   "name": "District Wall Towers",
   "benefit": "Defensive Towers for the a District Wall",
   "staff": [{ "name": "Guard", "num": 20, "cur": 0 }],
-  "goldCost": 9000,
+  "goldCost": 900,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 35,
+  "buildtime": 700,
   "prerequisites": [ "district-wall" ],
   "hide": true,
   "count": 0,

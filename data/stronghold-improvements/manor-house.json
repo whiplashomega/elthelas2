@@ -3,7 +3,7 @@
   "name": "Manor House",
   "benefit": "A large extravagent home for staff or party members to live in.",
   "staff": [{ "name": "Servant", "num": 2, "cur": 0 }],
-  "goldCost": 2000,
+  "goldCost": 200,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 4,
   "employs": 0,
   "operating": true,
-  "buildtime": 20,
+  "buildtime": 400,
   "prerequisites": [ ],
   "hide": true,
   "count": 0,

@@ -3,7 +3,7 @@
   "name": "Weavery (Cotton Cloth)",
   "benefit": "A water or wind powered factory where workers weave cotton into cloth",
   "staff": [{ "name": "Factory Foreman", "num": 1, "cur": 0 }, { "name": "Weaver", "num": 1, "cur": 0 }],
-  "goldCost": 8000,
+  "goldCost": 800,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 40,
   "operating": true,
-  "buildtime": 30,
+  "buildtime": 600,
   "prerequisites": [ "town" ],
   "hide": true,
   "count": 0,

@@ -3,7 +3,7 @@
   "name": "Log Cabin",
   "benefit": "Build a simple log cabin for your laborers to live in",
   "staff": [],
-  "goldCost": 200,
+  "goldCost": 20,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 2,
+  "buildtime": 40,
   "prerequisites": [ ],
   "hide": true,
   "count": 0,

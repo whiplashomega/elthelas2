@@ -16,11 +16,11 @@ tags: [druid, level5, abjuration]
 
 **Duration**: Concentration, up to 1 hour
 
-**Saving Throw**: Constitution
+**Saving Throw**: 
 
-**Save For**: half damage
+**Save For**: 
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ ]
 
 A shimmering barrier extends out from you in a 10-foot radius and moves with you, remaining centered on you and hedging out creatures other than undead and constructs. The barrier lasts for the duration.
 

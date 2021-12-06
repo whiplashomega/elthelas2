@@ -3,7 +3,7 @@
   "name": "Keep Expansion",
   "benefit": "increases size of the keep",
   "staff": [{ "name": "Servant", "num": 3, "cur": 0 }],
-  "goldCost": 2000,
+  "goldCost": 200,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 10,
   "employs": 0,
   "operating": true,
-  "buildtime": 25,
+  "buildtime": 500,
   "prerequisites": [ "keep" ],
   "hide": true,
   "count": 0,

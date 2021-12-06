@@ -16,11 +16,11 @@ tags: [archivist, bard, cleric, paladin, level1, enchantment]
 
 **Duration**: 1 round
 
-**Saving Throw**: Constitution
+**Saving Throw**: Wisdom
 
-**Save For**: half damage
+**Save For**: no effect
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: []
 
 You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn’t understand your language, or if your command is directly harmful to it. 
 Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can’t follow your command, the spell ends. 

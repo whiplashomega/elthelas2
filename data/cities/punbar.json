@@ -1,13 +1,17 @@
 {
   "name": "Punbar",
   "nation": "Olda",
-  "population": 0,
-  "metro": 0,
-  "majority": "",
-  "ruling": "",
-  "minorities": [],
+  "population": 22000,
+  "metro": 90000,
+  "majority": "Goblin",
+  "ruling": "High Orc",
+  "minorities": [
+    "High Orc",
+    "Grunt Orc",
+    "Kobold"
+  ],
   "exports": [],
   "landmarks": [],
   "coords": [22.76668461839901, -6.019984775428507],
-  "description": ""
+  "description": "Punbar is the fortress city of Olda, though it isn't much of a fortress as compared to other border cities the world over. The area is dotted with cotton and sugar plantations manned by goblin slaves, their production hardly affected by the end of the Great War. While Olda, and Punbar, were technically allied with Malinval throughout the war, the fighting was no more intense than usual, and Olda negotiated a favorable separate peace as soon as the war started to turn, essentially losing nothing in return for simply bowing out."
 }

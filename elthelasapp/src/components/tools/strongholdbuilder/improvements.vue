@@ -23,10 +23,17 @@
       <div class="col-sm-3">
         <h4>Under Construction</h4>
         <table class="table table-sm table-striped">
-          <thead><tr><th>Improvement</th><th>Days Remaining</th></tr></thead>
+          <thead><tr><th>Improvement</th><th title="number of days remaining if you have 10 laborers working construction on the building">LabDays Rem.</th><th>Laborers</th></tr></thead>
           <tbody>
             <tr v-for="(imp, index) in stronghold.construction" :key="imp.id + index">
-              <td>{{ imp.name }} <span v-if="imp.private">(private)</span></td><td><input type="number" v-model="imp.buildtime" min="0" /></td>
+              <td>{{ imp.name }} <span v-if="imp.private">(private)</span></td>
+              <td><input type="number" v-model="imp.buildtime"
+                         min="0" style="max-width: 75px;" /></td>
+              <td>
+                <input type="number" v-model="imp.laborersassigned"
+                       min="0" :max="min([imp.buildtime, availableLaborers])"
+                       style="max-width: 75px;" />
+              </td>
             </tr>
           </tbody>
         </table>

@@ -68,7 +68,7 @@
               <td>Laborers</td>
               <td><input type="number" v-model="stronghold.laborers"
                          class="form-control" min="0"
-                         :max="maxLaborers" title="You can hire laborers up to 70% of the total population (not including staff, the other 30% are kids too young to work), private enterprises will suck up a certain percentage of the labor market though." /></td>
+                         :max="maxLaborers" title="You can hire laborers up to the number of healthy adults (not including staff, the other 30% are kids too young to work), private enterprises will suck up a certain percentage of the labor market though." /></td>
               <td>{{ laborersNeeded }}</td>
               <td>Does manual labor in many employments, from a blacksmiths apprentice/journeyman to cutting down trees.</td>
             </tr>

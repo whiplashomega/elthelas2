@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "135515ed946782d0be905ee89e7bfcb7",
+    "revision": "3b1a0227017e068bce727e3e482d9510",
     "url": "/index.html"
   },
   {
@@ -120,7 +120,7 @@ self.__precacheManifest = [
     "url": "/json/backgrounds.json"
   },
   {
-    "revision": "57ba710bff7fc53aa6575ff5fd3347c8",
+    "revision": "ef9fcddfe4a580099167bc8fbab71843",
     "url": "/json/cities.json"
   },
   {
@@ -148,19 +148,19 @@ self.__precacheManifest = [
     "url": "/json/feats.json"
   },
   {
-    "revision": "7ef37e7c0db73316d374b2eb8bb46cd9",
+    "revision": "acef5a831accdb0c80e5e3e7a28b67eb",
     "url": "/json/features.json"
   },
   {
-    "revision": "67959ff3905871e735ea",
-    "url": "/js/app.8e43da7c.js"
+    "revision": "0adbb45deaf8414db949",
+    "url": "/js/app.07af46cd.js"
   },
   {
     "revision": "4b5c27f1827cc4c8b228",
     "url": "/js/characterbuilder.743ff2e9.js"
   },
   {
-    "revision": "073e75a82c5a7a1d371ab1ab237d95be",
+    "revision": "f44aacb76113713e70e7ae0aac5d9e1f",
     "url": "/json/improvements.json"
   },
   {
@@ -172,7 +172,7 @@ self.__precacheManifest = [
     "url": "/json/magicitems.json"
   },
   {
-    "revision": "59700967f3617626953643a6f5a5eb31",
+    "revision": "fc7ce4b2cdb195adcae2a6cbd41fd9b2",
     "url": "/json/nations.json"
   },
   {
@@ -300,8 +300,8 @@ self.__precacheManifest = [
     "url": "/static/md/book4/pcs.md"
   },
   {
-    "revision": "67959ff3905871e735ea",
-    "url": "/css/app.66410bf5.css"
+    "revision": "0adbb45deaf8414db949",
+    "url": "/css/app.a31f59f4.css"
   },
   {
     "revision": "d41d8cd98f00b204e9800998ecf8427e",

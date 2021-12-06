@@ -16,7 +16,8 @@ export default {
       timberLand: 'timberLand',
       totalLand: 'totalLand',
       urbanLand: 'urbanLand',
-      userinfo: "getUserInfo"
+      userinfo: "getUserInfo",
+      availableLaborers: "availableLaborers"
     }),
     availableImprovements () {
       if (this.showAvailable) {
@@ -121,24 +122,29 @@ export default {
       addToTreasury: 'addToTreasury',
       buyResource: 'buyResource'
     }),
+    min (a) {
+      return Math.min(...a);
+    },
     addToConstruction (improvement) {
       let buildtime = improvement.buildtime;
       if (this.addImediately) {
         buildtime = 0;
       }
       if (buildtime > 0) {
-        this.stronghold.construction.push({ ...improvement });
+        this.stronghold.construction.push({
+          ...improvement,
+          resourceCost: { ...improvement.resourceCost },
+          laborersassigned: 0
+        });
       } else {
         this.addImprovement(improvement);
       }
-      if (!improvement.private && !this.dmGift) {
-        for (let key in improvement.resourceCost) {
-          this.stronghold.resources[key] -= improvement.resourceCost[key];
-          if (this.stronghold.resources[key] < 0) {
-            this.buyResource({ type: key, amount: this.stronghold.resources[key] * -1 });
-          }
-        }
+      improvement.dmGift = false;
+      if (!this.dmGift && !improvement.private) {
         this.addToTreasury({ changeby: -improvement.goldCost, record: "Begin construction on " + improvement.name });
+      }
+      if (this.dmGift) {
+        improvement.dmGift = true;
       }
       this.addImprovementModal = false;
     }

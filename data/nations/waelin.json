@@ -1,7 +1,10 @@
 {
   "name": "Waelin", 
-  "primelanguage": "",
-  "seclanguages": [],
+  "primelanguage": "elvish",
+  "seclanguages": [
+    "dwarf",
+    "imperial"
+  ],
   "coords": [47.07199249565323, 18.9694152655986],
   "startyear": 1846,
   "endyear": false,

@@ -3,7 +3,7 @@
   "name": "Chapel",
   "benefit": "dedicated to God of choice, allows for recruitment of one cleric of same God, no high priests",
   "staff": [{ "name": "Cleric", "num": 1, "cur": 0 }],
-  "goldCost": 2000,
+  "goldCost": 200,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 1,
   "operating": true,
-  "buildtime": 10,
+  "buildtime": 200,
   "prerequisites": [ "keep" ],
   "hide": true,
   "count": 0,

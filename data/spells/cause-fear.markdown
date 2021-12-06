@@ -16,11 +16,11 @@ tags: [warlock, wizard, level1, necromancy]
 
 **Duration**: Concentration, up to 1 minute
 
-**Saving Throw**: Constitution
+**Saving Throw**: Wisdom
 
-**Save For**: half damage
+**Save For**: no effect
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: []
 
 You awaken the sense of mortality in one creature you can see within range. A construct or an undead is immune to this effect. The target must succeed on a Wisdom saving throw or become frightened of you until the spell ends. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
 

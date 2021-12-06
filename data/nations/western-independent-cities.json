@@ -1,0 +1,56 @@
+{
+  "name": "Western Independent Cities", 
+  "primelanguage": "orcish",
+  "seclanguages": [
+    "elvish"
+  ],
+  "coords": [31.608948861695676, 30.559852909258066],
+  "startyear": 1848,
+  "endyear": false,
+  "bordercoords": [
+    {
+      "year": 1846,
+      "borders": [
+        [37.34450497634804, 37.41455215723736],
+        [33.25763758619377, 29.201955184124614],
+        [28.55678227774372, 22.143172163018463],
+        [27.130035441479365, 24.894005291990823],
+        [29.374994983220194, 28.144181444531725],
+        [30.81970500546149, 31.921413189376565],
+        [34.0094118622566, 36.6209922207533],
+        [35.48974737539364, 37.98255250087177],
+        [35.52552053465409, 38.64137199125172]
+      ]
+    }
+  ],
+  "color": "#FF0099",
+  "map": "",
+  "capitol": "Mak'hol",
+  "cities": [],
+  "landmarks": ["Glass Cliff", "Desert of Despair"],
+  "borders": ["Gnarra", "Waelin", "Malinval", "Shendarel", "Olda"],
+  "population": 900000,
+  "populationDistribution": [{
+    "race": "Grunt Orcs",
+    "proportion": 0.85
+  },
+  {
+    "race": "High Orcs",
+    "proportion": 0.08    
+  },
+  {
+    "race": "Sand Orcs",
+    "proportion": 0.03    
+  }],
+  "government": "The Western Independent Cities is less a nation than a recognition that the cities and towns in the area have become independent of Malinval and the other political entities that arose from the wreckage of the great war.",
+  "ruler": "",
+  "history": "The cities within the sliver of habitable land between the Desert of Despair and the Glass Cliff found after the end of the Great War that they were both uninteresting to the nations of the Alliance, and too far removed from Marinval to be controlled by the politically weak Warlord Grog. The local warlords met together in 1848 to declare a state of peace and determine borders of their individual influence, as well as a framework for handling disputes, and this agreement has successfully held since.",
+  "gods": ["Mat'raktha", "Sylvan"],
+  "worship": "Mat'raktha remains the singularly most important god in life in this region, however, the continuing influx of elven culture due to the new and regular trade with Waelin has caused a growing cult of Sylvan to form.",
+  "culture": "The culture in the region still primarily follows that of traditional orc culture, with trials by combat or other tests of strength, and leaders being those who were able to seize power. However, whisperings of change have crept in, with traditionally elven dances and foods finding their way into feast halls, and the relative peace allowing for roads, farms, and trade to flourish. Many now whisper of the possibility of power being held by the people themselves, a truly revolutionary idea.",
+  "economics": "The communities here are farming communities, taking advantage of fertile soil, plentiful rain, and warm weather to grow a wide variety of crops.",
+  "slavery": "Slavery is still present among the people here, however the relative peace has meant a reliance on breeding slaves instead of capturing them, and the peace treaty with the Alliance stipulated that all human, elf, and dwarf slaves had to be freed, so there are far fewer than there once were.",
+  "magic": "Magic is not a regular part of life in the region. There are no major schools of magic, and few sorcerous lines of decent.",
+  "property": "Property law follows the old traditions of the orcs, being granted to a family by the warlord to be held in perpetuity.",
+  "citizenship": "Citizenship rights are determined by the individual cities, but primarily it is determined by oaths of loyalty to the local lord."
+}

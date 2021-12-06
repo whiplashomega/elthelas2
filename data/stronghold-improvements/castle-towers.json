@@ -3,7 +3,7 @@
   "name": "Castle Towers",
   "benefit": "Provides additional defense for a castle, and rooms for 20 staff or guards",
   "staff": [{ "name": "Guard", "num": 5, "cur": 0 }],
-  "goldCost": 3000,
+  "goldCost": 300,
   "resourceCost": {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 20,
   "employs": 0,
   "operating": true,
-  "buildtime": 10,
+  "buildtime": 200,
   "prerequisites": [ "castle-wall" ],
   "hide": true,
   "count": 0,

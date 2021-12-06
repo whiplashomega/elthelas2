@@ -16,11 +16,11 @@ tags: [archivist, cleric, paladin, sorcerer, warlock, wizard, eldritchknight, le
 
 **Duration**: Concentration, up to 1 minute
 
-**Saving Throw**: Constitution
+**Saving Throw**: Charisma
 
-**Save For**: half damage
+**Save For**: no effect
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ ]
 
 You attempt to send one creature that you can see within range to another plane of existence. The target must succeed on a Charisma saving throw or be banished.
 

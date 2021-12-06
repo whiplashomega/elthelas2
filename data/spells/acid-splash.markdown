@@ -16,11 +16,11 @@ tags: [sorcerer, wizard, eldritchknight, artificer, cantrip, conjuration]
 
 **Duration**: Instantaneous
 
-**Saving Throw**: Constitution
+**Saving Throw**: Dexterity
 
-**Save For**: half damage
+**Save For**: no damage
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ { "dice": "1d6", label: "acid", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
 You hurl a bubble of acid. Choose one creature within range, or choose two creatures within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take 1d6 acid damage.
 

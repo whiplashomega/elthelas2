@@ -3,7 +3,7 @@
   "name": "Prison",
   "benefit": "Allows for keeping of up to 100 prisoners in a semi-secure building",
   "staff": [{ "name": "Prison Warden", "num": 1, "cur": 0 }, { "name": "Guard", "num": 4, "cur": 0 }],
-  "goldCost": 10000,
+  "goldCost": 1000,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 10,
+  "buildtime": 200,
   "prerequisites": [ "town" ],
   "hide": true,
   "count": 0,

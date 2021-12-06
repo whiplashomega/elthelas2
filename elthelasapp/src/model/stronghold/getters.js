@@ -30,10 +30,10 @@ export default {
         } else {
           return a.job.name === type;
         }
-      })[0];
-      if (match) {
-        total = Number(match.count);
-      }
+      }).reduce((a, b) => {
+        return a + b.count;
+      }, 0);
+      return match;
     }
     let assigned = state.current.improvements.reduce((total, imp) => {
       let match = imp.staff.filter((st) => {
@@ -48,7 +48,7 @@ export default {
     return Number(total) - Number(assigned);
   },
   availableStaffBeds: (state, getters) => {
-    return getters.staffBeds - (state.current.staff.length + Number(state.current.guards) + Number(state.current.servants) + state.current.privateEmployees.length);
+    return getters.staffBeds - (state.current.staff.length + state.current.privateEmployees.length);
   },
   bankRevenue: (state, getters) => {
     let bank = state.current.improvements.filter((a) => {
@@ -208,7 +208,6 @@ export default {
   },
   getPop: (state) => {
     let pop = Number(state.current.population.adults) + Number(state.current.population.children) + Number(state.current.population.invalid) + state.current.staff.length;
-    pop += Number(state.current.guards) + Number(state.current.servants);
     return pop;
   },
   getEmployable: (state) => {
@@ -307,11 +306,7 @@ export default {
     }, 0);
   },
   maxLaborers: (state, getters) => {
-    return Math.min(state.current.improvements.reduce((total, imp) => {
-      return total + Math.floor(imp.pop * imp.count * 0.7);
-    }, 0) + state.current.privateEnterprise.reduce((total, imp) => {
-      return total + Math.floor(imp.pop * imp.count * 0.7);
-    }, 0) - getters.privateLaborers, state.current.population.adults - getters.privateLaborers);
+    return state.current.population.adults - (getters.privateLaborers + state.current.servants + state.current.guards);
   },
   totalHousing: (state) => {
     return state.current.improvements.reduce((total, imp) => {
@@ -347,7 +342,7 @@ export default {
     let privateEnterpriseValue = state.current.privateEnterprise.reduce((total, imp) => {
       return total + imp.goldCost;
     }, 0);
-    return Math.round(state.current.laws.propertyTaxRate * privateEnterpriseValue * getters.taxEfficiency) / 100;
+    return Math.round(state.current.laws.propertyTaxRate * privateEnterpriseValue * getters.taxEfficiency) / 10;
   },
   resourceCost: (state) => {
     let resourceRevenue = 0;
@@ -559,7 +554,7 @@ export default {
     return Math.max(Math.round(unrest), 0);
   },
   nonstaffPop: (state, getters) => {
-    return getters.getPop - (state.current.staff.length + Number(state.current.guards) + Number(state.current.servants));
+    return getters.getPop - (state.current.staff.length);
   },
   urbanLand: (state) => {
     let land = 0;

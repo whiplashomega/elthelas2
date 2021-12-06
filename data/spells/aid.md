@@ -16,11 +16,11 @@ tags: [archivist, bard, cleric, ranger, paladin, artificer, level2, abjuration]
 
 **Duration**: 8 hours
 
-**Saving Throw**: Constitution
+**Saving Throw**: 
 
-**Save For**: half damage
+**Save For**: 
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: []
 
 Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target’s hit point maximum and current hit points increase by 5 for the duration.
 

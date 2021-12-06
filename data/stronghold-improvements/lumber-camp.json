@@ -3,7 +3,7 @@
   "name": "Lumber Camp",
   "benefit": "cuts trees for fun and profit",
   "staff": [{ "name": "Lumberjack Foreman", "num": 1, "cur": 0 }],
-  "goldCost": 750,
+  "goldCost": 75,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 10,
   "operating": true,
-  "buildtime": 5,
+  "buildtime": 100,
   "prerequisites": [ "new-land" ],
   "hide": true,
   "count": 0,

@@ -3,7 +3,7 @@
   "name": "General Store",
   "benefit": "sells common goods to the populace at large for profit",
   "staff": [{ "name": "Shopkeeper", "num": 1, "cur": 0 }],
-  "goldCost": 2000,
+  "goldCost": 200,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 1,
   "employs": 5,
   "operating": true,
-  "buildtime": 10,
+  "buildtime": 200,
   "prerequisites": [ "village" ],
   "hide": true,
   "count": 0,

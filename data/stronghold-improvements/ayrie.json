@@ -61,7 +61,7 @@
   "laborers": 0,
   "storage": 250,
   "operating": true,
-  "buildtime": 25,
+  "buildtime": 500,
   "prerequisites": [ "keep-expansion" ],
   "hide": true,
   "count": 0,

@@ -3,7 +3,7 @@
   "name": "Wizard College",
   "benefit": "provides a place where people can learn the arcane arts, makes it easier to recruit wizards and sorcerers, and collect tuition from the students",
   "staff": [{ "name": "Master Wizard", "num": 1, "cur": 0 }, { "name": "Wizard", "num": 1, "cur": 0 }],
-  "goldCost": 20000,
+  "goldCost": 2000,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 50,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 10,
   "operating": true,
-  "buildtime": 50,
+  "buildtime": 1000,
   "prerequisites": [ "wizard-tower", "town" ],
   "hide": true,
   "count": 0,

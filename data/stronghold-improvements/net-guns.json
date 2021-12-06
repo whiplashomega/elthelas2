@@ -3,7 +3,7 @@
   "name": "Net Guns",
   "benefit": "Specialized Ballistas that fire bola like nets to restrain opponents, particularly flying creatures.",
   "staff": [],
-  "goldCost": 500,
+  "goldCost": 50,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 5,
+  "buildtime": 100,
   "prerequisites": [ "ballista-emplacements" ],
   "hide": true,
   "count": 0,

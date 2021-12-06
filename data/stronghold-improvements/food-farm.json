@@ -3,7 +3,7 @@
   "name": "Food Farm",
   "benefit": "Grows food crops, enough to feed roughly 500 people",
   "staff": [{ "name": "Head Farmer", "num": 1, "cur": 0 }],
-  "goldCost": 1500,
+  "goldCost": 150,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 1,
   "employs": 40,
   "operating": true,
-  "buildtime": 10,
+  "buildtime": 200,
   "prerequisites": [ "clear-land" ],
   "hide": true,
   "count": 0,

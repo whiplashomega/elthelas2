@@ -16,11 +16,11 @@ tags: [archivist, bard, druid, sorcerer, wizard, level4, enchantment]
 
 **Duration**: Concentration, up to 1 minute
 
-**Saving Throw**: Constitution
+**Saving Throw**: Wisdom
 
-**Save For**: half damage
+**Save For**: no effect
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: []
 
 This spell assaults and twists creatures' minds, spawning delusions and provoking uncontrolled action. Each creature in a 10-foot radius sphere centered on a point you choose within range must succeed on a Wisdom saving throw when you cast this spell or by affected by it.
 

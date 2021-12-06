@@ -3,7 +3,7 @@
   "name": "Road",
   "benefit": "reduces travel time to nearby towns by 50%.",
   "staff": [ ],
-  "goldCost": 10000,
+  "goldCost": 1000,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 20,
+  "buildtime": 400,
   "prerequisites": [ ],
   "hide": true,
   "count": 0,

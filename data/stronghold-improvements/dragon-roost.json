@@ -3,7 +3,7 @@
   "name": "Dragon Roost",
   "benefit": "Provides a home for an adult or lesser dragon, dragon not included, cost largely reflects providing a starting horde for the dragon",
   "staff": [{ "name": "Servant", "num": 5, "cur": 0 }],
-  "goldCost": 30000,
+  "goldCost": 3000,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 10,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 60,
+  "buildtime": 1200,
   "prerequisites": [ "wizard-tower" ],
   "hide": true,
   "count": 0,

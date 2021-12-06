@@ -1,17 +1,17 @@
 {
   "name": "Strovenguard",
   "nation": "Gerasalim",
-  "population": 30000,
+  "population": 20000,
   "metro": 50000,
   "majority": "Imperial Human",
-  "ruling": "High Orc",
+  "ruling": "Imperial Human",
   "minorities": [
-    "High Orc",
-    "Grunt Orc",
-    "Goblin"
+    "lightfoot halflings",
+    "half elves",
+    "goblin"
   ],
   "exports": [],
   "landmarks": [],
   "coords": [56.54169395462707, 71.0360788090438],
-  "description": "The once mighty capitol of Gerasalim is today an occupied city. It was the last major city in Gerasalim to put up serious resistance against the Orcs, but the city had not had to withstand a siege for hundreds of years due to the valiant efforts of Gerasalim's armies further south, and had long since expanded beyond it's walls, leaving the population vulnerable to attack. The queen rallied her armies to fight, but eventually was forced to retreat, abandoning the city and most of its population to the orcs. Before the city fell it was known far and wide as a center of learning in engineering and arcana."
+  "description": "Strovenguard, like Gerasalim as a whole, has undertaken the slow road to recovery after the Great War. The strangest difference is probably the large population of newly liberated, once enslaved goblins who now call the city home. Nevertheless, resources are few, and the manpower of Gerasalim has been stretched to the breaking point. It will take many years before the grand borderland kingdom is able to defend itself without aid."
 }

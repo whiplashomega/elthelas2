@@ -3,7 +3,7 @@
   "name": "Clinic",
   "benefit": "Cleric employed heals 4d6 people per day.",
   "staff": [{ "name": "Cleric", "num": 1, "cur": 0 }],
-  "goldCost": 2000,
+  "goldCost": 200,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 1,
   "employs": 2,
   "operating": true,
-  "buildtime": 15,
+  "buildtime": 300,
   "prerequisites": [ "village" ],
   "hide": true,
   "count": 0,

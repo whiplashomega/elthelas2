@@ -16,11 +16,11 @@ tags: [archivist, cleric, wizard, level8, abjuration]
 
 **Duration**: Concentration, up to 1 hour
 
-**Saving Throw**: Constitution
+**Saving Throw**: 
 
-**Save For**: half damage
+**Save For**:
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ ]
 
 A 10-foot-radius invisible sphere of antimagic surrounds you. This area is divorced from the magical energy that suffuses the multiverse. Within the sphere, spells can't be cast, summoned creatures disappear, and even magic items become mundane. Until the spell ends, the sphere moves with you, centered on you.
 

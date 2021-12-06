@@ -3,7 +3,7 @@
   "name": "Barracks",
   "benefit": "Housing for soldiers, includes beds for 50 staff",
   "staff": [{ "name": "Captain", "num": 1, "cur": 0 }],
-  "goldCost": 2000,
+  "goldCost": 200,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 50,
   "employs": 0,
   "operating": true,
-  "buildtime": 20,
+  "buildtime": 400,
   "prerequisites": [ "keep" ],
   "hide": true,
   "count": 0,

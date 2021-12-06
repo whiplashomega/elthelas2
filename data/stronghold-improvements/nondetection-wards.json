@@ -3,7 +3,7 @@
   "name": "Nondetection Wards",
   "benefit": "Using the ley line connection of the wizard tower, create a field of nondetection around the keep",
   "staff": [{ "name": "Wizard (Illusionist)", "num": 0, "cur": 0 }],
-  "goldCost": 2000,
+  "goldCost": 200,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 20,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 10,
+  "buildtime": 200,
   "prerequisites": [ "wizard-tower" ],
   "hide": true,
   "count": 0,

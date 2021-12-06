@@ -3,7 +3,7 @@
   "name": "Hotel",
   "benefit": "A large hotel capable of serving a large clientelle.",
   "staff": [{ "name": "Innkeeper", "num": 1, "cur": 0 }, { "name": "Bard", "num": 2, "cur": 0 }],
-  "goldCost": 6000,
+  "goldCost": 600,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 30,
   "operating": true,
-  "buildtime": 15,
+  "buildtime": 300,
   "prerequisites": [ "additional-district" ],
   "hide": true,
   "count": 0,

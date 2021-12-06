@@ -18,9 +18,9 @@ tags: [paladin, eldritchknight, level3, evocation]
 
 **Saving Throw**: Constitution
 
-**Save For**: half damage
+**Save For**: not blinded
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ { "dice": "3d8", label: "radiant", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
 The next time you hit a creature with a melee weapon attack during this spell’s duration, your weapon flares with bright light, and the attack deals an extra 3d8 radiant damage to the target. Additionally, the target must succeed on a Constitution saving throw or be blinded until the spell ends.
 

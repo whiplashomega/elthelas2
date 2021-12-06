@@ -16,11 +16,11 @@ tags: [druid, level8, transmutation]
 
 **Duration**: Concentration, up to 24 hours
 
-**Saving Throw**: Constitution
+**Saving Throw**: 
 
-**Save For**: half damage
+**Save For**: 
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ ]
 
 Your magic turns others into beasts. Choose any number of willing creatures that you can see within range. You transform each target into the form of a Large or smaller beast with a challenge rating of 4 or lower.  On subsequent turns, you can use your action to transform affected creatures into new forms.
 

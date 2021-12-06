@@ -3,7 +3,7 @@
   "name": "Clear Land",
   "benefit": "Turn 1 km^2 of forested land into cleared land appropriate for farming.",
   "staff": [],
-  "goldCost": 3000,
+  "goldCost": 0,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 10,
+  "buildtime": 600,
   "prerequisites": [ "new-land" ],
   "hide": true,
   "count": 0,

@@ -20,7 +20,7 @@ tags: [sorcerer, level1, evocation]
 
 **Save For**: half damage
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ { "dice": "2d8", label: "random", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" },  { "dice": "1d6", label: "random", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d6" }  ]
 
 You hurl an undulating, warbling mass of chaotic energy at one creature in range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 + 1d6 damage. Choose one of the d8s. The number rolled on that die determines the attacks damage type, as shown below.
 

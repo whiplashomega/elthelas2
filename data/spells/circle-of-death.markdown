@@ -20,7 +20,7 @@ tags: [sorcerer, warlock, wizard, level6, necromancy]
 
 **Save For**: half damage
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ { "dice": "8d6", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "2d6" } ]
 
 A sphere of negative energy ripples out in a 60-foot- radius sphere from a point within range. Each creature in that area must make a Constitution saving throw. A target takes 8d6 necrotic damage on a failed save, or half as much damage on a successful one.
 

@@ -3,7 +3,7 @@
   "name": "Outer Wall Defensive Towers",
   "benefit": "Defensive Towers for the Outer Town Wall",
   "staff": [{ "name": "Guard", "num": 30, "cur": 0 }],
-  "goldCost": 12000,
+  "goldCost": 1200,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 50,
   "employs": 0,
   "operating": true,
-  "buildtime": 40,
+  "buildtime": 800,
   "prerequisites": [ "outer-wall" ],
   "hide": true,
   "count": 0,

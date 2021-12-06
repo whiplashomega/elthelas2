@@ -3,7 +3,7 @@
   "name": "Harbor",
   "benefit": "provides a place for ships to dock, provides tax revenue from ships docking fees, triples your export limit.",
   "staff": [{ "name": "Harbormaster", "num": 1, "cur": 0 }],
-  "goldCost": 6000,
+  "goldCost": 600,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 40,
   "operating": true,
-  "buildtime": 20,
+  "buildtime": 400,
   "prerequisites": [ "town" ],
   "hide": true,
   "count": 0,

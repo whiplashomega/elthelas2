@@ -3,7 +3,7 @@
   "name": "Inner Walls",
   "benefit": "A simple stone wall that provides basic defenses for the central village",
   "staff": [{ "name": "Guard", "num": 20, "cur": 0 }],
-  "goldCost": 12000,
+  "goldCost": 1200,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 45,
+  "buildtime": 900,
   "prerequisites": [ "village" ],
   "hide": true,
   "count": 0,

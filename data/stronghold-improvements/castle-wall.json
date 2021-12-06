@@ -3,7 +3,7 @@
   "name": "Castle Wall",
   "benefit": "Provides additional line of defense for castle buildings",
   "staff": [{ "name": "Guard", "num": 10, "cur": 0 }],
-  "goldCost": 6000,
+  "goldCost": 600,
   "resourceCost": {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 15,
+  "buildtime": 300,
   "prerequisites": [ "keep" ],
   "hide": true,
   "count": 0,

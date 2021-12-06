@@ -3,7 +3,7 @@
   "name": "Armory",
   "benefit": "A specialized shop for skilled smiths to work exclusively on weapons and armor. Allows players to buy weapons and armor at a discount. Also capable of working with specialty materials.",
   "staff": [{ "name": "Blacksmith", "num": 3, "cur": 0 }],
-  "goldCost": 5000,
+  "goldCost": 500,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 12,
   "operating": true,
-  "buildtime": 10,
+  "buildtime": 200,
   "prerequisites": [ "town" ],
   "hide": true,
   "count": 0,

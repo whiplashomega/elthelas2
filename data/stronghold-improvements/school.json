@@ -3,7 +3,7 @@
   "name": "School",
   "benefit": "a school house where local children can learn their letters and numbers",
   "staff": [{ "name": "Teacher", "num": 1, "cur": 0 }],
-  "goldCost": 1000,
+  "goldCost": 100,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -72,7 +72,7 @@
   "staffpop": 1,
   "employs": 0,
   "operating": true,
-  "buildtime": 15,
+  "buildtime": 300,
   "prerequisites": [ "village" ],
   "hide": true,
   "count": 0,

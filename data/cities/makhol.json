@@ -1,17 +1,23 @@
 {
   "name": "Mak'hol",
-  "nation": "Malinval",
-  "population": 0,
-  "metro": 0,
+  "nation": "Western Independent Cities",
+  "population": 30000,
+  "metro": 70000,
   "majority": "Grunt Orcs",
   "ruling": "High Orcs",
   "minorities": [
     "Goblins",
     "Hobgoblins",
-    "Gnolls"
+    "Gnolls",
+    "Wood Elves"
   ],
   "exports": [],
-  "landmarks": [],
+  "landmarks": [
+   {
+     "name": "The Glass Elevator",
+     "description": "Not made of glass at all, but named for the fact that it sits astride the Glass Cliff, this magically powered elevator has enabled regular trade between Mak'hol and Waelin for the first time."
+   }  
+  ],
   "coords": [32.7786152973071, 28.654223186830727],
-  "description": ""
+  "description": "Mak'hol was founded milennia ago as a forward base by enterprising orc warlords who hoped to scale the glass cliff and invade Eldoran (now Waelin). While many attempted it, and some even got their troops to the top, the lack of ability to resupply doomed every campaign from the start. Yet the city remained, scraping by on limited resources. The diverted rainfall from the Desert of Despair gave the city sufficient rain to become self sufficient. With the collapse of Malinval following the great war, Mak'hol stands as an independent city state, and enterprising elvish and orcish artificers have recently constructed a large magically powered elevator capable of ferrying people and goods up and down the cliff face, combined with the lack of outside influence from the other orc territories, this has made Mak'hol a surprisingly accepting place among orc cities of outsiders, and also surprisingly cosmopolitan, as more and more aspects of elven culture make their way into Mak'hol society."
 }

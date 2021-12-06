@@ -3,7 +3,7 @@
   "name": "Dungeon",
   "benefit": "allows for keeping of up to 20 prisoners",
   "staff": [{ "name": "Prison Warden", "num": 1, "cur": 0 }],
-  "goldCost": 5000,
+  "goldCost": 500,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 10,
+  "buildtime": 200,
   "prerequisites": [ "keep" ],
   "hide": true,
   "count": 0,

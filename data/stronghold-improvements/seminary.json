@@ -3,7 +3,7 @@
   "name": "Seminary",
   "benefit": "provide a place where people can learn the clerical arts, makes it easier to recruit clerics as followers, and collecting tuition from students",
   "staff": [{ "name": "Cleric", "num": 3, "cur": 0 }],
-  "goldCost": 20000,
+  "goldCost": 2000,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 50,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 20,
   "operating": true,
-  "buildtime": 50,
+  "buildtime": 1000,
   "prerequisites": [ "temple" ],
   "hide": true,
   "count": 0,

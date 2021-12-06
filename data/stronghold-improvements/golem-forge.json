@@ -3,7 +3,7 @@
   "name": "Golem Forge",
   "benefit": "Provides tools to construct golems and other constructs, cost to create golems reduced by 30%",
   "staff": [{ "name": "Artificer", "num": 0, "cur": 0 }],
-  "goldCost": 5000,
+  "goldCost": 500,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 50,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 30,
+  "buildtime": 600,
   "prerequisites": [ "wizard-tower" ],
   "hide": true,
   "count": 0,

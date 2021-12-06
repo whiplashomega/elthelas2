@@ -3,7 +3,7 @@
   "name": "Bard College",
   "benefit": "A small college for bards, teaching students of the bardic school of the players choice, and collecting sizable tuitions from students",
   "staff": [{ "name": "Bard", "num": 3, "cur": 0 }],
-  "goldCost": 20000,
+  "goldCost": 2000,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 50,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 20,
   "operating": true,
-  "buildtime": 50,
+  "buildtime": 1000,
   "prerequisites": [ "theater" ],
   "hide": true,
   "count": 0,

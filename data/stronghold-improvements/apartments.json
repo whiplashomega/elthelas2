@@ -3,7 +3,7 @@
   "name": "Apartments",
   "benefit": "multistory tenement housing.",
   "staff": [],
-  "goldCost": 2000,
+  "goldCost": 200,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 20,
+  "buildtime": 400,
   "prerequisites": [ ],
   "hide": true,
   "count": 0,

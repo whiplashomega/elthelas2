@@ -23,7 +23,6 @@ export default {
       stronghold: 'stronghold',
       totalStorage: 'totalStorage',
       unrest: 'unrest',
-      exportLimit: 'exportLimit',
       usedStorage: 'usedStorage',
       userinfo: "getUserInfo",
       totalHousing: "totalHousing",
@@ -44,6 +43,7 @@ export default {
   methods: {
     ...mapActions({
       newStronghold: 'newStronghold',
+      buyResource: 'buyResource',
       getStrongholds: 'getStrongholds',
       loadStronghold: 'loadStronghold',
       loadStrongholdById: 'loadStrongholdById',
@@ -90,7 +90,22 @@ export default {
       let finished = [];
       // increment items under construction
       this.stronghold.construction.forEach((imp) => {
-        imp.buildtime -= 1;
+        if (!imp.laborersassigned) {
+          imp.laborersassigned = 0;
+        }
+        let amountconstructed = Number(imp.laborersassigned);
+        let percentdone = amountconstructed / imp.buildtime;
+
+        if (!imp.private && !imp.dmGift) {
+          for (var key in imp.resourceCost) {
+            this.stronghold.resources[key] -= imp.resourceCost[key] * percentdone;
+            if (this.stronghold.resources[key] < 0) {
+              this.buyResource({ type: key, amount: this.stronghold.resources[key] * -1 });
+            }
+            imp.resourceCost[key] -= imp.resourceCost[key] * percentdone;
+          }
+        }
+        imp.buildtime -= amountconstructed;
         if (imp.buildtime <= 0) {
           finished.push(imp);
           this.addImprovement(imp);

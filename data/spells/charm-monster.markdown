@@ -16,11 +16,11 @@ tags: [bard, druid, sorcerer, warlock, wizard, level4, enchantment]
 
 **Duration**: 1 hour
 
-**Saving Throw**: Constitution
+**Saving Throw**: Wisdom
 
-**Save For**: half damage
+**Save For**: no effect
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: []
 
 You attempt to charm a creature you can see within range. It must make a Wisdom saving throw, and it does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature is friendly to you. When the spell ends, the creature knows it was charmed by you.
 

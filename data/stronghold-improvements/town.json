@@ -3,7 +3,7 @@
   "name": "Town",
   "benefit": "build out from a village to a larger town, with housing for up to 1000 people and paved roads to facilitate commerce within the town",
   "staff": [{ "name": "Steward", "num": 0, "cur": 0 }],
-  "goldCost": 15000,
+  "goldCost": 1500,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 40,
+  "buildtime": 800,
   "prerequisites": [ "village" ],
   "hide": true,
   "count": 0,

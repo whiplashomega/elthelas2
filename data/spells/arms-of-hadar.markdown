@@ -16,11 +16,11 @@ tags: [warlock, level1, conjuration]
 
 **Duration**: Instantaneous
 
-**Saving Throw**: Constitution
+**Saving Throw**: Strength
 
-**Save For**: half damage
+**Save For**: half damage and no other effect
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ { "dice": "2d6", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d6" } ]
 
 You invoke the power of Hadar, the Dark Hunger. Tendrils of dark energy erupt from you and batter all creatures within 10 feet of you. Each creature in that area must make a Strength saving throw. On a failed save, a target takes 2d6 necrotic damage and can't take reactions until its next turn. On a successful save, the creature takes half damage, but suffers no other effect.
 

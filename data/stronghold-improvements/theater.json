@@ -3,7 +3,7 @@
   "name": "Theater",
   "benefit": "A theater for the performing arts, collects fees from shows that wish to perform there",
   "staff": [{ "name": "Steward", "num": 0, "cur": 0 }, { "name": "Bard", "num": 2, "cur": 0 }],
-  "goldCost": 3000,
+  "goldCost": 300,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 30,
   "operating": true,
-  "buildtime": 20,
+  "buildtime": 400,
   "prerequisites": [ "town" ],
   "hide": true,
   "count": 0,

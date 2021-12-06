@@ -16,11 +16,11 @@ tags: [bard, sorcerer, wizard, level1, illusion]
 
 **Duration**: 1 round
 
-**Saving Throw**: Constitution
+**Saving Throw**: 
 
-**Save For**: half damage
+**Save For**: 
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ { "dice": "6d10", label: "effected hp", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "2d10" } ]
 
 A dazzling array of flashing, colored light springs from your hand. Roll 6d10; the total is how many hit points of creatures this spell can effect. Creatures in a 15-foot cone originating from you are affected in ascending order of their current hit points (ignoring unconscious creatures and creatures that can't see).
 

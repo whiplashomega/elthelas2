@@ -16,11 +16,11 @@ tags: [druid, level3, conjuration]
 
 **Duration**: Concentration, up to 10 minutes
 
-**Saving Throw**: Constitution
+**Saving Throw**: Dexterity
 
 **Save For**: half damage
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ { "dice": "3d10", label: "lightning", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d10" } ]
 
 A storm cloud appears in the shape of a cylinder that is 10 feet tall with a 60-foot radius, centered on a point you can see 100 feet directly above you. The spell fails if you can’t see a point in the air where the storm cloud could appear (for example, if you are in a room that can’t accommodate the cloud).
 

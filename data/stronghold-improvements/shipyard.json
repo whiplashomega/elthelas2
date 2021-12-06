@@ -3,7 +3,7 @@
   "name": "Shipyard",
   "benefit": "Builds riverboats, takes about a week to build one boat (sales are not automated)",
   "staff": [{ "name": "Blacksmith", "num": 1, "cur": 0 }, { "name": "Shipbuilder", "num": 1, "cur": 0 }],
-  "goldCost": 5000,
+  "goldCost": 500,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 40,
   "operating": true,
-  "buildtime": 20,
+  "buildtime": 400,
   "prerequisites": [ "harbor" ],
   "hide": true,
   "count": 0,

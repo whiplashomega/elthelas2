@@ -1,7 +1,7 @@
 {
   "id": "additional-district",
   "name": "Additional District",
-  "goldCost": 10000,
+  "goldCost": 1000,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "storage": 3125,
   "employs": 0,
   "operating": true,
-  "buildtime": 50,
+  "buildtime": 1000,
   "prerequisites": [ "town" ],
   "hide": true,
   "count": 0,

@@ -1,13 +1,19 @@
 {
   "name": "Milan",
   "nation": "Eldoran",
-  "population": 0,
-  "metro": 0,
+  "population": 40000,
+  "metro": 100000,
   "majority": "High Elves",
   "ruling": "High Elves",
-  "minorities": [],
+  "minorities": [
+    "Wood Elves",
+    "Moon Elves",
+    "Dwarves",
+    "Neran Humans",
+    "Imperial Humans"
+  ],
   "exports": [],
   "landmarks": [],
   "coords": [54.80741287246441, -1.5937857432947935],
-  "description": ""
+  "description": "Second city of the elves, while it is not the seat of government, Milan is the largest and most economically important of the cities of Eldoran, acting as the gateway to the continental powers."
 }

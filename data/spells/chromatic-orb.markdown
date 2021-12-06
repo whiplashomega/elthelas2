@@ -16,11 +16,11 @@ tags: [sorcerer, wizard, eldritchknight, level1, evocation]
 
 **Duration**: Instantaneous
 
-**Saving Throw**: Constitution
+**Saving Throw**: 
 
-**Save For**: half damage
+**Save For**: 
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ { "dice": "3d8", label: "acid, cold, fire, lightning, poison, or thunder", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d8" } ]
 
 You hurl a 4-inch-diameter sphere of energy at a creature that you can see within range. You choose acid, cold, fire, lightning, poison, or thunder for the type of orb you create, and then make a ranged spell attack against the target. If the attack hits, the creature takes 3d8 of the type you chose.
 

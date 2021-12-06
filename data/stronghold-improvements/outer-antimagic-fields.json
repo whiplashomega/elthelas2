@@ -3,7 +3,7 @@
   "name": "Outer Wall Antimagic Fields",
   "benefit": "protects the town wall from magical attacks",
   "staff": [{ "name": "Wizard", "num": 0, "cur": 0 }],
-  "goldCost": 15000,
+  "goldCost": 1500,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 225,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 15,
+  "buildtime": 300,
   "prerequisites": [ "outer-defensive-towers" ],
   "hide": true,
   "count": 0,

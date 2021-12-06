@@ -1,0 +1,16 @@
+{
+  "name": "She'dal",
+  "nation": "Hisru'de'tan",
+  "population": 10000,
+  "metro": 120000,
+  "majority": "Hisru Human",
+  "ruling": "Hisru Human",
+  "minorities": [
+    "Stagen Gnome",
+    "Strongheart Halfling"
+  ],
+  "exports": [],
+  "landmarks": [],
+  "coords": [-28.139210427489065, -61.00999284098068],
+  "description": "The ancient ceremonial capitol of Hisru'de'tan is small and poor as cities go. It serves as a central site for the nomadic tribes to meet and decide matters of government, but it is poorly placed in the middle of a wide plain with no major rivers nearby."
+}

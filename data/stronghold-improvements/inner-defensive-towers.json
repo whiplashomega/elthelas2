@@ -3,7 +3,7 @@
   "name": "Inner Wall Defensive Towers",
   "benefit": "provides additional defenses for the central village",
   "staff": [{ "name": "Guard", "num": 10, "cur": 0 }],
-  "goldCost": 6000,
+  "goldCost": 600,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 30,
   "employs": 0,
   "operating": true,
-  "buildtime": 30,
+  "buildtime": 600,
   "prerequisites": [ "inner-wall" ],
   "hide": true,
   "count": 0,

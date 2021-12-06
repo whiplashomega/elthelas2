@@ -3,7 +3,7 @@
   "name": "Carpenter's Shop",
   "benefit": "Sells furniture.",
   "staff": [{ "name": "Carpenter", "num": 1, "cur": 0 }, { "name": "Factory Foreman", "num": 1, "cur": 0 }],
-  "goldCost": 8000,
+  "goldCost": 800,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 30,
   "operating": true,
-  "buildtime": 10,
+  "buildtime": 200,
   "prerequisites": [ "town" ],
   "hide": true,
   "count": 0,

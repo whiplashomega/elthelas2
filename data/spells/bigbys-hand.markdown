@@ -20,7 +20,7 @@ tags: [sorcerer, wizard, artificer, level5, evocation]
 
 **Save For**: half damage
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ { "dice": "2d6", label: "bludgeoning", "damagebonus": 0, "addstat": true, "prof": false, "higherlevels": "" }, { "dice": "4d8", label: "force", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
 You create a Large hand of shimmering, translucent force in an unoccupied space that you can see within range. The hand lasts for the spell's duration, and it moves at your command, mimicking the movements of your own hand. 
 

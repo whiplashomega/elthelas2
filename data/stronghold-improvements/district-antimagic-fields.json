@@ -3,7 +3,7 @@
   "name": "District Wall Antimagic Fields",
   "benefit": "protects an additional district wall from magical attacks",
   "staff": [{ "name": "Wizard", "num": 0, "cur": 0 }],
-  "goldCost": 15000,
+  "goldCost": 1500,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 170,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 15,
+  "buildtime": 300,
   "prerequisites": [ "district-wall-towers" ],
   "hide": true,
   "count": 0,

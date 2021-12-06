@@ -1,13 +1,17 @@
 {
   "name": "Storval",
   "nation": "Waelin",
-  "population": 0,
-  "metro": 0,
-  "majority": "",
-  "ruling": "",
-  "minorities": [],
+  "population": 20000,
+  "metro": 60000,
+  "majority": "Wood Elves",
+  "ruling": "Wood Elves",
+  "minorities": [
+    "High Elves",
+    "Moon Elves",
+    "Plains Dwarves"
+  ],
   "exports": [],
   "landmarks": [],
   "coords": [57.38023140837621, 30.45618788307487],
-  "description": ""
+  "description": "Storval sits near the end of the Elven occupied portion of the Sindi Ohta, and has been heavily involved in all of the Mithril wars. Storval was the staging base for the elven armies in the Mithril hills throughout the wars, and in times of peace becomes a trading hub with Curinor."
 }

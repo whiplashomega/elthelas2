@@ -3,7 +3,7 @@
   "name": "Airship Dock",
   "benefit": "A tall tower with moorings and a gangplank for docking an airship.",
   "staff": [{ "name": "Harbormaster", "num": 1, "cur": 0 }, { "name": "Airship Crew", "num": 5, "cur": 0 }],
-  "goldCost": 3000,
+  "goldCost": 300,
   "resourceCost": {
     "alcohol": 0,
     "arcanum": 2,
@@ -61,7 +61,7 @@
   "staffpop": 7,
   "employs": 0,
   "operating": true,
-  "buildtime": 10,
+  "buildtime": 200,
   "prerequisites": [ "keep" ],
   "hide": true,
   "count": 0,

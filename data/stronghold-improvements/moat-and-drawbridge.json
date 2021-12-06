@@ -3,7 +3,7 @@
   "name": "Moat and Drawbridge",
   "benefit": "Provides additional protection from assault",
   "staff": [{ "name": "Guard", "num": 5, "cur": 0 }],
-  "goldCost": 8000,
+  "goldCost": 800,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 20,
+  "buildtime": 400,
   "prerequisites": [ "castle-wall" ],
   "hide": true,
   "count": 0,

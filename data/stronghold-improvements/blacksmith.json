@@ -3,7 +3,7 @@
   "name": "Blacksmith",
   "benefit": "Sells finished goods such as horseshoes and nails to the public at large, can create basic weapons and armor.",
   "staff": [{ "name": "Blacksmith", "num": 1, "cur": 0 }],
-  "goldCost": 2000,
+  "goldCost": 200,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 5,
   "operating": true,
-  "buildtime": 10,
+  "buildtime": 200,
   "prerequisites": [ "village" ],
   "hide": true,
   "count": 0,

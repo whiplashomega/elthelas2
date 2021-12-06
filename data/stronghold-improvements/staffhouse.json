@@ -3,7 +3,7 @@
   "name": "Staff House",
   "benefit": "Build an additional house for staff (or party) members to live in",
   "staff": [],
-  "goldCost": 400,
+  "goldCost": 40,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 2,
   "employs": 0,
   "operating": true,
-  "buildtime": 5,
+  "buildtime": 100,
   "prerequisites": [ ],
   "hide": true,
   "count": 0,

@@ -3,7 +3,7 @@
   "name": "Fort",
   "benefit": "A small countryside fortification to keep watch over outlying lands.",
   "staff": [{ "name": "Guard", "num": 5, "cur": 0 }],
-  "goldCost": 2000,
+  "goldCost": 200,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 5,
   "employs": 0,
   "operating": true,
-  "buildtime": 15,
+  "buildtime": 300,
   "prerequisites": [ ],
   "hide": true,
   "count": 0,

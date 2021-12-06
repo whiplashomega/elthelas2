@@ -3,7 +3,7 @@
   "name": "Planar Gate",
   "benefit": "Create  a permanent planar gate to a particular plane of existence",
   "staff": [{ "name": "Archmage (Conjurer)", "num": 0, "cur": 0 }],
-  "goldCost": 20000,
+  "goldCost": 2000,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 20,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 10,
+  "buildtime": 200,
   "prerequisites": [ "wizard-tower" ],
   "hide": true,
   "count": 0,

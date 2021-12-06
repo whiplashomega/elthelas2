@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 365,
+  "buildtime": 1,
   "prerequisites": [ "keep" ],
   "hide": true,
   "count": 0,

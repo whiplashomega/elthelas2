@@ -1,8 +1,8 @@
 {
   "name": "Northport",
   "nation": "Gerasalim",
-  "population": 25000,
-  "metro": 55000,
+  "population": 10000,
+  "metro": 25000,
   "majority": "Imperial Humans",
   "ruling": "Imperial Humans",
   "minorities": [
@@ -18,5 +18,5 @@
   "landmarks": [],
   "coords": [65.75347700465251, 70.96268024462917],
   "map": "https://elthelas-images.herokuapp.com/maps/cities/northport.jpg",
-  "description": "Northport was the last standing major city in Gerasalim, flush with refugees from the south before a heroic evacuation effort that transplanted the tens of thousands of citizens and refugees north to Cur'Estan.  The city is now occupied by the orcs, even if there is no one really left of the original inhabitants. Nevertheless to all appearances the orcs intend to use the city as a staging base for incursions further north."
+  "description": "Northport was the last standing major city in Gerasalim, flush with refugees from the south before a heroic evacuation effort that transplanted the tens of thousands of citizens and refugees north to Cur'Estan in the Great War. As the southernmost navigable port on the Kandor River, it has been a major trade hub for as long as the area has been inhabited. Today the population is greatly reduced from what it once was, as opportunity slowly brings people back to the area."
 }

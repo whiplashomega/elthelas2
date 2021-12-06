@@ -1,8 +1,8 @@
 {
   "name": "Kelas",
   "nation": "Staelia",
-  "population": 0,
-  "metro": 0,
+  "population": 8000,
+  "metro": 22000,
   "majority": "Staelic Human",
   "ruling": "Staelic Human",
   "minorities": [
@@ -11,5 +11,5 @@
   "exports": [],
   "landmarks": [],
   "coords": [-49.11657961817909, -50.883581369351525],
-  "description": ""
+  "description": "The fortress city of Kelas is celebrated in stories for the many sieges and raids it endures. Existing in a state of constant war with the regularly migrating monsters from the Gorgro plateau, every soldier and knight of Staelia has served his time in Kelas. The city is built entirely around this martial enterprise, where houses have arrow slits instead of windows and all the buildings are made of stone. The walls are thick and high. The local wizards college, small as it is, is entirely dedicated to the training and supply of combat casters. Every blacksmith is trained in the making of weapons and armor, and overall every aspect of life is dedicated to war."
 }

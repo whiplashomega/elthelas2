@@ -3,7 +3,7 @@
   "name": "Village",
   "benefit": "build out a small village around your castle where people can live, with houses for up to 200 people",
   "staff": [{ "name": "Steward", "num": 0, "cur": 0 }],
-  "goldCost": 6000,
+  "goldCost": 600,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 20,
+  "buildtime": 400,
   "prerequisites": [ ],
   "hide": true,
   "count": 0,

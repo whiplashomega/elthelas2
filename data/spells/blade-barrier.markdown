@@ -16,11 +16,11 @@ tags: [cleric, level6, evocation]
 
 **Duration**: Concentration, up to 10 minutes
 
-**Saving Throw**: Constitution
+**Saving Throw**: Dexterity
 
 **Save For**: half damage
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ { "dice": "6d10", label: "slashing", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
 You create a vertical wall of whirling, razor-sharp blades made of magical energy. The wall appears within range and lasts for the duration. You can make a straight wall up to 100 feet long, 20 feet high, and 5 feet thick, or a ringed wall up to 60 feet in diameter, 20 feet high, and 5 feet thick. The wall provides three-quarters cover to creatures behind it, and its space is difficult terrain.
 

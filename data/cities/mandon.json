@@ -1,13 +1,18 @@
 {
   "name": "Mandon",
   "nation": "Zelfir",
-  "population": 0,
-  "metro": 0,
-  "majority": "",
-  "ruling": "",
-  "minorities": [],
+  "population": 40000,
+  "metro": 80000,
+  "majority": "Hisru Human",
+  "ruling": "Hisru Human",
+  "minorities": [
+    "Staelic Human",
+    "Morrind Dwarves",
+    "Strongheart Halflings",
+    "Deran Humans"
+  ],
   "exports": [],
   "landmarks": [],
   "coords": [-34.40634314091265, -79.47669954833945],
-  "description": ""
+  "description": "The primary port of Zelfir on the Dragon Sea, Mandon is a major trading hub connecting Zelfir to the broader world. While the isolation of the Dragon Sea means it lacks the strategic importance of other major trading hubs, the ability to access the knowledge and resources of Zelfir is more than enough for many trading companies to risk the voyage, drawing merchants from Dera'Dragorim, Eldoran, and Morrindim."
 }

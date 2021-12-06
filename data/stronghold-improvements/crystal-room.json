@@ -3,7 +3,7 @@
   "name": "Crystal Room",
   "benefit": "The mirrored walls of this room can be used to scry on any place within 5 miles",
   "staff": [ { "name": "Master Wizard (Diviner)", "num": 0, "cur": 0 } ],
-  "goldCost": 5000,
+  "goldCost": 500,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 25,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 20,
+  "buildtime": 400,
   "prerequisites": [ "wizard-tower" ],
   "hide": true,
   "count": 0,

@@ -3,7 +3,7 @@
   "name": "Castle Antimagic Fields",
   "benefit": "protects the castle walls from magical attacks",
   "staff": [{ "name": "Wizard", "num": 0, "cur": 0 }],
-  "goldCost": 4000,
+  "goldCost": 400,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 50,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 10,
+  "buildtime": 200,
   "prerequisites": [ "castle-towers" ],
   "hide": true,
   "count": 0,

@@ -16,11 +16,11 @@ tags: [artificer, sorcerer, warlock, wizard, eldritchknight, cantrip, evocation]
 
 **Duration**: 1 round
 
-**Saving Throw**: Constitution
+**Saving Throw**: 
 
-**Save For**: half damage
+**Save For**: 
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ { "dice": "1d8", label: "thunder", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d8" }, { "dice": "0", label: "thunder", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d8" } ]
 
 You brandish the weapon used in the spell's casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack's normal effects and then becomes sheathed in booming energy until the start of your next turn. If the target willingly moves 5 feet or more before then, the target takes 1d8 thunder damage, and the spell ends.
 

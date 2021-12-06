@@ -20,7 +20,7 @@ tags: [sorcerer, wizard, level5, conjuration]
 
 **Save For**: half damage
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ { "dice": "5d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d8" } ]
 
 You create a 20-foot-radius sphere of poisonous, yellow-green fog centered on a point you choose within range. The fog spreads around corners. It lasts for the duration or until strong wind disperses the fog, ending the spell. Its area is heavily obscured.
 

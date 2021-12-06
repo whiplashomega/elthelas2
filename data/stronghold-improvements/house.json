@@ -3,7 +3,7 @@
   "name": "House",
   "benefit": "Build a house for your laborers to live in",
   "staff": [],
-  "goldCost": 400,
+  "goldCost": 40,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 5,
+  "buildtime": 100,
   "prerequisites": [ ],
   "hide": true,
   "count": 0,

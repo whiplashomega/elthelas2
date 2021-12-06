@@ -1,7 +1,7 @@
 {
   "id": "wizard-tower",
   "name": "Wizard Tower",
-  "goldCost": 5000,
+  "goldCost": 500,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 5,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 30,
+  "buildtime": 600,
   "prerequisites": [ "keep" ],
   "hide": true,
   "count": 0,

@@ -20,7 +20,7 @@ tags: [bard, sorcerer, warlock, wizard, level2, conjuration]
 
 **Save For**: half damage
 
-**Damage**: [ { "dice": "10d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
+**Damage**: [ { "dice": "4d4", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "2d4" } ]
 
 You fill the air with spinning daggers in a cube 5 feet on each side, centered on a point you choose within range. A creature takes 4d4 slashing damage when it enters the spell’s area for the first time on a turn or starts its turn there. 
 

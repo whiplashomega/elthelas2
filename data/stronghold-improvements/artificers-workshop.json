@@ -1,7 +1,7 @@
 {
   "id": "artificers-workshop",
   "name": "Artificers Workshop",
-  "goldCost": 3000,
+  "goldCost": 300,
   "resourceCost": {
     "alcohol": 0,
     "arcanum": 40,
@@ -61,7 +61,7 @@
   "storage": 250,
   "employs": 0,
   "operating": true,
-  "buildtime": 30,
+  "buildtime": 600,
   "prerequisites": [ "wizard-tower" ],
   "hide": true,
   "count": 0,

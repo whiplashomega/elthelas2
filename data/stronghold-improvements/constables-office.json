@@ -3,7 +3,7 @@
   "name": "Constable's Office",
   "benefit": "Gives constables a place to work from, includes two jail cells",
   "staff": [{ "name": "Constable", "num": 3, "cur": 0 }],
-  "goldCost": 1000,
+  "goldCost": 100,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 10,
+  "buildtime": 200,
   "prerequisites": [ "village" ],
   "hide": true,
   "count": 0,

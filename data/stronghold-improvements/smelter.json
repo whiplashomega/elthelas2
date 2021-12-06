@@ -3,7 +3,7 @@
   "name": "Smelter",
   "benefit": "a smelting plant that turns coal and iron into steel fit for working with.",
   "staff": [{ "name": "Master Smelter", "num": 1, "cur": 0 }],
-  "goldCost": 2000,
+  "goldCost": 200,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 10,
   "operating": true,
-  "buildtime": 10,
+  "buildtime": 200,
   "prerequisites": [ "village" ],
   "hide": true,
   "count": 0,

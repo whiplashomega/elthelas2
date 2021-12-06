@@ -3,7 +3,7 @@
   "name": "Warehouse",
   "benefit": "provides a location to store goods",
   "staff": [{ "name": "Quartermaster", "num": 1, "cur": 0 }],
-  "goldCost": 4000,
+  "goldCost": 400,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 5,
   "operating": true,
-  "buildtime": 20,
+  "buildtime": 400,
   "prerequisites": [ ],
   "hide": true,
   "count": 0,

@@ -3,7 +3,7 @@
   "name": "Temple",
   "benefit": "dedicated to God of choice, allows for recruitment of clerics of same God",
   "staff": [{ "name": "Cleric", "num": 1, "cur": 0 }],
-  "goldCost": 5000,
+  "goldCost": 500,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 2,
@@ -61,7 +61,7 @@
   "staffpop": 1,
   "employs": 5,
   "operating": true,
-  "buildtime": 30,
+  "buildtime": 600,
   "prerequisites": [ "town" ],
   "hide": true,
   "count": 0,

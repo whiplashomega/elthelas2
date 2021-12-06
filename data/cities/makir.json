@@ -1,8 +1,8 @@
 {
   "name": "Makir",
   "nation": "Malinval",
-  "population": 0,
-  "metro": 0,
+  "population": 80000,
+  "metro": 180000,
   "majority": "Grunt Orcs",
   "ruling": "High Orcs",
   "minorities": [
@@ -13,5 +13,5 @@
   "exports": [],
   "landmarks": [],
   "coords": [40.455829687131455, 63.983320184290356],
-  "description": ""
+  "description": "A major hub of the central territories of old Malinval. Makir has served as a staging base and important supply point for orcish armies for hundreds of years. The local warlords of Makir have long been some of the most aggressive warmongers of Malinval."
 }

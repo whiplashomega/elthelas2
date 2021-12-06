@@ -3,7 +3,7 @@
   "name": "Practice Field",
   "benefit": "includes archery targets, practice dummies, etc. spending 4 hours practicing with a particular weapon grants a +1 bonus to attack and damage rolls with that weapon for 1 week",
   "staff": [{ "name": "Trainer", "num": 0, "cur": 0 }],
-  "goldCost": 500,
+  "goldCost": 50,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 5,
+  "buildtime": 100,
   "prerequisites": [ ],
   "hide": true,
   "count": 0,

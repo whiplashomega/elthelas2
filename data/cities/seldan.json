@@ -1,13 +1,13 @@
 {
   "name": "Seldan",
   "nation": "Riftlan",
-  "population": 0,
-  "metro": 0,
+  "population": 5000,
+  "metro": 8000,
   "majority": "",
   "ruling": "",
   "minorities": [],
   "exports": [],
   "landmarks": [],
   "coords": [-21.52398846032504, -94.25563941128206],
-  "description": ""
+  "description": "Seldan is a small self-governing city in the south of the Riftlan Wilds, at the last navigable point of the Mashashana River. From Seldan expeditions into the Wilds go north by river seeking strange beasts, treasure, and more. Several times Zelfir has attempted to bring Seldan under its grip, but the large overland journey between Last Watch and Seldan makes supplying armies over the distance problematic at best. Meanwhile the caravaneers of Seldan refuse to give up their secrets on how to make the crossing safely."
 }

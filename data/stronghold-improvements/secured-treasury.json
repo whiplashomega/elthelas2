@@ -3,7 +3,7 @@
   "name": "Secured Treasury",
   "benefit": "Magically secured treasury",
   "staff": [{ "name": "Guard", "num": 2, "cur": 0 }],
-  "goldCost": 1000,
+  "goldCost": 100,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 10,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 10,
+  "buildtime": 200,
   "prerequisites": [ "keep" ],
   "hide": true,
   "count": 0,

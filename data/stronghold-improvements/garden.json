@@ -3,7 +3,7 @@
   "name": "Garden",
   "benefit": "provides a space for planting specialized plants",
   "staff": [{ "name": "Gardener", "num": 1, "cur": 0 }],
-  "goldCost": 150,
+  "goldCost": 15,
   "resourceCost":  {
     "alcohol": 0,
     "arcanum": 0,
@@ -61,7 +61,7 @@
   "staffpop": 0,
   "employs": 0,
   "operating": true,
-  "buildtime": 5,
+  "buildtime": 100,
   "prerequisites": [ ],
   "hide": true,
   "count": 0,

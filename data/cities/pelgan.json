@@ -1,8 +1,8 @@
 {
   "name": "Pelgan",
   "nation": "Staelia",
-  "population": 0,
-  "metro": 0,
+  "population": 25000,
+  "metro": 80000,
   "majority": "Staelic Humans",
   "ruling": "Staelic Humans",
   "minorities": [
@@ -11,5 +11,5 @@
   "exports": [],
   "landmarks": [],
   "coords": [-56.139046111076006, -55.15469189668426],
-  "description": ""
+  "description": "Sitting at the heart of the frigid cold regions of southern Staelia, Pelgan is a city tied to the sea. Fishing trawlers from Pelgan spread out all along the nutrient rich waters of the southern coastline hunting for cod and salmon, which are then salted shipped to places far and wide. Meanwhile the tall evergreen forests along the Staelic river provide the cities other major industry. Lumber exports from Pelgan make their way up the coast to Instar and especially the mountain homes of the gnomes."
 }

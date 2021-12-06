@@ -1,13 +1,17 @@
 {
   "name": "Sage",
   "nation": "Sage",
-  "population": 0,
-  "metro": 0,
-  "majority": "",
-  "ruling": "",
-  "minorities": [],
+  "population": 80000,
+  "metro": 120000,
+  "majority": "Grunt Orcs",
+  "ruling": "Grunt Orcs",
+  "minorities": [
+    "Goblins",
+    "Hobgobins",
+    "Bugbears"
+  ],
   "exports": [],
   "landmarks": [],
   "coords": [-22.542366784122375, -41.2629904536912], 
-  "description": ""
+  "description": "Sage was originally built by an enterprising orcish warlord intent on spreading orcish influence to new continents around 1312. However, the rest of Malinval had no interest in the affair, and mismanagement soon led to revolt, and the High Orcs were rounded up and executed by the Grunt Orcs they had ruled over. Today Sage has no functioning government at all, but different parts of the city are ruled by rival cartels, gangs, and slave traders that make their money by raiding minor settlements to the west and south and selling captives as slaves."
 }
