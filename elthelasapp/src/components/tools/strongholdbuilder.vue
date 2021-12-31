@@ -508,7 +508,7 @@
               <td>1 day</td>
             </tr>
             <tr>
-              <td>Seek guidance from a God via omens or prayer. Roll a DC 15 religion check. On a success gain advantage on a skill check of your choice in the next day. If you fail by five or more, get disadvantage instead on a check of the DMs choice.</td>
+              <td>Seek guidance from a God via omens or prayer. Roll a DC 12 religion check. On a success gain advantage on two skill checks of your choice in the next day. If you fail by five or more, get disadvantage instead on a check of the DMs choice.</td>
               <td>0 gp</td>
               <td>1 day</td>
             </tr>
@@ -528,7 +528,7 @@
               <td>1 day</td>
             </tr>
             <tr>
-              <td>Aid Construction Efforts. Requires a DC 15 Carpenters Tools check (if the building is mostly wood) or Mason's tools check if it is mostly stone. Reduce build time of one building by 1 day.</td>
+              <td>Aid Construction Efforts. Requires a Carpenters Tools check (if the building is mostly wood) or Mason's tools check if it is mostly stone. DC 5: Reduce labor-days required by 1. DC 10: Reduce labor-days required by 2. DC 15+: Reduce labor days required by 3 + the amount over 15. This also reduces the total material costs of the building as a result.</td>
               <td>0 gp</td>
               <td>1 day</td>
             </tr>

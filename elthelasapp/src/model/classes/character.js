@@ -78,6 +78,7 @@ export default function() {
     ],
     saves: [false, false, false, false, false, false],
     deathsuccess: 0,
+    housespellsknown: true,
     deathfail: 0,
     image: "",
     savebonus: [0, 0, 0, 0, 0, 0],

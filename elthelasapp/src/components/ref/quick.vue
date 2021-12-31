@@ -1315,6 +1315,36 @@
                  :sort-by.sync="weapontable.sortBy"
                  :sort-desc.sync="weapontable.sortDesc">
         </b-table>
+        <h4>Joe's Crazy Idea for What Weapons Should Be</h4>
+        <table>
+          <tr>
+            <th>Weapon</th>
+            <th>Type</th>
+            <th>Properties</th>
+            <th>Damage</th>
+            <th>Reach</th>
+            <th>Cost (gp)</th>
+            <th>Weight</th>
+          </tr>
+          <tr><td>Club</td><td>Simple</td><td>light</td><td>1d4 bludgeoning</td><td>5 ft</td><td>0.1</td><td>2 lb</td></tr>
+          <tr><td>Dagger</td><td>Simple</td><td>finesse, light, thrown (range 20/60)</td><td>1d4 bludgeoning</td><td>5 ft</td><td>0.1</td><td>2 lb</td></tr>
+          <tr><td>Greatclub</td><td>Simple</td><td>two-handed</td><td>1d8 bludgeoning</td><td>10 ft</td><td>0.2</td><td>10 lb</td></tr>
+          <tr><td>Handaxe</td><td>Simple</td><td>light, thrown (range 20/60)</td><td>1d6 slashing</td><td>5 ft</td><td>5</td><td>2 lb</td></tr>
+          <tr><td>Javelin</td><td>Simple</td><td>light, thrown (range 30/120)</td><td>1d6 piercing</td><td>10 ft</td><td>0.5</td><td>2 lb</td></tr>
+          <tr><td>Light Hammer</td><td>Simple</td><td>light, thrown (range 20/60)</td><td>1d4 bludgeoning</td><td>5 ft</td><td>2</td><td>2 lb</td></tr>
+          <tr><td>Mace</td><td>Simple</td><td>-</td><td>1d6 bludgeoning</td><td>5 ft</td><td>5</td><td>4 lb</td></tr>
+          <tr><td>Quarterstaff</td><td>Simple</td><td>versatile</td><td>1d6/1d8 bludgeoning</td><td>10 ft</td><td>0.2</td><td>4 lb</td></tr>
+          <tr><td>Sickle</td><td>Simple</td><td>Light</td><td>1d4 slashing</td><td>5 ft</td><td>1</td><td>2 lb</td></tr>
+          <tr><td>Spear</td><td>Simple</td><td>Thrown (range 20/60), versatile</td><td>1d6/1d8 piercing</td><td>10 ft</td><td>1</td><td>3 lb</td></tr>
+          <tr><td>Crossbow, light</td><td>Simple</td><td>ranged, Ammunition (range 80/320), loading, two-handed</td><td>1d8 piercing</td><td>-</td><td>25</td><td>5 lb</td></tr>
+          <tr><td>Dart</td><td>Simple</td><td>ranged, Finesse, thrown (range 20/60)</td><td>1d4 piercing</td><td>-</td><td>0.05</td><td>0.25 lb</td></tr>
+          <tr><td>Shortbow</td><td>Simple</td><td>ranged, Ammunition (range 80/320), two-handed</td><td>1d6 piercing</td><td>-</td><td>25</td><td>2 lb</td></tr>
+          <tr><td>Sling</td><td>Simple</td><td>ranged, Ammunition (range 30/120)</td><td>1d4 bludgeoning</td><td>-</td><td>0.1</td><td>0</td></tr>
+          <tr><td>Battleaxe</td><td>Martial</td><td>versatile</td><td>1d8/1d10 slashing</td><td>5 ft</td><td>10</td><td>4 lb</td></tr>
+          <tr><td>Flail</td><td>Martial</td><td>-</td><td>1d8 bludgeoning</td><td>10 ft</td><td>10</td><td>2 lb</td></tr>
+          <tr><td>Glaive</td><td>Martial</td><td>heavy, reach, two-handed</td><td>1d10 slashing</td><td>15 ft</td><td>20</td><td>6 lb</td></tr>
+          <tr><td></td></tr>
+        </table>
       </b-tab>
     </b-tabs>
   </div>

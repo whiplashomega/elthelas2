@@ -50,6 +50,14 @@
         <li>Path of Wild Magic (TCE p25-26)</li>
         <li>Path of the Zealot (XGE p11)</li>
       </ul>
+      <h4>Frenzy House Rule</h4>
+      <p>
+        Frenzy does not cause exhaustion the first time it is used after a long rest.
+      </p>
+      <h4>Intimidating Presence House Rule</h4>
+      <p>
+        The DC equals 8 + your proficiency bonus + <strong>Your Strength Modifier</strong>
+      </p>
       <h3>Barbarians in Elthelas</h3>
       <p>
         Barbarian tribes exist in a wide variety of areas in Elthelas, particularly in the wild areas far from the cities. Notable places in Elathia include the runic mountains, sword mountains, the wooded region southwest of Purs, the border region between Eldoran, Demal Thor, and Curinor, the far southern region of Waelin, near the Glass Cliff, the Black Peaks, and the central plains of Malinval. In Atyrea, notable regions include the mountains of Stagenheim (since the gnomish cities exist mostly as cavern cities, the surface is largely held by barbarians), the southern ice wastes, throughout Sage, and the Tiaov Coast. In Riftlan, barbarian tribes can be found throughout in all regions north of Zelfir.
@@ -620,70 +628,6 @@
     </div>
     <div v-if="shownClass === 'ranger'">
       <h2>Ranger</h2>
-      <div class="alert alert-danger">
-        This version of the ranger is included for the purpose of being a reference for continuing characters. Otherwise please use the new and replacement abilities provided by Tasha's Cauldron of Everything to balance the ranger class.
-      </div>
-      <p>
-        The ranger has been an issue of some consternation for many players, as written in the PHB, many, including myself, consider it to be underpowered compared to the other classes. It
-        lacked a real niche. Outclassed in whatever role it might try to fill, whether that be as a scout, skill monkey, striker, tank, etc. There have been many attempts to resolve this, including, famously, multiple revisions of a revised ranger class that appeared in unearthed arcana. In my opinion, however, this revised ranger went too far, especially when taking into account the possibility of multiclass characters, feats, etc. Looking at the analysis that exists about the real problems with the ranger class, and using the revised ranger as inspiration, I have, instead of a complete overhaul of the class, reworked a few of the classes features to be more useful, and largely replaced the beast master archetype with a variation on unearthed arcana's version.  These revisions are below:
-      </p>
-      <h3>Favored Enemy</h3>
-      <p>
-        Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy commonly encountered in the wilds.
-      </p>
-      <p>
-        Choose a type of favored enemy: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead. You gain a +2 bonus to damage rolls with weapon attacks against creatures of the chosen type. Additionally, you have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.
-      </p>
-      <p>
-        When you gain this feature, you also learn one language of your choice, typically one spoken by your favored enemy or creatures associated with it. However, you are free to pick any language you wish to learn.
-      </p>
-      <p>
-        You choose one additional favored enemy, as well as an additional language, at 6th level and 14th level, and the damage you do to your favored enemies increases to +4 at 6th level, and +6 at 14th level.
-      </p>
-      <h3>Natural Explorer</h3>
-      <p>
-        You are a master of navigating the natural world, and you react with swift and decisive action when attacked. This grants you the following benefits:
-      </p>
-      <ul>
-        <li>You have advantage on initiative rolls.</li>
-      </ul>
-      <p>
-        In addition you are skilled at navigating the wilderness. You gain the following benefits when traveling for an hour or more:
-      </p>
-      <ul>
-        <li>Difficult terrain doesn't slow your groups travel.</li>
-        <li>Your group can't become lost except by magical means.</li>
-        <li>Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.</li>
-        <li>If you are traveling alone, you can move stealthily at a normal pace.</li>
-        <li>When you forage, you find twice as much food as you normally would.</li>
-        <li>While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</li>
-      </ul>
-      <h3>Primeval Awareness</h3>
-      <p>
-        Beginning at 3rd level, you can use your action and to focus your awareness on the region around you. For 1 minute you can sense whether the following types of creatures are present within 1 mile of you: aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn’t reveal the creatures location or number. If at least one of the creatures is within 60 feet of you this ability reveals the location of the nearest creature.
-      </p>
-      <h3>Ability Score Improvement</h3>
-      <p>
-        When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase
-        two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.
-      </p>
-      <h3>Hide in Plain Sight</h3>
-      <p>
-        Starting at 10th level, you can remain perfectly still for long periods of time to set up ambushes.
-      </p>
-      <p>
-        When you attempt to hide on your turn, you can opt to not move on that turn. If you avoid moving, creatures that attempt to detect you
-        take a −5 penalty to their Wisdom (Perception) checks until the start of your next turn. You lose this benefit if you move or fall prone, either
-        voluntarily or because of some external effect. You are still automatically detected if any effect or action causes you to no longer be hidden.
-      </p>
-      <p>
-        If you are still hidden on your next turn, you can continue to remain motionless and gain this benefit until you are detected.
-      </p>
-      <h3>Foe Slayer</h3>
-      <p>
-        At 20th level, you become an unparalleled hunter. Once on each of your turns, you can add your Wisdom modifier to the attack roll or the
-        damage roll of an attack you make. You can choose to use this feature before or after the roll, but before any effects of the roll are applied.
-      </p>
       <h2>Ranger Archetypes</h2>
       <p>
         Ranger's can adhere to one of the following archetypes:
@@ -1067,6 +1011,8 @@
         <li>The Genie (TCE p73-75)</li>
         <li>The Fathomless (TCE p72-73)</li>
       </ul>
+      <h4>Optional Feature: Additional Spells Known</h4>
+      <p>When a warlock Patron feature add spells to the warlock spell list, the warlock gets to add those spells to their spells known list and they do not count against their limit of spells known.</p>
     </div>
     <div v-if="shownClass === 'wizard'">
       <h2>Wizard</h2>

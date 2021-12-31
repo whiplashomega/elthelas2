@@ -98,7 +98,7 @@ export default {
 
         if (!imp.private && !imp.dmGift) {
           for (var key in imp.resourceCost) {
-            this.stronghold.resources[key] -= imp.resourceCost[key] * percentdone;
+            this.stronghold.resources[key] -= Math.ceil((imp.resourceCost[key] * percentdone) * 100) / 100;
             if (this.stronghold.resources[key] < 0) {
               this.buyResource({ type: key, amount: this.stronghold.resources[key] * -1 });
             }
