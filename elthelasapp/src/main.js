@@ -5,7 +5,7 @@ import BootstrapVue from 'bootstrap-vue';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 import VueResource from 'vue-resource';
-import marked from 'marked';
+import { marked } from '../node_modules/marked/lib/marked.esm.js';
 import 'bootstrap';
 import App from './components/App';
 import router from './router';
@@ -31,7 +31,7 @@ Vue.config.ignoredElements = ['gse:searchbox-only'];
 
 Vue.filter('marked', function(input) {
   if (input) {
-    return marked(input);
+    return marked.parse(input);
   } else {
     return "";
   }
