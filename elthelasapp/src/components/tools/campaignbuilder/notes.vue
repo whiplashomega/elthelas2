@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-if="campaign" class="col-sm-12">
-      <div>
+      <div class="notes">
         <h1 v-if="!campaign.buildmode">{{ campaign.title }} <button @click="campaign.buildmode = true" class="btn btn-primary">&#9998;</button></h1>
         <div class="row" v-if="campaign.buildmode">
           <label class="col-sm-6">
@@ -237,7 +237,7 @@
   </div>
 </template>
 <script src="./js/notes.js"></script>
-<style scoped>
+<style>
   .navitem {
     margin-top: 12px;
   }
@@ -252,16 +252,15 @@
   .dark .complete {
     background-color: rgba(55, 55, 80, 0.3);
   }
-  
-  table td, table th {
+  .notes table td, table th {
     padding: 0.75rem;
     vertical-align: top;
     border-top: 1px solid #dee2e6;
   }
-  table tr:nth-of-type(odd) {
+  .notes table tbody tr:nth-of-type(odd) {
     background-color: rgba(0,0,0,.05);
   }
-  table {
+  .notes table {
     width: 100%;
     margin-bottom: 1rem;
     color: #212529;

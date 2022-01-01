@@ -1,26 +1,26 @@
 self.__precacheManifest = [
   {
-    "revision": "9ba7eee680d738276f701cd70d7f0d4c",
-    "url": "/json/gods.json"
+    "revision": "ac60120bbea67b317cbb",
+    "url": "/css/app.7dc32a2e.css"
   },
   {
-    "revision": "2c0c0b0008f1399bde41ecb582de658d",
-    "url": "/static/md/book4/theworld.md"
+    "revision": "ac60120bbea67b317cbb",
+    "url": "/js/app.1190cfd1.js"
   },
   {
-    "revision": "635b42a762b3568fed4f66408382c5fa",
-    "url": "/json/history.json"
+    "revision": "75672cf6cd546bf752b1",
+    "url": "/css/characterbuilder.47d9de8b.css"
   },
   {
-    "revision": "fb8b4055abaf53260306",
-    "url": "/css/characterbuilder.7e7345b9.css"
+    "revision": "75672cf6cd546bf752b1",
+    "url": "/js/characterbuilder.c1fd6f70.js"
   },
   {
-    "revision": "b494758ce0ac1389c238",
-    "url": "/css/chunk-vendors.4a390b54.css"
+    "revision": "ceea3d854f9a45ddb17a",
+    "url": "/css/chunk-vendors.e4c2fc3c.css"
   },
   {
-    "revision": "b494758ce0ac1389c238",
+    "revision": "ceea3d854f9a45ddb17a",
     "url": "/js/chunk-vendors.f1f02dbd.js"
   },
   {
@@ -92,12 +92,12 @@ self.__precacheManifest = [
     "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "ed6ff2b69046bc92d28be9dd8fa153d2",
+    "revision": "d4d49c35ccfdf346c3156fa55973ac28",
     "url": "/index.html"
   },
   {
-    "revision": "2dc0eb456bd2d749e15b2b93036de7e7",
-    "url": "/static/md/book4/progression.md"
+    "revision": "d41d8cd98f00b204e9800998ecf8427e",
+    "url": "/.gitkeep"
   },
   {
     "revision": "fe9884553a1ae2ea1bb0d6f76a8d4822",
@@ -152,12 +152,12 @@ self.__precacheManifest = [
     "url": "/json/features.json"
   },
   {
-    "revision": "8042a13398b92c1fa19e",
-    "url": "/js/app.b7be361d.js"
+    "revision": "9ba7eee680d738276f701cd70d7f0d4c",
+    "url": "/json/gods.json"
   },
   {
-    "revision": "fb8b4055abaf53260306",
-    "url": "/js/characterbuilder.c1fd6f70.js"
+    "revision": "635b42a762b3568fed4f66408382c5fa",
+    "url": "/json/history.json"
   },
   {
     "revision": "f44aacb76113713e70e7ae0aac5d9e1f",
@@ -186,10 +186,6 @@ self.__precacheManifest = [
   {
     "revision": "df5e59f9a5a8c61fbd4663fdb24756ab",
     "url": "/json/races.json"
-  },
-  {
-    "revision": "98e231a771d3bd2141157c443f0c3314",
-    "url": "/json/spells.json"
   },
   {
     "revision": "eb7f5a3b511fb8b7e6a60fcd7c328d63",
@@ -300,11 +296,15 @@ self.__precacheManifest = [
     "url": "/static/md/book4/pcs.md"
   },
   {
-    "revision": "8042a13398b92c1fa19e",
-    "url": "/css/app.20e433e7.css"
+    "revision": "2dc0eb456bd2d749e15b2b93036de7e7",
+    "url": "/static/md/book4/progression.md"
   },
   {
-    "revision": "d41d8cd98f00b204e9800998ecf8427e",
-    "url": "/.gitkeep"
+    "revision": "2c0c0b0008f1399bde41ecb582de658d",
+    "url": "/static/md/book4/theworld.md"
+  },
+  {
+    "revision": "98e231a771d3bd2141157c443f0c3314",
+    "url": "/json/spells.json"
   }
 ];
