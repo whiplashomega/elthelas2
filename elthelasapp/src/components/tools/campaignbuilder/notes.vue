@@ -252,4 +252,18 @@
   .dark .complete {
     background-color: rgba(55, 55, 80, 0.3);
   }
+  
+  table td, table th {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+  }
+  table tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+  }
+  table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+  }
 </style>
