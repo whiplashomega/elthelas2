@@ -1,5 +1,5 @@
 import { mapGetters, mapActions } from 'vuex';
-import marked from 'marked';
+import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 import charcalc from '@/helpers/charcalc';
 
 const modalInfo = {
@@ -245,7 +245,7 @@ export default {
       creature.ispc = false;
       this.nextIndex++;
       creature.currenthp = creature.hp;
-      creature.descr = marked(creature.description);
+      creature.descr = marked.parse(creature.description);
       creature.mini = "";
       creature.initMod = creature.dexmod;
       creature.advantage = false;
@@ -307,7 +307,7 @@ export default {
         }
       }
       if (spells.length > 14) descr += spells;
-      return marked(descr);
+      return marked.parse(descr);
     },
     buildCreature (character, ispc) {
       this.setCharacter(character);
@@ -419,7 +419,7 @@ export default {
       creatures = this.creArray;
       this.getCreaturesOnMount(creatures);
     }
-    if (this.charArray.length > 0) {
+    if (typeof this.charArray !== 'undefined' && this.charArray.length > 0) {
       this.loadCharacters(this.charArray);
       this.partysize = this.charArray.length;
       this.partylevel = charcalc.charlevel(this.charArray[0]);
