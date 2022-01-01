@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import marked from 'marked';
+import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 import ctest from './cordovatest.js';
 import Creature from './classes/creature';
 
@@ -16,7 +16,7 @@ const getters = {
 };
 
 function calcStatMods (creature) {
-  creature.descr = marked(creature.description);
+  creature.descr = marked.parse(creature.description);
   creature.strmod = Math.floor(creature.str / 2) - 5;
   creature.dexmod = Math.floor(creature.dex / 2) - 5;
   creature.conmod = Math.floor(creature.con / 2) - 5;
