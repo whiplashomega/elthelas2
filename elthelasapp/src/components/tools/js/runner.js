@@ -414,7 +414,7 @@ export default {
       console.log('there is an encounter parameter');
       var creatures = this.$route.params.encounter.split('&');
       this.getCreaturesOnMount(creatures);
-    } else if (this.creArray.length > 0) {
+    } else if (typeof this.creArray !== 'undefined' && this.creArray.length > 0) {
       console.log("running in campaign setting");
       creatures = this.creArray;
       this.getCreaturesOnMount(creatures);
