@@ -1,5 +1,5 @@
 import { mapGetters } from 'vuex';
-import marked from 'marked';
+import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 
 export default {
   computed: {
@@ -133,7 +133,7 @@ export default {
     info (item, index, button) {
       this.spelltable.modalInfo.title = item.title;
       this.spelltable.modalInfo.content = item;
-      this.spelltable.modalInfo.description = marked(this.spelltable.modalInfo.content.description);
+      this.spelltable.modalInfo.description = marked.parse(this.spelltable.modalInfo.content.description);
       this.$root.$emit('bv::show::modal', 'spellmodal', button);
     },
     selectForPrint (item) {
