@@ -16,13 +16,13 @@ export default {
       let spells = this.spells.filter((a) => {
         let passes = true;
         textfilters.forEach((item) => {
-          if (!(a.description.includes(item) ||
-                a.title.includes(item) ||
-                a.level.includes(item) ||
-                a.school.includes(item) ||
-                a.castingTime.includes(item) ||
-                a.tagsText.includes(item) ||
-                a.components.includes(item))) {
+          if (!(a.description.toLowerCase().includes(item.toLowerCase()) ||
+                a.title.toLowerCase().includes(item.toLowerCase()) ||
+                a.level.toLowerCase().includes(item.toLowerCase()) ||
+                a.school.toLowerCase().includes(item.toLowerCase()) ||
+                a.castingTime.toLowerCase().includes(item.toLowerCase()) ||
+                a.tagsText.toLowerCase().includes(item.toLowerCase()) ||
+                a.components.toLowerCase().includes(item.toLowerCase()))) {
             passes = false;
           }
         });
