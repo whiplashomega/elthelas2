@@ -29,7 +29,7 @@ export default {
         return passes;
       });
       spells = spells.filter((a) => {
-        return a.title.includes(this.spelltable.titleFilter) || this.spelltable.titleFilter === "";
+        return a.title.toLowerCase().includes(this.spelltable.titleFilter.toLowerCase()) || this.spelltable.titleFilter === "";
       });
       spells = spells.filter((a) => {
         return a.tags.indexOf(this.spelltable.classFilter) !== -1 || this.spelltable.classFilter === "all";
