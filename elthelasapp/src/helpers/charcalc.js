@@ -277,7 +277,7 @@ export default {
       if (a.thisclass.name === "Ranger" && a.level >= 2) {
         num = Math.ceil(a.level / 2) + 1;
         if (((a.selsubclass.name !== "Hunter Conclave" && a.selsubclass.name !== "Beast Master") || character.housespellsknown) && a.level >= 3) {
-          num += (Math.floor((a.level - 1) / 4) + 1);          
+          num += (Math.floor((a.level - 1) / 4) + 1);
         }
       }
       if (a.thisclass.name === "Paladin" && a.level > 2) {
@@ -415,7 +415,7 @@ export default {
         }
         slots += Number(character.warlockslotsmagic);
       } else if (a.thisclass.name === "Warlock (Joe's Edit)" && a.level >= 1) {
-        slots = Math.floor((a.level + 7) / 4);
+        slots = Math.floor((Number(a.level) + 7) / 4) + Number(character.warlockslotsmagic);
       }
     });
     return slots;
