@@ -258,7 +258,7 @@ export default {
           num += 2 + Math.floor(Math.min(a.level - 1, 8) / 2) * 2;
         }
       }
-      if (a.thisclass.name === "Warlock") {
+      if (a.thisclass.name === "Warlock" || a.thisclass.name === "Warlock (Joe's Edit)") {
         num = Math.min(a.level, 9) + 1;
         num += Math.floor(Math.max(0, a.level - 9) / 2);
         if (character.housespellsknown) {
@@ -414,7 +414,7 @@ export default {
           slots++;
         }
         slots += Number(character.warlockslotsmagic);
-      } else if (a.thisclass.name === "Warlock (Homebrew)" && a.level >= 1) {
+      } else if (a.thisclass.name === "Warlock (Joe's Edit)" && a.level >= 1) {
         slots = Math.floor((a.level + 7) / 4);
       }
     });
@@ -422,7 +422,7 @@ export default {
   },
   warlockSlotLevel: function(character) {
     return Math.min(character.charclasses.reduce((level, a) => {
-      if (a.thisclass.name === "Warlock") {
+      if (a.thisclass.name === "Warlock" || a.thisclass.name === "Warlock (Joe's Edit)") {
         level = Math.ceil(Number(a.level) / 2.0);
       }
       return level;
