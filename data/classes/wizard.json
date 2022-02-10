@@ -375,6 +375,42 @@
         }
       ]
     },
+        {
+      "name": "College of Bladesingers (Homebrew)",
+      "castermult": 1,
+      "features": [
+        {
+          "level": 2,
+          "name": "Training in War and Song",
+          "description": "When you adopt this tradition at 2nd level, you gain proficiency with light armor, and you gain proficiency with one type of one-handed melee weapon of your choice.\n\nYou also gain proficiency in the Performance skill if you don't already have it."
+        },
+        {
+          "level": 2,
+          "name": "Bladesong",
+          "description": "You can invoke a secret elven magic called the Bladesong, provided that you aren't wearing medium or heavy armor or using a shield. It graces you with supernatural speed, agility, and focus.\n\nYou can use a bonus action to start the Bladesong, which lasts for 1 minute. It ends early if you are incapacitated, if you don medium or heavy armor or a shield, or if you use two hands to make an attack with a weapon. You can also dismiss the Bladesong at any time you choose (no action required).\n\nWhile your Bladesong is active, you gain the following benefits:\n\n* you add your Intelligence modifier (minimum of +1) to the damage of your melee weapon attacks.\n* Your walking speed increases by 10 feet.\n* You have advantage on Dexterity (Acrobatics) checks.\n* You gain a bonus to any Constitution saving throw you make to maintain your concentration on a spell. The bonus equals your Intelligence modifier (minimum of +l).\n* You gain temporary hitpoints equal to twice your wizard level.\n\nYou can use this feature a number of times equal to your proficiency bonus, You regain all expended uses of it when you finish a long rest."
+        },
+        {
+          "level": 2,
+          "name": "Expanded Spellbook",
+          "description": "You are studied in the art of weaving magic to enhance your combat prowess. As part of your studies you have memorized certain spells. Add the following spells to your spellbook at the level listed. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells.\n\n* 2nd - Longstrider\n* 3rd - Shadow Blade\n* 5th - Haste\n* 7th - Stoneskin\n* 9th - Steel Wind Strike"
+        },
+        {
+          "level": 6,
+          "name": "Extra Attack",
+          "description": "You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast one of your cantrips in place of one of those attacks."
+        },
+        {
+          "level": 10,
+          "name": "Song of Victory",
+          "description": "When you hit with a melee weapon attack while your bladesong is active you deal an additional 1d8 force damage."
+        },
+        {
+          "level": 14,
+          "name": "Song of Defense",
+          "description": "When you reduce a creature to 0 hit points with a melee weapon attack while your bladaesong is active you gain an additional 5 temporary hit points, this stacks with the temporary hitpoints already granted by bladesong."
+        }
+      ]
+    },
     {
       "name": "War Magic",
       "castermult": 1,

@@ -287,6 +287,9 @@ export default {
           (a.thisclass.name === "Rogue" && a.selsubclass.name === "Arcane Trickster")) {
         num = this.thirdCasterPrepared(a);
       }
+      if (a.thisclass.name === "Wizard" && character.housespellsknown) {
+        num += 1 + Math.floor(Math.min(a.level - 1, 8) / 2);
+      }
       num += Number(a.bonusknown);
       classCounts.push({
         classname: a.thisclass.name,
