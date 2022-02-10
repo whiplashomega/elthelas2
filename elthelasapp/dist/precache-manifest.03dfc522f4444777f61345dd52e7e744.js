@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "/json/history.json"
   },
   {
-    "revision": "fb8b4055abaf53260306",
+    "revision": "4056e6333cc77defbd7e",
     "url": "/css/characterbuilder.7e7345b9.css"
   },
   {
@@ -24,56 +24,56 @@ self.__precacheManifest = [
     "url": "/js/chunk-vendors.f1f02dbd.js"
   },
   {
-    "revision": "00ad2d7f03115f272ffa",
+    "revision": "7b684c7a27a132756cc6",
     "url": "/css/classes.62389ca8.css"
   },
   {
-    "revision": "00ad2d7f03115f272ffa",
-    "url": "/js/classes.0645a958.js"
+    "revision": "7b684c7a27a132756cc6",
+    "url": "/js/classes.0aec0d1c.js"
   },
   {
-    "revision": "f21fe960ce8ebf911b36",
+    "revision": "b4d2ca960b64523876af",
     "url": "/css/domains.88b095da.css"
   },
   {
-    "revision": "f21fe960ce8ebf911b36",
-    "url": "/js/domains.03bdafd3.js"
+    "revision": "b4d2ca960b64523876af",
+    "url": "/js/domains.90d1e418.js"
   },
   {
-    "revision": "e1b196e4a7befab1d7f7",
+    "revision": "7eac345e69843092c74b",
     "url": "/css/encounters.8b5fefc0.css"
   },
   {
-    "revision": "e1b196e4a7befab1d7f7",
-    "url": "/js/encounters.08eca642.js"
+    "revision": "7eac345e69843092c74b",
+    "url": "/js/encounters.92df4fba.js"
   },
   {
-    "revision": "4c00f47a9bed89fd09bb",
+    "revision": "892ef6f377c85fc7751c",
     "url": "/css/geography.17c98172.css"
   },
   {
-    "revision": "4c00f47a9bed89fd09bb",
-    "url": "/js/geography.b80afc39.js"
+    "revision": "892ef6f377c85fc7751c",
+    "url": "/js/geography.cfb48e6f.js"
   },
   {
-    "revision": "41dfebfd0bcb2b744f33",
+    "revision": "0a2c8188c52e3fc8e11b",
     "url": "/css/magicitems.e1b27851.css"
   },
   {
-    "revision": "41dfebfd0bcb2b744f33",
-    "url": "/js/magicitems.45b31bda.js"
+    "revision": "0a2c8188c52e3fc8e11b",
+    "url": "/js/magicitems.5219dbe6.js"
   },
   {
-    "revision": "1452970dfc8a88e0c57d",
+    "revision": "5da50ed455327e345d3e",
     "url": "/css/quickref.4d2ec05b.css"
   },
   {
-    "revision": "1452970dfc8a88e0c57d",
-    "url": "/js/quickref.b7b6d484.js"
+    "revision": "5da50ed455327e345d3e",
+    "url": "/js/quickref.abd708e5.js"
   },
   {
-    "revision": "e228dde7bdd19603f695",
-    "url": "/js/treasure.fadc016d.js"
+    "revision": "4ee3e34a102e679c6a4c",
+    "url": "/js/treasure.c995d965.js"
   },
   {
     "revision": "b0f49cd26ba67885381b66e77665bf02",
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "fdfe55a6300fdee509e7dc7de9704626",
+    "revision": "e1bfff307efb921a3f29c3d17425798b",
     "url": "/index.html"
   },
   {
@@ -152,12 +152,12 @@ self.__precacheManifest = [
     "url": "/json/features.json"
   },
   {
-    "revision": "7549d9fddad6ef5c603c",
-    "url": "/js/app.f729cf5d.js"
+    "revision": "d7ca45176a8ac6798be7",
+    "url": "/js/app.010b2202.js"
   },
   {
-    "revision": "fb8b4055abaf53260306",
-    "url": "/js/characterbuilder.c1fd6f70.js"
+    "revision": "4056e6333cc77defbd7e",
+    "url": "/js/characterbuilder.4012d807.js"
   },
   {
     "revision": "f44aacb76113713e70e7ae0aac5d9e1f",
@@ -300,7 +300,7 @@ self.__precacheManifest = [
     "url": "/static/md/book4/pcs.md"
   },
   {
-    "revision": "7549d9fddad6ef5c603c",
+    "revision": "d7ca45176a8ac6798be7",
     "url": "/css/app.ba38bed2.css"
   },
   {
