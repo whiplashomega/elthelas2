@@ -411,6 +411,8 @@ export default {
           slots++;
         }
         slots += Number(character.warlockslotsmagic);
+      } else if (a.thisclass.name === "Warlock (Homebrew)" && a.level >= 1) {
+        slots = Math.floor((a.level + 7) / 4);
       }
     });
     return slots;
