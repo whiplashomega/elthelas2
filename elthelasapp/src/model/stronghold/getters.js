@@ -127,7 +127,7 @@ export default {
   },
   calcConstructionRevenue: (state, getters) => {
     let resourcecosts = { alcohol: 0, arcanum: 0, brick: 0, clay: 0, cloth: 0, coal: 0, coffee: 0, consumergoods: 0, cotton: 0, food: 0, furniture: 0, horses: 0, iron: 0, leather: 0, lumber: 0, paper: 0, pottery: 0, raremetal: 0, steel: 0, stone: 0, sugar: 0, timber: 0, wool: 0 };
-    state.current.stronghold.construction.forEach((imp) => {
+    state.current.construction.forEach((imp) => {
       if (!imp.laborersassigned) {
         imp.laborersassigned = 0;
       }
