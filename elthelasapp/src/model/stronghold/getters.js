@@ -1,3 +1,5 @@
+import Decimal from 'decimal.js';
+
 export default {
   changeby: state => state.changeby,
   record: state => state.record,
@@ -108,6 +110,22 @@ export default {
     }
     return Math.round(Math.min(staffratio, ops) * 100) / 100;
   },
+  calcConstructionRevenue: (state) => {
+    let resourcecosts = { alcohol: 0, arcanum: 0, brick: 0, clay: 0, cloth: 0, coal: 0, coffee: 0, consumergoods: 0, cotton: 0, food: 0, furniture: 0, horses: 0, iron: 0, leather: 0, lumber: 0, paper: 0, pottery: 0, raremetal: 0, steel: 0, stone: 0, sugar: 0, timber: 0, wool: 0 };
+    state.current.construction.forEach((imp) => {
+      if (!imp.laborersassigned) {
+        imp.laborersassigned = 0;
+      }
+      let amountconstructed = Decimal(imp.laborersassigned);
+      let percentdone = amountconstructed.div(imp.buildtime);
+      if (!imp.private && !imp.dmGift) {
+        for (var key in imp.resourceCost) {
+          resourcecosts[key] += percentdone.mul(imp.resourceCost[key]).toFixed(2);
+        }
+      }
+    });
+    return resourcecosts;
+  },
   calcGrossRevenue: (state, getters) => {
     let rev = state.current.improvements.reduce((total, imp) => {
       let rev = getters.calculateRevenue(imp);
@@ -116,27 +134,11 @@ export default {
       }
       return total;
     }, { alcohol: 0, arcanum: 0, brick: 0, clay: 0, cloth: 0, coal: 0, coffee: 0, consumergoods: 0, cotton: 0, food: 0, furniture: 0, horses: 0, iron: 0, leather: 0, lumber: 0, paper: 0, pottery: 0, raremetal: 0, steel: 0, stone: 0, sugar: 0, timber: 0, wool: 0 });
-    let constrev = getters.calcConstructionRevenue();
+    let constrev = getters.calcConstructionRevenue;
     for (let key in rev) {
       rev[key] -= constrev[key];
     }
     return rev;
-  },
-  calcConstructionRevenue: (state) => {
-    let resourcecosts = { alcohol: 0, arcanum: 0, brick: 0, clay: 0, cloth: 0, coal: 0, coffee: 0, consumergoods: 0, cotton: 0, food: 0, furniture: 0, horses: 0, iron: 0, leather: 0, lumber: 0, paper: 0, pottery: 0, raremetal: 0, steel: 0, stone: 0, sugar: 0, timber: 0, wool: 0 };
-    state.current.construction.forEach((imp) => {
-      if (!imp.laborersassigned) {
-        imp.laborersassigned = 0;
-      }
-      let amountconstructed = Number(imp.laborersassigned);
-      let percentdone = amountconstructed / imp.buildtime;
-      if (!imp.private && !imp.dmGift) {
-        for (var key in imp.resourceCost) {
-          resourcecosts[key] += Math.ceil((imp.resourceCost[key] * percentdone) * 100) / 100;
-        }
-      }
-    });
-    return resourcecosts;
   },
   calcTotalRevenue: (state, getters) => {
     let rev = { ...getters.calcGrossRevenue };
@@ -344,12 +346,15 @@ export default {
         resourceRevenue += amount * state.buyTable[key];
       }
     }
-    let totalRevenue = getters.calcTotalRevenue();
-    let virtualState = state.current.resources.map(x => x);
+    let totalRevenue = getters.calcTotalRevenue;
+    let virtualState = {};
+    for (let key in state.current.resources) {
+      virtualState[key] = state.current.resources[key];
+    }
     for (let key in virtualState) {
       virtualState[key] += totalRevenue[key];
       if (virtualState[key] < 0) {
-        resourceRevenue += virtualState[key] * state.buyTable[key];
+        resourceRevenue -= virtualState[key] * state.buyTable[key];
       }
     }
     return Math.round(resourceRevenue * 100) / 100;

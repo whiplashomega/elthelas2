@@ -3,7 +3,7 @@
     <div class="row">
       <h1 class="col-sm-5">
         <div class="btn-group">
-          <a href="/tools/strongholdbuilder" class="btn btn-warning">New / Load</button>
+          <a href="/tools/strongholdbuilder" class="btn btn-warning">New / Load</a>
           <button class="btn btn-success" @click="saveNewStronghold()">Save New</button>
           <button class="btn btn-primary" v-if="stronghold._id" @click="saveStronghold()">Save</button>
         </div>

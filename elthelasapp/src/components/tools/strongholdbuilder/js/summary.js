@@ -1,4 +1,5 @@
 import { mapGetters, mapActions } from 'vuex';
+import Decimal from 'decimal.js';
 
 function randNbm() {
   let u = 0;
@@ -77,7 +78,7 @@ export default {
       for (let key in this.stronghold.resources) {
         this.stronghold.resources[key] = Math.round((this.stronghold.resources[key] + Number(rev[key])) * 100) / 100;
         if (this.stronghold.resources[key] < 0) {
-          this.buyResource({ type: key, amount: this.stronghold.resources[key] * -1 });
+          this.stronghold.resources[key] = 0;
         }
       }
       // increment the date
@@ -96,10 +97,14 @@ export default {
         if (!imp.laborersassigned) {
           imp.laborersassigned = 0;
         }
-        let amountconstructed = Number(imp.laborersassigned);
-        let percentdone = amountconstructed / imp.buildtime;
+        let amountconstructed = Decimal(imp.laborersassigned);
 
         if (!imp.private && !imp.dmGift) {
+          let percentdone = amountconstructed.div(imp.buildtime);
+          for (let key in imp.resourceCost) {
+            let cost = percentdone.mul(imp.resourceCost[key]).toFixed(2);
+            imp.resourceCost[key] -= cost;
+          }
           imp.buildtime -= amountconstructed;
         } else if (imp.private) {
           imp.buildtime -= 20;
