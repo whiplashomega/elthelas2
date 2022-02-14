@@ -76,6 +76,9 @@ export default {
       let rev = this.calcTotalRevenue;
       for (let key in this.stronghold.resources) {
         this.stronghold.resources[key] = Math.round((this.stronghold.resources[key] + Number(rev[key])) * 100) / 100;
+        if (this.stronghold.resources[key] < 0) {
+          this.buyResource({ type: key, amount: this.stronghold.resources[key] * -1 });
+        }
       }
       // increment the date
       this.stronghold.gameDay += 1;
@@ -97,13 +100,6 @@ export default {
         let percentdone = amountconstructed / imp.buildtime;
 
         if (!imp.private && !imp.dmGift) {
-          for (var key in imp.resourceCost) {
-            this.stronghold.resources[key] -= Math.ceil((imp.resourceCost[key] * percentdone) * 100) / 100;
-            if (this.stronghold.resources[key] < 0) {
-              this.buyResource({ type: key, amount: this.stronghold.resources[key] * -1 });
-            }
-            imp.resourceCost[key] -= imp.resourceCost[key] * percentdone;
-          }
           imp.buildtime -= amountconstructed;
         } else if (imp.private) {
           imp.buildtime -= 20;

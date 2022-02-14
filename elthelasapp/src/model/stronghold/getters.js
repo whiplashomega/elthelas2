@@ -105,42 +105,11 @@ export default {
       });
       staffratio = numerator / denominator;
     }
-    for (let res in improvement.revenue) {
-      if (improvement.revenue[res] !== 0 && state.current.resources[res] + improvement.revenue[res] * improvement.count < 0) {
-        resourceratios[res] = -state.current.resources[res] / improvement.revenue[res] * improvement.count;
-      }
-    }
     let ops = 0;
     if (improvement.operating) {
       ops = 1;
     }
-    return Math.round(Math.min(
-      resourceratios.alcohol,
-      resourceratios.arcanum,
-      resourceratios.brick,
-      resourceratios.clay,
-      resourceratios.cloth,
-      resourceratios.coal,
-      resourceratios.coffee,
-      resourceratios.consumergoods,
-      resourceratios.cotton,
-      resourceratios.food,
-      resourceratios.furniture,
-      resourceratios.horses,
-      resourceratios.iron,
-      resourceratios.leather,
-      resourceratios.lumber,
-      resourceratios.paper,
-      resourceratios.pottery,
-      resourceratios.raremetal,
-      resourceratios.steel,
-      resourceratios.stone,
-      resourceratios.sugar,
-      resourceratios.timber,
-      resourceratios.wool,
-      staffratio,
-      ops
-    ) * 100) / 100;
+    return Math.round(Math.min(staffratio, ops) * 100) / 100;
   },
   calcGrossRevenue: (state, getters) => {
     let rev = state.current.improvements.reduce((total, imp) => {
@@ -150,7 +119,26 @@ export default {
       }
       return total;
     }, { alcohol: 0, arcanum: 0, brick: 0, clay: 0, cloth: 0, coal: 0, coffee: 0, consumergoods: 0, cotton: 0, food: 0, furniture: 0, horses: 0, iron: 0, leather: 0, lumber: 0, paper: 0, pottery: 0, raremetal: 0, steel: 0, stone: 0, sugar: 0, timber: 0, wool: 0 });
+    let constrev = getters.calcConstructionRevenue();
+    for (let key in rev) {
+      rev[key] -= constrev[key];
+    }
     return rev;
+  },
+  calcConstructionRevenue: (state, getters) => {
+    let resourcecosts = { alcohol: 0, arcanum: 0, brick: 0, clay: 0, cloth: 0, coal: 0, coffee: 0, consumergoods: 0, cotton: 0, food: 0, furniture: 0, horses: 0, iron: 0, leather: 0, lumber: 0, paper: 0, pottery: 0, raremetal: 0, steel: 0, stone: 0, sugar: 0, timber: 0, wool: 0 };
+    state.current.stronghold.construction.forEach((imp) => {
+      if (!imp.laborersassigned) {
+        imp.laborersassigned = 0;
+      }
+      let amountconstructed = Number(imp.laborersassigned);
+      let percentdone = amountconstructed / imp.buildtime;
+      if (!imp.private && !imp.dmGift) {
+        for (var key in imp.resourceCost) {
+          resourcecosts[key] += Math.ceil((imp.resourceCost[key] * percentdone) * 100) / 100;
+        }
+      }
+    });
   },
   calcTotalRevenue: (state, getters) => {
     let rev = { ...getters.calcGrossRevenue };
@@ -167,6 +155,7 @@ export default {
     }, 0);
     return rev;
   },
+  
   calculateIncome: (state, getters) => (improvement) => {
     return Math.round(getters.calcRevRatio(improvement) * improvement.income * improvement.count * 100) / 100;
   },
@@ -190,6 +179,7 @@ export default {
     return revenue;
   },
   expenses: (state, getters) => {
+
     return Math.round((getters.totalSalary + getters.buildingMaintenance + getters.resourceCost) * 100) / 100;
   },
   farmLand: (state) => {
@@ -350,12 +340,20 @@ export default {
     }, 0);
     return Math.round(state.current.laws.propertyTaxRate * privateEnterpriseValue * getters.taxEfficiency) / 10;
   },
-  resourceCost: (state) => {
+  resourceCost: (state, getters) => {
     let resourceRevenue = 0;
     for (let key in state.current.autoSell) {
       let amount = Number(state.current.autoSell[key]);
       if (amount > 0) {
         resourceRevenue += amount * state.buyTable[key];
+      }
+    }
+    let totalRevenue = getters.calcTotalRevenue();
+    let virtualState = state.current.resources.map((x => x));
+    for (let key in virtualState) {
+      virtualState[key] += totalRevenue[key];
+      if (virtualState[key] < 0) {
+        resourceRevenue += virtualState[key] * state.buyTable[key];
       }
     }
     return Math.round(resourceRevenue * 100) / 100;
