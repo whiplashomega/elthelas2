@@ -78,9 +78,6 @@ export default {
     let numerator = 0;
     let denominator = 0;
     let staffratio = 1;
-    let resourceratios = {
-      "alcohol": 1, "arcanum": 1, "brick": 1, "clay": 1, "cloth": 1, "coal": 1, "coffee": 1, "consumergoods": 1, "cotton": 1, "food": 1, "furniture": 1, "horses": 1, "iron": 1, "leather": 1, "lumber": 1, "paper": 1, "pottery": 1, "raremetal": 1, "steel": 1, "stone": 1, "sugar": 1, "timber": 1, "wool": 1
-    };
     if (improvement.staff.length > 0 || improvement.employs > 0) {
       numerator += Number(improvement.laborers);
       denominator += improvement.employs * improvement.count;
@@ -125,7 +122,7 @@ export default {
     }
     return rev;
   },
-  calcConstructionRevenue: (state, getters) => {
+  calcConstructionRevenue: (state) => {
     let resourcecosts = { alcohol: 0, arcanum: 0, brick: 0, clay: 0, cloth: 0, coal: 0, coffee: 0, consumergoods: 0, cotton: 0, food: 0, furniture: 0, horses: 0, iron: 0, leather: 0, lumber: 0, paper: 0, pottery: 0, raremetal: 0, steel: 0, stone: 0, sugar: 0, timber: 0, wool: 0 };
     state.current.construction.forEach((imp) => {
       if (!imp.laborersassigned) {
@@ -139,6 +136,7 @@ export default {
         }
       }
     });
+    return resourcecosts;
   },
   calcTotalRevenue: (state, getters) => {
     let rev = { ...getters.calcGrossRevenue };
@@ -155,7 +153,6 @@ export default {
     }, 0);
     return rev;
   },
-  
   calculateIncome: (state, getters) => (improvement) => {
     return Math.round(getters.calcRevRatio(improvement) * improvement.income * improvement.count * 100) / 100;
   },
@@ -179,7 +176,6 @@ export default {
     return revenue;
   },
   expenses: (state, getters) => {
-
     return Math.round((getters.totalSalary + getters.buildingMaintenance + getters.resourceCost) * 100) / 100;
   },
   farmLand: (state) => {
@@ -349,7 +345,7 @@ export default {
       }
     }
     let totalRevenue = getters.calcTotalRevenue();
-    let virtualState = state.current.resources.map((x => x));
+    let virtualState = state.current.resources.map(x => x);
     for (let key in virtualState) {
       virtualState[key] += totalRevenue[key];
       if (virtualState[key] < 0) {
