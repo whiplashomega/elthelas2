@@ -1,167 +1,157 @@
 <template>
   <div class="print-hide">
-    <b-navbar toggleable="xl" class="site-header sticky-top py-1" type="dark">
-      <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-      <b-collapse is-nav id="nav_collapse">
-        <div class="container d-flex flex-column flex-xl-row justify-content-between">
-          <div>
-            <router-link to="/">Home</router-link>
-          </div>
-          <div class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown"
-               role="button" aria-expanded="false">
-              In-Game Tools<span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-              <li class="dropdown-item"><router-link to="/tools/charbuilder">Character Builder</router-link></li>
-              <li class="dropdown-item" v-if="loggedin"><router-link to="/runner">Encounter Runner</router-link></li>
-              <li class="dropdown-item"><router-link to="/tools/treasuregenerator">Treasure Generator</router-link></li>
-              <li class="dropdown-item"><router-link to="/tools/strongholdbuilder">Stronghold Builder</router-link></li>
-              <li class="dropdown-item" v-if="loggedin"><router-link to="/tools/campaigns">Campaign Builder</router-link></li>
-              <li class="dropdown-item" v-if="loggedin"
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <router-link class="navbar-brand" to="/">Elthelas</router-link>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Characters
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><router-link to="/tools/charbuilder" class="dropdown-item">Character Builder</router-link></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><router-link to="/options/backgrounds" class="dropdown-item">Backgrounds</router-link></li>
+                <li><router-link to="/options/class" class="dropdown-item">Classes</router-link></li>
+                <li><router-link to="/options/domains" class="dropdown-item">Domains</router-link></li>
+                <li><router-link to="/options/feats" class="dropdown-item">Feats</router-link></li>
+                <li><router-link to="/options/languages" class="dropdown-item">Languages</router-link></li>
+                <li><router-link to="/options/races" class="dropdown-item">Races</router-link></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Campaigns
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li v-if="user.isLoggedIn"><router-link to="/tools/campaigns" class="dropdown-item">Campaign Builder</router-link></li>
+                <li v-if="user.isLoggedIn"
                   v-for="campaign in userCampaigns" :key="campaign._id">
-                <router-link :to="'/tools/campaigns/' + campaign.url">{{ campaign.title }}</router-link>
-              </li>
-              <li class="dropdown-item" v-if="loggedin && isadmin"><router-link to="/tools/creaturebuilder">Creature Builder</router-link></li>
-              <li class="dropdown-item" v-if="loggedin"><router-link to="/encounter/builder">Encounter Builder</router-link></li>
-              <li class="dropdown-item" v-if="loggedin"><router-link to="/encounter/random">Random Encounter Table</router-link></li>
-              <li class="dropdown-item" v-if="loggedin"><router-link to="/encounter/details">Encounter List</router-link></li>
-              <li class="dropdown-item"><router-link to="/tools/book4/playersguide">Epic of Elthelas Book 4 - Player's Guide</router-link></li>
-            </ul>
-          </div>
-          <div class="dropdown">
-            <a href="#" class="dropdown-toggle"
-               data-toggle="dropdown" role="button"
-               aria-expanded="false">
-              Character Options <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-              <li class="dropdown-item"><router-link to="/options/backgrounds">Backgrounds</router-link></li>
-              <li class="dropdown-item"><router-link to="/options/class">Classes</router-link></li>
-              <li class="dropdown-item"><router-link to="/options/domains">Domains</router-link></li>
-              <li class="dropdown-item"><router-link to="/options/feats">Feats</router-link></li>
-              <li class="dropdown-item"><router-link to="/options/languages">Languages</router-link></li>
-              <li class="dropdown-item"><router-link to="/options/races">Races</router-link></li>
-            </ul>
-          </div>
-          <div>
-            <router-link to="/geo">Geography</router-link>
-          </div>
-          <div class="dropdown">
-            <a href="#" class="dropdown-toggle"
-               data-toggle="dropdown" role="button"
-               aria-expanded="false">
-              History <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-              <li class="dropdown-item"><router-link to="/history">Timeline View</router-link></li>
-              <li class="dropdown-item"><router-link to="/historylist">List View</router-link></li>
-            </ul>
-          </div>
-          <div class="dropdown">
-            <a href="#" class="dropdown-toggle"
-               data-toggle="dropdown" role="button"
-               aria-expanded="false">
-              Reference <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-              <li class="dropdown-item"><router-link to="/ref/quick">Quick Reference Manual</router-link></li>
-              <li class="dropdown-item"><router-link to="/ref/magicitems">Magic Item Catalog</router-link></li>
-              <li class="dropdown-item" v-if="loggedin"><router-link to="/ref/bestiary">Bestiary</router-link></li>
-              <li class="dropdown-item"><router-link to="/ref/calendar">Calendar</router-link></li>
-              <li class="dropdown-item"><router-link to="/ref/cosmology">Cosmology</router-link></li>
-              <li class="dropdown-item"><router-link to="/ref/astronomy">Astronomy</router-link></li>
-              <li class="dropdown-item"><router-link to="/ref/magic">Magic</router-link></li>
-              <li class="dropdown-item"><router-link to="/ref/gods">Gods</router-link></li>
-              <li class="dropdown-item"><router-link to="/ref/divines">Divine Beings</router-link></li>
-              <li class="dropdown-item"><router-link to="/ref/orgs">Organizations</router-link></li>
-              <li class="dropdown-item"><router-link to="/altasoror">Altasoror</router-link></li>
-            </ul>
-          </div>
-          <div class="dropdown">
-            <a href="#" class="dropdown-toggle"
-               data-toggle="dropdown" role="button"
-               aria-expanded="false">
-              User <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-              <li class="dropdown-item" v-if="loggedin"><a>My Account</a></li>
-              <li class="dropdown-item" v-if="loggedin"><a @click="logout()">Logout</a></li>
-              <li class="dropdown-item" v-if="loggedin"><a @click="switchTheme()">Switch Theme</a></li>
+                  <router-link :to="'/tools/campaigns/' + campaign.url" class="dropdown-item">{{ campaign.title }}</router-link>
+                </li>
+                <li><hr class="dropdown-divider"></li>
+                <li v-if="user.isLoggedIn && user.isAdmin"><router-link to="/tools/creaturebuilder" class="dropdown-item">Creature Builder</router-link></li>
+                <li v-if="user.isLoggedIn"><router-link to="/runner" class="dropdown-item">Encounter Runner</router-link></li>
+                <li v-if="user.isLoggedIn"><router-link to="/encounter/random" class="dropdown-item">Random Encounter Table</router-link></li>
+                <li v-if="user.isLoggedIn"><router-link to="/encounter/details" class="dropdown-item">Encounter List</router-link></li>
+                <li><router-link to="/tools/treasuregenerator" class="dropdown-item">Treasure Generator</router-link></li>
+                <li><router-link to="/tools/strongholdbuilder" class="dropdown-item">Stronghold Builder</router-link></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                World
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><router-link to="/geo" class="dropdown-item">Geography</router-link></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><router-link to="/history" class="dropdown-item">History - Timeline</router-link></li>
+                <li><router-link to="/historylist" class="dropdown-item">History - List</router-link></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Reference
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><router-link to="/ref/quick" class="dropdown-item">Quick Reference Manual</router-link></li>
+              <li><router-link to="/ref/magicitems" class="dropdown-item">Magic Item Catalog</router-link></li>
+              <li v-if="user.isLoggedIn"><router-link to="/ref/bestiary" class="dropdown-item">Bestiary</router-link></li>
+              <li><router-link to="/ref/calendar" class="dropdown-item">Calendar</router-link></li>
+              <li><router-link to="/ref/cosmology" class="dropdown-item">Cosmology</router-link></li>
+              <li><router-link to="/ref/astronomy" class="dropdown-item">Astronomy</router-link></li>
+              <li><router-link to="/ref/magic" class="dropdown-item">Magic</router-link></li>
+              <li><router-link to="/ref/gods" class="dropdown-item">Gods</router-link></li>
+              <li><router-link to="/ref/divines" class="dropdown-item">Divine Beings</router-link></li>
+              <li><router-link to="/ref/orgs" class="dropdown-item">Organizations</router-link></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                User
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li v-if="user.isLoggedIn"><a class="dropdown-item">My Account</a></li>
+              <li v-if="user.isLoggedIn"><a @click="logout()" class="dropdown-item">Logout</a></li>
+              <li v-if="user.isLoggedIn"><a @click="switchTheme()" class="dropdown-item">Switch Theme</a></li>
               <!-- When Logged Out -->
-              <li class="dropdown-item" v-if="!loggedin"><a @click="showRegister = true">Register</a></li>
-              <li class="dropdown-item" v-if="!loggedin"><a @click="showLogin = true">Login</a></li>
-              <li class="dropdown-item" v-if="loggedin"><a @click="showChangePassword = true">Change Password</a></li>
-              <li class="dropdown-item"><router-link to="/privacy-policy">Privacy Policy</router-link></li>
-            </ul>
-          </div>
-          <div class="search-container"><gcse:search></gcse:search></div>
-        </div><!-- /.container-fluid -->
-      </b-collapse>
-    </b-navbar>
-    <header class="header jumbotron" v-if="!hidetitle">
-      <div class="container">
+              <li v-if="!user.isLoggedIn"><a @click="showRegister.isActive = true" class="dropdown-item">Register</a></li>
+              <li v-if="!user.isLoggedIn"><a @click="showLogin.isActive = true" class="dropdown-item">Login</a></li>
+              <li v-if="user.isLoggedIn"><a @click="showChangePassword = true" class="dropdown-item">Change Password</a></li>
+              <li><router-link to="/privacy-policy" class="dropdown-item">Privacy Policy</router-link></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-primary linebutton" @click="hidetitle = !hidetitle" v-if="!hidetitle">Hide Title</button>
+              <button class="btn btn-primary" @click="hidetitle = !hidetitle" v-if="hidetitle">Show Title</button>
+            </li>
+          </ul>
+          <!--<form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>-->
+        </div>
+      </div>
+    </nav>
+    <div style="margin-top:75px;"><!-- spacer --></div>
+    <header class="header jumbotron container-fluid" v-if="!hidetitle">
         <h1>
-          <a href="/">
-            <img src="https://elthelas-images.herokuapp.com/swordshieldlogo.png" alt="" class="logo" />Elthelas Campaign Setting - {{ title }}
-          </a>
+          <img src="https://elthelas-images.herokuapp.com/swordshieldlogo.png" alt="" class="logo" />Elthelas Campaign Setting {{ globals.titleForHeader }}
         </h1>
-        <button class="btn btn-default linebutton" @click="hidetitle = !hidetitle" v-if="!hidetitle">Hide</button>
-      </div>
+        
     </header>
-    <div class="row" v-if="hidetitle"><div class="col-10"><h4 style="margin-left:15px;">Elthelas Campaign Setting - {{ title }}</h4></div><button class="btn btn-default topbutton" @click="hidetitle = !hidetitle">Show</button></div>
-    <b-modal id="loginmodal" size="lg"
-             title="Login" v-model="showLogin"
-             hide-footer :modal-class="userinfo.themesetting">
-      <form name="login" v-if="logonformactive">
-        <div class="form-inline">
-          <label class="col-3">Username:</label> <input type="text" v-model="logincreds.username" class="form-control col-9" />
+    <modal id="loginmodal" :modalProps="showLogin">
+      <template #default>
+        <form name="login" v-if="showLogin.loginformactive">
+          <div class="form-inline">
+            <label class="col-3">Username:</label> <input type="text" v-model="logincreds.username" class="form-control col-9" />
+          </div>
+          <div class="form-inline">
+            <label class="col-3">Password:</label> <input type="password" v-model="logincreds.password" class="form-control col-9" />
+          </div>
+        </form>
+        <div v-else>
+          Logging you in...
         </div>
-        <div class="form-inline">
-          <label class="col-3">Password:</label> <input type="password" v-model="logincreds.password" class="form-control col-9" />
-        </div>
-        <div slot="modal-footer">
-          <div class="btn-group"><button type="button" class="btn btn-default" @click="handleLogin(); logonformactive = false;">Login</button><button type="button" class="btn btn-danger" @click="showLogin=false">Cancel</button></div>
-        </div>
-      </form>
-      <div v-else>
-        Logging you in...
-      </div>
-      <template slot="modal-footer" slot-scope="{ ok, cancel, hide }">
       </template>
-    </b-modal>
-    <b-modal id="registermodal" size="lg"
-             title="Register" v-model="showRegister"
-             hide-footer :modal-class="userinfo.themesetting">
-      <div v-if="logonformactive">
-        <div class="form-inline">
-          <label class="col-3">Username:</label> <input type="text" v-model="registeruser.username" class="form-control col-9" />
-        </div>
-        <div class="form-inline">
-          <label class="col-3">First Name:</label> <input type="text" v-model="registeruser.firstname" class="form-control col-9" />
-        </div>
-        <div class="form-inline">
-          <label class="col-3">Last Name:</label> <input type="text" v-model="registeruser.lastname" class="form-control col-9" />
-        </div>
-        <div class="form-inline">
-          <label class="col-3">Password:</label> <input type="password" v-model="registeruser.password" class="form-control col-9" />
-        </div>
-        <div class="form-inline">
-          <label class="col-3">Confirm Password:</label> <input type="password" v-model="registeruser.passwordConfirm" class="form-control col-9" />
-        </div>
-        <div slot="modal-footer">
-          <div class="btn-group"><button type="button" class="btn btn-default" @click="handleRegister(); logonformactive = false;">Login</button><button type="button" class="btn btn-danger" @click="showRegister=false">Cancel</button></div>
-        </div>
-      </div>
-      <div v-else>
-        Registering, please wait...
-      </div>
-      <template slot="modal-footer" slot-scope="{ ok, cancel, hide }">
+      <template #footer>
+        <div class="btn-group"><button type="button" class="btn btn-primary" @click="handleLogin(); showLogin.loginformactive = false;" :disabled="!showLogin.loginformactive">Login</button><button type="button" class="btn btn-danger" @click="showLogin.isActive=false">Cancel</button></div>
       </template>
-    </b-modal>
-    <b-modal id="changepasswordmodal" size="lg"
+    </modal>
+    <modal id="registermodal" :modalProps="showRegister">
+      <template #default>
+        <div v-if="showRegister.loginformactive">
+          <div class="form-inline">
+            <label class="col-3">Username:</label> <input type="text" v-model="registeruser.username" class="form-control col-9" />
+          </div>
+          <div class="form-inline">
+            <label class="col-3">First Name:</label> <input type="text" v-model="registeruser.firstname" class="form-control col-9" />
+          </div>
+          <div class="form-inline">
+            <label class="col-3">Last Name:</label> <input type="text" v-model="registeruser.lastname" class="form-control col-9" />
+          </div>
+          <div class="form-inline">
+            <label class="col-3">Password:</label> <input type="password" v-model="registeruser.password" class="form-control col-9" />
+          </div>
+          <div class="form-inline">
+            <label class="col-3">Confirm Password:</label> <input type="password" v-model="registeruser.passwordConfirm" class="form-control col-9" />
+          </div>
+        </div>
+        <div v-else>
+          Registering, please wait...
+        </div>
+      </template>
+      <template #footer>
+        <div class="btn-group"><button type="button" class="btn btn-default" @click="handleRegister(); showRegister.loginformactive = false;" :disabled="!showRegister.loginformactive">Register</button><button type="button" class="btn btn-danger" @click="showRegister.isActive=false">Cancel</button></div>
+      </template>
+    </modal>
+    <!--<b-modal id="changepasswordmodal" size="lg"
              title="Update Password" v-model="showChangePassword"
-             hide-footer :modal-class="userinfo.themesetting">
+             hide-footer :modal-class="user.loggedin.themesetting">
       <div v-if="logonformactive">
         <div class="form-inline">
           <label class="col-3">Current Password:</label> <input type="password" v-model="user.password" class="form-control col-9" />
@@ -181,7 +171,7 @@
       </div>
       <template slot="modal-footer" slot-scope="{ ok, cancel, hide }">
       </template>
-    </b-modal>
+    </b-modal> -->
   </div>
 </template>
 <script src="./header/header.js">

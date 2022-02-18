@@ -1,0 +1,71 @@
+@import '@/node_modules/bootstrap/dist/css/bootstrap.css';
+@import './_vars.scss';
+@import './_bootstrapoverride.scss';
+@import './_layout.scss';
+
+.fullBody {
+  min-height: 100vh;
+}
+
+.nav-pills a {
+  padding: 8px 15px;
+  margin: 2px 5px;
+  border-radius: 4px;
+  font-weight: bold;
+  span {
+    display: block;
+  }
+}
+
+.light .nav-pills a {
+  background-color: $sidenavbackground;
+  color: $sidenavcolor;
+}
+.dark .nav-pills a {
+  background-color: $darksidenavbackground;
+  color: $darksidenavcolor;
+}
+.dark.fullBody {
+  background-color: $darkbackground;
+  color: $darktext;
+}
+
+.handle {
+  position: relative;
+  display: block;
+  float: right;
+}
+
+@media print {
+  .print-hide {
+    display: none;
+  }
+  
+  .print-full {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
+.btn-symbol {
+  background: none;
+  border: none;
+}
+
+@media screen {
+  .screen-hide {
+    display: none;
+  }
+}
+
+html {
+  font-size: calc(10px + (16 - 10) * ((100vw - 400px) / (1600 - 300)));
+}
+
+img {
+  max-width: 100%;
+}
+#pagebody {
+  margin-bottom: 60px;
+}
