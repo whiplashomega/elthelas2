@@ -120,7 +120,7 @@ export default {
       let percentdone = amountconstructed.div(imp.buildtime);
       if (!imp.private && !imp.dmGift) {
         for (var key in imp.resourceCost) {
-          resourcecosts[key] += percentdone.mul(imp.resourceCost[key]);
+          resourcecosts[key] += Number(percentdone.mul(imp.resourceCost[key]));
         }
       }
     });
