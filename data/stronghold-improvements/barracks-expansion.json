@@ -1,7 +1,7 @@
 {
   "id": "barracks-expansion",
   "name": "Barracks Expansion",
-  "benefit": "Housing for soldiers, includes beds for 50 staff",
+  "benefit": "Housing for soldiers, includes beds for 50 guards, as well as space for equipment and training, increasing the level of guards in the town by 1.",
   "staff": [{ "name": "Captain", "num": 1, "cur": 0 }],
   "goldCost": 150,
   "resourceCost":  {
@@ -57,8 +57,8 @@
   },
   "laborers": 0,
   "storage": 500,
-  "pop": 0,
-  "staffpop": 50,
+  "pop": 50,
+  "staffpop": 0,
   "employs": 0,
   "operating": true,
   "buildtime": 200,

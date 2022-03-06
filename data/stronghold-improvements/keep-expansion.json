@@ -57,7 +57,7 @@
   },
   "laborers": 0,
   "storage": 3000,
-  "pop": 0,
+  "pop": 5,
   "staffpop": 10,
   "employs": 0,
   "operating": true,
