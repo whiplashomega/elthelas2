@@ -1,27 +1,29 @@
 <script>
-import { RouterLink, RouterView } from 'vue-router';
 import headercomponent from '@/components/global/header.vue';
 import footerComp from '@/components/global/footer.vue';
-import { useRoute } from "vue-router";
+import { useStaticsStore } from '@/stores/index';
 
 export default {
+  setup () {
+    const statics = useStaticsStore();
+    return {
+      statics
+    };
+  },
   components: {
     footerComp,
     headercomponent
   },
-  data: function () {
-    console.log(this.$route)
-    return {
-      title: this.$route.meta.title ? " - " + this.$route.meta.title : ""
-    }
+  created () {
+    this.statics.getAll();
   }
-}
+};
 
 </script>
 
 <template>
-  <div :class="getThemeSetting" class="fullBody">
-    <headercomponent :title="title" />
+  <div class="fullBody">
+    <headercomponent />
     <div class='container-fluid' id="pagebody">
       <div class="row">
         <router-view class="view two col-sm-2" name="sidebar" />

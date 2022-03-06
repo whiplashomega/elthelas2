@@ -1,10 +1,16 @@
-import { mapGetters } from 'vuex';
+import { useStaticsStore } from '@/stores/index';
+import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 
 export default {
+  setup () {
+    const statics = useStaticsStore();
+    
+    return {
+      statics,
+      marked
+    }
+  },
   computed: {
-    ...mapGetters({
-      feats: 'allFeats'
-    }),
     featsort() {
       function ftsrt (a, b) {
         if (a.name > b.name) {
@@ -14,11 +20,7 @@ export default {
         }
         return 0;
       }
-      return this.feats.sort(ftsrt);
+      return this.statics.feats.sort(ftsrt);
     }
   },
-  data: function () {
-    return {};
-  },
-  methods: {}
 };

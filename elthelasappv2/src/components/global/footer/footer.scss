@@ -1,0 +1,17 @@
+@import "../../scss/_vars";
+
+.footer {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: $header;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  @media print {
+    display: none;
+  }
+}
+
+.dark .footer {
+  background-color: $darkheader;
+}

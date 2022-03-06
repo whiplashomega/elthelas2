@@ -47,7 +47,7 @@
                 World
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><router-link to="/geo" class="dropdown-item">Geography</router-link></li>
+                <li><router-link to="/world/geography" class="dropdown-item">Geography</router-link></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><router-link to="/history" class="dropdown-item">History - Timeline</router-link></li>
                 <li><router-link to="/historylist" class="dropdown-item">History - List</router-link></li>

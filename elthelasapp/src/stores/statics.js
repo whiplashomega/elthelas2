@@ -2,6 +2,7 @@ import axios from 'axios';
 import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 import droll from 'droll';
 import helpers from './magicitems/helpers';
+import seedrandom from 'seedrandom';
 
 export default {
   state: () => {
@@ -139,7 +140,7 @@ export default {
       return new Promise ((resolve) => {
         axios.get('/json/equipment.json').then((response) => {
           this.equipment = response.data;
-          response(true);
+          resolve(true);
         });
       });
     },
@@ -317,7 +318,7 @@ export default {
               helpers.wandBuilder(this.spells[y], items);
             }
             var today = new Date();
-            Math.seedrandom(today.getYear() + today.getMonth() + today.getDate());
+            seedrandom(today.getYear() + today.getMonth() + today.getDate());
             for (var x = 0; x < items.length; x++) {
               items[x].print = false;
               var threshold = 1;
@@ -343,7 +344,7 @@ export default {
                 threshold *= 0;
                 this.magiclegendaries.push(items[x]);
               } else {
-                this.allcommons.push(items[x]);
+                this.magiccommons.push(items[x]);
               }
               if (Math.random() < threshold) {
                 items[x].instock = "In Stock";
@@ -367,6 +368,30 @@ export default {
             resolve(true);
           });
         });
+      });
+    },
+    getAll () {
+      return new Promise ((resolve) => {
+        Promise.all([
+          this.getAllMagicItems(),
+          this.getAllContinents(),
+          this.getAllBackgrounds(),
+          this.getAllDivines(),
+          this.getAllEquipment(),
+          this.getAllFeats(),
+          this.getAllGods(),
+          this.getAllEvents(),
+          this.getAllOrganizations(),
+          this.getAllRaces(),
+          this.getAllValuables(),
+          this.getAllClasses(),
+          this.getAllTerritories(),
+          this.getAllCities(),
+          this.getAllNations(),
+          this.getAllLandmarks(),
+          this.getAllFeatures()]).then(() => {
+            resolve(true);
+          });
       });
     }
   }

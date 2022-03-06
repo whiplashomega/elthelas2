@@ -25,7 +25,7 @@ app.start = function() {
     console.log("starting");
     // connect to our mongoDB database 
     // (uncomment after you enter in your own credentials in config/db.js)
-    mongoose.connect(config.mongoUrl, { useFindAndModify: false }, function(err, res) {
+    mongoose.connect(config.mongoUrl, { }, function(err, res) {
         if(err) {
             console.log('ERROR connecting to: ' + config.mongoUrl + '. ' + err);
         } else {

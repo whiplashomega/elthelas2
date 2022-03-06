@@ -1,0 +1,165 @@
+@import '../../scss/vars';
+
+.site-header {
+  background-color: $navbackground;
+  color: white;
+  font-weight: bold;
+}
+.dark .site-header {
+}
+.site-header a {
+  color: white;
+}
+
+.site-header .container div {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.site-header .dropdown-menu a {
+  color: black;
+}
+
+.dark .site-header {
+  background-color: $darknavbackground;
+  .dropdown-menu {
+    background-color: $darkbackground;
+    border: 1px solid $darktext;
+    li:hover {
+      background-color: $darknavbackground;
+    }
+    a {
+      color: $darktext;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+.light .jumbotron, .dark .jumbotron {  
+  p {
+    clear: both;
+    margin: none;
+  }
+  @media (min-width: 576px) {
+    padding: 3rem 0rem;
+  }
+  position: relative;
+  .linebutton {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    border-radius: 4px 4px 0px 0px;
+  }
+  h1 a {
+    @media (max-width: 767px) {
+      }
+  }
+  @media (max-width: 768px) {
+    padding: 1rem 0rem;
+    border-radius: 0;
+    h1 {
+      line-height: 1;
+      a {
+        font-size: 0.5em;
+        img {
+          display: none;
+        }
+        span {
+          display: block;
+          float: left;
+          max-width: 65%;
+        }
+      }
+    }
+    button {
+      display: none;
+    }
+  }
+}
+.light .jumbotron {
+  background-color: $header;
+  h1 a {
+    color: $headertext;
+  }
+}
+.dark .jumbotron {
+  background-color: $darkheader;
+  h1 a {
+    color: $darkheadertext;
+  }
+}
+
+  .topbutton {
+    border-radius: 0px 0px 4px 4px;
+  }
+
+.form-inline {
+  label {
+    justify-content: right;
+  }
+  margin-bottom: 5px;
+}
+
+
+.site-header .container .search-container {
+  @media screen and (min-width: 1024px) {
+    max-width: 20%;
+  }
+  padding: 10px 0px;
+  div {
+    padding: 0;
+  }
+  .gsc-control-cse {
+    background-color: $navbackground;
+    border: none;
+  }
+  
+  .gsc-input-box {
+    border-radius: 4px;
+    height: 2.6em;
+    input.gsc-input {
+      width: 100%;
+      line-height: 32px;
+      border-radius: 4px;
+    }
+    .gsib_a {
+      padding-top: 0px;
+    }
+  }
+  
+  table.gsc-search-box {
+    margin-bottom: 0;
+  }
+  
+  .gsc-search-button {
+    height: 2.5em;
+    border-radius: 4px;
+    background-color: $success;
+    padding: 0px 4px;
+  }
+  .gsc-search-botton:hover {
+  }
+  .gsc-search-button-v2 {
+    border: none;
+    margin-top: 0;
+    height: 100%;
+  }
+  
+  .gsc-search-button-v2:hover {
+    background-color: $successhover;
+  }
+}
+
+.dark .site-header .container .search-container {
+  .gsc-control-cse {
+    background-color: $darknavbackground;
+  }
+  .gsc-search-button {
+    background-color: $darksuccess;
+  }
+  .gsc-search-button-v2:hover {
+    background-color: $darksuccesshover;
+  }
+}

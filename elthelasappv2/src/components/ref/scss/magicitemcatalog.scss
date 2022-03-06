@@ -1,0 +1,11 @@
+@media print {
+  h4 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 15px;
+  }
+  .print-hide {
+    display: none;
+  }
+}

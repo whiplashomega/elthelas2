@@ -51,7 +51,7 @@ const router = createRouter({
     },
     {
       path: "/options/class/:id",
-      name: "classes",
+      name: "specclass",
       components: {
         default: () => import('@/views/character/class.vue')
       },
@@ -70,7 +70,62 @@ const router = createRouter({
         title: "Domains",
         auth: false
       }
-    }
+    },
+    {
+      path: "/options/feats",
+      name: "feats",
+      components: {
+        default: () => import('@/views/character/feats.vue')
+      },
+      meta: {
+        title: "Feats",
+        auth: false
+      }
+    },
+    {
+      path: "/options/languages",
+      name: "languages",
+      components: {
+        default: () => import('@/views/character/languages.vue')
+      },
+      meta: {
+        title: "Languages",
+        auth: false
+      }
+    },
+    {
+      path: "/options/races",
+      name: "races",
+      components: {
+        default: () => import('@/views/character/races.vue')
+      },
+      meta: {
+        title: "Character Races",
+        auth: false
+      }
+    },
+    {
+      path: "/world/geography",
+      name: "Geography",
+      components: {
+        default: () => import('@/views/world/geography.vue')
+      },
+      meta: {
+        title: "Geography",
+        auth: false
+      }
+    },
+    {
+      path: "/world/geography/:type/:name",
+      name: "Geography Specifics",
+      components: {
+        default: () => import('@/views/world/geography.vue')
+      },
+      meta: {
+        title: "Geography",
+        auth: false
+      }
+    },
     /*{
       path: '/about',
       name: 'about',
