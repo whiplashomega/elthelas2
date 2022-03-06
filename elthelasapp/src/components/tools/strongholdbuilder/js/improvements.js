@@ -130,6 +130,10 @@ export default {
       if (this.addImediately) {
         buildtime = 0;
       }
+      improvement.dmGift = false;
+      if (this.dmGift) {
+        improvement.dmGift = true;
+      }
       if (buildtime > 0) {
         this.stronghold.construction.push({
           ...improvement,
@@ -139,12 +143,8 @@ export default {
       } else {
         this.addImprovement(improvement);
       }
-      improvement.dmGift = false;
       if (!this.dmGift && !improvement.private) {
         this.addToTreasury({ changeby: -improvement.goldCost, record: "Begin construction on " + improvement.name });
-      }
-      if (this.dmGift) {
-        improvement.dmGift = true;
       }
       this.addImprovementModal = false;
     }

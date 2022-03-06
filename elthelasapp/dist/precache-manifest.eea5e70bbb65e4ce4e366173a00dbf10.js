@@ -1,79 +1,79 @@
 self.__precacheManifest = [
   {
-    "revision": "9ba7eee680d738276f701cd70d7f0d4c",
-    "url": "/json/gods.json"
+    "revision": "6aae083ac3cfefbaa90b67c1da319cf9",
+    "url": "/json/landmarks.json"
+  },
+  {
+    "revision": "6a63da1c7305b86f96c480edf01e587e",
+    "url": "/static/md/book4/pcs.md"
   },
   {
     "revision": "2c0c0b0008f1399bde41ecb582de658d",
     "url": "/static/md/book4/theworld.md"
   },
   {
-    "revision": "635b42a762b3568fed4f66408382c5fa",
-    "url": "/json/history.json"
+    "revision": "2dc0eb456bd2d749e15b2b93036de7e7",
+    "url": "/static/md/book4/progression.md"
   },
   {
-    "revision": "b08669597f76c1d92374",
-    "url": "/css/characterbuilder.7e7345b9.css"
+    "revision": "fc7ce4b2cdb195adcae2a6cbd41fd9b2",
+    "url": "/json/nations.json"
   },
   {
     "revision": "9800906884c343211bb3",
     "url": "/css/chunk-vendors.26bfef8d.css"
   },
   {
-    "revision": "9800906884c343211bb3",
-    "url": "/js/chunk-vendors.741fe0d7.js"
-  },
-  {
-    "revision": "782b02c4afee7615da36",
+    "revision": "1a302869d10a3acf597d",
     "url": "/css/classes.62389ca8.css"
   },
   {
-    "revision": "782b02c4afee7615da36",
-    "url": "/js/classes.69430328.js"
+    "revision": "1a302869d10a3acf597d",
+    "url": "/js/classes.c2f8aa9d.js"
   },
   {
-    "revision": "ec6a4934099bbef01242",
+    "revision": "b51c67762cd615d3de34",
     "url": "/css/domains.88b095da.css"
   },
   {
-    "revision": "ec6a4934099bbef01242",
-    "url": "/js/domains.49370933.js"
+    "revision": "b51c67762cd615d3de34",
+    "url": "/js/domains.c2e143e3.js"
   },
   {
-    "revision": "7510d0c919b981c08a8a",
+    "revision": "6069bb7a92a30d4e1b76",
     "url": "/css/encounters.8b5fefc0.css"
   },
   {
-    "revision": "7510d0c919b981c08a8a",
-    "url": "/js/encounters.c4b51e65.js"
+    "revision": "6069bb7a92a30d4e1b76",
+    "url": "/js/encounters.8e76884d.js"
   },
   {
-    "revision": "c73910966050c63c022d",
+    "revision": "2935bb78974c8ea1456b",
     "url": "/css/geography.17c98172.css"
   },
   {
-    "revision": "c73910966050c63c022d",
-    "url": "/js/geography.e3fe0111.js"
+    "revision": "2935bb78974c8ea1456b",
+    "url": "/js/geography.5c66b805.js"
   },
   {
-    "revision": "631f348cb27044b4d5b8",
+    "revision": "ce1164d46202d1e07dab",
     "url": "/css/magicitems.e1b27851.css"
   },
   {
-    "revision": "631f348cb27044b4d5b8",
-    "url": "/js/magicitems.9b713e2a.js"
+    "revision": "ce1164d46202d1e07dab",
+    "url": "/js/magicitems.a90b4ec4.js"
   },
   {
-    "revision": "30a34ab81f1515da7878",
+    "revision": "b8f0c2aac632177287bb",
     "url": "/css/quickref.4d2ec05b.css"
   },
   {
-    "revision": "30a34ab81f1515da7878",
-    "url": "/js/quickref.86d4f5fd.js"
+    "revision": "b8f0c2aac632177287bb",
+    "url": "/js/quickref.a8281286.js"
   },
   {
-    "revision": "9acba3f87e8f6e518de5",
-    "url": "/js/treasure.d8f26eef.js"
+    "revision": "e26403c26633173a91e8",
+    "url": "/js/treasure.43b17c3a.js"
   },
   {
     "revision": "b0f49cd26ba67885381b66e77665bf02",
@@ -92,24 +92,12 @@ self.__precacheManifest = [
     "url": "/img/tl-icons.82a4fd3f.svg"
   },
   {
-    "revision": "e7f3b3c6115303b7df98cb378102f021",
+    "revision": "ff441da21414a3e0901274a41cf21678",
     "url": "/index.html"
   },
   {
-    "revision": "2dc0eb456bd2d749e15b2b93036de7e7",
-    "url": "/static/md/book4/progression.md"
-  },
-  {
-    "revision": "fe9884553a1ae2ea1bb0d6f76a8d4822",
-    "url": "/js/locale/el.json"
-  },
-  {
-    "revision": "d3d9140c4d912e18b894495d6c87f2df",
-    "url": "/js/timeline.js"
-  },
-  {
-    "revision": "efc28f3579bb800850de349535a7af21",
-    "url": "/js/timeline.min.js"
+    "revision": "0c6faf4be2e9a818ce23",
+    "url": "/js/characterbuilder.796a65af.js"
   },
   {
     "revision": "97971c100baf08dd95f249aa532e758b",
@@ -124,16 +112,16 @@ self.__precacheManifest = [
     "url": "/json/cities.json"
   },
   {
-    "revision": "39c6b71b3232baf67f468a78a4a3a3d5",
-    "url": "/json/classes.json"
+    "revision": "fe9884553a1ae2ea1bb0d6f76a8d4822",
+    "url": "/js/locale/el.json"
   },
   {
     "revision": "9244c832181dbca0f160b96903c03cd7",
     "url": "/json/continents.json"
   },
   {
-    "revision": "32c201beacfba71b515232a22496b7f0",
-    "url": "/json/creatures.json"
+    "revision": "39c6b71b3232baf67f468a78a4a3a3d5",
+    "url": "/json/classes.json"
   },
   {
     "revision": "46f6d4c425cb81b5f7caac93d24ad5dc",
@@ -152,28 +140,28 @@ self.__precacheManifest = [
     "url": "/json/features.json"
   },
   {
-    "revision": "294d28669dd1ac447005",
-    "url": "/js/app.0de60188.js"
+    "revision": "9ba7eee680d738276f701cd70d7f0d4c",
+    "url": "/json/gods.json"
   },
   {
-    "revision": "b08669597f76c1d92374",
-    "url": "/js/characterbuilder.0b10f24d.js"
+    "revision": "635b42a762b3568fed4f66408382c5fa",
+    "url": "/json/history.json"
   },
   {
     "revision": "f44aacb76113713e70e7ae0aac5d9e1f",
     "url": "/json/improvements.json"
   },
   {
-    "revision": "6aae083ac3cfefbaa90b67c1da319cf9",
-    "url": "/json/landmarks.json"
+    "revision": "9eb90b80156397e62a5f",
+    "url": "/js/app.db20983e.js"
   },
   {
     "revision": "9348b1d3726cfe9a710263faef6fe679",
     "url": "/json/magicitems.json"
   },
   {
-    "revision": "fc7ce4b2cdb195adcae2a6cbd41fd9b2",
-    "url": "/json/nations.json"
+    "revision": "9800906884c343211bb3",
+    "url": "/js/chunk-vendors.741fe0d7.js"
   },
   {
     "revision": "8f22049b21deeb5f8766e8b0293801c5",
@@ -188,8 +176,8 @@ self.__precacheManifest = [
     "url": "/json/races.json"
   },
   {
-    "revision": "98e231a771d3bd2141157c443f0c3314",
-    "url": "/json/spells.json"
+    "revision": "32c201beacfba71b515232a22496b7f0",
+    "url": "/json/creatures.json"
   },
   {
     "revision": "eb7f5a3b511fb8b7e6a60fcd7c328d63",
@@ -216,6 +204,14 @@ self.__precacheManifest = [
     "url": "/static/md/book.md"
   },
   {
+    "revision": "98e231a771d3bd2141157c443f0c3314",
+    "url": "/json/spells.json"
+  },
+  {
+    "revision": "efc28f3579bb800850de349535a7af21",
+    "url": "/js/timeline.min.js"
+  },
+  {
     "revision": "00c804dcff8ed49b07fa8fab13faf389",
     "url": "/static/md/book4/chapter1.md"
   },
@@ -228,16 +224,20 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chapter11.md"
   },
   {
-    "revision": "e6bccb97b7f80cc1ee1d115edb4fd25d",
-    "url": "/static/md/book4/chapter12.md"
-  },
-  {
     "revision": "4c5b11958f5fe61f98f10a7bb10b16af",
     "url": "/static/md/book4/chapter13.md"
   },
   {
+    "revision": "e6bccb97b7f80cc1ee1d115edb4fd25d",
+    "url": "/static/md/book4/chapter12.md"
+  },
+  {
     "revision": "63a9d0758a75c813df5826e8f43d7732",
     "url": "/static/md/book4/chapter14.md"
+  },
+  {
+    "revision": "d3d9140c4d912e18b894495d6c87f2df",
+    "url": "/js/timeline.js"
   },
   {
     "revision": "a03092bf9c5844541f055daad071a492",
@@ -248,20 +248,20 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chapter2.md"
   },
   {
-    "revision": "8e31e4f897e9abf93cc23356bdda7980",
-    "url": "/static/md/book4/chapter2old.md"
-  },
-  {
     "revision": "b59ed4e72d1e0934d2974fb27eb0ce35",
     "url": "/static/md/book4/chapter3.md"
   },
   {
-    "revision": "0f3706bbf9968b8f0f3209cf69b52a59",
-    "url": "/static/md/book4/chapter3old.md"
+    "revision": "8e31e4f897e9abf93cc23356bdda7980",
+    "url": "/static/md/book4/chapter2old.md"
   },
   {
     "revision": "fcf8be2d52b70b074a0a7a4d62777969",
     "url": "/static/md/book4/chapter4.md"
+  },
+  {
+    "revision": "0f3706bbf9968b8f0f3209cf69b52a59",
+    "url": "/static/md/book4/chapter3old.md"
   },
   {
     "revision": "c37156a220b3a2dda57343f2c2cc6dcb",
@@ -272,12 +272,12 @@ self.__precacheManifest = [
     "url": "/static/md/book4/chapter6.md"
   },
   {
-    "revision": "9fa07e9ef515faf9739f8b975ed62b75",
-    "url": "/static/md/book4/chapter7.md"
-  },
-  {
     "revision": "408bd6e11ad4774bb150fa0abd2d544b",
     "url": "/static/md/book4/chapter7old.md"
+  },
+  {
+    "revision": "9fa07e9ef515faf9739f8b975ed62b75",
+    "url": "/static/md/book4/chapter7.md"
   },
   {
     "revision": "deb69e20439bb1e4ee55ff6e2affdadd",
@@ -296,11 +296,11 @@ self.__precacheManifest = [
     "url": "/static/md/book4/curestan.md"
   },
   {
-    "revision": "6a63da1c7305b86f96c480edf01e587e",
-    "url": "/static/md/book4/pcs.md"
+    "revision": "0c6faf4be2e9a818ce23",
+    "url": "/css/characterbuilder.7e7345b9.css"
   },
   {
-    "revision": "294d28669dd1ac447005",
+    "revision": "9eb90b80156397e62a5f",
     "url": "/css/app.5f2998ba.css"
   },
   {
