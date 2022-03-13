@@ -485,7 +485,7 @@ export default {
     }, 0);
   },
   employablePeople: (state) => {
-    return Number(state.current.population.adults) + state.current.staff.length + Number(state.current.guards) + Number(state.current.servants) + Number(state.current.privateEmployees.length);
+    return Number(state.current.population.adults) + state.current.staff.length + Number(state.current.privateEmployees.length);
   },
   unemploymentRate: (state, getters) => {
     return Math.max(state.current.population.adults ? Math.round((1 - ((getters.totalEmployees + getters.totalPrivateEmployed) / getters.employablePeople)) * 100) : 0, 0);
