@@ -12,17 +12,20 @@
       </h1>
       <div class="col-sm-7">
         <div class="row">
-          <div :class="netRevenue < 0 ? 'red' : ''" class="col-sm-3">
+          <div :class="netRevenue < 0 ? 'red' : ''" class="col-sm-2">
             <strong>Gold: </strong> {{ stronghold.treasury }} (<span v-if="netRevenue >= 0">+</span>{{ netRevenue }})
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-2">
             <strong>Available Beds: </strong> {{ availableStaffBeds }}
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-2">
             <strong>Total Staff Beds:</strong> {{ staffBeds }}
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-2">
             <strong>Unrest: </strong> {{ unrest }}%
+          </div>
+          <div class="col-sm-2">
+            <strong>Adj. Unrest: </strong> <input type="number" v-model="stronghold.laws.adjustedunrest" />
           </div>
         </div>
         <div class="row">

@@ -1,5 +1,7 @@
 import { mapGetters, mapActions } from 'vuex';
 import Decimal from 'decimal.js';
+import droll from 'droll';
+import randomEvents from './randomEvents.js';
 
 function randNbm() {
   let u = 0;
@@ -38,7 +40,8 @@ export default {
       newmodal: true,
       dayofweek: "Godsday",
       dayNames: ["Godsday", "Elvesday", "Gnomesday", "Dragonsday", "Mansday", "Dwarvesday", "Orcsday"],
-      monthNames: ["Neradan", "Dorunor", "Trimalan", "Sylvanus", "Gaiana", "Alohiman", "Coranus", "Moltyr", "Saris", "Maridia", "Tockra", "Amatherin"]
+      monthNames: ["Neradan", "Dorunor", "Trimalan", "Sylvanus", "Gaiana", "Alohiman", "Coranus", "Moltyr", "Saris", "Maridia", "Tockra", "Amatherin"],
+      randomEvents: randomEvents
     };
   },
   methods: {
@@ -54,6 +57,13 @@ export default {
       addToTreasury: 'addToTreasury',
       addImprovement: 'addImprovement'
     }),
+    randomEventsLookup (roll) {
+      return this.randomEvents.filter((a) => {
+        if (a.minroll <= roll && a.maxroll >= roll) {
+          return true;
+        }
+      })[0];
+    },
     newDay () {
       // reduce food subsidies if necessary
       if (this.stronghold.laws.foodSubsidies > this.stronghold.resources.food) {
@@ -125,7 +135,8 @@ export default {
       let dayselapsedSinceCalendarStart = this.stronghold.gameYear * 365 + this.stronghold.gameMonth * 30 + this.stronghold.gameDay;
       this.dayofweek = this.dayNames[dayselapsedSinceCalendarStart % 7];
       this.month = this.monthNames[this.stronghold.gameMonth - 1];
-      alert("A new day has begun. It is the " + this.stronghold.gameDay + "th day of " + this.month + ", " + this.dayofweek + ". it is " + this.stronghold.currentTemperature + " degrees outside. " + this.stronghold.rainString + ". The average windspeed is " + this.stronghold.windSpeed + " mph");
+      let randRoll = Number(droll.roll('2d100')) + Number(this.stronghold.laws.adjustedunrest);
+      alert("A new day has begun. It is the " + this.stronghold.gameDay + "th day of " + this.month + ", " + this.dayofweek + ". it is " + this.stronghold.currentTemperature + " degrees outside. " + this.stronghold.rainString + ". The average windspeed is " + this.stronghold.windSpeed + " mph\n\nRandom Event: " + randRoll + " - " + this.randomEventsLookup(randRoll).eventText);
     },
     calcWeather () {
       let season = 3;

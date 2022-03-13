@@ -3,6 +3,7 @@ import improvements from '@/components/tools/strongholdbuilder/improvements';
 import staff from '@/components/tools/strongholdbuilder/staff';
 import summary from '@/components/tools/strongholdbuilder/summary';
 import generalInformation from '@/components/tools/strongholdbuilder/generalinformation';
+import randomEvents from './randomEvents.js';
 
 export default {
   components: {
@@ -103,6 +104,7 @@ export default {
         "timber": 0,
         "wool": 0
       },
+      randomEvents: randomEvents,
       changeby: 0,
       record: "",
       showTransactionRecord: false,
