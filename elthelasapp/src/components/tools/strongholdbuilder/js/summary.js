@@ -135,8 +135,9 @@ export default {
       let dayselapsedSinceCalendarStart = this.stronghold.gameYear * 365 + this.stronghold.gameMonth * 30 + this.stronghold.gameDay;
       this.dayofweek = this.dayNames[dayselapsedSinceCalendarStart % 7];
       this.month = this.monthNames[this.stronghold.gameMonth - 1];
-      let randRoll = Number(droll.roll('2d100')) + Number(this.stronghold.laws.adjustedunrest);
-      alert("A new day has begun. It is the " + this.stronghold.gameDay + "th day of " + this.month + ", " + this.dayofweek + ". it is " + this.stronghold.currentTemperature + " degrees outside. " + this.stronghold.rainString + ". The average windspeed is " + this.stronghold.windSpeed + " mph\n\nRandom Event: " + randRoll + " - " + this.randomEventsLookup(randRoll).eventText);
+      let randRoll = Number(droll.roll('1d100')) + Number(droll.roll('1d100'));
+      let totalRoll = randRoll + Number(this.stronghold.laws.adjustedunrest);
+      alert("A new day has begun. It is the " + this.stronghold.gameDay + "th day of " + this.month + ", " + this.dayofweek + ". it is " + this.stronghold.currentTemperature + " degrees outside. " + this.stronghold.rainString + ". The average windspeed is " + this.stronghold.windSpeed + " mph\n\nRandom Event: " + totalRoll + " - " + this.randomEventsLookup(totalRoll).eventText);
     },
     calcWeather () {
       let season = 3;

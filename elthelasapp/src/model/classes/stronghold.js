@@ -151,7 +151,8 @@ export default function () {
       rainfall: 0,
       temperature: 50,
       continental: false,
-      lattitude: 0
+      lattitude: 0,
+      adjustedunrest: 0
     },
     merchants: [],
     guards: 0,
