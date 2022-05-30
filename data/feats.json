@@ -110,6 +110,11 @@
     "description": "You can use your armor to deflect strikes that would kill others. You gain the following benefits:\n\n* Increase your Strength score by 1, to a maximum of 20.\n* While you are wearing heavy armor, bludgeoning, piercing, and slashing damage that you take from non-magical weapons is reduced by 3."
   },
   {
+    "name": "Opportunistic Fighter",
+    "prereq": "",
+    "description": "You are able to maximize the opportunities you get in combat, exploiting weaknesses in an enemies defenses to deal lethal damage. * You score a critical hit on a roll of 19-20 instead of just 20.\n* When you hit with an opportunity attack while wielding a melee weapon, you deal an extra die of the weapons damage."
+  },
+  {
     "name": "Inspiring Leader",
     "prereq": "Charisma 13 or higher",
     "description": "You can spend 10 minutes inspiring your companions, shoring up their resolve to fight. When you do so, choose up to six friendly creatures (which can include yourself) within 30 feet of you who can see or hear you and who can understand you. Each creature can gain temporary hit points equal to your level + your Charisma modifier. A creature can’t gain temporary hit points from this feat again until it has finished a short or long rest."
