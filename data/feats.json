@@ -110,7 +110,7 @@
     "description": "You can use your armor to deflect strikes that would kill others. You gain the following benefits:\n\n* Increase your Strength score by 1, to a maximum of 20.\n* While you are wearing heavy armor, bludgeoning, piercing, and slashing damage that you take from non-magical weapons is reduced by 3."
   },
   {
-    "name": "Opportunistic Fighter",
+    "name": "Opportunistic Fighter (Homebrew)",
     "prereq": "",
     "description": "You are able to maximize the opportunities you get in combat, exploiting weaknesses in an enemies defenses to deal lethal damage. * You score a critical hit on a roll of 19-20 instead of just 20.\n* When you hit with an opportunity attack while wielding a melee weapon, you deal an extra die of the weapons damage."
   },
