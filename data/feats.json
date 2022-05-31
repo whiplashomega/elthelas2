@@ -112,7 +112,7 @@
   {
     "name": "Opportunistic Fighter (Homebrew)",
     "prereq": "",
-    "description": "You are able to maximize the opportunities you get in combat, exploiting weaknesses in an enemies defenses to deal lethal damage. * You score a critical hit on a roll of 19-20 instead of just 20.\n* When you hit with an opportunity attack while wielding a melee weapon, you  deal an extra die of the weapons damage."
+    "description": "You are able to maximize the opportunities you get in combat, exploiting weaknesses in an enemies defenses to deal lethal damage.\n* You score a critical hit on a roll of 19-20 instead of just 20.\n* When you hit with an opportunity attack while wielding a melee weapon, you deal an extra die of the weapons damage."
   },
   {
     "name": "Inspiring Leader",
