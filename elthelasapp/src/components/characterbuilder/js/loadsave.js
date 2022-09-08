@@ -1,35 +1,39 @@
 import { useCharacterStore, useUserStore } from '@/stores/index';
 import { storeToRefs } from 'pinia';
+import modal from '@/components/global/modal.vue';
 
 export default {
   setup () {
-    const characters = useCharacterStore();
+    const characterStore = useCharacterStore();
     const userinfo = useUserStore();
     
     const { googletoken, loggedin, token } = storeToRefs(userinfo);
-    const { character, charlevel, charGroups: groups } = storeToRefs(characters);
+    const { character, characters, charlevel, charGroups: groups } = storeToRefs(characterStore);
     
-    const getDriveFiles = characters.getDriveFiles;
-    const saveToDrive = characters.saveToDrive;
-    const getFromServer = characters.getFromServer;
-    const getFromServerSilent = characters.getFromServerSilent;
-    const updateToServer = characters.updateToServer;
-    const updateToServerSilent = characters.updateToServerSilent;
-    const newToServer = characters.newToServer;
-    const saveCharacter = characters.saveCharacter;
-    const loadCharacter = characters.loadCharacter;
-    const resetCharacter = characters.resetCharacter;
+    const getDriveFiles = characterStore.getDriveFiles;
+    const saveToDrive = characterStore.saveToDrive;
+    const getFromServer = characterStore.getFromServer;
+    const getOneFromServer = characterStore.getOneFromServer;
+    const getFromServerSilent = characterStore.getFromServerSilent;
+    const updateToServer = characterStore.updateToServer;
+    const updateToServerSilent = characterStore.updateToServerSilent;
+    const newToServer = characterStore.newToServer;
+    const saveCharacter = characterStore.saveCharacter;
+    const loadCharacter = characterStore.loadCharacter;
+    const resetCharacter = characterStore.resetCharacter;
     
     return {
       googletoken,
       loggedin,
       token,
       character,
+      characters,
       charlevel,
       groups,
       getDriveFiles,
       saveToDrive,
       getFromServer,
+      getOneFromServer,
       getFromServerSilent,
       updateToServer,
       updateToServerSilent,
@@ -56,11 +60,33 @@ export default {
       });
     }
   },
+  components: {
+    modal
+  },
   props: { minimal: Boolean },
   data () {
     return {
-      comp: this
+      comp: this,
+      groupfilter: "all",
+      serverModalProps: { isActive: false, title: "Load Character" },
+      loadingModalProps: { isActive: false, title: "Load Character" }
     };
+  },
+  methods: {
+    getChars () {
+      this.loadingModalProps.isActive = true;
+      this.getFromServer(this).then((res) => {
+        console.log(res);
+        if (res) {
+          this.loadingModalProps.isActive = false;
+          this.serverModalProps.isActive = true;
+        }
+      });
+    },
+    loadChar (id) {
+      this.getOneFromServer(id);
+      this.serverModalProps.isActive = false;
+    }
   },
   watch: {
     character: {

@@ -2,19 +2,23 @@
   <div class="charsheet-static smalltext">
     <h4>Various Resources</h4>
     <div class="row" v-for="(resource, index) in character.resources"
-         :key="index">
+         :key="index" style="margin-top: 2px;">
       <div class="col-5">
         <input type="text" v-model="resource.name" class="charsheet-text" />
       </div>
-      <button class="btn btn-sm btn-primary print-hide" @click="useResource(index)">Use</button>
-      <input type="number" class="charsheet-num" v-model="resource.current" /> /
-      <input type="number" class="charsheet-num" v-model="resource.max" />
-      <select v-model="resource.recharge" class="charsheet-text col-3">
-        <option value="never">Never/Other</option>
-        <option value="shortrest">Short Rest</option>
-        <option value="longrest">Long Rest</option>
-      </select>
-      <button class="btn btn-sm btn-danger print-hide" @click="removeResource(index)">X</button>
+      <button class="btn btn-sm btn-primary print-hide col-1" @click="useResource(index)">Use</button>
+      <div class="col-2">
+        <input type="number" class="charsheet-num" v-model="resource.current" /> /
+        <input type="number" class="charsheet-num" v-model="resource.max" />
+      </div>
+      <div class="col-2">
+        <select v-model="resource.recharge" class="charsheet-text">
+          <option value="never">Never/Other</option>
+          <option value="shortrest">Short Rest</option>
+          <option value="longrest">Long Rest</option>
+        </select>
+      </div>
+      <button class="btn btn-sm btn-danger print-hide col-1" @click="removeResource(index)">X</button>
     </div>
     <div class="row print-hide" style="margin-top: 10px;">
       <div class="btn-group col-12">

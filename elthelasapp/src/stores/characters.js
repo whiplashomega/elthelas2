@@ -193,7 +193,7 @@ export default {
     }
   },
   actions: {
-    addAbilities: (curChar) => {
+    addAbilities (curChar) {
       if (!curChar.skills.find(e => {
         return e.name === "Strength";
       })) {
@@ -207,21 +207,22 @@ export default {
         );
       }
     },
-    setCharacter: (character) => {
+    setCharacter (character) {
       this.character = character;
     },
-    getFromServer: (comp) => {
-      if (localStorage.getItem('token')) {
-        comp.$root.$emit('bv::show::modal', 'loading');
-        axios.get('/characters/?token=' + localStorage.getItem('token')).then((res) => {
-          this.characters = res.data;
-          return true;
-        }).catch(function() {
-          return false;
-        });
-      }
+    getFromServer () {
+      return new Promise((resolve) => {
+        if (localStorage.getItem('token')) {
+          axios.get('/characters/?token=' + localStorage.getItem('token')).then((res) => {
+            this.characters = res.data;
+            resolve(true);
+          }).catch(function() {
+            resolve(false);
+          });
+        }
+      });
     },
-    getFromServerSilent: () => {
+    getFromServerSilent () {
       if (localStorage.getItem('token')) {
         axios.get('/characters/?token=' + localStorage.getItem('token')).then((res) => {
           this.characters = res.data;
@@ -231,13 +232,13 @@ export default {
         });
       }
     },
-    getOneFromServer: (id) => {
+    getOneFromServer (id) {
       axios.get('/characters/' + id).then((response) => {
-        this.character = { ...response.body };
+        this.character = { ...response.data };
         this.addAbilities(this.character);
       });
     },
-    loadChar: ({ character, comp, passthrough }) => {
+    loadChar ({ character, comp, passthrough }) {
       let c = passthrough || window.confirm("Are you sure you want to load this character? This will erase any unsaved changes.");
       if (c) {
         this.character = Character();
@@ -249,18 +250,15 @@ export default {
         comp.$root.$emit('bv::hide::modal', 'servermodal');
       }
     },
-    updateToServer: (comp) => {
-      comp.$root.$emit('bv::show::modal', 'loading');
+    updateToServer (comp) {
       axios.post('/characters/' + this.character._id + '?token=' + localStorage.getItem('token'), { character: this.character }).then((res) => {
         this.character._id = res.data._id;
-        comp.$root.$emit('bv::hide::modal', 'loading');
         return true;
       }).catch(function() {
         alert("error when saving, please try logging off and in again");
-        comp.$root.$emit('bv::hide::modal', 'loading');
       });
     },
-    updateToServerSilent: (comp) => {
+    updateToServerSilent (comp) {
       axios.post('/characters/' + this.character._id + '?token=' + localStorage.getItem('token'), { character: comp.character }).then(function(res) {
         this.character._id = res.data._id;
         return true;
@@ -271,16 +269,13 @@ export default {
         }, 10000);
       });
     },
-    newToServer: (comp) => {
-      comp.$root.$emit('bv::show::modal', 'loading');
-      this.character._id = undefined;
-      axios.post('/characters?token=' + localStorage.getItem('token'), { character: comp.character }).then(function(res) {
+    newToServer () {
+      axios.post('/characters?token=' + localStorage.getItem('token'), { character: this.character }).then((res) => {
         this.character._id = res.data._id;
-        comp.$root.$emit('bv::hide::modal', 'loading');
         return true;
-      }).catch(function() {
+      }).catch(function(e) {
+        console.log(e);
         alert("error when loading, please try logging off and in again");
-        comp.$root.$emit('bv::hide::modal', 'loading');
       });
     },
     deleteFromServer({ character, comp }) {
@@ -375,7 +370,7 @@ export default {
         this.character.activemodifiers.push(effect);
       }
     },
-    shortrest: () => {
+    shortrest () {
       this.character.warlockslotsavailable = this.warlockSlots;
       this.character.resources.forEach((a) => {
         if (a.recharge === 'shortrest') {
@@ -385,7 +380,7 @@ export default {
       this.character.deathsuccess = 0;
       this.character.deathfail = 0;
     },
-    longrest: () => {
+    longrest () {
       this.shortrest();
       for (var prop in this.character.availableslots) {
         if (prop !== 'cantrip') {
@@ -409,7 +404,7 @@ export default {
       });
       this.character.castlog = [];
     },
-    saveCharacter: () => {
+    saveCharacter () {
       if (this.validateCharacter) {
         var text = JSON.stringify(this.character);
         var a = document.createElement('a');
@@ -418,7 +413,7 @@ export default {
         a.click();
       }
     },
-    loadImage: () => {
+    loadImage () {
       if (document.getElementById('imageload')) {
         var f = document.getElementById('imageload').files[0];
         var r = new FileReader();

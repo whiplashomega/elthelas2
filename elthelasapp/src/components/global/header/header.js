@@ -38,7 +38,7 @@ export default {
       this.user.login(this.logincreds).then((res) => {
         this.showLogin.loginformactive = true;
         if (res) {
-          
+          this.showLogin.isActive = false;
         } else {
           alert("Failed to login, please try again");
         }
@@ -48,7 +48,8 @@ export default {
       this.user.register(this.registeruser).then((res) => {
         this.showRegister.loginformactive = true;
         if (res) {
-          
+          this.showRegister.loginformactive = false;
+          this.showRegister.isActive = false;
         } else {
           alert ("Registration failed, please try again");
         }

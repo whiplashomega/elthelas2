@@ -8,7 +8,7 @@ export default {
     const statics = useStaticsStore();
     
     const { character, classtext } = storeToRefs(characters);
-    const { races, nations, cities, organizations: factions, backgrounds } = statics;
+    const { builderRaces: races, allNationNames: nations, allCityNames: cities, organizations: factions, backgrounds } = statics;
     const { mobile } = storeToRefs(globals);
     
     const setRaceDefaults = characters.setRaceDefaults;

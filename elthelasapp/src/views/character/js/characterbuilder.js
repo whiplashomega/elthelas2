@@ -1,6 +1,7 @@
 // import test from '@/tests/unit/charbuilder.test.js';
 
 import { useStaticsStore, useCharacterStore, useUserStore, useGlobalsStore } from '@/stores/index';
+import { storeToRefs } from 'pinia';
 import abilityscores from '@/components/characterbuilder/abilityscores.vue';
 import actions from '@/components/characterbuilder/actions.vue';
 import appearance from '@/components/characterbuilder/appearance.vue';
@@ -35,12 +36,7 @@ export default {
     // initial data retrieval
     statics.getAll();
     // map getters
-    const character = characters.character;
-    const pointbuy = characters.pointbuy;
-    const mobile = globals.mobile;
-    const hitdicechanged = characters.hitdicechanged;
-    const groups = characters.charGroups;
-    const message = characters.message;
+    const { character, pointbuy, mobile, hitdicechanged, groups, message } = storeToRefs(characters);
     
     // map actions
     const rollStats = characters.rollStats;
@@ -104,9 +100,9 @@ export default {
       this.character.group = this.newgroup;
     }
   },
-  created () {
+  /*mounted () {
     if (this.$route.params.id) {
       this.characters.getOneFromServer(this.$route.params.id);
     }
-  }
+  }*/
 };

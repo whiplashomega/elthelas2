@@ -18,20 +18,24 @@
     <!-- Feats -->
     <div class="charsheet-static">
       Feats/ASIs {{ numASI }}
-      <div v-for="(feat, index) in character.feats" :key="index" style="clear:both;">
-        <select class="charsheet-text col-9" v-model="character.feats[index]">
-          <option :value="character.feats[index]">{{ character.feats[index].name }}</option>
-          <option v-for="feat in featsort" :key="feat.name"
-                  :value="feat" :title="feat.description">{{ feat.name }}</option>
-        </select>
-        <button class="btn btn-sm print-hide float-right" type="button"
-                @click="setval(feat, 'show', true)" v-if="!feat.show">
-          &#x25BC;
-        </button>
-        <button class="btn btn-sm print-hide float-right" type="button"
-                @click="setval(feat, 'show', false)" v-if="feat.show">
-          &#x25B2;
-        </button>
+      <div v-for="(feat, index) in character.feats" :key="index" style="clear:both;" class="row">
+        <div class="col-10">
+          <select class="charsheet-text" v-model="character.feats[index]">
+            <option :value="character.feats[index]">{{ character.feats[index].name }}</option>
+            <option v-for="feat in featsort" :key="feat.name"
+                    :value="feat" :title="feat.description">{{ feat.name }}</option>
+          </select>
+        </div>
+        <div class="col-1">
+          <button class="btn btn-sm print-hide float-right" type="button"
+                  @click="setval(feat, 'show', true)" v-if="!feat.show">
+            &#x25BC;
+          </button>
+          <button class="btn btn-sm print-hide float-right" type="button"
+                  @click="setval(feat, 'show', false)" v-if="feat.show">
+            &#x25B2;
+          </button>
+        </div>
         <p v-if="feat.show" v-html="marked.parse(feat.description)"></p>
       </div>
     </div>
