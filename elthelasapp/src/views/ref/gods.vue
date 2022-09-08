@@ -24,8 +24,9 @@
             <h2>Browse Gods By...</h2>
             <h4>Name</h4>
             <p>
-              <b-form-select v-model="SelectedGod" :options="gods"
-                             text-field="name" value-field="id" />
+              <select v-model="GodByName" class="form-select">
+                <option v-for="god in gods" :key="god.id" :value="god">{{ god.name }}</option>
+              </select>
             </p>
             <h4>Alignment</h4>
             <p>
@@ -61,7 +62,7 @@
             </p>
           </div>
           <div class="col-sm-9">
-            <div v-if="GodByName">
+            <div>
               <h2>{{ GodByName.name }}</h2>
               <div class="row">
                 <table class="table table-striped table-responsive col-sm-7">
@@ -94,23 +95,23 @@
                      :style="'background-image: url(' + GodByName.symbolimage + ')'" :title="GodByName.holysymbol"></div>
               </div>
               <h4>Home</h4>
-              <div v-html="$options.filters.marked(GodByName.home)"></div>
+              <div v-html="marked.parse(GodByName.home)"></div>
               <h4>Appearance</h4>
-              <div v-html="$options.filters.marked(GodByName.appearance)"></div>
+              <div v-html="marked.parse(GodByName.appearance)"></div>
               <h4>Worshippers</h4>
-              <div v-html="$options.filters.marked(GodByName.worshippers)"></div>
+              <div v-html="marked.parse(GodByName.worshippers)"></div>
               <h4>High Tenets</h4>
               <ul>
                 <li v-for="tenet in GodByName.tenets" :key="tenet">{{ tenet }}</li>
               </ul>
               <h4>Holidays</h4>
-              <div v-html="$options.filters.marked(GodByName.holiday)"></div>
+              <div v-html="marked.parse(GodByName.holiday)"></div>
               <h4>Level 1 Faction Feature</h4>
-              <div v-html="$options.filters.marked(GodByName.level1)"></div>
+              <div v-html="marked.parse(GodByName.level1)"></div>
               <h4>Level 10 Faction Feature</h4>
-              <div v-html="$options.filters.marked(GodByName.level10)"></div>
+              <div v-html="marked.parse(GodByName.level10)"></div>
               <h4>Lore and History</h4>
-              <div v-html="$options.filters.marked(GodByName.lore)"></div>
+              <div v-html="marked.parse(GodByName.lore)"></div>
             </div>
           </div>
         </div>

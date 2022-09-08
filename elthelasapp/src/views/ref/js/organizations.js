@@ -1,9 +1,15 @@
-import { mapGetters } from 'vuex';
+import { useStaticsStore } from '@/stores/index';
+import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 
 export default {
-  computed: mapGetters({
-    organizations: "allOrganizations"
-  }),
+  setup () {
+    const statics = useStaticsStore();
+    const { organizations } = statics;
+    
+    return {
+      organizations, marked, statics
+    };
+  },
   data () {
     return {
       currentOrg: { level1: "", level10: "", tenets: [""], description: "" }
@@ -16,8 +22,8 @@ export default {
       })[0];
     }
   },
-  created () {
-    this.$store.dispatch('getAllOrganizations').then(() => {
+  mounted () {
+    this.statics.getAllOrganizations().then(() => {
       if (this.$route.params.org) {
         var org = this.$route.params.org;
         var orgs = this.organizations.filter(function(a) {
@@ -26,7 +32,7 @@ export default {
         if (orgs.length > 0) {
           this.currentOrg = orgs[0];
         }
-      }
+      } 
     });
   }
 };

@@ -1,10 +1,19 @@
-import { mapGetters } from 'vuex';
+import { useStaticsStore } from '@/stores/index';
+import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 
 export default {
+  setup () {
+    const statics = useStaticsStore();
+    
+    const gods = statics.gods;
+    
+    return {
+      gods,
+      statics,
+      marked
+    };
+  },
   computed: {
-    ...mapGetters({
-      gods: "allGods"
-    }),
     domains () {
       let domains = [];
       this.gods.forEach((god) => {
@@ -20,7 +29,7 @@ export default {
   },
   data () {
     return {
-      GodByName: false,
+      GodByName: { lore: "", level10: "", level1: "", holiday: "", worshippers: "", appearance: "", home: "" },
       alignment: "",
       domain: "",
       SelectedGod: "",
@@ -52,7 +61,7 @@ export default {
     }
   },
   created () {
-    this.$store.dispatch('getAllGods').then(() => {
+    this.statics.getAllGods().then(() => {
       if (this.$route.params.god) {
         var god = this.$route.params.god;
         this.loadGod(this.gods.filter(function(a) { return (a.id === god || a.name === god); })[0].id);

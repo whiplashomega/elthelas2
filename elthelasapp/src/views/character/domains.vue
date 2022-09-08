@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="col-sm-12">
     <h1>Divine Domains</h1>
     <p>
       In a pantheon, every deity has influence over different aspects of mortal life and civilization, called a deity's domain. All the domains over which a deity has influence are called the deity's portfolio.  For example, the portfolio of the greek god Apollo includes the domains of Knowledge, Life, and Light.  As a cleric, you choose one aspect of your deity's portfolio to emphasize, and you are granted powers related to that domain.
@@ -11,7 +11,7 @@
       Each domain's description gives examples of deities who have influence over that domain.
     </p>
     <ul class="list-inline">
-      <li class="list-inline-item"><button @click="shownDomain = 'air'" class="racebutton btn btn-primary">Air</button></li>
+      <li class="list-inline-item"><button @click="changeDomain('air')" class="racebutton btn btn-primary">Air</button></li>
       <li class="list-inline-item"><button @click="shownDomain = 'arcana'" class="racebutton btn btn-primary">Arcana</button></li>
       <li class="list-inline-item"><button @click="shownDomain = 'death'" class="racebutton btn btn-primary">Death</button></li>
       <li class="list-inline-item"><button @click="shownDomain = 'earth'" class="racebutton btn btn-primary">Earth</button></li>
@@ -29,7 +29,7 @@
       <li class="list-inline-item"><button @click="shownDomain = 'war'" class="racebutton btn btn-primary">War</button></li>
       <li class="list-inline-item"><button @click="shownDomain = 'water'" class="racebutton btn btn-primary">Water</button></li>
     </ul>
-    <div class="racediv" id="air" v-if="shownDomain === 'air'">
+    <div class="domaindiv" id="air" v-if="shownDomain == 'air'">
       <h2>Air Domain</h2>
       <h4>Air Domain Spells</h4>
       <table class='classtable table table-striped'>
@@ -86,7 +86,7 @@
         At 17th level you gain the ability to summon a air elemental once per day.  The air elemental serves you and only you faithfully,  obeying your verbal commands.  It stays with you until it is killed, but you can only have one elemental companion such as this at a time.  Summoning the elemental requires 1 minute of intense concentration and meditation, during which you cannot move more than 5 feet from the location you started  the summoning, and must use your action on every turn to continue the summoning ritual.
       </p>
     </div>
-    <div class="racediv" id="arcana"  v-if="shownDomain === 'arcana'">
+    <div id="arcana" v-if="shownDomain === 'arcana'">
       <h2>Arcana Domain</h2>
       <h4>Arcana Domain Spells</h4>
       <table class='classtable table table-striped'>
@@ -168,7 +168,7 @@
         At 17th level, you choose four spells from the wizard spell list, one from each of the following levels: 6th, 7th, 8th, and 9th. You add them to your list of domain spells. Like your other domain spells, they are always prepared and count as cleric spells for you.
       </p>
     </div>
-    <div class="racediv" id="death" v-if="shownDomain === 'death'">
+    <div class="domaindiv" id="death" v-if="shownDomain === 'death'">
       <h2>Death Domain</h2>
       <h4>Death Domain Spells</h4>
       <table class="classtable table table-striped">
@@ -223,7 +223,7 @@
         Starting at 17th level, when the cleric casts a necromancy spell of 1st through 5th level that targets only one creature, the spell can instead target two creatures within range and within 5 feet of each other. If the spell consumes its material components, the cleric must provide them for each target.
       </p>
     </div>
-    <div class="racediv" id="earth"  v-if="shownDomain === 'earth'">
+    <div class="domaindiv" id="earth"  v-if="shownDomain === 'earth'">
       <h2>Earth Domain</h2>
       <h4>Earth Domain Spells</h4>
       <table class='classtable table table-striped'>
@@ -278,7 +278,7 @@
         At 17th level you gain the ability to summon an earth elemental once per day.  The earth elemental serves you and only you faithfully, obeying your verbal commands.  It stays with you until it is killed, but you can only have one elemental companion such as this at a time.  Summoning the elemental requires 1 minute of intense concentration and meditation, during which you cannot move more than 5 feet from the location you started the summoning, and must use your action on every turn to continue the summoning ritual.
       </p>
     </div>
-    <div class="racediv" id="fire"  v-if="shownDomain === 'fire'">
+    <div class="domaindiv" id="fire"  v-if="shownDomain === 'fire'">
       <h2>Fire Domain</h2>
       <h4>Fire Domain Spells</h4>
       <table class='classtable table table-striped'>
@@ -336,7 +336,7 @@
         the summoning, and must use your action on every turn to continue the summoning ritual.
       </p>
     </div>
-    <div class="racediv" id="forge" v-if="shownDomain === 'forge'">
+    <div class="domaindiv" id="forge" v-if="shownDomain === 'forge'">
       <h2>Forge Domain</h2>
       <h4>Forge Domain Spells</h4>
       <table class="classtable table table-striped">
@@ -402,7 +402,7 @@
         At 17th level, your affinity for fire and metal becomes more powerful due to your deity’s blessing. You gain immunity to fire damage, and while you’re wearing heavy  armor, you have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.
       </p>
     </div>
-    <div class="racediv" id="grave" v-if="shownDomain === 'grave'">
+    <div class="domaindiv" id="grave" v-if="shownDomain === 'grave'">
       <h2>Grave Domain</h2>
       <p>
         Gods of the grave watch over the line between life and death. To these deities, death and the afterlife are a foundational part of the multiverse. To desecrate the peace of the dead is an abomination. Followers of these deities seek to put wandering spirits to rest, destroy the undead, and ease the suffering of the dying. Their magic also allows them to stave off death for a time. particularly for a person who still has some great work to accomplish in the world. This is a delay of death, not a denial of it, for death will eventually get its due.
@@ -469,7 +469,7 @@
         Starting at 17th level. you can seize a trace of vitality from a parting soul and use it to heal the living. When an enemy you can see dies within 60 feet of you, you or one creature of your choice that is within 60 feet of you regains hit points equal to the enemy’s number of Hit Dice. You can use this feature only if you aren’t incapacitated. Once you use it, you can't do so again until the start of your next turn.
       </p>
     </div>
-    <div class="racediv" id="knowledge" v-if="shownDomain === 'knowledge'">
+    <div class="domaindiv" id="knowledge" v-if="shownDomain === 'knowledge'">
       <h2>Knowledge Domain</h2>
       <p>
         The gods of knowledge-Amathera and Tock-value learning and understanding above all. Some teach that knowledge is to be gathered and shared in libraries and universities, or promote the practical knowledge of craft and invention. Some deities hoard knowledge and keep its secrets to themselves. And some promise their followers that they will gain tremendous power if they unlock the secrets of the multiverse. Followers of these gods study esoteric lore, collect old tomes, delve into the secret places of the earth, and learn all they can. Some gods of knowledge promote the practical knowledge of craft and invention, including smith deities like Gond, Reorx, Onatar, Moradin, Hephaestus, and Goibhniu.
@@ -541,7 +541,7 @@
         <strong>Area Reading.</strong> As you meditate, you see visions of recent events in your immediate vicinity (a room, street, tunnel, clearing, or the like, up to a 50-foot cube), going back a number of days equal to your Wisdom score. For each minute you meditate, you learn about one significant event, beginning with the most recent. Significant events typically involve powerful emotions, such as battles and betrayals, marriages and murders, births and funerals. However, they might also include more mundane events that are nevertheless important in your current situation.
       </p>
     </div>
-    <div class="racediv" id="life" v-if="shownDomain === 'life'">
+    <div class="domaindiv" id="life" v-if="shownDomain === 'life'">
       <h2>Life Domain</h2>
       <p>
         The Life domain focuses on the vibrant positive energy-one of the fundamental forces of the universe-that sustains all life. The gods of life promote vitality and health through healing the sick and wounded, caring for those in need, and driving away the forces of death and undeath. Almost any non-evil deity can claim influence over this domain, particularly agricultural deities (such as Chauntea, Arawai, and Demeter), sun gods (such as Lathander, Pelor, and Re-Horakhty), gods of healing or endurance (such as Ilmater, Mishakal, Apollo, and Diancecht), and gods of home and community (such as Hestia, Hathor, and Boldrei).
@@ -599,7 +599,7 @@
         Starting at 17th level, when you would normally roll one or more dice to restore hit points with a spell, you instead use the highest number possible for each die. For example, instead of restoring 2d6 hit points to a creature, you restore 12.
       </p>
     </div>
-    <div class="racediv" id="light" v-if="shownDomain === 'light'">
+    <div class="domaindiv" id="light" v-if="shownDomain === 'light'">
       <h2>Light Domain</h2>
       <p>
         Gods of light promote the ideals of rebirth and renewal, truth, vigilance, and beauty, often using the symbol of the sun. Some of these gods are portrayed as the sun itself or as a charioteer who guides the sun across the sky. Others are tireless sentinels whose eyes pierce every shadow and see through every deception. Some are deities of beauty and artistry, who teach that art is a vehicle for the soul's improvement. Clerics of a god of light are enlightened souls infused with radiance and the power of their gods' discerning vision, charged with chasing away lies and burning away darkness.
@@ -660,7 +660,7 @@
         Starting at 17th level, you can use your action to activate an aura of sunlight that lasts for 1 minute or until you dismiss it using another action. You emit bright light in a 60-foot radius and dim light 30 feet beyond that. Your enemies in the bright light have disadvantage on saving throws against any spell that deals fire or radiant damage.
       </p>
     </div>
-    <div class="racediv" id="nature" v-if="shownDomain === 'nature'">
+    <div class="domaindiv" id="nature" v-if="shownDomain === 'nature'">
       <h2>Nature Domain</h2>
       <p>
         Gods of nature are as varied as the natural world itself, from inscrutable gods of the deep forests to friendly deities associated with particular springs and groves (such as Eldath). Druids revere nature as a whole and might serve one of these deities, practicing mysterious rites and reciting all-but-forgotten prayers in their own secret tongue. But many of these gods have clerics as well, champions who take a more active role in advancing the interests of a particular nature god. These clerics might hunt the evil monstrosities that despoil the woodlands, bless the harvest of the faithful, or wither the crops of those who anger their gods.
@@ -718,7 +718,7 @@
         At 17th level, you gain the ability to command animals and plant creatures. While creatures are charmed by your Charm Animals and Plants feature, you can take a bonus action on your turn to verbally command what each of those creatures will do on its next turn.
       </p>
     </div>
-    <div class="racediv" id="order" v-if="shownDomain === 'order'">
+    <div class="domaindiv" id="order" v-if="shownDomain === 'order'">
       <h2>Order Domain</h2>
       <p>
         The Order Domain represents discipline, as well as devotion to a society or an institution and strict obedience to the laws governing it.
@@ -791,7 +791,7 @@
         Starting at 17th level, enemies you designate for destruction wilt under the combined efforts of you and your allies. If you deal your Divine Strike damage to a creature on your turn, you can curse that creature until the start of your next turn. The next time one of your allies hits the cursed creature with an attack, the target also takes 2d8 psychic damage, and the curse ends. You can curse a creature in this way only once per turn.
       </p>
     </div>
-    <div class="racediv" id="tempest" v-if="shownDomain === 'tempest'">
+    <div class="domaindiv" id="tempest" v-if="shownDomain === 'tempest'">
       <h2>Tempest Domain</h2>
       <p>
         Gods whose portfolios include the Tempest domain govern storms, sea, and sky. They include gods of lightning and thunder, gods of earthquakes, some fire gods, and certain gods of violence, physical strength, and courage. In some pantheons, a god of this domain rules over other deities and is known for swift justice delivered by thunderbolts. In the pantheons of seafaring people, gods of this domain are ocean deities and the patrons of sailors. Tempest gods send their clerics to inspire fear in the common folk, either to keep those folk on the path of righteousness or to encourage them to offer sacrifices of propitiation to ward off divine wrath.
@@ -852,7 +852,7 @@
         At 17th level, you have a flying speed equal to your current walking speed whenever you are not underground or indoors.
       </p>
     </div>
-    <div class="racediv" id="trade" v-if="shownDomain === 'trade'">
+    <div class="domaindiv" id="trade" v-if="shownDomain === 'trade'">
       <h2>Trade Domain</h2>
       <h4>
         Trade Domain Spells
@@ -902,7 +902,7 @@
         Starting at 17th level you can use your channel divinity feature to turn other metals into gold.  Choose one object made of metal of less than 50 lbs and less than 5 ft in any dimension. As an action you can turn that object into pure gold.  If that object is an armor or weapon, it's damage or AC are reduced by 2.
       </p>
     </div>
-    <div class="racediv" id="trickery" v-if="shownDomain === 'trickery'">
+    <div class="domaindiv" id="trickery" v-if="shownDomain === 'trickery'">
       <h2>Trickery Domain</h2>
       <p>
         Gods of trickery are mischief-makers and instigators who stand as a constant challenge to the accepted order among both gods and mortals. They're patrons of thieves, scoundrels, gamblers, rebels, and liberators. Their clerics are a disruptive force in the world, puncturing pride, mocking tyrants, stealing from the rich, freeing captives, and flouting hollow traditions. They prefer subterfuge, pranks, deception, and theft rather than direct confrontation.
@@ -962,7 +962,7 @@
         At 17th level, you can create up to four duplicates of yourself, instead of one, when you use Invoke Duplicity. As a bonus action on your turn, you can move any number of them up to 30 feet, to a maximum range of 120 feet.
       </p>
     </div>
-    <div class="racediv" id="war" v-if="shownDomain === 'war'">
+    <div class="domaindiv" id="war" v-if="shownDomain === 'war'">
       <h2>War Domain</h2>
       <p>
         War has many manifestations. It can make heroes of ordinary people. It can be desperate and horrific, with acts of cruelty and cowardice eclipsing instances of excellence and courage. In either case, the gods of war watch over warriors and reward them for their great deeds. The clerics of such gods excel in battle, inspiring others to fight the good fight or offering acts of violence as prayers. Gods of war include champions of honor and chivalry as well as gods of destruction and pillage and gods of conquest and domination. Other war gods take a more neutral stance, promoting war in all its manifestations and supporting warriors in any circumstance.
@@ -1020,7 +1020,7 @@
         At 17th level, you gain resistance to bludgeoning, piercing, and slashing damage from non-magical weapons.
       </p>
     </div>
-    <div class="racediv" id="water" v-if="shownDomain == 'water'">
+    <div class="domaindiv" id="water" v-if="shownDomain == 'water'">
       <h2>Water Domain</h2>
       <table class='classtable table table-striped'>
         <thead>

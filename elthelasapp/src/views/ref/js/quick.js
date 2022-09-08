@@ -1,16 +1,20 @@
-import { mapGetters } from 'vuex';
 import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
+import { useStaticsStore, useUserStore } from '@/stores/index';
+import modal from '@/components/global/modal.vue';
 
 export default {
+  setup () {
+    const statics = useStaticsStore();
+    const userinfo = useUserStore();
+    const { spells, equipment, armor, weapons } = statics;
+    return {
+      userinfo, spells, equipment, armor, weapons, marked
+    };
+  },
+  components: {
+    modal
+  },
   computed: {
-    ...mapGetters({
-      title: 'title',
-      spells: 'allSpells',
-      equipment: 'allEquipment',
-      armor: 'allArmor',
-      weapons: 'allWeapons',
-      userinfo: "getUserInfo"
-    }),
     filteredSpells () {
       var textfilters = this.spelltable.filterValue.split(' ');
       let spells = this.spells.filter((a) => {
@@ -85,6 +89,8 @@ export default {
         sortDesc: false,
         modalInfo: { title: '', description: '', content: { title: '', level: '', school: '', duration: '', description: '', castingTime: '', tags: [], tagsText: '' } }
       },
+      gearModalProps: { isActive: false, title: "" },
+      spellModalProps: { isActive: false, title: "" },
       equipmenttable: {
         fields: [
           { key: "Item", label: "Item", sortable: true },
@@ -134,7 +140,8 @@ export default {
       this.spelltable.modalInfo.title = item.title;
       this.spelltable.modalInfo.content = item;
       this.spelltable.modalInfo.description = marked.parse(this.spelltable.modalInfo.content.description);
-      this.$root.$emit('bv::show::modal', 'spellmodal', button);
+      this.spellModalProps.isActive = true;
+      this.spellModalProps.title = item.title;
     },
     selectForPrint (item) {
       item.print = !item.print;
@@ -157,7 +164,8 @@ export default {
     },
     adventuringGearInfo (item, index, button) {
       this.gearModal = item;
-      this.$root.$emit('bv::show::modal', 'gearmodal', button);
+      this.gearModalProps.isActive = true;
+      this.gearModalProps.title = item.Item;
     },
     resetSpellModal () {
       this.spelltable.modalInfo.title = "";

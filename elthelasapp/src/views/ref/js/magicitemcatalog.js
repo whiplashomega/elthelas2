@@ -1,22 +1,26 @@
-import { mapGetters } from 'vuex';
+import { useStaticsStore, useUserStore } from '@/stores/index';
+import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
+import modal from '@/components/global/modal.vue';
 
 export default {
+  setup() {
+    const statics = useStaticsStore();
+    const userinfo = useUserStore();
+    
+    const { magicitems, magicscrolls, magicwands, magicweapons, magicarmor, magicother, magiccommons, magicrares, magicveryrares, magiclegendaries } = statics;
+    
+    return {
+      userinfo,
+      
+      magicitems, magicscrolls, magicwands, magicweapons, magicarmor, magicother, magiccommons, magicrares, magicveryrares, magiclegendaries,
+      
+      marked
+    };
+  },
+  components: {
+    modal
+  },
   computed: {
-    ...mapGetters({
-      title: 'title',
-      magicitems: 'allMagicItems',
-      magicwands: 'allMagicWands',
-      magicscrolls: 'allMagicScrolls',
-      magicweapons: 'allMagicWeapons',
-      magicarmor: 'allMagicArmor',
-      magicother: 'allMagicOther',
-      commons: 'allCommons',
-      uncommons: 'allUncommons',
-      rares: 'allRares',
-      veryrares: 'allVeryRares',
-      legendaries: 'allLegendaries',
-      userinfo: "getUserInfo"
-    }),
     filteredWands () {
       return this.magicwands.filter(this.magicitemfilter);
     },
@@ -51,6 +55,7 @@ export default {
         sortBy: null,
         sortDesc: false
       },
+      modalProps: { isActive: false, title: "" },
       magicItemModal: { Item: '', Rarity: '', instock: '', Effect: '', 'Cost (gp)': '', Attunement: '' },
       instockonly: true,
       toPrint: [],
@@ -77,7 +82,8 @@ export default {
     },
     magicItemInfo (item, index, button) {
       this.magicItemModal = item;
-      this.$root.$emit('bv::show::modal', 'magicitemmodal', button);
+      this.modalProps.isActive = true;
+      this.modalProps.title = item.Item;
     },
     resetMagicItemModal () {
       this.magicItemModal = { Item: '', Rarity: '', instock: '', Effect: '', 'Cost (gp)': '', Attunement: '' };

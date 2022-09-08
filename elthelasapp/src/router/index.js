@@ -126,6 +126,149 @@ const router = createRouter({
         auth: false
       }
     },
+    {
+      path: "/tools/charbuilder",
+      name: "Character Builder",
+      components: {
+        default: () => import('@/views/character/characterbuilder.vue')
+      },
+      meta: {
+        title: "Character Builder",
+        auth: false
+      }
+    },
+    {
+      path: "/tools/charbuilder/:id",
+      name: "Character Builder - Specific",
+      components: {
+        default: () => import('@/views/character/characterbuilder.vue')
+      },
+      meta: {
+        title: "Character Builder",
+        auth: false
+      }
+    },
+    {
+      path: "/world/historylist",
+      name: "Timeline - Simple",
+      components: {
+        default: () => import('@/views/world/historylist.vue')
+      },
+      meta: {
+        title: "Timeline",
+        auth: false
+      }
+    },
+    {
+      path: "/ref/quick",
+      name: "Quick Reference Manual",
+      components: {
+        default: () => import('@/views/ref/quick.vue')
+      },
+      meta: {
+        title: "Quick Reference Manual",
+        auth: false
+      }
+    },
+    {
+      path: "/ref/magicitems",
+      name: "Magic Item Catalog",
+      components: {
+        default: () => import('@/views/ref/magicitemcatalog.vue')
+      },
+      meta: {
+        title: "Margo's Mystics",
+        auth: false
+      }
+    },
+    {
+      path: "/ref/cosmology",
+      name: "Cosmology",
+      components: {
+        default: () => import('@/views/ref/cosmology.vue')
+      },
+      meta: {
+        title: "Cosmology",
+        auth: false
+      }
+    },
+    {
+      path: "/ref/astronomy",
+      name: "Astronomy",
+      components: {
+        default: () => import('@/views/ref/astronomy.vue')
+      },
+      meta: {
+        title: "Astronomy",
+        auth: false
+      }
+    },
+    {
+      path: "/ref/magic",
+      name: "Magic",
+      components: {
+        default: () => import('@/views/ref/magic.vue')
+      },
+      meta: {
+        title: "Magic",
+        auth: false
+      }
+    },
+    {
+      path: "/ref/gods",
+      name: "The Gods",
+      components: {
+        default: () => import('@/views/ref/gods.vue')
+      },
+      meta: {
+        title: "The Gods",
+        auth: false
+      }
+    },
+    {
+      path: "/ref/gods/:god",
+      name: "The Gods - Specific",
+      components: {
+        default: () => import('@/views/ref/gods.vue')
+      },
+      meta: {
+        title: "The Gods",
+        auth: false
+      }
+    },
+    {
+      path: "/ref/divines",
+      name: "The Divines",
+      components: {
+        default: () => import('@/views/ref/divines.vue')
+      },
+      meta: {
+        title: "The Divines",
+        auth: false
+      }
+    },
+    {
+      path: "/ref/orgs",
+      name: "Multinational Organizations and Factions",
+      components: {
+        default: () => import('@/views/ref/organizations.vue')
+      },
+      meta: {
+        title: "Multinational Organizations and Factions",
+        auth: false
+      }
+    },
+    {
+      path: "/ref/orgs/:org",
+      name: "Multinational Organizations and Factions - Specific",
+      components: {
+        default: () => import('@/views/ref/organizations.vue')
+      },
+      meta: {
+        title: "Multinational Organizations and Factions",
+        auth: false
+      }
+    }
     /*{
       path: '/about',
       name: 'about',

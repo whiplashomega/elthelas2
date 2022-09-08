@@ -171,7 +171,7 @@
               </tbody>
             </table>
             Point Buy Total: {{ pointbuy }}<br />
-            Stat Rolls: <span v-for="(roll, index) in statRolls" :key="index">{{ roll }} </span>
+            Stat Rolls: <span v-for="(roll, index) in characters.statRolls" :key="index">{{ roll }}&nbsp;</span>
             <input type="button" @click="rollStats()" value="Roll!" />
           </div>
         </div>

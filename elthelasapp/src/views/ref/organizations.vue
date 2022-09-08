@@ -14,17 +14,17 @@
     </div>
     <div id="raceDiv" v-if="!(currentOrg.id === 'error')">
       <h2>{{ currentOrg.title }}</h2>
-      <div v-html="$options.filters.marked(currentOrg.description)"></div>
+      <div v-html="marked.parse(currentOrg.description)"></div>
       <div>
         <h4>Tenets</h4>
         <ul>
-          <li v-for="tenet in currentOrg.tenets" :key="tenet" v-html="$options.filters.marked(tenet)"></li>
+          <li v-for="tenet in currentOrg.tenets" :key="tenet" v-html="marked.parse(tenet)"></li>
         </ul>
       </div>
       <h4>Level 1 Benefit</h4>
-      <div v-html="$options.filters.marked(currentOrg.level1)"></div>
+      <div v-html="marked.parse(currentOrg.level1)"></div>
       <h4>Level 10 Benefit</h4>
-      <div v-html="$options.filters.marked(currentOrg.level10)"></div>
+      <div v-html="marked.parse(currentOrg.level10)"></div>
       <div class="col-sm-6">
         <h4>Nations with a Major Presence</h4>
         <ul>

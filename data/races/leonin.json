@@ -50,8 +50,8 @@
       "averageweight": 255,
       "baseweight": 180,
       "weightroll": "2d6",
-      "stats": [0, 2, 0, 0, 1, 0],
-      "speed": [25, 50, 0, 0, 0]
+      "stats": [1, 0, 2, 0, 0, 0],
+      "speed": [30, 0, 0, 0, 0]
     }  
   ]
 }

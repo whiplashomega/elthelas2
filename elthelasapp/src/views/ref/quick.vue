@@ -25,7 +25,7 @@
             Search
             <b-input-group>
               <b-form-input v-model="spelltable.filterValue" placeholder="Type to Search" />
-              <b-btn :disabled="!spelltable.filterValue" @click="filter = ''">Clear</b-btn>
+              <button class="btn btn-primary" :disabled="!spelltable.filterValue" @click="filter = ''">Clear</button>
             </b-input-group>
           </b-col>
         </b-row>
@@ -103,9 +103,7 @@
             </tr>
           </tbody>
         </table>
-        <b-modal id="spellmodal" size="lg"
-                 @hide="resetSpellModal" :title="spelltable.modalInfo.title"
-                 ok-only :modal-class="userinfo.themesetting">
+        <modal id="spellmodal" :modalProps="spellModalProps">
           <h4>
             <strong>{{ spelltable.modalInfo.content.school }}
               {{ spelltable.modalInfo.content.level.replace('level', 'level ') }}
@@ -117,8 +115,8 @@
           <p><strong>Components: </strong>{{ spelltable.modalInfo.content.components }}</p>
           <p><strong>Duration: </strong>{{ spelltable.modalInfo.content.duration }}</p>
           <p><strong>Tags: </strong> {{ spelltable.modalInfo.content.tagText }}</p>
-          <div v-html="$options.filters.marked(spelltable.modalInfo.description)"></div>
-        </b-modal>
+          <div v-html="marked.parse(spelltable.modalInfo.description)"></div>
+        </modal>
       </b-tab>
       <b-tab title="Conditions">
         <h3>Conditions</h3>
@@ -1241,17 +1239,15 @@
           <b-col md="6" class="my-1">
             <b-input-group>
               <b-form-input v-model="equipmenttable.filter" placeholder="Type to Search" />
-              <b-btn :disabled="!equipmenttable.filter" @click="equipmenttable.filter = ''">Clear</b-btn>
+              <button class="btn btn-primary" :disabled="!equipmenttable.filter" @click="equipmenttable.filter = ''">Clear</button>
             </b-input-group>
           </b-col>
         </b-row>
-        <b-modal id="gearmodal" size="lg"
-                 @hide="resetGearModal" :title="gearModal.Item"
-                 ok-only :modal-class="userinfo.themesetting">
+        <modal id="gearmodal" :modalProps="gearModalProps">
           <p><strong>Cost (gp): </strong>{{ gearModal.Cost }}</p>
           <p><strong>Weight: </strong>{{ gearModal.Weight }}</p>
-          <div v-html="$options.filters.marked(gearModal.Description)"></div>
-        </b-modal>
+          <div v-html="marked.parse(gearModal.Description)"></div>
+        </modal>
         <b-table show-empty
                  :striped="true" :bordered="false"
                  :responsive="true"
@@ -1276,7 +1272,7 @@
           <b-col md="6" class="my-1">
             <b-input-group>
               <b-form-input v-model="armortable.filter" placeholder="Type to Search" />
-              <b-btn :disabled="!armortable.filter" @click="armortable.filter = ''">Clear</b-btn>
+              <button class="btn btn-primary" :disabled="!armortable.filter" @click="armortable.filter = ''">Clear</button>
             </b-input-group>
           </b-col>
         </b-row>
@@ -1301,7 +1297,7 @@
           <b-col md="6" class="my-1">
             <b-input-group>
               <b-form-input v-model="weapontable.filter" placeholder="Type to Search" />
-              <b-btn :disabled="!weapontable.filter" @click="weapontable.filter = ''">Clear</b-btn>
+              <button class="btn btn-primary" :disabled="!weapontable.filter" @click="weapontable.filter = ''">Clear</button>
             </b-input-group>
           </b-col>
         </b-row>
@@ -1316,34 +1312,55 @@
                  :sort-desc.sync="weapontable.sortDesc">
         </b-table>
         <h4>Joe's Crazy Idea for What Weapons Should Be</h4>
-        <table>
+        <table class="table table-striped table-responsive">
           <tr>
             <th>Weapon</th>
             <th>Type</th>
             <th>Properties</th>
             <th>Damage</th>
-            <th>Reach</th>
             <th>Cost (gp)</th>
             <th>Weight</th>
+            <th>Reach</th>
           </tr>
-          <tr><td>Club</td><td>Simple</td><td>light</td><td>1d4 bludgeoning</td><td>5 ft</td><td>0.1</td><td>2 lb</td></tr>
-          <tr><td>Dagger</td><td>Simple</td><td>finesse, light, thrown (range 20/60)</td><td>1d4 bludgeoning</td><td>5 ft</td><td>0.1</td><td>2 lb</td></tr>
-          <tr><td>Greatclub</td><td>Simple</td><td>two-handed</td><td>1d8 bludgeoning</td><td>10 ft</td><td>0.2</td><td>10 lb</td></tr>
-          <tr><td>Handaxe</td><td>Simple</td><td>light, thrown (range 20/60)</td><td>1d6 slashing</td><td>5 ft</td><td>5</td><td>2 lb</td></tr>
-          <tr><td>Javelin</td><td>Simple</td><td>light, thrown (range 30/120)</td><td>1d6 piercing</td><td>10 ft</td><td>0.5</td><td>2 lb</td></tr>
-          <tr><td>Light Hammer</td><td>Simple</td><td>light, thrown (range 20/60)</td><td>1d4 bludgeoning</td><td>5 ft</td><td>2</td><td>2 lb</td></tr>
-          <tr><td>Mace</td><td>Simple</td><td>-</td><td>1d6 bludgeoning</td><td>5 ft</td><td>5</td><td>4 lb</td></tr>
-          <tr><td>Quarterstaff</td><td>Simple</td><td>versatile</td><td>1d6/1d8 bludgeoning</td><td>10 ft</td><td>0.2</td><td>4 lb</td></tr>
-          <tr><td>Sickle</td><td>Simple</td><td>Light</td><td>1d4 slashing</td><td>5 ft</td><td>1</td><td>2 lb</td></tr>
-          <tr><td>Spear</td><td>Simple</td><td>Thrown (range 20/60), versatile</td><td>1d6/1d8 piercing</td><td>10 ft</td><td>1</td><td>3 lb</td></tr>
-          <tr><td>Crossbow, light</td><td>Simple</td><td>ranged, Ammunition (range 80/320), loading, two-handed</td><td>1d8 piercing</td><td>-</td><td>25</td><td>5 lb</td></tr>
-          <tr><td>Dart</td><td>Simple</td><td>ranged, Finesse, thrown (range 20/60)</td><td>1d4 piercing</td><td>-</td><td>0.05</td><td>0.25 lb</td></tr>
-          <tr><td>Shortbow</td><td>Simple</td><td>ranged, Ammunition (range 80/320), two-handed</td><td>1d6 piercing</td><td>-</td><td>25</td><td>2 lb</td></tr>
-          <tr><td>Sling</td><td>Simple</td><td>ranged, Ammunition (range 30/120)</td><td>1d4 bludgeoning</td><td>-</td><td>0.1</td><td>0</td></tr>
-          <tr><td>Battleaxe</td><td>Martial</td><td>versatile</td><td>1d8/1d10 slashing</td><td>5 ft</td><td>10</td><td>4 lb</td></tr>
-          <tr><td>Flail</td><td>Martial</td><td>-</td><td>1d8 bludgeoning</td><td>10 ft</td><td>10</td><td>2 lb</td></tr>
-          <tr><td>Glaive</td><td>Martial</td><td>heavy, reach, two-handed</td><td>1d10 slashing</td><td>15 ft</td><td>20</td><td>6 lb</td></tr>
-          <tr><td></td></tr>
+          <tr><td>Club</td><td>Simple</td><td>light, concealable</td><td>1d6 bludgeoning</td><td>0.4</td><td>2 lb</td><td>5 ft</td></tr>
+          <tr><td>Crossbow, light</td><td>Simple</td><td>ranged (80/320), Ammunition, loading, two-handed</td><td>1d10 piercing</td><td>100</td><td>5 lb</td><td>80/320</td></tr>
+          <tr><td>Dagger</td><td>Simple</td><td>finesse, light, thrown (20/60), concealable</td><td>1d4 piercing</td><td>8</td><td>1 lb</td><td>5 ft (thrown 20/60)</td></tr>
+          <tr><td>Dart</td><td>Simple</td><td>ranged, finesse, thrown (20/60)</td><td>1d6 piercing</td><td>0.05</td><td>0.25 lb</td><td>20/60</td></tr>
+		      <tr><td>Greatclub</td><td>Simple</td><td>Two-handed</td><td>1d10 bludgeoning</td><td>0.2</td><td>10 lb</td><td>10 ft</td></tr>
+		      <tr><td>Handaxe</td><td>Simple</td><td>light, thrown (20/60), brutal</td><td>1d6 slashing</td><td>20</td><td>2 lb</td><td>5 ft</td></tr>
+		      <tr><td>Javelin</td><td>Simple</td><td>light, thrown (30/120)</td><td>1d6 piercing</td><td>2</td><td>2 lb</td><td>10 ft (thrown 30/120)</td></tr>
+		      <tr><td>Light Hammer</td><td>Simple</td><td>light, thrown (range 20/60), knock down</td><td>1d6 bludgeoning</td><td>8</td><td>2 lb</td><td>5 ft (thrown 20/60)</td></tr>
+      		<tr><td>Long Spear</td><td>Simple</td><td>heavy, two-handed, reach</td><td>1d8 piercing</td><td>4</td><td>6 lb</td><td>15 ft</td></tr>
+      		<tr><td>Mace</td><td>Simple</td><td>knock down</td><td>1d8 bludgeoning</td><td>20</td><td>4 lb</td><td>5 ft</td></tr>
+      		<tr><td>Quarterstaff</td><td>Simple</td><td>versatile, finesse</td><td>1d6/1d8 bludgeoning</td><td>0.8</td><td>4 lb</td><td>10 ft</td></tr>
+      		<tr><td>Shortbow</td><td>Simple</td><td>ranged, Ammunition (range 80/320), two-handed</td><td>1d8 piercing</td><td>100</td><td>2 lb</td><td>80/320</td></tr>
+      		<tr><td>Sickle</td><td>Simple</td><td>light, finesse</td><td>1d6 slashing</td><td>4</td><td>2 lb</td><td>5 ft</td></tr>
+      		<tr><td>Sling</td><td>Simple</td><td>ranged, Ammunition (range 30/120)</td><td>1d8 bludgeoning</td><td>0.4</td><td>0</td><td>30/120</td></tr>
+      		<tr><td>Spear</td><td>Simple</td><td>Thrown (range 20/60), versatile</td><td>1d8/1d10 piercing</td><td>4</td><td>3 lb</td><td>10 ft (thrown 20/60)</td></tr>
+      		<tr><td>Battleaxe</td><td>Martial</td><td>versatile, brutal</td><td>1d10/1d12 slashing</td><td>40</td><td>4 lb</td><td>5 ft</td></tr>
+      		<tr><td>Blowgun</td><td>Martial</td><td>ranged, Ammunition (range 25/100), light, concealable</td><td>1d6 poison</td><td>10</td><td>1 lb</td><td>25/100</td></tr>
+      		<tr><td>Crossbow, hand</td><td>Martial</td><td>ranged, Ammunition (range 50/200), loading, light, concealable</td><td>1d8 piercing</td><td>300</td><td>3 lb</td><td>50/200</td></tr>
+      		<tr><td>Crossbow, heavy</td><td>Martial</td><td>ranged, Ammunition (range 100/400), loading, heavy, two-handed</td><td>2d6 piercing</td><td>200</td><td>18 lb</td><td>100/400</td></tr>
+      		<tr><td>Flail</td><td>Martial</td><td>grapple</td><td>1d8 bludgeoning</td><td>40</td><td>2 lb</td><td>10 ft</td></tr>
+      		<tr><td>Glaive</td><td>Martial</td><td>heavy, two-handed</td><td>2d6 slashing</td><td>80</td><td>6 lb</td><td>15 ft</td></tr>
+	      	<tr><td>Greataxe</td><td>Martial</td><td>brutal, heavy, two-handed</td><td>2d8 slashing</td><td>120</td><td>7 lb</td><td>5 ft</td></tr>
+      		<tr><td>Greatbow</td><td>Martial</td><td>ranged, Ammunition (range 150/600), heavy, two-handed, requires Str 13 to wield</td><td>2d8 piercing</td><td>200</td><td>4 lb</td><td>150/600</td></tr>
+		      <tr><td>Greatsword</td><td>Martial</td><td>heavy, two-handed</td><td>2d8 slashing</td><td>200</td><td>6 lb</td><td>10 ft</td></tr>
+		      <tr><td>Halberd</td><td>Martial</td><td>heavy, two-handed, knock down</td><td>1d10 slashing</td><td>80</td><td>6 lb</td><td>15 ft</td></tr>
+      		<tr><td>Lance</td><td>Martial</td><td>reach, special</td><td>2d8 piercing</td><td>40</td><td>6 lb</td><td>10 ft</td></tr>
+	      	<tr><td>Longbow</td><td>Martial</td><td>ranged, Ammunition (range 150/600), heavy, two-handed</td><td>1d10 piercing</td><td>200</td><td>2 lb</td><td>150/600</td></tr>
+      		<tr><td>Longsword</td><td>Martial</td><td>versatile</td><td>1d10/1d12 slashing</td><td>60</td><td>3 lb</td><td>10 ft</td></tr>
+    		  <tr><td>Maul</td><td>Martial</td><td>heavy, two-handed, knock down</td><td>2d6 bludgeoning</td><td>40</td><td>10 lb</td><td>5 ft</td></tr>
+      		<tr><td>Morningstar</td><td>Martial</td><td>brutal</td><td>1d10 bludgeoning</td><td>60</td><td>4 lb</td><td>5 ft</td></tr>
+      		<tr><td>Net</td><td>Martial</td><td>ranged, special, thrown (range 20/40)</td><td>1 bludgeoning</td><td>4</td><td>3 lb</td><td>20/40</td></tr>
+      		<tr><td>Pike</td><td>Martial</td><td>heavy, reach, two-handed</td><td>1d10 piercing</td><td>20</td><td>18 lb</td><td>15 ft</td></tr>
+      		<tr><td>Rapier</td><td>Martial</td><td>finesse</td><td>1d10 piercing</td><td>100</td><td>2 lb</td><td>10 ft</td></tr>
+      		<tr><td>Scimitar</td><td>Martial</td><td>finesse, light</td><td>1d10 slashing</td><td>100</td><td>3 lb</td><td>5 ft</td></tr>
+      		<tr><td>Shortsword</td><td>Martial</td><td>finesse, light</td><td>1d8 piercing</td><td>40</td><td>2 lb</td><td>5 ft</td></tr>
+      		<tr><td>Trident</td><td>Martial</td><td>Thrown (range 20/60), versatile</td><td>1d10/2d6 piercing</td><td>20</td><td>4 lb</td><td>10 ft</td></tr>
+      		<tr><td>War pick</td><td>Martial</td><td>brutal</td><td>1d10 piercing</td><td>20</td><td>2 lb</td><td>5 ft</td></tr>
+      		<tr><td>Warhammer</td><td>Martial</td><td>versatile, knockdown</td><td>1d10/1d12 bludgeoning</td><td>60</td><td>2 lb</td><td>5 ft</td></tr>
+      		<tr><td>Whip</td><td>Martial</td><td>ranged, finesse, reach, grapple</td><td>1d6 slashing</td><td>8</td><td>3 lb</td><td>15 ft</td></tr>
         </table>
       </b-tab>
     </b-tabs>

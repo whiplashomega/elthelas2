@@ -1,0 +1,212 @@
+@import '@/components/scss/_vars';
+
+.charbuilder {
+  font-size: 0.8rem;
+}
+
+.charsheet-text {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+  padding: 1px 0px;
+  height: 24px;
+}
+
+.dark .charsheet-text {
+  background-color: lighten($darkbackground, 15%);
+  color: $darktext;
+}
+
+.combat-hud {
+  font-size: 0.75rem;
+  h4 {
+    font-size: 1.2rem;
+  }
+  .row {
+    margin-left: -7px;
+    margin-right: -7px;
+  }
+  .col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-auto, .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-auto, .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md-auto, .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-auto {
+    padding-right: 7px;
+    padding-left: 7px;
+  }
+}
+
+.combat-hud .combat-hud-hide {
+  display: none;
+}
+
+.charsheet-textarea {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+  padding: 1px 0px;
+  height: auto;
+  @media screen {
+    min-height: 10vh;
+  }
+}
+
+.dark .charsheet-textarea {
+  background-color: lighten($darkbackground, 15%);
+  color: $darktext;
+}
+
+.charsheet-label {
+  font-weight: bold;  
+}
+
+.btn-sm {
+  padding: .05em .4em;
+  font-size: 0.8em;
+}
+.btn-symbol {
+  background: none;
+  border: none;
+}
+.charsheet-static {
+  margin: 10px 0;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 2px 5px;
+}
+
+.smalltext {
+  font-size: 0.75em;
+  font-weight: normal;
+}
+
+#attackdiv {
+  min-height: 175px;
+}
+
+.clickable {
+  color: blue;
+  cursor: pointer; 
+}
+
+.clickable:hover {
+  text-decoration:underline;
+}
+#featurebox {
+  p {
+    margin-bottom: 0.5em;
+  }
+  h4 {
+    font-size: 1.5em;
+  }
+  min-height: 360px;
+}
+
+#profbox {
+  height: 400px;
+}
+
+#armorbox {
+  min-height: 160px;
+}
+
+#equipmentbox {
+  min-height: 400px;
+}
+.center {
+  text-align: center;
+}
+.sheet-container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ddlogo {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0px;
+  padding: 10px;
+}
+.charsheet-num {
+  border: none;
+  max-width: 50px;
+  text-align: right;
+  @media screen and (max-width:500px) {
+    max-width: 35px;
+    font-size: 0.85em;
+  }
+}
+
+.dark .charsheet-num {
+  background-color: lighten($darkbackground, 15%);
+  color: $darktext;
+}
+
+.dark select {
+  background-color: lighten($darkbackground, 15%);
+  color: $darktext;
+  border-color: lighten($darkbackground, 25%);
+}
+
+.dark input[type=number] {
+  background-color: lighten($darkbackground, 15%);
+  color: $darktext;
+  border-color: lighten($darkbackground, 25%);
+}
+.abilitytable {
+  margin-top: 10px;
+  border: 1px solid black;
+  width: 100%;
+  font-size: 0.95em;
+  tr {
+    border-bottom: 1px solid black;
+  }
+  td, th {
+    padding: 3px;
+    border-right: 1px solid black;
+  }
+}
+
+.dark .abilitytable {
+  border: none;
+  tr {
+    border-bottom: 1px solid lighten($darkbackground, 25%);
+  }
+  td, th {
+    border-right: none;
+  }
+}
+
+#spellList {
+  display: table;
+  width: 100%;
+
+  thead, tbody {
+    float: left;
+    width: 100%;
+  }
+  tbody {
+    overflow: auto;
+    height: 350px;
+  }
+  tr {
+    width: 100%;
+    display: table;
+    text-align: left;
+  }
+  th:nth-of-type(1), td:nth-of-type(1) {
+    width: 10%;
+  }
+  th:nth-of-type(3), td:nth-of-type(3) {
+    width: 20%;
+  }
+  th, td {
+    width: 70%;
+  }
+}
+
+.light .attuned {
+  background-color: #ffccff;
+}
+
+.dark .attuned {
+  background-color: #050;
+}

@@ -31,26 +31,26 @@ export default {
     getThirdCasterPrepared: () => (a) => {
       return charCalculators.thirdCasterPrepared(a);
     },
-    getTotalPrepared: () => {
-      return charCalculators.totalPrepared(this.character);
+    getTotalPrepared: (state) => {
+      return charCalculators.totalPrepared(state.character);
     },
-    getCharacter: () => {
-      return this.character;
+    getCharacter: (state) => {
+      return state.character;
     },
-    getAsCreature: () => {
+    getAsCreature: (state, getters) => {
       let creature = {
-        name: this.character.name,
+        name: state.character.name,
         type: "humanoid",
         size: "medium",
-        subtype: this.character.race.name,
-        cr: this.level,
-        alignment: this.character.alignment,
-        ac: this.accalc,
-        acdesc: this.accalc,
-        hp: this.getHPTotal,
-        hpdesc: this.getHPTotal,
-        speed: this.getSpeedStat(0) + " ft",
-        str: this.getStatTotal(0),
+        subtype: state.character.race.name,
+        cr: getters.level,
+        alignment: state.character.alignment,
+        ac: getters.accalc,
+        acdesc: getters.accalc,
+        hp: getters.getHPTotal,
+        hpdesc: getters.getHPTotal,
+        speed: getters.getSpeedStat(0) + " ft",
+        str: getters.getStatTotal(0),
         strmod: this.getStatMod(0),
         dex: this.getStatTotal(1),
         dexmod: this.getStatMod(1),
@@ -81,30 +81,30 @@ export default {
       creature.tags = [creature.type, creature.size, "cr" + creature.cr, creature.alignment];
       return creature;
     },
-    classtext: () => {
-      return charCalculators.classtext(this.character);
+    classtext: (state) => {
+      return charCalculators.classtext(state.character);
     },
-    profbonus: () => {
-      return charCalculators.profbonus(this.character);
+    profbonus: (state) => {
+      return charCalculators.profbonus(state.character);
     },
-    totalGold: () => {
-      return charCalculators.totalGold(this.character);
+    totalGold: (state) => {
+      return charCalculators.totalGold(state.character);
     },
-    getStatTotal: () => (i) => {
-      return charCalculators.statTotal(this.character, i);
+    getStatTotal: (state) => (i) => {
+      return charCalculators.statTotal(state.character, i);
     },
-    getStatMod: () => (i) => {
-      return charCalculators.statMod(this.character, i);
+    getStatMod: (state) => (i) => {
+      return charCalculators.statMod(state.character, i);
     },
-    getSaveMod: () => (i) => {
-      return charCalculators.saveMod(this.character, i);
+    getSaveMod: (state) => (i) => {
+      return charCalculators.saveMod(state.character, i);
     },
-    getSaveDC: () => (i) => {
-      return charCalculators.saveDC(this.character, i);
+    getSaveDC: (state) => (i) => {
+      return charCalculators.saveDC(state.character, i);
     },
-    charGroups: () => {
+    charGroups: (state) => {
       let groups = [];
-      this.characters.forEach((a) => {
+      state.characters.forEach((a) => {
         let b = groups.findIndex((c) => {
           return c.name === a.group;
         });
@@ -113,30 +113,30 @@ export default {
         }
       });
       let b = groups.findIndex((c) => {
-        return c.name === this.character.group;
+        return c.name === state.character.group;
       });
       if (b === -1) {
-        groups.push({ name: this.character.group, id: "curchargroup" });
+        groups.push({ name: state.character.group, id: "curchargroup" });
       }
       return groups;
     },
-    getAttBonus: () => (i) => {
-      return charCalculators.attBonus(this.character, i);
+    getAttBonus: (state) => (i) => {
+      return charCalculators.attBonus(state.character, i);
     },
-    getSkillMod: () => (skill) => {
-      return charCalculators.skillMod(this.character, skill);
+    getSkillMod: (state) => (skill) => {
+      return charCalculators.skillMod(state.character, skill);
     },
-    cantripsKnown: () => {
-      return charCalculators.cantripsknown(this.character);
+    cantripsKnown: (state) => {
+      return charCalculators.cantripsknown(state.character);
     },
-    getInitMod: () => {
-      return charCalculators.initMod(this.character);
+    getInitMod: (state) => {
+      return charCalculators.initMod(state.character);
     },
-    getHPTotal: () => {
-      return charCalculators.hpTotal(this.character);
+    getHPTotal: (state) => {
+      return charCalculators.hpTotal(state.character);
     },
-    pointbuy: () => {
-      return this.character.stats.reduce((a, b) => {
+    pointbuy: (state) => {
+      return state.character.stats.reduce((a, b) => {
         var c = Number(b) - 8;
         if (b > 13) {
           c += Number(b) - 13;
@@ -147,42 +147,42 @@ export default {
         return a + c;
       }, 0);
     },
-    getSpeedStat: () => (i) => {
-      return charCalculators.speedStat(this.character, i);
+    getSpeedStat: (state) => (i) => {
+      return charCalculators.speedStat(state.character, i);
     },
-    getAttackBonus: () => (attack) => {
-      return charCalculators.attackBonus(this.character, attack);
+    getAttackBonus: (state) => (attack) => {
+      return charCalculators.attackBonus(state.character, attack);
     },
-    getDamageBonus: () => (dmg, stat) => {
-      return charCalculators.damageBonus(this.character, dmg, stat);
+    getDamageBonus: (state) => (dmg, stat) => {
+      return charCalculators.damageBonus(state.character, dmg, stat);
     },
-    armorac: () => (a) => {
-      return charCalculators.armorAC(this.character, a);
+    armorac: (state) => (a) => {
+      return charCalculators.armorAC(state.character, a);
     },
     charlevel: () => charCalculators.charlevel,
-    accalc: () => {
-      return charCalculators.acCalc(this.character);
+    accalc: (state) => {
+      return charCalculators.acCalc(state.character);
     },
-    equipmentContainers: () => {
-      return charCalculators.equipmentContainers(this.character);
+    equipmentContainers: (state) => {
+      return charCalculators.equipmentContainers(state.character);
     },
-    carryWeight: () => {
-      return charCalculators.carryWeight(this.character);
+    carryWeight: (state) => {
+      return charCalculators.carryWeight(state.character);
     },
-    carryMax: () => {
-      return charCalculators.carryMax(this.character);
+    carryMax: (state) => {
+      return charCalculators.carryMax(state.character);
     },
-    totalslots: () => (level) => {
-      return charCalculators.totalSlots(this.character, level);
+    totalslots: (state) => (level) => {
+      return charCalculators.totalSlots(state.character, level);
     },
-    warlockSlots: () => {
-      return charCalculators.warlockSlots(this.character);
+    warlockSlots: (state) => {
+      return charCalculators.warlockSlots(state.character);
     },
-    warlockSlotLevel: () => {
-      return charCalculators.warlockSlotLevel(this.character);
+    warlockSlotLevel: (state) => {
+      return charCalculators.warlockSlotLevel(state.character);
     },
-    level: () => {
-      return charCalculators.level(this.character);
+    level: (state) => {
+      return charCalculators.level(state.character);
     },
     validateCharacter: () => {
       if (this.character.name === "") {
@@ -419,13 +419,15 @@ export default {
       }
     },
     loadImage: () => {
-      var f = document.getElementById('imageload').files[0];
-      var r = new FileReader();
-      r.addEventListener("load", function () {
-        this.character.image = r.result;
-      }, false);
-      if (f) {
-        r.readAsDataURL(f);
+      if (document.getElementById('imageload')) {
+        var f = document.getElementById('imageload').files[0];
+        var r = new FileReader();
+        r.addEventListener("load", function () {
+          this.character.image = r.result;
+        }, false);
+        if (f) {
+          r.readAsDataURL(f);
+        }        
       }
     },
     loadCharacter (passthrough) {

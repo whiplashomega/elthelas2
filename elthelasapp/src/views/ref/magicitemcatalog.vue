@@ -29,20 +29,18 @@
         <b-col md="4" class="my-1">
           <b-input-group>
             <b-form-input v-model="magicitemtables.filter" placeholder="Type to Search" />
-            <b-btn :disabled="!magicitemtables.filter" @click="magicitemtables.filter = ''">Clear</b-btn>
+            <button class="btn btn-primary" :disabled="!magicitemtables.filter" @click="magicitemtables.filter = ''">Clear</button>
           </b-input-group>
         </b-col>
       </b-row>
-      <b-modal id="magicitemmodal" size="lg"
-               @hide="resetMagicItemModal" :title="magicItemModal.Item"
-               ok-only :modal-class="userinfo.themesetting">
+      <modal id="magicitemmodal" :modalProps="modalProps">
         <p><strong>Type: </strong>{{ magicItemModal.Type }}</p>
         <p><strong>Cost (gp): </strong>{{ magicItemModal["Cost (gp)"] }}</p>
         <p><strong>Attunement: </strong>{{ magicItemModal.Attunement }}</p>
         <p><strong>Rarity: </strong>{{ magicItemModal.Rarity }}</p>
         <p><strong>{{ magicItemModal.instock }}</strong></p>
-        <div v-html="$options.filters.marked(magicItemModal.Effect)"></div>
-      </b-modal>
+        <div v-html="marked.parse(magicItemModal.Effect)"></div>
+      </modal>
       <b-tabs id="magicitemcatalog">
         <b-tab title="Scrolls">
           <b-table show-empty @row-clicked="selectForPrint"
@@ -109,7 +107,7 @@
     <div class="col-sm-12" v-if="printMode">
       <div v-for="item in toPrint" :key="item.Item" style="margin-bottom:50px;page-break-inside:avoid;">
         <h4 style="font-size:3em;">{{ item.Item }} ({{ item.Type }}, {{ item.Rarity }})</h4>
-        <div v-html="$options.filters.marked(item.Effect)" style="font-size:1.5em;"></div>
+        <div v-html="marked.parse(item.Effect)" style="font-size:1.5em;"></div>
       </div>
       <button class="btn btn-success print-hide" @click="toPrint = []; printMode = false;">Exit</button>
     </div>

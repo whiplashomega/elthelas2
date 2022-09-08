@@ -3,5 +3,10 @@ export default {
     return {
       shownDomain: "water"
     };
+  },
+  methods: {
+    changeDomain(domain) {
+      this.shownDomain = domain;
+    }
   }
 };

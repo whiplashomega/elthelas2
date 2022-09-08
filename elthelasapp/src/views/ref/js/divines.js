@@ -1,9 +1,15 @@
-import { mapGetters } from 'vuex';
+import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
+import { useStaticsStore } from '@/stores/index';
 
 export default {
-  computed: mapGetters({
-    divines: "allDivines"
-  }),
+  setup () {
+    const statics = useStaticsStore();
+    const { divines } = statics;
+    
+    return {
+      divines
+    };
+  },
   data () {
     return {
       divineFilter: "",
@@ -25,8 +31,8 @@ export default {
       });
     }
   },
-  created () {
-    this.$store.dispatch('getAllDivines').then(() => {
+  mounted () {
+    this.statics.getAllDivines().then(() => {
       this.filteredDivines = this.divines;
     });
   }
