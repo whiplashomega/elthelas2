@@ -1,4 +1,5 @@
 /* globals appRoot */
+var express = require('express');
 
 const sitemapurls = [
     { url: '/',  changefreq: 'monthly', priority: 1 },
@@ -102,6 +103,8 @@ module.exports = function(app, staticDir, server) {
     app.use('/strongholds', strongholds);
     app.use('/campaigns', campaigns);
     app.use('/creatures', creatures);
+
+    app.use(express.static(appRoot, { maxAge: 365 }));
     
     //generate the sitemap on request
     app.get('/sitemap.xml', function(req, res) {

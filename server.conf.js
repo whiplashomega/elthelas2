@@ -42,16 +42,11 @@ app.start = function() {
     
     // parse application/x-www-form-urlencoded
     app.use(bodyParser.urlencoded({ extended: true }));
-    
-    app.use(express.static(__dirname + '/elthelasapp/dist', { maxAge: 365 }));
     console.log('loaded bodyParser');
-    // override with the X-HTTP-Method-Override header in the request. simulate DELETE/PUT
     app.use(methodOverride('X-HTTP-Method-Override')); 
     console.log('methodOverride started');
-    app.use(passport.initialize());
-    // set the static files location /public/img will be /img for users
-    app.use(express.static('.')); 
-    console.log("express static loaded");
+     app.use(passport.initialize());
+   
     // routes ==================================================
     var server = app.listen(config.port);
     var io = socket(server);
