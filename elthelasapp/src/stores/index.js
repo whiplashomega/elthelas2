@@ -6,6 +6,7 @@ import campaigns from './campaigns.js';
 import characters from './characters.js';
 import creatures from './creatures.js';
 import encounters from './encounters.js';
+import strongholds from './strongholds.js';
 
 const useGlobalsStore = defineStore('global', globals);
 const useUserStore = defineStore('user', user);
@@ -14,7 +15,8 @@ const useCampaignStore = defineStore('campaign', campaigns);
 const useCharacterStore = defineStore('character', characters);
 const useCreatureStore = defineStore('creature', creatures);
 const useEncounterStore = defineStore('encounter', encounters);
+const useStrongholdStore = defineStore('stronghold', strongholds);
 
 export {
-  useGlobalsStore, useUserStore, useStaticsStore, useCampaignStore, useCharacterStore, useCreatureStore, useEncounterStore
-}
+  useGlobalsStore, useUserStore, useStaticsStore, useCampaignStore, useCharacterStore, useCreatureStore, useEncounterStore, useStrongholdStore
+};

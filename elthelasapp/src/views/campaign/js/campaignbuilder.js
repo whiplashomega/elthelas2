@@ -3,6 +3,7 @@ import { storeToRefs } from 'pinia';
 import notes from '@/components/campaignbuilder/notes.vue';
 import pcmanager from '@/components/campaignbuilder/pcmanager.vue';
 import npcmanager from '@/components/campaignbuilder/npcmanager.vue';
+import modal from '@/components/global/modal.vue';
 import runner from '@/views/campaign/runner.vue';
 /* Campaign Object Structure
 {
@@ -27,8 +28,9 @@ export default {
     const { getUserInfo: token, isLoggedIn: loggedin } = userinfo;
     
     const { getAllCampaigns: getAll, getAllCampaignsSilent: getAllSilent, saveNewCampaign: saveNew, saveCampaign: save, loadCampaign: load, loadCampaignById: loadById, loadCampaignByUrl: loadByUrl, deleteCampaign: deleteCamp, newCampaign: newCamp } = campaigns;
+    let buildmode = campaign.buildmode;
     return {
-      campaigns, userinfo, allCampaigns, campaign, chapter, pcs, token, loggedin,
+      campaigns, userinfo, allCampaigns, campaign, chapter, pcs, token, loggedin, buildmode,
       
       getAll, getAllSilent, saveNew, save, load, loadById, loadByUrl, deleteCamp, newCamp
     }
@@ -37,7 +39,8 @@ export default {
     notes,
     pcmanager,
     npcmanager,
-    runner
+    runner,
+    modal
   },
   data: function () {
     return {
@@ -46,7 +49,8 @@ export default {
       creArray: [],
       charArray: [],
       runnerKey: 0,
-      activeTab: 0
+      activeTab: 0,
+      modalProps: { isActive: false }
     };
   },
   watch: {
@@ -66,12 +70,15 @@ export default {
       this.runnerKey++;
       this.activeTab = 3;
       window.scroll(1, 300);
+    },
+    showLoadModal() {
+      this.modalProps.isActive = true;
     }
   },
   created () {
     this.getAllSilent().then(() => {
-      if (this.$route.params.url) {
-        this.loadByUrl({ url: this.$route.params.url });
+      if (this.$route.params.campaign) {
+        this.loadByUrl({ url: this.$route.params.campaign });
       }
     });
   }

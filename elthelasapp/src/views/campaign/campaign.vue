@@ -3,7 +3,7 @@
     <div class="btn-group">
       <button class="btn btn-primary" @click="save()" v-if="campaign._id">Save</button>
       <button class="btn btn-primary" @click="saveNew()" v-if="!campaign._id">Save New</button>
-      <button class="btn btn-success" @click="getAll(comp)">Load</button>
+      <button class="btn btn-success" @click="getAllSilent();showLoadModal()">Load</button>
       <button class="btn btn-warning" @click="newCamp()">New Campaign</button>
       <button class="btn btn-primary" @click="showChapters = !showChapters"><span v-if="showChapters">Hide</span><span v-else>Show</span> Chapters</button>
     </div>
@@ -21,20 +21,20 @@
         <runner :cre-array="creArray" :char-array="charArray" :key="runnerKey" />
       </b-tab>
     </b-tabs>
-    <b-modal id="campaignmodal" title="Load File from Server" :modal-class="userinfo.themesetting">
+    <modal id="campaignmodal" title="Load File from Server" :modalProps="modalProps">
       <table class="table table-striped">
         <tr>
           <th>Campaign Name</th><th>-</th>
         </tr>
         <tr v-for="camp in allCampaigns" :key="camp._id">
-          <td><span class="clickable" @click="load({ campaign: camp, comp: comp })">{{ camp.title }}</span></td>
+          <td><a class="clickable" @click="load({ campaign: camp, comp: comp });modalProps.isActive = false">{{ camp.title }}</a></td>
           <td>
             <input type="button" @click="deleteCamp(camp)"
                    class="btn btn-danger" value="X" />
           </td>
         </tr>
       </table>
-    </b-modal>
+    </modal>
   </div>
 </template>
 <script src="./js/campaignbuilder.js"></script>

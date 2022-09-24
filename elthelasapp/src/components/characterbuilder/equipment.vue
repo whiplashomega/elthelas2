@@ -63,44 +63,50 @@
             </b-tab>
             <b-tab title="Adventuring Gear">
               <input placeholder="search" v-model="searchEquip" class="form-control" />
-              <table class="table table-striped table-sm">
-                <thead><tr><th>Item</th><th>Cost</th><th>Weight</th></tr></thead>
-                <tbody>
-                  <tr v-for="item in allGear" :key="item.Item">
-                    <td><a href="#" @click="addExistingEquipment(item, newequip.quantity, newequip.container, false)">{{ item.Item }}</a></td>
-                    <td>{{ item.Cost }}</td>
-                    <td>{{ item.Weight }}</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div style="overflow-y:scroll;height:500px;">
+                <table class="table table-striped table-sm">
+                  <thead><tr><th>Item</th><th>Cost</th><th>Weight</th></tr></thead>
+                  <tbody>
+                    <tr v-for="item in allGear" :key="item">
+                      <td><a href="#" @click="addExistingEquipment(item, newequip.quantity, newequip.container, false)">{{ item.Item }}</a></td>
+                      <td>{{ item.Cost }}</td>
+                      <td>{{ item.Weight }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </b-tab>
             <b-tab title="Weapons">
               <input placeholder="search" v-model="searchEquip" class="form-control" />
-              <table class="table table-striped table-sm">
-                <thead><tr><th>Item</th><th>Cost</th><th>Weight</th></tr></thead>
-                <tbody>
-                  <tr v-for="item in allWeapons" :key="item.Name">
-                    <td><a href="#" @click="addExistingWeapon(item, newequip.quantity, newequip.container)">{{ item.Name }}</a></td>
-                    <td>{{ item.Cost }}</td>
-                    <td>{{ item.Weight }}</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div style="overflow-y:scroll;height:500px;">
+                <table class="table table-striped table-sm">
+                  <thead><tr><th>Item</th><th>Cost</th><th>Weight</th></tr></thead>
+                  <tbody>
+                    <tr v-for="item in allWeapons" :key="item.Name">
+                      <td><a href="#" @click="addExistingWeapon(item, newequip.quantity, newequip.container)">{{ item.Name }}</a></td>
+                      <td>{{ item.Cost }}</td>
+                      <td>{{ item.Weight }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </b-tab>
             <b-tab title="Armor">
               <input placeholder="search" v-model="searchEquip" class="form-control" />
-              <table class="table table-striped table-sm">
-                <thead><tr><th>Item</th><th>Type</th><th>Cost</th><th>AC</th><th>Weight</th></tr></thead>
-                <tbody>
-                  <tr v-for="item in allArmor" :key="item.Armor">
-                    <td><a href="#" @click="addExistingArmor(item, newequip.quantity, newequip.container)">{{ item.Armor }}</a></td>
-                    <td>{{ item.Type }}</td>
-                    <td>{{ item.Price }}</td>
-                    <td>{{ item.AC }}</td>
-                    <td>{{ item.Weight }}</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div style="overflow-y:scroll;height:500px;">
+                <table class="table table-striped table-sm">
+                  <thead><tr><th>Item</th><th>Type</th><th>Cost</th><th>AC</th><th>Weight</th></tr></thead>
+                  <tbody>
+                    <tr v-for="item in allArmor" :key="item.Armor">
+                      <td><a href="#" @click="addExistingArmor(item, newequip.quantity, newequip.container)">{{ item.Armor }}</a></td>
+                      <td>{{ item.Type }}</td>
+                      <td>{{ item.Price }}</td>
+                      <td>{{ item.AC }}</td>
+                      <td>{{ item.Weight }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </b-tab>
           </b-tabs>
         </b-modal>

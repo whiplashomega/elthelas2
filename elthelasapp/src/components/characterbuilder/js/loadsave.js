@@ -8,8 +8,8 @@ export default {
     const userinfo = useUserStore();
     
     const { googletoken, loggedin, token } = storeToRefs(userinfo);
-    const { character, characters, charlevel, charGroups: groups } = storeToRefs(characterStore);
-    
+    const { charlevel, charGroups: groups } = storeToRefs(characterStore);
+    const { character } = characterStore;
     const getDriveFiles = characterStore.getDriveFiles;
     const saveToDrive = characterStore.saveToDrive;
     const getFromServer = characterStore.getFromServer;
@@ -27,7 +27,6 @@ export default {
       loggedin,
       token,
       character,
-      characters,
       charlevel,
       groups,
       getDriveFiles,
@@ -66,7 +65,7 @@ export default {
   props: { minimal: Boolean },
   data () {
     return {
-      comp: this,
+      characters: [],
       groupfilter: "all",
       serverModalProps: { isActive: false, title: "Load Character" },
       loadingModalProps: { isActive: false, title: "Load Character" }
@@ -75,9 +74,9 @@ export default {
   methods: {
     getChars () {
       this.loadingModalProps.isActive = true;
-      this.getFromServer(this).then((res) => {
-        console.log(res);
+      this.getFromServer().then((res) => {
         if (res) {
+          this.characters = res;
           this.loadingModalProps.isActive = false;
           this.serverModalProps.isActive = true;
         }
@@ -100,7 +99,7 @@ export default {
   },
   mounted () {
     if (this.loggedin) {
-      this.getFromServerSilent(this);
+      this.getFromServerSilent();
     }
   }
 };

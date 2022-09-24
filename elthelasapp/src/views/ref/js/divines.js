@@ -1,12 +1,14 @@
 import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 import { useStaticsStore } from '@/stores/index';
+import { storeToRefs } from 'pinia';
 
 export default {
   setup () {
     const statics = useStaticsStore();
-    const { divines } = statics;
+    const { divines } = storeToRefs(statics);
     
     return {
+      statics,
       divines
     };
   },

@@ -1,13 +1,18 @@
-import { useGlobalsStore, useUserStore } from '@/stores/index';
+import { useGlobalsStore, useUserStore, useCampaignStore } from '@/stores/index';
 import modal from '../modal.vue';
 
 export default {
   setup () {
     const globals = useGlobalsStore();
     const user = useUserStore();
+    const campaigns = useCampaignStore();
+    const userCampaigns = campaigns.campaigns;
+    const logout = user.logout;
     return {
       globals,
-      user
+      user,
+      logout,
+      userCampaigns
     };
   },
   components: {

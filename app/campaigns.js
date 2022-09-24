@@ -16,10 +16,14 @@ router.get('/', Verify.verifyOrdinaryUser, function(req, res) {
 router.post('/', Verify.verifyOrdinaryUser, function(req, res) {
   var newcampaign = new Campaign({ ...req.body.campaign, owner: req.decoded.username });
   newcampaign.save(function(err, campaign) {
+    console.log(req.body.campaign);
+    console.log(campaign);
     if (err) {
-      res.header("Status Code", 500);
+      res.status(500);
+      console.log(err);
       res.json({ message: "Could not save campaign due to errors" });
-    };
+      return false;
+    }
     console.log(campaign.id);
     res.header("Cache-Control", "no-cache, no-store, must-revalidate");
     res.header("Pragma", "no-cache");

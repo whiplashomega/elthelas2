@@ -1,10 +1,17 @@
-import { mapGetters, mapActions } from 'vuex';
+import { useUserStore, useCreatureStore } from '@/stores/index';
+import { storeToRefs } from 'pinia';
 
 export default {
-  computed: mapGetters({
-    creatures: "allCreatures",
-    admin: "isAdmin"
-  }),
+  setup () {
+    const creatureStore = useCreatureStore();
+    const userStore = useUserStore();
+    const { isAdmin: admin } = userStore;
+    const { getCreature, getAllCreatures } = creatureStore;
+    const { creatures } = storeToRefs(creatureStore);
+    return {
+      admin, creatures, getCreature, getAllCreatures
+    };
+  },
   data () {
     return {
       creaturestable: {
@@ -54,9 +61,6 @@ export default {
     };
   },
   methods: {
-    ...mapActions({
-      getCreature: 'getCreature'
-    }),
     async info (item, index, button) {
       var creature = await this.getCreature(item._id);
       this.creaturestable.modalInfo = creature;
@@ -115,5 +119,8 @@ export default {
         this.$router.push("/tools/creaturebuilder/" + item._id);
       }
     }
+  },
+  mounted () {
+    this.getAllCreatures();
   }
 };

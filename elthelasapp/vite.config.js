@@ -13,7 +13,20 @@ export default defineConfig({
   },
   server: {
     port: 8080,
-    host: "0.0.0.0"
+    host: "0.0.0.0",
+    proxy: {
+      '/users/*': { target: 'http://0.0.0.0:8081' },
+      '/users': { target: 'http://0.0.0.0:8081' },
+      '/characters': { target: 'http://0.0.0.0:8081' },
+      '/characters/*': { target: 'http://0.0.0.0:8081' },
+      '/encounters': { target: 'http://0.0.0.0:8081' },
+      '/campaigns/*': { target: 'http://0.0.0.0:8081' },
+      '/campaigns': { target: 'http://0.0.0.0:8081' },
+      '/creatures/*': { target: 'http://0.0.0.0:8081' },
+      '/creatures': { target: 'http://0.0.0.0:8081' },
+      '/strongholds/*': { target: 'http://0.0.0.0:8081' },
+      '/strongholds': { target: 'http://0.0.0.0:8081' }
+    }
   },
   build: {
     rollupOptions: {

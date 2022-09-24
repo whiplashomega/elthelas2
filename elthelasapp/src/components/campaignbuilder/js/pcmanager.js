@@ -1,13 +1,19 @@
-import { mapActions, mapGetters } from 'vuex';
+import { useCampaignStore } from '@/stores/index';
+import { storeToRefs } from 'pinia';
 import droll from 'droll';
 import charCalculators from '@/helpers/charcalc';
+import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 
 export default {
-  computed: {
-    ...mapGetters({
-      campaign: "getCurrentCampaign",
-      pcs: 'getCampaignCharacters'
-    })
+  setup () {
+    const campaignStore = useCampaignStore();
+    
+    const { current: campaign, campaignCharacters: pcs } = storeToRefs(campaignStore);
+    const { invitePCToCampaign: invitePC, fetchCampaignCharacter } = campaignStore;
+    const { skillMod, statMod, saveMod, statTotal, initMod, acCalc, profbonus } = charCalculators;
+    return {
+      campaign, pcs, invitePC, fetchCampaignCharacter, skillMod, statMod, saveMod, statTotal, initMod, acCalc, profbonus, marked
+    };
   },
   data: function () {
     return {
@@ -15,10 +21,6 @@ export default {
     };
   },
   methods: {
-    ...mapActions({
-      invitePC: "invitePCToCampaign",
-      fetchCampaignCharacter: "fetchCampaignCharacter"
-    }),
     addToCampaign() {
       this.campaign.playercharacters.push(this.pcid);
       this.fetchCampaignCharacter(this.pcid);
@@ -31,7 +33,7 @@ export default {
       this.pcs.splice(i, 1);
       this.fetchCampaignCharacter(pc._id);
     },
-    ...charCalculators,
+    //...charCalculators,
     rollCheck (modifier) {
       let res = droll.roll('1d20').total;
       let adv = droll.roll('1d20').total;

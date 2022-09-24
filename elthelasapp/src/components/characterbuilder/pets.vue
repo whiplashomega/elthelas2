@@ -93,17 +93,19 @@
              size="lg">
       <input type="text" v-model="creaturefilter" class="charsheet-text">
       Search
-      <b-table show-empty
-               id="creaturetable"
-               :striped="true" :bordered="false"
-               :responsive="true"
-               stacked="sm"
-               :items="filteredcreatures"
-               :fields="creaturestable.fields"
-               :sort-by.sync="creaturestable.sortBy"
-               :sort-desc.sync="creaturestable.sortDesc">
-        <template v-slot:cell(name)="row"><span><a href="#" @click.stop="importPet(row.item, row.index, $event.target)">{{ row.value }}</a> <button class="btn btn-warning btn-sm" @click="edit(row.item)" v-if="admin">&#9998;</button><button class="btn btn-sm btn-danger" @click="del(row.item)" v-if="admin">X</button></span></template>
-      </b-table>
+      <div style="overflow-y:scroll; height: 500px;">
+        <b-table show-empty
+                 id="creaturetable"
+                 :striped="true" :bordered="false"
+                 :responsive="true"
+                 stacked="sm"
+                 :items="filteredcreatures"
+                 :fields="creaturestable.fields"
+                 :sort-by.sync="creaturestable.sortBy"
+                 :sort-desc.sync="creaturestable.sortDesc">
+          <template v-slot:cell(name)="row"><span><a href="#" @click.stop="importPet(row.item, row.index, $event.target)">{{ row.value }}</a> </span></template>
+        </b-table>
+      </div>
     </b-modal>
   </div>
 </template>

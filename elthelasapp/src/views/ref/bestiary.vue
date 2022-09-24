@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="col-sm-12">
     <h1>Bestiary</h1>
     <b-row>
       <b-col md="8">
@@ -16,7 +16,8 @@
       <b-col md="4" class="my-1">
         <b-input-group>
           <b-form-input v-model="creaturestable.filterValue" placeholder="Type to Search" />
-          <b-btn :disabled="!creaturestable.filterValue" @click="filterValue = ''">Clear</b-btn>
+          <button :disabled="!creaturestable.filterValue" @click="creaturestable.filterValue = ''"
+                  class="btn btn-primary">Clear</button>
         </b-input-group>
       </b-col>
     </b-row>

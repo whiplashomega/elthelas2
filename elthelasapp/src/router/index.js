@@ -268,6 +268,105 @@ const router = createRouter({
         title: "Multinational Organizations and Factions",
         auth: false
       }
+    },
+    {
+      path: "/campaign",
+      name: "Campaign Builder",
+      components: {
+        default: () => import('@/views/campaign/campaign.vue')
+      },
+      meta: {
+        title: "Campaign Builder",
+        auth: true
+      }
+    },
+    {
+      path: "/campaign/:campaign",
+      name: "Campaign Builder - Specific",
+      components: {
+        default: () => import('@/views/campaign/campaign.vue')
+      },
+      meta: {
+        title: "Campaign Builder",
+        auth: true
+      }
+    },
+    {
+      path: "/tools/creaturebuilder",
+      name: "Creature Creator",
+      components: {
+        default: () => import('@/views/campaign/creaturebuilder.vue')
+      },
+      meta: {
+        title: "Creature Builder",
+        auth: true
+      }
+    },
+    {
+      path: "/tools/creaturebuilder/:id",
+      name: "Creature Editor",
+      components: {
+        default: () => import('@/views/campaign/creaturebuilder.vue')
+      },
+      meta: {
+        title: "Creature Editor",
+        auth: true
+      }
+    },
+    {
+      path: "/runner",
+      name: "Encounter Runner",
+      components: {
+        default: () => import('@/views/campaign/runner.vue')
+      },
+      meta: {
+        title: "Encounter Runner",
+        auth: true
+      }
+    },
+    {
+      path: "/runner/:id",
+      name: "Encounter Runner - Specific",
+      components: {
+        default: () => import('@/views/campaign/creaturebuilder.vue')
+      },
+      meta: {
+        title: "Encounter Runner",
+        auth: true
+      }
+    },
+    {
+      path: "/ref/bestiary",
+      name: "Bestiary",
+      components: {
+        default: () => import('@/views/ref/bestiary.vue')
+      },
+      meta: {
+        title: "Bestiary",
+        auth: true
+      }
+    },
+    {
+      path: "/tools/treasuregenerator",
+      name: "Treasure Generator",
+      components: {
+        default: () => import('@/views/campaign/treasuregenerator.vue')
+      },
+      meta: {
+        title: "Treasure Generator",
+        auth: false
+      }
+    },
+    {
+      path: "/tools/strongholdbuilder",
+      name: "Stronghold Builder",
+      components: {
+        default: () => import('@/views/campaign/strongholdbuilder.vue')
+      },
+      meta: {
+        title: "Stronghold Builder",
+        auth: false
+      }
     }
     /*{
       path: '/about',

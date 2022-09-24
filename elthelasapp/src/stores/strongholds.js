@@ -3,15 +3,15 @@ import staffTypes from './stronghold/stafftypes';
 import Stronghold from './classes/stronghold';
 import constants from './stronghold/constants';
 import Decimal from 'decimal.js';
-import mapStores from 'pinia';
-import useUserStore from './index.js';
+import { mapStores } from 'pinia';
+import { useUserStore } from './index.js';
 
 export default {
   state () {
     return {
       improvements: [],
       strongholds: [],
-      current: [],
+      current: Stronghold(),
       staffTypes: staffTypes,
       changeby: 0,
       user: mapStores(useUserStore),
@@ -20,20 +20,20 @@ export default {
     };
   },
   getters: {
-    availableClearedLand: (state) => {
-      let land = state.current.improvements.filter((a) => {
+    availableClearedLand () {
+      let land = this.current.improvements.filter((a) => {
         return a.id === "clear-land";
       })[0];
       if (land) return land.count - this.farmLand;
       return 0;
     },
-    availableForestedLand: (state) => {
+    availableForestedLand () {
       return this.forestedLand - this.timberLand;
     },
-    availableLaborers: (state) => {
-      return Number(state.current.laborers) - state.current.improvements.reduce((total, imp) => {
+    availableLaborers () {
+      return Number(this.current.laborers) - this.current.improvements.reduce((total, imp) => {
         return total + Number(imp.laborers);
-      }, 0) - state.current.construction.reduce((total, imp) => {
+      }, 0) - this.current.construction.reduce((total, imp) => {
         if (imp.laborersassigned) {
           return total + Number(imp.laborersassigned);
         } else {
@@ -41,12 +41,12 @@ export default {
         }
       }, 0);
     },
-    availableOfType: (state) => (type) => {
+    availableOfType () { (type) => {
       let total = 0;
       if (type === "Guard") {
-        total = Number(state.current.guards);
+        total = Number(this.current.guards);
       } else if (type === "Servant") {
-        total = Number(state.current.servants);
+        total = Number(this.current.servants);
       } else {
         let match = this.staffSummary.filter((a) => {
           if (type.includes('(')) {
@@ -59,7 +59,7 @@ export default {
         }, 0);
         return match;
       }
-      let assigned = state.current.improvements.reduce((total, imp) => {
+      let assigned = this.current.improvements.reduce((total, imp) => {
         let match = imp.staff.filter((st) => {
           return st.name === type;
         })[0];
@@ -70,21 +70,21 @@ export default {
         }
       }, 0);
       return Number(total) - Number(assigned);
+    }},
+    availableStaffBeds () {
+      return this.staffBeds - (this.current.staff.length + this.current.privateEmployees.length);
     },
-    availableStaffBeds: (state) => {
-      return this.staffBeds - (state.current.staff.length + state.current.privateEmployees.length);
-    },
-    bankRevenue: (state) => {
-      let bank = state.current.improvements.filter((a) => {
+    bankRevenue () {
+      let bank = this.current.improvements.filter((a) => {
         return a.id === "merchant-bank";
       })[0];
       if (bank) {
-        return Math.round((state.current.treasury * 0.002 + this.taxRevenue * 0.1) * this.calcRevRatio(bank) * 100) / 100;
+        return Math.round((this.current.treasury * 0.002 + this.taxRevenue * 0.1) * this.calcRevRatio(bank) * 100) / 100;
       }
       return 0;
     },
-    buildingMaintenance: (state) => {
-      return state.current.improvements.reduce((a, b) => {
+    buildingMaintenance () {
+      return this.current.improvements.reduce((a, b) => {
         let maintenanceFree = [ "new-land", "clear-land", "teleportation-circle", "temple", "chapel" ];
         if (maintenanceFree.includes(b.id)) {
           return a;
@@ -92,7 +92,7 @@ export default {
         return a + b.goldCost * 0.0005;
       }, 0);
     },
-    calcRevRatio: (state) => (improvement) => {
+    calcRevRatio () { return (improvement) => {
       let numerator = 0;
       let denominator = 0;
       let staffratio = 1;
@@ -100,7 +100,7 @@ export default {
         numerator += Number(improvement.laborers);
         denominator += improvement.employs * improvement.count;
         improvement.staff.forEach((a) => {
-          let match = state.current.staff.filter((b) => {
+          let match = this.current.staff.filter((b) => {
             if (!b.job.subtype && a.name === b.job.name) {
               return true;
             } else if (a.name === b.job.name + " (" + b.job.subtype + ")") {
@@ -125,10 +125,10 @@ export default {
         ops = 1;
       }
       return Math.round(Math.min(staffratio, ops) * 100) / 100;
-    },
-    calcConstructionRevenue: (state) => {
+    }},
+    calcConstructionRevenue () {
       let resourcecosts = { alcohol: 0, arcanum: 0, brick: 0, clay: 0, cloth: 0, coal: 0, coffee: 0, consumergoods: 0, cotton: 0, food: 0, furniture: 0, horses: 0, iron: 0, leather: 0, lumber: 0, paper: 0, pottery: 0, raremetal: 0, steel: 0, stone: 0, sugar: 0, timber: 0, wool: 0 };
-      state.current.construction.forEach((imp) => {
+      this.current.construction.forEach((imp) => {
         if (!imp.laborersassigned) {
           imp.laborersassigned = 0;
         }
@@ -142,8 +142,8 @@ export default {
       });
       return resourcecosts;
     },
-    calcGrossRevenue: (state) => {
-      let rev = state.current.improvements.reduce((total, imp) => {
+    calcGrossRevenue () {
+      let rev = this.current.improvements.reduce((total, imp) => {
         let rev = this.calculateRevenue(imp);
         for (let key in total) {
           total[key] += rev[key];
@@ -156,13 +156,13 @@ export default {
       }
       return rev;
     },
-    calcTotalRevenue: (state) => {
+    calcTotalRevenue () {
       let rev = { ...this.calcGrossRevenue };
       for (let key in rev) {
-        rev[key] = Math.round((rev[key] + Number(state.current.autoSell[key])) * 100) / 100;
+        rev[key] = Math.round((rev[key] + Number(this.current.autoSell[key])) * 100) / 100;
       }
-      rev['food'] -= state.current.laws.foodSubsidies;
-      rev['food'] -= state.current.animals.reduce((b, a) => {
+      rev['food'] -= this.current.laws.foodSubsidies;
+      rev['food'] -= this.current.animals.reduce((b, a) => {
         if (a.livesat === "homeless") {
           return b + a.foodcost * 2;
         } else {
@@ -171,20 +171,20 @@ export default {
       }, 0);
       return rev;
     },
-    calculateIncome: (state) => (improvement) => {
+    calculateIncome () { return (improvement) => {
       return Math.round(this.calcRevRatio(improvement) * improvement.income * improvement.count * 100) / 100;
-    },
-    calculateRevenue: (state) => (improvement) => {
+    }},
+    calculateRevenue () { return (improvement) => {
       let revenue = {};
       for (let res in improvement.revenue) {
         revenue[res] = Math.round(improvement.revenue[res] * this.calcRevRatio(improvement) * improvement.count * 100) / 100;
-        let naturecleric = state.current.staff.filter((a) => {
+        let naturecleric = this.current.staff.filter((a) => {
           return a.job.subtype === 'Nature';
         })[0];
         if (naturecleric && (improvement.id === 'food-farm' || improvement.id === "winery")) {
           revenue[res] *= 1.25;
         }
-        let earthcleric = state.current.staff.filter((a) => {
+        let earthcleric = this.current.staff.filter((a) => {
           return a.job.subtype === "Earth";
         })[0];
         if (earthcleric && (improvement.id === 'coal-mine' || improvement.id === 'iron-mine' || improvement.id === 'quarry')) {
@@ -192,52 +192,52 @@ export default {
         }
       }
       return revenue;
-    },
-    expenses: (state) => {
+    }},
+    expenses () {
       return Math.round((this.totalSalary + this.buildingMaintenance + this.resourceCost) * 100) / 100;
     },
-    farmLand: (state) => {
+    farmLand () {
       let land = 0;
-      state.current.improvements.forEach((a) => {
+      this.current.improvements.forEach((a) => {
         if (a.isfarm) {
           land++;
         }
       });
-      state.current.privateEnterprise.forEach((a) => {
+      this.current.privateEnterprise.forEach((a) => {
         if (a.isfarm) {
           land++;
         }
       });
       return land;
     },
-    forestedLand: (state) => {
+    forestedLand () {
       return this.totalLand - (this.availableClearedLand + this.farmLand + this.urbanLand);
     },
-    gameDate: (state) => {
-      return state.current.gameMonth + "/" + state.current.gameDay + "/" + state.current.gameYear;
+    gameDate () {
+      return this.current.gameMonth + "/" + this.current.gameDay + "/" + this.current.gameYear;
     },
-    getPop: (state) => {
-      let pop = Number(state.current.population.adults) + Number(state.current.population.children) + Number(state.current.population.invalid) + state.current.staff.length;
+    getPop () {
+      let pop = Number(this.current.population.adults) + Number(this.current.population.children) + Number(this.current.population.invalid) + this.current.staff.length;
       return pop;
     },
-    getEmployable: (state) => {
-      return state.current.population.adults;
+    getEmployable () {
+      return this.current.population.adults;
     },
-    getChildren: (state) => {
-      return state.current.population.children;
+    getChildren () {
+      return this.current.population.children;
     },
-    getInvalid: (state) => {
-      return state.current.population.invalid;
+    getInvalid () {
+      return this.current.population.invalid;
     },
-    getPopNeeds: (state) => {
+    getPopNeeds () {
       let popNeeds = {};
-      for (let key in state.popNeedsMultCommon) {
-        popNeeds[key] = state.popNeedsMultCommon[key] * this.nonstaffPop;
-        state.current.staff.forEach((staff) => {
+      for (let key in this.popNeedsMultCommon) {
+        popNeeds[key] = this.popNeedsMultCommon[key] * this.nonstaffPop;
+        this.current.staff.forEach((staff) => {
           if (staff.salary > 10) {
-            popNeeds[key] += state.popNeedsMultUpper[key];
+            popNeeds[key] += this.popNeedsMultUpper[key];
           } else {
-            popNeeds[key] += state.popNeedsMultMiddle[key];
+            popNeeds[key] += this.popNeedsMultMiddle[key];
           }
         });
       }
@@ -246,8 +246,8 @@ export default {
       }
       return popNeeds;
     },
-    getPrivateProduction: (state) => {
-      let produced = state.current.privateEnterprise.reduce((b, a) => {
+    getPrivateProduction () {
+      let produced = this.current.privateEnterprise.reduce((b, a) => {
         for (let key in a.revenue) {
           if (b[key]) {
             b[key] += a.revenue[key];
@@ -262,13 +262,13 @@ export default {
       }
       return produced;
     },
-    getBuyTable: state => state.buyTable,
-    getSellTable: state => state.sellTable,
-    grossRevenue: (state, getters) => {
-      return Math.round((getters.taxRevenue + getters.bankRevenue + getters.improvementRevenue + getters.resourceRevenue) * 100) / 100;
+    getBuyTable () { return this.buyTable },
+    getSellTable () { return this.sellTable },
+    grossRevenue () {
+      return Math.round((this.taxRevenue + this.bankRevenue + this.improvementRevenue + this.resourceRevenue) * 100) / 100;
     },
-    guardsNeeded (state) {
-      return state.current.improvements.reduce((a, b) => {
+    guardsNeeded () {
+      return this.current.improvements.reduce((a, b) => {
         b.staff.forEach((st) => {
           if (st.name === "Guard") {
             a += st.num * b.count;
@@ -277,56 +277,56 @@ export default {
         return a;
       }, 0);
     },
-    headTax: (state) => {
-      return Math.round(state.current.laws.headTaxRate * this.getPop * this.taxEfficiency * 100) / 100;
+    headTax () {
+      return Math.round(this.current.laws.headTaxRate * this.getPop * this.taxEfficiency * 100) / 100;
     },
-    improvementRevenue: (state) => {
-      return state.current.improvements.reduce((total, imp) => {
+    improvementRevenue () {
+      return this.current.improvements.reduce((total, imp) => {
         return total + this.calculateIncome(imp);
       }, 0);
     },
-    incomeTax: (state) => {
-      let publicEmployees = (state.current.laws.incomeTaxRate / 100) * this.totalSalary * this.taxEfficiency;
-      let privateIncomes = state.current.privateEnterprise.reduce((total, imp) => {
+    incomeTax () {
+      let publicEmployees = (this.current.laws.incomeTaxRate / 100) * this.totalSalary * this.taxEfficiency;
+      let privateIncomes = this.current.privateEnterprise.reduce((total, imp) => {
         return total + imp.employs * 0.5;
-      }, 0) + state.current.privateEmployees.reduce((total, st) => {
+      }, 0) + this.current.privateEmployees.reduce((total, st) => {
         return total + st.typicalSalary;
       }, 0);
-      let privateEmployees = (state.current.laws.incomeTaxRate / 100) * privateIncomes * this.taxEfficiency;
+      let privateEmployees = (this.current.laws.incomeTaxRate / 100) * privateIncomes * this.taxEfficiency;
       return Math.round((publicEmployees + privateEmployees) * 100) / 100;
     },
-    rents: (state) => {
-      let rentRate = Number(state.current.laws.rentRate);
-      let publicHousing = state.current.improvements.reduce((total, imp) => {
+    rents () {
+      let rentRate = Number(this.current.laws.rentRate);
+      let publicHousing = this.current.improvements.reduce((total, imp) => {
         return total + Math.floor(imp.pop * imp.count);
       }, 0);
-      let numberRenting = this.getPop - state.current.privateEnterprise.reduce((total, imp) => {
+      let numberRenting = this.getPop - this.current.privateEnterprise.reduce((total, imp) => {
         return total + Math.floor(imp.pop * imp.count);
       }, 0);
       if (rentRate) {
-        return rentRate * 5 * (this.staffBeds - this.availableStaffBeds) + rentRate * Math.min(publicHousing, numberRenting) - (state.current.laws.conscription ? state.current.guards * 5 * rentRate : 0) + (state.current.laws.conscription ? state.current.guard * rentRate : 0);
+        return rentRate * 5 * (this.staffBeds - this.availableStaffBeds) + rentRate * Math.min(publicHousing, numberRenting) - (this.current.laws.conscription ? this.current.guards * 5 * rentRate : 0) + (this.current.laws.conscription ? this.current.guard * rentRate : 0);
       } else {
-        state.current.laws.rentRate = 0;
+        this.current.laws.rentRate = 0;
         return 0;
       }
     },
-    laborersNeeded (state) {
-      return state.current.improvements.reduce((a, b) => {
+    laborersNeeded () {
+      return this.current.improvements.reduce((a, b) => {
         return a + b.employs * b.count;
       }, 0);
     },
-    maxLaborers: (state) => {
-      return state.current.population.adults - (this.privateLaborers + Number(state.current.servants) + Number(state.current.guards));
+    maxLaborers () {
+      return this.current.population.adults - (this.privateLaborers + Number(this.current.servants) + Number(this.current.guards));
     },
-    totalHousing: (state) => {
-      return state.current.improvements.reduce((total, imp) => {
+    totalHousing () {
+      return this.current.improvements.reduce((total, imp) => {
         return total + Math.floor(imp.pop * imp.count);
-      }, 0) + state.current.privateEnterprise.reduce((total, imp) => {
+      }, 0) + this.current.privateEnterprise.reduce((total, imp) => {
         return total + Math.floor(imp.pop * imp.count);
       }, 0);
     },
-    neededStaff: (state) => {
-      return state.current.improvements.reduce((a, b) => {
+    neededStaff () {
+      return this.current.improvements.reduce((a, b) => {
         b.staff.forEach((st) => {
           let match = a.filter((stm) => {
             return stm.name === st.name;
@@ -340,53 +340,53 @@ export default {
         return a;
       }, []);
     },
-    netRevenue: (state) => {
+    netRevenue () {
       return Math.round((this.grossRevenue - this.expenses) * 100) / 100;
     },
-    privateLaborers: (state) => {
-      return state.current.privateEnterprise.reduce((total, imp) => {
+    privateLaborers () {
+      return this.current.privateEnterprise.reduce((total, imp) => {
         return total + imp.employs * imp.count;
       }, 0);
     },
-    propertyTax: (state) => {
-      let privateEnterpriseValue = state.current.privateEnterprise.reduce((total, imp) => {
+    propertyTax () {
+      let privateEnterpriseValue = this.current.privateEnterprise.reduce((total, imp) => {
         return total + imp.goldCost;
       }, 0);
-      return Math.round(state.current.laws.propertyTaxRate * privateEnterpriseValue * this.taxEfficiency) / 10;
+      return Math.round(this.current.laws.propertyTaxRate * privateEnterpriseValue * this.taxEfficiency) / 10;
     },
-    resourceCost: (state) => {
+    resourceCost () {
       let resourceRevenue = 0;
-      for (let key in state.current.autoSell) {
-        let amount = Number(state.current.autoSell[key]);
+      for (let key in this.current.autoSell) {
+        let amount = Number(this.current.autoSell[key]);
         if (amount > 0) {
-          resourceRevenue += amount * state.buyTable[key];
+          resourceRevenue += amount * this.buyTable[key];
         }
       }
       let totalRevenue = this.calcTotalRevenue;
       let virtualState = {};
-      for (let key in state.current.resources) {
-        virtualState[key] = state.current.resources[key];
+      for (let key in this.current.resources) {
+        virtualState[key] = this.current.resources[key];
       }
       for (let key in virtualState) {
         virtualState[key] += totalRevenue[key];
         if (virtualState[key] < 0) {
-          resourceRevenue -= virtualState[key] * state.buyTable[key];
+          resourceRevenue -= virtualState[key] * this.buyTable[key];
         }
       }
       return Math.round(resourceRevenue * 100) / 100;
     },
-    resourceRevenue (state) {
+    resourceRevenue () {
       let resourceRevenue = 0;
-      for (let key in state.current.autoSell) {
-        let amount = Number(state.current.autoSell[key]);
+      for (let key in this.current.autoSell) {
+        let amount = Number(this.current.autoSell[key]);
         if (amount < 0) {
-          resourceRevenue -= amount * state.sellTable[key];
+          resourceRevenue -= amount * this.sellTable[key];
         }
       }
       return Math.round(resourceRevenue * 100) / 100;
     },
-    servantsNeeded (state) {
-      return state.current.improvements.reduce((a, b) => {
+    servantsNeeded () {
+      return this.current.improvements.reduce((a, b) => {
         b.staff.forEach((st) => {
           if (st.name === "Servant") {
             a += st.num * b.count;
@@ -395,15 +395,15 @@ export default {
         return a;
       }, 0);
     },
-    staffBeds: (state) => {
-      return state.current.improvements.reduce((a, b) => {
+    staffBeds () {
+      return this.current.improvements.reduce((a, b) => {
         return a + b.staffpop * b.count;
-      }, 0) + state.current.privateEnterprise.reduce((total, imp) => {
+      }, 0) + this.current.privateEnterprise.reduce((total, imp) => {
         return total + imp.staffpop * imp.count;
       }, 0);
     },
-    staffSummary: (state) => {
-      return state.current.staff.reduce((a, b) => {
+    staffSummary () {
+      return this.current.staff.reduce((a, b) => {
         let needmatch = this.neededStaff.filter((st) => {
           if (!st.name.includes("(")) {
             return b.job.name === st.name;
@@ -437,15 +437,15 @@ export default {
         }
       });
     },
-    stronghold: state => state.current,
-    taxEfficiency: (state) => {
+    stronghold () { return this.current },
+    taxEfficiency () {
       let constablecount = 0;
-      let guardcount = state.current.guards;
+      let guardcount = this.current.guards;
       let taxEfficiency = 0;
       let steward = this.staffSummary.filter((a) => {
         return a.job.name === "Steward";
       })[0];
-      let constablesoffice = state.current.improvements.filter((a) => {
+      let constablesoffice = this.current.improvements.filter((a) => {
         return a.id === "constables-office";
       })[0];
       let constables;
@@ -460,57 +460,57 @@ export default {
       }
       return Math.round(taxEfficiency * 100) / 100;
     },
-    taxRevenue: (state) => {
+    taxRevenue () {
       return this.headTax + this.incomeTax + this.propertyTax + this.rents + this.vassalTax;
     },
-    timberLand: (state, getters) => {
+    timberLand () {
       let land = 0;
-      let lumbercamps = state.current.improvements.filter((a) => {
+      let lumbercamps = this.current.improvements.filter((a) => {
         return a.id === "lumber-camp";
       })[0];
-      let plumbercamps = state.current.privateEnterprise.filter((a) => {
+      let plumbercamps = this.current.privateEnterprise.filter((a) => {
         return a.id === "lumber-camp";
       })[0];
       if (lumbercamps) land += lumbercamps.count;
       if (plumbercamps) land += plumbercamps.count;
       return land;
     },
-    totalEmployees: (state) => {
-      return Number(state.current.laborers) + state.current.staff.length + Number(state.current.guards) + Number(state.current.servants);
+    totalEmployees () {
+      return Number(this.current.laborers) + this.current.staff.length + Number(this.current.guards) + Number(this.current.servants);
     },
-    totalLand: (state) => {
-      let land = state.current.improvements.filter((a) => {
+    totalLand () {
+      let land = this.current.improvements.filter((a) => {
         return a.id === "new-land";
       })[0];
       if (land) return land.count;
       return 0;
     },
-    totalPrivateEmployed: (state) => {
-      return this.privateLaborers + state.current.privateEmployees.length;
+    totalPrivateEmployed () {
+      return this.privateLaborers + this.current.privateEmployees.length;
     },
-    totalSalary: (state) => {
-      return state.current.staff.reduce((a, b) => {
+    totalSalary () {
+      return this.current.staff.reduce((a, b) => {
         return a + Number(b.salary);
-      }, 0) + (state.current.laws.conscription ? state.current.guards * 0.5 : state.current.guards * 2) + state.current.servants * 0.5 + state.current.laborers * 0.5;
+      }, 0) + (this.current.laws.conscription ? this.current.guards * 0.5 : this.current.guards * 2) + this.current.servants * 0.5 + this.current.laborers * 0.5;
     },
-    totalStorage: (state) => {
-      return state.current.improvements.reduce((tot, imp) => {
+    totalStorage () {
+      return this.current.improvements.reduce((tot, imp) => {
         return tot + imp.storage * imp.count;
       }, 0);
     },
-    employablePeople: (state) => {
-      return Number(state.current.population.adults) + state.current.staff.length + Number(state.current.guards) + Number(state.current.servants) + Number(state.current.privateEmployees.length);
+    employablePeople () {
+      return Number(this.current.population.adults) + this.current.staff.length + Number(this.current.guards) + Number(this.current.servants) + Number(this.current.privateEmployees.length);
     },
-    unemploymentRate: (state) => {
-      return Math.max(state.current.population.adults ? Math.round((1 - ((this.totalEmployees + this.totalPrivateEmployed) / this.employablePeople)) * 100) : 0, 0);
+    unemploymentRate () {
+      return Math.max(this.current.population.adults ? Math.round((1 - ((this.totalEmployees + this.totalPrivateEmployed) / this.employablePeople)) * 100) : 0, 0);
     },
-    unitWeightMod: (state) => state.unitWeightMod,
-    unmetStaffNeed: (state) => {
+    unitWeightMod () { return 1 },
+    unmetStaffNeed () {
       let needed = [];
       this.neededStaff.forEach((a) => {
         needed.push({ ...a });
       });
-      state.current.staff.forEach((st) => {
+      this.current.staff.forEach((st) => {
         let index = -1;
         needed.forEach((stn) => {
           if (st.job.name === stn.name && stn.name !== "Guard" && stn.name !== "Servant") {
@@ -527,68 +527,68 @@ export default {
       });
       let guards = needed.filter((a) => { return a.name === "Guard"; })[0];
       if (guards) {
-        guards.num -= state.current.guards;
+        guards.num -= this.current.guards;
         if (guards.num <= 0) {
           needed.splice(needed.indexOf(guards), 1);
         }
       }
       let servants = needed.filter((a) => { return a.name === "Servant"; })[0];
       if (servants) {
-        servants.num -= state.current.servants;
+        servants.num -= this.current.servants;
         if (servants.num <= 0) {
           needed.splice(needed.indexOf(servants), 1);
         }
       }
       return needed;
     },
-    unrest: (state) => {
+    unrest () {
       let unrest = 0;
       if (this.getPop > 0) {
         // people hate head taxes
-        if (Number(state.current.laws.headTaxRate) > 0) {
-          unrest += Number(state.current.laws.headTaxRate) * 200;
+        if (Number(this.current.laws.headTaxRate) > 0) {
+          unrest += Number(this.current.laws.headTaxRate) * 200;
         };
         // and hate high income taxes
-        if (Number(state.current.laws.incomeTaxRate) > 10) {
-          unrest += Number(state.current.laws.incomeTaxRate) - 10;
+        if (Number(this.current.laws.incomeTaxRate) > 10) {
+          unrest += Number(this.current.laws.incomeTaxRate) - 10;
         }
         // rent is despised
-        unrest += Number(state.current.laws.rentRate) * 100;
-        if (Number(state.current.laws.propertyTaxRate) > 0.1) {
-          unrest += (Number(state.current.laws.propertyTaxRate) - 0.1) * 50;
+        unrest += Number(this.current.laws.rentRate) * 100;
+        if (Number(this.current.laws.propertyTaxRate) > 0.1) {
+          unrest += (Number(this.current.laws.propertyTaxRate) - 0.1) * 50;
         }
         // people want to work, very low unemployment reduces unrest, high unemployment increases unrest
         let unemploymentModifier = (this.unemploymentRate) * 0.5;
         unrest += unemploymentModifier;
-        let foodSubsidiesModifier = this.getPop ? ((Number(state.current.laws.foodSubsidies) / this.getPop)) * 50 : 0;
+        let foodSubsidiesModifier = this.getPop ? ((Number(this.current.laws.foodSubsidies) / this.getPop)) * 50 : 0;
         unrest -= foodSubsidiesModifier;
         // people want a place to live. If there isn't enough housing, unrest increases
         let housingModifier = this.nonstaffPop ? Math.max(((this.nonstaffPop - this.totalHousing) / this.nonstaffPop) * 100, 0) : 0;
         unrest += housingModifier;
-        if (state.current.laws.conscription) {
-          let percentguards = Math.round((state.current.guards / this.getPop) * 100);
+        if (this.current.laws.conscription) {
+          let percentguards = Math.round((this.current.guards / this.getPop) * 100);
           unrest += percentguards;
         }
       }
       return Math.max(Math.round(unrest), 0);
     },
-    nonstaffPop: (state) => {
-      return this.getPop - (state.current.staff.length);
+    nonstaffPop () {
+      return this.getPop - (this.current.staff.length);
     },
-    urbanLand: (state) => {
+    urbanLand () {
       let land = 0;
-      let village = state.current.improvements.filter((a) => {
+      let village = this.current.improvements.filter((a) => {
         return a.id === "village";
       })[0];
       if (village) land += (village.count * 0.25);
-      let town = state.current.improvements.filter((a) => {
+      let town = this.current.improvements.filter((a) => {
         return a.id === "town";
       })[0];
       if (town) land += (town.count * 1.25);
-      let districts = state.current.improvements.filter((a) => {
+      let districts = this.current.improvements.filter((a) => {
         return a.id === "additional-district";
       })[0];
-      let otherurbanland = state.current.improvements.reduce((tot, a) => {
+      let otherurbanland = this.current.improvements.reduce((tot, a) => {
         if (a.id === 'house' || a.id === 'staff-house') {
           return tot + 0.01 * a.count;
         } else if (a.id === 'manor-house') {
@@ -602,27 +602,27 @@ export default {
       if (districts) land += (districts.count * 1.25);
       return Math.round(land * 100) / 100;
     },
-    usedStorage: (state) => {
-      return Object.values(state.current.resources).reduce((a, b) => {
+    usedStorage () {
+      return Object.values(this.current.resources).reduce((a, b) => {
         return a + b;
       }, 0);
     },
-    vassalTax: (state) => {
-      let taxcollector = state.current.staff.find((a) => {
+    vassalTax () {
+      let taxcollector = this.current.staff.find((a) => {
         if (a.job.name === "Tax Collector") {
           return true;
         }
       });
-      if (taxcollector && Array.isArray(state.current.vassals)) {
-        let totalvassalincome = state.current.vassals.reduce((a, b) => {
+      if (taxcollector && Array.isArray(this.current.vassals)) {
+        let totalvassalincome = this.current.vassals.reduce((a, b) => {
           return b + Number(a.income);
         }, 0);
-        return totalvassalincome * (Number(state.current.laws.vassalTaxRate) / 100);
+        return totalvassalincome * (Number(this.current.laws.vassalTaxRate) / 100);
       } else {
         return 0;
       }
     },
-    vassalUnrest: (state) => {
+    vassalUnrest () {
       return 0;
     }
   },
@@ -633,31 +633,31 @@ export default {
         return true;
       });
     },
-    newStronghold: () => {
+    newStronghold () {
       this.current = new Stronghold();
     },
-    getAllStrongholds: () => {
+    getAllStrongholds () {
       return axios.get('/strongholds').then((res) => {
         this.strongholds = res.data;
         return true;
       });
     },
-    saveNewStronghold: () => {
+    saveNewStronghold () {
       axios.post('/strongholds?token=' + this.user.getUserInfo.token, { stronghold: { ...this.current, _id: undefined } }).then((res) => {
         this.current = { ...res.data };
         this.strongholds.push(res.data);
         return true;
       });
     },
-    loadStronghold: (stronghold) => {
+    loadStronghold (stronghold) {
       this.current = { ...stronghold };
     },
-    loadStrongholdById: ({ id }) => {
+    loadStrongholdById ({ id }) {
       this.current = { ...this.all.filter((a) => {
         return a._id === id;
       })[0] };
     },
-    saveStronghold: () => {
+    saveStronghold () {
       let check = window.confirm("Are you sure you want to save your changes to " + this.current.castleName + "?");
       if (check) {
         axios.post('/strongholds/' + this.current._id + "?token=" + this.user.getUserInfo.token, { stronghold: this.current }).then((res) => {

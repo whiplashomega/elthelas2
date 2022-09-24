@@ -75,10 +75,9 @@ export default {
           item.Weight = 1;
         }
       });
-      var instance = this;
       return allgear.filter((item) => {
-        if (instance.searchEquip) {
-          return item.Item.toLowerCase().includes(instance.searchEquip.toLowerCase());
+        if (this.searchEquip) {
+          return item.Item.toLowerCase().includes(this.searchEquip.toLowerCase());
         }
         return true;
       });

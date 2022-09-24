@@ -51,8 +51,8 @@
                 <div style="float:right;max-width:40%;" v-if="encounter.image && !encounter.closed">
                   <img :src="encounter.image" :alt="encounter.name" />
                 </div>
-                <div v-html="$options.filters.marked(encounter.text)" v-if="!encounter.closed"></div>
-                <div v-html="$options.filters.marked(encounter.treasure)" v-if="!encounter.closed"></div>
+                <div v-html="marked.parse(encounter.text)" v-if="!encounter.closed"></div>
+                <div v-html="marked.parse(encounter.treasure)" v-if="!encounter.closed"></div>
                 <div>
                   <h4>Session Notes</h4>
                   <textarea v-model="encounter.sessionnotes" class="form-control"></textarea>
@@ -91,7 +91,7 @@
                     <label>Encounter Text (markdown allowed)</label>
                     <textarea v-model="encounter.text" class="form-control encounterbox"></textarea>
                   </div>
-                  <div class="col-sm-6" v-html="$options.filters.marked(encounter.text)"></div>
+                  <div class="col-sm-6" v-html="marked.parse(encounter.text)"></div>
                 </div>
                 <div>
                   <label>Potential Treasure (markdown allowed)</label>
@@ -116,7 +116,7 @@
                   <input type="checkbox" class="form-check-input" v-model="section.hidden" />
                   <label class="form-check-label">Hide</label>
                 </div>
-                <div v-html="$options.filters.marked(section.description)" v-if="!section.hidden"></div>
+                <div v-html="marked.parse(section.description)" v-if="!section.hidden"></div>
               </div>
               <div v-if="section.buildmode">
                 <div class="row">
@@ -137,7 +137,7 @@
                     <label>Section Description (markdown allowed)</label>
                     <textarea v-model="section.description" class="form-control encounterbox"></textarea>
                   </div>
-                  <div class="col-sm-6" v-html="$options.filters.marked(section.description)"></div>
+                  <div class="col-sm-6" v-html="marked.parse(section.description)"></div>
                 </div>
               </div>
               <div v-for="(encounter, $index) in section.encounters" :key="encounter.id"
@@ -161,8 +161,8 @@
                   <div style="float:right;max-width:40%;" v-if="encounter.image && !encounter.closed">
                     <img :src="encounter.image" :alt="encounter.name" />
                   </div>
-                  <div v-html="$options.filters.marked(encounter.text)" v-if="!encounter.closed"></div>
-                  <div v-html="$options.filters.marked(encounter.treasure)" v-if="!encounter.closed"></div>
+                  <div v-html="marked.parse(encounter.text)" v-if="!encounter.closed"></div>
+                  <div v-html="marked.parse(encounter.treasure)" v-if="!encounter.closed"></div>
                   <div>
                     <h4>Session Notes</h4>
                     <textarea v-model="encounter.sessionnotes" class="form-control"></textarea>
@@ -201,7 +201,7 @@
                       <label>Encounter Text (markdown allowed)</label>
                       <textarea v-model="encounter.text" class="form-control"></textarea>
                     </div>
-                    <div class="col-sm-6" v-html="$options.filters.marked(encounter.text)"></div>
+                    <div class="col-sm-6" v-html="marked.parse(encounter.text)"></div>
                   </div>
                   <div>
                     <label>Potential Treasure (markdown allowed)</label>

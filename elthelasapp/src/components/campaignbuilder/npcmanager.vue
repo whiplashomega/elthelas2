@@ -15,7 +15,7 @@
         <span v-if="!npc.editMode">{{ npc.name }}</span>
         <input type="text" class="form-control"
                v-model="npc.name" v-if="npc.editMode" />
-        <button class="btn-symbol btn-sm" @click="npc.editMode = !npc.editMode">&#9998;</button>
+        <button class="btn-symbol btn-sm" @click="switchEditMode(npc)">&#9998;</button>
         <button class="btn-symbol btn-sm" @click="deleteNPC(npc)">&#128465;</button>
         <button type="button" class="btn btn-primary float-right" @click="npc.show = !npc.show">
           <span v-if="npc.show">&#x25B2;</span>
@@ -61,14 +61,14 @@
         <div class="row">
           <label class="col-sm-12">
             <strong>History: </strong>
-            <span v-if="!npc.editMode" v-html="$options.filters.marked(npc.history)"></span>
+            <span v-if="!npc.editMode" v-html="marked.parse(npc.history)"></span>
             <textarea v-model="npc.history" class="form-control" v-if="npc.editMode"></textarea>
           </label>
         </div>
         <div class="row">
           <label class="col-sm-12">
             <strong>Motivations: </strong>
-            <span v-if="!npc.editMode" v-html="$options.filters.marked(npc.motivations)"></span>
+            <span v-if="!npc.editMode" v-html="marked.parse(npc.motivations)"></span>
             <textarea v-model="npc.motivations" class="form-control" v-if="npc.editMode"></textarea>
           </label>
         </div>

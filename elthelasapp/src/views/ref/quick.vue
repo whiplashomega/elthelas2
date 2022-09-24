@@ -92,16 +92,17 @@
               <th><input type="text" v-model="spelltable.tagsFilter" class="form-control" /> </th>
             </tr>
           </thead>
-          <tbody>
-            <tr v-for="spell in filteredSpells" :key="spell.title">
-              <td><a href="#" @click.stop="info(spell, 0, $event.target)">{{ spell.title }}</a></td>
-              <td>{{ spell.level }}</td>
-              <td>{{ spell.school }}</td>
-              <td>{{ spell.castingTime }}</td>
-              <td>{{ spell.duration }}</td>
-              <td>{{ spell.tagsText }}</td>
-            </tr>
-          </tbody>
+            <tbody class="spelltable">
+              <tr style="margin-top:100px;"><td colspan="6"></td></tr>
+              <tr v-for="spell in filteredSpells" :key="spell.title">
+                <td><a href="#" @click.stop="info(spell, 0, $event.target)">{{ spell.title }}</a></td>
+                <td>{{ spell.level }}</td>
+                <td>{{ spell.school }}</td>
+                <td>{{ spell.castingTime }}</td>
+                <td>{{ spell.duration }}</td>
+                <td>{{ spell.tagsText }}</td>
+              </tr>
+            </tbody>
         </table>
         <modal id="spellmodal" :modalProps="spellModalProps">
           <h4>

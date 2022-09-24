@@ -28,16 +28,14 @@
                 Campaigns
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li v-if="user.isLoggedIn"><router-link to="/tools/campaigns" class="dropdown-item">Campaign Builder</router-link></li>
+                <li v-if="user.isLoggedIn"><router-link to="/campaign" class="dropdown-item">Campaign Builder</router-link></li>
                 <li v-if="user.isLoggedIn"
                   v-for="campaign in userCampaigns" :key="campaign._id">
-                  <router-link :to="'/tools/campaigns/' + campaign.url" class="dropdown-item">{{ campaign.title }}</router-link>
+                  <router-link :to="'/campaign/' + campaign.url" class="dropdown-item">{{ campaign.title }}</router-link>
                 </li>
                 <li><hr class="dropdown-divider"></li>
                 <li v-if="user.isLoggedIn && user.isAdmin"><router-link to="/tools/creaturebuilder" class="dropdown-item">Creature Builder</router-link></li>
                 <li v-if="user.isLoggedIn"><router-link to="/runner" class="dropdown-item">Encounter Runner</router-link></li>
-                <li v-if="user.isLoggedIn"><router-link to="/encounter/random" class="dropdown-item">Random Encounter Table</router-link></li>
-                <li v-if="user.isLoggedIn"><router-link to="/encounter/details" class="dropdown-item">Encounter List</router-link></li>
                 <li><router-link to="/tools/treasuregenerator" class="dropdown-item">Treasure Generator</router-link></li>
                 <li><router-link to="/tools/strongholdbuilder" class="dropdown-item">Stronghold Builder</router-link></li>
               </ul>
@@ -77,10 +75,10 @@
               <li v-if="user.isLoggedIn"><a class="dropdown-item">My Account</a></li>
               <li v-if="user.isLoggedIn"><a @click="logout()" class="dropdown-item">Logout</a></li>
               <li v-if="user.isLoggedIn"><a @click="switchTheme()" class="dropdown-item">Switch Theme</a></li>
+              <li v-if="user.isLoggedIn"><a @click="showChangePassword = true" class="dropdown-item">Change Password</a></li>
               <!-- When Logged Out -->
               <li v-if="!user.isLoggedIn"><a @click="showRegister.isActive = true" class="dropdown-item">Register</a></li>
               <li v-if="!user.isLoggedIn"><a @click="showLogin.isActive = true" class="dropdown-item">Login</a></li>
-              <li v-if="user.isLoggedIn"><a @click="showChangePassword = true" class="dropdown-item">Change Password</a></li>
               <li><router-link to="/privacy-policy" class="dropdown-item">Privacy Policy</router-link></li>
               </ul>
             </li>

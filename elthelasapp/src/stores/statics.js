@@ -295,6 +295,16 @@ export default {
       });
     },
     getAllMagicItems () {
+      this.magicscrolls = [];
+      this.magicwands = [];
+      this.magicuncommons = [];
+      this.magicrares = [];
+      this.magicveryrares = [];
+      this.magiclegendaries = [];
+      this.magiccommons = [];
+      this.magicweapons = [];
+      this.magicarmor = [];
+      this.magicother = [];
       return new Promise((resolve) => {
         Promise.all([this.getAllSpells(), this.getAllArmor(), this.getAllWeapons()]).then(() => {
           axios.get('/json/magicitems.json').then((response) => {

@@ -1,11 +1,18 @@
-import { mapGetters } from 'vuex';
+import { useCampaignStore } from '@/stores/index';
+import { storeToRefs } from 'pinia';
+import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 
 export default {
+  setup () {
+    const campaignStore = useCampaignStore();
+    const { current: campaign } = storeToRefs(campaignStore);
+    
+    return {
+      campaign, marked
+    };
+  },
   props: { buildmode: Boolean },
   computed: {
-    ...mapGetters({
-      campaign: "getCurrentCampaign"
-    }),
     availableChapters: function () {
       let c = [];
       this.campaign.chapters.forEach((a) => {
@@ -51,6 +58,9 @@ export default {
         chapters: ['all'],
         show: true
       });
+    },
+    switchEditMode(npc) {
+      npc.editMode = !npc.editMode;
     },
     deleteNPC (npc) {
       let i = this.campaign.npcs.findIndex((a) => {

@@ -1,4 +1,6 @@
-import { mapGetters, mapActions } from 'vuex';
+import { useCampaignStore } from '@/stores/index';
+import { storeToRefs } from 'pinia';
+import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 /* Campaign Object Structure
 {
     title: String,
@@ -14,13 +16,36 @@ import { mapGetters, mapActions } from 'vuex';
 */
 
 export default {
-  props: [ 'buildmode', 'showChapters' ],
-  computed: {
-    ...mapGetters({
-      campaign: 'getCurrentCampaign',
-      chapter: 'getCurrentChapter'
-    })
+  setup () {
+    const campaignStore = useCampaignStore();
+    
+    const { current: campaign, currentChapter: chapter } = storeToRefs(campaignStore);
+    const { addChapter,
+            addEncounterToChapter: addEncounter,
+            loadChapter,
+            moveEncounterUp: moveEnUp,
+            moveEncounterDown: moveEnDown,
+            moveChapterUp: moveChUp,
+            moveChapterDown: moveChDown,
+            deleteEncounter: deleteCampaignEncounter,
+            deleteChapter,
+            addSection,
+            deleteSection,
+            addEncounterToSection,
+            deleteEncounterFromSection,
+            moveEncounterUpInSection,
+            moveEncounterDownInSection,
+            moveEncounterFromSectionToSection,
+            moveEncounterFromChapterToSection,
+            moveSectionUp,
+            moveSectionDown
+    } = campaignStore;
+    return {
+      campaign, chapter, addChapter, addEncounter, loadChapter, moveEnUp, moveEnDown, moveChUp, moveChDown, deleteCampaignEncounter, deleteChapter, addSection, deleteSection, addEncounterToSection, deleteEncounterFromSection,
+      moveEncounterUpInSection, moveEncounterDownInSection, moveEncounterFromSectionToSection, moveEncounterFromChapterToSection, moveSectionUp, moveSectionDown, marked
+    };
   },
+  props: [ 'buildmode', 'showChapters' ],
   data: function () {
     return {
       comp: this,
@@ -28,27 +53,6 @@ export default {
     };
   },
   methods: {
-    ...mapActions({
-      addChapter: 'addChapter',
-      addEncounter: 'addEncounterToChapter',
-      loadChapter: 'loadChapter',
-      moveEnUp: 'moveEncounterUp',
-      moveEnDown: 'moveEncounterDown',
-      moveChUp: 'moveChapterUp',
-      moveChDown: 'moveChapterDown',
-      deleteEncounter: 'deleteCampaignEncounter',
-      deleteChapter: 'deleteChapter',
-      addSection: "addSection",
-      deleteSection: "deleteSection",
-      addEncounterToSection: "addEncounterToSection",
-      deleteEncounterFromSection: "deleteEncounterFromSection",
-      moveEncounterUpInSection: "moveEncounterUpInSection",
-      moveEncounterDownInSection: "moveEncounterDownInSection",
-      moveEncounterFromSectionToSection: "moveEncounterFromSectionToSection",
-      moveEncounterFromChapterToSection: "moveEncounterFromChapterToSection",
-      moveSectionUp: "moveSectionUp",
-      moveSectionDown: "moveSectionDown"
-    }),
     loadEncounter (link) {
       this.$parent.$parent.$parent.loadEncounter(link);
     }

@@ -214,8 +214,8 @@ export default {
       return new Promise((resolve) => {
         if (localStorage.getItem('token')) {
           axios.get('/characters/?token=' + localStorage.getItem('token')).then((res) => {
-            this.characters = res.data;
-            resolve(true);
+            this.characters = [ ...res.data ];
+            resolve(this.characters);
           }).catch(function() {
             resolve(false);
           });
@@ -225,7 +225,7 @@ export default {
     getFromServerSilent () {
       if (localStorage.getItem('token')) {
         axios.get('/characters/?token=' + localStorage.getItem('token')).then((res) => {
-          this.characters = res.data;
+          this.characters = [ ...res.data ];
           return true;
         }).catch(() => {
           return false;
