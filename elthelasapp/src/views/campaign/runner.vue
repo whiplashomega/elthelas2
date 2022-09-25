@@ -190,7 +190,7 @@
           <th>Character Name</th><th>Level</th><th>-</th>
         </tr>
         <tr v-for="character in characters" :key="character._id">
-          <td><span class="clickable" @click="selCharacter(character)">{{ character.name }}</span></td><td>{{ charlevel(character) }}</td>
+          <td><a class="clickable" @click="selCharacter(character)">{{ character.name }}</a></td><td>{{ charlevel(character) }}</td>
         </tr>
       </table>
     </modal>

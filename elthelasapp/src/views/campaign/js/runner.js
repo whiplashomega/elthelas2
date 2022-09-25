@@ -79,7 +79,7 @@ export default {
             getSkillMod, getHPTotal, getAttackBonus, getDamageBonus, totalslots, 
             getInitMod, getCharacter: curcharacter, characters } = storeToRefs(characterStore);
     const { loggedin: token, isLoggedIn: loggedin, isAdmin: admin, getUserInfo: userinfo } = userStore;
-    const { getFromServer, loadChar, setCharacter } = characterStore;
+    const { getFromServer, loadChar, selCharacter } = characterStore;
     const { getCreature, saveNewCreature, deleteCreature, getAllCreatures } = creatureStore;
     
     getAllCreatures();
@@ -88,7 +88,7 @@ export default {
       creatures, charlevel, accalc, getSpeedStat, getStatTotal, getStatMod, getSaveMod,
       getSkillMod, getHPTotal, getAttackBonus, getDamageBonus, totalslots, getInitMod,
       curcharacter, characters, token, loggedin, admin, userinfo, getFromServer, loadChar,
-      setCharacter, getCreature, saveNewCreature, deleteCreature
+      selCharacter, getCreature, saveNewCreature, deleteCreature
     };
   },
   props: {
