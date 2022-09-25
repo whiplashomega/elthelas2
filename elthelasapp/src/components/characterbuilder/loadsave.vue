@@ -66,7 +66,7 @@
           <td><span class="clickable" @click="loadChar(character._id)">{{ character.name }}</span></td><td>{{ charlevel(character) }}</td>
           <td>
             <input type="button" @click="deleteFromServer({ character: character, comp: comp })"
-                   class="btn btn-danger" value="X" />
+                   class="btn btn-danger btn-sm" value="X" />
           </td>
         </tr>
       </table>
