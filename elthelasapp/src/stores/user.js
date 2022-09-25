@@ -8,7 +8,8 @@ export default {
   state: () => {
     return {
       loggedin: { token: localStorage.getItem('token'), username: localStorage.getItem('user'), admin: localStorage.getItem('admin'), themesetting: localStorage.getItem('themesetting') },
-      googletoken: { token: localStorage.getItem('googletoken'), expiry: new Date(Number(localStorage.getItem('googleExpires'))) }
+      googletoken: { token: localStorage.getItem('googletoken'), expiry: new Date(Number(localStorage.getItem('googleExpires'))) },
+      darkmode: "light",
     };
   },
   getters: {
@@ -40,11 +41,18 @@ export default {
   },
   actions: {
     switchTheme () {
-      if (this.loggedin.themesetting === "light") {
-        this.loggedin.themesetting = "dark";
-      } else this.loggedin.themesetting = "light";
-      axios.post('/users/themesetting?token=' + this.loggedin.token, this.loggedin);
-      localStorage.setItem('themesetting', this.loggedin.themesetting);
+      if (this.darkmode === "light") {
+        this.darkmode = "dark";
+      } else {
+        this.darkmode = "light";
+      }
+      localStorage.setItem('themesetting', this.darkmode);
+    },
+    loadTheme () {
+      let temp = localStorage.getItem('themesetting');
+      if (temp === "dark" || temp === "light") {
+        this.darkmode = temp;
+      }
     },
     login (payload) {
       return new Promise((resolve, reject) => {
@@ -114,7 +122,6 @@ export default {
       localStorage.setItem('user', user.username);
       localStorage.setItem('admin', user.admin);
       localStorage.setItem('token', user.token);
-      localStorage.setItem('themesetting', user.themesetting);
     },
     setOAuth({ params }) {
       var expires = new Date(now.getTime() + params.expires_in * 1000);

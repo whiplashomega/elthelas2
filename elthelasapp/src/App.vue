@@ -1,13 +1,23 @@
 <script>
 import headercomponent from '@/components/global/header.vue';
 import footerComp from '@/components/global/footer.vue';
-import { useStaticsStore } from '@/stores/index';
+import { useStaticsStore, useUserStore } from '@/stores/index';
+import { storeToRefs } from 'pinia';
 
 export default {
   setup () {
     const statics = useStaticsStore();
+    const user = useUserStore();
+    
+    statics.getAll();
+    user.loadTheme();
+
+    const { darkmode } = storeToRefs(user);    
+
     return {
-      statics
+      statics,
+      user,
+      darkmode
     };
   },
   components: {
@@ -15,14 +25,13 @@ export default {
     headercomponent
   },
   created () {
-    this.statics.getAll();
   }
 };
 
 </script>
 
 <template>
-  <div class="fullBody">
+  <div class="fullBody" :class="darkmode">
     <headercomponent />
     <div class='container-fluid' id="pagebody">
       <div class="row">

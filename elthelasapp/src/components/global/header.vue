@@ -72,10 +72,9 @@
                 User
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li v-if="user.isLoggedIn"><a class="dropdown-item">My Account</a></li>
+              <li><a @click="switchTheme()" class="dropdown-item">Switch Theme</a></li>
               <li v-if="user.isLoggedIn"><a @click="logout()" class="dropdown-item">Logout</a></li>
-              <li v-if="user.isLoggedIn"><a @click="switchTheme()" class="dropdown-item">Switch Theme</a></li>
-              <li v-if="user.isLoggedIn"><a @click="showChangePassword = true" class="dropdown-item">Change Password</a></li>
+              <li v-if="user.isLoggedIn"><a @click="cp.isActive = true" class="dropdown-item">Change Password</a></li>
               <!-- When Logged Out -->
               <li v-if="!user.isLoggedIn"><a @click="showRegister.isActive = true" class="dropdown-item">Register</a></li>
               <li v-if="!user.isLoggedIn"><a @click="showLogin.isActive = true" class="dropdown-item">Login</a></li>
@@ -94,7 +93,7 @@
         </div>
       </div>
     </nav>
-    <div style="margin-top:75px;"><!-- spacer --></div>
+    <div style="padding-top:60px;"><!-- spacer --></div>
     <header class="header jumbotron container-fluid" v-if="!hidetitle">
         <h1>
           <img src="https://elthelas-images.herokuapp.com/swordshieldlogo.png" alt="" class="logo" />Elthelas Campaign Setting {{ globals.titleForHeader }}
@@ -144,6 +143,27 @@
       </template>
       <template #footer>
         <div class="btn-group"><button type="button" class="btn btn-default" @click="handleRegister(); showRegister.loginformactive = false;" :disabled="!showRegister.loginformactive">Register</button><button type="button" class="btn btn-danger" @click="showRegister.isActive=false">Cancel</button></div>
+      </template>
+    </modal>
+    <modal id="changepassword" :modalProps="cp">
+      <template #default>
+        <div v-if="cp.loginformactive">
+          <div class="form-inline">
+            <label class="col-3">Password:</label> <input type="password" v-model="cp.password" class="form-control col-9" />
+          </div>
+          <div class="form-inline">
+            <label class="col-3">New Password:</label> <input type="password" v-model="cp.newpassword" class="form-control col-9" />
+          </div>
+          <div class="form-inline">
+            <label class="col-3">Confirm New Password:</label> <input type="password" v-model="cp.passwordConfirm" class="form-control col-9" />
+          </div>
+        </div>
+        <div v-else>
+          Changing Password, please wait...
+        </div>
+      </template>
+      <template #footer>
+        <div class="btn-group"><button type="button" class="btn btn-default" @click="handleChangePassword(); cp.loginformactive = false;" :disabled="!cp.loginformactive">Change Password</button><button type="button" class="btn btn-danger" @click="cp.isActive=false">Cancel</button></div>
       </template>
     </modal>
     <!--<b-modal id="changepasswordmodal" size="lg"

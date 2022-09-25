@@ -8,11 +8,13 @@ export default {
     const campaigns = useCampaignStore();
     const userCampaigns = campaigns.campaigns;
     const logout = user.logout;
+    const switchTheme = user.switchTheme;
     return {
       globals,
       user,
       logout,
-      userCampaigns
+      userCampaigns,
+      switchTheme
     };
   },
   components: {
@@ -22,6 +24,7 @@ export default {
     return {
       showLogin: { isActive: false, title: "Login", loginformactive: true, hideFooter: false },
       showRegister: { isActive: false, title: "Register", loginformactive: true, hideFooter: false },
+      cp: { isActive: false, title: "Change Password", loginformactive: true, hideFooter: false, password: "", newpassword: "", confirmpassword: "" },
       logincreds: {
         username: "",
         password: ""
@@ -33,7 +36,6 @@ export default {
         firstname: "",
         lastname: ""
       },
-      showChangePassword: false,
       modalModel: true,
       hidetitle: false
     };
@@ -58,6 +60,17 @@ export default {
         } else {
           alert ("Registration failed, please try again");
         }
+      })
+    },
+    handleChangePassword () {
+      this.cp.loginformactive = false;
+      let user = {
+        ...this.user.loggedin,
+        ...this.cp
+      }
+      this.user.changePassword(user).then((res) => {
+        this.cp.isActive = false;
+        this.cp.loginformactive = true;
       })
     }
   }
