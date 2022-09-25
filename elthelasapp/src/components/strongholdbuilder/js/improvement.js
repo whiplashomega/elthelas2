@@ -10,7 +10,7 @@ export default {
     const { forestedLand, calcRevRatio, calculateIncome, calculateRevenue, guardsNeeded,
             laborersNeeded, servantsNeeded, availableLaborers, availableOfType 
           } = storeToRefs(strongholdStore);
-    const { getUserInfo: userinfo } = userStore();
+    const { getUserInfo: userinfo } = userStore;
     
     return { forestedLand, calcRevRatio, calculateIncome, calculateRevenue, guardsNeeded,
             laborersNeeded, servantsNeeded, availableLaborers, availableOfType, userinfo
