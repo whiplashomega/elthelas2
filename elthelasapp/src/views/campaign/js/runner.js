@@ -77,8 +77,7 @@ export default {
     const { creatures } = storeToRefs(creatureStore);
     const { charlevel, accalc, getSpeedStat, getStatTotal, getStatMod, getSaveMod, 
             getSkillMod, getHPTotal, getAttackBonus, getDamageBonus, totalslots, 
-            getInitMod, getCharacter: curcharacter, 
-            serverCharacters: characters } = storeToRefs(characterStore);
+            getInitMod, getCharacter: curcharacter, characters } = storeToRefs(characterStore);
     const { loggedin: token, isLoggedIn: loggedin, isAdmin: admin, getUserInfo: userinfo } = userStore;
     const { getFromServer, loadChar, setCharacter } = characterStore;
     const { getCreature, saveNewCreature, deleteCreature, getAllCreatures } = creatureStore;

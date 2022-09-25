@@ -328,7 +328,7 @@ const router = createRouter({
       path: "/runner/:id",
       name: "Encounter Runner - Specific",
       components: {
-        default: () => import('@/views/campaign/creaturebuilder.vue')
+        default: () => import('@/views/campaign/runner.vue')
       },
       meta: {
         title: "Encounter Runner",
