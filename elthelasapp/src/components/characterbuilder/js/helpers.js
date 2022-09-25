@@ -28,7 +28,7 @@ export default {
       this.addAbility(character, "Arcane Jolt", vue.getStatMod(3), "longrest", 9, a);
     }
   },
-  barbResources (character, a) {
+  barbResources (vue, character, a) {
     var rage = this.calcRage(a);
     this.addAbility(character, rage.name, rage.max, rage.recharge, 1, a);
     if (a.selsubclass.name === "Path of the Ancestral Guardian") {
@@ -99,7 +99,7 @@ export default {
   factotumResources (vue, character, a) {
     this.addAbility(character, "Epiphany Points", vue.getStatMod(3) + Math.floor(Number(a.level) / 2), "shortrest", 1, a);
   },
-  fighterResources (character, a) {
+  fighterResources (vue, character, a) {
     this.addAbility(character, "Second Wind", 1, "shortrest", 1, a);
     this.addAbility(character, "Action Surge", 1, "shortrest", 2, a);
     this.addAbility(character, "Action Surge", 2, "shortrest", 17, a);
@@ -110,7 +110,7 @@ export default {
       this.addAbility(character, "Combat Superiority", 6, "shortrest", 15, a);
     }
   },
-  monkResources (character, a) {
+  monkResources (vue, character, a) {
     this.addAbility(character, "Ki", Number(a.level), "shortrest", 2, a);
   },
   paladinResources (vue, character, a) {
@@ -119,10 +119,10 @@ export default {
     this.addAbility(character, "Channel Divinity", 1, "shortrest", 3, a);
     this.addAbility(character, "Cleansing Touch", vue.getStatMod(5), "longrest", 14, a);
   },
-  sorcererResources (character, a) {
+  sorcererResources (vue, character, a) {
     this.addAbility(character, "Sorcery Points", Number(a.level), "longrest", 2, a);
   },
-  warlockResources (character, a) {
+  warlockResources (vue, character, a) {
     if (a.selsubclass.name === "The Hexblade") {
       this.addAbility(character, "Hexblade's Curse", 1, "shortrest", 1, a);
       this.addAbility(character, "Accursed Specter", 1, "longrest", 6, a);
@@ -153,7 +153,7 @@ export default {
     this.addAbility(character, "Mystic Arcanum level 9", 1, "longrest", 17, a);
     this.addAbility(character, "Eldritch Master", 1, "longrest", 20, a);
   },
-  wizardResources (character, a) {
+  wizardResources (vue, character, a) {
     this.addAbility(character, "Arcane Recovery", 1, "longrest", 1, a);
     if (a.selsubclass.name === "Bladesinging") {
       this.addAbility(character, "Bladesong", calc.profbonus(character), "longrest", 2, a);

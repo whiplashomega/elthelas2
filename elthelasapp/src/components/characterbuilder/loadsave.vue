@@ -30,7 +30,7 @@
             <input type="button" disabled
                    value="Server" class="btn"
                    :class="minimal ? 'btm-sm' : ''" />
-            <input type="button" v-if="character._id"
+            <input type="button" v-if="character._id && character._id.length > 0"
                    value="Save" @click="updateToServer(comp)"
                    class="btn btn-primary" :class="minimal ? 'btm-sm' : ''" />
             <input type="button" value="Save New"

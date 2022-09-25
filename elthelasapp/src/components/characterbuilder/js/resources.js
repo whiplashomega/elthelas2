@@ -1,19 +1,13 @@
 import { useCharacterStore } from '@/stores/index';
 import helpers from './helpers';
+import { storeToRefs } from 'pinia';
 
 export default {
   setup () {
     const characters = useCharacterStore();
     
-    const character = characters.character;
-    const getStatMod = characters.getStatMod;
-    const totalslots = characters.totalslots;
-    const warlockSlots = characters.warlockSlots;
-    const warlockSlotLevel = characters.warlockSlotLevel;
-    
-    const shortrest = characters.shortrest;
-    const longrest = characters.longrest;
-    
+    const { character, getStatMod, totalslots, warlockSlots, warlockSlotLevel, shortrest, longrest } =  storeToRefs(characters);
+
     return {
       character,
       getStatMod,
@@ -56,13 +50,13 @@ export default {
           helpers.artificerResources(this, this.character, a);
         }
         if (a.thisclass.name === "Barbarian") {
-          helpers.barbResources(this.character, a);
+          helpers.barbResources(this, this.character, a);
         }
         if (a.thisclass.name === "Bard") {
           helpers.bardResources(this, this.character, a);
         }
         if (a.thisclass.name === "Cleric") {
-          helpers.clericResources(this.character, a);
+          helpers.clericResources(this, this.character, a);
         }
         if (a.thisclass.name === "Druid") {
           helpers.druidResources(this, this.character, a);
@@ -71,22 +65,22 @@ export default {
           helpers.factotumResources(this, this.character, a);
         }
         if (a.thisclass.name === "Fighter") {
-          helpers.fighterResources(this.character, a);
+          helpers.fighterResources(this, this.character, a);
         }
         if (a.thisclass.name === "Monk") {
-          helpers.monkResources(this.character, a);
+          helpers.monkResources(this, this.character, a);
         }
         if (a.thisclass.name === "Paladin") {
           helpers.paladinResources(this, this.character, a);
         }
         if (a.thisclass.name === "Sorcerer") {
-          helpers.sorcererResources(this.character, a);
+          helpers.sorcererResources(this, this.character, a);
         }
         if (a.thisclass.name === "Warlock") {
-          helpers.warlockResources(this.character, a);
+          helpers.warlockResources(this, this.character, a);
         }
         if (a.thisclass.name === "Wizard") {
-          helpers.wizardResources(this.character, a);
+          helpers.wizardResources(this, this.character, a);
         }
       });
     }

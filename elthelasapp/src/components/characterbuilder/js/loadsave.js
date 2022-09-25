@@ -9,7 +9,8 @@ export default {
     
     const { googletoken, loggedin, token } = storeToRefs(userinfo);
     const { charlevel, charGroups: groups } = storeToRefs(characterStore);
-    const { character } = characterStore;
+    const { character } = storeToRefs(characterStore);
+    const id = storeToRefs(character._id);
     const getDriveFiles = characterStore.getDriveFiles;
     const saveToDrive = characterStore.saveToDrive;
     const getFromServer = characterStore.getFromServer;
@@ -39,7 +40,8 @@ export default {
       newToServer,
       saveCharacter,
       loadCharacter,
-      resetCharacter
+      resetCharacter,
+      id
     };
   },
   computed: {
