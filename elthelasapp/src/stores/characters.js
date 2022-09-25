@@ -250,7 +250,7 @@ export default {
         comp.$root.$emit('bv::hide::modal', 'servermodal');
       }
     },
-    updateToServer (comp) {
+    updateToServer () {
       axios.post('/characters/' + this.character._id + '?token=' + localStorage.getItem('token'), { character: this.character }).then((res) => {
         this.character._id = res.data._id;
         return true;
@@ -258,11 +258,11 @@ export default {
         alert("error when saving, please try logging off and in again");
       });
     },
-    updateToServerSilent (comp) {
-      axios.post('/characters/' + this.character._id + '?token=' + localStorage.getItem('token'), { character: comp.character }).then(function(res) {
+    updateToServerSilent () {
+      axios.post('/characters/' + this.character._id + '?token=' + localStorage.getItem('token'), { character: this.character }).then((res) => {
         this.character._id = res.data._id;
         return true;
-      }).catch(function() {
+      }).catch(() => {
         this.message = "error when autosaving, please try logging off and in again";
         setTimeout(function() {
           this.message = "";
