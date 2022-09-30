@@ -19,6 +19,7 @@ export default {
       spells: [],
       valuables: [],
       weapons: [],
+      homebrewweapons: [],
       classes: [],
       territories: [],
       cities: [],
@@ -222,6 +223,14 @@ export default {
         });
       });
     },
+    getAllHomebrewWeapons () {
+      return new Promise ((resolve) => {
+        axios.get('/json/joeweapons.json').then((response) => {
+          this.homebrewweapons = response.data;
+          resolve(true);
+        });
+      });
+    },
     getAllClasses () {
       return new Promise((resolve) => {
         axios.get('/json/classes.json').then((response) => {
@@ -383,6 +392,9 @@ export default {
     getAll () {
       return new Promise ((resolve) => {
         Promise.all([
+          this.getAllArmor(),
+          this.getAllWeapons(),
+          this.getAllHomebrewWeapons(),
           this.getAllMagicItems(),
           this.getAllContinents(),
           this.getAllBackgrounds(),

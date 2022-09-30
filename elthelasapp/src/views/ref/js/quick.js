@@ -6,9 +6,9 @@ export default {
   setup () {
     const statics = useStaticsStore();
     const userinfo = useUserStore();
-    const { spells, equipment, armor, weapons } = statics;
+    const { spells, equipment, armor, weapons, homebrewweapons } = statics;
     return {
-      userinfo, spells, equipment, armor, weapons, marked
+      userinfo, spells, equipment, armor, weapons, marked, homebrewweapons
     };
   },
   components: {
@@ -63,6 +63,24 @@ export default {
         return passes;
       });
       return spells;
+    },
+    fhweapons () {
+      return this.homebrewweapons.filter((a) => {
+        for (var key in a) {
+          if (a[key].toString().toLowerCase().includes(this.homebrewweaponstable.filter.toLowerCase())) {
+            return true;
+          } else if(this.homebrewweaponstable.filter == "") {
+            return  true;
+          }
+          return false;
+        }
+      }).sort((a, b) => {
+        if (a[this.homebrewweaponstable.sortBy] > b[this.homebrewweaponstable.sortBy]) {
+          return this.homebrewweaponstable.sortDesc ? -1 : 1;
+        } else {
+          return this.homebrewweaponstable.sortDesc ? 1 : -1;
+        }
+      });
     }
   },
   data: function() {
@@ -96,10 +114,7 @@ export default {
           { key: "Item", label: "Item", sortable: true },
           { key: "Cost", label: "Cost (gp)", sortable: true },
           { key: "Weight", label: "Weight", sortable: true }
-        ],
-        filter: null,
-        sortBy: null,
-        sortDesc: false
+        ]
       },
       armortable: {
         fields: [
@@ -113,9 +128,22 @@ export default {
           { key: "Resistance", label: "Resistance", sortable: true },
           { key: "Price", label: "Price (gp)", sortable: true },
           { key: "Time to Craft", label: "Time to Craft", sortable: true }
+        ]
+      },
+      homebrewweaponstable: {
+        fields: [
+          { key: "Weapon", label: "Weapon", sortable: true },
+          { key: "Type", label: "Type", sortable: true },
+          { key: "DType", label: "Damage Type", sortable: true },
+          { key: "Properties", label: "Properties", sortable: true },
+          { key: "Damage", label: "Damage", sortable: true },
+          { key: "Cost", label: "Cost (gp)", sortable: true },
+          { key: "Weight", label: "Weight (lbs)", sortable: true },
+          { key: "Reach", label: "Reach (ft)", sortable: true },
+          { key: "Range", label: "Range (ft)", sortable: true }
         ],
-        filter: null,
-        sortBy: null,
+        filter: "",
+        sortBy: "Weapon",
         sortDesc: false
       },
       weapontable: {
@@ -126,16 +154,18 @@ export default {
           { key: "Damage", label: "Damage", sortable: true },
           { key: "Cost", label: "Cost (gp)", sortable: true },
           { key: "Weight", label: "Weight", sortable: true }
-        ],
-        filter: null,
-        sortBy: null,
-        sortDesc: false,
-        printMode: false
+        ]
       },
       gearModal: { Item: '', Cost: '', Weight: '', Description: '' }
     };
   },
   methods: {
+    changehwSort (field) {
+      if (this.homebrewweaponstable.sortBy == field) {
+        this.homebrewweaponstable.sortDesc = !this.homebrewweaponstable.sortDesc;
+      }
+      this.homebrewweaponstable.sortBy = field;
+    },
     info (item, index, button) {
       this.spelltable.modalInfo.title = item.title;
       this.spelltable.modalInfo.content = item;

@@ -1,7 +1,7 @@
 <template>
   <div class="col-sm-12">
     <b-tabs id="refdiv">
-      <b-tab title="Spells">
+      <b-tab index="0" title="Spells">
         <h3>Spells</h3>
         <b-row>
           <b-col md="8">
@@ -119,7 +119,7 @@
           <div v-html="marked.parse(spelltable.modalInfo.description)"></div>
         </modal>
       </b-tab>
-      <b-tab title="Conditions">
+      <b-tab index="1" title="Conditions">
         <h3>Conditions</h3>
         <h4>Blinded</h4>
         <ul>
@@ -221,7 +221,7 @@
           <li>Any attack that hits you is a critical hit if your attacker is within 5 feet of you.</li>
         </ul>
       </b-tab>
-      <b-tab title="Injuries">
+      <b-tab index="2" title="Injuries">
         <h3>Injuries</h3>
         <b-tabs id="injuries">
           <b-tab title="Rules">
@@ -1312,57 +1312,85 @@
                  :sort-by.sync="weapontable.sortBy"
                  :sort-desc.sync="weapontable.sortDesc">
         </b-table>
-        <h4>Joe's Crazy Idea for What Weapons Should Be</h4>
+      </b-tab>
+      <b-tab index='10' title="Advanced Weapons">
+        <h3>Advanced Weapons (Homebrew)</h3>
+        <p>
+          This is an alternative weapons table. If used for a campaign it should entirely replace the main weapons table. MOST weapons have been altered from their original in significant ways. Every effort has been made to balance these weapons against each other, and to make every weapon unique and special in some way. Homwever, the average utility of weapons has been increased over the base game. This was done purposefully to help martial characters keep pace in mid to late levels. I strongly recommend pairing this with a few other rules changes as well:
+        </p>
+        <p>Increase the die size for classes who use a special weapon as their primary weapon. Specifically:</p>
+        <ol>
+          <li>Barbarian - Path of the Beast - Form of the Beast. Tail and Bite become 1d10, Claws become 1d8</li>
+          <li>Artifier - Armorer - Armor Model. Thunder Gauntlet becomes 1d10, Lightning Launcher becomes 1d8</li>
+          <li>Monk - All - Martial arts. Die size increase by 1 (So 1d4 becomes 1d6, 1d6 becomes 1d8, 1d8 becomes 1d10, 1d10 becomes 1d12)</li>
+          <li>Rogue - Soulknife - Psychic Blades. Main attack becomes 1d8, bonus action attack becomes 1d6.</li>
+        </ol>
+        <p><strong>Natural weapons for animals and monsters (even when it is your Druid wild shaping) should remain unchanged. Only apply this to creatures that use manufactured weapons (such as Orcs).</strong></p>
+        <h4>Weapons</h4>
+        <input type="text" class="form-control" v-model="homebrewweaponstable.filter" placeholder="Filter" />
         <table class="table table-striped table-responsive">
-          <tr>
-            <th>Weapon</th>
-            <th>Type</th>
-            <th>Properties</th>
-            <th>Damage</th>
-            <th>Cost (gp)</th>
-            <th>Weight</th>
-            <th>Reach</th>
-          </tr>
-          <tr><td>Club</td><td>Simple</td><td>light, concealable</td><td>1d6 bludgeoning</td><td>0.4</td><td>2 lb</td><td>5 ft</td></tr>
-          <tr><td>Crossbow, light</td><td>Simple</td><td>ranged (80/320), Ammunition, loading, two-handed</td><td>1d10 piercing</td><td>100</td><td>5 lb</td><td>80/320</td></tr>
-          <tr><td>Dagger</td><td>Simple</td><td>finesse, light, thrown (20/60), concealable</td><td>1d4 piercing</td><td>8</td><td>1 lb</td><td>5 ft (thrown 20/60)</td></tr>
-          <tr><td>Dart</td><td>Simple</td><td>ranged, finesse, thrown (20/60)</td><td>1d6 piercing</td><td>0.05</td><td>0.25 lb</td><td>20/60</td></tr>
-		      <tr><td>Greatclub</td><td>Simple</td><td>Two-handed</td><td>1d10 bludgeoning</td><td>0.2</td><td>10 lb</td><td>10 ft</td></tr>
-		      <tr><td>Handaxe</td><td>Simple</td><td>light, thrown (20/60), brutal</td><td>1d6 slashing</td><td>20</td><td>2 lb</td><td>5 ft</td></tr>
-		      <tr><td>Javelin</td><td>Simple</td><td>light, thrown (30/120)</td><td>1d6 piercing</td><td>2</td><td>2 lb</td><td>10 ft (thrown 30/120)</td></tr>
-		      <tr><td>Light Hammer</td><td>Simple</td><td>light, thrown (range 20/60), knock down</td><td>1d6 bludgeoning</td><td>8</td><td>2 lb</td><td>5 ft (thrown 20/60)</td></tr>
-      		<tr><td>Long Spear</td><td>Simple</td><td>heavy, two-handed, reach</td><td>1d8 piercing</td><td>4</td><td>6 lb</td><td>15 ft</td></tr>
-      		<tr><td>Mace</td><td>Simple</td><td>knock down</td><td>1d8 bludgeoning</td><td>20</td><td>4 lb</td><td>5 ft</td></tr>
-      		<tr><td>Quarterstaff</td><td>Simple</td><td>versatile, finesse</td><td>1d6/1d8 bludgeoning</td><td>0.8</td><td>4 lb</td><td>10 ft</td></tr>
-      		<tr><td>Shortbow</td><td>Simple</td><td>ranged, Ammunition (range 80/320), two-handed</td><td>1d8 piercing</td><td>100</td><td>2 lb</td><td>80/320</td></tr>
-      		<tr><td>Sickle</td><td>Simple</td><td>light, finesse</td><td>1d6 slashing</td><td>4</td><td>2 lb</td><td>5 ft</td></tr>
-      		<tr><td>Sling</td><td>Simple</td><td>ranged, Ammunition (range 30/120)</td><td>1d8 bludgeoning</td><td>0.4</td><td>0</td><td>30/120</td></tr>
-      		<tr><td>Spear</td><td>Simple</td><td>Thrown (range 20/60), versatile</td><td>1d8/1d10 piercing</td><td>4</td><td>3 lb</td><td>10 ft (thrown 20/60)</td></tr>
-      		<tr><td>Battleaxe</td><td>Martial</td><td>versatile, brutal</td><td>1d10/1d12 slashing</td><td>40</td><td>4 lb</td><td>5 ft</td></tr>
-      		<tr><td>Blowgun</td><td>Martial</td><td>ranged, Ammunition (range 25/100), light, concealable</td><td>1d6 poison</td><td>10</td><td>1 lb</td><td>25/100</td></tr>
-      		<tr><td>Crossbow, hand</td><td>Martial</td><td>ranged, Ammunition (range 50/200), loading, light, concealable</td><td>1d8 piercing</td><td>300</td><td>3 lb</td><td>50/200</td></tr>
-      		<tr><td>Crossbow, heavy</td><td>Martial</td><td>ranged, Ammunition (range 100/400), loading, heavy, two-handed</td><td>2d6 piercing</td><td>200</td><td>18 lb</td><td>100/400</td></tr>
-      		<tr><td>Flail</td><td>Martial</td><td>grapple</td><td>1d8 bludgeoning</td><td>40</td><td>2 lb</td><td>10 ft</td></tr>
-      		<tr><td>Glaive</td><td>Martial</td><td>heavy, two-handed</td><td>2d6 slashing</td><td>80</td><td>6 lb</td><td>15 ft</td></tr>
-	      	<tr><td>Greataxe</td><td>Martial</td><td>brutal, heavy, two-handed</td><td>2d8 slashing</td><td>120</td><td>7 lb</td><td>5 ft</td></tr>
-      		<tr><td>Greatbow</td><td>Martial</td><td>ranged, Ammunition (range 150/600), heavy, two-handed, requires Str 13 to wield</td><td>2d8 piercing</td><td>200</td><td>4 lb</td><td>150/600</td></tr>
-		      <tr><td>Greatsword</td><td>Martial</td><td>heavy, two-handed</td><td>2d8 slashing</td><td>200</td><td>6 lb</td><td>10 ft</td></tr>
-		      <tr><td>Halberd</td><td>Martial</td><td>heavy, two-handed, knock down</td><td>1d10 slashing</td><td>80</td><td>6 lb</td><td>15 ft</td></tr>
-      		<tr><td>Lance</td><td>Martial</td><td>reach, special</td><td>2d8 piercing</td><td>40</td><td>6 lb</td><td>10 ft</td></tr>
-	      	<tr><td>Longbow</td><td>Martial</td><td>ranged, Ammunition (range 150/600), heavy, two-handed</td><td>1d10 piercing</td><td>200</td><td>2 lb</td><td>150/600</td></tr>
-      		<tr><td>Longsword</td><td>Martial</td><td>versatile</td><td>1d10/1d12 slashing</td><td>60</td><td>3 lb</td><td>10 ft</td></tr>
-    		  <tr><td>Maul</td><td>Martial</td><td>heavy, two-handed, knock down</td><td>2d6 bludgeoning</td><td>40</td><td>10 lb</td><td>5 ft</td></tr>
-      		<tr><td>Morningstar</td><td>Martial</td><td>brutal</td><td>1d10 bludgeoning</td><td>60</td><td>4 lb</td><td>5 ft</td></tr>
-      		<tr><td>Net</td><td>Martial</td><td>ranged, special, thrown (range 20/40)</td><td>1 bludgeoning</td><td>4</td><td>3 lb</td><td>20/40</td></tr>
-      		<tr><td>Pike</td><td>Martial</td><td>heavy, reach, two-handed</td><td>1d10 piercing</td><td>20</td><td>18 lb</td><td>15 ft</td></tr>
-      		<tr><td>Rapier</td><td>Martial</td><td>finesse</td><td>1d10 piercing</td><td>100</td><td>2 lb</td><td>10 ft</td></tr>
-      		<tr><td>Scimitar</td><td>Martial</td><td>finesse, light</td><td>1d10 slashing</td><td>100</td><td>3 lb</td><td>5 ft</td></tr>
-      		<tr><td>Shortsword</td><td>Martial</td><td>finesse, light</td><td>1d8 piercing</td><td>40</td><td>2 lb</td><td>5 ft</td></tr>
-      		<tr><td>Trident</td><td>Martial</td><td>Thrown (range 20/60), versatile</td><td>1d10/2d6 piercing</td><td>20</td><td>4 lb</td><td>10 ft</td></tr>
-      		<tr><td>War pick</td><td>Martial</td><td>brutal</td><td>1d10 piercing</td><td>20</td><td>2 lb</td><td>5 ft</td></tr>
-      		<tr><td>Warhammer</td><td>Martial</td><td>versatile, knockdown</td><td>1d10/1d12 bludgeoning</td><td>60</td><td>2 lb</td><td>5 ft</td></tr>
-      		<tr><td>Whip</td><td>Martial</td><td>ranged, finesse, reach, grapple</td><td>1d6 slashing</td><td>8</td><td>3 lb</td><td>15 ft</td></tr>
+          <thead>
+            <th v-for="field in homebrewweaponstable.fields">
+              <a href="#" @click.stop="changehwSort(field.key)">{{ field.label }}
+                <span v-if="homebrewweaponstable.sortBy == field.key && homebrewweaponstable.sortDesc == false">&uarr;</span>
+                <span v-if="homebrewweaponstable.sortBy == field.key && homebrewweaponstable.sortDesc == true">&darr;</span>
+              </a>
+            </th>
+          </thead>
+          <tbody>
+            <tr v-for="weapon in fhweapons" :key="weapon.Weapon">
+              <td>{{ weapon.Weapon }}</td>
+              <td>{{ weapon.Type }}</td>
+              <td>{{ weapon.Damage }}</td>
+              <td>{{ weapon.DType }}</td>
+              <td>{{ weapon.Properties }}</td>
+              <td>{{ weapon.Cost }} gp</td>
+              <td>{{ weapon.Weight }} lbs</td>
+              <td><span v-if="weapon.Reach > 0">{{ weapon.Reach }} ft</span><span v-else>-</span></td>
+              <td><span v-if="weapon.Range > 0">{{ weapon.Range }}/{{ weapon.Range * 3 }} ft</span><span v-else>-</span></td>
+            </tr>
+          </tbody>
         </table>
+        <h4>Property Definitions</h4>
+        <table class="table table-striped">
+          <thead>
+            <tr><th>Property</th><th>Effect Cost</th><th>Effect</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Finesse</td><td>1</td><td>Can use your choice of dexterity or strength for the attack and damage rolls with this weapon.</td></tr>
+            <tr><td>Ranged</td><td>0</td><td>Attacks with this weapon are made with disadvantage when within 5 ft of a hostile character. You use dexterity for attack and damage rolls with this weapon.</td></tr>
+            <tr><td>Ammunition</td><td>0</td><td>This weapon requires ammunition of an appropriate type in order to be used.</td></tr>
+            <tr><td>Versatile</td><td>0.5</td><td>This weapon uses a damage die one size larger when wielded in two hands. 1d4 becomes 1d6, 1d6 becomes 1d8, 1d8 becomes 1d10, and 1d10 becomes 1d12.</td></tr>
+            <tr><td>Heavy</td><td>0</td><td>This weapon is too large and unwieldy for small characters to use effectively, and they have disadvantage on attack rolls while using it.</td></tr>
+            <tr><td>Two-handed</td><td>-1</td><td>This weapon requires 2 hands to wield effectively</td></tr>
+            <tr><td>Light</td><td>0.5</td><td>This weapon is light and well balanced enough to use one in each hand.</td></tr>
+            <tr><td>Thrown</td><td>0</td><td>This weapon can be used to make a ranged attack by throwing it.</td></tr>
+            <tr><td>Knock down</td><td>1</td><td>After hitting an opponent with this weapon you can choose to attempt to knock them down with it. If you do so, make a strength (athletics) check opposed by either a strength (athletics) or a dexterity (acrobatics) check by the opponent. On a success you knock the opponent prone.</td></tr>
+            <tr><td>Brutal</td><td>1</td><td>This weapon does one extra die of its damage type on a critical hit. So a weapon that does 2d6 damage would deal 5d6 damage on a critical hit, and a weapon that does 1d12 damage would do 3d12 damage on a critical hit. This stacks with the Brutal Critical feature.</td></tr>
+            <tr><td>Grapple</td><td>1</td><td>This weapon has the ability to entangle a foe, preventing them from moving. After hitting an opponent with this weapon you can choose to make a strength (athletics) check opposed by either a strength (athletics) or dexterity (acrobatics) check by the opponent. On a success the target is grappled. While the target is grappled in this way you cannot use the weapon to attack until you release the grapple, and if you drop the weapon the grapple is released automatically.</td></tr>
+            <tr><td>Loading</td><td>-1</td><td>This weapon takes time to load and can only be used to make 1 attack per round.</td></tr>
+            <tr><td>Net special</td><td>6</td><td>When you hit a target with this weapon they are restrained. The target can make a strength (athletics) check or a dexterity (acrobatics) check as an action with a DC of 10 to escape the net.</td></tr>
+            <tr><td>Concealable</td><td>0.5</td><td>This weapon is easily concealed in a pocket, boot, or other unobtrusive place such that it is not obvious without a bodily search.</td></tr>
+            <tr><td>STR 13 Required</td><td>-2</td><td>This weapon cannot be wielded unless the user has a strength score of at least 13.</td></tr>
+            <tr><td>expanded critical</td><td>1.5</td><td>This weapon has an increased chance of a critical hit. Attacks with this weapon are a critical hit on a roll of 19 or 20 on the die. This stacks with other features that increase the range of a critical hit. So a champion fighter with the improved critical feature would score a critical hit on an 18, 19 or 20, or at level 17+ on a roll of 17, 18, 19, or 20</td></tr>
+            <tr><td>Awkward</td><td>-1</td><td>This weapon is unwieldy at close range. Attacks with this weapon have disadvantage to hit opponents within 5 ft.</td></tr>
+            <tr><td>Poison</td><td>1.5</td><td>This weapon's ammunition is coated with simple poisons. Those hit by this weapon must make a DC 12 Constitution save or suffer the poisoned condition for one round.</td></tr>
+            <tr><td>Common</td><td>0.5</td><td>This weapon is exceedingly common and generally seen as a tool by figures of authority, rather than a weapon.</td></tr>
+            <tr><td>Versatile Damage</td><td>0.5</td><td>This weapon can attack in different ways, doing different damage types depending on how it is used.</td></tr>
+            <tr><td>Armor</td><td>2</td><td>This weapon is also armor, or is part of a suit of armor.</td></tr>
+          </tbody>
+        </table>
+        <h4>Creating New Weapons</h4>
+        <p>The weapons above were balanced using a points system, with each weapon having a value of 8 points. The formula is: <strong>Average Damage + Reach + Range + Properties + Type Modifier.</strong></p>
+        <ul>
+          <li>Average Damage. This is the average roll of the damage dice the weapon uses. So 1d4 = 2.5, 1d6 = 3.5, 1d8 = 4.5, etc.</li>
+          <li>Reach. A 5 ft reach melee attack adds 1 pt, a 10 ft reach adds 2, and a 15 ft reach adds 3.5.</li>
+          <li>Range. Every 50 ft of range for ranged attacks adds 1 pt (25 ft adds 0.5 pts).</li>
+          <li>Properties. Sum the value of all the properties in the table above that apply to your weapon.</li>
+          <li>Type Modifier. Martial weapons should in general be better than simple weapons, add 1.5 to the score of a simple weapon.</li>
+        </ul>
+        <p><strong>Example: </strong>The dagger does 1d4 damage (2.5 pts), has a 5 ft reach (1 pt), a 25 ft base range (0.5 pts), the finesse (1 pt), light (0.5 pts), concealable (0.5 pts), common (0.5 pts), and thrown properties, and is a simple weapon. So the formula is 2.5 + 1 + 0.5 + 2.5 + 1.5 = 8.</p>
+        <p><strong>Example 2: </strong>The heavy crossbow does 2d6 damage (7 pts), has a 0 ft reach (not a melee weapon), a 150 range (3 pts), the ranged, ammunition, loading (-1 pt), heavy, and two-handed (-1 pt) properties, and is a martial weapon. So the formula is 7 + 0 + 3 + -2 + 0 = 8.</p>
       </b-tab>
     </b-tabs>
   </div>

@@ -92,123 +92,6 @@ gulp.task('personalhistoryjson', function (done) {
   }
 });
 
-gulp.task('creaturesjson', function(done) {
-  function intersect(arrays) {
-    return arrays.shift().filter(function(v) {
-      return arrays.every(function(a) {
-        return a.indexOf(v) !== -1;
-      });
-    });
-  }
-  var files = fs.readdirSync("./data/creatures");
-  var creaturearray = [];
-  files.forEach(function(file) {
-    var data = fs.readFileSync("./data/creatures/" + file, "utf-8");
-    var creature = {};
-    var filearray = data.split('\n');
-    
-    creature.name = filearray[2].replace(/\"/g, "").replace(/title\:[ \t]+/g, "");
-    creature.tags = filearray[4].replace(/tags:[ \t]+\[/g, "").replace(/\]/, "").split(", ");
-    var sizes = ["tiny", "small", "medium", "large", "huge", "gargantuan", "colossal"];
-    var types = ["humanoid", "plant", "beast", "dragon", "giant", "ooze", "swarm", "undead", "fiend", "celestial", "monstrosity", "aberration", "elemental", "construct", "fey"];
-    var alignments = [
-      "chaotic evil", "neutral evil", 
-      "lawful evil", "chaotic neutral", 
-      "unaligned", "lawful neutral", 
-      "chaotic good", "neutral good", 
-      "lawful good", "neutral", 
-      "any alignment", "any non-good alignment", 
-      "any non-lawful alignment", "any chaotic alignment", 
-      "any evil"];
-    creature.size = intersect([creature.tags, sizes])[0];
-    creature.type = intersect([creature.tags, types])[0];
-    if(filearray[7].indexOf('(') !== -1) {
-      creature.subtype = filearray[7].slice(filearray[7].indexOf('(')+1,filearray[7].indexOf(')'));
-    } else {
-      creature.subtype = false;
-    }
-    //console.log(creature.name);
-    creature.cr = eval(creature.tags.filter(function(a) {
-      return /cr/.test(a);
-    })[0].replace(/cr/, ""));
-    creature.alignment = alignments.filter(function(a) {
-      return filearray[7].match(a) !== null;
-    })[0];
-    creature.ac = Number(filearray[9].match(/[\d]+/)[0]);
-    creature.acdesc = filearray[9].replace(/\*\*Armor Class\*\*/, "");
-    creature.hp = Number(filearray[11].match(/[\d]+/)[0]);
-    creature.hpdesc = filearray[11].replace(/\*\*Hit Points\*\*/, "");
-    creature.speed = filearray[13].replace(/\*\*Speed\*\*/, "");
-    var statsrow = filearray[17].split(" ");
-    creature.str = Number(statsrow[1]);
-    creature.dex = Number(statsrow[4]);
-    creature.con = Number(statsrow[7]);
-    creature.int = Number(statsrow[10]);
-    creature.wis = Number(statsrow[13]);
-    creature.cha = Number(statsrow[16]);
-    
-    //pull the skills if they exist
-    var skillsrow = filearray.filter(function(a) {
-      return /\*\*Skills/.test(a);
-    });
-    if(skillsrow.length > 0) {
-      creature.skills = skillsrow[0].replace(/\*\*Skills\*\*/, "").split(', ');
-      filearray.splice(filearray.indexOf(skillsrow[0]), 2);
-    } else {
-      creature.skills = [];
-    }
-    
-    //function to pull an arbitrary row and save its data as a property.
-    var pullrow = function(filtercond, propname) {
-      var row = filearray.filter(function(a) {
-        return filtercond.test(a);
-      });
-      if(row.length > 0) {
-        creature[propname] = row[0].replace(filtercond, "");
-        filearray.splice(filearray.indexOf(row[0]), 2);
-      } else {
-        creature[propname] = false;
-      }
-    }
-    
-    pullrow(/\*\*Saving Throws\*\*/, "saves");
-    pullrow(/\*\*Senses\*\*/, "senses");
-    pullrow(/\*\*Damage Immunities\*\*/, "damageimmunities");
-    pullrow(/\*\*Condition Immunities\*\*/, "conditionimmunities");
-    pullrow(/\*\*Languages\*\*/, "languages");
-    pullrow(/\*\*Damage Resistances\*\*/, "damageresistances");
-    pullrow(/\*\*Locations\*\*/, "locations");
-    pullrow(/\*\*LatLong\*\*/, "latlong");
-    
-    if(creature.latlong) {
-      creature.latlong = creature.latlong.split(';');
-      creature.latlong = creature.latlong.map(function(item) {
-        var temp = item.split(',');
-        return temp.map(function(num) {
-          return Number(num);
-        });
-      });
-    }
-    if(creature.languages) {
-      creature.languages = creature.languages.replace("Common", "First language of home country");
-    }
-    //challenge rating has already been pulled so we just need to identify and remove the row.
-    var challengerow = filearray.filter(function(a) {
-      return /\*\*Challenge/.test(a);
-    });
-    filearray.splice(filearray.indexOf(challengerow[0]), 2);
-    
-    creature.description = filearray.slice(19, filearray.length).join('\n');
-    creaturearray.push(creature);
-  });
-  if(creaturearray.length === files.length) {
-    fs.writeFile("./elthelasapp/public/json/creatures.json", JSON.stringify({ "model": "Creature", "documents": creaturearray }), "utf-8", function() {
-      console.log("writing creatures.json");
-      done(); 
-    });
-  }
-});
-
 gulp.task('spellsjson', function(done) {
   function intersect(arrays) {
     return arrays.shift().filter(function(v) {
@@ -300,6 +183,7 @@ function jsonmin(sourcefile, destination) {
 gulp.task('jsoncompile', function(done) {
   console.log("starting");
   Promise.all([
+    jsonmin('./data/joeweapons.json', './elthelasapp/public/json/joeweapons.json'),
     jsonmin('./data/feats.json', './elthelasapp/public/json/feats.json'), //weapons
     jsonmin('./data/weapons.json', './elthelasapp/public/json/weapons.json'), //armor
     jsonmin('./data/armor.json', './elthelasapp/public/json/armor.json'), //equipment
