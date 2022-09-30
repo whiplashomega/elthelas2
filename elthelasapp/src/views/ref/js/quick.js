@@ -75,10 +75,30 @@ export default {
           return false;
         }
       }).sort((a, b) => {
-        if (a[this.homebrewweaponstable.sortBy] > b[this.homebrewweaponstable.sortBy]) {
-          return this.homebrewweaponstable.sortDesc ? -1 : 1;
+        if (this.homebrewweaponstable.sortBy == "Damage") {
+          const convertTable = {
+            "0": 0,
+            "1d4": 2.5,
+            "1d6": 3.5,
+            "1d8": 4.5,
+            "2d4": 5,
+            "1d10": 5.5,
+            "1d12": 6.5,
+            "2d6": 7,
+            "3d4": 7.5,
+            "2d8": 9
+          }
+          if (convertTable[a["Damage"]] > convertTable[b["Damage"]]) {
+            return this.homebrewweaponstable.sortDesc ? -1 : 1;
+          } else {
+            return this.homebrewweaponstable.sortDesc ? 1 : -1;
+          }          
         } else {
-          return this.homebrewweaponstable.sortDesc ? 1 : -1;
+          if (a[this.homebrewweaponstable.sortBy] > b[this.homebrewweaponstable.sortBy]) {
+            return this.homebrewweaponstable.sortDesc ? -1 : 1;
+          } else {
+            return this.homebrewweaponstable.sortDesc ? 1 : -1;
+          }
         }
       });
     }
