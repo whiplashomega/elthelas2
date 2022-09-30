@@ -1342,7 +1342,7 @@
               <td>{{ weapon.Weapon }}</td>
               <td>{{ weapon.Type }}</td>
               <td>{{ weapon.Damage }}</td>
-              <td>{{ weapon.DType }}</td>
+              <td>{{ weapon.Dtype }}</td>
               <td>{{ weapon.Properties }}</td>
               <td>{{ weapon.Cost }} gp</td>
               <td>{{ weapon.Weight }} lbs</td>

@@ -134,9 +134,9 @@ export default {
         fields: [
           { key: "Weapon", label: "Weapon", sortable: true },
           { key: "Type", label: "Type", sortable: true },
-          { key: "DType", label: "Damage Type", sortable: true },
-          { key: "Properties", label: "Properties", sortable: true },
           { key: "Damage", label: "Damage", sortable: true },
+          { key: "Dtype", label: "Damage Type", sortable: true },
+          { key: "Properties", label: "Properties", sortable: true },
           { key: "Cost", label: "Cost (gp)", sortable: true },
           { key: "Weight", label: "Weight (lbs)", sortable: true },
           { key: "Reach", label: "Reach (ft)", sortable: true },
