@@ -16,10 +16,10 @@ const router = createRouter({
       }
     },
     {
-      path: '/ref/calendar',
+      path: '/world/calendar',
       name: 'calendar',
       components: {
-        default: () => import('@/views/ref/calendar.vue'),
+        default: () => import('@/views/world/calendar.vue'),
         sidebar: refmenu
       },
       meta: {
@@ -182,10 +182,10 @@ const router = createRouter({
       }
     },
     {
-      path: "/ref/cosmology",
+      path: "/world/cosmology",
       name: "Cosmology",
       components: {
-        default: () => import('@/views/ref/cosmology.vue')
+        default: () => import('@/views/world/cosmology.vue')
       },
       meta: {
         title: "Cosmology",
@@ -193,10 +193,10 @@ const router = createRouter({
       }
     },
     {
-      path: "/ref/astronomy",
+      path: "/world/astronomy",
       name: "Astronomy",
       components: {
-        default: () => import('@/views/ref/astronomy.vue')
+        default: () => import('@/views/world/astronomy.vue')
       },
       meta: {
         title: "Astronomy",
@@ -248,10 +248,10 @@ const router = createRouter({
       }
     },
     {
-      path: "/ref/orgs",
+      path: "/world/orgs",
       name: "Multinational Organizations and Factions",
       components: {
-        default: () => import('@/views/ref/organizations.vue')
+        default: () => import('@/views/world/organizations.vue')
       },
       meta: {
         title: "Multinational Organizations and Factions",
@@ -259,10 +259,10 @@ const router = createRouter({
       }
     },
     {
-      path: "/ref/orgs/:org",
+      path: "/world/orgs/:org",
       name: "Multinational Organizations and Factions - Specific",
       components: {
-        default: () => import('@/views/ref/organizations.vue')
+        default: () => import('@/views/world/organizations.vue')
       },
       meta: {
         title: "Multinational Organizations and Factions",

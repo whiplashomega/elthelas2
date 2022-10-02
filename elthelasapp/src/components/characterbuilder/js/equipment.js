@@ -1,5 +1,6 @@
 import { useCharacterStore, useUserStore, useStaticsStore } from '@/stores/index';
 import { storeToRefs } from 'pinia';
+import modal from '@/components/global/modal.vue';
 
 export default {
   setup () {
@@ -8,7 +9,7 @@ export default {
     const statics = useStaticsStore();
     
     const { character, carryWeight, carryMax, totalGold, equipmentContainers } = storeToRefs(characters);
-    const { equipment, weapons, magicweapons, magicarmor, magicother, magicscrolls: scrolls, magicwands: wands, armor } = statics;
+    const { equipment, weapons, magicweapons, magicarmor, magicother, magicscrolls: scrolls, magicwands: wands, armor, homebrewweapons, magichomebrewweapons } = statics;
     
     const removeEquipment = characters.removeEquipment;
     const removeContainer = characters.removeContainer;
@@ -18,6 +19,8 @@ export default {
       character,
       equipment,
       weapons,
+      homebrewweapons,
+      magichomebrewweapons,
       magicweapons,
       magicarmor,
       magicother,
@@ -38,6 +41,21 @@ export default {
       allweapons.forEach((weap) => {
         if (!weap.Name) {
           weap.Name = weap.Item;
+        }
+      });
+      allweapons = allweapons.filter((weap) => {
+        if (this.searchEquip) {
+          return weap.Name.toLowerCase().includes(this.searchEquip.toLowerCase());
+        }
+        return true;
+      });
+      return allweapons;
+    },
+    allHomebrewWeapons () {
+      var allweapons = [ ...this.homebrewweapons, ...this.magichomebrewweapons ];
+      allweapons.forEach((weap) => {
+        if (!weap.Name) {
+          weap.Name = weap.Weapon;
         }
       });
       allweapons = allweapons.filter((weap) => {
@@ -83,6 +101,9 @@ export default {
       });
     }
   },
+  components: {
+    modal
+  },
   data () {
     return {
       ctypes: [
@@ -104,10 +125,10 @@ export default {
       ],
       containModal: false,
       newcontain: { name: "Backpack", capacity: 0, weightCounts: true, weight: 0 },
-      equipModal: false,
       newequip: { name: "", weight: 0, quantity: 1, cost: 0, description: "", attunement: false, edit: false, container: 0 },
       ctypeselected: {},
-      searchEquip: ""
+      searchEquip: "",
+      newEquipModal: { isActive: false, title: "New Equipment" }
     };
   },
   methods: {
@@ -119,7 +140,7 @@ export default {
         var id = Date.now();
         this.character.equipment.push({ ...this.newequip, id: id });
         this.newequip = { name: "", weight: 0, quantity: 1, attunement: false, edit: false, container: this.character.containers[0].id };
-        this.equipModal = false;
+        this.newEquipModal.isActive = false;
       } else {
         alert("Please select a container");
       }
@@ -134,7 +155,7 @@ export default {
       var id = Date.now();
       if (item.Container && (bypass || confirm("Would you like to add " + item.Item + " as a container that can hold other items?"))) {
         this.character.containers.push({ id: id, name: item.Item, capacity: item.Capacity, weightCounts: item.weightCounts, weight: Number(item.Weight) });
-        this.equipModal = false;
+        this.newEquipModal.isActive = false;
         return id;
       } else if (item.Pack) {
         let cid = this.findAndAddItem(item.PackContainer.name, 1, containerId, true);
@@ -150,10 +171,10 @@ export default {
           cost: item['Cost (gp)'] ? item['Cost (gp)'] : Number(item.Cost),
           description: item.Effect ? item.Effect : item.Description,
           attunement: item.Attunement ? item.Attunement.includes('Yes') : false,
-          edit: false,
+          edit: { isActive: false, title: item.Item },
           container: containerId
         });
-        this.equipModal = false;
+        this.newEquipModal.isActive = false;
       } else {
         alert("Please select a container");
       }
@@ -164,15 +185,15 @@ export default {
         this.character.equipment.push({
           id: id,
           name: item.Name,
-          weight: Number(item.Weight.substring(0, item.Weight.length - 2)),
+          weight: typeof item.Weight === "string" ? Number(item.Weight.substring(0, item.Weight.length - 2)) : item.Weight,
           quantity: quantity,
           cost: item['Cost (gp)'] ? item['Cost (gp)'] : Number(item.Cost),
           description: item.Type + " weapon, " + item.Damage + " damage, " + item.Properties + ". " + (item.Effect ? item.Effect : ""),
           attunement: item.Attunement ? item.Attunement.includes('Yes') : false,
-          edit: false,
+          edit: { isActive: false, title: item.Item },
           container: containerId
         });
-        this.equipModal = false;
+        this.newEquipModal.isActive = false;
       } else {
         alert("Please select a container");
       }
@@ -188,7 +209,7 @@ export default {
           cost: item['Cost (gp)'] ? item['Cost (gp)'] : Number(item.Price),
           description: "AC " + item.AC,
           attunement: item.Attunement ? item.Attunement.includes('Yes') : false,
-          edit: false,
+          edit: { isActive: false, title: item.Item },
           container: containerId
         });
         var armortype = "Light Armor";
@@ -209,7 +230,7 @@ export default {
           type: armortype,
           edit: false
         });
-        this.equipModal = false;
+        this.newEquipModal.isActive = false;
       } else {
         alert("Please select a container");
       }

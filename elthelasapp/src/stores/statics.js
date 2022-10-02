@@ -31,6 +31,7 @@ export default {
       magicscrolls: [],
       magicwands: [],
       magicweapons: [],
+      magichomebrewweapons: [],
       magicarmor: [],
       magicother: [],
       magiccommons: [],
@@ -312,6 +313,7 @@ export default {
       this.magiclegendaries = [];
       this.magiccommons = [];
       this.magicweapons = [];
+      this.magichomebrewweapons = [];
       this.magicarmor = [];
       this.magicother = [];
       return new Promise((resolve) => {
@@ -328,6 +330,9 @@ export default {
             });
             for (var l = 0; l < this.weapons.length; l++) {
               items.push(...helpers.getWeaponVariants(this.weapons[l]));
+            }
+            for (var l = 0; l < this.homebrewweapons.length; l++) {
+              items.push(...helpers.getHomebrewWeaponVariants(this.homebrewweapons[l]));
             }
             for (var z = 0; z < this.armor.length; z++) {
               helpers.armorBuilder(items, this.armor[z]);
@@ -372,7 +377,9 @@ export default {
               }
               if (items[x].Type.includes("Weapon")) {
                 this.magicweapons.push(items[x]);
-              } else if (items[x].Type.includes("Armor") || items[x].Type.includes("Shield")) {
+              } else if (items[x].Type.includes("Advanced Weap")) {
+                this.magichomebrewweapons.push(items[x]);
+              }else if (items[x].Type.includes("Armor") || items[x].Type.includes("Shield")) {
                 this.magicarmor.push(items[x]);
               } else if (items[x].Type.includes("scroll")) {
                 this.magicscrolls.push(items[x]);

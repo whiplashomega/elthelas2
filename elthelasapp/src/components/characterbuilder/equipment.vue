@@ -11,12 +11,11 @@
           </h4>
           <div v-for="item in container.equipment" :key="item.id"
                class="smalltext" style="clear:both;">
-            <button type="button" class="print-hide btn-symbol float-left" @click="item.edit = true">&#9998;</button>
+            <button type="button" class="print-hide btn-symbol float-left" @click="item.edit.isActive = true">&#9998;</button>
             <span :class="item.attunement ? 'attuned' : ''" :title="'Item Weight: ' + item.weight + ' lbs, Total Weight ' + item.weight * item.quantity + ' lbs'">
               {{ item.name }}
             </span><input type="number" class="charsheet-num" v-model="item.quantity" /><br />
-            <b-modal v-model="item.edit" title="Edit Equipment"
-                     hide-footer :modal-class="userinfo.themesetting">
+            <modal :modalProps="item.edit">
               Name
               <input type="text" class="form-control" v-model="item.name" />
               Weight
@@ -33,15 +32,14 @@
               Description
               <textarea v-model="item.description" class="form-control"></textarea>
               <button type="button" class="btn btn-danger print-hide" @click="removeEquipment(item)">Delete</button>
-            </b-modal>
+            </modal>
           </div>
         </div>
         <div class="btn-group" style="clear:both;">
-          <button type="button" class="btn btn-sm btn-primary print-hide" @click="equipModal = true">+Equipment</button>
+          <button type="button" class="btn btn-sm btn-primary print-hide" @click="newEquipModal.isActive = true">+Equipment</button>
           <button type="button" class="btn btn-sm btn-primary print-hide" @click="containModal = true">+Container</button>
         </div>
-        <b-modal v-model="equipModal" title="Add Equipment"
-                 hide-footer :modal-class="userinfo.themesetting">
+        <modal :modalProps="newEquipModal">
           Quantity
           <input type="number" class="form-control" v-model="newequip.quantity" />
           Container
@@ -91,6 +89,21 @@
                 </table>
               </div>
             </b-tab>
+            <b-tab title="Adv. Weapons">
+              <input placeholder="search" v-model="searchEquip" class="form-control" />
+              <div style="overflow-y:scroll;height:500px;">
+                <table class="table table-striped table-sm">
+                  <thead><tr><th>Item</th><th>Cost</th><th>Weight</th></tr></thead>
+                  <tbody>
+                    <tr v-for="item in allHomebrewWeapons" :key="item.Name">
+                      <td><a href="#" @click="addExistingWeapon(item, newequip.quantity, newequip.container)">{{ item.Name }}</a></td>
+                      <td>{{ item.Cost }}</td>
+                      <td>{{ item.Weight }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </b-tab>
             <b-tab title="Armor">
               <input placeholder="search" v-model="searchEquip" class="form-control" />
               <div style="overflow-y:scroll;height:500px;">
@@ -109,7 +122,7 @@
               </div>
             </b-tab>
           </b-tabs>
-        </b-modal>
+        </modal>
         <b-modal v-model="containModal" title="Add Container"
                  @ok="addContainer()" :modal-class="userinfo.themesetting">
           Name

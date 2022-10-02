@@ -124,12 +124,12 @@
     "Weapon": "Handaxe",
     "Type": "Simple",
     "Dtype": "Slashing",
-    "Properties": "light, thrown, light",
-    "Damage": "1d8",
+    "Properties": "light, thrown, brutal",
+    "Damage": "1d6",
     "Cost": 20,
     "Weight": 2,
     "Reach": 5,
-    "Range": 0
+    "Range": 25
   },
   {
     "Weapon": "Javelin",
@@ -223,7 +223,7 @@
     "Weapon": "War pick",
     "Type": "Martial",
     "Dtype": "Piercing",
-    "Properties": "brutal, expanded critical",
+    "Properties": "brutal, armor piercing",
     "Damage": "1d8",
     "Cost": 20,
     "Weight": 2,
@@ -388,10 +388,21 @@
     "Weapon": "Pike",
     "Type": "Martial",
     "Dtype": "Piercing",
-    "Properties": "heavy, reach, two-handed, awkward",
+    "Properties": "heavy, two-handed, awkward",
     "Damage": "1d12",
     "Cost": 20,
     "Weight": 18,
+    "Reach": 15,
+    "Range": 0
+  },
+  {
+    "Weapon": "Lucerne Hammer",
+    "Type": "Martial",
+    "Dtype": "Bludgeoning",
+    "Properties": "heavy, two-handed, awkward",
+    "Damage": "1d12",
+    "Cost": 30,
+    "Weight": 14,
     "Reach": 15,
     "Range": 0
   },
@@ -451,28 +462,6 @@
     "Range": 0
   },
   {
-    "Weapon": "Pistol",
-    "Type": "Martial",
-    "Dtype": "Piercing",
-    "Properties": "loading, ammunition, ranged, concealable",
-    "Damage": "3d4",
-    "Cost": 500,
-    "Weight": 6,
-    "Reach": 0,
-    "Range": 50
-  },
-  {
-    "Weapon": "Arquebus",
-    "Type": "Martial",
-    "Dtype": "Piercing",
-    "Properties": "two-handed, loading, ammunition, ranged",
-    "Damage": "2d8",
-    "Cost": 500,
-    "Weight": 6,
-    "Reach": 0,
-    "Range": 50
-  },
-  {
     "Weapon": "Shield (bash)",
     "Type": "Simple",
     "Dtype": "Bludgeoning",
@@ -486,7 +475,7 @@
   {
     "Weapon": "Bolas",
     "Type": "Martial",
-    "Dtype": "None",
+    "Dtype": "Bludgeoning",
     "Properties": "Net special, thrown, ranged",
     "Damage": "1d4",
     "Cost": 10,
@@ -500,6 +489,17 @@
     "Dtype": "Piercing",
     "Properties": "finesse, two-handed, grapple",
     "Damage": "2d4",
+    "Cost": 25,
+    "Weight": 10,
+    "Reach": 10,
+    "Range": 0
+  },
+  {
+    "Weapon": "Boomerang",
+    "Type": "Martial",
+    "Dtype": "Bludgeoning",
+    "Properties": "finesse, thrown, light, returning",
+    "Damage": "1d6",
     "Cost": 25,
     "Weight": 10,
     "Reach": 10,

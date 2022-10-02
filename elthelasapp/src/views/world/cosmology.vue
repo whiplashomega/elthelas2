@@ -22,7 +22,7 @@
     <h4>Etherium, or the Ethereal Plane</h4>
     <p><strong>Home of: </strong> Mystikinae</p>
     <p>
-      The Etherium is a hazy reflection of the material plane, where distances and time are not absolute, and it is almost impossible to navigate. It is possible to see easily from Etherium to Elthelas, but nearly impossible to see Etherium from Elthelas.
+      The Etherium is a hazy reflection of the material plane, where distances and time are not absolute, and it is almost impossible to navigate. It is possible to see easily from Etherium to Elthelas, but nearly impossible to see Etherium from Elthelas. Etherium is the easiest plane to pass into or out of from the Material.
     </p>
     <h4>The Shadowfell</h4>
     <p><strong>Home of: </strong> Hije</p>

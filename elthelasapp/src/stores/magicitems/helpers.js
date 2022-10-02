@@ -2,6 +2,9 @@ import magicweapons from './magicweapons.js';
 
 export default {
   getWeaponVariants (weapon) {
+    if (weapon.Weapon) {
+      weapon.Name = weapon.Weapon;
+    }
     return magicweapons.reduce((newArr, mag) => {
       let newobj = { ...weapon };
       let flag = false;
@@ -20,6 +23,35 @@ export default {
         }
       }
       newobj.Name = newobj.Item;
+      if (flag) {
+        newArr.push(newobj);
+      }
+      return newArr;
+    }, []);
+  },
+  getHomebrewWeaponVariants (weapon) {
+    if (weapon.Weapon) {
+      weapon.Name = weapon.Weapon;
+    }
+    return magicweapons.reduce((newArr, mag) => {
+      let newobj = { ...weapon };
+      let flag = false;
+      for (var i in mag) {
+        if (typeof mag[i] === "string") {
+          newobj[i] = mag[i].replace(/\$Name/g, weapon.Name);
+        } else {
+          newobj[i] = mag[i];
+        }
+        if (mag.test) {
+          if (mag.test.test(mag[i])) {
+            flag = true;
+          }
+        } else {
+          flag = true;
+        }
+      }
+      newobj.Name = newobj.Item;
+      newobj.Type = newobj.Type.replace("Weapon", "Advanced Weap.");
       if (flag) {
         newArr.push(newobj);
       }
