@@ -7,12 +7,12 @@ export default {
     const statics = useStaticsStore();
     const userinfo = useUserStore();
     
-    const { magicitems, magicscrolls, magicwands, magicweapons, magicarmor, magicother, magiccommons, magicrares, magicveryrares, magiclegendaries } = statics;
+    const { magicitems, magicscrolls, magicwands, magicweapons, magichomebrewweapons, magicarmor, magicother, magiccommons, magicrares, magicveryrares, magiclegendaries } = statics;
     
     return {
       userinfo,
       
-      magicitems, magicscrolls, magicwands, magicweapons, magicarmor, magicother, magiccommons, magicrares, magicveryrares, magiclegendaries,
+      magicitems, magicscrolls, magicwands, magicweapons, magichomebrewweapons, magicarmor, magicother, magiccommons, magicrares, magicveryrares, magiclegendaries,
       
       marked
     };
@@ -29,6 +29,9 @@ export default {
     },
     filteredWeapons () {
       return this.magicweapons.filter(this.magicitemfilter);
+    },
+    filteredAdvWeapons () {
+      return this.magichomebrewweapons.filter(this.magicitemfilter);
     },
     filteredArmor () {
       return this.magicarmor.filter(this.magicitemfilter);

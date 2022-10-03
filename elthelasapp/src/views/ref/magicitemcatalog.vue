@@ -78,6 +78,18 @@
             <template v-slot:cell(Item)="row"><a href="#" @click.stop="magicItemInfo(row.item, row.index, $event.target)">{{ row.value }}</a></template>
           </b-table>
         </b-tab>
+        <b-tab title="Adv. Weapons">
+          <b-table show-empty @row-clicked="selectForPrint"
+                   :striped="true" :bordered="false"
+                   :responsive="true"
+                   stacked="sm"
+                   :items="filteredAdvWeapons"
+                   :fields="magicitemtables.fields"
+                   :sort-by.sync="magicitemtables.sortBy"
+                   :sort-desc.sync="magicitemtables.sortDesc">
+            <template v-slot:cell(Item)="row"><a href="#" @click.stop="magicItemInfo(row.item, row.index, $event.target)">{{ row.value }}</a></template>
+          </b-table>
+        </b-tab>
         <b-tab title="Armor">
           <b-table show-empty @row-clicked="selectForPrint"
                    :striped="true" :bordered="false"
