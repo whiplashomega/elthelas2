@@ -23,6 +23,7 @@ export default {
   },
   computed: {
     charsorted () {
+      this.forceupdatevalue;
       return this.characters.sort((a, b) => {
         if (a.name > b.name) {
           return 1;
@@ -38,7 +39,7 @@ export default {
       }).filter((a) => {
         if (this.groupfilter === "all") {
           return true;
-        } else if (this.groupfilter === a.group) {
+        } else if (this.groupfilter === a.group.name) {
           return true;
         } else {
           return false;
@@ -49,7 +50,8 @@ export default {
   data () {
     return {
       comp: this,
-      groupfilter: "all",
+      forceupdatevalue: 0,
+      groupfilter: { id: "all", name: "all" },
       serverModalProps: { isActive: false, title: "Load Character" },
       loadingModalProps: { isActive: false, title: "Load Character" }
     };
@@ -58,6 +60,9 @@ export default {
     loadChar (id) {
       this.getOneFromServer(id);
       this.serverModalProps.isActive = true;
+    },
+    forceupdate () {
+      this.forceupdatevalue++;
     }
   }
 };

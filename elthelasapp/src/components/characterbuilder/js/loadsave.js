@@ -58,6 +58,14 @@ export default {
             return -1;
           }
         }
+      }).filter((a) => {
+        if (this.groupfilter === "all") {
+          return true;
+        } else if (this.groupfilter === a.group) {
+          return true;
+        } else {
+          return false;
+        }
       });
     }
   },

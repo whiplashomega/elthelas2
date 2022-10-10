@@ -36,7 +36,7 @@ export default {
     // initial data retrieval
     statics.getAll();
     // map getters
-    const { character, pointbuy, mobile, hitdicechanged, groups, message } = storeToRefs(characters);
+    const { character, pointbuy, mobile, hitdicechanged, charGroups: groups, message } = storeToRefs(characters);
     
     // map actions
     const rollStats = characters.rollStats;

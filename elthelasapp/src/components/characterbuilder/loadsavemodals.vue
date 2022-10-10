@@ -3,8 +3,7 @@
     <modal id="servermodal" :modalProps="serverModalProps">
       Group:
       <select v-model="groupfilter">
-        <option v-for="group in groups" :key="group.id" :value="group.name">{{ group.name }}</option>
-        <option value="all">All</option>
+        <option v-for="group in groups" :key="group.id" :value="group" @changed="forceupdate()">{{ group.name }}</option>
       </select>
       <table class="table table-striped">
         <tr>
