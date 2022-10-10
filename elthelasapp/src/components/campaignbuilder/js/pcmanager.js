@@ -10,9 +10,9 @@ export default {
     
     const { current: campaign, campaignCharacters: pcs } = storeToRefs(campaignStore);
     const { invitePCToCampaign: invitePC, fetchCampaignCharacter } = campaignStore;
-    const { skillMod, statMod, saveMod, statTotal, initMod, acCalc, profbonus } = charCalculators;
+    const { skillMod, statMod, saveMod, statTotal, initMod, acCalc, profbonus, armorAC } = charCalculators;
     return {
-      campaign, pcs, invitePC, fetchCampaignCharacter, skillMod, statMod, saveMod, statTotal, initMod, acCalc, profbonus, marked
+      campaign, pcs, invitePC, fetchCampaignCharacter, skillMod, statMod, saveMod, statTotal, initMod, acCalc, armorAC, profbonus, marked
     };
   },
   data: function () {

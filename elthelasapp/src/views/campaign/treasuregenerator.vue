@@ -1,10 +1,10 @@
 <template>
   <div>
     <select v-model="challenge">
-      <option :value="1">CR 0-4</option>
-      <option :value="2">CR 5-10</option>
-      <option :value="3">CR 11-14</option>
-      <option :value="4">CR 15+</option>
+      <option :value="0">CR 0-4</option>
+      <option :value="1">CR 5-10</option>
+      <option :value="2">CR 11-14</option>
+      <option :value="3">CR 15+</option>
     </select>
     <select v-model="horde">
       <option :value="true">Horde</option>

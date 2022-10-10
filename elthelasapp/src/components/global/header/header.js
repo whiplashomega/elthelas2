@@ -1,12 +1,17 @@
 import { useGlobalsStore, useUserStore, useCampaignStore } from '@/stores/index';
 import modal from '../modal.vue';
-
+import { storeToRefs } from 'pinia';
 export default {
   setup () {
     const globals = useGlobalsStore();
     const user = useUserStore();
     const campaigns = useCampaignStore();
-    const userCampaigns = campaigns.campaigns;
+    const { getAllCampaignsSilent } = campaigns;
+    if (user.isLoggedIn) {
+      getAllCampaignsSilent();
+    }
+    const { campaigns: userCampaigns } = storeToRefs(campaigns);
+    
     const logout = user.logout;
     const switchTheme = user.switchTheme;
     return {
@@ -14,7 +19,8 @@ export default {
       user,
       logout,
       userCampaigns,
-      switchTheme
+      switchTheme,
+      getAllCampaignsSilent
     };
   },
   components: {

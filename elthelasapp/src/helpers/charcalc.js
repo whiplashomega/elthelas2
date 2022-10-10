@@ -28,7 +28,7 @@ export default {
     [4, 3, 3, 3, 3, 2, 1, 1, 1], // caster level 19
     [4, 3, 3, 3, 3, 2, 2, 1, 1] // caster level 20
   ],
-  acCalc: function(character) {
+  acCalc (character) {
     var shields = character.armors.filter((a) => {
       return a.type === "Shield";
     });
@@ -50,7 +50,7 @@ export default {
     }, 0);
     return Number(ac) + Number(shield) + Number(character.acmagic);
   },
-  armorAC: function(character, a) {
+  armorAC (character, a) {
     var ac = Number(a.ac);
     if (a.type === "Medium Armor") {
       let medmaster = character.feats.filter((a) => {

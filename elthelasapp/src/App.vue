@@ -36,7 +36,7 @@ export default {
     <div class='container-fluid' id="pagebody">
       <div class="row">
         <router-view class="view two col-sm-2" name="sidebar" />
-        <router-view class="view one col-sm-10" />
+        <router-view class="view one col-sm-10" :key="$route.fullPath" />
       </div>
     </div>
     <footer-comp />
