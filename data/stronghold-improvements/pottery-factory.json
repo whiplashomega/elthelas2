@@ -1,7 +1,7 @@
 {
-  "id": "potters-shop",
-  "name": "Potters Shop",
-  "benefit": "a workshop and kiln for making pottery.",
+  "id": "pottery-factory",
+  "name": "Pottery Factory",
+  "benefit": "a large factory and kiln for making pottery.",
   "staff": [{ "name": "Master Potter", "num": 1, "cur": 0 }, { "name": "Factory Foreman", "num": 1, "cur": 0 }],
   "goldCost": 800,
   "resourceCost":  {

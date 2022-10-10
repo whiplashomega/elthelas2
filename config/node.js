@@ -7,7 +7,7 @@ module.exports = {
     
     if(module.exports.port == 3000 || module.exports.port == 8080) { //we are in a local environment, provision config variables accordingly
         module.exports.port = 8081; //when running a vite frontend
-        module.exports.mongoUrl = 'mongodb://0.0.0.0:27017/elthelas';
+        module.exports.mongoUrl = "mongodb+srv://whiplashomega:1jGvRAba41WB8Nsf@elthelas.o7jzd.mongodb.net/heroku_4r630pjp?retryWrites=true&w=majority"; //'mongodb://0.0.0.0:27017/elthelas';
         module.exports.facebook = {
             clientID: '1915523602044424',
             clientSecret: 'c5bd3fd394b3e67c7624da4aac935e06',

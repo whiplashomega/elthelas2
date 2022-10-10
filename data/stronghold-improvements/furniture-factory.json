@@ -1,6 +1,6 @@
 {
-  "id": "carpentry-shop",
-  "name": "Carpenter's Shop",
+  "id": "furniture-factory",
+  "name": "Furniture Factory",
   "benefit": "Sells furniture.",
   "staff": [{ "name": "Carpenter", "num": 1, "cur": 0 }, { "name": "Factory Foreman", "num": 1, "cur": 0 }],
   "goldCost": 800,

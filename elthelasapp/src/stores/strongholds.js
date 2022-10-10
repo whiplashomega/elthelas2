@@ -41,7 +41,7 @@ export default {
         }
       }, 0);
     },
-    availableOfType () { (type) => {
+    availableOfType () { return (type) => {
       let total = 0;
       if (type === "Guard") {
         total = Number(this.current.guards);
@@ -136,7 +136,7 @@ export default {
         let percentdone = amountconstructed.div(imp.buildtime);
         if (!imp.private && !imp.dmGift) {
           for (var key in imp.resourceCost) {
-            resourcecosts[key] += percentdone.mul(imp.resourceCost[key]);
+            resourcecosts[key] += Number(percentdone.mul(imp.resourceCost[key]));
           }
         }
       });
@@ -499,7 +499,7 @@ export default {
       }, 0);
     },
     employablePeople () {
-      return Number(this.current.population.adults) + this.current.staff.length + Number(this.current.guards) + Number(this.current.servants) + Number(this.current.privateEmployees.length);
+      return Number(this.current.population.adults) + this.current.staff.length + Number(this.current.privateEmployees.length);
     },
     unemploymentRate () {
       return Math.max(this.current.population.adults ? Math.round((1 - ((this.totalEmployees + this.totalPrivateEmployed) / this.employablePeople)) * 100) : 0, 0);

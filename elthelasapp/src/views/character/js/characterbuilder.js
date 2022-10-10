@@ -100,9 +100,9 @@ export default {
       this.character.group = this.newgroup;
     }
   },
-  /*mounted () {
+  mounted () {
     if (this.$route.params.id) {
       this.characters.getOneFromServer(this.$route.params.id);
     }
-  }*/
+  }
 };

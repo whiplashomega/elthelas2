@@ -6,7 +6,8 @@
   "private": true,
   "scripts": {
     "postinstall": "cd elthelasapp && npm install",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "run": "node server.js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",

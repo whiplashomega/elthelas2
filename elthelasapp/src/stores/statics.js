@@ -342,7 +342,7 @@ export default {
               helpers.wandBuilder(this.spells[y], items);
             }
             var today = new Date();
-            seedrandom(today.getYear() + today.getMonth() + today.getDate());
+            var rng = seedrandom(today.getYear() + today.getMonth() + today.getDate());
             for (var x = 0; x < items.length; x++) {
               items[x].print = false;
               var threshold = 1;
@@ -370,7 +370,8 @@ export default {
               } else {
                 this.magiccommons.push(items[x]);
               }
-              if (Math.random() < threshold) {
+              var num = rng();
+              if (num < threshold) {
                 items[x].instock = "In Stock";
               } else {
                items[x].instock = "Out of Stock"; 
