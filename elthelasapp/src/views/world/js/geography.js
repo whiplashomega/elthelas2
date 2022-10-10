@@ -1,7 +1,7 @@
 /* globals navigator */
 import '@/../node_modules/leaflet/dist/leaflet.css';
 import '@/../node_modules/leaflet-measure/dist/leaflet-measure.css';
-
+import { storeToRefs } from 'pinia';
 import L from 'leaflet';
 import 'leaflet-measure';
 import { Decimal } from 'decimal.js';
@@ -14,12 +14,7 @@ import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 export default {
   setup () {
     const statics = useStaticsStore();
-    const nations = statics.nations;
-    const cities = statics.cities;
-    const landmarks = statics.landmarks;
-    const features = statics.features;
-    const continents = statics.continents;
-    const territories = statics.territories;
+    const { nations, cities, landmarks, features, continents, territories } = storeToRefs(statics);
     const user = useUserStore();
     return {
       marked,
