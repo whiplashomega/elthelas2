@@ -1,8 +1,5 @@
 <template>
-  <div class="col-sm-12">
-    <h1>
-      Classes
-    </h1>
+  <div>
     <p>
       This page lists custom class descriptions for classes available in the Elthelas Campaign Setting.  As well as optional changes to existing classes
       for balance reasons.

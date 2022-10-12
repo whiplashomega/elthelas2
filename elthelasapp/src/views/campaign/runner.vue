@@ -1,7 +1,6 @@
 <template>
   <div class="col-sm-12">
     <div class="col-sm-9">
-      <h1>Encounter Runner</h1>
       <p>
         <a :href="encounterlink">Link to this Encounter</a>
       </p>

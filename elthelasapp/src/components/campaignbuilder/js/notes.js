@@ -1,6 +1,7 @@
 import { useCampaignStore } from '@/stores/index';
 import { storeToRefs } from 'pinia';
 import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
+import { useMeta } from 'vue-meta';
 /* Campaign Object Structure
 {
     title: String,
@@ -40,6 +41,7 @@ export default {
             moveSectionUp,
             moveSectionDown
     } = campaignStore;
+    useMeta({ title: "Campaign Notes" });
     return {
       campaign, chapter, addChapter, addEncounter, loadChapter, moveEnUp, moveEnDown, moveChUp, moveChDown, deleteCampaignEncounter, deleteChapter, addSection, deleteSection, addEncounterToSection, deleteEncounterFromSection,
       moveEncounterUpInSection, moveEncounterDownInSection, moveEncounterFromSectionToSection, moveEncounterFromChapterToSection, moveSectionUp, moveSectionDown, marked

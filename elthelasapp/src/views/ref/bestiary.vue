@@ -1,6 +1,5 @@
 <template>
   <div class="col-sm-12">
-    <h1>Bestiary</h1>
     <b-row>
       <b-col md="8">
         <b-form-checkbox-group v-model="creaturestable.filterBy">

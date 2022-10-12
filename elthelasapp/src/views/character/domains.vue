@@ -1,6 +1,5 @@
 <template>
-  <div class="col-sm-12">
-    <h1>Divine Domains</h1>
+  <div>
     <p>
       In a pantheon, every deity has influence over different aspects of mortal life and civilization, called a deity's domain. All the domains over which a deity has influence are called the deity's portfolio.  For example, the portfolio of the greek god Apollo includes the domains of Knowledge, Life, and Light.  As a cleric, you choose one aspect of your deity's portfolio to emphasize, and you are granted powers related to that domain.
     </p>

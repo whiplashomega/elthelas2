@@ -1,5 +1,6 @@
 import { useUserStore, useCreatureStore } from '@/stores/index';
 import { storeToRefs } from 'pinia';
+import { useMeta } from 'vue-meta';
 
 export default {
   setup () {
@@ -8,6 +9,7 @@ export default {
     const { isAdmin: admin } = userStore;
     const { getCreature, getAllCreatures } = creatureStore;
     const { creatures } = storeToRefs(creatureStore);
+    useMeta({ title: "Bestiary" });
     return {
       admin, creatures, getCreature, getAllCreatures
     };

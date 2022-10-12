@@ -72,10 +72,10 @@ export default {
     return ac;
   },
   attBonus: function(character, i) {
-    return Number(character.attBonus[i]) + this.statMod(character, i) + this.profbonus(character);
+    return Number(character.attBonus[i]) + this.statMod(character, i) + this.profbonus(character) - Number(character.exhaustion);
   },
   attackBonus: function(character, attack) {
-    return Number(attack.bonus) + Number(this.statMod(character, attack.stat)) + this.profbonus(character) * attack.prof;
+    return Number(attack.bonus) + Number(this.statMod(character, attack.stat)) + this.profbonus(character) * attack.prof - Number(character.exhaustion);
   },
   bardPrepared: function(a) {
     let num = Math.min(a.level, 9) + 3;
@@ -192,7 +192,7 @@ export default {
     });
   },
   initMod: function(character) {
-    return this.statMod(character, 1) + Number(character.initmagic);
+    return this.statMod(character, 1) + Number(character.initmagic) - Number(character.exhaustion);
   },
   level: function(character) {
     return character.charclasses.reduce((level, a) => {
@@ -229,13 +229,13 @@ export default {
     });
   },
   saveDC: function(character, i) {
-    return 8 + this.profbonus(character) + this.statMod(character, i) + Number(character.saveDCBonus[i]);
+    return 8 + this.profbonus(character) + this.statMod(character, i) + Number(character.saveDCBonus[i]) - Number(character.exhaustion);
   },
   saveMod: function(character, i) {
-    return this.statMod(character, i) + Number(character.savebonus[i]) + character.saves[i] * this.profbonus(character);
+    return this.statMod(character, i) + Number(character.savebonus[i]) + character.saves[i] * this.profbonus(character) - Number(character.exhaustion);
   },
   skillMod: function(character, skill) {
-    return this.statMod(character, skill.stat) + Math.floor(Number(skill.prof) * this.profbonus(character)) + Number(skill.magic);
+    return this.statMod(character, skill.stat) + Math.floor(Number(skill.prof) * this.profbonus(character)) + Number(skill.magic) - Number(character.exhaustion);
   },
   speedStat: function(character, i) {
     return Number(character.race.speed[i]) + Number(character.speedmagic[i]);

@@ -1,10 +1,13 @@
 import { useCreatureStore } from '@/stores/index';
 import { storeToRefs } from 'pinia';
+import { useMeta } from 'vue-meta';
+
 export default {
   setup () {
     const creatureStore = useCreatureStore();
     const { builderCreature: creature } = storeToRefs(creatureStore);
     const { saveNewCreature, resetCreature, saveCreature, getCreatureForEdit: getCreature } = creatureStore;
+    useMeta({ title: "Creature Builder" });
     return {
       creature, saveNewCreature, resetCreature, saveCreature, getCreature
     };

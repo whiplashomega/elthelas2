@@ -3,6 +3,7 @@ import { storeToRefs } from 'pinia';
 import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 import charcalc from '@/helpers/charcalc';
 import modal from '@/components/global/modal.vue';
+import { useMeta } from 'vue-meta';
 
 const modalInfo = {
   name: "",
@@ -84,6 +85,7 @@ export default {
     
     getAllCreatures();
     
+    useMeta({ title: "Encounter Runner" });
     return {
       creatures, charlevel, accalc, getSpeedStat, getStatTotal, getStatMod, getSaveMod,
       getSkillMod, getHPTotal, getAttackBonus, getDamageBonus, totalslots, getInitMod,

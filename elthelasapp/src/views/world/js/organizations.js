@@ -1,10 +1,11 @@
 import { useStaticsStore } from '@/stores/index';
 import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
-
+import { useMeta } from 'vue-meta';
 export default {
   setup () {
     const statics = useStaticsStore();
     const { organizations } = statics;
+    useMeta({ title: "Multinational Organizations" });
     
     return {
       organizations, marked, statics

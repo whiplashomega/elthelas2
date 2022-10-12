@@ -4,6 +4,7 @@ import summary from '@/components/strongholdbuilder/summary.vue';
 import generalInformation from '@/components/strongholdbuilder/generalinformation.vue';
 import { useStrongholdStore } from '@/stores/index';
 import { storeToRefs } from 'pinia';
+import { useMeta } from 'vue-meta';
 
 export default {
   components: {
@@ -29,7 +30,7 @@ export default {
             
     getAllImprovements();
     getAllStrongholds();
-    
+    useMeta({ title: "Stronghold Builder" });
     return {
       bankRevenue, buildingMaintenance, buyTable, calcRevRatio, calcTotalRevenue, calculateIncome, calculateRevenue, calcGrossRevenue, expenses, getPop, grossRevenue, headTax, improvementRevenue, incomeTax, neededStaff, privateLaborers, propertyTax, rents, resourceCost, resourceRevenue, sellTable, staffBeds, staffTypes, staffSummary, stronghold, taxRevenue, taxEfficiency, totalEmployees, totalPrivateEmployed, totalSalary, totalStorage, unemploymentRate, unrest, popNeeds, privateProduced, usedStorage, vassalTax,
       

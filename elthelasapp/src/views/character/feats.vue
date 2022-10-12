@@ -1,6 +1,5 @@
 <template>
-  <div class="col-sm-12">
-    <h1>Feats</h1>
+  <div>
     <div v-for="feat in featsort" :key="feat.name">
       <h4>{{ feat.name }}</h4>
       <h6 v-if="feat.prereq !== ''">Prerequisite: {{ feat.prereq }}</h6>

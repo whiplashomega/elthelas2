@@ -46,7 +46,7 @@
         <tr><td>Zelfir</td><td>Hisru</td><td>Staelic, Morrind</td></tr>
       </tbody>
     </table>
-    <h3>Language Descriptions</h3>
+    <h2>Language Descriptions</h2>
     <ul>
       <li>Abyssal: The language of Demons</li>
       <li>Aquan: The language of the plane of water and water elementals</li>
@@ -78,7 +78,7 @@
       <li>Trollkin: The language of the trollkin of Degak'Ta</li>
       <li>Yuan-ti: The language of the Yuan-ti of Ssitsu</li>
     </ul>
-    <h3>Language Statistics</h3>
+    <h2>Language Statistics</h2>
     <table class='table'>
       <thead>
         <tr><th>Language</th><th>Countries Spoken</th><th>First Language Countries</th></tr>

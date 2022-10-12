@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h2>Planar Cosmology</h2>
     <p>
       The Planes in Elthelas are geographically coexistent, but the actual matter making them up is separated by barriers of arcane force. Thus, planes being adjacent is simply describing that there is only one barrier between them. Since cutting through multiple planar barriers at once requires exponentially more energy, planar travel typically requires movement through adjacent planes.
     </p>

@@ -1,12 +1,14 @@
 import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 import { useStaticsStore, useUserStore } from '@/stores/index';
 import modal from '@/components/global/modal.vue';
+import { useMeta } from 'vue-meta';
 
 export default {
   setup () {
     const statics = useStaticsStore();
     const userinfo = useUserStore();
     const { spells, equipment, armor, weapons, homebrewweapons } = statics;
+    useMeta({ title: "Quick Reference Manual" });
     return {
       userinfo, spells, equipment, armor, weapons, marked, homebrewweapons
     };

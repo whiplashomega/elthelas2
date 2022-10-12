@@ -1,6 +1,7 @@
 import { useStaticsStore } from '@/stores/index';
 import droll from 'droll';
 import lookup from './lookup';
+import { useMeta } from 'vue-meta';
 
 export default {
   setup () {
@@ -11,6 +12,7 @@ export default {
             randomMagicItem, getAllValuables
     } = staticsStore;
     getAllValuables();
+    useMeta({ title: "Treasure Generator" });
     return {
       commons, uncommons, rares, veryrares, legendaries, weapons, armor, equipment,
       allValuables, randomValuable, randomMagicItem
@@ -47,7 +49,7 @@ export default {
       let pp = 0;
       let result = "";
       console.log(d100);
-      if (this.challenge === 1) {
+      if (this.challenge === 0) {
         if (d100 < 31) {
           cp = droll.roll("5d6").total;
         } else if (d100 < 61) {
@@ -57,7 +59,7 @@ export default {
         } else {
           pp = droll.roll("1d6").total;
         }
-      } else if (this.challenge === 2) {
+      } else if (this.challenge === 1) {
         if (d100 < 31) {
           cp = droll.roll("4d6").total * 100;
           gp = droll.roll("1d6").total * 10;
@@ -70,7 +72,7 @@ export default {
           gp = droll.roll("2d6").total * 10;
           pp = droll.roll("3d6").total;
         }
-      } else if (this.challenge === 3) {
+      } else if (this.challenge === 2) {
         if (d100 < 21) {
           sp = droll.roll("4d6").total * 100;
           gp = droll.roll("1d6").total * 100;
@@ -81,7 +83,7 @@ export default {
           gp = droll.roll("2d6").total * 100;
           pp = droll.roll("2d6").total * 10;
         }
-      } else if (this.challenge === 4) {
+      } else if (this.challenge === 3) {
         if (d100 < 56) {
           gp = droll.roll("1d6").total * 1000;
           pp = droll.roll("1d6").total * 100;

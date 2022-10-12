@@ -504,7 +504,6 @@ export default {
     unemploymentRate () {
       return Math.max(this.current.population.adults ? Math.round((1 - ((this.totalEmployees + this.totalPrivateEmployed) / this.employablePeople)) * 100) : 0, 0);
     },
-    unitWeightMod () { return 1 },
     unmetStaffNeed () {
       let needed = [];
       this.neededStaff.forEach((a) => {
@@ -724,9 +723,9 @@ export default {
       }
     },
     buyResource ({ type, amount }) {
-      let checkWeight = this.current.laws.todaysExports + Number(amount) * this.unitWeightMod[type];
+      //let checkWeight = this.current.laws.todaysExports + Number(amount) * this.unitWeightMod[type];
       this.current.resources[type] += Number(amount);
-      this.current.laws.todaysExports = checkWeight;
+      //this.current.laws.todaysExports = checkWeight;
       this.addToTreasury({ changeby: -1 * Number(amount) * this.buyTable[type], record: "Purchase " + amount + " " + type });
     }
   }

@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import home from '@/views/homepage.vue';
-import refmenu from '@/components/ref/menu.vue';
 import { useGlobalsStore, useUserStore } from '@/stores/index.js';
 
 const router = createRouter({
@@ -19,8 +18,7 @@ const router = createRouter({
       path: '/world/calendar',
       name: 'calendar',
       components: {
-        default: () => import('@/views/world/calendar.vue'),
-        sidebar: refmenu
+        default: () => import('@/views/world/calendar.vue')
       },
       meta: {
         title: "Calendar",

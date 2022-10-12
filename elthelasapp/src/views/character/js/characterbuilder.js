@@ -25,6 +25,7 @@ import pets from '@/components/characterbuilder/pets.vue';
 import resources from '@/components/characterbuilder/resources.vue';
 import skills from '@/components/characterbuilder/skills.vue';
 import spells from '@/components/characterbuilder/spells.vue';
+import { useMeta } from 'vue-meta';
 
 export default {
   setup () {
@@ -40,6 +41,7 @@ export default {
     
     // map actions
     const rollStats = characters.rollStats;
+    useMeta({ title: "Character Builder" });
     
     return {
       statics,

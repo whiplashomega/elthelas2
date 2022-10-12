@@ -1,10 +1,12 @@
 import { useStaticsStore } from '@/stores/index';
 import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
+import { useMeta } from 'vue-meta';
 
 export default {
   setup () {
     const statics = useStaticsStore();
     const { historyevents: events } = statics;
+    useMeta({ title: "History" });
     
     return {
       marked,
@@ -60,8 +62,5 @@ export default {
     convertMonth (a) {
       return this.monthIndex[a - 1];
     }
-  },
-  mounted () {
-    this.$store.dispatch('getAllEvents');
   }
 };

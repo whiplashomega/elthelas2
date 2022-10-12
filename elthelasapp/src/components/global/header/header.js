@@ -1,6 +1,7 @@
 import { useGlobalsStore, useUserStore, useCampaignStore } from '@/stores/index';
 import modal from '../modal.vue';
 import { storeToRefs } from 'pinia';
+
 export default {
   setup () {
     const globals = useGlobalsStore();

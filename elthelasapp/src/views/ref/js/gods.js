@@ -1,12 +1,14 @@
 import { useStaticsStore } from '@/stores/index';
 import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
+import { useMeta } from 'vue-meta';
 
 export default {
   setup () {
     const statics = useStaticsStore();
     
     const gods = statics.gods;
-    
+
+    useMeta({ title: "Gods" });
     return {
       gods,
       statics,

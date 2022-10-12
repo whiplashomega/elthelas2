@@ -5,6 +5,7 @@ import pcmanager from '@/components/campaignbuilder/pcmanager.vue';
 import npcmanager from '@/components/campaignbuilder/npcmanager.vue';
 import modal from '@/components/global/modal.vue';
 import runner from '@/views/campaign/runner.vue';
+import { useMeta } from 'vue-meta';
 /* Campaign Object Structure
 {
     title: String,
@@ -29,11 +30,12 @@ export default {
     
     const { getAllCampaigns: getAll, getAllCampaignsSilent: getAllSilent, saveNewCampaign: saveNew, saveCampaign: save, loadCampaign: load, loadCampaignById: loadById, loadCampaignByUrl: loadByUrl, deleteCampaign: deleteCamp, newCampaign: newCamp } = campaigns;
     let buildmode = campaign.buildmode;
+    useMeta({ title: "Campaign Builder" });
     return {
       campaigns, userinfo, allCampaigns, campaign, chapter, pcs, token, loggedin, buildmode,
       
       getAll, getAllSilent, saveNew, save, load, loadById, loadByUrl, deleteCamp, newCamp
-    }
+    };
   },
   components: {
     notes,

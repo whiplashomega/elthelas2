@@ -10,12 +10,14 @@ import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 import modal from '@/components/global/modal.vue';
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
+import { useMeta } from 'vue-meta';
 
 export default {
   setup () {
     const statics = useStaticsStore();
     const { nations, cities, landmarks, features, continents, territories } = storeToRefs(statics);
     const user = useUserStore();
+    useMeta({ title: "Geography" });
     return {
       marked,
       nations,

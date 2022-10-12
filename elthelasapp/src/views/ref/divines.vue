@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Divines</h2>
+    <p>"Divine" beings are incredibly powerful immortal beings that do not rise to the level of Gods. They are lieutenants of Gods, Fey creatures, demonic lords, ancient urges from beyond the planes and many more.</p>
     <select v-model="divineFilter" class="form-control" @change="filterDivines">
       <option value="" selected>Filter By Type</option>
       <option v-for="type in types" :value="type" :key="type">{{ type }}</option>

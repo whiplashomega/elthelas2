@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h2>The Calendar</h2>
     <p>
       The current calendar in use was developed by the Morrind Dwarves shortly after contact with the mainland dwarves was reestablished.  Counting years from first contact, YFC, the calendar
       spread among their many trading partners until it came into common use throughout the civilized world.  However, the original meaning of YFC has been corrupted over time, and it is now

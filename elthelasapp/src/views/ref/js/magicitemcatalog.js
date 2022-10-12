@@ -1,6 +1,7 @@
 import { useStaticsStore, useUserStore } from '@/stores/index';
 import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 import modal from '@/components/global/modal.vue';
+import { useMeta } from 'vue-meta';
 
 export default {
   setup() {
@@ -9,6 +10,7 @@ export default {
     
     const { magicitems, magicscrolls, magicwands, magicweapons, magichomebrewweapons, magicarmor, magicother, magiccommons, magicrares, magicveryrares, magiclegendaries } = statics;
     
+    useMeta({ title: "Magic Item Catalog" });
     return {
       userinfo,
       

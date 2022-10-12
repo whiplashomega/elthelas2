@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h2>The Forces of Magic</h2>
     <p>
       In our world we are familiar with the 4 fundamental forces.  The strong nuclear force, weak nuclear force, electromagnetic force, and gravitational force.  These forces account for everything in our universe.  In the universe of Elthelas and D&amp;D there are additional forces that act on the universe, namely, the divine force, and the arcane force.
     </p>
