@@ -95,6 +95,9 @@ export default {
     loadChar (id) {
       this.getOneFromServer(id);
       this.serverModalProps.isActive = false;
+    },
+    addGroup () {
+      this.character.group = this.newgroup;
     }
   },
   watch: {

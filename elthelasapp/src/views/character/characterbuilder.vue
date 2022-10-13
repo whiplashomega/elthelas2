@@ -3,7 +3,7 @@
     <div class="alert alert-danger" v-if="message">
       {{ message }}
     </div>
-    <div class="row" v-if="!mobile">
+    <div class="row desktop">
       <div class="print-hide col-sm-12">
         <loadsave minimal />
       </div>
@@ -116,133 +116,76 @@
       <div class="col-4 print-hide" v-if="!buildHide">
         <h2>Build</h2>
         <buildclass />
-        <div class="row">
-          <div class="col">
-            <table class="abilitytable">
-              <thead>
-                <tr><th>Stat</th><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>Base</th>
-                  <td><input type="number" v-model="character.stats[0]" class="charsheet-num"></td>
-                  <td><input type="number" v-model="character.stats[1]" class="charsheet-num"></td>
-                  <td><input type="number" v-model="character.stats[2]" class="charsheet-num"></td>
-                  <td><input type="number" v-model="character.stats[3]" class="charsheet-num"></td>
-                  <td><input type="number" v-model="character.stats[4]" class="charsheet-num"></td>
-                  <td><input type="number" v-model="character.stats[5]" class="charsheet-num"></td>
-                </tr>
-                <tr>
-                  <th>Racial</th>
-                  <td><input type="number" v-model="character.race.stats[0]" class="charsheet-num"></td>
-                  <td><input type="number" v-model="character.race.stats[1]" class="charsheet-num"></td>
-                  <td><input type="number" v-model="character.race.stats[2]" class="charsheet-num"></td>
-                  <td><input type="number" v-model="character.race.stats[3]" class="charsheet-num"></td>
-                  <td><input type="number" v-model="character.race.stats[4]" class="charsheet-num"></td>
-                  <td><input type="number" v-model="character.race.stats[5]" class="charsheet-num"></td>
-                </tr>
-                <tr>
-                  <th>Bonus</th>
-                  <td><input type="number" v-model="character.statbonus[0]" class="charsheet-num"></td>
-                  <td><input type="number" v-model="character.statbonus[1]" class="charsheet-num"></td>
-                  <td><input type="number" v-model="character.statbonus[2]" class="charsheet-num"></td>
-                  <td><input type="number" v-model="character.statbonus[3]" class="charsheet-num"></td>
-                  <td><input type="number" v-model="character.statbonus[4]" class="charsheet-num"></td>
-                  <td><input type="number" v-model="character.statbonus[5]" class="charsheet-num"></td>
-                </tr>
-                <tr>
-                  <th>Save</th>
-                  <td><input type="checkbox" v-model="character.saves[0]" /></td>
-                  <td><input type="checkbox" v-model="character.saves[1]" /></td>
-                  <td><input type="checkbox" v-model="character.saves[2]" /></td>
-                  <td><input type="checkbox" v-model="character.saves[3]" /></td>
-                  <td><input type="checkbox" v-model="character.saves[4]" /></td>
-                  <td><input type="checkbox" v-model="character.saves[5]" /></td>
-                </tr>
-                <tr>
-                  <th>Save Bonus</th>
-                  <td><input type="number" v-model="character.savebonus[0]" class="charsheet-num"></td>
-                  <td><input type="number" v-model="character.savebonus[1]" class="charsheet-num"></td>
-                  <td><input type="number" v-model="character.savebonus[2]" class="charsheet-num"></td>
-                  <td><input type="number" v-model="character.savebonus[3]" class="charsheet-num"></td>
-                  <td><input type="number" v-model="character.savebonus[4]" class="charsheet-num"></td>
-                  <td><input type="number" v-model="character.savebonus[5]" class="charsheet-num"></td>
-                </tr>
-              </tbody>
-            </table>
-            Point Buy Total: {{ pointbuy }}<br />
-            Stat Rolls: <span v-for="(roll, index) in characters.statRolls" :key="index">{{ roll }}&nbsp;</span>
-            <input type="button" @click="rollStats()" value="Roll!" />
-          </div>
-        </div>
+        <statbuilder />
         <bonus />
-        <div class="col-sm">
-          <h5>Add to Group</h5>
-          <select v-model="character.group">
-            <option v-for="group in groups" :value="group.name" :key="group.id">{{ group.name }}</option>
-            <option :value="''">None</option>
-          </select>
-          <h6>Create New Group</h6>
-          <input type="text" v-model="newgroup" class="charsheet-text" />
-          <button class="btn btn-sm btn-primary" @click="addGroup()">Create</button>
-        </div>
         <campaigninfo />
       </div>
     </div>
-    <div v-if="mobile">
-      <b-tabs>
-        <b-tab title="Basics">
-          <characterheader />
+    <div class="mobile">
+      <characterheader />
+      <b-accordion>
+        <b-accordion-item title="Load/Save">
+          <loadsave :minimal="false" />
+        </b-accordion-item>
+        <b-accordion-item title="Class">
           <buildclass />
-          <appearance />
-        </b-tab>
-        <b-tab title="Stats">
+        </b-accordion-item>
+        <b-accordion-item title="Stats">
           <div class="row">
             <div class="col">
               <abilityscores />
             </div>
           </div>
-        </b-tab>
-        <b-tab title="Skills">
+          <statbuilder />
+        </b-accordion-item>
+        <b-accordion-item title="Skills">
           <skills />
-        </b-tab>
-        <b-tab title="Combat">
-          <initiative />
-          <hitpoints :key="hitdicechanged" />
-          <combat />
-          <actions />
-          <attacks />
-        </b-tab>
-        <b-tab title="Spells">
+        </b-accordion-item>
+        <b-accordion-item title="Spells">
           <div class="row">
             <div class="col-12">
               <spells />
             </div>
           </div>
-        </b-tab>
-        <b-tab title="Resources">
+        </b-accordion-item>
+        <b-accordion-item title="Resources">
           <resources />
-        </b-tab>
-        <b-tab title="Pets">
-          <pets />
-        </b-tab>
-        <b-tab title="Equipment">
+        </b-accordion-item>
+        <b-accordion-item title="Equipment">
           <equipment />
-        </b-tab>
-        <b-tab title="Features">
+        </b-accordion-item>
+        <b-accordion-item title="HP, Initiative, AC, and Armor">
+          <hitpoints />
+          <initiative />
+          <combat />
+        </b-accordion-item>
+        <b-accordion-item title="Features">
           <features />
-        </b-tab>
-        <b-tab title="Fluff">
+        </b-accordion-item>
+        <b-accordion-item title="Actions, Attacks, and Other Rolls">
+          <actions />
+          <attacks />
+          <otherrolls />
+        </b-accordion-item>
+        <b-accordion-item title="Appearance">
+          <appearance />
+        </b-accordion-item>
+        <b-accordion-item title="Backstory">
           <fluff />
-        </b-tab>
-        <b-tab title="Build">
-          <loadsave :minimal="false" />
+        </b-accordion-item>
+        <b-accordion-item title="Pets">
+          <pets />
+        </b-accordion-item>
+        <b-accordion-item title="Bonuses">
           <bonus />
-        </b-tab>
-        <b-tab title="Campaign">
+        </b-accordion-item>
+        <b-accordion-item title="Game Notes">
+          <gamenotes />
+        </b-accordion-item>
+        <b-accordion-item title="Campaign Info">
           <campaigninfo />
-        </b-tab>
-      </b-tabs>
+        </b-accordion-item>
+      </b-accordion>
     </div>
     <loadsavemodals />
     <b-modal v-model="startGuide" title="Getting Started Guide"

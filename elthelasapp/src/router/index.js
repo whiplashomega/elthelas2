@@ -15,6 +15,17 @@ const router = createRouter({
       }
     },
     {
+      path: '/privacy-policy',
+      name: 'privacy',
+      components: {
+        default: () => import('@/views/privacy.vue')
+      },
+      meta: {
+        title: "Privacy Policy",
+        auth: false
+      }
+    },
+    {
       path: '/world/calendar',
       name: 'calendar',
       components: {

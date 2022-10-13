@@ -5,7 +5,7 @@ export default {
   setup () {
     const characters = useCharacterStore();
     
-    const { character, getHPTotal } = storeToRefs(characters);
+    const { character, getHPTotal, maxExhaustion } = storeToRefs(characters);
 
     const shortrest = characters.shortrest;
     const longrest = characters.longrest;
@@ -14,7 +14,8 @@ export default {
       character,
       getHPTotal,
       shortrest,
-      longrest
+      longrest,
+      maxExhaustion
     };
   },
   data: function () {

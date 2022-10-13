@@ -6,9 +6,9 @@
           HP: <input type="number" class="charsheet-num"
                      v-model="character.hpcurrent" disabled /> / {{ getHPTotal }} Max <br />
           Temporary: <input type="number" class="charsheet-num"
-                            v-model="character.temphp" />
+                            v-model="character.temphp" /> <br />
           Exhaustion: <input type="number" class="charsheet-num" v-model="character.exhaustion"
-                             min=0 max=10 step=1 />
+                             min=0 max=12 step=1 /> / {{ maxExhaustion }}
         </div>
       </div>
     </div>

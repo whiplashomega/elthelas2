@@ -25,6 +25,8 @@ import pets from '@/components/characterbuilder/pets.vue';
 import resources from '@/components/characterbuilder/resources.vue';
 import skills from '@/components/characterbuilder/skills.vue';
 import spells from '@/components/characterbuilder/spells.vue';
+import statbuilder from '@/components/characterbuilder/statbuilder.vue';
+
 import { useMeta } from 'vue-meta';
 
 export default {
@@ -37,7 +39,7 @@ export default {
     // initial data retrieval
     statics.getAll();
     // map getters
-    const { character, pointbuy, mobile, hitdicechanged, charGroups: groups, message } = storeToRefs(characters);
+    const { character, pointbuy, mobile, hitdicechanged, message } = storeToRefs(characters);
     
     // map actions
     const rollStats = characters.rollStats;
@@ -52,7 +54,6 @@ export default {
       pointbuy,
       mobile,
       hitdicechanged,
-      groups,
       message,
     }
   },
@@ -79,7 +80,8 @@ export default {
     pets,
     resources,
     skills,
-    spells
+    spells,
+    statbuilder
   },
   data () {
     return {
@@ -97,9 +99,6 @@ export default {
   methods: {
     log(val) {
       console.log(val);
-    },
-    addGroup () {
-      this.character.group = this.newgroup;
     }
   },
   mounted () {

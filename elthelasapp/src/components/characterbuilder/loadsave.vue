@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="row">
+      
       <div class="col-sm">
         <div class="row" style="margin-bottom: 5px;">
           <div class="col-sm-6" >
@@ -50,6 +51,16 @@
           <input type="checkbox" v-model="character.autosave" /> Autosave Character Changes
         </div>
       </div>
+      <div class="col-sm">
+          <h5>Add to Group</h5>
+          <select v-model="character.group">
+            <option v-for="group in groups" :value="group.name" :key="group.id">{{ group.name }}</option>
+            <option :value="''">None</option>
+          </select>
+          <h6>Create New Group</h6>
+          <input type="text" v-model="newgroup" class="charsheet-text" />
+          <button class="btn btn-sm btn-primary" @click="addGroup()">Create</button>
+        </div>
     </div>
       <div>
     <modal id="servermodal" :modalProps="serverModalProps">
@@ -75,6 +86,7 @@
       <img src="https://elthelas-images.herokuapp.com/giphy.gif" alt="Loading" />
     </modal>
   </div>
+
   </div>
 </template>
 <script src="./js/loadsave.js"></script>

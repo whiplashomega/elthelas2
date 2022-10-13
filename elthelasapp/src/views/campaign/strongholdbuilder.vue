@@ -446,6 +446,7 @@
           </tbody>
         </table>
       </b-tab>
+
       <b-tab title="Actions">
         <h2>Actions</h2>
         <p>This is not a final and complete list. Players are encouraged to think creatively about what to do with their time.</p>
