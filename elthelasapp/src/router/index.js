@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import home from '@/views/homepage.vue';
 import { useGlobalsStore, useUserStore } from '@/stores/index.js';
 
 const router = createRouter({
@@ -7,7 +8,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: import('@/views/homepage.vue'),
+      component: home,
       meta: {
         title: "Home",
         auth: false
