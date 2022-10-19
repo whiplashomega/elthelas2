@@ -1,6 +1,7 @@
 import { useUserStore, useCreatureStore } from '@/stores/index';
 import { storeToRefs } from 'pinia';
 import { useMeta } from 'vue-meta';
+import modal from '@/components/global/modal.vue';
 
 export default {
   setup () {
@@ -14,8 +15,32 @@ export default {
       admin, creatures, getCreature, getAllCreatures
     };
   },
+  components: { 
+    modal
+  },
+  computed: {
+    filteredcreatures () {
+      return this.creatures.filter((cre) => {
+        for (let key in cre) {
+          if (cre[key].toString().toLowerCase().includes(this.creaturestable.filterValue.toLowerCase())) {
+            return true;
+          }
+        }
+        return false;
+      }).sort((a, b) => {
+        if (a[this.creaturestable.sortBy] > b[this.creaturestable.sortBy] && this.creaturestable.sortDesc === false) {
+          return 1;
+        } else if (a[this.creaturestable.sortBy] < b[this.creaturestable.sortBy] && this.creaturestable.sortDesc === true) {
+          return 1;
+        } else {
+          return -1;
+        }
+      });
+    }
+  },
   data () {
     return {
+      modalProps: { title: "", isActive: false },
       creaturestable: {
         fields: [
           { key: 'name', label: 'Name', sortable: true },
@@ -26,7 +51,7 @@ export default {
           { key: 'alignment', label: 'Alignment', sortable: true }
         ],
         filterValue: "",
-        sortBy: null,
+        sortBy: "name",
         sortDesc: false,
         filterBy: [ "name", "size", "cr", "type", "subtype", "alignment", "description" ],
         modalInfo: {
@@ -66,7 +91,7 @@ export default {
     async info (item, index, button) {
       var creature = await this.getCreature(item._id);
       this.creaturestable.modalInfo = creature;
-      this.$root.$emit('bv::show::modal', 'creaturemodal', button);
+      this.modalProps = { title: creature.name, isActive: true }
     },
     resetModal () {
       this.creaturestable.modalInfo = {

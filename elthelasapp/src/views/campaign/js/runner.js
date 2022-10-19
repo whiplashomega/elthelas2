@@ -125,6 +125,14 @@ export default {
           return true;
         }
         return false;
+      }).sort((a, b) => {
+        if (a[this.creaturestable.sortBy] > b[this.creaturestable.sortBy] && this.creaturestable.sortDesc === false) {
+          return 1;
+        } else if (a[this.creaturestable.sortBy] < b[this.creaturestable.sortBy] && this.creaturestable.sortDesc === true) {
+          return 1;
+        } else {
+          return -1;
+        }
       });
     },
     statBlocks () {
@@ -166,7 +174,7 @@ export default {
           { key: 'alignment', label: 'Alignment', sortable: true }
         ],
         filterValue: "",
-        sortBy: null,
+        sortBy: "name",
         sortDesc: false,
         filterBy: [ "name", "size", "cr", "subtype", "alignment" ],
         modalInfo: { ...modalInfo }

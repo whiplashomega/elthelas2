@@ -2,15 +2,7 @@
   <div class="col-sm-12">
     <b-row>
       <b-col md="8">
-        <b-form-checkbox-group v-model="creaturestable.filterBy">
-          <b-form-checkbox value="name">Name</b-form-checkbox>
-          <b-form-checkbox value="size">Size</b-form-checkbox>
-          <b-form-checkbox value="cr">CR</b-form-checkbox>
-          <b-form-checkbox value="type">Type</b-form-checkbox>
-          <b-form-checkbox value="subtype">Subtype</b-form-checkbox>
-          <b-form-checkbox value="alignment">Alignment</b-form-checkbox>
-          <b-form-checkbox value="description">Description</b-form-checkbox>
-        </b-form-checkbox-group>
+        &nbsp;
       </b-col>
       <b-col md="4" class="my-1">
         <b-input-group>
@@ -20,19 +12,31 @@
         </b-input-group>
       </b-col>
     </b-row>
-    <b-table show-empty
-             :striped="true" :bordered="false"
-             :responsive="true"
-             stacked="sm"
-             :items="creatures"
-             :fields="creaturestable.fields"
-             :filter="filter"
-             :sort-by.sync="creaturestable.sortBy"
-             :sort-desc.sync="creaturestable.sortDesc">
-      <template v-slot:cell(name)="row"><span><a href="#" @click.stop="info(row.item, row.index, $event.target)">{{ row.value }}</a> <button class="btn btn-warning btn-sm" @click="edit(row.item)" v-if="admin">&#9998;</button><button class="btn btn-sm btn-danger" @click="del(row.item)" v-if="admin">X</button></span></template>
-    </b-table>
-    <b-modal id="creaturemodal" size="lg"
-             @hide="resetModal" :title="creaturestable.modalInfo.name"
+    <table class="table table-striped table-responsive" id="creaturetable">
+        <thead><tr>
+          <th><a href="#" @click.stop="creaturestable.sortBy = 'name'; creaturestable.sortDesc = !creaturestable.sortDesc">Name</a></th>
+          <th><a href="#" @click.stop="creaturestable.sortBy = 'size'; creaturestable.sortDesc = !creaturestable.sortDesc">Size</a></th>
+          <th><a href="#" @click.stop="creaturestable.sortBy = 'cr'; creaturestable.sortDesc = !creaturestable.sortDesc">CR</a></th>
+          <th><a href="#" @click.stop="creaturestable.sortBy = 'type'; creaturestable.sortDesc = !creaturestable.sortDesc">Type</a></th>
+          <th><a href="#" @click.stop="creaturestable.sortBy = 'subtype'; creaturestable.sortDesc = !creaturestable.sortDesc">Subtype</a></th>
+          <th><a href="#" @click.stop="creaturestable.sortBy = 'alignment'; creaturestable.sortDesc = !creaturestable.sortDesc">Alignment</a></th>
+        </tr></thead>
+        <tbody>
+          <tr v-for="(cre, index) in filteredcreatures" :key="cre._id">
+            <td><span>
+              <a href="#" @click.stop="info(cre, index, $event.target)">{{ cre.name }}</a>
+              <button class="btn btn-warning btn-sm" @click="edit(cre)" v-if="admin">&#9998;</button>
+              <button class="btn btn-sm btn-danger" @click="del(cre)" v-if="admin">X</button>
+            </span></td>
+            <td>{{ cre.size }}</td>
+            <td>{{ cre.cr }}</td>
+            <td>{{ cre.type }}</td>
+            <td>{{ cre.subtype }}</td>
+            <td>{{ cre.alignment }}</td>
+          </tr>
+        </tbody>
+      </table>
+    <modal id="creaturemodal" :modalProps="modalProps"
              ok-only>
       <h4> {{ creaturestable.modalInfo.size }} {{ creaturestable.modalInfo.type }}<span v-if="creaturestable.modalInfo.subtype"> ({{ creaturestable.modalInfo.subtype }})</span>, {{ creaturestable.modalInfo.alignment }}</h4>
       <p>
@@ -68,7 +72,7 @@
         <strong>Challenge:</strong> {{ creaturestable.modalInfo.cr }}
       </p>
       <div v-html="creaturestable.modalInfo.descr"></div>
-    </b-modal>
+    </modal>
   </div>
 </template>
 <script src="./js/bestiary.js"></script>

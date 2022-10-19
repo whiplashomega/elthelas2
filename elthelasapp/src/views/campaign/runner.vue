@@ -145,21 +145,34 @@
         <b-col md="4" class="my-1">
           <b-input-group>
             <b-form-input v-model="creaturestable.filterValue" placeholder="Type to Search" />
-            <button class="btn btn-default" :disabled="!creaturestable.filterValue" @click="creaturestable.filterValue = ''">Clear</button>
+            <button class="btn btn-primary" :disabled="!creaturestable.filterValue" @click="creaturestable.filterValue = ''">Clear</button>
           </b-input-group>
         </b-col>
       </b-row>
-      <b-table show-empty
-               id="creaturetable"
-               :striped="true" :bordered="false"
-               :responsive="true"
-               stacked="sm"
-               :items="filteredcreatures"
-               :fields="creaturestable.fields"
-               :sort-by.sync="creaturestable.sortBy"
-               :sort-desc.sync="creaturestable.sortDesc">
-        <template v-slot:cell(name)="row"><span><a href="#" @click.stop="addToEncounter(row.item, row.index, $event.target)">{{ row.value }}</a> <button class="btn btn-warning btn-sm" @click="edit(row.item)" v-if="admin">&#9998;</button><button class="btn btn-sm btn-danger" @click="del(row.item)" v-if="admin">X</button></span></template>
-      </b-table>
+      <table class="table table-striped table-responsive" id="creaturetable">
+        <thead><tr>
+          <th><a href="#" @click.stop="creaturestable.sortBy = 'name'; creaturestable.sortDesc = !creaturestable.sortDesc">Name</a></th>
+          <th><a href="#" @click.stop="creaturestable.sortBy = 'size'; creaturestable.sortDesc = !creaturestable.sortDesc">Size</a></th>
+          <th><a href="#" @click.stop="creaturestable.sortBy = 'cr'; creaturestable.sortDesc = !creaturestable.sortDesc">CR</a></th>
+          <th><a href="#" @click.stop="creaturestable.sortBy = 'type'; creaturestable.sortDesc = !creaturestable.sortDesc">Type</a></th>
+          <th><a href="#" @click.stop="creaturestable.sortBy = 'subtype'; creaturestable.sortDesc = !creaturestable.sortDesc">Subtype</a></th>
+          <th><a href="#" @click.stop="creaturestable.sortBy = 'alignment'; creaturestable.sortDesc = !creaturestable.sortDesc">Alignment</a></th>
+        </tr></thead>
+        <tbody>
+          <tr v-for="(cre, index) in filteredcreatures" :key="cre._id">
+            <td><span>
+              <a href="#" @click.stop="addToEncounter(cre, index, $event.target)">{{ cre.name }}</a>
+              <button class="btn btn-warning btn-sm" @click="edit(cre)" v-if="admin">&#9998;</button>
+              <button class="btn btn-sm btn-danger" @click="del(cre)" v-if="admin">X</button>
+            </span></td>
+            <td>{{ cre.size }}</td>
+            <td>{{ cre.cr }}</td>
+            <td>{{ cre.type }}</td>
+            <td>{{ cre.subtype }}</td>
+            <td>{{ cre.alignment }}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <div id="inithptracker">
       <div v-for="creature in encountercreaturesinit" :key="creature.id" class="form-inline form-row">

@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import home from '@/views/homepage.vue';
 import { useGlobalsStore, useUserStore } from '@/stores/index.js';
 
 const router = createRouter({
@@ -8,7 +7,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: home,
+      component: import('@/views/homepage.vue'),
       meta: {
         title: "Home",
         auth: false
@@ -374,6 +373,17 @@ const router = createRouter({
       },
       meta: {
         title: "Stronghold Builder",
+        auth: false
+      }
+    },
+    {
+      path: "/ref/homebrew",
+      name: "Homebrew Rules",
+      components: {
+        default: () => import('@/views/ref/homebrew.vue')
+      },
+      meta: {
+        title: "Homebrew Rules at My Table",
         auth: false
       }
     }

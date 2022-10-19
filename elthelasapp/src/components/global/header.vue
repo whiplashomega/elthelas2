@@ -64,6 +64,7 @@
               <li><router-link to="/ref/magic" class="dropdown-item">Magic</router-link></li>
               <li><router-link to="/ref/gods" class="dropdown-item">Gods</router-link></li>
               <li><router-link to="/ref/divines" class="dropdown-item">Divine Beings</router-link></li>
+              <li><router-link to="/ref/homebrew" class="dropdown-item">Homebrew</router-link></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
