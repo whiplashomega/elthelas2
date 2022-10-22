@@ -3,7 +3,7 @@
     <div class="row">
       <h1 class="col-sm-5">
         <div class="btn-group">
-          <a href="/tools/strongholdbuilder" class="btn btn-warning">New / Load</a>
+          <button class="btn btn-warning" @click="newmodal.isActive=true">New / Load</button>
           <button class="btn btn-success" @click="saveNewStronghold()">Save New</button>
           <button class="btn btn-primary" v-if="stronghold._id" @click="saveStronghold()">Save</button>
         </div>
@@ -48,7 +48,7 @@
       </div>
     </div>
     <div class="alert alert-danger" v-if="usedStorage >= totalStorage">At Maximum Storage, newly stockpiled resources may be discarded</div>
-    <b-modal v-model="newmodal">
+    <modal :modalProps="newmodal">
       Castle Name <input type="text" v-model="stronghold.castleName" class="form-control" />
       Town Name <input type="text" v-model="stronghold.townName" class="form-control" />
       <h5>Start Date</h5>
@@ -84,7 +84,7 @@
           <button class="btn btn-danger" @click="deleteStronghold({ stronghold: stronghold })">X</button>
         </li>
       </ul>
-    </b-modal>
+    </modal>
   </div>
 </template>
 <script src="./js/summary.js"></script>

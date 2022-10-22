@@ -1,6 +1,7 @@
 import { useStrongholdStore, useUserStore } from '@/stores/index';
 import Decimal from 'decimal.js';
 import { storeToRefs } from 'pinia';
+import modal from '@/components/global/modal.vue';
 function randNbm() {
   let u = 0;
   let v = 0;
@@ -36,11 +37,14 @@ export default {
   },
   data () {
     return {
-      newmodal: true,
+      newmodal: { isActive: true, title: "New/Load" },
       dayofweek: "Godsday",
       dayNames: ["Godsday", "Elvesday", "Gnomesday", "Dragonsday", "Mansday", "Dwarvesday", "Orcsday"],
       monthNames: ["Neradan", "Dorunor", "Trimalan", "Sylvanus", "Gaiana", "Alohiman", "Coranus", "Moltyr", "Saris", "Maridia", "Tockra", "Amatherin"]
     };
+  },
+  components: {
+    modal
   },
   methods: {
     newDay () {
