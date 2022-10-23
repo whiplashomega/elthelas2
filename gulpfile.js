@@ -2,7 +2,7 @@ var gulp = require('gulp'),
     fs = require('fs');
 var console = {};
 console.log = require('fancy-log');
-var jsonlint = require("gulp-jsonlint");
+//var jsonlint = require("gulp-jsonlint");
 
 gulp.task('historyjson', function (done) {
   var files = fs.readdirSync("./data/historicalevents");
@@ -142,12 +142,12 @@ gulp.task('spellsjson', function(done) {
   }
 });
 
-gulp.task('jsonlint', function(done) {
-  gulp.src("./data/**/*.json")
-    .pipe(jsonlint())
-    .pipe(jsonlint.reporter());
-  done();
-});
+//gulp.task('jsonlint', function(done) {
+//  gulp.src("./data/**/*.json")
+//    .pipe(jsonlint())
+//    .pipe(jsonlint.reporter());
+//  done();
+//});
 
 function compiledir(sourcedir, destination, modelName) {
   return new Promise(function(resolve) {
