@@ -217,4 +217,4 @@ gulp.task('build', function(done) {
   });  
 });
 //task groups
-gulp.task('default', gulp.series('jsonlint', gulp.parallel('spellsjson', 'historyjson', 'personalhistoryjson', 'jsoncompile')));
+gulp.task('default', gulp.parallel('spellsjson', 'historyjson', 'personalhistoryjson', 'jsoncompile'));
