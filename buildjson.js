@@ -1,10 +1,8 @@
-var gulp = require('gulp'),
-    fs = require('fs');
+fs = require('fs');
 var console = {};
 console.log = require('fancy-log');
-//var jsonlint = require("gulp-jsonlint");
 
-gulp.task('historyjson', function (done) {
+function historyjson () {
   var files = fs.readdirSync("./data/historicalevents");
   var historyarray = [];
   files.forEach(function(file) {
@@ -43,12 +41,11 @@ gulp.task('historyjson', function (done) {
   if(historyarray.length === files.length) {
     fs.writeFile("./elthelasapp/public/json/history.json", JSON.stringify({ "model": "History", "documents": historyarray}), "utf-8", function() {
       console.log("writing /elthelasapp/public/json/history.json");
-      done();
     });
   }
-});
+}
 
-gulp.task('personalhistoryjson', function (done) {
+function personalhistoryjson () {
   var files = fs.readdirSync("./data/personalevents");
   var historyarray = [];
   files.forEach(function(file) {
@@ -87,12 +84,11 @@ gulp.task('personalhistoryjson', function (done) {
   if(historyarray.length === files.length) {
     fs.writeFile("./elthelasapp/public/json/personalhistory.json", JSON.stringify({ "model": "History", "documents": historyarray}), "utf-8", function() {
       console.log("writing /elthelasapp/public/json/personalhistory.json");
-      done();
     });
   }
-});
+}
 
-gulp.task('spellsjson', function(done) {
+function spellsjson () {
   function intersect(arrays) {
     return arrays.shift().filter(function(v) {
         return arrays.every(function(a) {
@@ -137,17 +133,9 @@ gulp.task('spellsjson', function(done) {
   if(spellarray.length === files.length) {
     fs.writeFile("./elthelasapp/public/json/spells.json", JSON.stringify({ "model": "Spell", "documents": spellarray }), "utf-8", function() {
       console.log("writing spells.json");
-      done();
     });
   }
-});
-
-//gulp.task('jsonlint', function(done) {
-//  gulp.src("./data/**/*.json")
-//    .pipe(jsonlint())
-//    .pipe(jsonlint.reporter());
-//  done();
-//});
+}
 
 function compiledir(sourcedir, destination, modelName) {
   return new Promise(function(resolve) {
@@ -180,7 +168,7 @@ function jsonmin(sourcefile, destination) {
   })
 }
   
-gulp.task('jsoncompile', function(done) {
+function jsoncompile () {
   console.log("starting");
   Promise.all([
     jsonmin('./data/joeweapons.json', './elthelasapp/public/json/joeweapons.json'),
@@ -204,17 +192,10 @@ gulp.task('jsoncompile', function(done) {
     compiledir("./data/classes", "./elthelasapp/public/json/classes.json", "CharClass"), //classes
     compiledir("./data/territories", "./elthelasapp/public/json/territories.json", "Territories")]).then(function() {
       console.log("all finished");
-      done();
     });
-});
+}
 
-gulp.task('build', function(done) {
-  var build = require('./elthelasapp/build/build.js');
-  console.log("starting build task");
-  build().then(function() {
-    console.log("supposedly done");
-    done();
-  });  
-});
-//task groups
-gulp.task('default', gulp.parallel('spellsjson', 'historyjson', 'personalhistoryjson', 'jsoncompile'));
+spellsjson();
+historyjson();
+personalhistoryjson();
+jsoncompile();
