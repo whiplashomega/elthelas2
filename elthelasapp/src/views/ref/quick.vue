@@ -32,11 +32,11 @@
         <table class="table table-striped">
           <thead>
             <tr>
-              <th>Title</th>
-              <th>Level</th>
-              <th>School</th>
-              <th>Casting Time</th>
-              <th>Duration</th>
+              <th><a href="#" @click.stop="spelltable.sortBy = 'title'; spelltable.sortDesc = !spelltable.sortDesc;">Title</a></th>
+              <th><a href="#" @click.stop="spelltable.sortBy = 'level'; spelltable.sortDesc = !spelltable.sortDesc;">Level</a></th>
+              <th><a href="#" @click.stop="spelltable.sortBy = 'school'; spelltable.sortDesc = !spelltable.sortDesc;">School</a></th>
+              <th><a href="#" @click.stop="spelltable.sortBy = 'castingTime'; spelltable.sortDesc = !spelltable.sortDesc;">Casting Time</a></th>
+              <th><a href="#" @click.stop="spelltable.sortBy = 'duration'; spelltable.sortDesc = !spelltable.sortDesc;">Duration</a></th>
               <th>Tags</th>
             </tr>
             <tr>
@@ -1257,19 +1257,28 @@
           <p><strong>Weight: </strong>{{ gearModal.Weight }}</p>
           <div v-html="marked.parse(gearModal.Description)"></div>
         </modal>
-        <b-table show-empty
-                 :striped="true" :bordered="false"
-                 :responsive="true"
-                 stacked="sm"
-                 :items="equipment"
-                 :fields="equipmenttable.fields"
-                 :filter="equipmenttable.filter"
-                 :sort-by.sync="equipmenttable.sortBy"
-                 :sort-desc.sync="equipmenttable.sortDesc">
-          <template v-slot:cell(Item)="row">
-            <a :title="row.item.Description" href="#" @click.stop="adventuringGearInfo(row.item, row.index, $event.target)">{{ row.value }}</a>
-          </template>
-        </b-table>
+        <table class="table table-striped table-responsive">
+            <thead>
+              <tr>
+                <th><a href="#" @click.stop="this.equipmenttable.sortBy='Item';this.equipmenttable.sortDesc = !this.equipmenttable.sortDesc">
+                  Item
+                </a></th>
+                <th><a href="#" @click.stop="this.equipmenttable.sortBy='Cost';this.equipmenttable.sortDesc = !this.equipmenttable.sortDesc">
+                  Cost (gp)
+                </a></th>
+                <th><a href="#" @click.stop="this.equipmenttable.sortBy='Weight';this.equipmenttable.sortDesc = !this.equipmenttable.sortDesc">
+                  Weight
+                </a></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="item in filterequipment" :key="item.Item">
+                <td><a href="#" @click.stop="adventuringGearInfo(item)">{{item.Item}}</a></td>
+                <td>{{item.Cost}}</td>
+                <td>{{item.Weight}}</td>
+              </tr>
+            </tbody>
+          </table>
       </b-tab>
       <b-tab index='8' title="Armor">
         <h3>Armor</h3>
@@ -1285,16 +1294,56 @@
             </b-input-group>
           </b-col>
         </b-row>
-        <b-table show-empty
-                 :striped="true" :bordered="false"
-                 :responsive="true"
-                 stacked="sm"
-                 :items="armor"
-                 :fields="armortable.fields"
-                 :filter="armortable.filter"
-                 :sort-by.sync="armortable.sortBy"
-                 :sort-desc.sync="armortable.sortDesc">
-        </b-table>
+        <table class="table table-striped table-responsive">
+            <thead>
+              <tr>
+                <th><a href="#" @click.stop="this.armortable.sortBy='Armor';this.armortable.sortDesc = !this.armortable.sortDesc">
+                  Armor
+                </a></th>
+                <th><a href="#" @click.stop="this.armortable.sortBy='Type';this.armortable.sortDesc = !this.armortable.sortDesc">
+                  Type
+                </a></th>
+                <th><a href="#" @click.stop="this.armortable.sortBy='Material';this.armortable.sortDesc = !this.armortable.sortDesc">
+                  Material
+                </a></th>
+                <th><a href="#" @click.stop="this.armortable.sortBy='AC';this.armortable.sortDesc = !this.armortable.sortDesc">
+                  AC
+                </a></th>
+                <th><a href="#" @click.stop="this.armortable.sortBy='Strength';this.armortable.sortDesc = !this.armortable.sortDesc">
+                  Strength
+                </a></th>
+                <th><a href="#" @click.stop="this.armortable.sortBy='Stealth';this.armortable.sortDesc = !this.armortable.sortDesc">
+                  Stealth
+                </a></th>
+                <th><a href="#" @click.stop="this.armortable.sortBy='Weight';this.armortable.sortDesc = !this.armortable.sortDesc">
+                  Weight
+                </a></th>
+                <th><a href="#" @click.stop="this.armortable.sortBy='Resistance';this.armortable.sortDesc = !this.armortable.sortDesc">
+                  Resistance
+                </a></th>
+                <th><a href="#" @click.stop="this.armortable.sortBy='Price';this.armortable.sortDesc = !this.armortable.sortDesc">
+                  Price (gp)
+                </a></th>
+                <th><a href="#" @click.stop="this.armortable.sortBy='Time to Craft';this.armortable.sortDesc = !this.armortable.sortDesc">
+                  Time to Craft
+                </a></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="item in filterarmor" :key="item.Armor + item.Material">
+                <td>{{item.Armor}}</td>
+                <td>{{item.Type}}</td>
+                <td>{{item.Material}}</td>
+                <td>{{item.AC}}</td>
+                <td>{{item.Strength}}</td>
+                <td>{{item.Stealth}}</td>
+                <td>{{item.Weight}}</td>
+                <td>{{item.Resistance}}</td>
+                <td>{{item.Price}}</td>
+                <td>{{item['Time to Craft']}}</td>
+              </tr>
+            </tbody>
+          </table>
       </b-tab>
       <b-tab index='9' title="Weapons">
         <h3>Weapons</h3>
@@ -1310,16 +1359,40 @@
             </b-input-group>
           </b-col>
         </b-row>
-        <b-table show-empty
-                 :striped="true" :bordered="false"
-                 :responsive="true"
-                 stacked="sm"
-                 :items="weapons"
-                 :fields="weapontable.fields"
-                 :filter="weapontable.filter"
-                 :sort-by.sync="weapontable.sortBy"
-                 :sort-desc.sync="weapontable.sortDesc">
-        </b-table>
+        <table class="table table-striped table-responsive">
+            <thead>
+              <tr>
+                <th><a href="#" @click.stop="this.weapontable.sortBy='Name';this.weapontable.sortDesc = !this.weapontable.sortDesc">
+                  Weapon
+                </a></th>
+                <th><a href="#" @click.stop="this.weapontable.sortBy='Type';this.weapontable.sortDesc = !this.weapontable.sortDesc">
+                  Type
+                </a></th>
+                <th><a href="#" @click.stop="this.weapontable.sortBy='Properties';this.weapontable.sortDesc = !this.weapontable.sortDesc">
+                  Properties
+                </a></th>
+                <th><a href="#" @click.stop="this.weapontable.sortBy='Damage';this.weapontable.sortDesc = !this.weapontable.sortDesc">
+                  Damage
+                </a></th>
+                <th><a href="#" @click.stop="this.weapontable.sortBy='Cost';this.weapontable.sortDesc = !this.weapontable.sortDesc">
+                  Cost (gp)
+                </a></th>
+                <th><a href="#" @click.stop="this.weapontable.sortBy='Weight';this.weapontable.sortDesc = !this.weapontable.sortDesc">
+                  Weight
+                </a></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="item in filterweapons" :key="item.Name">
+                <td>{{item.Name}}</td>
+                <td>{{item.Type}}</td>
+                <td>{{item.Properties}}</td>
+                <td>{{item.Damage}}</td>
+                <td>{{item.Cost}}</td>
+                <td>{{item.Weight}}</td>
+              </tr>
+            </tbody>
+          </table>
       </b-tab>
       <b-tab index='10' title="Advanced Weapons">
         <h3>Advanced Weapons (Homebrew)</h3>
@@ -1338,7 +1411,7 @@
         <input type="text" class="form-control" v-model="homebrewweaponstable.filter" placeholder="Filter" />
         <table class="table table-striped table-responsive">
           <thead>
-            <th v-for="field in homebrewweaponstable.fields">
+            <th v-for="field in homebrewweaponstable.fields" :key="field">
               <a href="#" @click.stop="changehwSort(field.key)">{{ field.label }}
                 <span v-if="homebrewweaponstable.sortBy == field.key && homebrewweaponstable.sortDesc == false">&uarr;</span>
                 <span v-if="homebrewweaponstable.sortBy == field.key && homebrewweaponstable.sortDesc == true">&darr;</span>

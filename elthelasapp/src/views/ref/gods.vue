@@ -5,10 +5,15 @@
         <h2>Gods Quick Ref Table</h2>
         <table class="table table-sm table-striped">
           <thead>
-            <tr><th>Symbol</th><th>Name</th><th>Portfolio</th><th>Domains</th><th>Alignment</th></tr>
+            <tr>
+              <th>Symbol</th>
+              <th><a href="#" @click.stop="sortBy='name';sortDesc = !sortDesc">Name</a></th>
+              <th><a href="#" @click.stop="sortBy='domains';sortDesc = !sortDesc">Portfolio</a></th>
+              <th><a href="#" @click.stop="sortBy='domains5';sortDesc = !sortDesc">Domains</a></th>
+              <th><a href="#" @click.stop="sortBy='alignment';sortDesc = !sortDesc">Alignment</a></th></tr>
           </thead>
           <tbody>
-            <tr v-for="god in gods" :key="god.id">
+            <tr v-for="god in sortGods" :key="god.id">
               <td :style="'background-image: url(' + god.symbolimage + ');max-height:30px;width:auto;background-size:contain;background-repeat: no-repeat;'" :title="GodByName.holysymbol"></td>
               <td>{{ god.name }}</td>
               <td>{{ god.domains }}</td>
