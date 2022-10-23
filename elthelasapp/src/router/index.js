@@ -370,7 +370,7 @@ const router = createRouter({
       path: "/tools/strongholdbuilder",
       name: "Stronghold Builder",
       components: {
-        default: () => import("@/views/campaign/strongholdBuilder.vue"),
+        default: () => import("@/views/campaign/strongholdbuilder.vue"),
       },
       meta: {
         title: "Stronghold Builder",
