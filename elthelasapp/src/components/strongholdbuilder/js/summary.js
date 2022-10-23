@@ -1,7 +1,7 @@
-import { useStrongholdStore, useUserStore } from '@/stores/index';
-import Decimal from 'decimal.js';
-import { storeToRefs } from 'pinia';
-import modal from '@/components/global/modal.vue';
+import { useStrongholdStore, useUserStore } from "@/stores/index";
+import Decimal from "decimal.js";
+import { storeToRefs } from "pinia";
+import modal from "@/components/global/modal.vue";
 function randNbm() {
   let u = 0;
   let v = 0;
@@ -14,40 +14,104 @@ function randNbm() {
 }
 
 export default {
-  setup () {
+  setup() {
     const strongholdStore = useStrongholdStore();
     const userStore = useUserStore();
-    
-    const { strongholds: allStrongholds, availableStaffBeds, calcTotalRevenue, gameDate,
-            maxLaborers, netRevenue, stronghold, totalStorage, unrest, usedStorage,
-            totalHousing, getPop, staffList, nonstaffPop, staffBeds
+
+    const {
+      strongholds: allStrongholds,
+      availableStaffBeds,
+      calcTotalRevenue,
+      gameDate,
+      maxLaborers,
+      netRevenue,
+      stronghold,
+      totalStorage,
+      unrest,
+      usedStorage,
+      totalHousing,
+      getPop,
+      staffList,
+      nonstaffPop,
+      staffBeds,
     } = storeToRefs(strongholdStore);
     const { getUserInfo: userinfo } = userStore;
-    const { newStronghold, buyResource, getStrongholds, loadStronghold, loadStrongholdById,
-            saveStronghold, saveNewStronghold, deleteStronghold, addToTreasury, addImprovement
+    const {
+      newStronghold,
+      buyResource,
+      getStrongholds,
+      loadStronghold,
+      loadStrongholdById,
+      saveStronghold,
+      saveNewStronghold,
+      deleteStronghold,
+      addToTreasury,
+      addImprovement,
     } = strongholdStore;
     return {
-      allStrongholds, availableStaffBeds, calcTotalRevenue, gameDate, maxLaborers,
-      netRevenue, stronghold, totalStorage, unrest, usedStorage, totalHousing,
-      getPop, staffList, nonstaffPop, staffBeds, userinfo,
-      
-      newStronghold, buyResource, getStrongholds, loadStronghold, loadStrongholdById,
-      saveStronghold, saveNewStronghold, deleteStronghold, addToTreasury, addImprovement
+      allStrongholds,
+      availableStaffBeds,
+      calcTotalRevenue,
+      gameDate,
+      maxLaborers,
+      netRevenue,
+      stronghold,
+      totalStorage,
+      unrest,
+      usedStorage,
+      totalHousing,
+      getPop,
+      staffList,
+      nonstaffPop,
+      staffBeds,
+      userinfo,
+
+      newStronghold,
+      buyResource,
+      getStrongholds,
+      loadStronghold,
+      loadStrongholdById,
+      saveStronghold,
+      saveNewStronghold,
+      deleteStronghold,
+      addToTreasury,
+      addImprovement,
     };
   },
-  data () {
+  data() {
     return {
       newmodal: { isActive: true, title: "New/Load" },
       dayofweek: "Godsday",
-      dayNames: ["Godsday", "Elvesday", "Gnomesday", "Dragonsday", "Mansday", "Dwarvesday", "Orcsday"],
-      monthNames: ["Neradan", "Dorunor", "Trimalan", "Sylvanus", "Gaiana", "Alohiman", "Coranus", "Moltyr", "Saris", "Maridia", "Tockra", "Amatherin"]
+      dayNames: [
+        "Godsday",
+        "Elvesday",
+        "Gnomesday",
+        "Dragonsday",
+        "Mansday",
+        "Dwarvesday",
+        "Orcsday",
+      ],
+      monthNames: [
+        "Neradan",
+        "Dorunor",
+        "Trimalan",
+        "Sylvanus",
+        "Gaiana",
+        "Alohiman",
+        "Coranus",
+        "Moltyr",
+        "Saris",
+        "Maridia",
+        "Tockra",
+        "Amatherin",
+      ],
     };
   },
   components: {
-    modal
+    modal,
   },
   methods: {
-    newDay () {
+    newDay() {
       // reduce food subsidies if necessary
       if (this.stronghold.laws.foodSubsidies > this.stronghold.resources.food) {
         this.stronghold.laws.foodSubsidies = this.stronghold.resources.food;
@@ -65,11 +129,17 @@ export default {
         }
       }
       // gold revenue
-      this.addToTreasury({ changeby: this.netRevenue, record: "daily net revenue" });
+      this.addToTreasury({
+        changeby: this.netRevenue,
+        record: "daily net revenue",
+      });
       // resource revenue
       let rev = this.calcTotalRevenue;
       for (let key in this.stronghold.resources) {
-        this.stronghold.resources[key] = Math.round((this.stronghold.resources[key] + Number(rev[key])) * 100) / 100;
+        this.stronghold.resources[key] =
+          Math.round(
+            (this.stronghold.resources[key] + Number(rev[key])) * 100
+          ) / 100;
         if (this.stronghold.resources[key] < 0) {
           this.stronghold.resources[key] = 0;
         }
@@ -111,43 +181,81 @@ export default {
       });
       // clear finished projects
       finished.forEach((a) => {
-        this.stronghold.construction.splice(this.stronghold.construction.indexOf(a), 1);
+        this.stronghold.construction.splice(
+          this.stronghold.construction.indexOf(a),
+          1
+        );
       });
       // run weather randomizer
       this.calcWeather();
-      let dayselapsedSinceCalendarStart = this.stronghold.gameYear * 365 + this.stronghold.gameMonth * 30 + this.stronghold.gameDay;
+      let dayselapsedSinceCalendarStart =
+        this.stronghold.gameYear * 365 +
+        this.stronghold.gameMonth * 30 +
+        this.stronghold.gameDay;
       this.dayofweek = this.dayNames[dayselapsedSinceCalendarStart % 7];
       this.month = this.monthNames[this.stronghold.gameMonth - 1];
-      alert("A new day has begun. It is the " + this.stronghold.gameDay + "th day of " + this.month + ", " + this.dayofweek + ". it is " + this.stronghold.currentTemperature + " degrees outside. " + this.stronghold.rainString + ". The average windspeed is " + this.stronghold.windSpeed + " mph");
+      alert(
+        "A new day has begun. It is the " +
+          this.stronghold.gameDay +
+          "th day of " +
+          this.month +
+          ", " +
+          this.dayofweek +
+          ". it is " +
+          this.stronghold.currentTemperature +
+          " degrees outside. " +
+          this.stronghold.rainString +
+          ". The average windspeed is " +
+          this.stronghold.windSpeed +
+          " mph"
+      );
     },
-    calcWeather () {
+    calcWeather() {
       let season = 3;
       let avgTemp = Number(this.stronghold.laws.temperature);
       if (this.stronghold.gameMonth < 3 || this.stronghold.gameMonth > 11) {
         season = 4;
-      } else if (this.stronghold.gameMonth < 2 && this.stronghold.gameMonth < 6) {
+      } else if (
+        this.stronghold.gameMonth < 2 &&
+        this.stronghold.gameMonth < 6
+      ) {
         season = 1;
-      } else if (this.stronghold.gameMonth > 5 && this.stronghold.gameMonth < 9) {
+      } else if (
+        this.stronghold.gameMonth > 5 &&
+        this.stronghold.gameMonth < 9
+      ) {
         season = 2;
       }
-      if ((season === 2 && this.stronghold.laws.lattitude >= 0) || (season === 4 && this.stronghold.laws.lattitude < 0)) { // summer
+      if (
+        (season === 2 && this.stronghold.laws.lattitude >= 0) ||
+        (season === 4 && this.stronghold.laws.lattitude < 0)
+      ) {
+        // summer
         avgTemp += 20;
-        if (this.stronghold.laws.continental && Math.abs(this.stronghold.laws.lattitude) > 30) {
+        if (
+          this.stronghold.laws.continental &&
+          Math.abs(this.stronghold.laws.lattitude) > 30
+        ) {
           avgTemp += 15;
         }
-      } else if (season === 4 || season === 2) { // winter
+      } else if (season === 4 || season === 2) {
+        // winter
         avgTemp -= 20;
-        if (this.stronghold.laws.continental && Math.abs(this.stronghold.laws.lattitude) > 30) {
+        if (
+          this.stronghold.laws.continental &&
+          Math.abs(this.stronghold.laws.lattitude) > 30
+        ) {
           avgTemp -= 15;
         }
       }
-      let minTemp = avgTemp - 30 - (this.stronghold.laws.continental * 10);
-      let maxTemp = avgTemp + 30 + (this.stronghold.laws.continental * 10);
+      let minTemp = avgTemp - 30 - this.stronghold.laws.continental * 10;
+      let maxTemp = avgTemp + 30 + this.stronghold.laws.continental * 10;
       let range = maxTemp - minTemp;
       let temperature = Math.floor(randNbm() * range) + minTemp;
       let rainChance = (2.75 * this.stronghold.laws.rainfall) / 365;
       let rainString = "No precipitation";
-      if (Math.random() < rainChance) { // rainy day
+      if (Math.random() < rainChance) {
+        // rainy day
         let rainStrengthNum = Math.random();
         if (rainStrengthNum < 0.33) {
           rainString = "Scattered showers occur throughout the day";
@@ -157,7 +265,8 @@ export default {
         } else if (rainStrengthNum < 0.5) {
           rainString = "A steady rain falls throughout the day";
           if (temperature < 32) {
-            rainString = "An inch or two of snow falls over the course of the day";
+            rainString =
+              "An inch or two of snow falls over the course of the day";
           }
         } else if (rainStrengthNum < 0.67) {
           rainString = "A storm passed through overnight";
@@ -173,7 +282,9 @@ export default {
       }
       this.stronghold.currentTemperature = temperature;
       this.stronghold.rainString = rainString;
-      this.stronghold.windSpeed = Math.floor(Math.random() * 20) + (Math.random() > 0.75 ? Math.floor(Math.random() * 30) : 0);
-    }
-  }
+      this.stronghold.windSpeed =
+        Math.floor(Math.random() * 20) +
+        (Math.random() > 0.75 ? Math.floor(Math.random() * 30) : 0);
+    },
+  },
 };
