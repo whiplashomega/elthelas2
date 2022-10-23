@@ -27,6 +27,15 @@ export default {
         });
       });
       return domains.sort();
+    },
+    sortGods () {
+      return this.gods.sort((a, b) => {
+        if ((a[this.sortBy] > b[this.sortBy] & !this.sortDesc) || (a[this.sortBy] < b[this.sortBy] & this.sortDesc)) {
+          return 1;
+        } else {
+          return -1;
+        }
+      })
     }
   },
   data () {
@@ -36,7 +45,9 @@ export default {
       domain: "",
       SelectedGod: "",
       alignmentGods: [],
-      domainGods: []
+      domainGods: [],
+      sortBy: "name",
+      sortDesc: false
     };
   },
   watch: {

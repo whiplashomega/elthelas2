@@ -63,6 +63,13 @@ export default {
           }
         });
         return passes;
+      }).sort((a, b) => {
+        let sortBy = this.spelltable.sortBy;
+        if ((a[sortBy] > b[sortBy] & !this.spelltable.sortDesc) || (a[sortBy] < b[sortBy] & this.spelltable.sortDesc)) {
+          return 1;
+        } else {
+          return -1;
+        }
       });
       return spells;
     },
@@ -103,6 +110,66 @@ export default {
           }
         }
       });
+    },
+    filterequipment () {
+      return this.equipment.filter((a) => {
+        for (let key in a) {
+          if (a[key].toString().toLowerCase().includes(this.equipmenttable.filter.toLowerCase())) {
+            return true;
+          }
+          if (this.equipmenttable.filter === "") {
+            return true;
+          }
+        }
+      }).sort((a, b) => {
+        let sortBy = this.equipmenttable.sortBy;
+        let sortDesc = this.equipmenttable.sortDesc;
+        if ((a[sortBy] > b[sortBy] && !sortDesc) || (a[sortBy] < b[sortBy] && sortDesc)) {
+          return 1;
+        } else {
+          return -1;
+        }
+      });
+    },
+    filterarmor () {
+      return this.armor.filter((a) => {
+        for (let key in a) {
+          if (a[key].toString().toLowerCase().includes(this.armortable.filter.toLowerCase())) {
+            return true;
+          }
+          if (this.armortable.filter === "") {
+            return true;
+          }
+        }
+      }).sort((a, b) => {
+        let sortBy = this.armortable.sortBy;
+        let sortDesc = this.armortable.sortDesc;
+        if ((a[sortBy] > b[sortBy] && !sortDesc) || (a[sortBy] < b[sortBy] && sortDesc)) {
+          return 1;
+        } else {
+          return -1;
+        }
+      });      
+    },
+    filterweapons () {
+      return this.weapons.filter((a) => {
+        for (let key in a) {
+          if (a[key].toString().toLowerCase().includes(this.weapontable.filter.toLowerCase())) {
+            return true;
+          }
+          if (this.weapontable.filter === "") {
+            return true;
+          }
+        }
+      }).sort((a, b) => {
+        let sortBy = this.weapontable.sortBy;
+        let sortDesc = this.weapontable.sortDesc;
+        if ((a[sortBy] > b[sortBy] && !sortDesc) || (a[sortBy] < b[sortBy] && sortDesc)) {
+          return 1;
+        } else {
+          return -1;
+        }
+      });      
     }
   },
   data: function() {
@@ -125,7 +192,7 @@ export default {
         concFilter: false,
         tagsFilter: "",
         filterValue: "",
-        sortBy: null,
+        sortBy: "title",
         sortDesc: false,
         modalInfo: { title: '', description: '', content: { title: '', level: '', school: '', duration: '', description: '', castingTime: '', tags: [], tagsText: '' } }
       },
@@ -136,7 +203,10 @@ export default {
           { key: "Item", label: "Item", sortable: true },
           { key: "Cost", label: "Cost (gp)", sortable: true },
           { key: "Weight", label: "Weight", sortable: true }
-        ]
+        ],
+        filter: "",
+        sortBy: "Item",
+        sortDesc: false
       },
       armortable: {
         fields: [
@@ -150,7 +220,10 @@ export default {
           { key: "Resistance", label: "Resistance", sortable: true },
           { key: "Price", label: "Price (gp)", sortable: true },
           { key: "Time to Craft", label: "Time to Craft", sortable: true }
-        ]
+        ],
+        filter: "",
+        sortBy: "Armor",
+        sortDesc: false
       },
       homebrewweaponstable: {
         fields: [
@@ -176,7 +249,10 @@ export default {
           { key: "Damage", label: "Damage", sortable: true },
           { key: "Cost", label: "Cost (gp)", sortable: true },
           { key: "Weight", label: "Weight", sortable: true }
-        ]
+        ],
+        filter: "",
+        sortBy: "Name",
+        sortDesc: false
       },
       gearModal: { Item: '', Cost: '', Weight: '', Description: '' }
     };
