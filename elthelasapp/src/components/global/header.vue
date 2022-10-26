@@ -72,7 +72,10 @@
                 User
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a @click="switchTheme()" class="dropdown-item">Switch Theme</a></li>
+              <li><a @click="switchTheme('system')" class="dropdown-item">System Theme<span v-if="darkmode === 'system'"> &check;</span></a></li>
+              <li><a @click="switchTheme('light')" class="dropdown-item">Light Theme<span v-if="darkmode === 'light'"> &check;</span></a></li>
+              <li><a @click="switchTheme('dark')" class="dropdown-item">Dark Theme<span v-if="darkmode === 'dark'"> &check;</span></a></li>
+              <li><hr class="dropdown-divider"></li>
               <li v-if="user.isLoggedIn"><a @click="logout()" class="dropdown-item">Logout</a></li>
               <li v-if="user.isLoggedIn"><a @click="cp.isActive = true" class="dropdown-item">Change Password</a></li>
               <!-- When Logged Out -->

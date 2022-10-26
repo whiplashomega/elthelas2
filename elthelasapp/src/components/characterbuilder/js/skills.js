@@ -47,6 +47,15 @@ export default {
       }
       return true;
     },
+    highlightProf(prof) {
+      if (prof == 0.5) {
+        return "half";
+      } else if (prof == 1) {
+        return "prof";
+      } else if (prof == 2) {
+        return "expert";
+      }
+    },
     rollCheck (modifier) {
       let res = droll.roll('1d20').total;
       let adv = droll.roll('1d20').total;

@@ -5,7 +5,7 @@
         <tr><th>Skill</th><th>Prof?</th><th>Mod</th><th>Magic</th></tr>
       </thead>
       <tbody>
-        <tr v-for="skill in character.skills" :key="skill.name">
+        <tr v-for="skill in character.skills" :key="skill.name" :class="highlightProf(skill.prof)">
           <th>{{ skill.name }}<button v-if="skill.custom" class="btn btn-danger print-hide btn-sm" @click="removeProficiency(skill)">-</button></th>
           <td>
             <select v-model="skill.prof" class="charsheet-num">

@@ -15,11 +15,13 @@ export default {
     
     const logout = user.logout;
     const switchTheme = user.switchTheme;
+    const { darkmode } = storeToRefs(user);
     return {
       globals,
       user,
       logout,
       userCampaigns,
+      darkmode,
       switchTheme,
       getAllCampaignsSilent
     };

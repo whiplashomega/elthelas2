@@ -40,18 +40,17 @@ export default {
     }
   },
   actions: {
-    switchTheme () {
-      if (this.darkmode === "light") {
-        this.darkmode = "dark";
-      } else {
-        this.darkmode = "light";
-      }
+    switchTheme (theme) {
+      this.darkmode = theme;
       localStorage.setItem('themesetting', this.darkmode);
     },
     loadTheme () {
       let temp = localStorage.getItem('themesetting');
-      if (temp === "dark" || temp === "light") {
+      if (temp === "dark" || temp === "light" || temp == "system") {
         this.darkmode = temp;
+      } else {
+        this.darkmode = 'system';
+        localStorage.setItem('themesetting', this.darkmode);
       }
     },
     login (payload) {

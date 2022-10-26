@@ -6,6 +6,8 @@
   font-weight: bold;
 }
 .dark .site-header {
+  background-color: $darknavbackground;
+  color: $darktext;
 }
 .site-header a {
   color: white;
@@ -36,8 +38,7 @@
     }
   }
 }
-
-.light .jumbotron, .dark .jumbotron {  
+.light .jumbotron, .dark .jumbotron, .system .jumbotron {  
   padding: 1rem;
   p {
     clear: both;
@@ -96,7 +97,39 @@
     color: $darkheadertext;
   }
 }
+@media (prefers-color-scheme: light) {
+  .system .jumbotron {
+    background-color: $header;
+    h1 a {
+      color: $headertext;
+    }
+  }  
+}
 
+@media (prefers-color-scheme: dark) {
+  .system .jumbotron {
+    background-color: $darkheader;
+    h1 a {
+      color: $darkheadertext;
+    }
+  }
+  .system .site-header {
+    background-color: $darknavbackground;
+    .dropdown-menu {
+      background-color: $darkbackground;
+      border: 1px solid $darktext;
+      li:hover {
+        background-color: $darknavbackground;
+      }
+      a {
+        color: $darktext;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
   .topbutton {
     border-radius: 0px 0px 4px 4px;
   }

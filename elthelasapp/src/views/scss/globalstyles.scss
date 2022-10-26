@@ -30,6 +30,24 @@
   color: $darktext;
 }
 
+@media (prefers-color-scheme: light) {
+  .system .nav-pills a {
+    background-color: $sidenavbackground;
+    color: $sidenavcolor;
+  }  
+}
+
+@media (prefers-color-scheme: dark) {
+  .system .nav-pills a {
+  background-color: $darksidenavbackground;
+  color: $darksidenavcolor;
+  }
+  .system.fullBody {
+    background-color: $darkbackground;
+    color: $darktext;
+  }  
+}
+
 .handle {
   position: relative;
   display: block;

@@ -23,7 +23,7 @@ export default {
       charCalculators.incrementClassCount(spell, classCounts);
     },
     maxExhaustion () {
-      return max(2, Math.ceil(this.getStatTotal(2) / 2));
+      return Math.max(2, Math.ceil(this.getStatTotal(2) / 2));
     },
     getNumPrepped: () => (classCounts, spells) => {
       return charCalculators.numPrepped(classCounts, spells);
