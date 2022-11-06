@@ -1,5 +1,3 @@
-/* globals localStorage */
-
 import Character from './classes/character';
 import charCalculators from '@/helpers/charcalc';
 import axios from 'axios';

@@ -122,7 +122,7 @@ export default {
         return 0;
       });
       return x.filter((a) => {
-        if ((a.prepared && this.preparedonly) || !this.preparedonly || this.displaylevel === 'cantrip') {
+        if ((a.prepared && this.preparedonly) || !this.preparedonly || this.displayLevel === 'cantrip') {
           return true;
         } else { return false }
       });
