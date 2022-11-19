@@ -3,11 +3,11 @@
     <div class="col-sm-9">
       <!-- Character, Player, Class -->
       <div class="row">
-        <div class="col-sm">
+        <div class="col-sm-6">
           <input type="text" class="charsheet-text" v-model="character.name">
           Character Name
         </div>
-        <div class="col-sm">
+        <div class="col-sm-6">
           <input type="text" class="charsheet-text" v-model="character.player">
           Player
         </div>
@@ -72,7 +72,7 @@
       </div>
     </div>
     <div class="col-sm-3" v-if="!mobile">
-      <img v-if="!character.image" src="https://elthelas-images.herokuapp.com/ddlogo.png" class="ddlogo desktop" />
+      <img v-if="!character.image" src="https://elthelas-images.herokuapp.com/ddlogo.png" class="ddlogo desktop print-hide" />
       <img v-else :src="character.image"
            :alt="character.name" class="ddlogo desktop" />
     </div>

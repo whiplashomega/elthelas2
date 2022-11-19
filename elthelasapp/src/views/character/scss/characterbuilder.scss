@@ -58,6 +58,11 @@
     border-right: none;
   }
 }
+@media print {
+  .print-hide {
+    display: none;
+  }
+}
 .half {
   background-color: lavender;
 }

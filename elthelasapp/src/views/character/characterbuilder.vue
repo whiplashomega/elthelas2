@@ -46,9 +46,6 @@
                 </div>
               </div>
             </div>
-            <div class="print-hide">
-              <loadsave :minimal="false" />
-            </div>
             <div style="page-break-after: always">&nbsp;</div>
             <!-- Spells -->
             <div class="row">
