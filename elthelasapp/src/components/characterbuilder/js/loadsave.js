@@ -19,6 +19,7 @@ export default {
     const updateToServer = characterStore.updateToServer;
     const updateToServerSilent = characterStore.updateToServerSilent;
     const newToServer = characterStore.newToServer;
+    const deleteFromServer = characterStore.deleteFromServer;
     const saveCharacter = characterStore.saveCharacter;
     const loadCharacter = characterStore.loadCharacter;
     const resetCharacter = characterStore.resetCharacter;
@@ -41,6 +42,7 @@ export default {
       saveCharacter,
       loadCharacter,
       resetCharacter,
+      deleteFromServer,
       id
     };
   },
