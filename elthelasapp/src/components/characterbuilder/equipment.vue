@@ -11,7 +11,7 @@
           </h4>
           <div v-for="item in container.equipment" :key="item.id"
                class="smalltext" style="clear:both;">
-            <button type="button" class="print-hide btn-symbol float-left" @click="item.edit.isActive = true">&#9998;</button>
+            <button type="button" class="print-hide btn-symbol float-left" @click="item.edit = { isActive: true, title: item.name }">&#9998;</button>
             <span :class="item.attunement ? 'attuned' : ''" :title="'Item Weight: ' + item.weight + ' lbs, Total Weight ' + item.weight * item.quantity + ' lbs'">
               {{ item.name }}
             </span><input type="number" class="charsheet-num" v-model="item.quantity" /><br />
