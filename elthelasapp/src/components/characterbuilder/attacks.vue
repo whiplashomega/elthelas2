@@ -3,7 +3,7 @@
     <h4>Attacks</h4>
     <div v-for="(attack, index) in character.attacks" :key="index" class="smalltext">
       <b-modal v-model="attack.roll" title="Roll Attack"
-               @ok="attack.roll = false; attack.rolled = false" :modal-class="userinfo.themesetting">
+               @ok="attack.roll = false; attack.rolled = false" :class="userinfo.darkmode">
         <h4>{{ attack.name }}</h4>
         Advantage
         <select class="form-control" v-model="attack.advantage">
@@ -65,7 +65,7 @@
       <span v-if="getDamageBonus(dmg, attack.stat) < 0"> {{ getDamageBonus(dmg, attack.stat) }}</span> {{ dmg.dtype }} damage </span>) Critical Hit on {{ attack.critRange }}.
       <button type="button" class="print-hide btn-symbol" @click="attack.edit = true">&#9998;</button>
       <button type="button" @click="removeAttack(index)" class="print-hide btn btn-sm btn-danger">X</button>
-      <b-modal v-model="attack.edit">
+      <b-modal v-model="attack.edit" :class="userinfo.darkmode">
         Name:
         <input type="text" class="form-control" v-model="attack.name" />
         <input type="checkbox" v-model="attack.prof">Proficient?

@@ -34,4 +34,4 @@
   </div>
 </template>
 <script src="./js/homepage.js"></script>
-<style src="./scss/homepage.scss" lang="scss" scoped></style>
+<style src="@/components/scss/homepage.scss" lang="scss" scoped></style>

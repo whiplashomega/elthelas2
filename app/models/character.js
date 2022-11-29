@@ -20,6 +20,7 @@ var Character = new Schema({
   castlog: { type: Array, default: [] },
   sessions: [],
   bonuscantrips: 0,
+  exhaustion: { type: Number, default: 0 },
   group: { type: String, default: "" },
   pets: [],
   activemodifiers: [],

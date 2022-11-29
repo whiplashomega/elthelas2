@@ -209,6 +209,15 @@
   cursor: pointer; 
 }
 
+.dark .clickable {
+  color: $darklink;
+}
+
+@media (prefers-color-scheme: dark) {
+  .clickable {
+    color: $darklink;
+  }
+}
 .clickable:hover {
   text-decoration:underline;
 }

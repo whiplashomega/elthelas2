@@ -20,6 +20,9 @@ export default {
         return false;
       }
     },
+    themesetting () {
+      return this.darkmode
+    },
     isAdmin: (state) => {
       if (state.loggedin.token) {
         return state.loggedin.admin;

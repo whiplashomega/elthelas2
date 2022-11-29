@@ -35,7 +35,7 @@
             {{ armor.name }}, {{ armor.type }}, AC {{ armorac(armor) }} <input type="checkbox" v-model="armor.equipped" />
             <button type="button" class="print-hide btn-symbol" @click="armor.edit = true">&#9998;</button>
             <button type="button" @click="removeArmor(index)" class="print-hide btn btn-sm btn-danger">X</button>
-            <b-modal v-model="armor.edit" :modal-class="userinfo.themesetting">
+            <b-modal v-model="armor.edit" :class="userinfo.darkmode">
               Name:
               <input type="text" class="form-control" v-model="armor.name" />
               Type:

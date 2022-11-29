@@ -187,7 +187,7 @@
     <loadsavemodals />
     <b-modal v-model="startGuide" title="Getting Started Guide"
              hide-footer size="lg"
-             :modal-class="userinfo.themesetting">
+             :class="userinfo.darkmode">
       <div>
         <p>
           Welcome to the Elthelas Character Builder. To get started building your character follow the instructions below.

@@ -151,8 +151,9 @@
     <h4>Cast Log</h4>
     <div class="smalltext" v-for="(spell, index) in character.castlog" :key="index">
       {{ spell.title }} {{ spell.level }}
-    </div>    <b-modal v-model="spellModal" title="Add Spell"
-                       class="modal-lg" @ok="addSpell(selspell)">
+    </div>    
+    <b-modal v-model="spellModal" title="Add Spell"
+                       class="modal-lg" :class="userinfo.darkmode" @ok="addSpell(selspell)">
       Filter by Text
       <input type="text" class="form-control" v-model="spellfilter" />
       Filter by Level
@@ -204,7 +205,7 @@
     </b-modal>
     <b-modal v-model="spellDetailModal" @ok="spellDetailModal = false"
              id="spellmodal" size="lg"
-             :title="detailspell.title" ok-only>
+             :title="detailspell.title" :class="userinfo.darkmode">
       <h4>
         <strong>{{ detailspell.school }}
           <span v-if="detailspell.level !== 'cantrip'">level </span>{{ detailspell.level.toString() }}

@@ -1,4 +1,4 @@
-@import '../../../node_modules/bootstrap/dist/css/bootstrap.css';
+//@import '../../../node_modules/bootstrap/dist/css/bootstrap.css';
 @import './_vars.scss';
 @import './_bootstrapoverride.scss';
 @import './_layout.scss';
@@ -7,7 +7,7 @@
   min-height: 100vh;
 }
 
-.nav-pill a {
+.nav-pills a {
   padding: 8px 15px;
   margin: 2px 5px;
   border-radius: 4px;
@@ -17,17 +17,97 @@
   }
 }
 
-.light .nav-pill a {
+.sidenav .navitem {
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: $sidenavbackground;
+  a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.light .nav-pills a {
   background-color: $sidenavbackground;
   color: $sidenavcolor;
 }
-.dark .nav-pill a {
+.dark .nav-pills a {
   background-color: $darksidenavbackground;
   color: $darksidenavcolor;
 }
 .dark.fullBody {
   background-color: $darkbackground;
   color: $darktext;
+  padding-bottom: 1px;
+}
+
+.dark .clickable {
+  color: $darklink;
+}
+
+.dark .btn-close, .dark .btn-close:hover {
+  color: white;
+}
+
+.dark .card {
+  color: black;
+}
+.dark .modal-content {
+  background-color: $darkbackground;
+}
+
+.dark .btn-symbol {
+  color: white;
+}
+.dark {
+  --bs-link-color: white;
+  --bs-link-hover-color: #9999ff;
+}
+.dark .sidenav .navitem {
+  background-color: $darkprimary;
+}
+.dark .nav {
+  --bs-nav-link-color: #9999ff;
+  --bs-nav-link-hover-color: #9999ff;
+}
+@media (prefers-color-scheme: light) {
+  .system .nav-pills a {
+    background-color: $sidenavbackground;
+    color: $sidenavcolor;
+  }  
+}
+
+@media (prefers-color-scheme: dark) {
+  .system .nav-pills a {
+  background-color: $darksidenavbackground;
+  color: $darksidenavcolor;
+  }
+  .system.fullBody {
+    background-color: $darkbackground;
+    color: $darktext;
+    padding-bottom: 1px;
+  }
+  .system .clickable {
+    color: $darklink;
+  }
+ .system .btn-close, .system .btn-close:hover {
+    color: white;
+  }
+  .system .card {
+    color: black;
+  }
+  .system .modal-content {
+    background-color: $darkbackground;
+  }
+  .system .btn-symbol {
+    color: white;
+  }
+  .system .nav-link, .system .nav-link:hover {
+    color: $darklink;
+  }
 }
 
 .handle {
@@ -69,3 +149,5 @@ img {
 #pagebody {
   margin-bottom: 60px;
 }
+
+@import "../node_modules/bootstrap/scss/bootstrap";

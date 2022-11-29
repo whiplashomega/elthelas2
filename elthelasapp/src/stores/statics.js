@@ -196,6 +196,9 @@ export default {
           for (var x in spells) {
             try {
               spells[x].tagsText = spells[x].tags.join(', ');
+              if (spells[x].level != "cantrip") {
+                spells[x].level = spells[x].level.splice(4, "");
+              }
             } catch (e) {
               spells[x].tagsText = "";
               console.log(e);
