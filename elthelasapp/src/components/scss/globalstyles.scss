@@ -73,6 +73,11 @@
   --bs-nav-link-color: #9999ff;
   --bs-nav-link-hover-color: #9999ff;
 }
+
+.dark .table {
+  --bs-table-striped-color: white;
+}
+
 @media (prefers-color-scheme: light) {
   .system .nav-pills a {
     background-color: $sidenavbackground;
@@ -108,6 +113,10 @@
   .system .nav-link, .system .nav-link:hover {
     color: $darklink;
   }
+  .system .table {
+    --bs-table-striped-color: white;
+  }
+
 }
 
 .handle {

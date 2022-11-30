@@ -197,7 +197,7 @@ export default {
             try {
               spells[x].tagsText = spells[x].tags.join(', ');
               if (spells[x].level != "cantrip") {
-                spells[x].level = spells[x].level.splice(4, "");
+                spells[x].level = spells[x].level.substring(5);
               }
             } catch (e) {
               spells[x].tagsText = "";
