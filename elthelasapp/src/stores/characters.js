@@ -418,7 +418,7 @@ export default {
       if (document.getElementById('imageload')) {
         var f = document.getElementById('imageload').files[0];
         var r = new FileReader();
-        r.addEventListener("load", function () {
+        r.addEventListener("load", () => {
           this.character.image = r.result;
         }, false);
         if (f) {

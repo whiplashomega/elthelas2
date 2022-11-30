@@ -78,6 +78,7 @@ export default {
   data () {
     return {
       characters: [],
+      newgroup: "",
       groupfilter: "all",
       serverModalProps: { isActive: false, title: "Load Character" },
       loadingModalProps: { isActive: false, title: "Load Character" }
