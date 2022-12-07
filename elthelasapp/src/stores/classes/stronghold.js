@@ -32,7 +32,8 @@ export default function () {
     population: {
       adults: 0,
       invalid: 0,
-      children: 0
+      children: 0,
+      elderly: 0
     },
     autoSell: {
       alcohol: 0,

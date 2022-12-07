@@ -336,9 +336,8 @@ export default {
     },
     getPop() {
       let pop =
-        Number(this.current.population.adults) +
-        Number(this.current.population.children) +
-        Number(this.current.population.invalid) +
+        this.nonstaffPop +
+        this.current.privateEmployees.length +
         this.current.staff.length;
       return pop;
     },
@@ -808,7 +807,10 @@ export default {
       return Math.max(Math.round(unrest), 0);
     },
     nonstaffPop() {
-      return this.getPop - this.current.staff.length;
+      return Number(this.current.population.adults) +
+      Number(this.current.population.children) +
+      Number(this.current.population.invalid) +
+      Number(this.current.population.elderly);
     },
     urbanLand() {
       let land = 0;
@@ -871,7 +873,7 @@ export default {
       });
     },
     newStronghold() {
-      this.current = new Stronghold();
+      this.current = Stronghold();
     },
     getAllStrongholds() {
       return axios.get("/strongholds").then((res) => {
@@ -937,7 +939,7 @@ export default {
       var x = Math.round(this.current.treasury * 100);
       this.current.treasury = x / 100;
     },
-    deleteStronghold: ({ stronghold }) => {
+    deleteStronghold ({ stronghold }) {
       let check = window.confirm(
         "Are you sure you want to delete " + stronghold.castleName
       );

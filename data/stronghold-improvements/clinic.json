@@ -1,7 +1,7 @@
 {
   "id": "clinic",
   "name": "Clinic",
-  "benefit": "Cleric employed heals 4d6 people per day.",
+  "benefit": "Cleric employed heals 1d6 people per day, and the natural recovery rate is tripled.",
   "staff": [{ "name": "Cleric", "num": 1, "cur": 0 }],
   "goldCost": 200,
   "resourceCost":  {

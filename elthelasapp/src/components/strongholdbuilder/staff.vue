@@ -32,6 +32,13 @@
               </td>
             </tr>
             <tr>
+              <td>Elderly</td>
+              <td>
+                <input type="number" v-model="stronghold.population.elderly"
+                       class="form-control" min="0" />
+              </td>
+            </tr>
+            <tr>
               <td>Total Population</td>
               <td>
                 {{ getPop }}

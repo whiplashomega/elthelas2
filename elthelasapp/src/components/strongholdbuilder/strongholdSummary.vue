@@ -3,7 +3,7 @@
     <div class="row">
       <h1 class="col-sm-5">
         <div class="btn-group">
-          <button class="btn btn-warning" @click="newmodal.isActive = true">
+          <button class="btn btn-warning" @click="newmodal = true">
             New / Load
           </button>
           <button class="btn btn-success" @click="saveNewStronghold()">
@@ -72,7 +72,7 @@
     <div class="alert alert-danger" v-if="usedStorage >= totalStorage">
       At Maximum Storage, newly stockpiled resources may be discarded
     </div>
-    <modal :modalProps="newmodal">
+    <b-modal v-model="newmodal">
       Castle Name
       <input type="text" v-model="stronghold.castleName" class="form-control" />
       Town Name
@@ -142,7 +142,8 @@
           </button>
         </li>
       </ul>
-    </modal>
+      <button class="btn btn-secondary" @click="newStronghold()">New/Clear</button>
+    </b-modal>
   </div>
 </template>
 <script src="./js/summary.js"></script>
