@@ -14,7 +14,16 @@
     <p>The Transitive Planes are not "true" planes in the same sense as the others. While it is possible to travel to them, they exist as the spaces between planes. As such they can be used to connect to other planes of existence.</p>
     
     <h4>Etherium, or the Ethereal Plane</h4>
-    <p><strong>Home of: </strong> Mystikinae</p>
+    <h5>Traits</h5>
+    <ul>
+      <li><strong>Home of: </strong>Mystikinae</li>
+      <li><strong>Gravity: </strong>No Gravity</li>
+      <li><strong>Time: </strong>Normal</li>
+      <li><strong>Morphism: </strong>Normal</li>
+      <li><strong>Elementalism: </strong>None</li>
+      <li><strong>Magic: </strong>Normal</li>
+      <li><strong>Special: </strong></li>
+    </ul>
     <p>
       The Etherium, also called the Etherial Plane, is a hazy reflection of the material plane, where distances and time are not absolute, and it is almost impossible to navigate. It is possible to see easily from Etherium to Elthelas, but nearly impossible to see Etherium from Elthelas. Etherium is the easiest plane to pass into or out of from the Material.
     </p>
@@ -35,6 +44,16 @@
     </ul>
     
     <h4>Elemental Chaos</h4>
+    <h5>Traits</h5>
+    <ul>
+      <li><strong>Home of: </strong>none.</li>
+      <li><strong>Gravity: </strong>Subjective Directional Gravity</li>
+      <li><strong>Time: </strong>Erratic</li>
+      <li><strong>Morphism: </strong>Highly Morphic</li>
+      <li><strong>Elementalism: </strong>All</li>
+      <li><strong>Magic: </strong>Wild</li>
+      <li><strong>Special: </strong></li>
+    </ul>
     <p>
       The sea of raw elemental energy that fills the gap between the elemental planes and the inner planes, as well as between the elemental planes and the planes of concept. This realm is chaotic, but not random.
     </p>
@@ -51,6 +70,16 @@
     </ul>
 
     <h4>Logos</h4>
+    <h5>Traits</h5>
+    <ul>
+      <li><strong>Home of: </strong>none.</li>
+      <li><strong>Gravity: </strong>Light Subjective Directional Gravity</li>
+      <li><strong>Time: </strong>Timeless</li>
+      <li><strong>Morphism: </strong>Static</li>
+      <li><strong>Elementalism: </strong>None</li>
+      <li><strong>Magic: </strong>Limited to Planar Travel only.</li>
+      <li><strong>Special: </strong></li>
+    </ul>
     <p><strong>Home of: </strong> Nera</p>
     <p>Logos the great plane of ideas. It is said nothing exists that does not have its perfected form in Logos. Logos is separated into 4 sections, at the center of which is the Confluence, An island on which Nera's palace sits. The four quadrants around it are the Negative Energy Sea, which flows from Necronus; the Positive Energy Sea, which flows from Celestia; The Plains of Stillness, containing the road to Mechanus, and The Seas of Chance, a chaotic realm that flows out from Mercuria.</p>
     <p>Logos connects the inner planes of concept with the elemental planes. It is sometimes posited that it is the mixing of Logos and the Elemental Chaos that allowed the elemental planes to form, with Logos bringing form and predictability to the raw energy of the Elemental Chaos.</p>
@@ -67,7 +96,16 @@
     </ul>
     
     <h4>Astral Sea</h4>
-    <p><strong>Home of: </strong> Maris</p>
+    <h5>Traits</h5>
+    <ul>
+      <li><strong>Home of: </strong>Maris.</li>
+      <li><strong>Gravity: </strong>none.</li>
+      <li><strong>Time: </strong>Timeless</li>
+      <li><strong>Morphism: </strong>Highly Morphic</li>
+      <li><strong>Elementalism: </strong>None</li>
+      <li><strong>Magic: </strong>Normal</li>
+      <li><strong>Special: </strong></li>
+    </ul>
     <p>The Astral Sea connects the various planes of concept together as well as connecting them to the material. It is easily traversed, being a plane of pure thought, but traveling through the Astral Sea to a particular location on purpose is almost impossible, as the portals do not stay put, and can open and close randomly.</p>
     <h5>Planes Reachable from the Astral Sea</h5>
     <ul>
@@ -88,7 +126,16 @@
     </ul>
 
     <h4>The Far Realm</h4>
-    <p><strong>Home of: </strong> Fa'atasi</p>
+    <h5>Traits</h5>
+    <ul>
+      <li><strong>Home of: </strong>Fa'atasi.</li>
+      <li><strong>Gravity: </strong>Strong Subjective Directional Gravity</li>
+      <li><strong>Time: </strong>Timeless</li>
+      <li><strong>Morphism: </strong>Highly Morphic</li>
+      <li><strong>Elementalism: </strong>None</li>
+      <li><strong>Magic: </strong>Wild Magic.</li>
+      <li><strong>Special: </strong></li>
+    </ul>
     <p>
       A realm of twisted minds, madness, and beings beyond the comprehension of mortals. Ocassionally a being from here will become interested in the mortal realm and reach out to touch mortal minds. These beings take many forms and titles, and their interests do not align with anything in particular besides their own curiosity, but those touched by them invariably suffer insanities that put them beyond the mortal.
     </p>
@@ -113,6 +160,20 @@
     </ul>
 
     <h4>The Nothingness Beyond</h4>
+    <h5>Traits</h5>
+    <ul>
+      <li><strong>Home of: </strong>none.</li>
+      <li><strong>Gravity: </strong>None</li>
+      <li><strong>Time: </strong>Timeless</li>
+      <li><strong>Morphism: </strong>Sentient</li>
+      <li><strong>Elementalism: </strong>None</li>
+      <li><strong>Magic: </strong>Dead Magic.</li>
+      <li><strong>Special: </strong></li>
+    </ul>
+    <h5>Planes Reachable from The Nothingness Beyond</h5>
+    <ul>
+      <li>None</li>
+    </ul>
     <p><strong>Home of: </strong> Zhuul</p>
     <p>Where the Far Realm is a land full of madness beyond comprehension, aberrations, and beings beyond the comprehension of mortals, the nothingness beyond is a great empty space. A void where nothing at all can survive. Zhuul embodies this concept of nothingness, and as such has no real home on this plane, but rather encompasses all of it, and none of it. For he is nothingness, and The Nothingness Beyond contains nothing.</p>
     <p>The Nothingness is a transitive plane in that it is not a true singular place. However, no one knows if there is anything beyond the nothing, as it is not traversable by any known means.</p>
@@ -122,20 +183,60 @@
       These are the planes derived from the essence of Gaian, the heart of creation. The geography of each of these planes is mirrored between them, the root of which is the Material, and all the others being reflections of that.
     </p>
     <h4>Elthelas, the Material Plane</h4>
-    <p><strong>Home of: </strong> Gaian</p>
+    <h5>Traits</h5>
+    <ul>
+      <li><strong>Home of: </strong>Gaian</li>
+      <li><strong>Gravity: </strong>Normal</li>
+      <li><strong>Time: </strong>Normal</li>
+      <li><strong>Morphism: </strong>Alterable Morphic</li>
+      <li><strong>Elementalism: </strong>None</li>
+      <li><strong>Magic: </strong>Normal</li>
+      <li><strong>Special: </strong></li>
+    </ul>
     <p>
       The central plane of creation, home of Gaian and the place where physics behaves most like you or I would expect.
     </p>
     <h4>The Shadowfell</h4>
+    <h5>Traits</h5>
+    <ul>
+      <li><strong>Home of: </strong>Hije</li>
+      <li><strong>Gravity: </strong>Normal</li>
+      <li><strong>Time: </strong>Erratic</li>
+      <li><strong>Morphism: </strong>Alterable Morphic</li>
+      <li><strong>Elementalism: </strong>None</li>
+      <li><strong>Magic: </strong>Normal</li>
+      <li><strong>Special: </strong></li>
+    </ul>
     <p><strong>Home of: </strong> Hije</p>
     <p>
       A dreary realm of darkness and shadow, the shadowfell drains emotion and memory from those who go there.
     </p>
     <h4>Aposynthesi</h4>
+    <h5>Traits</h5>
+    <ul>
+      <li><strong>Home of: </strong>Interitus</li>
+      <li><strong>Gravity: </strong>Normal</li>
+      <li><strong>Time: </strong>Normal</li>
+      <li><strong>Morphism: </strong>Alterable Morphic</li>
+      <li><strong>Elementalism: </strong>Mildly Negative</li>
+      <li><strong>Magic: </strong>Healing and growth magic impeded</li>
+      <li><strong>Special: </strong></li>
+    </ul>
     <p><strong>Home of: </strong> Interitus</p>
     <p>
       The realm of decay, Aposynthesi is a place of creaturest that feed off of death. Full of endless swamps of decaying putrid matter and fungus.
     </p>
+    <p>
+      Aposynthesi has the following mechanical effects on players:
+    </p>
+    <ul>
+      <li>Long rests do not restore a players hit points except by the spending of hit dice.</li>
+      <li>The effect of magic healing is halved.</li>
+      <li>Undead creatures have a +1 to hit and damage, and their hit points increased by 50%.</li>
+      <li>Celestial creatures have a -1 to hit and damage, and their hit points reduced by 25%.</li>
+      <li>Speed of non-undead creatures is reduced by 5 ft.</li>
+      <li>Non-native, non-undead creatures gain a level of exhaustion for each day spent on the plane. Exhaustion gained in this way cannot be removed by normal rest.</li>
+    </ul>
     <h4>Discotechnus</h4>
     <p><strong>Home of: </strong> Funkus</p>
     <p>
