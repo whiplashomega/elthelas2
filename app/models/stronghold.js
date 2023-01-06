@@ -17,7 +17,8 @@ var stronghold = new Schema({
   population: {
     invalid: 0,
     children: 0,
-    adults: 0
+    adults: 0,
+    elderly: 0
   },
   autoSell: {},
   animals: [],

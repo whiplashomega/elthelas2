@@ -65,7 +65,6 @@ export default {
       nonstaffPop,
       staffBeds,
       userinfo,
-
       newStronghold,
       buyResource,
       getStrongholds,
@@ -80,7 +79,7 @@ export default {
   },
   data() {
     return {
-      newmodal: { isActive: true, title: "New/Load" },
+      newmodal: true,
       dayofweek: "Godsday",
       dayNames: [
         "Godsday",
@@ -194,6 +193,84 @@ export default {
         this.stronghold.gameDay;
       this.dayofweek = this.dayNames[dayselapsedSinceCalendarStart % 7];
       this.month = this.monthNames[this.stronghold.gameMonth - 1];
+      // demographic changes
+      let adultProbability = this.stronghold.population.children / 6570; // 18 years as a child
+      let deathProbability = this.stronghold.population.elderly / 5475; // average 10 years as retired
+      let birthProbability = (this.stronghold.population.adults * 0.5 * (0.15 / 365)); // adults * percent women * (birth rate per woman per year / 365)
+      birthProbability = Math.max(this.stronghold.population.adults * 0.00001, birthProbability * (1 - (this.unrest / 100))); // unrest reduces birth rates
+      let retireProbability = this.stronghold.population.adults / 17155; // 47 years as an adult before retirement
+      let sickDeathProbability = this.stronghold.population.invalid / 1000;
+      let hasClinic = this.stronghold.improvements.some((a) => {
+        return a.id === "clinic";
+      })
+      let sickRecoverProbability = this.stronghold.population.invalid / 50 * (hasClinic ? 3 : 1);
+      let getSickProbability = this.stronghold.population.adults / 200;
+      let numAdults = 0;
+      let numBirths = 0;
+      let numDeaths = 0;
+      let numRetirements = 0;
+      let numSickDeaths = 0;
+      let numSickRecoveries = hasClinic ? Math.ceil(Math.random() * 6) : 0;
+      let numGetSick = 0;
+      let rand = Math.random();
+      while ((1 - rand) < adultProbability) {
+        numAdults++;
+        rand = Math.random();
+        if (adultProbability > 1) adultProbability--;
+      }
+      rand = Math.random();
+      while ((1 - rand) < deathProbability) {
+        numDeaths++;
+        rand = Math.random();
+        if (deathProbability > 1) deathProbability--;
+      }
+      rand = Math.random();
+      while ((1 - rand) < birthProbability) {
+        numBirths++;
+        rand = Math.random();
+        if (birthProbability > 1) birthProbability--;
+      }
+      rand = Math.random();
+      while ((1 - rand) < retireProbability) {
+        numRetirements++;
+        rand = Math.random();
+        if (retireProbability > 1) retireProbability--;
+      }
+      rand = Math.random();
+      while ((1 - rand) < sickDeathProbability) {
+        numSickDeaths++;
+        rand = Math.random();
+        if (sickDeathProbability > 1) sickDeathProbability--;
+      }
+      rand = Math.random();
+      while ((1 - rand) < sickRecoverProbability) {
+        numSickRecoveries++;
+        rand = Math.random();
+        if (sickRecoverProbability > 1) sickRecoverProbability--;
+      }
+      rand = Math.random();
+      while ((1 - rand) < getSickProbability) {
+        numGetSick++;
+        rand = Math.random();
+        if (getSickProbability > 1) getSickProbability--;
+      }
+      this.stronghold.population.children = Number(this.stronghold.population.children) + numBirths;
+      if (numGetSick > Number(this.stronghold.population.adults)) { numGetSick = Number(this.stronghold.population.adults) }
+      this.stronghold.population.invalid = Number(this.stronghold.population.invalid) + numGetSick;
+      this.stronghold.population.adults = Number(this.stronghold.population.adults) - numGetSick;
+      if (numSickRecoveries > Number(this.stronghold.population.invalid)) { numSickRecoveries = Number(this.stronghold.population.invalid) }
+      this.stronghold.population.invalid -= numSickRecoveries;
+      this.stronghold.population.adults += numSickRecoveries;
+      if (numSickDeaths > Number(this.stronghold.population.invalid)) { numGetSick = Number(this.stronghold.population.invalid) }
+      this.stronghold.population.invalid -= numSickDeaths;
+      if (numRetirements > Number(this.stronghold.population.adults)) { numRetirements = Number(this.stronghold.population.adults) }
+      this.stronghold.population.adults -= numRetirements;
+      this.stronghold.population.elderly = Number(this.stronghold.population.elderly) + numRetirements;
+      if (numDeaths > Number(this.stronghold.population.elderly)) { numDeaths = Number(this.stronghold.population.elderly) }
+      this.stronghold.population.elderly -= numDeaths;
+      if (numAdults > Number(this.stronghold.population.children)) { numAdults = Number(this.stronghold.population.children) }
+      this.stronghold.population.children -= numAdults;
+      this.stronghold.population.adults += numAdults;
       alert(
         "A new day has begun. It is the " +
           this.stronghold.gameDay +
@@ -207,7 +284,14 @@ export default {
           this.stronghold.rainString +
           ". The average windspeed is " +
           this.stronghold.windSpeed +
-          " mph"
+          " mph.\n\nThere were " +
+          numBirths + " births, " +
+          numRetirements + " retirements, " +
+          numSickDeaths + " deaths from disease and injury, " +
+          numSickRecoveries + " people recovered from illness, " +
+          numGetSick + " people became ill or injured, " +
+          numDeaths + " deaths from old age, and " +
+          numAdults + " children reaching adulthood"
       );
     },
     calcWeather() {
