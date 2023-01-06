@@ -238,12 +238,31 @@
       <li>Non-native, non-undead creatures gain a level of exhaustion for each day spent on the plane. Exhaustion gained in this way cannot be removed by normal rest.</li>
     </ul>
     <h4>Discotechnus</h4>
+    <h5>Traits</h5>
+    <ul>
+      <li><strong>Home of: </strong>Funkus</li>
+      <li><strong>Gravity: </strong>Normal</li>
+      <li><strong>Time: </strong>Normal</li>
+      <li><strong>Morphism: </strong>Alterable Morphic</li>
+      <li><strong>Elementalism: </strong>Mildly Positive</li>
+      <li><strong>Magic: </strong>Anyone with the ability to cast spells gains the ability to cast Otto's Irresistable Dance as a 1st level spell.</li>
+      <li><strong>Special: </strong></li>
+    </ul>
     <p><strong>Home of: </strong> Funkus</p>
     <p>
       The realm of eternal funk. It is the opposite of the shadowfell, full of light, celebration, intense emotion, and happy memories.
     </p>
     <h4>The Feywild</h4>
-    <p><strong>Home of: </strong> Agrios</p>
+    <h5>Traits</h5>
+    <ul>
+      <li><strong>Home of: </strong>Agrios</li>
+      <li><strong>Gravity: </strong>Normal</li>
+      <li><strong>Time: </strong>Normal</li>
+      <li><strong>Morphism: </strong>Alterable Morphic</li>
+      <li><strong>Elementalism: </strong>Mildly Positive</li>
+      <li><strong>Magic: </strong>Healing and growth magic improved</li>
+      <li><strong>Special: </strong></li>
+    </ul>
     <p>
       The feywild is the land of wild things. Once a part of Caelum the land of Caelum, the Plane of Air, The feywild became separate when Agrios became enamored with the Material Plane and sought to make his realm more like what he considered the best parts of Gaian's.
     </p>
