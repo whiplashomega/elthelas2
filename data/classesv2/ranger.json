@@ -12,6 +12,7 @@
     "saving throws": ["str", "dex"],
     "numskills": 3
   },
+  "equipment": [],
   "resources": [
     {
       "name": "Tireless",
@@ -99,6 +100,21 @@
     {
       "level": 3,
       "name": "Ranger Archetype",
+      "description": "At 3rd level, you choose an archetype that you strive to emulate: Hunter or Beast Master, both detailed at the end o f the class description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level."
+    },
+    {
+      "level": 7,
+      "name": "Ranger Archetype (7th)",
+      "description": "At 3rd level, you choose an archetype that you strive to emulate: Hunter or Beast Master, both detailed at the end o f the class description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level."
+    },
+    {
+      "level": 3,
+      "name": "Ranger Archetype (11th)",
+      "description": "At 3rd level, you choose an archetype that you strive to emulate: Hunter or Beast Master, both detailed at the end o f the class description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level."
+    },
+    {
+      "level": 3,
+      "name": "Ranger Archetype (15th)",
       "description": "At 3rd level, you choose an archetype that you strive to emulate: Hunter or Beast Master, both detailed at the end o f the class description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level."
     },
     {

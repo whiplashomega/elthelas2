@@ -1347,7 +1347,7 @@
                 <td>{{item.Type}}</td>
                 <td>{{item.AC}}</td>
                 <td>{{item.PC}}</td>
-                <td>{{ item.MaxDex }}</td>
+                <td>{{ item.MaxDex !== 99 ? item.MaxDex : "Unlimited" }}</td>
                 <td>{{item.Stealth}}</td>
                 <td>{{ item.Intimidation }}</td>
                 <td>{{item.Strength}}</td>

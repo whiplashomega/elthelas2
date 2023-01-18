@@ -103,13 +103,13 @@ const router = createRouter({
       },
     },
     {
-      path: "/options/races",
-      name: "races",
+      path: "/options/ancestry",
+      name: "ancestry",
       components: {
-        default: () => import("@/views/character/races.vue"),
+        default: () => import("@/views/character/ancestry.vue"),
       },
       meta: {
-        title: "Character Races",
+        title: "Character Ancestries",
         auth: false,
       },
     },
@@ -378,10 +378,21 @@ const router = createRouter({
       },
     },
     {
-      path: "/ref/homebrew",
+      path: "/options/create",
+      name: "Character Creation",
+      components: {
+        default: () => import("@/views/character/create.vue")
+      },
+      meta: {
+        title: "Character Creation",
+        auth: false
+      }
+    },
+    {
+      path: "/5e/homebrew",
       name: "Homebrew Rules",
       components: {
-        default: () => import("@/views/ref/homebrew.vue"),
+        default: () => import("@/views/5e/homebrew.vue"),
       },
       meta: {
         title: "Homebrew Rules at My Table",
@@ -403,10 +414,21 @@ const router = createRouter({
       path: "/5e/class",
       name: "5e Classes",
       components: {
-        default: () => import("@/views/character/class.vue"),
+        default: () => import("@/views/5e/class.vue"),
       },
       meta: {
         title: "5e Character Classes",
+        auth: false,
+      },
+    },
+    {
+      path: "/5e/races",
+      name: "5e Races",
+      components: {
+        default: () => import("@/views/5e/races.vue"),
+      },
+      meta: {
+        title: "Character Ancestries",
         auth: false,
       },
     },

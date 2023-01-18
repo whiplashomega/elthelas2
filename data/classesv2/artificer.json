@@ -22,6 +22,7 @@
     "saving throws": ["con", "int"],
     "numskills": 2
   },
+  "equipment": [],
   "resources": [
     {
       "name": "Magickal Tinkering",

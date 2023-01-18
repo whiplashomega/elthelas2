@@ -6,7 +6,7 @@
       </div>
     </div>
     <p style="clear:both;">
-      Note that for all PC races, starting languages are determined by country of origin, not race, although classes or backgrounds may provide bonus
+      Note that for all PC Ancestries, starting languages are determined by country of origin, not ancestry, although classes or backgrounds may provide bonus
       languages as specified in their descriptions.
     </p>
     <div id="raceDiv" v-if="currentRace.name">
@@ -100,5 +100,5 @@
     </table>
   </div>
 </template>
-<script src="./js/races.js"></script>
-<style src="./scss/races.scss" lang="scss" scoped></style>
+<script src="./js/ancestry.js"></script>
+<style src="./scss/ancestry.scss" lang="scss" scoped></style>

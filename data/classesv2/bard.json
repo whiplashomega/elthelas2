@@ -12,6 +12,7 @@
     "saving throws": ["dex", "cha"],
     "numskills": 3
   },
+  "equipment": [],
   "resources": [
     {
       "name": "Bardic Inspiration",

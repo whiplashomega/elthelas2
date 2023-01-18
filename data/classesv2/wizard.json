@@ -12,6 +12,9 @@
     "saving throws": ["intelligence", "wisdom"],
     "numskills": 2
   },
+  "equipment": [
+    "Spellbook"
+  ],
   "resources": [
     {
       "name": "Arcane Recovery",
@@ -60,26 +63,6 @@
     {
       "level": 4,
       "name": "Ability Score Improvement",
-      "description": "When you reach 4th level, and again at 8th,  12th,  16th, and  19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
-    },
-    {
-      "level": 8,
-      "name": "Ability Score Improvement (8th)",
-      "description": "When you reach 4th level, and again at 8th,  12th,  16th, and  19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
-    },
-    {
-      "level": 12,
-      "name": "Ability Score Improvement (12th)",
-      "description": "When you reach 4th level, and again at 8th,  12th,  16th, and  19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
-    },
-    {
-      "level": 16,
-      "name": "Ability Score Improvement (16th)",
-      "description": "When you reach 4th level, and again at 8th,  12th,  16th, and  19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
-    },
-    {
-      "level": 19,
-      "name": "Ability Score Improvement (19th)",
       "description": "When you reach 4th level, and again at 8th,  12th,  16th, and  19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
     },
     {

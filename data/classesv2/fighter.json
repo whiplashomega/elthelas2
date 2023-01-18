@@ -27,14 +27,6 @@
       "count": 1,
       "minlevel": 3,
       "recovery": "shortrest"
-    },
-    {
-      "name": "Indomitable",
-      "counttype": "table",
-      "addToTable": true,
-      "count": [[9,1],[13,2],[17,3]],
-      "minlevel": 9,
-      "recovery": "longrest"
     }
   ],
   "features": [
@@ -59,8 +51,38 @@
       "description": "At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques. Choose Champion, Battle Master, or Eldritch Knight, all detailed at the end o f the class description. The archetype you choose grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level."
     },
     {
+      "level": 7,
+      "name": "Martial Archetype Feature (7th)",
+      "description": "At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques. Choose Champion, Battle Master, or Eldritch Knight, all detailed at the end o f the class description. The archetype you choose grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level."
+    },
+    {
+      "level": 10,
+      "name": "Martial Archetype Feature (10th)",
+      "description": "At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques. Choose Champion, Battle Master, or Eldritch Knight, all detailed at the end o f the class description. The archetype you choose grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level."
+    },
+    {
+      "level": 15,
+      "name": "Martial Archetype Feature (15th)",
+      "description": "At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques. Choose Champion, Battle Master, or Eldritch Knight, all detailed at the end o f the class description. The archetype you choose grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level."
+    },
+    {
+      "level": 18,
+      "name": "Martial Archetype Feature (18th)",
+      "description": "At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques. Choose Champion, Battle Master, or Eldritch Knight, all detailed at the end o f the class description. The archetype you choose grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level."
+    },
+    {
       "level": 4,
       "name": "Ability Score Improvement",
+      "description": "When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+    },
+    {
+      "level": 6,
+      "name": "Ability Score Improvement (6th)",
+      "description": "When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+    },
+    {
+      "level": 14,
+      "name": "Ability Score Improvement (14th)",
       "description": "When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
     },
     {
@@ -74,8 +96,28 @@
       "description": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class."
     },
     {
+      "level": 11,
+      "name": "Extra Attack (3 attacks)",
+      "description": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class."
+    },
+    {
+      "level": 20,
+      "name": "Extra Attack (4 attacks)",
+      "description": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class."
+    },
+    {
       "level": 9,
       "name": "Indomitable",
+      "description": "Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can’t use this feature again until you finish a long rest. You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level."
+    },
+    {
+      "level": 13,
+      "name": "Indomitable (two uses)",
+      "description": "Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can’t use this feature again until you finish a long rest. You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level."
+    },
+    {
+      "level": 17,
+      "name": "Indomitable (three uses)",
       "description": "Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can’t use this feature again until you finish a long rest. You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level."
     }
   ],

@@ -4,9 +4,6 @@ import { useMeta } from 'vue-meta';
 // import { bPagination, bTable } from 'bootstrap-vue-3';
 
 export default {
-  metaInfo: {
-    title: "Character Races",
-  },
   setup () {
     const statics = useStaticsStore();
     const races = statics.races;
@@ -25,7 +22,7 @@ export default {
           hw.push(hwi);
         }
       }
-    useMeta({ title: "Character Races" });
+    useMeta({ title: "Character Ancestries" });
     return {
       statics,
       races,

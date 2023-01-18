@@ -13,14 +13,15 @@
                 Characters
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><router-link to="/options/create" class="dropdown-item">Character Creation</router-link></li>
                 <li><router-link to="/tools/charbuilder" class="dropdown-item">Character Builder</router-link></li>
                 <li><hr class="dropdown-divider"></li>
+                <li><router-link to="/options/ancestry" class="dropdown-item">Ancestry</router-link></li>
                 <li><router-link to="/options/backgrounds" class="dropdown-item">Backgrounds</router-link></li>
                 <li><router-link to="/options/class" class="dropdown-item">Classes</router-link></li>
                 <li><router-link to="/options/domains" class="dropdown-item">Domains</router-link></li>
                 <li><router-link to="/options/feats" class="dropdown-item">Feats</router-link></li>
                 <li><router-link to="/options/languages" class="dropdown-item">Languages</router-link></li>
-                <li><router-link to="/options/races" class="dropdown-item">Races</router-link></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -64,7 +65,6 @@
               <li><router-link to="/ref/magic" class="dropdown-item">Magic</router-link></li>
               <li><router-link to="/ref/gods" class="dropdown-item">Gods</router-link></li>
               <li><router-link to="/ref/divines" class="dropdown-item">Divine Beings</router-link></li>
-              <li><router-link to="/ref/homebrew" class="dropdown-item">Homebrew</router-link></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -73,7 +73,9 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><router-link to="/5e/quick" class="dropdown-item">Quick Reference Manual</router-link></li>
-                <li><router-link to="/5e/class" class="dropdown-item">Classes</router-link></li>             
+                <li><router-link to="/5e/class" class="dropdown-item">Classes</router-link></li>    
+                <li><router-link to="/5e/class" class="dropdown-item">Races</router-link></li>  
+                <li><router-link to="/5e/homebrew" class="dropdown-item">Homebrew</router-link></li>         
               </ul>
             </li>
             <li class="nav-item dropdown">

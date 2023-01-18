@@ -28,8 +28,58 @@
       "description": "At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves’ tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.\n\nAt 6th level, you can choose two more of your proficiencies (in skills or with thieves’ tools) to gain this benefit."
     },
     {
+      "level": 6,
+      "name": "Expertise (6th)",
+      "description": "At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves’ tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.\n\nAt 6th level, you can choose two more of your proficiencies (in skills or with thieves’ tools) to gain this benefit."
+    },
+    {
       "level": 1,
       "name": "Sneak Attack",
+      "description": "Beginning at 1st level, you know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.\n\nYou don’t need advantage on the attack roll if another enemy of the target is within 5 feet o f it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.\n\nThe amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
+    },
+    {
+      "level": 3,
+      "name": "Sneak Attack (2d6)",
+      "description": "Beginning at 1st level, you know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.\n\nYou don’t need advantage on the attack roll if another enemy of the target is within 5 feet o f it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.\n\nThe amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
+    },
+    {
+      "level": 5,
+      "name": "Sneak Attack (3d6)",
+      "description": "Beginning at 1st level, you know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.\n\nYou don’t need advantage on the attack roll if another enemy of the target is within 5 feet o f it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.\n\nThe amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
+    },
+    {
+      "level": 7,
+      "name": "Sneak Attack (4d6)",
+      "description": "Beginning at 1st level, you know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.\n\nYou don’t need advantage on the attack roll if another enemy of the target is within 5 feet o f it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.\n\nThe amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
+    },
+    {
+      "level": 9,
+      "name": "Sneak Attack (5d6)",
+      "description": "Beginning at 1st level, you know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.\n\nYou don’t need advantage on the attack roll if another enemy of the target is within 5 feet o f it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.\n\nThe amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
+    },
+    {
+      "level": 11,
+      "name": "Sneak Attack (6d6)",
+      "description": "Beginning at 1st level, you know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.\n\nYou don’t need advantage on the attack roll if another enemy of the target is within 5 feet o f it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.\n\nThe amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
+    },
+    {
+      "level": 13,
+      "name": "Sneak Attack (7d6)",
+      "description": "Beginning at 1st level, you know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.\n\nYou don’t need advantage on the attack roll if another enemy of the target is within 5 feet o f it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.\n\nThe amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
+    },
+    {
+      "level": 15,
+      "name": "Sneak Attack (8d6)",
+      "description": "Beginning at 1st level, you know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.\n\nYou don’t need advantage on the attack roll if another enemy of the target is within 5 feet o f it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.\n\nThe amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
+    },
+    {
+      "level": 17,
+      "name": "Sneak Attack (9d6)",
+      "description": "Beginning at 1st level, you know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.\n\nYou don’t need advantage on the attack roll if another enemy of the target is within 5 feet o f it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.\n\nThe amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
+    },
+    {
+      "level": 19,
+      "name": "Sneak Attack (10d6)",
       "description": "Beginning at 1st level, you know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.\n\nYou don’t need advantage on the attack roll if another enemy of the target is within 5 feet o f it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.\n\nThe amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
     },
     {
@@ -45,7 +95,22 @@
     {
       "level": 3,
       "name": "Roguish Archetype",
-      "description": "At 3rd level, you choose an archetype that you emulate in the exercise o f your rogue abilities: Thief, Assassin, or Arcane Trickster, all detailed at the end of the class description. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level."
+      "description": "At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities: Thief, Assassin, or Arcane Trickster, all detailed at the end of the class description. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level."
+    },
+    {
+      "level": 9,
+      "name": "Roguish Archetype (9th)",
+      "description": "At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities: Thief, Assassin, or Arcane Trickster, all detailed at the end of the class description. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level."
+    },
+    {
+      "level": 13,
+      "name": "Roguish Archetype (13th)",
+      "description": "At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities: Thief, Assassin, or Arcane Trickster, all detailed at the end of the class description. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level."
+    },
+    {
+      "level": 17,
+      "name": "Roguish Archetype (17th)",
+      "description": "At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities: Thief, Assassin, or Arcane Trickster, all detailed at the end of the class description. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level."
     },
     {
       "level": 3,
@@ -55,6 +120,11 @@
     {
       "level": 4,
       "name": "Ability Score Improvement",
+      "description": "When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+    },
+    {
+      "level": 10,
+      "name": "Ability Score Improvement (10th)",
       "description": "When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
     },
     {

@@ -13,6 +13,7 @@
     "numskills": 2,
     "skills": ["history", "insight", "medicine", "persuasion", "religion"]
   },
+  "equipment": [],
   "resources": [
     {
       "name": "Channel Divinity",

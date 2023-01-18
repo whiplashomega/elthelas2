@@ -24,6 +24,15 @@
       "recovery": "none"
     },
     {
+      "name": "Warlock Slot Level",
+      "minlevel": 1,
+      "counttype": "table",
+      "addToTable": true,
+      "count": [
+        [1, 1], [3, 2], [5, 3], [7, 4], [9, 5]
+      ]
+    },
+    {
       "name": "Mystic Arcanum (level 6)",
       "minlevel": 11,
       "counttype": "fixed",
@@ -66,6 +75,26 @@
       "description": "At 1st level, you have struck a bargain with an otherworldly being of your choice: the Archfey, the Fiend, or the Great Old One, each of which is detailed at the end of the class description. Your choice grants you features at 1st level and again at 3rd, 6th, 10th, and 14th level."
     },
     {
+      "level": 3,
+      "name": "Otherworldly Patron Feature (3rd)",
+      "description": "At 1st level, you have struck a bargain with an otherworldly being of your choice: the Archfey, the Fiend, or the Great Old One, each of which is detailed at the end of the class description. Your choice grants you features at 1st level and again at 3rd, 6th, 10th, and 14th level."
+    },
+    {
+      "level": 6,
+      "name": "Otherworldly Patron Feature (6th)",
+      "description": "At 1st level, you have struck a bargain with an otherworldly being of your choice: the Archfey, the Fiend, or the Great Old One, each of which is detailed at the end of the class description. Your choice grants you features at 1st level and again at 3rd, 6th, 10th, and 14th level."
+    },
+    {
+      "level": 10,
+      "name": "Otherworldly Patron Feature (10th)",
+      "description": "At 1st level, you have struck a bargain with an otherworldly being of your choice: the Archfey, the Fiend, or the Great Old One, each of which is detailed at the end of the class description. Your choice grants you features at 1st level and again at 3rd, 6th, 10th, and 14th level."
+    },
+    {
+      "level": 14,
+      "name": "Otherworldly Patron Feature (14th)",
+      "description": "At 1st level, you have struck a bargain with an otherworldly being of your choice: the Archfey, the Fiend, or the Great Old One, each of which is detailed at the end of the class description. Your choice grants you features at 1st level and again at 3rd, 6th, 10th, and 14th level."
+    },
+    {
       "level": 1,
       "name": "Pact Magic",
       "description": "Your arcane research and the magic bestowed on you by your patron have given you facility with spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the w arlock spell list.\n\n#### Cantrips\n\nYou know the Eldritch Blast cantrip as well as two cantrips of your choice from the warlock spell list. You learn additional warlock cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Warlock table.\n\n#### Spell Slots\n\nYou have 2 spell slots, you gain an additional spell slot at warlock levels 5, 9, 13, and 17. the level of those spell slots is shown in the warlock table; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest.\n\nFor example, when you are 5th level, you have three 3rd-level spell slots. To cast the 1st-level spell witch bolt, you must spend one of those slots, and you cast it as a 3rd-level spell.\n\n#### Spells Known of 1st level and Higher\n\nAt 1st level, you know two 1st-level spells of your choice from the warlock spell list.\n\nThe Spells Known column of the Warlock table shows when you learn more warlock spells of your choice of 1st level and higher. A spell you choose must be of a level no higher than what’s shown in the table's Slot Level column for your level. When you reach 6th level, for example, you learn a new warlock spell, which can be 1st, 2nd, or 3rd level.\n\nAdditionally, when you gain a level in this class, you can choose one of the warlock spells you know and replace it with another spell from the warlock spell list, which also must be of a level for which you have spell slots.\n\n#### Spellcasting Ability\n\nCharisma is your spellcasting ability for your warlock spells, so you use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier w hen setting the saving throw DC for a warlock spell you cast and when making an attack roll with one.\n\nSpell save DC = 8 + your proficiency bonus + your Charisma modifier\n\nSpell attack modifier = your proficiency bonus + your Charisma modifier\n\nSpellcasting Focus\n\nYou can use an arcane focus (found in chapter 5) as a spellcasting focus for your warlock spells."
@@ -93,6 +122,21 @@
     {
       "level": 11,
       "name": "Mystic Arcanum",
+      "description": "At 11th level, your patron bestows upon you a magical secret called an arcanum. Choose one 6th-level spell from the warlock spell list as this arcanum.\n\nYou can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.\n\nAt higher levels, you gain more warlock spells of your choice that can be cast in this way: one 7th-level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Mystic Arcanum when you finish a long rest."
+    },
+    {
+      "level": 13,
+      "name": "Mystic Arcanum (7th level)",
+      "description": "At 11th level, your patron bestows upon you a magical secret called an arcanum. Choose one 6th-level spell from the warlock spell list as this arcanum.\n\nYou can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.\n\nAt higher levels, you gain more warlock spells of your choice that can be cast in this way: one 7th-level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Mystic Arcanum when you finish a long rest."
+    },
+    {
+      "level": 15,
+      "name": "Mystic Arcanum (8th level)",
+      "description": "At 11th level, your patron bestows upon you a magical secret called an arcanum. Choose one 6th-level spell from the warlock spell list as this arcanum.\n\nYou can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.\n\nAt higher levels, you gain more warlock spells of your choice that can be cast in this way: one 7th-level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Mystic Arcanum when you finish a long rest."
+    },
+    {
+      "level": 17,
+      "name": "Mystic Arcanum (9th level)",
       "description": "At 11th level, your patron bestows upon you a magical secret called an arcanum. Choose one 6th-level spell from the warlock spell list as this arcanum.\n\nYou can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.\n\nAt higher levels, you gain more warlock spells of your choice that can be cast in this way: one 7th-level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Mystic Arcanum when you finish a long rest."
     },
     {

@@ -12,6 +12,7 @@
     "saving throws": ["str", "con"],
     "numskills": 2
   },
+  "equipment": [],
   "resources": [
     {
       "name": "Rage",

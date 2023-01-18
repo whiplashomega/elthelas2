@@ -44,13 +44,43 @@
       "description": "Starting at 2nd level, when you hit with an attack you can spend an epiphany point to add 2d6 damage to the damage roll. At 11th level this increases to 3d6, and at 17th level this increases to 4d6."
     },
     {
+      "level": 11,
+      "name": "Inspired Damage (3d6)",
+      "description": "Starting at 2nd level, when you hit with an attack you can spend an epiphany point to add 2d6 damage to the damage roll. At 11th level this increases to 3d6, and at 17th level this increases to 4d6."
+    },
+    {
+      "level": 17,
+      "name": "Inspired Damage (4d6)",
+      "description": "Starting at 2nd level, when you hit with an attack you can spend an epiphany point to add 2d6 damage to the damage roll. At 11th level this increases to 3d6, and at 17th level this increases to 4d6."
+    },
+    {
       "level": 3,
       "name": "Factotum Philosophy",
       "description": "At 3rd level your studies begin to focus on a particular specialty. Choose one of the Factotum Philosophies below, you gain different abilities depending on which philosophy you choose. You gain additional philosophy features at 7th, 10th and 15th level."
     },
     {
+      "level": 7,
+      "name": "Factotum Philosophy Feature (7th)",
+      "description": "At 3rd level your studies begin to focus on a particular specialty. Choose one of the Factotum Philosophies below, you gain different abilities depending on which philosophy you choose. You gain additional philosophy features at 7th, 10th and 15th level."
+    },
+    {
+      "level": 10,
+      "name": "Factotum Philosophy Feature (10th)",
+      "description": "At 3rd level your studies begin to focus on a particular specialty. Choose one of the Factotum Philosophies below, you gain different abilities depending on which philosophy you choose. You gain additional philosophy features at 7th, 10th and 15th level."
+    },
+    {
+      "level": 15,
+      "name": "Factotum Philosophy Feature (15th)",
+      "description": "At 3rd level your studies begin to focus on a particular specialty. Choose one of the Factotum Philosophies below, you gain different abilities depending on which philosophy you choose. You gain additional philosophy features at 7th, 10th and 15th level."
+    },
+    {
       "level": 4,
       "name": "Ability Score Improvement",
+      "description": "At 4th level, and again at 6th, 8th, 12th, 16th, and 19th level, you gain a +2 bonus to one ability score, +1 to two ability scores, or a feat."
+    },
+    {
+      "level": 6,
+      "name": "Ability Score Improvement (6th)",
       "description": "At 4th level, and again at 6th, 8th, 12th, 16th, and 19th level, you gain a +2 bonus to one ability score, +1 to two ability scores, or a feat."
     },
     {

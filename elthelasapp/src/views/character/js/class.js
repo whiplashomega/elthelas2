@@ -29,16 +29,29 @@ export default {
     getFeaturesByLevel (level) {
       let featuresArray = this.shownClass.features.filter((a) => {
         return a.level === level;
+      }).map((a) => {
+        return a.name;
       });
-      let featuresString = "";
-      featuresArray.forEach((e) => {
-        featuresString += e.name + ", ";
-      });
+      if (level === 8 || level === 12 || level === 16 || level === 19) {
+        featuresArray.push("Ability Score Improvement")
+      }
+      let featuresString = featuresArray.join(", ");
       return { arr: featuresArray, str: featuresString };
     },
     getSlotsByLevel (spelllvl, level) {
       let casterlevel = Math.ceil(level * this.shownClass.subclass[0].castermult);
+      if (level === 1 && this.shownClass.subclass[0].castermult != 1 && this.shownClass.name !== "Artificer") {
+        casterlevel = 0;
+      }
       return Calc.slots[casterlevel][spelllvl-1];
+    },
+    getCantripCount(level) {
+      let mult = this.shownClass.subclass[0].castermult;
+      if (mult === 1 || this.shownClass.name === "Warlock") {
+        return this.shownClass.cantrips + (level >= 10 ? 2 :(level >= 4 ? 1 : 0));
+      } else if (mult === 0.5) {
+        return this.shownClass.cantrips + (level >= 14 ? 2 :(level >= 10 ? 1 : 0));
+      }
     },
     getResCount(res, level) {
       let count = 0;
@@ -54,6 +67,9 @@ export default {
       }
       if (level < res.minlevel) {
         count = 0;
+      }
+      if (count === 99) {
+        return "Unlimited";
       }
       return count;
     }
