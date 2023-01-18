@@ -10,9 +10,18 @@
  "weapons": ["daggers", "darts", "slings", "quarterstaffs", "light crossbows"],
  "tools": [],
  "saving throws": ["con", "cha"],
- "numskills": 2,
- "skills": ["arcana", "deception", "insight", "intimidation", "persuasion", "religion"]
+ "numskills": 2
   },
+  "resources": [
+    {
+      "name": "Sorcery Points",
+      "counttype": "level",
+      "count": 0,
+      "addToTable": true,
+      "minlevel": 2,
+      "recovery": "longrest"
+    }
+  ],
   "features": [
  {
    "level": 1,
@@ -59,6 +68,7 @@
    {
      "name": "Draconic Bloodline",
      "castermult": 1,
+     "resources": [],
      "features": [
     {
    "level": 1,
@@ -73,7 +83,7 @@
     {
       "level": 1,
       "name": "Draconic Magic",
-      "description": "This feature is homebrew, get your DM's permission to use it. You learn additional spells when you reach certain levels in this class. Each spell counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know. You learn the spells from the Draconic Spells table below, as well as those on the table of your draconic ancestry.\n\n##### Draconic Spells\n\n* 1st - command\n* 3rd - dragon's breath\n* 5th - fear\n* 7th - elemental bane\n* 9th - dominate person.\n\n##### Black Dragon Spells\n\n* 1st - cause fear\n* 3rd - acid arrow\n* 5th - water breathing\n* 7th - vitriolic sphere\n* 9th - insect plague\n\n##### Blue Dragon Spells\n\n* 1st - witchbolt\n* 3rd - dust devil\n* 5th - lightning bolt\n* 7th - storm sphere\n* 9th - wall of stone\n\n##### Brass Dragon Spells\n\n* 1st - sleep\n* 3rd - suggestion\n* 5th - windwall\n* 7th - charm monster\n* 9th - telepathic bond\n\n##### Bronze Dragon Spells\n\n* 1st - thunderwave\n* 3rd - gust of wind\n* 5th - tidal wave\n* 7th - watery sphere\n* 9th - control winds\n\n##### Copper Dragon Spells\n\n* 1st - hideous laughter\n* 3rd - spike growth\n* 5th - slow\n* 7th - confusion\n* 9th - geas\n\n##### Gold Dragon Spells\n\n* 1st - shield\n* 3rd - scorching ray\n* 5th - counterspell\n* 7th - polymorph\n* 9th - dream\n\n##### Green Dragon Spells\n* 1st - ray of sickness\n* 3rd - invisibility\n* 5th - stinking cloud\n* 7th - hallucinatory terrain\n* 9th - cloudkill\n\n##### Red Dragon Spells\n\n* 1st - burning hands\n* 3rd - Aganazzar's scorcher\n* 5th - fireball\n* 7th - wall of fire\n* 9th - immolation\n\n##### Silver Dragon Spells\n\n* 1st - identify\n* 3rd - hold person\n* 5th - leomunds tiny hut\n* 7th - ice storm\n* 9th - legend lore\n\n##### White Dragon Spells\n\n* 1st - ice knife\n* 3rd - snowball swarm\n* 5th - sleet storm\n* 7th - fireshield (chill shield only)\n* 9th - cone of cold"
+      "description": "You learn additional spells when you reach certain levels in this class. Each spell counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know. You learn the spells from the Draconic Spells table below, as well as those on the table of your draconic ancestry.\n\n##### Draconic Spells\n\n* 1st - command\n* 3rd - dragon's breath\n* 5th - fear\n* 7th - elemental bane\n* 9th - dominate person.\n\n##### Black Dragon Spells\n\n* 1st - cause fear\n* 3rd - acid arrow\n* 5th - water breathing\n* 7th - vitriolic sphere\n* 9th - insect plague\n\n##### Blue Dragon Spells\n\n* 1st - witchbolt\n* 3rd - dust devil\n* 5th - lightning bolt\n* 7th - storm sphere\n* 9th - wall of stone\n\n##### Brass Dragon Spells\n\n* 1st - sleep\n* 3rd - suggestion\n* 5th - windwall\n* 7th - charm monster\n* 9th - telepathic bond\n\n##### Bronze Dragon Spells\n\n* 1st - thunderwave\n* 3rd - gust of wind\n* 5th - tidal wave\n* 7th - watery sphere\n* 9th - control winds\n\n##### Copper Dragon Spells\n\n* 1st - hideous laughter\n* 3rd - spike growth\n* 5th - slow\n* 7th - confusion\n* 9th - geas\n\n##### Gold Dragon Spells\n\n* 1st - shield\n* 3rd - scorching ray\n* 5th - counterspell\n* 7th - polymorph\n* 9th - dream\n\n##### Green Dragon Spells\n* 1st - ray of sickness\n* 3rd - invisibility\n* 5th - stinking cloud\n* 7th - hallucinatory terrain\n* 9th - cloudkill\n\n##### Red Dragon Spells\n\n* 1st - burning hands\n* 3rd - Aganazzar's scorcher\n* 5th - fireball\n* 7th - wall of fire\n* 9th - immolation\n\n##### Silver Dragon Spells\n\n* 1st - identify\n* 3rd - hold person\n* 5th - leomunds tiny hut\n* 7th - ice storm\n* 9th - legend lore\n\n##### White Dragon Spells\n\n* 1st - ice knife\n* 3rd - snowball swarm\n* 5th - sleet storm\n* 7th - fireshield (chill shield only)\n* 9th - cone of cold"
     },
     {
    "level": 6,
@@ -95,11 +105,27 @@
    {
      "name": "Wild Magic",
      "castermult": 1,
+     "resources": [
+      {
+        "name": "Tides of Chaos",
+        "counttype": "fixed",
+        "count": 1,
+        "minlevel": 1,
+        "recovery": "longrest"
+      },
+      {
+        "name": "Wilder Magic",
+        "counttype": "prof",
+        "count": 0,
+        "minlevel": 1,
+        "recovery": "longrest"
+      }
+     ],
      "features": [
     {
    "level": 1,
    "name": "Wild Magic Surge",
-   "description": "Starting when you choose this origin at 1st level, your spellcasting can unleash surges of untamed magic.“Once per turn, the DM can have you roll a d20 immediately after you cast a sorcerer spell of 1st level or higher. If you roll a 1, roll on the Wild Magic Surge table to create a magical effect. If that effect is a spell, it is too wild to be affected by your Metamagic, and if it normally requires concentration, it doesn’t require concentration in this case; the spell lasts for its full duration."   
+   "description": "Starting when you choose this origin at 1st level, your spellcasting can unleash surges of untamed magic.“Once per turn, roll a d20 immediately after you cast a sorcerer spell of 1st level or higher. If you roll a 1, roll on the Wild Magic Surge table to create a magical effect. If that effect is a spell, it is too wild to be affected by your Metamagic, and if it normally requires concentration, it doesn’t require concentration in this case; the spell lasts for its full duration."   
     },
     {
    "level": 1,
@@ -109,37 +135,48 @@
     {
       "level": 1,
       "name": "Wilder Magic",
-      "description": "This feature is homebrew, get your DM's permission to use it. As an action you can expend a spell slot of 5th level or lower to attempt to cast a Sorcerer spell you do not know of equal or lower level to the spell slot you expended. Before you resolve the spell, you must make a Charisma saving throw. The DC is 10 + twice the level of the spell slot you expended. On a successful save, you cast the spell as normal. On a failed save, the spell fails and instead you trigger a Wild Magic Surge.\n\nOnce you use this feature you cannot do so again until you finish a short or long rest."
+      "description": "As an action you can expend a spell slot of 5th level or lower to attempt to cast a Sorcerer spell you do not know of equal or lower level to the spell slot you expended. Before you resolve the spell, you must make a Charisma saving throw. The DC is 10 + twice the level of the spell slot you expended. On a successful save, you cast the spell as normal. On a failed save, the spell fails and instead you trigger a Wild Magic Surge.\n\nYou can use this feature a number of times equal to your proficiency bonus and recover all expended uses when you finish a long rest."
     },
     {
    "level": 6,
    "name": "Bend Luck",
-   "description": "Starting at 6th level, you have the ability to twist fate using your wild magic. W hen another creature you can see makes an attack roll, an ability check, or a saving throw, you can use your reaction and spend 2 sorcery points to roll 1d4 and apply the number rolled as a bonus or penalty (your choice) to the creature’s roll. You can do so after the creature rolls but before any effects of the roll occur."
+   "description": "Starting at 6th level, you have the ability to twist fate using your wild magic. When another creature you can see makes an attack roll, an ability check, or a saving throw, you can use your reaction and spend 2 sorcery points to roll 1d4 and apply the number rolled as a bonus or penalty (your choice) to the creature’s roll. You can do so after the creature rolls but before any effects of the roll occur."
     },
     {
    "level": 14,
    "name": "Controlled Chaos",
-   "description": "At 14th level, you gain a m odicum of control over the surges of your wild magic. W henever you roll on the Wild Magic Surge table, you can roll twice and use either number."
+   "description": "At 14th level, you gain a m odicum of control over the surges of your wild magic. Whenever you roll on the Wild Magic Surge table, you can roll twice and use either number."
     },
     {
    "level": 18,
    "name": "Spell Bombardment",
-   "description": "Beginning at 18th level, the harmful energy of your spells intensifies. W hen you roll damage for a spell and roll the highest number possible on any of the dice, choose one of those dice, roll it again and add that roll to the damage. You can use the feature only once per turn."
+   "description": "Beginning at 18th level, the harmful energy of your spells intensifies. When you roll damage for a spell and roll the highest number possible on any of the dice, choose one of those dice, roll it again and add that roll to the damage. You can use the feature only once per turn."
     }
      ]
    },
    {
      "name": "Divine Soul",
      "castermult": 1,
+     "resources": [
+      {
+        "name": "Favored by the Gods",
+        "counttype": "fixed",
+        "count": 1,
+        "minlevel": 1,
+        "recovery": "shortrest"
+      },
+      {
+        "name": "Unearthly Recovery",
+        "counttype": "fixed",
+        "count": 1,
+        "minlevel": 18,
+        "recovery": "longrest"
+      }
+     ],
      "features": [
        {
-      "level": 1,
-      "name": "Divine Magic",
-      "description": "Your link to the divine allows you to learn spells from the cleric class. When your Spellcasting feature lets you learn or replace a sorcerer cantrip or a sorcerer spell of 1st level or higher, you can choose the new spell from the cleric spell list or the sorcerer spell list. You must otherwise obey all the restrictions for selecting the spell, and it becomes a sorcerer spell for you.\n\nIn addition, choose an affinity for the source of your divine power: good, evil, law, chaos, or neutrality. You learn an additional spell based on that affinity, as shown below. It is a sorcerer spell for you, but it doesn’t count against your number of sorcerer spells known. If you later replace this spell, you must replace it with a Spell from the cleric spell list.\n\n*Good - cure wounds\n*Evil - inflict wounds\n*Law - bless\n*Chaos - bane\n*Neutrality - protection from evil and good."
-       },
-       {
          "level": 1,
-         "name": "Divine Magic (Alternate)",
+         "name": "Divine Magic",
          "description": "Your link to the divine allows you to learn spells from the cleric class. When your Spellcasting feature lets you learn or replace a sorcerer cantrip or a sorcerer spell of 1st level or higher, you can choose the new spell from the cleric spell list or the sorcerer spell list. You must otherwise obey all the restrictions for selecting the spell, and it becomes a sorcerer spell for you.\n\nYou learn additional spells when you reach certain levels in this class. Select two affinities from the following list: Good, Evil, Law, Chaos, Neutrality. Your chosen affinities can be different from your alignment, but you may not choose opposite ends of the same axis. You learn the spells from the tables below corresponding to your chosen affinities. Each spell counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.\n\n##### Good Affinity Spells\n\n* 1st - cure wounds\n* 3rd - prayer of healing\n* 5th - revivify\n* 7th - death ward\n* 9th - greater restoration\n\n##### Evil Affinity Spells\n\n* 1st - inflict wounds\n* 3rd - ray of enfeeblement\n* 5th - animate dead\n* 7th - blight\n* 9th - danse macabre\n\n##### Law Affinity Spells\n\n* 1st - bless\n* 3rd - calm emotions\n* 5th - remove curse\n* 7th - banishment\n* 9th - planar binding\n\n##### Chaos Affinity Spells\n\n* 1st - bane\n* 3rd - crown of madness\n* 5th - curse\n* 7th - freedom of movement\n* 9th - destructive wave\n\n##### Neutrality Affinity Spells\n\n* 1st - protection from evil and good\n* 3rd - zone of truth\n* 5th - spirit guardians\n* 7th - diviniation\n* 9th - dispel evil and good"
        },
        {
@@ -167,6 +204,7 @@
    {
      "name": "Sorceron Bloodline",
      "castermult": 1,
+     "resources": [],
      "features": [
         {
          "level": 1,
@@ -198,6 +236,15 @@
    {
      "name": "Shadow Magic",
      "castermult": 1,
+     "resources": [
+      {
+        "name": "Strength of the Grave",
+        "counttype": "fixed",
+        "count": 1,
+        "minlevel": 1,
+        "recovery": "longrest"
+      }
+     ],
      "features": [
         {
           "level": 1,
@@ -207,7 +254,7 @@
         {
           "level": 1,
           "name": "Shadowfell Magic",
-          "description": "This feature is homebrew, get your DM's permission to use it. You learn additional spells when you reach certain levels in this class, as shown on the Shadowfell Spells table. Each spell counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.\n* 1st - inflict wounds, false life\n* 3rd - pass without trace, shadow blade\n* 5th - nondetection, summon shadowspawn\n* 7th - blight, shadow of moil\n* 9th - antilife shell, creation"
+          "description": "You learn additional spells when you reach certain levels in this class, as shown on the Shadowfell Spells table. Each spell counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.\n* 1st - inflict wounds, false life\n* 3rd - pass without trace, shadow blade\n* 5th - nondetection, summon shadowspawn\n* 7th - blight, shadow of moil\n* 9th - antilife shell, creation"
         },
         {
           "level": 1,
@@ -234,6 +281,15 @@
    {
       "name": "Storm Sorcery",
       "castermult": 1,
+      "resources": [
+        {
+          "name": "Wind Soul",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 18,
+          "recovery": "shortrest"
+        }
+      ],
       "features": [
         {
           "level": 1,
@@ -243,7 +299,7 @@
         {
           "level": 1,
           "name": "Storm Magic",
-          "description": "This feature is homebrew, get your DM's permission to use it. You learn additional spells when you reach certain levels in this class, as shown on the Storm Spells table. Each spell counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.\n\n* 1st - fog cloud, thunderwave\n* 3rd - shatter, skywrite\n* 5th - call lightning, fly\n* 7th - ice storm, storm sphere\n* 9th - control winds, destructive wave"
+          "description": "You learn additional spells when you reach certain levels in this class, as shown on the Storm Spells table. Each spell counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.\n\n* 1st - fog cloud, thunderwave\n* 3rd - shatter, skywrite\n* 5th - call lightning, fly\n* 7th - ice storm, storm sphere\n* 9th - control winds, destructive wave"
         },
         {
           "level": 1,
@@ -275,6 +331,15 @@
    {
       "name": "Aberrant Mind",
       "castermult": 1,
+      "resources": [
+        {
+          "name": "Warping Implosion",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 18,
+          "recovery": "longrest"
+        }
+      ],
       "features": [
         {
           "level": 1,
@@ -311,6 +376,22 @@
    {
       "name": "Clockwork Soul",
       "castermult": "1",
+      "resources": [
+        {
+          "name": "Trance of Order",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 14,
+          "recovery": "longrest"
+        },
+        {
+          "name": "Clockwork Cavalcade",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 18,
+          "recovery": "longrest"
+        }
+      ],
       "features": [
         {
           "level": 1,

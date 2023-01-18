@@ -10,15 +10,67 @@
     "weapons": ["simple weapons", "martial weapons"],
     "tools": [],
     "saving throws": ["str", "dex"],
-    "numskills": 3,
-    "skills": ["animalhandling", "athletics", "insight", "investigation", "nature", "perception", "stealth", "survival"]
+    "numskills": 3
   },
-  "features": [
+  "resources": [
     {
-      "level": 1,
-      "name": "Favored Foe",
-      "description": "When you hit a creature with an attack roll, you can call on your mystical bond with nature to mark the target as your favored enemy for 1 minute or until you lose your concentration (as if you were concentrating on a spell).\n\nThe first time on each of your turns that you hit the favored enemy and deal damage to it, including when you mark it, you can increase that damage by 1d4.\n\nYou can use this feature to mark a favored enemy a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.\n\nThis feature's extra damage increases when you reach certain levels in this class: to 1d6 at 6th level and to 1d8 at 14th level."
+      "name": "Tireless",
+      "counttype": "prof",
+      "count": 0,
+      "minlevel": 10,
+      "recovery": "longrest"
     },
+    {
+      "name": "Favored Foe",
+      "counttype": "prof",
+      "count": 0,
+      "minlevel": 3,
+      "recovery": "longrest"
+    },
+    {
+      "name": "Primal Awareness - Speak with Animals",
+      "counttype": "fixed",
+      "count": 1,
+      "minlevel": 3,
+      "recovery": "longrest"
+    },
+    {
+      "name": "Primal Awareness - Beast Sense",
+      "counttype": "fixed",
+      "count": 1,
+      "minlevel": 5,
+      "recovery": "longrest"
+    },
+    {
+      "name": "Primal Awareness - Speak with Plants",
+      "counttype": "fixed",
+      "count": 1,
+      "minlevel": 9,
+      "recovery": "longrest"
+    },
+    {
+      "name": "Primal Awareness - Locate Creature",
+      "counttype": "fixed",
+      "count": 1,
+      "minlevel": 13,
+      "recovery": "longrest"
+    },
+    {
+      "name": "Primal Awareness - Commune with Nature",
+      "counttype": "fixed",
+      "count": 1,
+      "minlevel": 17,
+      "recovery": "longrest"
+    },
+    {
+      "name": "Nature's Veil",
+      "counttype": "prof",
+      "count": 0,
+      "minlevel": 10,
+      "recovery": "longrest"
+    }
+  ],
+  "features": [
     {
       "level": 1,
       "name": "Deft Explorer",
@@ -38,6 +90,11 @@
       "level": 2,
       "name": "Spellcasting Focus",
       "description": "You can use a druidic focus as a spellcasting focus for your ranger spells. A druidic focus might be a sprig of mistletoe or holly, a wand or rod mode of yew or another special wood, a staff drawn whole from a living tree, or an object incorporating feathers, fur, bones, and teeth from sacred animals."
+    },
+    {
+      "level": 3,
+      "name": "Favored Foe",
+      "description": "When you hit a creature with a weapon attack roll, you can call on your mystical bond with nature to mark the target as your favored enemy. When you do so you cast the Hunter's Mark spell, with no additional action required, and without requiring concentration.\n\nYou can use this feature to mark a favored enemy a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
     },
     {
       "level": 3,
@@ -94,16 +151,17 @@
     {
       "name": "Beast Master",
       "castermult": 0.5,
+      "resources": [],
       "features": [
         {
           "level": 3,
           "name": "Beast Master Magic",
-          "description": "This feature is homebrew, get your DM's permission to use it. You learn additional spells when you reach certain levels in this class, as shown on the Hunter Spells table. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.\n\n* 3rd - Beast Bond\n* 5th - Summon Beast\n* 9th - Conjure Animals\n* 13th - Giant Insect\n* 17th - Commune with Nature"
+          "description": "You learn additional spells when you reach certain levels in this class. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.\n\n* 3rd - Beast Bond\n* 5th - Summon Beast\n* 9th - Conjure Animals\n* 13th - Giant Insect\n* 17th - Commune with Nature"
         },
         {
           "level": 3,
           "name": "Primal Companion",
-          "description": "You magically summon a primal b east, which draws strength from your bond with nature. The beast is friendly to you and your companions and obeys your commands. Choose its stat block-Beast of the Land, Beast of the Sea, or Beast of the Sky-which uses your proficiency bonus (PB) in several places. You also determine the kind of animal the beast is, choosing a kind appropriate for the stat block. Whatever kind you choose, the beast bears primal markings indicating its mystical origin.\n\nIn combat, the beast acts during your turn. It can move and use its reaction on its own, but the only action it takes is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. You can also sacrifice one of your attacks when you take the Attack action to command the beast to take the Attack action. If you are incapacitated, the beast can take any action of its choice, not just Dodge.\n\nIf the beast has died within the last hour, you can use your action to touch it and expend a spell slot of 1st level or higher. The beast returns to life after 1 minute with all its hit points restored.\n\nWhen you finish a long rest, you can summon a different primal beast. The new beast appears in an unoccupied space within 5 feet of you, and you choose its stat block and appearance. If you already have a beast from this feature, it vanishes when the new beast appears. The beast also vanishes if you die."
+          "description": "You magically summon a primal beast, which draws strength from your bond with nature. The beast is friendly to you and your companions and obeys your commands. Choose its stat block-Beast of the Land, Beast of the Sea, or Beast of the Sky-which uses your proficiency bonus (PB) in several places. You also determine the kind of animal the beast is, choosing a kind appropriate for the stat block. Whatever kind you choose, the beast bears primal markings indicating its mystical origin.\n\nIn combat, the beast acts during your turn. It can move and use its reaction on its own, but the only action it takes is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. You can also sacrifice one of your attacks when you take the Attack action to command the beast to take the Attack action. If you are incapacitated, the beast can take any action of its choice, not just Dodge.\n\nIf the beast has died within the last hour, you can use your action to touch it and expend a spell slot of 1st level or higher. The beast returns to life after 1 minute with all its hit points restored.\n\nWhen you finish a long rest, you can summon a different primal beast. The new beast appears in an unoccupied space within 5 feet of you, and you choose its stat block and appearance. If you already have a beast from this feature, it vanishes when the new beast appears. The beast also vanishes if you die."
         },
         {
           "level": 7,
@@ -125,6 +183,7 @@
     {
       "name": "Hunter Conclave",
       "castermult": 0.5,
+      "resources": [],
       "features": [
         {
           "level": 3,
@@ -156,6 +215,7 @@
     {
       "name": "Gloom Stalker",
       "castermult": 0.5,
+      "resources": [],
       "features": [
         {
           "level": 3,
@@ -192,6 +252,15 @@
     {
       "name": "Horizon Walker",
       "castermult": 0.5,
+      "resources": [
+        {
+          "name": "Ethereal Step",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 7,
+          "recovery": "shortrest"
+        }
+      ],
       "features": [
         {
           "level": 3,
@@ -228,6 +297,15 @@
     {
       "name": "Monster Slayer",
       "castermult": 0.5,
+      "resources": [
+        {
+          "name": "Hunter's Sense",
+          "counttype": "WIS1",
+          "count": 0,
+          "minlevel": 3,
+          "recovery": "longrest"
+        }
+      ],
       "features": [
         {
           "level": 3,
@@ -264,6 +342,15 @@
     {
       "name": "Fey Wanderer",
       "castermult": "0.5",
+      "resources": [
+        {
+          "name": "Misty Wanderer",
+          "counttype": "WIS1",
+          "count": 0,
+          "minlevel": 15,
+          "recovery": "longrest"
+        }
+      ],
       "features": [
         {
           "level": 3,
@@ -293,13 +380,29 @@
         {
           "level": 15,
           "name": "Misty Wanderer",
-          "description": "You can sli in and out of the Feywild to move in a blink of an eye: you can cast misty step without expending a spell slot. You can do so a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest.\n\nIn addition, whenever you cast misty step, you can bring along one willing creature you can see within 5 feet of you. That creature teleports to an unoccupied space of your choice within 5 feet of your destination space."
+          "description": "You can slip in and out of the Feywild to move in a blink of an eye: you can cast misty step without expending a spell slot. You can do so a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest.\n\nIn addition, whenever you cast misty step, you can bring along one willing creature you can see within 5 feet of you. That creature teleports to an unoccupied space of your choice within 5 feet of your destination space."
         }
       ]
     },
     {
       "name": "Swarmkeeper",
       "castermult": 0.5,
+      "resources": [
+        {
+          "name": "Writhing Tide",
+          "counttype": "prof",
+          "count": 0,
+          "minlevel": 7,
+          "recovery": "longrest"
+        },
+        {
+          "name": "Swarming Dispersal",
+          "counttype": "prof",
+          "count": 0,
+          "minlevel": 15,
+          "recovery": "longrest"
+        }
+      ],
       "features": [
         {
           "level": 3,

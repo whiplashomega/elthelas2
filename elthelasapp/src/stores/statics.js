@@ -19,7 +19,6 @@ export default {
       spells: [],
       valuables: [],
       weapons: [],
-      homebrewweapons: [],
       classes: [],
       territories: [],
       cities: [],
@@ -38,7 +37,11 @@ export default {
       magicuncommons: [],
       magicrares: [],
       magicveryrares: [],
-      magiclegendaries: []
+      magiclegendaries: [],
+      armorv2: [],
+      classesv2: [],
+      spellsv2: [],
+      weaponsv2: [],
     };
   },
   getters: {
@@ -112,6 +115,18 @@ export default {
         }).catch((error) => {
           this.armor = [{"Armor":"Padded Armor","Type":"Light","Material":"Cloth","AC":11,"Strength":"-","Stealth":"disadvantage","Weight":8,"Resistance":"none","Price":5,"Time to Craft":1}]
           resolve(false);
+          console.log(error);
+        });
+      });
+    },
+    getAllArmorV2 () {
+      return new Promise((resolve) => {
+        axios.get("/json/armorv2.json").then((response) => {
+          this.armorv2 = response.data;
+          resolve(true);
+        }).catch((error) => {
+          resolve(false);
+          console.log(error);
         });
       });
     },
@@ -211,6 +226,28 @@ export default {
         });
       });
     },
+    getAllSpellsV2 () {
+      return new Promise((resolve) => {
+        axios.get('/json/spellsv2.json').then((response) => {
+          var spells = response.data.documents;
+          for (var x in spells) {
+            try {
+              spells[x].tagsText = spells[x].tags.join(', ');
+              if (spells[x].level != "cantrip") {
+                spells[x].level = spells[x].level.substring(5);
+              }
+            } catch (e) {
+              spells[x].tagsText = "";
+              console.log(e);
+              console.log(x);
+              console.log(spells[x]);
+            }
+          }
+          this.spellsv2 = spells;
+          resolve();
+        });
+      });
+    },
     getAllValuables () {
       return new Promise((resolve) => {
         axios.get('/json/valuables.json').then((response) => {
@@ -230,7 +267,7 @@ export default {
     getAllHomebrewWeapons () {
       return new Promise ((resolve) => {
         axios.get('/json/joeweapons.json').then((response) => {
-          this.homebrewweapons = response.data;
+          this.weaponsv2 = response.data;
           resolve(true);
         });
       });
@@ -240,6 +277,30 @@ export default {
         axios.get('/json/classes.json').then((response) => {
          var classes = response.data.documents;
          this.classes = classes.map((a) => {
+           var r = { ...a };
+           r.features = a.features.map((b) => {
+             var s = { ...b, isCollapsed: true };
+             return s;
+           });
+           r.subclass = r.subclass.map((c) => {
+             var t = { ...c };
+             t.features = c.features.map((d) => {
+               var u = { ...d, isCollapsed: true };
+               return u;
+             });
+             return t;
+           });
+           return r;
+         });
+         resolve(true);
+        });
+      });
+    },
+    getAllClassesV2 () {
+      return new Promise((resolve) => {
+        axios.get('/json/classesv2.json').then((response) => {
+         var classes = response.data.documents;
+         this.classesv2 = classes.map((a) => {
            var r = { ...a };
            r.features = a.features.map((b) => {
              var s = { ...b, isCollapsed: true };
@@ -316,7 +377,6 @@ export default {
       this.magiclegendaries = [];
       this.magiccommons = [];
       this.magicweapons = [];
-      this.magichomebrewweapons = [];
       this.magicarmor = [];
       this.magicother = [];
       return new Promise((resolve) => {
@@ -333,9 +393,6 @@ export default {
             });
             for (var l = 0; l < this.weapons.length; l++) {
               items.push(...helpers.getWeaponVariants(this.weapons[l]));
-            }
-            for (var l = 0; l < this.homebrewweapons.length; l++) {
-              items.push(...helpers.getHomebrewWeaponVariants(this.homebrewweapons[l]));
             }
             for (var z = 0; z < this.armor.length; z++) {
               helpers.armorBuilder(items, this.armor[z]);
@@ -405,7 +462,6 @@ export default {
         Promise.all([
           this.getAllArmor(),
           this.getAllWeapons(),
-          this.getAllHomebrewWeapons(),
           this.getAllMagicItems(),
           this.getAllContinents(),
           this.getAllBackgrounds(),
@@ -422,7 +478,11 @@ export default {
           this.getAllCities(),
           this.getAllNations(),
           this.getAllLandmarks(),
-          this.getAllFeatures()]).then(() => {
+          this.getAllFeatures(),
+          this.getAllHomebrewWeapons(),
+          this.getAllArmorV2(),
+          this.getAllSpellsV2(),
+          this.getAllClassesV2()]).then(() => {
             resolve(true);
           });
       });

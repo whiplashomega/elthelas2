@@ -10,9 +10,18 @@
     "weapons": ["simple weapons", "shortswords"],
     "tools": ["one type of artisans tools or musical instrument"],
     "saving throws": ["str", "dex"],
-    "numskills": 2,
-    "skills": ["acrobatics", "athletics", "history", "insight", "religion", "stealth"]
+    "numskills": 2
   },
+  "resources": [
+    {
+      "name": "ki",
+      "counttype": "level",
+      "count": 0,
+      "minlevel": 2,
+      "addToTable": true,
+      "recovery": "shortrest"
+    }
+  ],
   "features": [
     {
       "level": 1,
@@ -27,7 +36,7 @@
     {
       "level": 2,
       "name": "Ki",
-      "description": "Starting at 2nd level, your training allows you to harness the mystic energy o f ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table.\n\nYou can spend these points to fuel various ki features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class. \n\nWhen you spend a ki point, it is unavailable until you finish a short or long rest, at the end of which you draw all of your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points.\n\nSome of your ki features require your target to make a saving throw to resist the feature’s effects. The saving throw DC is calculated as follows:\n\nKi save DC = 8 + your proficiency bonus + your Wisdom modifier\n\n#### Flurry of Blows\n\nImmediately after you take the Attack action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action.\n\n#### Patient Defense\n\nYou can spend 1 ki point to take the Dodge action as a bonus action on your turn.\n\n#### Step of the Wind\n\nYou can spend 1 ki point to take the Disengage or Dash action as a bonus action on your turn, and your jump distance is doubled for the turn."
+      "description": "Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table.\n\nYou can spend these points to fuel various ki features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class. \n\nWhen you spend a ki point, it is unavailable until you finish a short or long rest, at the end of which you draw all of your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points.\n\nSome of your ki features require your target to make a saving throw to resist the feature’s effects. The saving throw DC is calculated as follows:\n\nKi save DC = 8 + your proficiency bonus + your Wisdom modifier\n\n#### Flurry of Blows\n\nImmediately after you take the Attack action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action.\n\n#### Patient Defense\n\nYou can spend 1 ki point to take the Dodge action as a bonus action on your turn.\n\n#### Step of the Wind\n\nYou can spend 1 ki point to take the Disengage or Dash action as a bonus action on your turn, and your jump distance is doubled for the turn."
     },
     {
       "level": 2,
@@ -134,6 +143,7 @@
     {
       "name": "Way of the Open Hand",
       "castermult": 0,
+      "resources": [],
       "features": [
         {
           "level": 3,
@@ -160,11 +170,17 @@
     {
       "name": "Way of Shadow",
       "castermult": 0,
+      "resources": [],
       "features": [
         {
           "level": 3,
           "name": "Shadow Arts",
           "description": "Starting when you choose this tradition at 3rd level, you can use your ki to duplicate the effects of certain spells. As an action, you can spend 2 ki points to cast darkness, darkvision, pass without trace, or silence, without providing material components. Additionally, you gain the minor illusion cantrip if you don’t already know it."
+        },
+        {
+          "level": 3,
+          "name": "Darkvision",
+          "description": "You gain the ability to see through magical darkness up to 60 ft."
         },
         {
           "level": 6,
@@ -174,7 +190,7 @@
         {
           "level": 11,
           "name": "Cloak of Shadows",
-          "description": "By 11th level, you have learned to become one with the shadows. When you are in an area o f dim light or darkness, you can use your action to become invisible. You remain invisible until you make an attack, cast a spell, or are in an area of bright light."
+          "description": "By 11th level, you have learned to become one with the shadows. When you are in an area of dim light or darkness, you can use your action to become invisible. You remain invisible until you make an attack, cast a spell, or are in an area of bright light."
         },
         {
           "level": 17,
@@ -186,17 +202,19 @@
     {
       "name": "Way of the Four Elements",
       "castermult": 0,
+      "resources": [],
       "features": [
         {
           "level": 3,
           "name": "Disciple of the Elements",
-          "description": "When you choose this tradition at 3rd level, you learn magical disciplines that harness the power of the four elements. A discipline requires you to spend ki points each time you use it.\n\nYou know the Elemental Attunement discipline and one other elemental discipline of your choice, which are detailed in the \"Elemental Disciplines\" section below. You learn one additional elemental discipline o f your choice at 6th, 11th, and 17th level. Whenever you learn a new elemental discipline, you can also replace one elemental discipline that you already know with a different discipline.\n\n**Casting Elemental Spells.** Some elemental disciplines allow you to cast spells. See chapter 10 for the general rules o f spellcasting. To cast one of these spells, you use its casting time and other rules, but you don’t need to provide material components for it.\n\nOnce you reach 5th level in this class, you can spend additional ki points to increase the level of an elemental discipline spell that you cast, provided that the spell has an enhanced effect at a higher level, as burning hands does. The spell's level increases by 1 for each additional ki point you spend. For example, if you are a 5th-level monk and use Sweeping Cinder Strike to cast burning hands, you can spend 3 ki points to cast it as a 2nd-level spell (the discipline’s base cost of 2 ki points plus 1).\n\nThe maximum number o f ki points you can spend to cast a spell in this way (including its base ki point cost and any additional ki points you spend to increase its level) is determined by your monk level, as shown in the Spells and Ki Points table.\n\n#### Elemental Disciplines\n\nThe elemental disciplines are presented in alphabetical order. If a discipline requires a level, you must be that level in this class to learn the discipline.\n\n**Breath of Winter (17th Level Required).** You can spend 6 ki points to cast cone of cold.\n\n**Clench of the North Wind (6th Level Required).** You can spend 3 ki points to cast hold person.\n\n**Elemental Attunement.** You can use your action to briefly control elemental forces within 30 feet of you, causing one of the following effects of your choice:\n\n* Create a harmless, instantaneous sensory effect related to air, earth, fire, or water, such as a shower of sparks, a puff of wind, a spray of light mist, or a gentle rumbling of stone.\n* Instantaneously light or snuff out a candle, a torch, or a small campfire.\n* Chill or warm up to 1 pound o f nonliving material for up to 1 hour.\n* Cause earth, fire, water, or mist that can fit within a 1-foot cube to shape itself into a crude form you designate for 1 minute.\n\n**Eternal Mountain Defense (17th Level Required).** You can spend 5 ki points to cast stoneskin, targeting yourself.\n\n**Fangs of the Fire Snake.** When you use the Attack action on your turn, you can spend 1 ki point to cause tendrils of flame to stretch out from your fists and feet.\n\nYour reach with your unarmed strikes increases by 10 feet for that action, as well as the rest of the turn. A hit with such an attack deals fire damage instead of bludgeoning damage, and if you spend 1 ki point when the attack hits, it also deals an extra 1d10 fire damage.\n\n**Fist of Four Thunders.** You can spend 2 ki points to cast thunderwave.\n\n**Fist of Unbroken Air.** You can create a blast of compressed air that strikes like a mighty fist. As an action, you can spend 2 ki points and choose a creature within 30 feet o f you. That creature must make a Strength saving throw. On a failed save, the creature takes 3d10 bludgeoning damage, plus an extra 1d10 bludgeoning damage for each additional ki point you spend, and you can push the creature up to 20 feet away from you and knock it prone. On a successful save, the creature takes half as much damage, and you don’t push it or knock it prone.\n\n**Flames of the Phoenix (11th Level Required).** You can spend 4 ki points to cast fireball.\n\n**Gong of the Summit (6th Level Required). You can spend 3 ki points to cast shatter.\n\n**Mist Stance (11th Level Required).** You can spend 4 ki points to cast gaseous form, targeting yourself.\n\n**Ride the Wind (11th Level Required).** You can spend 4 ki points to cast fly, targeting yourself.\n\n**River of Hungry Flame (17th Level Required). You can spend 5 ki points to cast wall of fire.\n\n**Rush of the Gale Spirits.** You can spend 2 ki points to cast gust of wind.\n\n**Shape the Flowing River.** As an action, you can spend 1 ki point to choose an area of ice or water no larger than 30 feet on a side within 120 feet o f you. You can change water to ice within the area and vice versa, and you can reshape ice in the area in any manner you choose. You can raise or lower the ice’s elevation, create or fill in a trench, erect or flatten a wall, or form a pillar. The extent of any such changes can’t exceed half the area’s largest dimension. For example, if you affect a 30-foot square, you can create a pillar up to 15 feet high, raise or lower the square’s elevation by up to 15 feet, dig a trench up to 15 feet deep, and so on. You can’t shape the ice to trap or injure a creature in the area.\n\n**Sweeping Cinder Strike.** You can spend 2 ki points to cast burning hands.\n\n**Water Whip.** You can spend 2 ki points as an action to create a whip of water that shoves and pulls a creature to unbalance it. A creature that you can see that is within 30 feet of you must make a Dexterity saving throw. On a failed save, the creature takes 3d10 bludgeoning damage, plus an extra 1d10 bludgeoning damage for each additional ki point you spend, and you can either knock it prone or pull it up to 25 feet closer to you. On a successful save, the creature takes half as much damage, and you don’t pull it or knock it prone.\n\n**Wave o f Rolling Earth (17th Level Required).** You can spend 6 ki points to cast wall of stone."
+          "description": "When you choose this tradition at 3rd level, you learn magical disciplines that harness the power of the four elements. A discipline requires you to spend ki points each time you use it.\n\nYou know the Elemental Attunement discipline and one other elemental discipline of your choice, which are detailed in the \"Elemental Disciplines\" section below. You learn an additional elemental discipline at each odd number monk level after this one (5th, 7th, 9th, 11th, 13th, 15th, 17th, and 19th). Whenever you learn a new elemental discipline, you can also replace one elemental discipline that you already know with a different discipline.\n\n**Casting Elemental Spells.** Some elemental disciplines allow you to cast spells. See chapter 10 for the general rules of spellcasting. To cast one of these spells, you use its casting time and other rules, but you don’t need to provide material components for it.\n\nOnce you reach 5th level in this class, you can spend additional ki points to increase the level of an elemental discipline spell that you cast, provided that the spell has an enhanced effect at a higher level, as burning hands does. The spell's level increases by 1 for each additional ki point you spend. For example, if you are a 5th-level monk and use Sweeping Cinder Strike to cast burning hands, you can spend 2 ki points to cast it as a 2nd-level spell (the discipline’s base cost of 1 ki point plus 1).\n\nThe maximum number of ki points you can spend to cast a spell in this way (including its base ki point cost and any additional ki points you spend to increase its level) is equal to 1/4 of your monk level (rounded up).\n\n#### Elemental Disciplines\n\nThe elemental disciplines are presented in alphabetical order. If a discipline requires a level, you must be that level in this class to learn the discipline.\n\n**Breath of Winter (17th Level Required).** You can spend 5 ki points to cast cone of cold.\n\n**Clench of the North Wind (5th Level Required).** You can spend 2 ki points to cast hold person.\n\n**Elemental Attunement.** You can use your action to briefly control elemental forces within 30 feet of you, causing one of the following effects of your choice:\n\n* Create a harmless, instantaneous sensory effect related to air, earth, fire, or water, such as a shower of sparks, a puff of wind, a spray of light mist, or a gentle rumbling of stone.\n* Instantaneously light or snuff out a candle, a torch, or a small campfire.\n* Chill or warm up to 1 pound of nonliving material for up to 1 hour.\n* Cause earth, fire, water, or mist that can fit within a 1-foot cube to shape itself into a crude form you designate for 1 minute.\n\n**Eternal Mountain Defense (13th Level Required).** You can spend 4 ki points to cast stoneskin, targeting yourself.\n\n**Fangs of the Fire Snake.** When you use the Attack action on your turn, you can spend 1 ki point to cause tendrils of flame to stretch out from your fists and feet.\n\nYour reach with your unarmed strikes increases by 10 feet for that action, as well as the rest of the turn. A hit with such an attack deals fire damage instead of bludgeoning damage, and if the attack hits, it also deals an extra 1d10 fire damage.\n\n**Fist of Four Thunders.** You can spend 1 ki points to cast thunderwave.\n\n**Fist of Unbroken Air.** You can create a blast of compressed air that strikes like a mighty fist. As an action, you can spend 1 ki points and choose a creature within 30 feet of you. That creature must make a Strength saving throw. On a failed save, the creature takes 3d10 bludgeoning damage, plus an extra 1d10 bludgeoning damage for each additional ki point you spend, and you can push the creature up to 20 feet away from you and knock it prone. On a successful save, the creature takes half as much damage, and you don’t push it or knock it prone.\n\n**Flames of the Phoenix (9th Level Required).** You can spend 3 ki points to cast fireball.\n\n**Gong of the Summit (5th Level Required). You can spend 2 ki points to cast shatter.\n\n**Mist Stance (9th Level Required).** You can spend 3 ki points to cast gaseous form, targeting yourself.\n\n**Ride the Wind (9th Level Required).** You can spend 3 ki points to cast fly, targeting yourself.\n\n**River of Hungry Flame (13th Level Required). You can spend 4 ki points to cast wall of fire.\n\n**Rush of the Gale Spirits.** You can spend 1 ki points to cast gust of wind.\n\n**Shape the Flowing River.** As an action, you can spend 1 ki point to choose an area of ice or water no larger than 30 feet on a side within 120 feet of you. You can change water to ice within the area and vice versa, and you can reshape ice in the area in any manner you choose. You can raise or lower the ice’s elevation, create or fill in a trench, erect or flatten a wall, or form a pillar. The extent of any such changes can’t exceed half the area’s largest dimension. For example, if you affect a 30-foot square, you can create a pillar up to 15 feet high, raise or lower the square’s elevation by up to 15 feet, dig a trench up to 15 feet deep, and so on. You can’t shape the ice to trap or injure a creature in the area.\n\n**Sweeping Cinder Strike.** You can spend 1 ki points to cast burning hands.\n\n**Water Whip.** You can spend 1 ki points as an action to create a whip of water that shoves and pulls a creature to unbalance it. A creature that you can see that is within 30 feet of you must make a Dexterity saving throw. On a failed save, the creature takes 3d10 bludgeoning damage, plus an extra 1d10 bludgeoning damage for each additional ki point you spend, and you can either knock it prone or pull it up to 25 feet closer to you. On a successful save, the creature takes half as much damage, and you don’t pull it or knock it prone.\n\n**Wave of Rolling Earth (17th Level Required).** You can spend 5 ki points to cast wall of stone."
         }
       ]
     },
     {
       "name": "Way of the Long Death",
       "castermult": 0,
+      "resources": [],
       "features": [
         {
           "level": 3,
@@ -223,6 +241,7 @@
     {
       "name": "Way of the Sun Soul",
       "castermult": 0,
+      "resources": [],
       "features": [
         {
           "level": 3,
@@ -249,6 +268,7 @@
     {
       "name": "Way of the Drunken Master",
       "castermult": 0,
+      "resources": [],
       "features": [
         {
           "level": 3,
@@ -280,6 +300,7 @@
     {
       "name": "Way of the Kensai",
       "castermult": 0,
+      "resources": [],
       "features": [
         {
           "level": 3,
@@ -306,6 +327,15 @@
     {
       "name": "Way of Mercy",
       "castermult": 0,
+      "resources": [
+        {
+          "name": "Hand of Ultimate Mercy",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 17,
+          "recovery": "longrest"
+        }
+      ],
       "features": [
         {
           "level": 3,
@@ -342,11 +372,12 @@
     {
       "name": "Way of the Astral Self",
       "castermult": 0,
+      "resources": [],
       "features": [
         {
           "level": 3,
           "name": "Arms of the Astral Self",
-          "description": "Your mastery of your ki allows you to summon a portion of your astral self. As a bonus action, you can spend 1 ki point to summon the arms of your astral self. When you do so, each creature of your choice that you can see within 10 feet of you must succeed on a Dexterity saving throw or take force damage equal to two rolls of your Martial Arts die.\n\nFor 10 minutes, these spectral arms hover near your shoulders or surround your arms (your choice). You determine the arms' appearance, and they vanish early if you are incapacitated or die.\n\nWhile the spectral arms are present, you gain the following benefits:\n\n* You can use your Wisdom midfier in place of your Strength modifier when making Strength checks and Strength saving throws.\n* You can use the spectral arms to make unarmed strikes\n* When you make an unarmed strike with the arms on your turn, your reach for it is 5 feet greater than normal.\n* The unarmed strikes you make with the arms can use your Wisdom modifier in place of your Strength or Dexterity modifier for the attack and damage rolls, and their damage type is force."
+          "description": "Your mastery of your ki allows you to summon a portion of your astral self. As a bonus action, you can spend 1 ki point to summon the arms of your astral self. When you do so, each creature of your choice that you can see within 10 feet of you must succeed on a Dexterity saving throw or take force damage equal to two rolls of your Martial Arts die.\n\nFor 10 minutes, these spectral arms hover near your shoulders or surround your arms (your choice). You determine the arms' appearance, and they vanish early if you are incapacitated or die.\n\nWhile the spectral arms are present, you gain the following benefits:\n\n* You can use your Wisdom modifier in place of your Strength modifier when making Strength checks and Strength saving throws.\n* You can use the spectral arms to make unarmed strikes\n* When you make an unarmed strike with the arms on your turn, your reach for it is 5 feet greater than normal.\n* The unarmed strikes you make with the arms can use your Wisdom modifier in place of your Strength or Dexterity modifier for the attack and damage rolls, and their damage type is force."
         },
         {
           "level": 6,

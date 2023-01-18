@@ -10,9 +10,20 @@
     "weapons": ["simple weapons", "martial weapons"],
     "tools": [],
     "saving throws": ["str", "con"],
-    "numskills": 2,
-    "skills": ["animal handling", "athletics", "intimidation", "nature", "perception", "survival"]
+    "numskills": 2
   },
+  "resources": [
+    {
+      "name": "Rage",
+      "minlevel": 1,
+      "counttype": "table",
+      "addToTable": true,
+      "count": [
+        [1, 2], [3, 3], [6, 4], [12, 5], [17, 6], [20, 99]
+      ],
+      "recovery": "longrest"      
+    }
+  ],
   "features": [
     {
       "level": 1,
@@ -42,7 +53,7 @@
     {
       "level": 3,
       "name": "Primal Knowledge",
-      "description": "When you reach 3rd level and again at 10th level, you gain proficiency in one skill of your choice from the list of skills available to barbarians at 1st level."
+      "description": "When you reach 3rd level and again at 10th level, you gain proficiency in one skill of your choice."
     },
     {
       "level": 4,
@@ -99,6 +110,7 @@
     {
       "name": "Path of the Berserker",
       "castermult": 0,
+      "resources": [],
       "features": [
         {
           "level": 3,
@@ -125,6 +137,7 @@
     {
       "name": "Path of the Totem Warrior",
       "castermult": 0,
+      "resources": [],
       "features": [
         {
           "level": 3,
@@ -154,34 +167,17 @@
       ]
     },
     {
-      "name": "Path of the Battlerager",
-      "castermult": 0,
-      "features": [
-        {
-          "level": 3,
-          "name": "Battlerager Armor",
-          "description": "When you choose this path at 3rd level, you gain the ability to use spiked armor (see the \"Spiked Armor\" sidebar) as a weapon.\n\nWhile you are wearing spiked armor and are raging, you can use a bonus action to make one melee weapon attack with your armor spikes against a target within 5 feet of you. If the attack hits, the spikes deal ld4 piercing damage. You use your Strength modifier for the attack and damage rolls.\n\nAdditionally, when you use the Attack action to grapple a creature, the target takes 3 piercing damage if your grapple check succeeds."
-        },
-        {
-          "level": 6,
-          "name": "Reckless Abandon",
-          "description": "Beginning at 6th level, when you use Reckless Attack while raging, you also gain temporary hit points equal to your Constitution modifi er (minimum of 1). They vanish if any of them are left when your rage ends ."
-        },
-        {
-          "level": 10,
-          "name": "Battlerager Charge",
-          "description": "Beginning at 10th level, you can take the Dash action as a bonus action while you are raging."
-        },
-        {
-          "level": 14,
-          "name": "Spiked Retribution",
-          "description": "Starting at 14th level, when a creature within 5 feet of you hits you with a melee attack, the attacker takes 3 piercing damage if you are raging, aren't incapacitated, and are wearing spiked armor."
-        }
-      ]
-    },
-    {
       "name": "Path of the Ancestral Guardian",
       "castermult": 0,
+      "resources": [
+        {
+          "name": "Consult the Spirits",
+          "minlevel": 10,
+          "counttype": "fixed",
+          "count": 1,
+          "recovery": "shortrest"
+        }
+      ],
       "features": [
         {
           "level": 3,
@@ -208,6 +204,7 @@
     {
       "name": "Path of the Storm Herald",
       "castermult": 0,
+      "resources": [],
       "features": [
         {
           "level": 3,
@@ -234,6 +231,15 @@
     {
       "name": "Path of the Zealot",
       "castermult": 0,
+      "resources": [
+        {
+          "name": "Zealous Presence",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 10,
+          "recovery": "longrest"
+        }
+      ],
       "features": [
         {
           "level": 3,
@@ -265,11 +271,27 @@
     {
       "name": "Path of the Beast",
       "castermult": 0,
+      "resources": [
+        {
+          "name": "Infectious Fury",
+          "counttype": "prof",
+          "count": 0,
+          "minlevel": 10,
+          "recovery": "longrest"
+        },
+        {
+          "name": "Call the Hunt",
+          "counttype": "prof",
+          "count": 0,
+          "minlevel": 14,
+          "recovery": "longrest"
+        }
+      ],
       "features": [
         {
           "level": 3,
           "name": "Form of the Beast",
-          "description": "When you enter your rage, you can transform, revealing the bestial power within you. Until the rage ends, you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier to the attack and damage rolls when you attack with it, as normal.\n\nYou choose the weapon's form each time you rage:\n\n**Bite.** Your mouth transforms into a bestial muzzle or great mandibles (your choice). It deal 1d8 piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit.\n\n**Claws.** Each of your hands transforms into a claw, which you can use as a weapon if it's empty. It deals 1d6 slashing damage on a hit. Once on each of your turns when you attack with a claw using the Attack action, you can make one additional claw attack as part of the same action.\n\n**Tail.** You grow a lashing, spiny tail, which deals 1d8 piercing damage on a hit and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled, potentially causing the attack to miss you."
+          "description": "When you enter your rage, you can transform, revealing the bestial power within you. Until the rage ends, you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier to the attack and damage rolls when you attack with it, as normal.\n\nYou choose the weapon's form each time you rage:\n\n**Bite.** Your mouth transforms into a bestial muzzle or great mandibles (your choice). It deal 1d10 piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit.\n\n**Claws.** Each of your hands transforms into a claw, which you can use as a weapon if it's empty. It deals 1d8 slashing damage on a hit. Once on each of your turns when you attack with a claw using the Attack action, you can make one additional claw attack as part of the same action.\n\n**Tail.** You grow a lashing, spiny tail, which deals 1d10 piercing damage on a hit and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled, potentially causing the attack to miss you."
         },
         {
           "level": 6,
@@ -291,6 +313,22 @@
     {
       "name": "Path of Wild Magic",
       "castermult": 0,
+      "resources": [
+        {
+          "name": "Magic Awareness",
+          "counttype": "prof",
+          "count": 0,
+          "minlevel": 3,
+          "recovery": "longrest"
+        },
+        {
+          "name": "Bolstering Magic",
+          "counttype": "prof",
+          "count": 0,
+          "minlevel": 6,
+          "recovery": "longrest"
+        }
+      ],
       "features": [
         {
           "level": 3,

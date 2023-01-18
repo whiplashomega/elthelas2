@@ -10,9 +10,17 @@
     "weapons": ["daggers", "darts", "slings", "quarterstaffs", "light crossbows"],
     "tools": [],
     "saving throws": ["intelligence", "wisdom"],
-    "numskills": 2,
-    "skills": ["arcana", "history", "insight", "investigation", "medicine", "religion"]
+    "numskills": 2
   },
+  "resources": [
+    {
+      "name": "Arcane Recovery",
+      "counttype": "fixed",
+      "count": 1,
+      "minlevel": 2,
+      "recovery": "longrest"
+    }
+  ],
   "features": [
     {
       "level": 1,
@@ -30,6 +38,21 @@
       "description": "When you reach 2nd level, you choose an arcane tradition, shaping your practice of magic through one of eight schools: Abjuration, Conjuration, Divination, Enchantment, Evocation, Illusion, Necromancy, or Transmutation, all detailed at the end of the class description.\n\nYour choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
     },
     {
+      "level": 6,
+      "name": "Arcane Tradition Feature (6th)",
+      "description": ""
+    },
+    {
+      "level": 10,
+      "name": "Arcane Tradition Feature (10th)",
+      "description": ""
+    },
+    {
+      "level": 14,
+      "name": "Arcane Tradition Feature (14th)",
+      "description": ""
+    },
+    {
       "level": 3,
       "name": "Cantrip Formulas",
       "description": "You have scribed a set of arcane formulas in your spellbook that you can use to formulate a cantrip in your mind. Whenever you finish a long rest and consult those formulas in your spellbook, you can replace one wizard cantrip you know with another cantrip from the wizard spell list."
@@ -40,6 +63,26 @@
       "description": "When you reach 4th level, and again at 8th,  12th,  16th, and  19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
     },
     {
+      "level": 8,
+      "name": "Ability Score Improvement (8th)",
+      "description": "When you reach 4th level, and again at 8th,  12th,  16th, and  19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+    },
+    {
+      "level": 12,
+      "name": "Ability Score Improvement (12th)",
+      "description": "When you reach 4th level, and again at 8th,  12th,  16th, and  19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+    },
+    {
+      "level": 16,
+      "name": "Ability Score Improvement (16th)",
+      "description": "When you reach 4th level, and again at 8th,  12th,  16th, and  19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+    },
+    {
+      "level": 19,
+      "name": "Ability Score Improvement (19th)",
+      "description": "When you reach 4th level, and again at 8th,  12th,  16th, and  19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+    },
+    {
       "level": 18,
       "name": "Spell Mastery",
       "description": "At 18th level, you have achieved such mastery over certain spells that you can cast them at will. Choose a 1st-level wizard spell and a 2nd-level wizard spell that are in your spellbook. You can cast those spells at their lowest level without expending a spell slot when you have them prepared. If you want to cast either spell at a higher level, you must expend a spell slot as normal.\n\nBy spending 8 hours in study, you can exchange one or both of the spells you chose for different spells of the same levels."
@@ -47,13 +90,14 @@
     {
       "level": 20,
       "name": "Signature Spells",
-      "description": "When you reach 20th level, you gain mastery over two powerful spells and can cast them with little effort. Choose two 3rd-level wizard spells in your spellbook as your signature spells. You always have these spells prepared, they don’t count against the number of spells you have prepared, and you can cast each of them once at 3rd level without expending a spell slot. W hen you do so, you can’t do so again until you finish a short or long rest.\n\nIf you want to cast either spell at a higher level, you must expend a spell slot as normal."
+      "description": "When you reach 20th level, you gain mastery over two powerful spells and can cast them with little effort. Choose two 3rd-level wizard spells in your spellbook as your signature spells. You always have these spells prepared, they don’t count against the number of spells you have prepared, and you can cast each of them once at 3rd level without expending a spell slot. When you do so, you can’t do so again until you finish a short or long rest.\n\nIf you want to cast either spell at a higher level, you must expend a spell slot as normal."
     }
   ],
   "subclass": [
     {
       "name": "School of Necromancy",
       "castermult": 1,
+      "resources": [],
       "features": [
         {
           "level": 2,
@@ -63,7 +107,7 @@
         {
           "level": 2,
           "name": "Expanded Spellbook",
-          "description": "This feature is homebrew, get your DM's permission to use it. You are studied in the art of Necromancy. As part of your studies you have memorized certain necromancy spells. Add the following spells to your spellbook at the level listed. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells.\n\n* 2nd - False Life\n* 3rd - Ray of Enfeeblement\n* 5th - Summon Undead\n* 7th - Blight\n* 9th - Negative Energy Flood"
+          "description": "You are studied in the art of Necromancy. As part of your studies you have memorized certain necromancy spells. Add the following spells to your spellbook at the level listed. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells.\n\n* 2nd - False Life\n* 3rd - Ray of Enfeeblement\n* 5th - Summon Undead\n* 7th - Blight\n* 9th - Negative Energy Flood"
         },
         {
           "level": 2,
@@ -90,6 +134,15 @@
     {
       "name": "School of Abjuration",
       "castermult": 1,
+      "resources": [
+        {
+          "name": "Arcane Ward",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 2,
+          "recovery": "longrest"
+        }
+      ],
       "features": [
         {
           "level": 2,
@@ -104,7 +157,7 @@
         {
           "level": 2,
           "name": "Expanded Spellbook",
-          "description": "This feature is homebrew, get your DM's permission to use it. You are studied in the art of Abjuration. As part of your studies you have memorized certain abjuration spells. Add the following spells to your spellbook at the level listed. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells.\n\n* 2nd - Mage Armor\n* 3rd - Protection from Poison\n* 5th - Magic Circle\n* 7th - Freedom of Movement\n* 9th - Dispel Evil and Good"
+          "description": "You are studied in the art of Abjuration. As part of your studies you have memorized certain abjuration spells. Add the following spells to your spellbook at the level listed. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells.\n\n* 2nd - Mage Armor\n* 3rd - Protection from Poison\n* 5th - Magic Circle\n* 7th - Freedom of Movement\n* 9th - Dispel Evil and Good"
         },
         {
           "level": 6,
@@ -126,6 +179,15 @@
     {
       "name": "School of Conjuration",
       "castermult": 1,
+      "resources": [
+        {
+          "name": "Benign Transposition",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 6,
+          "recovery": "longrest"
+        }
+      ],
       "features": [
         {
           "level": 2,
@@ -140,7 +202,7 @@
         {
           "level": 2,
           "name": "Expanded Spellbook",
-          "description": "This feature is homebrew, get your DM's permission to use it. You are studied in the art of Necromancy. As part of your studies you have memorized certain necromancy spells. Add the following spells to your spellbook at the level listed. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells.\n\n* 2nd - Grease\n* 3rd - Misty Step\n* 5th - Summon Shadowspawn\n* 7th - Dimension Door\n* 9th - Cloudkill"
+          "description": "You are studied in the art of Necromancy. As part of your studies you have memorized certain necromancy spells. Add the following spells to your spellbook at the level listed. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells.\n\n* 2nd - Grease\n* 3rd - Misty Step\n* 5th - Summon Shadowspawn\n* 7th - Dimension Door\n* 9th - Cloudkill"
         },
         {
           "level": 6,
@@ -162,6 +224,15 @@
     {
       "name": "School of Diviniation",
       "castermult": 1,
+      "resources": [
+        {
+          "name": "Portent",
+          "counttype": "table",
+          "count": [[2,2],[14,3]],
+          "minlevel": 2,
+          "recovery": "longrest"
+        }
+      ],
       "features": [
         {
           "level": 2,
@@ -176,7 +247,7 @@
         {
           "level": 2,
           "name": "Expanded Spellbook",
-          "description": "This feature is homebrew, get your DM's permission to use it. You are studied in the art of Divination. As part of your studies you have memorized certain divination spells. Add the following spells to your spellbook at the level listed. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells.\n\n* 2nd - Detect Magic\n* 3rd - See Invisibility\n* 5th - Tongues\n* 7th - Locate Creature\n* 9th - Legend Lore"
+          "description": "You are studied in the art of Divination. As part of your studies you have memorized certain divination spells. Add the following spells to your spellbook at the level listed. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells.\n\n* 2nd - Detect Magic\n* 3rd - See Invisibility\n* 5th - Tongues\n* 7th - Locate Creature\n* 9th - Legend Lore"
         },
         {
           "level": 6,
@@ -198,6 +269,7 @@
     {
       "name": "School of Enchantment",
       "castermult": 1,
+      "resources": [],
       "features": [
         {
           "level": 2,
@@ -212,7 +284,7 @@
         {
           "level": 2,
           "name": "Expanded Spellbook",
-          "description": "This feature is homebrew, get your DM's permission to use it. You are studied in the art of Enchantment. As part of your studies you have memorized certain enchantment spells. Add the following spells to your spellbook at the level listed. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells.\n\n* 2nd - Command\n* 3rd - Calm Emotions\n* 5th - Enemies Abound\n* 7th - Dominate Beast\n* 9th - Hold Monster"
+          "description": "You are studied in the art of Enchantment. As part of your studies you have memorized certain enchantment spells. Add the following spells to your spellbook at the level listed. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells.\n\n* 2nd - Command\n* 3rd - Calm Emotions\n* 5th - Enemies Abound\n* 7th - Dominate Beast\n* 9th - Hold Monster"
         },
         {
           "level": 6,
@@ -234,6 +306,15 @@
     {
       "name": "School of Evocation",
       "castermult": 1,
+      "resources": [
+        {
+          "name": "Overchannel",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 14,
+          "recovery": "longrest"
+        }
+      ],
       "features": [
         {
           "level": 2,
@@ -248,7 +329,7 @@
         {
           "level": 2,
           "name": "Expanded Spellbook",
-          "description": "This feature is homebrew, get your DM's permission to use it. You are studied in the art of Evocation. As part of your studies you have memorized certain evocation spells. Add the following spells to your spellbook at the level listed. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells.\n\n* 2nd - Chromatic Orb\n* 3rd - Shatter\n* 5th - Melf's Minute Meteors\n* 7th - Ice Storm\n* 9th - Wall of Stone"
+          "description": "You are studied in the art of Evocation. As part of your studies you have memorized certain evocation spells. Add the following spells to your spellbook at the level listed. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells.\n\n* 2nd - Chromatic Orb\n* 3rd - Shatter\n* 5th - Melf's Minute Meteors\n* 7th - Ice Storm\n* 9th - Wall of Stone"
         },
         {
           "level": 6,
@@ -270,6 +351,15 @@
     {
       "name": "School of Illusion",
       "castermult": 1,
+      "resources": [
+        {
+          "name": "Illusory Self",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 10,
+          "recovery": "shortrest"
+        }
+      ],
       "features": [
         {
           "level": 2,
@@ -284,7 +374,7 @@
         {
           "level": 2,
           "name": "Expanded Spellbook",
-          "description": "This feature is homebrew, get your DM's permission to use it. You are studied in the art of Illusion. As part of your studies you have memorized certain illusion spells. Add the following spells to your spellbook at the level listed. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells.\n\n* 2nd - Silent Image\n* 3rd - Invisibility\n* 5th - Fear\n* 7th - Hallucinatory Terrain\n* 9th - Mislead"
+          "description": "You are studied in the art of Illusion. As part of your studies you have memorized certain illusion spells. Add the following spells to your spellbook at the level listed. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells.\n\n* 2nd - Silent Image\n* 3rd - Invisibility\n* 5th - Fear\n* 7th - Hallucinatory Terrain\n* 9th - Mislead"
         },
         {
           "level": 6,
@@ -306,6 +396,22 @@
     {
       "name": "School of Transmutation",
       "castermult": 1,
+      "resources": [
+        {
+          "name": "Shapechanger",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 10,
+          "recovery":"longrest"
+        },
+        {
+          "name": "Master Transmuter",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 14,
+          "recovery":"longrest"
+        }
+      ],
       "features": [
         {
           "level": 2,
@@ -320,12 +426,12 @@
         {
           "level": 2,
           "name": "Expanded Spellbook",
-          "description": "This feature is homebrew, get your DM's permission to use it. You are studied in the art of Transmutation. As part of your studies you have memorized certain transmutation spells. Add the following spells to your spellbook at the level listed. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells.\n\n* 2nd - Feather Fall\n* 3rd - Enhance Ability\n* 5th - Fly\n* 7th - Polymorph\n* 9th - Transmute Rock"
+          "description": "You are studied in the art of Transmutation. As part of your studies you have memorized certain transmutation spells. Add the following spells to your spellbook at the level listed. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells.\n\n* 2nd - Feather Fall\n* 3rd - Enhance Ability\n* 5th - Fly\n* 7th - Polymorph\n* 9th - Transmute Rock"
         },
         {
           "level": 6,
           "name": "Transmuter's Stone",
-          "description": "Starting at 6th level, you can spend 8 hours creating a transmuter’s stone that stores transmutation magic. You can benefit from the stone yourself or give it to another creature. A creature gains a benefit of your choice as long as the stone is in the creature’s possession. When you create the stone, choose the benefit from the following options:\n\n* Darkvision out to a range o f 60 feet, as described in chapter 8\n* An increase to speed of 10 feet while the creature is unencumbered\n* Proficiency in Constitution saving throws\n* Resistance to acid, cold, fire, lightning, or thunder damage (your choice whenever you choose this benefit)\n\nEach time you cast a transmutation spell o f 1st level or higher, you can change the effect of your stone if the stone is on your person.\n\nIf you create a new transmuter’s stone, the previous one ceases to function."
+          "description": "Starting at 6th level, you can spend 8 hours creating a transmuter’s stone that stores transmutation magic. You can benefit from the stone yourself or give it to another creature. A creature gains a benefit of your choice as long as the stone is in the creature’s possession. When you create the stone, choose the benefit from the following options:\n\n* Darkvision out to a range of 60 feet, as described in chapter 8\n* An increase to speed of 10 feet while the creature is unencumbered\n* Proficiency in Constitution saving throws\n* Resistance to acid, cold, fire, lightning, or thunder damage (your choice whenever you choose this benefit)\n\nEach time you cast a transmutation spell of 1st level or higher, you can change the effect of your stone if the stone is on your person.\n\nIf you create a new transmuter’s stone, the previous one ceases to function."
         },
         {
           "level": 10,
@@ -340,44 +446,17 @@
       ]
     },
     {
-      "name": "Bladesinging",
-      "castermult": 1,
-      "features": [
-        {
-          "level": 2,
-          "name": "Training in War and Song",
-          "description": "When you adopt this tradition at 2nd level, you gain proficiency with light armor, and you gain proficiency with one type of one-handed melee weapon of your choice.\n\nYou also gain proficiency in the Performance skill if you don't already have it."
-        },
-        {
-          "level": 2,
-          "name": "Bladesong",
-          "description": "You can invoke a secret elven magic called the Bladesong, provided that you aren't wearing medium or heavy armor or using a shield. It graces you with supernatural speed, agility, and focus.\n\nYou can use a bonus action to start the Bladesong, which lasts for 1 minute. It ends early if you are incapacitated, if you don medium or heavy armor or a shield, or if you use two hands to make an attack with a weapon. You can also dismiss the Bladesong at any time you choose (no action required).\n\nWhile your Bladesong is active, you gain the following benefits:\n\n* You gain a bonus to your AC equal to your Intelligence modifier (minimum of+ 1).\n* Your walking speed increases by 10 feet.\n* You have advantage on Dexterity (Acrobatics) checks.\n* You gain a bonus to any Constitution saving throw you make to maintain your concentration on a spell. The bonus equals your Intelligence modifier (minimum of +l).\n\nYou can use this feature a number of times equal to your proficiency bonus, You regain all expended uses of it when you finish a long rest."
-        },
-        {
-          "level": 2,
-          "name": "Expanded Spellbook",
-          "description": "This feature is homebrew, get your DM's permission to use it. You are studied in the art of weaving magic to enhance your combat prowess. As part of your studies you have memorized certain spells. Add the following spells to your spellbook at the level listed. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells.\n\n* 2nd - Longstrider\n* 3rd - Shadow Blade\n* 5th - Haste\n* 7th - Stoneskin\n* 9th - Steel Wind Strike"
-        },
-        {
-          "level": 6,
-          "name": "Extra Attack",
-          "description": "You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast one of your cantrips in place of one of those attacks."
-        },
-        {
-          "level": 10,
-          "name": "Song of Defense",
-          "description": "Beginning at 10th level, you can direct your magic to absorb damage while your Bladesong is active. When you take damage, you can use your reaction to expend one spell slot and reduce that damage to you by an amount equal to five times the spell slot's level."
-        },
-        {
-          "level": 14,
-          "name": "Song of Victory",
-          "description": "Starting at 14th level, you add your Intelligence modifier (minimum of +1) to the damage of your melee weapon attacks while your Bladesong is active."
-        }
-      ]
-    },
-        {
       "name": "College of Bladesingers (Homebrew)",
       "castermult": 1,
+      "resources": [
+        {
+          "name": "Bladesong",
+          "counttype": "prof",
+          "count": 0,
+          "minlevel": 2,
+          "recovery": "longrest"
+        }
+      ],
       "features": [
         {
           "level": 2,
@@ -412,13 +491,22 @@
       ]
     },
     {
-      "name": "War Magic",
+      "name": "College of War Magic",
       "castermult": 1,
+      "resources": [
+        {
+          "name": "Arcane Deflection",
+          "counttype": "prof",
+          "count": 0,
+          "minlevel": 2,
+          "recovery": "longrest"
+        }
+      ],
       "features": [
         {
           "level": 2,
           "name": "Arcane Deflection",
-          "description": "At 2nd level, you have learned to weave your magic to fortify yourself against harm. When you are hit by an attack or you fail a saving throw, you can use your reaction to gain a +2 bonus to your AC against that attack or a +4 bonus to that saving throw.\n\nWhen you use this feature, you can't cast spells other than cantrips until the end of your next turn."
+          "description": "At 2nd level, you have learned to weave your magic to fortify yourself against harm. When you are hit by an attack or you fail a saving throw, you can use your reaction to gain a +2 bonus to your AC against that attack or a +4 bonus to that saving throw.\n\nYou can use this feature a number of times equal to your proficiency bonus and recover all expended uses when you finish a long rest."
         },
         {
           "level": 2,
@@ -428,7 +516,7 @@
         {
           "level": 2,
           "name": "Expanded Spellbook",
-          "description": "This feature is homebrew, get your DM's permission to use it. You are studied in the art of Combat Magic. As part of your studies you have memorized certain combat spells. Add the following spells to your spellbook at the level listed. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells.\n\n* 2nd - Magic Missile\n* 3rd - Flaming Sphere\n* 5th - Counterspell\n* 7th - Storm Sphere\n* 9th - Dawn"
+          "description": "You are studied in the art of Combat Magic. As part of your studies you have memorized certain combat spells. Add the following spells to your spellbook at the level listed. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells.\n\n* 2nd - Magic Missile\n* 3rd - Flaming Sphere\n* 5th - Counterspell\n* 7th - Storm Sphere\n* 9th - Dawn"
         },
         {
           "level": 6,
@@ -450,6 +538,22 @@
     {
       "name": "Order of Scribes",
       "castermult": 1,
+      "resources": [
+        {
+          "name": "Manifest Mind",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 6,
+          "recovery": "longrest"
+        },
+        {
+          "name": "One with the Word",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 14,
+          "recovery": "longrest"
+        }
+      ],
       "features": [
         {
           "level": 2,
@@ -464,7 +568,7 @@
         {
           "level": 2,
           "name": "Expanded Spellbook",
-          "description": "This feature is homebrew, get your DM's permission to use it. You are studied in the art of Lore magic. As part of your studies you have memorized certain lore spells. Add the following spells to your spellbook at the level listed. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells.\n\n* 2nd - illusory script\n* 3rd - augury\n* 5th - glyph of warding\n* 7th - arcane eye\n* 9th - modify memory"
+          "description": "You are studied in the art of Lore magic. As part of your studies you have memorized certain lore spells. Add the following spells to your spellbook at the level listed. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells.\n\n* 2nd - illusory script\n* 3rd - augury\n* 5th - glyph of warding\n* 7th - arcane eye\n* 9th - modify memory"
         },
         {
           "level": 6,

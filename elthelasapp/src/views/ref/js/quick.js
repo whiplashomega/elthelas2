@@ -7,10 +7,10 @@ export default {
   setup () {
     const statics = useStaticsStore();
     const userinfo = useUserStore();
-    const { spells, equipment, armor, weapons, homebrewweapons } = statics;
+    const { spellsv2: spells, equipment, armorv2: armor, weaponsv2: weapons } = statics;
     useMeta({ title: "Quick Reference Manual" });
     return {
-      userinfo, spells, equipment, armor, weapons, marked, homebrewweapons
+      userinfo, spells, equipment, armor, weapons, marked
     };
   },
   components: {
@@ -74,7 +74,7 @@ export default {
       return spells;
     },
     fhweapons () {
-      return this.homebrewweapons.filter((a) => {
+      return this.weapons.filter((a) => {
         for (var key in a) {
           if (a[key].toString().toLowerCase().includes(this.homebrewweaponstable.filter.toLowerCase())) {
             return true;
@@ -144,6 +144,29 @@ export default {
       }).sort((a, b) => {
         let sortBy = this.armortable.sortBy;
         let sortDesc = this.armortable.sortDesc;
+        if (a[sortBy] === b[sortBy]) {
+          if (a.Type === "Light" && b.Type === "Light") {
+            return a.Weight > b.Weight ? 1 : -1;
+          } else if (a.Type === "Light") {
+            return -1;
+          } else if (b.Type === "Light") {
+            return 1;
+          } else if (a.Type === "Medium" && b.Type === "Medium") {
+            return a.Weight > b.Weight ? 1 : -1;
+          } else if (a.Type === "Medium") {
+            return -1;
+          } else if (b.Type === "Medium") {
+            return 1;
+          } else if (a.Type === "Heavy" && b.Type === "Heavy") {
+            return a.Weight > b.Weight ? 1 : -1;
+          }else if (a.Type === "Heavy") {
+            return -1;
+          } else if (b.Type === "Heavy") {
+            return 1;
+          } else {
+            return 1;
+          }
+        }
         if ((a[sortBy] > b[sortBy] && !sortDesc) || (a[sortBy] < b[sortBy] && sortDesc)) {
           return 1;
         } else {
@@ -222,7 +245,7 @@ export default {
           { key: "Time to Craft", label: "Time to Craft", sortable: true }
         ],
         filter: "",
-        sortBy: "Armor",
+        sortBy: "Rarity",
         sortDesc: false
       },
       homebrewweaponstable: {

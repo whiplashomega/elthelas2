@@ -254,19 +254,22 @@ export default {
       if (a.thisclass.name === "Sorcerer") {
         num = Math.min(a.level, 11) + 1;
         num += Math.floor(Math.max(0, Math.min(a.level, 17) - 11) / 2);
-        if (character.housespellsknown && a.selsubclass.name !== "Wild Magic") {
+        if (a.selsubclass.name !== "Wild Magic") {
           num += 2 + Math.floor(Math.min(a.level - 1, 8) / 2) * 2;
         }
       }
-      if (a.thisclass.name === "Warlock" || a.thisclass.name === "Warlock (Joe's Edit)") {
+      if (a.thisclass.name === "Warlock") {
         num = Math.min(a.level, 9) + 1;
         num += Math.floor(Math.max(0, a.level - 9) / 2);
         if (character.housespellsknown) {
           num += 2 + Math.floor(Math.min(a.level - 1, 8) / 2) * 2;
         }
       }
-      if (a.thisclass.name === "Wizard" && character.housespellsknown && a.level >= 2) {
+      if (a.thisclass.name === "Wizard" && a.level >= 2) {
         num += 1 + Math.floor(Math.min(a.level - 1, 8) / 2);
+      }
+      if (a.thisclass.name === "Druid" && (a.selsubclass.name === "Circle of the Land" || a.selsubclass.name === "Circle of Spores")) {
+        num += Math.floor(Math.min(a.level - 1, 8) / 2) * 2;
       }
       if (a.thisclass.name === "Bard") {
         num = this.bardPrepared(a);
@@ -276,8 +279,8 @@ export default {
       }
       if (a.thisclass.name === "Ranger" && a.level >= 2) {
         num = Math.ceil(a.level / 2) + 1;
-        if (((a.selsubclass.name !== "Hunter Conclave" && a.selsubclass.name !== "Beast Master") || character.housespellsknown) && a.level >= 3) {
-          num += (Math.floor((a.level - 1) / 4) + 1);
+        if (a.level >= 3) {
+          num += (Math.floor((a.level - 1) / 4) + 1) * 2;
         }
       }
       if (a.thisclass.name === "Paladin" && a.level > 2) {

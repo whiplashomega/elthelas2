@@ -88,7 +88,8 @@ function personalhistoryjson () {
   }
 }
 
-function spellsjson () {
+function spellsjson (dir) {
+  source = "./data/" + dir;
   function intersect(arrays) {
     return arrays.shift().filter(function(v) {
         return arrays.every(function(a) {
@@ -96,10 +97,10 @@ function spellsjson () {
         });
     });
   }
-  var files = fs.readdirSync("./data/spells");
+  var files = fs.readdirSync(source);
   var spellarray = [];
   files.forEach(function(file) {
-    var data = fs.readFileSync("./data/spells/" + file, "utf-8");
+    var data = fs.readFileSync(source + "/" + file, "utf-8");
     var spell = {};
     var filearray = data.split('\n');
         
@@ -131,8 +132,8 @@ function spellsjson () {
     spellarray.push(spell);
   });
   if(spellarray.length === files.length) {
-    fs.writeFile("./elthelasapp/public/json/spells.json", JSON.stringify({ "model": "Spell", "documents": spellarray }), "utf-8", function() {
-      console.log("writing spells.json");
+    fs.writeFile("./elthelasapp/public/json/" + dir + ".json", JSON.stringify({ "model": "Spell", "documents": spellarray }), "utf-8", function() {
+      console.log("writing " + dir + ".json");
     });
   }
 }
@@ -171,7 +172,8 @@ function jsonmin(sourcefile, destination) {
 function jsoncompile () {
   console.log("starting");
   Promise.all([
-    jsonmin('./data/joeweapons.json', './elthelasapp/public/json/joeweapons.json'),
+    jsonmin('./data/joeweapons.json', './elthelasapp/public/json/weaponsv2.json'),
+    jsonmin('./data/joearmor.json', './elthelasapp/public/json/armorv2.json'),
     jsonmin('./data/feats.json', './elthelasapp/public/json/feats.json'), //weapons
     jsonmin('./data/weapons.json', './elthelasapp/public/json/weapons.json'), //armor
     jsonmin('./data/armor.json', './elthelasapp/public/json/armor.json'), //equipment
@@ -190,12 +192,14 @@ function jsoncompile () {
     compiledir("./data/nations", "./elthelasapp/public/json/nations.json", "Nation"), //nations
     compiledir("./data/backgrounds", "./elthelasapp/public/json/backgrounds.json", "Background"), //backgrounds
     compiledir("./data/classes", "./elthelasapp/public/json/classes.json", "CharClass"), //classes
+    compiledir("./data/classesv2", "./elthelasapp/public/json/classesv2.json", "CharClass"), //classes
     compiledir("./data/territories", "./elthelasapp/public/json/territories.json", "Territories")]).then(function() {
       console.log("all finished");
     });
 }
 
-spellsjson();
+spellsjson("spells");
+spellsjson("spellsv2");
 historyjson();
 personalhistoryjson();
 jsoncompile();

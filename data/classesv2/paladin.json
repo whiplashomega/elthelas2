@@ -10,11 +10,38 @@
     "weapons": ["simple weapons", "martial weapons"],
     "tools": [],
     "saving throws": ["wis", "cha"],
-    "numskills": 2,
-    "skills": [
-      "athletics", "insight", "intimidation", "medicine", "persuasion", "religion"
-    ]
+    "numskills": 2
   },
+  "resources": [
+    {
+      "name": "Divine Sense",
+      "counttype": "CHA1",
+      "count": 1,
+      "minlevel": 1,
+      "recovery": "longrest"
+    },
+    {
+      "name": "Lay on Hands",
+      "counttype": "level5",
+      "count": 0,
+      "minlevel": 1,
+      "recovery": "longrest"
+    },
+    {
+      "name": "Channel Divinity",
+      "counttype": "fixed",
+      "count": 1,
+      "minlevel": 3,
+      "recovery": "shortrest"
+    },
+    {
+      "name": "Cleansing Touch",
+      "counttype": "CHA1",
+      "count": 0,
+      "minlevel": 14,
+      "recovery": "longrest"
+    }
+  ],
   "features": [
     {
       "level": 1,
@@ -37,9 +64,9 @@
       "description": "By 2nd level, you have learned to draw on divine magic through meditation and prayer to cast spells as a cleric does. See chapter 10 for the general rules o f spellcasting and chapter 11 for the paladin spell list.\n\n#### Preparing and Casting Spells\n\nThe Paladin table shows how many spell slots you have to cast your paladin spells. To cast one o f your paladin spells of 1st level or higher, you must expend a slot o f the spell’s level or higher. You regain all expended spell slots when you finish a long rest.\n\nYou prepare the list of paladin spells that are available for you to cast, choosing from the paladin spell list. When you do so, choose a number of paladin spells equal to your Charisma modifier + half your paladin level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.\n\nFor example, if you are a 5th-level paladin, you have four 1st-level and two 2nd-level spell slots. With a Charisma of 14, your list of prepared spells can include four spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn’t remove it from your list of prepared spells.\n\nYou can change your list of prepared spells when you finish a long rest. Preparing a new list of paladin spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list.\n\n#### Spellcasting Ability\n\nCharisma is your spellcasting ability for your paladin spells, since their power derives from the strength of your convictions. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a paladin spell you cast and when making an attack roll with one.\n\nSpell save DC = 8 + your proficiency bonus + your Charisma modifier\n\nSpell attack modifier = your proficiency bonus + your Charisma modifier\n\n#### Spellcasting Focus\n\nYou can use a holy symbol (found in chapter 5) as a spellcasting focus for your paladin spells."
     },
     {
-      "level": 2,
+      "level": 3,
       "name": "Divine Smite",
-      "description": "Starting at 2nd level, when you hit a creature with a melee w eapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon’s damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend."
+      "description": "Starting at 3rd level, when you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon’s damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend."
     },
     {
       "level": 3,
@@ -49,12 +76,12 @@
     {
       "level": 3,
       "name": "Sacred Oath",
-      "description": "When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose the Oath of Devotion, the Oath of the Ancients, or the Oath of Vengeance, all detailed at the end of the class description.\n\nYour choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.\n\n#### Oath Spells\n\nEach oath has a list o f associated spells. You gain access to these spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath spells don’t count against the number of spells you can prepare each day.\n\nIf you gain an oath spell that doesn’t appear on the paladin spell list, the spell is nonetheless a paladin spell for you.\n\n#### Channel Divinity\n\nYour oath allows you to channel divine energy to fuel magical effects. Each Channel Divinity option provided by your oath explains how to use it.\n\nWhen you use your Channel Divinity, you choose which option to use. You must then finish a short or long rest to use your Channel Divinity again.\n\nSome Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your paladin spell save DC."
+      "description": "When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose the Oath of Devotion, the Oath of the Ancients, or the Oath of Vengeance, all detailed at the end of the class description.\n\nYour choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.\n\n#### Oath Spells\n\nEach oath has a list of associated spells. You gain access to these spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath spells don’t count against the number of spells you can prepare each day.\n\nIf you gain an oath spell that doesn’t appear on the paladin spell list, the spell is nonetheless a paladin spell for you.\n\n#### Channel Divinity\n\nYour oath allows you to channel divine energy to fuel magical effects. Each Channel Divinity option provided by your oath explains how to use it.\n\nWhen you use your Channel Divinity, you choose which option to use. You must then finish a short or long rest to use your Channel Divinity again.\n\nSome Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your paladin spell save DC."
     },
     {
       "level": 3,
       "name": "Harness Divine Power",
-      "description": "You can expend a use of your Channel Divinity to fuel your spells. As a bonus action, you touch your holy symbol, utter a prayer, and regain one expended spell slot, the level of which can be no higher than half your proficiency bonus (rounded up). The number of times you can use this feature is based on the level you've reached in this class: 3rd level, once; 7th level, twice; and 15th level, thrice. You regain all expended uses when you finish a long rest."
+      "description": "You can expend a use of your Channel Divinity to fuel your spells. As a bonus action, you touch your holy symbol, utter a prayer, and regain one expended spell slot, the level of which can be no higher than half your proficiency bonus (rounded up)."
     },
     {
       "level": 4,
@@ -74,12 +101,12 @@
     {
       "level": 6,
       "name": "Aura of Protection",
-      "description": "Starting at 6th level, whenever you or a friendly creature within 10 feet o f you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus o f +1). You must be conscious to grant this bonus. At 18th level, the range of this aura increases to 30 feet."
+      "description": "Starting at 6th level, whenever you or a friendly creature within 10 feet o f you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus. At 18th level, the range of this aura increases to 30 feet."
     },
     {
       "level": 10,
       "name": "Aura of Courage",
-      "description": "Starting at 10th level, you and friendly creatures within 10 feet o f you can’t be frightened while you are conscious.\n\nAt 18th level, the range of this aura increases to 30 feet."
+      "description": "Starting at 10th level, you and friendly creatures within 10 feet of you can’t be frightened while you are conscious.\n\nAt 18th level, the range of this aura increases to 30 feet."
     },
     {
       "level": 11,
@@ -96,11 +123,20 @@
     {
       "name": "Oath of Devotion",
       "castermult": 0.5,
+      "resources": [
+        {
+          "name": "Holy Nimbus",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 20,
+          "recovery": "longrest"
+        }
+      ],
       "features": [
         {
           "level": 3,
           "name": "Tenets of Devotion",
-          "description": "Though the exact w ords and strictures of the Oath of Devotion vary, paladins of this oath share these tenets.\n\n**Honesty.** Don’t lie or cheat. Let your word be your promise.\n\n**Courage.** Never fear to act, though caution is wise.\n\n**Compassion.** Aid others, protect the weak, and punish those who threaten them. Show mercy to your foes, but temper it with wisdom.\n\n**Honor.** Treat others with fairness, and let your honorable deeds be an example to them. Do as much good as possible while causing the least amount of harm.\n\n**Duty.** Be responsible for your actions and their consequences, protect those entrusted to your care, and obey those who have just authority over you."
+          "description": "Though the exact words and strictures of the Oath of Devotion vary, paladins of this oath share these tenets.\n\n**Honesty.** Don’t lie or cheat. Let your word be your promise.\n\n**Courage.** Never fear to act, though caution is wise.\n\n**Compassion.** Aid others, protect the weak, and punish those who threaten them. Show mercy to your foes, but temper it with wisdom.\n\n**Honor.** Treat others with fairness, and let your honorable deeds be an example to them. Do as much good as possible while causing the least amount of harm.\n\n**Duty.** Be responsible for your actions and their consequences, protect those entrusted to your care, and obey those who have just authority over you."
         },
         {
           "level": 3,
@@ -132,11 +168,27 @@
     {
       "name": "Oath of the Ancients",
       "castermult": 0.5,
+      "resources": [
+        {
+          "name": "Undying Sentinel",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 15,
+          "recovery": "longrest"
+        },
+        {
+          "name": "Elder Champion",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 20,
+          "recovery": "longrest"
+        }
+      ],
       "features": [
         {
           "level": 3,
           "name": "Tenets of the Ancients",
-          "description": "The tenets of the Oath o f the Ancients have been preserved for uncounted centuries. This oath emphasizes the principles of good above any concerns of law or chaos. Its four central principles are simple.\n\n**Kindle the Light.** Through your acts of mercy, kindness, and forgiveness, kindle the light of hope in the world, beating back despair.\n\n**Shelter the Light.** Where there is good, beauty, love, and laughter in the world, stand against the wickedness that w ould swallow it. Where life flourishes, stand against the forces that would render it barren.\n\n**Preserve Your Own Light.** Delight in song and laughter, in beauty and art. If you allow the light to die in your own heart, you can’t preserve it in the world.\n\n**Be the Light.** Be a glorious beacon for all who live in despair. Let the light of your joy and courage shine forth in all your deeds."
+          "description": "The tenets of the Oath of the Ancients have been preserved for uncounted centuries. This oath emphasizes the principles of good above any concerns of law or chaos. Its four central principles are simple.\n\n**Kindle the Light.** Through your acts of mercy, kindness, and forgiveness, kindle the light of hope in the world, beating back despair.\n\n**Shelter the Light.** Where there is good, beauty, love, and laughter in the world, stand against the wickedness that w ould swallow it. Where life flourishes, stand against the forces that would render it barren.\n\n**Preserve Your Own Light.** Delight in song and laughter, in beauty and art. If you allow the light to die in your own heart, you can’t preserve it in the world.\n\n**Be the Light.** Be a glorious beacon for all who live in despair. Let the light of your joy and courage shine forth in all your deeds."
         },
         {
           "level": 3,
@@ -168,6 +220,15 @@
     {
       "name": "Oath of Vengeance",
       "castermult": 0.5,
+      "resources": [
+        {
+          "name": "Avenging Angel",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 20,
+          "recovery": "longrest"
+        }
+      ],
       "features": [
         {
           "level": 3,
@@ -192,7 +253,7 @@
         {
           "level": 15,
           "name": "Soul of Vengeance",
-          "description": "Starting at 15th level, the authority with which you speak your Vow of Enmity gives you greater power over your foe. When a creature under the effect of your Vow of Enmity m akes an attack, you can use your reaction to make a melee weapon attack against that creature if it is within range."
+          "description": "Starting at 15th level, the authority with which you speak your Vow of Enmity gives you greater power over your foe. When a creature under the effect of your Vow of Enmity makes an attack, you can use your reaction to make a melee weapon attack against that creature if it is within range."
         },
         {
           "level": 20,
@@ -204,6 +265,15 @@
     {
       "name": "Oath of the Crown",
       "castermult": 0.5,
+      "resources": [
+        {
+          "name": "Exalted Champion",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 20,
+          "recovery": "longrest"
+        }        
+      ],
       "features": [
         {
           "level": 3,
@@ -240,6 +310,15 @@
     {
       "name": "Oath of Conquest",
       "castermult": 0.5,
+      "resources": [
+        {
+          "name": "Invincible Conquerer",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 20,
+          "recovery": "longrest"
+        }
+      ],
       "features": [
         {
           "level": 3,
@@ -276,6 +355,15 @@
     {
       "name": "Oath of Redemption",
       "castermult": 0.5,
+      "resources": [        
+        {
+          "name": "Emissary of Redemption",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 20,
+          "recovery": "longrest"
+        }
+      ],
       "features": [
         {
           "level": 3,
@@ -300,7 +388,7 @@
         {
           "level": 15,
           "name": "Protective Spirit",
-          "description": "Starting at 15th level, a holy presence mends your wounds in battle. You regain hit points equal to M6 + half your paladin level if you end your turn in combat with fewer than half of your hit points remaining and you aren't incapacitated."
+          "description": "Starting at 15th level, a holy presence mends your wounds in battle. You regain hit points equal to 6 + half your paladin level if you end your turn in combat with fewer than half of your hit points remaining and you aren't incapacitated."
         },
         {
           "level": 20,
@@ -312,6 +400,22 @@
     {
       "name": "Oath of Glory",
       "castermult": 0.5,
+      "resources": [
+        {
+          "name": "Glorious Defense",
+          "counttype": "CHA1",
+          "count": 1,
+          "minlevel": 15,
+          "recovery": "longrest"
+        },
+        {
+          "name": "Living Legend",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 20,
+          "recovery": "longrest"
+        }
+      ],
       "features": [
         {
           "level": 3,
@@ -348,6 +452,15 @@
     {
       "name": "Oath of the Watchers",
       "castermult": 0.5,
+      "resources": [
+        {
+          "name": "Mortal Bulwark",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 20,
+          "recovery": "longrest"
+        }
+      ],
       "features": [
         {
           "level": 3,

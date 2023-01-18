@@ -388,6 +388,28 @@ const router = createRouter({
         auth: false,
       },
     },
+    {
+      path: "/5e/quick",
+      name: "5e Quick Reference Manual",
+      components: {
+        default: () => import("@/views/5e/quick.vue"),
+      },
+      meta: {
+        title: "5e Quick Reference Manual",
+        auth: false,
+      },
+    },
+    {
+      path: "/5e/class",
+      name: "5e Classes",
+      components: {
+        default: () => import("@/views/character/class.vue"),
+      },
+      meta: {
+        title: "5e Character Classes",
+        auth: false,
+      },
+    },
     /*{
       path: '/about',
       name: 'about',

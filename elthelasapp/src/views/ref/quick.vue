@@ -121,7 +121,7 @@
       </b-tab>
       <b-tab index="1" title="Conditions">
         <h3>Conditions</h3>
-        <h4>Exhaustion (OneDND Rule)</h4>
+        <h4>Exhaustion</h4>
         <p>While you are subjected to the Exhausted Condition you experience the following effects:</p>
         <ul>
           <li><strong>Levels of Exhaustion.</strong> This Condition is cumulative. Each time you receive it, you gain 1 level of exhaustion. You die if your exhaustion level exceeds half of your constitution score (rounded up, minimum 2).</li>
@@ -1283,7 +1283,13 @@
       <b-tab index='8' title="Armor">
         <h3>Armor</h3>
         <p>
-          When ordering custom weapons and armor, the 'time cost' refers to the time required by 1 artisan to do the work by himself.  For most complex items, up to 12 workers may work on an item per day (4 working together in 3 shifts), additionally the presence of a master craftsmen allows the work to be completed in half the time.  Thus the minimum time required to create an item by a master craftsmans guild shop is 1/24 the listed time requirement, or changes the unit from days to hours.
+          Armor has two purposes, deflecting or dodging attacks, and cushioning blows such that they deal less damage. These purposes are represented by two numbers, Armor Class (AC) - which represents the armors ability to deflect blows - and Protection Class - which represents the armors ability to cushion or reduce damage. 
+        </p>
+        <p>
+          When a creature makes an attack against you, they make an attack roll. This attack roll is compared to your Armor Class. Your Armor Class is equal to the armor class of your armor, plus your dexterity modifier up to a maximum set by your armor (see the Max Dex column in the armor table). If you are wielding a shield, you then add your shields armor class to that total. If another effect, such as a class ability or spell, provides a different formula for your armor class, you choose which one to use. You must make this choice when the armor is equipped or feature takes effect. If the attack roll made against you is equal to or higher than your AC, the attack hits.
+        </p>
+        <p>
+          If an attack hits, the attacker makes a damage roll. This results in a damage number. If the attack does bludgeoning, piercing, or slashing damage, reduce this number by your protection class, to a minimum of 1. This reduction happens before any other reduction occurs, such as from resistances or feats. If multiple features, items, or spells provide different ways to calculate your AC, use the Protection Class provided by the armor or feature used for your Armor Class.
         </p>
         <b-row>
           <b-col md="6"></b-col>
@@ -1303,29 +1309,35 @@
                 <th><a href="#" @click.stop="this.armortable.sortBy='Type';this.armortable.sortDesc = !this.armortable.sortDesc">
                   Type
                 </a></th>
-                <th><a href="#" @click.stop="this.armortable.sortBy='Material';this.armortable.sortDesc = !this.armortable.sortDesc">
-                  Material
-                </a></th>
                 <th><a href="#" @click.stop="this.armortable.sortBy='AC';this.armortable.sortDesc = !this.armortable.sortDesc">
                   AC
                 </a></th>
-                <th><a href="#" @click.stop="this.armortable.sortBy='Strength';this.armortable.sortDesc = !this.armortable.sortDesc">
-                  Strength
+                <th><a href="#" @click.stop="this.armortable.sortBy='PC';this.armortable.sortDesc = !this.armortable.sortDesc">
+                  PC
+                </a></th>
+                <th><a href="#" @click.stop="this.armortable.sortBy='MaxDex';this.armortable.sortDesc = !this.armortable.sortDesc">
+                  MaxDex
                 </a></th>
                 <th><a href="#" @click.stop="this.armortable.sortBy='Stealth';this.armortable.sortDesc = !this.armortable.sortDesc">
                   Stealth
                 </a></th>
-                <th><a href="#" @click.stop="this.armortable.sortBy='Weight';this.armortable.sortDesc = !this.armortable.sortDesc">
-                  Weight
+                <th><a href="#" @click.stop="this.armortable.sortBy='Intimidation';this.armortable.sortDesc = !this.armortable.sortDesc">
+                  Intimidation
+                </a></th>
+                <th><a href="#" @click.stop="this.armortable.sortBy='Strength';this.armortable.sortDesc = !this.armortable.sortDesc">
+                  Strength
                 </a></th>
                 <th><a href="#" @click.stop="this.armortable.sortBy='Resistance';this.armortable.sortDesc = !this.armortable.sortDesc">
                   Resistance
                 </a></th>
-                <th><a href="#" @click.stop="this.armortable.sortBy='Price';this.armortable.sortDesc = !this.armortable.sortDesc">
+                <th><a href="#" @click.stop="this.armortable.sortBy='Weight';this.armortable.sortDesc = !this.armortable.sortDesc">
+                  Weight
+                </a></th>
+                <th><a href="#" @click.stop="this.armortable.sortBy='Cost';this.armortable.sortDesc = !this.armortable.sortDesc">
                   Price (gp)
                 </a></th>
-                <th><a href="#" @click.stop="this.armortable.sortBy='Time to Craft';this.armortable.sortDesc = !this.armortable.sortDesc">
-                  Time to Craft
+                <th><a href="#" @click.stop="this.armortable.sortBy='Rarity';this.armortable.sortDesc = !this.armortable.sortDesc">
+                  Rarity
                 </a></th>
               </tr>
             </thead>
@@ -1333,81 +1345,22 @@
               <tr v-for="item in filterarmor" :key="item.Armor + item.Material">
                 <td>{{item.Armor}}</td>
                 <td>{{item.Type}}</td>
-                <td>{{item.Material}}</td>
                 <td>{{item.AC}}</td>
-                <td>{{item.Strength}}</td>
+                <td>{{item.PC}}</td>
+                <td>{{ item.MaxDex }}</td>
                 <td>{{item.Stealth}}</td>
-                <td>{{item.Weight}}</td>
+                <td>{{ item.Intimidation }}</td>
+                <td>{{item.Strength}}</td>
                 <td>{{item.Resistance}}</td>
-                <td>{{item.Price}}</td>
-                <td>{{item['Time to Craft']}}</td>
+                <td>{{item.Weight}}</td>
+                <td>{{item.Cost}}</td>
+                <td>{{ item.Rarity }}</td>
               </tr>
             </tbody>
           </table>
       </b-tab>
       <b-tab index='9' title="Weapons">
         <h3>Weapons</h3>
-        <p>
-          When ordering custom weapons and armor, the 'time cost' refers to the time required by 1 artisan to do the work by himself.  For most complex items, up to 12 workers may work on an item per day (4 working together in 3 shifts), additionally the presence of a master craftsmen allows the work to be completed in half the time.  Thus the minimum time required to create an item by a master craftsmans guild shop is 1/24 the listed time requirement, or changes the unit from days to hours.
-        </p>
-        <b-row>
-          <b-col md="6"></b-col>
-          <b-col md="6" class="my-1">
-            <b-input-group>
-              <b-form-input v-model="weapontable.filter" placeholder="Type to Search" />
-              <button class="btn btn-primary" :disabled="!weapontable.filter" @click="weapontable.filter = ''">Clear</button>
-            </b-input-group>
-          </b-col>
-        </b-row>
-        <table class="table table-striped table-responsive">
-            <thead>
-              <tr>
-                <th><a href="#" @click.stop="this.weapontable.sortBy='Name';this.weapontable.sortDesc = !this.weapontable.sortDesc">
-                  Weapon
-                </a></th>
-                <th><a href="#" @click.stop="this.weapontable.sortBy='Type';this.weapontable.sortDesc = !this.weapontable.sortDesc">
-                  Type
-                </a></th>
-                <th><a href="#" @click.stop="this.weapontable.sortBy='Properties';this.weapontable.sortDesc = !this.weapontable.sortDesc">
-                  Properties
-                </a></th>
-                <th><a href="#" @click.stop="this.weapontable.sortBy='Damage';this.weapontable.sortDesc = !this.weapontable.sortDesc">
-                  Damage
-                </a></th>
-                <th><a href="#" @click.stop="this.weapontable.sortBy='Cost';this.weapontable.sortDesc = !this.weapontable.sortDesc">
-                  Cost (gp)
-                </a></th>
-                <th><a href="#" @click.stop="this.weapontable.sortBy='Weight';this.weapontable.sortDesc = !this.weapontable.sortDesc">
-                  Weight
-                </a></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="item in filterweapons" :key="item.Name">
-                <td>{{item.Name}}</td>
-                <td>{{item.Type}}</td>
-                <td>{{item.Properties}}</td>
-                <td>{{item.Damage}}</td>
-                <td>{{item.Cost}}</td>
-                <td>{{item.Weight}}</td>
-              </tr>
-            </tbody>
-          </table>
-      </b-tab>
-      <b-tab index='10' title="Advanced Weapons">
-        <h3>Advanced Weapons (Homebrew)</h3>
-        <p>
-          This is an alternative weapons table. If used for a campaign it should entirely replace the main weapons table. MOST weapons have been altered from their original in significant ways. Every effort has been made to balance these weapons against each other, and to make every weapon unique and special in some way. Homwever, the average utility of weapons has been increased over the base game. This was done purposefully to help martial characters keep pace in mid to late levels. I strongly recommend pairing this with a few other rules changes as well:
-        </p>
-        <p>Increase the die size for classes who use a special weapon as their primary weapon. Specifically:</p>
-        <ol>
-          <li>Barbarian - Path of the Beast - Form of the Beast. Tail and Bite become 1d10, Claws become 1d8</li>
-          <li>Artifier - Armorer - Armor Model. Thunder Gauntlet becomes 1d10, Lightning Launcher becomes 1d8</li>
-          <li>Monk - All - Martial arts. Die size increase by 1 (So 1d4 becomes 1d6, 1d6 becomes 1d8, 1d8 becomes 1d10, 1d10 becomes 1d12)</li>
-          <li>Rogue - Soulknife - Psychic Blades. Main attack becomes 1d8, bonus action attack becomes 1d6.</li>
-        </ol>
-        <p><strong>Natural weapons for animals and monsters (even when it is your Druid wild shaping) should remain unchanged. Only apply this to creatures that use manufactured weapons (such as Orcs).</strong></p>
-        <h4>Weapons</h4>
         <input type="text" class="form-control" v-model="homebrewweaponstable.filter" placeholder="Filter" />
         <table class="table table-striped table-responsive">
           <thead>

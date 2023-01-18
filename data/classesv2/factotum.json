@@ -10,14 +10,23 @@
     "weapons": ["simple weapons", "martial weapons"],
     "tools": ["thieves' tools"],
     "saving throws": ["dex", "int"],
-    "numskills": 3,
-    "skills": ["any"]
+    "numskills": 3
   },
+  "resources": [
+    {
+      "name": "Epiphany Points",
+      "minlevel": 1,
+      "counttype": "level",
+      "addToTable": true,
+      "count": 1,
+      "recovery": "longrest"
+    }
+  ],
   "features": [
     {
       "level": 1,
       "name": "Inspired",
-      "description": "The Factotum gets a number of epiphany points that they can spend to activate certain class features. They get epiphany points equal to their intelligence modifier plus half their class level (rounded down), minimum 1. They recover all of their epiphany points when they finish a long rest."
+      "description": "The Factotum gets a number of epiphany points that they can spend to activate certain class features. They get epiphany points equal to their level + 1. They recover all of their epiphany points when they finish a long rest."
     },
     {
       "level": 1,
@@ -67,13 +76,14 @@
     {
       "level": 20,
       "name": "Inspired Recovery",
-      "description": "At 20th level if you have less than half of your epiphany points when you roll initiative you regain enough epiphany points to put you at half your maximum."
+      "description": "At 20th level if you have less than half of your epiphany points when you roll initiative you regain enough epiphany points to put you at half your maximum (rounded down)."
     }
   ],
   "subclass": [
     {
       "name": "Brains Over Brawn",
       "castermult": 0.5,
+      "resources": [],
       "features": [
         {
           "level": 3,
@@ -88,7 +98,7 @@
         {
           "level": 10,
           "name": "Improved Inspired Damage",
-          "description": "At 10th level, when you use the inspired damage feature you add an additional 1d6 damage to the attack."
+          "description": "At 10th level, when you use the Inspired Damage feature you add an additional 1d6 damage to the attack."
         },
         {
           "level": 15,
@@ -100,6 +110,7 @@
     {
       "name": "Arcane Dilettante",
       "castermult": 0.5,
+      "resources": [],
       "features": [
         {
           "level": 3,
@@ -131,6 +142,7 @@
     {
       "name": "The Skill Monkey",
       "castermult": 0.5,
+      "resources": [],
       "features": [
         {
           "level": 3,

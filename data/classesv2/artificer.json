@@ -20,9 +20,51 @@
       "one type of artisan's tools of your choice"
     ],
     "saving throws": ["con", "int"],
-    "numskills": 2,
-    "skills": ["arcana", "history", "investigation", "medicine", "nature", "perception", "slight of hand"]
+    "numskills": 2
   },
+  "resources": [
+    {
+      "name": "Magickal Tinkering",
+      "minlevel": 1,
+      "counttype": "INT",
+      "count": 0,
+      "recovery": "none"
+    },
+    {
+      "name": "Infusions Known",
+      "minlevel": 2,
+      "counttype": "table",
+      "addToTable": true,
+      "count": [
+        [2, 4], [6, 6], [10, 8], [14, 10], [18, 12]
+      ],
+      "recovery": "none"
+    },
+    {
+      "name": "Infused Items",
+      "minlevel": 2,
+      "counttype": "table",
+      "addToTable": true,
+      "count": [
+        [2, 2], [6, 3], [10, 4], [14, 5], [18, 6]
+      ],
+      "recovery": "longrest"
+    },
+    {
+      "name": "Flash of Genius",
+      "minlevel": 7,
+      "counttype": "INT1",
+      "count": 0,
+      "recovery": "longrest"
+    },
+    {
+      "name": "Spell Storing Item",
+      "minlevel": 11,
+      "counttype": "INT2",
+      "count": 0,
+      "recovery": "longrest"
+    }
+  ],
   "features": [
     {
       "level": 1,
@@ -95,6 +137,22 @@
       "name": "Alchemist",
       "castermult": 0.5,
       "cantrips": 2,
+      "resources": [
+        {
+          "name": "Restorative Reagents",
+          "minlevel": 9,
+          "counttype": "INT1",
+          "count": 0,
+          "recovery": "longrest"
+        },
+        {
+          "name": "Chemical Mastery",
+          "minlevel": 15,
+          "counttype": "fixed",
+          "count": 1,
+          "recovery": "longrest"
+        }
+      ],
       "features": [
         {
           "level": 3,
@@ -132,6 +190,8 @@
       "name": "Armorer",
       "castermult": 0.5,
       "cantrips": 2,
+      "resources": [
+      ],
       "features": [
         {
           "level": 3,
@@ -174,6 +234,15 @@
       "name": "Artillerist",
       "castermult": 0.5,
       "cantrips": 2,
+      "resources": [
+        {
+          "name": "Eldritch Cannon",
+          "minlevel": 3,
+          "counttype": "fixed",
+          "count": 1,
+          "recovery": "longrest"          
+        }
+      ],
       "features": [
         {
           "level": 3,
@@ -188,7 +257,7 @@
         {
           "level": 3,
           "name": "Eldritch Cannon",
-          "description": "At 3rd level, you learn how to create a magical cannon. Using woodcarver's tools or smith's tools, you can take an action to magically create a Small or Tiny eldritch cannon in an unoccupied space on a horizontal surface within 5 feet of you. A Small eldritch cannon occupies its space, and a Tiny one can be held in one hand.\n\nOnce you create a cannon, you can't do so again until you finish a long rest or until you expend a spell slot of 1st level or higher. You can have only one cannon at a time and can't create one while your cannon is present.\n\nThe cannon is a magical object. Regardless of size, the cannon has an AC of 18 and a number of hit points equal to five times your artificer level. It is immune to poison damage, psychic damage, and all conditions. If it is forced to make an ability check or a saving throw, treat all its ability scores as 10 (+0). If the mending spellis cast on it, it regains 2d6 hit points. It disappears if it is reduced to 0 hit points or after 1 hour. You can dismiss it early as an action.\n\nWhen you create the cannon, you determine its appearance and whether it has legs. You also decide which type it is, choosing from the options on the Eldritch Cannons table. On each of your turns, you can take a bonus action to cause the cannon to activate if you are within 60 feet of it. As part of the same bonus action, you can direct the cannon to walk or climb up to 15 feet to an unoccupied space, provided it has legs."
+          "description": "At 3rd level, you learn how to create a magical cannon. Using woodcarver's tools or smith's tools, you can take an action to magically create a Small or Tiny eldritch cannon in an unoccupied space on a horizontal surface within 5 feet of you. A Small eldritch cannon occupies its space, and a Tiny one can be held in one hand.\n\nOnce you create a cannon, you can't do so again until you finish a long rest or until you expend a spell slot of 1st level or higher. You can have only one cannon at a time and can't create one while your cannon is present.\n\nThe cannon is a magical object. Regardless of size, the cannon has an AC of 18 and a number of hit points equal to five times your artificer level. It is immune to poison damage, psychic damage, and all conditions. If it is forced to make an ability check or a saving throw, treat all its ability scores as 10 (+0). If the mending spell is cast on it, it regains 2d6 hit points. It disappears if it is reduced to 0 hit points or after 1 hour. You can dismiss it early as an action.\n\nWhen you create the cannon, you determine its appearance and whether it has legs. You also decide which type it is, choosing from the options on the Eldritch Cannons table. On each of your turns, you can take a bonus action to cause the cannon to activate if you are within 60 feet of it. As part of the same bonus action, you can direct the cannon to walk or climb up to 15 feet to an unoccupied space, provided it has legs."
         },
         {
           "level": 5,
@@ -212,6 +281,15 @@
       "name": "Battle Smith",
       "castermult": 0.5,
       "cantrips": 2,
+      "resources": [
+        {
+          "name": "Arcane Jolt",
+          "minlevel": 9,
+          "counttype": "INT1",
+          "count": 0,
+          "recovery": "longrest"          
+        }
+      ],
       "features": [
         {
           "level": 3,
