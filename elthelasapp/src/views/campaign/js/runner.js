@@ -1,9 +1,10 @@
-import { useCreatureStore, useCharacterStore, useUserStore } from '@/stores/index';
+import { useCreaturev2Store, useCharacterStore, useUserStore } from '@/stores/index';
 import { storeToRefs } from 'pinia';
 import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 import charcalc from '@/helpers/charcalc';
 import modal from '@/components/global/modal.vue';
 import { useMeta } from 'vue-meta';
+import creature from '../creature.vue';
 
 const modalInfo = {
   name: "",
@@ -71,7 +72,7 @@ const crxptable = [
 
 export default {
   setup () {
-    const creatureStore = useCreatureStore();
+    const creatureStore = useCreaturev2Store();
     const characterStore = useCharacterStore();
     const userStore = useUserStore();
     
@@ -98,7 +99,8 @@ export default {
     charArray: Array
   },
   components: {
-    modal
+    modal,
+    creature
   },
   computed: {
     filteredcreatures () {

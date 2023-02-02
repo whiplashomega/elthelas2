@@ -75,6 +75,23 @@
           </ul>
         </li>
       </ul>
+      <div v-for="ft in sortedFeatures" :key="ft.name">
+        <h3>Level {{ ft.level }}: {{ ft.name }}</h3>
+        <div v-html="marked.parse(ft.description)"></div>
+      </div>
+      <h2>Subclasses</h2>
+      <ul class="list-inline">
+        <li class="list-inline-item" v-for="sc in shownClass.subclass" :key="sc.name">
+          <button @click="shownSubClass = sc" class="racebutton btn btn-primary">{{sc.name}}</button>
+        </li>
+      </ul>
+      <div>
+        <h3>{{ shownSubClass.name }}</h3>
+        <div v-for="ft in shownSubClass.features" :key="ft.name">
+          <h4>Level {{ ft.level }}: {{ ft.name }}</h4>
+          <div v-html="marked.parse(ft.description)"></div>
+        </div>
+      </div>
     </div>
   </div>
 </template>

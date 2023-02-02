@@ -75,39 +75,7 @@
         <div v-for="creature in statBlocks" :key="creature.id" class="col-sm-4">
           <h2> {{ creature.name }} <i class="handle">&#8592;&#8594;</i> </h2>
           <div class="creature">
-            <h4> {{ creature.size }} {{ creature.type }}<span v-if="creature.subtype"> ({{ creature.subtype }})</span>, {{ creature.alignment }}</h4>
-            <p>
-              <strong>Armor Class:</strong> {{ creature.acdesc }} <br />
-              <strong>Speed:</strong> {{ creature.speed }}
-            </p>
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>{{ creature.str }} (<span v-if="creature.strmod > 0">+</span>{{ creature.strmod }})</td>
-                  <td>{{ creature.dex }} (<span v-if="creature.dexmod > 0">+</span>{{ creature.dexmod }})</td>
-                  <td>{{ creature.con }} (<span v-if="creature.conmod > 0">+</span>{{ creature.conmod }})</td>
-                  <td>{{ creature.int }} (<span v-if="creature.intmod > 0">+</span>{{ creature.intmod }})</td>
-                  <td>{{ creature.wis }} (<span v-if="creature.wismod > 0">+</span>{{ creature.wismod }})</td>
-                  <td>{{ creature.cha }} (<span v-if="creature.chamod > 0">+</span>{{ creature.chamod }})</td>
-                </tr>
-              </tbody>
-            </table>
-            <p>
-              <span data-v-if="creature.saves"><strong>Saving Throws:</strong> {{ creature.saves }} <br /></span>
-              <span v-if="creature.skills.length > 0"><strong>Skills:</strong> {{ creature.skills.join(", ") }} <br /></span>
-              <strong>Senses:</strong> {{ creature.senses }} <br />
-              <span v-if="creature.damageresistances"><strong>Damage Resistances:</strong> {{ creature.damageresistances }} <br /></span>
-              <span v-if="creature.damageimmunities"><strong>Damage Immunities:</strong> {{ creature.damageimmunities }} <br /></span>
-              <span v-if="creature.conditionimmunities"><strong>Condition Immunities:</strong> {{ creature.conditionimmunities }} <br /></span>
-              <strong>Languages:</strong> {{ creature.languages }} <br />
-              <strong>Challenge:</strong> {{ creature.cr }}
-            </p>
-            <div v-html="creature.descr"></div>
+            <creature :creature="creature" />
           </div>
         </div>
       </div>

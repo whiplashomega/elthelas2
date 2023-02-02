@@ -1,8 +1,8 @@
 <template>
   <div>
     <div>
-      <div v-for="race in races" :key="race.id" class="racebuttondiv">
-        <button class="racebutton btn btn-primary" @click="loadRace(race.id)" v-if="race.id !== 'custom'">{{ race.name }}</button>
+      <div v-for="ancestry in ancestries" :key="ancestry.id" class="racebuttondiv">
+        <button class="racebutton btn btn-primary" @click="loadRace(ancestry.id)" v-if="ancestry.id !== 'custom'">{{ ancestry.name }}</button>
       </div>
     </div>
     <p style="clear:both;">
@@ -26,13 +26,13 @@
     </div>
     <h3 style="clear:both;">Age</h3>
     <p>
-      Age in Elthelas differs from default D&amp;D, particularly in that none of the major races differ from humans in max age by more than an order
+      Age in Elthelas differs is less diverse than in other fantasy settings, particularly in that none of the ancestries differ from humans in max age by more than an order
       of magnitude.  Only dragons, outsiders, fae, and a few other animals and monsters live longer than 200 years without divine
       or magical intervention.  Such intervention usually draws the ire of the Gods (specifically Nera, goddess of death and rebirth, but the other
       Gods usually frown on it as well).
     </p>
     <p>
-      Typical ages of various life stages for each of the major races.  Note "max age" is not a strict maximum age, but rather the age when 95%
+      The table below lists typical ages of various life stages for each of the ancestries.  Note "max age" is not a strict maximum age, but rather the age when 95%
       of any particular cohort has died.  Start of Puberty and Sexual Maturity are given in exact median age (any individual is usually +/- 2), all
       others are rounded to the nearest multiple of 5.
     </p>

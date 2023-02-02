@@ -6,18 +6,18 @@ import { useMeta } from 'vue-meta';
 export default {
   setup () {
     const statics = useStaticsStore();
-    const races = statics.races;
+    const ancestries = statics.ancestries;
     let ages = [];
     let hw = [];
-    for (var x = 0; x < races.length; x++) {
-        races[x].agepoints.name = races[x].name;
-        ages.push(races[x].agepoints);
-        for (var y = 0; y < races[x].subraces.length; y++) {
-          var name = races[x].subraces[y].name;
+    for (var x = 0; x < ancestries.length; x++) {
+      ancestries[x].agepoints.name = ancestries[x].name;
+        ages.push(ancestries[x].agepoints);
+        for (var y = 0; y < ancestries[x].subraces.length; y++) {
+          var name = ancestries[x].subraces[y].name;
           if (name === "default" || name === "") {
-            name = races[x].name;
+            name = ancestries[x].name;
           }
-          var hwi = { ...races[x].subraces[y] };
+          var hwi = { ...ancestries[x].subraces[y] };
           hwi.name = name;
           hw.push(hwi);
         }
@@ -25,7 +25,7 @@ export default {
     useMeta({ title: "Character Ancestries" });
     return {
       statics,
-      races,
+      ancestries,
       ages,
       hw,
       marked
@@ -114,7 +114,7 @@ export default {
   },
   methods: {
     loadRace(id) {
-      this.currentRace = this.races.filter((a) => {
+      this.currentRace = this.ancestries.filter((a) => {
         return a.id === id;
       })[0];
     },

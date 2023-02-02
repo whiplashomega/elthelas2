@@ -1,5 +1,4 @@
 import { Decimal } from 'decimal.js';
-import { count } from 'mongodb/lib/operations/cursor_ops';
 
 function dec(num) {
   return new Decimal(Number(num));
@@ -51,26 +50,37 @@ export default {
     }, 0);
     return Number(ac) + Number(shield) + Number(character.acmagic);
   },
+  pcCalc (character) {
+    let pc = character.armors.reduce((b, a) => {    
+      if (a.equipped) {
+        return this.armorPC(character, a) > b ? this.armorPC(character, a) : b;
+      } else {
+        return b;
+      }
+    }, 0);
+    return pc;
+  },
   armorAC (character, a) {
     var ac = Number(a.ac);
-    if (a.type === "Medium Armor") {
-      let medmaster = character.feats.filter((a) => {
-        return a.name === "Medium Armor Master";
-      });
-      let maxdex = 2;
-      if (medmaster.length > 0) {
-        maxdex++;
-      }
-      if (a.name.toLowerCase().includes("mithril")) {
-        maxdex++;
-      }
-      ac = Number(a.ac) + Math.min(maxdex, this.statMod(character, 1));
-    } else if (a.type === 'Light Armor') {
-      ac = Number(a.ac) + this.statMod(character, 1);
-    } else if (a.type === "Unarmored Bonus") {
-      ac = 10 + Number(a.ac) + this.statMod(character, 1) + this.statMod(character, a.unarmoredstat);
+    let medmaster = character.feats.filter((a) => {
+      return a.name === "Armor Adept";
+    });
+    let maxdex = a.maxdex;
+    if (medmaster.length > 0) {
+      maxdex++;
     }
+    ac += Math.max(Math.min(maxdex, this.statMod(character, 1)), 0);
     return ac;
+  },
+  armorPC (character, a) {
+    let bulwark = character.feats.filter((a) => {
+      return a.name === "Armored Bulwark";
+    });
+    if (bulwark.length > 0) {
+      return a.pc + 2;
+    } else {
+      return a.pc;
+    }
   },
   attBonus: function(character, i) {
     return Number(character.attBonus[i]) + this.statMod(character, i) + this.profbonus(character) - Number(character.exhaustion);
@@ -242,7 +252,7 @@ export default {
     return Number(character.race.speed[i]) + Number(character.speedmagic[i]);
   },
   statTotal: function (character, i) {
-    return Number(character.stats[i]) + Number(character.race.stats[i]) + Number(character.statbonus[i]);
+    return Number(character.stats[i]) + Number(character.statadjust[i]) + Number(character.statbonus[i]);
   },
   statMod: function(character, i) {
     return Math.floor(this.statTotal(character, i) / 2) - 5;

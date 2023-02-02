@@ -22,7 +22,7 @@ export default {
         }
         return 0;
       }
-      return this.statics.feats.sort(ftsrt);
+      return this.statics.featsv2.sort(ftsrt);
     }
   },
 };

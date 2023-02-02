@@ -323,7 +323,7 @@ const router = createRouter({
       },
     },
     {
-      path: "/runner",
+      path: "/tools/runner",
       name: "Encounter Runner",
       components: {
         default: () => import("@/views/campaign/runner.vue"),
@@ -334,7 +334,7 @@ const router = createRouter({
       },
     },
     {
-      path: "/runner/:id",
+      path: "/tools/runner/:id",
       name: "Encounter Runner - Specific",
       components: {
         default: () => import("@/views/campaign/runner.vue"),
@@ -430,6 +430,61 @@ const router = createRouter({
       meta: {
         title: "Character Ancestries",
         auth: false,
+      },
+    },
+    {
+      path: "/5e/charbuilder",
+      name: "5e Character Builder",
+      components: {
+        default: () => import("@/views/5e/characterbuilder.vue"),
+      },
+      meta: {
+        title: "5e Character Builder",
+        auth: false,
+      },
+    },
+    {
+      path: "/5e/charbuilder/:id",
+      name: "5e Character Builder - Specific",
+      components: {
+        default: () => import("@/views/5e/characterbuilder.vue"),
+      },
+      meta: {
+        title: "5e Character Builder",
+        auth: false,
+      },
+    },
+    {
+      path: "/5e/feats",
+      name: "5e feats",
+      components: {
+        default: () => import("@/views/5e/feats.vue"),
+      },
+      meta: {
+        title: "5e Feats",
+        auth: false,
+      },
+    },
+    {
+      path: "/5e/runner",
+      name: "5e Encounter Runner",
+      components: {
+        default: () => import("@/views/5e/runner.vue"),
+      },
+      meta: {
+        title: "Encounter Runner",
+        auth: true,
+      },
+    },
+    {
+      path: "/5e/runner/:id",
+      name: "5e Encounter Runner - Specific",
+      components: {
+        default: () => import("@/views/5e/runner.vue"),
+      },
+      meta: {
+        title: "Encounter Runner",
+        auth: true,
       },
     },
     /*{

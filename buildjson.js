@@ -175,13 +175,16 @@ function jsoncompile () {
     jsonmin('./data/joeweapons.json', './elthelasapp/public/json/weaponsv2.json'),
     jsonmin('./data/joearmor.json', './elthelasapp/public/json/armorv2.json'),
     jsonmin('./data/feats.json', './elthelasapp/public/json/feats.json'), //weapons
+    jsonmin('./data/featsv2.json', './elthelasapp/public/json/featsv2.json'), //weapons
     jsonmin('./data/weapons.json', './elthelasapp/public/json/weapons.json'), //armor
     jsonmin('./data/armor.json', './elthelasapp/public/json/armor.json'), //equipment
     jsonmin('./data/equipment.json', './elthelasapp/public/json/equipment.json'), //magic items
     jsonmin('./data/valuables.json', './elthelasapp/public/json/valuables.json'), //valuables
     jsonmin('./data/magicitems.json', './elthelasapp/public/json/magicitems.json'), //magicitems
+    jsonmin('./data/magicitems.json', './elthelasapp/public/json/magicitemsv2.json'), //magicitems
     compiledir("./data/gods", "./elthelasapp/public/json/gods.json", "God"), //gods
     compiledir("./data/stronghold-improvements", "./elthelasapp/public/json/improvements.json", "Improvements"), //stronghold improvements
+    compiledir("./data/ancestries", "./elthelasapp/public/json/ancestries.json", "Ancestries"), //races
     compiledir("./data/races", "./elthelasapp/public/json/races.json", "Race"), //races
     compiledir("./data/organizations", "./elthelasapp/public/json/organizations.json", "Organization"), //organizations
     compiledir("./data/divines", "./elthelasapp/public/json/divines.json", "Divine"), //divines

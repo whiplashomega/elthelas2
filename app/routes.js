@@ -92,17 +92,21 @@ module.exports = function(app, staticDir, server) {
     //user function routes
     var users = require('./users');
     var characters = require('./characters');
+    var charactersv2 = require('./charactersv2');
     var encounters = require('./encounters');
     var strongholds = require('./strongholds');
     var campaigns = require('./campaigns');
     var creatures = require('./creatures');
+    var creaturesv2 = require('./creaturesv2');
     
     app.use('/users', users);
     app.use('/characters', characters);
+    app.use('/charactersv2', charactersv2);
     app.use('/encounters', encounters);
     app.use('/strongholds', strongholds);
     app.use('/campaigns', campaigns);
     app.use('/creatures', creatures);
+    app.use('/creaturesv2', creaturesv2);
 
     app.use(express.static(appRoot, { maxAge: 365 }));
     

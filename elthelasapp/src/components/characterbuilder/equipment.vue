@@ -89,21 +89,6 @@
                 </table>
               </div>
             </b-tab>
-            <b-tab title="Adv. Weapons">
-              <input placeholder="search" v-model="searchEquip" class="form-control" />
-              <div style="overflow-y:scroll;height:500px;">
-                <table class="table table-striped table-sm">
-                  <thead><tr><th>Item</th><th>Cost</th><th>Weight</th></tr></thead>
-                  <tbody>
-                    <tr v-for="item in allHomebrewWeapons" :key="item.Name">
-                      <td><a href="#" @click="addExistingWeapon(item, newequip.quantity, newequip.container)">{{ item.Name }}</a></td>
-                      <td>{{ item.Cost }}</td>
-                      <td>{{ item.Weight }}</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </b-tab>
             <b-tab title="Armor">
               <input placeholder="search" v-model="searchEquip" class="form-control" />
               <div style="overflow-y:scroll;height:500px;">

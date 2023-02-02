@@ -19,8 +19,6 @@ export default {
       character,
       equipment,
       weapons,
-      homebrewweapons,
-      magichomebrewweapons,
       magicweapons,
       magicarmor,
       magicother,
@@ -41,21 +39,6 @@ export default {
       allweapons.forEach((weap) => {
         if (!weap.Name) {
           weap.Name = weap.Item;
-        }
-      });
-      allweapons = allweapons.filter((weap) => {
-        if (this.searchEquip) {
-          return weap.Name.toLowerCase().includes(this.searchEquip.toLowerCase());
-        }
-        return true;
-      });
-      return allweapons;
-    },
-    allHomebrewWeapons () {
-      var allweapons = [ ...this.homebrewweapons, ...this.magichomebrewweapons ];
-      allweapons.forEach((weap) => {
-        if (!weap.Name) {
-          weap.Name = weap.Weapon;
         }
       });
       allweapons = allweapons.filter((weap) => {

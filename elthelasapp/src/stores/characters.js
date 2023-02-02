@@ -426,7 +426,7 @@ export default {
         }        
       }
     },
-    loadCharacter (passthrough) {
+    loadCharacter () {
       var c = window.confirm("Are you sure you want to load? This will erase any unsaved changes.");
       if (c) {
         var f = document.getElementById('fileload').files[0];
@@ -436,7 +436,7 @@ export default {
           var data = e.target.result;
           var parsed = JSON.parse(data);
           for (var x in parsed) {
-            if (parsed.hasOwnProperty(x)) {
+            if (parsed[x]) {
               this.character[x] = parsed[x];
             }
           }

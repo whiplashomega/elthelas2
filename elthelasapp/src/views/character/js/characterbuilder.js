@@ -1,31 +1,31 @@
 // import test from '@/tests/unit/charbuilder.test.js';
 
-import { useStaticsStore, useCharacterStore, useUserStore, useGlobalsStore } from '@/stores/index';
+import { useStaticsStore, useCharacterStore, useUserStore } from '@/stores/index';
 import { storeToRefs } from 'pinia';
-import abilityscores from '@/components/characterbuilder/abilityscores.vue';
-import actions from '@/components/characterbuilder/actions.vue';
-import appearance from '@/components/characterbuilder/appearance.vue';
-import attacks from '@/components/characterbuilder/attacks.vue';
-import bonus from '@/components/characterbuilder/bonus.vue';
-import buildclass from '@/components/characterbuilder/buildclass.vue';
-import campaigninfo from '@/components/characterbuilder/campaigninfo.vue';
-import characterheader from '@/components/characterbuilder/characterheader.vue';
-import combat from '@/components/characterbuilder/combat.vue';
-import combathud from '@/components/characterbuilder/combathud.vue';
-import equipment from '@/components/characterbuilder/equipment.vue';
-import features from '@/components/characterbuilder/features.vue';
-import fluff from '@/components/characterbuilder/fluff.vue';
-import gamenotes from '@/components/characterbuilder/gamenotes.vue';
-import hitpoints from '@/components/characterbuilder/hitpoints.vue';
-import initiative from '@/components/characterbuilder/initiative.vue';
-import loadsave from '@/components/characterbuilder/loadsave.vue';
-import loadsavemodals from '@/components/characterbuilder/loadsavemodals.vue';
-import otherrolls from '@/components/characterbuilder/otherrolls.vue';
-import pets from '@/components/characterbuilder/pets.vue';
-import resources from '@/components/characterbuilder/resources.vue';
-import skills from '@/components/characterbuilder/skills.vue';
-import spells from '@/components/characterbuilder/spells.vue';
-import statbuilder from '@/components/characterbuilder/statbuilder.vue';
+import abilityscores from '@/components/characterbuilderv2/abilityscores.vue';
+import actions from '@/components/characterbuilderv2/actions.vue';
+import appearance from '@/components/characterbuilderv2/appearance.vue';
+import attacks from '@/components/characterbuilderv2/attacks.vue';
+import bonus from '@/components/characterbuilderv2/bonus.vue';
+import buildclass from '@/components/characterbuilderv2/buildclass.vue';
+import campaigninfo from '@/components/characterbuilderv2/campaigninfo.vue';
+import characterheader from '@/components/characterbuilderv2/characterheader.vue';
+import combat from '@/components/characterbuilderv2/combat.vue';
+import combathud from '@/components/characterbuilderv2/combathud.vue';
+import equipment from '@/components/characterbuilderv2/equipment.vue';
+import features from '@/components/characterbuilderv2/features.vue';
+import fluff from '@/components/characterbuilderv2/fluff.vue';
+import gamenotes from '@/components/characterbuilderv2/gamenotes.vue';
+import hitpoints from '@/components/characterbuilderv2/hitpoints.vue';
+import initiative from '@/components/characterbuilderv2/initiative.vue';
+import loadsave from '@/components/characterbuilderv2/loadsave.vue';
+import loadsavemodals from '@/components/characterbuilderv2/loadsavemodals.vue';
+import otherrolls from '@/components/characterbuilderv2/otherrolls.vue';
+import pets from '@/components/characterbuilderv2/pets.vue';
+import resources from '@/components/characterbuilderv2/resources.vue';
+import skills from '@/components/characterbuilderv2/skills.vue';
+import spells from '@/components/characterbuilderv2/spells.vue';
+import statbuilder from '@/components/characterbuilderv2/statbuilder.vue';
 
 import { useMeta } from 'vue-meta';
 
@@ -35,7 +35,6 @@ export default {
     const statics = useStaticsStore();
     const characters = useCharacterStore();
     const userinfo = useUserStore();
-    const globals = useGlobalsStore();
     // initial data retrieval
     statics.getAll();
     // map getters

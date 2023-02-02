@@ -1,5 +1,3 @@
-/* globals localStorage */
-
 import axios from 'axios';
 import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 import Creature from './classes/creature';
@@ -28,6 +26,7 @@ export default {
           this.creatures = response.data;
           resolve(true);
         }).catch((response) => {
+          console.log(response);
           console.log("could not fetch creatures from DB");
         });
       });

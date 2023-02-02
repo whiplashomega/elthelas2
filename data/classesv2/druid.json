@@ -162,7 +162,7 @@
         {
           "level": 6,
           "name": "Primal Strike",
-          "description": "Starting at 6th level, your attacks in beast form count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+          "description": "Starting at 6th level, your attacks in beast form gain a +1 bonus to attack and damage rolls."
         },
         {
           "level": 10,
@@ -258,7 +258,7 @@
         {
           "level": 6,
           "name": "Mighty Summoner",
-          "description": "Starting at 6th level, beasts and fey that you conjure are more resilient than normal. Any beast or fey summoned or created by a spell that you cast gains the following benefits:\n\n* The creature appears with more hit points than normal: 2 extra hit points per Hit Die it has.\n* The damage from its natural weapons is considered magical for the purpose of overcoming immunity and resistance to nonmagical attacks and damage."
+          "description": "Starting at 6th level, beasts and fey that you conjure are more resilient than normal. Any beast or fey summoned or created by a spell that you cast gains the following benefits:\n\n* The creature appears with more hit points than normal: 2 extra hit points per Hit Die it has.\n* Attacks with its natural weapons gain a +1 bonus to attack and damage rolls."
         },
         {
           "level": 10,

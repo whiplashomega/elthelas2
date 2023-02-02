@@ -30,13 +30,14 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li v-if="user.isLoggedIn"><router-link to="/campaign" class="dropdown-item">Campaign Builder</router-link></li>
-                <li v-if="user.isLoggedIn"
-                  v-for="campaign in userCampaigns" :key="campaign._id">
-                  <router-link :to="'/campaign/' + campaign.url" class="dropdown-item">{{ campaign.title }}</router-link>
-                </li>
+                <div v-if="user.isLoggedIn">
+                  <li v-for="campaign in userCampaigns" :key="campaign._id">
+                    <router-link :to="'/campaign/' + campaign.url" class="dropdown-item">{{ campaign.title }}</router-link>
+                  </li>
+                </div>
                 <li><hr class="dropdown-divider"></li>
                 <li v-if="user.isLoggedIn && user.isAdmin"><router-link to="/tools/creaturebuilder" class="dropdown-item">Creature Builder</router-link></li>
-                <li v-if="user.isLoggedIn"><router-link to="/runner" class="dropdown-item">Encounter Runner</router-link></li>
+                <li v-if="user.isLoggedIn"><router-link to="/tools/runner" class="dropdown-item">Encounter Runner</router-link></li>
                 <li><router-link to="/tools/treasuregenerator" class="dropdown-item">Treasure Generator</router-link></li>
                 <li><router-link to="/tools/strongholdbuilder" class="dropdown-item">Stronghold Builder</router-link></li>
               </ul>
@@ -72,8 +73,12 @@
                 5e
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><router-link to="/5e/charbuilder" class="dropdown-item">Character Builder</router-link></li>
+                <li v-if="user.isLoggedIn"><router-link to="/5e/runner" class="dropdown-item">Encounter Runner</router-link></li>
+                <li><hr class="dropdown-divider"></li>
                 <li><router-link to="/5e/quick" class="dropdown-item">Quick Reference Manual</router-link></li>
-                <li><router-link to="/5e/class" class="dropdown-item">Classes</router-link></li>    
+                <li><router-link to="/5e/class" class="dropdown-item">Classes</router-link></li>
+                <li><router-link to="/5e/feats" class="dropdown-item">Feats</router-link></li>    
                 <li><router-link to="/5e/class" class="dropdown-item">Races</router-link></li>  
                 <li><router-link to="/5e/homebrew" class="dropdown-item">Homebrew</router-link></li>         
               </ul>

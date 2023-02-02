@@ -18,11 +18,21 @@ export default {
       return this.shownClass.resources.filter((a) => {
         return a.addToTable;
       });
+    },
+    sortedFeatures () {
+      return this.shownClass.features.sort((a, b) => {
+        if (a.level > b.level) {
+          return 1;
+        } else {
+          return -1;
+        }
+      })
     }
   },
   data () {
     return {
-      shownClass: { features: [], subclass: [{ castermult: 0 }] }
+      shownClass: { features: [], subclass: [{ castermult: 0 }] },
+      shownSubClass: { features: [] }
     };
   },
   methods: {

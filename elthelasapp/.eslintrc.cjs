@@ -16,4 +16,7 @@ module.exports = {
       extends: ["plugin:cypress/recommended"],
     },
   ],
+  rules: {
+    "vue/multi-word-component-names": "off"
+  }
 };

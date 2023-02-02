@@ -1,0 +1,60 @@
+{
+  "id": "gnomes",
+  "name": "Gnomes",
+  "singular": "Gnome",
+  "description": "The gnomes are a small, hardy folk, usually around 3 feet tall, but broad of shoulder with large featured faces (particularly their noses). Unlike halflings, who look like miniature humans with hairy feet, gnomes bodies are thicker and more dominated by the torso (although not to the extent of dwarves). The gnomes of Elthelas are split people. The eastern, Elathian Gnomes live in small reclusive communes within the cities of others, primarily the humans of Dormania, Kandor, and Gerasalim. Once they had a nation of their own, but it was destroyed and burned to the ground by the Emperor Dorman I, all record of it purged from history in the following years. Meanwhile in the west the gnomes of Stagenheim have become masters of technology.",
+  "traits": [
+    { "name": "Size", "description": "Gnomes range between 3 and 4 feet tall, and weight between 60 and 80 lbs. Your size is Small." },
+    { "name": "Speed", "description": "Your base walking speed is 25 ft." },
+    { "name": "Darkvision", "description": "60 feet." },
+    { "name": "Gnome Cunning", "description": "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic." }
+  ],
+  "agepoints": {
+    "puberty": 10,
+    "sexualmaturity": 13,
+    "mentalmaturity": 20,
+    "middleage": 35,
+    "oldage": 50,
+    "averagelifespan": 65,
+    "maxage": 80
+  },
+  "subraces": [
+    {
+      "id": "elathiangnomes",
+      "name": "Elathian Gnomes",
+      "singular": "Elathian Gnome",
+      "image": "https://elthelas-images.herokuapp.com/races/elathiangnome.jpg",
+      "description": "The imperial gnomes are natural tricksters and illusionists, adept at surviving as the bottom rung of society. They tend to prefer city life and the excitement it brings over the quiet countryside. Adventuring is a common way that they find excitement, especially when they are relatively young. Once they do settle down they tend to have large families and live in communal groups of several large extended families.",
+      "traits": [
+        { "name": "Natural Illusionist", "description": "You know the minor illusion cantrip. Intelligence is your magic ability for it." },
+        { "name": "Speak with Small Beasts", "description": "Through sounds and gestures, you can communicate simple ideas with Small or smaller beasts." }
+      ],
+      "averageheight": 40,
+      "baseheight": 35,
+      "heightroll": "2d4",
+      "averageweight": 55,
+      "baseweight": 40,
+      "weightroll": "1d6",
+      "speed": [25, 0, 0, 0, 0]
+    },
+    {
+      "id": "stagengnomes",
+      "name": "Stagen Gnomes",
+      "singular": "Stagen Gnome",
+      "image": "https://elthelas-images.herokuapp.com/races/stagengnome.jpg",
+      "description": "The Gnomes of Stagenheim have a long recorded history, but most of it is esoteric to outsiders, and they have few interactions the other nations beyond the defense of their borders. Not that others are typically interested in their mountain home. The Stagen people are lovers of technology above all else, and more-so, they are creators of technology and magical items without peer. The designs for their fabled airships are jealously guarded, as is the design and construction of their magical crystals, immune to anti-magic effects, and with limitless charges. Those outsiders who know of them often claim that the crystals are the result of the gnomes directly tapping the power of Gods, but such rumors are probably unfounded.",
+      "traits": [
+        { "name": "Artificer's Lore", "description": "You have advantage on Intelligence checks related to alchemy, magic items, and technological devices." },
+        { "name": "Tinker", "description": "You have artisan's tools. Using those tools, you can spend 10 minutes to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours. You can have up to three such devices active at a time. When you create a device, choose one of the following options:\n*   Clockwork Toy: This toy is a clockwork animal or person, such as a frog, mouse, bird, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noise as appropriate to the creature it represents.\n*   Fire Starter: The device produces a miniature flame, which you can use to light something like a candle, torch, or campfire. Using the device requires your action.\n*   Music Box: When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed." },
+        { "name": "Artificer's proficiency", "description": "You are proficient with one type of tools of your choice." }
+      ],
+      "averageheight": 36,
+      "baseheight": 31,
+      "heightroll": "2d4",
+      "averageweight": 60,
+      "baseweight": 45,
+      "weightroll": "1d6",
+      "speed": [25, 0, 0, 0, 0]
+    }
+  ]
+}
