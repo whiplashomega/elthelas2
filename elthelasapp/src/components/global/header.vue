@@ -16,6 +16,7 @@
                 <li><router-link to="/options/create" class="dropdown-item">Character Creation</router-link></li>
                 <li><router-link to="/tools/charbuilder" class="dropdown-item">Character Builder</router-link></li>
                 <li><hr class="dropdown-divider"></li>
+                <li><router-link to="/options/alignment" class="dropdown-item">Alignment</router-link></li>
                 <li><router-link to="/options/ancestry" class="dropdown-item">Ancestry</router-link></li>
                 <li><router-link to="/options/backgrounds" class="dropdown-item">Backgrounds</router-link></li>
                 <li><router-link to="/options/class" class="dropdown-item">Classes</router-link></li>
@@ -60,8 +61,10 @@
                 Reference
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><router-link to="/ref/quick" class="dropdown-item">Quick Reference Manual</router-link></li>
-              <li><router-link to="/ref/magicitems" class="dropdown-item">Magic Item Catalog</router-link></li>
+              <li><router-link to="/ref/srd" class="dropdown-item">System Reference Document</router-link></li>
+              <li><router-link to="/ref/adventuring" class="dropdown-item">Adventuring</router-link></li>
+              <li><router-link to="/ref/combat" class="dropdown-item">Combat</router-link></li>
+              <li><router-link to="/ref/equipment" class="dropdown-item">Equipment</router-link></li>
               <li v-if="user.isLoggedIn"><router-link to="/ref/bestiary" class="dropdown-item">Bestiary</router-link></li>
               <li><router-link to="/ref/magic" class="dropdown-item">Magic</router-link></li>
               <li><router-link to="/ref/gods" class="dropdown-item">Gods</router-link></li>
@@ -77,6 +80,7 @@
                 <li v-if="user.isLoggedIn"><router-link to="/5e/runner" class="dropdown-item">Encounter Runner</router-link></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><router-link to="/5e/quick" class="dropdown-item">Quick Reference Manual</router-link></li>
+                <li><router-link to="/5e/magicitems" class="dropdown-item">Magic Item Catalog</router-link></li>
                 <li><router-link to="/5e/class" class="dropdown-item">Classes</router-link></li>
                 <li><router-link to="/5e/feats" class="dropdown-item">Feats</router-link></li>    
                 <li><router-link to="/5e/class" class="dropdown-item">Races</router-link></li>  

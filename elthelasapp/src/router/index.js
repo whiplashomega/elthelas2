@@ -169,24 +169,35 @@ const router = createRouter({
       },
     },
     {
-      path: "/ref/quick",
-      name: "Quick Reference Manual",
+      path: "/ref/combat",
+      name: "Combat",
       components: {
-        default: () => import("@/views/ref/quick.vue"),
+        default: () => import("@/views/ref/combat.vue"),
       },
       meta: {
-        title: "Quick Reference Manual",
+        title: "Combat",
         auth: false,
       },
     },
     {
-      path: "/ref/magicitems",
-      name: "Magic Item Catalog",
+      path: "/ref/rules",
+      name: "Rules",
       components: {
-        default: () => import("@/views/ref/magicitemcatalog.vue"),
+        default: () => import("@/views/ref/rules.vue"),
       },
       meta: {
-        title: "Margo's Mystics",
+        title: "Rules",
+        auth: false,
+      },
+    },
+    {
+      path: "/ref/equipment",
+      name: "Equipment",
+      components: {
+        default: () => import("@/views/ref/equipment.vue"),
+      },
+      meta: {
+        title: "Equipment",
         auth: false,
       },
     },
@@ -389,6 +400,39 @@ const router = createRouter({
       }
     },
     {
+      path: "/ref/srd",
+      name: "System Reference Document",
+      components: {
+        default: () => import("@/views/ref/srdhome.vue")
+      },
+      meta: {
+        title: "System Reference Document",
+        auth: false
+      }
+    },
+    {
+      path: "/ref/adventuring",
+      name: "Adventuring",
+      components: {
+        default: () => import("@/views/ref/adventuring.vue")
+      },
+      meta: {
+        title: "Adventuring",
+        auth: false
+      }
+    },
+    {
+      path: "/options/alignment",
+      name: "Alignment",
+      components: {
+        default: () => import("@/views/character/alignment.vue")
+      },
+      meta: {
+        title: "Alignment",
+        auth: false
+      }
+    },
+    {
       path: "/5e/homebrew",
       name: "Homebrew Rules",
       components: {
@@ -485,6 +529,17 @@ const router = createRouter({
       meta: {
         title: "Encounter Runner",
         auth: true,
+      },
+    },
+    {
+      path: "/5e/magicitems",
+      name: "Magic Item Catalog",
+      components: {
+        default: () => import("@/views/5e/magicitemcatalog.vue"),
+      },
+      meta: {
+        title: "Margo's Mystics",
+        auth: false,
       },
     },
     /*{

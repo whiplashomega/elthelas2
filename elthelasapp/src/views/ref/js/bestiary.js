@@ -88,7 +88,7 @@ export default {
     };
   },
   methods: {
-    async info (item, index, button) {
+    async info (item) {
       var creature = await this.getCreature(item._id);
       this.creaturestable.modalInfo = creature;
       this.modalProps = { title: creature.name, isActive: true }

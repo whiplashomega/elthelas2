@@ -1,7 +1,8 @@
 import axios from 'axios';
 import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 import droll from 'droll';
-import helpers from './magicitems/helpersv2';
+import helpers from './magicitems/helpers';
+import helpersv2 from './magicitems/helpersv2';
 import seedrandom from 'seedrandom';
 
 export default {
@@ -535,14 +536,14 @@ export default {
             var items = response.data;
             //processing steps
             for (var l = 0; l < this.weaponsv2.length; l++) {
-              items.push(...helpers.getWeaponVariants(this.weaponsv2[l]));
+              items.push(...helpersv2.getWeaponVariants(this.weaponsv2[l]));
             }
             for (var z = 0; z < this.armorv2.length; z++) {
-              helpers.armorBuilder(items, this.armorv2[z]);
+              helpersv2.armorBuilder(items, this.armorv2[z]);
             }
             for (var y = 0; y < this.spellsv2.length; y++) {
-              helpers.scrollBuilder(this.spellsv2[y], items);
-              helpers.wandBuilder(this.spellsv2[y], items);
+              helpersv2.scrollBuilder(this.spellsv2[y], items);
+              helpersv2.wandBuilder(this.spellsv2[y], items);
             }
             var today = new Date();
             var rng = seedrandom(today.getYear() + today.getMonth() + today.getDate());

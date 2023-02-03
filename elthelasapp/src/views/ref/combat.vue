@@ -119,7 +119,581 @@
           <div v-html="marked.parse(spelltable.modalInfo.description)"></div>
         </modal>
       </b-tab>
-      <b-tab index="1" title="Conditions">
+      <b-tab index="0" title="Actions in Combat">
+        <h2>Actions in Combat</h2>
+        <p>
+          When you take your action on your turn, you can take one of the actions presented here, an action you gained from your class or a special feature, or an action that you improvise. Many monsters have action options of their own in their stat blocks.
+        </p>
+        <p>
+          When you describe an action not detailed elsewhere in the rules, the GM tells you whether that action is possible and what kind of roll you need to make, if any, to determine success or failure.
+        </p>
+        <h4>Attack</h4>
+        <p>
+          The most common action to take in combat is the Attack action, whether you are swinging a sword, firing an arrow from a bow, or brawling with your fists.
+        </p>
+        <p>
+          With this action, you make one melee or ranged attack. See the "Making an Attack" section for the rules that govern attacks.
+        </p>
+        <p>
+          Certain features, such as the Extra Attack feature of the fighter, allow you to make more than one attack with this action.
+        </p>
+        <h4>Cast a Spell</h4>
+        <p>
+          Spellcasters such as wizards and clerics, as well as many monsters, have access to spells and can use them to great effect in combat. Each spell has a casting time, which specifies whether the caster must use an action, a reaction, minutes, or even hours to cast the spell. Casting a spell is, therefore, not necessarily an action. Most spells do have a casting time of 1 action, so a spellcaster often uses his or her action in combat to cast such a spell.
+        </p>
+        <h4>Dash</h4>
+        <p>
+          When you take the Dash action, you gain extra movement for the current turn. The increase equals your speed, after applying any modifiers. With a speed of 30 feet, for example, you can move up to 60 feet on your turn if you dash.
+        </p>
+        <p>
+          Any increase or decrease to your speed changes this additional movement by the same amount. If your speed of 30 feet is reduced to 15 feet, for instance, you can move up to 30 feet this turn if you dash.
+        </p>
+        <h4>Delay</h4>
+        <p>
+          If you do not wish to take your turn immediately you can take a free action called delay. Instead, you’re removed from the initiative order. You can return to the initiative order as a free action triggered by the end of any other creature’s turn. This permanently changes your initiative to the new position. You can’t use reactions until you return to the initiative order. If you Delay an entire round without returning to the initiative order, the actions from the Delayed turn are lost, your initiative doesn’t change, and your next turn occurs at your original position in the initiative order.
+        </p>
+        <p>
+          When you Delay, any persistent damage or other negative effects that normally occur at the start or end of your turn occur immediately when you use the Delay action. Any beneficial effects that would end at any point during your turn also end. The GM might determine that other effects end when you Delay as well. Essentially, you can’t Delay to avoid negative consequences that would happen on your turn or to extend beneficial effects that would end on your turn.
+        </p>
+        <h4>Disengage</h4>
+        <p>If you take the Disengage action, your movement doesn't provoke opportunity attacks for the rest of the turn.</p>
+        <h4>Dodge</h4>
+        <p>
+          When you take the Dodge action, you focus entirely on avoiding attacks. Until the start of your next turn, any attack roll made against you has disadvantage if you can see the attacker, and you make Dexterity saving throws with advantage. You lose this benefit if you are incapacitated or if your speed drops to 0.
+        </p>
+        <h4>Help</h4>
+        <p>
+          You can lend your aid to another creature in the completion of a task. When you take the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn.
+        </p>
+        <p>
+          Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally's attack more effective. If your ally attacks the target before your next turn, the first attack roll is made with advantage.
+        </p>
+        <h4>Hide</h4>
+        <p>
+          When you take the Hide action, you make a Dexterity (Stealth) check in an attempt to hide, following the rules for hiding. If you succeed, you gain certain benefits, as described in the "Unseen Attackers and Targets" section later in this chapter.
+        </p>
+        <h4>Ready</h4>
+        <p>
+          Sometimes you want to get the jump on a foe or wait for a particular circumstance before you act. To do so, you can take the Ready action on your turn, which lets you act using your reaction before the start of your next turn.
+        </p>
+        <p>
+          First, you decide what perceivable circumstance will trigger your reaction. Then, you choose the action you will take in response to that trigger, or you choose to move up to your speed in response to it. Examples include "If the cultist steps on the trapdoor, I'll pull the lever that opens it," and "If the goblin steps next to me, I move away."
+        </p>
+        <p>
+          When the trigger occurs, you can either take your reaction right after the trigger finishes or ignore the trigger. Remember that you can take only one reaction per round.
+        </p>
+        <h4>Search</h4>
+        <p>
+          When you take the Search action, you devote your attention to finding something. Depending on the nature of your search, the GM might have you make a Wisdom (Perception) check or an Intelligence (Investigation) check.
+        </p>
+        <h4>Use an Object</h4>
+        <p>
+          You normally interact with an object while doing something else, such as when you draw a sword as part of an attack. When an object requires your action for its use, you take the Use an Object action. This action is also useful when you want to interact with more than one object on your turn.
+        </p>
+      </b-tab>
+      <b-tab index="1" title="Cover">
+        <h2>Cover</h2>
+        <p>
+          Walls, trees, creatures, and other obstacles can provide cover during combat, making a target more difficult to harm. A target can benefit from cover only when an attack or other effect originates on the opposite side of the cover.
+        </p>
+        <p>
+          There are three degrees of cover. If a target is behind multiple sources of cover, only the most protective degree of cover applies; the degrees aren't added together. For example, if a target is behind a creature that gives half cover and a tree trunk that gives three-quarters cover, the target has three-quarters cover.
+        </p>
+        <p>
+          A target with half cover has a +2 bonus to AC and Dexterity saving throws. A target has half cover if an obstacle blocks at least half of its body. The obstacle might be a low wall, a large piece of furniture, a narrow tree trunk, or a creature, whether that creature is an enemy or a friend.
+        </p>
+        <p>
+          A target with three-quarters cover has a +5 bonus to AC and Dexterity saving throws. A target has three-quarters cover if about three-quarters of it is covered by an obstacle. The obstacle might be a portcullis, an arrow slit, or a thick tree trunk.
+        </p>
+        <p>
+          A target with total cover can't be targeted directly by an attack or a spell, although some spells can reach such a target by including it in an area of effect. A target has total cover if it is completely concealed by an obstacle.
+        </p>
+      </b-tab>
+      <b-tab index="2" title="Damage and Healing">
+        <h2>Damage and Healing</h2>
+        <p>
+          Injury and the risk of death are constant companions of those who explore fantasy gaming worlds. The thrust of a sword, a well-placed arrow, or a blast of flame from a fireball spell all have the potential to damage, or even kill, the hardiest of creatures.
+        </p>
+        <h4>Hit Points</h4>
+        <p>
+          Hit points represent a combination of physical and mental durability, the will to live, and luck. Creatures with more hit points are more difficult to kill. Those with fewer hit points are more fragile.
+        </p>
+        <p>
+          A creature's current hit points (usually just called hit points) can be any number from the creature's hit point maximum down to 0. This number changes frequently as a creature takes damage or receives healing.
+        </p>
+        <p>
+          Whenever a creature takes damage, that damage is subtracted from its hit points. The loss of hit points has no effect on a creature's capabilities until the creature drops to 0 hit points.
+        </p>
+        <h4>Damage Rolls</h4>
+        <p>
+          Each weapon, spell, and harmful monster ability specifies the damage it deals. You roll the damage die or dice, add any modifiers, and apply the damage to your target. Magic weapons, special abilities, and other factors can grant a bonus to damage. With a penalty, it is possible to deal 0 damage, but never negative damage.
+        </p>
+        <p>
+          When attacking with a weapon, you add your ability modifier--the same modifier used for the attack roll--to the damage. A spell tells you which dice to roll for damage and whether to add any modifiers.
+        </p>
+        <p>
+          If a spell or other effect deals damage to more than one target at the same time, roll the damage once for all of them. For example, when a wizard casts fireball or a cleric casts flame strike, the spell's damage is rolled once for all creatures caught in the blast.
+        </p>
+        <h4>Critical Hits</h4>
+        <p>
+          When you score a critical hit, you get to roll extra dice for the attack's damage against the target. Roll all of the attack's damage dice twice and add them together. Then add any relevant modifiers as normal. To speed up play, you can roll all the damage dice at once.
+        </p>
+        <p>
+          For example, if you score a critical hit with a dagger, roll 2d4 for the damage, rather than 1d4, and then add your relevant ability modifier. If the attack involves other damage dice, such as from the rogue's Sneak Attack feature, you roll those dice twice as well.
+        </p>
+        <h4>Damage Types</h4>
+        <p>
+          Different attacks, damaging spells, and other harmful effects deal different types of damage. Damage types have no rules of their own, but other rules, such as damage resistance, rely on the types.
+        </p>
+        <p>
+          The damage types follow, with examples to help a GM assign a damage type to a new effect.
+        </p>
+        <table class="table table-sm">
+          <thead><tr><th>Type</th><th>Examples</th></tr></thead>
+          <tbody>
+            <tr><td>Acid</td><td>The corrosive spray of a black dragon's breath and the dissolving enzymes secreted by a black pudding deal acid damage.</td></tr>
+            <tr><td>Bludgeoning</td><td>Blunt force attacks--hammers, falling, constriction, and the like--deal bludgeoning damage.</td></tr>
+            <tr><td>Cold</td><td>The infernal chill radiating from an ice devil's spear and the frigid blast of a white dragon's breath deal cold damage.</td></tr>
+            <tr><td>Fire</td><td>Red dragons breathe fire, and many spells conjure flames to deal fire damage.</td></tr>
+            <tr><td>Force</td><td>Force is pure magical energy focused into a damaging form. Most effects that deal force damage are spells, including magic missile and spiritual weapon.</td></tr>
+            <tr><td>Lightning</td><td>A lightning bolt spell and a blue dragon's breath deal lightning damage.</td></tr>
+            <tr><td>Necrotic</td><td>Necrotic damage, dealt by certain undead and a spell such as chill touch, withers matter and even the soul.</td></tr>
+            <tr><td>Piercing</td><td>Puncturing and impaling attacks, including spears and monsters' bites, deal piercing damage.</td></tr>
+            <tr><td>Poison</td><td>Venomous stings and the toxic gas of a green dragon's breath deal poison damage.</td></tr>
+            <tr><td>Psychic</td><td>Mental abilities such as a psionic blast deal psychic damage.</td></tr>
+            <tr><td>Radiant</td><td>Radiant damage, dealt by a cleric's flame strike spell or an angel's smiting weapon, sears the flesh like fire and overloads the spirit with power.</td></tr>
+            <tr><td>Slashing</td><td>Swords, axes, and monsters' claws deal slashing damage.</td></tr>
+            <tr><td>Thunder</td><td>A concussive burst of sound, such as the effect of the thunderwave spell, deals thunder damage.</td></tr>
+          </tbody>
+        </table>
+        <h4>Damage Resistance and Vulnerability</h4>
+        <p>
+          Some creatures and objects are exceedingly difficult or unusually easy to hurt with certain types of damage.
+        </p>
+        <p>
+          If a creature or an object has resistance to a damage type, damage of that type is halved against it. If a creature or an object has vulnerability to a damage type, damage of that type is doubled against it.
+        </p>
+        <p>
+          Resistance and then vulnerability are applied after all other modifiers to damage. For example, a creature has resistance to bludgeoning damage and is hit by an attack that deals 25 bludgeoning damage. The creature is also within a magical aura that reduces all damage by 5. The 25 damage is first reduced by 5 and then halved, so the creature takes 10 damage.
+        </p>
+        <p>
+          Multiple instances of resistance or vulnerability that affect the same damage type count as only one instance. For example, if a creature has resistance to fire damage as well as resistance to all nonmagical damage, the damage of a nonmagical fire is reduced by half against the creature, not reduced by three-quarters.
+        </p>
+        <h4>Healing</h4>
+        <p>
+          Unless it results in death, damage isn't permanent. Even death is reversible through powerful magic. Rest can restore a creature's hit points, and magical methods such as a cure wounds spell or a potion of healing can remove damage in an instant.
+        </p>
+        <p>
+          When a creature receives healing of any kind, hit points regained are added to its current hit points. A creature's hit points can't exceed its hit point maximum, so any hit points regained in excess of this number are lost. For example, a druid grants a ranger 8 hit points of healing. If the ranger has 14 current hit points and has a hit point maximum of 20, the ranger regains 6 hit points from the druid, not 8.
+        </p>
+        <p>
+          A creature that has died can't regain hit points until magic such as the revivify spell has restored it to life.
+        </p>
+        <h4>Dropping to 0 Hit Points</h4>
+        <p>
+          When you drop to 0 hit points, you either die outright or fall unconscious, as explained in the following sections.
+        </p>
+        <h5>Instant Death</h5>
+        <p>
+          Massive damage can kill you instantly. When damage reduces you to 0 hit points and there is damage remaining, you die if the remaining damage equals or exceeds your hit point maximum.
+        </p>
+        <p>
+          For example, a cleric with a maximum of 12 hit points currently has 6 hit points. If she takes 18 damage from an attack, she is reduced to 0 hit points, but 12 damage remains. Because the remaining damage equals her hit point maximum, the cleric dies.
+        </p>
+        <h5>Falling Unconscious</h5>
+        <p>
+          If damage reduces you to 0 hit points and fails to kill you, you fall unconscious. This unconsciousness ends if you regain any hit points.
+        </p>
+        <h5>Death Saving Throws</h5>
+        <p>
+          Whenever you start your turn with 0 hit points, you must make a special saving throw, called a death saving throw, to determine whether you creep closer to death or hang onto life. Unlike other saving throws, this one isn't tied to any ability score. You are in the hands of fate now, aided only by spells and features that improve your chances of succeeding on a saving throw.
+        </p>
+        <p>
+          Roll a d20. If the roll is 10 or higher, you succeed. Otherwise, you fail. A success or failure has no effect by itself. On your third success, you become stable (see below). On your third failure, you die. The successes and failures don't need to be consecutive; keep track of both until you collect three of a kind. The number of both is reset to zero when you regain any hit points or become stable.
+        </p>
+        <p>
+          Rolling 1 or 20. When you make a death saving throw and roll a 1 on the d20, it counts as two failures. If you roll a 20 on the d20, you regain 1 hit point.
+        </p>
+        <p>
+          Damage at 0 Hit Points. If you take any damage while you have 0 hit points, you suffer a death saving throw failure. If the damage is from a critical hit, you suffer two failures instead. If the damage equals or exceeds your hit point maximum, you suffer instant death.
+        </p>
+        <h5>Stabilizing a Creature</h5>
+        <p>
+          The best way to save a creature with 0 hit points is to heal it. If healing is unavailable, the creature can at least be stabilized so that it isn't killed by a failed death saving throw.
+        </p>
+        <p>
+          You can use your action to administer first aid to an unconscious creature and attempt to stabilize it, which requires a successful DC 10 Wisdom (Medicine) check.
+        </p>
+        <p>
+          A stable creature doesn't make death saving throws, even though it has 0 hit points, but it does remain unconscious. The creature stops being stable, and must start making death saving throws again, if it takes any damage. A stable creature that isn't healed regains 1 hit point after 1d4 hours.
+        </p>
+        <h5>Monsters and Death</h5>
+        <p>
+          Most GMs have a monster die the instant it drops to 0 hit points, rather than having it fall unconscious and make death saving throws.
+        </p>
+        <p>
+          Mighty villains and special nonplayer characters are common exceptions; the GM might have them fall unconscious and follow the same rules as player characters.
+        </p>
+        <h4>Knocking a Creature Out</h4>
+        <p>
+          Sometimes an attacker wants to incapacitate a foe, rather than deal a killing blow. When an attacker reduces a creature to 0 hit points with a melee attack, the attacker can knock the creature out. The attacker can make this choice the instant the damage is dealt. The creature falls unconscious and is stable.
+        </p>
+        <h4>Temporary Hit Points</h4>
+        <p>
+          Some spells and special abilities confer temporary hit points to a creature. Temporary hit points aren't actual hit points; they are a buffer against damage, a pool of hit points that protect you from injury.
+        </p>
+        <p>
+          When you have temporary hit points and take damage, the temporary hit points are lost first, and any leftover damage carries over to your normal hit points. For example, if you have 5 temporary hit points and take 7 damage, you lose the temporary hit points and then take 2 damage.
+        </p>
+        <p>
+          Because temporary hit points are separate from your actual hit points, they can exceed your hit point maximum. A character can, therefore, be at full hit points and receive temporary hit points.
+        </p>
+        <p>
+          Healing can't restore temporary hit points, and they can't be added together. If you have temporary hit points and receive more of them, you decide whether to keep the ones you have or to gain the new ones. For example, if a spell grants you 12 temporary hit points when you already have 10, you can have 12 or 10, not 22.
+        </p>
+        <p>
+          If you have 0 hit points, receiving temporary hit points doesn't restore you to consciousness or stabilize you. They can still absorb damage directed at you while you're in that state, but only true healing can save you.
+        </p>
+        <p>
+          Unless a feature that grants you temporary hit points has a duration, they last until they're depleted or you finish a long rest.
+        </p>
+      </b-tab>
+      <b-tab index="3" title="Making an Attack">
+        <h2>Making an Attack</h2>
+        <p>
+          Whether you're striking with a melee weapon, firing a weapon at range, or making an attack roll as part of a spell, an attack has a simple structure.
+        </p>
+        <ol>
+          <li><strong>Choose a target.</strong> Pick a target within your attack's range: a creature, an object, or a location.</li>
+          <li><strong>Determine modifiers.</strong> The GM determines whether the target has cover and whether you have advantage or disadvantage against the target. In addition, spells, special abilities, and other effects can apply penalties or bonuses to your attack roll.</li>
+          <li><strong>Resolve the attack.</strong> You make the attack roll. On a hit, you roll damage, unless the particular attack has rules that specify otherwise. Some attacks cause special effects in addition to or instead of damage.</li>
+        </ol>
+        <p>If there's ever any question whether something you're doing counts as an attack, the rule is simple: if you're making an attack roll, you're making an attack.</p>
+        <h4>Attack Rolls</h4>
+        <p>
+          When you make an attack, your attack roll determines whether the attack hits or misses. To make an attack roll, roll a d20 and add the appropriate modifiers. If the total of the roll plus modifiers equals or exceeds the target's Armor Class (AC), the attack hits. The AC of a character is determined at character creation, whereas the AC of a monster is in its stat block.
+        </p>
+        <h5>Modifiers to the Roll</h5>
+        <p>
+          When a character makes an attack roll, the two most common modifiers to the roll are an ability modifier and the character's proficiency bonus. When a monster makes an attack roll, it uses whatever modifier is provided in its stat block.
+        </p>
+        <p>
+          <strong>Ability Modifier.</strong> The ability modifier used for a melee weapon attack is Strength, and the ability modifier used for a ranged weapon attack is Dexterity. Weapons that have the finesse or thrown property break this rule.
+        </p>
+        <p>
+          Some spells also require an attack roll. The ability modifier used for a spell attack depends on the spellcasting ability of the spellcaster.
+        </p>
+        <p>
+          <strong>Proficiency Bonus.</strong> You add your proficiency bonus to your attack roll when you attack using a weapon with which you have proficiency, as well as when you attack with a spell.
+        </p>
+        <h5>Rolling 1 or 20</h5>
+        <p>
+          Sometimes fate blesses or curses a combatant, causing the novice to hit and the veteran to miss.
+        </p>
+        <p>
+          If the d20 roll for an attack is a 20, the attack hits regardless of any modifiers or the target's AC. This is called a critical hit, which is explained later in this chapter.
+        </p>
+        <p>
+          If the d20 roll for an attack is a 1, the attack misses regardless of any modifiers or the target's AC.
+        </p>
+        <h4>Unseen Attackers and Targets</h4>
+        <p>
+          Combatants often try to escape their foes' notice by hiding, casting the invisibility spell, or lurking in darkness.
+        </p>
+        <p>
+          When you attack a target that you can't see, you have disadvantage on the attack roll. This is true whether you're guessing the target's location or you're targeting a creature you can hear but not see. If the target isn't in the location you targeted, you automatically miss, but the GM typically just says that the attack missed, not whether you guessed the target's location correctly.
+        </p>
+        <p>
+          When a creature can't see you, you have advantage on attack rolls against it. If you are hidden--both unseen and unheard--when you make an attack, you give away your location when the attack hits or misses.
+        </p>
+        <h4>Ranged Attacks</h4>
+        <p>
+          When you make a ranged attack, you fire a bow or a crossbow, hurl a handaxe, or otherwise send projectiles to strike a foe at a distance. A monster might shoot spines from its tail. Many spells also involve making a ranged attack.
+        </p>
+        <h5>Range</h5>
+        <p>
+          You can make ranged attacks only against targets within a specified range.
+        </p>
+        <p>
+          If a ranged attack, such as one made with a spell, has a single range, you can't attack a target beyond this range.
+        </p>
+        <p>
+          Some ranged attacks, such as those made with a longbow or a shortbow, have two ranges. The smaller number is the normal range, and the larger number is the long range. Your attack roll has disadvantage when your target is beyond normal range, and you can't attack a target beyond the long range.
+        </p>
+        <h5>Ranged Attacks in Close Combat</h5>
+        <p>
+          Aiming a ranged attack is more difficult when a foe is next to you. When you make a ranged attack with a weapon, a spell, or some other means, you have disadvantage on the attack roll if you are within 5 feet of a hostile creature who can see you and who isn't incapacitated.
+        </p>
+        <h4>Melee Attacks</h4>
+        <p>
+          Used in hand-to-hand combat, a melee attack allows you to attack a foe within your reach. A melee attack typically uses a handheld weapon such as a sword, a warhammer, or an axe. A typical monster makes a melee attack when it strikes with its claws, horns, teeth, tentacles, or other body part. A few spells also involve making a melee attack.
+        </p>
+        <p>
+          Most creatures have a 5-foot reach and can thus attack targets within 5 feet of them when making a melee attack. Certain creatures (typically those larger than Medium) have melee attacks with a greater reach than 5 feet, as noted in their descriptions.
+        </p>
+        <p>
+          Instead of using a weapon to make a melee weapon attack, you can use an unarmed strike: a punch, kick, head-butt, or similar forceful blow (none of which count as weapons). On a hit, an unarmed strike deals bludgeoning damage equal to 1 + your Strength modifier. You are proficient with your unarmed strikes.
+        </p>
+        <h5>Opportunity Attacks</h5>
+        <p>
+          In a fight, everyone is constantly watching for a chance to strike an enemy who is fleeing or passing by. Such a strike is called an opportunity attack.
+        </p>
+        <p>
+          You can make an opportunity attack when a hostile creature that you can see moves out of your reach. To make the opportunity attack, you use your reaction to make one melee attack against the provoking creature. The attack occurs right before the creature leaves your reach.
+        </p>
+        <p>
+          You can avoid provoking an opportunity attack by taking the Disengage action. You also don't provoke an opportunity attack when you teleport or when someone or something moves you without using your movement, action, or reaction. For example, you don't provoke an opportunity attack if an explosion hurls you out of a foe's reach or if gravity causes you to fall past an enemy.
+        </p>
+        <h5>Two-Weapon Fighting</h5>
+        <p>
+          When you take the Attack action and attack with a light melee weapon that you're holding in one hand, you can use a bonus action to attack with a different light melee weapon that you're holding in the other hand. You don't add your ability modifier to the damage of the bonus attack, unless that modifier is negative.
+        </p>
+        <p>
+          If either weapon has the thrown property, you can throw the weapon, instead of making a melee attack with it.
+        </p>
+        <h4>Contests in Combat</h4>
+        <p>
+          Battle often involves pitting your prowess against that of your foe. Such a challenge is represented by a contest. This section includes the most common contests that require an action in combat: grappling and shoving a creature. The GM can use these contests as models for improvising others.
+        </p>
+        <h5>Grappling</h5>
+        <p>
+          When you want to grab a creature or wrestle with it, you can use the Attack action to make a special melee attack, a grapple. If you're able to make multiple attacks with the Attack action, this attack replaces one of them.
+        </p>
+        <p>
+          The target of your grapple must be no more than one size larger than you and must be within your reach. Using at least one free hand, you try to seize the target by making a grapple check instead of an attack roll: a Strength (Athletics) check contested by the target's Strength (Athletics) or Dexterity (Acrobatics) check (the target chooses the ability to use). If you succeed, you subject the target to the grappled condition. The condition specifies the things that end it, and you can release the target whenever you like (no action required).
+        </p>
+        <p>
+          <strong>Escaping a Grapple.</strong> A grappled creature can use its action to escape. To do so, it must succeed on a Strength (Athletics) or Dexterity (Acrobatics) check contested by your Strength (Athletics) check.
+        </p>
+        <p>
+          <strong>Moving a Grappled Creature.</strong> When you move, you can drag or carry the grappled creature with you, but your speed is halved, unless the creature is two or more sizes smaller than you.
+        </p>
+        <h5>Shoving a Creature</h5>
+        <p>
+          Using the Attack action, you can make a special melee attack to shove a creature, either to knock it prone or push it away from you. If you're able to make multiple attacks with the Attack action, this attack replaces one of them.
+        </p>
+        <p>
+          The target must be no more than one size larger than you and must be within your reach. Instead of making an attack roll, you make a Strength (Athletics) check contested by the target's Strength (Athletics) or Dexterity (Acrobatics) check (the target chooses the ability to use). If you win the contest, you either knock the target prone or push it 5 feet away from you.
+        </p>
+      </b-tab>
+      <b-tab index="4" title="Mounted Combat">
+        <h2>Mounted Combat</h2>
+        <p>A knight charging into battle on a warhorse, a wizard casting spells from the back of a griffon, or a cleric soaring through the sky on a pegasus all enjoy the benefits of speed and mobility that a mount can provide.</p>
+        <p>
+          A willing creature that is at least one size larger than you and that has an appropriate anatomy can serve as a mount, using the following rules.
+        </p>
+        <h4>Mounting and Dismounting</h4>
+        <p>
+          Once during your move, you can mount a creature that is within 5 feet of you or dismount. Doing so costs an amount of movement equal to half your speed. For example, if your speed is 30 feet, you must spend 15 feet of movement to mount a horse. Therefore, you can't mount it if you don't have 15 feet of movement left or if your speed is 0.
+        </p>
+        <p>
+          If an effect moves your mount against its will while you're on it, you must succeed on a DC 10 Dexterity saving throw or fall off the mount, landing prone in a space within 5 feet of it. If you're knocked prone while mounted, you must make the same saving throw.
+        </p>
+        <p>
+          If your mount is knocked prone, you can use your reaction to dismount it as it falls and land on your feet. Otherwise, you are dismounted and fall prone in a space within 5 feet it.
+        </p>
+        <h4>Controlling a Mount</h4>
+        <p>
+          While you're mounted, you have two options. You can either control the mount or allow it to act independently. Intelligent creatures, such as dragons, act independently.
+        </p>
+        <p>
+          You can control a mount only if it has been trained to accept a rider. Domesticated horses, donkeys, and similar creatures are assumed to have such training. The initiative of a controlled mount changes to match yours when you mount it. It moves as you direct it, and it has only three action options: Dash, Disengage, and Dodge. A controlled mount can move and act even on the turn that you mount it.
+        </p>
+        <p>
+          An independent mount retains its place in the initiative order. Bearing a rider puts no restrictions on the actions the mount can take, and it moves and acts as it wishes. It might flee from combat, rush to attack and devour a badly injured foe, or otherwise act against your wishes.
+        </p>
+        <p>
+          In either case, if the mount provokes an opportunity attack while you're on it, the attacker can target you or the mount.
+        </p>
+      </b-tab>
+      <b-tab index="5" title="Movement and Positioning">
+        <h2>Movement and Positioning</h2>
+        <p>
+          In combat, characters and monsters are in constant motion, often using movement and position to gain the upper hand.
+        </p>
+        <p>
+          On your turn, you can move a distance up to your speed. You can use as much or as little of your speed as you like on your turn, following the rules here.
+        </p>
+        <p>
+          Your movement can include jumping, climbing, and swimming. These different modes of movement can be combined with walking, or they can constitute your entire move. However you're moving, you deduct the distance of each part of your move from your speed until it is used up or until you are done moving.
+        </p>
+        <h4>Breaking Up Your Move</h4>
+        <p>
+          You can break up your movement on your turn, using some of your speed before and after your action. For example, if you have a speed of 30 feet, you can move 10 feet, take your action, and then move 20 feet.
+        </p>
+        <h5>Moving Between Attacks</h5>
+        <p>
+          If you take an action that includes more than one weapon attack, you can break up your movement even further by moving between those attacks. For example, a fighter who can make two attacks with the Extra Attack feature and who has a speed of 25 feet could move 10 feet, make an attack, move 15 feet, and then attack again.
+        </p>
+        <h5>Using Different Speeds</h5>
+        <p>
+          If you have more than one speed, such as your walking speed and a flying speed, you can switch back and forth between your speeds during your move. Whenever you switch, subtract the distance you've already moved from the new speed. The result determines how much farther you can move. If the result is 0 or less, you can't use the new speed during the current move.
+        </p>
+        <p>
+          For example, if you have a speed of 30 and a flying speed of 60 because a wizard cast the fly spell on you, you could fly 20 feet, then walk 10 feet, and then leap into the air to fly 30 feet more.
+        </p>
+        <h4>Difficult Terrain</h4>
+        <p>
+          Combat rarely takes place in bare rooms or on featureless plains. Boulder-strewn caverns, briar-choked forests, treacherous staircases--the setting of a typical fight contains difficult terrain.
+        </p>
+        <p>
+          Every foot of movement in difficult terrain costs 1 extra foot. This rule is true even if multiple things in a space count as difficult terrain.
+        </p>
+        <p>
+          Low furniture, rubble, undergrowth, steep stairs, snow, and shallow bogs are examples of difficult terrain. The space of another creature, whether hostile or not, also counts as difficult terrain.
+        </p>
+        <h4>Being Prone</h4>
+        <p>
+          Combatants often find themselves lying on the ground, either because they are knocked down or because they throw themselves down. In the game, they are prone, a condition described in appendix A. You can drop prone without using any of your speed. Standing up takes more effort; doing so costs an amount of movement equal to half your speed. For example, if your speed is 30 feet, you must spend 15 feet of movement to stand up. You can't stand up if you don't have enough movement left or if your speed is 0.
+        </p>
+        <p>
+          To move while prone, you must crawl or use magic such as teleportation. Every foot of movement while crawling costs 1 extra foot. Crawling 1 foot in difficult terrain, therefore, costs 3 feet of movement.
+        </p>
+        <h5>Interacting with Objects</h5>
+        <p>
+          You can interact with one object as part of your turn without expending your movement or action. If you want to interact with an additional object you must use your action to do so.
+        </p>
+        <h4>Moving Around Other Creatures</h4>
+        <p>
+          You can move through a nonhostile creature's space. In contrast, you can move through a hostile creature's space only if the creature is at least two sizes larger or smaller than you. Remember that another creature's space is difficult terrain for you.
+        </p>
+        <p>
+          Whether a creature is a friend or an enemy, you can't willingly end your move in its space.
+        </p>
+        <p>
+          If you leave a hostile creature's reach during your move, you provoke an opportunity attack, as explained later in the chapter.
+        </p>
+        <h4>Flying Movement</h4>
+        <p>
+          Flying creatures enjoy many benefits of mobility, but they must also deal with the danger of falling. If a flying creature is knocked prone, has its speed reduced to 0, or is otherwise deprived of the ability to move, the creature falls, unless it has the ability to hover or it is being held aloft by magic, such as by the fly spell.
+        </p>
+        <h4>Creature Size</h4>
+        <p>
+          Each creature takes up a different amount of space. The Size Categories table shows how much space a creature of a particular size controls in combat. Objects sometimes use the same size categories.
+        </p>
+        <table class="table table-sm">
+          <thead><tr><th>Size</th><th>Space</th></tr></thead>
+          <tbody>
+            <tr><td>Tiny</td><td>2 1/2 x 2 1/2 ft.</td></tr>
+            <tr><td>Small</td><td>5 x 5 ft.</td></tr>
+            <tr><td>Medium</td><td>5 x 5 ft.</td></tr>
+            <tr><td>Large</td><td>10 x 10 ft.</td></tr>
+            <tr><td>Huge</td><td>15 x 15 ft.</td></tr>
+            <tr><td>Gargantuan</td><td>20 x 20 ft.</td></tr>
+            <tr><td>Colossal</td><td>25 x 25 ft. (or more)</td></tr>
+          </tbody>
+        </table>
+        <h5>Space</h5>
+        <p>
+          A creature's space is the area in feet that it effectively controls in combat, not an expression of its physical dimensions. A typical Medium creature isn't 5 feet wide, for example, but it does control a space that wide. If a Medium hobgoblin stands in a 5‐foot-wide doorway, other creatures can't get through unless the hobgoblin lets them.
+        </p>
+        <p>
+          A creature's space also reflects the area it needs to fight effectively. For that reason, there's a limit to the number of creatures that can surround another creature in combat. Assuming Medium combatants, eight creatures can fit in a 5-foot radius around another one.
+        </p>
+        <p>
+          Because larger creatures take up more space, fewer of them can surround a creature. If five Large creatures crowd around a Medium or smaller one, there's little room for anyone else. In contrast, as many as twenty Medium creatures can surround a Gargantuan one.
+        </p>
+        <h5>Squeezing into a Smaller Space</h5>
+        <p>
+          A creature can squeeze through a space that is large enough for a creature one size smaller than it. Thus, a Large creature can squeeze through a passage that's only 5 feet wide. While squeezing through a space, a creature must spend 1 extra foot for every foot it moves there, and it has disadvantage on attack rolls and Dexterity saving throws. Attack rolls against the creature have advantage while it's in the smaller space.
+        </p>
+      </b-tab>
+      <b-tab index="6" title="The Order of Combat">
+        <h2>The Order of Combat</h2>
+        <p>
+          A typical combat encounter is a clash between two sides, a flurry of weapon swings, feints, parries, footwork, and spellcasting. The game organizes the chaos of combat into a cycle of rounds and turns. A round represents about 6 seconds in the game world. During a round, each participant in a battle takes a turn. The order of turns is determined at the beginning of a combat encounter, when everyone rolls initiative. Once everyone has taken a turn, the fight continues to the next round if neither side has defeated the other.
+        </p>
+        <h5>Combat Step by Step</h5>
+        <ol>
+          <li><strong>Determine surprise.</strong> The GM determines whether anyone involved in the combat encounter is surprised.</li>
+          <li><strong>Establish positions.</strong> The GM decides where all the characters and monsters are located. Given the adventurers' marching order or their stated positions in the room or other location, the GM figures out where the adversaries are--how far away and in what direction.</li>
+          <li><strong>Roll initiative.</strong> Everyone involved in the combat encounter rolls initiative, determining the order of combatants' turns.</li>
+          <li><strong>Take turns.</strong> Each participant in the battle takes a turn in initiative order.</li>
+          <li><strong>Begin the next round.</strong> When everyone involved in the combat has had a turn, the round ends. Repeat step 4 until the fighting stops.</li>
+        </ol>
+        <h4>Surprise</h4>
+        <p>
+          A band of adventurers sneaks up on a bandit camp, springing from the trees to attack them. A gelatinous cube glides down a dungeon passage, unnoticed by the adventurers until the cube engulfs one of them. In these situations, one side of the battle gains surprise over the other.
+        </p>
+        <p>
+          The GM determines who might be surprised. If neither side tries to be stealthy, they automatically notice each other. Otherwise, the GM compares the Dexterity (Stealth) checks of anyone hiding with the passive Wisdom (Perception) score of each creature on the opposing side. Any character or monster that doesn't notice a threat is surprised at the start of the encounter.
+        </p>
+        <p>
+          If you're surprised, you can't move or take an action on your first turn of the combat, and you can't take a reaction until that turn ends. A member of a group can be surprised even if the other members aren't.
+        </p>
+        <h4>Initiative</h4>
+        <p>
+          Initiative determines the order of turns during combat. When combat starts, every participant makes a Dexterity check to determine their place in the initiative order. The GM makes one roll for an entire group of identical creatures, so each member of the group acts at the same time.
+        </p>
+        <p>
+          The GM ranks the combatants in order from the one with the highest Dexterity check total to the one with the lowest. This is the order (called the initiative order) in which they act during each round. The initiative order remains the same from round to round.
+        </p>
+        <p>
+          If a tie occurs, the GM decides the order among tied GM-controlled creatures, and the players decide the order among their tied characters. The GM can decide the order if the tie is between a monster and a player character. Optionally, the GM can have the tied characters and monsters each roll a d20 to determine the order, highest roll going first.
+        </p>
+        <h4>Your Turn</h4>
+        <p>
+          On your turn, you can move a distance up to your speed and take one action. You decide whether to move first or take your action first. Your speed--sometimes called your walking speed--is noted on your character sheet.
+        </p>
+        <p>
+          The most common actions you can take are described in the "Actions in Combat" section later in this chapter. Many class features and other abilities provide additional options for your action.
+        </p>
+        <p>
+          The "Movement and Position" section later in this chapter gives the rules for your move.
+        </p>
+        <p>
+          You can forgo moving, taking an action, or doing anything at all on your turn. If you can't decide what to do on your turn, consider taking the Dodge or Ready action, as described in "Actions in Combat."
+        </p>
+        <h5>Bonus Actions</h5>
+        <p>
+          Various class features, spells, and other abilities let you take an additional action on your turn called a bonus action. The Cunning Action feature, for example, allows a rogue to take a bonus action. You can take a bonus action only when a special ability, spell, or other feature of the game states that you can do something as a bonus action. You otherwise don't have a bonus action to take.
+        </p>
+        <p>
+          You can take only one bonus action on your turn, so you must choose which bonus action to use when you have more than one available.
+        </p>
+        <p>
+          You choose when to take a bonus action during your turn, unless the bonus action's timing is specified, and anything that deprives you of your ability to take actions also prevents you from taking a bonus action.
+        </p>
+        <h5>Other Activity on Your Turn</h5>
+        <p>
+          Your turn can include a variety of flourishes that require neither your action nor your move.
+        </p>
+        <p>
+          You can communicate however you are able, through brief utterances and gestures, as you take your turn.
+        </p>
+        <p>
+          You can also interact with one object or feature of the environment for free, during either your move or your action. For example, you could open a door during your move as you stride toward a foe, or you could draw your weapon as part of the same action you use to attack.
+        </p>
+        <p>
+          If you want to interact with a second object, you need to use your action. Some magic items and other special objects always require an action to use, as stated in their descriptions.
+        </p>
+        <p>
+          The GM might require you to use an action for any of these activities when it needs special care or when it presents an unusual obstacle. For instance, the GM could reasonably expect you to use an action to open a stuck door or turn a crank to lower a drawbridge.
+        </p>
+        <h4>Reactions</h4>
+        <p>
+          Certain special abilities, spells, and situations allow you to take a special action called a reaction. A reaction is an instant response to a trigger of some kind, which can occur on your turn or on someone else's. The opportunity attack, described later in this chapter, is the most common type of reaction.
+        </p>
+        <p>
+          When you take a reaction, you can't take another one until the start of your next turn. If the reaction interrupts another creature's turn, that creature can continue its turn right after the reaction.
+        </p>
+      </b-tab>
+      <b-tab index="7" title="Underwater Combat">
+        <h2>Underwater Combat</h2>
+        <p>
+          When adventurers pursue sahuagin back to their undersea homes, fight off sharks in an ancient shipwreck, or find themselves in a flooded dungeon room, they must fight in a challenging environment. Underwater the following rules apply.
+        </p>
+        <p>
+          When making a melee weapon attack, a creature that doesn't have a swimming speed (either natural or granted by magic) has disadvantage on the attack roll unless the weapon does piercing damage.
+        </p>
+        <p>
+          A ranged weapon attack automatically misses a target beyond the weapon's normal range. Even against a target within normal range, the attack roll has disadvantage unless the weapon is a crossbow, a net, or a weapon that is thrown like a javelin (including a spear, trident, or dart).
+        </p>
+        <p>
+          Creatures and objects that are fully immersed in water have resistance to fire damage.
+        </p>
+      </b-tab>
+      <b-tab index="5" title="Conditions">
         <h3>Conditions</h3>
         <h4>Exhaustion</h4>
         <p>While you are subjected to the Exhausted Condition you experience the following effects:</p>
@@ -229,7 +803,7 @@
           <li>Any attack that hits you is a critical hit if your attacker is within 5 feet of you.</li>
         </ul>
       </b-tab>
-      <b-tab index="2" title="Injuries">
+      <b-tab index="6" title="Injuries">
         <h3>Injuries</h3>
         <b-tabs id="injuries">
           <b-tab title="Rules">
@@ -660,890 +1234,8 @@
           </b-tab>
         </b-tabs>
       </b-tab>
-      <b-tab index="3" title="Actions">
-        <h3>Actions</h3>
-        <h4>Movement</h4>
-        <table class="table table-striped datatable">
-          <thead>
-            <tr>
-              <th>Item</th><th>Rule</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Difficult Terrain</td>
-              <td>Costs 1 extra foot of movement per foot moved(stacks with other modifiers). Low furniture, rubble, undergrowth, steep stairs, snow, shallow bogs, and other creatures spaces are difficult terrain</td>
-            </tr>
-            <tr>
-              <td>Standing Up</td>
-              <td>Costs an amount of movement equal to half your speed (rounded down).  Cannot stand if speed is 0.</td>
-            </tr>
-            <tr>
-              <td>Crawling</td>
-              <td>Costs 1 extra foot of movement per foot moved(stacks with other modifiers).</td>
-            </tr>
-            <tr>
-              <td>Moving through another creature's space</td>
-              <td>Can always move through friendly creatures space.  Hostile creatures only if 2 sizes larger.  Cannot end movement in another creatures space. Always difficult terrain.</td>
-            </tr>
-            <tr>
-              <td>Flying</td>
-              <td>No minimum distance moved.  Without hover you fall if you are knocked prone or have your speed reduced to 0.</td>
-            </tr>
-            <tr>
-              <td>Squeezing</td>
-              <td>Must be large enough for creature 1 size smaller.  Must spend 1 extra foot of movement for every foot (stacks with other modifiers).</td>
-            </tr>
-            <tr>
-              <td>Climbing & Swimming</td>
-              <td>Must spend 1 extra foot of movement for every foot moved (stacks with other modifiers), unless you have a specific speed for climbing or swimming.</td>
-            </tr>
-            <tr>
-              <td>Alternating between types of movement.</td>
-              <td>Subtract the total distance you have moved from whatever speed you are currently using to determine how far you can continue moving.</td>
-            </tr>
-            <tr>
-              <td>Running Jump</td>
-              <td>Horizontal feet equal to strength score, Vertical feet equal to 3 + strength modifier. Minimum 10 ft. on foot before jump.</td>
-            </tr>
-            <tr>
-              <td>Standing Jump</td>
-              <td>Horizontal feet equal to strength score/2 Vertical feet equal to (3 + strength modifier)/2</td>
-            </tr>
-            <tr>
-              <td>Vertical Reach</td>
-              <td>Equal to 1 1/2 * height + vertical jumping distance.</td>
-            </tr>
-            <tr>
-              <td>Moving Stealthily</td>
-              <td>Requires moving at half speed.  Make a dexterity (stealth) check opposed by wisdom (perception) or passive perception of observers.</td>
-            </tr>
-            <tr>
-              <td>Mounting and Dismounting</td>
-              <td>Once during your move, you can mount a creature that is within 5 feet o f you or dismount. Doing so costs an amount o f movement equal to half your speed.</td>
-            </tr>
-            <tr>
-              <td>Falling off your mount</td>
-              <td>if your mount is moved against it's will or you are knocked prone, you must succeed on a DC 10 Dexterity saving throw or fall off the mount, landing prone in a space within 5 feet of it.  If your mount is knocked prone you may use your reaction to land on your feet next to it, otherwise you are knocked prone.</td>
-            </tr>
-          </tbody>
-        </table>
-        <h4>Actions in Combat</h4>
-        <table class="table table-striped datatable">
-          <thead>
-            <tr>
-              <th>Action</th>
-              <th>Rule</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Attack</td>
-              <td>Make one melee or ranged weapon attack.</td>
-            </tr>
-            <tr>
-              <td>Cast a Spell</td>
-              <td>Most spells cost 1 action to cast.  Spell description may specify otherwise.</td>
-            </tr>
-            <tr>
-              <td>Dash</td>
-              <td>Gain extra movement for the turn equal to your speed.</td>
-            </tr>
-            <tr>
-              <td>Disengage</td>
-              <td>Movement doesn't provoke opportunity attacks for the rest of the turn.</td>
-            </tr>
-            <tr>
-              <td>Dodge</td>
-              <td>Attack rolls against you have disadvantage.</td>
-            </tr>
-            <tr>
-              <td>Help</td>
-              <td>Give advantage on the next ability check or attack roll you are helping with before the start of your next turn.</td>
-            </tr>
-            <tr>
-              <td>Hide</td>
-              <td>Make a dexterity (stealth) check to attempt to hide.  Cannot hide from creature that can see you.</td>
-            </tr>
-            <tr>
-              <td>Ready</td>
-              <td>Choose circumstance to trigger action and action to use.  Can choose at circumstance happening what you do.</td>
-            </tr>
-            <tr>
-              <td>Search</td>
-              <td>Try to find something using Wisdom (Perception) or Intelligence (Investigation)</td>
-            </tr>
-            <tr>
-              <td>Use an Object</td>
-              <td>
-                Most objects can be interacted with as part of another action(such as drawing a sword or spell component). Interact with one normal object for free each turn.  Certain objects require an action to use, or you can interact with a second object on your turn as an action.
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <h4>Attacks</h4>
-        <table class="table table-striped datatable">
-          <thead>
-            <tr><th>Attack</th><th>Rule</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Critical Hit</td>
-              <td>when the d20 roll is a 20 attack hits regardless of modifiers or targets AC. Double all damage dice.</td>
-            </tr>
-            <tr>
-              <td>Critical Miss</td>
-              <td>when the d20 roll is a 1 the attack misses regardless of modifiers or targets AC.</td>
-            </tr>
-            <tr>
-              <td>Unseen Combatants</td>
-              <td>Disadvantage on attack rolls against, advantage on attack rolls for.  If guessing wrong location automatic miss. Give away location when make an attack (hit or miss)</td>
-            </tr>
-            <tr>
-              <td>Ranged Attack</td>
-              <td>Uses DEX for attack roll and damage, thrown weapon can use strength at option. Disadvantage when enemy within 5 ft.</td>
-            </tr>
-            <tr>
-              <td>Unarmed Fighting</td>
-              <td>
-                Unarmed strikes are not weapons in the normal sense, and attacking with them does not count as a weapon attack but can be done instead of attacking with a weapon. However you are always proficient in unarmed strikes.
-              </td>
-            </tr>
-            <tr>
-              <td>Opportunity Attack</td>
-              <td>Uses reaction.  Make 1 weapon attack when a hostile creature you can see moves out of your reach.</td>
-            </tr>
-            <tr>
-              <td>Two-weapon fighting</td>
-              <td>
-                When you attack with a light melee weapon held in one hand you can use a bonus action to attack with a different light melee weapon in the other hand. Do not add your ability modifier to the damage of the second attack.s
-              </td>
-            </tr>
-            <tr>
-              <td>Grapple</td>
-              <td>
-                Replaces 1 attack.  Use strength(athletics), opposed by strength(athletics) or dexterity(acrobatics).  Target gets grappled condition(speed 0). Can move grappled creature with you but speed is halved.  Target must be no more than 1 size larger than you.
-              </td>
-            </tr>
-            <tr>
-              <td>Shove</td>
-              <td>
-                Replaces 1 attack. Similar rules to grapple.  Target is knocked prone or pushed back 5 ft. on a success.
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </b-tab>
-      <b-tab index='4' title="Trade Goods">
-        <h3>Trade Goods</h3>
-        <p>
-          Most wealth is not in coins. It is measured in livestock, grain, land, rights to collect taxes, or rights to resources (such as a mine or a forest).
-        </p>
-        <p>
-          Guilds, nobles, and royalty regulate trade. Chartered companies are granted rights to conduct trade along certain routes, to send merchant ships to various ports, or to buy or sell specific goods. Guilds set prices for the goods or services that they control, and determine who may or may not offer those goods and services. Merchants commonly exchange trade goods without using currency. The Trade Goods table shows the value of commonly exchanged goods.
-        </p>
-        <table class="table table-striped datatable">
-          <thead>
-            <tr>
-              <th>Name</th><th>Type</th><th>Weight</th><th>Unit of Sale</th><th>Price per Unit</th><th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Wheat</td><td>Foodstuff</td><td>60 lbs</td><td>1 bushel</td><td>5 sp</td><td>Unmilled wheat, usually only bought by millers who then make and sell flour</td>
-            </tr>
-            <tr>
-              <td>Flour</td><td>Foodstuff</td><td>10 lb</td><td>sack</td><td>1.8 sp</td><td>milled flour, 8 days of food</td>
-            </tr>
-            <tr>
-              <td>Bread</td><td>Foodstuff</td><td>1 lb</td><td>loaf</td><td>2 cp</td><td>cooked bread 0.5 days of food</td>
-            </tr>
-            <tr>
-              <td>Biscuits</td><td>Foodstuff</td><td>1 lb</td><td>dozen</td><td>3 cp</td><td>soft biscuits 0.8 days of food</td>
-            </tr>
-            <tr>
-              <td>Hardtack</td><td>Foodstuff</td><td>1 lb</td><td>dozen</td><td>2 cp</td><td>hard unappetizing biscuits, 1 day of food</td>
-            </tr>
-            <tr>
-              <td>Salt</td><td>Foodstuff</td><td>1 lb</td><td>lb</td><td>5 cp</td><td>delicious salt, can be used to preserve meats or flavor food</td>
-            </tr>
-            <tr>
-              <td>Ginger</td><td>Foodstuff</td><td>1 lb</td><td>lb</td><td>2 sp</td><td>usually sold as whole ginger root, 0.2 days of food</td>
-            </tr>
-            <tr>
-              <td>Cinnamon</td><td>Foodstuff</td><td>1 lb</td><td>lb</td><td>7 sp</td><td>the bark of the cinnamon tree, sold as rolled sheets, 0.5 days of food</td>
-            </tr>
-            <tr>
-              <td>Pepper</td><td>Foodstuff</td><td>1 lb</td><td>lb</td><td>7 sp</td><td>The black variety, used to disguise the taste of spoiled meat, 0.5 days of food</td>
-            </tr>
-            <tr>
-              <td>Cloves</td><td>Foodstuff</td><td>1 lb</td><td>lb</td><td>2.5 gp</td><td>A rare spice made from the flower buds of the clove tree, 0.6 days of food</td>
-            </tr>
-            <tr>
-              <td>Vegetables</td><td>Foodstuff</td><td>1 lb</td><td>lb</td><td>2 cp</td><td>Carrots, tomatoes, cucumbers, etc, 0.1 days of food</td>
-            </tr>
-            <tr>
-              <td>Milk</td><td>Foodstuff</td><td>8.5 lb</td><td>gallon</td><td>3 cp</td><td>Delicious cow(or goat, or other mammal) juice, 1.2 days of food</td>
-            </tr>
-            <tr>
-              <td>Cheese</td><td>Foodstuff</td><td>22 lb</td><td>wheel</td><td>5 sp</td><td>A large wheel of cheese, 20 days of food</td>
-            </tr>
-            <tr>
-              <td>Straw</td><td>Foodstuff</td><td>36 lb</td><td>truss</td><td>1 cp</td><td>a decent basic feed for cows, horses, and other grazing herbivores, 3 days of animal feed</td>
-            </tr>
-            <tr>
-              <td>Corn</td><td>Foodstuff</td><td>60 lb</td><td>bushel</td><td>4 sp</td><td>Sweet or flour corn suitable for eating, full ears. Can also be ground into flour.  14 days of food</td>
-            </tr>
-            <tr>
-              <td>Fresh Fruit</td><td>Foodstuff</td><td>1 lb</td><td>lb</td><td>3 cp</td><td>Fruit, from apples to berries. 0.1 days of food</td>
-            </tr>
-            <tr>
-              <td>Eggs</td><td>Foodstuff</td><td>1.5 lb</td><td>dozen</td><td>2 sp</td><td>Fruit, from apples to berries. 0.5 days of food</td>
-            </tr>
-            <tr>
-              <td>Meat, dried or salted</td><td>Foodstuff</td><td>1 lb</td><td>lb</td><td>2 sp</td><td>Meat is typically dried or salted to preserve it. 0.6 days of food</td>
-            </tr>
-            <tr>
-              <td>Meat, fresh</td><td>Foodstuff</td><td>1 lb</td><td>lb</td><td>1 sp</td><td>Fresh meat, delicious but spoils easily, 0.5 days of food</td>
-            </tr>
-            <tr>
-              <td>Peasant's diet (daily)</td><td>Foodstuff</td><td>3 lbs</td><td>one days worth of food</td><td>3 cp</td><td>A days worth of simple wheat or corn bread, vegetables, and milk</td>
-            </tr>
-            <tr>
-              <td>Balanced diet (daily)</td><td>Foodstuff</td><td>3 lbs</td><td>one days worth of food</td><td>1.7 sp</td><td>includes some preserved meat, vegetables, fruits, cheese, and bread, but little or no spices.</td>
-            </tr>
-            <tr>
-              <td>Rich diet (daily)</td><td>Foodstuff</td><td>4 lbs</td><td>one days worth of food</td><td>6 sp</td><td>includes fresh meat, vegetables, fruits, cheese, milk, bread, and spices in enough quantity to put on weight over time.</td>
-            </tr>
-            <tr>
-              <td>Survival Rations (daily)</td><td>Foodstuff</td><td>1 lb</td><td>one days worth of food</td><td>5 cp</td><td>Hardtack and a little jerky for protein.</td>
-            </tr>
-            <tr>
-              <td>Good Rations (daily)</td><td>Foodstuff</td><td>1.5 lb</td><td>one days worth of food</td><td>1.2 sp</td><td>preserved meat, biscuits, and cheese.</td>
-            </tr>
-            <tr>
-              <td>Canvas</td><td>Raw Material</td><td>0.5 lb</td><td>square yard</td><td>3 sp</td><td>heavy cotton canvas, good for tents or ships sails.</td>
-            </tr>
-            <tr>
-              <td>Linen</td><td>Raw Material</td><td>0.2 lb</td><td>square yard</td><td>9 sp</td><td>fine linen, used to make comfortable warm weather clothing.</td>
-            </tr>
-            <tr>
-              <td>Silk</td><td>Raw Material</td><td>0.2 lb</td><td>square yard</td><td>6 gp</td><td>fine silks, used for the finest clothing.</td>
-            </tr>
-            <tr>
-              <td>Cotton</td><td>Raw Material</td><td>500 lb</td><td>bale</td><td>40 gp</td><td>raw cotton, used to produce cotton cloth.</td>
-            </tr>
-            <tr>
-              <td>Flax</td><td>Raw Material</td><td>500 lb</td><td>bale</td><td>120 gp</td><td>raw flax, used to produce linen cloth.</td>
-            </tr>
-            <tr>
-              <td>Wool</td><td>Raw Material</td><td>500 lb</td><td>bale</td><td>40 gp</td><td>raw wool, used to produce wool cloth.</td>
-            </tr>
-            <tr>
-              <td>Cotton Cloth</td><td>Raw Material</td><td>0.3 lb</td><td>square yard</td><td>2 sp</td><td>medium weight cotton cloth, suitable for making clothing.</td>
-            </tr>
-            <tr>
-              <td>Wool Cloth</td><td>Raw Material</td><td>0.4 lb</td><td>square yard</td><td>3 sp</td><td>thick wool cloth, suitable for making cold weather clothing.</td>
-            </tr>
-            <tr>
-              <td>Softwood lumber, milled</td><td>Raw Material</td><td>2 lb</td><td>inches thick x square feet</td><td>2 cp</td><td>milled boards of spruce, pine, maple, or other softwoods. Used for the planks of a ship or as a cheap construction material for buildings.</td>
-            </tr>
-            <tr>
-              <td>Softwood lumber, raw logs</td><td>Raw Material</td><td>1 2/3 lb</td><td>radius(feet)^2*length(inches)</td><td>radius(feet)^2*length(inches)*2 cp or 6 gp for a 10 ft. long 12" diameter log</td><td>raw logs of softwood trees.</td>
-            </tr>
-            <tr>
-              <td>Hardwood lumber, milled</td><td>Raw Material</td><td>3.75 lb</td><td>inches thick x square feet</td><td>1 sp</td><td>milled boards of oak, walnut, cherry, or other hardwoods.  Used primarily for furniture.</td>
-            </tr>
-            <tr>
-              <td>Hardwood lumber, raw logs</td><td>Raw Material</td><td>3 lb</td><td>radius(feet)^2*length(inches)</td><td>radius(feet)^2*length(inches)*2 sp or 6 gp for a 10 ft. long 12" diameter log</td><td>raw logs of hardwood trees.</td>
-            </tr>
-            <tr>
-              <td>Ironwood lumber, milled</td><td>Raw Material</td><td>6 lb</td><td>inches thick x square feet</td><td>4 gp</td><td>milled boards of oak, walnut, cherry, or other hardwoods.  Used primarily for furniture.</td>
-            </tr>
-            <tr>
-              <td>Ironwood lumber, raw logs</td><td>Raw Material</td><td>4.8 lb</td><td>radius(feet)^2*length(inches)</td><td>radius(feet)^2*length(inches)*40 sp or 120 gp for a 10 ft. long 12" diameter log</td><td>raw logs of hardwood trees.</td>
-            </tr>
-            <tr>
-              <td>Hides</td><td>Raw Material</td><td>20 lb</td><td>1 finished hide</td><td>10 gp</td><td>A cowhide that has been dried and de-fleshed.</td>
-            </tr>
-            <tr>
-              <td>Leather</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>2 gp</td><td>Leather ready for use in clothing or armor.</td>
-            </tr>
-            <tr>
-              <td>Dragon Hide</td><td>Raw Material</td><td>150 lb</td><td>1 finished hide</td><td>6000 gp</td><td>A finished dragonhide that has been dried, descaled and de-fleshed.</td>
-            </tr>
-            <tr>
-              <td>Dragon Leather</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>40 gp</td><td>Dragon leather ready for use in clothing or armor.</td>
-            </tr>
-            <tr>
-              <td>Dragon Scales</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>30 gp</td><td>Dragon scales ready for use in clothing or armor.</td>
-            </tr>
-            <tr>
-              <td>Hemp</td><td>Raw Material</td><td>500 lb</td><td>bale</td><td>10 gp</td><td>Hemp used for making rope.</td>
-            </tr>
-            <tr>
-              <td>Cut Stone</td><td>Raw Material</td><td>2000 lb</td><td>ton</td><td>1 gp</td><td>Rough cut stone suitable for construction.</td>
-            </tr>
-            <tr>
-              <td>Brick</td><td>Raw Material</td><td>2000 lb</td><td>ton</td><td>17 gp</td><td>Molded clay brick suitable for construction.</td>
-            </tr>
-            <tr>
-              <td>Marble</td><td>Raw Material</td><td>2000 lb</td><td>ton</td><td>135 gp</td><td>cut marble suitable for construction.</td>
-            </tr>
-            <tr>
-              <td>Concrete</td><td>Raw Material</td><td>2000 lb</td><td>ton</td><td>13 gp</td><td>unmixed concrete.</td>
-            </tr>
-            <tr>
-              <td>Copper</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>3 sp</td><td>Smelted Copper.</td>
-            </tr>
-            <tr>
-              <td>Silver</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>35 gp</td><td>Smelted Silver.</td>
-            </tr>
-            <tr>
-              <td>Gold</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>1000 gp</td><td>Smelted Gold.</td>
-            </tr>
-            <tr>
-              <td>Platinum</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>2000 gp</td><td>Smelted Platinum.</td>
-            </tr>
-            <tr>
-              <td>Arcanum Crystal</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>100 gp</td><td>Unaligned Arcanum Crystal.</td>
-            </tr>
-            <tr>
-              <td>Bronze</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>6 sp</td><td>Smelted bronze.</td>
-            </tr>
-            <tr>
-              <td>Tin</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>2 sp</td><td>Smelted tin.</td>
-            </tr>
-            <tr>
-              <td>Zinc</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>2 sp</td><td>Smelted zinc.</td>
-            </tr>
-            <tr>
-              <td>Iron</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>1 sp</td><td>Smelted iron.</td>
-            </tr>
-            <tr>
-              <td>Steel</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>2 sp</td><td>Smelted steel.</td>
-            </tr>
-            <tr>
-              <td>Brass</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>6 sp</td><td>Smelted brass.</td>
-            </tr>
-            <tr>
-              <td>Nickel</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>3 gp</td><td>Smelted nickel.</td>
-            </tr>
-            <tr>
-              <td>Red Parakas Steel</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>5 gp</td><td>Smelted Parakas Steel.</td>
-            </tr>
-            <tr>
-              <td>Adamantium</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>10 gp</td><td>Smelted Adamantium.</td>
-            </tr>
-            <tr>
-              <td>Mithril</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>15 gp</td><td>Smelted Mithril.</td>
-            </tr>
-            <tr>
-              <td>Aluminum</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>1 gp</td><td>Smelted Aluminum.</td>
-            </tr>
-            <tr>
-              <td>Coal</td><td>Raw Material</td><td>1 lb</td><td>lb</td><td>5 cp</td><td>Raw Coal.</td>
-            </tr>
-          </tbody>
-        </table>
-      </b-tab>
-      <b-tab index='5' title="Animals and Vehicles">
-        <h3>Animals and Vehicles</h3>
-        <p>
-          A good mount can help you move more quickly through the wilderness, but its primary purpose is to carry the gear that would otherwise slow you down. The Mounts and Other Animals table shows each animal’s speed and base carrying capacity.
-        </p>
-        <p>
-          An animal pulling a carriage, cart, chariot, sled, or wagon can move weight up to five times its base carrying capacity, including the weight of the vehicle. If multiple animals pull the same vehicle, they can add their carrying capacity together.
-        </p>
-        <p>
-          Mounts other than those listed here are available in fantasy gaming worlds, but they are rare and not normally available for purchase. These include flying mounts (pegasi, griffons, hippogriffs, and similar animals) and even aquatic mounts (giant sea horses, for example). Acquiring such a mount often means securing an egg and raising the creature yourself, making a bargain with a powerful entity, or negotiating with the mount itself.
-        </p>
-        <p>
-          <strong>Barding.</strong> Barding is armor designed to protect an animal’s head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost is four times the equivalent armor made for humanoids, and it weighs twice as much.
-        </p>
-        <p>
-          <strong>Saddles.</strong> A military saddle braces the rider, helping you keep your seat on an active mount in battle. It gives you advantage on any check you make to remain mounted. An exotic saddle is required for riding any aquatic or flying mount.
-        </p>
-        <p>
-          <strong>Vehicle Proficiency.</strong> If you have proficiency with a certain kind of vehicle (land or water), you can add your proficiency bonus to any check you make to control that kind of vehicle in difficult circumstances.
-        </p>
-        <p>
-          <strong>Rowed Vehicles.</strong> Keelboats and rowboats are used on lakes and rivers. If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. These vehicles can’t be rowed against any significant current, but they can be pulled upstream by draft animals on the shores. A rowboat weighs 100 pounds, in case adventurers carry it over land.
-        </p>
-        <table class="table table-striped datatable">
-          <thead>
-            <tr>
-              <th>Animal</th><th>Type</th><th>Cost per Head</th><th>Size</th><th>Speed</th><th>Carrying Capacity</th><th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Camel</td><td>Mount</td><td>110 gp</td><td>Large</td><td>50 ft.</td><td>480 lbs.</td><td>A camel trained for riding.</td>
-            </tr>
-            <tr>
-              <td>Donkey</td><td>Livestock</td><td>15 gp</td><td>Medium</td><td>35 ft.</td><td>420 lbs.</td><td>A donkey trained for carrying goods.</td>
-            </tr>
-            <tr>
-              <td>Mule</td><td>Livestock</td><td>25 gp</td><td>Medium</td><td>40 ft.</td><td>420 lbs.</td><td>A mule trained for carrying goods.</td>
-            </tr>
-            <tr>
-              <td>Draft Horse</td><td>Livestock</td><td>60 gp</td><td>Large</td><td>40 ft.</td><td>540 lbs.</td><td>A large horse trained for carrying goods or pulling a load.</td>
-            </tr>
-            <tr>
-              <td>Riding Horse</td><td>Mount</td><td>100 gp</td><td>Large</td><td>60 ft.</td><td>480 lbs.</td><td>A horse trained for riding.</td>
-            </tr>
-            <tr>
-              <td>Riding Dog(Mastiff)</td><td>Mount</td><td>25 gp</td><td>Medium</td><td>40 ft.</td><td>195 lbs.</td><td>A large dog trained for riding by small or smaller creatures.</td>
-            </tr>
-            <tr>
-              <td>Herding/Work Dog</td><td>Livestock</td><td>15 gp</td><td>Small</td><td>35 ft.</td><td>-</td><td>A dog trained for work such as herding or tracking.</td>
-            </tr>
-            <tr>
-              <td>Pony</td><td>Mount</td><td>40 gp</td><td>Small</td><td>40 ft.</td><td>225 lbs.</td><td>A pony trained for riding.</td>
-            </tr>
-            <tr>
-              <td>War horse</td><td>Mount</td><td>200 gp</td><td>Large</td><td>60 ft.</td><td>540 lbs.</td><td>A large horse trained for riding and fighting in battle.</td>
-            </tr>
-            <tr>
-              <td>War camel</td><td>Mount</td><td>220 gp</td><td>Large</td><td>50 ft.</td><td>540 lbs.</td><td>A camel trained for riding and fighting in battle.</td>
-            </tr>
-            <tr>
-              <td>Milk Cow</td><td>Livestock</td><td>200 gp</td><td>Large</td><td>30 ft.</td><td>600 lbs.</td><td>A cow ready to give milk.</td>
-            </tr>
-            <tr>
-              <td>Ox/Bull</td><td>Livestock</td><td>40 gp</td><td>Large</td><td>30 ft.</td><td>800 lbs.</td><td>An ox or bull trained to haul or pull.</td>
-            </tr>
-            <tr>
-              <td>Pig</td><td>Livestock</td><td>9 gp</td><td>Medium</td><td>20 ft.</td><td>-</td><td>A pig sow, to be raised for meat.</td>
-            </tr>
-            <tr>
-              <td>Sheep</td><td>Livestock</td><td>30 gp</td><td>Medium</td><td>30 ft.</td><td>-</td><td>A sheep that can be raised for wool.</td>
-            </tr>
-            <tr>
-              <td>Goat</td><td>Livestock</td><td>50 gp</td><td>Medium</td><td>40 ft.</td><td>-</td><td>A goat that can be used for milk or meat.</td>
-            </tr>
-            <tr>
-              <td>Elephant</td><td>Livestock</td><td>2250 gp</td><td>Huge</td><td>40 ft.</td><td>1320 lbs.</td><td>A young elephant.</td>
-            </tr>
-            <tr>
-              <td>Chicken</td><td>Livestock</td><td>2 gp</td><td>Tiny</td><td>20 ft.</td><td>-</td><td>An egg laying chicken.</td>
-            </tr>
-            <tr>
-              <td>Goose</td><td>Livestock</td><td>4 gp</td><td>Small</td><td>25 ft. fly 50 ft.</td><td>-</td><td>An egg laying goose.</td>
-            </tr>
-            <tr>
-              <td>Cat</td><td>Livestock</td><td>10 gp</td><td>Tiny</td><td>40 ft., climb 30 ft.</td><td>-</td><td>A mousing cat.</td>
-            </tr>
-            <tr>
-              <td>Wild Beast</td>
-              <td>Livestock</td>
-              <td>((CR + 1)^2) * 250 gp</td>
-              <td>Varies</td>
-              <td>Varies</td>
-              <td>Varies</td>
-              <td>A captured wild beasts cost is based on the difficulty in capturing and taming it.</td>
-            </tr>
-          </tbody>
-        </table>
-        <h3>Tack, Harness, and Drawn Vehicles</h3>
-        <table class="table table-striped">
-          <thead>
-            <tr><th>Item</th><th>Cost</th><th>Weight</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Barding for Medium Creature</td><td>Armor Price x 2</td><td>Armor Weight</td></tr>
-            <tr><td>Barding for Large Creature</td><td>Armor Price x 4</td><td>Armor Weight x 2</td></tr>
-            <tr><td>Barding for Huge Creature</td><td>Armor Price x 8</td><td>Armor Weight x 4</td></tr>
-            <tr><td>Bit and bridle</td><td>2 gp</td><td>1 lb</td></tr>
-            <tr><td>Carraige</td><td>100 gp</td><td>600 lb</td></tr>
-            <tr><td>Cart</td><td>15 gp</td><td>200 lb</td></tr>
-            <tr><td>Chariot</td><td>250 gp</td><td>100 lb</td></tr>
-            <tr><td>Feed (for large grazing animals, per day)</td><td>5 cp</td><td>10 lb</td></tr>
-            <tr><td>Saddle, Exotic</td><td>60 gp</td><td>40 lb</td></tr>
-            <tr><td>Saddle, Military</td><td>20 gp</td><td>30 lb</td></tr>
-            <tr><td>Saddle, Pack</td><td>5 gp</td><td>15 lb</td></tr>
-            <tr><td>Saddle, Riding</td><td>10 gp</td><td>25 lb</td></tr>
-            <tr><td>Saddlebags</td><td>4 gp</td><td>8 lb</td></tr>
-            <tr><td>Sled</td><td>20 gp</td><td>300 lb</td></tr>
-            <tr><td>Wagon</td><td>35 gp</td><td>400 lb</td></tr>
-          </tbody>
-        </table>
-        <h3>Waterborne Vehicles</h3>
-        <table class="table table-striped">
-          <thead>
-            <tr><th>Item</th><th>Cost (gp)</th><th>Speed</th><th>Length (feet)</th><th>Minimum Crew</th><th>Capacity (persons)</th><th>Capacity(deadweight)</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Galley</td><td>30000</td><td>8.5 mph</td><td>60</td><td>50</td><td>150</td><td>400000 lbs</td></tr>
-            <tr><td>River Keelboat</td><td>3000</td><td>1 mph</td><td>50</td><td>5</td><td>30</td><td>50000 lbs</td></tr>
-            <tr><td>Staelic Longship</td><td>10000</td><td>18 mph</td><td>75</td><td>24</td><td>48</td><td>150000 lbs</td></tr>
-            <tr><td>Rowboat</td><td>50</td><td>4 mph</td><td>15</td><td>1</td><td>4</td><td>2000 lbs</td></tr>
-            <tr><td>Sailing Cog</td><td>20000</td><td>7 mph</td><td>65</td><td>15</td><td>60</td><td>300000 lbs</td></tr>
-            <tr><td>Morrind Clipper</td><td>100000</td><td>20 mph</td><td>225</td><td>40</td><td>160</td><td>1000000 lbs</td></tr>
-          </tbody>
-        </table>
-      </b-tab>
-      <b-tab index="6" title="Labor">
-        <h3>Labor</h3>
-        <p>
-          Prices listed are per person per day.
-        </p>
-        <table class="table table-striped datatable">
-          <thead>
-            <tr>
-              <th>Worker</th><th>Class Level</th><th>In Vicinity of Home</th><th>Adventuring</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Guard/Mercenary</td><td>Level 1 Fighter</td><td>2 gp</td><td>4 gp</td>
-            </tr>
-            <tr>
-              <td>Unskilled Laborer</td><td>Level 1 Commoner</td><td>5 sp (plus materials)</td><td>1 gp (plus materials)</td>
-            </tr>
-            <tr>
-              <td>Artisan</td><td>Level 5 Commoner</td><td>3 gp (plus materials)</td><td>6 gp (plus materials)</td>
-            </tr>
-            <tr>
-              <td>Master Craftsman</td><td>Level 10 Commoner</td><td>5 gp (plus materials)</td><td>10 gp (plus materials)</td>
-            </tr>
-            <tr>
-              <td>Level 1 NPC</td><td>Any PC Class Level 1</td><td>2 gp</td><td>4 gp</td>
-            </tr>
-            <tr>
-              <td>Level 2 NPC</td><td>Any PC Class Level 2</td><td>10 gp</td><td>20 gp</td>
-            </tr>
-            <tr>
-              <td>Level 3 NPC</td><td>Any PC Class Level 3</td><td>20 gp</td><td>40 gp</td>
-            </tr>
-            <tr>
-              <td>Level 4 NPC</td><td>Any PC Class Level 4</td><td>40 gp</td><td>80 gp</td>
-            </tr>
-            <tr>
-              <td>Level 5 NPC</td><td>Any PC Class Level 5</td><td>60 gp</td><td>240 gp</td>
-            </tr>
-            <tr>
-              <td>Level 6 NPC</td><td>Any PC Class Level 6</td><td>90 gp</td><td>360 gp</td>
-            </tr>
-            <tr>
-              <td>Level 7 NPC</td><td>Any PC Class Level 7</td><td>120 gp</td><td>480 gp</td>
-            </tr>
-            <tr>
-              <td>Level 8 NPC</td><td>Any PC Class Level 8</td><td>160 gp</td><td>640 gp</td>
-            </tr>
-            <tr>
-              <td>Level 9 NPC</td><td>Any PC Class Level 9</td><td>200 gp</td><td>1200 gp</td>
-            </tr>
-            <tr>
-              <td>Level 10 NPC</td><td>Any PC Class Level 10</td><td>250 gp</td><td>1500 gp</td>
-            </tr>
-            <tr>
-              <td>Level 11 NPC</td><td>Any PC Class Level 11</td><td>300 gp</td><td>1800 gp</td>
-            </tr>
-            <tr>
-              <td>Level 12 NPC</td><td>Any PC Class Level 12</td><td>360 gp</td><td>2150 gp</td>
-            </tr>
-            <tr>
-              <td>Level 13 NPC</td><td>Any PC Class Level 13</td><td>420 gp</td><td>3300 gp</td>
-            </tr>
-            <tr>
-              <td>Level 14 NPC</td><td>Any PC Class Level 14</td><td>490 gp</td><td>3900 gp</td>
-            </tr>
-            <tr>
-              <td>Level 15 NPC</td><td>Any PC Class Level 15</td><td>560 gp</td><td>4400 gp</td>
-            </tr>
-            <tr>
-              <td>Level 16 NPC</td><td>Any PC Class Level 16</td><td>640 gp</td><td>5000 gp</td>
-            </tr>
-            <tr>
-              <td>Level 17 NPC</td><td>Any PC Class Level 17</td><td>720 gp</td><td>7125 gp</td>
-            </tr>
-            <tr>
-              <td>Level 18 NPC</td><td>Any PC Class Level 18</td><td>810 gp</td><td>8000 gp</td>
-            </tr>
-            <tr>
-              <td>Level 19 NPC</td><td>Any PC Class Level 19</td><td>900 gp</td><td>9000 gp</td>
-            </tr>
-            <tr>
-              <td>Level 20 NPC</td><td>Any PC Class Level 20</td><td>1000 gp</td><td>10000 gp</td>
-            </tr>
-          </tbody>
-        </table>
-      </b-tab>
-      <b-tab index='7' title="Adventuring Gear">
-        <h4>Tools</h4>
-        <p>
-          A tool helps you to do something you couldn't otherwise do, such as craft or repair an item, forge a document, or pick a lock. Your race, class, background, or feats give you proficiency with certain tools. Proficiency with a tool allows you to add your proficiency bonus to any ability check you make using that tool. Tool use is not tied to a single ability, since proficiency with a tool represents broader knowledge of its use. For example, the GM might ask you to make a Dexterity check to carve a fine detail with your woodcarver's tools, or a Strength check to make something out of particularly hard wood.
-        </p>
-        <b-row>
-          <b-col md="6"></b-col>
-          <b-col md="6" class="my-1">
-            <b-input-group>
-              <b-form-input v-model="equipmenttable.filter" placeholder="Type to Search" />
-              <button class="btn btn-primary" :disabled="!equipmenttable.filter" @click="equipmenttable.filter = ''">Clear</button>
-            </b-input-group>
-          </b-col>
-        </b-row>
-        <modal id="gearmodal" :modalProps="gearModalProps">
-          <p><strong>Cost (gp): </strong>{{ gearModal.Cost }}</p>
-          <p><strong>Weight: </strong>{{ gearModal.Weight }}</p>
-          <div v-html="marked.parse(gearModal.Description)"></div>
-        </modal>
-        <table class="table table-striped table-responsive">
-            <thead>
-              <tr>
-                <th><a href="#" @click.stop="this.equipmenttable.sortBy='Item';this.equipmenttable.sortDesc = !this.equipmenttable.sortDesc">
-                  Item
-                </a></th>
-                <th><a href="#" @click.stop="this.equipmenttable.sortBy='Cost';this.equipmenttable.sortDesc = !this.equipmenttable.sortDesc">
-                  Cost (gp)
-                </a></th>
-                <th><a href="#" @click.stop="this.equipmenttable.sortBy='Weight';this.equipmenttable.sortDesc = !this.equipmenttable.sortDesc">
-                  Weight
-                </a></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="item in filterequipment" :key="item.Item">
-                <td><a href="#" @click.stop="adventuringGearInfo(item)">{{item.Item}}</a></td>
-                <td>{{item.Cost}}</td>
-                <td>{{item.Weight}}</td>
-              </tr>
-            </tbody>
-          </table>
-      </b-tab>
-      <b-tab index='8' title="Armor">
-        <h3>Armor</h3>
-        <p>
-          Fantasy gaming worlds are a vast tapestry made up of many different cultures, each with its own technology level. For this reason, adventurers have access to a variety of armor types, ranging from leather armor to chain mail to costly plate armor, with several other kinds of armor in between. The Armor table collects the most commonly available types of armor found in the game and separates them into three categories: light armor, medium armor, and heavy armor. Many warriors supplement their armor with a shield.
-        </p>
-        <p>
-          The Armor table shows the cost, weight, and other properties of the common types of armor worn in fantasy gaming worlds.
-        </p>
-        <b-row>
-          <b-col md="6"></b-col>
-          <b-col md="6" class="my-1">
-            <b-input-group>
-              <b-form-input v-model="armortable.filter" placeholder="Type to Search" />
-              <button class="btn btn-primary" :disabled="!armortable.filter" @click="armortable.filter = ''">Clear</button>
-            </b-input-group>
-          </b-col>
-        </b-row>
-        <table class="table table-striped table-responsive">
-            <thead>
-              <tr>
-                <th><a href="#" @click.stop="this.armortable.sortBy='Armor';this.armortable.sortDesc = !this.armortable.sortDesc">
-                  Armor
-                </a></th>
-                <th><a href="#" @click.stop="this.armortable.sortBy='Type';this.armortable.sortDesc = !this.armortable.sortDesc">
-                  Type
-                </a></th>
-                <th><a href="#" @click.stop="this.armortable.sortBy='AC';this.armortable.sortDesc = !this.armortable.sortDesc">
-                  AC
-                </a></th>
-                <th><a href="#" @click.stop="this.armortable.sortBy='PC';this.armortable.sortDesc = !this.armortable.sortDesc">
-                  PC
-                </a></th>
-                <th><a href="#" @click.stop="this.armortable.sortBy='MaxDex';this.armortable.sortDesc = !this.armortable.sortDesc">
-                  MaxDex
-                </a></th>
-                <th><a href="#" @click.stop="this.armortable.sortBy='Stealth';this.armortable.sortDesc = !this.armortable.sortDesc">
-                  Stealth
-                </a></th>
-                <th><a href="#" @click.stop="this.armortable.sortBy='Intimidation';this.armortable.sortDesc = !this.armortable.sortDesc">
-                  Intimidation
-                </a></th>
-                <th><a href="#" @click.stop="this.armortable.sortBy='Strength';this.armortable.sortDesc = !this.armortable.sortDesc">
-                  Strength
-                </a></th>
-                <th><a href="#" @click.stop="this.armortable.sortBy='Resistance';this.armortable.sortDesc = !this.armortable.sortDesc">
-                  Resistance
-                </a></th>
-                <th><a href="#" @click.stop="this.armortable.sortBy='Weight';this.armortable.sortDesc = !this.armortable.sortDesc">
-                  Weight
-                </a></th>
-                <th><a href="#" @click.stop="this.armortable.sortBy='Cost';this.armortable.sortDesc = !this.armortable.sortDesc">
-                  Price (gp)
-                </a></th>
-                <th><a href="#" @click.stop="this.armortable.sortBy='Rarity';this.armortable.sortDesc = !this.armortable.sortDesc">
-                  Rarity
-                </a></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="item in filterarmor" :key="item.Armor + item.Material">
-                <td>{{item.Armor}}</td>
-                <td>{{item.Type}}</td>
-                <td>{{item.AC}}</td>
-                <td>{{item.PC}}</td>
-                <td>{{ item.MaxDex !== 99 ? item.MaxDex : "Unlimited" }}</td>
-                <td>{{item.Stealth}}</td>
-                <td>{{ item.Intimidation }}</td>
-                <td>{{item.Strength}}</td>
-                <td>{{item.Resistance}}</td>
-                <td>{{item.Weight}}</td>
-                <td>{{item.Cost}}</td>
-                <td>{{ item.Rarity }}</td>
-              </tr>
-            </tbody>
-          </table>
-          <p>
-          <strong>Armor Proficiency.</strong> Anyone can put on a suit of armor or strap a shield to an arm. Only those proficient in the armor's use know how to wear it effectively, however. Your class gives you proficiency with certain types of armor. If you wear armor that you lack proficiency with, you have disadvantage on any ability check, saving throw, or attack roll that involves Strength or Dexterity, and you can't cast spells.
-        </p>
-        <p>
-          <strong>Armor Class (AC).</strong> Armor protects its wearer from attacks. The armor (and shield) you wear determines your base Armor Class. Your Armor Class represents your ability to avoid, block or otherwise negate attacks.
-        </p>
-        <p>
-          <strong>Protection Class (PC).</strong> Even when your armor fails to protect you completely from an attack, it can turn a gash into a small cut or a broken bone into a bruise. Your armors ability to reduce the damage you take is referred to as its Protection Class, and directly reduces the damage you take from any attack that would do bludgeoning, piercing, or slashing damage on a one to one basis.
-        </p>
-        <p>
-          <strong>Maximum Dexterity Bonus (Max Dex).</strong> If you are not wearing armor, your armor class is equal to 10 + your dexterity bonus, representing your natural ability to dodge attacks. However, heavier armor may impede your ability to move and dodge attacks. This is represented by the armors Maximum Dexterity Bonus. Your Armor Class when wearing armor is equal to the base AC of the armor, plus your dexterity bonus, or the maximum dexterity bonus of the armor, whichever is lower. So for example if your Dexterity Bonus is +2, and you are wearing a Leather Hauberk, your Armor Class is 16 (14 + 2). However, if you are wearing a Bone Hauberk, your Armor Class is 15 (15 + 0).
-        </p>
-        <p>
-          <strong>Stealth.</strong> If the Armor table shows "Disadvantage" in the Stealth column, the wearer has disadvantage on Dexterity (Stealth) checks.
-        </p>
-        <p>
-          <strong>Intimidation.</strong> If the Armor table shows "Advantage" in the Intimidation column, it grants advantage on intimidation checks.
-        </p>
-        <p>
-          <strong>Heavy Armor.</strong> Heavier armor interferes with the wearer's ability to move quickly, stealthily, and freely. If the Armor table shows "13" or "15" in the Strength column for an armor type, the armor reduces the wearer's speed by 10 feet unless the wearer has a Strength score equal to or higher than the listed score.
-        </p>
-        <p>
-          <strong>Resistance.</strong> Certain rare armors grant resistance to particular types of damage. If something is listed in the Resistance column of the Armor Table the wearer takes half damage from the damage type it is resistant to.
-        </p>
-        <p>
-          <strong>Shields.</strong> A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.
-        </p>
-        <p>
-          <strong>Tower Shields.</strong> A Tower Shield is a massive shield large enough for the wielder to hide behind. A Tower Shield can be set as an action, after which the wielder has 3/4 cover against attacks coming from the direction in which it was set, but no shield bonus to AC from attacks from other directions. It can be unset as a free action on your turn, or is unset immediately if the wielder moves (willingly or unwillingly).
-        </p>
-        <h5>Getting Into and Out of Armor</h5>
-        <p>The time it takes to don or doff armor depends on the armor's category.</p>
-        <p><strong>Don.</strong> This is the time it takes to put on armor. You benefit from the armor's AC only if you take the full time to don the suit of armor.</p>
-        <p><strong>Doff.</strong> This is the time it takes to take off armor. If you have help, reduce this time by half.</p>
-        <ul>
-          <li>Light Armor - Don: 1 minute - Doff: 1 minute</li>
-          <li>Medium Armor - Don: 5 minutes - Doff: 1 minute</li>
-          <li>Heavy Armor - Don: 10 minutes - Doff: 5 minutes</li>
-          <li>Shield - Don: 1 action - Doff: 1 action</li>
-        </ul>
-      </b-tab>
-      <b-tab index='9' title="Weapons">
-        <h3>Weapons</h3>
-        <p>
-          Your class grants proficiency in certain weapons, reflecting both the class's focus and the tools you are most likely to use. Whether you favor a longsword or a longbow, your weapon and your ability to wield it effectively can mean the difference between life and death while adventuring.
-        </p>
-        <p>
-          The Weapons table shows the most common weapons used in the fantasy gaming worlds, their price and weight, the damage they deal when they hit, and any special properties they possess. Every weapon is classified as either melee or ranged. A melee weapon is used to attack a target within 5 feet of you, whereas a ranged weapon is used to attack a target at a distance.
-        </p>
-        <input type="text" class="form-control" v-model="homebrewweaponstable.filter" placeholder="Filter" />
-        <table class="table table-striped table-responsive">
-          <thead>
-            <th v-for="field in homebrewweaponstable.fields" :key="field">
-              <a href="#" @click.stop="changehwSort(field.key)">{{ field.label }}
-                <span v-if="homebrewweaponstable.sortBy == field.key && homebrewweaponstable.sortDesc == false">&uarr;</span>
-                <span v-if="homebrewweaponstable.sortBy == field.key && homebrewweaponstable.sortDesc == true">&darr;</span>
-              </a>
-            </th>
-          </thead>
-          <tbody>
-            <tr v-for="weapon in fhweapons" :key="weapon.Weapon">
-              <td>{{ weapon.Weapon }}</td>
-              <td>{{ weapon.Type }}</td>
-              <td>{{ weapon.Damage }}</td>
-              <td>{{ weapon.Dtype }}</td>
-              <td>{{ weapon.Properties }}</td>
-              <td>{{ weapon.Cost }} gp</td>
-              <td>{{ weapon.Weight }} lbs</td>
-              <td><span v-if="weapon.Reach > 0">{{ weapon.Reach }} ft</span><span v-else>-</span></td>
-              <td><span v-if="weapon.Range > 0">{{ weapon.Range }}/{{ weapon.Range * 3 }} ft</span><span v-else>-</span></td>
-            </tr>
-          </tbody>
-        </table>
-        <h4>Weapon Proficiency</h4>
-        <p>
-          Your race, class, and feats can grant you proficiency with certain weapons or categories of weapons. The two categories are simple and martial. Most people can use simple weapons with proficiency. These weapons include clubs, maces, and other weapons often found in the hands of commoners. Martial weapons, including swords, axes, and polearms, require more specialized training to use effectively. Most warriors use martial weapons because these weapons put their fighting style and training to best use.
-        </p>
-        <p>
-          Proficiency with a weapon allows you to add your proficiency bonus to the attack roll for any attack you make with that weapon. If you make an attack roll using a weapon with which you lack proficiency, you do not add your proficiency bonus to the attack roll.
-        </p>
-        <h4>Weapon Properties</h4>
-        <p>
-          Many weapons have special properties related to their use, as shown in the Weapons table.
-        </p>
-        <table class="table table-striped">
-          <thead>
-            <tr><th>Property</th><th>Effect Cost</th><th>Effect</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Finesse</td><td>1</td><td>Can use your choice of dexterity or strength for the attack and damage rolls with this weapon.</td></tr>
-            <tr><td>Ranged</td><td>0</td><td>Attacks with this weapon are made with disadvantage when within 5 ft of a hostile character. You use dexterity for attack and damage rolls with this weapon.</td></tr>
-            <tr><td>Ammunition</td><td>0</td><td>This weapon requires ammunition of an appropriate type in order to be used.</td></tr>
-            <tr><td>Versatile</td><td>0.5</td><td>This weapon uses a damage die one size larger when wielded in two hands. 1d4 becomes 1d6, 1d6 becomes 1d8, 1d8 becomes 1d10, and 1d10 becomes 1d12.</td></tr>
-            <tr><td>Heavy</td><td>0</td><td>This weapon is too large and unwieldy for small characters to use effectively, and they have disadvantage on attack rolls while using it.</td></tr>
-            <tr><td>Two-handed</td><td>-1</td><td>This weapon requires 2 hands to wield effectively</td></tr>
-            <tr><td>Light</td><td>0.5</td><td>This weapon is light and well balanced enough to use one in each hand.</td></tr>
-            <tr><td>Thrown</td><td>0</td><td>This weapon can be used to make a ranged attack by throwing it.</td></tr>
-            <tr><td>Knock down</td><td>1</td><td>Once per turn, after hitting an opponent with this weapon you can choose to attempt to knock them down with it. If you do so, make a strength (athletics) check opposed by either a strength (athletics) or a dexterity (acrobatics) check by the opponent. On a success you knock the opponent prone.</td></tr>
-            <tr><td>Brutal</td><td>1</td><td>This weapon does one extra die of its damage type on a critical hit. So a weapon that does 2d6 damage would deal 5d6 damage on a critical hit, and a weapon that does 1d12 damage would do 3d12 damage on a critical hit. This stacks with the Brutal Critical feature.</td></tr>
-            <tr><td>Grapple</td><td>1</td><td>Once per turn, this weapon has the ability to entangle a foe, preventing them from moving. After hitting an opponent with this weapon you can choose to make a strength (athletics) check opposed by either a strength (athletics) or dexterity (acrobatics) check by the opponent. On a success the target is grappled. While the target is grappled in this way you cannot use the weapon to attack until you release the grapple, and if you drop the weapon the grapple is released automatically.</td></tr>
-            <tr><td>Loading</td><td>-1</td><td>This weapon takes time to load and can only be used to make 1 attack per round.</td></tr>
-            <tr><td>Net special</td><td>6</td><td>When you hit a target with this weapon they are restrained. The target can make a strength (athletics) check or a dexterity (acrobatics) check as an action with a DC of 10 to escape the net.</td></tr>
-            <tr><td>Concealable</td><td>0.5</td><td>This weapon is easily concealed in a pocket, boot, or other unobtrusive place such that it is not obvious without a bodily search.</td></tr>
-            <tr><td>STR 13 Required</td><td>-2</td><td>This weapon cannot be wielded unless the user has a strength score of at least 13.</td></tr>
-            <tr><td>Armor piercing</td><td>1.5</td><td>Once per turn, when you hit an opponent with this weapon you can damage any manufactured armor that they are wearing, reducing it's AC by 1. If the AC is reduced to 10, the armor is destroyed (or 0 in the case of a shield).</td></tr>
-            <tr><td>Awkward</td><td>-1</td><td>This weapon is unwieldy at close range. Attacks with this weapon have disadvantage to hit opponents within 5 ft.</td></tr>
-            <tr><td>Poison</td><td>1.5</td><td>This weapon's ammunition is coated with simple poisons. Those hit by this weapon must make a DC 12 Constitution save or suffer the poisoned condition for one round.</td></tr>
-            <tr><td>Common</td><td>0.5</td><td>This weapon is exceedingly common and generally seen as a tool by figures of authority, rather than a weapon.</td></tr>
-            <tr><td>Versatile Damage</td><td>0.5</td><td>This weapon can attack in different ways, doing different damage types depending on how it is used.</td></tr>
-            <tr><td>Returning</td><td>2</td><td>This weapon returns to your hand when thrown as long as nothing prevents it from doing so.</td></tr>
-            <tr><td>Armor</td><td>2</td><td>This weapon is also armor, or is part of a suit of armor.</td></tr>
-          </tbody>
-        </table>
-        <h4>Improvised Weapons</h4>
-        <p>
-          Sometimes characters don't have their weapons and have to attack with whatever is at hand. An improvised weapon includes any object you can wield in one or two hands, such as broken glass, a table leg, a frying pan, a wagon wheel, or a dead goblin.
-        </p>
-        <p>
-          Often, an improvised weapon is similar to an actual weapon and can be treated as such. For example, a table leg is akin to a club. At the GM's option, a character proficient with a weapon can use a similar object as if it were that weapon and use his or her proficiency bonus.
-        </p>
-        <p>
-          An object that bears no resemblance to a weapon deals 1d4 damage (the GM assigns a damage type appropriate to the object). If a character uses a ranged weapon to make a melee attack, or throws a melee weapon that does not have the thrown property, it also deals 1d4 damage. An improvised thrown weapon has a normal range of 20 feet and a long range of 60 feet.
-        </p>
-        <h4>Creating New Weapons</h4>
-        <p>The weapons above were balanced using a points system, with each weapon having a value of 8 points. The formula is: <strong>Average Damage + Reach + Range + Properties + Type Modifier.</strong></p>
-        <ul>
-          <li>Average Damage. This is the average roll of the damage dice the weapon uses. So 1d4 = 2.5, 1d6 = 3.5, 1d8 = 4.5, etc.</li>
-          <li>Reach. A 5 ft reach melee attack adds 1 pt, a 10 ft reach adds 2, and a 15 ft reach adds 3.5.</li>
-          <li>Range. Every 50 ft of range for ranged attacks adds 1 pt (25 ft adds 0.5 pts).</li>
-          <li>Properties. Sum the value of all the properties in the table above that apply to your weapon.</li>
-          <li>Type Modifier. Martial weapons should in general be better than simple weapons, add 1.5 to the score of a simple weapon.</li>
-        </ul>
-        <p><strong>Example: </strong>The dagger does 1d4 damage (2.5 pts), has a 5 ft reach (1 pt), a 25 ft base range (0.5 pts), the finesse (1 pt), light (0.5 pts), concealable (0.5 pts), common (0.5 pts), and thrown properties, and is a simple weapon. So the formula is 2.5 + 1 + 0.5 + 2.5 + 1.5 = 8.</p>
-        <p><strong>Example 2: </strong>The heavy crossbow does 2d6 damage (7 pts), has a 0 ft reach (not a melee weapon), a 150 range (3 pts), the ranged, ammunition, loading (-1 pt), heavy, and two-handed (-1 pt) properties, and is a martial weapon. So the formula is 7 + 0 + 3 + -2 + 0 = 8.</p>
-      </b-tab>
-      <b-tab index="10" title="Coins">
-        <p>
-          Common coins come in several different denominations based on the relative worth of the metal from which they are made. The three most common coins are the gold piece (gp), the silver piece (sp), and the copper piece (cp).
-        </p>
-        <p>
-          With one gold piece, a character can buy a bedroll, 50 feet of good rope, or a goat. A skilled (but not exceptional) artisan can earn one gold piece a day. The gold piece is the standard unit of measure for wealth, even if the coin itself is not commonly used. When merchants discuss deals that involve goods or services worth hundreds or thousands of gold pieces, the transactions don't usually involve the exchange of individual coins. Rather, the gold piece is a standard measure of value, and the actual exchange is in gold bars, letters of credit, or valuable goods.
-        </p>
-        <p>
-          One gold piece is worth ten silver pieces, the most prevalent coin among commoners. A silver piece buys a laborer's work for half a day, a flask of lamp oil, or a night's rest in a poor inn.
-        </p>
-        <p>
-          One silver piece is worth ten copper pieces, which are common among laborers and beggars. A single copper piece buys a candle, a torch, or a piece of chalk.
-        </p>
-        <p>
-          In addition, unusual coins made of other precious metals sometimes appear in treasure hoards. The electrum piece (ep) and the platinum piece (pp) originate from fallen empires and lost kingdoms, and they sometimes arouse suspicion and skepticism when used in transactions. An electrum piece is worth five silver pieces, and a platinum piece is worth ten gold pieces.
-        </p>
-        <p>
-          A standard coin weighs about a third of an ounce, so fifty coins weigh a pound.
-        </p>
-      </b-tab>
     </b-tabs>
   </div>
 </template>
-<script src="./js/quick.js"></script>
-<style src="./scss/quick.scss" lang="scss" scoped></style>
+<script src="./js/combat.js"></script>
+<style src="./scss/combat.scss" lang="scss" scoped></style>

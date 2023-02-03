@@ -5,64 +5,68 @@
   </p>
   <div class="row">
     <div class="col">
-      <h2>Adventuring</h2>
-      <h3>General Adventuring</h3>
+      <h2><router-link to="/ref/adventuring">Adventuring</router-link></h2>
       <ul>
-        <li>Between Adventures</li>
-        <li>Movement</li>
+        <li><router-link to="/ref/adventuring">Between Adventures</router-link></li>
+        <li><router-link to="/ref/adventuring">Movement</router-link></li>
         <li><router-link to="/world/cosmology">Planes of Existence</router-link></li>
-        <li>Resting</li>
-        <li>The Environment</li>
-        <li>Time</li>
+        <li><router-link to="/ref/adventuring">Resting</router-link></li>
+        <li><router-link to="/ref/adventuring">The Environment</router-link></li>
+        <li><router-link to="/ref/adventuring">Time</router-link></li>
       </ul>
-      <h3>Adventuring - Equipment</h3>
+    </div>
+    <div class="col">
+      <h2><router-link to="/ref/equipment">Equipment</router-link></h2>
       <ul>
-        <li><router-link to="/ref/quick">Adventuring Gear</router-link></li>
-        <li><router-link to="/ref/quick">Armor</router-link></li>
-        <li><router-link to="/ref/quick">Coins</router-link></li>
-        <li><router-link to="/ref/quick">Equipment Packs (see Adventuring Gear)</router-link></li>
-        <li><router-link to="/ref/quick">Mounts and Vehicles</router-link></li>
-        <li><router-link to="/ref/quick">Tools (see Adventuring Gear)</router-link></li>
-        <li><router-link to="/ref/quick">Trade Goods</router-link></li>
-        <li><router-link to="/ref/quick">Weapons</router-link></li>
+        <li><router-link to="/ref/equipment">Adventuring Gear</router-link></li>
+        <li><router-link to="/ref/equipment">Armor</router-link></li>
+        <li><router-link to="/ref/equipment">Coins</router-link></li>
+        <li><router-link to="/ref/equipment">Equipment Packs (see Adventuring Gear)</router-link></li>
+        <li><router-link to="/ref/equipment">Mounts and Vehicles</router-link></li>
+        <li><router-link to="/ref/equipment">Tools (see Adventuring Gear)</router-link></li>
+        <li><router-link to="/ref/equipment">Trade Goods</router-link></li>
+        <li><router-link to="/ref/equipment">Weapons</router-link></li>
       </ul>
     </div>
     <div class="col">
       <h2>Character</h2>
       <ul>
-        <li>Alignment</li>
-        <li>Backgrounds</li>
-        <li>Gods</li>
-        <li>Languages</li>
-        <li>Classes</li>
-        <li>Ancestries</li>
+        <li><router-link to="/options/alignment">Alignment</router-link></li>
+        <li><router-link to="/options/backgrounds">Backgrounds</router-link></li>
+        <li><router-link to="/ref/gods">Gods</router-link></li>
+        <li><router-link to="/options/languages">Languages</router-link></li>
+        <li><router-link to="/options/class">Classes</router-link></li>
+        <li><router-link to="/options/ancestry">Ancestries</router-link></li>
       </ul>
     </div>
     <div class="col">
-      <h2>Combat</h2>
+      <h2><router-link to="/ref/combat">Combat</router-link></h2>
       <ul>
-        <li>Actions in Combat</li>
-        <li>Cover</li>
-        <li>Damage and Healing</li>
-        <li>Making an Attack</li>
-        <li>Mounted Combat</li>
-        <li>Movement and Position</li>
-        <li>Order of Combat</li>
-        <li>Underwater Combat</li>
+        <li><router-link to="/ref/combat">Actions in Combat</router-link></li>
+        <li><router-link to="/ref/combat">Cover</router-link></li>
+        <li><router-link to="/ref/combat">Damage and Healing</router-link></li>
+        <li><router-link to="/ref/combat">Making an Attack</router-link></li>
+        <li><router-link to="/ref/combat">Mounted Combat</router-link></li>
+        <li><router-link to="/ref/combat">Movement and Position</router-link></li>
+        <li><router-link to="/ref/combat">Order of Combat</router-link></li>
+        <li><router-link to="/ref/combat">Underwater Combat</router-link></li>
       </ul>
     </div>
+  </div>
+  <div class="row">
     <div class="col">
-      <h2>Rules</h2>
-      <h3>General Rules</h3>
+      <h2>General Rules</h2>
       <ul>
         <li>Advantage and Disadvantage</li>
-        <li>Conditions</li>
+        <li><router-link to="/ref/combat">Conditions</router-link></li>
         <li>Expenses</li>
-        <li>Feats</li>
+        <li><router-link to="/options/feats">Feats</router-link></li>
         <li>Inspiration</li>
         <li>Leveling Up</li>
       </ul>
-      <h3>Rules - Abilities</h3>
+    </div>
+    <div class="col">
+      <h2>Abilities</h2>
       <ul>
         <li>Ability Checks</li>
         <li>Ability Scores</li>
@@ -89,6 +93,14 @@
         <li>Poisons</li>
         <li>Sentient Magic Items</li>
         <li>Traps</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h2>Spellcasting</h2>
+      <ul>
+        <li>Casting a Spell</li>
+        <li>What is a Spell?</li>
+        <li>Spells (filterable and searchable table)</li>
       </ul>
     </div>
   </div>

@@ -201,38 +201,6 @@
             </tbody>
           </table>
         </b-tab>
-        <b-tab title="Adv. Weapons">
-          <table class="table table-striped table-responsive">
-            <thead>
-              <tr>
-                <th><a href="#" @click.stop="this.magicitemtables.sortBy='Item';this.magicitemtables.sortDesc = !this.magicitemtables.sortDesc">
-                  Item
-                </a></th>
-                <th><a href="#" @click.stop="this.magicitemtables.sortBy='Attunement';this.magicitemtables.sortDesc = !this.magicitemtables.sortDesc">
-                  Attunement
-                </a></th>
-                <th><a href="#" @click.stop="this.magicitemtables.sortBy='Rarity';this.magicitemtables.sortDesc = !this.magicitemtables.sortDesc">
-                  Rarity
-                </a></th>
-                <th><a href="#" @click.stop="this.magicitemtables.sortBy='Cost (gp)';this.magicitemtables.sortDesc = !this.magicitemtables.sortDesc">
-                  Cost (gp)
-                </a></th>
-                <th><a href="#" @click.stop="this.magicitemtables.sortBy='instock';this.magicitemtables.sortDesc = !this.magicitemtables.sortDesc">
-                  In Stock
-                </a></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="item in filteredAdvWeapons" :key="item.Item">
-                <td><a href="#" @click.stop="magicItemInfo(item)">{{item.Item}}</a></td>
-                <td>{{item.Attunement}}</td>
-                <td>{{item.Rarity}}</td>
-                <td>{{item['Cost (gp)']}}</td>
-                <td>{{item.instock}}</td>
-              </tr>
-            </tbody>
-          </table>
-        </b-tab>
         <b-tab title="Armor">
           <table class="table table-striped table-responsive">
             <thead>

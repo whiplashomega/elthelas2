@@ -13,7 +13,6 @@ export default {
       magicscrolls,
       magicwands,
       magicweapons,
-      magichomebrewweapons,
       magicarmor,
       magicother,
       magiccommons,
@@ -25,12 +24,10 @@ export default {
     useMeta({ title: "Magic Item Catalog" });
     return {
       userinfo,
-
       magicitems,
       magicscrolls,
       magicwands,
       magicweapons,
-      magichomebrewweapons,
       magicarmor,
       magicother,
       magiccommons,
@@ -53,9 +50,6 @@ export default {
     },
     filteredWeapons() {
       return this.magicweapons.filter(this.magicitemfilter).sort(this.sorter);
-    },
-    filteredAdvWeapons() {
-      return this.magichomebrewweapons.filter(this.magicitemfilter).sort(this.sorter);
     },
     filteredArmor() {
       return this.magicarmor.filter(this.magicitemfilter).sort(this.sorter);
