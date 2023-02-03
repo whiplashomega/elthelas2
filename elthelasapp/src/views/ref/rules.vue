@@ -331,7 +331,7 @@
           </tbody>
         </table>
       </b-tab>
-      <b-tab index="4">
+      <b-tab index="5" title="Proficiency Bonus">
         <h2>Proficiency Bonus</h2>
         <p>
           Characters have a proficiency bonus determined by level. Monsters also have this bonus, which is incorporated in their stat blocks. The bonus is used in the rules on ability checks, saving throws, and attack rolls.

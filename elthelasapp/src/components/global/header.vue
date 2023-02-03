@@ -61,14 +61,16 @@
                 Reference
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><router-link to="/ref/srd" class="dropdown-item">System Reference Document</router-link></li>
-              <li><router-link to="/ref/adventuring" class="dropdown-item">Adventuring</router-link></li>
-              <li><router-link to="/ref/combat" class="dropdown-item">Combat</router-link></li>
-              <li><router-link to="/ref/equipment" class="dropdown-item">Equipment</router-link></li>
-              <li v-if="user.isLoggedIn"><router-link to="/ref/bestiary" class="dropdown-item">Bestiary</router-link></li>
-              <li><router-link to="/ref/magic" class="dropdown-item">Magic</router-link></li>
-              <li><router-link to="/ref/gods" class="dropdown-item">Gods</router-link></li>
-              <li><router-link to="/ref/divines" class="dropdown-item">Divine Beings</router-link></li>
+                <li><router-link to="/ref/srd" class="dropdown-item">System Reference Document</router-link></li>
+                <li><router-link to="/ref/abilities" class="dropdown-item">Abilities</router-link></li>
+                <li><router-link to="/ref/adventuring" class="dropdown-item">Adventuring</router-link></li>
+                <li><router-link to="/ref/combat" class="dropdown-item">Combat</router-link></li>
+                <li><router-link to="/ref/equipment" class="dropdown-item">Equipment</router-link></li>
+                <li v-if="user.isLoggedIn"><router-link to="/ref/bestiary" class="dropdown-item">Bestiary</router-link></li>
+                <li><router-link to="/ref/magic" class="dropdown-item">Magic</router-link></li>
+                <li><router-link to="/ref/gods" class="dropdown-item">Gods</router-link></li>
+                <li><router-link to="/ref/divines" class="dropdown-item">Divine Beings</router-link></li>
+                <li><router-link to="/ref/rules" class="dropdown-item">Other Rules</router-link></li>
               </ul>
             </li>
             <li class="nav-item dropdown">

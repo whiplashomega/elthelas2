@@ -2,6 +2,6 @@ import { useMeta } from 'vue-meta';
 
 export default {
     setup() {
-        useMeta({ title: "Adventuring" });
+        useMeta({ title: "Abilities" });
     }
 }

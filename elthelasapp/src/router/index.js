@@ -433,6 +433,39 @@ const router = createRouter({
       }
     },
     {
+      path: "/ref/rules",
+      name: "Other Rules",
+      components: {
+        default: () => import("@/views/ref/rules.vue")
+      },
+      meta: {
+        title: "Other Rules",
+        auth: false
+      }
+    },
+    {
+      path: "/ref/abilities",
+      name: "Abilities",
+      components: {
+        default: () => import("@/views/ref/abilities.vue")
+      },
+      meta: {
+        title: "Abilities",
+        auth: false
+      }
+    },
+    {
+      path: "/ref/gmrules",
+      name: "GM Rules",
+      components: {
+        default: () => import("@/views/ref/gmrules.vue")
+      },
+      meta: {
+        title: "GM Rules",
+        auth: false
+      }
+    },
+    {
       path: "/5e/homebrew",
       name: "Homebrew Rules",
       components: {

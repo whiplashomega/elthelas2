@@ -57,50 +57,52 @@
     <div class="col">
       <h2>General Rules</h2>
       <ul>
-        <li>Advantage and Disadvantage</li>
+        <li><router-link to="/ref/rules">Advantage and Disadvantage</router-link></li>
         <li><router-link to="/ref/combat">Conditions</router-link></li>
-        <li>Expenses</li>
+        <li><router-link to="/ref/rules">Expenses</router-link></li>
         <li><router-link to="/options/feats">Feats</router-link></li>
-        <li>Inspiration</li>
-        <li>Leveling Up</li>
+        <li><router-link to="/ref/rules">Inspiration</router-link></li>
+        <li><router-link to="/ref/rules">Leveling Up</router-link></li>
+        <li><router-link to="/ref/rules">Multiclassing</router-link></li>
+        <li><router-link to="/ref/rules">Proficiency Bonus</router-link></li>
       </ul>
     </div>
     <div class="col">
-      <h2>Abilities</h2>
+      <h2><router-link to="/ref/abilities">Abilities</router-link></h2>
       <ul>
-        <li>Ability Checks</li>
-        <li>Ability Scores</li>
-        <li>Saving Throws</li>
-        <li>Charisma</li>
-        <li>Constitution</li>
-        <li>Dexterity</li>
-        <li>Intelligence</li>
-        <li>Strength</li>
-        <li>Wisdom</li>
+        <li><router-link to="/ref/abilities">Ability Checks</router-link></li>
+        <li><router-link to="/ref/abilities">Ability Scores</router-link></li>
+        <li><router-link to="/ref/abilities">Saving Throws</router-link></li>
+        <li><router-link to="/ref/abilities">Charisma</router-link></li>
+        <li><router-link to="/ref/abilities">Constitution</router-link></li>
+        <li><router-link to="/ref/abilities">Dexterity</router-link></li>
+        <li><router-link to="/ref/abilities">Intelligence</router-link></li>
+        <li><router-link to="/ref/abilities">Strength</router-link></li>
+        <li><router-link to="/ref/abilities">Wisdom</router-link></li>
       </ul>
     </div>
     <div class="col">
-      <h2>GM Rules</h2>
+      <h2><router-link to="/ref/gmrules">GM Rules</router-link></h2>
       <ul>
-        <li>Diseases</li>
-        <li>Legendary Creatures</li>
-        <li>Madness</li>
-        <li>Magic Items</li>
-        <li>Monster Index/Bestiary</li>
-        <li>Monster Rules</li>
-        <li>Nonplayer Characters</li>
-        <li>Objects</li>
-        <li>Poisons</li>
-        <li>Sentient Magic Items</li>
-        <li>Traps</li>
+        <li><router-link to="/ref/gmrules">Diseases</router-link></li>
+        <li><router-link to="/ref/gmrules">Legendary Creatures</router-link></li>
+        <li><router-link to="/ref/gmrules">Madness</router-link></li>
+        <li><router-link to="/ref/equipment">Magic Items</router-link></li>
+        <li><router-link to="/tools/runner">Monster Index/Bestiary</router-link></li>
+        <li><router-link to="/ref/gmrules">Monster Rules*</router-link></li>
+        <li><router-link to="/ref/gmrules">Nonplayer Characters*</router-link></li>
+        <li><router-link to="/ref/gmrules">Objects*</router-link></li>
+        <li><router-link to="/ref/gmrules">Poisons</router-link></li>
+        <li><router-link to="/ref/gmrules">Sentient Magic Items*</router-link></li>
+        <li><router-link to="/ref/gmrules">Traps*</router-link></li>
       </ul>
     </div>
     <div class="col">
-      <h2>Spellcasting</h2>
+      <h2><router-link to="/ref/magic">Spellcasting</router-link></h2>
       <ul>
-        <li>Casting a Spell</li>
-        <li>What is a Spell?</li>
-        <li>Spells (filterable and searchable table)</li>
+        <li><router-link to="/ref/magic">Casting a Spell</router-link></li>
+        <li><router-link to="/ref/magic">What is a Spell?</router-link></li>
+        <li><router-link to="/ref/magic">Spells (filterable and searchable table)</router-link></li>
       </ul>
     </div>
   </div>
