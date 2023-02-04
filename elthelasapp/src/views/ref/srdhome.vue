@@ -89,12 +89,10 @@
         <li><router-link to="/ref/gmrules">Madness</router-link></li>
         <li><router-link to="/ref/equipment">Magic Items</router-link></li>
         <li><router-link to="/tools/runner">Monster Index/Bestiary</router-link></li>
-        <li><router-link to="/ref/gmrules">Monster Rules*</router-link></li>
-        <li><router-link to="/ref/gmrules">Nonplayer Characters*</router-link></li>
-        <li><router-link to="/ref/gmrules">Objects*</router-link></li>
+        <li><router-link to="/ref/gmrules">Monster Rules</router-link></li>
+        <li><router-link to="/ref/gmrules">Nonplayer Characters</router-link></li>
+        <li><router-link to="/ref/gmrules">Objects</router-link></li>
         <li><router-link to="/ref/gmrules">Poisons</router-link></li>
-        <li><router-link to="/ref/gmrules">Sentient Magic Items*</router-link></li>
-        <li><router-link to="/ref/gmrules">Traps*</router-link></li>
       </ul>
     </div>
     <div class="col">
