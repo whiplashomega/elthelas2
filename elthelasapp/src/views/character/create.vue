@@ -3,15 +3,15 @@
     <p>
       Character Creation is your first step into the world of Elthelas, and it is a relatively simple process, with a few easy steps. The first thing to realize is that there is no wrong answer. The next thing to realize is that even at this early stage, this is a colaborative process. Work with your GM and fellow players to help you build a character that fits exactly what you want to be. So lets dive in!
     </p>
-    <h5>Step 1: Create a Concept</h5>
+    <h4>Step 1: Create a Concept</h4>
     <p>
       Before you decide how your character will be put together mechanically, you need a concept. This part is pure creativity. Think about the world that your GM has provided. If you are using the Elthelas setting, peruse the lore around this site. Where is your character from? Who were their parents? Did they grow up rich? poor? How were they educated? Do they have friends? Enemies? How old are they? And most of all, what prompted them to become an adventurer?
     </p>
-    <h5>Step 2: ABC (Ancestry, Background, and Class)</h5>
+    <h4>Step 2: ABC (Ancestry, Background, and Class)</h4>
     <p>
       Look at the Ancestries, Backgrounds, and Classes listed on this site. For each, think about and choose the option that best matches your concept. There might be more than one that is a good fit, and that's fine! In that case go ahead and pick whichever one looks more fun for you to play. This is the point where you can open up the provided character builder and start marking down your choices. If your class of choice picks its subclass at level 1 (Cleric, Sorcerer, and Warlock do this) you should pick this right now as well.
     </p>
-    <h5>Step 3: Ability Scores</h5>
+    <h4>Step 3: Ability Scores</h4>
     <p>
       Your next step is to determine your ability scores. There are several methods to do this, but the most common are Point Buy or Roll based. The process in general goes like so:
     </p>
@@ -40,20 +40,26 @@
         <tr><td>16</td><td>12</td></tr>
       </tbody>
     </table>
-    <h5>Step 4: Skills</h5>
-    <h5>Step 5: Equipment</h5>
+    <h4>Step 4: Skills</h4>
+    <p>
+      Your background provides with proficiency in certain skills and tools. Your class then allows you to choose 2-4 additional skills and potentially one or more sets of tools to gain proficiency in (see the Proficiencies section of your class). For each skill you are proficient in, mark it as such on your character sheet. If you are proficient in a skill or tool you add your proficiency bonus to ability checks that use that skill or tool.
+    </p>
+    <p>
+      Rogues also get a feature called "Expertise" at level 1. If you have Expertise in a skill or tool you add double your proficiency bonus to ability checks that use that skill or tool.
+    </p>
+    <h4>Step 5: Equipment</h4>
     <p>
       You receive some starting equipment from your background, some classes also will include starting equipment that is critical to functioning as a member of that class (such as Tinker's Tools for an Artificer, or a Spellbook for a Wizard). However, to generate the bulk of your starting equipment use the following list:
     </p>
     <ul>
-      <li>Select one suit of armor with which you are proficient that costs 300 gp or less. <router-link to="/ref/quick">See the Quick Reference Manual for details on options.</router-link>
+      <li>Select one suit of armor with which you are proficient that costs 300 gp or less. <router-link to="/ref/equipment">See the Equipment page for details on options.</router-link>
         <ul>
           <li>Light Armor: Leather Cuirass, Scale Cuirass, Leather Hauberk, Chain Cuirass.</li>
           <li>Medium Armor: Leather Full Armor, Scale Hauberk, Chain Hauberk</li>
           <li>Heavy Armor: Scale Full Armor, Chain Full Armor</li>
         </ul>
       </li>
-      <li>Select up to 3 weapons with which you are proficient. Again, <router-link to="/ref/quick">see the Quick Reference Manual for options.</router-link> If one of your weapons requires ammunition, take 50 units of basic, nonmagical ammunition for the weapon (such as bullets for a sling, darts for a blowgun, arrows for a longbow, or bolts for a light crossbow). If you are proficient with shields, you may select a wooden or steel shield in place of one weapon.</li> 
+      <li>Select up to 3 weapons with which you are proficient. Again, <router-link to="/ref/equipment">see the Equipment page for options.</router-link> If one of your weapons requires ammunition, take 50 units of basic, nonmagical ammunition for the weapon (such as bullets for a sling, darts for a blowgun, arrows for a longbow, or bolts for a light crossbow). If you are proficient with shields, you may select a wooden or steel shield in place of one weapon.</li> 
       <li>If you are proficient with one or more sets of tools, add one set of tools to your inventory that you are proficient with.</li>
       <li>If you are proficient with one or more instruments or gaming sets, add one instrument or gaming set you are proficient with.</li>
       <li>If your class can cast spells, one spellcasting focus appropriate for your class.</li>
@@ -69,8 +75,26 @@
         </ul>
       </li>
     </ul>
-    <h5>Step 6: Appearance and Backstory</h5>
-    <h5>Step 7: Armor, Attacks, and Spells</h5>
+    <h4>Step 6: Appearance and Backstory</h4>
+    <p>
+      Determine your characters appearance, this may involve drawing a picture or simply noting down their features. Then write a backstory, working with your DM to fit it into the world and the party, some things that are important:
+    </p>
+    <ul>
+      <li>Where did they grow up?</li>
+      <li>Who are their friends?</li>
+      <li>Do they have family?</li>
+      <li>Why are they adventuring?</li>
+      <li>Do they have rivals or enemies?</li>
+      <li>Do they have a previous profession?</li>
+      <li>Do they already know any other members of the party?</li>
+    </ul>
+    <h4>Step 7: Resolve Class Features/Select Spells</h4>
+    <h4>Step 8: Hit Points, AC and PC</h4>
+    <p>
+      Next calculate your hit points, armor class, and protection class.
+    </p>
+    <p><strong>Hit Points.</strong> To calculate your hit points at 1st level add your ancestry hit points to the hit points you gain from your class at first level (equal to the size of your classes hit die) plus your constitution modifier. So a human paladin with a constitution modifier of +2 would have 8 (ancestry) + 10 (class) + 2 (constitution) hit points. For each level after first you add the average of your classes hit die (rounded up) plus your constitution modifier. So the same paladin would add 8 (6 + 2) to their existing 20 hit points for 28 hit points at level 2.</p>
+    <p><strong>Armor Class (AC)</strong></p>
   </div>
 </template>
 <script src="./js/create.js"></script>

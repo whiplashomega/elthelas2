@@ -242,7 +242,7 @@
     margin-top: 12px;
   }
 
-  .encounterbox {
+  textarea.form-control.encounterbox {
     min-height: 500px;
   }
   .light .complete {
