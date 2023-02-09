@@ -38,7 +38,7 @@
         <div class="charsheet-static" id="armorbox">
           <h4>Armor</h4>
           <div class="smalltext" v-for="(armor, index) in character.armors" :key="index">
-            {{ armor.name }}, {{ armor.type }}, AC {{ armorac(armor) }}, PC {{ armorpc(armor) }} <input type="checkbox" v-model="armor.equipped" />
+            {{ armor.name }}, {{ armor.type }}, AC {{ armorac(armor) }} <span v-if="armor.type !== 'Shield' && armor.type !== 'Unarmored Bonus'">({{ armor.ac }} + {{ Math.max(0, Math.min(getStatMod(1), armor.maxdex)) }})</span> , PC {{ armorpc(armor) }} <input type="checkbox" v-model="armor.equipped" />
             <button type="button" class="print-hide btn-symbol" @click="armor.edit = true">&#9998;</button>
             <button type="button" @click="removeArmor(index)" class="print-hide btn btn-sm btn-danger">X</button>
             <b-modal v-model="armor.edit" :class="userinfo.darkmode">
@@ -67,6 +67,8 @@
               <input type="number" v-model="armor.ac" class="form-control" />
               PC:
               <input type="number" v-model="armor.pc" class="form-control" />
+              Max Dex:
+              <input type="number" v-model="armor.maxdex" class="form-control" />
             </b-modal>
           </div>
           <button type="button" @click="armormodal = true" class="btn btn-sm btn-primary print-hide">+</button>
@@ -96,6 +98,8 @@
             <input type="number" v-model="newarmor.ac" class="form-control" />
             PC:
             <input type="number" v-model="newarmor.pc" class="form-control" />
+            Max Dex:
+            <input type="number" v-model="newarmor.maxdex" class="form-control" />
           </b-modal>
         </div>
       </div>

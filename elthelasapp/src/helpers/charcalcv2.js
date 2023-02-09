@@ -61,22 +61,28 @@ export default {
     return pc;
   },
   armorAC (character, a) {
-    var ac = Number(a.ac);
-    let medmaster = character.feats.filter((a) => {
-      return a.name === "Armor Adept";
-    });
-    let maxdex = a.maxdex;
-    if (medmaster.length > 0) {
-      maxdex++;
+    if (a.type === "Shield") {
+      return Number(a.ac);
+    } else if (a.type === "Unarmored Bonus") {
+      return 10 + Number(a.ac) + this.statMod(character, 1) + this.statMod(character, a.unarmoredstat);
+    } else {
+      var ac = Number(a.ac);
+      let medmaster = character.feats.filter((a) => {
+        return a.name === "Armor Adept";
+      });
+      let maxdex = a.maxdex;
+      if (medmaster.length > 0) {
+        maxdex++;
+      }
+      ac += Math.max(Math.min(maxdex, this.statMod(character, 1)), 0);
+      return ac;
     }
-    ac += Math.max(Math.min(maxdex, this.statMod(character, 1)), 0);
-    return ac;
   },
   armorPC (character, a) {
     let bulwark = character.feats.filter((a) => {
       return a.name === "Armored Bulwark";
     });
-    if (bulwark.length > 0) {
+    if (bulwark.length > 0 && a.type === "Heavy") {
       return a.pc + 2;
     } else {
       return a.pc;

@@ -30,7 +30,7 @@ export default function() {
     statadjust: [0, 0, 0, 0, 0, 0],
     background: { feature: { show: false, description: "", name: "" }, skills: [], tools: [] },
     alignment: "",
-    faction: { level1: "", level10: "" },
+    faction: [{ id: Math.random(), faction: { title: "", ranks: [] }, disposition: 0, rank: {} }],
     homecountry: "",
     hometown: "",
     age: "",

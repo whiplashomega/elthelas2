@@ -1,0 +1,37 @@
+{
+  "id": "sampleorg",
+  "title": "Sample Organization",
+  "description": "A Text Description",
+  "nations": [
+    "eldoran",
+    "dormania",
+    "gerasalim",
+    "curinor",
+    "kandor",
+    "demalthor"
+  ],
+  "cities": [
+    "desadorel",
+    "strovenguard",
+    "kaland",
+    "curinkeep",
+    "aridhem",
+    "loridesa",
+    "eastguard",
+    "highhammer",
+    "estapor",
+    "storval",
+    "sofala",
+    "malidal"
+  ],
+  "rules": [],
+  "ranks": [
+    {
+        "name": "Apprentice",
+        "minDisposition": 0,
+        "description": "A Text Description",
+        "featurename": "Education",
+        "featuredescription": "People will teach you."
+    }
+   ]
+}

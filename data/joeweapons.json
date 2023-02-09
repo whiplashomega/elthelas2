@@ -8,7 +8,7 @@
     "Cost": 4,
     "Weight": 3,
     "Reach": 5,
-    "Range": 25
+    "Range": 15
   },
   {
     "Weapon": "Dagger",
@@ -19,7 +19,7 @@
     "Cost": 8,
     "Weight": 1,
     "Reach": 5,
-    "Range": 25
+    "Range": 15
   },
   {
     "Weapon": "Dart",
@@ -30,7 +30,7 @@
     "Cost": 0.05,
     "Weight": 0.25,
     "Reach": 0,
-    "Range": 50
+    "Range": 30
   },
   {
     "Weapon": "Light Hammer",
@@ -41,7 +41,7 @@
     "Cost": 8,
     "Weight": 2,
     "Reach": 5,
-    "Range": 25
+    "Range": 15
   },
   {
     "Weapon": "Quarterstaff",
@@ -74,7 +74,7 @@
     "Cost": 4,
     "Weight": 3,
     "Reach": 10,
-    "Range": 25
+    "Range": 15
   },
   {
     "Weapon": "Whip",
@@ -117,7 +117,7 @@
     "Damage": "1d8",
     "Cost": 0.1,
     "Weight": 2,
-    "Reach": 5,
+    "Reach": 5, 
     "Range": 0
   },
   {
@@ -125,22 +125,22 @@
     "Type": "Simple",
     "Dtype": "Slashing",
     "Properties": "light, thrown, brutal",
-    "Damage": "1d6",
+    "Damage": "1d6", 
     "Cost": 20,
     "Weight": 2,
     "Reach": 5,
-    "Range": 25
+    "Range": 15
   },
   {
     "Weapon": "Javelin",
     "Type": "Simple",
     "Dtype": "Piercing",
-    "Properties": "light, thrown",
+    "Properties": "thrown",
     "Damage": "1d8",
     "Cost": 4,
     "Weight": 2,
     "Reach": 5,
-    "Range": 25
+    "Range": 30
   },
   {
     "Weapon": "Mace",
@@ -162,7 +162,7 @@
     "Cost": 0.4,
     "Weight": 0.1,
     "Reach": 0,
-    "Range": 50
+    "Range": 30
   },
   {
     "Weapon": "Blowgun",
@@ -173,7 +173,7 @@
     "Cost": 10,
     "Weight": 1,
     "Reach": 0,
-    "Range": 50
+    "Range": 30
   },
   {
     "Weapon": "Crossbow, hand",
@@ -184,7 +184,7 @@
     "Cost": 300,
     "Weight": 3,
     "Reach": 0,
-    "Range": 100
+    "Range": 60
   },
   {
     "Weapon": "Flail",
@@ -235,7 +235,7 @@
     "Type": "Simple",
     "Dtype": "Slashing",
     "Properties": "two-handed, knock down, heavy",
-    "Damage": "1d8",
+    "Damage": "2d4",
     "Cost": 40,
     "Weight": 6,
     "Reach": 10,
@@ -246,7 +246,7 @@
     "Type": "Simple",
     "Dtype": "Piercing",
     "Properties": "heavy, two-handed, awkward",
-    "Damage": "2d4",
+    "Damage": "1d10",
     "Cost": 4,
     "Weight": 6,
     "Reach": 15,
@@ -261,14 +261,14 @@
     "Cost": 100,
     "Weight": 2,
     "Reach": 0,
-    "Range": 125
+    "Range": 75
   },
   {
     "Weapon": "Halberd",
     "Type": "Martial",
     "Dtype": "Piercing/Slashing",
     "Properties": "heavy, two-handed, knock down, awkward, versatile damage",
-    "Damage": "2d4",
+    "Damage": "1d10",
     "Cost": 80,
     "Weight": 6,
     "Reach": 15,
@@ -277,9 +277,9 @@
   {
     "Weapon": "Longsword",
     "Type": "Martial",
-    "Dtype": "Piercing/Slashing",
-    "Properties": "versatile, versatile damage",
-    "Damage": "2d4",
+    "Dtype": "Slashing",
+    "Properties": "versatile, brutal",
+    "Damage": "1d8",
     "Cost": 60,
     "Weight": 3,
     "Reach": 10,
@@ -327,7 +327,7 @@
     "Cost": 100,
     "Weight": 5,
     "Reach": 0,
-    "Range": 150
+    "Range": 90
   },
   {
     "Weapon": "Battleaxe",
@@ -349,7 +349,7 @@
     "Cost": 200,
     "Weight": 2,
     "Reach": 0,
-    "Range": 175
+    "Range": 120
   },
   {
     "Weapon": "Scimitar",
@@ -367,7 +367,7 @@
     "Type": "Martial",
     "Dtype": "Slashing",
     "Properties": "heavy, two-handed, awkward",
-    "Damage": "1d12",
+    "Damage": "2d6",
     "Cost": 80,
     "Weight": 6,
     "Reach": 15,
@@ -376,9 +376,9 @@
   {
     "Weapon": "Greatsword",
     "Type": "Martial",
-    "Dtype": "Piercing/Slashing",
+    "Dtype": "Bludgeoning/Slashing",
     "Properties": "heavy, two-handed, versatile damage",
-    "Damage": "1d12",
+    "Damage": "2d6",
     "Cost": 200,
     "Weight": 6,
     "Reach": 10,
@@ -389,7 +389,7 @@
     "Type": "Martial",
     "Dtype": "Piercing",
     "Properties": "heavy, two-handed, awkward",
-    "Damage": "1d12",
+    "Damage": "2d6",
     "Cost": 20,
     "Weight": 18,
     "Reach": 15,
@@ -400,7 +400,7 @@
     "Type": "Martial",
     "Dtype": "Bludgeoning",
     "Properties": "heavy, two-handed, awkward",
-    "Damage": "1d12",
+    "Damage": "2d6",
     "Cost": 30,
     "Weight": 14,
     "Reach": 15,
@@ -410,19 +410,19 @@
     "Weapon": "Crossbow, heavy",
     "Type": "Martial",
     "Dtype": "Piercing",
-    "Properties": "ranged, Ammunition, loading, heavy, two-handed",
+    "Properties": "ranged, Ammunition, loading, two-handed, heavy",
     "Damage": "2d6",
     "Cost": 200,
     "Weight": 18,
     "Reach": 0,
-    "Range": 150
+    "Range": 105
   },
   {
     "Weapon": "Greataxe",
     "Type": "Martial",
     "Dtype": "Slashing",
-    "Properties": "brutal, heavy, two-handed",
-    "Damage": "2d6",
+    "Properties": "brutal, heavy, two-handed, knockdown",
+    "Damage": "1d12",
     "Cost": 120,
     "Weight": 7,
     "Reach": 5,
@@ -432,12 +432,12 @@
     "Weapon": "Greatbow",
     "Type": "Martial",
     "Dtype": "Piercing",
-    "Properties": "ranged, Ammunition, heavy, two-handed, STR 13 Required",
+    "Properties": "ranged, Ammunition, two-handed, STR 13 Required",
     "Damage": "2d6",
     "Cost": 200,
     "Weight": 4,
     "Reach": 0,
-    "Range": 200
+    "Range": 120
   },
   {
     "Weapon": "Lance",
@@ -454,7 +454,7 @@
     "Weapon": "Maul",
     "Type": "Martial",
     "Dtype": "Bludgeoning",
-    "Properties": "heavy, two-handed, knock down",
+    "Properties": "heavy, two-handed, armor piercing",
     "Damage": "2d6",
     "Cost": 40,
     "Weight": 10,
@@ -481,7 +481,7 @@
     "Cost": 10,
     "Weight": 2,
     "Reach": 0,
-    "Range": 25
+    "Range": 15
   },
   {
     "Weapon": "Spiked Chain",
@@ -502,7 +502,7 @@
     "Damage": "1d6",
     "Cost": 25,
     "Weight": 10,
-    "Reach": 10,
-    "Range": 0
+    "Reach": 0,
+    "Range": 30
   }
 ]

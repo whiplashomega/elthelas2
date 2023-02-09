@@ -78,10 +78,12 @@
               <input placeholder="search" v-model="searchEquip" class="form-control" />
               <div style="overflow-y:scroll;height:500px;">
                 <table class="table table-striped table-sm">
-                  <thead><tr><th>Item</th><th>Cost</th><th>Weight</th></tr></thead>
+                  <thead><tr><th>Item</th><th>Damage</th><th>Properties</th><th>Cost</th><th>Weight</th></tr></thead>
                   <tbody>
                     <tr v-for="item in allWeapons" :key="item.Weapon">
                       <td><a href="#" @click="addExistingWeapon(item, newequip.quantity, newequip.container)">{{ item.Weapon }}</a></td>
+                      <td>{{ item.Damage}} {{ item.Dtype }}</td>
+                      <td>{{ item.Properties }}</td>
                       <td>{{ item.Cost }}</td>
                       <td>{{ item.Weight }}</td>
                     </tr>
@@ -93,14 +95,24 @@
               <input placeholder="search" v-model="searchEquip" class="form-control" />
               <div style="overflow-y:scroll;height:500px;">
                 <table class="table table-striped table-sm">
-                  <thead><tr><th>Item</th><th>Type</th><th>Cost</th><th>AC</th><th>Weight</th></tr></thead>
+                  <thead><tr>
+                    <th><span @click.stop="armorSort = 'Armor'; armorSortDir = !armorSortDir">Item</span></th>
+                    <th><span @click.stop="armorSort = 'Type'; armorSortDir = !armorSortDir">Type</span></th>
+                    <th><a @click.stop="armorSort = 'Cost'; armorSortDir = !armorSortDir">Cost</a></th>
+                    <th><a @click.stop="armorSort = 'AC'; armorSortDir = !armorSortDir">AC</a></th>
+                    <th><a @click.stop="armorSort = 'MaxDex'; armorSortDir = !armorSortDir">MaxDex</a></th>
+                    <th><a @click.stop="armorSort = 'PC'; armorSortDir = !armorSortDir">PC</a></th>
+                    <th><a @click.stop="armorSort = 'Weight'; armorSortDir = !armorSortDir">Weight</a></th>
+                  </tr></thead>
                   <tbody>
                     <tr v-for="item in allArmor" :key="item.Armor">
                       <td><a href="#" @click="addExistingArmor(item, newequip.quantity, newequip.container)">{{ item.Armor }}</a></td>
                       <td>{{ item.Type }}</td>
-                      <td>{{ item.Price }}</td>
+                      <td>{{ item.Cost }}</td>
                       <td>{{ item.AC }}</td>
-                      <td>{{ item.Weight }}</td>
+                      <td>{{ item.MaxDex == 99 ? "Unlimited" : item.MaxDex }}</td>
+                      <td>{{ item.PC }}</td>
+                      <td>{{ item.Weight }} lbs</td>
                     </tr>
                   </tbody>
                 </table>

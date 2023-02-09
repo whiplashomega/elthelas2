@@ -39,9 +39,9 @@
       "description": "Starting at 2nd level, you start to pick up the intricacies of casting spells. As a student of magic, you have a spellbook containing spells that you have picked up in your travels.\n\n#### Cantrips\n\nAt 2nd level, you know four cantrips of your choice from any spell list. You learn additional cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Factotum table.\n\n#### Spellbook\n\nAt 2nd level you have a spellbook containing six 1st-level spells of your choice.\n\n#### Preparing and Casting Spells\n\nThe Factotum table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.\n\nYou prepare the list of spells that are available for you to cast. To do so choose a number of spells from your spellbook equal to your intelligence modifier + one half of your factotum level (rounded down, minimum of 1 spell). The spells must be of a level for which you have spell slots.\n\nFor example, if you're a 5th-level factotum, you have four 1st-level and two 2nd-level spell slots. With an intelligence of 16, your list of prepared spells can include five spells of 1st or 2nd level, in any combination, chosen from your spellbook. If you prepare the 1st-level spell magic missile, you can cast it using a 1st-level or a 2nd-level slot. Casting a spell doesn't remove it from your list of prepared spells.\n\nYou can change your list of prepared spells when you finish a long rest. Preparing a new list of spells requires time spent studying your spellbook and memorizing incantations and gestures you must make to cast a spell: at least 1 minute per spell level for each spell on your list.\n\n#### Spellcasting Ability\nIntelligence is your spellcasting ability for your spells, since you learn your spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a spell you cast and when making an attack roll with one. Spell save DC = 8 + your proficiency bonus + your Intelligence modifier Spell attack modifier = your proficiency bonus + your intelligence modifier.\n\n#### Ritual Casting\n\nYou can cast a spell as a ritual if that spell has the ritual tag and you have the spell in your spellbook. You don't need to have the spell prepared.\n\n#### Spellcasting Focus\n\nYou can use an arcane focus or a divine focus (found in chapter 5) as a spellcasting focus for your spells.\n\n#### Learning Spells of 1st Level and Higher\n\nEach time you gain a Factotum level after 2nd, you can add one spell of your choice to your spellbook. Each of these spells must be of a level for which you have spell slots, as shown on the Factotum table. On your adventures, you might find other spells that you can add to your spellbook (see the “Your Spellbook” sidebar)."
     },
     {
-      "level": 2,
+      "level": 3,
       "name": "Inspired Damage",
-      "description": "Starting at 2nd level, when you hit with an attack you can spend an epiphany point to add 2d6 damage to the damage roll. At 11th level this increases to 3d6, and at 17th level this increases to 4d6."
+      "description": "Starting at 3rd level, when you hit with an attack you can spend an epiphany point to add 2d6 damage to the damage roll. At 11th level this increases to 3d6, and at 17th level this increases to 4d6."
     },
     {
       "level": 11,
@@ -54,9 +54,9 @@
       "description": "Starting at 2nd level, when you hit with an attack you can spend an epiphany point to add 2d6 damage to the damage roll. At 11th level this increases to 3d6, and at 17th level this increases to 4d6."
     },
     {
-      "level": 3,
+      "level": 2,
       "name": "Factotum Philosophy",
-      "description": "At 3rd level your studies begin to focus on a particular specialty. Choose one of the Factotum Philosophies below, you gain different abilities depending on which philosophy you choose. You gain additional philosophy features at 7th, 10th and 15th level."
+      "description": "At 2nd level your studies begin to focus on a particular specialty. Choose one of the Factotum Philosophies below, you gain different abilities depending on which philosophy you choose. You gain additional philosophy features at 7th, 10th and 15th level."
     },
     {
       "level": 7,
@@ -116,19 +116,24 @@
       "resources": [],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Know Your Enemy",
-          "description": "Starting at 3rd level, your combat tactics focus on knowing your opponent and how to get past its defenses. You can use your intelligence modifier instead of strength or dexterity on weapon attack rolls and damage rolls."
+          "description": "Starting at 2nd level, your combat tactics focus on knowing your opponent and how to get past its defenses. You can use your intelligence modifier instead of strength or dexterity on weapon attack rolls and damage rolls."
+        },
+        {
+          "level": 2,
+          "name": "Fighting Style",
+          "description": "At 2nd level the Brains over Brawn Factotum can pick one of the following fighting styles. If you already have a particular fighting style granted by another class you cannot pick that fighting style again.\n\n* Archery - You gain a +2 bonus to attack rolls you make with ranged weapons.\n* Dueling - When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.\n* Two-Weapon Fighting - When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.\n* Great Weapon Fighting - When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit."
         },
         {
           "level": 7,
-          "name": "Fighting Style Mimic",
-          "description": "At 7th level the Brains over Brawn Factotum can pick one of the following fighting styles. Whenever they finish a long rest they can spend 3 epiphany points to replace this fighting style with a different one from the list. If you already have a particular fighting style granted by another class you cannot pick that fighting style again.\n\n* Archery - You gain a +2 bonus to attack rolls you make with ranged weapons.\n* Dueling - When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.\n* Two-Weapon Fighting - When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.\n* Great Weapon Fighting - When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit."
+          "name": "Improved Inspired Damage",
+          "description": "At 7th level, when you use the Inspired Damage feature you add an additional 1d6 damage to the attack."
         },
         {
           "level": 10,
-          "name": "Improved Inspired Damage",
-          "description": "At 10th level, when you use the Inspired Damage feature you add an additional 1d6 damage to the attack."
+          "name": "Tactician",
+          "description": "You are adept at analyzing your allies and enemies fighting styles and the way they might mesh. As a reaction you can spend an epiphany point to grant advantage on an attack roll to one creature who can hear you within 30 ft against an enemy you can see."
         },
         {
           "level": 15,
@@ -143,14 +148,14 @@
       "resources": [],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Cantrip Master",
-          "description": "At 3rd level you have become particularly adept at casting very basic spells. You learn 2 additional cantrips in addition to the number shown in the Factotum table."
+          "description": "At 2nd level you have become particularly adept at casting very basic spells. You learn 2 additional cantrips in addition to the number shown in the Factotum table."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Additional Skill Proficiency",
-          "description": "At 3rd level the arcane dilettante gains proficiency in the arcana skill. If they were already proficient in the arcana skill they gain expertise in the arcana skill (can add their proficiency bonus twice)."
+          "description": "At 2nd level the arcane dilettante gains proficiency in the arcana skill. If they were already proficient in the arcana skill they gain expertise in the arcana skill (can add their proficiency bonus twice)."
         },
         {
           "level": 7,
@@ -175,9 +180,9 @@
       "resources": [],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Jack-of-all-Trades",
-          "description": "Starting at 3rd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn’t already include your proficiency bonus."
+          "description": "Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn’t already include your proficiency bonus."
         },
         {
           "level": 7,

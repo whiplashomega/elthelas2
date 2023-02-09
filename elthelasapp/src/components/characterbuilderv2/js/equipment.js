@@ -40,6 +40,9 @@ export default {
         if (!weap.Weapon) {
           weap.Weapon = weap.Item;
         }
+        if (weap["Cost (gp)"]) {
+          weap.Cost = weap["Cost (gp)"];
+        }
       });
       allweapons = allweapons.filter((weap) => {
         if (this.searchEquip) {
@@ -57,6 +60,12 @@ export default {
         if (armor.Item) {
           newarmor.Armor = armor.Item;
         }
+        if (armor.ArmorType) {
+          newarmor.Type = armor.ArmorType;
+        }
+        if (armor["Cost (gp)"]) {
+          newarmor.Cost = armor["Cost (gp)"];
+        }
         newArmor.push(newarmor);
       });
       allArmor = newArmor.filter((armor) => {
@@ -65,7 +74,13 @@ export default {
         }
         return true;
       });
-      return allArmor;
+      return allArmor.sort((a, b) => {
+        if ((a[this.armorSort] > b[this.armorSort] && !this.armorSortDir) || (a[this.armorSort] < b[this.armorSort] && this.armorSortDir)) {
+          return 1;// * this.armorSortDir ? -1 : 1;
+        } else {
+          return -1;// * this.armorSortDir ? -1 : 1;
+        }
+      });
     },
     allGear () {
       var allgear = [ ...this.equipment, ...this.scrolls, ...this.wands, ...this.magicother ];
@@ -109,7 +124,9 @@ export default {
       newequip: { name: "", weight: 0, quantity: 1, cost: 0, description: "", attunement: false, edit: false, container: 0 },
       ctypeselected: {},
       searchEquip: "",
-      newEquipModal: { isActive: false, title: "New Equipment" }
+      newEquipModal: { isActive: false, title: "New Equipment" },
+      armorSort: "Item",
+      armorSortDir: false,
     };
   },
   methods: {
@@ -187,7 +204,7 @@ export default {
           name: item.Armor,
           weight: Number(item.Weight),
           quantity: quantity,
-          cost: item['Cost (gp)'] ? item['Cost (gp)'] : Number(item.Price),
+          cost: item['Cost (gp)'] ? item['Cost (gp)'] : Number(item.Cost),
           description: "AC: " + item.AC + " PC: " + item.PC,
           attunement: item.Attunement ? item.Attunement.includes('Yes') : false,
           edit: { isActive: false, title: item.Item },

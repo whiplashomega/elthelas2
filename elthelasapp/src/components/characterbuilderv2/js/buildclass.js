@@ -7,7 +7,7 @@ export default {
     const statics = useStaticsStore();
     
     const { character } = storeToRefs(characters);
-    const classes = statics.classes;
+    const classes = statics.classesv2;
     
     const addclass = characters.addclass;
     const removeclass = characters.removeclass;

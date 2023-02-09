@@ -27,7 +27,7 @@
         {{ [character.background.skills.join(", "), character.background.tools.join(", ")].join(", ") }}
         and {{ character.background.languages }} bonus language<span v-if="character.background.languages !== 1">s</span>
       </p>
-      <p style="font-size:9px;margin-bottom:2px;"><strong>Class Skills: </strong> pick {{ character.charclasses[0].thisclass.proficiencies.numskills }} from {{ character.charclasses[0].thisclass.proficiencies.skills.join(", ") }}</p>
+      <p style="font-size:9px;margin-bottom:2px;"><strong>Class Skills: </strong> pick {{ character.charclasses[0].thisclass.proficiencies.numskills }} skills of your choice</p>
       <p style="font-size:9px;margin-bottom:2px;"><strong>Armor: </strong>{{ character.charclasses[0].thisclass.proficiencies.armor.join(", ") }}</p>
       <p style="font-size:9px;margin-bottom:2px;"><strong>Weapons: </strong>{{ character.charclasses[0].thisclass.proficiencies.weapons.join(", ") }}</p>
       <p style="font-size:9px;margin-bottom:2px;"><strong>Tools: </strong>{{ character.charclasses[0].thisclass.proficiencies.tools.join(", ") }}</p>

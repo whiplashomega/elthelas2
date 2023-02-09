@@ -181,12 +181,13 @@ function jsoncompile () {
     jsonmin('./data/equipment.json', './elthelasapp/public/json/equipment.json'), //magic items
     jsonmin('./data/valuables.json', './elthelasapp/public/json/valuables.json'), //valuables
     jsonmin('./data/magicitems.json', './elthelasapp/public/json/magicitems.json'), //magicitems
-    jsonmin('./data/magicitems.json', './elthelasapp/public/json/magicitemsv2.json'), //magicitems
+    jsonmin('./data/magicitemsv2.json', './elthelasapp/public/json/magicitemsv2.json'), //magicitems
     compiledir("./data/gods", "./elthelasapp/public/json/gods.json", "God"), //gods
     compiledir("./data/stronghold-improvements", "./elthelasapp/public/json/improvements.json", "Improvements"), //stronghold improvements
     compiledir("./data/ancestries", "./elthelasapp/public/json/ancestries.json", "Ancestries"), //races
     compiledir("./data/races", "./elthelasapp/public/json/races.json", "Race"), //races
     compiledir("./data/organizations", "./elthelasapp/public/json/organizations.json", "Organization"), //organizations
+    compiledir("./data/organizationsv2", "./elthelasapp/public/json/organizationsv2.json", "Organization"), //organizations
     compiledir("./data/divines", "./elthelasapp/public/json/divines.json", "Divine"), //divines
     compiledir("./data/cities", "./elthelasapp/public/json/cities.json", "City"), //cities
     compiledir("./data/continents", "./elthelasapp/public/json/continents.json", "Continent"), //continents

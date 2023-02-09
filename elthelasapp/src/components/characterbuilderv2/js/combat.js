@@ -5,7 +5,7 @@ export default {
     const characters = useCharacterv2Store();
     const userinfo = useUserStore();
     
-    const { character, accalc, pccalc, armorac, armorpc, profbonus, getSpeedStat } = storeToRefs(characters);
+    const { character, accalc, pccalc, armorac, armorpc, profbonus, getSpeedStat, getStatMod } = storeToRefs(characters);
     
     const removeArmor = characters.removeArmor;
     
@@ -18,7 +18,8 @@ export default {
       armorpc,
       profbonus,
       getSpeedStat,
-      removeArmor
+      removeArmor,
+      getStatMod
     }
   },
   data () {

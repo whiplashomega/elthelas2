@@ -17,6 +17,7 @@ export default {
       gods: [{ name: 'Placeholder', id: 'placeholder', domains5: "" }],
       historyevents: [{ name: 'Placeholder', id: 'placeholder' }],
       organizations: [{ name: 'Placeholder', id: 'placeholder' }],
+      organizationsv2: [{ title: 'Placeholder', id: 'placeholder', ranks: [] }],
       races: [],
       spells: [],
       valuables: [],
@@ -246,6 +247,14 @@ export default {
       return new Promise((resolve) => {
         axios.get('/json/organizations.json').then((response) => {
           this.organizations = response.data.documents;
+          resolve(true);
+        });
+      });
+    },
+    getAllOrganizationsv2 () {
+      return new Promise((resolve) => {
+        axios.get('/json/organizationsv2.json').then((response) => {
+          this.organizationsv2 = response.data.documents;
           resolve(true);
         });
       });
@@ -608,14 +617,34 @@ export default {
           this.getAllDivines(),
           this.getAllEquipment(),
           this.getAllFeats(),
-          this.getAllFeatsV2(),
           this.getAllGods(),
           this.getAllEvents(),
           this.getAllOrganizations(),
           this.getAllRaces(),
-          this.getAllAncestries(),
           this.getAllValuables(),
           this.getAllClasses(),
+          this.getAllTerritories(),
+          this.getAllCities(),
+          this.getAllNations(),
+          this.getAllLandmarks(),
+          this.getAllFeatures()]).then(() => {
+            resolve(true);
+          });
+      });
+    },
+    getAllNew () {
+        return new Promise ((resolve) => {
+        Promise.all([
+          this.getAllContinents(),
+          this.getAllBackgrounds(),
+          this.getAllDivines(),
+          this.getAllOrganizationsv2(),
+          this.getAllEquipment(),
+          this.getAllFeatsV2(),
+          this.getAllGods(),
+          this.getAllEvents(),
+          this.getAllAncestries(),
+          this.getAllValuables(),
           this.getAllTerritories(),
           this.getAllCities(),
           this.getAllNations(),
@@ -628,7 +657,7 @@ export default {
           this.getAllClassesV2()]).then(() => {
             resolve(true);
           });
-      });
+      });    
     }
   }
 };

@@ -36,7 +36,7 @@ export default {
     const characters = useCharacterStore();
     const userinfo = useUserStore();
     // initial data retrieval
-    statics.getAll();
+    statics.getAllNew();
     // map getters
     const { character, pointbuy, mobile, hitdicechanged, message } = storeToRefs(characters);
     

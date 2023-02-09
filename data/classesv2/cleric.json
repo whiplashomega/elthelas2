@@ -41,9 +41,9 @@
       "description": "You can expend a use of your Channel Divinity to fuel your spells. As a bonus action, you touch your holy symbol, utter a prayer, and regain one expended spell slot, the level of which can  be no higher than half your proficiency bonus (rounded up)."
     },
     {
-      "level": 3,
+      "level": 1,
       "name": "Divine Domain",
-      "description": "Choose one domain related to your deity. Each domain is detailed at the end of the class description, and each one provides examples of gods associated with it. Your choice grants you domain spells when you choose it at1st level. It also grants you additional ways to use Channel Divinity at 2nd level, and additional benefits at 3rd, 6th, 8th, and 17th levels.\n\n#### Domain Spells\n\nEach domain has a list of spells—its domain spells—that you gain at the cleric levels noted in the domain description. Once you gain a domain spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day.\n\nIf you have a domain spell that doesn’t appear on the cleric spell list, the spell is nonetheless a cleric spell for you."
+      "description": "Choose one domain related to your deity. Each domain is detailed at the end of the class description, and each one provides examples of gods associated with it. Your choice grants you domain spells when you choose it at 1st level. It also grants you additional ways to use Channel Divinity at 2nd level, and additional benefits at 3rd, 6th, 8th, and 17th levels.\n\n#### Domain Spells\n\nEach domain has a list of spells—its domain spells—that you gain at the cleric levels noted in the domain description. Once you gain a domain spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day.\n\nIf you have a domain spell that doesn’t appear on the cleric spell list, the spell is nonetheless a cleric spell for you."
     },
     {
       "level": 4,
@@ -141,7 +141,7 @@
         {
           "level": 3,
           "name": "Arcane Initiate",
-          "description": "When you choose this domain at 1st level, you gain proficiency in the Arcana skill, and you gain two cantrips of your choice from the wizard spell list. For you, these cantrips count as cleric cantrips."
+          "description": "You gain proficiency in the Arcana skill, and you gain two cantrips of your choice from the wizard spell list. For you, these cantrips count as cleric cantrips."
         },
         {
           "level": 6,
@@ -284,7 +284,7 @@
         {
           "level": 3,
           "name": "Disciple of Fire",
-          "description": "Also starting at 3rd level, your fire spells are more effective, you add your wisdom modifier to the damage of any spell you cast that does fire damage."
+          "description": "Your fire spells are more effective, you add your wisdom modifier to the damage of any spell you cast that does fire damage."
         },
         {
           "level": 6,
