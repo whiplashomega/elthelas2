@@ -22,22 +22,48 @@
     {
       "index": 1,
       "name": "Initiate",
-      "minDisposition": 4,
+      "minDisposition": 3,
       "description": "You have been contacted by a Master Voidbringer. Now is your chance to prove yourself."
     },
     {
       "index": 2,
       "name": "Touched",
-      "minDisposition": 7,
+      "minDisposition": 5,
       "description": "You have been touched by the void."
+    },
+    {
+      "index": 3,
+      "name": "Master of Nothing",
+      "minDisposition": 7,
+      "description": "You have been called to lead a cell of voidbringers. For the Void!"
+    },
+    {
+      "index": 4,
+      "name": "Weaver of Chaos",
+      "minDisposition": 10,
+      "description": "You are the ultimate enemy of order, you will bring the end. They will thank you for it in the end."
     }
   ],
   "features": [
     {
+      "minrank": 1,
+      "name": "Blood Sacrifice",
+      "description": "You can spend 1 hour performing unholy rights and sacrifice a living creature on an altar to your God, gaining a +1 bonus to all d20 rolls you make for the next 24 hours."
+    },
+    {
       "minrank": 2,
       "name": "Insanity",
       "description": "You have been touched by the eternal void, and your mind will never be the same again.  Your dedication to chaos gives you advantage on saves against charm and fear."
+    },
+    {
+      "minrank": 3,
+      "name": "Extraplanar",
+      "description": "You are a senior agent of your God, and he speaks to you.  You can cast Contact Outer Plane once per day without using a spell slot so long as you use it to contact Trolka, Malik, or an outer evil whom you revere."
+    },
+    {
+      "minrank": 4,
+      "name": "Blood of My Enemies",
+      "description": "When you reduce a creature within 5 feet of you to 0 hit points you can declare them a blood sacrifice, per the Blood Sacrifice feature, but without requiring an altar or an hour of rites."
     }
-  ],
-  "level10": "**Extraplanar.** You are a senior agent of your God, and he speaks to you.  You can cast Contact Outer Plane once per day without using a spell slot so long as you use it to contact Trolka, Malik, or an outer evil whom you revere."
+  ]
 }

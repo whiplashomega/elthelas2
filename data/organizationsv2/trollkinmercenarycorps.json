@@ -1,0 +1,75 @@
+{
+  "id": "trollkinmercenarycorps",
+  "title": "Trollkin Mercenary Corps",
+  "description": "The Trollkin Mercenary Corps is the official diplomatic arm of Degak'Ta, but membership is not restricted to citizens of Degak'Ta or Trollkin.  They are an elite group of mercenaries who will sign up for any conflict for the right price, even different sides of the same conflict. Once contracted they are known to be extremely loyal and impartial, governed by the contract they are given until it expires.  Further they are known to be among the best warriors in the world, so being able to afford Trollkin Mercenaries is considered extremely prestigious.",
+  "nations": [
+    "degakta"
+  ],
+  "cities": [
+    "sunra"
+  ],
+  "rules": [
+    "My contract is law.  Failing to fulfill the contract I agree to is never acceptable for any reason.",
+    "Never work without payment.  We are not a charity organization",
+    "Avoid religious entanglements.  Many employers have particular religious beliefs, and one should avoid offending future employers.  I must never engage in public displays of religion or work directly for a religious organization."
+  ],
+  "ranks": [
+    {
+      "index": 0,
+      "name": "Recruit",
+      "minDisposition": 0,
+      "description": "You are a new recruit. Execute your contracts with honor and they may just let you stay."
+    },
+    {
+      "index": 1,
+      "name": "Bravo",
+      "minDisposition": 2,
+      "description": "You have been recognized as a skilled mercenary, and have been issued a letter of rank."
+    },
+    {
+      "index": 2,
+      "name": "Veteran",
+      "minDisposition": 4,
+      "description": "You are known to be reliable and capable. Good work soldier."
+    },
+    {
+      "index": 3,
+      "name": "Captain",
+      "minDisposition": 6,
+      "description": "Pips on the shoulder mark you out as someone who has been around the block more than once."
+    },
+    {
+      "index": 4,
+      "name": "General",
+      "minDisposition": 10,
+      "description": "You are now in charge of an autonomous army that can accept contracts on its own terms. You report directly to the Grand Marshal, so don't screw it up."
+    }
+  ],
+  "features": [
+    {
+      "minrank": 0,
+      "name": "Equipped for Battle",
+      "description": "The corps is willing to take a risk on you and give you 100 gp worth of combat equipment."
+    },
+    {
+      "minrank": 1,
+      "name": "Battle Master",
+      "description": "The advance training the Corps provides has paid off and you are able to do more damage with every swing of your sword or shot of your bow.  You get +1d4 damage on all weapon attack rolls."
+    },
+    {
+      "minrank": 2,
+      "name": "Advance Payment",
+      "description": "People who give you contracted missions are willing to pay in advance whenever they are able.  The reputation of the Mercenary Corps preceeds you."
+    },
+    {
+      "minrank": 3,
+      "name": "Command",
+      "description": "You have command of a squad of recruits and bravos who will help with missions."
+    },
+    {
+      "minrank": 4,
+      "name": "High Command",
+      "description": "You have command of several squads, each commanded by a captain who execute your orders. Additionally, potential employers actively seek you out, and you are empowered to accept or deny contracts without cosulting higher ups. Just remember that you have to pay your troops."
+    }
+  ]
+}

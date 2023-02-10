@@ -1,0 +1,66 @@
+{
+  "id": "elathianrangers",
+  "title": "Elathian Rangers",
+  "description": "Reknowned explorers and adventurers, The Elathian Rangers are a loose organization dedicated to exploring unknown haunts.  They sponsor outfitters in cities close to remote locations that act as the gatekeepers to the organization.  These outfitters compile maps and information brought in by the rangers, creating guide books and outfitting kits.",
+  "nations": [
+    "eldoran",
+    "demalthor",
+    "gerasalim",
+    "morrindim",
+    "terron",
+    "dormania",
+    "kandor",
+    "curinor"
+  ],
+  "cities": [
+    "seldan",
+    "dima",
+    "estapor",
+    "aridhem",
+    "eastguard",
+    "pelgan",
+    "morrind"
+  ],
+  "rules": [
+    "To stay in one place is to fail to grow, I must always be finding new places",
+    "The frontiers are dangerous and I must always strive to make them safer for others",
+    "I must attempt to preserve natural beauty where I find it"
+  ],
+  "ranks": [
+    {
+      "index": 0,
+      "name": "Hunter",
+      "minDisposition": 1,
+      "description": "Your wilderness skills are enough to get you some basic recognition from the local rangers."
+    },
+    {
+      "index": 1,
+      "name": "Scout",
+      "minDisposition": 3,
+      "description": "You have ventured into the wilderness and come back alive and with tales to tell."
+    },
+    {
+      "index": 2,
+      "name": "Explorer",
+      "minDisposition": 5,
+      "description": "You've been places no one else has ever been before, and been recognized for the effort."
+    }
+  ],
+  "features": [
+    {
+      "minrank": 0,
+      "name": "Hunter's Mark",
+      "description": "Add the spell hunter's mark to your spells known or spellbook.  You gain the ability to cast hunter's mark 1/day as a first level spell without expending a spell slot."
+    },
+    {
+      "minrank": 1,
+      "name": "Favored Terrain",
+      "description": "You gain a favored terrain.  See the ranger feature by the same name, if you already have a favored terrain you may pick an additional one."
+    },
+    {
+      "minrank": 2,
+      "name": "Master Hunter",
+      "description": "When you cast hunter's mark the spell no longer requires concentration."
+    }
+  ]
+}

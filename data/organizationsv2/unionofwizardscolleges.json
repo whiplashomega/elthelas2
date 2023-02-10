@@ -1,0 +1,92 @@
+{
+  "id": "unionofwizardscolleges",
+  "title": "Union of Wizard's Colleges",
+  "description": "The Union of Wizard's Colleges is an international organization dedicated to the sharing of magical knowledge.  Unlike the Artificer's, who hoard artifacts and technical expertise, the Union is dedicated to training young wizards, sorcerers, bards, and others to use their magical abilities responsibly.  Founded first by the colleges in Zelfir's major cities as a way to prevent magical accidents and misuse of magic, the Union has since spread across the globe. It's members vow to always use magic responsibly, avoiding collateral damage, and educating the public on the benefits of accepting magic users into the community. The Union is involved in licensing users of arcane magic in several countries, including Zelfir, Kandor, Gerasalim, Eldoran, Dera'Dragorim, Staelia, and Dormania. Licensed wizard's do not need to be members of the Union, but the Union has contracts with governments to obtain special policing powers to police their own.",
+  "nations": [
+    "Dera'Dragorim",
+    "Dormania",
+    "Eldoran",
+    "Gerasalim",
+    "Kandor",
+    "Staelia",
+    "Zelfir"
+  ],
+  "cities": [
+    "Zelfin",
+    "Mandon",
+    "Last Watch",
+    "Malidal",
+    "Desadorel",
+    "Kalland",
+    "Strovenguard",
+    "Loridesa",
+    "Instar",
+    "Milan",
+    "Estapor"
+  ],
+  "rules": [
+    "Avoid hurting bystanders with magic or other collateral damage to your activities",
+    "Share your knowledge with others",
+    "Obey the laws around magic use in whatever country you are in",
+    "Enforce the laws around magic use when others break them"
+  ],
+  "ranks": [
+    {
+      "index": 0,
+      "name": "Apprentice",
+      "minDisposition": 0,
+      "description": "You have joined a local wizards college as a new apprentice and have been assigned a mentor to learn from. Good luck!"
+    },
+    {
+      "index": 1,
+      "name": "Adept",
+      "minDisposition": 2,
+      "description": "You have proven you are skilled enough to no longer need a mentor."
+    },
+    {
+      "index": 2,
+      "name": "Magi",
+      "minDisposition": 4,
+      "description": "You have been recognized as a skilled mage and teacher."
+    },
+    {
+      "index": 3,
+      "name": "High Magi",
+      "minDisposition": 6,
+      "description": "Your skill and dedication have been recognized by the college, and other Magi now regularly seek out your guidance and advice."
+    },
+    {
+      "index": 4,
+      "name": "Dean",
+      "minDisposition": 10,
+      "description": "You have been named the Dean of a local college."
+    }
+  ],
+  "features": [
+    {
+      "minrank": 0,
+      "name": "Library Access",
+      "description": "You have been assigned to a local mage as an apprentice, and given access to the local magical library."
+    },
+    {
+      "minrank": 1,
+      "name": "Practiced Spells",
+      "description": "Learn a cantrip from the wizard, sorcerer, bard, or warlock lists. The casting stat for that cantrips depends on the list you chose it from, intelligence for wizard, charisma for sorcerer, bard, or warlock."
+    },
+    {
+      "minrank": 2,
+      "name": "Apprentice",
+      "description": "You have been assigned an apprentice who accompanies you and can perform simple tasks for you in return for education. This apprentice is a character who shares a spellcasting class with you, at least 4 levels lower than you are. For example, if you are a 7th level wizard, your apprentice is a wizard with a maximum level of 3."
+    },
+    {
+      "minrank": 3,
+      "name": "Knowledge Exchange",
+      "description": "The Union shares knowledge with you regularly. Every ten days the union magically sends you a random spell scroll of a level you can cast (maximum 5th level) and on your classes spell list. Additionally you are recognized for your skill by most magi you encounter. Your Library Access feature now extends to any library owned or associated with the Union."
+    },
+    {
+      "minrank": 4,
+      "name": "College",
+      "description": "The Union is prepared to fund a college under your leadership. This college provides  you with contacts and income, as well as magi that report directly to you for orders, as well as providing you with the results of their research."
+    }
+  ]
+}

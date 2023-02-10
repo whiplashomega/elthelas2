@@ -1,0 +1,66 @@
+{
+  "id": "wildernessguards",
+  "title": "Wilderness Guards",
+  "description": "The Wilderness Guards are a mercenary group employed primarily by local governments on the borders of the Riftlan Wilds. They specialize in fighting the dangerous monstrosities and extraplanar entities that occasionally drift into the material plane in those areas, protecting local settlements from attack. Similarly they protect the creatures of the natural world from both habitat destruction by civilization, and the appetites of those same extraplanar entities. Rangers of all stripes, druids, oath of the watcher paladins, and many fighters get recruited by the Guards. The guards generally act as individuals or in small squads rather than as an organized military force.",
+  "nations": [
+    "zelfir",
+    "deradragorim"
+  ],
+  "cities": [
+    "seldan",
+    "lastwatch",
+    "portsmith"
+  ],
+  "rules": [
+    "I must protect civilization from the dangers of the frontier.",
+    "I must preserve the natural world from the worst exploitations of civilization and the extreme nature of extraplanar entities."
+  ],
+  "ranks": [
+    {
+      "index": 0,
+      "name": "Recruit",
+      "minDisposition": 0,
+      "description": "As a new recruit you are assigned to a veteran guard for training."
+    },
+    {
+      "index": 1,
+      "name": "Guard",
+      "minDisposition": 2,
+      "description": "Your wilderness skills are enough to get you some basic recognition from the locals."
+    },
+    {
+      "index": 2,
+      "name": "Protector",
+      "minDisposition": 4,
+      "description": "You have ventured into the wilderness and come back alive and with tales to tell."
+    },
+    {
+      "index": 3,
+      "name": "Guard Captain",
+      "minDisposition": 6,
+      "description": "You've been places no one else has ever been before, and been recognized for the effort."
+    }
+  ],
+  "features": [
+    {
+      "minrank": 0,
+      "name": "Equipped",
+      "description": "The Wilderness Guards are willing to help equip you and provide 100 gp worth of equipment."
+    },
+    {
+      "minrank": 1,
+      "name": "Hunter's Mark",
+      "description": "Add the spell hunter's mark to your spells known or spellbook.  You gain the ability to cast hunter's mark 1/day as a first level spell without expending a spell slot."
+    },
+    {
+      "minrank": 2,
+      "name": "Selfless Protector",
+      "description": "Your experience has taught you ways to protect others in battle. You gain the Protection fighting style. If you already have that fighting style choose another fighting style that you do not already have."
+    },
+    {
+      "minrank": 3,
+      "name": "Squad",
+      "description": "You have been given leave to recruit a squad of Wilderness Guards from the local population that report to you."
+    }
+  ]
+}
