@@ -268,6 +268,28 @@ const router = createRouter({
       },
     },
     {
+      path: "/5e/orgs",
+      name: "5e Multinational Organizations and Factions",
+      components: {
+        default: () => import("@/views/5e/organizations.vue"),
+      },
+      meta: {
+        title: "Multinational Organizations and Factions",
+        auth: false,
+      },
+    },
+    {
+      path: "/5e/orgs/:org",
+      name: "5e Multinational Organizations and Factions - Specific",
+      components: {
+        default: () => import("@/views/5e/organizations.vue"),
+      },
+      meta: {
+        title: "Multinational Organizations and Factions",
+        auth: false,
+      },
+    },
+    {
       path: "/world/orgs",
       name: "Multinational Organizations and Factions",
       components: {

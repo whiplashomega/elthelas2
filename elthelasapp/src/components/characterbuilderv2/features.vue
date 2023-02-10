@@ -98,8 +98,18 @@
           </p>
         </div>
       </div>
-      <div v-if="level >= 1" v-html="marked.parse(character.faction.level1)" class="smalltext"></div>
-      <div v-if="level >= 10" v-html="marked.parse(character.faction.level10)" class="smalltext"></div>
+      <div v-for="org in character.faction" :key="org.faction.id">
+        <p v-for="feature in org.faction.features" :key="feature.name" class="smalltext">
+          <div v-if="org.rank.index >= feature.minrank">
+            <span :title="feature.description">{{ feature.name }}</span>
+            <button class="btn btn-sm print-hide float-right" type="button"
+                    @click="setval(feature, 'show', true)" v-if="!feature.show">&#x25BC;</button>
+            <button class="btn btn-sm print-hide float-right" type="button"
+                    @click="setval(feature, 'show', false)" v-if="feature.show">&#x25B2;</button>
+            <span v-if="feature.show" v-html="marked.parse(feature.description)"></span>
+          </div>
+        </p>
+      </div>
       <div class="smalltext" v-for="(feature, index) in character.features" :key="index">
         <p>
           <span :title="feature.description">{{ feature.name }}</span>

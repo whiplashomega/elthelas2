@@ -140,80 +140,82 @@
                   <div class="col-sm-6" v-html="marked.parse(section.description)"></div>
                 </div>
               </div>
-              <div v-for="(encounter, $index) in section.encounters" :key="encounter.id"
-                   :class="encounter.complete ? 'complete' : ''" v-if="!section.hidden">
-                <div v-if="!encounter.buildmode">
-                  <h4>
-                    <a :href="encounter.link" target="_blank">{{ encounter.name }}</a>
-                    <button @click="moveEncounterUpInSection({ section: section, index: $index })" class="btn btn-xs">↑</button>
-                    <button @click="moveEncounterDownInSection({ section: section, index: $index })" class="btn btn-xs">↓</button>
-                    <button @click="loadEncounter(encounter.link)" class="btn btn-success btn-xs">Run in Tab</button>
-                    <button @click="encounter.buildmode = true" class="btn btn-xs">&#9998;</button>
-                  </h4>
-                  <div class="form-check">
-                    <input type="checkbox" class="form-check-input" v-model="encounter.complete" />
-                    <label class="form-check-label">Complete</label>
-                  </div>
-                  <div class="form-check">
-                    <input type="checkbox" class="form-check-input" v-model="encounter.closed" />
-                    <label class="form-check-label">Hide</label>
-                  </div>
-                  <div style="float:right;max-width:40%;" v-if="encounter.image && !encounter.closed">
-                    <img :src="encounter.image" :alt="encounter.name" />
-                  </div>
-                  <div v-html="marked.parse(encounter.text)" v-if="!encounter.closed"></div>
-                  <div v-html="marked.parse(encounter.treasure)" v-if="!encounter.closed"></div>
-                  <div>
-                    <h4>Session Notes</h4>
-                    <textarea v-model="encounter.sessionnotes" class="form-control"></textarea>
-                  </div>
-                </div>
-                <div v-if="encounter.buildmode">
-                  <hr />
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <label>Name</label><button @click="moveEncounterUpInSection({ section: section, index: $index })" class="btn btn-xs">↑</button>
-                      <button @click="moveEncounterDownInSection({ section: section, index: $index })" class="btn btn-sm">↓</button>
-                      <button @click="deleteEncounterFromSection({ section: section, encounter: encounter })" class="btn btn-xs">&#128465;</button>
-                      <button @click="encounter.buildmode = false" class="btn btn-xs">Done</button>
-                      <input type="text" class="form-control" v-model="encounter.name" />
+              <div v-if="!section.hidden">
+                <div v-for="(encounter, $index) in section.encounters" :key="encounter.id"
+                    :class="encounter.complete ? 'complete' : ''">
+                  <div v-if="!encounter.buildmode">
+                    <h4>
+                      <a :href="encounter.link" target="_blank">{{ encounter.name }}</a>
+                      <button @click="moveEncounterUpInSection({ section: section, index: $index })" class="btn btn-xs">↑</button>
+                      <button @click="moveEncounterDownInSection({ section: section, index: $index })" class="btn btn-xs">↓</button>
+                      <button @click="loadEncounter(encounter.link)" class="btn btn-success btn-xs">Run in Tab</button>
+                      <button @click="encounter.buildmode = true" class="btn btn-xs">&#9998;</button>
+                    </h4>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" v-model="encounter.complete" />
+                      <label class="form-check-label">Complete</label>
                     </div>
-                    <div class="col-sm-6">
-                      <label>Runner Link</label>
-                      <input type="text" class="form-control" v-model="encounter.link" />
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" v-model="encounter.closed" />
+                      <label class="form-check-label">Hide</label>
+                    </div>
+                    <div style="float:right;max-width:40%;" v-if="encounter.image && !encounter.closed">
+                      <img :src="encounter.image" :alt="encounter.name" />
+                    </div>
+                    <div v-html="marked.parse(encounter.text)" v-if="!encounter.closed"></div>
+                    <div v-html="marked.parse(encounter.treasure)" v-if="!encounter.closed"></div>
+                    <div>
+                      <h4>Session Notes</h4>
+                      <textarea v-model="encounter.sessionnotes" class="form-control"></textarea>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <label>Image URL</label>
-                      <input type="text" class="form-control" v-model="encounter.image" />
-                    </div>
-                    <div class="col-sm-4">
-                      <label>Flags</label>
-                      <div class="form-check">
-                        <input type="checkbox" class="form-check-input" v-model="encounter.complete" />
-                        <label class="form-check-label">Complete</label>
+                  <div v-if="encounter.buildmode">
+                    <hr />
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <label>Name</label><button @click="moveEncounterUpInSection({ section: section, index: $index })" class="btn btn-xs">↑</button>
+                        <button @click="moveEncounterDownInSection({ section: section, index: $index })" class="btn btn-sm">↓</button>
+                        <button @click="deleteEncounterFromSection({ section: section, encounter: encounter })" class="btn btn-xs">&#128465;</button>
+                        <button @click="encounter.buildmode = false" class="btn btn-xs">Done</button>
+                        <input type="text" class="form-control" v-model="encounter.name" />
+                      </div>
+                      <div class="col-sm-6">
+                        <label>Runner Link</label>
+                        <input type="text" class="form-control" v-model="encounter.link" />
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <label>Encounter Text (markdown allowed)</label>
-                      <textarea v-model="encounter.text" class="form-control"></textarea>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <label>Image URL</label>
+                        <input type="text" class="form-control" v-model="encounter.image" />
+                      </div>
+                      <div class="col-sm-4">
+                        <label>Flags</label>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" v-model="encounter.complete" />
+                          <label class="form-check-label">Complete</label>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-sm-6" v-html="marked.parse(encounter.text)"></div>
-                  </div>
-                  <div>
-                    <label>Potential Treasure (markdown allowed)</label>
-                    <textarea v-model="encounter.treasure" class="form-control"></textarea>
-                  </div>
-                  <div>
-                    Move to Section
-                    <select v-model="section2" class="form-control form-control-sm">
-                      <option v-for="sec2 in chapter.sections" :key="sec2.id" :value="sec2">{{ section.title }}</option>
-                    </select>
-                    <button class="btn btn-success btn-sm" @click="moveEncounterFromSectionToSection({ section1: section, section2: section2, encounter: encounter })">Go</button>
-                    <button class="btn btn-primary btn-sm" @click="addEncounterToSection({ section: section, index: $index + 1 })">Add Encounter After This One</button>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <label>Encounter Text (markdown allowed)</label>
+                        <textarea v-model="encounter.text" class="form-control"></textarea>
+                      </div>
+                      <div class="col-sm-6" v-html="marked.parse(encounter.text)"></div>
+                    </div>
+                    <div>
+                      <label>Potential Treasure (markdown allowed)</label>
+                      <textarea v-model="encounter.treasure" class="form-control"></textarea>
+                    </div>
+                    <div>
+                      Move to Section
+                      <select v-model="section2" class="form-control form-control-sm">
+                        <option v-for="sec2 in chapter.sections" :key="sec2.id" :value="sec2">{{ section.title }}</option>
+                      </select>
+                      <button class="btn btn-success btn-sm" @click="moveEncounterFromSectionToSection({ section1: section, section2: section2, encounter: encounter })">Go</button>
+                      <button class="btn btn-primary btn-sm" @click="addEncounterToSection({ section: section, index: $index + 1 })">Add Encounter After This One</button>
+                    </div>
                   </div>
                 </div>
               </div>

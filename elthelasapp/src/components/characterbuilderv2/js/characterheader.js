@@ -8,7 +8,7 @@ export default {
     const statics = useStaticsStore();
     
     const { character, classtext } = storeToRefs(characters);
-    const { builderAncestries: ancestries, backgrounds } = statics;
+    const { builderAncestries: ancestries, backgrounds } = storeToRefs(statics);
     const { mobile } = storeToRefs(globals);
     
     const setRaceDefaults = characters.setRaceDefaults;

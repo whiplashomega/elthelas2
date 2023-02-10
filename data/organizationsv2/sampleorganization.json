@@ -27,11 +27,17 @@
   "rules": [],
   "ranks": [
     {
+        "index": 1,
         "name": "Apprentice",
         "minDisposition": 0,
-        "description": "A Text Description",
-        "featurename": "Education",
-        "featuredescription": "People will teach you."
+        "description": "A Text Description"
+    }
+   ],
+   "features": [
+    {
+      "minrank": 1,
+      "name": "Education",
+      "description": "People will teach you."
     }
    ]
 }

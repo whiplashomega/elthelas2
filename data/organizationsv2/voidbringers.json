@@ -1,0 +1,43 @@
+{
+  "id": "voidbringers",
+  "title": "Voidbringers",
+  "description": "The voidbringers are a collection of worshippers of Trolka, Malik, and various unspeakable evils from beyond the edge of existence who are dedicated to returning the world of Elthelas to the void.  The continued existence of the mortal plane is seen as an affrontory to the beauty of pure chaos, and so it must be brought to an end.",
+  "nations": [
+  
+  ],
+  "cities": [
+  
+  ],
+  "rules": [
+    "Governments and organized religions represent the natural order.  I must never work for them, and should try to undermine them where possible.",
+    "If I have multiple ways I could solve a problem, I should choose the most violent or destructive method"
+  ],
+  "ranks": [
+    {
+      "index": 0,
+      "name": "Known",
+      "minDisposition": 1,
+      "description": "Your actions have marked you for consideration by the Voidbringers. They are watching you."
+    },
+    {
+      "index": 1,
+      "name": "Initiate",
+      "minDisposition": 4,
+      "description": "You have been contacted by a Master Voidbringer. Now is your chance to prove yourself."
+    },
+    {
+      "index": 2,
+      "name": "Touched",
+      "minDisposition": 7,
+      "description": "You have been touched by the void."
+    }
+  ],
+  "features": [
+    {
+      "minrank": 2,
+      "name": "Insanity",
+      "description": "You have been touched by the eternal void, and your mind will never be the same again.  Your dedication to chaos gives you advantage on saves against charm and fear."
+    }
+  ],
+  "level10": "**Extraplanar.** You are a senior agent of your God, and he speaks to you.  You can cast Contact Outer Plane once per day without using a spell slot so long as you use it to contact Trolka, Malik, or an outer evil whom you revere."
+}

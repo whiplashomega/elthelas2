@@ -16,25 +16,15 @@
       <h2>{{ currentOrg.title }}</h2>
       <div v-html="marked.parse(currentOrg.description)"></div>
       <div>
-        <h4>Rules</h4>
+        <h4>Tenets</h4>
         <ul>
-          <li v-for="rule in currentOrg.rules" :key="rule" v-html="marked.parse(tenet)"></li>
+          <li v-for="tenet in currentOrg.tenets" :key="tenet" v-html="marked.parse(tenet)"></li>
         </ul>
       </div>
-      <div>
-        <h3>Ranks</h3>
-        <div v-for="rank in currentOrg.ranks" :key="rank.name">
-          <h4>{{ rank.name }}</h4>
-          <h6>Minimum Disposition: {{ rank.minDisposition }}</h6>
-          <div v-html="marked.parse(rank.description)"></div>
-          <div v-for="feature in currentOrg.features" :key="feature.name">
-            <div v-if="feature.minrank === rank.index">
-              <h5>Feature: {{ feature.name }}</h5>
-              <div v-html="marked.parse(feature.description)"></div>            
-            </div>
-          </div>
-        </div>
-      </div>
+      <h4>Level 1 Benefit</h4>
+      <div v-html="marked.parse(currentOrg.level1)"></div>
+      <h4>Level 10 Benefit</h4>
+      <div v-html="marked.parse(currentOrg.level10)"></div>
       <div class="col-sm-6">
         <h4>Nations with a Major Presence</h4>
         <ul>

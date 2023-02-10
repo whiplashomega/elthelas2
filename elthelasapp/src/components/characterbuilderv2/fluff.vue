@@ -19,6 +19,9 @@
       </div>
       <div class="col">
         <h5>Organizations</h5>
+        <div class="row">
+          <div class="col-sm-5">Faction</div><div class="col-sm-2">Disposition</div><div class="col-sm-4">Rank</div>
+        </div>
         <div v-for="(faction, index) in character.faction" :key="faction.id" class="row">
           <div class="col-sm-5">
             <select class="charsheet-text" v-model="faction.faction">
@@ -26,20 +29,19 @@
               <option v-for="faction in factions" :value="faction"
                       :key="faction.id">{{ faction.title }}</option>
             </select>
-            Faction
           </div>
           <div class="col-sm-2">
-            <input type="num" class="charsheet-num" v-model="faction.disposition" />
-            Disposition
+            <input type="number" class="charsheet-num" v-model="faction.disposition" />
           </div>
           <div class="col-sm-4">
             <select class="charsheet-text" v-model="faction.rank">
               <option :value="faction.rank">{{ faction.rank.name }}</option>
-              <option v-for="rank in faction.ranks" :key="rank.name" :title="rank.description">{{ rank.name }} {{ rank.minDisposition }}</option>
+              <option v-for="rank in faction.faction.ranks" :key="rank.name" :title="rank.description" :value="rank">{{ rank.name }}</option>
             </select>
+            Minimum Disposition: {{ faction.rank.minDisposition }}
           </div>
           <div class="col-sm-1">
-            <button class="btn btn-danger btn-sm" @click="removeFaction(index)">-</button>
+            <button class="btn btn-danger btn-sm" @click="removeFaction(index)">-</button> 
           </div>
         </div>
         
