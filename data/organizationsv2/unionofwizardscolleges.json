@@ -71,7 +71,7 @@
     {
       "minrank": 1,
       "name": "Practiced Spells",
-      "description": "Learn a cantrip from the wizard, sorcerer, bard, or warlock lists. The casting stat for that cantrips depends on the list you chose it from, intelligence for wizard, charisma for sorcerer, bard, or warlock."
+      "description": "Learn a cantrip from the wizard, sorcerer, bard, or warlock lists. The casting stat for that cantrip depends on the list you chose it from, intelligence for wizard, charisma for sorcerer, bard, or warlock."
     },
     {
       "minrank": 2,

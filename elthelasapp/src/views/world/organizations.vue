@@ -18,7 +18,7 @@
       <div>
         <h4>Rules</h4>
         <ul>
-          <li v-for="rule in currentOrg.rules" :key="rule" v-html="marked.parse(tenet)"></li>
+          <li v-for="rule in currentOrg.rules" :key="rule" v-html="marked.parse(rule)"></li>
         </ul>
       </div>
       <div>
