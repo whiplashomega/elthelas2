@@ -1,0 +1,56 @@
+{
+  "id": "guild",
+  "title": "Guild of Merchants or Artisans",
+  "description": "You are a member of a local guild specializing in a particular trade.",
+  "nations": [
+  ],
+  "cities": [
+  ],
+  "rules": [
+    "Be proficient with the tools of the trade.",
+    "Do not undercut the prices of fellow members.",
+    "Only sell quality work."
+  ],
+  "ranks": [
+    {
+      "index": 0,
+      "name": "Apprentice",
+      "minDisposition": 0,
+      "description": "You have been hired to work, and learn from, a master tradesman."
+    },
+    {
+      "index": 1,
+      "name": "Journeyman",
+      "minDisposition": 2,
+      "description": "You have progressed and learned until you are able to handle projects on your own."
+    },
+    {
+      "index": 2,
+      "name": "Master",
+      "minDisposition": 5,
+      "description": "You are now a master of your trade, with the skills and expertise"
+    }
+  ],
+  "features": [
+    {
+      "minrank": 0,
+      "name": "Guild Membership",
+      "description": "As an established and respected member o f a guild, you can rely on certain benefits that membership provides. Your fellow guild members will provide you with lodging and food if necessary, and pay for your funeral if needed. In some cities and towns, a guildhall offers a central place to meet other members of your profession, which can be a good place to meet potential patrons, allies, or hirelings. Guilds often wield tremendous political power. If you are accused of a crime, your guild will support you if a good case can be made for your innocence or the crime is justifiable. You can also gain access to powerful political figures through the guild, if you are a member in good standing. Such connections might require the donation of money or magic items to the guild’s coffers. You must pay dues of 5 gp per month to the guild. If you miss payments, you must make up back dues to remain in the guild’s good graces."
+    },
+    {
+      "minrank": 1,
+      "name": "Tool Proficiency",
+      "description": "You gain proficiency in a set of tools related to your guilds work. If your guild does not use artisan's tools (such as a guild of merchants) you instead gain proficiency in one skill related to your guilds work. (such as Persuasion or Insight for a guild of merchants)."
+    },
+    {
+      "minrank": 1,
+      "name": "Loans",
+      "description": "You have the ability to take loans from the guild at a favorable interest rate so long as you have paid off any previous loans taken. The size of loan you are able to take depends on what sort of collateral you can provide. The maximum is either 1000 gp or twice the value of the collateral."
+    },
+    {
+      "minrank": 2,
+      "name": "Tool Expertise",
+      "description": "You gain expertise in one set of tools related to your guilds work with which you are already proficient, allowing you to add double your proficiency bonus when making checks with those tools. If your guild does not use artisan's tools (such as a guild of merchants) you instead gain expertise in one skill related to your guilds work with which you are already proficient. (such as Persuasion or Insight for a guild of merchants)."
+    }
+  ]
+}

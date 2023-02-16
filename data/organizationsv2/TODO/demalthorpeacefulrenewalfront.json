@@ -1,0 +1,21 @@
+{
+  "id": "demalthorpeacefulrenewalfront",
+  "title": "Demal'Thor Peaceful Renewal Front",
+  "description": "The DPRF is a new organization formed after the war with the primary goal of encouraging the Moon Elf Diaspora to return to Demal'Thor. Additionally, they take an active role in politics within and outside Demal'Thor advocating for the end to wars, peaceful resolution to conflict between races, and the abandonment of warmongering \"Geeater\" Gods such as Mat'raktha and Alohim, and the renewal of culture through the arts and the worship of the Gods of the Arts such as Adonna, Kamin, and Bragi.",
+  "nations": [
+    "demalthor",
+    "eldoran",
+    "gerasalim"
+  ],
+  "cities": [
+    "Aridhem"
+  ],
+  "tenets": [
+    "Avoid conflict when you can, fight only in self-defense.",
+    "Pracice artistic pursuits to uplift those around you.",
+    "Provide for the people of Demal'Thor to return home and return to their traditional way of life.",
+    "Give no assistance to the Gods of War"
+  ],
+  "level1": "**Artistic Training.** Gain one free proficiency in a musical instrument or a set of tools used for artistic pursuits (such as sculpting, caligraphy, or painting). Add that musical instrument or set of tools to your inventory.",
+  "level10": "**Conflict Resolution** You learn the spell calm emotions. Charisma is your casting stat for this spell. You can cast calm emotions once without using a spell slot, and when cast in this way creatures have disadvantage on the saving throw to avoid the effects of the spell. You regain the ability to cast the spell this way when you finish a long rest."
+}

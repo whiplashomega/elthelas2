@@ -1,0 +1,73 @@
+{
+  "id": "church",
+  "title": "Official Church of a God",
+  "description": "Each of the Gods of Elthelas have an established priesthood that has priveleges in nations that worship that God.",
+  "nations": [
+  ],
+  "cities": [
+  ],
+  "rules": [
+    "Follow the tenets of your God.",
+    "Spread the faith with others.",
+    "Serve those of a higher rank, and follow the instructions of your God."
+  ],
+  "ranks": [
+    {
+      "index": 0,
+      "name": "Acolyte",
+      "minDisposition": 1,
+      "description": "You have been hired to work for the church as an acolyte."
+    },
+    {
+      "index": 1,
+      "name": "Deacon",
+      "minDisposition": 3,
+      "description": "You have been assigned to the service of members of the faith in the field."
+    },
+    {
+      "index": 2,
+      "name": "Priest",
+      "minDisposition": 5,
+      "description": "You have been granted control of a rural church or a particular mission for a larger church."
+    },
+    {
+      "index": 3,
+      "name": "Bishop",
+      "minDisposition": 8,
+      "description": "You are in control of the churches functions in a set of villages or a moderately sized town."
+    },
+    {
+      "index": 4,
+      "name": "High Priest",
+      "minDisposition": 12,
+      "description": "You have control over the churches functions over a significant area, city, or even a small country."
+    }
+  ],
+  "features": [
+    {
+      "minrank": 0,
+      "name": "Shelter of the Faithful",
+      "description": "As an acolyte, you command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.\n\nYou might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple."
+    },
+    {
+      "minrank": 1,
+      "name": "Ear of the Faithful",
+      "description": "The followers of your God turn to you for advice and guidance. If an NPC is a follower of your God they are likely to be friendly to you, and you have advantage on charisma checks to influence them."
+    },
+    {
+      "minrank": 2,
+      "name": "Service of the Faithful",
+      "description": "You are in command of a small group of deacons and acolytes who work for the local church. So long as your orders are reasonable and within the tenets of your God these followers will do as you command."
+    },
+    {
+      "minrank": 3,
+      "name": "Tithes",
+      "description": "You receive and decide how to spend the tithes from the worshippers of your God in your assigned area, and have control of a church or shrine where those tithes are given."
+    },
+    {
+      "minrank": 4,
+      "name": "Voice of God",
+      "description": "You are the Voice of your God in your area. You learn the Commune spell, and can cast it 1/day without expending a spell slot."
+    }
+  ]
+}

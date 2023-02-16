@@ -1,0 +1,52 @@
+{
+  "id": "amatherasshield",
+  "title": "Amathera's Shield",
+  "description": "Amathera's Shield is an organization of knights, paladins, and others dedicated to defending the helpless and uplifting the poor and downtrodden.  \n\nIt has two branches, the militaristic branch seeks out war zones, building and defending refugee camps, and setting up defenses in communities likely to be subject to raids or attack.  The charitable branch goes into communities to distribute food, supplies and education.\n\nBoth branches have a heirarchical ranking system based on knightly orders, with new initiates referred to as pages, followed by squires.  Senior members are called 'shieldmaiden' or 'shieldwarden' depending on their gender.\n\nAmathera's Shield is sponsored by the church of Amathera, and is greatly respected everywhere Amathera is worshipped.  Their headquarters is in the city of Mandon in Zelfir, but they have chapterhouses in many major cities throughotu the world.",
+  "nations": [
+    "zelfir",
+    "deradragorim",
+    "alfadir",
+    "staelia",
+    "eldoran",
+    "gerasalim",
+    "kandor",
+    "dormania",
+    "terron",
+    "shendarel",
+    "seran",
+    "curinor",
+    "morrindim"
+  ],
+  "cities": [
+    "malidal",
+    "desadorel",
+    "farengar",
+    "kaland",
+    "eastguard",
+    "strovenguard",
+    "granitebluff",
+    "storval",
+    "torinhammer",
+    "tenecha",
+    "kimly",
+    "swava",
+    "alados",
+    "kelas",
+    "dieel",
+    "fradae",
+    "damat",
+    "mandon",
+    "zelfin",
+    "lastwatch",
+    "portsmith",
+    "vashna",
+    "delan"
+  ],
+  "tenets": [
+    "Defend the weak and provide refuge.",
+    "Don't start conflicts, finish them.",
+    "Provide charity for the poor."
+  ],
+  "level1": "**Guardian.** When someone within 5 ft of you makes an attack you can use your reaction to interpose yourself and force them to target you instead.",
+  "level10": "**Magic Refuge.** You can cast the spell Ottiluke's Resilient Sphere 1/day without using a spell slot.  When cast in this way you can only target a willing target."
+}

@@ -1,0 +1,89 @@
+{
+  "id": "noblehouse",
+  "title": "Noble House",
+  "description": "There are countless noble houses in nations throughout the world. Members of these houses have priveleges and social ranks within the country. That being said, not all countries have a noble class. The nations listed below are the ones that have a landed nobility. Not all members of a noble house are members of the noble family themselves. Many are hirelings or longtime friends, who while not being inheritors of the title, have abilities and priveleges to act on behalf of the family. The highest ranks of this organization are not reachable by normal means.",
+  "nations": [
+    "Eldoran",
+    "Waelin",
+    "Curinor",
+    "Terron",
+    "Dormania",
+    "Kandor",
+    "Curinor",
+    "Malinval",
+    "Federated Alliance Territories",
+    "Shendarel",
+    "Olda",
+    "Dera'Dragorim",
+    "Stagenheim",
+    "Staelia",
+    "Hisru'de'tan",
+    "Asuran Confederacy"
+  ],
+  "cities": [
+  ],
+  "rules": [
+    "Promote the interests of the house",
+    "Follow the orders of the house leaders",
+    "Protect the noble family at all costs"
+  ],
+  "ranks": [
+    {
+      "index": 0,
+      "name": "Hireling",
+      "minDisposition": 0,
+      "description": "You have been hired to work for the noble house, trust is limited, but for now they seem to need you."
+    },
+    {
+      "index": 1,
+      "name": "Aide/Minor Family Member",
+      "minDisposition": 3,
+      "description": "You are trusted enough to be assigned to a particular member of the house as a permanent aide, with access to priveleged information."
+    },
+    {
+      "index": 2,
+      "name": "Courtier/Influential Family Member",
+      "minDisposition": 5,
+      "description": "You have been brought into the inner circle of the ranking member of the family."
+    },
+    {
+      "index": 3,
+      "name": "Heir Apparent",
+      "minDisposition": 99,
+      "description": "You are so well trusted by the ranking member of the family that you have been adopted and named heir apparent."
+    },
+    {
+      "index": 4,
+      "name": "Lord",
+      "minDisposition": 99,
+      "description": "You are the Lord of the House, and command all the resources at the houses disposal, including estates, courtiers, aides, and hirelings. Your voice has weight in the government of the country."
+    }
+  ],
+  "features": [
+    {
+      "minrank": 0,
+      "name": "Equipped",
+      "description": "Your house is willing to supply funds to aid in equipping you for duty to the tune of 100 gp worth of equipment."
+    },
+    {
+      "minrank": 1,
+      "name": "Influence",
+      "description": "You have an intimate knowledge of not only your own house, but other noble houses within your nation. You have advantage on history and persuasion checks related to the nobility or made to influence them."
+    },
+    {
+      "minrank": 1,
+      "name": "Position of Privilege",
+      "description": "Thanks to your noble birth, people are inclined to think the best of you. You are welcome in high society, and people assume you have the right to be wherever you are. The common folk make every effort to accommodate you and avoid your displeasure, and other people of high birth treat you as a member of the same social sphere. You can secure an audience with a local noble if you need to."
+    },
+    {
+      "minrank": 2,
+      "name": "Powerful Backers",
+      "description": "You are a prominent and powerful person in local politics, and your words and actions have weight. You are able to command lesser members of your house, and they will assist you however they can. Members of other houses and guards within your nation and nations friendly to it recognize your sigil and give you deference."
+    },
+    {
+      "minrank": 4,
+      "name": "Lord",
+      "description": "You have control of the houses estates, and the command of the houses members. Your voice has weight in the halls of power."
+    }
+  ]
+}
