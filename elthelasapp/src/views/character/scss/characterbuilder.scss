@@ -62,6 +62,23 @@
   .print-hide {
     display: none;
   }
+  .abilitytable td, .abilitytable th {
+    padding: 1px !important;
+  }
+  .noprintbutton {
+    background: none;
+    padding: none;
+    border: none;
+  }
+  .charsheet-static {
+    margin: 3px 0px !important;
+  }
+  .charsheet-text {
+    height: 18px !important;
+  }
+  #profbox {
+    height: auto !important;
+  }
 }
 .half {
   background-color: lavender;

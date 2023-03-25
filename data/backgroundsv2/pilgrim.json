@@ -1,0 +1,9 @@
+{
+  "name": "Pilgrim",
+  "description": "You and a group of like-minded believers once endeavored to walk a thousand miles of road to reach a faraway shrine.",
+  "skills": ["Religion", "Survival"],
+  "tools": ["Musical instument"],
+  "languages": 1,
+  "equipment": "Bedroll, Healer's kit, Holy Symbol, Musical Instrument, Rations (2 days), Traveler's Clothes, 16 gp",
+  "feature": "Healer"
+}

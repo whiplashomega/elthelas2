@@ -1,4 +1,4 @@
-fs = require('fs');
+const fs = require('fs');
 var console = {};
 console.log = require('fancy-log');
 
@@ -89,7 +89,7 @@ function personalhistoryjson () {
 }
 
 function spellsjson (dir) {
-  source = "./data/" + dir;
+  const source = "./data/" + dir;
   function intersect(arrays) {
     return arrays.shift().filter(function(v) {
         return arrays.every(function(a) {
@@ -195,6 +195,7 @@ function jsoncompile () {
     compiledir("./data/landmarks", "./elthelasapp/public/json/landmarks.json", "Landmark"), //landmarks
     compiledir("./data/nations", "./elthelasapp/public/json/nations.json", "Nation"), //nations
     compiledir("./data/backgrounds", "./elthelasapp/public/json/backgrounds.json", "Background"), //backgrounds
+    compiledir("./data/backgroundsv2", "./elthelasapp/public/json/backgroundsv2.json", "BackgroundV2"), //backgrounds
     compiledir("./data/classes", "./elthelasapp/public/json/classes.json", "CharClass"), //classes
     compiledir("./data/classesv2", "./elthelasapp/public/json/classesv2.json", "CharClass"), //classes
     compiledir("./data/territories", "./elthelasapp/public/json/territories.json", "Territories")]).then(function() {

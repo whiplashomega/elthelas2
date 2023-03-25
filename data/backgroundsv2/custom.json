@@ -1,0 +1,9 @@
+{
+  "name": "Custom Background",
+  "description": "Customize a background to fit your character.",
+  "skills": ["Any two skills of your choice"],
+  "tools": ["One set of tools, a musical instrument, or a gaming set"],
+  "languages": 1,
+  "equipment": "50 gp worth of starting equipment",
+  "feature": "One feat available to 1st level characters for which you qualify."
+}

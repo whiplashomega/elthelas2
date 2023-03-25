@@ -1,0 +1,12 @@
+{
+  "name": "Scholar",
+  "description": "As a child, you were inquisitive when your playmates were possessive or raucous. In your formative years, you found your way to one of Elthelas's great institutes of learning, where you were apprenticed and taught that knowledge is a more valuable treasure than gold or gems. Now you are ready to leave your home-not to abandon it, but to quest for new lore to add to its storehouse of knowledge.",
+  "skills": [
+    "History",
+    "Choose one from among Arcana, Nature, and Religion"
+  ],
+  "tools": ["Calligrapher's supplies"],
+  "languages": 1,
+  "equipment": "Book (History), Quarterstaff, Calligrapher's Supplies, Robe, Parchment (8 sheets), 8 gp",
+  "feature": "Skilled"
+}

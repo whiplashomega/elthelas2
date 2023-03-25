@@ -1,13 +1,9 @@
 {
-  "name": "Guild Merchant",
+  "name": "Merchant",
   "description": "Instead of an artisans’ guild, you might belong to a guild o f traders, caravan masters, or shopkeepers. You don’t craft items yourself but earn a living by buying and selling the works o f others (or the raw materials artisans need to practice their craft). Your guild might be a large merchant consortium (or family) with interests across the region. Perhaps you transported goods from one place to another, by ship, wagon, or caravan, or bought them from traveling traders and sold them in your own little shop. In some ways, the traveling merchant’s life lends itself to adventure far more than the life of an artisan.",
   "skills": ["Insight", "Persuasion"],
-  "tools": [],
-  "languages": 2,
-  "equipment": "A mule and cart, a letter of introduction from your guild, a set of traveler’s clothes, and a belt pouch containing 15 gp",
-  "feature": {
-    "name": "Guild Membership",
-    "description": "You are a member of a Guild faction of your choice, and have the Apprentice rank within that faction."
-  },
-  "characteristics": "Guild artisans are among the most ordinary people in the world—until they set down their tools and take up an adventuring career. They understand the value of hard work and the importance of community, but they’re vulnerable to sins of greed and covetousness."
+  "tools": ["Caligrapher's Supplies"],
+  "languages": 1,
+  "equipment": "Abacus, A gaming set, merchant's scales, 2 pouches, a set of traveler’s clothes, 25 gp",
+  "feature": "Lucky"
 }

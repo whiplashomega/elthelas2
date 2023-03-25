@@ -1,14 +1,17 @@
 import { useStaticsStore } from '@/stores/index';
 import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 import { useMeta } from 'vue-meta';
+import { storeToRefs } from 'pinia';
 
 export default {
   setup () {
     const statics = useStaticsStore();
+    const { feats } = storeToRefs(statics);
     useMeta({ title: "Feats" });
     
     return {
       statics,
+      feats,
       marked
     }
   },
@@ -22,7 +25,7 @@ export default {
         }
         return 0;
       }
-      return this.statics.featsv2.sort(ftsrt);
+      return this.feats.sort(ftsrt);
     }
   },
 };

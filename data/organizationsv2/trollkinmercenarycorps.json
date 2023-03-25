@@ -29,27 +29,21 @@
     {
       "index": 2,
       "name": "Veteran",
-      "minDisposition": 4,
+      "minDisposition": 6,
       "description": "You are known to be reliable and capable. Good work soldier."
     },
     {
       "index": 3,
-      "name": "Captain",
-      "minDisposition": 6,
-      "description": "Pips on the shoulder mark you out as someone who has been around the block more than once."
-    },
-    {
-      "index": 4,
-      "name": "General",
+      "name": "Elite",
       "minDisposition": 10,
-      "description": "You are now in charge of an autonomous army that can accept contracts on its own terms. You report directly to the Grand Marshal, so don't screw it up."
+      "description": "Pips on the shoulder mark you out as someone who has been around the block more than once."
     }
   ],
   "features": [
     {
       "minrank": 0,
       "name": "Equipped for Battle",
-      "description": "The corps is willing to take a risk on you and give you 100 gp worth of combat equipment."
+      "description": "The corps is willing to take a huge risk on you and give you 100 gp worth of combat equipment."
     },
     {
       "minrank": 1,
@@ -63,13 +57,8 @@
     },
     {
       "minrank": 3,
-      "name": "Command",
-      "description": "You have command of a squad of recruits and bravos who will help with missions."
-    },
-    {
-      "minrank": 4,
-      "name": "High Command",
-      "description": "You have command of several squads, each commanded by a captain who execute your orders. Additionally, potential employers actively seek you out, and you are empowered to accept or deny contracts without cosulting higher ups. Just remember that you have to pay your troops."
+      "name": "Grit",
+      "description": "You've been through hell, and are quite sure you can do it again. You gain the Tough feat."
     }
   ]
 }

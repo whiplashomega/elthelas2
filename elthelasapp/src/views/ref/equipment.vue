@@ -49,7 +49,7 @@
           Fantasy gaming worlds are a vast tapestry made up of many different cultures, each with its own technology level. For this reason, adventurers have access to a variety of armor types, ranging from leather armor to chain mail to costly plate armor, with several other kinds of armor in between. The Armor table collects the most commonly available types of armor found in the game and separates them into three categories: light armor, medium armor, and heavy armor. Many warriors supplement their armor with a shield.
         </p>
         <p>
-          The Armor table shows the cost, weight, and other properties of the common types of armor worn in fantasy gaming worlds.
+          The Armor table shows the cost, weight, and other properties of the common types of armor worn in fantasy gaming worlds. Not all potential armor types are listed here. However, existing armor types can be easily reflavored. For example, Brigandine or Llamelar armors would use the same statistics as Scale armors.
         </p>
         <b-row>
           <b-col md="6"></b-col>
@@ -191,6 +191,9 @@
             </tr>
           </tbody>
         </table>
+        <p>
+          * When you use a shield as a weapon the bonus it provides to your AC is reduced by 1.
+        </p>
         <h4>Weapon Proficiency</h4>
         <p>
           Your race, class, and feats can grant you proficiency with certain weapons or categories of weapons. The two categories are simple and martial. Most people can use simple weapons with proficiency. These weapons include clubs, maces, and other weapons often found in the hands of commoners. Martial weapons, including swords, axes, and polearms, require more specialized training to use effectively. Most warriors use martial weapons because these weapons put their fighting style and training to best use.
@@ -207,28 +210,29 @@
             <tr><th>Property</th><th>Effect Cost</th><th>Effect</th></tr>
           </thead>
           <tbody>
-            <tr><td>Finesse</td><td>1</td><td>Can use your choice of dexterity or strength for the attack and damage rolls with this weapon.</td></tr>
-            <tr><td>Ranged</td><td>0</td><td>Attacks with this weapon are made with disadvantage when within 5 ft of a hostile character. You use dexterity for attack and damage rolls with this weapon.</td></tr>
             <tr><td>Ammunition</td><td>0</td><td>This weapon requires ammunition of an appropriate type in order to be used.</td></tr>
-            <tr><td>Versatile</td><td>1/2 the increase in average damage (so 1d6 to 1d8 costs 0.5 pts, 2d4 to 2d6 costs 1 pt)</td><td>This weapon uses a damage die one size larger when wielded in two hands. 1d4 becomes 1d6, 1d6 becomes 1d8, 1d8 becomes 1d10, and 1d10 becomes 1d12. Similarly 2d4 becomes 2d6, 2d6 becomes 2d8, 2d8 becomes 2d10, and 2d10 becomes 2d12.</td></tr>
-            <tr><td>Heavy</td><td>-0.5</td><td>This weapon is too large and unwieldy for small characters to use effectively, and they have disadvantage on attack rolls while using it.</td></tr>
-            <tr><td>Two-handed</td><td>-1</td><td>This weapon requires 2 hands to wield effectively</td></tr>
-            <tr><td>Light</td><td>0.5</td><td>This weapon is light and well balanced enough to use one in each hand.</td></tr>
-            <tr><td>Thrown</td><td>0</td><td>This weapon can be used to make a ranged attack by throwing it.</td></tr>
-            <tr><td>Knock down</td><td>1</td><td>Once per turn, after hitting an opponent with this weapon you can choose to attempt to knock them down with it. If you do so, make a strength (athletics) check opposed by either a strength (athletics) or a dexterity (acrobatics) check by the opponent. On a success you knock the opponent prone.</td></tr>
-            <tr><td>Brutal</td><td>1</td><td>This weapon does one extra die of its damage type on a critical hit. So a weapon that does 2d6 damage would deal 5d6 damage on a critical hit, and a weapon that does 1d12 damage would do 3d12 damage on a critical hit. This stacks with the Brutal Critical feature.</td></tr>
-            <tr><td>Grapple</td><td>1</td><td>Once per turn, this weapon has the ability to entangle a foe, preventing them from moving. After hitting an opponent with this weapon you can choose to make a strength (athletics) check opposed by either a strength (athletics) or dexterity (acrobatics) check by the opponent. On a success the target is grappled. While the target is grappled in this way you cannot use the weapon to attack until you release the grapple, and if you drop the weapon the grapple is released automatically.</td></tr>
-            <tr><td>Loading</td><td>-1</td><td>This weapon takes time to load and can only be used to make 1 attack per round.</td></tr>
-            <tr><td>Net special</td><td>5</td><td>When you hit a target with this weapon they are restrained. The target can make a strength (athletics) check or a dexterity (acrobatics) check as an action with a DC of 10 to escape the net.</td></tr>
-            <tr><td>Concealable</td><td>0.5</td><td>This weapon is easily concealed in a pocket, boot, or other unobtrusive place such that it is not obvious without a bodily search.</td></tr>
-            <tr><td>STR 13 Required</td><td>-2</td><td>This weapon cannot be wielded unless the user has a strength score of at least 13.</td></tr>
+            <tr><td>Armor</td><td>1.5</td><td>This weapon is also armor, or is part of a suit of armor.</td></tr>
             <tr><td>Armor piercing</td><td>1.5</td><td>Once per turn, when you hit an opponent with this weapon you can damage any manufactured armor that they are wearing, reducing it's AC by 1. If the AC is reduced to 10, the armor is destroyed (or 0 in the case of a shield).</td></tr>
             <tr><td>Awkward</td><td>-1</td><td>This weapon is unwieldy at close range. Attacks with this weapon have disadvantage to hit opponents within 5 ft.</td></tr>
-            <tr><td>Poison</td><td>1.5</td><td>This weapon's ammunition is coated with simple poisons. Those hit by this weapon must make a DC 12 Constitution save or suffer the poisoned condition for one round.</td></tr>
+            <tr><td>Brutal</td><td>1</td><td>This weapon does one extra die of its damage type on a critical hit. So a weapon that does 2d6 damage would deal 5d6 damage on a critical hit, and a weapon that does 1d12 damage would do 3d12 damage on a critical hit. This stacks with the Brutal Critical feature.</td></tr>
             <tr><td>Common</td><td>0.5</td><td>This weapon is exceedingly common and generally seen as a tool by figures of authority, rather than a weapon.</td></tr>
+            <tr><td>Concealable</td><td>0.5</td><td>This weapon is easily concealed in a pocket, boot, or other unobtrusive place such that it is not obvious without a bodily search.</td></tr>
+            <tr><td>Finesse</td><td>1</td><td>Can use your choice of dexterity or strength for the attack and damage rolls with this weapon.</td></tr>
+            <tr><td>Grapple</td><td>1</td><td>Once per turn, this weapon has the ability to entangle a foe, preventing them from moving. After hitting an opponent with this weapon you can choose to make a strength (athletics) check opposed by either a strength (athletics) or dexterity (acrobatics) check by the opponent. On a success the target is grappled. While the target is grappled in this way you cannot use the weapon to attack until you release the grapple, and if you drop the weapon the grapple is released automatically.</td></tr>
+            <tr><td>Heavy</td><td>-0.5</td><td>This weapon is too large and unwieldy for small characters to use effectively, and they have disadvantage on attack rolls while using it.</td></tr>
+            <tr><td>Knock down</td><td>1</td><td>Once per turn, after hitting an opponent with this weapon you can choose to attempt to knock them down with it. If you do so, make a strength (athletics) check opposed by either a strength (athletics) or a dexterity (acrobatics) check by the opponent. On a success you knock the opponent prone.</td></tr>
+            <tr><td>Light</td><td>1</td><td>This weapon is light and well balanced enough to use one in each hand.</td></tr>
+            <tr><td>Loading</td><td>-1</td><td>This weapon takes time to load and can only be used to make 1 attack per round.</td></tr>
+            <tr><td>Net special</td><td>4.5</td><td>When you hit a target with this weapon they are restrained. The target can make a strength (athletics) check or a dexterity (acrobatics) check as an action with a DC of 10 to escape the net.</td></tr>
+            <tr><td>Poison</td><td>2</td><td>This weapon's ammunition is coated with simple poisons. Those hit by this weapon must make a DC 12 Constitution save or suffer the poisoned condition for one round.</td></tr>
+            <tr><td>Polearm</td><td>0.5</td><td>This weapon is a polearm, and is affected by feats or abilities that require polearms.</td></tr>
+            <tr><td>Ranged</td><td>0</td><td>Attacks with this weapon are made with disadvantage when within 5 ft of a hostile character. You use dexterity for attack and damage rolls with this weapon.</td></tr>
+            <tr><td>Returning</td><td>1.5</td><td>This weapon returns to your hand when thrown as long as nothing prevents it from doing so.</td></tr>
+            <tr><td>STR 13 Required</td><td>-2</td><td>This weapon cannot be wielded unless the user has a strength score of at least 13.</td></tr>
+            <tr><td>Thrown</td><td>0</td><td>This weapon can be used to make a ranged attack by throwing it.</td></tr>
+            <tr><td>Two-handed</td><td>-1</td><td>This weapon requires 2 hands to wield effectively</td></tr>
+            <tr><td>Versatile</td><td>1/2 the increase in average damage (so 1d6 to 1d8 costs 0.5 pts, 2d4 to 2d6 costs 1 pt)</td><td>This weapon uses a damage die one size larger when wielded in two hands. 1d4 becomes 1d6, 1d6 becomes 1d8, 1d8 becomes 1d10, and 1d10 becomes 1d12. Similarly 2d4 becomes 2d6, 2d6 becomes 2d8, 2d8 becomes 2d10, and 2d10 becomes 2d12.</td></tr>
             <tr><td>Versatile Damage</td><td>0.5</td><td>This weapon can attack in different ways, doing different damage types depending on how it is used.</td></tr>
-            <tr><td>Returning</td><td>2</td><td>This weapon returns to your hand when thrown as long as nothing prevents it from doing so.</td></tr>
-            <tr><td>Armor</td><td>2</td><td>This weapon is also armor, or is part of a suit of armor.</td></tr>
           </tbody>
         </table>
         <h4>Improvised Weapons</h4>

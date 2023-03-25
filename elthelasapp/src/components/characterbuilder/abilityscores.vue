@@ -8,33 +8,33 @@
         <tbody>
           <tr>
             <th>STR</th><td>{{ getStatTotal(0) }}</td>
-            <td><button @click="rollCheck(getStatMod(0))"><span v-if="getStatMod(0) > -1">+</span>{{ getStatMod(0) }}</button></td>
-            <td><button @click="rollCheck(getSaveMod(0))"><span v-if="getSaveMod(0) > -1">+</span>{{ getSaveMod(0) }}</button></td>
+            <td><button @click="rollCheck(getStatMod(0))" class="noprintbutton"><span v-if="getStatMod(0) > -1">+</span>{{ getStatMod(0) }}</button></td>
+            <td><button @click="rollCheck(getSaveMod(0))" class="noprintbutton"><span v-if="getSaveMod(0) > -1">+</span>{{ getSaveMod(0) }}</button></td>
           </tr>
           <tr>
             <th>DEX</th><td>{{ getStatTotal(1) }}</td>
-            <td><button @click="rollCheck(getStatMod(1))"><span v-if="getStatMod(1) > -1">+</span>{{ getStatMod(1) }}</button></td>
-            <td><button @click="rollCheck(getSaveMod(1))"><span v-if="getSaveMod(1) > -1">+</span>{{ getSaveMod(1) }}</button></td>
+            <td><button @click="rollCheck(getStatMod(1))" class="noprintbutton"><span v-if="getStatMod(1) > -1">+</span>{{ getStatMod(1) }}</button></td>
+            <td><button @click="rollCheck(getSaveMod(1))" class="noprintbutton"><span v-if="getSaveMod(1) > -1">+</span>{{ getSaveMod(1) }}</button></td>
           </tr>
           <tr>
             <th>CON</th><td>{{ getStatTotal(2) }}</td>
-            <td><button @click="rollCheck(getStatMod(2))"><span v-if="getStatMod(2) > -1">+</span>{{ getStatMod(2) }}</button></td>
-            <td><button @click="rollCheck(getSaveMod(2))"><span v-if="getSaveMod(2) > -1">+</span>{{ getSaveMod(2) }}</button></td>
+            <td><button @click="rollCheck(getStatMod(2))" class="noprintbutton"><span v-if="getStatMod(2) > -1">+</span>{{ getStatMod(2) }}</button></td>
+            <td><button @click="rollCheck(getSaveMod(2))" class="noprintbutton"><span v-if="getSaveMod(2) > -1">+</span>{{ getSaveMod(2) }}</button></td>
           </tr>
           <tr>
             <th>INT</th><td>{{ getStatTotal(3) }}</td>
-            <td><button @click="rollCheck(getStatMod(3))"><span v-if="getStatMod(3) > -1">+</span>{{ getStatMod(3) }}</button></td>
-            <td><button @click="rollCheck(getSaveMod(3))"><span v-if="getSaveMod(3) > -1">+</span>{{ getSaveMod(3) }}</button></td>
+            <td><button @click="rollCheck(getStatMod(3))" class="noprintbutton"><span v-if="getStatMod(3) > -1">+</span>{{ getStatMod(3) }}</button></td>
+            <td><button @click="rollCheck(getSaveMod(3))" class="noprintbutton"><span v-if="getSaveMod(3) > -1">+</span>{{ getSaveMod(3) }}</button></td>
           </tr>
           <tr>
             <th>WIS</th><td>{{ getStatTotal(4) }}</td>
-            <td><button @click="rollCheck(getStatMod(4))"><span v-if="getStatMod(4) > -1">+</span>{{ getStatMod(4) }}</button></td>
-            <td><button @click="rollCheck(getSaveMod(4))"><span v-if="getSaveMod(4) > -1">+</span>{{ getSaveMod(4) }}</button></td>
+            <td><button @click="rollCheck(getStatMod(4))" class="noprintbutton"><span v-if="getStatMod(4) > -1">+</span>{{ getStatMod(4) }}</button></td>
+            <td><button @click="rollCheck(getSaveMod(4))" class="noprintbutton"><span v-if="getSaveMod(4) > -1">+</span>{{ getSaveMod(4) }}</button></td>
           </tr>
           <tr>
             <th>CHA</th><td>{{ getStatTotal(5) }}</td>
-            <td><button @click="rollCheck(getStatMod(5))"><span v-if="getStatMod(5) > -1">+</span>{{ getStatMod(5) }}</button></td>
-            <td><button @click="rollCheck(getSaveMod(5))"><span v-if="getSaveMod(5) > -1">+</span>{{ getSaveMod(5) }}</button></td>
+            <td><button @click="rollCheck(getStatMod(5))" class="noprintbutton"><span v-if="getStatMod(5) > -1">+</span>{{ getStatMod(5) }}</button></td>
+            <td><button @click="rollCheck(getSaveMod(5))" class="noprintbutton"><span v-if="getSaveMod(5) > -1">+</span>{{ getSaveMod(5) }}</button></td>
           </tr>
         </tbody>
       </table>

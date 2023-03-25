@@ -21,18 +21,22 @@
     </p>
     <h4>Languages</h4>
     <p>
-      Some backgrounds also allow characters to learn additional languages beyond those given by race.
+      Each background allows you to learn one language of your choice.
+    </p>
+    <h4>Feat</h4>
+    <p>
+      Each background provides 1 feat available to level 1 characters. Alternatively you can take a level 1 feat of your choice.
     </p>
     <h4>Equipment</h4>
     <p>
-      Each background provides a package of starting equipment. If you use the optional rule to spend coin on gear, you do not receive the starting equipment from your background.
+      Each background provides a package of starting equipment. Alternatively, you can forgo the starting equipment and spend an extra 50 gp on equipment of your choice.
     </p>
     <h4>Suggested Characteristics</h4>
     <p>
       A background contains suggested personal characteristics based on your background. You can pick characteristics, roll dice to determine them randomly, or use the suggestions as inspiration for characteristics of your own creation. Customizing a Background You might want to tweak some of the features of a background so it better fits your character or the campaign setting. To customize a background, you can replace one feature with any other one, choose any two skills, and choose a total of two tool proficiencies or languages from the sample backgrounds. You can either use the equipment package from your background or spend coin on gear as described in the equipment section. (If you spend coin, you can't also take the equipment package suggested for your class.) Finally, choose two personality traits, one ideal, one bond, and one flaw. If you can't find a feature that matches your desired background, work with your GM to create one.
     </p>
-    <div  v-if="statics.backgrounds">
-      <div v-for="background in statics.backgrounds" :key="background.name"
+    <div  v-if="statics.backgroundsv2">
+      <div v-for="background in statics.backgroundsv2" :key="background.name"
           class="card">
         <h3 class="card-title">{{ background.name }}<button type="button" class="btn btn-primary" style="float:right;" @click="background.isCollapsed = !background.isCollapsed">
           <span v-if="!background.isCollapsed">&#x25B2;</span><span v-if="background.isCollapsed">&#x25BC;</span>
@@ -42,15 +46,15 @@
           <p v-if="background.skills">
             <strong>Skills: </strong>{{ background.skills.join(', ') }}<br />
             <strong>Tools: </strong>{{ background.tools.join(', ') }}<span v-if="background.tools.length === 0">None</span><br />
-            <span v-if="background.languages"><strong>Languages: </strong>{{ background.languages }} of your choice</span>
+            <span v-if="background.languages"><strong>Languages: </strong>{{ background.languages }} of your choice</span><br />
+            <strong>Feat: </strong>{{background.feature }}
+          </p>
+          <p>
+            {{background.description}}
           </p>
           <p>
             <strong>Equipment: </strong><span v-html="background.equipment"></span>
           </p>
-          <h4 v-if="background.feature">Feature: {{ background.feature.name }}</h4>
-          <div v-if="background.feature" v-html="background.feature.description"></div>
-          <h4>Suggested Characteristics</h4>
-          <div v-if="background.characteristics" v-html="background.characteristics"></div>
         </div>
       </div>
     </div>

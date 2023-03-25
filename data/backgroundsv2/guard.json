@@ -1,0 +1,12 @@
+{
+  "name": "Guard",
+  "description": "You have served the community where you grew up, standing as its first line of defense against crime. You aren't a soldier, directing your gaze outward at possible enemies. Instead, your service to your hometown was to help police its populace, protecting the citizenry from lawbreakers and malefactors of every stripe.\n\nEven if you're not city-born or city-bred, this background can describe your early years as a member of law enforcement. Most settlements of any size have their own constables and police forces, and even smaller communities have sheriffs and bailiffs who stand ready to protect their community.",
+  "skills": [
+    "Athletics",
+    "Insight"
+  ],
+  "tools": ["Gaming Set of your choice"],
+  "languages": 1,
+  "equipment": "20 Crossbow bolts, gaming set, hooded lantern, light crossbow, manacles, quiver, spear, traveler's clothes, 12 gp",
+  "feature": "Alert"
+}

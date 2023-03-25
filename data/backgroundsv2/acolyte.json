@@ -2,14 +2,10 @@
   "name": "Acolyte",
   "description": "You have spent your life in the service o f a temple to a specific god or pantheon o f gods. You act as an intermediary between the realm o f the holy and the mortal world, performing sacred rites and offering sacrifices in order to conduct worshipers into the presence o f the divine. You are not necessarily a cleric-performing sacred rites is not the same thing as channeling divine power.\n\nChoose a god, a pantheon of gods, or some other quasi-divine being, and work with your DM to detail the nature o f your religious service. Were you a lesser functionary in a temple, raised from childhood to assist the priests in the sacred rites? Or were you a high priest who suddenly experienced a call to serve your god in a different way? Perhaps you were the leader o f a small cult outside of any established temple structure, or even an occult group that served a fiendish master that you now deny.",
   "skills": ["Insight", "Religion"],
-  "tools": [],
-  "languages": 2,
-  "equipment": "A holy symbol (a gift to you when you entered the priesthood), a prayer book or prayer wheel, 5 sticks of incense, vestments, a set of common clothes, and a belt pouch containing 15 gp",
+  "tools": ["Calligrapher's supplies"],
+  "languages": 1,
+  "equipment": "Book (Prayers), Calligrapher's supplies, holy symbol, parchment (10 sheets) robe, 3 gp",
   "equipmentItems": [
   ],
-  "feature": {
-    "name": "Faction Membership",
-    "description": "You start as a member of the Church of a God faction related to your god, and have the Acolyte rank within that faction."
-  },
-  "characteristics": "Acolytes are shaped by their experience in temples or other religious communities. Their study of the history and tenets of their faith and their relationships to temples, shrines, or hierarchies affect their mannerisms and ideals. Their flaws might be some hidden hypocrisy or heretical idea, or an ideal or bond taken to an extreme."
+  "feature": "Magic Initiate"
 }

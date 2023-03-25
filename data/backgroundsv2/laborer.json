@@ -1,0 +1,12 @@
+{
+  "name": "Laborer",
+  "description": "You have worked the mines since puberty.",
+  "skills": [
+    "Athletics",
+    "Survival"
+  ],
+  "tools": ["Gaming Set"],
+  "languages": 1,
+  "equipment": "Bullseye Lantern, Mess Kit, Common Clothes, Oil (1 flask), Handaxe, shovel, Light Hammer, Waterskin, Gaming Set, 15 gp",
+  "feature": "Tough"
+}

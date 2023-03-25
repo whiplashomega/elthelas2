@@ -31,12 +31,47 @@
     "kelas",
     "gulutheim"
   ],
-  "tenets": [
+  "rules": [
     "Defend the weak at all costs",
     "No cause is without hope",
     "Evil must be destroyed",
     "Never choose the lesser evil"
   ],
-  "level1": "**Hope springs eternal.** Whenever you are reduced to 0 hit points you can roll a d10 + your level and heal by that many hit points.  After you use this feature you cannot use it again until after a short or long rest.",
-  "level10": "**First Strike of the Faithful.** You have advantage on initiative checks."
+  "ranks": [
+    {
+      "index": 0,
+      "name": "Brave",
+      "minDisposition": 2,
+      "description": "The Champions of Cora have recognized you for your bravery, and provided you with provisional membership into the order, as well as a blessing from Cora."
+    },
+    {
+      "index": 1,
+      "name": "Fearless",
+      "minDisposition": 6,
+      "description": "The blessings of Cora have been placed upon you, and you are prepared to defend the weak even against impossible odds."
+    },
+    {
+      "index": 2,
+      "name": "Champion",
+      "minDisposition": 10,
+      "description": "You have become reknowned for your bravery and selflessness. Cora is your guiding light, and it is the wicked who shall know fear, not the weak."
+    }
+  ],
+  "features": [
+    {
+      "minrank": 0,
+      "name": "Hope Springs Eternal",
+      "description": "Whenever you are reduced to 0 hit points you can roll a d10 + your level and heal by that many hit points.  After you use this feature you cannot use it again until after a short or long rest."
+    },
+    {
+      "minrank": 1,
+      "name": "Fearless",
+      "description": "You are immune to fear"
+    },
+    {
+      "minrank": 2,
+      "name": "First Strike of the Faithful",
+      "description": "You have advantage on initiative checks."
+    }
+  ]
 }

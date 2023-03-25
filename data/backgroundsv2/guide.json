@@ -1,0 +1,12 @@
+{
+  "name": "Guide",
+  "description": "You came of age in the outdoors, far from settled lands. Your home? Anywhere you chose to unfurl your bedroll. There are wonders on the frontier-strange monsters, prestine forests, and winding rivers-and you learned to fend for yourself as you explored them.",
+  "skills": [
+    "Stealth",
+    "Survival"
+  ],
+  "tools": ["Cartographer's tools"],
+  "languages": 1,
+  "equipment": "Arrow (20), bedroll, cartographer's tools, fishing tackle, quiver, shortbow, tent, traveler's clothes, 2 gp.",
+  "feature": "Alert"
+}

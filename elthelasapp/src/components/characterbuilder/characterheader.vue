@@ -3,11 +3,11 @@
     <div class="col-sm-9">
       <!-- Character, Player, Class -->
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-6">
           <input type="text" class="charsheet-text" v-model="character.name">
           Character Name
         </div>
-        <div class="col-sm-6">
+        <div class="col-6">
           <input type="text" class="charsheet-text" v-model="character.player">
           Player
         </div>
@@ -24,7 +24,7 @@
       </div>
       <!-- Race, Background, Alignment -->
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-6">
           <select @change="setRaceDefaults()" v-model="character.race" class="charsheet-text">
             <option :value="character.race">{{ character.race.singular }}</option>
             <option v-for="race in races" :key="race.id" :value="race">
@@ -36,14 +36,14 @@
           </div>
           Race
         </div>
-        <div class="col-sm-6">
+        <div class="col-6">
           <div class="charsheet-text">{{ classtext }}</div>
           Class(es)
         </div>
       </div>
       <!-- Faction, Home Country, Home Town -->
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-4">
           <select class="charsheet-text" v-model="character.faction">
             <option :value="character.faction">{{ character.faction.title }}</option>
             <option v-for="faction in factions" :value="faction"
@@ -51,7 +51,7 @@
           </select>
           Faction
         </div>
-        <div class="col-sm-4">
+        <div class="col-4">
           <input list="countrylist" type="text"
                  class="charsheet-text" v-model="character.homecountry">
           Home Country
@@ -60,7 +60,7 @@
           <option :value="nation"
                   v-for="nation in nations" :key="nation">{{ nation }}</option>
         </datalist>
-        <div class="col-sm-4">
+        <div class="col-4">
           <input list="citylist" type="text"
                  class="charsheet-text" v-model="character.hometown">
           Home Town

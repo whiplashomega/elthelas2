@@ -10,7 +10,7 @@
       <button class="btn btn-sm btn-primary print-hide" type="button" @click="addInjury">+</button>
     </div>
     <!-- Death Saves -->
-    <div class="charsheet-static">
+    <div class="charsheet-static print-hide">
       <h4>Death Saves</h4>
       Sucesses: <input type="number" class="charsheet-num" v-model="character.deathsuccess" /><br />
       Failures: <input type="number" class="charsheet-num" v-model="character.deathfail" />

@@ -1,0 +1,51 @@
+{
+  "id": "royalguard",
+  "title": "Royal Guard",
+  "description": "You are a member of an elite order of knights dedicated to the defense of a ruler, their family, and closest confidants. Some notable examples of Royal Guard organizations are the Silver Dragon Knights of Dera'Dragorim and the Dormanian Imperial Guard in Dormania.",
+  "nations": [
+  ],
+  "cities": [
+  ],
+  "rules": [
+    "I must abide no threat to the King's life, or the life of members of his family or court.",
+    "I must maintain vigilance in my duty at all times. Enforcing the will of the king.",
+    "The kingdom is an extension of the king, and must be protected from harm."
+  ],
+  "ranks": [
+    {
+      "index": 0,
+      "name": "Squire",
+      "minDisposition": 2,
+      "description": "You have been accepted by a knight of the order for training, in return for service."
+    },
+    {
+      "index": 1,
+      "name": "Knight",
+      "minDisposition": 4,
+      "description": "You have been recognized for your skill and valor, and have been granted title as a knight."
+    },
+    {
+      "index": 2,
+      "name": "High Knight",
+      "minDisposition": 8,
+      "description": "You are known to be reliable and capable, and worthy of the trust of the King. You have been assigned to his personal bodyguard, or to execute missions of high importance to the throne."
+    }
+  ],
+  "features": [
+    {
+      "minrank": 0,
+      "name": "Equipped for Battle",
+      "description": "Your patron knight is willing to take a risk on you and give you 100 gp worth of combat equipment."
+    },
+    {
+      "minrank": 1,
+      "name": "Guard the Door",
+      "description": "You gain proficiency in the perception skill.  If you are already proficient you gain expertise instead."
+    },
+    {
+      "minrank": 2,
+      "name": "Guard the Body",
+      "description": " You gain the protection fighting style, if you already have the protection fighting style choose another fighting style from your class list.  Also you get a +1 bonus to AC while wearing a shield and you have an adjacent ally."
+    }
+  ]
+}

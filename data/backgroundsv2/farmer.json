@@ -1,0 +1,14 @@
+{
+  "name": "Farmer",
+  "description": "You grew up close to the land. Years tending animals and cultivating the earth rewarded you with patience and good health. You have a keen appreciation for nature's bounty alongside a healthy respect for nature's wrath.",
+  "skills": [
+    "Animal Handling",
+    "Nature"
+  ],
+  "tools": [
+    "Carpenter's tools"
+  ],
+  "languages": 1,
+  "equipment": "Carpenter's tools, sickle, healer's kit, traveler's clothes, iron pot, shovel, 23 gp",
+  "feature": "Tough"
+}

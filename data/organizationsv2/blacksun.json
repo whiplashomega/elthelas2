@@ -1,0 +1,154 @@
+{
+  "id": "blacksun",
+  "title": "Black Sun",
+  "description": "The Black Sun is a loose international organization of thieves, cutthroats, assassins, and bandits.  They have a presence in most major cities throughout the world, however there is no strong central leadership.  Each local branch will typically have it's own guildmaster, and it's own call signs and codes in addition to the more global thieve's cant.  Members who travel can usually expect to find safeharbor in local chapterhouses, but little trust or aid.\n\nSimilarly it is not uncommon for different branches of the Black Sun to work at cross purposes. It is common for branches to be clandestinely payed for espionage work by one government, only for their opponents to pay a different branch for the same work.\n\nMembership in the Black Sun is membership for life, in that if you try and leave or betray the Black Sun they will hunt you down and kill you.",
+  "nations": [
+    "eldoran",
+    "dormania",
+    "gerasalim",
+    "curinor",
+    "kandor",
+    "demalthor",
+    "terron",
+    "malinval",
+    "seran",
+    "degakta",
+    "morrindim",
+    "olda",
+    "shendarel",
+    "deradragorim",
+    "zelfir",
+    "hisrudetan",
+    "sage",
+    "stagenheim",
+    "alfadir",
+    "staelia"
+  ],
+  "cities": [
+    "malidal",
+    "poron",
+    "desadorel",
+    "falak",
+    "farengar",
+    "sreppe",
+    "northport",
+    "strovenguard",
+    "eastguard",
+    "purs",
+    "kaland",
+    "westport",
+    "highhammer",
+    "granitebluff",
+    "curinkeep",
+    "torinhammer",
+    "stromforde",
+    "storval",
+    "aridhem",
+    "sofala",
+    "estapor",
+    "makhol",
+    "forbel",
+    "marinval",
+    "makir",
+    "parakas",
+    "malgeth",
+    "mordaserekhai",
+    "gulutheim",
+    "ochreken",
+    "tenecha",
+    "kimly",
+    "sunra",
+    "alados",
+    "morrind",
+    "diya",
+    "punbar",
+    "barak",
+    "swava",
+    "milan",
+    "loridesa",
+    "dima",
+    "vasha",
+    "vashna",
+    "delan",
+    "portsmith",
+    "tarum",
+    "shodal",
+    "sage",
+    "craftheim",
+    "gnoma",
+    "ifritan",
+    "atyrao",
+    "fradae",
+    "damat",
+    "dieel",
+    "kelas",
+    "instar",
+    "pelgan",
+    "mandon",
+    "zelfin"
+  ],
+  "rules": [
+    "Never betray the Black Sun.",
+    "Profit by any means.",
+    "Contribute to the Guild's coffers regularly"
+  ],
+  "ranks": [
+    {
+      "index": 0,
+      "name": "Associate",
+      "description": "You get chosen for the most dangerously stupid missions, and are the first to be blamed when they go wrong, but you are part of the team.",
+      "minDisposition": 1
+    },
+    {
+      "index": 1,
+      "name": "Footpad",
+      "description": "You've been pulled off the high risk missions to do the even riskier missions, but at least they are willing to train you now.",
+      "minDisposition": 4
+    },
+    {
+      "index": 2,
+      "name": "Black Cap",
+      "description": "You've been invited to join the real thieves in the conference room.",
+      "minDisposition": 6
+    },
+    {
+      "index": 3,
+      "name": "Operative",
+      "description": "You're good, and you know it. No one else trusts you, but for good reason.",
+      "minDisposition": 8
+    },
+    {
+      "index": 4,
+      "name": "Master",
+      "description": "You've seen, and stolen, it all. You're still expendable, but at least now you know it.",
+      "minDisposition": 10
+    }
+  ],
+  "features": [
+    {
+      "minrank": 0,
+      "name": "Access",
+      "description": "You have access to guild merchants and fences who can sell you black market goods or purchase your stolen goods. You also gain access to any... helpful... members of the local watch who may be willing to look the other way for properly expressed gratitude."
+    },
+    {
+      "minrank": 1,
+      "name": "Pickpocket",
+      "description": "You gain proficiency in the slight of hand skill, if you already have proficiency, gain proficiency in a skill of your choice from the following list: acrobatics, athletics, deception, intimidation, investigation, perception, stealth"
+    },
+    {
+      "minrank": 2,
+      "name": "Tools of the Trade",
+      "description": "You gain a set of magical thieves' tools. You get a +1 bonus to any thieves' tools check when you are using your magical tools."
+    },
+    {
+      "minrank": 3,
+      "name": "Contacts",
+      "description": "You are trusted with the lists of contacts to other Black Suns guild houses. You can track down the guild house in any town you go to, and are welcomed there (as much as thieves' ever are) and they can provide you with information on the local situation or leads to quests or marks."
+    },
+    {
+      "minrank": 4,
+      "name": "Mastery",
+      "description": "You are the undisputed master of your trade, you gain expertise in a skill or tool of your choice with which you are proficient."
+    }
+  ]
+}

@@ -17,9 +17,16 @@
     </div>
     <!-- Feats -->
     <div class="charsheet-static">
-      Feats/ASIs {{ numASI }}
+      Feats/ASIs {{ numASI }}<br />
       <div v-for="(feat, index) in character.feats" :key="index" style="clear:both;" class="row">
-        <div class="col-10">
+        <div v-if="index == 0" class="col-10">
+          <select class="charsheet-text" v-model="character.feats[index]">
+            <option :value="character.feats[index]">{{ character.feats[index].name }}</option>
+            <option v-for="feat in lvl1feats" :key="feat.name"
+                    :value="feat" :title="feat.description">{{ feat.name }}</option>
+          </select>          
+        </div>
+        <div class="col-10" v-else>
           <select class="charsheet-text" v-model="character.feats[index]">
             <option :value="character.feats[index]">{{ character.feats[index].name }}</option>
             <option v-for="feat in featsort" :key="feat.name"

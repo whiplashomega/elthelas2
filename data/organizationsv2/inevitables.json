@@ -1,0 +1,65 @@
+{
+  "id": "inevitables",
+  "title": "The Inevitables",
+  "description": "The Inevitables are a group of bounty hunters that emulate the true Inevitables, immortal machines created by Tock to hunt those who break their oaths, or seek to destroy the most basic tenets of order in the universe, like mortality and the immutability of time. The lowest ranks of the Inevitables serve as thief takers, hunting those who have broken the law on behalf of local authorities, the upper echelons of the society seek greater prey however. Creatures that seek to break the bonds of mortality, such as a lich, or mortals that seek to ascend to godhood face the wrath of the mortal inevitables.\n\nThe Inevitables are an organization shrouded in mystery. They do not report to governments or other earthly entities but to the celestial constructs themselves. Their strict interpretation of law and order often makes even kings and sherriffs uncomfortable.",
+  "nations": [
+    
+  ],
+  "cities": [
+    
+  ],
+  "rules": [
+    "The 5 most important laws of order are be strickly enforced. These laws are: \n\n* The law of oaths - That all oaths are inevitably kept.\n* The law of Justice - That all who escape justice will inevitably be face it.\n* The law of Death - That all who live will Inevitably die.\n* The law of Godhood - That all who attempt to attain Godhood shall Inevitably fail.\n* The law of Space and Time - That all who attempt to Alter Fate will inevitably meet that same fate.",
+    "Your goals are Inevitable, nothing will stop the goal from being fulfilled.",
+    "Those who are set to be punished, whether they are to be captured or killed, will meet that exact fate.",
+    "Those who are innocent of any crime cannot be harmed by you, or coerced into crime."
+  ],
+  "ranks": [
+    {
+      "index": 0,
+      "name": "Thief Taker",
+      "minDisposition": 2,
+      "description": "You have been contacted by the Inevitables and granted your first missions as a thief taker and bounty hunter."
+    },
+    {
+      "index": 1,
+      "name": "Punisher",
+      "minDisposition": 4,
+      "description": "You have been recognized for your skill and loyalty with more difficult missions, and gifts from the Inevitables."
+    },
+    {
+      "index": 2,
+      "name": "Herald of Mechanus",
+      "minDisposition": 8,
+      "description": "You have reached the upper ranks of the Inevitables, and are feared by criminals, rogue magi, and other agents of chaos."
+    },
+    {
+      "index": 3,
+      "name": "Inevitable",
+      "minDisposition": 12,
+      "description": "You are inevitable."
+    }
+  ],
+  "features": [
+    {
+      "minrank": 0,
+      "name": "Equipped for Battle",
+      "description": "Your patron knight is willing to take a risk on you and give you 100 gp worth of combat equipment."
+    },
+    {
+      "minrank": 1,
+      "name": "Robotic implants",
+      "description": " You gain darkvision up to 60ft. If you already have darkvision, the vision distance is doubled."
+    },
+    {
+      "minrank": 2,
+      "name": "Hunt the Lawbreaker",
+      "description": "You can cast Locate Creature once a day without expending a spell slot."
+    },
+    {
+      "minrank": 3,
+      "name": "Cybernetic Enhancement",
+      "description": "Your physical capabilities are enhanced by cybernetic implants in your arms and legs. You gain proficiency in the athletics and acrobatics skills. If you are already proficient, you gain expertise instead."
+    }
+  ]
+}

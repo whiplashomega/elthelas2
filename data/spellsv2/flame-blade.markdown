@@ -14,7 +14,7 @@ tags: [druid, sorcerer, eldritchknight, level2, evocation]
 
 **Components**: V, S, M (leaf of sumac)
 
-**Duration**: Concentration, up to 10 minutes
+**Duration**: 10 minutes
 
 **Saving Throw**:
 

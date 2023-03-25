@@ -328,10 +328,10 @@
         </p>
         <h5>Two-Weapon Fighting</h5>
         <p>
-          When you take the Attack action and attack with a light melee weapon that you're holding in one hand, you can use a bonus action to attack with a different light melee weapon that you're holding in the other hand. You don't add your ability modifier to the damage of the bonus attack, unless that modifier is negative.
+          When you take the Attack action and attack with a light weapon that you're holding in one hand, you can make one extra attack as part of the same Action. That extra attack must be made with a different Light weapon in the other hand, and you don't add your ability modifier to the extra attacks damage. You can make this extra attack only once on each of your turns.
         </p>
         <p>
-          If either weapon has the thrown property, you can throw the weapon, instead of making a melee attack with it.
+          For example, if you take the attack action on your turn and have a shortsword in one hand and a dagger in the other-each of which has the light property-you can make one attack with each weapon, but you don't add your strength or dexterity modifier to the damage roll of the second weapon.
         </p>
         <h4>Contests in Combat</h4>
         <p>
@@ -613,19 +613,31 @@
         <h4>Grappled</h4>
         <ul>
           <li>Your speed becomes 0 and you cannot benefit from any bonus to your speed.</li>
-          <li>
-            This condition ends if the grappler is incapacitated or if an effect removes you from the reach of the grappler or grappling effect.
-          </li>
+          <li>You have disadvantage on attack rolls against any target other than the grappler.</li>
+          <li>The grappler can drag or carry you, but the grappler suffers the Slowed Condition while moving, unless you are at two or more sizes smaller than the grappler.</li>
+          <li>While grappled, you can make a dexterity (acrobatics) or strength (athletics) check against the grapples escape DC or opposed by the grappler's strength (athletics) at the end of each of your turns, ending the condition on a success. The condition also ends if the grappler is incapacitated or if something moves you outside the grapple's range without using your speed.</li>
+        </ul>
+        <h4>Hidden</h4>
+        <ul>
+          <li>You aren't affected by any effect that requires its target to be seen.</li>
+          <li>If you are Hidden when you roll initiative, you have advantage on the roll.</li>
+          <li>Attack rolls against you have disadvantage, and your attack rolls have advantage.</li>
+          <li>The Condition ends on you immediately after any of the following occurances: you make a sound louder than a whisper, an enemy finds you, you make an attack roll, you cast a spell with a verbal component, or you aren't heavily obscured or behind any cover.</li>
         </ul>
         <h4>Incapacitated</h4>
         <ul>
           <li>You cannot take actions or reactions.</li>
+          <li>Your concentration is broken.</li>
+          <li>You can't speak.</li>
+          <li>If you are incapacitated when you roll initiative, you have disadvantage on the roll.</li>
         </ul>
         <h4>Invisible</h4>
         <ul>
           <li>
             You are impossible to see without the aid of magic or a special sense. For the purpose of hiding, you are heavily obscured. Your location can be detected by any noise you make or any tracks you leave.
           </li>
+          <li>You can't be seen, so you aren't affected by any effect that requires its target to be seen. Any equipment you are wearing or carrying also can't be seen.</li>
+          <li>If you are invisible when you roll initiative, you have advantage on the roll.</li>
           <li>
             Attack rolls against you have disadvantage and your attack rolls have advantage.
           </li>
@@ -669,6 +681,12 @@
           <li>Your speed becomes 0 and you cannot benefit from any bonus to your speed.</li>
           <li>Attack rolls against you have advantage, and your attack rolls have disadvantage.</li>
           <li>You have disadvantage on Dexterity saving throws.</li>
+        </ul>
+        <h4>Slowed</h4>
+        <ul>
+          <li>Limited Movement. You must spend 1 extra foot of movement for every foot you move using your speed.</li>
+          <li>Attack rolls against you have advantage.</li>
+          <li>You have disadvantage on dexterity saving throws.</li>
         </ul>
         <h4>Stunned</h4>
         <ul>

@@ -9,7 +9,7 @@ export default {
     const statics = useStaticsStore();
 
     const { character, level } = storeToRefs(characters);
-    const feats = statics.featsv2;
+    const { featsv2: feats } = storeToRefs(statics);
     const featsort = statics.featv2sort;
     
     const addInjury = characters.addInjury;
@@ -27,8 +27,16 @@ export default {
     };
   },
   computed: {
+    lvl1feats () {
+      return this.feats.filter((a) => {
+      if (!a.prereq.includes("4th level")) {
+        return true;
+      }
+      return  false;
+    });
+    },
     numASI () {
-      var asi = 0;
+      var asi = 1;
       this.character.charclasses.forEach((cl) => {
         if (cl.level >= 4) {
           asi++;

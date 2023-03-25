@@ -40,26 +40,20 @@
     {
       "index": 1,
       "name": "Adept",
-      "minDisposition": 2,
+      "minDisposition": 4,
       "description": "You have proven you are skilled enough to no longer need a mentor."
     },
     {
       "index": 2,
       "name": "Magi",
-      "minDisposition": 4,
+      "minDisposition": 8,
       "description": "You have been recognized as a skilled mage and teacher."
     },
     {
       "index": 3,
       "name": "High Magi",
-      "minDisposition": 6,
+      "minDisposition": 12,
       "description": "Your skill and dedication have been recognized by the college, and other Magi now regularly seek out your guidance and advice."
-    },
-    {
-      "index": 4,
-      "name": "Dean",
-      "minDisposition": 10,
-      "description": "You have been named the Dean of a local college."
     }
   ],
   "features": [
@@ -71,7 +65,7 @@
     {
       "minrank": 1,
       "name": "Practiced Spells",
-      "description": "Learn a cantrip from the wizard, sorcerer, bard, or warlock lists. The casting stat for that cantrip depends on the list you chose it from, intelligence for wizard, charisma for sorcerer, bard, or warlock."
+      "description": "Learn a cantrip from the wizard or sorcerer lists. The casting stat for that cantrip depends on the list you chose it from, intelligence for wizard, charisma for sorcerer."
     },
     {
       "minrank": 2,
@@ -82,11 +76,6 @@
       "minrank": 3,
       "name": "Knowledge Exchange",
       "description": "The Union shares knowledge with you regularly. Every ten days the union magically sends you a random spell scroll of a level you can cast (maximum 5th level) and on your classes spell list. Additionally you are recognized for your skill by most magi you encounter. Your Library Access feature now extends to any library owned or associated with the Union."
-    },
-    {
-      "minrank": 4,
-      "name": "College",
-      "description": "The Union is prepared to fund a college under your leadership. This college provides  you with contacts and income, as well as magi that report directly to you for orders, as well as providing you with the results of their research."
     }
   ]
 }

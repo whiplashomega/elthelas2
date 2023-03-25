@@ -42,11 +42,52 @@
     "vashna",
     "delan"
   ],
-  "tenets": [
+  "rules": [
     "Defend the weak and provide refuge.",
     "Don't start conflicts, finish them.",
     "Provide charity for the poor."
   ],
-  "level1": "**Guardian.** When someone within 5 ft of you makes an attack you can use your reaction to interpose yourself and force them to target you instead.",
-  "level10": "**Magic Refuge.** You can cast the spell Ottiluke's Resilient Sphere 1/day without using a spell slot.  When cast in this way you can only target a willing target."
+  "ranks": [
+    {
+      "index": 0,
+      "name": "Volunteer",
+      "minDisposition": 0,
+      "description": "You have volunteered to aid the order."
+    },
+    {
+      "index": 1,
+      "name": "Squire",
+      "minDisposition": 2,
+      "description": "You have been accepted by a knight of the order for training, in return for service."
+    },
+    {
+      "index": 2,
+      "name": "Knight",
+      "minDisposition": 4,
+      "description": "You have been recognized for your skill and valor, and have been granted title as a knight."
+    },
+    {
+      "index": 3,
+      "name": "Guardian",
+      "minDisposition": 8,
+      "description": "Your reknown in defense of the downtrodden precedes you wherever you go."
+    }
+  ],
+  "features": [
+    {
+      "minrank": 1,
+      "name": "Defense",
+      "description": "You gain proficiency with shields and a +1 Shield with the insignia of Amathera on it."
+    },
+    {
+      "minrank": 2,
+      "name": "Protector",
+      "description": "When gain the protection fighting style. If you already have this fighting style, pick another fighting style of your choice."
+    },
+    {
+      "minrank": 3,
+      "name": "Magic Refuge",
+      "description": "You can cast the spell Ottiluke's Resilient Sphere 1/day without using a spell slot.  When cast in this way you can only target a willing target."
+    }
+  ]
 }

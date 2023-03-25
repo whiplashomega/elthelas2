@@ -31,13 +31,13 @@
     {
       "index": 2,
       "name": "Protector",
-      "minDisposition": 4,
+      "minDisposition": 6,
       "description": "You have ventured into the wilderness and come back alive and with tales to tell."
     },
     {
       "index": 3,
       "name": "Guard Captain",
-      "minDisposition": 6,
+      "minDisposition": 10,
       "description": "You've been places no one else has ever been before, and been recognized for the effort."
     }
   ],
@@ -59,8 +59,8 @@
     },
     {
       "minrank": 3,
-      "name": "Squad",
-      "description": "You have been given leave to recruit a squad of Wilderness Guards from the local population that report to you."
+      "name": "Resistant",
+      "description": "You gain resistance to one damage type of your choice from this list: Fire, Cold, Lightning, Poison, Acid"
     }
   ]
 }

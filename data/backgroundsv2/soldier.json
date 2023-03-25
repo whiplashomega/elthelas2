@@ -6,14 +6,9 @@
     "Intimidation"
   ],
   "tools": [
-    "One type of gaming set",
-    "Vehicles (land)"
+    "One type of gaming set"
   ],
-  "languages": 0,
-  "equipment": "An insignia of rank, a trophy taken from a fallen enemy (a dagger, broken blade, or piece of a banner), a set o f bone dice or deck o f cards, a set of common clothes, and a belt pouch containing 10 gp",
-  "feature": {
-    "name": "Military Rank",
-    "description": "You have a military rank from your career as a soldier. Soldiers loyal to your former military organization still recognize your authority and influence, and they defer to you if they are of a lower rank. You can invoke your rank to exert influence over other soldiers and requisition simple equipment or horses for temporary use. You can also usually gain access to friendly military encampments and fortresses where your rank is recognized."
-  },
-  "characteristics": "The horrors of war combined with the rigid discipline of military service leave their mark on all soldiers, shaping their ideals, creating strong bonds, and often leaving them scarred and vulnerable to fear, shame, and hatred."
+  "languages": 1,
+  "equipment": "Arrow (20), Gaming Set, Healer's Kit, Quiver, Shortbow, Spear, Traveler's Clothes, 14 gp",
+  "feature": "Savage Attacker"
 }

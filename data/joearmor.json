@@ -53,7 +53,7 @@
    "Resistance": "-",
    "Rarity": "Common",
    "Weight": 20,
-   "Cost": 75
+   "Cost": 50
  },
  {
    "Armor": "Scale Hauberk",
@@ -67,7 +67,7 @@
    "Resistance": "-",
    "Rarity": "Common",
    "Weight": 45,
-   "Cost": 150
+   "Cost": 100
  },
  {
    "Armor": "Scale Full Armor",
@@ -81,7 +81,7 @@
    "Resistance": "-",
    "Rarity": "Common",
    "Weight": 60,
-   "Cost": 225
+   "Cost": 150
  },
  {
    "Armor": "Chain Cuirass",
@@ -95,7 +95,7 @@
    "Resistance": "-",
    "Rarity": "Common",
    "Weight": 20,
-   "Cost": 100
+   "Cost": 75
  },
  {
    "Armor": "Chain Hauberk",
@@ -109,7 +109,7 @@
    "Resistance": "-",
    "Rarity": "Common",
    "Weight": 30,
-   "Cost": 200
+   "Cost": 125
  },
  {
    "Armor": "Chain Full Armor",
@@ -123,7 +123,7 @@
    "Resistance": "-",
    "Rarity": "Common",
    "Weight": 55,
-   "Cost": 300
+   "Cost": 200
  },
  {
    "Armor": "Steel Plate Cuirass",
@@ -137,7 +137,7 @@
    "Resistance": "-",
    "Rarity": "Common",
    "Weight": 20,
-   "Cost": 500
+   "Cost": 250
  },
  {
    "Armor": "Steel Plate Hauberk",
@@ -151,7 +151,7 @@
    "Resistance": "-",
    "Rarity": "Common",
    "Weight": 40,
-   "Cost": 1000
+   "Cost": 500
  },
  {
    "Armor": "Steel Plate Full Armor",
@@ -165,7 +165,7 @@
    "Resistance": "-",
    "Rarity": "Common",
    "Weight": 65,
-   "Cost": 1500
+   "Cost": 750
  },
  {
    "Armor": "Bone Cuirass",
@@ -179,7 +179,7 @@
    "Resistance": "-",
    "Rarity": "Common",
    "Weight": 30,
-   "Cost": 750
+   "Cost": 325
  },
  {
    "Armor": "Bone Hauberk",
@@ -193,7 +193,7 @@
    "Resistance": "-",
    "Rarity": "Common",
    "Weight": 55,
-   "Cost": 1500
+   "Cost": 750
  },
  {
    "Armor": "Bone Full Armor",
@@ -207,7 +207,7 @@
    "Resistance": "-",
    "Rarity": "Common",
    "Weight": 80,
-   "Cost": 2250
+   "Cost": 1100
  },
  {
    "Armor": "Wooden Shield",

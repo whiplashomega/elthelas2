@@ -2,12 +2,8 @@
   "name": "Entertainer",
   "description": "You thrive in front of an audience. You know how to entrance them, entertain them, and even inspire them. Your poetics can stir the hearts o f those who hear you, awakening grief or joy, laughter or anger. Your music raises their spirits or captures their sorrow. Your dance steps captivate, your humor cuts to the quick. Whatever techniques you use, your art is your life.",
   "skills": ["Acrobatics", "Performance"],
-  "tools": ["Disguise Kit", "one type of musical instrument"],
-  "languages": 0,
-  "equipment": "A musical instrument (one of your choice), the favor of an admirer (love letter, lock of hair, or trinket), a costume, and a belt pouch containing 15 gp",
-  "feature": {
-    "name": "By Popular Demand",
-    "description": "You can always find a place to perform, usually in an inn or tavern but possibly with a circus, at a theater, or even in a noble’s court. At such a place, you receive free lodging and food o f a modest or comfortable standard (depending on the quality o f the establishment), as long as you perform each night. In addition, your performance makes you something of a local figure. When strangers recognize you in a town where you have performed, they typically take a liking to you."
-  },
-  "characteristics": "Successful entertainers have to be able to capture and hold an audience’s attention, so they tend to have flamboyant or forceful personalities. They’re inclined toward the romantic and often cling to high-minded ideals about the practice o f art and the appreciation of beauty."
+  "tools": ["one type of musical instrument"],
+  "languages": 1,
+  "equipment": "2 Costumes, Musical Instrument, Perfume, Steel Mirror, Traveler's Clothes, 8 gp.",
+  "feature": "Musician"
 }

@@ -1,0 +1,73 @@
+{
+  "id": "military",
+  "title": "National Military Organization",
+  "description": "You are part of a national military organization, such as an army or navy, that reports to a central government.",
+  "nations": [
+  ],
+  "cities": [
+  ],
+  "rules": [
+    "Follow orders.",
+    "Do not aid the enemy.",
+    "Defend the national honor."
+  ],
+  "ranks": [
+    {
+      "index": 0,
+      "name": "Recruit",
+      "minDisposition": 0,
+      "description": "Welcome to the Army."
+    },
+    {
+      "index": 1,
+      "name": "Private",
+      "minDisposition": 2,
+      "description": "You have finished basic training and have been assigned to the field."
+    },
+    {
+      "index": 2,
+      "name": "Sergeant",
+      "minDisposition": 4,
+      "description": "You have responsibilities, and men who report to you, the pay bump is nice though."
+    },
+    {
+      "index": 3,
+      "name": "Leiutenant",
+      "minDisposition": 6,
+      "description": "As a leiutenant your job has shifted from direct command of a small squad to an advisory role for a platoon captain."
+    },
+    {
+      "index": 4,
+      "name": "Captain",
+      "minDisposition": 10,
+      "description": "You have command of a platoon, made up of several squads."
+    }
+  ],
+  "features": [
+    {
+      "minrank": 0,
+      "name": "Equipped",
+      "description": "The army supplies you with basic equipment to the tune of 100 gp of standardized gear. Don't break it, it (and you) belong to the army now."
+    },
+    {
+      "minrank": 1,
+      "name": "Well Trained",
+      "description": "You gain proficiency with martial weapons if you did not already have it. If you already had such proficiency, you instead gain one tool or vehicle proficiency related to your service (such as Vehicles (water) if you were in the navy, or Blacksmith's tools if you were a quartermaster)."
+    },
+    {
+      "minrank": 2,
+      "name": "Officer",
+        "description": "You have a military rank. Soldiers loyal to your military organization recognize your authority and influence, and they defer to you if they are of a lower rank. You can invoke your rank to exert influence over other soldiers and requisition simple equipment or horses for temporary use. You can also usually gain access to friendly military encampments and fortresses where your rank is recognized."
+    },
+    {
+      "minrank": 3,
+      "name": "Expert Combatant",
+      "description": "You learn one fighting style available to the Fighter Class. If you already have a fighting style you cannot pick the same fighting style twice."
+    },
+    {
+      "minrank": 4,
+      "name": "War Veteran",
+      "description": "The are so used to wearing armor that you feel strange when you take it off. You gain a +1 bonus to AC while wearing armor."
+    }
+  ]
+}

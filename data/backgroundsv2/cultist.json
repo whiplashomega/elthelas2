@@ -1,0 +1,9 @@
+{
+  "name": "Cultist",
+  "description": "You scarcely recall what drove you into the service of the otherworldly being. Those memories were blotted out long ago by recurrent dreams of midnight gatherings round the obsidian pillar in the glade. By the light of each waning moon, the hierophants instructed you in the being's creed nad the rudiments of the arcane arts. When you came of age, you were ordered to blend in among the nonbelievers and await whatever mission the Great One has in store for you.",
+  "skills": ["Arcana", "Religion"],
+  "tools": ["Disguise Kit"],
+  "languages": 1,
+  "equipment": "Bell, lamp, common clothes, robe, dagger, disguise kit, 19 gp",
+  "feature": "Magic Initiate"
+}

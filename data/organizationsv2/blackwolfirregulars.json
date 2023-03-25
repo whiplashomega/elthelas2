@@ -23,11 +23,51 @@
     "granitebluff",
     "loridesa"
   ],
-  "tenets": [
+  "rules": [
     "Complete the objective  you are given, even if it means working outside of typical means and methods.",
     "Keep in contact with your commanding officer.",
     "Leave no man behind.  Work as a team with your squad and don't leave anyone in enemy hands."
   ],
-  "level1": "**Guild Funding.** You start with an additional 50 gold.",
-  "level10": "**Advanced Training.** Add +1 to one ability score of  your choice.  Also pick 1 skill you are proficient in, you gain expertise in that skill."
+  "ranks": [
+    {
+      "index": 0,
+      "name": "Camp Follower",
+      "description": "They let you follow them around. You don't get a cut of the loot though, and you probably aren't invited into combat.",
+      "minDisposition": 2
+    },
+    {
+      "index": 1,
+      "name": "Irregular",
+      "description": "You are respected enough to finally get a cut of the loot. Not much of course, but some.",
+      "minDisposition": 4
+    },
+    {
+      "index": 2,
+      "name": "Black Wolf",
+      "description": "You are now a trusted member of the irregulars, you are called upon for most missions, and get a decent portion of the loot.",
+      "minDisposition": 8
+    }
+  ],
+  "features": [
+    {
+      "minrank": 0,
+      "name": "Informed",
+      "description": "You are always given information related to the Black Wolves location, and their current missions and objectives."
+    },
+    {
+      "minrank": 0,
+      "name": "Equipped",
+      "description": "The irregulars supply you with basic equipment to the tune of 100 gp of gear."
+    },
+    {
+      "minrank": 1,
+      "name": "Cut of the Loot",
+      "description": "You gain a +1 weapon or a wand for a 1st level spell of your choice."
+    },
+    {
+      "minrank": 2,
+      "name": "Advanced Training",
+      "description": "Add +1 to one ability score of your choice. Also pick 1 skill you are proficient in, you gain expertise in that skill."
+    }
+  ]
 }

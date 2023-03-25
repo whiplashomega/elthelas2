@@ -15,7 +15,7 @@
               <option :value="2" v-if="notRawCheck(skill)">Exp</option>
             </select>
           </td>
-          <td><button @click="rollCheck(getSkillMod(skill))"><span v-if="getSkillMod(skill) > -1">+</span>{{ getSkillMod(skill) }}</button></td>
+          <td><button @click="rollCheck(getSkillMod(skill))" class="noprintbutton"><span v-if="getSkillMod(skill) > -1">+</span>{{ getSkillMod(skill) }}</button></td>
           <td><input type="number" class="charsheet-num" v-model="skill.magic" /></td>
         </tr>
         <tr class="print-hide"><th colspan="4"><button class="btn btn-primary btn-sm" @click="newProfModal = true">+</button></th></tr>

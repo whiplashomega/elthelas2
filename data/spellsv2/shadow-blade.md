@@ -14,7 +14,7 @@ tags: [warlock, wizard, eldritchknight, level2, illusion]
 
 **Components**: V, S
 
-**Duration**: Concentration, up to 1 minute
+**Duration**: 10 minutes
 
 **Saving Throw**:
 

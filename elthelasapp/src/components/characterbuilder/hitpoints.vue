@@ -12,7 +12,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row print-hide">
       <div class="col">
         <div class="charsheet-static">
           Damage: <input type="number" class="charsheet-num"

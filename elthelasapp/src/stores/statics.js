@@ -11,6 +11,7 @@ export default {
       armor: [],
       ancestries: [],
       backgrounds: [],
+      backgroundsv2: [],
       divines: [{ name: 'Placeholder', id: 'placeholder' }],
       equipment: [],
       feats: [],
@@ -183,6 +184,17 @@ export default {
           this.backgrounds = response.data.documents;
           for (var x = 0; x < this.backgrounds.length; x++) {
             this.backgrounds[x].isCollapsed = true;
+          }
+          resolve(true);
+        });
+      });
+    },
+    getAllBackgroundsv2 () {
+      return new Promise((resolve) => {
+        axios.get("/json/backgroundsv2.json").then((response) => {
+          this.backgroundsv2 = response.data.documents;
+          for (var x = 0; x < this.backgroundsv2.length; x++) {
+            this.backgroundsv2[x].isCollapsed = true;
           }
           resolve(true);
         });
@@ -636,7 +648,7 @@ export default {
         return new Promise ((resolve) => {
         Promise.all([
           this.getAllContinents(),
-          this.getAllBackgrounds(),
+          this.getAllBackgroundsv2(),
           this.getAllDivines(),
           this.getAllOrganizationsv2(),
           this.getAllEquipment(),

@@ -49,14 +49,14 @@
     {
       "index": 3,
       "name": "Heir Apparent",
-      "minDisposition": 99,
+      "minDisposition": 20,
       "description": "You are so well trusted by the ranking member of the family that you have been adopted and named heir apparent."
     },
     {
       "index": 4,
       "name": "Lord",
       "minDisposition": 99,
-      "description": "You are the Lord of the House, and command all the resources at the houses disposal, including estates, courtiers, aides, and hirelings. Your voice has weight in the government of the country."
+      "description": "You are the Lord of the House, and command all the resources at the houses disposal, including estates, courtiers, aides, and hirelings. Your voice has weight in the government of the country. This rank can only be achieved if you are the Heir Apparent and the previous Lord dies or resigns."
     }
   ],
   "features": [

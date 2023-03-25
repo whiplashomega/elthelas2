@@ -1,0 +1,9 @@
+{
+  "name": "Artisan",
+  "description": "You apprenticed to a skilled artisan as a child.",
+  "skills": ["Insight", "Persuasion"],
+  "tools": ["One type of artisan's tools"],
+  "languages": 1,
+  "equipment": "Abacus, A set of artisan’s tools (one of your choice), merchant's scales, 2 pouches, a set of traveler’s clothes, 25 gp",
+  "feature": "Crafter"
+}

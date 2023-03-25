@@ -1,0 +1,67 @@
+{
+  "id": "demalthorpeacefulrenewalfront",
+  "title": "Demal'Thor Peaceful Renewal Front",
+  "description": "The DPRF is a new organization formed after the war with the primary goal of encouraging the Moon Elf Diaspora to return to Demal'Thor. Additionally, they take an active role in politics within and outside Demal'Thor advocating for the end to wars, peaceful resolution to conflict between races, and the abandonment of warmongering \"Geeater\" Gods such as Mat'raktha and Alohim, and the renewal of culture through the arts and the worship of the Gods of the Arts such as Adonna, Kamin, and Bragi.",
+  "nations": [
+    "demalthor",
+    "eldoran",
+    "gerasalim"
+  ],
+  "cities": [
+    "Aridhem"
+  ],
+  "rules": [
+    "Avoid conflict when you can, fight only in self-defense.",
+    "Pracice artistic pursuits to uplift those around you.",
+    "Provide for the people of Demal'Thor to return home and return to their traditional way of life.",
+    "Give no assistance to the Gods of War"
+  ],
+  "ranks": [
+    {
+      "index": 0,
+      "name": "Volunteer Artist",
+      "minDisposition": 0,
+      "description": "Volunteers are always needed."
+    },
+    {
+      "index": 1,
+      "name": "Coordinator",
+      "minDisposition": 3,
+      "description": "You are responsible enough to be placed in charge of managing aid shipments for a local village or area."
+    },
+    {
+      "index": 2,
+      "name": "Diplomat",
+      "minDisposition": 6,
+      "description": "Your missions are sending you further and further afield, securing aid and support for the renewal front."
+    },
+    {
+      "index": 3,
+      "name": "Ambassador",
+      "minDisposition": 10,
+      "description": "You've been setup as lead ambassador to a major power."
+    }
+  ],
+  "features": [
+    {
+      "minrank": 0,
+      "name": "Artistic Training",
+      "description": "Gain one free proficiency in a musical instrument or a set of tools used for artistic pursuits (such as sculpting, caligraphy, or painting). Add that musical instrument or set of tools to your inventory."
+    },
+    {
+      "minrank": 1,
+      "name": "Persuasive Speaker",
+      "description": "You gain proficiency in Persuasion, if you are already proficient you gain expertise instead."
+    },
+    {
+      "minrank": 2,
+      "name": "Conflict Resolution",
+      "description": "You learn the spell calm emotions. Charisma is your casting stat for this spell. You can cast calm emotions once without using a spell slot, and when cast in this way creatures have disadvantage on the saving throw to avoid the effects of the spell. You regain the ability to cast the spell this way when you finish a long rest."
+    },
+    {
+      "minrank": 3,
+      "name": "Strength in Peace",
+      "description": "You gain a special action, called meditate. When you use this action, you gain the following benefits for one minute or until you make an attack, cast an offensive spell, or take damage:\n\n* Your healing spells heal for an additional 1d6 hp.\n* Your AC increases by 1\n* Any spell you cast on a willing target that has a range other than self can target one additional creature within range.\n\nYou can use this action a number of times equal to your proficiency bonus, and recover all expended uses when you finish a long rest."
+    }
+  ]
+}

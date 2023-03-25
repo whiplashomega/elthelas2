@@ -1,0 +1,73 @@
+{
+  "id": "militia",
+  "title": "Local Militia",
+  "description": "You are part of a regional militia, city watch, or other limited scope self-defense focused military organization.",
+  "nations": [
+  ],
+  "cities": [
+  ],
+  "rules": [
+    "Follow orders.",
+    "Seek out and stop criminals and bandits.",
+    "Protect the city."
+  ],
+  "ranks": [
+    {
+      "index": 0,
+      "name": "Recruit",
+      "minDisposition": 0,
+      "description": "Welcome to the Watch, the night is long and full of terrors."
+    },
+    {
+      "index": 1,
+      "name": "Watchman",
+      "minDisposition": 2,
+      "description": "You have finished basic training and have been assigned to the field."
+    },
+    {
+      "index": 2,
+      "name": "Sergeant",
+      "minDisposition": 4,
+      "description": "You have responsibilities, and men who report to you, the pay bump is nice though."
+    },
+    {
+      "index": 3,
+      "name": "Leiutenant",
+      "minDisposition": 8,
+      "description": "As a leiutenant your job has shifted from direct command of a small squad to an advisory role for a platoon captain."
+    },
+    {
+      "index": 4,
+      "name": "Captain",
+      "minDisposition": 12,
+      "description": "You have command of a platoon, made up of several squads."
+    }
+  ],
+  "features": [
+    {
+      "minrank": 0,
+      "name": "Equipped",
+      "description": "The militia supplies you with basic equipment to the tune of 100 gp of standardized gear."
+    },
+    {
+      "minrank": 1,
+      "name": "Trained",
+      "description": "You gain proficiency with martial weapons if you did not already have it. If you already had such proficiency, you instead gain one tool or vehicle proficiency related to your service (such as Vehicles (water) if you were in the navy, or Blacksmith's tools if you were a quartermaster)."
+    },
+    {
+      "minrank": 2,
+      "name": "Watcher's Eye",
+      "description": "Your experience in enforcing the law, and dealing with lawbreakers, gives you a feel for local laws and criminals. You can easily find the local outpost of the watch or a similar organization, and just as easily pick out the dens of criminal activity in a community, although you're more likely to be welcome in the former locations rather than the latter."
+    },
+    {
+      "minrank": 3,
+      "name": "Officer",
+        "description": "You have a military rank. Watchmen loyal to your militia organization recognize your authority and influence, and they defer to you if they are of a lower rank. You can invoke your rank to exert influence over other soldiers and requisition simple equipment or horses for temporary use. You can also usually gain access to friendly military encampments and fortresses where your rank is recognized."
+   },
+    {
+      "minrank": 4,
+      "name": "Master of the Wall",
+      "description": "You have learned to inspire your compatriots to feats of greatness in defense of their home. When a creature other than yourself who can hear you is hit by an attack, you can use your reaction to add +5 to their AC for that attack, potentially causing the attack to miss."
+    }
+  ]
+}
