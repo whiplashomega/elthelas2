@@ -2,10 +2,12 @@ import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 import { useStaticsStore, useUserStore } from '@/stores/index';
 import modal from '@/components/global/modal.vue';
 import { useMeta } from 'vue-meta';
+import { storeToRefs } from 'pinia';
 
 export default {
   setup () {
     const statics = useStaticsStore();
+    statics.getAllNew();
     const userinfo = useUserStore();
     const { equipment, armorv2: armor, weaponsv2: weapons, 
       magicitemsv2: magicitems,
@@ -18,7 +20,7 @@ export default {
       magicraresv2: magicrares,
       magicveryraresv2: magicveryrares,
       magiclegendariesv2: magiclegendaries
-    } = statics;
+    } = storeToRefs(statics);
     useMeta({ title: "Equipment" });
     return {
       userinfo, equipment, armor, weapons, marked, magicitems,

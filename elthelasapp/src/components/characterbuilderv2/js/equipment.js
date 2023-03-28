@@ -9,7 +9,8 @@ export default {
     const statics = useStaticsStore();
     
     const { character, carryWeight, carryMax, totalGold, equipmentContainers } = storeToRefs(characters);
-    const { equipment, weaponsv2: weapons, magicweaponsv2: magicweapons, magicarmorv2: magicarmor, magicotherv2: magicother, magicscrollsv2: scrolls, magicwandsv2: wands, armorv2: armor } = statics;
+    const { weaponsv2: weapons, armorv2: armor} = storeToRefs(statics);
+    const { equipment, magicweaponsv2: magicweapons, magicarmorv2: magicarmor, magicotherv2: magicother, magicscrollsv2: scrolls, magicwandsv2: wands } = statics;
     
     const removeEquipment = characters.removeEquipment;
     const removeContainer = characters.removeContainer;

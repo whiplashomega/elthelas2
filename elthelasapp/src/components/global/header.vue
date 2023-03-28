@@ -85,7 +85,7 @@
                 <li><router-link to="/5e/magicitems" class="dropdown-item">Magic Item Catalog</router-link></li>
                 <li><router-link to="/5e/class" class="dropdown-item">Classes</router-link></li>
                 <li><router-link to="/5e/feats" class="dropdown-item">Feats</router-link></li>    
-                <li><router-link to="/5e/class" class="dropdown-item">Races</router-link></li>
+                <li><router-link to="/5e/races" class="dropdown-item">Races</router-link></li>
                 <li><router-link to="/5e/orgs" class="dropdown-item">Organizations</router-link></li>    
                 <li><router-link to="/5e/homebrew" class="dropdown-item">Homebrew</router-link></li>         
               </ul>
