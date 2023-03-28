@@ -46,6 +46,7 @@
           <select class="form-control" v-model="newequip.container">
             <option v-for="container in character.containers" :key="container.id" :value="container.id"> {{ container.name }}</option>
           </select>
+          Exclude Magic Items: <input type="checkbox" v-model="excludemagic" />
           <b-tabs id="existingEquip">
             <b-tab title="New">
               Name

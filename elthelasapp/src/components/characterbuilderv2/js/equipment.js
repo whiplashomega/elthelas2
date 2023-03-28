@@ -36,7 +36,12 @@ export default {
   },
   computed: {
     allWeapons () {
-      var allweapons = [ ...this.weapons, ...this.magicweapons ];
+      var allweapons = [];
+      if (this.excludemagic) {
+        allweapons = [ ...this.weapons ];
+      } else {
+        allweapons = [ ...this.weapons, ...this.magicweapons ];
+      }
       allweapons.forEach((weap) => {
         if (!weap.Weapon) {
           weap.Weapon = weap.Item;
@@ -54,7 +59,12 @@ export default {
       return allweapons;
     },
     allArmor () {
-      var allArmor = [ ...this.armor, ...this.magicarmor ];
+      var allArmor = [];
+      if (this.excludemagic) {
+        allArmor = [ ...this.armor ];
+      } else {
+        allArmor = [ ...this.armor, ...this.magicarmor ];
+      }
       var newArmor = [];
       allArmor.forEach((armor) => {
         let newarmor = { ...armor };
@@ -84,7 +94,12 @@ export default {
       });
     },
     allGear () {
-      var allgear = [ ...this.equipment, ...this.scrolls, ...this.wands, ...this.magicother ];
+      var allgear = [];
+      if (this.excludemagic) {
+        allgear = [ ...this.equipment ];
+      } else {
+        allgear = [ ...this.equipment, ...this.scrolls, ...this.wands, ...this.magicother ];
+      }
       allgear.forEach((item) => {
         if (typeof item.Weight === "undefined") {
           item.Weight = 1;
@@ -103,6 +118,7 @@ export default {
   },
   data () {
     return {
+      excludemagic: false,
       ctypes: [
         { name: "", capacity: 0, weightCounts: true, weight: 0 },
         { name: "Carried/Worn", capacity: 9999, weightCounts: true, weight: 0 },
