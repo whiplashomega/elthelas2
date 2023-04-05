@@ -33,7 +33,7 @@ function historyjson () {
           day: filearray[5]
         }
       }
-      historyarray.push(event);      
+      historyarray.push(event);
     } else {
       throw new Error("improperly formatted event: " + file);
     }
@@ -76,7 +76,7 @@ function personalhistoryjson () {
           day: filearray[5]
         }
       }
-      historyarray.push(event);      
+      historyarray.push(event);
     } else {
       throw new Error("improperly formatted event: " + file);
     }
@@ -103,7 +103,7 @@ function spellsjson (dir) {
     var data = fs.readFileSync(source + "/" + file, "utf-8");
     var spell = {};
     var filearray = data.split('\n');
-        
+
     spell.title = filearray[2].replace(/\"/g,"").replace(/title\:[ \t]+/g, "");
     spell.source = filearray[4].replace(/source\:[ \t]+/g, "");
     spell.tags = filearray[5].replace(/tags:[ \t]+\[/g, "").replace(/\]/, "").split(", ");
@@ -138,6 +138,47 @@ function spellsjson (dir) {
   }
 }
 
+function rulesjson(dir) {
+  const source = "./data/" + dir;
+  var files = fs.readdirSync(source);
+  var rulesarray = [];
+  var rules = [];
+  files.forEach((file) => {
+    var data = fs.readFileSync(source + "/" + file, "utf-8");
+    var rule = {};
+    var filearray = data.split('\n');
+    rule.category = filearray[0];
+    rule.subcategory = filearray[1];
+    rule.title = filearray[2];
+    rule.description = filearray.slice(3,filearray.length).join("\n");
+    rulesarray.push(rule);
+    var cats = rules.find((a) => {
+      if (rule.category === a.title) {
+        return true;
+      }
+    });
+    if (cats === undefined) {
+      rules.push({ title: rule.category, subcategories: [{ title: rule.subcategory, rules: [ rule ] }] });
+    } else {
+      var subcats = cats.subcategories.find((a) => {
+        if (rule.subcategory === a.title) {
+          return true;
+        }
+      });
+      if (subcats === undefined) {
+        cats.subcategories.push({ title: rule.subcategory, rules: [ rule ]});
+      } else {
+        subcats.rules.push(rule);
+      }
+    }
+  });
+  if (rulesarray.length === files.length) {
+    fs.writeFile("./elthelasapp/public/json/" + dir + ".json", JSON.stringify({ "model": "Rule", "documents": rulesarray, "heirarchical": rules }), "utf-8", function () {
+      console.log("writing " + dir + ".json");
+    });
+  }
+}
+
 function compiledir(sourcedir, destination, modelName) {
   return new Promise(function(resolve) {
     var files = fs.readdirSync(sourcedir);
@@ -154,7 +195,7 @@ function compiledir(sourcedir, destination, modelName) {
     fs.writeFile(destination, JSON.stringify({ "model": modelName, "documents": comparray }), "utf-8", function() {
       console.log("writing " + destination);
       resolve();
-    });      
+    });
   });
 }
 
@@ -168,7 +209,7 @@ function jsonmin(sourcefile, destination) {
     });
   })
 }
-  
+
 function jsoncompile () {
   console.log("starting");
   Promise.all([
@@ -205,6 +246,7 @@ function jsoncompile () {
 
 spellsjson("spells");
 spellsjson("spellsv2");
+rulesjson("rules");
 historyjson();
 personalhistoryjson();
 jsoncompile();
