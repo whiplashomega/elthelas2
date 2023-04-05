@@ -75,7 +75,40 @@
         <div v-for="creature in statBlocks" :key="creature.id" class="col-sm-4">
           <h2> {{ creature.name }} <i class="handle">&#8592;&#8594;</i> </h2>
           <div class="creature">
-            <creature :creature="creature" />
+            <h4> {{ creature.size }} {{ creature.type }}<span v-if="creature.subtype"> ({{ creature.subtype }})</span>, {{ creature.alignment }}</h4>
+            <p>
+              <strong>Armor Class:</strong> {{ creature.ac }} ({{creature.acdesc}}) <br />
+              <strong>Protection Class:</strong> {{ creature.pc }}<br />
+              <strong>Speed:</strong> {{ creature.speed }}
+            </p>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{{ creature.stats[0] }} (<span v-if="creaturecalc.statMod(creature, 0) > 0">+</span>{{ creaturecalc.statMod(creature, 0) }})</td>
+                  <td>{{ creature.stats[1] }} (<span v-if="creaturecalc.statMod(creature, 1) > 0">+</span>{{ creaturecalc.statMod(creature, 1) }})</td>
+                  <td>{{ creature.stats[2] }} (<span v-if="creaturecalc.statMod(creature, 2) > 0">+</span>{{ creaturecalc.statMod(creature, 2) }})</td>
+                  <td>{{ creature.stats[3] }} (<span v-if="creaturecalc.statMod(creature, 3) > 0">+</span>{{ creaturecalc.statMod(creature, 3) }})</td>
+                  <td>{{ creature.stats[4] }} (<span v-if="creaturecalc.statMod(creature, 4) > 0">+</span>{{ creaturecalc.statMod(creature, 4) }})</td>
+                  <td>{{ creature.stats[5] }} (<span v-if="creaturecalc.statMod(creature, 5) > 0">+</span>{{ creaturecalc.statMod(creature, 5) }})</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>
+              <span data-v-if="creature.saves"><strong>Saving Throws:</strong> {{ creature.saves }} <br /></span>
+              <span v-if="creature.skills.length > 0"><strong>Skills:</strong> {{ creature.skills.join(", ") }} <br /></span>
+              <strong>Senses:</strong> {{ creature.senses }} <br />
+              <span v-if="creature.damageresistances"><strong>Damage Resistances:</strong> {{ creature.damageresistances }} <br /></span>
+              <span v-if="creature.damageimmunities"><strong>Damage Immunities:</strong> {{ creature.damageimmunities }} <br /></span>
+              <span v-if="creature.conditionimmunities"><strong>Condition Immunities:</strong> {{ creature.conditionimmunities }} <br /></span>
+              <strong>Languages:</strong> {{ creature.languages }} <br />
+              <strong>Challenge:</strong> {{ creature.cr }}
+            </p>
+            <div v-html="creature.descr"></div>
           </div>
         </div>
       </div>
@@ -155,13 +188,13 @@
                  style="font-size:0.7rem" class="form-control form-control-sm" />
           </div>
           <div class="col-sm-3">
-             / {{ creature.hpdesc }}
+             / {{ creaturecalc.hp(creature) }}
           </div>
           <div class="col-sm-3">
              <button class="close" type="button" @click="removeCreature(creature)">&times;</button>
           </div>
         </div>
-       
+
       </div>
     </div>
     <modal id="servermodal" title="Load File from Server" :modalProps="modalProps">

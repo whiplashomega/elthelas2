@@ -78,6 +78,7 @@
             <h4> {{ creature.size }} {{ creature.type }}<span v-if="creature.subtype"> ({{ creature.subtype }})</span>, {{ creature.alignment }}</h4>
             <p>
               <strong>Armor Class:</strong> {{ creature.acdesc }} <br />
+              <strong>Protection Class: </strong> {{ creature.pc }} <br />
               <strong>Speed:</strong> {{ creature.speed }}
             </p>
             <table class="table table-striped">
@@ -193,7 +194,7 @@
              <button class="close" type="button" @click="removeCreature(creature)">&times;</button>
           </div>
         </div>
-       
+
       </div>
     </div>
     <modal id="servermodal" title="Load File from Server" :modalProps="modalProps">

@@ -61,16 +61,13 @@
                 Reference
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><router-link to="/ref/srd" class="dropdown-item">System Reference Document</router-link></li>
-                <li><router-link to="/ref/abilities" class="dropdown-item">Abilities</router-link></li>
-                <li><router-link to="/ref/adventuring" class="dropdown-item">Adventuring</router-link></li>
-                <li><router-link to="/ref/combat" class="dropdown-item">Combat</router-link></li>
+                <li><router-link to="/ref/srd" class="dropdown-item">System Reference Search</router-link></li>
+                <li><router-link to="/ref/injury" class="dropdown-item">Injury</router-link></li>
                 <li><router-link to="/ref/equipment" class="dropdown-item">Equipment</router-link></li>
                 <li v-if="user.isLoggedIn"><router-link to="/ref/bestiary" class="dropdown-item">Bestiary</router-link></li>
-                <li><router-link to="/ref/magic" class="dropdown-item">Magic</router-link></li>
+                <li><router-link to="/ref/spells" class="dropdown-item">Spells</router-link></li>
                 <li><router-link to="/ref/gods" class="dropdown-item">Gods</router-link></li>
                 <li><router-link to="/ref/divines" class="dropdown-item">Divine Beings</router-link></li>
-                <li><router-link to="/ref/rules" class="dropdown-item">Other Rules</router-link></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -84,10 +81,10 @@
                 <li><router-link to="/5e/quick" class="dropdown-item">Quick Reference Manual</router-link></li>
                 <li><router-link to="/5e/magicitems" class="dropdown-item">Magic Item Catalog</router-link></li>
                 <li><router-link to="/5e/class" class="dropdown-item">Classes</router-link></li>
-                <li><router-link to="/5e/feats" class="dropdown-item">Feats</router-link></li>    
+                <li><router-link to="/5e/feats" class="dropdown-item">Feats</router-link></li>
                 <li><router-link to="/5e/races" class="dropdown-item">Races</router-link></li>
-                <li><router-link to="/5e/orgs" class="dropdown-item">Organizations</router-link></li>    
-                <li><router-link to="/5e/homebrew" class="dropdown-item">Homebrew</router-link></li>         
+                <li><router-link to="/5e/orgs" class="dropdown-item">Organizations</router-link></li>
+                <li><router-link to="/5e/homebrew" class="dropdown-item">Homebrew</router-link></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -124,7 +121,7 @@
         <h1>
           <img src="https://elthelas-images.herokuapp.com/swordshieldlogo.png" alt="" class="logo" />Elthelas Campaign Setting {{ globals.titleForHeader }}
         </h1>
-        
+
     </header>
     <modal id="loginmodal" :modalProps="showLogin">
       <template #default>

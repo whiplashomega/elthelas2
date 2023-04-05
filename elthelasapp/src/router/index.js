@@ -169,24 +169,13 @@ const router = createRouter({
       },
     },
     {
-      path: "/ref/combat",
-      name: "Combat",
+      path: "/ref/injury",
+      name: "Injury",
       components: {
-        default: () => import("@/views/ref/combat.vue"),
+        default: () => import("@/views/ref/injury.vue"),
       },
       meta: {
-        title: "Combat",
-        auth: false,
-      },
-    },
-    {
-      path: "/ref/rules",
-      name: "Rules",
-      components: {
-        default: () => import("@/views/ref/rules.vue"),
-      },
-      meta: {
-        title: "Rules",
+        title: "Injury",
         auth: false,
       },
     },
@@ -224,13 +213,13 @@ const router = createRouter({
       },
     },
     {
-      path: "/ref/magic",
-      name: "Magic",
+      path: "/ref/spells",
+      name: "Spells",
       components: {
-        default: () => import("@/views/ref/magic.vue"),
+        default: () => import("@/views/ref/spells.vue"),
       },
       meta: {
-        title: "Magic",
+        title: "Spells",
         auth: false,
       },
     },
@@ -433,17 +422,6 @@ const router = createRouter({
       }
     },
     {
-      path: "/ref/adventuring",
-      name: "Adventuring",
-      components: {
-        default: () => import("@/views/ref/adventuring.vue")
-      },
-      meta: {
-        title: "Adventuring",
-        auth: false
-      }
-    },
-    {
       path: "/options/alignment",
       name: "Alignment",
       components: {
@@ -451,39 +429,6 @@ const router = createRouter({
       },
       meta: {
         title: "Alignment",
-        auth: false
-      }
-    },
-    {
-      path: "/ref/rules",
-      name: "Other Rules",
-      components: {
-        default: () => import("@/views/ref/rules.vue")
-      },
-      meta: {
-        title: "Other Rules",
-        auth: false
-      }
-    },
-    {
-      path: "/ref/abilities",
-      name: "Abilities",
-      components: {
-        default: () => import("@/views/ref/abilities.vue")
-      },
-      meta: {
-        title: "Abilities",
-        auth: false
-      }
-    },
-    {
-      path: "/ref/gmrules",
-      name: "GM Rules",
-      components: {
-        default: () => import("@/views/ref/gmrules.vue")
-      },
-      meta: {
-        title: "GM Rules",
         auth: false
       }
     },

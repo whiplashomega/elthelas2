@@ -57,6 +57,8 @@ export default {
       magicraresv2: [],
       magicveryraresv2: [],
       magiclegendariesv2: [],
+      rules: [],
+      rulesByCategory: []
     };
   },
   getters: {
@@ -283,6 +285,15 @@ export default {
       return new Promise((resolve) => {
         axios.get('/json/ancestries.json').then((response) => {
           this.ancestries = response.data.documents;
+          resolve(true);
+        });
+      });
+    },
+    getAllRules () {
+      return new Promise((resolve) => {
+        axios.get('/json/rules.json').then((response) => {
+          this.rules = response.data.documents;
+          this.rulesByCategory = response.data.heirarchical;
           resolve(true);
         });
       });
@@ -517,7 +528,7 @@ export default {
               if (num < threshold) {
                 items[x].instock = "In Stock";
               } else {
-               items[x].instock = "Out of Stock"; 
+               items[x].instock = "Out of Stock";
               }
               if (items[x].Type.includes("Weapon")) {
                 this.magicweapons.push(items[x]);
@@ -597,7 +608,7 @@ export default {
               if (num < threshold) {
                 items[x].instock = "In Stock";
               } else {
-               items[x].instock = "Out of Stock"; 
+               items[x].instock = "Out of Stock";
               }
               if (items[x].Type.includes("Weapon")) {
                 this.magicweaponsv2.push(items[x]);
@@ -665,11 +676,12 @@ export default {
           this.getAllHomebrewWeapons(),
           this.getAllArmorV2(),
           this.getAllSpellsV2(),
+          this.getAllRules(),
           this.getAllMagicItemsV2(),
           this.getAllClassesV2()]).then(() => {
             resolve(true);
           });
-      });    
+      });
     }
   }
 };

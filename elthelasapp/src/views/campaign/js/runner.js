@@ -1,10 +1,10 @@
-import { useCreaturev2Store, useCharacterStore, useUserStore } from '@/stores/index';
+import { useCreatureStore, useCharacterStore, useUserStore } from '@/stores/index';
 import { storeToRefs } from 'pinia';
 import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 import charcalc from '@/helpers/charcalc';
 import modal from '@/components/global/modal.vue';
 import { useMeta } from 'vue-meta';
-import creature from '../creature.vue';
+import creaturecalc from '@/helpers/creaturecalc';
 
 const modalInfo = {
   name: "",
@@ -25,6 +25,7 @@ const modalInfo = {
   int: "",
   wis: "",
   cha: "",
+  stats: [0, 0, 0, 0 ,0, 0],
   skills: "",
   saves: "",
   senses: "",
@@ -72,26 +73,26 @@ const crxptable = [
 
 export default {
   setup () {
-    const creatureStore = useCreaturev2Store();
+    const creatureStore = useCreatureStore();
     const characterStore = useCharacterStore();
     const userStore = useUserStore();
-    
+
     const { creatures } = storeToRefs(creatureStore);
-    const { charlevel, accalc, getSpeedStat, getStatTotal, getStatMod, getSaveMod, 
-            getSkillMod, getHPTotal, getAttackBonus, getDamageBonus, totalslots, 
+    const { charlevel, accalc, getSpeedStat, getStatTotal, getStatMod, getSaveMod,
+            getSkillMod, getHPTotal, getAttackBonus, getDamageBonus, totalslots,
             getInitMod, getCharacter: curcharacter, characters } = storeToRefs(characterStore);
     const { loggedin: token, isLoggedIn: loggedin, isAdmin: admin, getUserInfo: userinfo } = userStore;
     const { getFromServer, loadChar, selCharacter } = characterStore;
     const { getCreature, saveNewCreature, deleteCreature, getAllCreatures } = creatureStore;
-    
+
     getAllCreatures();
-    
+
     useMeta({ title: "Encounter Runner" });
     return {
       creatures, charlevel, accalc, getSpeedStat, getStatTotal, getStatMod, getSaveMod,
       getSkillMod, getHPTotal, getAttackBonus, getDamageBonus, totalslots, getInitMod,
       curcharacter, characters, token, loggedin, admin, userinfo, getFromServer, loadChar,
-      selCharacter, getCreature, saveNewCreature, deleteCreature
+      selCharacter, getCreature, saveNewCreature, deleteCreature, creaturecalc
     };
   },
   props: {
@@ -99,8 +100,7 @@ export default {
     charArray: Array
   },
   components: {
-    modal,
-    creature
+    modal
   },
   computed: {
     filteredcreatures () {
@@ -255,10 +255,10 @@ export default {
       creature.id = this.nextIndex;
       creature.ispc = false;
       this.nextIndex++;
-      creature.currenthp = creature.hp;
+      creature.currenthp = creaturecalc.hp(creature);
       creature.descr = marked.parse(creature.description);
       creature.mini = "";
-      creature.initMod = creature.dexmod;
+      creature.initMod = creaturecalc.statMod(creature, creature.stats[1]);
       creature.advantage = false;
       creature.disadvantage = false;
       creature.init = 0;

@@ -48,7 +48,9 @@
   color: $darktext;
   border-color: lighten($darkbackground, 25%);
 }
-
+label {
+  font-weight: bold;
+}
 .dark .abilitytable {
   border: none;
   tr {
@@ -108,32 +110,32 @@
 @media (prefers-color-scheme: light) {
   .system .attuned {
     background-color: #ffccff;
-  }  
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   .system .charsheet-text, .system .charsheet-textarea {
     background-color: lighten($darkbackground, 15%);
-    color: $darktext;    
+    color: $darktext;
   }
-  
+
   .system .charsheet-num {
     background-color: lighten($darkbackground, 15%);
     color: $darktext;
   }
-  
+
   .system select {
     background-color: lighten($darkbackground, 15%);
     color: $darktext;
     border-color: lighten($darkbackground, 25%);
   }
-  
+
   .system input[type=number] {
     background-color: lighten($darkbackground, 15%);
     color: $darktext;
     border-color: lighten($darkbackground, 25%);
   }
-  
+
   .system .abilitytable {
     border: none;
     tr {
@@ -143,18 +145,18 @@
       border-right: none;
     }
   }
-  
+
   .system .attuned {
     background-color: #050;
   }
   .system .half {
     background-color: blue;
   }
-  
+
   .system .prof {
     background-color: green;
   }
-  
+
   .system .expert {
     background-color: purple;
   }
@@ -193,7 +195,7 @@
 
 
 .charsheet-label {
-  font-weight: bold;  
+  font-weight: bold;
 }
 
 .btn-sm {
@@ -223,7 +225,7 @@
 
 .clickable {
   color: blue;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .dark .clickable {
