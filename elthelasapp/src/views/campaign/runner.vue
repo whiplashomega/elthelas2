@@ -220,4 +220,4 @@
   </div>
 </template>
 <script src="./js/runner.js"></script>
-<style src="./scss/runner.scss" lang="scss"></style>
+<style src="@/views/character/scss/characterbuilder.scss" lang="scss"></style>
