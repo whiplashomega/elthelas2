@@ -1,14 +1,11 @@
 <template>
   <div class="col-sm-12">
     <div class="col-sm-9">
-      <p>
-        <a :href="encounterlink">Link to this Encounter</a>
-      </p>
       <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-2">
           <label>
             Party Size
-            <select class="form-control" v-model="partysize" @change="calculateDifficulty()">
+            <select class="charsheet-text" v-model="partysize" @change="calculateDifficulty()">
               <option :value="1">1</option>
               <option :value="2">2</option>
               <option :value="3">3</option>
@@ -21,9 +18,11 @@
               <option :value="10">10</option>
             </select>
           </label>
+        </div>
+        <div class="col-sm-2">
           <label>
             Average Level
-            <select class="form-control" v-model="partylevel" @change="calculateDifficulty()">
+            <select class="charsheet-text" v-model="partylevel" @change="calculateDifficulty()">
               <option :value="1">1</option>
               <option :value="2">2</option>
               <option :value="3">3</option>
@@ -46,14 +45,18 @@
               <option :value="20">20</option>
             </select>
           </label>
+        </div>
+        <div class="col-sm-2">
           <label>
             Terrain
-            <select class="form-control" v-model="terrain" @change="calculateDifficulty()">
+            <select class="charsheet-text" v-model="terrain" @change="calculateDifficulty()">
               <option :value="0.75">Player Advantage</option>
               <option :value="1">None</option>
               <option :value="1.25">Monster Advantage</option>
             </select>
           </label>
+        </div>
+        <div class="col-sm-2">
           <label>
             Monster Has Powerful AoE
             <input type="checkbox" class="checkbox"
@@ -61,26 +64,30 @@
           </label>
         </div>
         <div class="col-sm-4">
-          <input type="button" class="btn btn-primary"
-                 value="Calculate" @click="calculateDifficulty()" /> Encounter Difficulty: {{ difficulty }} <br />
-          XP Value: {{ xpvalue }}<br />
-          Adjusted XP Value: {{ adjustedxpvalue }}
+           Encounter Difficulty: {{ difficulty }} <br />
+          <span title="This is the total XP of the monsters in this encounter, before adjustment.">XP: {{ xpvalue }}</span>&nbsp;&nbsp;
+          <span title="After adjustment, this is the amount of XP you should award to players.">Adjusted XP: {{ adjustedxpvalue }}</span>
         </div>
       </div>
-      <div>
+      <!--<div>
         <input type="button" @click="getFromServer(); modalProps.isActive = true"
                value="Load Character" class="btn btn-success margin15" />
-      </div>
+      </div>-->
       <div class="row">
         <div v-for="creature in statBlocks" :key="creature.id" class="col-sm-4">
-          <h2> {{ creature.name }} <i class="handle">&#8592;&#8594;</i> </h2>
+          <h2> {{ creature.name }} <i class="handle">&#8592;&#8594;</i>         </h2>
           <div class="creature">
             <h4> {{ creature.size }} {{ creature.type }}<span v-if="creature.subtype"> ({{ creature.subtype }})</span>, {{ creature.alignment }}</h4>
-            <p>
-              <strong>Armor Class:</strong> {{ creature.ac }} ({{creature.acdesc}}) <br />
-              <strong>Protection Class:</strong> {{ creature.pc }}<br />
-              <strong>Speed:</strong> {{ creature.speed }}
-            </p>
+            <div class="row">
+              <div class="col-9">
+                <strong>Armor Class:</strong> {{ creature.ac }} ({{creature.acdesc}}) <br />
+                <strong>Protection Class:</strong> {{ creature.pc }}<br />
+                <strong>Speed:</strong> {{ creature.speed }}
+              </div>
+              <div class="col-3">
+                <img v-show="creature.image" :src="creature.image" :alt="creature.name" />
+              </div>
+            </div>
             <table class="table table-striped">
               <thead>
                 <tr>
@@ -176,6 +183,9 @@
       </table>
     </div>
     <div id="inithptracker">
+      <p>
+        <a :href="encounterlink">Link to this Encounter</a>
+      </p>
       <div v-for="creature in encountercreaturesinit" :key="creature.id" class="form-inline form-row">
         <div class="row">
           <div class="col-sm-5">{{ creature.name }}&nbsp;</div>

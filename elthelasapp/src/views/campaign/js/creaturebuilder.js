@@ -13,6 +13,18 @@ export default {
     };
   },
   methods: {
+    loadimage () {
+      if (document.getElementById('imageload')) {
+        var f = document.getElementById('imageload').files[0];
+        var r = new FileReader();
+        r.addEventListener("load", () => {
+          this.creature.image = r.result;
+        }, false);
+        if (f) {
+          r.readAsDataURL(f);
+        }
+      }
+    },
     addTag () {
       this.creature.tags.push({ id: Math.random(), name: "" });
     },

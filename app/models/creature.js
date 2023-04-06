@@ -22,6 +22,7 @@ var Creature = new Schema({
   int: Number,
   wis: Number,
   cha: Number,
+  image: String,
   skills: [],
   stats: [Number, Number, Number, Number, Number, Number],
   saves: String,

@@ -27,6 +27,7 @@
             <option value="construct">Construct</option>
             <option value="dragon">Dragon</option>
             <option value="elemental">Elemental</option>
+            <option value="fey">Fey</option>
             <option value="fiend">Fiend</option>
             <option value="giant">Giant</option>
             <option value="humanoid">Humanoid</option>
@@ -77,7 +78,15 @@
           </div>
         </div>
         <div style="margin-top:10px;"><button class="btn btn-primary btn-sm" @click="addTag()">Add Tag</button></div>
-
+        <div id="imageupload">
+          <div class="row print-hide">
+            <input type="file" id="imageload" class="col-sm" />
+            <div class="col-sm">
+              <input type="button" @click="loadimage()"
+                     class="btn btn-success" value="upload image" />
+            </div>
+          </div>
+        </div>
         <div class="btn-group" style="">
           <button class="btn btn-success" @click="checkCreature()">Submit</button>
           <button class="btn btn-warning" @click="resetForm()">Reset</button>
@@ -147,6 +156,7 @@
         </div>
         <div style="margin-top:10px;"><button class="btn btn-primary btn-sm" @click="addSkill()">Add Skill</button></div>
         </div>
+        <img :src="creature.image" :alt="creature.name" style="max-width:100%;" v-if="creature.image" />
       </div>
 
       <label class="col-sm-6">

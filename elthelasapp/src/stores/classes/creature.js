@@ -20,6 +20,7 @@ export default function () {
     int: 8,
     wis: 8,
     cha: 8,
+    image: "",
     stats: [8, 8, 8, 8, 8, 8],
     skills: [],
     saves: "",

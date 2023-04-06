@@ -159,7 +159,7 @@ export default {
       });
     },
     encounterlink () {
-      return '/runner/' + this.encountercreatures.map((cre) => {
+      return '/tools/runner/' + this.encountercreatures.map((cre) => {
         return cre.name.replace(/ /g, "").toLowerCase();
       }).join("&");
     }
@@ -229,7 +229,7 @@ export default {
         }
       }
       this.xpvalue = xp;
-      xp *= (4 / (this.partysize + 1));
+      xp *= (4 / (this.partysize));
       xp *= (1 + this.encountercreatures.length * 0.1);
       xp *= this.terrain * (1 + 0.05 * this.aoe * this.partysize);
       this.adjustedxpvalue = Math.floor(xp);
