@@ -100,4 +100,3 @@
   </div>
 </template>
 <script src="./js/otherrolls.js"></script>
-<style src="@/views/character/scss/characterbuilder.scss" lang="scss" scoped></style>

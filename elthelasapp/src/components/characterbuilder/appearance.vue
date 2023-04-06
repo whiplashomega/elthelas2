@@ -65,4 +65,3 @@
   </div>
 </template>
 <script src="./js/appearance.js"></script>
-<style src="@/views/character/scss/characterbuilder.scss" lang="scss" scoped></style>

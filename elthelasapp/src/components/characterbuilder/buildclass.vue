@@ -41,4 +41,3 @@
   </div>
 </template>
 <script src="./js/buildclass.js"></script>
-<style src="@/views/character/scss/characterbuilder.scss" lang="scss" scoped></style>

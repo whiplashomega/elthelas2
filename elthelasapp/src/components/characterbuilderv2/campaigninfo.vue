@@ -9,4 +9,3 @@
   </div>
 </template>
 <script src="./js/campaigninfo.js"></script>
-<style src="@/views/character/scss/characterbuilder.scss" lang="scss" scoped></style>

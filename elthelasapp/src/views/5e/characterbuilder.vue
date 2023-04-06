@@ -253,5 +253,4 @@
     </b-modal>
   </div>
 </template>
-<style src="./scss/characterbuilder.scss" scoped lang="scss"></style>
 <script src="./js/characterbuilder.js"></script>

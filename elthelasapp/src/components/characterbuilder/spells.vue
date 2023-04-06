@@ -151,7 +151,7 @@
     <h4>Cast Log</h4>
     <div class="smalltext" v-for="(spell, index) in character.castlog" :key="index">
       {{ spell.title }} {{ spell.level }}
-    </div>    
+    </div>
     <b-modal v-model="spellModal" title="Add Spell"
                        class="modal-lg" :class="userinfo.darkmode" @ok="addSpell(selspell)">
       Filter by Text
@@ -222,4 +222,3 @@
   </div>
 </template>
 <script src="./js/spells.js"></script>
-<style src="@/views/character/scss/characterbuilder.scss" lang="scss" scoped></style>

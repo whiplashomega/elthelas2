@@ -177,12 +177,12 @@
             </tr>
             <tr>
               <th>Score</th>
-              <td><input type="number" class="charsheet-num" style="max-width:30px;" v-model="creature.stats[0]" /></td>
-              <td><input type="number" class="charsheet-num" style="max-width:30px;" v-model="creature.stats[1]" /></td>
-              <td><input type="number" class="charsheet-num" style="max-width:30px;" v-model="creature.stats[2]" /></td>
-              <td><input type="number" class="charsheet-num" style="max-width:30px;" v-model="creature.stats[3]" /></td>
-              <td><input type="number" class="charsheet-num" style="max-width:30px;" v-model="creature.stats[4]" /></td>
-              <td><input type="number" class="charsheet-num" style="max-width:30px;" v-model="creature.stats[5]" /></td>
+              <td><input type="number" class="charsheet-num" style="margin-right:0;" v-model="creature.stats[0]" /></td>
+              <td><input type="number" class="charsheet-num" style="margin-right:0;" v-model="creature.stats[1]" /></td>
+              <td><input type="number" class="charsheet-num" style="margin-right:0;" v-model="creature.stats[2]" /></td>
+              <td><input type="number" class="charsheet-num" style="margin-right:0;" v-model="creature.stats[3]" /></td>
+              <td><input type="number" class="charsheet-num" style="margin-right:0;" v-model="creature.stats[4]" /></td>
+              <td><input type="number" class="charsheet-num" style="margin-right:0;" v-model="creature.stats[5]" /></td>
             </tr>
             <tr>
               <th>Mod</th>
@@ -234,4 +234,3 @@
   </div>
 </template>
 <script src="./js/creaturebuilder.js"></script>
-<style src="@/views/character/scss/characterbuilder.scss" lang="scss"></style>

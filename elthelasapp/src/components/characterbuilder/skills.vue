@@ -51,4 +51,3 @@
   </div>
 </template>
 <script src="./js/skills.js"></script>
-<style src="@/views/character/scss/characterbuilder.scss" lang="scss" scoped></style>

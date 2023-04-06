@@ -144,4 +144,3 @@
   </div>
 </template>
 <script src="./js/equipment.js"></script>
-<style src="@/views/character/scss/characterbuilder.scss" lang="scss" scoped></style>

@@ -79,4 +79,3 @@
   </div>
 </template>
 <script src="./js/characterheader.js"></script>
-<style src="@/views/character/scss/characterbuilder.scss" lang="scss" scoped></style>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="row">
-      
+
       <div class="col-sm">
         <div class="row" style="margin-bottom: 5px;">
           <div class="col-sm-6" >
@@ -90,4 +90,3 @@
   </div>
 </template>
 <script src="./js/loadsave.js"></script>
-<style src="@/views/character/scss/characterbuilder.scss" lang="scss" scoped></style>

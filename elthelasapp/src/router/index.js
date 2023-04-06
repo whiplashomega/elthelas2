@@ -510,28 +510,6 @@ const router = createRouter({
       },
     },
     {
-      path: "/5e/runner",
-      name: "5e Encounter Runner",
-      components: {
-        default: () => import("@/views/5e/runner.vue"),
-      },
-      meta: {
-        title: "Encounter Runner",
-        auth: true,
-      },
-    },
-    {
-      path: "/5e/runner/:id",
-      name: "5e Encounter Runner - Specific",
-      components: {
-        default: () => import("@/views/5e/runner.vue"),
-      },
-      meta: {
-        title: "Encounter Runner",
-        auth: true,
-      },
-    },
-    {
       path: "/5e/magicitems",
       name: "Magic Item Catalog",
       components: {

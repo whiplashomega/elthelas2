@@ -295,4 +295,3 @@
   </div>
 </template>
 <script src="./js/bonus.js"></script>
-<style src="@/views/character/scss/characterbuilder.scss" lang="scss" scoped></style>

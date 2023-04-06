@@ -76,7 +76,6 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><router-link to="/5e/charbuilder" class="dropdown-item">Character Builder</router-link></li>
-                <li v-if="user.isLoggedIn"><router-link to="/5e/runner" class="dropdown-item">Encounter Runner</router-link></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><router-link to="/5e/quick" class="dropdown-item">Quick Reference Manual</router-link></li>
                 <li><router-link to="/5e/magicitems" class="dropdown-item">Magic Item Catalog</router-link></li>

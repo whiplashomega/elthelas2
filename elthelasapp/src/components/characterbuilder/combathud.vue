@@ -119,4 +119,3 @@
   </div>
 </template>
 <script src="./js/combathud.js"></script>
-<style src="@/views/character/scss/characterbuilder.scss" lang="scss"></style>

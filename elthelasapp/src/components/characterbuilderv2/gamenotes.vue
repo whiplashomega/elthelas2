@@ -75,4 +75,3 @@
   </div>
 </template>
 <script src="./js/gamenotes.js"></script>
-<style src="@/views/character/scss/characterbuilder.scss" lang="scss" scoped></style>

@@ -93,4 +93,3 @@
   </div>
 </template>
 <script src="./js/combat.js"></script>
-<style src="@/views/character/scss/characterbuilder.scss" lang="scss" scoped></style>

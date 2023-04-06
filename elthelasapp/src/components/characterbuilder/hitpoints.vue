@@ -67,4 +67,3 @@
   </div>
 </template>
 <script src="./js/hitpoints.js"></script>
-<style src="@/views/character/scss/characterbuilder.scss" lang="scss" scoped></style>

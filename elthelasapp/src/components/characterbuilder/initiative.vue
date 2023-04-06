@@ -8,4 +8,3 @@
   </div>
 </template>
 <script src="./js/initiative.js"></script>
-<style src="@/views/character/scss/characterbuilder.scss" lang="scss" scoped></style>

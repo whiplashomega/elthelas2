@@ -84,4 +84,3 @@
   </div>
 </template>
 <script src="./js/actions.js"></script>
-<style src="@/views/character/scss/characterbuilder.scss" lang="scss" scoped></style>

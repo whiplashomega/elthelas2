@@ -41,4 +41,3 @@
   </div>
 </template>
 <script src="./js/resources.js"></script>
-<style src="@/views/character/scss/characterbuilder.scss" lang="scss" scoped></style>

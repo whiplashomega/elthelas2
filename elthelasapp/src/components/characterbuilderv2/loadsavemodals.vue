@@ -24,4 +24,3 @@
   </div>
 </template>
 <script src="./js/loadsavemodals.js"></script>
-<style src="@/views/character/scss/characterbuilder.scss" lang="scss" scoped></style>

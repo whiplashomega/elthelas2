@@ -41,10 +41,10 @@
             Minimum Disposition: {{ faction.rank.minDisposition }}
           </div>
           <div class="col-sm-1">
-            <button class="btn btn-danger btn-sm" @click="removeFaction(index)">-</button> 
+            <button class="btn btn-danger btn-sm" @click="removeFaction(index)">-</button>
           </div>
         </div>
-        
+
         <button @click="addFaction()" class="btn btn-primary btn-sm">+</button>
       </div>
     </div>
@@ -107,4 +107,3 @@
   </div>
 </template>
 <script src="./js/fluff.js"></script>
-<style src="@/views/character/scss/characterbuilder.scss" lang="scss" scoped></style>

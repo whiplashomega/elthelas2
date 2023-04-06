@@ -174,4 +174,3 @@
   </div>
 </template>
 <script src="./js/attacks.js"></script>
-<style src="@/views/character/scss/characterbuilder.scss" lang="scss" scoped></style>
