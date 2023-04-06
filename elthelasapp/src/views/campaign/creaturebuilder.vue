@@ -161,7 +161,7 @@
 
       <label class="col-sm-6">
         Ability Scores
-        <table class="table table-striped">
+        <table class="table table-striped table-sm">
           <thead>
             <tr><th></th><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr>
           </thead>
@@ -177,12 +177,12 @@
             </tr>
             <tr>
               <th>Score</th>
-              <td><input type="number" class="charsheet-num" v-model="creature.stats[0]" /></td>
-              <td><input type="number" class="charsheet-num" v-model="creature.stats[1]" /></td>
-              <td><input type="number" class="charsheet-num" v-model="creature.stats[2]" /></td>
-              <td><input type="number" class="charsheet-num" v-model="creature.stats[3]" /></td>
-              <td><input type="number" class="charsheet-num" v-model="creature.stats[4]" /></td>
-              <td><input type="number" class="charsheet-num" v-model="creature.stats[5]" /></td>
+              <td><input type="number" class="charsheet-num" style="max-width:30px;" v-model="creature.stats[0]" /></td>
+              <td><input type="number" class="charsheet-num" style="max-width:30px;" v-model="creature.stats[1]" /></td>
+              <td><input type="number" class="charsheet-num" style="max-width:30px;" v-model="creature.stats[2]" /></td>
+              <td><input type="number" class="charsheet-num" style="max-width:30px;" v-model="creature.stats[3]" /></td>
+              <td><input type="number" class="charsheet-num" style="max-width:30px;" v-model="creature.stats[4]" /></td>
+              <td><input type="number" class="charsheet-num" style="max-width:30px;" v-model="creature.stats[5]" /></td>
             </tr>
             <tr>
               <th>Mod</th>
