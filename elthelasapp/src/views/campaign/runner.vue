@@ -220,4 +220,4 @@
   </div>
 </template>
 <script src="./js/runner.js"></script>
-<style src="./scss/runner.scss" lang="scss" scoped></style>
+<style src="./scss/runner.scss" lang="scss"></style>
