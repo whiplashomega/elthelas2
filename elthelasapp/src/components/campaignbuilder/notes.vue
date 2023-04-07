@@ -2,16 +2,19 @@
   <div>
     <div v-if="campaign" class="col-sm-12">
       <div class="notes">
-        <h1 v-if="!campaign.buildmode">{{ campaign.title }} <button @click="campaign.buildmode = true" class="btn btn-primary">&#9998;</button></h1>
+        <h2 v-if="!campaign.buildmode">{{ campaign.title }} <button @click="campaign.buildmode = true" class="btn btn-primary btn-sm">&#9998;</button></h2>
         <div class="row" v-if="campaign.buildmode">
           <label class="col-sm-6">
             Campaign Title
-            <input type="text" v-model="campaign.title" class="form-control" /> <button @click="campaign.buildmode = false" class="btn btn-primary">Done</button>
+            <input type="text" v-model="campaign.title" class="charsheet-text" />
           </label>
-          <label class="col-sm-6">
+          <label class="col-sm-5">
             URI (campaign information will be reachable via https://elthelas.com/tools/campaigns/{{ campaign.url }}
-            <input type="text" v-model="campaign.url" class="form-control" />
+            <input type="text" v-model="campaign.url" class="charsheet-text" />
           </label>
+          <div class="col-sm-1 btn-group">
+             <button @click="campaign.buildmode = false" class="btn btn-primary btn-sm">Done</button>
+          </div>
         </div>
         <div class="row">
           <div class="col-sm-3" v-if="showChapters">
@@ -24,13 +27,15 @@
             <button class="btn btn-primary" @click="addChapter()" style="margin-top: 12px;">Add Chapter</button>
           </div>
           <div :class="showChapters ? 'col-sm-9' : 'col-sm-12'">
-            <h2 v-if="!chapter.buildmode">{{ chapter.title }} <button @click="chapter.buildmode = true" class='btn btn-primary'>&#9998;</button></h2>
+            <h3 v-if="!chapter.buildmode">{{ chapter.title }} <button @click="chapter.buildmode = true" class='btn btn-primary btn-sm'>&#9998;</button></h3>
             <div class="row" v-if="chapter.buildmode">
-              <label class="col-sm-12">
+              <label class="col-sm-11">
                 Chapter Title
-                <input type="text" class="form-control" v-model="chapter.title" />
+                <input type="text" class="charsheet-text btn-sm" v-model="chapter.title" />
               </label>
-              <button @click="chapter.buildmode = false" class="btn btn-primary">Done</button>
+              <div class="btn-group col-sm-1">
+                <button @click="chapter.buildmode = false" class="btn btn-primary">Done</button>
+              </div>
             </div>
             <div v-for="(encounter, $index) in chapter.encounters" :key="encounter.id" :class="encounter.complete ? 'complete' : ''">
               <div v-if="!encounter.buildmode">
@@ -62,17 +67,17 @@
                 <div class="row">
                   <div class="col-sm-6">
                     <label>Name</label><button @click="moveEnUp($index)">↑</button><button @click="moveEnDown($index)">↓</button><button @click="deleteEncounter($index)">&#128465;</button>
-                    <input type="text" class="form-control" v-model="encounter.name" />
+                    <input type="text" class="charsheet-text" v-model="encounter.name" />
                   </div>
                   <div class="col-sm-6">
                     <label>Runner Link</label>
-                    <input type="text" class="form-control" v-model="encounter.link" />
+                    <input type="text" class="charsheet-text" v-model="encounter.link" />
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-sm-6">
                     <label>Image URL</label>
-                    <input type="text" class="form-control" v-model="encounter.image" />
+                    <input type="text" class="charsheet-text" v-model="encounter.image" />
                   </div>
                   <div class="col-sm-4">
                     <label>Flags</label>
@@ -125,7 +130,7 @@
                     <button @click="moveSectionDown($index)" class="btn btn-sm">↓</button>
                     <button @click="deleteSection(section)" class="btn btn-sm">&#128465;</button>
                     <button @click="section.buildmode = false" class="btn btn-sm">Done</button>
-                    <input type="text" class="form-control" v-model="section.title" />
+                    <input type="text" class="charsheet-text" v-model="section.title" />
                   </div>
                 </div>
                 <div class="form-check">
@@ -133,11 +138,10 @@
                   <label class="form-check-label">Hide</label>
                 </div>
                 <div class="row" v-if="!section.hidden">
-                  <div class="col-sm-6">
+                  <div class="col-sm-12">
                     <label>Section Description (markdown allowed)</label>
                     <textarea v-model="section.description" class="form-control encounterbox"></textarea>
                   </div>
-                  <div class="col-sm-6" v-html="marked.parse(section.description)"></div>
                 </div>
               </div>
               <div v-if="!section.hidden">
@@ -172,24 +176,24 @@
                   <div v-if="encounter.buildmode">
                     <hr />
                     <div class="row">
-                      <div class="col-sm-6">
-                        <label>Name</label><button @click="moveEncounterUpInSection({ section: section, index: $index })" class="btn btn-xs">↑</button>
-                        <button @click="moveEncounterDownInSection({ section: section, index: $index })" class="btn btn-sm">↓</button>
-                        <button @click="deleteEncounterFromSection({ section: section, encounter: encounter })" class="btn btn-xs">&#128465;</button>
-                        <button @click="encounter.buildmode = false" class="btn btn-xs">Done</button>
-                        <input type="text" class="form-control" v-model="encounter.name" />
-                      </div>
-                      <div class="col-sm-6">
-                        <label>Runner Link</label>
-                        <input type="text" class="form-control" v-model="encounter.link" />
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <label>Image URL</label>
-                        <input type="text" class="form-control" v-model="encounter.image" />
-                      </div>
                       <div class="col-sm-4">
+                        <label>Name</label><button @click="moveEncounterUpInSection({ section: section, index: $index })" class="btn btn-sm">↑</button>
+                        <button @click="moveEncounterDownInSection({ section: section, index: $index })" class="btn btn-sm">↓</button>
+                        <button @click="deleteEncounterFromSection({ section: section, encounter: encounter })" class="btn btn-sm">&#128465;</button>
+                        <button @click="encounter.buildmode = false" class="btn btn-sm">Done</button>
+                        <input type="text" class="charsheet-text" v-model="encounter.name" />
+                      </div>
+                      <div class="col-sm-3">
+                        <label>Runner Link</label>
+                        <input style="margin-top:8px;" type="text" class="charsheet-text" v-model="encounter.link" />
+                      </div>
+
+                      <div class="col-sm-3">
+                        <label>Image URL</label>
+                        <input style="margin-top:8px;" type="text" class="charsheet-text" v-model="encounter.image" />
+                      </div>
+
+                      <div class="col-sm-2">
                         <label>Flags</label>
                         <div class="form-check">
                           <input type="checkbox" class="form-check-input" v-model="encounter.complete" />
@@ -198,11 +202,10 @@
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-sm-6">
+                      <div class="col-sm-12">
                         <label>Encounter Text (markdown allowed)</label>
                         <textarea v-model="encounter.text" class="form-control"></textarea>
                       </div>
-                      <div class="col-sm-6" v-html="marked.parse(encounter.text)"></div>
                     </div>
                     <div>
                       <label>Potential Treasure (markdown allowed)</label>

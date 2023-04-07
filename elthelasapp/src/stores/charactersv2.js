@@ -296,7 +296,7 @@ export default {
         return true;
       }).catch(function() {
         alert("error when loading, please try logging off and in again");
-        comp.$root.$emit('bv::hide::modal', 'loading');
+        //comp.$root.$emit('bv::hide::modal', 'loading');
       });
     },
     setRaceDefaults () {
@@ -429,7 +429,7 @@ export default {
         }, false);
         if (f) {
           r.readAsDataURL(f);
-        }        
+        }
       }
     },
     loadCharacter () {

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="row" v-for="(charclass, index) in character.charclasses" :key="index">
-      <div class="col-sm-4">
+      <div class="col-sm-3">
         <select class="charsheet-text" v-model="charclass.thisclass">
           <option :value="charclass.thisclass">{{ charclass.thisclass.name }}</option>
           <option v-for="classoption in classes" :value="classoption" :key="classoption.name">
@@ -19,7 +19,6 @@
       </div>
       <div class="col-sm-2">
         <input type="number" class="charsheet-text" v-model="charclass.level" />
-        <button type="button" class="btn btn-sm btn-danger" @click="removeclass(index)">X</button>
       </div>
       <div class="col-sm-2">
         <select class="charsheet-text" v-model="charclass.savedcstat">
@@ -30,6 +29,9 @@
           <option :value="4">WIS</option>
           <option :value="5">CHA</option>
         </select>
+      </div>
+      <div class="col-sm-1">
+        <button type="button" class="btn btn-sm btn-danger" @click="removeclass(index)">X</button>
       </div>
     </div>
     <div class="row">

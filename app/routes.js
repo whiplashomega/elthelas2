@@ -97,8 +97,7 @@ module.exports = function(app, staticDir, server) {
     var strongholds = require('./strongholds');
     var campaigns = require('./campaigns');
     var creatures = require('./creatures');
-    var creaturesv2 = require('./creaturesv2');
-    
+
     app.use('/users', users);
     app.use('/characters', characters);
     app.use('/charactersv2', charactersv2);
@@ -106,16 +105,15 @@ module.exports = function(app, staticDir, server) {
     app.use('/strongholds', strongholds);
     app.use('/campaigns', campaigns);
     app.use('/creatures', creatures);
-    app.use('/creaturesv2', creaturesv2);
 
     app.use(express.static(appRoot, { maxAge: 365 }));
-    
+
     //generate the sitemap on request
     app.get('/sitemap.xml', function(req, res) {
         var sm = require('sitemap');
         var sitemap = sm.createSitemap ({
           hostname: 'https://elthelas.com',
-          cacheTime: 600000,        // 600 sec - cache purge period 
+          cacheTime: 600000,        // 600 sec - cache purge period
         urls: sitemapurls
         });
         sitemap.toXML( function (err, xml) {
@@ -125,7 +123,7 @@ module.exports = function(app, staticDir, server) {
             res.header('Content-Type', 'application/xml');
             res.send( xml );
         });
-    });  
+    });
 
     // frontend routes =========================================================
     // route to handle all angular requests

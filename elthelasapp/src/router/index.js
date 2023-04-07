@@ -400,17 +400,6 @@ const router = createRouter({
       },
     },
     {
-      path: "/options/create",
-      name: "Character Creation",
-      components: {
-        default: () => import("@/views/character/create.vue")
-      },
-      meta: {
-        title: "Character Creation",
-        auth: false
-      }
-    },
-    {
       path: "/ref/srd",
       name: "System Reference Document",
       components: {

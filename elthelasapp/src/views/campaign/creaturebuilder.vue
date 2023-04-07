@@ -64,6 +64,10 @@
             <input type="text" class="charsheet-text" v-model="creature.damageimmunities" />
           </label>
           <label>
+            Damage Vulnerabilities
+            <input type="text" class="charsheet-text" v-model="creature.damagevulnerabilities" />
+          </label>
+          <label>
             Condition Immunities
             <input type="text" class="charsheet-text" v-model="creature.conditionimmunities" />
           </label>
@@ -226,8 +230,12 @@
           </tbody>
         </table>
         <div>
-          <label>Description, Actions, and Abilities</label>
+          <label>Actions, and Abilities</label>
           <textarea class="form-control" style="min-height:600px" v-model="creature.description"></textarea>
+        </div>
+        <div>
+          <label>Description and Fluff</label>
+          <textarea class="form-control" style="min-height:600px" v-model="creature.fluff"></textarea>
         </div>
       </label>
     </div>

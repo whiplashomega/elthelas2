@@ -1,7 +1,14 @@
 <template>
   <div>
     PC Manager
-    <input type="text" v-model="pcid" /><button class="btn btn-success" @click="addToCampaign()">Add PC</button>
+    <div class="row">
+      <div class="col-sm-3">
+        <input type="text" v-model="pcid" class="charsheet-text" title="input the character id number found in the campaign info section of the character sheet to add them to the tracker." />
+      </div>
+      <div class="col-sm-1 btn-group">
+        <button class="btn btn-primary btn-sm" @click="addToCampaign()">Add PC</button>
+      </div>
+    </div>
     <div class="row">
       <div v-for="pc in pcs" :key="pc._id" class="col-sm-3">
         <h4><router-link :to="'/tools/charbuilder/' + pc._id" target="_blank">{{ pc.name }}</router-link></h4>

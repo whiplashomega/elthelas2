@@ -283,14 +283,15 @@ export default {
       // comp.$root.$emit('bv::show::modal', 'loading');
       axios.delete('/characters/' + character._id + '?token=' + localStorage.getItem('token')).then((res) => {
         if (res.data.success) {
-          comp.$root.$emit('bv::hide::modal', 'loading');
-          comp.$root.$emit('bv::show::modal', 'servermodal');
+          //comp.$root.$emit('bv::hide::modal', 'loading');
+          //comp.$root.$emit('bv::show::modal', 'servermodal');
           comp.characters.splice(comp.characters.indexOf(character), 1);
+          res(true);
         }
-        return true;
-      }).catch(function() {
+      }).catch(function(e) {
+        console.log(e);
         alert("error when loading, please try logging off and in again");
-        comp.$root.$emit('bv::hide::modal', 'loading');
+        //comp.$root.$emit('bv::hide::modal', 'loading');
       });
     },
     setRaceDefaults () {
@@ -423,7 +424,7 @@ export default {
         }, false);
         if (f) {
           r.readAsDataURL(f);
-        }        
+        }
       }
     },
     loadCharacter () {

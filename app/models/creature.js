@@ -31,9 +31,11 @@ var Creature = new Schema({
   conditionimmunities: String,
   languages: String,
   damageresistances: String,
+  damagevulnerabilities: String,
   locations: String,
   latlong: [],
-  description: String
+  description: String,
+  fluff: String,
 });
 
 module.exports = mongoose.model('Creature', Creature);

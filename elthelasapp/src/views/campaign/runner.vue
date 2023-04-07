@@ -111,6 +111,7 @@
               <strong>Senses:</strong> {{ creature.senses }} <br />
               <span v-if="creature.damageresistances"><strong>Damage Resistances:</strong> {{ creature.damageresistances }} <br /></span>
               <span v-if="creature.damageimmunities"><strong>Damage Immunities:</strong> {{ creature.damageimmunities }} <br /></span>
+              <span v-if="creature.damagevulnerabilities"><strong>Damage Vulnerabilities:</strong> {{ creature.damagevulnerabilities }}<br /></span>
               <span v-if="creature.conditionimmunities"><strong>Condition Immunities:</strong> {{ creature.conditionimmunities }} <br /></span>
               <strong>Languages:</strong> {{ creature.languages }} <br />
               <strong>Challenge:</strong> {{ creature.cr }}

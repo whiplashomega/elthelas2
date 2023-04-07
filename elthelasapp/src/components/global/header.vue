@@ -13,7 +13,6 @@
                 Characters
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><router-link to="/options/create" class="dropdown-item">Character Creation</router-link></li>
                 <li><router-link to="/tools/charbuilder" class="dropdown-item">Character Builder</router-link></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><router-link to="/options/alignment" class="dropdown-item">Alignment</router-link></li>
