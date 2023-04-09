@@ -85,7 +85,7 @@ export default {
     }
   },
   mounted () {
-    this.staticsStore.getAll().then(() => {
+    this.staticsStore.getAllNew().then(() => {
       if (this.$route.params.id) {
         this.shownClass = this.classes.filter((a) => {
           return a.name.toLowerCase() === this.$route.params.id.toLowerCase();
