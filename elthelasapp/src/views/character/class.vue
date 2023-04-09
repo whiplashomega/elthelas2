@@ -52,17 +52,18 @@
       </p>
       <h4>Equipment</h4>
       <ul>
-        <li>Select one suit of armor with which you are proficient that costs 300 gp or less. <router-link to="/ref/quick">See the Quick Reference Manual for details on options.</router-link>
+        <li>Select one suit of armor with which you are proficient that costs 300 gp or less. <router-link to="/ref/equipment">See the Equipment page for details on options.</router-link>
           <ul>
             <li>Light Armor: Leather Cuirass, Scale Cuirass, Leather Hauberk, Chain Cuirass.</li>
             <li>Medium Armor: Leather Full Armor, Scale Hauberk, Chain Hauberk</li>
             <li>Heavy Armor: Scale Full Armor, Chain Full Armor</li>
           </ul>
         </li>
-        <li>Select up to 3 weapons with which you are proficient. Again, <router-link to="/ref/quick">see the Quick Reference Manual for options.</router-link> If one of your weapons requires ammunition, take 50 units of basic, nonmagical ammunition for the weapon (such as bullets for a sling, darts for a blowgun, arrows for a longbow, or bolts for a light crossbow). If you are proficient with shields, you may select a wooden or steel shield in place of one weapon.</li> 
+        <li>Select up to 3 weapons with which you are proficient. Again, <router-link to="/ref/equipment">see the Equipment page for options.</router-link> If one of your weapons requires ammunition, take 50 units of basic, nonmagical ammunition for the weapon (such as bullets for a sling, darts for a blowgun, arrows for a longbow, or bolts for a light crossbow). If you are proficient with shields, you may select a wooden or steel shield in place of one weapon.</li>
         <li>If you are proficient with one or more sets of tools, add one set of tools to your inventory that you are proficient with.</li>
         <li>If you are proficient with one or more instruments or gaming sets, add one instrument or gaming set you are proficient with.</li>
         <li>If your class can cast spells, one spellcasting focus appropriate for your class.</li>
+        <li v-if="shownClass.name === 'Wizard' || shownClass.name === 'Factotum'">A spellbook.</li>
         <li>Select one equipment pack from the following list:
           <ul>
             <li>Burglar's Pack - Includes a backpack, a bag of 1,000 ball bearings, 10 feet of string, a bell, 5 candles, a crowbar, a hammer, 10 pitons, a hooded lantern, 2 flasks of oil, 5 days rations, a tinderbox, and a waterskin. The pack also has 50 feet of hempen rope strapped to the side of it.</li>

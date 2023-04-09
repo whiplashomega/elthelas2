@@ -49,17 +49,8 @@
     <!-- Features -->
     <div class="charsheet-static" id="featurebox">
       Features
-      <p class="smalltext" v-if="character.background.feature.name.length > 0">
-        <span :title="character.background.feature.description">{{ character.background.feature.name }}</span>
-        <button class="btn btn-sm print-hide float-right" type="button"
-                @click="setval(character.background.feature, 'show', true)" v-if="!character.background.feature.show">
-          &#x25BC;
-        </button>
-        <button class="btn btn-sm print-hide float-right" type="button"
-                @click="setval(character.background.feature, 'show', false)" v-if="character.background.feature.show">
-          &#x25B2;
-        </button>
-        <span v-if="character.background.feature.show" v-html="marked.parse(character.background.feature.description)"></span>
+      <p class="smalltext" v-if="character.background.feature.length > 0">
+        <span title="You should select this feat as the first feat in the feat list above. If you want a different first level feat you can select that instead.">Background Feat: {{ character.background.feature }}</span>
       </p>
       <div v-for="trait in character.race.traits" class="smalltext" :key="trait.name">
         <p>
