@@ -70,7 +70,6 @@ var Characterv2 = new Schema({
   equipment: [],
   containers: [],
   rolls: [],
-  housespellsknown: { type: Boolean, default: true },
   bonusslots: [Number],
   resources: [],
   features: [],

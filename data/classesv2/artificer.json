@@ -27,7 +27,7 @@
     {
       "name": "Magickal Tinkering",
       "minlevel": 1,
-      "counttype": "INT",
+      "counttype": "INT1",
       "count": 0,
       "recovery": "none"
     },
@@ -241,7 +241,7 @@
           "minlevel": 3,
           "counttype": "fixed",
           "count": 1,
-          "recovery": "longrest"          
+          "recovery": "longrest"
         }
       ],
       "features": [
@@ -288,7 +288,7 @@
           "minlevel": 9,
           "counttype": "INT1",
           "count": 0,
-          "recovery": "longrest"          
+          "recovery": "longrest"
         }
       ],
       "features": [

@@ -269,7 +269,7 @@
     "prereq": "4th level",
     "description": "You possess exceptional speed and stamina, granting you the following benefits:\n\n* Increase your dexterity or constitution score by 1, to a maximum of 20.\n* Your speed increases by 10 feet while yo uaren't wearing heavy armor.\n* When you take the dash action on your turn, difficult terrain doesn't cost you extra movement for the rest of the turn."
   },
-  { 
+  {
     "name": "Spell Sniper",
     "prereq": "The ability to cast at least one spell, 4th level",
     "description": "You have learned techniques to enhance your attacks with certain kinds o f spells, gaining the following benefits:\n\n* Increase your intelligence, wisdom, or charisma score by 1 to a maximum of 20.\n* Your attack rolls for spells ignore half cover and three-quarters cover.\n* Being within 5 feet of an enemy doesn't impose disadvantage on your attack rolls with spells.\nWhen you cast a spell that has a range of at least 10 feet that requires you to make an attack roll, you can increase the spells range by 60 feet."
@@ -393,10 +393,5 @@
     "name": "Trollkin Regeneration",
     "prereq": "Trollkin, 4th level",
     "description": "Your troll blood gives you the ability to shrug off injuries and heal quickly, even to regenerate limbs over time. \n\n* Increase your strength or constitution score by 1 up to maximum of 20. \n* You gain the ability to regenerate from wounds. As long as you are conscious you regain 1 hit point every minute.\n* If you suffer an injury to your body such as a lost limb, finger, or broken bones, that can be healed with the regenerate spell, you can recover completely from that wound in 1 week without any other intervention."
-  },
-  {
-    "name": "Unrelenting",
-    "prereq": "4th level",
-    "description": "* Increase your Constitution score by 1, to a maximum of 20.\n* If you would fall to 0 hit points or die, instead, you may permanently mark a death saving throw as failed and your hit points become equal to 1/3 your total health rounded up. If all death saving throws are marked as failed then your character dies and cannot be resurrected outside of divine intervention."
   }
 ]

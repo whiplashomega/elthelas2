@@ -14,7 +14,6 @@
       <button class="btn btn-sm btn-primary" @click="displayLevel = 'level9'">9</button>
     </div>
     <span class="smalltext print-hide"><input type="checkbox" v-model="preparedonly" />Prepared Only</span><br />
-    <span class="smalltext print-hide"><input type="checkbox" v-model="character.housespellsknown" />Use House-Ruled Domain-Style Spell Lists</span><br />
     <table class="table table-sm smalltext">
       <tr>
         <th>Class</th><th v-for="cl in character.charclasses" :key="cl.thisclass.name">{{ cl.thisclass.name }}</th>

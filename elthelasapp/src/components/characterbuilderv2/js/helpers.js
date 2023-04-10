@@ -14,7 +14,7 @@ export default {
       }
     }
   },
-  artificerResources (vue, character, a) {
+  /*artificerResources (vue, character, a) {
     this.addAbility(character, "Flash of Genius", vue.getStatMod(3), "longrest", 7, a);
     this.addAbility(character, "Spell-Storing Item", 2 * vue.getStatMod(3), "longrest", 11, a);
     if (a.selsubclass.name === "Alchemist") {
@@ -190,5 +190,51 @@ export default {
       rage.current++;
     }
     return rage;
+  },*/
+  resourcePopulator: function(character, cl, res) {// character.resources = [{ name: 'x', recharge: 'x', current: 0, max: 0 }]
+    if (cl.level >= res.minlevel) {
+      var resource = { name: res.name, recharge: res.recovery };
+      if (res.counttype === "STR1") {
+        resource.max = calc.statMod(character, 0) + res.count;
+      } else if (res.counttype === "STR2") {
+        resource.max = calc.statMod(character, 0) * 2 + res.count;
+      } else if (res.counttype === "DEX1") {
+        resource.max = calc.statMod(character, 1) + res.count;
+      } else if (res.counttype === "DEX2") {
+        resource.max = calc.statMod(character, 1) * 2 + res.count;
+      } else if (res.counttype === "CON1") {
+        resource.max = calc.statMod(character, 2) + res.count;
+      } else if (res.counttype === "CON2") {
+        resource.max = calc.statMod(character, 2) * 2 + res.count;
+      } else if (res.counttype === "INT1") {
+        resource.max = calc.statMod(character, 3) + res.count;
+      } else if (res.counttype === "INT2") {
+        resource.max = calc.statMod(character, 3) * 2 + res.count;
+      } else if (res.counttype === "WIS1") {
+        resource.max = calc.statMod(character, 4) + res.count;
+      } else if (res.counttype === "WIS2") {
+        resource.max = calc.statMod(character, 4) * 2 + res.count;
+      } else if (res.counttype === "CHA1") {
+        resource.max = calc.statMod(character, 5) + res.count;
+      } else if (res.counttype === "CHA2") {
+        resource.max = calc.statMod(character, 5) * 2 + res.count;
+      } else if (res.counttype === "table") {
+        resource.max = res.count.findLast((a) => a[0] <= cl.level)[1];
+      } else if (res.counttype === "fixed") {
+        resource.max = res.count;
+      } else if (res.counttype === "prof") {
+        resource.max = calc.profbonus(character) + res.count;
+      }
+      if (resource.name === "Bardic Inspiration" && cl.level >= 5) {
+        resource.recharge = "shortrest";
+      }
+      resource.current = resource.max;
+      let curi = character.resources.findIndex((a) => a.name === res.name);
+      if (curi !== -1) {
+        character.resources.splice(curi, 1, resource);
+      } else {
+        character.resources.push(resource);
+      }
+    }
   }
 };

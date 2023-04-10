@@ -5,7 +5,7 @@ import { storeToRefs } from 'pinia';
 export default {
   setup () {
     const characters = useCharacterv2Store();
-    
+
     const { character, getStatMod, totalslots, warlockSlots, warlockSlotLevel, shortrest, longrest } =  storeToRefs(characters);
 
     return {
@@ -46,42 +46,12 @@ export default {
     },
     populateResources() {
       this.character.charclasses.forEach((a) => {
-        if (a.thisclass.name === "Artificer") {
-          helpers.artificerResources(this, this.character, a);
-        }
-        if (a.thisclass.name === "Barbarian") {
-          helpers.barbResources(this, this.character, a);
-        }
-        if (a.thisclass.name === "Bard") {
-          helpers.bardResources(this, this.character, a);
-        }
-        if (a.thisclass.name === "Cleric") {
-          helpers.clericResources(this, this.character, a);
-        }
-        if (a.thisclass.name === "Druid") {
-          helpers.druidResources(this, this.character, a);
-        }
-        if (a.thisclass.name === "Factotum") {
-          helpers.factotumResources(this, this.character, a);
-        }
-        if (a.thisclass.name === "Fighter") {
-          helpers.fighterResources(this, this.character, a);
-        }
-        if (a.thisclass.name === "Monk") {
-          helpers.monkResources(this, this.character, a);
-        }
-        if (a.thisclass.name === "Paladin") {
-          helpers.paladinResources(this, this.character, a);
-        }
-        if (a.thisclass.name === "Sorcerer") {
-          helpers.sorcererResources(this, this.character, a);
-        }
-        if (a.thisclass.name === "Warlock") {
-          helpers.warlockResources(this, this.character, a);
-        }
-        if (a.thisclass.name === "Wizard") {
-          helpers.wizardResources(this, this.character, a);
-        }
+        a.thisclass.resources.forEach((b) => {
+          helpers.resourcePopulator(this.character, a, b);
+        });
+        a.selsubclass.resources.forEach((c) => {
+          helpers.resourcePopulator(this.character, a, c);
+        });
       });
     }
   }

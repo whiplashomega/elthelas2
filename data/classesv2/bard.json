@@ -31,7 +31,7 @@
     {
       "level": 1,
       "name": "Bardic Inspiration",
-      "description": "You can inspire others through stirring words or music. When another creature makes an attack, ability check, or saving throw, you can use a reaction to let them add a bardic inspiration die, a d6, to the roll. You can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the DM says whether the roll succeeds or fails. \n\nYou can use this feature a number of times equal to your proficiency bonus. You regain any expended uses when you finish a long rest.\n\nYour Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a dl2 at 15th level."
+      "description": "You can inspire others through stirring words or music. When another creature makes an attack, ability check, or saving throw, you can use a reaction to let them add a bardic inspiration die, a d6, to the roll. You can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the DM says whether the roll succeeds or fails. \n\nYou can use this feature a number of times equal to your proficiency bonus. You regain any expended uses when you finish a long rest.\n\nYour Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level."
     },
     {
       "level": 2,

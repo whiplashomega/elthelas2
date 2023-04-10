@@ -51,7 +51,7 @@ export default {
     return Number(ac) + Number(shield) + Number(character.acmagic);
   },
   pcCalc (character) {
-    let pc = character.armors.reduce((b, a) => {    
+    let pc = character.armors.reduce((b, a) => {
       if (a.equipped) {
         return this.armorPC(character, a) > b ? this.armorPC(character, a) : b;
       } else {
