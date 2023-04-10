@@ -143,7 +143,7 @@
           </label>
         </b-col>
         <b-col md="6">
-          <router-link to="/tools/creaturebuilder" class="btn btn-primary">New Creature</router-link>
+          <router-link to="/tools/creaturebuilder" class="btn btn-primary" style="margin-top:25px;">New Creature</router-link>
         </b-col>
         <b-col md="4" class="my-1">
           <b-input-group>
