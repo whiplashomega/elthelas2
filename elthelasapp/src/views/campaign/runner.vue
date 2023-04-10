@@ -143,13 +143,7 @@
           </label>
         </b-col>
         <b-col md="6">
-          <b-form-checkbox-group v-model="creaturestable.filterBy">
-            <b-form-checkbox value="name">Name</b-form-checkbox>
-            <b-form-checkbox value="size">Size</b-form-checkbox>
-            <b-form-checkbox value="cr">CR</b-form-checkbox>
-            <b-form-checkbox value="subtype">Subtype</b-form-checkbox>
-            <b-form-checkbox value="alignment">Alignment</b-form-checkbox>
-          </b-form-checkbox-group>
+          <router-link to="/tools/creaturebuilder" class="btn btn-primary">New Creature</router-link>
         </b-col>
         <b-col md="4" class="my-1">
           <b-input-group>
