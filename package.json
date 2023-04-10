@@ -7,8 +7,7 @@
   "scripts": {
     "postinstall": "cd elthelasapp && npm install",
     "dev": "nodemon server.js",
-    "run": "node server.js",
-    "build": "./buildscript.sh"
+    "run": "node server.js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
