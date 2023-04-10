@@ -24,10 +24,8 @@
     <div class="row">
       <div class="col">
         <div class="charsheet-static">
-          Speed: {{ getSpeedStat(0) }} ft<br />
-          Fly: {{ getSpeedStat(1) }} ft<br />
-          Climb: {{ getSpeedStat(2) }} ft<br />
-          Swim: {{ getSpeedStat(3) }} ft<br />
+          Speed: {{ getSpeedStat(0) }} ft&nbsp;&nbsp;Fly: {{ getSpeedStat(1) }} ft<br />
+          Climb: {{ getSpeedStat(2) }} ft&nbsp;&nbsp;Swim: {{ getSpeedStat(3) }} ft<br />
           Burrow: {{ getSpeedStat(4) }} ft
         </div>
       </div>

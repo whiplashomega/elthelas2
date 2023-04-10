@@ -417,7 +417,7 @@
    "Resistance": "-",
    "Rarity": "Rare",
    "Weight": 15,
-   "Cost": 5000
+   "Cost": 4000
  },
  {
    "Armor": "Mithril Chain Full Armor",
@@ -431,7 +431,49 @@
    "Resistance": "-",
    "Rarity": "Rare",
    "Weight": 22,
-   "Cost": 7500
+   "Cost": 6500
+ },
+  {
+   "Armor": "Mithril Plate Cuirass",
+   "Type": "Light",
+   "AC": 14,
+   "PC": 2,
+   "MaxDex": 4,
+   "Stealth": "-",
+   "Intimidation": "-",
+   "Strength": "-",
+   "Resistance": "-",
+   "Rarity": "Rare",
+   "Weight": 10,
+   "Cost": 8300
+ },
+ {
+   "Armor": "Mithril Plate Hauberk",
+   "Type": "Light",
+   "AC": 14,
+   "PC": 3,
+   "MaxDex": 3,
+   "Stealth": "-",
+   "Intimidation": "-",
+   "Strength": "-",
+   "Resistance": "-",
+   "Rarity": "Rare",
+   "Weight": 20,
+   "Cost": 16500
+ },
+ {
+   "Armor": "Mithril Plate Full Armor",
+   "Type": "Medium",
+   "AC": 16,
+   "PC": 4,
+   "MaxDex": 1,
+   "Stealth": "Disadvantage",
+   "Intimidation": "-",
+   "Strength": "-",
+   "Resistance": "-",
+   "Rarity": "Rare",
+   "Weight": 32,
+   "Cost": 25000
  },
  {
    "Armor": "Parakas Steel Plate Cuirass",

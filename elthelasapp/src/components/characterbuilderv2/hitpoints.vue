@@ -15,8 +15,18 @@
     <div class="row">
       <div class="col">
         <div class="charsheet-static">
-          Damage: <input type="number" class="charsheet-num"
-                         v-model="damagetaken" :min="0" />
+          <div class="row">
+            <div class="col-sm-6">
+              Damage: <input type="number" class="charsheet-num"
+                             v-model="damagetaken" :min="0" />
+            </div>
+            <div>
+              <div class="btn-group">
+                <input type="button" class="btn btn-sm btn-danger"
+                       value="Take Damage" @click="applyDamage()" />
+              </div>
+            </div>
+          </div>
           <div class="alert alert-warning smalltext" v-if="character.dr[dtype] != '0'">
             Affected by Resistance
           </div>
@@ -37,10 +47,6 @@
             <option value="ignore">Ignores Resistance</option>
             <option value="healing">Healing</option>
           </select>
-          <div class="btn-group">
-            <input type="button" class="btn btn-sm btn-danger"
-                   value="Take Damage" @click="applyDamage()" />
-          </div>
         </div>
       </div>
     </div>
