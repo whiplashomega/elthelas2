@@ -194,36 +194,34 @@ export default {
   resourcePopulator: function(character, cl, res) {// character.resources = [{ name: 'x', recharge: 'x', current: 0, max: 0 }]
     if (cl.level >= res.minlevel) {
       var resource = { name: res.name, recharge: res.recovery };
-      if (res.counttype === "STR1") {
-        resource.max = calc.statMod(character, 0) + res.count;
-      } else if (res.counttype === "STR2") {
-        resource.max = calc.statMod(character, 0) * 2 + res.count;
-      } else if (res.counttype === "DEX1") {
-        resource.max = calc.statMod(character, 1) + res.count;
-      } else if (res.counttype === "DEX2") {
-        resource.max = calc.statMod(character, 1) * 2 + res.count;
-      } else if (res.counttype === "CON1") {
-        resource.max = calc.statMod(character, 2) + res.count;
-      } else if (res.counttype === "CON2") {
-        resource.max = calc.statMod(character, 2) * 2 + res.count;
-      } else if (res.counttype === "INT1") {
-        resource.max = calc.statMod(character, 3) + res.count;
-      } else if (res.counttype === "INT2") {
-        resource.max = calc.statMod(character, 3) * 2 + res.count;
-      } else if (res.counttype === "WIS1") {
-        resource.max = calc.statMod(character, 4) + res.count;
-      } else if (res.counttype === "WIS2") {
-        resource.max = calc.statMod(character, 4) * 2 + res.count;
-      } else if (res.counttype === "CHA1") {
-        resource.max = calc.statMod(character, 5) + res.count;
-      } else if (res.counttype === "CHA2") {
-        resource.max = calc.statMod(character, 5) * 2 + res.count;
+      var multiplier;
+      if (res.counttype.substring(0,3) === "STR") {
+        multiplier = Number(res.counttype.substring(3));
+        resource.max = calc.statMod(character, 0) * multiplier + res.count;
+      } else if (res.counttype.substring(0,3) === "DEX") {
+        multiplier = Number(res.counttype.substring(3));
+        resource.max = calc.statMod(character, 1) * multiplier + res.count;
+      } else if (res.counttype.substring(0,3) === "CON") {
+        multiplier = Number(res.counttype.substring(3));
+        resource.max = calc.statMod(character, 2) * multiplier + res.count;
+      } else if (res.counttype.substring(0,3) === "INT") {
+        multiplier = Number(res.counttype.substring(3));
+        resource.max = calc.statMod(character, 3) * multiplier + res.count;
+      } else if (res.counttype.substring(0,3) === "WIS") {
+        multiplier = Number(res.counttype.substring(3));
+        resource.max = calc.statMod(character, 4) * multiplier + res.count;
+      } else if (res.counttype.substring(0,3) === "CHA") {
+        multiplier = Number(res.counttype.substring(3));
+        resource.max = calc.statMod(character, 5) * multiplier + res.count;
       } else if (res.counttype === "table") {
         resource.max = res.count.findLast((a) => a[0] <= cl.level)[1];
       } else if (res.counttype === "fixed") {
         resource.max = res.count;
       } else if (res.counttype === "prof") {
         resource.max = calc.profbonus(character) + res.count;
+      } else if (res.counttype.substring(0,5) === "level") {
+        multiplier = Number(res.counttype.substring(5));
+        resource.max = cl.level * multiplier + res.count;
       }
       if (resource.name === "Bardic Inspiration" && cl.level >= 5) {
         resource.recharge = "shortrest";
