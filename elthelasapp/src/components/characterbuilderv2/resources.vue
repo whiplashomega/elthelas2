@@ -13,7 +13,7 @@
       </div>
       <div class="col-2">
         <select v-model="resource.recharge" class="charsheet-text">
-          <option value="never">Never/Other</option>
+          <option value="none">Never/Other</option>
           <option value="shortrest">Short Rest</option>
           <option value="longrest">Long Rest</option>
         </select>
