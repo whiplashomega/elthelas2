@@ -17,4 +17,3 @@
   </div>
 </template>
 <script src="./js/feats.js"></script>
-<style src="./scss/feats.scss" lang="scss" scoped></style>

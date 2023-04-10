@@ -20,7 +20,7 @@
               Damage: <input type="number" class="charsheet-num"
                              v-model="damagetaken" :min="0" />
             </div>
-            <div>
+            <div class="col-sm-6">
               <div class="btn-group">
                 <input type="button" class="btn btn-sm btn-danger"
                        value="Take Damage" @click="applyDamage()" />

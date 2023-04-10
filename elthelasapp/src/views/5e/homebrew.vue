@@ -13,7 +13,7 @@
       <li>Adoption: The rule is adopted by the table for general use.</li>
     </ol>
     <h2>Rules Currently In Use</h2>
-    
+
     <h3>General Rules</h3>
     <p><strong>Character Factions.</strong> Characters may belong to one or more major factions in the world. These factions require the character to complete missions and act in their interest, but so long as the character remains in good standing with the faction, they also gain bonus features and abilities from being a member, including specific bonuses at character levels 1 and 10. See the <router-link to="/world/orgs">Major Organizations</router-link> page for details on individual factions, and I would encourage DMs to work with their players to create custom factions that fit what the character is looking for.</p>
     <p><strong>Group Skill Checks.</strong> Skill checks that require everyone to succeed to be a success (such as moving stealthily as a group) are made by averaging the result. So everyone in the party roles their dice, adds their modifiers, and then the results are averaged to determine if the group succeeds or fails. Skill checks that require only one person in the group to succeed should only have one person roll. That person can roll with advantage if more than one party member is attempting to do the action. The players can choose who among them makes the check.</p>
@@ -22,7 +22,7 @@
     <p><strong>Sources Allowed.</strong> I allow players to use any feat, class, spell, or background published in an official WotC book for 5th edition that is not designed for a specific setting or adventure. In general this means they must come from one of the following books: The Player's Handbook, Dungeon Master's Guide, Monster Manual, Volo's Guide to Monsters, Xanathar's Guide to Everything, Mordenkainen's tome of Foes, Tasha's Cauldron of Everything, Fizban's Treasure of Dragons, or Monsters of the Multiverse. Character Races must come from the related page on this site.</p>
     <p><strong>Strongholds.</strong> At certain points in a campaign the characters may get control of, or have the option to found, a castle or town. The <router-link to="/tools/stronghold">Stronghold Builder</router-link> is an online engine designed to create a uniform way to manage that castle or town.</p>
     <p><strong>Tool Use and Ability Checks.</strong> If an ability check requires the use of a set of tools listed in the Players Handbook, proficiency in the tool is used instead of proficiency in any other skill. For example, when attempting to pick a lock with thieves' tools, use thieves tools proficiency, slight of hand does not apply. Which ability to use continues to depend on what exactly the player is doing.</p>
-    
+
     <h3>Class Changes</h3>
     <p><strong>All Classes.</strong> All classes have access to the bonus features presented in Tasha's Cauldron of Everything.</p>
     <p><strong>Barbarian: Less Exhausting Frenzy.</strong> Frenzy does not cause exhaustion the first time it is used after a long rest.</p>
@@ -36,7 +36,7 @@
     <p><strong>Sorcerer: Sorceron Bloodline</strong> The Sorceron Bloodline is a homebrew subclass I developed particular to the setting.  See the <router-link to="/options/class">Character Classes</router-link> page for details.</p>
     <p><strong>Warlock: Bonus Spells Known.</strong> Warlocks Expanded Spell List spells are known automatically and do not count against their maximum spells known.</p>
     <p><strong>Wizard: Expanded Spellbook.</strong> Wizards have additional spells known in the form of a domain style spell-list that is thematic to their subclass. These are automatically added to their spellbook, always prepared, and do not count against their maximum spells prepared. See the <router-link to="/options/class">Character Classes</router-link> page for details.</p>
-    
+
     <h3>Race Changes</h3>
     <p><strong>All Races: Languages.</strong> Characters (in general) do not gain languages based on their race. Rather they get them based on their home country. See the <router-link to="/options/races">Character Races</router-link> and <router-link to="/options/languages">Languages</router-link> page for details.</p>
     <p><strong>All Races: Age.</strong> The character age tables have been heavily modified, specifically in the direction of making the super long-lived races a bit closer to human norms. No playable race has a maximum age greater than 190. See the <router-link to="/options/races">Character Races</router-link> page for details.</p>
@@ -54,11 +54,11 @@
     <p><strong>Sorceron Blooded: Custom Race.</strong> Descendents of the ancient Sorceron people, these rare people (similar to the Aasimar) have a special proclivity for arcane magic. See the <router-link to="/options/races">Character Races</router-link> page for details.</p>
     <p><strong>Tieflings: Custom Subraces.</strong> Subraces for Tieflings have been customized and rebuilt for the setting. See the <router-link to="/options/races">Character Races</router-link> page for details.</p>
     <p><strong>Trollkin: Custom Race.</strong> Descendents of genetic experiments by the Sorceron to try to create the perfect soldier.  See the <router-link to="/options/races">Character Races</router-link> page for details.</p>
-    
+
     <h3>Spells</h3>
     <p><strong>Force Weapon: Custom Spell.</strong> A cantrip that enables you to make a weapon made of energy. See the <router-link to="/ref/quick">Quick Reference Manual</router-link> for details.</p>
     <p><strong>Heal Minor Injury: Custom Spell.</strong> A 3rd level spell meant to be paired with the injury table, it can heal physical injuries that do not involve missing body parts or severe brain damage such as broken bones, bleeding wounds etc.</p>
-    
+
     <h2>Rules Currently in Testing</h2>
     <p>
       These changes are currently in the proposal or play test stages.
@@ -68,7 +68,7 @@
     <p><strong>Initiative Jumping.</strong> If a particular action would trigger intiative (such as declaring an attack during a social encounter, or attacking an enemy from stealth). The character or creature that declared that action does not roll initiative, but is instead automatically at the top of the initiative order before other initiative rules are applied. Only one character or creature can jump initiative.</p>
     <p><strong>Set Initiative for Enemies.</strong> Enemy initiative is always equal to 10 + their modifier (add or subtract 5 for advantage/disadvantage).</p>
     <p><strong>Exhaustion.</strong> In the <router-link to="/ref/quick">conditions section of the quick reference manual</router-link> you will find the exhaustion rule. It is a modified version of the one from the OneDND play test.</p>
-    
+
     <h3>Class Changes</h3>
     <p><strong>Artificer: Armor Model Increased Damage.</strong> Damage dice for Artificer Armorer's Armor Models is increased. Thunder Gauntlet damage increases to 1d10, and the Lightning Launcher's damage increases to 1d8. This is meant to be paired with the Advanced Weapons Table.</p>
     <p><strong>Barbarian: Form of the Beast Increased Damage.</strong> Damage dice for Form of the Beast natural weapon attacks is increased. The tail and bite attacks do 1d10 damage, while the claws do 1d8. This is meant to be paired with the Advanced Weapons Table.</p>
@@ -83,4 +83,3 @@
 </template>
 <script src="./js/homebrew.js">
 </script>
-<style></style>

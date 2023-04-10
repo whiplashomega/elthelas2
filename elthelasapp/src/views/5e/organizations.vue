@@ -41,4 +41,3 @@
   </div>
 </template>
 <script src="./js/organizations.js"></script>
-<style src="./scss/organizations.scss" lang="scss" scoped></style>

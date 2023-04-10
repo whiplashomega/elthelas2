@@ -1073,4 +1073,3 @@
   </div>
 </template>
 <script src="./js/domains.js"></script>
-<style src="./scss/domains.scss" lang="scss" scoped></style>

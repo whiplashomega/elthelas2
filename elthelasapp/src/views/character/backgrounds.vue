@@ -61,4 +61,3 @@
   </div>
 </template>
 <script src="./js/backgrounds.js"></script>
-<style src="./scss/backgrounds.scss" lang="scss" scoped></style>

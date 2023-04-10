@@ -97,4 +97,3 @@
   </div>
 </template>
 <script src="./js/class.js"></script>
-<style src="./scss/class.scss" lang="scss" scoped></style>

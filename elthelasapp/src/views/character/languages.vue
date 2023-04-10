@@ -117,4 +117,3 @@
   </div>
 </template>
 <script src="./js/languages.js"></script>
-<style src="./scss/languages.scss" lang="scss" scoped></style>

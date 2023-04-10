@@ -47,7 +47,7 @@
               {{ field.name }}
               <span v-if="ageSortBy===field.key && ageSortDesc">&#8595;</span>
               <span v-if="ageSortBy===field.key && !ageSortDesc">&#8593;</span>
-            </button>          
+            </button>
         </th>
       </thead>
       <tbody>
@@ -101,4 +101,3 @@
   </div>
 </template>
 <script src="./js/ancestry.js"></script>
-<style src="./scss/ancestry.scss" lang="scss" scoped></style>
