@@ -1,15 +1,15 @@
 <template>
   <div>
     <div class="row">
-      <div class="col-sm">
+      <div class="col">
         <input type="text" class="charsheet-text" v-model="character.gender">
         Gender
       </div>
-      <div class="col-sm">
+      <div class="col">
         <input type="text" class="charsheet-text" v-model="character.god">
         God Worshipped
       </div>
-      <div class="col-sm">
+      <div class="col">
         <select v-model="character.alignment" class="charsheet-text">
           <option value="Lawful Good">Lawful Good</option>
           <option value="Neutral Good">Neutral Good</option>
@@ -25,27 +25,27 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm">
+      <div class="col">
         <input type="text" class="charsheet-text" v-model="character.age">
         Age
       </div>
-      <div class="col-sm">
+      <div class="col">
         <input type="text" class="charsheet-text" v-model="character.height">
-        Height <button class="btn-sm btn-primary" @click="rollHeightWeight()">Roll</button>
+        Height <button class="btn-sm btn-primary print-hide" @click="rollHeightWeight()">Roll</button>
       </div>
-      <div class="col-sm">
+      <div class="col">
         <input type="text" class="charsheet-text" v-model="character.weight">
         Weight
       </div>
-      <div class="col-sm">
+      <div class="col">
         <input type="text" class="charsheet-text" v-model="character.hair">
         Hair
       </div>
-      <div class="col-sm">
+      <div class="col">
         <input type="text" class="charsheet-text" v-model="character.eyes">
         Eyes
       </div>
-      <div class="col-sm">
+      <div class="col">
         <input type="text" class="charsheet-text" v-model="character.skin">
         Skin
       </div>

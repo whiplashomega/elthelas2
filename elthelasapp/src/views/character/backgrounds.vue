@@ -31,10 +31,6 @@
     <p>
       Each background provides a package of starting equipment. Alternatively, you can forgo the starting equipment and spend an extra 50 gp on equipment of your choice.
     </p>
-    <h4>Suggested Characteristics</h4>
-    <p>
-      A background contains suggested personal characteristics based on your background. You can pick characteristics, roll dice to determine them randomly, or use the suggestions as inspiration for characteristics of your own creation. Customizing a Background You might want to tweak some of the features of a background so it better fits your character or the campaign setting. To customize a background, you can replace one feature with any other one, choose any two skills, and choose a total of two tool proficiencies or languages from the sample backgrounds. You can either use the equipment package from your background or spend coin on gear as described in the equipment section. (If you spend coin, you can't also take the equipment package suggested for your class.) Finally, choose two personality traits, one ideal, one bond, and one flaw. If you can't find a feature that matches your desired background, work with your GM to create one.
-    </p>
     <div  v-if="statics.backgroundsv2">
       <div v-for="background in statics.backgroundsv2" :key="background.name"
           class="card">
@@ -42,7 +38,6 @@
           <span v-if="!background.isCollapsed">&#x25B2;</span><span v-if="background.isCollapsed">&#x25BC;</span>
         </button></h3>
         <div v-if="!background.isCollapsed">
-          <div marked="background.description"></div>
           <p v-if="background.skills">
             <strong>Skills: </strong>{{ background.skills.join(', ') }}<br />
             <strong>Tools: </strong>{{ background.tools.join(', ') }}<span v-if="background.tools.length === 0">None</span><br />

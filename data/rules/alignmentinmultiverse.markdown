@@ -1,6 +1,6 @@
-<template>
-  <div>
-    <h2>Alignment</h2>
+Alignment
+Alignment
+Alignment
     <p>
       A typical creature in the game world has an alignment, which broadly describes its moral and personal attitudes. Alignment is a combination of two factors: one identifies morality (good, evil, or neutral), and the other describes attitudes toward society and order (lawful, chaotic, or neutral). Thus, nine distinct alignments define the possible combinations.
     </p>
@@ -34,17 +34,3 @@
     <p>
       Chaotic evil (CE) creatures act with arbitrary violence, spurred by their greed, hatred, or bloodlust. Demons, red dragons, and orcs are chaotic evil.
     </p>
-    <h4>Alignment in the Multiverse</h4>
-    <p>
-      For most thinking creatures, alignment is a moral choice. Humans, dwarves, elves, and other humanoid races can choose whether to follow the paths of good or evil, law or chaos. 
-    </p>
-    <p>
-      Alignment is an essential part of the nature of celestials and fiends. A devil does not choose to be lawful evil, and it doesn't tend toward lawful evil, but rather it is lawful evil in its essence. If it somehow ceased to be lawful evil, it would cease to be a devil.
-    </p>
-    <p>
-      Most creatures that lack the capacity for rational thought do not have alignments - they are unaligned. Such a creature is incapable of making a moral or ethical choice and acts according to its bestial nature. Sharks are savage predators, for example, but they are not evil; they have no alignment.
-    </p>
-  </div>
-</template>
-<script src="./js/alignment.js"></script>
-<style></style>

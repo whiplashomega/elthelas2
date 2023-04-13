@@ -1,6 +1,26 @@
 <template>
   <div>
     <div class="row">
+              <div class="col">
+          <input list="countrylist" type="text"
+                 class="charsheet-text" v-model="character.homecountry">
+          Home Country
+        </div>
+        <datalist id="countrylist">
+          <option :value="nation"
+                  v-for="nation in nations" :key="nation">{{ nation }}</option>
+        </datalist>
+        <div class="col">
+          <input list="citylist" type="text"
+                 class="charsheet-text" v-model="character.hometown">
+          Home Town
+        </div>
+        <datalist id="citylist">
+          <option :value="city"
+                  v-for="city in cities" :key="city">{{ city }}</option>
+        </datalist>
+    </div>
+    <div class="row">
       <div class="col">
         <div class="charsheet-static">
           <h5>Notes</h5>
@@ -41,11 +61,11 @@
             Minimum Disposition: {{ faction.rank.minDisposition }}
           </div>
           <div class="col-sm-1">
-            <button class="btn btn-danger btn-sm" @click="removeFaction(index)">-</button>
+            <button class="btn btn-danger btn-sm print-hide" @click="removeFaction(index)">-</button>
           </div>
         </div>
 
-        <button @click="addFaction()" class="btn btn-primary btn-sm">+</button>
+        <button @click="addFaction()" class="btn btn-primary btn-sm print-hide">+</button>
       </div>
     </div>
     <div class="row">
@@ -65,26 +85,6 @@
                     ref="backstory" @input="textareaResize" ></textarea>
         </div>
       </div>
-    </div>
-    <div class="row">
-              <div class="col-sm-6">
-          <input list="countrylist" type="text"
-                 class="charsheet-text" v-model="character.homecountry">
-          Home Country
-        </div>
-        <datalist id="countrylist">
-          <option :value="nation"
-                  v-for="nation in nations" :key="nation">{{ nation }}</option>
-        </datalist>
-        <div class="col-sm-6">
-          <input list="citylist" type="text"
-                 class="charsheet-text" v-model="character.hometown">
-          Home Town
-        </div>
-        <datalist id="citylist">
-          <option :value="city"
-                  v-for="city in cities" :key="city">{{ city }}</option>
-        </datalist>
     </div>
     <div class="row">
       <div class="col">

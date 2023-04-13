@@ -64,7 +64,7 @@
                 <pets />
               </div>
             </div>
-            <div class="row">
+            <div class="row print-hide">
               <div class="col">
                 <actions />
               </div>
@@ -118,7 +118,7 @@
         <campaigninfo />
       </div>
     </div>
-    <div class="mobile">
+    <div class="mobile print-hide">
       <characterheader />
       <b-accordion>
         <b-accordion-item title="Load/Save">

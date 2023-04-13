@@ -411,17 +411,6 @@ const router = createRouter({
       }
     },
     {
-      path: "/options/alignment",
-      name: "Alignment",
-      components: {
-        default: () => import("@/views/character/alignment.vue")
-      },
-      meta: {
-        title: "Alignment",
-        auth: false
-      }
-    },
-    {
       path: "/5e/homebrew",
       name: "Homebrew Rules",
       components: {

@@ -15,7 +15,6 @@
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><router-link to="/tools/charbuilder" class="dropdown-item">Character Builder</router-link></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><router-link to="/options/alignment" class="dropdown-item">Alignment</router-link></li>
                 <li><router-link to="/options/ancestry" class="dropdown-item">Ancestry</router-link></li>
                 <li><router-link to="/options/backgrounds" class="dropdown-item">Backgrounds</router-link></li>
                 <li><router-link to="/options/class" class="dropdown-item">Classes</router-link></li>

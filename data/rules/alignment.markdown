@@ -1,15 +1,12 @@
-GM Rules
-Monster Rules
 Alignment
-        <p>
-          A monster's alignment provides a clue to its disposition and how it behaves in a roleplaying or combat situation. For example, a chaotic evil monster might be difficult to reason with and might attack characters on sight, whereas a neutral monster might be willing to negotiate.
-        </p>
-        <p>
-          The alignment specified in a monster's stat block is the default. Feel free to depart from it and change a monster's alignment to suit the needs of your campaign. If you want a good-aligned green dragon or an evil storm giant, there's nothing stopping you.
-        </p>
-        <p>
-          Some creatures can have any alignment. In other words, you choose the monster's alignment. Some monster's alignment entry indicates a tendency or aversion toward law, chaos, good, or evil. For example, a berserker can be any chaotic alignment (chaotic good, chaotic neutral, or chaotic evil), as befits its wild nature.
-        </p>
-        <p>
-          Many creatures of low intelligence have no comprehension of law or chaos, good or evil. They don't make moral or ethical choices, but rather act on instinct. These creatures are unaligned, which means they don't have an alignment.
-        </p>
+Alignment
+Alignment in the Multiverse
+    <p>
+      For most thinking creatures, alignment is a moral choice. Humans, dwarves, elves, and other humanoid races can choose whether to follow the paths of good or evil, law or chaos.
+    </p>
+    <p>
+      Alignment is an essential part of the nature of celestials and fiends. A devil does not choose to be lawful evil, and it doesn't tend toward lawful evil, but rather it is lawful evil in its essence. If it somehow ceased to be lawful evil, it would cease to be a devil.
+    </p>
+    <p>
+      Most creatures that lack the capacity for rational thought do not have alignments - they are unaligned. Such a creature is incapable of making a moral or ethical choice and acts according to its bestial nature. Sharks are savage predators, for example, but they are not evil; they have no alignment.
+    </p>

@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="row">
-      <div v-for="pc in pcs" :key="pc._id" class="col-sm-3">
+      <div v-for="pc in pcs" :key="pc._id" class="col-sm-2">
         <h4><router-link :to="'/tools/charbuilder/' + pc._id" target="_blank">{{ pc.name }}</router-link></h4>
         <div class="btn-group">
           <button @click="reloadCharacter(pc)" class="btn btn-success">Reload</button>

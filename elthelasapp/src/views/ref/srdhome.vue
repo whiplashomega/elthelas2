@@ -22,7 +22,7 @@
               <span v-if="rule.isCollapsed">&#x25B2;</span><span v-if="!rule.isCollapsed">&#x25BC;</span>
             </button></h4>
             <h6>{{ rule.category }} - {{ rule.subcategory }}</h6>
-            <div v-html="rule.description" v-show="rule.isCollapsed"></div>
+            <div v-html="marked.parse(rule.description)" v-show="rule.isCollapsed"></div>
             <hr />
           </div>
         </div>
@@ -43,7 +43,7 @@
               <h4><button type="button" class="btn btn-primary btn-sm" style="float:left;" @click="rule.isCollapsed = !rule.isCollapsed">
                 <span v-if="rule.isCollapsed">&#x25B2;</span><span v-if="!rule.isCollapsed">&#x25BC;</span>
               </button>&nbsp;&nbsp;{{ rule.title }}</h4>
-              <div v-html="rule.description" v-show="rule.isCollapsed"></div>
+              <div v-html="marked.parse(rule.description)" v-show="rule.isCollapsed"></div>
             </div>
             <hr />
           </div>

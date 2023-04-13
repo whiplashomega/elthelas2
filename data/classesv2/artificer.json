@@ -302,7 +302,7 @@
           "level": 3,
           "name": "Battle Smith Spells",
           "actiontype": "none",
-          "description": "Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Battle Smith Spells table. These spells count as artificer spells for you, but they don't count against the number of artificer spells you prepare.\n\n* 3rd - heroism, shield\n* 5th - branding smite, warding bond\n* 9th - aura of vitality, conjure barrage\n*13th - aura of purity, fire shield\n* 17th - banishing smite, mass cure wounds"
+          "description": "Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Battle Smith Spells table. These spells count as artificer spells for you, but they don't count against the number of artificer spells you prepare.\n\n* 3rd - heroism, shield\n* 5th - branding smite, warding bond\n* 9th - aura of vitality, conjure barrage\n* 13th - aura of purity, fire shield\n* 17th - banishing smite, mass cure wounds"
         },
         {
           "level": 3,

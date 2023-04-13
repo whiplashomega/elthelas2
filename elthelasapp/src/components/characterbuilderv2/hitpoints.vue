@@ -9,10 +9,19 @@
                             v-model="character.temphp" /> <br />
           Exhaustion: <input type="number" class="charsheet-num" v-model="character.exhaustion"
                              min=0 max=12 step=1 /> / {{ maxExhaustion }}
+          <div class="row">
+            <div class="col-5">Hit Dice:</div>
+            <div class="col-7">
+              <div v-for="cc in character.charclasses" :key="cc.thisclass.name">
+                <input type="number" class="charsheet-num"
+                       v-model="cc.hitdice" /> / {{ cc.level }}d{{ cc.thisclass.hitdie }}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row print-hide">
       <div class="col">
         <div class="charsheet-static">
           <div class="row">
@@ -47,17 +56,6 @@
             <option value="ignore">Ignores Resistance</option>
             <option value="healing">Healing</option>
           </select>
-        </div>
-      </div>
-    </div>
-    <div class="row combat-hud-hide">
-      <div class="col">
-        <div class="charsheet-static">
-          Hit Dice<br />
-          <div v-for="cc in character.charclasses" :key="cc.thisclass.name">
-            <input type="number" class="charsheet-num"
-                   v-model="cc.hitdice" /> / {{ cc.level }}d{{ cc.thisclass.hitdie }}
-          </div>
         </div>
       </div>
     </div>
