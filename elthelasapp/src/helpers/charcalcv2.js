@@ -277,10 +277,8 @@ export default {
       }
       if (a.thisclass.name === "Warlock") {
         num = Math.min(a.level, 9) + 1;
-        num += Math.floor(Math.max(0, a.level - 9) / 2);
-        if (character.housespellsknown) {
-          num += 2 + Math.floor(Math.min(a.level - 1, 8) / 2) * 2;
-        }
+        num += Math.floor(Math.max(0, a.level - 9) / 2) * 2;
+        num += 2 + Math.floor(Math.min(a.level - 1, 8) / 2) * 2;
       }
       if (a.thisclass.name === "Wizard" && a.level >= 2) {
         num += 1 + Math.floor(Math.min(a.level - 1, 8) / 2);

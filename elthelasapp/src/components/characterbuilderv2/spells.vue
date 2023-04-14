@@ -30,7 +30,7 @@
     <span v-if="warlockSlots > 0">Warlock Slots: <input type="number" v-model="character.warlockslotsavailable" class="charsheet-num" /> /
       {{ warlockSlots }} level {{ warlockSlotLevel }} slots</span>
     <div>
-      Number Prepared:
+      Number Prepared <span class="smalltext">(includes counts from features such as expanded spell list, domain spells, oath spells, and mystic arcanum)</span>:
       <div v-for="cc in numprepared" :key="cc.classname">{{ cc.classname }}: {{ cc.numprepped }} / {{ cc.maxprepped }}</div>
       Cantrips Known: {{ cantripspicked }} / {{ cantrips }}
     </div>

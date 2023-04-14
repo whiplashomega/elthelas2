@@ -34,6 +34,16 @@
       "recovery": "none"
     },
     {
+      "name": "Warlock Spells Known",
+      "minlevel": 1,
+      "counttype": "table",
+      "addToTable": true,
+      "count": [
+        [1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [6, 7], [7, 8], [8, 9], [9, 10], [11, 11], [13, 12], [15, 13], [17, 14], [19, 15]
+      ],
+      "recovery": "none"
+    },
+    {
       "name": "Mystic Arcanum (level 6)",
       "minlevel": 11,
       "counttype": "fixed",
@@ -311,7 +321,7 @@
         {
           "level": 1,
           "name": "Expanded Spell List",
-          "description": "The Undying  grants you additonal spells when you reach certain levels in this class. Add the following spells to your spells known at the level listed, they count as warlock spells for you, but do not count against your maximum spells known. 1st - false life, ray of sickness. 3rd - blindness/deafness, silence. 5th - feign death, speak with dead. 7th - aura of life, death ward. 9th - contagion, legend lore."          
+          "description": "The Undying  grants you additonal spells when you reach certain levels in this class. Add the following spells to your spells known at the level listed, they count as warlock spells for you, but do not count against your maximum spells known. 1st - false life, ray of sickness. 3rd - blindness/deafness, silence. 5th - feign death, speak with dead. 7th - aura of life, death ward. 9th - contagion, legend lore."
         },
         {
           "level": 3,
@@ -436,7 +446,7 @@
     },
     {
       "name": "The Fathomless",
-      "castermult": 0,      
+      "castermult": 0,
       "resources": [
         {
           "name": "Tentacle of the Deeps",
