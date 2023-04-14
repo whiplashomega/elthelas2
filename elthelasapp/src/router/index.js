@@ -92,6 +92,28 @@ const router = createRouter({
       },
     },
     {
+      path: "/options/invocations",
+      name: "invocations",
+      components: {
+        default: () => import("@/views/character/invocations.vue"),
+      },
+      meta: {
+        title: "Warlock Invocations",
+        auth: false,
+      },
+    },
+    {
+      path: "/options/infusions",
+      name: "infusions",
+      components: {
+        default: () => import("@/views/character/infusions.vue"),
+      },
+      meta: {
+        title: "Artificer Infusions",
+        auth: false,
+      },
+    },
+    {
       path: "/options/languages",
       name: "languages",
       components: {

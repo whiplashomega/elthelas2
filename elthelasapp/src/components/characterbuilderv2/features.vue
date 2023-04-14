@@ -96,6 +96,53 @@
           </p>
         </div>
       </div>
+      <div class="smalltext" v-for="style in character.fightingstyles" :key="style.name">
+        <p>
+          <span :title="style.description">{{ style.name }}</span>
+          <button class="btn btn-sm print-hide float-right" type="button"
+                  @click="setval(style, 'show', true)" v-if="!style.show">
+            &#x25BC;
+          </button>
+          <button class="btn btn-sm print-hide float-right" type="button"
+                  @click="setval(style, 'show', false)" v-if="style.show">
+            &#x25B2;
+          </button>
+          <span v-if="style.show" v-html="marked.parse(style.description)"></span>
+        </p>
+      </div>
+      <div class="smalltext" v-for="metamagic in character.metamagic" :key="metamagic.name">
+        <p>
+          <span :title="metamagic.description">{{metamagic.name}}</span>
+
+            <button class="btn btn-sm print-hide float-right" type="button"
+                  @click="setval(metamagic, 'show', true)" v-if="!metamagic.show">
+            &#x25BC;
+          </button>
+          <button class="btn btn-sm print-hide float-right" type="button"
+                  @click="setval(metamagic, 'show', false)" v-if="metamagic.show">
+            &#x25B2;
+          </button>
+          <span v-if="metamagic.show" v-html="marked.parse(metamagic.description)"></span>
+        </p>
+      </div>
+      <div class="smalltext" v-for="invocation in character.invocations" :key="invocation.name">
+        <p>
+          <span :title="invocation.description">{{invocation.name}}</span>
+
+            <button class="btn btn-sm print-hide float-right" type="button"
+                  @click="setval(invocation, 'show', true)" v-if="!invocation.show">
+            &#x25BC;
+          </button>
+          <button class="btn btn-sm print-hide float-right" type="button"
+                  @click="setval(invocation, 'show', false)" v-if="invocation.show">
+            &#x25B2;
+          </button>
+          <span v-if="invocation.show" v-html="marked.parse(invocation.description)"></span>
+        </p>
+      </div>
+      <div class="smalltext" v-if="character.infusions.length">
+        Infusions Known: <span v-for="inf in character.infusions" :title="inf.description" :key="inf.name">{{inf.name}}, </span>
+      </div>
       <div v-for="org in character.faction" :key="org.faction.id">
         <p v-for="feature in org.faction.features" :key="feature.name" class="smalltext">
           <div v-if="org.rank.index >= feature.minrank">

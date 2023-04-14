@@ -16,9 +16,9 @@
     {
       "name": "Epiphany Points",
       "minlevel": 1,
-      "counttype": "level",
+      "counttype": "level1",
       "addToTable": true,
-      "count": 1,
+      "count": 0,
       "recovery": "longrest"
     }
   ],
@@ -26,7 +26,7 @@
     {
       "level": 1,
       "name": "Inspired",
-      "description": "The Factotum gets a number of epiphany points that they can spend to activate certain class features. They get epiphany points equal to their level + 1. They recover all of their epiphany points when they finish a long rest."
+      "description": "The Factotum gets a number of epiphany points that they can spend to activate certain class features. They get epiphany points equal to their level. They recover all of their epiphany points when they finish a long rest."
     },
     {
       "level": 1,

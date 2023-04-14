@@ -23,6 +23,7 @@ import loadsavemodals from '@/components/characterbuilderv2/loadsavemodals.vue';
 import otherrolls from '@/components/characterbuilderv2/otherrolls.vue';
 import pets from '@/components/characterbuilderv2/pets.vue';
 import resources from '@/components/characterbuilderv2/resources.vue';
+import selectfeatures from '@/components/characterbuilderv2/selectfeatures.vue';
 import skills from '@/components/characterbuilderv2/skills.vue';
 import spells from '@/components/characterbuilderv2/spells.vue';
 import statbuilder from '@/components/characterbuilderv2/statbuilder.vue';
@@ -39,11 +40,11 @@ export default {
     statics.getAllNew();
     // map getters
     const { character, pointbuy, mobile, hitdicechanged, message } = storeToRefs(characters);
-    
+
     // map actions
     const rollStats = characters.rollStats;
     useMeta({ title: "Character Builder" });
-    
+
     return {
       statics,
       characters,
@@ -78,6 +79,7 @@ export default {
     otherrolls,
     pets,
     resources,
+    selectfeatures,
     skills,
     spells,
     statbuilder

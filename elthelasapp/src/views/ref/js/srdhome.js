@@ -3,6 +3,8 @@ import { useStaticsStore } from '@/stores/index';
 import { storeToRefs } from 'pinia';
 import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 import { reactive } from 'vue';
+import invocations from '@/components/characterbuilderv2/js/selectable/warlockinvocations.js';
+import infusions from '@/components/characterbuilderv2/js/selectable/artificerinfusions.js';
 
 export default {
   setup () {
@@ -184,7 +186,25 @@ export default {
           </p>`
         });
       });
-      this.extrarules = reactive([...spellrules, ...classrules, ...featrules, ...ancestryrules, ...backgroundrules]);
+      let invocationrules = [];
+      invocations.forEach((inv) => {
+        invocationrules.push({
+          title: inv.name,
+          category: "Character Classes",
+          subcategory: "Warlock - Warlock Invocations",
+          description: `Prerequisite: ${inv.prereq}\n\n${inv.description}`,
+        });
+      });
+      let infusionrules = [];
+      infusions.forEach((inf) => {
+        infusionrules.push({
+          title: inf.name,
+          category: "Character Classes",
+          subcategory: "Artificer - Artificer Infusions",
+          description: `Prerequisite: ${inf.level}\n\nItem: ${inf.item}\n\n${inf.description}`
+        });
+      });
+      this.extrarules = reactive([...spellrules, ...classrules, ...featrules, ...ancestryrules, ...backgroundrules, ...invocationrules, ...infusionrules]);
     });
   }
 };

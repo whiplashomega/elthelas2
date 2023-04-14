@@ -74,6 +74,9 @@
             <appearance />
             <fluff />
           </b-tab>
+          <b-tab title="Feature Selection">
+            <selectfeatures />
+          </b-tab>
           <b-tab title="Combat HUD">
             <combathud />
           </b-tab>

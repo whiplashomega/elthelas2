@@ -15,7 +15,7 @@
   "resources": [
     {
       "name": "ki",
-      "counttype": "level",
+      "counttype": "level1",
       "count": 0,
       "minlevel": 2,
       "addToTable": true,

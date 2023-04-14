@@ -6,14 +6,14 @@ import { storeToRefs } from 'pinia';
 export default {
   setup () {
     const statics = useStaticsStore();
-    const { feats } = storeToRefs(statics);
+    const { featsv2: feats } = storeToRefs(statics);
     useMeta({ title: "Feats" });
-    
+    statics.getAllFeatsV2();
     return {
       statics,
       feats,
       marked
-    }
+    };
   },
   computed: {
     featsort() {
@@ -27,5 +27,5 @@ export default {
       }
       return this.feats.sort(ftsrt);
     }
-  },
+  }
 };
