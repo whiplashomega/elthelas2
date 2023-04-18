@@ -172,7 +172,6 @@
       Filter by Class
       <select v-model="classfilter" class="form-control">
         <option value="all">All</option>
-        <option value="archivist">Archivist</option>
         <option value="artificer">Artificer</option>
         <option value="bard">Bard</option>
         <option value="cleric">Cleric</option>
@@ -180,6 +179,7 @@
         <option value="eldritchknight">Fighter (Eldritch Knight)</option>
         <option value="paladin">Paladin</option>
         <option value="ranger">Ranger</option>
+        <option value="arcanetrickster">Rogue (arcane trickster)</option>
         <option value="sorcerer">Sorcerer</option>
         <option value="warlock">Warlock</option>
         <option value="wizard">Wizard</option>
