@@ -303,7 +303,7 @@ export default {
       }
       if ((a.thisclass.name === "Fighter" && a.selsubclass.name === "Eldritch Knight") ||
           (a.thisclass.name === "Rogue" && a.selsubclass.name === "Arcane Trickster")) {
-        num = this.thirdCasterPrepared(a);
+        num = Math.ceil(a.level / 2) + 1;
       }
       num += Number(a.bonusknown);
       classCounts.push({
@@ -335,12 +335,15 @@ export default {
             classcantrips++;
           }
         }
-      } else if ((b.selsubclass.name === "Eldritch Knight" || b.selsubclass.name === "Arcane Trickster") && Number(b.level) >= 3) {
+      } else if ((b.selsubclass.name === "Eldritch Knight" || b.selsubclass.name === "Arcane Trickster") && Number(b.level) >= 2) {
         classcantrips = 2;
         if (b.selsubclass.name === "Arcane Trickster") {
           classcantrips++;
         }
-        if (Number(b.level) >= 10) {
+        if (Number(b.level) >= 8) {
+          classcantrips++;
+        }
+        if (Number(b.level) >= 20) {
           classcantrips++;
         }
       }
@@ -357,22 +360,6 @@ export default {
       return a + Number(b.level);
     }, 0);
     return Math.ceil(level / 4) + 1;
-  },
-  thirdCasterPrepared: function(a) {
-    let num = Math.floor((a.level - 1) / 3) + 3;
-    if (a.level >= 8) {
-      num++;
-    }
-    if (a.level >= 11) {
-      num++;
-    }
-    if (a.level >= 14) {
-      num++;
-    }
-    if (a.level >= 20) {
-      num++;
-    }
-    return num;
   },
   totalGold: function(character) {
     return dec(character.cp).div(100)
