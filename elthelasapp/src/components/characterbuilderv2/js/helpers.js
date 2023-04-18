@@ -192,7 +192,7 @@ export default {
     return rage;
   },*/
   resourcePopulator: function(character, cl, res) {// character.resources = [{ name: 'x', recharge: 'x', current: 0, max: 0 }]
-    if (cl.level >= res.minlevel) {
+    if (cl.level >= res.minlevel && res.recovery !== 'none') {
       var resource = { name: res.name, recharge: res.recovery };
       var multiplier;
       if (res.counttype.substring(0,3) === "STR") {
