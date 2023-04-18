@@ -3,7 +3,7 @@ layout: post
 title:  "Longstrider"
 date:   2014-08-24
 source: PHB.256
-tags: [archivist, bard, druid, ranger, wizard, eldritchknight, artificer, level1, transmutation]
+tags: [bard, druid, ranger, wizard, eldritchknight, artificer, level1, transmutation]
 ---
 
 **1st-level transmutation**

@@ -3,7 +3,7 @@ layout: post
 title: "Steel Wind Strike"
 date: 2015-07-14
 source: PHB.242
-tags: [ranger, wizard, level5, conjuration]
+tags: [ranger, wizard, eldritchknight, level5, conjuration]
 ---
 
 **5th-level conjuration**

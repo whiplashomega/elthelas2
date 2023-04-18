@@ -3,7 +3,7 @@ layout: post
 title:  "Protection from Energy"
 date:   2015-01-02
 source: PHB.270
-tags: [archivist, cleric, druid, ranger, sorcerer, wizard, eldritchknight, artificer, level3, abjuration]
+tags: [cleric, druid, ranger, sorcerer, wizard, eldritchknight, artificer, level3, abjuration]
 ---
 
 **3rd-level abjuration**

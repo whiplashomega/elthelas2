@@ -3,7 +3,7 @@ layout: post
 title:  "Blade Ward"
 date:   2015-05-12
 source: PHB.218
-tags: [bard, sorcerer, warlock, wizard, eldritchknight, cantrip, abjuration]
+tags: [arcanetrickster, bard, sorcerer, warlock, wizard, eldritchknight, cantrip, abjuration]
 ---
 
 **Abjuration cantrip**
@@ -16,9 +16,9 @@ tags: [bard, sorcerer, warlock, wizard, eldritchknight, cantrip, abjuration]
 
 **Duration**: 1 Round
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ ]
 

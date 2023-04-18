@@ -3,7 +3,7 @@ layout: post
 title:  "Silence"
 date:   2014-12-31
 source: PHB.275
-tags: [archivist, bard, cleric, ranger, level2, illusion, ritual]
+tags: [arcanetrickster, bard, cleric, ranger, level2, illusion, ritual]
 ---
 
 **2nd-level illusion (ritual)**

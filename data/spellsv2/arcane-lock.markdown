@@ -3,7 +3,7 @@ layout: post
 title:  "Arcane Lock"
 date:   2015-01-02
 source: PHB.215
-tags: [wizard, artificer, level2, abjuration]
+tags: [arcanetrickster, wizard, artificer, level2, abjuration]
 ---
 
 **2nd-level abjuration**
@@ -16,9 +16,9 @@ tags: [wizard, artificer, level2, abjuration]
 
 **Duration**: Until dispelled
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: []
 

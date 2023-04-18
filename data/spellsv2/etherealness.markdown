@@ -3,7 +3,7 @@ layout: post
 title:  "Etherealness"
 date:   2015-01-11
 source: PHB.238
-tags:   [archivist, bard, cleric, sorcerer, warlock, wizard, level7, transmutation]
+tags:   [bard, cleric, sorcerer, warlock, wizard, level7, transmutation]
 ---
 
 **7th-level transmutation**
@@ -16,9 +16,9 @@ tags:   [archivist, bard, cleric, sorcerer, warlock, wizard, level7, transmutati
 
 **Duration**: Up to 8 hours
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: []
 

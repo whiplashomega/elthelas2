@@ -3,7 +3,7 @@ layout: post
 title:  "Color Spray"
 date:   2014-08-24
 source: PHB.222
-tags: [bard, sorcerer, wizard, level1, illusion]
+tags: [arcanetrickster, bard, sorcerer, wizard, level1, illusion]
 ---
 
 **1st-level illusion**
@@ -16,9 +16,9 @@ tags: [bard, sorcerer, wizard, level1, illusion]
 
 **Duration**: 1 round
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ { "dice": "6d10", label: "effected hp", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "2d10" } ]
 

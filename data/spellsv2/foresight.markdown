@@ -3,7 +3,7 @@ layout: post
 title:  "Foresight"
 date:   2015-01-10
 source: PHB.244
-tags:   [archivist, bard, druid, warlock, wizard, level9, divination]
+tags:   [bard, druid, warlock, wizard, level9, divination]
 ---
 
 **9th-level divination**

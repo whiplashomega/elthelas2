@@ -88,14 +88,14 @@
       "description": "During your rogue training you learned thieves’ cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves’ cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly.\n\nIn addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves’ guild, whether loot is nearby, or whether the people in an area are easy marks or w ill provide a safe house for thieves on the run."
     },
     {
-      "level": 2,
+      "level": 3,
       "name": "Cunning Action",
-      "description": "Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action."
+      "description": "Starting at 3rd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action."
     },
     {
-      "level": 3,
+      "level": 2,
       "name": "Roguish Archetype",
-      "description": "At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities: Thief, Assassin, or Arcane Trickster, all detailed at the end of the class description. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level."
+      "description": "At 2nd level, you choose an archetype that you emulate in the exercise of your rogue abilities: Thief, Assassin, or Arcane Trickster, all detailed at the end of the class description. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level."
     },
     {
       "level": 9,
@@ -170,14 +170,14 @@
       "resources": [],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Fast Hands",
-          "description": "Starting at 3rd level, you can use the bonus action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to disarm a trap or open a lock, or take the Use an Object action."
+          "description": "Starting at 2nd level, you can use the bonus action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to disarm a trap or open a lock, or take the Use an Object action."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Second-Story Work",
-          "description": "When you choose this archetype at 3rd level, you gain the ability to climb faster than normal; climbing no longer costs you extra movement.\n\nIn addition, when you make a running jump, the distance you cover increases by a number of feet equal to your Dexterity modifier."
+          "description": "When you choose this archetype at 2nd level, you gain the ability to climb faster than normal; climbing no longer costs you extra movement.\n\nIn addition, when you make a running jump, the distance you cover increases by a number of feet equal to your Dexterity modifier."
         },
         {
           "level": 9,
@@ -202,14 +202,14 @@
       "resources": [],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Bonus Proficiencies",
-          "description": "When you choose this archetype at 3rd level, you gain proficiency with the disguise kit and the poisoner’s kit."
+          "description": "When you choose this archetype at 2nd level, you gain proficiency with the disguise kit and the poisoner’s kit."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Assassinate",
-          "description": "Starting at 3rd level, you are at your deadliest when you get the drop on your enemies. You have advantage on attack rolls against any creature that hasn’t taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit."
+          "description": "Starting at 2nd level, you are at your deadliest when you get the drop on your enemies. You have advantage on attack rolls against any creature that hasn’t taken a turn in the combat yet. In addition, if your first attack against such a creature hits it is a critical hit."
         },
         {
           "level": 9,
@@ -230,7 +230,7 @@
     },
     {
       "name": "Arcane Trickster",
-      "castermult": 0.333,
+      "castermult": 0.5,
       "resources": [
         {
           "name": "Spell Thief",
@@ -242,14 +242,14 @@
       ],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Spellcasting",
-          "description": "When you reach 3rd level, you gain the ability to cast spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the wizard spell list.\n\n**Cantrips.** You learn three cantrips: mage hand and two other cantrips of your choice from the wizard spell list. You learn another wizard cantrip of your choice at 10th level.\n\n**Spell Slots.** The Arcane Trickster Spellcasting table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.\n\nFor example, if you know the 1st-level spell charm person and have a 1st-level and a 2nd-level spell slot available, you can cast charm person using either slot. \n\n**Spells Known of 1st-Level and Higher.** You know three 1st-level wizard spells of your choice, two of which you must choose from the enchantment and illusion spells on the wizard spell list.\n\nThe Spells Known column of the Arcane Trickster Spellcasting table shows when you learn more wizard spells of 1st level or higher. Each of these spells must be an enchantment or illusion spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level. The spells you learn at 8th, 14th, and 20th level can come from any school of magic.\n\nWhenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots, and it must be an enchantment or illusion spell, unless you’re replacing the spell you gained at 8th, 14th, or 20th level.\n\n**Spellcasting Ability.** Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.\n\nSpell save DC = 8 + your proficiency bonus + your Intelligence modifier\n\nSpell attack modifier = your proficiency bonus + your Intelligence modifier"
+          "description": "When you reach 2nd level, you augment your expertise with the ability to cast spells.\n\n**Cantrips.** You learn two cantrips of your choice from the Arcane Trickster spell list. You learn an additional Arcane Trickster cantrip of your choice at 8th level and 20th level.\n\n**Spell Slots.** The Arcane Trickster Spellcasting table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.\n\nFor example, if you know the 1st-level spell shield and have a 1st-level and a 2nd-level spell slot available, you can cast shield using either slot.\n\n**Spells Known of 1st-Level and Higher.** You know two 1st-level arcane trickster spells of your choice.\n\nThe Spells Known column of the Eldritch Knight Spellcasting table shows when you learn more arcane trickster spells of 1st level or higher. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.\n\nWhenever you gain a level in this class, you can replace one of the spells you know with another spell of your choice from the arcane trickster spell list. The new spell must be of a level for which you have spell slots\n\n**Spellcasting Ability.** Intelligence is your spellcasting ability for your arcane trickster spells, since you learn your spells through study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.\n\nSpell save DC = 8 + your proficiency bonus + your Intelligence modifier\n\nSpell attack modifier = your proficiency bonus + your Intelligence modifier\n##### Arcane Trickster Spellcasting Table\n<table class='table table-striped'><tr><th>Level</th><th>Cantrips</th><th>Spells Known</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th><th>5th</th></tr><tr><td>2nd</<td><td>2</td><td>2</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>3rd</<td><td>2</td><td>3</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>4th</<td><td>2</td><td>3</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>5th</<td><td>2</td><td>4</td><td>4</td><td>2</td><td>-</td><td>-</td><td>-</td></tr><tr><td>6th</<td><td>2</td><td>4</td><td>4</td><td>2</td><td>-</td><td>-</td><td>-</td></tr><tr><td>7th</<td><td>2</td><td>5</td><td>4</td><td>3</td><td>-</td><td>-</td><td>-</td></tr><tr><td>8th</<td><td>3</td><td>5</td><td>4</td><td>3</td><td>-</td><td>-</td><td>-</td></tr><tr><td>9th</<td><td>3</td><td>6</td><td>4</td><td>3</td><td>2</td><td>-</td><td>-</td></tr><tr><td>10th</<td><td>3</td><td>6</td><td>4</td><td>3</td><td>2</td><td>-</td><td>-</td></tr><tr><td>11th</<td><td>3</td><td>7</td><td>4</td><td>3</td><td>3</td><td>-</td><td>-</td></tr><tr><td>12th</<td><td>3</td><td>7</td><td>4</td><td>3</td><td>3</td><td>-</td><td>-</td></tr><tr><td>13th</<td><td>3</td><td>8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>-</td></tr><tr><td>14th</<td><td>3</td><td>8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>-</td></tr><tr><td>15th</<td><td>3</td><td>9</td><td>4</td><td>3</td><td>3</td><td>2</td><td>-</td></tr><tr><td>16th</<td><td>3</td><td>9</td><td>4</td><td>3</td><td>3</td><td>2</td><td>-</td></tr><tr><td>17th</<td><td>3</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr><tr><td>18th</<td><td>3</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr><tr><td>19th</<td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr><tr><td>20th</<td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr></table>"
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Mage Hand Legerdemain",
-          "description": "Starting at 3rd level, when you cast mage hand, you can make the spectral hand invisible, and you can perform the following additional tasks with it:\n* You can stow one object the hand is holding in a container worn or carried by another creature.\n* You can retrieve an object in a container worn or carried by another creature.\n* You can use thieves’ tools to pick locks and disarm traps at range.\n\nYou can perform one o f these tasks without being noticed by a creature if you succeed on a Dexterity (Sleight of Hand) check contested by the creature’s Wisdom (Perception) check.\n\nIn addition, you can use the bonus action granted by your Cunning Action to control the hand."
+          "description": "Starting at 2nd level, when you cast mage hand, you can make the spectral hand invisible, and you can perform the following additional tasks with it:\n* You can stow one object the hand is holding in a container worn or carried by another creature.\n* You can retrieve an object in a container worn or carried by another creature.\n* You can use thieves’ tools to pick locks and disarm traps at range.\n\nYou can perform one o f these tasks without being noticed by a creature if you succeed on a Dexterity (Sleight of Hand) check contested by the creature’s Wisdom (Perception) check.\n\nIn addition, you can use the bonus action granted by your Cunning Action to control the hand."
         },
         {
           "level": 9,
@@ -274,14 +274,14 @@
       "resources": [],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Master of Intrigue",
-          "description": "When you choose this archetype at 3rd level, you gain proficiency with the disguise kit, the forgery kit, and one gaming set of your choice. You also learn two languages of your choice.\n\nAdditionally, you can unerringly mimic the speech patterns and accent of a creature that you hear speak for at least 1 minute, allowing you to pass yourself off as a native speaker of a particular land, provided that you know the language."
+          "description": "When you choose this archetype at 2nd level, you gain proficiency with the disguise kit, the forgery kit, and one gaming set of your choice. You also learn two languages of your choice.\n\nAdditionally, you can unerringly mimic the speech patterns and accent of a creature that you hear speak for at least 1 minute, allowing you to pass yourself off as a native speaker of a particular land, provided that you know the language."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Master of Tactics",
-          "description": "Starting at 3rd level, you can use the Help action as a bonus action. Additionally, when you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than 5 feet of you, if the target can see or hear you."
+          "description": "Starting at 2nd level, you can use the Help action as a bonus action. Additionally, when you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than 5 feet of you, if the target can see or hear you."
         },
         {
           "level": 9,
@@ -314,14 +314,14 @@
       ],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Fancy Footwork",
-          "description": "When you choose this archetype at 3rd level, you learn how to land a strike and then slip away without reprisal. During your turn, if you make a melee attack against a creature, that creature can't make opportunity attacks against you for the rest of your turn."
+          "description": "When you choose this archetype at 2nd level, you learn how to land a strike and then slip away without reprisal. During your turn, if you make a melee attack against a creature, that creature can't make opportunity attacks against you for the rest of your turn."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Rakish Audacity",
-          "description": "Starting at 3rd level, your unmistakable confidence propels you into battle. You can add your Charisma modifier to your initiative rolls.\n\nIn addition, you don't need advantage on your attack roll to use your Sneak Attack if no creature other than your target is within 5 feet of you. All the other rules for the Sneak Attack class feature still apply to you."
+          "description": "Starting at 2nd level, your unmistakable confidence propels you into battle. You can add your Charisma modifier to your initiative rolls.\n\nIn addition, you don't need advantage on your attack roll to use your Sneak Attack if no creature other than your target is within 5 feet of you. All the other rules for the Sneak Attack class feature still apply to you."
         },
         {
           "level": 9,
@@ -354,19 +354,19 @@
       ],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Ear for Deceit",
-          "description": "When you choose this archetype at 3rd level, you develop a talent for picking out lies. Whenever you make a Wisdom (Insight) check to determine whether a creature is lying, treat a roll of 7 or lower on the d20 as an 8."
+          "description": "When you choose this archetype at 2nd level, you develop a talent for picking out lies. Whenever you make a Wisdom (Insight) check to determine whether a creature is lying, treat a roll of 7 or lower on the d20 as an 8."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Eye for Detail",
-          "description": "Starting at 3rd level, you can use a bonus action to make a Wisdom (Perception) check to spot a hidden creature or object or to make an Intelligence (Investigation) check to uncover or decipher clues."
+          "description": "Starting at 2nd level, you can use a bonus action to make a Wisdom (Perception) check to spot a hidden creature or object or to make an Intelligence (Investigation) check to uncover or decipher clues."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Insightful Fighting",
-          "description": "At 3rd level, you gain the ability to decipher an opponent's tactics and develop a counter to them. As a bonus action, you can make a Wisdom (Insight) check against a creature you can see that isn’t incapacitated, contested by the target’s Charisma (Deception) check. If you succeed, you can use your Sneak Attack against that target even if you don’t have advantage on the attack roll, but not if you have disadvantage on it.\n\nThis benefit lasts for 1 minute or until you successfully use this feature against a different target."
+          "description": "At 2nd level, you gain the ability to decipher an opponent's tactics and develop a counter to them. As a bonus action, you can make a Wisdom (Insight) check against a creature you can see that isn’t incapacitated, contested by the target’s Charisma (Deception) check. If you succeed, you can use your Sneak Attack against that target even if you don’t have advantage on the attack roll, but not if you have disadvantage on it.\n\nThis benefit lasts for 1 minute or until you successfully use this feature against a different target."
         },
         {
           "level": 9,
@@ -391,14 +391,14 @@
       "resources": [],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Skirmisher",
-          "description": "Starting at 3rd level, you are difficult to pin down during a fight. You can move up to half your speed as a reaction when an enemy ends its turn within 5 feet of you. This movement doesn’t provoke opportunity attacks."
+          "description": "Starting at 2nd level, you are difficult to pin down during a fight. You can move up to half your speed as a reaction when an enemy ends its turn within 5 feet of you. This movement doesn’t provoke opportunity attacks."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Survivalist",
-          "description": "When you choose this archetype at 3rd level, you gain proficiency in the Nature and Survival skills if you don’t already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies."
+          "description": "When you choose this archetype at 2nd level, you gain proficiency in the Nature and Survival skills if you don’t already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies."
         },
         {
           "level": 9,
@@ -425,7 +425,7 @@
           "name": "Wails from the Grave",
           "counttype": "prof",
           "count": 0,
-          "minlevel": 3,
+          "minlevel": 2,
           "recovery": "longrest"
         },
         {
@@ -438,12 +438,12 @@
       ],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Whispers of the Dead",
           "description": "Echoes of those who have died cling to you. Whenever you finsih a short or long rest, you can choose one skill or tool proficiency that you lack and gain it, as a ghostly presence shares its knowledge  wih you. You lose this proficiency when you use this feature to choose a different proficiency that you lack."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Wails from the Grave",
           "description": "As you nudge someone closer to the grave, you can channel the power of death to harm someone else as well. Immediately after you deal your Sneak Attack damage to a creature on your turn, you can target a second creature that you can see within 30 feet of the first creature. Roll half the number of Sneak Attack dice for your level (round up), and the second creature takes necrotic damage equal to the roll's total, as wails of the dead sound around them for a moment.\n\nYou can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
         },
@@ -472,7 +472,7 @@
           "name": "Psionic Energy Dice",
           "counttype": "prof2",
           "count": 0,
-          "minlevel": 3,
+          "minlevel": 2,
           "recovery": "longrest"
         },
         {
@@ -492,12 +492,12 @@
       ],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Psionic Power",
           "description": "You harbor a wellspring of psionic energy within yourself. This energy is represented by your Psionic Energy dice, which are each a d6. You have a number of these dice equal to twice your proficiency bonus, and they fuel various psionic powers you have, which are detailed below.\n\nSome of your powers expend the Psionic Energy die they use, as specified in a power's description, and you can't use a power if it requires you to use a die when your dice are all expended. You regain all your expended Psionic Energy dice when you finish a long rest. In addition as a bonus action, you can regain one expended Psionic Energy die, but you can't do so again until you finish a short or long rest.\n\nWhen you reach certain levels in this class, the size of your Psionic Energy dice increases: at 5th level (d8), 11th level (d10) and 17th level (d12). The powers below use your psionic energy dice.\n\n**Psi-Bolstered Knack.** When your nonpsionic training fails you, your psionic power can help: if you fail an ability check using a skill or tool with which you have proficiency, you can roll one Psionic Energy die and add the number rolled to the check, potentially turning failure into success. You expend the die only if the roll succeeds.\n\n**Psychic Whispers.** You can establish telepathic communication between yourself and others-perfect for quiet infiltration. As an action, choose one or more creatures you can see, up to a number of creatures equal to your proficiency bonus, and then roll one Psionic Energy die. For a number of hours equal to the number rolled, the chosen creatures can speak telepathically with you, and you can speak telepathically with them. To send or receive a message (no action required), you and the other creature must be within 1 mile of each other. A creature can't use this telepathy if it can't speak any languages, and a create can end the telepathic connection at any time (no action required). You and the creature don't need to speak a common language to understand each other.\n\nThe first time you use this power after each long rest, you don't expend the Psionic Energy die. All other times you use the power, you expend the die."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Psychic Blades",
           "description": "You can manifest your psionic power as shimmering blades of psychic energy. Whenever you take the Attack action, you can manifest a psychic blade from your free hand and make the attack with that blade. This magic blade is a simple melee weapon with the finesse and thrown properties. It has a normal range of 60 feet and no long range, and on a hit, it deals psychic damage equal to 1d8 plus the ability modifier you used for the attack roll. The blade vanishes immediately after it hits or misses its target, and it leaves no mark on its target if it deals damage.\n\nAfter you attack with the blade, you can make a melee or ranged weapon attack with a second psychic blade as a bonus action on the same turn, provided your other hand is free to create it. The damage die of this bonus attack is 1d6, instead of 1d8."
         },

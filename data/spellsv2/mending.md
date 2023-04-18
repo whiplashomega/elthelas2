@@ -3,7 +3,7 @@ layout: post
 title:  "Mending"
 date:   2014-08-24
 source: PHB.259
-tags: [bard, cleric, druid, sorcerer, wizard, archivist, artificer, cantrip, transmutation]
+tags: [arcanetrickster, bard, cleric, druid, sorcerer, wizard, archivist, artificer, cantrip, transmutation]
 ---
 
 **Transmutation cantrip**

@@ -3,7 +3,7 @@ layout: post
 title:  "Cure Wounds"
 date:   2014-08-24
 source: PHB.230
-tags: [archivist, bard, cleric, druid, paladin, ranger, artificer, level1, evocation]
+tags: [bard, cleric, druid, paladin, ranger, artificer, level1, evocation]
 ---
 
 **1st-level evocation**
@@ -16,9 +16,9 @@ tags: [archivist, bard, cleric, druid, paladin, ranger, artificer, level1, evoca
 
 **Duration**: Instantaneous
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ { "dice": "1d8", label: "healing", "damagebonus": 0, "addstat": true, "prof": false, "higherlevels": "1d8" } ]
 

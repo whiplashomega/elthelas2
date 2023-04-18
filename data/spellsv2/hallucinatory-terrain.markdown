@@ -3,7 +3,7 @@ layout: post
 title: "Hallucinatory Terrain"
 date: 2015-07-30
 source: PHB.249
-tags: [archivist, bard, druid, warlock, wizard, level4, illusion]
+tags: [arcanetrickster, bard, druid, warlock, wizard, level4, illusion]
 ---
 
 **4th-level illusion**

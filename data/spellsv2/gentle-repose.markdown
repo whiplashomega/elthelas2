@@ -3,7 +3,7 @@ layout: post
 title: "Gentle Repose"
 date: 2015-07-30
 source: PHB.245
-tags: [archivist, cleric, paladin, wizard, level2, necromancy, ritual]
+tags: [cleric, paladin, wizard, level2, necromancy, ritual]
 ---
 
 **2nd-level necromancy (ritual)**

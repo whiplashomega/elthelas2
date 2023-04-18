@@ -3,7 +3,7 @@ layout: post
 title: "Magic Mouth"
 date: 2015-07-30
 source: PHB.257
-tags: [archivist, bard, wizard, artificer, level2, illusion]
+tags: [arcanetrickster, bard, wizard, artificer, level2, illusion]
 ---
 
 **2nd-level illusion (ritual)**

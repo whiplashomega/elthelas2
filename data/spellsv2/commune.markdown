@@ -3,7 +3,7 @@ layout: post
 title: "Commune"
 date: 2015-07-14
 source: PHB.223
-tags: [archivist, cleric, level5, divination, ritual]
+tags: [cleric, level5, divination, ritual]
 ---
 
 **5th-level divination (ritual)**
@@ -16,9 +16,9 @@ tags: [archivist, cleric, level5, divination, ritual]
 
 **Duration**: 1 minute
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: []
 

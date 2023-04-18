@@ -3,7 +3,7 @@ layout: post
 title:  "Catapult"
 date:   2015-11-19
 source: EE.15
-tags: [sorcerer, wizard, eldritchknight, artificer, level1, transmutation]
+tags: [arcanetrickster, sorcerer, wizard, eldritchknight, artificer, level1, transmutation]
 ---
 
 **1st-level transmutation**
@@ -16,9 +16,9 @@ tags: [sorcerer, wizard, eldritchknight, artificer, level1, transmutation]
 
 **Duration**: Instantaneous
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ { "dice": "3d8", label: "bludgeoning", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d8" } ]
 

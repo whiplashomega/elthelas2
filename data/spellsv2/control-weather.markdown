@@ -3,7 +3,7 @@ layout: post
 title:  "Control Weather"
 date:   2015-01-10
 source: PHB.228
-tags:   [archivist, cleric, druid, wizard, level8, transmutation]
+tags:   [cleric, druid, wizard, level8, transmutation]
 ---
 
 **8th-level transmutation**
@@ -16,9 +16,9 @@ tags:   [archivist, cleric, druid, wizard, level8, transmutation]
 
 **Duration**: Concentration, up to 8 hours
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ ]
 

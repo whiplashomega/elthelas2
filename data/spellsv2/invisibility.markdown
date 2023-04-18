@@ -3,7 +3,7 @@ layout: post
 title: "Invisibility"
 date: 2015-06-07
 source: PHB.254
-tags: [archivist, bard, sorcerer, warlock, wizard, artificer, level2, illusion]
+tags: [arcanetrickster, bard, sorcerer, warlock, wizard, artificer, level2, illusion]
 ---
 
 **2nd-level illusion**

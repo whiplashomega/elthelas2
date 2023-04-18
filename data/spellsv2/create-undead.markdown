@@ -3,7 +3,7 @@ layout: post
 title: "Create Undead"
 date: 2015-07-14
 source: PHB.229
-tags: [archivist, cleric, warlock, wizard, level6, necromancy]
+tags: [cleric, warlock, wizard, level6, necromancy]
 ---
 
 **6th-level necromancy**
@@ -16,9 +16,9 @@ tags: [archivist, cleric, warlock, wizard, level6, necromancy]
 
 **Duration**: Instantaneous
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: []
 

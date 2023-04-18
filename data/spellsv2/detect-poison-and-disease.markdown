@@ -3,7 +3,7 @@ layout: post
 title:  "Detect Poison and Disease"
 date:   2014-08-24
 source: PHB.231
-tags: [cleric, druid, paladin, ranger, level1, divination, ritual]
+tags: [arcanetrickster, cleric, druid, paladin, ranger, level1, divination, ritual]
 ---
 
 **1st-level divination (ritual)**
@@ -16,9 +16,9 @@ tags: [cleric, druid, paladin, ranger, level1, divination, ritual]
 
 **Duration**: Concentration, up to 10 minutes
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: []
 

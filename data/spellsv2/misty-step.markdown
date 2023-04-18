@@ -3,7 +3,7 @@ layout: post
 title: "Misty Step"
 date: 2015-07-30
 source: PHB.260
-tags: [archivist, sorcerer, warlock, wizard, eldritchknight, level2, conjuration]
+tags: [arcanetrickster, sorcerer, warlock, wizard, eldritchknight, level2, conjuration]
 ---
 
 **2nd-level conjuration**

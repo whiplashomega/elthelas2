@@ -3,7 +3,7 @@ layout: post
 title:  "Power Word Heal"
 date:   2015-01-10
 source: PHB.266
-tags:   [archivist, cleric, bard, level9, evocation]
+tags:   [cleric, bard, level9, evocation]
 ---
 
 **9th-level evocation**

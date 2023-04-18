@@ -3,7 +3,7 @@ layout: post
 title:  "Counterspell"
 date:   2015-01-01
 source: PHB.228
-tags: [archivist, sorcerer, warlock, wizard, level3, abjuration]
+tags: [sorcerer, warlock, eldritchknight, wizard, level3, abjuration]
 ---
 
 **3rd-level abjuration**
@@ -16,9 +16,9 @@ tags: [archivist, sorcerer, warlock, wizard, level3, abjuration]
 
 **Duration**: Instantaneous
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: []
 

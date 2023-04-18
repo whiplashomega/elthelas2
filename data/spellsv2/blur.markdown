@@ -3,7 +3,7 @@ layout: post
 title:  "Blur"
 date:   2015-01-07
 source: PHB.219
-tags: [sorcerer, wizard, eldritchknight, artificer, level2, illusion]
+tags: [arcanetrickster, sorcerer, wizard, eldritchknight, artificer, level2, illusion]
 ---
 
 **2nd-level illusion**
@@ -16,9 +16,9 @@ tags: [sorcerer, wizard, eldritchknight, artificer, level2, illusion]
 
 **Duration**: Concentration, up to 1 minute
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: []
 

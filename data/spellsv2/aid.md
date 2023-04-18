@@ -3,7 +3,7 @@ layout: post
 title:  "Aid"
 date:   2014-12-31
 source: PHB.211
-tags: [archivist, bard, cleric, ranger, paladin, artificer, level2, abjuration]
+tags: [bard, cleric, ranger, paladin, artificer, level2, abjuration]
 ---
 
 **2nd-level abjuration**
@@ -16,9 +16,9 @@ tags: [archivist, bard, cleric, ranger, paladin, artificer, level2, abjuration]
 
 **Duration**: 8 hours
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: []
 

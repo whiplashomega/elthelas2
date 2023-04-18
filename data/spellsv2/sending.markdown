@@ -3,7 +3,7 @@ layout: post
 title:  "Sending"
 date:   2015-01-02
 source: PHB.274
-tags: [archivist, bard, cleric, wizard, eldritchknight, level3, evocation]
+tags: [arcanetrickster, bard, cleric, wizard, eldritchknight, level3, evocation]
 ---
 
 **3rd-level evocation**

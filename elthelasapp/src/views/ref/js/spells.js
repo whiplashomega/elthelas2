@@ -2,16 +2,19 @@ import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 import { useMeta } from 'vue-meta';
 import modal from '@/components/global/modal.vue';
 import { useStaticsStore, useUserStore } from '@/stores/index';
-
+import { storeToRefs } from 'pinia';
 export default {
   setup () {
     useMeta({ title: "Magic" });
     const statics = useStaticsStore();
     const userinfo = useUserStore();
-    const { spellsv2: spells } = statics;
+    const { spellsv2: spells } = storeToRefs(statics);
     return {
       userinfo, spells, marked
     };
+  },
+  components: {
+    modal
   },
   computed: {
     filteredSpells () {
@@ -111,4 +114,4 @@ export default {
       this.spelltable.modalInfo.content = { title: '', level: '', school: '', duration: '', description: '', castingTime: '', tags: [], tagsText: '' };
     }
   }
-}
+};

@@ -1,12 +1,11 @@
 <template>
   <div>
         <h3>Spells</h3>
-        <b-row>
-          <b-col md="8">
+        <div class="row">
+          <div class="col-8">
             Filter by Class
             <select v-model="spelltable.classFilter" class="form-control">
               <option value="all">All</option>
-              <option value="archivist">Archivist</option>
               <option value="artificer">Artificer</option>
               <option value="bard">Bard</option>
               <option value="cleric">Cleric</option>
@@ -14,19 +13,20 @@
               <option value="eldritchknight">Fighter (Eldritch Knight)</option>
               <option value="paladin">Paladin</option>
               <option value="ranger">Ranger</option>
+              <option value="arcanetrickster">Rogue (Arcane Trickster)</option>
               <option value="sorcerer">Sorcerer</option>
               <option value="warlock">Warlock</option>
               <option value="wizard">Wizard</option>
             </select>
-          </b-col>
-          <b-col md="4" class="my-1">
+          </div>
+          <div class="col-4">
             Search
             <b-input-group>
               <b-form-input v-model="spelltable.filterValue" placeholder="Type to Search" />
               <button class="btn btn-primary" :disabled="!spelltable.filterValue" @click="filter = ''">Clear</button>
             </b-input-group>
-          </b-col>
-        </b-row>
+          </div>
+        </div>
         <table class="table table-striped">
           <thead>
             <tr>

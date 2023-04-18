@@ -3,7 +3,7 @@ layout: post
 title:  "Revivify"
 date:   2015-01-02
 source: PHB.272
-tags: [archivist, cleric, druid, ranger, paladin, artificer, level3, conjuration]
+tags: [cleric, druid, ranger, paladin, artificer, level3, conjuration]
 ---
 
 **3rd-level conjuration**

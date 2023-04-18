@@ -3,7 +3,7 @@ layout: post
 title: "Nathair's Mischief"
 date: 2015-07-14
 source: PHB.242
-tags: [bard, sorcerer, wizard, level2, illusion]
+tags: [arcanetrickster, bard, sorcerer, wizard, level2, illusion]
 ---
 
 **2nd-level illusion**

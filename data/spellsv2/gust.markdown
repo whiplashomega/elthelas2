@@ -3,7 +3,7 @@ layout: post
 title:  "Gust"
 date:   2015-11-11
 source: EE.19
-tags: [druid, sorcerer, wizard, eldritchknight, cantrip, transmutation]
+tags: [arcanetrickster, druid, sorcerer, wizard, eldritchknight, cantrip, transmutation]
 ---
 
 **Transmutation cantrip**

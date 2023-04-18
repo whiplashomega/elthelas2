@@ -3,7 +3,7 @@ layout: post
 title:  "Tasha's Caustic Brew"
 date:   2014-08-24
 source: TCE.115
-tags: [artificer, sorcerer, wizard, level1, evocation]
+tags: [arcanetrickster, artificer, sorcerer, wizard, level1, evocation]
 ---
 
 **1st-level evocation**

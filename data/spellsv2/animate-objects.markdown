@@ -3,7 +3,7 @@ layout: post
 title: "Animate Objects"
 date: 2015-07-14
 source: PHB.213
-tags: [bard, sorcerer, wizard, artificer, level5, transmutation]
+tags: [bard, sorcerer, wizard, artificer, arcanetrickster, level5, transmutation]
 ---
 
 **5th-level transmutation**
@@ -16,9 +16,9 @@ tags: [bard, sorcerer, wizard, artificer, level5, transmutation]
 
 **Duration**: Concentration, up to 1 minute
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ ]
 

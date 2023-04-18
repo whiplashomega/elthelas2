@@ -3,7 +3,7 @@ layout: post
 title:  "Detect Evil and Good"
 date:   2014-08-24
 source: PHB.231
-tags: [archivist, cleric, paladin, level1, divination]
+tags: [cleric, paladin, level1, divination]
 ---
 
 **1st-level divination**
@@ -16,9 +16,9 @@ tags: [archivist, cleric, paladin, level1, divination]
 
 **Duration**: Concentration, up to 10 minutes
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: []
 

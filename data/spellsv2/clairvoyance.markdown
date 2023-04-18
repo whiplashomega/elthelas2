@@ -3,7 +3,7 @@ layout: post
 title:  "Clairvoyance"
 date:   2015-01-01
 source: PHB.222
-tags: [archivist, bard, cleric, sorcerer, wizard, level3, divination]
+tags: [arcanetrickster, bard, cleric, sorcerer, wizard, level3, divination]
 ---
 
 **3rd-level divination**
@@ -16,9 +16,9 @@ tags: [archivist, bard, cleric, sorcerer, wizard, level3, divination]
 
 **Duration**: Concentration, up to 10 minutes
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ ]
 

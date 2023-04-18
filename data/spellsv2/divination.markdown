@@ -3,7 +3,7 @@ layout: post
 title: "Divination"
 date: 2015-07-14
 source: PHB.234
-tags: [archivist, cleric, druid, wizard, level4, divination, ritual]
+tags: [cleric, druid, wizard, level4, divination, ritual]
 ---
 
 **4th-level divination (ritual)**
@@ -16,9 +16,9 @@ tags: [archivist, cleric, druid, wizard, level4, divination, ritual]
 
 **Duration**: Instantaneous
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ ]
 

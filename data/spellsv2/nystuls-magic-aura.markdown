@@ -3,7 +3,7 @@ layout: post
 title: "Nystul's Magic Aura"
 date: 2015-07-30
 source: PHB.263
-tags: [archivist, wizard, level2, illusion]
+tags: [arcanetrickster, wizard, level2, illusion]
 ---
 
 **2nd-level illusion**
@@ -22,7 +22,7 @@ tags: [archivist, wizard, level2, illusion]
 
 **Damage**: []
 
-You place an illusion on a creature or an object you touch so that divination spells reveal false information about it. The target can be a willing creature or an object that isn't being carried or worn by another creature. 
+You place an illusion on a creature or an object you touch so that divination spells reveal false information about it. The target can be a willing creature or an object that isn't being carried or worn by another creature.
 
 When you cast the spell, choose one or both of the following effects. The effect lasts for the duration. If you cast this spell on the same creature or object every day for 30 days, placing the same effect on it each time, the illusion lasts until it is dispelled.
 

@@ -81,14 +81,9 @@
   ],
   "features": [
     {
-      "level": 1,
+      "level": 2,
       "name": "Otherworldy Patron",
-      "description": "At 1st level, you have struck a bargain with an otherworldly being of your choice: the Archfey, the Fiend, or the Great Old One, each of which is detailed at the end of the class description. Your choice grants you features at 1st level and again at 3rd, 6th, 10th, and 14th level."
-    },
-    {
-      "level": 3,
-      "name": "Otherworldly Patron Feature (3rd)",
-      "description": "At 1st level, you have struck a bargain with an otherworldly being of your choice: the Archfey, the Fiend, or the Great Old One, each of which is detailed at the end of the class description. Your choice grants you features at 1st level and again at 3rd, 6th, 10th, and 14th level."
+      "description": "At 2nd level, you have struck a bargain with an otherworldly being of your choice: the Archfey, the Fiend, or the Great Old One, each of which is detailed at the end of the class description. Your choice grants you features at 2nd level, 6th, 10th, and 14th level."
     },
     {
       "level": 6,
@@ -116,9 +111,9 @@
       "description": "In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability. A level prerequisite refers to your level in this class.\n\nAt 2nd level, you gain two eldritch invocations of your choice. Your invocation options are detailed at the end of the class description. When you gain certain warlock levels, you gain additional invocations of your choice, as shown in the Invocations Known column of the Warlock table.\n\nAdditionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level."
     },
     {
-      "level": 2,
+      "level": 3,
       "name": "Pact Boon",
-      "description": "At 2nd level, your otherworldly patron bestows a gift upon you for your loyal service. You gain one of the following features of your choice.\n\n#### Pact of the Chain\n\nYou learn the find familiar spell and can cast it as a ritual. The spell doesn’t count against your number of spells known.\n\nWhen you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: imp, pseudodragon, quasit, or sprite.\n\nAdditionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack with its reaction.\n\n#### Pact of the Blade\n\nYou can use your action to create a pact weapon in your empty hand. You can choose the form that this melee weapon takes each time you create it (see chapter 5 for weapon options). You are proficient with it while you wield it.\n\nYour pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.\n\nYou can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can’t affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks. \n\nAdditionally you can use Charisma instead of Strength or Dexterity for the attack and damage rolls with your pact weapon.\n\nAt lst level, you acquire the training necessary to effectively arm yourself for battle. You gain proficiency with medium armor, shields, and martial weapons.\n\n#### Pact of the Tome\n\nYour patron gives you a grimoire called a Book of Shadows.When you gain this feature, choose three cantrips from any class's spell list (the three needn't be from the same list). While the book is on your person, you can cast those cantrips at will. They don’t count against your number of cantrips known. If they don't appear on the warlock spell list, they are nonetheless warlock spells for you.\n\n#### Pact of the Talisman\n\nYour patron gives you an amulet, a talisman that can aid the wearer when the need is great. When the wearer fails an ability check, they can add a d4 to the roll, potentially turning the roll into a success. The benefit can be used a number of times equal to your proficiency bonus, and all expended uses are restored when you finish a long rest.\n\nIf you lose the talisman, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous amulet. The talisman turns to ash when you die."
+      "description": "At 3rd level, your otherworldly patron bestows a gift upon you for your loyal service. You gain one of the following features of your choice.\n\n#### Pact of the Chain\n\nYou learn the find familiar spell and can cast it as a ritual. The spell doesn’t count against your number of spells known.\n\nWhen you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: imp, pseudodragon, quasit, or sprite.\n\nAdditionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack with its reaction.\n\n#### Pact of the Blade\n\nYou can use your action to create a pact weapon in your empty hand. You can choose the form that this melee weapon takes each time you create it (see chapter 5 for weapon options). You are proficient with it while you wield it.\n\nYour pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.\n\nYou can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can’t affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks. \n\nAdditionally you can use Charisma instead of Strength or Dexterity for the attack and damage rolls with your pact weapon.\n\nAt lst level, you acquire the training necessary to effectively arm yourself for battle. You gain proficiency with medium armor, shields, and martial weapons.\n\n#### Pact of the Tome\n\nYour patron gives you a grimoire called a Book of Shadows.When you gain this feature, choose three cantrips from any class's spell list (the three needn't be from the same list). While the book is on your person, you can cast those cantrips at will. They don’t count against your number of cantrips known. If they don't appear on the warlock spell list, they are nonetheless warlock spells for you.\n\n#### Pact of the Talisman\n\nYour patron gives you an amulet, a talisman that can aid the wearer when the need is great. When the wearer fails an ability check, they can add a d4 to the roll, potentially turning the roll into a success. The benefit can be used a number of times equal to your proficiency bonus, and all expended uses are restored when you finish a long rest.\n\nIf you lose the talisman, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous amulet. The talisman turns to ash when you die."
     },
     {
       "level": 4,
@@ -165,7 +160,7 @@
           "name": "Fey Presence",
           "counttype": "fixed",
           "count": 1,
-          "minlevel": 3,
+          "minlevel": 2,
           "recovery": "shortrest"
         },
         {
@@ -185,12 +180,12 @@
       ],
       "features": [
         {
-          "level": 1,
+          "level": 2,
           "name": "Expanded Spell List",
-          "description": "The Archfey grants you additonal spells when you reach certain levels in this class. Add the following spells to your spells known at the level listed, they count as warlock spells for you, but do not count against your maximum spells known. 1st - Fairie Fire, Sleep. 3rd - calm emotions, phantasmal force. 5th - blink, plant growth. 7th - dominate beast, greater invisibility. 9th - dominate person, seeming."
+          "description": "The Archfey grants you additonal spells when you reach certain levels in this class. Add the following spells to your spells known at the level listed, they count as warlock spells for you, but do not count against your maximum spells known. 2nd - Fairie Fire, Sleep. 3rd - calm emotions, phantasmal force. 5th - blink, plant growth. 7th - dominate beast, greater invisibility. 9th - dominate person, seeming."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Fey Presence",
           "description": "Your patron bestows upon you the ability to project the beguiling and fearsome presence of the fey. As an action, you can cause each creature in a 10-foot cube originating from you to make a Wisdom saving throw against your warlock spell save DC. The creatures that fail their saving throws are all charmed or frightened by you (your choice) until the end of your next turn. \n\nOnce you use this feature, you can’t use it again until you finish a short or long rest."
         },
@@ -232,12 +227,12 @@
       ],
       "features": [
         {
-          "level": 1,
+          "level": 2,
           "name": "Expanded Spell List",
-          "description": "The Fiend grants you additonal spells when you reach certain levels in this class. Add the following spells to your spells known at the level listed, they count as warlock spells for you, but do not count against your maximum spells known. 1st - burning hands, command. 3rd - blindness/deafness, scorching ray. 5th - fireball, stinking cloud.  7th - fire shield, wall of fire. 9th - flame strike, hallow."
+          "description": "The Fiend grants you additonal spells when you reach certain levels in this class. Add the following spells to your spells known at the level listed, they count as warlock spells for you, but do not count against your maximum spells known. 2nd - burning hands, command. 3rd - blindness/deafness, scorching ray. 5th - fireball, stinking cloud.  7th - fire shield, wall of fire. 9th - flame strike, hallow."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Dark One's Blessing",
           "description": "When you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your warlock level (minimum of 1)."
         },
@@ -272,12 +267,12 @@
       ],
       "features": [
         {
-          "level": 1,
+          "level": 2,
           "name": "Expanded Spell List",
-          "description": "The Great Old One  grants you additonal spells when you reach certain levels in this class. Add the following spells to your spells known at the level listed, they count as warlock spells for you, but do not count against your maximum spells known. 1st - dissonant whispers, Tasha's hideous laughter. 3rd - detect thoughts, phantasmal force. 5th - clairvoyance, sending. 7th - dominate beast, Evard's black tentacles. 9th - dominate person, telekinesis."
+          "description": "The Great Old One  grants you additonal spells when you reach certain levels in this class. Add the following spells to your spells known at the level listed, they count as warlock spells for you, but do not count against your maximum spells known. 2nd - dissonant whispers, Tasha's hideous laughter. 3rd - detect thoughts, phantasmal force. 5th - clairvoyance, sending. 7th - dominate beast, Evard's black tentacles. 9th - dominate person, telekinesis."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Awakened Mind",
           "description": "Your alien knowledge gives you the ability to touch the minds of other creatures. You can communicate telepathically with any creature you can see within 30 feet of you. You don’t need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language."
         },
@@ -319,14 +314,14 @@
       ],
       "features": [
         {
-          "level": 1,
+          "level": 2,
           "name": "Expanded Spell List",
-          "description": "The Undying  grants you additonal spells when you reach certain levels in this class. Add the following spells to your spells known at the level listed, they count as warlock spells for you, but do not count against your maximum spells known. 1st - false life, ray of sickness. 3rd - blindness/deafness, silence. 5th - feign death, speak with dead. 7th - aura of life, death ward. 9th - contagion, legend lore."
+          "description": "The Undying  grants you additonal spells when you reach certain levels in this class. Add the following spells to your spells known at the level listed, they count as warlock spells for you, but do not count against your maximum spells known. 2nd - false life, ray of sickness. 3rd - blindness/deafness, silence. 5th - feign death, speak with dead. 7th - aura of life, death ward. 9th - contagion, legend lore."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Among the Dead",
-          "description": "Starting at 3rd level, you learn the spare the dying cantrip, which counts as a warlock cantrip for you. You also have advantage on saving throws against any disease. Additionally, undead have difficulty harming you. If an undead targets you directly with an attack or a harmful spell, that creature must make a Wisdom saving throw against your spell save DC (an undead needn't make the save when it includes you in an area effect, such as the explosion of fireball). On a failed save, the creature must choose a new target or forfeit targeting someone instead of you, potentially wasting the attack or spell. On a successful save, the creature is immune to this effect for 24 hours. An undead is also immune to this effect for 24 hours if you target it with an attack or a harmful spell."
+          "description": "Starting at 2nd level, you learn the spare the dying cantrip, which counts as a warlock cantrip for you. You also have advantage on saving throws against any disease. Additionally, undead have difficulty harming you. If an undead targets you directly with an attack or a harmful spell, that creature must make a Wisdom saving throw against your spell save DC (an undead needn't make the save when it includes you in an area effect, such as the explosion of fireball). On a failed save, the creature must choose a new target or forfeit targeting someone instead of you, potentially wasting the attack or spell. On a successful save, the creature is immune to this effect for 24 hours. An undead is also immune to this effect for 24 hours if you target it with an attack or a harmful spell."
         },
         {
           "level": 6,
@@ -353,7 +348,7 @@
           "name": "Healing Light Dice",
           "counttype": "level",
           "count": 1,
-          "minlevel": 3,
+          "minlevel": 2,
           "recovery": "longrest"
         },
         {
@@ -366,17 +361,17 @@
       ],
       "features": [
         {
-          "level": 1,
+          "level": 2,
           "name": "Expanded Spell List",
-          "description": "The Celestial grants you additonal spells when you reach certain levels in this class. Add the following spells to your spells known at the level listed, they count as warlock spells for you, but do not count against your maximum spells known.\n\n* 1st - cure wounds, guiding bolt\n* 3rd - flaming sphere, lesser restoration\n* 5th - daylight, revivify\n* 7th - guardian of faith, wall of fire\n* 9th - flame strike, greater restoration"
+          "description": "The Celestial grants you additonal spells when you reach certain levels in this class. Add the following spells to your spells known at the level listed, they count as warlock spells for you, but do not count against your maximum spells known.\n\n* 2nd - cure wounds, guiding bolt\n* 3rd - flaming sphere, lesser restoration\n* 5th - daylight, revivify\n* 7th - guardian of faith, wall of fire\n* 9th - flame strike, greater restoration"
         },
         {
-          "level": 1,
+          "level": 2,
           "name": "Bonus Cantrips",
-          "description": "At 1st level, you learn the light and sacred flame cantrips. They count as warlock cantrips for you, but they don’t count against your number of cantrips known."
+          "description": "At 2nd level, you learn the light and sacred flame cantrips. They count as warlock cantrips for you, but they don’t count against your number of cantrips known."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Healing Light",
           "description": "At 3rd level, you gain the ability to channel celestial energy to heal wounds. You have a pool of d6s that you spend to fuel this healing. The number of dice in the pool equals 1 + your warlock level.\n\nAs a bonus action, you can heal one creature you can see within 60 feet of you, spending dice from the pool. The maximum number of dice you can spend at once equals your Charisma modifier (minimum of one die).\n\nRoll the dice you spend, add them together, and restore a number of hit points equal to the total.\n\nYour pool regains all expended dice when you finish a long rest."
         },
@@ -405,7 +400,7 @@
           "name": "Hexblade's Curse",
           "counttype": "fixed",
           "count": 2,
-          "minlevel": 3,
+          "minlevel": 2,
           "recovery": "shortrest"
         },
         {
@@ -418,14 +413,14 @@
       ],
       "features": [
         {
-          "level": 1,
+          "level": 2,
           "name": "Expanded Spell List",
-          "description": "The Hexblade grants you additonal spells when you reach certain levels in this class. Add the following spells to your spells known at the level listed, they count as warlock spells for you, but do not count against your maximum spells known.\n\n* 1st - shield, wrathful smite\n* 3rd - blur, branding smite\n* 5th - blink, elemental weapon\n* 7th - phantasmal killer, staggering smite\n* 9th - banishing smite, cone of cold"
+          "description": "The Hexblade grants you additonal spells when you reach certain levels in this class. Add the following spells to your spells known at the level listed, they count as warlock spells for you, but do not count against your maximum spells known.\n\n* 2nd - shield, wrathful smite\n* 3rd - blur, branding smite\n* 5th - blink, elemental weapon\n* 7th - phantasmal killer, staggering smite\n* 9th - banishing smite, cone of cold"
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Hexblade's Curse",
-          "description": "Starting at lst level, you gain the ability to place a baleful curse on someone. As a bonus action, choose one creature you can see within 30 feet of you. The target is cursed for 1 minute. The curse ends early if the target dies, you die, or you are incapacitated. Until the curse ends, you gain the following benefits:\n\n* You gain a bonus to damage rolls against the cursed target. The bonus equals your proficiency bonus.\n* Any attack roll you make against the cursed target is a critical hit on a roll of 19 or 20 on the d20.\n* If the cursed target dies, you regain hit points equal to your warlock level + your Charisma modifier (minimum of 1 hit point).\n\nYou can use this feature twice, after which you can't use this feature again until you finish a short or long rest. However, only one creature can be affected by your curse at a time."
+          "description": "Starting at 2nd level, you gain the ability to place a baleful curse on someone. As a bonus action, choose one creature you can see within 30 feet of you. The target is cursed for 1 minute. The curse ends early if the target dies, you die, or you are incapacitated. Until the curse ends, you gain the following benefits:\n\n* You gain a bonus to damage rolls against the cursed target. The bonus equals your proficiency bonus.\n* Any attack roll you make against the cursed target is a critical hit on a roll of 19 or 20 on the d20.\n* If the cursed target dies, you regain hit points equal to your warlock level + your Charisma modifier (minimum of 1 hit point).\n\nYou can use this feature twice, after which you can't use this feature again until you finish a short or long rest. However, only one creature can be affected by your curse at a time."
         },
         {
           "level": 6,
@@ -452,7 +447,7 @@
           "name": "Tentacle of the Deeps",
           "counttype": "prof",
           "count": 0,
-          "minlevel": 3,
+          "minlevel": 2,
           "recovery": "longrest"
         },
         {
@@ -472,17 +467,17 @@
       ],
       "features": [
         {
-          "level": 1,
+          "level": 2,
           "name": "Expanded Spell List",
-          "description": "The Fathomless  grants you additonal spells when you reach certain levels in this class. Add the following spells to your spells known at the level listed, they count as warlock spells for you, but do not count against your maximum spells known.\n\n* 1st - create or destroy water, thunderwave\n* 3rd - gust of wind, silence\n* 5th - lightning bolt, sleet storm\n* 7th - control water, summon elemental (water only)\n* 9th - Bigby's Hand (appears as tentacles), cone of cold"
+          "description": "The Fathomless  grants you additonal spells when you reach certain levels in this class. Add the following spells to your spells known at the level listed, they count as warlock spells for you, but do not count against your maximum spells known.\n\n* 2nd - create or destroy water, thunderwave\n* 3rd - gust of wind, silence\n* 5th - lightning bolt, sleet storm\n* 7th - control water, summon elemental (water only)\n* 9th - Bigby's Hand (appears as tentacles), cone of cold"
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Tentacle of the Deeps",
           "description": "You can magically summon a spectral tentacle that strikes at your foes. As a bonus action, you create a 10-foot-long tentacle at a point you can see within 60 feet of you. The tentacle lasts for 1 minute or until you use this feature to create another tentacle.\n\nWhen you create the tentacle, you can make a melee spell attack against one creature within 10 feet of it. On a hit, the target takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn. When you reach 10th level in this class, the damage increases to 2d8. As a bonus action on your turn, you can move the tentacle up to 30 feet and repeat the attack.\n\nYou can summon the tentacle a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
         },
         {
-          "level": 1,
+          "level": 2,
           "name": "Gift of the Sea",
           "description": "You gain a swimming speed of 40 feet, and you can breathe underwater."
         },
@@ -516,7 +511,7 @@
           "name": "Enter Vessel",
           "counttype": "fixed",
           "count": 1,
-          "minlevel": 3,
+          "minlevel": 2,
           "recovery": "longrest"
         },
         {
@@ -529,12 +524,12 @@
       ],
       "features": [
         {
-          "level": 1,
+          "level": 2,
           "name": "Expanded Spell List",
-          "description": "The Genie grants you additonal spells when you reach certain levels in this class. Add the following spells to your spells known at the level listed, they count as warlock spells for you, but do not count against your maximum spells known. The Genie Expanded Spells table shows the genie spells that are added for you, along with the spells associated in the table with your patron's kind: dao, djinni, efreeti, or marid."
+          "description": "The Genie grants you additonal spells when you reach certain levels in this class. Add the following spells to your spells known at the level listed, they count as warlock spells for you, but do not count against your maximum spells known. The Genie Expanded Spells table shows the genie spells that are added for you, along with the spells associated in the table with your patron's kind: dao, djinni, efreeti, or marid.\n##### Genies Spells\n* 2nd - Detect Evil and Good\n* 3rd - Phantasmal Force\n* 5th - Create Food and Water\n* 7th - Phantasmal Killer\n* 9th - Creation\n* 17th - Wish\n##### Dao Spells\n* 2nd - Sanctuary\n* 3rd - Spike Growth\n* 5th - Meld into Stone\n* 7th - Stone Shape\n* 9th - Wall of Stone\n##### Djinni Spells\n* 2nd - Thunderwave\n* 3rd - Gust of Wind\n* 5th - Wind Wall\n* 7th - Greater Invisibility\n* 9th - Seeming\n##### Efreeti Spells\n* 2nd - Burning Hand\n* 3rd - Scorching Ray\n* 5th - Fireball\n* 7th - Fire Shield\n* 9th - Flame Strike\n##### Marid Spells\n* 2nd - Fog Cloud\n* 3rd - Blur\n* 5th - Sleet Storm\n* 7th - Control Water\n* 9th - Cone of Cold"
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Genie's Vessel",
           "description": "Your patron gifts you a magical vessel that grants you a measure of the genie's power. The vessel is a Tiny object, and you can use it as a spellcasting focus for your warlock spells. You decide what the object is, or you can determine what it is randomly by rolling on the Genie's Vessel table.\n\nWhile  you are touching the vessel, you can use it in the following ways:\n\n**Bottled Respite.** As an action, you can magically vanish and enter your vessel, which remains in the space you left. The interior of the vessel is an extradimensional space in the shape of a 20-foot radius cylinder, 10 feet high, and resembles your vessel. The interior is appointed with cushions and low tables and is a comfortable temperature. While inside, you can hear the area around your vessel as if you were in its space. You can remain inside the vessel up to a number of hours equal to twice your proficiency bonus. You exit the vessel early if you use a bonus action to leave, if you die, or if the vessel is destroyed. When you exit the vessel, you appear in the unoccupied space closest to it. Any objects left in the vessel remain there until carried out, and if the vessel is destroyed, every object stored there harmlessly appears in an unoccupied space closest to the vessel's former space. Once you enter the vessel, you can't enter again until you finish a long rest.\n\n**Genie's Wrath.** Once during each of your turns when you hit with an attack roll, you can deal extra damage to the target equal to your proficiency bonus. The type of this damage is determined by your patron: bludgeoning (dao), thunder (djinni), fire (efreeti), or cold (marid).\n\nThe vessel's AC equals your spell save DC. Its hit points equal your warlock level plus your proficiency bonus, and it is immune to poison and psychic damage.\n\nIf the vessel is destroyed or you lose it, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and the previous vessel is destroyed if it still exists. The vessel vanishes in a flare of elemental power when you die."
         },

@@ -3,7 +3,7 @@ layout: post
 title: "Planar Binding"
 date: 2015-07-30
 source: PHB.265
-tags: [archivist, bard, cleric, druid, warlock, wizard, level5, abjuration]
+tags: [bard, cleric, druid, warlock, wizard, level5, abjuration]
 ---
 
 **5th-level abjuration**

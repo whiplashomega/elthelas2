@@ -3,7 +3,7 @@ layout: post
 title: "Enhance Ability"
 date: 2015-07-14
 source: PHB.237
-tags: [archivist, bard, cleric, druid, ranger, sorcerer, artificer, wizard, level2, transmutation]
+tags: [arcanetrickster, bard, cleric, druid, ranger, sorcerer, artificer, wizard, level2, transmutation]
 ---
 
 **2nd-level transmutation**
@@ -16,7 +16,7 @@ tags: [archivist, bard, cleric, druid, ranger, sorcerer, artificer, wizard, leve
 
 **Duration**: Concentration, up to 1 hour
 
-**Saving Throw**: 
+**Saving Throw**:
 
 **Save For**:
 

@@ -3,7 +3,7 @@ layout: post
 title: "Skill Empowerment"
 date: 2015-07-14
 source: PHB.242
-tags: [bard, sorcerer, wizard, artificer, level5, transmutation]
+tags: [arcanetrickster, bard, sorcerer, wizard, artificer, level5, transmutation]
 ---
 
 **5th-level transmutation**

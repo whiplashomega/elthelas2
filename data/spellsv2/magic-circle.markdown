@@ -3,7 +3,7 @@ layout: post
 title:  "Magic Circle"
 date:   2015-01-01
 source: PHB.256
-tags: [archivist, cleric, paladin, eldritchknight, warlock, wizard, level3, abjuration]
+tags: [cleric, paladin, eldritchknight, warlock, wizard, level3, abjuration]
 ---
 
 **3rd-level abjuration**

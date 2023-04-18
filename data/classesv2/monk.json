@@ -77,9 +77,9 @@
       "description": "If you spend 1 ki point or more as part of your action on your turn, you can make one attack with an unarmed strike or a monk weapon as a bonus action before the end of the turn."
     },
     {
-      "level": 3,
+      "level": 2,
       "name": "Monastic Tradition",
-      "description": "When you reach 3rd level, you commit yourself to a monastic tradition: the Way of the Open Hand, the Way of Shadow, or the Way of the Four Elements, all detailed at the end of the class description. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level."
+      "description": "When you reach 2nd level, you commit yourself to a monastic tradition: the Way of the Open Hand, the Way of Shadow, or the Way of the Four Elements, all detailed at the end of the class description. Your tradition grants you features at 2nd level and again at 6th, 11th, and 17th level."
     },
     {
       "level": 6,
@@ -184,7 +184,7 @@
       "resources": [],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Open Hand Technique",
           "description": "Starting when you choose this tradition at 3rd level, you can manipulate your enemy’s ki when you harness your own. Whenever you hit a creature with one of the attacks granted by your Flurry of Blows, you can impose one of the following effects on that target:\n\n* It must succeed on a Dexterity saving throw or be knocked prone.\n* It must make a Strength saving throw. If it fails, you can push it up to 15 feet away from you.\n* It can’t take reactions until the end of your next turn."
         },
@@ -211,12 +211,12 @@
       "resources": [],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Shadow Arts",
           "description": "Starting when you choose this tradition at 3rd level, you can use your ki to duplicate the effects of certain spells. As an action, you can spend 2 ki points to cast darkness, darkvision, pass without trace, or silence, without providing material components. Additionally, you gain the minor illusion cantrip if you don’t already know it."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Darkvision",
           "description": "You gain the ability to see through magical darkness up to 60 ft."
         },
@@ -243,9 +243,9 @@
       "resources": [],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Disciple of the Elements",
-          "description": "When you choose this tradition at 3rd level, you learn magical disciplines that harness the power of the four elements. A discipline requires you to spend ki points each time you use it.\n\nYou know the Elemental Attunement discipline and one other elemental discipline of your choice, which are detailed in the \"Elemental Disciplines\" section below. You learn an additional elemental discipline at each odd number monk level after this one (5th, 7th, 9th, 11th, 13th, 15th, 17th, and 19th). Whenever you learn a new elemental discipline, you can also replace one elemental discipline that you already know with a different discipline.\n\n**Casting Elemental Spells.** Some elemental disciplines allow you to cast spells. See chapter 10 for the general rules of spellcasting. To cast one of these spells, you use its casting time and other rules, but you don’t need to provide material components for it.\n\nOnce you reach 5th level in this class, you can spend additional ki points to increase the level of an elemental discipline spell that you cast, provided that the spell has an enhanced effect at a higher level, as burning hands does. The spell's level increases by 1 for each additional ki point you spend. For example, if you are a 5th-level monk and use Sweeping Cinder Strike to cast burning hands, you can spend 2 ki points to cast it as a 2nd-level spell (the discipline’s base cost of 1 ki point plus 1).\n\nThe maximum number of ki points you can spend to cast a spell in this way (including its base ki point cost and any additional ki points you spend to increase its level) is equal to 1/4 of your monk level (rounded up).\n\n#### Elemental Disciplines\n\nThe elemental disciplines are presented in alphabetical order. If a discipline requires a level, you must be that level in this class to learn the discipline.\n\n**Breath of Winter (17th Level Required).** You can spend 5 ki points to cast cone of cold.\n\n**Clench of the North Wind (5th Level Required).** You can spend 2 ki points to cast hold person.\n\n**Elemental Attunement.** You can use your action to briefly control elemental forces within 30 feet of you, causing one of the following effects of your choice:\n\n* Create a harmless, instantaneous sensory effect related to air, earth, fire, or water, such as a shower of sparks, a puff of wind, a spray of light mist, or a gentle rumbling of stone.\n* Instantaneously light or snuff out a candle, a torch, or a small campfire.\n* Chill or warm up to 1 pound of nonliving material for up to 1 hour.\n* Cause earth, fire, water, or mist that can fit within a 1-foot cube to shape itself into a crude form you designate for 1 minute.\n\n**Eternal Mountain Defense (13th Level Required).** You can spend 4 ki points to cast stoneskin, targeting yourself.\n\n**Fangs of the Fire Snake.** When you use the Attack action on your turn, you can spend 1 ki point to cause tendrils of flame to stretch out from your fists and feet.\n\nYour reach with your unarmed strikes increases by 10 feet for that action, as well as the rest of the turn. A hit with such an attack deals fire damage instead of bludgeoning damage, and if the attack hits, it also deals an extra 1d10 fire damage.\n\n**Fist of Four Thunders.** You can spend 1 ki points to cast thunderwave.\n\n**Fist of Unbroken Air.** You can create a blast of compressed air that strikes like a mighty fist. As an action, you can spend 1 ki points and choose a creature within 30 feet of you. That creature must make a Strength saving throw. On a failed save, the creature takes 3d10 bludgeoning damage, plus an extra 1d10 bludgeoning damage for each additional ki point you spend, and you can push the creature up to 20 feet away from you and knock it prone. On a successful save, the creature takes half as much damage, and you don’t push it or knock it prone.\n\n**Flames of the Phoenix (9th Level Required).** You can spend 3 ki points to cast fireball.\n\n**Gong of the Summit (5th Level Required). You can spend 2 ki points to cast shatter.\n\n**Mist Stance (9th Level Required).** You can spend 3 ki points to cast gaseous form, targeting yourself.\n\n**Ride the Wind (9th Level Required).** You can spend 3 ki points to cast fly, targeting yourself.\n\n**River of Hungry Flame (13th Level Required). You can spend 4 ki points to cast wall of fire.\n\n**Rush of the Gale Spirits.** You can spend 1 ki points to cast gust of wind.\n\n**Shape the Flowing River.** As an action, you can spend 1 ki point to choose an area of ice or water no larger than 30 feet on a side within 120 feet of you. You can change water to ice within the area and vice versa, and you can reshape ice in the area in any manner you choose. You can raise or lower the ice’s elevation, create or fill in a trench, erect or flatten a wall, or form a pillar. The extent of any such changes can’t exceed half the area’s largest dimension. For example, if you affect a 30-foot square, you can create a pillar up to 15 feet high, raise or lower the square’s elevation by up to 15 feet, dig a trench up to 15 feet deep, and so on. You can’t shape the ice to trap or injure a creature in the area.\n\n**Sweeping Cinder Strike.** You can spend 1 ki points to cast burning hands.\n\n**Water Whip.** You can spend 1 ki points as an action to create a whip of water that shoves and pulls a creature to unbalance it. A creature that you can see that is within 30 feet of you must make a Dexterity saving throw. On a failed save, the creature takes 3d10 bludgeoning damage, plus an extra 1d10 bludgeoning damage for each additional ki point you spend, and you can either knock it prone or pull it up to 25 feet closer to you. On a successful save, the creature takes half as much damage, and you don’t pull it or knock it prone.\n\n**Wave of Rolling Earth (17th Level Required).** You can spend 5 ki points to cast wall of stone."
+          "description": "When you choose this tradition at 3rd level, you learn magical disciplines that harness the power of the four elements. A discipline requires you to spend ki points each time you use it.\n\nYou know the Elemental Attunement discipline and one other elemental discipline of your choice, which are detailed in the \"Elemental Disciplines\" section below. You learn an additional elemental discipline at each odd number monk level after this one (3rd, 5th, 7th, 9th, 11th, 13th, 15th, 17th, and 19th). Whenever you learn a new elemental discipline, you can also replace one elemental discipline that you already know with a different discipline.\n\n**Casting Elemental Spells.** Some elemental disciplines allow you to cast spells. See chapter 10 for the general rules of spellcasting. To cast one of these spells, you use its casting time and other rules, but you don’t need to provide material components for it.\n\nOnce you reach 5th level in this class, you can spend additional ki points to increase the level of an elemental discipline spell that you cast, provided that the spell has an enhanced effect at a higher level, as burning hands does. The spell's level increases by 1 for each additional ki point you spend. For example, if you are a 5th-level monk and use Sweeping Cinder Strike to cast burning hands, you can spend 2 ki points to cast it as a 2nd-level spell (the discipline’s base cost of 1 ki point plus 1).\n\nThe maximum number of ki points you can spend to cast a spell in this way (including its base ki point cost and any additional ki points you spend to increase its level) is equal to 1/4 of your monk level (rounded up).\n\n#### Elemental Disciplines\n\nThe elemental disciplines are presented in alphabetical order. If a discipline requires a level, you must be that level in this class to learn the discipline.\n\n**Breath of Winter (17th Level Required).** You can spend 5 ki points to cast cone of cold.\n\n**Clench of the North Wind (5th Level Required).** You can spend 2 ki points to cast hold person.\n\n**Elemental Attunement.** You can use your action to briefly control elemental forces within 30 feet of you, causing one of the following effects of your choice:\n\n* Create a harmless, instantaneous sensory effect related to air, earth, fire, or water, such as a shower of sparks, a puff of wind, a spray of light mist, or a gentle rumbling of stone.\n* Instantaneously light or snuff out a candle, a torch, or a small campfire.\n* Chill or warm up to 1 pound of nonliving material for up to 1 hour.\n* Cause earth, fire, water, or mist that can fit within a 1-foot cube to shape itself into a crude form you designate for 1 minute.\n\n**Eternal Mountain Defense (13th Level Required).** You can spend 4 ki points to cast stoneskin, targeting yourself.\n\n**Fangs of the Fire Snake.** When you use the Attack action on your turn, you can spend 1 ki point to cause tendrils of flame to stretch out from your fists and feet.\n\nYour reach with your unarmed strikes increases by 10 feet for that action, as well as the rest of the turn. A hit with such an attack deals fire damage instead of bludgeoning damage, and if the attack hits, it also deals an extra 1d10 fire damage.\n\n**Fist of Four Thunders.** You can spend 1 ki points to cast thunderwave.\n\n**Fist of Unbroken Air.** You can create a blast of compressed air that strikes like a mighty fist. As an action, you can spend 1 ki points and choose a creature within 30 feet of you. That creature must make a Strength saving throw. On a failed save, the creature takes 3d10 bludgeoning damage, plus an extra 1d10 bludgeoning damage for each additional ki point you spend, and you can push the creature up to 20 feet away from you and knock it prone. On a successful save, the creature takes half as much damage, and you don’t push it or knock it prone.\n\n**Flames of the Phoenix (9th Level Required).** You can spend 3 ki points to cast fireball.\n\n**Gong of the Summit (5th Level Required). You can spend 2 ki points to cast shatter.\n\n**Mist Stance (9th Level Required).** You can spend 3 ki points to cast gaseous form, targeting yourself.\n\n**Ride the Wind (9th Level Required).** You can spend 3 ki points to cast fly, targeting yourself.\n\n**River of Hungry Flame (13th Level Required). You can spend 4 ki points to cast wall of fire.\n\n**Rush of the Gale Spirits.** You can spend 1 ki points to cast gust of wind.\n\n**Shape the Flowing River.** As an action, you can spend 1 ki point to choose an area of ice or water no larger than 30 feet on a side within 120 feet of you. You can change water to ice within the area and vice versa, and you can reshape ice in the area in any manner you choose. You can raise or lower the ice’s elevation, create or fill in a trench, erect or flatten a wall, or form a pillar. The extent of any such changes can’t exceed half the area’s largest dimension. For example, if you affect a 30-foot square, you can create a pillar up to 15 feet high, raise or lower the square’s elevation by up to 15 feet, dig a trench up to 15 feet deep, and so on. You can’t shape the ice to trap or injure a creature in the area.\n\n**Sweeping Cinder Strike.** You can spend 1 ki points to cast burning hands.\n\n**Water Whip.** You can spend 1 ki points as an action to create a whip of water that shoves and pulls a creature to unbalance it. A creature that you can see that is within 30 feet of you must make a Dexterity saving throw. On a failed save, the creature takes 3d10 bludgeoning damage, plus an extra 1d10 bludgeoning damage for each additional ki point you spend, and you can either knock it prone or pull it up to 25 feet closer to you. On a successful save, the creature takes half as much damage, and you don’t pull it or knock it prone.\n\n**Wave of Rolling Earth (17th Level Required).** You can spend 5 ki points to cast wall of stone."
         }
       ]
     },
@@ -255,7 +255,7 @@
       "resources": [],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Touch of Death",
           "description": "Starting when you choose this tradition at 3rd level, your study of death allows you to extract vitality from another creature as it nears its demise. When you reduce a creature within 5 feet of you to 0 hit points, you gain temporary hit points equal to your Wisdom modifier + your monk level (minimum of 1 temporary hit point)."
         },
@@ -282,9 +282,9 @@
       "resources": [],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Radiant Sun Bolt",
-          "description": "Starting when you choose this tradition at 3rd level, you can hurl searing bolts of magical radiance.\n\nYou gain a ranged spell attack that you can use with the Attack action. The attack has a range of 30 feet. You are proficient with it, and you add your Dexterity modifier to its attack and damage rolls. Its damage is radiant, and its damage die is a d4. This die changes as you gain monk levels, as shown in the Martial Arts column of the Monk table.\n\nWhen you use the Attack action on your turn to use this special attack, you can spend 1 ki point to make two additional attacks with it as a bonus action."
+          "description": "Starting when you choose this tradition at 2nd level, you can hurl searing bolts of magical radiance.\n\nYou gain a ranged spell attack that you can use with the Attack action. The attack has a range of 30 feet. You are proficient with it, and you add your Dexterity modifier to its attack and damage rolls. Its damage is radiant, and its damage die is a d4. This die changes as you gain monk levels, as shown in the Martial Arts column of the Monk table.\n\nWhen you use the Attack action on your turn to use this special attack, you can spend 1 ki point to make two additional attacks with it as a bonus action."
         },
         {
           "level": 6,
@@ -309,14 +309,14 @@
       "resources": [],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Bonus Proficiencies",
-          "description": "When you choose this tradition at 3rd level, you gain proficiency in the Performance skill if you don’t already have it. Your martial arts technique mixes combat training with the precision of a dancer and the antics of a jester. You also gain proficiency with brewer’s supplies if you don’t already have it."
+          "description": "When you choose this tradition at 2nd level, you gain proficiency in the Performance skill if you don’t already have it. Your martial arts technique mixes combat training with the precision of a dancer and the antics of a jester. You also gain proficiency with brewer’s supplies if you don’t already have it."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Drunken Technique",
-          "description": "At 3rd level, you learn how to twist and turn quickly as part of your Flurry of Blows. Whenever you use Flurry of Blows, you gain the benefit of the Disengage action, and your walking speed increases by 10 feet until the end of the current turn."
+          "description": "At 2nd level, you learn how to twist and turn quickly as part of your Flurry of Blows. Whenever you use Flurry of Blows, you gain the benefit of the Disengage action, and your walking speed increases by 10 feet until the end of the current turn."
         },
         {
           "level": 6,
@@ -341,9 +341,9 @@
       "resources": [],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Path of the Kensai",
-          "description": "When you choose this tradition at 3rd level, your special martial arts training leads you to master the use of certain weapons. This path also includes instruction in the deft strokes of calligraphy or painting. You gain the following benefits.\n\n**Kensei Weapons.** Choose two types of weapons to be your kensei weapons: one melee weapon and one ranged weapon. Each of these weapons can be any simple or martial weapon that lacks the heavy and special properties. The longbow is also a valid choice. You gain proficiency with these weapons if you don’t already have it. Weapons of the chosen types are monk weapons for you. Many of this tradition’s features work only with your kensei weapons. When you reach 6th, 11th, and 1'7th level in this class. you can choose another type of weapon—either melee or ranged—to be a kensei weapon for you. following the criteria above.\n\n**Agile Parry.** If you make an unarmed strike as part of the Attack action on your turn and are holding a kensei weapon, you can use it to defend yourself if it is a melee weapon. You gain a +2 bonus to AC until the start of your next turn, while the weapon is in your hand and you aren't incapacitated.\n\n**Kensei’s Shot.** You can use a bonus action on your turn to make your ranged attacks with a kensei weapon more deadly. When you do so, any target you hit with a ranged attack using a kensei weapon takes an extra 1d4 damage of the weapons type. You retain this benefit until the end of the current turn.\n\n**Way of the Brush.** You gain proficiency with your choice of calligrapher's supplies or painter's supplies."
+          "description": "When you choose this tradition at 2nd level, your special martial arts training leads you to master the use of certain weapons. This path also includes instruction in the deft strokes of calligraphy or painting. You gain the following benefits.\n\n**Kensei Weapons.** Choose two types of weapons to be your kensei weapons: one melee weapon and one ranged weapon. Each of these weapons can be any simple or martial weapon that lacks the heavy and special properties. The longbow is also a valid choice. You gain proficiency with these weapons if you don’t already have it. Weapons of the chosen types are monk weapons for you. Many of this tradition’s features work only with your kensei weapons. When you reach 6th, 11th, and 1'7th level in this class. you can choose another type of weapon—either melee or ranged—to be a kensei weapon for you. following the criteria above.\n\n**Agile Parry.** If you make an unarmed strike as part of the Attack action on your turn and are holding a kensei weapon, you can use it to defend yourself if it is a melee weapon. You gain a +2 bonus to AC until the start of your next turn, while the weapon is in your hand and you aren't incapacitated.\n\n**Kensei’s Shot.** You can use a bonus action on your turn to make your ranged attacks with a kensei weapon more deadly. When you do so, any target you hit with a ranged attack using a kensei weapon takes an extra 1d4 damage of the weapons type. You retain this benefit until the end of the current turn.\n\n**Way of the Brush.** You gain proficiency with your choice of calligrapher's supplies or painter's supplies."
         },
         {
           "level": 6,
@@ -376,17 +376,17 @@
       ],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Implements of Mercy",
           "description": "You gain proficiency in the Insight and Medicine skills, and you gain proficiency with the herbalism kit.\n\nYou also gain a special mask, which you often wear when using the features of this subclass. You determine its appearance, or generate it randomly by rolling on the Merciful Mask table."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Hand of Healing",
           "description": "Your mystical touch can mend wounds. As an action, you can spend 1 ki point to touch a creature and restore a number of hit points equal to a roll of your Martial Arts die + your Wisdom modifier.\n\nWhen you use your Flurry of Blows, you can replace one of the unarmed strikes with a use of this feature without spending a ki point for the healing."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Hand of Harm",
           "description": "You use your ki to inflict wounds. When you hit a creature with an unarmed strike, you can spend 1 ki point to deal extra necrotic damage equal to one roll of your Martial Arts die + your Wisdom modifier. You can use this feature only once per turn."
         },
@@ -413,7 +413,7 @@
       "resources": [],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Arms of the Astral Self",
           "description": "Your mastery of your ki allows you to summon a portion of your astral self. As a bonus action, you can spend 1 ki point to summon the arms of your astral self. When you do so, each creature of your choice that you can see within 10 feet of you must succeed on a Dexterity saving throw or take force damage equal to two rolls of your Martial Arts die.\n\nFor 10 minutes, these spectral arms hover near your shoulders or surround your arms (your choice). You determine the arms' appearance, and they vanish early if you are incapacitated or die.\n\nWhile the spectral arms are present, you gain the following benefits:\n\n* You can use your Wisdom modifier in place of your Strength modifier when making Strength checks and Strength saving throws.\n* You can use the spectral arms to make unarmed strikes\n* When you make an unarmed strike with the arms on your turn, your reach for it is 5 feet greater than normal.\n* The unarmed strikes you make with the arms can use your Wisdom modifier in place of your Strength or Dexterity modifier for the attack and damage rolls, and their damage type is force."
         },

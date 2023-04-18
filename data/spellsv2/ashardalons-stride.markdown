@@ -3,7 +3,7 @@ layout: post
 title:  "Ashardalon’s Stride"
 date:   2015-01-09
 source: PHB.215
-tags:   [artificer, sorcerer, warlock, wizard, level3, transmutation]
+tags:   [arcanetrickster, artificer, eldritchknight, sorcerer, warlock, wizard, level3, transmutation]
 ---
 
 **3rd-level transmutation**
@@ -16,9 +16,9 @@ tags:   [artificer, sorcerer, warlock, wizard, level3, transmutation]
 
 **Duration**: Concentration, up to 1 minute
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ { "dice": "1d6", label: "fire", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 

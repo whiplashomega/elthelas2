@@ -3,7 +3,7 @@ layout: post
 title:  "Arcane Eye"
 date:   2015-01-01
 source: PHB.214
-tags: [archivist, wizard, artificer, level4, divination]
+tags: [arcanetrickster, wizard, artificer, level4, divination]
 ---
 
 **4th-level divination**
@@ -16,9 +16,9 @@ tags: [archivist, wizard, artificer, level4, divination]
 
 **Duration**: Concentration, up to 1 hour
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ ]
 

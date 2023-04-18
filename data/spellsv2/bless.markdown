@@ -3,7 +3,7 @@ layout: post
 title:  "Bless"
 date:   2014-08-24
 source: PHB.219
-tags: [archivist, cleric, paladin, level1, enchantment]
+tags: [cleric, paladin, level1, enchantment]
 ---
 
 **1st-level enchantment**
@@ -16,9 +16,9 @@ tags: [archivist, cleric, paladin, level1, enchantment]
 
 **Duration**: Concentration, up to 1 minute
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ ]
 

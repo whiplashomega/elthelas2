@@ -3,7 +3,7 @@ layout: post
 title:  "Purify Food and Drink"
 date:   2014-08-24
 source: PHB.270
-tags: [cleric, druid, paladin, artificer, level1, transmutation, ritual]
+tags: [arcanetrickster, cleric, druid, paladin, artificer, level1, transmutation, ritual]
 ---
 
 **1st-level transmutation (ritual)**

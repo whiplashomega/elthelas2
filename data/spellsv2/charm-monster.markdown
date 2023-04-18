@@ -3,7 +3,7 @@ layout: post
 title:  "Charm Monster"
 date:   2014-08-24
 source: XGE.151
-tags: [bard, druid, sorcerer, warlock, wizard, level4, enchantment]
+tags: [arcanetrickster, bard, druid, sorcerer, warlock, wizard, level4, enchantment]
 ---
 
 **4th-level enchantment**

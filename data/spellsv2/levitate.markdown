@@ -3,7 +3,7 @@ layout: post
 title: "Levitate"
 date: 2015-07-30
 source: PHB.255
-tags: [archivist, sorcerer, wizard, artificer, level2, transmutation]
+tags: [arcanetrickster, sorcerer, wizard, artificer, level2, transmutation]
 ---
 
 **2nd-level transmutation**

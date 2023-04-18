@@ -3,7 +3,7 @@ layout: post
 title:  "Tongues"
 date:   2015-01-02
 source: PHB.283
-tags: [archivist, bard, cleric, sorcerer, warlock, wizard, level3, divination]
+tags: [arcanetrickster, bard, cleric, sorcerer, warlock, wizard, level3, divination]
 ---
 
 **3rd-level divination**

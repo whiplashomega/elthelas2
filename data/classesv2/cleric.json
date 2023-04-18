@@ -31,19 +31,34 @@
       "description": "As a conduit for divine power, you can cast cleric spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the cleric spell list.\n\n#### Cantrips\n\nAt 1st level, you know three cantrips o f your choice from the cleric spell list. You learn additional cleric cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Cleric table.\n\n#### Preparing and Casting Spells\n\nThe Cleric table shows how many spell slots you have to cast your cleric spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.\n\nYou prepare the list o f cleric spells that are available for you to cast, choosing from the cleric spell list. When you do so, choose a number of cleric spells equal to your Wisdom modifier + your cleric level (minimum of one spell). The spells must be of a level for which you have spell slots.\n\nFor example, if you are a 3rd-level cleric, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list o f prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn’t remove it from your list of prepared spells.\n\nYou can change your list of prepared spells when you finish a long rest. Preparing a new list o f cleric spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list.\n\n#### Spellcasting Ability\n\nWisdom is your spellcasting ability for your cleric spells. The power of your spells comes from your devotion to your deity. You use your Wisdom whenever a cleric spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a cleric spell you cast and when making an attack roll with one.\n\n#### Ritual Casting\n\nYou can cast a cleric spell as a ritual if that spell has the ritual tag and you have the spell prepared.\n\n#### Spellcasting Focus\n\nYou can use a holy symbol (found in chapter 5) as a spellcasting focus for your cleric spells."
     },
     {
-      "level": 2,
+      "level": 3,
       "name": "Channel Divinity",
-      "description": "At 2nd level, you gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with one such effects: Turn Undead, and will gain another effect later determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description.\n\nWhen you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again.\n\nSome Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your cleric spell save DC.\n\nBeginning at 6th level, you can use your Channel Divinity twice between rests, and beginning at 18th level, you can use it three times between rests. When you finish a short or long rest, you regain your expended uses.\n\n#### Channel Divinity: Turn Undead\n\nAs an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action."
+      "description": "You gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with one such effects: Turn Undead, and will gain another effect later determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description.\n\nWhen you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again.\n\nSome Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your cleric spell save DC.\n\nBeginning at 6th level, you can use your Channel Divinity twice between rests, and beginning at 18th level, you can use it three times between rests. When you finish a short or long rest, you regain your expended uses.\n\n#### Channel Divinity: Turn Undead\n\nAs an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action."
     },
     {
-      "level": 2,
+      "level": 3,
       "name": "Harness Divine Power",
       "description": "You can expend a use of your Channel Divinity to fuel your spells. As a bonus action, you touch your holy symbol, utter a prayer, and regain one expended spell slot, the level of which can  be no higher than half your proficiency bonus (rounded up)."
     },
     {
-      "level": 1,
+      "level": 2,
       "name": "Divine Domain",
       "description": "Choose one domain related to your deity. Each domain is detailed at the end of the class description, and each one provides examples of gods associated with it. Your choice grants you domain spells when you choose it at 1st level. It also grants you additional ways to use Channel Divinity at 2nd level, and additional benefits at 3rd, 6th, 8th, and 17th levels.\n\n#### Domain Spells\n\nEach domain has a list of spells—its domain spells—that you gain at the cleric levels noted in the domain description. Once you gain a domain spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day.\n\nIf you have a domain spell that doesn’t appear on the cleric spell list, the spell is nonetheless a cleric spell for you."
+    },
+    {
+      "level": 6,
+      "name": "Divine Domain Feature (6th level)",
+      "description": "Choose one domain related to your deity. Each domain is detailed at the end of the class description, and each one provides examples of gods associated with it. Your choice grants you domain spells when you choose it at 1st level. It also grants you additional ways to use Channel Divinity at 2nd level, and additional benefits at 6th, 8th, and 17th levels.\n\n#### Domain Spells\n\nEach domain has a list of spells—its domain spells—that you gain at the cleric levels noted in the domain description. Once you gain a domain spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day.\n\nIf you have a domain spell that doesn’t appear on the cleric spell list, the spell is nonetheless a cleric spell for you."
+    },
+    {
+      "level": 8,
+      "name": "Divine Domain Feature (8th level)",
+      "description": "Choose one domain related to your deity. Each domain is detailed at the end of the class description, and each one provides examples of gods associated with it. Your choice grants you domain spells when you choose it at 1st level. It also grants you additional ways to use Channel Divinity at 2nd level, and additional benefits at 6th, 8th, and 17th levels.\n\n#### Domain Spells\n\nEach domain has a list of spells—its domain spells—that you gain at the cleric levels noted in the domain description. Once you gain a domain spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day.\n\nIf you have a domain spell that doesn’t appear on the cleric spell list, the spell is nonetheless a cleric spell for you."
+    },
+    {
+      "level": 17,
+      "name": "Divine Domain Feature (17th level)",
+      "description": "Choose one domain related to your deity. Each domain is detailed at the end of the class description, and each one provides examples of gods associated with it. Your choice grants you domain spells when you choose it at 1st level. It also grants you additional ways to use Channel Divinity at 2nd level, and additional benefits at 6th, 8th, and 17th levels.\n\n#### Domain Spells\n\nEach domain has a list of spells—its domain spells—that you gain at the cleric levels noted in the domain description. Once you gain a domain spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day.\n\nIf you have a domain spell that doesn’t appear on the cleric spell list, the spell is nonetheless a cleric spell for you."
     },
     {
       "level": 4,
@@ -74,7 +89,7 @@
   "subclass": [
     {
       "name": "Air Domain",
-      "castermult": 1, 
+      "castermult": 1,
       "resources": [
         {
           "name": "Living Air",
@@ -86,24 +101,24 @@
       ],
       "features": [
         {
-          "level": 1,
+          "level": 2,
           "name": "Air Domain Spells",
-          "description": "1st - feather fall, thunderwave. 3rd - gust of wind, dust devil. 5th - wind wall, lightning bolt. 7th - conjure minor elementals (air only), storm sphere. 9th - control winds, conjure elemental (air only)."
+          "description": "2nd - feather fall, thunderwave. 3rd - gust of wind, dust devil. 5th - wind wall, lightning bolt. 7th - conjure minor elementals (air only), storm sphere. 9th - control winds, conjure elemental (air only)."
         },
         {
-          "level": 2,
+          "level": 3,
           "name": "Channel Divinity: Gale",
           "description": "Starting at 3rd level, you can use your Channel Divinity to create a gale of wind like a tornado\n\nAs an action, you present your holy symbol and gale force winds permeate the area. The area within 60 ft of you becomes filled with strong winds. You and a number of creatures equal to your wisdom modifier that you select ignore these winds, meanwhile for any other creature moving 1 ft requires 2 ft of movement as they battle through the strong winds. Additionally, when the winds start each creature effected must make a strength saving throw or be knocked prone."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Bonus Proficiency",
           "description": "You gain proficiency with martial weapons."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Disciple of Air",
-          "description": "Also starting at 3rd level, your lightning spells are more effective, you add your wisdom modifier to the damage of any spell you cast that does lightning damage."
+          "description": "Your lightning spells are more effective, you add your wisdom modifier to the damage of any spell you cast that does lightning damage."
         },
         {
           "level": 6,
@@ -129,17 +144,17 @@
       ],
       "features": [
         {
-          "level": 1,
+          "level": 2,
           "name": "Arcana Domain Spells",
-          "description": "1st - detect magic, magic missile.  3rd - magic weapon, Nystul's magic aura.  5th - dispel magic, magic circle. 7th - arcane eye, leomund's secret chest. 9th - planar binding, teleportation circle."
+          "description": "2nd - detect magic, magic missile.  3rd - magic weapon, Nystul's magic aura.  5th - dispel magic, magic circle. 7th - arcane eye, leomund's secret chest. 9th - planar binding, teleportation circle."
         },
         {
-          "level": 2,
+          "level": 3,
           "name": "Channel Divinity: Arcane Abjuration",
           "description": "Starting at 2nd level, you can use your Channel Divinity to abjure otherworldly creatures.\n\nAs an action, you present your holy symbol, and one celestial, elemental, fey, or fiend of your choice that is within 30 feet of you must make a Wisdom saving throw, provided that the creature can see or hear you. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.\n\nA turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly end its move in a space within 30 feet of you. It also can't take reactions. For its action, it can only use the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.\n\nAfter you reach 5th level, when a creature fails its saving throw against your Arcane Abjuration feature, the creature is banished for 1 minute (as in the banishment spell, no concentration required) if it isn't on its plane of origin and its challenge rating is at or below a certain threshold, as shown on the Arcane Banishment table."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Arcane Initiate",
           "description": "You gain proficiency in the Arcana skill, and you gain two cantrips of your choice from the wizard spell list. For you, these cantrips count as cleric cantrips."
         },
@@ -167,22 +182,22 @@
       ],
       "features": [
         {
-          "level": 1,
+          "level": 2,
           "name": "Death Domain Spells",
-          "description": "1st - false life, ray of sickness.  3rd - blindness/deafness, ray of enfeeblement. 5th - animate dead, vampiric touch. 7th - blight, death ward. 9th - antilife shell, cloudkill."
+          "description": "2nd - false life, ray of sickness.  3rd - blindness/deafness, ray of enfeeblement. 5th - animate dead, vampiric touch. 7th - blight, death ward. 9th - antilife shell, cloudkill."
         },
         {
-          "level": 2,
+          "level": 3,
           "name": "Channel Divinity: Touch of Death",
           "description": "Starting at 2nd level, the cleric can use Channel Divinity to destroy another creature's life force by touch.\n\nWhen the cleric hits a creature with a melee attack, the cleric can use Channel Divinity to deal extra necrotic damage to the target. The damage equals 5 + twice his or her cleric level."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Bonus Proficiency",
           "description": "You gain proficiency with martial weapons."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Reaper",
           "description": "At 3rd level, the cleric learns one necromancy cantrip of his or her choice from any spell list. When the cleric casts a necromancy cantrip that normally targets only one creature, the spell can instead target two creatures within range and within 5 feet of each other."
         },
@@ -217,22 +232,22 @@
       ],
       "features": [
         {
-          "level": 1,
+          "level": 2,
           "name": "Earth Domain Spells",
           "description": "1st - earth tremor, absorb elements. 3rd - shatter, dust devil. 5th - Erupting Earth, Meld into Stone. 7th - Conjure minor elementals (earth only). Stone Shape. 9th - Wall of stone, conjure elemental (earth only)."
         },
         {
-          "level": 2,
+          "level": 3,
           "name": "Channel Divinity: Armor of Stone",
           "description": "Starting at 2nd level, you can use your Channel Divinity to strengthen your armor with the strength of the earth itself.\n\nAs an action, you present your holy symbol and perform an incantation. Pick a number of willing creatures equal to your wisdom modifier within 30 ft of you. Each of those creatures has their armor class increased by 2 for 1 minute."
         },
         {
-          "level":3,
+          "level":2,
           "name": "Bonus Proficiency",
           "description": "You gain proficiency with heavy armor."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Bonus Cantrips",
           "description": "You learn the magic stone and mold earth cantrips."
         },
@@ -267,22 +282,22 @@
       ],
       "features": [
         {
-          "level": 1,
+          "level": 2,
           "name": "Fire Domain Spells",
-          "description": "1st - fairie fire, burning hands. 3rd - heat metal, flame blade. 5th - fireball, elemental weapon (fire only). 7th - conjure minor elementals (fire only), wall of fire. 9th - flame strike, conjure elemental (fire only)."
+          "description": "2nd - fairie fire, burning hands. 3rd - heat metal, flame blade. 5th - fireball, elemental weapon (fire only). 7th - conjure minor elementals (fire only), wall of fire. 9th - flame strike, conjure elemental (fire only)."
         },
         {
-          "level": 2,
+          "level": 3,
           "name": "Channel Divinity: Fire Burst",
           "description": "Starting at 2nd level, you can use your Channel Divinity to create divine flames.\n\nAs an action, you present your holy symbol and nearby enemies burst into flame. Pick a number of opponents equal to your wisdom modifier within 30 feet of you. Each of those creatures must make a constitution saving throw or catch fire. The fire does 3d6 fire damage every round at the start of that creatures turn until someone uses an action to extinguish the flames."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Bonus Proficiency",
           "description": "You gain proficiency with martial weapons."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Disciple of Fire",
           "description": "Your fire spells are more effective, you add your wisdom modifier to the damage of any spell you cast that does fire damage."
         },
@@ -317,24 +332,24 @@
       ],
       "features": [
         {
-          "level": 1,
+          "level": 2,
           "name": "Forge Domain Spells",
-          "description": "1st - searing smite, shield. 3rd - Heat Metal, Magic Weapon. 5th - Elemental Weapon, Protection from Energy. 7th - Fabricate, Wall of Fire. 9th - Animate Objects, Creation."
+          "description": "2nd - searing smite, shield. 3rd - Heat Metal, Magic Weapon. 5th - Elemental Weapon, Protection from Energy. 7th - Fabricate, Wall of Fire. 9th - Animate Objects, Creation."
         },
         {
-          "level": 2,
+          "level": 3,
           "name": "Channel Divinity: Artisan's Blessing",
           "description": "Starting at 2nd level, you can use your Channel Divinity to create simple items.\n\nStarting at the beginning of a short rest, you conduct a ritual to your deity that grants you the ability to craft a finished item that is at least part metal. The item is completed at the end of the rest.\n\nThe object can be worth no more than 100 gp, and as part of this ritual you must expend metals, such as coins or other finished items, with a value equal to the item you want to make. The item can be an exact duplicate of a nonmagical item, such as a copy of a key, if you possess the original during your short rest."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Bonus Proficiencies",
           "description": "You gain proficiency in heavy armor and smith's tools."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Blessing of the Forge",
-          "description": "At 3rd level, you gain the ability to imbue magic into a weapon or armor. At the end of a long rest, touch one nonmagical object that is a suit of armor or a simple or martial weapon. Until the end of your next long rest, the object becomes a magic item, granting a +1 bonus to AC if it’s armor or a +1 bonus to attack and damage rolls if it’s a weapon.\n\nOnce you use this feature, you can’t use it again until you finish a long rest."
+          "description": "At 2nd level, you gain the ability to imbue magic into a weapon or armor. At the end of a long rest, touch one nonmagical object that is a suit of armor or a simple or martial weapon. Until the end of your next long rest, the object becomes a magic item, granting a +1 bonus to AC if it’s armor or a +1 bonus to attack and damage rolls if it’s a weapon.\n\nOnce you use this feature, you can’t use it again until you finish a long rest."
         },
         {
           "level": 6,
@@ -374,24 +389,24 @@
       ],
       "features": [
         {
-          "level": 1,
+          "level": 2,
           "name": "Grave Domain Spells",
-          "description": "* 1st - bane, false life.\n* 3rd - gentle repose, ray of enfeeblement\n* 5th - revivify, vampiric touch\n* 7th - blight, death ward\n* 9th - antilife shell, raise dead (Cleric of Nera Only)."
+          "description": "* 2nd - bane, false life.\n* 3rd - gentle repose, ray of enfeeblement\n* 5th - revivify, vampiric touch\n* 7th - blight, death ward\n* 9th - antilife shell, raise dead (Cleric of Nera Only)."
         },
         {
-          "level": 2,
+          "level": 3,
           "name": "Channel Divinity: Path of the Grave",
           "description": "Starting at 2nd level, you can use your Channel Divinity to mark another creature’s life force for termination.\n\nAs an action, you choose one creature you can see within 30 feet of you, cursing it until the end Of your next turn. The next time you or an ally of yours hits the cursed creature with an attack, the creature has vulnerability to all of that attack's damage, and then the curse ends."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Circle of Mortality",
-          "description": "At 3rd level, you gain the ability to manipulate the line between life and death. When you would normally roll one or more dice to restore hit points with a spell to a creature at 0 hit points, you instead use the highest number possible for each die.\n\nIn addition, you learn the spare the dying cantrip, which doesn’t count against the number of cleric cantrips you know. For you, it has a range of 30 feet, and you can cast it as a bonus action."
+          "description": "At 2nd level, you gain the ability to manipulate the line between life and death. When you would normally roll one or more dice to restore hit points with a spell to a creature at 0 hit points, you instead use the highest number possible for each die.\n\nIn addition, you learn the spare the dying cantrip, which doesn’t count against the number of cleric cantrips you know. For you, it has a range of 30 feet, and you can cast it as a bonus action."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Eyes of the Grave",
-          "description": "At 3rd level, you gain the ability to occasionally sense the presence of the undead, whose existence is an insult to the natural cycle of life. As an action, you can open your awareness to magically detect undead. Until the end of your next turn, you know the location of any undead within 60 feet of you that isn’t behind total cover and that isn’t protected from divination magic. This sense doesn’t tell you anything about a creature's capabilities or identity.\n\nYou can use this feature a number of times equal to your Wisdom modifier (minimum Of once). You regain all expended uses when you finish a long rest."
+          "description": "At 2nd level, you gain the ability to occasionally sense the presence of the undead, whose existence is an insult to the natural cycle of life. As an action, you can open your awareness to magically detect undead. Until the end of your next turn, you know the location of any undead within 60 feet of you that isn’t behind total cover and that isn’t protected from divination magic. This sense doesn’t tell you anything about a creature's capabilities or identity.\n\nYou can use this feature a number of times equal to your Wisdom modifier (minimum Of once). You regain all expended uses when you finish a long rest."
         },
         {
           "level": 6,
@@ -424,19 +439,19 @@
       ],
       "features": [
         {
-          "level": 1,
-          "name": "Knowledge Domain Spells",
-          "description": "* 1st - command, identify.\n* 3rd - augury, suggestion.\n* 5th - nondetection, speak with dead.\n* 7th - arcane eye, confusion.\n* 9th - legend lore, scrying."
-        },
-        {
           "level": 2,
-          "name": "Channel Divinity: Knowledge of the Ages",
-          "description": "Starting at 2nd level, you can use your Channel Divinity to tap into a divine well of knowledge. As an action, you choose one skill or tool. For 10 minutes, you have proficiency with the chosen skill or tool."
+          "name": "Knowledge Domain Spells",
+          "description": "* 2nd - command, identify.\n* 3rd - augury, suggestion.\n* 5th - nondetection, speak with dead.\n* 7th - arcane eye, confusion.\n* 9th - legend lore, scrying."
         },
         {
           "level": 3,
+          "name": "Channel Divinity: Knowledge of the Ages",
+          "description": "Starting at 3rd level, you can use your Channel Divinity to tap into a divine well of knowledge. As an action, you choose one skill or tool. For 10 minutes, you have proficiency with the chosen skill or tool."
+        },
+        {
+          "level": 2,
           "name": "Blessings of Knowledge",
-          "description": "At 3rd level, you learn two languages of your choice. You also become proficient in your choice of two of the following skills: Arcana, History, Nature, or Religion.\n\nYour proficiency bonus is doubled for any ability check you make that uses either of those skills."
+          "description": "At 2nd level, you learn two languages of your choice. You also become proficient in your choice of two of the following skills: Arcana, History, Nature, or Religion.\n\nYour proficiency bonus is doubled for any ability check you make that uses either of those skills."
         },
         {
           "level": 6,
@@ -461,24 +476,24 @@
       "resources": [],
       "features": [
         {
-          "level": 1,
+          "level": 2,
           "name": "Life Domain Spells",
-          "description": "1st - bless, cure wounds. 3rd - lesser restoration, spiritual weapon. 5th - beacon of hope, revivify. 7th - death ward, guardian of faith. 9th - mass cure wounds, raise dead."
+          "description": "2nd - bless, cure wounds. 3rd - lesser restoration, spiritual weapon. 5th - beacon of hope, revivify. 7th - death ward, guardian of faith. 9th - mass cure wounds, raise dead."
         },
         {
-          "level": 2,
+          "level": 3,
           "name": "Channel Divinity: Preserve Life",
           "description": "Starting at 2nd level, you can use your Channel Divinity to heal the badly injured.\n\nAs an action, you present your holy symbol and evoke healing energy that can restore a number of hit points equal to five times your cleric level. Choose any creatures within 30 feet of you, and divide those hit points among them. This feature can restore a creature to no more than half of its hit point maximum. You can't use this feature on an undead or a construct."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Bonus Proficiency",
-          "description": "At 3rd level, you gain proficiency with heavy armor."
+          "description": "At 2nd level, you gain proficiency with heavy armor."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Disciple of Life",
-          "description": "Also starting at 3rd level, your healing spells are more effective. Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell's level."
+          "description": "Also starting at 2nd level, your healing spells are more effective. Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell's level."
         },
         {
           "level": 6,
@@ -505,30 +520,30 @@
           "name": "Warding Flare",
           "counttype": "WIS1",
           "count": 0,
-          "minlevel": 3,
+          "minlevel": 2,
           "recovery": "longrest"
         }
       ],
       "features": [
         {
-          "level": 1,
+          "level": 2,
           "name": "Light Domain Spells",
-          "description": "1st - Burning Hands, Faerie Fire. 3rd - Flaming Sphere, scorching ray. 5th - daylight, fireball. 7th - guardian of faith, wall of fire. 9th - flame strike, scrying."
+          "description": "2nd - Burning Hands, Faerie Fire. 3rd - Flaming Sphere, scorching ray. 5th - daylight, fireball. 7th - guardian of faith, wall of fire. 9th - flame strike, scrying."
         },
         {
-          "level": 2,
+          "level": 3,
           "name": "Channel Divinity: Radiance of the Dawn",
           "description": "Starting at 2nd level, you can use your Channel Divinity to harness sunlight, banishing darkness and dealing radiant damage to your foes.\n\nAs an action, you present your holy symbol, and any magical darkness within 30 feet of you is dispelled. Additionally, each hostile creature within 30 feet of you must make a Constitution saving throw. A creature takes radiant damage equal to 2d10 + your cleric level on a failed saving throw, and half as much damage on a successful one. A creature that has total cover from you is not affected."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Bonus Cantrip",
-          "description": "At 3rd level, you gain the light cantrip if you don't already know it."
+          "description": "At 2nd level, you gain the light cantrip if you don't already know it."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Warding Flare",
-          "description": "Also at 3rd level, you can interpose divine light between yourself and an attacking enemy. When you are attacked by a creature within 30 feet of you that you can see, you can use your reaction to impose disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses. An attacker that can't be blinded is immune to this feature.\n\nYou can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
+          "description": "Also at 2nd level, you can interpose divine light between yourself and an attacking enemy. When you are attacked by a creature within 30 feet of you that you can see, you can use your reaction to impose disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses. An attacker that can't be blinded is immune to this feature.\n\nYou can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
         },
         {
           "level": 6,
@@ -554,24 +569,24 @@
       ],
       "features": [
         {
-          "level": 1,
+          "level": 2,
           "name": "Nature Domain Spells",
-          "description": "1st - Animal friendship, speak with animals. 3rd - barkskin, spike growth. 5th - plant growth, wind wall. 7th - dominate beast, grasping vine. 9th - insect plague, tree stride"
+          "description": "2nd - Animal friendship, speak with animals. 3rd - barkskin, spike growth. 5th - plant growth, wind wall. 7th - dominate beast, grasping vine. 9th - insect plague, tree stride"
         },
         {
-          "level": 2,
+          "level": 3,
           "name": "Channel Divinity: Charm Animals and Plants",
           "description": "Starting at 2nd level, you can use your Channel Divinity to charm animals and plants.\n\nAs an action, you present your holy symbol and invoke the name of your deity. Each beast or plant creature that can see you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is charmed by you for 1 minute or until it takes damage. While it is charmed by you, it is friendly to you and other creatures you designate."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Acolyte of Nature",
-          "description": "At 3rd level, you learn one druid cantrip of your choice. You also gain proficiency in one of the following skills of your choice: Animal Handling, Nature, or Survival."
+          "description": "At 2nd level, you learn one druid cantrip of your choice. You also gain proficiency in one of the following skills of your choice: Animal Handling, Nature, or Survival."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Bonus Proficiency",
-          "description": "Also at 3rd level, you gain proficiency with heavy armor."
+          "description": "Also at 2nd level, you gain proficiency with heavy armor."
         },
         {
           "level": 6,
@@ -604,24 +619,24 @@
       ],
       "features": [
         {
-          "level": 1,
+          "level": 2,
           "name": "Order Domain Spells",
-          "description": "* 1st - command, heroism\n* 3rd - hold person, zone of truth\n* 5th - mass healing word, slow\n* 7th - compulsion, locate creature\n* 9th - commune, dominate person"
+          "description": "* 2nd - command, heroism\n* 3rd - hold person, zone of truth\n* 5th - mass healing word, slow\n* 7th - compulsion, locate creature\n* 9th - commune, dominate person"
         },
         {
-          "level": 2,
+          "level": 3,
           "name": "Channel Divinity: Order's Demand",
           "description": "You can use your Channel Divinity to exert an intimidating presence over others.\n\nAs an action, you present your holy symbol, and each creature of your choice that can see or hear you within 30 feet of you must succeed on a Wisdom saving throw or be charmed by you until the end of your next turn or until the charmed creature takes any damage. You can also cause any of the charmed creatures to drop what they are holding when they fail the saving throw."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Bonus Proficiencies",
-          "description": "At 3rd level, you gain proficiency with heavy armor. You also gain proficiency in the Intimidation or Persuasion skill (your choice)."
+          "description": "At 2nd level, you gain proficiency with heavy armor. You also gain proficiency in the Intimidation or Persuasion skill (your choice)."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Voice of Authority",
-          "description": "Starting at 3rd level, you can invoke the power of law to embolden an ally to attack. If you cast a spell with a spell slot of 1st level or higher and target an ally with the spell, that ally can use their reaction immediately after the spell to make one weapon attack against a creature of your choice that you can see.\n\nIf the spell targets more than one ally, you choose the ally who can make the attack."
+          "description": "Starting at 2nd level, you can invoke the power of law to embolden an ally to attack. If you cast a spell with a spell slot of 1st level or higher and target an ally with the spell, that ally can use their reaction immediately after the spell to make one weapon attack against a creature of your choice that you can see.\n\nIf the spell targets more than one ally, you choose the ally who can make the attack."
         },
         {
           "level": 6,
@@ -648,28 +663,28 @@
           "name": "Emboldening Bond",
           "counttype": "prof",
           "count": 0,
-          "minlevel": 3,
+          "minlevel": 2,
           "recovery": "longrest"
         }
       ],
       "features": [
         {
-          "level": 1,
+          "level": 2,
           "name": "Peace Domain Spells",
-          "description": "* 1st - heroism, sanctuary\n* 3rd - aid, warding bond\n* 5th - beacon of hope, sending\n* 7th - aura of purity, Otiluke's resilient sphere\n* 9th - greater restoration, Rary's telepathic bond"
+          "description": "* 2nd - heroism, sanctuary\n* 3rd - aid, warding bond\n* 5th - beacon of hope, sending\n* 7th - aura of purity, Otiluke's resilient sphere\n* 9th - greater restoration, Rary's telepathic bond"
         },
         {
-          "level": 2,
+          "level": 3,
           "name": "Channel Divinity: Balm of Peace",
           "description": "You can use your Channel Divinity to make your very presence a soothing balm. As an action, you can move up to your speed, without provoking opportunity attacks, and when you move within 5 feet of any other creature during this action, you can restore a number of hit points to that creature equal to 2d6 + your Wisdom modifier (minimum of 1 hit point). A creature can receive this healing only once whenever you take this action."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Implement of Peace",
           "description": "You gain proficiency in the Insight, Performance, or Persuasion skill (your choice)"
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Emboldening Bond",
           "description": "You can forge an empowering bond among people who are at peace with one another. As an action, you choose a number of willing creatures within 30 feet of you (this can include yourself) equal to your proficiency bonus. You create a magical bond among them for 10 minutes or until you use this feature again. While any bonded creature is within 30 feet of another, the creature can roll a d4 and add the number rolled to an attack roll, an ability check, or a saving throw it makes. Each creature can add the d4 no more than once per turn.\n\nYou can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
         },
@@ -698,30 +713,30 @@
           "name": "Wrath of the Storm",
           "counttype": "WIS1",
           "count": 0,
-          "minlevel": 3,
+          "minlevel": 2,
           "recovery": "longrest"
         }
       ],
       "features": [
         {
-          "level": 1,
+          "level": 2,
           "name": "Tempest Domain Spells",
-          "description": "1st - fog cloud, thunderwave. 3rd - gust of wind, shatter. 5th - call lightning, sleet storm. 7th - control water, ice storm. 9th - destructive wave, insect plague."
+          "description": "2nd - fog cloud, thunderwave. 3rd - gust of wind, shatter. 5th - call lightning, sleet storm. 7th - control water, ice storm. 9th - destructive wave, insect plague."
+        },
+        {
+          "level": 3,
+          "name": "Channel Divinity: Destructive Wrath",
+          "description": "Starting at 3rd level, you can use your Channel Divinity to wield the power of the storm with unchecked ferocity.\n\nWhen you roll lightning or thunder damage, you can use your Channel Divinity to deal maximum damage, instead of rolling."
         },
         {
           "level": 2,
-          "name": "Channel Divinity: Destructive Wrath",
-          "description": "Starting at 2nd level, you can use your Channel Divinity to wield the power of the storm with unchecked ferocity.\n\nWhen you roll lightning or thunder damage, you can use your Channel Divinity to deal maximum damage, instead of rolling."
-        },
-        {
-          "level": 3,
           "name": "Bonus Proficiencies",
-          "description": "At 3rd level, you gain proficiency with martial weapons and heavy armor."
+          "description": "At 2nd level, you gain proficiency with martial weapons and heavy armor."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Wrath of the Storm",
-          "description": "Also at 3rd level, you can thunderously rebuke attackers. When a creature within 5 feet of you that you can see hits you with an attack, you can use your reaction to cause the creature to make a Dexterity saving throw. The creature takes 2d8 lightning or thunder damage (your choice) on a failed saving throw, and half as much damage on a successful one.\n\nYou can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
+          "description": "Also at 2nd level, you can thunderously rebuke attackers. When a creature within 5 feet of you that you can see hits you with an attack, you can use your reaction to cause the creature to make a Dexterity saving throw. The creature takes 2d8 lightning or thunder damage (your choice) on a failed saving throw, and half as much damage on a successful one.\n\nYou can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
         },
         {
           "level": 6,
@@ -754,19 +769,19 @@
       ],
       "features": [
         {
-          "level": 1,
+          "level": 2,
           "name": "Trade Domain Spells",
-          "description": "1st - Comprehend Languages, Charm Person. 3rd - Zone of Truth, Calm Emotions. 5th - Tongues, Sending. 7th - Freedom of Movement, Dimension Door. 9th - Teleportation Circle, Rary's Telepathic Bond."
+          "description": "2nd - Comprehend Languages, Charm Person. 3rd - Zone of Truth, Calm Emotions. 5th - Tongues, Sending. 7th - Freedom of Movement, Dimension Door. 9th - Teleportation Circle, Rary's Telepathic Bond."
         },
         {
-          "level": 2,
+          "level": 3,
           "name": "Channel Divinity: Appraisal",
           "description": "Starting at 2nd level, whenever you touch an object you can use an action and a use of your channel divinity feature to learn what it is and its monetary value, if any. You learn about the object as if you had cast the 'identify' spell on it. Additionally you get an idea of what it's approximate monetary value is on the open market (although individual buyers may offer different amounts)."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Bonus Proficiency",
-          "description": "At 3rd level you gain proficiency with one type of Artisan's tools of your choice, the persuasion skill, and in 2 additional languages"
+          "description": "At 2nd level you gain proficiency with one type of Artisan's tools of your choice, the persuasion skill, and in 2 additional languages"
         },
         {
           "level": 6,
@@ -797,19 +812,19 @@
       ],
       "features": [
         {
-          "level": 1,
-          "name": "Trickery Domain Spells",
-          "description": "1st - charm person, disguise self.  3rd - mirror image, pass without trace. 5th - blink, dispel magic. 7th - dimension door, polymorph. 9th - dominate person, modify memory."
-        },
-        {
           "level": 2,
-          "name": "Channel Divinity: Invoke Duplicity",
-          "description": "Starting at 2nd level, you can use your Channel Divinity to create an illusory duplicate of yourself.\n\nAs an action, you create a perfect illusion of yourself that lasts for 1 minute, or until you lose your concentration (as if you were concentrating on a spell). The illusion appears in an unoccupied space that you can see within 30 feet of you. As a bonus action on your turn, you can move the illusion up to 30 feet to a space you can see, but it must remain within 120 feet of you.\n\nFor the duration, you can cast spells as though you were in the illusion's space, but you must use your own senses. Additionally, when both you and your illusion are within 5 feet of a creature that can see the illusion, you have advantage on attack rolls against that creature, given how distracting the illusion is to the target."
+          "name": "Trickery Domain Spells",
+          "description": "2nd - charm person, disguise self.  3rd - mirror image, pass without trace. 5th - blink, dispel magic. 7th - dimension door, polymorph. 9th - dominate person, modify memory."
         },
         {
           "level": 3,
+          "name": "Channel Divinity: Invoke Duplicity",
+          "description": "Starting at 3rd level, you can use your Channel Divinity to create an illusory duplicate of yourself.\n\nAs an action, you create a perfect illusion of yourself that lasts for 1 minute, or until you lose your concentration (as if you were concentrating on a spell). The illusion appears in an unoccupied space that you can see within 30 feet of you. As a bonus action on your turn, you can move the illusion up to 30 feet to a space you can see, but it must remain within 120 feet of you.\n\nFor the duration, you can cast spells as though you were in the illusion's space, but you must use your own senses. Additionally, when both you and your illusion are within 5 feet of a creature that can see the illusion, you have advantage on attack rolls against that creature, given how distracting the illusion is to the target."
+        },
+        {
+          "level": 2,
           "name": "Blessing of the Trickster",
-          "description": "At 3rd level, you can use your action to touch a willing creature to give it advantage on Dexterity (Stealth) checks. This blessing lasts for 1 hour or until you use this feature again."
+          "description": "At 2nd level, you can use your action to touch a willing creature to give it advantage on Dexterity (Stealth) checks. This blessing lasts for 1 hour or until you use this feature again."
         },
         {
           "level": 6,
@@ -836,7 +851,7 @@
           "name": "Eyes of Night",
           "counttype": "fixed",
           "count": 1,
-          "minlevel": 3,
+          "minlevel": 2,
           "recovery": "longrest"
         },
         {
@@ -849,22 +864,22 @@
       ],
       "features": [
         {
-          "level": 1,
+          "level": 2,
           "name": "Twilight Domain Spells",
-          "description": "* 1st - faerie fire, sleep\n* 3rd - moonbeam, see invisibility\n* 5th - aura of vitality, Leomund's tiny hut\n* 7th - aura of life, greater invisibility\n* 9th - circle of power, mislead"
+          "description": "* 2nd - faerie fire, sleep\n* 3rd - moonbeam, see invisibility\n* 5th - aura of vitality, Leomund's tiny hut\n* 7th - aura of life, greater invisibility\n* 9th - circle of power, mislead"
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Bonus Proficiencies",
           "description": "You gain proficiency with martial weapons and heavy armor"
         },
         {
-          "level": 2,
+          "level": 3,
           "name": "Channel Divinity: Twilight Sanctuary",
           "description": "You can use your Channel Divinity to refresh your allies with soothing twilight.\n\nAs an action, you present your holy symbol, and a sphere of twilight emanates from you. The sphere is centered on you, has a 30-foot radius, and is filled with dim light. The sphere moves with you, and it lasts for 1 minute or until you are incapacitated or die. Whenever a creature (including you) ends its turn in the sphere, you can grant that creature one of these benefits:\n\n* You grant it temporary hit points equal to 1d6 plus your cleric level.\n* You end on effect on it causing it to be charmed or frightened."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Eyes of Night",
           "description": "You can see through the deepest gloom. You have darkvision out to a range of 300 feet. In that radius, you can see in dim light as if it were bright light and in darkness as if it were dim light.\n\nAs an action you can magically share the darkvision of this feature with willing creatures you can see within 10 feet of you, up to a number of creatures equal to your Wisdom modifier (minimum of one creature). The shared darkvision lasts for 1 hour. Once you share it, you can't do so again until you finish a long rest, unless you expend a spell slot of any level to share it again."
         },
@@ -894,34 +909,27 @@
       "name": "War Domain",
       "castermult": 1,
       "resources": [
-        {
-          "name": "Steps of Night",
-          "counttype": "prof",
-          "count": 0,
-          "minlevel": 6,
-          "recovery": "longrest"
-        }
       ],
       "features": [
         {
-          "level": 1,
+          "level": 2,
           "name": "War Domain Spells",
-          "description": "1st - Divine Favor, Shield of Faith. 3rd - magic weapon, spiritual weapon. 5th - crusader's mantle, spirit guardians. 7th - freedom of movement, stoneskin. 9th - flame strike, hold monster."
-        },
-        {
-          "level": 3,
-          "name": "Bonus Proficiencies",
-          "description": "At 3rd level, you gain proficiency with martial weapons and heavy armor."
-        },
-        {
-          "level": 3,
-          "name": "War Priest",
-          "description": "From 3rd level, your god delivers bolts of inspiration to you while you are engaged in battle. When you use the Attack action, you can make one additional weapon attack as a bonus action."
+          "description": "2nd - Divine Favor, Shield of Faith. 3rd - magic weapon, spiritual weapon. 5th - crusader's mantle, spirit guardians. 7th - freedom of movement, stoneskin. 9th - flame strike, hold monster."
         },
         {
           "level": 2,
+          "name": "Bonus Proficiencies",
+          "description": "At 2nd level, you gain proficiency with martial weapons and heavy armor."
+        },
+        {
+          "level": 2,
+          "name": "War Priest",
+          "description": "From 2nd level, your god delivers bolts of inspiration to you while you are engaged in battle. When you use the Attack action, you can make one additional weapon attack as a bonus action."
+        },
+        {
+          "level": 3,
           "name": "Channel Divinity: Guided Strike",
-          "description": "Starting at 2nd level, you can use your Channel Divinity to strike with supernatural accuracy. When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll. You make this choice after you see the roll, but before the DM says whether the attack hits or misses."
+          "description": "Starting at 3rd level, you can use your Channel Divinity to strike with supernatural accuracy. When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll. You make this choice after you see the roll, but before the DM says whether the attack hits or misses."
         },
         {
           "level": 6,

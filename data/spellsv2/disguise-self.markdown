@@ -3,7 +3,7 @@ layout: post
 title:  "Disguise Self"
 date:   2014-08-24
 source: PHB.233
-tags: [bard, cleric (trickery), sorcerer, wizard, artificer, level1, illusion]
+tags: [arcanetrickster, bard, cleric (trickery), sorcerer, wizard, artificer, level1, illusion]
 ---
 
 **1st-level illusion**
@@ -16,9 +16,9 @@ tags: [bard, cleric (trickery), sorcerer, wizard, artificer, level1, illusion]
 
 **Duration**: 1 hour
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: []
 

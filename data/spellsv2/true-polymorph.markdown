@@ -3,7 +3,7 @@ layout: post
 title:  "True Polymorph"
 date:   2015-01-10
 source: PHB.283
-tags:   [archivist, bard, warlock, wizard, level9, transmutation]
+tags:   [bard, warlock, wizard, level9, transmutation]
 ---
 
 **9th-level transmutation**

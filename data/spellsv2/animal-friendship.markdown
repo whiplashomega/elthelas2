@@ -3,7 +3,7 @@ layout: post
 title:  "Animal Friendship"
 date:   2014-08-24
 source: PHB.212
-tags: [bard, druid, ranger, level1, enchantment]
+tags: [bard, druid, ranger, arcanetrickster, level1, enchantment]
 ---
 
 **1st-level enchantment**
@@ -16,9 +16,9 @@ tags: [bard, druid, ranger, level1, enchantment]
 
 **Duration**: 24 hours
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: []
 

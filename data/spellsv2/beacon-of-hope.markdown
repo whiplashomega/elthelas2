@@ -3,7 +3,7 @@ layout: post
 title:  "Beacon of Hope"
 date:   2015-01-01
 source: PHB.217
-tags: [archivist, cleric, level3, abjuration]
+tags: [cleric, level3, abjuration]
 ---
 
 **3rd-level abjuration**
@@ -16,7 +16,7 @@ tags: [archivist, cleric, level3, abjuration]
 
 **Duration**: Concentration, up to 1 minute
 
-**Saving Throw**: 
+**Saving Throw**:
 
 **Save For**:
 

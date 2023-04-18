@@ -22,6 +22,14 @@
       "recovery": "longrest"
     },
     {
+      "name": "Spells Known",
+      "counttype": "table",
+      "count": [[2, 2],[3,3],[5,4],[7,5],[9,6],[11,7],[13,8],[15,9],[17,10],[19,11]],
+      "minlevel": 2,
+      "addToTable": true,
+      "recovery": "none"
+    },
+    {
       "name": "Favored Foe",
       "counttype": "prof",
       "count": 0,
@@ -77,7 +85,7 @@
       "name": "Deft Explorer",
       "description": "You are an unsurpassed explorer and survivor, both in the wilderness and in dealing with others on your travels. You gain the Canny benefit below, and you gain an additional benefit below when you reach 6th level and 10th level in this class.\n\n#### Canny (1st Level)\n\nChoose one of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses the chosen skill.\n\nYou can also speak, read, and write two additional languages of your choice.\n\n#### Roving (6th level)\n\nYour walking speed increases by 5, and you gain a climbing speed and a swimming speed equal to your walking speed.\n\n#### Tireless (10th Level)\n\nAs an action, you can give yourself a number of temporary hit points equal to 1d8 + your Wisdom modifier (minimum of 1 temporary hit point). You can use this action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.\n\nIn addition, whenever you finish a short rest, your exhaustion level, if any, is decreaed by 1."
     },
-    {  
+    {
       "level": 2,
       "name": "Fighting Style",
       "description": "At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.\n\n#### Archery\n\nYou gain a +2 bonus to attack rolls you make with ranged weapons.\n\n#### Defense\n\nWhile you are wearing armor, you gain a +1 bonus to AC\n\n#### Dueling\n\nWhen you are weilding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.\n\n#### Two-Weapon Fighting\n\nWhen you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.\n\n#### Blind Fighting\n\nYou have blindsight with a range of 10 feet. Within that range you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.\n\n#### Druidic Warrior\n\nYou learn two cantrips of your choice from the druid spell list. They count as ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the druid spell list.\n\n#### Thrown Weapon Fighting\n\nYou can draw a weapon that has the thrown property as part of the attack you make with the weapon.\n\nIn addition, when you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll."
@@ -98,9 +106,9 @@
       "description": "When you hit a creature with a weapon attack roll, you can call on your mystical bond with nature to mark the target as your favored enemy. When you do so you cast the Hunter's Mark spell, with no additional action required, and without requiring concentration.\n\nYou can use this feature to mark a favored enemy a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
     },
     {
-      "level": 3,
+      "level": 2,
       "name": "Ranger Archetype",
-      "description": "At 3rd level, you choose an archetype that you strive to emulate: Hunter or Beast Master, both detailed at the end o f the class description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level."
+      "description": "At 2nd level, you choose an archetype that you strive to emulate: Hunter or Beast Master, both detailed at the end o f the class description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level."
     },
     {
       "level": 7,
@@ -170,12 +178,12 @@
       "resources": [],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Beast Master Magic",
-          "description": "You learn additional spells when you reach certain levels in this class. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.\n\n* 3rd - Beast Bond\n* 5th - Summon Beast\n* 9th - Conjure Animals\n* 13th - Giant Insect\n* 17th - Commune with Nature"
+          "description": "You learn additional spells when you reach certain levels in this class. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.\n\n* 2nd - Beast Bond\n* 5th - Summon Beast\n* 9th - Conjure Animals\n* 13th - Giant Insect\n* 17th - Commune with Nature"
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Primal Companion",
           "description": "You magically summon a primal beast, which draws strength from your bond with nature. The beast is friendly to you and your companions and obeys your commands. Choose its stat block-Beast of the Land, Beast of the Sea, or Beast of the Sky-which uses your proficiency bonus (PB) in several places. You also determine the kind of animal the beast is, choosing a kind appropriate for the stat block. Whatever kind you choose, the beast bears primal markings indicating its mystical origin.\n\nIn combat, the beast acts during your turn. It can move and use its reaction on its own, but the only action it takes is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. You can also sacrifice one of your attacks when you take the Attack action to command the beast to take the Attack action. If you are incapacitated, the beast can take any action of its choice, not just Dodge.\n\nIf the beast has died within the last hour, you can use your action to touch it and expend a spell slot of 1st level or higher. The beast returns to life after 1 minute with all its hit points restored.\n\nWhen you finish a long rest, you can summon a different primal beast. The new beast appears in an unoccupied space within 5 feet of you, and you choose its stat block and appearance. If you already have a beast from this feature, it vanishes when the new beast appears. The beast also vanishes if you die."
         },
@@ -202,14 +210,14 @@
       "resources": [],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Hunter's Magic",
-          "description": "This feature is homebrew, get your DM's permission to use it. You learn additional spells when you reach certain levels in this class, as shown on the Hunter Spells table. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.\n\n* 3rd - Ensnaring Strike\n* 5th - Melf's Acid Arrow\n* 9th - Conjure Barrage\n* 13th - Guardian of Nature\n* 17th - Wrath of Nature"
+          "description": "This feature is homebrew, get your DM's permission to use it. You learn additional spells when you reach certain levels in this class, as shown on the Hunter Spells table. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.\n\n* 2nd - Ensnaring Strike\n* 5th - Melf's Acid Arrow\n* 9th - Conjure Barrage\n* 13th - Guardian of Nature\n* 17th - Wrath of Nature"
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Hunter's Prey",
-          "description": "At 3rd level, you gain one of the following features of your choice.\n\n**Colossus Slayer.** Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it is below its hit point maximum. You can deal this extra damage only once per turn.\n\n**Giant Killer.\n\n When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.\n\n**Horde Breaker.** Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon."
+          "description": "At 2nd level, you gain one of the following features of your choice.\n\n**Colossus Slayer.** Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it is below its hit point maximum. You can deal this extra damage only once per turn.\n\n**Giant Killer.\n\n When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.\n\n**Horde Breaker.** Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon."
         },
         {
           "level": 7,
@@ -234,17 +242,17 @@
       "resources": [],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Gloom Stalker Magic",
-          "description": "Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Gloom Stalker Spells table. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.\n\n*3rd - disguise self\n*5th - rope trick\n*9th - fear\n*13th - greater invisibility\n*seeming"
+          "description": "Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Gloom Stalker Spells table. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.\n\n* 2nd - disguise self\n* 5th - rope trick\n* 9th - fear\n* 13th - greater invisibility\n* 17th - seeming"
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Dread Ambusher",
-          "description": "At 3rd level, you master the art of the ambush. You can give yourself a bonus to your initiative rolls equal to your Wisdom modifier.\n\nAt the start of your first turn Of each combat, your walking speed increases by 10 feet, which lasts until the end of that turn. If you take the Attack action on that turn, you can make one additional weapon attack as part of that action. If that attack hits, the target takes an extra 1d8 damage of the weapons damage type."
+          "description": "At 2nd level, you master the art of the ambush. You can give yourself a bonus to your initiative rolls equal to your Wisdom modifier.\n\nAt the start of your first turn Of each combat, your walking speed increases by 10 feet, which lasts until the end of that turn. If you take the Attack action on that turn, you can make one additional weapon attack as part of that action. If that attack hits, the target takes an extra 1d8 damage of the weapons damage type."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Umbral Sight",
           "description": "At 3rd level, you gain darkvision out to a range of 60' feet. If you already have darkvision from your race, its range increases by 30 feet.\n\nYou are also adept at evading creatures that rely on darkvision. While in darkness, you are invisible to any creature that relies on darkvision to see you in that darkness."
         },
@@ -279,19 +287,19 @@
       ],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Horizon Walker Magic",
-          "description": "Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Horizon Walker Spells table. The spell counts as a ranger spell for you, but it doesn’t count against the number of ranger spells you know.\n\n*3rd - protection from evil and good\n*5th - misty step\n*9th - haste\n*13th - banishment\n*17th - teleportation circle"
+          "description": "Starting at 2nd level, you learn an additional spell when you reach certain levels in this class, as shown in the Horizon Walker Spells table. The spell counts as a ranger spell for you, but it doesn’t count against the number of ranger spells you know.\n\n* 2nd - protection from evil and good\n* 5th - misty step\n* 9th - haste\n* 13th - banishment\n* 17th - teleportation circle"
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Detect Portal",
-          "description": "At 3rd level, you gain the ability to magically sense the presence of a planar portal. As an action, you detect the distance and direction to the closest planar portal within 1 mile of you.\n\nOnce you use this feature, you can’t use it again until you finish a short or long rest.\n\nSee the “Planar Travel” section in chapter 2 of the Dungeon Master’s Guide for examples of planar portals."
+          "description": "At 2nd level, you gain the ability to magically sense the presence of a planar portal. As an action, you detect the distance and direction to the closest planar portal within 1 mile of you.\n\nOnce you use this feature, you can’t use it again until you finish a short or long rest.\n\nSee the “Planar Travel” section in chapter 2 of the Dungeon Master’s Guide for examples of planar portals."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Planar Warrior",
-          "description": "At 3rd level, you learn to draw on the energy of the multiverse to augment your attacks.\n\nAs a bonus action, choose one creature you can see within 30 feet of you. The next time you hit that creature on this turn with a weapon attack, all damage dealt by the attack becomes force damage, and the creature takes an extra 1d8 force damage from the attack. When you reach 11th level in this class, the extra damage increases to 2d8."
+          "description": "At 2nd level, you learn to draw on the energy of the multiverse to augment your attacks.\n\nAs a bonus action, choose one creature you can see within 30 feet of you. The next time you hit that creature on this turn with a weapon attack, all damage dealt by the attack becomes force damage, and the creature takes an extra 1d8 force damage from the attack. When you reach 11th level in this class, the extra damage increases to 2d8."
         },
         {
           "level": 7,
@@ -318,25 +326,25 @@
           "name": "Hunter's Sense",
           "counttype": "WIS1",
           "count": 0,
-          "minlevel": 3,
+          "minlevel": 2,
           "recovery": "longrest"
         }
       ],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Monster Slayer Magic",
-          "description": "Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Monster Slayer Spells table. The spell counts as a ranger spell for you, but it doesn’t count against the number of ranger spells you know.\n\n*3rd - protection from evil and good\n*5th - zone of truth\n*9th - magic circle\n*13th - banishment\n*17th - hold monster"
+          "description": "Starting at 2nd level, you learn an additional spell when you reach certain levels in this class, as shown in the Monster Slayer Spells table. The spell counts as a ranger spell for you, but it doesn’t count against the number of ranger spells you know.\n\n* 2nd - protection from evil and good\n* 5th - zone of truth\n* 9th - magic circle\n* 13th - banishment\n* 17th - hold monster"
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Hunter's Sense",
-          "description": "At 3rd level, you gain the ability to peer at a creature and magically discern how best to hurt it. As an action, choose one creature you can see within 60 feet of you. You immediately learn whether the creature has any damage immunities, resistances, or vulnerabilities and what they are. If the creature is hidden from divination magic, you sense that it has no damage immunities, resistances, or vulnerabilities.\n\nYou can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses of it when you finish a long rest."
+          "description": "At 2nd level, you gain the ability to peer at a creature and magically discern how best to hurt it. As an action, choose one creature you can see within 60 feet of you. You immediately learn whether the creature has any damage immunities, resistances, or vulnerabilities and what they are. If the creature is hidden from divination magic, you sense that it has no damage immunities, resistances, or vulnerabilities.\n\nYou can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses of it when you finish a long rest."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Slayer's Prey",
-          "description": "Starting at 3rd level, you can focus your ire on one foe, increasing the harm you inflict on it. As a bonus action, you designate one creature you can see within 60 feet of you as the target of this feature. The first time each turn that you hit that target with a weapon attack, it takes an extra 1d6 damage from the weapon.\n\nThis benefit lasts until you finish a short or long rest. It ends early if you designate a different creature."
+          "description": "Starting at 2nd level, you can focus your ire on one foe, increasing the harm you inflict on it. As a bonus action, you designate one creature you can see within 60 feet of you as the target of this feature. The first time each turn that you hit that target with a weapon attack, it takes an extra 1d6 damage from the weapon.\n\nThis benefit lasts until you finish a short or long rest. It ends early if you designate a different creature."
         },
         {
           "level": 7,
@@ -369,17 +377,17 @@
       ],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Dreadful Strikes",
           "description": "You can augment your weapon strikes with mind-scarring magic, drawn from the gloomy hollows of the Feywild. When you hit a creature with a weapon, you can deal an extra 1d4 psychic damage to the target, which can take this extra damage only once per turn.\n\nThe extra damage increases to 1d6 when you reach 11th level in this class."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Fey Wanderer Magic",
-          "description": "You learn an additional spell when you reach certain levels in this class, as shown in the Fey Wanderer Spells table. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.\n\n* 3rd - Charm Person\n* 5th - misty step\n* 9th - dispel magic\n* 13th - dimension door\n* 17th - mislead\n\nYou also possess a preturnatural blessing from a fey ally or a place of fey power. Choose your blessing from the Feywild Gifts table or determine it randomly."
+          "description": "You learn an additional spell when you reach certain levels in this class, as shown in the Fey Wanderer Spells table. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.\n\n* 2nd - Charm Person\n* 5th - misty step\n* 9th - dispel magic\n* 13th - dimension door\n* 17th - mislead\n\nYou also possess a preturnatural blessing from a fey ally or a place of fey power. Choose your blessing from the Feywild Gifts table or determine it randomly."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Otherworldly Glamour",
           "description": "Your fey qualities gives you a supernatural charm. As a result, whenever you make a Charisma check, you gain a bonus to the check equal to your Wisdom modifier (minimum of +1).\n\nIn addition, you gain proficiency in one of the following skills of your choice: Deception, Performance, or Persuasion."
         },
@@ -421,14 +429,14 @@
       ],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Gathered Swarm",
           "description": "A swarm of intangible nature spirits has bonded itself to you and can assist you in battle. Until you die, the swarm remains in your space, crawling on you or flying and skittering around you within your space. You determine its appearance, or you generate its appearance by rolling on the Swarm Appearance table.\n\nOnce on each of your turns, you can cause the swarm to assist you in one of the following ways, immediately after you hit a creature with an attack:\n\n* The attack's target takes 1d6 piercing damage from the swarm.\n* The attack's target must succeed on a Strength saving throw against your spell save DC or be moved by the swarm up to 15 feet horizontally in a direction of your choice.\n* You are moved by the swarm 5 feet horizontally in a direction of your choice."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Swarmkeeper Magic",
-          "description": "You learn the mage hand cantrip if you don't already know it. When you cast it, the hand takes the form of your swarming nature spirits.\n\nYou also learn an additional spell of 1st level or higher when you reach certain levels in this class, as shown in the Swarmkeeper Spells table. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.\n\n* 3rd - faerie fire, mage hand\n* 5th - web\n* 9th - gaseous form\n* 13th - arcane eye\n* 17th - insect plague"
+          "description": "You learn the mage hand cantrip if you don't already know it. When you cast it, the hand takes the form of your swarming nature spirits.\n\nYou also learn an additional spell of 1st level or higher when you reach certain levels in this class, as shown in the Swarmkeeper Spells table. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.\n\n* 2nd - faerie fire, mage hand\n* 5th - web\n* 9th - gaseous form\n* 13th - arcane eye\n* 17th - insect plague"
         },
         {
           "level": 7,

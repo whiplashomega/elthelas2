@@ -3,7 +3,7 @@ layout: post
 title: "Arcane Gate"
 date: 2015-07-14
 source: PHB.214
-tags: [archivist, sorcerer, warlock, wizard, level6, conjuration]
+tags: [sorcerer, warlock, wizard, level6, conjuration]
 ---
 
 **6th-level conjuration**
@@ -16,9 +16,9 @@ tags: [archivist, sorcerer, warlock, wizard, level6, conjuration]
 
 **Duration**: Concentration, up to 10 minutes
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ ]
 

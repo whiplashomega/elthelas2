@@ -70,14 +70,14 @@
       "description": "Starting at 3rd level, when you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon’s damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend."
     },
     {
-      "level": 3,
+      "level": 5,
       "name": "Divine Health",
       "description": "By 3rd level, the divine magic flowing through you makes you immune to disease."
     },
     {
-      "level": 3,
+      "level": 2,
       "name": "Sacred Oath",
-      "description": "When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose the Oath of Devotion, the Oath of the Ancients, or the Oath of Vengeance, all detailed at the end of the class description.\n\nYour choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.\n\n#### Oath Spells\n\nEach oath has a list of associated spells. You gain access to these spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath spells don’t count against the number of spells you can prepare each day.\n\nIf you gain an oath spell that doesn’t appear on the paladin spell list, the spell is nonetheless a paladin spell for you.\n\n#### Channel Divinity\n\nYour oath allows you to channel divine energy to fuel magical effects. Each Channel Divinity option provided by your oath explains how to use it.\n\nWhen you use your Channel Divinity, you choose which option to use. You must then finish a short or long rest to use your Channel Divinity again.\n\nSome Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your paladin spell save DC."
+      "description": "When you reach 2nd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose the Oath of Devotion, the Oath of the Ancients, or the Oath of Vengeance, all detailed at the end of the class description.\n\nYour choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.\n\n#### Oath Spells\n\nEach oath has a list of associated spells. You gain access to these spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath spells don’t count against the number of spells you can prepare each day.\n\nIf you gain an oath spell that doesn’t appear on the paladin spell list, the spell is nonetheless a paladin spell for you.\n\n#### Channel Divinity\n\nYour oath allows you to channel divine energy to fuel magical effects. Each Channel Divinity option provided by your oath explains how to use it.\n\nWhen you use your Channel Divinity, you choose which option to use. You must then finish a short or long rest to use your Channel Divinity again.\n\nSome Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your paladin spell save DC."
     },
     {
       "level": 7,
@@ -112,7 +112,7 @@
     {
       "level": 5,
       "name": "Extra Attack",
-      "description": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."      
+      "description": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
     },
     {
       "level": 6,
@@ -150,19 +150,19 @@
       ],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Tenets of Devotion",
           "description": "Though the exact words and strictures of the Oath of Devotion vary, paladins of this oath share these tenets.\n\n**Honesty.** Don’t lie or cheat. Let your word be your promise.\n\n**Courage.** Never fear to act, though caution is wise.\n\n**Compassion.** Aid others, protect the weak, and punish those who threaten them. Show mercy to your foes, but temper it with wisdom.\n\n**Honor.** Treat others with fairness, and let your honorable deeds be an example to them. Do as much good as possible while causing the least amount of harm.\n\n**Duty.** Be responsible for your actions and their consequences, protect those entrusted to your care, and obey those who have just authority over you."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Oath Spells",
-          "description": "3rd - Protection from evil and good, sanctuary. 5th - lesser restoration, zone of truth. 9th - beacon of hope, dispel magic. 13th - freedom of movement, guardian of faith. 17th - commune, flame strike."
+          "description": "2nd - Protection from evil and good, sanctuary. 5th - lesser restoration, zone of truth. 9th - beacon of hope, dispel magic. 13th - freedom of movement, guardian of faith. 17th - commune, flame strike."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Channel Divinity",
-          "description": "When you take this oath at 3rd level, you gain the following two Channel Divinity options.\n\n**Sacred Weapon.** As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon (with a minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the duration.\n\nYou can end this effect on your turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall unconscious, this effect ends.\n\n**Turn the Unholy.** As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 30 feet o f you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.\n\nA turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action."
+          "description": "When you take this oath at 2nd level, you gain the following two Channel Divinity options.\n\n**Sacred Weapon.** As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon (with a minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the duration.\n\nYou can end this effect on your turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall unconscious, this effect ends.\n\n**Turn the Unholy.** As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 30 feet o f you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.\n\nA turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action."
         },
         {
           "level": 7,
@@ -202,19 +202,19 @@
       ],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Tenets of the Ancients",
           "description": "The tenets of the Oath of the Ancients have been preserved for uncounted centuries. This oath emphasizes the principles of good above any concerns of law or chaos. Its four central principles are simple.\n\n**Kindle the Light.** Through your acts of mercy, kindness, and forgiveness, kindle the light of hope in the world, beating back despair.\n\n**Shelter the Light.** Where there is good, beauty, love, and laughter in the world, stand against the wickedness that w ould swallow it. Where life flourishes, stand against the forces that would render it barren.\n\n**Preserve Your Own Light.** Delight in song and laughter, in beauty and art. If you allow the light to die in your own heart, you can’t preserve it in the world.\n\n**Be the Light.** Be a glorious beacon for all who live in despair. Let the light of your joy and courage shine forth in all your deeds."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Oath Spells",
-          "description": "3rd - ensnaring strike, speak with animals. 5th - moonbeam, misty step. 9th - plant growth, protection from energy. 13th - ice storm, stoneskin. 17th - commune with nature, tree stride."
+          "description": "2nd - ensnaring strike, speak with animals. 5th - moonbeam, misty step. 9th - plant growth, protection from energy. 13th - ice storm, stoneskin. 17th - commune with nature, tree stride."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Channel Divinity",
-          "description": "When you take this oath at 3rd level, you gain the following two Channel Divinity options.\n\n**Nature’s Wrath.** You can use your Channel Divinity to invoke primeval forces to ensnare a foe. As an action, you can cause spectral vines to spring up and reach for a creature within 10 feet of you that you can see. The creature must succeed on a Strength or Dexterity saving throw (its choice) or be restrained. While restrained by the vines, the creature repeats the saving throw at the end of each of its turns. On a success, it frees itself and the vines vanish.\n\n**Turn the Faithless.** You can use your Channel Divinity to utter ancient words that are painful for fey and fiends to hear. As an action, you present your holy symbol, and each fey or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.\n\nA turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet o f you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.\n\nIf the creature’s true form is concealed by an illusion, shapeshifting, or other effect, that form is revealed while it is turned."
+          "description": "When you take this oath at 2nd level, you gain the following two Channel Divinity options.\n\n**Nature’s Wrath.** You can use your Channel Divinity to invoke primeval forces to ensnare a foe. As an action, you can cause spectral vines to spring up and reach for a creature within 10 feet of you that you can see. The creature must succeed on a Strength or Dexterity saving throw (its choice) or be restrained. While restrained by the vines, the creature repeats the saving throw at the end of each of its turns. On a success, it frees itself and the vines vanish.\n\n**Turn the Faithless.** You can use your Channel Divinity to utter ancient words that are painful for fey and fiends to hear. As an action, you present your holy symbol, and each fey or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.\n\nA turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet o f you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.\n\nIf the creature’s true form is concealed by an illusion, shapeshifting, or other effect, that form is revealed while it is turned."
         },
         {
           "level": 7,
@@ -247,19 +247,19 @@
       ],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Tenets of Vengeance",
           "description": "The tenets of the Oath of Vengeance vary by paladin, but all the tenets revolve around punishing wrongdoers by any means necessary. Paladins who uphold these tenets are willing to sacrifice even their own righteousness to mete out justice upon those who do evil, so the paladins are often neutral or lawful neutral in alignment. The core principles of the tenets are brutally simple.\n\n**Fight the Greater Evil.** Faced with a choice of fighting my sworn foes or combating a lesser evil. I choose the greater evil.\n\n**No Mercy for the Wicked.** Ordinary foes might win my mercy, but my sworn enemies do not.\n\n**By Any Means Necessary.** My qualms can’t get in the way of exterminating my foes. \n\n**Restitution.** If my foes wreak ruin on the world, it is because I failed to stop them. I must help those harmed by their misdeeds."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Oath Spells",
-          "description": "3rd - bane, hunter's mark. 5th - hold person, misty step. 9th - haste, protection from energy. 13th - banishment, dimension door. 17th - hold monster, scrying."
+          "description": "2nd - bane, hunter's mark. 5th - hold person, misty step. 9th - haste, protection from energy. 13th - banishment, dimension door. 17th - hold monster, scrying."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Channel Divinity",
-          "description": "When you take this oath at 3rd level, you gain the following two Channel Divinity options.\n\n**Abjure Enemy.** As an action, you present your holy symbol and speak a prayer of denunciation, using your Channel Divinity. Choose one creature within 60 feet of you that you can see. That creature must make a Wisdom saving throw, unless it is immune to being frightened. Fiends and undead have disadvantage on this saving throw.\n\nOn a failed save, the creature is frightened for 1 minute or until it takes any damage. While frightened, the creature’s speed is 0, and it can’t benefit from any bonus to its speed.\n\nOn a successful save, the creature’s speed is halved for 1 minute or until the creature takes any damage.\n\n**Vow of Enmity.** As a bonus action, you can utter a vow of enmity against a creature you can see within 10 feet of you, using your Channel Divinity. You gain advantage on attack rolls against the creature for 1 minute or until it drops to 0 hit points or falls unconscious."
+          "description": "When you take this oath at 2nd level, you gain the following two Channel Divinity options.\n\n**Abjure Enemy.** As an action, you present your holy symbol and speak a prayer of denunciation, using your Channel Divinity. Choose one creature within 60 feet of you that you can see. That creature must make a Wisdom saving throw, unless it is immune to being frightened. Fiends and undead have disadvantage on this saving throw.\n\nOn a failed save, the creature is frightened for 1 minute or until it takes any damage. While frightened, the creature’s speed is 0, and it can’t benefit from any bonus to its speed.\n\nOn a successful save, the creature’s speed is halved for 1 minute or until the creature takes any damage.\n\n**Vow of Enmity.** As a bonus action, you can utter a vow of enmity against a creature you can see within 10 feet of you, using your Channel Divinity. You gain advantage on attack rolls against the creature for 1 minute or until it drops to 0 hit points or falls unconscious."
         },
         {
           "level": 7,
@@ -288,21 +288,21 @@
           "count": 1,
           "minlevel": 20,
           "recovery": "longrest"
-        }        
+        }
       ],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Tenets of the Crown",
           "description": "The tenets of the Oath of the Crown are often set by the sovereign to which their oath is sworn, but generally emphasize the following tenets.\n\n**Law.** The law is paramount. It is the mortar that holds the stones of civilization together, and it must be respected.\n\n**Loyalty.** Your word is your bond. Without loyalty, oaths and laws are meaningless.\n\n**Courage.** You must be willing to do what needs to be done for the sake of order, even in the face of overwhelming odds. If you don't act, then who will?\n\n**Responsibility.** You must deal with the consequences of your actions, and you are responsible for fulfilling your duties and obligations."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Oath Spells",
-          "description": "3rd - command, compelled duel. 5th - warding bond, zone of truth. 9th - aura of vitality, spirit guardians. 13th - banishment, guardian of faith. 17th - circle of power, geas."
+          "description": "2nd - command, compelled duel. 5th - warding bond, zone of truth. 9th - aura of vitality, spirit guardians. 13th - banishment, guardian of faith. 17th - circle of power, geas."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Channel Divinity",
           "description": "When you take this oath at 3rd level, you gain the following Channel Divinity options.\n\n**Champion Challenge.** You issue a challenge that compels other creatures to do battle with you. Each creature of your choice that you can see within 30 feet of you must make a Wisdom saving throw. On a failed save, a creature can't willingly move more than 30 feet away from you. This effect ends on the creature if you are incapacitated or die or if the creature is moved more than 30 feet away from you.\n\n**Turn the Tide.** As a bonus action, you can bolster injured creatures with your Channel Divinity. Each creature of your choice that can hear you within 30 feet of you regains hit points equal to ld6 +your Charisma modifier (minimum of 1) if it has no more than half of its hit points."
         },
@@ -337,19 +337,19 @@
       ],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Tenets of Conquest",
           "description": "A paladin who takes this oath has the tenets of conquest seared on the upper arm.\n\n**Douse the Flame of Hope.** It is not enough to merely defeat an enemy in battle. Your victory must be so overwhelming that your enemies' will to fight is shattered forever. A blade can end a life. Fear can end an empire.\n\n**Rule with an Iron Fist.** Once you have conquered, tolerate no dissent. Your word is law. Those who obey it shall be favored. Those who defy it shall be punished as an example to all who might follow.\n\n**Strength Above All.** You shall rule until a stronger one arises. Then you must grow mightier and meet the challenge, or fall to your own ruin."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Oath Spells",
-          "description": "You gain oath spells at the paladin levels listed in the Oath of Conquest Spells table. See the Sacred Oath class feature for how oath spells work. 3rd - Armor of Agathys, command. 5th - hold person, spiritual weapon. 9th - bestow curse, fear. 13th - dominate beast, stoneskin. 17th - cloudkill, dominate person."
+          "description": "You gain oath spells at the paladin levels listed in the Oath of Conquest Spells table. See the Sacred Oath class feature for how oath spells work. 2nd - Armor of Agathys, command. 5th - hold person, spiritual weapon. 9th - bestow curse, fear. 13th - dominate beast, stoneskin. 17th - cloudkill, dominate person."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Channel Divinity",
-          "description": "When you take this oath at 3rd level, you gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.\n\n**Conquering Presence.** You can use your Channel Divinity to exude a terrifying presence. As an action, you force each creature of your choice that you can see within 30 feet of you to make a Wisdom saving throw. On a failed save, a creature becomes frightened of you for 1 minute. The frightened creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.\n\n**Guided Strike.** You can use your Channel Divinity to strike with supernatural accuracy. When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll. You make this choice after you see the roll, but before the DM says whether the attack hits or misses."
+          "description": "When you take this oath at 2nd level, you gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.\n\n**Conquering Presence.** You can use your Channel Divinity to exude a terrifying presence. As an action, you force each creature of your choice that you can see within 30 feet of you to make a Wisdom saving throw. On a failed save, a creature becomes frightened of you for 1 minute. The frightened creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.\n\n**Guided Strike.** You can use your Channel Divinity to strike with supernatural accuracy. When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll. You make this choice after you see the roll, but before the DM says whether the attack hits or misses."
         },
         {
           "level": 7,
@@ -371,7 +371,7 @@
     {
       "name": "Oath of Redemption",
       "castermult": 0.5,
-      "resources": [        
+      "resources": [
         {
           "name": "Emissary of Redemption",
           "counttype": "fixed",
@@ -382,19 +382,19 @@
       ],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Tenets of Redemption",
           "description": "The tenets of the Oath of Redemption hold a paladin to a high standard of peace and justice.\n\n**Peace.** Violence is a weapon of last resort. Diplomacy and understanding are the paths to long-lasting peace.\n\n**Innocence.** All people begin life in an innocent state, and it is their environment or the influence of dark forces that drives them to evil. By setting the proper example, and working to heal the wounds of a deeply flawed world, you can set anyone on a righteous path.\n\n**Patience.** Change takes time. Those who have walked the path of the wicked must be given reminders to keep them honest and true. Once you have planted the seed of righteousness in a creature, you must work day after day to allow that seed to survive and flourish.\n\n**Wisdom.** Your heart and mind must stay clear, for eventually you will be forced to admit defeat. While every creature can be redeemed, some are so far along the path of evil that you have no choice but to end their lives for the greater good. Any such action must be carefully weighed and the consequences fully understood, but once you have made the decision, follow through with it knowing your path is just."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Oath Spells",
-          "description": "3rd - sanctuary, sleep. 5th - calm emotions, hold person. 9th - counterspell, hypnotic pattern. 13th - Otiluke's resilient sphere, stoneskin. 17th - hold monster, wall of force."
+          "description": "2nd - sanctuary, sleep. 5th - calm emotions, hold person. 9th - counterspell, hypnotic pattern. 13th - Otiluke's resilient sphere, stoneskin. 17th - hold monster, wall of force."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Channel Divinity",
-          "description": "When you take this oath at 3rd level, you gain the following two Channel Divinity options.\n\n**Emissary of Peace.** You can use your Channel Divinity to augment your presence with divine power. As a bonus action, you grant yourself a +5 bonus to Charisma (Persuasion) checks for the next 10 minutes.\n\n**Rebuke the Violent.** You can use your Channel Divinity to rebuke those who use violence. Immediately after an attacker within 30 feet of you deals damage with an attack against a creature other than you, you can use your reaction to force the attacker to make a Wisdom saving throw. On a failed save, the attacker takes radiant damage equal to the damage it just dealt. On a successful save, it takes half as much damage."
+          "description": "When you take this oath at 2nd level, you gain the following two Channel Divinity options.\n\n**Emissary of Peace.** You can use your Channel Divinity to augment your presence with divine power. As a bonus action, you grant yourself a +5 bonus to Charisma (Persuasion) checks for the next 10 minutes.\n\n**Rebuke the Violent.** You can use your Channel Divinity to rebuke those who use violence. Immediately after an attacker within 30 feet of you deals damage with an attack against a creature other than you, you can use your reaction to force the attacker to make a Wisdom saving throw. On a failed save, the attacker takes radiant damage equal to the damage it just dealt. On a successful save, it takes half as much damage."
         },
         {
           "level": 7,
@@ -434,17 +434,17 @@
       ],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Tenets of Glory",
           "description": "The tenets of the Oath of Glory drive a paladin to attempt heroics that might one day shine in legend.\n\n**Actions over Words.** Strive to be known by glorious deeds, not words.\n\n**Challenges Are but Tests.** Face hardships with courage, and encourage your allies to face them with you.\n\n**Hone the Body.** Like raw stone, your body must be worked so its potential can be realized.\n\n**Discipline the Soul.** You must marshal the discipline to overcome failings within yourself that threaten to dim the glory of you and your friends."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Oath Spells",
-          "description": "You gain oath spells at the Paladin levels listed in the Oath of Glory Spells table. See the Sacred Oath class feature for how oath spells work.\n\n* 3rd - guiding bolt, heroism.\n* 5th - enhance ability, magic weapon\n* 9th - haste, protection from energy\n* 13th - compulsion, freedom of movement\n* 17th - commune, flame strike"
+          "description": "You gain oath spells at the Paladin levels listed in the Oath of Glory Spells table. See the Sacred Oath class feature for how oath spells work.\n\n* 2nd - guiding bolt, heroism.\n* 5th - enhance ability, magic weapon\n* 9th - haste, protection from energy\n* 13th - compulsion, freedom of movement\n* 17th - commune, flame strike"
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Channel Divinity",
           "description": "You gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.\n\n**Peerless Athlete.** As a bonus action, you can use your Channel Divinity to augment your athleticism. For the next 10 minutes, you have advantage on Strength (Athletics) and Dexterity (Acrobatics) checks; you can carry, push, drag, and lift twice as much weight as normal; and the distance of your long and high jumps increases by 10 feet (this extra distance costs movement as normal).\n\n**Inspiring Smite.** Immediately after you deal damage to a creature with your Divine Site feature, you can use your Channel Divinity as a bonus action and distribute temporary hit points to creature of your choice within 30 feet of you, which can include you. The total number of temporary hit points equals 2d8 + your level in this class, divided among the chosen creatures however you like."
         },
@@ -479,17 +479,17 @@
       ],
       "features": [
         {
-          "level": 3,
+          "level": 2,
           "name": "Tenets of the Watchers",
           "description": "A paladin who assumes the Oath of the Watchers swears to safeguard mortal realms from otherworldly threats.\n\n**Vigilance.** The threats you face are cunning, powerful, and subversive. Be ever alert for their corruption.\n\n**Loyalty.** Never accepts gifts or favors from fiends or those who truck with them. Stay true to your order, your comrades, and your duty.\n\n**Discipline.** You are the shield against the endless terrors that lie beyond the stars. Your blade must be forever sharp and your mind keen to survive what lies beyond."
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Oath Spells",
-          "description": "You gain oaht spells at the paladin levels listed in the Oath of the Watchers table. See the Sacred Oath class feature for how oath spells work.\n\n* 3rd - alarm, detect magic\n* 5th - moonbeam, see invisibility\n* 9th - counterspell, nondetection\n* 13th - arua of purity, banishment\n* 17th - hold monster, scrying"
+          "description": "You gain oath spells at the paladin levels listed in the Oath of the Watchers table. See the Sacred Oath class feature for how oath spells work.\n\n* 2nd - alarm, detect magic\n* 5th - moonbeam, see invisibility\n* 9th - counterspell, nondetection\n* 13th - arua of purity, banishment\n* 17th - hold monster, scrying"
         },
         {
-          "level": 3,
+          "level": 2,
           "name": "Channel Divinity",
           "description": "You gain the following Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.\n\n**Watcher's Will.** You can use your Channel Divinity to invest your presence with the warding power of your faith. As an action, you can choose a number of creatures you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of 1 creature). For 1 minute, you and the chosen creatures have advantage on Intelligence, Wisdom, and Charisma saving throws.\n\n**Abjure the Extraplanar.** You can use your Channel Divinity to castigate unworldly beings. As an action, you present your holy symbol and each aberration, celestial, elemental, fey, or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.\n\nA turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly end its move in a space within 30 feet of you. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature cna take the Dodge action."
         },

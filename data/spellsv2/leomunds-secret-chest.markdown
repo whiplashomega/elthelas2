@@ -3,7 +3,7 @@ layout: post
 title: "Leomund's Secret Chest"
 date: 2015-07-30
 source: PHB.254
-tags: [archivist, wizard, artificer, level4, conjuration]
+tags: [arcanetrickster, wizard, artificer, level4, conjuration]
 ---
 
 **4th-level conjuration**

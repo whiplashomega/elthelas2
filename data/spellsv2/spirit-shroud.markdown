@@ -3,7 +3,7 @@ layout: post
 title:  "Spirit Shroud"
 date:   2015-01-02
 source: TCE.108
-tags: [archivist, cleric, paladin, warlock, wizard, level3, necromancy]
+tags: [cleric, paladin, warlock, wizard, level3, necromancy]
 ---
 
 **3rd-level necromancy**

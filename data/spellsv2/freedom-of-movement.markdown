@@ -3,7 +3,7 @@ layout: post
 title: "Freedom of Movement"
 date: 2015-07-14
 source: PHB.244
-tags: [bard, cleric, druid, ranger, eldritchknight, artificer, level4, abjuration]
+tags: [arcanetrickster, bard, cleric, druid, ranger, eldritchknight, artificer, level4, abjuration]
 ---
 
 **4th-level abjuration**

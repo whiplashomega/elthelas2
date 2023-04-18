@@ -3,7 +3,7 @@ layout: post
 title:  "Phantom Steed"
 date:   2015-01-02
 source: PHB.265
-tags: [wizard, eldritchknight, level3, illusion, ritual]
+tags: [arcanetrickster, wizard, eldritchknight, level3, illusion, ritual]
 ---
 
 **3rd-level illusion (ritual)**

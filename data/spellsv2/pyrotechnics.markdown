@@ -3,7 +3,7 @@ layout: post
 title:  "Pyrotechnics"
 date:   2015-08-31
 source: EE.21
-tags: [bard, sorcerer, wizard, artificer, level2, transmutation]
+tags: [arcanetrickster, bard, sorcerer, wizard, artificer, level2, transmutation]
 ---
 
 **2nd-level transmutation**

@@ -3,7 +3,7 @@ layout: post
 title:  "Augury"
 date:   2014-12-31
 source: PHB.215
-tags: [archivist, cleric, druid, wizard, level2, divination, ritual]
+tags: [cleric, druid, wizard, level2, divination, ritual]
 ---
 
 **2nd-level divination (ritual)**
@@ -16,9 +16,9 @@ tags: [archivist, cleric, druid, wizard, level2, divination, ritual]
 
 **Duration**: Instantaneous
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ ]
 

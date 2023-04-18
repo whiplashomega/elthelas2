@@ -3,7 +3,7 @@ layout: post
 title:  "Dancing Lights"
 date:   2014-08-24
 source: PHB.230
-tags: [bard, sorcerer, wizard, artificer, cantrip, evocation]
+tags: [arcanetrickster, bard, sorcerer, wizard, artificer, cantrip, evocation]
 ---
 
 **Evocation cantrip**
@@ -16,9 +16,9 @@ tags: [bard, sorcerer, wizard, artificer, cantrip, evocation]
 
 **Duration**: Concentration, up to 1 minute
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ ]
 

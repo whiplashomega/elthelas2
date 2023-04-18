@@ -3,7 +3,7 @@ layout: post
 title: "Commune with Nature"
 date: 2015-07-14
 source: PHB.224
-tags: [archivist, druid, ranger, level5, divination, ritual]
+tags: [druid, ranger, level5, divination, ritual]
 ---
 
 **5th-level divination (ritual)**
@@ -16,9 +16,9 @@ tags: [archivist, druid, ranger, level5, divination, ritual]
 
 **Duration**: Instantaneous
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: []
 

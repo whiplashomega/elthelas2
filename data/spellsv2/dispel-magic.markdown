@@ -3,7 +3,7 @@ layout: post
 title:  "Dispel Magic"
 date:   2015-01-01
 source: PHB.234
-tags: [archivist, bard, cleric, druid, paladin, sorcerer, warlock, wizard, artificer, level3, abjuration]
+tags: [arcanetrickster, bard, cleric, druid, paladin, sorcerer, warlock, wizard, artificer, level3, abjuration]
 ---
 
 **3rd-level abjuration**
@@ -16,9 +16,9 @@ tags: [archivist, bard, cleric, druid, paladin, sorcerer, warlock, wizard, artif
 
 **Duration**: Instantaneous
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ ]
 

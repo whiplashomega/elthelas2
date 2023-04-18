@@ -3,7 +3,7 @@ layout: post
 title:  "Find Familiar"
 date:   2014-08-24
 source: PHB.240
-tags: [wizard, eldritchknight, level1, conjuration, ritual]
+tags: [arcanetrickster, wizard, eldritchknight, level1, conjuration, ritual]
 ---
 
 **1st-level conjuration (ritual)**
@@ -18,7 +18,7 @@ tags: [wizard, eldritchknight, level1, conjuration, ritual]
 
 **Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: []
 

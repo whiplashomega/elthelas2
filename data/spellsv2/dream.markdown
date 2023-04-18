@@ -3,7 +3,7 @@ layout: post
 title: "Dream"
 date: 2015-07-14
 source: PHB.236
-tags: [archivist, bard, warlock, wizard, level5, illusion]
+tags: [arcanetrickster, bard, warlock, wizard, level5, illusion]
 ---
 
 **5th-level illusion**

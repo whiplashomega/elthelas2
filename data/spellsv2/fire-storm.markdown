@@ -3,7 +3,7 @@ layout: post
 title:  "Fire Storm"
 date:   2015-01-11
 source: PHB.241
-tags:   [archivist, cleric, druid, sorcerer, level7, evocation]
+tags:   [cleric, druid, sorcerer, level7, evocation]
 ---
 
 **7th-level evocation**

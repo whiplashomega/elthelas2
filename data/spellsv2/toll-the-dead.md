@@ -3,7 +3,7 @@ layout: post
 title: "Toll the Dead"
 date: 2015-07-14
 source: PHB.242
-tags: [cleric, warlock, wizard, cantrip, necromancy]
+tags: [arcanetrickster, cleric, warlock, wizard, cantrip, necromancy]
 ---
 
 **Necromancy cantrip**

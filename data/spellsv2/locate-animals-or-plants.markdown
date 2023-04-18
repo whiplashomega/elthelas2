@@ -3,7 +3,7 @@ layout: post
 title: "Locate Animals or Plants"
 date: 2015-07-30
 source: PHB.256
-tags: [archivist, bard, druid, ranger, level2, divination]
+tags: [bard, druid, ranger, level2, divination]
 ---
 
 **2nd-level divination (ritual)**

@@ -3,7 +3,7 @@ layout: post
 title:  "Control Water"
 date:   2015-01-05
 source: PHB.227
-tags: [archivist, cleric, druid, wizard, eldritchknight, level4, transmutation]
+tags: [cleric, druid, wizard, eldritchknight, level4, transmutation]
 ---
 
 **4th-level transmutation**
@@ -16,7 +16,7 @@ tags: [archivist, cleric, druid, wizard, eldritchknight, level4, transmutation]
 
 **Duration**: Concentration, up to 10 minutes
 
-**Saving Throw**: 
+**Saving Throw**:
 
 **Save For**:
 

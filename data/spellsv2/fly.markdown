@@ -3,7 +3,7 @@ layout: post
 title:  "Fly"
 date:   2015-01-01
 source: PHB.243
-tags: [archivist, sorcerer, warlock, wizard, eldritchknight, artificer, level3, transmutation]
+tags: [arcanetrickster, sorcerer, warlock, wizard, eldritchknight, artificer, level3, transmutation]
 ---
 
 **3rd-level transmutation**
@@ -18,7 +18,7 @@ tags: [archivist, sorcerer, warlock, wizard, eldritchknight, artificer, level3, 
 
 **Saving Throw**: n
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ ]
 

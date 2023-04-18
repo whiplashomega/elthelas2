@@ -3,7 +3,7 @@ layout: post
 title:  "Snare"
 date:   2015-01-02
 source: XGE.165
-tags: [druid, ranger, wizard, artificer, level1, abjuration]
+tags: [arcanetrickster, druid, ranger, wizard, artificer, level1, abjuration]
 ---
 
 **1st-level abjuration**

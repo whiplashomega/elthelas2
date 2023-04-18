@@ -3,7 +3,7 @@ layout: post
 title:  "Banishment"
 date:   2015-01-01
 source: PHB.217
-tags: [archivist, cleric, paladin, sorcerer, warlock, wizard, eldritchknight, level4, abjuration]
+tags: [cleric, paladin, sorcerer, warlock, wizard, eldritchknight, level4, abjuration]
 ---
 
 **4th-level abjuration**

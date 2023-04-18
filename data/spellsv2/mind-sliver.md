@@ -3,7 +3,7 @@ layout: post
 title: "Mind Sliver"
 date: 2015-07-14
 source: PHB.242
-tags: [artificer, sorcerer, warlock, wizard, cantrip, enchantment]
+tags: [arcanetrickster, artificer, sorcerer, warlock, wizard, cantrip, enchantment]
 ---
 
 **divination cantrip**

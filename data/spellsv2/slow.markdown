@@ -3,7 +3,7 @@ layout: post
 title:  "Slow"
 date:   2015-01-02
 source: PHB.277
-tags: [archivist, bard, sorcerer, wizard, eldritchknight, level3, transmutation]
+tags: [bard, sorcerer, wizard, eldritchknight, level3, transmutation]
 ---
 
 **3rd-level transmutation**

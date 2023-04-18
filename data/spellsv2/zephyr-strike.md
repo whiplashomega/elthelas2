@@ -3,7 +3,7 @@ layout: post
 title: "Zephyr Strike"
 date: 2019-10-04
 source: XGE.171
-tags: [ranger, level1, transmutation]
+tags: [arcanetrickster, ranger, level1, transmutation]
 ---
 
 **1st-level transmutation**

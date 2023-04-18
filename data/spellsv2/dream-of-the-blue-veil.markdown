@@ -3,7 +3,7 @@ layout: post
 title: "Dream of the Blue Veil"
 date: 2015-07-14
 source: TCE.106
-tags: [archivist, bard, sorcerer, warlock, wizard, level7, conjuration]
+tags: [bard, sorcerer, warlock, wizard, level7, conjuration]
 ---
 
 **7th-level conjuration**
@@ -16,7 +16,7 @@ tags: [archivist, bard, sorcerer, warlock, wizard, level7, conjuration]
 
 **Duration**: 6 hours
 
-**Saving Throw**: 
+**Saving Throw**:
 
 **Save For**:
 

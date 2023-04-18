@@ -3,7 +3,7 @@ layout: post
 title:  "Warding Wind"
 date:   2015-08-31
 source: EE.23
-tags: [bard, druid, sorcerer, eldritchknight, level2, evocation]
+tags: [arcanetrickster, bard, druid, sorcerer, eldritchknight, level2, evocation]
 ---
 
 **2nd level evocation**

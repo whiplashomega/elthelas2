@@ -3,7 +3,7 @@ layout: post
 title: "Dispel Evil and Good"
 date: 2015-07-14
 source: PHB.233
-tags: [archivist, cleric, paladin, level5, abjuration]
+tags: [cleric, paladin, level5, abjuration]
 ---
 
 **5th-level abjuration**

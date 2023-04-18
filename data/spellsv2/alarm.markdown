@@ -3,7 +3,7 @@ layout: post
 title:  "Alarm"
 date:   2014-08-24
 source: PHB.211
-tags: [ranger, wizard, artificer, level1, abjuration, ritual]
+tags: [ranger, wizard, artificer, arcanetrickster, level1, abjuration, ritual]
 ---
 
 **1st-level abjuration (ritual)**
@@ -16,9 +16,9 @@ tags: [ranger, wizard, artificer, level1, abjuration, ritual]
 
 **Duration**: 8 hours
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ ]
 

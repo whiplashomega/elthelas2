@@ -3,7 +3,7 @@ layout: post
 title:  "Blink"
 date:   2015-01-01
 source: PHB.219
-tags: [archivist, sorcerer, wizard, artificer, level3, transmutation]
+tags: [arcanetrickster, sorcerer, wizard, artificer, level3, transmutation]
 ---
 
 **3rd-level transmutation**
@@ -16,9 +16,9 @@ tags: [archivist, sorcerer, wizard, artificer, level3, transmutation]
 
 **Duration**: 1 minute
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ ]
 

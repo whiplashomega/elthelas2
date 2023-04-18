@@ -3,7 +3,7 @@ layout: post
 title: "Otiluke's Resilient Sphere"
 date: 2015-07-30
 source: PHB.264
-tags: [archivist, wizard, eldritchknight, artificer, level4, evocation]
+tags: [wizard, eldritchknight, artificer, level4, evocation]
 ---
 
 **4th-level evocation**

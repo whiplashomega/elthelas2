@@ -3,7 +3,7 @@ layout: post
 title:  "Astral Projection"
 date:   2015-01-09
 source: PHB.215
-tags:   [archivist, cleric, warlock, wizard, level9, necromancy]
+tags:   [cleric, warlock, wizard, level9, necromancy]
 ---
 
 **9th-level necromancy**
@@ -16,9 +16,9 @@ tags:   [archivist, cleric, warlock, wizard, level9, necromancy]
 
 **Duration**: Special
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: []
 
