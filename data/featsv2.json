@@ -62,7 +62,7 @@
   {
     "name": "Dual Wielder",
     "prereq": "4th level",
-    "description": "You master fighting with two weapons, gaining the following benefits:\n\n* You gain a +1 bonus to AC while you are wielding a separate melee weapon in each hand.\n* You can use two-weapon fighting even when the one-handed melee weapons you are wielding aren’t light.\n* You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one."
+    "description": "You master fighting with two weapons, gaining the following benefits:\n\n* You gain a +1 bonus to AC while you are wielding a separate melee weapon in each hand.\n* You can use two-weapon fighting even when the one-handed melee weapon you are wielding in your main hand isn’t light.\n* You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one."
   },
   {
     "name": "Dual Flurry",
@@ -97,7 +97,7 @@
   {
     "name": "Fighting Initiate",
     "prereq": "Proficiency with a martial weapon, 4th level",
-    "description": "Your martial training has helped you develop a particular style of fighting. As a result, you learn one Fighting Style option of your choice from the fighter class. If you already have a style, the one you choose must be different.\n\nWhenever you reach a level that grants the Ability Score Improvement feature, you can replace this feat's fighting style with another one from the fighter class that you don't have."
+    "description": "Your martial training has helped you develop a particular style of fighting. \n\n* Increase your strength or dexterity score by 1, to a maximum of 20.\n* You learn one Fighting Style option of your choice from the fighter class. If you already have a style, the one you choose must be different.\n\nWhenever you reach a level that grants the Ability Score Improvement feature, you can replace this feat's fighting style with another one from the fighter class that you don't have."
   },
   {
     "name": "Grappler",
@@ -112,7 +112,7 @@
   {
     "name": "Gunner",
     "prereq": "4th level",
-    "description": "You have a quick hand and keen eye when employing firearms, granting you the following benefits:\n\n* Increase your Dexterity score by 1, to a maximum of 20.\n* You gain proficiency with firearms.\n* You ignore the loading property of firearms.\n* Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls with firearms."
+    "description": "You have a quick hand and keen eye when employing firearms, granting you the following benefits:\n\n* Increase your Dexterity score by 1, to a maximum of 20.\n* You gain proficiency with firearms.\n* You ignore the loading property of firearms.\n* Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls with firearms.\n* When you use Two-Weapon fighting, you can add your Ability Modifier to the damage of the extra attack so long as you make that attack with a firearm."
   },
   {
     "name": "Healer",
