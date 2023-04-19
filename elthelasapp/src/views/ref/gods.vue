@@ -70,39 +70,41 @@
             <div>
               <h2>{{ GodByName.name }}</h2>
               <div class="row">
-                <table class="table table-striped table-responsive col-sm-7">
-                  <tr>
-                    <td>Holy Symbol</td>
-                    <td>
-                      <span data-ng-if="GodByName.symbolimage == undefined">{{ GodByName.holysymbol }}</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Alignment</td><td>{{ GodByName.alignment }}</td>
-                  </tr>
-                  <tr>
-                    <td>Portfolio</td><td>{{ GodByName.domains }}</td>
-                  </tr>
-                  <tr>
-                    <td>Domains 5e</td><td>{{ GodByName.domains5 }}</td>
-                  </tr>
-                  <tr>
-                    <td>Favored Weapon</td><td>{{ GodByName.weapon }}</td>
-                  </tr>
-                  <tr>
-                    <td>Origins</td><td>{{ GodByName.parents }}</td>
-                  </tr>
-                  <tr>
-                    <td>Enemies</td><td>{{ GodByName.enemy }}</td>
-                  </tr>
-                </table>
-                <div class="symbolimage col-sm-5" v-if="GodByName.symbolimage != undefined"
+                <div class="col-7">
+                  <table class="table table-striped table-responsive">
+                    <tr>
+                      <td>Holy Symbol</td>
+                      <td>
+                        <span data-ng-if="GodByName.symbolimage == undefined">{{ GodByName.holysymbol }}</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Alignment</td><td>{{ GodByName.alignment }}</td>
+                    </tr>
+                    <tr>
+                      <td>Portfolio</td><td>{{ GodByName.domains }}</td>
+                    </tr>
+                    <tr>
+                      <td>Domains 5e</td><td>{{ GodByName.domains5 }}</td>
+                    </tr>
+                    <tr>
+                      <td>Favored Weapon</td><td>{{ GodByName.weapon }}</td>
+                    </tr>
+                    <tr>
+                      <td>Origins</td><td>{{ GodByName.parents }}</td>
+                    </tr>
+                    <tr>
+                      <td>Enemies</td><td>{{ GodByName.enemy }}</td>
+                    </tr>
+                  </table>
+                  <h4>Home</h4>
+                  <div v-html="marked.parse(GodByName.home)"></div>
+                  <h4>Appearance</h4>
+                  <div v-html="marked.parse(GodByName.appearance)"></div>
+                </div>
+                <div class="symbolimage col-5" v-if="GodByName.symbolimage != undefined"
                      :style="'background-image: url(' + GodByName.symbolimage + ')'" :title="GodByName.holysymbol"></div>
               </div>
-              <h4>Home</h4>
-              <div v-html="marked.parse(GodByName.home)"></div>
-              <h4>Appearance</h4>
-              <div v-html="marked.parse(GodByName.appearance)"></div>
               <h4>Worshippers</h4>
               <div v-html="marked.parse(GodByName.worshippers)"></div>
               <h4>High Tenets</h4>
@@ -169,6 +171,40 @@
             </p>
           </div>
         </div>
+      </b-tab>
+      <b-tab title="Core Pantheons">
+        <h3>The Core Pantheons</h3>
+        <p>
+          The two sides of the Gods War took to worshipping separate pantheons of Gods after the Gods war, while there has been some shifting and bifurcation since that time, the pantheons can still be split into a few different sets.
+        </p>
+        <h4>The Imperial Pantheon</h4>
+        <p>
+          Worshipped in Dormania, Kandor, Gerasalim, Terron, and Seran as the 'Good' gods. This pantheon is made up of: Dorman, Alohim, Sara, Amathera, and Cora.
+        </p>
+        <h4>The Malinval Pantheon</h4>
+        <p>
+          Worshipped in Malinval, Parakas, Olda, and Sage. This is a pantheon of Gods who sided with Mat'raktha in the Gods war, and is made up of Mat'raktha, Malik, Vrasja, Asmodeus, Trolka, and Annam.
+        </p>
+        <h4>The Draconic Pantheon</h4>
+        <p>
+          Worshipped by those who revere dragons above all, this pantheon is neither strictly good or evil, and is made up of Indra, Bahamut, and Tiamat.
+        </p>
+        <h4>The Dwarven Pantheon</h4>
+        <p>
+          Worshipped by the dwarves of both Curinor and Morrind, as well as the gnomes of Stagenheim. This pantheon is made up of Dorun, Maris, Fanome, and Tock.
+        </p>
+        <h4>The Elven Pantheon</h4>
+        <p>
+          The elves worship a pantheon focused on nature and the natural world. This pantheon is made up of Gaian, Sylvan, Agrios, Alidal, and Interitus.
+        </p>
+        <h4>The Hisru Pantheon</h4>
+        <p>
+          While in Zelfir, they monotheistically worship Amathera, in Hisru'de'tan they worship a panoply of Gods, often under different names than they are recognized by elsewhere. This pantheon is made up of Agrios, Alidal, Gaian, Alitheia, Chronos, Chthonis, Kamin, Labious, Maris, Moira, Molton, Mystikinae, Sneordra, Sylvan, Trimala, and Vulcan.
+        </p>
+        <h4>The Giants Pantheon</h4>
+        <p>
+          Worshipped by the Giants. This pantheon is made up of Annam, Trolka, Leviathan, and Sneordra.
+        </p>
       </b-tab>
     </b-tabs>
   </div>

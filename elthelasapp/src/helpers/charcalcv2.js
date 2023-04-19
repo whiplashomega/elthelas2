@@ -340,10 +340,10 @@ export default {
         if (b.selsubclass.name === "Arcane Trickster") {
           classcantrips++;
         }
-        if (Number(b.level) >= 8) {
+        if (Number(b.level) >= 10) {
           classcantrips++;
         }
-        if (Number(b.level) >= 20) {
+        if (Number(b.level) >= 14) {
           classcantrips++;
         }
       }

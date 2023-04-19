@@ -6,15 +6,18 @@
         "alignment": "Lawful Good",
         "domains": "Goddess of Beauty and Art",
         "domains5": "Peace, Twilight",
-        "worshippers": "",
+        "worshippers": "Appreciators of beauty and art the world over.",
         "weapon": "",
         "enemy": "",
-        "appearance": "",
+        "appearance": "Adonnas appearance is always different depending on who is looking at her. Always matching the beholders ideal of beauty. So to a particularly vain person, Adonna may appear as themselves, or they may look like a loved one in their prime. To an artist she may appear as an exceptionally beautiful painting or statue. While she is generally referred to in the feminine, her appearance can be that of a man or woman or androgenous.",
         "home": "Gallaria Perfectum",
-        "tenets": [],
+        "tenets": [
+          "Seek to create and preserve beauty.",
+          "The purest expression is artistic expression"
+        ],
         "holiday": "",
         "parents": "3rd Generation, born of Molton and Nera",
-        "lore": "",
+        "lore": "Adonna was an advocate for peace throughout the Gods war, refusing to take a side. She was among those advocating with Nera to impose the cease fire that brought an end to the destruction. Because she did not take a side, she was not included in any of the core pantheons after the end of the conflict.",
         "level1": "",
         "level10": ""
       }

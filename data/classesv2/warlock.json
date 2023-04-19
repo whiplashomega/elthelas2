@@ -44,6 +44,16 @@
       "recovery": "none"
     },
     {
+      "name": "Warlock Spells Slots",
+      "minlevel": 1,
+      "counttype": "table",
+      "addToTable": true,
+      "count": [
+        [1, 2], [5, 3], [9, 4], [13, 5], [17, 6]
+      ],
+      "recovery": "none"
+    },
+    {
       "name": "Mystic Arcanum (level 6)",
       "minlevel": 11,
       "counttype": "fixed",

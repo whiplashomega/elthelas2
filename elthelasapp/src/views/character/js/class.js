@@ -72,7 +72,7 @@ export default {
           }
         }
       }
-      if (res.counttype === "level") {
+      if (res.counttype === "level1") {
         count = level + res.count;
       }
       if (level < res.minlevel) {
