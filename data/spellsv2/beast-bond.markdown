@@ -14,11 +14,11 @@ tags: [druid, ranger, level1, divination]
 
 **Components**: V, S, M (a bit of fur wrapped in a cloth)
 
-**Duration**: Concentration, up to 10 minutes
+**Duration**: 10 minutes
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ ]
 

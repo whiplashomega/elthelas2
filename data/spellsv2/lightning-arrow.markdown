@@ -14,7 +14,7 @@ tags: [ranger, eldritchknight, level3, transmutation]
 
 **Components**: V, S
 
-**Duration**: Concentration, up to 1 minute
+**Duration**: 1 minute
 
 **Saving Throw**: Dexterity
 

@@ -14,11 +14,11 @@ tags: [sorcerer, warlock, wizard, eldritchknight, artificer, level1, transmutati
 
 **Components**: V, S
 
-**Duration**: Concentration, up to 10 minutes
+**Duration**: 10 minutes
 
 **Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ ]
 

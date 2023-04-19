@@ -119,6 +119,11 @@
         },
         {
           "level": 2,
+          "name": "Combat Caster",
+          "description": "You can use a 1-handed weapon with which you are proficient as a spellcasting focus."
+        },
+        {
+          "level": 2,
           "name": "Combat Inspiration",
           "description": "Also at 3rd level, you learn to inspire others in battle. You can use a Bardic Inspiration die to add additional damage to an attack another creature makes, roll that die and add the number rolled to a weapon damage roll the creature just made. Alternatively, when an attack roll is made against the creature, you can use your reaction to roll the Bardic Inspiration die and add the number rolled to its AC against that attack, after seeing the roll but before knowing whether it hits or misses."
         },
@@ -192,6 +197,11 @@
           "level": 2,
           "name": "Bonus Proficiencies",
           "description": "When you join the College of Swords at 3rd level, you gain proficiency with medium armor and the scimitar.\n\nIf you're proficient with a simple or martial melee weapon, you can use it as a spellcasting focus for your bard spells."
+        },
+        {
+          "level": 2,
+          "name": "Combat Caster",
+          "description": "You can use a 1-handed weapon with which you are proficient as a spellcasting focus."
         },
         {
           "level": 2,

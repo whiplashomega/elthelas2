@@ -110,6 +110,11 @@
       "name": "Eldritch Invocations",
       "description": "In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability. A level prerequisite refers to your level in this class.\n\nAt 2nd level, you gain two eldritch invocations of your choice. Your invocation options are detailed at the end of the class description. When you gain certain warlock levels, you gain additional invocations of your choice, as shown in the Invocations Known column of the Warlock table.\n\nAdditionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level."
     },
+        {
+          "level": 2,
+          "name": "Combat Caster",
+          "description": "You can use a 1-handed weapon with which you are proficient as a spellcasting focus."
+        },
     {
       "level": 3,
       "name": "Pact Boon",

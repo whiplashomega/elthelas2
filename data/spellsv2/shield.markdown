@@ -22,4 +22,6 @@ tags: [sorcerer, wizard, eldritchknight, level1, abjuration]
 
 **Damage**: []
 
-An invisible barrier of magical force appears and protects you. Until the start of your next turn, all attacks against you have disadvantage, including the triggering attack, and you take no damage from magic missile.
+An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +3 bonus to AC, including against the triggering attack, and you take no damage from magic missile.
+
+**At Higher Levels** When you cast this spell with a spell slot of 2nd level or higher the AC bonus increases by 1 for each slot level above 1st.

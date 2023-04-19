@@ -3,10 +3,10 @@ layout: post
 title:  "Darkvision"
 date:   2015-01-07
 source: PHB.230
-tags: [arcanetrickster, druid, ranger, sorcerer, wizard, eldritchknight, artificer, level2, transmutation]
+tags: [arcanetrickster, druid, ranger, sorcerer, wizard, eldritchknight, artificer, level2, transmutation, ritual]
 ---
 
-**2nd-level transmutation**
+**2nd-level transmutation (ritual)**
 
 **Casting Time**: 1 action
 
@@ -14,7 +14,7 @@ tags: [arcanetrickster, druid, ranger, sorcerer, wizard, eldritchknight, artific
 
 **Components**: V, S, M (either a pinch of dried carrot or an agate)
 
-**Duration**: 8 hours
+**Duration**: 24 hours
 
 **Saving Throw**:
 

@@ -23,3 +23,5 @@ tags: [cleric, paladin, level1, abjuration]
 **Damage**: []
 
 A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.
+
+**At Higher Levels** When you cast the spell with a 2nd level spell slot or higher, the spell lasts for 10 minutes without requiring your concentration.

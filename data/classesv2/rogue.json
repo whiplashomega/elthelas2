@@ -248,6 +248,11 @@
         },
         {
           "level": 2,
+          "name": "Combat Caster",
+          "description": "You can use a 1-handed weapon with which you are proficient as a spellcasting focus."
+        },
+        {
+          "level": 2,
           "name": "Mage Hand Legerdemain",
           "description": "Starting at 2nd level, when you cast mage hand, you can make the spectral hand invisible, and you can perform the following additional tasks with it:\n* You can stow one object the hand is holding in a container worn or carried by another creature.\n* You can retrieve an object in a container worn or carried by another creature.\n* You can use thieves’ tools to pick locks and disarm traps at range.\n\nYou can perform one o f these tasks without being noticed by a creature if you succeed on a Dexterity (Sleight of Hand) check contested by the creature’s Wisdom (Perception) check.\n\nIn addition, you can use the bonus action granted by your Cunning Action to control the hand."
         },

@@ -14,12 +14,14 @@ tags: [druid, ranger, level2, transmutation]
 
 **Components**: V, S, M (a handful of oak bark)
 
-**Duration**: Concentration, up to 1 hour
+**Duration**: 8 hour
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ ]
 
 You touch a willing creature. Until the spell ends, the target’s skin has a rough, bark-like appearance, and the target’s AC can’t be less than 16, regardless of what kind of armor it is wearing.
+
+**At Higher Levels** When you cast this spell using a spell slot of 3rd level or higher, the target's AC increases by 1 for each slot level above 2nd.

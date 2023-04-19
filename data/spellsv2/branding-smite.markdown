@@ -14,11 +14,11 @@ tags: [paladin, level2, evocation]
 
 **Components**: V
 
-**Duration**: Concentration, up to 1 minute
+**Duration**: 1 minute
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ { "dice": "2d6", label: "radiant", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d6" } ]
 

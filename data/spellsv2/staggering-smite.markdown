@@ -14,7 +14,7 @@ tags: [paladin, eldritchknight, level4, evocation]
 
 **Components**: V
 
-**Duration**: Concentration, up to 1 minute
+**Duration**: 1 minute
 
 **Saving Throw**: Wisdom
 

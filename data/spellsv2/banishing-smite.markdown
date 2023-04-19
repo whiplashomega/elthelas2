@@ -14,11 +14,11 @@ tags: [paladin, level5, abjuration]
 
 **Components**: V
 
-**Duration**: Concentration, up to 1 minute
+**Duration**: 1 minute
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ { "dice": "5d10", label: "force", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 

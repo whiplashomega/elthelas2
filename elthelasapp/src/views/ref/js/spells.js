@@ -7,7 +7,7 @@ export default {
   setup () {
     useMeta({ title: "Magic" });
     const statics = useStaticsStore();
-    statics.getAllSpells();
+    statics.getAllSpellsV2();
     const userinfo = useUserStore();
     const { spellsv2: spells } = storeToRefs(statics);
     return {

@@ -306,9 +306,14 @@
         },
         {
           "level": 2,
+          "name": "Combat Caster",
+          "description": "You can use a 1-handed weapon with which you are proficient as a spellcasting focus."
+        },
+        {
+          "level": 2,
           "name": "Battle Ready",
           "actiontype": "none",
-          "description": "When you reach 3rd level, your combat training and your experiments with magic have paid off in two ways:\n\n* You gain proficiency with martial weapons.\n* When you attack with a magic weapon, you can use your Intelligence modifier, instead of Strength or Dexterity modifier, for the attack and damage rolls."
+          "description": "When you reach 2nd level, your combat training and your experiments with magic have paid off in two ways:\n\n* You gain proficiency with martial weapons.\n* When you attack with a magic weapon, you can use your Intelligence modifier, instead of Strength or Dexterity modifier, for the attack and damage rolls."
         },
         {
           "level": 2,

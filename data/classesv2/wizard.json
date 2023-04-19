@@ -448,6 +448,11 @@
         },
         {
           "level": 2,
+          "name": "Combat Caster",
+          "description": "You can use a 1-handed weapon with which you are proficient as a spellcasting focus."
+        },
+        {
+          "level": 2,
           "name": "Bladesong",
           "description": "You can invoke a secret elven magic called the Bladesong, provided that you aren't wearing medium or heavy armor. It graces you with supernatural speed, agility, and focus.\n\nYou can use a bonus action to start the Bladesong, which lasts for 1 minute. It ends early if you are incapacitated, if you don medium or heavy armor, or if you use two hands to make an attack with a weapon. You can also dismiss the Bladesong at any time you choose (no action required).\n\nWhile your Bladesong is active, you gain the following benefits:\n\n* you add your Intelligence modifier (minimum of +1) to the damage of your melee weapon attacks.\n* Your walking speed increases by 10 feet.\n* You have advantage on Dexterity (Acrobatics) checks.\n* You gain a bonus to any Constitution saving throw you make to maintain your concentration on a spell. The bonus equals your Intelligence modifier (minimum of +l).\n* You gain temporary hitpoints equal to twice your wizard level.\n\nYou can use this feature a number of times equal to your proficiency bonus, You regain all expended uses of it when you finish a long rest."
         },
