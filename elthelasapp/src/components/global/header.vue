@@ -50,10 +50,14 @@
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><router-link to="/world/geography" class="dropdown-item">Geography</router-link></li>
                 <li><router-link to="/world/cosmology" class="dropdown-item">Cosmology</router-link></li>
+                <li><router-link to="/world/historylist" class="dropdown-item">History</router-link></li>
+                <li><hr class="dropdown-divider"></li>
                 <li><router-link to="/world/astronomy" class="dropdown-item">Astronomy</router-link></li>
                 <li><router-link to="/world/calendar" class="dropdown-item">Calendar</router-link></li>
                 <li><router-link to="/world/orgs" class="dropdown-item">Organizations</router-link></li>
-                <li><router-link to="/world/historylist" class="dropdown-item">History</router-link></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><router-link to="/ref/gods" class="dropdown-item">Gods</router-link></li>
+                <li><router-link to="/ref/divines" class="dropdown-item">Divine Beings</router-link></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -67,8 +71,6 @@
                 <li><router-link to="/ref/equipment" class="dropdown-item">Equipment</router-link></li>
                 <li v-if="user.isLoggedIn"><router-link to="/ref/bestiary" class="dropdown-item">Bestiary</router-link></li>
                 <li><router-link to="/ref/spells" class="dropdown-item">Spells</router-link></li>
-                <li><router-link to="/ref/gods" class="dropdown-item">Gods</router-link></li>
-                <li><router-link to="/ref/divines" class="dropdown-item">Divine Beings</router-link></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
