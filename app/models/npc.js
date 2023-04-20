@@ -16,7 +16,8 @@ var NPC = new Schema({
   home: "",
   dmonly: false,
   job: "",
-  knownassociates: ""
+  knownassociates: "",
+  ancestry: ""
 });
 
 

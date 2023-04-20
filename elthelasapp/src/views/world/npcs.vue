@@ -17,13 +17,17 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-6">
+        <div class="col-4">
           <label>Born</label>
           <input type="text" v-model="npc.born" class="charsheet-text" />
         </div>
-        <div class="col-6">
+        <div class="col-4">
           <label>Died</label>
           <input type="text" v-model="npc.died" class="charsheet-text" />
+        </div>
+        <div class="col-4">
+          <label>Ancestry</label>
+          <input type="text" v-model="npc.ancestry" class="charsheet-text" />
         </div>
       </div>
       <div class="row">
@@ -83,6 +87,7 @@
           Job: {{npc.job}}
         </div>
         <div class="col-4">
+          Ancestry: {{npc.ancestry}}<br />
           Born: {{npc.born}}<br />
           <span v-if="npc.died">Died: {{npc.died}}<br /></span>
         </div>

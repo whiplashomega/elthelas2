@@ -30,6 +30,7 @@ export default {
         dmonly: false,
         job: "",
         knownassociates: "",
+        ancestry: "",
         edit: true
       };
     },
