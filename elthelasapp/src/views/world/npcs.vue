@@ -33,7 +33,7 @@
         </div>
         <div class="col-4">
           <label>Home</label>
-          <input type="text" v-model="npc.lastlocation" class="charsheet-text" />
+          <input type="text" v-model="npc.home" class="charsheet-text" />
         </div>
         <div class="col-4">
           <label>Job</label>
