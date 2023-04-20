@@ -25,6 +25,7 @@ var stronghold = new Schema({
   laws: {},
   merchants: [],
   guards: Number,
+  owner: { type: String, default: "whiplashomega" },
   servants: Number,
   laborers: Number,
   gameYear: Number,

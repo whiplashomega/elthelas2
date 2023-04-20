@@ -10,7 +10,7 @@ exports.getToken = function(user) {
 exports.verifyOrdinaryUser = function(req, res, next) {
     //check header or url parameters or post parameters for token
     var token = req.body.token || req.query.token || req.headers['x-access-token'];
-    
+
     //decode token
     if (token) {
         jwt.verify(token, config.secretKey, function(err, decoded) {
@@ -30,14 +30,22 @@ exports.verifyOrdinaryUser = function(req, res, next) {
         err.status = 403;
         return next(err);
     }
-}
+};
 
 exports.verifyAdmin = function(req, res, next) {
-    if(req.decoded._doc.admin) {
-        return next();
-    } else {
-        var err = new Error('Access Denied');
-        err.status = 403;
-        return next(err);
-    }
-}
+    User.findOne({ username: req.decoded.username }, function (err, user) {
+        if (err) {
+            res.status(500);
+            res.json(err);
+            return false;
+        }
+        if (user.admin) {
+            req.decoded.admin = true;
+            return next();
+        } else {
+            var error = new Error('Access Denied');
+            error.status = 403;
+            return next(error);
+        }
+    });
+};

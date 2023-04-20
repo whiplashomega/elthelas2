@@ -58,6 +58,7 @@
                 <li><hr class="dropdown-divider"></li>
                 <li><router-link to="/ref/gods" class="dropdown-item">Gods</router-link></li>
                 <li><router-link to="/ref/divines" class="dropdown-item">Divine Beings</router-link></li>
+                <li><router-link to="/world/npcs" class="dropdown-item">NPCs</router-link></li>
               </ul>
             </li>
             <li class="nav-item dropdown">

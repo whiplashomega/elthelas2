@@ -45,7 +45,7 @@ router.post('/', Verify.verifyOrdinaryUser, function(req, res, next) {
     if (err) {
       res.status(500);
       console.log(err);
-      res.json({ message: "Could not save character due to errors" });
+      res.json({ message: "Could not save character due to errors", error: err });
       return false;
     }
     console.log(character.id);

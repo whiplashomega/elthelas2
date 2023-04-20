@@ -1,3 +1,5 @@
+/* globals localStorage */
+
 import Character from './classes/characterv2';
 import charCalculators from '@/helpers/charcalcv2';
 import axios from 'axios';
@@ -289,8 +291,6 @@ export default {
       // comp.$root.$emit('bv::show::modal', 'loading');
       axios.delete('/charactersv2/' + character._id + '?token=' + localStorage.getItem('token')).then((res) => {
         if (res.data.success) {
-          comp.$root.$emit('bv::hide::modal', 'loading');
-          comp.$root.$emit('bv::show::modal', 'servermodal');
           comp.characters.splice(comp.characters.indexOf(character), 1);
         }
         return true;

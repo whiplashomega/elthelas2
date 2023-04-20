@@ -8,6 +8,7 @@ import charactersv2 from './charactersv2.js';
 import creatures from './creatures.js';
 import encounters from './encounters.js';
 import strongholds from './strongholds.js';
+import npcs from './npcs.js';
 
 const useGlobalsStore = defineStore('global', globals);
 const useUserStore = defineStore('user', user);
@@ -18,7 +19,8 @@ const useCharacterv2Store = defineStore('characterv2', charactersv2);
 const useCreatureStore = defineStore('creature', creatures);
 const useEncounterStore = defineStore('encounter', encounters);
 const useStrongholdStore = defineStore('stronghold', strongholds);
+const useNPCStore = defineStore('npc', npcs);
 
 export {
-  useGlobalsStore, useUserStore, useStaticsStore, useCampaignStore, useCharacterStore, useCharacterv2Store, useCreatureStore, useEncounterStore, useStrongholdStore
+  useGlobalsStore, useUserStore, useStaticsStore, useCampaignStore, useCharacterStore, useCharacterv2Store, useCreatureStore, useEncounterStore, useStrongholdStore, useNPCStore
 };

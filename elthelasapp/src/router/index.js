@@ -191,6 +191,17 @@ const router = createRouter({
       },
     },
     {
+      path: "/world/npcs",
+      name: "NPCS",
+      components: {
+        default: () => import("@/views/world/npcs.vue"),
+      },
+      meta: {
+        title: "NPCs",
+        auth: false,
+      },
+    },
+    {
       path: "/ref/injury",
       name: "Injury",
       components: {
