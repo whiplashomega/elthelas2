@@ -360,7 +360,7 @@ export default {
     },
     getAllHomebrewWeapons () {
       return new Promise ((resolve) => {
-        axios.get('/json/joeweapons.json').then((response) => {
+        axios.get('/json/weaponsv2.json').then((response) => {
           this.weaponsv2 = response.data;
           resolve(true);
         });
