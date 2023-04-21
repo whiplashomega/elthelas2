@@ -23,6 +23,8 @@ export default defineConfig({
       '/charactersv2': { target: 'http://0.0.0.0:8081' },
       '/npcs': { target: 'http://0.0.0.0:8081' },
       '/npcs/*': { target: 'http://0.0.0.0:8081' },
+      '/history': { target: 'http://0.0.0.0:8081' },
+      '/history/*': { target: 'http://0.0.0.0:8081' },
       '/encounters': { target: 'http://0.0.0.0:8081' },
       '/campaigns/*': { target: 'http://0.0.0.0:8081' },
       '/campaigns': { target: 'http://0.0.0.0:8081' },

@@ -94,7 +94,7 @@ module.exports = function(app, staticDir, server) {
     var characters = require('./characters');
     var charactersv2 = require('./charactersv2');
     var npcs = require('./npcs');
-    var encounters = require('./encounters');
+    var history = require('./history');
     var strongholds = require('./strongholds');
     var campaigns = require('./campaigns');
     var creatures = require('./creatures');
@@ -103,7 +103,7 @@ module.exports = function(app, staticDir, server) {
     app.use('/characters', characters);
     app.use('/charactersv2', charactersv2);
     app.use('/npcs', npcs);
-    app.use('/encounters', encounters);
+    app.use('/history', history);
     app.use('/strongholds', strongholds);
     app.use('/campaigns', campaigns);
     app.use('/creatures', creatures);

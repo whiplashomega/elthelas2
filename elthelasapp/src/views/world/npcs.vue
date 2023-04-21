@@ -89,7 +89,7 @@
     </div>
     <div v-else>
       <h4 class="card-title"><a :href="npc.charid">{{npc.name}}</a> <button class="btn btn-warning" @click="npc.edit = true">Edit</button><button type="button" class="btn btn-primary" style="float:right;" @click="npc.expand = !npc.expand">
-          <span v-if="!npc.expand">&#x25B2;</span><span v-if="npc.expand">&#x25BC;</span>
+          <span v-if="npc.expand">&#x25B2;</span><span v-if="!npc.expand">&#x25BC;</span>
         </button></h4>
       <div v-if="npc.expand">
         <h6 v-if="npc.player">Player: {{npc.player}}</h6>

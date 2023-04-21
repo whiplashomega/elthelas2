@@ -16,7 +16,6 @@ export default {
       equipment: [],
       feats: [],
       gods: [{ name: 'Placeholder', id: 'placeholder', domains5: "" }],
-      historyevents: [{ name: 'Placeholder', id: 'placeholder' }],
       organizations: [{ name: 'Placeholder', id: 'placeholder' }],
       organizationsv2: [{ title: 'Placeholder', id: 'placeholder', ranks: [] }],
       races: [],
@@ -242,17 +241,6 @@ export default {
       return new Promise((resolve) => {
         axios.get('/json/gods.json').then((response) => {
           this.gods = response.data.documents;
-          resolve(true);
-        });
-      });
-    },
-    getAllEvents () {
-      return new Promise((resolve) => {
-        axios.get('/json/history.json').then((response) => {
-          this.historyevents = response.data.documents;
-          for (var x = 0; x < this.historyevents.length; x++) {
-            this.historyevents[x].text.text = marked.parse(this.historyevents[x].text.text);
-          }
           resolve(true);
         });
       });
@@ -641,7 +629,6 @@ export default {
           this.getAllEquipment(),
           this.getAllFeats(),
           this.getAllGods(),
-          this.getAllEvents(),
           this.getAllOrganizations(),
           this.getAllRaces(),
           this.getAllValuables(),
@@ -665,7 +652,6 @@ export default {
           this.getAllEquipment(),
           this.getAllFeatsV2(),
           this.getAllGods(),
-          this.getAllEvents(),
           this.getAllAncestries(),
           this.getAllValuables(),
           this.getAllTerritories(),
