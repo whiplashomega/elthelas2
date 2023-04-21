@@ -19,6 +19,11 @@ export default {
   computed: {
     sortedEvents () {
       return this.events.sort((a, b) => {
+        if (a.edit) {
+          return -1;
+        } else if (b.edit) {
+          return 1;
+        }
         if (!("end_date" in a)) {
           a.end_date = { year: "", month: "", day: "" };
         }

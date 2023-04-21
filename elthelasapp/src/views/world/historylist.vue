@@ -3,7 +3,7 @@
     <div class="btn-group">
       <button class="btn btn-primary" @click="addEvent()">+</button>
     </div>
-    <div v-for="event in sortedEvents" :key="event.start_date.year + event.start_date.month + event.start_date.day + event.text.headline" class="card">
+    <div v-for="event in sortedEvents" :key="event._id" class="card">
       <div v-if="event.edit">
         <div class="row">
           <div class="col-12">
@@ -11,16 +11,16 @@
             <input type="text" class="charsheet-text" v-model="event.text.headline" />
           </div>
           <div class="col-6">
-            <label>Start Date</label>
-            Day: <input type="number" class="charsheet-num" v-model="event.start_date.day" /><br />
+            <label>Start Date</label><br />
             Month: <input type="number" class="charsheet-num" v-model="event.start_date.month" /><br />
-            Year: <input type="number" class="charsheet-num" v-model="event.start_date.year" />
+            Day: <input type="number" class="charsheet-num" v-model="event.start_date.day" /><br />
+            Year: <input type="number" class="charsheet-num" v-model="event.start_date.year" style="max-width:75px;" />
           </div>
           <div class="col-6">
-            <label>End Date</label>
-            Day: <input type="number" class="charsheet-num" v-model="event.end_date.day" /><br />
+            <label>End Date</label><br />
             Month: <input type="number" class="charsheet-num" v-model="event.end_date.month" /><br />
-            Year: <input type="number" class="charsheet-num" v-model="event.end_date.year" />
+            Day: <input type="number" class="charsheet-num" v-model="event.end_date.day" /><br />
+            Year: <input type="number" class="charsheet-num" v-model="event.end_date.year" style="max-width:75px;" />
           </div>
         </div>
         <div class="row">
@@ -36,9 +36,9 @@
       </div>
       <div v-else>
         <h4 class="card-title">
-          <span v-if="event.start_date.month">{{ event.start_date.day }} {{ convertMonth(event.start_date.month) }},</span>{{ event.start_date.year }}
-          <span v-if="event.end_date.year"> - <span v-if="event.end_date.month">{{ event.end_date.day }} {{ convertMonth(event.end_date.month) }},</span> {{ event.end_date.year }}</span>
-          {{ event.text.headline }}
+          {{ event.start_date.year }} <span v-if="event.start_date.month">{{ convertMonth(event.start_date.month) }} {{ event.start_date.day }}</span>
+          <span v-if="event.end_date.year"> - {{ event.end_date.year }} <span v-if="event.end_date.month">{{ convertMonth(event.end_date.month) }} {{ event.end_date.day }}</span></span>:
+          <span class="smalltext">{{ event.text.headline }}</span>
           <button class="btn btn-warning" @click="event.edit = true">Edit</button>
           <button type="button" class="btn btn-primary" style="float:right;" @click="event.expand = !event.expand">
             <span v-if="event.expand">&#x25B2;</span><span v-if="!event.expand">&#x25BC;</span>

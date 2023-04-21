@@ -1,0 +1,27 @@
+{
+  "name": "Altair",
+  "nation": "Federated Alliance Territories",
+  "population": 1500,
+  "metro": 3000,
+  "majority": "Grunt Orcs",
+  "ruling": "Imperial Human",
+  "minorities": [
+    "Human",
+    "Halfling",
+    "Gnome",
+    "Kobold"
+  ],
+  "exports": [
+    "Wine",
+    "Metals"
+  ],
+  "landmarks": [
+    {
+      "name": "The Airship Dock",
+      "description": ""
+    }
+  ],
+  "coords": [33.747875473286314, 81.06161489168461],
+  "description":
+    "Home of the influential family Dardanus. Altair became the unlikely focus of the undead invasion in 1854, quickly tripling in size and continues to grow steadily as it becomes a beacon of stability, safety, and good governance amidst a sea of increasing chaos."
+}
