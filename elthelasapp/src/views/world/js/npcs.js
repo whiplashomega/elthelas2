@@ -14,6 +14,33 @@ export default {
       npcs, marked, npcStore
     };
   },
+  computed: {
+    filterednpcs () {
+      return this.npcs.filter((npc) => {
+        for (let a in npc) {
+          if (this.living && npc.died) {
+            return false;
+          }
+          if (this.player && npc.player === "") {
+            return false;
+          }
+          if (typeof npc[a] === "string" && npc[a].includes(this.filtertext)) {
+            return true;
+          } else if (this.filtertext === "") {
+            return  true;
+          }
+        }
+        return false;
+      });
+    }
+  },
+  data () {
+    return {
+      filtertext: "",
+      living: false,
+      player: false
+    };
+  },
   methods: {
     npc () {
       return {
@@ -31,6 +58,8 @@ export default {
         job: "",
         knownassociates: "",
         ancestry: "",
+        flags: [],
+        expand: true,
         edit: true
       };
     },

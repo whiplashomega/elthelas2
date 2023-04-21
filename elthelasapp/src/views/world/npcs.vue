@@ -1,6 +1,16 @@
 <template>
-  <h2>NPCs in Elthelas</h2>
-  <div v-for="npc in npcs" :key="npc._id">
+  <div class="col-12">
+    <input type="text" class="form-control" placeholder="Search" v-model="filtertext" />
+    <div class="row">
+      <div class="col-3">
+        <input type="checkbox" v-model="player" /> PC
+      </div>
+      <div class="col-3">
+        <input type="checkbox" v-model="living" /> Living Only
+      </div>
+    </div>
+  </div>
+  <div v-for="npc in filterednpcs" :key="npc._id" class="card">
     <div v-if="npc.edit">
       <div class="row">
         <div class="col-4">
@@ -78,26 +88,38 @@
       </div>
     </div>
     <div v-else>
-      <h4><a :href="npc.charid">{{npc.name}}</a> <button class="btn btn-warning" @click="npc.edit = true">Edit</button></h4>
-      <h6>Player: {{npc.player}}</h6>
-      <div class="row">
-        <div class="col-4">
-          Last Known Location: {{npc.lastlocation}}<br />
-          Home: {{npc.home}}<br />
-          Job: {{npc.job}}
+      <h4 class="card-title"><a :href="npc.charid">{{npc.name}}</a> <button class="btn btn-warning" @click="npc.edit = true">Edit</button><button type="button" class="btn btn-primary" style="float:right;" @click="npc.expand = !npc.expand">
+          <span v-if="!npc.expand">&#x25B2;</span><span v-if="npc.expand">&#x25BC;</span>
+        </button></h4>
+      <div v-if="npc.expand">
+        <h6 v-if="npc.player">Player: {{npc.player}}</h6>
+        <div class="row">
+          <div class="col-4">
+            Last Known Location: {{npc.lastlocation}}<br />
+            Home: {{npc.home}}<br />
+            Job: {{npc.job}}
+          </div>
+          <div class="col-4">
+            Ancestry: {{npc.ancestry}}<br />
+            Born: {{npc.born}}<br />
+            <span v-if="npc.died">Died: {{npc.died}}<br /></span>
+          </div>
         </div>
-        <div class="col-4">
-          Ancestry: {{npc.ancestry}}<br />
-          Born: {{npc.born}}<br />
-          <span v-if="npc.died">Died: {{npc.died}}<br /></span>
+        <h5 v-if="npc.history">History</h5>
+        <div v-html="marked.parse(npc.history)"></div>
+        <div class="row">
+          <div class="col-6">
+            <h5 v-if="npc.motivations">Motivations</h5>
+            <div v-html="marked.parse(npc.motivations)"></div>
+            <h5 v-if="npc.knownassociates">Known Associates</h5>
+            <div v-html="marked.parse(npc.knownassociates)"></div>
+          </div>
+          <div class="col-6">
+            <h5>Campaigns</h5>
+            <span v-for="camp in npc.campaigns">{{camp.name}}<br /></span>
+          </div>
         </div>
       </div>
-      <h5 v-if="npc.history">History</h5>
-      <div v-html="marked.parse(npc.history)"></div>
-      <h5 v-if="npc.motivations">Motivations</h5>
-      <div v-html="marked.parse(npc.motivations)"></div>
-      <h5 v-if="npc.knownassociates">Known Associates</h5>
-      <!--<div v-html="marked.parse(npc.knownassociates)"></div>-->
     </div>
   </div>
     <div class="btn-group">

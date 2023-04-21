@@ -1,5 +1,4 @@
 var mongoose = require('mongoose');
-var User = require('./user');
 
 var Schema = mongoose.Schema;
 
@@ -17,7 +16,8 @@ var NPC = new Schema({
   dmonly: false,
   job: "",
   knownassociates: "",
-  ancestry: ""
+  ancestry: "",
+  flags: []
 });
 
 
