@@ -12,12 +12,12 @@
   {
     "name": "Armor Adept",
     "prereq": "Proficiency with light armor, 4th level",
-    "description": "You have practiced moving in armor to gain the following benefits:\n\n* Wearing armor doesn’t impose disadvantage on your Dexterity (Stealth) checks.\n* When you wear armor, your maximum dexterity bonus to AC for that armor increases by 1."
+    "description": "You have practiced moving in armor to gain the following benefits:\n\n* Wearing armor doesn’t impose disadvantage on your Dexterity (Stealth) checks.\n* When you wear armor, the AC for that armor increases by 2."
   },
   {
     "name": "Armored Bulwark",
     "prereq": "Proficiency with heavy armor, 4th level",
-    "description": "You can use your armor to deflect strikes that would kill others. You gain the following benefits:\n\n* Increase your Strength or Constitution score by 1, to a maximum of 20.\n* While you are wearing heavy armor, increase the Protection Class of that armor by your proficiency bonus."
+    "description": "You can use your armor to deflect strikes that would kill others. You gain the following benefits:\n\n* Increase your Strength or Constitution score by 1, to a maximum of 20.\n* While you are wearing heavy armor, increase the Protection Class of that armor by 2."
   },
   {
     "name": "Artificer Initiate",
@@ -62,7 +62,7 @@
   {
     "name": "Dual Wielder",
     "prereq": "4th level",
-    "description": "You master fighting with two weapons, gaining the following benefits:\n\n* You gain a +1 bonus to AC while you are wielding a separate melee weapon in each hand.\n* You can use two-weapon fighting even when the one-handed melee weapon you are wielding in your main hand isn’t light.\n* You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one."
+    "description": "You master fighting with two weapons, gaining the following benefits:\n\n* Increase your strength or dexterity score by 1, to a maximum of 20.\n* You can use two-weapon fighting even when the one-handed melee weapon you are wielding in your main hand isn’t light.\n* You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one."
   },
   {
     "name": "Dual Flurry",

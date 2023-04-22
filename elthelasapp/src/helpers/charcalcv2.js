@@ -71,10 +71,8 @@ export default {
         return a.name === "Armor Adept";
       });
       let maxdex = a.maxdex;
-      if (medmaster.length > 0) {
-        maxdex++;
-      }
-      ac += Math.max(Math.min(maxdex, this.statMod(character, 1)), 0);
+
+      ac += Math.max(Math.min(maxdex, this.statMod(character, 1)), 0) + (medmaster ? 2 : 0);
       return ac;
     }
   },
