@@ -1,11 +1,11 @@
-import { useCharacterv2Store, useStaticsStore, useUserStore } from '@/stores/index';
+import { useCharacterv2Store, useStaticsStorev2, useUserStore } from '@/stores/index';
 import { storeToRefs } from 'pinia';
 import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 
 export default {
   setup () {
     const characters = useCharacterv2Store();
-    const statics = useStaticsStore();
+    const statics = useStaticsStorev2();
     const userinfo = useUserStore();
 
     const { character, getAttBonus, getSaveDC, getSlots: slots, warlockSlots, warlockSlotLevel, totalslots, getTotalPrepared: numprepared, cantripsKnown: cantrips } = storeToRefs(characters);

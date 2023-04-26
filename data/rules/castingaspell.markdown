@@ -50,7 +50,7 @@ Casting a Spell
 </p>
 <h5>Somatic (S)</h5>
 <p>
-  Spellcasting gestures might include a forceful gesticulation or an intricate set of gestures. If a spell requires a somatic component, the caster must have free use of at least one hand to perform these gestures.
+  Spellcasting gestures might include a forceful gesticulation or an intricate set of gestures. If a spell requires a somatic component, the caster must have free use of at least one hand to perform these gestures. This can be the same hand used to hold a material component or spellcasting focus.
 </p>
 <h5>Material (M)</h5>
 <p>

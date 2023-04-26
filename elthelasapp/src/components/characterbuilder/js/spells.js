@@ -7,15 +7,15 @@ export default {
     const characters = useCharacterStore();
     const statics = useStaticsStore();
     const userinfo = useUserStore();
-    
+
     const { character, getAttBonus, getSaveDC, getSlots: slots, warlockSlots, warlockSlotLevel, totalslots, getTotalPrepared: numprepared, cantripsKnown: cantrips } = storeToRefs(characters);
-    const { spells } = statics;
-    
+    const { spells } = storeToRefs(statics);
+
     const { castSpell } = characters;
-    
+
     return {
       marked, character, getAttBonus, getSaveDC, slots, warlockSlots, warlockSlotLevel, totalslots, numprepared, cantrips, spells,
-      
+
       castSpell,
 
       userinfo

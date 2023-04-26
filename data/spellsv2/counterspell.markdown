@@ -22,6 +22,16 @@ tags: [sorcerer, warlock, eldritchknight, wizard, level3, abjuration]
 
 **Damage**: []
 
-You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell’s level. On a success, the creature’s spell fails and has no effect.
+You attempt to interrupt a creature that you can see in the process of casting a spell. Invisible creatures or spells cast without verbal or somatic components cannot be targeted.
 
-**At Higher Levels.** When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.
+You are able to determine the level of the spell and the nature of the spell before you decide to cast Counterspell.
+
+Creatures that use innate spellcasting abilities or items that replicate spell effects (like the Necklace of Fireballs) cannot be targeted with Counterspell. Creatures that use items to cast a spell (like the Staff of Power) can be targeted with Counterspell.
+
+Make an ability check using your spellcasting modifier.
+
+The DC equals 6 + 2 * the spell level.
+
+On a success, the creature's spell fails and has no effect. The spell slot is lost.
+
+**At Higher Levels.** If you cast the spell as a 4th level spell or higher add 1 to your ability modifier for each level above 3rd.

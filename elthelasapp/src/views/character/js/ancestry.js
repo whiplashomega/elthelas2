@@ -1,37 +1,45 @@
-import { useStaticsStore } from '@/stores/index';
+import { useStaticsStorev2 } from '@/stores/index';
 import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 import { useMeta } from 'vue-meta';
-// import { bPagination, bTable } from 'bootstrap-vue-3';
+import { storeToRefs } from 'pinia';
 
 export default {
   setup () {
-    const statics = useStaticsStore();
-    const ancestries = statics.ancestries;
-    let ages = [];
-    let hw = [];
-    for (var x = 0; x < ancestries.length; x++) {
-      ancestries[x].agepoints.name = ancestries[x].name;
-        ages.push(ancestries[x].agepoints);
-        for (var y = 0; y < ancestries[x].subraces.length; y++) {
-          var name = ancestries[x].subraces[y].name;
-          if (name === "default" || name === "") {
-            name = ancestries[x].name;
-          }
-          var hwi = { ...ancestries[x].subraces[y] };
-          hwi.name = name;
-          hw.push(hwi);
-        }
-      }
+    const statics = useStaticsStorev2();
+    statics.getAllAncestries();
+    const { ancestries } = storeToRefs(statics);
+
     useMeta({ title: "Character Ancestries" });
     return {
       statics,
       ancestries,
-      ages,
-      hw,
       marked
-    }
+    };
   },
   computed: {
+    hw () {
+      let hw = [];
+      for (var x = 0; x < this.ancestries.length; x++) {
+        for (var y = 0; y < this.ancestries[x].subraces.length; y++) {
+          var name = this.ancestries[x].subraces[y].name;
+          if (name === "default" || name === "") {
+            name = this.ancestries[x].name;
+          }
+          var hwi = { ...this.ancestries[x].subraces[y] };
+          hwi.name = name;
+          hw.push(hwi);
+        }
+      }
+      return hw;
+    },
+    ages () {
+      let ages = [];
+      for (var x = 0; x < this.ancestries.length; x++) {
+        this.ancestries[x].agepoints.name = this.ancestries[x].name;
+        ages.push(this.ancestries[x].agepoints);
+      }
+      return ages;
+    },
     filterhw () {
       return this.hw.filter((a) => {
         if (this.hwFilter !== "") {
@@ -53,7 +61,7 @@ export default {
           }
         }
       });
-      
+
     },
     filterage () {
       return this.ages.filter((a) => {

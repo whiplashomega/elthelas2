@@ -1,24 +1,16 @@
 <template>
   <div>
     <div class="row">
-              <div class="col">
+        <div class="col">
           <input list="countrylist" type="text"
                  class="charsheet-text" v-model="character.homecountry">
           Home Country
         </div>
-        <datalist id="countrylist">
-          <option :value="nation"
-                  v-for="nation in nations" :key="nation">{{ nation }}</option>
-        </datalist>
         <div class="col">
           <input list="citylist" type="text"
                  class="charsheet-text" v-model="character.hometown">
           Home Town
         </div>
-        <datalist id="citylist">
-          <option :value="city"
-                  v-for="city in cities" :key="city">{{ city }}</option>
-        </datalist>
     </div>
     <div class="row">
       <div class="col">

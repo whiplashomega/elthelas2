@@ -7,12 +7,12 @@ export default {
     const characters = useCharacterv2Store();
     const userinfo = useUserStore();
     const creatureStore = useCreatureStore();
-    
+
     const { creatures } = storeToRefs(creatureStore);
     const { character } = storeToRefs(characters);
-    
+
     const { getCreature, getAllCreatures } = creatureStore;
-    
+
     return {
       creatures, character, userinfo, getCreature, getAllCreatures
     };
@@ -97,8 +97,5 @@ export default {
     calcScoreMod(score) {
       return Math.floor(score / 2) - 5;
     }
-  },
-  mounted () {
-    this.getAllCreatures();
   }
 };

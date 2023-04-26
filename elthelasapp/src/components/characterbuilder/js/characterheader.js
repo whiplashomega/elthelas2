@@ -6,11 +6,11 @@ export default {
     const characters = useCharacterStore();
     const globals = useGlobalsStore();
     const statics = useStaticsStore();
-    
+
     const { character, classtext } = storeToRefs(characters);
-    const { builderRaces: races, allNationNames: nations, allCityNames: cities, organizations: factions, backgrounds } = statics;
+    const { builderRaces: races, allNationNames: nations, allCityNames: cities, organizations: factions, backgrounds } = storeToRefs(statics);
     const { mobile } = storeToRefs(globals);
-    
+
     const setRaceDefaults = characters.setRaceDefaults;
     return {
       character,

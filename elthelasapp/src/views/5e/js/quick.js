@@ -2,15 +2,17 @@ import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 import { useStaticsStore, useUserStore } from '@/stores/index';
 import modal from '@/components/global/modal.vue';
 import { useMeta } from 'vue-meta';
+import { storeToRefs } from 'pinia';
 
 export default {
   setup () {
     const statics = useStaticsStore();
     const userinfo = useUserStore();
-    const { spells, equipment, armor, weapons, homebrewweapons } = statics;
+    statics.getAll();
+    const { spells, equipment, armor, weapons } = storeToRefs(statics);
     useMeta({ title: "Quick Reference Manual" });
     return {
-      userinfo, spells, equipment, armor, weapons, marked, homebrewweapons
+      userinfo, spells, equipment, armor, weapons, marked
     };
   },
   components: {
@@ -101,7 +103,7 @@ export default {
             return this.homebrewweaponstable.sortDesc ? -1 : 1;
           } else {
             return this.homebrewweaponstable.sortDesc ? 1 : -1;
-          }          
+          }
         } else {
           if (a[this.homebrewweaponstable.sortBy] > b[this.homebrewweaponstable.sortBy]) {
             return this.homebrewweaponstable.sortDesc ? -1 : 1;
@@ -149,7 +151,7 @@ export default {
         } else {
           return -1;
         }
-      });      
+      });
     },
     filterweapons () {
       return this.weapons.filter((a) => {
@@ -169,7 +171,7 @@ export default {
         } else {
           return -1;
         }
-      });      
+      });
     }
   },
   data: function() {

@@ -57,7 +57,7 @@
   {
     "name": "Defensive Duelist",
     "prereq": "Dexterity 13 or higher, 4th level",
-    "description": "You've learned to deftly parry attacks, granting you the following benefits:\n\n* Increase your dexterity score by 1, to a maximum of 20.\n*When you are w ielding a finesse weapon with which you are proficient and another creature hits you with a melee attack, you can use your reaction to add your proficiency bonus to your AC for that attack, potentially causing the attack to miss you."
+    "description": "You've learned to deftly parry attacks, granting you the following benefits:\n\n* Increase your dexterity score by 1, to a maximum of 20.\n*When you are wielding a finesse weapon with which you are proficient and another creature hits you with a melee attack, you can use your reaction to add your proficiency bonus to your AC for that attack, potentially causing the attack to miss you."
   },
   {
     "name": "Dual Wielder",
@@ -66,7 +66,7 @@
   },
   {
     "name": "Dual Flurry",
-    "prereq": "4th level",
+    "prereq": "8th level, Dual Wielder feat",
     "description": "You have become exceptionally quick at attacking with two weapons. You gain the following:\n\n* +1 to strength or dexterity.\n* On any turn where you use the attack action while wielding a separate melee weapon in each hand and make an extra attack with your off-hand weapon, if you hit with at least 2 attacks you can make another attack with the off-hand weapon as part of the same action."
   },
   {
@@ -107,7 +107,12 @@
   {
     "name": "Great Weapon Master",
     "prereq": "4th level",
-    "description": "You’ve learned to put the weight of a weapon to your advantage, letting its momentum empower your strikes. You gain the following benefits:\n\n* Increase your strength score by 1, to a maximum of 20.\n* On your turn, when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can make one melee weapon attack as a bonus action.\n* When you hit a creature with a heavy weapon as part of the attack action on your turn, you can cause the weapon to deal extra damage to the target equal to your proficiency bonus."
+    "description": "You’ve learned to put the weight of a weapon to your advantage, letting its momentum empower your strikes. You gain the following benefits:\n\n* Increase your strength score by 1, to a maximum of 20.\n* On your turn, when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can make one melee weapon attack as a bonus action.\n* When you hit a creature with a heavy weapon as part of the attack action on your turn, you can cause the weapon to deal extra damage to the target equal to your proficiency bonus.\n* You no longer suffer disadvantage for wielding a heavy weapon as a small character."
+  },
+  {
+    "name": "Oversized Weapon Master",
+    "prereq": "8th level, Great Weapon Master feat, STR 15",
+    "description": "You've further enhanced your ability to use extra large weapons, giving you the following benefits:\n\n* Increase your strength score by 1, to a maximum of 20.\n* You can wield weapons meant for a large creature without disadvantage. These weapons generally do an extra die of the damage compared to those made for a small or medium creature.\n* When you make an attack with the bonus action as specified in the Great Weapon Master feat, you can make 2 additional attacks instead of one."
   },
   {
     "name": "Gunner",
@@ -242,7 +247,12 @@
   {
     "name": "Shield Master",
     "prereq": "4th level",
-    "description": "You use shields not just for protection but also for offense. You gain the following benefits while you are wielding a shield:\n* Increase your Strength score by 1, to a maximum of 20.\n* If you take the Attack action on your turn, you can use a bonus action to try to shove a creature within 5 feet of you with your shield.\n* If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can use your reaction to take no damage if you succeed on the saving throw, interposing your shield between yourself and the source of the effect."
+    "description": "You use shields not just for protection but also for offense. You gain the following benefits while you are wielding a shield:\n* Increase your Strength or dexterity score by 1, to a maximum of 20.\n* If you take the Attack action on your turn, you can use make an attack with your shield as a bonus action (see Shield (Bash) in weapons). This bonus attack does not count as two-weapon fighting or reduce the bonus to AC provided by your shield.\n* If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can use your reaction to take no damage if you succeed on the saving throw, interposing your shield between yourself and the source of the effect."
+  },
+  {
+    "name": "Shield Expertise",
+    "prereq": "8th level, Shield Master feat",
+    "description": "You have mastered the use of a shield in combat. You gain the following benefits while you are wielding a shield:\n* Increase your Strength or dexterity score by 1, to a maximum of 20.\n* The bonus to AC of a shield you are wielding is increased by 1."
   },
   {
     "name": "Skill Expert",

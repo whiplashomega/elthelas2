@@ -54,24 +54,27 @@ export default {
       });
     },
     fetchCampaignCharacter (id) {
+      var badchar = Character();
+      badchar._id = id;
+      badchar.name = "Delete Me! I'm broken";
       axios.get('/characters/' + id).then((response) => {
         if (response.status === 200) {
           if (typeof response.data === "object" && response.data.armors) {
             this.campaignCharacters.push({ ...response.data });
           } else {
             alert("Bad character in array.");
-            var badchar = Character();
-            badchar._id = id;
-            badchar.name = "Delete Me! I'm broken";
             this.campaignCharacters.push(badchar);
           }
         }
-      });
+      }).catch((e) => {
+        console.log(e);
+        this.campaignCharacters.push(badchar);
+      })
     },
     fetchAllCharacters (idlist) {
       idlist.forEach((pcid) => {
         this.fetchCampaignCharacter(pcid);
-      });      
+      });
     },
     loadCampaign ({ campaign }) {
       this.current = { ...campaign, buildmode: false };

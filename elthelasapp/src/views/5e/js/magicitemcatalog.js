@@ -2,11 +2,13 @@ import { useStaticsStore, useUserStore } from "@/stores/index";
 import { marked } from "@/../node_modules/marked/lib/marked.esm.js";
 import modal from "@/components/global/modal.vue";
 import { useMeta } from "vue-meta";
+import { storeToRefs } from 'pinia';
 
 export default {
   setup() {
     const statics = useStaticsStore();
     const userinfo = useUserStore();
+    statics.getAllMagicItems();
 
     const {
       magicitems,
@@ -19,7 +21,7 @@ export default {
       magicrares,
       magicveryrares,
       magiclegendaries,
-    } = statics;
+    } = storeToRefs(statics);
 
     useMeta({ title: "Magic Item Catalog" });
     return {
@@ -153,7 +155,7 @@ export default {
         if (this.magicitemtables.filterRarity[key]) {
           rarefilter.push(key);
         }
-      }      
+      }
       var value = this.magicitemtables.filter;
       if (this.instockfilter(a)) {
         var inelement = filter.some((el) => {

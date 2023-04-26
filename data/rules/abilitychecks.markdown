@@ -22,3 +22,10 @@ Ability Checks
 <p>
   To make an ability check, roll a d20 and add the relevant ability modifier. As with other d20 rolls, apply bonuses and penalties, and compare the total to the DC. If the total equals or exceeds the DC, the ability check is a success—the creature overcomes the challenge at hand. Otherwise, it’s a failure, which means the character or monster makes no progress toward the objective or makes progress combined with a setback determined by the DM.
 </p>
+<h4>Group Checks</h4>
+<p>
+  Ability checks that require everyone to succeed to be a success (such as moving stealthily as a group) are made by averaging the result. So everyone in the party rolls their dice, adds their modifiers, and then the results are averaged to determine if the group succeeds or fails.
+</p>
+<p>
+  Ability checks that require one person in the group to succeed for the whole group to succeed should be rolled by at most two characters, or one character assisted by another character (see the Help action).
+</p>

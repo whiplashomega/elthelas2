@@ -1,15 +1,15 @@
 import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
-import { useStaticsStore, useUserStore } from '@/stores/index';
+import { useStaticsStorev2, useUserStore } from '@/stores/index';
 import modal from '@/components/global/modal.vue';
 import { useMeta } from 'vue-meta';
 import { storeToRefs } from 'pinia';
 
 export default {
   setup () {
-    const statics = useStaticsStore();
+    const statics = useStaticsStorev2();
     statics.getAllNew();
     const userinfo = useUserStore();
-    const { equipment, armorv2: armor, weaponsv2: weapons, 
+    const { equipment, armorv2: armor, weaponsv2: weapons,
       magicitemsv2: magicitems,
       magicscrollsv2: magicscrolls,
       magicwandsv2: magicwands,
@@ -67,7 +67,7 @@ export default {
             return this.homebrewweaponstable.sortDesc ? -1 : 1;
           } else {
             return this.homebrewweaponstable.sortDesc ? 1 : -1;
-          }          
+          }
         } else {
           if (a[this.homebrewweaponstable.sortBy] > b[this.homebrewweaponstable.sortBy]) {
             return this.homebrewweaponstable.sortDesc ? -1 : 1;
@@ -138,7 +138,7 @@ export default {
         } else {
           return -1;
         }
-      });      
+      });
     },
     filterweapons () {
       return this.weapons.filter((a) => {
@@ -158,7 +158,7 @@ export default {
         } else {
           return -1;
         }
-      });      
+      });
     },
     filteredWands() {
       return this.magicwands.filter(this.magicitemfilter).sort(this.sorter);
@@ -332,7 +332,7 @@ export default {
         if (this.magicitemtables.filterRarity[key]) {
           rarefilter.push(key);
         }
-      }      
+      }
       var value = this.magicitemtables.filter;
       if (this.instockfilter(a)) {
         var inelement = filter.some((el) => {

@@ -9,12 +9,11 @@ export default {
     const statics = useStaticsStore();
 
     const { character, level } = storeToRefs(characters);
-    const feats = statics.feats;
-    const featsort = statics.featsort;
-    
+    const { feats, featsort } = storeToRefs(statics);
+
     const addInjury = characters.addInjury;
     const removeInjury = characters.removeInjury;
-    
+
     return {
       userinfo,
       character,

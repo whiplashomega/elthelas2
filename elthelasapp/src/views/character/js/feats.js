@@ -1,11 +1,11 @@
-import { useStaticsStore } from '@/stores/index';
+import { useStaticsStorev2 } from '@/stores/index';
 import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 import { useMeta } from 'vue-meta';
 import { storeToRefs } from 'pinia';
 
 export default {
   setup () {
-    const statics = useStaticsStore();
+    const statics = useStaticsStorev2();
     const { featsv2: feats } = storeToRefs(statics);
     useMeta({ title: "Feats" });
     statics.getAllFeatsV2();

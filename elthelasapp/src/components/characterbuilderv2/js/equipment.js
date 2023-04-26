@@ -1,4 +1,4 @@
-import { useCharacterv2Store, useUserStore, useStaticsStore } from '@/stores/index';
+import { useCharacterv2Store, useUserStore, useStaticsStorev2 } from '@/stores/index';
 import { storeToRefs } from 'pinia';
 import modal from '@/components/global/modal.vue';
 
@@ -6,15 +6,15 @@ export default {
   setup () {
     const characters = useCharacterv2Store();
     const userinfo = useUserStore();
-    const statics = useStaticsStore();
-    
+    const statics = useStaticsStorev2();
+
     const { character, carryWeight, carryMax, totalGold, equipmentContainers } = storeToRefs(characters);
     const { weaponsv2: weapons, armorv2: armor} = storeToRefs(statics);
-    const { equipment, magicweaponsv2: magicweapons, magicarmorv2: magicarmor, magicotherv2: magicother, magicscrollsv2: scrolls, magicwandsv2: wands } = statics;
-    
+    const { equipment, magicweaponsv2: magicweapons, magicarmorv2: magicarmor, magicotherv2: magicother, magicscrollsv2: scrolls, magicwandsv2: wands } = storeToRefs(statics);
+
     const removeEquipment = characters.removeEquipment;
     const removeContainer = characters.removeContainer;
-    
+
     return {
       userinfo,
       character,

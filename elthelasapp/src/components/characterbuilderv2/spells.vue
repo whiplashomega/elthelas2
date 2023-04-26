@@ -19,10 +19,10 @@
         <th>Class</th><th v-for="cl in character.charclasses" :key="cl.thisclass.name">{{ cl.thisclass.name }}</th>
       </tr>
       <tr>
-        <th>Save DC</th><td v-for="cl in character.charclasses" :key="cl.thisclass.name">{{ getSaveDC(cl.savedcstat) }}</td>
+        <th>Save DC</th><td v-for="cl in character.charclasses" :key="cl.thisclass.name">{{ getSaveDC(cl.savedcstat, cl) }}</td>
       </tr>
       <tr>
-        <th>Attack Bonus</th><td v-for="cl in character.charclasses" :key="cl.thisclass.name">+{{ getAttBonus(cl.savedcstat) }}</td>
+        <th>Attack Bonus</th><td v-for="cl in character.charclasses" :key="cl.thisclass.name">+{{ getAttBonus(cl.savedcstat, cl) }}</td>
       </tr>
     </table>
     <span class="print-hide">{{ displayLevel }}

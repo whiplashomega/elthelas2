@@ -102,8 +102,8 @@ export default {
     getSaveMod: (state) => (i) => {
       return charCalculators.saveMod(state.character, i);
     },
-    getSaveDC: (state) => (i) => {
-      return charCalculators.saveDC(state.character, i);
+    getSaveDC: (state) => (i, cc) => {
+      return charCalculators.saveDC(state.character, i, cc);
     },
     charGroups: (state) => {
       let groups = [];
@@ -123,8 +123,8 @@ export default {
       }
       return groups;
     },
-    getAttBonus: (state) => (i) => {
-      return charCalculators.attBonus(state.character, i);
+    getAttBonus: (state) => (i, cc) => {
+      return charCalculators.attBonus(state.character, i, cc);
     },
     getSkillMod: (state) => (skill) => {
       return charCalculators.skillMod(state.character, skill);

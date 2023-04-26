@@ -13,11 +13,10 @@ export default {
     });
     const statics = useStaticsStore();
     const user = useUserStore();
-    
-    statics.getAll();
+
     user.loadTheme();
 
-    const { darkmode } = storeToRefs(user);    
+    const { darkmode } = storeToRefs(user);
 
     return {
       statics,

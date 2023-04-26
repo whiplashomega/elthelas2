@@ -2,7 +2,7 @@ Combat
 Damage and Healing
 Dropping to 0 Hit Points
 <p>
-  When you drop to 0 hit points, you gain the Dying condition.
+  When you drop to 0 hit points, you gain the Dying condition and then roll on the injury table (if applicable, see below).
 </p>
 <h5>Instant Death</h5>
 <p>

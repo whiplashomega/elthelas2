@@ -23,6 +23,8 @@ export default function() {
       },
       level: 0,
       savedcstat: 0,
+      savedcbonus: 0,
+      spellattackbonus: 0,
       selsubclass: { castermult: 0, features: [] },
       bonusknown: 0
     }],
@@ -120,7 +122,6 @@ export default function() {
     bonusinvocations: 0,
     infusions: [],
     bonusinfusions: 0,
-    saveDCBonus: [0, 0, 0, 0, 0, 0],
     attBonus: [0, 0, 0, 0, 0, 0],
     dr: {
       piercing: 0,

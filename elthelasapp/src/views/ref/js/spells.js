@@ -1,12 +1,12 @@
 import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 import { useMeta } from 'vue-meta';
 import modal from '@/components/global/modal.vue';
-import { useStaticsStore, useUserStore } from '@/stores/index';
+import { useStaticsStorev2, useUserStore } from '@/stores/index';
 import { storeToRefs } from 'pinia';
 export default {
   setup () {
-    useMeta({ title: "Magic" });
-    const statics = useStaticsStore();
+    useMeta({ title: "Spells" });
+    const statics = useStaticsStorev2();
     statics.getAllSpellsV2();
     const userinfo = useUserStore();
     const { spellsv2: spells } = storeToRefs(statics);

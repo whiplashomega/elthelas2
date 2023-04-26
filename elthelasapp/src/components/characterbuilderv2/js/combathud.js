@@ -11,14 +11,15 @@ import { storeToRefs } from 'pinia';
 export default {
   setup () {
     const characters = useCharacterv2Store();
-    
-    const { character, getSaveMod, getSkillMod, getSaveDC } = storeToRefs(characters);
-    
+
+    const { character, getSaveMod, getSkillMod, getSaveDC, getAttBonus } = storeToRefs(characters);
+
     return {
       character,
       getSaveMod,
       getSkillMod,
-      getSaveDC
+      getSaveDC,
+      getAttBonus
     };
   },
   components: {

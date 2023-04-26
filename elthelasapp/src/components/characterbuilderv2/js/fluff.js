@@ -1,13 +1,13 @@
-import { useCharacterv2Store, useStaticsStore } from '@/stores/index';
+import { useCharacterv2Store, useStaticsStorev2, useWorldStore } from '@/stores/index';
 import { storeToRefs } from 'pinia';
 export default {
   setup () {
     const characters = useCharacterv2Store();
-    const statics = useStaticsStore();
+    const statics = useStaticsStorev2();
     const { character } = storeToRefs(characters);
-    const { allNationNames: nations, allCityNames: cities, organizationsv2: factions } = storeToRefs(statics);
+    const { organizationsv2: factions } = storeToRefs(statics);
     return {
-      character, nations, cities, factions
+      character, factions
     };
   },
   methods: {

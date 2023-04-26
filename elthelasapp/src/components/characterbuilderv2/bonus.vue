@@ -105,26 +105,16 @@
     </div>
     <h5>Save DC Bonus</h5>
     <table class="table table-sm">
-      <tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr>
-      <tr>
-        <td><input type="number" class="charsheet-num" v-model="character.saveDCBonus[0]" /></td>
-        <td><input type="number" class="charsheet-num" v-model="character.saveDCBonus[1]" /></td>
-        <td><input type="number" class="charsheet-num" v-model="character.saveDCBonus[2]" /></td>
-        <td><input type="number" class="charsheet-num" v-model="character.saveDCBonus[3]" /></td>
-        <td><input type="number" class="charsheet-num" v-model="character.saveDCBonus[4]" /></td>
-        <td><input type="number" class="charsheet-num" v-model="character.saveDCBonus[5]" /></td>
+      <tr v-for="cl in character.charclasses" :key="cl.thisclass.name">
+        <th>{{cl.thisclass.name}}</th>
+        <td><input type="number" class="charsheet-num" v-model="cl.savedcbonus" /></td>
       </tr>
     </table>
     <h5>Spell Attack Bonus</h5>
     <table class="table table-sm">
-      <tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr>
-      <tr>
-        <td><input type="number" class="charsheet-num" v-model="character.attBonus[0]" /></td>
-        <td><input type="number" class="charsheet-num" v-model="character.attBonus[1]" /></td>
-        <td><input type="number" class="charsheet-num" v-model="character.attBonus[2]" /></td>
-        <td><input type="number" class="charsheet-num" v-model="character.attBonus[3]" /></td>
-        <td><input type="number" class="charsheet-num" v-model="character.attBonus[4]" /></td>
-        <td><input type="number" class="charsheet-num" v-model="character.attBonus[5]" /></td>
+      <tr v-for="cl in character.charclasses" :key="cl.thisclass.name">
+        <th>{{cl.thisclass.name}}</th>
+        <td><input type="number" class="charsheet-num" v-model="cl.spellattackbonus" /></td>
       </tr>
     </table>
     <h5>Bonus Spells Known</h5>

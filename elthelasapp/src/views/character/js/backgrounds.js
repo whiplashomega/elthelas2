@@ -1,9 +1,9 @@
-import { useStaticsStore } from '@/stores/index';
+import { useStaticsStorev2 } from '@/stores/index';
 import { useMeta } from 'vue-meta';
 
 export default {
   setup () {
-    const statics = useStaticsStore();
+    const statics = useStaticsStorev2();
     statics.getAllBackgroundsv2();
     useMeta({ title: "Backgrounds" });
     return {

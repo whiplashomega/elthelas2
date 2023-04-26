@@ -1,17 +1,18 @@
-import { useStaticsStore } from '@/stores/index';
+import { useStaticsStorev2 } from '@/stores/index';
 import droll from 'droll';
 import lookup from './lookup';
 import { useMeta } from 'vue-meta';
+import { storeToRefs } from 'pinia';
 
 export default {
   setup () {
-    const staticsStore = useStaticsStore();
-    const { magiccommons: commons, magicuncommons: uncommons, magicrares: rares,
-            magicveryrares: veryrares, magiclegendaries: legendaries, weapons,
-            armor, equipment, valuables: allValuables, randomValuable, 
-            randomMagicItem, getAllValuables
-    } = staticsStore;
-    getAllValuables();
+    const staticsStore = useStaticsStorev2();
+    staticsStore.getAllNew();
+    const { magiccommonsv2: commons, magicuncommonsv2: uncommons, magicraresv2: rares,
+            magicveryraresv2: veryrares, magiclegendariesv2: legendaries, weaponsv2: weapons,
+            armorv2: armor, equipment, valuables: allValuables, randomValuable,
+            randomMagicItem
+    } = storeToRefs(staticsStore);
     useMeta({ title: "Treasure Generator" });
     return {
       commons, uncommons, rares, veryrares, legendaries, weapons, armor, equipment,

@@ -5,7 +5,7 @@ import { storeToRefs } from 'pinia';
 import L from 'leaflet';
 import 'leaflet-measure';
 import { Decimal } from 'decimal.js';
-import { useStaticsStore, useUserStore } from '@/stores/index';
+import { useWorldStore, useUserStore } from '@/stores/index';
 import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 import modal from '@/components/global/modal.vue';
 import icon from 'leaflet/dist/images/marker-icon.png';
@@ -14,7 +14,8 @@ import { useMeta } from 'vue-meta';
 
 export default {
   setup () {
-    const statics = useStaticsStore();
+    const statics = useWorldStore();
+    statics.getWorld();
     const { nations, cities, landmarks, features, continents, territories } = storeToRefs(statics);
     const user = useUserStore();
     useMeta({ title: "Geography" });

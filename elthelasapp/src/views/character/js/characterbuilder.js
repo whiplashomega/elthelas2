@@ -1,6 +1,6 @@
 // import test from '@/tests/unit/charbuilder.test.js';
 
-import { useStaticsStore, useCharacterStore, useUserStore } from '@/stores/index';
+import { useStaticsStorev2, useCharacterStore, useUserStore, useCreatureStore } from '@/stores/index';
 import { storeToRefs } from 'pinia';
 import abilityscores from '@/components/characterbuilderv2/abilityscores.vue';
 import actions from '@/components/characterbuilderv2/actions.vue';
@@ -33,11 +33,13 @@ import { useMeta } from 'vue-meta';
 export default {
   setup () {
     // stores
-    const statics = useStaticsStore();
+    const statics = useStaticsStorev2();
     const characters = useCharacterStore();
+    const creatures = useCreatureStore();
     const userinfo = useUserStore();
     // initial data retrieval
     statics.getAllNew();
+    creatures.getAllCreatures();
     // map getters
     const { character, pointbuy, mobile, hitdicechanged, message } = storeToRefs(characters);
 
@@ -54,7 +56,7 @@ export default {
       pointbuy,
       mobile,
       hitdicechanged,
-      message,
+      message
     }
   },
   components: {
@@ -103,6 +105,9 @@ export default {
     }
   },
   mounted () {
+    if (this.loggedin) {
+      this.characters.getFromServerSilent();
+    }
     if (this.$route.params.id) {
       this.characters.getOneFromServer(this.$route.params.id);
     }

@@ -5,12 +5,13 @@ import { useMeta } from 'vue-meta';
 export default {
   setup () {
     const statics = useStaticsStore();
+    statics.getAllFeats();
     useMeta({ title: "Feats" });
-    
+
     return {
       statics,
       marked
-    }
+    };
   },
   computed: {
     featsort() {

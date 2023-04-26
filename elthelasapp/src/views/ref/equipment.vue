@@ -192,7 +192,7 @@
           </tbody>
         </table>
         <p>
-          * When you use a shield as a weapon the bonus it provides to your AC is reduced by 1.
+          * When you use a shield as a weapon the bonus it provides to your AC is reduced by 1 until the start of your next turn.
         </p>
         <h4>Weapon Proficiency</h4>
         <p>

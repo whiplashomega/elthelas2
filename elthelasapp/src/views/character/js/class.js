@@ -1,5 +1,5 @@
 import { useMeta } from 'vue-meta';
-import { useStaticsStore } from '@/stores/index';
+import { useStaticsStorev2 } from '@/stores/index';
 import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 import { storeToRefs } from 'pinia';
 import Calc from '@/helpers/charcalc';
@@ -7,7 +7,7 @@ import Calc from '@/helpers/charcalc';
 export default {
   setup () {
     useMeta({ title: "Character Classes" });
-    const staticsStore = useStaticsStore();
+    const staticsStore = useStaticsStorev2();
     const { classesv2: classes } = storeToRefs(staticsStore);
     return {
       marked, classes, staticsStore

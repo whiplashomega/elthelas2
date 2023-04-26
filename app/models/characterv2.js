@@ -10,7 +10,7 @@ var Skill = new Schema({
   custom: { type: Boolean, default: false }
 });
 
-var CharClass = new Schema({ thisclass: Schema.Types.Mixed, level: Number, selsubclass: Schema.Types.Mixed, hitdice: Number, savedcstat: Number, bonusknown: Number });
+var CharClass = new Schema({ thisclass: Schema.Types.Mixed, level: Number, selsubclass: Schema.Types.Mixed, hitdice: Number, savedcstat: Number, bonusknown: Number, savedcbonus: Number, spellattackbonus: Number });
 var Characterv2 = new Schema({
   age: { type: String, default: "" },
   alignment: { type: String, default: "" },
@@ -81,7 +81,6 @@ var Characterv2 = new Schema({
   bonusslots: [Number],
   resources: [],
   features: [],
-  saveDCBonus: [Number],
   attBonus: [Number],
   charclasses: [CharClass],
   race: Schema.Types.Mixed,

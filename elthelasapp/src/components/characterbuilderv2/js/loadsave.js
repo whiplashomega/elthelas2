@@ -6,7 +6,7 @@ export default {
   setup () {
     const characterStore = useCharacterv2Store();
     const userinfo = useUserStore();
-    
+
     const { googletoken, loggedin, token } = storeToRefs(userinfo);
     const { charlevel, charGroups: groups } = storeToRefs(characterStore);
     const { character } = storeToRefs(characterStore);
@@ -23,7 +23,7 @@ export default {
     const saveCharacter = characterStore.saveCharacter;
     const loadCharacter = characterStore.loadCharacter;
     const resetCharacter = characterStore.resetCharacter;
-    
+
     return {
       googletoken,
       loggedin,
@@ -111,11 +111,6 @@ export default {
         }
       },
       deep: true
-    }
-  },
-  mounted () {
-    if (this.loggedin) {
-      this.getFromServerSilent();
     }
   }
 };

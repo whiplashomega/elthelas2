@@ -5,13 +5,13 @@ export default {
   setup () {
     const characters = useCharacterStore();
     const statics = useStaticsStore();
-    
+
     const { character } = storeToRefs(characters);
-    const classes = statics.classes;
-    
+    const { classes } = storeToRefs(statics);
+
     const addclass = characters.addclass;
     const removeclass = characters.removeclass;
-    
+
     return {
       character,
       classes,

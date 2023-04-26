@@ -1,13 +1,13 @@
-import { useStaticsStore } from '@/stores/index';
+import { useStaticsStorev2 } from '@/stores/index';
 import { storeToRefs } from 'pinia';
 import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 import { useMeta } from 'vue-meta';
 export default {
   setup () {
-    const statics = useStaticsStore();
+    const statics = useStaticsStorev2();
     const { organizationsv2: organizations } = storeToRefs(statics);
     useMeta({ title: "Multinational Organizations" });
-    
+
     return {
       organizations, marked, statics
     };
@@ -34,7 +34,7 @@ export default {
         if (orgs.length > 0) {
           this.currentOrg = orgs[0];
         }
-      } 
+      }
     });
   }
 };

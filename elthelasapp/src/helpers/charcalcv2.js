@@ -86,8 +86,8 @@ export default {
       return a.pc;
     }
   },
-  attBonus: function(character, i) {
-    return Number(character.attBonus[i]) + this.statMod(character, i) + this.profbonus(character) - Number(character.exhaustion);
+  attBonus: function(character, i, cc) {
+    return Number(cc.spellattackbonus) + this.statMod(character, i) + this.profbonus(character) - Number(character.exhaustion);
   },
   attackBonus: function(character, attack) {
     return Number(attack.bonus) + Number(this.statMod(character, attack.stat)) + this.profbonus(character) * attack.prof - Number(character.exhaustion);
@@ -243,8 +243,8 @@ export default {
       this.incrementClassCount(spell, classCounts);
     });
   },
-  saveDC: function(character, i) {
-    return 8 + this.profbonus(character) + this.statMod(character, i) + Number(character.saveDCBonus[i]) - Number(character.exhaustion);
+  saveDC: function(character, i, cc) {
+    return 8 + this.profbonus(character) + this.statMod(character, i) + Number(cc.savedcbonus) - Number(character.exhaustion);
   },
   saveMod: function(character, i) {
     return this.statMod(character, i) + Number(character.savebonus[i]) + character.saves[i] * this.profbonus(character) - Number(character.exhaustion);

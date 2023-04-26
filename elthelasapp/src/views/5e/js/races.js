@@ -1,12 +1,14 @@
 import { useStaticsStore } from '@/stores/index';
 import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 import { useMeta } from 'vue-meta';
+import { storeToRefs } from 'pinia';
 // import { bPagination, bTable } from 'bootstrap-vue-3';
 
 export default {
   setup () {
     const statics = useStaticsStore();
-    const races = statics.races;
+    statics.getAllRaces();
+    const { races } = storeToRefs(statics);
     let ages = [];
     let hw = [];
     for (var x = 0; x < races.length; x++) {
@@ -53,7 +55,7 @@ export default {
           }
         }
       });
-      
+
     },
     filterage () {
       return this.ages.filter((a) => {

@@ -1,4 +1,4 @@
-import { useCharacterv2Store, useUserStore, useStaticsStore } from '@/stores/index';
+import { useCharacterv2Store, useUserStore, useStaticsStorev2 } from '@/stores/index';
 import { storeToRefs } from 'pinia';
 import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 
@@ -6,7 +6,7 @@ export default {
   setup () {
     const characters = useCharacterv2Store();
     const userinfo = useUserStore();
-    const statics = useStaticsStore();
+    const statics = useStaticsStorev2();
 
     const { character, level } = storeToRefs(characters);
     const { featsv2: feats, featv2sort: featsort } = storeToRefs(statics);

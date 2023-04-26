@@ -26,11 +26,12 @@
       </div>
       <div class="col-2">
         <div class="charsheet-static">
-          Save DCs
+          Save DC & Spell Attack
           <div v-for="cl in character.charclasses"
                :key="cl.thisclass.name">
             {{ cl.thisclass.name }}
-            Save DC: {{ getSaveDC(cl.savedcstat) }}
+            DC: {{ getSaveDC(cl.savedcstat, cl) }}
+            Att: {{ getAttBonus(cl.savedcstat, cl) }}
           </div>
         </div>
       </div>

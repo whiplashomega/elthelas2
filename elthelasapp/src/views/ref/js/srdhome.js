@@ -1,5 +1,5 @@
 import { useMeta } from "vue-meta";
-import { useStaticsStore } from '@/stores/index';
+import { useStaticsStorev2 } from '@/stores/index';
 import { storeToRefs } from 'pinia';
 import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 import { reactive } from 'vue';
@@ -9,7 +9,7 @@ import infusions from '@/components/characterbuilderv2/js/selectable/artificerin
 export default {
   setup () {
     useMeta({ title: "System Reference Search" });
-    const statics = useStaticsStore();
+    const statics = useStaticsStorev2();
     const {
       ancestries,
       armorv2: armor,
@@ -150,7 +150,7 @@ export default {
         });
         an.subraces.forEach((sb) => {
           let thisrule = {
-            title: sb.name,
+            title: sb.id === "default" ? an.name : sb.name,
             category: "Ancestries",
             subcategory: "Ancestry Options - " + an.name,
             description: `<p>For the full description of the ${sb.name} ancestry visit the <a href="/options/ancestry">Ancestry page</a></p><div>${sb.description}</div><ul>`,
