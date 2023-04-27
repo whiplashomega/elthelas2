@@ -103,6 +103,20 @@ export default {
     modal
   },
   computed: {
+    convertedcount () {
+      return this.creatures.filter((a) => {
+        if (a.stats[0]) {
+          return true;
+        }
+      }).length;
+    },
+    unconvertedcount () {
+      return this.creatures.filter((a) => {
+        if (!a.stats[0]) {
+          return true;
+        }
+      }).length;
+    },
     filteredcreatures () {
       let comp = this;
       return this.creatures.filter((a) => {

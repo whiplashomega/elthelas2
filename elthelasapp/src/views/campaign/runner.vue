@@ -143,7 +143,10 @@
           </label>
         </b-col>
         <div class="col-2">
+          Converted: {{convertedcount}}<br />
+          Unconverted: {{unconvertedcount}}<br />
           <input type="checkbox" v-model="notupdatedonly" />Only Non-Updated
+
         </div>
         <div class="col-sm-2">
           <router-link to="/tools/creaturebuilder" class="btn btn-primary" style="margin-top:25px;">New Creature</router-link>
