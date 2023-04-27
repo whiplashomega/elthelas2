@@ -23,6 +23,16 @@
         [1, 2], [3, 3], [6, 4], [12, 5], [17, 6], [20, 99]
       ],
       "recovery": "longrest"
+    },
+    {
+      "name": "Rage Damage Bonus",
+      "minlevel": 1,
+      "counttype": "table",
+      "addToTable": true,
+      "count": [
+        [1, 2], [5, 3], [9, 4], [13, 5], [17, 6]
+      ],
+      "recovery": "none"
     }
   ],
   "features": [
@@ -44,7 +54,7 @@
     {
       "level": 2,
       "name": "Primal Path",
-      "description": "At 3rd level, you choose a path that shapes the nature of your rage. Choose the Path of the Berserker or the Path of the Totem Warrior, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels."
+      "description": "At 2nd level, you choose a path that shapes the nature of your rage. Choose the Path of the Berserker or the Path of the Totem Warrior, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels."
     },
     {
       "level": 3,
@@ -116,7 +126,7 @@
         {
           "level": 2,
           "name": "Frenzy",
-          "description": "You can go into a frenzy when you rage. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of exhaustion (as described in appendix A)."
+          "description": "You can go into a frenzy when you rage. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one."
         },
         {
           "level": 6,

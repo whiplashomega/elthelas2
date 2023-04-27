@@ -30,7 +30,7 @@
       "image": "https://elthelas-images.herokuapp.com/races/aarakocra.png",
       "description": "",
       "traits": [
-      
+
       ],
       "averageheight": 60,
       "baseheight": 53,
@@ -40,6 +40,6 @@
       "weightroll": "2d4",
       "stats": [0, 2, 0, 0, 1, 0],
       "speed": [25, 50, 0, 0, 0]
-    }  
+    }
   ]
 }

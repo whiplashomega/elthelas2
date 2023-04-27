@@ -8,7 +8,9 @@
     { "name": "Speed", "description": "Your base walking speed is 30 ft." },
     { "name": "Hard to Kill", "description": "You have advantage on death saves." },
     { "name": "Face of a Troll", "description": "Trollkin have disadvantage on any charisma check except intimidation checks made to influence an NPC who is not a Trollkin or Troll." },
-    { "name": "Clawed Hands", "description": "Your unarmed strikes naturally do 1d4 slashing damage and you are automatically proficient with them." },
+    {
+      "name": "Claws", "description": "Your claws are natural weapons, which you can use to make unarmed strikes. They have the light and finesse properties, and deal 1d6 slashing damage."
+    },
     { "name": "Brute", "description": "A melee weapon deals one extra die of its damage when the trollkin hits with it." }
   ],
   "agepoints": {
@@ -34,6 +36,6 @@
       "baseweight": 220,
       "weightroll": "2d4",
       "speed": [30, 0, 0, 0, 0]
-    }  
+    }
   ]
 }

@@ -6,7 +6,7 @@
   "traits": [
     { "name": "Size", "description": "Lizardfolk are a little bulkier and taller than humans, and their colorful frills make them appear even larger. Your size is Medium." },
     { "name": "Speed", "description": "Your base walking speed is 30 feet, and you have a swimming speed of 30 feet." },
-    { "name": "Bite", "description": "Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike." },
+    { "name": "Bite", "description": "Your fanged maw is a natural weapon, which you can use to make unarmed strikes. It has the light and finesse properties, and does 1d6 piercing damage." },
     { "name": "Cunning Artisan", "description": "As part of a short rest, you can harvest bone and hide from a slain beast, construct, dragon, monstrosity, or plant creature of size Small or larger to create one of the following items: a shield, a club, a javelin, or ld4 darts or blowgun needles. To use this trait, you need a blade, such as a dagger, or appropriate artisan's tools, such as leatherworker's tools." },
     { "name": "Hold Breath", "description": "You can hold your breath for up to 15 minutes at a time." },
     { "name": "Hunter's Lore", "description": "You gain proficiency with two of the following skills of your choice: Animal Handling, Nature, Perception, Stealth, and Survival." },
@@ -30,7 +30,7 @@
       "image": "https://elthelas-images.herokuapp.com/races/lizardfolk.jpg",
       "description": "",
       "traits": [
-      
+
       ],
       "averageheight": 68,
       "baseheight": 57,
@@ -39,6 +39,6 @@
       "baseweight": 120,
       "weightroll": "2d6",
       "speed": [30, 0, 0, 30, 0]
-    }  
+    }
   ]
 }

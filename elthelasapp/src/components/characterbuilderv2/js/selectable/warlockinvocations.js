@@ -40,11 +40,6 @@ export default [
     "description": "While someone else is wearing your talisman, you can use your action to teleport to the unoccupied space closest to them, provided the two of you are on the same plane of existence. The wearer of your talisman can do the same thing, using their action to teleport to you. The teleportation can be used a number of times equal to your proficiency bonus, and all expended uses are restored when you finish a long rest."
   },
   {
-    "name": "Book of Ancient Secrets",
-    "prereq": "Pact of the Tome feature",
-    "description": "You can now inscribe magical rituals in your Book of Shadows. Choose two 1st-level spells that have the ritual tag from any class's spell list (the two needn't be from the same list). The spells appear in the book and don't count against the number of spells you know. With your Book of Shadows in hand, you can cast the chosen spells as rituals. You can't cast the spells except as rituals, unless you've learned them by some other means. You can also cast a warlock spell you know as a ritual if it has the ritual tag.\n\nOn your adventures, you can add other ritual spells to your Book of Shadows. When you find such a spell, you can add it to the book if the spell's level is equal to or less than half your warlock level (rounded up) and if you can spare the time to transcribe the spell. For each level of the spell, the transcription process takes 2 hours and costs 50 gp for the rare inks needed to inscribe it."
-  },
-  {
     "name": "Chains of Carceri",
     "prereq": "15th level warlock, Pact of the Chain feature",
     "description": "You can cast hold monster at will – targeting a celestial, fiend, or elemental – without expending a spell slot or material components. You must finish a long rest before you can use this invocation on the same creature again."
@@ -230,11 +225,6 @@ export default [
     "description": "You learn the spell bane and it counts as a warlock spell for you. Additionally you can cast it once without using a spell slot, but once you do so you cannot do so again until you finish a long rest."
   },
   {
-    "name": "Thirsting Blade",
-    "prereq": "5th level warlock, Pact of the Blade feature",
-    "description": "You can attack with your pact weapon twice, instead of once, whenever you take the Attack action on your turn."
-  },
-  {
     "name": "Tomb of Levistus",
     "prereq": "5th level warlock",
     "description": "As a reaction when you take damage, you can entomb yourself in ice, which melts away at the end of your next turn. You gain 10 temporary hit points per warlock level, which take as much of the triggering damage as possible. Immediately after you take the damage, you gain vulnerability to fire damage, your speed is reduced to 0, and you are incapacitated. These effects, including any remaining temporary hit points, all end when the ice melts.\n\nOnce you use this invocation, you can't use it again until you finish a short or long rest."
@@ -253,11 +243,6 @@ export default [
     "name": "Vision of Distant Realms",
     "prereq": "9th level warlock",
     "description": "You can cast arcane eye at will, without expending a spell slot."
-  },
-  {
-    "name": "Voice of the Chain Master",
-    "prereq": "Pact of the Chain feature",
-    "description": "You can communicate telepathically with your familiar and perceive through your familiar's senses as long as you are on the same plane of existence. Additionally, while perceiving through your familiar's senses, you can also speak through your familiar in your own voice, even if your familiar is normally incapable of speech."
   },
   {
     "name": "Whispers of the Grave",
