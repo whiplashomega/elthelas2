@@ -111,6 +111,9 @@ export default {
         if (comp.typeFilter !== "" && a.type !== comp.typeFilter) {
           inelement = false;
         }
+        if (this.notupdatedonly && a.stats[0]) {
+          return false;
+        }
         values.forEach((value) => {
           let exists = comp.creaturestable.filterBy.some(function(el) {
             for (var y in a) {
@@ -179,7 +182,8 @@ export default {
         sortBy: "name",
         sortDesc: false,
         filterBy: [ "name", "size", "cr", "subtype", "alignment" ],
-        modalInfo: { ...modalInfo }
+        modalInfo: { ...modalInfo },
+        notupdatedonly: false
       },
       modalProps: { isActive: false },
       typeFilter: "",
@@ -192,7 +196,8 @@ export default {
       adjustedxpvalue: 0,
       aoe: false,
       comp: this,
-      encountercreatures: []
+      encountercreatures: [],
+      notupdatedonly: false
     };
   },
   methods: {

@@ -142,7 +142,10 @@
             </select>
           </label>
         </b-col>
-        <div class="col-sm-6">
+        <div class="col-2">
+          <input type="checkbox" v-model="notupdatedonly" />Only Non-Updated
+        </div>
+        <div class="col-sm-2">
           <router-link to="/tools/creaturebuilder" class="btn btn-primary" style="margin-top:25px;">New Creature</router-link>
         </div>
         <b-col md="4" class="my-1">

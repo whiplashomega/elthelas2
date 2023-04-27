@@ -7,11 +7,11 @@ function throwerr(err, res) {
   res.status(500);
   console.log(err);
   res.json({ message: "Could not handle request due to errors" });
-  return false;  
+  return false;
 }
 
 router.get('/', function(req, res) {
-  Creature.find({}, { name: true, size: true, cr: true, type: true, subtype: true, alignment: true }, function (err, creatures) {
+  Creature.find({}, { name: true, size: true, cr: true, type: true, subtype: true, alignment: true, stats: true }, function (err, creatures) {
     if (err) return throwerr(err, res);
     res.header('Cache-Control', "no-cache, no-store, must-revalidate");
     res.header("Pragma", "no-cache");
@@ -26,7 +26,7 @@ router.get('/:id', function(req, res) {
     res.header('Cache-Control', "no-cache, no-store, must-revalidate");
     res.header("Pragma", "no-cache");
     res.header("Expires", 0);
-    res.json(creature);    
+    res.json(creature);
   })
 });
 
@@ -37,7 +37,7 @@ router.post('/', Verify.verifyOrdinaryUser, function(req, res) {
     res.header("Cache-Control", "no-cache, no-store, must-revalidate");
     res.header("Pragma", "no-cache");
     res.header("Expires", 0);
-    res.json(creature);    
+    res.json(creature);
   });
 });
 
