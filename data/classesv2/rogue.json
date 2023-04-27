@@ -144,8 +144,8 @@
     },
     {
       "level": 14,
-      "name": "Blindsense",
-      "description": "Starting at 14th level, if you are able to hear, you are aware of the location of any hidden or invisible creature within 10 feet of you."
+      "name": "Subtle Strikes",
+      "description": "When you attack you know how to exploit a target's distraction. You have advantage on any attack roll that targets a creature within 5 feet of at least 1 of your allies who isn't incapacitated."
     },
     {
       "level": 15,

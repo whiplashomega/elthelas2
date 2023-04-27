@@ -15,13 +15,6 @@
   "equipment": [],
   "resources": [
     {
-      "name": "Tireless",
-      "counttype": "prof",
-      "count": 0,
-      "minlevel": 10,
-      "recovery": "longrest"
-    },
-    {
       "name": "Spells Known",
       "counttype": "table",
       "count": [[2, 2],[3,3],[5,4],[7,5],[9,6],[11,7],[13,8],[15,9],[17,10],[19,11]],
@@ -30,75 +23,28 @@
       "recovery": "none"
     },
     {
-      "name": "Favored Foe",
-      "counttype": "prof",
-      "count": 0,
-      "minlevel": 3,
-      "recovery": "longrest"
-    },
-    {
-      "name": "Primal Awareness - Speak with Animals",
-      "counttype": "fixed",
-      "count": 1,
-      "minlevel": 3,
-      "recovery": "longrest"
-    },
-    {
-      "name": "Primal Awareness - Beast Sense",
-      "counttype": "fixed",
-      "count": 1,
-      "minlevel": 5,
-      "recovery": "longrest"
-    },
-    {
-      "name": "Primal Awareness - Speak with Plants",
-      "counttype": "fixed",
-      "count": 1,
-      "minlevel": 9,
-      "recovery": "longrest"
-    },
-    {
-      "name": "Primal Awareness - Locate Creature",
-      "counttype": "fixed",
-      "count": 1,
-      "minlevel": 13,
-      "recovery": "longrest"
-    },
-    {
-      "name": "Primal Awareness - Commune with Nature",
-      "counttype": "fixed",
-      "count": 1,
-      "minlevel": 17,
-      "recovery": "longrest"
-    },
-    {
       "name": "Nature's Veil",
       "counttype": "prof",
       "count": 0,
-      "minlevel": 10,
+      "minlevel": 13,
       "recovery": "longrest"
     }
   ],
   "features": [
     {
       "level": 1,
-      "name": "Deft Explorer",
-      "description": "You are an unsurpassed explorer and survivor, both in the wilderness and in dealing with others on your travels. You gain the Canny benefit below, and you gain an additional benefit below when you reach 6th level and 10th level in this class.\n\n#### Canny (1st Level)\n\nChoose one of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses the chosen skill.\n\nYou can also speak, read, and write two additional languages of your choice.\n\n#### Roving (6th level)\n\nYour walking speed increases by 5, and you gain a climbing speed and a swimming speed equal to your walking speed.\n\n#### Tireless (10th Level)\n\nAs an action, you can give yourself a number of temporary hit points equal to 1d8 + your Wisdom modifier (minimum of 1 temporary hit point). You can use this action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.\n\nIn addition, whenever you finish a short rest, your exhaustion level, if any, is decreaed by 1."
+      "name": "Expertise",
+      "description": "You gain expertise in two skills with which you are proficient."
     },
     {
       "level": 2,
-      "name": "Fighting Style",
-      "description": "At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.\n\n#### Archery\n\nYou gain a +2 bonus to attack rolls you make with ranged weapons.\n\n#### Defense\n\nWhile you are wearing armor, you gain a +1 bonus to AC\n\n#### Dueling\n\nWhen you are weilding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.\n\n#### Two-Weapon Fighting\n\nWhen you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.\n\n#### Blind Fighting\n\nYou have blindsight with a range of 10 feet. Within that range you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.\n\n#### Druidic Warrior\n\nYou learn two cantrips of your choice from the druid spell list. They count as ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the druid spell list.\n\n#### Thrown Weapon Fighting\n\nYou can draw a weapon that has the thrown property as part of the attack you make with the weapon.\n\nIn addition, when you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll."
+      "name": "Combat Caster",
+      "description": "You can use a 1-handed weapon with which you are proficient as a spellcasting focus."
     },
-        {
-          "level": 2,
-          "name": "Combat Caster",
-          "description": "You can use a 1-handed weapon with which you are proficient as a spellcasting focus."
-        },
     {
       "level": 2,
       "name": "Spellcasting",
-      "description": "By the time you reach 2nd level, you have learned to use the magical essence of nature to cast spells, much as a druid does. See chapter 10 for the general rules of spellcasting and chapter 11 for the ranger spell list.\n\n#### Spell Slots\n\nThe Ranger table shows how many spell slots you have to cast your ranger spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.\n\nFor example, if you know the 1st-level spell animal friendship and have a 1st-level and a 2nd-level spell slot available, you can cast animal friendship using either slot.\n\n#### Spells Known of 1st Level and Higher\n\nYou know two 1st-level spells of your choice from the ranger spell list.\n\nThe Spells Known column of the Ranger table shows when you learn more ranger spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.\n\nAdditionally, when you gain a level in this class, you can choose one of the ranger spells you know and replace it with another spell from the ranger spell list, which also must be of a level for which you have spell slots.\n\n#### Spellcasting Ability\n\nWisdom is your spellcasting ability for your ranger spells, since your magic draws on your attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a ranger spell you cast and when making an attack roll with one.\n\nSpell save DC = 8 + your proficiency bonus + your Wisdom modifier\n\nSpell attack modifier = your proficiency bonus + your Wisdom modifier."
+      "description": "By the time you reach 2nd level, you have learned to use the magical essence of nature to cast spells, much as a druid does. See chapter 10 for the general rules of spellcasting and chapter 11 for the ranger spell list.\n\n#### Spell Slots\n\nThe Ranger table shows how many spell slots you have to cast your ranger spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.\n\nFor example, if you know the 1st-level spell animal friendship and have a 1st-level and a 2nd-level spell slot available, you can cast animal friendship using either slot.\n\n#### Spells Known of 1st Level and Higher\n\nYou know the hunter's mark spell and two 1st-level spells of your choice from the ranger spell list.\n\nThe Spells Known column of the Ranger table shows when you learn more ranger spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.\n\nAdditionally, when you gain a level in this class, you can choose one of the ranger spells you know and replace it with another spell from the ranger spell list, which also must be of a level for which you have spell slots.\n\n#### Spellcasting Ability\n\nWisdom is your spellcasting ability for your ranger spells, since your magic draws on your attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a ranger spell you cast and when making an attack roll with one.\n\nSpell save DC = 8 + your proficiency bonus + your Wisdom modifier\n\nSpell attack modifier = your proficiency bonus + your Wisdom modifier."
     },
     {
       "level": 2,
@@ -106,14 +52,14 @@
       "description": "You can use a druidic focus as a spellcasting focus for your ranger spells. A druidic focus might be a sprig of mistletoe or holly, a wand or rod mode of yew or another special wood, a staff drawn whole from a living tree, or an object incorporating feathers, fur, bones, and teeth from sacred animals."
     },
     {
-      "level": 3,
-      "name": "Favored Foe",
-      "description": "When you hit a creature with a weapon attack roll, you can call on your mystical bond with nature to mark the target as your favored enemy. When you do so you cast the Hunter's Mark spell, with no additional action required, and without requiring concentration.\n\nYou can use this feature to mark a favored enemy a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
-    },
-    {
       "level": 2,
       "name": "Ranger Archetype",
       "description": "At 2nd level, you choose an archetype that you strive to emulate: Hunter or Beast Master, both detailed at the end o f the class description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level."
+    },
+    {
+      "level": 3,
+      "name": "Fighting Style",
+      "description": "At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.\n\n#### Archery\n\nYou gain a +2 bonus to attack rolls you make with ranged weapons.\n\n#### Defense\n\nWhile you are wearing armor, you gain a +1 bonus to AC\n\n#### Dueling\n\nWhen you are weilding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.\n\n#### Two-Weapon Fighting\n\nWhen you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.\n\n#### Blind Fighting\n\nYou have blindsight with a range of 10 feet. Within that range you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.\n\n#### Druidic Warrior\n\nYou learn two cantrips of your choice from the druid spell list. They count as ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the druid spell list.\n\n#### Thrown Weapon Fighting\n\nYou can draw a weapon that has the thrown property as part of the attack you make with the weapon.\n\nIn addition, when you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll."
     },
     {
       "level": 7,
@@ -121,19 +67,14 @@
       "description": "At 3rd level, you choose an archetype that you strive to emulate: Hunter or Beast Master, both detailed at the end o f the class description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level."
     },
     {
-      "level": 3,
+      "level": 11,
       "name": "Ranger Archetype (11th)",
       "description": "At 3rd level, you choose an archetype that you strive to emulate: Hunter or Beast Master, both detailed at the end o f the class description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level."
     },
     {
-      "level": 3,
+      "level": 15,
       "name": "Ranger Archetype (15th)",
       "description": "At 3rd level, you choose an archetype that you strive to emulate: Hunter or Beast Master, both detailed at the end o f the class description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level."
-    },
-    {
-      "level": 3,
-      "name": "Primal Awareness",
-      "description": "You can focus your awareness through the interconnections of nature: you learn additional spells when you reach certain levels in this class if you don't already know them, as shown in the Primal Awareness Spells table. These spells don't count against the number of ranger spells you know.\n\n* 3rd - speak with animals\n* 5th - beast sense\n* 9th - speak with plants\n* 13th - locate creature\n* 17th - commune with nature\n\nYou can cast each of these spells once without expending a spell slot. Once you cast a spell in this way, you can't do so again until you finish a long rest."
     },
     {
       "level": 4,
@@ -151,29 +92,44 @@
       "description": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
     },
     {
+      "level": 7,
+      "name": "Roving",
+      "description": "Your speed increases by 10 feet so long as you aren't wearing heavy armor. You also have a climb speed and a swim speed equal to your speed."
+    },
+    {
       "level": 8,
       "name": "Land's Stride",
       "description": "Starting at 8th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.\n\nIn addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell."
     },
     {
+      "level": 9,
+      "name": "Expertise",
+      "description": "You gain expertise in two of your skill proficiencies of your choice."
+    },
+    {
       "level": 10,
+      "name": "Tireless",
+      "description": "Primal forces now help fuel you on your journeys, granting you the following benefits:\n\n* Whenever you finish a short or long rest you can give yourself temporary hit points equal to your ranger level.\n* If you are exhausted when you finish a short rest, your level of exhaustion decreases by 1."
+    },
+    {
+      "level": 13,
       "name": "Nature's Veil",
       "description": "You draw on the powers of nature to hide yourself from view briefly. As a bonus action, you can magically become invisible, along with any equipment you are wearing or carrying until the  start of your next turn.\n\nYou can use this feature a number of time equal to your proficiency bonus and you regain all expended uses when you finish a long rest."
     },
     {
       "level": 14,
-      "name": "Vanish",
-      "description": "Starting at 14th level, you can use the Hide action as a bonus action on your turn. Also, you can’t be tracked by nonmagical means, unless you choose to leave a trail."
+      "name": "Feral Senses",
+      "description": "Your connection to the forces of nature grants you blindsight with a range of 30 ft."
     },
     {
       "level": 18,
-      "name": "Feral Senses",
-      "description": "At 18th level, you gain preternatural senses that help you fight creatures you can’t see. When you attack a creature you can’t see, your inability to see it doesn’t impose disadvantage on your attack rolls against it.\n\nYou are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn’t hidden from you and you aren’t blinded or deafened."
+      "name": "Foe Slayer",
+      "description": "At 18th level, your hunter's mark spell improves, granting you 1d10 additional damage instead of 1d6."
     },
     {
       "level": 20,
-      "name": "Foe Slayer",
-      "description": "At 20th level, you become an unparalleled hunter. Once on each of your turns, you can add your Wisdom modifier to the attack roll or the damage roll of an attack you make. You can choose to use this feature before or after the roll, but before any effects of the roll are applied."
+      "name": "Unfettered",
+      "description": "You cannot be held down. You can take the disengage action as a bonus action. Additonally when you take the disengage action you immediately end the grappled and restrained conditions on yourself."
     }
   ],
   "subclass": [
