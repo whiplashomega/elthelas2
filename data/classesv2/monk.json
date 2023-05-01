@@ -1,7 +1,7 @@
 {
   "name": "Monk",
   "level": 1,
-  "hitdie": 8,
+  "hitdie": 10,
   "caststat": 4,
   "cantrips": 0,
   "cantriplevel": 1,
@@ -87,13 +87,13 @@
       "description": "When you reach 3rd level, you commit yourself to a monastic tradition: the Way of the Open Hand, the Way of Shadow, or the Way of the Four Elements, all detailed at the end of the class description. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level."
     },
     {
-      "level": 11,
-      "name": "Monastic Tradition Feature (13th)",
+      "level": 10,
+      "name": "Monastic Tradition Feature (10th)",
       "description": "When you reach 3rd level, you commit yourself to a monastic tradition: the Way of the Open Hand, the Way of Shadow, or the Way of the Four Elements, all detailed at the end of the class description. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level."
     },
     {
-      "level": 17,
-      "name": "Monastic Tradition Feature (17th)",
+      "level": 14,
+      "name": "Monastic Tradition Feature (14th)",
       "description": "When you reach 3rd level, you commit yourself to a monastic tradition: the Way of the Open Hand, the Way of Shadow, or the Way of the Four Elements, all detailed at the end of the class description. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level."
     },
     {
@@ -147,9 +147,9 @@
       "description": "Starting at 7th level, you can use your action to end one effect on yourself that is causing you to be charmed or frightened."
     },
     {
-      "level": 10,
+      "level": 11,
       "name": "Purity of Body",
-      "description": "At 10th level, your mastery o f the ki flowing through you makes you immune to disease and poison."
+      "description": "At 11th level, your mastery of the ki flowing through you makes you immune to disease and poison."
     },
     {
       "level": 13,
@@ -157,14 +157,14 @@
       "description": "Starting at 13th level, you learn to touch the ki of other minds so that you understand all spoken languages. Moreover, any creature that can understand a language can understand what you say."
     },
     {
-      "level": 14,
+      "level": 15,
       "name": "Diamond Soul",
-      "description": "Beginning at 14th level, your mastery of ki grants you proficiency in all saving throws.\n\nAdditionally, whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second result."
+      "description": "Beginning at 15th level, your mastery of ki grants you proficiency in all saving throws.\n\nAdditionally, whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second result."
     },
     {
-      "level": 15,
+      "level": 17,
       "name": "Timeless Body",
-      "description": "At 15th level, your ki sustains you so that you suffer none o f the frailty of old age, and you can't be aged magically. You can still die of old age, however. In addition, you no longer need food or water."
+      "description": "At 17th level, your ki sustains you so that you suffer none o f the frailty of old age, and you can't be aged magically. You can still die of old age, however. In addition, you no longer need food or water."
     },
     {
       "level": 18,
@@ -194,12 +194,12 @@
           "description": "At 6th level, you gain the ability to heal yourself. As an action, you can regain hit points equal to three times your monk level. You must finish a long rest before you can use this feature again."
         },
         {
-          "level": 11,
+          "level": 10,
           "name": "Tranquility",
           "description": "Beginning at 11th level, you can enter a special meditation that surrounds you with an aura of peace. At the end of a long rest, you gain the effect of a sanctuary spell that lasts until the start of your next long rest (the spell can end early as normal). The saving throw DC for the spell equals 8 + your Wisdom modifier + your proficiency bonus."
         },
         {
-          "level": 17,
+          "level": 14,
           "name": "Quivering Palm",
           "description": "At 17th level, you gain the ability to set up lethal vibrations in someone’s body. When you hit a creature with an unarmed strike, you can spend 3 ki points to start these imperceptible vibrations, which last for a number of days equal to your monk level. The vibrations are harmless unless you use your action to end them. To do so, you and the target must be on the same plane of existence. When you use this action, the creature must make a Constitution saving throw. If it fails, it is reduced to 0 hit points. If it succeeds, it takes 10d10 necrotic damage. You can have only one creature under the effect of this feature at a time. You can choose to end the vibrations harmlessly without using an action."
         }
@@ -226,14 +226,14 @@
           "description": "At 6th level, you gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action you can teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness. You then have advantage on the first melee attack you make before the end of the turn."
         },
         {
-          "level": 11,
+          "level": 10,
           "name": "Cloak of Shadows",
-          "description": "By 11th level, you have learned to become one with the shadows. When you are in an area of dim light or darkness, you can use your action to become invisible. You remain invisible until you make an attack, cast a spell, or are in an area of bright light."
+          "description": "By 10th level, you have learned to become one with the shadows. When you are in an area of dim light or darkness, you can use your action to become invisible. You remain invisible until you make an attack, cast a spell, or are in an area of bright light."
         },
         {
-          "level": 17,
+          "level": 14,
           "name": "Opportunist",
-          "description": "At 17th level, you can exploit a creature's momentary distraction when it is hit by an attack. Whenever a creature within 5 feet of you is hit by an attack made by a creature other than you, you can use your reaction to make a melee attack against that creature."
+          "description": "At 14th level, you can exploit a creature's momentary distraction when it is hit by an attack. Whenever a creature within 5 feet of you is hit by an attack made by a creature other than you, you can use your reaction to make a melee attack against that creature."
         }
       ]
     },
@@ -265,14 +265,14 @@
           "description": "At 6th level, you gain the ability to unsettle or terrify those around you as an action, for your soul has been touched by the shadow of death. When you take this action, each creature within 30 feet of you that can see you must succeed on a Wisdom saving throw or be frightened of you until the end of your next turn."
         },
         {
-          "level": 11,
+          "level": 10,
           "name": "Mastery of Death",
-          "description": "Beginning at 11th level, you use your familiarity with death to escape its grasp. When you are reduced to 0 hit points, you can expend 1 ki point (no action required) to have 1 hit point instead."
+          "description": "Beginning at 10th level, you use your familiarity with death to escape its grasp. When you are reduced to 0 hit points, you can expend 1 ki point (no action required) to have 1 hit point instead."
         },
         {
-          "level": 17,
+          "level": 14,
           "name": "Touch of the Long Death",
-          "description": "Starting at 17th level, your touch can channel the energy of death into a creature. As an action, you touch one creature within 5 feet of you, and you expend 1 to 10 ki points. The target must make a Constitution saving throw, and it takes 2d10 necrotic damage per ki point spent on a failed save, or half as much damage on a successful one."
+          "description": "Starting at 14th level, your touch can channel the energy of death into a creature. As an action, you touch one creature within 5 feet of you, and you expend 1 to 10 ki points. The target must make a Constitution saving throw, and it takes 2d10 necrotic damage per ki point spent on a failed save, or half as much damage on a successful one."
         }
       ]
     },
@@ -292,14 +292,14 @@
           "description": "At 6th level, you gain the ability to channel your ki into searing waves of energy. Immediately after you take the Attack action on your turn, you can spend 2 ki points to cast the 1st-level spell burning hands as a bonus action. You can spend additional ki points to cast burning hands as a higher level spell. Each additional ki point you spend increases the spell's level by 1. The maximum number of ki points (2 plus any additional points) that you can spend on the spell equals half your monk level (round down)."
         },
         {
-          "level": 11,
+          "level": 10,
           "name": "Searing Sunburst",
-          "description": "At 11th level, you gain the ability to create an orb of light that erupts into a devastating explosion. As an action, you create an orb and hurl it at a point you choose within 150 feet, where it erupts into a sphere of radiant light for a brief but deadly instant.\n\nEach creature in that 20-foot-radius sphere must succeed on a Constitution saving throw or take 2d6 radiant damage. A creature doesn't need to make the save if the creature is behind total cover that is opaque.\n\nYou can increase the sphere's damage by spending ki points. Each point you spend, up to a maximum of 3, increases the damage by 2d6."
+          "description": "At 10th level, you gain the ability to create an orb of light that erupts into a devastating explosion. As an action, you create an orb and hurl it at a point you choose within 150 feet, where it erupts into a sphere of radiant light for a brief but deadly instant.\n\nEach creature in that 20-foot-radius sphere must succeed on a Constitution saving throw or take 2d6 radiant damage. A creature doesn't need to make the save if the creature is behind total cover that is opaque.\n\nYou can increase the sphere's damage by spending ki points. Each point you spend, up to a maximum of 3, increases the damage by 2d6."
         },
         {
-          "level": 17,
+          "level": 14,
           "name": "Sun Shield",
-          "description": "At 17th level, you become wreathed in a luminous aura. You shed bright light in a 30-foot radius and dim light for an additional 30 feet. You can extinguish or restore the light as a bonus action.\n\nIf a creature hits you with a melee attack while this light shines, you can use your reaction to deal radiant damage to the creature. The radiant damage equals 5 + your Wisdom modifier."
+          "description": "At 14th level, you become wreathed in a luminous aura. You shed bright light in a 30-foot radius and dim light for an additional 30 feet. You can extinguish or restore the light as a bonus action.\n\nIf a creature hits you with a melee attack while this light shines, you can use your reaction to deal radiant damage to the creature. The radiant damage equals 5 + your Wisdom modifier."
         }
       ]
     },
@@ -324,14 +324,14 @@
           "description": "Starting at 6th level, you can move in sudden, swaying ways. You gain the following benefits.\n\n**Leap to Your Feet.** When you’re prone, you can stand up by spending 5 feet of movement, rather than half your speed.\n\n**Redirect Attack.** When a creature misses you with a melee attack roll, you can spend 1 ki point as a reaction to cause that attack to hit one creature of your choice, other than the attacker, that you can see within 5 feet of you."
         },
         {
-          "level": 11,
+          "level": 10,
           "name": "Drunkard's Luck",
-          "description": "Starting at llth level, you always seem to get a lucky bounce at the right moment. When you make an ability check, an attack roll, or a saving throw and have disadvantage on the roll, you can spend 2 ki points to cancel the disadvantage for that roll."
+          "description": "Starting at l0th level, you always seem to get a lucky bounce at the right moment. When you make an ability check, an attack roll, or a saving throw and have disadvantage on the roll, you can spend 2 ki points to cancel the disadvantage for that roll."
         },
         {
-          "level": 17,
+          "level": 14,
           "name": "Intoxicated Frenzy",
-          "description": "At 17th level, you gain the ability to make an overwhelming number of attacks against a group of enemies. When you use your Flurry of Blows, you can make up to three additional attacks with it (up to a total of five Flurry of Blows attacks), provided that each Flurry of Blows attack targets a different creature this turn."
+          "description": "At 14th level, you gain the ability to make an overwhelming number of attacks against a group of enemies. When you use your Flurry of Blows, you can make up to three additional attacks with it (up to a total of five Flurry of Blows attacks), provided that each Flurry of Blows attack targets a different creature this turn."
         }
       ]
     },
@@ -348,17 +348,17 @@
         {
           "level": 6,
           "name": "One with the Blade",
-          "description": "At 6th level, you extend your ki into your kensei weapons, granting you the following benefits.\n\n**Magic Kensei Weapons.** Your attacks with your kensei weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.\n\n**Deft Strike.** When you hit a target with a kensei weapon, you can spend 1 ki point to cause the weapon to deal extra damage to the target equal to your Martial Arts die. You can use this feature only once on each of your turns."
+          "description": "At 6th level, you extend your ki into your kensei weapons, granting you the following benefits.\n\n**Magic Kensei Weapons.** Your attacks with your kensei weapons gain a +1 bonus to attack and damage rolls unless they already have an equal or better bonus.\n\n**Deft Strike.** When you hit a target with a kensei weapon, you can spend 1 ki point to cause the weapon to deal extra damage to the target equal to your Martial Arts die. You can use this feature only once on each of your turns."
         },
         {
-          "level": 11,
+          "level": 10,
           "name": "Sharpen the Blade",
-          "description": "At 11th level, you gain the ability to augment your weapons further with your ki. As a bonus action, you can expend up to 3 ki points to grant one kensei weapon you touch a bonus to attack and damage rolls when you attack with it. The bonus equals the number of ki points you spent. This bonus lasts for 1 minute or until you use this feature again. This feature has no effect on a magic weapon that already has a bonus to attack and damage rolls."
+          "description": "At 10th level, you gain the ability to augment your weapons further with your ki. As a bonus action, you can expend up to 3 ki points to grant one kensei weapon you touch a bonus to attack and damage rolls when you attack with it. The bonus equals the number of ki points you spent. This bonus lasts for 1 minute or until you use this feature again. This feature has no effect on a magic weapon that already has a bonus to attack and damage rolls."
         },
         {
-          "level": 17,
+          "level": 14,
           "name": "Unerring Accuracy",
-          "description": "At 17th level, your mastery of weapons grants you extraordinary accuracy. If you miss with an attack roll using a monk weapon on your turn, you can reroll it. You can use this feature only once on each of your turns."
+          "description": "At 14th level, your mastery of weapons grants you extraordinary accuracy. If you miss with an attack roll using a monk weapon on your turn, you can reroll it. You can use this feature only once on each of your turns."
         }
       ]
     },
@@ -370,7 +370,7 @@
           "name": "Hand of Ultimate Mercy",
           "counttype": "fixed",
           "count": 1,
-          "minlevel": 17,
+          "minlevel": 14,
           "recovery": "longrest"
         }
       ],
@@ -396,12 +396,12 @@
           "description": "You can administer even greater cures with a touch, and if you feel its necessary, you can use your knowledge to cause harm.\n\nWhen you use Hand of Healing on a creature, you can also end one disease or one of the following conditions affecting the creature: blinded, deafened, paralyzed, poisoned, or stunned.\n\nWhen you use Hand of Harm on a creature, you can subject the creature to the poisoned condition until the end of your next turn."
         },
         {
-          "level": 11,
+          "level": 10,
           "name": "Flurry of Healing and Harm",
           "description": "You can now mete out a flurry of comfort and hurt. When you use Flurry of Blows, you can now replace each of the unarmed strikes with a use of your Hand of Healing, without spending ki points for the healing.\n\nIn addition, when you make an unarmed strike with Flurry of Blows, you can use Hand of Harm with that strike without spending the ki point for Hand of Harm. You can still use Hand of Harm only once per turn."
         },
         {
-          "level": 17,
+          "level": 14,
           "name": "Hand of Ultimate Mercy",
           "description": "Your mastery of life energy opens the door to the ultimate mercy. As an action, you can touch the corpse of a creature that died within the past 24 hours and expend 5 ki points. The creature then returns to life, regaining a number of hit points equal to 4d10 + your Wisdom modifier. If the creature died while subject to any of the following conditions, it revives with them removed: blinded, deafened, paralyzed, poisoned, and stunned.\n\nOnce you use this feature, you can't use it again until you finish a long rest."
         }
@@ -423,12 +423,12 @@
           "description": "You can summon the visage of  your astral self. As a bonus action, or as part of the bonus action you take to activate Arms of the Astral Self, you can spend 1 ki point to summon this visage for 10 minutes. It vanishes early if you are incapacitated or die.\n\nThe spectral visage covers your face like a helmet or mask. You determine its appearance.\n\nWhile the spectral visage is present, you gain the following benefits.\n\n**Astral Sight.** You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.\n\n**Wisdom of the Spirit.** You have advantage on Wisdom (Insight) and Charisma (Intimidation) checks.\n\n**Word of the Spirit.** When you speak, you can direct your words to a creature of your choice that you can see within 60 feet of you, making it so only that creature can hear you. Alternatively, you can amplify your voice so that all creatures within 600 feet can hear you."
         },
         {
-          "level": 11,
+          "level": 10,
           "name": "Body of the Astral Self",
           "description": "When you have both your astral arms and visage summoned, you can cause the body of your astral self to appear (no action required). This spectral body covers your physical form like a suit of armor, connecting with the arms and visage. You determine its appearance.\n\nWhile the spectral body is present, you gain the following benefits.\n\n**Deflect Energy.** When you take acid, cold, fire, force, lightning, or thunder damage, you can use your reaction to deflect it. When you do so, the damage you take is reduced by 1d10 + your Wisdom modifier (minimum reduction of 1).\n\n**Empowered Arms.** Once on each of your turns when you hit a target with the Arms of the Astral Self, you can deal extra damage to the target equal to your Martial Arts die."
         },
         {
-          "level": 17,
+          "level": 14,
           "name": "Awakened Astral Self",
           "description": "Your connection to your astral self is complete, allowing you to unleash its full potential. As a bonus action, you can spend 5 ki points to summon the arms, visage, and body of your astral self and awaken it for 10 minutes. This awakening ends early if you are incapacitated or die.\n\nWhile your astral self is awakened, you gain the following benefits.\n\n**Armor of the Spirit.** You gain a +2 bonus to Armor Class.\n\n**Astral Barrage.** Whenever you use the Extra Attack feature to attack twice, you can instead attack three times if all the attacks are made with your astral arms."
         }

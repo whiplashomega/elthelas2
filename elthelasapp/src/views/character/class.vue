@@ -59,7 +59,7 @@
             <li>Heavy Armor: Scale Full Armor, Chain Full Armor</li>
           </ul>
         </li>
-        <li>Select up to 3 weapons with which you are proficient. Again, <router-link to="/ref/equipment">see the Equipment page for options.</router-link> If one of your weapons requires ammunition, take 50 units of basic, nonmagical ammunition for the weapon (such as bullets for a sling, darts for a blowgun, arrows for a longbow, or bolts for a light crossbow). If you are proficient with shields, you may select a wooden or steel shield in place of one weapon.</li>
+        <li>Select up to 3 weapons with which you are proficient. Again, <router-link to="/ref/equipment">see the Equipment page for options.</router-link> If one of your weapons requires ammunition, take 50 units of basic, nonmagical ammunition for the weapon (such as bullets for a sling, darts for a blowgun, arrows for a longbow, or bolts for a light crossbow). If you are proficient with shields, you may select a wooden or steel shield in place of one weapon. The weapons you select must not have the Rare, Artillery, or Heavy Artillery properties.</li>
         <li>If you are proficient with one or more sets of tools, add one set of tools to your inventory that you are proficient with.</li>
         <li>If you are proficient with one or more instruments or gaming sets, add one instrument or gaming set you are proficient with.</li>
         <li>If your class can cast spells, one spellcasting focus appropriate for your class.</li>

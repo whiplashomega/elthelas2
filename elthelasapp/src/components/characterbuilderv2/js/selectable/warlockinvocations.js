@@ -185,11 +185,6 @@ export default [
     "description": "You can cast jump at will, without expending a spell slot."
   },
   {
-    "name": "Protection of the Talisman",
-    "prereq": "7th level warlock, Pact of the Talisman feature",
-    "description": "When the wearer of your talisman fails a saving throw, they can add a d4 to the roll, potentially turning the save into a success. This benefit can be used a number of times equal to your proficiency bonus, and all expended uses are restored when you finish a long rest."
-  },
-  {
     "name": "Rebuke of the Talisman",
     "prereq": "Pact of the Talisman feature",
     "description": "When the wearer of your talisman is hit by an attacker you can see within 30 feet of you, you can use your reaction to deal psychic damage to the attacker equal to your proficiency bonus and push it up to 10 feet away from the talisman's wearer."

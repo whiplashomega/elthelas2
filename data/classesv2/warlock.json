@@ -120,11 +120,6 @@
       "name": "Eldritch Invocations",
       "description": "In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability. A level prerequisite refers to your level in this class.\n\nAt 2nd level, you gain two eldritch invocations of your choice. Your invocation options are detailed at the end of the class description. When you gain certain warlock levels, you gain additional invocations of your choice, as shown in the Invocations Known column of the Warlock table.\n\nAdditionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level."
     },
-        {
-          "level": 2,
-          "name": "Combat Caster",
-          "description": "You can use a 1-handed weapon with which you are proficient as a spellcasting focus."
-        },
     {
       "level": 3,
       "name": "Pact Boon",
@@ -147,17 +142,17 @@
     },
     {
       "level": 13,
-      "name": "Mystic Arcanum (7th level)",
+      "name": "Mystic Arcanum (7th level spell)",
       "description": "At 11th level, your patron bestows upon you a magical secret called an arcanum. Choose one 6th-level spell from the warlock spell list as this arcanum.\n\nYou can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.\n\nAt higher levels, you gain more warlock spells of your choice that can be cast in this way: one 7th-level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Mystic Arcanum when you finish a long rest."
     },
     {
       "level": 15,
-      "name": "Mystic Arcanum (8th level)",
+      "name": "Mystic Arcanum (8th level spell)",
       "description": "At 11th level, your patron bestows upon you a magical secret called an arcanum. Choose one 6th-level spell from the warlock spell list as this arcanum.\n\nYou can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.\n\nAt higher levels, you gain more warlock spells of your choice that can be cast in this way: one 7th-level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Mystic Arcanum when you finish a long rest."
     },
     {
       "level": 17,
-      "name": "Mystic Arcanum (9th level)",
+      "name": "Mystic Arcanum (9th level spell)",
       "description": "At 11th level, your patron bestows upon you a magical secret called an arcanum. Choose one 6th-level spell from the warlock spell list as this arcanum.\n\nYou can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.\n\nAt higher levels, you gain more warlock spells of your choice that can be cast in this way: one 7th-level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Mystic Arcanum when you finish a long rest."
     },
     {
@@ -436,6 +431,11 @@
           "level": 2,
           "name": "Hexblade's Curse",
           "description": "Starting at 2nd level, you gain the ability to place a baleful curse on someone. As a bonus action, choose one creature you can see within 30 feet of you. The target is cursed for 1 minute. The curse ends early if the target dies, you die, or you are incapacitated. Until the curse ends, you gain the following benefits:\n\n* You gain a bonus to damage rolls against the cursed target. The bonus equals your proficiency bonus.\n* Any attack roll you make against the cursed target is a critical hit on a roll of 19 or 20 on the d20.\n* If the cursed target dies, you regain hit points equal to your warlock level + your Charisma modifier (minimum of 1 hit point).\n\nYou can use this feature twice, after which you can't use this feature again until you finish a short or long rest. However, only one creature can be affected by your curse at a time."
+        },
+        {
+          "level": 2,
+          "name": "Combat Caster",
+          "description": "You can use a 1-handed weapon with which you are proficient as a spellcasting focus."
         },
         {
           "level": 6,

@@ -64,8 +64,8 @@
       "description": "At 2nd level your studies begin to focus on a particular specialty. Choose one of the Factotum Philosophies below, you gain different abilities depending on which philosophy you choose. You gain additional philosophy features at 7th, 10th and 15th level."
     },
     {
-      "level": 7,
-      "name": "Factotum Philosophy Feature (7th)",
+      "level": 6,
+      "name": "Factotum Philosophy Feature (6th)",
       "description": "At 3rd level your studies begin to focus on a particular specialty. Choose one of the Factotum Philosophies below, you gain different abilities depending on which philosophy you choose. You gain additional philosophy features at 7th, 10th and 15th level."
     },
     {
@@ -74,8 +74,8 @@
       "description": "At 3rd level your studies begin to focus on a particular specialty. Choose one of the Factotum Philosophies below, you gain different abilities depending on which philosophy you choose. You gain additional philosophy features at 7th, 10th and 15th level."
     },
     {
-      "level": 15,
-      "name": "Factotum Philosophy Feature (15th)",
+      "level": 14,
+      "name": "Factotum Philosophy Feature (14th)",
       "description": "At 3rd level your studies begin to focus on a particular specialty. Choose one of the Factotum Philosophies below, you gain different abilities depending on which philosophy you choose. You gain additional philosophy features at 7th, 10th and 15th level."
     },
     {
@@ -104,7 +104,7 @@
       "description": "At 9th level, On your turn you can spend 1 epiphany point to use the dodge or disengage actions as bonus actions on your turn."
     },
     {
-      "level": 14,
+      "level": 15,
       "name": "Inspired Aid",
       "description": "At 14th level you can spend 1 epiphany point to use the help action as a bonus action on your turn."
     },
@@ -131,9 +131,9 @@
           "description": "At 2nd level the Brains over Brawn Factotum can pick one of the following fighting styles. If you already have a particular fighting style granted by another class you cannot pick that fighting style again.\n\n* Archery - You gain a +2 bonus to attack rolls you make with ranged weapons.\n* Dueling - When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.\n* Two-Weapon Fighting - When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.\n* Great Weapon Fighting - When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit."
         },
         {
-          "level": 7,
+          "level": 6,
           "name": "Improved Inspired Damage",
-          "description": "At 7th level, when you use the Inspired Damage feature you add an additional 1d6 damage to the attack."
+          "description": "When you use the Inspired Damage feature you add an additional 1d6 damage to the attack."
         },
         {
           "level": 10,
@@ -141,7 +141,7 @@
           "description": "You are adept at analyzing your allies and enemies fighting styles and the way they might mesh. As a reaction you can spend an epiphany point to grant advantage on an attack roll to one creature who can hear you within 30 ft against an enemy you can see."
         },
         {
-          "level": 15,
+          "level": 14,
           "name": "Improved Inspired Attack",
           "description": "At 15th level, when you use an epiphany point to get advantage on your attack roll, you can make an additional attack as a bonus action, gaining advantage on both attacks."
         }
@@ -163,7 +163,7 @@
           "description": "At 2nd level the arcane dilettante gains proficiency in the arcana skill. If they were already proficient in the arcana skill they gain expertise in the arcana skill (can add their proficiency bonus twice)."
         },
         {
-          "level": 7,
+          "level": 6,
           "name": "Spell Studies",
           "description": "At 7th level the Arcane Dilettante can immediately add 6 spells to their spellbook of any level they can cast. Additionally, every factotum level after this one they can add 1 additional spell to their spellbook of any level they can cast."
         },
@@ -173,7 +173,7 @@
           "description": "Starting at 10th level, whenever The Factotum finishes a short rest they can trade 1 spell from their prepared list for a different spell in their spellbook."
         },
         {
-          "level": 15,
+          "level": 14,
           "name": "Sage",
           "description": "Starting at 15th level the factotum uses her level, rather than half her level to determine the maximum number of spells she can prepare."
         }
@@ -190,7 +190,7 @@
           "description": "Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn’t already include your proficiency bonus."
         },
         {
-          "level": 7,
+          "level": 6,
           "name": "Improved Inspired Skills",
           "description": "Starting at 7th level, when the Skill Monkey uses the inspire skill ability they add their proficiency bonus to the check, even if they are already proficient in that skill."
         },
@@ -200,9 +200,9 @@
           "description": "At 10th level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies."
         },
         {
-          "level": 15,
+          "level": 14,
           "name": "Reliable Talent",
-          "description": "By 15th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10."
+          "description": "You have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10."
         }
       ]
     }

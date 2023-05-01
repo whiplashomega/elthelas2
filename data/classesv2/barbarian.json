@@ -54,7 +54,22 @@
     {
       "level": 2,
       "name": "Primal Path",
-      "description": "At 2nd level, you choose a path that shapes the nature of your rage. Choose the Path of the Berserker or the Path of the Totem Warrior, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels."
+      "description": "At 2nd level, you choose a path that shapes the nature of your rage. Choose the Path of the Berserker or the Path of the Totem Warrior, both detailed at the end of the class description. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th levels."
+    },
+    {
+      "level": 6,
+      "name": "Primal Path Feature",
+      "description": "You gain a primal path feature."
+    },
+    {
+      "level": 10,
+      "name": "Primal Path Feature",
+      "description": "You gain a primal path feature."
+    },
+    {
+      "level": 14,
+      "name": "Primal Path Feature",
+      "description": "You gain a primal path feature."
     },
     {
       "level": 3,
