@@ -101,10 +101,10 @@ export default {
     if (a.level > 13) {
       num += 2;
     }
-    if (a.level > 17) {
+    if (a.level > 20) {
       num += 2;
     }
-    if (a.level > 5 && a.selsubclass.name === "College of Lore") {
+    if (a.level > 6 && a.selsubclass.name === "College of Lore") {
       num += 2;
     }
     return num;
