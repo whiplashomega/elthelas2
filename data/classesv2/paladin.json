@@ -148,7 +148,7 @@
           "level": 20,
           "name": "Truesight",
           "description": "You have Truesight within a range of 60 feet."
-        },
+        }
   ],
   "subclass": [
     {
