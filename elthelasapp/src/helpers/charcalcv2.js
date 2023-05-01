@@ -291,8 +291,8 @@ export default {
         num += 2 + Math.floor(Math.min(a.level - 1, 8) / 2) * 2;
       }
       if (a.thisclass.name === "Ranger" && a.level >= 2) {
-        num = Math.ceil(a.level / 2) + 2;
-        num += (Math.floor((a.level - 1) / 4) + 1) * 2;
+        num = Math.ceil(a.level / 2) + 2; // at level 2 = 3
+        num += (Math.floor((a.level - 1) / 4) + 1);
       }
       if (a.thisclass.name === "Paladin" && a.level > 2) {
         num += (Math.floor((a.level - 1) / 4) + 1) * 2;
