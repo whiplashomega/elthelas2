@@ -96,7 +96,7 @@
       "description": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class."
     },
     {
-      "level": 6,
+      "level": 7,
       "name": "Impose Self",
       "description": "As a reaction when you or an ally within 1m of you takes damage, you can spend one of your hit dice to reduce the damage by the amount that you roll on that hit die plus your constitution modifier. This modification is applied after any resistances or other modifications to the damage roll."
     },
