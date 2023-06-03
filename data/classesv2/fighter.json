@@ -48,7 +48,12 @@
     {
       "level": 3,
       "name": "Action Surge",
-      "description": "Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.\n\nOnce you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn."
+      "description": "Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.\n\nOnce you use this feature, you must finish a short or long rest before you can use it again. Starting at 15th level, you can use it twice before a rest, but only once on the same turn."
+    },
+    {
+      "level": 15,
+      "name": "Action Surge (2nd Use)",
+      "description": "Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.\n\nOnce you use this feature, you must finish a short or long rest before you can use it again. Starting at 15th level, you can use it twice before a rest, but only once on the same turn."
     },
     {
       "level": 6,
@@ -106,24 +111,29 @@
       "description": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class."
     },
     {
-      "level": 20,
+      "level": 17,
       "name": "Extra Attack (4 attacks)",
       "description": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class."
     },
     {
       "level": 9,
       "name": "Indomitable",
-      "description": "Beginning at 9th level, you can reroll a saving throw that you fail and add a bonus to the new roll equal to your proficiency bonus. If you do so, you must use the new roll, and you can’t use this feature again until you finish a long rest. You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level."
+      "description": "Beginning at 9th level, you can reroll a saving throw that you fail and add a bonus to the new roll equal to your proficiency bonus. If you do so, you must use the new roll, and you can’t use this feature again until you finish a long rest. You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 18th level."
     },
     {
       "level": 13,
       "name": "Indomitable (two uses)",
-      "description": "Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can’t use this feature again until you finish a long rest. You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level."
+      "description": "Beginning at 9th level, you can reroll a saving throw that you fail and add a bonus to the new roll equal to your proficiency bonus. If you do so, you must use the new roll, and you can’t use this feature again until you finish a long rest. You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 18th level."
     },
     {
-      "level": 17,
+      "level": 18,
       "name": "Indomitable (three uses)",
-      "description": "Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can’t use this feature again until you finish a long rest. You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level."
+      "description": "Beginning at 9th level, you can reroll a saving throw that you fail and add a bonus to the new roll equal to your proficiency bonus. If you do so, you must use the new roll, and you can’t use this feature again until you finish a long rest. You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 18th level."
+    },
+    {
+      "level": 20,
+      "name": "Called Critical",
+      "description": "You can declare a called critical before making a weapon attack. If the attack hits it is a critical hit, even if it would not otherwise be a critical hit."
     }
   ],
   "subclass": [
