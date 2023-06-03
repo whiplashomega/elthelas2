@@ -10,7 +10,7 @@ tags: [bard, cleric, level3, evocation]
 
 **Casting Time**: 1 bonus action
 
-**Range**: 60 feet
+**Range**: 18m
 
 **Components**: V
 

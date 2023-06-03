@@ -47,7 +47,7 @@
     {
       "level": 1,
       "name": "Divine Sense",
-      "description": "The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity (the vampire Count Strahd von Zarovich, for instance). Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the hallow spell.\n\nYou can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses."
+      "description": "The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 18m of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity (the vampire Count Strahd von Zarovich, for instance). Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the hallow spell.\n\nYou can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses."
     },
     {
       "level": 1,
@@ -57,7 +57,7 @@
     {
       "level": 2,
       "name": "Fighting Style",
-      "description": "At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.\n\n#### Defense\n\nWhile you are wearing armor, you gain a +1 bonus to AC.\n\n#### Dueling\n\nWhen you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.\n\n#### Great Weapon Fighting\n\nWhen you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are w ielding with two hands, you can reroll the die and must use the new roll. The weapon must have the two-handed or versatile property for you to gain this benefit.\n\n#### Protection\n\nWhen a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.\n\n#### Blessed Warrior\n\nYou learn two cantrips of your choice from the cleric spell list. They count as paladin spells for you, and Charisma is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the cleric spell list.\n\n#### Blind Fighting\n\nYou have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.\n\n#### Interception\n\nWhen a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by 1d10 + your proficiency bonus (to a minimum of 0 damage), You must be wielding a shield or a simple or martial weapon to use this reaction."
+      "description": "At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.\n\n#### Defense\n\nWhile you are wearing armor, you gain a +1 bonus to AC.\n\n#### Dueling\n\nWhen you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.\n\n#### Great Weapon Fighting\n\nWhen you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are w ielding with two hands, you can reroll the die and must use the new roll. The weapon must have the two-handed or versatile property for you to gain this benefit.\n\n#### Protection\n\nWhen a creature you can see attacks a target other than you that is within your reach, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.\n\n#### Blessed Warrior\n\nYou learn two cantrips of your choice from the cleric spell list. They count as paladin spells for you, and Charisma is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the cleric spell list.\n\n#### Blind Fighting\n\nYou have blindsight with a range of 3m. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.\n\n#### Interception\n\nWhen a creature you can see hits a target, other than you, within your reach with an attack, you can use your reaction to reduce the damage the target takes by 1d10 + your proficiency bonus (to a minimum of 0 damage), You must be wielding a shield or a simple or martial weapon to use this reaction."
     },
     {
       "level": 2,
@@ -122,12 +122,12 @@
     {
       "level": 7,
       "name": "Aura of Protection",
-      "description": "Starting at 6th level, whenever you or a friendly creature within 10 feet o f you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus. At 18th level, the range of this aura increases to 30 feet."
+      "description": "Starting at 6th level, whenever you or a friendly creature within 3m o f you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus. At 18th level, the range of this aura increases to 9m."
     },
     {
       "level": 9,
       "name": "Aura of Courage",
-      "description": "Starting at 10th level, you and friendly creatures within 10 feet of you can’t be frightened while you are conscious.\n\nAt 18th level, the range of this aura increases to 30 feet."
+      "description": "Starting at 10th level, you and friendly creatures within 3m of you can’t be frightened while you are conscious.\n\nAt 18th level, the range of this aura increases to 9m."
     },
     {
       "level": 11,
@@ -147,7 +147,7 @@
         {
           "level": 20,
           "name": "Truesight",
-          "description": "You have Truesight within a range of 60 feet."
+          "description": "You have Truesight within a range of 18m."
         }
   ],
   "subclass": [
@@ -177,12 +177,12 @@
         {
           "level": 2,
           "name": "Channel Divinity",
-          "description": "When you take this oath at 2nd level, you gain the following two Channel Divinity options.\n\n**Sacred Weapon.** As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon (with a minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the duration.\n\nYou can end this effect on your turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall unconscious, this effect ends.\n\n**Turn the Unholy.** As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 30 feet o f you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.\n\nA turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action."
+          "description": "When you take this oath at 2nd level, you gain the following two Channel Divinity options.\n\n**Sacred Weapon.** As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon (with a minimum bonus of +1). The weapon also emits bright light in a 6m radius and dim light 6m beyond that. If the weapon is not already magical, it becomes magical for the duration.\n\nYou can end this effect on your turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall unconscious, this effect ends.\n\n**Turn the Unholy.** As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 9m o f you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.\n\nA turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 9m of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action."
         },
         {
           "level": 6,
           "name": "Aura of Devotion",
-          "description": "Starting at 7th level, you and friendly creatures within 10 feet o f you can’t be charmed while you are conscious.\n\nAt 18th level, the range of this aura increases to 30 feet."
+          "description": "Starting at 7th level, you and friendly creatures within 3m o f you can’t be charmed while you are conscious.\n\nAt 18th level, the range of this aura increases to 9m."
         },
         {
           "level": 10,
@@ -192,7 +192,7 @@
         {
           "level": 14,
           "name": "Holy Nimbus",
-          "description": "As an action, you can emanate an aura of sunlight. For 1 minute, bright light shines from you in a 30-foot radius, and dim light shines 30 feet beyond that.\n\nWhenever an enemy creature starts its turn in the bright light, the creature takes 10 radiant damage.\n\nIn addition, for the duration, you have advantage on saving throws against spells cast by fiends or undead.\n\nOnce you use this feature, you can’t use it again until you finish a long rest."
+          "description": "As an action, you can emanate an aura of sunlight. For 1 minute, bright light shines from you in a 9m radius, and dim light shines 9m beyond that.\n\nWhenever an enemy creature starts its turn in the bright light, the creature takes 10 radiant damage.\n\nIn addition, for the duration, you have advantage on saving throws against spells cast by fiends or undead.\n\nOnce you use this feature, you can’t use it again until you finish a long rest."
         }
       ]
     },
@@ -229,12 +229,12 @@
         {
           "level": 2,
           "name": "Channel Divinity",
-          "description": "When you take this oath at 2nd level, you gain the following two Channel Divinity options.\n\n**Nature’s Wrath.** You can use your Channel Divinity to invoke primeval forces to ensnare a foe. As an action, you can cause spectral vines to spring up and reach for a creature within 10 feet of you that you can see. The creature must succeed on a Strength or Dexterity saving throw (its choice) or be restrained. While restrained by the vines, the creature repeats the saving throw at the end of each of its turns. On a success, it frees itself and the vines vanish.\n\n**Turn the Faithless.** You can use your Channel Divinity to utter ancient words that are painful for fey and fiends to hear. As an action, you present your holy symbol, and each fey or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.\n\nA turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet o f you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.\n\nIf the creature’s true form is concealed by an illusion, shapeshifting, or other effect, that form is revealed while it is turned."
+          "description": "When you take this oath at 2nd level, you gain the following two Channel Divinity options.\n\n**Nature’s Wrath.** You can use your Channel Divinity to invoke primeval forces to ensnare a foe. As an action, you can cause spectral vines to spring up and reach for a creature within 3m of you that you can see. The creature must succeed on a Strength or Dexterity saving throw (its choice) or be restrained. While restrained by the vines, the creature repeats the saving throw at the end of each of its turns. On a success, it frees itself and the vines vanish.\n\n**Turn the Faithless.** You can use your Channel Divinity to utter ancient words that are painful for fey and fiends to hear. As an action, you present your holy symbol, and each fey or fiend within 9m of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.\n\nA turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 9m of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.\n\nIf the creature’s true form is concealed by an illusion, shapeshifting, or other effect, that form is revealed while it is turned."
         },
         {
           "level": 6,
           "name": "Aura of Warding",
-          "description": "Beginning at 7th level, ancient magic lies so heavily upon you that it forms an eldritch ward. You and friendly creatures within 10 feet of you have resistance to damage from spells.\n\nAt 18th level, the range of this aura increases to 30 feet."
+          "description": "Beginning at 7th level, ancient magic lies so heavily upon you that it forms an eldritch ward. You and friendly creatures within 3m of you have resistance to damage from spells.\n\nAt 18th level, the range of this aura increases to 9m."
         },
         {
           "level": 10,
@@ -244,7 +244,7 @@
         {
           "level": 14,
           "name": "Elder Champion",
-          "description": "At 20th level, you can assume the form of an ancient force of nature, taking on an appearance you choose. For example, your skin might turn green or take on a bark-like texture, your hair might become leafy or mosslike, or you might sprout antlers or a lion-like mane.\n\nUsing your action, you undergo a transformation. For 1 minute, you gain the following benefits:\n\n* At the start o f each o f your turns, you regain 10 hit points.\n* Whenever you cast a paladin spell that has a casting time of 1 action, you can cast it using a bonus action instead.\n* Enemy creatures within 10 feet of you have disadvantage on saving throws against your paladin spells and Channel Divinity options.\n\nOnce you use this feature, you can’t use it again until you finish a long rest."
+          "description": "At 20th level, you can assume the form of an ancient force of nature, taking on an appearance you choose. For example, your skin might turn green or take on a bark-like texture, your hair might become leafy or mosslike, or you might sprout antlers or a lion-like mane.\n\nUsing your action, you undergo a transformation. For 1 minute, you gain the following benefits:\n\n* At the start o f each o f your turns, you regain 10 hit points.\n* Whenever you cast a paladin spell that has a casting time of 1 action, you can cast it using a bonus action instead.\n* Enemy creatures within 3m of you have disadvantage on saving throws against your paladin spells and Channel Divinity options.\n\nOnce you use this feature, you can’t use it again until you finish a long rest."
         }
       ]
     },
@@ -274,7 +274,7 @@
         {
           "level": 2,
           "name": "Channel Divinity",
-          "description": "When you take this oath at 2nd level, you gain the following two Channel Divinity options.\n\n**Abjure Enemy.** As an action, you present your holy symbol and speak a prayer of denunciation, using your Channel Divinity. Choose one creature within 60 feet of you that you can see. That creature must make a Wisdom saving throw, unless it is immune to being frightened. Fiends and undead have disadvantage on this saving throw.\n\nOn a failed save, the creature is frightened for 1 minute or until it takes any damage. While frightened, the creature’s speed is 0, and it can’t benefit from any bonus to its speed.\n\nOn a successful save, the creature’s speed is halved for 1 minute or until the creature takes any damage.\n\n**Vow of Enmity.** As a bonus action, you can utter a vow of enmity against a creature you can see within 10 feet of you, using your Channel Divinity. You gain advantage on attack rolls against the creature for 1 minute or until it drops to 0 hit points or falls unconscious."
+          "description": "When you take this oath at 2nd level, you gain the following two Channel Divinity options.\n\n**Abjure Enemy.** As an action, you present your holy symbol and speak a prayer of denunciation, using your Channel Divinity. Choose one creature within 18m of you that you can see. That creature must make a Wisdom saving throw, unless it is immune to being frightened. Fiends and undead have disadvantage on this saving throw.\n\nOn a failed save, the creature is frightened for 1 minute or until it takes any damage. While frightened, the creature’s speed is 0, and it can’t benefit from any bonus to its speed.\n\nOn a successful save, the creature’s speed is halved for 1 minute or until the creature takes any damage.\n\n**Vow of Enmity.** As a bonus action, you can utter a vow of enmity against a creature you can see within 3m of you, using your Channel Divinity. You gain advantage on attack rolls against the creature for 1 minute or until it drops to 0 hit points or falls unconscious."
         },
         {
           "level": 6,
@@ -289,7 +289,7 @@
         {
           "level": 14,
           "name": "Avenging Angel",
-          "description": "You can assume the form of an angelic avenger. Using your action, you undergo a transformation. For 1 hour, you gain the following benefits:\n\n* Wings sprout from your back and grant you a flying speed of 60 feet.\n\n* You emanate an aura of menace in a 30-foot radius. The first time any enemy creature enters the aura or starts its turn there during a battle, the creature must succeed on a Wisdom saving throw or become frightened of you for 1 minute or until it takes any damage. Attack rolls against the frightened creature have advantage.\n\nOnce you use this feature, you can’t use it again until you finish a long rest."
+          "description": "You can assume the form of an angelic avenger. Using your action, you undergo a transformation. For 1 hour, you gain the following benefits:\n\n* Wings sprout from your back and grant you a flying speed of 18m.\n\n* You emanate an aura of menace in a 9m radius. The first time any enemy creature enters the aura or starts its turn there during a battle, the creature must succeed on a Wisdom saving throw or become frightened of you for 1 minute or until it takes any damage. Attack rolls against the frightened creature have advantage.\n\nOnce you use this feature, you can’t use it again until you finish a long rest."
         }
       ]
     },
@@ -319,12 +319,12 @@
         {
           "level": 2,
           "name": "Channel Divinity",
-          "description": "When you take this oath at 3rd level, you gain the following Channel Divinity options.\n\n**Champion Challenge.** You issue a challenge that compels other creatures to do battle with you. Each creature of your choice that you can see within 30 feet of you must make a Wisdom saving throw. On a failed save, a creature can't willingly move more than 30 feet away from you. This effect ends on the creature if you are incapacitated or die or if the creature is moved more than 30 feet away from you.\n\n**Turn the Tide.** As a bonus action, you can bolster injured creatures with your Channel Divinity. Each creature of your choice that can hear you within 30 feet of you regains hit points equal to ld6 +your Charisma modifier (minimum of 1) if it has no more than half of its hit points."
+          "description": "When you take this oath at 3rd level, you gain the following Channel Divinity options.\n\n**Champion Challenge.** You issue a challenge that compels other creatures to do battle with you. Each creature of your choice that you can see within 9m of you must make a Wisdom saving throw. On a failed save, a creature can't willingly move more than 9m away from you. This effect ends on the creature if you are incapacitated or die or if the creature is moved more than 9m away from you.\n\n**Turn the Tide.** As a bonus action, you can bolster injured creatures with your Channel Divinity. Each creature of your choice that can hear you within 9m of you regains hit points equal to ld6 +your Charisma modifier (minimum of 1) if it has no more than half of its hit points."
         },
         {
           "level": 6,
           "name": "Divine Allegiance",
-          "description": "Starting at 7th level, when a creature within 5 feet of you takes damage, you can use your reaction to magically substitute your own health for that of the target creature, causing that creature not to take the damage. Instead, you take the damage. This damage to you can't be reduced or prevented in any way."
+          "description": "Starting at 7th level, when a creature within 1m of you takes damage, you can use your reaction to magically substitute your own health for that of the target creature, causing that creature not to take the damage. Instead, you take the damage. This damage to you can't be reduced or prevented in any way."
         },
         {
           "level": 10,
@@ -334,7 +334,7 @@
         {
           "level": 14,
           "name": "Exalted Champion",
-          "description": "Your presence on the field of battle is an inspiration to those dedicated to your cause. You can use your action to gain the following benefits for 1 hour:\n\n*You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.\n* Your allies have advantage on death saving throws while within 30 feet of you.\n*You have advantage on Wisdom saving throws, as do your allies within 30 feet of you.\n\nThis effect ends early if you are incapacitated or die. Once you use this feature, you can't use it again until you finish a long rest."
+          "description": "Your presence on the field of battle is an inspiration to those dedicated to your cause. You can use your action to gain the following benefits for 1 hour:\n\n*You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.\n* Your allies have advantage on death saving throws while within 9m of you.\n*You have advantage on Wisdom saving throws, as do your allies within 9m of you.\n\nThis effect ends early if you are incapacitated or die. Once you use this feature, you can't use it again until you finish a long rest."
         }
       ]
     },
@@ -364,12 +364,12 @@
         {
           "level": 2,
           "name": "Channel Divinity",
-          "description": "When you take this oath at 2nd level, you gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.\n\n**Conquering Presence.** You can use your Channel Divinity to exude a terrifying presence. As an action, you force each creature of your choice that you can see within 30 feet of you to make a Wisdom saving throw. On a failed save, a creature becomes frightened of you for 1 minute. The frightened creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.\n\n**Guided Strike.** You can use your Channel Divinity to strike with supernatural accuracy. When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll. You make this choice after you see the roll, but before the DM says whether the attack hits or misses."
+          "description": "When you take this oath at 2nd level, you gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.\n\n**Conquering Presence.** You can use your Channel Divinity to exude a terrifying presence. As an action, you force each creature of your choice that you can see within 9m of you to make a Wisdom saving throw. On a failed save, a creature becomes frightened of you for 1 minute. The frightened creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.\n\n**Guided Strike.** You can use your Channel Divinity to strike with supernatural accuracy. When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll. You make this choice after you see the roll, but before the DM says whether the attack hits or misses."
         },
         {
           "level": 6,
           "name": "Aura of Conquest",
-          "description": "You constantly emanate a menacing aura while you’re not incapacitated. The aura extends 10 feet from you in every direction, but not through total cover.\n\nIf a creature is frightened of you, its speed is reduced to 0 while in the aura, and that creature takes psychic damage equal to half your paladin level if it starts its turn there.\n\nAt 18th level, the range of this aura increases to 30 feet."
+          "description": "You constantly emanate a menacing aura while you’re not incapacitated. The aura extends 3m from you in every direction, but not through total cover.\n\nIf a creature is frightened of you, its speed is reduced to 0 while in the aura, and that creature takes psychic damage equal to half your paladin level if it starts its turn there.\n\nAt 18th level, the range of this aura increases to 9m."
         },
         {
           "level": 10,
@@ -409,12 +409,12 @@
         {
           "level": 2,
           "name": "Channel Divinity",
-          "description": "When you take this oath at 2nd level, you gain the following two Channel Divinity options.\n\n**Emissary of Peace.** You can use your Channel Divinity to augment your presence with divine power. As a bonus action, you grant yourself a +5 bonus to Charisma (Persuasion) checks for the next 10 minutes.\n\n**Rebuke the Violent.** You can use your Channel Divinity to rebuke those who use violence. Immediately after an attacker within 30 feet of you deals damage with an attack against a creature other than you, you can use your reaction to force the attacker to make a Wisdom saving throw. On a failed save, the attacker takes radiant damage equal to the damage it just dealt. On a successful save, it takes half as much damage."
+          "description": "When you take this oath at 2nd level, you gain the following two Channel Divinity options.\n\n**Emissary of Peace.** You can use your Channel Divinity to augment your presence with divine power. As a bonus action, you grant yourself a +5 bonus to Charisma (Persuasion) checks for the next 10 minutes.\n\n**Rebuke the Violent.** You can use your Channel Divinity to rebuke those who use violence. Immediately after an attacker within 9m of you deals damage with an attack against a creature other than you, you can use your reaction to force the attacker to make a Wisdom saving throw. On a failed save, the attacker takes radiant damage equal to the damage it just dealt. On a successful save, it takes half as much damage."
         },
         {
           "level": 6,
           "name": "Aura of the Guardian",
-          "description": "You can shield others from harm at the cost of your own health. When a creature within 10 feet of you takes damage, you can use your reaction to magically take that damage, instead of that creature taking it. This feature doesn't transfer any other effects that might accompany the damage, and this damage can't be reduced in any way.\n\nAt 18th level, the range of this aura increases to 30 feet."
+          "description": "You can shield others from harm at the cost of your own health. When a creature within 3m of you takes damage, you can use your reaction to magically take that damage, instead of that creature taking it. This feature doesn't transfer any other effects that might accompany the damage, and this damage can't be reduced in any way.\n\nAt 18th level, the range of this aura increases to 9m."
         },
         {
           "level": 10,
@@ -461,17 +461,17 @@
         {
           "level": 2,
           "name": "Channel Divinity",
-          "description": "You gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.\n\n**Peerless Athlete.** As a bonus action, you can use your Channel Divinity to augment your athleticism. For the next 10 minutes, you have advantage on Strength (Athletics) and Dexterity (Acrobatics) checks; you can carry, push, drag, and lift twice as much weight as normal; and the distance of your long and high jumps increases by 10 feet (this extra distance costs movement as normal).\n\n**Inspiring Smite.** Immediately after you deal damage to a creature with your Divine Site feature, you can use your Channel Divinity as a bonus action and distribute temporary hit points to creature of your choice within 30 feet of you, which can include you. The total number of temporary hit points equals 2d8 + your level in this class, divided among the chosen creatures however you like."
+          "description": "You gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.\n\n**Peerless Athlete.** As a bonus action, you can use your Channel Divinity to augment your athleticism. For the next 10 minutes, you have advantage on Strength (Athletics) and Dexterity (Acrobatics) checks; you can carry, push, drag, and lift twice as much weight as normal; and the distance of your long and high jumps increases by 3m (this extra distance costs movement as normal).\n\n**Inspiring Smite.** Immediately after you deal damage to a creature with your Divine Site feature, you can use your Channel Divinity as a bonus action and distribute temporary hit points to creature of your choice within 9m of you, which can include you. The total number of temporary hit points equals 2d8 + your level in this class, divided among the chosen creatures however you like."
         },
         {
           "level": 6,
           "name": "Aura of Alacrity",
-          "description": "You emanate an aura that fills you and your companions with supernatural speed, allowing you to race across a battlefield in formation. Your walking speed increases by 10 feet. In addition, if you aren't incapacitated, the walking speed of any ally who starts their turn within 5 feet of you increases by 10 feet until the end of that turn.\n\nWhen you reach 18th level in this class, the range of the aura increases to 10 feet."
+          "description": "You emanate an aura that fills you and your companions with supernatural speed, allowing you to race across a battlefield in formation. Your walking speed increases by 3m. In addition, if you aren't incapacitated, the walking speed of any ally who starts their turn within 2m of you increases by 3m until the end of that turn.\n\nWhen you reach 18th level in this class, the range of the aura increases to 4m."
         },
         {
           "level": 10,
           "name": "Glorious Defense",
-          "description": "You can turn defense into a sudden strike. When you or another creature you can see within 10 feet of you is hit by an attack roll, you can use your reaction to grant a bonus to the target's AC against that attack, potentially causing it to miss. The bonus equals your Charisma modifier (minimum of +1). If the attack misses, you can make one weapon attack against the attacker as part of this reaction, provided the attacker is within your weapon's range.\n\nYou can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest."
+          "description": "You can turn defense into a sudden strike. When you or another creature you can see within 3m of you is hit by an attack roll, you can use your reaction to grant a bonus to the target's AC against that attack, potentially causing it to miss. The bonus equals your Charisma modifier (minimum of +1). If the attack misses, you can make one weapon attack against the attacker as part of this reaction, provided the attacker is within your weapon's range.\n\nYou can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest."
         },
         {
           "level": 14,
@@ -506,22 +506,22 @@
         {
           "level": 2,
           "name": "Channel Divinity",
-          "description": "You gain the following Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.\n\n**Watcher's Will.** You can use your Channel Divinity to invest your presence with the warding power of your faith. As an action, you can choose a number of creatures you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of 1 creature). For 1 minute, you and the chosen creatures have advantage on Intelligence, Wisdom, and Charisma saving throws.\n\n**Abjure the Extraplanar.** You can use your Channel Divinity to castigate unworldly beings. As an action, you present your holy symbol and each aberration, celestial, elemental, fey, or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.\n\nA turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly end its move in a space within 30 feet of you. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature cna take the Dodge action."
+          "description": "You gain the following Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.\n\n**Watcher's Will.** You can use your Channel Divinity to invest your presence with the warding power of your faith. As an action, you can choose a number of creatures you can see within 9m of you, up to a number equal to your Charisma modifier (minimum of 1 creature). For 1 minute, you and the chosen creatures have advantage on Intelligence, Wisdom, and Charisma saving throws.\n\n**Abjure the Extraplanar.** You can use your Channel Divinity to castigate unworldly beings. As an action, you present your holy symbol and each aberration, celestial, elemental, fey, or fiend within 9m of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.\n\nA turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly end its move in a space within 9m of you. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature cna take the Dodge action."
         },
         {
           "level": 6,
           "name": "Aura of the Sentinel",
-          "description": "You emit an aura of alertness while you aren't incapacitated. When you and any creatures of your choice within 10 feet of you roll initiative, you all gain a bonus to initiative equal to your proficiency bonus.\n\nAt 18th level, the range of this aura increases to 30 feet."
+          "description": "You emit an aura of alertness while you aren't incapacitated. When you and any creatures of your choice within 3m of you roll initiative, you all gain a bonus to initiative equal to your proficiency bonus.\n\nAt 18th level, the range of this aura increases to 9m."
         },
         {
           "level": 10,
           "name": "Vigilant Rebuke",
-          "description": "You've learned how to chastise anyone who dares wield beguilements against you and your wards. Whenever you or a creature you can see within 30 feet of you succeeds on an Intelligence, Wisdom, or Charisma saving throw, you can use your reaction to deal 2d8 + your Charisma modifier force damage to the creature that forced the saving throw."
+          "description": "You've learned how to chastise anyone who dares wield beguilements against you and your wards. Whenever you or a creature you can see within 9m of you succeeds on an Intelligence, Wisdom, or Charisma saving throw, you can use your reaction to deal 2d8 + your Charisma modifier force damage to the creature that forced the saving throw."
         },
         {
           "level": 14,
           "name": "Mortal Bulwark",
-          "description": "You manifest a spark of divine power in defense of the mortal realms. As a bonus action, you gain the following benefits for 1 minute:\n\n* You gain truesight with a range of 120 feet.\n*You have advantage on attack rolls against aberrations, celestials, elementals, fey, and fiends.\n* When you hit a creature with an attack roll and deal damage to it, you can also force it to make a Charisma saving throw against your spell save DC. On a failed save, the creature is magically banished to its native plane of existence if it's currently not there. On a successful save, the creature can't be banished by this feature for 24 hours.\n\nOnce you use this bonus action, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again."
+          "description": "You manifest a spark of divine power in defense of the mortal realms. As a bonus action, you gain the following benefits for 1 minute:\n\n* You gain truesight with a range of 36m.\n*You have advantage on attack rolls against aberrations, celestials, elementals, fey, and fiends.\n* When you hit a creature with an attack roll and deal damage to it, you can also force it to make a Charisma saving throw against your spell save DC. On a failed save, the creature is magically banished to its native plane of existence if it's currently not there. On a successful save, the creature can't be banished by this feature for 24 hours.\n\nOnce you use this bonus action, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again."
         }
       ]
     }

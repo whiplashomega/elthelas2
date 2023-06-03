@@ -22,7 +22,7 @@ tags: [arcanetrickster, druid, ranger, wizard, artificer, level1, abjuration]
 
 **Damage**: []
 
-As you cast this spell, you use the rope to create a circle with a 5-foot radius on the ground or the floor. When you finish casting, the rope disappears and the circle becomes a magic trap.
+As you cast this spell, you use the rope to create a circle with a 1m radius on the ground or the floor. When you finish casting, the rope disappears and the circle becomes a magic trap.
 
 This trap is nearly invisible, requiring a successful Intelligence (Investigation) check against your spell save DC to be discerned.
 

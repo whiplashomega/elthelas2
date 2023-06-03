@@ -10,7 +10,7 @@ tags: [cleric, level3, conjuration]
 
 **Casting Time**: 1 action
 
-**Range**: Self (15-foot radius)
+**Range**: Self (4m radius)
 
 **Components**: V, S, M (a holy symbol)
 

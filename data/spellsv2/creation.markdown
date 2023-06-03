@@ -10,19 +10,19 @@ tags: [sorcerer, wizard, artificer, level5, illusion]
 
 **Casting Time**: 1 minute
 
-**Range**: 30 feet
+**Range**: 9m
 
 **Components**: V, S, M (a tiny piece of matter of the same type of the item you plan to create)
 
 **Duration**: Special
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: []
 
-You pull wisps of shadow material from the Shadowfell to create a nonliving object of vegetable matter within range: soft goods, rope, wood, or something similar. You can also use this spell to create mineral objects such as stone, crystal, or metal. The object created must be no larger than a 5-foot cube, and the object must be of a form and material that you have seen before.
+You pull wisps of shadow material from the Shadowfell to create a nonliving object of vegetable matter within range: soft goods, rope, wood, or something similar. You can also use this spell to create mineral objects such as stone, crystal, or metal. The object created must be no larger than a 1m cube, and the object must be of a form and material that you have seen before.
 
 The duration depends on the object's material. If the object is composed of multiple materials, use the shortest duration.
 

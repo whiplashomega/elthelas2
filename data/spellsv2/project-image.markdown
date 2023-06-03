@@ -10,7 +10,7 @@ tags:   [bard, wizard, level7, illusion]
 
 **Casting Time**: 1 action
 
-**Range**: 500 miles
+**Range**: 800km
 
 **Components**: V, S, M (a small replica of you made from materials worth at least 5 gp)
 

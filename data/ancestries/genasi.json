@@ -5,7 +5,10 @@
   "description": "",
   "traits": [
     { "name": "Size", "description": "Genasi are as varied as their mortal parents but are generally built like humans, standing anywhere from 5 feet to over 6 feet tall. Your size is Medium." },
-    { "name": "Speed", "description": "Your base walking speed is 30 feet." }
+    {
+      "name": "Darkvision", "description": "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+    },
+    { "name": "Speed", "description": "Your base walking speed is 9m." }
   ],
   "agepoints": {
     "puberty": 14,
@@ -25,7 +28,10 @@
       "description": "",
       "traits": [
         { "name": "Unending Breath", "description": "You can hold your breath indefinitely while you’re not incapacitated." },
-        { "name": "Mingle with the Wind", "description": "You can cast the levitate spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell." }
+        {
+          "name": "Lightning Resistance", "description": "You have resistance to lightning damage"
+        },
+        { "name": "Mingle with the Wind", "description": "You know the shocking grasp cantrip. Starting at 3rd level you can cast the feather fall spell with this trait, without requiring a material component. Starting at 5th level, you can also cast the levitate spell once with this trait, requiring no material components. Once you cast feather fall or levitate with this trait you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.\n\nIntelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this ancestry)." }
       ],
       "averageheight": 67,
       "baseheight": 56,
@@ -33,7 +39,7 @@
       "averageweight": 140,
       "baseweight": 100,
       "weightroll": "1d6",
-      "speed": [30, 0, 0, 0, 0]
+      "speed": [9, 0, 0, 0, 0]
     },
     {
       "id": "earthgenasi",
@@ -43,7 +49,7 @@
       "description": "",
       "traits": [
         { "name": "Earth Walk", "description": "You can move across difficult terrain made of earth or stone without expending extra movement." },
-        { "name": "Merge with Stone", "description": "You can cast the pass without trace spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell." }
+        { "name": "Merge with Stone", "description": "You know the blade ward cantrip.\n\n Starting at 5th level, you can cast the pass without trace spell once with this trait, requiring no material components. Once you cast the spell with this trait you can't cast the spell with it again until you finish a long rest. You can also cast it using any spell slots you have of the appropriate level.\n\nIntelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this ancestry)." }
       ],
       "averageheight": 67,
       "baseheight": 56,
@@ -51,7 +57,7 @@
       "averageweight": 195,
       "baseweight": 120,
       "weightroll": "2d6",
-      "speed": [30, 0, 0, 0, 0]
+      "speed": [9, 0, 0, 0, 0]
     },
     {
       "id": "firegenasi",
@@ -60,9 +66,8 @@
       "image": "https://elthelas-images.herokuapp.com/races/firegenasi.jpg",
       "description": "",
       "traits": [
-        { "name": "Darkvision", "description": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. Your ties to the Elemental Plane of Fire make your darkvision unusual: everything you see in darkness is in a shade of red." },
         { "name": "Fire Resistance", "description": "You have resistance to fire damage." },
-        { "name": "Reach to the Blaze", "description": "You know the produce flame cantrip. Once you reach 3rd level, you can cast the burning hands spell once with this trait as a 1st-level spell, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells." }
+        { "name": "Reach to the Blaze", "description": "You know the produce flame cantrip. Starting at 3rd level, you can cast the burning hands spell with this trait. Starting at 5th level, you can also cast the flame blade spell with this trait, without requiring a material component. Once you cast burning hands or flame blade with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.\n\nIntelligence, Wisdom, or Charisma is your spellcasting ability modifier for these spells when you cast them with this trait (choose when you select this ancestry)." }
       ],
       "averageheight": 67,
       "baseheight": 58,
@@ -70,7 +75,7 @@
       "averageweight": 165,
       "baseweight": 120,
       "weightroll": "2d4",
-      "speed": [30, 0, 0, 0, 0]
+      "speed": [9, 0, 0, 0, 0]
     },
     {
       "id": "watergenasi",
@@ -81,8 +86,8 @@
       "traits": [
         { "name": "Acid Resistance", "description": "You have resistance to acid damage." },
         { "name": "Amphibious", "description": "You can breathe air and water." },
-        { "name": "Swim", "description": "You have a swimming speed of 30 feet" },
-        { "name": "Call to the Wave", "description": "You know the shape water cantrip (see chapter 2). When you reach 3rd level, you can cast the create or destroy water spell as a 2nd-level spell once with this trait, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells." }
+        { "name": "Swim", "description": "You have a swimming speed of 9m" },
+        { "name": "Call to the Wave", "description": "You know the acid splash cantrip. Starting at 3rd level, you can cast the create or destroy water spell with this trait. Starting at 5th level, you can also cast the water walk spell with this trait, without requiring a material component. Once you cast create or destroy water or water walk with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.\n\nIntelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this ancestry)." }
       ],
       "averageheight": 67,
       "baseheight": 56,
@@ -90,7 +95,7 @@
       "averageweight": 165,
       "baseweight": 110,
       "weightroll": "2d4",
-      "speed": [30, 0, 0, 30, 0]
+      "speed": [9, 0, 0, 9, 0]
     }
   ]
 }

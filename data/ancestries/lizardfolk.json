@@ -5,7 +5,7 @@
   "description": "\n\nOnly a fool looks at the lizardfolk and sees nothing more than scaly humanoids. Their physical shape notwithstanding, lizardfolk have more in common with iguanas or dragons than they do with humans, dwarves, or elves. Lizardfolk possess an alien and inscrutable mindset, their desires and thoughts driven by a different set of basic principles than those of warm-blooded creatures. Their dismal swamp homes might lie hundreds of miles from the nearest human settlement, but the gap between their way of thinking and that of the smooth-skins is far greater.\n\nDespite their alien outlook, some lizardfolk make an effort to understand and, in their own manner, befriend people of other races. Such lizardfolk make faithful and skilled allies.",
   "traits": [
     { "name": "Size", "description": "Lizardfolk are a little bulkier and taller than humans, and their colorful frills make them appear even larger. Your size is Medium." },
-    { "name": "Speed", "description": "Your base walking speed is 30 feet, and you have a swimming speed of 30 feet." },
+    { "name": "Speed", "description": "Your base walking speed is 9m, and you have a swimming speed of 9m." },
     { "name": "Bite", "description": "Your fanged maw is a natural weapon, which you can use to make unarmed strikes. It has the light and finesse properties, and does 1d6 piercing damage." },
     { "name": "Cunning Artisan", "description": "As part of a short rest, you can harvest bone and hide from a slain beast, construct, dragon, monstrosity, or plant creature of size Small or larger to create one of the following items: a shield, a club, a javelin, or ld4 darts or blowgun needles. To use this trait, you need a blade, such as a dagger, or appropriate artisan's tools, such as leatherworker's tools." },
     { "name": "Hold Breath", "description": "You can hold your breath for up to 15 minutes at a time." },
@@ -38,7 +38,7 @@
       "averageweight": 195,
       "baseweight": 120,
       "weightroll": "2d6",
-      "speed": [30, 0, 0, 30, 0]
+      "speed": [9, 0, 0, 9, 0]
     }
   ]
 }

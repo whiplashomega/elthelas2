@@ -10,7 +10,7 @@ tags: [cleric, druid, ranger, sorcerer, artificer, level2, transmutation, ritual
 
 **Casting Time**: 1 action
 
-**Range**: 30 feet
+**Range**: 9m
 
 **Components**: V, S, M (a piece of cork)
 

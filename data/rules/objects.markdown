@@ -35,7 +35,7 @@ Objects
     <tr><td>Tiny (bottle, lock)</td><td>2 (1d4)</td><td>5 (2d4)</td></tr>
     <tr><td>Small (chest, lute)</td><td>3 (1d6)</td><td>10 (3d6)</td></tr>
     <tr><td>Medium (barrel, chandelier)</td><td>4 (1d8)</td><td>18 (4d8)</td></tr>
-    <tr><td>Large (Cart, 10 x 10 ft window)</td><td>5 (1d10)</td><td>27 (5d10)</td></tr>
+    <tr><td>Large (Cart)</td><td>5 (1d10)</td><td>27 (5d10)</td></tr>
   </tbody>
 </table>
 <p>

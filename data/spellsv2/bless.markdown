@@ -10,7 +10,7 @@ tags: [cleric, paladin, level1, enchantment]
 
 **Casting Time**: 1 action
 
-**Range**: 30 feet
+**Range**: 9m
 
 **Components**: V, S, M (a sprinkling of holy water)
 

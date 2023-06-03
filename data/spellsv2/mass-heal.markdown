@@ -10,7 +10,7 @@ tags:   [cleric, level9, conjuration]
 
 **Casting Time**: 1 action
 
-**Range**: 60 feet
+**Range**: 18m
 
 **Components**: V, S
 

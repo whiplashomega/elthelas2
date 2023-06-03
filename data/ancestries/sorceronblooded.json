@@ -5,7 +5,7 @@
   "description": "\n\nthe Sorceron were a race of Godly servants that served all Gods. Originally serving the Gods in creating the world Elthelas and the many interconnecting planes of existence in an age long since forgotten. They were masters of magic, the inventors of the arcane arts. In the Gods War they served on both sides, and were the primary combatants, and while most of them died in that conflict, some few survivors retreating to other planes of existence besides the material with the Gods. Yet, before that age many Sorceron interbred with the races of Elthelas, and every now and then a child will be born with more Sorceron blood than typical. These unusual children show a rare talent for magic and are gifted with intelligence and charisma far beyond that of their kin.\n\nThe Sorceron Blooded look very similar to a normal human, but their blood typically betrays them when they are young, with their gift for magic blooming almost as soon as they can talk.",
   "traits": [
     { "name": "Size", "description": "The Sorceron-blooded are generally similar to elves or humans in height, weight, and build. Your size is medium." },
-    { "name": "Speed", "description": "Your base walking speed is 30 ft." },
+    { "name": "Speed", "description": "Your base walking speed is 9m." },
     { "name": "Natural Spellcaster", "description": "Choose one cantrip from the sorcerer or wizard spell list, and one first level spell from the same list. You can cast this cantrip at will, and the first level spell once per short rest without expending a spell slot. The spellcasting ability for these spells depends on the list you chose it from. Charisma for a sorcerer spell, or intelligence for a wizard spell." }
   ],
   "agepoints": {
@@ -33,7 +33,7 @@
       "averageweight": 175,
       "baseweight": 110,
       "weightroll": "2d4",
-      "speed": [30, 0, 0, 0, 0]
+      "speed": [9, 0, 0, 0, 0]
     },
     {
       "id": "elfborn",
@@ -43,7 +43,7 @@
       "traits": [
         { "name": "Fey Ancestry", "description": "You have advantage on saving throws against being charmed, and magic can't put you to sleep." },
         { "name": "Trance", "description": "Elves don't need to sleep. Instead they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is 'trance') While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep." },
-        { "name": "Darkvision", "description": "Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray." }
+        { "name": "Darkvision", "description": "Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 18m of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray." }
       ],
       "image": "https://elthelas-images.herokuapp.com/races/elfborn.jpg",
       "averageheight": 65,
@@ -52,7 +52,7 @@
       "averageweight": 140,
       "baseweight": 100,
       "weightroll": "1d6",
-      "speed": [30, 0, 0, 0, 0]
+      "speed": [9, 0, 0, 0, 0]
     },
     {
       "id": "dwarfborn",
@@ -61,7 +61,7 @@
       "description": "Sorceron Blooded born of dwarves are hardy folk, with a keen intellect, often discernible from other dwarves only by their unnatural gift with magic.",
       "traits": [
         { "name": "Dwarven Resilience", "description": "You have advantage on saving throws against poison, and you have resistance against poison damage." },
-        { "name": "Darkvision", "description": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray." },
+        { "name": "Darkvision", "description": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 18m of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray." },
         { "name": "Dwarven Combat Training", "description": "You have proficiency with the battleaxe, handaxe, throwing hammer, and warhammer." }
       ],
       "image": "https://elthelas-images.herokuapp.com/races/dwarfborn.jpg",
@@ -71,7 +71,7 @@
       "averageweight": 135,
       "baseweight": 100,
       "weightroll": "2d6",
-      "speed": [30, 0, 0, 0, 0]
+      "speed": [9, 0, 0, 0, 0]
     },
     {
       "id": "orcborn",
@@ -79,7 +79,7 @@
       "singular": "Orc Born",
       "description": "Sorceron Blooded born of orcs are growing increasingly common since the awakening of the Prince of Fiends, as the Prince enjoys his carnal pleasures, and many an orc woman dreams of the prestige of bearing a child of the prince. As the first generation of orc born sorceron blooded has reached maturity they have been recruited into the highest echelons of orc society, serving as blackguards, warlords, and mages in service of the Prince.",
       "traits": [
-        { "name": "Darkvision", "description": "60 ft." },
+        { "name": "Darkvision", "description": "You can see in dim light within 18m of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray." },
         { "name": "Menacing", "description": "You gain proficiency in the intimidation skill." },
         { "name": "Aggressive", "description": "As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started." }
       ],
@@ -89,7 +89,7 @@
       "averageweight": 215,
       "baseweight": 140,
       "weightroll": "2d6",
-      "speed": [30, 0, 0, 0, 0]
+      "speed": [9, 0, 0, 0, 0]
     }
   ]
 }

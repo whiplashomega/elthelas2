@@ -10,7 +10,7 @@ tags: [bard, cleric, wizard, level3, necromancy]
 
 **Casting Time**: 1 action
 
-**Range**: 10 feet
+**Range**: 3m
 
 **Components**: V, S, M (burning incense)
 

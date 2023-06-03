@@ -10,7 +10,7 @@ tags: [druid, sorcerer, wizard, level2, conjuration]
 
 **Casting Time**: 1 action
 
-**Range**: 60 feet
+**Range**: 18m
 
 **Components**: V, S, M (a bit of tallow, a pinch of brimstone, and a dusting of powdered iron)
 
@@ -22,10 +22,12 @@ tags: [druid, sorcerer, wizard, level2, conjuration]
 
 **Damage**: [ { "dice": "2d6", label: "fire", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d6" } ]
 
-A 5-foot-diameter sphere of fire appears in an unoccupied space of your choice within range and lasts for the duration. Any creature that ends its turn within 5 feet of the sphere must make a Dexterity saving throw. The creature takes 2d6 fire damage on a failed save, or half as much damage on a successful one.
+A 1m-diameter sphere of fire appears in an unoccupied space of your choice within range and lasts for the duration. Any creature that ends its turn within 1m of the sphere must make a Dexterity saving throw. The creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one.
 
-As a bonus action, you can move the sphere up to 30 feet. If you ram the sphere into a creature, that creature must make the saving throw against the sphere's damage, and the sphere stops moving this turn.
+As a bonus action, you can move the sphere up to 9m. If you ram the sphere into a creature, that creature must make the saving throw against the sphere's damage, and the sphere stops moving this turn.
 
-When you move the sphere, you can direct it over barriers up to 5 feet tall and jump it across pits up to 10 feet wide. The sphere ignites flammable objects not being worn or carried, and it sheds bright light in a 20-foot radius and dim light for an additional 20 feet.
+When you move the sphere, you can direct it over barriers up to 2m tall and jump it across pits up to 3m wide. The sphere ignites flammable objects not being worn or carried, and it sheds bright light in a 6m radius and dim light for an additional 6m.
 
 **At Higher Levels.** When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.
+
+**Playtest Note** Damage increased by 1 die

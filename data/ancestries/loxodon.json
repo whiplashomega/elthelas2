@@ -8,7 +8,7 @@
       "name": "Size", "description": "Loxodons stand between 7 and 8 feet tall. Their massive bodies weigh between 300 and 400 pounds. Your size is Medium."
     },
     {
-      "name": "Speed", "description": "Your walking speed is 30 feet"
+      "name": "Speed", "description": "Your walking speed is 9m"
     },
     {
       "name": "Powerful Build", "description": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift"
@@ -20,7 +20,7 @@
       "name": "Natural Armor", "description": "You have thick, leathery skin. When you aren't wearing armor, your AC is 12 + your Constitution modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor."
     },
     {
-      "name": "Trunk", "description": "You can grasp things with your trunk, and you can use it as a snorkel. It has a reach of 5 feet, and it can lift a number of pounds equal to 5 times your Strength score. You can use it to do the following simple tasks: lift, drop, hold, push, or pull an object or a creature; open or close a door or a container; grapple someone; or make an unarmed strike. Your DM might allow other simple tasks to be aded to that list of options.\n\nYour trunk can't wield weapons or shields or do anything that requires manual precision, such as using tools or magic items or performing the somatic components of a spell."
+      "name": "Trunk", "description": "You can grasp things with your trunk, and you can use it as a snorkel. It has a reach of 2m, and it can lift a number of pounds equal to 5 times your Strength score. You can use it to do the following simple tasks: lift, drop, hold, push, or pull an object or a creature; open or close a door or a container; grapple someone; or make an unarmed strike. Your DM might allow other simple tasks to be aded to that list of options.\n\nYour trunk can't wield weapons or shields or do anything that requires manual precision, such as using tools or magic items or performing the somatic components of a spell."
     },
     {
       "name": "Keen Smell", "description": "Thanks to your sensitive trunk, you have advantage on Wisdom (perception), Wisdom (Survival), and Intelligence (Investigation) checks that involve smell."
@@ -42,7 +42,7 @@
       "image": "https://elthelas-images.herokuapp.com/races/loxodon.jpg",
       "description": "",
       "traits": [
-      
+
       ],
       "averageheight": 90,
       "baseheight": 79,
@@ -50,7 +50,7 @@
       "averageweight": 350,
       "baseweight": 295,
       "weightroll": "2d4",
-      "speed": [30, 0, 0, 0, 0]
-    }  
+      "speed": [9, 0, 0, 0, 0]
+    }
   ]
 }

@@ -10,7 +10,7 @@ tags: [cleric, cantrip, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 5 feet
+**Range**: 1m
 
 **Components**: V, M (a holy symbol)
 

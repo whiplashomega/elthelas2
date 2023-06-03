@@ -5,12 +5,12 @@
   "description": "Long believed to only exist on the Plane of Air, there are in fact many Aarakocra native to Elthelas, building cliffside cities in the mountains of western Asura. They are an insular people, rarely venturing out of their native lands.",
   "traits": [
     { "name": "Size", "description": "Aarakocra are about 5 feet tall. They have thin, lightweight bodies that weigh between 80 and 100 pounds. Your size is Medium." },
-    { "name": "Speed", "description": "Your base walking speed is 25 feet, and you have a flying speed of 50 feet." },
-    {
-      "name": "Flight", "description": "You have a flying speed of 50 feet. To use this speed, you can't be wearing medium or heavy armor."
-    },
+    { "name": "Speed", "description": "Your base walking speed is 7m, and you have a flying speed of 15m" },
     {
       "name": "Talons", "description": "Your talons are natural weapons, which you can use to make unarmed strikes. They have the light and finesse properties and do 1d6 slashing damage on a hit."
+    },
+    {
+      "name": "Wind Caller", "description": "Starting at 3rd level, you can cast the gust of wind spell with this trait, without requiring a material component. Once you cast the spell with this trait, you can't do so again until you finish a long rest. You can also cast the spell using any spell slots you have of 2nd level or higher.\n\nIntelligence, Wisdom, or Charisma is your spellcasting ability for it when you cast gust of wind with this trait (choose when you select this race)."
     }
   ],
   "agepoints": {
@@ -37,7 +37,7 @@
       "averageweight": 90,
       "baseweight": 55,
       "weightroll": "2d4",
-      "speed": [25, 50, 0, 0, 0]
+      "speed": [7, 15, 0, 0, 0]
     }
   ]
 }

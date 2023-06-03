@@ -10,7 +10,7 @@ tags: [cleric, paladin, level2, evocation]
 
 **Casting Time**: 10 minutes
 
-**Range**: 30 feet
+**Range**: 9m
 
 **Components**: V
 

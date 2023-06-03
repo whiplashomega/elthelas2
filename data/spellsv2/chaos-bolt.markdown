@@ -10,7 +10,7 @@ tags: [sorcerer, level1, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 120 feet
+**Range**: 36m
 
 **Components**: V, S
 
@@ -22,7 +22,7 @@ tags: [sorcerer, level1, evocation]
 
 **Damage**: [ { "dice": "2d8", label: "random", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" },  { "dice": "1d6", label: "random", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d6" }  ]
 
-You hurl an undulating, warbling mass of chaotic energy at one creature in range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 + 1d6 damage. Choose one of the d8s. The number rolled on that die determines the attacks damage type, as shown below.
+You hurl an undulating, warbling mass of chaotic energy at one creature in range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 + 2d6 damage. Choose one of the d8s. The number rolled on that die determines the attacks damage type, as shown below.
 
 <table>
   <thead>
@@ -45,3 +45,5 @@ If you roll the same number on both d8s, the chaotic energy leaps from the targe
 A creature can be targeted only once by each casting of this spell.
 
 **At Higher Levels.** When you cast this spell using a spell slot of 2nd level or higher, each target takes 1d6 extra damage of the type rolled for each slot level above 1st.
+
+**Playtest Note** Damage increased by 1d6

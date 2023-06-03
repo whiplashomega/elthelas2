@@ -184,6 +184,7 @@
               <td>{{ weapon.Damage }}</td>
               <td>{{ weapon.Dtype }}</td>
               <td>{{ weapon.Properties }}</td>
+              <td>{{ weapon.Mastery }}</td>
               <td>{{ weapon.Cost }} gp</td>
               <td>{{ weapon.Weight }} lbs</td>
               <td><span v-if="weapon.Reach > 0">{{ weapon.Reach }} ft</span><span v-else>-</span></td>
@@ -220,10 +221,10 @@
             <tr><td>Concealable</td><td>0.5</td><td>This weapon is easily concealed in a pocket, boot, or other unobtrusive place such that it is not obvious without a bodily search.</td></tr>
             <tr><td>Finesse</td><td>1</td><td>Can use your choice of dexterity or strength for the attack and damage rolls with this weapon.</td></tr>
             <tr><td>Gunform</td><td>1</td><td>This weapon can be fired from a prone position without disadvantage.</td></tr>
-            <tr><td>Grapple</td><td>1</td><td>Once per turn, this weapon has the ability to entangle a foe, preventing them from moving. After hitting an opponent with this weapon you can choose to make a strength (athletics) check opposed by either a strength (athletics) or dexterity (acrobatics) check by the opponent. On a success the target is grappled. While the target is grappled in this way you cannot use the weapon to attack until you release the grapple, and if you drop the weapon the grapple is released automatically.</td></tr>
+            <tr><td>Grapple</td><td>1</td><td>Once per turn, this weapon has the ability to entangle a foe, preventing them from moving. After hitting an opponent with this weapon you can force the opponent to make a strength or dexterity saving throw (their choice) with a DC equal to 8 + your proficiency bonus + your strength modifier. On a failure the target is grappled. While the target is grappled in this way you cannot use the weapon to attack until you release the grapple, and if you drop the weapon the grapple is released automatically.</td></tr>
             <tr><td>Heavy</td><td>-0.5</td><td>This weapon is too large and unwieldy for small characters to use effectively, and they have disadvantage on attack rolls while using it.</td></tr>
             <tr><td>Heavy Artillery</td><td>-16</td><td>This weapon is massive. It takes 3 actions to load and another to fire, and takes up a 10 x 10 space on its own (size large), requiring at least two large creatures to pull it from place to place, and otherwise cannot be moved except by feats of great strength.</td></tr>
-            <tr><td>Knock down</td><td>1</td><td>Once per turn, after hitting an opponent with this weapon you can choose to attempt to knock them down with it. If you do so, make a strength (athletics) check opposed by either a strength (athletics) or a dexterity (acrobatics) check by the opponent. On a success you knock the opponent prone.</td></tr>
+            <tr><td>Knock down</td><td>1</td><td>Once per turn, after hitting an opponent with this weapon you can choose to attempt to knock them down with it. If you do so they must make a strength or dexterity saving throw (their choice) with a DC equal to 8 + your proficiency bonus + your strength modifier.  On a failure you knock the opponent prone.</td></tr>
             <tr><td>Light</td><td>1</td><td>This weapon is light and well balanced enough to use one in each hand.</td></tr>
             <tr><td>Loading</td><td>-1</td><td>This weapon takes time to load and can only be used to make 1 attack per round.</td></tr>
             <tr><td>Net special</td><td>4.5</td><td>When you hit a target with this weapon they are restrained. The target can make a strength (athletics) check or a dexterity (acrobatics) check as an action with a DC of 10 to escape the net.</td></tr>
@@ -232,11 +233,30 @@
             <tr><td>Ranged</td><td>0</td><td>Attacks with this weapon are made with disadvantage when within 5 ft of a hostile character. You use dexterity for attack and damage rolls with this weapon.</td></tr>
             <tr><td>Returning</td><td>1.5</td><td>This weapon returns to your hand when thrown as long as nothing prevents it from doing so.</td></tr>
             <tr><td>STR 13 Required</td><td>-2</td><td>This weapon cannot be wielded unless the user has a strength score of at least 13.</td></tr>
-            <tr><td>Thrown</td><td>0</td><td>This weapon can be used to make a ranged attack by throwing it.</td></tr>
-            <tr><td>Two-handed</td><td>-1</td><td>This weapon requires 2 hands to wield effectively</td></tr>
+            <tr><td>Thrown</td><td>0</td><td>This weapon can be used to make a ranged attack by throwing it. If the weapon is a melee weapon, you use the same ability modifier for that attack roll and damage roll that you would use for a melee attack with the weapon.</td></tr>
+            <tr><td>Two-handed</td><td>-1</td><td>This weapon requires 2 hands to wield effectively.</td></tr>
             <tr><td>Rare</td><td>-1</td><td>This weapon is advanced technology and not available for purchase from most weapon merchants. It cannot be a starting weapon at level 1.</td></tr>
             <tr><td>Versatile</td><td>1/2 the increase in average damage (so 1d6 to 1d8 costs 0.5 pts, 2d4 to 2d6 costs 1 pt)</td><td>This weapon uses a damage die one size larger when wielded in two hands. 1d4 becomes 1d6, 1d6 becomes 1d8, 1d8 becomes 1d10, and 1d10 becomes 1d12. Similarly 2d4 becomes 2d6, 2d6 becomes 2d8, 2d8 becomes 2d10, and 2d10 becomes 2d12.</td></tr>
             <tr><td>Versatile Damage</td><td>0.5</td><td>This weapon can attack in different ways, doing different damage types depending on how it is used.</td></tr>
+          </tbody>
+        </table>
+        <h4>Weapon Mastery</h4>
+        <p>
+          Certain classes gain access to the weapon mastery feature, which unlocks extra abilities on their weapons, as listed in the weapons table above. See below for the exact description of the weapon mastery effects.
+        </p>
+        <table class="table table-striped">
+          <thead>
+            <tr><th>Mastery</th><th>Effect</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Cleave</td><td>If you hit a creature with a melee attack using this weapon, you can make an attack roll with the weapon against a second creature within 1m of the first that is also within your reach. On a hit, the second creature takes the weapon’s damage, but don’t add your ability modifier to that damage, unless that modifier is negative. You can make this extra attack only once per turn.</td></tr>
+            <tr><td>Flex</td><td>When you hit with a melee attack using this weapon, you deal its Versatile damage even if you’re wielding it with one hand.</td></tr>
+            <tr><td>Graze</td><td>If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can’t be increased in any way, other than increasing the ability modifier.</td></tr>
+            <tr><td>Poison</td><td>You can apply a dose of poison to this weapon as a bonus action on your turn.</td></tr>
+            <tr><td>Push</td><td>If you hit a creature with this weapon, you can push the creature up to 2m away from you if it is no more than one size larger than you.</td></tr>
+            <tr><td>Sap</td><td>If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.</td></tr>
+            <tr><td>Slow</td><td>If you hit a creature with this weapon and deal damage to the creature, you can reduce its Speed by 10 feet until the start of your next turn. If you hit the creature more than once with this property, the Speed reduction doesn’t exceed 10 feet.</td></tr>
+            <tr><td>Vex</td><td>If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.</td></tr>
           </tbody>
         </table>
         <h4>Improvised Weapons</h4>

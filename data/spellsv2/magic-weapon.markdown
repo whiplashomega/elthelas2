@@ -22,6 +22,6 @@ tags: [ranger, paladin, sorcerer, wizard, eldritchknight, artificer, level2, tra
 
 **Damage**: []
 
-You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.
+You touch any weapon. Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls. This does not stack with any bonus to attack and damage rolls the weapon may already have.
 
 **At Higher Levels.** When you cast this spell using a spell slot of 4th level or higher, the bonus increases to +2. When you use a spell slot of 6th level or higher, the bonus increases to +3.

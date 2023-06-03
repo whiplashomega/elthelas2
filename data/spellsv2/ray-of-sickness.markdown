@@ -10,7 +10,7 @@ tags: [sorcerer, wizard, level1, necromancy]
 
 **Casting Time**: 1 action
 
-**Range**: 60 feet
+**Range**: 18m
 
 **Components**: V, S
 
@@ -20,8 +20,10 @@ tags: [sorcerer, wizard, level1, necromancy]
 
 **Save For**: not poisoned
 
-**Damage**: [ { "dice": "2d8", label: "poison", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d8" } ]
+**Damage**: [ { "dice": "3d8", label: "poison", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d8" } ]
 
-A ray of sickening greenish energy lashes out toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 poison damage and must make a Constitution saving throw. On a failed save, it is also poisoned until the end of your next turn.
+A ray of sickening greenish energy lashes out toward a creature within range. The target makes a Constitution saving throw, on a failure the target takes 3d8 poison damageand is poisoned until the end of your next turn. On a successful save they take half as much damage and are not poisoned.
 
 **At Higher Levels.** When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.
+
+**Playtest Note** Damage increased by 1 die, removed attack roll, constitution save only now.

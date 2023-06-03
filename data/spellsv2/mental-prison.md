@@ -10,7 +10,7 @@ tags: [sorcerer, warlock, wizard, level6, illusion]
 
 **Casting Time**: 1 action
 
-**Range**: 60 feet
+**Range**: 18m
 
 **Components**: S
 
@@ -22,9 +22,4 @@ tags: [sorcerer, warlock, wizard, level6, illusion]
 
 **Damage**: [ { "dice": "5d10", "label": "psychic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" }, { "dice": "10d10", "label": "ending psychic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
-You attempt to bind a creature within an illusory cell that only it perceives. One creature you can see within range must make an Intelligence saving throw. The
-target succeeds automatically if it is immune to being charmed. On a successful save, the target takes 5d10 psychic damage, and the spell ends. On a failed save,
-the target takes 5d10 psychic damage, and you make the area immediately around the target’s space appear dangerous to it in some way. You might cause the target
-to perceive itself as being surrounded by fire, floating razors, or hideous maws filled with dripping teeth. Whatever form the illusion takes, the target can’t see or
-hear anything beyond it and is restrained for the spell’s duration. If the target is moved out of the illusion, makes a melee attack through it, or reaches any part of 
-its body through it, the target takes 10d10 psychic damage, and the spell ends.
+You attempt to bind a creature within an illusory cell that only it perceives. One creature you can see within range must make an Intelligence saving throw. The target succeeds automatically if it is immune to being charmed. On a successful save, the target takes 5d10 psychic damage, and the spell ends. On a failed save, the target takes 5d10 psychic damage, and you make the area immediately around the target’s space appear dangerous to it in some way. You might cause the target to perceive itself as being surrounded by fire, floating razors, or hideous maws filled with dripping teeth. Whatever form the illusion takes, the target can’t see or hear anything beyond it and is restrained for the spell’s duration. If the target is moved out of the illusion, makes a melee attack through it, or reaches any part of its body through it, the target takes 10d10 psychic damage, and the spell ends.

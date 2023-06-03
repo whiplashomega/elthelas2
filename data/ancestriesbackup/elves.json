@@ -1,0 +1,120 @@
+{
+  "id": "elves",
+  "name": "Elves",
+  "singular": "Elf",
+  "description": "\n\nThe elves were the first race to recover after the climactic God's War. The Gods and Sorceron did not see the mostly feral elves of the ancient world as reliable soldiers and Sylvan, their patron Goddess went to considerable effort to protect her people from harm. However once the war was over, with the other races having highly reduced and scattered populations, the elves finally got around to building cities and expanding. They formed the nation of Eldoran, which remains probably the most powerful nation on the planet besides Malinval. However, the high elves have often proven arrogant, and their internal conflicts with the moon elves finally resulted in civil war. The Moon Elves successfully asserted their independence and formed the nation of Demal Thor.\n\nThe Elves are split into 4 distinct subraces, the city dwelling high elves, the rural wood elves, the nomadic moon elves, and the still feral wild elves.\n\n",
+  "traits": [
+    { "name": "Size", "description": "Elves range from under 5 to over 6 feet tall and have slender builds. Your size is medium." },
+    { "name": "Keen Senses", "description": "You have proficiency in the perception skill." },
+    { "name": "Fey Ancestry", "description": "You have advantage on saving throws against being charmed, and magic can't put you to sleep." },
+    { "name": "Trance", "description": "Elves don't need to sleep. Instead they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is 'trance') While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep." },
+    { "name": "Elf Weapon Training", "description": "You have proficiency with the longsword, shortsword, shortbow, and longbow." }
+  ],
+  "agepoints": {
+    "puberty": 18,
+    "sexualmaturity": 22,
+    "mentalmaturity": 35,
+    "middleage": 60,
+    "oldage": 80,
+    "averagelifespan": 110,
+    "maxage": 140
+  },
+  "subraces": [
+    {
+      "id": "highelves",
+      "name": "High Elves",
+      "singular": "High Elf",
+      "image": "https://elthelas-images.herokuapp.com/races/highelf.jpg",
+      "description": "\n\nThe High Elves make up the majority of the ruling and merchant class of elves in Eldoran, and are the primary residents in the cities. They are relatively few compared to the Wood Elves who live throughout the countryside, but because most elven merchants are high elves, they tend to be considered the most stereotypical. High Elves are somewhat weaker, but better educated then Wood Elves.\n\n",
+      "traits": [
+        { "name": "Speed", "description": "Your base walking speed is 30 feet." },
+        { "name": "Darkvision", "description": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in the darkness, only shades of gray." },
+        { "name": "Cantrip", "description": "You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it." },
+        { "name": "Extra Language", "description": "You can speak, read, and write one extra language of your choice." }
+      ],
+      "averageheight": 65,
+      "baseheight": 54,
+      "heightroll": "2d10",
+      "averageweight": 120,
+      "baseweight": 90,
+      "weightroll": "1d4",
+      "speed": [30, 0, 0, 0, 0]
+    },
+    {
+      "id": "moonelves",
+      "name": "Moon Elves",
+      "singular": "Moon Elf",
+      "image": "https://elthelas-images.herokuapp.com/races/moonelf.jpg",
+      "description": "The Moon Elves of Demal Thor are a hardier breed of elves than the High Elves or Wood Elves, but they are gruff loners who generally appear standoffish to those outside of their clan. They live in nomadic clans of between 2 and 3 hundred individuals that wander the plains following the herds.",
+      "traits": [
+        { "name": "Speed", "description": "Your base walking speed is 35 feet." },
+        { "name": "Nomad", "description": "You have proficiency with the survival skill, and add double your proficiency bonus to Wisdom (survival) checks." }
+      ],
+      "averageheight": 65,
+      "baseheight": 54,
+      "heightroll": "2d10",
+      "averageweight": 140,
+      "baseweight": 100,
+      "weightroll": "1d6",
+      "speed": [35, 0, 0, 0, 0]
+    },
+    {
+      "id": "wildelves",
+      "name": "Wild Elves",
+      "singular": "Wild Elf",
+      "image": "https://elthelas-images.herokuapp.com/races/wildelf.jpg",
+      "description": "The Wild Elves are as rare as they are reclusive, living in small groups in the deepest jungles of Eldoran and Gnarra. They generally lack education, and are often considered feral and uncivilized by other elves.",
+      "traits": [
+        { "name": "Speed", "description": "Your base walking speed is 35 feet." },
+        { "name": "Darkvision", "description": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in the darkness, only shades of gray." },
+        { "name": "Cantrip", "description": "You know one cantrip of your choice from the sorcerer spell list. Charisma is your spellcasting ability for it." }
+      ],
+      "averageheight": 62,
+      "baseheight": 53,
+      "heightroll": "2d8",
+      "averageweight": 115,
+      "baseweight": 90,
+      "weightroll": "1d4",
+      "speed": [35, 0, 0, 0, 0]
+    },
+    {
+      "id": "woodelves",
+      "name": "Wood Elves",
+      "singular": "Wood Elf",
+      "image": "https://elthelas-images.herokuapp.com/races/woodelf.jpg",
+      "description": "The Wood Elves of Eldoran are only slightly removed from their feral roots. The Wood Elves are relatively unfamiliar with the learning and education present in much of modern civilization, but they are naturally strong, spending their lives as farmers, woodsmen, and craftsmen.",
+      "traits": [
+        { "name": "Speed", "description": "Your base walking speed is 35 feet." },
+        { "name": "Darkvision", "description": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in the darkness, only shades of gray." },
+        { "name": "Mask of the Wild", "description": "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena." }
+      ],
+      "averageheight": 65,
+      "baseheight": 54,
+      "heightroll": "2d10",
+      "averageweight": 130,
+      "baseweight": 100,
+      "weightroll": "1d4",
+      "speed": [35, 0, 0, 0, 0]
+    },
+    {
+      "id": "eladrin",
+      "name": "Eladrin",
+      "singular": "Eladrin",
+      "image": "https://elthelas-images.herokuapp.com/races/eladrin.jpg",
+      "description": "Elves native to the feywild, it is incredibly rare to see them on the material plane.",
+      "traits": [
+        { "name": "Season", "description": "Each Eladrin belongs to a particular seasonal court of the Feywild. Choose one season, autumn, winter, spring, or summer. This affects your appearance as well as your Fey Step feature below. You can change your season whenever you finish a long rest." },
+        { "name": "Fey Step", "description": "As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. Once you use this trait, you can't do so again until you finish a short or long rest.\n\nWhen you reach 3rd level, your Fey Step gains an additional effect based on your season; if the effect requires a saving throw, the DC equals 8 + your proficiency bonus + your Charisma modifier:\n\n**Autumn.** Immediately after you use Fey Step, up to two creatures of your choice that you can see within 10 feet of you must succeed on a Wisdom saving throw or be charmed by you for 1 minute, or until you or your companions deal any damage to it.\n\n**Winter.** When you use your Fey Step, one creature of your choice that you can see within 5 feet of you before you teleport must succeed on a Wisdom saving throw or be frightened of you until the end of your next turn.\n\n**Spring.** When you use your Fey Step, you can touch one willing creature within 5 feet of you. That creature then teleports instead of you, appearing in an unoccupied space of your choice that you can see within 30 feet of you.\n\n**Summer.** Immediately after you use your Fey Step, each creature of your choice that you can see within 5 feet of you takes fire damage equal to your Charisma modifier (minimum of 1 damage)." },
+        { "name": "Speed", "description": "Your base walking speed is 30 feet." },
+        { "name": "Darkvision", "description": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in the darkness, only shades of gray." }
+      ],
+      "averageheight": 65,
+      "baseheight": 54,
+      "heightroll": "2d10",
+      "averageweight": 120,
+      "baseweight": 90,
+      "weightroll": "1d4",
+      "speed": [30, 0, 0, 0, 0]
+    }
+  ]
+}

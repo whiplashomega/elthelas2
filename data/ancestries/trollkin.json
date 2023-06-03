@@ -5,7 +5,7 @@
   "description": "\n\nOft described by those who meet them as 'damn ugly, but damn efficient killers', trollkin are gangly, thick chested humanoids with disgustingly angular faces, long pointed noses, and grey-green to brown skin. Strong and hardy, they are somewhat larger than an orc, and have clawed hands.\n\nThe trollkin were originally created during the dawning years of the world as a magical experiment in interracial breeding. The end result was something akin to a fast maturing, highly stunted troll, and was cast out by its Sorceron creators as a failure and released into the wild. Yet the trollkin's improved intellect in comparison to their troll progenitors, ability to breed quickly, and fit into other societies (with a bit of care and luck), enabled the Trollkin to thrive where trolls were hunted and killed. During the God's War, the trollkin were conscripted as foot soldiers into the armies of every side, and by the end of the war, only a few hundred remained alive. Nevertheless, these few hundred managed to find a land of their own on a large island that they named Degak'Ta, and from there they have spread out to various lands once again.\n\nThe trollkin, unlike every other major race on Elthelas, are naturally antitheistic. They generally feel the Gods betrayed their people in the God's War, using them as pawns, sending them to their deaths, and in the end, providing no reward. Politically, they tend to discount charisma as useless, rewarding strength and cunning. In their homeland of Degak'Ta they are ruled by the military, lead by the Grand Marshal, who gains office through contests of strength and tactics. In foreign affairs they are generally aloof, not taking sides in conflicts as a people, and instead hire out individually or in small groups as mercenaries to either or any side, and they are highly valued as such.\n\n",
   "traits": [
     { "name": "Size", "description": "Trollkin range from 7 feet to 8.5 feet tall, and typically weigh between 250 and 350 lbs. Your size is medium." },
-    { "name": "Speed", "description": "Your base walking speed is 30 ft." },
+    { "name": "Speed", "description": "Your base walking speed is 9m." },
     { "name": "Hard to Kill", "description": "You have advantage on death saves." },
     { "name": "Face of a Troll", "description": "Trollkin have disadvantage on any charisma check except intimidation checks made to influence an NPC who is not a Trollkin or Troll." },
     {
@@ -35,7 +35,7 @@
       "averageweight": 275,
       "baseweight": 220,
       "weightroll": "2d4",
-      "speed": [30, 0, 0, 0, 0]
+      "speed": [9, 0, 0, 0, 0]
     }
   ]
 }

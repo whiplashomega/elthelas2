@@ -14,7 +14,7 @@ Poisons
   <strong>Ingested.</strong> A creature must swallow an entire dose of ingested poison to suffer its effects. You might decide that a partial dose has a reduced effect, such as allowing advantage on the saving throw or dealing only half damage on a failed save.
 </p>
 <p>
-  <strong>Inhaled.</strong> These poisons are powders or gases that take effect when they are inhaled. A single dose fills a 5-foot cube.
+  <strong>Inhaled.</strong> These poisons are powders or gases that take effect when they are inhaled. A single dose fills a 1 meter cube.
 </p>
 <p>
   <strong>Injury.</strong> A creature that takes slashing or piercing damage from a weapon or piece of ammunition coated with injury poison is exposed to its effects.

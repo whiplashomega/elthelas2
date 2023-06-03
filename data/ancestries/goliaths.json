@@ -5,7 +5,7 @@
   "description": "Goliaths are a tall, gangly, rocky skinned and tribal people. They love sport and competition, and are exceptionally strong and hardy. Their incredible height, strength, and large limbs allow them to wield weapons and perform feats of strength much better than most creatures of a relatively similar size. The Goliaths of Elthelas live in wandering tribes in high mountainous areas. They have never formed any centralized nation, and there have never been enough of them for any existing nation to try to force them under the national banner. The largest concentrations of Goliath tribes live in Stagenheim and Curinor, and they trade regularly with the local gnomes and dwarves respectively.\n\n#### Goliath Culture in Elthelas\n\nThe reclusive goliath tribes live in the highest mountains of the world, where they worship a variety of Gods, particularly Sylvan, Dorun, and Gaian. Perhaps the only people in Elthelas to revere both Sylvan and Dorun, the Goliath's focus on their elemental aspects as the gods of air and earth rather than their more racially tinted domains. Goliaths are taught to always move with care, and to consider their actions carefully, a stance that has kept them safe from repercussions in a world where they are greatly outnumbered everywhere they live. Though they are often viewed as backwards or barbaric by outsiders, typically because their remote mountain homes preclude farming and thus permanent settlement, the Goliaths have a varied and full society. At the highest peaks, the first monastic orders of the world were founded by Goliaths seeking to reach the epitomy of mindfulness. These monastaries likewise have produced some of the world's greatest philosophers.",
   "traits": [
     { "name": "Size", "description": "Goliaths are between 7 and 8 feet tall and weigh between 280 and 340 pounds. Your size is Medium." },
-    { "name": "Speed", "description": "Your base walking speed is 30 feet." },
+    { "name": "Speed", "description": "Your base walking speed is 9m." },
     { "name": "Natural Athlete", "description": "You have proficiency in the athletics skill." },
     { "name": "Stone's Endurance", "description": "You can focus yourself to occasionally shrug off injury. When you take damage, you can use your reaction to roll a d12. Add your Constitution modifier to the number rolled, and reduce the damage by that total. After you use this trait, you can’t use it again until you finish a short or long rest." },
     { "name": "Powerful Build", "description": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift." },
@@ -33,7 +33,7 @@
       "averageweight": 330,
       "baseweight": 250,
       "weightroll": "2d6",
-      "speed": [30, 0, 0, 0, 0]
+      "speed": [9, 0, 0, 0, 0]
     }
   ]
 }

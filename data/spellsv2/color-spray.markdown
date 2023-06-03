@@ -10,7 +10,7 @@ tags: [arcanetrickster, bard, sorcerer, wizard, level1, illusion]
 
 **Casting Time**: 1 action
 
-**Range**: Self (15-foot cone)
+**Range**: Self (4m cone)
 
 **Components**: V, S, M (a pinch of powder or sand that is colored red, yellow, and blue)
 

@@ -10,11 +10,11 @@ tags: [arcanetrickster, bard, sorcerer, wizard, artificer, level3, enchantment]
 
 **Casting Time**: 1 action
 
-**Range**: 30 feet
+**Range**: 9m
 
 **Components**: S, M (a pinch of sand)
 
-**Duration**: 10 minutes
+**Duration**: 1 minute
 
 **Saving Throw**:
 

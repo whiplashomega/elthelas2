@@ -2,6 +2,7 @@ import fightingstyles from './selectable/fightingstyles.js';
 import infusions from './selectable/artificerinfusions.js';
 import metamagic from './selectable/metamagicoptions.js';
 import invocations from './selectable/warlockinvocations.js';
+import skilltricks from './selectable/skilltricks.js';
 import { useCharacterv2Store } from '@/stores/index';
 import { storeToRefs } from 'pinia';
 
@@ -11,10 +12,41 @@ export default {
     const { character } = storeToRefs(characterStore);
 
     return {
-      fightingstyles, infusions, metamagic, invocations, character
+      fightingstyles, infusions, metamagic, invocations, character, skilltricks
     };
   },
   computed: {
+    availabletricks () {
+      return this.skilltricks.filter((st) => {
+        for (let i in this.character.skilltricks) {
+          if (this.character.skilltricks[i].name === st.name) {
+            return false;
+          }
+        }
+        return true;
+      });
+    },
+    numTricks () {
+      var asi = 0;
+      this.character.charclasses.forEach((cl) => {
+        if (cl.thisclass.name === "Rogue" && cl.level >= 5) {
+          asi += Math.floor((cl.level - 1)/4); // mimic prof
+        }
+      });
+      this.character.feats.forEach((cl) => {
+        if (cl.name === "Tricky Character") {
+          asi++;
+        }
+      });
+      asi += Number(this.character.bonustricks);
+      while (this.character.skilltricks.length < asi) {
+        this.character.skilltricks.push({ name: "", skill: "", description: "" });
+      }
+      if (this.character.skilltricks.length > asi) {
+        this.character.skilltricks.length = asi;
+      }
+      return asi;
+    },
     availablestyles () {
       return this.fightingstyles.filter((fs) => {
         for (let i in this.character.fightingstyles) {

@@ -78,6 +78,9 @@
                     @click="setval(feature, 'show', false)" v-if="feature.show">
               &#x25B2;
             </button>
+            <select v-if="feature.choice" v-model="feature.chosen">
+              <option v-for="ch in feature.choice" :title="ch.description">{{ch.name}}</option>
+            </select>
             <span v-if="feature.show" v-html="marked.parse(feature.description)"></span>
           </p>
         </div>
@@ -92,6 +95,9 @@
                     @click="setval(feature, 'show', false)" v-if="feature.show">
               &#x25B2;
             </button>
+            <select v-if="feature.choice" v-model="feature.chosen">
+              <option v-for="ch in feature.choice" :title="ch.description">{{ch.name}}</option>
+            </select>
             <span v-if="feature.show" v-html="marked.parse(feature.description)"></span>
           </p>
         </div>
@@ -126,6 +132,21 @@
         </p>
       </div>
       <div class="smalltext" v-for="invocation in character.invocations" :key="invocation.name">
+        <p>
+          <span :title="invocation.description">{{invocation.name}}</span>
+
+            <button class="btn btn-sm print-hide float-right" type="button"
+                  @click="setval(invocation, 'show', true)" v-if="!invocation.show">
+            &#x25BC;
+          </button>
+          <button class="btn btn-sm print-hide float-right" type="button"
+                  @click="setval(invocation, 'show', false)" v-if="invocation.show">
+            &#x25B2;
+          </button>
+          <span v-if="invocation.show" v-html="marked.parse(invocation.description)"></span>
+        </p>
+      </div>
+      <div class="smalltext" v-for="invocation in character.skilltricks" :key="invocation.name">
         <p>
           <span :title="invocation.description">{{invocation.name}}</span>
 

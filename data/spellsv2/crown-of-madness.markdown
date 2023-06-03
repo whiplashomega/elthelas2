@@ -10,7 +10,7 @@ tags: [arcanetrickster, bard, sorcerer, warlock, wizard, level2, enchantment]
 
 **Casting Time**: 1 action
 
-**Range**: 120 feet
+**Range**: 36m
 
 **Components**: V, S
 

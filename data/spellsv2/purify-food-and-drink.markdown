@@ -10,7 +10,7 @@ tags: [arcanetrickster, cleric, druid, paladin, artificer, level1, transmutation
 
 **Casting Time**: 1 action
 
-**Range**: 10 feet
+**Range**: 3m
 
 **Components**: V, S
 
@@ -22,4 +22,4 @@ tags: [arcanetrickster, cleric, druid, paladin, artificer, level1, transmutation
 
 **Damage**: []
 
-All nonmagical food and drink within a 5-foot radius sphere centered on a point of your choice within range is purified and rendered free of poison and disease.
+All nonmagical food and drink within a 1m radius sphere centered on a point of your choice within range is purified and rendered free of poison and disease.

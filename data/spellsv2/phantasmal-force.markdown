@@ -10,7 +10,7 @@ tags: [bard, sorcerer, wizard, level2, illusion]
 
 **Casting Time**: 1 action
 
-**Range**: 60 feet
+**Range**: 18m
 
 **Components**: V, S, M (a bit of fleece)
 
@@ -22,7 +22,7 @@ tags: [bard, sorcerer, wizard, level2, illusion]
 
 **Damage**: [ { "dice": "1d6", label: "psychic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
-You craft an illusion that takes root in the mind of a creature that you can see within range. The target must make an Intelligence saving throw. On a failed save, you create a phantasmal object, creature, or other visible phenomenon of your choice that is no larger than a 10-foot cube and that is perceivable only to the target for the duration. This spell has no effect on undead or constructs.
+You craft an illusion that takes root in the mind of a creature that you can see within range. The target must make an Intelligence saving throw. On a failed save, you create a phantasmal object, creature, or other visible phenomenon of your choice that is no larger than a 3m cube and that is perceivable only to the target for the duration. This spell has no effect on undead or constructs.
 
 The phantasm includes sound, temperature, and other stimuli, also evident only to the creature.
 

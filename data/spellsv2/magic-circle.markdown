@@ -22,7 +22,7 @@ tags: [cleric, paladin, eldritchknight, warlock, wizard, level3, abjuration]
 
 **Damage**: []
 
-You create a 10-foot-radius, 20-foot-tall cylinder of magical energy centered on a point on the ground that you can see within range. Glowing runes appear wherever the cylinder intersects with the floor or other surface.
+You create a 3m-radius, 6m-tall cylinder of magical energy centered on a point on the ground that you can see within range. Glowing runes appear wherever the cylinder intersects with the floor or other surface.
 
 Choose one or more of the following types of creatures: celestials, elementals, fey, fiends, or undead. The circle affects a creature of the chosen type in the following ways:
 

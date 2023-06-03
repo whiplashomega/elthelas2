@@ -25,7 +25,7 @@
       "description": "Lightfoot halflings tend to be happy-go-lucky sorts. They are most prevalent on the eastern continent of Elathia, where they live among the humans, elves, and dwarves primarily, with some small communities in orcish cities of the south. Lightfoot halflings are more slight of build compared to their cousins the Strongheart halflings.",
       "traits": [
         { "name": "Size", "description": "Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small." },
-        { "name": "Speed", "description": "Your base walking speed is 25 feet." },
+        { "name": "Speed", "description": "Your base walking speed is 7m." },
         { "name": "Halfling Nimbleness", "description": "You can move through the space of any creature of a size larger than yours." },
         { "name": "Naturally Stealthy", "description": "You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you." }
       ],
@@ -35,7 +35,7 @@
       "averageweight": 40,
       "baseweight": 35,
       "weightroll": "1",
-      "speed": [25, 0, 0, 0, 0]
+      "speed": [7, 0, 0, 0, 0]
     },
     {
       "id": "stronghearthalfling",
@@ -45,7 +45,7 @@
       "description": "Strongheart halflings are somewhat more serious of nature than their lightfoot cousins. They live primarily in the western continent of Atyrea. Strongheart halflings lack the unusual luck of their eastern brethren, but are more adept in combat and war.",
       "traits": [
         { "name": "Size", "description": "Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small." },
-        { "name": "Speed", "description": "Your base walking speed is 25 feet." },
+        { "name": "Speed", "description": "Your base walking speed is 7m." },
         { "name": "Halfling Nimbleness", "description": "You can move through the space of any creature of a size larger than yours." },
         { "name": "Stout Resilience", "description": "You have advantage on saving throws against poison, and you have resistance against poison damage." }
       ],
@@ -55,7 +55,7 @@
       "averageweight": 50,
       "baseweight": 35,
       "weightroll": "1d6",
-      "speed": [25, 0, 0, 0, 0]
+      "speed": [7, 0, 0, 0, 0]
     },
     {
       "id": "tallfellowhalflings",
@@ -65,7 +65,7 @@
       "description": "\n\nTallfellow halflings are the descendents of halflings and humans or halflings and elves. Considerably taller than your typical halfling (averaging between 4 1/2 and 5 feet) they are still considerably shorter than humans and most elves. Nevertheless they are able to wield human sized weapons, and ride full size mounts. They also make bigger targets.\n\nTallfellow halflings are rare, but are more common in more cosmopolitan cities. In more rural halfling communities they are often outcast as half-breeds, while in human and elven communities they are looked down on for their small stature.\n\n",
       "traits": [
         { "name": "Size", "description": "Tallfellow Halflings average about 4.5 feet tall and weigh about 80 pounds. Your size is Medium." },
-        { "name": "Speed", "description": "Your base walking speed is 30 feet." }
+        { "name": "Speed", "description": "Your base walking speed is 9m." }
       ],
       "averageheight": 55,
       "baseheight": 48,
@@ -73,7 +73,7 @@
       "averageweight": 90,
       "baseweight": 70,
       "weightroll": "1d4",
-      "speed": [30, 0, 0, 0, 0]
+      "speed": [9, 0, 0, 0, 0]
     }
   ]
 }

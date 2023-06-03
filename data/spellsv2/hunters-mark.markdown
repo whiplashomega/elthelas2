@@ -10,7 +10,7 @@ tags: [ranger, eldritchknight, level1, divination]
 
 **Casting Time**: 1 bonus action
 
-**Range**: 90 feet
+**Range**: 27m
 
 **Components**: V
 

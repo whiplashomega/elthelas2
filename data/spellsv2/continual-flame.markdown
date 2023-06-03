@@ -10,15 +10,15 @@ tags: [cleric, druid, wizard, eldritchknight, artificer, level2, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: Self
+**Range**: Touch
 
 **Components**: V, S, M (ruby dust worth 50 gp, which the spell consumes)
 
 **Duration**: Until dispelled
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: []
 

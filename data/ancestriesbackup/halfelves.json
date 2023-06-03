@@ -1,0 +1,40 @@
+{
+  "id": "halfelves",
+  "name": "Half-Elves",
+  "singular": "Half-Elf",
+  "description": "\n\nHalf-Elves are incredibly rare in most of the world, but in the eastern areas of Eldoran, Demal'Thor, and southwest Gerasalim, where elves and humans have lived side by side for generations, it sometimes seems as if every other person is a half-elf. Half-elves share some of the chiseled facial features of their elven parentage, while retaining some of the versatility and adaptability of their human forbears.\n\n#### Half-Elf Culture in Elthelas\n\nThe Half-Elves of Elthelas achieve different levels of acceptance in different places. In Gerasalim, particularly in the southwest, they are accepted readily by their human neighbors and live as normal members of the community, fully integrated into Gerasaline culture and life. Similarly in Demal'Thor a half-elf is simply another member of the tribe, though often with a missing parent, since their human mother or father rarely is accepted into the tribe. In Eldoran however, half-elves are forced into a lower rung of society, unable to rise to positions of leadership and often treated as outcasts by their peers. Their parents in particular face persecution and accusations of poluting the Fae blood of the elves. Thus they often gravitate towards more rural communities, where life is harder and every able body is needed.",
+  "traits": [
+    { "name": "Size", "description": "Half-elves are about the same size as humans, ranging from 5 to 6 feet tall. Your size is medium." },
+    { "name": "Speed", "description": "Your base walking speed is 30 ft." },
+    { "name": "Darkvision", "description": "Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray." },
+    { "name": "Fey Ancestry", "description": "You have advantage on saving throws against being charmed, and magic can't put you to sleep." },
+    { "name": "Skill Versatility", "description": "You gain proficiency in two skills of your choice." }
+  ],
+  "agepoints": {
+    "puberty": 15,
+    "sexualmaturity": 19,
+    "mentalmaturity": 30,
+    "middleage": 50,
+    "oldage": 70,
+    "averagelifespan": 95,
+    "maxage": 120
+  },
+  "subraces": [
+    {
+      "id": "default",
+      "name": "",
+      "image": "https://elthelas-images.herokuapp.com/races/halfelf.jpg",
+      "description": "",
+      "traits": [
+      
+      ],
+      "averageheight": 66,
+      "baseheight": 57,
+      "heightroll": "2d8",
+      "averageweight": 155,
+      "baseweight": 110,
+      "weightroll": "2d4",
+      "speed": [30, 0, 0, 0, 0]
+    }  
+  ]
+}

@@ -213,6 +213,7 @@ export default {
           { key: "Damage", label: "Damage", sortable: true },
           { key: "Dtype", label: "Damage Type", sortable: true },
           { key: "Properties", label: "Properties", sortable: true },
+          { key: "Mastery", label: "Mastery", sortable: true },
           { key: "Cost", label: "Cost (gp)", sortable: true },
           { key: "Weight", label: "Weight (lbs)", sortable: true },
           { key: "Reach", label: "Reach (ft)", sortable: true },

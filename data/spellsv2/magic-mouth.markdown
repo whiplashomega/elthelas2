@@ -10,7 +10,7 @@ tags: [arcanetrickster, bard, wizard, artificer, level2, illusion]
 
 **Casting Time**: 1 minute
 
-**Range**: 30 feet
+**Range**: 9m
 
 **Components**: V, S, M (a small bit of honeycomb and jade dust worth at least 10 gp, which the spell consumes)
 
@@ -26,4 +26,4 @@ You implant a message within an object in range, a message that is uttered when 
 
 When that circumstance occurs, a magical mouth appears on the object and recites the message in your voice at the same volume you spoke. If the object you chose has a mouth or something that looks like a mouth (for example, the mouth of a statue) the magical mouth appears there so that the words appear to come from the object's mouth. When you cast this spell, you can have the spell end after it delivers its message or it can remain and repeat its message whenever the trigger occurs.
 
-The triggering circumstance can be as general or as detailed as you like, though it must be based on visual or audible conditions that occur within 30 feet of the object. For example, you could instruct the mouth to speak when any creature moves within 30 feet of the object or when a silver bell rings within 30 feet.
+The triggering circumstance can be as general or as detailed as you like, though it must be based on visual or audible conditions that occur within 9m of the object. For example, you could instruct the mouth to speak when any creature moves within 9m of the object or when a silver bell rings within 9m.

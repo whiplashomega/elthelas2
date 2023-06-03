@@ -1,0 +1,532 @@
+{
+  "name": "Rogue",
+  "level": 1,
+  "hitdie": 8,
+  "caststat": 3,
+  "cantrips": 0,
+  "cantriplevel": 1,
+  "proficiencies": {
+    "armor": ["light armor"],
+    "weapons": ["simple weapons", "hand crossbows", "longswords", "rapiers", "shortswords"],
+    "tools": ["thieve's tools"],
+    "saving throws": ["dex", "int"],
+    "numskills": 4
+  },
+  "resources": [
+    {
+      "name": "Stroke of Luck",
+      "counttype": "fixed",
+      "count": 1,
+      "minlevel": 20,
+      "recovery": "shortrest"
+    }
+  ],
+  "features": [
+    {
+      "level": 1,
+      "name": "Expertise",
+      "description": "At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves’ tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.\n\nAt 6th level, you can choose two more of your proficiencies (in skills or with thieves’ tools) to gain this benefit."
+    },
+    {
+      "level": 6,
+      "name": "Expertise (6th)",
+      "description": "At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves’ tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.\n\nAt 6th level, you can choose two more of your proficiencies (in skills or with thieves’ tools) to gain this benefit."
+    },
+    {
+      "level": 1,
+      "name": "Sneak Attack",
+      "description": "Beginning at 1st level, you know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.\n\nYou don’t need advantage on the attack roll if another enemy of the target is within 5 feet o f it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.\n\nThe amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
+    },
+    {
+      "level": 3,
+      "name": "Sneak Attack (2d6)",
+      "description": "Beginning at 1st level, you know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.\n\nYou don’t need advantage on the attack roll if another enemy of the target is within 5 feet o f it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.\n\nThe amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
+    },
+    {
+      "level": 5,
+      "name": "Sneak Attack (3d6)",
+      "description": "Beginning at 1st level, you know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.\n\nYou don’t need advantage on the attack roll if another enemy of the target is within 5 feet o f it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.\n\nThe amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
+    },
+    {
+      "level": 7,
+      "name": "Sneak Attack (4d6)",
+      "description": "Beginning at 1st level, you know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.\n\nYou don’t need advantage on the attack roll if another enemy of the target is within 5 feet o f it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.\n\nThe amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
+    },
+    {
+      "level": 9,
+      "name": "Sneak Attack (5d6)",
+      "description": "Beginning at 1st level, you know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.\n\nYou don’t need advantage on the attack roll if another enemy of the target is within 5 feet o f it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.\n\nThe amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
+    },
+    {
+      "level": 11,
+      "name": "Sneak Attack (6d6)",
+      "description": "Beginning at 1st level, you know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.\n\nYou don’t need advantage on the attack roll if another enemy of the target is within 5 feet o f it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.\n\nThe amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
+    },
+    {
+      "level": 13,
+      "name": "Sneak Attack (7d6)",
+      "description": "Beginning at 1st level, you know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.\n\nYou don’t need advantage on the attack roll if another enemy of the target is within 5 feet o f it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.\n\nThe amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
+    },
+    {
+      "level": 15,
+      "name": "Sneak Attack (8d6)",
+      "description": "Beginning at 1st level, you know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.\n\nYou don’t need advantage on the attack roll if another enemy of the target is within 5 feet o f it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.\n\nThe amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
+    },
+    {
+      "level": 17,
+      "name": "Sneak Attack (9d6)",
+      "description": "Beginning at 1st level, you know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.\n\nYou don’t need advantage on the attack roll if another enemy of the target is within 5 feet o f it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.\n\nThe amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
+    },
+    {
+      "level": 19,
+      "name": "Sneak Attack (10d6)",
+      "description": "Beginning at 1st level, you know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.\n\nYou don’t need advantage on the attack roll if another enemy of the target is within 5 feet o f it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.\n\nThe amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
+    },
+    {
+      "level": 1,
+      "name": "Thieves' Cant",
+      "description": "During your rogue training you learned thieves’ cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves’ cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly.\n\nIn addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves’ guild, whether loot is nearby, or whether the people in an area are easy marks or w ill provide a safe house for thieves on the run."
+    },
+    {
+      "level": 3,
+      "name": "Cunning Action",
+      "description": "Starting at 3rd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action."
+    },
+    {
+      "level": 2,
+      "name": "Roguish Archetype",
+      "description": "At 2nd level, you choose an archetype that you emulate in the exercise of your rogue abilities: Thief, Assassin, or Arcane Trickster, all detailed at the end of the class description. Your archetype choice grants you features at 2nd level and then again at 6th, 10th, and 14th level."
+    },
+    {
+      "level": 6,
+      "name": "Roguish Archetype Feature",
+      "description": "You gain a Rogueish Archetype feature."
+    },
+    {
+      "level": 10,
+      "name": "Roguish Archetype Feature",
+      "description": "You gain a Rogueish Archetype feature."
+    },
+    {
+      "level": 14,
+      "name": "Roguish Archetype Feature",
+      "description": "You gain a Rogueish Archetype feature."
+    },
+    {
+      "level": 3,
+      "name": "Steady Aim",
+      "description": "As a bonus action, you give yourself advantage on your next attack roll on the current turn. You can use this bonus action only if you haven't moved during this turn, and after you use the bonus action, your speed is 0 until the end of the current turn."
+    },
+    {
+      "level": 4,
+      "name": "Ability Score Improvement",
+      "description": "When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+    },
+    {
+      "level": 10,
+      "name": "Ability Score Improvement (10th)",
+      "description": "When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+    },
+    {
+      "level": 5,
+      "name": "Skill Tricks",
+      "description": "You learn a skill trick, choosing from the options below. Each skill trick has an associated skill with which you must have proficiency to learn it. The existence of a skill trick to do a certain task does not preclude others who do not have that skill trick from attempting it, however, skill tricks allow rogues to do these things without any additional check. You learn an additional skill trick at 9th, 13th, and 17th level.\n\n#### Skill Trick Options\n\n**Tumble (Acrobatics)** You can move through an opponents space. Their space is considered difficult terrain.\n\n**Back on Your Feet (Acrobatics)** You can stand up from prone using only 5 feet of movement.\n\n**Magical Appraisal (Arcana)** You can identify the properties of magic items similarly to the identify spell.\n\n**Fast Mount (Animal Handling)** You can mount or dismount a creature using only 5 feet of movement.\n\n**Extreme Leap (Athletics)** Your jump distance increases by 10 ft.\n\n**Corner Perch (Athletics)** While climbing, if you are in a corner you can brace yourself with your legs allowing you to have both hands free.\n\n**Assume Quirk (Deception)** You have advantage on deception checks made to pretend to be someone you are not.\n\n**Social Recovery (Deception)** When you or an ally you can hear fails a persuasion check you can immediately make a deception check replacing the result of the persuasion check.\n\n**Appraiser (History)** You can easily figure out the value of items. You can easily determine the value of any non-magical item or magical item you have identified.\n\n**Lore Master (History)** Whenever you visit a location on the material plane, you can recall an anecdote about that place you have heard or read before.\n\n**Lie Detector (Insight)** You have advantage on insight checks to determine if a creature is lying\n\n**Distracting Taunt (Intimidation)** So long as an opponent can hear you, you can use a bonus action to attempt to disrupt their concentration on a spell. The target of this effect must immediately make a DC 15 Constitution Save to maintain concentration**Trap Sight (Investigation)** The DC required to find a trap is reduced by 5.\n\n**Healing Hands (Medicine)** Heal a creature by an additional 1d6 hit points when you use the First Aid action and succeed on the medicine check.\n\n**Naturalist (Nature)** You have advantage on nature checks to identify plants.\n\n**Clarity of Vision (Perception)** You can see in lightly obscured areas or dim light as if they were unobscured/brightly lit.\n\n**Listen to This (Perception)** You can repeat things that you have recently heard from others verbatim.\n\n**Haggler (Persuasion)** When shopping you get a 10% discount on all purchases.\n\n**Prayer to the Heavens (Religion)** You can spend one minute praying in order to give yourself advantage on the next ability check you make.\n\n**Clever Improviser (Slight of Hand)** You can disable traps and locks without thieves tools.\n\n**Sudden Draw (Slight of Hand)** As a reaction when a creature moves out of your reach and you have at least 1 hand free you can draw a concealed weapon to make an attack of opportunity as if you were already holding that weapon.\n\n**Disappear (Stealth)** You can hide even if you only have partial cover or are lightly obscured.\n\n**Expert Tracker (Survival)** You can identify the number and species of creatures based on tracks that you find.\n\n"
+    },
+    {
+      "level": 5,
+      "name": "Uncanny Dodge",
+      "description": "Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack’s damage against you."
+    },
+    {
+      "level": 7,
+      "name": "Evasion",
+      "description": "Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon’s fiery breath or an ice storm spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+    },
+    {
+      "level": 11,
+      "name": "Reliable Talent",
+      "description": "By 11th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10."
+    },
+    {
+      "level": 14,
+      "name": "Subtle Strikes",
+      "description": "When you attack you know how to exploit a target's distraction. You have advantage on any attack roll that targets a creature within 5 feet of at least 1 of your allies who isn't incapacitated."
+    },
+    {
+      "level": 15,
+      "name": "Slippery Mind",
+      "description": "By 15th level, you have acquired greater mental strength. You gain proficiency in Wisdom saving throws."
+    },
+    {
+      "level": 18,
+      "name": "Elusive",
+      "description": "Beginning at 18th level, you are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren’t incapacitated."
+    },
+    {
+      "level": 20,
+      "name": "Stroke of Luck",
+      "description": "At 20th level, you have an uncanny knack for succeeding when you need to. If your attack m isses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20.\n\nOnce you use this feature, you can’t use it again until you finish a short or long rest."
+    }
+  ],
+  "subclass": [
+    {
+      "name": "Thief",
+      "castermult": 0,
+      "resources": [],
+      "features": [
+        {
+          "level": 2,
+          "name": "Fast Hands",
+          "description": "You can use the bonus action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to disarm a trap or open a lock, or take the Use an Object action."
+        },
+        {
+          "level": 2,
+          "name": "Second-Story Work",
+          "description": "You gain the ability to climb faster than normal; climbing no longer costs you extra movement.\n\nIn addition, when you make a running jump, the distance you cover increases by a number of feet equal to your Dexterity modifier."
+        },
+        {
+          "level": 6,
+          "name": "Supreme Sneak",
+          "description": "You have advantage on a Dexterity (Stealth) check if you move no more than half your speed on the same turn."
+        },
+        {
+          "level": 10,
+          "name": "Use Magic Device",
+          "description": "You have learned enough about the workings of magic that you can improvise the use of items even when they are not intended for you. You ignore all class, race, and level requirements on the use of magic items."
+        },
+        {
+          "level": 14,
+          "name": "Thief's Reflexes",
+          "description": "You have become adept at laying ambushes and quickly escaping danger. You can take two turns during the first round of any combat. You take your first turn at your normal initiative and your second turn at your initiative minus 10. You can’t use this feature when you are surprised."
+        }
+      ]
+    },
+    {
+      "name": "Assassin",
+      "castermult": 0,
+      "resources": [],
+      "features": [
+        {
+          "level": 2,
+          "name": "Bonus Proficiencies",
+          "description": "When you choose this archetype at 2nd level, you gain proficiency with the disguise kit and the poisoner’s kit."
+        },
+        {
+          "level": 2,
+          "name": "Assassinate",
+          "description": "You are at your deadliest when you get the drop on your enemies. You have advantage on attack rolls against any creature that hasn’t taken a turn in the combat yet. In addition, if your first attack against such a creature hits it is a critical hit."
+        },
+        {
+          "level": 6,
+          "name": "Infiltration Expertise",
+          "description": "You can unfailingly create false identities for yourself. You must spend seven days and 25 gp to establish the history, profession, and affiliations for an identity. You can’t establish an identity that belongs to someone else. For example, you might acquire appropriate clothing, letters of introduction, and official looking certification to establish yourself as a member of a trading house from a remote city so you can insinuate yourself into the company of other wealthy merchants.\n\nThereafter, if you adopt the new identity as a disguise, other creatures believe you to be that person until given an obvious reason not to."
+        },
+        {
+          "level": 10,
+          "name": "Imposter",
+          "description": "You gain the ability to unerringly mimic another person’s speech, writing, and behavior. You must spend at least three hours studying these three components of the person’s behavior, listening to speech, examining handwriting, and observing mannerisms.\n\nYour ruse is indiscernible to the casual observer. If a wary creature suspects something is amiss, you have advantage on any Charisma (Deception) check you make to avoid detection."
+        },
+        {
+          "level": 14,
+          "name": "Death Strike",
+          "description": "You become a master of instant death. When you attack and hit a creature that is surprised, it must make a Constitution saving throw (DC 8 + your Dexterity modifier + your proficiency bonus). On a failed save, double the damage of your attack against the creature."
+        }
+      ]
+    },
+    {
+      "name": "Arcane Trickster",
+      "castermult": 0.5,
+      "resources": [
+        {
+          "name": "Spell Thief",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 17,
+          "recovery": "longrest"
+        }
+      ],
+      "features": [
+        {
+          "level": 2,
+          "name": "Spellcasting",
+          "description": "You augment your expertise with the ability to cast spells.\n\n**Cantrips.** You learn mage hand and two other cantrips of your choice from the Arcane Trickster spell list. You learn an additional Arcane Trickster cantrip of your choice at 10th level and 14th level.\n\n**Spell Slots.** The Arcane Trickster Spellcasting table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.\n\nFor example, if you know the 1st-level spell shield and have a 1st-level and a 2nd-level spell slot available, you can cast shield using either slot.\n\n**Spells Known of 1st-Level and Higher.** You know two 1st-level arcane trickster spells of your choice.\n\nThe Spells Known column of the Eldritch Knight Spellcasting table shows when you learn more arcane trickster spells of 1st level or higher. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.\n\nWhenever you gain a level in this class, you can replace one of the spells you know with another spell of your choice from the arcane trickster spell list. The new spell must be of a level for which you have spell slots\n\n**Spellcasting Ability.** Intelligence is your spellcasting ability for your arcane trickster spells, since you learn your spells through study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.\n\nSpell save DC = 8 + your proficiency bonus + your Intelligence modifier\n\nSpell attack modifier = your proficiency bonus + your Intelligence modifier\n##### Arcane Trickster Spellcasting Table\n<table class='table table-striped'><tr><th>Level</th><th>Cantrips</th><th>Spells Known</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th><th>5th</th></tr><tr><td>2nd</<td><td>3</td><td>2</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>3rd</<td><td>3</td><td>3</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>4th</<td><td>3</td><td>3</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>5th</<td><td>3</td><td>4</td><td>4</td><td>2</td><td>-</td><td>-</td><td>-</td></tr><tr><td>6th</<td><td>3</td><td>4</td><td>4</td><td>2</td><td>-</td><td>-</td><td>-</td></tr><tr><td>7th</<td><td>3</td><td>5</td><td>4</td><td>3</td><td>-</td><td>-</td><td>-</td></tr><tr><td>8th</<td><td>3</td><td>5</td><td>4</td><td>3</td><td>-</td><td>-</td><td>-</td></tr><tr><td>9th</<td><td>3</td><td>6</td><td>4</td><td>3</td><td>2</td><td>-</td><td>-</td></tr><tr><td>10th</<td><td>4</td><td>6</td><td>4</td><td>3</td><td>2</td><td>-</td><td>-</td></tr><tr><td>11th</<td><td>4</td><td>7</td><td>4</td><td>3</td><td>3</td><td>-</td><td>-</td></tr><tr><td>12th</<td><td>4</td><td>7</td><td>4</td><td>3</td><td>3</td><td>-</td><td>-</td></tr><tr><td>13th</<td><td>4</td><td>8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>-</td></tr><tr><td>14th</<td><td>5</td><td>8</td><td>4</td><td>3</td><td>3</td><td>1</td><td>-</td></tr><tr><td>15th</<td><td>5</td><td>9</td><td>4</td><td>3</td><td>3</td><td>2</td><td>-</td></tr><tr><td>16th</<td><td>5</td><td>9</td><td>4</td><td>3</td><td>3</td><td>2</td><td>-</td></tr><tr><td>17th</<td><td>5</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr><tr><td>18th</<td><td>5</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr><tr><td>19th</<td><td>5</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr><tr><td>20th</<td><td>5</td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr></table>"
+        },
+        {
+          "level": 2,
+          "name": "Combat Caster",
+          "description": "You can use a 1-handed weapon with which you are proficient as a spellcasting focus."
+        },
+        {
+          "level": 2,
+          "name": "Mage Hand Legerdemain",
+          "description": "When you cast mage hand, you can make the spectral hand invisible, and you can perform the following additional tasks with it:\n* You can stow one object the hand is holding in a container worn or carried by another creature.\n* You can retrieve an object in a container worn or carried by another creature.\n* You can use thieves’ tools to pick locks and disarm traps at range.\n\nYou can perform one o f these tasks without being noticed by a creature if you succeed on a Dexterity (Sleight of Hand) check contested by the creature’s Wisdom (Perception) check.\n\nIn addition, you can use the bonus action granted by your Cunning Action to control the hand."
+        },
+        {
+          "level": 6,
+          "name": "Magical Ambush",
+          "description": "If you are hidden from a creature when you cast a spell on it, the creature has disadvantage on any saving throw it makes against the spell this turn."
+        },
+        {
+          "level": 10,
+          "name": "Versatile Trickster",
+          "description": "You gain the ability to distract targets with your mage hand. As a bonus action on your turn, you can designate a creature within 5 feet of the spectral hand created by the spell. Doing so gives you advantage on attack rolls against that creature until the end of the turn."
+        },
+        {
+          "level": 14,
+          "name": "Spell Thief",
+          "description": "You gain the ability to magically steal the knowledge of how to cast a spell from another spellcaster.\n\nImmediately after a creature casts a spell that targets you or includes you in its area of effect, you can use your reaction to force the creature to make a saving throw with its spellcasting ability modifier. The DC equals your spell save DC. On a failed save, you negate the spell’s effect against you, and you steal the knowledge o f the spell if it is at least 1st level and of a level you can cast (it doesn’t need to be a wizard spell). For the next 8 hours, you know the spell and can cast it using your spell slots. The creature can’t cast that spell until the 8 hours have passed.\n\nOnce you use this feature, you can’t use it again until you finish a long rest."
+        }
+      ]
+    },
+    {
+      "name": "Mastermind",
+      "castermult": 0,
+      "resources": [],
+      "features": [
+        {
+          "level": 2,
+          "name": "Master of Intrigue",
+          "description": "When you choose this archetype at 2nd level, you gain proficiency with the disguise kit, the forgery kit, and one gaming set of your choice. You also learn two languages of your choice.\n\nAdditionally, you can unerringly mimic the speech patterns and accent of a creature that you hear speak for at least 1 minute, allowing you to pass yourself off as a native speaker of a particular land, provided that you know the language."
+        },
+        {
+          "level": 2,
+          "name": "Master of Tactics",
+          "description": "Starting at 2nd level, you can use the Help action as a bonus action. Additionally, when you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than 5 feet of you, if the target can see or hear you."
+        },
+        {
+          "level": 6,
+          "name": "Insightful Manipulator",
+          "description": "If you spend at least 1 minute observin g or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if the creature is your equa l, s uperior, or inferior in regard to two of the following characteris tics of your choice:\n\n* Intelligence score\n* Wisdom score\n* Charisma score\n* Class levels (if any)\n\nAt the DM's option, you might also realize you know a piece of the creature's history or one of its personality traits, if it has any."
+        },
+        {
+          "level": 10,
+          "name": "Misdirection",
+          "description": "You can sometimes cause another creature to suffer an attack meant for you. When you are targeted by an attack while a creature within 5 feet of you is granting you cover against that attack, you can use your reaction to have the attack target that creature instead of you."
+        },
+        {
+          "level": 14,
+          "name": "Soul of Deceit",
+          "description": "Your thoughts can't be read by telepathy or other means, unless you allow it. You can present false thoughts by making a Charisma (Deception) check contested by the mind reader's Wisdom (Insight) check.\n\nAdditionally, no matter what you say, magic that would determine if you are telling the truth indicates you are being truthful, if you so choose, and you can't be compelled to tell the truth by magic."
+        }
+      ]
+    },
+    {
+      "name": "Swashbuckler",
+      "castermult": 0,
+      "resources": [
+        {
+          "name": "Master Duelist",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 17,
+          "recovery": "shortrest"
+        }
+      ],
+      "features": [
+        {
+          "level": 2,
+          "name": "Fancy Footwork",
+          "description": "When you choose this archetype at 2nd level, you learn how to land a strike and then slip away without reprisal. During your turn, if you make a melee attack against a creature, that creature can't make opportunity attacks against you for the rest of your turn."
+        },
+        {
+          "level": 2,
+          "name": "Rakish Audacity",
+          "description": "Starting at 2nd level, your unmistakable confidence propels you into battle. You can add your Charisma modifier to your initiative rolls.\n\nIn addition, you don't need advantage on your attack roll to use your Sneak Attack if no creature other than your target is within 5 feet of you. All the other rules for the Sneak Attack class feature still apply to you."
+        },
+        {
+          "level": 6,
+          "name": "Panache",
+          "description": "Your charm becomes extraordinarily beguiling. As an action, you can make a Charisma (Persuasion) check contested by a creature's Wisdom (Insight) check. The creature must be able to hear you, and the two of you must share a language.\n\nIf you succeed on the check and the creature is hostile to you, it has disadvantage on attack rolls against targets other than you and can't make opportunity attacks against targets other than you. This effect lasts for 1 minute, until one of your companions attacks the target or affects it with a spell, or until you and the target are more than 60 feet apart.\n\nIf you succeed on the check and the creature isn't hostile to you, it is charmed by you for 1 minute. While charmed, it regards you as a friendly acquaintance. This effect ends immediately if you or your companions do anything harmful to it."
+        },
+        {
+          "level": 10,
+          "name": "Elegant Maneuver",
+          "description": "You can use a bonus action on your turn to gain advantage on the next Dexterity (Acrobatics) or Strength (Athletics) check you make during the same turn."
+        },
+        {
+          "level": 14,
+          "name": "Master Duelist",
+          "description": "Your mastery of the blade lets you turn failure into success in combat. If you miss with an attack roll, you can roll it again with advantage. Once you do so, you can't use this feature again until you finish a short or long rest."
+        }
+      ]
+    },
+    {
+      "name": "Inquisitive",
+      "castermult": 0,
+      "resources": [
+        {
+          "name": "Unerring Eye",
+          "counttype": "WIS1",
+          "count": 0,
+          "minlevel": 10,
+          "recovery": "longrest"
+        }
+      ],
+      "features": [
+        {
+          "level": 2,
+          "name": "Ear for Deceit",
+          "description": "You develop a talent for picking out lies. Whenever you make a Wisdom (Insight) check to determine whether a creature is lying, treat a roll of 7 or lower on the d20 as an 8."
+        },
+        {
+          "level": 2,
+          "name": "Eye for Detail",
+          "description": "You can use a bonus action to make a Wisdom (Perception) check to spot a hidden creature or object or to make an Intelligence (Investigation) check to uncover or decipher clues."
+        },
+        {
+          "level": 2,
+          "name": "Insightful Fighting",
+          "description": "You gain the ability to decipher an opponent's tactics and develop a counter to them. As a bonus action, you can make a Wisdom (Insight) check against a creature you can see that isn’t incapacitated, contested by the target’s Charisma (Deception) check. If you succeed, you can use your Sneak Attack against that target even if you don’t have advantage on the attack roll, but not if you have disadvantage on it.\n\nThis benefit lasts for 1 minute or until you successfully use this feature against a different target."
+        },
+        {
+          "level": 6,
+          "name": "Steady Eye",
+          "description": "You have advantage on any Wisdom (Perception) or Intelligence (Investigation) check if you move no more than half your speed on the same turn."
+        },
+        {
+          "level": 10,
+          "name": "Unerring Eye",
+          "description": "Your senses are almost impossible to foil. As an action, you sense the presence of illusions, shapechangers not in their original form, and other magic designed to deceive the senses within 30 feet of you, provided you aren’t blinded or deafened. You sense that an effect is attempting to trick you, but you gain no insight into what is hidden or into its true nature.\n\nYou can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest."
+        },
+        {
+          "level": 14,
+          "name": "Eye for Weakness",
+          "description": "You learn to exploit a creature’s weaknesses by carefully studying its tactics and movement. While your Insightful Fighting feature applies to a creature, your Sneak Attack damage against that creature increases by 3d6."
+        }
+      ]
+    },
+    {
+      "name": "Scout",
+      "castermult": 0,
+      "resources": [],
+      "features": [
+        {
+          "level": 2,
+          "name": "Skirmisher",
+          "description": "You are difficult to pin down during a fight. You can move up to half your speed as a reaction when an enemy ends its turn within 5 feet of you. This movement doesn’t provoke opportunity attacks."
+        },
+        {
+          "level": 2,
+          "name": "Survivalist",
+          "description": "You gain proficiency in the Nature and Survival skills if you don’t already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies."
+        },
+        {
+          "level": 6,
+          "name": "Superior Mobility",
+          "description": "Your walking speed increases by 10 feet. If you have a climbing or swimming speed, this increase applies to that speed as well."
+        },
+        {
+          "level": 10,
+          "name": "Ambush Master",
+          "description": "You excel at leading ambushes and acting first in a fight.\n\nYou have advantage on initiative rolls. In addition, the first creature you hit during the first round of a combat becomes easier for you and others to strike; attack rolls against that target have advantage until the start of your next turn."
+        },
+        {
+          "level": 14,
+          "name": "Sudden Strike",
+          "description": "You can strike with deadly speed. If you take the Attack action on your turn, you can make one additional attack as a bonus action. This attack can benefit from your Sneak Attack even if you have already used it this turn, but you can’t use your Sneak Attack against the same target more than once in a turn."
+        }
+      ]
+    },
+    {
+      "name": "Phantom",
+      "castermult": 0,
+      "resources": [
+        {
+          "name": "Wails from the Grave",
+          "counttype": "prof",
+          "count": 0,
+          "minlevel": 2,
+          "recovery": "longrest"
+        },
+        {
+          "name": "Ghost Walk",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 10,
+          "recovery": "longrest"
+        }
+      ],
+      "features": [
+        {
+          "level": 2,
+          "name": "Whispers of the Dead",
+          "description": "Echoes of those who have died cling to you. Whenever you finsih a short or long rest, you can choose one skill or tool proficiency that you lack and gain it, as a ghostly presence shares its knowledge  wih you. You lose this proficiency when you use this feature to choose a different proficiency that you lack."
+        },
+        {
+          "level": 2,
+          "name": "Wails from the Grave",
+          "description": "As you nudge someone closer to the grave, you can channel the power of death to harm someone else as well. Immediately after you deal your Sneak Attack damage to a creature on your turn, you can target a second creature that you can see within 30 feet of the first creature. Roll half the number of Sneak Attack dice for your level (round up), and the second creature takes necrotic damage equal to the roll's total, as wails of the dead sound around them for a moment.\n\nYou can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+        },
+        {
+          "level": 6,
+          "name": "Tokens of the Departed",
+          "description": "When a life ends in your presence, you're able to snatch a token from the departing soul, a sliver of its life essence that takes physical form: as a reaction when a creature you can see dies within 30 feet of you, you can open your free hand and cause a Tiny trinket to appear there, a soul trinket. The DM determines the trinket's form or has you roll on the Trinkets table in the Player's Handbook to generate it.\n\nYou can have a maximum number of soul trinkets equal to your proficiency bonus, and you can't create one while at your maximum. You can have a maximum number of soul trinkets equal to your proficiency bonus, and you can't create one while at your maximum.\n\nYou can use soul trinkets in the following ways\n\n* While a soul trinket is on your person, you have advantage on death saving throws and Constitution saving throws, for your vitality is enhanced by the life essence within the object.\n* When you deal Sneak Attack damage on  your turn, you can destroy one of your soul trinkets that's on your person and then immediately use Wails from the Grave, without expending a use of that feature.\n\n* As an action, you can destroy one of your soul trinkets, no matter where it's located. When you do so, you can ask the spirit associated with the trinket one question. The spirit appears to you and answers in a language it knew in life. It's under no obligation to be truthful, and it answers as concisely as possible, eager to be free. The spirit knows only what it knew in life, as determined by the DM."
+        },
+        {
+          "level": 10,
+          "name": "Ghost Walk",
+          "description": "You can phase partially into the realm of the dead, becoming like a ghost. As a bonus action, you assume a spectral form. While in this form, you have a flying speed of 10 feet, you can hover, and attack rolls have disadvantage against you. You can also move through creatures and objects as if they were difficult terrain, but you take 1d10 force damage if you end your turn inside a creature or an object.\n\nYou stay in this form for 10 minutes or until you end it as a bonus action. To use this feature again, you must finish a long rest or destroy one of your soul trinkets as part of the bonus action you use to activate Ghost Walk."
+        },
+        {
+          "level": 14,
+          "name": "Death's Friend",
+          "description": "Your association with death has become so close that you gain the following benefits:\n\n* When you use your Wails from the Grave, you can deal the necrotic damage to both the first and the second creature.\n* At the end of a long rest, a soul trinket appears in your hand if you don't have any soul trinkets, as the spirits of the dead are drawn to you."
+        }
+      ]
+    },
+    {
+      "name": "Soulknife",
+      "castermult": 0,
+      "resources": [
+        {
+          "name": "Psionic Energy Dice",
+          "counttype": "prof2",
+          "count": 0,
+          "minlevel": 2,
+          "recovery": "longrest"
+        },
+        {
+          "name": "Psychic Veil",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 10,
+          "recovery": "longrest"
+        },
+        {
+          "name": "Rend Mind",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 14,
+          "recovery": "longrest"
+        }
+      ],
+      "features": [
+        {
+          "level": 2,
+          "name": "Psionic Power",
+          "description": "You harbor a wellspring of psionic energy within yourself. This energy is represented by your Psionic Energy dice, which are each a d6. You have a number of these dice equal to twice your proficiency bonus, and they fuel various psionic powers you have, which are detailed below.\n\nSome of your powers expend the Psionic Energy die they use, as specified in a power's description, and you can't use a power if it requires you to use a die when your dice are all expended. You regain all your expended Psionic Energy dice when you finish a long rest. In addition as a bonus action, you can regain one expended Psionic Energy die, but you can't do so again until you finish a short or long rest.\n\nWhen you reach certain levels in this class, the size of your Psionic Energy dice increases: at 5th level (d8), 11th level (d10) and 17th level (d12). The powers below use your psionic energy dice.\n\n**Psi-Bolstered Knack.** When your nonpsionic training fails you, your psionic power can help: if you fail an ability check using a skill or tool with which you have proficiency, you can roll one Psionic Energy die and add the number rolled to the check, potentially turning failure into success. You expend the die only if the roll succeeds.\n\n**Psychic Whispers.** You can establish telepathic communication between yourself and others-perfect for quiet infiltration. As an action, choose one or more creatures you can see, up to a number of creatures equal to your proficiency bonus, and then roll one Psionic Energy die. For a number of hours equal to the number rolled, the chosen creatures can speak telepathically with you, and you can speak telepathically with them. To send or receive a message (no action required), you and the other creature must be within 1 mile of each other. A creature can't use this telepathy if it can't speak any languages, and a create can end the telepathic connection at any time (no action required). You and the creature don't need to speak a common language to understand each other.\n\nThe first time you use this power after each long rest, you don't expend the Psionic Energy die. All other times you use the power, you expend the die."
+        },
+        {
+          "level": 2,
+          "name": "Psychic Blades",
+          "description": "You can manifest your psionic power as shimmering blades of psychic energy. Whenever you take the Attack action, you can manifest a psychic blade from your free hand and make the attack with that blade. This magic blade is a simple melee weapon with the finesse and thrown properties. It has a normal range of 60 feet and no long range, and on a hit, it deals psychic damage equal to 1d8 plus the ability modifier you used for the attack roll. The blade vanishes immediately after it hits or misses its target, and it leaves no mark on its target if it deals damage.\n\nAfter you attack with the blade, you can make a melee or ranged weapon attack with a second psychic blade as a bonus action on the same turn, provided your other hand is free to create it. The damage die of this bonus attack is 1d6, instead of 1d8."
+        },
+        {
+          "level": 6,
+          "name": "Soul Blades",
+          "description": "Your Psychic Blades are now an expression of your psi-suffused soul, giving you these powers that use your Psionic Energy dice:\n\n**Homing Strikes.** If you make an attack roll with your Psychic Blades and miss the target, you can roll one Psionic Energy die and add the number rolled to the attack roll. If this causes the attack to hit, you expend the Psionic Energy die.\n\n**Psychic Teleportation.** As a bonus action you manifest one of your Psychic Blades, expend one Psionic Energy die and roll it, and throw the blade at an unoccupied space you can see, up to a number of feet away equal to 10 times the number rolled. You then teleport to that space, and the blade vanishes."
+        },
+        {
+          "level": 10,
+          "name": "Psychic Veil",
+          "description": "You can weave a veil of psychic static to mask yourself. As an action, you can magically become invisible, along with anything you are wearing or carrying, for 1 hour or until you dismiss this effect (no action required). This invisibility ends early immediately after you deal damage to a creature or you force a creature to make a saving throw.\n\nOnce you use this feature, you can't do so again until you finish a long rest, unless you expend a Psionic Energy die to use this feature again."
+        },
+        {
+          "level": 14,
+          "name": "Rend Mind",
+          "description": "You can sweep your Psychic Blades directly through a creature's mind. When you use your Psychic Blades to deal Sneak Attack damage to a creature, you  can force that target to make a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Dexterity modifier). If the save fails the target is stunned for 1 minute The stunned target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.\n\nOnce you use this feature, you can't do so again until you finish a long rest, unless you expend three Psionic Energy dice to use it again."
+        }
+      ]
+    }
+  ]
+}

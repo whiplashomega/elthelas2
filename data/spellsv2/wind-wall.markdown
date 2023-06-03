@@ -22,7 +22,7 @@ tags: [arcanetrickster, druid, ranger, eldritchknight, level3, evocation]
 
 **Damage**: [ { "dice": "3d8", "label": "bludgeoning", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
-A wall of strong wind rises from the ground at a point you choose within range. You can make the wall up to 50 feet long, 15 feet high, and 1 foot thick. You can shape the wall in any way you choose so long as it makes one continuous path along the ground. The wall lasts for the duration.
+A wall of strong wind rises from the ground at a point you choose within range. You can make the wall up to 15m long, 4m high, and 1 foot thick. You can shape the wall in any way you choose so long as it makes one continuous path along the ground. The wall lasts for the duration.
 
 When the wall appears, each creature within its area must make a Strength saving throw. A creature takes 3d8 bludgeoning damage on a failed save, or half as much damage on a successful one.
 

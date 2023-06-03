@@ -10,7 +10,7 @@ tags:   [wizard, level8, conjuration, maze]
 
 **Casting Time**: 1 action
 
-**Range**: 60 feet
+**Range**: 18m
 
 **Components**: V, S
 

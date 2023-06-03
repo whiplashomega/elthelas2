@@ -10,15 +10,15 @@ tags: [sorcerer, warlock, wizard, cantrip, necromancy]
 
 **Casting Time**: 1 action
 
-**Range**: 120 feet
+**Range**: 36m
 
 **Components**: V, S
 
 **Duration**: 1 round
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ { "dice": "1d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d8" } ]
 

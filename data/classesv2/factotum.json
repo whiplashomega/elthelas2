@@ -138,7 +138,7 @@
         {
           "level": 10,
           "name": "Tactician",
-          "description": "You are adept at analyzing your allies and enemies fighting styles and the way they might mesh. As a reaction you can spend an epiphany point to grant advantage on an attack roll to one creature who can hear you within 30 ft against an enemy you can see."
+          "description": "You are adept at analyzing your allies and enemies fighting styles and the way they might mesh. As a reaction you can spend an epiphany point to grant advantage on an attack roll to one creature who can hear you within 9m against an enemy you can see."
         },
         {
           "level": 14,

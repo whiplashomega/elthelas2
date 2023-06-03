@@ -10,15 +10,15 @@ tags: [sorcerer, wizard, eldritchknight, level1, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 90 feet
+**Range**: 27m
 
 **Components**: V, S, M (a diamond worth at least 50gp)
 
 **Duration**: Instantaneous
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ { "dice": "3d8", label: "acid, cold, fire, lightning, poison, or thunder", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d8" } ]
 

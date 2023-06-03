@@ -67,6 +67,8 @@ var Characterv2 = new Schema({
   feats: [],
   fightingstyles: [],
   bonusstyles: 0,
+  skilltricks: [],
+  bonustricks: 0,
   metamagic: [],
   bonusmetamagic: 0,
   invocations: [],

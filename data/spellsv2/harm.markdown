@@ -10,7 +10,7 @@ tags: [cleric, level6, necromancy]
 
 **Casting Time**: 1 action
 
-**Range**: 60 feet
+**Range**: 18m
 
 **Components**: V, S
 

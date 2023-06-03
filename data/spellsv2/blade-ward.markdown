@@ -8,7 +8,7 @@ tags: [arcanetrickster, bard, sorcerer, warlock, wizard, eldritchknight, cantrip
 
 **Abjuration cantrip**
 
-**Casting Time**: 1 action
+**Casting Time**: 1 bonus action
 
 **Range**: Self
 
@@ -22,4 +22,4 @@ tags: [arcanetrickster, bard, sorcerer, warlock, wizard, eldritchknight, cantrip
 
 **Damage**: [ ]
 
-You extend your hand and trace a sigil of warding in the air. Until the end of your next turn, you have resistance against bludgeoning, piercing, and slashing damage dealt by weapon attacks.
+You extend your hand and trace a sigil of warding in the air. Until the end of your next turn, you have resistance against either bludgeoning, piercing, or slashing damage, choose one at the time you cast the spell.

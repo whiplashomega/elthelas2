@@ -10,7 +10,7 @@ tags: [bard, sorcerer, warlock, wizard, eldritchknight, cantrip, divination]
 
 **Casting Time**: 1 action
 
-**Range**: 30 feet
+**Range**: 9m
 
 **Components**: S
 

@@ -6,7 +6,7 @@
   "traits": [
     { "name": "Size", "description": "Firbolg are between 7 and 8 feet tall and weigh between 240 and 300 pounds. Your size is Medium." },
     { "name": "Firbolg Magic", "description": "You can cast detect magic and disguise self with this trait, using Wisdom as your spellcasting ability for them. Once you cast either spell, you can't cast it again with this trait until you finish a short or long rest. When you use this version of disguise self, you can seem up to 3 feet shorter than normal, allowing you to more easily blend in with humans and elves." },
-    { "name": "Speed", "description": "Your base walking speed is 30 feet." },
+    { "name": "Speed", "description": "Your base walking speed is 9m." },
     { "name": "Hidden Step", "description": "As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Once you use this trait, you can't use it again until you finish a short or long rest." },
     { "name": "Powerful Build", "description": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift." },
     { "name": "Speech of Beast and Leaf", "description": "You have the ability to communicate in a limited manner with beasts and plants. They can understand the meaning of your words, though you have no special ability to understand them in return. You have advantage on all Charisma checks you make to influence them." }
@@ -28,7 +28,7 @@
       "image": "https://elthelas-images.herokuapp.com/races/firbolg.jpg",
       "description": "",
       "traits": [
-      
+
       ],
       "averageheight": 90,
       "baseheight": 76,
@@ -36,7 +36,7 @@
       "averageweight": 270,
       "baseweight": 200,
       "weightroll": "2d4",
-      "speed": [30, 0, 0, 0, 0]
-    }  
+      "speed": [9, 0, 0, 0, 0]
+    }
   ]
 }

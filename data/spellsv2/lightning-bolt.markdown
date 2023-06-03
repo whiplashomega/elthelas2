@@ -10,7 +10,7 @@ tags: [sorcerer, wizard, eldritchknight, level3, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: Self (100-foot line)
+**Range**: Self (30m line)
 
 **Components**: V, S, M (a bit of fur and a rod of amber, crystal, or glass)
 
@@ -22,7 +22,7 @@ tags: [sorcerer, wizard, eldritchknight, level3, evocation]
 
 **Damage**: [ { "dice": "8d6", "label": "lightning", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d6" } ]
 
-A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one.
+A stroke of lightning forming a line 30m long and 1m wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one.
 
 The lightning ignites flammable objects in the area that aren't being worn or carried.
 

@@ -2,9 +2,9 @@ Adventuring
 Movement
 Speed
 <p>
-  Every character and monster has a speed, which is the distance in feet that the character or monster can walk in 1 round. This number assumes short bursts of energetic movement in the midst of a life-threatening situation. The following rules determine how far a character or monster can move in a minute, an hour, or a day.
+  Every character and monster has a speed, which is the distance in meters that the character or monster can walk in 1 round. This number assumes short bursts of energetic movement in the midst of a life-threatening situation. The following rules determine how far a character or monster can move in a minute, an hour, or a day.
 </p>
-        <h4>Travel Pace</h4>
+<h4>Travel Pace</h4>
 <p>
   While traveling, a group of adventurers can move at a normal, fast, or slow pace, as shown on the Travel Pace table. The table states how far the party can move in a period of time and whether the pace has any effect. A fast pace makes characters less perceptive, while a slow pace makes it possible to sneak around and to search an area more carefully.
 </p>
@@ -28,9 +28,9 @@ Speed
     <tr><th>Pace</th><th>Distance per Minute</th><th>Distance per Hour</th><th>Distance per Day</th><th>Effect</th></tr>
   </thead>
   <tbody>
-    <tr><td>Fast</td><td>400 feet</td><td>4 miles</td><td>30 miles</td><td>-5 penalty to passive Wisdom (Perception) scores</td></tr>
-    <tr><td>Normal</td><td>300 feet</td><td>3 miles</td><td>24 miles</td><td>-</td></tr>
-    <tr><td>Slow</td><td>200 feet</td><td>2 miles</td><td>18 miles</td><td>Able to Use Stealth</td></tr>
+    <tr><td>Fast</td><td>120m</td><td>7km</td><td>56km</td><td>-5 penalty to passive Wisdom (Perception) scores</td></tr>
+    <tr><td>Normal</td><td>90m</td><td>5km</td><td>40km</td><td>-</td></tr>
+    <tr><td>Slow</td><td>60m</td><td>3.5km</td><td>28km</td><td>Able to Use Stealth</td></tr>
   </tbody>
 </table>
 <h4>Difficult Terrain</h4>
@@ -38,5 +38,5 @@ Speed
   The travel speeds given in the Travel Pace table assume relatively simple terrain: roads, open plains, or clear dungeon corridors. But adventurers often face dense forests, deep swamps, rubble-filled ruins, steep mountains, and ice-covered ground--all considered difficult terrain.
 </p>
 <p>
-  You move at half speed in difficult terrain--moving 1 foot in difficult terrain costs 2 feet of speed--so you can cover only half the normal distance in a minute, an hour, or a day.
+  You move at half speed in difficult terrain--moving 1 meter in difficult terrain costs 2 meter of speed--so you can cover only half the normal distance in a minute, an hour, or a day.
 </p>

@@ -10,7 +10,7 @@ tags: [sorcerer, warlock, wizard, level6, conjuration]
 
 **Casting Time**: 1 action
 
-**Range**: 500 feet
+**Range**: 150m
 
 **Components**: V, S
 
@@ -22,7 +22,7 @@ tags: [sorcerer, warlock, wizard, level6, conjuration]
 
 **Damage**: [ ]
 
-You create linked teleportation portals that remain open for the duration. Choose two points on the ground that you can see, one point within 10 feet of you and one point within 500 feet of you. A circular portal, 10 feet in diameter, opens over each point. If the portal would open in the space occupied by a creature, the spell fails, and the casting is lost.
+You create linked teleportation portals that remain open for the duration. Choose two points on the ground that you can see, one point within 3m of you and one point within 150m of you. A circular portal, 3m in diameter, opens over each point. If the portal would open in the space occupied by a creature, the spell fails, and the casting is lost.
 
 The portals are two-dimensional glowing rings filled with mist, hovering inches from the ground and perpendicular to it at the points you choose. A ring is visible only from one side (your choice), which is the side that functions as a portal.
 

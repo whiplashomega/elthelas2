@@ -10,7 +10,7 @@ tags: [druid, sorcerer, warlock, wizard, level6, transmutation]
 
 **Casting Time**: 1 action
 
-**Range**: 60 feet
+**Range**: 18m
 
 **Components**: V, S, M (a pinch of lime, water, and earth)
 

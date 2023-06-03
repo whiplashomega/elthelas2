@@ -10,7 +10,7 @@ tags: [arcanetrickster, bard, cleric, sorcerer, wizard, level3, divination]
 
 **Casting Time**: 10 minutes
 
-**Range**: 1 mile
+**Range**: 2km
 
 **Components**: V, S, M (a focus worth at least 100gp, either a jeweled horn for hearing or a glass eye for seeing)
 

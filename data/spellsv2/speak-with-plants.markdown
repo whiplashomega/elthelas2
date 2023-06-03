@@ -10,7 +10,7 @@ tags: [bard, druid, ranger, level3, transmutation]
 
 **Casting Time**: 1 action
 
-**Range**: Self (30-foot radius)
+**Range**: Self (9m radius)
 
 **Components**: V, S
 
@@ -22,7 +22,7 @@ tags: [bard, druid, ranger, level3, transmutation]
 
 **Damage**: []
 
-You imbue plants within 30 feet of you with limited sentience and animation, giving them the ability to communicate with you and follow your simple commands. You can question plants about events in the spell’s area within the past day, gaining information about creatures that have passed, weather, and other circumstances.
+You imbue plants within 9m of you with limited sentience and animation, giving them the ability to communicate with you and follow your simple commands. You can question plants about events in the spell’s area within the past day, gaining information about creatures that have passed, weather, and other circumstances.
 
 You can also turn difficult terrain caused by plant growth (such as thickets and undergrowth) into ordinary terrain that lasts for the duration. Or you can turn ordinary terrain where plants are present into difficult terrain that lasts for the duration, causing vines and branches to hinder pursuers, for example.
 

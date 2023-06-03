@@ -1,0 +1,40 @@
+{
+  "id": "kobolds",
+  "name": "Kobolds",
+  "singular": "Kobold",
+  "description": "\n\nPeripherally related to dragons, kobolds, unlike Dragonborn, are not half-breeds but instead genetic misfits. Kobolds, over the years, have evolved to be closer in form and type to the humanoids who live around them than the dragons that originally spawned them. Most have lost the ability to fly, as well as the innate magic otherwise common to dragonkind.\n\nEarly kobolds hid from their dragon elders in the nooks and crannies of the lairs of dragons, building tunnels in which to live, and whole societies that revolved around the scraps left by True Dragons. It became advantageous for kobolds to be small and quiet, and their evolution rapidly reflected this.\n\nAs many True Dragons died off over the millenia, the kobolds took over the old lairs and began sending out hunting parties above ground. However, it quickly became apparent that the small, slight kobolds could not effectively compete against the surface races either, at least not on their terms.\n\nToday Kobolds are capable craftsman and delvers, but lack the resources and technology to forge a society that can stand on its own. They live in mines and caves, and defend them ferociously, working in packs to overwhelm opponents that they could never hope to defeat on their own.",
+  "traits": [
+    { "name": "Size", "description": "Kobolds are between 2 and 3 feet tall and weigh between 25 and 35 pounds. Your size is Small." },
+    { "name": "Speed", "description": "Your base walking speed is 30 feet." },
+    { "name": "Darkvision", "description": "Darkvision 60 ft" },
+    { "name": "Grovel, Cower, and Beg", "description": "As an action on your turn, you can cower pathetically to distract nearby foes. Until the end of your next turn, your allies gain advantage on attack rolls against enemies within 10 feet of you that can see you. Once you use this trait, you can't use it again until you finish a short or long rest." },
+    { "name": "Pack Tactics", "description": "You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated." }
+  ],
+  "agepoints": {
+    "puberty": 7,
+    "sexualmaturity": 10,
+    "mentalmaturity": 10,
+    "middleage": 60,
+    "oldage": 80,
+    "averagelifespan": 100,
+    "maxage": 120
+  },
+  "subraces": [
+    {
+      "id": "default",
+      "name": "",
+      "image": "https://elthelas-images.herokuapp.com/races/kobold.jpg",
+      "description": "",
+      "traits": [
+      
+      ],
+      "averageheight": 30,
+      "baseheight": 25,
+      "heightroll": "2d4",
+      "averageweight": 30,
+      "baseweight": 25,
+      "weightroll": "1",
+      "speed": [30, 0, 0, 0, 0]
+    }  
+  ]
+}

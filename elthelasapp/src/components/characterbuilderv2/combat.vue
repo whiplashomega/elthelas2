@@ -26,13 +26,13 @@
         <div class="charsheet-static">
           <div class="row">
             <div class="col">
-              Speed: {{ getSpeedStat(0) }} ft<br />
-              Climb: {{ getSpeedStat(2) }} ft<br />
-              Burrow: {{ getSpeedStat(4) }} ft
+              Speed: {{ getSpeedStat(0) }}m<br />
+              Climb: {{ getSpeedStat(2) }}m<br />
+              Burrow: {{ getSpeedStat(4) }}m
             </div>
             <div class="col">
-              Fly: {{ getSpeedStat(1) }} ft<br />
-              Swim: {{ getSpeedStat(3) }} ft
+              Fly: {{ getSpeedStat(1) }}m<br />
+              Swim: {{ getSpeedStat(3) }}m
             </div>
           </div>
         </div>

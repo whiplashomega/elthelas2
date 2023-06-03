@@ -122,6 +122,8 @@ export default function() {
     bonusinvocations: 0,
     infusions: [],
     bonusinfusions: 0,
+    skilltricks: [],
+    bonustricks: 0,
     attBonus: [0, 0, 0, 0, 0, 0],
     dr: {
       piercing: 0,

@@ -32,7 +32,10 @@ Casting a Spell
   The target of a spell must be within the spell’s range. For a spell like magic missile, the target is a creature. For a spell like fireball, the target is the point in space where the ball of fire erupts.
 </p>
 <p>
-  Most spells have ranges expressed in feet. Some spells can target only a creature (including you) that you touch. Other spells, such as the shield spell, affect only you. These spells have a range of self.
+  Most spells have ranges expressed in meters. Some spells can target only a creature (including you) that you touch. Other spells, such as the shield spell, affect only you. These spells have a range of self. A few spells that rely on weapons or material components held in your hand may have a range equal to your reach.
+</p>
+<p>
+  If a spells range is equal to touch, you must be within your unarmed reach of the creature (typically 1m for a medium or smaller creature) and have a hand free to touch the target. If a spell has a range of reach the range of the spell is equal to your reach when wielding the material component required by the spell. For example, if the spell has a material component of a weapon (such as booming blade) the range of the spell is equal to your reach when wielding that weapon.
 </p>
 <p>
   Spells that create cones or lines of effect that originate from you also have a range of self, indicating that the origin point of the spell’s effect must be you (see "Areas of Effect").
@@ -146,7 +149,7 @@ Casting a Spell
 </p>
 <h5>Sphere</h5>
 <p>
-  You select a sphere’s point of origin, and the sphere extends outward from that point. The sphere’s size is expressed as a radius in feet that extends from the point.
+  You select a sphere’s point of origin, and the sphere extends outward from that point. The sphere’s size is expressed as a radius in meters that extends from the point.
 </p>
 <p>
   A sphere’s point of origin is included in the sphere’s area of effect.
@@ -163,7 +166,7 @@ Casting a Spell
   Some spells require the caster to make an attack roll to determine whether the spell effect hits the intended target. Your attack bonus with a spell attack equals your spellcasting ability modifier + your proficiency bonus.
 </p>
 <p>
-  Most spells that require attack rolls involve ranged attacks. Remember that you have disadvantage on a ranged attack roll if you are within 5 feet of a hostile creature that can see you and that isn’t incapacitated.
+  Most spells that require attack rolls involve ranged attacks. Remember that you have disadvantage on a ranged attack roll if you are within the reach of a hostile creature that can see you and that isn’t incapacitated.
 </p>
 <h4>Combining Magical Effects</h4>
 <p>

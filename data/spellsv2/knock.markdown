@@ -10,7 +10,7 @@ tags: [arcanetrickster, sorcerer, wizard, bard, level2, transmutation]
 
 **Casting Time**: 1 action
 
-**Range**: 60 feet
+**Range**: 18m
 
 **Components**: V
 

@@ -10,19 +10,19 @@ tags: [cleric, druid, paladin, ranger, sorcerer, level3, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 60 feet
+**Range**: 18m
 
 **Components**: V, S
 
 **Duration**: 1 hour
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ ]
 
-A 60-foot-radius sphere of light spreads out from a point you choose within range. The sphere is bright light and sheds dim light for an additional 60 feet.
+A 18m-radius sphere of light spreads out from a point you choose within range. The sphere is bright light and sheds dim light for an additional 18m.
 
 If you chose a point on an object you are holding or one that isn’t being worn or carried, the light shines from the object and moves with it. Completely covering the affected object with an opaque object, such as a bowl or a helm, blocks the light.
 

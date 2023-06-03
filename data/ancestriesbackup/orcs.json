@@ -1,0 +1,77 @@
+{
+  "id": "orcs",
+  "name": "Orcs",
+  "singular": "Orc",
+  "description": "\n\nOrcs are primarily characterized by their great strength. They are slightly taller than humans, and much more muscular, with green to mottled brown skin, large noses, a prominent brow-ridge and an underbite featuring tusks. While they are stereotyped as being stupid, evil, and cruel, only the last 2 are usually true. They are also the most populous race in the world save humans, and had they the same room to expand, they probably would have outbred humans long ago.\n\nOrcs are also generally tribal, and orcish society revolves around rule by the strongest. Unfortunately this does not lead to stable societies, but rather warlords who rise and fall, usually within a few years, and who war amongst themselves. These warlords are generally High Orcs, a breed that has long separated itself from their kin, favoring skill in leadership or sorcerous magic over pure brute strength. Far to the south, in Nerim, the Sand Orc tribes roam.\n\n#### Orc Culture in Elthelas\n\nThe Orcs in Elthelas are far more organized and varied than orcs in most settings. Their tendency towards chaos has been tempered by a natural respect for strength and a natural willingness to follow those who are stronger than they. This enables strong and ambitious warlords who can persuade others to follow them to build up strength and power. Their vast territory of fertile land also means that they developed farming, culture, and civilization right alongside the other nations of the world. While they lack a natural prediliction towards feats of the mind, building a great building can be seen as a sign of strength just as much as personal combat. Their numerical superiority over their early neighbors, the goblinoids and gnolls, enabled them to dominate these other races, enslaving them or otherwise manipulating them towards their own ends.\n\nOrc culture is focused on achieving personal strength and skill. Every town of size has regular gladiatorial tournaments, where warriors, both free and slave, compete against each other. Success in the tournaments is considered an excellent way to attract a mate, for both men and women, and comes with substantial prizes that can help to jumpstart a new household. Farming among the orcs focuses on the raising of livestock, particularly pigs, chickens, or other animals that require little feed to raise to adulthood.\n\nMedicine and magic among the orcs is most often practiced by witch doctors living on the fringes of society, or elites who use their sorcery to outwit their peers.  The church of Mat'raktha always has a firm hand in the order of society, intervening when clan wars become hot enough to threaten the cohesion of orcish society, and demanding the proper rights from any warlord who wishes to sit on the council in Marinval. A cleric may be consulted by both sides in a clan dispute before hostilities progress to blood, and that cleric may suggest alternative remedies to all-out war, such as a gladiatorial bout between clan champions, or a peace settlement to prevent a larger clan from wiping out a weaker one.",
+  "traits": [
+    { "name": "Size", "description": "Orcs are somewhat larger and bulkier than humans, and they range from 5 to well over 6 feet tall. Your size is medium." },
+    { "name": "Speed", "description": "Your base walking speed is 30 ft." },
+    { "name": "Darkvision", "description": "60 ft." },
+    { "name": "Menacing", "description": "You gain proficiency in the intimidation skill." },
+    { "name": "Aggressive", "description": "As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started." }
+  ],
+  "agepoints": {
+    "puberty": 9,
+    "sexualmaturity": 11,
+    "mentalmaturity": 20,
+    "middleage": 30,
+    "oldage": 40,
+    "averagelifespan": 55,
+    "maxage": 70
+  },
+  "subraces": [
+    {
+      "id": "gruntorcs",
+      "name": "Grunt Orcs",
+      "singular": "Grunt Orc",
+      "image": "https://elthelas-images.herokuapp.com/races/gruntorc.jpg",
+      "description": "The grunt orcs have never really been able to rule themselves in any organized or permanent manner. When they haven't been ruled by outsiders or their high orc brethren, they have generally been little more than tribal, ruled by whatever warlord happened to be the strongest. Grunt Orcs are the strongest of the orc breeds, and make up the bulk of the orc armies. When not at war they often compete in feats of strength, including blood sports.",
+      "traits": [
+        { "name": "Savage Attacks", "description": "When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit." },
+        { "name": "Blood Scent", "description": "When an opponent is reduced to half or fewer hitpoints, the scent of the blood can send you into a sort of frenzy. Attacks against foes with half or fewer hit points do an extra 2 damage." }
+      ],
+      "averageheight": 75,
+      "baseheight": 62,
+      "heightroll": "2d12",
+      "averageweight": 265,
+      "baseweight": 175,
+      "weightroll": "2d6",
+      "speed": [30, 0, 0, 0, 0]
+    },
+    {
+      "id": "highorcs",
+      "name": "High Orcs",
+      "singular": "High Orc",
+      "image": "https://elthelas-images.herokuapp.com/races/highorc.jpg",
+      "description": "The high orcs are less strong, and slightly smaller than grunt orcs, and more than a bit lazy, but they make up for it with greater social skills and diplomatic nature. They tend to be the rulers in Orc society, playing others off each other to rise to the top in orcish politics, befriending the strongest grunt orcs, and using them as champions as they rise to the top of society. Many of the high orcs live apart from their kin, on the island nation of Olda, where they keep vast hordes of slaves to do their bidding, watched over by highly paid mercenaries.",
+      "traits": [
+        { "name": "Commanding Presence", "description": "You have been born and bred for leadership. You have advantage on all Charisma (Persuasion) and Charisma (Intimidation) checks." }
+      ],
+      "averageheight": 69,
+      "baseheight": 58,
+      "heightroll": "2d10",
+      "averageweight": 215,
+      "baseweight": 140,
+      "weightroll": "2d6",
+      "speed": [30, 0, 0, 0, 0]
+    },
+    {
+      "id": "sandorcs",
+      "name": "Sand Orcs",
+      "singular": "Sand Orc",
+      "image": "https://elthelas-images.herokuapp.com/races/sandorc.jpg",
+      "description": "\n\nThe Sand Orcs are an offshoot of Grunt Orcs that have taken up a nomadic lifestyle in the deserts of Nerim. They are a hardy people, and excellent riders, making use of powerful riding lizards for travel. They move from oasis to oasis in wandering tribes, and have little contact with the outside world.\n\nSand Orcs are leaner compared to their Grunt Orc and High Orc cousins, and their skin more brown and tan than green.\n\n",
+      "traits": [
+        { "name": "Savage Attacks", "description": "When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit." },
+        { "name": "Fire Resistance", "description": "You have resistance to fire damage." }
+      ],
+      "averageheight": 73,
+      "baseheight": 60,
+      "heightroll": "2d12",
+      "averageweight": 231,
+      "baseweight": 140,
+      "weightroll": "2d6",
+      "speed": [30, 0, 0, 0, 0]
+    }
+  ]
+}

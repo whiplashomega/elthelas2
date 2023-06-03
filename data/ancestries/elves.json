@@ -27,8 +27,8 @@
       "image": "https://elthelas-images.herokuapp.com/races/highelf.jpg",
       "description": "\n\nThe High Elves make up the majority of the ruling and merchant class of elves in Eldoran, and are the primary residents in the cities. They are relatively few compared to the Wood Elves who live throughout the countryside, but because most elven merchants are high elves, they tend to be considered the most stereotypical. High Elves are somewhat weaker, but better educated then Wood Elves.\n\n",
       "traits": [
-        { "name": "Speed", "description": "Your base walking speed is 30 feet." },
-        { "name": "Darkvision", "description": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in the darkness, only shades of gray." },
+        { "name": "Speed", "description": "Your base walking speed is 9m." },
+        { "name": "Darkvision", "description": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 18m of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in the darkness, only shades of gray." },
         { "name": "Cantrip", "description": "You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it." },
         { "name": "Extra Language", "description": "You can speak, read, and write one extra language of your choice." }
       ],
@@ -38,7 +38,7 @@
       "averageweight": 120,
       "baseweight": 90,
       "weightroll": "1d4",
-      "speed": [30, 0, 0, 0, 0]
+      "speed": [9, 0, 0, 0, 0]
     },
     {
       "id": "moonelves",
@@ -47,7 +47,7 @@
       "image": "https://elthelas-images.herokuapp.com/races/moonelf.jpg",
       "description": "The Moon Elves of Demal Thor are a hardier breed of elves than the High Elves or Wood Elves, but they are gruff loners who generally appear standoffish to those outside of their clan. They live in nomadic clans of between 2 and 3 hundred individuals that wander the plains following the herds.",
       "traits": [
-        { "name": "Speed", "description": "Your base walking speed is 35 feet." },
+        { "name": "Speed", "description": "Your base walking speed is 10m." },
         { "name": "Nomad", "description": "You have proficiency with the survival skill, and add double your proficiency bonus to Wisdom (survival) checks." }
       ],
       "averageheight": 65,
@@ -56,7 +56,7 @@
       "averageweight": 140,
       "baseweight": 100,
       "weightroll": "1d6",
-      "speed": [35, 0, 0, 0, 0]
+      "speed": [10, 0, 0, 0, 0]
     },
     {
       "id": "wildelves",
@@ -65,8 +65,8 @@
       "image": "https://elthelas-images.herokuapp.com/races/wildelf.jpg",
       "description": "The Wild Elves are as rare as they are reclusive, living in small groups in the deepest jungles of Eldoran and Gnarra. They generally lack education, and are often considered feral and uncivilized by other elves.",
       "traits": [
-        { "name": "Speed", "description": "Your base walking speed is 35 feet." },
-        { "name": "Darkvision", "description": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in the darkness, only shades of gray." },
+        { "name": "Speed", "description": "Your base walking speed is 10m." },
+        { "name": "Darkvision", "description": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 18m of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in the darkness, only shades of gray." },
         { "name": "Cantrip", "description": "You know one cantrip of your choice from the sorcerer spell list. Charisma is your spellcasting ability for it." }
       ],
       "averageheight": 62,
@@ -75,7 +75,7 @@
       "averageweight": 115,
       "baseweight": 90,
       "weightroll": "1d4",
-      "speed": [35, 0, 0, 0, 0]
+      "speed": [10, 0, 0, 0, 0]
     },
     {
       "id": "woodelves",
@@ -84,8 +84,8 @@
       "image": "https://elthelas-images.herokuapp.com/races/woodelf.jpg",
       "description": "The Wood Elves of Eldoran are only slightly removed from their feral roots. The Wood Elves are relatively unfamiliar with the learning and education present in much of modern civilization, but they are naturally strong, spending their lives as farmers, woodsmen, and craftsmen.",
       "traits": [
-        { "name": "Speed", "description": "Your base walking speed is 35 feet." },
-        { "name": "Darkvision", "description": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in the darkness, only shades of gray." },
+        { "name": "Speed", "description": "Your base walking speed is 10m." },
+        { "name": "Darkvision", "description": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 18m of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in the darkness, only shades of gray." },
         { "name": "Mask of the Wild", "description": "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena." }
       ],
       "averageheight": 65,
@@ -94,7 +94,7 @@
       "averageweight": 130,
       "baseweight": 100,
       "weightroll": "1d4",
-      "speed": [35, 0, 0, 0, 0]
+      "speed": [10, 0, 0, 0, 0]
     },
     {
       "id": "eladrin",
@@ -104,9 +104,9 @@
       "description": "Elves native to the feywild, it is incredibly rare to see them on the material plane.",
       "traits": [
         { "name": "Season", "description": "Each Eladrin belongs to a particular seasonal court of the Feywild. Choose one season, autumn, winter, spring, or summer. This affects your appearance as well as your Fey Step feature below. You can change your season whenever you finish a long rest." },
-        { "name": "Fey Step", "description": "As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. Once you use this trait, you can't do so again until you finish a short or long rest.\n\nWhen you reach 3rd level, your Fey Step gains an additional effect based on your season; if the effect requires a saving throw, the DC equals 8 + your proficiency bonus + your Charisma modifier:\n\n**Autumn.** Immediately after you use Fey Step, up to two creatures of your choice that you can see within 10 feet of you must succeed on a Wisdom saving throw or be charmed by you for 1 minute, or until you or your companions deal any damage to it.\n\n**Winter.** When you use your Fey Step, one creature of your choice that you can see within 5 feet of you before you teleport must succeed on a Wisdom saving throw or be frightened of you until the end of your next turn.\n\n**Spring.** When you use your Fey Step, you can touch one willing creature within 5 feet of you. That creature then teleports instead of you, appearing in an unoccupied space of your choice that you can see within 30 feet of you.\n\n**Summer.** Immediately after you use your Fey Step, each creature of your choice that you can see within 5 feet of you takes fire damage equal to your Charisma modifier (minimum of 1 damage)." },
-        { "name": "Speed", "description": "Your base walking speed is 30 feet." },
-        { "name": "Darkvision", "description": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in the darkness, only shades of gray." }
+        { "name": "Fey Step", "description": "As a bonus action, you can magically teleport up to 9m to an unoccupied space you can see. Once you use this trait, you can't do so again until you finish a short or long rest.\n\nWhen you reach 3rd level, your Fey Step gains an additional effect based on your season; if the effect requires a saving throw, the DC equals 8 + your proficiency bonus + your Charisma modifier:\n\n**Autumn.** Immediately after you use Fey Step, up to two creatures of your choice that you can see within 3m of you must succeed on a Wisdom saving throw or be charmed by you for 1 minute, or until you or your companions deal any damage to it.\n\n**Winter.** When you use your Fey Step, one creature of your choice that you can see within 1m of you before you teleport must succeed on a Wisdom saving throw or be frightened of you until the end of your next turn.\n\n**Spring.** When you use your Fey Step, you can touch one willing creature within 1m of you. That creature then teleports instead of you, appearing in an unoccupied space of your choice that you can see within 9m of you.\n\n**Summer.** Immediately after you use your Fey Step, each creature of your choice that you can see within 1m of you takes fire damage equal to your Charisma modifier (minimum of 1 damage)." },
+        { "name": "Speed", "description": "Your base walking speed is 9m." },
+        { "name": "Darkvision", "description": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 18m of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in the darkness, only shades of gray." }
       ],
       "averageheight": 65,
       "baseheight": 54,
@@ -114,7 +114,7 @@
       "averageweight": 120,
       "baseweight": 90,
       "weightroll": "1d4",
-      "speed": [30, 0, 0, 0, 0]
+      "speed": [9, 0, 0, 0, 0]
     }
   ]
 }

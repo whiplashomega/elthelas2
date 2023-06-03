@@ -10,7 +10,7 @@ tags:   [bard, warlock, wizard, level9, transmutation]
 
 **Casting Time**: 1 action
 
-**Range**: 30 feet
+**Range**: 9m
 
 **Components**: V, S, M (a drop of mercury, a dollop of gum arabic, and a wisp of smoke)
 

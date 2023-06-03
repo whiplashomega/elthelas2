@@ -10,7 +10,7 @@ tags: [bard, cleric, paladin, level1, enchantment]
 
 **Casting Time**: 1 action
 
-**Range**: 60 feet
+**Range**: 18m
 
 **Components**: V
 

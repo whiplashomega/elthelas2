@@ -10,7 +10,7 @@ tags: [arcanetrickster, bard, sorcerer, warlock, wizard, archivist, artificer, c
 
 **Casting Time**: 1 action
 
-**Range**: 10 feet
+**Range**: 3m
 
 **Components**: V, S
 

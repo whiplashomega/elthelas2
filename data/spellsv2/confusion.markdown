@@ -10,7 +10,7 @@ tags: [arcanetrickster, bard, druid, sorcerer, wizard, level4, enchantment]
 
 **Casting Time**: 1 action
 
-**Range**: 90 feet
+**Range**: 27m
 
 **Components**: V, S, M (three nut shells)
 
@@ -36,4 +36,4 @@ An affected target can't take reactions and must roll a d10 at the start of each
 
 At the end of each of its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target
 
-**At Higher Levels.** When you cast this spell using a spell slot of 5th level or higher, the radius of the sphere increases by 5 feet for each spell slot above 4th.
+**At Higher Levels.** When you cast this spell using a spell slot of 5th level or higher, the radius of the sphere increases by 1m for each spell slot above 4th.

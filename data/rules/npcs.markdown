@@ -5,7 +5,7 @@ Non-Player Characters
   There are many easy ways to customize the NPCs for your home campaign.
 </p>
 <p>
-  <strong>Racial Traits.</strong> You can add racial traits to an NPC. For example, a halfling druid might have a speed of 25 feet and the Lucky trait. Adding racial traits to an NPC doesn't alter its challenge rating. For more on racial traits, see the Player's Handbook.
+  <strong>Racial Traits.</strong> You can add racial traits to an NPC. For example, a halfling druid might have a speed of 7m and the Lucky trait. Adding racial traits to an NPC doesn't alter its challenge rating. For more on racial traits, see the Player's Handbook.
 </p>
 <p>
   <strong>Spell Swaps.</strong> One way to customize an NPC spellcaster is to replace one or more of its spells. You can substitute any spell on the NPC's spell list with a different spell of the same level from the same spell list. Swapping spells in this manner doesn't alter an NPC's challenge rating.

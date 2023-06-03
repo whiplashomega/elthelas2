@@ -1,0 +1,35 @@
+{
+  "id": "custom",
+  "name": "Custom",
+  "singular": "Custom",
+  "description": "This is here in case your DM allows you to play a custom race or subrace or one from a sourcebook that is not by default included in the setting. Add your own features.",
+  "traits": [
+  ],
+  "agepoints": {
+    "puberty": 0,
+    "sexualmaturity": 0,
+    "mentalmaturity": 0,
+    "middleage": 0,
+    "oldage": 0,
+    "averagelifespan": 0,
+    "maxage": 0
+  },
+  "subraces": [
+    {
+      "id": "default",
+      "name": "",
+      "image": "",
+      "description": "",
+      "traits": [
+      
+      ],
+      "averageheight": 0,
+      "baseheight": 0,
+      "heightroll": "1d4",
+      "averageweight": 0,
+      "baseweight": 0,
+      "weightroll": "1d4",
+      "speed": [0, 0, 0, 0, 0]
+    }  
+  ]
+}

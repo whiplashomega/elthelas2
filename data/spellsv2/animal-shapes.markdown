@@ -10,15 +10,15 @@ tags: [druid, level8, transmutation]
 
 **Casting Time**: 1 action
 
-**Range**: 30 feet
+**Range**: 9m
 
 **Components**: V, S
 
 **Duration**: Concentration, up to 24 hours
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ ]
 

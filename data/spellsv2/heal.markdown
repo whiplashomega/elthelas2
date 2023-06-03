@@ -10,7 +10,7 @@ tags: [cleric, druid, level6, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 60 feet
+**Range**: 18m
 
 **Components**: V, S
 

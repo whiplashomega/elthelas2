@@ -6,5 +6,5 @@ Unconscious
   <li>You drop whatever you were holding and fall prone.</li>
   <li>You automatically fail Strength and Dexterity saving throws.</li>
   <li>Attack rolls against you have advantage.</li>
-  <li>Any attack that hits you is a critical hit if your attacker is within 5 feet of you.</li>
+  <li>Any melee attack or attack from within 1 meter of you that hits you is a critical hit.</li>
 </ul>

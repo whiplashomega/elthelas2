@@ -10,15 +10,15 @@ tags: [paladin, level5, abjuration]
 
 **Casting Time**: 1 action
 
-**Range**: Self (30-foot radius)
+**Range**: Self (9m radius)
 
 **Components**: V
 
 **Duration**: Concentration, up to 10 minutes
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ ]
 

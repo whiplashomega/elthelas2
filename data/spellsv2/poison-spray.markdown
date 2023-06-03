@@ -10,7 +10,7 @@ tags: [druid, sorcerer, warlock, wizard, eldritchknight, artificer, cantrip, con
 
 **Casting Time**: 1 action
 
-**Range**: 10 feet
+**Range**: 3m
 
 **Components**: V, S
 

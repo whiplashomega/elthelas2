@@ -41,5 +41,17 @@
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="col-3">
+      <h4>Skill Tricks: {{numTricks}}</h4>
+      <div> Bonus: <input type="number" class="charsheet-num" v-model="character.bonustricks" /></div>
+      <div v-for="(inv, index) in character.skilltricks" :key="inv.name">
+        <select class="charsheet-text" v-model="character.skilltricks[index]">
+          <option :value="character.skilltricks[index]" :title="inv.description">{{character.skilltricks[index].name}}</option>
+          <option v-for="avinv in availabletricks" :key="avinv.name" :title="avinv.description" :value="avinv">{{avinv.name}}</option>
+        </select>
+      </div>
+    </div>
+  </div>
 </template>
 <script src="./js/selectfeatures.js"></script>

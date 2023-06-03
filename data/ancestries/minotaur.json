@@ -8,16 +8,16 @@
       "name": "Size", "description": "Minotaurs average over 6 feet in height, and have stocky builds. Your size is Medium."
     },
     {
-      "name": "Speed", "description": "Your walking speed is 30 feet"
+      "name": "Speed", "description": "Your walking speed is 9m"
     },
     {
       "name": "Horns", "description": "Your horns are natural melee weapons, which you can use to make unarmed strikes. They have the light and finesse properties and do 1d6 piercing damage."
     },
     {
-      "name": "Goring Rush", "description": "Immediately after you use the Dash action on your turn and move at least 20 feet, you can make one melee attack with your horns as a bonus action."
+      "name": "Goring Rush", "description": "Immediately after you use the Dash action on your turn and move at least 6m, you can make one melee attack with your horns as a bonus action."
     },
     {
-      "name": "Hammering Horns", "description": "Immediately after you hit a creature with a melee attack as part of the Attack action on your turn, you can use a bonus action to attempt to shove that target with your horns. The target must be no more than one size larger than you and within 5 feet of you. Unless it succeeds on a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Strength modifier, you push it up to 10 feet away from you."
+      "name": "Hammering Horns", "description": "Immediately after you hit a creature with a melee attack as part of the Attack action on your turn, you can use a bonus action to attempt to shove that target with your horns. The target must be no more than one size larger than you and within 1m of you. Unless it succeeds on a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Strength modifier, you push it up to 3m away from you."
     },
     {
       "name": "Imposing Presence", "description": "You have proficiency in one of the following skills of your choice: Intimidation or Persuasion."
@@ -48,7 +48,7 @@
       "baseweight": 175,
       "weightroll": "2d6",
       "stats": [2, 0, 1, 0, 0, 0],
-      "speed": [30, 0, 0, 0, 0]
+      "speed": [9, 0, 0, 0, 0]
     }
   ]
 }

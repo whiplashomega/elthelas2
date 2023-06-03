@@ -10,7 +10,7 @@ tags: [bard, sorcerer, warlock, wizard, level6, enchantment]
 
 **Casting Time**: 1 action
 
-**Range**: 60 feet
+**Range**: 18m
 
 **Components**: V, M (a snake's tongue and either a bit of honeycomb or a drop of sweet oil)
 

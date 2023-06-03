@@ -10,7 +10,7 @@ tags: [warlock, wizard, level5, necromancy]
 
 **Casting Time**: 1 action
 
-**Range**: 60 feet
+**Range**: 18m
 
 **Components**: V, M (a broken bone and a square of black silk)
 

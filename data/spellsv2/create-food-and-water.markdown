@@ -10,15 +10,15 @@ tags: [cleric, paladin, artificer, level3, conjuration]
 
 **Casting Time**: 1 action
 
-**Range**: 30 feet
+**Range**: 9m
 
 **Components**: V, S
 
 **Duration**: Instantaneous
 
-**Saving Throw**: 
+**Saving Throw**:
 
-**Save For**: 
+**Save For**:
 
 **Damage**: [ ]
 

@@ -5,7 +5,7 @@ Speed
   A monster's speed tells you how far it can move on its turn.
 </p>
 <p>
-  All creatures have a walking speed, simply called the monster's speed. Creatures that have no form of ground-based locomotion have a walking speed of 0 feet. Some creatures have one or more of the following additional movement modes.
+  All creatures have a walking speed, simply called the monster's speed. Creatures that have no form of ground-based locomotion have a walking speed of 0 meters. Some creatures have one or more of the following additional movement modes.
 </p>
 <h5>Burrow</h5>
 <p>

@@ -10,7 +10,7 @@ tags:   [cleric, sorcerer, warlock, wizard, level9, conjuration]
 
 **Casting Time**: 1 action
 
-**Range**: 60 feet
+**Range**: 18m
 
 **Components**: V, S, M (a diamond worth at least 5,000 gp)
 
@@ -22,7 +22,7 @@ tags:   [cleric, sorcerer, warlock, wizard, level9, conjuration]
 
 **Damage**: []
 
-You conjure a portal linking an unoccupied space you can see within range to a precise location on a different plane of existence. The portal is a circular opening, which you can make 5 to 20 feet in diameter. You can orient the portal in any direction you choose. The portal lasts for the duration.
+You conjure a portal linking an unoccupied space you can see within range to a precise location on a different plane of existence. The portal is a circular opening, which you can make 1 to 6m in diameter. You can orient the portal in any direction you choose. The portal lasts for the duration.
 
 The portal has a front and a back on each plane where it appears. Travel through the portal is possible only by moving through its front. Anything that does so is instantly transported to the other plane, appearing in the unoccupied space nearest to the portal.
 

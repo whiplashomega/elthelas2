@@ -10,7 +10,7 @@ tags: [druid, ranger, sorcerer, level4, enchantment]
 
 **Casting Time**: 1 action
 
-**Range**: 60 feet
+**Range**: 18m
 
 **Components**: V, S
 

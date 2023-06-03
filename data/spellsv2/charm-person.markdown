@@ -10,7 +10,7 @@ tags: [arcanetrickster, bard, cleric (trickery), druid, sorcerer, warlock, wizar
 
 **Casting Time**: 1 action
 
-**Range**: 30 feet
+**Range**: 9m
 
 **Components**: V, S
 

@@ -10,7 +10,7 @@ tags: [cleric, level7, conjuration]
 
 **Casting Time**: 1 hour
 
-**Range**: 120 feet
+**Range**: 36m
 
 **Components**: V, S, M (a holy symbol worth at least 5 gp)
 
@@ -22,7 +22,7 @@ tags: [cleric, level7, conjuration]
 
 **Damage**: []
 
-You cause a temple to shimmer into existence on ground you can see within range. The temple must fit within an unoccupied cube of space, up to 120 feet on each side.
+You cause a temple to shimmer into existence on ground you can see within range. The temple must fit within an unoccupied cube of space, up to 36m on each side.
 The temple remains until the spell ends. It is dedicated to whatever god, pantheon, or philosophy is represented by the holy symbol used in the casting.
 
 You make all decisions about the temples appearance. The interior is enclosed by a floor, walls, and a roof, with one door granting access to the interior and
@@ -38,7 +38,7 @@ d4 and subtract the number rolled from the d20 roll.
 
 In addition, the sensors created by divination spells can’t appear inside the temple, and creatures within can’t be targeted by divination spells.
 
-Finally, whenever any creature in the temple regains hit points from a spell of 1st level or higher, the creature regains additional hit points equal to your Wisdom 
+Finally, whenever any creature in the temple regains hit points from a spell of 1st level or higher, the creature regains additional hit points equal to your Wisdom
 modifier (minimum 1 hit point).
 
 The temple is made from opaque magical force that extends into the Ethereal Plane, thus blocking ethereal travel into the temples interior. Nothing can physically

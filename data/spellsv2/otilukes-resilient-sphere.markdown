@@ -10,7 +10,7 @@ tags: [wizard, eldritchknight, artificer, level4, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 30 feet
+**Range**: 9m
 
 **Components**: V, S, M (a hemispherical piece of clear crystal and a matching hemispherical piece of gum arabic)
 
