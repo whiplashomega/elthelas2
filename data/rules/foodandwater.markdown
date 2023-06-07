@@ -1,6 +1,6 @@
 Adventuring
 Environment
-Food and Water
+Food, Water, and Sleep
 <p>
   Characters who don't eat or drink suffer the effects of exhaustion. Exhaustion caused by lack of food or water can't be removed until the character eats and drinks the full required amount.
 </p>
@@ -17,4 +17,8 @@ Food and Water
 </p>
 <p>
   If the character already has one or more levels of exhaustion, the character takes two levels in either case.
+</p>
+<h5>Sleep</h5>
+<p>
+  Most creatures, including player characters, require regular sleep. If your character does not get at least 6 hours of sleep in a day (usually performed as part of a long rest), they suffer one level of exhaustion.
 </p>

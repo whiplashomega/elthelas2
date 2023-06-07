@@ -28,7 +28,7 @@ export default {
   computed: {
     lvl1feats () {
       return this.feats.filter((a) => {
-      if (!a.prereq.includes("4th level")) {
+      if (!a.prereq.length) {
         return true;
       }
       return  false;

@@ -98,7 +98,7 @@
     {
       "level": 7,
       "name": "Impose Self",
-      "description": "As a reaction when you or an ally within 1m of you takes damage, you can spend one of your hit dice to reduce the damage by the amount that you roll on that hit die plus your constitution modifier. This modification is applied after any resistances or other modifications to the damage roll."
+      "description": "As a reaction when an ally within 1m of you takes damage, you can spend one of your hit dice to reduce the damage by the amount that you roll on that hit die plus your constitution modifier. This modification is applied after any resistances or other modifications to the damage roll."
     },
     {
       "level": 7,

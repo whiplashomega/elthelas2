@@ -22,7 +22,7 @@ tags: [wizard, level1, transmutation]
 
 **Damage**: []
 
-Channeling magic through quill and ink, you scribe an Arcane spell in your spellbook or a blank book. The scribed spell must be of a level for which you have Spell Slots, and the book must lack the spell.
+Channeling magic through quill and ink, you scribe an Arcane spell in your spellbook or a blank book. The scribed spell must be of a level which you can prepare, and the book must lack the spell.
 
 As you magically scribe the spell, you must copy it from another spellbook or a Spell Scroll, or you must have it prepared. If you copy it from a Spell Scroll, the scroll is destroyed. If you have the spell prepared, the casting time and component costs are halfed. Certain class features may also reduce this cost.
 

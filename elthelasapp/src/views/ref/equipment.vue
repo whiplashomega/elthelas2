@@ -187,8 +187,8 @@
               <td>{{ weapon.Mastery }}</td>
               <td>{{ weapon.Cost }} gp</td>
               <td>{{ weapon.Weight }} lbs</td>
-              <td><span v-if="weapon.Reach > 0">{{ weapon.Reach }} ft</span><span v-else>-</span></td>
-              <td><span v-if="weapon.Range > 0">{{ weapon.Range }}/{{ weapon.Range * 3 }} ft</span><span v-else>-</span></td>
+              <td><span v-if="weapon.Reach > 0">{{ weapon.Reach }}m</span><span v-else>-</span></td>
+              <td><span v-if="weapon.Range > 0">{{ weapon.Range }}/{{ weapon.Range * 3 }}m</span><span v-else>-</span></td>
             </tr>
           </tbody>
         </table>
