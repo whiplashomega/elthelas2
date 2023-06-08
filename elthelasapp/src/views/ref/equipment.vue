@@ -53,7 +53,7 @@
         </p>
         <b-row>
           <b-col md="6">
-            <b-checkbox v-model="showRare">Show Rare Armors</b-checkbox>
+            <input type="checkbox" v-model="showRare" /> Show Rare Armors
           </b-col>
           <b-col md="6" class="my-1">
             <b-input-group>
