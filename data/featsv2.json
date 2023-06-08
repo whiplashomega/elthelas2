@@ -17,7 +17,7 @@
   {
     "name": "Armored Bulwark",
     "prereq": "Proficiency with heavy armor, 4th level",
-    "description": "You can use your armor to deflect strikes that would kill others. You gain the following benefits:\n\n* Increase your Strength or Constitution score by 1, to a maximum of 20.\n* While you are wearing heavy armor, increase the Protection Class of that armor by 2."
+    "description": "You can use your armor to deflect strikes that would kill others. You gain the following benefits:\n\n* Increase your Strength or Constitution score by 1, to a maximum of 20.\n* While you are wearing heavy armor, increase the Protection Points per level of that armor by 2."
   },
   {
     "name": "Artificer Initiate",

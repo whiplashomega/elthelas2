@@ -46,7 +46,7 @@
           <input type="number" class="charsheet-text" v-model="creature.hp" />
         </div>
         <div>
-          <label>PC</label>
+          <label>PP/Hitdie</label>
           <input type="number" class="charsheet-text" v-model="creature.pc" />
         </div>
         <div>

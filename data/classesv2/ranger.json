@@ -345,7 +345,7 @@
         {
           "level": 2,
           "name": "Fey Wanderer Magic",
-          "description": "You learn an additional spell when you reach certain levels in this class, as shown in the Fey Wanderer Spells table. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.\n\n* 2nd - Charm Person\n* 5th - misty step\n* 9th - dispel magic\n* 13th - dimension door\n* 17th - mislead\n\nYou also possess a preturnatural blessing from a fey ally or a place of fey power. Choose your blessing from the Feywild Gifts table or determine it randomly."
+          "description": "You learn an additional spell when you reach certain levels in this class, as shown in the Fey Wanderer Spells table. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.\n\n* 2nd - Charm Person\n* 5th - misty step\n* 9th - dispel magic\n* 13th - dimension door\n* 17th - mislead\n\nYou also possess a preturnatural blessing from a fey ally or a place of fey power. Choose your blessing from the Feywild Gifts below or determine it randomly.\n\n1. Illusory butterflies flutter around you while you take a short or long rest.\n2. Fresh, seasonal flowers sprout from your hair each dawn.\n3. You faintly smell of cinnamon, lavender, nutmeg, or another comforting herb or spice.\n4. Your shadow dances while no one is looking directly at it.\n5. Horns or antlers sprout from your head.\n6. Your skin and hair change color to match the season at each dawn."
         },
         {
           "level": 2,
@@ -360,7 +360,7 @@
         {
           "level": 10,
           "name": "Fey Reinforcements",
-          "description": "The royal courts of the Feywild have blessed you with the assistance of fey beings: you know *summon fey*. It doesn't count against the number of ranger spells you know, and you can cast it without a material component. You can also cast it once without a spell slot, and you regain the ability to do so when you finish a long rest.\n\nWhenever you start casting the spell, you can modify it so that it doesn't require concentration. If you do so, the spell's duration becomes 1 minute for that casting."
+          "description": "The royal courts of the Feywild have blessed you with the assistance of fey beings: you know *summon fey*. It doesn't count against the number of ranger spells you know, and you can cast it without a material component. You can also cast it once as a 3rd level spell without a spell slot, and you regain the ability to do so when you finish a long rest.\n\nWhenever you start casting the spell, you can modify it so that it doesn't require concentration. If you do so, the spell's duration becomes 1 minute for that casting."
         },
         {
           "level": 14,

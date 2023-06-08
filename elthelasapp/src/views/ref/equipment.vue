@@ -52,7 +52,9 @@
           The Armor table shows the cost, weight, and other properties of the common types of armor worn in fantasy gaming worlds. Not all potential armor types are listed here. However, existing armor types can be easily reflavored. For example, Brigandine or Llamelar armors would use the same statistics as Scale armors.
         </p>
         <b-row>
-          <b-col md="6"></b-col>
+          <b-col md="6">
+            <b-checkbox v-model="showRare">Show Rare Armors</b-checkbox>
+          </b-col>
           <b-col md="6" class="my-1">
             <b-input-group>
               <b-form-input v-model="armortable.filter" placeholder="Type to Search" />
@@ -73,22 +75,13 @@
                   AC
                 </a></th>
                 <th><a href="#" @click.stop="this.armortable.sortBy='PC';this.armortable.sortDesc = !this.armortable.sortDesc">
-                  PC
+                  PP/Lvl
                 </a></th>
                 <th><a href="#" @click.stop="this.armortable.sortBy='MaxDex';this.armortable.sortDesc = !this.armortable.sortDesc">
                   MaxDex
                 </a></th>
-                <th><a href="#" @click.stop="this.armortable.sortBy='Stealth';this.armortable.sortDesc = !this.armortable.sortDesc">
-                  Stealth
-                </a></th>
-                <th><a href="#" @click.stop="this.armortable.sortBy='Intimidation';this.armortable.sortDesc = !this.armortable.sortDesc">
-                  Intimidation
-                </a></th>
-                <th><a href="#" @click.stop="this.armortable.sortBy='Strength';this.armortable.sortDesc = !this.armortable.sortDesc">
-                  Strength
-                </a></th>
-                <th><a href="#" @click.stop="this.armortable.sortBy='Resistance';this.armortable.sortDesc = !this.armortable.sortDesc">
-                  Resistance
+                <th><a href="#" @click.stop="this.armortable.sortBy='Properties';this.armortable.sortDesc = !this.armortable.sortDesc">
+                  Properties
                 </a></th>
                 <th><a href="#" @click.stop="this.armortable.sortBy='Weight';this.armortable.sortDesc = !this.armortable.sortDesc">
                   Weight
@@ -108,49 +101,48 @@
                 <td>{{item.AC}}</td>
                 <td>{{item.PC}}</td>
                 <td>{{ item.MaxDex !== 99 ? item.MaxDex : "Unlimited" }}</td>
-                <td>{{item.Stealth}}</td>
-                <td>{{ item.Intimidation }}</td>
-                <td>{{item.Strength}}</td>
-                <td>{{item.Resistance}}</td>
+                <td>{{item.Properties}}</td>
                 <td>{{item.Weight}}</td>
                 <td>{{item.Cost}}</td>
                 <td>{{ item.Rarity }}</td>
               </tr>
             </tbody>
           </table>
-          <p>
+        <h4>Armor Concepts</h4>
+        <p>
           <strong>Armor Proficiency.</strong> Anyone can put on a suit of armor or strap a shield to an arm. Only those proficient in the armor's use know how to wear it effectively, however. Your class gives you proficiency with certain types of armor. If you wear armor that you lack proficiency with, you have disadvantage on any ability check, saving throw, or attack roll that involves Strength or Dexterity, and you can't cast spells.
         </p>
         <p>
           <strong>Armor Class (AC).</strong> Armor protects its wearer from attacks. The armor (and shield) you wear determines your base Armor Class. Your Armor Class represents your ability to avoid, block or otherwise negate attacks.
         </p>
         <p>
-          <strong>Protection Class (PC).</strong> Even when your armor fails to protect you completely from an attack, it can turn a gash into a small cut or a broken bone into a bruise. Your armors ability to reduce the damage you take is referred to as its Protection Class, and directly reduces the damage you take from any attack that would do bludgeoning, piercing, or slashing damage on a one to one basis.
+          <strong>Protection Points (PP).</strong> Heavier armor often has a tradeoff of making it harder to dodge attacks, but instead absorbing the force of the blow. This is represented as Protection Points. You gain a number of PP from your armor equal to the value in the table times your character level. So a 5th level fighter wearing a steel plate cuirass has 2 * 5 or 10 PP. When you take damage, you subtract that damage from temporary hit points first, then PP, then your HP. Protection points are unaffected by healing, and you recover all of your protection points on a short or long rest. Switching between different suits of armor affects your maximum, but not your current protection points. So if Bob the 5th level fighter takes switches from his steel plate cuirass to a steel plate hauberk, his maximum protection points go up to 15, but his current protection points remain at 10 until he finishes a rest. If you take off your armor, your protection points do not apply until you put it on again.
         </p>
         <p>
           <strong>Maximum Dexterity Bonus (Max Dex).</strong> If you are not wearing armor, your armor class is equal to 10 + your dexterity bonus, representing your natural ability to dodge attacks. However, heavier armor may impede your ability to move and dodge attacks. This is represented by the armors Maximum Dexterity Bonus. Your Armor Class when wearing armor is equal to the base AC of the armor, plus your dexterity bonus, or the maximum dexterity bonus of the armor, whichever is lower. So for example if your Dexterity Bonus is +2, and you are wearing a Leather Hauberk, your Armor Class is 16 (14 + 2). However, if you are wearing a Bone Hauberk, your Armor Class is 15 (15 + 0).
         </p>
         <p>
-          <strong>Stealth.</strong> If the Armor table shows "Disadvantage" in the Stealth column, the wearer has disadvantage on Dexterity (Stealth) checks.
-        </p>
-        <p>
-          <strong>Intimidation.</strong> If the Armor table shows "Advantage" in the Intimidation column, it grants advantage on intimidation checks.
-        </p>
-        <p>
-          <strong>Heavy Armor.</strong> Heavier armor interferes with the wearer's ability to move quickly, stealthily, and freely. If the Armor table shows "13" or "15" in the Strength column for an armor type, the armor reduces the wearer's speed by 10 feet unless the wearer has a Strength score equal to or higher than the listed score.
-        </p>
-        <p>
-          <strong>Resistance.</strong> Certain rare armors grant resistance to particular types of damage. If something is listed in the Resistance column of the Armor Table the wearer takes half damage from the damage type it is resistant to.
-        </p>
-        <p>
           <strong>Shields.</strong> A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.
         </p>
+        <h4>Armor Properties</h4>
         <p>
-          <strong>Tower Shields.</strong> A Tower Shield is a massive shield large enough for the wielder to hide behind. A Tower Shield can be set as an action, after which the wielder has 3/4 cover against attacks coming from the direction in which it was set, but no shield bonus to AC from attacks from other directions. It can be unset as a free action on your turn, or is unset immediately if the wielder moves (willingly or unwillingly).
+          <strong>Impeding (Skill).</strong> The impeding property means the armor gives disadvantage on skill checks for the specified skill(s).
         </p>
-        <h5>Getting Into and Out of Armor</h5>
+        <p>
+          <strong>Intimidating.</strong> This armor gives advantage on intimidation checks.
+        </p>
+        <p>
+          <strong>STR 13</strong> This armor requires a strength score of 13 to wield effectively. Wearing this armor with a strength score of 12 or less halves the speed of the wearer.
+        </p>
+        <p>
+          <strong>Resistance (type).</strong> Certain rare armors grant resistance to particular types of damage. If something is listed in the Resistance column of the Armor Table the wearer takes half damage from the damage type it is resistant to.
+        </p>
+        <p>
+          <strong>Rare.</strong> Rare armors cannot be found in standard shops, and most blacksmiths do not have the experience required to work with the materials. Typically players would need to either create these armors themselves or find a master armorer to do the job for them.
+        </p>
+        <h4>Getting Into and Out of Armor</h4>
         <p>The time it takes to don or doff armor depends on the armor's category.</p>
-        <p><strong>Don.</strong> This is the time it takes to put on armor. You benefit from the armor's AC only if you take the full time to don the suit of armor.</p>
+        <p><strong>Don.</strong> This is the time it takes to put on armor. You benefit from an armors attributes only if you take the full time to don the suit of armor.</p>
         <p><strong>Doff.</strong> This is the time it takes to take off armor. If you have help, reduce this time by half.</p>
         <ul>
           <li>Light Armor - Don: 1 minute - Doff: 1 minute</li>

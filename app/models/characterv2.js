@@ -50,6 +50,7 @@ var Characterv2 = new Schema({
   gems: { type: Number, default: 0 },
   capacitybonus: { type: Number, default: 0 },
   hpcurrent: { type: Number, default: 1 },
+  ppcurrent: { type: Number, default: 0 },
   initmagic: { type: Number, default: 0 },
   hpmagic: { type: Number, default: 0 },
   acmagic: { type: Number, default: 0 },

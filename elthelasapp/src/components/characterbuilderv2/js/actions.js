@@ -5,11 +5,11 @@ export default {
   setup () {
     const characters = useCharacterv2Store();
     const userinfo = useUserStore();
-    
+
     const { character, warlockSlotLevel } = storeToRefs(characters);
-    
+
     const castSpell = characters.castSpell;
-    
+
     return {
       characters,
       userinfo,
@@ -118,13 +118,17 @@ export default {
       baseActions: [
         { id: 8, name: "Attack", description: "Attack with a weapon, unarmed strike, grapple (opposed athletics), or shove", show: false },
         { id: 0, name: "Dash", description: "you gain extra movement for the current turn. The increase equals your speed, after applying any modifiers.", show: false },
+        { id: 11, name: "Delay", description: "Immediately end your turn so you can take it later. Must be done before any other action or movement of any kind. bad stuff still happens now. Good stuff happens when you do take your turn." },
         { id: 1, name: "Disenage", description: "your movement doesn’t provoke opportunity attacks for the rest of the turn.", show: false },
         { id: 2, name: "Dodge", description: "Until the start of your next turn, any attack roll made against you has disadvantage if you can see the attacker, and you make Dexterity saving throws with advantage.", show: false },
         { id: 3, name: "Help", description: "the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn.", show: false },
         { id: 4, name: "Hide", description: "you make a Dexterity (Stealth) check in an attempt to hide, following the rules in chapter 7 for hiding. If you succeed, you gain certain benefits, as described in the “Unseen Attackers and Targets” section", show: false },
         { id: 5, name: "Ready", description: "decide what perceivable circumstance will trigger your reaction. Then, you choose the action you will take in response to that trigger, or you choose to move up to your speed in response to it. When the trigger occurs, you can either take your reaction right after the trigger finishes or ignore the trigger.", show: false },
+        { id: 10, name: "Run", description: "you gain extra movement for the current turn, but have disadvantage on dex saves and attack rolls, and enemies have advantage to hit you. The increase equals twice your speed.", show: false },
         { id: 6, name: "Search", description: "you devote your attention to finding something.", show: false },
-        { id: 7, name: "Use an Object", description: "When an object requires your action for its use, you take the Use an Object action.", show: false }
+        { id: 7, name: "Use an Object", description: "When an object requires your action for its use, you take the Use an Object action.", show: false },
+        { id: 12, name: "First Aid", description: "Attempt to stabilize a creature, or if you have a healers kit, use it to heal them for 2d4+2", show: false },
+        { id: 13, name: "Repair Armor", description: "Use tools and a repair kit to fix someones armor for 2d4+2 protection points", show: false }
       ],
       baseReactions: [
         { id: 9, name: "Opportunity Attack", description: "When an opponent moves out of your reach you can use a reaction to make 1 attack against them", show: false }

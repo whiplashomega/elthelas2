@@ -1,5 +1,8 @@
 export default {
   hp (creature) {
+    return this.basehp(creature) + this.pp(creature);
+  },
+  basehp (creature) {
     let conmod = this.statMod(creature, 2);
     let diesize = 10.5;
     if (creature.size === "tiny") {
@@ -14,6 +17,9 @@ export default {
       diesize = 6.5;
     }
     return Math.floor((conmod + diesize) * creature.hitdice);
+  },
+  pp (creature) {
+    return creature.pc * creature.hitdice;
   },
   statMod (creature, i) {
     return Math.floor(creature.stats[i] / 2) - 5;

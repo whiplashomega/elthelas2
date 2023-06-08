@@ -71,8 +71,6 @@
               </div>
               AC:
               <input type="number" v-model="armor.ac" class="form-control" />
-              PC:
-              <input type="number" v-model="armor.pc" class="form-control" />
               Max Dex:
               <input type="number" v-model="armor.maxdex" class="form-control" />
             </b-modal>

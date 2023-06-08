@@ -122,7 +122,7 @@
     {
       "level": 7,
       "name": "Aura of Protection",
-      "description": "Starting at 6th level, whenever you or a friendly creature within 3m o f you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus. At 18th level, the range of this aura increases to 9m."
+      "description": "Starting at 7th level, whenever you or a friendly creature within 3m o f you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus. At 18th level, the range of this aura increases to 9m."
     },
     {
       "level": 9,
@@ -244,7 +244,7 @@
         {
           "level": 14,
           "name": "Elder Champion",
-          "description": "At 20th level, you can assume the form of an ancient force of nature, taking on an appearance you choose. For example, your skin might turn green or take on a bark-like texture, your hair might become leafy or mosslike, or you might sprout antlers or a lion-like mane.\n\nUsing your action, you undergo a transformation. For 1 minute, you gain the following benefits:\n\n* At the start o f each o f your turns, you regain 10 hit points.\n* Whenever you cast a paladin spell that has a casting time of 1 action, you can cast it using a bonus action instead.\n* Enemy creatures within 3m of you have disadvantage on saving throws against your paladin spells and Channel Divinity options.\n\nOnce you use this feature, you can’t use it again until you finish a long rest."
+          "description": "At 14th level, you can assume the form of an ancient force of nature, taking on an appearance you choose. For example, your skin might turn green or take on a bark-like texture, your hair might become leafy or mosslike, or you might sprout antlers or a lion-like mane.\n\nUsing your action, you undergo a transformation. For 1 minute, you gain the following benefits:\n\n* At the start o f each o f your turns, you regain 10 hit points.\n* Whenever you cast a paladin spell that has a casting time of 1 action, you can cast it using a bonus action instead.\n* Enemy creatures within 3m of you have disadvantage on saving throws against your paladin spells and Channel Divinity options.\n\nOnce you use this feature, you can’t use it again until you finish a long rest."
         }
       ]
     },

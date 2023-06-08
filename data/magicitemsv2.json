@@ -137,7 +137,7 @@
    "Cost (gp)": "5",
    "Rarity": "Common",
    "Attunement": "No",
-   "Effect": "This spongy, flavorless, gelatinous bead dissolves in liquid, transforming up to a pint of the liquid into fresh, cold drinking water. The head has no effect on magical liquids or harmful substances such as poison."  
+   "Effect": "This spongy, flavorless, gelatinous bead dissolves in liquid, transforming up to a pint of the liquid into fresh, cold drinking water. The head has no effect on magical liquids or harmful substances such as poison."
  },
  {
   "Item": "Boots of False Tracks",
@@ -145,7 +145,7 @@
    "Cost (gp)": "100",
    "Rarity": "Common",
    "Attunement": "No",
-   "Effect": "Only humanoids can wear these boots. While wearing the boots, you can choose to have them leave tracks like those of another kind of humanoid of your size."  
+   "Effect": "Only humanoids can wear these boots. While wearing the boots, you can choose to have them leave tracks like those of another kind of humanoid of your size."
  },
  {
   "Item": "Candle of the Deep",
@@ -153,7 +153,7 @@
    "Cost (gp)": "100",
    "Rarity": "Common",
    "Attunement": "No",
-   "Effect": "The flame of this candle is not extinguished when immersed in water. It gives off light and heat like a normal candle."  
+   "Effect": "The flame of this candle is not extinguished when immersed in water. It gives off light and heat like a normal candle."
  },
  {
   "Item": "Charlatan's Die",
@@ -161,7 +161,7 @@
    "Cost (gp)": "250",
    "Rarity": "Common",
    "Attunement": "Yes",
-   "Effect": "Whenever you roll this six—sided die, you can control which number it rolls."  
+   "Effect": "Whenever you roll this six—sided die, you can control which number it rolls."
  },
  {
   "Item": "Cloak of Billowing",
@@ -169,7 +169,7 @@
    "Cost (gp)": "100",
    "Rarity": "Common",
    "Attunement": "No",
-   "Effect": "While wearing this cloak, you can use a bonus action to make it billow dramatically."  
+   "Effect": "While wearing this cloak, you can use a bonus action to make it billow dramatically."
  },
  {
   "Item": "Cloak of Many Fashions",
@@ -177,7 +177,7 @@
    "Cost (gp)": "250",
    "Rarity": "Common",
    "Attunement": "No",
-   "Effect": "While wearing this cloak, you can use a bonus action to change the style, color, and apparent quality of the garment. The cloak’s weight doesn’t change. Regardless of its appearance, the cloak can’t be anything but a cloak. Although it can duplicate the appearance of other magic cloaks, it doesn’t gain their magical properties."    
+   "Effect": "While wearing this cloak, you can use a bonus action to change the style, color, and apparent quality of the garment. The cloak’s weight doesn’t change. Regardless of its appearance, the cloak can’t be anything but a cloak. Although it can duplicate the appearance of other magic cloaks, it doesn’t gain their magical properties."
  },
  {
   "Item": "Clockwork Amulet",
@@ -185,7 +185,7 @@
    "Cost (gp)": "250",
    "Rarity": "Common",
    "Attunement": "No",
-   "Effect": "This copper amulet contains tiny interlocking gears and is powered by magic from Mechanus, a plane of clockwork predictability. A creature that puts an ear to the amulet can hear faint ticking and whirring noises coming from within.\n\nWhen you make an attack roll while wearing the amulet, you can forgo rolling the d20 to get a 10 on the die. Once used. this property can’t be used again until the next dawn."  
+   "Effect": "This copper amulet contains tiny interlocking gears and is powered by magic from Mechanus, a plane of clockwork predictability. A creature that puts an ear to the amulet can hear faint ticking and whirring noises coming from within.\n\nWhen you make an attack roll while wearing the amulet, you can forgo rolling the d20 to get a 10 on the die. Once used. this property can’t be used again until the next dawn."
  },
  {
   "Item": "Clothes of Mending",
@@ -193,7 +193,7 @@
    "Cost (gp)": "100",
    "Rarity": "Common",
    "Attunement": "No",
-   "Effect": "This elegant outfit of traveler’s clothes magically mends itself to counteract daily wear and tear. Pieces of the outfit that are destroyed can’t be repaired in this way."  
+   "Effect": "This elegant outfit of traveler’s clothes magically mends itself to counteract daily wear and tear. Pieces of the outfit that are destroyed can’t be repaired in this way."
  },
  {
   "Item": "Dark Shard Amulet",
@@ -201,7 +201,7 @@
    "Cost (gp)": "200",
    "Rarity": "Common",
    "Attunement": "Yes (warlock)",
-   "Effect": "This amulet is fashioned from a single shard of resilient extraplanar material originating from the realm of your warlock patron. While you are wearing it, you gain the following benefits:\n\n*You can use the amulet as a spellcasting focus for your warlock spells.\n*You can try to cast a cantrip that you don’t know. The cantrip must be on the warlock spell list, and you must make a DC 10 Intelligence (Arcana) check. If the check succeeds, you cast the spell. If the check fails, so does the spell, and the action used to cast the spell is wasted. In either case, you can’t use this property again until you finish a long rest."  
+   "Effect": "This amulet is fashioned from a single shard of resilient extraplanar material originating from the realm of your warlock patron. While you are wearing it, you gain the following benefits:\n\n*You can use the amulet as a spellcasting focus for your warlock spells.\n*You can try to cast a cantrip that you don’t know. The cantrip must be on the warlock spell list, and you must make a DC 10 Intelligence (Arcana) check. If the check succeeds, you cast the spell. If the check fails, so does the spell, and the action used to cast the spell is wasted. In either case, you can’t use this property again until you finish a long rest."
  },
  {
   "Item": "Dread Helm",
@@ -249,7 +249,7 @@
    "Cost (gp)": "200",
    "Rarity": "Common",
    "Attunement": "Yes (wizard)",
-   "Effect": "This antiquated, cone—shaped hat is adorned with gold crescent moons and stars. While you are wearing it, you gain the following benefits:\n\n*You can use the hat as a spellcasting focus for your wizard spells.\n*You can try to cast a cantrip that you don’t know. The cantrip must be on the wizard spell list, and you must make a DC 10 Intelligence (Arcana) check. If the check succeeds, you cast the spell. If the check fails, so does the spell, and the action used to cast the spell is wasted. In either case, you can’t use this property again until you finish a long rest."  
+   "Effect": "This antiquated, cone—shaped hat is adorned with gold crescent moons and stars. While you are wearing it, you gain the following benefits:\n\n*You can use the hat as a spellcasting focus for your wizard spells.\n*You can try to cast a cantrip that you don’t know. The cantrip must be on the wizard spell list, and you must make a DC 10 Intelligence (Arcana) check. If the check succeeds, you cast the spell. If the check fails, so does the spell, and the action used to cast the spell is wasted. In either case, you can’t use this property again until you finish a long rest."
  },
  {
   "Item": "Heward's Handy Spice Pouch",
@@ -257,7 +257,7 @@
    "Cost (gp)": "100",
    "Rarity": "Common",
    "Attunement": "No",
-   "Effect": "This belt pouch appears empty and has 10 charges. While holding the pouch, you can use an action to expend l of its charges, speak the name of any nonmagical food seasoning (such as salt, pepper, saffron, or cilantro), and remove a pinch of the desired seasoning from the pouch. A pinch is enough to season a single meal. The pouch regains 1d6 + 4 expended charges daily at dawn."  
+   "Effect": "This belt pouch appears empty and has 10 charges. While holding the pouch, you can use an action to expend l of its charges, speak the name of any nonmagical food seasoning (such as salt, pepper, saffron, or cilantro), and remove a pinch of the desired seasoning from the pouch. A pinch is enough to season a single meal. The pouch regains 1d6 + 4 expended charges daily at dawn."
  },
  {
   "Item": "Horn of Silent Alarm",
@@ -1403,6 +1403,14 @@
    "Rarity": "Very Rare",
    "Attunement": "No",
    "Effect": "You regain 10d4+20 hit points when you drink this potion. The potion's red liquid glimmers when agitated."
+ },
+ {
+   "Item": "Elixer of Life",
+   "Type": "Single Use",
+   "Cost (gp)": "100000",
+   "Rarity": "Legendary",
+   "Attunement": "No",
+   "Effect": "Water from the fabled fountain of youth, this water restores all of the hit points of any creature that drinks it, cures any disease, curse, or poison affecting them, and makes them 1d6 years younger."
  },
  {
    "Item": "Potion of Heroism",

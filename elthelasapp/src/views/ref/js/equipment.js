@@ -100,6 +100,9 @@ export default {
     filterarmor () {
       return this.armor.filter((a) => {
         for (let key in a) {
+          if (a.Rarity === "Rare" && !this.showRare) {
+            return false;
+          }
           if (a[key].toString().toLowerCase().includes(this.armortable.filter.toLowerCase())) {
             return true;
           }
@@ -189,6 +192,7 @@ export default {
         sortBy: "Item",
         sortDesc: false
       },
+      showRare: true,
       armortable: {
         fields: [
           { key: "Armor", label: "Armor", sortable: true },

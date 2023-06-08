@@ -72,7 +72,7 @@ export default {
       });
       let maxdex = a.maxdex;
 
-      ac += Math.max(Math.min(maxdex, this.statMod(character, 1)), 0) + (medmaster ? 2 : 0);
+      ac += Math.max(Math.min(maxdex, this.statMod(character, 1)), 0) + (medmaster.length ? 2 : 0);
       return ac;
     }
   },
@@ -198,6 +198,9 @@ export default {
     total += (character.charclasses[0].thisclass.hitdie / 2 - 1);
     total += Number(character.hpmagic);
     return total;
+  },
+  ppTotal: function(character) {
+    return this.pcCalc(character) * this.charlevel(character);
   },
   incrementClassCount: function(spell, classCounts) {
     classCounts.forEach((cc) => {

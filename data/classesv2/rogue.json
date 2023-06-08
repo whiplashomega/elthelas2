@@ -133,6 +133,21 @@
       "description": "You learn a skill trick, choosing from the options below. Each skill trick has an associated skill with which you must have proficiency to learn it. The existence of a skill trick to do a certain task does not preclude others who do not have that skill trick from attempting it, however, skill tricks allow rogues to do these things without any additional check. You learn an additional skill trick at 9th, 13th, and 17th level.\n\n#### Skill Trick Options\n\n**Tumble (Acrobatics)** You can move through an opponents space. Their space is considered difficult terrain.\n\n**Back on Your Feet (Acrobatics)** You can stand up from prone using only 1m of movement.\n\n**Magical Appraisal (Arcana)** You can identify the properties of magic items similarly to the identify spell.\n\n**Fast Mount (Animal Handling)** You can mount or dismount a creature using only 1m of movement.\n\n**Extreme Leap (Athletics)** Your jump distance increases by 3m.\n\n**Corner Perch (Athletics)** While climbing, if you are in a corner you can brace yourself with your legs allowing you to have both hands free.\n\n**Assume Quirk (Deception)** You have advantage on deception checks made to pretend to be someone you are not.\n\n**Social Recovery (Deception)** When you or an ally you can hear fails a persuasion check you can immediately make a deception check replacing the result of the persuasion check.\n\n**Appraiser (History)** You can easily figure out the value of items. You can easily determine the value of any non-magical item or magical item you have identified.\n\n**Lore Master (History)** Whenever you visit a location on the material plane, you can recall an anecdote about that place you have heard or read before.\n\n**Lie Detector (Insight)** You have advantage on insight checks to determine if a creature is lying\n\n**Distracting Taunt (Intimidation)** So long as an opponent can hear you, you can use a bonus action to attempt to disrupt their concentration on a spell. The target of this effect must immediately make a DC 15 Constitution Save to maintain concentration**Trap Sight (Investigation)** The DC required to find a trap is reduced by 5.\n\n**Healing Hands (Medicine)** Heal a creature by an additional 1d6 hit points when you use the First Aid action and succeed on the medicine check.\n\n**Naturalist (Nature)** You have advantage on nature checks to identify plants.\n\n**Clarity of Vision (Perception)** You can see in lightly obscured areas or dim light as if they were unobscured/brightly lit.\n\n**Listen to This (Perception)** You can repeat things that you have recently heard from others verbatim.\n\n**Haggler (Persuasion)** When shopping you get a 10% discount on all purchases.\n\n**Prayer to the Heavens (Religion)** You can spend one minute praying in order to give yourself advantage on the next ability check you make.\n\n**Clever Improviser (Slight of Hand)** You can disable traps and locks without thieves tools.\n\n**Sudden Draw (Slight of Hand)** As a reaction when a creature moves out of your reach and you have at least 1 hand free you can draw a concealed weapon to make an attack of opportunity as if you were already holding that weapon.\n\n**Disappear (Stealth)** You can hide even if you only have partial cover or are lightly obscured.\n\n**Expert Tracker (Survival)** You can identify the number and species of creatures based on tracks that you find.\n\n"
     },
     {
+      "level": 9,
+      "name": "Additional Skill Trick",
+      "description": "You learn a new skill trick, per the Skill Tricks feature."
+    },
+    {
+      "level": 13,
+      "name": "Additional Skill Trick",
+      "description": "You learn a new skill trick, per the Skill Tricks feature."
+    },
+    {
+      "level": 17,
+      "name": "Additional Skill Trick",
+      "description": "You learn a new skill trick, per the Skill Tricks feature."
+    },
+    {
       "level": 5,
       "name": "Uncanny Dodge",
       "description": "Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack’s damage against you."

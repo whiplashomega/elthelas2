@@ -138,6 +138,9 @@ export default {
     getHPTotal: (state) => {
       return charCalculators.hpTotal(state.character);
     },
+    getPPTotal: (state) => {
+      return charCalculators.ppTotal(state.character);
+    },
     pointbuy: (state) => {
       return state.character.stats.reduce((a, b) => {
         var c = Number(b) - 8;
@@ -379,6 +382,7 @@ export default {
     },
     shortrest () {
       this.character.warlockslotsavailable = this.warlockSlots;
+      this.character.ppcurrent = this.getPPTotal;
       this.character.resources.forEach((a) => {
         if (a.recharge === 'shortrest') {
           a.current = a.max;

@@ -105,7 +105,7 @@
         {
           "level": 6,
           "name": "Undead Thralls",
-          "description": "At 6th level, you add the animate dead spell to your spellbook if it is not there already. W hen you cast animate dead, you can target one additional corpse or pile of bones, creating another zombie or skeleton, as appropriate.W henever you create an undead using a necromancy spell, it has additional benefits:\n\n* The creature’s hit point maximum is increased by an amount equal to your wizard level.\n* The creature adds your proficiency bonus to its weapon damage rolls."
+          "description": "At 6th level, you add the animate dead spell to your spellbook if it is not there already. W hen you cast animate dead, you can target one additional corpse or pile of bones, creating another zombie or skeleton, as appropriate. Whenever you create an undead using a necromancy spell, it has additional benefits:\n\n* The creature’s hit point maximum is increased by an amount equal to your wizard level.\n* The creature adds your proficiency bonus to its weapon damage rolls."
         },
         {
           "level": 10,
@@ -190,7 +190,7 @@
         {
           "level": 2,
           "name": "Expanded Spellbook",
-          "description": "You are studied in the art of Necromancy. As part of your studies you have memorized certain necromancy spells. Add the following spells to your spellbook at the level listed. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells.\n\n* 2nd - Grease\n* 3rd - Misty Step\n* 5th - Summon Shadowspawn\n* 7th - Dimension Door\n* 9th - Cloudkill"
+          "description": "You are studied in the art of Conjuration. As part of your studies you have memorized certain conjuration spells. Add the following spells to your spellbook at the level listed. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells.\n\n* 2nd - Grease\n* 3rd - Misty Step\n* 5th - Summon Shadowspawn\n* 7th - Dimension Door\n* 9th - Cloudkill"
         },
         {
           "level": 6,

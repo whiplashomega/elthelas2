@@ -37,6 +37,7 @@ export default function() {
     hometown: "",
     age: "",
     hpcurrent: 1,
+    ppcurrent: 0,
     height: "",
     weight: "",
     gender: "",

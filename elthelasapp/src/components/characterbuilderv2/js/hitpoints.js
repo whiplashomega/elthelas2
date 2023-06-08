@@ -4,17 +4,17 @@ import { storeToRefs } from 'pinia';
 export default {
   setup () {
     const characters = useCharacterv2Store();
-    
-    const { character, getHPTotal, maxExhaustion, pccalc } = storeToRefs(characters);
+
+    const { character, getHPTotal, maxExhaustion, getPPTotal } = storeToRefs(characters);
 
     const shortrest = characters.shortrest;
     const longrest = characters.longrest;
-    
+
     return {
       character,
       getHPTotal,
+      getPPTotal,
       shortrest,
-      pccalc,
       longrest,
       maxExhaustion
     };
@@ -36,9 +36,6 @@ export default {
           this.character.hpcurrent = this.getHPTotal;
         }
       } else {
-        if (this.dtype === "bludgeoning" || this.dtype === "piercing" || this.dtype === "slashing") {
-          adjusteddamage = Math.max(adjusteddamage - this.pccalc, 0);
-        }
         if (this.character.dr[this.dtype] === "3") {
           adjusteddamage = Math.max(adjusteddamage - 3, 0);
         } else if (this.character.dr[this.dtype] === "resistance") {
@@ -50,10 +47,14 @@ export default {
         }
         this.character.temphp -= adjusteddamage;
         if (this.character.temphp < 0) {
-          this.character.hpcurrent += this.character.temphp;
+          this.character.ppcurrent += this.character.temphp;
           this.character.temphp = 0;
-          if (this.character.hpcurrent < 0) {
-            this.character.hpcurrent = 0;
+          if (this.character.ppcurrent < 0) {
+            this.character.hpcurrent += this.character.ppcurrent;
+            this.character.ppcurrent = 0;
+            if (this.character.hpcurrent < 0) {
+              this.character.hpcurrent = 0;
+            }
           }
         }
       }

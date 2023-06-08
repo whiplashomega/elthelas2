@@ -81,7 +81,8 @@
             <div class="row">
               <div class="col-9">
                 <strong>Armor Class:</strong> {{ creature.ac }} ({{creature.acdesc}}) <br />
-                <strong>Protection Class:</strong> {{ creature.pc }}<br />
+                <strong>Base HP:</strong> {{ creaturecalc.basehp(creature) }}<br />
+                <strong>Protection Points:</strong> {{ creaturecalc.pp(creature) }}<br />
                 <strong>Speed:</strong> {{ creature.speed }}
               </div>
               <div class="col-3">
@@ -200,7 +201,7 @@
                  style="font-size:0.7rem" class="form-control form-control-sm" />
           </div>
           <div class="col-sm-3">
-             / {{ creaturecalc.hp(creature) }}
+             / {{ creaturecalc.hp(creature) }} ({{creaturecalc.basehp(creature)}} + {{ creaturecalc.pp(creature)}})
           </div>
           <div class="col-sm-3">
              <button class="close" type="button" @click="removeCreature(creature)">&times;</button>
