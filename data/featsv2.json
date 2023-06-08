@@ -122,12 +122,12 @@
   {
     "name": "Healer",
     "prereq": "",
-    "description": "You are an able physician, allowing you to mend wounds quickly and get your allies back in the fight. You gain the following benefits:\n* If you have a healer's kit, you can expend one use of it and tend to a creature within 1m of you as an action. That creature can expend one of its Hit Dice, and you then roll that die. The creature regains a number of Hit Points equal to the roll plus your Proficiency Bonus.\n* Whenever you roll a die to determine the number of hit points you restore with a spell or ability, including the feature provided by this feat, you can reroll the die if it rolls a 1, and you must use the new roll."
+    "description": "You are an able physician, allowing you to mend wounds quickly and get your allies back in the fight. You gain the following benefits:\n* When you use the First Aid action you have advantage on the wisdom (medicine) check, in addition when you use a healer's kit to heal as part of the First Aid action the creature can expend one of its Hit Dice, and you then roll that die. The creature regains a number of Hit Points equal to the roll plus your Proficiency Bonus. This is in addition to the healing normally provided by this action.\n* Whenever you roll a die to determine the number of hit points you restore with a spell or ability, including the feature provided by this feat, you can reroll the die if it rolls a 1, and you must use the new roll."
   },
   {
     "name": "Heavily Armored",
     "prereq": "Proficiency with medium armor, 4th level",
-    "description": "You have trained to master the use of heavy armor, gaining the following benefits:\n\n* Increase your Constitution or Strength score by 1, to a maximum of 20.\n* You gain proficiency with heavy armor."
+    "description": "You have trained to master the use of heavy armor, gaining the following benefits:\n\n* Increase your Constitution or Strength score by 1, to a maximum of 20.\n* You gain proficiency with heavy armor and shields."
   },
   {
     "name": "Inspiring Leader",

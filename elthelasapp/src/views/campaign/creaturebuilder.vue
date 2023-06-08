@@ -133,7 +133,7 @@
         </div>
         <div>
           <label>Hit Dice:</label>
-          <input type="number" class="charsheet-num" v-model="creature.hitdice" />d<span v-if="creature.size === 'tiny'">4</span><span v-if="creature.size === 'small'">6</span><span v-if="creature.size === 'medium'">8</span><span v-if="creature.size === 'large'">10</span><span v-if="creature.size === 'huge'">12</span><span v-if="creature.size === 'gargantuan'">20</span><span v-if="creature.size === 'colossal'">20</span> <label>HP: </label> {{creaturecalc.hp(creature)}}
+          <input type="number" class="charsheet-num" v-model="creature.hitdice" />d<span v-if="creature.size === 'tiny'">4</span><span v-if="creature.size === 'small'">6</span><span v-if="creature.size === 'medium'">8</span><span v-if="creature.size === 'large'">10</span><span v-if="creature.size === 'huge'">12</span><span v-if="creature.size === 'gargantuan'">20</span><span v-if="creature.size === 'colossal'">20</span> <label>HP: </label> {{creaturecalc.hp(creature)}} <label>Base: </label> {{creaturecalc.basehp(creature)}} PP: {{creaturecalc.pp(creature)}}
         </div>
         <div>
           <label>Saves</label>
