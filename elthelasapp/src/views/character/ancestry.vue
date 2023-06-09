@@ -26,15 +26,10 @@
     </div>
     <h3 style="clear:both;">Age</h3>
     <p>
-      Age in Elthelas differs is less diverse than in other fantasy settings, particularly in that none of the ancestries differ from humans in max age by more than an order
-      of magnitude.  Only dragons, outsiders, fae, and a few other animals and monsters live longer than 200 years without divine
-      or magical intervention.  Such intervention usually draws the ire of the Gods (specifically Nera, goddess of death and rebirth, but the other
-      Gods usually frown on it as well).
+      Age in Elthelas is less diverse than in other fantasy settings, particularly in that none of the ancestries differ from humans in max age by more than an order of magnitude.  Only dragons, outsiders, fae, and a few other animals and monsters live longer than 200 years without divine or magical intervention. Such intervention usually draws the ire of the Gods (specifically Nera, goddess of death and rebirth, but the other Gods usually frown on it as well).
     </p>
     <p>
-      The table below lists typical ages of various life stages for each of the ancestries.  Note "max age" is not a strict maximum age, but rather the age when 95%
-      of any particular cohort has died.  Start of Puberty and Sexual Maturity are given in exact median age (any individual is usually +/- 2), all
-      others are rounded to the nearest multiple of 5.
+      The table below lists typical ages of various life stages for each of the ancestries. Note "max age" is not a strict maximum age, but rather the age when 95% of any particular cohort has died. Start of Puberty and Sexual Maturity are given in exact median age (any individual is usually +/- 2), all others are rounded to the nearest multiple of 5.
     </p>
     <div class="row">
       <div class="col-sm-6">&nbsp;</div>

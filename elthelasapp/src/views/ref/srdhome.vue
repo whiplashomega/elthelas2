@@ -83,7 +83,7 @@
         <li>Factions</li>
         <li>Metric Conversion and Space Rules -> 1 meter squares</li>
       </ul>
-      <h3>Summary of Class Chanages</h3>
+      <h3>Summary of Class Changes</h3>
       <h4>Every Class.</h4>
       <ul>
         <li>Subclasses are received at level 2. Additional features received at 6, 10 and 14. This means some classes had additional subclass features added (if they only got 3 before).</li>
@@ -190,12 +190,40 @@
         <li>Expanded spell lists now add to spells known.</li>
         <li>More spell slots, 2 at level 1, 3 at level 5, 4 at level 9, 5 at level 13, and 6 at level 17.</li>
         <li>Warlocks now always know Eldritch Blast cantrip.</li>
+        <li>Hexblade's Curse now twice per rest</li>
       </ul>
       <h4>Wizard</h4>
       <ul>
         <li>Expanded spellbook for each subclass</li>
         <li>Completely reworked bladesinger</li>
       </ul>
+    </b-tab>
+    <b-tab title="Building a Character">
+      <h2>Building a Character</h2>
+      <p>
+        First and foremost it is recommended that you use the <router-link to="/tools/charbuilder" target="_blank">Elthelas Character Builder</router-link> to create your character sheet. While it is not required, it will make your life easier. The instructions below will assume that you already have a concept in mind for your character, it need not be more than a vague idea, and even that isn't necessary. Maybe as you go through the first couple of steps a concept that appeals to you will occur to you.
+      </p>
+      <p>
+        <strong>Step 1: ABC <router-link to="/options/ancestry" target="_blank">Ancestry</router-link>, <router-link to="/options/background" target="_blank">Background</router-link>, and <router-link to="/options/class" target="_blank">Class</router-link>.</strong> Your character's Ancestry is the species of humanoid they belong to. Most ancestries also include a variety of sub-species to choose from. Your character's background is all about the life they lived before they became an adventurer. There are a number of options on the backgrounds page, but remember that "Custom" is the default. Their background is an opportunity to be creative and start to figure out their backstory. As part of defining your background you will pick some starting proficiencies for your character, and a level 1 feat. Your characters class is their specialty or area of advanced training as an adventurer.
+      </p>
+      <p>
+        <strong>Step 2: Determine Ability Scores.</strong> Their are many methods to determine your characters ability scores, talk to your DM about their prefered method. The most common methods are either a 'point buy' system, or rolling 4d6 and dropping the lowest. Once you have rolled or finished your point buy, you add your starting ability score improvements. This is a +2 to one score of your choice, and a +1 to another score of your choice (but different from the first one). You will get additional ability score improvements as you level up.
+      </p>
+      <p>
+        <strong>Step 3: Describe your Character</strong> Now it is time to describe your character. Give them a name, some history, a home country, a home town, appearance details and any other details that may be important to roleplay later.
+      </p>
+      <p>
+        <strong>Step 4: Skills, Languages, and other Proficiencies.</strong> Your ancestry, background, and class will each provide certain proficiencies and languages. Refer to their descriptions for what and how many you get. For languages first refer to the information on the <router-link to="/options/languages" target="_blank">Languages page</router-link> to figure out what languages you know, and then pick any additional languages known you may have.
+      </p>
+      <p>
+        <strong>Step 5: Picking Spells</strong> If your character is an artificer, bard, cleric, druid, sorcerer, warlock, or wizard, you will need to pick spells. Refer to your classes Spellcasting feature for how to do this.
+      </p>
+      <p>
+        <strong>Step 6: Starting Equipment</strong> Refer to your background and your class to determine your options for starting equipment.
+      </p>
+      <p>
+        <strong>Step 7: Leveling Up</strong> If your DM decides to start your character at a level other than first, use the Leveling Up section of the SRD (under Other Rules) to do this.
+      </p>
     </b-tab>
   </b-tabs>
 </div>

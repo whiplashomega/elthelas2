@@ -124,8 +124,7 @@
       <b-row>
         <b-col md="2">
           <label>
-            Type
-            <select v-model="typeFilter" class="form-control">
+            Type <select v-model="typeFilter">
               <option value="">All</option>
               <option value="aberration">Aberration</option>
               <option value="beast">Beast</option>
@@ -141,23 +140,46 @@
               <option value="plant">Plant</option>
               <option value="ooze">Ooze</option>
               <option value="undead">Undead</option>
-            </select>
+            </select> <br />
+            Size <select v-model="sizeFilter">
+              <option value="">All</option>
+              <option value="tiny">tiny</option>
+              <option value="small">small</option>
+              <option value="medium">medium</option>
+              <option value="large">large</option>
+              <option value="huge">huge</option>
+              <option value="gargantuan">gargantuan</option>
+              <option value="colossal">colossal</option>
+            </select> <br />
+            CR Min <input type="number" v-model="crFilterMin" class="charsheet-num" /> <br />
+            Max <input type="number" v-model="crFilterMax" class="charsheet-num" /><br />
           </label>
         </b-col>
         <div class="col-2">
-          Converted: {{convertedcount}}<br />
-          Unconverted: {{unconvertedcount}}<br />
-          <input type="checkbox" v-model="notupdatedonly" />Only Non-Updated
-
+          Fully Converted: {{convertedcount}}<br />
+          Metric: {{metriccount}}<br />
+          Valid HP: {{validhpcount}}<br />
+          Unconverted: {{unconvertedcount}}
         </div>
         <div class="col-sm-2">
-          <router-link to="/tools/creaturebuilder" class="btn btn-primary" style="margin-top:25px;">New Creature</router-link>
+          <router-link to="/tools/creaturebuilder" class="btn btn-primary" style="margin-top:10px;">New Creature</router-link><br />
+          <select v-model="metric">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option :value="false">Any</option>
+          </select> Metric <br />
+          <select v-model="converted">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option :value="false">Any</option>
+          </select> Converted
         </div>
         <b-col md="4" class="my-1">
           <b-input-group>
             <b-form-input v-model="creaturestable.filterValue" placeholder="Type to Search" />
             <button class="btn btn-primary" :disabled="!creaturestable.filterValue" @click="creaturestable.filterValue = ''">Clear</button>
           </b-input-group>
+          Results: {{filteredcreatures.length}}
         </b-col>
       </b-row>
       <table class="table table-striped table-responsive" id="creaturetable">

@@ -11,7 +11,7 @@ function throwerr(err, res) {
 }
 
 router.get('/', function(req, res) {
-  Creature.find({}, { name: true, size: true, cr: true, type: true, subtype: true, alignment: true, stats: true }, function (err, creatures) {
+  Creature.find({}, { name: true, size: true, cr: true, type: true, subtype: true, alignment: true, stats: true, hp: true, pc: true, speed: true, senses: true, description: true, hitdice: true }, function (err, creatures) {
     if (err) return throwerr(err, res);
     res.header('Cache-Control', "no-cache, no-store, must-revalidate");
     res.header("Pragma", "no-cache");

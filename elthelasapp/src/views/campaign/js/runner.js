@@ -71,6 +71,19 @@ const crxptable = [
   { cr: 30, xp: 155000 }
 ];
 
+function validhp (cre) {
+  if (!isNaN(creaturecalc.hp(cre))) {
+    return  true;
+  }
+  return false;
+}
+function ismetric (a) {
+  if (a.speed.includes("ft") || a.speed.includes("feet") || a.senses.includes("ft") || a.senses.includes("feet") || a.description.includes("ft") || a.description.includes("feet")) {
+    return false;
+  }
+  return true;
+}
+
 export default {
   setup () {
     const creatureStore = useCreatureStore();
@@ -105,38 +118,65 @@ export default {
   computed: {
     convertedcount () {
       return this.creatures.filter((a) => {
-        if (a.stats[0]) {
-          return true;
-        }
+        return validhp(a);
+      }).filter((a) => {
+        return ismetric(a);
+      }).length;
+    },
+    metriccount () {
+      return this.creatures.filter((a) => {
+        return ismetric(a);
+      }).length;
+    },
+    validhpcount () {
+      return this.creatures.filter((a) => {
+        return validhp(a);
       }).length;
     },
     unconvertedcount () {
       return this.creatures.filter((a) => {
-        if (!a.stats[0]) {
-          return true;
-        }
+        return !validhp(a);
       }).length;
     },
     filteredcreatures () {
-      let comp = this;
       return this.creatures.filter((a) => {
-        var values = comp.creaturestable.filterValue.split(" ");
+        var values = this.creaturestable.filterValue.split(" ");
         let inelement = true;
-        if (comp.typeFilter !== "" && a.type !== comp.typeFilter) {
-          inelement = false;
-        }
-        if (this.notupdatedonly && a.stats[0]) {
+        if (this.typeFilter !== "" && a.type !== this.typeFilter) {
           return false;
         }
+        if (this.sizeFilter !== "" && a.size !== this.sizeFilter) {
+          return false;
+        }
+        if (this.crFilterMin > a.cr) {
+          return false;
+        }
+        if (this.crFilterMax < a.cr) {
+          return false;
+        }
+        if (this.converted) {
+          if (this.converted === "Yes" && !validhp(a)) {
+            return false;
+          } else if (this.converted === "No" && validhp(a)) {
+            return false;
+          }
+        }
+        if (this.metric) {
+          if (this.metric === "Yes" && !ismetric(a)) {
+            return false;
+          } else if (this.metric === "No" && ismetric(a)) {
+            return false;
+          }
+        }
         values.forEach((value) => {
-          let exists = comp.creaturestable.filterBy.some(function(el) {
+          let exists = this.creaturestable.filterBy.some(function(el) {
             for (var y in a) {
               if (el === y && a[y].toString().toLowerCase().includes(value.toLowerCase())) {
                 return true;
               }
             }
           });
-          if (comp.creaturestable.filterValue && !exists) {
+          if (this.creaturestable.filterValue && !exists) {
             inelement = false;
           }
         });
@@ -201,6 +241,9 @@ export default {
       },
       modalProps: { isActive: false },
       typeFilter: "",
+      sizeFilter: "",
+      crFilterMin: 0,
+      crFilterMax: 40,
       nextIndex: 0,
       partylevel: 1,
       partysize: 4,
@@ -211,7 +254,8 @@ export default {
       aoe: false,
       comp: this,
       encountercreatures: [],
-      notupdatedonly: false
+      converted: false,
+      metric: false
     };
   },
   methods: {
@@ -267,9 +311,7 @@ export default {
       }
     },
     async addToEncounter (item) {
-      if (!item.description) {
-        item = await this.getCreature(item._id);
-      }
+      item = await this.getCreature(item._id);
       var creature = Object.assign({}, item);
       creature.id = this.nextIndex;
       creature.ispc = false;
