@@ -205,7 +205,7 @@
           <tbody>
             <tr><td>Ammunition</td><td>0</td><td>This weapon requires ammunition of an appropriate type in order to be used.</td></tr>
             <tr><td>Armor</td><td>2.5</td><td>This weapon is also armor, or is part of a suit of armor.</td></tr>
-            <tr><td>Armor piercing</td><td>1.5</td><td>Once per turn, when you hit an opponent with this weapon you can damage any manufactured armor that they are wearing, reducing it's AC by 1. If the AC is reduced to 10, the armor is destroyed (or 0 in the case of a shield).</td></tr>
+            <tr><td>Armor piercing</td><td>1.5</td><td>Double the damage dice of this weapon if the target has protection points remaining.</td></tr>
             <tr><td>Artillery</td><td>-8</td><td>This weapon is incredibly large. It takes an action to load and another to fire, and takes up a 5 x 5 space on its own (size medium), requiring either a large creature to pull it from place to place, or a medium creature to push it at 5 ft per round.</td></tr>
             <tr><td>Awkward</td><td>-1</td><td>This weapon is unwieldy at close range. If it is a melee weapon, attacks with this weapon have disadvantage to hit opponents within 5 ft. If it is a ranged weapon, attacks with this weapon have disadvantage to hit opponents within 30 ft.</td></tr>
             <tr><td>Brutal</td><td>1</td><td>This weapon does one extra die of its damage type on a critical hit. So a weapon that does 2d6 damage would deal 5d6 damage on a critical hit, and a weapon that does 1d12 damage would do 3d12 damage on a critical hit. This stacks with the Brutal Critical feature.</td></tr>
@@ -220,7 +220,7 @@
             <tr><td>Light</td><td>1</td><td>This weapon is light and well balanced enough to use one in each hand.</td></tr>
             <tr><td>Loading</td><td>-1</td><td>This weapon takes time to load and can only be used to make 1 attack per round.</td></tr>
             <tr><td>Net special</td><td>4.5</td><td>When you hit a target with this weapon they are restrained. The target can make a strength (athletics) check or a dexterity (acrobatics) check as an action with a DC of 10 to escape the net.</td></tr>
-            <tr><td>Poison</td><td>2</td><td>This weapon's ammunition is coated with simple poisons. Those hit by this weapon must make a DC 12 Constitution save or suffer the poisoned condition for one round.</td></tr>
+            <tr><td>Poison</td><td>3</td><td>This weapon's ammunition is coated with simple poisons. Those hit by this weapon must make a DC 12 Constitution save or suffer the poisoned condition for one round.</td></tr>
             <tr><td>Polearm</td><td>0.5</td><td>This weapon is a polearm, and is affected by feats or abilities that require polearms.</td></tr>
             <tr><td>Ranged</td><td>0</td><td>Attacks with this weapon are made with disadvantage when within 5 ft of a hostile character. You use dexterity for attack and damage rolls with this weapon.</td></tr>
             <tr><td>Returning</td><td>1.5</td><td>This weapon returns to your hand when thrown as long as nothing prevents it from doing so.</td></tr>
@@ -241,14 +241,14 @@
             <tr><th>Mastery</th><th>Effect</th></tr>
           </thead>
           <tbody>
-            <tr><td>Cleave</td><td>If you hit a creature with a melee attack using this weapon, you can make an attack roll with the weapon against a second creature within 1m of the first that is also within your reach. On a hit, the second creature takes the weapon’s damage, but don’t add your ability modifier to that damage, unless that modifier is negative. You can make this extra attack only once per turn.</td></tr>
-            <tr><td>Flex</td><td>When you hit with a melee attack using this weapon, you deal its Versatile damage even if you’re wielding it with one hand.</td></tr>
+            <tr><td>Cleave</td><td>If you hit a creature with a melee attack using this weapon, you can make an attack roll with the weapon against a second creature that is also within your reach. On a hit, the second creature takes the weapon’s damage, but don’t add your ability modifier to that damage, unless that modifier is negative. You can make this extra attack only once per turn.</td></tr>
+            <tr><td>Flex</td><td>While wielding this weapon you get a +1 to AC if wielding it in one hand, or a +2 to AC if wielding it with two hands.</td></tr>
             <tr><td>Graze</td><td>If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can’t be increased in any way, other than increasing the ability modifier.</td></tr>
             <tr><td>Poison</td><td>You can apply a dose of poison to this weapon as a bonus action on your turn.</td></tr>
             <tr><td>Push</td><td>If you hit a creature with this weapon, you can push the creature up to 2m away from you if it is no more than one size larger than you.</td></tr>
             <tr><td>Sap</td><td>If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.</td></tr>
-            <tr><td>Slow</td><td>If you hit a creature with this weapon and deal damage to the creature, you can reduce its Speed by 10 feet until the start of your next turn. If you hit the creature more than once with this property, the Speed reduction doesn’t exceed 10 feet.</td></tr>
-            <tr><td>Vex</td><td>If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.</td></tr>
+            <tr><td>Slow</td><td>If you hit a creature with this weapon, you can reduce its Speed by 10 feet until the start of your next turn. If you hit the creature more than once with this property, the Speed reduction doesn’t exceed 10 feet.</td></tr>
+            <tr><td>Vex</td><td>If you hit a creature with this weapon, you have Advantage on your next attack roll against that creature before the end of your next turn.</td></tr>
           </tbody>
         </table>
         <h4>Improvised Weapons</h4>

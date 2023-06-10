@@ -15,23 +15,11 @@
     "Weapon": "Dagger",
     "Type": "Simple",
     "Dtype": "Piercing",
-    "Properties": "finesse, light, concealable, common",
+    "Properties": "finesse, light, concealable, thrown",
     "Mastery": "Poison",
     "Damage": "1d4",
     "Cost": 8,
     "Weight": 1,
-    "Reach": 1,
-    "Range": 0
-  },
-  {
-    "Weapon": "Throwing Knife",
-    "Type": "Simple",
-    "Dtype": "Piercing",
-    "Properties": "finesse, light, concealable",
-    "Mastery": "Poison",
-    "Damage": "1d4",
-    "Cost": 8,
-    "Weight": 0.5,
     "Reach": 1,
     "Range": 4
   },
@@ -173,10 +161,10 @@
     "Dtype": "Bludgeoning",
     "Properties": "knock down",
     "Mastery": "Sap",
-    "Damage": "2d4",
+    "Damage": "1d8",
     "Cost": 20,
     "Weight": 4,
-    "Reach": 1,
+    "Reach": 2,
     "Range": 0
   },
   {
@@ -213,7 +201,7 @@
     "Cost": 300,
     "Weight": 3,
     "Reach": 0,
-    "Range": 12
+    "Range": 16
   },
   {
     "Weapon": "Flail",
@@ -327,7 +315,7 @@
     "Weapon": "Rapier",
     "Type": "Simple",
     "Dtype": "Piercing",
-    "Properties": "finesse",
+    "Properties": "finesse, armor piercing",
     "Mastery": "Vex",
     "Damage": "1d8",
     "Cost": 100,
@@ -471,9 +459,9 @@
     "Weapon": "Pistol",
     "Type": "Firearm",
     "Dtype": "Piercing",
-    "Properties": "ranged,  Ammunition, loading, gunform, rare, light, brutal",
+    "Properties": "ranged, Ammunition, loading, gunform, rare, light, armor piercing",
     "Mastery": "None",
-    "Damage": "1d12",
+    "Damage": "1d10",
     "Cost": 2000,
     "Weight": 2,
     "Reach": 0,
@@ -483,13 +471,13 @@
     "Weapon": "Musket",
     "Type": "Firearm",
     "Dtype": "Piercing",
-    "Properties": "ranged, ammunition, loading, gunform, rare, two-handed, brutal",
+    "Properties": "ranged, ammunition, loading, gunform, rare, two-handed, armor piercing",
     "Mastery": "None",
-    "Damage": "2d8",
+    "Damage": "2d6",
     "Cost": 2000,
     "Weight": 8,
     "Reach": 0,
-    "Range": 8
+    "Range": 12
   },
   {
     "Weapon": "Greataxe",
@@ -497,7 +485,7 @@
     "Dtype": "Slashing",
     "Properties": "brutal, heavy, two-handed, knockdown",
     "Mastery": "Cleave",
-    "Damage": "3d4",
+    "Damage": "1d12",
     "Cost": 120,
     "Weight": 7,
     "Reach": 2,
@@ -555,13 +543,13 @@
     "Weapon": "Bolas",
     "Type": "Martial",
     "Dtype": "Bludgeoning",
-    "Properties": "net special, thrown, ranged",
+    "Properties": "net special, thrown, ranged, light, finesse",
     "Mastery": "None",
-    "Damage": "1d4",
+    "Damage": "0",
     "Cost": 10,
     "Weight": 2,
     "Reach": 0,
-    "Range": 8
+    "Range": 12
   },
   {
     "Weapon": "Spiked Chain",
@@ -585,7 +573,7 @@
     "Cost": 25,
     "Weight": 10,
     "Reach": 0,
-    "Range": 12
+    "Range": 16
   },
   {
     "Weapon": "Ballista",
@@ -629,11 +617,11 @@
     "Dtype": "Bludgeoning",
     "Properties": "ranged, ammunition, rare, artillery, two-handed",
     "Mastery": "None",
-    "Damage": "4d6",
+    "Damage": "3d8",
     "Cost": 10000,
     "Weight": 500,
     "Reach": 0,
-    "Range": 40
+    "Range": 36
   },
   {
     "Weapon": "Culverin",
@@ -641,22 +629,22 @@
     "Dtype": "Bludgeoning",
     "Properties": "ranged, ammunition, heavy artillery, two-handed, rare",
     "Mastery": "None",
-    "Damage": "4d6",
+    "Damage": "3d8",
     "Cost": 20000,
     "Weight": 4000,
     "Reach": 0,
-    "Range": 104
+    "Range": 100
   },
   {
     "Weapon": "Arquebus",
     "Type": "Firearm",
     "Dtype": "Piercing",
-    "Properties": "ranged, two-handed, loading, gunform, brutal, ammunition",
+    "Properties": "ranged, two-handed, loading, gunform, armor piercing, ammunition",
     "Mastery": "None",
-    "Damage": "3d4",
+    "Damage": "1d12",
     "Cost": 500,
     "Weight": 10,
     "Reach": 0,
-    "Range": 12
+    "Range": 8
   }
 ]
