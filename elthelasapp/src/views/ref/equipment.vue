@@ -265,7 +265,7 @@
         <p>The weapons above were balanced using a points system, with each weapon having a value of 8 points. The formula is: <strong>Average Damage + Reach + Range + Properties + Type Modifier.</strong></p>
         <ul>
           <li>Average Damage. This is the average roll of the damage dice the weapon uses. So 1d4 = 2.5, 1d6 = 3.5, 1d8 = 4.5, etc.</li>
-          <li>Reach. A 5 ft reach melee attack adds 1 pt, a 10 ft reach adds 2.5, and a 15 ft reach adds 5.</li>
+          <li>Reach. A 1m (for light weapons) or 2m reach melee attack adds 1 pt, a 3m reach adds 2.5, and a 4m reach adds 5.</li>
           <li>Range. Every 30 ft of range for ranged attacks adds 1 pt (15 ft adds 0.5 pts).</li>
           <li>Properties. Sum the value of all the properties in the table above that apply to your weapon.</li>
           <li>Type Modifier. Martial weapons should in general be better than simple weapons, add 1.5 to the score of a simple weapon. Firearms require a special proficiency to use, and thus a -1 modifier from type.</li>

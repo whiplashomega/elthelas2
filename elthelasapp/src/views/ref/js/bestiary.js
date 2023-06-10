@@ -15,16 +15,40 @@ export default {
       admin, creatures, getCreature, getAllCreatures
     };
   },
-  components: { 
+  components: {
     modal
   },
   computed: {
     filteredcreatures () {
-      return this.creatures.filter((cre) => {
-        for (let key in cre) {
-          if (cre[key].toString().toLowerCase().includes(this.creaturestable.filterValue.toLowerCase())) {
-            return true;
+      return this.creatures.filter((a) => {
+        var values = this.creaturestable.filterValue.split(" ");
+        let inelement = true;
+        if (this.typeFilter !== "" && a.type !== this.typeFilter) {
+          return false;
+        }
+        if (this.sizeFilter !== "" && a.size !== this.sizeFilter) {
+          return false;
+        }
+        if (this.crFilterMin > a.cr) {
+          return false;
+        }
+        if (this.crFilterMax < a.cr) {
+          return false;
+        }
+        values.forEach((value) => {
+          let exists = this.creaturestable.filterBy.some(function(el) {
+            for (var y in a) {
+              if (el === y && a[y].toString().toLowerCase().includes(value.toLowerCase())) {
+                return true;
+              }
+            }
+          });
+          if (this.creaturestable.filterValue && !exists) {
+            inelement = false;
           }
+        });
+        if (inelement) {
+          return true;
         }
         return false;
       }).sort((a, b) => {
@@ -36,11 +60,15 @@ export default {
           return -1;
         }
       });
-    }
+    },
   },
   data () {
     return {
       modalProps: { title: "", isActive: false },
+      typeFilter: "",
+      sizeFilter: "",
+      crFilterMin: 0,
+      crFilterMax: 40,
       creaturestable: {
         fields: [
           { key: 'name', label: 'Name', sortable: true },

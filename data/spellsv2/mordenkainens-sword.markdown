@@ -14,7 +14,7 @@ tags:   [bard, wizard, level7, evocation]
 
 **Components**: V, S, M (a miniature platinum sword with a grip and pommel of copper and zinc, worth 250 gp)
 
-**Duration**: Concentration, up to 1 minute
+**Duration**: 1 minute
 
 **Saving Throw**: Constitution
 
