@@ -73,11 +73,11 @@
       </table>
     <modal id="creaturemodal" :modalProps="modalProps"
              ok-only>
-      <h4> {{ creaturestable.modalInfo.size }} {{ creaturestable.modalInfo.type }}<span v-if="creaturestable.modalInfo.subtype"> ({{ creaturestable.modalInfo.subtype }})</span>, {{ creaturestable.modalInfo.alignment }}</h4>
+      <h4> {{ creature.size }} {{ creature.type }}<span v-if="creature.subtype"> ({{ creature.subtype }})</span>, {{ creature.alignment }}</h4>
       <p>
-        <strong>Armor Class:</strong> {{ creaturestable.modalInfo.acdesc }} <br />
-        <strong>Hit Points:</strong>{{ creaturestable.modalInfo.hpdesc }} <br />
-        <strong>Speed:</strong> {{ creaturestable.modalInfo.speed }}
+        <strong>Armor Class:</strong> {{creature.ac}} {{ creature.acdesc }} <br />
+        <strong>Hit Points:</strong>{{ creaturecalc.hp(creature) }} ({{creaturecalc.basehp(creature)}} + {{ creaturecalc.pp(creature)}}) <br />
+        <strong>Speed:</strong> {{ creature.speed }}
       </p>
       <table class="table table-striped">
         <thead>
@@ -87,26 +87,26 @@
         </thead>
         <tbody>
           <tr>
-            <td>{{ creaturestable.modalInfo.str }} (<span v-if="creaturestable.modalInfo.strmod > 0">+</span>{{ creaturestable.modalInfo.strmod }})</td>
-            <td>{{ creaturestable.modalInfo.dex }} (<span v-if="creaturestable.modalInfo.dexmod > 0">+</span>{{ creaturestable.modalInfo.dexmod }})</td>
-            <td>{{ creaturestable.modalInfo.con }} (<span v-if="creaturestable.modalInfo.conmod > 0">+</span>{{ creaturestable.modalInfo.conmod }})</td>
-            <td>{{ creaturestable.modalInfo.int }} (<span v-if="creaturestable.modalInfo.intmod > 0">+</span>{{ creaturestable.modalInfo.intmod }})</td>
-            <td>{{ creaturestable.modalInfo.wis }} (<span v-if="creaturestable.modalInfo.wismod > 0">+</span>{{ creaturestable.modalInfo.wismod }})</td>
-            <td>{{ creaturestable.modalInfo.cha }} (<span v-if="creaturestable.modalInfo.chamod > 0">+</span>{{ creaturestable.modalInfo.chamod }})</td>
+            <td>{{ creature.stats[0] }} (<span v-if="creaturecalc.statMod(creature, 0) > 0">+</span>{{ creaturecalc.statMod(creature, 0) }})</td>
+            <td>{{ creature.stats[1] }} (<span v-if="creaturecalc.statMod(creature, 1) > 0">+</span>{{ creaturecalc.statMod(creature, 1) }})</td>
+            <td>{{ creature.stats[2] }} (<span v-if="creaturecalc.statMod(creature, 2) > 0">+</span>{{ creaturecalc.statMod(creature, 2) }})</td>
+            <td>{{ creature.stats[3] }} (<span v-if="creaturecalc.statMod(creature, 3) > 0">+</span>{{ creaturecalc.statMod(creature, 3) }})</td>
+            <td>{{ creature.stats[4] }} (<span v-if="creaturecalc.statMod(creature, 4) > 0">+</span>{{ creaturecalc.statMod(creature, 4) }})</td>
+            <td>{{ creature.stats[5] }} (<span v-if="creaturecalc.statMod(creature, 5) > 0">+</span>{{ creaturecalc.statMod(creature, 5) }})</td>
           </tr>
         </tbody>
       </table>
       <p>
-        <span v-if="creaturestable.modalInfo.saves"><strong>Saving Throws:</strong> {{ creaturestable.modalInfo.saves }} <br /></span>
-        <span v-if="creaturestable.modalInfo.skills.length > 0"><strong>Skills:</strong> {{ creaturestable.modalInfo.skills.join(", ") }} <br /></span>
-        <strong>Senses:</strong> {{ creaturestable.modalInfo.senses }} <br />
-        <span v-if="creaturestable.modalInfo.damageresistances"><strong>Damage Resistances:</strong> {{ creaturestable.modalInfo.damageresistances }} <br /></span>
-        <span v-if="creaturestable.modalInfo.damageimmunities"><strong>Damage Immunities:</strong> {{ creaturestable.modalInfo.damageimmunities }} <br /></span>
-        <span v-if="creaturestable.modalInfo.conditionimmunities"><strong>Condition Immunities:</strong> {{ creaturestable.modalInfo.conditionimmunities }} <br /></span>
-        <strong>Languages:</strong> {{ creaturestable.modalInfo.languages }} <br />
-        <strong>Challenge:</strong> {{ creaturestable.modalInfo.cr }}
+        <span v-if="creature.saves"><strong>Saving Throws:</strong> {{ creature.saves }} <br /></span>
+        <span v-if="creature.skills.length > 0"><strong>Skills:</strong> {{ creature.skills.join(", ") }} <br /></span>
+        <strong>Senses:</strong> {{ creature.senses }} <br />
+        <span v-if="creature.damageresistances"><strong>Damage Resistances:</strong> {{ creature.damageresistances }} <br /></span>
+        <span v-if="creature.damageimmunities"><strong>Damage Immunities:</strong> {{ creature.damageimmunities }} <br /></span>
+        <span v-if="creature.conditionimmunities"><strong>Condition Immunities:</strong> {{ creature.conditionimmunities }} <br /></span>
+        <strong>Languages:</strong> {{ creature.languages }} <br />
+        <strong>Challenge:</strong> {{ creature.cr }}
       </p>
-      <div v-html="creaturestable.modalInfo.descr"></div>
+      <div v-html="creature.descr"></div>
     </modal>
   </div>
 </template>

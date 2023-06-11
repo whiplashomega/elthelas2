@@ -2,6 +2,7 @@ import { useUserStore, useCreatureStore } from '@/stores/index';
 import { storeToRefs } from 'pinia';
 import { useMeta } from 'vue-meta';
 import modal from '@/components/global/modal.vue';
+import creaturecalc from '@/helpers/creaturecalc';
 
 export default {
   setup () {
@@ -12,7 +13,7 @@ export default {
     const { creatures } = storeToRefs(creatureStore);
     useMeta({ title: "Bestiary" });
     return {
-      admin, creatures, getCreature, getAllCreatures
+      admin, creatures, getCreature, getAllCreatures, creaturecalc
     };
   },
   components: {
@@ -82,75 +83,22 @@ export default {
         sortBy: "name",
         sortDesc: false,
         filterBy: [ "name", "size", "cr", "type", "subtype", "alignment", "description" ],
-        modalInfo: {
-          name: "",
-          tags: "",
-          size: "",
-          cr: "",
-          type: "",
-          subtype: "",
-          alignment: "",
-          ac: "",
-          acdesc: "",
-          hp: "",
-          hpdesc: "",
-          speed: "",
-          str: "",
-          dex: "",
-          con: "",
-          int: "",
-          wis: "",
-          cha: "",
-          skills: "",
-          saves: "",
-          senses: "",
-          damageimmunities: "",
-          conditionimmunities: "",
-          damageresistances: "",
-          languages: "",
-          locations: "",
-          latlong: "",
-          description: ""
-        }
+      },
+      creature: {
+        stats: [8, 8, 8, 8, 8, 8],
+        skills: []
       }
     };
   },
   methods: {
     async info (item) {
-      var creature = await this.getCreature(item._id);
-      this.creaturestable.modalInfo = creature;
-      this.modalProps = { title: creature.name, isActive: true }
+      this.creature = await this.getCreature(item._id);
+      this.modalProps = { title: this.creature.name, isActive: true }
     },
     resetModal () {
-      this.creaturestable.modalInfo = {
-        name: "",
-        tags: "",
-        size: "",
-        cr: "",
-        type: "",
-        subtype: "",
-        alignment: "",
-        ac: "",
-        acdesc: "",
-        hp: "",
-        hpdesc: "",
-        speed: "",
-        str: "",
-        dex: "",
-        con: "",
-        int: "",
-        wis: "",
-        cha: "",
-        skills: "",
-        saves: "",
-        senses: "",
-        damageimmunities: "",
-        conditionimmunities: "",
-        damageresistances: "",
-        languages: "",
-        locations: "",
-        latlong: "",
-        description: ""
+      this.creature = {
+        stats: [0, 0, 0, 0, 0, 0],
+        skills: []
       };
     },
     filter (a) {
