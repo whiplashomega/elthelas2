@@ -38,22 +38,23 @@
           </select>
         </div>
         <div>
+          <label>
+            Subtype
+          </label>
+          <input type="text" class="charsheet-text" v-model="creature.subtype" />
+        </div>
+        <div>
           <label>AC</label>
           <input type="number" class="charsheet-text" v-model="creature.ac" />
         </div>
         <div>
-          <label>HP (deprecated)</label>
-          <input type="number" class="charsheet-text" v-model="creature.hp" />
-        </div>
-        <div>
-          <label>PP/Hitdie</label>
-          <input type="number" class="charsheet-text" v-model="creature.pc" />
+          <label>AC Description</label>
+          <input type="text" class="charsheet-text" v-model="creature.acdesc" />
         </div>
         <div>
           <label>Speed</label>
           <input type="text" class="charsheet-text" v-model="creature.speed" />
         </div>
-
         <div>
           <label>
             Damage Resistances
@@ -118,14 +119,8 @@
           <input type="text" class="charsheet-text" v-model="creature.alignment" />
         </div>
         <div>
-          <label>
-            Subtype
-          </label>
-          <input type="text" class="charsheet-text" v-model="creature.subtype" />
-        </div>
-        <div>
-          <label>AC Description</label>
-          <input type="text" class="charsheet-text" v-model="creature.acdesc" />
+          <label>HP (deprecated)</label>
+          <input type="number" class="charsheet-text" v-model="creature.hp" />
         </div>
         <div>
           <label>HP Description (deprecated)</label>
@@ -134,6 +129,10 @@
         <div>
           <label>Hit Dice:</label>
           <input type="number" class="charsheet-num" v-model="creature.hitdice" />d<span v-if="creature.size === 'tiny'">4</span><span v-if="creature.size === 'small'">6</span><span v-if="creature.size === 'medium'">8</span><span v-if="creature.size === 'large'">10</span><span v-if="creature.size === 'huge'">12</span><span v-if="creature.size === 'gargantuan'">20</span><span v-if="creature.size === 'colossal'">20</span> <label>HP: </label> {{creaturecalc.hp(creature)}} <label>Base: </label> {{creaturecalc.basehp(creature)}} PP: {{creaturecalc.pp(creature)}}
+        </div>
+        <div>
+          <label>PP/Hitdie</label>
+          <input type="number" class="charsheet-text" v-model="creature.pc" />
         </div>
         <div>
           <label>Saves</label>
