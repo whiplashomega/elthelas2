@@ -82,6 +82,7 @@
         <li>Group Ability Checks</li>
         <li>Factions</li>
         <li>Metric Conversion and Space Rules -> 1 meter squares</li>
+        <li>Flanking -> Bonus damage.</li>
       </ul>
       <h3>Summary of Class Changes</h3>
       <h4>Every Class.</h4>
