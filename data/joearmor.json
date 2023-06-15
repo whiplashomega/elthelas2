@@ -98,8 +98,8 @@
   {
     "Armor": "Chain Full Armor",
     "Type": "Heavy",
-    "AC": 16,
-    "PC": 3,
+    "AC": 15,
+    "PC": 4,
     "MaxDex": 1,
     "Properties": "Impeding (Stealth), STR 13",
     "Weight": 55,
@@ -338,9 +338,9 @@
   {
     "Armor": "Mithril Chain Full Armor",
     "Type": "Medium",
-    "AC": 16,
-    "PC": 2,
-    "MaxDex": 2,
+    "AC": 15,
+    "PC": 4,
+    "MaxDex": 1,
     "Properties": "Impeding (Stealth), Rare",
     "Weight": 22,
     "Cost": 6500,
