@@ -103,6 +103,11 @@ export default {
             this.creature.ac = 16 + Math.max(Math.min(creaturecalc.statMod(this.creature, 1), 1), 0);
             this.creature.pc = 3;
             this.creature.ac += this.creature.acdesc.includes("shield") ? 2 : 0;
+          } else if (this.creature.acdesc.includes("scale mail")) {
+            this.creature.acdesc = this.creature.acdesc.replace("scale mail", "Scale Hauberk");
+            this.creature.ac = 15 + Math.max(Math.min(creaturecalc.statMod(this.creature, 1), 2), 0);
+            this.creature.pc = 1;
+            this.creature.ac += this.creature.acdesc.includes("shield") ? 2 : 0;
           } else if (this.creature.acdesc.includes("splint armor")) {
             this.creature.acdesc = this.creature.acdesc.replace("splint armor", "Scale Full Armor");
             this.creature.ac = 16 + Math.max(Math.min(creaturecalc.statMod(this.creature, 1), 1), 0);
