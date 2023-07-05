@@ -2626,5 +2626,68 @@
   "Attunement": "Yes",
   "Weight": "3 lb",
   "Effect": "This magical crossbow was specifically designed and built by a team of the best gnomish artificers from Stagenheim specifically as a gift for General Lilith of the Black Wolf Irregulars. It is attuned to her particular essence and can only be attuned by her. When attuned to this item, Lilith gains the following benefits:\n\n* +3 to attack and damage rolls made with this crossbow.\n* +2 to her dexterity and intelligence scores (does not stack with other magical bonuses to these scores).\n* When she makes an attack with this crossbow she can choose a damage type: fire, cold, lightning, poison, or acid. The crossbow does an additional 1d8 damage of that type.\n* This crossbow magically creates its own ammunition when fired, ignoring the loading and ammunition properties."
+ },
+ {
+  "Item": "Chuul Poison",
+  "Type": "Single Use",
+  "Cost": "100",
+  "Rarity": "Common",
+  "Attunement": "No",
+  "Weight": "0.1 lb",
+  "Effect": "You can use the poison in this vial to coat one weapon or up to three pieces of ammunition.   Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition  must make a DC 13 Constitution saving throw or gain the poisoned condition for 1 minute. They can repeat the saving throw at the end of each of their turns, ending the condition on a success. Once applied, the poison retains potency for 1 minute before drying."
+ },
+ {
+  "Item": "Basilisk Poison",
+  "Type": "Single Use",
+  "Cost": "100",
+  "Rarity": "Common",
+  "Attunement": "No",
+  "Weight": "0.1 lb",
+  "Effect": "You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition takes 2d6 poison damage. Once applied, the poison retains potency for 1 minute before drying."
+ },
+ {
+  "Item": "Bearded Devil Poison",
+  "Type": "Single Use",
+  "Cost": "200",
+  "Rarity": "Uncommon",
+  "Attunement": "No",
+  "Weight": "0.1 lb",
+  "Effect": "You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition must make a DC 12 Constitution saving throw or gain the poisoned condition for 1 minute. While poisoned they cannot regain hit points. They can repeat the saving throw at the end of each of their turns, ending the condition on a success. Once applied, the poison retains potency for 1 minute before drying."
+ },
+ {
+  "Item": "Bone Naga Poison",
+  "Type": "Single Use",
+  "Cost": "300",
+  "Rarity": "Uncommon",
+  "Attunement": "No",
+  "Weight": "0.1 lb",
+  "Effect": "You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition takes 3d6 poison damage. Once applied, the poison retains potency for 1 minute before drying."
+ },
+ {
+  "Item": "Corpse Flower Poison",
+  "Type": "Single Use",
+  "Cost": "350",
+  "Rarity": "Uncommon",
+  "Attunement": "No",
+  "Weight": "0.1 lb",
+  "Effect": "You can use the poison in this vial to coat one weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition takes 3d6 poison damage. Once applied, the poison retains potency for 1 minute before drying."
+ },
+ {
+  "Item": "Bone Devil Poison",
+  "Type": "Single Use",
+  "Cost": "600",
+  "Rarity": "Rare",
+  "Attunement": "No",
+  "Weight": "0.1 lb",
+  "Effect": "You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition takes 5d6 poison damage and must make a DC 14 Constitution saving throw or gain the poisoned condition for 1 minute. They can repeat the saving throw at the end of each of their turns, ending the condition on a success. Once applied, the poison retains potency for 1 minute before drying."
+ },
+ {
+  "Item": "Coatl Poison",
+  "Type": "Single Use",
+  "Cost": "600",
+  "Rarity": "Rare",
+  "Attunement": "No",
+  "Weight": "0.1 lb",
+  "Effect": "You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition must succeed on a DC 13 Constitution saving throw or be poisoned for 24 hours. Until this poison ends, the target is unconscious. Another creature can use an action to shake the target awake. Once applied, the poison retains potency for 1 minute before drying."
  }
 ]

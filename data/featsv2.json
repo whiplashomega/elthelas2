@@ -126,8 +126,8 @@
   },
   {
     "name": "Heavily Armored",
-    "prereq": "Proficiency with medium armor, 4th level",
-    "description": "You have trained to master the use of heavy armor, gaining the following benefits:\n\n* Increase your Constitution or Strength score by 1, to a maximum of 20.\n* You gain proficiency with heavy armor and shields."
+    "prereq": "Proficiency with light or medium armor, 4th level",
+    "description": "You have trained to master the use of heavy armor, gaining the following benefits:\n\n* Increase your Constitution or Strength score by 1, to a maximum of 20.\n* You gain proficiency with medium armor, heavy armor and shields."
   },
   {
     "name": "Inspiring Leader",
@@ -142,7 +142,12 @@
   {
     "name": "Lightly Armored",
     "prereq": "",
-    "description": "You have trained to master the use of armor, gaining the following benefits:\n\n* You gain proficiency with light armor, medium armor, and shields."
+    "description": "You have trained to master the use of armor, gaining the following benefits:\n\n* You gain proficiency with light armor and shields."
+  },
+  {
+    "name": "Moderately Armored",
+    "prereq": "Proficiency with light armor",
+    "description": "You have gained a good understanding of how to move in medium armors, allowing blows to deflect off.\n\n* You gain proficiency with medium armor and shields."
   },
   {
     "name": "Linguist",

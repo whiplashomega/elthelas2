@@ -3,7 +3,7 @@
     <div class='row'>
       <div class="col-sm">
         <h4>Actions</h4>
-        <div v-for="action in actions" :key="action.id + action.show.toString()" :title="action.description">
+        <div v-for="action in actions" :key="action.id" :title="action.description">
           <strong @click="action.show = !action.show; forceUpdate()">{{ action.name }}</strong>
           <button class="btn btn-sm" @click="action.show = !action.show; forceUpdate()"><span v-if="action.show">&#x25B2;</span><span v-if="!action.show">&#x25BC;</span></button>
           <button v-if="action.useradd && action.resourceused" :disabled="!resourceAvailable(action)"

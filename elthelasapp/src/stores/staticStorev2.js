@@ -241,26 +241,27 @@ export default {
           for (var x = 0; x < items.length; x++) {
             items[x].print = false;
             var threshold = 1;
-            if (items[x].Item.includes("Mithril")) {
-              threshold = 0.25;
-            } else if (items[x].Item.includes("Adamantine") || items[x].Item.includes("Parakas Steel") || items[x].Item.includes("Orichalcum")) {
-              threshold = 0.1;
+            if (items[x].Item.includes("Mithril") || items[x].Item.includes("Orichalcum") || items[x].Item.includes("Parakas Steel")) {
+              threshold = 0.125;
+            } else if (items[x].Item.includes("Adamantine")) {
+              threshold = 0.05;
             } else if (items[x].Item.includes("Dragon")) {
               threshold = 0.05;
             }
             if (items[x].Rarity === "Uncommon") {
-              threshold *= (3 / 20);
+              threshold *= (3 / 40);
               this.magicuncommonsv2.push(items[x]);
             } else if (items[x].Rarity === "Rare") {
-              threshold *= (1 / 20);
+              threshold *= (1 / 40);
               this.magicraresv2.push(items[x]);
             } else if (items[x].Rarity === "Very Rare") {
-              threshold *= (1 / 100);
+              threshold *= (1 / 200);
               this.magicveryraresv2.push(items[x]);
             } else if (items[x].Rarity === "Legendary") {
-              threshold *= 0;
+              threshold *= (1 / 10000);
               this.magiclegendariesv2.push(items[x]);
             } else {
+              threshold *= (1/2);
               this.magiccommonsv2.push(items[x]);
             }
             var num = rng();

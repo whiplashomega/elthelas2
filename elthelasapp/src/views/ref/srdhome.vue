@@ -104,6 +104,7 @@
         <li>Frenzy no longer causes exhaustion</li>
         <li>Beast barbarian damage increased</li>
         <li>Beast barbarian +1 bonus instead of 'count as magic'</li>
+        <li>Unarmored Defense gives PP/Lvl</li>
       </ul>
       <h4>Bard</h4>
       <ul>
@@ -121,6 +122,7 @@
       <h4>Druid</h4>
       <ul>
         <li>Wildshape rules modified, largely for clarity</li>
+        <li>Circle of the Land Circle Spells adds 1st level spells at 2nd level (in addition to the 2-5th level spells at later levels).</li>
         <li>+1 bonus instead of natural weapon attacks 'count as magic'</li>
       </ul>
       <h4>Factotum (New Class)</h4>
@@ -145,6 +147,7 @@
         <li>Martial Arts die size increased</li>
         <li>Weapon Mastery unlocks in mid tier 3</li>
         <li>Way of the Elements reworked, is now effectively a half caster, and all spells are cheaper.</li>
+        <li>Increased hit die size</li>
       </ul>
       <h4>Paladin</h4>
       <ul>

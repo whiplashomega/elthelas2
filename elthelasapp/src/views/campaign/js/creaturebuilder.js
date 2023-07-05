@@ -113,6 +113,11 @@ export default {
             this.creature.ac = 16 + Math.max(Math.min(creaturecalc.statMod(this.creature, 1), 1), 0);
             this.creature.pc = 3;
             this.creature.ac += this.creature.acdesc.includes("shield") ? 2 : 0;
+          } else if (this.creature.acdesc.includes("breastplate")) {
+            this.creature.acdesc = this.creature.acdesc.replace("breastplate", "steel plate cuirass");
+            this.creature.ac = 12 + Math.max(Math.min(creaturecalc.statMod(this.creature, 1), 3), 0);
+            this.creature.pc = 2;
+            this.creature.ac += this.creature.acdesc.includes("shield") ? 2 : 0;
           } else if (this.creature.acdesc.includes("plate")) {
             this.creature.acdesc = this.creature.acdesc.replace("plate", "steel plate full armor");
             this.creature.ac = 16 + Math.max(Math.min(creaturecalc.statMod(this.creature, 1), 0), 0);

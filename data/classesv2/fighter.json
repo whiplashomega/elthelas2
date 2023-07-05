@@ -133,7 +133,7 @@
     {
       "level": 20,
       "name": "Called Critical",
-      "description": "You can declare a called critical before making a weapon attack. If the attack hits it is a critical hit, even if it would not otherwise be a critical hit."
+      "description": "You can declare a called critical before making a weapon attack. If the attack hits it is a critical hit, even if it would not otherwise be a critical hit. You can do this a number of times equal to your proficiency bonus, and recover all uses when you finish a long rest."
     }
   ],
   "subclass": [

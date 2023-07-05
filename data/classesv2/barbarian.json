@@ -44,7 +44,7 @@
     {
       "level": 1,
       "name": "Unarmored Defense",
-      "description": "While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier, and your Protection Class equals half your Constitution Modifier (rounded up, minimum 0). You can use a shield and still gain this benefit."
+      "description": "While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier, and your PP/Lvl equals your Constitution Modifier (rounded up, minimum 0). You can use a shield and still gain this benefit."
     },
     {
       "level": 2,

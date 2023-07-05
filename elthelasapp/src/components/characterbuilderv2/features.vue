@@ -43,6 +43,7 @@
             &#x25B2;
           </button>
         </div>
+        <span v-if="feat.show">Prerequisite: {{ feat.prereq }}</span>
         <p v-if="feat.show" v-html="marked.parse(feat.description)"></p>
       </div>
     </div>
@@ -79,7 +80,7 @@
               &#x25B2;
             </button>
             <select v-if="feature.choice" v-model="feature.chosen">
-              <option v-for="ch in feature.choice" :title="ch.description">{{ch.name}}</option>
+              <option v-for="ch in feature.choice" :title="ch.description" :key="ch.name">{{ch.name}}</option>
             </select>
             <span v-if="feature.show" v-html="marked.parse(feature.description)"></span>
           </p>
@@ -96,7 +97,7 @@
               &#x25B2;
             </button>
             <select v-if="feature.choice" v-model="feature.chosen">
-              <option v-for="ch in feature.choice" :title="ch.description">{{ch.name}}</option>
+              <option v-for="ch in feature.choice" :title="ch.description" :key="ch.name">{{ch.name}}</option>
             </select>
             <span v-if="feature.show" v-html="marked.parse(feature.description)"></span>
           </p>
