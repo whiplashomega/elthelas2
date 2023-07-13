@@ -42,8 +42,10 @@ The DM has the creatures’ statistics.
 
 **Level 6 Slot** 2 level 5 slot creatures, 1 Giant Crocodile, or 1 Giant Shark
 
-**Level 7 Slot** 2 Level 6 slot creatures or 1 mammoth
+**Level 7 Slot** 2 Level 6 slot creatures, 1 mammoth, or 1 dire tiger
 
-**Level 8 Slot** 2 Level 7 slot creatures or 1 giant ape
+**Level 8 Slot** 2 Level 7 slot creatures, 1 giant ape, or 1 dire bear
+
+**Level 9 Slot** 2 Level 8 slot creatures, or 1 dire rhinoceros
 
 **At Higher Levels.** When you cast this spell using certain higher-level spell slots, you get different summoning options.

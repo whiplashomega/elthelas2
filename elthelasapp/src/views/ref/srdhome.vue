@@ -105,6 +105,7 @@
         <li>Frenzy no longer causes exhaustion</li>
         <li>Beast barbarian damage increased</li>
         <li>Beast barbarian +1 bonus instead of 'count as magic'</li>
+        <li>Unarmored Defense gives PP/Lvl</li>
       </ul>
       <h4>Bard</h4>
       <ul>
@@ -128,6 +129,7 @@
         <li>Limited number of wild shape forms.</li>
         <li>Moon Druids now get the ability to wild shape into even better beast forms, and can choose elementals other than the standard 4.</li>
         <li>+1 bonus instead of natural weapon attacks 'count as magic'.</li>
+        <li>Circle of the Land Circle Spells adds 1st level spells at 2nd level (in addition to the 2-5th level spells at later levels).</li>
       </ul>
       <h4>Factotum (New Class)</h4>
       <ul>
@@ -151,6 +153,7 @@
         <li>Martial Arts die size increased</li>
         <li>Weapon Mastery</li>
         <li>Way of the Elements reworked, is now effectively a half caster, and all spells are cheaper.</li>
+        <li>Increased hit die size</li>
       </ul>
       <h4>Paladin</h4>
       <ul>

@@ -316,13 +316,13 @@
  },
  {
    "Item": "Healer’s Kit",
-   "Cost": 2,
+   "Cost": 25,
    "Weight": 0.3,
    "Description": "This kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can use the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check. You can also expend one use of this kit when performing the first aid action to gain advantage on the check and restore 2d4+2 hit points on a success. Either use consumes the kit."
  },
  {
    "Item": "Repair kit",
-   "Cost": 5,
+   "Cost": 50,
    "Weight": 0.5,
    "Description": "This kit is a leather pouch containing spare straps, polish, sauder, and other basic materials for repairing armor. You can use this kit in conjunction with tools you have in hand when performing the repair armor action to gain advantage on the check and restore 2d4+2 protection points on a success."
  },
@@ -484,9 +484,15 @@
  },
  {
    "Item": "Poison, basic (vial)",
-   "Cost": 100,
-   "Weight": 0,
-   "Description": "You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition must make a DC 10 Constitution saving throw or take 1d4 poison damage. Once applied, the poison retains potency for 1 minute before drying."
+   "Cost": 10,
+   "Weight": 0.1,
+   "Description": "You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition must make a DC 10 Constitution saving throw or take 1d6 poison damage. Once applied, the poison retains potency for 1 minute before drying."
+ },
+ {
+    "Item": "Poison, potent (vial)",
+    "Cost": 50,
+    "Weight": 0.1,
+    "Description": "You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition must make a DC 12 Constitution saving throw or take 2d6 poison damage and gain the poisoned condition for 1 minute. They can repeat the saving throw at the end of each of their turns, ending the condition on a success. Once applied, the poison retains potency for 1 minute before drying."
  },
  {
    "Item": "Pole (10-foot)",

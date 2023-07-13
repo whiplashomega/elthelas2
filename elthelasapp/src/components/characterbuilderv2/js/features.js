@@ -28,10 +28,10 @@ export default {
   computed: {
     lvl1feats () {
       return this.feats.filter((a) => {
-      if (!a.prereq.length) {
-        return true;
+      if (a.prereq.includes("level")) {
+        return false;
       }
-      return  false;
+      return  true;
     });
     },
     numASI () {

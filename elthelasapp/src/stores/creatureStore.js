@@ -62,7 +62,7 @@ export default {
     },
     getCreature (id) {
       return new Promise((resolve) => {
-        axios.get('/creatures/' + id + "?token=" + localStorage.getItem('token')).then((response) => {
+        axios.get('/creatures/m/' + id + "?token=" + localStorage.getItem('token')).then((response) => {
           let i = this.creatures.findIndex((cre) => {
             return cre._id === id;
           });
