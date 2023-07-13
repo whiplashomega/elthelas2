@@ -72,6 +72,11 @@
     },
     {
       "level": 4,
+      "name": "Weapon Mastery",
+      "description": "You unlock the maximum potential of the weapons you wield. You gain access to the weapon mastery property of any weapon you wield."
+    },
+    {
+      "level": 4,
       "name": "Ability Score Improvement",
       "description": "When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
     },
@@ -99,11 +104,6 @@
       "level": 7,
       "name": "Impose Self",
       "description": "As a reaction when an ally within 1m of you takes damage, you can spend one of your hit dice to reduce the damage by the amount that you roll on that hit die plus your constitution modifier. This modification is applied after any resistances or other modifications to the damage roll."
-    },
-    {
-      "level": 7,
-      "name": "Weapon Mastery",
-      "description": "You unlock the maximum potential of the weapons you wield. You gain access to the weapon mastery property of any weapon you wield."
     },
     {
       "level": 11,

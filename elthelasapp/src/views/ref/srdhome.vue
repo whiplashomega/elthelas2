@@ -96,11 +96,12 @@
       </ul>
       <h4>Barbarian</h4>
       <ul>
+        <li>Unarmored defense provides protection points. No longer a trap! Now makes you super tanky!</li>
         <li>Rage feature rewritten. Rage damage bonus increased.</li>
         <li>Impose Self -> use your hit dice in combat to tank for allies.</li>
         <li>Improved Critical, Brutal Critical -> Barbarians are now actually built to look for that big damage critical at high levels, critting at 19 starting at level 9, and with a much better Brutal Critical feature.</li>
         <li>Vengeful -> counterattack when tanking for allies</li>
-        <li>Weapon Mastery unlocks in tier 4</li>
+        <li>Weapon Mastery</li>
         <li>Frenzy no longer causes exhaustion</li>
         <li>Beast barbarian damage increased</li>
         <li>Beast barbarian +1 bonus instead of 'count as magic'</li>
@@ -112,18 +113,23 @@
         <li>Magical Secrets moved to levels 9 and 13</li>
         <li>Each subclasses bardic inspiration based ability now has an improved version at level 10.</li>
         <li>Valor Bard and Swords Bard get Combat Caster feature and Cantrip casting in Extra Attack</li>
+        <li>Countercharm removed. Jack-of-all-Trades moved to level 7.</li>
       </ul>
       <h4>Cleric</h4>
       <ul>
         <li>Combat Caster feature!</li>
+        <li>Holy Order feature.</li>
         <li>Blessed Strikes is now just a level 8 cleric feature, rather than a subclass feature in most subclasses.</li>
         <li>Channel Divinity moved to level 3, subclass channel divinity options moved to level 6</li>
       </ul>
       <h4>Druid</h4>
       <ul>
-        <li>Wildshape rules modified, largely for clarity</li>
+        <li>Wildshape rules modified, largely for clarity, but also some balance and ease of play changes.</li>
+        <li>All subclasses can now wildshape as a bonus action.</li>
+        <li>Limited number of wild shape forms.</li>
+        <li>Moon Druids now get the ability to wild shape into even better beast forms, and can choose elementals other than the standard 4.</li>
+        <li>+1 bonus instead of natural weapon attacks 'count as magic'.</li>
         <li>Circle of the Land Circle Spells adds 1st level spells at 2nd level (in addition to the 2-5th level spells at later levels).</li>
-        <li>+1 bonus instead of natural weapon attacks 'count as magic'</li>
       </ul>
       <h4>Factotum (New Class)</h4>
       <ul>
@@ -135,7 +141,7 @@
         <li>Add proficiency bonus to indomitable</li>
         <li>Called Critical -> new capstone ability</li>
         <li>Impose Self -> use hit dice to tank</li>
-        <li>Weapon Mastery unlocks in mid tier 2</li>
+        <li>Weapon Mastery</li>
         <li>Champion gets enhanced fighting style</li>
         <li>Eldritch Knight is now a half caster</li>
         <li>Eldritch Knight Combat caster feature</li>
@@ -145,7 +151,7 @@
       <h4>Monk</h4>
       <ul>
         <li>Martial Arts die size increased</li>
-        <li>Weapon Mastery unlocks in mid tier 3</li>
+        <li>Weapon Mastery</li>
         <li>Way of the Elements reworked, is now effectively a half caster, and all spells are cheaper.</li>
         <li>Increased hit die size</li>
       </ul>
@@ -155,12 +161,14 @@
         <li>Aura of Protection moved to level 7</li>
         <li>Aura of Courage moved to level 9</li>
         <li>Combat caster feature</li>
+        <li>Weapon Mastery</li>
       </ul>
       <h4>Ranger</h4>
       <ul>
         <li>Combat Caster</li>
         <li>Class features have largely been rewritten and reorganized based on OneDND ranger.</li>
         <li>Beast Master -> no action necessary to command companion</li>
+        <li>Weapon Mastery</li>
       </ul>
       <h4>Rogue</h4>
       <ul>

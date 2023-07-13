@@ -117,6 +117,11 @@
       "description": "Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level."
     },
     {
+      "level": 4,
+      "name": "Weapon Mastery",
+      "description": "You unlock the maximum potential of the weapons you wield. You gain access to the weapon mastery property of any weapon you wield that you are proficient with. Additionally, your unarmed strikes gain the Sap property."
+    },
+    {
       "level": 5,
       "name": "Extra Attack",
       "description": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."

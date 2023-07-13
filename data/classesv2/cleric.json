@@ -30,11 +30,16 @@
       "name": "Spellcasting",
       "description": "As a conduit for divine power, you can cast cleric spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the cleric spell list.\n\n#### Cantrips\n\nAt 1st level, you know three cantrips o f your choice from the cleric spell list. You learn additional cleric cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Cleric table.\n\n#### Preparing and Casting Spells\n\nThe Cleric table shows how many spell slots you have to cast your cleric spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.\n\nYou prepare the list o f cleric spells that are available for you to cast, choosing from the cleric spell list. When you do so, choose a number of cleric spells equal to your Wisdom modifier + your cleric level (minimum of one spell). The spells must be of a level for which you have spell slots.\n\nFor example, if you are a 3rd-level cleric, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list o f prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn’t remove it from your list of prepared spells.\n\nYou can change your list of prepared spells when you finish a long rest. Preparing a new list o f cleric spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list.\n\n#### Spellcasting Ability\n\nWisdom is your spellcasting ability for your cleric spells. The power of your spells comes from your devotion to your deity. You use your Wisdom whenever a cleric spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a cleric spell you cast and when making an attack roll with one.\n\n#### Ritual Casting\n\nYou can cast a cleric spell as a ritual if that spell has the ritual tag and you have the spell prepared.\n\n#### Spellcasting Focus\n\nYou can use a holy symbol (found in chapter 5) as a spellcasting focus for your cleric spells."
     },
-        {
-          "level": 1,
-          "name": "Combat Caster",
-          "description": "You can use a 1-handed weapon with which you are proficient as a spellcasting focus."
-        },
+    {
+      "level": 1,
+      "name": "Combat Caster",
+      "description": "You can use a 1-handed weapon with which you are proficient as a spellcasting focus."
+    },
+    {
+      "level": 2,
+      "name": "Holy Order",
+      "description": "Choose a holy order, this order defines your focus as a cleric of your god. You can be a Defender, Thaumaturge, or Shepherd.\n\n* **Defender.** Defenders are holy warriors who serve on the front lines of battle in the name of their God. They gain proficiency in heavy armor and martial weapons.\n* **Thaumaturge.** The Thaumaturge is focused on the study of the divine. You gain proficiency in the religion skill, and add double your proficiency bonus to ability checks that use that skill. You also learn one additional cantrip from the Cleric spell list.\n* **Shepherd.** The Shepherd lives to serve the followers of the faith as a lay leader, healer, and aid. You gain proficiency in the Medicine skill and add double your proficiency bonus to ability checks that use that skill. You also gain proficiency in one type of artisans tools of your choice."
+    },
     {
       "level": 2,
       "name": "Divine Domain",
@@ -127,11 +132,6 @@
         },
         {
           "level": 2,
-          "name": "Bonus Proficiency",
-          "description": "You gain proficiency with martial weapons."
-        },
-        {
-          "level": 2,
           "name": "Disciple of Air",
           "description": "Your lightning spells are more effective, you add your wisdom modifier to the damage of any spell you cast that does lightning damage."
         },
@@ -198,11 +198,6 @@
         },
         {
           "level": 2,
-          "name": "Bonus Proficiency",
-          "description": "You gain proficiency with martial weapons."
-        },
-        {
-          "level": 2,
           "name": "Reaper",
           "description": "The cleric learns one necromancy cantrip of his or her choice from any spell list. When the cleric casts a necromancy cantrip that normally targets only one creature, the spell can instead target two creatures within range and within 2m of each other."
         },
@@ -240,11 +235,6 @@
           "level": 2,
           "name": "Earth Domain Spells",
           "description": "1st - earth tremor, absorb elements. 3rd - shatter, dust devil. 5th - Erupting Earth, Meld into Stone. 7th - Conjure minor elementals (earth only). Stone Shape. 9th - Wall of stone, conjure elemental (earth only)."
-        },
-        {
-          "level":2,
-          "name": "Bonus Proficiency",
-          "description": "You gain proficiency with heavy armor."
         },
         {
           "level": 2,
@@ -285,11 +275,6 @@
           "level": 2,
           "name": "Fire Domain Spells",
           "description": "2nd - fairie fire, burning hands. 3rd - heat metal, flame blade. 5th - fireball, elemental weapon (fire only). 7th - conjure minor elementals (fire only), wall of fire. 9th - flame strike, conjure elemental (fire only)."
-        },
-        {
-          "level": 2,
-          "name": "Bonus Proficiency",
-          "description": "You gain proficiency with martial weapons."
         },
         {
           "level": 2,
@@ -334,7 +319,7 @@
         {
           "level": 2,
           "name": "Bonus Proficiencies",
-          "description": "You gain proficiency in heavy armor and smith's tools."
+          "description": "You gain proficiency in smith's tools."
         },
         {
           "level": 2,
@@ -462,11 +447,6 @@
         },
         {
           "level": 2,
-          "name": "Bonus Proficiency",
-          "description": "At 2nd level, you gain proficiency with heavy armor."
-        },
-        {
-          "level": 2,
           "name": "Disciple of Life",
           "description": "Your healing spells are more effective. Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell's level."
         },
@@ -549,11 +529,6 @@
           "description": "At 2nd level, you learn one druid cantrip of your choice. You also gain proficiency in one of the following skills of your choice: Animal Handling, Nature, or Survival."
         },
         {
-          "level": 2,
-          "name": "Bonus Proficiency",
-          "description": "Also at 2nd level, you gain proficiency with heavy armor."
-        },
-        {
           "level": 6,
           "name": "Channel Divinity: Charm Animals and Plants",
           "description": "You can use your Channel Divinity to charm animals and plants.\n\nAs an action, you present your holy symbol and invoke the name of your deity. Each beast or plant creature that can see you within 9m of you must make a Wisdom saving throw. If the creature fails its saving throw, it is charmed by you for 1 minute or until it takes damage. While it is charmed by you, it is friendly to you and other creatures you designate."
@@ -591,7 +566,7 @@
         {
           "level": 2,
           "name": "Bonus Proficiencies",
-          "description": "At 2nd level, you gain proficiency with heavy armor. You also gain proficiency in the Intimidation or Persuasion skill (your choice)."
+          "description": "You gain proficiency in the Intimidation or Persuasion skill (your choice)."
         },
         {
           "level": 2,
@@ -677,11 +652,6 @@
           "level": 2,
           "name": "Tempest Domain Spells",
           "description": "2nd - fog cloud, thunderwave. 3rd - gust of wind, shatter. 5th - call lightning, sleet storm. 7th - control water, ice storm. 9th - destructive wave, insect plague."
-        },
-        {
-          "level": 2,
-          "name": "Bonus Proficiencies",
-          "description": "At 2nd level, you gain proficiency with martial weapons and heavy armor."
         },
         {
           "level": 2,
@@ -822,11 +792,6 @@
         },
         {
           "level": 2,
-          "name": "Bonus Proficiencies",
-          "description": "You gain proficiency with martial weapons and heavy armor"
-        },
-        {
-          "level": 2,
           "name": "Eyes of Night",
           "description": "You can see through the deepest gloom. You have darkvision out to a range of 90m. In that radius, you can see in dim light as if it were bright light and in darkness as if it were dim light.\n\nAs an action you can magically share the darkvision of this feature with willing creatures you can see within 3m of you, up to a number of creatures equal to your Wisdom modifier (minimum of one creature). The shared darkvision lasts for 1 hour. Once you share it, you can't do so again until you finish a long rest, unless you expend a spell slot of any level to share it again."
         },
@@ -862,11 +827,6 @@
           "level": 2,
           "name": "War Domain Spells",
           "description": "2nd - Divine Favor, Shield of Faith. 3rd - magic weapon, spiritual weapon. 5th - crusader's mantle, spirit guardians. 7th - freedom of movement, stoneskin. 9th - destructive wave, hold monster."
-        },
-        {
-          "level": 2,
-          "name": "Bonus Proficiencies",
-          "description": "You gain proficiency with martial weapons and heavy armor."
         },
         {
           "level": 2,

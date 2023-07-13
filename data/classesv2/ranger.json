@@ -124,7 +124,7 @@
     {
       "level": 18,
       "name": "Foe Slayer",
-      "description": "At 18th level, your hunter's mark spell improves, granting you 1d10 additional damage instead of 1d6."
+      "description": "At 18th level, your hunter's mark spell improves, granting you 1d10 additional damage instead of 1d6 and you can cast it without requiring concentration."
     },
     {
       "level": 20,
@@ -216,6 +216,11 @@
           "level": 2,
           "name": "Umbral Sight",
           "description": "You gain darkvision out to a range of 18m. If you already have darkvision from your race, its range increases by 9m.\n\nYou are also adept at evading creatures that rely on darkvision. While in darkness, you are invisible to any creature that relies on darkvision to see you in that darkness."
+        },
+        {
+          "level": 4,
+          "name": "Weapon Mastery",
+          "description": "You unlock the maximum potential of the weapons you wield. You gain access to the weapon mastery property of any weapon you wield that you are proficient with. Additionally, your unarmed strikes gain the Sap property."
         },
         {
           "level": 6,

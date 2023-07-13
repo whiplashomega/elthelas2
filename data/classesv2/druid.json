@@ -20,6 +20,13 @@
       "count": 2,
       "minlevel": 2,
       "recovery": "shortrest"
+    },
+    {
+      "name": "Known Forms",
+      "counttype": "table",
+      "count": [[2, 3], [4, 4], [8, 5]],
+      "minlevel": 2,
+      "recovery": "longrest"
     }
   ],
   "features": [
@@ -36,7 +43,7 @@
     {
       "level": 2,
       "name": "Wild Shape",
-      "description": "Starting at 2nd level, you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or long rest.\n\nYour druid level determines the beasts you can transform into, as shown in the Beast Shapes table. At 2nd level, for example, you can transform into any beast that has a challenge rating of 1/4 or lower that doesn’t have a flying or swimming speed.\n\nYou can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.\n\nWhile you are transformed, the following rules apply:\n\n* Your game statistics are replaced by the statistics of the beast, but you retain your alignment, personality, proficiency bonus, and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. You may need to recalculate the skill, save, and attack bonuses of the creature if its proficiency bonus is different than yours. For example, a brown bear has a strength of 19, and a proficiency bonus of 2, giving it an attack bonus of +6. If you have a proficiency bonus of 3, while wild shaped as a brown bear you would instead have an attack bonus of +7. If the creature has any legendary or lair actions, you can't use them.\n* When you transform, you assume the beast’s hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. For example, if you take 10 damage in animal form and have only 1 hit point left, you revert and take 9 damage. As long as the excess damage doesn’t reduce your normal form to 0 hit points, you aren’t knocked unconscious.\n* You can’t cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your beast form. Transforming doesn’t break your concentration on a spell you’ve already cast, however, or prevent you from taking actions that are part of a spell, such as call lightning, that you’ve already cast.\n* You retain the benefit of any features from your class or background (but not ancestry, except proficiencies provided by your ancestry) and can use them if the new form is physically capable of doing so. \n* You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn or carried by it. Worn equipment functions as normal, but the DM decides whether it is practical for the new form to wear a piece of equipment, based on the creature’s shape and size. Your equipment doesn’t change size or shape to match the new form, and any equipment that the new form can’t wear or carry must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form."
+      "description": "Starting at 2nd level, you can use your bonus action to magically assume the shape of a beast that you have learned for this feature. You can use this feature twice. You regain expended uses when you finish a short or long rest.\n\nYour druid level determines the beasts you can transform into, as shown in the Beast Shapes table. You start knowing three forms for this feature, chosen from among Beast stat blocks that have a maximum Challenge Rating of 1/4 and that lack a Fly Speed. You can select different forms when you finish a long rest, and your maximum number of forms increases as you gain druid levels (see the Beast Shapes table).\n\nYou can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.\n\nWhile you are transformed, the following rules apply:\n\n* You gain the actions, traits, armor class, speed, strength, dexterity, constitution, senses, resistances, and immunities of the chosen creature.\n* You gain temporary hit points equal to the sum of the creature's hit points and protection points. You lose any remaining temporary hit points when the wild shape ends, additionally if you lose all of these tempoary hit points, the wild shape ends early.\n* You may need to recalculate the skill, save, and attack bonuses of the creature if its proficiency bonus is different than yours. For example, a brown bear has a strength of 19, and a proficiency bonus of 2, giving it an attack bonus of +6. If you have a proficiency bonus of 3, while wild shaped as a brown bear you would instead have an attack bonus of +7. If the creature has any legendary or lair actions, you can't use them.\n* You can’t cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your beast form. Transforming doesn’t break your concentration on a spell you’ve already cast, however, or prevent you from taking actions that are part of a spell, such as call lightning, that you’ve already cast.\n* You retain the benefit of any features from your class or background (but not ancestry, except proficiencies provided by your ancestry or darkvision) and can use them if the new form is physically capable of doing so. \n* You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn or carried by it. Worn equipment functions as normal, but the DM decides whether it is practical for the new form to wear a piece of equipment, based on the creature’s shape and size. Your equipment doesn’t change size or shape to match the new form, and any equipment that the new form can’t wear or carry must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form.\n\n#### Beast Shapes\nDruid Level | Known Forms | Max CR | Fly Speed\n_____________________\n2nd | 3 | 1/4 | No\n4th | 4 | 1/2 | No\n8th | 5 | 1 | Yes"
     },
     {
       "level": 4,
@@ -152,12 +159,12 @@
         {
           "level": 2,
           "name": "Combat Wild Shape",
-          "description": "When you choose this circle at 2nd level, you gain the ability to use Wild Shape on your turn as a bonus action, rather than as an action.\n\nAdditionally, while you are transformed by Wild Shape, you can use a bonus action to expend one spell slot to regain 1d8 hit points per level of the spell slot expended."
+          "description": "While you are transformed by Wild Shape, you can use a bonus action to expend one spell slot to regain 1d8 hit points per level of the spell slot expended plus your wisdom modifier."
         },
         {
           "level": 2,
           "name": "Circle Forms",
-          "description": "The rites of your circle grant you the ability to transform into more dangerous animal forms. Starting at 2nd level, you can use your Wild Shape to transform into a beast with a challenge rating as high as 1 (you ignore the Max. CR column of the Beast Shapes table, but must abide by the other limitations there).\n\nStarting at 6th level, you can transform into a beast with a challenge rating as high as your druid level divided by 3, rounded down."
+          "description": "The rites of your circle grant you the ability to transform into more dangerous animal forms. You can use your Wild Shape to transform into a beast with a challenge rating as high as 1 (you ignore the Max. CR column of the Beast Shapes table, but must abide by the other limitations there).\n\nStarting at 6th level, you can transform into a beast with a challenge rating as high as your druid level divided by 3, rounded down."
         },
         {
           "level": 6,
@@ -167,12 +174,12 @@
         {
           "level": 10,
           "name": "Elemental Wild Shape",
-          "description": "At 10th level, you can expend two uses of Wild Shape at the same time to transform into an air elemental, an earth elemental, a fire elemental, or a water elemental."
+          "description": "At 10th level, you can expend two uses of Wild Shape to double the maximum CR of creature you can turn into. These creatures must be among your known forms. Additionally you can choose forms with the Elemental type in addition to the Beast type."
         },
         {
           "level": 14,
           "name": "Thousand Forms",
-          "description": "By 14th level, you have learned to use magic to alter your physical form in more subtle ways. You can cast the alter self spell at will."
+          "description": "By 14th level, you have learned to use magic to alter your physical form in more subtle ways. You can cast the alter self spell at will. Additionally your maximum known forms for your Wild Shape increases by 2."
         }
       ]
     },
