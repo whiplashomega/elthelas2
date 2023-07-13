@@ -766,7 +766,7 @@
         {
           "level": 2,
           "name": "Trickery Domain Spells",
-          "description": "2nd - charm person, disguise self.  3rd - mirror image, pass without trace. 5th - blink, dispel magic. 7th - dimension door, polymorph. 9th - dominate person, modify memory."
+          "description": "2nd - charm person, disguise self.  3rd - invisibility, pass without trace. 5th - blink, dispel magic. 7th - dimension door, polymorph. 9th - dominate person, modify memory."
         },
         {
           "level": 2,
@@ -781,12 +781,12 @@
         {
           "level": 6,
           "name": "Channel Divinity: Invoke Duplicity",
-          "description": "You can use your Channel Divinity to create an illusory duplicate of yourself.\n\nAs an action, you create a perfect illusion of yourself that lasts for 1 minute, or until you lose your concentration (as if you were concentrating on a spell). The illusion appears in an unoccupied space that you can see within 9m of you. As a bonus action on your turn, you can move the illusion up to 9m to a space you can see, but it must remain within 36m of you.\n\nFor the duration, you can cast spells as though you were in the illusion's space, but you must use your own senses. Additionally, when both you and your illusion are within reach of a creature that can see the illusion, you have advantage on attack rolls against that creature, given how distracting the illusion is to the target."
+          "description": "You can use your Channel Divinity to create an illusory duplicate of yourself.\n\nAs a bonus action, you create a perfect illusion of yourself that lasts for 1 minute. The illusion appears in an unoccupied space that you can see within 9m of you. As a bonus action on your turn, you can move the illusion up to 9m to a space you can see, but it must remain within 36m of you.\n\nFor the duration, you can cast spells as though you were in the illusion's space, but you must use your own senses. Additionally, when both you and your illusion are within reach of a creature that can see the illusion, you have advantage on attack rolls against that creature, given how distracting the illusion is to the target."
         },
         {
           "level": 10,
-          "name": "Cloak of Shadows",
-          "description": "You can invoke the power of your god to vanish.\n\nAs a bonus action, you become invisible for one minute. You become visible if you attack or cast a spell. After you do so you cannot do so again until you complete a long rest or expend a spell slot of 3rd level or higher."
+          "name": "Trickster's Magic",
+          "description": "If you cast a spell of the Illusion school using a spell slot, you can change the spell’s casting time to a Bonus Action for this casting, provided the spell's casting time is normally an action. You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a Long Rest."
         },
         {
           "level": 14,
@@ -861,7 +861,7 @@
         {
           "level": 2,
           "name": "War Domain Spells",
-          "description": "2nd - Divine Favor, Shield of Faith. 3rd - magic weapon, spiritual weapon. 5th - crusader's mantle, spirit guardians. 7th - freedom of movement, stoneskin. 9th - flame strike, hold monster."
+          "description": "2nd - Divine Favor, Shield of Faith. 3rd - magic weapon, spiritual weapon. 5th - crusader's mantle, spirit guardians. 7th - freedom of movement, stoneskin. 9th - destructive wave, hold monster."
         },
         {
           "level": 2,
@@ -871,7 +871,7 @@
         {
           "level": 2,
           "name": "War Priest",
-          "description": "Your god delivers bolts of inspiration to you while you are engaged in battle. When you use the Attack action, you can make one additional weapon attack as a bonus action."
+          "description": "Your god delivers bolts of inspiration to you while you are engaged in battle. You can make one weapon attack as a bonus action."
         },
         {
           "level": 6,

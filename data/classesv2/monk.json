@@ -15,8 +15,8 @@
   "resources": [
     {
       "name": "ki",
-      "counttype": "level1",
-      "count": 0,
+      "counttype": "table",
+      "count": [[1,5],[2,6],[3,7],[4,8],[5,8],[6,9],[7,10],[8,11],[9,11],[10,12],[11,13],[12,14],[13,14],[14,15],[15,16],[16,17],[17,17],[18,18],[19,19],[20,20]],
       "minlevel": 2,
       "addToTable": true,
       "recovery": "shortrest"
@@ -44,7 +44,7 @@
     {
       "level": 1,
       "name": "Unarmored Defense",
-      "description": "Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier and your Protection Class equals half your Wisdom Modifier (rounded up, minimum 0)."
+      "description": "Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier."
     },
     {
       "level": 1,
@@ -54,7 +54,7 @@
     {
       "level": 2,
       "name": "Ki",
-      "description": "Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table.\n\nYou can spend these points to fuel various ki features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class. \n\nWhen you spend a ki point, it is unavailable until you finish a short or long rest, at the end of which you draw all of your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points.\n\nSome of your ki features require your target to make a saving throw to resist the feature’s effects. The saving throw DC is calculated as follows:\n\nKi save DC = 8 + your proficiency bonus + your Wisdom modifier\n\n#### Flurry of Blows\n\nImmediately after you take the Attack action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action.\n\n#### Patient Defense\n\nYou can spend 1 ki point to take the Dodge action as a bonus action on your turn.\n\n#### Step of the Wind\n\nYou can spend 1 ki point to take the Disengage or Dash action as a bonus action on your turn, and your jump distance is doubled for the turn."
+      "description": "Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table.\n\nYou can spend these points to fuel various ki features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class. \n\nWhen you spend a ki point, it is unavailable until you finish a short or long rest, at the end of which you draw all of your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points.\n\nSome of your ki features require your target to make a saving throw to resist the feature’s effects. The saving throw DC is calculated as follows:\n\nKi save DC = 8 + your proficiency bonus + your Wisdom modifier\n\n#### Flurry of Blows\n\nImmediately after you take the Attack action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action.\n\n#### Patient Defense\n\nYou can spend 1 ki point to take the Dodge action as a bonus action on your turn.\n\n#### Step of the Wind\n\nYou can spend 1 ki point to take the Disengage and Dash actions as a bonus action on your turn, and your jump distance is doubled for the turn."
     },
     {
       "level": 2,
@@ -99,7 +99,7 @@
     {
       "level": 3,
       "name": "Deflect Missiles",
-      "description": "Starting at 3rd level, you can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + your monk level.\n\nIf you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack."
+      "description": "Starting at 3rd level, you can deflect or catch the missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + your monk level.\n\nIf you reduce the damage to 0, you can use your reaction to catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack."
     },
     {
       "level": 4,
@@ -132,9 +132,19 @@
       "description": "Starting at 5th level, you can interfere with the flow of ki in an opponent’s body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn."
     },
     {
+      "level": 5,
+      "name": "Weapon Mastery",
+      "description": "You unlock the maximum potential of the weapons you wield. You gain access to the weapon mastery property of any weapon you wield that you are proficient with. Additionally, your unarmed strikes gain the Sap property."
+    },
+    {
       "level": 6,
       "name": "Ki-Empowered Strikes",
       "description": "Starting at 6th level, your unarmed strikes gain a +1 bonus to attack and damage rolls."
+    },
+    {
+      "level": 6,
+      "name": "Improved Unarmored Defense",
+      "description": "Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 11 + your Dexterity modifier + your Wisdom modifier."
     },
     {
       "level": 7,
@@ -152,14 +162,14 @@
       "description": "At 11th level, your mastery of the ki flowing through you makes you immune to disease and poison."
     },
     {
-      "level": 13,
-      "name": "Tongue of the Sun and Moon",
-      "description": "Starting at 13th level, you learn to touch the ki of other minds so that you understand all spoken languages. Moreover, any creature that can understand a language can understand what you say."
+      "level": 12,
+      "name": "Superior Unarmored Defense",
+      "description": "Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 12 + your Dexterity modifier + your Wisdom modifier."
     },
     {
       "level": 13,
-      "name": "Weapon Mastery",
-      "description": "You unlock the maximum potential of the weapons you wield. You gain access to the weapon mastery property of any weapon you wield that you are proficient with. Additionally, your unarmed strikes gain the Sap property."
+      "name": "Tongue of the Sun and Moon",
+      "description": "Starting at 13th level, you learn to touch the ki of other minds so that you understand all spoken languages. Moreover, any creature that can understand a language can understand what you say."
     },
     {
       "level": 15,
@@ -174,12 +184,12 @@
     {
       "level": 18,
       "name": "Empty Body",
-      "description": "Beginning at 18th level, you can use your action to spend 4 ki points to become invisible for 1 minute. During that time, you also have resistance to all damage but force damage.\n\nAdditionally, you can spend 8 ki points to cast the astral projection spell, without needing material components. When you do so, you can’t take any other creatures with you."
+      "description": "Beginning at 18th level, you can use your bonus action to spend 4 ki points to become invisible for 1 minute. During that time, you also have resistance to all damage but force damage.\n\nAdditionally, you can spend 8 ki points to cast the astral projection spell, without needing material components. When you do so, you can’t take any other creatures with you."
     },
     {
       "level": 20,
       "name": "Perfect Self",
-      "description": "At 20th level, when you roll for initiative and have no ki points remaining, you regain 4 ki points."
+      "description": "At 20th level, when you roll for initiative you regain 4 ki points."
     }
   ],
   "subclass": [
@@ -191,7 +201,7 @@
         {
           "level": 2,
           "name": "Open Hand Technique",
-          "description": "Starting when you choose this tradition at 3rd level, you can manipulate your enemy’s ki when you harness your own. Whenever you hit a creature with one of the attacks granted by your Flurry of Blows, you can impose one of the following effects on that target:\n\n* It must succeed on a Dexterity saving throw or be knocked prone.\n* It must make a Strength saving throw. If it fails, you can push it up to 4m away from you.\n* It can’t take reactions until the end of your next turn."
+          "description": "Starting when you choose this tradition at 3rd level, you can manipulate your enemy’s ki when you harness your own. Whenever you hit a creature with one of the attacks granted by your Flurry of Blows, you can impose one of the following effects on that target:\n\n* It is knocked prone.\n* You can push it up to 4m away from you.\n* It can’t take reactions until the end of your next turn."
         },
         {
           "level": 6,
@@ -218,7 +228,7 @@
         {
           "level": 2,
           "name": "Shadow Arts",
-          "description": "Starting when you choose this tradition at 3rd level, you can use your ki to duplicate the effects of certain spells. As an action, you can spend 2 ki points to cast darkness, darkvision, pass without trace, or silence, without providing material components. Additionally, you gain the minor illusion cantrip if you don’t already know it."
+          "description": "Starting when you choose this tradition at 3rd level, you can use your ki to duplicate the effects of certain spells. As an action, you can spend 2 ki points to cast darkness, darkvision, pass without trace, or silence, without providing material components. Additionally, you gain the minor illusion cantrip if you don’t already know it. When you cast the darkness spell with this feature, you can designate up to three willing creatures, these creatures gain the ability to see through the darkness you created. When you cast the darkvision spell with this feature, the target gains the ability to see through magical darkness for the duration of the spell."
         },
         {
           "level": 2,
