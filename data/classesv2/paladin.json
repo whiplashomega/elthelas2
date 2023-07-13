@@ -72,7 +72,7 @@
     {
       "level": 3,
       "name": "Divine Smite",
-      "description": "Starting at 3rd level, when you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon’s damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend."
+      "description": "Starting at 3rd level, when you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend."
     },
     {
       "level": 5,
@@ -115,6 +115,11 @@
       "description": "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to paladins. This replacement represents a shift of focus in your martial practice."
     },
     {
+      "level": 4,
+      "name": "Weapon Mastery",
+      "description": "You unlock the maximum potential of the weapons you wield. You gain access to the weapon mastery property of any weapon you wield that you are proficient with. Additionally, your unarmed strikes gain the Sap property."
+    },
+    {
       "level": 5,
       "name": "Extra Attack",
       "description": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
@@ -122,12 +127,12 @@
     {
       "level": 7,
       "name": "Aura of Protection",
-      "description": "Starting at 7th level, whenever you or a friendly creature within 3m o f you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus. At 18th level, the range of this aura increases to 9m."
+      "description": "Starting at 7th level, whenever you or a friendly creature within 3m of you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus. The range of this aura increases to 4m at 9th level, 5m at 11th level, 6m at 13th level, 7m at 15th level, 8m at 17th level, and 9m at 19th level."
     },
     {
       "level": 9,
       "name": "Aura of Courage",
-      "description": "Starting at 10th level, you and friendly creatures within 3m of you can’t be frightened while you are conscious.\n\nAt 18th level, the range of this aura increases to 9m."
+      "description": "Starting at 10th level, you and friendly creatures affected by your aura of protection can’t be frightened while you are conscious."
     },
     {
       "level": 11,
@@ -144,11 +149,11 @@
       "name": "Divine Conduit",
       "description": "Whenever you roll Initiative, you regain one use of Channel Divinity."
     },
-        {
-          "level": 20,
-          "name": "Truesight",
-          "description": "You have Truesight within a range of 18m."
-        }
+    {
+      "level": 20,
+      "name": "Truesight",
+      "description": "You have Truesight within a range of 18m."
+    }
   ],
   "subclass": [
     {
@@ -182,7 +187,7 @@
         {
           "level": 6,
           "name": "Aura of Devotion",
-          "description": "Starting at 7th level, you and friendly creatures within 3m o f you can’t be charmed while you are conscious.\n\nAt 18th level, the range of this aura increases to 9m."
+          "description": "You and friendly creatures within 3m of you can’t be charmed while you are conscious.\n\n Once you gain the Aura of Protection feature the range of this feature is equal to the range of your Aura of Protection."
         },
         {
           "level": 10,
@@ -234,7 +239,7 @@
         {
           "level": 6,
           "name": "Aura of Warding",
-          "description": "Beginning at 7th level, ancient magic lies so heavily upon you that it forms an eldritch ward. You and friendly creatures within 3m of you have resistance to damage from spells.\n\nAt 18th level, the range of this aura increases to 9m."
+          "description": "Ancient magic lies so heavily upon you that it forms an eldritch ward. You and friendly creatures within 3m of you have resistance to damage from spells.\n\n Once you gain the Aura of Protection feature the range of this feature is equal to the range of your Aura of Protection."
         },
         {
           "level": 10,
@@ -324,7 +329,7 @@
         {
           "level": 6,
           "name": "Divine Allegiance",
-          "description": "Starting at 7th level, when a creature within 1m of you takes damage, you can use your reaction to magically substitute your own health for that of the target creature, causing that creature not to take the damage. Instead, you take the damage. This damage to you can't be reduced or prevented in any way."
+          "description": "When a creature within 1m of you takes damage, you can use your reaction to magically substitute your own health for that of the target creature, causing that creature not to take the damage. Instead, you take the damage. This damage to you can't be reduced or prevented in any way."
         },
         {
           "level": 10,
@@ -369,7 +374,7 @@
         {
           "level": 6,
           "name": "Aura of Conquest",
-          "description": "You constantly emanate a menacing aura while you’re not incapacitated. The aura extends 3m from you in every direction, but not through total cover.\n\nIf a creature is frightened of you, its speed is reduced to 0 while in the aura, and that creature takes psychic damage equal to half your paladin level if it starts its turn there.\n\nAt 18th level, the range of this aura increases to 9m."
+          "description": "You constantly emanate a menacing aura while you’re not incapacitated. The aura extends 3m from you in every direction, but not through total cover.\n\nIf a creature is frightened of you, its speed is reduced to 0 while in the aura, and that creature takes psychic damage equal to half your paladin level if it starts its turn there.\n\n Once you gain the Aura of Protection feature the range of this feature is equal to the range of your Aura of Protection."
         },
         {
           "level": 10,
@@ -414,7 +419,7 @@
         {
           "level": 6,
           "name": "Aura of the Guardian",
-          "description": "You can shield others from harm at the cost of your own health. When a creature within 3m of you takes damage, you can use your reaction to magically take that damage, instead of that creature taking it. This feature doesn't transfer any other effects that might accompany the damage, and this damage can't be reduced in any way.\n\nAt 18th level, the range of this aura increases to 9m."
+          "description": "You can shield others from harm at the cost of your own health. When a creature within 3m of you takes damage, you can use your reaction to magically take that damage, instead of that creature taking it. This feature doesn't transfer any other effects that might accompany the damage, and this damage can't be reduced in any way.\n\n Once you gain the Aura of Protection feature the range of this feature is equal to the range of your Aura of Protection."
         },
         {
           "level": 10,
@@ -466,7 +471,7 @@
         {
           "level": 6,
           "name": "Aura of Alacrity",
-          "description": "You emanate an aura that fills you and your companions with supernatural speed, allowing you to race across a battlefield in formation. Your walking speed increases by 3m. In addition, if you aren't incapacitated, the walking speed of any ally who starts their turn within 2m of you increases by 3m until the end of that turn.\n\nWhen you reach 18th level in this class, the range of the aura increases to 4m."
+          "description": "You emanate an aura that fills you and your companions with supernatural speed, allowing you to race across a battlefield in formation. Your walking speed increases by 3m. In addition, if you aren't incapacitated, the walking speed of any ally who starts their turn within 3m of you increases by 3m until the end of that turn.\n\n Once you gain the Aura of Protection feature the range of this feature is equal to the range of your Aura of Protection."
         },
         {
           "level": 10,
@@ -511,7 +516,7 @@
         {
           "level": 6,
           "name": "Aura of the Sentinel",
-          "description": "You emit an aura of alertness while you aren't incapacitated. When you and any creatures of your choice within 3m of you roll initiative, you all gain a bonus to initiative equal to your proficiency bonus.\n\nAt 18th level, the range of this aura increases to 9m."
+          "description": "You emit an aura of alertness while you aren't incapacitated. When you and any creatures of your choice within 3m of you roll initiative, you all gain a bonus to initiative equal to your proficiency bonus.\n\n Once you gain the Aura of Protection feature the range of this feature is equal to the range of your Aura of Protection."
         },
         {
           "level": 10,

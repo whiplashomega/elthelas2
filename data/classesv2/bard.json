@@ -129,6 +129,51 @@
   ],
   "subclass": [
     {
+      "name": "College of Dance",
+      "castermult": 1,
+      "resources": [
+        {
+          "name": "Irresistable Dance",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 14,
+          "recovery": "longrest"
+        }
+      ],
+      "features": [
+        {
+          "level": 2,
+          "name": "Dazzling Footwork",
+          "description": "Your practice of dance gives you the ability to gracefully dodge and make agile strikes. While you aren't wearing armor or wielding a shield, you gain the following benefits:\n\n* Your base Armor Class equals 10 + your Dexterity modifier + your Charisma modifier.\n* When you expend a use of your Bardic Inspiration as part of an action, a Bonus Action, or a Reaction, you can make one Unarmed Strike as part of that action, Bonus Action, or Reaction.\n* You can use Dexterity instead of Strength for the attack rolls of your Unarmed Strikes, you can deal Bludgeoning damage equal to a roll of your Bardic Inspiration die plus your Dexterity modifier. This roll doesn't expend the die."
+        },
+        {
+          "level": 2,
+          "name": "Inspiring Movement",
+          "description": "When an enemy you can see ends its turn within 5 feet of an ally of yours who is within 60 feet of you, you can use your Reaction and expend one use of your Bardic Inspiration to move up to half your Speed. Then roll your Bardic Inspiration die, and the ally can move up to a number of feet equal to 5 times the number rolled. None of this feature's movement provokes Opportunity Attacks."
+        },
+        {
+          "level": 6,
+          "name": "Leading Evasion",
+          "description": "When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and you take only half damage if you fail. If any creatures within 5 feet of you are making the same Dexterity saving throw, you can share this benefit with them for that save.\n\nYou can't use this feature if you have the Incapacitated condition."
+        },
+        {
+          "level": 6,
+          "name": "Extra Attack",
+          "description": "when you take the attack action on your turn and use only unarmed strikes you can attack twice instead of once. Alternatively, you can cast one of your cantrips in place of one of these attacks."
+        },
+        {
+          "level": 10,
+          "name": "Tandem Footwork",
+          "description": "When you roll initiative, you can spend one use of your Bardic Inspiration if you don't have the Incapacitated condition. When you do so, roll your Bardic Inspiration die, and choose a number of creatures within 60 feet of yourself (you can choose yourself) up to a number equal to your Charisma modifier (minimum of one creature). Each of them gains a bonus to their Initiative equal the number rolled."
+        },
+        {
+          "level": 14,
+          "name": "Irresistable Dance",
+          "description": "You always have the Otto's Irresistable Dance spell prepared. You can cast it without expending a spell slot. Once you cast the spell in this way, you can't do so again until you finish a Long Rest."
+        }
+      ]
+    },
+    {
       "name": "College of Lore",
       "castermult": 1,
       "resources": [],
@@ -136,17 +181,17 @@
         {
           "level": 2,
           "name": "Bonus Proficiencies",
-          "description": "When you join the College of Lore at 3rd level, you gain proficiency with three skills of your choice."
+          "description": "When you join the College of Lore, you gain proficiency with three skills of your choice."
         },
         {
           "level": 2,
           "name": "Cutting Words",
-          "description": "Also at 3rd level, you learn how to use your wit to distract, confuse, and otherwise sap the confidence and competence of others. When a creature that you can see within 18m of you makes an attack roll, an ability check, or a damage roll, you can use your reaction to expend one of your uses of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature’s roll. You can choose to use this feature after the creature makes its roll, but before the DM determines whether the attack roll or ability check succeeds or fails, or before the creature deals its damage. The creature is immune if it can’t hear you or if it’s immune to being charmed."
+          "description": "You learn how to use your wit to distract, confuse, and otherwise sap the confidence and competence of others. When a creature that you can see within 18m of you makes an attack roll, an ability check, or a damage roll, you can use your reaction to expend one of your uses of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature’s roll. You can choose to use this feature after the creature makes its roll, but before the DM determines whether the attack roll or ability check succeeds or fails, or before the creature deals its damage. The creature is immune if it can’t hear you or if it’s immune to being charmed."
         },
         {
           "level": 6,
           "name": "Additional Magical Secrets",
-          "description": "At 6th level, you learn two spells of your choice from any class. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. The chosen spells count as bard spells for you but don’t count against the number of bard spells you know."
+          "description": "You learn two spells of your choice from any class. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. The chosen spells count as bard spells for you but don’t count against the number of bard spells you know."
         },
         {
           "level": 10,
@@ -178,7 +223,7 @@
         {
           "level": 2,
           "name": "Combat Inspiration",
-          "description": "Also at 3rd level, you learn to inspire others in battle. You can use a Bardic Inspiration die to add additional damage to an attack another creature makes, roll that die and add the number rolled to a weapon damage roll the creature just made. Alternatively, when an attack roll is made against the creature, you can use your reaction to roll the Bardic Inspiration die and add the number rolled to its AC against that attack, after seeing the roll but before knowing whether it hits or misses."
+          "description": "You can use a Bardic Inspiration die to add additional damage to an attack another creature makes, roll that die and add the number rolled to a weapon damage roll the creature just made. Alternatively, when an attack hits the creature, you can use your reaction to roll the Bardic Inspiration die and add the number rolled to its AC against that attack potentially causing the attack to miss."
         },
         {
           "level": 6,
@@ -202,13 +247,6 @@
       "castermult": 1,
       "resources": [
         {
-          "name": "Enthralling Performance",
-          "counttype": "fixed",
-          "count": 1,
-          "minlevel": 2,
-          "recovery": "shortrest"
-        },
-        {
           "name": "Mantle of Majesty",
           "counttype": "fixed",
           "count": 1,
@@ -227,12 +265,12 @@
         {
           "level": 2,
           "name": "Mantle of Inspiration",
-          "description": "When you join the College of Glamour at 3rd level, you gain the ability to weave a song of fey magic that imbues your allies with vigor and speed.\n\nAs a bonus action, you can expend one use of your Bardic Inspiration to grant yourself a wondrous appearance. When you do so, choose a number of creatures you can see and that can see you within 18m of you, up to a number equal to your Charisma modifier (minimum of one). Each of them gains 5 temporary hit points. When a creature gains these temporary hit points, it can immediately use its reaction to move up to its speed, without provoking opportunity attacks.\n\nThe number of temporary hit points inoreases when you reach certain levels in this class, increasing to 8 at 6th level, 11 at 10th level, and 14 at 14th level."
+          "description": "When you join the College of Glamour, you gain the ability to weave a song of fey magic that imbues your allies with vigor and speed.\n\nAs a bonus action, you can expend one use of your Bardic Inspiration to grant yourself a wondrous appearance. When you do so, choose a number of creatures you can see and that can see you within 18m of you, up to a number equal to your Charisma modifier (minimum of one). Each of them gains 5 temporary hit points. When a creature gains these temporary hit points, it can immediately use its reaction to move up to its speed, without provoking opportunity attacks.\n\nThe number of temporary hit points inoreases when you reach certain levels in this class, increasing to 8 at 6th level, 11 at 10th level, and 14 at 14th level."
         },
         {
           "level": 2,
-          "name": "Enthralling Performance",
-          "description": "You can charge your performance with seductive, fey magic.\n\nIf you perform for at least 1 minute, you can attempt to inspire wonder in your audience by singing, reciting a poem, or dancing. At the end of the performance, choose a number of humanoids within 18m of you who watched and listened to all of it, up to a number equal to your Charisma modifier (minimum of one). Each target must succeed on a Wisdom saving throw against your spell save DC or be charmed by you. While charmed in this way, the target idolizes you, it speaks glowingly Of you to anyone who talks to it, and it hinders anyone who Opposes you, although it avoids violence unless it was already inclined to fight on your behalf. This effect ends on a target after 1 hour, if it takes any damage, if you attack it, or if it witnesses you attacking or damaging any of its allies.\n\n If a target succeeds on its saving throw, the target has no hint that you tried to charm it.\n\nOnce you use this feature, you can’t use it again until you finish a short or long rest."
+          "name": "Beguiling Magic",
+          "description": "You always have the Charm Person and Mirror Image spells prepared.\n\nIn addition, immediately after you cast an Enchantment or Illusion spell, you can cause a creature you can see within 60 feet of yourself to make a Wisdom saving throw against your Spell Save DC. On a failed save, the target has the Charmed or Frightened condition (your choice) for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
         },
         {
           "level": 6,

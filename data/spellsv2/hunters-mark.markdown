@@ -3,7 +3,7 @@ layout: post
 title:  "Hunter's Mark"
 date:   2014-08-24
 source: PHB.251
-tags: [ranger, eldritchknight, level1, divination]
+tags: [ranger, level1, divination]
 ---
 
 **1st-level divination**
@@ -14,7 +14,7 @@ tags: [ranger, eldritchknight, level1, divination]
 
 **Components**: V
 
-**Duration**: 1 hour
+**Duration**: Concentration, up to 1 hour
 
 **Saving Throw**:
 

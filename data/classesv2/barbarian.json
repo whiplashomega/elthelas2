@@ -44,7 +44,7 @@
     {
       "level": 1,
       "name": "Unarmored Defense",
-      "description": "While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier, and your Protection Class equals half your Constitution Modifier (rounded up, minimum 0). You can use a shield and still gain this benefit."
+      "description": "While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier, and have a number of protection points equal to your Constitution Modifier (rounded up, minimum 0) times your level. You can use a shield and still gain this benefit."
     },
     {
       "level": 2,
@@ -92,6 +92,11 @@
       "description": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
     },
     {
+      "level": 4,
+      "name": "Weapon Mastery",
+      "description": "You unlock the maximum potential of the weapons you wield. You gain access to the weapon mastery property of any weapon you wield."
+    },
+    {
       "level": 5,
       "name": "Extra Attack",
       "description": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
@@ -132,7 +137,7 @@
       "description": "You add your barbarian level to damage when you score a critical hit with a melee weapon attack. This increases to twice your barbarian level at 17th level."
     },
     {
-      "level": 13,
+      "level": 15,
       "name": "Vengeful",
       "description": "When you use your Impose Self ability and reduce the damage to 0, you can make one melee weapon attack against the source of the damage as part of the same reaction if they are within your reach."
     },
@@ -140,11 +145,6 @@
       "level": 17,
       "name": "Brutal Critical Improvement",
       "description": "You add your barbarian level to damage when you score a critical hit with a melee weapon attack. This increases to twice your barbarian level at 17th level."
-    },
-    {
-      "level": 15,
-      "name": "Weapon Mastery",
-      "description": "You unlock the maximum potential of the weapons you wield. You gain access to the weapon mastery property of any weapon you wield."
     },
     {
       "level": 18,
