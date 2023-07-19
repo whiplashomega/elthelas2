@@ -107,7 +107,7 @@
     {
       "level": 11,
       "name": "Divine Intervention",
-      "description": "Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great.\n\nImploring your deity’s aid requires you to use your action. Describe the assistance you seek, and roll percentile dice. If you roll a number equal to or lower than your cleric level, your deity intervenes. The DM chooses the nature o f the intervention; the effect of any cleric spell or cleric domain spell would be appropriate. If your deity intervenes, you can’t use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest.\n\nAt 20th level, your call for intervention succeeds automatically, no roll required."
+      "description": "You can call on your deity or pantheon to intervene on your behalf. As an action, choose any Divine spell of 5th level or lower that doesn’t require a Reaction to cast. As part of the same action, you cast that spell without expending a spell slot or needing material components. You then can’t use this feature again until you finish a Long Rest."
     },
     {
       "level": 14,
@@ -122,7 +122,7 @@
     {
       "level": 20,
       "name": "Improved Divine Intervention",
-      "description": "Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great.\n\nImploring your deity’s aid requires you to use your action. Describe the assistance you seek, and roll percentile dice. If you roll a number equal to or lower than your cleric level, your deity intervenes. The DM chooses the nature o f the intervention; the effect of any cleric spell or cleric domain spell would be appropriate. If your deity intervenes, you can’t use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest.\n\nAt 20th level, your call for intervention succeeds automatically, no roll required."
+      "description": "You are able to call on even more powerful divine intervention. When you use your Divine Intervention feature, you can choose Wish when you select a spell. If you do so, you can’t use Divine Intervention again until you finish 2d4 Long Rests. When you cast Wish with this feature, you are immune to the stress caused by using wish to do something other than casting a spell."
     }
   ],
   "subclass": [
