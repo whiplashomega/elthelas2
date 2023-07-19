@@ -7,7 +7,7 @@
   "cantriplevel": 1,
   "proficiencies": {
     "armor": ["light armor", "medium armor", "shields"],
-    "weapons": ["clubs", "daggers", "darts", "javelins", "maces", "quarterstaffs", "scimitars", "sickles", "slings", "spears"],
+    "weapons": ["simple weapons"],
     "tools": ["herbalism kit"],
     "saving throws": ["int", "wis"],
     "numskills": 2
@@ -41,9 +41,24 @@
       "description": "Drawing on the divine essence of nature itself, you can cast spells to shape that essence to your will. See chapter 10 for the general rules of spellcasting and chapter 11 for the druid spell list.\n\n####Cantrips\n\nAt 1st level, you know two cantrips of your choice from the druid spell list. You learn additional druid cantrips of your choice at higher levels, as shown in the Cantrips known column o f the Druid table.\n\n####Preparing and Casting Spells\n\nThe Druid table shows how many spell slots you have to cast your druid spells of 1st level and higher. To cast one of these druid spells, you must expend a slot o f the spell’s level or higher. You regain all expended spell slots when you finish a long rest.\n\nYou prepare the list of druid spells that are available for you to cast, choosing from the druid spell list. When you do so, choose a number of druid spells equal to your Wisdom modifier + your druid level (minimum of one spell). The spells must be of a level for which you have spell slots.\n\nFor example, if you are a 3rd-level druid, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn’t remove it from your list of prepared spells. You can also change your list of prepared spells when you finish a long rest. Preparing a new list of druid spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list.\n\n####Spellcasting Ability\n\nWisdom is your spellcasting ability for your druid spells, since your magic draws upon your devotion and attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a druid spell you cast and when making an attack roll with one.\n\nSpell save DC = 8 + your proficiency bonus + your Wisdom modifier\n\nSpell attack modifier = your proficiency bonus + your Wisdom modifier\n\n#### Ritual Casting\n\nYou can cast a druid spell as a ritual if that spell has the ritual tag and you have the spell prepared.\n\n#### Spellcasting Focus\n\nYou can use a druidic focus (found in chapter 5) as a spellcasting focus for your druid spells."
     },
     {
+      "level": 1,
+      "name": "Primal Order",
+      "description": "You have dedicated yourself to one of the following primal roles of your choice.\n\n* **Magician** You know one extra cantrip from the Druid spell list. In addition, your mystical connection to nature gives you a bonus to your Intelligence (Nature) checks. The bonus equals your Wisdom modifier (minimum of +1).\n* **Warden.** Trained for battle, you gain proficiency in Martial weapons and Medium armor.",
+      "choice": [
+        {
+          "name": "Magician",
+          "description": "You know one extra cantrip from the Druid spell list. In addition, your mystical connection to nature gives you a bonus to your Intelligence (Nature) checks. The bonus equals your Wisdom modifier (minimum of +1)."
+        },
+        {
+          "name": "Warden",
+          "description": "Trained for battle, you gain proficiency in Martial weapons and Medium armor."
+        }
+      ]
+    },
+    {
       "level": 2,
       "name": "Wild Shape",
-      "description": "Starting at 2nd level, you can use your bonus action to magically assume the shape of a beast that you have learned for this feature. You can use this feature twice. You regain expended uses when you finish a short or long rest.\n\nYour druid level determines the beasts you can transform into, as shown in the Beast Shapes table. You start knowing three forms for this feature, chosen from among Beast stat blocks that have a maximum Challenge Rating of 1/4 and that lack a Fly Speed. You can select different forms when you finish a long rest, and your maximum number of forms increases as you gain druid levels (see the Beast Shapes table).\n\nYou can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.\n\nWhile you are transformed, the following rules apply:\n\n* You gain the actions, traits, armor class, speed, strength, dexterity, constitution, senses, resistances, and immunities of the chosen creature.\n* You gain temporary hit points equal to the sum of the creature's hit points and protection points. You lose any remaining temporary hit points when the wild shape ends, additionally if you lose all of these tempoary hit points, the wild shape ends early.\n* You may need to recalculate the skill, save, and attack bonuses of the creature if its proficiency bonus is different than yours. For example, a brown bear has a strength of 19, and a proficiency bonus of 2, giving it an attack bonus of +6. If you have a proficiency bonus of 3, while wild shaped as a brown bear you would instead have an attack bonus of +7. If the creature has any legendary or lair actions, you can't use them.\n* You can’t cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your beast form. Transforming doesn’t break your concentration on a spell you’ve already cast, however, or prevent you from taking actions that are part of a spell, such as call lightning, that you’ve already cast.\n* You retain the benefit of any features from your class or background (but not ancestry, except proficiencies provided by your ancestry or darkvision) and can use them if the new form is physically capable of doing so. \n* You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn or carried by it. Worn equipment functions as normal, but the DM decides whether it is practical for the new form to wear a piece of equipment, based on the creature’s shape and size. Your equipment doesn’t change size or shape to match the new form, and any equipment that the new form can’t wear or carry must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form.\n\n#### Beast Shapes\nDruid Level | Known Forms | Max CR | Fly Speed\n_____________________\n2nd | 3 | 1/4 | No\n4th | 4 | 1/2 | No\n8th | 5 | 1 | Yes"
+      "description": "Starting at 2nd level, you can use your bonus action to magically assume the shape of a beast that you have learned for this feature. You can use this feature twice. You regain expended uses when you finish a short or long rest.\n\nYour druid level determines the beasts you can transform into, as shown in the Beast Shapes table. You start knowing three forms for this feature, chosen from among Beast stat blocks that have a maximum Challenge Rating of 1/4 and that lack a Fly Speed, see the beast forms lists for potential options, options not on the list can be approved at your DMs discretion. You can select different forms when you finish a long rest, and your maximum number of forms increases as you gain druid levels (see the Beast Shapes table).\n\nYou can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.\n\nWhile you are transformed, the following rules apply:\n\n* You gain the actions, traits, armor class, speed, strength, dexterity, constitution, senses, resistances, and immunities of the chosen creature.\n* You gain temporary hit points equal to the sum of the creature's hit points and protection points. You lose any remaining temporary hit points when the wild shape ends, additionally if you lose all of these tempoary hit points, the wild shape ends early.\n* You may need to recalculate the skill, save, and attack bonuses of the creature if its proficiency bonus is different than yours. For example, a brown bear has a strength of 19, and a proficiency bonus of 2, giving it an attack bonus of +6. If you have a proficiency bonus of 3, while wild shaped as a brown bear you would instead have an attack bonus of +7. If the creature has any legendary or lair actions, you can't use them.\n* You can’t cast spells and your ability to take any action that requires hands is limited to the capabilities of your beast form, however you retain the ability to speak normally, as well as gaining the ability to speak and understand beasts of the type to which you are wildshaped. Transforming doesn’t break your concentration on a spell you’ve already cast, however, or prevent you from taking actions that are part of a spell, such as call lightning, that you’ve already cast.\n* You retain the benefit of any features from your class or background (but not ancestry, except proficiencies provided by your ancestry or darkvision) and can use them if the new form is physically capable of doing so. \n* You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn or carried by it. Worn equipment functions as normal, but the DM decides whether it is practical for the new form to wear a piece of equipment, based on the creature’s shape and size. Your equipment doesn’t change size or shape to match the new form, and any equipment that the new form can’t wear or carry must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form.\n\n#### Beast Shapes\nDruid Level | Known Forms | Max CR | Fly Speed\n_____________________\n2nd | 3 | 1/4 | No\n4th | 4 | 1/2 | No\n8th | 5 | 1 | Yes\n\n#### Basic Forms\n\n#### CR 1/4\n* Axe Beak\n* Boar\n* Constrictor Snake\n* Cow\n* Draft Horse\n* Elk\n* Giant Badger\n* Giant Bat (fly speed)\n* Giant Centipede\n* Giant Frog\n* Giant Lizard\n* Giant Owl (fly speed)\n* Giant Poisonous Snake\n* Giant Wolf Spider\n* Ox\n* Panther\n* Riding Horse\n* Wolf\n#### CR 1/2\n* Ape\n* Black Bear\n* Crocodile\n* Giant Bee (fly speed)\n* Giant Goat\n* Giant Sea Horse\n* Giant Wasp (fly speed)\n* Reef Shark\n* Warhorse\n#### CR 1\n* Brown Bear\n* Crag Cat\n* Dire Wolf\n* Giant Eagle (fly speed)\n* Giant Hyena\n* Giant Octopus\n* Giant Toad\n* Giant Vulture (fly speed)\n* Lion\n* Spotted Hyena\n* Tiger\n#### CR 2\n* Cave Bear\n* Giant Boar\nGiant Constrictor Snake\n* Giant Crayfish\n* Giant Elk\n* Hunter Shark\n* Polar Bear\n* Rhinoceros\n* Saber-Toothed Tiger\n#### CR 3\nGiant Lightning Eel\n* Giant Scorpion\n* Killer Whale\n* Thunder Hawk (fly speed)\n#### CR 4\n* Blood Spider\n* Elephant\n* Giant Subterranean Lizard\n#### CR 5\n* Giant Crocodile\n* Giant Shark\n* Hulking Crab\n* Dire Boar\n#### CR 6\n* Dire Tiger\n* Mammoth\n* Deathtouch Raven (fly speed)"
     },
     {
       "level": 4,
@@ -57,18 +72,33 @@
     },
     {
       "level": 2,
-      "name": "Wild Companion",
-      "description": "You gain the ability to summon a spirit that assumes an animal form: as an action, you can expend a use of your Wild Shape feature to cast the find familiar spell, without material components.\n\nWhen you cast the spell in this way, the familiar is a fey instead of a beast."
-    },
-    {
-      "level": 2,
       "name": "Druid Circle",
       "description": "At 2nd level, you choose to identify with a circle of druids: the Circle of the Land or the Circle of the Moon, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th level."
+    },
+    {
+      "level": 3,
+      "name": "Wild Companion",
+      "description": "You gain the ability to summon a spirit that assumes an animal form: as an action, you can expend a spell slot or a use of your Wild Shape feature to cast the find familiar spell, without material components.\n\nWhen you cast the spell in this way, the familiar is a fey instead of a beast."
     },
     {
       "level": 6,
       "name": "Druid Circle Feature (6th)",
       "description": "At 3rd level, you choose to identify with a circle of druids: the Circle of the Land or the Circle of the Moon, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th level."
+    },
+    {
+      "level": 7,
+      "name": "Elemental Fury",
+      "description": "The might of the elements flows through you. You gain one of the following options of your choice:\n\n* **Potent Spellcasting** You add your Wisdom modifier to the damage you deal with any druid cantrip.\n* **Primal Strike** Once on each of your turns when you hit a creature with an attack roll using a weapon or a Beast form's attack in Wild Shape, you can cause the target to take an extra 1d8 Cold, Fire, Lightning, or Thunder damage (choose when you hit).",
+      "choice": [
+        {
+          "name": "Potent Spellcasting",
+          "description": "You add your Wisdom modifier to the damage you deal with any druid cantrip."
+        },
+        {
+          "name": "Primal Strike",
+          "description": "Once on each of your turns when you hit a creature with an attack roll using a weapon or a Beast form's attack in Wild Shape, you can cause the target to take an extra 1d8 Cold, Fire, Lightning, or Thunder damage (choose when you hit)."
+        }
+      ]
     },
     {
       "level": 10,
@@ -108,6 +138,40 @@
   ],
   "subclass": [
     {
+      "name": "Circle of the Sea",
+      "castermult": 1,
+      "resources": [
+
+      ],
+      "features": [
+        {
+          "level": 2,
+          "name": "Circle Spells",
+          "description": "Your connection to this circle ensures that you always have certain spells ready. When you reach a Druid level specified below, you thereafter always have the listed spells prepared.\n\n* 2nd - Fog Cloud, Thunderwave\n* 3rd - Shatter, Gust of Wind\n* 5th - Sleet Storm, Lightning Bolt\n* 7th - Control Water, Ice Storm\n* 9th - Conjure Elemental, Hold Monster"
+        },
+        {
+          "level": 2,
+          "name": "Wrath of the Sea",
+          "description": "As a Bonus Action, you can expend a use of your Wild Shape to manifest an aura that takes the form of ocean spray that surrounds you. The aura lasts for 1 minute. It ends early if you have the Incapacitated condition, dismiss it (no action required), or manifest the aura again.\n\nAt the end of each of your turns, you can choose another creature you can see within 10 feet of yourself. The target must succeed on a Constitution saving throw against your Spell Save DC or take 2d6 Thunder damage and, if the creature is Large or smaller, be pushed up to 15 feet away from you.\n\nThis damage improves when you reach certain levels in this class, 6th (3d6), 10th (4d6), and 14th (5d6)."
+        },
+        {
+          "level": 6,
+          "name": "Aquatic Affinity",
+          "description": "You always have the Water Breathing spell prepared. In addition, you gain a Swim Speed equal to your Speed. If you use Wild Shape to assume a form that lacks a Swim Speed, that form gains your Swim Speed."
+        },
+        {
+          "level": 10,
+          "name": "Stormborn",
+          "description": "Your Wrath of the Sea confers two more benefits while active:\n\n* You gain a Fly speed equal to your speed.\nYou have resistance to cold, lightning, and thunder damage."
+        },
+        {
+          "level": 14,
+          "name": "Oceanic Gift",
+          "description": "Whenever you use Wrath of the Sea, you can manifest the aura around one willing creature within 60 feet of you rather than manifesting it around yourself. The creature gains all the benefits of the aura and uses your Spell Save DC and Wisdom modifier for it.\n\nIn addition, you can manifest the aura around both the other creature and yourself if you expend two uses of your Wild Shape, instead of one, when manifesting the aura."
+        }
+      ]
+    },
+    {
       "name": "Circle of the Land",
       "castermult": 1,
       "resources": [
@@ -122,18 +186,52 @@
       "features": [
         {
           "level": 2,
-          "name": "Bonus Cantrip",
-          "description": "When you choose this circle at 3rd level, you learn one additional druid cantrip of your choice."
+          "name": "Land's Aid",
+          "description": "You can channel the power of the land itself to bolster friends and harm foes. As an action, you can expend a use of your Wild Shape and choose a point within 60 feet of yourself. Vitality-giving flowers and life-draining thorns appear for a moment in a 10-foot-radius sphere centered on that point. Each creature of your choice in that area must make a Consitution saving throw, taking 2d6 Necrotic damage on a failed save, or half as much damage on a successful save.\n\nIn addition, one creature of your choice in that area regains 2d6 hit points.\n\nWhen you reach certain Druid levels, the damage and healing increase by 1d6: 6th level (3d6), 10th level (4d6), and 14th level (5d6)."
         },
         {
           "level": 2,
           "name": "Natural Recovery",
-          "description": "Starting at 3rd level, you can regain some of your magical energy by sitting in meditation and communing with nature. During a short rest, you choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your druid level (rounded up), and none of the slots can be 6th level or higher. You can’t use this feature again until you finish a long rest.\n\nFor example, when you are a 4th-level druid, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level slot or two 1st-level slots."
+          "description": "You can regain some of your magical energy by sitting in meditation and communing with nature. During a short rest, you choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your druid level (rounded up), and none of the slots can be 6th level or higher. You can’t use this feature again until you finish a long rest.\n\nFor example, when you are a 4th-level druid, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level slot or two 1st-level slots."
         },
         {
           "level": 2,
           "name": "Circle Spells",
-          "description": "Your mystical connection to the land infuses you with the ability to cast certain spells. At 2nd, 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid. Choose that land—arctic, coast, desert, forest, grassland, mountain, swamp, or Underdark—and consult the associated list of spells.\n\nOnce you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.\n##### Arctic\n* 2nd - Ice Knife, Armor of Agathys\n* 3rd - Hold Person, Spike Growth\n* 5th - Sleet Storm, Slow\n * 7th - Freedom of Movement, Ice Storm\n* 9th - Commune with Nature, Cone of Cold\n##### Coast\n* 2nd - Create or Destroy Water, Bless\n* 3rd - Mirror Image, Misty Step\n* 5th - Water Breathing, Water Walk\n* 7th - Control Water, Freedom of Movement\n* 9th - Conjure Elemental, Scrying\n##### Desert\n* 2nd - Burning Hands, Sanctuary\n* 3rd - Blur, Silence\n* 5th - Create Food and Water, Protection from Energy\n* 7th - Blight, Hallucinatory Terrain\n* 9th - Insect Plague, Wall of Stone\n##### Forest\n* 2nd - Entangle, Cause Fear\n* 3rd - Barkskin, Spider Climb\n* 5th - Call Lightning, Plant Growth\n* 7th - Divination, Freedom of Movement\n* 9th - Commune with Nature, Tree Stride\n##### Grassland\n* 2nd - Expeditious Retreat, Faerie Fire\n* 3rd - Invisibility, Pass without Trace\n* 5th - Daylight, Haste\n* 7th - Divination, Freedom of Movement\n* 9th - Dream, Insect Plague\n##### Mountain\n* 2nd - Earth Tremor, Feather Fall\n* 3rd - Spider Climb, Spike Growth\n* 5th - Lightning Bolt, Meld into Stone\n* 7th - Stone Shape, Stoneskin\n* 9th - Passwall, Wall of Stone\n##### Swamp\n* 2nd - Fog Cloud, Tasha's Caustic Brew\n* 3rd - Darkness, Melf's Acid Arrow\n* 5th - Water Walk, Stinking Cloud\n* 7th - Freedom of Movement, Locate Creature\n* 9th - Insect Plague, Scrying\n##### Underdark\n* 2nd - Snare, Chromatic Orb\n* 3rd - Spider Climb, Web\n* 5th - Gaseous Form, Stinking Cloud\n* 7th - Greater Invisibility, Stone Shape\n* 9th - Cloudkill, Insect Plague"
+          "description": "Your mystical connection to the land infuses you with the ability to cast certain spells. At 2nd, 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid. Choose that land—arctic, coast, desert, forest, grassland, mountain, swamp, or Underdark—and consult the associated list of spells.\n\nOnce you gain access to a circle spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.\n##### Arctic\n* 2nd - Ice Knife, Armor of Agathys\n* 3rd - Hold Person, Spike Growth\n* 5th - Sleet Storm, Slow\n * 7th - Freedom of Movement, Ice Storm\n* 9th - Commune with Nature, Cone of Cold\n##### Coast\n* 2nd - Create or Destroy Water, Bless\n* 3rd - Mirror Image, Misty Step\n* 5th - Water Breathing, Water Walk\n* 7th - Control Water, Freedom of Movement\n* 9th - Conjure Elemental, Scrying\n##### Desert\n* 2nd - Burning Hands, Sanctuary\n* 3rd - Blur, Silence\n* 5th - Create Food and Water, Protection from Energy\n* 7th - Blight, Hallucinatory Terrain\n* 9th - Insect Plague, Wall of Stone\n##### Forest\n* 2nd - Entangle, Cause Fear\n* 3rd - Barkskin, Spider Climb\n* 5th - Call Lightning, Plant Growth\n* 7th - Divination, Freedom of Movement\n* 9th - Commune with Nature, Tree Stride\n##### Grassland\n* 2nd - Expeditious Retreat, Faerie Fire\n* 3rd - Invisibility, Pass without Trace\n* 5th - Daylight, Haste\n* 7th - Divination, Freedom of Movement\n* 9th - Dream, Insect Plague\n##### Mountain\n* 2nd - Earth Tremor, Feather Fall\n* 3rd - Spider Climb, Spike Growth\n* 5th - Lightning Bolt, Meld into Stone\n* 7th - Stone Shape, Stoneskin\n* 9th - Passwall, Wall of Stone\n##### Swamp\n* 2nd - Fog Cloud, Tasha's Caustic Brew\n* 3rd - Darkness, Melf's Acid Arrow\n* 5th - Water Walk, Stinking Cloud\n* 7th - Freedom of Movement, Locate Creature\n* 9th - Insect Plague, Scrying\n##### Underdark\n* 2nd - Snare, Chromatic Orb\n* 3rd - Spider Climb, Web\n* 5th - Gaseous Form, Stinking Cloud\n* 7th - Greater Invisibility, Stone Shape\n* 9th - Cloudkill, Insect Plague",
+          "choice": [
+            {
+              "name": "Arctic",
+              "description": "* 2nd - Ice Knife, Armor of Agathys\n* 3rd - Hold Person, Spike Growth\n* 5th - Sleet Storm, Slow\n * 7th - Freedom of Movement, Ice Storm\n* 9th - Commune with Nature, Cone of Cold"
+            },
+            {
+              "name": "Coast",
+              "description": "* 2nd - Create or Destroy Water, Bless\n* 3rd - Mirror Image, Misty Step\n* 5th - Water Breathing, Water Walk\n* 7th - Control Water, Freedom of Movement\n* 9th - Conjure Elemental, Scrying"
+            },
+            {
+              "name": "Desert",
+              "description": "* 2nd - Burning Hands, Sanctuary\n* 3rd - Blur, Silence\n* 5th - Create Food and Water, Protection from Energy\n* 7th - Blight, Hallucinatory Terrain\n* 9th - Insect Plague, Wall of Stone"
+            },
+            {
+              "name": "Forest",
+              "description": "* 2nd - Entangle, Cause Fear\n* 3rd - Barkskin, Spider Climb\n* 5th - Call Lightning, Plant Growth\n* 7th - Divination, Freedom of Movement\n* 9th - Commune with Nature, Tree Stride"
+            },
+            {
+              "name": "Grassland",
+              "description": "* 2nd - Expeditious Retreat, Faerie Fire\n* 3rd - Invisibility, Pass without Trace\n* 5th - Daylight, Haste\n* 7th - Divination, Freedom of Movement\n* 9th - Dream, Insect Plague"
+            },
+            {
+              "name": "Mountain",
+              "description": "* 2nd - Earth Tremor, Feather Fall\n* 3rd - Spider Climb, Spike Growth\n* 5th - Lightning Bolt, Meld into Stone\n* 7th - Stone Shape, Stoneskin\n* 9th - Passwall, Wall of Stone"
+            },
+            {
+              "name": "Swamp",
+              "description": "* 2nd - Fog Cloud, Tasha's Caustic Brew\n* 3rd - Darkness, Melf's Acid Arrow\n* 5th - Water Walk, Stinking Cloud\n* 7th - Freedom of Movement, Locate Creature"
+            },
+            {
+              "name": "Underdark",
+              "description": "* 2nd - Snare, Chromatic Orb\n* 3rd - Spider Climb, Web\n* 5th - Gaseous Form, Stinking Cloud\n* 7th - Greater Invisibility, Stone Shape\n* 9th - Cloudkill, Insect Plague"
+            }
+          ]
         },
         {
           "level": 6,
@@ -159,7 +257,7 @@
         {
           "level": 2,
           "name": "Combat Wild Shape",
-          "description": "While you are transformed by Wild Shape, you can use a bonus action to expend one spell slot to regain 1d8 hit points per level of the spell slot expended plus your wisdom modifier."
+          "description": "While you are transformed by Wild Shape you gain the following benefits:\n\n* When you assume a Wild Shape form, you can use either your AC (including any armor you are wearing but not a shield) or the beast form's AC, whichever is higher.\n* You can expend a spell slot to heal yourself by 1d8 + 1d8 for each level of the spell slot expended."
         },
         {
           "level": 2,
@@ -180,6 +278,11 @@
           "level": 14,
           "name": "Thousand Forms",
           "description": "By 14th level, you have learned to use magic to alter your physical form in more subtle ways. You can cast the alter self spell at will. Additionally your maximum known forms for your Wild Shape increases by 2."
+        },
+        {
+          "level": 14,
+          "name": "Improved Primal Strike",
+          "description": "Starting at 14th level, your attacks in beat form gain an additional +1 bonus to attack and damage rolls for a total of +2."
         }
       ]
     },

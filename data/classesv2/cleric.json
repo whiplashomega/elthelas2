@@ -36,9 +36,23 @@
       "description": "You can use a 1-handed weapon with which you are proficient as a spellcasting focus."
     },
     {
-      "level": 2,
+      "level": 1,
       "name": "Holy Order",
-      "description": "Choose a holy order, this order defines your focus as a cleric of your god. You can be a Defender, Thaumaturge, or Shepherd.\n\n* **Defender.** Defenders are holy warriors who serve on the front lines of battle in the name of their God. They gain proficiency in heavy armor and martial weapons.\n* **Thaumaturge.** The Thaumaturge is focused on the study of the divine. You gain proficiency in the religion skill, and add double your proficiency bonus to ability checks that use that skill. You also learn one additional cantrip from the Cleric spell list.\n* **Shepherd.** The Shepherd lives to serve the followers of the faith as a lay leader, healer, and aid. You gain proficiency in the Medicine skill and add double your proficiency bonus to ability checks that use that skill. You also gain proficiency in one type of artisans tools of your choice."
+      "description": "Choose a holy order, this order defines your focus as a cleric of your god. You can be a Defender, Thaumaturge, or Shepherd.\n\n* **Defender.** Defenders are holy warriors who serve on the front lines of battle in the name of their God. They gain proficiency in heavy armor and martial weapons.\n* **Thaumaturge.** The Thaumaturge is focused on the study of the divine. You gain proficiency in the religion skill, and add double your proficiency bonus to ability checks that use that skill. You also learn one additional cantrip from the Cleric spell list.\n* **Shepherd.** The Shepherd lives to serve the followers of the faith as a lay leader, healer, and aid. You gain proficiency in the Medicine skill and add double your proficiency bonus to ability checks that use that skill. You also gain proficiency in one type of artisans tools of your choice.",
+      "choice": [
+        {
+          "name": "Defender",
+          "description": "Defenders are holy warriors who serve on the front lines of battle in the name of their God. They gain proficiency in heavy armor and martial weapons."
+        },
+        {
+          "name": "Thaumaturge",
+          "description": "The Thaumaturge is focused on the study of the divine. You gain proficiency in the religion skill, and add double your proficiency bonus to ability checks that use that skill. You also learn one additional cantrip from the Cleric spell list."
+        },
+        {
+          "name": "Shepherd",
+          "description": "The Shepherd lives to serve the followers of the faith as a lay leader, healer, and aid. You gain proficiency in the Medicine skill and add double your proficiency bonus to ability checks that use that skill. You also gain proficiency in one type of artisans tools of your choice."
+        }
+      ]
     },
     {
       "level": 2,
@@ -77,13 +91,13 @@
     },
     {
       "level": 7,
-      "name": "Channel Divinity (2nd use)",
-      "description": "You gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with one such effects: Turn Undead, and will gain another effect later determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description.\n\nWhen you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again.\n\nSome Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your cleric spell save DC.\n\nBeginning at 6th level, you can use your Channel Divinity twice between rests, and beginning at 18th level, you can use it three times between rests. When you finish a short or long rest, you regain your expended uses.\n\n#### Channel Divinity: Turn Undead\n\nAs an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 9m of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 9m of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action."
+      "name": "Blessed Strikes",
+      "description": "You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal 1d8 radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
     },
     {
       "level": 8,
-      "name": "Blessed Strikes",
-      "description": "You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal 1d8 radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
+      "name": "Channel Divinity (2nd use)",
+      "description": "You gain a 2nd use of Channel Divinity."
     },
     {
       "level": 10,
@@ -102,8 +116,8 @@
     },
     {
       "level": 18,
-      "name": "Channel Divinity (3rd)",
-      "description": "You gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with one such effects: Turn Undead, and will gain another effect later determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description.\n\nWhen you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again.\n\nSome Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your cleric spell save DC.\n\nBeginning at 6th level, you can use your Channel Divinity twice between rests, and beginning at 18th level, you can use it three times between rests. When you finish a short or long rest, you regain your expended uses.\n\n#### Channel Divinity: Turn Undead\n\nAs an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 9m of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 9m of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action."
+      "name": "Channel Divinity (3rd use)",
+      "description": "You gain a 3rd use of Channel Divinity."
     },
     {
       "level": 20,

@@ -7,7 +7,7 @@
   "cantriplevel": 1,
   "proficiencies": {
     "armor": ["light armor"],
-    "weapons": ["simple weapons", "hand crossbows", "longswords", "rapiers", "shortswords"],
+    "weapons": ["simple weapons"],
     "tools": ["three musical instruments of your choice"],
     "saving throws": ["dex", "cha"],
     "numskills": 3
@@ -297,12 +297,7 @@
         {
           "level": 2,
           "name": "Bonus Proficiencies",
-          "description": "When you join the College of Swords at 3rd level, you gain proficiency with medium armor and the scimitar.\n\nIf you're proficient with a simple or martial melee weapon, you can use it as a spellcasting focus for your bard spells."
-        },
-        {
-          "level": 2,
-          "name": "Combat Caster",
-          "description": "You can use a 1-handed weapon with which you are proficient as a spellcasting focus."
+          "description": "When you join the College of Swords at 3rd level, you gain proficiency with medium armor and martial weapons.\n\nIf you're proficient with a simple or martial melee weapon, you can use it as a spellcasting focus for your bard spells."
         },
         {
           "level": 2,

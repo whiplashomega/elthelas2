@@ -7,7 +7,7 @@
   "cantriplevel": 1,
   "proficiencies": {
  "armor": [],
- "weapons": ["daggers", "darts", "slings", "quarterstaffs", "light crossbows"],
+ "weapons": ["simple weapons"],
  "tools": [],
  "saving throws": ["con", "cha"],
  "numskills": 2
