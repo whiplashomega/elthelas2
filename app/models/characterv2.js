@@ -114,7 +114,8 @@ var Characterv2 = new Schema({
       radiant: 0,
       thunder: 0
     }},
-  temphp: 0
+  temphp: 0,
+  wildShapeOptions: []
 });
 
 module.exports = mongoose.model('Characterv2', Characterv2);

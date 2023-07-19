@@ -76,6 +76,7 @@
           </b-tab>
           <b-tab title="Feature Selection">
             <selectfeatures />
+            <wildshape />
           </b-tab>
           <b-tab title="Combat HUD">
             <combathud />

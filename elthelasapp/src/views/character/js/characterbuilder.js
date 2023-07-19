@@ -27,6 +27,7 @@ import selectfeatures from '@/components/characterbuilderv2/selectfeatures.vue';
 import skills from '@/components/characterbuilderv2/skills.vue';
 import spells from '@/components/characterbuilderv2/spells.vue';
 import statbuilder from '@/components/characterbuilderv2/statbuilder.vue';
+import wildshape from '@/components/characterbuilderv2/wildshape.vue';
 
 import { useMeta } from 'vue-meta';
 
@@ -84,6 +85,7 @@ export default {
     selectfeatures,
     skills,
     spells,
+    wildshape,
     statbuilder
   },
   data () {
