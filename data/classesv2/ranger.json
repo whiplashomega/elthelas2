@@ -33,8 +33,8 @@
   "features": [
     {
       "level": 1,
-      "name": "Expertise",
-      "description": "You gain expertise in two skills with which you are proficient."
+      "name": "Fighting Style",
+      "description": "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.\n\n#### Archery\n\nYou gain a +2 bonus to attack rolls you make with ranged weapons.\n\n#### Defense\n\nWhile you are wearing armor, you gain a +1 bonus to AC\n\n#### Dueling\n\nWhen you are weilding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.\n\n#### Two-Weapon Fighting\n\nWhen you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.\n\n#### Blind Fighting\n\nYou have blindsight with a range of 3m. Within that range you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.\n\n#### Druidic Warrior\n\nYou learn two cantrips of your choice from the druid spell list. They count as ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the druid spell list.\n\n#### Thrown Weapon Fighting\n\nYou can draw a weapon that has the thrown property as part of the attack you make with the weapon.\n\nIn addition, when you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll."
     },
     {
       "level": 2,
@@ -58,8 +58,8 @@
     },
     {
       "level": 3,
-      "name": "Fighting Style",
-      "description": "At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.\n\n#### Archery\n\nYou gain a +2 bonus to attack rolls you make with ranged weapons.\n\n#### Defense\n\nWhile you are wearing armor, you gain a +1 bonus to AC\n\n#### Dueling\n\nWhen you are weilding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.\n\n#### Two-Weapon Fighting\n\nWhen you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.\n\n#### Blind Fighting\n\nYou have blindsight with a range of 3m. Within that range you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.\n\n#### Druidic Warrior\n\nYou learn two cantrips of your choice from the druid spell list. They count as ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the druid spell list.\n\n#### Thrown Weapon Fighting\n\nYou can draw a weapon that has the thrown property as part of the attack you make with the weapon.\n\nIn addition, when you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll."
+      "name": "Expertise",
+      "description": "You gain expertise in two skills with which you are proficient."
     },
     {
       "level": 6,
@@ -80,6 +80,11 @@
       "level": 4,
       "name": "Ability Score Improvement",
       "description": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+    },
+    {
+      "level": 4,
+      "name": "Weapon Mastery",
+      "description": "You unlock the maximum potential of the weapons you wield. You gain access to the weapon mastery property of any weapon you wield."
     },
     {
       "level": 4,
