@@ -150,6 +150,7 @@
       </ul>
       <h4>Monk</h4>
       <ul>
+        <li>Unarmored defense now provides protection points.</li>
         <li>Martial Arts die size increased</li>
         <li>Weapon Mastery</li>
         <li>Way of the Elements reworked, is now effectively a half caster, and all spells are cheaper.</li>

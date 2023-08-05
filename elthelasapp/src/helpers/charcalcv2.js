@@ -130,7 +130,7 @@ export default {
         }, dec(0)));
       }
     });
-    sum = sum.add(dec(character.cp).add(character.sp).add(character.gp).add(character.pp).div(50)).toNumber();
+    sum = sum.add(dec(character.cp ? character.cp : 0).add(character.sp ? character.sp : 0).add(character.gp ? character.gp : 0).add(character.pp ? character.pp : 0).div(50)).toNumber();
     return sum;
   },
   charlevel: function(character) {
