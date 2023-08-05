@@ -161,7 +161,7 @@ export default {
     numInfusionsKnown () {
       var asi = 0;
       this.character.charclasses.forEach((cl) => {
-        if (cl.thisclass.name === "Artificer" && cl.level >= 1) {
+        if (cl.thisclass.name === "Artificer" && cl.level >= 3) {
           cl.thisclass.resources.forEach((res) => {
             if (res.name === "Infusions Known") {
               let tableentry = res.count.findLast((t) => {
