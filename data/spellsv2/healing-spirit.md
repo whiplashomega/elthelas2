@@ -10,7 +10,7 @@ tags: [druid, ranger, level2, conjuration]
 
 **Casting Time**: 1 bonus action
 
-**Range**: 18m
+**Range**: 12m
 
 **Components**: V, S
 
@@ -24,7 +24,7 @@ tags: [druid, ranger, level2, conjuration]
 
 You call forth a nature spirit to soothe the wounded. The intangible spirit appears in a space that is a 1m cube you can see within range. The spirit looks like a transparent beast or fey (your choice).
 
-Until the spell ends, whenever you or a creature you can see moves into the spirits space for the first time on its turn or starts its turn there, you can cause the spirit to restore ld6 hit points to that creature (no action required). The spirit can’t heal constructs or undead. As a bonus action on your turn, you can move the Spirit up to 9m to a space you can see.
+Until the spell ends, whenever you or a creature you can see moves into the spirits space for the first time on its turn or starts its turn there, you can cause the spirit to restore ld6 hit points to that creature (no action required). The spirit can’t heal constructs or undead. As a bonus action on your turn, you can move the Spirit up to 6m to a space you can see.
 
 The spell ends once the spirit has restored hit points a number of times equal to three times your spellcasting ability modifier (minimum of once).
 

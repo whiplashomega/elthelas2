@@ -22,7 +22,7 @@ tags: [druid, level6, abjuration]
 
 **Damage**: []
 
-You invoke the spirits of nature to protect an area outdoors or underground. The area can be as small as a 9m cube or as large as a 27m cube. Buildings and
+You invoke the spirits of nature to protect an area outdoors or underground. The area can be as small as a 6m cube or as large as a 18m cube. Buildings and
 other structures are excluded from the affected area. If you cast this spell in the same area every day for a year, the spell lasts until dispelled.
 
 The spell creates the following effects within the area. When you cast this spell, you can specify creatures as friends who are immune to the effects. You can also
@@ -31,7 +31,7 @@ specify a password that, when spoken aloud, makes the speaker immune to these ef
 The entire warded area radiates magic. A dispel magic cast on the area, if successful, removes only one of the following effects, not the entire area. That spell’s caster
 chooses which effect to end. Only when all its effects are gone is this spell dispelled.
 
-**Solid Fog.** You can fill any number of 1m squares on the ground with thick fog, making them heavily obscured. The fog reaches 3m high. In addition, every
+**Solid Fog.** You can fill any number of 1m squares on the ground with thick fog, making them heavily obscured. The fog reaches 2m high. In addition, every
 meter of movement through the fog costs 2 extra meters. To a creature immune to this effect, the fog obscures nothing and looks like soft mist, with motes of green light
 floating in the air.
 

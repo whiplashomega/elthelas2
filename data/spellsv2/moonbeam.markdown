@@ -10,7 +10,7 @@ tags: [druid, eldritchknight, level2, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 36m
+**Range**: 34m
 
 **Components**: V, S, M (several seeds of any moonseed plant and a piece of opalescent feldspar)
 
@@ -22,7 +22,7 @@ tags: [druid, eldritchknight, level2, evocation]
 
 **Damage**: [ { "dice": "2d10", "label": "radiant", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
-A silvery beam of pale light shines down in a 1m-radius, 12m-high cylinder centered on a point within range. Until the spell ends, dim light fills the cylinder.
+A silvery beam of pale light shines down in a 1m-radius, 8m-high cylinder centered on a point within range. Until the spell ends, dim light fills the cylinder.
 
 When a creature enters the spell's area for the first time on a turn or starts its turn there, it is engulfed in ghostly flames that cause searing pain, and it must make a Constitution saving throw. It takes 3d10 radiant damage on a failed save, or half as much on a successful one.
 

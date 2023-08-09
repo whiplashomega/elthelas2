@@ -10,7 +10,7 @@ tags: [warlock, wizard, level1, conjuration]
 
 **Casting Time**: 1 minute
 
-**Range**: 27m
+**Range**: 18m
 
 **Components**: V, S, M (a ruby worth at least 999gp)
 

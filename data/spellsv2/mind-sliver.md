@@ -10,7 +10,7 @@ tags: [arcanetrickster, artificer, sorcerer, warlock, wizard, cantrip, enchantme
 
 **Casting Time**: 1 action
 
-**Range**: 18m
+**Range**: 12m
 
 **Components**: V
 

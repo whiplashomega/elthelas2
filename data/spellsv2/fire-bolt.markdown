@@ -10,7 +10,7 @@ tags: [sorcerer, wizard, eldritchknight, artificer, cantrip, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 36m
+**Range**: 34m
 
 **Components**: V, S
 

@@ -10,7 +10,7 @@ tags: [bard, druid, sorcerer, wizard, eldritchknight, artificer, level2, transmu
 
 **Casting Time**: 1 action
 
-**Range**: 9m
+**Range**: 6m
 
 **Components**: V, S, M (a pinch of powdered iron)
 

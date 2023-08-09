@@ -10,7 +10,7 @@ tags: [cleric, level3, abjuration]
 
 **Casting Time**: 1 action
 
-**Range**: 9m
+**Range**: 6m
 
 **Components**: V, S
 

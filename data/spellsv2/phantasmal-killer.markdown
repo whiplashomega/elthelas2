@@ -10,7 +10,7 @@ tags: [bard, wizard, level4, illusion]
 
 **Casting Time**: 1 action
 
-**Range**: 36m
+**Range**: 34m
 
 **Components**: V, S
 

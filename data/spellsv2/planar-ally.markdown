@@ -10,7 +10,7 @@ tags: [cleric, level6, conjuration]
 
 **Casting Time**: 10 minutes
 
-**Range**: 18m
+**Range**: 12m
 
 **Components**: V, S
 

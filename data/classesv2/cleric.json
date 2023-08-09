@@ -62,7 +62,7 @@
     {
       "level": 3,
       "name": "Channel Divinity",
-      "description": "You gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with one such effects: Turn Undead, and will gain another effect later determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description.\n\nWhen you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again.\n\nSome Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your cleric spell save DC.\n\nBeginning at 7th level, you can use your Channel Divinity twice between rests, and beginning at 18th level, you can use it three times between rests. When you finish a short or long rest, you regain your expended uses.\n\n#### Channel Divinity: Turn Undead\n\nAs an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 9m of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage (except damage from the Smite Undead feature). A turned creature cannot take actions or reactions and it can’t willingly move to a space within 9m of you."
+      "description": "You gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with one such effects: Turn Undead, and will gain another effect later determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description.\n\nWhen you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again.\n\nSome Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your cleric spell save DC.\n\nBeginning at 7th level, you can use your Channel Divinity twice between rests, and beginning at 18th level, you can use it three times between rests. When you finish a short or long rest, you regain your expended uses.\n\n#### Channel Divinity: Turn Undead\n\nAs an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 6m of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage (except damage from the Smite Undead feature). A turned creature cannot take actions or reactions and it can’t willingly move to a space within 6m of you."
     },
     {
       "level": 3,
@@ -152,12 +152,12 @@
         {
           "level": 6,
           "name": "Channel Divinity: Gale",
-          "description": "You can use your Channel Divinity to create a gale of wind like a tornado\n\nAs an action, you present your holy symbol and gale force winds permeate the area. The area within 18m of you becomes filled with strong winds. You and a number of creatures equal to your wisdom modifier that you select ignore these winds, meanwhile for any other creature moving 1m requires 2m of movement as they battle through the strong winds. Additionally, when the winds start each creature effected must make a strength saving throw or be knocked prone."
+          "description": "You can use your Channel Divinity to create a gale of wind like a tornado\n\nAs an action, you present your holy symbol and gale force winds permeate the area. The area within 12m of you becomes filled with strong winds. You and a number of creatures equal to your wisdom modifier that you select ignore these winds, meanwhile for any other creature moving 1m requires 2m of movement as they battle through the strong winds. Additionally, when the winds start each creature effected must make a strength saving throw or be knocked prone."
         },
         {
           "level": 10,
           "name": "Burst of Wind",
-          "description": "Your God grants you the ability to manipulate winds around you. As an action you can use the force of the wind to knock over creatures and move objects. To do so, select a 3m cube within 18m of you. Any creatures in that area must make a strength saving throw or be pushed 3m in a direction of your choice or fall prone, they choose which effect they are subjected to. If they succeed they are not affected. Objects in the area that are not secured are automatically pushed 3m away."
+          "description": "Your God grants you the ability to manipulate winds around you. As an action you can use the force of the wind to knock over creatures and move objects. To do so, select a 2m cube within 12m of you. Any creatures in that area must make a strength saving throw or be pushed 2m in a direction of your choice or fall prone, they choose which effect they are subjected to. If they succeed they are not affected. Objects in the area that are not secured are automatically pushed 2m away."
         },
         {
           "level": 14,
@@ -185,7 +185,7 @@
         {
           "level": 6,
           "name": "Channel Divinity: Arcane Abjuration",
-          "description": "You can use your Channel Divinity to abjure otherworldly creatures.\n\nAs an action, you present your holy symbol, and one celestial, elemental, fey, or fiend of your choice that is within 9m of you must make a Wisdom saving throw, provided that the creature can see or hear you. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.\n\nA turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly end its move in a space within 9m of you. It also can't take reactions. For its action, it can only use the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.\n\nAfter you reach 5th level, when a creature fails its saving throw against your Arcane Abjuration feature, the creature is banished for 1 minute (as in the banishment spell, no concentration required) if it isn't on its plane of origin and its challenge rating is at or below a certain threshold, as shown on the Arcane Banishment table."
+          "description": "You can use your Channel Divinity to abjure otherworldly creatures.\n\nAs an action, you present your holy symbol, and one celestial, elemental, fey, or fiend of your choice that is within 6m of you must make a Wisdom saving throw, provided that the creature can see or hear you. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.\n\nA turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly end its move in a space within 6m of you. It also can't take reactions. For its action, it can only use the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.\n\nAfter you reach 5th level, when a creature fails its saving throw against your Arcane Abjuration feature, the creature is banished for 1 minute (as in the banishment spell, no concentration required) if it isn't on its plane of origin and its challenge rating is at or below a certain threshold, as shown on the Arcane Banishment table."
         },
         {
           "level": 10,
@@ -258,7 +258,7 @@
         {
           "level": 6,
           "name": "Channel Divinity: Armor of Stone",
-          "description": "You can use your Channel Divinity to strengthen your armor with the strength of the earth itself.\n\nAs an action, you present your holy symbol and perform an incantation. Pick a number of willing creatures equal to your wisdom modifier within 9m of you. Each of those creatures has their armor class increased by 2 for 1 minute."
+          "description": "You can use your Channel Divinity to strengthen your armor with the strength of the earth itself.\n\nAs an action, you present your holy symbol and perform an incantation. Pick a number of willing creatures equal to your wisdom modifier within 6m of you. Each of those creatures has their armor class increased by 2 for 1 minute."
         },
         {
           "level": 10,
@@ -298,12 +298,12 @@
         {
           "level": 6,
           "name": "Channel Divinity: Fire Burst",
-          "description": "You can use your Channel Divinity to create divine flames.\n\nAs an action, you present your holy symbol and nearby enemies burst into flame. Pick a number of opponents equal to your wisdom modifier within 9m of you. Each of those creatures must make a constitution saving throw or catch fire. The fire does 3d6 fire damage every round at the start of that creatures turn until someone uses an action to extinguish the flames."
+          "description": "You can use your Channel Divinity to create divine flames.\n\nAs an action, you present your holy symbol and nearby enemies burst into flame. Pick a number of opponents equal to your wisdom modifier within 6m of you. Each of those creatures must make a constitution saving throw or catch fire. The fire does 3d6 fire damage every round at the start of that creatures turn until someone uses an action to extinguish the flames."
         },
         {
           "level": 10,
           "name": "Manipulate Flames",
-          "description": "At 6th level your God grants you the ability to manipulate flames. On your turn, you can manipulate any non-magical flame within 18m of you. As an action you can extinguish any fire smaller than a 1m cube, or turn a small fire (such as a torch) into a conflagration in a neighboring square. Any creature caught in the conflagration must make a dexterity save, taking 2d6 fire damage on a failed save, or half as much on a successful one. The conflagration lasts for only 1 round unless their is fuel available in the square, in which case it lasts until the fuel is consumed."
+          "description": "At 6th level your God grants you the ability to manipulate flames. On your turn, you can manipulate any non-magical flame within 12m of you. As an action you can extinguish any fire smaller than a 1m cube, or turn a small fire (such as a torch) into a conflagration in a neighboring square. Any creature caught in the conflagration must make a dexterity save, taking 2d6 fire damage on a failed save, or half as much on a successful one. The conflagration lasts for only 1 round unless their is fuel available in the square, in which case it lasts until the fuel is consumed."
         },
         {
           "level": 14,
@@ -385,27 +385,27 @@
         {
           "level": 2,
           "name": "Circle of Mortality",
-          "description": "At 2nd level, you gain the ability to manipulate the line between life and death. When you would normally roll one or more dice to restore hit points with a spell to a creature at 0 hit points, you instead use the highest number possible for each die.\n\nIn addition, you learn the spare the dying cantrip, which doesn’t count against the number of cleric cantrips you know. For you, it has a range of 9m, and you can cast it as a bonus action."
+          "description": "At 2nd level, you gain the ability to manipulate the line between life and death. When you would normally roll one or more dice to restore hit points with a spell to a creature at 0 hit points, you instead use the highest number possible for each die.\n\nIn addition, you learn the spare the dying cantrip, which doesn’t count against the number of cleric cantrips you know. For you, it has a range of 6m, and you can cast it as a bonus action."
         },
         {
           "level": 2,
           "name": "Eyes of the Grave",
-          "description": "At 2nd level, you gain the ability to occasionally sense the presence of the undead, whose existence is an insult to the natural cycle of life. As an action, you can open your awareness to magically detect undead. Until the end of your next turn, you know the location of any undead within 18m of you that isn’t behind total cover and that isn’t protected from divination magic. This sense doesn’t tell you anything about a creature's capabilities or identity.\n\nYou can use this feature a number of times equal to your Wisdom modifier (minimum Of once). You regain all expended uses when you finish a long rest."
+          "description": "At 2nd level, you gain the ability to occasionally sense the presence of the undead, whose existence is an insult to the natural cycle of life. As an action, you can open your awareness to magically detect undead. Until the end of your next turn, you know the location of any undead within 12m of you that isn’t behind total cover and that isn’t protected from divination magic. This sense doesn’t tell you anything about a creature's capabilities or identity.\n\nYou can use this feature a number of times equal to your Wisdom modifier (minimum Of once). You regain all expended uses when you finish a long rest."
         },
         {
           "level": 6,
           "name": "Channel Divinity: Path of the Grave",
-          "description": "You can use your Channel Divinity to mark another creature’s life force for termination.\n\nAs an action, you choose one creature you can see within 9m of you, cursing it until the end Of your next turn. The next time you or an ally of yours hits the cursed creature with an attack, the creature has vulnerability to all of that attack's damage, and then the curse ends."
+          "description": "You can use your Channel Divinity to mark another creature’s life force for termination.\n\nAs an action, you choose one creature you can see within 6m of you, cursing it until the end Of your next turn. The next time you or an ally of yours hits the cursed creature with an attack, the creature has vulnerability to all of that attack's damage, and then the curse ends."
         },
         {
           "level": 10,
           "name": "Sentinel at Death's Door",
-          "description": "You gain the ability to impede death’s progress. As a reaction when you or a creature you can see within 9m of you suffers a critical hit, you can turn that hit into a normal hit. Any effects triggered by a critical hit are canceled.\n\nYou can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest."
+          "description": "You gain the ability to impede death’s progress. As a reaction when you or a creature you can see within 6m of you suffers a critical hit, you can turn that hit into a normal hit. Any effects triggered by a critical hit are canceled.\n\nYou can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest."
         },
         {
           "level": 14,
           "name": "Keeper of Souls",
-          "description": "Starting at 14th level. you can seize a trace of vitality from a parting soul and use it to heal the living. When an enemy you can see dies within 18m of you, you or one creature of your choice that is within 18m of you regains hit points equal to the enemy’s number of Hit Dice. You can use this feature only if you aren’t incapacitated. Once you use it, you can't do so again until the start of your next turn."
+          "description": "Starting at 14th level. you can seize a trace of vitality from a parting soul and use it to heal the living. When an enemy you can see dies within 12m of you, you or one creature of your choice that is within 12m of you regains hit points equal to the enemy’s number of Hit Dice. You can use this feature only if you aren’t incapacitated. Once you use it, you can't do so again until the start of your next turn."
         }
       ]
     },
@@ -440,12 +440,12 @@
         {
           "level": 10,
           "name": "Channel Divinity: Read Thoughts",
-          "description": "You can use your Channel Divinity to read a creature's thoughts. You can then use your access to the creature's mind to command it.\n\nAs an action, choose one creature that you can see within 18m of you. That creature must make a Wisdom saving throw. If the creature succeeds on the saving throw, you can't use this feature on it again until you finish a long rest.\n\nIf the creature fails its save, you can read its surface thoughts (those foremost in its mind, reflecting its current emotions and what it is actively thinking about) when it is within 18m of you. This effect lasts for 1 minute.\n\nDuring that time, you can use your action to end this effect and cast the suggestion spell on the creature without expending a spell slot. The target automatically fails its saving throw against the spell."
+          "description": "You can use your Channel Divinity to read a creature's thoughts. You can then use your access to the creature's mind to command it.\n\nAs an action, choose one creature that you can see within 12m of you. That creature must make a Wisdom saving throw. If the creature succeeds on the saving throw, you can't use this feature on it again until you finish a long rest.\n\nIf the creature fails its save, you can read its surface thoughts (those foremost in its mind, reflecting its current emotions and what it is actively thinking about) when it is within 12m of you. This effect lasts for 1 minute.\n\nDuring that time, you can use your action to end this effect and cast the suggestion spell on the creature without expending a spell slot. The target automatically fails its saving throw against the spell."
         },
         {
           "level": 14,
           "name": "Visions of the Past",
-          "description": "Starting at 14th level, you can call up visions of the past that relate to an object you hold or your immediate surroundings. You spend at least 1 minute in meditation and prayer, then receive dreamlike, shadowy glimpses of recent events. You can meditate in this way for a number of minutes equal to your Wisdom score and must maintain concentration during that time, as if you were casting a spell.\n\nOnce you use this feature, you can't use it again until you finish a short or long rest.\n\n**Object Reading.** Holding an object as you meditate, you can see visions of the object's previous owner. After meditating for 1 minute, you learn how the owner acquired and lost the object, as w ell as the most recent significant event involving the object and that owner. If the object w as owned by another creature in the recent past (within a number of days equal to your Wisdom score), you can spend 1 additional minute for each owner to learn the same information about that creature.\n\n**Area Reading.** As you meditate, you see visions of recent events in your immediate vicinity (a room, street, tunnel, clearing, or the like, up to a 15m cube), going back a number of days equal to your Wisdom score. For each minute you meditate, you learn about one significant event, beginning with the most recent. Significant events typically involve powerful emotions, such as battles and betrayals, marriages and murders, births and funerals. However, they might also include more mundane events that are nevertheless important in your current situation."
+          "description": "Starting at 14th level, you can call up visions of the past that relate to an object you hold or your immediate surroundings. You spend at least 1 minute in meditation and prayer, then receive dreamlike, shadowy glimpses of recent events. You can meditate in this way for a number of minutes equal to your Wisdom score and must maintain concentration during that time, as if you were casting a spell.\n\nOnce you use this feature, you can't use it again until you finish a short or long rest.\n\n**Object Reading.** Holding an object as you meditate, you can see visions of the object's previous owner. After meditating for 1 minute, you learn how the owner acquired and lost the object, as w ell as the most recent significant event involving the object and that owner. If the object w as owned by another creature in the recent past (within a number of days equal to your Wisdom score), you can spend 1 additional minute for each owner to learn the same information about that creature.\n\n**Area Reading.** As you meditate, you see visions of recent events in your immediate vicinity (a room, street, tunnel, clearing, or the like, up to a 10m cube), going back a number of days equal to your Wisdom score. For each minute you meditate, you learn about one significant event, beginning with the most recent. Significant events typically involve powerful emotions, such as battles and betrayals, marriages and murders, births and funerals. However, they might also include more mundane events that are nevertheless important in your current situation."
         }
       ]
     },
@@ -467,7 +467,7 @@
         {
           "level": 6,
           "name": "Channel Divinity: Preserve Life",
-          "description": "You can use your Channel Divinity to heal the badly injured.\n\nAs an action, you present your holy symbol and evoke healing energy that can restore a number of hit points equal to five times your cleric level. Choose any creatures within 9m of you, and divide those hit points among them. You can't use this feature on an undead or a construct."
+          "description": "You can use your Channel Divinity to heal the badly injured.\n\nAs an action, you present your holy symbol and evoke healing energy that can restore a number of hit points equal to five times your cleric level. Choose any creatures within 6m of you, and divide those hit points among them. You can't use this feature on an undead or a construct."
         },
         {
           "level": 10,
@@ -507,22 +507,22 @@
         {
           "level": 2,
           "name": "Warding Flare",
-          "description": "Also at 2nd level, you can interpose divine light between yourself and an attacking enemy. When you are attacked by a creature within 9m of you that you can see, you can use your reaction to impose disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses. An attacker that can't be blinded is immune to this feature.\n\nYou can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
+          "description": "Also at 2nd level, you can interpose divine light between yourself and an attacking enemy. When you are attacked by a creature within 6m of you that you can see, you can use your reaction to impose disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses. An attacker that can't be blinded is immune to this feature.\n\nYou can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
         },
         {
           "level": 6,
           "name": "Channel Divinity: Radiance of the Dawn",
-          "description": "You can use your Channel Divinity to harness sunlight, banishing darkness and dealing radiant damage to your foes.\n\nAs an action, you present your holy symbol, and any magical darkness within 9m of you is dispelled. Additionally, each hostile creature within 9m of you must make a Constitution saving throw. A creature takes radiant damage equal to 2d10 + your cleric level on a failed saving throw, and half as much damage on a successful one. A creature that has total cover from you is not affected."
+          "description": "You can use your Channel Divinity to harness sunlight, banishing darkness and dealing radiant damage to your foes.\n\nAs an action, you present your holy symbol, and any magical darkness within 6m of you is dispelled. Additionally, each hostile creature within 6m of you must make a Constitution saving throw. A creature takes radiant damage equal to 2d10 + your cleric level on a failed saving throw, and half as much damage on a successful one. A creature that has total cover from you is not affected."
         },
         {
           "level": 10,
           "name": "Improved Flare",
-          "description": "You can also use your Warding Flare feature when a creature that you can see within 9m of you attacks a creature other than you."
+          "description": "You can also use your Warding Flare feature when a creature that you can see within 6m of you attacks a creature other than you."
         },
         {
           "level": 14,
           "name": "Corona of Light",
-          "description": "You can use your action to activate an aura of sunlight that lasts for 1 minute or until you dismiss it using another action. You emit bright light in a 18m radius and dim light 9m beyond that. Your enemies in the bright light have disadvantage on saving throws against any spell that deals fire or radiant damage."
+          "description": "You can use your action to activate an aura of sunlight that lasts for 1 minute or until you dismiss it using another action. You emit bright light in a 12m radius and dim light 6m beyond that. Your enemies in the bright light have disadvantage on saving throws against any spell that deals fire or radiant damage."
         }
       ]
     },
@@ -545,12 +545,12 @@
         {
           "level": 6,
           "name": "Channel Divinity: Charm Animals and Plants",
-          "description": "You can use your Channel Divinity to charm animals and plants.\n\nAs an action, you present your holy symbol and invoke the name of your deity. Each beast or plant creature that can see you within 9m of you must make a Wisdom saving throw. If the creature fails its saving throw, it is charmed by you for 1 minute or until it takes damage. While it is charmed by you, it is friendly to you and other creatures you designate."
+          "description": "You can use your Channel Divinity to charm animals and plants.\n\nAs an action, you present your holy symbol and invoke the name of your deity. Each beast or plant creature that can see you within 6m of you must make a Wisdom saving throw. If the creature fails its saving throw, it is charmed by you for 1 minute or until it takes damage. While it is charmed by you, it is friendly to you and other creatures you designate."
         },
         {
           "level": 10,
           "name": "Dampen Elements",
-          "description": "When you or a creature within 9m of you takes acid, cold, fire, lightning, or thunder damage, you can use your reaction to grant resistance to the creature against that instance of the damage."
+          "description": "When you or a creature within 6m of you takes acid, cold, fire, lightning, or thunder damage, you can use your reaction to grant resistance to the creature against that instance of the damage."
         },
         {
           "level": 14,
@@ -590,7 +590,7 @@
         {
           "level": 6,
           "name": "Channel Divinity: Order's Demand",
-          "description": "You can use your Channel Divinity to exert an intimidating presence over others.\n\nAs an action, you present your holy symbol, and each creature of your choice that can see or hear you within 9m of you must succeed on a Wisdom saving throw or be charmed by you until the end of your next turn or until the charmed creature takes any damage. You can also cause any of the charmed creatures to drop what they are holding when they fail the saving throw."
+          "description": "You can use your Channel Divinity to exert an intimidating presence over others.\n\nAs an action, you present your holy symbol, and each creature of your choice that can see or hear you within 6m of you must succeed on a Wisdom saving throw or be charmed by you until the end of your next turn or until the charmed creature takes any damage. You can also cause any of the charmed creatures to drop what they are holding when they fail the saving throw."
         },
         {
           "level": 10,
@@ -630,7 +630,7 @@
         {
           "level": 2,
           "name": "Emboldening Bond",
-          "description": "You can forge an empowering bond among people who are at peace with one another. As an action, you choose a number of willing creatures within 9m of you (this can include yourself) equal to your proficiency bonus. You create a magical bond among them for 10 minutes or until you use this feature again. While any bonded creature is within 9m of another, the creature can roll a d4 and add the number rolled to an attack roll, an ability check, or a saving throw it makes. Each creature can add the d4 no more than once per turn.\n\nYou can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+          "description": "You can forge an empowering bond among people who are at peace with one another. As an action, you choose a number of willing creatures within 6m of you (this can include yourself) equal to your proficiency bonus. You create a magical bond among them for 10 minutes or until you use this feature again. While any bonded creature is within 6m of another, the creature can roll a d4 and add the number rolled to an attack roll, an ability check, or a saving throw it makes. Each creature can add the d4 no more than once per turn.\n\nYou can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
         },
         {
           "level": 6,
@@ -640,12 +640,12 @@
         {
           "level": 10,
           "name": "Protective Bond",
-          "description": "The bond you forge between people helps them protect each other. When a creature affected by your Emboldening Bond feature is about to take damage, a second bonded creature within 9m of the first can use its reaction to teleport to an unoccupied space within 1m of the first creature. The second creature then takes all the damage instead."
+          "description": "The bond you forge between people helps them protect each other. When a creature affected by your Emboldening Bond feature is about to take damage, a second bonded creature within 6m of the first can use its reaction to teleport to an unoccupied space within 1m of the first creature. The second creature then takes all the damage instead."
         },
         {
           "level": 14,
           "name": "Expansive Bond",
-          "description": "The benefits of your Emboldening Bond and Protective Bond features now work when the creatures are within 18m of each other. Moreover, when a creature uses Protective Bond to take someone else's damage, the creature has resistance to that damage."
+          "description": "The benefits of your Emboldening Bond and Protective Bond features now work when the creatures are within 12m of each other. Moreover, when a creature uses Protective Bond to take someone else's damage, the creature has resistance to that damage."
         }
       ]
     },
@@ -680,7 +680,7 @@
         {
           "level": 10,
           "name": "Thunderbolt Strike",
-          "description": "At 6th level, when you deal lightning damage to a Large or smaller creature, you can also push it up to 3m away from you."
+          "description": "At 6th level, when you deal lightning damage to a Large or smaller creature, you can also push it up to 2m away from you."
         },
         {
           "level": 14,
@@ -715,7 +715,7 @@
         {
           "level": 2,
           "name": "Fast Travel",
-          "description": "Your movement speed increases by 3m. Additionally once per day you can use your action to increase the movement speed of any friendly creature within 9m of you by 3m for 1 hour."
+          "description": "Your movement speed increases by 2m. Additionally once per day you can use your action to increase the movement speed of any friendly creature within 6m of you by 2m for 1 hour."
         },
         {
           "level": 6,
@@ -725,7 +725,7 @@
         {
           "level": 10,
           "name": "Dimensional Pocket",
-          "description": "You can access a dimensional pocket where you can store your acquisitions and wealth. It takes a 1 minute ritual to access the dimensional pocket, after which you can add or remove any non-living object that you can hold in your hands and which is smaller than 3m in all dimensions. No other creature can access your pocket plane, however, if you die all of it's contents appear near your corpse."
+          "description": "You can access a dimensional pocket where you can store your acquisitions and wealth. It takes a 1 minute ritual to access the dimensional pocket, after which you can add or remove any non-living object that you can hold in your hands and which is smaller than 2m in all dimensions. No other creature can access your pocket plane, however, if you die all of it's contents appear near your corpse."
         },
         {
           "level": 14,
@@ -765,7 +765,7 @@
         {
           "level": 6,
           "name": "Channel Divinity: Invoke Duplicity",
-          "description": "You can use your Channel Divinity to create an illusory duplicate of yourself.\n\nAs a bonus action, you can expend one use of your Channel Divinity to teleport up to 30 feet to an unoccupied space you can see, and you create a perfect visual illusion of yourself in the space you left. The illusion lasts for 1 minute, but it ends early if you have the Incapacitated condition, dismiss it as a bonus action, or use this feature again. While the illusion persists you gain the following benefits:\n* You can cast spells as though you were in the illusion's space, but you must use your own senses.\n* When the illusion is within 1m of a creature within your reach, you have advantage on attack rolls against that creature, given how distracting the illusion is to the target.\n* As a Bonus Action, you can move the illusion up to 9m to an unoccupied space you can see that is within 36m of yourself, and you can then teleport, swapping places with the illusion."
+          "description": "You can use your Channel Divinity to create an illusory duplicate of yourself.\n\nAs a bonus action, you can expend one use of your Channel Divinity to teleport up to 30 feet to an unoccupied space you can see, and you create a perfect visual illusion of yourself in the space you left. The illusion lasts for 1 minute, but it ends early if you have the Incapacitated condition, dismiss it as a bonus action, or use this feature again. While the illusion persists you gain the following benefits:\n* You can cast spells as though you were in the illusion's space, but you must use your own senses.\n* When the illusion is within 1m of a creature within your reach, you have advantage on attack rolls against that creature, given how distracting the illusion is to the target.\n* As a Bonus Action, you can move the illusion up to 6m to an unoccupied space you can see that is within 36m of yourself, and you can then teleport, swapping places with the illusion."
         },
         {
           "level": 10,
@@ -775,7 +775,7 @@
         {
           "level": 14,
           "name": "Improved Duplicity",
-          "description": "You can create up to four duplicates of yourself, instead of one, when you use Invoke Duplicity. As a bonus action on your turn, you can move any number of them up to 9m, to a maximum range of 36m, and switch places with any one of them."
+          "description": "You can create up to four duplicates of yourself, instead of one, when you use Invoke Duplicity. As a bonus action on your turn, you can move any number of them up to 6m, to a maximum range of 36m, and switch places with any one of them."
         }
       ]
     },
@@ -807,7 +807,7 @@
         {
           "level": 2,
           "name": "Eyes of Night",
-          "description": "You can see through the deepest gloom. You have darkvision out to a range of 90m. In that radius, you can see in dim light as if it were bright light and in darkness as if it were dim light.\n\nAs an action you can magically share the darkvision of this feature with willing creatures you can see within 3m of you, up to a number of creatures equal to your Wisdom modifier (minimum of one creature). The shared darkvision lasts for 1 hour. Once you share it, you can't do so again until you finish a long rest, unless you expend a spell slot of any level to share it again."
+          "description": "You can see through the deepest gloom. You have darkvision out to a range of 90m. In that radius, you can see in dim light as if it were bright light and in darkness as if it were dim light.\n\nAs an action you can magically share the darkvision of this feature with willing creatures you can see within 2m of you, up to a number of creatures equal to your Wisdom modifier (minimum of one creature). The shared darkvision lasts for 1 hour. Once you share it, you can't do so again until you finish a long rest, unless you expend a spell slot of any level to share it again."
         },
         {
           "level": 2,
@@ -817,7 +817,7 @@
         {
           "level": 6,
           "name": "Channel Divinity: Twilight Sanctuary",
-          "description": "You can use your Channel Divinity to refresh your allies with soothing twilight.\n\nAs an action, you present your holy symbol, and a sphere of twilight emanates from you. The sphere is centered on you, has a 9m radius, and is filled with dim light. The sphere moves with you, and it lasts for 1 minute or until you are incapacitated or die. Whenever a creature (including you) ends its turn in the sphere, you can grant that creature one of these benefits:\n\n* You grant it temporary hit points equal to 1d6 plus your cleric level.\n* You end on effect on it causing it to be charmed or frightened."
+          "description": "You can use your Channel Divinity to refresh your allies with soothing twilight.\n\nAs an action, you present your holy symbol, and a sphere of twilight emanates from you. The sphere is centered on you, has a 6m radius, and is filled with dim light. The sphere moves with you, and it lasts for 1 minute or until you are incapacitated or die. Whenever a creature (including you) ends its turn in the sphere, you can grant that creature one of these benefits:\n\n* You grant it temporary hit points equal to 1d6 plus your cleric level.\n* You end on effect on it causing it to be charmed or frightened."
         },
         {
           "level": 10,
@@ -855,7 +855,7 @@
         {
           "level": 10,
           "name": "Channel Divinity: War God's Blessing",
-          "description": "When a creature within 9m of you makes an attack roll, you can use your reaction to grant that creature a +10 bonus to the roll, using your Channel Divinity. You make this choice after you see the roll, but before the DM says whether the attack hits or misses."
+          "description": "When a creature within 6m of you makes an attack roll, you can use your reaction to grant that creature a +10 bonus to the roll, using your Channel Divinity. You make this choice after you see the roll, but before the DM says whether the attack hits or misses."
         },
         {
           "level": 14,

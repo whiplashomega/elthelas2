@@ -10,7 +10,7 @@ tags: [druid, level6, conjuration]
 
 **Casting Time**: 1 action
 
-**Range**: 3m
+**Range**: 2m
 
 **Components**: V, S
 

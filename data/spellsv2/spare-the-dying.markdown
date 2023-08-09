@@ -22,4 +22,4 @@ tags: [cleric, artificer, cantrip, necromancy]
 
 **Damage**: []
 
-You touch a living creature that has 0 hit points. The creature becomes stable. This spell has no effect on undead or constructs.
+You touch a living creature that has the dying condition. The creature immediately loses the dying condition and instead gains the unconscious condition until they regain any amount of hit points. This spell has no effect on undead or constructs.

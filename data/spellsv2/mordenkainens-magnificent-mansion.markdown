@@ -10,7 +10,7 @@ tags:   [bard, wizard, level7, conjuration]
 
 **Casting Time**: 1 minute
 
-**Range**: 90m
+**Range**: 60m
 
 **Components**: V, S, M (a miniature portal carved from ivory, a small piece of polished marble, and a tiny silver spoon, each item worth at least 5 gp)
 
@@ -26,4 +26,4 @@ You conjure an extradimensional dwelling in range that lasts for the duration. Y
 
 Beyond the portal is a magnificent foyer with numerous chambers beyond. The atmosphere is clean, fresh, and warm.
 
-You can create any floor plan you like, but the space can't exceed 50 cubes, each cube being 3m on each side. The place is furnished and decorated as you choose. It contains sufficient food to server a nine-course banquet for up to 100 people. A staff of 100 near-transparent servants attends all who enter. You decide the visual appearance of these servants and their attire. They are completely obedient to your orders. Each servant can perform any task a normal human servant could perform, but they can't attack or take any action that would directly harm another creature. Thus the servants can fetch things, clean, mend, fold clothes, light fires, serve food, pour wine, and so on. The servants can go anywhere in the mansion but can't leave it. Furnishings and other objects created by this spell dissipate into smoke if removed from the mansion. When the spell ends, any creatures inside the extradimensional space are expelled into the open spaces nearest to the entrance.
+You can create any floor plan you like, but the space can't exceed 50 cubes, each cube being 2m on each side. The place is furnished and decorated as you choose. It contains sufficient food to server a nine-course banquet for up to 100 people. A staff of 100 near-transparent servants attends all who enter. You decide the visual appearance of these servants and their attire. They are completely obedient to your orders. Each servant can perform any task a normal human servant could perform, but they can't attack or take any action that would directly harm another creature. Thus the servants can fetch things, clean, mend, fold clothes, light fires, serve food, pour wine, and so on. The servants can go anywhere in the mansion but can't leave it. Furnishings and other objects created by this spell dissipate into smoke if removed from the mansion. When the spell ends, any creatures inside the extradimensional space are expelled into the open spaces nearest to the entrance.

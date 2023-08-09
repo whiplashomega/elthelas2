@@ -10,7 +10,7 @@ tags: [druid, ranger, level5, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 36m
+**Range**: 34m
 
 **Components**: V, S
 
@@ -23,11 +23,11 @@ tags: [druid, ranger, level5, evocation]
 **Damage**: [ { "dice": "4d6", "label": "slashing from trees", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" },{ "dice": "3d8", "label": "bludgeoning from rocks", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
 You call out to the spirits of nature to rouse them against your enemies. Choose a point you can see within range. The spirits cause. trees, rocks, and grasses
-in a 18m cube centered on that point to become animated until the spell ends.
+in a 12m cube centered on that point to become animated until the spell ends.
 
 **Grasses and Undergrowth.** Any area of ground in the cube that is covered by grass or undergrowth is difficult terrain for your enemies.
 
-**Trees.** At the start of each of your turns, each of your enemies within 3m of any tree in the cube must succeed on a Dexterity saving throw or take 4d6 slashing
+**Trees.** At the start of each of your turns, each of your enemies within 2m of any tree in the cube must succeed on a Dexterity saving throw or take 4d6 slashing
 damage from whipping branches.
 
 **Roots and Vines.** At the end of each of your turns, one creature of your choice that is on the ground in the cube must succeed on a Strength saving throw or become

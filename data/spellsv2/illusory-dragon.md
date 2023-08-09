@@ -10,7 +10,7 @@ tags: [wizard, level8, illusion]
 
 **Casting Time**: 1 action
 
-**Range**: 36m
+**Range**: 34m
 
 **Components**: S
 
@@ -28,7 +28,7 @@ lasts for the spell's duration and occupies its space, as if it were a creature.
 When the illusion appears, any of your enemies that can see it must succeed on a Wisdom saving throw or become frightened of it for 1 minute. If a frightened
 creature ends its turn in a location where it doesn’t have line of sight to the illusion, it can repeat the saving throw, ending the effect on itself on a success.
 
-As a bonus action on your turn, you can move the illusion up to 18m. At any point during its movement, you can cause it to exhale a blast of energy in a
+As a bonus action on your turn, you can move the illusion up to 12m. At any point during its movement, you can cause it to exhale a blast of energy in a
 18m cone originating from its space. When you create the dragon, choose a damage type: acid, cold, fire, lightning, necrotic, or poison. Each creature in
 the cone must make an Intelligence saving throw, taking 7d6 damage of the chosen damage type on a failed save, or half as much damage on a successful one.
 

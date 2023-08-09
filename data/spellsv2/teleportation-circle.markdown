@@ -10,7 +10,7 @@ tags: [arcanetrickster, eldritchknight, bard, sorcerer, warlock, wizard, level5,
 
 **Casting Time**: 1 minute
 
-**Range**: 3m
+**Range**: 2m
 
 **Components**: V, M (rare chalks and inks infused with precious gems with 50 gp, which the spell consumes)
 
@@ -22,7 +22,7 @@ tags: [arcanetrickster, eldritchknight, bard, sorcerer, warlock, wizard, level5,
 
 **Damage**: []
 
-As you cast the spell, you draw a 3m-diameter circle on the ground inscribed with sigils that link your location to a permanent teleportation circle of your choice, whose sigil sequence you know and that is on the same plane of existence as you. A shimmering portal opens within the circle you drew and remains open until the end of your next turn. Any creature that enters the portal instantly appears within 1m of the destination circle or in the nearest unoccupied space if that space is occupied.
+As you cast the spell, you draw a 2m-diameter circle on the ground inscribed with sigils that link your location to a permanent teleportation circle of your choice, whose sigil sequence you know and that is on the same plane of existence as you. A shimmering portal opens within the circle you drew and remains open until the end of your next turn. Any creature that enters the portal instantly appears within 1m of the destination circle or in the nearest unoccupied space if that space is occupied.
 
 Many major temples, guilds, and other important places have permanent teleportation circles inscribed somewhere within their confines. Each such circle includes a unique sigil sequence—-a string of magical runes arranged in a particular pattern. You can learn sigil sequences during your adventures. You can commit a new sigil sequence to memory after studying it for 1 minute.
 

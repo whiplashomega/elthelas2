@@ -10,7 +10,7 @@ tags: [arcanetrickster, druid, ranger, sorcerer, wizard, eldritchknight, artific
 
 **Casting Time**: 1 action
 
-**Range**: 9m
+**Range**: 6m
 
 **Components**: V, S, M (a short reed or piece of straw)
 

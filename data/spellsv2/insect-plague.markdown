@@ -10,7 +10,7 @@ tags: [cleric, druid, sorcerer, level5, conjuration]
 
 **Casting Time**: 1 action
 
-**Range**: 90m
+**Range**: 60m
 
 **Components**: V, S, M (a few grains of sugar, some kernels of grain, and a smear of fat)
 
@@ -22,7 +22,7 @@ tags: [cleric, druid, sorcerer, level5, conjuration]
 
 **Damage**: [ { "dice": "4d10", "label": "piercing", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
-Swarming, biting locusts fill a 6m-radius sphere centered on a point you choose within range, The sphere spreads around corners. The sphere remains for the duration, and its area is lightly obscured. The sphere's area is difficult terrain.
+Swarming, biting locusts fill a 4m-radius sphere centered on a point you choose within range, The sphere spreads around corners. The sphere remains for the duration, and its area is lightly obscured. The sphere's area is difficult terrain.
 
 When the area appears, each creature in it must make a Constitution saving throw. A creature takes 5d10 piercing damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw when it enters the spell's area for the first time on a turn or ends its turn there.
 

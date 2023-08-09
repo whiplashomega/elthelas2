@@ -215,12 +215,12 @@
         {
           "level": 2,
           "name": "Fey Presence",
-          "description": "Your patron bestows upon you the ability to project the beguiling and fearsome presence of the fey. As an action, you can cause each creature in a 3m cube originating from you to make a Wisdom saving throw against your warlock spell save DC. The creatures that fail their saving throws are all charmed or frightened by you (your choice) until the end of your next turn. \n\nOnce you use this feature, you can’t use it again until you finish a short or long rest."
+          "description": "Your patron bestows upon you the ability to project the beguiling and fearsome presence of the fey. As an action, you can cause each creature in a 2m cube originating from you to make a Wisdom saving throw against your warlock spell save DC. The creatures that fail their saving throws are all charmed or frightened by you (your choice) until the end of your next turn. \n\nOnce you use this feature, you can’t use it again until you finish a short or long rest."
         },
         {
           "level": 6,
           "name": "Misty Escape",
-          "description": "Starting at 6th level, you can vanish in a puff of mist in response to harm. When you take damage, you can use your reaction to turn invisible and teleport up to 18m to an unoccupied space you can see. You remain invisible until the start of your next turn or until you attack or cast a spell.\n\nOnce you use this feature, you can't use it again until you finish a short or long rest."
+          "description": "Starting at 6th level, you can vanish in a puff of mist in response to harm. When you take damage, you can use your reaction to turn invisible and teleport up to 12m to an unoccupied space you can see. You remain invisible until the start of your next turn or until you attack or cast a spell.\n\nOnce you use this feature, you can't use it again until you finish a short or long rest."
         },
         {
           "level": 10,
@@ -230,7 +230,7 @@
         {
           "level": 14,
           "name": "Dark Delirium",
-          "description": "Starting at 14th level, you can plunge a creature into an illusory realm. As an action, choose a creature that you can see within 18m of you. It must make a Wisdom saving throw against your warlock spell save DC. On a failed save, it is charmed or frightened by you (your choice) for 1 minute or until your concentration is broken (as if you are concentrating on a spell). This effect ends early if the creature takes any damage.\n\nUntil this illusion ends, the creature thinks it is lost in a misty realm, the appearance of which you choose. The creature can see and hear only itself, you, and the illusion.\n\nYou must finish a short or long rest before you can use this feature again."
+          "description": "Starting at 14th level, you can plunge a creature into an illusory realm. As an action, choose a creature that you can see within 12m of you. It must make a Wisdom saving throw against your warlock spell save DC. On a failed save, it is charmed or frightened by you (your choice) for 1 minute or until your concentration is broken (as if you are concentrating on a spell). This effect ends early if the creature takes any damage.\n\nUntil this illusion ends, the creature thinks it is lost in a misty realm, the appearance of which you choose. The creature can see and hear only itself, you, and the illusion.\n\nYou must finish a short or long rest before you can use this feature again."
         }
       ]
     },
@@ -302,7 +302,7 @@
         {
           "level": 2,
           "name": "Awakened Mind",
-          "description": "Your alien knowledge gives you the ability to touch the minds of other creatures. You can communicate telepathically with any creature you can see within 9m of you. You don’t need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language."
+          "description": "Your alien knowledge gives you the ability to touch the minds of other creatures. You can communicate telepathically with any creature you can see within 6m of you. You don’t need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language."
         },
         {
           "level": 6,
@@ -354,7 +354,7 @@
         {
           "level": 6,
           "name": "Defy Death",
-          "description": "Starting at 6th level, you can give yourself vitality when you cheat death or when you help someone else cheat it. You can regain hit points equal to ld8 +your Constitu-tion modifier (minimum of 1 hit point) when you succeed on a death saving throw or when you stabilize a creature with spare the dying.\n\nOnce you use this feature, you can't use it again until you finish a long rest. "
+          "description": "Starting at 6th level, you can give yourself vitality when you cheat death or when you help someone else cheat it. You can regain hit points equal to ld8 + your Constitution modifier (minimum of 1 hit point) when you succeed on a death saving throw or when you stabilize a creature with spare the dying.\n\nOnce you use this feature, you can't use it again until you finish a long rest. "
         },
         {
           "level": 10,
@@ -401,7 +401,7 @@
         {
           "level": 2,
           "name": "Healing Light",
-          "description": "At 3rd level, you gain the ability to channel celestial energy to heal wounds. You have a pool of d6s that you spend to fuel this healing. The number of dice in the pool equals 1 + your warlock level.\n\nAs a bonus action, you can heal one creature you can see within 18m of you, spending dice from the pool. The maximum number of dice you can spend at once equals your Charisma modifier (minimum of one die).\n\nRoll the dice you spend, add them together, and restore a number of hit points equal to the total.\n\nYour pool regains all expended dice when you finish a long rest."
+          "description": "At 3rd level, you gain the ability to channel celestial energy to heal wounds. You have a pool of d6s that you spend to fuel this healing. The number of dice in the pool equals 1 + your warlock level.\n\nAs a bonus action, you can heal one creature you can see within 12m of you, spending dice from the pool. The maximum number of dice you can spend at once equals your Charisma modifier (minimum of one die).\n\nRoll the dice you spend, add them together, and restore a number of hit points equal to the total.\n\nYour pool regains all expended dice when you finish a long rest."
         },
         {
           "level": 6,
@@ -416,7 +416,7 @@
         {
           "level": 14,
           "name": "Searing Vengeance",
-          "description": "Starting at 14th level, the radiant energy you channel allows you to resist death. When you have to make a death saving throw at the start of your turn, you can instead spring back to your feet with a burst of radiant energy. You regain hit points equal to half your hit point maximum, and then you stand up if you so choose. Each creature of your choice that is within 9m of you takes radiant damage equal to 2d8 + your Charisma modifier, and it is blinded until the end of the current turn.\n\nOnce you use this feature, you can’t use it again until you finish a long rest."
+          "description": "Starting at 14th level, the radiant energy you channel allows you to resist death. When you would make a death saving throw at the start of your turn, you can instead spring back to your feet with a burst of radiant energy. You regain hit points equal to half your hit point maximum, and then you stand up if you so choose. Each creature of your choice that is within 6m of you takes radiant damage equal to 2d8 + your Charisma modifier, and it is blinded until the end of the current turn.\n\nOnce you use this feature, you can’t use it again until you finish a long rest."
         }
       ]
     },
@@ -448,7 +448,7 @@
         {
           "level": 2,
           "name": "Hexblade's Curse",
-          "description": "Starting at 2nd level, you gain the ability to place a baleful curse on someone. As a bonus action, choose one creature you can see within 9m of you. The target is cursed for 1 minute. The curse ends early if the target dies, you die, or you are incapacitated. Until the curse ends, you gain the following benefits:\n\n* You gain a bonus to damage rolls against the cursed target. The bonus equals your proficiency bonus.\n* Any attack roll you make against the cursed target is a critical hit on a roll of 19 or 20 on the d20.\n* If the cursed target dies, you regain hit points equal to your warlock level + your Charisma modifier (minimum of 1 hit point).\n\nYou can use this feature twice, after which you can't use this feature again until you finish a short or long rest. However, only one creature can be affected by your curse at a time."
+          "description": "Starting at 2nd level, you gain the ability to place a baleful curse on someone. As a bonus action, choose one creature you can see within 6m of you. The target is cursed for 1 minute. The curse ends early if the target dies, you die, or you are incapacitated. Until the curse ends, you gain the following benefits:\n\n* You gain a bonus to damage rolls against the cursed target. The bonus equals your proficiency bonus.\n* Any attack roll you make against the cursed target is a critical hit on a roll of 19 or 20 on the d20.\n* If the cursed target dies, you regain hit points equal to your warlock level + your Charisma modifier (minimum of 1 hit point).\n\nYou can use this feature twice, after which you can't use this feature again until you finish a short or long rest. However, only one creature can be affected by your curse at a time."
         },
         {
           "level": 2,
@@ -468,7 +468,7 @@
         {
           "level": 14,
           "name": "Master of Hexes",
-          "description": "Starting at 14th level, you can spread your Hexblade’s Curse from a slain creature to another creature. When the creature cursed by your Hexblade’s Curse dies, you can apply the curse to a different creature you can see within 9m of you, provided you aren’t incapacitated. When you apply the curse in this way, you don’t regain hit points from the death of the previously cursed creature."
+          "description": "Starting at 14th level, you can spread your Hexblade’s Curse from a slain creature to another creature. When the creature cursed by your Hexblade’s Curse dies, you can apply the curse to a different creature you can see within 6m of you, provided you aren’t incapacitated. When you apply the curse in this way, you don’t regain hit points from the death of the previously cursed creature."
         }
       ]
     },
@@ -507,12 +507,12 @@
         {
           "level": 2,
           "name": "Tentacle of the Deeps",
-          "description": "You can magically summon a spectral tentacle that strikes at your foes. As a bonus action, you create a 3m-long tentacle at a point you can see within 18m of you. The tentacle lasts for 1 minute or until you use this feature to create another tentacle.\n\nWhen you create the tentacle, you can make a melee spell attack against one creature within 3m of it. On a hit, the target takes 1d8 cold damage, and its speed is reduced by 3m until the start of your next turn. When you reach 10th level in this class, the damage increases to 2d8. As a bonus action on your turn, you can move the tentacle up to 9m and repeat the attack.\n\nYou can summon the tentacle a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+          "description": "You can magically summon a spectral tentacle that strikes at your foes. As a bonus action, you create a 2m-long tentacle at a point you can see within 12m of you. The tentacle lasts for 1 minute or until you use this feature to create another tentacle.\n\nWhen you create the tentacle, you can make a melee spell attack against one creature within 2m of it. On a hit, the target takes 1d8 cold damage, and its speed is reduced by 2m until the start of your next turn. When you reach 10th level in this class, the damage increases to 2d8. As a bonus action on your turn, you can move the tentacle up to 6m and repeat the attack.\n\nYou can summon the tentacle a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
         },
         {
           "level": 2,
           "name": "Gift of the Sea",
-          "description": "You gain a swimming speed of 12m, and you can breathe underwater."
+          "description": "You gain a swimming speed of 8m, and you can breathe underwater."
         },
         {
           "level": 6,
@@ -522,7 +522,7 @@
         {
           "level": 6,
           "name": "Guardian Coil",
-          "description": "Your Tentacle of the Deeps can defend you and others, interposing itself between them and harm. When you or a creature you can see takes damage while within 3m of the tentacle, you can use your reaction to choose one of those creatures and reduce the damage to that creature by 1d8. When you reach 10th level in this class, the damage reduced by the tentacle increases to 2d8."
+          "description": "Your Tentacle of the Deeps can defend you and others, interposing itself between them and harm. When you or a creature you can see takes damage while within 2m of the tentacle, you can use your reaction to choose one of those creatures and reduce the damage to that creature by 1d8. When you reach 10th level in this class, the damage reduced by the tentacle increases to 2d8."
         },
         {
           "level": 10,
@@ -532,7 +532,7 @@
         {
           "level": 14,
           "name": "Fathomless Plunge",
-          "description": "You can magically open temporary conduits to watery destinations. As an action, you can teleport yourself and up to five other willing creatures that you can see within 9m of you. Amid a whirl of tentacles, you all vanish and then reappear up to 1 mile away in a body of water you've seen (pond size or larger) or within 9m of it, each of you appearing in an unoccupied space within 9m of the others.\n\nOnce you use this feature, you can't use it again until you finish a short or long rest."
+          "description": "You can magically open temporary conduits to watery destinations. As an action, you can teleport yourself and up to five other willing creatures that you can see within 6m of you. Amid a whirl of tentacles, you all vanish and then reappear up to 1 mile away in a body of water you've seen (pond size or larger) or within 6m of it, each of you appearing in an unoccupied space within 6m of the others.\n\nOnce you use this feature, you can't use it again until you finish a short or long rest."
         }
       ]
     },
@@ -564,17 +564,17 @@
         {
           "level": 2,
           "name": "Genie's Vessel",
-          "description": "Your patron gifts you a magical vessel that grants you a measure of the genie's power. The vessel is a Tiny object, and you can use it as a spellcasting focus for your warlock spells. You decide what the object is, or you can determine what it is randomly by rolling on the Genie's Vessel table.\n\nWhile  you are touching the vessel, you can use it in the following ways:\n\n**Bottled Respite.** As an action, you can magically vanish and enter your vessel, which remains in the space you left. The interior of the vessel is an extradimensional space in the shape of a 6m radius cylinder, 3m high, and resembles your vessel. The interior is appointed with cushions and low tables and is a comfortable temperature. While inside, you can hear the area around your vessel as if you were in its space. You can remain inside the vessel up to a number of hours equal to twice your proficiency bonus. You exit the vessel early if you use a bonus action to leave, if you die, or if the vessel is destroyed. When you exit the vessel, you appear in the unoccupied space closest to it. Any objects left in the vessel remain there until carried out, and if the vessel is destroyed, every object stored there harmlessly appears in an unoccupied space closest to the vessel's former space. Once you enter the vessel, you can't enter again until you finish a long rest.\n\n**Genie's Wrath.** Once during each of your turns when you hit with an attack roll, you can deal extra damage to the target equal to your proficiency bonus. The type of this damage is determined by your patron: bludgeoning (dao), thunder (djinni), fire (efreeti), or cold (marid).\n\nThe vessel's AC equals your spell save DC. Its hit points equal your warlock level plus your proficiency bonus, and it is immune to poison and psychic damage.\n\nIf the vessel is destroyed or you lose it, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and the previous vessel is destroyed if it still exists. The vessel vanishes in a flare of elemental power when you die."
+          "description": "Your patron gifts you a magical vessel that grants you a measure of the genie's power. The vessel is a Tiny object, and you can use it as a spellcasting focus for your warlock spells. You decide what the object is, or you can determine what it is randomly by rolling on the Genie's Vessel table.\n\nWhile  you are touching the vessel, you can use it in the following ways:\n\n**Bottled Respite.** As an action, you can magically vanish and enter your vessel, which remains in the space you left. The interior of the vessel is an extradimensional space in the shape of a 4m radius cylinder, 2m high, and resembles your vessel. The interior is appointed with cushions and low tables and is a comfortable temperature. While inside, you can hear the area around your vessel as if you were in its space. You can remain inside the vessel up to a number of hours equal to twice your proficiency bonus. You exit the vessel early if you use a bonus action to leave, if you die, or if the vessel is destroyed. When you exit the vessel, you appear in the unoccupied space closest to it. Any objects left in the vessel remain there until carried out, and if the vessel is destroyed, every object stored there harmlessly appears in an unoccupied space closest to the vessel's former space. Once you enter the vessel, you can't enter again until you finish a long rest.\n\n**Genie's Wrath.** Once during each of your turns when you hit with an attack roll, you can deal extra damage to the target equal to your proficiency bonus. The type of this damage is determined by your patron: bludgeoning (dao), thunder (djinni), fire (efreeti), or cold (marid).\n\nThe vessel's AC equals your spell save DC. Its hit points equal your warlock level plus your proficiency bonus, and it is immune to poison and psychic damage.\n\nIf the vessel is destroyed or you lose it, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and the previous vessel is destroyed if it still exists. The vessel vanishes in a flare of elemental power when you die."
         },
         {
           "level": 6,
           "name": "Elemental Gift",
-          "description": "You begin to take on characteristics of your patron's kind. You now have resistance to a damage type determined by your patron's kind: bludgeoning (dao), thunder (djinni), fire (efreeti), or cold (marid).\n\nIn addition, as a bonus action, you can give yourself a flying speed of 9m that lasts for 10 minutes, during which you can hover. You can use this bonus action a number of times equl to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+          "description": "You begin to take on characteristics of your patron's kind. You now have resistance to a damage type determined by your patron's kind: bludgeoning (dao), thunder (djinni), fire (efreeti), or cold (marid).\n\nIn addition, as a bonus action, you can give yourself a flying speed of 6m that lasts for 10 minutes, during which you can hover. You can use this bonus action a number of times equl to your proficiency bonus, and you regain all expended uses when you finish a long rest."
         },
         {
           "level": 10,
           "name": "Sanctuary Vessel",
-          "description": "When you enter your Genie's Vessel via the Bottled Respite feature, you can now choose up to five willing creatures that you can see within 9m of you, and the chosen creatures are drawn in to the vessel with you.\n\nAs a bonus action, you can eject any number of creatures from the vessel, and everyone is ejected if you leave or die or if the vessel is destroyed.\n\nIn addition, anyone (including you) who remains within the vessel for at least 10 minutes gains the benefit of finishing a short rest, and anyone can add your proficiency bonus to the number of hit points they regain if they spend any Hit Dice as part of a short rest there."
+          "description": "When you enter your Genie's Vessel via the Bottled Respite feature, you can now choose up to five willing creatures that you can see within 6m of you, and the chosen creatures are drawn in to the vessel with you.\n\nAs a bonus action, you can eject any number of creatures from the vessel, and everyone is ejected if you leave or die or if the vessel is destroyed.\n\nIn addition, anyone (including you) who remains within the vessel for at least 10 minutes gains the benefit of finishing a short rest, and anyone can add your proficiency bonus to the number of hit points they regain if they spend any Hit Dice as part of a short rest there."
         },
         {
           "level": 14,

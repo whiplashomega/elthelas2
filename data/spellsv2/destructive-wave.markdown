@@ -10,7 +10,7 @@ tags: [eldritchknight, paladin, level5, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: Self (9m radius)
+**Range**: Self (6m radius)
 
 **Components**: V
 
@@ -22,4 +22,4 @@ tags: [eldritchknight, paladin, level5, evocation]
 
 **Damage**: [ { "dice": "5d6", label: "thunder", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" }, { "dice": "5d6", label: "radiant or necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" }  ]
 
-You strike the ground, creating a burst of divine energy that ripples outward from you. Each creature you choose within 9m of you must succeed on a Constitution saving throw or take 5d6 thunder damage, as well as 5d6 radiant or necrotic damage (your choice), and be knocked prone. A creature that succeeds on its saving throw takes half as much damage and isn't knocked prone.
+You strike the ground, creating a burst of divine energy that ripples outward from you. Each creature you choose within 6m of you must succeed on a Constitution saving throw or take 5d6 thunder damage, as well as 5d6 radiant or necrotic damage (your choice), and be knocked prone. A creature that succeeds on its saving throw takes half as much damage and isn't knocked prone.

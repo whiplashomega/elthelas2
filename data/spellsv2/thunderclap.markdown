@@ -22,6 +22,6 @@ tags: [bard, druid, sorcerer, warlock, wizard, eldritchknight, artificer, cantri
 
 **Damage**: [ { "dice": "1d6", "label": "thunder", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
-You create a burst of thunderous sound, which can be heard 30m away. Each creature other than you within 2m of you must make a Constitution saving throw. On a failed save, the creature takes 1d6 thunder damage.
+You create a burst of thunderous sound, which can be heard 20m away. Each creature other than you within 2m of you must make a Constitution saving throw. On a failed save, the creature takes 1d6 thunder damage.
 
 The spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).

@@ -10,7 +10,7 @@ tags: [bard, sorcerer, wizard, level9, transmutation]
 
 **Casting Time**: 1 action
 
-**Range**: 36m
+**Range**: 34m
 
 **Components**: V, S, M (a caterpillar cocoon)
 

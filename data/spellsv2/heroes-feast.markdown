@@ -10,7 +10,7 @@ tags: [bard, cleric, druid, level6, conjuration]
 
 **Casting Time**: 10 minutes
 
-**Range**: 9m
+**Range**: 6m
 
 **Components**: V, S, M (a gem-encrusted bowl worth at least 1,000 gp, which the spell consumes)
 

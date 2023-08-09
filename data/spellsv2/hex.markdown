@@ -10,7 +10,7 @@ tags: [warlock, level1, enchantment]
 
 **Casting Time**: 1 bonus action
 
-**Range**: 27m
+**Range**: 18m
 
 **Components**: V, S, M (the petrified eye of a newt)
 

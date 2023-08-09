@@ -10,7 +10,7 @@ tags: [bard, cleric, druid, warlock, wizard, level5, abjuration]
 
 **Casting Time**: 1 hour
 
-**Range**: 18m
+**Range**: 12m
 
 **Components**: V, S, M (a jewel worth at least 1,000 gp, which the spell consumes)
 

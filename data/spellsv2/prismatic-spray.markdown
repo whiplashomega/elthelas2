@@ -22,7 +22,7 @@ tags:   [bard, sorcerer, wizard, level7, evocation]
 
 **Damage**: [ { "dice": "10d6", label: "fire, acid, lightning, poison, or cold", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
-Eight multicolored rays of light flash from your hand. Each ray is a different color and has a different power and purpose. Each creature in a 18m cone must make a Dexterity saving throw. For each target, roll a d8 to determine which color ray affects it.
+Eight multicolored rays of light flash from your hand. Each ray is a different color and has a different power and purpose. Each creature in a 12m cone must make a Dexterity saving throw. For each target, roll a d8 to determine which color ray affects it.
 
 1. **Red.** The target takes 10d6 fire damage on a failed save, or half as much damage on a successful one.
 2. **Orange.** The target takes 10d6 acid damage on a failed save, or half as much damage on a successful one.

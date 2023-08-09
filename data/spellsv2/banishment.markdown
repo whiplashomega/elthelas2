@@ -10,7 +10,7 @@ tags: [cleric, paladin, sorcerer, warlock, wizard, eldritchknight, level4, abjur
 
 **Casting Time**: 1 action
 
-**Range**: 18m
+**Range**: 12m
 
 **Components**: V, S, M (an item distasteful to the target)
 

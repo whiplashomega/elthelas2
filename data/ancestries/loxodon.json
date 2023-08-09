@@ -8,7 +8,7 @@
       "name": "Size", "description": "Loxodons stand between 7 and 8 feet tall. Their massive bodies weigh between 300 and 400 pounds. Your size is Medium."
     },
     {
-      "name": "Speed", "description": "Your walking speed is 9m"
+      "name": "Speed", "description": "Your walking speed is 6m"
     },
     {
       "name": "Powerful Build", "description": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift"
@@ -50,7 +50,7 @@
       "averageweight": 350,
       "baseweight": 295,
       "weightroll": "2d4",
-      "speed": [9, 0, 0, 0, 0]
+      "speed": [6, 0, 0, 0, 0]
     }
   ]
 }

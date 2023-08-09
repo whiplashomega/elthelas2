@@ -22,7 +22,7 @@ tags: [paladin, cleric, level1, abjuration, ritual]
 
 **Damage**: [ ]
 
-You perform a special religious ceremony that is infused with magic. When you cast the spell, choose one of the following rites, the target of which must be within 3m of you throughout the casting.
+You perform a special religious ceremony that is infused with magic. When you cast the spell, choose one of the following rites, the target of which must be within 2m of you throughout the casting.
 
 **Atonement.** You touch one willing creature whose alignment has changed, and you make a DC 20 Wisdom (Insight) check. On a successful check, you restore the target to its original alignment.
 
@@ -34,4 +34,4 @@ You perform a special religious ceremony that is infused with magic. When you ca
 
 **Funeral Rite.** You touch one corpse, and for the next 7 days, the target can’t become undead by any means short of a wish spell.
 
-**Wedding.** You touch adult humanoids willing to be bonded together in marriage. For the next 7 days, each target gains a +2 bonus to AC while they are within 9m of each other. A creature can benefit from this rite again only if widowed.
+**Wedding.** You touch adult humanoids willing to be bonded together in marriage. For the next 7 days, each target gains a +2 bonus to AC while they are within 6m of each other. A creature can benefit from this rite again only if widowed.

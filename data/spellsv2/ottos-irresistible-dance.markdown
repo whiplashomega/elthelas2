@@ -10,7 +10,7 @@ tags: [bard, wizard, level6, enchantment]
 
 **Casting Time**: 1 action
 
-**Range**: 9m
+**Range**: 6m
 
 **Components**: V
 

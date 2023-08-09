@@ -10,7 +10,7 @@ tags: [arcanetrickster, cleric, wizard, paladin, druid, bard, level5, enchantmen
 
 **Casting Time**: 1 minute
 
-**Range**: 18m
+**Range**: 12m
 
 **Components**: V
 

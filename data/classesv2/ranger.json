@@ -34,7 +34,7 @@
     {
       "level": 1,
       "name": "Fighting Style",
-      "description": "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.\n\n#### Archery\n\nYou gain a +2 bonus to attack rolls you make with ranged weapons.\n\n#### Defense\n\nWhile you are wearing armor, you gain a +1 bonus to AC\n\n#### Dueling\n\nWhen you are weilding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.\n\n#### Two-Weapon Fighting\n\nWhen you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.\n\n#### Blind Fighting\n\nYou have blindsight with a range of 3m. Within that range you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.\n\n#### Druidic Warrior\n\nYou learn two cantrips of your choice from the druid spell list. They count as ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the druid spell list.\n\n#### Thrown Weapon Fighting\n\nYou can draw a weapon that has the thrown property as part of the attack you make with the weapon.\n\nIn addition, when you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll."
+      "description": "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.\n\n#### Archery\n\nYou gain a +2 bonus to attack rolls you make with ranged weapons.\n\n#### Defense\n\nWhile you are wearing armor, you gain a +1 bonus to AC\n\n#### Dueling\n\nWhen you are weilding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.\n\n#### Two-Weapon Fighting\n\nWhen you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.\n\n#### Blind Fighting\n\nYou have blindsight with a range of 2m. Within that range you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.\n\n#### Druidic Warrior\n\nYou learn two cantrips of your choice from the druid spell list. They count as ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the druid spell list.\n\n#### Thrown Weapon Fighting\n\nYou can draw a weapon that has the thrown property as part of the attack you make with the weapon.\n\nIn addition, when you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll."
     },
     {
       "level": 2,
@@ -99,7 +99,7 @@
     {
       "level": 7,
       "name": "Roving",
-      "description": "Your speed increases by 3m so long as you aren't wearing heavy armor. You also have a climb speed and a swim speed equal to your speed."
+      "description": "Your speed increases by 2m so long as you aren't wearing heavy armor. You also have a climb speed and a swim speed equal to your speed."
     },
     {
       "level": 8,
@@ -124,7 +124,7 @@
     {
       "level": 15,
       "name": "Feral Senses",
-      "description": "Your connection to the forces of nature grants you blindsight with a range of 9m."
+      "description": "Your connection to the forces of nature grants you blindsight with a range of 6m."
     },
     {
       "level": 18,
@@ -193,7 +193,7 @@
         {
           "level": 10,
           "name": "Multiattack",
-          "description": "You gain one of the following features of your choice.\n\n**Volley.** You can use your action to make a ranged attack against any number of creatures within 3m of a point you can see within your weapons range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target.\n\n**Whirlwind Attack.** You can use your action to make melee attacks against any number of creatures within your reach, with a separate attack roll for each target."
+          "description": "You gain one of the following features of your choice.\n\n**Volley.** You can use your action to make a ranged attack against any number of creatures within 2m of a point you can see within your weapons range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target.\n\n**Whirlwind Attack.** You can use your action to make melee attacks against any number of creatures within your reach, with a separate attack roll for each target."
         },
         {
           "level": 14,
@@ -215,12 +215,12 @@
         {
           "level": 2,
           "name": "Dread Ambusher",
-          "description": "You master the art of the ambush. You can give yourself a bonus to your initiative rolls equal to your Wisdom modifier.\n\nAt the start of your first turn of each combat, your walking speed increases by 3m, which lasts until the end of that turn. If you take the Attack action on that turn, you can make one additional weapon attack as part of that action. If that attack hits, the target takes an extra 1d8 damage of the weapons damage type."
+          "description": "You master the art of the ambush. You can give yourself a bonus to your initiative rolls equal to your Wisdom modifier.\n\nAt the start of your first turn of each combat, your walking speed increases by 2m, which lasts until the end of that turn. If you take the Attack action on that turn, you can make one additional weapon attack as part of that action. If that attack hits, the target takes an extra 1d8 damage of the weapons damage type."
         },
         {
           "level": 2,
           "name": "Umbral Sight",
-          "description": "You gain darkvision out to a range of 18m. If you already have darkvision from your race, its range increases by 9m.\n\nYou are also adept at evading creatures that rely on darkvision. While in darkness, you are invisible to any creature that relies on darkvision to see you in that darkness."
+          "description": "You gain darkvision out to a range of 12m. If you already have darkvision from your race, its range increases by 6m.\n\nYou are also adept at evading creatures that rely on darkvision. While in darkness, you are invisible to any creature that relies on darkvision to see you in that darkness."
         },
         {
           "level": 4,
@@ -270,7 +270,7 @@
         {
           "level": 2,
           "name": "Planar Warrior",
-          "description": "You learn to draw on the energy of the multiverse to augment your attacks.\n\nAs a bonus action, choose one creature you can see within 9m of you. The next time you hit that creature on this turn with a weapon attack, all damage dealt by the attack becomes force damage, and the creature takes an extra 1d8 force damage from the attack. When you reach 11th level in this class, the extra damage increases to 2d8."
+          "description": "You learn to draw on the energy of the multiverse to augment your attacks.\n\nAs a bonus action, choose one creature you can see within 6m of you. The next time you hit that creature on this turn with a weapon attack, all damage dealt by the attack becomes force damage, and the creature takes an extra 1d8 force damage from the attack. When you reach 11th level in this class, the extra damage increases to 2d8."
         },
         {
           "level": 6,
@@ -280,7 +280,7 @@
         {
           "level": 10,
           "name": "Distant Strike",
-          "description": "You gain the ability to pass between the planes in the blink of an eye. When you take the Attack action, you can teleport up to 3m before each attack to an unoccupied space you can see.\n\nIf you attack at least two different creatures with the action, you can make one additional attack with it against a third creature."
+          "description": "You gain the ability to pass between the planes in the blink of an eye. When you take the Attack action, you can teleport up to 2m before each attack to an unoccupied space you can see.\n\nIf you attack at least two different creatures with the action, you can make one additional attack with it against a third creature."
         },
         {
           "level": 14,
@@ -310,12 +310,12 @@
         {
           "level": 2,
           "name": "Hunter's Sense",
-          "description": "You gain the ability to peer at a creature and magically discern how best to hurt it. As an action, choose one creature you can see within 18m of you. You immediately learn whether the creature has any damage immunities, resistances, or vulnerabilities and what they are. If the creature is hidden from divination magic, you sense that it has no damage immunities, resistances, or vulnerabilities.\n\nYou can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses of it when you finish a long rest."
+          "description": "You gain the ability to peer at a creature and magically discern how best to hurt it. As an action, choose one creature you can see within 12m of you. You immediately learn whether the creature has any damage immunities, resistances, or vulnerabilities and what they are. If the creature is hidden from divination magic, you sense that it has no damage immunities, resistances, or vulnerabilities.\n\nYou can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses of it when you finish a long rest."
         },
         {
           "level": 2,
           "name": "Slayer's Prey",
-          "description": "You can focus your ire on one foe, increasing the harm you inflict on it. As a bonus action, you designate one creature you can see within 18m of you as the target of this feature. The first time each turn that you hit that target with a weapon attack, it takes an extra 1d6 damage from the weapon.\n\nThis benefit lasts until you finish a short or long rest. It ends early if you designate a different creature."
+          "description": "You can focus your ire on one foe, increasing the harm you inflict on it. As a bonus action, you designate one creature you can see within 12m of you as the target of this feature. The first time each turn that you hit that target with a weapon attack, it takes an extra 1d6 damage from the weapon.\n\nThis benefit lasts until you finish a short or long rest. It ends early if you designate a different creature."
         },
         {
           "level": 6,
@@ -325,7 +325,7 @@
         {
           "level": 10,
           "name": "Magic-User's Nemesis",
-          "description": "You gain the ability to thwart someone else’s magic. When you see a creature casting a spell or teleporting within 18m of you, you can use your reaction to try to magically foil it. The creature must succeed on a Wisdom saving throw against your spell save DC, or its spell or teleport fails and is wasted.\n\nOnce you use this feature, you can’t use it again until you finish a short or long rest."
+          "description": "You gain the ability to thwart someone else’s magic. When you see a creature casting a spell or teleporting within 12m of you, you can use your reaction to try to magically foil it. The creature must succeed on a Wisdom saving throw against your spell save DC, or its spell or teleport fails and is wasted.\n\nOnce you use this feature, you can’t use it again until you finish a short or long rest."
         },
         {
           "level": 14,
@@ -402,7 +402,7 @@
         {
           "level": 2,
           "name": "Gathered Swarm",
-          "description": "A swarm of intangible nature spirits has bonded itself to you and can assist you in battle. Until you die, the swarm remains in your space, crawling on you or flying and skittering around you within your space. You determine its appearance, or you generate its appearance by rolling on the Swarm Appearance table.\n\nOnce on each of your turns, you can cause the swarm to assist you in one of the following ways, immediately after you hit a creature with an attack:\n\n* The attack's target takes 1d6 piercing damage from the swarm.\n* The attack's target must succeed on a Strength saving throw against your spell save DC or be moved by the swarm up to 4m horizontally in a direction of your choice.\n* You are moved by the swarm 2m horizontally in a direction of your choice."
+          "description": "A swarm of intangible nature spirits has bonded itself to you and can assist you in battle. Until you die, the swarm remains in your space, crawling on you or flying and skittering around you within your space. You determine its appearance, or you generate its appearance by rolling on the Swarm Appearance table.\n\nOnce on each of your turns, you can cause the swarm to assist you in one of the following ways, immediately after you hit a creature with an attack:\n\n* The attack's target takes 1d6 piercing damage from the swarm.\n* The attack's target must succeed on a Strength saving throw against your spell save DC or be moved by the swarm up to 3m horizontally in a direction of your choice.\n* You are moved by the swarm 2m horizontally in a direction of your choice."
         },
         {
           "level": 2,
@@ -412,7 +412,7 @@
         {
           "level": 6,
           "name": "Writhing Tide",
-          "description": "You can condense part of your swarm into a focused mass that lifts you up. As a bonus action, you gain a flying speed of 3m and can hover. This effect lasts for 1 minute or until you are incapacitated.\n\nYou can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+          "description": "You can condense part of your swarm into a focused mass that lifts you up. As a bonus action, you gain a flying speed of 2m and can hover. This effect lasts for 1 minute or until you are incapacitated.\n\nYou can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
         },
         {
           "level": 10,
@@ -422,7 +422,7 @@
         {
           "level": 14,
           "name": "Swarming Dispersal",
-          "description": "You can discorporate into your swarm, avoiding danger. When you take damage, you can use your reaction to give yourself resistance to that damage. You vanish into your swarm and then teleport to an unoccupied space that you can see within 9m of you, where you reappear with the swarm.\n\nYou can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+          "description": "You can discorporate into your swarm, avoiding danger. When you take damage, you can use your reaction to give yourself resistance to that damage. You vanish into your swarm and then teleport to an unoccupied space that you can see within 6m of you, where you reappear with the swarm.\n\nYou can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
         }
       ]
     }

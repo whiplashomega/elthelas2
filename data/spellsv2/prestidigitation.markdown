@@ -10,7 +10,7 @@ tags: [arcanetrickster, bard, sorcerer, warlock, wizard, archivist, artificer, c
 
 **Casting Time**: 1 action
 
-**Range**: 3m
+**Range**: 2m
 
 **Components**: V, S
 

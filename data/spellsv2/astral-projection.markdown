@@ -10,7 +10,7 @@ tags:   [cleric, warlock, wizard, level9, necromancy]
 
 **Casting Time**: 1 hour
 
-**Range**: 3m
+**Range**: 2m
 
 **Components**: V, S, M (for each creature you affect with this spell you must provide one jacinth worth at least 1,000 gp and one ornately carved bar of silver worth at least 100gp, all of which the spell consumes)
 

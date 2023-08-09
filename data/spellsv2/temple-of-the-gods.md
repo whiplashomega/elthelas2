@@ -10,7 +10,7 @@ tags: [cleric, level7, conjuration]
 
 **Casting Time**: 1 hour
 
-**Range**: 36m
+**Range**: 34m
 
 **Components**: V, S, M (a holy symbol worth at least 5 gp)
 
@@ -22,7 +22,7 @@ tags: [cleric, level7, conjuration]
 
 **Damage**: []
 
-You cause a temple to shimmer into existence on ground you can see within range. The temple must fit within an unoccupied cube of space, up to 36m on each side.
+You cause a temple to shimmer into existence on ground you can see within range. The temple must fit within an unoccupied cube of space, up to 34m on each side.
 The temple remains until the spell ends. It is dedicated to whatever god, pantheon, or philosophy is represented by the holy symbol used in the casting.
 
 You make all decisions about the temples appearance. The interior is enclosed by a floor, walls, and a roof, with one door granting access to the interior and

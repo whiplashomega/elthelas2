@@ -10,7 +10,7 @@ tags: [paladin, level5, abjuration]
 
 **Casting Time**: 1 action
 
-**Range**: Self (9m radius)
+**Range**: Self (6m radius)
 
 **Components**: V
 

@@ -10,7 +10,7 @@ tags: [arcanetrickster, bard, druid, sorcerer, wizard, level4, enchantment]
 
 **Casting Time**: 1 action
 
-**Range**: 27m
+**Range**: 18m
 
 **Components**: V, S, M (three nut shells)
 

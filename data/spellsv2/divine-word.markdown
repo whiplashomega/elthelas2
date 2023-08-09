@@ -10,7 +10,7 @@ tags:   [cleric, level7, evocation]
 
 **Casting Time**: 1 bonus action
 
-**Range**: 9m
+**Range**: 6m
 
 **Components**: V
 

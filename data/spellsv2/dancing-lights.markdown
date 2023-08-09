@@ -10,7 +10,7 @@ tags: [arcanetrickster, bard, sorcerer, wizard, artificer, cantrip, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 36m
+**Range**: 34m
 
 **Components**: V, S, M (a bit of phosphorus or wychwood, or a glowworm)
 
@@ -22,4 +22,4 @@ tags: [arcanetrickster, bard, sorcerer, wizard, artificer, cantrip, evocation]
 
 **Damage**: [ ]
 
-You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 3m radius. As a bonus action on your turn, you can move the lights up to 18m to a new spot within range. A light must be within 6m of another light created by this spell, and a light winks out if it exceeds the spell’s range.
+You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 2m radius. As a bonus action on your turn, you can move the lights up to 12m to a new spot within range. A light must be within 4m of another light created by this spell, and a light winks out if it exceeds the spell’s range.
