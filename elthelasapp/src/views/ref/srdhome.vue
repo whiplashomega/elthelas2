@@ -82,7 +82,7 @@
         <li>Group Ability Checks</li>
         <li>Factions</li>
         <li>Metric Conversion and Space Rules -> 1 meter squares</li>
-        <li>Flanking -> Bonus damage.</li>
+        <li>Flanking -> 1d6 Bonus damage.</li>
       </ul>
       <h3>Summary of Class Changes</h3>
       <h4>Every Class.</h4>
@@ -106,6 +106,7 @@
         <li>Beast barbarian damage increased</li>
         <li>Beast barbarian +1 bonus instead of 'count as magic'</li>
         <li>Unarmored Defense gives PP/Lvl</li>
+        <li>Path of the Zealot reworked</li>
       </ul>
       <h4>Bard</h4>
       <ul>
@@ -147,6 +148,7 @@
         <li>Eldritch Knight Combat caster feature</li>
         <li>Eldritch Knight war magic allows them to replace one weapon attack with a cantrip</li>
         <li>Arcane Archer gets additional uses/options to put them in line with Battle Masters</li>
+        <li>Samurai level 14 feature reworked to handle new Dying condition</li>
       </ul>
       <h4>Monk</h4>
       <ul>
