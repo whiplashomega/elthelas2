@@ -10,7 +10,7 @@ tags: [arcanetrickster, cleric, druid, paladin, artificer, level1, transmutation
 
 **Casting Time**: 1 action
 
-**Range**: 3m
+**Range**: 2m
 
 **Components**: V, S
 

@@ -10,7 +10,7 @@ tags: [sorcerer, wizard, eldritchknight, level1, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: Self (4m cone)
+**Range**: Self (3m cone)
 
 **Components**: V, S
 
@@ -22,7 +22,7 @@ tags: [sorcerer, wizard, eldritchknight, level1, evocation]
 
 **Damage**: [ { "dice": "3d6", label: "fire", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d6" } ]
 
-As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 4m cone must make a Dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one.
+As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 3m cone must make a Dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one.
 
 The fire ignites any flammable objects in the area that aren’t being worn or carried.
 

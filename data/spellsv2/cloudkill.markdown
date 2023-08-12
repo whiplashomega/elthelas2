@@ -10,7 +10,7 @@ tags: [sorcerer, wizard, level5, conjuration]
 
 **Casting Time**: 1 action
 
-**Range**: 36m
+**Range**: 34m
 
 **Components**: V, S
 

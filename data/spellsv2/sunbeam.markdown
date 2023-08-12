@@ -22,8 +22,8 @@ tags: [cleric, druid, sorcerer, wizard, level6, evocation]
 
 **Damage**: [ { "dice": "6d8", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
-A beam of brilliant light flashes out from your hand in a 1m-wide, 18m-long line. Each creature in the line must make a Constitution saving throw. On a failed save, a creature takes 6d8 radiant damage and is blinded until your next turn. On a successful save, it takes half as much damage and isn't blinded by this spell. Undead and oozes have disadvantage on this saving throw.
+A beam of brilliant light flashes out from your hand in a 1m-wide, 12m-long line. Each creature in the line must make a Constitution saving throw. On a failed save, a creature takes 6d8 radiant damage and is blinded until your next turn. On a successful save, it takes half as much damage and isn't blinded by this spell. Undead and oozes have disadvantage on this saving throw.
 
 You can create a new line of radiance as your action on any turn until the spell ends.
 
-For the duration, a mote of brilliant radiance shines in your hand. It sheds bright light in a 9m radius and dim light for an additional 9m. This light is sunlight.
+For the duration, a mote of brilliant radiance shines in your hand. It sheds bright light in a 6m radius and dim light for an additional 6m. This light is sunlight.

@@ -10,7 +10,7 @@ tags: [bard, cleric, druid, level1, evocation]
 
 **Casting Time**: 1 bonus action
 
-**Range**: 18m
+**Range**: 12m
 
 **Components**: V
 

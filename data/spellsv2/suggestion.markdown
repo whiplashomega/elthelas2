@@ -10,7 +10,7 @@ tags: [arcanetrickster, bard, sorcerer, warlock, wizard, level2, enchantment]
 
 **Casting Time**: 1 action
 
-**Range**: 9m
+**Range**: 6m
 
 **Components**: V, M (a snake's tongue and either a bit of honeycomb or a drop of sweet oil)
 

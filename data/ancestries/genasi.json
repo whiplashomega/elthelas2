@@ -8,7 +8,7 @@
     {
       "name": "Darkvision", "description": "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
     },
-    { "name": "Speed", "description": "Your base walking speed is 9m." }
+    { "name": "Speed", "description": "Your base walking speed is 6m." }
   ],
   "agepoints": {
     "puberty": 14,
@@ -39,7 +39,7 @@
       "averageweight": 140,
       "baseweight": 100,
       "weightroll": "1d6",
-      "speed": [9, 0, 0, 0, 0]
+      "speed": [6, 0, 0, 0, 0]
     },
     {
       "id": "earthgenasi",
@@ -57,7 +57,7 @@
       "averageweight": 195,
       "baseweight": 120,
       "weightroll": "2d6",
-      "speed": [9, 0, 0, 0, 0]
+      "speed": [6, 0, 0, 0, 0]
     },
     {
       "id": "firegenasi",
@@ -75,7 +75,7 @@
       "averageweight": 165,
       "baseweight": 120,
       "weightroll": "2d4",
-      "speed": [9, 0, 0, 0, 0]
+      "speed": [6, 0, 0, 0, 0]
     },
     {
       "id": "watergenasi",
@@ -86,7 +86,7 @@
       "traits": [
         { "name": "Acid Resistance", "description": "You have resistance to acid damage." },
         { "name": "Amphibious", "description": "You can breathe air and water." },
-        { "name": "Swim", "description": "You have a swimming speed of 9m" },
+        { "name": "Swim", "description": "You have a swimming speed of 6m" },
         { "name": "Call to the Wave", "description": "You know the acid splash cantrip. Starting at 3rd level, you can cast the create or destroy water spell with this trait. Starting at 5th level, you can also cast the water walk spell with this trait, without requiring a material component. Once you cast create or destroy water or water walk with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.\n\nIntelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this ancestry)." }
       ],
       "averageheight": 67,
@@ -95,7 +95,7 @@
       "averageweight": 165,
       "baseweight": 110,
       "weightroll": "2d4",
-      "speed": [9, 0, 0, 9, 0]
+      "speed": [6, 0, 0, 6, 0]
     }
   ]
 }

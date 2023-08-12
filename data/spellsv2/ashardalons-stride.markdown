@@ -22,7 +22,7 @@ tags:   [arcanetrickster, artificer, eldritchknight, sorcerer, warlock, wizard, 
 
 **Damage**: [ { "dice": "1d6", label: "fire", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
-The billowing flames of a dragon blast from your feet, granting you explosive speed. For the duration, your speed increases by 6m and moving doesn’t provoke opportunity attacks.
+The billowing flames of a dragon blast from your feet, granting you explosive speed. For the duration, your speed increases by 4m and moving doesn’t provoke opportunity attacks.
 
 When you move within 1m of a creature or an object that isn’t being worn or carried, it takes 1d6 fire damage from your trail of heat. A creature or object can take this damage only once during a turn.
 

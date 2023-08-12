@@ -39,7 +39,7 @@
     {
       "level": 1,
       "name": "Rage",
-      "description": "In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action.\n\nWhile raging, you gain the following benefits if you aren’t w earing heavy armor:\n\n* You have advantage on Strength checks and Strength saving throws.\n* When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.\n* You have resistance to bludgeoning, piercing, and slashing damage.\n\nIf you are able to cast spells, you can’t cast them or concentrate while raging. Your rage lasts for 1 minute. It ends early if you are knocked unconscious or if you choose to end it. You can also end your rage on your turn as a bonus action. Once you have raged the number of times shown for your barbarian level in the Rages column of the Barbarian table, you must finish a long rest before you can rage again."
+      "description": "In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action.\n\nWhile raging, you gain the following benefits if you aren’t w earing heavy armor:\n\n* You have advantage on Strength checks and Strength saving throws.\n* When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.\n* You have resistance to bludgeoning, piercing, and slashing damage.\n\nIf you are able to cast spells, you can’t cast them or concentrate while raging. Your rage lasts for 1 minute. It ends early if you are incapacitated or if you choose to end it. You can also end your rage on your turn as a bonus action. Once you have raged the number of times shown for your barbarian level in the Rages column of the Barbarian table, you must finish a long rest before you can rage again."
     },
     {
       "level": 1,
@@ -104,7 +104,7 @@
     {
       "level": 5,
       "name": "Fast Movement",
-      "description": "Starting at 5th level, your speed increases by 3m while you aren’t wearing heavy armor."
+      "description": "Starting at 5th level, your speed increases by 2m while you aren’t wearing heavy armor."
     },
     {
       "level": 6,
@@ -181,7 +181,7 @@
         {
           "level": 10,
           "name": "Intimidating Presence",
-          "description": "Beginning at 10th level, you can use a bonus action to frighten someone with your menacing presence. When you do so, choose one creature that you can see within 9m of you. If the creature can see or hear you, it must succeed on a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Strength modifier) or be frightened of you until the end of your next turn. On subsequent turns, you can use your bonus action to extend the duration of this effect on the frightened creature until the end of your next turn. This effect ends if the creature ends its turn out of line of sight or more than 18m away from you.\n\nIf the creature succeeds on its saving throw, you can't use this feature on that creature again for 24 hours."
+          "description": "Beginning at 10th level, you can use a bonus action to frighten someone with your menacing presence. When you do so, choose one creature that you can see within 6m of you. If the creature can see or hear you, it must succeed on a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Strength modifier) or be frightened of you until the end of your next turn. On subsequent turns, you can use your bonus action to extend the duration of this effect on the frightened creature until the end of your next turn. This effect ends if the creature ends its turn out of line of sight or more than 12m away from you.\n\nIf the creature succeeds on its saving throw, you can't use this feature on that creature again for 24 hours."
         },
         {
           "level": 14,
@@ -203,7 +203,7 @@
         {
           "level": 2,
           "name": "Totem Spirit",
-          "description": "When you adopt this path, you choose a totem spirit and gain its feature. You must make or acquire a physical totem object- an amulet or similar adornment—that incorporates fur or feathers, claws, teeth, or bones o f the totem animal. At your option, you also gain minor physical attributes that are reminiscent of your totem spirit. For example, if you have a bear totem spirit, you might be unusually hairy and thickskinned, or if your totem is the eagle, your eyes turn bright yellow.\n\nYour totem animal might be an animal related to those listed here but more appropriate to your homeland. For example, you could choose a hawk or vulture in place of an eagle.\n\n**Bear.** While raging, you have resistance to all damage except psychic damage. The spirit of the bear makes you tough enough to stand up to any punishment.\n\n**Eagle.** While you're raging and aren’t wearing heavy armor, other creatures have disadvantage on opportunity attack rolls against you, and you can use the Dash action as a bonus action on your turn. The spirit of the eagle makes you into a predator who can weave through the fray with ease.\n\n**Wolf.** While you're raging, your friends have advantage on melee attack rolls against any creature within your reach that is hostile to you. The spirit of the wolf makes you a leader of hunters.\n\n**Elk.** While you're raging and aren't wearing heavy armor, your walking speed increases by 4m. The spirit of the elk makes you extraordinarily swift.\n\n**Tiger.** While raging, you can add 3m to your long jump distance and 1m to your high jump distance. The spirit of the tiger empowers your leaps.",
+          "description": "When you adopt this path, you choose a totem spirit and gain its feature. You must make or acquire a physical totem object- an amulet or similar adornment—that incorporates fur or feathers, claws, teeth, or bones o f the totem animal. At your option, you also gain minor physical attributes that are reminiscent of your totem spirit. For example, if you have a bear totem spirit, you might be unusually hairy and thickskinned, or if your totem is the eagle, your eyes turn bright yellow.\n\nYour totem animal might be an animal related to those listed here but more appropriate to your homeland. For example, you could choose a hawk or vulture in place of an eagle.\n\n**Bear.** While raging, you have resistance to all damage except psychic damage. The spirit of the bear makes you tough enough to stand up to any punishment.\n\n**Eagle.** While you're raging and aren’t wearing heavy armor, other creatures have disadvantage on opportunity attack rolls against you, and you can use the Dash action as a bonus action on your turn. The spirit of the eagle makes you into a predator who can weave through the fray with ease.\n\n**Wolf.** While you're raging, your friends have advantage on melee attack rolls against any creature within your reach that is hostile to you. The spirit of the wolf makes you a leader of hunters.\n\n**Elk.** While you're raging and aren't wearing heavy armor, your walking speed increases by 3m. The spirit of the elk makes you extraordinarily swift.\n\n**Tiger.** While raging, you can add 2m to your long jump distance and 1m to your high jump distance. The spirit of the tiger empowers your leaps.",
           "choice": [
             {
               "name": "Bear",
@@ -219,18 +219,18 @@
             },
             {
               "name": "Elk",
-              "description": "While you're raging and aren't wearing heavy armor, your walking speed increases by 4m. The spirit of the elk makes you extraordinarily swift."
+              "description": "While you're raging and aren't wearing heavy armor, your walking speed increases by 3m. The spirit of the elk makes you extraordinarily swift."
             },
             {
               "name": "Tiger",
-              "description": "While raging, you can add 3m to your long jump distance and 1m to your high jump distance. The spirit of the tiger empowers your leaps."
+              "description": "While raging, you can add 2m to your long jump distance and 1m to your high jump distance. The spirit of the tiger empowers your leaps."
             }
           ]
         },
         {
           "level": 6,
           "name": "Aspect of the Beast",
-          "description": "At 6th level, you gain a magical benefit based on the totem animal of your choice. You can choose the same animal you selected at 3rd level or a different one.\n\n**Bear.** You gain the might of a bear. Your carrying capacity (including maximum load and maximum lift) is doubled, and you have advantage on Strength checks made to push, pull, lift, or break objects.\n\n**Eagle.** You gain the eyesight of an eagle. You can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more than 30m away from you. Additionally, dim light doesn't impose disadvantage on your Wisdom (Perception) checks.\n\n**Wolf.** You gain the hunting sensibilities of a wolf. You can track other creatures while traveling at a fast pace, and you can move stealthily while traveling at a normal pace (see chapter 8 for rules on travel pace).\n\n**Elk.** Whether mounted or on foot, your travel pace is doubled, as is the travel pace of up to ten companions while they're within 18m of you and you're not incapacitated (see chapter 8 in the Player's Handbook for more information about travel pace). The elk spirit helps you roam far and fast.\n\n**Tiger.** You gain proficiency in two skills from the following list: Athletics, Acrobatics, Stealth, and Survival. The cat spirit hones your survival instincts.",
+          "description": "At 6th level, you gain a magical benefit based on the totem animal of your choice. You can choose the same animal you selected at 3rd level or a different one.\n\n**Bear.** You gain the might of a bear. Your carrying capacity (including maximum load and maximum lift) is doubled, and you have advantage on Strength checks made to push, pull, lift, or break objects.\n\n**Eagle.** You gain the eyesight of an eagle. You can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more than 20m away from you. Additionally, dim light doesn't impose disadvantage on your Wisdom (Perception) checks.\n\n**Wolf.** You gain the hunting sensibilities of a wolf. You can track other creatures while traveling at a fast pace, and you can move stealthily while traveling at a normal pace (see chapter 8 for rules on travel pace).\n\n**Elk.** Whether mounted or on foot, your travel pace is doubled, as is the travel pace of up to ten companions while they're within 12m of you and you're not incapacitated (see chapter 8 in the Player's Handbook for more information about travel pace). The elk spirit helps you roam far and fast.\n\n**Tiger.** You gain proficiency in two skills from the following list: Athletics, Acrobatics, Stealth, and Survival. The cat spirit hones your survival instincts.",
           "choice": [
             {
               "name": "Bear",
@@ -238,7 +238,7 @@
             },
             {
               "name": "Eagle",
-              "description": "You gain the eyesight of an eagle. You can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more than 30m away from you. Additionally, dim light doesn't impose disadvantage on your Wisdom (Perception) checks."
+              "description": "You gain the eyesight of an eagle. You can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more than 20m away from you. Additionally, dim light doesn't impose disadvantage on your Wisdom (Perception) checks."
             },
             {
               "name": "Wolf",
@@ -246,7 +246,7 @@
             },
             {
               "name": "Elk",
-              "description": "Whether mounted or on foot, your travel pace is doubled, as is the travel pace of up to ten companions while they're within 18m of you and you're not incapacitated (see chapter 8 in the Player's Handbook for more information about travel pace). The elk spirit helps you roam far and fast."
+              "description": "Whether mounted or on foot, your travel pace is doubled, as is the travel pace of up to ten companions while they're within 12m of you and you're not incapacitated (see chapter 8 in the Player's Handbook for more information about travel pace). The elk spirit helps you roam far and fast."
             },
             {
               "name": "Tiger",
@@ -262,7 +262,7 @@
         {
           "level": 14,
           "name": "Totemic Attunement",
-          "description": "At 14th level, you gain a magical benefit based on a totem animal of your choice. You can choose the same animal you selected previously or a different one.\n\n**Bear.** While you’re raging, any creature within your reach that’s hostile to you has disadvantage on attack rolls against targets other than you or another character with this feature. An enemy is immune to this effect if it can’t see or hear you or if it can’t be frightened.\n\n**Eagle.** While raging, you have a flying speed equal to your current walking speed. This benefit works only in short bursts; you fall if you end your turn in the air and nothing else is holding you aloft.\n\n**Wolf.** While you’re raging, you can use a bonus action on your turn to knock a Large or smaller creature prone when you hit it with melee weapon attack.\n\n**Elk.** While raging, you can use a bonus action during your move to pass through the space of a Large or smaller creature. That creature must succeed on a Strength saving throw (DC 8 + your Strength bonus + your proficiency bonus) or be knocked prone and take bludgeoning damage equal to ld12 +your Strength modifier.\n\n**Tiger.** While you're raging, if you move at least 6m in a straight line toward a Large or smaller target right before making a melee weapon attack against it, you can use a bonus action to make an additional melee weapon attack against it.",
+          "description": "At 14th level, you gain a magical benefit based on a totem animal of your choice. You can choose the same animal you selected previously or a different one.\n\n**Bear.** While you’re raging, any creature within your reach that’s hostile to you has disadvantage on attack rolls against targets other than you or another character with this feature. An enemy is immune to this effect if it can’t see or hear you or if it can’t be frightened.\n\n**Eagle.** While raging, you have a flying speed equal to your current walking speed. This benefit works only in short bursts; you fall if you end your turn in the air and nothing else is holding you aloft.\n\n**Wolf.** While you’re raging, you can use a bonus action on your turn to knock a Large or smaller creature prone when you hit it with melee weapon attack.\n\n**Elk.** While raging, you can use a bonus action during your move to pass through the space of a Large or smaller creature. That creature must succeed on a Strength saving throw (DC 8 + your Strength bonus + your proficiency bonus) or be knocked prone and take bludgeoning damage equal to ld12 +your Strength modifier.\n\n**Tiger.** While you're raging, if you move at least 4m in a straight line toward a Large or smaller target right before making a melee weapon attack against it, you can use a bonus action to make an additional melee weapon attack against it.",
           "choice": [
             {
               "name": "Bear",
@@ -282,7 +282,7 @@
             },
             {
               "name": "Tiger",
-              "description": "While you're raging, if you move at least 6m in a straight line toward a Large or smaller target right before making a melee weapon attack against it, you can use a bonus action to make an additional melee weapon attack against it."
+              "description": "While you're raging, if you move at least 4m in a straight line toward a Large or smaller target right before making a melee weapon attack against it, you can use a bonus action to make an additional melee weapon attack against it."
             }
           ]
         }
@@ -309,7 +309,7 @@
         {
           "level": 6,
           "name": "Spirit Shield",
-          "description": "Beginning at 6th level, the guardian spirits that aid you can provide supernatural protection to those you defend. If you are raging and another creature you can see within 9m of you takes damage, you can use your reaction to reduce that damage by 2d6. When you reach certain levels in this class. you can reduce the damage by more: by 3d6 at 10th level and by 4d6 at 14th level."
+          "description": "Beginning at 6th level, the guardian spirits that aid you can provide supernatural protection to those you defend. If you are raging and another creature you can see within 6m of you takes damage, you can use your reaction to reduce that damage by 2d6. When you reach certain levels in this class. you can reduce the damage by more: by 3d6 at 10th level and by 4d6 at 14th level."
         },
         {
           "level": 10,
@@ -331,7 +331,7 @@
         {
           "level": 2,
           "name": "Storm Aura",
-          "description": "You emanate a stormy, magical aura while you rage. The aura extends 3m from you in every direction, but not through total cover.\n\nYour aura has an effect that activates when you enter your rage, and you can activate the effect again on each of your turns as a bonus action. Choose desert, sea, or tundra. Your aura’s effect depends on that chosen environment, as detailed below. You can change your environment choice whenever you gain a level in this class.\n\nIf your aura's effects require a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.\n\n**Desert.** When this effect is activated, all other creatures in your aura take 2 fire damage each. The damage increases when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level.\n\n**Sea.** When this effect is activated, you can choose one other creature you can see in your aura. The target must make a Dexterity saving throw. The target takes 1d6 lightning damage on a failed save, or half as much damage on a successful one. The damage increases when you reach certain levels in this class, increasing to 2d6 at 10th level, 3d6 at 15th level, and 4d6 at 20th level.\n\n**Tundra.** When this effect is activated, each creature of your choice in your aura gains 2 temporary hit points, as icy spirits inure it to suffering. The temporary hit points increase when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level.",
+          "description": "You emanate a stormy, magical aura while you rage. The aura extends 2m from you in every direction, but not through total cover.\n\nYour aura has an effect that activates when you enter your rage, and you can activate the effect again on each of your turns as a bonus action. Choose desert, sea, or tundra. Your aura’s effect depends on that chosen environment, as detailed below. You can change your environment choice whenever you gain a level in this class.\n\nIf your aura's effects require a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.\n\n**Desert.** When this effect is activated, all other creatures in your aura take 2 fire damage each. The damage increases when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level.\n\n**Sea.** When this effect is activated, you can choose one other creature you can see in your aura. The target must make a Dexterity saving throw. The target takes 1d6 lightning damage on a failed save, or half as much damage on a successful one. The damage increases when you reach certain levels in this class, increasing to 2d6 at 10th level, 3d6 at 15th level, and 4d6 at 20th level.\n\n**Tundra.** When this effect is activated, each creature of your choice in your aura gains 2 temporary hit points, as icy spirits inure it to suffering. The temporary hit points increase when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level.",
           "choice": [
             {
               "name": "Desert",
@@ -350,7 +350,7 @@
         {
           "level": 6,
           "name": "Storm Soul",
-          "description": "At 6th level, the storm grants you benefits even when your aura isn’t active. The benefits are based on the environment you chose for your Storm Aura.\n\n**Desert.** You gain resistance to fire damage, and you don’t suffer the effects of extreme heat, as described in the Dungeon Master’s Guide. Moreover, as an action, you can touch a flammable object that isn’t being worn or carried by anyone else and set it on fire.\n\n**Sea. You gain resistance to lightning damage, and you can breathe underwater. You also gain a swimming speed of 9m.\n\n**Tundra.** You gain resistance to cold damage, and you don’t suffer the effects of extreme cold, as described in the Dungeon Master’s Guide. Moreover, as an action, you can touch water and turn a 1m cube of it into ice, which melts after 1 minute. This action fails if a creature is in the cube."
+          "description": "At 6th level, the storm grants you benefits even when your aura isn’t active. The benefits are based on the environment you chose for your Storm Aura.\n\n**Desert.** You gain resistance to fire damage, and you don’t suffer the effects of extreme heat, as described in the Dungeon Master’s Guide. Moreover, as an action, you can touch a flammable object that isn’t being worn or carried by anyone else and set it on fire.\n\n**Sea. You gain resistance to lightning damage, and you can breathe underwater. You also gain a swimming speed of 6m.\n\n**Tundra.** You gain resistance to cold damage, and you don’t suffer the effects of extreme cold, as described in the Dungeon Master’s Guide. Moreover, as an action, you can touch water and turn a 1m cube of it into ice, which melts after 1 minute. This action fails if a creature is in the cube."
         },
         {
           "level": 10,
@@ -374,6 +374,13 @@
           "count": 1,
           "minlevel": 10,
           "recovery": "longrest"
+        },
+        {
+          "name": "Warrior of the Gods",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 2,
+          "recovery": "longrest"
         }
       ],
       "features": [
@@ -385,7 +392,7 @@
         {
           "level": 2,
           "name": "Warrior of the Gods",
-          "description": "Your soul is marked for endless battle. If a spell, such as raise dead, has the sole effect of restoring you to life (but not undeath), the caster doesn’t need material components to cast the spell on you."
+          "description": "Your soul is marked for endless battle. When you are reduced to 0 hit points by damage you can immediately regain a number of hit points equal to twice your barbarian level, no action required by you. Once you use this feature you can't use it again until you finish a long rest."
         },
         {
           "level": 6,
@@ -395,12 +402,12 @@
         {
           "level": 10,
           "name": "Zealous Presence",
-          "description": "At 10th level, you learn to channel divine power to inspire zealotry in others. As a bonus action, you unleash a battle cry infused with divine energy. Up to ten other creatures of your choice within 18m of you that can hear you gain advantage on attack rolls and saving throws until the start of your next turn.\n\nOnce you use this feature, you can’t use it again until you finish a long rest."
+          "description": "At 10th level, you learn to channel divine power to inspire zealotry in others. As a bonus action, you unleash a battle cry infused with divine energy. Up to ten other creatures of your choice within 12m of you that can hear you gain advantage on attack rolls and saving throws until the start of your next turn.\n\nOnce you use this feature, you can’t use it again until you finish a long rest."
         },
         {
           "level": 14,
           "name": "Rage Beyond Death",
-          "description": "Beginning at 14th level, the divine power that fuels your rage allows you to shrug off fatal blows. While you’re raging, having 0 hit points doesn’t knock you unconscious. You still must make death saving throws, and you suffer the normal effects of taking damage while at 0 hit points. However, if you would die due to failing death saving throws, you don't die until your rage ends, and you die then only if you still have 0 hit points."
+          "description": "Beginning at 14th level, the divine power that fuels your rage allows you to shrug off fatal blows. While you’re raging, having 0 hit points doesn’t give you the dying condition. Instead, every time you take damage while at 0 hit points and raging you gain 1 level of exhaustion. You can also still choose to use your action to make a Death Saving Throw, as if you had the dying condition. If you would die due to exhaustion, you don't die until your rage ends."
         }
       ]
     },
@@ -427,7 +434,7 @@
         {
           "level": 2,
           "name": "Form of the Beast",
-          "description": "When you enter your rage, you can transform, revealing the bestial power within you. Until the rage ends, you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier to the attack and damage rolls when you attack with it, as normal.\n\nYou choose the weapon's form each time you rage:\n\n**Bite.** Your mouth transforms into a bestial muzzle or great mandibles (your choice). It deal 1d10 piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you regain a number of hit points equal to your proficiency bonus.\n\n**Claws.** Each of your hands transforms into a claw, which you can use as a weapon if it's empty. It deals 1d8 slashing damage on a hit and has the light property.\n\n**Tail.** You grow a lashing, spiny tail, which deals 1d10 piercing damage on a hit and has the reach property. If a creature you can see within 3m of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled, potentially causing the attack to miss you."
+          "description": "When you enter your rage, you can transform, revealing the bestial power within you. Until the rage ends, you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier to the attack and damage rolls when you attack with it, as normal.\n\nYou choose the weapon's form each time you rage:\n\n**Bite.** Your mouth transforms into a bestial muzzle or great mandibles (your choice). It deal 1d10 piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you regain a number of hit points equal to your proficiency bonus.\n\n**Claws.** Each of your hands transforms into a claw, which you can use as a weapon if it's empty. It deals 1d8 slashing damage on a hit and has the light property.\n\n**Tail.** You grow a lashing, spiny tail, which deals 1d10 piercing damage on a hit and has the reach property. If a creature you can see within 2m of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled, potentially causing the attack to miss you."
         },
         {
           "level": 6,
@@ -442,7 +449,7 @@
         {
           "level": 14,
           "name": "Call the Hunt",
-          "description": "The beast within you grows so powerful that you can spread its ferocity to others and gain resilience from them joining your hunt. When you enter your rage, you can choose a number of other willing creatures you can see within 9m of you equal to your Constitution modifier (minimum of one creature).\n\nYou gain temporary hit points for each creature that accepts this feature. Until the rage ends, the chosen creatures can each use the following benefit once on each of their turns: when the creature hits a target with an attack roll and deals damage to it, the creature can roll a d6 and gain a bonus to the damage equal to the number rolled.\n\nYou can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+          "description": "The beast within you grows so powerful that you can spread its ferocity to others and gain resilience from them joining your hunt. When you enter your rage, you can choose a number of other willing creatures you can see within 6m of you equal to your Constitution modifier (minimum of one creature).\n\nYou gain temporary hit points for each creature that accepts this feature. Until the rage ends, the chosen creatures can each use the following benefit once on each of their turns: when the creature hits a target with an attack roll and deals damage to it, the creature can roll a d6 and gain a bonus to the damage equal to the number rolled.\n\nYou can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
         }
       ]
     },
@@ -469,7 +476,7 @@
         {
           "level": 2,
           "name": "Magic Awareness",
-          "description": "As an action, you can open your awareness to the presence of concentrated magic. Until the end of your next turn, you know the location of any spell or magic item within 18m of you that isn't behind total cover. When you sense a spell, you learn which school of magic it belongs to.\n\nYou can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+          "description": "As an action, you can open your awareness to the presence of concentrated magic. Until the end of your next turn, you know the location of any spell or magic item within 12m of you that isn't behind total cover. When you sense a spell, you learn which school of magic it belongs to.\n\nYou can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
         },
         {
           "level": 2,

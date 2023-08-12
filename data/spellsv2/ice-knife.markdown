@@ -10,7 +10,7 @@ tags: [druid, sorcerer, wizard, eldritchknight, level1, conjuration]
 
 **Casting Time**: 1 action
 
-**Range**: 18m
+**Range**: 12m
 
 **Components**: S, M (a drop of water or piece of ice)
 

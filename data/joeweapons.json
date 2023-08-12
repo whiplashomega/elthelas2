@@ -6,7 +6,7 @@
     "Properties": "light, net special, thrown, finesse",
     "Mastery": "None",
     "Damage": 0,
-    "Cost": 4,
+    "Cost": 10,
     "Weight": 3,
     "Reach": 1,
     "Range": 4
@@ -198,7 +198,7 @@
     "Properties": "ranged, ammunition, concealable, light, brutal, loading, gunform",
     "Mastery": "Vex",
     "Damage": "1d6",
-    "Cost": 300,
+    "Cost": 100,
     "Weight": 3,
     "Reach": 0,
     "Range": 16
@@ -222,7 +222,7 @@
     "Properties": "brutal, versatile damage",
     "Mastery": "Sap",
     "Damage": "1d10",
-    "Cost": 60,
+    "Cost": 40,
     "Weight": 4,
     "Reach": 2,
     "Range": 0
@@ -270,7 +270,7 @@
     "Properties": "heavy, two-handed, polearm",
     "Mastery": "Slow",
     "Damage": "2d4",
-    "Cost": 4,
+    "Cost": 10,
     "Weight": 6,
     "Reach": 3,
     "Range": 0
@@ -282,7 +282,7 @@
     "Properties": "ranged, Ammunition, two-handed",
     "Mastery": "Vex",
     "Damage": "1d8",
-    "Cost": 100,
+    "Cost": 50,
     "Weight": 2,
     "Reach": 0,
     "Range": 24
@@ -294,7 +294,7 @@
     "Properties": "heavy, two-handed, knock down, versatile damage, polearm",
     "Mastery": "Cleave",
     "Damage": "2d4",
-    "Cost": 80,
+    "Cost": 50,
     "Weight": 6,
     "Reach": 3,
     "Range": 0
@@ -306,7 +306,7 @@
     "Properties": "brutal, versatile",
     "Mastery": "Flex",
     "Damage": "1d10",
-    "Cost": 60,
+    "Cost": 50,
     "Weight": 3,
     "Reach": 2,
     "Range": 0
@@ -318,7 +318,7 @@
     "Properties": "finesse, armor piercing",
     "Mastery": "Vex",
     "Damage": "1d8",
-    "Cost": 100,
+    "Cost": 60,
     "Weight": 2,
     "Reach": 2,
     "Range": 0
@@ -330,7 +330,7 @@
     "Properties": "finesse, light, versatile damage",
     "Mastery": "Poison",
     "Damage": "1d8",
-    "Cost": 40,
+    "Cost": 30,
     "Weight": 2,
     "Reach": 1,
     "Range": 0
@@ -342,7 +342,7 @@
     "Properties": "versatile, knock down",
     "Mastery": "Flex",
     "Damage": "1d10",
-    "Cost": 60,
+    "Cost": 30,
     "Weight": 2,
     "Reach": 2,
     "Range": 0
@@ -354,7 +354,7 @@
     "Properties": "ranged, ammunition, loading, two-handed, gunform",
     "Mastery": "Slow",
     "Damage": "1d8",
-    "Cost": 100,
+    "Cost": 50,
     "Weight": 5,
     "Reach": 0,
     "Range": 24
@@ -378,7 +378,7 @@
     "Properties": "ranged, ammunition, heavy, two-handed",
     "Mastery": "Slow",
     "Damage": "1d10",
-    "Cost": 200,
+    "Cost": 60,
     "Weight": 2,
     "Reach": 0,
     "Range": 32
@@ -390,7 +390,7 @@
     "Properties": "finesse, light",
     "Mastery": "Graze",
     "Damage": "2d4",
-    "Cost": 100,
+    "Cost": 50,
     "Weight": 3,
     "Reach": 1,
     "Range": 0
@@ -402,7 +402,7 @@
     "Properties": "two-handed, polearm, heavy",
     "Mastery": "Graze",
     "Damage": "1d12",
-    "Cost": 80,
+    "Cost": 40,
     "Weight": 6,
     "Reach": 3,
     "Range": 0
@@ -414,7 +414,7 @@
     "Properties": "heavy, two-handed",
     "Mastery": "Cleave",
     "Damage": "2d6",
-    "Cost": 200,
+    "Cost": 80,
     "Weight": 6,
     "Reach": 3,
     "Range": 0
@@ -426,7 +426,7 @@
     "Properties": "heavy, two-handed, awkward, polearm",
     "Mastery": "Slow",
     "Damage": "2d4",
-    "Cost": 20,
+    "Cost": 30,
     "Weight": 18,
     "Reach": 4,
     "Range": 0
@@ -450,7 +450,7 @@
     "Properties": "ranged, ammunition, loading, two-handed, heavy, gunform",
     "Mastery": "Sap",
     "Damage": "1d12",
-    "Cost": 200,
+    "Cost": 100,
     "Weight": 18,
     "Reach": 0,
     "Range": 24
@@ -462,7 +462,7 @@
     "Properties": "ranged, Ammunition, loading, gunform, rare, light, armor piercing",
     "Mastery": "None",
     "Damage": "1d10",
-    "Cost": 2000,
+    "Cost": 1500,
     "Weight": 2,
     "Reach": 0,
     "Range": 8
@@ -474,7 +474,7 @@
     "Properties": "ranged, ammunition, loading, gunform, rare, two-handed, armor piercing",
     "Mastery": "None",
     "Damage": "2d6",
-    "Cost": 2000,
+    "Cost": 1500,
     "Weight": 8,
     "Reach": 0,
     "Range": 12
@@ -486,7 +486,7 @@
     "Properties": "brutal, heavy, two-handed, knockdown",
     "Mastery": "Cleave",
     "Damage": "1d12",
-    "Cost": 120,
+    "Cost": 80,
     "Weight": 7,
     "Reach": 2,
     "Range": 0
@@ -498,7 +498,7 @@
     "Properties": "ranged, ammunition, two-handed, str 13 required",
     "Mastery": "Slow",
     "Damage": "2d6",
-    "Cost": 200,
+    "Cost": 100,
     "Weight": 4,
     "Reach": 0,
     "Range": 32
@@ -510,7 +510,7 @@
     "Properties": "heavy, awkward",
     "Mastery": "Push",
     "Damage": "2d6",
-    "Cost": 40,
+    "Cost": 20,
     "Weight": 6,
     "Reach": 3,
     "Range": 0
@@ -522,7 +522,7 @@
     "Properties": "heavy, two-handed, armor piercing",
     "Mastery": "Push",
     "Damage": "2d6",
-    "Cost": 40,
+    "Cost": 30,
     "Weight": 10,
     "Reach": 2,
     "Range": 0
@@ -546,7 +546,7 @@
     "Properties": "net special, thrown, ranged, light, finesse",
     "Mastery": "None",
     "Damage": "0",
-    "Cost": 10,
+    "Cost": 2,
     "Weight": 2,
     "Reach": 0,
     "Range": 12
@@ -570,7 +570,7 @@
     "Properties": "finesse, thrown, light, returning",
     "Mastery": "Sap",
     "Damage": "1d4",
-    "Cost": 25,
+    "Cost": 2,
     "Weight": 10,
     "Reach": 0,
     "Range": 16
@@ -642,7 +642,7 @@
     "Properties": "ranged, two-handed, loading, gunform, armor piercing, ammunition",
     "Mastery": "None",
     "Damage": "1d12",
-    "Cost": 500,
+    "Cost": 300,
     "Weight": 10,
     "Reach": 0,
     "Range": 8

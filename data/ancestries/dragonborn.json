@@ -5,7 +5,7 @@
   "description": "\n\nAfter the people of Dera were rescued by the Dragon God Bahamut, many dragons came to live among the people of Dera'Dragorim, and it became a matter of honor to bear the child of a dragon. While half-dragon children were rarely viable, those that were born proved to be incredibly fertile, and it was considered almost as great an honor to bear the child of a half-dragon as a dragon. This led to a large population of people with a quarter or less of dragon blood, called Dragonborn or Spellscales. Dragonborn are more draconic in appearance than their Spellscale cousins, are larger, and considerably stronger. They have scaly hides, draconic like faces, and often have clawed hands and feet or even wings. Outside of Dera'Dragorim and more urban settings, they are often seen as monsters.\n\n",
   "traits": [
     { "name": "Size", "description": "Dragonborn are taller and heavier than humans, standing well over 6 feet tall and averaging almost 250 pounds. Your size is medium." },
-    { "name": "Speed", "description": "Your base walking speed is 9m." },
+    { "name": "Speed", "description": "Your base walking speed is 6m." },
     { "name": "Draconic Ancestry", "description": "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table." }
   ],
   "agepoints": {
@@ -35,7 +35,7 @@
       "averageweight": 240,
       "baseweight": 175,
       "weightroll": "2d6",
-      "speed": [9, 0, 0, 0, 0]
+      "speed": [6, 0, 0, 0, 0]
     },
     {
       "id": "copper",
@@ -46,7 +46,7 @@
       "traits": [
         { "name": "Acid Resistance", "description": "you have resistance to acid damage." },
         { "name": "Breath Weapon", "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 4m cone. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 acid damage. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10). You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest." },
-        { "name": "Metallic Breath Weapon", "description": "At 5th level, you gain a second breath weapon. When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 4m cone. The save DC for this breath is 8 + your Constitution modifier + your proficiency bonus. Whenever you use this trait, choose one:\n\n* **Enervating Breath.** Each creature in the cone must succeed on a Constitution saving throw or become incapacitated until the start of your next turn.\n\n* **Repulsion Breath.** Each creature in the cone must succeed on a Strength saving throw or be pushed 6m away from you and be knocked prone.\n\nOnce you use your Metallic Breath Weapon, you can’t do so again until you finish a long rest." }
+        { "name": "Metallic Breath Weapon", "description": "At 5th level, you gain a second breath weapon. When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 4m cone. The save DC for this breath is 8 + your Constitution modifier + your proficiency bonus. Whenever you use this trait, choose one:\n\n* **Enervating Breath.** Each creature in the cone must succeed on a Constitution saving throw or become incapacitated until the start of your next turn.\n\n* **Repulsion Breath.** Each creature in the cone must succeed on a Strength saving throw or be pushed 4m away from you and be knocked prone.\n\nOnce you use your Metallic Breath Weapon, you can’t do so again until you finish a long rest." }
       ],
       "averageheight": 75,
       "baseheight": 66,
@@ -54,7 +54,7 @@
       "averageweight": 240,
       "baseweight": 175,
       "weightroll": "2d6",
-      "speed": [9, 0, 0, 0, 0]
+      "speed": [6, 0, 0, 0, 0]
     },
     {
       "id": "blue",
@@ -64,7 +64,7 @@
       "image": false,
       "traits": [
         { "name": "Lightning Resistance", "description": "you have resistance to lightning damage." },
-        { "name": "Breath Weapon", "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 9m that is 1m wide. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 lightning damage. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10). You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest." },
+        { "name": "Breath Weapon", "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 6m that is 1m wide. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 lightning damage. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10). You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest." },
         { "name": "Chromatic Warding", "description": "Starting at 5th level, as an action, you can channel your draconic energy to protect yourself. For 1 minute, you become immune to lightning damage. Once you use this trait, you can’t do so again until you finish a long rest." }
       ],
       "averageheight": 75,
@@ -73,7 +73,7 @@
       "averageweight": 240,
       "baseweight": 175,
       "weightroll": "2d6",
-      "speed": [9, 0, 0, 0, 0]
+      "speed": [6, 0, 0, 0, 0]
     },
     {
       "id": "bronze",
@@ -84,7 +84,7 @@
       "traits": [
         { "name": "Lightning Resistance", "description": "you have resistance to lightning damage." },
         { "name": "Breath Weapon", "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 4m. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 lightning damage. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10). You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest." },
-        { "name": "Metallic Breath Weapon", "description": "At 5th level, you gain a second breath weapon. When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 4m cone. The save DC for this breath is 8 + your Constitution modifier + your proficiency bonus. Whenever you use this trait, choose one:\n\n* **Enervating Breath.** Each creature in the cone must succeed on a Constitution saving throw or become incapacitated until the start of your next turn.\n\n* **Repulsion Breath.** Each creature in the cone must succeed on a Strength saving throw or be pushed 6m away from you and be knocked prone.\n\nOnce you use your Metallic Breath Weapon, you can’t do so again until you finish a long rest." }
+        { "name": "Metallic Breath Weapon", "description": "At 5th level, you gain a second breath weapon. When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 4m cone. The save DC for this breath is 8 + your Constitution modifier + your proficiency bonus. Whenever you use this trait, choose one:\n\n* **Enervating Breath.** Each creature in the cone must succeed on a Constitution saving throw or become incapacitated until the start of your next turn.\n\n* **Repulsion Breath.** Each creature in the cone must succeed on a Strength saving throw or be pushed 4m away from you and be knocked prone.\n\nOnce you use your Metallic Breath Weapon, you can’t do so again until you finish a long rest." }
       ],
       "averageheight": 75,
       "baseheight": 66,
@@ -92,7 +92,7 @@
       "averageweight": 240,
       "baseweight": 175,
       "weightroll": "2d6",
-      "speed": [9, 0, 0, 0, 0]
+      "speed": [6, 0, 0, 0, 0]
     },
     {
       "id": "brass",
@@ -103,7 +103,7 @@
       "traits": [
         { "name": "Fire Resistance", "description": "you have resistance to fire damage." },
         { "name": "Breath Weapon", "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 4m cone. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 fire damage. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10). You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest." },
-        { "name": "Metallic Breath Weapon", "description": "At 5th level, you gain a second breath weapon. When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 4m cone. The save DC for this breath is 8 + your Constitution modifier + your proficiency bonus. Whenever you use this trait, choose one:\n\n* **Enervating Breath.** Each creature in the cone must succeed on a Constitution saving throw or become incapacitated until the start of your next turn.\n\n* **Repulsion Breath.** Each creature in the cone must succeed on a Strength saving throw or be pushed 6m away from you and be knocked prone.\n\nOnce you use your Metallic Breath Weapon, you can’t do so again until you finish a long rest." }
+        { "name": "Metallic Breath Weapon", "description": "At 5th level, you gain a second breath weapon. When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 4m cone. The save DC for this breath is 8 + your Constitution modifier + your proficiency bonus. Whenever you use this trait, choose one:\n\n* **Enervating Breath.** Each creature in the cone must succeed on a Constitution saving throw or become incapacitated until the start of your next turn.\n\n* **Repulsion Breath.** Each creature in the cone must succeed on a Strength saving throw or be pushed 4m away from you and be knocked prone.\n\nOnce you use your Metallic Breath Weapon, you can’t do so again until you finish a long rest." }
       ],
       "averageheight": 75,
       "baseheight": 66,
@@ -111,7 +111,7 @@
       "averageweight": 240,
       "baseweight": 175,
       "weightroll": "2d6",
-      "speed": [9, 0, 0, 0, 0]
+      "speed": [6, 0, 0, 0, 0]
     },
     {
       "id": "gold",
@@ -122,7 +122,7 @@
       "traits": [
         { "name": "Fire Resistance", "description": "you have resistance to fire damage." },
         { "name": "Breath Weapon", "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 4m cone. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 fire damage. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10). You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest." },
-        { "name": "Metallic Breath Weapon", "description": "At 5th level, you gain a second breath weapon. When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 4m cone. The save DC for this breath is 8 + your Constitution modifier + your proficiency bonus. Whenever you use this trait, choose one:\n\n* **Enervating Breath.** Each creature in the cone must succeed on a Constitution saving throw or become incapacitated until the start of your next turn.\n\n* **Repulsion Breath.** Each creature in the cone must succeed on a Strength saving throw or be pushed 6m away from you and be knocked prone.\n\nOnce you use your Metallic Breath Weapon, you can’t do so again until you finish a long rest." }
+        { "name": "Metallic Breath Weapon", "description": "At 5th level, you gain a second breath weapon. When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 4m cone. The save DC for this breath is 8 + your Constitution modifier + your proficiency bonus. Whenever you use this trait, choose one:\n\n* **Enervating Breath.** Each creature in the cone must succeed on a Constitution saving throw or become incapacitated until the start of your next turn.\n\n* **Repulsion Breath.** Each creature in the cone must succeed on a Strength saving throw or be pushed 4m away from you and be knocked prone.\n\nOnce you use your Metallic Breath Weapon, you can’t do so again until you finish a long rest." }
       ],
       "averageheight": 75,
       "baseheight": 66,
@@ -130,7 +130,7 @@
       "averageweight": 240,
       "baseweight": 175,
       "weightroll": "2d6",
-      "speed": [9, 0, 0, 0, 0]
+      "speed": [6, 0, 0, 0, 0]
     },
     {
       "id": "red",
@@ -149,7 +149,7 @@
       "averageweight": 240,
       "baseweight": 175,
       "weightroll": "2d6",
-      "speed": [9, 0, 0, 0, 0]
+      "speed": [6, 0, 0, 0, 0]
     },
     {
       "id": "green",
@@ -168,7 +168,7 @@
       "averageweight": 240,
       "baseweight": 175,
       "weightroll": "2d6",
-      "speed": [9, 0, 0, 0, 0]
+      "speed": [6, 0, 0, 0, 0]
     },
     {
       "id": "silver",
@@ -179,7 +179,7 @@
       "traits": [
         { "name": "Cold Resistance", "description": "you have resistance to cold damage." },
         { "name": "Breath Weapon", "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 4m cone. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 cold damage. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10). You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest." },
-        { "name": "Metallic Breath Weapon", "description": "At 5th level, you gain a second breath weapon. When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 4m cone. The save DC for this breath is 8 + your Constitution modifier + your proficiency bonus. Whenever you use this trait, choose one:\n\n* **Enervating Breath.** Each creature in the cone must succeed on a Constitution saving throw or become incapacitated until the start of your next turn.\n\n* **Repulsion Breath.** Each creature in the cone must succeed on a Strength saving throw or be pushed 6m away from you and be knocked prone.\n\nOnce you use your Metallic Breath Weapon, you can’t do so again until you finish a long rest." }
+        { "name": "Metallic Breath Weapon", "description": "At 5th level, you gain a second breath weapon. When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 4m cone. The save DC for this breath is 8 + your Constitution modifier + your proficiency bonus. Whenever you use this trait, choose one:\n\n* **Enervating Breath.** Each creature in the cone must succeed on a Constitution saving throw or become incapacitated until the start of your next turn.\n\n* **Repulsion Breath.** Each creature in the cone must succeed on a Strength saving throw or be pushed 4m away from you and be knocked prone.\n\nOnce you use your Metallic Breath Weapon, you can’t do so again until you finish a long rest." }
       ],
       "averageheight": 75,
       "baseheight": 66,
@@ -187,7 +187,7 @@
       "averageweight": 240,
       "baseweight": 175,
       "weightroll": "2d6",
-      "speed": [9, 0, 0, 0, 0]
+      "speed": [6, 0, 0, 0, 0]
     },
     {
       "id": "white",
@@ -206,7 +206,7 @@
       "averageweight": 240,
       "baseweight": 175,
       "weightroll": "2d6",
-      "speed": [9, 0, 0, 0, 0]
+      "speed": [6, 0, 0, 0, 0]
     },
     {
       "id": "amethyst",

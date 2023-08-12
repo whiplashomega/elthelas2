@@ -10,7 +10,7 @@ tags: [sorcerer, warlock, wizard, level6, conjuration]
 
 **Casting Time**: 1 action
 
-**Range**: 9m
+**Range**: 6m
 
 **Components**: V
 
@@ -22,4 +22,4 @@ tags: [sorcerer, warlock, wizard, level6, conjuration]
 
 **Damage**: []
 
-The air quivers around up to five creatures of your choice that you can see within range. An unwilling creature must succeed on a Wisdom saving throw to resist this spell. You teleport each affected target to an unoccupied space that you can see within 36m of you. That space must be on the ground or on a floor.
+The air quivers around up to five creatures of your choice that you can see within range. An unwilling creature must succeed on a Wisdom saving throw to resist this spell. You teleport each affected target to an unoccupied space that you can see within 34m of you. That space must be on the ground or on a floor.

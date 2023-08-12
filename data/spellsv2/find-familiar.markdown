@@ -10,7 +10,7 @@ tags: [arcanetrickster, wizard, eldritchknight, level1, conjuration, ritual]
 
 **Casting Time**: 1 hour
 
-**Range**: 3m
+**Range**: 2m
 
 **Components**: V, S, M (10gp worth of charcoal, incense, and herbs that must be consumed by fire in a brass brazier)
 

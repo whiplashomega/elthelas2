@@ -10,7 +10,7 @@ tags: [arcanetrickster, bard, cleric, ranger, level2, illusion, ritual]
 
 **Casting Time**: 1 action
 
-**Range**: 36m
+**Range**: 34m
 
 **Components**: V, S
 
@@ -22,4 +22,4 @@ tags: [arcanetrickster, bard, cleric, ranger, level2, illusion, ritual]
 
 **Damage**: []
 
-For the duration, no sound can be created within or pass through a 6m-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it.
+For the duration, no sound can be created within or pass through a 4m-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it.

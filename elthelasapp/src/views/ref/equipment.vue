@@ -247,7 +247,7 @@
             <tr><td>Poison</td><td>You can apply a dose of poison to this weapon as a bonus action on your turn.</td></tr>
             <tr><td>Push</td><td>If you hit a creature with this weapon, you can push the creature up to 2m away from you if it is no more than one size larger than you.</td></tr>
             <tr><td>Sap</td><td>If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.</td></tr>
-            <tr><td>Slow</td><td>If you hit a creature with this weapon, you can reduce its Speed by 10 feet until the start of your next turn. If you hit the creature more than once with this property, the Speed reduction doesn’t exceed 10 feet.</td></tr>
+            <tr><td>Slow</td><td>If you hit a creature with this weapon, you can reduce its Speed by 2m until the start of your next turn. If you hit the creature more than once with this property, the Speed reduction doesn’t exceed 2m.</td></tr>
             <tr><td>Vex</td><td>If you hit a creature with this weapon, you have Advantage on your next attack roll against that creature before the end of your next turn.</td></tr>
           </tbody>
         </table>

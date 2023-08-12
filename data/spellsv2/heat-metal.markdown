@@ -10,7 +10,7 @@ tags: [druid, bard, artificer, level2, transmutation]
 
 **Casting Time**: 1 action
 
-**Range**: 18m
+**Range**: 12m
 
 **Components**: V, S, M (a piece of iron and a flame)
 

@@ -22,7 +22,7 @@ tags: [wizard, bard, level6, abjuration]
 
 **Damage**: []
 
-You create a ward that protects up to 225 square meters of floor space (an area 15 meters square, or 225 one meter squares). The warded area can be up to 6m tall, and shaped as you desire. You can ward several stories of a stronghold by dividing the area among them, as long as you can walk into each contiguous area while you are casting the spell.
+You create a ward that protects up to 225 square meters of floor space (an area 15 meters square, or 225 one meter squares). The warded area can be up to 4m tall, and shaped as you desire. You can ward several stories of a stronghold by dividing the area among them, as long as you can walk into each contiguous area while you are casting the spell.
 
 When you cast this spell, you can specify individuals that are unaffected by any or all of the effects that you choose. You can also specify a password that, when spoken aloud, makes the speaker immune to these effects.
 

@@ -10,7 +10,7 @@ tags: [druid, sorcerer, warlock, wizard, level4, necromancy]
 
 **Casting Time**: 1 action
 
-**Range**: 9m
+**Range**: 6m
 
 **Components**: V, S
 

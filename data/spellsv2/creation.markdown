@@ -10,7 +10,7 @@ tags: [sorcerer, wizard, artificer, level5, illusion]
 
 **Casting Time**: 1 minute
 
-**Range**: 9m
+**Range**: 6m
 
 **Components**: V, S, M (a tiny piece of matter of the same type of the item you plan to create)
 

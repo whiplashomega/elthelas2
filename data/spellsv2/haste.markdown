@@ -10,7 +10,7 @@ tags: [arcanetrickster, sorcerer, wizard, eldritchknight, artificer, level3, tra
 
 **Casting Time**: 1 action
 
-**Range**: 9m
+**Range**: 6m
 
 **Components**: V, S, M (a shaving of licorice root)
 

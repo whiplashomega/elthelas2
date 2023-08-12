@@ -10,7 +10,7 @@ tags: [druid, sorcerer, warlock, wizard, cantrip, conjuration]
 
 **Casting Time**: 1 action
 
-**Range**: 9m
+**Range**: 6m
 
 **Components**: V, S, M (a living flea)
 

@@ -10,7 +10,7 @@ tags: [warlock, eldritchknight, level1, evocation]
 
 **Casting Time**: 1 reaction, which you take in response to being damaged by a creature within 60 feet of you that you can see.
 
-**Range**: 18m
+**Range**: 12m
 
 **Components**: V, S
 

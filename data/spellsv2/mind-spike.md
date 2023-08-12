@@ -10,7 +10,7 @@ tags: [sorcerer, warlock, wizard, level2, divination]
 
 **Casting Time**: 1 action
 
-**Range**: 18m
+**Range**: 12m
 
 **Components**: S
 

@@ -10,7 +10,7 @@ tags: [arcanetrickster, bard, cleric, druid, sorcerer, warlock, wizard, level2, 
 
 **Casting Time**: 1 action
 
-**Range**: 18m
+**Range**: 12m
 
 **Components**: V, S, M (a small, straight piece of iron)
 

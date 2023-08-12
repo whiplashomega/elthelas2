@@ -10,7 +10,7 @@ tags: [arcanetrickster, bard, sorcerer, wizard, level5, illusion]
 
 **Casting Time**: 1 action
 
-**Range**: 9m
+**Range**: 6m
 
 **Components**: V, S
 

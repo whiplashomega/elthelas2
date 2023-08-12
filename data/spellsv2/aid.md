@@ -10,7 +10,7 @@ tags: [bard, cleric, ranger, paladin, artificer, level2, abjuration]
 
 **Casting Time**: 1 action
 
-**Range**: 9m
+**Range**: 6m
 
 **Components**: V, S, M (a tiny strip of white cloth)
 
