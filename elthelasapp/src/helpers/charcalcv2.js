@@ -193,7 +193,9 @@ export default {
   hpTotal: function(character) {
     var total = 0;
     character.charclasses.forEach((cc) => {
-      total += Number(cc.level) * (cc.thisclass.hitdie / 2 + this.statMod(character, 2) + 1);
+      if (cc.level) {
+        total += Number(cc.level) * (cc.thisclass.hitdie / 2 + this.statMod(character, 2) + 1);
+      }
     });
     total += (character.charclasses[0].thisclass.hitdie / 2 - 1);
     total += Number(character.hpmagic);

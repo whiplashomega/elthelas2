@@ -44,7 +44,7 @@
     {
       "level": 1,
       "name": "Unarmored Defense",
-      "description": "Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier and you gain protection points equal to your wisdom modifier times your level."
+      "description": "Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier and you gain protection points equal to half your wisdom modifier (rounded up, minimum 1) times your level."
     },
     {
       "level": 1,
@@ -169,7 +169,7 @@
     {
       "level": 12,
       "name": "Superior Unarmored Defense",
-      "description": "Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 12 + your Dexterity modifier + your Wisdom modifier."
+      "description": "Beginning at 12th level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier and you gain protection points equal to wisdom modifier (minimum 1) times your level."
     },
     {
       "level": 13,

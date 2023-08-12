@@ -9,7 +9,7 @@
       </div>
       <div class="col-4">
         <div class="charsheet-static center">
-          PC<br />
+          PP/Lvl<br />
           {{ pccalc }}
         </div>
       </div>

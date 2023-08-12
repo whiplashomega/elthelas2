@@ -92,6 +92,11 @@
       "description": "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to rangers. This replacement represents a shift of focus in your martial practice."
     },
     {
+      "level": 4,
+      "name": "Weapon Mastery",
+      "description": "You unlock the maximum potential of the weapons you wield. You gain access to the weapon mastery property of any weapon you wield that you are proficient with. Additionally, your unarmed strikes gain the Sap property."
+    },
+    {
       "level": 5,
       "name": "Extra Attack",
       "description": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
@@ -183,12 +188,12 @@
         {
           "level": 2,
           "name": "Hunter's Prey",
-          "description": "You gain one of the following features of your choice.\n\n**Colossus Slayer.** Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it is below its hit point maximum. You can deal this extra damage only once per turn.\n\n**Giant Killer.\n\n When a Large or larger creature within your reach hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.\n\n**Horde Breaker.** Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 2m of the original target and within range of your weapon."
+          "description": "You gain the following features, but can only use one of them each round.\n\n**Colossus Slayer.** Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage. You can deal this extra damage only once per turn.\n\n**Giant Killer.\n\n When a Large or larger creature within your reach hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.\n\n**Horde Breaker.** Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 2m of the original target and within range of your weapon."
         },
         {
           "level": 6,
-          "name": "Defensive Tactics",
-          "description": "You gain one of the following features of your choice.\n\n**Escape the Horde.** Opportunity attacks against you are made with disadvantage.\n\n**Multiattack defense.** When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.\n\n**Steel Will.** You have advantage on saving throws against being frightened."
+          "name": "Evasion",
+          "description": "When you are subjected to an effect that lets you make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving thrwo and only half damage if you fail. You can't use this feature if you have the incapacitated condition."
         },
         {
           "level": 10,
@@ -197,8 +202,8 @@
         },
         {
           "level": 14,
-          "name": "Superior Hunter's Defense",
-          "description": "You gain one of the following features of your choice.\n\n**Evasion.** When you are subjected to an effect, such as a red dragon's fiery breath or a lightning bolt spell, that allows you to make a dexterity saving throw to take only half damage, you instead take no damage if you succeed on a saving throw, and only half damage if you fail.\n\n**Stand against the Tide.** When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice.\n\n**Uncanny Dodge.** When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you."
+          "name": "Stand Against the Tide",
+          "description": "When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice."
         }
       ]
     },
@@ -215,17 +220,7 @@
         {
           "level": 2,
           "name": "Dread Ambusher",
-          "description": "You master the art of the ambush. You can give yourself a bonus to your initiative rolls equal to your Wisdom modifier.\n\nAt the start of your first turn of each combat, your walking speed increases by 3m, which lasts until the end of that turn. If you take the Attack action on that turn, you can make one additional weapon attack as part of that action. If that attack hits, the target takes an extra 1d8 damage of the weapons damage type."
-        },
-        {
-          "level": 2,
-          "name": "Umbral Sight",
-          "description": "You gain darkvision out to a range of 18m. If you already have darkvision from your race, its range increases by 9m.\n\nYou are also adept at evading creatures that rely on darkvision. While in darkness, you are invisible to any creature that relies on darkvision to see you in that darkness."
-        },
-        {
-          "level": 4,
-          "name": "Weapon Mastery",
-          "description": "You unlock the maximum potential of the weapons you wield. You gain access to the weapon mastery property of any weapon you wield that you are proficient with. Additionally, your unarmed strikes gain the Sap property."
+          "description": "You master the art of the ambush. You can give yourself a bonus to your initiative rolls equal to your Wisdom modifier.\n\nAt the start of your first turn of each combat, your walking speed increases by 3m, which lasts until the end of that turn. Once per turn when you attack a creature and hit it with a weapon, you can deal an extra 1d8 psychic damage to the target. At 11th level in the class the extra damage increases to 2d8."
         },
         {
           "level": 6,
@@ -270,7 +265,7 @@
         {
           "level": 2,
           "name": "Planar Warrior",
-          "description": "You learn to draw on the energy of the multiverse to augment your attacks.\n\nAs a bonus action, choose one creature you can see within 9m of you. The next time you hit that creature on this turn with a weapon attack, all damage dealt by the attack becomes force damage, and the creature takes an extra 1d8 force damage from the attack. When you reach 11th level in this class, the extra damage increases to 2d8."
+          "description": "You learn to draw on the energy of the multiverse to augment your attacks.\n\nOnce per turn, when you hit a creature with a weapon attack, you can choose to have all damage dealt by the attack becomes force damage, and the creature takes an extra 1d8 force damage from the attack. When you reach 11th level in this class, the extra damage increases to 2d8."
         },
         {
           "level": 6,
@@ -315,7 +310,7 @@
         {
           "level": 2,
           "name": "Slayer's Prey",
-          "description": "You can focus your ire on one foe, increasing the harm you inflict on it. As a bonus action, you designate one creature you can see within 18m of you as the target of this feature. The first time each turn that you hit that target with a weapon attack, it takes an extra 1d6 damage from the weapon.\n\nThis benefit lasts until you finish a short or long rest. It ends early if you designate a different creature."
+          "description": "You can focus your ire on one foe, increasing the harm you inflict on it. Once per turn when you hit a creature with a weapon attack, you can deal an extra 1d8 damage of the weapon's damage type. When you reach 11th level in this class the extra damage increases to 2d8."
         },
         {
           "level": 6,
@@ -350,7 +345,7 @@
         {
           "level": 2,
           "name": "Dreadful Strikes",
-          "description": "You can augment your weapon strikes with mind-scarring magic, drawn from the gloomy hollows of the Feywild. When you hit a creature with a weapon, you can deal an extra 1d4 psychic damage to the target, which can take this extra damage only once per turn.\n\nThe extra damage increases to 1d6 when you reach 11th level in this class."
+          "description": "You can augment your weapon strikes with mind-scarring magic, drawn from the gloomy hollows of the Feywild. When you hit a creature with a weapon, you can deal an extra 1d8 psychic damage to the target, which can take this extra damage only once per turn.\n\nThe extra damage increases to 2d8 when you reach 11th level in this class."
         },
         {
           "level": 2,
@@ -402,7 +397,7 @@
         {
           "level": 2,
           "name": "Gathered Swarm",
-          "description": "A swarm of intangible nature spirits has bonded itself to you and can assist you in battle. Until you die, the swarm remains in your space, crawling on you or flying and skittering around you within your space. You determine its appearance, or you generate its appearance by rolling on the Swarm Appearance table.\n\nOnce on each of your turns, you can cause the swarm to assist you in one of the following ways, immediately after you hit a creature with an attack:\n\n* The attack's target takes 1d6 piercing damage from the swarm.\n* The attack's target must succeed on a Strength saving throw against your spell save DC or be moved by the swarm up to 4m horizontally in a direction of your choice.\n* You are moved by the swarm 2m horizontally in a direction of your choice."
+          "description": "A swarm of intangible nature spirits has bonded itself to you and can assist you in battle. Until you die, the swarm remains in your space, crawling on you or flying and skittering around you within your space. You determine its appearance, or you generate its appearance by rolling on the Swarm Appearance table.\n\nOnce on each of your turns, you can cause the swarm to assist you in one of the following ways, immediately after you hit a creature with an attack:\n\n* The attack's target takes 1d8 piercing damage from the swarm.\n* The attack's target must succeed on a Strength saving throw against your spell save DC or be moved by the swarm up to 4m horizontally in a direction of your choice.\n* You are moved by the swarm 2m horizontally in a direction of your choice."
         },
         {
           "level": 2,

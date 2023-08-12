@@ -316,14 +316,14 @@
  },
  {
    "Item": "Healer’s Kit",
-   "Cost": 25,
-   "Weight": 0.3,
-   "Description": "This kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can use the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check. You can also expend one use of this kit when performing the first aid action to gain advantage on the check and restore 2d4+2 hit points on a success. Either use consumes the kit."
+   "Cost": 10,
+   "Weight": 0.1,
+   "Description": "This kit is a leather pouch containing bandages, salves, and splints. As an action, you can use the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check. You can also expend this kit when performing the first aid action to gain advantage on the check and restore 2d4+2 hit points on a success. Either use consumes the kit."
  },
  {
    "Item": "Repair kit",
-   "Cost": 50,
-   "Weight": 0.5,
+   "Cost": 10,
+   "Weight": 0.2,
    "Description": "This kit is a leather pouch containing spare straps, polish, sauder, and other basic materials for repairing armor. You can use this kit in conjunction with tools you have in hand when performing the repair armor action to gain advantage on the check and restore 2d4+2 protection points on a success."
  },
  {

@@ -168,7 +168,9 @@
       <ul>
         <li>Combat Caster</li>
         <li>Class features have largely been rewritten and reorganized based on OneDND ranger.</li>
+        <li>Hunter features changed significantly.</li>
         <li>Beast Master -> no action necessary to command companion</li>
+        <li>Gloomstalker, Horizon Walker, Monster Slayer, Fey Wanderer, and Swarmkeeper have had their 2nd level features redone.</li>
         <li>Weapon Mastery</li>
       </ul>
       <h4>Rogue</h4>

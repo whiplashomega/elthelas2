@@ -39,12 +39,12 @@
     {
       "level": 1,
       "name": "Rage",
-      "description": "In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action.\n\nWhile raging, you gain the following benefits if you aren’t w earing heavy armor:\n\n* You have advantage on Strength checks and Strength saving throws.\n* When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.\n* You have resistance to bludgeoning, piercing, and slashing damage.\n\nIf you are able to cast spells, you can’t cast them or concentrate while raging. Your rage lasts for 10 minute. It ends early if you are knocked unconscious or if you choose to end it. You can also end your rage on your turn as a bonus action. Once you have raged the number of times shown for your barbarian level in the Rages column of the Barbarian table, you must finish a long rest before you can rage again."
+      "description": "In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action.\n\nWhile raging, you gain the following benefits if you aren’t w earing heavy armor:\n\n* You have advantage on Strength checks and Strength saving throws.\n* When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.\n* You have resistance to bludgeoning, piercing, and slashing damage.\n\nIf you are able to cast spells, you can’t cast them or concentrate while raging. Your rage lasts for 1 minute. It ends early if you are knocked unconscious or if you choose to end it. You can also end your rage on your turn as a bonus action. Once you have raged the number of times shown for your barbarian level in the Rages column of the Barbarian table, you must finish a long rest before you can rage again."
     },
     {
       "level": 1,
       "name": "Unarmored Defense",
-      "description": "While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier, and have a number of protection points equal to your Constitution Modifier (rounded up, minimum 0) times your level. You can use a shield and still gain this benefit."
+      "description": "While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier, and have a number of protection points equal to half your Constitution Modifier (rounded up, minimum 1) times your level. You can use a shield and still gain this benefit."
     },
     {
       "level": 2,
@@ -130,6 +130,11 @@
       "level": 11,
       "name": "Relentless Rage",
       "description": "Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while you’re raging and don’t die outright, you can make a DC 10 Constitution saving throw. If you succeed, you immediately recover hit points equal to twice your barbarian level.\n\nEach time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10."
+    },
+    {
+      "level": 12,
+      "name": "Superior Unarmored Defense",
+      "description": "While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier, and have a number of protection points equal to your Constitution Modifier times your level. You can use a shield and still gain this benefit."
     },
     {
       "level": 13,
