@@ -44,7 +44,6 @@
       "description": "At the time of the demon invasion, Dera was home to the largest elven community outside of Eldoran. Unfortunately for these elves, their community was among the first attacked by the demons. Throughout most of the world it is believed that all of the elves were slaughtered, however a small percentage were kept as slaves, serving the whims of their demon masters, and subject to their lusts. Many of them died birthing the demonic offspring of these unions, and those who did not were rendered infertile. When Bahamut turned his wrath on the demons, forcing them to flee, they left their slaves, and their offspring, behind. These elves, trapped between an angry God and demon slave-masters, hid in the sewers of the ruined city, where they have lived since, expanding them as they had need of space. Over time they have intermarried and the demonic blood has spread and become diluted throughout their people. Today they rarely leave their underground home, but occasionally one will leave to travel the world. They are typically mistaken for a pointy eared , skinny and winged tiefling, and they rarely find a welcoming reception. Most return home.\n\nFey'ri have a naturally evil disposition, and the society as a whole has largely given into the call of their blood. The underworks of Dera where they live is a harsh environment where only the strongest are permitted to survive.\n\n",
       "traits": [
         { "name": "Speed", "description": "Your base walking speed is 6m. You also have a flying speed of 6m." },
-        { "name": "Fey Ancestry", "description": "You have advantage on saving throws against being charmed, and magic can't put you to sleep." },
         { "name": "Trance", "description": "Fey'ri don't need to sleep. Instead they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is 'trance') While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep." }
       ],
       "averageheight": 65,
@@ -70,6 +69,18 @@
       "baseweight": 110,
       "weightroll": "2d4",
       "speed": [6, 0, 0, 0, 0]
+    },
+    {
+      "id": "dwarftiefling",
+      "name": "Dwarf-born Tieflings",
+      "singular": "Dwarf-born Tiefling",
+      "description": "While Tieflings are rare among the dwarves, they are not unheard of. These children are often considered signs of ill-will by their communities, often turning their whole families into outcasts, though dwarven cultures strong family values mean the parents will still raise these children as their own.",
+      "traits": [,
+      { "name": "Dwarven Resilience", "description": "You have advantage on saving throws against poison, and you have resistance against poison damage." },
+      { "name": "Dwarven Combat Training", "description": "You have proficiency with the battleaxe, handaxe, light hammer, and warhammer." },
+      { "name": "Tool Proficiency", "description": "You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools." },
+      { "name": "Stonecunning", "description": "Whenever you make an intelligence (history) check related to the origin of stonework, you are considered proficient in the history skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus." }
+      ]
     },
     {
       "id": "tanarukk",

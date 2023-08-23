@@ -24,7 +24,7 @@
       "singular": "Human Born",
       "description": "Sorceron Blooded born of humans tend towards more versatility than many others. Often rising to positions of leadership and influence.",
       "traits": [
-        { "name": "Versatility", "description": "Gain proficiency in two skills of your choice." }
+        { "name": "Skills", "description": "Gain proficiency in two skills of your choice. Choose one of those two skills, you have expertise in that skill." }
       ],
       "image": "https://elthelas-images.herokuapp.com/races/sorceronblooded.jpg",
       "averageheight": 69,

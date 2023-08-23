@@ -26,7 +26,8 @@
       "image": "https://elthelas-images.herokuapp.com/races/elathiangnome.jpg",
       "description": "The imperial gnomes are natural tricksters and illusionists, adept at surviving as the bottom rung of society. They tend to prefer city life and the excitement it brings over the quiet countryside. Adventuring is a common way that they find excitement, especially when they are relatively young. Once they do settle down they tend to have large families and live in communal groups of several large extended families.",
       "traits": [
-        { "name": "Natural Illusionist", "description": "You know the minor illusion cantrip. Intelligence is your magic ability for it." },
+        { "name": "Natural Illusionist", "description": "You know the minor illusion cantrip and the silent image spell. You can cast the silent image spell once without using a spell slot, and must complete a short or long rest before doing so again. Intelligence is your magic ability for both of these spells." },
+        { "name": "Shadow Master", "description": "Elathian Gnomes are exceptionally quick to disappear when necessary. You can take the hide action as a bonus action." },
         { "name": "Speak with Small Beasts", "description": "Through sounds and gestures, you can communicate simple ideas with Small or smaller beasts." }
       ],
       "averageheight": 40,
@@ -46,7 +47,8 @@
       "traits": [
         { "name": "Artificer's Lore", "description": "You have advantage on Intelligence checks related to alchemy, magic items, and technological devices." },
         { "name": "Tinker", "description": "You have artisan's tools. Using those tools, you can spend 10 minutes to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours. You can have up to three such devices active at a time. When you create a device, choose one of the following options:\n*   Clockwork Toy: This toy is a clockwork animal or person, such as a frog, mouse, bird, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noise as appropriate to the creature it represents.\n*   Fire Starter: The device produces a miniature flame, which you can use to light something like a candle, torch, or campfire. Using the device requires your action.\n*   Music Box: When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed." },
-        { "name": "Artificer's proficiency", "description": "You are proficient with one type of tools of your choice." }
+        { "name": "Artificer's proficiency", "description": "You are proficient with one type of tools of your choice and add double your proficiency bonus to checks using those tools." },
+        { "name": "Deft Hands", "description": "You have proficiency in the slight of hand skill." }
       ],
       "averageheight": 36,
       "baseheight": 31,

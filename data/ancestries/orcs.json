@@ -45,7 +45,8 @@
       "image": "https://elthelas-images.herokuapp.com/races/highorc.jpg",
       "description": "The high orcs are less strong, and slightly smaller than grunt orcs, and more than a bit lazy, but they make up for it with greater social skills and diplomatic nature. They tend to be the rulers in Orc society, playing others off each other to rise to the top in orcish politics, befriending the strongest grunt orcs, and using them as champions as they rise to the top of society. Many of the high orcs live apart from their kin, on the island nation of Olda, where they keep vast hordes of slaves to do their bidding, watched over by highly paid mercenaries.",
       "traits": [
-        { "name": "Commanding Presence", "description": "You have been born and bred for leadership. You have advantage on all Charisma (Persuasion) and Charisma (Intimidation) checks." }
+        { "name": "Commanding Presence", "description": "You have been born and bred for leadership. You have advantage on all Charisma (Persuasion) and Charisma (Intimidation) checks." },
+        { "name": "Magic Blood", "description": "You have limited magic in your blood, placed their by the ancient sorcerons who uplifted the High Orcs above their brethren. You know one cantrip from the sorcerer list. Charisma is your spellcasting ability for this cantrip." }
       ],
       "averageheight": 69,
       "baseheight": 58,

@@ -45,7 +45,7 @@
       "traits": [
         { "name": "Skills", "description": "You gain proficiency in Animal Handling. You have advantage on Animal Handling checks made to ride or train mounts." },
         { "name": "Enchantment Resistance", "description": "The hisru people, after centuries of living under the effects of enchantment, have developed a natural resistance to magic of the enchantment school. You have advantage on saving throws against enchantment spells." },
-        { "name": "Master's of Magic", "description": "The hisru people are unique among humans in their grasp of magic, both divine and arcane. Pick one cantrip from the bard, sorcerer, wizard, druid, or cleric list. You know that cantrip and can cast it at will. Your spellcasting ability for that cantrip depends on the list it came from: Wisdom for druid or cleric, Charisma for Bard or Sorcerer, and Intelligence for Wizard." },
+        { "name": "Master's of Magic", "description": "The hisru people are unique among humans in their grasp of magic, both divine and arcane. You gain the following benefits:\n* You gain proficiency in the arcana skill.\n* Pick one cantrip from the bard, sorcerer, wizard, druid, or cleric list. You know that cantrip and can cast it at will.\n* Choose one first level spell from the same list, you can cast this spell once without using a spell slot, but must complete a short or long rest before you do so again.\nYour spellcasting ability for these spells depends on the list it came from: Wisdom for druid or cleric, Charisma for Bard or Sorcerer, and Intelligence for Wizard." },
         { "name": "Speed", "description": "Your base walking speed is 6m." }
       ],
       "averageheight": 65,
@@ -65,7 +65,8 @@
       "traits": [
         { "name": "Speed", "description": "Your base walking speed is 6m." },
         { "name": "Multiculturalists", "description": "You learn two additional languages of your choice." },
-        { "name": "Passionate", "description": "Choose one skill, you are proficient in that skill and add double your proficiency bonus when making ability checks related to that skill."}
+        { "name": "Cooperative", "description": "When you use the help action to give another creature advantage on an attack roll or ability check, or when another creatures uses the help action to give you advantage on an attack roll or ability check, the check is made with an additional bonus equal to your proficiency bonus." },
+        { "name": "Passionate", "description": "Choose two skills, you are proficient in those skills and add double your proficiency bonus when making ability checks related to those skills."}
       ],
       "averageheight": 67,
       "baseheight": 56,
@@ -105,7 +106,7 @@
       "description": "Often forgotten by the rest of the world outside of their immediate neighbors, the Staelic people inhabit the merchant kingdom of Alfadir, as well as their ancestral homeland of Staelia. They are masters of combat in medium and heavy armor, as well as tactical and mounted combat, and have developed an inherent resistence to the cold southern lands of their home. Historically their growth as a people has been checked by the endless war between them and the trolls, giants, and ogres who regularly sweep down from the Gorgro Plateau, and the strange and varied ice monsters that sweep northward from the ice wastes.",
       "traits": [
         { "name": "Speed", "description": "Your base walking speed is 6m" },
-        { "name": "Skills", "description": "You gain proficiency in one skill of your choice." },
+        { "name": "Skilled", "description": "You gain proficiency in two skills of your choice." },
         { "name": "Cold Resistance", "description": "You have resistance to cold damage." },
         { "name": "Armored Knights", "description": "If you are wearing medium or heavy armor your AC improves by 1." }
       ],

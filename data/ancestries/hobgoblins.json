@@ -7,8 +7,9 @@
     { "name": "Size", "description": "Hobgoblins are between 5 and 6 feet tall and weigh between 150 and 200 pounds. Your size is Medium." },
     { "name": "Darkvision", "description": "You can see in dim light within 12m of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray." },
     { "name": "Speed", "description": "Your speed is 6m" },
-    { "name": "Martial Training", "description": "You are proficient with two martial weapons of your choice and with light armor." },
-    { "name": "Saving Face", "description": "Hobgoblins are careful not to show weakness in front of their allies, for fear of losing status. If you miss with an attack roll or fail an ability check or a saving throw, you can gain a bonus to the roll equal to the number of allies you can see within 6m of you (maximum bonus of +5). Once you use this trait, you can't use it again until you finish a short or long rest." }
+    { "name": "Martial Training", "description": "You are proficient with martial weapons of your choice and with light and medium armor." },
+    { "name": "Saving Face", "description": "Hobgoblins are careful not to show weakness in front of their allies, for fear of losing status. If you miss with an attack roll or fail an ability check or a saving throw, you can gain a bonus to the roll equal to the number of allies you can see within 6m of you (maximum bonus of +5). Once you use this trait, you can't use it again until you finish a short or long rest." },
+    { "name": "Tactician", "description": "Careful combat tactics come naturally to you. You can take the disengage action as a bonus action." }
   ],
   "agepoints": {
     "puberty": 8,

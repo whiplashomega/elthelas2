@@ -49,6 +49,7 @@
       "description": "",
       "traits": [
         { "name": "Earth Walk", "description": "You can move across difficult terrain made of earth or stone without expending extra movement." },
+        { "name": "Stones Toughness", "description": "Your thick stony skin makes you unusually resilient to damage. You gain an extra hit point per level." },
         { "name": "Merge with Stone", "description": "You know the blade ward cantrip.\n\n Starting at 5th level, you can cast the pass without trace spell once with this trait, requiring no material components. Once you cast the spell with this trait you can't cast the spell with it again until you finish a long rest. You can also cast it using any spell slots you have of the appropriate level.\n\nIntelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this ancestry)." }
       ],
       "averageheight": 67,
