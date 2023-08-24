@@ -2,7 +2,7 @@ export default [
   {
     "name": "Agonizing Blast",
     "prereq": "eldritch blast cantrip",
-    "description": "When you cast eldritch blast, add your Charisma modifier to the damage it deals on a hit."
+    "description": "When you cast eldritch blast, add your spellcasting modifier to the damage it deals on a hit."
   },
   {
     "name": "Armor of Shadows",
@@ -47,7 +47,7 @@ export default [
   {
     "name": "Cloak of Flies",
     "prereq": "5th level warlock",
-    "description": "As a bonus action, you can surround yourself with a magical aura that looks like buzzing flies. The aura extends 5 feet from you in every direction, but not through total cover. It lasts until you're incapacitated or you dismiss it as a bonus action.\n\nThe aura grants you advantage on Charisma (Intimidation) checks but disadvantage on all other Charisma checks. Any other creature that starts its turn in the aura takes poison damage equal to your Charisma modifier (minimum of 0 damage).\n\nOnce you use this invocation, you can't use it again until you finish a short or long rest."
+    "description": "As a bonus action, you can surround yourself with a magical aura that looks like buzzing flies. The aura extends 5 feet from you in every direction, but not through total cover. It lasts until you're incapacitated or you dismiss it as a bonus action.\n\nThe aura grants you advantage on Charisma (Intimidation) checks but disadvantage on all other Charisma checks. Any other creature that starts its turn in the aura takes poison damage equal to your spellcasting modifier (minimum of 0 damage).\n\nOnce you use this invocation, you can't use it again until you finish a short or long rest."
   },
   {
     "name": "Devil's Sight",
@@ -142,12 +142,12 @@ export default [
   {
     "name": "Lifedrinker",
     "prereq": "12th level warlock, Pact of the Blade feature",
-    "description": "When you hit a creature with your pact weapon, the creature takes extra necrotic damage equal to your Charisma modifier (minimum 1)."
+    "description": "When you hit a creature with your pact weapon, the creature takes extra necrotic damage equal to your spellcasting modifier (minimum 1)."
   },
   {
     "name": "Maddening Hex",
     "prereq": "5th level warlock, hex spell or a warlock feature that curses",
-    "description": "As a bonus action, you cause a psychic disturbance around the target cursed by your hex spell or by a warlock feature of yours, such as Hexblade's Curse and Sign of Ill Omen. When you do so, you deal psychic damage to the cursed target and each creature of your choice within 5 feet of it. The psychic damage equals your Charisma modifier (minimum of 1 damage). To use this invocation, you must be able to see the cursed target, and it must be within 30 feet of you."
+    "description": "As a bonus action, you cause a psychic disturbance around the target cursed by your hex spell or by a warlock feature of yours, such as Hexblade's Curse and Sign of Ill Omen. When you do so, you deal psychic damage to the cursed target and each creature of your choice within 5 feet of it. The psychic damage equals your spellcasting modifier (minimum of 1 damage). To use this invocation, you must be able to see the cursed target, and it must be within 30 feet of you."
   },
   {
     "name": "Mask of Many Faces",

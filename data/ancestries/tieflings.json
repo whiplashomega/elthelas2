@@ -75,7 +75,7 @@
       "name": "Dwarf-born Tieflings",
       "singular": "Dwarf-born Tiefling",
       "description": "While Tieflings are rare among the dwarves, they are not unheard of. These children are often considered signs of ill-will by their communities, often turning their whole families into outcasts, though dwarven cultures strong family values mean the parents will still raise these children as their own.",
-      "traits": [,
+      "traits": [
       { "name": "Dwarven Resilience", "description": "You have advantage on saving throws against poison, and you have resistance against poison damage." },
       { "name": "Dwarven Combat Training", "description": "You have proficiency with the battleaxe, handaxe, light hammer, and warhammer." },
       { "name": "Tool Proficiency", "description": "You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools." },
