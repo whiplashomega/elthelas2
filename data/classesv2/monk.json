@@ -33,7 +33,7 @@
     {
       "name": "Unarmored Movement",
       "counttype": "table",
-      "count": [[2, "+3m"],[6,"+4m"],[10,"+6m"],[14,"+7m"],[18,"+9m"]],
+      "count": [[2, "+2m"],[6,"+3m"],[10,"+4m"],[14,"+5m"],[18,"+6m"]],
       "minlevel": 1,
       "addToTable": true,
       "tableOnly": true,

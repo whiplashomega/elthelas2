@@ -37,7 +37,7 @@
       "averageweight": 90,
       "baseweight": 55,
       "weightroll": "2d4",
-      "speed": [5, 10, 0, 0, 0]
+      "speed": [5, 8, 0, 0, 0]
     }
   ]
 }

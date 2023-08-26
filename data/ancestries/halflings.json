@@ -35,7 +35,7 @@
       "averageweight": 40,
       "baseweight": 35,
       "weightroll": "1",
-      "speed": [7, 0, 0, 0, 0]
+      "speed": [5, 0, 0, 0, 0]
     },
     {
       "id": "stronghearthalfling",
@@ -55,7 +55,7 @@
       "averageweight": 50,
       "baseweight": 35,
       "weightroll": "1d6",
-      "speed": [7, 0, 0, 0, 0]
+      "speed": [5, 0, 0, 0, 0]
     },
     {
       "id": "tallfellowhalflings",
