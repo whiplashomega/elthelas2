@@ -10,7 +10,7 @@ tags: [bard, sorcerer, wizard, artificer, arcanetrickster, level5, transmutation
 
 **Casting Time**: 1 action
 
-**Range**: 34m
+**Range**: 24m
 
 **Components**: V, S
 

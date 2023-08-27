@@ -10,7 +10,7 @@ tags: [druid, eldritchknight, level2, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 34m
+**Range**: 24m
 
 **Components**: V, S, M (several seeds of any moonseed plant and a piece of opalescent feldspar)
 

@@ -10,7 +10,7 @@ tags: [wizard, artificer, level4, transmutation]
 
 **Casting Time**: 10 minutes
 
-**Range**: 34m
+**Range**: 24m
 
 **Components**: V, S
 

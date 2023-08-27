@@ -10,7 +10,7 @@ tags: [arcanetrickster, cleric, druid, ranger, level2, divination]
 
 **Casting Time**: 1 action
 
-**Range**: 34m
+**Range**: 24m
 
 **Components**: V, S
 

@@ -22,7 +22,7 @@ tags: [wizard, level8, conjuration]
 
 **Damage**: []
 
-A fortress of stone erupts from a square area of ground of your choice that you can see within range. The area is 34m on each side, and it must not have any buildings or other structures on it. Any creatures in the area are harmlessly lifted up as the fortress rises.
+A fortress of stone erupts from a square area of ground of your choice that you can see within range. The area is 24m on each side, and it must not have any buildings or other structures on it. Any creatures in the area are harmlessly lifted up as the fortress rises.
 
 The fortress has four turrets with square bases, each one 4m on a side and 6m tall, with one turret on each corner. The turrets are connected to each other by stone walls that are each 23m long, creating an enclosed area. Each wall is 1 foot thick and is composed of panels that are 2m wide and 4m tall. Each panel is contiguous with two other panels or one other panel and a turret. You can place up to four stone doors in the fortress’s outer wall.
 

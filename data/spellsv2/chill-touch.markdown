@@ -10,7 +10,7 @@ tags: [sorcerer, warlock, wizard, cantrip, necromancy]
 
 **Casting Time**: 1 action
 
-**Range**: 34m
+**Range**: 24m
 
 **Components**: V, S
 

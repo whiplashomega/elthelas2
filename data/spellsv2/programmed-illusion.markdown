@@ -10,7 +10,7 @@ tags: [bard, wizard, level6, illusion]
 
 **Casting Time**: 1 action
 
-**Range**: 34m
+**Range**: 24m
 
 **Components**: V, S, M (a bit of fleece and jade dust worth at least 25 gp)
 

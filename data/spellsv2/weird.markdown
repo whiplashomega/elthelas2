@@ -10,7 +10,7 @@ tags:   [archivist, warlock, wizard, level9, illusion]
 
 **Casting Time**: 1 action
 
-**Range**: 34m
+**Range**: 24m
 
 **Components**: V, S
 

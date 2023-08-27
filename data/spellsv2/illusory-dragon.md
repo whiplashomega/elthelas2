@@ -10,7 +10,7 @@ tags: [wizard, level8, illusion]
 
 **Casting Time**: 1 action
 
-**Range**: 34m
+**Range**: 24m
 
 **Components**: S
 

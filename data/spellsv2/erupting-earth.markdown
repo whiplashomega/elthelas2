@@ -10,7 +10,7 @@ tags: [druid, sorcerer, wizard, eldritchknight, level3, transmutation]
 
 **Casting Time**: 1 action
 
-**Range**: 34m
+**Range**: 24m
 
 **Components**: V, S, M (a piece of obsidian)
 

@@ -149,7 +149,7 @@
         {
           "level": 2,
           "name": "Inspiring Movement",
-          "description": "When an enemy you can see ends its turn within 5 feet of an ally of yours who is within 60 feet of you, you can use your Reaction and expend one use of your Bardic Inspiration to move up to half your Speed. Then roll your Bardic Inspiration die, and the ally can move up to a number of feet equal to 5 times the number rolled. None of this feature's movement provokes Opportunity Attacks."
+          "description": "When an enemy you can see ends its turn within 1m of an ally of yours who is within 24m of you, you can use your Reaction and expend one use of your Bardic Inspiration to move up to half your Speed. Then roll your Bardic Inspiration die, and the ally can move up to a number of meters equal to the number rolled. None of this feature's movement provokes Opportunity Attacks."
         },
         {
           "level": 6,

@@ -10,7 +10,7 @@ tags: [arcanetrickster, bard, cleric, ranger, level2, illusion, ritual]
 
 **Casting Time**: 1 action
 
-**Range**: 34m
+**Range**: 24m
 
 **Components**: V, S
 

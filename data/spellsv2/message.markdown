@@ -10,7 +10,7 @@ tags: [arcanetrickster, bard, sorcerer, wizard, eldritchknight, artificer, cantr
 
 **Casting Time**: 1 action
 
-**Range**: 34m
+**Range**: 24m
 
 **Components**: V, S, M (a short piece of copper wire)
 

@@ -1,6 +1,6 @@
 // import test from '@/tests/unit/charbuilder.test.js';
 
-import { useStaticsStorev2, useCharacterStore, useUserStore, useCreatureStore } from '@/stores/index';
+import { useStaticsStorev2, useCharacterv2Store, useUserStore, useCreatureStore } from '@/stores/index';
 import { storeToRefs } from 'pinia';
 import abilityscores from '@/components/characterbuilderv2/abilityscores.vue';
 import actions from '@/components/characterbuilderv2/actions.vue';
@@ -35,7 +35,7 @@ export default {
   setup () {
     // stores
     const statics = useStaticsStorev2();
-    const characters = useCharacterStore();
+    const characters = useCharacterv2Store();
     const creatures = useCreatureStore();
     const userinfo = useUserStore();
     // initial data retrieval

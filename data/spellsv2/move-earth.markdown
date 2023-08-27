@@ -10,7 +10,7 @@ tags: [druid, sorcerer, wizard, level6, transmutation]
 
 **Casting Time**: 1 action
 
-**Range**: 34m
+**Range**: 24m
 
 **Components**: V, S, M (an iron blade and a small bag containing a mixture of soils--clay, loam, and sand)
 

@@ -10,7 +10,7 @@ tags: [sorcerer, warlock, eldritchknight, wizard, level5, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 34m
+**Range**: 24m
 
 **Components**: V, S, M (a hand mirror)
 
@@ -24,7 +24,7 @@ tags: [sorcerer, warlock, eldritchknight, wizard, level5, evocation]
 
 A shimmering wall of bright light appears at a point you choose within range. The wall appears in any orientation you choose: horizontally, vertically, or diagonally. It
 can be free floating, or it can rest on a solid surface. The wall can be up to 12m long, 2m high, and 1m thick. The wall blocks line of sight, but creatures
-and objects can pass through it. It emits bright light out to 34m and dim light for an additional 34m.
+and objects can pass through it. It emits bright light out to 24m and dim light for an additional 24m.
 
 When the wall appears, each creature in its area must make a Constitution saving throw. On a failed save, a creature takes 4d8 radiant damage, and it is blinded for
 1 minute. On a successful save, it takes half as much damage and isn’t blinded. A blinded creature can make a Constitution saving throw at the end of each of its

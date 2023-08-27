@@ -10,7 +10,7 @@ tags: [arcanetrickster, wizard, artificer, level4, abjuration]
 
 **Casting Time**: 10 minutes
 
-**Range**: 34m
+**Range**: 24m
 
 **Components**: V, S, M (a thin sheet of lead, a piece of opaque glass, a wad of cotton or cloth, and powdered chrysolite)
 

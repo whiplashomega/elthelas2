@@ -10,7 +10,7 @@ tags: [archivist, druid, sorcerer, wizard, artificer, level5, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 34m
+**Range**: 24m
 
 **Components**: V, S, M (a small block of granite)
 

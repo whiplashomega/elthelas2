@@ -10,7 +10,7 @@ tags: [druid, ranger, sorcerer, wizard, level1, conjuration]
 
 **Casting Time**: 1 action
 
-**Range**: 34m
+**Range**: 24m
 
 **Components**: V, S
 

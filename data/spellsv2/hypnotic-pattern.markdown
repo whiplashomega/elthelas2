@@ -10,7 +10,7 @@ tags: [arcanetrickster, bard, sorcerer, warlock, wizard, level3, illusion]
 
 **Casting Time**: 1 action
 
-**Range**: 34m
+**Range**: 24m
 
 **Components**: S, M (a glowing stick of incense or a crystal vial filled with phosphorescent material)
 
