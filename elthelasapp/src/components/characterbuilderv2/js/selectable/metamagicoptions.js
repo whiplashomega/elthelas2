@@ -5,7 +5,7 @@ export default [
   },
   {
     "name": "Distant Spell",
-    "description": "When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell.\n\nWhen you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet."
+    "description": "When you cast a spell that has a range of 1m or greater, you can spend 1 sorcery point to double the range of the spell.\n\nWhen you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 6m."
   },
   {
     "name": "Empowered Spell",

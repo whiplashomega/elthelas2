@@ -7,7 +7,7 @@ export default [
   {
     "name": "Back on Your Feet",
     "skill": "Acrobatics",
-    "description": "You can stand up from prone using only 5 feet of movement.",
+    "description": "You can stand up from prone using only 1m of movement.",
   },
   {
     "name": "Magical Appraisal",
@@ -17,12 +17,12 @@ export default [
   {
     "name": "Fast Mount",
     "skill": "Animal Handling",
-    "description": "You can mount or dismount a creature using only 5 feet of movement."
+    "description": "You can mount or dismount a creature using only 1m of movement."
   },
   {
     "name": "Extreme Leap",
     "skill": "Athletics",
-    "description": "Your jump distance increases by 10 ft."
+    "description": "Your jump distance increases by 2m."
   },
   {
     "name": "Corner Perch",

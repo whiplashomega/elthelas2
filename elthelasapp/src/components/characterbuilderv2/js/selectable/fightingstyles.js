@@ -17,7 +17,7 @@ export default [
     },
     {
       "name": "Protection",
-      "description": "When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield."
+      "description": "When a creature you can see attacks a target other than you that is within 1m of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield."
     },
     {
       "name": "Two-Weapon Fighting",
@@ -25,11 +25,11 @@ export default [
     },
     {
       "name": "Blind Fighting",
-      "description": "You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you are blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you."
+      "description": "You have blindsight with a range of 2m. Within that range, you can effectively see anything that isn't behind total cover, even if you are blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you."
     },
     {
       "name": "Interception",
-      "description": "When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by 1d10 + your proficiency bonus (to a minimum of 0 damage). You must be wielding a shield or a simle or martial weapon to use this reaction."
+      "description": "When a creature you can see hits a target, other than you, within 1m of you with an attack, you can use your reaction to reduce the damage the target takes by 1d10 + your proficiency bonus (to a minimum of 0 damage). You must be wielding a shield or a simle or martial weapon to use this reaction."
     },
     {
       "name": "Superior Technique",
