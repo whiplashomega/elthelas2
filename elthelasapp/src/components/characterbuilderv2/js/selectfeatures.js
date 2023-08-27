@@ -29,7 +29,8 @@ export default {
     numTricks () {
       var asi = 0;
       this.character.charclasses.forEach((cl) => {
-        if (cl.thisclass.name === "Rogue" && cl.level >= 5) {
+        if (cl.thisclass.name === "Rogue" && cl.level >= 4) {
+          asi = 1;
           asi += Math.floor((cl.level - 1)/4); // mimic prof
         }
       });

@@ -1,4 +1,4 @@
-import { useCharacterv2Store, useStaticsStorev2, useWorldStore } from '@/stores/index';
+import { useCharacterv2Store, useStaticsStorev2 } from '@/stores/index';
 import { storeToRefs } from 'pinia';
 export default {
   setup () {

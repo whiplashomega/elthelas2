@@ -188,7 +188,7 @@
         {
           "level": 2,
           "name": "Hunter's Prey",
-          "description": "You gain the following features, but can only use one of them each round.\n\n**Colossus Slayer.** Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage. You can deal this extra damage only once per turn.\n\n**Giant Killer.\n\n When a Large or larger creature within your reach hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.\n\n**Horde Breaker.** Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 2m of the original target and within range of your weapon."
+          "description": "You gain the following features, but can only use one of them each round.\n\n**Colossus Slayer.** Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage. You can deal this extra damage only once per turn.\n\n**Giant Killer.** When a Large or larger creature within your reach hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.\n\n**Horde Breaker.** Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 2m of the original target and within range of your weapon."
         },
         {
           "level": 6,
