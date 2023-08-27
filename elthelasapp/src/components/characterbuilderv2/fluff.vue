@@ -47,10 +47,10 @@
           </div>
           <div class="col-sm-4">
             <select class="charsheet-text" v-model="faction.rank">
-              <option :value="faction.rank">{{ faction.rank.name }}</option>
+              <option :value="faction.rank" v-if="faction.rank">{{ faction.rank.name }}</option>
               <option v-for="rank in faction.faction.ranks" :key="rank.name" :title="rank.description" :value="rank">{{ rank.name }}</option>
             </select>
-            Minimum Disposition: {{ faction.rank.minDisposition }}
+            Minimum Disposition: <span v-if="faction.rank">{{ faction.rank.minDisposition }}</span>
           </div>
           <div class="col-sm-1">
             <button class="btn btn-danger btn-sm print-hide" @click="removeFaction(index)">-</button>
