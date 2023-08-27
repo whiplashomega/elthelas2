@@ -126,7 +126,11 @@ export default {
       sum = sum.add(a.weight);
       if (a.weightCounts) {
         sum = sum.add(a.equipment.reduce((a, b) => {
-          return a.add(dec(b.weight).mul(b.quantity));
+          if (b.quantity && b.weight) {
+            return a.add(dec(b.weight).mul(b.quantity));
+          } else {
+            return a;
+          }
         }, dec(0)));
       }
     });
