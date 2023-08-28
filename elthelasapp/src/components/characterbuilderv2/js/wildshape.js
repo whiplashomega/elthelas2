@@ -56,6 +56,9 @@ export default {
     maxCR () {
       if (this.moonDruid) {
         let level = Math.floor(this.druidLevel / 3);
+        if (this.druidLevel === 2) {
+          level = 1;
+        }
         if (this.druidLevel >= 10) {
           level += 2;
         }
@@ -78,11 +81,16 @@ export default {
           return false;
         }
       }).sort((a, b) => {
-        if (a.name > b.name) {
-          return 1;
-        } else if (a.name < b.name) {
+        if (a.cr > b.cr) {
           return -1;
+        } else if (a.cr < b.cr) {
+          return 1;
         } else {
+          if (a.name > b.name) {
+            return 1;
+          } else if (a.name < b.name) {
+            return -1;
+          }
           return 0;
         }
       });
@@ -96,6 +104,26 @@ export default {
           form.shape = cre;
         });
       }
+    },
+    athleticsMod (shape) {
+      let stat = this.creaturecalc.statMod(shape, 0);
+      let skill = this.character.skills.find((a) => a.name === "Athletics");
+      return stat + skill.prof * this.profbonus;
+    },
+    acrobaticsMod (shape) {
+      let stat = this.creaturecalc.statMod(shape, 1);
+      let skill = this.character.skills.find((a) => a.name === "Acrobatics");
+      return stat + skill.prof * this.profbonus;
+    },
+    sleightMod (shape) {
+      let stat = this.creaturecalc.statMod(shape, 1);
+      let skill = this.character.skills.find((a) => a.name === "Sleight of Hand");
+      return stat + skill.prof * this.profbonus;
+    },
+    stealthMod (shape) {
+      let stat = this.creaturecalc.statMod(shape, 1);
+      let skill = this.character.skills.find((a) => a.name === "Stealth");
+      return stat + skill.prof * this.profbonus;
     }
   }
 };

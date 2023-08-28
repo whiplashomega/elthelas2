@@ -5,7 +5,7 @@
     <div class="row">
       <div class="col" v-for="option in character.wildShapeOptions" :key="option.key">
         <select class="charsheet-text" v-model="option.baseshape">
-          <option v-for="form in availableForms" :key="form.name" :value="form">{{form.name}}</option>
+          <option v-for="form in availableForms" :key="form.name" :value="form">{{form.name}} (CR {{ form.cr }})</option>
         </select>
         <button class="btn btn-success" @click="loadCreature(option)">Load</button>
         <div v-if="option.shape.name">
@@ -14,7 +14,11 @@
           <strong>HP:</strong> {{creaturecalc.hp(option.shape)}} ({{creaturecalc.basehp(option.shape)}} HP + {{creaturecalc.pp(option.shape)}} PP)<br />
           <strong>Speed:</strong> {{option.shape.speed}}<br />
           <strong>AC:</strong> {{option.shape.ac}}<br />
-          <strong>Attack Bonus:</strong> +{{ (creaturecalc.statMod(option.shape, 0) + profbonus > creaturecalc.statMod(option.shape, 1) + profbonus ? creaturecalc.statMod(option.shape, 0) + profbonus : creaturecalc.statMod(option.shape, 1) + profbonus) + (moonDruid && druidLevel >= 6 ? 1 : 0) }} (Use this instead of the listed bonus)
+          <strong>Attack Bonus:</strong> +{{ (creaturecalc.statMod(option.shape, 0) + profbonus > creaturecalc.statMod(option.shape, 1) + profbonus ? creaturecalc.statMod(option.shape, 0) + profbonus : creaturecalc.statMod(option.shape, 1) + profbonus) + (moonDruid && druidLevel >= 6 ? 1 : 0) }} (Use this instead of the listed bonus)<br />
+          <strong>Athletics:</strong> +{{ athleticsMod(option.shape) }}
+          <strong>Acrobatics:</strong> +{{ acrobaticsMod(option.shape) }}
+          <strong>Sleight of Hand:</strong> +{{ sleightMod(option.shape) }}
+          <strong>Stealth:</strong> +{{ stealthMod(option.shape) }}
           <table class="table">
             <tr>
               <th></th><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th>
