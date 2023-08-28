@@ -12,6 +12,7 @@ function stmc(str) {
   str = str.replace(/10 ft/g, "2m");
   str = str.replace(/10 feet/g, "2m");
   str = str.replace(/10 foot/g, "2m");
+  str = str.replace(/10-foot/g, "2m");
   str = str.replace(/15 ft/g, "3m");
   str = str.replace(/15 feet/g, "3m");
   str = str.replace(/15 foot/g, "3m");
