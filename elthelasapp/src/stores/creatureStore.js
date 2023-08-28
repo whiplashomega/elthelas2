@@ -89,6 +89,7 @@ export default {
             return cre._id === id;
           });
           this.creatures.splice(i, 1);
+          resolve(response);
         });
       });
     },
@@ -97,6 +98,7 @@ export default {
         axios.post('/creatures/?token=' + localStorage.getItem('token'), { creature: creature }).then((response) => {
           creature._id = response.data._id;
           this.creatures.push(response.data);
+          resolve(true);
         });
       });
     }
