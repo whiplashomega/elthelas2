@@ -3,7 +3,7 @@ layout: post
 title:  "Summon Beasts"
 date:   2015-01-01
 source: PHB.225
-tags: [druid, ranger, level3, conjuration]
+tags: [druid, ranger, level1, conjuration]
 ---
 
 **1st-level conjuration**
