@@ -192,6 +192,8 @@
         <div class="btn-group"><button type="button" class="btn btn-default" @click="handleChangePassword(); cp.loginformactive = false;" :disabled="!cp.loginformactive">Change Password</button><button type="button" class="btn btn-danger" @click="cp.isActive=false">Cancel</button></div>
       </template>
     </modal>
+    <!-- Google tag (gtag.js) -->
+
     <!--<b-modal id="changepasswordmodal" size="lg"
              title="Update Password" v-model="showChangePassword"
              hide-footer :modal-class="user.loggedin.themesetting">
