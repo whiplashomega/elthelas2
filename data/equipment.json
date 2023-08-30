@@ -882,7 +882,7 @@
    "Description": "A poisoner’s kit includes the vials, chemicals, and other equipment necessary for the creation of poisons. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to craft or use poisons."
  },
  {
-   "Item": "Thieves’ tools",
+   "Item": "Thieves' tools",
    "Cost": 25,
    "Weight": 1,
    "Description": "This set of tools includes a small file, a set o f lock picks, a small mirror m ounted on a metal handle, a set of narrow-bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make to disarm traps or open locks."
@@ -1014,7 +1014,7 @@
  },
  {
     "Item": "Burglar's Pack (will add contents to inventory)",
-    "Cost": 16,
+    "Cost": 42,
     "Weight": 0,
     "Pack": true,
     "PackContainer":
@@ -1032,9 +1032,10 @@
       { "Item": "Rations (1 day)", "quantity": 5 },
       { "Item": "Tinderbox", "quantity": 1 },
       { "Item": "Waterskin", "quantity": 1 },
-      { "Item": "Rope, hempen (50 feet)", "quantity": 1 }
+      { "Item": "Rope, hempen (50 feet)", "quantity": 1 },
+      { "Item": "Thieves' tools", "quantity": 1 }
     ],
-    "Description": "Includes a backpack, a bag of 1,000 ball bearings, 10 feet of string, a bell, 5 candles, a crowbar, a hammer, 10 pitons, a hooded lantern, 2 flasks of oil, 5 days rations, a tinderbox, and a waterskin. The pack also has 50 feet of hempen rope strapped to the side of it."
+    "Description": "Includes a backpack, a bag of 1,000 ball bearings, 10 feet of string, a bell, 5 candles, a crowbar, a hammer, 10 pitons, a hooded lantern, 2 flasks of oil, 5 days rations, a tinderbox, thieves' tools, and a waterskin. The pack also has 50 feet of hempen rope strapped to the side of it."
   },
   {
     "Item": "Diplomat's Pack (will add contents to inventory)",
@@ -1059,7 +1060,7 @@
   },
   {
     "Item": "Dungeoneer's Pack (will add contents to inventory)",
-    "Cost": 12,
+    "Cost": 38,
     "Weight": 0,
     "Pack": true,
     "PackContainer":
@@ -1072,13 +1073,15 @@
       { "Item": "Waterskin", "quantity": 1 },
       { "Item": "Rope, hempen (50 feet)", "quantity": 1 },
       { "Item": "Piton", "quantity": 10 },
-      { "Item": "Torch", "quantity": 10 }
+      { "Item": "Torch", "quantity": 10 },
+      { "Item": "Bedroll", "quantity": 1 },
+      { "Item": "Climber's kit", "quantity": 1 }
     ],
-    "Description": "Includes a backpack, a crowbar, a hammer, 10 pitons, 10 torches, a tinderbox, 10 days of rations, and a waterskin. The pack also has 50 feet of hempen rope strapped to the side of it."
+    "Description": "Includes a backpack, a crowbar, a hammer, 10 pitons, 10 torches, a tinderbox, 10 days of rations, a bedroll, a climber's kit and a waterskin. The pack also has 50 feet of hempen rope strapped to the side of it."
   },
   {
     "Item": "Entertainer's Pack (will add contents to inventory)",
-    "Cost": 40,
+    "Cost": 41,
     "Weight": 0,
     "Pack": true,
     "PackContainer":
@@ -1095,7 +1098,7 @@
   },
   {
     "Item": "Explorer's Pack (will add contents to inventory)",
-    "Cost": 10,
+    "Cost": 37,
     "Weight": 0,
     "Pack": true,
     "PackContainer":
@@ -1104,16 +1107,20 @@
       { "Item": "Bedroll", "quantity": 1 },
       { "Item": "Mess kit", "quantity": 1 },
       { "Item": "Tinderbox", "quantity": 1 },
-      { "Item": "Torch", "quantity": 10 },
       { "Item": "Rations (1 day)", "quantity": 10 },
       { "Item": "Waterskin", "quantity": 1 },
-      { "Item": "Rope, hempen (50 feet)", "quantity": 1 }
+      { "Item": "Rope, hempen (50 feet)", "quantity": 1 },
+      { "Item": "Cartographer's tools", "quantity": 1 },
+      { "Item": "Tent, two-person", "quantity": 1 },
+      { "Item": "Lantern, hooded", "quantity": 1 },
+      { "Item": "Oil (flask)", "quantity": 2 },
+      { "Item": "Hunting trap", "quantity": 1 }
     ],
-    "Description": "Includes a backpack, a bedroll, a mess kit, a tinderbox, 10 torches, 10 days of rations, and a waterskin. The pack also has 50 feet of hempen rope strapped to the side of it."
+    "Description": "Includes a backpack, a bedroll, a mess kit, a tinderbox, 10 days of rations, a waterskin, cartographer's tools, a hooded lantern, 2 flasks of oil, and a hunting trap. The pack also has 50 feet of hempen rope and a tent strapped to the side of it."
   },
   {
     "Item": "Priest's Pack (will add contents to inventory)",
-    "Cost": 19,
+    "Cost": 39,
     "Weight": 0,
     "Pack": true,
     "PackContainer":
@@ -1123,17 +1130,18 @@
       { "Item": "Candle", "quantity": 10 },
       { "Item": "Tinderbox", "quantity": 1 },
       { "Item": "Alms box", "quantity": 1 },
-      { "Item": "Incense", "quantity": 2 },
+      { "Item": "Incense", "quantity": 5 },
       { "Item": "Censer", "quantity": 1 },
       { "Item": "Clothes, vestments", "quantity": 1 },
       { "Item": "Rations (1 day)", "quantity": 2 },
+      { "Item": "Reliquary", "quantity": 1 },
       { "Item": "Waterskin", "quantity": 1 }
     ],
-    "Description": "Includes a backpack, a blanket, 10 candles, a tinderbox, an alms box, 2 blocks of incense, a censer, vestments, 2 days of rations, and a waterskin."
+    "Description": "Includes a backpack, a blanket, 10 candles, a tinderbox, an alms box, 5 blocks of incense, a censer, vestments, 2 days of rations, a holy symbol, and a waterskin."
   },
   {
     "Item": "Scholar's Pack (will add contents to inventory)",
-    "Cost": 40,
+    "Cost": 39,
     "Weight": 0,
     "Pack": true,
     "PackContainer":
