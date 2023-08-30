@@ -155,14 +155,21 @@
       "cantrips": 2,
       "resources": [
         {
-          "name": "Restorative Reagents",
+          "name": "Restorative Reagents: Lesser Restoration",
           "minlevel": 9,
           "counttype": "INT1",
           "count": 0,
           "recovery": "longrest"
         },
         {
-          "name": "Chemical Mastery",
+          "name": "Chemical Mastery: Greater Restoration",
+          "minlevel": 15,
+          "counttype": "fixed",
+          "count": 1,
+          "recovery": "longrest"
+        },
+        {
+          "name": "Chemical Mastery: Heal",
           "minlevel": 15,
           "counttype": "fixed",
           "count": 1,
@@ -182,8 +189,8 @@
         },
         {
           "level": 2,
-          "name": "Experimental Elixer",
-          "description": "Beginning at 3rd level, whenever you finish a long rest, you can magically produce an experimental elixir in an empty flask you touch. Roll on the Experimental Elixir table for the elixir's effect, which is triggered when someone drinks the elixir. As an action, a creature can drink the elixir or administer it to an incapacitated creature.\n\nCreating an experimental elixir requires you to have alchemist supplies on your person, and any elixir you create with this feature lasts until it is drunk or until the end of your next long rest.\n\nWhen you reach certain levels in this class, you can make more elixirs at the end of a long rest: two at 6th level and three at 15th level. Roll for each elixir's effect separately. Each elixir requires its own flask.\n\nYou can create additional experimental elixirs by expending a spell slot of 1st level or higher for each one. When you do so, you use your action to create the elixir in an empty flask you touch, and you choose the elixir's effect from the Experimental Elixir table."
+          "name": "Experimental Elixir",
+          "description": "Beginning at 3rd level, whenever you finish a long rest, you can magically produce an experimental elixir in an empty flask you touch. Choose from the Experimental Elixir options below for the elixir's effect, which is triggered when someone drinks the elixir. As an action, a creature can drink the elixir or administer it to an incapacitated creature.\n\nCreating an experimental elixir requires you to have alchemist supplies on your person, and any elixir you create with this feature lasts until it is drunk or until the end of your next long rest.\n\nWhen you reach certain levels in this class, you can make more elixirs at the end of a long rest: two at 6th level and three at 15th level. Roll for each elixir's effect separately. Each elixir requires its own flask.\n\nYou can create additional experimental elixirs by expending a spell slot of 1st level or higher for each one.\n\n#### Experimental Elixir Options\n\n* **Healing**. The drinker regains a number of hit points equal to 4d4 + your intelligence modifier.\n* **Swiftness** The drinker's walking speed increases by 20 feet for 1 hour.\n* **Resilience** The drinker gains a +2 bonus to AC for 10 minutes.\n* **Boldness.** The drinker can roll a d6 and add the number rolled to every attack roll and saving throw they make for the next minute.\n* **Flight.** The drinker gains a flying speed equal to their speed for 10 minutes.\n* **Transformation** The drinker's body is transformed as if by the Alter Self spell. The drinker determines the transformation caused by the spell, the effect of which lasts for 1 hour."
         },
         {
           "level": 6,
@@ -194,6 +201,11 @@
           "level": 10,
           "name": "Restorative Reagents",
           "description": "Starting at 10th level, you can incorporate restorative reagents into some of your works:\n\n* Whenever a creature drinks an experimental elixir you created, the creature gains temporary hit points equal to 2d6 + your Intelligence modifier (minimum of 1 temporary hit point).\n* You can cast lesser restoration without expending a spell slot and without preparing the spell, provided you use alchemist's supplies as the spellcasting focus. You can do so a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest."
+        },
+        {
+          "level": 10,
+          "name": "Poisonous Infusions",
+          "description": "You are able to infuse your weapon attacks and certain spells with poison. Once per turn when you hit with a weapon attack or do damage with a spell, you can add 1d6 poison damage to one damage roll of the attack or spell. If the spell is a spell of 1st level or higher, you instead add a number of d6s equal to the level of the spell."
         },
         {
           "level": 14,

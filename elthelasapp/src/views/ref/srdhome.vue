@@ -93,6 +93,8 @@
       <h4>Artificer</h4>
       <ul>
         <li>Battle Smith gets Combat Caster feature</li>
+        <li>Alchemist Experimental Elixir options improved, and can always be chosen rather than random.</li>
+        <li>Alchemist gains poisonous infusions feature, allowing them to add poison damage to attacks and spells.</li>
       </ul>
       <h4>Barbarian</h4>
       <ul>
@@ -128,7 +130,8 @@
         <li>Wildshape rules modified, largely for clarity, but also some balance and ease of play changes.</li>
         <li>All subclasses can now wildshape as a bonus action.</li>
         <li>Limited number of wild shape forms.</li>
-        <li>Moon Druids now get the ability to wild shape into even better beast forms, and can choose elementals other than the standard 4.</li>
+        <li>Moon Druids now get the ability to wild shape into even better beast forms at high levels, and can choose elementals other than the standard 4.</li>
+        <li>Elemental Fury ability added, giving a damage boost at level 7.</li>
         <li>+1 bonus instead of natural weapon attacks 'count as magic'.</li>
         <li>Circle of the Land Circle Spells adds 1st level spells at 2nd level (in addition to the 2-5th level spells at later levels).</li>
       </ul>
@@ -177,8 +180,11 @@
       </ul>
       <h4>Rogue</h4>
       <ul>
-        <li>Skill Tricks!</li>
+        <li>Skill Tricks! -> Do cool stuff with skills you are proficient in.</li>
+        <li>Devious Strikes -> Modify sneak attack by trading damage for special effects.</li>
         <li>Arcane Trickster now a half-caster</li>
+        <li>Assassins Assassinate feature no longer requires the surprised condition, just first round of combat and an opponent who hasn't acted yet. Gives extra damage equal to rogue level instead of auto-crit.</li>
+        <li>Thief's Use Magic Device now gives an additional attunement slot, a chance to avoid expending charges on magic items, and the ability to use any spell scroll from any class.</li>
       </ul>
       <h4>Sorcerer</h4>
       <ul>
@@ -200,9 +206,11 @@
         <li>Pact's reworked
           <ul>
             <li>Pact of the Blade now gives Charisma to att/dmg instead of hex warrior doing so</li>
+            <li>Hex Warrior feature gone.</li>
             <li>All Pacts now have 5th level improvement that used to be an invocation.</li>
           </ul>
         </li>
+        <li>All warlocks get Medium armor proficiency.</li>
         <li>1 fewer invocation known</li>
         <li>Expanded spell lists now add to spells known.</li>
         <li>More spell slots, 2 at level 1, 3 at level 5, 4 at level 9, 5 at level 13, and 6 at level 17.</li>

@@ -15,6 +15,7 @@
           <strong>Speed:</strong> {{option.shape.speed}}<br />
           <strong>AC:</strong> {{option.shape.ac}}<br />
           <strong>Attack Bonus:</strong> +{{ (creaturecalc.statMod(option.shape, 0) + profbonus > creaturecalc.statMod(option.shape, 1) + profbonus ? creaturecalc.statMod(option.shape, 0) + profbonus : creaturecalc.statMod(option.shape, 1) + profbonus) + (moonDruid && druidLevel >= 6 ? 1 : 0) }} (Use this instead of the listed bonus)<br />
+          <strong>Damage Bonus:</strong> + {{ (creaturecalc.statMod(option.shape, 0) > creaturecalc.statMod(option.shape, 1) ? creaturecalc.statMod(option.shape, 0) : creaturecalc.statMod(option.shape, 1)) + (moonDruid && druidLevel >= 6 ? 1 : 0) }} (Use this instead of the listed bonus)<br />
           <strong>Athletics:</strong> +{{ athleticsMod(option.shape) }}<br />
           <strong>Acrobatics:</strong> +{{ acrobaticsMod(option.shape) }}<br />
           <strong>Sleight of Hand:</strong> +{{ sleightMod(option.shape) }}<br />
