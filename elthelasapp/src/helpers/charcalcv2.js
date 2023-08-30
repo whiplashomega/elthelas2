@@ -290,7 +290,7 @@ export default {
       if (a.thisclass.name === "Wizard" && a.level >= 2) {
         num += 1 + Math.floor(Math.min(a.level - 1, 8) / 2);
       }
-      if (a.thisclass.name === "Druid" && a.level >= 2 && (a.selsubclass.name === "Circle of the Land" || a.selsubclass.name === "Circle of Spores" || a.selsubclass.name === "Circle of Wildfire")) {
+      if (a.thisclass.name === "Druid" && a.level >= 2 && (a.selsubclass.name === "Circle of the Land" || a.selsubclass.name === "Circle of Spores" || a.selsubclass.name === "Circle of Wildfire" || a.selsubclass.name === "Circle of the Sea")) {
         num += Math.floor(Math.min(a.level - 1, 8) / 2) * 2;
       }
       if (a.thisclass.name === "Bard") {
@@ -298,6 +298,9 @@ export default {
       }
       if (a.thisclass.name === "Cleric" && a.level >= 2) {
         num += 2 + Math.floor(Math.min(a.level - 1, 8) / 2) * 2;
+      }
+      if (a.thisclass.name === "Artificer" && a.level >= 2) {
+        num += 2 + Math.floor(Math.min(a.level - 1, 16) / 4) * 2;
       }
       if (a.thisclass.name === "Ranger" && a.level >= 2) {
         num = Math.ceil(a.level / 2) + 2; // at level 2 = 3
