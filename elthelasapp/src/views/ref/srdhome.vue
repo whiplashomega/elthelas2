@@ -124,6 +124,8 @@
         <li>Holy Order feature.</li>
         <li>Blessed Strikes is now just a level 8 cleric feature, rather than a subclass feature in most subclasses.</li>
         <li>Channel Divinity moved to level 3, subclass channel divinity options moved to level 6</li>
+        <li>Twilight Sanctuary range reduced.</li>
+        <li>Emboldening Bond reduced to once per long rest.</li>
       </ul>
       <h4>Druid</h4>
       <ul>
@@ -185,6 +187,7 @@
         <li>Arcane Trickster now a half-caster</li>
         <li>Assassins Assassinate feature no longer requires the surprised condition, just first round of combat and an opponent who hasn't acted yet. Gives extra damage equal to rogue level instead of auto-crit.</li>
         <li>Thief's Use Magic Device now gives an additional attunement slot, a chance to avoid expending charges on magic items, and the ability to use any spell scroll from any class.</li>
+        <li>Inquisitive Rogue Unerring Eye is now always on, no longer requiring an action and no longer having limited uses.</li>
       </ul>
       <h4>Sorcerer</h4>
       <ul>
@@ -221,6 +224,13 @@
       <ul>
         <li>Expanded spellbook for each subclass</li>
         <li>Completely reworked bladesinger</li>
+        <li>War Wizard Arcane Deflection no longer limits you to cantrips, but is now limited to proficiency times per long rest.</li>
+        <li>War Wizard power surge now just gives bonus damage to cantrips.</li>
+        <li>Evocation Wizard Potent Cantrip now also gives intelligence modifier as bonus damage to cantrips.</li>
+        <li>Necromancer Wizard Grim Harvest now requires damaging a creature, not killing it.</li>
+        <li>Necromancer Wizard Undead Thralls now applies to all undead created or summoned by any spell.</li>
+        <li>Illusion Wizard features rearranged to provide more power earlier (malleable illusion moved to level 2, Illusory self to level 6).</li>
+        <li>Illusion Wizard gains Potent Illusions feature at level 10 (impose disadvantage on one save or check vs your illusions as a reaction)</li>
       </ul>
     </b-tab>
     <b-tab title="Building a Character">

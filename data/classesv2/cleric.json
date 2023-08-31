@@ -610,8 +610,8 @@
       "resources": [
         {
           "name": "Emboldening Bond",
-          "counttype": "prof",
-          "count": 0,
+          "counttype": "count",
+          "count": 1,
           "minlevel": 2,
           "recovery": "longrest"
         }
@@ -630,7 +630,7 @@
         {
           "level": 2,
           "name": "Emboldening Bond",
-          "description": "You can forge an empowering bond among people who are at peace with one another. As an action, you choose a number of willing creatures within 6m of you (this can include yourself) equal to your proficiency bonus. You create a magical bond among them for 10 minutes or until you use this feature again. While any bonded creature is within 6m of another, the creature can roll a d4 and add the number rolled to an attack roll, an ability check, or a saving throw it makes. Each creature can add the d4 no more than once per turn.\n\nYou can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+          "description": "You can forge an empowering bond among people who are at peace with one another. As an action, you choose a number of willing creatures within 6m of you (this can include yourself) equal to your proficiency bonus. You create a magical bond among them for 10 minutes or until you use this feature again. While any bonded creature is within 6m of another, the creature can roll a d4 and add the number rolled to an attack roll, an ability check, or a saving throw it makes. Each creature can add the d4 no more than once per turn.\n\nOnce you use this feature you cannot use it again until you finish a long rest."
         },
         {
           "level": 6,
@@ -817,7 +817,7 @@
         {
           "level": 6,
           "name": "Channel Divinity: Twilight Sanctuary",
-          "description": "You can use your Channel Divinity to refresh your allies with soothing twilight.\n\nAs an action, you present your holy symbol, and a sphere of twilight emanates from you. The sphere is centered on you, has a 6m radius, and is filled with dim light. The sphere moves with you, and it lasts for 1 minute or until you are incapacitated or die. Whenever a creature (including you) ends its turn in the sphere, you can grant that creature one of these benefits:\n\n* You grant it temporary hit points equal to 1d6 plus your cleric level.\n* You end on effect on it causing it to be charmed or frightened."
+          "description": "You can use your Channel Divinity to refresh your allies with soothing twilight.\n\nAs an action, you present your holy symbol, and a sphere of twilight emanates from you. The sphere is centered on you, has a 3m radius, and is filled with dim light. The sphere moves with you, and it lasts for 1 minute or until you are incapacitated or die. Whenever a creature (including you) ends its turn in the sphere, you can grant that creature one of these benefits:\n\n* You grant it temporary hit points equal to 1d6 plus your cleric level.\n* You end on effect on it causing it to be charmed or frightened."
         },
         {
           "level": 10,

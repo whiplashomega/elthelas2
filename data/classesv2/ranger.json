@@ -215,7 +215,7 @@
         {
           "level": 2,
           "name": "Gloom Stalker Magic",
-          "description": "You learn an additional spell when you reach certain levels in this class, as shown in the Gloom Stalker Spells table. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.\n\n* 2nd - disguise self\n* 5th - rope trick\n* 9th - fear\n* 13th - greater invisibility\n* 17th - seeming"
+          "description": "You learn an additional spell when you reach certain levels in this class, as shown in the Gloom Stalker Spells table. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.\n\n* 2nd - disguise self\n* 5th - darkness\n* 9th - fear\n* 13th - greater invisibility\n* 17th - seeming"
         },
         {
           "level": 2,
@@ -225,7 +225,7 @@
         {
           "level": 2,
           "name": "Umbral Sight",
-          "description": "You gain darkvision out to a range of 12m. If you already have darkvision from your race, its range increases by 6m.\n\nYou are also adept at evading creatures that rely on darkvision. While in darkness, you are invisible to any creature that relies on darkvision to see you in that darkness."
+          "description": "You gain darkvision out to a range of 12m. If you already have darkvision from your race, its range increases by 6m. Your darkvision can see through magical darkness."
         },
         {
           "level": 4,

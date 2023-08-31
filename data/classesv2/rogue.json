@@ -419,7 +419,7 @@
         {
           "level": 10,
           "name": "Unerring Eye",
-          "description": "Your senses are almost impossible to foil. As an action, you sense the presence of illusions, shapechangers not in their original form, and other magic designed to deceive the senses within 6m of you, provided you aren’t blinded or deafened. You sense that an effect is attempting to trick you, but you gain no insight into what is hidden or into its true nature.\n\nYou can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest."
+          "description": "Your senses are almost impossible to foil. You can sense the presence of illusions, shapechangers not in their original form, and other magic designed to deceive the senses within 6m of you, provided you aren’t blinded or deafened. You sense that an effect is attempting to trick you and its general location (within 2m), but you gain no insight into what is hidden or into its true nature."
         },
         {
           "level": 14,
