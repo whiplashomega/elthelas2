@@ -82,7 +82,7 @@
   {
     "name": "Eldritch Adept",
     "prereq": "Spellcasting or Pact Magic feature, 4th level",
-    "description": "Studying occult lore, you have unlocked eldritch power within yourself: \n* Increase your charisma by 1, to a maximum of 20.\n* You learn one Eldritch Invocation option of your choice from the warlock class. If the invocation has a prerequisite of any kind, you can choose that invocation only if you're a warlock who meets the prerequisite.Whenever you gain a level, you can replace the invocation with another one from the warlock class."
+    "description": "Studying occult lore, you have unlocked eldritch power within yourself: \n* Increase your intelligence or charisma by 1, to a maximum of 20.\n* You learn one Eldritch Invocation option of your choice from the warlock class. If the invocation has a prerequisite of any kind, you can choose that invocation only if you're a warlock who meets the prerequisite.Whenever you gain a level, you can replace the invocation with another one from the warlock class."
   },
   {
     "name": "Elemental Adept",
