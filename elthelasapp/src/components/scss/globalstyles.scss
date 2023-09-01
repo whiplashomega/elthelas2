@@ -51,9 +51,13 @@
 .dark .clickable {
   color: $darklink;
 }
+.dark .btn {
+  color: white;
+}
 
 .dark .btn-close, .dark .btn-close:hover {
   color: white;
+  background-color: lightgray;
 }
 
 .dark .card {
@@ -81,7 +85,16 @@
 .dark .table {
   --bs-table-striped-color: white;
 }
-
+.dark .dropdown-menu {
+  background-color: #115;
+  color: white;
+  .dropdown-item {
+    color: white;
+  }
+  hr.dropdown-divider {
+    border-color: white;
+  }
+}
 @media (prefers-color-scheme: light) {
   .system .nav-pills a {
     background-color: $sidenavbackground;
@@ -94,6 +107,9 @@
   background-color: $darksidenavbackground;
   color: $darksidenavcolor;
   }
+  .system .btn {
+    color: white;
+  }
   .system.fullBody {
     background-color: $darkbackground;
     color: $darktext;
@@ -104,6 +120,17 @@
   }
  .system .btn-close, .system .btn-close:hover {
     color: white;
+    background-color: white;
+  }
+  .system .dropdown-menu {
+    background-color: #115;
+    color: white;
+    .dropdown-item {
+      color: white;
+    }
+    hr.dropdown-divider {
+      border-color: white;
+    }
   }
   .system .card {
     color: black;

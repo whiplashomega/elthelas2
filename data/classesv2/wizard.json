@@ -100,12 +100,12 @@
         {
           "level": 2,
           "name": "Grim Harvest",
-          "description": "At 2nd level, you gain the ability to reap life energy from creatures you kill with your spells. Once per turn when you kill one or more creatures with a spell of 1st level or higher, you regain hit points equal to twice the spell’s level, or three times its level if the spell belongs to the School of Necromancy. You don’t gain this benefit for killing constructs or undead."
+          "description": "At 2nd level, you gain the ability to reap life energy from creatures you damage with your spells. Once per turn when you damage one or more creatures with a spell of 1st level or higher, you regain hit points equal to twice the spell’s level, or three times its level if the spell belongs to the School of Necromancy. You don’t gain this benefit for killing constructs or undead."
         },
         {
           "level": 6,
           "name": "Undead Thralls",
-          "description": "At 6th level, you add the animate dead spell to your spellbook if it is not there already. W hen you cast animate dead, you can target one additional corpse or pile of bones, creating another zombie or skeleton, as appropriate. Whenever you create an undead using a necromancy spell, it has additional benefits:\n\n* The creature’s hit point maximum is increased by an amount equal to your wizard level.\n* The creature adds your proficiency bonus to its weapon damage rolls."
+          "description": "At 6th level, you add the animate dead spell to your spellbook if it is not there already. W hen you cast animate dead, you can target one additional corpse or pile of bones, creating another zombie or skeleton, as appropriate. Whenever you create or summon undead using a spell, it has additional benefits:\n\n* The creature’s hit point maximum is increased by an amount equal to your wizard level.\n* The creature adds your proficiency bonus to its weapon damage rolls."
         },
         {
           "level": 10,
@@ -322,7 +322,7 @@
         {
           "level": 6,
           "name": "Potent Cantrip",
-          "description": "Starting at 6th level, your damaging cantrips affect even creatures that avoid the brunt of the effect. When a creature succeeds on a saving throw against your cantrip, the creature takes half the cantrip’s damage (if any) but suffers no additional effect from the cantrip."
+          "description": "Starting at 6th level, your damaging cantrips affect even creatures that avoid the brunt of the effect. When a creature succeeds on a saving throw against your cantrip, the creature takes half the cantrip’s damage (if any) but suffers no additional effect from the cantrip. Additionally, when you deal damage with an evocation cantrip you can add your intelligence modifier to one damage roll of the spell."
         },
         {
           "level": 10,
@@ -365,14 +365,19 @@
           "description": "You are studied in the art of Illusion. As part of your studies you have memorized certain illusion spells. Add the following spells to your spellbook at the level listed. Once you have added one of these spells to your spellbook, you always have it prepared, and it does not count against your maximum prepared spells.\n\n* 2nd - Silent Image\n* 3rd - Invisibility\n* 5th - Fear\n* 7th - Hallucinatory Terrain\n* 9th - Mislead"
         },
         {
-          "level": 6,
+          "level": 2,
           "name": "Malleable Illusions",
-          "description": "Starting at 6th level, when you cast an illusion spell that has a duration of 1 minute or longer, you can use your action to change the nature of that illusion (using the spell’s normal parameters for the illusion), provided that you can see the illusion."
+          "description": "When you cast an illusion spell that has a duration of 1 minute or longer, you can use your action to change the nature of that illusion (using the spell’s normal parameters for the illusion), provided that you can see the illusion."
+        },
+        {
+          "level": 6,
+          "name": "Illusory Self",
+          "description": "You can create an illusory duplicate of yourself as an instant, almost instinctual reaction to danger. When a creature makes an attack roll against you, you can use your reaction to interpose the illusory duplicate between the attacker and yourself. The attack automatically misses you, then the illusion dissipates.\n\nOnce you use this feature, you can’t use it again until you finish a short or long rest."
         },
         {
           "level": 10,
-          "name": "Illusory Self",
-          "description": "Beginning at 10th level, you can create an illusory duplicate of yourself as an instant, almost instinctual reaction to danger. When a creature makes an attack roll against you, you can use your reaction to interpose the illusory duplicate between the attacker and yourself. The attack automatically misses you, then the illusion dissipates.\n\nOnce you use this feature, you can’t use it again until you finish a short or long rest."
+          "name": "Potent Illusions",
+          "description": "You can give your illusions extra potency. As a reaction, when a creature makes a saving throw against an illusion spell you cast, or attempts an investigation or perception check to see through an illusion you created you can impose disadvantage on that check."
         },
         {
           "level": 14,
@@ -514,7 +519,7 @@
         {
           "level": 6,
           "name": "Power Surge",
-          "description": "Starting at 6th level, you can store magical energy within yourself to later empower your damaging spells. In its stored form, this energy is called a power surge.\n\nYou can store a maximum number of power surges equal to your Intelligence modifier (minimum of one). Whenever you finish a long rest, your number of power surges resets to one. Whenever you successfully end a spell with dispel magic or counterspell, you gain one power surge, as you steal magic from the spell you foiled. If you end a short rest with no power surges, you gain one power surge.\n\nOnce per turn when you deal damage to a creature or object with a wizard spell, you can spend one power surge to deal extra force damage to that target. The extra damage equals half your wizard level."
+          "description": "When you deal damage with a wizard cantrip you can add your intelligence modifier to the damage of the spell."
         },
         {
           "level": 10,
@@ -524,7 +529,7 @@
         {
           "level": 14,
           "name": "Deflecting Shroud",
-          "description": "At 14th level, your Arcane Deflection becomes infused with deadly magic. When you use your Arcane Deflection feature, you can cause magical energy to are from you. Up to three creatures of your choice that you can see within 12m of you each take force damage equal to half your wizard level."
+          "description": "At 14th level, your Arcane Deflection becomes infused with deadly magic. When you use your Arcane Deflection feature, you can cause magical energy to arc from you. Up to three creatures of your choice that you can see within 12m of you each take force damage equal to half your wizard level."
         }
       ]
     },
