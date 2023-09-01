@@ -81,6 +81,7 @@
         <li>Injuries.</li>
         <li>Group Ability Checks</li>
         <li>Factions</li>
+        <li>Drinking a potion yourself can be done as a bonus action.</li>
         <li>Metric Conversion and Space Rules -> 1 meter squares</li>
         <li>Flanking -> 1d6 Bonus damage.</li>
       </ul>
