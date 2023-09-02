@@ -105,7 +105,7 @@ export default {
       creatures, charlevel, accalc, getSpeedStat, getStatTotal, getStatMod, getSaveMod,
       getSkillMod, getHPTotal, getAttackBonus, getDamageBonus, totalslots, getInitMod,
       curcharacter, characters, token, loggedin, admin, userinfo, getFromServer, loadChar,
-      selCharacter, getCreature, saveNewCreature, deleteCreature, creaturecalc
+      selCharacter, getCreature, saveNewCreature, deleteCreature, creaturecalc, creatureStore
     };
   },
   props: {
@@ -462,7 +462,7 @@ export default {
       });
     },
     getCreaturesOnMount (creatures) {
-      this.$store.dispatch('getAllCreatures').then(() => {
+      this.creatureStore.getAllCreatures().then(() => {
         for (var x = 0; x < creatures.length; x++) {
           var cre = this.creatures.filter(function(a) {
             return a.name.toLowerCase().replace(/ /g, '') === creatures[x].toLowerCase().replace(/ /g, '');
@@ -482,9 +482,9 @@ export default {
   },
   mounted () {
     this.encountercreatures = [];
-    if (this.$route.params.encounter) {
+    if (this.$route.params.id) {
       console.log('there is an encounter parameter');
-      var creatures = this.$route.params.encounter.split('&');
+      var creatures = this.$route.params.id.split('&');
       this.getCreaturesOnMount(creatures);
     } else if (typeof this.creArray !== 'undefined' && this.creArray.length > 0) {
       console.log("running in campaign setting");
