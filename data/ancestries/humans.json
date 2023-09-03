@@ -24,7 +24,7 @@
       "description": "\n\nThe Deran people once had a great empire on the northeast coast of Riftlan. Their capital, Dera, was at the time the most beautiful city in the world, surpassing even Loridesa of Eldoran. then disaster struck in the form of demon invasion. They were saved from annihilation by the Dragon God Bahamut and relocated to a chain of islands off the coast, where the founded the nation of Dera'Dragorim. They have been close allies with dragon kind, particularly metallic dragons, ever since, and to this day they consider demons to be their most hated enemies (with devils not far behind).\n\n",
       "traits": [
         { "name": "Skills", "description": "You gain proficiency in one skill of your choice." },
-        { "name": "Draconic Heritage", "description": "You gain resistance to damage of one type: electric, fire, acid, or cold." },
+        { "name": "Draconic Heritage", "description": "You gain resistance to damage of one type: lightning, fire, acid, or cold." },
         { "name": "Demon Hunter", "description": "You have advantage on attack rolls, skill checks, and saving throws, made against or relating to fiends." },
         { "name": "Speed", "description": "Your base walking speed is 6m." }
       ],
