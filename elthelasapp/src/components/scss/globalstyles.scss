@@ -149,6 +149,10 @@
   }
   .system .table {
     --bs-table-striped-color: white;
+    color: white;
+    a {
+      color: white;
+    }
   }
 
 }
