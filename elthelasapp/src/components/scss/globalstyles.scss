@@ -110,6 +110,9 @@
   .system .btn {
     color: white;
   }
+  .system .table {
+    --bs-table-striped-color: white;
+  }
   .system.fullBody {
     background-color: $darkbackground;
     color: $darktext;

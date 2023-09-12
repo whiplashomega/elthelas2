@@ -1,5 +1,6 @@
 import { useCharacterv2Store, useUserStore } from '@/stores/index';
 import { storeToRefs } from 'pinia';
+import { marked } from '@/../node_modules/marked/lib/marked.esm.js';
 
 export default {
   setup () {
@@ -15,7 +16,8 @@ export default {
       userinfo,
       character,
       warlockSlotLevel,
-      castSpell
+      castSpell,
+      marked
     }
   },
   computed: {

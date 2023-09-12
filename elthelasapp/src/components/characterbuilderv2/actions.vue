@@ -17,7 +17,7 @@
             <option v-for="i in 9 - action.level" :key="i">{{ Number(i) + Number(action.level) }}</option>
             <option v-if="warlockSlotLevel >= action.level" value="warlock">wlk</option>
           </select>
-          <div v-if="action.show" v-html="$options.filters.marked(action.description)" :key="action.id"></div>
+          <div v-if="action.show" v-html="marked.parse(action.description)" :key="action.id"></div>
         </div>
       </div>
       <div class="col-sm">
@@ -36,7 +36,7 @@
             <option v-for="i in 9 - action.level" :key="i">{{ Number(i) + Number(action.level) }}</option>
             <option v-if="warlockSlotLevel >= action.level" value="warlock">wlk</option>
           </select>
-          <div v-if="action.show" v-html="$options.filters.marked(action.description)"></div>
+          <div v-if="action.show" v-html="marked.parse(action.description)"></div>
         </div>
       </div>
       <div class="col-sm">
@@ -55,7 +55,7 @@
             <option v-for="i in 9 - action.level" :key="i">{{ Number(i) + Number(action.level) }}</option>
             <option v-if="warlockSlotLevel >= action.level" value="warlock">wlk</option>
           </select>
-          <div v-if="action.show" v-html="$options.filters.marked(action.description)"></div>
+          <div v-if="action.show" v-html="marked.parse(action.description)"></div>
         </div>
       </div>
       <b-modal v-model="addActionModal" @ok="addAction()" :modal-class="userinfo.themesetting">

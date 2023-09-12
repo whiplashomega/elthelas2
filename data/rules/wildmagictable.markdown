@@ -5,14 +5,14 @@ Certain class features require you to roll a wild magic surge. If you need to ma
 
 1. Roll on this table every round for 1 minute
 2. Caster and target switch positions after spell
-3. Can see invisible creatures
-4. A flaming horse appears (Not Nightmare, real horse)
+3. Caster can see invisible creatures for 1 hour
+4. A flaming horse appears (Not Nightmare, real horse, probably not long for the world)
 5. A modron appears within 1m for one minute
-6. Caster explodes with plant growth
+6. Caster explodes with plant growth (as the spell cast as an action) centered on their location.
 7. Cast fireball at 3rd level centered on self
 8. Weapons in 18m radius turn to food for 1 minute
-9. Cat magic missile as 5th-level spell
-10. Caster breathes 9m fire cone next time they speak
+9. Cast magic missile as 5th-level spell targeting the original target of the spell.
+10. Caster breathes 9m fire cone next time they speak that deals 3d6 fire damage.
 11. Change height by 1d10: Even: grow, Odd: shrink
 12. Target is cocooned in crystal until someone breaks it
 13. Cast confusion centered on self
@@ -98,8 +98,8 @@ Certain class features require you to roll a wild magic surge. If you need to ma
 93. Size increases by 1 size category for 1 minute
 94. All light sources within 60’ radius extinguished
 95. You and all in 30’: vulnerable to piercing dmg, 1 min.
-96. Caster becomes frightened of a color for 1 hour
-97. Surrounded by faint ethereal music for 1 minute
-98. Caster suffers a head cold for 24 hours
+96. Caster becomes frightened of a random color for 1 hour
+97. The caster is surrounded by faint ethereal music for 1 minute
+98. The caster suffers a head cold for 24 hours
 99. Regain all expended Sorcery Points
-100. Next phrase spoken by caster becomes true
+100. Next phrase spoken by the caster becomes true

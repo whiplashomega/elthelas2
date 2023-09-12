@@ -49,7 +49,7 @@
     {
       "level": 2,
       "name": "Danger Sense",
-      "description": "At 2nd level, you gain an uncanny sense of when things nearby aren’t as they should be, giving you an edge when you dodge away from danger.\n\nYou have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can’t be blinded, deafened, or incapacitated."
+      "description": "At 2nd level, you gain an uncanny sense of when things nearby aren’t as they should be, giving you an edge when you dodge away from danger.\n\nYou have advantage on Dexterity saving throws unless you are incapacitated."
     },
     {
       "level": 2,
@@ -74,7 +74,7 @@
     {
       "level": 3,
       "name": "Reckless Attack",
-      "description": "Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength until the start of your next turn, but attack rolls against you have advantage until your next turn."
+      "description": "Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on a turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength until the start of your next turn, but attack rolls against you have advantage until your next turn."
     },
     {
       "level": 3,

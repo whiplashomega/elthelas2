@@ -335,28 +335,23 @@
         },
         {
           "level": 6,
-          "name": "Magic Arrow",
-          "description": "You gain the ability to infuse arrows with magic. Whenever you fire a nonmagical arrow from a shortbow or longbow, you can make it magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. The magic fades from the arrow immediately after it hits or misses its target."
-        },
-        {
-          "level": 6,
           "name": "Curving Shot",
           "description": "You learn how to direct an errant arrow toward a new target. When you make an attack roll with a magic arrow and miss, you can use a bonus action to reroll the attack roll against a different target within 12m of the original target."
         },
         {
           "level": 6,
           "name": "Additional Arcane Shot Options",
-          "description": "You gain 2 additional Arcane Shot options."
+          "description": "You gain an additional Arcane Shot option."
         },
         {
           "level": 10,
           "name": "Additional Arcane Shot Options",
-          "description": "You gain 2 additional Arcane Shot options."
+          "description": "You gain an additional Arcane Shot option."
         },
         {
           "level": 14,
           "name": "Ever-Ready Shot",
-          "description": "Starting at 15th level, your magical archery is available whenever battle starts. If you roll initiative and have no uses of Arcane Shot remaining, you regain one use of it."
+          "description": "Your magical archery is available whenever battle starts. If you roll initiative and have no uses of Arcane Shot remaining, you regain one use of it."
         },
         {
           "level": 14,

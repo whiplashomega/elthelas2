@@ -10,7 +10,7 @@
     {
       "name": "Claws", "description": "Your claws are natural weapons, which you can use to make unarmed strikes. They have the light and finesse properties, and deal 1d6 slashing damage."
     },
-    { "name": "Brute", "description": "A melee weapon deals one extra die of its damage when the trollkin hits with it." }
+    { "name": "Brute", "description": "You are able to use oversized weapons normally only suitable for a large character. These weapons typically do an extra die of damage compared to normal sized weapons." }
   ],
   "agepoints": {
     "puberty": 21,
