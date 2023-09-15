@@ -20,7 +20,8 @@ export default {
       statRolls,
       getSaveMod,
       mobile,
-      rollStats: characters.rollStats
+      rollStats: characters.rollStats,
+      rollBoundedStats: characters.rollBoundedStats
     }
   },
   methods: {

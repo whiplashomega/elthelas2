@@ -10,12 +10,13 @@ export default {
         
         // map actions
         const rollStats = characters.rollStats;
-        
+        const rollBoundedStats = characters.rollBoundedStats;
         return {
           characters,
           character,
           rollStats,
-          pointbuy
+          pointbuy,
+          rollBoundedStats
         }
       }
 }

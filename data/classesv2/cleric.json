@@ -380,7 +380,7 @@
         {
           "level": 2,
           "name": "Grave Domain Spells",
-          "description": "* 2nd - bane, false life.\n* 3rd - gentle repose, ray of enfeeblement\n* 5th - revivify, vampiric touch\n* 7th - blight, death ward\n* 9th - antilife shell, raise dead (Cleric of Nera Only)."
+          "description": "* 2nd - bane, false life.\n* 3rd - gentle repose, ray of enfeeblement\n* 5th - revivify, vampiric touch\n* 7th - blight, death ward\n* 9th - antilife shell, Enervation."
         },
         {
           "level": 2,
@@ -457,7 +457,7 @@
         {
           "level": 2,
           "name": "Life Domain Spells",
-          "description": "2nd - bless, cure wounds. 3rd - lesser restoration, spiritual weapon. 5th - beacon of hope, revivify. 7th - death ward, guardian of faith. 9th - mass cure wounds, raise dead."
+          "description": "2nd - bless, cure wounds. 3rd - lesser restoration, spiritual weapon. 5th - beacon of hope, revivify. 7th - death ward, guardian of faith. 9th - mass cure wounds, greater restoration."
         },
         {
           "level": 2,

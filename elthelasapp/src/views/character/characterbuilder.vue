@@ -162,6 +162,8 @@
         </b-accordion-item>
         <b-accordion-item title="Features">
           <features />
+          <selectfeatures />
+          <wildshape />
         </b-accordion-item>
         <b-accordion-item title="Actions, Attacks, and Other Rolls">
           <actions />

@@ -295,8 +295,10 @@ export default {
           comp.characters.splice(comp.characters.indexOf(character), 1);
         }
         return true;
-      }).catch(function() {
-        alert("error when loading, please try logging off and in again");
+      }).catch(function(e) {
+        if (e) {
+          alert("error when loading, please try logging off and in again: " + e);
+        }
         //comp.$root.$emit('bv::hide::modal', 'loading');
       });
     },
@@ -478,6 +480,26 @@ export default {
         this.statRolls.push(roll.reduce((a, b) => {
           return a + b;
         }, 0));
+      }
+    },
+    rollBoundedStats () {
+      function d6() {
+        return Math.floor(Math.random() * 6) + 1;
+      }
+      this.statRolls = [];
+      for (var x = 0; x < 5; x++) {
+        var roll = [d6(), d6(), d6(), d6()];
+        roll.sort();
+        roll.splice(0, 1);
+        this.statRolls.push(roll.reduce((a, b) => {
+          return a + b;
+        }, 0));
+      }
+      var remainder = 78 - this.statRolls[0] - this.statRolls[1] - this.statRolls[2] - this.statRolls[3] - this.statRolls[4];
+      if (remainder >= 4 && remainder <= 18) {
+        this.statRolls.push(remainder);
+      } else {
+        this.rollBoundedStats();
       }
     }
   }
