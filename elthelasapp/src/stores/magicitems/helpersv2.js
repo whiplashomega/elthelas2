@@ -206,8 +206,8 @@ export default {
         Attunement: "Yes (spellcaster)",
         Effect: "This armor grants a +1 bonus to AC. While attuned to and wearing this armor, you can expend a spell slot as a bonus action to become invisible for a number of rounds equal to the level of the slot expended. It also grants the following resistances based on its material: " + armor.Resistance,
         Rarity: armor.Rarity === "Common" ? "Rare" : "Very Rare",
-        "Cost (gp)": Number(armor.Cost) + 4000,
-        Price: Number(armor.Cost) + 4000
+        "Cost (gp)": Number(armor.Cost) + 7000,
+        Price: Number(armor.Cost) + 7000
       });
     }
   },

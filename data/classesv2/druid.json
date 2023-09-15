@@ -6,7 +6,7 @@
   "cantrips": 2,
   "cantriplevel": 1,
   "proficiencies": {
-    "armor": ["light armor", "medium armor", "shields"],
+    "armor": ["light armor", "shields"],
     "weapons": ["simple weapons"],
     "tools": ["herbalism kit"],
     "saving throws": ["int", "wis"],

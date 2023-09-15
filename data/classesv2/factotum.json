@@ -84,6 +84,11 @@
       "description": "At 4th level, and again at 6th, 8th, 12th, 16th, and 19th level, you gain a +2 bonus to one ability score, +1 to two ability scores, or a feat."
     },
     {
+      "level": 4,
+      "name": "Weapon Mastery",
+      "description": "You unlock the maximum potential of the weapons you wield. You gain access to the weapon mastery property of any weapon you wield that you are proficient with. Additionally, your unarmed strikes gain the Sap property."
+    },
+    {
       "level": 6,
       "name": "Ability Score Improvement (6th)",
       "description": "At 4th level, and again at 6th, 8th, 12th, 16th, and 19th level, you gain a +2 bonus to one ability score, +1 to two ability scores, or a feat."
