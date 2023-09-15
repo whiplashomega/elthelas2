@@ -37,7 +37,7 @@
       "averageweight": 135,
       "baseweight": 100,
       "weightroll": "2d6",
-      "speed": [7, 0, 0, 0, 0]
+      "speed": [5, 0, 0, 0, 0]
       },
       {
         "id": "hilldwarves",
@@ -58,7 +58,7 @@
       "averageweight": 150,
       "baseweight": 115,
       "weightroll": "2d6",
-      "speed": [7, 0, 0, 0, 0]
+      "speed": [5, 0, 0, 0, 0]
       },
       {
         "id": "morrinddwarves",
