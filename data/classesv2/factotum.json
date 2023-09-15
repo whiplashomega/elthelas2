@@ -147,8 +147,8 @@
         },
         {
           "level": 6,
-          "name": "Improved Inspired Damage",
-          "description": "When you use the Inspired Damage feature you add an additional 1d6 damage to the attack."
+          "name": "Improved Cunning Strike",
+          "description": "When you use the Cunning Strike feature you add an additional 1d6 damage to the attack."
         },
         {
           "level": 10,
