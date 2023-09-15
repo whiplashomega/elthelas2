@@ -288,11 +288,11 @@ export default {
         alert("error when loading, please try logging off and in again");
       });
     },
-    deleteFromServer({ character, comp }) {
+    deleteFromServer({ character }) {
       // comp.$root.$emit('bv::show::modal', 'loading');
       axios.delete('/charactersv2/' + character._id + '?token=' + localStorage.getItem('token')).then((res) => {
         if (res.data.success) {
-          comp.characters.splice(comp.characters.indexOf(character), 1);
+          this.characters.splice(this.characters.indexOf(character), 1);
         }
         return true;
       }).catch(function(e) {
