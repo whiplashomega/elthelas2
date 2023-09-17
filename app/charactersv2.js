@@ -41,6 +41,9 @@ router.get('/:id', function (req, res, next) {
 
 router.post('/', Verify.verifyOrdinaryUser, function(req, res, next) {
   var newchar = new Character({ ...req.body.character, owner: req.decoded.username });
+  if (newchar._id) {
+    newchar._id = null;
+  }
   newchar.save(function(err, character) {
     if (err) {
       res.status(500);
@@ -48,7 +51,7 @@ router.post('/', Verify.verifyOrdinaryUser, function(req, res, next) {
       res.json({ message: "Could not save character due to errors", error: err });
       return false;
     }
-    console.log(character.id);
+    console.log(character._id);
     res.header("Cache-Control", "no-cache, no-store, must-revalidate");
     res.header("Pragma", "no-cache");
     res.header("Expires", 0);

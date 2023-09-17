@@ -107,7 +107,7 @@
   {
     "name": "Great Weapon Master",
     "prereq": "4th level",
-    "description": "You’ve learned to put the weight of a weapon to your advantage, letting its momentum empower your strikes. You gain the following benefits:\n\n* Increase your strength score by 1, to a maximum of 20.\n* On your turn, when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can make one melee weapon attack as a bonus action.\n* When you hit a creature with a heavy weapon as part of the attack action on your turn, you can cause the weapon to deal extra damage to the target equal to your proficiency bonus.\n* You no longer suffer disadvantage for wielding a heavy weapon as a small character."
+    "description": "You’ve learned to put the weight of a weapon to your advantage, letting its momentum empower your strikes. You gain the following benefits:\n\n* Increase your strength score by 1, to a maximum of 20.\n* On your turn, when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can make one melee weapon attack as a bonus action.\n* You no longer suffer disadvantage for wielding a heavy weapon as a small character."
   },
   {
     "name": "Oversized Weapon Master",
