@@ -219,7 +219,14 @@
         { "name": "Breath Weapon", "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 15-foot cone. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 force damage. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)." },
         { "name": "Psionic Mind", "description": "You can telepathically speak to any creature you can see within 30 feet of you. You don’t need to share a language with the creature, but the creature must be able to understand at least one language." },
         { "name": "Gem Flight", "description": "Starting at 5th level, you can use a bonus action to manifest spectral wings on your body. These wings last for 1 minute. For the duration, you gain a flying speed equal to your walking speed and can hover. Once you use this trait, you can’t do so again until you finish a long rest." }
-      ]
+      ],
+      "averageheight": 75,
+      "baseheight": 66,
+      "heightroll": "2d8",
+      "averageweight": 240,
+      "baseweight": 175,
+      "weightroll": "2d6",
+      "speed": [6, 0, 0, 0, 0]
     },
     {
       "id": "crystal",
@@ -232,7 +239,14 @@
         { "name": "Breath Weapon", "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 15-foot cone. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 radiant damage. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)." },
         { "name": "Psionic Mind", "description": "You can telepathically speak to any creature you can see within 30 feet of you. You don’t need to share a language with the creature, but the creature must be able to understand at least one language." },
         { "name": "Gem Flight", "description": "Starting at 5th level, you can use a bonus action to manifest spectral wings on your body. These wings last for 1 minute. For the duration, you gain a flying speed equal to your walking speed and can hover. Once you use this trait, you can’t do so again until you finish a long rest." }
-      ]
+      ],
+      "averageheight": 75,
+      "baseheight": 66,
+      "heightroll": "2d8",
+      "averageweight": 240,
+      "baseweight": 175,
+      "weightroll": "2d6",
+      "speed": [6, 0, 0, 0, 0]
     },
     {
       "id": "emerald",
@@ -245,7 +259,14 @@
         { "name": "Breath Weapon", "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 15-foot cone. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 psychic damage. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)." },
         { "name": "Psionic Mind", "description": "You can telepathically speak to any creature you can see within 30 feet of you. You don’t need to share a language with the creature, but the creature must be able to understand at least one language." },
         { "name": "Gem Flight", "description": "Starting at 5th level, you can use a bonus action to manifest spectral wings on your body. These wings last for 1 minute. For the duration, you gain a flying speed equal to your walking speed and can hover. Once you use this trait, you can’t do so again until you finish a long rest." }
-      ]
+      ],
+      "averageheight": 75,
+      "baseheight": 66,
+      "heightroll": "2d8",
+      "averageweight": 240,
+      "baseweight": 175,
+      "weightroll": "2d6",
+      "speed": [6, 0, 0, 0, 0]
     },
     {
       "id": "sapphire",
@@ -258,7 +279,14 @@
         { "name": "Breath Weapon", "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 15-foot cone. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 thunder damage. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)." },
         { "name": "Psionic Mind", "description": "You can telepathically speak to any creature you can see within 30 feet of you. You don’t need to share a language with the creature, but the creature must be able to understand at least one language." },
         { "name": "Gem Flight", "description": "Starting at 5th level, you can use a bonus action to manifest spectral wings on your body. These wings last for 1 minute. For the duration, you gain a flying speed equal to your walking speed and can hover. Once you use this trait, you can’t do so again until you finish a long rest." }
-      ]
+      ],
+      "averageheight": 75,
+      "baseheight": 66,
+      "heightroll": "2d8",
+      "averageweight": 240,
+      "baseweight": 175,
+      "weightroll": "2d6",
+      "speed": [6, 0, 0, 0, 0]
     },
     {
       "id": "topaz",
@@ -271,7 +299,14 @@
         { "name": "Breath Weapon", "description": "When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 15-foot cone. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 necrotic damage. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)." },
         { "name": "Psionic Mind", "description": "You can telepathically speak to any creature you can see within 30 feet of you. You don’t need to share a language with the creature, but the creature must be able to understand at least one language." },
         { "name": "Gem Flight", "description": "Starting at 5th level, you can use a bonus action to manifest spectral wings on your body. These wings last for 1 minute. For the duration, you gain a flying speed equal to your walking speed and can hover. Once you use this trait, you can’t do so again until you finish a long rest." }
-      ]
+      ],
+      "averageheight": 75,
+      "baseheight": 66,
+      "heightroll": "2d8",
+      "averageweight": 240,
+      "baseweight": 175,
+      "weightroll": "2d6",
+      "speed": [6, 0, 0, 0, 0]
     }
   ]
 }
