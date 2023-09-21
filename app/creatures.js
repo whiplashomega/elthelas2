@@ -112,64 +112,70 @@ function throwerr(err, res) {
 }
 
 router.get('/', function(req, res) {
-  Creature.find({}, { name: true, size: true, cr: true, type: true, subtype: true, alignment: true, stats: true, hp: true, pc: true, speed: true, senses: true, description: true, hitdice: true }, function (err, creatures) {
-    if (err) return throwerr(err, res);
+  Creature.find({}, { name: true, size: true, cr: true, type: true, subtype: true, alignment: true, stats: true, hp: true, pc: true, speed: true, senses: true, description: true, hitdice: true }).then(function (creatures) {
     res.header('Cache-Control', "no-cache, no-store, must-revalidate");
     res.header("Pragma", "no-cache");
     res.header("Expires", 0);
     res.json(creatures);
+  }).catch(function (err) {
+    throwerr(err, res);
   });
 });
 
 router.get('/:id', function(req, res) {
-  Creature.findOne({ _id: req.params.id }, function (err, creature) {
-    if (err) return throwerr(err, res);
+  Creature.findOne({ _id: req.params.id }).then(function (creature) {
     res.header('Cache-Control', "no-cache, no-store, must-revalidate");
     res.header("Pragma", "no-cache");
     res.header("Expires", 0);
     res.json(creature);
-  })
+  }).catch(function (err) {
+    throwerr(err, res);
+  });
 });
 
 router.get('/m/:id', function(req, res) {
-  Creature.findOne({ _id: req.params.id }, function (err, creature) {
-    if (err) return throwerr(err, res);
+  Creature.findOne({ _id: req.params.id }).then(function (creature) {
     res.header('Cache-Control', "no-cache, no-store, must-revalidate");
     res.header("Pragma", "no-cache");
     res.header("Expires", 0);
     res.json(mc(creature));
-  })
+  }).catch(function (err) {
+    throwerr(err, res);
+  });
 });
 
 router.post('/', Verify.verifyOrdinaryUser, function(req, res) {
   var newenc = new Creature({ ...req.body.creature });
-  newenc.save(function(err, creature) {
-    if (err) return throwerr(err, res);
+  newenc.save().then(function(creature) {
     res.header("Cache-Control", "no-cache, no-store, must-revalidate");
     res.header("Pragma", "no-cache");
     res.header("Expires", 0);
     res.json(creature);
+  }).catch(function(err) {
+    throwerr(err, res);
   });
 });
 
 router.post('/:id', Verify.verifyOrdinaryUser, function(req, res) {
-  Creature.findOneAndUpdate({ _id: req.params.id }, { ...req.body.creature, _id: req.params.id } , { new: true }, function(err, creature) {
-    if (err) return throwerr(err, res);
+  Creature.findOneAndUpdate({ _id: req.params.id }, { ...req.body.creature, _id: req.params.id } , { new: true }).then(function(creature) {
     res.header("Cache-Control", "no-cache, no-store, must-revalidate");
     res.header("Pragma", "no-cache");
     res.header("Expires", 0);
     res.json(creature);
+  }).catch(function(err) {
+    throwerr(err, res);
   });
 });
 
 router.delete('/:id', Verify.verifyOrdinaryUser, function(req, res) {
-  Creature.findOneAndRemove({ _id: req.params.id }, function(err) {
-    if (err) return throwerr(err, res);
+  Creature.findOneAndRemove({ _id: req.params.id }).then(function() {
     res.header("Cache-Control", "no-cache, no-store, must-revalidate");
     res.header("Pragma", "no-cache");
     res.header("Expires", 0);
     res.json({ success: true });
-  });
+  }).catch((function(err) {
+    throwerr(err, res);
+  }));
 });
 
 module.exports = router;

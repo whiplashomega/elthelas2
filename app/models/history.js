@@ -4,8 +4,8 @@ var Schema = mongoose.Schema;
 
 var History = new Schema({
   text: {
-    headline: "",
-    text: ""
+    headline: { type: String, default: "" },
+    text: { type: String, default: "" }
   },
   start_date: {
     day: Number,

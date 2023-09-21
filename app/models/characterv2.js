@@ -19,7 +19,7 @@ var Characterv2 = new Schema({
   bond: { type: String, default: "" },
   castlog: { type: Array, default: [] },
   sessions: [],
-  bonuscantrips: 0,
+  bonuscantrips:  { type: Number, default: 0 },
   exhaustion: { type: Number, default: 0 },
   group: { type: String, default: "" },
   pets: [],
@@ -67,15 +67,15 @@ var Characterv2 = new Schema({
   armors: [],
   feats: [],
   fightingstyles: [],
-  bonusstyles: 0,
+  bonusstyles: { type: Number, default: 0 },
   skilltricks: [],
-  bonustricks: 0,
+  bonustricks: { type: Number, default: 0 },
   metamagic: [],
-  bonusmetamagic: 0,
+  bonusmetamagic: { type: Number, default: 0 },
   invocations: [],
-  bonusinvocations: 0,
+  bonusinvocations: { type: Number, default: 0 },
   infusions: [],
-  bonusinfusions: 0,
+  bonusinfusions: { type: Number, default: 0 },
   injuries: [],
   image: String,
   equipment: [],
@@ -114,7 +114,7 @@ var Characterv2 = new Schema({
       radiant: 0,
       thunder: 0
     }},
-  temphp: 0,
+  temphp: { type: Number, default: 0 },
   wildShapeOptions: []
 });
 

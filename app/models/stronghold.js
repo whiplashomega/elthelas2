@@ -5,7 +5,7 @@ var Schema = mongoose.Schema;
 var stronghold = new Schema({
   castleName: { required: true, type: String },
   townName: String,
-  treasury: 0,
+  treasury: Number,
   resources: {},
   transactionrecord: [],
   improvements: [],
@@ -15,10 +15,10 @@ var stronghold = new Schema({
   staff: [],
   vassals: [],
   population: {
-    invalid: 0,
-    children: 0,
-    adults: 0,
-    elderly: 0
+    invalid: Number,
+    children: Number,
+    adults: Number,
+    elderly: Number
   },
   autoSell: {},
   animals: [],

@@ -15,18 +15,20 @@ var Verify = require('./verify');
 });*/
 
 router.get('/', Verify.verifyOrdinaryUser, function(req, res, next) {
-  Character.find({ owner: req.decoded.username }, { owner: true, name: true, charclasses: true, group: true }, function (err, characters) {
-    if (err) throw err;
+  Character.find({ owner: req.decoded.username }, { owner: true, name: true, charclasses: true, group: true }).then(function (characters) {
     res.header("Cache-Control", "no-cache, no-store, must-revalidate");
     res.header("Pragma", "no-cache");
     res.header("Expires", 0);
     res.json(characters);
+  }).catch(function (err) {
+    console.log(err);
+    res.status(500);
+    res.json(err);
   });
 });
 
 router.get('/:id', function (req, res, next) {
-  Character.findOne({ _id: req.params.id }, function(err, character) {
-    if (err) throw err;
+  Character.findOne({ _id: req.params.id }).then(function(character) {
     if (character === null) {
       res.status(404);
     } else {
@@ -36,6 +38,10 @@ router.get('/:id', function (req, res, next) {
       res.header("Expires", 0);
     }
     res.json(character);
+  }).catch(function (err) {
+    console.log(err);
+    res.status(500);
+    res.json(err);
   });
 });
 
@@ -44,38 +50,39 @@ router.post('/', Verify.verifyOrdinaryUser, function(req, res, next) {
   if (newchar._id) {
     newchar._id = null;
   }
-  newchar.save(function(err, character) {
-    if (err) {
-      res.status(500);
-      console.log(err);
-      res.json({ message: "Could not save character due to errors", error: err });
-      return false;
-    }
-    console.log(character._id);
+  newchar.save().then(function(character) {
     res.header("Cache-Control", "no-cache, no-store, must-revalidate");
     res.header("Pragma", "no-cache");
     res.header("Expires", 0);
     res.json(character);
+  }).catch(function(err) {
+    console.log(err);
   });
 });
 
 router.post('/:id', Verify.verifyOrdinaryUser, function(req, res, next) {
-  Character.findOneAndUpdate({ _id: req.params.id, owner: req.decoded.username }, { ...req.body.character, _id: req.params.id } , { new: true }, function(err, character) {
-    if (err) throw err;
+  Character.findOneAndUpdate({ _id: req.params.id, owner: req.decoded.username }, { ...req.body.character, _id: req.params.id } , { new: true }).then(function(character) {
     res.header("Cache-Control", "no-cache, no-store, must-revalidate");
     res.header("Pragma", "no-cache");
     res.header("Expires", 0);
     res.json(character);
+  }).catch(function (err) {
+    console.log(err);
+    res.status(500);
+    res.json(err);
   });
 });
 
 router.delete('/:id', Verify.verifyOrdinaryUser, function(req, res, next) {
-  Character.findOneAndRemove({ _id: req.params.id, owner: req.decoded.username }, function(err) {
-    if (err) throw err;
+  Character.findOneAndRemove({ _id: req.params.id, owner: req.decoded.username }).then(function() {
     res.header("Cache-Control", "no-cache, no-store, must-revalidate");
     res.header("Pragma", "no-cache");
     res.header("Expires", 0);
     res.json({ success: true });
+  }).catch(function (err) {
+    console.log(err);
+    res.status(500);
+    res.json(err);
   });
 });
 

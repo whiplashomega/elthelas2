@@ -3,20 +3,20 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var NPC = new Schema({
-  name: "",
-  born: "",
-  died: "",
-  lastlocation: "",
-  history: "",
-  motivations: "",
-  charid: "",
-  player: "",
+  name: { type: String, default: "" },
+  born: { type: String, default: "" },
+  died: { type: String, default: "" },
+  lastlocation: { type: String, default: "" },
+  history: { type: String, default: "" },
+  motivations: { type: String, default: "" },
+  charid: { type: String, default: "" },
+  player: { type: String, default: "" },
   campaigns: [],
-  home: "",
-  dmonly: false,
-  job: "",
-  knownassociates: "",
-  ancestry: "",
+  home: { type: String, default: "" },
+  dmonly: { type: Boolean, default: false },
+  job: { type: String, default: "" },
+  knownassociates: { type: String, default: "" },
+  ancestry: { type: String, default: "" },
   flags: []
 });
 

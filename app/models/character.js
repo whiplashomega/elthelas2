@@ -19,7 +19,7 @@ var Character = new Schema({
   bond: { type: String, default: "" },
   castlog: { type: Array, default: [] },
   sessions: [],
-  bonuscantrips: 0,
+  bonuscantrips: { type: Number, default: 0 },
   exhaustion: { type: Number, default: 0 },
   group: { type: String, default: "" },
   pets: [],
@@ -104,7 +104,7 @@ var Character = new Schema({
       radiant: 0,
       thunder: 0
     }},
-  temphp: 0
+  temphp:  { type: Number, default: 0 }
 });
 
 module.exports = mongoose.model('Character', Character);
