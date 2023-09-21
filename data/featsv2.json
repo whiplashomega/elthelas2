@@ -56,28 +56,33 @@
   },
   {
     "name": "Defensive Duelist",
-    "prereq": "Dexterity 13 or higher, 4th level",
-    "description": "You've learned to deftly parry attacks, granting you the following benefits:\n\n* Increase your dexterity score by 1, to a maximum of 20.\n*When you are wielding a finesse weapon with which you are proficient and another creature hits you with a melee attack, you can use your reaction to add your proficiency bonus to your AC for that attack, potentially causing the attack to miss you."
+    "prereq": "4th level",
+    "description": "You've learned to deftly parry attacks, granting you the following benefits:\n\n* Increase your dexterity score by 1, to a maximum of 20.\n* When you are wielding a weapon in one-hand and no other weapon or shield and another creature hits you with a melee attack, you can use your reaction to add your proficiency bonus to your AC for that attack, potentially causing the attack to miss you."
   },
   {
     "name": "Dual Wielder",
     "prereq": "4th level",
-    "description": "You master fighting with two weapons, gaining the following benefits:\n\n* Increase your strength or dexterity score by 1, to a maximum of 20.\n* You can use two-weapon fighting even when the one-handed melee weapon you are wielding in your main hand isn’t light.\n* You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one."
+    "description": "You master fighting with two weapons, gaining the following benefits:\n\n* Increase your strength or dexterity score by 1, to a maximum of 20.\n* You can use two-weapon fighting even when the one-handed melee weapon you are wielding in your main hand isn’t light.\n* You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one.\n* If you take the attack action while wielding two one-handed melee weapons you can forego one attack with either weapon to increase your AC by 1 until the start of your next turn."
   },
   {
     "name": "Dual Flurry",
     "prereq": "8th level, Dual Wielder feat",
-    "description": "You have become exceptionally quick at attacking with two weapons. You gain the following:\n\n* +1 to strength or dexterity.\n* On any turn where you use the attack action while wielding a separate melee weapon in each hand and make an extra attack with your off-hand weapon, if you hit with at least 2 attacks you can make another attack with the off-hand weapon as part of the same action."
+    "description": "You have become exceptionally quick at attacking with two weapons. You gain the following:\n\n* Increase your strength or dexterity score by 1, to a maximum of 20.\n* On any turn where you use the attack action while wielding a separate melee weapon in each hand and make an extra attack with your off-hand weapon, if you hit with at least 2 weapon attacks on that turn you can make another weapon attack with the off-hand weapon as part of the same action."
+  },
+  {
+    "name": "Duelist",
+    "prereq": "4th level",
+    "description": "You have mastered wielding weapons in only one hand with your other hand free. You gain the following benefits: * Increase your strength or dexterity score by 1, to a maximum of 20.\n* When you are wielding a weapon in one hand and no other weapon or shield in the other, you can make a flourish attack as a bonus action on any turn you take the attack action. The weapon’s damage die for this attack is a d4."
   },
   {
     "name": "Dungeon Delver",
     "prereq": "",
-    "description": "Alert to the hidden traps and secret doors found in many dungeons, you gain the following benefits:\n\n* You have advantage on Wisdom (Perception) and Intelligence (Investigation) checks made to detect the presence of secret doors.\n* You have advantage on saving throws made to avoid or resist traps.\n* You have resistance to the damage dealt by traps.\n* Traveling at a fast pace doesn’t impose the normal −5 penalty on your passive Wisdom (Perception) score."
+    "description": "Alert to the hidden traps and secret doors found in many dungeons, you gain the following benefits:\n\n* Increase your dexterity or wisdom score by 1, to a maximum of 20.\n* You have advantage on Wisdom (Perception) and Intelligence (Investigation) checks made to detect the presence of secret doors.\n* You have advantage on saving throws made to avoid or resist traps.\n* You have resistance to the damage dealt by traps.\n* Traveling at a fast pace doesn’t impose the normal −5 penalty on your passive Wisdom (Perception) score."
   },
   {
     "name": "Durable",
     "prereq": "4th level",
-    "description": "Hardy and resilient, you gain the following benefits:\n\n*Increase your Constitution score by 1, to a maximum of 20.\n* You have advantage on Death Saving Throws.\n* As a bonus action, you can expend on of your hit dice, roll the die, and regain a number of hit points equal to the roll."
+    "description": "Hardy and resilient, you gain the following benefits:\n\n*Increase your Constitution score by 1, to a maximum of 20.\n* You have advantage on Death Saving Throws.\n* As a bonus action, you can expend one of your hit dice, roll the die, and regain a number of hit points equal to the roll."
   },
   {
     "name": "Eldritch Adept",
@@ -101,18 +106,13 @@
   },
   {
     "name": "Grappler",
-    "prereq": "Strength 13 or higher, 4th level",
+    "prereq": "4th level",
     "description": "You're an accomplished wrestler, granting you the following benefits:\n\n* Increase your strength or dexterity score by 1, to a maximum of 20.\n* You have advantage on attack rolls against a creature grappled by you.\n* You aren't slowed when you move a creature grappled by you, provided the creature is your size or smaller.\n* When you hit a creature with an unarmed strike as part of the attack action on your turn, you can deal damage to the target and also grapple it. You can use this benefit only once per turn."
   },
   {
     "name": "Great Weapon Master",
     "prereq": "4th level",
-    "description": "You’ve learned to put the weight of a weapon to your advantage, letting its momentum empower your strikes. You gain the following benefits:\n\n* Increase your strength score by 1, to a maximum of 20.\n* On your turn, when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can make one melee weapon attack as a bonus action.\n* You no longer suffer disadvantage for wielding a heavy weapon as a small character."
-  },
-  {
-    "name": "Oversized Weapon Master",
-    "prereq": "8th level, Great Weapon Master feat, STR 15",
-    "description": "You've further enhanced your ability to use extra large weapons, giving you the following benefits:\n\n* Increase your strength score by 1, to a maximum of 20.\n* You can wield weapons meant for a large creature without disadvantage. These weapons generally do an extra die of the damage compared to those made for a small or medium creature.\n* When you make an attack with a bonus action as specified in the Great Weapon Master feat, you can make 2 additional attacks instead of one."
+    "description": "You’ve learned to put the weight of a weapon to your advantage, letting its momentum empower your strikes. You gain the following benefits:\n\n* Increase your strength or dexterity score by 1, to a maximum of 20.\n* While wielding a weapon with the two-handed or versatile property in two-hands you do additional damage equal to your half the ability modifier used for the attack (rounded down).\n* You no longer suffer disadvantage for wielding a heavy weapon as a small character."
   },
   {
     "name": "Gunner",
@@ -162,7 +162,7 @@
   {
     "name": "Mage Slayer",
     "prereq": "4th level",
-    "description": "You have practiced techniques useful in melee combat against spellcasters, gaining the following benefits:\n\nIncrease your strength or dexterity score by 1, to a maximum of 20.\n* When you damage a creature that is concentrating on a spell, that creature has disadvantage on the saving throw it makes to maintain its concentration.\n* If you fail an intelligence, wisdom, or charisma saving throw, you can cause yourself to succeed instead. Once you use this benefit, you can't use it again until you finish a long rest."
+    "description": "You have practiced techniques useful in melee combat against spellcasters, gaining the following benefits:\n\nIncrease your dexterity, constitution, or wisdom score by 1, to a maximum of 20.\n* When you damage a creature that is concentrating on a spell, that creature has disadvantage on the saving throw it makes to maintain its concentration.\n* If you fail an intelligence, wisdom, or charisma saving throw, you can cause yourself to succeed instead. Once you use this benefit, you can't use it again until you finish a long rest."
   },
   {
     "name": "Magic Initiate",
@@ -172,7 +172,7 @@
   {
     "name": "Martial Adept",
     "prereq": "4th level",
-    "description": "You have martial training that allows you to perform special combat maneuvers. You gain the following benefits:\n\n* You learn two maneuvers of your choice from among those available to the Battle Master archetype in the fighter class. If a maneuver you use requires your target to make a saving throw to resist the maneuver’s effects, the saving throw DC equals 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).\n* You gain two superiority dice, which are d6 (this die is added to any superiority dice you have from another source). This die is used to fuel your maneuvers. A superiority die is expended when you use it. You regain your expended superiority dice when you finish a short or long rest."
+    "description": "You have martial training that allows you to perform special combat maneuvers. You gain the following benefits:\n* Increase your Strength or Dexterity score by 1, to a maximum of 20.\n* You learn two maneuvers of your choice from among those available to the Battle Master archetype in the fighter class. If a maneuver you use requires your target to make a saving throw to resist the maneuver’s effects, the saving throw DC equals 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).\n* You gain two superiority dice, which are d6 (this die is added to any superiority dice you have from another source). This die is used to fuel your maneuvers. A superiority die is expended when you use it. You regain your expended superiority dice when you finish a short or long rest."
   },
   {
     "name": "Musician",
@@ -187,7 +187,7 @@
   {
     "name": "Mobile",
     "prereq": "4th level",
-    "description": "You are exceptionally speedy and agile. You gain the following benefits:\n\n* Your speed increases by 3m.\n* When you use the Dash action, difficult terrain doesn’t cost you extra movement on that turn.\n* When you make a melee attack against a creature, you don’t provoke opportunity attacks from that creature for the rest of the turn, whether you hit or not."
+    "description": "You are exceptionally speedy and agile. You gain the following benefits:\n\n* Your speed increases by 2m.\n* When you use the Dash action, difficult terrain doesn’t cost you extra movement on that turn.\n* When you make a melee attack against a creature, you don’t provoke opportunity attacks from that creature for the rest of the turn, whether you hit or not."
   },
   {
     "name": "Mounted Combatant",
@@ -200,6 +200,11 @@
     "description": "Quick to notice details of your environment, you gain the following benefits:\n\n* Increase your Intelligence or Wisdom score by 1, to a maximum of 20.\n* Choose two of the following skills: Insight, Investigation, or Perception. If you lack proficiency with the chosen skill, you gain proficiency in it, and if you have proficiency in it you gain expertise instead."
   },
   {
+    "name": "Oversized Weapon Master",
+    "prereq": "8th level, Great Weapon Master feat, STR 15",
+    "description": "You've further enhanced your ability to use extra large weapons, giving you the following benefits:\n\n* Increase your strength or constitution score by 1, to a maximum of 20.\n* You can wield weapons meant for a large creature without disadvantage. These weapons generally do an extra die of the damage compared to those made for a small or medium creature."
+  },
+  {
     "name": "Piercer",
     "prereq": "4th level",
     "description": "You have achieved a penetrating precision in combat, granting you the following benefits:\n\n* Increase your Strength or Dexterity by 1, to a maximum of 20.\n* Once per turn, when you hit a creature with an attack that deals piercing damage, you can reroll one of the attack's damage dice, and you must use the new roll.\n* When you score a critical hit that deals piercing damage to a creature, you can roll one additional damage die when determining the extra piercing damage the target takes."
@@ -207,7 +212,7 @@
   {
     "name": "Poisoner",
     "prereq": "4th level",
-    "description": "You can prepare and deliver deadly poisons, granting you the following benefits.\n\n* When you make a damage roll that deals poison damage, it ignores resistance to poison damage.\n* You can apply poison to a weapon or piece of ammunition as a bonus action, instead of an action.\n* You gain proficiency with the poisoner's kit if you don't already have it. With one hour of work using a poisoner's kit and expending 50 gp worth of materials, you can create a number of doses of potent poison equal to your proficiency bonus. Once applied to a weapon or piece of ammunition, the poison retains its potency for 1 minute or until you hit with the weapon or ammunition. When a creature takes damage from the coated weapon or ammunition, that creature must succeed on a DC 14 Constitution saving throw or take 2d8 poison damage and become poisoned until the end of your next turn."
+    "description": "You can prepare and deliver deadly poisons, granting you the following benefits.\n* Increase your dexterity or constituion score by 1, to a maximum of 20.\n* When you make a damage roll that deals poison damage, it ignores resistance to poison damage.\n* You gain proficiency with the poisoner's kit if you don't already have it. With one hour of work using a poisoner's kit and expending 50 gp worth of materials, you can create a number of doses of potent poison equal to your proficiency bonus. Once applied to a weapon or piece of ammunition, the poison retains its potency for 1 minute or until you hit with the weapon or ammunition. When a creature takes damage from the coated weapon or ammunition, that creature must succeed on a DC 14 Constitution saving throw or take 2d8 poison damage and become poisoned until the end of your next turn."
   },
   {
     "name": "Polearm Master",
@@ -287,7 +292,7 @@
   {
     "name": "Speedster",
     "prereq": "4th level",
-    "description": "You possess exceptional speed and stamina, granting you the following benefits:\n\n* Increase your dexterity or constitution score by 1, to a maximum of 20.\n* Your speed increases by 3m while yo uaren't wearing heavy armor.\n* When you take the dash action on your turn, difficult terrain doesn't cost you extra movement for the rest of the turn."
+    "description": "You possess exceptional speed and stamina, granting you the following benefits:\n\n* Increase your dexterity or constitution score by 1, to a maximum of 20.\n* Your speed increases by 2m while you aren't wearing heavy armor.\n* When you take the dash action on your turn, difficult terrain doesn't cost you extra movement for the rest of the turn."
   },
   {
     "name": "Spell Sniper",
@@ -295,9 +300,9 @@
     "description": "You have learned techniques to enhance your attacks with certain kinds o f spells, gaining the following benefits:\n\n* Increase your intelligence, wisdom, or charisma score by 1 to a maximum of 20.\n* Your attack rolls for spells ignore half cover and three-quarters cover.\n* Being within reach of an enemy doesn't impose disadvantage on your attack rolls with spells.\nWhen you cast a spell that has a range of at least 3m that requires you to make an attack roll, you can increase the spells range by 18m."
   },
   {
-    "name": "Tavern Brawler",
+    "name": "Brawler",
     "prereq": "",
-    "description": "Accustomed to rough-and-tumble fighting using whatever weapons happen to be at hand, you gain the following benefits:\n\n* When you hit with your unarmed strike and deal damage, you can deal bludgeoning damage equal to 1d4 + your Strength modifier, instead of the normal damage of an unarmed strike.\n* Whenever you roll a damage die for your unarmed strike, you can reroll the die if it rolls a 1, and you must use the new roll.\n* When you hit a creature with an unarmed strike as part of the attack action on your turn, you can deal damage to the target and also push it 1m away.\n* You can wield furniture as a weapon with which you are proficient and does 1d8 damage on a hit."
+    "description": "Accustomed to rough-and-tumble fighting using whatever weapons happen to be at hand, you gain the following benefits:\n* When you hit a creature with an unarmed strike or an improvised weapon you can deal damage to the target and also push it 1m away.\n* You are proficient with any improvised weapon that you wield.\n* Your damage die for making attacks with unarmed strikes or improvised weapons increases by 1 size. For example, if you would do 1 damage with an unarmed strike, you instead do 1d4 damage, if you would do 1d6 damage with an unarmed strike, you instead do 1d8 damage, 1d8 becomes 1d10 and so on. Similarly the base damage for improvised weapons increases from 1d4 to 1d6, and if the DM rules that the improvised weapon you are wielding would do more than 1d4 damage, the damage increases by 1 size from whatever the DM declares would normally apply for that improvised weapon."
   },
   {
     "name": "Telekinetic",
@@ -326,13 +331,13 @@
   },
   {
     "name": "Weapon Training",
-    "prereq": "4th level",
-    "description": "You have practiced extensively with a variety of weapons, gaining the following benefits:\n* Increase your Strength or Dexterity score by 1, to a maximum o f 20.\n* You gain proficiency with martial weapons."
+    "prereq": "Proficiency with simple weapons",
+    "description": "You have practiced extensively with a variety of weapons, gaining the following benefits:\n* You gain proficiency with martial weapons."
   },
   {
     "name": "Bountiful Luck",
     "prereq": "Halfling, 4th level",
-    "description": "Your people have extraordinary luck, which you have learned to mystically lend to your companions when you see them falter. You’re not sure how you do it; you just wish it, and it happens. Surely a sign of fortune’s favor!\n\nWhen an ally you can see within 9m of you rolls a 1 on the d20 for an attack roll, an ability check, or a saving throw, you can use your reaction to let the ally reroll the die. The ally must use the new roll.\n\nWhen you use this ability, you can’t use your Lucky racial trait before the end of your next turn."
+    "description": "Your people have extraordinary luck, which you have learned to mystically lend to your companions when you see them falter. You’re not sure how you do it; you just wish it, and it happens. Surely a sign of fortune’s favor! You gain the following benefits:\n* Add 1 to one ability score of your choice, to a maximum of 20.\n* When an ally you can see within 9m of you rolls a 1 on the d20 for an attack roll, an ability check, or a saving throw, you can use your reaction to let the ally reroll the die. The ally must use the new roll."
   },
   {
     "name": "Dragon Fear",
@@ -342,7 +347,7 @@
   {
     "name": "Dragon Hide",
     "prereq": "Dragonborn or Kobold, 4th level",
-    "description": "You manifest scales and claws reminiscent of your draconic ancestors. You gain the following benefits:\n\n* Increase your Strength, Constitution, or Charisma score by 1, to a maximum of 20.\n* Your scales harden. While you aren’t wearing armor, you can calculate your AC as 13 + your Dexterity modifier. You can use a shield and still gain this benefit.\n* You grow retractable claws from the tips of your fingers. Extending or retracting the claws requires no action. The claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the normal bludgeoning damage for an unarmed strike."
+    "description": "You manifest scales and claws reminiscent of your draconic ancestors. You gain the following benefits:\n\n* Increase your Strength, Constitution, or Charisma score by 1, to a maximum of 20.\n* Your scales harden. While you aren’t wearing armor, you can calculate your AC as 13 + your Dexterity modifier. You can use a shield and still gain this benefit.\n* You grow retractable claws from the tips of your fingers. Extending or retracting the claws requires no action. The claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d6 + your Strength modifier, instead of the normal bludgeoning damage for an unarmed strike."
   },
   {
     "name": "Dragon Wings",
@@ -350,8 +355,8 @@
     "description": "You grow a pair of scaly wings.\n\n* Increase your strength, dexterity, or constitution score by 1, to a maximum of 20.\n* You gain a fly speed equal to your speed. You cannot use this fly speed while heavily encumbered or wearing heavy armor."
   },
   {
-    "name": "Drow High Magic",
-    "prereq": "Elf (drow), 4th level",
+    "name": "Elven High Magic",
+    "prereq": "Elf, 4th level",
     "description": "You learn more of the magic typical of dark elves. You learn the detect magic spell and can cast it at will, without expending a spell slot. You also learn levitate and dispel magic, each of which you can cast once without expending a spell slot. You regain the ability to cast those two spells in this way when you finish a long rest. Charisma is your spellcasting ability for all three spells."
   },
   {
@@ -391,7 +396,7 @@
   },
   {
     "name": "Prodigy",
-    "prereq": "Half-elf, half-dwarf, human, 4th level",
+    "prereq": "Half-elf, half-dwarf, or human, 4th level",
     "description": "You have a knack for learning new things. You gain the following benefits:\n\n* Increase one ability score of your choice by 1, to a maximum of 20\n* You gain one skill proficiency of your choice, one tool proficiency of your choice, and fluency in one language of your choice.\n* Choose one skill in which you have proficiency. You gain expertise with that skill, which means your proficiency bonus is doubled for any ability check you make with it. The skill you choose must be one that isn’t already benefiting from a feature, such as Expertise, that doubles your proficiency bonus."
   },
   {

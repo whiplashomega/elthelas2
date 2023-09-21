@@ -185,7 +185,8 @@
           </tbody>
         </table>
         <p>
-          * When you use a shield as a weapon the bonus it provides to your AC is reduced by 1 until the start of your next turn.
+          * When you use a shield as a weapon the bonus it provides to your AC is reduced by 1 until the start of your next turn.<br />
+          ** Attacking with gauntlets or brass knuckles counts as attacking with an unarmed strike for purposes of abilities that modify unarmed strikes.
         </p>
         <h4>Weapon Proficiency</h4>
         <p>

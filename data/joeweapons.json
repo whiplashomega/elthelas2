@@ -96,7 +96,7 @@
     "Range": 0
   },
   {
-    "Weapon": "Brass Knuckle/Gauntlet",
+    "Weapon": "Brass Knuckle/Gauntlet**",
     "Type": "Martial",
     "Dtype": "Bludgeoning",
     "Properties": "light, common, concealable, armor",
