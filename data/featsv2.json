@@ -30,6 +30,16 @@
     "description": "You have undergone extensive physical training to gain the following benefits:\n\n* Increase your Strength, Dexterity, or Constitution score by 1, to a maximum of 20.\n* You gain a climb speed equal to your speed.\n* When you are prone, you can right yourself with only 1m of movement.\n* You have advantage on any ability check you make for the jump action."
   },
   {
+    "name": "Brawler",
+    "prereq": "",
+    "description": "Accustomed to rough-and-tumble fighting using whatever weapons happen to be at hand, you gain the following benefits:* You are proficient with any improvised weapon that you wield.\n* Your damage die for making attacks with unarmed strikes or improvised weapons increases by 1 size. For example, if you would do 1 damage with an unarmed strike, you instead do 1d4 damage, if you would do 1d6 damage with an unarmed strike, you instead do 1d8 damage, 1d8 becomes 1d10 and so on. Similarly the base damage for improvised weapons increases from 1d4 to 1d6, and if the DM rules that the improvised weapon you are wielding would do more than 1d4 damage, the damage increases by 1 size from whatever the DM declares would normally apply for that improvised weapon."
+  },
+  {
+    "name": "Bum Rush",
+    "prereq": "8th level, Your die size for unarmed strikes must be at least 1d8.",
+    "description": "You have mastered making quick unarmed strikes that overwhelm your opponents. You gain the following features:\n* Add 1 to your Strength, Dexterity or Wisdom score, to a maximum of 20.\n* Whenever you take the attack action on your turn and attack with only unarmed strikes or natural weapons you can make one additional unarmed strike attack as part of the same action. You can make this extra attack only once on each of your turns."
+  },
+  {
     "name": "Charger",
     "prereq": "4th level",
     "description": "You have trained to charge headlong into battle, gaining the following benefits:\n\n* Increase your Strength or Dexterity score by 1, to a maximum of 20.\n* When you take the Dash Action, your Speed increases by 3m for that action.\n* If you move at least 3m in a straight line immediately before hitting with an attack as part of the attack action on your turn, choose one of the following effects: gain a +1d8 bonus to the attack's damage roll, or push the target up to 3m, provided the target you want to push is no more than one Size larger than you. You can use this benefit only once on each of your turns."
@@ -298,11 +308,6 @@
     "name": "Spell Sniper",
     "prereq": "The ability to cast at least one spell, 4th level",
     "description": "You have learned techniques to enhance your attacks with certain kinds o f spells, gaining the following benefits:\n\n* Increase your intelligence, wisdom, or charisma score by 1 to a maximum of 20.\n* Your attack rolls for spells ignore half cover and three-quarters cover.\n* Being within reach of an enemy doesn't impose disadvantage on your attack rolls with spells.\nWhen you cast a spell that has a range of at least 3m that requires you to make an attack roll, you can increase the spells range by 18m."
-  },
-  {
-    "name": "Brawler",
-    "prereq": "",
-    "description": "Accustomed to rough-and-tumble fighting using whatever weapons happen to be at hand, you gain the following benefits:\n* When you hit a creature with an unarmed strike or an improvised weapon you can deal damage to the target and also push it 1m away.\n* You are proficient with any improvised weapon that you wield.\n* Your damage die for making attacks with unarmed strikes or improvised weapons increases by 1 size. For example, if you would do 1 damage with an unarmed strike, you instead do 1d4 damage, if you would do 1d6 damage with an unarmed strike, you instead do 1d8 damage, 1d8 becomes 1d10 and so on. Similarly the base damage for improvised weapons increases from 1d4 to 1d6, and if the DM rules that the improvised weapon you are wielding would do more than 1d4 damage, the damage increases by 1 size from whatever the DM declares would normally apply for that improvised weapon."
   },
   {
     "name": "Telekinetic",
