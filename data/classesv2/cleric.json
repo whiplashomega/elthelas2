@@ -19,8 +19,8 @@
       "name": "Channel Divinity",
       "counttype": "table",
       "addToTable": true,
-      "count": [[2, 1], [6, 2], [18, 3]],
-      "minlevel": 2,
+      "count": [[3, 1], [6, 2], [18, 3]],
+      "minlevel": 3,
       "recovery": "shortrest"
     }
   ],
@@ -784,13 +784,6 @@
       "castermult": 1,
       "resources": [
         {
-          "name": "Eyes of Night",
-          "counttype": "fixed",
-          "count": 1,
-          "minlevel": 2,
-          "recovery": "longrest"
-        },
-        {
           "name": "Steps of Night",
           "counttype": "prof",
           "count": 0,
@@ -835,6 +828,13 @@
       "name": "War Domain",
       "castermult": 1,
       "resources": [
+        {
+          "name": "Guided Strike",
+          "counttype": "fixed",
+          "count": 1,
+          "minlevel": 2,
+          "recovery": "longrest"
+        },
       ],
       "features": [
         {
@@ -844,13 +844,13 @@
         },
         {
           "level": 2,
-          "name": "War Priest",
-          "description": "Your god delivers bolts of inspiration to you while you are engaged in battle. You can make one weapon attack as a bonus action."
+          "name": "Guided Strike",
+          "description": "When you make an attack roll, you can use your reaction to gain a +10 bonus to the roll. You make this choice after you see the roll, but before the DM says whether the attack hits or misses. You can use this reaction a number of times equal to your wisdom modifier, and regain all uses on a long rest."
         },
         {
           "level": 6,
-          "name": "Channel Divinity: Guided Strike",
-          "description": "You can use your Channel Divinity to strike with supernatural accuracy. When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll. You make this choice after you see the roll, but before the DM says whether the attack hits or misses."
+          "name": "War Priest",
+          "description": "You can make a weapon attack as a bonus action."
         },
         {
           "level": 10,

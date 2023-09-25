@@ -1,0 +1,38 @@
+{
+  "id": "warforged",
+  "name": "Warforged",
+  "singular": "Warforged",
+  "description": "**Warforged are not a standard ancestry in the Elthelas setting. They are included here for other settings using the same rule system**\nOriginally designed for world domination. Warforged accidentally became sentient. Since then, they consider themselves mortal and humanoid. They have sought the same cultural acceptance and appreciation as other humanoids.",
+  "traits": [
+    { "name": "Size", "description": "Warforged range from 6 to 7 feet tall, and weigh between 280 and 330 lbs. Your size is Medium." },
+    { "name": "Speed", "description": "Your base walking speed is 6m." },
+    { "name": "Constructed Resilience", "description": "You were created to have remarkable fortitude, represented by the following benefits:\n* You don't need to eat, drink, or breathe\n* You are immune to disease.\n* You don't need to sleep, and magic can't put you to sleep." },
+    { "name": "Sentry's Rest", "description": "When you take a long rest, you must spend at least 6 hours in an inactive, motionless state, rather than sleeping. In this state, you appear innert, but it doesn't render you unconscious, and you can see and hear as normal." },
+    { "name": "Integrated Protection", "description": "Your body has built-in defensive layers that can be enhanced with armor.\n* You gain 1 additional protection point per level, in addition to whatever your armor provides.\n* You can don only armor with which you have proficiency. To don armor, you must incorporate it into your body over the course of 1 hour, during which you must remain in contact with the armor. To doff armor, you must spend 1 hour removing it. You can rest while donning or doffing armor in this way.\n* While you live, your armor can't be removed from your body against your will." }
+  ],
+  "agepoints": {
+    "puberty": 0,
+    "sexualmaturity": 0,
+    "mentalmaturity": 2,
+    "middleage": 50,
+    "oldage": 90,
+    "averagelifespan": 100,
+    "maxage": 120
+  },
+  "subraces": [
+    {
+      "id": "default",
+      "name": "",
+      "image": "https://elthelas-images.herokuapp.com/races/warforged.png",
+      "description": "",
+      "traits": [ ],
+      "averageheight": 77,
+      "baseheight": 70,
+      "heightroll": "2d6",
+      "averageweight": 310,
+      "baseweight": 280,
+      "weightroll": "1d8",
+      "speed": [6, 0, 0, 0, 0]
+    }
+  ]
+}
