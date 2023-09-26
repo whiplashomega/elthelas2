@@ -834,7 +834,7 @@
           "count": 1,
           "minlevel": 2,
           "recovery": "longrest"
-        },
+        }
       ],
       "features": [
         {
