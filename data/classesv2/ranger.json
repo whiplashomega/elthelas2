@@ -151,7 +151,7 @@
         {
           "level": 2,
           "name": "Beast Master Magic",
-          "description": "You learn additional spells when you reach certain levels in this class. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.\n\n* 2nd - Beast Bond\n* 5th - Summon Beast\n* 9th - Conjure Animals\n* 13th - Giant Insect\n* 17th - Commune with Nature"
+          "description": "You learn additional spells when you reach certain levels in this class. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.\n\n* 2nd - Summon Beasts\n* 5th - Beast Sense\n* 9th - Haste\n* 13th - Giant Insect\n* 17th - Commune with Nature"
         },
         {
           "level": 2,

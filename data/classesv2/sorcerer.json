@@ -260,14 +260,14 @@
        "description": "Whenever the Sorceron Blooded casts a spell of 1st level or higher, roll a d20, on a 20 the spell slot is not expended when the spell is cast. Starting at 18th level the spell slot is not expended when the Sorceron Blooded rolls a 19 or a 20 on the d20 roll."
         },
         {
-       "level": 10,
-       "name": "Overwhelming Force",
-       "description": "Your connection to pure force has grown.  You learn the disintigrate spell, if you already know the disintigrate spell pick a different sorcerer spell of 6th level or lower.  Whenever you cast disintigrate, if the target makes their save they take half damage instead of no damage."
-        },
-        {
-          "level": 14,
+          "level": 10,
           "name": "Magical Attunement",
           "description": "The magic of your blood becomes particularly attuned to certain basic spells. Pick 2 sorcerer spells you know of 2nd level or lower, you can cast these spells without using a spell slot."
+        },
+        {
+       "level": 14,
+       "name": "Overwhelming Force",
+       "description": "Your connection to pure force has grown.  You learn the disintigrate spell, if you already know the disintigrate spell pick a different sorcerer spell of 6th level or lower.  Whenever you cast disintigrate, if the target makes their save they take half damage instead of no damage."
         }
      ]
    },
