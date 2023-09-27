@@ -480,6 +480,13 @@ export default {
         this.statRolls.push(roll.reduce((a, b) => {
           return a + b;
         }, 0));
+        this.statRolls = this.statRolls.sort((a, b) => {
+          if (a > b) {
+            return 1;
+          } else {
+            return -1;
+          }
+        });
       }
     },
     rollBoundedStats () {
@@ -498,6 +505,13 @@ export default {
       var remainder = 76 - this.statRolls[0] - this.statRolls[1] - this.statRolls[2] - this.statRolls[3] - this.statRolls[4];
       if (remainder >= 4 && remainder <= 18) {
         this.statRolls.push(remainder);
+        this.statRolls = this.statRolls.sort((a, b) => {
+          if (a > b) {
+            return 1;
+          } else {
+            return -1;
+          }
+        });
       } else {
         this.rollBoundedStats();
       }
