@@ -84,6 +84,7 @@
         <li>Drinking a potion yourself can be done as a bonus action.</li>
         <li>Metric Conversion and Space Rules -> 1 meter squares</li>
         <li>Flanking -> 1d6 Bonus damage.</li>
+        <li>New Wild Magic table</li>
       </ul>
       <h3>Summary of Class Changes</h3>
       <h4>Every Class.</h4>
@@ -110,6 +111,7 @@
         <li>Beast barbarian +1 bonus instead of 'count as magic'</li>
         <li>Unarmored Defense gives PP/Lvl</li>
         <li>Path of the Zealot reworked</li>
+        <li>Path of Wild Magic reworked</li>
       </ul>
       <h4>Bard</h4>
       <ul>
@@ -189,6 +191,7 @@
         <li>Assassins Assassinate feature no longer requires the surprised condition, just first round of combat and an opponent who hasn't acted yet. Gives extra damage equal to rogue level instead of auto-crit.</li>
         <li>Thief's Use Magic Device now gives an additional attunement slot, a chance to avoid expending charges on magic items, and the ability to use any spell scroll from any class.</li>
         <li>Inquisitive Rogue Unerring Eye is now always on, no longer requiring an action and no longer having limited uses.</li>
+        <li>Mastermind Rogue level 6 feature now has charm effect.</li>
       </ul>
       <h4>Sorcerer</h4>
       <ul>
