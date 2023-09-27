@@ -481,7 +481,7 @@
         {
           "level": 2,
           "name": "Wild Surge",
-          "description": "The magical energy roiling inside you sometimes erupts from you. When you enter your rage, roll on the Wild Magic table to determine the random magical effect produced.\n\nIf the effect requires a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier. Additionally, you immediately cast one of the following spells, always targetting yourself, requiring no concentration and lasting until your rage ends: Blur, Mirror Image, or Shadow Blade."
+          "description": "The magical energy roiling inside you sometimes erupts from you. When you enter your rage, you can create magical effects that bolster you in battle. First, roll on the Wild Magic table to determine a random magical effect.\n\nIf the effect requires a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier. Once that effect is determined, you immediately cast one of the following spells, always targetting yourself, requiring no concentration and lasting until your rage ends: Blur, Mirror Image, or Shadow Blade."
         },
         {
           "level": 6,
@@ -496,12 +496,12 @@
         {
           "level": 10,
           "name": "Unstable Backlash",
-          "description": "When you are imperiled during your rage, the magic within you can lash out; immediately after you take damage or fail a saving throw while raging, you can use your reaction to roll on the Wild Magic table and immediately produce the effect rolled. This effect replaces your current Wild Magic effect."
+          "description": "When you are imperiled during your rage, the magic within you can lash out; immediately after you take damage or fail a saving throw while raging, you can use your reaction to start a new Wild Surge, creating a new random effect from the Wild Magic table, and selecting a new spell to affect you for the duration of your rage, ending the previous one."
         },
         {
           "level": 14,
           "name": "Controlled Surge",
-          "description": "Whenever you roll on the Wild Magic table, you can roll the die twice and choose which of the two effects to unleash. If you roll the same number on both dice, you can ignore the number and choose any effect on the table."
+          "description": "Whenever you roll on the Wild Magic table, you can roll the die twice and choose which of the two effects to unleash."
         }
       ]
     }
