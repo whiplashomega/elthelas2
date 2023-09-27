@@ -57,7 +57,7 @@ export default [
   {
     "name": "Dreadful Word",
     "prereq": "7th level warlock",
-    "description": "You can cast confusion once using a warlock spell slot. You can't do so again until you finish a long rest."
+    "description": "You learn the spell confusion and it counts as a warlock spell for you. Additionally you can cast it once without using a spell slot, but once you do so you cannot do so again until you finish a long rest."
   },
   {
     "name": "Eldritch Mind",
@@ -142,7 +142,7 @@ export default [
   {
     "name": "Lifedrinker",
     "prereq": "12th level warlock, Pact of the Blade feature",
-    "description": "When you hit a creature with your pact weapon, the creature takes extra necrotic damage equal to your spellcasting modifier (minimum 1)."
+    "description": "When you hit a creature with your pact weapon, the creature takes extra damage equal to your spellcasting modifier (minimum 1)."
   },
   {
     "name": "Maddening Hex",
@@ -161,8 +161,8 @@ export default [
   },
   {
     "name": "Minions of Chaos",
-    "prereq": "9th level warlock",
-    "description": "You learn the spell conjure elemental and it counts as a warlock spell for you. Additionally you can cast it once without using a spell slot, but once you do so you cannot do so again until you finish a long rest."
+    "prereq": "2nd level warlock",
+    "description": "You learn the spell summon elemental and it counts as a warlock spell for you. Additionally you can cast it once without using a spell slot, but once you do so you cannot do so again until you finish a long rest. When you cast it in this way it is cast at a level equal to the level of your warlock spell slots."
   },
   {
     "name": "Mire the Mind",

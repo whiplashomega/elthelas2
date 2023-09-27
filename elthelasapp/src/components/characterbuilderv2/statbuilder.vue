@@ -56,7 +56,7 @@
             Point Buy Total: {{ pointbuy }}<br />
             Stat Rolls: <span v-for="(roll, index) in characters.statRolls" :key="index">{{ roll }}&nbsp;</span>
             <input type="button" @click="rollStats()" value="Roll!" /> 
-            <input type="button" @click="rollBoundedStats()" value="Bounded Roll (78 max)!" />
+            <input type="button" @click="rollBoundedStats()" value="Bounded Roll (76 max)!" />
           </div>
         </div>
 </template>

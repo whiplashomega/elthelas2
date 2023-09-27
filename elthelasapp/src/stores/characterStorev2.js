@@ -495,7 +495,7 @@ export default {
           return a + b;
         }, 0));
       }
-      var remainder = 78 - this.statRolls[0] - this.statRolls[1] - this.statRolls[2] - this.statRolls[3] - this.statRolls[4];
+      var remainder = 76 - this.statRolls[0] - this.statRolls[1] - this.statRolls[2] - this.statRolls[3] - this.statRolls[4];
       if (remainder >= 4 && remainder <= 18) {
         this.statRolls.push(remainder);
       } else {
