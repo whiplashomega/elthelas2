@@ -482,9 +482,9 @@ export default {
         }, 0));
         this.statRolls = this.statRolls.sort((a, b) => {
           if (a > b) {
-            return 1;
-          } else {
             return -1;
+          } else {
+            return 1;
           }
         });
       }
@@ -507,9 +507,9 @@ export default {
         this.statRolls.push(remainder);
         this.statRolls = this.statRolls.sort((a, b) => {
           if (a > b) {
-            return 1;
-          } else {
             return -1;
+          } else {
+            return 1;
           }
         });
       } else {

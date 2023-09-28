@@ -1,4 +1,3 @@
-/* globals navigator */
 import '@/../node_modules/leaflet/dist/leaflet.css';
 import '@/../node_modules/leaflet-measure/dist/leaflet-measure.css';
 import { storeToRefs } from 'pinia';
