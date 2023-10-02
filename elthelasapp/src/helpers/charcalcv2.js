@@ -199,6 +199,13 @@ export default {
     character.charclasses.forEach((cc) => {
       if (cc.level) {
         total += Number(cc.level) * (cc.thisclass.hitdie / 2 + this.statMod(character, 2) + 1);
+        character.feats.forEach((a) => {
+          if (a.name === "Hardy") {
+            total += cc.level;
+          } else if (a.name === "Tough") {
+            total += cc.level * 2;
+          }
+        });
       }
     });
     total += (character.charclasses[0].thisclass.hitdie / 2 - 1);
@@ -414,17 +421,6 @@ export default {
     var slots = 0;
     character.charclasses.forEach((a) => {
       if (a.thisclass.name === "Warlock") {
-        if (a.level >= 1) {
-          slots++;
-        } if (a.level >= 2) {
-          slots++;
-        } if (a.level >= 11) {
-          slots++;
-        } if (a.level >= 17) {
-          slots++;
-        }
-        slots += Number(character.warlockslotsmagic);
-      } else if (a.thisclass.name === "Warlock (Joe's Edit)" && a.level >= 1) {
         slots = Math.floor((Number(a.level) + 7) / 4) + Number(character.warlockslotsmagic);
       }
     });

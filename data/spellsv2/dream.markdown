@@ -3,10 +3,10 @@ layout: post
 title: "Dream"
 date: 2015-07-14
 source: PHB.236
-tags: [arcanetrickster, bard, warlock, wizard, level5, illusion]
+tags: [arcanetrickster, bard, warlock, wizard, level5, illusion, ritual]
 ---
 
-**5th-level illusion**
+**5th-level illusion (ritual)**
 
 **Casting Time**: 1 minute
 

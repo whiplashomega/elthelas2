@@ -209,6 +209,29 @@ export default {
           container: containerId
         });
         this.newEquipModal.isActive = false;
+        var finesse = item.Properties.includes("finesse") && this.character.stats[0] < this.character.stats[1];
+        var ranged = item.Properties.includes("ranged");
+        var bonus = item.Weapon.includes('+1') ? 1 : 0;
+        bonus = item.Weapon.includes('+2') ? 2 : bonus;
+        bonus = item.Weapon.includes('+3')? 3 : bonus;
+
+        this.character.attacks.push(
+          { 
+            name: item.Weapon, 
+            stat: (finesse || ranged) ? 1 : 0, 
+            bonus: bonus, 
+            damage: [ { dice: item.Damage, dtype: item.Dtype, damagebonus: bonus, addstat: true } ], 
+            range: (item.Reach ? item.Reach + 'm' : item.Range + '/' + item.Range * 3 + "m"), 
+            type: item.Reach ? "Melee Weapon Attack" : "Ranged Weapon Attack", 
+            edit: false, 
+            prof: true, 
+            advantage: false, 
+            rolls: {}, 
+            rolled: false, 
+            roll: false, 
+            critRange: 20 
+          }
+        )
       } else {
         alert("Please select a container");
       }

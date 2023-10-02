@@ -12,7 +12,7 @@ tags: [druid, sorcerer, ranger, wizard, eldritchknight, artificer, level4, abjur
 
 **Range**: Touch
 
-**Components**: V, S, M (diamond dust worth 100 gp, which the spell consumes)
+**Components**: V, S, M (rock dust)
 
 **Duration**: Concentration, up to 1 hour
 
