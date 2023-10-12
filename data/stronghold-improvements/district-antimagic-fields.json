@@ -65,6 +65,8 @@
   "prerequisites": [ "district-wall-towers" ],
   "hide": true,
   "count": 0,
+  "squarem": 0,
+  "space": 0,
   "max": 5,
   "tags": [ "defense" ],
   "type": "town",

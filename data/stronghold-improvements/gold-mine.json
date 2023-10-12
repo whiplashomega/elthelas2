@@ -65,6 +65,8 @@
   "prerequisites": [ "new-land" ],
   "hide": true,
   "count": 0,
+  "squarem": 0,
+  "space": 0,
   "max": 2,
   "tags": [ "income" ],
   "type": "countryside",

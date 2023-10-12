@@ -1,7 +1,7 @@
 // modules =================================================
 var express        = require('express');
 var app            = express();
-var bodyParser     = require('body-parser');
+//var bodyParser     = require('body-parser');
 var methodOverride = require('method-override');
 var mongoose = require('mongoose');
 var User = require('./app/models/user');
@@ -10,9 +10,9 @@ var authenticate = require('./app/authenticate');
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 const cors = require('cors');
-const socket = require('socket.io');
-const passportSocketIo = require('passport.socketio');
-const cookieParser = require('cookie-parser');
+//const socket = require('socket.io');
+//const passportSocketIo = require('passport.socketio');
+//const cookieParser = require('cookie-parser');
 // configuration ===========================================
 
 // config files
@@ -35,13 +35,15 @@ app.start = function() {
 
     // get all data/stuff of the body (POST) parameters
     // parse application/json
-    app.use(bodyParser.json({limit: '50mb'}));
+    //app.use(bodyParser.json({limit: '50mb'}));
+    app.use(express.json());
+    app.use(express.urlencoded({ extended: true }));
     app.use(cors());
     // parse application/vnd.api+json as json
-    app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
+    //app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 
     // parse application/x-www-form-urlencoded
-    app.use(bodyParser.urlencoded({ extended: true }));
+    //app.use(bodyParser.urlencoded({ extended: true }));
     console.log('loaded bodyParser');
     app.use(methodOverride('X-HTTP-Method-Override'));
     console.log('methodOverride started');
@@ -49,7 +51,7 @@ app.start = function() {
 
     // routes ==================================================
     var server = app.listen(config.port);
-    var io = socket(server);
+    //var io = socket(server);
     let sessionStore = new MongoStore({ mongooseConnection: mongoose.connection });
     //console.log(process.env.ENVIRONMENT);
     app.use(session({
@@ -62,7 +64,7 @@ app.start = function() {
         },
         secret: "whodawada"
     }));
-    io.use(passportSocketIo.authorize({
+    /*io.use(passportSocketIo.authorize({
         key: 'connect.sid',
         secret: "whodawada",
         store: sessionStore,
@@ -75,7 +77,7 @@ app.start = function() {
 
     io.on('invitationSent', function(socket) {
        console.log(socket);
-    });
+    });*/
     require('./app/routes')(app, config.staticDir, server); // configure our routes
     console.log('app routes');
     // start app ===============================================

@@ -65,6 +65,8 @@
   "prerequisites": [ "theater" ],
   "hide": true,
   "count": 0,
+  "squarem": 0,
+  "space": 0,
   "max": 8,
   "tags": [ "income", "faction-base" ],
   "type": "town",

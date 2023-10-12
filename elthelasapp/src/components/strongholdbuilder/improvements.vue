@@ -3,7 +3,7 @@
     <h2>Improvements &nbsp;<button @click="addImprovementModal = true" class="btn btn-success">+</button></h2>
     <div class="row">
       <div class="col-sm-3">
-        <h4>{{ stronghold.castleName }} Castle Improvements</h4>
+        <h4>{{ stronghold.castleName }} Bastion Improvements</h4>
         <div v-for="improvement in castleImprovements" :key="improvement.id">
           <improvement :improvement="improvement" :stronghold="stronghold" />
         </div>

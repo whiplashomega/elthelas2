@@ -110,7 +110,7 @@
           />
         </label>
       </div>
-      <div class="row">
+      <!--<div class="row">
         <div class="col-sm-12">
           Starting Land (km^2)
           <input
@@ -122,7 +122,7 @@
             v-model="stronghold.improvements[0].count"
           />
         </div>
-      </div>
+      </div>-->
       <h4>Load Stronghold</h4>
       <ul>
         <li v-for="stronghold in allStrongholds" :key="stronghold._id">

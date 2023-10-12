@@ -18,7 +18,7 @@
       <h5>Year</h5>
       <input type="range" class="form-range"
              v-model="year" :min="-500"
-             :max="1854" step="1" />
+             :max="1855" step="1" />
       <input type="number" v-model="year"
              :min="-500" :max ="1854"
              step="1" />

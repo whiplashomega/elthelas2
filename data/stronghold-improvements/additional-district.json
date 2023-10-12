@@ -65,6 +65,8 @@
   "prerequisites": [ "town" ],
   "hide": true,
   "count": 0,
+  "squarem": 0,
+  "space": 0,
   "max": 500,
   "tags": [ "infrastructure", "housing" ],
   "type": "town",

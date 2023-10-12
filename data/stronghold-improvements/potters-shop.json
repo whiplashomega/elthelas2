@@ -65,6 +65,8 @@
   "prerequisites": [ "village" ],
   "hide": true,
   "count": 0,
+  "squarem": 0,
+  "space": 0,
   "max": 3,
   "tags": [ "income" ],
   "type": "town"

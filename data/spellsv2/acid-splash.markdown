@@ -3,10 +3,10 @@ layout: post
 title:  "Acid Splash"
 date:   2014-08-24
 source: PHB.211
-tags: [sorcerer, wizard, eldritchknight, arcanetrickster, artificer, cantrip, conjuration]
+tags: [sorcerer, wizard, eldritchknight, arcanetrickster, artificer, cantrip, evocation]
 ---
 
-**Conjuration cantrip**
+**Evocation cantrip**
 
 **Casting Time**: 1 action
 
@@ -22,6 +22,6 @@ tags: [sorcerer, wizard, eldritchknight, arcanetrickster, artificer, cantrip, co
 
 **Damage**: [ { "dice": "1d6", label: "acid", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
-You hurl a bubble of acid. Choose one creature within range, or choose two creatures within range that are within 1m of each other. A target must succeed on a Dexterity saving throw or take 1d6 acid damage.
+You create an acidic bubble and hurl it at a point within range, where it explodes in a 5-foot-radius sphere. Each creature in that sphere must succeed on a Dexterity saving throw or take 1d6 Acid damage.
 
 This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).
