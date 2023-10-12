@@ -180,6 +180,17 @@ const router = createRouter({
       },
     },
     {
+      path: "/tools/charsheet",
+      name: "Printable Character Sheet",
+      components: {
+        default: () => import("@/views/character/charactersheet.vue"),
+      },
+      meta: {
+        title: "Printable Character Sheet",
+        auth: false,
+      },
+    },
+    {
       path: "/world/historylist",
       name: "Timeline - Simple",
       components: {
