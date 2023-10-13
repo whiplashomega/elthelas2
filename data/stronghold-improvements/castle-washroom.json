@@ -1,7 +1,7 @@
 {
-  "id": "bedroom",
-  "name": "Bedroom",
-  "benefit": "A place to sleep",
+  "id": "washroom",
+  "name": "Washroom",
+  "benefit": "A place to poop in a sanitary manner, no more buckets!",
   "staff": [],
   "goldCost": 200,
   "resourceCost":  {
@@ -12,8 +12,8 @@
     "food": 0,
     "iron": 0,
     "leather": 0,
-    "lumber": 50,
-    "steel": 5,
+    "lumber": 30,
+    "steel": 2,
     "stone": 0,
     "timber": 0,
     "sugar": 0,
@@ -65,10 +65,10 @@
   "prerequisites": [ ],
   "hide": true,
   "count": 0,
-  "squarem": 0,
+  "squarem": -10,
   "space": 0,
   "max": 1,
-  "tags": [ "defense", "housing" ],
+  "tags": [ "housing" ],
   "type": "castle",
   "isfarm": false
 }

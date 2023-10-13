@@ -2,7 +2,7 @@ Adventuring
 Resting
 Long Rest
 <p>
-  A long rest is a period of extended downtime, at least 8 hours long, during which a character sleeps or performs light activity: reading, talking, eating, or standing watch for no more than 2 hours. If the rest is interrupted by a period of strenuous activity--at least 1 hour of walking, fighting, casting spells, or similar adventuring activity--the characters must begin the rest again to gain any benefit from it.
+  A long rest is a period of extended downtime, at least 8 hours long, during which a character sleeps or performs light activity: reading, talking, eating, or standing watch for no more than 2 hours. If the rest is interrupted by a period of strenuous activity--combat, at least 1 hour of walking, casting a spell higher level than a cantrip, or similar adventuring activity--the characters must begin the rest again to gain any benefit from it.
 </p>
 <p>
   A long rest can only be completed while in a relatively safe location, with sufficient amenities to allow the character to sleep in a proper bed, wash, and eat a hot meal.
