@@ -36,7 +36,7 @@ app.start = function() {
     // get all data/stuff of the body (POST) parameters
     // parse application/json
     //app.use(bodyParser.json({limit: '50mb'}));
-    app.use(express.json());
+    app.use(express.json({limit: '50mb'}));
     app.use(express.urlencoded({ extended: true }));
     app.use(cors());
     // parse application/vnd.api+json as json
