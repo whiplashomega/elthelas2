@@ -571,7 +571,7 @@
     "Mastery": "Sap",
     "Damage": "1d4",
     "Cost": 2,
-    "Weight": 10,
+    "Weight": 1,
     "Reach": 0,
     "Range": 16
   },

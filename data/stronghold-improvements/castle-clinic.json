@@ -65,7 +65,7 @@
   "prerequisites": [ "base-structure" ],
   "hide": true,
   "count": 0,
-  "squarem": 0,
+  "squarem": -200,
   "space": 0,
   "max": 7,
   "tags": [ "income", "housing" ],

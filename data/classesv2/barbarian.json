@@ -203,7 +203,7 @@
         {
           "level": 2,
           "name": "Totem Spirit",
-          "description": "When you adopt this path, you choose a totem spirit and gain its feature. You must make or acquire a physical totem object- an amulet or similar adornment—that incorporates fur or feathers, claws, teeth, or bones o f the totem animal. At your option, you also gain minor physical attributes that are reminiscent of your totem spirit. For example, if you have a bear totem spirit, you might be unusually hairy and thickskinned, or if your totem is the eagle, your eyes turn bright yellow.\n\nYour totem animal might be an animal related to those listed here but more appropriate to your homeland. For example, you could choose a hawk or vulture in place of an eagle.\n\n**Bear.** While raging, you have resistance to all damage except psychic damage. The spirit of the bear makes you tough enough to stand up to any punishment.\n\n**Eagle.** While you're raging and aren’t wearing heavy armor, other creatures have disadvantage on opportunity attack rolls against you, and you can use the Dash action as a bonus action on your turn. The spirit of the eagle makes you into a predator who can weave through the fray with ease.\n\n**Wolf.** While you're raging, your friends have advantage on melee attack rolls against any creature within your reach that is hostile to you. The spirit of the wolf makes you a leader of hunters.\n\n**Elk.** While you're raging and aren't wearing heavy armor, your walking speed increases by 3m. The spirit of the elk makes you extraordinarily swift.\n\n**Tiger.** While raging, you can add 2m to your long jump distance and 1m to your high jump distance. The spirit of the tiger empowers your leaps.",
+          "description": "When you adopt this path, you choose a totem spirit and gain its feature. You must make or acquire a physical totem object- an amulet or similar adornment—that incorporates fur or feathers, claws, teeth, or bones o f the totem animal. At your option, you also gain minor physical attributes that are reminiscent of your totem spirit. For example, if you have a bear totem spirit, you might be unusually hairy and thickskinned, or if your totem is the eagle, your eyes turn bright yellow.\n\nYour totem animal might be an animal related to those listed here but more appropriate to your homeland. For example, you could choose a hawk or vulture in place of an eagle.\n\n**Bear.** While raging, you have resistance to all damage except psychic damage. The spirit of the bear makes you tough enough to stand up to any punishment.\n\n**Eagle.** While you're raging and aren’t wearing heavy armor, other creatures have disadvantage on opportunity attack rolls against you, and you can use the Dash action as a bonus action on your turn. The spirit of the eagle makes you into a predator who can weave through the fray with ease.\n\n**Wolf.** While you're raging, your friends have advantage on melee attack rolls against any creature within your reach that is hostile to you. The spirit of the wolf makes you a leader of hunters.\n\n**Elk.** While you're raging and aren't wearing heavy armor, your walking speed increases by 3m. The spirit of the elk makes you extraordinarily swift.\n\n**Tiger.** While raging, when you hit a creature with a melee weapon attack and have a hand free, you can immediately grapple the creature.",
           "choice": [
             {
               "name": "Bear",
@@ -219,11 +219,11 @@
             },
             {
               "name": "Elk",
-              "description": "While you're raging and aren't wearing heavy armor, your walking speed increases by 3m. The spirit of the elk makes you extraordinarily swift."
+              "description": "While you're raging and aren't wearing heavy armor, your walking speed increases by 4m. The spirit of the elk makes you extraordinarily swift."
             },
             {
               "name": "Tiger",
-              "description": "While raging, you can add 2m to your long jump distance and 1m to your high jump distance. The spirit of the tiger empowers your leaps."
+              "description": " While raging, when you hit a creature with a melee weapon attack and have a hand free, you can immediately grapple the creature."
             }
           ]
         },
@@ -246,7 +246,7 @@
             },
             {
               "name": "Elk",
-              "description": "Whether mounted or on foot, your travel pace is doubled, as is the travel pace of up to ten companions while they're within 12m of you and you're not incapacitated (see chapter 8 in the Player's Handbook for more information about travel pace). The elk spirit helps you roam far and fast."
+              "description": "You gain extraordinary stamina. When you would gain one or more levels of exhaustion, you gain one fewer level of exhaustion (minimum 0). Once you use this ability to cannot do so again until you finish a long rest."
             },
             {
               "name": "Tiger",
@@ -270,7 +270,7 @@
             },
             {
               "name": "Eagle",
-              "description": "While raging, you have a flying speed equal to your current walking speed. This benefit works only in short bursts; you fall if you end your turn in the air and nothing else is holding you aloft."
+              "description": "While raging, you have a flying speed equal to your current walking speed."
             },
             {
               "name": "Wolf",
@@ -331,19 +331,19 @@
         {
           "level": 2,
           "name": "Storm Aura",
-          "description": "You emanate a stormy, magical aura while you rage. The aura extends 2m from you in every direction, but not through total cover.\n\nYour aura has an effect that activates when you enter your rage, and you can activate the effect again on each of your turns as a bonus action. Choose desert, sea, or tundra. Your aura’s effect depends on that chosen environment, as detailed below. You can change your environment choice whenever you gain a level in this class.\n\nIf your aura's effects require a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.\n\n**Desert.** When this effect is activated, all other creatures in your aura take 2 fire damage each. The damage increases when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level.\n\n**Sea.** When this effect is activated, you can choose one other creature you can see in your aura. The target must make a Dexterity saving throw. The target takes 1d6 lightning damage on a failed save, or half as much damage on a successful one. The damage increases when you reach certain levels in this class, increasing to 2d6 at 10th level, 3d6 at 15th level, and 4d6 at 20th level.\n\n**Tundra.** When this effect is activated, each creature of your choice in your aura gains 2 temporary hit points, as icy spirits inure it to suffering. The temporary hit points increase when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level.",
+          "description": "You emanate a stormy, magical aura while you rage. The aura extends 2m from you in every direction, but not through total cover.\n\nYour aura has an effect that activates when you enter your rage, and you can activate the effect again on each of your turns as a bonus action. Choose desert, sea, or tundra. Your aura’s effect depends on that chosen environment, as detailed below. You can change your environment choice whenever you gain a level in this class.\n\nIf your aura's effects require a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier. The size of your aura increases as you gain levels in this class, increasing to 3m at level 6, 4m at level 10, and 5m at level 14.\n\n**Desert.** When this effect is activated, all other creatures of your choice in your aura take 2 fire damage each. The damage increases when you reach certain levels in this class, increasing to 3 at 6th level, 4 at 10th level, and 5 at 14th level.\n\n**Sea.** When this effect is activated, you can choose one other creature you can see in your aura. The target must make a Dexterity saving throw. The target takes 1d6 lightning damage on a failed save, or half as much damage on a successful one. The damage increases when you reach certain levels in this class, increasing to 2d6 at 6th level, 3d6 at 10th level, and 4d6 at 14th level.\n\n**Tundra.** When this effect is activated, each creature of your choice in your aura gains 3 temporary hit points, as icy spirits inure it to suffering. The temporary hit points increase when you reach certain levels in this class, increasing to 4 at 6th level, 5 at 10th level, and 6 at 14th level.",
           "choice": [
             {
               "name": "Desert",
-              "description": "When this effect is activated, all other creatures in your aura take 2 fire damage each. The damage increases when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level."
+              "description": "When this effect is activated, all other creatures of your choice in your aura take 2 fire damage each. The damage increases when you reach certain levels in this class, increasing to 3 at 6th level, 4 at 10th level, and 5 at 14th level."
             },
             {
               "name": "Sea",
-              "description": "When this effect is activated, you can choose one other creature you can see in your aura. The target must make a Dexterity saving throw. The target takes 1d6 lightning damage on a failed save, or half as much damage on a successful one. The damage increases when you reach certain levels in this class, increasing to 2d6 at 10th level, 3d6 at 15th level, and 4d6 at 20th level."
+              "description": "When this effect is activated, you can choose one other creature you can see in your aura. The target must make a Dexterity saving throw. The target takes 1d6 lightning damage on a failed save, or half as much damage on a successful one. The damage increases when you reach certain levels in this class, increasing to 2d6 at 6th level, 3d6 at 10th level, and 4d6 at 14th level."
             },
             {
               "name": "Tundra",
-              "description": "When this effect is activated, each creature of your choice in your aura gains 2 temporary hit points, as icy spirits inure it to suffering. The temporary hit points increase when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level."
+              "description": "When this effect is activated, each creature of your choice in your aura gains 3 temporary hit points, as icy spirits inure it to suffering. The temporary hit points increase when you reach certain levels in this class, increasing to 4 at 6th level, 5 at 10th level, and 6 at 14th level."
             }
           ]
         },
@@ -434,7 +434,7 @@
         {
           "level": 2,
           "name": "Form of the Beast",
-          "description": "When you enter your rage, you can transform, revealing the bestial power within you. Until the rage ends, you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier to the attack and damage rolls when you attack with it, as normal.\n\nYou choose the weapon's form each time you rage:\n\n**Bite.** Your mouth transforms into a bestial muzzle or great mandibles (your choice). It deal 1d10 piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you regain a number of hit points equal to your proficiency bonus.\n\n**Claws.** Each of your hands transforms into a claw, which you can use as a weapon if it's empty. It deals 1d8 slashing damage on a hit and has the light property.\n\n**Tail.** You grow a lashing, spiny tail, which deals 1d10 piercing damage on a hit and has the reach property. If a creature you can see within 2m of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled, potentially causing the attack to miss you."
+          "description": "When you enter your rage, you can transform, revealing the bestial power within you. Until the rage ends, you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier to the attack and damage rolls when you attack with it, as normal.\n\nYou choose the weapon's form each time you rage, and can switch which weapon you are manifesting as a bonus action:\n\n**Bite.** Your mouth transforms into a bestial muzzle or great mandibles (your choice). It deal 1d10 piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you regain a number of hit points equal to your proficiency bonus.\n\n**Claws.** Each of your hands transforms into a claw, which you can use as a weapon if it's empty. It deals 1d8 slashing damage on a hit and has the light property.\n\n**Tail.** You grow a lashing, spiny tail, which deals 1d10 piercing damage on a hit and has the reach property. If a creature you can see within 2m of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled, potentially causing the attack to miss you."
         },
         {
           "level": 6,
