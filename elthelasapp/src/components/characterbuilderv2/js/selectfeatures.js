@@ -129,13 +129,13 @@ export default {
     numStyles () {
       var asi = 0;
       this.character.charclasses.forEach((cl) => {
-        if (cl.thisclass.name === "Fighter" && cl.level >= 2) {
+        if (cl.thisclass.name === "Fighter" && cl.level >= 1) {
           asi++;
           if (cl.selsubclass.name === "Champion" && cl.level >= 10) {
             asi++;
           }
         }
-        if (cl.level >= 2 && (cl.thisclass.name === "Paladin" || cl.thisclass.name === "Ranger")) {
+        if (cl.level >= 1 && (cl.thisclass.name === "Paladin" || cl.thisclass.name === "Ranger")) {
           asi++;
         }
         if (cl.level >= 2 && cl.selsubclass.name === "Brains Over Brawn") {
