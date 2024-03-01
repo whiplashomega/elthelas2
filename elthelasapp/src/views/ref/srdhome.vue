@@ -52,6 +52,15 @@
       </div>
     </b-tab>
     <b-tab title="Summary of Changes">
+      <h2>Changes in version 2</h2>
+      <p>
+        This is a non-exhaustive list.
+      </p>
+      <ul>
+        <li>Knockdown and Grapple weapon properties now uses the ability modifier used in the attack to set the DC rather than always strength.</li>
+        <li>Dual-Wielder AC bonus no longer requires forgoing an attack.</li>
+        <li>Scale hauberk AC bonus reduced to 14, PC increased to 2</li>
+      </ul>
       <h2>Summary of Changes Compared to Standard 5e</h2>
       <p>
         This is a non-exhaustive list.
