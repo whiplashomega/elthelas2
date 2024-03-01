@@ -52,7 +52,7 @@ export default [
   {
     "name": "Devil's Sight",
     "prereq": "5th level warlock",
-    "description": "You can see normally in darkness, both magical and nonmagical, to a distance of 24m."
+    "description": "You can see normally in darkness, both magical and nonmagical, to a distance of 36m."
   },
   {
     "name": "Dreadful Word",
@@ -102,7 +102,7 @@ export default [
   {
     "name": "Ghostly Gaze",
     "prereq": "7th level warlock",
-    "description": "As an action, you gain the ability to see through solid objects to a range of 6m. Within that range, you have darkvision if you don't already have it. This special sight lasts for 1 minute or until your concentration ends (as if you were concentrating on a spell). During that time, you perceive objects as ghostly, transparent images.\n\nOnce you use this invocation, you can't use it again until you finish a short or long rest."
+    "description": "As an action, you gain the ability to see through solid objects to a range of 9m. Within that range, you have darkvision if you don't already have it. This special sight lasts for 1 minute or until your concentration ends (as if you were concentrating on a spell). During that time, you perceive objects as ghostly, transparent images.\n\nOnce you use this invocation, you can't use it again until you finish a short or long rest."
   },
   {
     "name": "Gift of the Depths",
@@ -122,7 +122,7 @@ export default [
   {
     "name": "Grasp of Hadar",
     "prereq": "eldritch blast cantrip",
-    "description": "Once on each of your turns when you hit a creature with your eldritch blast, you can move that creature in a straight line 2m closer to yourself."
+    "description": "Once on each of your turns when you hit a creature with your eldritch blast, you can move that creature in a straight line 3m closer to yourself."
   },
   {
     "name": "Improved Pact Weapon",
@@ -137,7 +137,7 @@ export default [
   {
     "name": "Lance of Lethargy",
     "prereq": "eldritch blast cantrip",
-    "description": "Once on each of your turns when you hit a creature with your eldritch blast, you can reduce that creature's speed by 2m until the end of your next turn."
+    "description": "Once on each of your turns when you hit a creature with your eldritch blast, you can reduce that creature's speed by 3m until the end of your next turn."
   },
   {
     "name": "Lifedrinker",
@@ -147,7 +147,7 @@ export default [
   {
     "name": "Maddening Hex",
     "prereq": "5th level warlock, hex spell or a warlock feature that curses",
-    "description": "As a bonus action, you cause a psychic disturbance around the target cursed by your hex spell or by a warlock feature of yours, such as Hexblade's Curse and Sign of Ill Omen. When you do so, you deal psychic damage to the cursed target and each creature of your choice within 1m of it. The psychic damage equals your spellcasting modifier (minimum of 1 damage). To use this invocation, you must be able to see the cursed target, and it must be within 6m of you."
+    "description": "As a bonus action, you cause a psychic disturbance around the target cursed by your hex spell or by a warlock feature of yours, such as Hexblade's Curse and Sign of Ill Omen. When you do so, you deal psychic damage to the cursed target and each creature of your choice within 1m of it. The psychic damage equals your spellcasting modifier (minimum of 1 damage). To use this invocation, you must be able to see the cursed target, and it must be within 9m of you."
   },
   {
     "name": "Mask of Many Faces",
@@ -187,17 +187,17 @@ export default [
   {
     "name": "Rebuke of the Talisman",
     "prereq": "Pact of the Talisman feature",
-    "description": "When the wearer of your talisman is hit by an attacker you can see within 6m of you, you can use your reaction to deal psychic damage to the attacker equal to your proficiency bonus and push it up to 2m away from the talisman's wearer."
+    "description": "When the wearer of your talisman is hit by an attacker you can see within 9m of you, you can use your reaction to deal psychic damage to the attacker equal to your proficiency bonus and push it up to 3m away from the talisman's wearer."
   },
   {
     "name": "Relentless Hex",
     "prereq": "7th level warlock, hex spell or a warlock feature that curses",
-    "description": "Your curse creates a temporary bond between you and your target. As a bonus action, you can magically teleport up to 6m to an unoccupied space you can see within 1m of the target cursed by your hex spell or by a warlock feature of yours, such as Hexblade's Curse and Sign of Ill Omen. To teleport in this way, you must be able to see the cursed target."
+    "description": "Your curse creates a temporary bond between you and your target. As a bonus action, you can magically teleport up to 9m to an unoccupied space you can see within 1m of the target cursed by your hex spell or by a warlock feature of yours, such as Hexblade's Curse and Sign of Ill Omen. To teleport in this way, you must be able to see the cursed target."
   },
   {
     "name": "Repelling Blast",
     "prereq": "eldritch blast cantrip",
-    "description": "When you hit a creature with eldritch blast, you can push the creature up to 2m away from you in a straight line."
+    "description": "When you hit a creature with eldritch blast, you can push the creature up to 3m away from you in a straight line."
   },
   {
     "name": "Sculptor of Flesh",
@@ -247,6 +247,6 @@ export default [
   {
     "name": "Witch Sight",
     "prereq": "15th level warlock",
-    "description": "You can see the true form of any shapechanger or creature concealed by illusion or transmutation magic while the creature is within 6m of you and within line of sight."
+    "description": "You can see the true form of any shapechanger or creature concealed by illusion or transmutation magic while the creature is within 9m of you and within line of sight."
   }
 ];

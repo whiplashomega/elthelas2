@@ -10,7 +10,7 @@ tags: [druid, sorcerer, wizard, cantrip, transmutation]
 
 **Casting Time**: 1 action
 
-**Range**: 6m
+**Range**: 9m
 
 **Components**: S
 

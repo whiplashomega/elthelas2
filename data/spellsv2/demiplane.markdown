@@ -10,7 +10,7 @@ tags:   [archivist, sorcerer, warlock, wizard, level8, conjuration]
 
 **Casting Time**: 1 action
 
-**Range**: 12m
+**Range**: 18m
 
 **Components**: S
 

@@ -22,7 +22,7 @@ tags: [arcanetrickster, wizard, artificer, level4, abjuration]
 
 **Damage**: []
 
-You make an area within range magically secure. The area is a cube that can be as small as 1m to as large as 20m on each side. The spell lasts for the duration or until you use an action to dismiss it.
+You make an area within range magically secure. The area is a cube that can be as small as 1m to as large as 30m on each side. The spell lasts for the duration or until you use an action to dismiss it.
 
 When you cast the spell, you decide what sort of security the spell provides, choosing any or all of the following properties:
 
@@ -35,4 +35,4 @@ When you cast the spell, you decide what sort of security the spell provides, ch
 
 Casting this spell on the same spot every day for a year makes this effect permanent.
 
-**At Higher Levels.** When you cast this spell using a spell slot of 5th level or higher, you can increase the size of the cube by 20m for each slot level beyond 4th. Thus you could protect a cube that can be up to 40m on one side by using a spell slot of 5th level.
+**At Higher Levels.** When you cast this spell using a spell slot of 5th level or higher, you can increase the size of the cube by 30m for each slot level beyond 4th. Thus you could protect a cube that can be up to 60m on one side by using a spell slot of 5th level.

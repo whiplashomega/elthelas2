@@ -10,7 +10,7 @@ tags:   [cleric, druid, sorcerer, level7, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 30m
+**Range**: 45m
 
 **Components**: V, S
 

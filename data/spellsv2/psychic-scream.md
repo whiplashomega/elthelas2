@@ -10,7 +10,7 @@ tags: [bard, sorcerer, warlock, wizard, level9, enchantment]
 
 **Casting Time**: 1 action
 
-**Range**: 18m
+**Range**: 27m
 
 **Components**: S
 

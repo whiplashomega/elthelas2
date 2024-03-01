@@ -8,9 +8,9 @@ tags: [warlock, wizard, level6, necromancy]
 
 **6th-level necromancy**
 
-**Casting Time**: 1 reaction, which you take when a humanoid you can see within 12m of you dies
+**Casting Time**: 1 reaction, which you take when a humanoid you can see within 18m of you dies
 
-**Range**: 12m
+**Range**: 18m
 
 **Components**: V, S, M (a tiny silver cage worth 100 gp)
 

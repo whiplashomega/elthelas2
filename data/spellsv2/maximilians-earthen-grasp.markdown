@@ -10,7 +10,7 @@ tags: [sorcerer, wizard, level2, transmutation]
 
 **Casting Time**: 1 action
 
-**Range**: 6m
+**Range**: 9m
 
 **Components**: V, S, M (a miniature hand sculpted from clay)
 

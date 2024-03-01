@@ -10,7 +10,7 @@ tags: [bard, warlock, wizard, level7, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 20m
+**Range**: 30m
 
 **Components**: V, S, M (ruby dust worth 1,500 gp)
 
@@ -24,7 +24,7 @@ tags: [bard, warlock, wizard, level7, evocation]
 
 An immobile, invisible, cube-shaped prison composed of magical force springs into existence around an area you choose within range. The prison can be a cage or a solid box, as you choose.
 
-A prison in the shape of a cage can be up to 4m on a side and is made from 1/2-inch diameter bars spaced 1/2-inch apart.
+A prison in the shape of a cage can be up to 6m on a side and is made from 1/2-inch diameter bars spaced 1/2-inch apart.
 
 A prison in the shape of a box can be up to 2m on a size, creating a solid barrier that prevents any matter from passing through it and blocking any spells cast into or out from the area.
 

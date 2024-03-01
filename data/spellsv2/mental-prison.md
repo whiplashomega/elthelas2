@@ -10,7 +10,7 @@ tags: [sorcerer, warlock, wizard, level6, illusion]
 
 **Casting Time**: 1 action
 
-**Range**: 12m
+**Range**: 18m
 
 **Components**: S
 

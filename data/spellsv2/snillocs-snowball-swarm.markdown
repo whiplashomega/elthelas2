@@ -10,7 +10,7 @@ tags: [sorcerer, wizard, eldritchknight, level2, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 18m
+**Range**: 27m
 
 **Components**: V, S, M (a piece of ice or a small white rock chip)
 

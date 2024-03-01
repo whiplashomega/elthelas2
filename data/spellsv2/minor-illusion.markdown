@@ -10,7 +10,7 @@ tags: [arcanetrickster, bard, sorcerer, warlock, wizard, cantrip, illusion]
 
 **Casting Time**: 1 action
 
-**Range**: 6m
+**Range**: 9m
 
 **Components**: S, M (a bit of fleece)
 

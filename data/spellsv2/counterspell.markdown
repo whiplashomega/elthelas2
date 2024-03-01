@@ -10,7 +10,7 @@ tags: [sorcerer, warlock, eldritchknight, wizard, level3, abjuration]
 
 **Casting Time**: 1 reaction, which you take when you see a creature within 60 feet of you casting a spell.
 
-**Range**: 12m
+**Range**: 18m
 
 **Components**: S
 

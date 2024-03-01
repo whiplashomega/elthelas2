@@ -22,7 +22,7 @@ tags: [bard, sorcerer, warlock, wizard, level5, enchantment]
 
 **Damage**: [ { "dice": "8d6", "label": "psychic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
-You choose a point within range and cause psychic energy to explode there. Each creature in a 4m—radius sphere centered on that point must make an Intelligence
+You choose a point within range and cause psychic energy to explode there. Each creature in a 6m—radius sphere centered on that point must make an Intelligence
 saving throw. A creature with an Intelligence score of 2 or lower can’t be affected by this spell. A target takes 8d6 psychic damage on a failed save, or half as much
 damage on a successful one.
 

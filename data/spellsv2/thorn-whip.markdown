@@ -10,7 +10,7 @@ tags: [druid, artificer, cantrip, transmutation]
 
 **Casting Time**: 1 action
 
-**Range**: 6m
+**Range**: 9m
 
 **Components**: V, S, M (the stem of a plant with thorns)
 

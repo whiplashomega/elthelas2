@@ -22,7 +22,7 @@ tags: [druid, sorcerer, wizard, eldritchknight, level4, evocation]
 
 **Damage**: [ { "dice": "5d8", "label": "fire", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d8" } ]
 
-You create a wall of fire on a solid surface within range. You can make the wall up to 12m long, 4m high, and 1 foot thick, or a ringed wall up to 4m in diameter, 4m high, and 1 foot thick. The wall is opaque and lasts for the duration.
+You create a wall of fire on a solid surface within range. You can make the wall up to 18m long, 6m high, and 1 foot thick, or a ringed wall up to 6m in diameter, 6m high, and 1 foot thick. The wall is opaque and lasts for the duration.
 
 When the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes 5d8 fire damage, or half as much damage on a successful save.
 

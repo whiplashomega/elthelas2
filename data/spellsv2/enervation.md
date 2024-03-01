@@ -10,7 +10,7 @@ tags: [sorcerer, warlock, wizard, level5, necromancy]
 
 **Casting Time**: 1 action
 
-**Range**: 12m
+**Range**: 18m
 
 **Components**: V, S
 

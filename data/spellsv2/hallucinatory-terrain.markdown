@@ -10,7 +10,7 @@ tags: [arcanetrickster, bard, druid, warlock, wizard, level4, illusion]
 
 **Casting Time**: 10 minutes
 
-**Range**: 60m
+**Range**: 90m
 
 **Components**: V, S, M (a stone, a twig, and a bit of green plant)
 
@@ -22,6 +22,6 @@ tags: [arcanetrickster, bard, druid, warlock, wizard, level4, illusion]
 
 **Damage**: []
 
-You make natural terrain in a 30m cube in range look, sound, and smell like some other sort of natural terrain. Thus, open fields or a road can be made to resemble a swamp, hill, crevasse, or some other difficult or impassable terrain. A pond can be made to seem like a grassy meadow, a precipice like a gentle slope, or a rock-strewn gully like a wide and smooth road. Manufactured structures, equipment, and creatures within the area aren’t changed in appearance.
+You make natural terrain in a 45m cube in range look, sound, and smell like some other sort of natural terrain. Thus, open fields or a road can be made to resemble a swamp, hill, crevasse, or some other difficult or impassable terrain. A pond can be made to seem like a grassy meadow, a precipice like a gentle slope, or a rock-strewn gully like a wide and smooth road. Manufactured structures, equipment, and creatures within the area aren’t changed in appearance.
 
 The tactile characteristics of the terrain are unchanged, so creatures entering the area are likely to see through the illusion. If the difference isn’t obvious by touch, a creature carefully examining the illusion can attempt an Intelligence (Investigation) check against your spell save DC to disbelieve it. A creature who discerns the illusion for what it is, sees it as a vague image superimposed on the terrain.

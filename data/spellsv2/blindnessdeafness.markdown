@@ -10,7 +10,7 @@ tags: [arcanetrickster, bard, cleric, sorcerer, wizard, level2, necromancy]
 
 **Casting Time**: 1 action
 
-**Range**: 6m
+**Range**: 9m
 
 **Components**: V
 

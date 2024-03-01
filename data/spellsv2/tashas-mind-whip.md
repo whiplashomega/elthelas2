@@ -10,7 +10,7 @@ tags: [sorcerer, wizard, level2, enchantment]
 
 **Casting Time**: 1 action
 
-**Range**: 18m
+**Range**: 27m
 
 **Components**: V
 

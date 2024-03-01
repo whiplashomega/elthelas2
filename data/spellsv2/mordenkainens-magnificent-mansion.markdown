@@ -10,7 +10,7 @@ tags:   [bard, wizard, level7, conjuration]
 
 **Casting Time**: 1 minute
 
-**Range**: 60m
+**Range**: 90m
 
 **Components**: V, S, M (a miniature portal carved from ivory, a small piece of polished marble, and a tiny silver spoon, each item worth at least 5 gp)
 

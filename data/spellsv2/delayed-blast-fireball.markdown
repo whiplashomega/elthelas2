@@ -10,7 +10,7 @@ tags:   [sorcerer, wizard, level7, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 30m
+**Range**: 45m
 
 **Components**: V, S, M (a tiny ball of bat guano and sulfur)
 
@@ -22,7 +22,7 @@ tags:   [sorcerer, wizard, level7, evocation]
 
 **Damage**: [ { "dice": "12d6", label: "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d6" } ]
 
-A beam of yellow light flashes from your pointing finger, then condenses to linger at a chosen point within range as a glowing bead for the duration. When the spell ends, either because your concentration is broken or because you decide to end it, the bead blossoms with a low roar into an explosion of flame that spreads around corners. Each creature in a 4m-radius sphere centered on that point must make a Dexterity saving throw. A creature takes fire damage equal to the total accumulated damage on a failed save, or half as much damage on a successful one.
+A beam of yellow light flashes from your pointing finger, then condenses to linger at a chosen point within range as a glowing bead for the duration. When the spell ends, either because your concentration is broken or because you decide to end it, the bead blossoms with a low roar into an explosion of flame that spreads around corners. Each creature in a 6m-radius sphere centered on that point must make a Dexterity saving throw. A creature takes fire damage equal to the total accumulated damage on a failed save, or half as much damage on a successful one.
 
 The spell's base damage is 12d6. If at the end of your turn the bead has not yet detonated, the damage increases by 1d6.
 

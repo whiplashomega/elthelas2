@@ -10,7 +10,7 @@ tags: [sorcerer, wizard, level2, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: Self (6m cone)
+**Range**: Self (9m cone)
 
 **Components**: S, M (a vial of meltwater)
 

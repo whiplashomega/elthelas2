@@ -10,7 +10,7 @@ tags: [arcanetrickster, sorcerer, wizard, artificer, level1, conjuration]
 
 **Casting Time**: 1 action
 
-**Range**: 12m
+**Range**: 18m
 
 **Components**: V, S, M (a bit of pork rind or butter)
 

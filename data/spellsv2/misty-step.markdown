@@ -22,4 +22,4 @@ tags: [arcanetrickster, sorcerer, warlock, wizard, eldritchknight, level2, conju
 
 **Damage**: []
 
-Briefly surrounded by silvery mist, you teleport up to 6m to an unoccupied space that you can see.
+Briefly surrounded by silvery mist, you teleport up to 9m to an unoccupied space that you can see.

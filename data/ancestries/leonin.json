@@ -8,10 +8,10 @@
       "name": "Size", "description": "Leonin are typically over 6 feet tall, with some standing over 7 feet. Your size is Medium."
     },
     {
-      "name": "Speed", "description": "Your walking speed is 6m"
+      "name": "Speed", "description": "Your walking speed is 9m"
     },
     {
-      "name": "Darkvision", "description": "You can see in dim light within 12m of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      "name": "Darkvision", "description": "You can see in dim light within 18m of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
     },
     {
       "name": "Claws", "description": "Your claws are natural weapons, which you can use to make unarmed strikes. They have the light and finesse properties, and do 1d6 slashing damage."
@@ -20,7 +20,7 @@
       "name": "Hunter's Instincts", "description": "You have proficiency in one of the following skills of your choice: Athletics, Intimidation, Perception, or Survival."
     },
     {
-      "name": "Daunting Roar", "description": "As a bonus action, you can let out an especially menacing roar. Creature of your choice within 2m of you that can hear you must succeed on a Wisdom saving throw or become frightened of you until the end of your next turn. The DC of the save equals 8 + your proficiency bonus + your Constitution modifier. Once you use this trait, you can't use it again until you finish a short or long rest."
+      "name": "Daunting Roar", "description": "As a bonus action, you can let out an especially menacing roar. Creature of your choice within 3m of you that can hear you must succeed on a Wisdom saving throw or become frightened of you until the end of your next turn. The DC of the save equals 8 + your proficiency bonus + your Constitution modifier. Once you use this trait, you can't use it again until you finish a short or long rest."
     }
   ],
   "agepoints": {
@@ -47,7 +47,7 @@
       "averageweight": 255,
       "baseweight": 180,
       "weightroll": "2d6",
-      "speed": [6, 0, 0, 0, 0]
+      "speed": [9, 0, 0, 0, 0]
     }
   ]
 }

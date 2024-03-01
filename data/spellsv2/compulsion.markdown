@@ -10,7 +10,7 @@ tags: [bard, level4, enchantment]
 
 **Casting Time**: 1 action
 
-**Range**: 6m
+**Range**: 9m
 
 **Components**: V, S
 

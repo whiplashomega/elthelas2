@@ -10,7 +10,7 @@ tags: [sorcerer, warlock, wizard, eldritchknight, level1, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 6m
+**Range**: 9m
 
 **Components**: V, S, M (a twig from a tree that has been struck by lightning)
 

@@ -10,7 +10,7 @@ tags:   [cleric, druid, sorcerer, level8, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 100m
+**Range**: 150m
 
 **Components**: V, S, M (a pinch of dirt, a piece of rock, and a lump of clay)
 
@@ -22,7 +22,7 @@ tags:   [cleric, druid, sorcerer, level8, evocation]
 
 **Damage**: [ { "dice": "5d6", label: "bludgeoning", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
-You create a seismic disturbance at a point on the ground that you can see within range. For the duration, an intense tremor rips through the ground in a 20m circle centered on that point and shakes creatures and structures in contact with the ground in that area.
+You create a seismic disturbance at a point on the ground that you can see within range. For the duration, an intense tremor rips through the ground in a 30m circle centered on that point and shakes creatures and structures in contact with the ground in that area.
 
 The ground in the area becomes difficult terrain. Each creature on the ground that is concentrating must make a Constitution saving throw. On a failed save, the creature's concentration is broken.
 

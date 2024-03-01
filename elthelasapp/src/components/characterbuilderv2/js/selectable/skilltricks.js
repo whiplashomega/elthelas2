@@ -22,7 +22,7 @@ export default [
   {
     "name": "Extreme Leap",
     "skill": "Athletics",
-    "description": "Your jump distance increases by 2m."
+    "description": "Your jump distance increases by 3m."
   },
   {
     "name": "Corner Perch",

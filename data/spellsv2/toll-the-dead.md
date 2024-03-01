@@ -10,7 +10,7 @@ tags: [arcanetrickster, cleric, warlock, wizard, cantrip, necromancy]
 
 **Casting Time**: 1 action
 
-**Range**: 12m
+**Range**: 18m
 
 **Components**: V, S
 

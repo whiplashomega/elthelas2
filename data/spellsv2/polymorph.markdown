@@ -10,7 +10,7 @@ tags: [bard, druid, sorcerer, wizard, eldritchknight, level4, transmutation]
 
 **Casting Time**: 1 action
 
-**Range**: 12m
+**Range**: 18m
 
 **Components**: V, S, M (a caterpillar cocoon)
 

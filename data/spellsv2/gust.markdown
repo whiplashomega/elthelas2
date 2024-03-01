@@ -10,7 +10,7 @@ tags: [arcanetrickster, druid, sorcerer, wizard, eldritchknight, cantrip, transm
 
 **Casting Time**: 1 action
 
-**Range**: 6m
+**Range**: 9m
 
 **Components**: V, S
 

@@ -10,7 +10,7 @@ tags: [druid, sorcerer, wizard, level4, conjuration]
 
 **Casting Time**: 1 action
 
-**Range**: 18m
+**Range**: 27m
 
 **Components**: V, S, M (a droplet of water)
 
@@ -28,6 +28,6 @@ Any creature in the sphere’s space must make a Strength saving throw. On a suc
 
 The sphere can restrain a maximum of four Medium or smaller creatures or one Large creature. If the sphere restrains a creature in excess of these numbers, a random creature that was already restrained by the sphere falls out of it and lands prone in a space within 1m of it.
 
-As an action, you can move the sphere up to 6m in a straight line. If it moves over a pit, cliff, or other drop, it safely descends until it is hovering 2m over ground. Any creature restrained by the sphere moves with it. You can ram the sphere into creatures, forcing them to make the saving throw, but no more than once per turn per creature.
+As an action, you can move the sphere up to 9m in a straight line. If it moves over a pit, cliff, or other drop, it safely descends until it is hovering 2m over ground. Any creature restrained by the sphere moves with it. You can ram the sphere into creatures, forcing them to make the saving throw, but no more than once per turn per creature.
 
-When the spell ends, the sphere falls to the ground and extinguishes all normal flames within 6m of it. Any creature restrained by the sphere is knocked prone in the space where it falls.
+When the spell ends, the sphere falls to the ground and extinguishes all normal flames within 9m of it. Any creature restrained by the sphere is knocked prone in the space where it falls.

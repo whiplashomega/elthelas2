@@ -10,7 +10,7 @@ tags: [sorcerer, wizard, level6, conjuration]
 
 **Casting Time**: 1 bonus action
 
-**Range**: 12m
+**Range**: 18m
 
 **Components**: V, S, M (a platinum-plated dragon scale, worth at least 500 gp)
 
@@ -30,4 +30,4 @@ You create a field of silvery light that surrounds a creature of your choice wit
 
 **Evasion.** If the creature is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the creature instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.
 
-As a bonus action on subsequent turns, you can move the field to another creature within 12m of the field.
+As a bonus action on subsequent turns, you can move the field to another creature within 18m of the field.

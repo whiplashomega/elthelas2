@@ -10,7 +10,7 @@ tags: [druid, sorcerer, eldritchknight, wizard, level5, transmutation]
 
 **Casting Time**: 1 action
 
-**Range**: 60m
+**Range**: 90m
 
 **Components**: V, S
 
@@ -22,7 +22,7 @@ tags: [druid, sorcerer, eldritchknight, wizard, level5, transmutation]
 
 **Damage**: [ ]
 
-You take control of the air in a 20m cube that you can see within range. Choose one of the following effects when you cast the spell. The effect lasts for the spell’s duration, unless you use your action on a later turn to switch to a different effect. You can also use your action to temporarily halt the effect or to restart one you’ve halted.
+You take control of the air in a 30m cube that you can see within range. Choose one of the following effects when you cast the spell. The effect lasts for the spell’s duration, unless you use your action on a later turn to switch to a different effect. You can also use your action to temporarily halt the effect or to restart one you’ve halted.
 
 **Gusts.** A wind picks up within the cube, continually blowing in a horizontal direction that you choose. You choose the intensity of the wind: calm, moderate, or strong. If the wind is moderate or strong, ranged weapon attacks that pass through it or that are made against targets within the cube have disadvantage on their attack rolls. If the wind is strong, any creature moving against the wind must spend 1 extra meter of movement for each meter moved.
 

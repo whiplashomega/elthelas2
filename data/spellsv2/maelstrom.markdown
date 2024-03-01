@@ -22,4 +22,4 @@ tags: [druid, level5, evocation]
 
 **Damage**: [ { "dice": "6d6", "label": "bludgeoning", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
-A mass of 1m-deep water appears and swirls in a 6m radius centered on a point you can see within range. The point must be on ground or in a body of water. Until the spell ends, that area is difficult terrain, and any creature that starts its turn there must succeed on a Strength saving throw or take 6d6 bludgeoning damage and be pulled 2m toward the center.
+A mass of 1m-deep water appears and swirls in a 9m radius centered on a point you can see within range. The point must be on ground or in a body of water. Until the spell ends, that area is difficult terrain, and any creature that starts its turn there must succeed on a Strength saving throw or take 6d6 bludgeoning damage and be pulled 2m toward the center.

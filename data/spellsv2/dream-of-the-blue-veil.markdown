@@ -10,7 +10,7 @@ tags: [bard, sorcerer, warlock, wizard, level7, conjuration]
 
 **Casting Time**: 10 minutes
 
-**Range**: 4m
+**Range**: 6m
 
 **Components**: V, S, M (a magic item or a willing creature from the destination world)
 

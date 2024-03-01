@@ -10,7 +10,7 @@ tags: [druid, warlock, level1, conjuration]
 
 **Casting Time**: 1 minute
 
-**Range**: 18m
+**Range**: 27m
 
 **Components**: V, S
 

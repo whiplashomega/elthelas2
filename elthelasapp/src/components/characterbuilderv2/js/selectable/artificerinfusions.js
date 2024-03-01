@@ -3,7 +3,7 @@ export default [
     "name": "Arcane Propulsion Armor",
     "level": 14,
     "item": "A suit of armor (requires attunement)",
-    "description": "The wearer of this armor gains these benefits:\n* The wearer's walking speed increases by 5 feet.\n* The armor includes gauntlets, each of which is a magic melee weapon that can be wielded only when the hand is holding nothing. The wearer is proficient with the gauntlets, and each one deals 1d8 force damage on a hit and has the thrown property, with a normal range of 20 feet and a long range of 60 feet. When thrown, the gauntlet detaches and flies at the attack's target, then immediately returns to the wearer and reattaches.\n* The armor can't be removed against the wearer's will.\n* If the wearer is missing any limbs, the armor replaces those limbs - hands, arms, feet, legs, or similar appendages. The replacements function identically to the body parts they replace."
+    "description": "The wearer of this armor gains these benefits:\n* The wearer's walking speed increases by 1m.\n* The armor includes gauntlets, each of which is a magic melee weapon that can be wielded only when the hand is holding nothing. The wearer is proficient with the gauntlets, and each one deals 1d8 force damage on a hit and has the thrown property, with a normal range of 20 feet and a long range of 60 feet. When thrown, the gauntlet detaches and flies at the attack's target, then immediately returns to the wearer and reattaches.\n* The armor can't be removed against the wearer's will.\n* If the wearer is missing any limbs, the armor replaces those limbs - hands, arms, feet, legs, or similar appendages. The replacements function identically to the body parts they replace."
   },
   {
     "name": "Armor of Magical Strength",
@@ -18,7 +18,7 @@ export default [
     "name": "Boots of the Winding Path",
     "level": 6,
     "item": "A pair of boots (requires attunement)",
-    "description": "While wearing these boots, a creature can teleport up to 15 feet as a bonus action to an unoccupied space the creature can see. The creature must have occupied that space at some point during the current turn."
+    "description": "While wearing these boots, a creature can teleport up to 4m as a bonus action to an unoccupied space the creature can see. The creature must have occupied that space at some point during the current turn."
   },
   {
     "name": "Enhanced Arcane Focus",
@@ -77,7 +77,7 @@ The homunculus regains 2d6 hit points if the mending spell is cast on it. If you
   ##### Actions
   **Force Strike.** Ranged Weapon Attack: your spell attack modifier to hit, range 30 ft., one target you can see. Hit: 1d4 + PB force damage.\n\n
   ##### Reactions
-  **Channel Magic.** The homunculus delivers a spell you cast that has a range of touch. The homunculus must be within 120 feet of you.`
+  **Channel Magic.** The homunculus delivers a spell you cast that has a range of touch. The homunculus must be within 36m of you.`
   },
   {
     "name": "Mind Sharpener",
@@ -89,7 +89,7 @@ The homunculus regains 2d6 hit points if the mending spell is cast on it. If you
     "name": "Radiant Weapon",
     "level": 6,
     "item": "A simple or martial weapon (requires attunement)",
-    "description": `This magic weapon grants a +1 bonus to attack and damage rolls made with it. While holding it, the wielder can take a bonus action to cause it to shed bright light in a 30-foot radius and dim light for an additional 30 feet. The wielder can extinguish the light as a bonus action.
+    "description": `This magic weapon grants a +1 bonus to attack and damage rolls made with it. While holding it, the wielder can take a bonus action to cause it to shed bright light in a 9m radius and dim light for an additional 9m. The wielder can extinguish the light as a bonus action.
 
 The weapon has 4 charges. As a reaction immediately after being hit by an attack, the wielder can expend 1 charge and cause the attacker to be blinded until the end of the attacker's next turn, unless the attacker succeeds on a Constitution saving throw against your spell save DC. The weapon regains 1d4 expended charges daily at dawn.`
   },
@@ -399,7 +399,7 @@ The weapon has 4 charges. As a reaction immediately after being hit by an attack
     "item": "A shield (requires attunement)",
     "description": `A creature gains a +1 bonus to Armor Class while wielding this shield.
 
-The shield has 4 charges. While holding it, the wielder can use a reaction immediately after being hit by a melee attack to expend 1 of the shield's charges and push the attacker up to 15 feet away. The shield regains 1d4 expended charges daily at dawn.`
+The shield has 4 charges. While holding it, the wielder can use a reaction immediately after being hit by a melee attack to expend 1 of the shield's charges and push the attacker up to 4m away. The shield regains 1d4 expended charges daily at dawn.`
   },
   {
     "name": "Resistant Armor",

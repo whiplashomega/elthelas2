@@ -10,7 +10,7 @@ tags: [paladin, level2, conjuration]
 
 **Casting Time**: 10 minutes
 
-**Range**: 6m
+**Range**: 9m
 
 **Components**: V, S
 

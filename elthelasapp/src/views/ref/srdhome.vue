@@ -60,6 +60,11 @@
         <li>Knockdown and Grapple weapon properties now uses the ability modifier used in the attack to set the DC rather than always strength.</li>
         <li>Dual-Wielder AC bonus no longer requires forgoing an attack.</li>
         <li>Scale hauberk AC bonus reduced to 14, PC increased to 2</li>
+        <li>Mage Armor no longer grants protection points, base AC formula changed to 12 + dex, now has higher levels upcast.</li>
+        <li>Fixed Form of the Beast natural weapons to specify reach, and added a bonus action attack if you choose the bite.</li>
+        <li>Rogue Inquisitive's Unerring Eye feature now grants blindsight instead of shitty blindsight.</li>
+        <li>Expanded ranges to use a conversion of 3 meters per 10 feet instead of 1 meter per 5 feet, better approximating reality.</li>
+        <li>Finally converted magic item descriptions from feet to meters.</li>
       </ul>
       <h2>Summary of Changes Compared to Standard 5e</h2>
       <p>

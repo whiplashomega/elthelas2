@@ -10,7 +10,7 @@ tags: [sorcerer, warlock, wizard, eldritchknight, level2, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 12m
+**Range**: 18m
 
 **Components**: V, S, M (a chip of mica)
 

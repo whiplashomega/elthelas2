@@ -5,10 +5,10 @@
   "description": "\n\nBugbears are born for battle and mayhem. Surviving by raiding and hunting, they bully the weak and despise being bossed around, but their love of carnage means they will fight for powerful masters if bloodshed and treasure are assured.\n\nBugbears are often found in the company of their cousins, hobgoblins and goblins. Bugbears usually enslave goblins they encounter, and they bully hobgoblins into giving them gold and food in return for serving as scouts and shock troops. Even when paid, bugbears are at best unreliable allies, yet goblins and hobgoblins understand that no matter how much bugbears might drain a tribe of resources, these creatures are a potent force.\n\nBugbears are typically found in the hills and wild places of the world where society is limited. Most worship Malik, God of chaos, war, and destruction, although a few have been known to worship Tiamat or Trolka, particularly in places where a show of faith to one of those Gods may be expedient to their survival (such as in Dragonhome and Gorgro).\n\nDespite their intimidating builds, bugbears move with surprising stealth. They are fond of setting ambushes and flee when outmatched. They are dependable mercenaries as long as they are supplied food, drink, and treasure, but a bugbear forgets any bond when its life is on the line. A wounded member of a bugbear band might be left behind to help the rest of the band escape. Afterward, that bugbear might help pursuers track down its former companions if doing so saves its life.\n\n",
   "traits": [
     { "name": "Size", "description": "Bugbears are between 6 and 8 feet tall and weigh between 250 and 350 pounds. Your size is Medium." },
-    { "name": "Speed", "description": "Your base walking speed is 6m" },
+    { "name": "Speed", "description": "Your base walking speed is 9m" },
     { "name": "Surprise Attack", "description": "If the bugbear surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 (2d6) damage from the attack." },
     { "name": "Stealthy", "description": "Bugbears are always proficient in dexterity (stealth)" },
-    { "name": "Darkvision", "description": "You can see in dim light within 12m of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray." },
+    { "name": "Darkvision", "description": "You can see in dim light within 18m of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray." },
     { "name": "Long Limbed", "description": "When you make a melee attack on your turn, your reach for it is 1m greater than normal." },
     { "name": "Powerful Build", "description": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift." }
   ],
@@ -36,7 +36,7 @@
       "averageweight": 290,
       "baseweight": 200,
       "weightroll": "2d6",
-      "speed": [6, 0, 0, 0, 0]
+      "speed": [9, 0, 0, 0, 0]
     }
   ]
 }

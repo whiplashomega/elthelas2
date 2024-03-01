@@ -10,7 +10,7 @@ tags: [artificer, wizard, level1, conjuration]
 
 **Casting Time**: 1 action
 
-**Range**: 12m
+**Range**: 18m
 
 **Components**: V, S, M (an object with the image of a dragon engraved on it, worth at least 500 gp)
 

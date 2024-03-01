@@ -10,7 +10,7 @@ tags: [cleric, wizard, bard, level5, divination]
 
 **Casting Time**: 10 minutes
 
-**Range**: 100m
+**Range**: 150m
 
 **Components**: V, S, M (incense worth at least 250 gp, which the spell consumes, and four ivory strips worth at least 50 gp each)
 

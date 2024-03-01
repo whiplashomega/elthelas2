@@ -10,7 +10,7 @@ tags: [bard, druid, ranger, level2, enchantment, ritual]
 
 **Casting Time**: 1 action
 
-**Range**: 6m
+**Range**: 9m
 
 **Components**: V, S, M (a morsel of food)
 

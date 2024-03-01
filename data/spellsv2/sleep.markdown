@@ -10,7 +10,7 @@ tags: [arcanetrickster, bard, sorcerer, wizard, level1, enchantment]
 
 **Casting Time**: 1 action
 
-**Range**: 18m
+**Range**: 27m
 
 **Components**: V, S, M (a pinch of fine sand, rose petals, or a cricket)
 

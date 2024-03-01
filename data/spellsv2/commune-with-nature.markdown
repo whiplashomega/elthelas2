@@ -22,7 +22,7 @@ tags: [druid, ranger, level5, divination, ritual]
 
 **Damage**: []
 
-You briefly become one with nature and gain knowledge of the surrounding territory. In the outdoors, the spell gives you knowledge of the land within 3 miles of you. In caves and other natural underground settings, the radius is limited to 60m. The spell doesn't function where nature has been replaced by construction, such as in dungeons and towns.
+You briefly become one with nature and gain knowledge of the surrounding territory. In the outdoors, the spell gives you knowledge of the land within 3 miles of you. In caves and other natural underground settings, the radius is limited to 90m. The spell doesn't function where nature has been replaced by construction, such as in dungeons and towns.
 
 You instantly gain knowledge of up to three facts of your choice about any of the following subjects as they relate to the area:
 

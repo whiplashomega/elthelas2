@@ -10,7 +10,7 @@ tags: [ranger, wizard, eldritchknight, level5, conjuration]
 
 **Casting Time**: 1 action
 
-**Range**: 6m
+**Range**: 9m
 
 **Components**: S, M (a melee weapon worth at least 1 sp)
 

@@ -10,7 +10,7 @@ tags: [wizard, eldritchknight, level2, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 18m
+**Range**: 27m
 
 **Components**: V, S, M (powdered rhubarb leaf and an adder's stomach)
 

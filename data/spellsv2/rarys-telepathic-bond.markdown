@@ -10,7 +10,7 @@ tags:  [bard, wizard, level5, divination, ritual]
 
 **Casting Time**: 1 action
 
-**Range**: 6m
+**Range**: 9m
 
 **Components**: V, S, M (pieces of eggshell from two different kinds of creatures)
 

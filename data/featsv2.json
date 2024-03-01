@@ -202,7 +202,7 @@
   {
     "name": "Mobile",
     "prereq": "4th level",
-    "description": "You are exceptionally speedy and agile. You gain the following benefits:\n\n* Your speed increases by 2m.\n* When you use the Dash action, difficult terrain doesn’t cost you extra movement on that turn.\n* When you make a melee attack against a creature, you don’t provoke opportunity attacks from that creature for the rest of the turn, whether you hit or not."
+    "description": "You are exceptionally speedy and agile. You gain the following benefits:\n\n* Your speed increases by 3m.\n* When you use the Dash action, difficult terrain doesn’t cost you extra movement on that turn.\n* When you make a melee attack against a creature, you don’t provoke opportunity attacks from that creature for the rest of the turn, whether you hit or not."
   },
   {
     "name": "Mounted Combatant",
@@ -307,7 +307,7 @@
   {
     "name": "Speedster",
     "prereq": "4th level",
-    "description": "You possess exceptional speed and stamina, granting you the following benefits:\n\n* Increase your dexterity or constitution score by 1, to a maximum of 20.\n* Your speed increases by 2m while you aren't wearing heavy armor.\n* When you take the dash action on your turn, difficult terrain doesn't cost you extra movement for the rest of the turn."
+    "description": "You possess exceptional speed and stamina, granting you the following benefits:\n\n* Increase your dexterity or constitution score by 1, to a maximum of 20.\n* Your speed increases by 3m while you aren't wearing heavy armor.\n* When you take the dash action on your turn, difficult terrain doesn't cost you extra movement for the rest of the turn."
   },
   {
     "name": "Spell Sniper",
