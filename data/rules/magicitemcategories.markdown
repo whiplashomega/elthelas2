@@ -18,7 +18,7 @@ Magic rings offer an amazing array of powers to those lucky enough to find them.
 
 #### Rods
 
-A scepter or just a heavy cylinder, a magic rod is typically made of metal, wood, or bone. It's about 2 or 3 feet long, 1 inch thick, and 2 to 5 pounds.
+A scepter or just a heavy cylinder, a magic rod is typically made of metal, wood, or bone. 60cm to 1m in length, 2-3 cm thick, and 2 to 5 pounds.
 
 #### Scrolls
 
@@ -30,11 +30,11 @@ Any creature that can understand a written language can read the arcane script o
 
 #### Staffs
 
-A magic staff is about 5 or 6 feet long. Staffs vary widely in appearance: some are of nearly equal diameter throughout and smooth, others are gnarled and twisted, some are made of wood, and others are composed of polished metal or crystal. Depending on the material, a staff weighs between 2 and 7 pounds. Unless a staff's description says otherwise, a staff can be used as a quarterstaff.
+A magic staff is about 2m long. Staffs vary widely in appearance: some are of nearly equal diameter throughout and smooth, others are gnarled and twisted, some are made of wood, and others are composed of polished metal or crystal. Depending on the material, a staff weighs between 2 and 7 pounds. Unless a staff's description says otherwise, a staff can be used as a quarterstaff.
 
 #### Wands
 
-A magic wand is about 15 inches long and crafted of metal, bone, or wood. It is tipped with metal, crystal, stone, or some other material.
+A magic wand is about 40 cm long and crafted of metal, bone, or wood. It is tipped with metal, crystal, stone, or some other material.
 
 #### Weapons
 

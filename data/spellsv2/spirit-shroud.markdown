@@ -26,6 +26,6 @@ You call forth spirits of the dead, which flit around you for the spell's durati
 
 Until the spell ends, any attack you make deals 1d8 extra damage when you hit a creature within your reach. This damage is radiant, necrotic, or cold (your choice when you cast the spell). Any creature that takes this damage can't regain hit points until the start of your next turn.
 
-In addition, any creature of your choice that you can see that starts its turn within 2m of you has its speed reduced by 2m until the start of your next turn.
+In addition, any creature of your choice that you can see that starts its turn within 3m of you has its speed reduced by 3m until the start of your next turn.
 
 **At Higher Levels.** When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for every two slot levels above 3rd.

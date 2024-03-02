@@ -22,7 +22,7 @@ tags: [sorcerer, wizard, druid, ranger, eldritchknight, level2, evocation]
 
 **Damage**: []
 
-A line of strong wind 18m long and 2m wide blasts from you in a direction you choose for the spell's duration. Each creature that starts its turn in the line must succeed on a Strength saving throw or be pushed 4m away from you in a direction following the line.
+A line of strong wind 18m long and 3m wide blasts from you in a direction you choose for the spell's duration. Each creature that starts its turn in the line must succeed on a Strength saving throw or be pushed 4m away from you in a direction following the line.
 
 Any creature in the line must spend 2m of movement for every 1m it moves when moving closer to you.
 

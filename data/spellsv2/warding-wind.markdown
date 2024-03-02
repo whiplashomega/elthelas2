@@ -22,7 +22,7 @@ tags: [arcanetrickster, bard, druid, sorcerer, eldritchknight, level2, evocation
 
 **Damage**: []
 
-A strong wind (30km per hour) blows around you in a 2m radius and moves with you, remaining centered on you. The wind lasts for the spell’s duration.
+A strong wind (30km per hour) blows around you in a 3m radius and moves with you, remaining centered on you. The wind lasts for the spell’s duration.
 
 The wind has the following effects:
 

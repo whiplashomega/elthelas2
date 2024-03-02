@@ -22,6 +22,6 @@ tags: [arcanetrickster, sorcerer, wizard, artificer, level1, conjuration]
 
 **Damage**: []
 
-Slick grease covers the ground in a 2m square centered on a point within range and turns it into difficult terrain for the duration.
+Slick grease covers the ground in a 3m square centered on a point within range and turns it into difficult terrain for the duration.
 
 When the grease appears, each creature standing in its area must succeed on a Dexterity saving throw or fall prone. A creature that enters the area or ends its turn there must also succeed on a Dexterity saving throw or fall prone.

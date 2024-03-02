@@ -40,7 +40,7 @@ When you cast this spell, you can specify individuals that are unaffected by any
 * Place *[magic mouth](../magic-mouth/ "magic mouth (lvl 2)")* in two locations.
 * Place *[stinking cloud](../stinking-cloud/ "stinking cloud (lvl 3)")* in two locations. The vapors appear in the places you designate; They return within 10 minutes if dispersed by wind while *guards and wards* lasts.
 * Place a constant *[gust of wind](../gust-of-wind/ "gust of wind (lvl 2)")* in one corridor or room.
-* Place a *[suggestion](../suggestion/ "suggestion (lvl 2)")* in one location. You select an area of up to 2m, and any creature that enters or passes through the area receives the suggestion mentally.
+* Place a *[suggestion](../suggestion/ "suggestion (lvl 2)")* in one location. You select an area of up to 3m, and any creature that enters or passes through the area receives the suggestion mentally.
 
 The whole warded area radiates magic. A *[dispel magic](../dispel-magic/ "dispel magic (lvl 3)")* cast on a specific effect, if successful, removes only that effect.
 

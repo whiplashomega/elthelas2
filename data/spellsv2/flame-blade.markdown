@@ -22,9 +22,9 @@ tags: [druid, sorcerer, eldritchknight, level2, evocation]
 
 **Damage**: [ { "dice": "3d6", label: "fire", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d6" } ]
 
-You evoke a fiery blade in your free hand. The blade is similar in size and shape to a scimitar, and it lasts for the duration. If you let go of the blade, it disappears, but you can evoke the blade again as a bonus action. The weapon counts as a simple melee weapon with which you are proficient, and has the brutal and finesse properties and the graze weapon mastery. The weapon does 2d8 fire damage on a hit.
+You evoke a fiery blade in your free hand. The blade is similar in size and shape to a scimitar, and it lasts for the duration. If you let go of the blade, it disappears, but you can evoke the blade again as a bonus action. The weapon counts as a simple melee weapon with which you are proficient, and has the brutal and finesse properties, the graze weapon mastery, and a 1m reach. The weapon does 2d8 fire damage on a hit.
 
-The flaming blade sheds bright light in a 2m radius and dim light for an additional 2m.
+The flaming blade sheds bright light in a 3m radius and dim light for an additional 3m.
 
 If you cast this spell again while the blade exists, the first spell immediately ends.
 

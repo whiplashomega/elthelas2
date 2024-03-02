@@ -65,6 +65,7 @@
         <li>Rogue Inquisitive's Unerring Eye feature now grants blindsight instead of shitty blindsight.</li>
         <li>Expanded ranges to use a conversion of 3 meters per 10 feet instead of 1 meter per 5 feet, better approximating reality.</li>
         <li>Finally converted magic item descriptions from feet to meters.</li>
+        <li>Enervation damage increased to 5d8, takes full damage the first turn even on successful save (but save avoids continuous damage effect).</li>
       </ul>
       <h2>Summary of Changes Compared to Standard 5e</h2>
       <p>

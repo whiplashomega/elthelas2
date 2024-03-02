@@ -24,7 +24,7 @@ tags: [ranger, eldritchknight, level3, transmutation]
 
 The next time you make a ranged weapon attack during the spell’s duration, the weapon’s ammunition, or the weapon itself if it’s a thrown weapon, transforms into a bolt of lightning. Make the attack roll as normal. The target takes 5d8 lightning damage on a hit, or half as much damage on a miss, instead of the weapon’s normal damage.
 
-Whether you hit or miss, each creature within 2m of the target must make a Dexterity saving throw. Each of these creatures takes 3d8 lightning damage on a failed save, or half as much damage on a successful one.
+Whether you hit or miss, each creature within 3m of the target must make a Dexterity saving throw. Each of these creatures takes 3d8 lightning damage on a failed save, or half as much damage on a successful one.
 
 The piece of ammunition or weapon then returns to its normal form.
 

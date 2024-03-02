@@ -26,4 +26,4 @@ A swirling cloud of smoke shot through with white-hot embers appears in a 6m-ran
 
 When the cloud appears, each creature in it must make a Dexterity saving throw. A creature takes 10d8 fire damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw when it enters the spell's area for the first time on a turn or ends its turn there.
 
-The cloud moves 2m directly away from you in a direction that you choose at the start of each of your turns.
+The cloud moves 3m directly away from you in a direction that you choose at the start of each of your turns.
