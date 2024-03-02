@@ -2,7 +2,7 @@ Combat
 Actions in Combat
 Run
 <p>
-  When you take the Dash action, you gain extra movement for the current turn. The increase equals double your speed, after applying any modifiers. With a speed of 9m, for example, you can move up to 27m on your turn if you dash.
+  When you take the Run action, you gain extra movement for the current turn. The increase equals double your speed, after applying any modifiers. With a speed of 9m, for example, you can move up to 27m on your turn if you run.
 </p>
 <p>
   Any increase or decrease to your speed changes this additional movement by the same amount. If your speed of 9m is reduced to 4m, for instance, you can move up to 12m this turn if you run.
