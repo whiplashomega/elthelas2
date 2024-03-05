@@ -41,14 +41,15 @@ export default {
   computed: {
     fhweapons () {
       return this.weapons.filter((a) => {
+        var returnval = false;
         for (var key in a) {
           if (a[key].toString().toLowerCase().includes(this.homebrewweaponstable.filter.toLowerCase())) {
-            return true;
+            returnval = true;
           } else if(this.homebrewweaponstable.filter == "") {
             return  true;
           }
-          return false;
         }
+        return returnval;
       }).sort((a, b) => {
         if (this.homebrewweaponstable.sortBy == "Damage") {
           const convertTable = {

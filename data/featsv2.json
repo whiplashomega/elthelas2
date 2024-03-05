@@ -272,7 +272,7 @@
   {
     "name": "Shield Master",
     "prereq": "4th level",
-    "description": "You use shields not just for protection but also for offense. You gain the following benefits while you are wielding a shield:\n* Increase your Strength or dexterity score by 1, to a maximum of 20.\n* If you take the Attack action on your turn, you can use make an attack with your shield as a bonus action (see Shield (Bash) in weapons). This bonus attack does not count as two-weapon fighting or reduce the bonus to AC provided by your shield.\n* If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can use your reaction to take no damage if you succeed on the saving throw, interposing your shield between yourself and the source of the effect."
+    "description": "You use shields not just for protection but also for offense. You gain the following benefits while you are wielding a shield:\n* Increase your Strength or dexterity score by 1, to a maximum of 20.\n* Using a shield bash in two-weapon fighting no longer reduces the AC bonus provided by that shield.\n* If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can use your reaction to take no damage if you succeed on the saving throw, interposing your shield between yourself and the source of the effect."
   },
   {
     "name": "Shield Expertise",

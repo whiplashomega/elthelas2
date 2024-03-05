@@ -9,7 +9,7 @@
     "Cost": 10,
     "Weight": 3,
     "Reach": 1,
-    "Range": 4
+    "Range": 3
   },
   {
     "Weapon": "Dagger",
@@ -21,7 +21,7 @@
     "Cost": 8,
     "Weight": 1,
     "Reach": 1,
-    "Range": 4
+    "Range": 3
   },
   {
     "Weapon": "Dart",
@@ -33,7 +33,7 @@
     "Cost": 0.05,
     "Weight": 0.25,
     "Reach": 0,
-    "Range": 12
+    "Range": 9
   },
   {
     "Weapon": "Light Hammer",
@@ -45,7 +45,7 @@
     "Cost": 8,
     "Weight": 2,
     "Reach": 1,
-    "Range": 4
+    "Range": 3
   },
   {
     "Weapon": "Quarterstaff",
@@ -81,7 +81,7 @@
     "Cost": 4,
     "Weight": 3,
     "Reach": 2,
-    "Range": 8
+    "Range": 6
   },
   {
     "Weapon": "Whip",
@@ -141,7 +141,7 @@
     "Cost": 20,
     "Weight": 2,
     "Reach": 1,
-    "Range": 4
+    "Range": 3
   },
   {
     "Weapon": "Javelin",
@@ -153,7 +153,7 @@
     "Cost": 4,
     "Weight": 2,
     "Reach": 2,
-    "Range": 8
+    "Range": 6
   },
   {
     "Weapon": "Mace",
@@ -177,7 +177,7 @@
     "Cost": 0.4,
     "Weight": 0.1,
     "Reach": 0,
-    "Range": 16
+    "Range": 12
   },
   {
     "Weapon": "Blowgun",
@@ -189,7 +189,7 @@
     "Cost": 10,
     "Weight": 1,
     "Reach": 0,
-    "Range": 16
+    "Range": 12
   },
   {
     "Weapon": "Crossbow, hand",
@@ -201,7 +201,7 @@
     "Cost": 100,
     "Weight": 3,
     "Reach": 0,
-    "Range": 16
+    "Range": 12
   },
   {
     "Weapon": "Flail",
@@ -237,7 +237,7 @@
     "Cost": 20,
     "Weight": 4,
     "Reach": 2,
-    "Range": 4
+    "Range": 3
   },
   {
     "Weapon": "War pick",
@@ -285,7 +285,7 @@
     "Cost": 50,
     "Weight": 2,
     "Reach": 0,
-    "Range": 24
+    "Range": 18
   },
   {
     "Weapon": "Halberd",
@@ -357,7 +357,7 @@
     "Cost": 50,
     "Weight": 5,
     "Reach": 0,
-    "Range": 24
+    "Range": 18
   },
   {
     "Weapon": "Battleaxe",
@@ -381,7 +381,7 @@
     "Cost": 60,
     "Weight": 2,
     "Reach": 0,
-    "Range": 32
+    "Range": 24
   },
   {
     "Weapon": "Scimitar",
@@ -453,7 +453,7 @@
     "Cost": 100,
     "Weight": 18,
     "Reach": 0,
-    "Range": 24
+    "Range": 18
   },
   {
     "Weapon": "Pistol",
@@ -465,7 +465,7 @@
     "Cost": 1500,
     "Weight": 2,
     "Reach": 0,
-    "Range": 8
+    "Range": 6
   },
   {
     "Weapon": "Musket",
@@ -477,7 +477,7 @@
     "Cost": 1500,
     "Weight": 8,
     "Reach": 0,
-    "Range": 12
+    "Range": 9
   },
   {
     "Weapon": "Greataxe",
@@ -501,7 +501,7 @@
     "Cost": 100,
     "Weight": 4,
     "Reach": 0,
-    "Range": 32
+    "Range": 24
   },
   {
     "Weapon": "Lance",
@@ -549,7 +549,7 @@
     "Cost": 2,
     "Weight": 2,
     "Reach": 0,
-    "Range": 12
+    "Range": 9
   },
   {
     "Weapon": "Spiked Chain",
@@ -573,7 +573,7 @@
     "Cost": 2,
     "Weight": 1,
     "Reach": 0,
-    "Range": 16
+    "Range": 12
   },
   {
     "Weapon": "Ballista",
@@ -585,7 +585,7 @@
     "Cost": 1000,
     "Weight": 300,
     "Reach": 0,
-    "Range": 64
+    "Range": 48
   },
   {
     "Weapon": "Catapult",
@@ -597,7 +597,7 @@
     "Cost": 1500,
     "Weight": 400,
     "Reach": 0,
-    "Range": 40
+    "Range": 30
   },
   {
     "Weapon": "Trebuchet",
@@ -609,7 +609,7 @@
     "Cost": 10000,
     "Weight": 4000,
     "Reach": 0,
-    "Range": 96
+    "Range": 72
   },
   {
     "Weapon": "Cannon",
@@ -621,7 +621,7 @@
     "Cost": 10000,
     "Weight": 500,
     "Reach": 0,
-    "Range": 36
+    "Range": 27
   },
   {
     "Weapon": "Culverin",
@@ -633,7 +633,7 @@
     "Cost": 20000,
     "Weight": 4000,
     "Reach": 0,
-    "Range": 100
+    "Range": 75
   },
   {
     "Weapon": "Arquebus",
@@ -645,6 +645,6 @@
     "Cost": 300,
     "Weight": 10,
     "Reach": 0,
-    "Range": 8
+    "Range": 6
   }
 ]

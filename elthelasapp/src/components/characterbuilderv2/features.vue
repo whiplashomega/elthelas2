@@ -64,7 +64,10 @@
                   @click="setval(trait, 'show', false)" v-if="trait.show">
             &#x25B2;
           </button>
-          <span v-if="trait.show" v-html="marked.parse(trait.description)"></span>
+          <div v-if="trait.show">
+            <span>{{ character.race.singular }} feature</span>
+            <span v-html="marked.parse(trait.description)"></span>
+          </div>
         </p>
       </div>
       <div class="smalltext" v-for="charclass in character.charclasses" :key="charclass.thisclass.name">
@@ -82,7 +85,10 @@
             <select v-if="feature.choice" v-model="feature.chosen">
               <option v-for="ch in feature.choice" :title="ch.description" :key="ch.name">{{ch.name}}</option>
             </select>
-            <span v-if="feature.show" v-html="marked.parse(feature.description)"></span>
+            <div v-if="feature.show">
+              Level {{feature.level}} {{charclass.thisclass.name}} feature
+              <span v-html="marked.parse(feature.description)"></span>
+            </div>
           </p>
         </div>
         <div v-for="feature in charclass.selsubclass.features" :key="feature.name">
@@ -99,13 +105,16 @@
             <select v-if="feature.choice" v-model="feature.chosen">
               <option v-for="ch in feature.choice" :title="ch.description" :key="ch.name">{{ch.name}}</option>
             </select>
-            <span v-if="feature.show" v-html="marked.parse(feature.description)"></span>
+            <div v-if="feature.show">
+              Level {{feature.level}} {{charclass.selsubclass.name}} feature
+              <span v-html="marked.parse(feature.description)"></span>
+            </div>
           </p>
         </div>
       </div>
       <div class="smalltext" v-for="style in character.fightingstyles" :key="style.name">
         <p>
-          <span :title="style.description">{{ style.name }}</span>
+          <span :title="style.description">{{ style.name }} (fighting style)</span>
           <button class="btn btn-sm print-hide float-right" type="button"
                   @click="setval(style, 'show', true)" v-if="!style.show">
             &#x25BC;
@@ -119,7 +128,7 @@
       </div>
       <div class="smalltext" v-for="metamagic in character.metamagic" :key="metamagic.name">
         <p>
-          <span :title="metamagic.description">{{metamagic.name}}</span>
+          <span :title="metamagic.description">{{metamagic.name}} (metamagic option)</span>
 
             <button class="btn btn-sm print-hide float-right" type="button"
                   @click="setval(metamagic, 'show', true)" v-if="!metamagic.show">
@@ -134,7 +143,7 @@
       </div>
       <div class="smalltext" v-for="invocation in character.invocations" :key="invocation.name">
         <p>
-          <span :title="invocation.description">{{invocation.name}}</span>
+          <span :title="invocation.description">{{invocation.name}} (eldritch invocation)</span>
 
             <button class="btn btn-sm print-hide float-right" type="button"
                   @click="setval(invocation, 'show', true)" v-if="!invocation.show">
@@ -179,7 +188,7 @@
       </div>
       <div class="smalltext" v-for="(feature, index) in character.features" :key="index">
         <p>
-          <span :title="feature.description">{{ feature.name }}</span>
+          <span :title="feature.description">{{ feature.name }} (custom feature)</span>
           <button class="btn btn-sm print-hide float-right btn-danger" type="button" @click="removeFeature(index)">X</button>
           <button class="btn btn-sm print-hide float-right" type="button"
                   @click="setval(feature, 'show', true)" v-if="!feature.show">
