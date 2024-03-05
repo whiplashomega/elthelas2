@@ -160,7 +160,7 @@
           The Weapons table shows the most common weapons used in the fantasy gaming worlds, their price and weight, the damage they deal when they hit, and any special properties they possess. Every weapon is classified as either melee or ranged. A melee weapon is used to attack a target within 5 feet of you, whereas a ranged weapon is used to attack a target at a distance.
         </p>
         <input type="text" class="form-control" v-model="homebrewweaponstable.filter" placeholder="Filter" />
-        <table class="table table-striped table-responsive">
+        <table class="table table-striped table-responsive mt-4">
           <thead>
             <th v-for="field in homebrewweaponstable.fields" :key="field">
               <a href="#" @click.stop="changehwSort(field.key)">{{ field.label }}
@@ -207,8 +207,8 @@
             <tr><td>Ammunition</td><td>0</td><td>This weapon requires ammunition of an appropriate type in order to be used.</td></tr>
             <tr><td>Armor</td><td>2.5</td><td>This weapon is also armor, or is part of a suit of armor.</td></tr>
             <tr><td>Armor piercing</td><td>1.5</td><td>Double the damage dice of this weapon if the target has protection points remaining.</td></tr>
-            <tr><td>Artillery</td><td>-8</td><td>This weapon is incredibly large. It takes an action to load and another to fire, and takes up a 5 x 5 space on its own (size medium), requiring either a large creature to pull it from place to place, or a medium creature to push it at 5 ft per round.</td></tr>
-            <tr><td>Awkward</td><td>-1</td><td>This weapon is unwieldy at close range. If it is a melee weapon, attacks with this weapon have disadvantage to hit opponents within 5 ft. If it is a ranged weapon, attacks with this weapon have disadvantage to hit opponents within 30 ft.</td></tr>
+            <tr><td>Artillery</td><td>-8</td><td>This weapon is incredibly large. It takes an action to load and another to fire, and takes up a 1m space on its own (size medium), requiring either a large creature to pull it from place to place, or a medium creature to push it at 1m per round.</td></tr>
+            <tr><td>Awkward</td><td>-1</td><td>This weapon is unwieldy at close range. If it is a melee weapon, attacks with this weapon have disadvantage to hit opponents within 1m. If it is a ranged weapon, attacks with this weapon have disadvantage to hit opponents within 9m.</td></tr>
             <tr><td>Brutal</td><td>1</td><td>This weapon does one extra die of its damage type on a critical hit. So a weapon that does 2d6 damage would deal 5d6 damage on a critical hit, and a weapon that does 1d12 damage would do 3d12 damage on a critical hit. This stacks with the Brutal Critical feature.</td></tr>
             <tr><td>Cleave</td><td>If you hit a creature with a melee attack using this weapon, as a bonus action you can make an attack roll with the weapon against a second creature that is also within your reach. You can use this ability a number of times equal to your proficiency bonus, and regain all expended uses on a short rest.</td></tr>
             <tr><td>Common</td><td>0.5</td><td>This weapon is exceedingly common and generally seen as a tool by figures of authority, rather than a weapon.</td></tr>
@@ -219,7 +219,7 @@
             <tr><td>Grapple</td><td>1</td><td>Once per turn, this weapon has the ability to entangle a foe, preventing them from moving. After hitting an opponent with this weapon you can force the opponent to make a strength or dexterity saving throw (their choice) with a DC equal to 8 + your proficiency bonus + the ability modifier used for the attack. On a failure the target is grappled. While the target is grappled in this way you cannot use the weapon to attack until you release the grapple, and if you drop the weapon the grapple is released automatically.</td></tr>
             <tr><td>Graze</td><td>If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can’t be increased in any way, other than increasing the ability modifier.</td></tr>
              <tr><td>Heavy</td><td>-0.5</td><td>This weapon is too large and unwieldy for small characters to use effectively, and they have disadvantage on attack rolls while using it.</td></tr>
-            <tr><td>Heavy Artillery</td><td>-16</td><td>This weapon is massive. It takes 3 actions to load and another to fire, and takes up a 10 x 10 space on its own (size large), requiring at least two large creatures to pull it from place to place, and otherwise cannot be moved except by feats of great strength.</td></tr>
+            <tr><td>Heavy Artillery</td><td>-16</td><td>This weapon is massive. It takes 3 actions to load and another to fire, and takes up a 2 x 2 meter space on its own (size large), requiring at least two large creatures to pull it from place to place, and otherwise cannot be moved except by feats of great strength.</td></tr>
             <tr><td>Knock down</td><td>1</td><td>Once per turn, after hitting an opponent with this weapon you can choose to attempt to knock them down with it. If you do so they must make a strength or dexterity saving throw (their choice) with a DC equal to 8 + your proficiency bonus + the ability modifier used for the attack.  On a failure you knock the opponent prone. You can use this ability a number of times equal to your proficiency bonus (regardless of weapon), and regain all expended uses on a short rest.</td></tr>
             <tr><td>Light</td><td>1</td><td>This weapon is light and well balanced enough to use one in each hand.</td></tr>
             <tr><td>Loading</td><td>-1</td><td>This weapon takes time to load and can only be used to make 1 attack per round.</td></tr>
@@ -255,7 +255,7 @@
         <ul>
           <li>Average Damage. This is the average roll of the damage dice the weapon uses. So 1d4 = 2.5, 1d6 = 3.5, 1d8 = 4.5, etc.</li>
           <li>Reach. A 1m (for light weapons) or 2m reach melee attack adds 1 pt, a 3m reach adds 2.5, and a 4m reach adds 5.</li>
-          <li>Range. Every 30 ft of range for ranged attacks adds 1 pt (15 ft adds 0.5 pts).</li>
+          <li>Range. Every 6m of range for ranged attacks adds 1 pt (3m adds 0.5 pts).</li>
           <li>Properties. Sum the value of all the properties in the table above that apply to your weapon.</li>
           <li>Type Modifier. Martial weapons should in general be better than simple weapons, add 1.5 to the score of a simple weapon. Firearms require a special proficiency to use, and thus a -1 modifier from type.</li>
         </ul>

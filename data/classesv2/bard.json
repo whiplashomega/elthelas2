@@ -19,7 +19,7 @@
       "counttype": "prof",
       "count": 0,
       "minlevel": 1,
-      "recovery": "longrest"
+      "recovery": "shortrest"
     },
     {
       "name": "Spells Known",
@@ -39,27 +39,27 @@
     {
       "level": 1,
       "name": "Bardic Inspiration",
-      "description": "You can inspire others through stirring words or music. When another creature makes an attack, ability check, or saving throw, you can use a reaction to let them add a bardic inspiration die, a d6, to the roll. You can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the DM says whether the roll succeeds or fails. \n\nYou can use this feature a number of times equal to your proficiency bonus. You regain any expended uses when you finish a long rest.\n\nYour Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level."
+      "description": "You can inspire others through stirring words or music. When another creature who can hear you makes an attack, ability check, or saving throw, you can use a reaction to let them add a bardic inspiration die, a d6, to the roll. Alternatively you can use a bonus action on your turn to give them the bardic inspiration die, which they can use on an attack, ability check, or saving throw of their choice within the next minute. You can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the DM says whether the roll succeeds or fails. \n\nYou can use this feature a number of times equal to your proficiency bonus. You regain any expended uses when you finish a short rest.\n\nYour Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level. A creature cannot apply more than 1 bardic inspiration die to the same roll."
     },
     {
       "level": 2,
       "name": "Bard College",
-      "description": "You delve into the advanced techniques of a bard college of your choice: the College of Lore or the College of Valor, both detailed at the end of the class description. Your choice grants you features at 2nd level and again at 6th and 14th level."
+      "description": "You delve into the advanced techniques of a bard college of your choice. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
     },
     {
       "level": 6,
       "name": "Bard College Feature",
-      "description": "You delve into the advanced techniques of a bard college of your choice: the College of Lore or the College of Valor, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th and 14th level."
+      "description": "You delve into the advanced techniques of a bard college of your choice. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
     },
     {
       "level": 10,
       "name": "Bard College Feature",
-      "description": "You delve into the advanced techniques of a bard college of your choice: the College of Lore or the College of Valor, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th level."
+      "description": "You delve into the advanced techniques of a bard college of your choice. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
     },
     {
       "level": 14,
       "name": "Bard College Feature",
-      "description": "You delve into the advanced techniques of a bard college of your choice: the College of Lore or the College of Valor, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th and 14th level."
+      "description": "You delve into the advanced techniques of a bard college of your choice. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
     },
     {
       "level": 3,
@@ -84,7 +84,7 @@
     {
       "level": 3,
       "name": "Expertise",
-      "description": "At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.\n\nAt 10th level, you can choose another two skill proficiencies to gain this benefit."
+      "description": "Choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.\n\nAt 10th level, you can choose another two skill proficiencies to gain this benefit."
     },
     {
       "level": 4,
@@ -98,11 +98,6 @@
     },
     {
       "level": 5,
-      "name": "Font of Inspiration",
-      "description": "Beginning when you reach 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or long rest."
-    },
-    {
-      "level": 7,
       "name": "Jack Of All Trades",
       "description": "You can add half your proficiency bonus, rounded down, to any ability check you make that doesn’t already include your proficiency bonus."
     },
@@ -366,7 +361,7 @@
         {
           "level": 6,
           "name": "Mantle of Whispers",
-          "description": "At 6th level, you gain the ability to adopt a humanoid’s persona. When a humanoid dies within 9m of you, you can magically capture its shadow using your reaction. You retain this shadow until you use it or you finish a long rest.\n\nYou can use the shadow as an action. When you do so, it vanishes, magically transforming into a disguise that appears on you. You now look like the dead person, but healthy and alive. This disguise lasts for 1 hour or until you end it as a bonus action.\n\nWhile you’re in the disguise, you gain access to all information that the humanoid would freely share with a casual acquaintance. Such information includes general details on its background and personal life, but doesn’t include secrets. The information is enough that you can pass yourself off as the person by drawing on its memories.\n\nAnother creature can see through this disguise by succeeding on a Wisdom (Insight) check contested by your Charisma (Deception) check. You gain a +5 bonus to your check.\n\nOnce you capture a shadow with this feature, you can’t capture another one with it until you finish a short or long rest."
+          "description": "You gain the ability to adopt a humanoid’s persona. When a humanoid dies within 9m of you, you can magically capture its shadow using your reaction. You retain this shadow until you use it or you finish a long rest.\n\nYou can use the shadow as an action. When you do so, it vanishes, magically transforming into a disguise that appears on you. You now look like the dead person, but healthy and alive. This disguise lasts for 1 hour or until you end it as a bonus action.\n\nWhile you’re in the disguise, you gain access to all information that the humanoid would freely share with a casual acquaintance. Such information includes general details on its background and personal life, but doesn’t include secrets. The information is enough that you can pass yourself off as the person by drawing on its memories.\n\nAnother creature can see through this disguise by succeeding on a Wisdom (Insight) check contested by your Charisma (Deception) check. You gain a +5 bonus to your check.\n\nOnce you capture a shadow with this feature, you can’t capture another one with it until you finish a short or long rest."
         },
         {
           "level": 10,
@@ -376,7 +371,7 @@
         {
           "level": 14,
           "name": "Shadow Lore",
-          "description": "At 14th level, you gain the ability to weave dark magic into your words and tap into a creature’s deepest fears.\n\nAs an action, you magically whisper a phrase that only one creature of your choice within 9m of you can hear. The target must make a Wisdom saving throw against your spell save DC. It automatically succeeds if it doesn’t share a language with you or if it can’t hear you. On a successful saving throw, your whisper sounds like unintelligible mumbling and has no effect.\n\nOn a failed saving throw, the target is charmed by you for the next 8 hours or until you or your allies attack it, damage it, or force it to make a saving throw. It interprets the whispers as a description of its most mortifying secret. You gain no knowledge of this secret, but the target is convinced you know it.\n\nThe charmed creature obeys your commands for fear that you will reveal its secret. It won’t risk its life for you or fight for you, unless it was already inclined to do so. It grants you favors and gifts it would offer to a close friend.\n\nWhen the effect ends, the creature has no understanding of why it held you in such fear.\n\nOnce you use this feature, you can’t use it again until you finish a long rest."
+          "description": "You gain the ability to weave dark magic into your words and tap into a creature’s deepest fears.\n\nAs an action, you magically whisper a phrase that only one creature of your choice within 9m of you can hear. The target must make a Wisdom saving throw against your spell save DC. It automatically succeeds if it doesn’t share a language with you or if it can’t hear you. On a successful saving throw, your whisper sounds like unintelligible mumbling and has no effect.\n\nOn a failed saving throw, the target is charmed by you for the next 8 hours or until you or your allies attack it, damage it, or force it to make a saving throw. It interprets the whispers as a description of its most mortifying secret. You gain no knowledge of this secret, but the target is convinced you know it.\n\nThe charmed creature obeys your commands for fear that you will reveal its secret. It won’t risk its life for you or fight for you, unless it was already inclined to do so. It grants you favors and gifts it would offer to a close friend.\n\nWhen the effect ends, the creature has no understanding of why it held you in such fear.\n\nOnce you use this feature, you can’t use it again until you finish a long rest."
         }
       ]
     },
