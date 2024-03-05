@@ -10,7 +10,7 @@ tags: [sorcerer, wizard, druid, ranger, eldritchknight, level2, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: Self (27m line)
+**Range**: Self (18m line)
 
 **Components**: V, S, M (a legume seed)
 

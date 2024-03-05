@@ -26,4 +26,4 @@ Choose an area of flame that you can see and that can fit within a 1m cube withi
 
 **Fireworks.** The target explodes with a dazzling display of colors. Each creature within 2m of the target must succeed on a Constitution saving throw or become blinded until the end of your next turn.
 
-**Smoke.** Thick black smoke spreads out from the target in a 6m radius, moving around corners. The area of the smoke is heavily obscured. The smoke persists for 1 minute or until a strong wind disperses it.
+**Smoke.** Thick black smoke spreads out from the target in a 4m radius, moving around corners. The area of the smoke is heavily obscured. The smoke persists for 1 minute or until a strong wind disperses it.

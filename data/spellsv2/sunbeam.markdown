@@ -10,7 +10,7 @@ tags: [cleric, druid, sorcerer, wizard, level6, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: Self (27m line)
+**Range**: Self (18m line)
 
 **Components**: V, S, M (a magnifying glass)
 

@@ -10,7 +10,7 @@ tags: [sorcerer, wizard, eldritchknight, level3, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: Self (45m line)
+**Range**: Self (30m line)
 
 **Components**: V, S, M (a bit of fur and a rod of amber, crystal, or glass)
 

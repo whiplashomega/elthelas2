@@ -10,7 +10,7 @@ tags: [sorcerer, wizard, eldritchknight, level1, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: Self (4m cone)
+**Range**: Self (3m cone)
 
 **Components**: V, S
 

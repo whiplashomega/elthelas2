@@ -22,7 +22,7 @@ tags: [druid, level6, abjuration]
 
 **Damage**: []
 
-You invoke the spirits of nature to protect an area outdoors or underground. The area can be as small as a 9m cube or as large as a 27m cube. Buildings and
+You invoke the spirits of nature to protect an area outdoors or underground. The area can be as small as a 6m cube or as large as a 18m cube. Buildings and
 other structures are excluded from the affected area. If you cast this spell in the same area every day for a year, the spell lasts until dispelled.
 
 The spell creates the following effects within the area. When you cast this spell, you can specify creatures as friends who are immune to the effects. You can also

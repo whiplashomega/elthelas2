@@ -10,7 +10,7 @@ tags: [ranger, eldritchknight, level3, conjuration]
 
 **Casting Time**: 1 action
 
-**Range**: Self (27m cone)
+**Range**: Self (18m cone)
 
 **Components**: V, S, M (one piece of ammunition or a thrown weapon)
 

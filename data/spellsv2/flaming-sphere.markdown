@@ -26,7 +26,7 @@ A 1m-diameter sphere of fire appears in an unoccupied space of your choice withi
 
 As a bonus action, you can move the sphere up to 9m. If you ram the sphere into a creature, that creature must make the saving throw against the sphere's damage, and the sphere stops moving this turn.
 
-When you move the sphere, you can direct it over barriers up to 3m tall and jump it across pits up to 3m wide. The sphere ignites flammable objects not being worn or carried, and it sheds bright light in a 6m radius and dim light for an additional 6m.
+When you move the sphere, you can direct it over barriers up to 3m tall and jump it across pits up to 3m wide. The sphere ignites flammable objects not being worn or carried, and it sheds bright light in a 4m radius and dim light for an additional 4m.
 
 **At Higher Levels.** When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.
 
