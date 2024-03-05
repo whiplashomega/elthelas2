@@ -171,7 +171,7 @@ export default {
         values.forEach((value) => {
           let exists = this.creaturestable.filterBy.some(function(el) {
             for (var y in a) {
-              if (el === y && a[y].toString().toLowerCase().includes(value.toLowerCase())) {
+              if (el === y && a[y] && a[y].toString().toLowerCase().includes(value.toLowerCase())) {
                 return true;
               }
             }
