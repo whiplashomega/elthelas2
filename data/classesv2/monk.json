@@ -309,7 +309,7 @@
         {
           "level": 10,
           "name": "Searing Sunburst",
-          "description": "At 10th level, you gain the ability to create an orb of light that erupts into a devastating explosion. As an action, you create an orb and hurl it at a point you choose within 45m, where it erupts into a sphere of radiant light for a brief but deadly instant.\n\nEach creature in that 6m radius sphere must succeed on a Constitution saving throw or take 2d6 radiant damage. A creature doesn't need to make the save if the creature is behind total cover that is opaque.\n\nYou can increase the sphere's damage by spending ki points. Each point you spend, up to a maximum of 3, increases the damage by 2d6."
+          "description": "You gain the ability to create an orb of light that erupts into a devastating explosion. As an action, you create an orb and hurl it at a point you choose within 45m, where it erupts into a sphere of radiant light for a brief but deadly instant.\n\nEach creature in that 4m radius sphere must succeed on a Constitution saving throw or take 2d6 radiant damage. A creature doesn't need to make the save if the creature is behind total cover that is opaque.\n\nYou can increase the sphere's damage by spending ki points. Each point you spend, up to a maximum of 3, increases the damage by 2d6."
         },
         {
           "level": 14,
