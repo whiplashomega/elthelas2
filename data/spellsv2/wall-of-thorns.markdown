@@ -10,7 +10,7 @@ tags: [druid, level6, conjuration]
 
 **Casting Time**: 1 action
 
-**Range**: 120 feet
+**Range**: 24m
 
 **Components**: V, S, M (a handful of thorns)
 

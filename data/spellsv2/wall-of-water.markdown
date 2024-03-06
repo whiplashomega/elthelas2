@@ -10,7 +10,7 @@ tags: [druid, sorcerer, wizard, eldritchknight, level3, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 60 feet
+**Range**: 12m
 
 **Components**: V, S, M (a drop of water)
 

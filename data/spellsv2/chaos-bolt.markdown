@@ -40,7 +40,7 @@ You hurl an undulating, warbling mass of chaotic energy at one creature in range
   </tbody>
 </table>
 
-If you roll the same number on both d8s, the chaotic energy leaps from the target to a different creature of your choice within 30 feet of it. Make a new attack roll against the new target, and make a new damage roll, which could cause the chaotic energy to leap again.
+If you roll the same number on both d8s, the chaotic energy leaps from the target to a different creature of your choice within 6m of it. Make a new attack roll against the new target, and make a new damage roll, which could cause the chaotic energy to leap again.
 
 A creature can be targeted only once by each casting of this spell.
 

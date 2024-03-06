@@ -27,8 +27,8 @@ forms to assume: Primal Beast or Great Tree.
 
 **Primal Beast.** Bestial fur covers your body, your facial features become feral, and you gain the following benefits:
 
-* Your walking speed increases by 10 feet.
-* You gain darkvision with a range of 120 feet.
+* Your walking speed increases by 2m.
+* You gain darkvision with a range of 24m.
 * You make Strength—based attack rolls with advantage.
 * Your melee weapon attacks deal an extra 1d6 force damage on a hit.
 
@@ -37,4 +37,4 @@ forms to assume: Primal Beast or Great Tree.
 * You gain 10 temporary hit points.
 * You make Constitution saving throws with advantage.
 * You make Dexterity and Wisdom-based attack rolls with advantage.
-* While you are on the ground, the ground within 15 feet of you is difficult terrain for your enemies.
+* While you are on the ground, the ground within 3m of you is difficult terrain for your enemies.

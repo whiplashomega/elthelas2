@@ -22,7 +22,7 @@ tags:   [bard, druid, wizard, cleric, level7, abjuration]
 
 **Damage**: [ { "dice": "10d10", "label": "necrotic", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
-When you cast this spell, you inscribe a harmful glyph either on a surface (such as a section of floor, a wall, or a table) or within an object that can be closed to conceal the glyph (such as a book, a scroll, or a treasure chest). If you choose a surface, the glyph can cover an area of the surface no larger than 2m in diameter. If you choose an object, that object must remain in its place; if the object is moved more than 10 feet from where you cast this spell, the glyph is broken, and the spell ends without being triggered.
+When you cast this spell, you inscribe a harmful glyph either on a surface (such as a section of floor, a wall, or a table) or within an object that can be closed to conceal the glyph (such as a book, a scroll, or a treasure chest). If you choose a surface, the glyph can cover an area of the surface no larger than 2m in diameter. If you choose an object, that object must remain in its place; if the object is moved more than 2m from where you cast this spell, the glyph is broken, and the spell ends without being triggered.
 
 The glyph is nearly invisible, requiring an Intelligence (Investigation) check against your spell save DC to find it.
 
@@ -30,7 +30,7 @@ You decide what triggers the glyph when you cast the spell. For glyphs inscribed
 
 You can further refine the trigger so the spell is activated only under certain circumstances or according to a creature's physical characteristics (such as height or weight), or physical kind (for example, the ward could be set to affect hags or shapechangers). You can also specify creatures that don't trigger the glyph, such as those who say a certain password.
 
-When you inscribe the glyph, choose one of the options below for its effect. Once triggered, the glyph glows, filling a 60-foot-radius sphere with dim light for 10 minutes, after which time the spell ends. Each creature in the sphere when the glyph activate is targeted by its effect, as is a creature that enters the sphere for the first time on a turn or ends its turn there.
+When you inscribe the glyph, choose one of the options below for its effect. Once triggered, the glyph glows, filling a 12m-radius sphere with dim light for 10 minutes, after which time the spell ends. Each creature in the sphere when the glyph activate is targeted by its effect, as is a creature that enters the sphere for the first time on a turn or ends its turn there.
 
 **Death.** Each target must make a Constitution saving throw, taking 10d10 necrotic damage on a failed save, or half as much damage on a successful save.
 

@@ -10,7 +10,7 @@ tags: [cleric, level2, evocation]
 
 **Casting Time**: 1 bonus action
 
-**Range**: 60 feet
+**Range**: 12m
 
 **Components**: V, S
 

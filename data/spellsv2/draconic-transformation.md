@@ -28,4 +28,4 @@ With a roar, you draw on the magic of dragons to transform yourself, taking on d
 
 **Breath Weapon.** When you cast this spell, and as a bonus action on subsequent turns for the duration, you can exhale shimmering energy in a 12m cone. Each creature in that area must make a Dexterity saving throw, taking 6d8 force damage on a failed save, or half as much damage on a successful one.
 
-**Wings.** Incorporeal wings sprout from your back, giving you a flying speed of 60 feet.
+**Wings.** Incorporeal wings sprout from your back, giving you a flying speed of 12m.

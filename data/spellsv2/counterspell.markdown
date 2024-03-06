@@ -8,7 +8,7 @@ tags: [sorcerer, warlock, eldritchknight, wizard, level3, abjuration]
 
 **3rd-level abjuration**
 
-**Casting Time**: 1 reaction, which you take when you see a creature within 60 feet of you casting a spell.
+**Casting Time**: 1 reaction, which you take when you see a creature within 12m of you casting a spell.
 
 **Range**: 12m
 

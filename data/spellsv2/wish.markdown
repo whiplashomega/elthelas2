@@ -28,7 +28,7 @@ The basic use of this spell is to duplicate any other spell of 8th level or lowe
 
 Alternatively, you can create one of the following effects of your choice:
 
-* You create one object of up to 25,000 gp in value that isn't a magic item. The object can be no more than 300 feet in any dimension, and it appears in an unoccupied space you can see on the ground.
+* You create one object of up to 25,000 gp in value that isn't a magic item. The object can be no more than 60m in any dimension, and it appears in an unoccupied space you can see on the ground.
 
 * You allow up to twenty creatures that you can see to regain all hit points, and you end all effects on them described in the _greater restoration_ spell.
 

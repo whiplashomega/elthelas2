@@ -10,7 +10,7 @@ tags: [cleric, paladin, eldritchknight, warlock, wizard, level3, abjuration]
 
 **Casting Time**: 1 minute
 
-**Range**: 10 feet
+**Range**: 2m
 
 **Components**: V, S, M (holy water or powdered silver and iron worth at least 100 gp, which the spell consumes)
 

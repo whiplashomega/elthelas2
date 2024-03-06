@@ -28,4 +28,4 @@ light is sunlight.
 When the cylinder appears, each creature in it must make a Constitution saving throw, taking 4d10 radiant damage on a failed save, or half as much
 damage on a successful one. A creature must also make this saving throw whenever it ends its turn in the cylinder.
 
-If you’re within 60 feet of the cylinder, you can move it up to 60 feet as a bonus action on your turn.
+If you’re within 12m of the cylinder, you can move it up to 12m as a bonus action on your turn.

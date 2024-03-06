@@ -10,7 +10,7 @@ tags: [arcanetrickster, druid, ranger, eldritchknight, level3, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 120 feet
+**Range**: 24m
 
 **Components**: V, S, M (a tiny fan and a feather of exotic origin)
 

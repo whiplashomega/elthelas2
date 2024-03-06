@@ -8,7 +8,7 @@ tags: [arcanetrickster, bard, sorcerer, wizard, eldritchknight, artificer, level
 
 **1st-level transmutation**
 
-**Casting Time**: 1 reaction, which you take when you or a creature within 60 feet of you falls
+**Casting Time**: 1 reaction, which you take when you or a creature within 12m of you falls
 
 **Range**: 12m
 
