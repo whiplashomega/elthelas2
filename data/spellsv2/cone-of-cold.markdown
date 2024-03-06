@@ -10,7 +10,7 @@ tags: [druid, sorcerer, wizard, level5, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: Self (27m cone)
+**Range**: Self (18m )
 
 **Components**: V, S, M (a small crystal or a glass cone)
 

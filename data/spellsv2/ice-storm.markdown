@@ -22,7 +22,7 @@ tags: [druid, sorcerer, wizard, eldritchknight, level4, evocation]
 
 **Damage**: [ { "dice": "2d8", "label": "bludgeoning", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d8" }, { "dice": "4d6", "label": "cold", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d8" } ]
 
-A hail of rock-hard ice pounds to the ground in a 6m-radius, 8m-high cylinder centered on a point within range. Each creature in the cylinder must make a Dexterity saving throw. A creature takes 2d8 bludgeoning damage and 4d6 cold damage on a failed save, or half as much damage on a successful one.
+A hail of rock-hard ice pounds to the ground in a 4m-radius, 8m-high cylinder centered on a point within range. Each creature in the cylinder must make a Dexterity saving throw. A creature takes 2d8 bludgeoning damage and 4d6 cold damage on a failed save, or half as much damage on a successful one.
 
 Hailstones turn the storm’s area of effect into difficult terrain until the end of your next turn.
 

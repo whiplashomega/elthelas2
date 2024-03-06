@@ -10,7 +10,7 @@ tags:   [bard, sorcerer, wizard, level7, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: Self (27m cone)
+**Range**: Self (18m cone)
 
 **Components**: V, S
 

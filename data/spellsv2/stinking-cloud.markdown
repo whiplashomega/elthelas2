@@ -22,7 +22,7 @@ tags: [bard, sorcerer, wizard, level3, conjuration]
 
 **Damage**: []
 
-You create a 6m-radius sphere of yellow, nauseating gas centered on a point within range. The cloud spreads around corners, and its area is heavily obscured. The cloud lingers in the air for the duration.
+You create a 4m-radius sphere of yellow, nauseating gas centered on a point within range. The cloud spreads around corners, and its area is heavily obscured. The cloud lingers in the air for the duration.
 
 Each creature that is completely within the cloud at the start of its turn must make a Constitution saving throw on gain the poisoned condition. While they have the poisoned condition from this spell, the creature spends its action that turn retching and reeling. Creatures that don’t need to breathe or are immune to poison automatically succeed on this saving throw. A creature can repeat the saving throw at the end of each of its turns, ending the effect on a success.
 
