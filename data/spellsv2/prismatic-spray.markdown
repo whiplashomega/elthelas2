@@ -22,7 +22,7 @@ tags:   [bard, sorcerer, wizard, level7, evocation]
 
 **Damage**: [ { "dice": "10d6", label: "fire, acid, lightning, poison, or cold", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
-Seven multicolored rays of light flash from your hand. Each ray is a different color and has a different power and purpose. Each creature in a 18m cone must make a Dexterity saving throw. For each target, roll 2d6 to determine which color rays affects it. Each target is affected by two rays, each determined by one of the d6s rolled for them, 1-6 as below. If both dice roll the same number, the second ray is the violet ray. 
+Seven multicolored rays of light flash from your hand. Each ray is a different color and has a different power and purpose. Each creature in a 12m cone must make a Dexterity saving throw. For each target, roll 2d6 to determine which color rays affects it. Each target is affected by two rays, each determined by one of the d6s rolled for them, 1-6 as below. If both dice roll the same number, the second ray is the violet ray. 
 
 1. **Red.** The target takes 10d6 fire damage on a failed save, or half as much damage on a successful one.
 2. **Orange.** The target takes 10d6 acid damage on a failed save, or half as much damage on a successful one.

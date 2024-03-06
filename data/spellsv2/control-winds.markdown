@@ -10,7 +10,7 @@ tags: [druid, sorcerer, eldritchknight, wizard, level5, transmutation]
 
 **Casting Time**: 1 action
 
-**Range**: 90m
+**Range**: 60m
 
 **Components**: V, S
 
@@ -28,4 +28,4 @@ You take control of the air in a 20m cube that you can see within range. Choose 
 
 **Downdraft.** You cause a sustained blast of strong wind to blow downward from the top of the cube. Ranged weapon attacks that pass through the cube or that are made against targets within it have disadvantage on their attack rolls. A creature must make a Strength saving throw if it flies into the cube for the first time on a turn or starts its turn there flying. On a failed save, the creature is knocked prone.
 
-**Updraft.** You cause a sustained updraft within the cube, rising upward from the cube’s bottom edge.  Creatures that end a fall within the cube take only half damage from the fall. When a creature in the cube makes a vertical jump, the creature can jump up to 3m higher than normal.
+**Updraft.** You cause a sustained updraft within the cube, rising upward from the cube’s bottom edge.  Creatures that end a fall within the cube take only half damage from the fall. When a creature in the cube makes a vertical jump, the creature can jump up to 2m higher than normal.

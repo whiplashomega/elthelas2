@@ -10,7 +10,7 @@ tags: [arcanetrickster, bard, sorcerer, wizard, level2, illusion]
 
 **Casting Time**: 1 action
 
-**Range**: 18m
+**Range**: 12m
 
 **Components**: S, M (a piece of crust from an apple pie)
 

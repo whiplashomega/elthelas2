@@ -10,7 +10,7 @@ tags: [warlock, wizard, level8, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 45m
+**Range**: 30m
 
 **Components**: V, M (a drop of pitch, mixed with a drop of mercury)
 

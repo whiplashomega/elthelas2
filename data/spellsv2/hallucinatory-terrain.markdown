@@ -10,7 +10,7 @@ tags: [arcanetrickster, bard, druid, warlock, wizard, level4, illusion]
 
 **Casting Time**: 10 minutes
 
-**Range**: 90m
+**Range**: 60m
 
 **Components**: V, S, M (a stone, a twig, and a bit of green plant)
 

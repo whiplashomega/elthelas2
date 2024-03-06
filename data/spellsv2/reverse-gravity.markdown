@@ -10,7 +10,7 @@ tags:   [druid, sorcerer, wizard, level7, transmutation]
 
 **Casting Time**: 1 action
 
-**Range**: 30m
+**Range**: 20m
 
 **Components**: V, S, M (a lodestone and iron filings)
 

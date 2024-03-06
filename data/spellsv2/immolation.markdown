@@ -10,7 +10,7 @@ tags: [sorcerer, wizard, level5, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 27m
+**Range**: 18m
 
 **Components**: V
 

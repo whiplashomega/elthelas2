@@ -10,7 +10,7 @@ tags: [sorcerer, wizard, level6, transmutation]
 
 **Casting Time**: 1 action
 
-**Range**: 18m
+**Range**: 12m
 
 **Components**: V, S, M (a lodestone and a pinch of dust)
 

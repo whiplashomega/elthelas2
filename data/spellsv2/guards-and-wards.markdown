@@ -22,7 +22,7 @@ tags: [wizard, bard, level6, abjuration]
 
 **Damage**: []
 
-You create a ward that protects up to 225 square meters of floor space (an area 15 meters square, or 225 one meter squares). The warded area can be up to 6m tall, and shaped as you desire. You can ward several stories of a stronghold by dividing the area among them, as long as you can walk into each contiguous area while you are casting the spell.
+You create a ward that protects up to 225 square meters of floor space (an area 15 meters square, or 225 one meter squares). The warded area can be up to 4m tall, and shaped as you desire. You can ward several stories of a stronghold by dividing the area among them, as long as you can walk into each contiguous area while you are casting the spell.
 
 When you cast this spell, you can specify individuals that are unaffected by any or all of the effects that you choose. You can also specify a password that, when spoken aloud, makes the speaker immune to these effects.
 
@@ -40,7 +40,7 @@ When you cast this spell, you can specify individuals that are unaffected by any
 * Place *[magic mouth](../magic-mouth/ "magic mouth (lvl 2)")* in two locations.
 * Place *[stinking cloud](../stinking-cloud/ "stinking cloud (lvl 3)")* in two locations. The vapors appear in the places you designate; They return within 10 minutes if dispersed by wind while *guards and wards* lasts.
 * Place a constant *[gust of wind](../gust-of-wind/ "gust of wind (lvl 2)")* in one corridor or room.
-* Place a *[suggestion](../suggestion/ "suggestion (lvl 2)")* in one location. You select an area of up to 3m, and any creature that enters or passes through the area receives the suggestion mentally.
+* Place a *[suggestion](../suggestion/ "suggestion (lvl 2)")* in one location. You select an area of up to 2m, and any creature that enters or passes through the area receives the suggestion mentally.
 
 The whole warded area radiates magic. A *[dispel magic](../dispel-magic/ "dispel magic (lvl 3)")* cast on a specific effect, if successful, removes only that effect.
 

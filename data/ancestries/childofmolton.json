@@ -5,8 +5,8 @@
   "description": "\n\nMolton, God of Fire and Lust, has long made it a habit of dallying with mortal women from among his worshippers. Those willing worshippers whom he selects are invited across the planes into his palace, where they report on returning having the best sex of their lives, returning with enough riches to set them and the resulting child up for the rest of their lives. His fertility knows no bounds, and even the most infertile women have found themselves with child after such encounters. The resulting children are usually still mostly resemble their mothers, but find themselves infused with the essence of fire. They are renowned for their lustful ways (sometimes unfairly) as well as their affinity for fire, music, and dance. Children of Molton are born with hair in bright fiery colors of red, orange, yellow, blue or green and golden skin. They are also invariably beautiful, their skin without unnatural blemishes, faces well balanced, and a form that is lithe and graceful.\n\nEvery Child of Molton is naturally born into the church of Molton, and expectations for them are high. Meanwhile, within society itself they are seen as unpredictable or even dangerous. They are often blamed when spouses stray, compared to succubi or incubi. They tend to be drawn to fire in unpredictable ways, sometimes channeled in helpful ways, such as joining a fire defense crew in their local town, but other times less so, tending towards pyromania or arson. Sexuality among children of molton tends to be much more fluid than in other races, and their attitudes towards sex and sexuality are typically much more relaxed.",
   "traits": [
     { "name": "Size", "description": "Children of Molton are generally similar to elves or humans in height, weight, and build. Your size is medium." },
-    { "name": "Speed", "description": "Your base walking speed is 10m" },
-    { "name": "Darkvision", "description": "You have the darkvision ability up to 39m. While in the dark you see everything in shades of red." },
+    { "name": "Speed", "description": "Your base walking speed is 7m" },
+    { "name": "Darkvision", "description": "You have the darkvision ability up to 36m. While in the dark you see everything in shades of red." },
     { "name": "Pyromancer", "description": "You know the firebolt and produce flame cantrips. Charisma is your casting stat for both." },
     { "name": "Embodiment of Lust", "description": "You have advantage on charisma checks involved in a romantic encounter." },
     { "name": "Fire Resistance", "description": "You have resistance to fire damage." }
@@ -33,7 +33,7 @@
       "averageweight": 155,
       "baseweight": 100,
       "weightroll": "2d4",
-      "speed": [10, 0, 0, 0, 0]
+      "speed": [7, 0, 0, 0, 0]
     }
   ]
 }

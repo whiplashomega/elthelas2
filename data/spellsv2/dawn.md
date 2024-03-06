@@ -10,7 +10,7 @@ tags: [cleric, eldritchknight, wizard, level5, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 18m
+**Range**: 12m
 
 **Components**: V, S, M (a sunburst pendant worth at least 100gp)
 

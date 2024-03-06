@@ -10,7 +10,7 @@ tags: [ranger, level1, divination]
 
 **Casting Time**: 1 bonus action
 
-**Range**: 27m
+**Range**: 18m
 
 **Components**: V
 

@@ -10,7 +10,7 @@ tags: [bard, sorcerer, wizard, level3, conjuration]
 
 **Casting Time**: 1 action
 
-**Range**: 27m
+**Range**: 18m
 
 **Components**: V, S, M (a rotten egg or several skunk cabbage leaves)
 

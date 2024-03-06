@@ -10,7 +10,7 @@ tags: [druid, sorcerer, wizard, eldritchknight, level4, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 90m
+**Range**: 60m
 
 **Components**: V, S, M (a pinch of dust and a few drops of water)
 

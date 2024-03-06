@@ -10,7 +10,7 @@ tags: [cleric, druid, paladin, ranger, sorcerer, level3, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 18m
+**Range**: 12m
 
 **Components**: V, S
 

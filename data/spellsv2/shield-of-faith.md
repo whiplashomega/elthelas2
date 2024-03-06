@@ -10,7 +10,7 @@ tags: [cleric, paladin, level1, abjuration]
 
 **Casting Time**: 1 bonus action
 
-**Range**: 18m
+**Range**: 12m
 
 **Components**: V, S, M (a small parchment with a bit of holy text written on it)
 

@@ -22,6 +22,6 @@ tags: [bard, druid, ranger, wizard, eldritchknight, artificer, level1, transmuta
 
 **Damage**: []
 
-You touch a creature. The target's speed increases by 3m until the spell ends.
+You touch a creature. The target's speed increases by 2m until the spell ends.
 
 **At Higher Levels.** When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each spell slot above 1st.

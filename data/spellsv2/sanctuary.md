@@ -10,7 +10,7 @@ tags: [cleric, artificer, level1, abjuration]
 
 **Casting Time**: 1 bonus action
 
-**Range**: 9m
+**Range**: 6m
 
 **Components**: V, S, M (a small silver mirror)
 

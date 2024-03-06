@@ -10,7 +10,7 @@ tags: [cleric, druid, sorcerer, level5, conjuration]
 
 **Casting Time**: 1 action
 
-**Range**: 90m
+**Range**: 60m
 
 **Components**: V, S, M (a few grains of sugar, some kernels of grain, and a smear of fat)
 

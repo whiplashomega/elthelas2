@@ -10,7 +10,7 @@ tags: [druid, sorcerer, wizard, eldritchknight, level3, conjuration]
 
 **Casting Time**: 1 action
 
-**Range**: 45m
+**Range**: 30m
 
 **Components**: V, S, M (a pinch of dust and a few drops of water)
 

@@ -10,7 +10,7 @@ tags:   [bard, druid, wizard, level8, enchantment]
 
 **Casting Time**: 1 hour
 
-**Range**: 18m
+**Range**: 12m
 
 **Components**: V, S, M (either a hump of alum soaked in vinegar for the _antipathy_ effect or a drop of honey for the _sympathy_ effect)
 
@@ -30,6 +30,6 @@ This spell attracts or repels creatures of your choice. You target something wit
 
 If the target damages or otherwise harms an affected creature, the affected creature can make a Wisdom saving throw to end the effect, as described below.
 
-**Ending the Effect.** If an affected creature ends its turn while not within 18m of the target or able to see it, the creature makes a Wisdom saving throw. On a successful save, the creature is no longer affected by the target and recognizes the feeling of repugnance or attraction as magical. In addition, a creature affected by the spell is allowed another Wisdom saving throw every 24 hours while the spell persists.
+**Ending the Effect.** If an affected creature ends its turn while not within 12m of the target or able to see it, the creature makes a Wisdom saving throw. On a successful save, the creature is no longer affected by the target and recognizes the feeling of repugnance or attraction as magical. In addition, a creature affected by the spell is allowed another Wisdom saving throw every 24 hours while the spell persists.
 
 A creature that successfully saves against this affect is immune to it for 1 minute, after which time it can be affected again.

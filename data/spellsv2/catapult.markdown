@@ -10,7 +10,7 @@ tags: [arcanetrickster, sorcerer, wizard, eldritchknight, artificer, level1, tra
 
 **Casting Time**: 1 action
 
-**Range**: 45m
+**Range**: 30m
 
 **Components**: S
 

@@ -10,7 +10,7 @@ tags: [bard, warlock, wizard, level7, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 30m
+**Range**: 20m
 
 **Components**: V, S, M (ruby dust worth 1,500 gp)
 

@@ -10,7 +10,7 @@ tags:   [bard, sorcerer, warlock, wizard, level8, enchantment]
 
 **Casting Time**: 1 action
 
-**Range**: 18m
+**Range**: 12m
 
 **Components**: V
 

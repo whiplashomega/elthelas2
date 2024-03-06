@@ -10,7 +10,7 @@ tags:   [cleric, druid, sorcerer, level8, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 150m
+**Range**: 100m
 
 **Components**: V, S, M (a pinch of dirt, a piece of rock, and a lump of clay)
 
@@ -22,7 +22,7 @@ tags:   [cleric, druid, sorcerer, level8, evocation]
 
 **Damage**: [ { "dice": "5d6", label: "bludgeoning", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
-You create a seismic disturbance at a point on the ground that you can see within range. For the duration, an intense tremor rips through the ground in a 30m circle centered on that point and shakes creatures and structures in contact with the ground in that area.
+You create a seismic disturbance at a point on the ground that you can see within range. For the duration, an intense tremor rips through the ground in a 20m circle centered on that point and shakes creatures and structures in contact with the ground in that area.
 
 The ground in the area becomes difficult terrain. Each creature on the ground that is concentrating must make a Constitution saving throw. On a failed save, the creature's concentration is broken.
 
@@ -30,7 +30,7 @@ When you cast this spell and at the end of each turn you spend concentrating on 
 
 This spell can have additional effects depending on the terrain in the area, as determined by the DM.
 
-**Fissures.** Fissures open throughout the spell's area at the start of your next turn after you cast the spell. A total of 1d6 such fissures open in locations chosen by the DM. Each is 1d10 x 3m deep, 3m wide, and extends from one edge of the spell's area to the opposite side. A creature standing on a spot where a fissure opens must succeed on a Dexterity saving throw or fall in. A creature that successfully saves moves with the fissure's edge as it opens.
+**Fissures.** Fissures open throughout the spell's area at the start of your next turn after you cast the spell. A total of 1d6 such fissures open in locations chosen by the DM. Each is 1d10 x 2m deep, 2m wide, and extends from one edge of the spell's area to the opposite side. A creature standing on a spot where a fissure opens must succeed on a Dexterity saving throw or fall in. A creature that successfully saves moves with the fissure's edge as it opens.
 
 A fissure that opens beneath a structure causes it to automatically collapse (see below).
 

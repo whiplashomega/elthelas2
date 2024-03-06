@@ -25,7 +25,7 @@
         "image": "https://elthelas-images.herokuapp.com/races/dwarf.jpg",
         "description": "The Deep Dwarves are the ruling caste of dwarven society in Curinor. They rarely (if ever in their lives) see the sun, preferring to stay in the deepest parts of the dwarven holds. They travel between holds via underground roads or by palanquin, and almost never associate with plains dwarves, let alone non-dwarves. Deep Dwarves have exceedingly pale, almost colorless skin.",
         "traits": [
-          { "name": "Speed", "description": "Your base walking speed is 8m. Your speed is not reduced by wearing heavy armor." },
+          { "name": "Speed", "description": "Your base walking speed is 5m. Your speed is not reduced by wearing heavy armor." },
           { "name": "Darkvision", "description": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 18m of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray." },
           { "name": "Tool Proficiency", "description": "You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools." },
           { "name": "Stonecunning", "description": "Whenever you make an intelligence (history) check related to the origin of stonework, you are considered proficient in the history skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus." },
@@ -37,7 +37,7 @@
       "averageweight": 135,
       "baseweight": 100,
       "weightroll": "2d6",
-      "speed": [8, 0, 0, 0, 0]
+      "speed": [5, 0, 0, 0, 0]
       },
       {
         "id": "hilldwarves",
@@ -46,8 +46,8 @@
         "image": false,
         "description": "The Hill Dwarves of Curinor are the middle glue of society. Most dwarven craftsmen and warriors are hill dwarves, and they do most of the work in the lucrative mines and smithies of Curinor (although the deep dwarves still see most of the profits). Hill Dwarves are hardy folk, but are ill-accustomed to dealing with non-dwarves. Their skin is fair, but not pale, typically with rose colored undertones.",
         "traits": [
-          { "name": "Speed", "description": "Your base walking speed is 8m. Your speed is not reduced by wearing heavy armor." },
-          { "name": "Darkvision", "description": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 18m of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray." },
+          { "name": "Speed", "description": "Your base walking speed is 5m. Your speed is not reduced by wearing heavy armor." },
+          { "name": "Darkvision", "description": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 12m of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray." },
           { "name": "Tool Proficiency", "description": "You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools." },
           { "name": "Stonecunning", "description": "Whenever you make an intelligence (history) check related to the origin of stonework, you are considered proficient in the history skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus." },
           { "name": "Dwarven Toughness", "description": "Your hit point maximum increases by 1 per character level." }
@@ -58,7 +58,7 @@
       "averageweight": 150,
       "baseweight": 115,
       "weightroll": "2d6",
-      "speed": [8, 0, 0, 0, 0]
+      "speed": [5, 0, 0, 0, 0]
       },
       {
         "id": "morrinddwarves",
@@ -67,7 +67,7 @@
         "description": "The Morrind Dwarves were separated from the other dwarves in the God's War, and marooned on a distant island chain. They built a city in which they could remember their mountain home (called Morrind) and learned to build ocean worthy ships. They took to the sea, trading with whomever they could find in order to supply themselves with whatever they needed. By the time they found the other dwarves, they discovered that they were more comfortable at sea then on land, and unwelcome in the caste-system devised by their kin. Morrind dwarves tend to be less hardy but more dextrous compared to their kin, and are very adept at shipboard movement.",
         "image": false,
         "traits": [
-          { "name": "Speed", "description": "Your base walking speed is 9m. Your speed is not reduced by wearing heavy armor." },
+          { "name": "Speed", "description": "Your base walking speed is 6m. Your speed is not reduced by wearing heavy armor." },
           { "name": "Tool Proficiency", "description": "You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or carpenter's tools." },
           { "name": "Seacunning", "description": "Whenever you make an intelligence (nature) check related to the sea, you are considered proficient in the history skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus." },
           { "name": "Natural Sailor", "description": "You are considered proficient and may add double your proficiency bonus to any acrobatics check on board a ship, a survival check made to navigate a sea, or an athletics check made to swim, you also gain proficiency with water based vehicles." }
@@ -87,8 +87,8 @@
         "image": false,
         "description": "Plains Dwarves are the lowest of the low among the dwarves of Curinor. Living primarily on the surface, they are often shunned by other dwarves, however they are more accustomed to interacting with other races, as well as hard manual labor. Nevertheless, they are typically poor and ill-educated. Their life on the open plain has endowed them with a dark tan tone to their skin (particularly compared to the pale deep dwarves).",
         "traits": [
-          { "name": "Speed", "description": "Your base walking speed is 9m. Your speed is not reduced by wearing heavy armor." },
-          { "name": "Darkvision", "description": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 18m of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray." },
+          { "name": "Speed", "description": "Your base walking speed is 6m. Your speed is not reduced by wearing heavy armor." },
+          { "name": "Darkvision", "description": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 12m of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray." },
           { "name": "Tool Proficiency", "description": "You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools." },
           { "name": "Stonecunning", "description": "Whenever you make an intelligence (history) check related to the origin of stonework, you are considered proficient in the history skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus." },
           { "name": "Dwarven Armor Training", "description": "You have proficiency with light and medium armor." }
@@ -99,7 +99,7 @@
       "averageweight": 165,
       "baseweight": 130,
       "weightroll": "2d6",
-      "speed": [9, 0, 0, 0, 0]
+      "speed": [6, 0, 0, 0, 0]
       }
     ]
   }

@@ -10,7 +10,7 @@ tags: [druid, ranger, level2, transmutation]
 
 **Casting Time**: 1 action
 
-**Range**: 45m
+**Range**: 30m
 
 **Components**: V, S, M (seven sharp thorns or seven small twigs, each sharpened to a point)
 

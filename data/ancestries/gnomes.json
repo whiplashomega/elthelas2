@@ -5,7 +5,7 @@
   "description": "The gnomes are a small, hardy folk, usually around 3 feet tall, but broad of shoulder with large featured faces (particularly their noses). Unlike halflings, who look like miniature humans with hairy feet, gnomes bodies are thicker and more dominated by the torso (although not to the extent of dwarves). The gnomes of Elthelas are split people. The eastern, Elathian Gnomes live in small reclusive communes within the cities of others, primarily the humans of Dormania, Kandor, and Gerasalim. Once they had a nation of their own, but it was destroyed and burned to the ground by the Emperor Dorman I, all record of it purged from history in the following years. Meanwhile in the west the gnomes of Stagenheim have become masters of technology.",
   "traits": [
     { "name": "Size", "description": "Gnomes range between 3 and 4 feet tall, and weight between 60 and 80 lbs. Your size is Small." },
-    { "name": "Speed", "description": "Your base walking speed is 8m" },
+    { "name": "Speed", "description": "Your base walking speed is 5m" },
     { "name": "Darkvision", "description": "18m" },
     { "name": "Gnome Cunning", "description": "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic." }
   ],
@@ -36,7 +36,7 @@
       "averageweight": 55,
       "baseweight": 40,
       "weightroll": "1d6",
-      "speed": [8, 0, 0, 0, 0]
+      "speed": [5, 0, 0, 0, 0]
     },
     {
       "id": "stagengnomes",
@@ -56,7 +56,7 @@
       "averageweight": 60,
       "baseweight": 45,
       "weightroll": "1d6",
-      "speed": [8, 0, 0, 0, 0]
+      "speed": [5, 0, 0, 0, 0]
     }
   ]
 }

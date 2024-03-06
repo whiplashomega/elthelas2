@@ -10,7 +10,7 @@ tags: [cleric, druid, wizard, eldritchknight, level4, transmutation]
 
 **Casting Time**: 1 action
 
-**Range**: 90m
+**Range**: 60m
 
 **Components**: V, S, M (a drop of water and a pinch of dust)
 
@@ -34,7 +34,7 @@ The water level remains elevated until the spell ends or you choose a different 
 
 **Redirect Flow.** You cause flowing water in the area to move in a direction you choose, even if the water has to flow over obstacles, up walls, or in other unlikely directions. The water in the area moves as you direct it, but once it moves beyond the spell's area, it resumes its flow based on the terrain conditions. The water continues to move in the direction you choose until the spell ends or you choose a different effect.
 
-**Whirlpool.** This effect requires a deep body of water at least 10m square and 5m deep. You cause a whirlpool to form in the center of the area. The whirlpool form a vortex that is 1m wide at the base, up to 15m wide at the top, and 7m tall. Any creature or object in the water and within 5m of the vortex is pulled 2m toward it. A creature can swim away from the vortex by making a Strength (Athletics) check against your spell save DC.
+**Whirlpool.** This effect requires a deep body of water at least 10m square and 7m deep. You cause a whirlpool to form in the center of the area. The whirlpool form a vortex that is 1m wide at the base, up to 10m wide at the top, and 7m tall. Any creature or object in the water and within 7m of the vortex is pulled 2m toward it. A creature can swim away from the vortex by making a Strength (Athletics) check against your spell save DC.
 
 When a creature enters the vortex for the first time on a turn, or starts its turn there, it must make a Strength saving throw. On a failed save, the creature takes 2d8 bludgeoning damage and is caught in the vortex until the spell ends. On a successful save, the creature takes half damage, and isn't caught in the vortex. A creature caught in the vortex can use its action to try and swim away from the vortex as described above, but has disadvantage on the Strength (Athletics) check to do so.
 

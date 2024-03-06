@@ -10,7 +10,7 @@ tags:   [cleric, druid, sorcerer, wizard, level8, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 45m
+**Range**: 30m
 
 **Components**: V, S, M (fire and a piece of sunstone)
 

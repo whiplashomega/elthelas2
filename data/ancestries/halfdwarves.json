@@ -5,8 +5,8 @@
   "description": "\n\nThe rare offspring of a dwarf and a human, Half-Dwarves look like thick, powerful somewhat shorter than average humans or very tall, somewhat gangly dwarves. While they are almost unheard of in most lands, there is a small but vibrant community of half-dwarves in the border region between Curinor, Kandor, and Gerasalim. Half-Dwarves are not so insular as other dwarves, but they tend to be ponderous and slow to react.\n\n#### Half-Dwarf Culture\n\nIn dwarven society, half-dwarves find themselves on the very bottom of the caste system, looked down on as even beneath the Plains Dwarves, and given only the dirtiest and least desirable jobs. Meanwhile in human society they are often seen as ugly, or brutish. Thus half-dwarves have often built their own separate communities, some in the style of dwarven holds, and some more in the style of a human town or neighborhood. Half-dwarves tend to have a strong sense of community, where you stand up for your neighbor and pick them up when they are down, and a willingness to do what needs to be done to get by. While many half-dwarves today are truly the product of a union between a full human and a full dwarf, most today are born within the half-dwarf community to half-dwarf parents.",
   "traits": [
     { "name": "Size", "description": "Half-Dwarves stand between 4.5 and 5.5 feet tall and average about 150 lbs. Your size is medium." },
-    { "name": "Speed", "description": "Your base walking speed is 9m. Your speed is not reduced by wearing heavy armor." },
-    { "name": "Darkvision", "description": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 18m of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray." },
+    { "name": "Speed", "description": "Your base walking speed is 6m. Your speed is not reduced by wearing heavy armor." },
+    { "name": "Darkvision", "description": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 12m of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray." },
     { "name": "Dwarven Resilience", "description": "You have advantage on saving throws against poison, and you have resistance against poison damage." },
     { "name": "Skill Versatility", "description": "You gain proficiency in two skills or tools of your choice." }
   ],
@@ -32,7 +32,7 @@
       "averageweight": 165,
       "baseweight": 130,
       "weightroll": "2d6",
-      "speed": [9, 0, 0, 0, 0]
+      "speed": [6, 0, 0, 0, 0]
 
     }
   ]

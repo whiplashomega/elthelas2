@@ -10,7 +10,7 @@ tags: [arcanetrickster, wizard, level5, transmutation]
 
 **Casting Time**: 1 action
 
-**Range**: 9m
+**Range**: 6m
 
 **Components**: V, S, M (a pinch of sesame seeds)
 
@@ -22,6 +22,6 @@ tags: [arcanetrickster, wizard, level5, transmutation]
 
 **Damage**: []
 
-A passage appears at a point of your choice that you can see on a wooden, plaster, or stone surface (such as a wall, a ceiling, or a floor) within range, and lasts for the duration. You choose the opening’s dimensions: up to 3m wide, 3m tall, and 6m deep. The passage creates no instability in a structure surrounding it.
+A passage appears at a point of your choice that you can see on a wooden, plaster, or stone surface (such as a wall, a ceiling, or a floor) within range, and lasts for the duration. You choose the opening’s dimensions: up to 2m wide, 2m tall, and 4m deep. The passage creates no instability in a structure surrounding it.
 
 When the opening disappears, any creatures or objects still in the passage created by the spell are safely ejected to an unoccupied space nearest to the surface on which you cast the spell.

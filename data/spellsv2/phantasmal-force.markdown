@@ -10,7 +10,7 @@ tags: [bard, sorcerer, wizard, level2, illusion]
 
 **Casting Time**: 1 action
 
-**Range**: 18m
+**Range**: 12m
 
 **Components**: V, S, M (a bit of fleece)
 

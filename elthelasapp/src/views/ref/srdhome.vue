@@ -102,7 +102,6 @@
             <li>Mage Armor no longer grants protection points, base AC formula changed to 12 + dex, now has higher levels upcast. Simplifies mage armor, and puts it more in-line with the current armor formulas (roughly equivalent to a +1 leather cuirass).</li>
             <li>Enervation damage increased to 5d8, takes full damage the first turn even on successful save (but save avoids continuous damage effect).</li>
             <li>Healing spells effect increased, typically by giving them an extra die of base healing.</li>
-            <li>Expanded ranges to use a conversion of 3 meters per 10 feet instead of 1 meter per 5 feet again. The weird conversion was causing confusion in game sessions and roleplay. Suggestion to DMs to expand the typical size of battle spaces. Anything smaller than 8-10m on a side should probably be considered tight quarters for combat.</li>
           </ul>
         </b-card-body>
       </b-collapse>

@@ -10,7 +10,7 @@ tags: [wizard, level4, conjuration]
 
 **Casting Time**: 1 action
 
-**Range**: 27m
+**Range**: 18m
 
 **Components**: V, S, M (a piece of tentacle from a giant octopus or a giant squid)
 
@@ -22,7 +22,7 @@ tags: [wizard, level4, conjuration]
 
 **Damage**: [ { "dice": "3d6", label: "bludgeoning", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "" } ]
 
-Squirming, ebony tentacles fill a 6m square on ground that you can see within range. For the duration, these tentacles turn the ground in the area into difficult terrain.
+Squirming, ebony tentacles fill a 4m square on ground that you can see within range. For the duration, these tentacles turn the ground in the area into difficult terrain.
 
 When a creature enters the affected area for the first time on a turn or starts its turn there, the creature must succeed on a Dexterity saving throw or take 3d6 bludgeoning damage and be restrained by the tentacles until the spell ends. A creature that starts its turn in the area and is already restrained by the tentacles takes 3d6 bludgeoning damage.
 

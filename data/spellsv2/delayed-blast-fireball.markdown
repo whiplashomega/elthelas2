@@ -10,7 +10,7 @@ tags:   [sorcerer, wizard, level7, evocation]
 
 **Casting Time**: 1 action
 
-**Range**: 45m
+**Range**: 30m
 
 **Components**: V, S, M (a tiny ball of bat guano and sulfur)
 

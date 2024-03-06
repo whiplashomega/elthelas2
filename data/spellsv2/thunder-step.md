@@ -10,7 +10,7 @@ tags: [sorcerer, warlock, wizard, eldritchknight, level3, conjuration]
 
 **Casting Time**: 1 action
 
-**Range**: 27m
+**Range**: 18m
 
 **Components**: V
 
@@ -22,7 +22,7 @@ tags: [sorcerer, warlock, wizard, eldritchknight, level3, conjuration]
 
 **Damage**: [ { "dice": "3d10", label: "thunder", "damagebonus": 0, "addstat": false, "prof": false, "higherlevels": "1d10" } ]
 
-You teleport yourself to an unoccupied space you can see within range. Immediately after you disappear, a thunderous boom sounds. and each creature within 2m of the space you left must make a Constitution saving throw, taking 3d10 thunder damage on a failed save, or half as much damage on a successful one. The thunder can be heard from up to 90m away.
+You teleport yourself to an unoccupied space you can see within range. Immediately after you disappear, a thunderous boom sounds. and each creature within 2m of the space you left must make a Constitution saving throw, taking 3d10 thunder damage on a failed save, or half as much damage on a successful one. The thunder can be heard from up to 60m away.
 
 You can bring along objects as long as their weight doesn’t exceed what you can carry. You can also teleport one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 1m of you when you cast this spell, and there must be an unoccupied space within 1m of your destination space for the creature to appear in; otherwise, the creature is left behind.
 

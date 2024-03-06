@@ -10,7 +10,7 @@ tags: [sorcerer, warlock, wizard, level6, necromancy]
 
 **Casting Time**: 1 action
 
-**Range**: 45m
+**Range**: 30m
 
 **Components**: V, S, M (the powder of a crushed black pearl worth at least 500 gp)
 

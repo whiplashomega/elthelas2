@@ -10,7 +10,7 @@ tags: [bard, druid, warlock, wizard, level8, enchantment]
 
 **Casting Time**: 1 action
 
-**Range**: 45m
+**Range**: 30m
 
 **Components**: V, S, M (a handful of clay, crystal, glass, or mineral spheres)
 

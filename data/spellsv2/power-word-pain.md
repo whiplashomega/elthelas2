@@ -10,7 +10,7 @@ tags: [sorcerer, warlock, wizard, level7, enchantment]
 
 **Casting Time**: 1 action
 
-**Range**: 18m
+**Range**: 12m
 
 **Components**: V
 
@@ -25,7 +25,7 @@ tags: [sorcerer, warlock, wizard, level7, enchantment]
 You speak a word of power that causes waves of intense pain to assail one creature you can see within range. The target is subject
 to crippling pain. A target is unaffected if it is immune to being charmed.
 
-While the target is affected by crippling pain, any speed it has can be no higher than 3m. The target also has disadvantage on attack rolls, ability checks, and
+While the target is affected by crippling pain, any speed it has can be no higher than 2m. The target also has disadvantage on attack rolls, ability checks, and
 saving throws, other than Constitution saving throws. Finally, if the target tries to cast a spell, it must first succeed on a Constitution saving throw, or the casting fails
 and the spell is wasted.
 

@@ -10,7 +10,7 @@ tags: [arcanetrickster, bard, druid, sorcerer, wizard, level4, enchantment]
 
 **Casting Time**: 1 action
 
-**Range**: 27m
+**Range**: 18m
 
 **Components**: V, S, M (three nut shells)
 
@@ -22,7 +22,7 @@ tags: [arcanetrickster, bard, druid, sorcerer, wizard, level4, enchantment]
 
 **Damage**: []
 
-This spell assaults and twists creatures' minds, spawning delusions and provoking uncontrolled action. Each creature in a 2m radius sphere centered on a point you choose within range must succeed on a Wisdom saving throw when you cast this spell or by affected by it.
+This spell assaults and twists creatures' minds, spawning delusions and provoking uncontrolled action. Each creature in a 10-foot radius sphere centered on a point you choose within range must succeed on a Wisdom saving throw when you cast this spell or by affected by it.
 
 An affected target can't take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn.
 

@@ -30,7 +30,7 @@ You decide what triggers the glyph when you cast the spell. For glyphs inscribed
 
 You can further refine the trigger so the spell is activated only under certain circumstances or according to a creature's physical characteristics (such as height or weight), or physical kind (for example, the ward could be set to affect hags or shapechangers). You can also specify creatures that don't trigger the glyph, such as those who say a certain password.
 
-When you inscribe the glyph, choose one of the options below for its effect. Once triggered, the glyph glows, filling a 12m-radius sphere with dim light for 10 minutes, after which time the spell ends. Each creature in the sphere when the glyph activate is targeted by its effect, as is a creature that enters the sphere for the first time on a turn or ends its turn there.
+When you inscribe the glyph, choose one of the options below for its effect. Once triggered, the glyph glows, filling a 60-foot-radius sphere with dim light for 10 minutes, after which time the spell ends. Each creature in the sphere when the glyph activate is targeted by its effect, as is a creature that enters the sphere for the first time on a turn or ends its turn there.
 
 **Death.** Each target must make a Constitution saving throw, taking 10d10 necrotic damage on a failed save, or half as much damage on a successful save.
 

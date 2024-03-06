@@ -10,7 +10,7 @@ tags: [cleric, druid, level1, transmutation]
 
 **Casting Time**: 1 action
 
-**Range**: 9m
+**Range**: 6m
 
 **Components**: V, S, M (a drop of water if creating water, or a few grains of sand if destroying it)
 

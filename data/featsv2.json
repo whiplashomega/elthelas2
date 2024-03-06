@@ -77,7 +77,7 @@
   {
     "name": "Dual Wielder",
     "prereq": "4th level",
-    "description": "You master fighting with two weapons, gaining the following benefits:\n\n* Increase your strength or dexterity score by 1, to a maximum of 20.\n* You can use two-weapon fighting even when the one-handed melee weapon you are wielding in your main hand isn’t light.\n* You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one.\n* If you take the attack action while wielding two one-handed melee weapons you can forego one attack with either weapon to increase your AC by 1 until the start of your next turn."
+    "description": "You master fighting with two weapons, gaining the following benefits:\n\n* Increase your strength or dexterity score by 1, to a maximum of 20.\n* You can use two-weapon fighting even when the one-handed melee weapon you are wielding in your main hand isn’t light.\n* You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one.\n* Your AC while wielding two one-handed melee weapons is increased by 1 so long as the weapon in your offhand has the light property and is not a shield."
   },
   {
     "name": "Dual Flurry",

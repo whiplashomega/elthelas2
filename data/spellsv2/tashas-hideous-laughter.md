@@ -10,7 +10,7 @@ tags: [arcanetrickster, bard, wizard, level1, enchantment]
 
 **Casting Time**: 1 action
 
-**Range**: 9m
+**Range**: 6m
 
 **Components**: V, S, M (tiny tarts and a feather that is waved in the air)
 

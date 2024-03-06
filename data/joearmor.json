@@ -50,8 +50,8 @@
   {
     "Armor": "Scale Hauberk",
     "Type": "Medium",
-    "AC": 15,
-    "PC": 1,
+    "AC": 14,
+    "PC": 2,
     "MaxDex": 2,
     "Properties": "Impeding (Stealth)",
     "Weight": 45,
@@ -470,8 +470,8 @@
   {
     "Armor": "Dragonscale Hauberk",
     "Type": "Medium",
-    "AC": 15,
-    "PC": 1,
+    "AC": 14,
+    "PC": 2,
     "MaxDex": 2,
     "Properties": "Impeding (Stealth), Intimidating, Resistance(Based on Creature), Rare",
     "Weight": 35,

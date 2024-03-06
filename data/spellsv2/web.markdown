@@ -10,7 +10,7 @@ tags: [sorcerer, wizard, artificer, level2, conjuration]
 
 **Casting Time**: 1 action
 
-**Range**: 18m
+**Range**: 12m
 
 **Components**: V, S, M (a bit of spiderweb)
 
